@@ -7,6 +7,7 @@
 [![Express](https://img.shields.io/badge/Express-4.x-lightgrey.svg)](https://expressjs.com/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-blue.svg)](https://www.postgresql.org/)
 [![Redis](https://img.shields.io/badge/Redis-7.x-red.svg)](https://redis.io/)
+[![Prisma](https://img.shields.io/badge/Prisma-5.x-2D3748.svg)](https://www.prisma.io/)
 
 ---
 
@@ -55,6 +56,8 @@
 - **LLM-powered feedback** on legal essays
 - **CSV ingestion pipeline** for case briefs
 - **Study analytics** (time tracking, streaks, readiness scores)
+- **Paystack payment integration** for subscriptions
+- **Cloudinary CDN** for media asset delivery
 
 ---
 
@@ -116,16 +119,16 @@ This project uses a **monolithic microservices architecture**, where each module
 - **Language:** TypeScript 5.3
 - **Database:** PostgreSQL 16
 - **Cache:** Redis 7.x
-- **ORM:** Sequelize (with migrations)
+- **ORM:** Prisma 5.x (with migrations)
 
 ### Key Libraries
 
 - **Authentication:** Passport (JWT, Google OAuth)
-- **Payment:** Stripe SDK
+- **Payment:** Paystack SDK
 - **Validation:** Joi / Express-Validator
-- **File Storage:** AWS S3 SDK / Azure Storage
+- **CDN/File Storage:** Cloudinary SDK
 - **AI/ML:** OpenAI SDK / Anthropic SDK
-- **Email:** Nodemailer
+- **Email:** Brevo (formerly Sendinblue) SDK
 - **Logging:** Winston
 - **Documentation:** Swagger (OpenAPI 3.0)
 - **Testing:** Jest + Supertest
@@ -134,7 +137,7 @@ This project uses a **monolithic microservices architecture**, where each module
 
 - **Containerization:** Docker
 - **CI/CD:** GitHub Actions
-- **Cloud:** Digital OCean 
+- **Cloud:** Digital Ocean (Droplets + Managed Databases)
 - **Monitoring:** Structured logs + metrics hooks
 
 ---
@@ -145,7 +148,7 @@ This project uses a **monolithic microservices architecture**, where each module
 
 Ensure you have the following installed:
 
-- **Node.js** >= 20.x 
+- **Node.js** >= 20.x
 - **npm** >= 10.x
 - **PostgreSQL** >= 16.x
 - **Redis** >= 7.x
@@ -183,59 +186,51 @@ NODE_ENV=development
 PORT=5000
 API_VERSION=v1
 
-# Database
-DATABASE_URL=xxxxxx
-DB_HOST=xxxxxx
-DB_PORT=xxxxx
-DB_NAME=xxxxxx
-DB_USER=xxxxxx
-DB_PASSWORD=xxxxxx
-DB_POOL_MIN=xx
-DB_POOL_MAX=xx
+# Database (PostgreSQL)
+DATABASE_URL=postgresql://username:password@localhost:5432/fe1_db
+
+# Prisma
+PRISMA_HIDE_UPDATE_MESSAGE=true
 
 # Redis
-REDIS_URL=xxxxx
-REDIS_HOST=xxxxx
-REDIS_PORT=xxxxx
-REDIS_PASSWORD=xxxxx
+REDIS_URL=redis://localhost:6379
 
 # JWT
-JWT_SECRET=your-super-secret-jwt-key-change-this
+JWT_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 JWT_EXPIRES_IN=7d
-JWT_REFRESH_SECRET=your-refresh-token-secret
+JWT_REFRESH_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 JWT_REFRESH_EXPIRES_IN=30d
 
 # Google OAuth
-GOOGLE_CLIENT_ID=your-google-client-id
-GOOGLE_CLIENT_SECRET=your-google-client-secret
+GOOGLE_CLIENT_ID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+GOOGLE_CLIENT_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 GOOGLE_CALLBACK_URL=http://localhost:5000/api/v1/auth/google/callback
 
-# Stripe
-STRIPE_SECRET_KEY=sk_test_your_stripe_secret_key
-STRIPE_WEBHOOK_SECRET=whsec_your_webhook_secret
-STRIPE_MONTHLY_PRICE_ID=price_xxxxx
-STRIPE_ANNUAL_PRICE_ID=price_xxxxx
+# Paystack
+PAYSTACK_SECRET_KEY=sk_test_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+PAYSTACK_PUBLIC_KEY=pk_test_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+PAYSTACK_WEBHOOK_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+PAYSTACK_MONTHLY_PLAN_CODE=PLN_xxxxxxxxxxxxxx
+PAYSTACK_ANNUAL_PLAN_CODE=PLN_xxxxxxxxxxxxxx
+
+# Cloudinary (CDN & File Storage)
+CLOUDINARY_CLOUD_NAME=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+CLOUDINARY_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+CLOUDINARY_API_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+CLOUDINARY_UPLOAD_PRESET=fe1_uploads
 
 # OpenAI / LLM Provider
-OPENAI_API_KEY=sk-your-openai-api-key
-ANTHROPIC_API_KEY=sk-ant-your-anthropic-key
+OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ANTHROPIC_API_KEY=sk-ant-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 LLM_PROVIDER=openai
 LLM_MODEL=gpt-4-turbo-preview
 LLM_MAX_TOKENS=2000
 LLM_TEMPERATURE=0.7
 
-# AWS S3 (for file storage)
-AWS_ACCESS_KEY_ID=your-access-key
-AWS_SECRET_ACCESS_KEY=your-secret-key
-AWS_REGION=us-east-1
-AWS_S3_BUCKET=fe1-made-simple-assets
-
-# Email (Nodemailer)
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-SMTP_USER=your-email@gmail.com
-SMTP_PASSWORD=your-app-password
-EMAIL_FROM=noreply@fe1madesimple.com
+# Brevo Email (formerly Sendinblue)
+BREVO_API_KEY=xkeysib-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+BREVO_SENDER_EMAIL=noreply@fe1madesimple.ie
+BREVO_SENDER_NAME=FE-1 Made Simple
 
 # Client URLs
 CLIENT_URL=http://localhost:3000
@@ -243,16 +238,29 @@ ADMIN_URL=http://localhost:3001
 
 # Logging
 LOG_LEVEL=debug
+
+# Digital Ocean Spaces (Optional - if using DO Spaces alongside Cloudinary)
+DO_SPACES_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+DO_SPACES_SECRET=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+DO_SPACES_ENDPOINT=https://fra1.digitaloceanspaces.com
+DO_SPACES_BUCKET=fe1-made-simple
+DO_SPACES_REGION=fra1
 ```
 
 3. **Set up the database:**
 
 ```bash
+# Generate Prisma Client
+npx prisma generate
+
 # Run migrations
-npm run db:migrate
+npx prisma migrate dev
 
 # Seed initial data (optional)
-npm run db:seed
+npx prisma db seed
+
+# Open Prisma Studio (Database GUI)
+npx prisma studio
 ```
 
 ### Running Locally
@@ -291,11 +299,10 @@ fe1-backend/
 │   │   ├── auth/                   # Authentication & authorization
 │   │   │   ├── controllers/        # Route controllers
 │   │   │   ├── services/           # Business logic
-│   │   │   ├── models/             # Database models
 │   │   │   ├── routes/             # Express routes
 │   │   │   ├── validators/         # Input validation
 │   │   │   └── interfaces/         # TypeScript interfaces
-│   │   ├── subscription/           # Stripe subscriptions
+│   │   ├── subscription/           # Paystack subscriptions
 │   │   ├── content/                # Content management
 │   │   ├── assessment/             # Timed assessments & MCQs
 │   │   ├── ai-feedback/            # LLM essay feedback
@@ -307,10 +314,7 @@ fe1-backend/
 │   │   ├── middleware/             # Express middleware
 │   │   ├── utils/                  # Helper functions
 │   │   ├── types/                  # Global TypeScript types
-│   │   ├── constants/              # Constants & enums
-│   │   └── database/               # Database connection & migrations
-│   │       ├── migrations/         # Sequelize migrations
-│   │       └── seeds/              # Database seed files
+│   │   └── constants/              # Constants & enums
 │   ├── swagger/                    # API documentation
 │   │   ├── schemas/                # OpenAPI schemas
 │   │   └── docs/                   # Additional docs
@@ -322,6 +326,10 @@ fe1-backend/
 │   ├── logs/                       # Application logs
 │   ├── app.ts                      # Express app setup
 │   └── server.ts                   # Server entry point
+├── prisma/                         # Prisma ORM
+│   ├── schema.prisma               # Database schema
+│   ├── migrations/                 # Database migrations
+│   └── seed.ts                     # Seed data script
 ├── .env.example                    # Example environment variables
 ├── .env                            # Environment variables (git-ignored)
 ├── .gitignore                      # Git ignore rules
@@ -347,8 +355,8 @@ Full API documentation is available via **Swagger UI** when the server is runnin
 
 ```
 Development: http://localhost:5000/api/v1
-Staging:     https://staging-api.fe1madesimple.com/api/v1
-Production:  https://api.fe1madesimple.com/api/v1
+Staging:     https://staging-api.fe1madesimple.ie/api/v1
+Production:  https://api.fe1madesimple.ie/api/v1
 ```
 
 ### Authentication
@@ -378,12 +386,13 @@ Below is a high-level overview. Detailed endpoint documentation will be added as
 #### 2. Subscription (`/api/v1/subscription`)
 
 - [ ] `GET /plans` - List available subscription plans
-- [ ] `POST /checkout` - Create Stripe checkout session
-- [ ] `POST /webhook` - Stripe webhook handler
+- [ ] `POST /initialize` - Initialize Paystack payment
+- [ ] `GET /verify/:reference` - Verify Paystack transaction
+- [ ] `POST /webhook` - Paystack webhook handler
 - [ ] `GET /status` - Check subscription status
 - [ ] `POST /cancel` - Cancel subscription
 - [ ] `POST /resume` - Resume subscription
-- [ ] `GET /invoices` - List user invoices
+- [ ] `GET /transactions` - List user transactions
 
 #### 3. Content (`/api/v1/content`)
 
@@ -393,7 +402,7 @@ Below is a high-level overview. Detailed endpoint documentation will be added as
 - [ ] `GET /modules/:id` - Get module details
 - [ ] `GET /modules/:id/lessons` - List lessons in module
 - [ ] `GET /lessons/:id` - Get lesson details
-- [ ] `GET /lessons/:id/assets` - Get lesson assets (signed URLs)
+- [ ] `GET /lessons/:id/assets` - Get lesson assets (Cloudinary URLs)
 - [ ] `GET /search` - Search across content hierarchy
 
 #### 4. Assessment (`/api/v1/assessment`)
@@ -472,43 +481,55 @@ Below is a high-level overview. Detailed endpoint documentation will be added as
 
 *Database schema documentation will be added here as models are created.*
 
-**Planned Tables:**
-- `users`
-- `subscriptions`
-- `subjects`
-- `modules`
-- `lessons`
-- `lesson_assets`
-- `questions`
-- `timed_sessions`
-- `quiz_attempts`
-- `ai_evaluations`
-- `case_briefs`
-- `study_logs`
-- `announcements`
+**Planned Models (Prisma):**
+- `User`
+- `Subscription`
+- `Subject`
+- `Module`
+- `Lesson`
+- `LessonAsset`
+- `Question`
+- `TimedSession`
+- `QuizAttempt`
+- `AIEvaluation`
+- `CaseBrief`
+- `StudyLog`
+- `Announcement`
 
 ### Migrations
 
-Run migrations:
-```bash
-npm run db:migrate
-```
-
-Rollback migration:
-```bash
-npm run db:migrate:undo
-```
-
 Create new migration:
 ```bash
-npm run db:migrate:create --name create-users-table
+npx prisma migrate dev --name create-users-table
+```
+
+Run migrations (production):
+```bash
+npx prisma migrate deploy
+```
+
+Reset database (development only):
+```bash
+npx prisma migrate reset
+```
+
+View migration status:
+```bash
+npx prisma migrate status
+```
+
+### Database Studio
+
+Open Prisma Studio to view/edit data:
+```bash
+npx prisma studio
 ```
 
 ### Seeds
 
 Seed database with test data:
 ```bash
-npm run db:seed
+npx prisma db seed
 ```
 
 ---
@@ -549,15 +570,17 @@ npm run test:watch
 
 ### Production Checklist
 
-- [ ] Environment variables configured
-- [ ] Database migrations run
-- [ ] SSL certificates installed
-- [ ] Redis cache configured
-- [ ] Stripe webhooks tested in live mode
+- [ ] Environment variables configured on Digital Ocean
+- [ ] Prisma migrations run on production database
+- [ ] SSL certificates installed (Let's Encrypt)
+- [ ] Redis cache configured (DO Managed Redis)
+- [ ] Paystack webhooks tested in live mode
+- [ ] Cloudinary upload presets configured
+- [ ] Brevo email templates created
 - [ ] OWASP security scan passed
 - [ ] Load testing completed
 - [ ] Monitoring and alerting set up
-- [ ] Backup strategy implemented
+- [ ] Backup strategy implemented (DO automated backups)
 - [ ] Runbook documented
 
 ### Deployment Commands
@@ -592,11 +615,11 @@ Based on the contract (Schedule 2):
 | Phase | Task | Duration | Status |
 |-------|------|----------|--------|
 | **M1** | Project foundation (repos, CI, DB schemas, OpenAPI) | 5-10 Jan 2025 | 🔴 Pending |
-| **M2** | Auth & subscription (Email/Google, roles, Stripe) | 11-14 Jan 2025 | 🔴 Pending |
+| **M2** | Auth & subscription (Email/Google, roles, Paystack) | 11-14 Jan 2025 | 🔴 Pending |
 | **M3** | Content services (CRUD, versioning, search) | 15-27 Jan 2025 | 🔴 Pending |
 | **M4** | Timed assessments (Past Questions, sessions, MCQ) | 28 Jan - 13 Feb 2025 | 🔴 Pending |
 | **M5** | AI feedback integration (LLM IRAC/ILAC rubric) | 13-22 Feb 2025 | 🔴 Pending |
-| **M6** | Payments & hardening (Stripe lifecycle, security, runbook) | 22-28 Feb 2025 | 🔴 Pending |
+| **M6** | Payments & hardening (Paystack lifecycle, security, runbook) | 22-28 Feb 2025 | 🔴 Pending |
 
 **Finish Date:** 28 February 2025
 
@@ -666,6 +689,6 @@ This project is proprietary and confidential. All rights reserved by FE-1 Made S
 
 ---
 
-**Last Updated:** January 2025  
+**Last Updated:** January 2026  
 **Version:** 1.0.0  
-**Status:** 🚧 In Development 
+**Status:** 🚧 In Development
