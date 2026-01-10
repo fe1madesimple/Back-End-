@@ -78,7 +78,7 @@ export const morganProd = morgan(
   ':real-ip - :user-id [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent" :response-time ms - Device: :device-type OS: :os Browser: :browser',
   {
     stream: morganStream,
-    skip: (req, res) => {
+    skip: (req, _res) => {
       // Don't log health check endpoints
       return req.url === '/health' || req.url === '/metrics';
     },
