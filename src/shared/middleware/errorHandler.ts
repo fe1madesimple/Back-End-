@@ -1,10 +1,16 @@
 import { Request, Response, NextFunction } from 'express';
 import { StatusCodes } from 'http-status-codes';
-import { ZodError } from 'zod';
-import { Prisma } from '@prisma/client';
+import { ZodError, ZodIssue } from 'zod';
 import * as Sentry from '@sentry/node';
 import logger from '@/utils/logger';
 import { AppError, ValidationError } from '@/utils/errors';
+
+/**
+ * Check if error is a Prisma error (without importing Prisma types)
+ */
+const isPrismaError = (err: any): boolean => {
+  return err.name?.includes('Prisma') || err.code?.startsWith('P');
+};
 
 /**
  * Global Error Handler Middleware
@@ -63,50 +69,56 @@ export const errorHandler = (err: Error, req: Request, res: Response, next: Next
     // Zod validation errors
     statusCode = StatusCodes.UNPROCESSABLE_ENTITY;
     message = 'Validation failed';
-    errors = err.errors.map((e) => ({
-      field: e.path.join('.'),
-      message: e.message,
+    errors = err.issues.map((issue: ZodIssue) => ({
+      field: issue.path.join('.'),
+      message: issue.message,
     }));
-  } else if (err instanceof Prisma.PrismaClientKnownRequestError) {
-    // Prisma errors
+  } else if (isPrismaError(err)) {
+    // Prisma errors (handle without importing Prisma types)
+    const prismaErr = err as any;
     statusCode = StatusCodes.BAD_REQUEST;
 
-    switch (err.code) {
-      case 'P2002':
-        // Unique constraint violation
-        const field = (err.meta?.target as string[])?.join(', ') || 'field';
-        message = `${field} already exists`;
-        break;
-      case 'P2025':
-        // Record not found
-        message = 'Record not found';
-        statusCode = StatusCodes.NOT_FOUND;
-        break;
-      case 'P2003':
-        // Foreign key constraint violation
-        message = 'Related record not found';
-        break;
-      case 'P2014':
-        // Required relation violation
-        message = 'Cannot delete record with existing relations';
-        break;
-      case 'P2016':
-        // Query interpretation error
-        message = 'Invalid query parameters';
-        break;
-      default:
-        message = 'Database error occurred';
-        logger.warn('Unhandled Prisma error code', { code: err.code, meta: err.meta });
+    if (prismaErr.code) {
+      switch (prismaErr.code) {
+        case 'P2002':
+          // Unique constraint violation
+          const field = prismaErr.meta?.target?.join(', ') || 'field';
+          message = `${field} already exists`;
+          break;
+        case 'P2025':
+          // Record not found
+          message = 'Record not found';
+          statusCode = StatusCodes.NOT_FOUND;
+          break;
+        case 'P2003':
+          // Foreign key constraint violation
+          message = 'Related record not found';
+          break;
+        case 'P2014':
+          // Required relation violation
+          message = 'Cannot delete record with existing relations';
+          break;
+        case 'P2016':
+          // Query interpretation error
+          message = 'Invalid query parameters';
+          break;
+        default:
+          message = 'Database error occurred';
+          logger.warn('Unhandled Prisma error code', {
+            code: prismaErr.code,
+            meta: prismaErr.meta,
+          });
+      }
+    } else if (err.name === 'PrismaClientValidationError') {
+      // Prisma validation errors
+      statusCode = StatusCodes.BAD_REQUEST;
+      message = 'Invalid data provided';
+    } else if (err.name === 'PrismaClientInitializationError') {
+      // Database connection error
+      statusCode = StatusCodes.SERVICE_UNAVAILABLE;
+      message = 'Database connection failed';
+      logger.error('Database connection error', { error: err.message });
     }
-  } else if (err instanceof Prisma.PrismaClientValidationError) {
-    // Prisma validation errors
-    statusCode = StatusCodes.BAD_REQUEST;
-    message = 'Invalid data provided';
-  } else if (err instanceof Prisma.PrismaClientInitializationError) {
-    // Database connection error
-    statusCode = StatusCodes.SERVICE_UNAVAILABLE;
-    message = 'Database connection failed';
-    logger.error('Database connection error', { error: err.message });
   } else if (err.name === 'JsonWebTokenError') {
     // JWT errors
     statusCode = StatusCodes.UNAUTHORIZED;
