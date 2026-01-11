@@ -25,6 +25,7 @@
 - [API Documentation](#api-documentation)
 - [Modules](#modules)
 - [Database](#database)
+- [Logging & Monitoring](#logging--monitoring)
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Development Timeline](#development-timeline)
@@ -38,7 +39,7 @@
 **FE-1 Made Simple** is an education technology platform that prepares candidates for the Irish FE-1 examinations. This repository contains the backend API that powers the platform with:
 
 - 🔐 Secure authentication and authorization
-- 💳 Stripe subscription management
+- 💳 Paystack subscription management
 - 📚 Content management system with versioning
 - ⏱️ Timed assessment engine
 - 🤖 AI-powered essay feedback (IRAC/ILAC methodology)
@@ -100,7 +101,7 @@ This project uses a **monolithic microservices architecture**, where each module
 | Module | Responsibility |
 |--------|---------------|
 | **Auth** | User authentication, JWT tokens, password reset |
-| **Subscription** | Stripe integration, trial logic, entitlements |
+| **Subscription** | Paystack integration, trial logic, entitlements |
 | **Content** | CRUD for subjects/modules/lessons with versioning |
 | **Assessment** | Past questions, timed sessions, MCQ scoring |
 | **AI Feedback** | LLM integration for essay evaluation (IRAC/ILAC) |
@@ -125,11 +126,13 @@ This project uses a **monolithic microservices architecture**, where each module
 
 - **Authentication:** Passport (JWT, Google OAuth)
 - **Payment:** Paystack SDK
-- **Validation:** Joi / Express-Validator
+- **Validation:** Zod (TypeScript-first schema validation)
 - **CDN/File Storage:** Cloudinary SDK
 - **AI/ML:** OpenAI SDK / Anthropic SDK
 - **Email:** Brevo (formerly Sendinblue) SDK
-- **Logging:** Winston
+- **Logging:** Winston (with daily rotation)
+- **Monitoring:** Better Stack (Logtail) + Sentry
+- **Error Tracking:** Sentry (production error reporting)
 - **Documentation:** Swagger (OpenAPI 3.0)
 - **Testing:** Jest + Supertest
 
@@ -138,7 +141,8 @@ This project uses a **monolithic microservices architecture**, where each module
 - **Containerization:** Docker
 - **CI/CD:** GitHub Actions
 - **Cloud:** Digital Ocean (Droplets + Managed Databases)
-- **Monitoring:** Structured logs + metrics hooks
+- **Log Management:** Better Stack (Logtail)
+- **Error Monitoring:** Sentry
 
 ---
 
@@ -184,6 +188,7 @@ cp .env.example .env
 # Server
 NODE_ENV=development
 PORT=5000
+HOST=0.0.0.0
 API_VERSION=v1
 
 # Database (PostgreSQL)
@@ -222,8 +227,8 @@ CLOUDINARY_UPLOAD_PRESET=fe1_uploads
 # OpenAI / LLM Provider
 OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ANTHROPIC_API_KEY=sk-ant-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-LLM_PROVIDER=openai
-LLM_MODEL=gpt-4-turbo-preview
+LLM_PROVIDER=anthropic
+LLM_MODEL=claude-3-5-sonnet-20241022
 LLM_MAX_TOKENS=2000
 LLM_TEMPERATURE=0.7
 
@@ -235,9 +240,14 @@ BREVO_SENDER_NAME=FE-1 Made Simple
 # Client URLs
 CLIENT_URL=http://localhost:3000
 ADMIN_URL=http://localhost:3001
+CORS_ORIGIN=http://localhost:3000,http://localhost:3001
 
-# Logging
+# Monitoring & Logging
 LOG_LEVEL=debug
+LOGTAIL_SOURCE_TOKEN=logtail_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+SENTRY_DSN=https://xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@sentry.io/xxxxxxx
+SENTRY_ENVIRONMENT=development
+SENTRY_TRACES_SAMPLE_RATE=0.1
 
 # Digital Ocean Spaces (Optional - if using DO Spaces alongside Cloudinary)
 DO_SPACES_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -284,9 +294,22 @@ npm start
 docker-compose up -d
 ```
 
-The API will be available at: `http://localhost:5000`
+**Available Endpoints:**
+- API: `http://localhost:5000`
+- Health Check: `http://localhost:5000/health`
+- API Docs: `http://localhost:5000/api-docs` (Coming soon)
 
-Swagger documentation: `http://localhost:5000/api-docs`
+**Check Logs:**
+```bash
+# View all logs
+cat logs/combined-$(date +%Y-%m-%d).log
+
+# View errors only
+cat logs/error-$(date +%Y-%m-%d).log
+
+# Tail logs in real-time
+tail -f logs/combined-$(date +%Y-%m-%d).log
+```
 
 ---
 
@@ -349,7 +372,7 @@ fe1-backend/
 
 Full API documentation is available via **Swagger UI** when the server is running:
 
-🔗 **http://localhost:5000/api-docs**
+🔗 **http://localhost:5000/api-docs** (Coming soon)
 
 ### Base URL
 
@@ -458,6 +481,7 @@ Below is a high-level overview. Detailed endpoint documentation will be added as
 
 | Module | Status | Progress |
 |--------|--------|----------|
+| Foundation | 🟢 Completed | 100% |
 | Auth | 🔴 Not Started | 0% |
 | Subscription | 🔴 Not Started | 0% |
 | Content | 🔴 Not Started | 0% |
@@ -472,6 +496,18 @@ Below is a high-level overview. Detailed endpoint documentation will be added as
 - 🟡 In Progress
 - 🟢 Completed
 - ✅ Tested & Deployed
+
+**Foundation Completed:**
+- ✅ Folder structure
+- ✅ TypeScript configuration
+- ✅ Utilities (asyncHandler, logger, response, errors)
+- ✅ Middleware (requestLogger, errorHandler)
+- ✅ Express app setup
+- ✅ Server startup with graceful shutdown
+- ✅ Health check endpoint
+- ✅ Winston logging with daily rotation
+- ✅ Sentry integration (production)
+- ✅ Better Stack (Logtail) integration
 
 ---
 
@@ -534,6 +570,81 @@ npx prisma db seed
 
 ---
 
+## 📊 Logging & Monitoring
+
+### Winston Logger
+
+All application events are logged using Winston with daily file rotation:
+
+```bash
+logs/
+├── combined-YYYY-MM-DD.log    # All logs
+├── error-YYYY-MM-DD.log       # Errors only
+├── warn-YYYY-MM-DD.log        # Warnings only
+├── http-YYYY-MM-DD.log        # HTTP requests
+├── exceptions-YYYY-MM-DD.log  # Uncaught exceptions
+└── rejections-YYYY-MM-DD.log  # Unhandled promises
+```
+
+**Features:**
+- ✅ Daily log rotation
+- ✅ Automatic compression of old logs
+- ✅ 14-day retention policy
+- ✅ Structured JSON logging
+- ✅ Separate files by log level
+- ✅ IP address, device type, and browser tracking
+
+### Better Stack (Logtail)
+
+Real-time log streaming to cloud dashboard (production):
+- Search and filter logs
+- Set up alerts
+- Monitor application health
+- View logs without SSH access
+
+**Setup:** Add `LOGTAIL_SOURCE_TOKEN` to `.env`
+
+### Sentry
+
+Automatic error tracking with:
+- Stack traces
+- User context
+- Request details
+- Performance monitoring
+- Email alerts on errors
+
+**Setup:** Add `SENTRY_DSN` to `.env`
+
+### Log Levels
+
+```typescript
+logger.error()   // Errors (logged to error-*.log)
+logger.warn()    // Warnings (logged to warn-*.log)
+logger.info()    // Info (logged to combined-*.log)
+logger.http()    // HTTP requests (logged to http-*.log)
+logger.debug()   // Debug info (development only)
+```
+
+### Utility Loggers
+
+```typescript
+import { loggerUtils } from '@/utils';
+
+// Log user activity
+loggerUtils.logUserActivity(userId, 'LOGIN', { ip: '...' });
+
+// Log payment
+loggerUtils.logPayment(userId, amount, currency, status, reference, req);
+
+// Log AI feedback
+loggerUtils.logAIFeedback(userId, questionId, tokensUsed, req);
+
+// Log security event
+loggerUtils.logSecurity('BRUTE_FORCE_ATTEMPT', 'high', req);
+```
+
+---
+
 ## 🧪 Testing
 
 ### Running Tests
@@ -577,6 +688,8 @@ npm run test:watch
 - [ ] Paystack webhooks tested in live mode
 - [ ] Cloudinary upload presets configured
 - [ ] Brevo email templates created
+- [ ] Better Stack (Logtail) source created
+- [ ] Sentry project configured
 - [ ] OWASP security scan passed
 - [ ] Load testing completed
 - [ ] Monitoring and alerting set up
@@ -614,7 +727,7 @@ Based on the contract (Schedule 2):
 
 | Phase | Task | Duration | Status |
 |-------|------|----------|--------|
-| **M1** | Project foundation (repos, CI, DB schemas, OpenAPI) | 5-10 Jan 2025 | 🔴 Pending |
+| **M1** | Project foundation (repos, CI, DB schemas, OpenAPI) | 5-10 Jan 2025 | 🟢 Complete |
 | **M2** | Auth & subscription (Email/Google, roles, Paystack) | 11-14 Jan 2025 | 🔴 Pending |
 | **M3** | Content services (CRUD, versioning, search) | 15-27 Jan 2025 | 🔴 Pending |
 | **M4** | Timed assessments (Past Questions, sessions, MCQ) | 28 Jan - 13 Feb 2025 | 🔴 Pending |
@@ -689,6 +802,6 @@ This project is proprietary and confidential. All rights reserved by FE-1 Made S
 
 ---
 
-**Last Updated:** January 2026  
+**Last Updated:** 10 January 2025  
 **Version:** 1.0.0  
-**Status:** 🚧 In Development
+**Status:** 🚧 In Development (M1 Foundation Complete)
