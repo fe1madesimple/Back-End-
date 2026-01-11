@@ -18,7 +18,7 @@ const isPrismaError = (err: any): boolean => {
  * Catches all errors and sends appropriate responses
  * Logs errors with Winston and reports to Sentry
  */
-export const errorHandler = (err: Error, req: Request, res: Response, next: NextFunction): void => {
+export const errorHandler = (err: Error, req: Request, res: Response, _next: NextFunction): void => {
   let statusCode = StatusCodes.INTERNAL_SERVER_ERROR;
   let message = 'Internal server error';
   let errors: any[] = [];
