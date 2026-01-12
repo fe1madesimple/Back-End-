@@ -10,7 +10,7 @@ export enum UserRole {
 /**
  * Role permissions mapping
  */
-export const ROLE_PERMISSIONS = {
+export const ROLE_PERMISSIONS: Record<UserRole, string[]> = {
   [UserRole.STUDENT]: [
     'content:read',
     'assessment:attempt',
