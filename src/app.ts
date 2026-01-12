@@ -97,7 +97,7 @@ const createApp = (): Application => {
   // ============================================
   // HEALTH CHECK ENDPOINT
   // ============================================
-  app.get('/health', (req, res) => {
+  app.get('/health', (_req, res) => {
     res.status(200).json({
       success: true,
       message: 'Server is healthy',
