@@ -66,6 +66,8 @@ if (process.env.REDIS_URL) {
   logger.warn('Redis not configured. Set REDIS_URL environment variable to enable caching.');
 }
 
+
+
 // Graceful shutdown
 process.on('beforeExit', async () => {
   if (redis) {
