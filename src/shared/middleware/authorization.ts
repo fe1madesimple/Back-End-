@@ -6,7 +6,7 @@ import { ForbiddenError } from '@/utils/errors';
  * Check if user has a specific permission
  */
 export const hasPermission = (user: any, permission: string): boolean => {
-  const permissions = ROLE_PERMISSIONS[user.role];
+  const permissions = ROLE_PERMISSIONS[user.role as UserRole];
   return permissions ? permissions.includes(permission) : false;
 };
 
@@ -14,7 +14,7 @@ export const hasPermission = (user: any, permission: string): boolean => {
  * Middleware: Require specific role(s)
  */
 export const requireRole = (...roles: UserRole[]) => {
-  return (req: Request, res: Response, next: NextFunction) => {
+  return (req: Request, _res: Response, next: NextFunction) => {
     if (!req.user) {
       throw new ForbiddenError('Authentication required');
     }
@@ -31,7 +31,7 @@ export const requireRole = (...roles: UserRole[]) => {
  * Middleware: Require specific permission
  */
 export const requirePermission = (permission: string) => {
-  return (req: Request, res: Response, next: NextFunction) => {
+  return (req: Request, _res: Response, next: NextFunction) => {
     if (!req.user) {
       throw new ForbiddenError('Authentication required');
     }
