@@ -11,8 +11,7 @@ import {
   ForgotPasswordInput,
   ResetPasswordInput,
   VerifyEmailInput,
-  RefreshTokenInput,
-} from '../interfaces/auth.interface';
+} from '../interfaces/auth.interfaces';
 import crypto from 'crypto';
 
 class AuthService {
@@ -91,7 +90,9 @@ class AuthService {
   /**
    * REGISTER NEW USER
    */
-  async register(input: RegisterInput): Promise<AuthResponse> {
+  async register(
+    input: RegisterInput
+  ): Promise<{ user: AuthResponse['user']; accessToken: string; refreshToken: string }> {
     const { email, password, firstName, lastName } = input;
 
     // Check if user already exists
@@ -152,7 +153,9 @@ class AuthService {
   /**
    * LOGIN USER
    */
-  async login(input: LoginInput): Promise<AuthResponse> {
+  async login(
+    input: LoginInput
+  ): Promise<{ user: AuthResponse['user']; accessToken: string; refreshToken: string }> {
     const { email, password } = input;
 
     // Find user
@@ -363,13 +366,11 @@ class AuthService {
    * REFRESH TOKEN
    */
   async refreshToken(
-    input: RefreshTokenInput
+    oldRefreshToken: string
   ): Promise<{ accessToken: string; refreshToken: string }> {
-    const { refreshToken } = input;
-
     try {
       // Verify refresh token
-      const decoded = jwt.verify(refreshToken, process.env.JWT_REFRESH_SECRET!) as TokenPayload;
+      const decoded = jwt.verify(oldRefreshToken, process.env.JWT_REFRESH_SECRET!) as TokenPayload;
 
       // Check if user still exists
       const user = await prisma.user.findUnique({
