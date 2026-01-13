@@ -10,7 +10,8 @@ import {
   TokenPayload,
   ForgotPasswordInput,
   ResetPasswordInput,
-  VerifyEmailInput,
+    VerifyEmailInput,
+  AuthServiceResponse
 } from '../interfaces/auth.interfaces';
 import crypto from 'crypto';
 
@@ -29,7 +30,7 @@ class AuthService {
    */
   private generateRefreshToken(payload: TokenPayload): string {
     return jwt.sign(payload, process.env.JWT_REFRESH_SECRET!, {
-      expiresIn:'30d',
+      expiresIn: '30d',
     });
   }
 
@@ -90,9 +91,7 @@ class AuthService {
   /**
    * REGISTER NEW USER
    */
-  async register(
-    input: RegisterInput
-  ): Promise<{ user: AuthResponse['user']; accessToken: string; refreshToken: string }> {
+  async register(input: RegisterInput): Promise<AuthServiceResponse> {
     const { email, password, firstName, lastName } = input;
 
     // Check if user already exists
@@ -153,9 +152,7 @@ class AuthService {
   /**
    * LOGIN USER
    */
-  async login(
-    input: LoginInput
-  ): Promise<{ user: AuthResponse['user']; accessToken: string; refreshToken: string }> {
+  async login(input: LoginInput): Promise<AuthServiceResponse> {
     const { email, password } = input;
 
     // Find user
@@ -200,7 +197,7 @@ class AuthService {
   /**
    * GOOGLE OAUTH LOGIN/REGISTER
    */
-  async googleAuth(profile: any): Promise<AuthResponse> {
+  async googleAuth(profile: any): Promise<AuthServiceResponse> {
     const { email, given_name, family_name, sub: googleId } = profile;
 
     // Check if user exists
