@@ -98,4 +98,5 @@ process.on('beforeExit', async () => {
   logger.info('Database disconnected');
 });
 
+
 export default prisma;

@@ -80,3 +80,4 @@ dump.rdb
 # Backup files
 *.bak
 *.backup
+/src/generated/prisma

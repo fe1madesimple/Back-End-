@@ -1,0 +1,578 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ============================================
+// USER & AUTHENTICATION
+// ============================================
+
+model User {
+  id                String   @id @default(cuid())
+  email             String   @unique
+  password          String?  // Nullable for OAuth users
+  firstName         String
+  lastName          String
+  role              UserRole @default(STUDENT)
+  
+  // Profile
+  profileColor      String   @default("#3B82F6") // Hex color for avatar
+  
+  // OAuth
+  googleId          String?  @unique
+  
+  // Email verification
+  isEmailVerified   Boolean  @default(false)
+  emailVerificationToken String?  @unique
+  emailVerificationExpires DateTime?
+  
+  // Password reset
+  passwordResetToken String?  @unique
+  passwordResetExpires DateTime?
+  
+  // User preferences (from Edit Profile screen)
+  targetExamDate    DateTime?
+  dailyStudyGoal    Int      @default(2) // Hours per day
+  focusSubjects     String[] // Array of subject IDs user wants to focus on
+  
+  // Preferences (from Preferences screen)
+  emailReminders    Boolean  @default(true)
+  studyStreakAlerts Boolean  @default(true)
+  podcastRecommendations Boolean @default(true)
+  showRelevantEpisodes Boolean @default(true)
+  
+  // Timestamps
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  lastLoginAt       DateTime?
+  
+  // Relations
+  subscription      Subscription?
+  payments          Payment[]
+  timedSessions     TimedSession[]
+  aiEvaluations     AIEvaluation[]
+  studyLogs         StudyLog[]
+  savedCases        SavedCase[]
+  quizAttempts      QuizAttempt[]
+  achievements      UserAchievement[]
+  
+  @@index([email])
+  @@index([googleId])
+  @@index([emailVerificationToken])
+  @@index([passwordResetToken])
+  @@index([createdAt])
+  @@map("users")
+}
+
+enum UserRole {
+  STUDENT
+  HOST
+  ADMIN
+}
+
+// ============================================
+// SUBSCRIPTION & PAYMENTS
+// ============================================
+
+model Subscription {
+  id                        String             @id @default(cuid())
+  userId                    String             @unique
+  user                      User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  status                    SubscriptionStatus
+  planType                  PlanType?          // Nullable for TRIAL
+  
+  // Paystack
+  paystackCustomerCode      String?
+  paystackSubscriptionCode  String?            @unique
+  
+  // Dates
+  startDate                 DateTime
+  endDate                   DateTime
+  trialEndsAt               DateTime?
+  cancelledAt               DateTime?
+  
+  // Timestamps
+  createdAt                 DateTime           @default(now())
+  updatedAt                 DateTime           @updatedAt
+  
+  // Relations
+  payments                  Payment[]
+  
+  @@index([status])
+  @@index([endDate])
+  @@index([paystackSubscriptionCode])
+  @@map("subscriptions")
+}
+
+enum SubscriptionStatus {
+  TRIAL
+  ACTIVE
+  EXPIRED
+  CANCELLED
+  SUSPENDED
+}
+
+enum PlanType {
+  MONTHLY
+  ANNUAL
+}
+
+model Payment {
+  id                  String   @id @default(cuid())
+  userId              String
+  user                User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  subscriptionId      String
+  subscription        Subscription @relation(fields: [subscriptionId], references: [id], onDelete: Cascade)
+  
+  amount              Int      // In kobo (Paystack uses kobo)
+  currency            String   @default("NGN")
+  status              PaymentStatus
+  
+  // Paystack
+  paystackReference   String   @unique
+  paymentMethod       String?  // CARD, BANK_TRANSFER, etc.
+  metadata            Json?    // Store extra Paystack data
+  
+  // Timestamps
+  createdAt           DateTime @default(now())
+  
+  @@index([userId])
+  @@index([subscriptionId])
+  @@index([status])
+  @@index([paystackReference])
+  @@index([createdAt])
+  @@map("payments")
+}
+
+enum PaymentStatus {
+  SUCCESS
+  FAILED
+  PENDING
+}
+
+// ============================================
+// CONTENT HIERARCHY
+// ============================================
+
+model Subject {
+  id            String    @id @default(cuid())
+  title         String    // "Criminal Law", "Contract Law", etc.
+  description   String?
+  color         String?   // For UI display
+  order         Int       // Display order
+  isPublished   Boolean   @default(false)
+  
+  // Timestamps
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  
+  // Relations
+  modules       Module[]
+  questions     Question[]
+  
+  @@index([isPublished])
+  @@index([order])
+  @@map("subjects")
+}
+
+model Module {
+  id            String    @id @default(cuid())
+  subjectId     String
+  subject       Subject   @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  
+  title         String    // "Foundations of Criminal Law"
+  description   String?
+  order         Int       // Display order within subject
+  isPublished   Boolean   @default(false)
+  
+  // Progress tracking
+  totalLessons  Int       @default(0)
+  
+  // Timestamps
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  
+  // Relations
+  lessons       Lesson[]
+  questions     Question[]
+  
+  @@index([subjectId])
+  @@index([isPublished])
+  @@index([order])
+  @@index([subjectId, isPublished])
+  @@map("modules")
+}
+
+model Lesson {
+  id                String        @id @default(cuid())
+  moduleId          String
+  module            Module        @relation(fields: [moduleId], references: [id], onDelete: Cascade)
+  
+  title             String        // "Characteristics of a Crime"
+  content           String        @db.Text // Rich text/HTML content
+  transcript        String?       @db.Text // For video lessons
+  order             Int           // Display order within module
+  estimatedDuration Int?          // In minutes
+  version           Int           @default(1) // Content versioning
+  isPublished       Boolean       @default(false)
+  
+  // Timestamps
+  createdAt         DateTime      @default(now())
+  updatedAt         DateTime      @updatedAt
+  
+  // Relations
+  assets            LessonAsset[]
+  
+  @@index([moduleId])
+  @@index([isPublished])
+  @@index([order])
+  @@index([moduleId, isPublished])
+  @@map("lessons")
+}
+
+model LessonAsset {
+  id          String     @id @default(cuid())
+  lessonId    String
+  lesson      Lesson     @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  
+  type        AssetType
+  url         String     // Cloudinary URL
+  publicId    String     // Cloudinary public ID (for deletion)
+  title       String?
+  fileSize    Int?       // In bytes
+  duration    Int?       // For videos (in seconds)
+  order       Int        // Display order
+  
+  // Timestamps
+  createdAt   DateTime   @default(now())
+  
+  @@index([lessonId])
+  @@index([type])
+  @@map("lesson_assets")
+}
+
+enum AssetType {
+  VIDEO
+  PDF
+  IMAGE
+  AUDIO
+}
+
+// ============================================
+// ASSESSMENTS & PRACTICE 
+// ============================================
+
+model Question {
+  id              String         @id @default(cuid())
+  subjectId       String
+  subject         Subject        @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  moduleId        String?
+  module          Module?        @relation(fields: [moduleId], references: [id], onDelete: SetNull)
+  
+  year            Int?           // 2023, 2022, etc.
+  questionText    String         @db.Text
+  sampleAnswer    String?        @db.Text
+  type            QuestionType
+  difficulty      Difficulty?
+  topics          String[]       // Array of topics
+  
+  // For MCQ
+  options         Json?          // Store MCQ options
+  correctAnswer   String?        // Correct option for MCQ
+  explanation     String?        @db.Text // Explanation for MCQ
+  
+  isPublished     Boolean        @default(false)
+  
+  // Timestamps
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+  
+  // Relations
+  timedSessions   TimedSession[]
+  aiEvaluations   AIEvaluation[]
+  quizAttempts    QuizAttempt[]
+  
+  @@index([subjectId])
+  @@index([moduleId])
+  @@index([type])
+  @@index([difficulty])
+  @@index([year])
+  @@index([isPublished])
+  @@index([subjectId, type, isPublished])
+  @@index([year, subjectId])
+  @@map("questions")
+}
+
+enum QuestionType {
+  ESSAY
+  MCQ
+}
+
+enum Difficulty {
+  EASY
+  MEDIUM
+  HARD
+}
+
+model TimedSession {
+  id            String        @id @default(cuid())
+  userId        String
+  user          User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  questionId    String
+  question      Question      @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  
+  startedAt     DateTime      @default(now())
+  submittedAt   DateTime?
+  duration      Int?          // Time taken in seconds
+  answerText    String?       @db.Text
+  wordCount     Int?
+  status        SessionStatus @default(IN_PROGRESS)
+  autoSaved     Json?         // Auto-save data
+  
+  // Timestamps
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+  
+  // Relations
+  aiEvaluation  AIEvaluation?
+  
+  @@index([userId])
+  @@index([questionId])
+  @@index([status])
+  @@index([userId, status])
+  @@index([createdAt])
+  @@map("timed_sessions")
+}
+
+enum SessionStatus {
+  IN_PROGRESS
+  SUBMITTED
+  ABANDONED
+}
+
+model QuizAttempt {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  questionId      String
+  question        Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  
+  selectedAnswer  String   // User's selected option
+  isCorrect       Boolean
+  timeSpent       Int      // In seconds
+  
+  // Timestamps
+  createdAt       DateTime @default(now())
+  
+  @@index([userId])
+  @@index([questionId])
+  @@index([isCorrect])
+  @@index([userId, createdAt])
+  @@map("quiz_attempts")
+}
+
+// ============================================
+// AI FEEDBACK
+// ============================================
+
+model AIEvaluation {
+  id              String       @id @default(cuid())
+  userId          String
+  user            User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  sessionId       String       @unique
+  session         TimedSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  questionId      String
+  question        Question     @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  
+  feedback        Json         // Structured feedback
+  score           Int          // 0-100
+  strengths       String[]     // What student did well
+  improvements    String[]     // What to improve
+  iracAnalysis    Json?        // Issue, Rule, Application, Conclusion
+  
+  // AI Provider details
+  provider        String       // "openai" or "anthropic"
+  model           String       // "gpt-4", "claude-3-5-sonnet"
+  tokensUsed      Int
+  
+  // Timestamps
+  createdAt       DateTime     @default(now())
+  
+  @@index([userId])
+  @@index([questionId])
+  @@index([provider])
+  @@index([createdAt])
+  @@map("ai_evaluations")
+}
+
+// ============================================
+// CASE LAW LIBRARY
+// ============================================
+
+model CaseBrief {
+  id            String      @id @default(cuid())
+  caseName      String      // "Donoghue v Stevenson"
+  citation      String      // "[1932] AC 562"
+  year          Int
+  court         String      // "House of Lords"
+  
+  facts         String      @db.Text
+  issue         String      @db.Text
+  ruling        String      @db.Text
+  reasoning     String      @db.Text
+  significance  String      @db.Text
+  
+  subjects      String[]    // Related subject IDs (no relation - just array)
+  
+  // For AI search
+  embedding     Json?       // Vector embedding (optional)
+  
+  // Timestamps
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+  
+  // Relations
+  savedBy       SavedCase[]
+  
+  @@index([year])
+  @@index([caseName])
+  @@index([citation])
+  @@map("case_briefs")
+}
+
+model SavedCase {
+  id            String     @id @default(cuid())
+  userId        String
+  user          User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  caseBriefId   String
+  caseBrief     CaseBrief  @relation(fields: [caseBriefId], references: [id], onDelete: Cascade)
+  
+  lastReviewedAt DateTime?
+  
+  // Timestamps
+  createdAt     DateTime   @default(now())
+  
+  @@unique([userId, caseBriefId])
+  @@index([userId])
+  @@index([caseBriefId])
+  @@map("saved_cases")
+}
+
+// ============================================
+// ANALYTICS & PROGRESS
+// ============================================
+
+model StudyLog {
+  id            String       @id @default(cuid())
+  userId        String
+  user          User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  activityType  ActivityType
+  resourceId    String?      // ID of lesson/question/case
+  resourceType  String?      // "LESSON", "QUESTION", "CASE"
+  duration      Int          // Time spent in seconds
+  completedAt   DateTime?
+  metadata      Json?        // Extra data
+  
+  // Timestamps
+  createdAt     DateTime     @default(now())
+  
+  @@index([userId])
+  @@index([activityType])
+  @@index([userId, createdAt])
+  @@index([userId, activityType])
+  @@map("study_logs")
+}
+
+enum ActivityType {
+  LESSON_VIEW
+  LESSON_COMPLETE
+  QUIZ_ATTEMPT
+  ESSAY_PRACTICE
+  CASE_REVIEW
+  PODCAST_LISTEN
+}
+
+// ============================================
+// ACHIEVEMENTS & GAMIFICATION
+// ============================================
+
+model Achievement {
+  id            String             @id @default(cuid())
+  title         String             // "First Lesson Completed"
+  description   String
+  type          AchievementType
+  condition     Json               // Condition to unlock (e.g., {"lessons": 1})
+  icon          String?            // Icon name or URL
+  
+  // Timestamps
+  createdAt     DateTime           @default(now())
+  
+  // Relations
+  userAchievements UserAchievement[]
+  
+  @@index([type])
+  @@map("achievements")
+}
+
+enum AchievementType {
+  LESSON_MILESTONE
+  STREAK_MILESTONE
+  QUIZ_ACCURACY
+  EXAM_SIMULATION
+  SUBJECT_MASTERY
+}
+
+model UserAchievement {
+  id              String      @id @default(cuid())
+  userId          String
+  user            User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  achievementId   String
+  achievement     Achievement @relation(fields: [achievementId], references: [id], onDelete: Cascade)
+  
+  unlockedAt      DateTime    @default(now())
+  
+  @@unique([userId, achievementId])
+  @@index([userId])
+  @@index([achievementId])
+  @@map("user_achievements")
+}
+
+// ============================================
+// ANNOUNCEMENTS
+// ============================================
+
+model Announcement {
+  id            String            @id @default(cuid())
+  title         String
+  message       String            @db.Text
+  type          AnnouncementType  @default(INFO)
+  targetRole    String            @default("ALL") // ALL, STUDENT, HOST
+  isPublished   Boolean           @default(false)
+  publishedAt   DateTime?
+  expiresAt     DateTime?
+  createdBy     String            // User ID of host/admin
+  
+  // Timestamps
+  createdAt     DateTime          @default(now())
+  updatedAt     DateTime          @updatedAt
+  
+  @@index([isPublished])
+  @@index([targetRole])
+  @@index([expiresAt])
+  @@index([isPublished, targetRole])
+  @@map("announcements")
+}
+
+enum AnnouncementType {
+  INFO
+  WARNING
+  URGENT
+}
