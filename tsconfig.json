@@ -8,7 +8,7 @@
 
     /* Modules */
     "module": "commonjs",
-    "rootDir": "./src",
+    "rootDir": "./", // CHANGED: From "./src" to "./"
     "moduleResolution": "node",
     "baseUrl": "./",
     "paths": {
@@ -56,16 +56,8 @@
     /* Completeness */
     "skipLibCheck": true
   },
-  "include": [
-    "src/**/*",
-    "prisma/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "**/*.spec.ts",
-    "**/*.test.ts"
-  ],
+  "include": ["src/**/*", "prisma/**/*"],
+  "exclude": ["node_modules", "dist", "**/*.spec.ts", "**/*.test.ts"],
   "ts-node": {
     "require": ["tsconfig-paths/register"],
     "swc": true,
