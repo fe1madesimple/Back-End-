@@ -20,8 +20,6 @@ export interface AuthResponse {
     profileColor: string;
     isEmailVerified: boolean;
   };
-  accessToken: string;
-  refreshToken: string;
 }
 
 export interface TokenPayload {
@@ -43,6 +41,3 @@ export interface VerifyEmailInput {
   token: string;
 }
 
-export interface RefreshTokenInput {
-  refreshToken: string;
-}
