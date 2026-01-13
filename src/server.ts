@@ -1,6 +1,7 @@
 import dotenv from 'dotenv';
 import createApp from './app';
 import logger from '@/utils/logger';
+import './shared/config/database'; // Triggers database connection
 
 // Load environment variables
 dotenv.config();
@@ -80,7 +81,7 @@ const startServer = async () => {
     process.on('SIGINT', () => gracefulShutdown('SIGINT'));
 
     // Handle uncaught errors
-    process.on('uncaughtException', (error: Error) => {
+    process.on('uncaught Exception', (error: Error) => {
       logger.error('Uncaught Exception - Shutting down...', {
         error: error.message,
         stack: error.stack,
@@ -97,7 +98,6 @@ const startServer = async () => {
       });
       process.exit(1);
     });
-
   } catch (error) {
     logger.error('Failed to start server', {
       error: error instanceof Error ? error.message : 'Unknown error',
