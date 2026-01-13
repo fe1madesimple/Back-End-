@@ -54,15 +54,7 @@ const startServer = async () => {
 
       server.close(() => {
         logger.info('HTTP server closed');
-
-        // TODO: Close database connections here when Prisma is set up
-        // await prisma.$disconnect();
-        // logger.info('Database connections closed');
-
-        // TODO: Close Redis connections here when Redis is set up
-        // await redis.quit();
-        // logger.info('Redis connections closed');
-
+        
         logger.info('Graceful shutdown completed successfully');
         process.exit(0);
       });

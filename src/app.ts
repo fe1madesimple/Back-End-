@@ -74,28 +74,28 @@ const createApp = (): Application => {
   logger.info('CORS enabled', { allowedOrigins: corsOrigins });
 
   // ============================================
-  // BODY PARSERS
+  // BODY PARSERS 
   // ============================================
   app.use(express.json({ limit: '10mb' }));
   app.use(express.urlencoded({ extended: true, limit: '10mb' }));
-  app.use(cookieParser());
+  app.use(cookieParser()); 
 
   logger.info('Body parsers enabled', { limit: '10mb' });
 
   // ============================================
-  // COMPRESSION
+  // COMPRESSION 
   // ============================================
   app.use(compression());
 
   logger.info('Response compression enabled');
 
   // ============================================
-  // REQUEST LOGGING
+  // REQUEST LOGGING 
   // ============================================
   app.use(requestLogger);
 
   // ============================================
-  // HEALTH CHECK ENDPOINT
+  // HEALTH CHECK ENDPOINT 
   // ============================================
   app.get('/health', (_req, res) => {
     res.status(200).json({
@@ -110,22 +110,12 @@ const createApp = (): Application => {
 
   logger.info('Health check endpoint registered at /health');
 
-  // ============================================
-  // API ROUTES (Will add later)
-  // ============================================
-  // TODO: Add routes here
-  // app.use('/api/v1', routes);
 
-  logger.info('API routes configuration pending');
-
-  // ============================================
-  // 404 HANDLER (Must be after all routes)
-  // ============================================
   app.use(notFoundHandler);
 
-  // ============================================
-  // GLOBAL ERROR HANDLER (Must be last)
-  // ============================================
+
+
+
   app.use(errorHandler);
 
   logger.info('Error handlers registered');
