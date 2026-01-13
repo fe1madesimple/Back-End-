@@ -20,7 +20,7 @@ class AuthService {
    */
   private generateAccessToken(payload: TokenPayload): string {
     return jwt.sign(payload, process.env.JWT_SECRET!, {
-      expiresIn: process.env.JWT_EXPIRES_IN || '7d',
+      expiresIn: '7d',
     });
   }
 
@@ -29,7 +29,7 @@ class AuthService {
    */
   private generateRefreshToken(payload: TokenPayload): string {
     return jwt.sign(payload, process.env.JWT_REFRESH_SECRET!, {
-      expiresIn: process.env.JWT_REFRESH_EXPIRES_IN || '30d',
+      expiresIn:'30d',
     });
   }
 

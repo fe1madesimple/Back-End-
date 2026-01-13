@@ -22,6 +22,20 @@ export interface AuthResponse {
   };
 }
 
+export interface AuthServiceResponse {
+  user: {
+    id: string;
+    email: string;
+    firstName: string;
+    lastName: string;
+    role: string;
+    profileColor: string;
+    isEmailVerified: boolean;
+  };
+  accessToken: string;
+  refreshToken: string;
+}
+
 export interface TokenPayload {
   userId: string;
   email: string;
