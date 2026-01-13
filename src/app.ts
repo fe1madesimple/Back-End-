@@ -99,7 +99,7 @@ const createApp = (): Application => {
   // HEALTH CHECK ENDPOINT
   // ============================================
 
-  
+
   /**
    * @swagger
    * /health:
@@ -147,14 +147,18 @@ const createApp = (): Application => {
 
   logger.info('Health check endpoint registered at /health');
 
-  app.use(
-    '/api-docs',
-    swaggerUi.serve,
-    swaggerUi.setup(swaggerSpec, {
-      customCss: '.swagger-ui .topbar { display: none }',
-      customSiteTitle: 'FE-1 Made Simple API Docs',
-    })
-  );
+app.use(
+  '/api-docs',
+  swaggerUi.serve,
+  swaggerUi.setup(swaggerSpec, {
+    customCss: `
+    .swagger-ui .topbar { display: none }
+    .swagger-ui .info .title { color: #3B82F6; }
+  `,
+    customSiteTitle: 'FE-1 Made Simple API Docs',
+    customfavIcon: '/favicon.ico',
+  })
+);
 
   logger.info('Swagger API documentation available at /api-docs');
 
