@@ -27,12 +27,11 @@ export const protect = async (req: Request, res: Response, next: NextFunction) =
       const user = await authService.getCurrentUser(decoded.userId);
       req.user = user;
 
-      return next(); // ✅ Token valid, continue
+      return next(); // Token valid, continue
     } catch (error: any) {
       // 4. Access token invalid/expired
       if (error.name === 'TokenExpiredError' && refreshToken) {
         // Access token expired, but we have refresh token
-        // Let's try to refresh!
 
         try {
           // 5. Generate new tokens using refresh token
@@ -49,7 +48,7 @@ export const protect = async (req: Request, res: Response, next: NextFunction) =
           const user = await authService.getCurrentUser(decoded.userId);
           req.user = user;
 
-          return next(); // ✅ Tokens refreshed, continue
+          return next(); // Tokens refreshed
         } catch (refreshError) {
           // Refresh token also invalid/expired
           throw new UnauthorizedError('Session expired. Please login again.');
@@ -59,6 +58,37 @@ export const protect = async (req: Request, res: Response, next: NextFunction) =
       // No refresh token or other JWT error
       throw new UnauthorizedError('Invalid token. Please login again.');
     }
+  } catch (error) {
+    next(error);
+  }
+};
+
+
+
+/**
+ * Optional authentication - Doesn't throw error if no token
+ * Used for endpoints that work for both logged-in and guest users
+ * To be created as a future implemetations , for situations where you want to give somene a walk arround , and not letting them to do any major action on the app .
+ */
+export const optionalAuth = async (req: Request, _res: Response, next: NextFunction) => {
+  try {
+    const accessToken = req.cookies.accessToken;
+
+    if (!accessToken) {
+      return next(); // No token, continue as guest
+    }
+
+    try {
+      const decoded = jwt.verify(accessToken, process.env.JWT_SECRET!) as TokenPayload;
+      const user = await authService.getCurrentUser(decoded.userId);
+      req.user = user;
+    } catch (error) {
+        // Token invalid, continue as guest (don't throw error)
+        
+        // feature to be added in the nearest future 
+    }
+
+    next();
   } catch (error) {
     next(error);
   }
