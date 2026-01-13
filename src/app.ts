@@ -75,29 +75,65 @@ const createApp = (): Application => {
   logger.info('CORS enabled', { allowedOrigins: corsOrigins });
 
   // ============================================
-  // BODY PARSERS 
+  // BODY PARSERS
   // ============================================
   app.use(express.json({ limit: '10mb' }));
   app.use(express.urlencoded({ extended: true, limit: '10mb' }));
-  app.use(cookieParser()); 
+  app.use(cookieParser());
 
   logger.info('Body parsers enabled', { limit: '10mb' });
 
   // ============================================
-  // COMPRESSION 
+  // COMPRESSION
   // ============================================
   app.use(compression());
 
   logger.info('Response compression enabled');
 
   // ============================================
-  // REQUEST LOGGING 
+  // REQUEST LOGGING
   // ============================================
   app.use(requestLogger);
 
   // ============================================
-  // HEALTH CHECK ENDPOINT 
+  // HEALTH CHECK ENDPOINT
   // ============================================
+
+  
+  /**
+   * @swagger
+   * /health:
+   *   get:
+   *     summary: Health check
+   *     description: Check if the server is running and healthy
+   *     tags: [Health]
+   *     responses:
+   *       200:
+   *         description: Server is healthy
+   *         content:
+   *           application/json:
+   *             schema:
+   *               type: object
+   *               properties:
+   *                 success:
+   *                   type: boolean
+   *                   example: true
+   *                 message:
+   *                   type: string
+   *                   example: Server is healthy
+   *                 timestamp:
+   *                   type: string
+   *                   format: date-time
+   *                 uptime:
+   *                   type: number
+   *                   example: 123.456
+   *                 environment:
+   *                   type: string
+   *                   example: development
+   *                 version:
+   *                   type: string
+   *                   example: 1.0.0
+   */
   app.get('/health', (_req, res) => {
     res.status(200).json({
       success: true,
@@ -111,7 +147,6 @@ const createApp = (): Application => {
 
   logger.info('Health check endpoint registered at /health');
 
-
   app.use(
     '/api-docs',
     swaggerUi.serve,
@@ -123,11 +158,7 @@ const createApp = (): Application => {
 
   logger.info('Swagger API documentation available at /api-docs');
 
-
   app.use(notFoundHandler);
-
-
-
 
   app.use(errorHandler);
 
