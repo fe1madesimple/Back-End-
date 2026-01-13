@@ -9,7 +9,8 @@ import { nodeProfilingIntegration } from '@sentry/profiling-node';
 import { errorHandler, notFoundHandler } from '@/shared/middleware/errorHandler';
 import requestLogger from './shared/middleware/requestLogger';
 import logger from '@/utils/logger';
-
+import swaggerUi from 'swagger-ui-express';
+import { swaggerSpec } from './swagger/config';
 
 /**
  * Create Express Application
@@ -109,6 +110,18 @@ const createApp = (): Application => {
   });
 
   logger.info('Health check endpoint registered at /health');
+
+
+  app.use(
+    '/api-docs',
+    swaggerUi.serve,
+    swaggerUi.setup(swaggerSpec, {
+      customCss: '.swagger-ui .topbar { display: none }',
+      customSiteTitle: 'FE-1 Made Simple API Docs',
+    })
+  );
+
+  logger.info('Swagger API documentation available at /api-docs');
 
 
   app.use(notFoundHandler);
