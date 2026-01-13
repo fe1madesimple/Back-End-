@@ -14,24 +14,7 @@ declare global {
 
 const prismaClientSingleton = () => {
   return new PrismaClient({
-    log: [
-      {
-        emit: 'event',
-        level: 'query',
-      },
-      {
-        emit: 'event',
-        level: 'error',
-      },
-      {
-        emit: 'event',
-        level: 'info',
-      },
-      {
-        emit: 'event',
-        level: 'warn',
-      },
-    ],
+    log: ['query', 'error', 'warn'], // Simple logging to stdout
   });
 };
 
@@ -41,39 +24,6 @@ const prisma = globalThis.prisma ?? prismaClientSingleton();
 if (process.env.NODE_ENV !== 'production') {
   globalThis.prisma = prisma;
 }
-
-// Log Prisma queries in development
-if (process.env.NODE_ENV === 'development') {
-  prisma.$on('query', (e: any) => {
-    logger.debug('Prisma Query', {
-      query: e.query,
-      params: e.params,
-      duration: e.duration,
-    });
-  });
-}
-
-// Log Prisma errors
-prisma.$on('error', (e: any) => {
-  logger.error('Prisma Error', {
-    message: e.message,
-    target: e.target,
-  });
-});
-
-// Log Prisma warnings
-prisma.$on('warn', (e: any) => {
-  logger.warn('Prisma Warning', {
-    message: e.message,
-  });
-});
-
-// Log Prisma info
-prisma.$on('info', (e: any) => {
-  logger.info('Prisma Info', {
-    message: e.message,
-  });
-});
 
 // Test database connection
 prisma
@@ -97,6 +47,5 @@ process.on('beforeExit', async () => {
   await prisma.$disconnect();
   logger.info('Database disconnected');
 });
-
 
 export default prisma;
