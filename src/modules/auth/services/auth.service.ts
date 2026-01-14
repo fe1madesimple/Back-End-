@@ -257,33 +257,29 @@ class AuthService {
   async forgotPassword(input: ForgotPasswordInput): Promise<void> {
     const { email } = input;
 
-    // Find user
     const user = await prisma.user.findUnique({
       where: { email: email.toLowerCase() },
     });
 
     if (!user) {
-      // Don't reveal if user exists (security best practice)
       return;
     }
 
-    // Generate reset token
-    const resetToken = this.generateRandomToken();
+    // Generate 4-digit code (not token)
+    const resetCode = this.generateVerificationCode();
     const resetExpires = new Date();
-    resetExpires.setHours(resetExpires.getHours() + 1); // 1 hour
+    resetExpires.setHours(resetExpires.getHours() + 1);
 
-    // Save reset token
     await prisma.user.update({
       where: { id: user.id },
       data: {
-        passwordResetCode: resetToken,
+        passwordResetCode: resetCode,
         passwordResetExpires: resetExpires,
       },
     });
 
-    // TODO: Send reset email (Brevo pending)
-    // await emailService.sendPasswordResetEmail(user.email, resetToken);
-    console.log('📧 [EMAIL PENDING] Password reset token:', resetToken);
+    // TODO: Send reset email with 4-digit code
+    console.log('📧 [EMAIL PENDING] Password reset code:', resetCode);
   }
 
   /**
