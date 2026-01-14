@@ -94,7 +94,6 @@ class AuthService {
   async register(input: RegisterInput): Promise<AuthServiceResponse> {
     const { email, password, firstName, lastName } = input;
 
-    // Check if user already exists
     const existingUser = await prisma.user.findUnique({
       where: { email: email.toLowerCase() },
     });
@@ -103,15 +102,13 @@ class AuthService {
       throw new BadRequestError('User with this email already exists');
     }
 
-    // Hash password
     const hashedPassword = await this.hashPassword(password);
 
-    // Generate email verification token
-    const emailVerificationToken = this.generateRandomToken();
+    // Generate 4-digit code (not token)
+    const emailVerificationCode = this.generateVerificationCode();
     const emailVerificationExpires = new Date();
-    emailVerificationExpires.setHours(emailVerificationExpires.getHours() + 24); // 24 hours
+    emailVerificationExpires.setHours(emailVerificationExpires.getHours() + 24);
 
-    // Create user
     const user = await prisma.user.create({
       data: {
         email: email.toLowerCase(),
@@ -125,14 +122,11 @@ class AuthService {
       },
     });
 
-    // Create 7-day trial subscription
     await this.createTrialSubscription(user.id);
 
-    // TODO: Send verification email (Brevo pending)
-    // await emailService.sendVerificationEmail(user.email, emailVerificationToken);
-    console.log('📧 [EMAIL PENDING] Verification token:', emailVerificationToken);
+    // TODO: Send verification email with 4-digit code
+    console.log('📧 [EMAIL PENDING] Verification code:', emailVerificationCode);
 
-    // Generate tokens
     const tokenPayload: TokenPayload = {
       userId: user.id,
       email: user.email,
@@ -148,7 +142,6 @@ class AuthService {
       refreshToken,
     };
   }
-
   /**
    * LOGIN USER
    */
