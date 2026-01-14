@@ -379,4 +379,90 @@ authRouter.post("/login", validate(loginSchema), login)
 authRouter.post("/google", googleAuth)
 
 
+
+/**
+ * @swagger
+ * /api/v1/auth/forgot-password:
+ *   post:
+ *     summary: Request password reset
+ *     tags: [Authentication]
+ *     description: |
+ *       Generates a password reset token and sends it via email.
+ *       
+ *       **What happens:**
+ *       - Checks if user with email exists
+ *       - Generates random reset token (expires in 1 hour)
+ *       - Saves token to database
+ *       - Sends password reset email (currently logged to console)
+ *       - ALWAYS returns success (doesn't reveal if email exists - security)
+ *       
+ *       **Email contains:**
+ *       A link like: `https://fe1madesimple.ie/reset-password?token=a7f3c2e1...`
+ *       
+ *       **Security note:**
+ *       Always returns same success message whether email exists or not.
+ *       This prevents attackers from discovering registered emails.
+ *       
+ *       **Important notes:**
+ *       - Token expires in 1 hour
+ *       - Token can only be used once
+ *       - If user doesn't exist, still returns success (security)
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - email
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 format: email
+ *                 example: student@example.com
+ *                 description: Email address of the account
+ *     responses:
+ *       200:
+ *         description: Request processed (always success for security)
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: If an account with that email exists, we have sent a password reset link.
+ *                   description: Same message whether user exists or not
+ *       400:
+ *         description: Bad request - Invalid email format
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                   example: Validation failed
+ *                 errors:
+ *                   type: array
+ *                   items:
+ *                     type: object
+ *                     properties:
+ *                       field:
+ *                         type: string
+ *                         example: email
+ *                       message:
+ *                         type: string
+ *                         example: Invalid email address
+ */
+
+authRouter.post("/forgot-password", validate(forgotPasswordSchema), forgotPassword)
+
+
 export default authRouter
