@@ -465,4 +465,107 @@ authRouter.post("/google", googleAuth)
 authRouter.post("/forgot-password", validate(forgotPasswordSchema), forgotPassword)
 
 
+/**
+ * @swagger
+ * /api/v1/auth/reset-password:
+ *   post:
+ *     summary: Reset password with token
+ *     tags: [Authentication]
+ *     description: |
+ *       Resets user's password using the token from forgot-password email.
+ *       
+ *       **What happens:**
+ *       - Validates reset token (checks if exists and not expired)
+ *       - Validates new password format
+ *       - Hashes new password (bcrypt)
+ *       - Updates user's password
+ *       - Clears reset token (one-time use)
+ *       - Sends confirmation email (currently logged to console)
+ *       
+ *       **Flow:**
+ *       1. User clicks link in email: `/reset-password?token=abc123`
+ *       2. Frontend extracts token from URL
+ *       3. User enters new password
+ *       4. Frontend sends token + new password to this endpoint
+ *       5. User can login with new password
+ *       
+ *       **Important notes:**
+ *       - Token expires in 1 hour
+ *       - Token can only be used once
+ *       - After reset, user must login again with new password
+ *       - Old password is completely replaced
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - token
+ *               - password
+ *             properties:
+ *               token:
+ *                 type: string
+ *                 example: a7f3c2e1b9d4f6h8k2l5m9n3p7q1r4s8
+ *                 description: Reset token from email link (64 characters)
+ *               password:
+ *                 type: string
+ *                 format: password
+ *                 minLength: 8
+ *                 example: NewPassword123
+ *                 description: New password (must contain uppercase, lowercase, and number)
+ *     responses:
+ *       200:
+ *         description: Password reset successful
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Password reset successful. You can now login with your new password.
+ *       400:
+ *         description: Bad request - Invalid or expired token
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                   example: Invalid or expired reset token
+ *             examples:
+ *               tokenExpired:
+ *                 summary: Token expired (> 1 hour)
+ *                 value:
+ *                   success: false
+ *                   message: Invalid or expired reset token
+ *               tokenUsed:
+ *                 summary: Token already used
+ *                 value:
+ *                   success: false
+ *                   message: Invalid or expired reset token
+ *               tokenInvalid:
+ *                 summary: Token doesn't exist
+ *                 value:
+ *                   success: false
+ *                   message: Invalid or expired reset token
+ *               passwordWeak:
+ *                 summary: Password doesn't meet requirements
+ *                 value:
+ *                   success: false
+ *                   message: Validation failed
+ *                   errors:
+ *                     - field: password
+ *                       message: Password must contain at least one uppercase letter
+ */
+authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
+
 export default authRouter
