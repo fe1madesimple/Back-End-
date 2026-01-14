@@ -573,37 +573,68 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
 /**
  * @swagger
  * /api/v1/auth/verify-email:
- *   get:
- *     summary: Verify email address
+ *   post:
+ *     summary: Verify email with 4-digit code
  *     tags: [Authentication]
  *     description: |
- *       Verifies user's email address using token from verification email.
+ *       Verifies user's email address using 4-digit code from verification email.
  *       
  *       **What happens:**
- *       - Validates verification token (checks if exists and not expired)
+ *       - Validates 4-digit code (checks if exists and not expired)
  *       - Sets user's `isEmailVerified` to true
- *       - Clears verification token (one-time use)
+ *       - Clears verification code (one-time use)
  *       - Sends welcome email (currently logged to console)
  *       
  *       **Flow:**
- *       1. User registers → receives verification email
- *       2. User clicks link in email: `/verify-email?token=abc123`
- *       3. Frontend automatically calls this endpoint
+ *       1. User registers → receives email with 4-digit code
+ *       2. User enters code in verification form (4 separate inputs)
+ *       3. Frontend sends code to this endpoint
  *       4. User is redirected to dashboard with success message
  *       
+ *       **Frontend usage:**
+ *       ```javascript
+ *       // User enters: 1 2 3 4 in 4 input boxes
+ *       const code = '1234';
+ *       
+ *       fetch('/api/v1/auth/verify-email', {
+ *         method: 'POST',
+ *         headers: { 'Content-Type': 'application/json' },
+ *         body: JSON.stringify({ code })
+ *       })
+ *       .then(res => res.json())
+ *       .then(data => {
+ *         if (data.success) {
+ *           showSuccess('Email verified!');
+ *           router.push('/dashboard');
+ *         }
+ *       })
+ *       .catch(error => {
+ *         showError('Invalid or expired code');
+ *       });
+ *       ```
+ *       
  *       **Important notes:**
- *       - Token expires in 24 hours
- *       - Token can only be used once
+ *       - Code expires in 24 hours
+ *       - Code can only be used once
+ *       - Code is exactly 4 numeric digits
  *       - User can still login even if email not verified
  *       - After verification, user sees "✅ Email verified" badge
- *     parameters:
- *       - in: query
- *         name: token
- *         required: true
- *         schema:
- *           type: string
- *           example: a7f3c2e1b9d4f6h8k2l5m9n3p7q1r4s8
- *         description: Verification token from email (64 characters)
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - code
+ *             properties:
+ *               code:
+ *                 type: string
+ *                 pattern: '^\d{4}$'
+ *                 minLength: 4
+ *                 maxLength: 4
+ *                 example: "1234"
+ *                 description: 4-digit verification code from email
  *     responses:
  *       200:
  *         description: Email verified successfully
@@ -619,7 +650,7 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
  *                   type: string
  *                   example: Email verified successfully. You can now access all features.
  *       400:
- *         description: Bad request - Invalid or expired token
+ *         description: Bad request - Invalid or expired code
  *         content:
  *           application/json:
  *             schema:
@@ -630,24 +661,29 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
  *                   example: false
  *                 message:
  *                   type: string
- *                   example: Invalid or expired verification token
  *             examples:
- *               tokenExpired:
- *                 summary: Token expired (> 24 hours)
+ *               invalidFormat:
+ *                 summary: Code is not 4 digits
  *                 value:
  *                   success: false
- *                   message: Invalid or expired verification token
- *               tokenUsed:
- *                 summary: Email already verified
+ *                   message: Code must be 4 digits
+ *               codeExpired:
+ *                 summary: Code expired (> 24 hours)
  *                 value:
  *                   success: false
- *                   message: Invalid or expired verification token
- *               tokenInvalid:
- *                 summary: Token doesn't exist
+ *                   message: Invalid or expired verification code
+ *               codeUsed:
+ *                 summary: Code already used
  *                 value:
  *                   success: false
- *                   message: Invalid or expired verification token
+ *                   message: Invalid or expired verification code
+ *               codeInvalid:
+ *                 summary: Code doesn't exist
+ *                 value:
+ *                   success: false
+ *                   message: Invalid or expired verification code
  */
+authRouter.post('/verify-email', validate(verifyEmailSchema), verifyEmail);
 
 
 export default authRouter
