@@ -3,7 +3,7 @@ import { asyncHandler } from '@/utils/asynHandler';
 import { sendCreated, sendSuccess } from '@/utils/response';
 import authService from '../services/auth.service';
 import { setAuthCookies } from '@/utils/cookie';
-import { RegisterInput, LoginInput } from '../interfaces/auth.interfaces';
+import { RegisterInput, LoginInput, ForgotPasswordInput } from '../interfaces/auth.interfaces';
 import { verifyGoogleToken } from '@/shared/utils';
 
 /**
@@ -64,4 +64,24 @@ export const googleAuth = asyncHandler(async (req: Request, res: Response) => {
 
   // Return user data
   sendSuccess(res, 'Google authentication successful', { user: result.user });
+});
+
+
+
+/**
+ * @desc    Request password reset
+ * @route   POST /api/v1/auth/forgot-password
+ * @access  Public
+ */
+export const forgotPassword = asyncHandler(async (req: Request, res: Response) => {
+  const input: ForgotPasswordInput = req.body;
+
+  // Call service (sends reset email)
+  await authService.forgotPassword(input);
+
+  // Always return success (don't reveal if email exists)
+  sendSuccess(
+    res,
+    'If an account with that email exists, we have sent a password reset link.'
+  );
 });
