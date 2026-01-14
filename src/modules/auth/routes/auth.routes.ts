@@ -1064,4 +1064,84 @@ authRouter.post('/refresh-token', refreshToken);
  */
 authRouter.get('/me', protect, getCurrentUser);
 
+
+/**
+ * @swagger
+ * /api/v1/auth/logout:
+ *   post:
+ *     summary: Logout user
+ *     tags: [Authentication]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Logs out the current user by clearing authentication cookies.
+ *       
+ *       **What happens:**
+ *       - Clears `accessToken` cookie (sets expiry to past)
+ *       - Clears `refreshToken` cookie (sets expiry to past)
+ *       - Browser automatically removes cookies
+ *       - Next request will not have authentication
+ *       
+ *       **Frontend flow:**
+ *       ```javascript
+ *       // Logout button click
+ *       fetch('/api/v1/auth/logout', {
+ *         method: 'POST',
+ *         credentials: 'include' // Important! Sends cookies
+ *       })
+ *       .then(res => res.json())
+ *       .then(data => {
+ *         if (data.success) {
+ *           // Clear user from state
+ *           setUser(null);
+ *           
+ *           // Redirect to login
+ *           router.push('/login');
+ *         }
+ *       });
+ *       ```
+ *       
+ *       **Important notes:**
+ *       - Requires authentication (protected route)
+ *       - Cookies are cleared on server side
+ *       - Frontend should clear user state and redirect to login
+ *       - User must login again to access protected routes
+ *     responses:
+ *       200:
+ *         description: Logged out successfully
+ *         headers:
+ *           Set-Cookie:
+ *             description: Cookies cleared (set to expire in past)
+ *             schema:
+ *               type: string
+ *               example: |
+ *                 accessToken=; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Path=/
+ *                 refreshToken=; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Path=/
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Logged out successfully
+ *       401:
+ *         description: Unauthorized - Not logged in
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                   example: Access token not found. Please login.
+ */
+authRouter.post('/logout', protect, logout);
+
 export default authRouter
