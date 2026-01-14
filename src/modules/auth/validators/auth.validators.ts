@@ -38,3 +38,9 @@ export const resetPasswordSchema = z.object({
       .regex(/[0-9]/, 'Password must contain at least one number'),
   }),
 });
+
+export const verifyEmailSchema = z.object({
+  query: z.object({
+    token: z.string().min(1, 'Verification token is required'),
+  }),
+});
