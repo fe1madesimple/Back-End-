@@ -375,9 +375,7 @@ authRouter.post("/login", validate(loginSchema), login)
  *                   type: string
  *                   example: Failed to verify Google token
  */
-
 authRouter.post("/google", googleAuth)
-
 
 
 /**
@@ -484,29 +482,52 @@ authRouter.post("/forgot-password", validate(forgotPasswordSchema), forgotPasswo
  * @swagger
  * /api/v1/auth/reset-password:
  *   post:
- *     summary: Reset password with token
+ *     summary: Reset password with 4-digit code
  *     tags: [Authentication]
  *     description: |
- *       Resets user's password using the token from forgot-password email.
+ *       Resets user's password using the 4-digit code from forgot-password email.
  *       
  *       **What happens:**
- *       - Validates reset token (checks if exists and not expired)
+ *       - Validates 4-digit code (checks if exists and not expired)
  *       - Validates new password format
  *       - Hashes new password (bcrypt)
  *       - Updates user's password
- *       - Clears reset token (one-time use)
+ *       - Clears reset code (one-time use)
  *       - Sends confirmation email (currently logged to console)
  *       
  *       **Flow:**
- *       1. User clicks link in email: `/reset-password?token=abc123`
- *       2. Frontend extracts token from URL
- *       3. User enters new password
- *       4. Frontend sends token + new password to this endpoint
- *       5. User can login with new password
+ *       1. User receives email with 4-digit code (e.g., 1234)
+ *       2. User enters code in 4 input boxes + new password
+ *       3. Frontend sends code + new password to this endpoint
+ *       4. User can login with new password
+ *       
+ *       **Frontend usage:**
+ *       ```javascript
+ *       // User enters: 1 2 3 4 in code boxes + new password
+ *       const code = '1234';
+ *       const password = 'NewPassword123';
+ *       
+ *       fetch('/api/v1/auth/reset-password', {
+ *         method: 'POST',
+ *         headers: { 'Content-Type': 'application/json' },
+ *         body: JSON.stringify({ code, password })
+ *       })
+ *       .then(res => res.json())
+ *       .then(data => {
+ *         if (data.success) {
+ *           showSuccess('Password reset successful!');
+ *           router.push('/login');
+ *         }
+ *       })
+ *       .catch(error => {
+ *         showError('Invalid or expired code');
+ *       });
+ *       ```
  *       
  *       **Important notes:**
- *       - Token expires in 1 hour
- *       - Token can only be used once
+ *       - Code expires in 1 hour
+ *       - Code can only be used once
+ *       - Code is exactly 4 numeric digits
  *       - After reset, user must login again with new password
  *       - Old password is completely replaced
  *     requestBody:
@@ -516,13 +537,16 @@ authRouter.post("/forgot-password", validate(forgotPasswordSchema), forgotPasswo
  *           schema:
  *             type: object
  *             required:
- *               - token
+ *               - code
  *               - password
  *             properties:
- *               token:
+ *               code:
  *                 type: string
- *                 example: a7f3c2e1b9d4f6h8k2l5m9n3p7q1r4s8
- *                 description: Reset token from email link (64 characters)
+ *                 pattern: '^\d{4}$'
+ *                 minLength: 4
+ *                 maxLength: 4
+ *                 example: "1234"
+ *                 description: 4-digit reset code from email
  *               password:
  *                 type: string
  *                 format: password
@@ -544,7 +568,7 @@ authRouter.post("/forgot-password", validate(forgotPasswordSchema), forgotPasswo
  *                   type: string
  *                   example: Password reset successful. You can now login with your new password.
  *       400:
- *         description: Bad request - Invalid or expired token
+ *         description: Bad request - Invalid or expired code
  *         content:
  *           application/json:
  *             schema:
@@ -555,23 +579,27 @@ authRouter.post("/forgot-password", validate(forgotPasswordSchema), forgotPasswo
  *                   example: false
  *                 message:
  *                   type: string
- *                   example: Invalid or expired reset token
  *             examples:
- *               tokenExpired:
- *                 summary: Token expired (> 1 hour)
+ *               invalidFormat:
+ *                 summary: Code is not 4 digits
  *                 value:
  *                   success: false
- *                   message: Invalid or expired reset token
- *               tokenUsed:
- *                 summary: Token already used
+ *                   message: Code must be 4 digits
+ *               codeExpired:
+ *                 summary: Code expired (> 1 hour)
  *                 value:
  *                   success: false
- *                   message: Invalid or expired reset token
- *               tokenInvalid:
- *                 summary: Token doesn't exist
+ *                   message: Invalid or expired reset code
+ *               codeUsed:
+ *                 summary: Code already used
  *                 value:
  *                   success: false
- *                   message: Invalid or expired reset token
+ *                   message: Invalid or expired reset code
+ *               codeInvalid:
+ *                 summary: Code doesn't exist
+ *                 value:
+ *                   success: false
+ *                   message: Invalid or expired reset code
  *               passwordWeak:
  *                 summary: Password doesn't meet requirements
  *                 value:
