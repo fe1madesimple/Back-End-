@@ -150,3 +150,26 @@ export const refreshToken = asyncHandler(async (req: Request, res: Response) => 
     'Tokens refreshed successfully'
   );
 });
+
+
+
+
+/**
+ * @desc    Get current logged-in user
+ * @route   GET /api/v1/auth/me
+ * @access  Private (requires authentication)
+ */
+export const getCurrentUser = asyncHandler(async (req: Request, res: Response) => {
+  // User is already attached to req.user by protect middleware
+  const userId = req.user!.id;
+
+  // Call service (gets user with subscription data)
+  const user = await authService.getCurrentUser(userId);
+
+  // Return user data
+  sendSuccess(
+    res,
+    'User retrieved successfully',
+    { user }
+  );
+});
