@@ -11,6 +11,7 @@ import requestLogger from './shared/middleware/requestLogger';
 import logger from '@/utils/logger';
 import swaggerUi from 'swagger-ui-express';
 import { swaggerSpec } from './swagger/config';
+import authRouter from './modules/auth/routes/auth.routes';
 
 /**
  * Create Express Application
@@ -99,7 +100,6 @@ const createApp = (): Application => {
   // HEALTH CHECK ENDPOINT
   // ============================================
 
-
   /**
    * @swagger
    * /health:
@@ -147,20 +147,22 @@ const createApp = (): Application => {
 
   logger.info('Health check endpoint registered at /health');
 
-app.use(
-  '/api-docs',
-  swaggerUi.serve,
-  swaggerUi.setup(swaggerSpec, {
-    customCss: `
+  app.use(
+    '/api-docs',
+    swaggerUi.serve,
+    swaggerUi.setup(swaggerSpec, {
+      customCss: `
     .swagger-ui .topbar { display: none }
     .swagger-ui .info .title { color: #3B82F6; }
   `,
-    customSiteTitle: 'FE-1 Made Simple API Docs',
-    customfavIcon: '/favicon.ico',
-  })
-);
+      customSiteTitle: 'FE-1 Made Simple API Docs',
+      customfavIcon: '/favicon.ico',
+    })
+  );
 
   logger.info('Swagger API documentation available at /api-docs');
+
+  app.use("/api/v1/auth", authRouter);
 
   app.use(notFoundHandler);
 
