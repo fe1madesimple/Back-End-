@@ -18,17 +18,365 @@ import {
   forgotPasswordSchema,
   resetPasswordSchema,
   verifyEmailSchema,
-} from '';
+} from '../validators/auth.validators';
 
 
 const authRouter = Router()
 
 
 
+/**
+ * @swagger
+ * tags:
+ *   name: Authentication
+ *   description: User authentication and account management
+ */
 
 
-authRouter.post("/register", )
 
+
+/**
+ * @swagger
+ * /api/v1/auth/register:
+ *   post:
+ *     summary: Register a new user
+ *     tags: [Authentication]
+ *     description: |
+ *       Creates a new user account with email and password.
+ *       
+ *       **What happens:**
+ *       - User account is created
+ *       - Password is securely hashed (bcrypt)
+ *       - 7-day FREE TRIAL subscription is automatically created
+ *       - Email verification token is generated (expires in 24 hours)
+ *       - Verification email is sent (currently logged to console)
+ *       - JWT tokens are set in HTTP-only cookies
+ *       
+ *       **Cookies set:**
+ *       - `accessToken` - Valid for 7 days
+ *       - `refreshToken` - Valid for 30 days
+ *       
+ *       **Important notes:**
+ *       - Email must be unique
+ *       - Password must be at least 8 characters with uppercase, lowercase, and number
+ *       - Tokens are in HTTP-only cookies (NOT in response body)
+ *       - User can login immediately even if email not verified
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - email
+ *               - password
+ *               - firstName
+ *               - lastName
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 format: email
+ *                 example: student@example.com
+ *                 description: Must be a valid email address
+ *               password:
+ *                 type: string
+ *                 format: password
+ *                 minLength: 8
+ *                 example: Password123
+ *                 description: Must contain uppercase, lowercase, and number
+ *               firstName:
+ *                 type: string
+ *                 minLength: 2
+ *                 example: John
+ *                 description: User's first name
+ *               lastName:
+ *                 type: string
+ *                 minLength: 2
+ *                 example: Doe
+ *                 description: User's last name
+ *     responses:
+ *       201:
+ *         description: User registered successfully
+ *         headers:
+ *           Set-Cookie:
+ *             description: JWT tokens set in HTTP-only cookies
+ *             schema:
+ *               type: string
+ *               example: accessToken=eyJhbGc...; HttpOnly; Secure; Path=/; Max-Age=604800
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Registration successful. Please check your email to verify your account.
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     user:
+ *                       type: object
+ *                       properties:
+ *                         id:
+ *                           type: string
+ *                           example: clp123abc456def789
+ *                         email:
+ *                           type: string
+ *                           example: student@example.com
+ *                         firstName:
+ *                           type: string
+ *                           example: John
+ *                         lastName:
+ *                           type: string
+ *                           example: Doe
+ *                         role:
+ *                           type: string
+ *                           enum: [STUDENT, HOST, ADMIN]
+ *                           example: STUDENT
+ *                         profileColor:
+ *                           type: string
+ *                           example: "#3B82F6"
+ *                           description: Hex color for user avatar
+ *                         isEmailVerified:
+ *                           type: boolean
+ *                           example: false
+ *                           description: Will be true after email verification
+ *       400:
+ *         description: Bad request - Validation error or user already exists
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                   example: User with this email already exists
+ *             examples:
+ *               emailExists:
+ *                 summary: Email already registered
+ *                 value:
+ *                   success: false
+ *                   message: User with this email already exists
+ *               validationError:
+ *                 summary: Invalid input data
+ *                 value:
+ *                   success: false
+ *                   message: Validation failed
+ *                   errors:
+ *                     - field: password
+ *                       message: Password must contain at least one uppercase letter
+ */
+authRouter.post("/register", validate(registerSchema), register)
+
+
+/**
+ * @swagger
+ * /api/v1/auth/login:
+ *   post:
+ *     summary: Login with email and password
+ *     tags: [Authentication]
+ *     description: |
+ *       Authenticates a user and returns JWT tokens in HTTP-only cookies.
+ *       
+ *       **What happens:**
+ *       - Email and password are validated
+ *       - Password is verified against hashed password in database
+ *       - User's `lastLoginAt` timestamp is updated
+ *       - JWT tokens are set in HTTP-only cookies
+ *       
+ *       **Cookies set:**
+ *       - `accessToken` - Valid for 7 days
+ *       - `refreshToken` - Valid for 30 days
+ *       
+ *       **Important notes:**
+ *       - User can login even if email is not verified
+ *       - Same error message for wrong email or wrong password (security)
+ *       - Tokens are in HTTP-only cookies (NOT in response body)
+ *       - Frontend should store user data from response in state
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - email
+ *               - password
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 format: email
+ *                 example: student@example.com
+ *               password:
+ *                 type: string
+ *                 format: password
+ *                 example: Password123
+ *     responses:
+ *       200:
+ *         description: Login successful
+ *         headers:
+ *           Set-Cookie:
+ *             description: JWT tokens set in HTTP-only cookies
+ *             schema:
+ *               type: string
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Login successful
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     user:
+ *                       type: object
+ *                       properties:
+ *                         id:
+ *                           type: string
+ *                           example: clp123abc456def789
+ *                         email:
+ *                           type: string
+ *                           example: student@example.com
+ *                         firstName:
+ *                           type: string
+ *                           example: John
+ *                         lastName:
+ *                           type: string
+ *                           example: Doe
+ *                         role:
+ *                           type: string
+ *                           example: STUDENT
+ *                         profileColor:
+ *                           type: string
+ *                           example: "#3B82F6"
+ *                         isEmailVerified:
+ *                           type: boolean
+ *                           example: true
+ *       401:
+ *         description: Unauthorized - Invalid credentials
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                   example: Invalid email or password
+ */
+authRouter.post("/login", validate(loginSchema), login)
+
+
+/**
+ * @swagger
+ * /api/v1/auth/google:
+ *   post:
+ *     summary: Login or register with Google OAuth
+ *     tags: [Authentication]
+ *     description: |
+ *       Authenticates a user using Google OAuth token.
+ *       
+ *       **What happens:**
+ *       - Google ID token is verified with Google's servers
+ *       - User profile is extracted from verified token
+ *       - If user doesn't exist: Creates new account with 7-day trial
+ *       - If user exists: Links Google account to existing account
+ *       - Email is automatically verified (Google pre-verifies)
+ *       - JWT tokens are set in HTTP-only cookies
+ *       
+ *       **Frontend flow:**
+ *       1. Use Google Sign-In button to get ID token
+ *       2. Send token to this endpoint
+ *       3. Receive user data and cookies
+ *       
+ *       **Important notes:**
+ *       - Google users don't have passwords (OAuth only)
+ *       - Email is automatically verified (isEmailVerified: true)
+ *       - If email already exists, Google account is linked
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - credential
+ *             properties:
+ *               credential:
+ *                 type: string
+ *                 description: Google ID token (JWT) from Google Sign-In
+ *                 example: eyJhbGciOiJSUzI1NiIsImtpZCI6IjY4M2E1...
+ *     responses:
+ *       200:
+ *         description: Google authentication successful
+ *         headers:
+ *           Set-Cookie:
+ *             description: JWT tokens set in HTTP-only cookies
+ *             schema:
+ *               type: string
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Google authentication successful
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     user:
+ *                       type: object
+ *                       properties:
+ *                         id:
+ *                           type: string
+ *                         email:
+ *                           type: string
+ *                         firstName:
+ *                           type: string
+ *                         lastName:
+ *                           type: string
+ *                         role:
+ *                           type: string
+ *                           example: STUDENT
+ *                         profileColor:
+ *                           type: string
+ *                         isEmailVerified:
+ *                           type: boolean
+ *                           example: true
+ *                           description: Always true for Google users
+ *       401:
+ *         description: Unauthorized - Invalid Google token
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                   example: Failed to verify Google token
+ */
+
+authRouter.post("/google", googleAuth)
 
 
 export default authRouter
