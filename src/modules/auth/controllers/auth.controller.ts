@@ -113,18 +113,12 @@ export const resetPassword = asyncHandler(async (req: Request, res: Response) =>
  * @access  Public
  */
 export const verifyEmail = asyncHandler(async (req: Request, res: Response) => {
-  const input: VerifyEmailInput = { token: req.query.token as string };
+  const input: VerifyEmailInput = req.body; // Changed from req.query
 
-  // Call service (validates token and marks email as verified)
   await authService.verifyEmail(input);
 
-  // Return success
-  sendSuccess(
-    res,
-    'Email verified successfully. You can now access all features.'
-  );
+  return sendSuccess(res, 'Email verified successfully. You can now access all features.');
 });
-
 
 
 /**
