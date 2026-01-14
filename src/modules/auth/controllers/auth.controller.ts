@@ -47,3 +47,31 @@ export const login = asyncHandler(async (req: Request, res: Response) => {
     { user: result.user }
   );
 });
+
+
+
+/**
+ * @desc    Google OAuth login/register
+ * @route   POST /api/v1/auth/google
+ * @access  Public
+ */
+export const googleAuth = asyncHandler(async (req: Request, res: Response) => {
+  const { credential } = req.body; // Google ID token from frontend
+
+  // TODO: Verify Google token and extract profile
+  // For now, assuming profile is validated by frontend/middleware
+  const profile = req.body.profile;
+
+  // Call service
+  const result = await authService.googleAuth(profile);
+
+  // Set tokens in HTTP-only cookies
+  setAuthCookies(res, result.accessToken, result.refreshToken);
+
+  // Return user data
+  sendSuccess(
+    res,
+    'Google authentication successful',
+    { user: result.user }
+  );
+});
