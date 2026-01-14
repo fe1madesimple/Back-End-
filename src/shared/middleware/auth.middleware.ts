@@ -9,6 +9,8 @@ import { TokenPayload } from '../../modules/auth/interfaces/auth.interfaces';
  * Protect routes - Verify access token
  * If expired, try to refresh using refresh token
  */
+
+
 export const protect = async (req: Request, res: Response, next: NextFunction) => {
   try {
     // 1. Get access token from cookie
