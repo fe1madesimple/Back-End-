@@ -11,6 +11,7 @@ import {
   VerifyEmailInput,
 } from '../interfaces/auth.interfaces';
 import { verifyGoogleToken } from '@/shared/utils';
+import { UnauthorizedError } from '@/utils/errors';
 
 /**
  * @desc    Register new user
@@ -119,5 +120,33 @@ export const verifyEmail = asyncHandler(async (req: Request, res: Response) => {
   sendSuccess(
     res,
     'Email verified successfully. You can now access all features.'
+  );
+});
+
+
+
+/**
+ * @desc    Refresh access token using refresh token
+ * @route   POST /api/v1/auth/refresh-token
+ * @access  Public
+ */
+export const refreshToken = asyncHandler(async (req: Request, res: Response) => {
+  // Get refresh token from cookie
+  const oldRefreshToken = req.cookies.refreshToken;
+
+  if (!oldRefreshToken) {
+    throw new UnauthorizedError('Refresh token not found');
+  }
+
+  // Call service (validates refresh token and generates new tokens)
+  const result = await authService.refreshToken(oldRefreshToken);
+
+  // Set new tokens in HTTP-only cookies
+  setAuthCookies(res, result.accessToken, result.refreshToken);
+
+  // Return success
+  sendSuccess(
+    res,
+    'Tokens refreshed successfully'
   );
 });
