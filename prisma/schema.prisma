@@ -117,6 +117,23 @@ model Subscription {
   @@map("subscriptions")
 }
 
+
+model ExamSitting {
+  id              String   @id @default(cuid())
+  name            String   // "April 2025 FE-1 Sitting"
+  examDate        DateTime // Official exam start date
+  registrationDeadline DateTime? // Last day to register
+  resultsDate     DateTime? // When results are published
+  isActive        Boolean  @default(true) // Current/upcoming sitting
+  
+  // Timestamps
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  
+  @@index([examDate])
+  @@index([isActive])
+  @@map("exam_sittings")
+}
 enum SubscriptionStatus {
   TRIAL
   ACTIVE
