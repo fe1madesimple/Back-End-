@@ -43,7 +43,10 @@ export const resetPasswordSchema = z.object({
 });
 
 export const verifyEmailSchema = z.object({
-  query: z.object({
-    token: z.string().min(1, 'Verification token is required'),
+  body: z.object({
+    code: z
+      .string()
+      .length(4, 'Code must be 4 digits')
+      .regex(/^\d{4}$/, 'Code must be numeric'),
   }),
 });
