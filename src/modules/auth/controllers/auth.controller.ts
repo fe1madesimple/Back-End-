@@ -3,7 +3,8 @@ import { asyncHandler } from '@/utils/asynHandler';
 import { sendCreated, sendSuccess } from '@/utils/response';
 import authService from '../services/auth.service';
 import { setAuthCookies } from '@/utils/cookie';
-import { RegisterInput, LoginInput} from '../interfaces/auth.interfaces';
+import { RegisterInput, LoginInput } from '../interfaces/auth.interfaces';
+import { verifyGoogleToken } from '@/shared/utils';
 
 /**
  * @desc    Register new user
@@ -25,7 +26,6 @@ export const register = asyncHandler(async (req: Request, res: Response) => {
   });
 });
 
-
 /**
  * @desc    Login user
  * @route   POST /api/v1/auth/login
@@ -41,13 +41,8 @@ export const login = asyncHandler(async (req: Request, res: Response) => {
   setAuthCookies(res, result.accessToken, result.refreshToken);
 
   // Return user data (no tokens in body)
-  sendSuccess(
-    res,
-    'Login successful',
-    { user: result.user }
-  );
+  sendSuccess(res, 'Login successful', { user: result.user });
 });
-
 
 
 /**
@@ -58,9 +53,8 @@ export const login = asyncHandler(async (req: Request, res: Response) => {
 export const googleAuth = asyncHandler(async (req: Request, res: Response) => {
   const { credential } = req.body; // Google ID token from frontend
 
-  // TODO: Verify Google token and extract profile
-  // For now, assuming profile is validated by frontend/middleware
-  const profile = req.body.profile;
+  // Verify token with Google and extract profile
+  const profile = await verifyGoogleToken(credential);
 
   // Call service
   const result = await authService.googleAuth(profile);
@@ -69,9 +63,5 @@ export const googleAuth = asyncHandler(async (req: Request, res: Response) => {
   setAuthCookies(res, result.accessToken, result.refreshToken);
 
   // Return user data
-  sendSuccess(
-    res,
-    'Google authentication successful',
-    { user: result.user }
-  );
+  sendSuccess(res, 'Google authentication successful', { user: result.user });
 });

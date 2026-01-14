@@ -6,6 +6,7 @@ export { default as asyncHandler } from './asynHandler';
 export * from './response';
 export * from './errors';
 export * from './cookie';
+export * from './google-auth';
 
 // Re-export for convenience
 export { loggerUtils as log };
