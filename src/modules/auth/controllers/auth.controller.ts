@@ -3,7 +3,12 @@ import { asyncHandler } from '@/utils/asynHandler';
 import { sendCreated, sendSuccess } from '@/utils/response';
 import authService from '../services/auth.service';
 import { setAuthCookies } from '@/utils/cookie';
-import { RegisterInput, LoginInput, ForgotPasswordInput } from '../interfaces/auth.interfaces';
+import {
+  RegisterInput,
+  LoginInput,
+  ForgotPasswordInput,
+  ResetPasswordInput,
+} from '../interfaces/auth.interfaces';
 import { verifyGoogleToken } from '@/shared/utils';
 
 /**
@@ -44,7 +49,6 @@ export const login = asyncHandler(async (req: Request, res: Response) => {
   sendSuccess(res, 'Login successful', { user: result.user });
 });
 
-
 /**
  * @desc    Google OAuth login/register
  * @route   POST /api/v1/auth/google
@@ -66,8 +70,6 @@ export const googleAuth = asyncHandler(async (req: Request, res: Response) => {
   sendSuccess(res, 'Google authentication successful', { user: result.user });
 });
 
-
-
 /**
  * @desc    Request password reset
  * @route   POST /api/v1/auth/forgot-password
@@ -80,8 +82,20 @@ export const forgotPassword = asyncHandler(async (req: Request, res: Response) =
   await authService.forgotPassword(input);
 
   // Always return success (don't reveal if email exists)
-  sendSuccess(
-    res,
-    'If an account with that email exists, we have sent a password reset link.'
-  );
+  sendSuccess(res, 'If an account with that email exists, we have sent a password reset link.');
+});
+
+/**
+ * @desc    Reset password with token
+ * @route   POST /api/v1/auth/reset-password
+ * @access  Public
+ */
+export const resetPassword = asyncHandler(async (req: Request, res: Response) => {
+  const input: ResetPasswordInput = req.body;
+
+  // Call service (validates token and updates password)
+  await authService.resetPassword(input);
+
+  // Return success
+  sendSuccess(res, 'Password reset successful. You can now login with your new password.');
 });
