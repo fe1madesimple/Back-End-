@@ -20,8 +20,12 @@ export class AppError extends Error {
  * 400 Bad Request
  */
 export class BadRequestError extends AppError {
-  constructor(message: string = 'Bad Request') {
+  constructor(message: string, errors?: any[]) {
     super(message, StatusCodes.BAD_REQUEST);
+
+    if (errors) {
+      (this as any).errors = errors;
+    }
   }
 }
 

@@ -18,7 +18,7 @@ import {
   forgotPasswordSchema,
   resetPasswordSchema,
   verifyEmailSchema,
-} from '../validators/auth.validator';
+} from '';
 
 
 const authRouter = Router()
@@ -27,7 +27,7 @@ const authRouter = Router()
 
 
 
-
+authRouter.post("/register", )
 
 
 
