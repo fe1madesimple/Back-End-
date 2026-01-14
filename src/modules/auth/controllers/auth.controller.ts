@@ -12,6 +12,8 @@ import {
 } from '../interfaces/auth.interfaces';
 import { verifyGoogleToken } from '@/shared/utils';
 import { UnauthorizedError } from '@/utils/errors';
+import { clearAuthCookies } from '@/utils/cookie';
+
 
 /**
  * @desc    Register new user
@@ -171,5 +173,22 @@ export const getCurrentUser = asyncHandler(async (req: Request, res: Response) =
     res,
     'User retrieved successfully',
     { user }
+  );
+});
+
+
+/**
+ * @desc    Logout user (clear cookies)
+ * @route   POST /api/v1/auth/logout
+ * @access  Private (requires authentication)
+ */
+export const logout = asyncHandler(async (_req: Request, res: Response) => {
+  // Clear auth cookies
+  clearAuthCookies(res);
+
+  // Return success
+  sendSuccess(
+    res,
+    'Logged out successfully'
   );
 });
