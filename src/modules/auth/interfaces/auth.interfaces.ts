@@ -47,11 +47,11 @@ export interface ForgotPasswordInput {
 }
 
 export interface ResetPasswordInput {
-  token: string;
+  code: string;
   password: string;
 }
 
 export interface VerifyEmailInput {
-  token: string;
+  code: string;
 }
 

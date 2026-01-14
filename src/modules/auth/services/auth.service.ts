@@ -119,7 +119,7 @@ class AuthService {
         firstName,
         lastName,
         role: 'STUDENT',
-        emailVerificationToken,
+        emailVerificationCode,
         emailVerificationExpires,
         isEmailVerified: false,
       },
@@ -276,7 +276,7 @@ class AuthService {
     await prisma.user.update({
       where: { id: user.id },
       data: {
-        passwordResetToken: resetToken,
+        passwordResetCode: resetToken,
         passwordResetExpires: resetExpires,
       },
     });
@@ -290,37 +290,32 @@ class AuthService {
    * RESET PASSWORD
    */
   async resetPassword(input: ResetPasswordInput): Promise<void> {
-    const { token, password } = input;
+    const { code, password } = input; // Changed from token to code
 
-    // Find user with valid token
     const user = await prisma.user.findFirst({
       where: {
-        passwordResetToken: token,
+        passwordResetCode: code,
         passwordResetExpires: {
-          gt: new Date(), // Token not expired
+          gt: new Date(),
         },
       },
     });
 
     if (!user) {
-      throw new BadRequestError('Invalid or expired reset token');
+      throw new BadRequestError('Invalid or expired reset code');
     }
 
-    // Hash new password
     const hashedPassword = await this.hashPassword(password);
 
-    // Update password and clear reset token
     await prisma.user.update({
       where: { id: user.id },
       data: {
         password: hashedPassword,
-        passwordResetToken: null,
+        passwordResetCode: null,
         passwordResetExpires: null,
       },
     });
 
-    // TODO: Send password changed confirmation email (Brevo pending)
-    // await emailService.sendPasswordChangedEmail(user.email);
     console.log('📧 [EMAIL PENDING] Password changed for:', user.email);
   }
 
@@ -328,34 +323,29 @@ class AuthService {
    * VERIFY EMAIL
    */
   async verifyEmail(input: VerifyEmailInput): Promise<void> {
-    const { token } = input;
-
-    // Find user with valid token
+    const { code } = input;
     const user = await prisma.user.findFirst({
       where: {
-        emailVerificationToken: token,
+        emailVerificationCode: code,
         emailVerificationExpires: {
-          gt: new Date(), // Token not expired
+          gt: new Date(),
         },
       },
     });
 
     if (!user) {
-      throw new BadRequestError('Invalid or expired verification token');
+      throw new BadRequestError('Invalid or expired verification code');
     }
 
-    // Mark email as verified
     await prisma.user.update({
       where: { id: user.id },
       data: {
         isEmailVerified: true,
-        emailVerificationToken: null,
+        emailVerificationCode: null,
         emailVerificationExpires: null,
       },
     });
 
-    // TODO: Send welcome email (Brevo pending)
-    // await emailService.sendWelcomeEmail(user.email, user.firstName);
     console.log('📧 [EMAIL PENDING] Welcome email for:', user.email);
   }
 

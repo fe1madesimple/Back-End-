@@ -105,15 +105,13 @@ export const resetPassword = asyncHandler(async (req: Request, res: Response) =>
 });
 
 
-
-
 /**
  * @desc    Verify email with token
  * @route   GET /api/v1/auth/verify-email
  * @access  Public
  */
 export const verifyEmail = asyncHandler(async (req: Request, res: Response) => {
-  const input: VerifyEmailInput = req.body; // Changed from req.query
+  const input: VerifyEmailInput = req.body; 
 
   await authService.verifyEmail(input);
 
