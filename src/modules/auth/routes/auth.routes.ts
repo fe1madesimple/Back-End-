@@ -387,25 +387,41 @@ authRouter.post("/google", googleAuth)
  *     summary: Request password reset
  *     tags: [Authentication]
  *     description: |
- *       Generates a password reset token and sends it via email.
+ *       Generates a 4-digit password reset code and sends it via email.
  *       
  *       **What happens:**
  *       - Checks if user with email exists
- *       - Generates random reset token (expires in 1 hour)
- *       - Saves token to database
- *       - Sends password reset email (currently logged to console)
+ *       - Generates random 4-digit code (expires in 1 hour)
+ *       - Saves code to database
+ *       - Sends password reset email with 4-digit code (currently logged to console)
  *       - ALWAYS returns success (doesn't reveal if email exists - security)
  *       
  *       **Email contains:**
- *       A link like: `https://fe1madesimple.ie/reset-password?token=a7f3c2e1...`
+ *       "Your password reset code is: 1234"
+ *       
+ *       **Frontend flow:**
+ *       ```javascript
+ *       // Step 1: User enters email
+ *       fetch('/api/v1/auth/forgot-password', {
+ *         method: 'POST',
+ *         headers: { 'Content-Type': 'application/json' },
+ *         body: JSON.stringify({ email: 'user@example.com' })
+ *       })
+ *       .then(() => {
+ *         // Always shows success (security)
+ *         showMessage('If account exists, code was sent to email');
+ *         router.push('/reset-password'); // Show code + password form
+ *       });
+ *       ```
  *       
  *       **Security note:**
  *       Always returns same success message whether email exists or not.
  *       This prevents attackers from discovering registered emails.
  *       
  *       **Important notes:**
- *       - Token expires in 1 hour
- *       - Token can only be used once
+ *       - Code expires in 1 hour
+ *       - Code can only be used once
+ *       - Code is exactly 4 numeric digits
  *       - If user doesn't exist, still returns success (security)
  *     requestBody:
  *       required: true
@@ -434,7 +450,7 @@ authRouter.post("/google", googleAuth)
  *                   example: true
  *                 message:
  *                   type: string
- *                   example: If an account with that email exists, we have sent a password reset link.
+ *                   example: If an account with that email exists, we have sent a password reset code.
  *                   description: Same message whether user exists or not
  *       400:
  *         description: Bad request - Invalid email format
@@ -461,7 +477,6 @@ authRouter.post("/google", googleAuth)
  *                         type: string
  *                         example: Invalid email address
  */
-
 authRouter.post("/forgot-password", validate(forgotPasswordSchema), forgotPassword)
 
 
