@@ -729,4 +729,106 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
 authRouter.post('/verify-email', validate(verifyEmailSchema), verifyEmail);
 
 
+
+/**
+ * @swagger
+ * /api/v1/auth/refresh-token:
+ *   post:
+ *     summary: Refresh access token
+ *     tags: [Authentication]
+ *     description: |
+ *       Generates new access and refresh tokens using existing refresh token.
+ *       
+ *       **What happens:**
+ *       - Reads refresh token from HTTP-only cookie
+ *       - Validates refresh token signature and expiry
+ *       - Checks if user still exists in database
+ *       - Generates NEW access token (valid for 7 days)
+ *       - Generates NEW refresh token (valid for 30 days)
+ *       - Sets both new tokens in HTTP-only cookies
+ *       
+ *       **Token rotation:**
+ *       Both tokens are regenerated for security (token rotation best practice).
+ *       
+ *       **When to use:**
+ *       - Usually NOT needed! Auth middleware auto-refreshes expired tokens
+ *       - Only call manually if making requests without middleware
+ *       - Or if frontend detects expired token before request
+ *       
+ *       **Frontend usage:**
+ *       ```javascript
+ *       // Usually automatic via middleware
+ *       // But if needed manually:
+ *       fetch('/api/v1/auth/refresh-token', {
+ *         method: 'POST',
+ *         credentials: 'include' // Important! Sends cookies
+ *       });
+ *       // New tokens automatically set in cookies
+ *       ```
+ *       
+ *       **Important notes:**
+ *       - No request body needed (token from cookie)
+ *       - Refresh token expires in 30 days max
+ *       - Both tokens are rotated (new ones issued)
+ *       - If refresh token expired, user must login again
+ *     responses:
+ *       200:
+ *         description: Tokens refreshed successfully
+ *         headers:
+ *           Set-Cookie:
+ *             description: New JWT tokens set in HTTP-only cookies
+ *             schema:
+ *               type: string
+ *               example: |
+ *                 accessToken=NEW_TOKEN...; HttpOnly; Secure; Path=/; Max-Age=604800
+ *                 refreshToken=NEW_REFRESH...; HttpOnly; Secure; Path=/; Max-Age=2592000
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Tokens refreshed successfully
+ *       401:
+ *         description: Unauthorized - Invalid or expired refresh token
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *             examples:
+ *               noToken:
+ *                 summary: No refresh token in cookie
+ *                 value:
+ *                   success: false
+ *                   message: Refresh token not found
+ *               tokenExpired:
+ *                 summary: Refresh token expired (> 30 days)
+ *                 value:
+ *                   success: false
+ *                   message: Invalid or expired refresh token
+ *               tokenInvalid:
+ *                 summary: Token signature invalid
+ *                 value:
+ *                   success: false
+ *                   message: Invalid or expired refresh token
+ *               userDeleted:
+ *                 summary: User no longer exists
+ *                 value:
+ *                   success: false
+ *                   message: User not found
+ */
+authRouter.post('/refresh-token', refreshToken);
+
+
+
 export default authRouter
