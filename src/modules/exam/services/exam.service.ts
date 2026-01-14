@@ -100,3 +100,6 @@ class ExamService {
     return this.formatExamSitting(sitting);
   }
 }
+
+
+export default new ExamService();
