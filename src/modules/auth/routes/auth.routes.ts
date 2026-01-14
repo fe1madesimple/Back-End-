@@ -831,4 +831,237 @@ authRouter.post('/refresh-token', refreshToken);
 
 
 
+/**
+ * @swagger
+ * /api/v1/auth/me:
+ *   get:
+ *     summary: Get current logged-in user
+ *     tags: [Authentication]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Returns complete profile data for the currently authenticated user.
+ *       
+ *       **What happens:**
+ *       - Validates access token from HTTP-only cookie
+ *       - Extracts user ID from token
+ *       - Fetches user data from database
+ *       - Includes subscription data (trial status, expiry date)
+ *       - Returns full user profile
+ *       
+ *       **When to use:**
+ *       - On app initialization (check if user is logged in)
+ *       - After login/register (get user data)
+ *       - After profile updates (refresh user data)
+ *       - To check subscription status
+ *       - To display trial countdown
+ *       
+ *       **Frontend usage:**
+ *       ```javascript
+ *       // On app load
+ *       useEffect(() => {
+ *         fetch('/api/v1/auth/me', {
+ *           credentials: 'include' // Important! Sends cookies
+ *         })
+ *         .then(res => res.json())
+ *         .then(data => {
+ *           if (data.success) {
+ *             setUser(data.data.user);
+ *             
+ *             // Check trial status
+ *             if (data.data.user.subscription.status === 'TRIAL') {
+ *               const daysLeft = calculateDaysLeft(
+ *                 data.data.user.subscription.trialEndsAt
+ *               );
+ *               showTrialBanner(daysLeft);
+ *             }
+ *           }
+ *         })
+ *         .catch(() => {
+ *           // Not logged in, redirect to login
+ *           router.push('/login');
+ *         });
+ *       }, []);
+ *       ```
+ *       
+ *       **Important notes:**
+ *       - Requires authentication (protected route)
+ *       - Access token must be in cookie
+ *       - Returns user + subscription data
+ *       - Password NOT included in response
+ *     responses:
+ *       200:
+ *         description: User data retrieved successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: User retrieved successfully
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     user:
+ *                       type: object
+ *                       properties:
+ *                         id:
+ *                           type: string
+ *                           example: clp123abc456def789
+ *                         email:
+ *                           type: string
+ *                           example: student@example.com
+ *                         firstName:
+ *                           type: string
+ *                           example: John
+ *                         lastName:
+ *                           type: string
+ *                           example: Doe
+ *                         role:
+ *                           type: string
+ *                           enum: [STUDENT, HOST, ADMIN]
+ *                           example: STUDENT
+ *                         profileColor:
+ *                           type: string
+ *                           example: "#3B82F6"
+ *                           description: Hex color for avatar background
+ *                         googleId:
+ *                           type: string
+ *                           nullable: true
+ *                           example: null
+ *                           description: Google user ID if linked
+ *                         isEmailVerified:
+ *                           type: boolean
+ *                           example: true
+ *                         targetExamDate:
+ *                           type: string
+ *                           format: date-time
+ *                           nullable: true
+ *                           example: "2025-04-15T00:00:00.000Z"
+ *                           description: User's personal exam goal date
+ *                         dailyStudyGoal:
+ *                           type: integer
+ *                           example: 2
+ *                           description: Hours per day
+ *                         focusSubjects:
+ *                           type: array
+ *                           items:
+ *                             type: string
+ *                           example: ["clp_subject_1", "clp_subject_2"]
+ *                           description: Array of subject IDs user wants to focus on
+ *                         emailReminders:
+ *                           type: boolean
+ *                           example: true
+ *                         studyStreakAlerts:
+ *                           type: boolean
+ *                           example: true
+ *                         podcastRecommendations:
+ *                           type: boolean
+ *                           example: true
+ *                         showRelevantEpisodes:
+ *                           type: boolean
+ *                           example: true
+ *                         createdAt:
+ *                           type: string
+ *                           format: date-time
+ *                           example: "2025-01-13T18:00:00.000Z"
+ *                         updatedAt:
+ *                           type: string
+ *                           format: date-time
+ *                           example: "2025-01-14T10:30:00.000Z"
+ *                         lastLoginAt:
+ *                           type: string
+ *                           format: date-time
+ *                           nullable: true
+ *                           example: "2025-01-14T10:30:00.000Z"
+ *                         subscription:
+ *                           type: object
+ *                           description: User's subscription details
+ *                           properties:
+ *                             id:
+ *                               type: string
+ *                               example: clp_sub_123abc
+ *                             userId:
+ *                               type: string
+ *                               example: clp123abc456def789
+ *                             status:
+ *                               type: string
+ *                               enum: [TRIAL, ACTIVE, EXPIRED, CANCELLED, SUSPENDED]
+ *                               example: TRIAL
+ *                               description: Current subscription status
+ *                             planType:
+ *                               type: string
+ *                               enum: [MONTHLY, ANNUAL]
+ *                               nullable: true
+ *                               example: null
+ *                               description: Null during trial
+ *                             startDate:
+ *                               type: string
+ *                               format: date-time
+ *                               example: "2025-01-13T18:00:00.000Z"
+ *                             endDate:
+ *                               type: string
+ *                               format: date-time
+ *                               example: "2025-01-20T18:00:00.000Z"
+ *                               description: When subscription ends
+ *                             trialEndsAt:
+ *                               type: string
+ *                               format: date-time
+ *                               nullable: true
+ *                               example: "2025-01-20T18:00:00.000Z"
+ *                               description: When 7-day trial ends
+ *                             cancelledAt:
+ *                               type: string
+ *                               format: date-time
+ *                               nullable: true
+ *                               example: null
+ *                             createdAt:
+ *                               type: string
+ *                               format: date-time
+ *                             updatedAt:
+ *                               type: string
+ *                               format: date-time
+ *       401:
+ *         description: Unauthorized - Not logged in or token expired
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *             examples:
+ *               noToken:
+ *                 summary: No access token
+ *                 value:
+ *                   success: false
+ *                   message: Access token not found. Please login.
+ *               sessionExpired:
+ *                 summary: Both tokens expired
+ *                 value:
+ *                   success: false
+ *                   message: Session expired. Please login again.
+ *       404:
+ *         description: User not found (deleted account)
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                   example: User not found
+ */
+authRouter.get('/me', protect, getCurrentUser);
+
 export default authRouter
