@@ -1,9 +1,9 @@
 import { Request, Response } from 'express';
 import { asyncHandler } from '@/utils/asynHandler';
-import { sendCreated } from '@/utils/response';
+import { sendCreated, sendSuccess } from '@/utils/response';
 import authService from '../services/auth.service';
 import { setAuthCookies } from '@/utils/cookie';
-import { RegisterInput } from '../interfaces/auth.interfaces';
+import { RegisterInput, LoginInput} from '../interfaces/auth.interfaces';
 
 /**
  * @desc    Register new user
@@ -23,4 +23,27 @@ export const register = asyncHandler(async (req: Request, res: Response) => {
   sendCreated(res, 'Registration successful. Please check your email to verify your account.', {
     user: result.user,
   });
+});
+
+
+/**
+ * @desc    Login user
+ * @route   POST /api/v1/auth/login
+ * @access  Public
+ */
+export const login = asyncHandler(async (req: Request, res: Response) => {
+  const input: LoginInput = req.body;
+
+  // Call service
+  const result = await authService.login(input);
+
+  // Set tokens in HTTP-only cookies
+  setAuthCookies(res, result.accessToken, result.refreshToken);
+
+  // Return user data (no tokens in body)
+  sendSuccess(
+    res,
+    'Login successful',
+    { user: result.user }
+  );
 });
