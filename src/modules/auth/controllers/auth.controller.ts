@@ -8,6 +8,7 @@ import {
   LoginInput,
   ForgotPasswordInput,
   ResetPasswordInput,
+  VerifyEmailInput,
 } from '../interfaces/auth.interfaces';
 import { verifyGoogleToken } from '@/shared/utils';
 
@@ -98,4 +99,25 @@ export const resetPassword = asyncHandler(async (req: Request, res: Response) =>
 
   // Return success
   sendSuccess(res, 'Password reset successful. You can now login with your new password.');
+});
+
+
+
+
+/**
+ * @desc    Verify email with token
+ * @route   GET /api/v1/auth/verify-email
+ * @access  Public
+ */
+export const verifyEmail = asyncHandler(async (req: Request, res: Response) => {
+  const input: VerifyEmailInput = { token: req.query.token as string };
+
+  // Call service (validates token and marks email as verified)
+  await authService.verifyEmail(input);
+
+  // Return success
+  sendSuccess(
+    res,
+    'Email verified successfully. You can now access all features.'
+  );
 });
