@@ -13,7 +13,7 @@ import {
     VerifyEmailInput,
   AuthServiceResponse
 } from '../interfaces/auth.interfaces';
-import crypto from 'crypto';
+
 
 class AuthService {
   /**
@@ -26,6 +26,13 @@ class AuthService {
   }
 
   /**
+   * Generate random 4-digit code
+   */
+  private generateVerificationCode(): string {
+    return Math.floor(1000 + Math.random() * 9000).toString();
+  }
+
+  /**
    * Generate JWT Refresh Token
    */
   private generateRefreshToken(payload: TokenPayload): string {
@@ -33,7 +40,6 @@ class AuthService {
       expiresIn: '30d',
     });
   }
-
 
   /**
    * Hash password
