@@ -568,4 +568,86 @@ authRouter.post("/forgot-password", validate(forgotPasswordSchema), forgotPasswo
  */
 authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
 
+
+
+/**
+ * @swagger
+ * /api/v1/auth/verify-email:
+ *   get:
+ *     summary: Verify email address
+ *     tags: [Authentication]
+ *     description: |
+ *       Verifies user's email address using token from verification email.
+ *       
+ *       **What happens:**
+ *       - Validates verification token (checks if exists and not expired)
+ *       - Sets user's `isEmailVerified` to true
+ *       - Clears verification token (one-time use)
+ *       - Sends welcome email (currently logged to console)
+ *       
+ *       **Flow:**
+ *       1. User registers → receives verification email
+ *       2. User clicks link in email: `/verify-email?token=abc123`
+ *       3. Frontend automatically calls this endpoint
+ *       4. User is redirected to dashboard with success message
+ *       
+ *       **Important notes:**
+ *       - Token expires in 24 hours
+ *       - Token can only be used once
+ *       - User can still login even if email not verified
+ *       - After verification, user sees "✅ Email verified" badge
+ *     parameters:
+ *       - in: query
+ *         name: token
+ *         required: true
+ *         schema:
+ *           type: string
+ *           example: a7f3c2e1b9d4f6h8k2l5m9n3p7q1r4s8
+ *         description: Verification token from email (64 characters)
+ *     responses:
+ *       200:
+ *         description: Email verified successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Email verified successfully. You can now access all features.
+ *       400:
+ *         description: Bad request - Invalid or expired token
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                   example: Invalid or expired verification token
+ *             examples:
+ *               tokenExpired:
+ *                 summary: Token expired (> 24 hours)
+ *                 value:
+ *                   success: false
+ *                   message: Invalid or expired verification token
+ *               tokenUsed:
+ *                 summary: Email already verified
+ *                 value:
+ *                   success: false
+ *                   message: Invalid or expired verification token
+ *               tokenInvalid:
+ *                 summary: Token doesn't exist
+ *                 value:
+ *                   success: false
+ *                   message: Invalid or expired verification token
+ */
+
+
 export default authRouter

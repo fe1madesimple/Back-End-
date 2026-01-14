@@ -33,19 +33,22 @@ model User {
   // OAuth
   googleId          String?  @unique
   
-  // Email verification
+  // Email verification (4 digit code)
   isEmailVerified   Boolean  @default(false)
-  emailVerificationToken String?  @unique
+  emailVerificationCode String?  // 4-digit code
   emailVerificationExpires DateTime?
   
   // Password reset
-  passwordResetToken String?  @unique
+  passwordResetCode String? 
   passwordResetExpires DateTime?
   
   // User preferences (from Edit Profile screen)
   targetExamDate    DateTime?
   dailyStudyGoal    Int      @default(2) // Hours per day
   focusSubjects     String[] // Array of subject IDs user wants to focus on
+
+
+  
   
   // Preferences (from Preferences screen)
   emailReminders    Boolean  @default(true)
@@ -70,8 +73,6 @@ model User {
   
   @@index([email])
   @@index([googleId])
-  @@index([emailVerificationToken])
-  @@index([passwordResetToken])
   @@index([createdAt])
   @@map("users")
 }
