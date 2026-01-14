@@ -34,12 +34,6 @@ class AuthService {
     });
   }
 
-  /**
-   * Generate random token for email verification/password reset
-   */
-  private generateRandomToken(): string {
-    return crypto.randomBytes(32).toString('hex');
-  }
 
   /**
    * Hash password
