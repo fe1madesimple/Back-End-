@@ -1,10 +1,10 @@
 import { Response } from 'express';
 
 export const COOKIE_OPTIONS = {
-  httpOnly: true, // Prevents JavaScript access (XSS protection)
-  secure: process.env.NODE_ENV === 'production', // HTTPS only in production
-  sameSite: 'lax' as const, // CSRF protection
-  domain: process.env.COOKIE_DOMAIN || undefined,
+  httpOnly: true,
+  secure: process.env.NODE_ENV === 'production',
+  sameSite: 'none' as const, // Changed from 'lax' to 'none' for cross-domain
+  domain: process.env.COOKIE_DOMAIN || undefined, // Empty = works everywhere
   path: '/',
 };
 
