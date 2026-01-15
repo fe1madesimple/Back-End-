@@ -274,8 +274,9 @@ class AuthService {
       },
     });
 
-    // TODO: Send reset email with 4-digit code
+    //Send reset email with 4-digit code
     console.log('📧 [EMAIL PENDING] Password reset code:', resetCode);
+    await emailService.sendPasswordResetCode(user.email, resetCode, user.firstName);
   }
 
   /**
