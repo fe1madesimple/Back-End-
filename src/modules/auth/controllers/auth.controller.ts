@@ -70,8 +70,9 @@ export const googleLogin = passport.authenticate('google', {
 export const googleCallback = [
   passport.authenticate('google', { session: false }),
   asyncHandler(async (req: Request, res: Response) => {
-    // Get the full result from req instead of req.user
-    const result = (req as any).authResult as AuthServiceResponse;
+    // Now req.user contains the full result from authService
+    const result = req.user as AuthServiceResponse;
+
     setAuthCookies(res, result.accessToken, result.refreshToken);
     res.redirect(`${process.env.FRONTEND_URL}/dashboard`);
   }),

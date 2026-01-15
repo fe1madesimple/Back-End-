@@ -2,7 +2,8 @@ import passport from 'passport';
 import { Strategy as GoogleStrategy, Profile } from 'passport-google-oauth20';
 import authService from '../services/auth.service';
 
-// Export the configuration function
+
+console.log(process.env.BACKEND_URL, "from google strategy")
 export const configureGoogleStrategy = () => {
   passport.use(
     new GoogleStrategy(
@@ -10,9 +11,8 @@ export const configureGoogleStrategy = () => {
         clientID: process.env.GOOGLE_CLIENT_ID!,
         clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
         callbackURL: `${process.env.BACKEND_URL}/api/v1/auth/google/callback`,
-        passReqToCallback: true,
       },
-      async (req, _accessToken, _refreshToken, profile: Profile, done) => {
+      async (_accessToken, _refreshToken, profile: Profile, done) => {
         try {
           if (!profile.emails || !profile.emails[0]) {
             return done(new Error('No email found from Google'), undefined);
@@ -29,11 +29,8 @@ export const configureGoogleStrategy = () => {
             sub: profile.id,
           });
 
-          // Store full result in request object
-          (req as any).authResult = result;
-
-          // Pass user to passport
-          done(null, result.user as any);
+        
+          done(null, result as any); 
         } catch (error) {
           done(error as Error, undefined);
         }
