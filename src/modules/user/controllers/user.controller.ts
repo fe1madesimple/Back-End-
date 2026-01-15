@@ -11,3 +11,11 @@ import {
 
 
 
+
+
+
+export const getProfile = asyncHandler(async (req: Request, res: Response) => {
+  const userId = (req.user as any).id;
+  const user = await userService.getProfile(userId);
+  return sendSuccess(res, 'Profile retrieved successfully', { user });
+});
