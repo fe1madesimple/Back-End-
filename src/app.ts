@@ -12,6 +12,7 @@ import logger from '@/utils/logger';
 import swaggerUi from 'swagger-ui-express';
 import { swaggerSpec } from './swagger/config';
 import authRouter from './modules/auth/routes/auth.routes';
+import examRouter from './modules/exam/routes/exam.routes';
 
 /**
  * Create Express Application
