@@ -13,6 +13,7 @@ import {
     VerifyEmailInput,
   AuthServiceResponse
 } from '../interfaces/auth.interfaces';
+import emailService from '@/shared/services/email.service';
 
 
 class AuthService {
@@ -125,7 +126,9 @@ class AuthService {
     await this.createTrialSubscription(user.id);
 
     // TODO: Send verification email with 4-digit code
-    console.log('📧 [EMAIL PENDING] Verification code:', emailVerificationCode);
+    console.log('[EMAIL PENDING] Verification code:', emailVerificationCode);
+
+    await emailService.sendVerificationCode(user.email, emailVerificationCode, user.firstName);
 
     const tokenPayload: TokenPayload = {
       userId: user.id,
