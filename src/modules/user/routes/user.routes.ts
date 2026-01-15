@@ -179,4 +179,49 @@ userRouter.put('/preferences', protect, validate(updatePreferencesSchema), updat
 userRouter.put('/password', protect, validate(changePasswordSchema), changePassword);
 
 
+/**
+ * @swagger
+ * /api/v1/users/account:
+ *   delete:
+ *     summary: Delete account
+ *     tags: [User Profile]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Permanently delete user account
+ *       
+ *       **Requires:**
+ *       - Password verification
+ *       - Confirmation string "DELETE"
+ *       
+ *       **Deletes:**
+ *       - User record
+ *       - Subscription (cascade)
+ *       - All user data (cascade)
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - password
+ *               - confirmation
+ *             properties:
+ *               password:
+ *                 type: string
+ *                 example: MyPassword123
+ *               confirmation:
+ *                 type: string
+ *                 example: DELETE
+ *                 description: Must be exactly "DELETE"
+ *     responses:
+ *       204:
+ *         description: Account deleted
+ *       401:
+ *         description: Incorrect password
+ */
+userRouter.delete('/account', protect, validate(deleteAccountSchema), deleteAccount);
+
+
 export default userRouter
