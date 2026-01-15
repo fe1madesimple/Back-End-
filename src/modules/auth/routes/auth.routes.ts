@@ -280,6 +280,9 @@ authRouter.post("/register", validate(registerSchema), register)
 authRouter.post("/login", validate(loginSchema), login)
 
 
+
+
+
 /**
  * @swagger
  * /api/v1/auth/google:
