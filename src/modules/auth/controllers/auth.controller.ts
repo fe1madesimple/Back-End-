@@ -13,6 +13,7 @@ import {
 import { UnauthorizedError } from '@/utils/errors';
 import { clearAuthCookies } from '@/utils/cookie';
 import passport from 'passport';
+import { AuthServiceResponse } from '../interfaces/auth.interfaces';
 
 
 /**
@@ -72,12 +73,12 @@ export const googleLogin = passport.authenticate('google', {
 export const googleCallback = [
   passport.authenticate('google', { session: false }),
   asyncHandler(async (req: Request, res: Response) => {
-    const result = req.user as any;
+    // Get the full result from req instead of req.user
+    const result = (req as any).authResult as AuthServiceResponse;
     setAuthCookies(res, result.accessToken, result.refreshToken);
     res.redirect(`${process.env.FRONTEND_URL}/dashboard`);
   }),
 ];
-
 /**
  * @desc    Request password reset
  * @route   POST /api/v1/auth/forgot-password

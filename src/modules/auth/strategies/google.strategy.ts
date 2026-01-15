@@ -8,12 +8,10 @@ passport.use(
       clientID: process.env.GOOGLE_CLIENT_ID!,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
       callbackURL: `${process.env.BACKEND_URL}/api/v1/auth/google/callback`,
+      passReqToCallback: true, // Enable request in callback
     },
-    async (_accessToken, _refreshToken, profile: Profile, done) => {
-      // ^ Underscore prefix = unused variables (no error)
-
+    async (req, _accessToken, _refreshToken, profile: Profile, done) => {
       try {
-        // Safe null checks
         if (!profile.emails || !profile.emails[0]) {
           return done(new Error('No email found from Google'), undefined);
         }
@@ -29,7 +27,11 @@ passport.use(
           sub: profile.id,
         });
 
-        done(null, result);
+        // Store full result in request object
+        (req as any).authResult = result;
+
+        // Pass user to passport (fixes TypeScript error)
+        done(null, result.user as any);
       } catch (error) {
         done(error as Error, undefined);
       }
