@@ -13,6 +13,7 @@ import swaggerUi from 'swagger-ui-express';
 import { swaggerSpec } from './swagger/config';
 import authRouter from './modules/auth/routes/auth.routes';
 import examRouter from './modules/exam/routes/exam.routes';
+import userRouter from './modules/user/routes/user.routes';
 
 /**
  * Create Express Application
@@ -166,6 +167,8 @@ const createApp = (): Application => {
   app.use("/api/v1/auth", authRouter);
 
   app.use('/api/v1/exams', examRouter);
+
+  app.use('/api/v1/users', userRouter);
 
   app.use(notFoundHandler);
 

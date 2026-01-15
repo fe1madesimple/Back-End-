@@ -80,45 +80,7 @@ const swaggerDefinition = {
     {
       bearerAuth: [],
     },
-  ],
-  tags: [
-    {
-      name: 'Health',
-      description: 'Health check endpoints',
-    },
-    {
-      name: 'Authentication',
-      description: 'User authentication endpoints',
-    },
-    {
-      name: 'Users',
-      description: 'User management endpoints',
-    },
-    {
-      name: 'Subscriptions',
-      description: 'Subscription and payment endpoints',
-    },
-    {
-      name: 'Content',
-      description: 'Content management (subjects, modules, lessons)',
-    },
-    {
-      name: 'Assessments',
-      description: 'Questions and timed sessions',
-    },
-    {
-      name: 'AI Feedback',
-      description: 'AI-powered essay evaluation',
-    },
-    {
-      name: 'Case Law',
-      description: 'Case law library',
-    },
-    {
-      name: 'Analytics',
-      description: 'Study analytics and progress tracking',
-    },
-  ],
+  ]
 };
 
 const options = {
