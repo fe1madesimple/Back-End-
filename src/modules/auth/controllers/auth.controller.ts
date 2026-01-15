@@ -10,9 +10,9 @@ import {
   ResetPasswordInput,
   VerifyEmailInput,
 } from '../interfaces/auth.interfaces';
-import { verifyGoogleToken } from '@/shared/utils';
 import { UnauthorizedError } from '@/utils/errors';
 import { clearAuthCookies } from '@/utils/cookie';
+import passport from 'passport';
 
 
 /**
@@ -53,6 +53,10 @@ export const login = asyncHandler(async (req: Request, res: Response) => {
   sendSuccess(res, 'Login successful', { user: result.user });
 });
 
+
+export const googleLogin = passport.authenticate('google', {
+  scope: ['profile', 'email'],
+});
 
 
 /**
