@@ -21,3 +21,10 @@ export const updateProfile = asyncHandler(async (req: Request, res: Response) =>
   const user = await userService.updateProfile(userId, input);
   return sendSuccess(res, 'Profile updated successfully', { user });
 });
+
+export const updatePreferences = asyncHandler(async (req: Request, res: Response) => {
+  const userId = (req.user as any).id;
+  const input: UpdatePreferencesInput = req.body;
+  const preferences = await userService.updatePreferences(userId, input);
+  return sendSuccess(res, 'Preferences updated successfully', { preferences });
+});
