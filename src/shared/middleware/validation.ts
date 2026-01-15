@@ -14,15 +14,27 @@ export const validate = (schema: ZodSchema) => {
       next();
     } catch (error) {
       if (error instanceof ZodError) {
-        const errors = error.issues.map((err) => ({
-          field: err.path.join('.'),
-          message: err.message,
-        }));
+        // Format errors in a user-friendly way
+        const errors = error.issues.map((err) => {
+          const field = err.path.slice(1).join('.'); // Remove 'body'/'query'/'params' prefix
 
-        const validationError = new BadRequestError('Validation failed');
+          return {
+            field: field || 'unknown',
+            message: err.message,
+          };
+        });
+
+        // Create a readable error message
+        const firstError = errors[0];
+        const message =
+          errors.length === 1
+            ? `${firstError!.field}: ${firstError!.message}`
+            : `Validation failed: ${errors.map((e) => `${e.field} (${e.message})`).join(', ')}`;
+
+        const validationError = new BadRequestError(message);
         (validationError as any).errors = errors;
 
-        throw validationError;
+        return next(validationError);
       }
 
       next(error);
