@@ -28,3 +28,10 @@ export const updatePreferences = asyncHandler(async (req: Request, res: Response
   const preferences = await userService.updatePreferences(userId, input);
   return sendSuccess(res, 'Preferences updated successfully', { preferences });
 });
+
+export const changePassword = asyncHandler(async (req: Request, res: Response) => {
+  const userId = (req.user as any).id;
+  const input: ChangePasswordInput = req.body;
+  await userService.changePassword(userId, input);
+  return sendSuccess(res, 'Password changed successfully');
+});
