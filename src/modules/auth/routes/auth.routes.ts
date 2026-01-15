@@ -7,6 +7,7 @@ import {
   resetPassword,
   verifyEmail,
   refreshToken,
+  googleCallback,
   getCurrentUser,
   logout,
 } from '../controllers/auth.controller';
@@ -303,6 +304,22 @@ authRouter.post("/login", validate(loginSchema), login)
 authRouter.get('/google/login', googleLogin);
 
 
+/**
+ * @swagger
+ * /api/v1/auth/google/callback:
+ *   get:
+ *     summary: Google OAuth callback (internal use only)
+ *     tags: [Authentication]
+ *     description: |
+ *       Google redirects here after user consent.
+ *       Sets cookies and redirects to frontend dashboard.
+ *       
+ *       **Frontend receives user automatically via redirect.**
+ *     responses:
+ *       302:
+ *         description: Redirect to frontend dashboard with cookies set
+ */
+authRouter.get('/google/callback', googleCallback);
 
 
 /**
