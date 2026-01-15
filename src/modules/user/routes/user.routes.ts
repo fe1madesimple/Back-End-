@@ -111,4 +111,72 @@ userRouter.get('/profile', protect, getProfile);
 userRouter.put('/profile', protect, validate(updateProfileSchema), updateProfile);
 
 
+/**
+ * @swagger
+ * /api/v1/users/preferences:
+ *   put:
+ *     summary: Update notification preferences
+ *     tags: [User Profile]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Update email and notification settings
+ *     requestBody:
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               emailReminders:
+ *                 type: boolean
+ *               studyStreakAlerts:
+ *                 type: boolean
+ *               podcastRecommendations:
+ *                 type: boolean
+ *               showRelevantEpisodes:
+ *                 type: boolean
+ *     responses:
+ *       200:
+ *         description: Preferences updated
+ */
+userRouter.put('/preferences', protect, validate(updatePreferencesSchema), updatePreferences);
+
+
+
+/**
+ * @swagger
+ * /api/v1/users/password:
+ *   put:
+ *     summary: Change password
+ *     tags: [User Profile]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Change user password (email/password users only, not OAuth)
+ *       
+ *       **Important:** OAuth users (Google) cannot change password
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - currentPassword
+ *               - newPassword
+ *             properties:
+ *               currentPassword:
+ *                 type: string
+ *                 example: OldPassword123
+ *               newPassword:
+ *                 type: string
+ *                 example: NewPassword123
+ *     responses:
+ *       200:
+ *         description: Password changed
+ *       401:
+ *         description: Current password incorrect or OAuth user
+ */
+userRouter.put('/password', protect, validate(changePasswordSchema), changePassword);
+
+
 export default userRouter
