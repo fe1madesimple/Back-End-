@@ -54,10 +54,29 @@ export const login = asyncHandler(async (req: Request, res: Response) => {
 });
 
 
+
+/**
+ * @desc    google login 
+ * @route   POST /api/v1/auth/google/login
+ * @access  Public
+ */
 export const googleLogin = passport.authenticate('google', {
   scope: ['profile', 'email'],
 });
 
+/**
+ * @desc    google webhook
+ * @route   POST /api/v1/auth/google/callback
+ * @access  Public
+ */
+export const googleCallback = [
+  passport.authenticate('google', { session: false }),
+  asyncHandler(async (req: Request, res: Response) => {
+    const result = req.user as any;
+    setAuthCookies(res, result.accessToken, result.refreshToken);
+    res.redirect(`${process.env.FRONTEND_URL}/dashboard`);
+  }),
+];
 
 /**
  * @desc    Request password reset
