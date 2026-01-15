@@ -14,6 +14,8 @@ import { swaggerSpec } from './swagger/config';
 import authRouter from './modules/auth/routes/auth.routes';
 import examRouter from './modules/exam/routes/exam.routes';
 import userRouter from './modules/user/routes/user.routes';
+import './shared/types/express';
+
 
 /**
  * Create Express Application

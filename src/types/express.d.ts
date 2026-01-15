@@ -1,13 +1,12 @@
-import { User } from '@prisma/client';
+import { User as PrismaUser } from '@prisma/client';
 
-/**
- * Extend Express Request type to include user property
- * This allows TypeScript to recognize req.user in controllers
- */
 declare global {
   namespace Express {
+  
+    interface User extends PrismaUser {}
+
     interface Request {
-      user?: User
+      user?: User; 
     }
   }
 }
