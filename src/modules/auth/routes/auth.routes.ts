@@ -10,6 +10,7 @@ import {
   googleCallback,
   getCurrentUser,
   logout,
+  resendVerificationCode,
 } from '../controllers/auth.controller';
 import { protect } from '../../../shared/middleware/auth.middleware';
 import { validate } from '@/shared/middleware/validation';
@@ -615,48 +616,90 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
  *     summary: Verify email with 4-digit code
  *     tags: [Authentication]
  *     description: |
- *       Verifies user's email address using 4-digit code from verification email.
+ *       Verifies user's email address using email and 4-digit code from verification email.
  *       
  *       **What happens:**
- *       - Validates 4-digit code (checks if exists and not expired)
- *       - Sets user's `isEmailVerified` to true
- *       - Clears verification code (one-time use)
- *       - Sends welcome email (currently logged to console)
+ *       - Validates email and 4-digit code
+ *       - Checks if code is expired (24-hour validity)
+ *       - Tracks failed verification attempts (max 5 attempts)
+ *       - Locks verification for 15 minutes after 5 failed attempts
+ *       - Sets user's `isEmailVerified` to true on success
+ *       - Clears verification code and resets failed attempts
+ *       - Sends welcome email
+ *       
+ *       **Security Features:**
+ *       - Rate limiting: Max 5 attempts per email
+ *       - Account lockout: 15 minutes after 5 failed attempts
+ *       - Race condition prevention: Uses database transactions
+ *       - Code expiration: 24 hours from generation
+ *       - Email + Code verification: Prevents code reuse across accounts
  *       
  *       **Flow:**
  *       1. User registers → receives email with 4-digit code
- *       2. User enters code in verification form (4 separate inputs)
- *       3. Frontend sends code to this endpoint
- *       4. User is redirected to dashboard with success message
+ *       2. User enters email and code in verification form
+ *       3. Frontend sends email + code to this endpoint
+ *       4. System validates and tracks attempts
+ *       5. On success: User is redirected to dashboard
+ *       6. On failure: Shows attempts remaining or lockout message
  *       
- *       **Frontend usage:**
- *       ```javascript
- *       // User enters: 1 2 3 4 in 4 input boxes
- *       const code = '1234';
+ *       **Frontend usage (Vue.js):**
+ *       ```vue
+ *       <script setup>
+ *       import { ref } from 'vue';
+ *       import { useRouter } from 'vue-router';
+ *       import { useToast } from 'vue-toastification';
  *       
- *       fetch('/api/v1/auth/verify-email', {
- *         method: 'POST',
- *         headers: { 'Content-Type': 'application/json' },
- *         body: JSON.stringify({ code })
- *       })
- *       .then(res => res.json())
- *       .then(data => {
- *         if (data.success) {
- *           showSuccess('Email verified!');
- *           router.push('/dashboard');
+ *       const router = useRouter();
+ *       const toast = useToast();
+ *       
+ *       const email = ref('');
+ *       const code = ref('');
+ *       const loading = ref(false);
+ *       
+ *       const verifyEmail = async () => {
+ *         loading.value = true;
+ *         try {
+ *           const response = await fetch('/api/v1/auth/verify-email', {
+ *             method: 'POST',
+ *             headers: { 'Content-Type': 'application/json' },
+ *             body: JSON.stringify({
+ *               email: email.value,
+ *               code: code.value
+ *             })
+ *           });
+ *           
+ *           const data = await response.json();
+ *           
+ *           if (data.success) {
+ *             toast.success('Email verified successfully!');
+ *             router.push('/dashboard');
+ *           } else {
+ *             toast.error(data.message);
+ *           }
+ *         } catch (error) {
+ *           toast.error('Failed to verify email. Please try again.');
+ *         } finally {
+ *           loading.value = false;
  *         }
- *       })
- *       .catch(error => {
- *         showError('Invalid or expired code');
- *       });
+ *       };
+ *       </script>
+ *       
+ *       <template>
+ *         <form @submit.prevent="verifyEmail">
+ *           <input v-model="email" type="email" placeholder="Email" required />
+ *           <input v-model="code" type="text" maxlength="4" placeholder="1234" required />
+ *           <button :disabled="loading">Verify</button>
+ *         </form>
+ *       </template>
  *       ```
  *       
  *       **Important notes:**
+ *       - Both email and code are required
  *       - Code expires in 24 hours
  *       - Code can only be used once
+ *       - Maximum 5 attempts before 15-minute lockout
+ *       - User can request new code to reset attempts
  *       - Code is exactly 4 numeric digits
- *       - User can still login even if email not verified
- *       - After verification, user sees "✅ Email verified" badge
  *     requestBody:
  *       required: true
  *       content:
@@ -664,8 +707,14 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
  *           schema:
  *             type: object
  *             required:
+ *               - email
  *               - code
  *             properties:
+ *               email:
+ *                 type: string
+ *                 format: email
+ *                 example: "user@example.com"
+ *                 description: User's email address
  *               code:
  *                 type: string
  *                 pattern: '^\d{4}$'
@@ -688,7 +737,7 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
  *                   type: string
  *                   example: Email verified successfully. You can now access all features.
  *       400:
- *         description: Bad request - Invalid or expired code
+ *         description: Bad request - Invalid code, expired, or rate limited
  *         content:
  *           application/json:
  *             schema:
@@ -699,29 +748,218 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
  *                   example: false
  *                 message:
  *                   type: string
+ *                 errors:
+ *                   type: array
+ *                   items:
+ *                     type: object
+ *                     properties:
+ *                       field:
+ *                         type: string
+ *                       message:
+ *                         type: string
  *             examples:
  *               invalidFormat:
- *                 summary: Code is not 4 digits
+ *                 summary: Invalid email or code format
  *                 value:
  *                   success: false
- *                   message: Code must be 4 digits
+ *                   message: Validation failed
+ *                   errors:
+ *                     - field: code
+ *                       message: Verification code must be exactly 4 digits
  *               codeExpired:
  *                 summary: Code expired (> 24 hours)
  *                 value:
  *                   success: false
- *                   message: Invalid or expired verification code
- *               codeUsed:
- *                 summary: Code already used
+ *                   message: Verification code has expired. Please request a new one.
+ *               wrongCode:
+ *                 summary: Wrong code - attempts remaining
  *                 value:
  *                   success: false
- *                   message: Invalid or expired verification code
- *               codeInvalid:
- *                 summary: Code doesn't exist
+ *                   message: Invalid verification code. 3 attempts remaining.
+ *               tooManyAttempts:
+ *                 summary: Account locked due to failed attempts
  *                 value:
  *                   success: false
- *                   message: Invalid or expired verification code
+ *                   message: Too many failed attempts. Your verification is locked for 15 minutes. Please request a new code.
+ *               stillLocked:
+ *                 summary: Account still locked
+ *                 value:
+ *                   success: false
+ *                   message: Too many failed attempts. Please try again in 12 minutes or request a new code.
+ *               invalidEmail:
+ *                 summary: Email doesn't match any account
+ *                 value:
+ *                   success: false
+ *                   message: Invalid email or verification code
  */
 authRouter.post('/verify-email', validate(verifyEmailSchema), verifyEmail);
+
+
+
+
+/**
+ * @swagger
+ * /api/v1/auth/resend-verification:
+ *   post:
+ *     summary: Resend email verification code
+ *     tags: [Authentication]
+ *     description: |
+ *       Resends a new 4-digit verification code to user's email and resets failed attempts.
+ *       
+ *       **What happens:**
+ *       - Generates new 4-digit code
+ *       - Extends expiration to 24 hours from now
+ *       - Resets failed verification attempts counter to 0
+ *       - Unlocks account if it was locked
+ *       - Sends new verification email
+ *       
+ *       **Use cases:**
+ *       - User didn't receive the original email
+ *       - Verification code expired (> 24 hours)
+ *       - User exceeded 5 failed attempts and got locked out
+ *       - User lost/deleted the original email
+ *       
+ *       **Security notes:**
+ *       - Always returns success even if email doesn't exist (prevents email enumeration)
+ *       - Invalidates previous verification code
+ *       - Can be used to reset lockout status
+ *       - Should implement rate limiting on this endpoint (e.g., max 3 requests per hour)
+ *       
+ *       **Frontend usage (Vue.js):**
+ *       ```vue
+ *       <script setup>
+ *       import { ref, computed } from 'vue';
+ *       import { useToast } from 'vue-toastification';
+ *       
+ *       const toast = useToast();
+ *       
+ *       const email = ref('user@example.com');
+ *       const loading = ref(false);
+ *       const countdown = ref(0);
+ *       
+ *       // Disable button during countdown
+ *       const canResend = computed(() => countdown.value === 0 && !loading.value);
+ *       
+ *       const startCountdown = () => {
+ *         countdown.value = 60; // 60 seconds
+ *         const timer = setInterval(() => {
+ *           countdown.value--;
+ *           if (countdown.value === 0) {
+ *             clearInterval(timer);
+ *           }
+ *         }, 1000);
+ *       };
+ *       
+ *       const resendCode = async () => {
+ *         loading.value = true;
+ *         try {
+ *           const response = await fetch('/api/v1/auth/resend-verification', {
+ *             method: 'POST',
+ *             headers: { 'Content-Type': 'application/json' },
+ *             body: JSON.stringify({ email: email.value })
+ *           });
+ *           
+ *           const data = await response.json();
+ *           
+ *           if (data.success) {
+ *             toast.success('New verification code sent! Check your email.');
+ *             startCountdown();
+ *           } else {
+ *             toast.error(data.message);
+ *           }
+ *         } catch (error) {
+ *           toast.error('Failed to resend code. Please try again.');
+ *         } finally {
+ *           loading.value = false;
+ *         }
+ *       };
+ *       </script>
+ *       
+ *       <template>
+ *         <button 
+ *           @click="resendCode" 
+ *           :disabled="!canResend"
+ *         >
+ *           {{ countdown > 0 ? `Resend in ${countdown}s` : 'Resend Code' }}
+ *         </button>
+ *       </template>
+ *       ```
+ *       
+ *       **Best practices:**
+ *       - Show countdown timer on frontend (e.g., "Resend in 60s") to prevent spam
+ *       - Only enable button after countdown expires
+ *       - Inform user that new code invalidates old one
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - email
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 format: email
+ *                 example: "user@example.com"
+ *                 description: Email address to resend verification code to
+ *     responses:
+ *       200:
+ *         description: Verification code sent successfully (always returns success for security)
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Verification code sent successfully. Please check your email.
+ *             examples:
+ *               success:
+ *                 summary: Code sent (or email doesn't exist - same response for security)
+ *                 value:
+ *                   success: true
+ *                   message: Verification code sent successfully. Please check your email.
+ *       400:
+ *         description: Bad request - Email already verified or validation error
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                 errors:
+ *                   type: array
+ *                   items:
+ *                     type: object
+ *                     properties:
+ *                       field:
+ *                         type: string
+ *                       message:
+ *                         type: string
+ *             examples:
+ *               alreadyVerified:
+ *                 summary: Email already verified
+ *                 value:
+ *                   success: false
+ *                   message: Email is already verified
+ *               invalidEmail:
+ *                 summary: Invalid email format
+ *                 value:
+ *                   success: false
+ *                   message: Validation failed
+ *                   errors:
+ *                     - field: email
+ *                       message: Please provide a valid email address
+ */
+authRouter.post('/resend-verification', resendVerificationCode);
 
 
 
