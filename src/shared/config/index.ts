@@ -16,7 +16,7 @@ export const config = {
   // Redis
   redisUrl: process.env.REDIS_URL,
 
-  // JWT
+  // JWT   
   jwt: {
     secret: process.env.JWT_SECRET || 'change-this-secret',
     expiresIn: process.env.JWT_EXPIRES_IN || '7d',

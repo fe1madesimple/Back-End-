@@ -151,27 +151,78 @@ const authRouter = Router()
  *           application/json:
  *             schema:
  *               type: object
+ *               required:
+ *                 - success
+ *                 - message
  *               properties:
  *                 success:
  *                   type: boolean
  *                   example: false
  *                 message:
  *                   type: string
- *                   example: User with this email already exists
+ *                   example: Validation failed
+ *                 errors:
+ *                   type: array
+ *                   description: Detailed validation errors (only present for validation failures)
+ *                   items:
+ *                     type: object
+ *                     properties:
+ *                       field:
+ *                         type: string
+ *                         example: password
+ *                       message:
+ *                         type: string
+ *                         example: Password must contain at least one uppercase letter
  *             examples:
  *               emailExists:
  *                 summary: Email already registered
  *                 value:
  *                   success: false
- *                   message: User with this email already exists
+ *                   message: email already exists
  *               validationError:
  *                 summary: Invalid input data
  *                 value:
  *                   success: false
  *                   message: Validation failed
  *                   errors:
+ *                     - field: email
+ *                       message: Please provide a valid email address
  *                     - field: password
- *                       message: Password must contain at least one uppercase letter
+ *                       message: Password must be at least 8 characters
+ *               missingFields:
+ *                 summary: Required fields missing
+ *                 value:
+ *                   success: false
+ *                   message: Validation failed
+ *                   errors:
+ *                     - field: firstName
+ *                       message: First name is required
+ *                     - field: lastName
+ *                       message: Last name is required
+ *       409:
+ *         description: Conflict - Email already exists
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                   example: email already exists
+ *                 errors:
+ *                   type: array
+ *                   items:
+ *                     type: object
+ *                     properties:
+ *                       field:
+ *                         type: string
+ *                         example: email
+ *                       message:
+ *                         type: string
+ *                         example: This email is already taken
  */
 authRouter.post("/register", validate(registerSchema), register)
 

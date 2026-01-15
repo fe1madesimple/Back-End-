@@ -32,7 +32,7 @@ class EmailService {
   <table width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;padding:40px 20px;">
     <tr>
       <td align="center" style="padding-bottom:40px;">
-        <img src="https://res.cloudinary.com/dkrjrfqpy/image/upload/v1768436727/Group_37_ox5fwc.svg" alt="FE-1 Made Simple" width="180" style="display:block;">
+        <img src="https://res.cloudinary.com/dkrjrfqpy/image/upload/v1768477062/Frame_23_a3ppr0.png" alt="FE-1 Made Simple" width="60" style="display:block;">
       </td>
     </tr>
     <tr>
@@ -72,7 +72,7 @@ class EmailService {
   <table width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;padding:40px 20px;">
     <tr>
       <td align="center" style="padding-bottom:40px;">
-        <img src="https://res.cloudinary.com/dkrjrfqpy/image/upload/v1768436727/Group_37_ox5fwc.svg" alt="FE-1 Made Simple" width="180" style="display:block;">
+        <img src="https://res.cloudinary.com/dkrjrfqpy/image/upload/v1768477062/Frame_23_a3ppr0.png" alt="FE-1 Made Simple" width="60" style="display:block;">
       </td>
     </tr>
     <tr>
@@ -112,7 +112,7 @@ class EmailService {
   <table width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;padding:40px 20px;">
     <tr>
       <td align="center" style="padding-bottom:40px;">
-        <img src="https://res.cloudinary.com/dkrjrfqpy/image/upload/v1768436727/Group_37_ox5fwc.svg" alt="FE-1 Made Simple" width="180" style="display:block;">
+        <img src="https://res.cloudinary.com/dkrjrfqpy/image/upload/v1768477062/Frame_23_a3ppr0.png" alt="FE-1 Made Simple" width="60" style="display:block;">
       </td>
     </tr>
     <tr>
