@@ -81,6 +81,29 @@ class UserService {
 
     return user;
   }
+
+  async changePassword(userId: string, input: ChangePasswordInput) {
+    const user = await prisma.user.findUnique({
+      where: { id: userId },
+    });
+
+    if (!user || !user.password) {
+      throw new UnauthorizedError('Cannot change password for OAuth users');
+    }
+
+    const isValid = await bcrypt.compare(input.currentPassword, user.password);
+
+    if (!isValid) {
+      throw new UnauthorizedError('Current password is incorrect');
+    }
+
+    const hashedPassword = await bcrypt.hash(input.newPassword, 12);
+
+    await prisma.user.update({
+      where: { id: userId },
+      data: { password: hashedPassword },
+    });
+  }
 }
 
 
