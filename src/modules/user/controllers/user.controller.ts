@@ -35,3 +35,10 @@ export const changePassword = asyncHandler(async (req: Request, res: Response) =
   await userService.changePassword(userId, input);
   return sendSuccess(res, 'Password changed successfully');
 });
+
+export const deleteAccount = asyncHandler(async (req: Request, res: Response) => {
+  const userId = (req.user as any).id;
+  const input: DeleteAccountInput = req.body;
+  await userService.deleteAccount(userId, input.password);
+  return sendNoContent(res);
+});
