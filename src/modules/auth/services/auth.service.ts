@@ -339,7 +339,9 @@ class AuthService {
       },
     });
 
-    console.log('📧 [EMAIL PENDING] Welcome email for:', user.email);
+    console.log('[EMAIL PENDING] Welcome email for:', user.email);
+
+    await emailService.sendWelcomeEmail(user.email, user.firstName);
   }
 
   /**
