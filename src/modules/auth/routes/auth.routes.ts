@@ -2,7 +2,7 @@ import { Router } from "express";
 import {
   register,
   login,
-  googleAuth,
+  googleLogin,
   forgotPassword,
   resetPassword,
   verifyEmail,
@@ -281,104 +281,28 @@ authRouter.post("/login", validate(loginSchema), login)
 
 
 
-
-
 /**
  * @swagger
- * /api/v1/auth/google:
- *   post:
- *     summary: Login or register with Google OAuth
+ * /api/v1/auth/google/login:
+ *   get:
+ *     summary: Initiate Google OAuth login
  *     tags: [Authentication]
  *     description: |
- *       Authenticates a user using Google OAuth token.
+ *       Redirects user to Google consent screen.
  *       
- *       **What happens:**
- *       - Google ID token is verified with Google's servers
- *       - User profile is extracted from verified token
- *       - If user doesn't exist: Creates new account with 7-day trial
- *       - If user exists: Links Google account to existing account
- *       - Email is automatically verified (Google pre-verifies)
- *       - JWT tokens are set in HTTP-only cookies
- *       
- *       **Frontend flow:**
- *       1. Use Google Sign-In button to get ID token
- *       2. Send token to this endpoint
- *       3. Receive user data and cookies
- *       
- *       **Important notes:**
- *       - Google users don't have passwords (OAuth only)
- *       - Email is automatically verified (isEmailVerified: true)
- *       - If email already exists, Google account is linked
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             required:
- *               - credential
- *             properties:
- *               credential:
- *                 type: string
- *                 description: Google ID token (JWT) from Google Sign-In
- *                 example: eyJhbGciOiJSUzI1NiIsImtpZCI6IjY4M2E1...
+ *       **Frontend usage:**
+ *       ```html
+ *       <a href="https://api.fe1madesimple.ie/api/v1/auth/google/login">
+ *         Sign in with Google
+ *       </a>
+ *       ```
  *     responses:
- *       200:
- *         description: Google authentication successful
- *         headers:
- *           Set-Cookie:
- *             description: JWT tokens set in HTTP-only cookies
- *             schema:
- *               type: string
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 success:
- *                   type: boolean
- *                   example: true
- *                 message:
- *                   type: string
- *                   example: Google authentication successful
- *                 data:
- *                   type: object
- *                   properties:
- *                     user:
- *                       type: object
- *                       properties:
- *                         id:
- *                           type: string
- *                         email:
- *                           type: string
- *                         firstName:
- *                           type: string
- *                         lastName:
- *                           type: string
- *                         role:
- *                           type: string
- *                           example: STUDENT
- *                         profileColor:
- *                           type: string
- *                         isEmailVerified:
- *                           type: boolean
- *                           example: true
- *                           description: Always true for Google users
- *       401:
- *         description: Unauthorized - Invalid Google token
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 success:
- *                   type: boolean
- *                   example: false
- *                 message:
- *                   type: string
- *                   example: Failed to verify Google token
+ *       302:
+ *         description: Redirect to Google
  */
-authRouter.post("/google", googleAuth)
+authRouter.get('/google/login', googleLogin);
+
+
 
 
 /**
