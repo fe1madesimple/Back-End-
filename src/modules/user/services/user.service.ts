@@ -43,10 +43,9 @@ class UserService {
     }
 
     return user;
-    }
-    
+  }
 
-      async updateProfile(userId: string, input: UpdateProfileInput) {
+  async updateProfile(userId: string, input: UpdateProfileInput) {
     const user = await prisma.user.update({
       where: { id: userId },
       data: {
@@ -62,6 +61,21 @@ class UserService {
         targetExamDate: true,
         dailyStudyGoal: true,
         focusSubjects: true,
+      },
+    });
+
+    return user;
+  }
+
+  async updatePreferences(userId: string, input: UpdatePreferencesInput) {
+    const user = await prisma.user.update({
+      where: { id: userId },
+      data: input,
+      select: {
+        emailReminders: true,
+        studyStreakAlerts: true,
+        podcastRecommendations: true,
+        showRelevantEpisodes: true,
       },
     });
 
