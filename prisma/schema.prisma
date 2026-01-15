@@ -48,6 +48,10 @@ model User {
   focusSubjects     String[] // Array of subject IDs user wants to focus on
 
 
+  verificationFailedAttempts Int      @default(0)
+  verificationLockedUntil   DateTime?
+
+
   
   
   // Preferences (from Preferences screen)

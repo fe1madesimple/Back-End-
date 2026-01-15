@@ -316,32 +316,88 @@ class AuthService {
    * VERIFY EMAIL
    */
   async verifyEmail(input: VerifyEmailInput): Promise<void> {
-    const { code } = input;
-    const user = await prisma.user.findFirst({
-      where: {
-        emailVerificationCode: code,
-        emailVerificationExpires: {
-          gt: new Date(),
+    const { email, code } = input;
+
+    // Use transaction to prevent race conditions
+    const result = await prisma.$transaction(async (tx) => {
+      // 1. Find user with row-level lock (prevents race conditions)
+      const user = await tx.user.findFirst({
+        where: {
+          email: email.toLowerCase(),
         },
-      },
+      });
+
+      if (!user) {
+        throw new BadRequestError('Invalid email or verification code');
+      }
+
+      // 2. Check if account is locked due to too many attempts
+      if (user.verificationLockedUntil && user.verificationLockedUntil > new Date()) {
+        const minutesLeft = Math.ceil(
+          (user.verificationLockedUntil.getTime() - Date.now()) / 60000
+        );
+        throw new BadRequestError(
+          `Too many failed attempts. Please try again in ${minutesLeft} minutes or request a new code.`
+        );
+      }
+
+      // 3. Check if code is expired
+      if (!user.emailVerificationExpires || user.emailVerificationExpires < new Date()) {
+        throw new BadRequestError('Verification code has expired. Please request a new one.');
+      }
+
+      // 4. Check if code matches
+      if (user.emailVerificationCode !== code) {
+        // Increment failed attempts
+        const failedAttempts = user.verificationFailedAttempts + 1;
+        const maxAttempts = 5;
+
+        // Lock account if too many attempts
+        if (failedAttempts >= maxAttempts) {
+          await tx.user.update({
+            where: { id: user.id },
+            data: {
+              verificationFailedAttempts: failedAttempts,
+              verificationLockedUntil: new Date(Date.now() + 15 * 60 * 1000), // 15 minutes
+            },
+          });
+          throw new BadRequestError(
+            'Too many failed attempts. Your verification is locked for 15 minutes. Please request a new code.'
+          );
+        }
+
+        // Update failed attempts
+        await tx.user.update({
+          where: { id: user.id },
+          data: {
+            verificationFailedAttempts: failedAttempts,
+          },
+        });
+
+        const attemptsLeft = maxAttempts - failedAttempts;
+        throw new BadRequestError(
+          `Invalid verification code. ${attemptsLeft} attempt${attemptsLeft === 1 ? '' : 's'} remaining.`
+        );
+      }
+
+      // 5. Code is correct - verify email
+      await tx.user.update({
+        where: { id: user.id },
+        data: {
+          isEmailVerified: true,
+          emailVerificationCode: null,
+          emailVerificationExpires: null,
+          verificationFailedAttempts: 0,
+          verificationLockedUntil: null,
+        },
+      });
+
+      return user;
     });
 
-    if (!user) {
-      throw new BadRequestError('Invalid or expired verification code');
-    }
-
-    await prisma.user.update({
-      where: { id: user.id },
-      data: {
-        isEmailVerified: true,
-        emailVerificationCode: null,
-        emailVerificationExpires: null,
-      },
-    });
-
-    console.log('[EMAIL PENDING] Welcome email for:', user.email);
-
-    await emailService.sendWelcomeEmail(user.email, user.firstName);
+    // 6. Send welcome email (outside transaction)
+    console.log('[EMAIL PENDING] Welcome email for:', result.email);
+    await emailService.sendWelcomeEmail(result.email, result.firstName);
   }
 
   /**
@@ -398,6 +454,37 @@ class AuthService {
     }
 
     return user;
+  }
+
+  async resendVerificationCode(email: string): Promise<void> {
+    const user = await prisma.user.findUnique({
+      where: { email: email.toLowerCase() },
+    });
+
+    if (!user) {
+      // Don't reveal if email exists (security)
+      return;
+    }
+
+    if (user.isEmailVerified) {
+      throw new BadRequestError('Email is already verified');
+    }
+
+    // Generate new code and reset attempts
+    const code = this.generateVerificationCode();
+    const expires = new Date(Date.now() + 24 * 60 * 60 * 1000); // 24 hours
+
+    await prisma.user.update({
+      where: { id: user.id },
+      data: {
+        emailVerificationCode: code,
+        emailVerificationExpires: expires,
+        verificationFailedAttempts: 0, // Reset attempts
+        verificationLockedUntil: null, // Unlock account
+      },
+    });
+
+    await emailService.sendVerificationCode(user.email, code, user.firstName);
   }
 }
 
