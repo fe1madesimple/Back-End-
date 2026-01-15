@@ -23,8 +23,6 @@ export const updatePreferencesSchema = z.object({
   }),
 });
 
-
-
 export const changePasswordSchema = z.object({
   body: z.object({
     currentPassword: z.string().min(1, 'Current password is required'),
@@ -34,5 +32,14 @@ export const changePasswordSchema = z.object({
       .regex(/[A-Z]/, 'Must contain uppercase')
       .regex(/[a-z]/, 'Must contain lowercase')
       .regex(/[0-9]/, 'Must contain number'),
+  }),
+});
+
+export const deleteAccountSchema = z.object({
+  body: z.object({
+    password: z.string().min(1, 'Password is required'),
+    confirmation: z.string().refine((val) => val === 'DELETE', {
+      message: 'Must type DELETE to confirm',
+    }),
   }),
 });
