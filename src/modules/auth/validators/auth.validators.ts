@@ -44,9 +44,17 @@ export const resetPasswordSchema = z.object({
 
 export const verifyEmailSchema = z.object({
   body: z.object({
+    email: z
+      .string({ message: 'Email is required' })
+      .min(1, 'Email is required')
+      .email('Please provide a valid email address'),
+
     code: z
-      .string()
-      .length(4, 'Code must be 4 digits')
-      .regex(/^\d{4}$/, 'Code must be numeric'),
+      .string({ message: 'Verification code is required' })
+      .min(1, 'Verification code is required')
+      .length(4, 'Verification code must be 4 digits')
+      .refine((val) => /^\d{4}$/.test(val), {
+        message: 'Verification code must contain only digits',
+      }),
   }),
 });
