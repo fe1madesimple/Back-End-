@@ -165,6 +165,8 @@ const createApp = (): Application => {
 
   app.use("/api/v1/auth", authRouter);
 
+  app.use('/api/v1/exams', examRouter);
+
   app.use(notFoundHandler);
 
   app.use(errorHandler);
