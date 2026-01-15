@@ -19,6 +19,8 @@ export const requireRole = (...roles: UserRole[]) => {
       throw new ForbiddenError('Authentication required');
     }
 
+    req.user
+
     if (roles.includes(req.user.role as UserRole)) {
       next();
     } else {
