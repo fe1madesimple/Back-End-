@@ -104,6 +104,27 @@ class UserService {
       data: { password: hashedPassword },
     });
   }
+
+  async deleteAccount(userId: string, password: string) {
+    const user = await prisma.user.findUnique({
+      where: { id: userId },
+    });
+
+    if (!user) {
+      throw new NotFoundError('User not found');
+    }
+
+    if (user.password) {
+      const isValid = await bcrypt.compare(password, user.password);
+      if (!isValid) {
+        throw new UnauthorizedError('Incorrect password');
+      }
+    }
+
+    await prisma.user.delete({
+      where: { id: userId },
+    });
+  }
 }
 
 
