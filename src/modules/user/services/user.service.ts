@@ -1,6 +1,6 @@
 import bcrypt from 'bcryptjs';
 import prisma from '@/config/database';
-import { BadRequestError, UnauthorizedError, NotFoundError } from '@/utils/errors';
+import {UnauthorizedError, NotFoundError } from '@/utils/errors';
 import {
   UpdateProfileInput,
   UpdatePreferencesInput,
