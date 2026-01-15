@@ -63,5 +63,6 @@
     "swc": true,
     "transpileOnly": true,
     "files": true
-  }
+  },
+  "typeRoots": ["./node_modules/@types", "./src/types"]
 }
