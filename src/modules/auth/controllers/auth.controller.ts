@@ -15,7 +15,6 @@ import { clearAuthCookies } from '@/utils/cookie';
 import passport from 'passport';
 import { AuthServiceResponse } from '../interfaces/auth.interfaces';
 
-
 /**
  * @desc    Register new user
  * @route   POST /api/v1/auth/register
@@ -54,10 +53,8 @@ export const login = asyncHandler(async (req: Request, res: Response) => {
   sendSuccess(res, 'Login successful', { user: result.user });
 });
 
-
-
 /**
- * @desc    google login 
+ * @desc    google login
  * @route   POST /api/v1/auth/google/login
  * @access  Public
  */
@@ -109,20 +106,18 @@ export const resetPassword = asyncHandler(async (req: Request, res: Response) =>
   sendSuccess(res, 'Password reset successful. You can now login with your new password.');
 });
 
-
 /**
  * @desc    Verify email with token
  * @route   GET /api/v1/auth/verify-email
  * @access  Public
  */
 export const verifyEmail = asyncHandler(async (req: Request, res: Response) => {
-  const input: VerifyEmailInput = req.body; 
+  const input: VerifyEmailInput = req.body;
 
   await authService.verifyEmail(input);
 
   return sendSuccess(res, 'Email verified successfully. You can now access all features.');
 });
-
 
 /**
  * @desc    Refresh access token using refresh token
@@ -144,14 +139,8 @@ export const refreshToken = asyncHandler(async (req: Request, res: Response) => 
   setAuthCookies(res, result.accessToken, result.refreshToken);
 
   // Return success
-  sendSuccess(
-    res,
-    'Tokens refreshed successfully'
-  );
+  sendSuccess(res, 'Tokens refreshed successfully');
 });
-
-
-
 
 /**
  * @desc    Get current logged-in user
@@ -166,13 +155,8 @@ export const getCurrentUser = asyncHandler(async (req: Request, res: Response) =
   const user = await authService.getCurrentUser(userId);
 
   // Return user data
-  sendSuccess(
-    res,
-    'User retrieved successfully',
-    { user }
-  );
+  sendSuccess(res, 'User retrieved successfully', { user });
 });
-
 
 /**
  * @desc    Logout user (clear cookies)
@@ -184,8 +168,16 @@ export const logout = asyncHandler(async (_req: Request, res: Response) => {
   clearAuthCookies(res);
 
   // Return success
-  sendSuccess(
+  sendSuccess(res, 'Logged out successfully');
+});
+
+export const resendVerificationCode = asyncHandler(async (req: Request, res: Response) => {
+  const { email } = req.body;
+
+  await authService.resendVerificationCode(email);
+
+  return sendSuccess(
     res,
-    'Logged out successfully'
+    'Verification code sent successfully. Please check your email.',
   );
 });
