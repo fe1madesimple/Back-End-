@@ -13,3 +13,12 @@ export const updateProfileSchema = z.object({
     focusSubjects: z.array(z.string()).optional(),
   }),
 });
+
+export const updatePreferencesSchema = z.object({
+  body: z.object({
+    emailReminders: z.boolean().optional(),
+    studyStreakAlerts: z.boolean().optional(),
+    podcastRecommendations: z.boolean().optional(),
+    showRelevantEpisodes: z.boolean().optional(),
+  }),
+});
