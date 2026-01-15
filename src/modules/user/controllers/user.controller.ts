@@ -9,13 +9,15 @@ import {
   DeleteAccountInput,
 } from '../interfaces/user.interfaces';
 
-
-
-
-
-
 export const getProfile = asyncHandler(async (req: Request, res: Response) => {
   const userId = (req.user as any).id;
   const user = await userService.getProfile(userId);
   return sendSuccess(res, 'Profile retrieved successfully', { user });
+});
+
+export const updateProfile = asyncHandler(async (req: Request, res: Response) => {
+  const userId = (req.user as any).id;
+  const input: UpdateProfileInput = req.body;
+  const user = await userService.updateProfile(userId, input);
+  return sendSuccess(res, 'Profile updated successfully', { user });
 });
