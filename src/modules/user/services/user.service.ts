@@ -43,6 +43,29 @@ class UserService {
     }
 
     return user;
+    }
+    
+
+      async updateProfile(userId: string, input: UpdateProfileInput) {
+    const user = await prisma.user.update({
+      where: { id: userId },
+      data: {
+        ...input,
+        targetExamDate: input.targetExamDate ? new Date(input.targetExamDate) : undefined,
+      },
+      select: {
+        id: true,
+        email: true,
+        firstName: true,
+        lastName: true,
+        profileColor: true,
+        targetExamDate: true,
+        dailyStudyGoal: true,
+        focusSubjects: true,
+      },
+    });
+
+    return user;
   }
 }
 
