@@ -39,7 +39,7 @@ export const deleteAccountSchema = z.object({
   body: z.object({
     password: z.string().min(1, 'Password is required'),
     confirmation: z.string().refine((val) => val === 'DELETE', {
-      message: 'Must type DELETE to confirm',
+      message: 'Must type DELETE to confirm'
     }),
   }),
 });
