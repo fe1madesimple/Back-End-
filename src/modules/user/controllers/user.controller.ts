@@ -54,3 +54,15 @@ export const getOnboardingStatus = asyncHandler(async (req: Request, res: Respon
   return sendSuccess(res, "onboarding status retrieved", {user})
 });
 
+
+
+
+export const exportUserData = asyncHandler(async (req: Request, res: Response) => {
+
+  const userId = (req.user as any).id;
+
+  const sanitizedData = await userService.exportUserData(userId);
+
+
+  sendSuccess(res, "user data exported successfully", {sanitizedData})
+})

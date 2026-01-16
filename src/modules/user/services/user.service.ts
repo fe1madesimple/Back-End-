@@ -141,8 +141,39 @@ class UserService {
       skipped: user?.onboardingSkipped || false,
     };
 
-
     return res 
+
+  }
+
+  async exportUserData(userId: string) {
+    
+    const userData = await prisma.user.findUnique({
+      where: { id: userId },
+      include: {
+        subscription: true,
+        studyLogs: true,
+        quizAttempts: true,
+        timedSessions: {
+          include: { aiEvaluation: true },
+        },
+        savedCases: {
+          include: { caseBrief: true },
+        },
+        achievements: {
+          include: { achievement: true },
+        },
+      },
+    });
+    
+    const sanitizedData = {
+      ...userData,
+      password: undefined,
+      passwordResetCode: undefined,
+      emailVerificationCode: undefined,
+    };
+
+
+    return sanitizedData
   }
 }
 
