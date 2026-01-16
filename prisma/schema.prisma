@@ -52,7 +52,10 @@ model User {
   verificationLockedUntil   DateTime?
 
 
-  
+  // Onboarding tracking
+  hasCompletedOnboarding Boolean   @default(false)
+  onboardingSkipped      Boolean   @default(false)
+  onboardingCompletedAt  DateTime?
   
   // Preferences (from Preferences screen)
   emailReminders    Boolean  @default(true)
@@ -79,6 +82,7 @@ model User {
   @@index([googleId])
   @@index([createdAt])
   @@map("users")
+  @@index([hasCompletedOnboarding])
 }
 
 enum UserRole {
