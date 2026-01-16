@@ -126,7 +126,6 @@ class UserService {
     });
   }
 
-
   async getOnboardingStatus(userId: string) {
     const user = await prisma.user.findUnique({
       where: { id: userId },
@@ -141,12 +140,10 @@ class UserService {
       skipped: user?.onboardingSkipped || false,
     };
 
-    return res 
-
+    return res;
   }
 
   async exportUserData(userId: string) {
-    
     const userData = await prisma.user.findUnique({
       where: { id: userId },
       include: {
@@ -164,7 +161,7 @@ class UserService {
         },
       },
     });
-    
+
     const sanitizedData = {
       ...userData,
       password: undefined,
@@ -172,10 +169,51 @@ class UserService {
       emailVerificationCode: undefined,
     };
 
+    return sanitizedData;
+  }
 
-    return sanitizedData
+  async completeOnboarding(
+    userId: string,
+    focusSubjects: string[],
+    targetExamDate?: string,
+    dailyStudyGoal?: number
+  ) {
+    const user = await prisma.user.update({
+      where: { id: userId },
+      data: {
+        focusSubjects,
+        targetExamDate: targetExamDate ? new Date(targetExamDate) : undefined,
+        dailyStudyGoal: dailyStudyGoal || 2,
+        hasCompletedOnboarding: true,
+        onboardingSkipped: false,
+        onboardingCompletedAt: new Date(),
+      },
+      select: {
+        id: true,
+        email: true,
+        firstName: true,
+        lastName: true,
+        role: true,
+        profileColor: true,
+        isEmailVerified: true,
+        targetExamDate: true,
+        dailyStudyGoal: true,
+        focusSubjects: true,
+        hasCompletedOnboarding: true,
+        onboardingSkipped: true,
+        onboardingCompletedAt: true,
+      },
+    });
+
+    if (!user) {
+      throw new NotFoundError('User not found');
+    }
+
+    return user;
   }
 }
+
+
 
 
 
