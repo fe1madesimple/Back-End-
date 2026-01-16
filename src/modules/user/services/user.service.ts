@@ -125,7 +125,29 @@ class UserService {
       where: { id: userId },
     });
   }
+
+
+  async getOnboardingStatus(userId: string) {
+    const user = await prisma.user.findUnique({
+      where: { id: userId },
+      select: {
+        hasCompletedOnboarding: true,
+        onboardingSkipped: true,
+      },
+    });
+
+    const res = {
+      completed: user?.hasCompletedOnboarding || false,
+      skipped: user?.onboardingSkipped || false,
+    };
+
+
+    return res 
+  }
 }
+
+
+
 
 
 

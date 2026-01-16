@@ -29,6 +29,7 @@ export const updatePreferences = asyncHandler(async (req: Request, res: Response
   return sendSuccess(res, 'Preferences updated successfully', { preferences });
 });
 
+
 export const changePassword = asyncHandler(async (req: Request, res: Response) => {
   const userId = (req.user as any).id;
   const input: ChangePasswordInput = req.body;
@@ -36,9 +37,20 @@ export const changePassword = asyncHandler(async (req: Request, res: Response) =
   return sendSuccess(res, 'Password changed successfully');
 });
 
+
 export const deleteAccount = asyncHandler(async (req: Request, res: Response) => {
   const userId = (req.user as any).id;
   const input: DeleteAccountInput = req.body;
   await userService.deleteAccount(userId, input.password);
   return sendNoContent(res);
 });
+
+
+export const getOnboardingStatus = asyncHandler(async (req: Request, res: Response) => {
+  const userId = (req.user as any).id;
+
+ const user = await userService.getOnboardingStatus(userId)
+
+  return sendSuccess(res, "onboarding status retrieved", {user})
+});
+
