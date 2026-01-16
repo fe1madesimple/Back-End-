@@ -211,6 +211,35 @@ class UserService {
 
     return user;
   }
+
+  async skipOnboarding(userId: string) {
+    const user = await prisma.user.update({
+      where: { id: userId },
+      data: {
+        hasCompletedOnboarding: true,
+        onboardingSkipped: true,
+        onboardingCompletedAt: new Date(),
+      },
+      select: {
+        id: true,
+        email: true,
+        firstName: true,
+        lastName: true,
+        role: true,
+        profileColor: true,
+        isEmailVerified: true,
+        hasCompletedOnboarding: true,
+        onboardingSkipped: true,
+        onboardingCompletedAt: true,
+      },
+    });
+
+    if (!user) {
+      throw new NotFoundError('User not found');
+    }
+
+    return user;
+  }
 }
 
 
