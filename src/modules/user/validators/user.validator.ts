@@ -48,9 +48,24 @@ export const deleteAccountSchema = z.object({
 
 export const completeOnboardingSchema = z.object({
   body: z.object({
-    focusSubjects: z.array(z.string()).min(1, 'Select at least one subject'),
-    targetExamDate: z.string().datetime().optional(),
-    dailyStudyGoal: z.number().min(1).max(24).optional(),
-    skipped: z.boolean().optional(),
+    focusSubjects: z
+      .array(z.string())
+      .min(1, 'Please select at least one subject')
+      .max(8, 'You can select up to 8 subjects'),
+    targetExamDate: z
+      .string()
+      .datetime()
+      .optional()
+      .refine(
+        (date) => !date || new Date(date) > new Date(),
+        'Target exam date must be in the future'
+      ),
+    dailyStudyGoal: z
+      .number()
+      .int()
+      .min(1, 'Daily study goal must be at least 1 hour')
+      .max(24, 'Daily study goal cannot exceed 24 hours')
+      .optional(),
   }),
 });
+
