@@ -43,3 +43,14 @@ export const deleteAccountSchema = z.object({
     }),
   }),
 });
+
+
+
+export const completeOnboardingSchema = z.object({
+  body: z.object({
+    focusSubjects: z.array(z.string()).min(1, 'Select at least one subject'),
+    targetExamDate: z.string().datetime().optional(),
+    dailyStudyGoal: z.number().min(1).max(24).optional(),
+    skipped: z.boolean().optional(),
+  }),
+});
