@@ -72,3 +72,11 @@ export const completeOnboarding = asyncHandler(async (req: Request, res: Respons
 
   sendSuccess(res, 'Onboarding completed successfully', { user });
 });
+
+export const skipOnboarding = asyncHandler(async (req: Request, res: Response) => {
+  const userId = (req.user as any).id;
+
+  const user = await userService.skipOnboarding(userId);
+
+  sendSuccess(res, 'Onboarding skipped', { user });
+});
