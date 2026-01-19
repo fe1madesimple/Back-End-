@@ -616,90 +616,68 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
  *     summary: Verify email with 4-digit code
  *     tags: [Authentication]
  *     description: |
- *       Verifies user's email address using email and 4-digit code from verification email.
+ *       Verify user's email address with the 4-digit code sent via email.
  *       
- *       **What happens:**
- *       - Validates email and 4-digit code
- *       - Checks if code is expired (24-hour validity)
- *       - Tracks failed verification attempts (max 5 attempts)
- *       - Locks verification for 15 minutes after 5 failed attempts
- *       - Sets user's `isEmailVerified` to true on success
- *       - Clears verification code and resets failed attempts
- *       - Sends welcome email
+ *       **Complete Flow:**
+ *       1. User signs up with email/password
+ *       2. System sends 4-digit verification code to email
+ *       3. User enters code in verification form
+ *       4. This endpoint validates the code
+ *       5. System marks email as verified
+ *       6. System generates JWT tokens
+ *       7. System sets httpOnly cookies
+ *       8. **System returns `needsOnboarding: true`**
+ *       9. Frontend redirects to `/onboarding`
  *       
  *       **Security Features:**
- *       - Rate limiting: Max 5 attempts per email
- *       - Account lockout: 15 minutes after 5 failed attempts
- *       - Race condition prevention: Uses database transactions
- *       - Code expiration: 24 hours from generation
- *       - Email + Code verification: Prevents code reuse across accounts
+ *       - ✅ **Rate limiting**: Max 5 attempts
+ *       - ✅ **Account locking**: 15 minutes after 5 failed attempts
+ *       - ✅ **Code expiration**: 15 minutes from generation
+ *       - ✅ **Transaction safety**: Prevents race conditions
+ *       - ✅ **Single-use codes**: Code cleared after successful verification
  *       
- *       **Flow:**
- *       1. User registers → receives email with 4-digit code
- *       2. User enters email and code in verification form
- *       3. Frontend sends email + code to this endpoint
- *       4. System validates and tracks attempts
- *       5. On success: User is redirected to dashboard
- *       6. On failure: Shows attempts remaining or lockout message
- *       
- *       **Frontend usage (Vue.js):**
- *       ```vue
- *       <script setup>
- *       import { ref } from 'vue';
- *       import { useRouter } from 'vue-router';
- *       import { useToast } from 'vue-toastification';
- *       
- *       const router = useRouter();
- *       const toast = useToast();
- *       
- *       const email = ref('');
- *       const code = ref('');
- *       const loading = ref(false);
- *       
- *       const verifyEmail = async () => {
- *         loading.value = true;
+ *       **Frontend usage:**
+ *       ```javascript
+ *       // Verify email page
+ *       const handleVerify = async (code) => {
  *         try {
  *           const response = await fetch('/api/v1/auth/verify-email', {
  *             method: 'POST',
+ *             credentials: 'include', // Important for cookies
  *             headers: { 'Content-Type': 'application/json' },
  *             body: JSON.stringify({
- *               email: email.value,
- *               code: code.value
+ *               email: userEmail,
+ *               code: code // 4-digit code from user input
  *             })
  *           });
- *           
+ *       
  *           const data = await response.json();
- *           
+ *       
  *           if (data.success) {
- *             toast.success('Email verified successfully!');
- *             router.push('/dashboard');
- *           } else {
- *             toast.error(data.message);
+ *             // Email verified successfully
+ *             // Tokens are automatically set in cookies
+ *             // Always redirect to onboarding for new users
+ *             router.push('/onboarding');
  *           }
  *         } catch (error) {
- *           toast.error('Failed to verify email. Please try again.');
- *         } finally {
- *           loading.value = false;
+ *           // Handle errors (invalid code, expired, locked, etc.)
+ *           showError(error.message);
  *         }
  *       };
- *       </script>
- *       
- *       <template>
- *         <form @submit.prevent="verifyEmail">
- *           <input v-model="email" type="email" placeholder="Email" required />
- *           <input v-model="code" type="text" maxlength="4" placeholder="1234" required />
- *           <button :disabled="loading">Verify</button>
- *         </form>
- *       </template>
  *       ```
  *       
- *       **Important notes:**
- *       - Both email and code are required
- *       - Code expires in 24 hours
- *       - Code can only be used once
- *       - Maximum 5 attempts before 15-minute lockout
- *       - User can request new code to reset attempts
- *       - Code is exactly 4 numeric digits
+ *       **Error Handling:**
+ *       The endpoint returns specific error messages for different scenarios:
+ *       - Invalid code: Shows remaining attempts
+ *       - Expired code: Prompts to request new code
+ *       - Account locked: Shows time until unlock
+ *       - Already verified: Redirects to login
+ *       
+ *       **After Verification:**
+ *       - User is automatically logged in (tokens in cookies)
+ *       - `needsOnboarding` is always `true` (new users)
+ *       - Welcome email is sent (async, non-blocking)
+ *       - User should be redirected to `/onboarding`
  *     requestBody:
  *       required: true
  *       content:
@@ -713,18 +691,32 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
  *               email:
  *                 type: string
  *                 format: email
- *                 example: "user@example.com"
- *                 description: User's email address
+ *                 example: user@example.com
+ *                 description: Email address used during signup
  *               code:
  *                 type: string
  *                 pattern: '^\d{4}$'
  *                 minLength: 4
  *                 maxLength: 4
  *                 example: "1234"
- *                 description: 4-digit verification code from email
+ *                 description: 4-digit verification code sent to email
+ *           examples:
+ *             validCode:
+ *               summary: Valid verification code
+ *               value:
+ *                 email: user@example.com
+ *                 code: "1234"
  *     responses:
  *       200:
  *         description: Email verified successfully
+ *         headers:
+ *           Set-Cookie:
+ *             description: JWT tokens stored in httpOnly cookies
+ *             schema:
+ *               type: string
+ *               example: |
+ *                 accessToken=eyJhbGc...; Path=/; HttpOnly; Secure; SameSite=Strict; Max-Age=900
+ *                 refreshToken=eyJhbGc...; Path=/; HttpOnly; Secure; SameSite=Strict; Max-Age=604800
  *         content:
  *           application/json:
  *             schema:
@@ -735,49 +727,96 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
  *                   example: true
  *                 message:
  *                   type: string
- *                   example: Email verified successfully. You can now access all features.
+ *                   example: Email verified successfully
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     user:
+ *                       type: object
+ *                       properties:
+ *                         id:
+ *                           type: string
+ *                           example: clp_user_123abc
+ *                         email:
+ *                           type: string
+ *                           example: user@example.com
+ *                         firstName:
+ *                           type: string
+ *                           example: John
+ *                         lastName:
+ *                           type: string
+ *                           example: Doe
+ *                         role:
+ *                           type: string
+ *                           enum: [STUDENT, HOST, ADMIN]
+ *                           example: STUDENT
+ *                         profileColor:
+ *                           type: string
+ *                           example: "#3B82F6"
+ *                         isEmailVerified:
+ *                           type: boolean
+ *                           example: true
+ *                     needsOnboarding:
+ *                       type: boolean
+ *                       example: true
+ *                       description: Always true after email verification (new users)
+ *             example:
+ *               success: true
+ *               message: Email verified successfully
+ *               data:
+ *                 user:
+ *                   id: clp_user_789xyz
+ *                   email: newuser@example.com
+ *                   firstName: Alice
+ *                   lastName: Johnson
+ *                   role: STUDENT
+ *                   profileColor: "#3B82F6"
+ *                   isEmailVerified: true
+ *                 needsOnboarding: true
  *       400:
- *         description: Bad request - Invalid code, expired, or rate limited
+ *         description: Validation error or invalid code
  *         content:
  *           application/json:
  *             schema:
- *               type: object
- *               properties:
- *                 success:
- *                   type: boolean
- *                   example: false
- *                 message:
- *                   type: string
- *                 errors:
- *                   type: array
- *                   items:
- *                     type: object
- *                     properties:
- *                       field:
- *                         type: string
- *                       message:
- *                         type: string
+ *               $ref: '#/components/schemas/ErrorResponse'
  *             examples:
+ *               invalidCode:
+ *                 summary: Invalid verification code
+ *                 value:
+ *                   success: false
+ *                   message: Invalid verification code. 4 attempts remaining.
+ *               expiredCode:
+ *                 summary: Expired verification code
+ *                 value:
+ *                   success: false
+ *                   message: Verification code has expired. Please request a new one.
+ *               alreadyVerified:
+ *                 summary: Email already verified
+ *                 value:
+ *                   success: false
+ *                   message: Email is already verified
+ *               invalidEmail:
+ *                 summary: Invalid email
+ *                 value:
+ *                   success: false
+ *                   message: Invalid email or verification code
  *               invalidFormat:
- *                 summary: Invalid email or code format
+ *                 summary: Invalid code format
  *                 value:
  *                   success: false
  *                   message: Validation failed
  *                   errors:
  *                     - field: code
  *                       message: Verification code must be exactly 4 digits
- *               codeExpired:
- *                 summary: Code expired (> 24 hours)
- *                 value:
- *                   success: false
- *                   message: Verification code has expired. Please request a new one.
- *               wrongCode:
- *                 summary: Wrong code - attempts remaining
- *                 value:
- *                   success: false
- *                   message: Invalid verification code. 3 attempts remaining.
- *               tooManyAttempts:
- *                 summary: Account locked due to failed attempts
+ *       429:
+ *         description: Too many failed attempts - Account locked
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/ErrorResponse'
+ *             examples:
+ *               accountLocked:
+ *                 summary: Account locked after 5 failed attempts
  *                 value:
  *                   success: false
  *                   message: Too many failed attempts. Your verification is locked for 15 minutes. Please request a new code.
@@ -786,11 +825,6 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
  *                 value:
  *                   success: false
  *                   message: Too many failed attempts. Please try again in 12 minutes or request a new code.
- *               invalidEmail:
- *                 summary: Email doesn't match any account
- *                 value:
- *                   success: false
- *                   message: Invalid email or verification code
  */
 authRouter.post('/verify-email', validate(verifyEmailSchema), verifyEmail);
 

@@ -119,9 +119,17 @@ export const resetPassword = asyncHandler(async (req: Request, res: Response) =>
 export const verifyEmail = asyncHandler(async (req: Request, res: Response) => {
   const input: VerifyEmailInput = req.body;
 
-  await authService.verifyEmail(input);
+  // Call service with transaction handling
+  const result = await authService.verifyEmail(input);
 
-  return sendSuccess(res, 'Email verified successfully. You can now access all features.');
+  // Set tokens in HTTP-only cookies
+  setAuthCookies(res, result.accessToken, result.refreshToken);
+
+  // Return success response
+  sendSuccess(res, 'Email verified successfully', {
+    user: result.user,
+    needsOnboarding: result.needsOnboarding,
+  });
 });
 
 /**
