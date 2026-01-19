@@ -81,14 +81,18 @@ export const googleLogin = passport.authenticate('google', {
 export const googleCallback = [
   passport.authenticate('google', { session: false }),
   asyncHandler(async (req: Request, res: Response) => {
-    // Now req.user contains the full result from authService
     const result = req.user as AuthServiceResponse;
 
     setAuthCookies(res, result.accessToken, result.refreshToken);
-    res.redirect(`${process.env.FRONTEND_URL}/dashboard`);
+
+    // Redirect based on onboarding status
+    if (result.needsOnboarding) {
+      res.redirect(`${process.env.FRONTEND_URL}/onboarding`);
+    } else {
+      res.redirect(`${process.env.FRONTEND_URL}/dashboard`);
+    }
   }),
 ];
-
 
 
 /**
