@@ -138,11 +138,13 @@ class AuthService {
 
     const accessToken = this.generateAccessToken(tokenPayload);
     const refreshToken = this.generateRefreshToken(tokenPayload);
+    const needsOnboarding = true;
 
     return {
       user: this.formatUserResponse(user),
       accessToken,
       refreshToken,
+      needsOnboarding,
     };
   }
   /**
@@ -205,8 +207,11 @@ class AuthService {
       where: { email: email.toLowerCase() },
     });
 
+    let isNewUser = false;
+
     // If user doesn't exist, create new user
     if (!user) {
+      isNewUser = true;
       user = await prisma.user.create({
         data: {
           email: email.toLowerCase(),
@@ -224,7 +229,10 @@ class AuthService {
       // Link Google account to existing user
       user = await prisma.user.update({
         where: { id: user.id },
-        data: { googleId, isEmailVerified: true },
+        data: {
+          googleId,
+          isEmailVerified: true,
+        },
       });
     }
 
@@ -244,13 +252,20 @@ class AuthService {
     const accessToken = this.generateAccessToken(tokenPayload);
     const refreshToken = this.generateRefreshToken(tokenPayload);
 
+    // Check if user needs onboarding
+    // New OAuth users ALWAYS need onboarding
+    // Existing users only if they haven't completed it
+    const needsOnboarding = isNewUser || !user.hasCompletedOnboarding;
+
     return {
       user: this.formatUserResponse(user),
       accessToken,
       refreshToken,
+      needsOnboarding,
     };
   }
 
+  
   /**
    * FORGOT PASSWORD
    */
