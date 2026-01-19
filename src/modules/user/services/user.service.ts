@@ -1,15 +1,11 @@
 import bcrypt from 'bcryptjs';
 import prisma from '@/config/database';
-import {UnauthorizedError, NotFoundError } from '@/utils/errors';
+import { UnauthorizedError, NotFoundError } from '@/utils/errors';
 import {
   UpdateProfileInput,
   UpdatePreferencesInput,
   ChangePasswordInput,
 } from '../interfaces/user.interfaces';
-
-
-
-
 
 class UserService {
   async getProfile(userId: string) {
@@ -132,15 +128,19 @@ class UserService {
       select: {
         hasCompletedOnboarding: true,
         onboardingSkipped: true,
+        onboardingCompletedAt: true,
       },
     });
 
-    const res = {
-      completed: user?.hasCompletedOnboarding || false,
-      skipped: user?.onboardingSkipped || false,
-    };
+    if (!user) {
+      throw new NotFoundError('User not found');
+    }
 
-    return res;
+    return {
+      completed: user.hasCompletedOnboarding,
+      skipped: user.onboardingSkipped,
+      completedAt: user.onboardingCompletedAt,
+    };
   }
 
   async exportUserData(userId: string) {
@@ -161,6 +161,10 @@ class UserService {
         },
       },
     });
+
+    if (!userData) {
+      throw new NotFoundError('User not found');
+    }
 
     const sanitizedData = {
       ...userData,
@@ -242,12 +246,4 @@ class UserService {
   }
 }
 
-
-
-
-
-
-
-
-
-export default new UserService()
+export default new UserService();
