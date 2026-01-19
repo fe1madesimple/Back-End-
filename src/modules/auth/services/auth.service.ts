@@ -14,6 +14,7 @@ import {
   AuthServiceResponse
 } from '../interfaces/auth.interfaces';
 import emailService from '@/shared/services/email.service';
+import { logger } from '@/shared/utils';
 
 
 class AuthService {
@@ -265,7 +266,6 @@ class AuthService {
     };
   }
 
-  
   /**
    * FORGOT PASSWORD
    */
@@ -334,47 +334,53 @@ class AuthService {
   /**
    * VERIFY EMAIL
    */
-  async verifyEmail(input: VerifyEmailInput): Promise<void> {
+
+  async verifyEmail(input: VerifyEmailInput): Promise<AuthServiceResponse> {
     const { email, code } = input;
 
     // Use transaction to prevent race conditions
-    const result = await prisma.$transaction(async (tx) => {
+    const user = await prisma.$transaction(async (tx) => {
       // 1. Find user with row-level lock (prevents race conditions)
-      const user = await tx.user.findFirst({
+      const foundUser = await tx.user.findFirst({
         where: {
           email: email.toLowerCase(),
         },
       });
 
-      if (!user) {
+      if (!foundUser) {
         throw new BadRequestError('Invalid email or verification code');
       }
 
-      // 2. Check if account is locked due to too many attempts
-      if (user.verificationLockedUntil && user.verificationLockedUntil > new Date()) {
+      // 2. Check if already verified
+      if (foundUser.isEmailVerified) {
+        throw new BadRequestError('Email is already verified');
+      }
+
+      // 3. Check if account is locked due to too many attempts
+      if (foundUser.verificationLockedUntil && foundUser.verificationLockedUntil > new Date()) {
         const minutesLeft = Math.ceil(
-          (user.verificationLockedUntil.getTime() - Date.now()) / 60000
+          (foundUser.verificationLockedUntil.getTime() - Date.now()) / 60000
         );
         throw new BadRequestError(
           `Too many failed attempts. Please try again in ${minutesLeft} minutes or request a new code.`
         );
       }
 
-      // 3. Check if code is expired
-      if (!user.emailVerificationExpires || user.emailVerificationExpires < new Date()) {
+      // 4. Check if code is expired
+      if (!foundUser.emailVerificationExpires || foundUser.emailVerificationExpires < new Date()) {
         throw new BadRequestError('Verification code has expired. Please request a new one.');
       }
 
-      // 4. Check if code matches
-      if (user.emailVerificationCode !== code) {
+      // 5. Check if code matches
+      if (foundUser.emailVerificationCode !== code) {
         // Increment failed attempts
-        const failedAttempts = user.verificationFailedAttempts + 1;
+        const failedAttempts = foundUser.verificationFailedAttempts + 1;
         const maxAttempts = 5;
 
         // Lock account if too many attempts
         if (failedAttempts >= maxAttempts) {
           await tx.user.update({
-            where: { id: user.id },
+            where: { id: foundUser.id },
             data: {
               verificationFailedAttempts: failedAttempts,
               verificationLockedUntil: new Date(Date.now() + 15 * 60 * 1000), // 15 minutes
@@ -387,7 +393,7 @@ class AuthService {
 
         // Update failed attempts
         await tx.user.update({
-          where: { id: user.id },
+          where: { id: foundUser.id },
           data: {
             verificationFailedAttempts: failedAttempts,
           },
@@ -399,24 +405,49 @@ class AuthService {
         );
       }
 
-      // 5. Code is correct - verify email
-      await tx.user.update({
-        where: { id: user.id },
+      // 6. Code is correct - verify email
+      const verifiedUser = await tx.user.update({
+        where: { id: foundUser.id },
         data: {
           isEmailVerified: true,
           emailVerificationCode: null,
           emailVerificationExpires: null,
           verificationFailedAttempts: 0,
           verificationLockedUntil: null,
+          lastLoginAt: new Date(), // Update last login
         },
       });
 
-      return user;
+      return verifiedUser;
     });
 
-    // 6. Send welcome email (outside transaction)
-    console.log('[EMAIL PENDING] Welcome email for:', result.email);
-    await emailService.sendWelcomeEmail(result.email, result.firstName);
+    // 7. Send welcome email (outside transaction - async, non-blocking)
+    emailService.sendWelcomeEmail(user.email, user.firstName).catch((error) => {
+      logger.error('Failed to send welcome email', {
+        email: user.email,
+        error: error.message,
+      });
+    });
+
+    // 8. Generate tokens
+    const tokenPayload: TokenPayload = {
+      userId: user.id,
+      email: user.email,
+      role: user.role,
+    };
+
+    const accessToken = this.generateAccessToken(tokenPayload);
+    const refreshToken = this.generateRefreshToken(tokenPayload);
+
+    // 9. New users ALWAYS need onboarding after email verification
+    const needsOnboarding = true;
+
+    return {
+      user: this.formatUserResponse(user),
+      accessToken,
+      refreshToken,
+      needsOnboarding,
+    };
   }
 
   /**
