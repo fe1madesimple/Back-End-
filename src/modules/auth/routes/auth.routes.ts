@@ -228,6 +228,7 @@ const authRouter = Router()
 authRouter.post("/register", validate(registerSchema), register)
 
 
+
 /**
  * @swagger
  * /api/v1/auth/login:
@@ -235,23 +236,39 @@ authRouter.post("/register", validate(registerSchema), register)
  *     summary: Login with email and password
  *     tags: [Authentication]
  *     description: |
- *       Authenticates a user and returns JWT tokens in HTTP-only cookies.
+ *       Authenticate user with email and password.
  *       
- *       **What happens:**
- *       - Email and password are validated
- *       - Password is verified against hashed password in database
- *       - User's `lastLoginAt` timestamp is updated
- *       - JWT tokens are set in HTTP-only cookies
+ *       **Flow:**
+ *       1. User submits email + password
+ *       2. Server validates credentials
+ *       3. Server generates JWT tokens
+ *       4. Server sets httpOnly cookies
+ *       5. Server returns user data + `needsOnboarding` flag
  *       
- *       **Cookies set:**
- *       - `accessToken` - Valid for 7 days
- *       - `refreshToken` - Valid for 30 days
+ *       **Frontend should check `needsOnboarding`:**
+ *       ```javascript
+ *       const response = await fetch('/api/v1/auth/login', {
+ *         method: 'POST',
+ *         credentials: 'include',
+ *         body: JSON.stringify({ email, password })
+ *       });
  *       
- *       **Important notes:**
- *       - User can login even if email is not verified
- *       - Same error message for wrong email or wrong password (security)
- *       - Tokens are in HTTP-only cookies (NOT in response body)
- *       - Frontend should store user data from response in state
+ *       const data = await response.json();
+ *       
+ *       if (data.data.needsOnboarding) {
+ *         router.push('/onboarding'); // First-time user or incomplete
+ *       } else {
+ *         router.push('/dashboard'); // Returning user
+ *       }
+ *       ```
+ *       
+ *       **When `needsOnboarding` is true:**
+ *       - User hasn't completed onboarding yet
+ *       - Redirect to `/onboarding`
+ *       
+ *       **When `needsOnboarding` is false:**
+ *       - User has completed onboarding
+ *       - Redirect to `/dashboard`
  *     requestBody:
  *       required: true
  *       content:
@@ -265,19 +282,20 @@ authRouter.post("/register", validate(registerSchema), register)
  *               email:
  *                 type: string
  *                 format: email
- *                 example: student@example.com
+ *                 example: user@example.com
  *               password:
  *                 type: string
  *                 format: password
- *                 example: Password123
+ *                 example: MyPassword123
  *     responses:
  *       200:
  *         description: Login successful
  *         headers:
  *           Set-Cookie:
- *             description: JWT tokens set in HTTP-only cookies
+ *             description: JWT tokens stored in httpOnly cookies
  *             schema:
  *               type: string
+ *               example: accessToken=eyJhbGc...; HttpOnly; Secure; SameSite=Strict
  *         content:
  *           application/json:
  *             schema:
@@ -293,42 +311,51 @@ authRouter.post("/register", validate(registerSchema), register)
  *                   type: object
  *                   properties:
  *                     user:
- *                       type: object
- *                       properties:
- *                         id:
- *                           type: string
- *                           example: clp123abc456def789
- *                         email:
- *                           type: string
- *                           example: student@example.com
- *                         firstName:
- *                           type: string
- *                           example: John
- *                         lastName:
- *                           type: string
- *                           example: Doe
- *                         role:
- *                           type: string
- *                           example: STUDENT
- *                         profileColor:
- *                           type: string
- *                           example: "#3B82F6"
- *                         isEmailVerified:
- *                           type: boolean
- *                           example: true
+ *                       $ref: '#/components/schemas/UserProfile'
+ *                     needsOnboarding:
+ *                       type: boolean
+ *                       example: false
+ *                       description: Whether user needs to complete onboarding
+ *             examples:
+ *               returningUser:
+ *                 summary: Returning user (completed onboarding)
+ *                 value:
+ *                   success: true
+ *                   message: Login successful
+ *                   data:
+ *                     user:
+ *                       id: clp_user_123
+ *                       email: user@example.com
+ *                       firstName: John
+ *                       lastName: Doe
+ *                       role: STUDENT
+ *                       profileColor: "#3B82F6"
+ *                       isEmailVerified: true
+ *                     needsOnboarding: false
+ *               firstTimeUser:
+ *                 summary: First-time user (needs onboarding)
+ *                 value:
+ *                   success: true
+ *                   message: Login successful
+ *                   data:
+ *                     user:
+ *                       id: clp_user_456
+ *                       email: newuser@example.com
+ *                       firstName: Jane
+ *                       lastName: Smith
+ *                       role: STUDENT
+ *                       profileColor: "#3B82F6"
+ *                       isEmailVerified: true
+ *                     needsOnboarding: true
  *       401:
- *         description: Unauthorized - Invalid credentials
+ *         description: Invalid credentials
  *         content:
  *           application/json:
  *             schema:
- *               type: object
- *               properties:
- *                 success:
- *                   type: boolean
- *                   example: false
- *                 message:
- *                   type: string
- *                   example: Invalid email or password
+ *               $ref: '#/components/schemas/ErrorResponse'
+ *             example:
+ *               success: false
+ *               message: Invalid email or password
  */
 authRouter.post("/login", validate(loginSchema), login)
 
@@ -336,22 +363,70 @@ authRouter.post("/login", validate(loginSchema), login)
 
 /**
  * @swagger
- * /api/v1/auth/google/login:
+ * /api/v1/auth/google/callback:
  *   get:
- *     summary: Initiate Google OAuth login
+ *     summary: Google OAuth callback
  *     tags: [Authentication]
  *     description: |
- *       Redirects user to Google consent screen.
+ *       Google redirects here after user authorizes.
  *       
- *       **Frontend usage:**
- *       ```html
- *       <a href="https://api.fe1madesimple.ie/api/v1/auth/google/login">
- *         Sign in with Google
- *       </a>
+ *       **Automatic Flow:**
+ *       1. Google redirects with auth code
+ *       2. Server exchanges code for user profile
+ *       3. Server creates user (if new) or finds existing user
+ *       4. Server generates JWT tokens
+ *       5. Server sets httpOnly cookies
+ *       6. **Server checks onboarding status**
+ *       7. Server redirects to appropriate page
+ *       
+ *       **Redirect Logic:**
+ *       ```javascript
+ *       if (needsOnboarding) {
+ *         redirect('/onboarding'); // New user OR incomplete onboarding
+ *       } else {
+ *         redirect('/dashboard'); // Returning user with completed onboarding
+ *       }
  *       ```
+ *       
+ *       **When user is redirected to `/onboarding`:**
+ *       - New Google sign-up
+ *       - Existing user who hasn't completed onboarding
+ *       
+ *       **When user is redirected to `/dashboard`:**
+ *       - Returning user with completed onboarding
+ *       
+ *       **Frontend handling:**
+ *       No fetch needed - automatic redirect.
+ *       Just ensure you have `/onboarding` route set up.
+ *     parameters:
+ *       - in: query
+ *         name: code
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: Authorization code from Google (handled by Passport)
+ *       - in: query
+ *         name: state
+ *         schema:
+ *           type: string
+ *         description: State parameter for CSRF protection
  *     responses:
  *       302:
- *         description: Redirect to Google
+ *         description: Redirect to onboarding or dashboard
+ *         headers:
+ *           Location:
+ *             description: Redirect URL
+ *             schema:
+ *               type: string
+ *               enum:
+ *                 - https://yourdomain.com/onboarding
+ *                 - https://yourdomain.com/dashboard
+ *           Set-Cookie:
+ *             description: JWT tokens stored in httpOnly cookies
+ *             schema:
+ *               type: string
+ *       400:
+ *         description: OAuth error (invalid code, etc.)
  */
 authRouter.get('/google/login', googleLogin);
 
