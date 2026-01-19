@@ -77,6 +77,9 @@ export const googleCallback = [
     res.redirect(`${process.env.FRONTEND_URL}/dashboard`);
   }),
 ];
+
+
+
 /**
  * @desc    Request password reset
  * @route   POST /api/v1/auth/forgot-password
@@ -106,6 +109,7 @@ export const resetPassword = asyncHandler(async (req: Request, res: Response) =>
   // Return success
   sendSuccess(res, 'Password reset successful. You can now login with your new password.');
 });
+
 
 /**
  * @desc    Verify email with token

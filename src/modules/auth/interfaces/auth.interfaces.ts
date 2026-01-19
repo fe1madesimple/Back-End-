@@ -34,6 +34,7 @@ export interface AuthServiceResponse {
   };
   accessToken: string;
   refreshToken: string;
+  needsOnboarding: boolean;
 }
 
 export interface TokenPayload {

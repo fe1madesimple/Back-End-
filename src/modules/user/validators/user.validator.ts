@@ -44,8 +44,6 @@ export const deleteAccountSchema = z.object({
   }),
 });
 
-
-
 export const completeOnboardingSchema = z.object({
   body: z.object({
     focusSubjects: z
@@ -68,4 +66,3 @@ export const completeOnboardingSchema = z.object({
       .optional(),
   }),
 });
-
