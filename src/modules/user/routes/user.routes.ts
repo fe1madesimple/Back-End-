@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { getProfile, updateProfile, updatePreferences, changePassword, deleteAccount } from '../controllers/user.controller';
+import { getProfile, updateProfile, updatePreferences, changePassword, deleteAccount, completeOnboarding, skipOnboarding, getOnboardingStatus, exportUserData } from '../controllers/user.controller';
 import { protect } from '@/shared/middleware/auth.middleware';
 import { validate } from '@/shared/middleware/validation';
-import { updateProfileSchema, updatePreferencesSchema, changePasswordSchema, deleteAccountSchema } from '../validators/user.validator';
+import { updateProfileSchema, updatePreferencesSchema, changePasswordSchema, deleteAccountSchema, completeOnboardingSchema } from '../validators/user.validator';
 
 
 
@@ -140,6 +140,18 @@ userRouter.put('/profile', protect, validate(updateProfileSchema), updateProfile
  */
 userRouter.put('/preferences', protect, validate(updatePreferencesSchema), updatePreferences);
 
+
+userRouter.post('/onboarding', protect, validate(completeOnboardingSchema), completeOnboarding);
+
+
+userRouter.post('/onboarding/skip', protect, skipOnboarding);
+
+
+
+userRouter.get('/onboarding/status', protect, getOnboardingStatus);
+
+// Data Export (GDPR)
+userRouter.get('/data/export', protect, exportUserData);
 
 
 /**
