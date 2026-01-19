@@ -220,7 +220,7 @@ class AuthService {
           lastName: family_name,
           googleId,
           role: 'STUDENT',
-          isEmailVerified: true, // Google emails are pre-verified
+          isEmailVerified: true, 
         },
       });
 

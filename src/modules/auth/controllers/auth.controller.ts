@@ -15,6 +15,8 @@ import { clearAuthCookies } from '@/utils/cookie';
 import passport from 'passport';
 import { AuthServiceResponse } from '../interfaces/auth.interfaces';
 
+
+
 /**
  * @desc    Register new user
  * @route   POST /api/v1/auth/register
@@ -35,6 +37,8 @@ export const register = asyncHandler(async (req: Request, res: Response) => {
   });
 });
 
+
+
 /**
  * @desc    Login user
  * @route   POST /api/v1/auth/login
@@ -49,9 +53,14 @@ export const login = asyncHandler(async (req: Request, res: Response) => {
   // Set tokens in HTTP-only cookies
   setAuthCookies(res, result.accessToken, result.refreshToken);
 
-  // Return user data (no tokens in body)
-  sendSuccess(res, 'Login successful', { user: result.user });
+  // Return user data with needsOnboarding flag
+  sendSuccess(res, 'Login successful', {
+    user: result.user,
+    needsOnboarding: result.needsOnboarding, 
+  });
 });
+
+
 
 /**
  * @desc    google login
@@ -61,6 +70,8 @@ export const login = asyncHandler(async (req: Request, res: Response) => {
 export const googleLogin = passport.authenticate('google', {
   scope: ['profile', 'email'],
 });
+
+
 
 /**
  * @desc    google webhook
