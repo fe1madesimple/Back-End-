@@ -183,10 +183,14 @@ class AuthService {
     const accessToken = this.generateAccessToken(tokenPayload);
     const refreshToken = this.generateRefreshToken(tokenPayload);
 
+    // Check if user needs onboarding
+    const needsOnboarding = !user.hasCompletedOnboarding;
+
     return {
       user: this.formatUserResponse(user),
       accessToken,
       refreshToken,
+      needsOnboarding,
     };
   }
 
