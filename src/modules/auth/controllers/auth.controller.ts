@@ -81,6 +81,7 @@ export const googleLogin = passport.authenticate('google', {
 export const googleCallback = [
   passport.authenticate('google', { session: false }),
   asyncHandler(async (req: Request, res: Response) => {
+    
     const result = req.user as AuthServiceResponse;
 
     setAuthCookies(res, result.accessToken, result.refreshToken);

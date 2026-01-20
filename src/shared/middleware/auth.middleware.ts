@@ -3,12 +3,31 @@ import jwt from 'jsonwebtoken';
 import { UnauthorizedError } from '@/utils/errors';
 import authService from '../../modules/auth/services/auth.service';
 import { setAuthCookies } from '@/utils/cookie';
-import { TokenPayload } from '../../modules/auth/interfaces/auth.interfaces';
+import { AuthResponse, AuthServiceResponse, TokenPayload } from '../../modules/auth/interfaces/auth.interfaces';
 
 /**
  * Protect routes - Verify access token
  * If expired, try to refresh using refresh token
  */
+
+
+function formattedUser(user: AuthResponse["user"]): AuthServiceResponse {
+
+  return {
+    user: {
+      id: user.id,
+      email: user.email,
+      firstName: user.firstName,
+      lastName: user.lastName,
+      role: user.role,
+      profileColor: user.profileColor,
+      isEmailVerified: user.isEmailVerified,
+    },
+    accessToken: '',
+    refreshToken: '',
+    needsOnboarding: false
+  };
+}
 
 
 export const protect = async (req: Request, res: Response, next: NextFunction) => {
@@ -20,17 +39,34 @@ export const protect = async (req: Request, res: Response, next: NextFunction) =
     if (!accessToken) {
       throw new UnauthorizedError('Access token not found. Please login.');
     }
-
+   
     try {
       // 2. Try to verify access token
       const decoded = jwt.verify(accessToken, process.env.JWT_SECRET!) as TokenPayload;
 
       // 3. Get user and attach to request
       const user = await authService.getCurrentUser(decoded.userId);
-      req.user = user;
+
+      const formattedUser =  {
+      id: user.id,
+      email: user.email,
+      firstName: user.firstName,
+      lastName: user.lastName,
+      role: user.role,
+      profileColor: user.profileColor,
+      isEmailVerified: user.isEmailVerified,
+      }
+      
+      req.user = {
+        user: formattedUser,
+        accessToken: "",
+        refreshToken: ""
+      };
 
       return next(); // Token valid, continue
     } catch (error: any) {
+
+
       // 4. Access token invalid/expired
       if (error.name === 'TokenExpiredError' && refreshToken) {
         // Access token expired, but we have refresh token
@@ -48,6 +84,8 @@ export const protect = async (req: Request, res: Response, next: NextFunction) =
             process.env.JWT_SECRET!
           ) as TokenPayload;
           const user = await authService.getCurrentUser(decoded.userId);
+
+
           req.user = user;
 
           return next(); // Tokens refreshed

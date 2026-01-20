@@ -598,8 +598,6 @@ userRouter.post('/onboarding/skip', protect, skipOnboarding);
  */
 userRouter.get('/onboarding/status', protect, getOnboardingStatus);
 
-
-
 /**
  * @swagger
  * /api/v1/users/data/export:
@@ -796,6 +794,5 @@ userRouter.put('/password', protect, validate(changePasswordSchema), changePassw
  *         description: Incorrect password
  */
 userRouter.delete('/account', protect, validate(deleteAccountSchema), deleteAccount);
-
 
 export default userRouter
