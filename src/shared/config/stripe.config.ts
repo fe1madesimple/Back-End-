@@ -5,12 +5,12 @@ if (!process.env.STRIPE_SECRET_KEY) {
 }
 
 export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
-  apiVersion: '2024-12-18.acacia', // Use latest API version
+  apiVersion: '2025-12-15.clover', // Use latest API version
   typescript: true,
 });
 
 // Stripe Price IDs (create these in Stripe Dashboard)
 export const STRIPE_PRICE_IDS = {
   MONTHLY: process.env.STRIPE_MONTHLY_PRICE_ID!,
-  // ANNUAL: process.env.STRIPE_ANNUAL_PRICE_ID!, // If you add annual later
+  WEBHOOK_SECRET: process.env.STRIPE_WEBHOOK_SECRET!,
 };
