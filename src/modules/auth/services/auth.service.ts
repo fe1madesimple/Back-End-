@@ -77,14 +77,14 @@ class AuthService {
    */
   private async createTrialSubscription(userId: string) {
     const trialEndDate = new Date();
-    trialEndDate.setDate(trialEndDate.getDate() + 7); 
+    trialEndDate.setDate(trialEndDate.getDate() + 7);
 
     return prisma.subscription.create({
       data: {
         userId,
         status: 'TRIAL',
-        startDate: new Date(),
-        endDate: trialEndDate,
+        currentPeriodStart: new Date(), 
+        currentPeriodEnd: trialEndDate, 
         trialEndsAt: trialEndDate,
       },
     });
@@ -124,7 +124,6 @@ class AuthService {
       },
     });
 
-    
     // TODO: Send verification email with 4-digit code
     console.log('[EMAIL PENDING] Verification code:', emailVerificationCode);
 
@@ -219,7 +218,7 @@ class AuthService {
           lastName: family_name,
           googleId,
           role: 'STUDENT',
-          isEmailVerified: true, 
+          isEmailVerified: true,
         },
       });
 
