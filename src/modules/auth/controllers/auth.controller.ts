@@ -56,7 +56,7 @@ export const login = asyncHandler(async (req: Request, res: Response) => {
   // Return user data with needsOnboarding flag
   sendSuccess(res, 'Login successful', {
     user: result.user,
-    needsOnboarding: result.needsOnboarding, 
+    needsOnboarding: result.needsOnBoarding, 
   });
 });
 
@@ -87,7 +87,7 @@ export const googleCallback = [
     setAuthCookies(res, result.accessToken, result.refreshToken);
 
     // Redirect based on onboarding status
-    if (result.needsOnboarding) {
+    if (result.needsOnBoarding) {
       res.redirect(`${process.env.FRONTEND_URL}/onboarding`);
     } else {
       res.redirect(`${process.env.FRONTEND_URL}/dashboard`);
@@ -144,7 +144,7 @@ export const verifyEmail = asyncHandler(async (req: Request, res: Response) => {
   // Return success response
   sendSuccess(res, 'Email verified successfully', {
     user: result.user,
-    needsOnboarding: result.needsOnboarding,
+    needsOnboarding: result.needsOnBoarding,
   });
 });
 
