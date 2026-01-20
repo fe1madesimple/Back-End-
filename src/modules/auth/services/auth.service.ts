@@ -77,7 +77,7 @@ class AuthService {
    */
   private async createTrialSubscription(userId: string) {
     const trialEndDate = new Date();
-    trialEndDate.setDate(trialEndDate.getDate() + 7); // 7 days trial
+    trialEndDate.setDate(trialEndDate.getDate() + 7); 
 
     return prisma.subscription.create({
       data: {
@@ -124,8 +124,7 @@ class AuthService {
       },
     });
 
-    await this.createTrialSubscription(user.id);
-
+    
     // TODO: Send verification email with 4-digit code
     console.log('[EMAIL PENDING] Verification code:', emailVerificationCode);
 
