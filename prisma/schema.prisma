@@ -173,6 +173,8 @@ model ExamSitting {
   @@index([isActive])
   @@map("exam_sittings")
 }
+
+
 enum SubscriptionStatus {
   TRIAL
   ACTIVE
@@ -180,6 +182,7 @@ enum SubscriptionStatus {
   CANCELLED
   SUSPENDED
 }
+
 
 enum PlanType {
   MONTHLY
@@ -194,7 +197,7 @@ enum PaymentStatus {
 }
 
 // ============================================
-// CONTENT HIERARCHY
+// CONTENT HIERARCHY 
 // ============================================
 
 model Subject {
