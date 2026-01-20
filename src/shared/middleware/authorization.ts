@@ -21,7 +21,7 @@ export const requireRole = (...roles: UserRole[]) => {
 
     req.user
 
-    if (roles.includes(req.user.role as UserRole)) {
+    if (roles.includes(req.user.user.role as UserRole)) {
       next();
     } else {
       throw new ForbiddenError(`Access denied. Required role: ${roles.join(' or ')}`);
