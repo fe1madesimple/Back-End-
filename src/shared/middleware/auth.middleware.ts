@@ -25,7 +25,7 @@ function formattedUser(user: AuthResponse["user"]): AuthServiceResponse {
     },
     accessToken: '',
     refreshToken: '',
-    needsOnboarding: false
+    needsOnBoarding: false,
   };
 }
 
@@ -47,21 +47,8 @@ export const protect = async (req: Request, res: Response, next: NextFunction) =
       // 3. Get user and attach to request
       const user = await authService.getCurrentUser(decoded.userId);
 
-      const formattedUser =  {
-      id: user.id,
-      email: user.email,
-      firstName: user.firstName,
-      lastName: user.lastName,
-      role: user.role,
-      profileColor: user.profileColor,
-      isEmailVerified: user.isEmailVerified,
-      }
-      
-      req.user = {
-        user: formattedUser,
-        accessToken: "",
-        refreshToken: ""
-      };
+
+      req.user = formattedUser(user)
 
       return next(); // Token valid, continue
     } catch (error: any) {
@@ -86,7 +73,7 @@ export const protect = async (req: Request, res: Response, next: NextFunction) =
           const user = await authService.getCurrentUser(decoded.userId);
 
 
-          req.user = user;
+          req.user = formattedUser(user);
 
           return next(); // Tokens refreshed
         } catch (refreshError) {
@@ -121,7 +108,7 @@ export const optionalAuth = async (req: Request, _res: Response, next: NextFunct
     try {
       const decoded = jwt.verify(accessToken, process.env.JWT_SECRET!) as TokenPayload;
       const user = await authService.getCurrentUser(decoded.userId);
-      req.user = user;
+      req.user = formattedUser(user);
     } catch (error) {
         // Token invalid, continue as guest (don't throw error)
         

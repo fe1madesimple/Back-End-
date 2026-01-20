@@ -15,6 +15,7 @@ declare global {
       };
       accessToken: string;
       refreshToken: string;
+      needsOnBoarding: boolean
     }
 
     interface Request {
