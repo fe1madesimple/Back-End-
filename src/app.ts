@@ -106,6 +106,31 @@ const createApp = (): Application => {
   // ============================================
   app.use(requestLogger);
 
+/**
+ * @swagger
+ * /:
+ *   get:
+ *     summary: API Welcome
+ *     description: Welcome message and API information
+ *     tags: [General]
+ *     responses:
+ *       200:
+ *         description: API information
+ */
+app.get('/', (_req, res) => {
+  res.status(200).json({
+    success: true,
+    message: 'Welcome to FE-1 Made Simple API',
+    version: '1.0.0',
+    documentation: '/api-docs',
+    health: '/health',
+    environment: process.env.NODE_ENV || 'development',
+  });
+});
+
+logger.info('Root endpoint registered at /');
+
+
   // ============================================
   // HEALTH CHECK ENDPOINT
   // ============================================
