@@ -95,6 +95,7 @@ enum UserRole {
 // SUBSCRIPTION & PAYMENTS
 // ============================================
 
+
 model Subscription {
   id                        String             @id @default(cuid())
   userId                    String             @unique
@@ -103,13 +104,14 @@ model Subscription {
   status                    SubscriptionStatus
   planType                  PlanType?          // Nullable for TRIAL
   
-  // Paystack
-  paystackCustomerCode      String?
-  paystackSubscriptionCode  String?            @unique
+  // Stripe fields
+  stripeCustomerId          String?            // Stripe Customer ID
+  stripeSubscriptionId      String?            @unique
+  stripePriceId             String?            // Price ID for the plan
   
   // Dates
-  startDate                 DateTime
-  endDate                   DateTime
+  currentPeriodStart        DateTime?
+  currentPeriodEnd          DateTime?
   trialEndsAt               DateTime?
   cancelledAt               DateTime?
   
@@ -121,9 +123,37 @@ model Subscription {
   payments                  Payment[]
   
   @@index([status])
-  @@index([endDate])
-  @@index([paystackSubscriptionCode])
+  @@index([currentPeriodEnd])
+  @@index([stripeSubscriptionId])
   @@map("subscriptions")
+}
+
+model Payment {
+  id                  String   @id @default(cuid())
+  userId              String
+  user                User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  subscriptionId      String
+  subscription        Subscription @relation(fields: [subscriptionId], references: [id], onDelete: Cascade)
+  
+  amount              Int      // In cents 
+  currency            String   @default("EUR")
+  status              PaymentStatus
+  
+  // Stripe fields
+  stripePaymentIntentId   String   @unique
+  stripeInvoiceId         String?
+  paymentMethod           String?  // card, sepa_debit, etc.
+  metadata                Json?    // Store extra Stripe data
+  
+  // Timestamps
+  createdAt           DateTime @default(now())
+  
+  @@index([userId])
+  @@index([subscriptionId])
+  @@index([status])
+  @@index([stripePaymentIntentId])
+  @@index([createdAt])
+  @@map("payments")
 }
 
 
@@ -156,32 +186,6 @@ enum PlanType {
   ANNUAL
 }
 
-model Payment {
-  id                  String   @id @default(cuid())
-  userId              String
-  user                User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  subscriptionId      String
-  subscription        Subscription @relation(fields: [subscriptionId], references: [id], onDelete: Cascade)
-  
-  amount              Int      // In kobo (Paystack uses kobo)
-  currency            String   @default("NGN")
-  status              PaymentStatus
-  
-  // Paystack
-  paystackReference   String   @unique
-  paymentMethod       String?  // CARD, BANK_TRANSFER, etc.
-  metadata            Json?    // Store extra Paystack data
-  
-  // Timestamps
-  createdAt           DateTime @default(now())
-  
-  @@index([userId])
-  @@index([subscriptionId])
-  @@index([status])
-  @@index([paystackReference])
-  @@index([createdAt])
-  @@map("payments")
-}
 
 enum PaymentStatus {
   SUCCESS
