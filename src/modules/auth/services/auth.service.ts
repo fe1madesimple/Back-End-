@@ -139,13 +139,13 @@ class AuthService {
 
     const accessToken = this.generateAccessToken(tokenPayload);
     const refreshToken = this.generateRefreshToken(tokenPayload);
-    const needsOnboarding = true;
+    const needsOnBoarding = true;
 
     return {
       user: this.formatUserResponse(user),
       accessToken,
       refreshToken,
-      needsOnboarding,
+      needsOnBoarding,
     };
   }
   /**
@@ -187,13 +187,13 @@ class AuthService {
     const refreshToken = this.generateRefreshToken(tokenPayload);
 
     // Check if user needs onboarding
-    const needsOnboarding = !user.hasCompletedOnboarding;
+    const needsOnBoarding = !user.hasCompletedOnboarding;
 
     return {
       user: this.formatUserResponse(user),
       accessToken,
       refreshToken,
-      needsOnboarding,
+      needsOnBoarding,
     };
   }
 
@@ -256,13 +256,13 @@ class AuthService {
     // Check if user needs onboarding
     // New OAuth users ALWAYS need onboarding
     // Existing users only if they haven't completed it
-    const needsOnboarding = isNewUser || !user.hasCompletedOnboarding;
+    const needsOnBoarding = isNewUser || !user.hasCompletedOnboarding;
 
     return {
       user: this.formatUserResponse(user),
       accessToken,
       refreshToken,
-      needsOnboarding,
+      needsOnBoarding,
     };
   }
 
@@ -440,13 +440,13 @@ class AuthService {
     const refreshToken = this.generateRefreshToken(tokenPayload);
 
     // 9. New users ALWAYS need onboarding after email verification
-    const needsOnboarding = true;
+    const needsOnBoarding = true;
 
     return {
       user: this.formatUserResponse(user),
       accessToken,
       refreshToken,
-      needsOnboarding,
+      needsOnBoarding,
     };
   }
 
