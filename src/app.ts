@@ -14,6 +14,7 @@ import { swaggerSpec } from './swagger/config';
 import authRouter from './modules/auth/routes/auth.routes';
 import examRouter from './modules/exam/routes/exam.routes';
 import userRouter from './modules/user/routes/user.routes';
+import subscriptionRouter from './modules/subscription/routes/subscription.routes';
 import { config } from 'dotenv';
 import { configureGoogleStrategy } from './modules/auth/strategies/google.strategy';
 import passport from 'passport'
@@ -202,6 +203,8 @@ logger.info('Root endpoint registered at /');
   app.use('/api/v1/exams', examRouter);
 
   app.use('/api/v1/users', userRouter);
+
+  app.use('/api/v1/subscription', subscriptionRouter);
 
   app.use(notFoundHandler);
 

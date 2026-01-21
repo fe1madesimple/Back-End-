@@ -39,3 +39,17 @@ export interface ISubscriptionResponse {
   createdAt: Date;
   updatedAt: Date;
 }
+
+export enum StripeWebhookEvent {
+  CHECKOUT_SESSION_COMPLETED = 'checkout.session.completed',
+  CUSTOMER_SUBSCRIPTION_CREATED = 'customer.subscription.created',
+  CUSTOMER_SUBSCRIPTION_UPDATED = 'customer.subscription.updated',
+  CUSTOMER_SUBSCRIPTION_DELETED = 'customer.subscription.deleted',
+  INVOICE_PAYMENT_SUCCEEDED = 'invoice.payment_succeeded',
+  INVOICE_PAYMENT_FAILED = 'invoice.payment_failed',
+}
+
+export interface IWebhookResponse {
+  received: boolean;
+  event: string;
+}
