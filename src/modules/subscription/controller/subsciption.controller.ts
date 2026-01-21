@@ -128,4 +128,17 @@ export class SubscriptionController {
 
     return sendSuccess(res, 'Subscription resumed successfully');
   });
+
+  /**
+   * @route   GET /api/v1/subscription/preview-invoice
+   * @desc    Preview upcoming invoice
+   * @access  Private
+   */
+  previewInvoice = asyncHandler(async (req: Request, res: Response) => {
+    const userId = req.user!.user.id;
+
+    const invoice = await subscriptionService.previewInvoice(userId);
+
+    return sendSuccess(res, 'Invoice preview retrieved', invoice);
+  });
 }
