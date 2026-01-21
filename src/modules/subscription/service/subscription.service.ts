@@ -162,4 +162,18 @@ export class SubscriptionService {
       throw new AppError('Webhook processing failed', 500);
     }
   }
+
+  /**
+   * Handle checkout.session.completed event
+   */
+  private async handleCheckoutSessionCompleted(session: Stripe.Checkout.Session) {
+    const userId = session.metadata?.userId;
+
+    if (!userId) {
+      console.error('No userId in checkout session metadata');
+      return;
+    }
+
+    console.log(`✅ Checkout completed for user: ${userId}`);
+  }
 }
