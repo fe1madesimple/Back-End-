@@ -429,4 +429,28 @@ export class SubscriptionService {
       },
     };
   }
+
+  /**
+   * Generate Stripe Customer Portal URL
+   */
+  async createCustomerPortalSession(userId: string): Promise<{ url: string }> {
+    const subscription = await prisma.subscription.findUnique({
+      where: { userId },
+    });
+
+    if (!subscription) {
+      throw new AppError('No subscription found', 404);
+    }
+
+    if (!subscription.stripeCustomerId) {
+      throw new AppError('No Stripe customer found', 400);
+    }
+
+    const session = await stripe.billingPortal.sessions.create({
+      customer: subscription.stripeCustomerId,
+      return_url: `${process.env.FRONTEND_URL}/subscription`,
+    });
+
+    return { url: session.url };
+  }
 }
