@@ -176,4 +176,31 @@ export class SubscriptionService {
 
     console.log(`✅ Checkout completed for user: ${userId}`);
   }
+
+  /**
+   * Handle customer.subscription.created event
+   */
+  private async handleSubscriptionCreated(subscription: Stripe.Subscription) {
+    const userId = subscription.metadata?.userId;
+
+    if (!userId) {
+      console.error('No userId in subscription metadata');
+      return;
+    }
+
+    // Update subscription in database
+    await prisma.subscription.update({
+      where: { userId },
+      data: {
+        stripeSubscriptionId: subscription.id,
+        stripePriceId: subscription.items.data[0].price.id,
+        status: 'ACTIVE',
+        planType: 'MONTHLY',
+        currentPeriodStart: new Date(subscription.current_period_start * 1000),
+        currentPeriodEnd: new Date(subscription.current_period_end * 1000),
+      },
+    });
+
+    console.log(`✅ Subscription created for user: ${userId}`);
+  }
 }
