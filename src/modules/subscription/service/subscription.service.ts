@@ -4,6 +4,7 @@ import { stripe } from '@/shared/config/stripe.config';
 import {
   ICreateCheckoutSessionRequest,
   ICheckoutSessionResponse,
+  StripeWebhookEvent,IWebhookResponse
 } from '../interface/subscription.interface';
 
 import { AppError } from '@/shared/utils';

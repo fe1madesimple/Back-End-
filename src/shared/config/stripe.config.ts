@@ -9,8 +9,8 @@ export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
   typescript: true,
 });
 
-// Stripe Price IDs (create these in Stripe Dashboard)
-export const STRIPE_PRICE_IDS = {
-  MONTHLY: process.env.STRIPE_MONTHLY_PRICE_ID!,
+// Stripe Price IDs 
+export const STRIPE_CONFIG = {
+  MONTHLY_PRICE_ID: process.env.STRIPE_MONTHLY_PRICE_ID!,
   WEBHOOK_SECRET: process.env.STRIPE_WEBHOOK_SECRET!,
 };
