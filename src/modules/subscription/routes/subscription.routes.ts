@@ -200,6 +200,95 @@ subscriptionRouter.post(
 );
 
 
+/**
+ * @swagger
+ * /api/v1/subscription/billing-history:
+ *   get:
+ *     summary: Get billing history
+ *     description: Retrieves the user's payment history
+ *     tags: [Subscription]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: query
+ *         name: page
+ *         schema:
+ *           type: integer
+ *           default: 1
+ *       - in: query
+ *         name: limit
+ *         schema:
+ *           type: integer
+ *           default: 10
+ *     responses:
+ *       200:
+ *         description: Billing history retrieved successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Billing history retrieved successfully
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     payments:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           id:
+ *                             type: string
+ *                           userId:
+ *                             type: string
+ *                           subscriptionId:
+ *                             type: string
+ *                           amount:
+ *                             type: integer
+ *                             example: 999
+ *                           currency:
+ *                             type: string
+ *                             example: EUR
+ *                           status:
+ *                             type: string
+ *                             enum: [SUCCESS, FAILED, PENDING]
+ *                           stripePaymentIntentId:
+ *                             type: string
+ *                           stripeInvoiceId:
+ *                             type: string
+ *                           paymentMethod:
+ *                             type: string
+ *                           metadata:
+ *                             type: object
+ *                           createdAt:
+ *                             type: string
+ *                             format: date-time
+ *                     pagination:
+ *                       type: object
+ *                       properties:
+ *                         total:
+ *                           type: integer
+ *                         page:
+ *                           type: integer
+ *                         limit:
+ *                           type: integer
+ *                         totalPages:
+ *                           type: integer
+ *       404:
+ *         description: No subscription found
+ */
+subscriptionRouter.get(
+  '/billing-history',
+  protect,
+  subscriptionController.getBillingHistory
+);
+
+
 
 
 export default subscriptionRouter
