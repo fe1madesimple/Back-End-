@@ -366,4 +366,66 @@ subscriptionRouter.post(
   subscriptionController.resumeSubscription
 );
 
+
+/**
+ * @swagger
+ * /api/v1/subscription/preview-invoice:
+ *   get:
+ *     summary: Preview upcoming invoice
+ *     description: Shows what the user will be charged on their next billing date
+ *     tags: [Subscription]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Invoice preview retrieved
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Invoice preview retrieved
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     amount:
+ *                       type: integer
+ *                       example: 999
+ *                     currency:
+ *                       type: string
+ *                       example: EUR
+ *                     billingDate:
+ *                       type: string
+ *                       format: date-time
+ *                     items:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           description:
+ *                             type: string
+ *                           amount:
+ *                             type: integer
+ *                           quantity:
+ *                             type: integer
+ *                     tax:
+ *                       type: integer
+ *                     total:
+ *                       type: integer
+ *       400:
+ *         description: No active subscription
+ *       404:
+ *         description: No subscription found
+ */
+subscriptionRouter.get(
+  '/preview-invoice',
+  protect,
+  subscriptionController.previewInvoice
+);
+
 export default subscriptionRouter
