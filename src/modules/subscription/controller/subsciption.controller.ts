@@ -102,4 +102,17 @@ export class SubscriptionController {
 
     return sendSuccess(res, 'Billing history retrieved successfully', result);
   });
+
+  /**
+   * @route   GET /api/v1/subscription/portal
+   * @desc    Generate Stripe Customer Portal URL
+   * @access  Private
+   */
+  getCustomerPortal = asyncHandler(async (req: Request, res: Response) => {
+    const userId = req.user!.user.id;
+
+    const result = await subscriptionService.createCustomerPortalSession(userId);
+
+    return sendSuccess(res, 'Customer portal URL generated', result);
+  });
 }
