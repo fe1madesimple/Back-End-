@@ -221,7 +221,7 @@ class EmailService {
 </body>
 </html>`;
 
-    await this.send(email, 'Welcome to FE-1 Made Simple - Your 7-Day Trial Has Started! 🎉', html);
+    await this.send(email, 'Welcome to FE-1 Made Simple - Your 7-Day Trial Has Started!', html);
   }
 }
 

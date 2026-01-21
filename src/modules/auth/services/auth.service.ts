@@ -224,71 +224,7 @@ class AuthService {
   /**
    * GOOGLE OAUTH LOGIN/REGISTER
    */
-  async googleAuth(profile: any): Promise<AuthServiceResponse> {
-    const { email, given_name, family_name, sub: googleId } = profile;
-
-    // Check if user exists
-    let user = await prisma.user.findUnique({
-      where: { email: email.toLowerCase() },
-    });
-
-    let isNewUser = false;
-
-    // If user doesn't exist, create new user
-    if (!user) {
-      isNewUser = true;
-      user = await prisma.user.create({
-        data: {
-          email: email.toLowerCase(),
-          firstName: given_name,
-          lastName: family_name,
-          googleId,
-          role: 'STUDENT',
-          isEmailVerified: true,
-        },
-      });
-
-      // Create 7-day trial subscription
-      await this.createTrialSubscription(user.id);
-    } else if (!user.googleId) {
-      // Link Google account to existing user
-      user = await prisma.user.update({
-        where: { id: user.id },
-        data: {
-          googleId,
-          isEmailVerified: true,
-        },
-      });
-    }
-
-    // Update last login
-    await prisma.user.update({
-      where: { id: user.id },
-      data: { lastLoginAt: new Date() },
-    });
-
-    // Generate tokens
-    const tokenPayload: TokenPayload = {
-      userId: user.id,
-      email: user.email,
-      role: user.role,
-    };
-
-    const accessToken = this.generateAccessToken(tokenPayload);
-    const refreshToken = this.generateRefreshToken(tokenPayload);
-
-    // Check if user needs onboarding
-    // New OAuth users ALWAYS need onboarding
-    // Existing users only if they haven't completed it
-    const needsOnBoarding = isNewUser || !user.hasCompletedOnboarding;
-
-    return {
-      user: this.formatUserResponse(user),
-      accessToken,
-      refreshToken,
-      needsOnBoarding,
-    };
-  }
+  
 
   /**
    * FORGOT PASSWORD
@@ -363,7 +299,10 @@ class AuthService {
 
     // Use transaction to prevent race conditions
     const user = await prisma.$transaction(async (tx) => {
+
+
       // 1. Find user with row-level lock (prevents race conditions)
+
       const foundUser = await tx.user.findFirst({
         where: {
           email: email.toLowerCase(),
@@ -503,6 +442,7 @@ class AuthService {
       subscription: subscriptionInfo,
     };
   }
+
 
   /**
    * REFRESH TOKEN

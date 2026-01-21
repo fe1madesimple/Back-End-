@@ -229,7 +229,189 @@ authRouter.post("/register", validate(registerSchema), register)
 
 
 
-
+/**
+ * @swagger
+ * /api/v1/auth/login:
+ *   post:
+ *     summary: Login with email and password
+ *     tags: [Authentication]
+ *     description: |
+ *       Authenticate user with email and password.
+ *       
+ *       **Flow:**
+ *       1. User submits email + password
+ *       2. Server validates credentials
+ *       3. Server generates JWT tokens
+ *       4. Server sets httpOnly cookies
+ *       5. Server returns user data + `needsOnboarding` flag + subscription info
+ *       
+ *       **Frontend should check `needsOnboarding`:**
+ *       ```javascript
+ *       const response = await fetch('/api/v1/auth/login', {
+ *         method: 'POST',
+ *         credentials: 'include',
+ *         body: JSON.stringify({ email, password })
+ *       });
+ *       
+ *       const data = await response.json();
+ *       
+ *       if (data.data.needsOnboarding) {
+ *         router.push('/onboarding');
+ *       } else {
+ *         router.push('/dashboard');
+ *       }
+ *       
+ *       // Check subscription status
+ *       if (data.data.subscription?.status === 'TRIAL') {
+ *         showBanner(`${data.data.subscription.daysRemaining} days left in trial`);
+ *       }
+ *       ```
+ *       
+ *       **When `needsOnboarding` is true:**
+ *       - User hasn't completed onboarding yet
+ *       - Redirect to `/onboarding`
+ *       
+ *       **When `needsOnboarding` is false:**
+ *       - User has completed onboarding
+ *       - Redirect to `/dashboard`
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - email
+ *               - password
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 format: email
+ *                 example: user@example.com
+ *               password:
+ *                 type: string
+ *                 format: password
+ *                 example: MyPassword123
+ *     responses:
+ *       200:
+ *         description: Login successful
+ *         headers:
+ *           Set-Cookie:
+ *             description: JWT tokens stored in httpOnly cookies
+ *             schema:
+ *               type: string
+ *               example: accessToken=eyJhbGc...; HttpOnly; Secure; SameSite=Strict
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Login successful
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     user:
+ *                       $ref: '#/components/schemas/UserProfile'
+ *                     needsOnboarding:
+ *                       type: boolean
+ *                       example: false
+ *                       description: Whether user needs to complete onboarding
+ *                     subscription:
+ *                       type: object
+ *                       nullable: true
+ *                       properties:
+ *                         status:
+ *                           type: string
+ *                           enum: [TRIAL, ACTIVE, EXPIRED, CANCELLED, SUSPENDED]
+ *                         planType:
+ *                           type: string
+ *                           enum: [MONTHLY, ANNUAL]
+ *                           nullable: true
+ *                         daysRemaining:
+ *                           type: integer
+ *                           description: Days until subscription/trial ends
+ *                         trialEndsAt:
+ *                           type: string
+ *                           format: date-time
+ *                           nullable: true
+ *                         currentPeriodEnd:
+ *                           type: string
+ *                           format: date-time
+ *                           nullable: true
+ *             examples:
+ *               returningUserWithSubscription:
+ *                 summary: Returning user with active subscription
+ *                 value:
+ *                   success: true
+ *                   message: Login successful
+ *                   data:
+ *                     user:
+ *                       id: clp_user_123
+ *                       email: user@example.com
+ *                       firstName: John
+ *                       lastName: Doe
+ *                       role: STUDENT
+ *                       profileColor: "#3B82F6"
+ *                       isEmailVerified: true
+ *                     needsOnboarding: false
+ *                     subscription:
+ *                       status: ACTIVE
+ *                       planType: MONTHLY
+ *                       daysRemaining: 25
+ *                       trialEndsAt: null
+ *                       currentPeriodEnd: "2025-02-21T10:00:00.000Z"
+ *               userOnTrial:
+ *                 summary: User on 7-day trial
+ *                 value:
+ *                   success: true
+ *                   message: Login successful
+ *                   data:
+ *                     user:
+ *                       id: clp_user_456
+ *                       email: newuser@example.com
+ *                       firstName: Jane
+ *                       lastName: Smith
+ *                       role: STUDENT
+ *                       profileColor: "#3B82F6"
+ *                       isEmailVerified: true
+ *                     needsOnboarding: false
+ *                     subscription:
+ *                       status: TRIAL
+ *                       planType: null
+ *                       daysRemaining: 5
+ *                       trialEndsAt: "2025-01-26T10:00:00.000Z"
+ *                       currentPeriodEnd: "2025-01-26T10:00:00.000Z"
+ *               firstTimeUser:
+ *                 summary: First-time user (needs onboarding)
+ *                 value:
+ *                   success: true
+ *                   message: Login successful
+ *                   data:
+ *                     user:
+ *                       id: clp_user_789
+ *                       email: brandnew@example.com
+ *                       firstName: Bob
+ *                       lastName: Johnson
+ *                       role: STUDENT
+ *                       profileColor: "#3B82F6"
+ *                       isEmailVerified: true
+ *                     needsOnboarding: true
+ *                     subscription: null
+ *       401:
+ *         description: Invalid credentials
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/ErrorResponse'
+ *             example:
+ *               success: false
+ *               message: Invalid email or password
+ */
 authRouter.post("/login", validate(loginSchema), login)
 
 
