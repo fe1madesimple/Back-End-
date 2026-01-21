@@ -360,4 +360,38 @@ export class SubscriptionService {
 
     return subscription;
   }
+
+  /**
+   * Cancel user's subscription
+   */
+  async cancelSubscription(userId: string): Promise<void> {
+    const subscription = await prisma.subscription.findUnique({
+      where: { userId },
+    });
+
+    if (!subscription) {
+      throw new AppError('No subscription found', 404);
+    }
+
+    if (subscription.status === 'CANCELLED') {
+      throw new AppError('Subscription is already cancelled', 400);
+    }
+
+    if (!subscription.stripeSubscriptionId) {
+      throw new AppError('No active Stripe subscription', 400);
+    }
+
+    // Cancel subscription in Stripe (at period end)
+    await stripe.subscriptions.update(subscription.stripeSubscriptionId, {
+      cancel_at_period_end: true,
+    });
+
+    // Update database
+    await prisma.subscription.update({
+      where: { userId },
+      data: {
+        cancelledAt: new Date(),
+      },
+    });
+  }
 }

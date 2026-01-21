@@ -113,4 +113,67 @@ subscriptionRouter.post(
   subscriptionController.handleWebhook
 );
 
+
+/**
+ * @swagger
+ * /api/v1/subscription/status:
+ *   get:
+ *     summary: Get current subscription status
+ *     description: Retrieves the authenticated user's subscription details
+ *     tags: [Subscription]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Subscription retrieved successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Subscription retrieved successfully
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     subscription:
+ *                       type: object
+ *                       properties:
+ *                         id:
+ *                           type: string
+ *                         status:
+ *                           type: string
+ *                           enum: [TRIAL, ACTIVE, EXPIRED, CANCELLED, SUSPENDED]
+ *                         planType:
+ *                           type: string
+ *                           enum: [MONTHLY, ANNUAL]
+ *                         currentPeriodStart:
+ *                           type: string
+ *                           format: date-time
+ *                         currentPeriodEnd:
+ *                           type: string
+ *                           format: date-time
+ *                         daysRemaining:
+ *                           type: integer
+ *                         willRenew:
+ *                           type: boolean
+ *                         cancelledAt:
+ *                           type: string
+ *                           format: date-time
+ *                           nullable: true
+ *       401:
+ *         description: Unauthorized
+ *       404:
+ *         description: No subscription found
+ */
+subscriptionRouter.get(
+  '/status',
+  protect,
+  subscriptionController.getSubscriptionStatus
+);
+
 export default subscriptionRouter
