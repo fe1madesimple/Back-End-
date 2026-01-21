@@ -535,4 +535,46 @@ export class SubscriptionService {
       total: upcomingInvoice.total,
     };
   }
+
+  /**
+   * Apply coupon to subscription
+   */
+  async applyCoupon(userId: string, couponCode: string) {
+    const subscription = await prisma.subscription.findUnique({
+      where: { userId },
+    });
+
+    if (!subscription) {
+      throw new AppError('No subscription found', 404);
+    }
+
+    if (!subscription.stripeSubscriptionId) {
+      throw new AppError('No active Stripe subscription', 400);
+    }
+
+    // Validate coupon exists in Stripe
+    let coupon;
+    try {
+      coupon = await stripe.coupons.retrieve(couponCode);
+    } catch (error) {
+      throw new AppError('Invalid coupon code', 400);
+    }
+
+    if (!coupon.valid) {
+      throw new AppError('Coupon is not valid or has expired', 400);
+    }
+
+   await stripe.subscriptions.update(subscription.stripeSubscriptionId, {
+     discounts: [{ coupon: couponCode }],
+   });
+
+    return {
+      code: coupon.id,
+      percentOff: coupon.percent_off || null,
+      amountOff: coupon.amount_off || null,
+      currency: coupon.currency?.toUpperCase() || null,
+      duration: coupon.duration,
+      durationInMonths: coupon.duration_in_months || null,
+    };
+  }
 }
