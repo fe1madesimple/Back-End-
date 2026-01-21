@@ -418,70 +418,168 @@ authRouter.post("/login", validate(loginSchema), login)
 
 /**
  * @swagger
- * /api/v1/auth/google/callback:
- *   get:
- *     summary: Google OAuth callback
+ * /api/v1/auth/google/login:
+ *   post:
+ *     summary: Authenticate with Google OAuth
  *     tags: [Authentication]
  *     description: |
- *       Google redirects here after user authorizes.
+ *       Authenticate user via Google OAuth 2.0.
  *       
- *       **Automatic Flow:**
- *       1. Google redirects with auth code
- *       2. Server exchanges code for user profile
- *       3. Server creates user (if new) or finds existing user
- *       4. Server generates JWT tokens
- *       5. Server sets httpOnly cookies
- *       6. **Server checks onboarding status**
- *       7. Server redirects to appropriate page
+ *       **For NEW users (first-time Google login):**
+ *       1. Account is created automatically
+ *       2. Email is auto-verified
+ *       3. 7-day free trial subscription is created
+ *       4. Welcome email with trial details is sent
+ *       5. User is redirected to onboarding
+ *       6. Response includes subscription with 7 days remaining
  *       
- *       **Redirect Logic:**
- *       ```javascript
- *       if (needsOnboarding) {
- *         redirect('/onboarding'); // New user OR incomplete onboarding
- *       } else {
- *         redirect('/dashboard'); // Returning user with completed onboarding
- *       }
- *       ```
+ *       **For EXISTING users (returning users):**
+ *       1. Existing account is linked to Google (if not already linked)
+ *       2. Email is marked as verified (if not already)
+ *       3. No new subscription created (uses existing one)
+ *       4. No welcome email sent
+ *       5. User redirected to dashboard or onboarding (if incomplete)
+ *       6. Response includes existing subscription info
  *       
- *       **When user is redirected to `/onboarding`:**
- *       - New Google sign-up
- *       - Existing user who hasn't completed onboarding
- *       
- *       **When user is redirected to `/dashboard`:**
- *       - Returning user with completed onboarding
- *       
- *       **Frontend handling:**
- *       No fetch needed - automatic redirect.
- *       Just ensure you have `/onboarding` route set up.
- *     parameters:
- *       - in: query
- *         name: code
- *         required: true
- *         schema:
- *           type: string
- *         description: Authorization code from Google (handled by Passport)
- *       - in: query
- *         name: state
- *         schema:
- *           type: string
- *         description: State parameter for CSRF protection
+ *       **Trial Details (New Users Only):**
+ *       - Duration: 7 days
+ *       - Full access to all premium features
+ *       - No credit card required
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - idToken
+ *             properties:
+ *               idToken:
+ *                 type: string
+ *                 description: Google ID token from OAuth flow
+ *                 example: eyJhbGciOiJSUzI1NiIsImtpZCI6IjdlM...
  *     responses:
- *       302:
- *         description: Redirect to onboarding or dashboard
+ *       200:
+ *         description: Google authentication successful
  *         headers:
- *           Location:
- *             description: Redirect URL
- *             schema:
- *               type: string
- *               enum:
- *                 - https://yourdomain.com/onboarding
- *                 - https://yourdomain.com/dashboard
  *           Set-Cookie:
  *             description: JWT tokens stored in httpOnly cookies
  *             schema:
  *               type: string
- *       400:
- *         description: OAuth error (invalid code, etc.)
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Login successful
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     user:
+ *                       $ref: '#/components/schemas/UserProfile'
+ *                     needsOnboarding:
+ *                       type: boolean
+ *                       description: True for new users or users who haven't completed onboarding
+ *                     subscription:
+ *                       type: object
+ *                       nullable: true
+ *                       properties:
+ *                         status:
+ *                           type: string
+ *                           enum: [TRIAL, ACTIVE, EXPIRED, CANCELLED, SUSPENDED]
+ *                         planType:
+ *                           type: string
+ *                           enum: [MONTHLY, ANNUAL]
+ *                           nullable: true
+ *                         daysRemaining:
+ *                           type: integer
+ *                           description: Days until subscription/trial ends
+ *                         trialEndsAt:
+ *                           type: string
+ *                           format: date-time
+ *                           nullable: true
+ *                         currentPeriodEnd:
+ *                           type: string
+ *                           format: date-time
+ *                           nullable: true
+ *             examples:
+ *               newUser:
+ *                 summary: New user (first-time Google login)
+ *                 value:
+ *                   success: true
+ *                   message: Login successful
+ *                   data:
+ *                     user:
+ *                       id: clp_user_123
+ *                       email: newuser@gmail.com
+ *                       firstName: John
+ *                       lastName: Doe
+ *                       role: STUDENT
+ *                       profileColor: "#3B82F6"
+ *                       isEmailVerified: true
+ *                     needsOnboarding: true
+ *                     subscription:
+ *                       status: TRIAL
+ *                       planType: null
+ *                       daysRemaining: 7
+ *                       trialEndsAt: "2025-01-28T10:00:00.000Z"
+ *                       currentPeriodEnd: "2025-01-28T10:00:00.000Z"
+ *               existingUserOnTrial:
+ *                 summary: Existing user on trial
+ *                 value:
+ *                   success: true
+ *                   message: Login successful
+ *                   data:
+ *                     user:
+ *                       id: clp_user_456
+ *                       email: returning@gmail.com
+ *                       firstName: Jane
+ *                       lastName: Smith
+ *                       role: STUDENT
+ *                       profileColor: "#3B82F6"
+ *                       isEmailVerified: true
+ *                     needsOnboarding: false
+ *                     subscription:
+ *                       status: TRIAL
+ *                       planType: null
+ *                       daysRemaining: 3
+ *                       trialEndsAt: "2025-01-24T10:00:00.000Z"
+ *                       currentPeriodEnd: "2025-01-24T10:00:00.000Z"
+ *               existingUserWithSubscription:
+ *                 summary: Existing user with active subscription
+ *                 value:
+ *                   success: true
+ *                   message: Login successful
+ *                   data:
+ *                     user:
+ *                       id: clp_user_789
+ *                       email: premium@gmail.com
+ *                       firstName: Bob
+ *                       lastName: Johnson
+ *                       role: STUDENT
+ *                       profileColor: "#3B82F6"
+ *                       isEmailVerified: true
+ *                     needsOnboarding: false
+ *                     subscription:
+ *                       status: ACTIVE
+ *                       planType: MONTHLY
+ *                       daysRemaining: 20
+ *                       trialEndsAt: null
+ *                       currentPeriodEnd: "2025-02-10T10:00:00.000Z"
+ *       401:
+ *         description: Invalid Google token
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/ErrorResponse'
+ *             example:
+ *               success: false
+ *               message: Invalid Google ID token
  */
 authRouter.get('/google/login', googleLogin);
 
@@ -738,7 +836,6 @@ authRouter.post("/forgot-password", validate(forgotPasswordSchema), forgotPasswo
 authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
 
 
-
 /**
  * @swagger
  * /api/v1/auth/verify-email:
@@ -746,68 +843,18 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
  *     summary: Verify email with 4-digit code
  *     tags: [Authentication]
  *     description: |
- *       Verify user's email address with the 4-digit code sent via email.
+ *       Verify user's email address using the 4-digit code sent during registration.
  *       
- *       **Complete Flow:**
- *       1. User signs up with email/password
- *       2. System sends 4-digit verification code to email
- *       3. User enters code in verification form
- *       4. This endpoint validates the code
- *       5. System marks email as verified
- *       6. System generates JWT tokens
- *       7. System sets httpOnly cookies
- *       8. **System returns `needsOnboarding: true`**
- *       9. Frontend redirects to `/onboarding`
+ *       **What happens on successful verification:**
+ *       1. Email is marked as verified
+ *       2. 7-day free trial subscription is created
+ *       3. Welcome email with trial details is sent
+ *       4. User is redirected to onboarding
  *       
- *       **Security Features:**
- *       - ✅ **Rate limiting**: Max 5 attempts
- *       - ✅ **Account locking**: 15 minutes after 5 failed attempts
- *       - ✅ **Code expiration**: 15 minutes from generation
- *       - ✅ **Transaction safety**: Prevents race conditions
- *       - ✅ **Single-use codes**: Code cleared after successful verification
- *       
- *       **Frontend usage:**
- *       ```javascript
- *       // Verify email page
- *       const handleVerify = async (code) => {
- *         try {
- *           const response = await fetch('/api/v1/auth/verify-email', {
- *             method: 'POST',
- *             credentials: 'include', // Important for cookies
- *             headers: { 'Content-Type': 'application/json' },
- *             body: JSON.stringify({
- *               email: userEmail,
- *               code: code // 4-digit code from user input
- *             })
- *           });
- *       
- *           const data = await response.json();
- *       
- *           if (data.success) {
- *             // Email verified successfully
- *             // Tokens are automatically set in cookies
- *             // Always redirect to onboarding for new users
- *             router.push('/onboarding');
- *           }
- *         } catch (error) {
- *           // Handle errors (invalid code, expired, locked, etc.)
- *           showError(error.message);
- *         }
- *       };
- *       ```
- *       
- *       **Error Handling:**
- *       The endpoint returns specific error messages for different scenarios:
- *       - Invalid code: Shows remaining attempts
- *       - Expired code: Prompts to request new code
- *       - Account locked: Shows time until unlock
- *       - Already verified: Redirects to login
- *       
- *       **After Verification:**
- *       - User is automatically logged in (tokens in cookies)
- *       - `needsOnboarding` is always `true` (new users)
- *       - Welcome email is sent (async, non-blocking)
- *       - User should be redirected to `/onboarding`
+ *       **Trial Details:**
+ *       - Duration: 7 days
+ *       - Full access to all premium features
+ *       - No credit card required
  *     requestBody:
  *       required: true
  *       content:
@@ -822,31 +869,19 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
  *                 type: string
  *                 format: email
  *                 example: user@example.com
- *                 description: Email address used during signup
  *               code:
  *                 type: string
  *                 pattern: '^\d{4}$'
- *                 minLength: 4
- *                 maxLength: 4
  *                 example: "1234"
  *                 description: 4-digit verification code sent to email
- *           examples:
- *             validCode:
- *               summary: Valid verification code
- *               value:
- *                 email: user@example.com
- *                 code: "1234"
  *     responses:
  *       200:
- *         description: Email verified successfully
+ *         description: Email verified successfully, trial started
  *         headers:
  *           Set-Cookie:
  *             description: JWT tokens stored in httpOnly cookies
  *             schema:
  *               type: string
- *               example: |
- *                 accessToken=eyJhbGc...; Path=/; HttpOnly; Secure; SameSite=Strict; Max-Age=900
- *                 refreshToken=eyJhbGc...; Path=/; HttpOnly; Secure; SameSite=Strict; Max-Age=604800
  *         content:
  *           application/json:
  *             schema:
@@ -862,49 +897,54 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
  *                   type: object
  *                   properties:
  *                     user:
- *                       type: object
- *                       properties:
- *                         id:
- *                           type: string
- *                           example: clp_user_123abc
- *                         email:
- *                           type: string
- *                           example: user@example.com
- *                         firstName:
- *                           type: string
- *                           example: John
- *                         lastName:
- *                           type: string
- *                           example: Doe
- *                         role:
- *                           type: string
- *                           enum: [STUDENT, HOST, ADMIN]
- *                           example: STUDENT
- *                         profileColor:
- *                           type: string
- *                           example: "#3B82F6"
- *                         isEmailVerified:
- *                           type: boolean
- *                           example: true
+ *                       $ref: '#/components/schemas/UserProfile'
  *                     needsOnboarding:
  *                       type: boolean
  *                       example: true
- *                       description: Always true after email verification (new users)
+ *                       description: Always true after email verification
+ *                     subscription:
+ *                       type: object
+ *                       properties:
+ *                         status:
+ *                           type: string
+ *                           example: TRIAL
+ *                         planType:
+ *                           type: string
+ *                           nullable: true
+ *                           example: null
+ *                         daysRemaining:
+ *                           type: integer
+ *                           example: 7
+ *                           description: Days left in trial
+ *                         trialEndsAt:
+ *                           type: string
+ *                           format: date-time
+ *                           example: "2025-01-28T10:00:00.000Z"
+ *                         currentPeriodEnd:
+ *                           type: string
+ *                           format: date-time
+ *                           example: "2025-01-28T10:00:00.000Z"
  *             example:
  *               success: true
  *               message: Email verified successfully
  *               data:
  *                 user:
- *                   id: clp_user_789xyz
- *                   email: newuser@example.com
- *                   firstName: Alice
- *                   lastName: Johnson
+ *                   id: clp_user_123
+ *                   email: user@example.com
+ *                   firstName: John
+ *                   lastName: Doe
  *                   role: STUDENT
  *                   profileColor: "#3B82F6"
  *                   isEmailVerified: true
  *                 needsOnboarding: true
+ *                 subscription:
+ *                   status: TRIAL
+ *                   planType: null
+ *                   daysRemaining: 7
+ *                   trialEndsAt: "2025-01-28T10:00:00.000Z"
+ *                   currentPeriodEnd: "2025-01-28T10:00:00.000Z"
  *       400:
- *         description: Validation error or invalid code
+ *         description: Invalid or expired code
  *         content:
  *           application/json:
  *             schema:
@@ -914,47 +954,17 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
  *                 summary: Invalid verification code
  *                 value:
  *                   success: false
- *                   message: Invalid verification code. 4 attempts remaining.
+ *                   message: "Invalid verification code. 4 attempts remaining."
  *               expiredCode:
- *                 summary: Expired verification code
+ *                 summary: Expired code
  *                 value:
  *                   success: false
  *                   message: Verification code has expired. Please request a new one.
  *               alreadyVerified:
- *                 summary: Email already verified
+ *                 summary: Already verified
  *                 value:
  *                   success: false
  *                   message: Email is already verified
- *               invalidEmail:
- *                 summary: Invalid email
- *                 value:
- *                   success: false
- *                   message: Invalid email or verification code
- *               invalidFormat:
- *                 summary: Invalid code format
- *                 value:
- *                   success: false
- *                   message: Validation failed
- *                   errors:
- *                     - field: code
- *                       message: Verification code must be exactly 4 digits
- *       429:
- *         description: Too many failed attempts - Account locked
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/ErrorResponse'
- *             examples:
- *               accountLocked:
- *                 summary: Account locked after 5 failed attempts
- *                 value:
- *                   success: false
- *                   message: Too many failed attempts. Your verification is locked for 15 minutes. Please request a new code.
- *               stillLocked:
- *                 summary: Account still locked
- *                 value:
- *                   success: false
- *                   message: Too many failed attempts. Please try again in 12 minutes or request a new code.
  */
 authRouter.post('/verify-email', validate(verifyEmailSchema), verifyEmail);
 
