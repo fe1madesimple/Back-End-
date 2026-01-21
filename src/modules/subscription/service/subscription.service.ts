@@ -180,11 +180,18 @@ export class SubscriptionService {
   /**
    * Handle customer.subscription.created event
    */
-  private async handleSubscriptionCreated(subscription: Stripe.Subscription) {
+  private async handleSubscriptionCreated(subscription: any) {
     const userId = subscription.metadata?.userId;
 
     if (!userId) {
       console.error('No userId in subscription metadata');
+      return;
+    }
+
+    const priceId = subscription.items.data[0]?.price?.id;
+
+    if (!priceId) {
+      console.error('No price ID in subscription');
       return;
     }
 
@@ -193,11 +200,11 @@ export class SubscriptionService {
       where: { userId },
       data: {
         stripeSubscriptionId: subscription.id,
-        stripePriceId: subscription.items.data[0].price.id,
+        stripePriceId: priceId,
         status: 'ACTIVE',
         planType: 'MONTHLY',
-        currentPeriodStart: new Date(subscription.current_period_start * 1000),
-        currentPeriodEnd: new Date(subscription.current_period_end * 1000),
+        currentPeriodStart: new Date((subscription.current_period_start as number) * 1000),
+        currentPeriodEnd: new Date((subscription.current_period_end as number) * 1000),
       },
     });
 
