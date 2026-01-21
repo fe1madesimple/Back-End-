@@ -71,4 +71,20 @@ export class SubscriptionController {
 
     return sendSuccess(res, 'Subscription retrieved successfully', response);
   });
+
+  /**
+   * @route   POST /api/v1/subscription/cancel
+   * @desc    Cancel user's subscription
+   * @access  Private
+   */
+  cancelSubscription = asyncHandler(async (req: Request, res: Response) => {
+    const userId = req.user!.user.id;
+
+    await subscriptionService.cancelSubscription(userId);
+
+    return sendSuccess(
+      res,
+      'Subscription cancelled successfully. Access continues until period ends.'
+    );
+  });
 }
