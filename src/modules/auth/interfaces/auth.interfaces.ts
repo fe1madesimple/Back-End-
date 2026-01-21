@@ -35,6 +35,7 @@ export interface AuthServiceResponse {
   accessToken: string;
   refreshToken: string;
   needsOnBoarding: boolean;
+  subscription: any
 }
 
 export interface TokenPayload {

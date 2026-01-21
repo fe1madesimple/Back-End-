@@ -491,12 +491,6 @@ export class SubscriptionService {
   /**
    * Preview upcoming invoice
    */
-  /**
-   * Preview upcoming invoice
-   */
-  /**
-   * Preview upcoming invoice
-   */
   async previewInvoice(userId: string) {
     const subscription = await prisma.subscription.findUnique({
       where: { userId },

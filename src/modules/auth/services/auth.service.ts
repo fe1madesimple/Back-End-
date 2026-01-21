@@ -10,17 +10,17 @@ import {
   TokenPayload,
   ForgotPasswordInput,
   ResetPasswordInput,
-    VerifyEmailInput,
-  AuthServiceResponse
+  VerifyEmailInput,
+  AuthServiceResponse,
 } from '../interfaces/auth.interfaces';
 import emailService from '@/shared/services/email.service';
 import { logger } from '@/shared/utils';
-
 
 class AuthService {
   /**
    * Generate JWT Access Token
    */
+
   private generateAccessToken(payload: TokenPayload): string {
     return jwt.sign(payload, process.env.JWT_SECRET!, {
       expiresIn: '7d',
@@ -83,8 +83,8 @@ class AuthService {
       data: {
         userId,
         status: 'TRIAL',
-        currentPeriodStart: new Date(), 
-        currentPeriodEnd: trialEndDate, 
+        currentPeriodStart: new Date(),
+        currentPeriodEnd: trialEndDate,
         trialEndsAt: trialEndDate,
       },
     });
@@ -138,23 +138,29 @@ class AuthService {
     const accessToken = this.generateAccessToken(tokenPayload);
     const refreshToken = this.generateRefreshToken(tokenPayload);
     const needsOnBoarding = true;
+    const subscription = null;
 
     return {
       user: this.formatUserResponse(user),
       accessToken,
       refreshToken,
       needsOnBoarding,
+      subscription,
     };
   }
+
   /**
    * LOGIN USER
    */
   async login(input: LoginInput): Promise<AuthServiceResponse> {
     const { email, password } = input;
 
-    // Find user
+    // Find user with subscription
     const user = await prisma.user.findUnique({
       where: { email: email.toLowerCase() },
+      include: {
+        subscription: true,
+      },
     });
 
     if (!user || !user.password) {
@@ -187,11 +193,31 @@ class AuthService {
     // Check if user needs onboarding
     const needsOnBoarding = !user.hasCompletedOnboarding;
 
+    // Calculate subscription info
+    let subscriptionInfo = null;
+    if (user.subscription) {
+      const now = new Date();
+      const daysRemaining = user.subscription.currentPeriodEnd
+        ? Math.ceil(
+            (user.subscription.currentPeriodEnd.getTime() - now.getTime()) / (1000 * 60 * 60 * 24)
+          )
+        : 0;
+
+      subscriptionInfo = {
+        status: user.subscription.status,
+        planType: user.subscription.planType,
+        daysRemaining,
+        trialEndsAt: user.subscription.trialEndsAt,
+        currentPeriodEnd: user.subscription.currentPeriodEnd,
+      };
+    }
+
     return {
       user: this.formatUserResponse(user),
       accessToken,
       refreshToken,
       needsOnBoarding,
+      subscription: subscriptionInfo,
     };
   }
 
@@ -332,7 +358,6 @@ class AuthService {
   /**
    * VERIFY EMAIL
    */
-
   async verifyEmail(input: VerifyEmailInput): Promise<AuthServiceResponse> {
     const { email, code } = input;
 
@@ -416,35 +441,66 @@ class AuthService {
         },
       });
 
-      return verifiedUser;
+      // 7. Create trial subscription (INSIDE TRANSACTION)
+      const trialEndDate = new Date();
+      trialEndDate.setDate(trialEndDate.getDate() + 7);
+
+      const subscription = await tx.subscription.create({
+        data: {
+          userId: verifiedUser.id,
+          status: 'TRIAL',
+          currentPeriodStart: new Date(),
+          currentPeriodEnd: trialEndDate,
+          trialEndsAt: trialEndDate,
+        },
+      });
+
+      return { user: verifiedUser, subscription };
     });
 
-    // 7. Send welcome email (outside transaction - async, non-blocking)
-    emailService.sendWelcomeEmail(user.email, user.firstName).catch((error) => {
+    // 8. Send welcome email with trial info (outside transaction)
+    emailService.sendWelcomeEmailWithTrial(user.user.email, user.user.firstName).catch((error) => {
       logger.error('Failed to send welcome email', {
-        email: user.email,
+        email: user.user.email,
         error: error.message,
       });
     });
 
-    // 8. Generate tokens
+    // 9. Generate tokens
     const tokenPayload: TokenPayload = {
-      userId: user.id,
-      email: user.email,
-      role: user.role,
+      userId: user.user.id,
+      email: user.user.email,
+      role: user.user.role,
     };
 
     const accessToken = this.generateAccessToken(tokenPayload);
     const refreshToken = this.generateRefreshToken(tokenPayload);
 
-    // 9. New users ALWAYS need onboarding after email verification
+    // 10. New users ALWAYS need onboarding after email verification
     const needsOnBoarding = true;
 
+    // 11. Calculate subscription info
+    const now = new Date();
+    const daysRemaining = user.subscription.currentPeriodEnd
+      ? Math.ceil(
+          (user.subscription.currentPeriodEnd.getTime() - now.getTime()) / (1000 * 60 * 60 * 24)
+        )
+      : 0;
+
+    const subscriptionInfo = {
+      status: user.subscription.status,
+      planType: user.subscription.planType,
+      daysRemaining,
+      trialEndsAt: user.subscription.trialEndsAt,
+      currentPeriodEnd: user.subscription.currentPeriodEnd,
+    };
+
     return {
-      user: this.formatUserResponse(user),
+      user: this.formatUserResponse(user.user),
       accessToken,
       refreshToken,
       needsOnBoarding,
+      subscription: subscriptionInfo,
     };
   }
 
