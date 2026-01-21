@@ -297,4 +297,41 @@ export class SubscriptionService {
 
     console.log(`✅ Payment succeeded for subscription: ${subscriptionId}`);
   }
+
+  /**
+   * Handle invoice.payment_failed event
+   */
+  private async handlePaymentFailed(invoice: any) {
+    const subscriptionId = invoice.subscription as string;
+
+    if (!subscriptionId) {
+      console.error('No subscription ID in invoice');
+      return;
+    }
+
+    const subscription = await prisma.subscription.findUnique({
+      where: { stripeSubscriptionId: subscriptionId },
+    });
+
+    if (!subscription) {
+      console.error(`Subscription not found: ${subscriptionId}`);
+      return;
+    }
+
+    // Create failed payment record
+    await prisma.payment.create({
+      data: {
+        userId: subscription.userId,
+        subscriptionId: subscription.id,
+        amount: invoice.amount_due,
+        currency: invoice.currency.toUpperCase(),
+        status: 'FAILED',
+        stripePaymentIntentId: (invoice.payment_intent as string) || '',
+        stripeInvoiceId: invoice.id,
+        paymentMethod: 'card',
+      },
+    });
+
+    console.log(`❌ Payment failed for subscription: ${subscriptionId}`);
+  }
 }
