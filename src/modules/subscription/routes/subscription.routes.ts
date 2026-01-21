@@ -295,6 +295,8 @@ subscriptionRouter.get(
  *   get:
  *     summary: Get Stripe Customer Portal URL
  *     description: Generates a URL to Stripe's hosted customer portal where users can manage their subscription, update payment methods, and view invoices
+ *     **Note:** After completing actions in the portal, users will be redirected back to your application's subscription page, this means   *the frontend engineer must create a subscription route page , 
+ *     which is where the users would land once they are done on the stripes portal.
  *     tags: [Subscription]
  *     security:
  *       - bearerAuth: []
