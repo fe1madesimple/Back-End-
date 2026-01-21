@@ -210,4 +210,35 @@ export class SubscriptionService {
 
     console.log(`✅ Subscription created for user: ${userId}`);
   }
+
+  /**
+   * Handle customer.subscription.updated event
+   */
+  private async handleSubscriptionUpdated(subscription: any) {
+    const existingSubscription = await prisma.subscription.findUnique({
+      where: { stripeSubscriptionId: subscription.id },
+    });
+
+    if (!existingSubscription) {
+      console.error(`Subscription not found: ${subscription.id}`);
+      return;
+    }
+
+    await prisma.subscription.update({
+      where: { stripeSubscriptionId: subscription.id },
+      data: {
+        status:
+          subscription.status === 'active'
+            ? 'ACTIVE'
+            : subscription.status === 'canceled'
+              ? 'CANCELLED'
+              : 'ACTIVE',
+        currentPeriodStart: new Date(subscription.current_period_start * 1000),
+        currentPeriodEnd: new Date(subscription.current_period_end * 1000),
+        cancelledAt: subscription.canceled_at ? new Date(subscription.canceled_at * 1000) : null,
+      },
+    });
+
+    console.log(`✅ Subscription updated: ${subscription.id}`);
+  }
 }
