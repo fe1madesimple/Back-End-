@@ -331,4 +331,39 @@ subscriptionRouter.get(
   subscriptionController.getCustomerPortal
 );
 
+
+/**
+ * @swagger
+ * /api/v1/subscription/resume:
+ *   post:
+ *     summary: Resume cancelled subscription
+ *     description: Reactivates a cancelled subscription before the current period ends
+ *     tags: [Subscription]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Subscription resumed successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Subscription resumed successfully
+ *       400:
+ *         description: Subscription is not cancelled
+ *       404:
+ *         description: No subscription found
+ */
+subscriptionRouter.post(
+  '/resume',
+  protect,
+  subscriptionController.resumeSubscription
+);
+
 export default subscriptionRouter
