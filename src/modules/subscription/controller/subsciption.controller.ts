@@ -40,4 +40,35 @@ export class SubscriptionController {
 
     return sendSuccess(res, 'Webhook received', result);
   });
+
+  /**
+   * @route   GET /api/v1/subscription/status
+   * @desc    Get current user's subscription status
+   * @access  Private
+   */
+  getSubscriptionStatus = asyncHandler(async (req: Request, res: Response) => {
+    const userId = req.user!.user.id;
+
+    const subscription = await subscriptionService.getSubscriptionStatus(userId);
+
+    if (!subscription) {
+      throw new AppError('No subscription found', 404);
+    }
+
+    // Calculate additional info
+    const now = new Date();
+    const daysRemaining = subscription.currentPeriodEnd
+      ? Math.ceil((subscription.currentPeriodEnd.getTime() - now.getTime()) / (1000 * 60 * 60 * 24))
+      : 0;
+
+    const response = {
+      subscription: {
+        ...subscription,
+        daysRemaining,
+        willRenew: subscription.status === 'ACTIVE' && !subscription.cancelledAt,
+      },
+    };
+
+    return sendSuccess(res, 'Subscription retrieved successfully', response);
+  });
 }
