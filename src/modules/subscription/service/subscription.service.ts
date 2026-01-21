@@ -256,4 +256,45 @@ export class SubscriptionService {
 
     console.log(`✅ Subscription cancelled: ${subscription.id}`);
   }
+
+  /**
+   * Handle invoice.payment_succeeded event
+   */
+  private async handlePaymentSucceeded(invoice: any) {
+    const subscriptionId = invoice.subscription as string;
+
+    if (!subscriptionId) {
+      console.error('No subscription ID in invoice');
+      return;
+    }
+
+    const subscription = await prisma.subscription.findUnique({
+      where: { stripeSubscriptionId: subscriptionId },
+    });
+
+    if (!subscription) {
+      console.error(`Subscription not found: ${subscriptionId}`);
+      return;
+    }
+
+    // Create payment record
+    await prisma.payment.create({
+      data: {
+        userId: subscription.userId,
+        subscriptionId: subscription.id,
+        amount: invoice.amount_paid,
+        currency: invoice.currency.toUpperCase(),
+        status: 'SUCCESS',
+        stripePaymentIntentId: (invoice.payment_intent as string) || '',
+        stripeInvoiceId: invoice.id,
+        paymentMethod: 'card',
+        metadata: {
+          invoiceNumber: invoice.number,
+          hostedInvoiceUrl: invoice.hosted_invoice_url,
+        },
+      },
+    });
+
+    console.log(`✅ Payment succeeded for subscription: ${subscriptionId}`);
+  }
 }
