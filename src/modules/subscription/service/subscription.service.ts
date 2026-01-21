@@ -453,4 +453,38 @@ export class SubscriptionService {
 
     return { url: session.url };
   }
+
+  /**
+   * Resume cancelled subscription
+   */
+  async resumeSubscription(userId: string): Promise<void> {
+    const subscription = await prisma.subscription.findUnique({
+      where: { userId },
+    });
+
+    if (!subscription) {
+      throw new AppError('No subscription found', 404);
+    }
+
+    if (subscription.status !== 'ACTIVE' || !subscription.cancelledAt) {
+      throw new AppError('Subscription is not cancelled', 400);
+    }
+
+    if (!subscription.stripeSubscriptionId) {
+      throw new AppError('No active Stripe subscription', 400);
+    }
+
+    // Resume subscription in Stripe
+    await stripe.subscriptions.update(subscription.stripeSubscriptionId, {
+      cancel_at_period_end: false,
+    });
+
+    // Update database
+    await prisma.subscription.update({
+      where: { userId },
+      data: {
+        cancelledAt: null,
+      },
+    });
+  }
 }
