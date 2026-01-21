@@ -14,3 +14,9 @@ export const createCheckoutSessionSchema = z.object({
 });
 
 export type CreateCheckoutSessionInput = z.infer<typeof createCheckoutSessionSchema>['body'];
+
+export const applyCouponSchema = z.object({
+  body: z.object({
+    couponCode: z.string().min(1, 'Coupon code is required').max(50, 'Coupon code is too long'),
+  }),
+});
