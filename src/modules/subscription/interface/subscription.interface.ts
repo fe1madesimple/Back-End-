@@ -1,16 +1,4 @@
-// Subscription status from Prisma
-export enum SubscriptionStatus {
-  TRIAL = 'TRIAL',
-  ACTIVE = 'ACTIVE',
-  EXPIRED = 'EXPIRED',
-  CANCELLED = 'CANCELLED',
-  SUSPENDED = 'SUSPENDED',
-}
-
-export enum PlanType {
-  MONTHLY = 'MONTHLY',
-  ANNUAL = 'ANNUAL',
-}
+import { SubscriptionStatus, PlanType } from '@prisma/client';
 
 // Request DTOs
 export interface ICreateCheckoutSessionRequest {

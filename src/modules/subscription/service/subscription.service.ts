@@ -4,7 +4,7 @@ import { stripe, STRIPE_CONFIG } from '@/shared/config/stripe.config';
 import {
   ICreateCheckoutSessionRequest,
   ICheckoutSessionResponse,
-  StripeWebhookEvent,IWebhookResponse
+  StripeWebhookEvent,IWebhookResponse, ISubscriptionResponse
 } from '../interface/subscription.interface';
 
 import { AppError } from '@/shared/utils';
@@ -333,5 +333,31 @@ export class SubscriptionService {
     });
 
     console.log(`❌ Payment failed for subscription: ${subscriptionId}`);
+  }
+
+  /**
+   * Get current user's subscription status
+   */
+  async getSubscriptionStatus(userId: string): Promise<ISubscriptionResponse | null> {
+    const subscription = await prisma.subscription.findUnique({
+      where: { userId },
+      select: {
+        id: true,
+        userId: true,
+        status: true,
+        planType: true,
+        stripeCustomerId: true,
+        stripeSubscriptionId: true,
+        stripePriceId: true,
+        currentPeriodStart: true,
+        currentPeriodEnd: true,
+        trialEndsAt: true,
+        cancelledAt: true,
+        createdAt: true,
+        updatedAt: true,
+      },
+    });
+
+    return subscription;
   }
 }
