@@ -394,4 +394,39 @@ export class SubscriptionService {
       },
     });
   }
+
+  /**
+   * Get user's billing history
+   */
+  async getBillingHistory(userId: string, page: number = 1, limit: number = 10) {
+    const subscription = await prisma.subscription.findUnique({
+      where: { userId },
+    });
+
+    if (!subscription) {
+      throw new AppError('No subscription found', 404);
+    }
+
+    const skip = (page - 1) * limit;
+
+    const [payments, total] = await Promise.all([
+      prisma.payment.findMany({
+        where: { userId },
+        orderBy: { createdAt: 'desc' },
+        skip,
+        take: limit,
+      }),
+      prisma.payment.count({ where: { userId } }),
+    ]);
+
+    return {
+      payments,
+      pagination: {
+        total,
+        page,
+        limit,
+        totalPages: Math.ceil(total / limit),
+      },
+    };
+  }
 }

@@ -106,7 +106,6 @@ subscriptionRouter.post(
  *       400:
  *         description: Invalid signature
  */
-
 subscriptionRouter.post(
   '/webhook',
   express.raw({ type: 'application/json' }),
@@ -199,5 +198,8 @@ subscriptionRouter.post(
   protect,
   subscriptionController.cancelSubscription
 );
+
+
+
 
 export default subscriptionRouter
