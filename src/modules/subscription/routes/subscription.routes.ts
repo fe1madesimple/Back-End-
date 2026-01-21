@@ -289,6 +289,44 @@ subscriptionRouter.get(
 );
 
 
-
+/**
+ * @swagger
+ * /api/v1/subscription/portal:
+ *   get:
+ *     summary: Get Stripe Customer Portal URL
+ *     description: Generates a URL to Stripe's hosted customer portal where users can manage their subscription, update payment methods, and view invoices
+ *     tags: [Subscription]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Portal URL generated successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Customer portal URL generated
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     url:
+ *                       type: string
+ *                       example: https://billing.stripe.com/p/session/test_xxx
+ *       400:
+ *         description: No Stripe customer found
+ *       404:
+ *         description: No subscription found
+ */
+subscriptionRouter.get(
+  '/portal',
+  protect,
+  subscriptionController.getCustomerPortal
+);
 
 export default subscriptionRouter
