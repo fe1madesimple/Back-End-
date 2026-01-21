@@ -241,4 +241,19 @@ export class SubscriptionService {
 
     console.log(`✅ Subscription updated: ${subscription.id}`);
   }
+
+  /**
+   * Handle customer.subscription.deleted event
+   */
+  private async handleSubscriptionDeleted(subscription: Stripe.Subscription) {
+    await prisma.subscription.update({
+      where: { stripeSubscriptionId: subscription.id },
+      data: {
+        status: 'CANCELLED',
+        cancelledAt: new Date(),
+      },
+    });
+
+    console.log(`✅ Subscription cancelled: ${subscription.id}`);
+  }
 }
