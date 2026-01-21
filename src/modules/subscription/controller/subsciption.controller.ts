@@ -141,4 +141,18 @@ export class SubscriptionController {
 
     return sendSuccess(res, 'Invoice preview retrieved', invoice);
   });
+
+  /**
+   * @route   POST /api/v1/subscription/apply-coupon
+   * @desc    Apply coupon to subscription
+   * @access  Private
+   */
+  applyCoupon = asyncHandler(async (req: Request, res: Response) => {
+    const userId = req.user!.user.id;
+    const { couponCode } = req.body;
+
+    const result = await subscriptionService.applyCoupon(userId, couponCode);
+
+    return sendSuccess(res, 'Coupon applied successfully', result);
+  });
 }
