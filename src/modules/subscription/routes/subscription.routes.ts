@@ -3,6 +3,7 @@ import { SubscriptionController } from '../controller/subsciption.controller';
 import { protect } from '@/shared/middleware/auth.middleware';
 import { validate } from '@/shared/middleware/validation';
 import { createCheckoutSessionSchema } from '../validator/subscription.validator';
+import express from 'express';
 
 const subscriptionRouter = Router();
 const subscriptionController = new SubscriptionController();
@@ -89,6 +90,27 @@ subscriptionRouter.post(
   protect,
   validate(createCheckoutSessionSchema),
   subscriptionController.createCheckoutSession
+);
+
+
+/**
+ * @swagger
+ * /api/v1/subscription/webhook:
+ *   post:
+ *     summary: Stripe webhook endpoint
+ *     description: Receives webhook events from Stripe (payment succeeded, subscription updated, etc.)
+ *     tags: [Subscription]
+ *     responses:
+ *       200:
+ *         description: Webhook received successfully
+ *       400:
+ *         description: Invalid signature
+ */
+
+subscriptionRouter.post(
+  '/webhook',
+  express.raw({ type: 'application/json' }),
+  subscriptionController.handleWebhook
 );
 
 export default subscriptionRouter
