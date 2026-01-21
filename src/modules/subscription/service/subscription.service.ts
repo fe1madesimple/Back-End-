@@ -487,4 +487,52 @@ export class SubscriptionService {
       },
     });
   }
+
+  /**
+   * Preview upcoming invoice
+   */
+  /**
+   * Preview upcoming invoice
+   */
+  /**
+   * Preview upcoming invoice
+   */
+  async previewInvoice(userId: string) {
+    const subscription = await prisma.subscription.findUnique({
+      where: { userId },
+    });
+
+    if (!subscription) {
+      throw new AppError('No subscription found', 404);
+    }
+
+    if (!subscription.stripeSubscriptionId) {
+      throw new AppError('No active Stripe subscription', 400);
+    }
+
+    // Get upcoming invoice from Stripe
+    const invoiceList = await stripe.invoices.list({
+      subscription: subscription.stripeSubscriptionId,
+      limit: 1,
+    });
+
+    const upcomingInvoice = invoiceList.data[0];
+
+    if (!upcomingInvoice) {
+      throw new AppError('No upcoming invoice found', 404);
+    }
+
+    return {
+      amount: upcomingInvoice.amount_due,
+      currency: upcomingInvoice.currency.toUpperCase(),
+      billingDate: new Date((upcomingInvoice.period_end || 0) * 1000),
+      items: upcomingInvoice.lines.data.map((item: any) => ({
+        description: item.description,
+        amount: item.amount,
+        quantity: item.quantity,
+      })),
+      tax: (upcomingInvoice as any).tax || 0,
+      total: upcomingInvoice.total,
+    };
+  }
 }
