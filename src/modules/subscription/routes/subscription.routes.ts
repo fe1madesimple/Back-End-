@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { SubscriptionController } from '../controller/subsciption.controller';
 import { protect } from '@/shared/middleware/auth.middleware';
 import { validate } from '@/shared/middleware/validation';
-import { createCheckoutSessionSchema } from '../validator/subscription.validator';
+import { createCheckoutSessionSchema, applyCouponSchema } from '../validator/subscription.validator';
 import express from 'express';
 
 const subscriptionRouter = Router();
@@ -426,6 +426,79 @@ subscriptionRouter.get(
   '/preview-invoice',
   protect,
   subscriptionController.previewInvoice
+);
+
+
+/**
+ * @swagger
+ * /api/v1/subscription/apply-coupon:
+ *   post:
+ *     summary: Apply coupon to subscription
+ *     description: Applies a promotional coupon code to the user's subscription
+ *     tags: [Subscription]
+ *     security:
+ *       - bearerAuth: []
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - couponCode
+ *             properties:
+ *               couponCode:
+ *                 type: string
+ *                 example: STUDENT50
+ *     responses:
+ *       200:
+ *         description: Coupon applied successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Coupon applied successfully
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     code:
+ *                       type: string
+ *                       example: STUDENT50
+ *                     percentOff:
+ *                       type: number
+ *                       nullable: true
+ *                       example: 50
+ *                     amountOff:
+ *                       type: number
+ *                       nullable: true
+ *                       example: null
+ *                     currency:
+ *                       type: string
+ *                       nullable: true
+ *                       example: null
+ *                     duration:
+ *                       type: string
+ *                       example: once
+ *                     durationInMonths:
+ *                       type: number
+ *                       nullable: true
+ *                       example: null
+ *       400:
+ *         description: Invalid coupon or no active subscription
+ *       404:
+ *         description: No subscription found
+ */
+subscriptionRouter.post(
+  '/apply-coupon',
+  protect,
+  validate(applyCouponSchema),
+  subscriptionController.applyCoupon
 );
 
 export default subscriptionRouter
