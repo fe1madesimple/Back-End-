@@ -221,10 +221,139 @@ class AuthService {
     };
   }
 
-  /**
-   * GOOGLE OAUTH LOGIN/REGISTER
-   */
-  
+  /** 
+   * GOOGLE OAUTH LOGIN/REGISTER 
+   */ 
+  async googleAuth(profile: any): Promise<AuthServiceResponse> {
+
+    const { email, given_name, family_name, sub: googleId } = profile;
+
+    // Check if user exists
+    let user = await prisma.user.findUnique({
+      where: { email: email.toLowerCase() },
+      include: { subscription: true },
+    });
+
+    let isNewUser = false;
+    let subscription = user?.subscription || null;
+
+    // If user doesn't exist, create new user
+    if (!user) {
+      isNewUser = true;
+
+      // Create user and trial subscription in transaction
+      const result = await prisma.$transaction(async (tx) => {
+        const newUser = await tx.user.create({
+          data: {
+            email: email.toLowerCase(),
+            firstName: given_name,
+            lastName: family_name,
+            googleId,
+            role: 'STUDENT',
+            isEmailVerified: true,
+          },
+        });
+
+        // Create 7-day trial subscription
+        const trialEndDate = new Date();
+        trialEndDate.setDate(trialEndDate.getDate() + 7);
+
+        const newSubscription = await tx.subscription.create({
+          data: {
+            userId: newUser.id,
+            status: 'TRIAL',
+            currentPeriodStart: new Date(),
+            currentPeriodEnd: trialEndDate,
+            trialEndsAt: trialEndDate,
+          },
+        });
+
+        return { user: newUser, subscription: newSubscription };
+      }); 
+
+      // Fetch user with subscription included 
+      user = await prisma.user.findUnique({
+        where: { id: result.user.id },
+        include: { subscription: true },
+      });
+
+      subscription = result.subscription;
+
+      // Send welcome email with trial info (only for new users)
+      if (user) { 
+        emailService.sendWelcomeEmailWithTrial(user.email, user.firstName).catch((error) => {
+          logger.error('Failed to send welcome email', {
+            email: user!.email,
+            error: error.message,
+          });
+        });
+      } 
+    } else if (!user.googleId) {
+
+      // Link Google account to existing user 
+      user = await prisma.user.update({
+        where: { id: user.id },
+        data: {
+          googleId,
+          isEmailVerified: true,
+        },
+        include: { subscription: true },
+      });
+    }
+
+    // Safety check (should never happen) 
+    if (!user) {
+      throw new Error('User creation failed');
+    }
+
+    // Update last login
+    await prisma.user.update({
+      where: { id: user.id },
+      data: { lastLoginAt: new Date() },
+    });
+
+    // Generate tokens
+    const tokenPayload: TokenPayload = {
+      userId: user.id,
+      email: user.email,
+      role: user.role,
+    };
+
+    const accessToken = this.generateAccessToken(tokenPayload);
+    const refreshToken = this.generateRefreshToken(tokenPayload);
+
+    // Check if user needs onboarding
+    const needsOnBoarding = isNewUser || !user.hasCompletedOnboarding;
+
+    // Calculate subscription info
+    let subscriptionInfo = null;
+    if (subscription) {
+      const now = new Date();
+      const daysRemaining = subscription.currentPeriodEnd
+        ? Math.ceil(
+            (subscription.currentPeriodEnd.getTime() - now.getTime()) / (1000 * 60 * 60 * 24)
+          )
+        : 0;
+
+      subscriptionInfo = {
+        status: subscription.status,
+        planType: subscription.planType,
+        daysRemaining,
+        trialEndsAt: subscription.trialEndsAt,
+        currentPeriodEnd: subscription.currentPeriodEnd,
+      };
+    }
+
+    return {
+      user: this.formatUserResponse(user),
+      accessToken,
+      refreshToken,
+      needsOnBoarding,
+      subscription: subscriptionInfo,
+    };
+
+
+  }
 
   /**
    * FORGOT PASSWORD
@@ -297,12 +426,11 @@ class AuthService {
   async verifyEmail(input: VerifyEmailInput): Promise<AuthServiceResponse> {
     const { email, code } = input;
 
-    // Use transaction to prevent race conditions
+    // Use transaction to prevent race conditions 
     const user = await prisma.$transaction(async (tx) => {
 
 
       // 1. Find user with row-level lock (prevents race conditions)
-
       const foundUser = await tx.user.findFirst({
         where: {
           email: email.toLowerCase(),
@@ -323,9 +451,12 @@ class AuthService {
         const minutesLeft = Math.ceil(
           (foundUser.verificationLockedUntil.getTime() - Date.now()) / 60000
         );
+
+
         throw new BadRequestError(
           `Too many failed attempts. Please try again in ${minutesLeft} minutes or request a new code.`
         );
+
       }
 
       // 4. Check if code is expired
@@ -335,12 +466,14 @@ class AuthService {
 
       // 5. Check if code matches
       if (foundUser.emailVerificationCode !== code) {
+
         // Increment failed attempts
         const failedAttempts = foundUser.verificationFailedAttempts + 1;
         const maxAttempts = 5;
 
         // Lock account if too many attempts
         if (failedAttempts >= maxAttempts) {
+
           await tx.user.update({
             where: { id: foundUser.id },
             data: {
@@ -348,12 +481,15 @@ class AuthService {
               verificationLockedUntil: new Date(Date.now() + 15 * 60 * 1000), // 15 minutes
             },
           });
+
           throw new BadRequestError(
             'Too many failed attempts. Your verification is locked for 15 minutes. Please request a new code.'
           );
+
+
         }
 
-        // Update failed attempts
+        // Update failed attempts 
         await tx.user.update({
           where: { id: foundUser.id },
           data: {
@@ -369,19 +505,19 @@ class AuthService {
 
       // 6. Code is correct - verify email
       const verifiedUser = await tx.user.update({
-        where: { id: foundUser.id },
+        where: { id: foundUser.id }, 
         data: {
-          isEmailVerified: true,
-          emailVerificationCode: null,
-          emailVerificationExpires: null,
-          verificationFailedAttempts: 0,
-          verificationLockedUntil: null,
-          lastLoginAt: new Date(), // Update last login
+          isEmailVerified: true, 
+          emailVerificationCode: null, 
+          emailVerificationExpires: null, 
+          verificationFailedAttempts: 0, 
+          verificationLockedUntil: null, 
+          lastLoginAt: new Date(), // Update last login 
         },
-      });
+      }); 
 
-      // 7. Create trial subscription (INSIDE TRANSACTION)
-      const trialEndDate = new Date();
+      // 7. Create trial subscription (INSIDE TRANSACTION) 
+      const trialEndDate = new Date(); 
       trialEndDate.setDate(trialEndDate.getDate() + 7);
 
       const subscription = await tx.subscription.create({
@@ -405,7 +541,7 @@ class AuthService {
       });
     });
 
-    // 9. Generate tokens
+    // 9. Generate tokens 
     const tokenPayload: TokenPayload = {
       userId: user.user.id,
       email: user.user.email,
@@ -442,7 +578,6 @@ class AuthService {
       subscription: subscriptionInfo,
     };
   }
-
 
   /**
    * REFRESH TOKEN

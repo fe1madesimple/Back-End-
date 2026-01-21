@@ -969,8 +969,6 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
 authRouter.post('/verify-email', validate(verifyEmailSchema), verifyEmail);
 
 
-
-
 /**
  * @swagger
  * /api/v1/auth/resend-verification:
