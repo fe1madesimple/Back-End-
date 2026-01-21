@@ -115,4 +115,17 @@ export class SubscriptionController {
 
     return sendSuccess(res, 'Customer portal URL generated', result);
   });
+
+  /**
+   * @route   POST /api/v1/subscription/resume
+   * @desc    Resume cancelled subscription
+   * @access  Private
+   */
+  resumeSubscription = asyncHandler(async (req: Request, res: Response) => {
+    const userId = req.user!.user.id;
+
+    await subscriptionService.resumeSubscription(userId);
+
+    return sendSuccess(res, 'Subscription resumed successfully');
+  });
 }
