@@ -87,4 +87,19 @@ export class SubscriptionController {
       'Subscription cancelled successfully. Access continues until period ends.'
     );
   });
+
+  /**
+   * @route   GET /api/v1/subscription/billing-history
+   * @desc    Get user's billing history
+   * @access  Private
+   */
+  getBillingHistory = asyncHandler(async (req: Request, res: Response) => {
+    const userId = req.user!.user.id;
+    const page = parseInt(req.query.page as string) || 1;
+    const limit = parseInt(req.query.limit as string) || 10;
+
+    const result = await subscriptionService.getBillingHistory(userId, page, limit);
+
+    return sendSuccess(res, 'Billing history retrieved successfully', result);
+  });
 }
