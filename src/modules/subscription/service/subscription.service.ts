@@ -1,6 +1,6 @@
 import Stripe from 'stripe';
 import { prisma } from '@/shared/config';
-import { stripe } from '@/shared/config/stripe.config';
+import { stripe, STRIPE_CONFIG } from '@/shared/config/stripe.config';
 import {
   ICreateCheckoutSessionRequest,
   ICheckoutSessionResponse,
@@ -49,7 +49,6 @@ export class SubscriptionService {
       let stripeCustomerId = user.subscription?.stripeCustomerId;
 
       if (!stripeCustomerId) {
-        
         // Create new Stripe customer
         const customer = await stripe.customers.create({
           email: user.email,
@@ -103,6 +102,64 @@ export class SubscriptionService {
       }
 
       throw new AppError('Failed to create checkout session', 500);
+    }
+  }
+
+  /**
+   * Handle Stripe webhook events
+   */
+  async handleWebhook(signature: string, rawBody: Buffer): Promise<IWebhookResponse> {
+    try {
+      // 1. Verify webhook signature
+      const event = stripe.webhooks.constructEvent(
+        rawBody,
+        signature,
+        STRIPE_CONFIG.WEBHOOK_SECRET
+      );
+
+      console.log(`Webhook received: ${event.type}`);
+
+      // 2. Handle different event types
+      switch (event.type) {
+        case StripeWebhookEvent.CHECKOUT_SESSION_COMPLETED:
+          await this.handleCheckoutSessionCompleted(event.data.object as Stripe.Checkout.Session);
+          break;
+
+        case StripeWebhookEvent.CUSTOMER_SUBSCRIPTION_CREATED:
+          await this.handleSubscriptionCreated(event.data.object as Stripe.Subscription);
+          break;
+
+        case StripeWebhookEvent.CUSTOMER_SUBSCRIPTION_UPDATED:
+          await this.handleSubscriptionUpdated(event.data.object as Stripe.Subscription);
+          break;
+
+        case StripeWebhookEvent.CUSTOMER_SUBSCRIPTION_DELETED:
+          await this.handleSubscriptionDeleted(event.data.object as Stripe.Subscription);
+          break;
+
+        case StripeWebhookEvent.INVOICE_PAYMENT_SUCCEEDED:
+          await this.handlePaymentSucceeded(event.data.object as Stripe.Invoice);
+          break;
+
+        case StripeWebhookEvent.INVOICE_PAYMENT_FAILED:
+          await this.handlePaymentFailed(event.data.object as Stripe.Invoice);
+          break;
+
+        default:
+          console.log(`Unhandled event type: ${event.type}`);
+      }
+
+      return {
+        received: true,
+        event: event.type,
+      };
+    } catch (error) {
+      if (error instanceof Stripe.errors.StripeSignatureVerificationError) {
+        throw new AppError('Invalid webhook signature', 400);
+      }
+
+      console.error('Webhook error:', error);
+      throw new AppError('Webhook processing failed', 500);
     }
   }
 }
