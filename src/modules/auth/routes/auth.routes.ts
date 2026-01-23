@@ -86,16 +86,11 @@ const authRouter = Router()
  *                 minLength: 8
  *                 example: Password123
  *                 description: Must contain uppercase, lowercase, and number
- *               firstName:
+ *               fullName:
  *                 type: string
  *                 minLength: 2
  *                 example: John
  *                 description: User's first name
- *               lastName:
- *                 type: string
- *                 minLength: 2
- *                 example: Doe
- *                 description: User's last name
  *     responses:
  *       201:
  *         description: User registered successfully
@@ -128,12 +123,9 @@ const authRouter = Router()
  *                         email:
  *                           type: string
  *                           example: student@example.com
- *                         firstName:
+ *                         fullname:
  *                           type: string
  *                           example: John
- *                         lastName:
- *                           type: string
- *                           example: Doe
  *                         role:
  *                           type: string
  *                           enum: [STUDENT, HOST, ADMIN]
@@ -196,10 +188,8 @@ const authRouter = Router()
  *                   success: false
  *                   message: Validation failed
  *                   errors:
- *                     - field: firstName
- *                       message: First name is required
- *                     - field: lastName
- *                       message: Last name is required
+ *                     - field: fullName
+ *                       message: FullName is required
  *       409:
  *         description: Conflict - Email already exists
  *         content:
@@ -425,8 +415,8 @@ authRouter.post("/login", validate(loginSchema), login)
  *     description: |
  *       Authenticate user via Google OAuth 2.0.
  *       
- *       **For NEW users (first-time Google login):**
- *       1. Account is created automatically
+ *       **For NEW users (first-time Google login):** 
+ *       1. Account is created automatically 
  *       2. Email is auto-verified
  *       3. 7-day free trial subscription is created
  *       4. Welcome email with trial details is sent

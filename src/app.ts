@@ -14,6 +14,7 @@ import { swaggerSpec } from './swagger/config';
 import authRouter from './modules/auth/routes/auth.routes';
 import examRouter from './modules/exam/routes/exam.routes';
 import userRouter from './modules/user/routes/user.routes';
+
 import subscriptionRouter from './modules/subscription/routes/subscription.routes';
 import { config } from 'dotenv';
 import { configureGoogleStrategy } from './modules/auth/strategies/google.strategy';
