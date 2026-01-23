@@ -75,20 +75,20 @@ class AuthService {
   /**
    * Create 7-day trial subscription for new user
    */
-  private async createTrialSubscription(userId: string) {
-    const trialEndDate = new Date();
-    trialEndDate.setDate(trialEndDate.getDate() + 7);
+  // private async createTrialSubscription(userId: string) {
+  //   const trialEndDate = new Date();
+  //   trialEndDate.setDate(trialEndDate.getDate() + 7);
 
-    return prisma.subscription.create({
-      data: {
-        userId,
-        status: 'TRIAL',
-        currentPeriodStart: new Date(),
-        currentPeriodEnd: trialEndDate,
-        trialEndsAt: trialEndDate,
-      },
-    });
-  }
+  //   return prisma.subscription.create({
+  //     data: {
+  //       userId,
+  //       status: 'TRIAL',
+  //       currentPeriodStart: new Date(),
+  //       currentPeriodEnd: trialEndDate,
+  //       trialEndsAt: trialEndDate,
+  //     },
+  //   });
+  // }
 
   /**
    * REGISTER NEW USER
@@ -126,7 +126,7 @@ class AuthService {
     // TODO: Send verification email with 4-digit code
     console.log('[EMAIL PENDING] Verification code:', emailVerificationCode);
 
-    await emailService.sendVerificationCode(user.email, emailVerificationCode, user.firstName);
+    await emailService.sendVerificationCode(user.email, emailVerificationCode, user.fulName);
 
     const tokenPayload: TokenPayload = {
       userId: user.id,
@@ -350,8 +350,6 @@ class AuthService {
       needsOnBoarding,
       subscription: subscriptionInfo,
     };
-
-
   }
 
   /**

@@ -123,9 +123,9 @@ const authRouter = Router()
  *                         email:
  *                           type: string
  *                           example: student@example.com
- *                         fullname:
+ *                         fullName:
  *                           type: string
- *                           example: John
+ *                           example: John babatunde
  *                         role:
  *                           type: string
  *                           enum: [STUDENT, HOST, ADMIN]
@@ -233,7 +233,7 @@ authRouter.post("/register", validate(registerSchema), register)
  *       2. Server validates credentials
  *       3. Server generates JWT tokens
  *       4. Server sets httpOnly cookies
- *       5. Server returns user data + `needsOnboarding` flag + subscription info
+ *       5. Server returns user data + `needsOnBoarding` flag + subscription info
  *       
  *       **Frontend should check `needsOnboarding`:**
  *       ```javascript
@@ -307,7 +307,7 @@ authRouter.post("/register", validate(registerSchema), register)
  *                   properties:
  *                     user:
  *                       $ref: '#/components/schemas/UserProfile'
- *                     needsOnboarding:
+ *                     needsOnBoarding:
  *                       type: boolean
  *                       example: false
  *                       description: Whether user needs to complete onboarding
@@ -348,7 +348,7 @@ authRouter.post("/register", validate(registerSchema), register)
  *                       role: STUDENT
  *                       profileColor: "#3B82F6"
  *                       isEmailVerified: true
- *                     needsOnboarding: false
+ *                     needsOnBoarding: false
  *                     subscription:
  *                       status: ACTIVE
  *                       planType: MONTHLY
@@ -369,7 +369,7 @@ authRouter.post("/register", validate(registerSchema), register)
  *                       role: STUDENT
  *                       profileColor: "#3B82F6"
  *                       isEmailVerified: true
- *                     needsOnboarding: false
+ *                     needsOnBoarding: false
  *                     subscription:
  *                       status: TRIAL
  *                       planType: null
@@ -390,7 +390,7 @@ authRouter.post("/register", validate(registerSchema), register)
  *                       role: STUDENT
  *                       profileColor: "#3B82F6"
  *                       isEmailVerified: true
- *                     needsOnboarding: true
+ *                     needsOnBoarding: true
  *                     subscription: null
  *       401:
  *         description: Invalid credentials
@@ -920,13 +920,13 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
  *               data:
  *                 user:
  *                   id: clp_user_123
- *                   email: user@example.com
+ *                   email: user@example.com 
  *                   firstName: John
  *                   lastName: Doe
  *                   role: STUDENT
  *                   profileColor: "#3B82F6"
  *                   isEmailVerified: true
- *                 needsOnboarding: true
+ *                 needsOnBoarding: true
  *                 subscription:
  *                   status: TRIAL
  *                   planType: null
