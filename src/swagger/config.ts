@@ -35,6 +35,64 @@ const swaggerDefinition = {
       },
     },
     schemas: {
+      UserProfile: {
+        type: 'object',
+        properties: {
+          id: {
+            type: 'string',
+            example: 'clp_user_123',
+          },
+          email: {
+            type: 'string',
+            format: 'email',
+            example: 'user@example.com',
+          },
+          fullName: {
+            type: 'string',
+            example: 'John Doe',
+          },
+          role: {
+            type: 'string',
+            enum: ['STUDENT', 'HOST', 'ADMIN'],
+            example: 'STUDENT',
+          },
+          profileColor: {
+            type: 'string',
+            example: '#3B82F6',
+          },
+          isEmailVerified: {
+            type: 'boolean',
+            example: true,
+          },
+        },
+      },
+      ErrorResponse: {
+        type: 'object',
+        properties: {
+          success: {
+            type: 'boolean',
+            example: false,
+          },
+          message: {
+            type: 'string',
+            example: 'Error message',
+          },
+          errors: {
+            type: 'array',
+            items: {
+              type: 'object',
+              properties: {
+                field: {
+                  type: 'string',
+                },
+                message: {
+                  type: 'string',
+                },
+              },
+            },
+          },
+        },
+      },
       Error: {
         type: 'object',
         properties: {
@@ -80,7 +138,7 @@ const swaggerDefinition = {
     {
       bearerAuth: [],
     },
-  ]
+  ],
 };
 
 const options = {

@@ -72,8 +72,7 @@ const authRouter = Router()
  *             required:
  *               - email
  *               - password
- *               - firstName
- *               - lastName
+ *               - fullName
  *             properties:
  *               email:
  *                 type: string
@@ -235,7 +234,7 @@ authRouter.post("/register", validate(registerSchema), register)
  *       4. Server sets httpOnly cookies
  *       5. Server returns user data + `needsOnBoarding` flag + subscription info
  *       
- *       **Frontend should check `needsOnboarding`:**
+ *       **Frontend should check `needsOnBoarding`:**
  *       ```javascript
  *       const response = await fetch('/api/v1/auth/login', {
  *         method: 'POST',
@@ -245,7 +244,7 @@ authRouter.post("/register", validate(registerSchema), register)
  *       
  *       const data = await response.json();
  *       
- *       if (data.data.needsOnboarding) {
+ *       if (data.data.needsOnBoarding) {
  *         router.push('/onboarding');
  *       } else {
  *         router.push('/dashboard');
@@ -257,11 +256,11 @@ authRouter.post("/register", validate(registerSchema), register)
  *       }
  *       ```
  *       
- *       **When `needsOnboarding` is true:**
+ *       **When `needsOnBoarding` is true:**
  *       - User hasn't completed onboarding yet
  *       - Redirect to `/onboarding`
  *       
- *       **When `needsOnboarding` is false:**
+ *       **When `needsOnBoarding` is false:**
  *       - User has completed onboarding
  *       - Redirect to `/dashboard`
  *     requestBody:
@@ -343,8 +342,7 @@ authRouter.post("/register", validate(registerSchema), register)
  *                     user:
  *                       id: clp_user_123
  *                       email: user@example.com
- *                       firstName: John
- *                       lastName: Doe
+ *                       fullName: John babatunde
  *                       role: STUDENT
  *                       profileColor: "#3B82F6"
  *                       isEmailVerified: true
@@ -364,8 +362,7 @@ authRouter.post("/register", validate(registerSchema), register)
  *                     user:
  *                       id: clp_user_456
  *                       email: newuser@example.com
- *                       firstName: Jane
- *                       lastName: Smith
+ *                       fullName: Jane tunde
  *                       role: STUDENT
  *                       profileColor: "#3B82F6"
  *                       isEmailVerified: true
@@ -385,8 +382,7 @@ authRouter.post("/register", validate(registerSchema), register)
  *                     user:
  *                       id: clp_user_789
  *                       email: brandnew@example.com
- *                       firstName: Bob
- *                       lastName: Johnson
+ *                       fullName: Bob tunde
  *                       role: STUDENT
  *                       profileColor: "#3B82F6"
  *                       isEmailVerified: true
@@ -403,7 +399,6 @@ authRouter.post("/register", validate(registerSchema), register)
  *               message: Invalid email or password
  */
 authRouter.post("/login", validate(loginSchema), login)
-
 
 
 /**
@@ -507,12 +502,11 @@ authRouter.post("/login", validate(loginSchema), login)
  *                     user:
  *                       id: clp_user_123
  *                       email: newuser@gmail.com
- *                       firstName: John
- *                       lastName: Doe
+ *                       fullName: John tunde
  *                       role: STUDENT
  *                       profileColor: "#3B82F6"
  *                       isEmailVerified: true
- *                     needsOnboarding: true
+ *                     needsOnBoarding: true
  *                     subscription:
  *                       status: TRIAL
  *                       planType: null
@@ -528,12 +522,11 @@ authRouter.post("/login", validate(loginSchema), login)
  *                     user:
  *                       id: clp_user_456
  *                       email: returning@gmail.com
- *                       firstName: Jane
- *                       lastName: Smith
+ *                       fullName: Jane tunde
  *                       role: STUDENT
  *                       profileColor: "#3B82F6"
  *                       isEmailVerified: true
- *                     needsOnboarding: false
+ *                     needsOnBoarding: false
  *                     subscription:
  *                       status: TRIAL
  *                       planType: null
@@ -549,12 +542,11 @@ authRouter.post("/login", validate(loginSchema), login)
  *                     user:
  *                       id: clp_user_789
  *                       email: premium@gmail.com
- *                       firstName: Bob
- *                       lastName: Johnson
+ *                       fullName: Bob tunde
  *                       role: STUDENT
  *                       profileColor: "#3B82F6"
  *                       isEmailVerified: true
- *                     needsOnboarding: false
+ *                     needsOnBoarding: false
  *                     subscription:
  *                       status: ACTIVE
  *                       planType: MONTHLY
@@ -888,7 +880,7 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
  *                   properties:
  *                     user:
  *                       $ref: '#/components/schemas/UserProfile'
- *                     needsOnboarding:
+ *                     needsOnBoarding:
  *                       type: boolean
  *                       example: true
  *                       description: Always true after email verification
@@ -921,8 +913,7 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
  *                 user:
  *                   id: clp_user_123
  *                   email: user@example.com 
- *                   firstName: John
- *                   lastName: Doe
+ *                   fullName: John tunde
  *                   role: STUDENT
  *                   profileColor: "#3B82F6"
  *                   isEmailVerified: true

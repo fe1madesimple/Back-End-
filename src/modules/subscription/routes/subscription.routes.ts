@@ -294,9 +294,10 @@ subscriptionRouter.get(
  * /api/v1/subscription/portal:
  *   get:
  *     summary: Get Stripe Customer Portal URL
- *     description: Generates a URL to Stripe's hosted customer portal where users can manage their subscription, update payment methods, and view invoices
- *     **Note:** After completing actions in the portal, users will be redirected back to your application's subscription page, this means   *the frontend engineer must create a subscription route page , 
- *     which is where the users would land once they are done on the stripes portal.
+ *     description: |
+ *       Generates a URL to Stripe's hosted customer portal where users can manage their subscription, update payment methods, and view invoices.
+ *       
+ *       **Note:** After completing actions in the portal, users will be redirected back to your application's subscription page. The frontend engineer must create a subscription route page where users will land after completing actions on the Stripe portal.
  *     tags: [Subscription]
  *     security:
  *       - bearerAuth: []
@@ -324,12 +325,13 @@ subscriptionRouter.get(
  *         description: No Stripe customer found
  *       404:
  *         description: No subscription found
- */
+ */  
 subscriptionRouter.get(
   '/portal',
   protect,
   subscriptionController.getCustomerPortal
 );
+
 
 
 /**
@@ -365,7 +367,6 @@ subscriptionRouter.post(
   protect,
   subscriptionController.resumeSubscription
 );
-
 
 /**
  * @swagger

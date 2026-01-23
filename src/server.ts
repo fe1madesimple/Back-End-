@@ -54,7 +54,7 @@ const startServer = async () => {
 
       server.close(() => {
         logger.info('HTTP server closed');
-        
+
         logger.info('Graceful shutdown completed successfully');
         process.exit(0);
       });
@@ -73,7 +73,7 @@ const startServer = async () => {
     process.on('SIGINT', () => gracefulShutdown('SIGINT'));
 
     // Handle uncaught errors
-    process.on('uncaught Exception', (error: Error) => {
+    process.on('uncaughtException', (error: Error) => {
       logger.error('Uncaught Exception - Shutting down...', {
         error: error.message,
         stack: error.stack,
