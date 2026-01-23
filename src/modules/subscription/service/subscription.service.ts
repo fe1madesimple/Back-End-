@@ -25,8 +25,7 @@ export class SubscriptionService {
         select: {
           id: true,
           email: true,
-          firstName: true,
-          lastName: true,
+         fullName: true,
           subscription: {
             select: {
               stripeCustomerId: true,
@@ -52,7 +51,7 @@ export class SubscriptionService {
         // Create new Stripe customer
         const customer = await stripe.customers.create({
           email: user.email,
-          name: `${user.firstName} ${user.lastName}`,
+          name: `${user.fullName}`,
           metadata: {
             userId: user.id,
           },

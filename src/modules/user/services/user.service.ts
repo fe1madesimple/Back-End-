@@ -14,8 +14,7 @@ class UserService {
       select: {
         id: true,
         email: true,
-        firstName: true,
-        lastName: true,
+        fullName: true,
         role: true,
         profileColor: true,
         googleId: true,
@@ -51,8 +50,7 @@ class UserService {
       select: {
         id: true,
         email: true,
-        firstName: true,
-        lastName: true,
+        fullName: true,
         profileColor: true,
         targetExamDate: true,
         dailyStudyGoal: true,
@@ -195,8 +193,7 @@ class UserService {
       select: {
         id: true,
         email: true,
-        firstName: true,
-        lastName: true,
+        fullName: true,
         role: true,
         profileColor: true,
         isEmailVerified: true,
@@ -227,8 +224,7 @@ class UserService {
       select: {
         id: true,
         email: true,
-        firstName: true,
-        lastName: true,
+        fullName: true,
         role: true,
         profileColor: true,
         isEmailVerified: true,
