@@ -20,16 +20,16 @@ import { configureGoogleStrategy } from './modules/auth/strategies/google.strate
 import passport from 'passport';
 
 
-let swaggerSpec: any;
+// let swaggerSpec: any;
 
-try {
-  const swaggerModule = require('./swagger/config');
-  swaggerSpec = swaggerModule.swaggerSpec;
-  console.log('✅ SwaggerSpec loaded successfully');
-} catch (error) {
-  console.error('❌ SwaggerSpec loading failed:', error);
-  swaggerSpec = null;
-}
+// try {
+//   const swaggerModule = require('./swagger/config');
+//   swaggerSpec = swaggerModule.swaggerSpec;
+//   console.log('✅ SwaggerSpec loaded successfully');
+// } catch (error) {
+//   console.error('❌ SwaggerSpec loading failed:', error);
+//   swaggerSpec = null;
+// }
 
 config();
 
@@ -88,13 +88,12 @@ const createApp = (): Application => {
 
   logger.info('Security middleware (Helmet) enabled'); // ← Add this
 
-  // ... after CORS
+
   logger.info('CORS enabled', { allowedOrigins: corsOrigins }); // ← Add this
 
-  // ... after body parsers
   logger.info('Body parsers enabled', { limit: '10mb' }); // ← Add this
 
-  // ... after compression
+ 
   logger.info('Response compression enabled');
 
   app.use(passport.initialize());
