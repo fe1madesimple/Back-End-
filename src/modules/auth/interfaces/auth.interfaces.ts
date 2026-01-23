@@ -1,8 +1,7 @@
 export interface RegisterInput {
   email: string;
   password: string;
-  firstName: string;
-  lastName: string;
+  fullName: string;
 }
 
 export interface LoginInput {

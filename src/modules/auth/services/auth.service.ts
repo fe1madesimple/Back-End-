@@ -94,7 +94,7 @@ class AuthService {
    * REGISTER NEW USER
    */
   async register(input: RegisterInput): Promise<AuthServiceResponse> {
-    const { email, password, firstName, lastName } = input;
+    const { email, password, fullName } = input;
 
     const existingUser = await prisma.user.findUnique({
       where: { email: email.toLowerCase() },
@@ -115,8 +115,7 @@ class AuthService {
       data: {
         email: email.toLowerCase(),
         password: hashedPassword,
-        firstName,
-        lastName,
+        fullName,
         role: 'STUDENT',
         emailVerificationCode,
         emailVerificationExpires,
