@@ -7,15 +7,15 @@ declare global {
       user: {
         id: string;
         email: string;
-        firstName: string;
-        lastName: string;
+        fullName: string | null;
         role: string;
         profileColor: string;
         isEmailVerified: boolean;
       };
       accessToken: string;
       refreshToken: string;
-      needsOnBoarding: boolean
+      needsOnBoarding: boolean;
+      subscription: any
     }
 
     interface Request {

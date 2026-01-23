@@ -64,8 +64,7 @@ class AuthService {
     return {
       id: user.id,
       email: user.email,
-      firstName: user.firstName,
-      lastName: user.lastName,
+      fullName: user.fullName!,
       role: user.role,
       profileColor: user.profileColor,
       isEmailVerified: user.isEmailVerified,
@@ -123,10 +122,10 @@ class AuthService {
       },
     });
 
-    // TODO: Send verification email with 4-digit code
+    // TODO: Send verification email with 4-digit code 
     console.log('[EMAIL PENDING] Verification code:', emailVerificationCode);
 
-    await emailService.sendVerificationCode(user.email, emailVerificationCode, user.fulName);
+    await emailService.sendVerificationCode(user.email, emailVerificationCode, user.fullName!);
 
     const tokenPayload: TokenPayload = {
       userId: user.id,
@@ -227,6 +226,8 @@ class AuthService {
 
     const { email, given_name, family_name, sub: googleId } = profile;
 
+     const fullName = `${given_name} ${family_name}`.trim();
+
     // Check if user exists
     let user = await prisma.user.findUnique({
       where: { email: email.toLowerCase() },
@@ -245,8 +246,7 @@ class AuthService {
         const newUser = await tx.user.create({
           data: {
             email: email.toLowerCase(),
-            firstName: given_name,
-            lastName: family_name,
+           fullName,
             googleId,
             role: 'STUDENT',
             isEmailVerified: true,
@@ -280,7 +280,7 @@ class AuthService {
 
       // Send welcome email with trial info (only for new users)
       if (user) { 
-        emailService.sendWelcomeEmailWithTrial(user.email, user.firstName).catch((error) => {
+        emailService.sendWelcomeEmailWithTrial(user.email, user.fullName!).catch((error) => {
           logger.error('Failed to send welcome email', {
             email: user!.email,
             error: error.message,
@@ -381,7 +381,7 @@ class AuthService {
 
     //Send reset email with 4-digit code
     console.log('📧 [EMAIL PENDING] Password reset code:', resetCode);
-    await emailService.sendPasswordResetCode(user.email, resetCode, user.firstName);
+    await emailService.sendPasswordResetCode(user.email, resetCode, user.fullName!);
   }
 
   /**
@@ -531,7 +531,7 @@ class AuthService {
     });
 
     // 8. Send welcome email with trial info (outside transaction)
-    emailService.sendWelcomeEmailWithTrial(user.user.email, user.user.firstName).catch((error) => {
+    emailService.sendWelcomeEmailWithTrial(user.user.email, user.user.fullName!).catch((error) => {
       logger.error('Failed to send welcome email', {
         email: user.user.email,
         error: error.message,
@@ -660,7 +660,7 @@ class AuthService {
       },
     });
 
-    await emailService.sendVerificationCode(user.email, code, user.firstName);
+    await emailService.sendVerificationCode(user.email, code, user.fullName!);
   }
 }
 

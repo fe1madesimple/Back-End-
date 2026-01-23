@@ -17,8 +17,7 @@ function formattedUser(user: AuthResponse["user"]): AuthServiceResponse {
     user: {
       id: user.id,
       email: user.email,
-      firstName: user.firstName,
-      lastName: user.lastName,
+      fullName: user.fullName,
       role: user.role,
       profileColor: user.profileColor,
       isEmailVerified: user.isEmailVerified,
@@ -26,6 +25,7 @@ function formattedUser(user: AuthResponse["user"]): AuthServiceResponse {
     accessToken: '',
     refreshToken: '',
     needsOnBoarding: false,
+    subscription: null
   };
 }
 

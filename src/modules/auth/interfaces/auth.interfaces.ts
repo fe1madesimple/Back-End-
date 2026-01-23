@@ -13,8 +13,7 @@ export interface AuthResponse {
   user: {
     id: string;
     email: string;
-    firstName: string;
-    lastName: string;
+    fullName: string | null;
     role: string;
     profileColor: string;
     isEmailVerified: boolean;
@@ -25,8 +24,7 @@ export interface AuthServiceResponse {
   user: {
     id: string;
     email: string;
-    firstName: string;
-    lastName: string;
+    fullName: string | null;
     role: string;
     profileColor: string;
     isEmailVerified: boolean;
