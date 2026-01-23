@@ -1,10 +1,12 @@
 import { Response } from 'express';
 
+const isProduction = process.env.NODE_ENV === 'production';
+
 export const COOKIE_OPTIONS = {
   httpOnly: true,
-  secure: process.env.NODE_ENV === 'production',
-  sameSite: 'none' as const, // Changed from 'lax' to 'none' for cross-domain
-  domain: process.env.COOKIE_DOMAIN || undefined, // Empty = works everywhere
+  secure: isProduction, // Only true in production
+  sameSite: isProduction ? ('none' as const) : ('lax' as const), // 'none' for cross-domain in production
+  domain: process.env.COOKIE_DOMAIN || undefined,
   path: '/',
 };
 
