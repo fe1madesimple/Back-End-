@@ -622,6 +622,24 @@ class AuthService {
     // Send new code
     await emailService.sendPasswordResetCode(user.email, resetCode, user.fullName!);
   }
+
+  async verifyResetCode(input: VerifyResetCodeInput): Promise<void> {
+    const { email, code } = input;
+
+    const user = await prisma.user.findFirst({
+      where: {
+        email: email.toLowerCase(),
+        passwordResetCode: code,
+        passwordResetExpires: {
+          gt: new Date(),
+        },
+      },
+    });
+
+    if (!user) {
+      throw new BadRequestError('Invalid or expired reset code');
+    }
+  }
 }
 
 export default new AuthService();

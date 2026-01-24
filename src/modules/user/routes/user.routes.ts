@@ -598,6 +598,8 @@ userRouter.post('/onboarding/skip', protect, skipOnboarding);
  */
 userRouter.get('/onboarding/status', protect, getOnboardingStatus);
 
+
+
 /**
  * @swagger
  * /api/v1/users/data/export:
