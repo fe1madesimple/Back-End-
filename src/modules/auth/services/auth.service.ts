@@ -12,6 +12,7 @@ import {
   ResetPasswordInput,
   VerifyEmailInput,
   AuthServiceResponse,
+  VerifyResetCodeInput
 } from '../interfaces/auth.interfaces';
 import emailService from '@/shared/services/email.service';
 import { logger } from '@/shared/utils';

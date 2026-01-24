@@ -1,6 +1,5 @@
 import { z } from 'zod';
 
-
 export const registerSchema = z.object({
   body: z.object({
     email: z.string().email('Invalid email address'),
@@ -56,5 +55,15 @@ export const verifyEmailSchema = z.object({
       .refine((val) => /^\d{4}$/.test(val), {
         message: 'Verification code must contain only digits',
       }),
+  }),
+});
+
+export const verifyResetCodeSchema = z.object({
+  body: z.object({
+    email: z.string().email('Please provide a valid email address'),
+    code: z
+      .string()
+      .length(4, 'Code must be exactly 4 digits')
+      .regex(/^\d{4}$/, 'Code must be numeric'),
   }),
 });
