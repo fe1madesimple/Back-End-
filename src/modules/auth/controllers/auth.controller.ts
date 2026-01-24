@@ -9,6 +9,7 @@ import {
   ForgotPasswordInput,
   ResetPasswordInput,
   VerifyEmailInput,
+  VerifyResetCodeInput
 } from '../interfaces/auth.interfaces';
 import { UnauthorizedError } from '@/utils/errors';
 import { clearAuthCookies } from '@/utils/cookie';
@@ -198,4 +199,12 @@ export const resendPasswordResetCode = asyncHandler(async (req: Request, res: Re
   await authService.resendPasswordResetCode(input);
 
   sendSuccess(res, 'Password reset code resent to your email');
+});
+
+export const verifyResetCode = asyncHandler(async (req: Request, res: Response) => {
+  const input: VerifyResetCodeInput = req.body;
+
+  await authService.verifyResetCode(input);
+
+  sendSuccess(res, 'Reset code verified successfully');
 });
