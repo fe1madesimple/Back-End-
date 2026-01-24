@@ -398,9 +398,6 @@ class AuthService {
       passwordResetExpires: null,
     },
   });
-
-  // Send confirmation email
-  await emailService.sendPasswordChangedConfirmation(user.email, user.fullName!);
 }
 
   /**

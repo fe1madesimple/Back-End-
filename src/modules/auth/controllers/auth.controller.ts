@@ -161,7 +161,11 @@ export const refreshToken = asyncHandler(async (req: Request, res: Response) => 
  */
 export const getCurrentUser = asyncHandler(async (req: Request, res: Response) => {
   // User is already attached to req.user by protect middleware
-  const userId = (req.user as any).id;
+  const userId = (req.user?.user as any).id;
+
+
+
+  console.log(userId , "from the getCurrentUser controller")
 
   // Call service (gets user with subscription data)
   const user = await authService.getCurrentUser(userId);
