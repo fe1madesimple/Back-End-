@@ -105,10 +105,8 @@ export const forgotPassword = asyncHandler(async (req: Request, res: Response) =
 export const resetPassword = asyncHandler(async (req: Request, res: Response) => {
   const input: ResetPasswordInput = req.body;
 
-  // Call service (validates token and updates password)
   await authService.resetPassword(input);
 
-  // Return success
   sendSuccess(res, 'Password reset successful. You can now login with your new password.');
 });
 

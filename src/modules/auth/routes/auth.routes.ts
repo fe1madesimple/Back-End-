@@ -632,54 +632,23 @@ authRouter.post("/forgot-password", validate(forgotPasswordSchema), forgotPasswo
  * @swagger
  * /api/v1/auth/reset-password:
  *   post:
- *     summary: Reset password with 4-digit code
+ *     summary: Reset password
  *     tags: [Authentication]
  *     description: |
- *       Resets user's password using the 4-digit code from forgot-password email.
- *       
- *       **What happens:**
- *       - Validates 4-digit code (checks if exists and not expired)
- *       - Validates new password format
- *       - Hashes new password (bcrypt)
- *       - Updates user's password
- *       - Clears reset code (one-time use)
- *       - Sends confirmation email (currently logged to console)
+ *       Resets user's password after code verification.
  *       
  *       **Flow:**
- *       1. User receives email with 4-digit code (e.g., 1234)
- *       2. User enters code in 4 input boxes + new password
- *       3. Frontend sends code + new password to this endpoint
- *       4. User can login with new password
+ *       1. User requests reset (forgot-password)
+ *       2. User receives 4-digit code via email
+ *       3. User verifies code (verify-reset-code)
+ *       4. User enters new password (this endpoint)
+ *       5. Password is updated
  *       
- *       **Frontend usage:**
- *       ```javascript
- *       // User enters: 1 2 3 4 in code boxes + new password
- *       const code = '1234';
- *       const password = 'NewPassword123';
- *       
- *       fetch('/api/v1/auth/reset-password', {
- *         method: 'POST',
- *         headers: { 'Content-Type': 'application/json' },
- *         body: JSON.stringify({ code, password })
- *       })
- *       .then(res => res.json())
- *       .then(data => {
- *         if (data.success) {
- *           showSuccess('Password reset successful!');
- *           router.push('/login');
- *         }
- *       })
- *       .catch(error => {
- *         showError('Invalid or expired code');
- *       });
- *       ```
- *       
- *       **Important notes:**
+ *       **Important:**
+ *       - Must verify code first using /verify-reset-code
+ *       - Frontend must validate password confirmation
  *       - Code expires in 1 hour
- *       - Code can only be used once
- *       - Code is exactly 4 numeric digits
- *       - After reset, user must login again with new password
- *       - Old password is completely replaced
+ *       - Code is cleared after successful reset
  *     requestBody:
  *       required: true
  *       content:
@@ -687,16 +656,13 @@ authRouter.post("/forgot-password", validate(forgotPasswordSchema), forgotPasswo
  *           schema:
  *             type: object
  *             required:
- *               - code
+ *               - email
  *               - password
  *             properties:
- *               code:
+ *               email:
  *                 type: string
- *                 pattern: '^\d{4}$'
- *                 minLength: 4
- *                 maxLength: 4
- *                 example: "1234"
- *                 description: 4-digit reset code from email
+ *                 format: email
+ *                 example: user@example.com
  *               password:
  *                 type: string
  *                 format: password
@@ -718,7 +684,7 @@ authRouter.post("/forgot-password", validate(forgotPasswordSchema), forgotPasswo
  *                   type: string
  *                   example: Password reset successful. You can now login with your new password.
  *       400:
- *         description: Bad request - Invalid or expired code
+ *         description: Invalid or expired reset session
  *         content:
  *           application/json:
  *             schema:
@@ -730,26 +696,11 @@ authRouter.post("/forgot-password", validate(forgotPasswordSchema), forgotPasswo
  *                 message:
  *                   type: string
  *             examples:
- *               invalidFormat:
- *                 summary: Code is not 4 digits
+ *               expiredSession:
+ *                 summary: Reset session expired
  *                 value:
  *                   success: false
- *                   message: Code must be 4 digits
- *               codeExpired:
- *                 summary: Code expired (> 1 hour)
- *                 value:
- *                   success: false
- *                   message: Invalid or expired reset code
- *               codeUsed:
- *                 summary: Code already used
- *                 value:
- *                   success: false
- *                   message: Invalid or expired reset code
- *               codeInvalid:
- *                 summary: Code doesn't exist
- *                 value:
- *                   success: false
- *                   message: Invalid or expired reset code
+ *                   message: Invalid or expired reset session
  *               passwordWeak:
  *                 summary: Password doesn't meet requirements
  *                 value:
