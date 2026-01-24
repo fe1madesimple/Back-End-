@@ -369,35 +369,39 @@ class AuthService {
   /**
    * RESET PASSWORD
    */
-  async resetPassword(input: ResetPasswordInput): Promise<void> {
-    const { code, password } = input; // Changed from token to code
+ async resetPassword(input: ResetPasswordInput): Promise<void> {
+  const { email, password } = input;
 
-    const user = await prisma.user.findFirst({
-      where: {
-        passwordResetCode: code,
-        passwordResetExpires: {
-          gt: new Date(),
-        },
+  const user = await prisma.user.findFirst({
+    where: {
+      email: email.toLowerCase(),
+      passwordResetCode: {
+        not: null,
       },
-    });
-
-    if (!user) {
-      throw new BadRequestError('Invalid or expired reset code');
-    }
-
-    const hashedPassword = await this.hashPassword(password);
-
-    await prisma.user.update({
-      where: { id: user.id },
-      data: {
-        password: hashedPassword,
-        passwordResetCode: null,
-        passwordResetExpires: null,
+      passwordResetExpires: {
+        gt: new Date(),
       },
-    });
+    },
+  });
 
-    console.log('📧 [EMAIL PENDING] Password changed for:', user.email);
+  if (!user) {
+    throw new BadRequestError('Invalid or expired reset session');
   }
+
+  const hashedPassword = await this.hashPassword(password);
+
+  await prisma.user.update({
+    where: { id: user.id },
+    data: {
+      password: hashedPassword,
+      passwordResetCode: null,
+      passwordResetExpires: null,
+    },
+  });
+
+  // Send confirmation email
+  await emailService.sendPasswordChangedConfirmation(user.email, user.fullName!);
+}
 
   /**
    * VERIFY EMAIL
