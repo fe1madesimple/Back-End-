@@ -11,7 +11,8 @@ import {
   getCurrentUser,
   logout,
   resendVerificationCode,
-  resendPasswordResetCode
+  resendPasswordResetCode,
+  verifyResetCode
 } from '../controllers/auth.controller';
 import { protect } from '../../../shared/middleware/auth.middleware';
 import { validate } from '@/shared/middleware/validation';
@@ -21,6 +22,7 @@ import {
   forgotPasswordSchema,
   resetPasswordSchema,
   verifyEmailSchema,
+  verifyResetCodeSchema
 } from '../validators/auth.validators';
 
 
@@ -1520,5 +1522,75 @@ authRouter.get('/me', protect, getCurrentUser);
  *                   example: Access token not found. Please login.
  */
 authRouter.post('/logout', protect, logout);
+
+
+/**
+ * @swagger
+ * /api/v1/auth/verify-reset-code:
+ *   post:
+ *     summary: Verify password reset code
+ *     tags: [Authentication]
+ *     description: |
+ *       Verifies the 4-digit password reset code before allowing password reset.
+ *       
+ *       **Flow:**
+ *       1. User enters 4-digit code from email
+ *       2. Frontend calls this endpoint to verify code
+ *       3. If valid, show password reset form
+ *       4. If invalid/expired, show error
+ *       
+ *       **Code expires in 1 hour**
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - email
+ *               - code
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 format: email
+ *                 example: user@example.com
+ *               code:
+ *                 type: string
+ *                 pattern: '^\d{4}$'
+ *                 example: "1234"
+ *                 description: 4-digit reset code from email
+ *     responses:
+ *       200:
+ *         description: Code verified successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Reset code verified successfully
+ *       400:
+ *         description: Invalid or expired code
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                   example: Invalid or expired reset code
+ */
+authRouter.post(
+  '/verify-reset-code',
+  validate(verifyResetCodeSchema),
+  verifyResetCode
+);
 
 export default authRouter
