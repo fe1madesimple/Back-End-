@@ -32,7 +32,7 @@ export interface AuthServiceResponse {
   accessToken: string;
   refreshToken: string;
   needsOnBoarding: boolean;
-  subscription: any
+  subscription: any;
 }
 
 export interface TokenPayload {
@@ -51,6 +51,11 @@ export interface ResetPasswordInput {
 }
 
 export interface VerifyEmailInput {
+  email: string;
+  code: string;
+}
+
+export interface VerifyResetCodeInput {
   email: string;
   code: string;
 }
