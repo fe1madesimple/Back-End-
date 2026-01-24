@@ -15,8 +15,6 @@ import { clearAuthCookies } from '@/utils/cookie';
 import passport from 'passport';
 import { AuthServiceResponse } from '../interfaces/auth.interfaces';
 
-
-
 /**
  * @desc    Register new user
  * @route   POST /api/v1/auth/register
@@ -28,16 +26,9 @@ export const register = asyncHandler(async (req: Request, res: Response) => {
   // Call service
   const result = await authService.register(input);
 
-  // Set tokens in HTTP-only cookies
-  setAuthCookies(res, result.accessToken, result.refreshToken);
-
-  // Return user data (no tokens in body)
-  sendCreated(res, 'Registration successful. Please check your email to verify your account.', {
-    user: result.user,
-  });
+  // Return success message (no cookies, no user data)
+  sendCreated(res, result.message);
 });
-
-
 
 /**
  * @desc    Login user
@@ -56,11 +47,9 @@ export const login = asyncHandler(async (req: Request, res: Response) => {
   // Return user data with needsOnboarding flag
   sendSuccess(res, 'Login successful', {
     user: result.user,
-    needsOnboarding: result.needsOnBoarding, 
+    needsOnboarding: result.needsOnBoarding,
   });
 });
-
-
 
 /**
  * @desc    google login
@@ -71,8 +60,6 @@ export const googleLogin = passport.authenticate('google', {
   scope: ['profile', 'email'],
 });
 
-
-
 /**
  * @desc    google webhook
  * @route   POST /api/v1/auth/google/callback
@@ -81,7 +68,6 @@ export const googleLogin = passport.authenticate('google', {
 export const googleCallback = [
   passport.authenticate('google', { session: false }),
   asyncHandler(async (req: Request, res: Response) => {
-    
     const result = req.user as AuthServiceResponse;
 
     setAuthCookies(res, result.accessToken, result.refreshToken);
@@ -94,7 +80,6 @@ export const googleCallback = [
     }
   }),
 ];
-
 
 /**
  * @desc    Request password reset
@@ -125,7 +110,6 @@ export const resetPassword = asyncHandler(async (req: Request, res: Response) =>
   // Return success
   sendSuccess(res, 'Password reset successful. You can now login with your new password.');
 });
-
 
 /**
  * @desc    Verify email with token
@@ -205,8 +189,13 @@ export const resendVerificationCode = asyncHandler(async (req: Request, res: Res
 
   await authService.resendVerificationCode(email);
 
-  return sendSuccess(
-    res,
-    'Verification code sent successfully. Please check your email.',
-  );
+  return sendSuccess(res, 'Verification code re-sent successfully. Please check your email.');
+});
+
+export const resendPasswordResetCode = asyncHandler(async (req: Request, res: Response) => {
+  const input: ForgotPasswordInput = req.body;
+
+  await authService.resendPasswordResetCode(input);
+
+  sendSuccess(res, 'Password reset code resent to your email');
 });

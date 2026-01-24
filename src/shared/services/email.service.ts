@@ -62,7 +62,7 @@ class EmailService {
     </tr>
     <tr>
       <td align="center" style="padding-top:32px;">
-        <p style="margin:0;font-size:14px;color:#9ca3af;">© 2025 FE-1 Made Simple. All rights reserved.</p>
+        <p style="margin:0;font-size:14px;color:#9ca3af;">© 2026 FE-1 Made Simple. All rights reserved.</p>
       </td>
     </tr>
   </table>
@@ -102,7 +102,7 @@ class EmailService {
     </tr>
     <tr>
       <td align="center" style="padding-top:32px;">
-        <p style="margin:0;font-size:14px;color:#9ca3af;">© 2025 FE-1 Made Simple. All rights reserved.</p>
+        <p style="margin:0;font-size:14px;color:#9ca3af;">© 2026 FE-1 Made Simple. All rights reserved.</p>
       </td>
     </tr>
   </table>

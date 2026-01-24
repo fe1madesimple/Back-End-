@@ -35,11 +35,11 @@ model User {
   // Email verification (4 digit code)
   isEmailVerified   Boolean  @default(false)
   emailVerificationCode String?  // 4-digit code
-  emailVerificationExpires DateTime?
+  emailVerificationExpires DateTime? 
   
   // Password reset
   passwordResetCode String? 
-  passwordResetExpires DateTime?
+  passwordResetExpires DateTime? 
   
   // User preferences (from Edit Profile screen)
   targetExamDate    DateTime?

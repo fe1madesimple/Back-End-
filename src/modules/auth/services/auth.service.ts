@@ -92,7 +92,7 @@ class AuthService {
   /**
    * REGISTER NEW USER
    */
-  async register(input: RegisterInput): Promise<AuthServiceResponse> {
+  async register(input: RegisterInput): Promise<{ message: string }> {
     const { email, password, fullName } = input;
 
     const existingUser = await prisma.user.findUnique({
@@ -108,7 +108,7 @@ class AuthService {
     // Generate 4-digit code (not token)
     const emailVerificationCode = this.generateVerificationCode();
     const emailVerificationExpires = new Date();
-    emailVerificationExpires.setHours(emailVerificationExpires.getHours() + 24);
+    emailVerificationExpires.setMinutes(emailVerificationExpires.getMinutes() + 10); // 10 minutes
 
     const user = await prisma.user.create({
       data: {
@@ -122,28 +122,11 @@ class AuthService {
       },
     });
 
-    // TODO: Send verification email with 4-digit code 
-    console.log('[EMAIL PENDING] Verification code:', emailVerificationCode);
-
+    // Send verification email with 4-digit code
     await emailService.sendVerificationCode(user.email, emailVerificationCode, user.fullName!);
 
-    const tokenPayload: TokenPayload = {
-      userId: user.id,
-      email: user.email,
-      role: user.role,
-    };
-
-    const accessToken = this.generateAccessToken(tokenPayload);
-    const refreshToken = this.generateRefreshToken(tokenPayload);
-    const needsOnBoarding = true;
-    const subscription = null;
-
     return {
-      user: this.formatUserResponse(user),
-      accessToken,
-      refreshToken,
-      needsOnBoarding,
-      subscription,
+      message: 'Verification code sent to your email',
     };
   }
 
@@ -219,14 +202,13 @@ class AuthService {
     };
   }
 
-  /** 
-   * GOOGLE OAUTH LOGIN/REGISTER 
-   */ 
+  /**
+   * GOOGLE OAUTH LOGIN/REGISTER
+   */
   async googleAuth(profile: any): Promise<AuthServiceResponse> {
-
     const { email, given_name, family_name, sub: googleId } = profile;
 
-     const fullName = `${given_name} ${family_name}`.trim();
+    const fullName = `${given_name} ${family_name}`.trim();
 
     // Check if user exists
     let user = await prisma.user.findUnique({
@@ -246,7 +228,7 @@ class AuthService {
         const newUser = await tx.user.create({
           data: {
             email: email.toLowerCase(),
-           fullName,
+            fullName,
             googleId,
             role: 'STUDENT',
             isEmailVerified: true,
@@ -268,9 +250,9 @@ class AuthService {
         });
 
         return { user: newUser, subscription: newSubscription };
-      }); 
+      });
 
-      // Fetch user with subscription included 
+      // Fetch user with subscription included
       user = await prisma.user.findUnique({
         where: { id: result.user.id },
         include: { subscription: true },
@@ -279,17 +261,16 @@ class AuthService {
       subscription = result.subscription;
 
       // Send welcome email with trial info (only for new users)
-      if (user) { 
+      if (user) {
         emailService.sendWelcomeEmailWithTrial(user.email, user.fullName!).catch((error) => {
           logger.error('Failed to send welcome email', {
             email: user!.email,
             error: error.message,
           });
         });
-      } 
+      }
     } else if (!user.googleId) {
-
-      // Link Google account to existing user 
+      // Link Google account to existing user
       user = await prisma.user.update({
         where: { id: user.id },
         data: {
@@ -300,7 +281,7 @@ class AuthService {
       });
     }
 
-    // Safety check (should never happen) 
+    // Safety check (should never happen)
     if (!user) {
       throw new Error('User creation failed');
     }
@@ -423,11 +404,9 @@ class AuthService {
   async verifyEmail(input: VerifyEmailInput): Promise<AuthServiceResponse> {
     const { email, code } = input;
 
-    // Use transaction to prevent race conditions 
+    // Use transaction to prevent race conditions
     const user = await prisma.$transaction(async (tx) => {
-
-
-      // 1. Find user with row-level lock (prevents race conditions)
+      // 1. Find user
       const foundUser = await tx.user.findFirst({
         where: {
           email: email.toLowerCase(),
@@ -443,78 +422,31 @@ class AuthService {
         throw new BadRequestError('Email is already verified');
       }
 
-      // 3. Check if account is locked due to too many attempts
-      if (foundUser.verificationLockedUntil && foundUser.verificationLockedUntil > new Date()) {
-        const minutesLeft = Math.ceil(
-          (foundUser.verificationLockedUntil.getTime() - Date.now()) / 60000
-        );
-
-
-        throw new BadRequestError(
-          `Too many failed attempts. Please try again in ${minutesLeft} minutes or request a new code.`
-        );
-
-      }
-
-      // 4. Check if code is expired
+      // 3. Check if code is expired
       if (!foundUser.emailVerificationExpires || foundUser.emailVerificationExpires < new Date()) {
         throw new BadRequestError('Verification code has expired. Please request a new one.');
       }
 
-      // 5. Check if code matches
+      // 4. Check if code matches
       if (foundUser.emailVerificationCode !== code) {
-
-        // Increment failed attempts
-        const failedAttempts = foundUser.verificationFailedAttempts + 1;
-        const maxAttempts = 5;
-
-        // Lock account if too many attempts
-        if (failedAttempts >= maxAttempts) {
-
-          await tx.user.update({
-            where: { id: foundUser.id },
-            data: {
-              verificationFailedAttempts: failedAttempts,
-              verificationLockedUntil: new Date(Date.now() + 15 * 60 * 1000), // 15 minutes
-            },
-          });
-
-          throw new BadRequestError(
-            'Too many failed attempts. Your verification is locked for 15 minutes. Please request a new code.'
-          );
-
-
-        }
-
-        // Update failed attempts 
-        await tx.user.update({
-          where: { id: foundUser.id },
-          data: {
-            verificationFailedAttempts: failedAttempts,
-          },
-        });
-
-        const attemptsLeft = maxAttempts - failedAttempts;
-        throw new BadRequestError(
-          `Invalid verification code. ${attemptsLeft} attempt${attemptsLeft === 1 ? '' : 's'} remaining.`
-        );
+        throw new BadRequestError('Invalid verification code');
       }
 
-      // 6. Code is correct - verify email
+      // 5. Code is correct - verify email
       const verifiedUser = await tx.user.update({
-        where: { id: foundUser.id }, 
+        where: { id: foundUser.id },
         data: {
-          isEmailVerified: true, 
-          emailVerificationCode: null, 
-          emailVerificationExpires: null, 
-          verificationFailedAttempts: 0, 
-          verificationLockedUntil: null, 
-          lastLoginAt: new Date(), // Update last login 
+          isEmailVerified: true,
+          emailVerificationCode: null,
+          emailVerificationExpires: null,
+          verificationFailedAttempts: 0,
+          verificationLockedUntil: null,
+          lastLoginAt: new Date(),
         },
-      }); 
+      });
 
-      // 7. Create trial subscription (INSIDE TRANSACTION) 
-      const trialEndDate = new Date(); 
+      // 6. Create trial subscription
+      const trialEndDate = new Date();
       trialEndDate.setDate(trialEndDate.getDate() + 7);
 
       const subscription = await tx.subscription.create({
@@ -530,7 +462,7 @@ class AuthService {
       return { user: verifiedUser, subscription };
     });
 
-    // 8. Send welcome email with trial info (outside transaction)
+    // 7. Send welcome email with trial info
     emailService.sendWelcomeEmailWithTrial(user.user.email, user.user.fullName!).catch((error) => {
       logger.error('Failed to send welcome email', {
         email: user.user.email,
@@ -538,7 +470,7 @@ class AuthService {
       });
     });
 
-    // 9. Generate tokens 
+    // 8. Generate tokens
     const tokenPayload: TokenPayload = {
       userId: user.user.id,
       email: user.user.email,
@@ -548,10 +480,10 @@ class AuthService {
     const accessToken = this.generateAccessToken(tokenPayload);
     const refreshToken = this.generateRefreshToken(tokenPayload);
 
-    // 10. New users ALWAYS need onboarding after email verification
+    // 9. New users ALWAYS need onboarding after email verification
     const needsOnBoarding = true;
 
-    // 11. Calculate subscription info
+    // 10. Calculate subscription info
     const now = new Date();
     const daysRemaining = user.subscription.currentPeriodEnd
       ? Math.ceil(
@@ -648,7 +580,7 @@ class AuthService {
 
     // Generate new code and reset attempts
     const code = this.generateVerificationCode();
-    const expires = new Date(Date.now() + 24 * 60 * 60 * 1000); // 24 hours
+    const expires = new Date(Date.now() + 10 * 60 * 1000); // 10 mins
 
     await prisma.user.update({
       where: { id: user.id },
@@ -661,6 +593,34 @@ class AuthService {
     });
 
     await emailService.sendVerificationCode(user.email, code, user.fullName!);
+  }
+
+  async resendPasswordResetCode(input: ForgotPasswordInput): Promise<void> {
+    const { email } = input;
+
+    const user = await prisma.user.findUnique({
+      where: { email: email.toLowerCase() },
+    });
+
+    if (!user) {
+      return;
+    }
+
+    // Generate new 4-digit code
+    const resetCode = this.generateVerificationCode();
+    const resetExpires = new Date();
+    resetExpires.setHours(resetExpires.getHours() + 1); // 1 hour
+
+    await prisma.user.update({
+      where: { id: user.id },
+      data: {
+        passwordResetCode: resetCode,
+        passwordResetExpires: resetExpires,
+      },
+    });
+
+    // Send new code
+    await emailService.sendPasswordResetCode(user.email, resetCode, user.fullName!);
   }
 }
 

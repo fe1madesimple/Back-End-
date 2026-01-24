@@ -11,6 +11,7 @@ import {
   getCurrentUser,
   logout,
   resendVerificationCode,
+  resendPasswordResetCode
 } from '../controllers/auth.controller';
 import { protect } from '../../../shared/middleware/auth.middleware';
 import { validate } from '@/shared/middleware/validation';
@@ -36,7 +37,6 @@ const authRouter = Router()
 
 
 
-
 /**
  * @swagger
  * /api/v1/auth/register:
@@ -44,25 +44,21 @@ const authRouter = Router()
  *     summary: Register a new user
  *     tags: [Authentication]
  *     description: |
- *       Creates a new user account with email and password.
+ *       Creates a new user account and sends a 4-digit verification code to the provided email.
  *       
  *       **What happens:**
- *       - User account is created
+ *       - User account is created (email NOT verified yet)
  *       - Password is securely hashed (bcrypt)
- *       - 7-day FREE TRIAL subscription is automatically created
- *       - Email verification token is generated (expires in 24 hours)
- *       - Verification email is sent (currently logged to console)
- *       - JWT tokens are set in HTTP-only cookies
- *       
- *       **Cookies set:**
- *       - `accessToken` - Valid for 7 days
- *       - `refreshToken` - Valid for 30 days
+ *       - 4-digit verification code is generated (expires in 10 minutes)
+ *       - Verification email is sent to the user
+ *       - User must verify email before accessing the platform
  *       
  *       **Important notes:**
  *       - Email must be unique
  *       - Password must be at least 8 characters with uppercase, lowercase, and number
- *       - Tokens are in HTTP-only cookies (NOT in response body)
- *       - User can login immediately even if email not verified
+ *       - Verification code expires in 10 minutes
+ *       - User cannot login until email is verified
+ *       - NO cookies or tokens are set (only after email verification)
  *     requestBody:
  *       required: true
  *       content:
@@ -88,17 +84,11 @@ const authRouter = Router()
  *               fullName:
  *                 type: string
  *                 minLength: 2
- *                 example: John
- *                 description: User's first name
+ *                 example: John Doe
+ *                 description: User's full name
  *     responses:
  *       201:
- *         description: User registered successfully
- *         headers:
- *           Set-Cookie:
- *             description: JWT tokens set in HTTP-only cookies
- *             schema:
- *               type: string
- *               example: accessToken=eyJhbGc...; HttpOnly; Secure; Path=/; Max-Age=604800
+ *         description: User registered successfully, verification code sent
  *         content:
  *           application/json:
  *             schema:
@@ -109,34 +99,10 @@ const authRouter = Router()
  *                   example: true
  *                 message:
  *                   type: string
- *                   example: Registration successful. Please check your email to verify your account.
- *                 data:
- *                   type: object
- *                   properties:
- *                     user:
- *                       type: object
- *                       properties:
- *                         id:
- *                           type: string
- *                           example: clp123abc456def789
- *                         email:
- *                           type: string
- *                           example: student@example.com
- *                         fullName:
- *                           type: string
- *                           example: John babatunde
- *                         role:
- *                           type: string
- *                           enum: [STUDENT, HOST, ADMIN]
- *                           example: STUDENT
- *                         profileColor:
- *                           type: string
- *                           example: "#3B82F6"
- *                           description: Hex color for user avatar
- *                         isEmailVerified:
- *                           type: boolean
- *                           example: false
- *                           description: Will be true after email verification
+ *                   example: Verification code sent to your email
+ *             example:
+ *               success: true
+ *               message: Verification code sent to your email
  *       400:
  *         description: Bad request - Validation error or user already exists
  *         content:
@@ -170,7 +136,7 @@ const authRouter = Router()
  *                 summary: Email already registered
  *                 value:
  *                   success: false
- *                   message: email already exists
+ *                   message: User with this email already exists
  *               validationError:
  *                 summary: Invalid input data
  *                 value:
@@ -188,31 +154,7 @@ const authRouter = Router()
  *                   message: Validation failed
  *                   errors:
  *                     - field: fullName
- *                       message: FullName is required
- *       409:
- *         description: Conflict - Email already exists
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 success:
- *                   type: boolean
- *                   example: false
- *                 message:
- *                   type: string
- *                   example: email already exists
- *                 errors:
- *                   type: array
- *                   items:
- *                     type: object
- *                     properties:
- *                       field:
- *                         type: string
- *                         example: email
- *                       message:
- *                         type: string
- *                         example: This email is already taken
+ *                       message: fullName is required
  */
 authRouter.post("/register", validate(registerSchema), register)
 
@@ -818,6 +760,7 @@ authRouter.post("/forgot-password", validate(forgotPasswordSchema), forgotPasswo
 authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
 
 
+
 /**
  * @swagger
  * /api/v1/auth/verify-email:
@@ -829,14 +772,20 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
  *       
  *       **What happens on successful verification:**
  *       1. Email is marked as verified
- *       2. 7-day free trial subscription is created
- *       3. Welcome email with trial details is sent
- *       4. User is redirected to onboarding
+ *       2. JWT tokens are set in HTTP-only cookies
+ *       3. 7-day free trial subscription is created
+ *       4. Welcome email with trial details is sent
+ *       5. User is redirected to onboarding
  *       
  *       **Trial Details:**
  *       - Duration: 7 days
  *       - Full access to all premium features
  *       - No credit card required
+ *       
+ *       **Important Notes:**
+ *       - Verification code expires in 10 minutes
+ *       - No limit on verification attempts
+ *       - Request a new code if expired
  *     requestBody:
  *       required: true
  *       content:
@@ -855,7 +804,7 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
  *                 type: string
  *                 pattern: '^\d{4}$'
  *                 example: "1234"
- *                 description: 4-digit verification code sent to email
+ *                 description: 4-digit verification code sent to email (expires in 10 minutes)
  *     responses:
  *       200:
  *         description: Email verified successfully, trial started
@@ -913,7 +862,7 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
  *                 user:
  *                   id: clp_user_123
  *                   email: user@example.com 
- *                   fullName: John tunde
+ *                   fullName: John Doe
  *                   role: STUDENT
  *                   profileColor: "#3B82F6"
  *                   isEmailVerified: true
@@ -935,9 +884,9 @@ authRouter.post("/reset-password", validate(resetPasswordSchema), resetPassword)
  *                 summary: Invalid verification code
  *                 value:
  *                   success: false
- *                   message: "Invalid verification code. 4 attempts remaining."
+ *                   message: Invalid verification code
  *               expiredCode:
- *                 summary: Expired code
+ *                 summary: Expired code (10 minutes)
  *                 value:
  *                   success: false
  *                   message: Verification code has expired. Please request a new one.
@@ -1113,6 +1062,48 @@ authRouter.post('/verify-email', validate(verifyEmailSchema), verifyEmail);
  *                       message: Please provide a valid email address
  */
 authRouter.post('/resend-verification', resendVerificationCode);
+
+
+/**
+ * @swagger
+ * /api/v1/auth/resend-password-reset-code:
+ *   post:
+ *     summary: Resend password reset code
+ *     tags: [Authentication]
+ *     description: Sends a new 4-digit password reset code to the user's email (expires in 1 hour)
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - email
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 format: email
+ *                 example: user@example.com
+ *     responses:
+ *       200:
+ *         description: Reset code resent successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Password reset code resent to your email
+ */
+authRouter.post(
+  '/resend-password-reset-code',
+  validate(forgotPasswordSchema),
+  resendPasswordResetCode
+);
 
 
 
