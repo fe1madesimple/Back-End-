@@ -59,3 +59,8 @@ export interface VerifyResetCodeInput {
   email: string;
   code: string;
 }
+
+export interface ResetPasswordInput {
+  email: string;
+  password: string;
+}
