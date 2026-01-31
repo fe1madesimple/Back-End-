@@ -504,7 +504,118 @@ Intentionally or recklessly causing serious harm to another.
     ],
   });
 
-  console.log('✅ Created Criminal Law modules and lessons');
+    console.log('✅ Created Criminal Law modules and lessons');
+    
+
+    const contractLaw = subjects[1]; // Already created in subjects array
+
+    const contractModule1 = await prisma.module.create({
+      data: {
+        subjectId: contractLaw.id,
+        name: 'Module 1: Contract Formation',
+        slug: 'contract-formation',
+        description: 'Offer, acceptance, consideration, and intention',
+        order: 1,
+        lessons: {
+          create: [
+            {
+              title: 'Lesson 1: Offer',
+              slug: 'offer',
+              content: '# Offer\n\nA definite promise to be bound...',
+              transcript: '0:00 - Offer explained...',
+              order: 1,
+              videoUrl:
+                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module1-lesson-1.mp4',
+              videoPublicId: 'fe1/contract-law/module1-lesson-1',
+              videoDuration: 780,
+            },
+            {
+              title: 'Lesson 2: Acceptance',
+              slug: 'acceptance',
+              content: '# Acceptance\n\nUnqualified agreement to offer terms...',
+              transcript: '0:00 - Acceptance explained...',
+              order: 2,
+              videoUrl:
+                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module1-lesson-2.mp4',
+              videoPublicId: 'fe1/contract-law/module1-lesson-2',
+              videoDuration: 720,
+            },
+          ],
+        },
+      },
+    });
+
+    const contractModule2 = await prisma.module.create({
+      data: {
+        subjectId: contractLaw.id,
+        name: 'Module 2: Terms and Breach',
+        slug: 'terms-and-breach',
+        description: 'Express terms, implied terms, and breach',
+        order: 2,
+        lessons: {
+          create: [
+            {
+              title: 'Lesson 1: Express Terms',
+              slug: 'express-terms',
+              content: '# Express Terms\n\nTerms explicitly agreed by parties...',
+              transcript: '0:00 - Express terms explained...',
+              order: 1,
+              videoUrl:
+                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module2-lesson-1.mp4',
+              videoPublicId: 'fe1/contract-law/module2-lesson-1',
+              videoDuration: 660,
+            },
+            {
+              title: 'Lesson 2: Breach of Contract',
+              slug: 'breach-of-contract',
+              content: '# Breach\n\nFailure to perform contractual obligations...',
+              transcript: '0:00 - Breach explained...',
+              order: 2,
+              videoUrl:
+                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module2-lesson-2.mp4',
+              videoPublicId: 'fe1/contract-law/module2-lesson-2',
+              videoDuration: 840,
+            },
+          ],
+        },
+      },
+    });
+
+    const contractModule3 = await prisma.module.create({
+      data: {
+        subjectId: contractLaw.id,
+        name: 'Module 3: Remedies',
+        slug: 'remedies',
+        description: 'Damages, specific performance, and injunctions',
+        order: 3,
+        lessons: {
+          create: [
+            {
+              title: 'Lesson 1: Damages',
+              slug: 'damages',
+              content: '# Damages\n\nMonetary compensation for breach...',
+              transcript: '0:00 - Damages explained...',
+              order: 1,
+              videoUrl:
+                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module3-lesson-1.mp4',
+              videoPublicId: 'fe1/contract-law/module3-lesson-1',
+              videoDuration: 900,
+            },
+            {
+              title: 'Lesson 2: Specific Performance',
+              slug: 'specific-performance',
+              content: '# Specific Performance\n\nCourt order to perform contract...',
+              transcript: '0:00 - Specific performance explained...',
+              order: 2,
+              videoUrl:
+                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module3-lesson-2.mp4',
+              videoPublicId: 'fe1/contract-law/module3-lesson-2',
+              videoDuration: 720,
+            },
+          ],
+        },
+      },
+    });
 
   // ============================================
   // MODULE QUESTIONS (MCQs)
