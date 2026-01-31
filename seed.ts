@@ -617,6 +617,117 @@ Intentionally or recklessly causing serious harm to another.
       },
     });
 
+
+    const tortLaw = subjects[2]; // Already created
+
+    const tortModule1 = await prisma.module.create({
+      data: {
+        subjectId: tortLaw.id,
+        name: 'Module 1: Negligence Fundamentals',
+        slug: 'negligence-fundamentals',
+        description: 'Duty of care, breach, causation, and damages',
+        order: 1,
+        lessons: {
+          create: [
+            {
+              title: 'Lesson 1: Duty of Care',
+              slug: 'duty-of-care',
+              content: '# Duty of Care\n\nNeighbour principle from Donoghue v Stevenson...',
+              transcript: '0:00 - Duty of care explained...',
+              order: 1,
+              videoUrl:
+                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module1-lesson-1.mp4',
+              videoPublicId: 'fe1/tort-law/module1-lesson-1',
+              videoDuration: 960,
+            },
+            {
+              title: 'Lesson 2: Breach of Duty',
+              slug: 'breach-of-duty',
+              content: '# Breach\n\nFalling below standard of reasonable person...',
+              transcript: '0:00 - Breach explained...',
+              order: 2,
+              videoUrl:
+                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module1-lesson-2.mp4',
+              videoPublicId: 'fe1/tort-law/module1-lesson-2',
+              videoDuration: 780,
+            },
+          ],
+        },
+      },
+    });
+
+    const tortModule2 = await prisma.module.create({
+      data: {
+        subjectId: tortLaw.id,
+        name: 'Module 2: Defamation',
+        slug: 'defamation',
+        description: 'Libel, slander, and defenses',
+        order: 2,
+        lessons: {
+          create: [
+            {
+              title: 'Lesson 1: Elements of Defamation',
+              slug: 'elements-defamation',
+              content: '# Defamation\n\nFalse statement harming reputation...',
+              transcript: '0:00 - Defamation explained...',
+              order: 1,
+              videoUrl:
+                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module2-lesson-1.mp4',
+              videoPublicId: 'fe1/tort-law/module2-lesson-1',
+              videoDuration: 840,
+            },
+            {
+              title: 'Lesson 2: Defenses to Defamation',
+              slug: 'defenses-defamation',
+              content: '# Defenses\n\nTruth, fair comment, privilege...',
+              transcript: '0:00 - Defenses explained...',
+              order: 2,
+              videoUrl:
+                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module2-lesson-2.mp4',
+              videoPublicId: 'fe1/tort-law/module2-lesson-2',
+              videoDuration: 720,
+            },
+          ],
+        },
+      },
+    });
+
+    const tortModule3 = await prisma.module.create({
+      data: {
+        subjectId: tortLaw.id,
+        name: 'Module 3: Nuisance',
+        slug: 'nuisance',
+        description: 'Private and public nuisance',
+        order: 3,
+        lessons: {
+          create: [
+            {
+              title: 'Lesson 1: Private Nuisance',
+              slug: 'private-nuisance',
+              content: '# Private Nuisance\n\nUnreasonable interference with land use...',
+              transcript: '0:00 - Private nuisance explained...',
+              order: 1,
+              videoUrl:
+                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module3-lesson-1.mp4',
+              videoPublicId: 'fe1/tort-law/module3-lesson-1',
+              videoDuration: 660,
+            },
+            {
+              title: 'Lesson 2: Public Nuisance',
+              slug: 'public-nuisance',
+              content: '# Public Nuisance\n\nInterference with public rights...',
+              transcript: '0:00 - Public nuisance explained...',
+              order: 2,
+              videoUrl:
+                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module3-lesson-2.mp4',
+              videoPublicId: 'fe1/tort-law/module3-lesson-2',
+              videoDuration: 600,
+            },
+          ],
+        },
+      },
+    });
+
   // ============================================
   // MODULE QUESTIONS (MCQs)
   // ============================================
