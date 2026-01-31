@@ -459,4 +459,178 @@ Intentionally or recklessly causing serious harm to another.
 
     console.log('✅ Created Criminal Law modules and lessons');
 
+    // ============================================
+    // MODULE QUESTIONS (MCQs)
+    // ============================================
+
+    await prisma.question.createMany({
+        data: [
+            // Module 1 Questions
+            {
+                moduleId: module1.id,
+                type: 'MCQ',
+                text: 'Which of the following best describes recklessness as defined in Irish Criminal Law?',
+                options: JSON.stringify([
+                    'A: Awareness of risk + unreasonable risk-taking (R v Cunningham)',
+                    'B: Mistake in judgment about legal consequences',
+                    'C: Objective test - what reasonable person would foresee',
+                    'D: Comprehensive failure to exercise due care in every circumstance',
+                ]),
+                correctAnswer: 'A',
+                explanation:
+                    'Recklessness involves consciously disregarding a known risk — see R v Cunningham (1957). The defendant must be aware of the risk and it must be unreasonable to take that risk.',
+                points: 1,
+                order: 1,
+            },
+            {
+                moduleId: module1.id,
+                type: 'MCQ',
+                text: 'In which scenario would there likely be NO actus reus?',
+                options: JSON.stringify([
+                    'A: Defendant drives car into pedestrian during epileptic seizure',
+                    'B: Defendant fails to rescue drowning child they have no duty toward',
+                    'C: Defendant possesses drugs unknowingly placed in their bag',
+                    'D: Both A and C',
+                ]),
+                correctAnswer: 'D',
+                explanation:
+                    'Actus reus requires a voluntary act. Epileptic seizures and unknowing possession lack voluntariness, so there is no actus reus.',
+                points: 1,
+                order: 2,
+            },
+            {
+                moduleId: module1.id,
+                type: 'MCQ',
+                text: 'What is the significance of "transferred malice"?',
+                options: JSON.stringify([
+                    'A: Defendant cannot be convicted if they harm unintended victim',
+                    'B: Mens rea transfers from intended victim to actual victim',
+                    'C: Only applies to property crimes, not personal violence',
+                    'D: Creates liability for negligence even without intent',
+                ]),
+                correctAnswer: 'B',
+                explanation:
+                    'Transferred malice means if D intends to harm A but actually harms B, the mens rea transfers to B, and D can still be convicted.',
+                points: 1,
+                order: 3,
+            },
+            {
+                moduleId: module1.id,
+                type: 'MCQ',
+                text: 'Which case established the "continuing act" doctrine for coincidence of actus reus and mens rea?',
+                options: JSON.stringify([
+                    'A: DPP v Murray',
+                    'B: Fagan v Metropolitan Police Commissioner',
+                    'C: Thabo Meli v R',
+                    "D: Attorney General v O'Brien",
+                ]),
+                correctAnswer: 'B',
+                explanation:
+                    "Fagan v Metropolitan Police Commissioner - defendant drove onto officer's foot accidentally (no mens rea initially), then refused to move (mens rea formed during continuing actus reus).",
+                points: 1,
+                order: 4,
+            },
+            {
+                moduleId: module1.id,
+                type: 'MCQ',
+                text: 'Strict liability offences are characterized by:',
+                options: JSON.stringify([
+                    'A: Requiring proof of both actus reus and mens rea',
+                    'B: No requirement to prove mens rea',
+                    'C: Only applicable to indictable offences',
+                    'D: Always involving moral culpability',
+                ]),
+                correctAnswer: 'B',
+                explanation:
+                    'Strict liability offences do not require proof of mens rea - conviction based on actus reus alone. Common in regulatory/public welfare offences.',
+                points: 1,
+                order: 5,
+            },
+
+            // Module 2 Questions
+            {
+                moduleId: module2.id,
+                type: 'MCQ',
+                text: 'What is the key difference between assault and battery?',
+                options: JSON.stringify([
+                    'A: Assault requires injury, battery does not',
+                    'B: Assault is fear of harm, battery is application of force',
+                    'C: Battery is indictable, assault is summary',
+                    'D: No real difference - terms are interchangeable',
+                ]),
+                correctAnswer: 'B',
+                explanation:
+                    'Assault = causing apprehension of immediate unlawful force (no contact needed). Battery = unlawful application of force (requires contact).',
+                points: 1,
+                order: 1,
+            },
+            {
+                moduleId: module2.id,
+                type: 'MCQ',
+                text: 'Under s.3 Non-Fatal Offences Against the Person Act 1997, "harm" means:',
+                options: JSON.stringify([
+                    'A: Only physical injuries requiring medical treatment',
+                    'B: Injury to body or mind, including pain or discomfort',
+                    'C: Serious harm creating substantial risk of death',
+                    'D: Permanent disfigurement or impairment only',
+                ]),
+                correctAnswer: 'B',
+                explanation:
+                    'Section 3 NFOAA defines "harm" broadly as injury to body or mind, including pain or discomfort. Does not require serious or permanent injury.',
+                points: 1,
+                order: 2,
+            },
+            {
+                moduleId: module2.id,
+                type: 'MCQ',
+                text: 'What level of harm triggers s.4 NFOAA 1997 (assault causing serious harm)?',
+                options: JSON.stringify([
+                    'A: Any injury requiring medical attention',
+                    'B: Injury causing substantial risk of death or serious disfigurement',
+                    'C: Psychological trauma alone',
+                    'D: Minor cuts or bruises if intentionally inflicted',
+                ]),
+                correctAnswer: 'B',
+                explanation:
+                    'Serious harm = injury creating substantial risk of death, serious disfigurement, or substantial loss/impairment of body function. Much higher threshold than ordinary "harm".',
+                points: 1,
+                order: 3,
+            },
+            {
+                moduleId: module2.id,
+                type: 'MCQ',
+                text: 'Which defense is NOT available to a charge of assault?',
+                options: JSON.stringify([
+                    'A: Self-defense (reasonable force)',
+                    'B: Consent (in limited circumstances)',
+                    'C: Mistake of fact (reasonable belief)',
+                    'D: Provocation (complete defense)',
+                ]),
+                correctAnswer: 'D',
+                explanation:
+                    'Provocation is NOT a complete defense to assault - it may reduce sentence but does not eliminate liability. Self-defense, limited consent, and reasonable mistake are valid defenses.',
+                points: 1,
+                order: 4,
+            },
+            {
+                moduleId: module2.id,
+                type: 'MCQ',
+                text: 'Maximum sentence for assault causing serious harm (s.4 NFOAA) with intent is:',
+                options: JSON.stringify([
+                    'A: 5 years imprisonment',
+                    'B: 10 years imprisonment',
+                    'C: 14 years imprisonment',
+                    'D: Life imprisonment',
+                ]),
+                correctAnswer: 'D',
+                explanation:
+                    'Section 4 NFOAA: assault causing serious harm with intent carries up to life imprisonment. Without intent (recklessness only), max is 10 years.',
+                points: 1,
+                order: 5,
+            },
+        ],
+    });
+
+    console.log('✅ Created module questions (MCQs)');
+
 }
