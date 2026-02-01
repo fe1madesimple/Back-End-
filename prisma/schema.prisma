@@ -76,6 +76,13 @@ model User {
   savedCases        SavedCase[]
   quizAttempts      QuizAttempt[]
   achievements      UserAchievement[]
+
+  subjectProgress  UserSubjectProgress[]
+  moduleProgress   UserModuleProgress[]
+  lessonProgress   UserLessonProgress[]
+  questionAttempts QuestionAttempt[]
+  studySessions    StudySession[]
+  podcastProgress  UserPodcastProgress[]
   
   @@index([email])
   @@index([googleId])
@@ -195,164 +202,6 @@ enum PaymentStatus {
   PENDING
 }
 
-// ============================================
-// CONTENT HIERARCHY 
-// ============================================
-
-model Subject {
-  id            String    @id @default(cuid())
-  title         String    // "Criminal Law", "Contract Law", etc.
-  description   String?
-  color         String?   // For UI display
-  order         Int       // Display order
-  isPublished   Boolean   @default(false)
-  
-  // Timestamps
-  createdAt     DateTime  @default(now())
-  updatedAt     DateTime  @updatedAt
-  
-  // Relations
-  modules       Module[]
-  questions     Question[]
-  
-  @@index([isPublished])
-  @@index([order])
-  @@map("subjects")
-}
-
-model Module {
-  id            String    @id @default(cuid())
-  subjectId     String
-  subject       Subject   @relation(fields: [subjectId], references: [id], onDelete: Cascade)
-  
-  title         String    // "Foundations of Criminal Law"
-  description   String?
-  order         Int       // Display order within subject
-  isPublished   Boolean   @default(false)
-  
-  // Progress tracking
-  totalLessons  Int       @default(0)
-  
-  // Timestamps
-  createdAt     DateTime  @default(now())
-  updatedAt     DateTime  @updatedAt
-  
-  // Relations
-  lessons       Lesson[]
-  questions     Question[]
-  
-  @@index([subjectId])
-  @@index([isPublished])
-  @@index([order])
-  @@index([subjectId, isPublished])
-  @@map("modules")
-}
-
-model Lesson {
-  id                String        @id @default(cuid())
-  moduleId          String
-  module            Module        @relation(fields: [moduleId], references: [id], onDelete: Cascade)
-  
-  title             String        // "Characteristics of a Crime"
-  content           String        @db.Text // Rich text/HTML content
-  transcript        String?       @db.Text // For video lessons
-  order             Int           // Display order within module
-  estimatedDuration Int?          // In minutes
-  version           Int           @default(1) // Content versioning
-  isPublished       Boolean       @default(false)
-  
-  // Timestamps
-  createdAt         DateTime      @default(now())
-  updatedAt         DateTime      @updatedAt
-  
-  // Relations
-  assets            LessonAsset[]
-  
-  @@index([moduleId])
-  @@index([isPublished])
-  @@index([order])
-  @@index([moduleId, isPublished])
-  @@map("lessons")
-}
-
-model LessonAsset {
-  id          String     @id @default(cuid())
-  lessonId    String
-  lesson      Lesson     @relation(fields: [lessonId], references: [id], onDelete: Cascade)
-  
-  type        AssetType
-  url         String     // Cloudinary URL
-  publicId    String     // Cloudinary public ID (for deletion)
-  title       String?
-  fileSize    Int?       // In bytes
-  duration    Int?       // For videos (in seconds)
-  order       Int        // Display order
-  
-  // Timestamps
-  createdAt   DateTime   @default(now())
-  
-  @@index([lessonId])
-  @@index([type])
-  @@map("lesson_assets")
-}
-
-enum AssetType {
-  VIDEO
-  PDF
-  IMAGE
-  AUDIO
-}
-
-// ============================================
-// ASSESSMENTS & PRACTICE 
-// ============================================
-
-model Question {
-  id              String         @id @default(cuid())
-  subjectId       String
-  subject         Subject        @relation(fields: [subjectId], references: [id], onDelete: Cascade)
-  moduleId        String?
-  module          Module?        @relation(fields: [moduleId], references: [id], onDelete: SetNull)
-  
-  year            Int?           // 2023, 2022, etc.
-  questionText    String         @db.Text
-  sampleAnswer    String?        @db.Text
-  type            QuestionType
-  difficulty      Difficulty?
-  topics          String[]       // Array of topics
-  
-  // For MCQ
-  options         Json?          // Store MCQ options
-  correctAnswer   String?        // Correct option for MCQ
-  explanation     String?        @db.Text // Explanation for MCQ
-  
-  isPublished     Boolean        @default(false)
-  
-  // Timestamps
-  createdAt       DateTime       @default(now())
-  updatedAt       DateTime       @updatedAt
-  
-  // Relations
-  timedSessions   TimedSession[]
-  aiEvaluations   AIEvaluation[]
-  quizAttempts    QuizAttempt[]
-  
-  @@index([subjectId])
-  @@index([moduleId])
-  @@index([type])
-  @@index([difficulty])
-  @@index([year])
-  @@index([isPublished])
-  @@index([subjectId, type, isPublished])
-  @@index([year, subjectId])
-  @@map("questions")
-}
-
-enum QuestionType {
-  ESSAY
-  MCQ
-}
-
 enum Difficulty {
   EASY
   MEDIUM
@@ -450,10 +299,6 @@ model AIEvaluation {
   @@map("ai_evaluations")
 }
 
-// ============================================
-// CASE LAW LIBRARY
-// ============================================
-
 model CaseBrief {
   id            String      @id @default(cuid())
   caseName      String      // "Donoghue v Stevenson"
@@ -503,9 +348,6 @@ model SavedCase {
   @@map("saved_cases")
 }
 
-// ============================================
-// ANALYTICS & PROGRESS
-// ============================================
 
 model StudyLog {
   id            String       @id @default(cuid())
@@ -538,9 +380,6 @@ enum ActivityType {
   PODCAST_LISTEN
 }
 
-// ============================================
-// ACHIEVEMENTS & GAMIFICATION
-// ============================================
 
 model Achievement {
   id            String             @id @default(cuid())
@@ -583,10 +422,6 @@ model UserAchievement {
   @@map("user_achievements")
 }
 
-// ============================================
-// ANNOUNCEMENTS
-// ============================================
-
 model Announcement {
   id            String            @id @default(cuid())
   title         String
@@ -613,4 +448,292 @@ enum AnnouncementType {
   INFO
   WARNING
   URGENT
+}
+
+
+model UserPodcastProgress {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  podcastId       String
+  podcast         Podcast  @relation(fields: [podcastId], references: [id], onDelete: Cascade)
+  
+  isCompleted     Boolean  @default(false)
+  listenedSeconds Int      @default(0)
+  completedAt     DateTime?
+  
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  
+  @@unique([userId, podcastId])
+  @@map("user_podcast_progress")
+}
+
+model Podcast {
+  id          String    @id @default(cuid())
+  title       String
+  description String?   @db.Text
+  subject     String?   // Related subject
+  audioUrl    String    // Cloudinary URL
+  publicId    String    // Cloudinary public_id
+  duration    Int       // Duration in seconds
+  thumbnail   String?   // Cover image URL
+  
+  order       Int       @default(0)
+  isPublished Boolean   @default(true)
+  
+  progress    UserPodcastProgress[]
+  
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  
+  @@map("podcasts")
+}
+
+model StudySession {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  subjectId       String?
+  moduleId        String?
+  lessonId        String?
+  
+  startedAt       DateTime @default(now())
+  endedAt         DateTime?
+  durationSeconds Int      @default(0)
+  
+  createdAt       DateTime @default(now())
+  
+  @@map("study_sessions")
+}
+
+model UserLessonProgress {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lessonId        String
+  lesson          Lesson   @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  
+  isCompleted     Boolean  @default(false)
+  videoWatchedSeconds Int  @default(0)
+  completedAt     DateTime?
+  timeSpentSeconds Int     @default(0)
+  
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  
+  @@unique([userId, lessonId])
+  @@map("user_lesson_progress")
+}
+
+enum ProgressStatus {
+  NOT_STARTED
+  IN_PROGRESS
+  COMPLETED
+}
+
+model UserModuleProgress {
+  id              String         @id @default(cuid())
+  userId          String
+  user            User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  moduleId        String
+  module          Module         @relation(fields: [moduleId], references: [id], onDelete: Cascade)
+  
+  progressPercent Float          @default(0) // 0-100
+  status          ProgressStatus @default(NOT_STARTED)
+  completedLessons Int           @default(0)
+  totalLessons    Int            @default(0) // Cached for performance
+  lastAccessedAt  DateTime?
+  
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+  
+  @@unique([userId, moduleId])
+  @@map("user_module_progress")
+}
+
+model UserSubjectProgress {
+  id              String         @id @default(cuid())
+  userId          String
+  user            User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  subjectId       String
+  subject         Subject        @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  
+  progressPercent Float          @default(0) // 0-100
+  status          ProgressStatus @default(NOT_STARTED)
+  totalTimeSeconds Int           @default(0)
+  lastAccessedAt  DateTime?
+  
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+  
+  @@unique([userId, subjectId])
+  @@map("user_subject_progress")
+}
+
+model Subject {
+  id          String    @id @default(cuid())
+  name        String    @unique
+  slug        String    @unique
+  description String?   @db.Text
+  icon        String?   // Icon identifier
+  order       Int       // Display order
+  isPublished Boolean   @default(true)
+  
+  modules     Module[]
+  userProgress UserSubjectProgress[]
+  
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  
+  @@map("subjects")
+}
+
+model Module {
+  id          String    @id @default(cuid())
+  subjectId   String
+  subject     Subject   @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  
+  name        String
+  slug        String
+  description String?   @db.Text
+  order       Int       // Display order within subject
+  isPublished Boolean   @default(true)
+  
+  lessons     Lesson[]
+  questions   Question[] // Module-level questions
+  userProgress UserModuleProgress[]
+  
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  
+  @@unique([subjectId, slug])
+  @@map("modules")
+}
+
+model Lesson {
+  id          String    @id @default(cuid())
+  moduleId    String
+  module      Module    @relation(fields: [moduleId], references: [id], onDelete: Cascade)
+  
+  title       String
+  slug        String
+  content     String    @db.Text // Rich text/markdown
+  transcript  String?   @db.Text // Video transcript
+  order       Int       // Display order within module
+  
+  // Video details
+  videoUrl    String?
+  videoPublicId String? // Cloudinary public_id for deletion
+  videoDuration Int?    // Duration in seconds
+  
+  isPublished Boolean   @default(true)
+  
+  // Relations
+  assets      LessonAsset[]
+  userProgress UserLessonProgress[]
+  
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  
+  @@unique([moduleId, slug])
+  @@map("lessons")
+}
+
+model LessonAsset {
+  id          String      @id @default(cuid())
+  lessonId    String
+  lesson      Lesson      @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  
+  type        AssetType
+  title       String
+  url         String      // Cloudinary/S3 URL
+  publicId    String      // For deletion
+  fileSize    Int?        // In bytes
+  mimeType    String?
+  duration    Int?        // For audio/video (seconds)
+  
+  order       Int         @default(0)
+  
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+  
+  @@map("lesson_assets")
+}
+
+enum AssetType {
+  VIDEO
+  PDF
+  AUDIO
+  IMAGE
+}
+
+model Question {
+  id          String        @id @default(cuid())
+  moduleId    String?       // Questions belong to modules
+  module      Module?       @relation(fields: [moduleId], references: [id], onDelete: SetNull)
+  
+  type        QuestionType
+  text        String        @db.Text
+  options     Json?         // For MCQ: ["A: ...", "B: ...", "C: ...", "D: ..."]
+  correctAnswer String?     // For MCQ: "A"
+  explanation String?       @db.Text
+  points      Int           @default(1)
+  
+  // For past questions
+  year        Int?
+  subject     String?
+  examType    String?       // "Essay", "Problem", "MCQ"
+  
+  order       Int           @default(0)
+  isPublished Boolean       @default(true)
+  
+  // Relations - ADD THESE 3 LINES:
+  timedSessions TimedSession[]
+  quizAttempts  QuizAttempt[]
+  aiEvaluations AIEvaluation[]
+  attempts    QuestionAttempt[]
+  
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+  
+  @@map("questions")
+}
+
+enum QuestionType {
+  MCQ
+  ESSAY
+}
+
+model QuestionAttempt {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  questionId      String
+  question        Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  
+  answer          String   @db.Text
+  isCorrect       Boolean? // For MCQ
+  pointsEarned    Int      @default(0)
+  
+  // AI Grading (for essays)
+  aiScore         Float?   // 0-100
+  knowledgeScore  Float?   // Out of 30
+  authoritiesScore Float?  // Out of 25
+  applicationScore Float?  // Out of 25
+  analysisScore   Float?   // Out of 15
+  structureScore  Float?   // Out of 5
+  band            String?  // "70-79% Upper Second"
+  appPass         Boolean? // true if >= 80%
+  aiFeedback      String?  @db.Text
+  strengths       Json?    // Array of strings
+  improvements    Json?    // Array of strings
+  nextSteps       String?  @db.Text
+  
+  timeTakenSeconds Int?
+  
+  createdAt       DateTime @default(now())
+  
+  @@map("question_attempts")
 }
