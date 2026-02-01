@@ -1006,6 +1006,166 @@ Intentionally or recklessly causing serious harm to another.
         points: 1,
         order: 5,
       },
+      {
+        moduleId: module2.id,
+        type: 'MCQ',
+        text: 'Words alone can constitute assault if:',
+        options: JSON.stringify([
+          'A: Never - assault requires physical gesture',
+          'B: They cause victim to apprehend immediate unlawful force',
+          'C: They are offensive or insulting',
+          'D: Only if accompanied by threatening gesture',
+        ]),
+        correctAnswer: 'B',
+        explanation:
+          'Words alone can constitute assault if they cause reasonable apprehension of immediate unlawful force. Context matters.',
+        points: 1,
+        order: 6,
+      },
+      {
+        moduleId: module2.id,
+        type: 'MCQ',
+        text: 'Consent is a valid defense to assault in which scenario?',
+        options: JSON.stringify([
+          'A: Lawful sporting activity within rules',
+          'B: Street fight between willing participants',
+          'C: Sadomasochistic activity causing serious harm',
+          'D: All of the above',
+        ]),
+        correctAnswer: 'A',
+        explanation:
+          'Consent valid for lawful sports, medical procedures, and minor harm. NOT valid for serious harm, street fights, or activities against public policy.',
+        points: 1,
+        order: 7,
+      },
+      {
+        moduleId: module2.id,
+        type: 'MCQ',
+        text: 'What makes assault "aggravated"?',
+        options: JSON.stringify([
+          'A: Use of weapon or intent to resist arrest',
+          'B: Any assault causing harm',
+          'C: Assault on stranger rather than acquaintance',
+          'D: Assault motivated by anger',
+        ]),
+        correctAnswer: 'A',
+        explanation:
+          'Aggravated assault involves weapon, intent to commit indictable offense, or intent to resist/prevent lawful arrest/detention.',
+        points: 1,
+        order: 8,
+      },
+      {
+        moduleId: module2.id,
+        type: 'MCQ',
+        text: 'Can battery occur without assault?',
+        options: JSON.stringify([
+          'A: No - assault always precedes battery',
+          'B: Yes - if victim unaware of impending contact',
+          'C: Only in cases of indirect force',
+          'D: Never - they are the same offense',
+        ]),
+        correctAnswer: 'B',
+        explanation:
+          'Battery can occur without assault if victim unaware (e.g., struck from behind). No apprehension = no assault, but contact = battery.',
+        points: 1,
+        order: 9,
+      },
+      {
+        moduleId: module2.id,
+        type: 'MCQ',
+        text: 'Which does NOT constitute "serious harm" under s.4 NFOAA?',
+        options: JSON.stringify([
+          'A: Broken jaw requiring surgery',
+          'B: Severe bruising and pain',
+          'C: Loss of kidney function',
+          'D: Permanent facial scarring',
+        ]),
+        correctAnswer: 'B',
+        explanation:
+          'Severe bruising is "harm" (s.3) not "serious harm". Serious harm requires substantial risk of death, serious disfigurement, or substantial impairment.',
+        points: 1,
+        order: 10,
+      },
+      {
+        moduleId: module2.id,
+        type: 'MCQ',
+        text: 'Self-defense requires that force used be:',
+        options: JSON.stringify([
+          'A: Minimal force only',
+          'B: Proportionate and reasonable in circumstances',
+          'C: Less than force threatened',
+          'D: Non-lethal in all cases',
+        ]),
+        correctAnswer: 'B',
+        explanation:
+          'Self-defense force must be reasonable and proportionate to threat. Can include lethal force if threat is of death/serious harm and proportionate.',
+        points: 1,
+        order: 11,
+      },
+      {
+        moduleId: module2.id,
+        type: 'MCQ',
+        text: 'Assault occasioning actual bodily harm (ABH) requires:',
+        options: JSON.stringify([
+          'A: Any assault that causes any injury',
+          'B: Assault causing harm more than transient or trifling',
+          'C: Intent to cause serious harm',
+          'D: Use of a weapon',
+        ]),
+        correctAnswer: 'B',
+        explanation:
+          'ABH requires assault causing harm beyond merely transient or trifling. Includes any hurt or injury interfering with health or comfort.',
+        points: 1,
+        order: 12,
+      },
+      {
+        moduleId: module2.id,
+        type: 'MCQ',
+        text: 'Which is TRUE about poisoning offenses?',
+        options: JSON.stringify([
+          'A: Requires victim to be harmed',
+          'B: Administering noxious substance is sufficient',
+          'C: Only applies to lethal substances',
+          'D: Requires intent to kill',
+        ]),
+        correctAnswer: 'B',
+        explanation:
+          'Poisoning offense complete upon administering noxious substance, regardless of whether harm results. Intent requirement varies by specific offense.',
+        points: 1,
+        order: 13,
+      },
+      {
+        moduleId: module2.id,
+        type: 'MCQ',
+        text: 'Wounding requires:',
+        options: JSON.stringify([
+          'A: Any breaking of skin',
+          'B: Breaking of whole skin (both layers)',
+          'C: Serious harm',
+          'D: Use of sharp instrument',
+        ]),
+        correctAnswer: 'B',
+        explanation:
+          'Wounding requires breaking of continuity of whole skin (both dermis and epidermis). Internal bleeding alone not sufficient.',
+        points: 1,
+        order: 14,
+      },
+      {
+        moduleId: module2.id,
+        type: 'MCQ',
+        text: 'False imprisonment requires:',
+        options: JSON.stringify([
+          'A: Physical restraints or locked room',
+          'B: Complete restriction of movement in all directions',
+          'C: Victim awareness of confinement',
+          'D: Intent to permanently detain',
+        ]),
+        correctAnswer: 'B',
+        explanation:
+          'False imprisonment is unlawful restriction of liberty. Requires total restraint (blocked in all directions). No need for awareness, force, or prison.',
+        points: 1,
+        order: 15,
+      },
     ],
   });
 
