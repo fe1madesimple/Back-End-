@@ -688,7 +688,7 @@ Intentionally or recklessly causing serious harm to another.
 
   await prisma.question.createMany({
     data: [
-      // Module 1 Questions
+      // Module 1 Questions  -- crimninal law
       {
         moduleId: module1.id,
         type: 'MCQ',
@@ -925,7 +925,7 @@ Intentionally or recklessly causing serious harm to another.
         order: 15,
       },
 
-      // Module 2 Questions
+      // Module 2 Questions  -- crimninal law
       {
         moduleId: module2.id,
         type: 'MCQ',
@@ -1163,6 +1163,248 @@ Intentionally or recklessly causing serious harm to another.
         correctAnswer: 'B',
         explanation:
           'False imprisonment is unlawful restriction of liberty. Requires total restraint (blocked in all directions). No need for awareness, force, or prison.',
+        points: 1,
+        order: 15,
+      },
+
+      // Module 2 Questions -- crimninal law
+      {
+        moduleId: module3.id,
+        type: 'MCQ',
+        text: 'Under Irish law, theft requires:',
+        options: JSON.stringify([
+          'A: Permanent deprivation only',
+          'B: Dishonest appropriation with intent to permanently deprive',
+          'C: Taking and carrying away property',
+          'D: Breaking and entering',
+        ]),
+        correctAnswer: 'B',
+        explanation:
+          'Theft: dishonest appropriation of property belonging to another with intention of permanently depriving the other of it.',
+        points: 1,
+        order: 1,
+      },
+      {
+        moduleId: module3.id,
+        type: 'MCQ',
+        text: 'What distinguishes robbery from theft?',
+        options: JSON.stringify([
+          'A: Value of property taken',
+          'B: Use or threat of force before or at time of stealing',
+          'C: Taking from person rather than building',
+          'D: Intent to sell stolen property',
+        ]),
+        correctAnswer: 'B',
+        explanation:
+          'Robbery is theft with force or threat of force immediately before or at time of stealing and in order to steal.',
+        points: 1,
+        order: 2,
+      },
+      {
+        moduleId: module3.id,
+        type: 'MCQ',
+        text: 'Burglary is committed when defendant:',
+        options: JSON.stringify([
+          'A: Enters building as trespasser with intent to steal',
+          'B: Steals from any building',
+          'C: Breaks window to enter property',
+          'D: Trespasses on land',
+        ]),
+        correctAnswer: 'A',
+        explanation:
+          'Burglary: entering building as trespasser with intent to commit theft, assault, or criminal damage (or attempting/committing these inside).',
+        points: 1,
+        order: 3,
+      },
+      {
+        moduleId: module3.id,
+        type: 'MCQ',
+        text: 'Can you steal property you already own?',
+        options: JSON.stringify([
+          'A: No - never',
+          'B: Yes - if someone else has possession or control of it',
+          'C: Only if property was originally stolen',
+          'D: Yes - in all circumstances',
+        ]),
+        correctAnswer: 'B',
+        explanation:
+          'Can steal own property if another has lawful possession/control (e.g., property held by bailee, or subject to trust).',
+        points: 1,
+        order: 4,
+      },
+      {
+        moduleId: module3.id,
+        type: 'MCQ',
+        text: 'Appropriation occurs when defendant:',
+        options: JSON.stringify([
+          'A: Only physically takes property',
+          'B: Assumes any right of owner',
+          'C: Only sells or destroys property',
+          'D: Removes property from premises',
+        ]),
+        correctAnswer: 'B',
+        explanation:
+          'Appropriation is assuming any of the rights of an owner (using, selling, destroying, keeping, etc.). Even touching can be appropriation.',
+        points: 1,
+        order: 5,
+      },
+      {
+        moduleId: module3.id,
+        type: 'MCQ',
+        text: 'Dishonesty is NOT present when defendant:',
+        options: JSON.stringify([
+          'A: Believes they have legal right to property',
+          'B: Intends to return property later',
+          'C: Finds property and keeps it',
+          'D: Takes property secretly',
+        ]),
+        correctAnswer: 'A',
+        explanation:
+          'Defendant not dishonest if they believe they have legal right to property, or owner would consent, or owner cannot be found (reasonable steps taken).',
+        points: 1,
+        order: 6,
+      },
+      {
+        moduleId: module3.id,
+        type: 'MCQ',
+        text: 'Handling stolen goods requires:',
+        options: JSON.stringify([
+          'A: Knowledge goods are stolen',
+          'B: Knowing or believing goods are stolen',
+          'C: Actual participation in theft',
+          'D: Receiving payment for goods',
+        ]),
+        correctAnswer: 'B',
+        explanation:
+          'Handling: dishonestly receiving, retaining, removing, disposing of, or realizing stolen goods, knowing or believing them to be stolen.',
+        points: 1,
+        order: 7,
+      },
+      {
+        moduleId: module3.id,
+        type: 'MCQ',
+        text: 'Making off without payment applies when:',
+        options: JSON.stringify([
+          'A: Any theft from shop',
+          'B: Dishonestly leaving without paying when payment expected on spot',
+          'C: Refusing to pay disputed bill',
+          'D: Leaving restaurant without money',
+        ]),
+        correctAnswer: 'B',
+        explanation:
+          'Making off: dishonestly making off without paying for goods/services where payment expected on the spot. Must know payment required.',
+        points: 1,
+        order: 8,
+      },
+      {
+        moduleId: module3.id,
+        type: 'MCQ',
+        text: 'Fraud by false representation requires:',
+        options: JSON.stringify([
+          'A: Victim to suffer loss',
+          'B: Dishonest false representation made knowingly to gain/cause loss',
+          'C: Written statement only',
+          'D: Successful deception',
+        ]),
+        correctAnswer: 'B',
+        explanation:
+          'Fraud: dishonestly making false representation knowing it is/might be false, with intent to gain or cause loss. No need for actual gain/loss.',
+        points: 1,
+        order: 9,
+      },
+      {
+        moduleId: module3.id,
+        type: 'MCQ',
+        text: 'Blackmail consists of:',
+        options: JSON.stringify([
+          'A: Any threat',
+          'B: Unwarranted demand with menaces with view to gain/cause loss',
+          'C: Threatening physical violence only',
+          'D: Demanding money',
+        ]),
+        correctAnswer: 'B',
+        explanation:
+          'Blackmail: making unwarranted demand with menaces (threats) with view to gain for self/another or intent to cause loss. Threats can be any type.',
+        points: 1,
+        order: 10,
+      },
+      {
+        moduleId: module3.id,
+        type: 'MCQ',
+        text: 'Criminal damage requires:',
+        options: JSON.stringify([
+          'A: Permanent destruction only',
+          'B: Destroying or damaging property belonging to another without lawful excuse',
+          'C: Using fire or explosives',
+          'D: Causing financial loss over certain amount',
+        ]),
+        correctAnswer: 'B',
+        explanation:
+          'Criminal damage: intentionally or recklessly destroying/damaging property belonging to another without lawful excuse. Temporary damage sufficient.',
+        points: 1,
+        order: 11,
+      },
+      {
+        moduleId: module3.id,
+        type: 'MCQ',
+        text: 'Lawful excuse for criminal damage includes:',
+        options: JSON.stringify([
+          'A: Belief owner would consent',
+          'B: Acting out of anger',
+          'C: Damaging own property in all cases',
+          'D: Revenge for previous wrong',
+        ]),
+        correctAnswer: 'A',
+        explanation:
+          "Lawful excuse: belief owner would consent, or acting to protect property (own or another's) and reasonable in circumstances.",
+        points: 1,
+        order: 12,
+      },
+      {
+        moduleId: module3.id,
+        type: 'MCQ',
+        text: 'Arson is:',
+        options: JSON.stringify([
+          'A: Any fire-setting',
+          'B: Criminal damage by fire',
+          'C: Endangering life by fire',
+          'D: Burning buildings only',
+        ]),
+        correctAnswer: 'B',
+        explanation:
+          'Arson is criminal damage caused by fire. Can apply to any property. More serious if life endangered.',
+        points: 1,
+        order: 13,
+      },
+      {
+        moduleId: module3.id,
+        type: 'MCQ',
+        text: 'Taking a vehicle without authority (TWOC) differs from theft because:',
+        options: JSON.stringify([
+          'A: No intent to permanently deprive required',
+          'B: Only applies to cars not other vehicles',
+          'C: No dishonesty required',
+          'D: All of the above',
+        ]),
+        correctAnswer: 'A',
+        explanation:
+          'TWOC: taking vehicle without owner consent without intent to permanently deprive. Lower offense than theft as may intend to return it.',
+        points: 1,
+        order: 14,
+      },
+      {
+        moduleId: module3.id,
+        type: 'MCQ',
+        text: 'Aggravated burglary requires:',
+        options: JSON.stringify([
+          'A: Burglary of dwelling',
+          'B: Burglary while having weapon or firearm or explosive',
+          'C: Burglary causing serious harm',
+          'D: Repeat burglary offense',
+        ]),
+        correctAnswer: 'B',
+        explanation:
+          'Aggravated burglary: committing burglary while having with them any firearm, weapon, or explosive. Much more serious offense.',
         points: 1,
         order: 15,
       },
