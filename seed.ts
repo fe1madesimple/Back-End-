@@ -456,277 +456,231 @@ Intentionally or recklessly causing serious harm to another.
     },
   });
 
-  // Module 3-8 (abbreviated for brevity)
-  await prisma.module.createMany({
-    data: [
-      {
-        subjectId: criminalLaw.id,
-        name: 'Module 3: Property and Economic Offences',
-        slug: 'property-economic-offences',
-        description: 'Theft, robbery, burglary, and fraud',
-        order: 3,
+  console.log('✅ Created Criminal Law modules and lessons');
+
+  const contractLaw = subjects[1]; // Already created in subjects array
+
+  const contractModule1 = await prisma.module.create({
+    data: {
+      subjectId: contractLaw.id,
+      name: 'Module 1: Contract Formation',
+      slug: 'contract-formation',
+      description: 'Offer, acceptance, consideration, and intention',
+      order: 1,
+      lessons: {
+        create: [
+          {
+            title: 'Lesson 1: Offer',
+            slug: 'offer',
+            content: '# Offer\n\nA definite promise to be bound...',
+            transcript: '0:00 - Offer explained...',
+            order: 1,
+            videoUrl:
+              'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module1-lesson-1.mp4',
+            videoPublicId: 'fe1/contract-law/module1-lesson-1',
+            videoDuration: 780,
+          },
+          {
+            title: 'Lesson 2: Acceptance',
+            slug: 'acceptance',
+            content: '# Acceptance\n\nUnqualified agreement to offer terms...',
+            transcript: '0:00 - Acceptance explained...',
+            order: 2,
+            videoUrl:
+              'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module1-lesson-2.mp4',
+            videoPublicId: 'fe1/contract-law/module1-lesson-2',
+            videoDuration: 720,
+          },
+        ],
       },
-      {
-        subjectId: criminalLaw.id,
-        name: 'Module 4: Public Order & State Security',
-        slug: 'public-order-state-security',
-        description: 'Public order offences and offences against the state',
-        order: 4,
-      },
-      {
-        subjectId: criminalLaw.id,
-        name: 'Module 5: Inchoate & Ancillary Offences',
-        slug: 'inchoate-ancillary-offences',
-        description: 'Attempts, conspiracy, and complicity',
-        order: 5,
-      },
-      {
-        subjectId: criminalLaw.id,
-        name: 'Module 6: Special Offences',
-        slug: 'special-offences',
-        description: 'Sexual offences, homicide, and special categories',
-        order: 6,
-      },
-      {
-        subjectId: criminalLaw.id,
-        name: 'Module 7: Defenses',
-        slug: 'defenses',
-        description: 'Self-defense, duress, necessity, and insanity',
-        order: 7,
-      },
-      {
-        subjectId: criminalLaw.id,
-        name: 'Module 8: Procedure',
-        slug: 'procedure',
-        description: 'Criminal procedure, evidence, and trial process',
-        order: 8,
-      },
-    ],
+    },
   });
 
-    console.log('✅ Created Criminal Law modules and lessons');
-    
-
-    const contractLaw = subjects[1]; // Already created in subjects array
-
-    const contractModule1 = await prisma.module.create({
-      data: {
-        subjectId: contractLaw.id,
-        name: 'Module 1: Contract Formation',
-        slug: 'contract-formation',
-        description: 'Offer, acceptance, consideration, and intention',
-        order: 1,
-        lessons: {
-          create: [
-            {
-              title: 'Lesson 1: Offer',
-              slug: 'offer',
-              content: '# Offer\n\nA definite promise to be bound...',
-              transcript: '0:00 - Offer explained...',
-              order: 1,
-              videoUrl:
-                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module1-lesson-1.mp4',
-              videoPublicId: 'fe1/contract-law/module1-lesson-1',
-              videoDuration: 780,
-            },
-            {
-              title: 'Lesson 2: Acceptance',
-              slug: 'acceptance',
-              content: '# Acceptance\n\nUnqualified agreement to offer terms...',
-              transcript: '0:00 - Acceptance explained...',
-              order: 2,
-              videoUrl:
-                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module1-lesson-2.mp4',
-              videoPublicId: 'fe1/contract-law/module1-lesson-2',
-              videoDuration: 720,
-            },
-          ],
-        },
+  const contractModule2 = await prisma.module.create({
+    data: {
+      subjectId: contractLaw.id,
+      name: 'Module 2: Terms and Breach',
+      slug: 'terms-and-breach',
+      description: 'Express terms, implied terms, and breach',
+      order: 2,
+      lessons: {
+        create: [
+          {
+            title: 'Lesson 1: Express Terms',
+            slug: 'express-terms',
+            content: '# Express Terms\n\nTerms explicitly agreed by parties...',
+            transcript: '0:00 - Express terms explained...',
+            order: 1,
+            videoUrl:
+              'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module2-lesson-1.mp4',
+            videoPublicId: 'fe1/contract-law/module2-lesson-1',
+            videoDuration: 660,
+          },
+          {
+            title: 'Lesson 2: Breach of Contract',
+            slug: 'breach-of-contract',
+            content: '# Breach\n\nFailure to perform contractual obligations...',
+            transcript: '0:00 - Breach explained...',
+            order: 2,
+            videoUrl:
+              'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module2-lesson-2.mp4',
+            videoPublicId: 'fe1/contract-law/module2-lesson-2',
+            videoDuration: 840,
+          },
+        ],
       },
-    });
+    },
+  });
 
-    const contractModule2 = await prisma.module.create({
-      data: {
-        subjectId: contractLaw.id,
-        name: 'Module 2: Terms and Breach',
-        slug: 'terms-and-breach',
-        description: 'Express terms, implied terms, and breach',
-        order: 2,
-        lessons: {
-          create: [
-            {
-              title: 'Lesson 1: Express Terms',
-              slug: 'express-terms',
-              content: '# Express Terms\n\nTerms explicitly agreed by parties...',
-              transcript: '0:00 - Express terms explained...',
-              order: 1,
-              videoUrl:
-                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module2-lesson-1.mp4',
-              videoPublicId: 'fe1/contract-law/module2-lesson-1',
-              videoDuration: 660,
-            },
-            {
-              title: 'Lesson 2: Breach of Contract',
-              slug: 'breach-of-contract',
-              content: '# Breach\n\nFailure to perform contractual obligations...',
-              transcript: '0:00 - Breach explained...',
-              order: 2,
-              videoUrl:
-                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module2-lesson-2.mp4',
-              videoPublicId: 'fe1/contract-law/module2-lesson-2',
-              videoDuration: 840,
-            },
-          ],
-        },
+  const contractModule3 = await prisma.module.create({
+    data: {
+      subjectId: contractLaw.id,
+      name: 'Module 3: Remedies',
+      slug: 'remedies',
+      description: 'Damages, specific performance, and injunctions',
+      order: 3,
+      lessons: {
+        create: [
+          {
+            title: 'Lesson 1: Damages',
+            slug: 'damages',
+            content: '# Damages\n\nMonetary compensation for breach...',
+            transcript: '0:00 - Damages explained...',
+            order: 1,
+            videoUrl:
+              'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module3-lesson-1.mp4',
+            videoPublicId: 'fe1/contract-law/module3-lesson-1',
+            videoDuration: 900,
+          },
+          {
+            title: 'Lesson 2: Specific Performance',
+            slug: 'specific-performance',
+            content: '# Specific Performance\n\nCourt order to perform contract...',
+            transcript: '0:00 - Specific performance explained...',
+            order: 2,
+            videoUrl:
+              'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module3-lesson-2.mp4',
+            videoPublicId: 'fe1/contract-law/module3-lesson-2',
+            videoDuration: 720,
+          },
+        ],
       },
-    });
+    },
+  });
 
-    const contractModule3 = await prisma.module.create({
-      data: {
-        subjectId: contractLaw.id,
-        name: 'Module 3: Remedies',
-        slug: 'remedies',
-        description: 'Damages, specific performance, and injunctions',
-        order: 3,
-        lessons: {
-          create: [
-            {
-              title: 'Lesson 1: Damages',
-              slug: 'damages',
-              content: '# Damages\n\nMonetary compensation for breach...',
-              transcript: '0:00 - Damages explained...',
-              order: 1,
-              videoUrl:
-                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module3-lesson-1.mp4',
-              videoPublicId: 'fe1/contract-law/module3-lesson-1',
-              videoDuration: 900,
-            },
-            {
-              title: 'Lesson 2: Specific Performance',
-              slug: 'specific-performance',
-              content: '# Specific Performance\n\nCourt order to perform contract...',
-              transcript: '0:00 - Specific performance explained...',
-              order: 2,
-              videoUrl:
-                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module3-lesson-2.mp4',
-              videoPublicId: 'fe1/contract-law/module3-lesson-2',
-              videoDuration: 720,
-            },
-          ],
-        },
+  console.log('✅ Created Contract  Law modules and lessons');
+
+  const tortLaw = subjects[2];
+
+  const tortModule1 = await prisma.module.create({
+    data: {
+      subjectId: tortLaw.id,
+      name: 'Module 1: Negligence Fundamentals',
+      slug: 'negligence-fundamentals',
+      description: 'Duty of care, breach, causation, and damages',
+      order: 1,
+      lessons: {
+        create: [
+          {
+            title: 'Lesson 1: Duty of Care',
+            slug: 'duty-of-care',
+            content: '# Duty of Care\n\nNeighbour principle from Donoghue v Stevenson...',
+            transcript: '0:00 - Duty of care explained...',
+            order: 1,
+            videoUrl:
+              'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module1-lesson-1.mp4',
+            videoPublicId: 'fe1/tort-law/module1-lesson-1',
+            videoDuration: 960,
+          },
+          {
+            title: 'Lesson 2: Breach of Duty',
+            slug: 'breach-of-duty',
+            content: '# Breach\n\nFalling below standard of reasonable person...',
+            transcript: '0:00 - Breach explained...',
+            order: 2,
+            videoUrl:
+              'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module1-lesson-2.mp4',
+            videoPublicId: 'fe1/tort-law/module1-lesson-2',
+            videoDuration: 780,
+          },
+        ],
       },
-    });
+    },
+  });
 
-
-    const tortLaw = subjects[2]; // Already created
-
-    const tortModule1 = await prisma.module.create({
-      data: {
-        subjectId: tortLaw.id,
-        name: 'Module 1: Negligence Fundamentals',
-        slug: 'negligence-fundamentals',
-        description: 'Duty of care, breach, causation, and damages',
-        order: 1,
-        lessons: {
-          create: [
-            {
-              title: 'Lesson 1: Duty of Care',
-              slug: 'duty-of-care',
-              content: '# Duty of Care\n\nNeighbour principle from Donoghue v Stevenson...',
-              transcript: '0:00 - Duty of care explained...',
-              order: 1,
-              videoUrl:
-                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module1-lesson-1.mp4',
-              videoPublicId: 'fe1/tort-law/module1-lesson-1',
-              videoDuration: 960,
-            },
-            {
-              title: 'Lesson 2: Breach of Duty',
-              slug: 'breach-of-duty',
-              content: '# Breach\n\nFalling below standard of reasonable person...',
-              transcript: '0:00 - Breach explained...',
-              order: 2,
-              videoUrl:
-                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module1-lesson-2.mp4',
-              videoPublicId: 'fe1/tort-law/module1-lesson-2',
-              videoDuration: 780,
-            },
-          ],
-        },
+  const tortModule2 = await prisma.module.create({
+    data: {
+      subjectId: tortLaw.id,
+      name: 'Module 2: Defamation',
+      slug: 'defamation',
+      description: 'Libel, slander, and defenses',
+      order: 2,
+      lessons: {
+        create: [
+          {
+            title: 'Lesson 1: Elements of Defamation',
+            slug: 'elements-defamation',
+            content: '# Defamation\n\nFalse statement harming reputation...',
+            transcript: '0:00 - Defamation explained...',
+            order: 1,
+            videoUrl:
+              'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module2-lesson-1.mp4',
+            videoPublicId: 'fe1/tort-law/module2-lesson-1',
+            videoDuration: 840,
+          },
+          {
+            title: 'Lesson 2: Defenses to Defamation',
+            slug: 'defenses-defamation',
+            content: '# Defenses\n\nTruth, fair comment, privilege...',
+            transcript: '0:00 - Defenses explained...',
+            order: 2,
+            videoUrl:
+              'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module2-lesson-2.mp4',
+            videoPublicId: 'fe1/tort-law/module2-lesson-2',
+            videoDuration: 720,
+          },
+        ],
       },
-    });
+    },
+  });
 
-    const tortModule2 = await prisma.module.create({
-      data: {
-        subjectId: tortLaw.id,
-        name: 'Module 2: Defamation',
-        slug: 'defamation',
-        description: 'Libel, slander, and defenses',
-        order: 2,
-        lessons: {
-          create: [
-            {
-              title: 'Lesson 1: Elements of Defamation',
-              slug: 'elements-defamation',
-              content: '# Defamation\n\nFalse statement harming reputation...',
-              transcript: '0:00 - Defamation explained...',
-              order: 1,
-              videoUrl:
-                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module2-lesson-1.mp4',
-              videoPublicId: 'fe1/tort-law/module2-lesson-1',
-              videoDuration: 840,
-            },
-            {
-              title: 'Lesson 2: Defenses to Defamation',
-              slug: 'defenses-defamation',
-              content: '# Defenses\n\nTruth, fair comment, privilege...',
-              transcript: '0:00 - Defenses explained...',
-              order: 2,
-              videoUrl:
-                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module2-lesson-2.mp4',
-              videoPublicId: 'fe1/tort-law/module2-lesson-2',
-              videoDuration: 720,
-            },
-          ],
-        },
+  const tortModule3 = await prisma.module.create({
+    data: {
+      subjectId: tortLaw.id,
+      name: 'Module 3: Nuisance',
+      slug: 'nuisance',
+      description: 'Private and public nuisance',
+      order: 3,
+      lessons: {
+        create: [
+          {
+            title: 'Lesson 1: Private Nuisance',
+            slug: 'private-nuisance',
+            content: '# Private Nuisance\n\nUnreasonable interference with land use...',
+            transcript: '0:00 - Private nuisance explained...',
+            order: 1,
+            videoUrl:
+              'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module3-lesson-1.mp4',
+            videoPublicId: 'fe1/tort-law/module3-lesson-1',
+            videoDuration: 660,
+          },
+          {
+            title: 'Lesson 2: Public Nuisance',
+            slug: 'public-nuisance',
+            content: '# Public Nuisance\n\nInterference with public rights...',
+            transcript: '0:00 - Public nuisance explained...',
+            order: 2,
+            videoUrl:
+              'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module3-lesson-2.mp4',
+            videoPublicId: 'fe1/tort-law/module3-lesson-2',
+            videoDuration: 600,
+          },
+        ],
       },
-    });
+    },
+  });
 
-    const tortModule3 = await prisma.module.create({
-      data: {
-        subjectId: tortLaw.id,
-        name: 'Module 3: Nuisance',
-        slug: 'nuisance',
-        description: 'Private and public nuisance',
-        order: 3,
-        lessons: {
-          create: [
-            {
-              title: 'Lesson 1: Private Nuisance',
-              slug: 'private-nuisance',
-              content: '# Private Nuisance\n\nUnreasonable interference with land use...',
-              transcript: '0:00 - Private nuisance explained...',
-              order: 1,
-              videoUrl:
-                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module3-lesson-1.mp4',
-              videoPublicId: 'fe1/tort-law/module3-lesson-1',
-              videoDuration: 660,
-            },
-            {
-              title: 'Lesson 2: Public Nuisance',
-              slug: 'public-nuisance',
-              content: '# Public Nuisance\n\nInterference with public rights...',
-              transcript: '0:00 - Public nuisance explained...',
-              order: 2,
-              videoUrl:
-                'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module3-lesson-2.mp4',
-              videoPublicId: 'fe1/tort-law/module3-lesson-2',
-              videoDuration: 600,
-            },
-          ],
-        },
-      },
-    });
+  console.log('✅ Created tortlaw Law modules and lessons');
 
   // ============================================
   // MODULE QUESTIONS (MCQs)
@@ -814,6 +768,161 @@ Intentionally or recklessly causing serious harm to another.
           'Strict liability offences do not require proof of mens rea - conviction based on actus reus alone. Common in regulatory/public welfare offences.',
         points: 1,
         order: 5,
+      },
+      {
+        moduleId: module1.id,
+        type: 'MCQ',
+        text: 'What distinguishes murder from manslaughter in Irish criminal law?',
+        options: JSON.stringify([
+          'A: Murder requires premeditation, manslaughter does not',
+          'B: Murder requires malice aforethought (intent to kill or cause serious harm)',
+          'C: Manslaughter is accidental killing, murder is intentional',
+          'D: Murder carries mandatory life sentence, manslaughter does not',
+        ]),
+        correctAnswer: 'B',
+        explanation:
+          'Murder requires malice aforethought (intention to kill or cause serious harm). Manslaughter can be voluntary (with provocation) or involuntary (gross negligence).',
+        points: 1,
+        order: 6,
+      },
+      {
+        moduleId: module1.id,
+        type: 'MCQ',
+        text: 'A defendant claims they were forced to commit a crime under threat of death. Which defense applies?',
+        options: JSON.stringify(['A: Self-defense', 'B: Necessity', 'C: Duress', 'D: Automatism']),
+        correctAnswer: 'C',
+        explanation:
+          'Duress is a defense where defendant commits crime under threat of death or serious harm. Not available for murder.',
+        points: 1,
+        order: 7,
+      },
+      {
+        moduleId: module1.id,
+        type: 'MCQ',
+        text: 'Which element is NOT required for criminal liability?',
+        options: JSON.stringify([
+          'A: Actus reus (guilty act)',
+          'B: Mens rea (guilty mind)',
+          'C: Motive (reason for crime)',
+          'D: Causation (act caused result)',
+        ]),
+        correctAnswer: 'C',
+        explanation:
+          'Motive is NOT an element of crime. The prosecution need not prove why defendant committed the offense, only that they did so with required mens rea.',
+        points: 1,
+        order: 8,
+      },
+      {
+        moduleId: module1.id,
+        type: 'MCQ',
+        text: 'Omissions can give rise to criminal liability when:',
+        options: JSON.stringify([
+          'A: Defendant has a legal duty to act and fails to do so',
+          'B: Any time defendant could have prevented harm',
+          'C: Defendant witnesses a crime and does not report it',
+          'D: Defendant morally should have acted',
+        ]),
+        correctAnswer: 'A',
+        explanation:
+          'Omissions create liability only when defendant has a legal duty to act (statutory, contractual, special relationship, or voluntary assumption of care).',
+        points: 1,
+        order: 9,
+      },
+      {
+        moduleId: module1.id,
+        type: 'MCQ',
+        text: 'What is the "but for" test used to determine?',
+        options: JSON.stringify([
+          'A: Whether defendant had mens rea',
+          'B: Factual causation (did act cause result)',
+          'C: Legal causation (should defendant be liable)',
+          'D: Whether defense is available',
+        ]),
+        correctAnswer: 'B',
+        explanation:
+          '"But for" test determines factual causation: "But for defendant\'s act, would the result have occurred?" If no, causation established.',
+        points: 1,
+        order: 10,
+      },
+      {
+        moduleId: module1.id,
+        type: 'MCQ',
+        text: 'Novus actus interveniens refers to:',
+        options: JSON.stringify([
+          'A: A new intervening act that breaks chain of causation',
+          'B: The initial criminal act',
+          "C: Defendant's mental state",
+          "D: Victim's contribution to harm",
+        ]),
+        correctAnswer: 'A',
+        explanation:
+          "Novus actus interveniens (new intervening act) can break the chain of causation if it is unforeseeable and independent of defendant's act.",
+        points: 1,
+        order: 11,
+      },
+      {
+        moduleId: module1.id,
+        type: 'MCQ',
+        text: 'Which statement about intention is correct?',
+        options: JSON.stringify([
+          'A: Intention can never be inferred from consequences',
+          'B: Oblique intention applies when result is virtually certain',
+          'C: Intention and motive are the same thing',
+          'D: Intention is always direct aim or purpose',
+        ]),
+        correctAnswer: 'B',
+        explanation:
+          'Oblique (indirect) intention: when consequence is virtually certain and defendant knows it, intention can be inferred even if not their direct aim.',
+        points: 1,
+        order: 12,
+      },
+      {
+        moduleId: module1.id,
+        type: 'MCQ',
+        text: 'The principle that ignorance of the law is no defense is known as:',
+        options: JSON.stringify([
+          'A: Actus reus',
+          'B: Mens rea',
+          'C: Ignorantia juris non excusat',
+          'D: Doli incapax',
+        ]),
+        correctAnswer: 'C',
+        explanation:
+          "Ignorantia juris non excusat: ignorance of the law is no defense. Defendants cannot claim they didn't know act was illegal.",
+        points: 1,
+        order: 13,
+      },
+      {
+        moduleId: module1.id,
+        type: 'MCQ',
+        text: 'Doli incapax refers to:',
+        options: JSON.stringify([
+          'A: Children under 12 cannot commit crimes',
+          'B: Insane persons lack criminal capacity',
+          'C: Intoxicated persons lack mens rea',
+          'D: Corporations cannot commit crimes',
+        ]),
+        correctAnswer: 'A',
+        explanation:
+          'Doli incapax: children under 12 are presumed incapable of crime. Ages 12-14 have rebuttable presumption of incapacity.',
+        points: 1,
+        order: 14,
+      },
+      {
+        moduleId: module1.id,
+        type: 'MCQ',
+        text: 'Which best describes the "thin skull rule"?',
+        options: JSON.stringify([
+          'A: Defendant not liable if victim unusually vulnerable',
+          'B: Defendant must take victim as they find them',
+          "C: Victim's pre-existing condition breaks causation",
+          'D: Only applies in civil law, not criminal',
+        ]),
+        correctAnswer: 'B',
+        explanation:
+          'Thin skull rule: defendant must take victim as found. If victim has pre-existing vulnerability that worsens harm, defendant still fully liable.',
+        points: 1,
+        order: 15,
       },
 
       // Module 2 Questions
