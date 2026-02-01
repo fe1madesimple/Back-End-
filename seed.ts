@@ -9,7 +9,7 @@ async function main() {
   // SUBJECTS (8 FE-1 Subjects)
   // ============================================
 
-  const subjects = await Promise.all([
+  const subjects = await Promise.all([   
     prisma.subject.create({
       data: {
         name: 'Criminal Law',
@@ -17,7 +17,7 @@ async function main() {
         description: 'Study of crimes, defenses, and criminal procedure in Irish law',
         order: 1,
       },
-    }),
+    }),    
     prisma.subject.create({
       data: {
         name: 'Contract Law',
