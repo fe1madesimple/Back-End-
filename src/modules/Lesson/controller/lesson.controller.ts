@@ -14,3 +14,13 @@ export const getLessonById = asyncHandler(async (req: Request, res: Response): P
 
   sendSuccess(res, 'Lesson retrieved successfully', { lesson });
 });
+
+export const trackVideoProgress = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { id } = req.params;
+  const { currentTime } = req.body;
+
+  await lessonService.trackVideoProgress(userId, id, currentTime);
+
+  sendSuccess(res, 'Video progress tracked');
+});
