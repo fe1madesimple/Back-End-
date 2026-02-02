@@ -95,5 +95,3 @@ const lessonRouter = Router();
  *                                 type: string
  */
 lessonRouter.get('/lessons/:id', protect, getLessonById);
-
-
