@@ -2,7 +2,7 @@
 
 import { Router } from 'express';
 import { protect } from '@/shared/middleware/auth.middleware'; 
-import { getSubjects, getSubjectById} from '../controller/subject.controller';
+import { getSubjects, getSubjectById, getModulesBySubject} from '../controller/subject.controller';
 
 
 const subjectRouter = Router();
@@ -178,5 +178,71 @@ subjectRouter.get('/subjects', protect, getSubjects);
  *         description: Subject not found
  */
 subjectRouter.get('/subjects/:id', protect, getSubjectById);
+
+
+/**
+ * @swagger
+ * /api/v1/subjects/{subjectId}/modules:
+ *   get:
+ *     summary: Get all modules in a subject
+ *     tags: [Modules]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Returns all modules within a subject with user's progress.
+ *       
+ *       **Used in:** Module list page (Image 15 - showing Module 1-8)
+ *       
+ *       **Response includes:**
+ *       - Module details
+ *       - Total lessons vs completed lessons (e.g., "5/5", "0/7")
+ *       - Progress percentage
+ *       - Status badges (Completed, In Progress, Not Started)
+ *     parameters:
+ *       - in: path
+ *         name: subjectId
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Modules retrieved successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                 message:
+ *                   type: string
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     modules:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           id:
+ *                             type: string
+ *                           name:
+ *                             type: string
+ *                             example: Module 1: Foundations of Criminal Law
+ *                           totalLessons:
+ *                             type: integer
+ *                             example: 5
+ *                           completedLessons:
+ *                             type: integer
+ *                             example: 5
+ *                           progressPercent:
+ *                             type: number
+ *                             example: 100
+ *                           status:
+ *                             type: string
+ *                             enum: [NOT_STARTED, IN_PROGRESS, COMPLETED]
+ *                             example: COMPLETED
+ */
+subjectRouter.get('/subjects/:subjectId/modules', protect, getModulesBySubject);
 
 export default subjectRouter;
