@@ -21,8 +21,40 @@ class Questions {
 
     return questions;
   }
+
+  async attemptMCQ(userId: string, questionId: string, answer: string, timeTaken?: number) {
+    const question = await prisma.question.findUnique({
+      where: { id: questionId, type: 'MCQ' },
+    });
+
+    if (!question) {
+      throw new AppError('Question not found');
+    }
+
+    // Check if correct
+    const isCorrect = answer.toUpperCase() === question.correctAnswer?.toUpperCase();
+    const pointsEarned = isCorrect ? question.points : 0;
+
+    // Save attempt
+    const attempt = await prisma.questionAttempt.create({
+      data: {
+        userId,
+        questionId,
+        answer,
+        isCorrect,
+        pointsEarned,
+        timeTakenSeconds: timeTaken,
+      },
+    });
+
+    return {
+      attemptId: attempt.id,
+      isCorrect,
+      pointsEarned,
+      correctAnswer: question.correctAnswer,
+      explanation: question.explanation,
+    };
+  }
 }
-
-
 
 export default new Questions()
