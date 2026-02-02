@@ -161,6 +161,63 @@ class Lesson {
       },
     });
   }
+
+  private async recalculateModuleProgress(userId: string, moduleId: string) {
+    // Get total lessons in module
+    const totalLessons = await prisma.lesson.count({
+      where: { moduleId, isPublished: true },
+    });
+
+    // Get completed lessons count
+    const completedLessons = await prisma.userLessonProgress.count({
+      where: {
+        userId,
+        lesson: { moduleId },
+        isCompleted: true,
+      },
+    });
+
+    // Calculate progress percent
+    const progressPercent = totalLessons > 0 ? (completedLessons / totalLessons) * 100 : 0;
+
+    // Determine status
+    let status: 'NOT_STARTED' | 'IN_PROGRESS' | 'COMPLETED' = 'NOT_STARTED';
+    if (completedLessons === totalLessons && totalLessons > 0) {
+      status = 'COMPLETED';
+    } else if (completedLessons > 0) {
+      status = 'IN_PROGRESS';
+    }
+
+    // Update module progress
+    await prisma.userModuleProgress.upsert({
+      where: {
+        userId_moduleId: { userId, moduleId },
+      },
+      create: {
+        userId,
+        moduleId,
+        progressPercent,
+        status,
+        completedLessons,
+        totalLessons,
+      },
+      update: {
+        progressPercent,
+        status,
+        completedLessons,
+      },
+    });
+
+    // Recalculate subject progress
+    const module = await prisma.module.findUnique({
+      where: { id: moduleId },
+      select: { subjectId: true },
+    });
+
+    if (module) {
+      await this.recalculateSubjectProgress(userId, module.subjectId);
+    }
+  }
 }
 
 export default new Lesson();
