@@ -14,14 +14,3 @@ export const getModuleById = asyncHandler(async (req: Request, res: Response): P
 
   sendSuccess(res, 'Module retrieved successfully', { module });
 });
-
-export const getLessonById = asyncHandler(async (req: Request, res: Response): Promise<any> => {
-  const userId = req.user!.user.id;
-    const { id } = req.params;
-    
-    if (!id) return new AppError("lesson id must be supplied")
-
-  const lesson = await moduleService.getLessonById(userId, id);
-
-  sendSuccess(res, 'Lesson retrieved successfully', { lesson });
-});
