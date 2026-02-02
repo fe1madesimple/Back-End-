@@ -22,3 +22,7 @@ class Questions {
     return questions;
   }
 }
+
+
+
+export default new Questions()
