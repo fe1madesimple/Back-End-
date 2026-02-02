@@ -20,7 +20,6 @@ export interface SubjectDetail {
   name: string;
   slug: string;
   description: string | null;
-  color: string;
   progress: {
     progressPercent: number;
     status: string;
