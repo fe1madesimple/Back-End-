@@ -1,7 +1,7 @@
 import { Router } from "express"; 
 import { protect } from "@/shared/middleware/auth.middleware";
-import { getLessonById, trackVideoProgress } from "../controller/lesson.controller";
-import { trackVideoSchema } from "../validator/lesson.validator";
+import { getLessonById, trackVideoProgress, trackTimeSpent } from "../controller/lesson.controller";
+import { trackVideoSchema, trackTimeSchema } from "../validator/lesson.validator";
 import { validate } from "@/shared/middleware/validation";
 
 const lessonRouter = Router();
@@ -198,4 +198,82 @@ lessonRouter.post(
   protect,
   validate(trackVideoSchema),
   trackVideoProgress
+);
+
+
+/**
+ * @swagger
+ * /api/v1/lessons/{id}/track-time:
+ *   post:
+ *     summary: Track time spent on lesson
+ *     tags: [Lessons]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Tracks time user spends on lesson (watching video, reading content).
+ *       
+ *       **FRONTEND IMPLEMENTATION:**
+ *       
+ *       ```javascript
+ *       let timeCounter = 0;
+ *       let isActive = true;
+ *       
+ *       // Start timer when lesson loads
+ *       const timingInterval = setInterval(() => {
+ *         if (isActive) {
+ *           timeCounter += 30; // 30 seconds elapsed
+ *           
+ *           fetch(`/api/v1/lessons/${lessonId}/track-time`, {
+ *             method: 'POST',
+ *             body: JSON.stringify({ seconds: 30 })
+ *           });
+ *         }
+ *       }, 30000); // Every 30 seconds
+ *       
+ *       // Pause timer when tab loses focus (Page Visibility API)
+ *       document.addEventListener('visibilitychange', () => {
+ *         if (document.hidden) {
+ *           isActive = false; // Tab inactive, pause timer
+ *         } else {
+ *           isActive = true; // Tab active, resume timer
+ *         }
+ *       });
+ *       
+ *       // Clean up when user leaves
+ *       window.addEventListener('beforeunload', () => {
+ *         clearInterval(timingInterval);
+ *       });
+ *       ```
+ *       
+ *       **This contributes to:**
+ *       - Subject total time (Image 16: "8h 15m")
+ *       - Dashboard daily time (Image 13: "2 Hours time spent today")
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - seconds
+ *             properties:
+ *               seconds:
+ *                 type: integer
+ *                 example: 30
+ *                 description: Seconds elapsed since last ping (usually 30)
+ *     responses:
+ *       200:
+ *         description: Time tracked successfully
+ */
+lessonRouter.post(
+  '/lessons/:id/track-time',
+  protect,
+  validate(trackTimeSchema),
+  trackTimeSpent
 );
