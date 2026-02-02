@@ -1,7 +1,8 @@
 import { Router } from "express"; 
 import { protect } from "@/shared/middleware/auth.middleware";
-import { getLessonById } from "../controller/lesson.controller";
-
+import { getLessonById, trackVideoProgress } from "../controller/lesson.controller";
+import { trackVideoSchema } from "../validator/lesson.validator";
+import { validate } from "@/shared/middleware/validation";
 
 const lessonRouter = Router();
 
@@ -94,3 +95,108 @@ const lessonRouter = Router();
  *                                 type: string
  */
 lessonRouter.get('/lessons/:id', protect, getLessonById);
+
+
+
+/**
+ * @swagger
+ * /api/v1/lessons/{id}/track-video:
+ *   post:
+ *     summary: Track video watch progress
+ *     tags: [Lessons]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Updates user's video watch position. Called by frontend video player.
+ *       
+ *       **FRONTEND IMPLEMENTATION:**
+ *       
+ *       ```javascript
+ *       // 1. Get video element and lesson data
+ *       const videoPlayer = document.querySelector('video');
+ *       const lessonId = 'lesson_id_here';
+ *       const videoDuration = videoPlayer.duration; // e.g., 863 seconds
+ *       
+ *       // 2. On video load, resume from saved position
+ *       fetch(`/api/v1/lessons/${lessonId}`)
+ *         .then(res => res.json())
+ *         .then(data => {
+ *           const savedPosition = data.data.lesson.progress.videoWatchedSeconds;
+ *           if (savedPosition > 0) {
+ *             videoPlayer.currentTime = savedPosition; // Jump to saved position
+ *           }
+ *         });
+ *       
+ *       // 3. Track progress every 10 seconds while playing
+ *       let trackingInterval;
+ *       
+ *       videoPlayer.addEventListener('play', () => {
+ *         trackingInterval = setInterval(() => {
+ *           const currentTime = Math.floor(videoPlayer.currentTime);
+ *           
+ *           fetch(`/api/v1/lessons/${lessonId}/track-video`, {
+ *             method: 'POST',
+ *             headers: { 'Content-Type': 'application/json' },
+ *             body: JSON.stringify({ currentTime })
+ *           });
+ *         }, 10000); // Every 10 seconds
+ *       });
+ *       
+ *       videoPlayer.addEventListener('pause', () => {
+ *         clearInterval(trackingInterval);
+ *         
+ *         // Send final position on pause
+ *         const currentTime = Math.floor(videoPlayer.currentTime);
+ *         fetch(`/api/v1/lessons/${lessonId}/track-video`, {
+ *           method: 'POST',
+ *           body: JSON.stringify({ currentTime })
+ *         });
+ *       });
+ *       
+ *       // 4. Send final position when user leaves page
+ *       window.addEventListener('beforeunload', () => {
+ *         const currentTime = Math.floor(videoPlayer.currentTime);
+ *         
+ *         // Use sendBeacon for reliable delivery
+ *         navigator.sendBeacon(
+ *           `/api/v1/lessons/${lessonId}/track-video`,
+ *           JSON.stringify({ currentTime })
+ *         );
+ *       });
+ *       ```
+ *       
+ *       **AUTO-COMPLETION:**
+ *       - Video watched >= 90% → Lesson automatically marked complete
+ *       - Module progress recalculated
+ *       - Subject progress updated
+ *       - No "Mark as Complete" button needed
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: Lesson ID
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - currentTime
+ *             properties:
+ *               currentTime:
+ *                 type: integer
+ *                 example: 450
+ *                 description: Current video position in seconds
+ *     responses:
+ *       200:
+ *         description: Progress tracked successfully
+ */
+lessonRouter.post(
+  '/lessons/:id/track-video',
+  protect,
+  validate(trackVideoSchema),
+  trackVideoProgress
+);
