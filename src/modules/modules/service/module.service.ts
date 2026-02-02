@@ -56,7 +56,7 @@ class Module {
         module: {
           include: {
             subject: {
-              select: { id: true, name: true, slug: true},
+              select: { id: true, name: true, slug: true },
             },
           },
         },
@@ -73,57 +73,49 @@ class Module {
       throw new AppError('Lesson not found');
     }
 
-    // Update last accessed 
-    await prisma.userLessonProgress.upsert({
-      where: {
-        userId_lessonId: {
-          userId,
-          lessonId,
-        },
-      },
-      create: {
-        userId,
-        lessonId,
-      },
-      update: {},
+    const totalLessons = await prisma.lesson.count({
+      where: { moduleId: lesson.moduleId, isPublished: true },
     });
 
-    // Also update module last accessed
-    await prisma.userModuleProgress.upsert({
-      where: {
-        userId_moduleId: {
+    await Promise.all([
+      // Update lesson progress
+      prisma.userLessonProgress.upsert({
+        where: {
+          userId_lessonId: { userId, lessonId },
+        },
+        create: { userId, lessonId },
+        update: {},
+      }),
+
+      // Update module progress
+      prisma.userModuleProgress.upsert({
+        where: {
+          userId_moduleId: { userId, moduleId: lesson.moduleId },
+        },
+        create: {
           userId,
           moduleId: lesson.moduleId,
+          totalLessons,
         },
-      },
-      create: {
-        userId,
-        moduleId: lesson.moduleId,
-        totalLessons: await prisma.lesson.count({
-          where: { moduleId: lesson.moduleId, isPublished: true },
-        }),
-      },
-      update: {
-        lastAccessedAt: new Date(),
-      },
-    });
+        update: {
+          lastAccessedAt: new Date(),
+        },
+      }),
 
-    // Update subject last accessed
-    await prisma.userSubjectProgress.upsert({
-      where: {
-        userId_subjectId: {
+      // Update subject progress
+      prisma.userSubjectProgress.upsert({
+        where: {
+          userId_subjectId: { userId, subjectId: lesson.module.subjectId },
+        },
+        create: {
           userId,
           subjectId: lesson.module.subjectId,
         },
-      },
-      create: {
-        userId,
-        subjectId: lesson.module.subjectId,
-      },
-      update: {
-        lastAccessedAt: new Date(),
-      },
-    });
+        update: {
+          lastAccessedAt: new Date(),
+        },
+      }),
+    ]);
 
     return {
       id: lesson.id,
@@ -150,5 +142,4 @@ class Module {
   }
 }
 
-
-export default new Module()
+export default new Module();
