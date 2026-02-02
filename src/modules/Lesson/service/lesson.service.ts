@@ -1,5 +1,6 @@
 import { prisma } from '@/shared/config';
 import { AppError } from '@/shared/utils';
+import { create } from 'domain';
 
 class Lesson {
   async getLessonById(userId: string, lessonId: string) {
@@ -101,7 +102,7 @@ class Lesson {
     });
 
     if (!lesson) {
-      throw new NotFoundError('Lesson not found');
+      throw new AppError('Lesson not found');
     }
 
     // Calculate completion (90% threshold)
@@ -109,7 +110,9 @@ class Lesson {
     const isCompleted =
       lesson.videoDuration && currentTime >= lesson.videoDuration * completionThreshold;
 
-    // Update lesson progress
+    // Ensure isCompleted is always boolean
+    const completedStatus = Boolean(isCompleted);
+
     const updatedProgress = await prisma.userLessonProgress.upsert({
       where: {
         userId_lessonId: { userId, lessonId },
@@ -118,16 +121,17 @@ class Lesson {
         userId,
         lessonId,
         videoWatchedSeconds: currentTime,
-        isCompleted,
-        completedAt: isCompleted ? new Date() : null,
+        isCompleted: completedStatus,
+        completedAt: completedStatus ? new Date() : null,
       },
       update: {
         videoWatchedSeconds: currentTime,
-        isCompleted,
-        completedAt: isCompleted ? new Date() : null,
+        isCompleted: completedStatus,
+        completedAt: completedStatus ? new Date() : null,
       },
     });
-
+      
+      
     // If lesson just completed, update module progress
     if (isCompleted) {
       await this.recalculateModuleProgress(userId, lesson.moduleId);
