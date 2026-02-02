@@ -15,10 +15,13 @@ export const getLessonById = asyncHandler(async (req: Request, res: Response): P
   sendSuccess(res, 'Lesson retrieved successfully', { lesson });
 });
 
-export const trackVideoProgress = asyncHandler(async (req: Request, res: Response) => {
+export const trackVideoProgress = asyncHandler(async (req: Request, res: Response): Promise<any> => {
   const userId = req.user!.user.id;
   const { id } = req.params;
-  const { currentTime } = req.body;
+    const { currentTime } = req.body;
+    
+    if (!id) return new AppError("lesson id must be provided")
+    
 
   await lessonService.trackVideoProgress(userId, id, currentTime);
 
