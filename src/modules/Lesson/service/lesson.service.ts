@@ -1,6 +1,5 @@
 import { prisma } from '@/shared/config';
 import { AppError } from '@/shared/utils';
-import { create } from 'domain';
 
 class Lesson {
   async getLessonById(userId: string, lessonId: string) {
@@ -130,8 +129,7 @@ class Lesson {
         completedAt: completedStatus ? new Date() : null,
       },
     });
-      
-      
+
     // If lesson just completed, update module progress
     if (isCompleted) {
       await this.recalculateModuleProgress(userId, lesson.moduleId);
@@ -262,6 +260,56 @@ class Lesson {
 
     if (module) {
       await this.recalculateSubjectProgress(userId, module.subjectId);
+    }
+  }
+
+  async trackTimeSpent(userId: string, lessonId: string, seconds: number) {
+    // Update lesson time
+    await prisma.userLessonProgress.upsert({
+      where: {
+        userId_lessonId: { userId, lessonId },
+      },
+      create: {
+        userId,
+        lessonId,
+        timeSpentSeconds: seconds,
+      },
+      update: {
+        timeSpentSeconds: {
+          increment: seconds,
+        },
+      },
+    });
+
+    // Get lesson to find module and subject
+    const lesson = await prisma.lesson.findUnique({
+      where: { id: lessonId },
+      include: {
+        module: true,
+      },
+    });
+
+    if (lesson) {
+      // Update module time (not stored, but we'll update subject)
+      // Update subject total time
+      await prisma.userSubjectProgress.upsert({
+        where: {
+          userId_subjectId: {
+            userId,
+            subjectId: lesson.module.subjectId,
+          },
+        },
+        create: {
+          userId,
+          subjectId: lesson.module.subjectId,
+          totalTimeSeconds: seconds,
+        },
+        update: {
+          totalTimeSeconds: {
+            increment: seconds,
+          },
+        },
+      });
     }
   }
 }
