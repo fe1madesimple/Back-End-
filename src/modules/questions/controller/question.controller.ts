@@ -5,8 +5,10 @@ import questionsService from '../service/questions.service';
 import { sendSuccess } from '@/shared/utils';
 
 
-export const getModuleQuestions = asyncHandler(async (req: Request, res: Response) => {
-  const { moduleId } = req.params;
+export const getModuleQuestions = asyncHandler(async (req: Request, res: Response): Promise<any> => {
+    const { moduleId } = req.params;
+    
+    if (!moduleId) return new AppError("module id must be supplied")
 
   const questions = await questionsService.getModuleQuestions(moduleId);
 
