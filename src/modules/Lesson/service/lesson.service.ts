@@ -94,6 +94,48 @@ class Lesson {
     };
   }
 
+  async trackVideoProgress(userId: string, lessonId: string, currentTime: number) {
+    const lesson = await prisma.lesson.findUnique({
+      where: { id: lessonId },
+      select: { id: true, videoDuration: true, moduleId: true },
+    });
+
+    if (!lesson) {
+      throw new NotFoundError('Lesson not found');
+    }
+
+    // Calculate completion (90% threshold)
+    const completionThreshold = 0.9;
+    const isCompleted =
+      lesson.videoDuration && currentTime >= lesson.videoDuration * completionThreshold;
+
+    // Update lesson progress
+    const updatedProgress = await prisma.userLessonProgress.upsert({
+      where: {
+        userId_lessonId: { userId, lessonId },
+      },
+      create: {
+        userId,
+        lessonId,
+        videoWatchedSeconds: currentTime,
+        isCompleted,
+        completedAt: isCompleted ? new Date() : null,
+      },
+      update: {
+        videoWatchedSeconds: currentTime,
+        isCompleted,
+        completedAt: isCompleted ? new Date() : null,
+      },
+    });
+
+    // If lesson just completed, update module progress
+    if (isCompleted) {
+      await this.recalculateModuleProgress(userId, lesson.moduleId);
+    }
+
+    return updatedProgress;
+  }
+
   private async recalculateSubjectProgress(userId: string, subjectId: string) {
     // Get all modules in subject
     const modules = await prisma.module.findMany({
