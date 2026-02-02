@@ -2,7 +2,7 @@
 
 import { Router } from 'express';
 import { protect } from '@/shared/middleware/auth.middleware'; 
-import { getSubjects } from '../controller/subject.controller';
+import { getSubjects, getSubjectById} from '../controller/subject.controller';
 
 
 const subjectRouter = Router();
@@ -78,5 +78,105 @@ const subjectRouter = Router();
  */
 subjectRouter.get('/subjects', protect, getSubjects);
 
+
+/**
+ * @swagger
+ * /api/v1/subjects/{id}:
+ *   get:
+ *     summary: Get subject details with modules and stats
+ *     tags: [Subjects]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Returns detailed subject information including module list and statistics.
+ *       
+ *       **Used in:** Subject detail page (Image 16 - Criminal Law Focus Zone)
+ *       
+ *       **Response includes:**
+ *       - Subject info and progress
+ *       - List of modules with completion status
+ *       - Statistics: total/completed modules, lessons, average quiz score
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: Subject ID
+ *     responses:
+ *       200:
+ *         description: Subject retrieved successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                 message:
+ *                   type: string
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     subject:
+ *                       type: object
+ *                       properties:
+ *                         id:
+ *                           type: string
+ *                         name:
+ *                           type: string
+ *                           example: Criminal Law
+ *                         progress:
+ *                           type: object
+ *                           properties:
+ *                             progressPercent:
+ *                               type: number
+ *                               example: 56
+ *                             status:
+ *                               type: string
+ *                             totalTimeSeconds:
+ *                               type: integer
+ *                               example: 29700
+ *                         modules:
+ *                           type: array
+ *                           items:
+ *                             type: object
+ *                             properties:
+ *                               id:
+ *                                 type: string
+ *                               name:
+ *                                 type: string
+ *                                 example: Module 1: Foundations
+ *                               lessonsCount:
+ *                                 type: integer
+ *                                 example: 5
+ *                               completedLessons:
+ *                                 type: integer
+ *                                 example: 5
+ *                               status:
+ *                                 type: string
+ *                                 example: COMPLETED
+ *                         stats:
+ *                           type: object
+ *                           properties:
+ *                             totalModules:
+ *                               type: integer
+ *                               example: 8
+ *                             completedModules:
+ *                               type: integer
+ *                               example: 4
+ *                             totalLessons:
+ *                               type: integer
+ *                               example: 32
+ *                             completedLessons:
+ *                               type: integer
+ *                               example: 18
+ *                             averageQuizScore:
+ *                               type: integer
+ *                               example: 72
+ *       404:
+ *         description: Subject not found
+ */
+subjectRouter.get('/subjects/:id', protect, getSubjectById);
+
 export default subjectRouter;
-   
