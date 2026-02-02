@@ -14,3 +14,12 @@ export const getSubjects = asyncHandler(async (req: Request, res: Response) => {
 
   sendSuccess(res, 'Subjects retrieved successfully', { subjects });
 });
+
+export const getSubjectById = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { id } = req.params;
+
+  const subject = await subjectService.getSubjectById(userId, id!);
+
+  sendSuccess(res, 'Subject retrieved successfully', { subject });
+});
