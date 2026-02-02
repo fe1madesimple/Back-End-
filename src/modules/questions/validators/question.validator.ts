@@ -13,3 +13,4 @@ export const submitEssaySchema = z.object({
     timeTakenSeconds: z.number().int().min(0).optional(),
   }),
 });
+
