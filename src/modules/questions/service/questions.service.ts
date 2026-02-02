@@ -1,6 +1,6 @@
 import { prisma } from '@/shared/config';
 import { AppError } from '@/shared/utils';
-import Anthropic, { NotFoundError } from '@anthropic-ai/sdk';
+import Anthropic from '@anthropic-ai/sdk';
 
 const anthropic = new Anthropic({
   apiKey: process.env.CLAUDE_API_KEY!,
