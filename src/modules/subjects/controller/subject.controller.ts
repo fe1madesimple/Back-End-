@@ -18,11 +18,24 @@ export const getSubjects = asyncHandler(async (req: Request, res: Response) => {
 
 export const getSubjectById = asyncHandler(async (req: Request, res: Response): Promise<any> => {
   const userId = req.user!.user.id;
-    const { id } = req.params;
-    
-    if (!id) return new AppError("id must be supplied as a param")
+  const { id } = req.params;
+
+  if (!id) return new AppError('id must be supplied as a param');
 
   const subject = await subjectService.getSubjectById(userId, id);
 
   sendSuccess(res, 'Subject retrieved successfully', { subject });
 });
+
+export const getModulesBySubject = asyncHandler(
+  async (req: Request, res: Response): Promise<any> => {
+    const userId = req.user!.user.id;
+    const { subjectId } = req.params;
+
+    if (!subjectId) return new AppError('subject Id must be supplied');
+
+    const modules = await subjectService.getModulesBySubject(userId, subjectId);
+
+    sendSuccess(res, 'Modules retrieved successfully', { modules });
+  }
+);

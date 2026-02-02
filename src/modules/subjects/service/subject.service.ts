@@ -113,4 +113,32 @@ export class SubjectService {
       },
     };
   }
+
+  async getModulesBySubject(userId: string, subjectId: string) {
+    const modules = await prisma.module.findMany({
+      where: { subjectId, isPublished: true },
+      orderBy: { order: 'asc' },
+      include: {
+        lessons: {
+          where: { isPublished: true },
+          select: { id: true },
+        },
+        userProgress: {
+          where: { userId },
+        },
+      },
+    });
+
+    return modules.map((module) => ({
+      id: module.id,
+      name: module.name,
+      slug: module.slug,
+      description: module.description,
+      order: module.order,
+      totalLessons: module.lessons.length,
+      completedLessons: module.userProgress[0]?.completedLessons || 0,
+      progressPercent: module.userProgress[0]?.progressPercent || 0,
+      status: module.userProgress[0]?.status || 'NOT_STARTED',
+    }));
+  }
 }
