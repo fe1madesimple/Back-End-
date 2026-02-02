@@ -97,7 +97,6 @@ const lessonRouter = Router();
 lessonRouter.get('/lessons/:id', protect, getLessonById);
 
 
-
 /**
  * @swagger
  * /api/v1/lessons/{id}/track-video:
