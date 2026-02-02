@@ -3,7 +3,6 @@ import { protect } from "@/shared/middleware/auth.middleware";
 import { getLessonById } from "../controller/lesson.controller";
 
 
-
 const lessonRouter = Router();
 
 /**
