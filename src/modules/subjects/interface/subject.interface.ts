@@ -14,3 +14,33 @@ export interface SubjectWithProgress {
     lastAccessedAt: Date | null;
   } | null;
 }
+
+export interface SubjectDetail {
+  id: string;
+  name: string;
+  slug: string;
+  description: string | null;
+  color: string;
+  progress: {
+    progressPercent: number;
+    status: string;
+    totalTimeSeconds: number;
+    lastAccessedAt: Date | null;
+  } | null;
+  modules: {
+    id: string;
+    name: string;
+    slug: string;
+    order: number;
+    lessonsCount: number;
+    completedLessons: number;
+    status: string;
+  }[];
+  stats: {
+    totalModules: number;
+    completedModules: number;
+    totalLessons: number;
+    completedLessons: number;
+    averageQuizScore: number;
+  };
+}
