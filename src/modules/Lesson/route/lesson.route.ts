@@ -280,12 +280,6 @@ lessonRouter.post(
   validate(trackVideoSchema),
   trackVideoProgress
 );
-lessonRouter.post(
-  '/lessons/:id/track-video',
-  protect,
-  validate(trackVideoSchema),
-  trackVideoProgress
-);
 
 
 /**
