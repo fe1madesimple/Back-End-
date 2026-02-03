@@ -27,3 +27,18 @@ export interface TopicChallengeResponse {
   }[];
   totalAvailable: number;
 }
+
+
+export interface MixedPracticeResponse {
+  subjectId: string;
+  subjectName: string;
+  questions: {
+    id: string;
+    text: string;
+    options: string[];
+    order: number;
+    moduleName: string;
+  }[];
+  totalAvailable: number;
+  modulesIncluded: number;
+}
