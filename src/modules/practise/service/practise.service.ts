@@ -63,3 +63,6 @@ class Practise {
     };
   }
 }
+
+
+export default  new Practise()
