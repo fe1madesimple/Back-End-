@@ -62,7 +62,65 @@ class Practise {
       totalAvailable: totalCount,
     };
   }
+
+  // src/modules/content/service/content.service.ts
+
+  async getTopicChallenge(moduleId: string): Promise<TopicChallengeResponse> {
+    // Verify module exists
+    const module = await prisma.module.findUnique({
+      where: { id: moduleId, isPublished: true },
+      include: {
+        subject: {
+          select: { name: true },
+        },
+      },
+    });
+
+    if (!module) {
+      throw new NotFoundError('Module not found');
+    }
+
+    // Get total question count
+    const totalCount = await prisma.question.count({
+      where: {
+        moduleId,
+        type: 'MCQ',
+        isPublished: true,
+      },
+    });
+
+    if (totalCount === 0) {
+      throw new NotFoundError('No questions available for this module');
+    }
+
+    // Get 10 random questions (or less if fewer available)
+    const limit = Math.min(10, totalCount);
+
+    const randomQuestions = await prisma.$queryRaw<
+      Array<{ id: string; text: string; options: string; order: number }>
+    >`
+    SELECT id, text, options, "order"
+    FROM questions
+    WHERE "moduleId" = ${moduleId}
+      AND type = 'MCQ'
+      AND "isPublished" = true
+    ORDER BY RANDOM()
+    LIMIT ${limit}
+  `;
+
+    return {
+      moduleId: module.id,
+      moduleName: module.name,
+      subjectName: module.subject.name,
+      questions: randomQuestions.map((q) => ({
+        id: q.id,
+        text: q.text,
+        options: JSON.parse(q.options as string),
+        order: q.order,
+      })),
+      totalAvailable: totalCount,
+    };
+  }
 }
 
-
-export default  new Practise()
+export default new Practise();
