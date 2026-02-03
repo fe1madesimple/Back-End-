@@ -1,6 +1,6 @@
 import { prisma } from '@/shared/config';
 import { AppError, NotFoundError } from '@/shared/utils';
-import { string, number } from 'zod';
+import { TopicChallengeResponse } from '../interface/practise.interface';
 import { QuickQuizResponse } from '../interface/practise.interface';
 
 class Practise {
@@ -62,8 +62,6 @@ class Practise {
       totalAvailable: totalCount,
     };
   }
-
-  // src/modules/content/service/content.service.ts
 
   async getTopicChallenge(moduleId: string): Promise<TopicChallengeResponse> {
     // Verify module exists
