@@ -97,6 +97,8 @@ const lessonRouter = Router();
 lessonRouter.get('/lessons/:id', protect, getLessonById);
 
 
+// src/modules/content/routes/content.routes.ts
+
 /**
  * @swagger
  * /api/v1/lessons/{id}/track-video:
@@ -108,15 +110,28 @@ lessonRouter.get('/lessons/:id', protect, getLessonById);
  *     description: |
  *       Updates user's video watch position. Called by frontend video player.
  *       
+ *       **AUTO-COMPLETION:**
+ *       - Video watched >= 90% → Lesson automatically marked complete
+ *       - Module progress recalculated
+ *       - Subject progress updated
+ *       - No "Mark as Complete" button needed
+ *       
  *       **FRONTEND IMPLEMENTATION:**
+ *       
+ *       Frontend must get video duration and send it with tracking data.
  *       
  *       ```javascript
  *       // 1. Get video element and lesson data
  *       const videoPlayer = document.querySelector('video');
  *       const lessonId = 'lesson_id_here';
- *       const videoDuration = videoPlayer.duration; // e.g., 863 seconds
+ *       let videoDuration = null;
  *       
- *       // 2. On video load, resume from saved position
+ *       // 2. Get duration when video loads
+ *       videoPlayer.addEventListener('loadedmetadata', () => {
+ *         videoDuration = Math.floor(videoPlayer.duration); // Duration in seconds
+ *       });
+ *       
+ *       // 3. On video load, resume from saved position
  *       fetch(`/api/v1/lessons/${lessonId}`)
  *         .then(res => res.json())
  *         .then(data => {
@@ -126,17 +141,25 @@ lessonRouter.get('/lessons/:id', protect, getLessonById);
  *           }
  *         });
  *       
- *       // 3. Track progress every 10 seconds while playing
+ *       // 4. Track progress every 10 seconds while playing
  *       let trackingInterval;
  *       
  *       videoPlayer.addEventListener('play', () => {
  *         trackingInterval = setInterval(() => {
+ *           if (videoPlayer.paused) return; // Skip if paused
+ *           
  *           const currentTime = Math.floor(videoPlayer.currentTime);
  *           
  *           fetch(`/api/v1/lessons/${lessonId}/track-video`, {
  *             method: 'POST',
- *             headers: { 'Content-Type': 'application/json' },
- *             body: JSON.stringify({ currentTime })
+ *             headers: { 
+ *               'Content-Type': 'application/json',
+ *               'Authorization': 'Bearer YOUR_TOKEN'
+ *             },
+ *             body: JSON.stringify({ 
+ *               currentTime,
+ *               videoDuration // Backend saves this on first ping
+ *             })
  *           });
  *         }, 10000); // Every 10 seconds
  *       });
@@ -148,27 +171,65 @@ lessonRouter.get('/lessons/:id', protect, getLessonById);
  *         const currentTime = Math.floor(videoPlayer.currentTime);
  *         fetch(`/api/v1/lessons/${lessonId}/track-video`, {
  *           method: 'POST',
- *           body: JSON.stringify({ currentTime })
+ *           headers: { 'Content-Type': 'application/json' },
+ *           body: JSON.stringify({ currentTime, videoDuration })
  *         });
  *       });
  *       
- *       // 4. Send final position when user leaves page
+ *       // 5. Send final position when user leaves page
  *       window.addEventListener('beforeunload', () => {
  *         const currentTime = Math.floor(videoPlayer.currentTime);
  *         
- *         // Use sendBeacon for reliable delivery
+ *         // Use sendBeacon for reliable delivery on page exit
+ *         const data = JSON.stringify({ currentTime, videoDuration });
+ *         const blob = new Blob([data], { type: 'application/json' });
  *         navigator.sendBeacon(
  *           `/api/v1/lessons/${lessonId}/track-video`,
- *           JSON.stringify({ currentTime })
+ *           blob
  *         );
+ *       });
+ *       
+ *       // 6. IMPORTANT: Handle tab visibility changes
+ *       // Video continues playing when tab hidden, so keep tracking
+ *       document.addEventListener('visibilitychange', () => {
+ *         if (document.hidden) {
+ *           // Tab hidden - tracking continues (video still playing)
+ *           console.log('Tab hidden but tracking continues');
+ *         } else {
+ *           // Tab visible again
+ *           console.log('Tab visible again');
+ *         }
  *       });
  *       ```
  *       
- *       **AUTO-COMPLETION:**
- *       - Video watched >= 90% → Lesson automatically marked complete
- *       - Module progress recalculated
- *       - Subject progress updated
- *       - No "Mark as Complete" button needed
+ *       **HOW IT WORKS:**
+ *       
+ *       1. **Video loads** → Frontend gets duration from `video.duration`
+ *       2. **Every 10 seconds** → Frontend sends current position + duration
+ *       3. **Backend checks** → If position >= 90% of duration → Mark complete
+ *       4. **Progress cascades** → Lesson → Module → Subject (all automatic)
+ *       5. **User returns** → Backend returns saved position, video resumes from there
+ *       
+ *       **COMPLETION CALCULATION:**
+ *       - Video duration: 863 seconds (14:23)
+ *       - User watched: 776 seconds (12:56)
+ *       - Percentage: 776 / 863 = 90%
+ *       - Status: COMPLETED ✅
+ *       
+ *       **WHAT GETS UPDATED:**
+ *       - `UserLessonProgress.videoWatchedSeconds` = current position
+ *       - `UserLessonProgress.isCompleted` = true (if >= 90%)
+ *       - `UserModuleProgress.progressPercent` = recalculated
+ *       - `UserModuleProgress.completedLessons` = incremented
+ *       - `UserSubjectProgress.progressPercent` = recalculated
+ *       
+ *       **EDGE CASES HANDLED:**
+ *       - Video paused → Send final position immediately
+ *       - User leaves page → sendBeacon ensures delivery
+ *       - Tab hidden → Tracking continues (video still playing)
+ *       - No duration provided → Uses stored duration from DB (if exists)
+ *       - First ping with duration → Backend saves duration for future use
+ *       
  *     parameters:
  *       - in: path
  *         name: id
@@ -189,10 +250,36 @@ lessonRouter.get('/lessons/:id', protect, getLessonById);
  *                 type: integer
  *                 example: 450
  *                 description: Current video position in seconds
+ *               videoDuration:
+ *                 type: integer
+ *                 example: 863
+ *                 description: |
+ *                   Total video duration in seconds (optional).
+ *                   Frontend should send this on first ping.
+ *                   Backend will save it for future calculations.
  *     responses:
  *       200:
  *         description: Progress tracked successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Video progress tracked
+ *       404:
+ *         description: Lesson not found
  */
+lessonRouter.post(
+  '/lessons/:id/track-video',
+  protect,
+  validate(trackVideoSchema),
+  trackVideoProgress
+);
 lessonRouter.post(
   '/lessons/:id/track-video',
   protect,
