@@ -1,6 +1,6 @@
 import { prisma } from '@/shared/config';
 import { AppError, NotFoundError } from '@/shared/utils';
-import { MixedPracticeResponse, TopicChallengeResponse } from '../interface/practise.interface';
+import { MixedPracticeResponse, TopicChallengeResponse, PastQuestionsListResponse, PastQuestionsQuery } from '../interface/practise.interface';
 import { QuickQuizResponse } from '../interface/practise.interface';
 
 class Practise {
@@ -186,7 +186,86 @@ class Practise {
       modulesIncluded: uniqueModules,
     };
   }
-}
 
+  async getPastQuestions(query: PastQuestionsQuery): Promise<PastQuestionsListResponse> {
+    const { subject, year, examType, page = 1, limit = 10 } = query;
+
+    // Build filter conditions
+    const where: any = {
+      type: 'ESSAY',
+      isPublished: true,
+      year: { not: null }, // Only past questions have year
+    };
+
+    if (subject) {
+      where.subject = subject;
+    }
+
+    if (year) {
+      where.year = year;
+    }
+
+    if (examType) {
+      where.examType = examType;
+    }
+
+    // Get total count
+    const total = await prisma.question.count({ where });
+
+    // Get paginated questions
+    const skip = (page - 1) * limit;
+    const questions = await prisma.question.findMany({
+      where,
+      select: {
+        id: true,
+        text: true,
+        year: true,
+        subject: true,
+        examType: true,
+        order: true,
+      },
+      orderBy: [{ year: 'desc' }, { order: 'asc' }],
+      skip,
+      take: limit,
+    });
+
+    // Get unique filter values for frontend dropdowns
+    const allPastQuestions = await prisma.question.findMany({
+      where: {
+        type: 'ESSAY',
+        isPublished: true,
+        year: { not: null },
+      },
+      select: {
+        subject: true,
+        year: true,
+        examType: true,
+      },
+    });
+
+    const subjects = [...new Set(allPastQuestions.map((q) => q.subject).filter(Boolean))];
+    const years = [...new Set(allPastQuestions.map((q) => q.year).filter(Boolean))].sort(
+      (a, b) => b! - a!
+    );
+    const examTypes = [...new Set(allPastQuestions.map((q) => q.examType).filter(Boolean))];
+
+    return {
+      questions: questions.map((q) => ({
+        id: q.id,
+        text: q.text,
+        year: q.year!,
+        subject: q.subject!,
+        examType: q.examType!,
+        order: q.order,
+      })),
+      total,
+      filters: {
+        subjects: subjects as string[],
+        years: years as number[],
+        examTypes: examTypes as string[],
+      },
+    };
+  }
+}
 
 export default new Practise();
