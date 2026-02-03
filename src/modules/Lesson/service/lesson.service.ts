@@ -94,7 +94,14 @@ class Lesson {
     };
   }
 
-  async trackVideoProgress(userId: string, lessonId: string, currentTime: number) {
+  // src/modules/content/service/content.service.ts
+
+  async trackVideoProgress(
+    userId: string,
+    lessonId: string,
+    currentTime: number,
+    videoDuration?: number
+  ) {
     const lesson = await prisma.lesson.findUnique({
       where: { id: lessonId },
       select: { id: true, videoDuration: true, moduleId: true },
@@ -104,12 +111,14 @@ class Lesson {
       throw new AppError('Lesson not found');
     }
 
+    // Use provided duration (from frontend) or stored duration (from DB)
+    const duration = videoDuration || lesson.videoDuration;
+
     // Calculate completion (90% threshold)
     const completionThreshold = 0.9;
-    const isCompleted =
-      lesson.videoDuration && currentTime >= lesson.videoDuration * completionThreshold;
+    const isCompleted = duration ? currentTime >= duration * completionThreshold : false;
 
-    // Ensure isCompleted is always boolean
+    // Update lesson progress
     const completedStatus = Boolean(isCompleted);
 
     const updatedProgress = await prisma.userLessonProgress.upsert({
@@ -133,6 +142,14 @@ class Lesson {
     // If lesson just completed, update module progress
     if (isCompleted) {
       await this.recalculateModuleProgress(userId, lesson.moduleId);
+    }
+
+    // Optionally: Update lesson duration in DB if provided and not already stored
+    if (videoDuration && !lesson.videoDuration) {
+      await prisma.lesson.update({
+        where: { id: lessonId },
+        data: { videoDuration },
+      });
     }
 
     return updatedProgress;
@@ -314,4 +331,4 @@ class Lesson {
   }
 }
 
-export default new Lesson();   
+export default new Lesson();
