@@ -1,8 +1,9 @@
 import { Router } from "express";
-import { getQuickQuiz, getTopicChallenge, getMixedPractice} from "../controller/practise.controller";
+import { getQuickQuiz, getTopicChallenge, getMixedPractice, getPastQuestions} from "../controller/practise.controller";
 import { protect } from "@/shared/middleware/auth.middleware";
 const practiceRouter = Router()
-
+import { validate } from "@/shared/middleware/validation";
+import { pastQuestionsQuerySchema } from "../validators/practise.validators";
 
 
 /**
@@ -468,6 +469,203 @@ practiceRouter.get(
   getMixedPractice
 );
 
+// src/modules/content/routes/content.routes.ts
 
+/**
+ * @swagger
+ * /api/v1/past-questions:
+ *   get:
+ *     summary: Get list of past exam questions with filters
+ *     tags: [Past Questions]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Returns paginated list of past FE-1 exam essay questions with filtering options.
+ *       
+ *       **USE CASE:**
+ *       - User wants to practice with real past exam questions
+ *       - User clicks "Past Questions" in navigation
+ *       - Frontend displays filterable list of questions
+ *       - User can filter by subject, year, exam type
+ *       
+ *       **USED IN:** Past Questions page (Image feinten)
+ *       
+ *       **WHAT ARE PAST QUESTIONS:**
+ *       - Real essay questions from previous FE-1 exams
+ *       - Organized by year (2024, 2023, 2022, etc.)
+ *       - Organized by subject (Criminal Law, Contract Law, etc.)
+ *       - Type: Essay or Problem questions
+ *       - NOT multiple choice (those are for practice only)
+ *       
+ *       **FILTERS PROVIDED:**
+ *       Response includes available filter values for dropdowns:
+ *       - All subjects that have past questions
+ *       - All years that have past questions (sorted newest first)
+ *       - All exam types (Essay, Problem)
+ *       
+ *       **PAGINATION:**
+ *       - Default: 10 questions per page
+ *       - Can be adjusted with `limit` parameter
+ *       - Use `page` parameter to navigate
+ *       
+ *       **FRONTEND IMPLEMENTATION:**
+ *       ```javascript
+ *       // 1. Fetch past questions with filters
+ *       const filters = {
+ *         subject: 'Criminal Law', // or undefined for all
+ *         year: 2024, // or undefined for all
+ *         examType: 'Essay', // or undefined for all
+ *         page: 1,
+ *         limit: 10
+ *       };
+ *       
+ *       const queryString = new URLSearchParams(
+ *         Object.entries(filters)
+ *           .filter(([_, v]) => v !== undefined)
+ *           .map(([k, v]) => [k, String(v)])
+ *       ).toString();
+ *       
+ *       const response = await fetch(`/api/v1/past-questions?${queryString}`);
+ *       const { data } = await response.json();
+ *       
+ *       // 2. Display filter dropdowns using data.filters
+ *       const subjectDropdown = data.filters.subjects; // ["Criminal Law", "Contract Law", ...]
+ *       const yearDropdown = data.filters.years; // [2024, 2023, 2022, ...]
+ *       const typeDropdown = data.filters.examTypes; // ["Essay", "Problem"]
+ *       
+ *       // 3. Display questions as cards
+ *       data.questions.forEach(question => {
+ *         // Card showing:
+ *         // "2024 Criminal Law Essay"
+ *         // "Discuss the elements of negligence with reference to..."
+ *         // [View Question Button]
+ *       });
+ *       
+ *       // 4. Pagination
+ *       const totalPages = Math.ceil(data.total / filters.limit);
+ *       // Show: "Page 1 of 5 (45 questions total)"
+ *       
+ *       // 5. Click question to view full details
+ *       // Navigate to: /past-questions/:id (Endpoint 15)
+ *       ```
+ *       
+ *       **CARD DISPLAY (per question):**
+ *       ```
+ *       ┌─────────────────────────────────────────┐
+ *       │ 2024 Equity Essay                       │
+ *       ├─────────────────────────────────────────┤
+ *       │ Discuss the equitable maxims and their  │
+ *       │ application in modern Irish law...      │
+ *       │                                         │
+ *       │ [View Question & Submit Answer] →       │
+ *       └─────────────────────────────────────────┘
+ *       ```
+ *       
+ *       **SORTING:**
+ *       Questions sorted by:
+ *       1. Year (newest first)
+ *       2. Order (within same year)
+ *       
+ *     parameters:
+ *       - in: query
+ *         name: subject
+ *         schema:
+ *           type: string
+ *         description: Filter by subject (e.g., "Criminal Law")
+ *         example: Criminal Law
+ *       - in: query
+ *         name: year
+ *         schema:
+ *           type: integer
+ *         description: Filter by exam year
+ *         example: 2024
+ *       - in: query
+ *         name: examType
+ *         schema:
+ *           type: string
+ *         description: Filter by question type (Essay or Problem)
+ *         example: Essay
+ *       - in: query
+ *         name: page
+ *         schema:
+ *           type: integer
+ *           default: 1
+ *         description: Page number for pagination
+ *       - in: query
+ *         name: limit
+ *         schema:
+ *           type: integer
+ *           default: 10
+ *         description: Number of questions per page
+ *     responses:
+ *       200:
+ *         description: Past questions retrieved successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Past questions retrieved
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     questions:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           id:
+ *                             type: string
+ *                             example: clx789ghi
+ *                           text:
+ *                             type: string
+ *                             example: "Discuss the tort of negligence with reference to Donoghue v Stevenson..."
+ *                           year:
+ *                             type: integer
+ *                             example: 2024
+ *                           subject:
+ *                             type: string
+ *                             example: Criminal Law
+ *                           examType:
+ *                             type: string
+ *                             example: Essay
+ *                           order:
+ *                             type: integer
+ *                             example: 1
+ *                     total:
+ *                       type: integer
+ *                       example: 45
+ *                       description: Total number of questions matching filters
+ *                     filters:
+ *                       type: object
+ *                       description: Available filter values for dropdowns
+ *                       properties:
+ *                         subjects:
+ *                           type: array
+ *                           items:
+ *                             type: string
+ *                           example: ["Criminal Law", "Contract Law", "Tort Law", "Equity"]
+ *                         years:
+ *                           type: array
+ *                           items:
+ *                             type: integer
+ *                           example: [2024, 2023, 2022, 2021]
+ *                         examTypes:
+ *                           type: array
+ *                           items:
+ *                             type: string
+ *                           example: ["Essay", "Problem"]
+ */
+practiceRouter.get(
+  '/past-questions',
+  protect,
+  validate(pastQuestionsQuerySchema),
+  getPastQuestions
+);
 
 export default practiceRouter
