@@ -476,7 +476,7 @@ model Podcast {
   subject     String?   // Related subject
   audioUrl    String    // Cloudinary URL
   publicId    String    // Cloudinary public_id
-  duration    Int       // Duration in seconds
+  duration    Int?      // Duration in seconds
   thumbnail   String?   // Cover image URL
   
   order       Int       @default(0)

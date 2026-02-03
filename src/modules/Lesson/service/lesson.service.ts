@@ -314,4 +314,4 @@ class Lesson {
   }
 }
 
-export default new Lesson();
+export default new Lesson();   
