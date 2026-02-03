@@ -3,6 +3,7 @@ import { Request, Response } from 'express';
 import { asyncHandler } from '@/shared/utils';
 import practiseService from '../service/practise.service';
 import { sendSuccess } from '@/shared/utils';
+import { PastQuestionsQuery } from '../interface/practise.interface';
 
 // src/modules/content/controller/content.controller.ts
 
@@ -38,4 +39,18 @@ export const getMixedPractice = asyncHandler(async (req: Request, res: Response)
   const practice = await practiseService.getMixedPractice(subjectId);
 
   sendSuccess(res, 'Mixed practice retrieved', practice);
+});
+
+export const getPastQuestions = asyncHandler(async (req: Request, res: Response) => {
+  const query: PastQuestionsQuery = {
+    subject: req.query.subject as string | undefined,
+    year: req.query.year ? parseInt(req.query.year as string) : undefined,
+    examType: req.query.examType as string | undefined,
+    page: req.query.page ? parseInt(req.query.page as string) : 1,
+    limit: req.query.limit ? parseInt(req.query.limit as string) : 10,
+  };
+
+  const result = await practiseService.getPastQuestions(query);
+
+  sendSuccess(res, 'Past questions retrieved', result);
 });
