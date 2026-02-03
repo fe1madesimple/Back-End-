@@ -133,7 +133,6 @@ Understanding these foundational concepts is essential for analyzing any crimina
             videoUrl:
               'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/criminal-law/lesson-1.mp4',
             videoPublicId: 'fe1/criminal-law/lesson-1',
-            videoDuration: 863, // 14:23
             assets: {
               create: [
                 {
@@ -180,7 +179,6 @@ Irish criminal law distinguishes between:
             videoUrl:
               'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/criminal-law/lesson-2.mp4',
             videoPublicId: 'fe1/criminal-law/lesson-2',
-            videoDuration: 720, // 12:00
           },
           {
             title: 'Lesson 3: Actus Reus',
@@ -225,7 +223,6 @@ The actus reus must cause the prohibited result.`,
             videoUrl:
               'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/criminal-law/lesson-3.mp4',
             videoPublicId: 'fe1/criminal-law/lesson-3',
-            videoDuration: 900, // 15:00
           },
           {
             title: 'Lesson 4: Mens Rea',
@@ -265,7 +262,6 @@ Some crimes require no mens rea (rare):
             videoUrl:
               'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/criminal-law/lesson-4.mp4',
             videoPublicId: 'fe1/criminal-law/lesson-4',
-            videoDuration: 1020, // 17:00
           },
           {
             title: 'Lesson 5: Coincidence of Actus Reus and Mens Rea',
@@ -290,7 +286,6 @@ Most crimes: mens rea and actus reus happen simultaneously. These doctrines hand
             videoUrl:
               'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/criminal-law/lesson-5.mp4',
             videoPublicId: 'fe1/criminal-law/lesson-5',
-            videoDuration: 540, // 9:00
           },
         ],
       },
@@ -343,7 +338,6 @@ Unlawful application of force to another person.
             videoUrl:
               'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/criminal-law/module2-lesson-1.mp4',
             videoPublicId: 'fe1/criminal-law/module2-lesson-1',
-            videoDuration: 780, // 13:00
           },
           {
             title: 'Lesson 2: Assault Causing Harm',
@@ -372,7 +366,6 @@ Assault causing harm to another.
             videoUrl:
               'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/criminal-law/module2-lesson-2.mp4',
             videoPublicId: 'fe1/criminal-law/module2-lesson-2',
-            videoDuration: 660, // 11:00
           },
           {
             title: 'Lesson 3: Assault Causing Serious Harm',
@@ -402,7 +395,6 @@ Intentionally or recklessly causing serious harm to another.
             videoUrl:
               'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/criminal-law/module2-lesson-3.mp4',
             videoPublicId: 'fe1/criminal-law/module2-lesson-3',
-            videoDuration: 840, // 14:00
           },
         ],
       },
@@ -427,7 +419,6 @@ Intentionally or recklessly causing serious harm to another.
             videoUrl:
               'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/criminal-law/module3-lesson-1.mp4',
             videoPublicId: 'fe1/criminal-law/module3-lesson-1',
-            videoDuration: 900,
           },
           {
             title: 'Lesson 2: Robbery',
@@ -438,7 +429,6 @@ Intentionally or recklessly causing serious harm to another.
             videoUrl:
               'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/criminal-law/module3-lesson-2.mp4',
             videoPublicId: 'fe1/criminal-law/module3-lesson-2',
-            videoDuration: 720,
           },
           {
             title: 'Lesson 3: Burglary',
@@ -449,7 +439,6 @@ Intentionally or recklessly causing serious harm to another.
             videoUrl:
               'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/criminal-law/module3-lesson-3.mp4',
             videoPublicId: 'fe1/criminal-law/module3-lesson-3',
-            videoDuration: 840,
           },
         ],
       },
@@ -478,7 +467,6 @@ Intentionally or recklessly causing serious harm to another.
             videoUrl:
               'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module1-lesson-1.mp4',
             videoPublicId: 'fe1/contract-law/module1-lesson-1',
-            videoDuration: 780,
           },
           {
             title: 'Lesson 2: Acceptance',
@@ -489,7 +477,6 @@ Intentionally or recklessly causing serious harm to another.
             videoUrl:
               'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module1-lesson-2.mp4',
             videoPublicId: 'fe1/contract-law/module1-lesson-2',
-            videoDuration: 720,
           },
         ],
       },
@@ -514,7 +501,6 @@ Intentionally or recklessly causing serious harm to another.
             videoUrl:
               'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module2-lesson-1.mp4',
             videoPublicId: 'fe1/contract-law/module2-lesson-1',
-            videoDuration: 660,
           },
           {
             title: 'Lesson 2: Breach of Contract',
@@ -525,7 +511,6 @@ Intentionally or recklessly causing serious harm to another.
             videoUrl:
               'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module2-lesson-2.mp4',
             videoPublicId: 'fe1/contract-law/module2-lesson-2',
-            videoDuration: 840,
           },
         ],
       },
@@ -550,7 +535,6 @@ Intentionally or recklessly causing serious harm to another.
             videoUrl:
               'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module3-lesson-1.mp4',
             videoPublicId: 'fe1/contract-law/module3-lesson-1',
-            videoDuration: 900,
           },
           {
             title: 'Lesson 2: Specific Performance',
@@ -561,7 +545,6 @@ Intentionally or recklessly causing serious harm to another.
             videoUrl:
               'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/contract-law/module3-lesson-2.mp4',
             videoPublicId: 'fe1/contract-law/module3-lesson-2',
-            videoDuration: 720,
           },
         ],
       },
@@ -590,7 +573,6 @@ Intentionally or recklessly causing serious harm to another.
             videoUrl:
               'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module1-lesson-1.mp4',
             videoPublicId: 'fe1/tort-law/module1-lesson-1',
-            videoDuration: 960,
           },
           {
             title: 'Lesson 2: Breach of Duty',
@@ -601,7 +583,6 @@ Intentionally or recklessly causing serious harm to another.
             videoUrl:
               'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module1-lesson-2.mp4',
             videoPublicId: 'fe1/tort-law/module1-lesson-2',
-            videoDuration: 780,
           },
         ],
       },
@@ -626,7 +607,6 @@ Intentionally or recklessly causing serious harm to another.
             videoUrl:
               'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module2-lesson-1.mp4',
             videoPublicId: 'fe1/tort-law/module2-lesson-1',
-            videoDuration: 840,
           },
           {
             title: 'Lesson 2: Defenses to Defamation',
@@ -637,7 +617,6 @@ Intentionally or recklessly causing serious harm to another.
             videoUrl:
               'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module2-lesson-2.mp4',
             videoPublicId: 'fe1/tort-law/module2-lesson-2',
-            videoDuration: 720,
           },
         ],
       },
@@ -662,7 +641,6 @@ Intentionally or recklessly causing serious harm to another.
             videoUrl:
               'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module3-lesson-1.mp4',
             videoPublicId: 'fe1/tort-law/module3-lesson-1',
-            videoDuration: 660,
           },
           {
             title: 'Lesson 2: Public Nuisance',
@@ -673,7 +651,6 @@ Intentionally or recklessly causing serious harm to another.
             videoUrl:
               'https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/tort-law/module3-lesson-2.mp4',
             videoPublicId: 'fe1/tort-law/module3-lesson-2',
-            videoDuration: 600,
           },
         ],
       },
