@@ -42,3 +42,29 @@ export interface MixedPracticeResponse {
   totalAvailable: number;
   modulesIncluded: number;
 }
+
+
+export interface PastQuestionsListResponse {
+  questions: {
+    id: string;
+    text: string;
+    year: number;
+    subject: string;
+    examType: string;
+    order: number;
+  }[];
+  total: number;
+  filters: {
+    subjects: string[];
+    years: number[];
+    examTypes: string[];
+  };
+}
+
+export interface PastQuestionsQuery {
+  subject?: string;
+  year?: number;
+  examType?: string;
+  page?: number;
+  limit?: number;
+}

@@ -285,7 +285,6 @@ practiceRouter.get(
 );
 
 
-// src/modules/content/routes/content.routes.ts
 
 /**
  * @swagger
