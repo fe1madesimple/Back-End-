@@ -1,5 +1,5 @@
 import { prisma } from '@/shared/config';
-import { NotFoundError, BadRequestError } from '@/shared/utils';
+import { NotFoundError, BadRequestError, ForbiddenError } from '@/shared/utils';
 import { StartSessionRequest, StartSessionResponse } from '../interface/study-session.interface';
 
 class StudySessionService {
@@ -51,6 +51,7 @@ class StudySessionService {
         moduleId: moduleId || null,
         sessionType,
         startedAt: new Date(),
+        isActive: true,
       },
     });
 
