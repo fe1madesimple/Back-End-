@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { protect } from '@/shared/middleware/auth.middleware';
-import { getDashboardStats, getSubjectProgressDetail} from '../controllers/progress.controller';
+import { getDashboardStats, getSubjectProgressDetail, getStudyStreak} from '../controllers/progress.controller';
 
 const progressRouter = Router();
 
@@ -415,5 +415,239 @@ progressRouter.get(
   protect,
   getSubjectProgressDetail
 );
+
+
+/**
+ * @swagger
+ * /api/v1/progress/study-streak:
+ *   get:
+ *     summary: Get user's study streak and daily activity calendar
+ *     tags: [Progress & Analytics]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Returns study streak statistics, daily goal progress, and activity calendar for visualization.
+ *       
+ *       **USE CASE:**
+ *       - User views their study consistency
+ *       - Motivate users with streak tracking (gamification)
+ *       - Display activity calendar (GitHub-style heatmap)
+ *       - Track daily goal completion
+ *       
+ *       **RESPONSE INCLUDES:**
+ *       - Current active streak (consecutive days studied)
+ *       - Longest streak ever
+ *       - Total study days
+ *       - Today's goal progress
+ *       - Last 7 days activity (for weekly chart)
+ *       - Last 30 days calendar (for heatmap)
+ *       - Historical streaks
+ *       
+ *       **FRONTEND IMPLEMENTATION:**
+ *       ```javascript
+ *       // Fetch study streak
+ *       const response = await fetch('/api/v1/progress/study-streak');
+ *       const streak = response.data;
+ *       
+ *       // Display streak badges
+ *       document.getElementById('current-streak').innerHTML = `
+ *         <div class="streak-badge">
+ *           🔥 ${streak.currentStreak} day streak
+ *         </div>
+ *       `;
+ *       
+ *       document.getElementById('longest-streak').textContent = 
+ *         `Best: ${streak.longestStreak} days`;
+ *       
+ *       // Display today's goal progress
+ *       const progress = streak.dailyGoal;
+ *       document.getElementById('daily-goal').innerHTML = `
+ *         Goal: ${progress.targetHours}h/day
+ *         <div class="progress-bar">
+ *           <div style="width: ${progress.todayProgress}%"></div>
+ *         </div>
+ *         ${progress.todayMinutes} min today
+ *         ${progress.goalMet ? '✓ Goal met!' : ''}
+ *       `;
+ *       
+ *       // Display week activity bar chart
+ *       streak.weekActivity.forEach(day => {
+ *         const bar = document.createElement('div');
+ *         bar.className = 'activity-bar';
+ *         bar.style.height = `${(day.minutesStudied / (progress.targetHours * 60)) * 100}%`;
+ *         bar.classList.toggle('goal-met', day.goalMet);
+ *         bar.title = `${new Date(day.date).toLocaleDateString()}: ${day.minutesStudied} min`;
+ *         weekChart.appendChild(bar);
+ *       });
+ *       
+ *       // Display GitHub-style activity heatmap
+ *       const heatmap = document.getElementById('activity-heatmap');
+ *       streak.monthCalendar.forEach(day => {
+ *         const cell = document.createElement('div');
+ *         cell.className = 'heatmap-cell';
+ *         
+ *         // Color intensity based on study time
+ *         if (day.minutesStudied === 0) {
+ *           cell.classList.add('level-0'); // Gray
+ *         } else if (day.minutesStudied < 60) {
+ *           cell.classList.add('level-1'); // Light green
+ *         } else if (day.minutesStudied < 120) {
+ *           cell.classList.add('level-2'); // Medium green
+ *         } else {
+ *           cell.classList.add('level-3'); // Dark green
+ *         }
+ *         
+ *         cell.title = `${new Date(day.date).toLocaleDateString()}: ${day.minutesStudied} min`;
+ *         heatmap.appendChild(cell);
+ *       });
+ *       
+ *       // Display streak history
+ *       streak.streakHistory.forEach(s => {
+ *         // "15-day streak: Jan 10 - Jan 25, 2026"
+ *         const start = new Date(s.startDate).toLocaleDateString();
+ *         const end = new Date(s.endDate).toLocaleDateString();
+ *         console.log(`${s.lengthDays}-day streak: ${start} - ${end}`);
+ *       });
+ *       
+ *       // Motivational messages
+ *       if (streak.currentStreak === 0) {
+ *         showMotivation("Start your streak today! Study for just 10 minutes.");
+ *       } else if (streak.currentStreak < 7) {
+ *         showMotivation(`Keep it up! ${7 - streak.currentStreak} more days to reach a 7-day streak!`);
+ *       } else if (streak.currentStreak === streak.longestStreak) {
+ *         showMotivation("🎉 New personal record! You're crushing it!");
+ *       }
+ *       ```
+ *       
+ *       **UI COMPONENTS:**
+ *       
+ *       1. **Streak Badge:**
+ *       - 🔥 icon with current streak number
+ *       - "Best: X days" below
+ *       - Celebrate milestones (7, 14, 30, 100 days)
+ *       
+ *       2. **Daily Goal Progress:**
+ *       - Progress bar showing today's completion
+ *       - "2h goal - 1h 23m studied (65%)"
+ *       - Checkmark when goal met
+ *       
+ *       3. **Weekly Bar Chart:**
+ *       - 7 vertical bars (one per day)
+ *       - Height = minutes studied
+ *       - Green if goal met, gray if not
+ *       - Hover shows exact time
+ *       
+ *       4. **Monthly Heatmap (GitHub-style):**
+ *       - 30 squares in grid
+ *       - Color intensity = study time
+ *       - Dark green = 2h+, light green = 1h, gray = 0
+ *       - Click to see day details
+ *       
+ *       5. **Streak History:**
+ *       - Timeline of past streaks
+ *       - "15-day streak in January"
+ *       - Shows consistency over time
+ *       
+ *       **GAMIFICATION IDEAS:**
+ *       - Award badges: 7-day, 30-day, 100-day streaks
+ *       - "Don't break the chain!" motivation
+ *       - Share streak on social media
+ *       - Leaderboard (optional)
+ *       
+ *     responses:
+ *       200:
+ *         description: Study streak retrieved successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Study streak retrieved
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     currentStreak:
+ *                       type: integer
+ *                       example: 5
+ *                       description: Current consecutive days studied
+ *                     longestStreak:
+ *                       type: integer
+ *                       example: 15
+ *                       description: Longest ever consecutive streak
+ *                     totalStudyDays:
+ *                       type: integer
+ *                       example: 42
+ *                       description: Total number of days studied (lifetime)
+ *                     dailyGoal:
+ *                       type: object
+ *                       properties:
+ *                         targetHours:
+ *                           type: integer
+ *                           example: 2
+ *                         todayProgress:
+ *                           type: integer
+ *                           example: 65
+ *                           description: Percentage of daily goal completed today
+ *                         todayMinutes:
+ *                           type: integer
+ *                           example: 78
+ *                           description: Minutes studied today
+ *                         goalMet:
+ *                           type: boolean
+ *                           example: false
+ *                     weekActivity:
+ *                       type: array
+ *                       description: Last 7 days activity (for bar chart)
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           date:
+ *                             type: string
+ *                             example: "2026-02-03"
+ *                           minutesStudied:
+ *                             type: integer
+ *                             example: 145
+ *                           goalMet:
+ *                             type: boolean
+ *                             example: true
+ *                     monthCalendar:
+ *                       type: array
+ *                       description: Last 30 days activity (for heatmap)
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           date:
+ *                             type: string
+ *                             example: "2026-01-15"
+ *                           minutesStudied:
+ *                             type: integer
+ *                             example: 90
+ *                           goalMet:
+ *                             type: boolean
+ *                             example: false
+ *                     streakHistory:
+ *                       type: array
+ *                       description: Past streaks (last 5, minimum 3 days each)
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           startDate:
+ *                             type: string
+ *                             format: date-time
+ *                             example: "2026-01-10T00:00:00Z"
+ *                           endDate:
+ *                             type: string
+ *                             format: date-time
+ *                             example: "2026-01-25T00:00:00Z"
+ *                           lengthDays:
+ *                             type: integer
+ *                             example: 15
+ */
+progressRouter.get('/study-streak', protect, getStudyStreak);
 
 export default progressRouter;
