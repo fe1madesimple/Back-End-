@@ -1,11 +1,11 @@
-// src/modules/content/interface/content.interface.ts
+
 
 export interface PodcastListResponse {
   podcasts: {
     id: string;
     title: string;
-    description: string;
-    subject: string;
+    description: string | null; // ← Add | null
+    subject: string | null; // ← Add | null
     audioUrl: string;
     thumbnail: string | null;
     duration: number | null;
