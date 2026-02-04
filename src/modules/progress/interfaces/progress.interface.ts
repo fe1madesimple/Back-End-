@@ -64,3 +64,30 @@ export interface SubjectProgressDetailResponse {
     completedAt: Date;
   }[];
 }
+
+export interface StudyStreakResponse {
+  currentStreak: number;
+  longestStreak: number;
+  totalStudyDays: number;
+  dailyGoal: {
+    targetHours: number;
+    todayProgress: number;
+    todayMinutes: number;
+    goalMet: boolean;
+  };
+  weekActivity: {
+    date: string;
+    minutesStudied: number;
+    goalMet: boolean;
+  }[];
+  monthCalendar: {
+    date: string;
+    minutesStudied: number;
+    goalMet: boolean;
+  }[];
+  streakHistory: {
+    startDate: Date;
+    endDate: Date;
+    lengthDays: number;
+  }[];
+}
