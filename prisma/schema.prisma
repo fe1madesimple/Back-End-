@@ -498,6 +498,7 @@ model StudySession {
   subjectId       String?
   moduleId        String?
   lessonId        String?
+  sessionType     String?
   
   startedAt       DateTime @default(now())
   endedAt         DateTime?
