@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getQuickQuiz, getTopicChallenge, getMixedPractice, getPastQuestions, getPastQuestionById, getPastQuestionById} from "../controller/practise.controller";
+import { getQuickQuiz, getTopicChallenge, getMixedPractice, getPastQuestions, getPastQuestionById} from "../controller/practise.controller";
 import { protect } from "@/shared/middleware/auth.middleware";
 const practiceRouter = Router()
 import { validate } from "@/shared/middleware/validation";
