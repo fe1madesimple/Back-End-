@@ -1,9 +1,9 @@
      // src/modules/study-sessions/controller/study-session.controller.ts
 
 import { Request, Response } from 'express';
-import { asyncHandler } from '@/shared/utils/asyncHandler';
+import { asyncHandler } from '@/shared/utils';
 import { sendSuccess } from '@/shared/utils/response';
-import studySessionService from '../service/study-session.service';
+
 
 export const startSession = asyncHandler(async (req: Request, res: Response) => {
   const userId = req.user!.user.id;
