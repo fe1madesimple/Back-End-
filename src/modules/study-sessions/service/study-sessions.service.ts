@@ -1,13 +1,18 @@
 import { prisma } from '@/shared/config';
 import { NotFoundError, BadRequestError, ForbiddenError } from '@/shared/utils';
-import { StartSessionRequest, StartSessionResponse } from '../interface/study-session.interface';
+import {
+  EndSessionRequest,
+  EndSessionResponse,
+  StartSessionRequest,
+  StartSessionResponse,
+} from '../interface/study-session.interface';
 
 class StudySessionService {
   async startSession(userId: string, data: StartSessionRequest): Promise<StartSessionResponse> {
     const { subjectId, moduleId, sessionType } = data;
 
     // Verify subject exists
-    const subject = await prisma.subject.findUnique({   
+    const subject = await prisma.subject.findUnique({
       where: { id: subjectId, isPublished: true },
       select: { id: true, name: true },
     });
@@ -97,6 +102,73 @@ class StudySessionService {
         isActive,
       },
     });
+  }
+
+  // src/modules/study-sessions/service/study-session.service.ts
+
+  async endSession(
+    userId: string,
+    sessionId: string,
+    data: EndSessionRequest
+  ): Promise<EndSessionResponse> {
+    const { lessonsCompleted = 0, questionsAttempted = 0, notes } = data;
+
+    // Get session
+    const session = await prisma.studySession.findUnique({
+      where: { id: sessionId },
+      include: {
+        subject: {
+          select: { name: true },
+        },
+      },
+    });
+
+    if (!session) {
+      throw new NotFoundError('Study session not found');
+    }
+
+    if (session.userId !== userId) {
+      throw new ForbiddenError('Access denied');
+    }
+
+    if (session.endedAt) {
+      throw new BadRequestError('This session has already ended');
+    }
+
+    const endedAt = new Date();
+    const durationSeconds = Math.floor((endedAt.getTime() - session.startedAt.getTime()) / 1000);
+
+    // Calculate points earned (1 point per 10 minutes)
+    const pointsEarned = Math.floor(durationSeconds / 600);
+
+    // Update session
+    const updatedSession = await prisma.studySession.update({
+      where: { id: sessionId },
+      data: {
+        endedAt,
+        durationSeconds,
+        lessonsCompleted,
+        questionsAttempted,
+        pointsEarned,
+        notes: notes || null,
+      },
+    });
+
+    // Format duration as readable string
+    const hours = Math.floor(durationSeconds / 3600);
+    const minutes = Math.floor((durationSeconds % 3600) / 60);
+    const timeSpent = hours > 0 ? `${hours}h ${minutes}m` : `${minutes}m`;
+
+    return {
+      sessionId: updatedSession.id,
+      duration: durationSeconds,
+      pointsEarned,
+      summary: {
+        lessonsCompleted,
+        questionsAttempted,
+        timeSpent,
+      },
+    };
   }
 }
 
