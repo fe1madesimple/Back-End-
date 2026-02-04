@@ -13,3 +13,15 @@ export const startSession = asyncHandler(async (req: Request, res: Response) => 
 
   sendSuccess(res, 'Study session started', session, 201);
 });
+
+// src/modules/study-sessions/controller/study-session.controller.ts
+
+export const pingSession = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { sessionId } = req.params;
+  const { isActive } = req.body;
+
+  await studySessionsService.pingSession(userId, sessionId, isActive);
+
+  sendSuccess(res, 'Session ping recorded');
+});
