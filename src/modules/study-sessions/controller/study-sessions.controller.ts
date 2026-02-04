@@ -36,7 +36,9 @@ export const endSession = asyncHandler(async (req: Request, res: Response) => {
   const { sessionId } = req.params;
   const data = req.body;
 
-  const result = await studySessionService.endSession(userId, sessionId, data);
+  if (!sessionId) throw new AppError("session id must be present")
+
+  const result = await studySessionsService.endSession(userId, sessionId, data);
 
   sendSuccess(res, 'Study session ended', result);
 });
