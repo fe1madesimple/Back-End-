@@ -4,8 +4,9 @@ import { prisma } from '@/shared/config';
 import {
   DashboardStatsResponse,
   SubjectProgressDetailResponse,
-    StudyStreakResponse,
-  WeeklySummaryResponse
+  StudyStreakResponse,
+  WeeklySummaryResponse,
+  ModuleStatsResponse,
 } from '../interfaces/progress.interface';
 import { NotFoundError } from '@/shared/utils';
 
@@ -520,266 +521,453 @@ class ProgressService {
       monthCalendar,
       streakHistory: streakHistory.slice(-5), // Last 5 streaks
     };
-    }
-    
+  }
 
-async getWeeklySummary(userId: string): Promise<WeeklySummaryResponse> {
-  const today = new Date();
-  const weekStart = new Date(today);
-  weekStart.setDate(weekStart.getDate() - 6);
-  weekStart.setHours(0, 0, 0, 0);
+  async getWeeklySummary(userId: string): Promise<WeeklySummaryResponse> {
+    const today = new Date();
+    const weekStart = new Date(today);
+    weekStart.setDate(weekStart.getDate() - 6);
+    weekStart.setHours(0, 0, 0, 0);
 
-  const weekEnd = new Date(today);
-  weekEnd.setHours(23, 59, 59, 999);
+    const weekEnd = new Date(today);
+    weekEnd.setHours(23, 59, 59, 999);
 
-  // Get user's daily goal
-  const user = await prisma.user.findUnique({
-    where: { id: userId },
-    select: { dailyStudyGoal: true },
-  });
+    // Get user's daily goal
+    const user = await prisma.user.findUnique({
+      where: { id: userId },
+      select: { dailyStudyGoal: true },
+    });
 
-  const dailyGoalSeconds = (user?.dailyStudyGoal || 2) * 3600;
+    const dailyGoalSeconds = (user?.dailyStudyGoal || 2) * 3600;
 
-  // Get all lesson progress for the week
-  const weekLessons = await prisma.userLessonProgress.findMany({
-    where: {
-      userId,
-      updatedAt: {
-        gte: weekStart,
-        lte: weekEnd,
+    // Get all lesson progress for the week
+    const weekLessons = await prisma.userLessonProgress.findMany({
+      where: {
+        userId,
+        updatedAt: {
+          gte: weekStart,
+          lte: weekEnd,
+        },
       },
-    },
-    include: {
-      lesson: {
-        include: {
-          module: {
-            include: {
-              subject: {
-                select: { name: true },
+      include: {
+        lesson: {
+          include: {
+            module: {
+              include: {
+                subject: {
+                  select: { name: true },
+                },
               },
             },
           },
         },
       },
-    },
-  });
+    });
 
-  // Get completed lessons this week
-  const completedLessons = await prisma.userLessonProgress.count({
-    where: {
-      userId,
-      isCompleted: true,
-      completedAt: {
-        gte: weekStart,
-        lte: weekEnd,
+    // Get completed lessons this week
+    const completedLessons = await prisma.userLessonProgress.count({
+      where: {
+        userId,
+        isCompleted: true,
+        completedAt: {
+          gte: weekStart,
+          lte: weekEnd,
+        },
       },
-    },
-  });
+    });
 
-  // Get questions attempted this week
-  const weekQuestions = await prisma.questionAttempt.findMany({
-    where: {
-      userId,
-      createdAt: {
-        gte: weekStart,
-        lte: weekEnd,
+    // Get questions attempted this week
+    const weekQuestions = await prisma.questionAttempt.findMany({
+      where: {
+        userId,
+        createdAt: {
+          gte: weekStart,
+          lte: weekEnd,
+        },
       },
-    },
-    select: {
-      createdAt: true,
-      pointsEarned: true,
-      question: {
-        select: { points: true },
+      select: {
+        createdAt: true,
+        pointsEarned: true,
+        question: {
+          select: { points: true },
+        },
       },
-    },
-  });
+    });
 
-  // Calculate average quiz score
-  const averageQuizScore =
-    weekQuestions.length > 0
-      ? weekQuestions.reduce(
-          (sum, q) => sum + (q.pointsEarned / (q.question.points || 1)) * 100,
-          0
-        ) / weekQuestions.length
-      : 0;
+    // Calculate average quiz score
+    const averageQuizScore =
+      weekQuestions.length > 0
+        ? weekQuestions.reduce(
+            (sum, q) => sum + (q.pointsEarned / (q.question.points || 1)) * 100,
+            0
+          ) / weekQuestions.length
+        : 0;
 
-  // Group data by day
-  const dailyData = new Map<
-    string,
-    {
-      timeSeconds: number;
-      lessonsCompleted: number;
-      questionsAttempted: number;
-      quizScores: number[];
+    // Group data by day
+    const dailyData = new Map<
+      string,
+      {
+        timeSeconds: number;
+        lessonsCompleted: number;
+        questionsAttempted: number;
+        quizScores: number[];
+      }
+    >();
+
+    // Process lesson data
+    weekLessons.forEach((lesson) => {
+      const dateKey = lesson.updatedAt.toISOString().split('T')[0];
+      if (!dateKey) return;
+
+      const current = dailyData.get(dateKey) || {
+        timeSeconds: 0,
+        lessonsCompleted: 0,
+        questionsAttempted: 0,
+        quizScores: [],
+      };
+
+      current.timeSeconds += lesson.timeSpentSeconds;
+      if (lesson.isCompleted && lesson.completedAt) {
+        const completedKey = lesson.completedAt.toISOString().split('T')[0];
+        if (completedKey === dateKey) {
+          current.lessonsCompleted++;
+        }
+      }
+
+      dailyData.set(dateKey, current);
+    });
+
+    // Process question data
+    weekQuestions.forEach((attempt) => {
+      const dateKey = attempt.createdAt.toISOString().split('T')[0];
+      if (!dateKey) return;
+
+      const current = dailyData.get(dateKey) || {
+        timeSeconds: 0,
+        lessonsCompleted: 0,
+        questionsAttempted: 0,
+        quizScores: [],
+      };
+
+      current.questionsAttempted++;
+      current.quizScores.push((attempt.pointsEarned / (attempt.question.points || 1)) * 100);
+
+      dailyData.set(dateKey, current);
+    });
+
+    // Build daily breakdown for last 7 days
+    const dailyBreakdown = [];
+    let daysStudied = 0;
+    let dailyGoalsMet = 0;
+
+    for (let i = 6; i >= 0; i--) {
+      const date = new Date(today);
+      date.setDate(date.getDate() - i);
+      const dateKey = date.toISOString().split('T')[0];
+
+      if (!dateKey) continue;
+
+      const dayData = dailyData.get(dateKey);
+      const timeSeconds = dayData?.timeSeconds || 0;
+      const goalMet = timeSeconds >= dailyGoalSeconds;
+
+      if (timeSeconds > 0) {
+        daysStudied++;
+      }
+
+      if (goalMet) {
+        dailyGoalsMet++;
+      }
+
+      const avgScore =
+        dayData && dayData.quizScores.length > 0
+          ? dayData.quizScores.reduce((sum, s) => sum + s, 0) / dayData.quizScores.length
+          : null;
+
+      dailyBreakdown.push({
+        date: dateKey,
+        dayName: date.toLocaleDateString('en-US', { weekday: 'short' }),
+        timeSeconds,
+        lessonsCompleted: dayData?.lessonsCompleted || 0,
+        questionsAttempted: dayData?.questionsAttempted || 0,
+        quizScore: avgScore ? Math.round(avgScore * 10) / 10 : null,
+        goalMet,
+      });
     }
-  >();
 
-  // Process lesson data
-  weekLessons.forEach((lesson) => {
-    const dateKey = lesson.updatedAt.toISOString().split('T')[0];
-    if (!dateKey) return;
+    // Calculate top subjects
+    const subjectData = new Map<string, { timeSeconds: number; lessonsCompleted: number }>();
 
-    const current = dailyData.get(dateKey) || {
-      timeSeconds: 0,
-      lessonsCompleted: 0,
-      questionsAttempted: 0,
-      quizScores: [],
-    };
+    weekLessons.forEach((lesson) => {
+      const subjectName = lesson.lesson.module.subject.name;
+      const current = subjectData.get(subjectName) || { timeSeconds: 0, lessonsCompleted: 0 };
 
-    current.timeSeconds += lesson.timeSpentSeconds;
-    if (lesson.isCompleted && lesson.completedAt) {
-      const completedKey = lesson.completedAt.toISOString().split('T')[0];
-      if (completedKey === dateKey) {
+      current.timeSeconds += lesson.timeSpentSeconds;
+      if (lesson.isCompleted) {
         current.lessonsCompleted++;
       }
+
+      subjectData.set(subjectName, current);
+    });
+
+    const topSubjects = Array.from(subjectData.entries())
+      .map(([subjectName, data]) => ({
+        subjectName,
+        timeSeconds: data.timeSeconds,
+        lessonsCompleted: data.lessonsCompleted,
+      }))
+      .sort((a, b) => b.timeSeconds - a.timeSeconds)
+      .slice(0, 3);
+
+    // Generate achievements
+    const achievements: { type: string; title: string; description: string }[] = [];
+
+    if (daysStudied === 7) {
+      achievements.push({
+        type: 'STREAK',
+        title: 'Perfect Week! 🔥',
+        description: 'You studied every day this week',
+      });
     }
 
-    dailyData.set(dateKey, current);
-  });
+    if (dailyGoalsMet >= 5) {
+      achievements.push({
+        type: 'GOAL',
+        title: 'Goal Crusher! 🎯',
+        description: `Met your daily goal ${dailyGoalsMet} times this week`,
+      });
+    }
 
-  // Process question data
-  weekQuestions.forEach((attempt) => {
-    const dateKey = attempt.createdAt.toISOString().split('T')[0];
-    if (!dateKey) return;
+    if (completedLessons >= 10) {
+      achievements.push({
+        type: 'LESSONS',
+        title: 'Learning Machine! 📚',
+        description: `Completed ${completedLessons} lessons this week`,
+      });
+    }
 
-    const current = dailyData.get(dateKey) || {
-      timeSeconds: 0,
-      lessonsCompleted: 0,
-      questionsAttempted: 0,
-      quizScores: [],
+    if (averageQuizScore >= 80) {
+      achievements.push({
+        type: 'SCORE',
+        title: 'Quiz Master! ⭐',
+        description: `${Math.round(averageQuizScore)}% average quiz score`,
+      });
+    }
+
+    // Calculate total time
+    const totalTimeSeconds = Array.from(dailyData.values()).reduce(
+      (sum, day) => sum + day.timeSeconds,
+      0
+    );
+
+    return {
+      weekRange: {
+        startDate: weekStart.toISOString().split('T')[0]!,
+        endDate: weekEnd.toISOString().split('T')[0]!,
+      },
+      summary: {
+        totalTimeSeconds,
+        totalLessonsCompleted: completedLessons,
+        totalQuestionsAttempted: weekQuestions.length,
+        averageQuizScore: Math.round(averageQuizScore * 10) / 10,
+        daysStudied,
+        dailyGoalsMet,
+      },
+      dailyBreakdown,
+      topSubjects,
+      achievements,
     };
+  }
 
-    current.questionsAttempted++;
-    current.quizScores.push((attempt.pointsEarned / (attempt.question.points || 1)) * 100);
+  // src/modules/progress/service/progress.service.ts
 
-    dailyData.set(dateKey, current);
-  });
+  async getModuleStats(userId: string, moduleId: string): Promise<ModuleStatsResponse> {
+    // Get module with progress
+    const module = await prisma.module.findUnique({
+      where: { id: moduleId, isPublished: true },
+      include: {
+        subject: {
+          select: { name: true },
+        },
+        userProgress: {
+          where: { userId },
+        },
+        lessons: {
+          where: { isPublished: true },
+          include: {
+            userProgress: {
+              where: { userId },
+            },
+          },
+        },
+        questions: {
+          where: { type: 'MCQ', isPublished: true },
+          include: {
+            attempts: {
+              where: { userId },
+              orderBy: { createdAt: 'desc' },
+              include: {
+                question: {
+                  select: { text: true, points: true },
+                },
+              },
+            },
+          },
+        },
+      },
+    });
 
-  // Build daily breakdown for last 7 days
-  const dailyBreakdown = [];
-  let daysStudied = 0;
-  let dailyGoalsMet = 0;
-
-  for (let i = 6; i >= 0; i--) {
-    const date = new Date(today);
-    date.setDate(date.getDate() - i);
-    const dateKey = date.toISOString().split('T')[0];
-
-    if (!dateKey) continue;
-
-    const dayData = dailyData.get(dateKey);
-    const timeSeconds = dayData?.timeSeconds || 0;
-    const goalMet = timeSeconds >= dailyGoalSeconds;
-
-    if (timeSeconds > 0) {
-      daysStudied++;
+    if (!module) {
+      throw new NotFoundError('Module not found');
     }
 
-    if (goalMet) {
-      dailyGoalsMet++;
+    const moduleProgress = module.userProgress[0];
+
+    // Lesson statistics
+    const totalLessons = module.lessons.length;
+    const completedLessons = module.lessons.filter((l) => l.userProgress[0]?.isCompleted).length;
+
+    const totalTimeSpent = module.lessons.reduce(
+      (sum: number, l) => sum + (l.userProgress[0]?.timeSpentSeconds || 0),
+      0
+    );
+
+    const averageTimePerLesson =
+      completedLessons > 0 ? Math.floor(totalTimeSpent / completedLessons) : 0;
+
+    // Quiz statistics
+    const totalQuestions = module.questions.length;
+    const attemptedQuestions = module.questions.filter((q) => q.attempts.length > 0).length;
+
+    const allAttempts = module.questions.flatMap((q) => q.attempts);
+    const correctAttempts = allAttempts.filter((a) => a.isCorrect).length;
+
+    const scores = allAttempts.map((a) => (a.pointsEarned / (a.question.points || 1)) * 100);
+
+    const averageScore =
+      scores.length > 0 ? scores.reduce((sum: number, s: number) => sum + s, 0) / scores.length : 0;
+
+    const bestScore = scores.length > 0 ? Math.max(...scores) : 0;
+    const worstScore = scores.length > 0 ? Math.min(...scores) : 0;
+
+    // Performance analysis - strong/weak topics
+    const topicPerformance = new Map<string, { correct: number; total: number }>();
+
+    module.questions.forEach((question) => {
+      const topic = question.text.split(' ').slice(0, 5).join(' '); // Simplified topic extraction
+
+      question.attempts.forEach((attempt) => {
+        const current = topicPerformance.get(topic) || { correct: 0, total: 0 };
+        current.total++;
+        if (attempt.isCorrect) {
+          current.correct++;
+        }
+        topicPerformance.set(topic, current);
+      });
+    });
+
+    const topicScores = Array.from(topicPerformance.entries())
+      .map(([topic, data]) => ({
+        topic,
+        score: data.total > 0 ? (data.correct / data.total) * 100 : 0,
+        attempts: data.total,
+      }))
+      .filter((t) => t.attempts >= 2); // Only topics with 2+ attempts
+
+    const strongTopics = topicScores
+      .filter((t) => t.score >= 75)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 3)
+      .map((t) => ({
+        topic: t.topic,
+        score: Math.round(t.score * 10) / 10,
+      }));
+
+    const weakTopics = topicScores
+      .filter((t) => t.score < 60)
+      .sort((a, b) => a.score - b.score)
+      .slice(0, 3)
+      .map((t) => ({
+        topic: t.topic,
+        score: Math.round(t.score * 10) / 10,
+      }));
+
+    // Recent attempts (last 10)
+    const recentAttempts = allAttempts.slice(0, 10).map((attempt) => ({
+      questionText: attempt.question.text.slice(0, 80) + '...',
+      isCorrect: attempt.isCorrect ?? false,
+      score: Math.round((attempt.pointsEarned / (attempt.question.points || 1)) * 100 * 10) / 10,
+      timestamp: attempt.createdAt,
+    }));
+
+    // Generate recommendations
+    const recommendations: { type: string; message: string }[] = [];
+
+    if (completedLessons < totalLessons) {
+      recommendations.push({
+        type: 'LESSONS',
+        message: `Complete remaining ${totalLessons - completedLessons} lessons to finish this module`,
+      });
     }
 
-    const avgScore =
-      dayData && dayData.quizScores.length > 0
-        ? dayData.quizScores.reduce((sum, s) => sum + s, 0) / dayData.quizScores.length
-        : null;
-
-    dailyBreakdown.push({
-      date: dateKey,
-      dayName: date.toLocaleDateString('en-US', { weekday: 'short' }),
-      timeSeconds,
-      lessonsCompleted: dayData?.lessonsCompleted || 0,
-      questionsAttempted: dayData?.questionsAttempted || 0,
-      quizScore: avgScore ? Math.round(avgScore * 10) / 10 : null,
-      goalMet,
-    });
-  }
-
-  // Calculate top subjects
-  const subjectData = new Map<string, { timeSeconds: number; lessonsCompleted: number }>();
-
-  weekLessons.forEach((lesson) => {
-    const subjectName = lesson.lesson.module.subject.name;
-    const current = subjectData.get(subjectName) || { timeSeconds: 0, lessonsCompleted: 0 };
-
-    current.timeSeconds += lesson.timeSpentSeconds;
-    if (lesson.isCompleted) {
-      current.lessonsCompleted++;
+    if (averageScore < 70) {
+      recommendations.push({
+        type: 'PRACTICE',
+        message: 'Your quiz average is below 70% - review lessons and practice more questions',
+      });
     }
 
-    subjectData.set(subjectName, current);
-  });
+    if (weakTopics.length > 0) {
+      recommendations.push({
+        type: 'WEAK_TOPICS',
+        message: `Focus on: ${weakTopics.map((t) => t.topic).join(', ')}`,
+      });
+    }
 
-  const topSubjects = Array.from(subjectData.entries())
-    .map(([subjectName, data]) => ({
-      subjectName,
-      timeSeconds: data.timeSeconds,
-      lessonsCompleted: data.lessonsCompleted,
-    }))
-    .sort((a, b) => b.timeSeconds - a.timeSeconds)
-    .slice(0, 3);
+    if (attemptedQuestions < totalQuestions) {
+      recommendations.push({
+        type: 'QUESTIONS',
+        message: `Try all ${totalQuestions - attemptedQuestions} remaining practice questions`,
+      });
+    }
 
-  // Generate achievements
-  const achievements: { type: string; title: string; description: string }[] = [];
+    if (completedLessons === totalLessons && averageScore >= 80) {
+      recommendations.push({
+        type: 'READY',
+        message: '🎉 Great work! You are ready to move to the next module',
+      });
+    }
 
-  if (daysStudied === 7) {
-    achievements.push({
-      type: 'STREAK',
-      title: 'Perfect Week! 🔥',
-      description: 'You studied every day this week',
-    });
+    return {
+      module: {
+        id: module.id,
+        name: module.name,
+        subjectName: module.subject.name,
+        progressPercent: moduleProgress?.progressPercent || 0,
+        status: moduleProgress?.status || 'NOT_STARTED',
+      },
+      lessons: {
+        totalLessons,
+        completedLessons,
+        averageTimePerLesson,
+        totalTimeSpent,
+      },
+      quizzes: {
+        totalQuestions,
+        attemptedQuestions,
+        correctAnswers: correctAttempts,
+        averageScore: Math.round(averageScore * 10) / 10,
+        bestScore: Math.round(bestScore * 10) / 10,
+        worstScore: Math.round(worstScore * 10) / 10,
+      },
+      performance: {
+        strongTopics,
+        weakTopics,
+        recentAttempts,
+      },
+      recommendations,
+    };
   }
-
-  if (dailyGoalsMet >= 5) {
-    achievements.push({
-      type: 'GOAL',
-      title: 'Goal Crusher! 🎯',
-      description: `Met your daily goal ${dailyGoalsMet} times this week`,
-    });
-  }
-
-  if (completedLessons >= 10) {
-    achievements.push({
-      type: 'LESSONS',
-      title: 'Learning Machine! 📚',
-      description: `Completed ${completedLessons} lessons this week`,
-    });
-  }
-
-  if (averageQuizScore >= 80) {
-    achievements.push({
-      type: 'SCORE',
-      title: 'Quiz Master! ⭐',
-      description: `${Math.round(averageQuizScore)}% average quiz score`,
-    });
-  }
-
-  // Calculate total time
-  const totalTimeSeconds = Array.from(dailyData.values()).reduce(
-    (sum, day) => sum + day.timeSeconds,
-    0
-  );
-
-  return {
-    weekRange: {
-      startDate: weekStart.toISOString().split('T')[0]!,
-      endDate: weekEnd.toISOString().split('T')[0]!,
-    },
-    summary: {
-      totalTimeSeconds,
-      totalLessonsCompleted: completedLessons,
-      totalQuestionsAttempted: weekQuestions.length,
-      averageQuizScore: Math.round(averageQuizScore * 10) / 10,
-      daysStudied,
-      dailyGoalsMet,
-    },
-    dailyBreakdown,
-    topSubjects,
-    achievements,
-  };
 }
-}
-
-
 
 export default new ProgressService();
