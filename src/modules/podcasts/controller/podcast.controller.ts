@@ -13,3 +13,19 @@ export const getPodcasts = asyncHandler(async (req: Request, res: Response) => {
 
   sendSuccess(res, 'Podcasts retrieved', result);
 });
+
+
+
+// src/modules/content/controller/content.controller.ts
+
+export const getPodcastById = asyncHandler(async (req: Request, res: Response): Promise<any> => {
+  const userId = req.user!.user.id;
+    const { id } = req.params;
+    
+
+    if (!id) throw new AppError("podcast id required")
+
+  const result = await podcastService.getPodcastById(userId, id);
+
+  sendSuccess(res, 'Podcast retrieved', result);
+});
