@@ -469,7 +469,6 @@ practiceRouter.get(
   getMixedPractice
 );
 
-// src/modules/content/routes/content.routes.ts
 
 /**
  * @swagger

@@ -13,8 +13,6 @@ export interface QuickQuizResponse {
   totalAvailable: number;
 }
 
-
-
 export interface TopicChallengeResponse {
   moduleId: string;
   moduleName: string;
@@ -67,4 +65,21 @@ export interface PastQuestionsQuery {
   examType?: string;
   page?: number;
   limit?: number;
+}
+
+export interface PastQuestionDetailResponse {
+  id: string;
+  text: string;
+  year: number;
+  subject: string;
+  examType: string;
+  order: number;
+  userAttempts: {
+    id: string;
+    answer: string;
+    aiScore: number | null;
+    band: string | null;
+    appPass: boolean | null;
+    createdAt: Date;
+  }[];
 }
