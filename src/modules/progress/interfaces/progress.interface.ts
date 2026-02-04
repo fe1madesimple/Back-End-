@@ -91,3 +91,38 @@ export interface StudyStreakResponse {
     lengthDays: number;
   }[];
 }
+
+
+export interface WeeklySummaryResponse {
+  weekRange: {
+    startDate: string;
+    endDate: string;
+  };
+  summary: {
+    totalTimeSeconds: number;
+    totalLessonsCompleted: number;
+    totalQuestionsAttempted: number;
+    averageQuizScore: number;
+    daysStudied: number;
+    dailyGoalsMet: number;
+  };
+  dailyBreakdown: {
+    date: string;
+    dayName: string;
+    timeSeconds: number;
+    lessonsCompleted: number;
+    questionsAttempted: number;
+    quizScore: number | null;
+    goalMet: boolean;
+  }[];
+  topSubjects: {
+    subjectName: string;
+    timeSeconds: number;
+    lessonsCompleted: number;
+  }[];
+  achievements: {
+    type: string;
+    title: string;
+    description: string;
+  }[];
+}
