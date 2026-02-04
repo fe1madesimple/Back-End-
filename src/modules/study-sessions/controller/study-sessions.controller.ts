@@ -27,3 +27,16 @@ export const pingSession = asyncHandler(async (req: Request, res: Response) => {
 
   sendSuccess(res, 'Session ping recorded');
 });
+
+
+// src/modules/study-sessions/controller/study-session.controller.ts
+
+export const endSession = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { sessionId } = req.params;
+  const data = req.body;
+
+  const result = await studySessionService.endSession(userId, sessionId, data);
+
+  sendSuccess(res, 'Study session ended', result);
+});
