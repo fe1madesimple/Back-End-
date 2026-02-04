@@ -4,6 +4,7 @@ import { asyncHandler } from '@/shared/utils';
 import practiseService from '../service/practise.service';
 import { sendSuccess } from '@/shared/utils';
 import { PastQuestionsQuery } from '../interface/practise.interface';
+import { BadRequestError } from '@anthropic-ai/sdk';
 
 // src/modules/content/controller/content.controller.ts
 
@@ -53,4 +54,18 @@ export const getPastQuestions = asyncHandler(async (req: Request, res: Response)
   const result = await practiseService.getPastQuestions(query);
 
   sendSuccess(res, 'Past questions retrieved', result);
+});
+
+
+// src/modules/content/controller/content.controller.ts
+
+export const getPastQuestionById = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+    const { id } = req.params;
+    
+    if (!id) throw new AppError("past question id must be supplied")
+
+  const question = await practiseService.getPastQuestionById(id, userId);
+
+  sendSuccess(res, 'Past question retrieved', { question });
 });
