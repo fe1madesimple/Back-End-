@@ -1,4 +1,4 @@
-// src/modules/progress/controller/progress.controller.ts
+
 
 import { Request, Response } from 'express';
 import { AppError, asyncHandler } from '@/shared/utils';
@@ -13,7 +13,6 @@ export const getDashboardStats = asyncHandler(async (req: Request, res: Response
   sendSuccess(res, 'Dashboard stats retrieved', stats);
 });
 
-// src/modules/progress/controller/progress.controller.ts
 
 export const getSubjectProgressDetail = asyncHandler(async (req: Request, res: Response) => {
   const userId = req.user!.user.id;
@@ -24,4 +23,14 @@ export const getSubjectProgressDetail = asyncHandler(async (req: Request, res: R
   const progress = await progressService.getSubjectProgressDetail(userId, subjectId);
 
   sendSuccess(res, 'Subject progress retrieved', progress);
+});
+
+
+
+export const getStudyStreak = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+
+  const streak = await progressService.getStudyStreak(userId);
+
+  sendSuccess(res, 'Study streak retrieved', streak);
 });
