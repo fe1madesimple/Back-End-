@@ -1,5 +1,5 @@
-import { getPodcasts, getPodcastById } from "../controller/podcast.controller";
-import { podcastsQuerySchema } from "../validator/podcast.validator";
+import { getPodcasts, getPodcastById, trackPodcastProgress } from "../controller/podcast.controller";
+import { podcastsQuerySchema, trackPodcastSchema } from "../validator/podcast.validator";
 import { validate } from "@/shared/middleware/validation";
 import { Router } from "express";
 import { protect } from "@/shared/middleware/auth.middleware";
@@ -71,9 +71,6 @@ podCastRouter.get(
 );
 
 
-
-// src/modules/content/routes/content.routes.ts
-
 /**
  * @swagger
  * /api/v1/podcasts/{id}:
@@ -99,6 +96,56 @@ podCastRouter.get(
   '/podcasts/:id',
   protect,
   getPodcastById
+);
+
+
+
+// src/modules/content/routes/content.routes.ts
+
+/**
+ * @swagger
+ * /api/v1/podcasts/{id}/track:
+ *   post:
+ *     summary: Track podcast listening progress
+ *     tags: [Podcasts]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Tracks podcast listening position. Call every 30s while playing.
+ *       Auto-completes at 90% listened. Frontend sends duration on first ping.
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - currentTime
+ *             properties:
+ *               currentTime:
+ *                 type: integer
+ *                 example: 1200
+ *               audioDuration:
+ *                 type: integer
+ *                 example: 2700
+ *                 description: Optional - send on first ping
+ *     responses:
+ *       200:
+ *         description: Progress tracked
+ *       404:
+ *         description: Podcast not found
+ */
+podCastRouter.post(
+  '/podcasts/:id/track',
+  protect,
+  validate(trackPodcastSchema),
+  trackPodcastProgress
 );
 
 export default podCastRouter
