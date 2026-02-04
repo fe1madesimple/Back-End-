@@ -1,16 +1,16 @@
 // src/modules/progress/service/progress.service.ts
 
 import { prisma } from '@/shared/config';
-import { DashboardStatsResponse } from '../interfaces/progress.interface';
+import { DashboardStatsResponse, SubjectProgressDetailResponse } from '../interfaces/progress.interface';
+import { NotFoundError } from '@/shared/utils';
+
 
 class ProgressService {
-
   async getDashboardStats(userId: string): Promise<DashboardStatsResponse> {
     const now = new Date();
     const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-      const weekStart = new Date(todayStart);
-      
-      
+    const weekStart = new Date(todayStart);
+
     weekStart.setDate(weekStart.getDate() - 7);
 
     // Get user for exam date and goals
@@ -157,6 +157,200 @@ class ProgressService {
         dailyStudyGoal: user?.dailyStudyGoal || 2,
         todayProgress: Math.round(todayProgressPercent),
       },
+    };
+  }
+
+  async getSubjectProgressDetail(
+    userId: string,
+    subjectId: string
+  ): Promise<SubjectProgressDetailResponse> {
+      
+    // Get subject with progress
+    const subjectProgress = await prisma.userSubjectProgress.findUnique({
+      where: {
+        userId_subjectId: { userId, subjectId },
+      },
+      include: {
+        subject: {
+          select: {
+            id: true,
+            name: true,
+          },
+        },
+      },
+    });
+
+    if (!subjectProgress) {
+      throw new NotFoundError('Subject progress not found');
+    }
+
+    // Get all modules with progress
+    const modules = await prisma.module.findMany({
+      where: {
+        subjectId,
+        isPublished: true,
+      },
+      include: {
+        userProgress: {
+          where: { userId },
+        },
+        lessons: {
+          where: { isPublished: true },
+        },
+        questions: {
+          where: { type: 'MCQ', isPublished: true },
+          include: {
+            attempts: {
+              where: { userId },
+              select: {
+                pointsEarned: true,
+              },
+            },
+          },
+        },
+      },
+      orderBy: { order: 'asc' },
+    });
+
+    // Calculate module stats
+    const moduleStats = modules.map((module) => {
+      const progress = module.userProgress[0];
+      const totalLessons = module.lessons.length;
+      const completedLessons = progress?.completedLessons || 0;
+
+      // Calculate average quiz score for this module
+      const allAttempts = module.questions.flatMap((q) => q.attempts);
+      const totalPoints = module.questions.reduce((sum, q) => sum + q.points, 0);
+      const earnedPoints = allAttempts.reduce((sum, a) => sum + a.pointsEarned, 0);
+      const quizAverage = totalPoints > 0 ? (earnedPoints / totalPoints) * 100 : null;
+
+      return {
+        id: module.id,
+        name: module.name,
+        progressPercent: progress?.progressPercent || 0,
+        status: progress?.status || 'NOT_STARTED',
+        completedLessons,
+        totalLessons,
+        quizAverage: quizAverage ? Math.round(quizAverage * 10) / 10 : null,
+      };
+    });
+
+    // Overall performance stats
+    const totalLessons = modules.reduce((sum, m) => sum + m.lessons.length, 0);
+    const totalLessonsCompleted = moduleStats.reduce((sum, m) => sum + m.completedLessons, 0);
+
+    const allQuestionAttempts = await prisma.questionAttempt.count({
+      where: {
+        userId,
+        question: {
+          module: {
+            subjectId,
+          },
+        },
+      },
+    });
+
+    const allQuizAttempts = await prisma.questionAttempt.findMany({
+      where: {
+        userId,
+        question: {
+          type: 'MCQ',
+          module: {
+            subjectId,
+          },
+        },
+      },
+      select: {
+        pointsEarned: true,
+        question: {
+          select: { points: true },
+        },
+      },
+    });
+
+    const averageQuizScore =
+      allQuizAttempts.length > 0
+        ? allQuizAttempts.reduce(
+            (sum, a) => sum + (a.pointsEarned / (a.question.points || 1)) * 100,
+            0
+          ) / allQuizAttempts.length
+        : 0;
+
+    // Get week start
+    const now = new Date();
+    const weekStart = new Date(now);
+    weekStart.setDate(weekStart.getDate() - 7);
+
+    // Time spent this week (approximate from lesson progress updates)
+    const weekLessons = await prisma.userLessonProgress.findMany({
+      where: {
+        userId,
+        lesson: {
+          module: {
+            subjectId,
+          },
+        },
+        updatedAt: {
+          gte: weekStart,
+        },
+      },
+      select: {
+        timeSpentSeconds: true,
+      },
+    });
+
+    const timeSpentThisWeek = weekLessons.reduce((sum, l) => sum + l.timeSpentSeconds, 0);
+
+    const completionRate = totalLessons > 0 ? (totalLessonsCompleted / totalLessons) * 100 : 0;
+
+    // Recent lessons completed
+    const recentLessons = await prisma.userLessonProgress.findMany({
+      where: {
+        userId,
+        isCompleted: true,
+        lesson: {
+          module: {
+            subjectId,
+          },
+        },
+      },
+      include: {
+        lesson: {
+          include: {
+            module: {
+              select: { name: true },
+            },
+          },
+        },
+      },
+      orderBy: { completedAt: 'desc' },
+      take: 5,
+    });
+
+    return {
+      subject: {
+        id: subjectProgress.subject.id,
+        name: subjectProgress.subject.name,
+        progressPercent: subjectProgress.progressPercent,
+        status: subjectProgress.status,
+        totalTimeSeconds: subjectProgress.totalTimeSeconds,
+        lastAccessedAt: subjectProgress.lastAccessedAt,
+      },
+      modules: moduleStats,
+      performance: {
+        totalLessonsCompleted,
+        totalLessons,
+        totalQuestionsAttempted: allQuestionAttempts,
+        averageQuizScore: Math.round(averageQuizScore * 10) / 10,
+        timeSpentThisWeek,
+        completionRate: Math.round(completionRate * 10) / 10,
+      },
+      recentLessons: recentLessons.map((l) => ({
+        id: l.lesson.id,
+        title: l.lesson.title,
+        moduleName: l.lesson.module.name,
+        completedAt: l.completedAt!,
+      })),
     };
   }
 }
