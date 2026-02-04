@@ -40,8 +40,6 @@ export const getWeeklySummary = asyncHandler(async (req: Request, res: Response)
   sendSuccess(res, 'Weekly summary retrieved', summary);
 });
 
-// src/modules/progress/controller/progress.controller.ts
-
 export const getModuleStats = asyncHandler(async (req: Request, res: Response) => {
   const userId = req.user!.user.id;
   const { moduleId } = req.params;

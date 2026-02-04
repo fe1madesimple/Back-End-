@@ -1,6 +1,12 @@
 import { Router } from 'express';
 import { protect } from '@/shared/middleware/auth.middleware';
-import { getDashboardStats, getSubjectProgressDetail, getStudyStreak, getWeeklySummary} from '../controllers/progress.controller';
+import {
+  getDashboardStats,
+  getSubjectProgressDetail,
+  getStudyStreak,
+  getWeeklySummary,
+  getModuleStats,
+} from '../controllers/progress.controller';
 
 const progressRouter = Router();
 
@@ -187,35 +193,35 @@ progressRouter.get('/dashboard', protect, getDashboardStats);
  *       - bearerAuth: []
  *     description: |
  *       Returns comprehensive progress analytics for a subject including module breakdown, performance stats, and recent activity.
- *       
+ *
  *       **USE CASE:**
  *       - User clicks on a subject to see detailed progress
  *       - User wants to know which modules need more work
  *       - User tracks their improvement over time
- *       
+ *
  *       **RESPONSE INCLUDES:**
  *       - Subject overall progress and status
  *       - Breakdown by module (progress, quiz scores, completion)
  *       - Performance metrics (completion rate, average score, time spent)
  *       - Recent lessons completed in this subject
- *       
+ *
  *       **FRONTEND IMPLEMENTATION:**
  *       ```javascript
  *       // Fetch subject progress
  *       const response = await fetch('/api/v1/progress/subject/SUBJECT_ID');
  *       const { subject, modules, performance, recentLessons } = response.data;
- *       
+ *
  *       // Display subject header
  *       document.getElementById('subject-name').textContent = subject.name;
  *       document.getElementById('subject-progress').textContent = `${subject.progressPercent}%`;
- *       
+ *
  *       // Display progress ring/circle
  *       updateProgressRing(subject.progressPercent);
- *       
+ *
  *       // Display total time spent
  *       const hours = Math.floor(subject.totalTimeSeconds / 3600);
  *       document.getElementById('total-time').textContent = `${hours}h studied`;
- *       
+ *
  *       // Display module breakdown
  *       modules.forEach(module => {
  *         // Card showing:
@@ -223,7 +229,7 @@ progressRouter.get('/dashboard', protect, getDashboardStats);
  *         // "Progress: 60% (3/5 lessons)"
  *         // "Quiz Average: 78.5%"
  *         // Progress bar
- *         
+ *
  *         const moduleCard = createModuleCard({
  *           name: module.name,
  *           progress: module.progressPercent,
@@ -232,62 +238,62 @@ progressRouter.get('/dashboard', protect, getDashboardStats);
  *           status: module.status // NOT_STARTED, IN_PROGRESS, COMPLETED
  *         });
  *       });
- *       
+ *
  *       // Display performance stats
- *       document.getElementById('completion-rate').textContent = 
+ *       document.getElementById('completion-rate').textContent =
  *         `${performance.completionRate}% complete`;
- *       document.getElementById('avg-score').textContent = 
+ *       document.getElementById('avg-score').textContent =
  *         `${performance.averageQuizScore}% avg score`;
- *       document.getElementById('questions-attempted').textContent = 
+ *       document.getElementById('questions-attempted').textContent =
  *         `${performance.totalQuestionsAttempted} questions`;
- *       
+ *
  *       const weekHours = Math.floor(performance.timeSpentThisWeek / 3600);
- *       document.getElementById('week-time').textContent = 
+ *       document.getElementById('week-time').textContent =
  *         `${weekHours}h this week`;
- *       
+ *
  *       // Display recent activity
  *       recentLessons.forEach(lesson => {
  *         // Timeline entry:
  *         // "Completed 'Lesson 3: Actus Reus' in Module 1 - 2 days ago"
  *       });
- *       
+ *
  *       // Show weak modules (for recommendations)
  *       const weakModules = modules
  *         .filter(m => m.progressPercent < 50)
  *         .sort((a, b) => a.progressPercent - b.progressPercent);
- *       
+ *
  *       if (weakModules.length > 0) {
  *         showRecommendation(`Focus on: ${weakModules[0].name}`);
  *       }
  *       ```
- *       
+ *
  *       **UI SECTIONS:**
- *       
+ *
  *       1. **Subject Overview Card:**
  *       - Large progress circle
  *       - Status badge (In Progress/Completed)
  *       - Total time spent
  *       - Last accessed date
- *       
+ *
  *       2. **Module Breakdown:**
  *       - Grid/list of module cards
  *       - Each shows: name, progress bar, lesson count, quiz average
  *       - Click module to navigate to lessons
- *       
+ *
  *       3. **Performance Stats:**
  *       - Completion rate
  *       - Average quiz score
  *       - Questions attempted
  *       - Time spent this week
- *       
+ *
  *       4. **Recent Activity Timeline:**
  *       - Last 5 lessons completed
  *       - Timestamps (relative: "2 hours ago")
- *       
+ *
  *       5. **Recommendations:**
  *       - "Complete Module 2 to reach 50%"
  *       - "Your quiz scores in Module 3 are low - review lessons"
- *       
+ *
  *     parameters:
  *       - in: path
  *         name: subjectId
@@ -410,12 +416,7 @@ progressRouter.get('/dashboard', protect, getDashboardStats);
  *       404:
  *         description: Subject progress not found
  */
-progressRouter.get(
-  '/subject/:subjectId',
-  protect,
-  getSubjectProgressDetail
-);
-
+progressRouter.get('/subject/:subjectId', protect, getSubjectProgressDetail);
 
 /**
  * @swagger
@@ -427,13 +428,13 @@ progressRouter.get(
  *       - bearerAuth: []
  *     description: |
  *       Returns study streak statistics, daily goal progress, and activity calendar for visualization.
- *       
+ *
  *       **USE CASE:**
  *       - User views their study consistency
  *       - Motivate users with streak tracking (gamification)
  *       - Display activity calendar (GitHub-style heatmap)
  *       - Track daily goal completion
- *       
+ *
  *       **RESPONSE INCLUDES:**
  *       - Current active streak (consecutive days studied)
  *       - Longest streak ever
@@ -442,23 +443,23 @@ progressRouter.get(
  *       - Last 7 days activity (for weekly chart)
  *       - Last 30 days calendar (for heatmap)
  *       - Historical streaks
- *       
+ *
  *       **FRONTEND IMPLEMENTATION:**
  *       ```javascript
  *       // Fetch study streak
  *       const response = await fetch('/api/v1/progress/study-streak');
  *       const streak = response.data;
- *       
+ *
  *       // Display streak badges
  *       document.getElementById('current-streak').innerHTML = `
  *         <div class="streak-badge">
  *           🔥 ${streak.currentStreak} day streak
  *         </div>
  *       `;
- *       
- *       document.getElementById('longest-streak').textContent = 
+ *
+ *       document.getElementById('longest-streak').textContent =
  *         `Best: ${streak.longestStreak} days`;
- *       
+ *
  *       // Display today's goal progress
  *       const progress = streak.dailyGoal;
  *       document.getElementById('daily-goal').innerHTML = `
@@ -469,7 +470,7 @@ progressRouter.get(
  *         ${progress.todayMinutes} min today
  *         ${progress.goalMet ? '✓ Goal met!' : ''}
  *       `;
- *       
+ *
  *       // Display week activity bar chart
  *       streak.weekActivity.forEach(day => {
  *         const bar = document.createElement('div');
@@ -479,13 +480,13 @@ progressRouter.get(
  *         bar.title = `${new Date(day.date).toLocaleDateString()}: ${day.minutesStudied} min`;
  *         weekChart.appendChild(bar);
  *       });
- *       
+ *
  *       // Display GitHub-style activity heatmap
  *       const heatmap = document.getElementById('activity-heatmap');
  *       streak.monthCalendar.forEach(day => {
  *         const cell = document.createElement('div');
  *         cell.className = 'heatmap-cell';
- *         
+ *
  *         // Color intensity based on study time
  *         if (day.minutesStudied === 0) {
  *           cell.classList.add('level-0'); // Gray
@@ -496,11 +497,11 @@ progressRouter.get(
  *         } else {
  *           cell.classList.add('level-3'); // Dark green
  *         }
- *         
+ *
  *         cell.title = `${new Date(day.date).toLocaleDateString()}: ${day.minutesStudied} min`;
  *         heatmap.appendChild(cell);
  *       });
- *       
+ *
  *       // Display streak history
  *       streak.streakHistory.forEach(s => {
  *         // "15-day streak: Jan 10 - Jan 25, 2026"
@@ -508,7 +509,7 @@ progressRouter.get(
  *         const end = new Date(s.endDate).toLocaleDateString();
  *         console.log(`${s.lengthDays}-day streak: ${start} - ${end}`);
  *       });
- *       
+ *
  *       // Motivational messages
  *       if (streak.currentStreak === 0) {
  *         showMotivation("Start your streak today! Study for just 10 minutes.");
@@ -518,42 +519,42 @@ progressRouter.get(
  *         showMotivation("🎉 New personal record! You're crushing it!");
  *       }
  *       ```
- *       
+ *
  *       **UI COMPONENTS:**
- *       
+ *
  *       1. **Streak Badge:**
  *       - 🔥 icon with current streak number
  *       - "Best: X days" below
  *       - Celebrate milestones (7, 14, 30, 100 days)
- *       
+ *
  *       2. **Daily Goal Progress:**
  *       - Progress bar showing today's completion
  *       - "2h goal - 1h 23m studied (65%)"
  *       - Checkmark when goal met
- *       
+ *
  *       3. **Weekly Bar Chart:**
  *       - 7 vertical bars (one per day)
  *       - Height = minutes studied
  *       - Green if goal met, gray if not
  *       - Hover shows exact time
- *       
+ *
  *       4. **Monthly Heatmap (GitHub-style):**
  *       - 30 squares in grid
  *       - Color intensity = study time
  *       - Dark green = 2h+, light green = 1h, gray = 0
  *       - Click to see day details
- *       
+ *
  *       5. **Streak History:**
  *       - Timeline of past streaks
  *       - "15-day streak in January"
  *       - Shows consistency over time
- *       
+ *
  *       **GAMIFICATION IDEAS:**
  *       - Award badges: 7-day, 30-day, 100-day streaks
  *       - "Don't break the chain!" motivation
  *       - Share streak on social media
  *       - Leaderboard (optional)
- *       
+ *
  *     responses:
  *       200:
  *         description: Study streak retrieved successfully
@@ -650,8 +651,6 @@ progressRouter.get(
  */
 progressRouter.get('/study-streak', protect, getStudyStreak);
 
-
-
 /**
  * @swagger
  * /api/v1/progress/weekly-summary:
@@ -662,45 +661,45 @@ progressRouter.get('/study-streak', protect, getStudyStreak);
  *       - bearerAuth: []
  *     description: |
  *       Returns comprehensive weekly summary including daily breakdown, top subjects, and achievements earned.
- *       
+ *
  *       **USE CASE:**
  *       - User views their weekly progress report
  *       - Weekly email digest sent to users
  *       - Motivational summary at end of week
  *       - Track consistency and achievements
- *       
+ *
  *       **RESPONSE INCLUDES:**
  *       - Week range (start/end dates)
  *       - Summary totals (time, lessons, questions, average score)
  *       - Day-by-day breakdown (7 days)
  *       - Top 3 subjects studied
  *       - Achievements earned this week
- *       
+ *
  *       **FRONTEND IMPLEMENTATION:**
  *       ```javascript
  *       // Fetch weekly summary
  *       const response = await fetch('/api/v1/progress/weekly-summary');
  *       const data = response.data;
- *       
+ *
  *       // Display week range
- *       document.getElementById('week-range').textContent = 
- *         `${new Date(data.weekRange.startDate).toLocaleDateString()} - 
+ *       document.getElementById('week-range').textContent =
+ *         `${new Date(data.weekRange.startDate).toLocaleDateString()} -
  *          ${new Date(data.weekRange.endDate).toLocaleDateString()}`;
- *       
+ *
  *       // Display summary stats
  *       const summary = data.summary;
  *       const hours = Math.floor(summary.totalTimeSeconds / 3600);
  *       const minutes = Math.floor((summary.totalTimeSeconds % 3600) / 60);
- *       
+ *
  *       document.getElementById('total-time').textContent = `${hours}h ${minutes}m`;
  *       document.getElementById('lessons-completed').textContent = summary.totalLessonsCompleted;
  *       document.getElementById('questions-attempted').textContent = summary.totalQuestionsAttempted;
  *       document.getElementById('avg-score').textContent = `${summary.averageQuizScore}%`;
- *       document.getElementById('days-studied').textContent = 
+ *       document.getElementById('days-studied').textContent =
  *         `${summary.daysStudied}/7 days`;
- *       document.getElementById('goals-met').textContent = 
+ *       document.getElementById('goals-met').textContent =
  *         `${summary.dailyGoalsMet}/7 goals met`;
- *       
+ *
  *       // Display daily breakdown chart
  *       data.dailyBreakdown.forEach(day => {
  *         const dayCard = document.createElement('div');
@@ -716,7 +715,7 @@ progressRouter.get('/study-streak', protect, getStudyStreak);
  *         `;
  *         weekChart.appendChild(dayCard);
  *       });
- *       
+ *
  *       // Display top subjects
  *       data.topSubjects.forEach((subject, index) => {
  *         const hours = Math.floor(subject.timeSeconds / 3600);
@@ -727,7 +726,7 @@ progressRouter.get('/study-streak', protect, getStudyStreak);
  *           <div class="subject-lessons">${subject.lessonsCompleted} lessons</div>
  *         `;
  *       });
- *       
+ *
  *       // Display achievements
  *       data.achievements.forEach(achievement => {
  *         const badge = document.createElement('div');
@@ -738,7 +737,7 @@ progressRouter.get('/study-streak', protect, getStudyStreak);
  *         `;
  *         achievementsContainer.appendChild(badge);
  *       });
- *       
+ *
  *       // Show motivational message
  *       if (summary.daysStudied < 3) {
  *         showMotivation("Let's aim for more consistency next week! Try studying 5 days.");
@@ -746,32 +745,32 @@ progressRouter.get('/study-streak', protect, getStudyStreak);
  *         showCelebration("Amazing! Perfect week of studying! 🎉");
  *       }
  *       ```
- *       
+ *
  *       **UI SECTIONS:**
- *       
+ *
  *       1. **Week Overview Card:**
  *       - Date range
  *       - Total time, lessons, questions
  *       - Average quiz score
  *       - Days studied (5/7)
  *       - Goals met (4/7)
- *       
+ *
  *       2. **Daily Breakdown Chart:**
  *       - 7 cards (Mon-Sun)
  *       - Each shows: time, lessons, questions, score
  *       - Green checkmark if goal met
  *       - Bar chart visualization option
- *       
+ *
  *       3. **Top Subjects:**
  *       - Podium-style ranking (1st, 2nd, 3rd)
  *       - Shows: subject name, time spent, lessons completed
  *       - Helps identify focus areas
- *       
+ *
  *       4. **Achievements:**
  *       - Badge grid
  *       - Types: STREAK, GOAL, LESSONS, SCORE
  *       - Celebrate milestones
- *       
+ *
  *       **SHARE FEATURE:**
  *       ```javascript
  *       function shareWeeklySummary() {
@@ -782,13 +781,13 @@ progressRouter.get('/study-streak', protect, getStudyStreak);
  *           📊 ${summary.averageQuizScore}% avg score
  *           🔥 ${summary.daysStudied}/7 days
  *         `;
- *         
+ *
  *         if (navigator.share) {
  *           navigator.share({ text });
  *         }
  *       }
  *       ```
- *       
+ *
  *     responses:
  *       200:
  *         description: Weekly summary retrieved successfully
@@ -897,5 +896,47 @@ progressRouter.get('/study-streak', protect, getStudyStreak);
  *                             example: Met your daily goal 4 times this week
  */
 progressRouter.get('/weekly-summary', protect, getWeeklySummary);
+
+
+/**
+ * @swagger
+ * /api/v1/progress/module-stats/{moduleId}:
+ *   get:
+ *     summary: Get detailed performance analytics for a specific module
+ *     tags: [Progress & Analytics]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Returns comprehensive performance analytics including lesson completion, quiz performance, strong/weak topics, and personalized recommendations.
+ *
+ *       **USE CASE:**
+ *       - User clicks "View Stats" on a module
+ *       - User wants detailed performance breakdown
+ *       - Identify strong and weak areas
+ *       - Get personalized study recommendations
+ *
+ *       **RESPONSE INCLUDES:**
+ *       - Module overview (name, progress, status)
+ *       - Lesson completion stats
+ *       - Quiz performance metrics (avg, best, worst scores)
+ *       - Strong topics (75%+ accuracy)
+ *       - Weak topics (<60% accuracy)
+ *       - Recent question attempts
+ *       - Personalized recommendations
+ *
+ *     parameters:
+ *       - in: path
+ *         name: moduleId
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: Module ID
+ *     responses:
+ *       200:
+ *         description: Module stats retrieved successfully
+ *       404:
+ *         description: Module not found
+ */
+progressRouter.get('/module-stats/:moduleId', protect, getModuleStats);
 
 export default progressRouter;
