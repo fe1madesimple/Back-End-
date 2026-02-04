@@ -3,8 +3,6 @@ import { prisma } from '@/shared/config';
 import { PodcastListResponse, PodcastDetailResponse } from '../interface/podcast.interface';
 import { NotFoundError } from '@/shared/utils';
 
-
-
 class Podcasts {
   // src/modules/content/service/content.service.ts
 
@@ -58,6 +56,52 @@ class Podcasts {
       podcast: podcastData,
       progress: progress[0] || null,
     };
+  }
+
+
+  async trackPodcastProgress(
+    userId: string,
+    podcastId: string,
+    currentTime: number,
+    audioDuration?: number
+  ): Promise<void> {
+    const podcast = await prisma.podcast.findUnique({
+      where: { id: podcastId },
+      select: { id: true, duration: true },
+    });
+
+    if (!podcast) {
+      throw new NotFoundError('Podcast not found');
+    }
+
+    const duration = audioDuration || podcast.duration;
+    const completionThreshold = 0.9;
+    const isCompleted = duration ? currentTime >= duration * completionThreshold : false;
+
+    await prisma.userPodcastProgress.upsert({
+      where: {
+        userId_podcastId: { userId, podcastId },
+      },
+      create: {
+        userId,
+        podcastId,
+        listenedSeconds: currentTime,
+        isCompleted: Boolean(isCompleted),
+        completedAt: isCompleted ? new Date() : null,
+      },
+      update: {
+        listenedSeconds: currentTime,
+        isCompleted: Boolean(isCompleted),
+        completedAt: isCompleted ? new Date() : null,
+      },
+    });
+
+    if (audioDuration && !podcast.duration) {
+      await prisma.podcast.update({
+        where: { id: podcastId },
+        data: { duration: audioDuration },
+      });
+    }
   }
 }
 
