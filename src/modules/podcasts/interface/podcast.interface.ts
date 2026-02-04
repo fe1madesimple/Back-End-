@@ -31,3 +31,8 @@ export interface PodcastDetailResponse {
     completedAt: Date | null;
   } | null;
 }
+
+export interface TrackPodcastRequest {
+  currentTime: number;
+  audioDuration?: number;
+}

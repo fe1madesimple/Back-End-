@@ -1,8 +1,8 @@
-import { AppError } from "@/shared/utils";
-import { Request, Response } from "express";
-import { asyncHandler } from "@/shared/utils";
-import podcastService from "../service/podcast.service";
-import { sendSuccess } from "@/shared/utils";
+import { AppError } from '@/shared/utils';
+import { Request, Response } from 'express';
+import { asyncHandler } from '@/shared/utils';
+import podcastService from '../service/podcast.service';
+import { sendSuccess } from '@/shared/utils';
 
 // src/modules/content/controller/content.controller.ts
 
@@ -14,16 +14,13 @@ export const getPodcasts = asyncHandler(async (req: Request, res: Response) => {
   sendSuccess(res, 'Podcasts retrieved', result);
 });
 
-
-
 // src/modules/content/controller/content.controller.ts
 
 export const getPodcastById = asyncHandler(async (req: Request, res: Response): Promise<any> => {
   const userId = req.user!.user.id;
-    const { id } = req.params;
-    
+  const { id } = req.params;
 
-    if (!id) throw new AppError("podcast id required")
+  if (!id) throw new AppError('podcast id required');
 
   const result = await podcastService.getPodcastById(userId, id);
 

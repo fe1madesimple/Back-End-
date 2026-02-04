@@ -1,4 +1,4 @@
-import { getPodcasts } from "../controller/podcast.controller";
+import { getPodcasts, getPodcastById } from "../controller/podcast.controller";
 import { podcastsQuerySchema } from "../validator/podcast.validator";
 import { validate } from "@/shared/middleware/validation";
 import { Router } from "express";
@@ -71,5 +71,34 @@ podCastRouter.get(
 );
 
 
+
+// src/modules/content/routes/content.routes.ts
+
+/**
+ * @swagger
+ * /api/v1/podcasts/{id}:
+ *   get:
+ *     summary: Get podcast details with listening progress
+ *     tags: [Podcasts]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Returns podcast details and user's listening progress for audio player.
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Podcast retrieved
+ *       404:
+ *         description: Podcast not found
+ */
+podCastRouter.get(
+  '/podcasts/:id',
+  protect,
+  getPodcastById
+);
 
 export default podCastRouter
