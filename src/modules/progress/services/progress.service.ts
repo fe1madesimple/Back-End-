@@ -1,9 +1,12 @@
 // src/modules/progress/service/progress.service.ts
 
 import { prisma } from '@/shared/config';
-import { DashboardStatsResponse, SubjectProgressDetailResponse } from '../interfaces/progress.interface';
+import {
+  DashboardStatsResponse,
+  SubjectProgressDetailResponse,
+  StudyStreakResponse,
+} from '../interfaces/progress.interface';
 import { NotFoundError } from '@/shared/utils';
-
 
 class ProgressService {
   async getDashboardStats(userId: string): Promise<DashboardStatsResponse> {
@@ -164,7 +167,6 @@ class ProgressService {
     userId: string,
     subjectId: string
   ): Promise<SubjectProgressDetailResponse> {
-      
     // Get subject with progress
     const subjectProgress = await prisma.userSubjectProgress.findUnique({
       where: {
@@ -351,6 +353,171 @@ class ProgressService {
         moduleName: l.lesson.module.name,
         completedAt: l.completedAt!,
       })),
+    };
+  }
+
+  async getStudyStreak(userId: string): Promise<StudyStreakResponse> {
+    // Get user's daily goal
+    const user = await prisma.user.findUnique({
+      where: { id: userId },
+      select: { dailyStudyGoal: true },
+    });
+
+    const dailyGoalHours = user?.dailyStudyGoal || 2;
+    const dailyGoalSeconds = dailyGoalHours * 3600;
+
+    // Get all lesson progress updates (proxy for study sessions)
+    const allProgress = await prisma.userLessonProgress.findMany({
+      where: {
+        userId,
+        timeSpentSeconds: { gt: 0 },
+      },
+      select: {
+        timeSpentSeconds: true,
+        updatedAt: true,
+      },
+      orderBy: { updatedAt: 'asc' },
+    });
+
+    // Group by date
+    const dailyActivity = new Map<string, number>();
+
+    allProgress.forEach((progress) => {
+      const dateKey = progress.updatedAt.toISOString().split('T')[0];
+      if (dateKey) {
+        const current = dailyActivity.get(dateKey) || 0;
+        dailyActivity.set(dateKey, current + progress.timeSpentSeconds);
+      }
+    });
+
+    // Calculate current streak
+    let currentStreak = 0;
+    let longestStreak = 0;
+    let tempStreak = 0;
+    const today = new Date();
+    const dates = Array.from(dailyActivity.keys()).sort();
+
+    // Calculate streaks
+    for (let i = dates.length - 1; i >= 0; i--) {
+      const dateStr = dates[i];
+      if (!dateStr) continue;
+
+      const date = new Date(dateStr);
+      const daysDiff = Math.floor((today.getTime() - date.getTime()) / (1000 * 60 * 60 * 24));
+
+      if (daysDiff === currentStreak) {
+        currentStreak++;
+        tempStreak++;
+      } else {
+        if (tempStreak > longestStreak) {
+          longestStreak = tempStreak;
+        }
+        tempStreak = 1;
+      }
+    }
+
+    if (tempStreak > longestStreak) {
+      longestStreak = tempStreak;
+    }
+
+    // Today's progress
+    const todayKey = today.toISOString().split('T')[0];
+    const todaySeconds = todayKey ? dailyActivity.get(todayKey) || 0 : 0;
+    const todayMinutes = Math.floor(todaySeconds / 60);
+    const todayProgress = Math.min(100, Math.round((todaySeconds / dailyGoalSeconds) * 100));
+    const goalMet = todaySeconds >= dailyGoalSeconds;
+
+    // Last 7 days activity
+    const weekActivity = [];
+    for (let i = 6; i >= 0; i--) {
+      const date = new Date(today);
+      date.setDate(date.getDate() - i);
+      const dateKey = date.toISOString().split('T')[0];
+
+      if (dateKey) {
+        const seconds = dailyActivity.get(dateKey) || 0;
+
+        weekActivity.push({
+          date: dateKey,
+          minutesStudied: Math.floor(seconds / 60),
+          goalMet: seconds >= dailyGoalSeconds,
+        });
+      }
+    }
+
+    // Last 30 days calendar
+    const monthCalendar = [];
+    for (let i = 29; i >= 0; i--) {
+      const date = new Date(today);
+      date.setDate(date.getDate() - i);
+      const dateKey = date.toISOString().split('T')[0];
+
+      if (dateKey) {
+        const seconds = dailyActivity.get(dateKey) || 0;
+
+        monthCalendar.push({
+          date: dateKey,
+          minutesStudied: Math.floor(seconds / 60),
+          goalMet: seconds >= dailyGoalSeconds,
+        });
+      }
+    }
+
+    // Streak history (simplified - find continuous streaks)
+    const streakHistory: {
+      startDate: Date;
+      endDate: Date;
+      lengthDays: number;
+    }[] = [];
+
+    let streakStart: Date | null = null;
+    let streakLength = 0;
+
+    dates.forEach((dateStr, index) => {
+      if (!dateStr) return;
+
+      const date = new Date(dateStr);
+      const nextDateStr = dates[index + 1];
+      const nextDate = nextDateStr ? new Date(nextDateStr) : null;
+
+      if (!streakStart) {
+        streakStart = date;
+        streakLength = 1;
+      } else {
+        const daysDiff = nextDate
+          ? Math.floor((nextDate.getTime() - date.getTime()) / (1000 * 60 * 60 * 24))
+          : 999;
+
+        if (daysDiff === 1) {
+          streakLength++;
+        } else {
+          if (streakLength >= 3) {
+            // Only record streaks of 3+ days
+            streakHistory.push({
+              startDate: streakStart,
+              endDate: date,
+              lengthDays: streakLength,
+            });
+          }
+          streakStart = nextDate;
+          streakLength = 1;
+        }
+      }
+    });
+
+    return {
+      currentStreak,
+      longestStreak,
+      totalStudyDays: dailyActivity.size,
+      dailyGoal: {
+        targetHours: dailyGoalHours,
+        todayProgress,
+        todayMinutes,
+        goalMet,
+      },
+      weekActivity,
+      monthCalendar,
+      streakHistory: streakHistory.slice(-5), // Last 5 streaks
     };
   }
 }
