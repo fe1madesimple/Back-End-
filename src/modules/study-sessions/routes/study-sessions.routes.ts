@@ -3,8 +3,8 @@
 import { Router } from 'express';
 import { protect } from '@/shared/middleware/auth.middleware';
 import { validate } from '@/shared/middleware/validation';
-import { startSessionSchema } from '../validator/study-sessions.validator';
-import { startSession, pingSession} from '../controller/study-sessions.controller';
+import { startSessionSchema, endSessionSchema} from '../validator/study-sessions.validator';
+import { startSession, pingSession, endSession} from '../controller/study-sessions.controller';
 
 const studySessionRouter = Router();
 
@@ -323,6 +323,239 @@ studySessionRouter.post(
   '/:sessionId/ping',
   protect,
   pingSession
+);
+
+
+// src/modules/study-sessions/routes/study-session.routes.ts
+
+/**
+ * @swagger
+ * /api/v1/study-sessions/{sessionId}/end:
+ *   post:
+ *     summary: End active study session and get summary
+ *     tags: [Study Sessions]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Ends an active study session, calculates duration and points, and returns summary statistics.
+ *       
+ *       **USE CASE:**
+ *       - User clicks "End Session" button
+ *       - Session timer stops
+ *       - Points are awarded based on duration
+ *       - Summary displayed to user
+ *       
+ *       **HOW POINTS ARE CALCULATED:**
+ *       - 1 point per 10 minutes of study time
+ *       - 30 min session = 3 points
+ *       - 2 hour session = 12 points
+ *       - Based on actual duration (not active time)
+ *       
+ *       **FRONTEND IMPLEMENTATION:**
+ *       ```javascript
+ *       async function endStudySession() {
+ *         const sessionId = localStorage.getItem('activeSessionId');
+ *         
+ *         if (!sessionId) {
+ *           console.error('No active session');
+ *           return;
+ *         }
+ *         
+ *         // Stop pinging
+ *         clearInterval(window.sessionPingInterval);
+ *         
+ *         // Get session stats from UI
+ *         const lessonsCompleted = parseInt(
+ *           document.getElementById('lessons-count').textContent || '0'
+ *         );
+ *         const questionsAttempted = parseInt(
+ *           document.getElementById('questions-count').textContent || '0'
+ *         );
+ *         const notes = document.getElementById('session-notes').value;
+ *         
+ *         try {
+ *           const response = await fetch(`/api/v1/study-sessions/${sessionId}/end`, {
+ *             method: 'POST',
+ *             headers: { 'Content-Type': 'application/json' },
+ *             body: JSON.stringify({
+ *               lessonsCompleted,
+ *               questionsAttempted,
+ *               notes
+ *             })
+ *           });
+ *           
+ *           const { sessionId: id, duration, pointsEarned, summary } = response.data;
+ *           
+ *           // Clear session from localStorage
+ *           localStorage.removeItem('activeSessionId');
+ *           
+ *           // Hide session timer/banner
+ *           hideSessionBanner();
+ *           
+ *           // Show session summary modal
+ *           showSessionSummary({
+ *             timeSpent: summary.timeSpent,
+ *             lessonsCompleted: summary.lessonsCompleted,
+ *             questionsAttempted: summary.questionsAttempted,
+ *             pointsEarned
+ *           });
+ *           
+ *         } catch (error) {
+ *           console.error('Failed to end session:', error);
+ *         }
+ *       }
+ *       
+ *       function showSessionSummary(data) {
+ *         const modal = document.createElement('div');
+ *         modal.className = 'session-summary-modal';
+ *         modal.innerHTML = `
+ *           <h2>Study Session Complete! 🎉</h2>
+ *           <div class="summary-stats">
+ *             <div class="stat">
+ *               <span class="stat-label">Time Studied</span>
+ *               <span class="stat-value">${data.timeSpent}</span>
+ *             </div>
+ *             <div class="stat">
+ *               <span class="stat-label">Lessons Completed</span>
+ *               <span class="stat-value">${data.lessonsCompleted}</span>
+ *             </div>
+ *             <div class="stat">
+ *               <span class="stat-label">Questions Attempted</span>
+ *               <span class="stat-value">${data.questionsAttempted}</span>
+ *             </div>
+ *             <div class="stat highlight">
+ *               <span class="stat-label">Points Earned</span>
+ *               <span class="stat-value">+${data.pointsEarned} 🏆</span>
+ *             </div>
+ *           </div>
+ *           <button onclick="closeModal()">Continue</button>
+ *         `;
+ *         document.body.appendChild(modal);
+ *       }
+ *       
+ *       // Auto-end session on page close
+ *       window.addEventListener('beforeunload', () => {
+ *         const sessionId = localStorage.getItem('activeSessionId');
+ *         if (sessionId) {
+ *           // Use sendBeacon for reliability
+ *           const data = JSON.stringify({
+ *             lessonsCompleted: 0,
+ *             questionsAttempted: 0
+ *           });
+ *           const blob = new Blob([data], { type: 'application/json' });
+ *           navigator.sendBeacon(
+ *             `/api/v1/study-sessions/${sessionId}/end`,
+ *             blob
+ *           );
+ *           localStorage.removeItem('activeSessionId');
+ *         }
+ *       });
+ *       ```
+ *       
+ *       **SESSION SUMMARY DISPLAYED:**
+ *       - Total time studied (formatted)
+ *       - Lessons completed count
+ *       - Questions attempted count
+ *       - Points earned
+ *       
+ *       **OPTIONAL NOTES:**
+ *       User can add notes about the session:
+ *       - "Reviewed actus reus"
+ *       - "Need to practice more MCQs"
+ *       - "Module 2 complete!"
+ *       
+ *       **AUTO-END SCENARIOS:**
+ *       Session auto-ends when:
+ *       - User clicks "End Session"
+ *       - User closes browser (sendBeacon)
+ *       - No ping for 5+ minutes (cleanup job)
+ *       
+ *       **GAMIFICATION:**
+ *       Points can be used for:
+ *       - Leaderboards
+ *       - Unlocking features
+ *       - Achievements/badges
+ *       - Progress tracking
+ *       
+ *     parameters:
+ *       - in: path
+ *         name: sessionId
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: Study session ID
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               lessonsCompleted:
+ *                 type: integer
+ *                 example: 3
+ *                 description: Number of lessons completed during session
+ *               questionsAttempted:
+ *                 type: integer
+ *                 example: 15
+ *                 description: Number of questions attempted during session
+ *               notes:
+ *                 type: string
+ *                 maxLength: 500
+ *                 example: "Completed Module 1, need to review negligence"
+ *                 description: Optional notes about the session
+ *     responses:
+ *       200:
+ *         description: Study session ended successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Study session ended
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     sessionId:
+ *                       type: string
+ *                       example: clxses123
+ *                     duration:
+ *                       type: integer
+ *                       example: 5400
+ *                       description: Duration in seconds (90 minutes)
+ *                     pointsEarned:
+ *                       type: integer
+ *                       example: 9
+ *                       description: Points earned (1 per 10 minutes)
+ *                     summary:
+ *                       type: object
+ *                       properties:
+ *                         lessonsCompleted:
+ *                           type: integer
+ *                           example: 3
+ *                         questionsAttempted:
+ *                           type: integer
+ *                           example: 15
+ *                         timeSpent:
+ *                           type: string
+ *                           example: "1h 30m"
+ *       404:
+ *         description: Study session not found
+ *       400:
+ *         description: Session has already ended
+ *       403:
+ *         description: Access denied (not your session)
+ */
+studySessionRouter.post(
+  '/:sessionId/end',
+  protect,
+  validate(endSessionSchema),
+  endSession
 );
 
 export default studySessionRouter;
