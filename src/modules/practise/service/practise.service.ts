@@ -1,6 +1,12 @@
 import { prisma } from '@/shared/config';
-import { AppError, NotFoundError } from '@/shared/utils';
-import { MixedPracticeResponse, TopicChallengeResponse, PastQuestionsListResponse, PastQuestionsQuery } from '../interface/practise.interface';
+import { AppError, NotFoundError, BadRequestError} from '@/shared/utils';
+import {
+  MixedPracticeResponse,
+  TopicChallengeResponse,
+  PastQuestionsListResponse,
+    PastQuestionsQuery,
+  PastQuestionDetailResponse
+} from '../interface/practise.interface';
 import { QuickQuizResponse } from '../interface/practise.interface';
 
 class Practise {
@@ -264,6 +270,59 @@ class Practise {
         years: years as number[],
         examTypes: examTypes as string[],
       },
+    };
+  }
+
+  async getPastQuestionById(
+    questionId: string,
+    userId: string
+  ): Promise<PastQuestionDetailResponse> {
+      
+    const question = await prisma.question.findUnique({
+      where: {
+        id: questionId,
+        type: 'ESSAY',
+        isPublished: true,
+      },
+      include: {
+        attempts: {
+          where: { userId },
+          select: {
+            id: true,
+            answer: true,
+            aiScore: true,
+            band: true,
+            appPass: true,
+            createdAt: true,
+          },
+          orderBy: { createdAt: 'desc' },
+        },
+      },
+    });
+
+    if (!question) {
+      throw new NotFoundError('Past question not found');
+    }
+
+    if (!question.year) {
+      throw new BadRequestError('This is not a past question');
+    }
+
+    return {
+      id: question.id,
+      text: question.text,
+      year: question.year,
+      subject: question.subject!,
+      examType: question.examType!,
+      order: question.order,
+      userAttempts: question.attempts.map((attempt) => ({
+        id: attempt.id,
+        answer: attempt.answer,
+        aiScore: attempt.aiScore,
+        band: attempt.band,
+        appPass: attempt.appPass,
+        createdAt: attempt.createdAt,
+      })),
     };
   }
 }
