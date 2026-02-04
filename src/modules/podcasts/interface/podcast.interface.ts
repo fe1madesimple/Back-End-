@@ -14,8 +14,3 @@ export interface PodcastListResponse {
   total: number;
 }
 
-export const podcastsQuerySchema = z.object({
-  query: z.object({
-    subject: z.string().optional(),
-  }),
-});
