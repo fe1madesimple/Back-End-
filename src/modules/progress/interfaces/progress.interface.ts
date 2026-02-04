@@ -30,3 +30,37 @@ export interface DashboardStatsResponse {
     todayProgress: number;
   };
 }
+
+export interface SubjectProgressDetailResponse {
+  subject: {
+    id: string;
+    name: string;
+    progressPercent: number;
+    status: string;
+    totalTimeSeconds: number;
+    lastAccessedAt: Date | null;
+  };
+  modules: {
+    id: string;
+    name: string;
+    progressPercent: number;
+    status: string;
+    completedLessons: number;
+    totalLessons: number;
+    quizAverage: number | null;
+  }[];
+  performance: {
+    totalLessonsCompleted: number;
+    totalLessons: number;
+    totalQuestionsAttempted: number;
+    averageQuizScore: number;
+    timeSpentThisWeek: number;
+    completionRate: number;
+  };
+  recentLessons: {
+    id: string;
+    title: string;
+    moduleName: string;
+    completedAt: Date;
+  }[];
+}
