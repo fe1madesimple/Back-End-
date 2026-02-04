@@ -4,7 +4,7 @@ import { Router } from 'express';
 import { protect } from '@/shared/middleware/auth.middleware';
 import { validate } from '@/shared/middleware/validation';
 import { startSessionSchema } from '../validator/study-sessions.validator';
-import { startSession } from '../controller/study-sessions.controller';
+import { startSession, pingSession} from '../controller/study-sessions.controller';
 
 const studySessionRouter = Router();
 
@@ -185,5 +185,144 @@ const studySessionRouter = Router();
  *         description: Subject or module not found
  */
 studySessionRouter.post('/start', protect, validate(startSessionSchema), startSession);
+
+
+
+/**
+ * @swagger
+ * /api/v1/study-sessions/{sessionId}/ping:
+ *   post:
+ *     summary: Ping active study session to keep it alive
+ *     tags: [Study Sessions]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Sends a heartbeat ping to keep the study session alive and track whether user is actively studying.
+ *       
+ *       **USE CASE:**
+ *       - Called automatically every 30 seconds by frontend
+ *       - Tracks if user is actively on the page (not idle)
+ *       - Used to calculate accurate study time
+ *       - Prevents counting time when user is away
+ *       
+ *       **HOW IT WORKS:**
+ *       - Frontend pings every 30 seconds while session is active
+ *       - Sends `isActive: true` if tab is visible
+ *       - Sends `isActive: false` if tab is hidden/minimized
+ *       - Backend records last ping time
+ *       - If no ping for >5 minutes, session considered abandoned
+ *       
+ *       **FRONTEND IMPLEMENTATION:**
+ *       ```javascript
+ *       let sessionId = localStorage.getItem('activeSessionId');
+ *       let isTabActive = true;
+ *       
+ *       // Track tab visibility
+ *       document.addEventListener('visibilitychange', () => {
+ *         isTabActive = !document.hidden;
+ *       });
+ *       
+ *       // Ping every 30 seconds
+ *       const pingInterval = setInterval(async () => {
+ *         if (sessionId) {
+ *           try {
+ *             await fetch(`/api/v1/study-sessions/${sessionId}/ping`, {
+ *               method: 'POST',
+ *               headers: { 'Content-Type': 'application/json' },
+ *               body: JSON.stringify({ isActive: isTabActive })
+ *             });
+ *           } catch (error) {
+ *             console.error('Session ping failed:', error);
+ *             // If session not found, clear local storage
+ *             if (error.status === 404) {
+ *               localStorage.removeItem('activeSessionId');
+ *               clearInterval(pingInterval);
+ *             }
+ *           }
+ *         }
+ *       }, 30000); // Every 30 seconds
+ *       
+ *       // Stop pinging when session ends
+ *       function endSession() {
+ *         clearInterval(pingInterval);
+ *         // ... end session logic
+ *       }
+ *       
+ *       // Use sendBeacon on page unload for reliability
+ *       window.addEventListener('beforeunload', () => {
+ *         if (sessionId) {
+ *           const data = JSON.stringify({ isActive: false });
+ *           const blob = new Blob([data], { type: 'application/json' });
+ *           navigator.sendBeacon(
+ *             `/api/v1/study-sessions/${sessionId}/ping`,
+ *             blob
+ *           );
+ *         }
+ *       });
+ *       ```
+ *       
+ *       **WHY PINGING IS IMPORTANT:**
+ *       - Prevents inflated study time (counting idle time)
+ *       - Detects abandoned sessions (auto-end after 5 min idle)
+ *       - Accurate analytics and leaderboards
+ *       - Fair points/rewards calculation
+ *       
+ *       **INACTIVE DETECTION:**
+ *       If no ping received for 5+ minutes:
+ *       - Session considered abandoned
+ *       - Can be auto-ended by cleanup job
+ *       - Duration calculated up to last ping
+ *       
+ *       **RATE LIMITING:**
+ *       - Frontend should ping every 30 seconds
+ *       - Don't ping more frequently (unnecessary load)
+ *       - Don't ping less frequently (inaccurate tracking)
+ *       
+ *     parameters:
+ *       - in: path
+ *         name: sessionId
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: Study session ID
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - isActive
+ *             properties:
+ *               isActive:
+ *                 type: boolean
+ *                 example: true
+ *                 description: Whether user is actively on the page (tab visible)
+ *     responses:
+ *       200:
+ *         description: Session ping recorded successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Session ping recorded
+ *       404:
+ *         description: Study session not found
+ *       400:
+ *         description: Session has already ended
+ *       403:
+ *         description: Access denied (not your session)
+ */
+studySessionRouter.post(
+  '/:sessionId/ping',
+  protect,
+  pingSession
+);
 
 export default studySessionRouter;

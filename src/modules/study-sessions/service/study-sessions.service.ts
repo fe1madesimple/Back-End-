@@ -7,7 +7,7 @@ class StudySessionService {
     const { subjectId, moduleId, sessionType } = data;
 
     // Verify subject exists
-    const subject = await prisma.subject.findUnique({
+    const subject = await prisma.subject.findUnique({   
       where: { id: subjectId, isPublished: true },
       select: { id: true, name: true },
     });

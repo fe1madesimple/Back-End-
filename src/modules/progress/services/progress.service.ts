@@ -8,7 +8,7 @@ import {
   WeeklySummaryResponse,
   ModuleStatsResponse,
 } from '../interfaces/progress.interface';
-import { NotFoundError, ForbiddenError, BadRequestError } from '@/shared/utils';
+import { NotFoundError} from '@/shared/utils';
 
 class ProgressService {
   async getDashboardStats(userId: string): Promise<DashboardStatsResponse> {
@@ -971,4 +971,3 @@ class ProgressService {
 }
 
 export default new ProgressService();
-   
