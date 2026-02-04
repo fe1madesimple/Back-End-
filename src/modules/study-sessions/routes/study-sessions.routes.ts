@@ -196,7 +196,7 @@ studySessionRouter.post('/start', protect, validate(startSessionSchema), startSe
  *     tags: [Study Sessions]
  *     security:
  *       - bearerAuth: []
- *     description: |
+ *     description: | 
  *       Sends a heartbeat ping to keep the study session alive and track whether user is actively studying.
  *       
  *       **USE CASE:**
