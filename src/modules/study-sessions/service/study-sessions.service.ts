@@ -69,6 +69,34 @@ class StudySessionService {
         : undefined,
     };
   }
+
+  async pingSession(userId: string, sessionId: string, isActive: boolean): Promise<void> {
+    // Get session
+    const session = await prisma.studySession.findUnique({
+      where: { id: sessionId },
+    });
+
+    if (!session) {
+      throw new NotFoundError('Study session not found');
+    }
+
+    if (session.userId !== userId) {
+      throw new ForbiddenError('Access denied');
+    }
+
+    if (session.endedAt) {
+      throw new BadRequestError('This session has already ended');
+    }
+
+    // Update last ping time and active status
+    await prisma.studySession.update({
+      where: { id: sessionId },
+      data: {
+        lastPingAt: new Date(),
+        isActive,
+      },
+    });
+  }
 }
 
 export default new StudySessionService();
