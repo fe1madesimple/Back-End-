@@ -39,4 +39,4 @@ export interface EndSessionResponse {
     timeSpent: string;
   };
 }
-  
+      

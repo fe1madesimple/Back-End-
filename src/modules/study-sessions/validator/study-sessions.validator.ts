@@ -7,3 +7,14 @@ export const startSessionSchema = z.object({
     sessionType: z.enum(['LESSON', 'PRACTICE', 'REVIEW']),
   }),
 });
+
+
+// src/modules/study-sessions/validator/study-session.validator.ts
+
+export const endSessionSchema = z.object({
+  body: z.object({
+    lessonsCompleted: z.number().int().min(0).optional(),
+    questionsAttempted: z.number().int().min(0).optional(),
+    notes: z.string().max(500).optional(),
+  }),
+});
