@@ -499,6 +499,8 @@ model StudySession {
   moduleId        String?
   lessonId        String?
   sessionType     String?
+  isActive        Boolean
+  lastPingAt      DateTime?
   
   startedAt       DateTime @default(now())
   endedAt         DateTime?

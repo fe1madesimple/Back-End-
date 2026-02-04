@@ -8,7 +8,7 @@ import {
   WeeklySummaryResponse,
   ModuleStatsResponse,
 } from '../interfaces/progress.interface';
-import { NotFoundError } from '@/shared/utils';
+import { NotFoundError, ForbiddenError, BadRequestError } from '@/shared/utils';
 
 class ProgressService {
   async getDashboardStats(userId: string): Promise<DashboardStatsResponse> {
@@ -967,6 +967,34 @@ class ProgressService {
       },
       recommendations,
     };
+  }
+
+  async pingSession(userId: string, sessionId: string, isActive: boolean): Promise<void> {
+    // Get session
+    const session = await prisma.studySession.findUnique({
+      where: { id: sessionId },
+    });
+
+    if (!session) {
+      throw new NotFoundError('Study session not found');
+    }
+
+    if (session.userId !== userId) {
+      throw new ForbiddenError('Access denied');
+    }
+
+    if (session.endedAt) {
+      throw new BadRequestError('This session has already ended');
+    }
+
+    // Update last ping time and active status
+    await prisma.studySession.update({
+      where: { id: sessionId },
+      data: {
+        lastPingAt: new Date(),
+        isActive,
+      },
+    });
   }
 }
 
