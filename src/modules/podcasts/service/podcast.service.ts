@@ -33,3 +33,6 @@ class Podcasts {
     return { podcasts, total };
   }
 }
+
+
+export default new Podcasts()
