@@ -1,4 +1,4 @@
-    // src/modules/study-sessions/routes/study-session.routes.ts
+// src/modules/study-sessions/routes/study-session.routes.ts
 
 import { Router } from 'express';
 import { protect } from '@/shared/middleware/auth.middleware';
@@ -18,13 +18,13 @@ const studySessionRouter = Router();
  *       - bearerAuth: []
  *     description: |
  *       Starts a new focused study session for tracking study time and activity.
- *       
+ *
  *       **USE CASE:**
  *       - User clicks "Start Study Session" button
  *       - User selects subject and optionally module
  *       - Session tracks time and activity
  *       - User can only have ONE active session at a time
- *       
+ *
  *       **WHAT IS A STUDY SESSION:**
  *       A study session is a focused study period that:
  *       - Has a clear start and end time
@@ -32,12 +32,12 @@ const studySessionRouter = Router();
  *       - Records lessons completed and questions attempted
  *       - Earns points based on duration and activity
  *       - Can be used for analytics and gamification
- *       
+ *
  *       **SESSION TYPES:**
  *       - `LESSON`: Watching video lessons
  *       - `PRACTICE`: Doing practice quizzes
  *       - `REVIEW`: Reviewing notes/past questions
- *       
+ *
  *       **FRONTEND IMPLEMENTATION:**
  *       ```javascript
  *       // User clicks "Start Studying Criminal Law"
@@ -51,35 +51,35 @@ const studySessionRouter = Router();
  *             sessionType: 'LESSON' // or 'PRACTICE' or 'REVIEW'
  *           })
  *         });
- *         
+ *
  *         const { sessionId, startedAt, subject, module } = response.data;
- *         
+ *
  *         // Store sessionId in localStorage for pinging
  *         localStorage.setItem('activeSessionId', sessionId);
- *         
+ *
  *         // Display active session indicator
  *         showSessionTimer(startedAt);
  *         showSessionBanner(`Studying: ${subject.name}`);
- *         
+ *
  *         // Start pinging every 30 seconds (Endpoint 22)
  *         startSessionPinging(sessionId);
  *       }
- *       
+ *
  *       function showSessionTimer(startedAt) {
  *         const startTime = new Date(startedAt);
- *         
+ *
  *         setInterval(() => {
  *           const now = new Date();
  *           const elapsed = Math.floor((now - startTime) / 1000);
  *           const hours = Math.floor(elapsed / 3600);
  *           const minutes = Math.floor((elapsed % 3600) / 60);
  *           const seconds = elapsed % 60;
- *           
- *           document.getElementById('session-timer').textContent = 
+ *
+ *           document.getElementById('session-timer').textContent =
  *             `${hours}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
  *         }, 1000);
  *       }
- *       
+ *
  *       function startSessionPinging(sessionId) {
  *         window.sessionPingInterval = setInterval(() => {
  *           fetch(`/api/v1/study-sessions/${sessionId}/ping`, {
@@ -89,19 +89,19 @@ const studySessionRouter = Router();
  *         }, 30000); // Every 30 seconds
  *       }
  *       ```
- *       
+ *
  *       **UI DISPLAY:**
  *       When session is active, show:
  *       - Session timer (00:45:32)
  *       - Subject/module name
  *       - "End Session" button
  *       - Session type badge
- *       
+ *
  *       **RESTRICTIONS:**
  *       - User can only have ONE active session at a time
  *       - Must end current session before starting new one
  *       - If user tries to start while one is active, they get error
- *       
+ *
  *       **ERROR HANDLING:**
  *       ```javascript
  *       try {
@@ -114,7 +114,7 @@ const studySessionRouter = Router();
  *         }
  *       }
  *       ```
- *       
+ *
  *     requestBody:
  *       required: true
  *       content:
@@ -184,11 +184,6 @@ const studySessionRouter = Router();
  *       404:
  *         description: Subject or module not found
  */
-studySessionRouter.post(
-  '/start',
-  protect,
-  validate(startSessionSchema),
-  startSession
-);
+studySessionRouter.post('/start', protect, validate(startSessionSchema), startSession);
 
 export default studySessionRouter;

@@ -126,3 +126,47 @@ export interface WeeklySummaryResponse {
     description: string;
   }[];
 }
+
+export interface ModuleStatsResponse {
+  module: {
+    id: string;
+    name: string;
+    subjectName: string;
+    progressPercent: number;
+    status: string;
+  };
+  lessons: {
+    totalLessons: number;
+    completedLessons: number;
+    averageTimePerLesson: number;
+    totalTimeSpent: number;
+  };
+  quizzes: {
+    totalQuestions: number;
+    attemptedQuestions: number;
+    correctAnswers: number;
+    averageScore: number;
+    bestScore: number;
+    worstScore: number;
+  };
+  performance: {
+    strongTopics: {
+      topic: string;
+      score: number;
+    }[];
+    weakTopics: {
+      topic: string;
+      score: number;
+    }[];
+    recentAttempts: {
+      questionText: string;
+      isCorrect: boolean;
+      score: number;
+      timestamp: Date;
+    }[];
+  };
+  recommendations: {
+    type: string;
+    message: string;
+  }[];
+}
