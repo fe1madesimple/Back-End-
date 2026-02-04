@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { protect } from '@/shared/middleware/auth.middleware';
-import { getDashboardStats, getSubjectProgressDetail, getStudyStreak} from '../controllers/progress.controller';
+import { getDashboardStats, getSubjectProgressDetail, getStudyStreak, getWeeklySummary} from '../controllers/progress.controller';
 
 const progressRouter = Router();
 
@@ -649,5 +649,253 @@ progressRouter.get(
  *                             example: 15
  */
 progressRouter.get('/study-streak', protect, getStudyStreak);
+
+
+
+/**
+ * @swagger
+ * /api/v1/progress/weekly-summary:
+ *   get:
+ *     summary: Get user's weekly activity summary with day-by-day breakdown
+ *     tags: [Progress & Analytics]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Returns comprehensive weekly summary including daily breakdown, top subjects, and achievements earned.
+ *       
+ *       **USE CASE:**
+ *       - User views their weekly progress report
+ *       - Weekly email digest sent to users
+ *       - Motivational summary at end of week
+ *       - Track consistency and achievements
+ *       
+ *       **RESPONSE INCLUDES:**
+ *       - Week range (start/end dates)
+ *       - Summary totals (time, lessons, questions, average score)
+ *       - Day-by-day breakdown (7 days)
+ *       - Top 3 subjects studied
+ *       - Achievements earned this week
+ *       
+ *       **FRONTEND IMPLEMENTATION:**
+ *       ```javascript
+ *       // Fetch weekly summary
+ *       const response = await fetch('/api/v1/progress/weekly-summary');
+ *       const data = response.data;
+ *       
+ *       // Display week range
+ *       document.getElementById('week-range').textContent = 
+ *         `${new Date(data.weekRange.startDate).toLocaleDateString()} - 
+ *          ${new Date(data.weekRange.endDate).toLocaleDateString()}`;
+ *       
+ *       // Display summary stats
+ *       const summary = data.summary;
+ *       const hours = Math.floor(summary.totalTimeSeconds / 3600);
+ *       const minutes = Math.floor((summary.totalTimeSeconds % 3600) / 60);
+ *       
+ *       document.getElementById('total-time').textContent = `${hours}h ${minutes}m`;
+ *       document.getElementById('lessons-completed').textContent = summary.totalLessonsCompleted;
+ *       document.getElementById('questions-attempted').textContent = summary.totalQuestionsAttempted;
+ *       document.getElementById('avg-score').textContent = `${summary.averageQuizScore}%`;
+ *       document.getElementById('days-studied').textContent = 
+ *         `${summary.daysStudied}/7 days`;
+ *       document.getElementById('goals-met').textContent = 
+ *         `${summary.dailyGoalsMet}/7 goals met`;
+ *       
+ *       // Display daily breakdown chart
+ *       data.dailyBreakdown.forEach(day => {
+ *         const dayCard = document.createElement('div');
+ *         dayCard.className = 'day-card';
+ *         dayCard.innerHTML = `
+ *           <div class="day-name">${day.dayName}</div>
+ *           <div class="day-date">${new Date(day.date).getDate()}</div>
+ *           <div class="day-time">${Math.floor(day.timeSeconds / 60)}m</div>
+ *           <div class="day-lessons">${day.lessonsCompleted} lessons</div>
+ *           <div class="day-questions">${day.questionsAttempted} questions</div>
+ *           ${day.quizScore ? `<div class="day-score">${day.quizScore}%</div>` : ''}
+ *           ${day.goalMet ? '<span class="goal-badge">✓</span>' : ''}
+ *         `;
+ *         weekChart.appendChild(dayCard);
+ *       });
+ *       
+ *       // Display top subjects
+ *       data.topSubjects.forEach((subject, index) => {
+ *         const hours = Math.floor(subject.timeSeconds / 3600);
+ *         document.getElementById(`subject-${index + 1}`).innerHTML = `
+ *           <div class="rank">#${index + 1}</div>
+ *           <div class="subject-name">${subject.subjectName}</div>
+ *           <div class="subject-time">${hours}h studied</div>
+ *           <div class="subject-lessons">${subject.lessonsCompleted} lessons</div>
+ *         `;
+ *       });
+ *       
+ *       // Display achievements
+ *       data.achievements.forEach(achievement => {
+ *         const badge = document.createElement('div');
+ *         badge.className = `achievement-badge ${achievement.type.toLowerCase()}`;
+ *         badge.innerHTML = `
+ *           <div class="achievement-title">${achievement.title}</div>
+ *           <div class="achievement-desc">${achievement.description}</div>
+ *         `;
+ *         achievementsContainer.appendChild(badge);
+ *       });
+ *       
+ *       // Show motivational message
+ *       if (summary.daysStudied < 3) {
+ *         showMotivation("Let's aim for more consistency next week! Try studying 5 days.");
+ *       } else if (summary.daysStudied === 7) {
+ *         showCelebration("Amazing! Perfect week of studying! 🎉");
+ *       }
+ *       ```
+ *       
+ *       **UI SECTIONS:**
+ *       
+ *       1. **Week Overview Card:**
+ *       - Date range
+ *       - Total time, lessons, questions
+ *       - Average quiz score
+ *       - Days studied (5/7)
+ *       - Goals met (4/7)
+ *       
+ *       2. **Daily Breakdown Chart:**
+ *       - 7 cards (Mon-Sun)
+ *       - Each shows: time, lessons, questions, score
+ *       - Green checkmark if goal met
+ *       - Bar chart visualization option
+ *       
+ *       3. **Top Subjects:**
+ *       - Podium-style ranking (1st, 2nd, 3rd)
+ *       - Shows: subject name, time spent, lessons completed
+ *       - Helps identify focus areas
+ *       
+ *       4. **Achievements:**
+ *       - Badge grid
+ *       - Types: STREAK, GOAL, LESSONS, SCORE
+ *       - Celebrate milestones
+ *       
+ *       **SHARE FEATURE:**
+ *       ```javascript
+ *       function shareWeeklySummary() {
+ *         const text = `
+ *           My FE-1 study week:
+ *           📚 ${summary.totalLessonsCompleted} lessons completed
+ *           ⏱️ ${hours}h studied
+ *           📊 ${summary.averageQuizScore}% avg score
+ *           🔥 ${summary.daysStudied}/7 days
+ *         `;
+ *         
+ *         if (navigator.share) {
+ *           navigator.share({ text });
+ *         }
+ *       }
+ *       ```
+ *       
+ *     responses:
+ *       200:
+ *         description: Weekly summary retrieved successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Weekly summary retrieved
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     weekRange:
+ *                       type: object
+ *                       properties:
+ *                         startDate:
+ *                           type: string
+ *                           example: "2026-01-28"
+ *                         endDate:
+ *                           type: string
+ *                           example: "2026-02-03"
+ *                     summary:
+ *                       type: object
+ *                       properties:
+ *                         totalTimeSeconds:
+ *                           type: integer
+ *                           example: 18000
+ *                           description: 5 hours total
+ *                         totalLessonsCompleted:
+ *                           type: integer
+ *                           example: 12
+ *                         totalQuestionsAttempted:
+ *                           type: integer
+ *                           example: 45
+ *                         averageQuizScore:
+ *                           type: number
+ *                           example: 78.5
+ *                         daysStudied:
+ *                           type: integer
+ *                           example: 5
+ *                           description: Out of 7 days
+ *                         dailyGoalsMet:
+ *                           type: integer
+ *                           example: 4
+ *                           description: Out of 7 days
+ *                     dailyBreakdown:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           date:
+ *                             type: string
+ *                             example: "2026-02-03"
+ *                           dayName:
+ *                             type: string
+ *                             example: Mon
+ *                           timeSeconds:
+ *                             type: integer
+ *                             example: 3600
+ *                           lessonsCompleted:
+ *                             type: integer
+ *                             example: 2
+ *                           questionsAttempted:
+ *                             type: integer
+ *                             example: 8
+ *                           quizScore:
+ *                             type: number
+ *                             nullable: true
+ *                             example: 82.5
+ *                           goalMet:
+ *                             type: boolean
+ *                             example: true
+ *                     topSubjects:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           subjectName:
+ *                             type: string
+ *                             example: Criminal Law
+ *                           timeSeconds:
+ *                             type: integer
+ *                             example: 7200
+ *                           lessonsCompleted:
+ *                             type: integer
+ *                             example: 5
+ *                     achievements:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           type:
+ *                             type: string
+ *                             enum: [STREAK, GOAL, LESSONS, SCORE]
+ *                             example: GOAL
+ *                           title:
+ *                             type: string
+ *                             example: Goal Crusher! 🎯
+ *                           description:
+ *                             type: string
+ *                             example: Met your daily goal 4 times this week
+ */
+progressRouter.get('/weekly-summary', protect, getWeeklySummary);
 
 export default progressRouter;

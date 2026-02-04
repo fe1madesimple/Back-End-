@@ -522,7 +522,6 @@ class ProgressService {
     };
     }
     
-    // src/modules/progress/service/progress.service.ts
 
 async getWeeklySummary(userId: string): Promise<WeeklySummaryResponse> {
   const today = new Date();
