@@ -29,3 +29,9 @@ export const getSavedCasesSchema = z.object({
     subject: z.string().optional(),
   }),
 });
+
+export const saveCaseSchema = z.object({
+  params: z.object({
+    id: z.string().cuid(),
+  }),
+});
