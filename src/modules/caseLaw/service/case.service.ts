@@ -3,6 +3,7 @@ import {
   CaseSearchQuery,
   CaseSearchResponse,
   CaseDetailResponse,
+  SavedCasesListResponse,
 } from '../interface/case.interface';
 import { NotFoundError } from '@/shared/utils';
 
@@ -139,6 +140,55 @@ class CaseService {
         relationshipType: rc.relationshipType,
       })),
       isSaved: caseData.savedBy.length > 0,
+    };
+  }
+
+  async getSavedCases(userId: string, subject?: string): Promise<SavedCasesListResponse> {
+    const where: any = { userId };
+
+    if (subject) {
+      where.caseBrief = {
+        subjects: { has: subject },
+      };
+    }
+
+    const savedCases = await prisma.savedCase.findMany({
+      where,
+      include: {
+        caseBrief: {
+          select: {
+            id: true,
+            caseName: true,
+            citation: true,
+            year: true,
+            court: true,
+            jurisdiction: true,
+            frequency: true,
+            subjects: true,
+            topics: true,
+            facts: true,
+          },
+        },
+      },
+      orderBy: { createdAt: 'desc' },
+    });
+
+    return {
+      cases: savedCases.map((sc) => ({
+        id: sc.caseBrief.id,
+        caseName: sc.caseBrief.caseName,
+        citation: sc.caseBrief.citation,
+        year: sc.caseBrief.year,
+        court: sc.caseBrief.court,
+        jurisdiction: sc.caseBrief.jurisdiction,
+        frequency: sc.caseBrief.frequency,
+        subjects: sc.caseBrief.subjects,
+        topics: sc.caseBrief.topics,
+        facts: sc.caseBrief.facts,
+        savedAt: sc.createdAt,
+        lastReviewedAt: sc.lastReviewedAt,
+      })),
+      total: savedCases.length,
     };
   }
 }
