@@ -1,8 +1,12 @@
 import { Router } from 'express';
 import { protect } from '@/shared/middleware/auth.middleware';
 import { validate } from '@/shared/middleware/validation';
-import { searchCases, getCaseDetails } from '../controller/case.controller';
-import { searchCasesSchema, getCaseDetailsSchema } from '../validator/case.validator';
+import { searchCases, getCaseDetails, getSavedCases } from '../controller/case.controller';
+import {
+  searchCasesSchema,
+  getCaseDetailsSchema,
+  getSavedCasesSchema,
+} from '../validator/case.validator';
 
 const caseRouter = Router();
 
@@ -50,6 +54,26 @@ const caseRouter = Router();
  *         description: Cases retrieved successfully
  */
 caseRouter.get('/', protect, validate(searchCasesSchema), searchCases);
+
+/**
+ * @swagger
+ * /cases/saved:
+ *   get:
+ *     summary: Get all saved cases
+ *     tags: [Case Law]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: query
+ *         name: subject
+ *         schema:
+ *           type: string
+ *         description: Filter by subject
+ *     responses:
+ *       200:
+ *         description: Saved cases retrieved successfully
+ */
+caseRouter.get('/saved', protect, validate(getSavedCasesSchema), getSavedCases);
 
 /**
  * @swagger
