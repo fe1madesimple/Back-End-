@@ -73,3 +73,22 @@ export interface CaseDetailResponse {
   isSaved: boolean;
 }
 
+export interface SavedCaseResponse {
+  id: string;
+  caseName: string;
+  citation: string;
+  year: number;
+  court: string;
+  jurisdiction: string;
+  frequency: string;
+  subjects: string[];
+  topics: string[];
+  facts: string;
+  savedAt: Date;
+  lastReviewedAt: Date | null;
+}
+
+export interface SavedCasesListResponse {
+  cases: SavedCaseResponse[];
+  total: number;
+}
