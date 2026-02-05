@@ -14,13 +14,20 @@ export const searchCases = asyncHandler(async (req: Request, res: Response) => {
 
 export const getCaseDetails = asyncHandler(async (req: Request, res: Response) => {
   const userId = req.user!.user.id;
-    const { id } = req.params;
-    
-    if (!id) throw new AppError("case id must be provided"
-        
-    )
+  const { id } = req.params;
+
+  if (!id) throw new AppError('case id must be provided');
 
   const caseDetails = await caseService.getCaseDetails(userId, id);
 
   sendSuccess(res, 'Case details retrieved successfully', caseDetails);
+});
+
+export const getSavedCases = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { subject } = req.query;
+
+  const result = await caseService.getSavedCases(userId, subject as string);
+
+  sendSuccess(res, 'Saved cases retrieved successfully', result);
 });
