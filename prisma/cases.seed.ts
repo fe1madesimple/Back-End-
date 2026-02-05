@@ -2,10 +2,6 @@ import { PrismaClient, CaseFrequency, CaseJurisdiction } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-
-
-
-
 export async function seedCases() {
   console.log('🔨 Seeding Case Law...');
 
@@ -214,3 +210,59 @@ export async function seedCases() {
 
   console.log(`✅ Seeded ${cases.length} cases`);
 }
+
+export async function seedCaseRelations() {
+  console.log('🔨 Seeding Case Relations...');
+
+  // Get case IDs
+  const carlill = await prisma.caseBrief.findUnique({ where: { citation: '[1893] 1 QB 256' } });
+  const boots = await prisma.caseBrief.findUnique({ where: { citation: '[1953] 1 QB 401' } });
+  const donoghue = await prisma.caseBrief.findUnique({ where: { citation: '[1932] AC 562' } });
+  const dunne = await prisma.caseBrief.findUnique({ where: { citation: '[1989] IR 91' } });
+
+  const relations = [
+    {
+      parentCaseId: carlill!.id,
+      relatedCaseId: boots!.id,
+      relationshipType: 'Similar Facts',
+    },
+    {
+      parentCaseId: donoghue!.id,
+      relatedCaseId: dunne!.id,
+      relationshipType: 'Applied In',
+    },
+  ];
+
+  for (const relation of relations) {
+    await prisma.caseRelation.upsert({
+      where: {
+        parentCaseId_relatedCaseId: {
+          parentCaseId: relation.parentCaseId,
+          relatedCaseId: relation.relatedCaseId,
+        },
+      },
+      update: {},
+      create: relation,
+    });
+  }
+
+  console.log(`✅ Seeded ${relations.length} case relations`);
+}
+
+async function main() {
+  console.log('🌱 Starting case seeding...');
+
+  await seedCases();
+  await seedCaseRelations();
+
+  console.log('✅ Case seeding completed!');
+}
+
+main()
+  .catch((e) => {
+    console.error('❌ Seeding failed:', e);
+    process.exit(1);
+  })
+  .finally(async () => {
+    await prisma.$disconnect();
+  });
