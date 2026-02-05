@@ -731,3 +731,22 @@ model QuestionAttempt {
 
   @@map("question_attempts")
 }
+
+
+enum CaseJurisdiction {
+  IRISH_SUPREME_COURT
+  IRISH_COURT_OF_APPEAL
+  IRISH_HIGH_COURT
+  UK_SUPREME_COURT
+  UK_COURT_OF_APPEAL
+  UK_HOUSE_OF_LORDS
+  ECJ_CJEU
+  ECHR
+}
+
+enum CaseFrequency {
+  HIGH_FREQUENCY      
+  MEDIUM_FREQUENCY    
+  RARE                
+  NOT_EXAMINED        
+}
