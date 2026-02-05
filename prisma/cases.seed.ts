@@ -1,6 +1,10 @@
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient, CaseFrequency, CaseJurisdiction } from '@prisma/client';
 
 const prisma = new PrismaClient();
+
+
+
+
 
 export async function seedCases() {
   console.log('🔨 Seeding Case Law...');
@@ -11,8 +15,8 @@ export async function seedCases() {
       citation: '[1893] 1 QB 256',
       year: 1893,
       court: 'UK Court of Appeal',
-      jurisdiction: 'UK_COURT_OF_APPEAL',
-      frequency: 'HIGH_FREQUENCY',
+      jurisdiction: CaseJurisdiction.UK_COURT_OF_APPEAL, // ← Changed
+      frequency: CaseFrequency.HIGH_FREQUENCY, // ← Changed
       subjects: ['Contract Law'],
       topics: ['Offer & Acceptance', 'Unilateral Contracts', 'Consideration'],
       facts:
@@ -38,8 +42,8 @@ export async function seedCases() {
       citation: '[1932] AC 562',
       year: 1932,
       court: 'House of Lords',
-      jurisdiction: 'UK_HOUSE_OF_LORDS',
-      frequency: 'HIGH_FREQUENCY',
+      jurisdiction: CaseJurisdiction.UK_HOUSE_OF_LORDS,
+      frequency: CaseFrequency.HIGH_FREQUENCY,
       subjects: ['Tort Law'],
       topics: ['Negligence - Duty of Care', 'Neighbour Principle'],
       facts:
@@ -65,8 +69,8 @@ export async function seedCases() {
       citation: '[1989] IR 91',
       year: 1989,
       court: 'Irish Supreme Court',
-      jurisdiction: 'IRISH_SUPREME_COURT',
-      frequency: 'HIGH_FREQUENCY',
+      jurisdiction: CaseJurisdiction.IRISH_SUPREME_COURT,
+      frequency: CaseFrequency.HIGH_FREQUENCY,
       subjects: ['Tort Law'],
       topics: ['Negligence - Medical Negligence', 'Standard of Care', 'Bolam Test'],
       facts:
@@ -92,8 +96,8 @@ export async function seedCases() {
       citation: '[1977] IR 360',
       year: 1977,
       court: 'Irish Supreme Court',
-      jurisdiction: 'IRISH_SUPREME_COURT',
-      frequency: 'MEDIUM_FREQUENCY',
+      jurisdiction: CaseJurisdiction.IRISH_SUPREME_COURT,
+      frequency: CaseFrequency.MEDIUM_FREQUENCY,
       subjects: ['Criminal Law'],
       topics: ['Mens Rea', 'Recklessness', 'Foresight'],
       facts:
@@ -119,8 +123,8 @@ export async function seedCases() {
       citation: '[1968] FSR 415',
       year: 1968,
       court: 'UK High Court',
-      jurisdiction: 'UK_COURT_OF_APPEAL',
-      frequency: 'RARE',
+      jurisdiction: CaseJurisdiction.UK_COURT_OF_APPEAL,
+      frequency: CaseFrequency.RARE,
       subjects: ['Equity'],
       topics: ['Breach of Confidence', 'Confidential Information'],
       facts:
@@ -145,8 +149,8 @@ export async function seedCases() {
       citation: '[1897] AC 22',
       year: 1897,
       court: 'House of Lords',
-      jurisdiction: 'UK_HOUSE_OF_LORDS',
-      frequency: 'HIGH_FREQUENCY',
+      jurisdiction: CaseJurisdiction.UK_HOUSE_OF_LORDS,
+      frequency: CaseFrequency.HIGH_FREQUENCY,
       subjects: ['Company Law'],
       topics: ['Corporate Personality', 'Limited Liability', 'Separate Legal Entity'],
       facts:
@@ -172,8 +176,8 @@ export async function seedCases() {
       citation: '[1953] 1 QB 401',
       year: 1953,
       court: 'UK Court of Appeal',
-      jurisdiction: 'UK_COURT_OF_APPEAL',
-      frequency: 'MEDIUM_FREQUENCY',
+      jurisdiction: CaseJurisdiction.UK_COURT_OF_APPEAL,
+      frequency: CaseFrequency.MEDIUM_FREQUENCY,
       subjects: ['Contract Law'],
       topics: ['Offer & Acceptance', 'Invitation to Treat', 'Display of Goods'],
       facts:
@@ -197,11 +201,15 @@ export async function seedCases() {
   ];
 
   for (const caseData of cases) {
-    await prisma.caseBrief.upsert({
+    const existing = await prisma.caseBrief.findFirst({
       where: { citation: caseData.citation },
-      update: {},
-      create: caseData,
     });
+
+    if (!existing) {
+      await prisma.caseBrief.create({
+        data: caseData,
+      });
+    }
   }
 
   console.log(`✅ Seeded ${cases.length} cases`);

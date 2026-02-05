@@ -287,7 +287,7 @@ model AIEvaluation {
 model CaseBrief {
   id           String           @id @default(cuid())
   caseName     String // "Donoghue v Stevenson"
-  citation     String // "[1932] AC 562"
+  citation     String  @unique// "[1932] AC 562"
   year         Int
   court        String // "House of Lords"
   jurisdiction CaseJurisdiction @default(IRISH_SUPREME_COURT)
