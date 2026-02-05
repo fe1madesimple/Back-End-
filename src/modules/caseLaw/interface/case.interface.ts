@@ -92,3 +92,8 @@ export interface SavedCasesListResponse {
   cases: SavedCaseResponse[];
   total: number;
 }
+
+export interface SaveCaseResponse {
+  message: string;
+  isSaved: boolean;
+}
