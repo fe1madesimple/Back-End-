@@ -20,8 +20,6 @@ import { config } from 'dotenv';
 import { configureGoogleStrategy } from './modules/auth/strategies/google.strategy';
 import passport from 'passport';
 
-
-
 // let swaggerSpec: any;
 
 // try {
@@ -90,12 +88,10 @@ const createApp = (): Application => {
 
   logger.info('Security middleware (Helmet) enabled'); // ← Add this
 
-
   logger.info('CORS enabled', { allowedOrigins: corsOrigins }); // ← Add this
 
   logger.info('Body parsers enabled', { limit: '10mb' }); // ← Add this
 
- 
   logger.info('Response compression enabled');
 
   app.use(passport.initialize());
@@ -183,7 +179,7 @@ const createApp = (): Application => {
   app.use('/api/v1/auth', authRouter);
   app.use('/api/v1/users', userRouter);
   app.use('/api/v1/subscription', subscriptionRouter);
-  app.use('/api/v1'), subjectRouter;
+  app.use('/api/v1', subjectRouter);
 
   app.use(notFoundHandler);
   app.use(errorHandler);
