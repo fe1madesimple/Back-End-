@@ -1,6 +1,10 @@
 import { prisma } from '@/shared/config';
-import { CaseSearchQuery, CaseSearchResponse } from '../interface/case.interface';
-
+import {
+  CaseSearchQuery,
+  CaseSearchResponse,
+  CaseDetailResponse,
+} from '../interface/case.interface';
+import { NotFoundError } from '@/shared/utils';
 
 class CaseService {
   async searchCases(userId: string, query: CaseSearchQuery): Promise<CaseSearchResponse> {
@@ -78,6 +82,63 @@ class CaseService {
         limit,
         totalPages: Math.ceil(total / limit),
       },
+    };
+  }
+
+  async getCaseDetails(userId: string, caseId: string): Promise<CaseDetailResponse> {
+    const caseData = await prisma.caseBrief.findUnique({
+      where: { id: caseId },
+      include: {
+        savedBy: {
+          where: { userId },
+          select: { id: true },
+        },
+        relatedCases: {
+          include: {
+            relatedCase: {
+              select: {
+                id: true,
+                caseName: true,
+                citation: true,
+                facts: true,
+              },
+            },
+          },
+        },
+      },
+    });
+
+    if (!caseData) {
+      throw new NotFoundError('Case not found');
+    }
+
+    return {
+      id: caseData.id,
+      caseName: caseData.caseName,
+      citation: caseData.citation,
+      year: caseData.year,
+      court: caseData.court,
+      jurisdiction: caseData.jurisdiction,
+      frequency: caseData.frequency,
+      subjects: caseData.subjects,
+      topics: caseData.topics,
+      facts: caseData.facts,
+      issue: caseData.issue,
+      ruling: caseData.ruling,
+      reasoning: caseData.reasoning,
+      significance: caseData.significance,
+      principleAndApplication: caseData.principleAndApplication,
+      examTip: caseData.examTip,
+      examRelevance: caseData.examRelevance,
+      appearsInPapers: caseData.appearsInPapers,
+      relatedCases: caseData.relatedCases.map((rc) => ({
+        id: rc.relatedCase.id,
+        caseName: rc.relatedCase.caseName,
+        citation: rc.relatedCase.citation,
+        facts: rc.relatedCase.facts,
+        relationshipType: rc.relationshipType,
+      })),
+      isSaved: caseData.savedBy.length > 0,
     };
   }
 }
