@@ -76,6 +76,7 @@ model User {
   questionAttempts QuestionAttempt[]
   studySessions    StudySession[]
   podcastProgress  UserPodcastProgress[]
+  playlists        Playlist[]
 
   @@index([email])
   @@index([googleId])
@@ -284,17 +285,24 @@ model AIEvaluation {
 }
 
 model CaseBrief {
-  id       String @id @default(cuid())
-  caseName String // "Donoghue v Stevenson"
-  citation String // "[1932] AC 562"
-  year     Int
-  court    String // "House of Lords"
+  id           String           @id @default(cuid())
+  caseName     String // "Donoghue v Stevenson"
+  citation     String // "[1932] AC 562"
+  year         Int
+  court        String // "House of Lords"
+  jurisdiction CaseJurisdiction @default(IRISH_SUPREME_COURT)
+  frequency    CaseFrequency    @default(NOT_EXAMINED)
 
-  facts        String @db.Text
-  issue        String @db.Text
-  ruling       String @db.Text
-  reasoning    String @db.Text
-  significance String @db.Text
+  facts                   String   @db.Text
+  issue                   String   @db.Text
+  ruling                  String   @db.Text
+  reasoning               String   @db.Text
+  significance            String   @db.Text
+  principleAndApplication String?  @db.Text
+  examTip                 String?  @db.Text
+  examRelevance           String?  @db.Text
+  appearsInPapers         String[] // ["March 2023", "October 2021"]
+  topics                  String[] // ["Offer & Acceptance", "Negligence - Duty of Care"]
 
   subjects String[] // Related subject IDs (no relation - just array)
 
@@ -306,11 +314,16 @@ model CaseBrief {
   updatedAt DateTime @updatedAt
 
   // Relations
-  savedBy SavedCase[]
+  savedBy        SavedCase[]
+  caseRelations  CaseRelation[]
+  relatedCases   CaseRelation[] @relation("ParentCase")
+  relatedToCases CaseRelation[] @relation("RelatedCase")
 
   @@index([year])
   @@index([caseName])
   @@index([citation])
+  @@index([jurisdiction])
+  @@index([frequency])
   @@map("case_briefs")
 }
 
@@ -465,10 +478,63 @@ model Podcast {
 
   progress UserPodcastProgress[]
 
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @updatedAt
+  playlistPodcasts PlaylistPodcast[]
+
+  @@map("podcasts")
+}
+
+model Playlist {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  name        String
+  description String? @db.Text
+
+  podcasts PlaylistPodcast[]
+
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  @@map("podcasts")
+  @@index([userId])
+  @@map("playlists")
+}
+
+model PlaylistPodcast {
+  id         String   @id @default(cuid())
+  playlistId String
+  playlist   Playlist @relation(fields: [playlistId], references: [id], onDelete: Cascade)
+  podcastId  String
+  podcast    Podcast  @relation(fields: [podcastId], references: [id], onDelete: Cascade)
+
+  order   Int      @default(0)
+  addedAt DateTime @default(now())
+
+  @@unique([playlistId, podcastId])
+  @@index([playlistId])
+  @@index([podcastId])
+  @@map("playlist_podcasts")
+}
+
+model CaseRelation {
+  id            String    @id @default(cuid())
+  parentCaseId  String
+  parentCase    CaseBrief @relation("ParentCase", fields: [parentCaseId], references: [id], onDelete: Cascade)
+  relatedCaseId String
+  relatedCase   CaseBrief @relation("RelatedCase", fields: [relatedCaseId], references: [id], onDelete: Cascade)
+
+  relationshipType String? // "Similar Facts", "Overruled By", "Distinguished From"
+
+  createdAt   DateTime   @default(now())
+  caseBrief   CaseBrief? @relation(fields: [caseBriefId], references: [id])
+  caseBriefId String?
+
+  @@unique([parentCaseId, relatedCaseId])
+  @@index([parentCaseId])
+  @@index([relatedCaseId])
+  @@map("case_relations")
 }
 
 model StudySession {
@@ -732,7 +798,6 @@ model QuestionAttempt {
   @@map("question_attempts")
 }
 
-
 enum CaseJurisdiction {
   IRISH_SUPREME_COURT
   IRISH_COURT_OF_APPEAL
@@ -745,8 +810,8 @@ enum CaseJurisdiction {
 }
 
 enum CaseFrequency {
-  HIGH_FREQUENCY      
-  MEDIUM_FREQUENCY    
-  RARE                
-  NOT_EXAMINED        
+  HIGH_FREQUENCY
+  MEDIUM_FREQUENCY
+  RARE
+  NOT_EXAMINED
 }
