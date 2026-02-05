@@ -4,7 +4,7 @@ import { validate } from '@/shared/middleware/validation';
 import { searchCases } from '../controller/case.controller';
 import { searchCasesSchema } from '../validator/case.validator';
 
-const router = Router();
+const caseRouter = Router();
 
 /**
  * @swagger
@@ -51,4 +51,4 @@ const router = Router();
  */
 router.get('/', protect, validate(searchCasesSchema), searchCases);
 
-export default router;
+export default caseRouter;
