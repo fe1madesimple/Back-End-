@@ -1,10 +1,10 @@
-import { AppError } from '@/shared/utils';
+
 import { prisma } from '@/shared/config';
 import { PodcastListResponse, PodcastDetailResponse } from '../interface/podcast.interface';
 import { NotFoundError } from '@/shared/utils';
 
 class Podcasts {
-  // src/modules/content/service/content.service.ts
+
 
   async getPodcasts(subject?: string): Promise<PodcastListResponse> {
     const where: any = { isPublished: true };
@@ -33,8 +33,6 @@ class Podcasts {
 
     return { podcasts, total };
   }
-
-  // src/modules/content/service/content.service.ts
 
   async getPodcastById(userId: string, podcastId: string): Promise<PodcastDetailResponse> {
     const podcast = await prisma.podcast.findUnique({

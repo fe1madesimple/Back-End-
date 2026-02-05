@@ -3,7 +3,7 @@ import { Request, Response } from 'express';
 import { asyncHandler } from '@/shared/utils';
 import podcastService from '../service/podcast.service';
 import { sendSuccess } from '@/shared/utils';
-import podCastRouter from '../routes/podcast.routes';
+
 
 export const getPodcasts = asyncHandler(async (req: Request, res: Response) => {
   const { subject } = req.query;
