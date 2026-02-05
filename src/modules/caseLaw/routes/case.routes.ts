@@ -1,8 +1,8 @@
 import { Router } from 'express';
 import { protect } from '@/shared/middleware/auth.middleware';
 import { validate } from '@/shared/middleware/validation';
-import { searchCases } from '../controller/case.controller';
-import { searchCasesSchema } from '../validator/case.validator';
+import { searchCases, getCaseDetails } from '../controller/case.controller';
+import { searchCasesSchema, getCaseDetailsSchema } from '../validator/case.validator';
 
 const caseRouter = Router();
 
@@ -50,5 +50,28 @@ const caseRouter = Router();
  *         description: Cases retrieved successfully
  */
 caseRouter.get('/', protect, validate(searchCasesSchema), searchCases);
+
+/**
+ * @swagger
+ * /cases/{id}:
+ *   get:
+ *     summary: Get case details with all tabs
+ *     tags: [Case Law]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: Case ID
+ *     responses:
+ *       200:
+ *         description: Case details retrieved
+ *       404:
+ *         description: Case not found
+ */
+caseRouter.get('/:id', protect, validate(getCaseDetailsSchema), getCaseDetails);
 
 export default caseRouter;
