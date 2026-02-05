@@ -17,3 +17,9 @@ export const searchCasesSchema = z.object({
       .transform((val) => (val ? parseInt(val) : 10)),
   }),
 });
+
+export const getCaseDetailsSchema = z.object({
+  params: z.object({
+    id: z.string().cuid(),
+  }),
+});
