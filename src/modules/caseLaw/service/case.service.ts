@@ -1,5 +1,6 @@
 import { prisma } from '@/shared/config';
-import { CaseSearchQuery, CaseSearchResponse } from '../interfaces/case.interface';
+import { CaseSearchQuery, CaseSearchResponse } from '../interface/case.interface';
+
 
 class CaseService {
   async searchCases(userId: string, query: CaseSearchQuery): Promise<CaseSearchResponse> {
