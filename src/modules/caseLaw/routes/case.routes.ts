@@ -49,6 +49,6 @@ const caseRouter = Router();
  *       200:
  *         description: Cases retrieved successfully
  */
-router.get('/', protect, validate(searchCasesSchema), searchCases);
+caseRouter.get('/', protect, validate(searchCasesSchema), searchCases);
 
 export default caseRouter;
