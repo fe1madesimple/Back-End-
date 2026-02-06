@@ -22,3 +22,9 @@ export const removePodcastFromPlaylistSchema = z.object({
     podcastId: z.string().cuid(),
   }),
 });
+
+export const deletePlaylistSchema = z.object({
+  params: z.object({
+    id: z.string().cuid(),
+  }),
+});
