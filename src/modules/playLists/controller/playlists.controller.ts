@@ -24,11 +24,24 @@ export const getUserPlaylists = asyncHandler(async (req: Request, res: Response)
 export const addPodcastToPlaylist = asyncHandler(async (req: Request, res: Response) => {
   const userId = req.user!.user.id;
   const { id } = req.params;
-    const { podcastId } = req.body;
-    
-    if (!id) throw new AppError("")
+  const { podcastId } = req.body;
+
+  if (!id) throw new AppError('');
 
   const result = await playlistsService.addPodcastToPlaylist(userId, id, podcastId);
+
+  sendSuccess(res, result.message, result);
+});
+
+export const removePodcastFromPlaylist = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { id, podcastId } = req.params;
+
+  if (!id) throw new AppError('podcast id required');
+
+  if (!podcastId) throw new AppError('podcast id required');
+
+  const result = await playlistsService.removePodcastFromPlaylist(userId, id, podcastId);
 
   sendSuccess(res, result.message, result);
 });
