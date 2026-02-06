@@ -4,6 +4,7 @@ import {
   CaseSearchResponse,
   CaseDetailResponse,
   SavedCasesListResponse,
+  SaveCaseResponse,
 } from '../interface/case.interface';
 import { NotFoundError } from '@/shared/utils';
 
@@ -190,6 +191,53 @@ class CaseService {
       })),
       total: savedCases.length,
     };
+  }
+
+  async toggleSaveCase(userId: string, caseId: string): Promise<SaveCaseResponse> {
+    // Check if case exists
+    const caseExists = await prisma.caseBrief.findUnique({
+      where: { id: caseId },
+      select: { id: true },
+    });
+
+    if (!caseExists) {
+      throw new NotFoundError('Case not found');
+    }
+
+    // Check if already saved
+    const existing = await prisma.savedCase.findUnique({
+      where: {
+        userId_caseBriefId: {
+          userId,
+          caseBriefId: caseId,
+        },
+      },
+    });
+
+    if (existing) {
+      // Unsave
+      await prisma.savedCase.delete({
+        where: { id: existing.id },
+      });
+
+      return {
+        message: 'Case removed from saved',
+        isSaved: false,
+      };
+    } else {
+      // Save
+      await prisma.savedCase.create({
+        data: {
+          userId,
+          caseBriefId: caseId,
+        },
+      });
+
+      return {
+        message: 'Case saved for revision',
+        isSaved: true,
+      };
+    }
   }
 }
 
