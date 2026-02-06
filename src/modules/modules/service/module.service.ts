@@ -3,6 +3,8 @@ import { prisma } from '@/shared/config';
 
 class Module {
   async getModuleById(userId: string, moduleId: string) {
+
+    
     const module = await prisma.module.findUnique({
       where: { id: moduleId, isPublished: true },
       include: {
