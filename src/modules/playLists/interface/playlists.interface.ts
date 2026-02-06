@@ -47,3 +47,8 @@ export interface RemovePodcastFromPlaylistResponse {
   playlistId: string;
   podcastId: string;
 }
+
+export interface DeletePlaylistResponse {
+  message: string;
+  playlistId: string;
+}
