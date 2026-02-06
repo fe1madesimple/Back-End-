@@ -15,3 +15,10 @@ export const addPodcastToPlaylistSchema = z.object({
     podcastId: z.string().cuid('Invalid podcast ID'),
   }),
 });
+
+export const removePodcastFromPlaylistSchema = z.object({
+  params: z.object({
+    id: z.string().cuid(),
+    podcastId: z.string().cuid(),
+  }),
+});
