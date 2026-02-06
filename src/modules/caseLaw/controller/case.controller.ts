@@ -34,11 +34,20 @@ export const getSavedCases = asyncHandler(async (req: Request, res: Response) =>
 
 export const toggleSaveCase = asyncHandler(async (req: Request, res: Response) => {
   const userId = req.user!.user.id;
-    const { id } = req.params;
-    
-    if (!id) throw new AppError("case id required")
+  const { id } = req.params;
+
+  if (!id) throw new AppError('case id required');
 
   const result = await caseService.toggleSaveCase(userId, id);
 
   sendSuccess(res, result.message, { isSaved: result.isSaved });
+});
+
+export const getAllCases = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { page = 1, limit = 20 } = req.query;
+
+  const result = await caseService.getAllCases(userId, Number(page), Number(limit));
+
+  sendSuccess(res, 'All cases retrieved successfully', result);
 });
