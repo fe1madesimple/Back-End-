@@ -5,12 +5,14 @@ import {
   createPlaylist,
   getUserPlaylists,
   addPodcastToPlaylist,
-  removePodcastFromPlaylist,
+    removePodcastFromPlaylist,
+  deletePlaylist
 } from '../controller/playlists.controller';
 import {
   createPlaylistSchema,
   addPodcastToPlaylistSchema,
-  removePodcastFromPlaylistSchema,
+    removePodcastFromPlaylistSchema,
+  deletePlaylistSchema
 } from '../validator/playlists.validator';
 
 const playListRouter = Router();
@@ -128,5 +130,29 @@ playListRouter.delete(
   validate(removePodcastFromPlaylistSchema),
   removePodcastFromPlaylist
 );
+
+
+/**
+ * @swagger
+ * /playlists/{id}:
+ *   delete:
+ *     summary: Delete playlist and all its contents
+ *     tags: [Playlists]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: Playlist ID
+ *     responses:
+ *       200:
+ *         description: Playlist deleted successfully
+ *       404:
+ *         description: Playlist not found
+ */
+playListRouter.delete('/:id', protect, validate(deletePlaylistSchema), deletePlaylist);
 
 export default playListRouter;
