@@ -31,3 +31,14 @@ export const getSavedCases = asyncHandler(async (req: Request, res: Response) =>
 
   sendSuccess(res, 'Saved cases retrieved successfully', result);
 });
+
+export const toggleSaveCase = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+    const { id } = req.params;
+    
+    if (!id) throw new AppError("case id required")
+
+  const result = await caseService.toggleSaveCase(userId, id);
+
+  sendSuccess(res, result.message, { isSaved: result.isSaved });
+});
