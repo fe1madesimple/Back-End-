@@ -38,4 +38,4 @@ moduleRouter.get('/modules/:id', protect, getModuleById);
 
 
 
-export default moduleRouter
+export default moduleRouter   

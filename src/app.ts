@@ -14,6 +14,7 @@ import { swaggerSpec } from './swagger/config';
 import authRouter from './modules/auth/routes/auth.routes';
 import userRouter from './modules/user/routes/user.routes';
 import subjectRouter from './modules/subjects/routes/subject.routes';
+import moduleRouter from './modules/modules/routes/module.routes';
 
 import subscriptionRouter from './modules/subscription/routes/subscription.routes';
 import { config } from 'dotenv';
@@ -180,6 +181,7 @@ const createApp = (): Application => {
   app.use('/api/v1/users', userRouter);
   app.use('/api/v1/subscription', subscriptionRouter);
   app.use('/api/v1', subjectRouter);
+  app.use('/api/v1', moduleRouter);
 
   app.use(notFoundHandler);
   app.use(errorHandler);
