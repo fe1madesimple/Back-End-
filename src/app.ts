@@ -15,6 +15,7 @@ import authRouter from './modules/auth/routes/auth.routes';
 import userRouter from './modules/user/routes/user.routes';
 import subjectRouter from './modules/subjects/routes/subject.routes';
 import moduleRouter from './modules/modules/routes/module.routes';
+import lessonRouter from './modules/Lesson/route/lesson.route';
 
 import subscriptionRouter from './modules/subscription/routes/subscription.routes';
 import { config } from 'dotenv';
@@ -182,6 +183,7 @@ const createApp = (): Application => {
   app.use('/api/v1/subscription', subscriptionRouter);
   app.use('/api/v1', subjectRouter);
   app.use('/api/v1', moduleRouter);
+  app.use('/api/v1', lessonRouter);
 
   app.use(notFoundHandler);
   app.use(errorHandler);
