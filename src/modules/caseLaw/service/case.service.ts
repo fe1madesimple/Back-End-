@@ -248,13 +248,10 @@ class CaseService {
     const skip = (page - 1) * limit;
 
     // Get total count
-    const total = await prisma.caseBrief.count({
-      where: { isPublished: true },
-    });  
+    const total = await prisma.caseBrief.count();
 
     // Get all cases
     const cases = await prisma.caseBrief.findMany({
-      where: { isPublished: true },
       select: {
         id: true,
         caseName: true,
