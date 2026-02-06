@@ -548,10 +548,10 @@ practiceRouter.get(
  *       // Navigate to: /past-questions/:id (Endpoint 15)
  *       ```
  *       
- *       **CARD DISPLAY (per question):**
+ *       **CARD DISPLAY (per question) just an example o babtunde:**
  *       ```
  *       ┌─────────────────────────────────────────┐
- *       │ 2024 Equity Essay                       │
+ *       │ 2024 Equity Essay  na exmaple o babatunde│
  *       ├─────────────────────────────────────────┤
  *       │ Discuss the equitable maxims and their  │
  *       │ application in modern Irish law...      │
@@ -668,8 +668,6 @@ practiceRouter.get(
 );
 
 
-
-// src/modules/content/routes/content.routes.ts
 
 /**
  * @swagger
