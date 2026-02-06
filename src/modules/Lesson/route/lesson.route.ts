@@ -593,3 +593,6 @@ lessonRouter.post(
   validate(trackTimeSchema),
   trackTimeSpent
 );
+
+
+export default lessonRouter
