@@ -6,3 +6,12 @@ export const createPlaylistSchema = z.object({
     description: z.string().max(500, 'Description too long').optional(),
   }),
 });
+
+export const addPodcastToPlaylistSchema = z.object({
+  params: z.object({
+    id: z.string().cuid(),
+  }),
+  body: z.object({
+    podcastId: z.string().cuid('Invalid podcast ID'),
+  }),
+});
