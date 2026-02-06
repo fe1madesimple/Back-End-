@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { protect } from '@/shared/middleware/auth.middleware';
 import { validate } from '@/shared/middleware/validation';
-import { createPlaylist } from '../controller/playlists.controller';
+import { createPlaylist, getUserPlaylists } from '../controller/playlists.controller';
 import { createPlaylistSchema } from '../validator/playlists.validator';
 
 const playListRouter = Router();
@@ -32,5 +32,22 @@ const playListRouter = Router();
  *         description: Playlist created successfully
  */
 playListRouter.post('/', protect, validate(createPlaylistSchema), createPlaylist);
+
+
+
+
+/**
+ * @swagger
+ * /playlists:
+ *   get:
+ *     summary: Get user's playlists
+ *     tags: [Playlists]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Playlists retrieved successfully
+ */
+playListRouter.get('/', protect, getUserPlaylists);
 
 export default playListRouter;
