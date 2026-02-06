@@ -1,8 +1,17 @@
 import { Router } from 'express';
 import { protect } from '@/shared/middleware/auth.middleware';
 import { validate } from '@/shared/middleware/validation';
-import { createPlaylist, getUserPlaylists, addPodcastToPlaylist } from '../controller/playlists.controller';
-import { createPlaylistSchema, addPodcastToPlaylistSchema} from '../validator/playlists.validator';
+import {
+  createPlaylist,
+  getUserPlaylists,
+  addPodcastToPlaylist,
+  removePodcastFromPlaylist,
+} from '../controller/playlists.controller';
+import {
+  createPlaylistSchema,
+  addPodcastToPlaylistSchema,
+  removePodcastFromPlaylistSchema,
+} from '../validator/playlists.validator';
 
 const playListRouter = Router();
 
@@ -33,7 +42,6 @@ const playListRouter = Router();
  */
 playListRouter.post('/', protect, validate(createPlaylistSchema), createPlaylist);
 
-
 /**
  * @swagger
  * /playlists:
@@ -47,7 +55,6 @@ playListRouter.post('/', protect, validate(createPlaylistSchema), createPlaylist
  *         description: Playlists retrieved successfully
  */
 playListRouter.get('/', protect, getUserPlaylists);
-
 
 /**
  * @swagger
@@ -81,8 +88,45 @@ playListRouter.get('/', protect, getUserPlaylists);
  *       404:
  *         description: Playlist or podcast not found
  */
-playListRouter.post('/:id/podcasts', protect, validate(addPodcastToPlaylistSchema), addPodcastToPlaylist)
+playListRouter.post(
+  '/:id/podcasts',
+  protect,
+  validate(addPodcastToPlaylistSchema),
+  addPodcastToPlaylist
+);
 
-
+/**
+ * @swagger
+ * /playlists/{id}/podcasts/{podcastId}:
+ *   delete:
+ *     summary: Remove podcast from playlist
+ *     tags: [Playlists]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: Playlist ID
+ *       - in: path
+ *         name: podcastId
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: Podcast ID
+ *     responses:
+ *       200:
+ *         description: Podcast removed successfully
+ *       404:
+ *         description: Playlist or podcast not found
+ */
+playListRouter.delete(
+  '/:id/podcasts/:podcastId',
+  protect,
+  validate(removePodcastFromPlaylistSchema),
+  removePodcastFromPlaylist
+);
 
 export default playListRouter;
