@@ -111,6 +111,13 @@ class Lesson {
       throw new AppError('Lesson not found');
     }
 
+    if (videoDuration) {
+      if (videoDuration <= 0) {
+
+        throw new AppError('Invalid video duration');
+      }
+    }
+
     // Use provided duration (from frontend) or stored duration (from DB)
     const duration = videoDuration || lesson.videoDuration;
 
