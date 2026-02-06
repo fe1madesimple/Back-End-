@@ -41,3 +41,9 @@ export interface AddPodcastToPlaylistResponse {
   playlistId: string;
   podcastId: string;
 }
+
+export interface RemovePodcastFromPlaylistResponse {
+  message: string;
+  playlistId: string;
+  podcastId: string;
+}
