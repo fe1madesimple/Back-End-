@@ -45,3 +45,15 @@ export const removePodcastFromPlaylist = asyncHandler(async (req: Request, res: 
 
   sendSuccess(res, result.message, result);
 });
+
+export const deletePlaylist = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+    const { id } = req.params;
+    
+
+    if (!id) throw new AppError("playlists id required")
+
+  const result = await playlistsService.deletePlaylist(userId, id);
+
+  sendSuccess(res, result.message, result);
+});
