@@ -31,3 +31,13 @@ export interface GetPlaylistsResponse {
   playlists: PlaylistWithPodcastsResponse[];
   total: number;
 }
+
+export interface AddPodcastToPlaylistRequest {
+  podcastId: string;
+}
+
+export interface AddPodcastToPlaylistResponse {
+  message: string;
+  playlistId: string;
+  podcastId: string;
+}
