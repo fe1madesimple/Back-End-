@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import { asyncHandler } from '@/shared/utils';
 import { sendSuccess } from '@/shared/utils/response';
+import { AppError } from '@/shared/utils';
 import playlistsService from '../service/playlists.service';
 
 export const createPlaylist = asyncHandler(async (req: Request, res: Response) => {
@@ -18,4 +19,16 @@ export const getUserPlaylists = asyncHandler(async (req: Request, res: Response)
   const result = await playlistsService.getUserPlaylists(userId);
 
   sendSuccess(res, 'Playlists retrieved successfully', result);
+});
+
+export const addPodcastToPlaylist = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { id } = req.params;
+    const { podcastId } = req.body;
+    
+    if (!id) throw new AppError("")
+
+  const result = await playlistsService.addPodcastToPlaylist(userId, id, podcastId);
+
+  sendSuccess(res, result.message, result);
 });
