@@ -19,6 +19,7 @@ import lessonRouter from './modules/Lesson/route/lesson.route';
 import questionRouter from './modules/questions/routes/question.routes';
 import practiceRouter from './modules/practise/routes/practise.routes';
 import progressRouter from './modules/progress/routes/progress.routes';
+import studySessionRouter from './modules/study-sessions/routes/study-sessions.routes';
 
 import subscriptionRouter from './modules/subscription/routes/subscription.routes';
 import { config } from 'dotenv';
@@ -190,6 +191,7 @@ const createApp = (): Application => {
   app.use('/api/v1', questionRouter);
   app.use('/api/v1', practiceRouter);
   app.use('/api/v1', progressRouter);
+  app.use('/api/v1', studySessionRouter);
 
   app.use(notFoundHandler);
   app.use(errorHandler);
