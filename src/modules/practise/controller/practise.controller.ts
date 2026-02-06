@@ -4,7 +4,7 @@ import { asyncHandler } from '@/shared/utils';
 import practiseService from '../service/practise.service';
 import { sendSuccess } from '@/shared/utils';
 import { PastQuestionsQuery } from '../interface/practise.interface';
-import { BadRequestError } from '@anthropic-ai/sdk';
+   
 
 // src/modules/content/controller/content.controller.ts
 
