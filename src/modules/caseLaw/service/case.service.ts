@@ -15,7 +15,7 @@ class CaseService {
     const skip = (page - 1) * limit;
 
     // Build where clause
-    const where: any = { isPublished: true };
+    const where: any = {};
 
     if (search) {
       where.OR = [
@@ -238,6 +238,65 @@ class CaseService {
         isSaved: true,
       };
     }
+  }
+
+  async getAllCases(
+    userId: string,
+    page: number = 1,
+    limit: number = 20
+  ): Promise<CaseSearchResponse> {
+    const skip = (page - 1) * limit;
+
+    // Get total count
+    const total = await prisma.caseBrief.count({
+      where: { isPublished: true },
+    });  
+
+    // Get all cases
+    const cases = await prisma.caseBrief.findMany({
+      where: { isPublished: true },
+      select: {
+        id: true,
+        caseName: true,
+        citation: true,
+        year: true,
+        court: true,
+        jurisdiction: true,
+        frequency: true,
+        subjects: true,
+        topics: true,
+        facts: true,
+        savedBy: {
+          where: { userId },
+          select: { id: true },
+        },
+      },
+      orderBy: [{ frequency: 'asc' }, { year: 'desc' }],
+      skip,
+      take: limit,
+    });
+
+    return {
+      cases: cases.map((c) => ({
+        id: c.id,
+        caseName: c.caseName,
+        citation: c.citation,
+        year: c.year,
+        court: c.court,
+        jurisdiction: c.jurisdiction,
+        frequency: c.frequency,
+        subjects: c.subjects,
+        topics: c.topics,
+        facts: c.facts,
+        isSaved: c.savedBy.length > 0,
+      })),
+      pagination: {
+        total,
+        page,
+        limit,
+        totalPages: Math.ceil(total / limit),
+      },
+    };
   }
 }
 
