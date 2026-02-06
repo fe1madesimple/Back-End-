@@ -1,11 +1,17 @@
 import { Router } from 'express';
 import { protect } from '@/shared/middleware/auth.middleware';
 import { validate } from '@/shared/middleware/validation';
-import { searchCases, getCaseDetails, getSavedCases } from '../controller/case.controller';
+import {
+  searchCases,
+  getCaseDetails,
+  getSavedCases,
+  toggleSaveCase,
+} from '../controller/case.controller';
 import {
   searchCasesSchema,
   getCaseDetailsSchema,
   getSavedCasesSchema,
+  saveCaseSchema,
 } from '../validator/case.validator';
 
 const caseRouter = Router();
@@ -97,5 +103,28 @@ caseRouter.get('/saved', protect, validate(getSavedCasesSchema), getSavedCases);
  *         description: Case not found
  */
 caseRouter.get('/:id', protect, validate(getCaseDetailsSchema), getCaseDetails);
+
+/**
+ * @swagger
+ * /cases/{id}/save:
+ *   post:
+ *     summary: Save or unsave case for revision
+ *     tags: [Case Law]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: Case ID
+ *     responses:
+ *       200:
+ *         description: Case saved/unsaved successfully
+ *       404:
+ *         description: Case not found
+ */
+caseRouter.post('/:id/save', protect, validate(saveCaseSchema), toggleSaveCase);
 
 export default caseRouter;
