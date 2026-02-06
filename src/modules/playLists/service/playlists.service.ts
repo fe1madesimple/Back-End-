@@ -2,8 +2,9 @@ import { prisma } from '@/shared/config';
 import {
   CreatePlaylistRequest,
   PlaylistResponse,
-    GetPlaylistsResponse,
-  AddPodcastToPlaylistResponse
+  GetPlaylistsResponse,
+  AddPodcastToPlaylistResponse,
+  RemovePodcastFromPlaylistResponse,
 } from '../interface/playlists.interface';
 import { NotFoundError, BadRequestError } from '@/shared/utils';
 
@@ -139,6 +140,53 @@ class PlaylistService {
 
     return {
       message: 'Podcast added to playlist',
+      playlistId,
+      podcastId,
+    };
+  }
+
+  async removePodcastFromPlaylist(
+    userId: string,
+    playlistId: string,
+    podcastId: string
+  ): Promise<RemovePodcastFromPlaylistResponse> {
+      
+      
+    // Check playlist exists and belongs to user
+    const playlist = await prisma.playlist.findUnique({
+      where: { id: playlistId },
+      select: { id: true, userId: true },
+    });
+
+    if (!playlist) {
+      throw new NotFoundError('Playlist not found');
+    }
+
+    if (playlist.userId !== userId) {
+      throw new BadRequestError('You do not have access to this playlist');
+    }
+
+    // Check if podcast is in playlist
+    const playlistPodcast = await prisma.playlistPodcast.findUnique({
+      where: {
+        playlistId_podcastId: {
+          playlistId,
+          podcastId,
+        },
+      },
+    });
+
+    if (!playlistPodcast) {
+      throw new NotFoundError('Podcast not found in playlist');
+    }
+
+    // Remove from playlist
+    await prisma.playlistPodcast.delete({
+      where: { id: playlistPodcast.id },
+    });
+
+    return {
+      message: 'Podcast removed from playlist',
       playlistId,
       podcastId,
     };
