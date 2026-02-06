@@ -26,6 +26,7 @@ import subscriptionRouter from './modules/subscription/routes/subscription.route
 import { config } from 'dotenv';
 import { configureGoogleStrategy } from './modules/auth/strategies/google.strategy';
 import passport from 'passport';
+import playListRouter from './modules/playLists/routes/playlists.routes';
 
 // let swaggerSpec: any;
 
@@ -193,7 +194,8 @@ const createApp = (): Application => {
   app.use('/api/v1', practiceRouter);
   app.use('/api/v1', progressRouter);
   app.use('/api/v1', studySessionRouter);
-   app.use('/api/v1', podCastRouter);
+  app.use('/api/v1', podCastRouter);
+  app.use('/playlists', playListRouter);
 
   app.use(notFoundHandler);
   app.use(errorHandler);
