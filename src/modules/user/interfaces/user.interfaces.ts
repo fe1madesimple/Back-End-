@@ -1,6 +1,5 @@
 export interface UpdateProfileInput {
-  firstName?: string;
-  lastName?: string;
+  fullName?: string;
   profileColor?: string;
   targetExamDate?: string;
   dailyStudyGoal?: number;

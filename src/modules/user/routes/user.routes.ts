@@ -9,9 +9,6 @@ import { updateProfileSchema, updatePreferencesSchema, changePasswordSchema, del
 const userRouter = Router();
 
 
-
-
-
 /**
  * @swagger
  * tags:
@@ -59,7 +56,7 @@ userRouter.get('/profile', protect, getProfile);
  *     security:
  *       - bearerAuth: []
  *     description: |
- *       Update profile fields: name, color, exam date, study goal, focus subjects
+ *       Update profile fields: fullName, color, exam date, study goal, focus subjects
  *       
  *       **Frontend usage:**
  *       ```javascript
@@ -68,7 +65,7 @@ userRouter.get('/profile', protect, getProfile);
  *         credentials: 'include',
  *         headers: { 'Content-Type': 'application/json' },
  *         body: JSON.stringify({
- *           firstName: 'John',
+ *           fullName: 'John babatunde',
  *           targetExamDate: '2025-04-15T00:00:00.000Z',
  *           dailyStudyGoal: 3,
  *           focusSubjects: ['clp_subject_1', 'clp_subject_2']
@@ -81,12 +78,9 @@ userRouter.get('/profile', protect, getProfile);
  *           schema:
  *             type: object
  *             properties:
- *               firstName:
+ *               fullName:
  *                 type: string
  *                 example: John
- *               lastName:
- *                 type: string
- *                 example: Doe
  *               profileColor:
  *                 type: string
  *                 example: "#3B82F6"
@@ -196,12 +190,9 @@ userRouter.put('/preferences', protect, validate(updatePreferencesSchema), updat
  *         email:
  *           type: string
  *           example: user@example.com
- *         firstName:
+ *         fullName:
  *           type: string
  *           example: John
- *         lastName:
- *           type: string
- *           example: Doe
  *         role:
  *           type: string
  *           enum: [STUDENT, HOST, ADMIN]
@@ -269,8 +260,6 @@ userRouter.put('/preferences', protect, validate(updatePreferencesSchema), updat
  *       in: cookie
  *       name: accessToken
  */
-
-
 
 
 /**
@@ -397,8 +386,6 @@ userRouter.put('/preferences', protect, validate(updatePreferencesSchema), updat
 userRouter.post('/onboarding', protect, validate(completeOnboardingSchema), completeOnboarding);
 
 
-
-
 /**
  * @swagger
  * /api/v1/users/onboarding/skip:
@@ -490,7 +477,6 @@ userRouter.post('/onboarding', protect, validate(completeOnboardingSchema), comp
  *               $ref: '#/components/schemas/ErrorResponse'
  */
 userRouter.post('/onboarding/skip', protect, skipOnboarding);
-
 
 
 /**
@@ -684,8 +670,7 @@ userRouter.get('/onboarding/status', protect, getOnboardingStatus);
  *                 userData:
  *                   id: clp_user_123
  *                   email: user@example.com
- *                   firstName: John
- *                   lastName: Doe
+ *                   fullName: John Babatunde
  *                   subscription:
  *                     status: ACTIVE
  *                     planType: MONTHLY

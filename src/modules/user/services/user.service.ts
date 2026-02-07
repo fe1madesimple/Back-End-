@@ -45,7 +45,7 @@ class UserService {
       where: { id: userId },
       data: {
         ...input,
-        targetExamDate: input.targetExamDate ? new Date(input.targetExamDate) : undefined,
+        targetExamDate: input.targetExamDate ? new Date(input.targetExamDate) : undefined,   
       },
       select: {
         id: true,

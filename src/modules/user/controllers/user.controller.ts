@@ -7,7 +7,7 @@ import {
   UpdatePreferencesInput,
   ChangePasswordInput,
   DeleteAccountInput,
-} from '../interfaces/user.interfaces';
+} from '../interfaces/user.interfaces';   
 
 export const getProfile = asyncHandler(async (req: Request, res: Response) => {
   const userId = (req.user?.user as any).id;
