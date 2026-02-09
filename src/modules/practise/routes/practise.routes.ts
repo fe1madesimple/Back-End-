@@ -103,7 +103,7 @@ practiceRouter.get('/mixed-challenge', protect, getMixedChallenge);
  *     tags: [Past Questions]
  *     security:
  *       - bearerAuth: []
- *     description: |
+ *     description: |  
  *       Returns paginated list of past FE-1 exam essay questions with filtering options.
  *
  *       **USE CASE:**
@@ -294,19 +294,28 @@ practiceRouter.get(
 
 /**
  * @swagger
- * /api/v1/practice/quick-quiz/{moduleId}:
+ * /api/v1/practice/quick-quiz:
  *   get:
- *     summary: Get 5 random MCQ questions from module
+ *     summary: Get 5 random MCQ questions across all subjects
  *     tags: [Practice Quizzes]
  *     security:
  *       - bearerAuth: []
  *     description: |
- *       Returns 5 random multiple-choice questions from the specified module for quick practice.
+ *       Returns 5 random multiple-choice questions from across ALL subjects for quick practice.
  *
- *       **USE CASE:**
- *       - User completes a module and wants quick review
- *       - User clicks "Quick Quiz" button on module page
- *       - Frontend displays 5 random questions
+ *       **NO PARAMETERS NEEDED** - Just call the endpoint!
+ *
+ *       **USE CASES:**
+ *       - Daily quick quiz
+ *       - Warm-up before study session
+ *       - Quick knowledge check
+ *       - Break-time review
+ *
+ *       **QUESTION DISTRIBUTION:**
+ *       - Completely random across all subjects
+ *       - Could be 2 Criminal, 1 Contract, 1 Tort, 1 Company Law
+ *       - Changes every time endpoint is called
+ *       - Each question includes subject and module name
  *
  *       **RESPONSE STRUCTURE:**
  *       - Questions returned WITHOUT `correctAnswer` or `explanation`
@@ -315,17 +324,18 @@ practiceRouter.get(
  *
  *       **RANDOMIZATION:**
  *       - Questions selected randomly using SQL RANDOM()
- *       - Different questions each time user takes quiz
- *       - If module has <5 questions, returns all available
+ *       - Different questions each time
+ *       - If database has <5 questions total, returns all available
  *
  *       **FRONTEND FLOW:**
  *       ```javascript
- *       // 1. Fetch quiz
- *       const quiz = await fetch('/api/v1/practice/quick-quiz/MODULE_ID');
+ *       // 1. Fetch quiz (no parameters needed)
+ *       const quiz = await fetch('/api/v1/practice/quick-quiz');
  *
  *       // 2. Display questions one by one
  *       quiz.questions.forEach(question => {
- *         // Show question with 4 options (A, B, C, D)
+ *         // Show question with subject/module badge
+ *         // Example: [Criminal Law] Which case established...
  *       });
  *
  *       // 3. User selects answer
@@ -352,13 +362,6 @@ practiceRouter.get(
  *       - Maximum score: 5 points
  *       - Results tracked in QuestionAttempt table
  *
- *     parameters:
- *       - in: path
- *         name: moduleId
- *         required: true
- *         schema:
- *           type: string
- *         description: Module ID
  *     responses:
  *       200:
  *         description: Quick quiz retrieved successfully
@@ -376,15 +379,6 @@ practiceRouter.get(
  *                 data:
  *                   type: object
  *                   properties:
- *                     moduleId:
- *                       type: string
- *                       example: clx123abc
- *                     moduleName:
- *                       type: string
- *                       example: "Module 1: Foundations of Criminal Law"
- *                     subjectName:
- *                       type: string
- *                       example: Criminal Law
  *                     questions:
  *                       type: array
  *                       items:
@@ -395,23 +389,29 @@ practiceRouter.get(
  *                             example: clx456def
  *                           text:
  *                             type: string
- *                             example: Which of the following best describes recklessness?
+ *                             example: Which case established the neighbour principle?
  *                           options:
  *                             type: array
  *                             items:
  *                               type: string
- *                             example: ["A: Awareness of risk + unreasonable risk-taking", "B: Mistake in judgment", "C: Objective test", "D: Failure to exercise care"]
+ *                             example: ["A: Donoghue v Stevenson", "B: Carlill v Carbolic", "C: Salomon v Salomon", "D: Dunne v National Maternity Hospital"]
  *                           order:
  *                             type: integer
  *                             example: 1
+ *                           subject:
+ *                             type: string
+ *                             example: Tort Law
+ *                           module:
+ *                             type: string
+ *                             example: Module 1: Negligence Fundamentals
  *                     totalAvailable:
  *                       type: integer
- *                       example: 15
- *                       description: Total MCQ questions available in this module
+ *                       example: 250
+ *                       description: Total MCQ questions available in database
  *       404:
- *         description: Module not found or no questions available
+ *         description: No questions available
  */
-practiceRouter.get('/quick-quiz/:moduleId', protect, getQuickQuiz);
+practiceRouter.get('/quick-quiz', protect, getQuickQuiz);
 
 /**
  * @swagger

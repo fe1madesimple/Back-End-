@@ -11,8 +11,6 @@ import { QuickQuizResponse } from '../interface/practise.interface';
 
 
 class Practise {
-  // src/modules/content/service/content.service.ts
-
   async getQuickQuiz(): Promise<QuickQuizResponse> {
   // Get total question count across all subjects
   const totalCount = await prisma.question.count({
