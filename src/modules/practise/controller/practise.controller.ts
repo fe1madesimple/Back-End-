@@ -20,7 +20,7 @@ export const getQuickQuiz = asyncHandler(async (req: Request, res: Response) => 
 
 // src/modules/content/controller/content.controller.ts
 
-export const getTopicChallenge = asyncHandler(async (req: Request, res: Response) => {
+export const getMixedChallenge = asyncHandler(async (req: Request, res: Response) => {
   const { moduleId } = req.params;
 
   if (!moduleId) throw new AppError('module id needed');
@@ -32,7 +32,7 @@ export const getTopicChallenge = asyncHandler(async (req: Request, res: Response
 
 // src/modules/content/controller/content.controller.ts
 
-export const getMixedPractice = asyncHandler(async (req: Request, res: Response) => {
+export const getTopicPractice = asyncHandler(async (req: Request, res: Response) => {
   const { subjectId } = req.params;
 
   if (!subjectId) throw new AppError('subject id must be supplied');

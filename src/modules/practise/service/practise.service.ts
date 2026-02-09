@@ -153,7 +153,7 @@ class Practise {
     }
 
     // Get 15 random questions from all modules (or less if fewer available)
-    const limit = Math.min(15, totalCount);
+    const limit = Math.min(10, totalCount);
 
     const randomQuestions = await prisma.$queryRaw<
       Array<{

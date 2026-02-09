@@ -1,10 +1,15 @@
-import { Router } from "express";
-import { getQuickQuiz, getTopicChallenge, getMixedPractice, getPastQuestions, getPastQuestionById} from "../controller/practise.controller";
-import { protect } from "@/shared/middleware/auth.middleware";
-const practiceRouter = Router()
-import { validate } from "@/shared/middleware/validation";
-import { pastQuestionsQuerySchema } from "../validators/practise.validators";
-
+import { Router } from 'express';
+import {
+  getQuickQuiz,
+  getTopicPractice,
+  getMixedChallenge,
+  getPastQuestions,
+  getPastQuestionById,
+} from '../controller/practise.controller';
+import { protect } from '@/shared/middleware/auth.middleware';
+const practiceRouter = Router();
+import { validate } from '@/shared/middleware/validation';
+import { pastQuestionsQuerySchema } from '../validators/practise.validators';
 
 /**
  * @swagger
@@ -16,56 +21,56 @@ import { pastQuestionsQuerySchema } from "../validators/practise.validators";
  *       - bearerAuth: []
  *     description: |
  *       Returns 5 random multiple-choice questions from the specified module for quick practice.
- *       
+ *
  *       **USE CASE:**
  *       - User completes a module and wants quick review
  *       - User clicks "Quick Quiz" button on module page
  *       - Frontend displays 5 random questions
- *       
+ *
  *       **RESPONSE STRUCTURE:**
  *       - Questions returned WITHOUT `correctAnswer` or `explanation`
  *       - User must submit each answer via POST /questions/:id/attempt
  *       - Feedback shown after each submission
- *       
+ *
  *       **RANDOMIZATION:**
  *       - Questions selected randomly using SQL RANDOM()
  *       - Different questions each time user takes quiz
  *       - If module has <5 questions, returns all available
- *       
+ *
  *       **FRONTEND FLOW:**
  *       ```javascript
  *       // 1. Fetch quiz
  *       const quiz = await fetch('/api/v1/practice/quick-quiz/MODULE_ID');
- *       
+ *
  *       // 2. Display questions one by one
  *       quiz.questions.forEach(question => {
  *         // Show question with 4 options (A, B, C, D)
  *       });
- *       
+ *
  *       // 3. User selects answer
  *       const answer = 'A';
- *       
+ *
  *       // 4. Submit answer
  *       const result = await fetch(`/api/v1/questions/${question.id}/attempt`, {
  *         method: 'POST',
  *         body: JSON.stringify({ answer, timeTakenSeconds: 30 })
  *       });
- *       
+ *
  *       // 5. Show feedback (isCorrect, explanation)
  *       if (result.isCorrect) {
  *         showSuccess(result.explanation);
  *       } else {
  *         showError(result.correctAnswer, result.explanation);
  *       }
- *       
+ *
  *       // 6. Move to next question
  *       ```
- *       
+ *
  *       **SCORING:**
  *       - Each question worth 1 point
  *       - Maximum score: 5 points
  *       - Results tracked in QuestionAttempt table
- *       
+ *
  *     parameters:
  *       - in: path
  *         name: moduleId
@@ -125,11 +130,7 @@ import { pastQuestionsQuerySchema } from "../validators/practise.validators";
  *       404:
  *         description: Module not found or no questions available
  */
-practiceRouter.get(
-  '/practice/quick-quiz/:moduleId',
-  protect,
-  getQuickQuiz
-);
+practiceRouter.get('/practice/quick-quiz/:moduleId', protect, getQuickQuiz);
 
 
 /**
@@ -142,63 +143,63 @@ practiceRouter.get(
  *       - bearerAuth: []
  *     description: |
  *       Returns 10 random multiple-choice questions from the specified module for medium-length practice.
- *       
+ *
  *       **USE CASE:**
  *       - User wants deeper practice than Quick Quiz (5 questions)
  *       - User clicks "Topic Challenge" button on module page
  *       - Frontend displays 10 random questions
  *       - More comprehensive module review
- *       
+ *
  *       **DIFFERENCE FROM QUICK QUIZ:**
  *       - Quick Quiz: 5 questions (fast review)
  *       - Topic Challenge: 10 questions (deeper practice)
  *       - Mixed Practice: 15 questions (comprehensive, cross-module)
- *       
+ *
  *       **RESPONSE STRUCTURE:**
  *       - Questions returned WITHOUT `correctAnswer` or `explanation`
  *       - User must submit each answer via POST /questions/:id/attempt
  *       - Feedback shown after each submission
- *       
+ *
  *       **RANDOMIZATION:**
  *       - Questions selected randomly using SQL RANDOM()
  *       - Different questions each time user takes challenge
  *       - If module has <10 questions, returns all available
- *       
+ *
  *       **FRONTEND FLOW:**
  *       ```javascript
  *       // 1. Fetch challenge
  *       const challenge = await fetch('/api/v1/practice/topic-challenge/MODULE_ID');
- *       
+ *
  *       // 2. Display questions one by one
  *       let currentQuestion = 0;
  *       let score = 0;
- *       
+ *
  *       challenge.questions.forEach((question, index) => {
  *         // Show question number: "Question 3/10"
  *         // Show question with 4 options
  *       });
- *       
+ *
  *       // 3. User selects answer
  *       const answer = 'B';
  *       const startTime = Date.now();
- *       
+ *
  *       // 4. Submit answer
  *       const result = await fetch(`/api/v1/questions/${question.id}/attempt`, {
  *         method: 'POST',
- *         body: JSON.stringify({ 
+ *         body: JSON.stringify({
  *           answer,
  *           timeTakenSeconds: Math.floor((Date.now() - startTime) / 1000)
  *         })
  *       });
- *       
+ *
  *       // 5. Update score
  *       if (result.isCorrect) {
  *         score++;
  *       }
- *       
+ *
  *       // 6. Show feedback immediately
  *       showFeedback(result.isCorrect, result.explanation);
- *       
+ *
  *       // 7. Move to next question or show final results
  *       if (currentQuestion < 9) {
  *         currentQuestion++;
@@ -207,19 +208,19 @@ practiceRouter.get(
  *         showFinalScore(score, 10); // "You scored 7/10 (70%)"
  *       }
  *       ```
- *       
+ *
  *       **SCORING:**
  *       - Each question worth 1 point
  *       - Maximum score: 10 points
  *       - Results tracked in QuestionAttempt table
  *       - Show percentage: (score / 10) × 100
- *       
+ *
  *       **UI DISPLAY:**
  *       - Progress indicator: "Question 3/10"
  *       - Score tracker: "7/10 correct"
  *       - Timer (optional): Track total time taken
  *       - Final results screen with breakdown
- *       
+ *
  *     parameters:
  *       - in: path
  *         name: moduleId
@@ -279,92 +280,89 @@ practiceRouter.get(
  *       404:
  *         description: Module not found or no questions available
  */
-practiceRouter.get(
-  '/practice/topic-challenge/:moduleId',
-  protect,
-  getTopicChallenge
-);
+practiceRouter.get('/practice/topic-challenge/:moduleId', protect, getMixedChallenge);
+
 
 
 
 /**
  * @swagger
- * /api/v1/practice/mixed-practice/{subjectId}:
+ * /api/v1/practice/topic-challenge/{subjectId}:
  *   get:
- *     summary: Get 15 random MCQ questions from all modules in subject
+ *     summary: Get 10 random MCQ questions from all modules in subject
  *     tags: [Practice Quizzes]
  *     security:
  *       - bearerAuth: []
  *     description: |
  *       Returns 15 random multiple-choice questions from ALL modules in the subject for comprehensive cross-module practice.
- *       
+ *
  *       **USE CASE:**
  *       - User wants to practice across entire subject (all modules)
  *       - User preparing for full subject exam
  *       - User clicks "Mixed Practice" button on subject page
  *       - Questions come from different modules randomly
- *       
+ *
  *       **DIFFERENCE FROM OTHER QUIZZES:**
  *       - Quick Quiz: 5 questions from ONE module
  *       - Topic Challenge: 10 questions from ONE module
  *       - Mixed Practice: 15 questions from ALL modules (this endpoint)
- *       
+ *
  *       **CROSS-MODULE RANDOMIZATION:**
  *       - Questions randomly selected across all modules
  *       - Tests comprehensive subject knowledge
  *       - Each question shows which module it's from
  *       - If subject has <15 questions total, returns all available
- *       
+ *
  *       **RESPONSE STRUCTURE:**
  *       - Questions returned WITHOUT `correctAnswer` or `explanation`
  *       - User must submit each answer via POST /questions/:id/attempt
  *       - Feedback shown after each submission
  *       - Each question includes `moduleName` to show topic coverage
- *       
+ *
  *       **FRONTEND FLOW:**
  *       ```javascript
  *       // 1. Fetch mixed practice
  *       const practice = await fetch('/api/v1/practice/mixed-practice/SUBJECT_ID');
- *       
+ *
  *       // 2. Show practice info
  *       console.log(`${practice.questions.length} questions from ${practice.modulesIncluded} modules`);
  *       // "15 questions from 3 modules"
- *       
+ *
  *       // 3. Display questions one by one
  *       let currentQuestion = 0;
  *       let score = 0;
- *       
+ *
  *       practice.questions.forEach((question, index) => {
  *         // Show: "Question 8/15 - Module 2: Offences Against the Person"
  *         // Show question with 4 options
  *       });
- *       
+ *
  *       // 4. User selects answer
  *       const answer = 'C';
  *       const startTime = Date.now();
- *       
+ *
  *       // 5. Submit answer
  *       const result = await fetch(`/api/v1/questions/${question.id}/attempt`, {
  *         method: 'POST',
- *         body: JSON.stringify({ 
+ *         body: JSON.stringify({
  *           answer,
  *           timeTakenSeconds: Math.floor((Date.now() - startTime) / 1000)
  *         })
  *       });
- *       
+ *
  *       // 6. Update score and track by module
  *       if (result.isCorrect) {
  *         score++;
  *       }
- *       
+ *
  *       // Track performance by module
  *       moduleScores[question.moduleName] = moduleScores[question.moduleName] || { correct: 0, total: 0 };
  *       moduleScores[question.moduleName].total++;
  *       if (result.isCorrect) moduleScores[question.moduleName].correct++;
- *       
+ *
  *       // 7. Show feedback immediately
  *       showFeedback(result.isCorrect, result.explanation, question.moduleName);
- *       
+ *
  *       // 8. Move to next question or show final results
  *       if (currentQuestion < 14) {
  *         currentQuestion++;
@@ -378,27 +376,27 @@ practiceRouter.get(
  *         // "Module 3: 5/5 (100%)"
  *       }
  *       ```
- *       
+ *
  *       **SCORING:**
  *       - Each question worth 1 point
  *       - Maximum score: 15 points
  *       - Results tracked in QuestionAttempt table
  *       - Show overall percentage: (score / 15) × 100
  *       - Show breakdown by module
- *       
+ *
  *       **UI DISPLAY:**
  *       - Progress: "Question 8/15"
  *       - Module indicator: "Module 2: Offences Against the Person"
  *       - Score tracker: "11/15 correct (73%)"
  *       - Timer (optional): Total time taken
  *       - Final results with module breakdown
- *       
+ *
  *       **ANALYTICS VALUE:**
  *       This endpoint helps identify:
  *       - Which modules user is strong in
  *       - Which modules need more study
  *       - Overall subject readiness
- *       
+ *
  *     parameters:
  *       - in: path
  *         name: subjectId
@@ -463,11 +461,8 @@ practiceRouter.get(
  *       404:
  *         description: Subject not found or no questions available
  */
-practiceRouter.get(
-  '/practice/mixed-practice/:subjectId',
-  protect,
-  getMixedPractice
-);
+practiceRouter.get('/practice/topic-challenge/:subjectId', protect, getTopicPractice);
+
 
 
 /**
@@ -480,33 +475,33 @@ practiceRouter.get(
  *       - bearerAuth: []
  *     description: |
  *       Returns paginated list of past FE-1 exam essay questions with filtering options.
- *       
+ *
  *       **USE CASE:**
  *       - User wants to practice with real past exam questions
  *       - User clicks "Past Questions" in navigation
  *       - Frontend displays filterable list of questions
  *       - User can filter by subject, year, exam type
- *       
+ *
  *       **USED IN:** Past Questions page (Image feinten)
- *       
+ *
  *       **WHAT ARE PAST QUESTIONS:**
  *       - Real essay questions from previous FE-1 exams
  *       - Organized by year (2024, 2023, 2022, etc.)
  *       - Organized by subject (Criminal Law, Contract Law, etc.)
  *       - Type: Essay or Problem questions
  *       - NOT multiple choice (those are for practice only)
- *       
+ *
  *       **FILTERS PROVIDED:**
  *       Response includes available filter values for dropdowns:
  *       - All subjects that have past questions
  *       - All years that have past questions (sorted newest first)
  *       - All exam types (Essay, Problem)
- *       
+ *
  *       **PAGINATION:**
  *       - Default: 10 questions per page
  *       - Can be adjusted with `limit` parameter
  *       - Use `page` parameter to navigate
- *       
+ *
  *       **FRONTEND IMPLEMENTATION:**
  *       ```javascript
  *       // 1. Fetch past questions with filters
@@ -517,21 +512,21 @@ practiceRouter.get(
  *         page: 1,
  *         limit: 10
  *       };
- *       
+ *
  *       const queryString = new URLSearchParams(
  *         Object.entries(filters)
  *           .filter(([_, v]) => v !== undefined)
  *           .map(([k, v]) => [k, String(v)])
  *       ).toString();
- *       
+ *
  *       const response = await fetch(`/api/v1/past-questions?${queryString}`);
  *       const { data } = await response.json();
- *       
+ *
  *       // 2. Display filter dropdowns using data.filters
  *       const subjectDropdown = data.filters.subjects; // ["Criminal Law", "Contract Law", ...]
  *       const yearDropdown = data.filters.years; // [2024, 2023, 2022, ...]
  *       const typeDropdown = data.filters.examTypes; // ["Essay", "Problem"]
- *       
+ *
  *       // 3. Display questions as cards
  *       data.questions.forEach(question => {
  *         // Card showing:
@@ -539,15 +534,15 @@ practiceRouter.get(
  *         // "Discuss the elements of negligence with reference to..."
  *         // [View Question Button]
  *       });
- *       
+ *
  *       // 4. Pagination
  *       const totalPages = Math.ceil(data.total / filters.limit);
  *       // Show: "Page 1 of 5 (45 questions total)"
- *       
+ *
  *       // 5. Click question to view full details
  *       // Navigate to: /past-questions/:id (Endpoint 15)
  *       ```
- *       
+ *
  *       **CARD DISPLAY (per question) just an example o babtunde:**
  *       ```
  *       ┌─────────────────────────────────────────┐
@@ -559,12 +554,12 @@ practiceRouter.get(
  *       │ [View Question & Submit Answer] →       │
  *       └─────────────────────────────────────────┘
  *       ```
- *       
+ *
  *       **SORTING:**
  *       Questions sorted by:
  *       1. Year (newest first)
  *       2. Order (within same year)
- *       
+ *
  *     parameters:
  *       - in: query
  *         name: subject
@@ -667,8 +662,6 @@ practiceRouter.get(
   getPastQuestions
 );
 
-
-
 /**
  * @swagger
  * /api/v1/past-questions/{id}:
@@ -679,31 +672,31 @@ practiceRouter.get(
  *       - bearerAuth: []
  *     description: |
  *       Returns complete details of a past exam question including user's previous attempts.
- *       
+ *
  *       **USE CASE:**
  *       - User clicks on a past question from the list (Endpoint 14)
  *       - Frontend displays full question text
  *       - User can write essay answer
  *       - User can see their previous attempts with scores
- *       
+ *
  *       **RESPONSE INCLUDES:**
  *       - Full question text (essay prompt)
  *       - Year and subject
  *       - User's previous attempts at this question
  *       - Each attempt shows: answer text, AI score, band, app pass status
- *       
+ *
  *       **FRONTEND IMPLEMENTATION:**
  *       ```javascript
  *       // 1. Fetch question details
  *       const response = await fetch('/api/v1/past-questions/QUESTION_ID');
  *       const { question } = response.data;
- *       
+ *
  *       // 2. Display question header
  *       // "2024 Criminal Law Essay - Question 1"
- *       
+ *
  *       // 3. Display full question text
  *       document.getElementById('question-text').textContent = question.text;
- *       
+ *
  *       // 4. Show previous attempts (if any)
  *       if (question.userAttempts.length > 0) {
  *         // Display attempts history:
@@ -714,20 +707,20 @@ practiceRouter.get(
  *           // "App Pass: No"
  *           // [View Full Feedback] button
  *         });
- *         
+ *
  *         // Show: "You've attempted this question 2 times"
  *         // Show best score: "Best: 82/100 (App Pass)"
  *       }
- *       
+ *
  *       // 5. Show essay editor
  *       const editor = document.getElementById('essay-editor');
  *       // Textarea for user to write answer
- *       
+ *
  *       // 6. Submit button
  *       document.getElementById('submit-essay').addEventListener('click', async () => {
  *         const answer = editor.value;
  *         const startTime = performance.now();
- *         
+ *
  *         // Submit to Endpoint 10
  *         const result = await fetch(`/api/v1/essays/${question.id}/submit`, {
  *           method: 'POST',
@@ -736,12 +729,12 @@ practiceRouter.get(
  *             timeTakenSeconds: Math.floor((performance.now() - startTime) / 1000)
  *           })
  *         });
- *         
+ *
  *         // Show grading results
  *         displayGradingResults(result);
  *       });
  *       ```
- *       
+ *
  *       **PREVIOUS ATTEMPTS DISPLAY:**
  *       User can review their past answers and grades:
  *       ```
@@ -758,36 +751,36 @@ practiceRouter.get(
  *       │ App Pass: Yes                           │
  *       │ [View Full Answer & Feedback] →         │
  *       └─────────────────────────────────────────┘
- *       
+ *
  *       Best Score: 82/100 (App Pass)
  *       ```
- *       
+ *
  *       **ALLOW MULTIPLE ATTEMPTS:**
  *       - Students can attempt same question multiple times
  *       - Each attempt gets fresh AI grading
  *       - Useful for practice and improvement
  *       - Track progress over time
- *       
+ *
  *       **ESSAY SUBMISSION:**
  *       After user writes answer:
  *       - Click "Submit for AI Grading"
  *       - POST to /api/v1/essays/:id/submit (Endpoint 10)
  *       - Get comprehensive grading
  *       - New attempt added to history
- *       
+ *
  *       **WORD COUNT HELPER:**
  *       ```javascript
  *       editor.addEventListener('input', () => {
  *         const words = editor.value.trim().split(/\s+/).length;
  *         document.getElementById('word-count').textContent = `${words} words`;
- *         
+ *
  *         // Typical FE-1 essay: 800-1200 words
  *         if (words < 600) {
  *           showWarning('Essay may be too short (aim for 800-1200 words)');
  *         }
  *       });
  *       ```
- *       
+ *
  *     parameters:
  *       - in: path
  *         name: id
@@ -867,10 +860,6 @@ practiceRouter.get(
  *       400:
  *         description: Question is not a past question (no year assigned)
  */
-practiceRouter.get(
-  '/past-questions/:id',
-  protect,
-  getPastQuestionById
-);
+practiceRouter.get('/past-questions/:id', protect, getPastQuestionById);
 
-export default practiceRouter
+export default practiceRouter;
