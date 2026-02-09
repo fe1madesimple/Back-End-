@@ -2,12 +2,13 @@ import { prisma } from '@/shared/config';
 import { AppError, NotFoundError, BadRequestError} from '@/shared/utils';
 import {
   MixedPracticeResponse,
-  TopicChallengeResponse,
+  MixedChallengeResponse,
   PastQuestionsListResponse,
     PastQuestionsQuery,
   PastQuestionDetailResponse
 } from '../interface/practise.interface';
 import { QuickQuizResponse } from '../interface/practise.interface';
+
 
 class Practise {
   // src/modules/content/service/content.service.ts
@@ -69,62 +70,67 @@ class Practise {
     };
   }
 
-  async getTopicChallenge(moduleId: string): Promise<TopicChallengeResponse> {
-    // Verify module exists
-    const module = await prisma.module.findUnique({
-      where: { id: moduleId, isPublished: true },
-      include: {
-        subject: {
-          select: { name: true },
-        },
-      },
-    });
+  async getMixedChallenge(): Promise<MixedChallengeResponse> {
+  // Get total question count across all subjects
+  const totalCount = await prisma.question.count({
+    where: {
+      type: 'MCQ',
+    },
+  });
 
-    if (!module) {
-      throw new NotFoundError('Module not found');
-    }
+  if (totalCount === 0) {
+    throw new NotFoundError('No questions available');
+  }
 
-    // Get total question count
-    const totalCount = await prisma.question.count({
-      where: {
-        moduleId,
-        type: 'MCQ',
-        isPublished: true,
-      },
-    });
+  // Get 15 random questions 
+  const limit = Math.min(15, totalCount);
 
-    if (totalCount === 0) {
-      throw new NotFoundError('No questions available for this module');
-    }
-
-    // Get 10 random questions (or less if fewer available)
-    const limit = Math.min(10, totalCount);
-
-    const randomQuestions = await prisma.$queryRaw<
-      Array<{ id: string; text: string; options: string; order: number }>
-    >`
-    SELECT id, text, options, "order"
-    FROM questions
-    WHERE "moduleId" = ${moduleId}
-      AND type = 'MCQ'
-      AND "isPublished" = true
+  const randomQuestions = await prisma.$queryRaw<
+    Array<{
+      id: string;
+      text: string;
+      options: string;
+      order: number;
+      subjectName: string;
+      moduleName: string;
+    }>
+  >`
+    SELECT 
+      q.id, 
+      q.text, 
+      q.options, 
+      q."order",
+      s.name as "subjectName",
+      m.name as "moduleName"
+    FROM questions q
+    LEFT JOIN modules m ON q."moduleId" = m.id
+    LEFT JOIN subjects s ON m."subjectId" = s.id
+    WHERE q.type = 'MCQ'
     ORDER BY RANDOM()
     LIMIT ${limit}
-  `;
+  ` as Array<{
+    id: string;
+    text: string;
+    options: string;
+    order: number;
+    subjectName: string;
+    moduleName: string;
+  }>;
 
-    return {
-      moduleId: module.id,
-      moduleName: module.name,
-      subjectName: module.subject.name,
-      questions: randomQuestions.map((q) => ({
-        id: q.id,
-        text: q.text,
-        options: JSON.parse(q.options as string),
-        order: q.order,
-      })),
-      totalAvailable: totalCount,
-    };
-  }
+  return {
+    questions: randomQuestions.map((q) => ({
+      id: q.id,
+      text: q.text,
+      options: JSON.parse(q.options as string),
+      order: q.order,
+      subject: q.subjectName,
+      module: q.moduleName,
+    })),
+    totalAvailable: totalCount,
+  };
+}
+
+  
 
   async getMixedPractice(subjectId: string): Promise<MixedPracticeResponse> {
     // Verify subject exists

@@ -25,7 +25,7 @@ export const getMixedChallenge = asyncHandler(async (req: Request, res: Response
 
   if (!moduleId) throw new AppError('module id needed');
 
-  const challenge = await practiseService.getTopicChallenge(moduleId);
+  const challenge = await practiseService.getMixedChallenge(moduleId);
 
   sendSuccess(res, 'Topic challenge retrieved', challenge);
 });
