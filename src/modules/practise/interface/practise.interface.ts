@@ -1,17 +1,6 @@
 // src/modules/content/interface/content.interface.ts
 
-export interface QuickQuizResponse {
-  moduleId: string;
-  moduleName: string;
-  subjectName: string;
-  questions: {
-    id: string;
-    text: string;
-    options: string[];
-    order: number;
-  }[];
-  totalAvailable: number;
-}
+
 
 export interface TopicChallengeResponse {
   moduleId: string;
@@ -88,8 +77,20 @@ export interface MixedChallengeResponse {
     text: string;
     options: string[];
     order: number;
-    subject: string; 
-    module: string; 
+    subject: string;
+    module: string;
+  }>;
+  totalAvailable: number;
+}
+
+export interface QuickQuizResponse {
+  questions: Array<{
+    id: string;
+    text: string;
+    options: string[];
+    order: number;
+    subject: string;
+    module: string;
   }>;
   totalAvailable: number;
 }

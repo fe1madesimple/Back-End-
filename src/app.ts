@@ -188,11 +188,11 @@ const createApp = (): Application => {
   app.use('/api/v1/auth', authRouter);
   app.use('/api/v1/users', userRouter);
   app.use('/api/v1/subscription', subscriptionRouter);
+  app.use('/api/v1/practice', practiceRouter);
   app.use('/api/v1', subjectRouter);
   app.use('/api/v1', moduleRouter);
   app.use('/api/v1', lessonRouter);
   app.use('/api/v1', questionRouter);
-  app.use('/api/v1', practiceRouter);
   app.use('/api/v1', progressRouter);
   app.use('/api/v1', studySessionRouter);
   app.use('/api/v1', podCastRouter);
