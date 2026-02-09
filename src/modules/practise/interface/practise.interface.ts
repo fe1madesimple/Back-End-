@@ -1,7 +1,5 @@
 // src/modules/content/interface/content.interface.ts
 
-
-
 export interface TopicChallengeResponse {
   moduleId: string;
   moduleName: string;
