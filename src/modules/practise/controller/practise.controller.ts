@@ -20,14 +20,12 @@ export const getQuickQuiz = asyncHandler(async (req: Request, res: Response) => 
 
 // src/modules/content/controller/content.controller.ts
 
-export const getMixedChallenge = asyncHandler(async (req: Request, res: Response) => {
-  const { moduleId } = req.params;
-
-  if (!moduleId) throw new AppError('module id needed');
+export const getMixedChallenge = asyncHandler(async (_req: Request, res: Response) => {
 
   const challenge = await practiseService.getMixedChallenge();
 
-  sendSuccess(res, 'Topic challenge retrieved', challenge);
+  sendSuccess(res, 'mixed questions retrieved', challenge);
+  
 });
 
 // src/modules/content/controller/content.controller.ts
