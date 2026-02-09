@@ -1,5 +1,5 @@
 import { prisma } from '@/shared/config';
-import { AppError, NotFoundError, BadRequestError} from '@/shared/utils';
+import { NotFoundError, BadRequestError} from '@/shared/utils';
 import {
   MixedPracticeResponse,
   MixedChallengeResponse,
