@@ -26,7 +26,6 @@ export interface TopicChallengeResponse {
   totalAvailable: number;
 }
 
-
 export interface MixedPracticeResponse {
   subjectId: string;
   subjectName: string;
@@ -40,7 +39,6 @@ export interface MixedPracticeResponse {
   totalAvailable: number;
   modulesIncluded: number;
 }
-
 
 export interface PastQuestionsListResponse {
   questions: {
@@ -82,4 +80,16 @@ export interface PastQuestionDetailResponse {
     appPass: boolean | null;
     createdAt: Date;
   }[];
+}
+
+export interface MixedChallengeResponse {
+  questions: Array<{
+    id: string;
+    text: string;
+    options: string[];
+    order: number;
+    subject: string; 
+    module: string; 
+  }>;
+  totalAvailable: number;
 }
