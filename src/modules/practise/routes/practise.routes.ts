@@ -132,105 +132,43 @@ import { pastQuestionsQuerySchema } from '../validators/practise.validators';
  */
 practiceRouter.get('/practice/quick-quiz/:moduleId', protect, getQuickQuiz);
 
-
 /**
  * @swagger
- * /api/v1/practice/topic-challenge/{moduleId}:
+ * /practice/mixed-challenge:
  *   get:
- *     summary: Get 10 random MCQ questions from module for topic challenge
- *     tags: [Practice Quizzes]
+ *     summary: Get 15 random MCQ questions across all subjects
+ *     tags: [Practice]
  *     security:
  *       - bearerAuth: []
  *     description: |
- *       Returns 10 random multiple-choice questions from the specified module for medium-length practice.
+ *       Retrieves 15 randomized MCQ questions from across ALL subjects.
  *
- *       **USE CASE:**
- *       - User wants deeper practice than Quick Quiz (5 questions)
- *       - User clicks "Topic Challenge" button on module page
- *       - Frontend displays 10 random questions
- *       - More comprehensive module review
+ *       **NO PARAMETERS NEEDED** - Just call the endpoint!
  *
- *       **DIFFERENCE FROM QUICK QUIZ:**
- *       - Quick Quiz: 5 questions (fast review)
- *       - Topic Challenge: 10 questions (deeper practice)
- *       - Mixed Practice: 15 questions (comprehensive, cross-module)
+ *       **QUESTION DISTRIBUTION:**
+ *       - Completely random across all subjects
+ *       - Could be 3 Criminal, 5 Contract, 2 Tort, 4 Equity, 1 Company Law, etc.
+ *       - Changes every time endpoint is called
  *
- *       **RESPONSE STRUCTURE:**
- *       - Questions returned WITHOUT `correctAnswer` or `explanation`
- *       - User must submit each answer via POST /questions/:id/attempt
- *       - Feedback shown after each submission
+ *       **WHAT YOU GET:**
+ *       - 15 questions (or fewer if database has less)
+ *       - Each question includes subject and module name
+ *       - Questions are NOT grouped by subject
+ *       - Random order every time
  *
- *       **RANDOMIZATION:**
- *       - Questions selected randomly using SQL RANDOM()
- *       - Different questions each time user takes challenge
- *       - If module has <10 questions, returns all available
+ *       **USE CASES:**
+ *       - Daily challenge feature
+ *       - Quick mixed review
+ *       - Test knowledge across all subjects
+ *       - Warm-up before study session
  *
- *       **FRONTEND FLOW:**
- *       ```javascript
- *       // 1. Fetch challenge
- *       const challenge = await fetch('/api/v1/practice/topic-challenge/MODULE_ID');
- *
- *       // 2. Display questions one by one
- *       let currentQuestion = 0;
- *       let score = 0;
- *
- *       challenge.questions.forEach((question, index) => {
- *         // Show question number: "Question 3/10"
- *         // Show question with 4 options
- *       });
- *
- *       // 3. User selects answer
- *       const answer = 'B';
- *       const startTime = Date.now();
- *
- *       // 4. Submit answer
- *       const result = await fetch(`/api/v1/questions/${question.id}/attempt`, {
- *         method: 'POST',
- *         body: JSON.stringify({
- *           answer,
- *           timeTakenSeconds: Math.floor((Date.now() - startTime) / 1000)
- *         })
- *       });
- *
- *       // 5. Update score
- *       if (result.isCorrect) {
- *         score++;
- *       }
- *
- *       // 6. Show feedback immediately
- *       showFeedback(result.isCorrect, result.explanation);
- *
- *       // 7. Move to next question or show final results
- *       if (currentQuestion < 9) {
- *         currentQuestion++;
- *         showNextQuestion();
- *       } else {
- *         showFinalScore(score, 10); // "You scored 7/10 (70%)"
- *       }
- *       ```
- *
- *       **SCORING:**
- *       - Each question worth 1 point
- *       - Maximum score: 10 points
- *       - Results tracked in QuestionAttempt table
- *       - Show percentage: (score / 10) × 100
- *
- *       **UI DISPLAY:**
- *       - Progress indicator: "Question 3/10"
- *       - Score tracker: "7/10 correct"
- *       - Timer (optional): Track total time taken
- *       - Final results screen with breakdown
- *
- *     parameters:
- *       - in: path
- *         name: moduleId
- *         required: true
- *         schema:
- *           type: string
- *         description: Module ID
+ *       **FRONTEND DISPLAY:**
+ *       - Show subject/module tags on each question
+ *       - Allow filtering by subject after fetching (optional)
+ *       - Display progress: "Question 5 of 15"
  *     responses:
  *       200:
- *         description: Topic challenge retrieved successfully
+ *         description: Mixed challenge retrieved successfully
  *         content:
  *           application/json:
  *             schema:
@@ -241,19 +179,10 @@ practiceRouter.get('/practice/quick-quiz/:moduleId', protect, getQuickQuiz);
  *                   example: true
  *                 message:
  *                   type: string
- *                   example: Topic challenge retrieved
+ *                   example: Mixed challenge retrieved
  *                 data:
  *                   type: object
  *                   properties:
- *                     moduleId:
- *                       type: string
- *                       example: clx123abc
- *                     moduleName:
- *                       type: string
- *                       example: "Module 1: Foundations of Criminal Law"
- *                     subjectName:
- *                       type: string
- *                       example: Criminal Law
  *                     questions:
  *                       type: array
  *                       items:
@@ -261,7 +190,6 @@ practiceRouter.get('/practice/quick-quiz/:moduleId', protect, getQuickQuiz);
  *                         properties:
  *                           id:
  *                             type: string
- *                             example: clx456def
  *                           text:
  *                             type: string
  *                             example: Which case established the neighbour principle?
@@ -269,21 +197,24 @@ practiceRouter.get('/practice/quick-quiz/:moduleId', protect, getQuickQuiz);
  *                             type: array
  *                             items:
  *                               type: string
- *                             example: ["A: Donoghue v Stevenson", "B: Caparo v Dickman", "C: Bolton v Stone", "D: R v Cunningham"]
+ *                             example: ["A: Donoghue v Stevenson", "B: Carlill v Carbolic", "C: Salomon v Salomon", "D: Dunne v National Maternity Hospital"]
  *                           order:
  *                             type: integer
- *                             example: 3
+ *                             example: 1
+ *                           subject:
+ *                             type: string
+ *                             example: Tort Law
+ *                           module:
+ *                             type: string
+ *                             example: Module 1: Negligence Fundamentals
  *                     totalAvailable:
  *                       type: integer
- *                       example: 15
- *                       description: Total MCQ questions available in this module
+ *                       example: 250
+ *                       description: Total MCQ questions in database
  *       404:
- *         description: Module not found or no questions available
+ *         description: No questions available
  */
-practiceRouter.get('/practice/topic-challenge/:moduleId', protect, getMixedChallenge);
-
-
-
+practiceRouter.get('/mixed-challenge', protect, getMixedChallenge);
 
 /**
  * @swagger
@@ -462,8 +393,6 @@ practiceRouter.get('/practice/topic-challenge/:moduleId', protect, getMixedChall
  *         description: Subject not found or no questions available
  */
 practiceRouter.get('/practice/topic-challenge/:subjectId', protect, getTopicPractice);
-
-
 
 /**
  * @swagger
