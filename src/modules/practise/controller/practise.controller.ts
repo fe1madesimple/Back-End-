@@ -8,16 +8,11 @@ import { PastQuestionsQuery } from '../interface/practise.interface';
 
 // src/modules/content/controller/content.controller.ts
 
-export const getQuickQuiz = asyncHandler(async (req: Request, res: Response) => {
-  const { moduleId } = req.params;
-
-  if (!moduleId) throw new AppError('module id must be supplied');
-
-  const quiz = await practiseService.getQuickQuiz(moduleId);
+export const getQuickQuiz = asyncHandler(async (_req: Request, res: Response) => {
+  const quiz = await practiseService.getQuickQuiz();
 
   sendSuccess(res, 'Quick quiz retrieved', quiz);
 });
-
 // src/modules/content/controller/content.controller.ts
 
 export const getMixedChallenge = asyncHandler(async (_req: Request, res: Response) => {
@@ -25,7 +20,7 @@ export const getMixedChallenge = asyncHandler(async (_req: Request, res: Respons
   const challenge = await practiseService.getMixedChallenge();
 
   sendSuccess(res, 'mixed questions retrieved', challenge);
-  
+
 });
 
 // src/modules/content/controller/content.controller.ts
