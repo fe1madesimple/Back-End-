@@ -427,7 +427,7 @@ class Practise {
       };
     }
 
-    const avgTimePerQuestion =
+    const avgTimerPerQuestion =
       session.attempts.length > 0
         ? Math.round(session.totalTimeSeconds / session.attempts.length)
         : 0;
@@ -459,7 +459,7 @@ class Practise {
       }
     }
 
-    await this.updateUserQuizStats(userId, percentage);
+    await this.updateUserQuizStats(userId);
 
     return {
       score: {
@@ -472,13 +472,9 @@ class Practise {
       badge,
       performance: {
         accuracyRate: percentage,
-        avgTimePerQuestion,
+        avgTimerPerQuestion,
         quizStreak,
-      },
-      actions: {
-        tryAgain: true,
-        nextQuiz: true,
-      },
+      }
     };
   }
 }
