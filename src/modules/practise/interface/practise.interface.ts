@@ -25,16 +25,30 @@ export interface MixedPracticeResponse {
   modulesIncluded: number;
 }
 
+export interface PastQuestionsQuery {
+  search?: string; 
+  subject?: string;
+  year?: number;
+  examType?: string;
+  page?: number;
+  limit?: number;
+}
+
 export interface PastQuestionsListResponse {
-  questions: {
+  questions: Array<{
     id: string;
     text: string;
     year: number;
     subject: string;
     examType: string;
     order: number;
-  }[];
-  total: number;
+  }>;
+  pagination: {
+    total: number;
+    page: number;
+    limit: number;
+    totalPages: number;
+  };
   filters: {
     subjects: string[];
     years: number[];
@@ -42,13 +56,7 @@ export interface PastQuestionsListResponse {
   };
 }
 
-export interface PastQuestionsQuery {
-  subject?: string;
-  year?: number;
-  examType?: string;
-  page?: number;
-  limit?: number;
-}
+
 
 export interface PastQuestionDetailResponse {
   id: string;
@@ -66,6 +74,8 @@ export interface PastQuestionDetailResponse {
     createdAt: Date;
   }[];
 }
+
+
 
 export interface MixedChallengeResponse {
   questions: Array<{
