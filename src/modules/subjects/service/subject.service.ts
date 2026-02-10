@@ -105,12 +105,28 @@ export class SubjectService {
           attempts.length
         : 0;
 
+    const userProgress = subject.userProgress[0];
+
     return {
       id: subject.id,
       name: subject.name,
       slug: subject.slug,
       description: subject.description,
-      progress: subject.userProgress[0] || null,
+      color: subject.color,
+      progressColor: subject.progressColor, 
+      progress: userProgress
+        ? {
+            progressPercent: userProgress.progressPercent,
+            status: userProgress.status,
+            totalTimeSeconds: userProgress.totalTimeSeconds,
+            lastAccessedAt: userProgress.lastAccessedAt,
+          }
+        : {
+            progressPercent: 0, 
+            status: 'NOT_STARTED',
+            totalTimeSeconds: 0,
+            lastAccessedAt: null,
+          },
       modules: subject.modules.map((module) => ({
         id: module.id,
         name: module.name,
