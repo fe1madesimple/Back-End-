@@ -34,11 +34,12 @@ export const attemptQuestion = asyncHandler(async (req: Request, res: Response):
 export const submitEssay = asyncHandler(async (req: Request, res: Response) => {
   const userId = req.user!.user.id;
   const { id } = req.params;
-    const { answer, timeTakenSeconds } = req.body;
-    
-    if (!id) throw new AppError("essay question id must be provided")
+  const { answer, timeTakenSeconds } = req.body;
+
+  if (!id) throw new AppError('essay question id must be provided');
 
   const result = await questionsService.submitEssay(userId, id, answer, timeTakenSeconds);
 
   sendSuccess(res, 'Essay graded successfully', { result });
 });
+

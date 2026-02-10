@@ -1,14 +1,14 @@
 import { prisma } from '@/shared/config';
-import { NotFoundError, BadRequestError} from '@/shared/utils';
+import { NotFoundError, BadRequestError } from '@/shared/utils';
 import {
   MixedPracticeResponse,
   MixedChallengeResponse,
   PastQuestionsListResponse,
-    PastQuestionsQuery,
-  PastQuestionDetailResponse
+  PastQuestionsQuery,
+  PastQuestionDetailResponse,
+  QuizResultsResponse
 } from '../interface/practise.interface';
 import { QuickQuizResponse } from '../interface/practise.interface';
-
 
 class Practise {
   async getQuickQuiz(): Promise<QuickQuizResponse> {
@@ -219,13 +219,12 @@ class Practise {
       where.examType = examType;
     }
 
-    
     if (search) {
       where.OR = [
         {
           text: {
             contains: search,
-            mode: 'insensitive', 
+            mode: 'insensitive',
           },
         },
         {
@@ -348,6 +347,106 @@ class Practise {
         appPass: attempt.appPass,
         createdAt: attempt.createdAt,
       })),
+    };
+  }
+
+  async getQuizResults(userId: string, attemptIds: string[]): Promise<QuizResultsResponse> {
+    const attempts = await prisma.questionAttempt.findMany({
+      where: {
+        id: { in: attemptIds },
+        userId,
+      },
+      select: {
+        isCorrect: true,
+        timeTakenSeconds: true,
+        createdAt: true,
+      },
+    });
+
+    const total = attempts.length;
+    const correct = attempts.filter((a) => a.isCorrect).length; // ← FIXED
+    const percentage = Math.round((correct / total) * 100);
+
+    let message = '';
+    if (percentage <= 20) {
+      message = 'Every expert was once a beginner!';
+    } else if (percentage <= 40) {
+      message = "Don't worry - practice makes perfect!";
+    } else if (percentage <= 60) {
+      message = 'Good effort!';
+    } else if (percentage < 100) {
+      message = 'Congratulation!';
+    } else {
+      message = 'Congratulation!';
+    }
+
+    let badge = null;
+    if (percentage === 100) {
+      badge = {
+        unlocked: true,
+        title: 'Perfect Score!',
+        description: 'You answered all questions correctly. Keep this momentum going!',
+      };
+    }
+
+    const avgTimePerQuestion =
+      attempts.length > 0
+        ? Math.round(
+            attempts.reduce((sum, a) => sum + (a.timeTakenSeconds || 0), 0) / attempts.length
+          )
+        : 0;
+
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const sevenDaysAgo = new Date(today);
+    sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+
+    const last7DaysAttempts = await prisma.questionAttempt.findMany({
+      where: {
+        userId,
+        createdAt: { gte: sevenDaysAgo },
+      },
+      select: { createdAt: true },
+      orderBy: { createdAt: 'asc' },
+    });
+
+    const dailyActivity = new Map<string, boolean>();
+    last7DaysAttempts.forEach((attempt) => {
+      const dateKey = attempt.createdAt.toISOString().split('T')[0];
+      if (dateKey) {
+        dailyActivity.set(dateKey, true);
+      }
+    });
+
+    let quizStreak = 0;
+    for (let i = 0; i < 7; i++) {
+      const date = new Date(today);
+      date.setDate(date.getDate() - i);
+      const dateKey = date.toISOString().split('T')[0];
+      if (dateKey && dailyActivity.has(dateKey)) {
+        quizStreak++;
+      } else {
+        break;
+      }
+    }
+
+    return {
+      score: {
+        correct,
+        total,
+        percentage,
+      },
+      message,
+      badge,
+      performance: {
+        accuracyRate: percentage,
+        avgTimePerQuestion,
+        quizStreak,
+      },
+      actions: {
+        tryAgain: true,
+        nextQuiz: true,
+      },
     };
   }
 }
