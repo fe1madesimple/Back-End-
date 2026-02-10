@@ -4,7 +4,6 @@ import { asyncHandler } from '@/shared/utils';
 import practiseService from '../service/practise.service';
 import { sendSuccess } from '@/shared/utils';
 import { PastQuestionsQuery } from '../interface/practise.interface';
-   
 
 // src/modules/content/controller/content.controller.ts
 
@@ -16,11 +15,9 @@ export const getQuickQuiz = asyncHandler(async (_req: Request, res: Response) =>
 // src/modules/content/controller/content.controller.ts
 
 export const getMixedChallenge = asyncHandler(async (_req: Request, res: Response) => {
-
   const challenge = await practiseService.getMixedChallenge();
 
   sendSuccess(res, 'mixed questions retrieved', challenge);
-
 });
 
 // src/modules/content/controller/content.controller.ts
@@ -37,11 +34,11 @@ export const getTopicPractice = asyncHandler(async (req: Request, res: Response)
 
 export const getPastQuestions = asyncHandler(async (req: Request, res: Response) => {
   const query: PastQuestionsQuery = {
-    subject: req.query.subject as string | undefined,
-    year: req.query.year ? parseInt(req.query.year as string) : undefined,
+    search: req.query.search as string | undefined, 
+    year: req.query.year as number | undefined, 
     examType: req.query.examType as string | undefined,
-    page: req.query.page ? parseInt(req.query.page as string) : 1,
-    limit: req.query.limit ? parseInt(req.query.limit as string) : 10,
+    page: req.query.page as number | undefined, 
+    limit: req.query.limit as number | undefined,
   };
 
   const result = await practiseService.getPastQuestions(query);
@@ -50,13 +47,11 @@ export const getPastQuestions = asyncHandler(async (req: Request, res: Response)
 });
 
 
-// src/modules/content/controller/content.controller.ts
-
 export const getPastQuestionById = asyncHandler(async (req: Request, res: Response) => {
   const userId = req.user!.user.id;
-    const { id } = req.params;
-    
-    if (!id) throw new AppError("past question id must be supplied")
+  const { id } = req.params;
+
+  if (!id) throw new AppError('past question id must be supplied');
 
   const question = await practiseService.getPastQuestionById(id, userId);
 
