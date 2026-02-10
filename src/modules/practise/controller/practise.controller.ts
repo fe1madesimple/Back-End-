@@ -20,15 +20,20 @@ export const getMixedChallenge = asyncHandler(async (req: Request, res: Response
 
   sendSuccess(res, 'Questions retrieved successfully', result);
 });
-export const getTopicPractice = asyncHandler(async (req: Request, res: Response) => {
+
+
+export const getTopicChallenge = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
   const { subjectId } = req.params;
 
-  if (!subjectId) throw new AppError('subject id must be supplied');
+  if (!subjectId) throw new AppError("subject")
 
-  const practice = await practiseService.getMixedPractice(subjectId);
+  const result = await practiseService.getTopicChallenge(userId, subjectId);
 
-  sendSuccess(res, 'Mixed practice retrieved', practice);
+  sendSuccess(res, 'Questions retrieved successfully', result);
 });
+
+
 
 export const getPastQuestions = asyncHandler(async (req: Request, res: Response) => {
   const query: PastQuestionsQuery = {
