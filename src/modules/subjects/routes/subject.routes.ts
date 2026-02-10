@@ -88,7 +88,7 @@ const subjectRouter = Router();
  *                                 nullable: true
  *                                 example: "2026-02-10T14:30:00Z"
  */
-subjectRouter.get('/subjects', protect, getSubjects);
+subjectRouter.get('/', protect, getSubjects);
 
 
 /**
@@ -212,7 +212,7 @@ subjectRouter.get('/subjects', protect, getSubjects);
  *       404:
  *         description: Subject not found
  */
-subjectRouter.get('/subjects/:id', protect, getSubjectById);
+subjectRouter.get('/:id', protect, getSubjectById);
 
 
 
@@ -281,6 +281,6 @@ subjectRouter.get('/subjects/:id', protect, getSubjectById);
  *                         enum: [NOT_STARTED, IN_PROGRESS, COMPLETED]
  *                         example: IN_PROGRESS
  */
-subjectRouter.get('/subjects/:subjectId/modules', protect, getModulesBySubject);
+subjectRouter.get('/:subjectId/modules', protect, getModulesBySubject);
 
 export default subjectRouter;  
