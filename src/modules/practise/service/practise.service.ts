@@ -12,30 +12,30 @@ import { QuickQuizResponse } from '../interface/practise.interface';
 
 class Practise {
   async getQuickQuiz(): Promise<QuickQuizResponse> {
-  // Get total question count across all subjects
-  const totalCount = await prisma.question.count({
-    where: {
-      type: 'MCQ',
-    },
-  });
+    // Get total question count across all subjects
+    const totalCount = await prisma.question.count({
+      where: {
+        type: 'MCQ',
+      },
+    });
 
-  if (totalCount === 0) {
-    throw new NotFoundError('No questions available');
-  }
+    if (totalCount === 0) {
+      throw new NotFoundError('No questions available');
+    }
 
-  // Get 5 random questions (or less if fewer available)
-  const limit = Math.min(5, totalCount);
+    // Get 5 random questions (or less if fewer available)
+    const limit = Math.min(5, totalCount);
 
-  const randomQuestions = await prisma.$queryRaw<
-    Array<{
-      id: string;
-      text: string;
-      options: string;
-      order: number;
-      subjectName: string;
-      moduleName: string;
-    }>
-  >`
+    const randomQuestions = (await prisma.$queryRaw<
+      Array<{
+        id: string;
+        text: string;
+        options: string;
+        order: number;
+        subjectName: string;
+        moduleName: string;
+      }>
+    >`
     SELECT 
       q.id, 
       q.text, 
@@ -49,53 +49,53 @@ class Practise {
     WHERE q.type = 'MCQ'
     ORDER BY RANDOM()
     LIMIT ${limit}
-  ` as Array<{
-    id: string;
-    text: string;
-    options: string;
-    order: number;
-    subjectName: string;
-    moduleName: string;
-  }>;
+  `) as Array<{
+      id: string;
+      text: string;
+      options: string;
+      order: number;
+      subjectName: string;
+      moduleName: string;
+    }>;
 
-  return {
-    questions: randomQuestions.map((q) => ({
-      id: q.id,
-      text: q.text,
-      options: JSON.parse(q.options),
-      order: q.order,
-      subject: q.subjectName,
-      module: q.moduleName,
-    })),
-    totalAvailable: totalCount,
-  };
-}
+    return {
+      questions: randomQuestions.map((q) => ({
+        id: q.id,
+        text: q.text,
+        options: JSON.parse(q.options),
+        order: q.order,
+        subject: q.subjectName,
+        module: q.moduleName,
+      })),
+      totalAvailable: totalCount,
+    };
+  }
 
   async getMixedChallenge(): Promise<MixedChallengeResponse> {
-  // Get total question count across all subjects
-  const totalCount = await prisma.question.count({
-    where: {
-      type: 'MCQ',
-    },
-  });
+    // Get total question count across all subjects
+    const totalCount = await prisma.question.count({
+      where: {
+        type: 'MCQ',
+      },
+    });
 
-  if (totalCount === 0) {
-    throw new NotFoundError('No questions available');
-  }
+    if (totalCount === 0) {
+      throw new NotFoundError('No questions available');
+    }
 
-  // Get 15 random questions 
-  const limit = Math.min(15, totalCount);
+    // Get 15 random questions
+    const limit = Math.min(15, totalCount);
 
-  const randomQuestions = await prisma.$queryRaw<
-    Array<{
-      id: string;
-      text: string;
-      options: string;
-      order: number;
-      subjectName: string;
-      moduleName: string;
-    }>
-  >`
+    const randomQuestions = (await prisma.$queryRaw<
+      Array<{
+        id: string;
+        text: string;
+        options: string;
+        order: number;
+        subjectName: string;
+        moduleName: string;
+      }>
+    >`
     SELECT 
       q.id, 
       q.text, 
@@ -109,29 +109,27 @@ class Practise {
     WHERE q.type = 'MCQ'
     ORDER BY RANDOM()
     LIMIT ${limit}
-  ` as Array<{
-    id: string;
-    text: string;
-    options: string;
-    order: number;
-    subjectName: string;
-    moduleName: string;
-  }>;
+  `) as Array<{
+      id: string;
+      text: string;
+      options: string;
+      order: number;
+      subjectName: string;
+      moduleName: string;
+    }>;
 
-  return {
-    questions: randomQuestions.map((q) => ({
-      id: q.id,
-      text: q.text,
-      options: JSON.parse(q.options as string),
-      order: q.order,
-      subject: q.subjectName,
-      module: q.moduleName,
-    })),
-    totalAvailable: totalCount,
-  };
-}
-
-  
+    return {
+      questions: randomQuestions.map((q) => ({
+        id: q.id,
+        text: q.text,
+        options: JSON.parse(q.options as string),
+        order: q.order,
+        subject: q.subjectName,
+        module: q.moduleName,
+      })),
+      totalAvailable: totalCount,
+    };
+  }
 
   async getMixedPractice(subjectId: string): Promise<MixedPracticeResponse> {
     // Verify subject exists
@@ -201,12 +199,11 @@ class Practise {
   }
 
   async getPastQuestions(query: PastQuestionsQuery): Promise<PastQuestionsListResponse> {
-    const { subject, year, examType, page = 1, limit = 10 } = query;
+    const { search, subject, year, examType, page = 1, limit = 9 } = query;
 
     // Build filter conditions
     const where: any = {
       type: 'ESSAY',
-      isPublished: true,
       year: { not: null }, // Only past questions have year
     };
 
@@ -220,6 +217,24 @@ class Practise {
 
     if (examType) {
       where.examType = examType;
+    }
+
+    
+    if (search) {
+      where.OR = [
+        {
+          text: {
+            contains: search,
+            mode: 'insensitive', 
+          },
+        },
+        {
+          subject: {
+            contains: search,
+            mode: 'insensitive',
+          },
+        },
+      ];
     }
 
     // Get total count
@@ -246,7 +261,6 @@ class Practise {
     const allPastQuestions = await prisma.question.findMany({
       where: {
         type: 'ESSAY',
-        isPublished: true,
         year: { not: null },
       },
       select: {
@@ -271,7 +285,12 @@ class Practise {
         examType: q.examType!,
         order: q.order,
       })),
-      total,
+      pagination: {
+        total,
+        page,
+        limit,
+        totalPages: Math.ceil(total / limit),
+      },
       filters: {
         subjects: subjects as string[],
         years: years as number[],
@@ -284,7 +303,6 @@ class Practise {
     questionId: string,
     userId: string
   ): Promise<PastQuestionDetailResponse> {
-      
     const question = await prisma.question.findUnique({
       where: {
         id: questionId,
