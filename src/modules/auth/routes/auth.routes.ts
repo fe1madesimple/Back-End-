@@ -38,29 +38,12 @@ const authRouter = Router()
  */
 
 
-
 /**
  * @swagger
  * /api/v1/auth/register:
  *   post:
  *     summary: Register a new user
  *     tags: [Authentication]
- *     description: |
- *       Creates a new user account and sends a 4-digit verification code to the provided email.
- *       
- *       **What happens:**
- *       - User account is created (email NOT verified yet)
- *       - Password is securely hashed (bcrypt)
- *       - 4-digit verification code is generated (expires in 10 minutes)
- *       - Verification email is sent to the user
- *       - User must verify email before accessing the platform
- *       
- *       **Important notes:**
- *       - Email must be unique
- *       - Password must be at least 8 characters with uppercase, lowercase, and number
- *       - Verification code expires in 10 minutes
- *       - User cannot login until email is verified
- *       - NO cookies or tokens are set (only after email verification)
  *     requestBody:
  *       required: true
  *       content:
@@ -71,12 +54,12 @@ const authRouter = Router()
  *               - email
  *               - password
  *               - fullName
+ *               - dailyStudyGoal
  *             properties:
  *               email:
  *                 type: string
  *                 format: email
- *                 example: student@example.com
- *                 description: Must be a valid email address
+ *                 example: john@example.com
  *               password:
  *                 type: string
  *                 format: password
@@ -87,76 +70,15 @@ const authRouter = Router()
  *                 type: string
  *                 minLength: 2
  *                 example: John Doe
- *                 description: User's full name
+ *               dailyStudyGoal:
+ *                 type: string
+ *                 example: "3"
+ *                 description: Daily study goal in hours (1-12). Sent as string, stored as number.
  *     responses:
  *       201:
- *         description: User registered successfully, verification code sent
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 success:
- *                   type: boolean
- *                   example: true
- *                 message:
- *                   type: string
- *                   example: Verification code sent to your email
- *             example:
- *               success: true
- *               message: Verification code sent to your email
+ *         description: Verification code sent successfully
  *       400:
- *         description: Bad request - Validation error or user already exists
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               required:
- *                 - success
- *                 - message
- *               properties:
- *                 success:
- *                   type: boolean
- *                   example: false
- *                 message:
- *                   type: string
- *                   example: Validation failed
- *                 errors:
- *                   type: array
- *                   description: Detailed validation errors (only present for validation failures)
- *                   items:
- *                     type: object
- *                     properties:
- *                       field:
- *                         type: string
- *                         example: password
- *                       message:
- *                         type: string
- *                         example: Password must contain at least one uppercase letter
- *             examples:
- *               emailExists:
- *                 summary: Email already registered
- *                 value:
- *                   success: false
- *                   message: User with this email already exists
- *               validationError:
- *                 summary: Invalid input data
- *                 value:
- *                   success: false
- *                   message: Validation failed
- *                   errors:
- *                     - field: email
- *                       message: Please provide a valid email address
- *                     - field: password
- *                       message: Password must be at least 8 characters
- *               missingFields:
- *                 summary: Required fields missing
- *                 value:
- *                   success: false
- *                   message: Validation failed
- *                   errors:
- *                     - field: fullName
- *                       message: fullName is required
+ *         description: Validation error or user already exists
  */
 authRouter.post("/register", validate(registerSchema), register)
 
