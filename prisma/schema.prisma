@@ -15,52 +15,46 @@ datasource db {
 // ===========================================
 
 model User {
-  id       String   @id @default(cuid())
-  email    String   @unique
-  password String? // Nullable for OAuth users
-  fullName String?
-  role     UserRole @default(STUDENT)
+  id           String   @id @default(cuid())
+  email        String   @unique
+  password     String?
+  fullName     String?
+  role         UserRole @default(STUDENT)
+  profileColor String   @default("#3B82F6")
 
-  // Profile
-  profileColor String @default("#3B82F6") // Hex color for avatar
-
-  // OAuth
   googleId String? @unique
 
-  // Email verification (4 digit code)
   isEmailVerified          Boolean   @default(false)
-  emailVerificationCode    String? // 4-digit code
+  emailVerificationCode    String?
   emailVerificationExpires DateTime?
 
-  // Password reset
   passwordResetCode    String?
   passwordResetExpires DateTime?
 
-  // User preferences (from Edit Profile screen)
   targetExamDate DateTime?
-  dailyStudyGoal Int       @default(3) // Hours per day
-  focusSubjects  String[] // Array of subject IDs user wants to focus on
+  dailyStudyGoal Int       @default(3)
+  focusSubjects  String[]
 
   verificationFailedAttempts Int       @default(0)
   verificationLockedUntil    DateTime?
 
-  // Onboarding tracking
   hasCompletedOnboarding Boolean   @default(false)
   onboardingSkipped      Boolean   @default(false)
   onboardingCompletedAt  DateTime?
 
-  // Preferences (from Preferences screen)
   emailReminders         Boolean @default(true)
   studyStreakAlerts      Boolean @default(true)
   podcastRecommendations Boolean @default(true)
   showRelevantEpisodes   Boolean @default(true)
 
-  // Timestamps
+  averageQuizScore Int @default(0)
+  highestQuizScore Int @default(0)
+  lowestQuizScore  Int @default(0)
+
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
   lastLoginAt DateTime?
 
-  // Relations
   subscription  Subscription?
   payments      Payment[]
   timedSessions TimedSession[]
@@ -77,12 +71,55 @@ model User {
   studySessions    StudySession[]
   podcastProgress  UserPodcastProgress[]
   playlists        Playlist[]
+  quizSessions     QuizSession[]
 
   @@index([email])
   @@index([googleId])
   @@index([createdAt])
   @@index([hasCompletedOnboarding])
   @@map("users")
+}
+
+
+model QuizSession {
+  id                String   @id @default(cuid())
+  userId            String
+  quizType          String
+  totalQuestions    Int
+  questionsAnswered Int      @default(0)
+  correctAnswers    Int      @default(0)
+  totalTimeSeconds  Int      @default(0)
+  isCompleted       Boolean  @default(false)
+  completedAt       DateTime?
+  createdAt         DateTime @default(now())
+  
+  user     User               @relation(fields: [userId], references: [id])
+  attempts QuestionAttempt[]
+  
+  @@index([userId])
+  @@index([isCompleted])
+  @@map("quiz_sessions")
+}
+
+
+model QuestionAttempt {
+  id               String   @id @default(cuid())
+  userId           String
+  questionId       String
+  quizSessionId    String?
+  answer           String
+  isCorrect        Boolean?
+  pointsEarned     Int      @default(0)
+  timeTakenSeconds Int?
+  createdAt        DateTime @default(now())
+  
+  user        User         @relation(fields: [userId], references: [id])
+  question    Question     @relation(fields: [questionId], references: [id])
+  quizSession QuizSession? @relation(fields: [quizSessionId], references: [id])
+  
+  @@index([userId])
+  @@index([quizSessionId])
+  @@map("question_attempts")
 }
 
 enum UserRole {
@@ -287,7 +324,7 @@ model AIEvaluation {
 model CaseBrief {
   id           String           @id @default(cuid())
   caseName     String // "Donoghue v Stevenson"
-  citation     String  @unique// "[1932] AC 562"
+  citation     String           @unique // "[1932] AC 562"
   year         Int
   court        String // "House of Lords"
   jurisdiction CaseJurisdiction @default(IRISH_SUPREME_COURT)
@@ -631,15 +668,15 @@ model UserSubjectProgress {
 }
 
 model Subject {
-  id          String  @id @default(cuid())
-  name        String  @unique
-  slug        String  @unique
-  description String? @db.Text
-  icon        String? // Icon identifier
-  color       String  @default("#000000") // Subject color
-  progressColor String @default("#000000") // Progress bar color
-  order       Int // Display order
-  isPublished Boolean @default(true)
+  id            String  @id @default(cuid())
+  name          String  @unique
+  slug          String  @unique
+  description   String? @db.Text
+  icon          String? // Icon identifier
+  color         String  @default("#000000") // Subject color
+  progressColor String  @default("#000000") // Progress bar color
+  order         Int // Display order
+  isPublished   Boolean @default(true)
 
   modules      Module[]
   userProgress UserSubjectProgress[]
