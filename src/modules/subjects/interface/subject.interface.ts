@@ -5,13 +5,15 @@ export interface SubjectDetail {
   name: string;
   slug: string;
   description: string | null;
+  color: string;                    // ← Added
+  progressColor: string;            // ← Added
   progress: {
-    progressPercent: number;
+    progressPercent: number;        // ← Now always number (0 if no progress)
     status: string;
     totalTimeSeconds: number;
     lastAccessedAt: Date | null;
-  } | null;
-  modules: {
+  };
+  modules: Array<{
     id: string;
     name: string;
     slug: string;
@@ -19,7 +21,36 @@ export interface SubjectDetail {
     lessonsCount: number;
     completedLessons: number;
     status: string;
-  }[];
+  }>;
+  stats: {
+    totalModules: number;
+    completedModules: number;
+    totalLessons: number;
+    completedLessons: number;
+    averageQuizScore: number;
+  };
+}export interface SubjectDetail {
+  id: string;
+  name: string;
+  slug: string;
+  description: string | null;
+  color: string; 
+  progressColor: string; 
+  progress: {
+    progressPercent: number;
+    status: string;
+    totalTimeSeconds: number;
+    lastAccessedAt: Date | null;
+  };
+  modules: Array<{
+    id: string;
+    name: string;
+    slug: string;
+    order: number;
+    lessonsCount: number;
+    completedLessons: number;
+    status: string;
+  }>;
   stats: {
     totalModules: number;
     completedModules: number;
@@ -45,3 +76,4 @@ export interface SubjectWithProgress {
     lastAccessedAt: Date | null;
   };
 }
+
