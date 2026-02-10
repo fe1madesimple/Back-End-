@@ -38,6 +38,7 @@ const authRouter = Router()
  */
 
 
+
 /**
  * @swagger
  * /api/v1/auth/register:
@@ -71,9 +72,11 @@ const authRouter = Router()
  *                 minLength: 2
  *                 example: John Doe
  *               dailyStudyGoal:
- *                 type: string
- *                 example: "3"
- *                 description: Daily study goal in hours (1-12). Sent as string, stored as number.
+ *                 type: integer
+ *                 minimum: 1
+ *                 maximum: 12
+ *                 example: 3
+ *                 description: Daily study goal in hours (1-12)
  *     responses:
  *       201:
  *         description: Verification code sent successfully
