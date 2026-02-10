@@ -69,6 +69,7 @@ class AuthService {
       role: user.role,
       profileColor: user.profileColor,
       isEmailVerified: user.isEmailVerified,
+      dailyStudyGoal: user.dailyStudyGoal,
     };
   }
 
@@ -111,7 +112,7 @@ class AuthService {
     const emailVerificationExpires = new Date();
     emailVerificationExpires.setMinutes(emailVerificationExpires.getMinutes() + 10);
 
-    // Convert string to number 
+    // Convert string to number
     const studyGoalHours = parseInt(dailyStudyGoal, 10);
 
     const user = await prisma.user.create({
@@ -119,7 +120,7 @@ class AuthService {
         email: email.toLowerCase(),
         password: hashedPassword,
         fullName,
-        dailyStudyGoal: studyGoalHours, 
+        dailyStudyGoal: studyGoalHours,
         role: 'STUDENT',
         emailVerificationCode,
         emailVerificationExpires,
