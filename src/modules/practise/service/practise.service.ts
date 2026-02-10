@@ -46,58 +46,46 @@ class Practise {
     };
   }
 
-  async getMixedChallenge(): Promise<MixedChallengeResponse> {
-    // Get total question count across all subjects
-    const totalCount = await prisma.question.count({
-      where: {
-        type: 'MCQ',
+  async getMixedChallenge(userId: string): Promise<MixedChallengeResponse> {
+    
+    const session = await prisma.quizSession.create({
+      data: {
+        userId,
+        quizType: 'MIXED_CHALLENGE',
+        totalQuestions: 15,
       },
     });
 
-    if (totalCount === 0) {
-      throw new NotFoundError('No questions available');
-    }
+    const totalCount = await prisma.question.count({
+      where: { type: 'MCQ', isPublished: true },
+    });
 
-    // Get 15 random questions
     const limit = Math.min(15, totalCount);
 
-    const randomQuestions = (await prisma.$queryRaw<
-      Array<{
-        id: string;
-        text: string;
-        options: string;
-        order: number;
-        subjectName: string;
-        moduleName: string;
-      }>
-    >`
-    SELECT 
-      q.id, 
-      q.text, 
-      q.options, 
-      q."order",
-      s.name as "subjectName",
-      m.name as "moduleName"
+    const randomQuestions = (await prisma.$queryRaw`
+    SELECT q.id, q.text, q.options, q."order",
+           s.name as "subjectName", m.name as "moduleName"
     FROM questions q
     LEFT JOIN modules m ON q."moduleId" = m.id
     LEFT JOIN subjects s ON m."subjectId" = s.id
-    WHERE q.type = 'MCQ'
+    WHERE q.type = 'MCQ' AND q."isPublished" = true
     ORDER BY RANDOM()
     LIMIT ${limit}
   `) as Array<{
       id: string;
       text: string;
-      options: string;
+      options: any;
       order: number;
       subjectName: string;
       moduleName: string;
     }>;
 
     return {
+      sessionId: session.id,
       questions: randomQuestions.map((q) => ({
         id: q.id,
         text: q.text,
-        options: JSON.parse(q.options as string),
+        options: q.options,
         order: q.order,
         subject: q.subjectName,
         module: q.moduleName,
