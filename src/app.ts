@@ -195,7 +195,7 @@ const createApp = (): Application => {
   app.use('/api/v1/progress', progressRouter);
   app.use('/api/v1/study-sessions', studySessionRouter);
   app.use('/api/v1/podcasts', podCastRouter);
-  app.use('/api/v1/module', moduleRouter);
+  app.use('/api/v1/modules', moduleRouter);
   app.use('/api/v1/playlists', playListRouter);
   app.use('/api/v1/cases', caseRouter);
 

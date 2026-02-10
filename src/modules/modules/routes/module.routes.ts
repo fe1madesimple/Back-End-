@@ -34,7 +34,7 @@ const moduleRouter = Router()
  *       200:
  *         description: Module retrieved successfully
  */
-moduleRouter.get('/modules/:id', protect, getModuleById);
+moduleRouter.get('/:id', protect, getModuleById);
 
 
 
