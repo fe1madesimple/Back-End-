@@ -26,7 +26,7 @@ export interface MixedPracticeResponse {
 }
 
 export interface PastQuestionsQuery {
-  search?: string; 
+  search?: string;
   subject?: string;
   year?: number;
   examType?: string;
@@ -56,26 +56,16 @@ export interface PastQuestionsListResponse {
   };
 }
 
-export interface QuizResultsResponse {
-  score: {
-    correct: number;
-    total: number;
-    answered: number;
-    percentage: number;
-  };
-  message: string;
-  badge: {
-    unlocked: boolean;
-    title: string;
-    description: string;
-  } | null;
-  performance: {
-    accuracyRate: number;
-    avgTimePerQuestion: number;
-    quizStreak: number;
-  };
+export interface QuickQuizResponse {
+  sessionId: string;
+  questions: Array<{
+    id: string;
+    text: string;
+    options: any;
+    order: number;
+  }>;
+  totalAvailable: number;
 }
-
 
 export interface PastQuestionDetailResponse {
   id: string;
@@ -94,13 +84,12 @@ export interface PastQuestionDetailResponse {
   }[];
 }
 
-
-
 export interface MixedChallengeResponse {
+  sessionId: string;
   questions: Array<{
     id: string;
     text: string;
-    options: string[];
+    options: any;
     order: number;
     subject: string;
     module: string;
@@ -108,15 +97,19 @@ export interface MixedChallengeResponse {
   totalAvailable: number;
 }
 
-export interface QuickQuizResponse {
+export interface MCQAttemptInput {
+  answer: string;
+  sessionId: string;
+  timeTaken?: number;
+}
+
+export interface TopicChallengeResponse {
+  sessionId: string;
   questions: Array<{
     id: string;
     text: string;
-    options: string[];
+    options: any;
     order: number;
-    subject: string;
-    module: string;
   }>;
   totalAvailable: number;
 }
-
