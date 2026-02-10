@@ -192,6 +192,7 @@ subjectRouter.get('/subjects', protect, getSubjects);
 subjectRouter.get('/subjects/:id', protect, getSubjectById);
 
 
+
 /**
  * @swagger
  * /api/v1/subjects/{subjectId}/modules:
@@ -200,22 +201,14 @@ subjectRouter.get('/subjects/:id', protect, getSubjectById);
  *     tags: [Modules]
  *     security:
  *       - bearerAuth: []
- *     description: |
- *       Returns all modules within a subject with user's progress.
- *       
- *       **Used in:** Module list page (Image 15 - showing Module 1-8)
- *       
- *       **Response includes:**
- *       - Module details
- *       - Total lessons vs completed lessons (e.g., "5/5", "0/7")
- *       - Progress percentage
- *       - Status badges (Completed, In Progress, Not Started)
+ *     description: Returns all modules within a subject with user progress tracking. Includes module details, total lessons vs completed lessons, progress percentage, and status badges (Completed, In Progress, Not Started).
  *     parameters:
  *       - in: path
  *         name: subjectId
  *         required: true
  *         schema:
  *           type: string
+ *         description: Subject ID
  *     responses:
  *       200:
  *         description: Modules retrieved successfully
@@ -226,34 +219,44 @@ subjectRouter.get('/subjects/:id', protect, getSubjectById);
  *               properties:
  *                 success:
  *                   type: boolean
+ *                   example: true
  *                 message:
  *                   type: string
+ *                   example: Modules retrieved successfully
  *                 data:
- *                   type: object
- *                   properties:
- *                     modules:
- *                       type: array
- *                       items:
- *                         type: object
- *                         properties:
- *                           id:
- *                             type: string
- *                           name:
- *                             type: string
- *                             example: Module 1: Foundations of Criminal Law
- *                           totalLessons:
- *                             type: integer
- *                             example: 5
- *                           completedLessons:
- *                             type: integer
- *                             example: 5
- *                           progressPercent:
- *                             type: number
- *                             example: 100
- *                           status:
- *                             type: string
- *                             enum: [NOT_STARTED, IN_PROGRESS, COMPLETED]
- *                             example: COMPLETED
+ *                   type: array
+ *                   items:
+ *                     type: object
+ *                     properties:
+ *                       id:
+ *                         type: string
+ *                         example: mod_123
+ *                       name:
+ *                         type: string
+ *                         example: Module 1: Foundations of Criminal Law
+ *                       slug:
+ *                         type: string
+ *                         example: foundations
+ *                       description:
+ *                         type: string
+ *                         example: Core principles and elements of criminal liability
+ *                       order:
+ *                         type: integer
+ *                         example: 1
+ *                       totalLessons:
+ *                         type: integer
+ *                         example: 5
+ *                       completedLessons:
+ *                         type: integer
+ *                         example: 3
+ *                       progressPercent:
+ *                         type: number
+ *                         example: 60
+ *                         description: Progress percentage (0-100). Returns 0 if no progress.
+ *                       status:
+ *                         type: string
+ *                         enum: [NOT_STARTED, IN_PROGRESS, COMPLETED]
+ *                         example: IN_PROGRESS
  */
 subjectRouter.get('/subjects/:subjectId/modules', protect, getModulesBySubject);
 
