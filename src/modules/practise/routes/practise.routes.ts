@@ -11,99 +11,17 @@ const practiceRouter = Router();
 import { validate } from '@/shared/middleware/validation';
 import { pastQuestionsQuerySchema } from '../validators/practise.validators';
 
-/**
- * @swagger
- * /api/v1/practice/mixed-challenge:
- *   get:
- *     summary: Get 15 random MCQ questions across all subjects
- *     tags: [Practice]
- *     security:
- *       - bearerAuth: []
- *     description: |
- *       Retrieves 15 randomized MCQ questions from across ALL subjects.
- *
- *       **NO PARAMETERS NEEDED** - Just call the endpoint!
- *
- *       **QUESTION DISTRIBUTION:**
- *       - Completely random across all subjects
- *       - Could be 3 Criminal, 5 Contract, 2 Tort, 4 Equity, 1 Company Law, etc.
- *       - Changes every time endpoint is called
- *
- *       **WHAT YOU GET:**
- *       - 15 questions (or fewer if database has less)
- *       - Each question includes subject and module name
- *       - Questions are NOT grouped by subject
- *       - Random order every time
- *
- *       **USE CASES:**
- *       - Daily challenge feature
- *       - Quick mixed review
- *       - Test knowledge across all subjects
- *       - Warm-up before study session
- *
- *       **FRONTEND DISPLAY:**
- *       - Show subject/module tags on each question
- *       - Allow filtering by subject after fetching (optional)
- *       - Display progress: "Question 5 of 15"
- *     responses:
- *       200:
- *         description: Mixed challenge retrieved successfully
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 success:
- *                   type: boolean
- *                   example: true
- *                 message:
- *                   type: string
- *                   example: Mixed challenge retrieved
- *                 data:
- *                   type: object
- *                   properties:
- *                     questions:
- *                       type: array
- *                       items:
- *                         type: object
- *                         properties:
- *                           id:
- *                             type: string
- *                           text:
- *                             type: string
- *                             example: Which case established the neighbour principle?
- *                           options:
- *                             type: array
- *                             items:
- *                               type: string
- *                             example: ["A: Donoghue v Stevenson", "B: Carlill v Carbolic", "C: Salomon v Salomon", "D: Dunne v National Maternity Hospital"]
- *                           order:
- *                             type: integer
- *                             example: 1
- *                           subject:
- *                             type: string
- *                             example: Tort Law
- *                           module:
- *                             type: string
- *                             example: Module 1: Negligence Fundamentals
- *                     totalAvailable:
- *                       type: integer
- *                       example: 250
- *                       description: Total MCQ questions in database
- *       404:
- *         description: No questions available
- */
-practiceRouter.get('/mixed-challenge', protect, getMixedChallenge);
+
 
 /**
  * @swagger
  * /api/v1/practice/past-questions:
  *   get:
  *     summary: Get list of past exam questions with filters
- *     tags: [Past Questions]
+ *     tags: [Practice Quizzes]
  *     security:
  *       - bearerAuth: []
- *     description: |  
+ *     description: |
  *       Returns paginated list of past FE-1 exam essay questions with filtering options.
  *
  *       **USE CASE:**
@@ -292,6 +210,71 @@ practiceRouter.get(
   getPastQuestions
 );
 
+
+
+
+/**
+ * @swagger
+ * /api/v1/practice/mixed-challenge:
+ *   get:
+ *     summary: Get 15 random MCQ questions across all subjects
+ *     tags: [Practice Quizzes]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Retrieves 15 randomized MCQ questions from across ALL subjects. NO PARAMETERS NEEDED - Just call the endpoint! Questions are completely random across all subjects (could be 3 Criminal, 5 Contract, 2 Tort, 4 Equity, 1 Company Law, etc). Each question includes subject and module name. Use cases - Daily challenge feature, Quick mixed review, Test knowledge across all subjects, Warm-up before study session.
+ *     responses:
+ *       200:
+ *         description: Mixed challenge retrieved successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Mixed challenge retrieved
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     questions:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           id:
+ *                             type: string
+ *                             example: clx123abc
+ *                           text:
+ *                             type: string
+ *                             example: Which case established the neighbour principle?
+ *                           options:
+ *                             type: array
+ *                             items:
+ *                               type: string
+ *                             example: ["A: Donoghue v Stevenson", "B: Carlill v Carbolic", "C: Salomon v Salomon", "D: Dunne v National Maternity Hospital"]
+ *                           order:
+ *                             type: integer
+ *                             example: 1
+ *                           subject:
+ *                             type: string
+ *                             example: Tort Law
+ *                           module:
+ *                             type: string
+ *                             example: Module 1 - Negligence Fundamentals
+ *                     totalAvailable:
+ *                       type: integer
+ *                       example: 250
+ *                       description: Total MCQ questions in database
+ *       404:
+ *         description: No questions available
+ */
+practiceRouter.get('/mixed-challenge', protect, getMixedChallenge);
+
+
+
 /**
  * @swagger
  * /api/v1/practice/quick-quiz:
@@ -300,68 +283,7 @@ practiceRouter.get(
  *     tags: [Practice Quizzes]
  *     security:
  *       - bearerAuth: []
- *     description: |
- *       Returns 5 random multiple-choice questions from across ALL subjects for quick practice.
- *
- *       **NO PARAMETERS NEEDED** - Just call the endpoint!
- *
- *       **USE CASES:**
- *       - Daily quick quiz
- *       - Warm-up before study session
- *       - Quick knowledge check
- *       - Break-time review
- *
- *       **QUESTION DISTRIBUTION:**
- *       - Completely random across all subjects
- *       - Could be 2 Criminal, 1 Contract, 1 Tort, 1 Company Law
- *       - Changes every time endpoint is called
- *       - Each question includes subject and module name
- *
- *       **RESPONSE STRUCTURE:**
- *       - Questions returned WITHOUT `correctAnswer` or `explanation`
- *       - User must submit each answer via POST /questions/:id/attempt
- *       - Feedback shown after each submission
- *
- *       **RANDOMIZATION:**
- *       - Questions selected randomly using SQL RANDOM()
- *       - Different questions each time
- *       - If database has <5 questions total, returns all available
- *
- *       **FRONTEND FLOW:**
- *       ```javascript
- *       // 1. Fetch quiz (no parameters needed)
- *       const quiz = await fetch('/api/v1/practice/quick-quiz');
- *
- *       // 2. Display questions one by one
- *       quiz.questions.forEach(question => {
- *         // Show question with subject/module badge
- *         // Example: [Criminal Law] Which case established...
- *       });
- *
- *       // 3. User selects answer
- *       const answer = 'A';
- *
- *       // 4. Submit answer
- *       const result = await fetch(`/api/v1/questions/${question.id}/attempt`, {
- *         method: 'POST',
- *         body: JSON.stringify({ answer, timeTakenSeconds: 30 })
- *       });
- *
- *       // 5. Show feedback (isCorrect, explanation)
- *       if (result.isCorrect) {
- *         showSuccess(result.explanation);
- *       } else {
- *         showError(result.correctAnswer, result.explanation);
- *       }
- *
- *       // 6. Move to next question
- *       ```
- *
- *       **SCORING:**
- *       - Each question worth 1 point
- *       - Maximum score: 5 points
- *       - Results tracked in QuestionAttempt table
- *
+ *     description: Returns 5 random multiple-choice questions from across ALL subjects for quick practice. NO PARAMETERS NEEDED - Just call the endpoint!
  *     responses:
  *       200:
  *         description: Quick quiz retrieved successfully
@@ -386,32 +308,24 @@ practiceRouter.get(
  *                         properties:
  *                           id:
  *                             type: string
- *                             example: clx456def
  *                           text:
  *                             type: string
- *                             example: Which case established the neighbour principle?
  *                           options:
  *                             type: array
  *                             items:
  *                               type: string
- *                             example: ["A: Donoghue v Stevenson", "B: Carlill v Carbolic", "C: Salomon v Salomon", "D: Dunne v National Maternity Hospital"]
- *                           order:
- *                             type: integer
- *                             example: 1
  *                           subject:
  *                             type: string
- *                             example: Tort Law
  *                           module:
  *                             type: string
- *                             example: Module 1: Negligence Fundamentals
  *                     totalAvailable:
  *                       type: integer
- *                       example: 250
- *                       description: Total MCQ questions available in database
  *       404:
  *         description: No questions available
  */
 practiceRouter.get('/quick-quiz', protect, getQuickQuiz);
+
+
 
 /**
  * @swagger
@@ -422,7 +336,7 @@ practiceRouter.get('/quick-quiz', protect, getQuickQuiz);
  *     security:
  *       - bearerAuth: []
  *     description: |
- *       Returns 15 random multiple-choice questions from ALL modules in the subject for comprehensive cross-module practice.
+ *       Returns 10 random multiple-choice questions from ALL modules in the subject for comprehensive cross-module practice.
  *
  *       **USE CASE:**
  *       - User wants to practice across entire subject (all modules)
@@ -591,12 +505,14 @@ practiceRouter.get('/quick-quiz', protect, getQuickQuiz);
  */
 practiceRouter.get('/topic-challenge/:subjectId', protect, getTopicPractice);
 
+
+
 /**
  * @swagger
  * /api/v1/practice/past-questions/{id}:
  *   get:
  *     summary: Get full details of a specific past exam question
- *     tags: [Past Questions]
+ *     tags: [Practice Quizzes]
  *     security:
  *       - bearerAuth: []
  *     description: |
