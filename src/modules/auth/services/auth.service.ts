@@ -238,6 +238,7 @@ class AuthService {
             googleId,
             role: 'STUDENT',
             isEmailVerified: true,
+            dailyStudyGoal: 3, 
           },
         });
 
@@ -276,6 +277,7 @@ class AuthService {
         });
       }
     } else if (!user.googleId) {
+
       // Link Google account to existing user
       user = await prisma.user.update({
         where: { id: user.id },
