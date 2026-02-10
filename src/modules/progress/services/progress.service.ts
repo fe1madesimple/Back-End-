@@ -971,17 +971,18 @@ class ProgressService {
   }
 
   async getSimpleDashboard(userId: string): Promise<SimpleDashboardResponse> {
-    // 1. Get user data
     const user = await prisma.user.findUnique({
       where: { id: userId },
       select: {
         targetExamDate: true,
         dailyStudyGoal: true,
         hasCompletedOnboarding: true,
+        averageQuizScore: true,
+        highestQuizScore: true,
+        lowestQuizScore: true,
       },
     });
 
-    // 2. Determine if user is "new"
     const hasAnyLessonProgress = await prisma.userLessonProgress.count({
       where: { userId },
     });
@@ -998,7 +999,6 @@ class ProgressService {
       !user?.hasCompletedOnboarding ||
       (hasAnyLessonProgress === 0 && hasAnyQuizAttempt === 0 && hasAnyPodcastProgress === 0);
 
-    // 3. Calculate exam countdown 
     const examCountdown = user?.targetExamDate
       ? {
           daysUntilExam: Math.ceil(
@@ -1007,11 +1007,10 @@ class ProgressService {
           examDate:
             typeof user.targetExamDate === 'string'
               ? user.targetExamDate
-              : user.targetExamDate.toISOString().split('T')[0]!, // Convert Date to string
+              : user.targetExamDate.toISOString().split('T')[0]!,
         }
       : { daysUntilExam: null, examDate: null };
 
-    // 4. Today's study time
     const todayStart = new Date();
     todayStart.setHours(0, 0, 0, 0);
 
@@ -1027,7 +1026,6 @@ class ProgressService {
     const todayHours = todaySeconds / 3600;
     const targetHours = user?.dailyStudyGoal || 3;
 
-    // 5. Weekly streak with calendar 
     const last7Days = Array.from({ length: 7 }, (_, i) => {
       const date = new Date();
       date.setDate(date.getDate() - (6 - i));
@@ -1050,25 +1048,22 @@ class ProgressService {
         });
 
         return {
-          day: ['S', 'M', 'T', 'W', 'T', 'F', 'S'][date.getDay()]!, 
+          day: ['S', 'M', 'T', 'W', 'T', 'F', 'S'][date.getDay()]!,
           hasActivity: hasActivity > 0,
         };
       })
     );
 
-    // Calculate current streak 
     let currentStreak = 0;
     for (let i = weekCalendar.length - 1; i >= 0; i--) {
       const day = weekCalendar[i];
       if (day && day.hasActivity) {
-        // FIX: Add null check
         currentStreak++;
       } else {
         break;
       }
     }
 
-    // Calculate longest streak
     const allLessonProgress = await prisma.userLessonProgress.findMany({
       where: {
         userId,
@@ -1111,25 +1106,12 @@ class ProgressService {
     }
     longestStreak = Math.max(longestStreak, tempStreak);
 
-    // 6. Quiz performance
-    const allQuizAttempts = await prisma.questionAttempt.findMany({
-      where: { userId },
-      select: {
-        pointsEarned: true,
-        question: { select: { points: true } },
-      },
-    });
-
-    const scores = allQuizAttempts.map((a) => (a.pointsEarned / (a.question.points || 1)) * 100);
-
     const quizPerformance = {
-      averageScore:
-        scores.length > 0 ? Math.round(scores.reduce((a, b) => a + b) / scores.length) : 0,
-      highestScore: scores.length > 0 ? Math.round(Math.max(...scores)) : 0,
-      lowestScore: scores.length > 0 ? Math.round(Math.min(...scores)) : 0,
+      averageScore: user?.averageQuizScore || 0,
+      highestScore: user?.highestQuizScore || 0,
+      lowestScore: user?.lowestQuizScore || 0,
     };
 
-    // 7. Resume learning
     const lastLesson = await prisma.userLessonProgress.findFirst({
       where: {
         userId,
@@ -1165,7 +1147,6 @@ class ProgressService {
         }
       : null;
 
-    // 8. Random 3 podcasts (FIX: Handle nullable fields)
     const allPodcasts = await prisma.podcast.findMany({
       select: {
         id: true,
@@ -1197,9 +1178,9 @@ class ProgressService {
       recommendedPodcasts: randomPodcasts.map((p) => ({
         id: p.id,
         title: p.title,
-        subjectName: p.subject || 'General', // FIX: Provide default for null
-        durationMinutes: Math.round((p.duration || 0) / 60), // FIX: Handle null duration
-        thumbnail: p.thumbnail || '', // FIX: Provide default for null
+        subjectName: p.subject || 'General',
+        durationMinutes: Math.round((p.duration || 0) / 60),
+        thumbnail: p.thumbnail || '',
       })),
     };
   }
