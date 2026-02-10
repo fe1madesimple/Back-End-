@@ -7,9 +7,9 @@ import {
   StudyStreakResponse,
   WeeklySummaryResponse,
   ModuleStatsResponse,
-  SimpleDashboardResponse
+  SimpleDashboardResponse,
 } from '../interfaces/progress.interface';
-import { NotFoundError} from '@/shared/utils';
+import { NotFoundError } from '@/shared/utils';
 
 class ProgressService {
   async getDashboardStats(userId: string): Promise<DashboardStatsResponse> {
@@ -998,13 +998,16 @@ class ProgressService {
       !user?.hasCompletedOnboarding ||
       (hasAnyLessonProgress === 0 && hasAnyQuizAttempt === 0 && hasAnyPodcastProgress === 0);
 
-    // 3. Calculate exam countdown
+    // 3. Calculate exam countdown (FIX: Convert Date to string)
     const examCountdown = user?.targetExamDate
       ? {
           daysUntilExam: Math.ceil(
             (new Date(user.targetExamDate).getTime() - Date.now()) / (1000 * 60 * 60 * 24)
           ),
-          examDate: user.targetExamDate,
+          examDate:
+            typeof user.targetExamDate === 'string'
+              ? user.targetExamDate
+              : user.targetExamDate.toISOString().split('T')[0]!, // Convert Date to string
         }
       : { daysUntilExam: null, examDate: null };
 
@@ -1024,7 +1027,7 @@ class ProgressService {
     const todayHours = todaySeconds / 3600;
     const targetHours = user?.dailyStudyGoal || 3;
 
-    // 5. Weekly streak with calendar
+    // 5. Weekly streak with calendar (FIX: Ensure day is never undefined)
     const last7Days = Array.from({ length: 7 }, (_, i) => {
       const date = new Date();
       date.setDate(date.getDate() - (6 - i));
@@ -1047,16 +1050,18 @@ class ProgressService {
         });
 
         return {
-          day: ['S', 'M', 'T', 'W', 'T', 'F', 'S'][date.getDay()],
+          day: ['S', 'M', 'T', 'W', 'T', 'F', 'S'][date.getDay()]!, // FIX: Add ! to assert non-undefined
           hasActivity: hasActivity > 0,
         };
       })
     );
 
-    // Calculate current streak
+    // Calculate current streak (FIX: weekCalendar[i] is now guaranteed to exist)
     let currentStreak = 0;
     for (let i = weekCalendar.length - 1; i >= 0; i--) {
-      if (weekCalendar[i].hasActivity) {
+      const day = weekCalendar[i];
+      if (day && day.hasActivity) {
+        // FIX: Add null check
         currentStreak++;
       } else {
         break;
@@ -1160,7 +1165,7 @@ class ProgressService {
         }
       : null;
 
-    // 8. Random 3 podcasts
+    // 8. Random 3 podcasts (FIX: Handle nullable fields)
     const allPodcasts = await prisma.podcast.findMany({
       select: {
         id: true,
@@ -1192,9 +1197,9 @@ class ProgressService {
       recommendedPodcasts: randomPodcasts.map((p) => ({
         id: p.id,
         title: p.title,
-        subjectName: p.subject,
-        durationMinutes: Math.round(p.duration / 60),
-        thumbnail: p.thumbnail,
+        subjectName: p.subject || 'General', // FIX: Provide default for null
+        durationMinutes: Math.round((p.duration || 0) / 60), // FIX: Handle null duration
+        thumbnail: p.thumbnail || '', // FIX: Provide default for null
       })),
     };
   }
