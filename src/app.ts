@@ -189,13 +189,13 @@ const createApp = (): Application => {
   app.use('/api/v1/users', userRouter);
   app.use('/api/v1/subscription', subscriptionRouter);
   app.use('/api/v1/practice', practiceRouter);
-  app.use('/api/v1', subjectRouter);
+  app.use('/api/v1/subjects', subjectRouter);
+  app.use('/api/v1/lessons', lessonRouter);
+  app.use('/api/v1/questions', questionRouter);
+  app.use('/api/v1/progress', progressRouter);
+  app.use('/api/v1/study-sessions', studySessionRouter);
+  app.use('/api/v1/podcasts', podCastRouter);
   app.use('/api/v1', moduleRouter);
-  app.use('/api/v1', lessonRouter);
-  app.use('/api/v1', questionRouter);
-  app.use('/api/v1', progressRouter);
-  app.use('/api/v1', studySessionRouter);
-  app.use('/api/v1', podCastRouter);
   app.use('/playlists', playListRouter);
   app.use('/cases', caseRouter);
 

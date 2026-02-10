@@ -93,7 +93,7 @@ podCastRouter.get(
  *         description: Podcast not found
  */
 podCastRouter.get(
-  '/podcasts/:id',
+  '/:id',
   protect,
   getPodcastById
 );
@@ -142,7 +142,7 @@ podCastRouter.get(
  *         description: Podcast not found
  */
 podCastRouter.post(
-  '/podcasts/:id/track',
+  '/:id/track',
   protect,
   validate(trackPodcastSchema),
   trackPodcastProgress

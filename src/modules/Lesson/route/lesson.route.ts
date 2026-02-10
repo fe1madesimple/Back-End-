@@ -182,7 +182,7 @@ const lessonRouter = Router();
  *         description: Lesson not found
  */
 lessonRouter.post(
-  '/lessons/:id/track-video',
+  '/:id/track-video',
   protect,
   validate(trackVideoSchema),
   trackVideoProgress
@@ -258,7 +258,7 @@ lessonRouter.post(
  *       200:
  *         description: Time tracked successfully
  */
-lessonRouter.post('/lessons/:id/track-time', protect, validate(trackTimeSchema), trackTimeSpent);
+lessonRouter.post('/:id/track-time', protect, validate(trackTimeSchema), trackTimeSpent);
 
 
 /**

@@ -11,7 +11,7 @@ const questionRouter = Router()
 
 /**
  * @swagger
- * /api/v1/modules/{moduleId}/questions:
+ * /api/v1/questions/modules/{moduleId}:
  *   get:
  *     summary: Get module MCQ questions
  *     tags: [Questions]
@@ -69,7 +69,7 @@ const questionRouter = Router()
  *                       type: integer
  *                       example: 5
  */
-questionRouter.get('/modules/:moduleId/questions', protect, getModuleQuestions);
+questionRouter.get('/modules/:moduleId', protect, getModuleQuestions);
 
 
 
@@ -159,7 +159,7 @@ questionRouter.post(
 
 /**
  * @swagger
- * /api/v1/essays/{id}/submit:
+ * /api/v1//questions/essays/{id}/submit:
  *   post:
  *     summary: Submit essay for AI grading
  *     tags: [Questions]
