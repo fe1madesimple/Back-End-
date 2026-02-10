@@ -6,17 +6,25 @@ export const moduleIdParamSchema = z.object({
   }),
 });
 
-// src/modules/content/validator/content.validator.ts
-
 export const pastQuestionsQuerySchema = z.object({
   query: z.object({
+    search: z.string().optional(),
     subject: z.string().optional(),
     year: z
       .string()
       .regex(/^\d{4}$/)
-      .optional(),
+      .optional()
+      .transform((val) => (val ? parseInt(val) : undefined)), 
     examType: z.string().optional(),
-    page: z.string().regex(/^\d+$/).optional(),
-    limit: z.string().regex(/^\d+$/).optional(),
+    page: z
+      .string()
+      .regex(/^\d+$/)
+      .optional()
+      .transform((val) => (val ? parseInt(val) : 1)),
+    limit: z
+      .string()
+      .regex(/^\d+$/)
+      .optional()
+      .transform((val) => (val ? parseInt(val) : 9)), 
   }),
 });
