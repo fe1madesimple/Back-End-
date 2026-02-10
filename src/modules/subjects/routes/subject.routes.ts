@@ -7,6 +7,8 @@ import { getSubjects, getSubjectById, getModulesBySubject} from '../controller/s
 
 const subjectRouter = Router();
 
+
+
 /**
  * @swagger
  * /api/v1/subjects:
@@ -15,17 +17,7 @@ const subjectRouter = Router();
  *     tags: [Subjects]
  *     security:
  *       - bearerAuth: []
- *     description: |
- *       Returns all 8 FE-1 subjects with user's current progress.
- *
- *       **Used in:** Subjects page (Image 12, 18)
- *
- *       **Response includes:**
- *       - Subject details (name, color, icon)
- *       - Progress percentage (0-100%)
- *       - Status (NOT_STARTED, IN_PROGRESS, COMPLETED)
- *       - Total time spent on subject
- *       - Last accessed date
+ *     description: Returns all 8 FE-1 subjects with user's current progress. Response includes subject details (name, color, icon), progress percentage (0-100%), status (NOT_STARTED, IN_PROGRESS, COMPLETED), total time spent on subject, and last accessed date.
  *     responses:
  *       200:
  *         description: Subjects retrieved successfully
@@ -50,34 +42,52 @@ const subjectRouter = Router();
  *                         properties:
  *                           id:
  *                             type: string
+ *                             example: clx123abc
  *                           name:
  *                             type: string
  *                             example: Criminal Law
  *                           slug:
  *                             type: string
  *                             example: criminal-law
+ *                           description:
+ *                             type: string
+ *                             example: Study of crimes, defenses, and criminal procedure in Irish law
+ *                           icon:
+ *                             type: string
+ *                             nullable: true
+ *                             example: gavel
+ *                           color:
+ *                             type: string
+ *                             example: "#FF1493"
+ *                             description: Subject brand color (hex code)
+ *                           progressColor:
+ *                             type: string
+ *                             example: "#FF1493"
+ *                             description: Progress bar color (hex code)
  *                           order:
  *                             type: integer
  *                             example: 1
  *                           progress:
  *                             type: object
- *                             nullable: true
  *                             properties:
  *                               progressPercent:
  *                                 type: number
  *                                 example: 56
+ *                                 description: Progress percentage (0-100). Returns 0 if no progress.
  *                               status:
  *                                 type: string
  *                                 enum: [NOT_STARTED, IN_PROGRESS, COMPLETED]
+ *                                 example: IN_PROGRESS
  *                               totalTimeSeconds:
  *                                 type: integer
  *                                 example: 29700
+ *                                 description: Total time spent in seconds. Returns 0 if no progress.
  *                               lastAccessedAt:
  *                                 type: string
  *                                 format: date-time
+ *                                 nullable: true
+ *                                 example: "2026-02-10T14:30:00Z"
  */
-
-
 subjectRouter.get('/subjects', protect, getSubjects);
 
 
