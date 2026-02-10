@@ -113,7 +113,7 @@ export class SubjectService {
       slug: subject.slug,
       description: subject.description,
       color: subject.color,
-      progressColor: subject.progressColor, 
+      progressColor: subject.progressColor,
       progress: userProgress
         ? {
             progressPercent: userProgress.progressPercent,
@@ -122,7 +122,7 @@ export class SubjectService {
             lastAccessedAt: userProgress.lastAccessedAt,
           }
         : {
-            progressPercent: 0, 
+            progressPercent: 0,
             status: 'NOT_STARTED',
             totalTimeSeconds: 0,
             lastAccessedAt: null,
