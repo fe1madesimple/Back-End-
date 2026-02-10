@@ -10,6 +10,10 @@ export const registerSchema = z.object({
       .regex(/[a-z]/, 'Password must contain at least one lowercase letter')
       .regex(/[0-9]/, 'Password must contain at least one number'),
     fullName: z.string().min(2, 'First name must be at least 2 characters'),
+    dailyStudyGoal: z
+      .string()
+      .regex(/^[1-9]$|^1[0-2]$/, 'Daily study goal must be between 1-12 hours')
+      .transform((val) => parseInt(val, 10)),
   }),
 });
 
