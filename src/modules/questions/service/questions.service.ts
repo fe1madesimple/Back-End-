@@ -1,7 +1,7 @@
 import { prisma } from '@/shared/config';
 import { AppError } from '@/shared/utils';
 import Anthropic from '@anthropic-ai/sdk';
-import { QuizResultsResponse } from '../interface/question.interface';
+
 
 const anthropic = new Anthropic({
   apiKey: process.env.CLAUDE_API_KEY!,

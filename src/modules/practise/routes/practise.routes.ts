@@ -4,6 +4,7 @@ import {
   getTopicPractice,
   getMixedChallenge,
   getPastQuestions,
+  getQuizResults,
   getPastQuestionById,
 } from '../controller/practise.controller';
 import { protect } from '@/shared/middleware/auth.middleware';
@@ -206,7 +207,6 @@ practiceRouter.get(
 practiceRouter.get('/mixed-challenge', protect, getMixedChallenge);
 
 
-
 /**
  * @swagger
  * /api/v1/practice/quick-quiz:
@@ -257,6 +257,98 @@ practiceRouter.get('/mixed-challenge', protect, getMixedChallenge);
  */
 practiceRouter.get('/quick-quiz', protect, getQuickQuiz);
 
+
+/**
+ * @swagger
+ * /api/v1/practice/quiz-results:
+ *   post:
+ *     summary: Get quiz results and performance summary
+ *     tags: [Practice Quizzes]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Returns score, performance metrics, and motivational message based on quiz attempt results.
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - attemptIds
+ *             properties:
+ *               attemptIds:
+ *                 type: array
+ *                 items:
+ *                   type: string
+ *                 example: ["attempt_1", "attempt_2", "attempt_3", "attempt_4", "attempt_5"]
+ *     responses:
+ *       200:
+ *         description: Quiz results retrieved
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Quiz results retrieved
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     score:
+ *                       type: object
+ *                       properties:
+ *                         correct:
+ *                           type: integer
+ *                           example: 3
+ *                         total:
+ *                           type: integer
+ *                           example: 5
+ *                         percentage:
+ *                           type: integer
+ *                           example: 60
+ *                     message:
+ *                       type: string
+ *                       example: "Good effort!"
+ *                     badge:
+ *                       type: object
+ *                       nullable: true
+ *                       properties:
+ *                         unlocked:
+ *                           type: boolean
+ *                           example: true
+ *                         title:
+ *                           type: string
+ *                           example: "Perfect Score!"
+ *                         description:
+ *                           type: string
+ *                           example: "You answered all questions correctly. Keep this momentum going!"
+ *                     performance:
+ *                       type: object
+ *                       properties:
+ *                         accuracyRate:
+ *                           type: integer
+ *                           example: 60
+ *                         avgTimePerQuestion:
+ *                           type: integer
+ *                           example: 18
+ *                         quizStreak:
+ *                           type: integer
+ *                           example: 3
+ *                     actions:
+ *                       type: object
+ *                       properties:
+ *                         tryAgain:
+ *                           type: boolean
+ *                           example: true
+ *                         nextQuiz:
+ *                           type: boolean
+ *                           example: true
+ */
+practiceRouter.post('/quiz-results', protect, getQuizResults);
 
 
 /**
