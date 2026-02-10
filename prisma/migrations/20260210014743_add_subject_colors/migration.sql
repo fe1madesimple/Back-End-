@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "subjects" ADD COLUMN     "color" TEXT NOT NULL DEFAULT '#000000',
+ADD COLUMN     "progressColor" TEXT NOT NULL DEFAULT '#000000';
