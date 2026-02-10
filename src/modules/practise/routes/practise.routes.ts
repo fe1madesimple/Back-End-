@@ -21,94 +21,14 @@ import { pastQuestionsQuerySchema } from '../validators/practise.validators';
  *     tags: [Practice Quizzes]
  *     security:
  *       - bearerAuth: []
- *     description: |
- *       Returns paginated list of past FE-1 exam essay questions with filtering options.
- *
- *       **USE CASE:**
- *       - User wants to practice with real past exam questions
- *       - User clicks "Past Questions" in navigation
- *       - Frontend displays filterable list of questions
- *       - User can filter by subject, year, exam type
- *
- *       **USED IN:** Past Questions page (Image feinten)
- *
- *       **WHAT ARE PAST QUESTIONS:**
- *       - Real essay questions from previous FE-1 exams
- *       - Organized by year (2024, 2023, 2022, etc.)
- *       - Organized by subject (Criminal Law, Contract Law, etc.)
- *       - Type: Essay or Problem questions
- *       - NOT multiple choice (those are for practice only)
- *
- *       **FILTERS PROVIDED:**
- *       Response includes available filter values for dropdowns:
- *       - All subjects that have past questions
- *       - All years that have past questions (sorted newest first)
- *       - All exam types (Essay, Problem)
- *
- *       **PAGINATION:**
- *       - Default: 10 questions per page
- *       - Can be adjusted with `limit` parameter
- *       - Use `page` parameter to navigate
- *
- *       **FRONTEND IMPLEMENTATION:**
- *       ```javascript
- *       // 1. Fetch past questions with filters
- *       const filters = {
- *         subject: 'Criminal Law', // or undefined for all
- *         year: 2024, // or undefined for all
- *         examType: 'Essay', // or undefined for all
- *         page: 1,
- *         limit: 10
- *       };
- *
- *       const queryString = new URLSearchParams(
- *         Object.entries(filters)
- *           .filter(([_, v]) => v !== undefined)
- *           .map(([k, v]) => [k, String(v)])
- *       ).toString();
- *
- *       const response = await fetch(`/api/v1/past-questions?${queryString}`);
- *       const { data } = await response.json();
- *
- *       // 2. Display filter dropdowns using data.filters
- *       const subjectDropdown = data.filters.subjects; // ["Criminal Law", "Contract Law", ...]
- *       const yearDropdown = data.filters.years; // [2024, 2023, 2022, ...]
- *       const typeDropdown = data.filters.examTypes; // ["Essay", "Problem"]
- *
- *       // 3. Display questions as cards
- *       data.questions.forEach(question => {
- *         // Card showing:
- *         // "2024 Criminal Law Essay"
- *         // "Discuss the elements of negligence with reference to..."
- *         // [View Question Button]
- *       });
- *
- *       // 4. Pagination
- *       const totalPages = Math.ceil(data.total / filters.limit);
- *       // Show: "Page 1 of 5 (45 questions total)"
- *
- *       // 5. Click question to view full details
- *       // Navigate to: /past-questions/:id (Endpoint 15)
- *       ```
- *
- *       **CARD DISPLAY (per question) just an example o babtunde:**
- *       ```
- *       ┌─────────────────────────────────────────┐
- *       │ 2024 Equity Essay  na exmaple o babatunde│
- *       ├─────────────────────────────────────────┤
- *       │ Discuss the equitable maxims and their  │
- *       │ application in modern Irish law...      │
- *       │                                         │
- *       │ [View Question & Submit Answer] →       │
- *       └─────────────────────────────────────────┘
- *       ```
- *
- *       **SORTING:**
- *       Questions sorted by:
- *       1. Year (newest first)
- *       2. Order (within same year)
- *
+ *     description: Returns paginated list of past FE-1 exam essay questions with search and filtering options. Search by keywords (e.g. Carlill, Mens Rea, negligence) across question text and subject names. Filter by subject, year, and exam type. Default shows 9 questions per page.
  *     parameters:
+ *       - in: query
+ *         name: search
+ *         schema:
+ *           type: string
+ *         description: Search keyword (searches in question text and subject)
+ *         example: Carlill
  *       - in: query
  *         name: subject
  *         schema:
@@ -118,9 +38,9 @@ import { pastQuestionsQuerySchema } from '../validators/practise.validators';
  *       - in: query
  *         name: year
  *         schema:
- *           type: integer
- *         description: Filter by exam year
- *         example: 2024
+ *           type: string
+ *         description: Filter by exam year (4 digits)
+ *         example: "2024"
  *       - in: query
  *         name: examType
  *         schema:
@@ -130,14 +50,14 @@ import { pastQuestionsQuerySchema } from '../validators/practise.validators';
  *       - in: query
  *         name: page
  *         schema:
- *           type: integer
- *           default: 1
+ *           type: string
+ *           default: "1"
  *         description: Page number for pagination
  *       - in: query
  *         name: limit
  *         schema:
- *           type: integer
- *           default: 10
+ *           type: string
+ *           default: "9"
  *         description: Number of questions per page
  *     responses:
  *       200:
@@ -179,10 +99,22 @@ import { pastQuestionsQuerySchema } from '../validators/practise.validators';
  *                           order:
  *                             type: integer
  *                             example: 1
- *                     total:
- *                       type: integer
- *                       example: 45
- *                       description: Total number of questions matching filters
+ *                     pagination:
+ *                       type: object
+ *                       properties:
+ *                         total:
+ *                           type: integer
+ *                           example: 45
+ *                           description: Total questions matching filters
+ *                         page:
+ *                           type: integer
+ *                           example: 1
+ *                         limit:
+ *                           type: integer
+ *                           example: 9
+ *                         totalPages:
+ *                           type: integer
+ *                           example: 5
  *                     filters:
  *                       type: object
  *                       description: Available filter values for dropdowns
