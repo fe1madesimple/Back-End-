@@ -1,4 +1,4 @@
-// src/modules/progress/service/progress.service.ts
+
 
 import { prisma } from '@/shared/config';
 import {
@@ -780,7 +780,7 @@ class ProgressService {
     };
   }
 
-  // src/modules/progress/service/progress.service.ts
+
 
   async getModuleStats(userId: string, moduleId: string): Promise<ModuleStatsResponse> {
     // Get module with progress

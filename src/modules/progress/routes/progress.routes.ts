@@ -663,6 +663,7 @@ progressRouter.get('/study-streak', protect, getStudyStreak);
  */
 progressRouter.get('/weekly-summary', protect, getWeeklySummary);
 
+
 /**
  * @swagger
  * /api/v1/progress/dashboard-simple:
@@ -671,7 +672,7 @@ progressRouter.get('/weekly-summary', protect, getWeeklySummary);
  *     tags: [Progress & Analytics]
  *     security:
  *       - bearerAuth: []
- *     description: Returns simplified dashboard data for main dashboard screen. Includes exam countdown, today's study time with progress bar, weekly streak calendar, quiz performance stats, resume learning card, and 3 random recommended podcasts. The isNew flag indicates whether to show Quick Start or Resume Learning UI.
+ *     description: Returns simplified dashboard data for main dashboard screen. Includes exam countdown, today's study time with progress bar, weekly streak calendar, quiz performance stats (average, highest, lowest from User table), resume learning card, and 3 random recommended podcasts. The isNew flag indicates whether to show Quick Start or Resume Learning UI.
  *     responses:
  *       200:
  *         description: Dashboard data retrieved successfully
@@ -692,7 +693,7 @@ progressRouter.get('/weekly-summary', protect, getWeeklySummary);
  *                     isNew:
  *                       type: boolean
  *                       example: false
- *                       description: True if user has not completed onboarding OR has zero activity (no lessons, quizzes, or podcasts). Frontend should show Quick Start UI if true, Resume Learning UI if false.
+ *                       description: True if user has not completed onboarding OR has zero activity. Frontend should show Quick Start UI if true, Resume Learning UI if false.
  *                     examCountdown:
  *                       type: object
  *                       properties:
@@ -700,71 +701,60 @@ progressRouter.get('/weekly-summary', protect, getWeeklySummary);
  *                           type: integer
  *                           nullable: true
  *                           example: 42
- *                           description: Days remaining until exam. Null if no target date set.
  *                         examDate:
  *                           type: string
  *                           nullable: true
  *                           example: "2026-05-31"
- *                           description: Target exam date in ISO format. Null if not set.
  *                     todayStudy:
  *                       type: object
  *                       properties:
  *                         hoursToday:
  *                           type: number
  *                           example: 2
- *                           description: Hours studied today (rounded to 1 decimal)
  *                         targetHours:
  *                           type: integer
  *                           example: 3
- *                           description: Daily study goal in hours
  *                         progressPercent:
  *                           type: integer
  *                           example: 67
- *                           description: Progress towards daily goal (0-100)
  *                     weeklyStreak:
  *                       type: object
  *                       properties:
  *                         currentStreak:
  *                           type: integer
  *                           example: 3
- *                           description: Current consecutive days with study activity
  *                         longestStreak:
  *                           type: integer
  *                           example: 10
- *                           description: Longest streak ever achieved
  *                         weekCalendar:
  *                           type: array
- *                           description: Last 7 days of activity (Sunday to Saturday)
  *                           items:
  *                             type: object
  *                             properties:
  *                               day:
  *                                 type: string
  *                                 example: "M"
- *                                 description: Day initial (S, M, T, W, T, F, S)
  *                               hasActivity:
  *                                 type: boolean
  *                                 example: true
- *                                 description: True if user studied on this day
  *                     quizPerformance:
  *                       type: object
  *                       properties:
  *                         averageScore:
  *                           type: integer
  *                           example: 70
- *                           description: Average quiz score percentage. Returns 0 if no attempts.
+ *                           description: Average quiz score across all completed sessions (from User table)
  *                         highestScore:
  *                           type: integer
  *                           example: 80
- *                           description: Best quiz score. Returns 0 if no attempts.
+ *                           description: Best quiz score ever achieved (from User table)
  *                         lowestScore:
  *                           type: integer
  *                           example: 30
- *                           description: Worst quiz score. Returns 0 if no attempts.
+ *                           description: Worst quiz score ever achieved (from User table)
  *                     resumeLearning:
  *                       type: object
  *                       nullable: true
- *                       description: Last incomplete lesson with progress. Null if no lessons in progress.
  *                       properties:
  *                         lessonTitle:
  *                           type: string
@@ -775,38 +765,29 @@ progressRouter.get('/weekly-summary', protect, getWeeklySummary);
  *                         minutesRemaining:
  *                           type: integer
  *                           example: 15
- *                           description: Minutes remaining in video
  *                         progressPercent:
  *                           type: integer
  *                           example: 62
- *                           description: Video completion percentage
  *                         lessonId:
  *                           type: string
- *                           example: "clx123abc"
  *                         moduleId:
  *                           type: string
- *                           example: "clx456def"
  *                     recommendedPodcasts:
  *                       type: array
- *                       description: 3 random podcasts. Label as "Today's Recommended Episode" if isNew=true, "Latest Podcast Episodes" if isNew=false.
+ *                       description: 3 random podcasts
  *                       items:
  *                         type: object
  *                         properties:
  *                           id:
  *                             type: string
- *                             example: "pod_123"
  *                           title:
  *                             type: string
- *                             example: "Contract Formation Essentials"
  *                           subjectName:
  *                             type: string
- *                             example: "Contract Law"
  *                           durationMinutes:
  *                             type: integer
- *                             example: 45
  *                           thumbnail:
  *                             type: string
- *                             example: "https://res.cloudinary.com/..."
  */
 progressRouter.get('/dashboard-simple', protect, getSimpleDashboard);
 
