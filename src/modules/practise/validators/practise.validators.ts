@@ -10,7 +10,7 @@ export const pastQuestionsQuerySchema = z.object({
   query: z.object({
     search: z.string().optional(),
     subject: z.string().optional(),
-    year: z
+    year: z   
       .string()
       .regex(/^\d{4}$/)
       .optional()

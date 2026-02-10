@@ -35,10 +35,11 @@ export const getTopicPractice = asyncHandler(async (req: Request, res: Response)
 export const getPastQuestions = asyncHandler(async (req: Request, res: Response) => {
   const query: PastQuestionsQuery = {
     search: req.query.search as string | undefined,
-    year: req.query.year as number | undefined,
+    subject: req.query.subject as string | undefined,
+    year: req.query.year ? parseInt(req.query.year as string, 10) : undefined,
     examType: req.query.examType as string | undefined,
-    page: req.query.page as number | undefined,
-    limit: req.query.limit as number | undefined,
+    page: req.query.page ? parseInt(req.query.page as string, 10) : 1,
+    limit: req.query.limit ? parseInt(req.query.limit as string, 10) : 9,
   };
 
   const result = await practiseService.getPastQuestions(query);

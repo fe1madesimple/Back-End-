@@ -100,3 +100,23 @@ export interface TopicChallengeResponse {
   }>;
   totalAvailable: number;
 }
+
+export interface QuizResultsRespon {
+  score: {
+    correct: number;
+    total: number;
+    answered: number;
+    percentage: number;
+  };
+  message: string;
+  badge: {
+    unlocked: boolean;
+    title: string;
+    description: string;
+  } | null;
+  performance: {
+    accuracyRate: number;
+    avgTimerPerQuestion:  number;
+    quizStreak: number;
+  }
+}

@@ -6,67 +6,42 @@ import {
   PastQuestionsListResponse,
   PastQuestionsQuery,
   PastQuestionDetailResponse,
-  QuizResultsResponse
+  QuizResultsResponse,
 } from '../interface/practise.interface';
 import { QuickQuizResponse } from '../interface/practise.interface';
 
 class Practise {
-  async getQuickQuiz(): Promise<QuickQuizResponse> {
-    // Get total question count across all subjects
-    const totalCount = await prisma.question.count({
-      where: {
-        type: 'MCQ',
+  async getQuickQuiz(userId: string): Promise<QuickQuizResponse> {
+    const session = await prisma.quizSession.create({
+      data: {
+        userId,
+        quizType: 'QUICK_QUIZ',
+        totalQuestions: 5,
       },
     });
 
-    if (totalCount === 0) {
-      throw new NotFoundError('No questions available');
-    }
+    const totalCount = await prisma.question.count({
+      where: { type: 'MCQ', isPublished: true },
+    });
 
-    // Get 5 random questions (or less if fewer available)
     const limit = Math.min(5, totalCount);
 
-    const randomQuestions = (await prisma.$queryRaw<
-      Array<{
-        id: string;
-        text: string;
-        options: string;
-        order: number;
-        subjectName: string;
-        moduleName: string;
-      }>
-    >`
-    SELECT 
-      q.id, 
-      q.text, 
-      q.options, 
-      q."order",
-      s.name as "subjectName",
-      m.name as "moduleName"
-    FROM questions q
-    LEFT JOIN modules m ON q."moduleId" = m.id
-    LEFT JOIN subjects s ON m."subjectId" = s.id
-    WHERE q.type = 'MCQ'
+    const randomQuestions = (await prisma.$queryRaw`
+    SELECT id, text, options, "order"
+    FROM questions
+    WHERE type = 'MCQ' AND "isPublished" = true
     ORDER BY RANDOM()
     LIMIT ${limit}
   `) as Array<{
       id: string;
       text: string;
-      options: string;
+      options: any;
       order: number;
-      subjectName: string;
-      moduleName: string;
     }>;
 
     return {
-      questions: randomQuestions.map((q) => ({
-        id: q.id,
-        text: q.text,
-        options: JSON.parse(q.options),
-        order: q.order,
-        subject: q.subjectName,
-        module: q.moduleName,
-      })),
+      sessionId: session.id,
+      questions: randomQuestions,
       totalAvailable: totalCount,
     };
   }

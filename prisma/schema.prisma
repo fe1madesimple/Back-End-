@@ -80,7 +80,6 @@ model User {
   @@map("users")
 }
 
-
 model QuizSession {
   id                String   @id @default(cuid())
   userId            String
@@ -803,38 +802,6 @@ model Question {
 enum QuestionType {
   MCQ
   ESSAY
-}
-
-model QuestionAttempt {
-  id         String   @id @default(cuid())
-  userId     String
-  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  questionId String
-  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
-
-  answer       String   @db.Text
-  isCorrect    Boolean? // For MCQ
-  pointsEarned Int      @default(0)
-
-  // AI Grading (for essays)
-  aiScore          Float? // 0-100
-  knowledgeScore   Float? // Out of 30
-  authoritiesScore Float? // Out of 25
-  applicationScore Float? // Out of 25
-  analysisScore    Float? // Out of 15
-  structureScore   Float? // Out of 5
-  band             String? // "70-79% Upper Second"
-  appPass          Boolean? // true if >= 80%
-  aiFeedback       String?  @db.Text
-  strengths        Json? // Array of strings
-  improvements     Json? // Array of strings
-  nextSteps        String?  @db.Text
-
-  timeTakenSeconds Int?
-
-  createdAt DateTime @default(now())
-
-  @@map("question_attempts")
 }
 
 enum CaseJurisdiction {
