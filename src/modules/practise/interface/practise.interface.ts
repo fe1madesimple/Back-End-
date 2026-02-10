@@ -56,11 +56,11 @@ export interface PastQuestionsListResponse {
   };
 }
 
-
 export interface QuizResultsResponse {
   score: {
     correct: number;
     total: number;
+    answered: number;
     percentage: number;
   };
   message: string;
@@ -74,12 +74,7 @@ export interface QuizResultsResponse {
     avgTimePerQuestion: number;
     quizStreak: number;
   };
-  actions: {
-    tryAgain: boolean;
-    nextQuiz: boolean;
-  };
 }
-
 
 
 export interface PastQuestionDetailResponse {
