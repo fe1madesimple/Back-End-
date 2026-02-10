@@ -38,7 +38,7 @@ model User {
 
   // User preferences (from Edit Profile screen)
   targetExamDate DateTime?
-  dailyStudyGoal Int       @default(2) // Hours per day
+  dailyStudyGoal Int       @default(3) // Hours per day
   focusSubjects  String[] // Array of subject IDs user wants to focus on
 
   verificationFailedAttempts Int       @default(0)

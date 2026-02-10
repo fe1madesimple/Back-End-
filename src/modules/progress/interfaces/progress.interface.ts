@@ -1,5 +1,3 @@
-
-
 export interface DashboardStatsResponse {
   overallProgress: {
     totalSubjects: number;
@@ -92,7 +90,6 @@ export interface StudyStreakResponse {
   }[];
 }
 
-
 export interface WeeklySummaryResponse {
   weekRange: {
     startDate: string;
@@ -169,4 +166,45 @@ export interface ModuleStatsResponse {
     type: string;
     message: string;
   }[];
+}
+
+export interface SimpleDashboardResponse {
+  isNew: boolean;
+  examCountdown: {
+    daysUntilExam: number | null;
+    examDate: string | null;
+  };
+  todayStudy: {
+    hoursToday: number;
+    targetHours: number;
+    progressPercent: number;
+  };
+  weeklyStreak: {
+    currentStreak: number;
+    longestStreak: number;
+    weekCalendar: Array<{
+      day: string;
+      hasActivity: boolean;
+    }>;
+  };
+  quizPerformance: {
+    averageScore: number;
+    highestScore: number;
+    lowestScore: number;
+  };
+  resumeLearning: {
+    lessonTitle: string;
+    subjectName: string;
+    minutesRemaining: number;
+    progressPercent: number;
+    lessonId: string;
+    moduleId: string;
+  } | null;
+  recommendedPodcasts: Array<{
+    id: string;
+    title: string;
+    subjectName: string;
+    durationMinutes: number;
+    thumbnail: string;
+  }>;
 }
