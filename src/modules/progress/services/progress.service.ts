@@ -998,7 +998,7 @@ class ProgressService {
       !user?.hasCompletedOnboarding ||
       (hasAnyLessonProgress === 0 && hasAnyQuizAttempt === 0 && hasAnyPodcastProgress === 0);
 
-    // 3. Calculate exam countdown (FIX: Convert Date to string)
+    // 3. Calculate exam countdown 
     const examCountdown = user?.targetExamDate
       ? {
           daysUntilExam: Math.ceil(
@@ -1027,7 +1027,7 @@ class ProgressService {
     const todayHours = todaySeconds / 3600;
     const targetHours = user?.dailyStudyGoal || 3;
 
-    // 5. Weekly streak with calendar (FIX: Ensure day is never undefined)
+    // 5. Weekly streak with calendar 
     const last7Days = Array.from({ length: 7 }, (_, i) => {
       const date = new Date();
       date.setDate(date.getDate() - (6 - i));
@@ -1050,13 +1050,13 @@ class ProgressService {
         });
 
         return {
-          day: ['S', 'M', 'T', 'W', 'T', 'F', 'S'][date.getDay()]!, // FIX: Add ! to assert non-undefined
+          day: ['S', 'M', 'T', 'W', 'T', 'F', 'S'][date.getDay()]!, 
           hasActivity: hasActivity > 0,
         };
       })
     );
 
-    // Calculate current streak (FIX: weekCalendar[i] is now guaranteed to exist)
+    // Calculate current streak 
     let currentStreak = 0;
     for (let i = weekCalendar.length - 1; i >= 0; i--) {
       const day = weekCalendar[i];

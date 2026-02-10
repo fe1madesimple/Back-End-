@@ -50,3 +50,12 @@ export const getModuleStats = asyncHandler(async (req: Request, res: Response) =
 
   sendSuccess(res, 'Module stats retrieved', stats);
 });
+
+
+export const getSimpleDashboard = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+
+  const dashboard = await progressService.getSimpleDashboard(userId);
+
+  sendSuccess(res, 'Dashboard data retrieved successfully', dashboard);
+});
