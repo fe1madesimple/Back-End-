@@ -6,6 +6,7 @@ import {
   PastQuestionsListResponse,
   PastQuestionsQuery,
   PastQuestionDetailResponse,
+  QuizResultsResponse
 } from '../interface/practise.interface';
 import { QuickQuizResponse } from '../interface/practise.interface';
 

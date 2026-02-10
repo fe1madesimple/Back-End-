@@ -13,12 +13,13 @@ export const getQuickQuiz = asyncHandler(async (req: Request, res: Response) => 
   sendSuccess(res, 'Questions retrieved successfully', result);
 });
 
-export const getMixedChallenge = asyncHandler(async (_req: Request, res: Response) => {
-  const challenge = await practiseService.getMixedChallenge();
+export const getMixedChallenge = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
 
-  sendSuccess(res, 'mixed questions retrieved', challenge);
+  const result = await practiseService.getMixedChallenge(userId);
+
+  sendSuccess(res, 'Questions retrieved successfully', result);
 });
-
 export const getTopicPractice = asyncHandler(async (req: Request, res: Response) => {
   const { subjectId } = req.params;
 

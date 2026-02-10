@@ -101,7 +101,7 @@ export interface TopicChallengeResponse {
   totalAvailable: number;
 }
 
-export interface QuizResultsRespon {
+export interface QuizResultsResponse {
   score: {
     correct: number;
     total: number;
