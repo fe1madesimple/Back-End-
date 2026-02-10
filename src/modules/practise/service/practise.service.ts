@@ -1,16 +1,43 @@
 import { prisma } from '@/shared/config';
-import { NotFoundError, BadRequestError } from '@/shared/utils';
+import { AppError, NotFoundError, BadRequestError } from '@/shared/utils';
 import {
   MixedPracticeResponse,
   MixedChallengeResponse,
   PastQuestionsListResponse,
   PastQuestionsQuery,
   PastQuestionDetailResponse,
-  QuizResultsResponse,
 } from '../interface/practise.interface';
 import { QuickQuizResponse } from '../interface/practise.interface';
 
 class Practise {
+  private async updateUserQuizStats(userId: string) {
+    const allSessions = await prisma.quizSession.findMany({
+      where: {
+        userId,
+        isCompleted: true,
+      },
+      select: {
+        correctAnswers: true,
+        totalQuestions: true,
+      },
+    });
+
+    const scores = allSessions.map((s) => Math.round((s.correctAnswers / s.totalQuestions) * 100));
+
+    const averageScore =
+      scores.length > 0 ? Math.round(scores.reduce((a, b) => a + b) / scores.length) : 0;
+    const highestScore = scores.length > 0 ? Math.max(...scores) : 0;
+    const lowestScore = scores.length > 0 ? Math.min(...scores) : 0;
+
+    await prisma.user.update({
+      where: { id: userId },
+      data: {
+        averageQuizScore: averageScore,
+        highestQuizScore: highestScore,
+        lowestQuizScore: lowestScore,
+      },
+    });
+  }
   async getQuickQuiz(userId: string): Promise<QuickQuizResponse> {
     const session = await prisma.quizSession.create({
       data: {
@@ -294,57 +321,7 @@ class Practise {
     };
   }
 
-  async getPastQuestionById(
-    questionId: string,
-    userId: string
-  ): Promise<PastQuestionDetailResponse> {
-    const question = await prisma.question.findUnique({
-      where: {
-        id: questionId,
-        type: 'ESSAY',
-        isPublished: true,
-      },
-      include: {
-        attempts: {
-          where: { userId },
-          select: {
-            id: true,
-            answer: true,
-            aiScore: true,
-            band: true,
-            appPass: true,
-            createdAt: true,
-          },
-          orderBy: { createdAt: 'desc' },
-        },
-      },
-    });
 
-    if (!question) {
-      throw new NotFoundError('Past question not found');
-    }
-
-    if (!question.year) {
-      throw new BadRequestError('This is not a past question');
-    }
-
-    return {
-      id: question.id,
-      text: question.text,
-      year: question.year,
-      subject: question.subject!,
-      examType: question.examType!,
-      order: question.order,
-      userAttempts: question.attempts.map((attempt) => ({
-        id: attempt.id,
-        answer: attempt.answer,
-        aiScore: attempt.aiScore,
-        band: attempt.band,
-        appPass: attempt.appPass,
-        createdAt: attempt.createdAt,
-      })),
-    };
-  }
 
   async getQuizResults(userId: string, sessionId: string): Promise<QuizResultsResponse> {
     const session = await prisma.quizSession.findUnique({
