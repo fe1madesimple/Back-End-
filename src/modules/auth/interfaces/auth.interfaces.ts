@@ -2,6 +2,7 @@ export interface RegisterInput {
   email: string;
   password: string;
   fullName: string;
+  dailyStudyGoal: string;
 }
 
 export interface LoginInput {
@@ -17,6 +18,7 @@ export interface AuthResponse {
     role: string;
     profileColor: string;
     isEmailVerified: boolean;
+    dailyStudyGoal: number;
   };
 }
 
