@@ -38,6 +38,7 @@ class Practise {
       },
     });
   }
+  
   async getQuickQuiz(userId: string): Promise<QuickQuizResponse> {
     const session = await prisma.quizSession.create({
       data: {

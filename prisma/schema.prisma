@@ -115,6 +115,10 @@ model QuestionAttempt {
   user        User         @relation(fields: [userId], references: [id])
   question    Question     @relation(fields: [questionId], references: [id])
   quizSession QuizSession? @relation(fields: [quizSessionId], references: [id])
+
+  aiScore          Int?
+  band             String?
+  appPass          Boolean?
   
   @@index([userId])
   @@index([quizSessionId])
