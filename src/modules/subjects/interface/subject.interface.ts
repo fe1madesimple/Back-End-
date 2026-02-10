@@ -1,20 +1,5 @@
 // src/modules/content/interface/content.interface.ts
 
-export interface SubjectWithProgress {
-  id: string;
-  name: string;
-  slug: string;
-  description: string | null;
-  icon: string | null;
-  order: number;
-  progress: {
-    progressPercent: number;
-    status: 'NOT_STARTED' | 'IN_PROGRESS' | 'COMPLETED';
-    totalTimeSeconds: number;
-    lastAccessedAt: Date | null;
-  } | null;
-}
-
 export interface SubjectDetail {
   id: string;
   name: string;
@@ -41,5 +26,22 @@ export interface SubjectDetail {
     totalLessons: number;
     completedLessons: number;
     averageQuizScore: number;
+  };
+}
+
+export interface SubjectWithProgress {
+  id: string;
+  name: string;
+  slug: string;
+  description: string | null;
+  icon: string | null;
+  color: string;
+  progressColor: string;
+  order: number;
+  progress: {
+    progressPercent: number;
+    status: string;
+    totalTimeSeconds: number;
+    lastAccessedAt: Date | null;
   };
 }
