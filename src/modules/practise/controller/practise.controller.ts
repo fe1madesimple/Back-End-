@@ -5,22 +5,19 @@ import practiseService from '../service/practise.service';
 import { sendSuccess } from '@/shared/utils';
 import { PastQuestionsQuery } from '../interface/practise.interface';
 
-// src/modules/content/controller/content.controller.ts
+export const getQuickQuiz = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
 
-export const getQuickQuiz = asyncHandler(async (_req: Request, res: Response) => {
-  const quiz = await practiseService.getQuickQuiz();
+  const result = await practiseService.getQuickQuiz(userId);
 
-  sendSuccess(res, 'Quick quiz retrieved', quiz);
+  sendSuccess(res, 'Questions retrieved successfully', result);
 });
-// src/modules/content/controller/content.controller.ts
 
 export const getMixedChallenge = asyncHandler(async (_req: Request, res: Response) => {
   const challenge = await practiseService.getMixedChallenge();
 
   sendSuccess(res, 'mixed questions retrieved', challenge);
 });
-
-// src/modules/content/controller/content.controller.ts
 
 export const getTopicPractice = asyncHandler(async (req: Request, res: Response) => {
   const { subjectId } = req.params;
