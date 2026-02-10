@@ -6,14 +6,16 @@ export const registerSchema = z.object({
     password: z
       .string()
       .min(8, 'Password must be at least 8 characters')
-      .regex(/[A-Z]/, 'Password must contain at least one uppercase letter')
-      .regex(/[a-z]/, 'Password must contain at least one lowercase letter')
-      .regex(/[0-9]/, 'Password must contain at least one number'),
-    fullName: z.string().min(2, 'First name must be at least 2 characters'),
+      .regex(
+        /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/,
+        'Password must contain uppercase, lowercase, and number'
+      ),
+    fullName: z.string().min(2, 'Full name must be at least 2 characters'),
     dailyStudyGoal: z
-      .string()
-      .regex(/^[1-9]$|^1[0-2]$/, 'Daily study goal must be between 1-12 hours')
-      .transform((val) => parseInt(val, 10)),
+      .number()
+      .int('Daily study goal must be a whole number')
+      .min(1, 'Daily study goal must be at least 1 hour')
+      .max(12, 'Daily study goal cannot exceed 12 hours'),
   }),
 });
 

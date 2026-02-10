@@ -2,7 +2,7 @@ export interface RegisterInput {
   email: string;
   password: string;
   fullName: string;
-  dailyStudyGoal: string;
+  dailyStudyGoal: number;
 }
 
 export interface LoginInput {
