@@ -99,7 +99,7 @@ subjectRouter.get('/', protect, getSubjects);
  *     tags: [Subjects]
  *     security:
  *       - bearerAuth: []
- *     description: Returns detailed subject information including color branding, module list, progress tracking, and comprehensive statistics. Includes total/completed modules and lessons, average quiz score, and user progress status.
+ *     description: Returns subject information, progress, module list, and statistics.
  *     parameters:
  *       - in: path
  *         name: id
@@ -126,44 +126,35 @@ subjectRouter.get('/', protect, getSubjects);
  *                   properties:
  *                     id:
  *                       type: string
- *                       example: clx123abc
  *                     name:
  *                       type: string
  *                       example: Criminal Law
  *                     slug:
  *                       type: string
- *                       example: criminal-law
  *                     description:
  *                       type: string
- *                       example: Study of crimes, defenses, and criminal procedure in Irish law
  *                     color:
  *                       type: string
  *                       example: "#FF1493"
- *                       description: Subject brand color (hex code)
  *                     progressColor:
  *                       type: string
  *                       example: "#FF1493"
- *                       description: Progress bar color (hex code)
  *                     progress:
  *                       type: object
  *                       properties:
  *                         progressPercent:
  *                           type: number
  *                           example: 56
- *                           description: Progress percentage (0-100). Returns 0 if no progress.
  *                         status:
  *                           type: string
- *                           enum: [NOT_STARTED, IN_PROGRESS, COMPLETED]
  *                           example: IN_PROGRESS
  *                         totalTimeSeconds:
  *                           type: integer
- *                           example: 29700
- *                           description: Total time spent in seconds. Returns 0 if no progress.
+ *                           example: 29340
  *                         lastAccessedAt:
  *                           type: string
  *                           format: date-time
  *                           nullable: true
- *                           example: "2026-02-10T14:30:00Z"
  *                     modules:
  *                       type: array
  *                       items:
@@ -171,44 +162,36 @@ subjectRouter.get('/', protect, getSubjects);
  *                         properties:
  *                           id:
  *                             type: string
- *                             example: mod_123
  *                           name:
  *                             type: string
- *                             example: Module 1: Foundations of Criminal Law
  *                           slug:
  *                             type: string
- *                             example: foundations
  *                           order:
  *                             type: integer
- *                             example: 1
  *                           lessonsCount:
  *                             type: integer
- *                             example: 5
  *                           completedLessons:
  *                             type: integer
- *                             example: 3
  *                           status:
  *                             type: string
- *                             enum: [NOT_STARTED, IN_PROGRESS, COMPLETED]
- *                             example: IN_PROGRESS
  *                     stats:
  *                       type: object
  *                       properties:
  *                         totalModules:
  *                           type: integer
- *                           example: 3
+ *                           example: 12
  *                         completedModules:
  *                           type: integer
- *                           example: 1
+ *                           example: 4
  *                         totalLessons:
  *                           type: integer
- *                           example: 15
+ *                           example: 48
  *                         completedLessons:
  *                           type: integer
- *                           example: 8
+ *                           example: 22
  *                         averageQuizScore:
  *                           type: integer
- *                           example: 78
+ *                           example: 72
  *       404:
  *         description: Subject not found
  */
