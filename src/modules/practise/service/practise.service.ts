@@ -6,7 +6,7 @@ import {
   PastQuestionsListResponse,
   PastQuestionsQuery,
   PastQuestionDetailResponse,
-  QuizResultsResponse
+  QuizResultsResponse,
 } from '../interface/practise.interface';
 import { QuickQuizResponse } from '../interface/practise.interface';
 
@@ -39,7 +39,7 @@ class Practise {
       },
     });
   }
-  
+
   async getQuickQuiz(userId: string): Promise<QuickQuizResponse> {
     const session = await prisma.quizSession.create({
       data: {
@@ -119,6 +119,58 @@ class Practise {
         module: q.moduleName,
       })),
       totalAvailable: totalCount,
+    };
+  }
+
+  async getPastQuestionById(
+    questionId: string,
+    userId: string
+  ): Promise<PastQuestionDetailResponse> {
+    const question = await prisma.question.findUnique({
+      where: {
+        id: questionId,
+        type: 'ESSAY',
+        isPublished: true,
+      },
+      include: {
+        attempts: {
+          where: { userId },
+          select: {
+            id: true,
+            answer: true,
+            aiScore: true,
+            band: true,
+            appPass: true,
+            createdAt: true,
+          },
+          orderBy: { createdAt: 'desc' },
+        },
+      },
+    });
+
+    if (!question) {
+      throw new NotFoundError('Past question not found');
+    }
+
+    if (!question.year) {
+      throw new BadRequestError('This is not a past question');
+    }
+
+    return {
+      id: question.id,
+      text: question.text,
+      year: question.year,
+      subject: question.subject!,
+      examType: question.examType!,
+      order: question.order,
+      userAttempts: question.attempts.map((attempt) => ({
+        id: attempt.id,
+        answer: attempt.answer,
+        aiScore: attempt.aiScore,
+        band: attempt.band,
+        appPass: attempt.appPass,
+        createdAt: attempt.createdAt,
+      })),
     };
   }
 
@@ -322,8 +374,6 @@ class Practise {
       },
     };
   }
-
-
 
   async getQuizResults(userId: string, sessionId: string): Promise<QuizResultsResponse> {
     const session = await prisma.quizSession.findUnique({

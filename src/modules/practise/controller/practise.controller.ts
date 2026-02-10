@@ -61,15 +61,4 @@ export const getPastQuestionById = asyncHandler(async (req: Request, res: Respon
   sendSuccess(res, 'Past question retrieved', { question });
 });
 
-export const getQuizResults = asyncHandler(async (req: Request, res: Response) => {
-  const userId = req.user!.user.id;
-  const { attemptIds } = req.body;
 
-  if (!attemptIds || !Array.isArray(attemptIds) || attemptIds.length === 0) {
-    throw new AppError('attemptIds array is required');
-  }
-
-  const results = await practiseService.getQuizResults(userId, attemptIds);
-
-  sendSuccess(res, 'Quiz results retrieved', results);
-});
