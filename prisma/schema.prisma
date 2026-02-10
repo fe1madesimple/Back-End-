@@ -636,6 +636,8 @@ model Subject {
   slug        String  @unique
   description String? @db.Text
   icon        String? // Icon identifier
+  color       String  @default("#000000") // Subject color
+  progressColor String @default("#000000") // Progress bar color
   order       Int // Display order
   isPublished Boolean @default(true)
 
