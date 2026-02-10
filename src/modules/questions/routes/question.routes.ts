@@ -159,7 +159,7 @@ questionRouter.post(
 
 /**
  * @swagger
- * /api/v1//questions/essays/{id}/submit:
+ * /api/v1/questions/essays/{id}/submit:
  *   post:
  *     summary: Submit essay for AI grading
  *     tags: [Questions]

@@ -20,7 +20,7 @@ const caseRouter = Router();
 
 /**
  * @swagger
- * /cases:
+ * /api/v1/cases:
  *   get:
  *     summary: Search and filter case law
  *     tags: [Case Law]
@@ -65,7 +65,7 @@ caseRouter.get('/', protect, validate(searchCasesSchema), searchCases);
 
 /**
  * @swagger
- * /cases/all:
+ * /api/v1/cases/all:
  *   get:
  *     summary: Get all cases (no filters)
  *     tags: [Case Law]
@@ -179,7 +179,7 @@ caseRouter.get('/all', protect, validate(getAllCasesSchema), getAllCases);
 
 /**
  * @swagger
- * /cases/saved:
+ * /api/v1/cases/saved:
  *   get:
  *     summary: Get all saved cases
  *     tags: [Case Law]
@@ -199,7 +199,7 @@ caseRouter.get('/saved', protect, validate(getSavedCasesSchema), getSavedCases);
 
 /**
  * @swagger
- * /cases/{id}:
+ * /api/v1/cases/{id}:
  *   get:
  *     summary: Get case details with all tabs
  *     tags: [Case Law]
@@ -220,9 +220,10 @@ caseRouter.get('/saved', protect, validate(getSavedCasesSchema), getSavedCases);
  */
 caseRouter.get('/:id', protect, validate(getCaseDetailsSchema), getCaseDetails);
 
+
 /**
  * @swagger
- * /cases/{id}/save:
+ * /api/v1/cases/{id}/save:
  *   post:
  *     summary: Save or unsave case for revision
  *     tags: [Case Law]
@@ -242,5 +243,6 @@ caseRouter.get('/:id', protect, validate(getCaseDetailsSchema), getCaseDetails);
  *         description: Case not found
  */
 caseRouter.post('/:id/save', protect, validate(saveCaseSchema), toggleSaveCase);
+
 
 export default caseRouter;
