@@ -149,7 +149,7 @@ questionRouter.get('/modules/:moduleId', protect, getModuleQuestions);
  *                           example: Recklessness involves consciously disregarding a known risk — see R v Cunningham (1957)
  */
 questionRouter.post(
-  '/questions/:id/attempt',
+  '/:id/attempt',
   protect,
   validate(attemptQuestionSchema),
   attemptQuestion
