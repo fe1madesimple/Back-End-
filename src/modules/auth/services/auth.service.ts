@@ -112,15 +112,13 @@ class AuthService {
     const emailVerificationExpires = new Date();
     emailVerificationExpires.setMinutes(emailVerificationExpires.getMinutes() + 10);
 
-    // Convert string to number
-    const studyGoalHours = parseInt(dailyStudyGoal, 10);
 
     const user = await prisma.user.create({
       data: {
         email: email.toLowerCase(),
         password: hashedPassword,
         fullName,
-        dailyStudyGoal: studyGoalHours,
+        dailyStudyGoal,
         role: 'STUDENT',
         emailVerificationCode,
         emailVerificationExpires,
