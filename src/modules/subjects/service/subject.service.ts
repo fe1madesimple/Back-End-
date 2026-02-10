@@ -1,5 +1,3 @@
-
-
 import prisma from '@/config/database';
 import { SubjectWithProgress, SubjectDetail } from '../interface/subject.interface';
 import { AppError } from '@/shared/utils';
@@ -16,15 +14,33 @@ export class SubjectService {
       },
     });
 
-    return subjects.map((subject) => ({
-      id: subject.id,
-      name: subject.name,
-      slug: subject.slug,
-      description: subject.description,
-      icon: subject.icon,
-      order: subject.order,
-      progress: subject.userProgress[0] || null,
-    }));
+    return subjects.map((subject) => {
+      const userProgress = subject.userProgress[0];
+
+      return {
+        id: subject.id,
+        name: subject.name,
+        slug: subject.slug,
+        description: subject.description,
+        icon: subject.icon,
+        color: subject.color,
+        progressColor: subject.progressColor,
+        order: subject.order,
+        progress: userProgress
+          ? {
+              progressPercent: userProgress.progressPercent,
+              status: userProgress.status,
+              totalTimeSeconds: userProgress.totalTimeSeconds,
+              lastAccessedAt: userProgress.lastAccessedAt,
+            }
+          : {
+              progressPercent: 0, // ← Changed from null to 0
+              status: 'NOT_STARTED',
+              totalTimeSeconds: 0,
+              lastAccessedAt: null,
+            },
+      };
+    });
   }
 
   async getSubjectById(userId: string, subjectId: string): Promise<SubjectDetail> {
