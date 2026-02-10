@@ -1,7 +1,7 @@
 import { prisma } from '@/shared/config';
 import { AppError } from '@/shared/utils';
 import Anthropic from '@anthropic-ai/sdk';
-
+import { MCQAttemptInput } from '@/modules/practise/interface/practise.interface';
 
 const anthropic = new Anthropic({
   apiKey: process.env.CLAUDE_API_KEY!,
@@ -28,7 +28,9 @@ class Questions {
     return questions;
   }
 
-  async attemptMCQ(userId: string, questionId: string, answer: string, timeTaken?: number) {
+  async attemptMCQ(userId: string, questionId: string, input: MCQAttemptInput) {
+    const { answer, sessionId, timeTaken } = input;
+
     const question = await prisma.question.findUnique({
       where: { id: questionId, type: 'MCQ' },
     });
@@ -37,19 +39,27 @@ class Questions {
       throw new AppError('Question not found');
     }
 
-    // Check if correct
     const isCorrect = answer.toUpperCase() === question.correctAnswer?.toUpperCase();
     const pointsEarned = isCorrect ? question.points : 0;
 
-    // Save attempt
     const attempt = await prisma.questionAttempt.create({
       data: {
         userId,
         questionId,
+        quizSessionId: sessionId,
         answer,
         isCorrect,
         pointsEarned,
         timeTakenSeconds: timeTaken,
+      },
+    });
+
+    await prisma.quizSession.update({
+      where: { id: sessionId },
+      data: {
+        questionsAnswered: { increment: 1 },
+        correctAnswers: isCorrect ? { increment: 1 } : undefined,
+        totalTimeSeconds: { increment: timeTaken || 0 },
       },
     });
 

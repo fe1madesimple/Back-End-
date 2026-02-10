@@ -346,21 +346,34 @@ class Practise {
     };
   }
 
-  async getQuizResults(userId: string, attemptIds: string[]): Promise<QuizResultsResponse> {
-    const attempts = await prisma.questionAttempt.findMany({
-      where: {
-        id: { in: attemptIds },
-        userId,
-      },
-      select: {
-        isCorrect: true,
-        timeTakenSeconds: true,
-        createdAt: true,
+  async getQuizResults(userId: string, sessionId: string): Promise<QuizResultsResponse> {
+    const session = await prisma.quizSession.findUnique({
+      where: { id: sessionId, userId },
+      include: {
+        attempts: {
+          select: {
+            isCorrect: true,
+            timeTakenSeconds: true,
+          },
+        },
       },
     });
 
-    const total = attempts.length;
-    const correct = attempts.filter((a) => a.isCorrect).length; // ← FIXED
+    if (!session) {
+      throw new AppError('Quiz session not found');
+    }
+
+    await prisma.quizSession.update({
+      where: { id: sessionId },
+      data: {
+        isCompleted: true,
+        completedAt: new Date(),
+      },
+    });
+
+    const total = session.totalQuestions;
+    const answered = session.questionsAnswered;
+    const correct = session.correctAnswers;
     const percentage = Math.round((correct / total) * 100);
 
     let message = '';
@@ -377,7 +390,7 @@ class Practise {
     }
 
     let badge = null;
-    if (percentage === 100) {
+    if (percentage === 100 && answered === total) {
       badge = {
         unlocked: true,
         title: 'Perfect Score!',
@@ -386,50 +399,44 @@ class Practise {
     }
 
     const avgTimePerQuestion =
-      attempts.length > 0
-        ? Math.round(
-            attempts.reduce((sum, a) => sum + (a.timeTakenSeconds || 0), 0) / attempts.length
-          )
+      session.attempts.length > 0
+        ? Math.round(session.totalTimeSeconds / session.attempts.length)
         : 0;
 
     const today = new Date();
     today.setHours(0, 0, 0, 0);
-    const sevenDaysAgo = new Date(today);
-    sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
-
-    const last7DaysAttempts = await prisma.questionAttempt.findMany({
-      where: {
-        userId,
-        createdAt: { gte: sevenDaysAgo },
-      },
-      select: { createdAt: true },
-      orderBy: { createdAt: 'asc' },
-    });
-
-    const dailyActivity = new Map<string, boolean>();
-    last7DaysAttempts.forEach((attempt) => {
-      const dateKey = attempt.createdAt.toISOString().split('T')[0];
-      if (dateKey) {
-        dailyActivity.set(dateKey, true);
-      }
-    });
 
     let quizStreak = 0;
     for (let i = 0; i < 7; i++) {
       const date = new Date(today);
       date.setDate(date.getDate() - i);
-      const dateKey = date.toISOString().split('T')[0];
-      if (dateKey && dailyActivity.has(dateKey)) {
+      const dayStart = new Date(date);
+      dayStart.setHours(0, 0, 0, 0);
+      const dayEnd = new Date(date);
+      dayEnd.setHours(23, 59, 59, 999);
+
+      const hasActivity = await prisma.quizSession.count({
+        where: {
+          userId,
+          isCompleted: true,
+          completedAt: { gte: dayStart, lte: dayEnd },
+        },
+      });
+
+      if (hasActivity > 0) {
         quizStreak++;
       } else {
         break;
       }
     }
 
+    await this.updateUserQuizStats(userId, percentage);
+
     return {
       score: {
         correct,
         total,
+        answered,
         percentage,
       },
       message,
