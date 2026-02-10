@@ -21,19 +21,16 @@ export const getMixedChallenge = asyncHandler(async (req: Request, res: Response
   sendSuccess(res, 'Questions retrieved successfully', result);
 });
 
-
 export const getTopicChallenge = asyncHandler(async (req: Request, res: Response) => {
   const userId = req.user!.user.id;
   const { subjectId } = req.params;
 
-  if (!subjectId) throw new AppError("subject")
+  if (!subjectId) throw new AppError('subject');
 
   const result = await practiseService.getTopicChallenge(userId, subjectId);
 
   sendSuccess(res, 'Questions retrieved successfully', result);
 });
-
-
 
 export const getPastQuestions = asyncHandler(async (req: Request, res: Response) => {
   const query: PastQuestionsQuery = {
@@ -61,4 +58,15 @@ export const getPastQuestionById = asyncHandler(async (req: Request, res: Respon
   sendSuccess(res, 'Past question retrieved', { question });
 });
 
+export const getQuizResults = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { sessionId } = req.body;
 
+  if (!sessionId) {
+    throw new AppError('sessionId is required');
+  }
+
+  const results = await practiseService.getQuizResults(userId, sessionId);
+
+  sendSuccess(res, 'Quiz results retrieved', results);
+});

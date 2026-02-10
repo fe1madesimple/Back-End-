@@ -1,11 +1,12 @@
 import { Router } from 'express';
 import {
   getQuickQuiz,
-  getTopicPractice,
   getMixedChallenge,
   getPastQuestions,
-  getQuizResults,
   getPastQuestionById,
+  getTopicChallenge,
+  getQuizResults
+
 } from '../controller/practise.controller';
 import { protect } from '@/shared/middleware/auth.middleware';
 const practiceRouter = Router();
@@ -211,14 +212,14 @@ practiceRouter.get('/mixed-challenge', protect, getMixedChallenge);
  * @swagger
  * /api/v1/practice/quick-quiz:
  *   get:
- *     summary: Get 5 random MCQ questions across all subjects
+ *     summary: Get 5 random MCQ questions with session tracking
  *     tags: [Practice Quizzes]
  *     security:
  *       - bearerAuth: []
- *     description: Returns 5 random multiple-choice questions from across ALL subjects for quick practice. NO PARAMETERS NEEDED - Just call the endpoint!
+ *     description: Returns 5 random questions and creates a quiz session for tracking.
  *     responses:
  *       200:
- *         description: Quick quiz retrieved successfully
+ *         description: Success
  *         content:
  *           application/json:
  *             schema:
@@ -226,47 +227,28 @@ practiceRouter.get('/mixed-challenge', protect, getMixedChallenge);
  *               properties:
  *                 success:
  *                   type: boolean
- *                   example: true
- *                 message:
- *                   type: string
- *                   example: Quick quiz retrieved
  *                 data:
  *                   type: object
  *                   properties:
+ *                     sessionId:
+ *                       type: string
  *                     questions:
  *                       type: array
- *                       items:
- *                         type: object
- *                         properties:
- *                           id:
- *                             type: string
- *                           text:
- *                             type: string
- *                           options:
- *                             type: array
- *                             items:
- *                               type: string
- *                           subject:
- *                             type: string
- *                           module:
- *                             type: string
  *                     totalAvailable:
  *                       type: integer
- *       404:
- *         description: No questions available
  */
 practiceRouter.get('/quick-quiz', protect, getQuickQuiz);
+
 
 
 /**
  * @swagger
  * /api/v1/practice/quiz-results:
  *   post:
- *     summary: Get quiz results and performance summary
+ *     summary: Get quiz results by session
  *     tags: [Practice Quizzes]
  *     security:
  *       - bearerAuth: []
- *     description: Returns score, performance metrics, and motivational message based on quiz attempt results.
  *     requestBody:
  *       required: true
  *       content:
@@ -274,79 +256,13 @@ practiceRouter.get('/quick-quiz', protect, getQuickQuiz);
  *           schema:
  *             type: object
  *             required:
- *               - attemptIds
+ *               - sessionId
  *             properties:
- *               attemptIds:
- *                 type: array
- *                 items:
- *                   type: string
- *                 example: ["attempt_1", "attempt_2", "attempt_3", "attempt_4", "attempt_5"]
+ *               sessionId:
+ *                 type: string
  *     responses:
  *       200:
  *         description: Quiz results retrieved
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 success:
- *                   type: boolean
- *                   example: true
- *                 message:
- *                   type: string
- *                   example: Quiz results retrieved
- *                 data:
- *                   type: object
- *                   properties:
- *                     score:
- *                       type: object
- *                       properties:
- *                         correct:
- *                           type: integer
- *                           example: 3
- *                         total:
- *                           type: integer
- *                           example: 5
- *                         percentage:
- *                           type: integer
- *                           example: 60
- *                     message:
- *                       type: string
- *                       example: "Good effort!"
- *                     badge:
- *                       type: object
- *                       nullable: true
- *                       properties:
- *                         unlocked:
- *                           type: boolean
- *                           example: true
- *                         title:
- *                           type: string
- *                           example: "Perfect Score!"
- *                         description:
- *                           type: string
- *                           example: "You answered all questions correctly. Keep this momentum going!"
- *                     performance:
- *                       type: object
- *                       properties:
- *                         accuracyRate:
- *                           type: integer
- *                           example: 60
- *                         avgTimePerQuestion:
- *                           type: integer
- *                           example: 18
- *                         quizStreak:
- *                           type: integer
- *                           example: 3
- *                     actions:
- *                       type: object
- *                       properties:
- *                         tryAgain:
- *                           type: boolean
- *                           example: true
- *                         nextQuiz:
- *                           type: boolean
- *                           example: true
  */
 practiceRouter.post('/quiz-results', protect, getQuizResults);
 
@@ -527,8 +443,7 @@ practiceRouter.post('/quiz-results', protect, getQuizResults);
  *       404:
  *         description: Subject not found or no questions available
  */
-practiceRouter.get('/topic-challenge/:subjectId', protect, getTopicPractice);
-
+practiceRouter.get('/topic-challenge/:subjectId', protect, getTopicChallenge);
 
 
 /**
