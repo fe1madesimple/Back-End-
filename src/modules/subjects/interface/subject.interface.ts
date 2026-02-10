@@ -29,26 +29,6 @@ export interface SubjectDetail {
     completedLessons: number;
     averageQuizScore: number;
   };
-  resources: {
-    podcast: {
-      id: string;
-      title: string;
-      description: string | null;
-      durationMinutes: number;
-      thumbnail: string;
-    } | null;
-    featuredCase: {
-      id: string;
-      name: string;
-      citation: string;
-      year: number | null;
-    } | null;
-  };
-  practice: {
-    totalQuizQuestions: number;
-    totalEssayQuestions: number;
-    totalCases: number;
-  };
 }
 
 export interface SubjectWithProgress {

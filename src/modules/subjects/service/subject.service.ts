@@ -69,7 +69,6 @@ export class SubjectService {
       throw new AppError('Subject not found');
     }
 
-    // Calculate stats
     const totalModules = subject.modules.length;
     const completedModules = subject.modules.filter(
       (m) => m.userProgress[0]?.status === 'COMPLETED'
@@ -81,7 +80,6 @@ export class SubjectService {
       0
     );
 
-    // Calculate average quiz score for this subject
     const attempts = await prisma.questionAttempt.findMany({
       where: {
         userId,
@@ -104,6 +102,58 @@ export class SubjectService {
         ? attempts.reduce((acc, a) => acc + (a.pointsEarned / a.question.points) * 100, 0) /
           attempts.length
         : 0;
+
+    const recommendedPodcast = await prisma.podcast.findFirst({
+      where: {
+        subject: subject.name,
+        isPublished: true,
+      },
+      orderBy: { createdAt: 'desc' },
+      select: {
+        id: true,
+        title: true,
+        description: true,
+        duration: true,
+        thumbnail: true,
+      },
+    });
+
+    const featuredCase = await prisma.caseBrief.findFirst({
+      where: {
+        subject: subject.name,
+      },
+      orderBy: { year: 'desc' },
+      select: {
+        id: true,
+        name: true,
+        citation: true,
+        year: true,
+      },
+    });
+
+    const totalQuizQuestions = await prisma.question.count({
+      where: {
+        type: 'MCQ',
+        module: {
+          subjectId: subject.id,
+        },
+        isPublished: true,
+      },
+    });
+
+    const totalEssayQuestions = await prisma.question.count({
+      where: {
+        type: 'ESSAY',
+        subject: subject.name,
+        isPublished: true,
+      },
+    });
+
+    const totalCases = await prisma.caseBrief.count({
+      where: {
+        subject: subject.name,
+      },
+    });
 
     const userProgress = subject.userProgress[0];
 
@@ -142,6 +192,30 @@ export class SubjectService {
         totalLessons,
         completedLessons,
         averageQuizScore: Math.round(averageQuizScore),
+      },
+      resources: {
+        podcast: recommendedPodcast
+          ? {
+              id: recommendedPodcast.id,
+              title: recommendedPodcast.title,
+              description: recommendedPodcast.description,
+              durationMinutes: Math.round((recommendedPodcast.duration || 0) / 60),
+              thumbnail: recommendedPodcast.thumbnail || '',
+            }
+          : null,
+        featuredCase: featuredCase
+          ? {
+              id: featuredCase.id,
+              name: featuredCase.name,
+              citation: featuredCase.citation || '',
+              year: featuredCase.year,
+            }
+          : null,
+      },
+      practice: {
+        totalQuizQuestions,
+        totalEssayQuestions,
+        totalCases,
       },
     };
   }
