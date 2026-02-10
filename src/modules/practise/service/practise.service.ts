@@ -47,7 +47,6 @@ class Practise {
   }
 
   async getMixedChallenge(userId: string): Promise<MixedChallengeResponse> {
-    
     const session = await prisma.quizSession.create({
       data: {
         userId,
@@ -158,6 +157,40 @@ class Practise {
       })),
       totalAvailable: totalCount,
       modulesIncluded: uniqueModules,
+    };
+  }
+
+  async getTopicChallenge(userId: string, subjectId: string) {
+    const session = await prisma.quizSession.create({
+      data: {
+        userId,
+        quizType: 'TOPIC_CHALLENGE',
+        totalQuestions: 10,
+      },
+    });
+
+    const questions = await prisma.question.findMany({
+      where: {
+        type: 'MCQ',
+        isPublished: true,
+        module: {
+          subjectId,
+        },
+      },
+      select: {
+        id: true,
+        text: true,
+        options: true,
+        order: true,
+      },
+      orderBy: { order: 'asc' },
+      take: 10,
+    });
+
+    return {
+      sessionId: session.id,
+      questions,
+      totalAvailable: questions.length,
     };
   }
 
