@@ -1,77 +1,11 @@
-import { Router } from "express";
-import { protect } from "@/shared/middleware/auth.middleware";
-import { getModuleQuestions } from "../controller/question.controller";
-import { attemptQuestionSchema, submitEssaySchema } from "../validators/question.validator";
-import { attemptQuestion, submitEssay } from "../controller/question.controller";
-import { validate } from "@/shared/middleware/validation";
+import { Router } from 'express';
+import { protect } from '@/shared/middleware/auth.middleware';
+import { getModuleQuestions } from '../controller/question.controller';
+import { attemptQuestionSchema, submitEssaySchema } from '../validators/question.validator';
+import { attemptQuestion, submitEssay } from '../controller/question.controller';
+import { validate } from '@/shared/middleware/validation';
 
-const questionRouter = Router()
-
-
-
-/**
- * @swagger
- * /api/v1/questions/modules/{moduleId}:
- *   get:
- *     summary: Get module MCQ questions
- *     tags: [Questions]
- *     security:
- *       - bearerAuth: []
- *     description: |
- *       Returns all MCQ questions for a module quiz.
- *       
- *       **Used in:** MCQ quiz page (Image feinreone, feinretwo, feinrethree)
- *       
- *       **Flow:**
- *       1. User finishes watching all lessons in module
- *       2. User clicks "Take Quiz" or "Complete All Module Questions"
- *       3. Frontend fetches questions from this endpoint
- *       4. Frontend displays questions one by one
- *       5. User submits each answer via POST /questions/:id/attempt
- *     parameters:
- *       - in: path
- *         name: moduleId
- *         required: true
- *         schema:
- *           type: string
- *     responses:
- *       200:
- *         description: Questions retrieved successfully
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 success:
- *                   type: boolean
- *                 data:
- *                   type: object
- *                   properties:
- *                     questions:
- *                       type: array
- *                       items:
- *                         type: object
- *                         properties:
- *                           id:
- *                             type: string
- *                           text:
- *                             type: string
- *                             example: Which of the following best describes recklessness?
- *                           options:
- *                             type: array
- *                             items:
- *                               type: string
- *                             example: ["A: Awareness of risk...", "B: Mistake in judgment...", "C: Objective test...", "D: Comprehensive failure..."]
- *                           points:
- *                             type: integer
- *                             example: 1
- *                     total:
- *                       type: integer
- *                       example: 5
- */
-questionRouter.get('/modules/:moduleId', protect, getModuleQuestions);
-
-
+const questionRouter = Router();
 
 /**
  * @swagger
@@ -83,9 +17,9 @@ questionRouter.get('/modules/:moduleId', protect, getModuleQuestions);
  *       - bearerAuth: []
  *     description: |
  *       Submit answer to MCQ question and receive instant feedback.
- *       
+ *
  *       **Used in:** MCQ quiz page (Image feinreone - shows red "Answer Reveal" box after submission)
- *       
+ *
  *       **Flow:**
  *       1. User selects an option (A, B, C, or D)
  *       2. User clicks "Submit"
@@ -148,14 +82,69 @@ questionRouter.get('/modules/:moduleId', protect, getModuleQuestions);
  *                           type: string
  *                           example: Recklessness involves consciously disregarding a known risk — see R v Cunningham (1957)
  */
-questionRouter.post(
-  '/:id/attempt',
-  protect,
-  validate(attemptQuestionSchema),
-  attemptQuestion
-);
+questionRouter.post('/:id/attempt', protect, validate(attemptQuestionSchema), attemptQuestion);
 
-
+/**
+ * @swagger
+ * /api/v1/questions/modules/{moduleId}:
+ *   get:
+ *     summary: Get module MCQ questions
+ *     tags: [Questions]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Returns all MCQ questions for a module quiz.
+ *
+ *       **Used in:** MCQ quiz page (Image feinreone, feinretwo, feinrethree)
+ *
+ *       **Flow:**
+ *       1. User finishes watching all lessons in module
+ *       2. User clicks "Take Quiz" or "Complete All Module Questions"
+ *       3. Frontend fetches questions from this endpoint
+ *       4. Frontend displays questions one by one
+ *       5. User submits each answer via POST /questions/:id/attempt
+ *     parameters:
+ *       - in: path
+ *         name: moduleId
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Questions retrieved successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     questions:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           id:
+ *                             type: string
+ *                           text:
+ *                             type: string
+ *                             example: Which of the following best describes recklessness?
+ *                           options:
+ *                             type: array
+ *                             items:
+ *                               type: string
+ *                             example: ["A: Awareness of risk...", "B: Mistake in judgment...", "C: Objective test...", "D: Comprehensive failure..."]
+ *                           points:
+ *                             type: integer
+ *                             example: 1
+ *                     total:
+ *                       type: integer
+ *                       example: 5
+ */
+questionRouter.get('/modules/:moduleId', protect, getModuleQuestions);
 
 /**
  * @swagger
@@ -167,16 +156,16 @@ questionRouter.post(
  *       - bearerAuth: []
  *     description: |
  *       Submit essay answer for comprehensive AI grading via Claude API.
- *       
+ *
  *       **Used in:** Essay practice pages (Image feinseven, feineight)
- *       
+ *
  *       **Grading Process:**
  *       1. User writes essay in text area
  *       2. User clicks "Submit Answer"
  *       3. Backend sends essay + question to Claude API
  *       4. Claude grades using FE-1 examiner criteria
  *       5. Returns detailed score breakdown and feedback
- *       
+ *
  *       **Response includes:**
  *       - Overall score (0-100)
  *       - Breakdown by 5 criteria
@@ -186,7 +175,7 @@ questionRouter.post(
  *       - List of strengths
  *       - List of improvements needed
  *       - Next steps to improve
- *       
+ *
  *       **AI Model:** Claude Sonnet 4 (claude-sonnet-4-20250514)
  *     parameters:
  *       - in: path
@@ -281,13 +270,6 @@ questionRouter.post(
  *                           type: string
  *                           example: To reach 80%+ app pass, focus on expanding your critical evaluation...
  */
-questionRouter.post(
-  '/essays/:id/submit',
-  protect,
-  validate(submitEssaySchema),
-  submitEssay
-);
+questionRouter.post('/essays/:id/submit', protect, validate(submitEssaySchema), submitEssay);
 
-
-
-export default questionRouter
+export default questionRouter;
