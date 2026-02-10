@@ -12,7 +12,7 @@ import {
   ResetPasswordInput,
   VerifyEmailInput,
   AuthServiceResponse,
-  VerifyResetCodeInput
+  VerifyResetCodeInput,
 } from '../interfaces/auth.interfaces';
 import emailService from '@/shared/services/email.service';
 import { logger } from '@/shared/utils';
@@ -94,7 +94,7 @@ class AuthService {
    * REGISTER NEW USER
    */
   async register(input: RegisterInput): Promise<{ message: string }> {
-    const { email, password, fullName } = input;
+    const { email, password, fullName, dailyStudyGoal } = input;
 
     const existingUser = await prisma.user.findUnique({
       where: { email: email.toLowerCase() },
@@ -106,16 +106,20 @@ class AuthService {
 
     const hashedPassword = await this.hashPassword(password);
 
-    // Generate 4-digit code (not token)
+    // Generate 4-digit code
     const emailVerificationCode = this.generateVerificationCode();
     const emailVerificationExpires = new Date();
-    emailVerificationExpires.setMinutes(emailVerificationExpires.getMinutes() + 10); // 10 minutes
+    emailVerificationExpires.setMinutes(emailVerificationExpires.getMinutes() + 10);
+
+    // Convert string to number 
+    const studyGoalHours = parseInt(dailyStudyGoal, 10);
 
     const user = await prisma.user.create({
       data: {
         email: email.toLowerCase(),
         password: hashedPassword,
         fullName,
+        dailyStudyGoal: studyGoalHours, 
         role: 'STUDENT',
         emailVerificationCode,
         emailVerificationExpires,
@@ -369,36 +373,36 @@ class AuthService {
   /**
    * RESET PASSWORD
    */
- async resetPassword(input: ResetPasswordInput): Promise<void> {
-  const { email, password } = input;
+  async resetPassword(input: ResetPasswordInput): Promise<void> {
+    const { email, password } = input;
 
-  const user = await prisma.user.findFirst({
-    where: {
-      email: email.toLowerCase(),
-      passwordResetCode: {
-        not: null,
+    const user = await prisma.user.findFirst({
+      where: {
+        email: email.toLowerCase(),
+        passwordResetCode: {
+          not: null,
+        },
+        passwordResetExpires: {
+          gt: new Date(),
+        },
       },
-      passwordResetExpires: {
-        gt: new Date(),
-      },
-    },
-  });
+    });
 
-  if (!user) {
-    throw new BadRequestError('Invalid or expired reset session');
+    if (!user) {
+      throw new BadRequestError('Invalid or expired reset session');
+    }
+
+    const hashedPassword = await this.hashPassword(password);
+
+    await prisma.user.update({
+      where: { id: user.id },
+      data: {
+        password: hashedPassword,
+        passwordResetCode: null,
+        passwordResetExpires: null,
+      },
+    });
   }
-
-  const hashedPassword = await this.hashPassword(password);
-
-  await prisma.user.update({
-    where: { id: user.id },
-    data: {
-      password: hashedPassword,
-      passwordResetCode: null,
-      passwordResetExpires: null,
-    },
-  });
-}
 
   /**
    * VERIFY EMAIL
