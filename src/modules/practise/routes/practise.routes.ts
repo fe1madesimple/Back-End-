@@ -3,7 +3,7 @@ import {
   getQuickQuiz,
   getMixedChallenge,
   getPastQuestions,
-  getPastQuestionById,
+  // getPastQuestionById,
   getTopicChallenge,
   getQuizResults
 
@@ -277,108 +277,6 @@ practiceRouter.post('/quiz-results', protect, getQuizResults);
  *       - bearerAuth: []
  *     description: |
  *       Returns 10 random multiple-choice questions from ALL modules in the subject for comprehensive cross-module practice.
- *
- *       **USE CASE:**
- *       - User wants to practice across entire subject (all modules)
- *       - User preparing for full subject exam
- *       - User clicks "Mixed Practice" button on subject page
- *       - Questions come from different modules randomly
- *
- *       **DIFFERENCE FROM OTHER QUIZZES:**
- *       - Quick Quiz: 5 questions from ONE module
- *       - Topic Challenge: 10 questions from ONE module
- *       - Mixed Practice: 15 questions from ALL modules (this endpoint)
- *
- *       **CROSS-MODULE RANDOMIZATION:**
- *       - Questions randomly selected across all modules
- *       - Tests comprehensive subject knowledge
- *       - Each question shows which module it's from
- *       - If subject has <15 questions total, returns all available
- *
- *       **RESPONSE STRUCTURE:**
- *       - Questions returned WITHOUT `correctAnswer` or `explanation`
- *       - User must submit each answer via POST /questions/:id/attempt
- *       - Feedback shown after each submission
- *       - Each question includes `moduleName` to show topic coverage
- *
- *       **FRONTEND FLOW:**
- *       ```javascript
- *       // 1. Fetch mixed practice
- *       const practice = await fetch('/api/v1/practice/mixed-practice/SUBJECT_ID');
- *
- *       // 2. Show practice info
- *       console.log(`${practice.questions.length} questions from ${practice.modulesIncluded} modules`);
- *       // "15 questions from 3 modules"
- *
- *       // 3. Display questions one by one
- *       let currentQuestion = 0;
- *       let score = 0;
- *
- *       practice.questions.forEach((question, index) => {
- *         // Show: "Question 8/15 - Module 2: Offences Against the Person"
- *         // Show question with 4 options
- *       });
- *
- *       // 4. User selects answer
- *       const answer = 'C';
- *       const startTime = Date.now();
- *
- *       // 5. Submit answer
- *       const result = await fetch(`/api/v1/questions/${question.id}/attempt`, {
- *         method: 'POST',
- *         body: JSON.stringify({
- *           answer,
- *           timeTakenSeconds: Math.floor((Date.now() - startTime) / 1000)
- *         })
- *       });
- *
- *       // 6. Update score and track by module
- *       if (result.isCorrect) {
- *         score++;
- *       }
- *
- *       // Track performance by module
- *       moduleScores[question.moduleName] = moduleScores[question.moduleName] || { correct: 0, total: 0 };
- *       moduleScores[question.moduleName].total++;
- *       if (result.isCorrect) moduleScores[question.moduleName].correct++;
- *
- *       // 7. Show feedback immediately
- *       showFeedback(result.isCorrect, result.explanation, question.moduleName);
- *
- *       // 8. Move to next question or show final results
- *       if (currentQuestion < 14) {
- *         currentQuestion++;
- *         showNextQuestion();
- *       } else {
- *         // Show comprehensive results breakdown
- *         showFinalResults(score, 15, moduleScores);
- *         // "You scored 12/15 (80%)"
- *         // "Module 1: 4/5 (80%)"
- *         // "Module 2: 3/5 (60%)"
- *         // "Module 3: 5/5 (100%)"
- *       }
- *       ```
- *
- *       **SCORING:**
- *       - Each question worth 1 point
- *       - Maximum score: 15 points
- *       - Results tracked in QuestionAttempt table
- *       - Show overall percentage: (score / 15) × 100
- *       - Show breakdown by module
- *
- *       **UI DISPLAY:**
- *       - Progress: "Question 8/15"
- *       - Module indicator: "Module 2: Offences Against the Person"
- *       - Score tracker: "11/15 correct (73%)"
- *       - Timer (optional): Total time taken
- *       - Final results with module breakdown
- *
- *       **ANALYTICS VALUE:**
- *       This endpoint helps identify:
- *       - Which modules user is strong in
- *       - Which modules need more study
- *       - Overall subject readiness
- *
  *     parameters:
  *       - in: path
  *         name: subjectId
