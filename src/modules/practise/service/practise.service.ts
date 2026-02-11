@@ -403,7 +403,7 @@ class Practise {
     const total = session.totalQuestions;
     const answered = session.questionsAnswered;
     const correct = session.correctAnswers;
-    const percentage = Math.round((correct / total) * 100);
+    const percentage = answered > 0 ? Math.round((correct / total) * 100) : 0;
 
     let message = '';
     if (percentage <= 20) {
@@ -427,35 +427,39 @@ class Practise {
       };
     }
 
-    const avgTimerPerQuestion =
+    const avgTimePerQuestion =
       session.attempts.length > 0
         ? Math.round(session.totalTimeSeconds / session.attempts.length)
         : 0;
 
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-
     let quizStreak = 0;
-    for (let i = 0; i < 7; i++) {
-      const date = new Date(today);
-      date.setDate(date.getDate() - i);
-      const dayStart = new Date(date);
-      dayStart.setHours(0, 0, 0, 0);
-      const dayEnd = new Date(date);
-      dayEnd.setHours(23, 59, 59, 999);
 
-      const hasActivity = await prisma.quizSession.count({
-        where: {
-          userId,
-          isCompleted: true,
-          completedAt: { gte: dayStart, lte: dayEnd },
-        },
-      });
+    if (answered === total) {
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
 
-      if (hasActivity > 0) {
-        quizStreak++;
-      } else {
-        break;
+      for (let i = 0; i < 7; i++) {
+        const date = new Date(today);
+        date.setDate(date.getDate() - i);
+        const dayStart = new Date(date);
+        dayStart.setHours(0, 0, 0, 0);
+        const dayEnd = new Date(date);
+        dayEnd.setHours(23, 59, 59, 999);
+
+        const hasActivity = await prisma.quizSession.count({
+          where: {
+            userId,
+            isCompleted: true,
+            questionsAnswered: session.totalQuestions,
+            completedAt: { gte: dayStart, lte: dayEnd },
+          },
+        });
+
+        if (hasActivity > 0) {
+          quizStreak++;
+        } else {
+          break;
+        }
       }
     }
 
@@ -472,9 +476,9 @@ class Practise {
       badge,
       performance: {
         accuracyRate: percentage,
-        avgTimerPerQuestion,
+        avgTimePerQuestion,
         quizStreak,
-      }
+      },
     };
   }
 }

@@ -86,6 +86,7 @@ const questionRouter = Router();
  */
 questionRouter.post('/:id/attempt', protect, validate(attemptQuestionSchema), attemptMCQ);
 
+
 /**
  * @swagger
  * /api/v1/questions/modules/{moduleId}:

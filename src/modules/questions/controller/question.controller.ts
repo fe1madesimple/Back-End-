@@ -24,6 +24,7 @@ export const attemptMCQ = asyncHandler(async (req: Request, res: Response) => {
   const userId = req.user!.user.id;
   const { id: questionId } = req.params;
   const input: MCQAttemptInput = req.body;
+  
   if (!questionId) throw new AppError("questionId must be provided")
 
   const result = await questionsService.attemptMCQ(userId, questionId, input);
