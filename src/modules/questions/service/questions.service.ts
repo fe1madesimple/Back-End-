@@ -1,6 +1,5 @@
 import { prisma } from '@/shared/config';
 import { AppError } from '@/shared/utils';
-import Anthropic from '@anthropic-ai/sdk';
 import { MCQAttemptInput } from '@/modules/practise/interface/practise.interface';
 
 // const anthropic = new Anthropic({

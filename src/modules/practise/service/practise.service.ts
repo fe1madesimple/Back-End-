@@ -446,8 +446,8 @@ class Practise {
     }
 
     const avgTimerPerQuestion =
-      session.attempts.length > 0
-        ? Math.round(session.totalTimeSeconds / session.attempts.length)
+      session.questionsAnswered > 0
+        ? Math.round(session.totalTimeSeconds / session.questionsAnswered)
         : 0;
 
     let quizStreak = 0;
@@ -481,7 +481,7 @@ class Practise {
       }
     }
 
-    await this.updateUserQuizStats(userId); 
+    await this.updateUserQuizStats(userId);
 
     return {
       score: { correct, total, answered, percentage },
