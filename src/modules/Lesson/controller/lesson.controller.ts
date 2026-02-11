@@ -4,25 +4,14 @@ import lessonService from '../service/lesson.service';
 import { Request, Response } from 'express';
 import { sendSuccess } from '@/shared/utils';
 
-export const getLessonById = asyncHandler(async (req: Request, res: Response): Promise<any> => {
-  const userId = req.user!.user.id;
-  const { id } = req.params;
 
-  if (!id) return new AppError('lesson id must be supplied');
-
-  const lesson = await lessonService.getLessonById(userId, id);
-
-  sendSuccess(res, 'Lesson retrieved successfully', { lesson });
-});
-
-// src/modules/content/controller/content.controller.ts
 
 export const trackVideoProgress = asyncHandler(async (req: Request, res: Response) => {
   const userId = req.user!.user.id;
   const { id } = req.params;
   const { currentTime, videoDuration } = req.body;
 
-  if (!id) throw new AppError("lesson id must be provided")
+  if (!id) throw new AppError('lesson id must be provided');
 
   await lessonService.trackVideoProgress(userId, id, currentTime, videoDuration);
 
@@ -39,4 +28,24 @@ export const trackTimeSpent = asyncHandler(async (req: Request, res: Response) =
   await lessonService.trackTimeSpent(userId, id, seconds);
 
   sendSuccess(res, 'Time tracked successfully');
+});
+
+export const getModulesBySubject = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { subjectId } = req.params;
+
+  const result = await lessonService.getModulesBySubject(userId, subjectId);
+
+  sendSuccess(res, 'Modules retrieved successfully', result);
+});
+
+export const getLessonById = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { id } = req.params;
+
+  if (!id) throw new AppError("lesson id is required")
+
+  const result = await lessonService.getLessonById(userId, id);
+
+  sendSuccess(res, 'Lesson retrieved successfully', result);
 });
