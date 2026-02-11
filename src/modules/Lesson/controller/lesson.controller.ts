@@ -34,6 +34,8 @@ export const getModulesBySubject = asyncHandler(async (req: Request, res: Respon
   const userId = req.user!.user.id;
   const { subjectId } = req.params;
 
+  if (!subjectId) throw new AppError("subjectId must be provided")
+
   const result = await lessonService.getModulesBySubject(userId, subjectId);
 
   sendSuccess(res, 'Modules retrieved successfully', result);

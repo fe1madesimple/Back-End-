@@ -190,6 +190,85 @@ lessonRouter.post(
 
 /**
  * @swagger
+ * /api/v1/lessons/subjects/{subjectId}/modules:
+ *   get:
+ *     summary: Get all modules with lessons for a subject
+ *     tags: [Lessons]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Returns all modules for a subject with lesson list, progress status, and completion count. Used for module list screen showing expandable/collapsible modules with lesson titles.
+ *     parameters:
+ *       - in: path
+ *         name: subjectId
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: Subject ID
+ *     responses:
+ *       200:
+ *         description: Modules retrieved successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Modules retrieved successfully
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     modules:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           id:
+ *                             type: string
+ *                           name:
+ *                             type: string
+ *                             example: "Module 1: Foundations of Criminal Law"
+ *                           slug:
+ *                             type: string
+ *                           order:
+ *                             type: integer
+ *                           status:
+ *                             type: string
+ *                             enum: [COMPLETED, IN_PROGRESS, NOT_STARTED]
+ *                             example: COMPLETED
+ *                           progress:
+ *                             type: object
+ *                             properties:
+ *                               completedLessons:
+ *                                 type: integer
+ *                                 example: 5
+ *                               totalLessons:
+ *                                 type: integer
+ *                                 example: 5
+ *                           lessons:
+ *                             type: array
+ *                             items:
+ *                               type: object
+ *                               properties:
+ *                                 id:
+ *                                   type: string
+ *                                 title:
+ *                                   type: string
+ *                                   example: "Lesson 1: Characteristics of a Crime"
+ *                                 order:
+ *                                   type: integer
+ *       404:
+ *         description: Subject not found
+ */
+lessonRouter.post('/subjects/{subjectId}/modules', protect, trackTimeSpent);
+
+
+
+/**
+ * @swagger
  * /api/v1/lessons/{id}/track-time:
  *   post:
  *     summary: Track time spent on lesson
