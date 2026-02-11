@@ -1,6 +1,6 @@
 import { prisma } from '@/shared/config';
 import { AppError } from '@/shared/utils';
-import { LessonDetailResponse } from '../interface/lesson.interface';
+import { LessonDetailResponse, ModuleListResponse } from '../interface/lesson.interface';
 
 class Lesson {
   // src/modules/content/service/content.service.ts
@@ -312,7 +312,7 @@ class Lesson {
       id: lesson.id,
       title: lesson.title,
       slug: lesson.slug,
-      content: lesson.content || null, 
+      content: lesson.content || null,
       videoUrl: lesson.videoUrl,
       videoDuration: lesson.videoDuration,
       transcript: lesson.transcript,
@@ -328,7 +328,7 @@ class Lesson {
             isCompleted: userProgress.isCompleted,
             videoWatchedSeconds: userProgress.videoWatchedSeconds,
             timeSpentSeconds: userProgress.timeSpentSeconds,
-            lastAccessedAt: userProgress.lastAccessedAt || null, 
+            lastAccessedAt: userProgress.lastAccessedAt || null,
           }
         : null,
       subjectModules: allModules.map((module) => ({
@@ -341,6 +341,62 @@ class Lesson {
           order: l.order,
         })),
       })),
+    };
+  }
+
+  async getModulesBySubject(userId: string, subjectId: string): Promise<ModuleListResponse> {
+    const modules = await prisma.module.findMany({
+      where: {
+        subjectId,
+        isPublished: true,
+      },
+      include: {
+        lessons: {
+          where: { isPublished: true },
+          select: {
+            id: true,
+            title: true,
+            order: true,
+          },
+          orderBy: { order: 'asc' },
+        },
+        userProgress: {
+          where: { userId },
+        },
+      },
+      orderBy: { order: 'asc' },
+    });
+
+    return {
+      modules: modules.map((module) => {
+        const userProgress = module.userProgress[0];
+        const totalLessons = module.lessons.length;
+        const completedLessons = userProgress?.completedLessons || 0;
+
+        let status: 'COMPLETED' | 'IN_PROGRESS' | 'NOT_STARTED' = 'NOT_STARTED';
+        if (completedLessons === totalLessons && totalLessons > 0) {
+          status = 'COMPLETED';
+        } else if (completedLessons > 0) {
+          status = 'IN_PROGRESS';
+        }
+
+        return {
+          id: module.id,
+          name: module.name,
+          slug: module.slug,
+          order: module.order,
+          status,
+          progress: {
+            completedLessons,
+            totalLessons,
+          },
+          lessons: module.lessons.map((lesson) => ({
+            id: lesson.id,
+            title: lesson.title,
+            order: lesson.order,
+          })),
+        };
+      }),
     };
   }
 }

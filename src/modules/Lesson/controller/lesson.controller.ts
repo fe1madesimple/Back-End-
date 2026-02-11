@@ -49,3 +49,5 @@ export const getLessonById = asyncHandler(async (req: Request, res: Response) =>
 
   sendSuccess(res, 'Lesson retrieved successfully', result);
 });
+
+
