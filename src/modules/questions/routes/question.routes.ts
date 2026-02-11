@@ -17,7 +17,7 @@ const questionRouter = Router();
  *     tags: [Practice Quizzes]
  *     security:
  *       - bearerAuth: []
- *     description: Submit user's answer to a multiple choice question. The answer is immediately graded and the quiz session is updated with the result. Returns whether answer was correct, points earned, correct answer, and explanation.
+ *     description: Submit user's answer to a multiple choice question. The answer is immediately graded and the quiz session is updated with the result. Time tracking is mandatory for calculating average time per question in results.
  *     parameters:
  *       - in: path
  *         name: id
@@ -34,6 +34,7 @@ const questionRouter = Router();
  *             required:
  *               - answer
  *               - sessionId
+ *               - timeTaken
  *             properties:
  *               answer:
  *                 type: string
@@ -46,7 +47,7 @@ const questionRouter = Router();
  *               timeTaken:
  *                 type: integer
  *                 example: 18
- *                 description: Time taken to answer in seconds (optional)
+ *                 description: Time taken to answer in seconds (required)
  *     responses:
  *       200:
  *         description: Answer submitted successfully
@@ -85,6 +86,7 @@ const questionRouter = Router();
  *         description: Question not found
  */
 questionRouter.post('/:id/attempt', protect, validate(attemptQuestionSchema), attemptMCQ);
+
 
 
 /**

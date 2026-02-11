@@ -410,6 +410,13 @@ class Practise {
       throw new AppError('Quiz session not found');
     }
 
+    console.log('🔍 SESSION DEBUG:', {
+      sessionId: session.id,
+      totalTimeSeconds: session.totalTimeSeconds,
+      questionsAnswered: session.questionsAnswered,
+      attempts: session.attempts,
+    });
+
     await prisma.quizSession.update({
       where: { id: sessionId },
       data: {
