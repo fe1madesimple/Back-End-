@@ -11,7 +11,6 @@ import {
 import { QuickQuizResponse } from '../interface/practise.interface';
 
 class Practise {
-
   private async updateUserQuizStats(userId: string) {
     const allSessions = await prisma.quizSession.findMany({
       where: {
@@ -25,9 +24,7 @@ class Practise {
       },
     });
 
-    const completedSessions = allSessions.filter(
-      (s) => s.questionsAnswered === s.totalQuestions
-    );
+    const completedSessions = allSessions.filter((s) => s.questionsAnswered === s.totalQuestions);
 
     if (completedSessions.length === 0) {
       await prisma.user.update({
@@ -484,15 +481,10 @@ class Practise {
       }
     }
 
-    await this.updateUserQuizStats(userId);
+    await this.updateUserQuizStats(userId); 
 
     return {
-      score: {
-        correct,
-        total,
-        answered,
-        percentage,
-      },
+      score: { correct, total, answered, percentage },
       message,
       badge,
       performance: {
