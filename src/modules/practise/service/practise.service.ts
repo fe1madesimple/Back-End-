@@ -1,12 +1,12 @@
 import { prisma } from '@/shared/config';
 import { AppError, NotFoundError, BadRequestError } from '@/shared/utils';
 import {
-  MixedPracticeResponse,
   MixedChallengeResponse,
   PastQuestionsListResponse,
   PastQuestionsQuery,
   PastQuestionDetailResponse,
   QuizResultsResponse,
+  TopicChallengeResponse,
 } from '../interface/practise.interface';
 import { QuickQuizResponse } from '../interface/practise.interface';
 
@@ -120,7 +120,7 @@ class Practise {
   `) as Array<{
       id: string;
       text: string;
-      options: any;
+      options: string;
       order: number;
       subjectName: string;
       moduleName: string;
@@ -131,7 +131,7 @@ class Practise {
       questions: randomQuestions.map((q) => ({
         id: q.id,
         text: q.text,
-        options: q.options,
+        options: typeof q.options === 'string' ? JSON.parse(q.options) : q.options,
         order: q.order,
         subject: q.subjectName,
         module: q.moduleName,
