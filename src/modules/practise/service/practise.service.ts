@@ -11,6 +11,7 @@ import {
 import { QuickQuizResponse } from '../interface/practise.interface';
 
 class Practise {
+
   private async updateUserQuizStats(userId: string) {
     const allSessions = await prisma.quizSession.findMany({
       where: {
@@ -20,15 +21,35 @@ class Practise {
       select: {
         correctAnswers: true,
         totalQuestions: true,
+        questionsAnswered: true,
       },
     });
 
-    const scores = allSessions.map((s) => Math.round((s.correctAnswers / s.totalQuestions) * 100));
+    const completedSessions = allSessions.filter(
+      (s) => s.questionsAnswered === s.totalQuestions
+    );
 
-    const averageScore =
-      scores.length > 0 ? Math.round(scores.reduce((a, b) => a + b) / scores.length) : 0;
-    const highestScore = scores.length > 0 ? Math.max(...scores) : 0;
-    const lowestScore = scores.length > 0 ? Math.min(...scores) : 0;
+    if (completedSessions.length === 0) {
+      await prisma.user.update({
+        where: { id: userId },
+        data: {
+          averageQuizScore: 0,
+          highestQuizScore: 0,
+          lowestQuizScore: 0,
+        },
+      });
+      return;
+    }
+
+    const totalCorrect = completedSessions.reduce((sum, s) => sum + s.correctAnswers, 0);
+    const totalQuestions = completedSessions.reduce((sum, s) => sum + s.totalQuestions, 0);
+    const averageScore = Math.round((totalCorrect / totalQuestions) * 100);
+
+    const scores = completedSessions.map((s) =>
+      Math.round((s.correctAnswers / s.totalQuestions) * 100)
+    );
+    const highestScore = Math.max(...scores);
+    const lowestScore = Math.min(...scores);
 
     await prisma.user.update({
       where: { id: userId },
