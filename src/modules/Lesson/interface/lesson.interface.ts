@@ -37,3 +37,22 @@ export interface LessonDetailResponse {
     }>;
   }>;
 }
+
+export interface ModuleListResponse {
+  modules: Array<{
+    id: string;
+    name: string;
+    slug: string;
+    order: number;
+    status: 'COMPLETED' | 'IN_PROGRESS' | 'NOT_STARTED';
+    progress: {
+      completedLessons: number;
+      totalLessons: number;
+    };
+    lessons: Array<{
+      id: string;
+      title: string;
+      order: number;
+    }>;
+  }>;
+}
