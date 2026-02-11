@@ -265,106 +265,11 @@ lessonRouter.post('/:id/track-time', protect, validate(trackTimeSchema), trackTi
  * @swagger
  * /api/v1/lessons/{id}:
  *   get:
- *     summary: Get lesson details with video, content, and progress
+ *     summary: Get lesson details with sidebar navigation
  *     tags: [Lessons]
  *     security:
  *       - bearerAuth: []
- *     description: |
- *       Returns complete lesson information including video URL, content, transcript, assets, and user's progress.
- *
- *       **USED IN:** Video player page (main content area)
- *
- *       **RESPONSE INCLUDES:**
- *       - Lesson content (markdown)
- *       - Video URL (Cloudinary)
- *       - Video duration (if available in DB, otherwise frontend gets it from video player)
- *       - Transcript text
- *       - PDF/audio assets attached to lesson
- *       - User's progress (videoWatchedSeconds for resume, completion status)
- *       - Module and subject context (for breadcrumb navigation)
- *
- *       **SIDE EFFECTS:**
- *       This endpoint automatically updates `lastAccessedAt` timestamps for:
- *       - The lesson itself
- *       - The parent module
- *       - The parent subject
- *
- *       This enables "Recently Viewed" and "Continue Learning" features.
- *
- *       **FRONTEND IMPLEMENTATION:**
- *
- *       When user opens a lesson, the frontend should:
- *
- *       1. **Fetch lesson data:**
- *       ```javascript
- *       const response = await fetch('/api/v1/lessons/LESSON_ID', {
- *         headers: { 'Authorization': 'Bearer TOKEN' }
- *       });
- *       const { data } = await response.json();
- *       const lesson = data.lesson;
- *       ```
- *
- *       2. **Display video with resume functionality:**
- *       ```javascript
- *       const videoPlayer = document.querySelector('video');
- *       videoPlayer.src = lesson.videoUrl;
- *
- *       // Resume from saved position
- *       const savedPosition = lesson.progress.videoWatchedSeconds;
- *       if (savedPosition > 0) {
- *         videoPlayer.currentTime = savedPosition; // Jump to 7:30 if saved at 450s
- *       }
- *       ```
- *
- *       3. **Display lesson content:**
- *       ```javascript
- *       // Render markdown content
- *       document.getElementById('lesson-content').innerHTML =
- *         markdownToHtml(lesson.content);
- *
- *       // Show transcript (collapsible/expandable)
- *       document.getElementById('transcript').textContent = lesson.transcript;
- *       ```
- *
- *       4. **Display downloadable assets:**
- *       ```javascript
- *       lesson.assets.forEach(asset => {
- *         // Create download button for each PDF/audio file
- *         const button = document.createElement('a');
- *         button.href = asset.url;
- *         button.download = asset.title;
- *         button.textContent = `Download ${asset.title}`;
- *       });
- *       ```
- *
- *       5. **Show completion status:**
- *       ```javascript
- *       if (lesson.progress.isCompleted) {
- *         showCompletionBadge(); // ✓ Completed
- *       } else {
- *         const percentWatched = (lesson.progress.videoWatchedSeconds / lesson.videoDuration) * 100;
- *         showProgressBar(percentWatched); // 52% watched
- *       }
- *       ```
- *
- *       6. **Start tracking progress:**
- *       After fetching lesson, begin video and time tracking (see track-video and track-time endpoints).
- *
- *       **VIDEO DURATION HANDLING:**
- *       - If `videoDuration` is null in response, frontend must get it from video player:
- *       ```javascript
- *       videoPlayer.addEventListener('loadedmetadata', () => {
- *         const duration = Math.floor(videoPlayer.duration);
- *         // Send this duration with first track-video ping
- *       });
- *       ```
- *
- *       **BREADCRUMB NAVIGATION:**
- *       Use subject and module info from response:
- *       ```
- *       Criminal Law > Module 1: Foundations > Lesson 1: Characteristics
- *       ```
- *
+ *     description: Returns complete lesson details including video URL, content (markdown), transcript, user progress, and all modules/lessons for sidebar navigation.
  *     parameters:
  *       - in: path
  *         name: id
@@ -382,113 +287,80 @@ lessonRouter.post('/:id/track-time', protect, validate(trackTimeSchema), trackTi
  *               properties:
  *                 success:
  *                   type: boolean
- *                   example: true
  *                 message:
  *                   type: string
- *                   example: Lesson retrieved
  *                 data:
  *                   type: object
  *                   properties:
- *                     lesson:
+ *                     id:
+ *                       type: string
+ *                     title:
+ *                       type: string
+ *                       example: "Lesson 1: Characteristics of a Crime"
+ *                     slug:
+ *                       type: string
+ *                     content:
+ *                       type: string
+ *                       nullable: true
+ *                       description: Lesson content in markdown format
+ *                     videoUrl:
+ *                       type: string
+ *                       nullable: true
+ *                     videoDuration:
+ *                       type: integer
+ *                       nullable: true
+ *                     transcript:
+ *                       type: string
+ *                       nullable: true
+ *                     order:
+ *                       type: integer
+ *                     module:
  *                       type: object
  *                       properties:
  *                         id:
  *                           type: string
- *                           example: clx789abc
- *                         title:
+ *                         name:
  *                           type: string
- *                           example: "Lesson 1: Characteristics of a Crime"
- *                         slug:
+ *                         subjectId:
  *                           type: string
- *                           example: characteristics-of-a-crime
- *                         content:
+ *                         subjectName:
  *                           type: string
- *                           example: "# Characteristics of a Crime\n\n## Introduction\nA crime is conduct prohibited by law..."
- *                           description: Markdown-formatted lesson content
- *                         transcript:
- *                           type: string
- *                           example: "0:00 - Welcome to FE-1 Criminal Law essentials..."
- *                         videoUrl:
- *                           type: string
- *                           example: "https://res.cloudinary.com/demo/video/upload/v1234567890/fe1/criminal-law/lesson-1.mp4"
- *                         videoDuration:
+ *                     userProgress:
+ *                       type: object
+ *                       nullable: true
+ *                       properties:
+ *                         isCompleted:
+ *                           type: boolean
+ *                         videoWatchedSeconds:
  *                           type: integer
+ *                         timeSpentSeconds:
+ *                           type: integer
+ *                         lastAccessedAt:
+ *                           type: string
+ *                           format: date-time
  *                           nullable: true
- *                           example: 863
- *                           description: Duration in seconds (may be null if not yet stored, frontend should get from video player)
- *                         order:
- *                           type: integer
- *                           example: 1
- *                         module:
- *                           type: object
- *                           properties:
- *                             id:
- *                               type: string
- *                               example: clx456def
- *                             name:
- *                               type: string
- *                               example: "Module 1: Foundations of Criminal Law"
- *                             slug:
- *                               type: string
- *                               example: foundations-of-criminal-law
- *                         subject:
- *                           type: object
- *                           properties:
- *                             id:
- *                               type: string
- *                               example: clx123ghi
- *                             name:
- *                               type: string
- *                               example: Criminal Law
- *                             slug:
- *                               type: string
- *                               example: criminal-law
- *                         progress:
- *                           type: object
- *                           properties:
- *                             isCompleted:
- *                               type: boolean
- *                               example: false
- *                             videoWatchedSeconds:
- *                               type: integer
- *                               example: 450
- *                               description: Last watched position (use to resume video)
- *                             timeSpentSeconds:
- *                               type: integer
- *                               example: 600
- *                               description: Total active time spent on this lesson
- *                             completedAt:
- *                               type: string
- *                               format: date-time
- *                               nullable: true
- *                               example: null
- *                         assets:
- *                           type: array
- *                           items:
- *                             type: object
- *                             properties:
- *                               id:
- *                                 type: string
- *                                 example: clxjkl
- *                               type:
- *                                 type: string
- *                                 enum: [VIDEO, PDF, AUDIO, IMAGE]
- *                                 example: PDF
- *                               title:
- *                                 type: string
- *                                 example: "Characteristics of Crime - Summary Notes.pdf"
- *                               url:
- *                                 type: string
- *                                 example: "https://res.cloudinary.com/demo/image/upload/v1234567890/fe1/criminal-law/lesson-1-notes.pdf"
- *                               fileSize:
- *                                 type: integer
- *                                 example: 245678
- *                                 description: File size in bytes
- *                               mimeType:
- *                                 type: string
- *                                 example: application/pdf
- *       404:
- *         description: Lesson not found
+ *                     subjectModules:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           id:
+ *                             type: string
+ *                           name:
+ *                             type: string
+ *                           order:
+ *                             type: integer
+ *                           lessons:
+ *                             type: array
+ *                             items:
+ *                               type: object
+ *                               properties:
+ *                                 id:
+ *                                   type: string
+ *                                 title:
+ *                                   type: string
+ *                                 order:
+ *                                   type: integer
  */
 lessonRouter.get('/lessons/:id', protect, getLessonById);
 
