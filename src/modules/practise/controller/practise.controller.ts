@@ -25,7 +25,7 @@ export const getTopicChallenge = asyncHandler(async (req: Request, res: Response
   const userId = req.user!.user.id;
   const { subjectId } = req.params;
 
-  if (!subjectId) throw new AppError('subject');
+  if (!subjectId) throw new AppError('subject id must be provided');
 
   const result = await practiseService.getTopicChallenge(userId, subjectId);
 
