@@ -3,8 +3,6 @@ import { AppError } from '@/shared/utils';
 import { LessonDetailResponse } from '../interface/lesson.interface';
 
 class Lesson {
-
-
   // src/modules/content/service/content.service.ts
 
   async trackVideoProgress(
@@ -286,6 +284,7 @@ class Lesson {
           videoWatchedSeconds: 0,
           timeSpentSeconds: 0,
           isCompleted: false,
+          lastAccessedAt: new Date(),
         },
       });
     }
@@ -313,7 +312,7 @@ class Lesson {
       id: lesson.id,
       title: lesson.title,
       slug: lesson.slug,
-      description: lesson.description,
+      content: lesson.content || null, 
       videoUrl: lesson.videoUrl,
       videoDuration: lesson.videoDuration,
       transcript: lesson.transcript,
@@ -329,7 +328,7 @@ class Lesson {
             isCompleted: userProgress.isCompleted,
             videoWatchedSeconds: userProgress.videoWatchedSeconds,
             timeSpentSeconds: userProgress.timeSpentSeconds,
-            lastAccessedAt: userProgress.lastAccessedAt,
+            lastAccessedAt: userProgress.lastAccessedAt || null, 
           }
         : null,
       subjectModules: allModules.map((module) => ({

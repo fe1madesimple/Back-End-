@@ -9,7 +9,7 @@ export interface LessonDetailResponse {
   id: string;
   title: string;
   slug: string;
-  description: string | null;
+  content: string | null;
   videoUrl: string | null;
   videoDuration: number | null;
   transcript: string | null;
