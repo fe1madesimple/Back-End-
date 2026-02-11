@@ -659,9 +659,7 @@ Intentionally or recklessly causing serious harm to another.
 
   console.log('✅ Created tortlaw Law modules and lessons');
 
-  // ============================================
-  // MODULE QUESTIONS (MCQs)
-  // ============================================
+
 
   await prisma.question.createMany({
     data: [

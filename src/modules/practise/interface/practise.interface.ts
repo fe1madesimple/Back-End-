@@ -50,6 +50,8 @@ export interface QuickQuizResponse {
     text: string;
     options: any;
     order: number;
+    subject: string;
+    module: string;
   }>;
   totalAvailable: number;
 }
@@ -71,6 +73,7 @@ export interface PastQuestionDetailResponse {
   }[];
 }
 
+
 export interface MixedChallengeResponse {
   sessionId: string;
   questions: Array<{
@@ -90,6 +93,7 @@ export interface MCQAttemptInput {
   timeTaken?: number;
 }
 
+
 export interface TopicChallengeResponse {
   sessionId: string;
   questions: Array<{
@@ -97,6 +101,8 @@ export interface TopicChallengeResponse {
     text: string;
     options: any;
     order: number;
+    subject: string;
+    module: string;
   }>;
   totalAvailable: number;
 }

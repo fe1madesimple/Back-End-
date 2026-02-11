@@ -3,7 +3,7 @@ import { protect } from '@/shared/middleware/auth.middleware';
 import { attemptQuestionSchema, } from '../validators/question.validator';
 import {  } from '../controller/question.controller';
 import { validate } from '@/shared/middleware/validation';
-import { attemptMCQ } from '../controller/question.controller';
+import { attemptMCQ, getModuleQuestions} from '../controller/question.controller';
 
 const questionRouter = Router();
 
@@ -148,7 +148,7 @@ questionRouter.post('/:id/attempt', protect, validate(attemptQuestionSchema), at
 //  *                       type: integer
 //  *                       example: 5
 //  */
-// questionRouter.get('/modules/:moduleId', protect, getModuleQuestions);
+questionRouter.get('/modules/:moduleId', protect, getModuleQuestions);
 
 
 
