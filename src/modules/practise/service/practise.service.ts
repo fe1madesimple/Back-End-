@@ -59,7 +59,6 @@ class Practise {
   }
 
   async getQuickQuiz(userId: string): Promise<QuickQuizResponse> {
-
     const session = await prisma.quizSession.create({
       data: {
         userId,
@@ -193,7 +192,7 @@ class Practise {
     };
   }
 
-  async getTopicChallenge(userId: string, subjectId: string) {
+  async getTopicChallenge(userId: string, subjectId: string): Promise<TopicChallengeResponse> {
     const session = await prisma.quizSession.create({
       data: {
         userId,
@@ -215,6 +214,16 @@ class Practise {
         text: true,
         options: true,
         order: true,
+        module: {
+          select: {
+            name: true,
+            subject: {
+              select: {
+                name: true,
+              },
+            },
+          },
+        },
       },
       orderBy: { order: 'asc' },
       take: 10,
@@ -222,11 +231,17 @@ class Practise {
 
     return {
       sessionId: session.id,
-      questions,
+      questions: questions.map((q) => ({
+        id: q.id,
+        text: q.text,
+        options: typeof q.options === 'string' ? JSON.parse(q.options) : q.options,
+        order: q.order,
+        subject: q.module.subject.name,
+        module: q.module.name,
+      })),
       totalAvailable: questions.length,
     };
   }
-
   async getPastQuestions(query: PastQuestionsQuery): Promise<PastQuestionsListResponse> {
     const { search, subject, year, examType, page = 1, limit = 9 } = query;
 
