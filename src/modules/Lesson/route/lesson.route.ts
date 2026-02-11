@@ -10,7 +10,7 @@ const lessonRouter = Router();
 
 /**
  * @swagger
- * /api/v1/lessons/{subjectId}:
+ * /api/v1/lessons/modules/{subjectId}:
  *   get:
  *     summary: Get all modules with lessons for a subject
  *     tags: [Lessons]
