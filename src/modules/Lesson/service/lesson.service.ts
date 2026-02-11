@@ -1,98 +1,9 @@
 import { prisma } from '@/shared/config';
 import { AppError } from '@/shared/utils';
+import { LessonDetailResponse } from '../interface/lesson.interface';
 
 class Lesson {
-  async getLessonById(userId: string, lessonId: string) {
-    const lesson = await prisma.lesson.findUnique({
-      where: { id: lessonId, isPublished: true },
-      include: {
-        module: {
-          include: {
-            subject: {
-              select: { id: true, name: true, slug: true },
-            },
-          },
-        },
-        assets: {
-          orderBy: { order: 'asc' },
-        },
-        userProgress: {
-          where: { userId },
-        },
-      },
-    });
 
-    if (!lesson) {
-      throw new AppError('Lesson not found');
-    }
-
-    const totalLessons = await prisma.lesson.count({
-      where: { moduleId: lesson.moduleId, isPublished: true },
-    });
-
-    await Promise.all([
-      // Update lesson progress
-      prisma.userLessonProgress.upsert({
-        where: {
-          userId_lessonId: { userId, lessonId },
-        },
-        create: { userId, lessonId },
-        update: {},
-      }),
-
-      // Update module progress
-      prisma.userModuleProgress.upsert({
-        where: {
-          userId_moduleId: { userId, moduleId: lesson.moduleId },
-        },
-        create: {
-          userId,
-          moduleId: lesson.moduleId,
-          totalLessons,
-        },
-        update: {
-          lastAccessedAt: new Date(),
-        },
-      }),
-
-      // Update subject progress
-      prisma.userSubjectProgress.upsert({
-        where: {
-          userId_subjectId: { userId, subjectId: lesson.module.subjectId },
-        },
-        create: {
-          userId,
-          subjectId: lesson.module.subjectId,
-        },
-        update: {
-          lastAccessedAt: new Date(),
-        },
-      }),
-    ]);
-
-    return {
-      id: lesson.id,
-      title: lesson.title,
-      slug: lesson.slug,
-      content: lesson.content,
-      transcript: lesson.transcript,
-      order: lesson.order,
-      videoUrl: lesson.videoUrl,
-      videoDuration: lesson.videoDuration,
-      module: {
-        id: lesson.module.id,
-        name: lesson.module.name,
-        slug: lesson.module.slug,
-        subject: lesson.module.subject,
-      },
-      assets: lesson.assets,
-      progress: lesson.userProgress[0] || {
-        isCompleted: false,
-        videoWatchedSeconds: 0,
-        timeSpentSeconds: 0,
-      },
-    };
-  }
 
   // src/modules/content/service/content.service.ts
 
@@ -113,7 +24,6 @@ class Lesson {
 
     if (videoDuration) {
       if (videoDuration <= 0) {
-
         throw new AppError('Invalid video duration');
       }
     }
@@ -335,6 +245,104 @@ class Lesson {
         },
       });
     }
+  }
+
+  async getLessonById(userId: string, lessonId: string): Promise<LessonDetailResponse> {
+    const lesson = await prisma.lesson.findUnique({
+      where: { id: lessonId, isPublished: true },
+      include: {
+        module: {
+          include: {
+            subject: {
+              select: {
+                id: true,
+                name: true,
+              },
+            },
+          },
+        },
+        userProgress: {
+          where: { userId },
+        },
+      },
+    });
+
+    if (!lesson) {
+      throw new AppError('Lesson not found');
+    }
+
+    const userProgress = lesson.userProgress[0];
+
+    if (userProgress) {
+      await prisma.userLessonProgress.update({
+        where: { id: userProgress.id },
+        data: { lastAccessedAt: new Date() },
+      });
+    } else {
+      await prisma.userLessonProgress.create({
+        data: {
+          userId,
+          lessonId,
+          videoWatchedSeconds: 0,
+          timeSpentSeconds: 0,
+          isCompleted: false,
+        },
+      });
+    }
+
+    const allModules = await prisma.module.findMany({
+      where: {
+        subjectId: lesson.module.subjectId,
+        isPublished: true,
+      },
+      include: {
+        lessons: {
+          where: { isPublished: true },
+          select: {
+            id: true,
+            title: true,
+            order: true,
+          },
+          orderBy: { order: 'asc' },
+        },
+      },
+      orderBy: { order: 'asc' },
+    });
+
+    return {
+      id: lesson.id,
+      title: lesson.title,
+      slug: lesson.slug,
+      description: lesson.description,
+      videoUrl: lesson.videoUrl,
+      videoDuration: lesson.videoDuration,
+      transcript: lesson.transcript,
+      order: lesson.order,
+      module: {
+        id: lesson.module.id,
+        name: lesson.module.name,
+        subjectId: lesson.module.subjectId,
+        subjectName: lesson.module.subject.name,
+      },
+      userProgress: userProgress
+        ? {
+            isCompleted: userProgress.isCompleted,
+            videoWatchedSeconds: userProgress.videoWatchedSeconds,
+            timeSpentSeconds: userProgress.timeSpentSeconds,
+            lastAccessedAt: userProgress.lastAccessedAt,
+          }
+        : null,
+      subjectModules: allModules.map((module) => ({
+        id: module.id,
+        name: module.name,
+        order: module.order,
+        lessons: module.lessons.map((l) => ({
+          id: l.id,
+          title: l.title,
+          order: l.order,
+        })),
+      })),
+    };
   }
 }
 
