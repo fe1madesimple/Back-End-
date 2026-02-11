@@ -74,21 +74,33 @@ class Practise {
     const limit = Math.min(5, totalCount);
 
     const randomQuestions = (await prisma.$queryRaw`
-    SELECT id, text, options, "order"
-    FROM questions
-    WHERE type = 'MCQ' AND "isPublished" = true
+    SELECT q.id, q.text, q.options, q."order",
+           s.name as "subjectName", m.name as "moduleName"
+    FROM questions q
+    LEFT JOIN modules m ON q."moduleId" = m.id
+    LEFT JOIN subjects s ON m."subjectId" = s.id
+    WHERE q.type = 'MCQ' AND q."isPublished" = true
     ORDER BY RANDOM()
     LIMIT ${limit}
   `) as Array<{
       id: string;
       text: string;
-      options: any;
+      options: string;
       order: number;
+      subjectName: string;
+      moduleName: string;
     }>;
 
     return {
       sessionId: session.id,
-      questions: randomQuestions,
+      questions: randomQuestions.map((q) => ({
+        id: q.id,
+        text: q.text,
+        options: typeof q.options === 'string' ? JSON.parse(q.options) : q.options,
+        order: q.order,
+        subject: q.subjectName,
+        module: q.moduleName,
+      })),
       totalAvailable: totalCount,
     };
   }
@@ -236,8 +248,8 @@ class Practise {
         text: q.text,
         options: typeof q.options === 'string' ? JSON.parse(q.options) : q.options,
         order: q.order,
-        subject: q.module.subject.name,
-        module: q.module.name,
+        subject: q.module?.subject.name || 'Unknown Subject',
+        module: q.module?.name || 'Unknown Module',
       })),
       totalAvailable: questions.length,
     };
