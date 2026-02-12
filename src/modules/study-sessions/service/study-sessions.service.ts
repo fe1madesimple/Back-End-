@@ -49,7 +49,36 @@ class StudySessionService {
       message: 'Session in progress',
     };
   }
+
+  async endSession(userId: string, sessionId: string): Promise<void> {
+    const session = await prisma.dailyStudySession.findUnique({
+      where: { id: sessionId },
+    });
+
+    if (!session) {
+      throw new NotFoundError('Study session not found');
+    }
+
+    if (session.userId !== userId) {
+      throw new ForbiddenError('Access denied');
+    }
+
+    if (!session.currentSessionStart) {
+      return; // Already ended
+    }
+
+    const now = new Date();
+    const duration = Math.floor((now.getTime() - session.currentSessionStart.getTime()) / 1000);
+
+    await prisma.dailyStudySession.update({
+      where: { id: sessionId },
+      data: {
+        todayTotalSeconds: session.todayTotalSeconds + duration,
+        lifetimeTotalSeconds: session.lifetimeTotalSeconds + duration,
+        currentSessionStart: null,
+      },
+    });
+  }
 }
 
 export default new StudySessionService();
-   
