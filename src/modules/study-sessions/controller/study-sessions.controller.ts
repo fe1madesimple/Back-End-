@@ -8,3 +8,11 @@ import { AppError } from '@/shared/utils';
 
 
 
+
+export const startSession = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+
+  const session = await studySessionsService.startSession(userId);
+
+  sendSuccess(res, 'Study session started', session, 201);
+});
