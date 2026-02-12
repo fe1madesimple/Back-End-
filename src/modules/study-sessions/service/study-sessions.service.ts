@@ -4,10 +4,43 @@ import { StartSessionResponse } from '../interface/study-session.interface';
 
 class StudySessionService {
   async startSession(userId: string): Promise<StartSessionResponse> {
-    const session = await prisma.studySession.create({
-      data: {
+    const today = new Date().toISOString().split('T')[0]!;
+    const now = new Date();
+
+    // Get yesterday's lifetime total (if exists)
+    const yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+    const yesterdayDate = yesterday.toISOString().split('T')[0]!;
+
+    const yesterdaySession = await prisma.dailyStudySession.findUnique({
+      where: {
+        userId_date: {
+          userId,
+          date: yesterdayDate,
+        },
+      },
+      select: { lifetimeTotalSeconds: true },
+    });
+
+    const lifetimeCarryOver = yesterdaySession?.lifetimeTotalSeconds || 0;
+
+    // Upsert today's record
+    const session = await prisma.dailyStudySession.upsert({
+      where: {
+        userId_date: {
+          userId,
+          date: today,
+        },
+      },
+      update: {
+        currentSessionStart: now,
+      },
+      create: {
         userId,
-        startedAt: new Date(),
+        date: today,
+        currentSessionStart: now,
+        todayTotalSeconds: 0,
+        lifetimeTotalSeconds: lifetimeCarryOver,
       },
     });
 
@@ -15,35 +48,6 @@ class StudySessionService {
       sessionId: session.id,
       message: 'Session in progress',
     };
-  }
-
-  async endSession(userId: string, sessionId: string): Promise<void> {
-    const session = await prisma.studySession.findUnique({
-      where: { id: sessionId },
-    });
-
-    if (!session) {
-      throw new NotFoundError('Study session not found');
-    }
-
-    if (session.userId !== userId) {
-      throw new ForbiddenError('Access denied');
-    }
-
-    if (session.endedAt) {
-      return;
-    }
-
-    const endedAt = new Date();
-    const durationSeconds = Math.floor((endedAt.getTime() - session.startedAt.getTime()) / 1000);
-
-    await prisma.studySession.update({
-      where: { id: sessionId },
-      data: {
-        endedAt,
-        durationSeconds,
-      },
-    });
   }
 }
 
