@@ -64,14 +64,14 @@ model User {
   quizAttempts  QuizAttempt[]
   achievements  UserAchievement[]
 
-  subjectProgress  UserSubjectProgress[]
-  moduleProgress   UserModuleProgress[]
-  lessonProgress   UserLessonProgress[]
-  questionAttempts QuestionAttempt[]
-  studySessions    StudySession[]
-  podcastProgress  UserPodcastProgress[]
-  playlists        Playlist[]
-  quizSessions     QuizSession[]
+  subjectProgress    UserSubjectProgress[]
+  moduleProgress     UserModuleProgress[]
+  lessonProgress     UserLessonProgress[]
+  questionAttempts   QuestionAttempt[]
+  podcastProgress    UserPodcastProgress[]
+  playlists          Playlist[]
+  quizSessions       QuizSession[]
+  dailyStudySessions DailyStudySession[]
 
   @@index([email])
   @@index([googleId])
@@ -577,18 +577,18 @@ model CaseRelation {
 }
 
 model DailyStudySession {
-  id                   String   @id @default(cuid())
-  userId               String
-  user                 User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  
-  date                 String   // "2026-02-12"
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  date                 String // "2026-02-12"
   currentSessionStart  DateTime?
-  todayTotalSeconds    Int      @default(0)
-  lifetimeTotalSeconds Int      @default(0)
-  
-  createdAt            DateTime @default(now())
-  updatedAt            DateTime @updatedAt
-  
+  todayTotalSeconds    Int       @default(0)
+  lifetimeTotalSeconds Int       @default(0)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
   @@unique([userId, date])
   @@index([userId])
   @@index([date])
@@ -603,7 +603,7 @@ model UserLessonProgress {
   videoWatchedSeconds Int       @default(0)
   timeSpentSeconds    Int       @default(0)
   completedAt         DateTime?
-  lastAccessedAt      DateTime? 
+  lastAccessedAt      DateTime?
   createdAt           DateTime  @default(now())
   updatedAt           DateTime  @updatedAt
 
@@ -661,50 +661,49 @@ model UserSubjectProgress {
   @@map("user_subject_progress")
 }
 
-
 model DeletedUserAnalytics {
-  id        String   @id @default(cuid())
-  
+  id String @id @default(cuid())
+
   // User identification (anonymized)
   originalUserId String
   email          String
   fullName       String?
-  
+
   // Account info
   accountCreatedAt DateTime
   accountDeletedAt DateTime @default(now())
   daysActive       Int
-  
+
   // Subject engagement
-  subjectsStarted    Int @default(0)
-  subjectsCompleted  Int @default(0)
-  subjectsNeverOpened Int @default(0)
-  subjectProgress    Json? // Array of { subjectName, progressPercent, timeSpent }
-  
+  subjectsStarted     Int   @default(0)
+  subjectsCompleted   Int   @default(0)
+  subjectsNeverOpened Int   @default(0)
+  subjectProgress     Json? // Array of { subjectName, progressPercent, timeSpent }
+
   // Module & Lesson progress
-  modulesCompleted Int @default(0)
-  lessonsCompleted Int @default(0)
+  modulesCompleted      Int @default(0)
+  lessonsCompleted      Int @default(0)
   totalStudyTimeSeconds Int @default(0)
-  
+
   // Quiz performance
-  totalQuizzesTaken    Int @default(0)
-  totalMCQsAttempted   Int @default(0)
-  averageQuizScore     Int @default(0)
-  highestQuizScore     Int @default(0)
-  lowestQuizScore      Int @default(0)
-  quizScores           Json? // Array of { date, score, quizType }
-  
+  totalQuizzesTaken  Int   @default(0)
+  totalMCQsAttempted Int   @default(0)
+  averageQuizScore   Int   @default(0)
+  highestQuizScore   Int   @default(0)
+  lowestQuizScore    Int   @default(0)
+  quizScores         Json? // Array of { date, score, quizType }
+
   // Subscription info
-  hadSubscription      Boolean @default(false)
-  subscriptionPlan     String?
-  totalRevenue         Float   @default(0)
-  
+  hadSubscription  Boolean @default(false)
+  subscriptionPlan String?
+  totalRevenue     Float   @default(0)
+
   // Deletion reason (optional)
-  deletionReason       String?
-  feedback             String?
-  
+  deletionReason String?
+  feedback       String?
+
   createdAt DateTime @default(now())
-  
+
   @@index([accountDeletedAt])
   @@index([email])
   @@map("deleted_user_analytics")
@@ -724,9 +723,8 @@ model Subject {
   modules      Module[]
   userProgress UserSubjectProgress[]
 
-  createdAt     DateTime       @default(now())
-  updatedAt     DateTime       @updatedAt
-
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   @@map("subjects")
 }
@@ -746,8 +744,8 @@ model Module {
   questions    Question[] // Module-level questions
   userProgress UserModuleProgress[]
 
-  createdAt     DateTime       @default(now())
-  updatedAt     DateTime       @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   @@unique([subjectId, slug])
   @@map("modules")
