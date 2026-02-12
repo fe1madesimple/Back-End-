@@ -7,7 +7,7 @@ import {
   UpdatePreferencesInput,
   ChangePasswordInput,
   DeleteAccountInput,
-} from '../interfaces/user.interfaces';   
+} from '../interfaces/user.interfaces';
 
 export const getProfile = asyncHandler(async (req: Request, res: Response) => {
   const userId = (req.user?.user as any).id;
@@ -37,11 +37,12 @@ export const changePassword = asyncHandler(async (req: Request, res: Response) =
 });
 
 export const deleteAccount = asyncHandler(async (req: Request, res: Response) => {
-  const userId = (req.user?.user as any).id;
-  console.log(userId)
-  const input: DeleteAccountInput = req.body;
-  await userService.deleteAccount(userId, input.password);
-  return sendNoContent(res);
+  const userId = req.user!.user.id;
+  const { password, deletionReason, feedback } = req.body;
+
+  await userService.deleteAccount(userId, password, deletionReason, feedback);
+
+  sendSuccess(res, 'Account deleted successfully', null);
 });
 
 export const getOnboardingStatus = asyncHandler(async (req: Request, res: Response) => {
