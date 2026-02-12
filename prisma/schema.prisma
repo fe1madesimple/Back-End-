@@ -671,6 +671,56 @@ model UserSubjectProgress {
   @@map("user_subject_progress")
 }
 
+
+model DeletedUserAnalytics {
+  id        String   @id @default(cuid())
+  
+  // User identification (anonymized)
+  originalUserId String
+  email          String
+  fullName       String?
+  
+  // Account info
+  accountCreatedAt DateTime
+  accountDeletedAt DateTime @default(now())
+  daysActive       Int
+  
+  // Subject engagement
+  subjectsStarted    Int @default(0)
+  subjectsCompleted  Int @default(0)
+  subjectsNeverOpened Int @default(0)
+  subjectProgress    Json? // Array of { subjectName, progressPercent, timeSpent }
+  
+  // Module & Lesson progress
+  modulesCompleted Int @default(0)
+  lessonsCompleted Int @default(0)
+  totalStudyTimeSeconds Int @default(0)
+  
+  // Quiz performance
+  totalQuizzesTaken    Int @default(0)
+  totalMCQsAttempted   Int @default(0)
+  averageQuizScore     Int @default(0)
+  highestQuizScore     Int @default(0)
+  lowestQuizScore      Int @default(0)
+  quizScores           Json? // Array of { date, score, quizType }
+  
+  // Subscription info
+  hadSubscription      Boolean @default(false)
+  subscriptionPlan     String?
+  totalRevenue         Float   @default(0)
+  
+  // Deletion reason (optional)
+  deletionReason       String?
+  feedback             String?
+  
+  createdAt DateTime @default(now())
+  
+  @@index([accountDeletedAt])
+  @@index([email])
+  @@map("deleted_user_analytics")
+}
+
+
 model Subject {
   id            String  @id @default(cuid())
   name          String  @unique

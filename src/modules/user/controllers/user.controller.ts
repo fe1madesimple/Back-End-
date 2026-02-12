@@ -38,6 +38,7 @@ export const changePassword = asyncHandler(async (req: Request, res: Response) =
 
 export const deleteAccount = asyncHandler(async (req: Request, res: Response) => {
   const userId = (req.user?.user as any).id;
+  console.log(userId)
   const input: DeleteAccountInput = req.body;
   await userService.deleteAccount(userId, input.password);
   return sendNoContent(res);

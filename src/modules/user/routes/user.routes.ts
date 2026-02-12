@@ -16,6 +16,7 @@ const userRouter = Router();
  *   description: User profile and preferences management
  */
 
+
 /**
  * @swagger
  * /api/v1/users/profile:
@@ -44,7 +45,6 @@ const userRouter = Router();
  *                       type: object
  */
 userRouter.get('/profile', protect, getProfile);
-
 
 
 /**
