@@ -2,7 +2,7 @@
 
 import { Router } from 'express';
 import { protect } from '@/shared/middleware/auth.middleware';
-import {startSession} from '../controller/study-sessions.controller';
+import {startSession, endSession} from '../controller/study-sessions.controller';
 
 const studySessionRouter = Router();
 
@@ -41,6 +41,39 @@ const studySessionRouter = Router();
 studySessionRouter.post('/start', protect, startSession);
 
 
+/**
+ * @swagger
+ * /api/v1/study-sessions/{sessionId}/end:
+ *   post:
+ *     summary: End study session
+ *     tags: [Study Sessions]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Ends active session and updates daily/lifetime totals. Called when user switches tabs or closes app.
+ *     parameters:
+ *       - in: path
+ *         name: sessionId
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Session ended
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                 message:
+ *                   type: string
+ *       404:
+ *         description: Session not found
+ *       403:
+ *         description: Access denied
+ */
+studySessionRouter.post('/:sessionId/end', protect, endSession);
 
 
 export default studySessionRouter;
