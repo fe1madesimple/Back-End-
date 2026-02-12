@@ -22,18 +22,18 @@ class Lesson {
 
     if (videoDuration) {
       if (videoDuration <= 0) {
-        throw new AppError('Invalid video duration');
+        throw new AppError('Invalid video duration'); 
       }
-    }
+    } 
 
-    // Use provided duration (from frontend) or stored duration (from DB)
+    // Use provided duration (from frontend) or stored duration (from DB) 
     const duration = videoDuration || lesson.videoDuration;
 
-    // Calculate completion (90% threshold)
+    // Calculate completion (90% threshold) 
     const completionThreshold = 0.9;
     const isCompleted = duration ? currentTime >= duration * completionThreshold : false;
 
-    // Update lesson progress
+    // Update lesson progress 
     const completedStatus = Boolean(isCompleted);
 
     const updatedProgress = await prisma.userLessonProgress.upsert({
@@ -59,7 +59,7 @@ class Lesson {
       await this.recalculateModuleProgress(userId, lesson.moduleId);
     }
 
-    // Optionally: Update lesson duration in DB if provided and not already stored
+
     if (videoDuration && !lesson.videoDuration) {
       await prisma.lesson.update({
         where: { id: lessonId },
@@ -95,6 +95,7 @@ class Lesson {
       (sum, m) => sum + (m.userProgress[0]?.progressPercent || 0),
       0
     );
+    
     const progressPercent = totalModules > 0 ? totalProgress / totalModules : 0;
 
     // Calculate total time from ALL lessons in subject
