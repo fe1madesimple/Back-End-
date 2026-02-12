@@ -706,7 +706,6 @@ model DeletedUserAnalytics {
   @@map("deleted_user_analytics")
 }
 
-
 model Subject {
   id            String  @id @default(cuid())
   name          String  @unique
