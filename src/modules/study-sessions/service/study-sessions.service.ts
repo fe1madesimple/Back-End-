@@ -7,24 +7,15 @@ class StudySessionService {
     const today = new Date().toISOString().split('T')[0]!;
     const now = new Date();
 
-    // Get yesterday's lifetime total (if exists)
-    const yesterday = new Date();
-    yesterday.setDate(yesterday.getDate() - 1);
-    const yesterdayDate = yesterday.toISOString().split('T')[0]!;
-
-    const yesterdaySession = await prisma.dailyStudySession.findUnique({
-      where: {
-        userId_date: {
-          userId,
-          date: yesterdayDate,
-        },
-      },
+    // Get latest session (any day)
+    const latestSession = await prisma.dailyStudySession.findFirst({
+      where: { userId },
+      orderBy: { date: 'desc' },
       select: { lifetimeTotalSeconds: true },
     });
 
-    const lifetimeCarryOver = yesterdaySession?.lifetimeTotalSeconds || 0;
+    const lifetimeCarryOver = latestSession?.lifetimeTotalSeconds || 0;
 
-    // Upsert today's record
     const session = await prisma.dailyStudySession.upsert({
       where: {
         userId_date: {
