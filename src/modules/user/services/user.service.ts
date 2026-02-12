@@ -136,7 +136,9 @@ class UserService {
     });
 
     const subjectsStarted = userSubjectProgress.length;
+
     const subjectsCompleted = userSubjectProgress.filter((s) => s.status === 'COMPLETED').length;
+
     const subjectsNeverOpened = allSubjects.length - subjectsStarted;
 
     const subjectProgressData = userSubjectProgress.map((sp) => ({
@@ -217,7 +219,7 @@ class UserService {
     );
 
     // Save analytics
-    await prisma.deletedUserAnalytics.create({
+    const deleteData = await prisma.deletedUserAnalytics.create({
       data: {
         originalUserId: userId,
         email: user.email,
@@ -245,6 +247,8 @@ class UserService {
       },
     });
 
+    console.log(deleteData, "deleted data analytics")
+
     console.log('✅ Analytics saved. Now deleting account and related data...');
 
     // Delete all related data
@@ -260,7 +264,7 @@ class UserService {
       prisma.userAchievement.deleteMany({ where: { userId } }),
       prisma.playlist.deleteMany({ where: { userId } }),
       prisma.timedSession.deleteMany({ where: { userId } }),
-      prisma.aiEvaluation.deleteMany({ where: { userId } }),
+      prisma.aIEvaluation.deleteMany({ where: { userId } }),
       prisma.studyLog.deleteMany({ where: { userId } }),
       prisma.quizAttempt.deleteMany({ where: { userId } }),
       prisma.subscription.deleteMany({ where: { userId } }),
