@@ -168,7 +168,6 @@ export interface ModuleStatsResponse {
   }[];
 }
 
-// src/modules/progress/interfaces/progress.interface.ts
 
 export interface SimpleDashboardResponse {
   isNew: boolean;

@@ -1,5 +1,3 @@
-
-
 import { prisma } from '@/shared/config';
 import {
   DashboardStatsResponse,
@@ -10,6 +8,14 @@ import {
   SimpleDashboardResponse,
 } from '../interfaces/progress.interface';
 import { NotFoundError } from '@/shared/utils';
+
+const MARCH_EXAM_MONTH = 3; // March
+const MARCH_EXAM_DAY = 1; // Default to 1st
+const MARCH_EXTRA_DAYS = 0; // Add days when actual date announced
+
+const OCTOBER_EXAM_MONTH = 10; // October
+const OCTOBER_EXAM_DAY = 1; // Default to 1st
+const OCTOBER_EXTRA_DAYS = 0;
 
 class ProgressService {
   async getDashboardStats(userId: string): Promise<DashboardStatsResponse> {
@@ -780,8 +786,6 @@ class ProgressService {
     };
   }
 
-
-
   async getModuleStats(userId: string, moduleId: string): Promise<ModuleStatsResponse> {
     // Get module with progress
     const module = await prisma.module.findUnique({
@@ -970,220 +974,7 @@ class ProgressService {
     };
   }
 
-  async getSimpleDashboard(userId: string): Promise<SimpleDashboardResponse> {
-    const user = await prisma.user.findUnique({
-      where: { id: userId },
-      select: {
-        targetExamDate: true,
-        dailyStudyGoal: true,
-        hasCompletedOnboarding: true,
-        averageQuizScore: true,
-        highestQuizScore: true,
-        lowestQuizScore: true,
-      },
-    });
-
-    const hasAnyLessonProgress = await prisma.userLessonProgress.count({
-      where: { userId },
-    });
-
-    const hasAnyQuizAttempt = await prisma.questionAttempt.count({
-      where: { userId },
-    });
-
-    const hasAnyPodcastProgress = await prisma.userPodcastProgress.count({
-      where: { userId },
-    });
-
-    const isNew =
-      !user?.hasCompletedOnboarding ||
-      (hasAnyLessonProgress === 0 && hasAnyQuizAttempt === 0 && hasAnyPodcastProgress === 0);
-
-    const examCountdown = user?.targetExamDate
-      ? {
-          daysUntilExam: Math.ceil(
-            (new Date(user.targetExamDate).getTime() - Date.now()) / (1000 * 60 * 60 * 24)
-          ),
-          examDate:
-            typeof user.targetExamDate === 'string'
-              ? user.targetExamDate
-              : user.targetExamDate.toISOString().split('T')[0]!,
-        }
-      : { daysUntilExam: null, examDate: null };
-
-    const todayStart = new Date();
-    todayStart.setHours(0, 0, 0, 0);
-
-    const todayLessons = await prisma.userLessonProgress.findMany({
-      where: {
-        userId,
-        updatedAt: { gte: todayStart },
-      },
-      select: { timeSpentSeconds: true },
-    });
-
-    const todaySeconds = todayLessons.reduce((sum, l) => sum + l.timeSpentSeconds, 0);
-    const todayHours = todaySeconds / 3600;
-    const targetHours = user?.dailyStudyGoal || 3;
-
-    const last7Days = Array.from({ length: 7 }, (_, i) => {
-      const date = new Date();
-      date.setDate(date.getDate() - (6 - i));
-      return date;
-    });
-
-    const weekCalendar = await Promise.all(
-      last7Days.map(async (date) => {
-        const dayStart = new Date(date);
-        dayStart.setHours(0, 0, 0, 0);
-        const dayEnd = new Date(date);
-        dayEnd.setHours(23, 59, 59, 999);
-
-        const hasActivity = await prisma.userLessonProgress.count({
-          where: {
-            userId,
-            updatedAt: { gte: dayStart, lte: dayEnd },
-            timeSpentSeconds: { gt: 0 },
-          },
-        });
-
-        return {
-          day: ['S', 'M', 'T', 'W', 'T', 'F', 'S'][date.getDay()]!,
-          hasActivity: hasActivity > 0,
-        };
-      })
-    );
-
-    let currentStreak = 0;
-    for (let i = weekCalendar.length - 1; i >= 0; i--) {
-      const day = weekCalendar[i];
-      if (day && day.hasActivity) {
-        currentStreak++;
-      } else {
-        break;
-      }
-    }
-
-    const allLessonProgress = await prisma.userLessonProgress.findMany({
-      where: {
-        userId,
-        timeSpentSeconds: { gt: 0 },
-      },
-      select: { updatedAt: true },
-      orderBy: { updatedAt: 'asc' },
-    });
-
-    const dailyActivity = new Map<string, boolean>();
-    allLessonProgress.forEach((progress) => {
-      const dateKey = progress.updatedAt.toISOString().split('T')[0];
-      if (dateKey) {
-        dailyActivity.set(dateKey, true);
-      }
-    });
-
-    let longestStreak = 0;
-    let tempStreak = 0;
-    const sortedDates = Array.from(dailyActivity.keys()).sort();
-
-    for (let i = 0; i < sortedDates.length; i++) {
-      const currentDate = sortedDates[i];
-      const nextDate = sortedDates[i + 1];
-
-      if (!currentDate) continue;
-
-      tempStreak++;
-
-      if (nextDate) {
-        const current = new Date(currentDate);
-        const next = new Date(nextDate);
-        const dayDiff = Math.floor((next.getTime() - current.getTime()) / (1000 * 60 * 60 * 24));
-
-        if (dayDiff > 1) {
-          longestStreak = Math.max(longestStreak, tempStreak);
-          tempStreak = 0;
-        }
-      }
-    }
-    longestStreak = Math.max(longestStreak, tempStreak);
-
-    const quizPerformance = {
-      averageScore: user?.averageQuizScore || 0,
-      highestScore: user?.highestQuizScore || 0,
-      lowestScore: user?.lowestQuizScore || 0,
-    };
-
-    const lastLesson = await prisma.userLessonProgress.findFirst({
-      where: {
-        userId,
-        isCompleted: false,
-        videoWatchedSeconds: { gt: 0 },
-      },
-      include: {
-        lesson: {
-          include: {
-            module: {
-              include: {
-                subject: { select: { name: true } },
-              },
-            },
-          },
-        },
-      },
-      orderBy: { updatedAt: 'desc' },
-    });
-
-    const resumeLearning = lastLesson
-      ? {
-          lessonTitle: lastLesson.lesson.title,
-          subjectName: lastLesson.lesson.module.subject.name,
-          minutesRemaining: lastLesson.lesson.videoDuration
-            ? Math.ceil((lastLesson.lesson.videoDuration - lastLesson.videoWatchedSeconds) / 60)
-            : 0,
-          progressPercent: lastLesson.lesson.videoDuration
-            ? Math.round((lastLesson.videoWatchedSeconds / lastLesson.lesson.videoDuration) * 100)
-            : 0,
-          lessonId: lastLesson.lesson.id,
-          moduleId: lastLesson.lesson.moduleId,
-        }
-      : null;
-
-    const allPodcasts = await prisma.podcast.findMany({
-      select: {
-        id: true,
-        title: true,
-        subject: true,
-        duration: true,
-        thumbnail: true,
-      },
-    });
-
-    const shuffled = allPodcasts.sort(() => Math.random() - 0.5);
-    const randomPodcasts = shuffled.slice(0, 3);
-
-    return {
-      isNew,
-      examCountdown,
-      todayStudy: {
-        hoursToday: Math.round(todayHours * 10) / 10,
-        targetHours,
-        progressPercent: Math.min(100, Math.round((todayHours / targetHours) * 100)),
-      },
-      weeklyStreak: {
-        currentStreak,
-        longestStreak,
-        weekCalendar,
-      },
-      quizPerformance,
-      resumeLearning,
-      recommendedPodcasts: randomPodcasts.map((p) => ({
-        id: p.id,
-        title: p.title,
-        subjectName: p.subject || 'General',
-        durationMinutes: Math.round((p.duration || 0) / 60),
-        thumbnail: p.thumbnail || '',
-      })),
-    };
-  }
+ 
 }
 
 export default new ProgressService();
