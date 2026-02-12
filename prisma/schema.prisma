@@ -577,31 +577,17 @@ model CaseRelation {
 }
 
 model StudySession {
-  id     String @id @default(cuid())
-  userId String
-  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  subjectId String?
-  subject   Subject? @relation(fields: [subjectId], references: [id], onDelete: SetNull)
-  moduleId  String?
-  module    Module?  @relation(fields: [moduleId], references: [id], onDelete: SetNull)
-  lessonId  String?
-
-  sessionType String?
-  isActive    Boolean   @default(true)
-  lastPingAt  DateTime?
-
+  id              String    @id @default(cuid())
+  userId          String
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   startedAt       DateTime  @default(now())
   endedAt         DateTime?
   durationSeconds Int       @default(0)
+  createdAt       DateTime  @default(now())
 
-  lessonsCompleted   Int     @default(0)
-  questionsAttempted Int     @default(0)
-  pointsEarned       Int     @default(0)
-  notes              String?
-
-  createdAt DateTime @default(now())
-
+  @@index([userId])
+  @@index([endedAt])
+  @@index([createdAt])
   @@map("study_sessions")
 }
 
