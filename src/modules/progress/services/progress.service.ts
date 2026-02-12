@@ -1000,6 +1000,217 @@ class ProgressService {
       recommendations,
     };
   }
+
+  async getSimpleDashboard(userId: string): Promise<SimpleDashboardResponse> {
+    const user = await prisma.user.findUnique({
+      where: { id: userId },
+      select: {
+        targetExamDate: true,
+        dailyStudyGoal: true,
+        hasCompletedOnboarding: true,
+        averageQuizScore: true,
+        highestQuizScore: true,
+        lowestQuizScore: true,
+      },
+    });
+
+    const hasAnyLessonProgress = await prisma.userLessonProgress.count({
+      where: { userId },
+    });
+
+    const hasAnyQuizAttempt = await prisma.questionAttempt.count({
+      where: { userId },
+    });
+
+    const hasAnyPodcastProgress = await prisma.userPodcastProgress.count({
+      where: { userId },
+    });
+
+    const isNew =
+      !user?.hasCompletedOnboarding ||
+      (hasAnyLessonProgress === 0 && hasAnyQuizAttempt === 0 && hasAnyPodcastProgress === 0);
+
+    // Use configured exam dates if no custom targetExamDate
+    const examDate = user?.targetExamDate || getNextExamDate();
+    const daysUntilExam = Math.ceil(
+      (new Date(examDate).getTime() - Date.now()) / (1000 * 60 * 60 * 24)
+    );
+
+    const examCountdown = {
+      daysUntilExam,
+      examDate: typeof examDate === 'string' ? examDate : examDate.toISOString().split('T')[0]!,
+    };
+
+    const today = new Date().toISOString().split('T')[0]!;
+
+    // Get today's study session
+    const todaySession = await prisma.dailyStudySession.findUnique({
+      where: {
+        userId_date: {
+          userId,
+          date: today,
+        },
+      },
+      select: {
+        todayTotalSeconds: true,
+        lifetimeTotalSeconds: true,
+      },
+    });
+
+    const todaySeconds = todaySession?.todayTotalSeconds || 0;
+    const todayHours = todaySeconds / 3600;
+    const targetHours = user?.dailyStudyGoal || 3;
+
+    const last7Days = Array.from({ length: 7 }, (_, i) => {
+      const date = new Date();
+      date.setDate(date.getDate() - (6 - i));
+      return date;
+    });
+
+    const weekCalendar = await Promise.all(
+      last7Days.map(async (date) => {
+        const dateStr = date.toISOString().split('T')[0]!;
+
+        const daySession = await prisma.dailyStudySession.findUnique({
+          where: {
+            userId_date: {
+              userId,
+              date: dateStr,
+            },
+          },
+          select: { todayTotalSeconds: true },
+        });
+
+        return {
+          day: ['S', 'M', 'T', 'W', 'T', 'F', 'S'][date.getDay()]!,
+          hasActivity: (daySession?.todayTotalSeconds || 0) > 0,
+        };
+      })
+    );
+
+    let currentStreak = 0;
+    for (let i = weekCalendar.length - 1; i >= 0; i--) {
+      const day = weekCalendar[i];
+      if (day && day.hasActivity) {
+        currentStreak++;
+      } else {
+        break;
+      }
+    }
+
+    // Get all sessions for longest streak
+    const allSessions = await prisma.dailyStudySession.findMany({
+      where: {
+        userId,
+        todayTotalSeconds: { gt: 0 },
+      },
+      select: { date: true },
+      orderBy: { date: 'asc' },
+    });
+
+    let longestStreak = 0;
+    let tempStreak = 0;
+
+    for (let i = 0; i < allSessions.length; i++) {
+      const currentSession = allSessions[i];
+      const nextSession = allSessions[i + 1];
+
+      if (!currentSession) continue;
+
+      tempStreak++;
+
+      if (nextSession) {
+        const current = new Date(currentSession.date);
+        const next = new Date(nextSession.date);
+        const dayDiff = Math.floor((next.getTime() - current.getTime()) / (1000 * 60 * 60 * 24));
+
+        if (dayDiff > 1) {
+          longestStreak = Math.max(longestStreak, tempStreak);
+          tempStreak = 0;
+        }
+      }
+    }
+    longestStreak = Math.max(longestStreak, tempStreak);
+
+    const quizPerformance = {
+      averageScore: user?.averageQuizScore || 0,
+      highestScore: user?.highestQuizScore || 0,
+      lowestScore: user?.lowestQuizScore || 0,
+    };
+
+    const lastLesson = await prisma.userLessonProgress.findFirst({
+      where: {
+        userId,
+        isCompleted: false,
+        videoWatchedSeconds: { gt: 0 },
+      },
+      include: {
+        lesson: {
+          include: {
+            module: {
+              include: {
+                subject: { select: { name: true } },
+              },
+            },
+          },
+        },
+      },
+      orderBy: { updatedAt: 'desc' },
+    });
+
+    const resumeLearning = lastLesson
+      ? {
+          lessonTitle: lastLesson.lesson.title,
+          subjectName: lastLesson.lesson.module.subject.name,
+          minutesRemaining: lastLesson.lesson.videoDuration
+            ? Math.ceil((lastLesson.lesson.videoDuration - lastLesson.videoWatchedSeconds) / 60)
+            : 0,
+          progressPercent: lastLesson.lesson.videoDuration
+            ? Math.round((lastLesson.videoWatchedSeconds / lastLesson.lesson.videoDuration) * 100)
+            : 0,
+          lessonId: lastLesson.lesson.id,
+          moduleId: lastLesson.lesson.moduleId,
+        }
+      : null;
+
+    const allPodcasts = await prisma.podcast.findMany({
+      select: {
+        id: true,
+        title: true,
+        subject: true,
+        duration: true,
+        thumbnail: true,
+      },
+    });
+
+    const shuffled = allPodcasts.sort(() => Math.random() - 0.5);
+    const randomPodcasts = shuffled.slice(0, 3);
+
+    return {
+      isNew,
+      examCountdown,
+      todayStudy: {
+        hoursToday: Math.round(todayHours * 10) / 10,
+        targetHours,
+        progressPercent: Math.min(100, Math.round((todayHours / targetHours) * 100)),
+      },
+      weeklyStreak: {
+        currentStreak,
+        longestStreak,
+        weekCalendar,
+      },
+      quizPerformance,
+      resumeLearning,
+      recommendedPodcasts: randomPodcasts.map((p) => ({
+        id: p.id,
+        title: p.title,
+        subjectName: p.subject || 'General',
+        durationMinutes: Math.round((p.duration || 0) / 60),
+        thumbnail: p.thumbnail || '',
+      })),
+      lifetimeStudyHours: Math.round(((todaySession?.lifetimeTotalSeconds || 0) / 3600) * 10) / 10,
+    };
+  }
 }
 
 export default new ProgressService();
