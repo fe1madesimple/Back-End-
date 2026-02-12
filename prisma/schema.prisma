@@ -576,19 +576,23 @@ model CaseRelation {
   @@map("case_relations")
 }
 
-model StudySession {
-  id              String    @id @default(cuid())
-  userId          String
-  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
-  startedAt       DateTime  @default(now())
-  endedAt         DateTime?
-  durationSeconds Int       @default(0)
-  createdAt       DateTime  @default(now())
-
+model DailyStudySession {
+  id                   String   @id @default(cuid())
+  userId               String
+  user                 User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  date                 String   // "2026-02-12"
+  currentSessionStart  DateTime?
+  todayTotalSeconds    Int      @default(0)
+  lifetimeTotalSeconds Int      @default(0)
+  
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
+  
+  @@unique([userId, date])
   @@index([userId])
-  @@index([endedAt])
-  @@index([createdAt])
-  @@map("study_sessions")
+  @@index([date])
+  @@map("daily_study_sessions")
 }
 
 model UserLessonProgress {
