@@ -1,9 +1,6 @@
 import { prisma } from '@/shared/config';
 import { NotFoundError, BadRequestError, ForbiddenError } from '@/shared/utils';
 import {
-  EndSessionRequest,
-  EndSessionResponse,
-  StartSessionRequest,
   StartSessionResponse,
 } from '../interface/study-session.interface';
 
