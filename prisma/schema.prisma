@@ -723,7 +723,7 @@ model Subject {
 
   createdAt     DateTime       @default(now())
   updatedAt     DateTime       @updatedAt
-  studySessions StudySession[]
+
 
   @@map("subjects")
 }
@@ -745,7 +745,6 @@ model Module {
 
   createdAt     DateTime       @default(now())
   updatedAt     DateTime       @updatedAt
-  studySessions StudySession[]
 
   @@unique([subjectId, slug])
   @@map("modules")
