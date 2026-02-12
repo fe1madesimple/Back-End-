@@ -168,11 +168,13 @@ export interface ModuleStatsResponse {
   }[];
 }
 
+// src/modules/progress/interfaces/progress.interface.ts
+
 export interface SimpleDashboardResponse {
   isNew: boolean;
   examCountdown: {
-    daysUntilExam: number | null;
-    examDate: string | null;
+    daysUntilExam: number;
+    examDate: string;
   };
   todayStudy: {
     hoursToday: number;
@@ -207,4 +209,5 @@ export interface SimpleDashboardResponse {
     durationMinutes: number;
     thumbnail: string;
   }>;
+  lifetimeStudyHours: number; 
 }
