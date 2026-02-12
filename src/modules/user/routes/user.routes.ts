@@ -740,23 +740,13 @@ userRouter.put('/password', protect, validate(changePasswordSchema), changePassw
 
 /**
  * @swagger
- * /api/v1/users/account:
+ * /api/v1/users/delete-account:
  *   delete:
- *     summary: Delete account
- *     tags: [User Profile]
+ *     summary: Delete user account
+ *     tags: [User Management]
  *     security:
  *       - bearerAuth: []
- *     description: |
- *       Permanently delete user account
- *       
- *       **Requires:**
- *       - Password verification
- *       - Confirmation string "DELETE"
- *       
- *       **Deletes:**
- *       - User record
- *       - Subscription (cascade)
- *       - All user data (cascade)
+ *     description: Permanently deletes user account and all associated data. Analytics are preserved for business insights. This action cannot be undone.
  *     requestBody:
  *       required: true
  *       content:
@@ -765,20 +755,37 @@ userRouter.put('/password', protect, validate(changePasswordSchema), changePassw
  *             type: object
  *             required:
  *               - password
- *               - confirmation
  *             properties:
  *               password:
  *                 type: string
- *                 example: MyPassword123
- *               confirmation:
+ *                 description: User's current password for verification
+ *                 example: "MySecurePassword123"
+ *               deletionReason:
  *                 type: string
- *                 example: DELETE
- *                 description: Must be exactly "DELETE"
+ *                 description: Optional reason for account deletion
+ *                 example: "Found a better platform"
+ *               feedback:
+ *                 type: string
+ *                 description: Optional feedback about the platform
+ *                 example: "Great content but too expensive"
  *     responses:
- *       204:
- *         description: Account deleted
+ *       200:
+ *         description: Account deleted successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Account deleted successfully
  *       401:
  *         description: Incorrect password
+ *       404:
+ *         description: User not found
  */
 userRouter.delete('/account', protect, validate(deleteAccountSchema), deleteAccount);
 
