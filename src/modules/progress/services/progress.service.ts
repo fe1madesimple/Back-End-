@@ -17,6 +17,33 @@ const OCTOBER_EXAM_MONTH = 10; // October
 const OCTOBER_EXAM_DAY = 1; // Default to 1st
 const OCTOBER_EXTRA_DAYS = 0;
 
+function getNextExamDate(): Date {
+  const now = new Date();
+  const currentYear = now.getFullYear();
+  const currentMonth = now.getMonth() + 1; // 1-12
+
+  // March exam
+  const marchExam = new Date(currentYear, MARCH_EXAM_MONTH - 1, MARCH_EXAM_DAY);
+  marchExam.setDate(marchExam.getDate() + MARCH_EXTRA_DAYS);
+
+  // October exam
+  const octoberExam = new Date(currentYear, OCTOBER_EXAM_MONTH - 1, OCTOBER_EXAM_DAY);
+  octoberExam.setDate(octoberExam.getDate() + OCTOBER_EXTRA_DAYS);
+
+  // Next year's March exam
+  const nextMarchExam = new Date(currentYear + 1, MARCH_EXAM_MONTH - 1, MARCH_EXAM_DAY);
+  nextMarchExam.setDate(nextMarchExam.getDate() + MARCH_EXTRA_DAYS);
+
+  // Determine next exam
+  if (now < marchExam) {
+    return marchExam; // Before March → Next is March
+  } else if (now < octoberExam) {
+    return octoberExam; // After March, before October → Next is October
+  } else {
+    return nextMarchExam; // After October → Next is March next year
+  }
+}
+
 class ProgressService {
   async getDashboardStats(userId: string): Promise<DashboardStatsResponse> {
     const now = new Date();
@@ -973,8 +1000,6 @@ class ProgressService {
       recommendations,
     };
   }
-
- 
 }
 
 export default new ProgressService();
