@@ -193,6 +193,7 @@ class CaseService {
         facts: sc.caseBrief.facts,
         savedAt: sc.createdAt,
         lastReviewedAt: sc.lastReviewedAt,
+        isReviewed: sc.lastReviewedAt !== null,
       })),
       total: savedCases.length,
     };
