@@ -14,7 +14,6 @@ class CaseService {
 
     const skip = (page - 1) * limit;
 
-    // Build where clause
     const where: any = {};
 
     if (search) {
@@ -37,10 +36,8 @@ class CaseService {
       where.frequency = frequency;
     }
 
-    // Get total count
     const total = await prisma.caseBrief.count({ where });
 
-    // Get cases
     const cases = await prisma.caseBrief.findMany({
       where,
       select: {
@@ -56,7 +53,10 @@ class CaseService {
         facts: true,
         savedBy: {
           where: { userId },
-          select: { id: true },
+          select: {
+            id: true,
+            lastReviewedAt: true,
+          },
         },
       },
       orderBy: [{ frequency: 'asc' }, { year: 'desc' }],
@@ -77,6 +77,7 @@ class CaseService {
         topics: c.topics,
         facts: c.facts,
         isSaved: c.savedBy.length > 0,
+        isReviewed: c.savedBy.length > 0 && c.savedBy[0]?.lastReviewedAt !== null,
       })),
       pagination: {
         total,
