@@ -21,6 +21,7 @@ export interface CaseCardResponse {
   topics: string[];
   facts: string;
   isSaved: boolean;
+  isReviewed: boolean; // ← ADD THIS
 }
 
 export interface CaseSearchResponse {
@@ -71,6 +72,7 @@ export interface CaseDetailResponse {
   relatedCases: RelatedCaseResponse[];
 
   isSaved: boolean;
+  isReviewed: boolean; // ← ADD THIS
 }
 
 export interface SavedCaseResponse {
@@ -86,6 +88,7 @@ export interface SavedCaseResponse {
   facts: string;
   savedAt: Date;
   lastReviewedAt: Date | null;
+  isReviewed: boolean; // ← ADD THIS
 }
 
 export interface SavedCasesListResponse {
@@ -96,4 +99,10 @@ export interface SavedCasesListResponse {
 export interface SaveCaseResponse {
   message: string;
   isSaved: boolean;
+}
+
+// ← ADD THIS NEW INTERFACE
+export interface ToggleReviewResponse {
+  isReviewed: boolean;
+  lastReviewedAt: Date | null;
 }
