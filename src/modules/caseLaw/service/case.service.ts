@@ -94,7 +94,10 @@ class CaseService {
       include: {
         savedBy: {
           where: { userId },
-          select: { id: true },
+          select: {
+            id: true,
+            lastReviewedAt: true,
+          },
         },
         relatedCases: {
           include: {
@@ -142,6 +145,7 @@ class CaseService {
         relationshipType: rc.relationshipType,
       })),
       isSaved: caseData.savedBy.length > 0,
+      isReviewed: caseData.savedBy.length > 0 && caseData.savedBy[0]?.lastReviewedAt !== null,
     };
   }
 
