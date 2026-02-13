@@ -295,6 +295,51 @@ class CaseService {
       },
     };
   }
+
+  async toggleReview(
+    userId: string,
+    caseId: string
+  ): Promise<{ isReviewed: boolean; lastReviewedAt: Date | null }> {
+    // Check if case exists
+    const caseExists = await prisma.caseBrief.findUnique({
+      where: { id: caseId },
+      select: { id: true },
+    });
+
+    if (!caseExists) {
+      throw new NotFoundError('Case not found');
+    }
+
+    // Check if case is saved
+    const savedCase = await prisma.savedCase.findUnique({
+      where: {
+        userId_caseBriefId: {
+          userId,
+          caseBriefId: caseId,
+        },
+      },
+    });
+
+    if (!savedCase) {
+      throw new NotFoundError('Case not saved. Save the case first before marking as reviewed.');
+    }
+
+    // Toggle review status
+    const isCurrentlyReviewed = savedCase.lastReviewedAt !== null;
+    const newReviewedAt = isCurrentlyReviewed ? null : new Date();
+
+    const updated = await prisma.savedCase.update({
+      where: { id: savedCase.id },
+      data: {
+        lastReviewedAt: newReviewedAt,
+      },
+    });
+
+    return {
+      isReviewed: updated.lastReviewedAt !== null,
+      lastReviewedAt: updated.lastReviewedAt,
+    };
+  }
 }
 
 export default new CaseService();
