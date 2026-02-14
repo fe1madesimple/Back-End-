@@ -108,6 +108,7 @@ export interface SubmitEssayResponse {
 }
 
 export interface NextQuestionResponse {
+  timerId: string;
   currentQuestionIndex: number;
   totalQuestions: number;
   questionId: string;

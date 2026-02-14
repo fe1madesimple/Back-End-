@@ -8,6 +8,8 @@ import {
   SubmitEssayResponse,
   QuizResultsResponse,
   TopicChallengeResponse,
+  AttemptDetailsResponse,
+  NextQuestionResponse,
 } from '../interface/practise.interface';
 import { QuickQuizResponse } from '../interface/practise.interface';
 
@@ -610,6 +612,116 @@ class Practise {
       nextQuestionIndex: hasNextQuestion ? nextQuestionIndex : null,
       totalQuestions: 5,
       hasNextQuestion,
+    };
+  }
+
+  async getNextQuestion(
+    parentQuestionId: string,
+    currentIndex: number,
+    userId: string
+  ): Promise<NextQuestionResponse> {
+    const parentQuestion = await prisma.question.findUnique({
+      where: { id: parentQuestionId },
+      include: {
+        questionSets: {
+          orderBy: { order: 'asc' },
+        },
+      },
+    });
+
+    if (!parentQuestion) {
+      throw new NotFoundError('Question not found');
+    }
+
+    const nextIndex = currentIndex + 1;
+
+    const nextQuestion = parentQuestion.questionSets[nextIndex];
+
+    if (!nextQuestion) {
+      throw new NotFoundError('No more questions in this set');
+    }
+
+    // CREATE NEW TIMER
+    const timer = await prisma.questionTimer.create({
+      data: {
+        userId,
+        questionId: nextQuestion.id,
+      },
+    });
+
+    return {
+      timerId: timer.id,
+      currentQuestionIndex: nextIndex,
+      totalQuestions: parentQuestion.questionSets.length,
+      questionId: nextQuestion.id,
+      subject: nextQuestion.subject,
+      examType: nextQuestion.examType,
+      text: nextQuestion.text,
+      averageAttemptTimeSeconds: parentQuestion.averageAttemptTimeSeconds,
+    };
+  }
+
+  async getAttemptDetails(
+    userId: string,
+    questionId: string,
+    parentQuestionId: string
+  ): Promise<AttemptDetailsResponse> {
+    const attempt = await prisma.essayAttempt.findFirst({
+      where: {
+        userId,
+        questionId,
+      },
+      orderBy: { createdAt: 'desc' },
+      include: {
+        question: true,
+      },
+    });
+
+    if (!attempt) {
+      throw new NotFoundError('No attempt found for this question');
+    }
+
+    const parentQuestion = await prisma.question.findUnique({
+      where: { id: parentQuestionId },
+      include: {
+        questionSets: {
+          orderBy: { order: 'asc' },
+        },
+      },
+    });
+
+    if (!parentQuestion) {
+      throw new NotFoundError('Question set not found');
+    }
+
+    const currentIndex = parentQuestion.questionSets.findIndex((q) => q.id === questionId);
+    const totalQuestions = parentQuestion.questionSets.length;
+
+    let sampleAnswer = '';
+    if (attempt.feedback && typeof attempt.feedback === 'object') {
+      const feedbackObj = attempt.feedback as any;
+      sampleAnswer = feedbackObj.sampleAnswer || 'Sample answer not available';
+    }
+
+    return {
+      attemptId: attempt.id,
+      userAnswer: attempt.answerText,
+      aiScore: attempt.aiScore!,
+      band: attempt.band!,
+      feedback: attempt.feedback,
+      strengths: attempt.strengths,
+      improvements: attempt.improvements,
+      sampleAnswer,
+      timeTakenSeconds: attempt.timeTakenSeconds,
+      wordCount: attempt.wordCount,
+      createdAt: attempt.createdAt,
+      currentQuestionIndex: currentIndex,
+      totalQuestions,
+      subject: parentQuestion.subject!,
+      examType: parentQuestion.examType!,
+      questionText: attempt.question.text,
+      hasNextQuestion: currentIndex < totalQuestions - 1,
+      hasPreviousQuestion: currentIndex > 0,
     };
   }
 
