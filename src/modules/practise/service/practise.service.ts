@@ -614,6 +614,91 @@ class Practise {
       hasNextQuestion,
     };
   }
+
+  private async recalculateAverageTime(questionId: string, newTime: number) {
+    const attempts = await prisma.essayAttempt.findMany({
+      where: { questionId },
+      select: { timeTakenSeconds: true },
+    });
+
+    let avgTime: number;
+
+    if (attempts.length === 0) {
+      // First attempt: average with default 30 mins
+      avgTime = Math.round((1800 + newTime) / 2);
+    } else {
+      // Include new time in calculation
+      const total = attempts.reduce((sum, a) => sum + a.timeTakenSeconds, 0) + newTime;
+      avgTime = Math.round(total / (attempts.length + 1));
+    }
+
+    await prisma.questionSet.update({
+      where: { id: questionId },
+      data: { averageAttemptTimeSeconds: avgTime },
+    });
+  }
+
+  private async gradeEssayWithClaude(answerText: string, questionText: string, subject: string) {
+    const GRADING_PROMPT = `You are an experienced FE-1 examiner for the Law Society of Ireland, grading exactly as per official examiner reports from lawsociety.ie for ${subject}.
+
+QUESTION:
+${questionText}
+
+STUDENT ANSWER:
+${answerText}
+
+Grade this answer according to FE-1 standards:
+- Real FE-1 pass mark = 50%
+- App standard (excellence threshold) = 80%
+- Assess: Legal knowledge (30%), Case law usage (25%), Application (25%), Analysis (15%), Structure (5%)
+
+Return ONLY valid JSON with this exact structure:
+{
+  "score": 75,
+  "band": "Upper Second / Very Good",
+  "feedback": {
+    "knowledgeScore": 25,
+    "authoritiesScore": 20,
+    "applicationScore": 22,
+    "analysisScore": 12,
+    "structureScore": 5,
+    "overallComments": "Detailed feedback here..."
+  },
+  "strengths": ["Point 1", "Point 2", "Point 3"],
+  "improvements": ["Point 1", "Point 2", "Point 3"],
+  "sampleAnswer": "A comprehensive model answer showing proper IRAC structure..."
+}`;
+
+    const response = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': process.env.ANTHROPIC_API_KEY!,
+        'anthropic-version': '2023-06-01',
+      },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-20250514',
+        max_tokens: 4000,
+        messages: [{ role: 'user', content: GRADING_PROMPT }],
+      }),
+    });
+
+    const data = (await response.json()) as any;
+    const content = data.content[0].text;
+
+    const cleaned = content.replace(/```json|```/g, '').trim();
+    const parsed = JSON.parse(cleaned);
+
+    return {
+      score: parsed.score,
+      band: parsed.band,
+      feedback: parsed.feedback,
+      strengths: parsed.strengths,
+      improvements: parsed.improvements,
+      sampleAnswer: parsed.sampleAnswer,
+      tokensUsed: data.usage.input_tokens + data.usage.output_tokens,
+    };
+  }
 }
 
 export default new Practise();
