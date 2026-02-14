@@ -892,6 +892,18 @@ model Simulation {
   @@index([userId, createdAt])
   @@map("simulations")
 }
+model QuestionTimer {
+  id         String    @id @default(cuid())
+  userId     String
+  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  questionId String
+  
+  startedAt  DateTime  @default(now())
+  endedAt    DateTime?
+  
+  @@index([userId, questionId])
+  @@map("question_timers")
+}
 
 model EssayAttempt {
   id         String   @id @default(cuid())

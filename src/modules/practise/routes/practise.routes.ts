@@ -3,6 +3,7 @@ import {
   getQuickQuiz,
   getMixedChallenge,
   getPastQuestions,
+  startPractice,
   getPastQuestionById,
   getTopicChallenge,
   getQuizResults
@@ -545,5 +546,9 @@ practiceRouter.get('/topic-challenge/:subjectId', protect, getTopicChallenge);
  *         description: Question is not a past question (no year assigned)
  */
 practiceRouter.get('/past-questions/:id', protect, getPastQuestionById);
+
+
+
+practiceRouter.post('/start-question', protect, startPractice);
 
 export default practiceRouter;
