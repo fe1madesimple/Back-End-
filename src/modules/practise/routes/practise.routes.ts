@@ -6,7 +6,8 @@ import {
   startPractice,
   getPastQuestionById,
   getTopicChallenge,
-  getQuizResults
+  getQuizResults,
+  initiateStartPractice
 
 } from '../controller/practise.controller';
 import { protect } from '@/shared/middleware/auth.middleware';
@@ -268,6 +269,13 @@ practiceRouter.get('/quick-quiz', protect, getQuickQuiz);
  *         description: Quiz results retrieved
  */
 practiceRouter.post('/quiz-results', protect, getQuizResults);
+
+
+practiceRouter.post('/initiate-start-question', protect, initiateStartPractice);
+
+
+practiceRouter.post('/start-question', protect, startPractice);
+
 
 
 /**
@@ -547,8 +555,5 @@ practiceRouter.get('/topic-challenge/:subjectId', protect, getTopicChallenge);
  */
 practiceRouter.get('/past-questions/:id', protect, getPastQuestionById);
 
-
-
-practiceRouter.post('/start-question', protect, startPractice);
 
 export default practiceRouter;
