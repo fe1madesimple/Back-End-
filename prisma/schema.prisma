@@ -898,7 +898,7 @@ model QuestionTimer {
   userId     String
   user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   questionId String
-  
+   isStarted  Boolean   @default(true)
   startedAt  DateTime  @default(now())
   endedAt    DateTime?
   

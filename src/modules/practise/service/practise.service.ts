@@ -485,7 +485,7 @@ class Practise {
     };
   }
 
-  async startPractice(parentQuestionId: string, userId: string): Promise<StartPracticeResponse> {
+  async startPractice(parentQuestionId: string, userId: string): Promise<any> {
     const parentQuestion = await prisma.question.findUnique({
       where: { id: parentQuestionId },
       include: {
@@ -500,6 +500,22 @@ class Practise {
     }
 
     const firstQuestion = parentQuestion.questionSets[0]!;
+
+    const isTimer = await prisma.questionTimer.findFirst({
+      where: {
+        userId,
+        questionId: parentQuestionId,
+        isStarted: true,
+        endedAt: null,
+      },
+    });
+
+    if (isTimer) {
+      return {
+        timeAgo: Math.floor((Date.now() - isTimer.startedAt.getTime()) / 1000),
+        isStarted: true
+      }
+    }
 
     const timer = await prisma.questionTimer.create({
       data: {
