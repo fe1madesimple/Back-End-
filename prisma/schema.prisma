@@ -862,7 +862,7 @@ model QuestionSet {
   description String       @db.Text
   text        String       @db.Text
   points      Int          @default(20)
-  order       Int // 1-5
+  order       Int 
   averageAttemptSeconds Int @default(1800)
 
   createdAt DateTime @default(now())

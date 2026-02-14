@@ -186,7 +186,6 @@ class Practise {
         subject: true,
         examType: true,
         order: true,
-        averageAttemptTimeSeconds: true,
         questionSets: {
           select: { id: true },
         },
@@ -216,7 +215,6 @@ class Practise {
         examType: q.examType!,
         order: q.order,
         description: q.description || q.text.substring(0, 150) + '...',
-        averageAttemptTimeSeconds: q.averageAttemptTimeSeconds,
         questionCount: q.questionSets.length + 1,
       })),
       pagination: {
@@ -460,6 +458,7 @@ class Practise {
   }
 
   async initiateStartPractice(parentQuestionId: string): Promise<any> {
+
     const parentQuestion = await prisma.question.findUnique({
       where: { id: parentQuestionId },
       include: {
@@ -482,7 +481,7 @@ class Practise {
       subject: firstQuestion.subject,
       examType: firstQuestion.examType,
       text: firstQuestion.text,
-      averageAttemptTimeSeconds: parentQuestion.averageAttemptTimeSeconds,
+      averageAttemptTimeSeconds: firstQuestion.averageAttemptSeconds,
     };
   }
 
@@ -533,7 +532,7 @@ class Practise {
       subject: firstQuestion.subject,
       examType: firstQuestion.examType,
       text: firstQuestion.text,
-      averageAttemptTimeSeconds: parentQuestion.averageAttemptTimeSeconds,
+      averageAttemptTimeSeconds: firstQuestion.averageAttemptSeconds,
     };
   }
 

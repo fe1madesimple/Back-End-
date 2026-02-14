@@ -33,7 +33,6 @@ export interface PastQuestionsListResponse {
     examType: string;
     order: number;
     description: string;
-    averageAttemptTimeSeconds: number;
     questionCount: number;
   }>;
   pagination: {
