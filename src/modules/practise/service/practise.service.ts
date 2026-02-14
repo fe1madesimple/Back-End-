@@ -458,7 +458,7 @@ class Practise {
     };
   }
 
-  async startPractice(parentQuestionId: string): Promise<StartPracticeResponse> {
+  async startPractice(parentQuestionId: string, userId: string): Promise<StartPracticeResponse> {
     const parentQuestion = await prisma.question.findUnique({
       where: { id: parentQuestionId },
       include: {
@@ -474,7 +474,15 @@ class Practise {
 
     const firstQuestion = parentQuestion.questionSets[0]!;
 
+    const timer = await prisma.questionTimer.create({
+      data: {
+        userId,
+        questionId: firstQuestion.id,
+      },
+    });
+
     return {
+      timerId: timer.id,
       currentQuestionIndex: 0,
       totalQuestions: parentQuestion.questionSets.length,
       questionId: firstQuestion.id,
@@ -487,4 +495,3 @@ class Practise {
 }
 
 export default new Practise();
-

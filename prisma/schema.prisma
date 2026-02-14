@@ -74,6 +74,7 @@ model User {
   dailyStudySessions DailyStudySession[]
   essayAttempts      EssayAttempt[]
   simulations        Simulation[]
+  questionTimers QuestionTimer[]
 
   @@index([email])
   @@index([googleId])

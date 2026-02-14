@@ -75,6 +75,7 @@ export interface PastQuestionDetailResponse {
 }
 
 export interface StartPracticeResponse {
+  timerId: string;
   currentQuestionIndex: number;
   totalQuestions: number;
   questionId: string;
