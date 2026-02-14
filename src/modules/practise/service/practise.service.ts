@@ -273,6 +273,7 @@ class Practise {
         description: parentQuestion.description || '',
         text: parentQuestion.text,
         order: parentQuestion.order,
+        averageTime: 1800
       },
       ...parentQuestion.questionSets.map((q) => ({
         id: q.id,
@@ -283,6 +284,7 @@ class Practise {
         description: q.description,
         text: q.text,
         order: q.order,
+        averageTime: 1800
       })),
     ];
 

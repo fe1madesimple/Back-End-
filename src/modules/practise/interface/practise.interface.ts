@@ -58,6 +58,7 @@ export interface QuestionDetail {
   description: string;
   text: string;
   order: number;
+  averageTime: number
 }
 
 export interface PastQuestionDetailResponse {
