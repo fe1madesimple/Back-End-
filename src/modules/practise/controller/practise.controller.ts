@@ -53,9 +53,9 @@ export const getPastQuestionById = asyncHandler(async (req: Request, res: Respon
 
   if (!id) throw new AppError('past question id must be supplied');
 
-  const question = await practiseService.getPastQuestionById(id, userId);
+  const question = await practiseService.getPastQuestionDetail(userId, id)
 
-  sendSuccess(res, 'Past question retrieved', { question });
+  sendSuccess(res, 'Past question retrieved', { ...question });
 });
 
 export const getQuizResults = asyncHandler(async (req: Request, res: Response) => {

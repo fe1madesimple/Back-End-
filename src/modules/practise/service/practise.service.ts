@@ -234,7 +234,7 @@ class Practise {
   async getPastQuestionDetail(
     userId: string,
     questionId: string
-  ): Promise<PastQuestionDetailResponse> {
+  ): Promise<any> {
     const parentQuestion = await prisma.question.findUnique({
       where: { id: questionId },
       include: {
@@ -287,9 +287,7 @@ class Practise {
     ];
 
     return {
-      parentQuestion: questions[0]!,
       questions,
-      averageAttemptTimeSeconds: parentQuestion.averageAttemptTimeSeconds,
       userPreviousAttempts: previousAttempts.map((a) => ({
         id: a.id,
         questionId: a.questionId,
