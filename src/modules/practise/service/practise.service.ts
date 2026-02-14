@@ -152,55 +152,83 @@ class Practise {
     };
   }
 
-  async getPastQuestionById(
-    questionId: string,
-    userId: string
-  ): Promise<PastQuestionDetailResponse> {
-    const question = await prisma.question.findUnique({
-      where: {
-        id: questionId,
-        type: 'ESSAY',
-        isPublished: true,
-      },
-      include: {
-        attempts: {
-          where: { userId },
-          select: {
-            id: true,
-            answer: true,
-            aiScore: true,
-            band: true,
-            appPass: true,
-            createdAt: true,
-          },
-          orderBy: { createdAt: 'desc' },
+  async getPastQuestions(query: PastQuestionsQuery): Promise<PastQuestionsListResponse> {
+    const { search, subject, year, examType, page = 1, limit = 9 } = query;
+
+    const where: any = {
+      type: 'ESSAY',
+      year: { not: null },
+    };
+
+    if (subject) where.subject = subject;
+    if (year) where.year = year;
+    if (examType) where.examType = examType;
+
+    if (search) {
+      where.OR = [
+        { text: { contains: search, mode: 'insensitive' } },
+        { subject: { contains: search, mode: 'insensitive' } },
+        { description: { contains: search, mode: 'insensitive' } },
+      ];
+    }
+
+    const total = await prisma.question.count({ where });
+    const skip = (page - 1) * limit;
+
+    const questions = await prisma.question.findMany({
+      where,
+      select: {
+        id: true,
+        description: true,
+        text: true,
+        year: true,
+        subject: true,
+        examType: true,
+        order: true,
+        averageAttemptTimeSeconds: true,
+        questionSets: {
+          select: { id: true },
         },
       },
+      orderBy: [{ year: 'desc' }, { order: 'asc' }],
+      skip,
+      take: limit,
     });
 
-    if (!question) {
-      throw new NotFoundError('Past question not found');
-    }
+    const allPastQuestions = await prisma.question.findMany({
+      where: { type: 'ESSAY', year: { not: null } },
+      select: { subject: true, year: true, examType: true },
+    });
 
-    if (!question.year) {
-      throw new BadRequestError('This is not a past question');
-    }
+    const subjects = [...new Set(allPastQuestions.map((q) => q.subject).filter(Boolean))];
+    const years = [...new Set(allPastQuestions.map((q) => q.year).filter(Boolean))].sort(
+      (a, b) => b! - a!
+    );
+    const examTypes = [...new Set(allPastQuestions.map((q) => q.examType).filter(Boolean))];
 
     return {
-      id: question.id,
-      text: question.text,
-      year: question.year,
-      subject: question.subject!,
-      examType: question.examType!,
-      order: question.order,
-      userAttempts: question.attempts.map((attempt) => ({
-        id: attempt.id,
-        answer: attempt.answer,
-        aiScore: attempt.aiScore,
-        band: attempt.band,
-        appPass: attempt.appPass,
-        createdAt: attempt.createdAt,
+      questions: questions.map((q) => ({
+        id: q.id,
+        text: q.text,
+        year: q.year!,
+        subject: q.subject!,
+        examType: q.examType!,
+        order: q.order,
+        description: q.description || q.text.substring(0, 150) + '...',
+        averageAttemptTimeSeconds: q.averageAttemptTimeSeconds,
+        questionCount: q.questionSets.length,
       })),
+      pagination: {
+        total,
+        page,
+        limit,
+        totalPages: Math.ceil(total / limit),
+      },
+      filters: {
+        subjects: subjects as string[],
+        years: years as number[],
+        examTypes: examTypes as string[],
+      },
     };
   }
 
@@ -252,105 +280,6 @@ class Practise {
         module: q.module?.name || 'Unknown Module',
       })),
       totalAvailable: questions.length,
-    };
-  }
-  async getPastQuestions(query: PastQuestionsQuery): Promise<PastQuestionsListResponse> {
-    const { search, subject, year, examType, page = 1, limit = 9 } = query;
-
-    // Build filter conditions
-    const where: any = {
-      type: 'ESSAY',
-      year: { not: null }, // Only past questions have year
-    };
-
-    if (subject) {
-      where.subject = subject;
-    }
-
-    if (year) {
-      where.year = year;
-    }
-
-    if (examType) {
-      where.examType = examType;
-    }
-
-    if (search) {
-      where.OR = [
-        {
-          text: {
-            contains: search,
-            mode: 'insensitive',
-          },
-        },
-        {
-          subject: {
-            contains: search,
-            mode: 'insensitive',
-          },
-        },
-      ];
-    }
-
-    // Get total count
-    const total = await prisma.question.count({ where });
-
-    // Get paginated questions
-    const skip = (page - 1) * limit;
-    const questions = await prisma.question.findMany({
-      where,
-      select: {
-        id: true,
-        text: true,
-        year: true,
-        subject: true,
-        examType: true,
-        order: true,
-      },
-      orderBy: [{ year: 'desc' }, { order: 'asc' }],
-      skip,
-      take: limit,
-    });
-
-    // Get unique filter values for frontend dropdowns
-    const allPastQuestions = await prisma.question.findMany({
-      where: {
-        type: 'ESSAY',
-        year: { not: null },
-      },
-      select: {
-        subject: true,
-        year: true,
-        examType: true,
-      },
-    });
-
-    const subjects = [...new Set(allPastQuestions.map((q) => q.subject).filter(Boolean))];
-    const years = [...new Set(allPastQuestions.map((q) => q.year).filter(Boolean))].sort(
-      (a, b) => b! - a!
-    );
-    const examTypes = [...new Set(allPastQuestions.map((q) => q.examType).filter(Boolean))];
-
-    return {
-      questions: questions.map((q) => ({
-        id: q.id,
-        text: q.text,
-        year: q.year!,
-        subject: q.subject!,
-        examType: q.examType!,
-        order: q.order,
-      })),
-      pagination: {
-        total,
-        page,
-        limit,
-        totalPages: Math.ceil(total / limit),
-      },
-      filters: {
-        subjects: subjects as string[],
-        years: years as number[],
-        examTypes: examTypes as string[],
-      },
     };
   }
 
