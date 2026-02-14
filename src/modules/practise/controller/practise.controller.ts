@@ -72,12 +72,12 @@ export const getQuizResults = asyncHandler(async (req: Request, res: Response) =
 });
 
 export const initiateStartPractice = asyncHandler(async (req: Request, res: Response) => {
-    const userId = req.user!.user.id;
+    // const userId = req.user!.user.id;
     const { parentQuestionId } = req.body;
 
     if (!parentQuestionId) throw new AppError('parent question id must be supplied');
 
-    const result = await practiseService.initiateStartPractice(parentQuestionId, userId);
+    const result = await practiseService.initiateStartPractice(parentQuestionId);
     sendSuccess(res, 'start practice initiated', result, 201);
 })
 

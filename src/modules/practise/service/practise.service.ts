@@ -4,7 +4,8 @@ import {
   MixedChallengeResponse,
   PastQuestionsListResponse,
   PastQuestionsQuery,
-  StartPracticeResponse,
+  SubmitEssayInput,
+  SubmitEssayResponse,
   QuizResultsResponse,
   TopicChallengeResponse,
 } from '../interface/practise.interface';
@@ -513,8 +514,8 @@ class Practise {
     if (isTimer) {
       return {
         timeAgo: Math.floor((Date.now() - isTimer.startedAt.getTime()) / 1000),
-        isStarted: true
-      }
+        isStarted: true,
+      };
     }
 
     const timer = await prisma.questionTimer.create({
@@ -533,6 +534,84 @@ class Practise {
       examType: firstQuestion.examType,
       text: firstQuestion.text,
       averageAttemptTimeSeconds: parentQuestion.averageAttemptTimeSeconds,
+    };
+  }
+
+  async submitEssay(
+    userId: string,
+    input: SubmitEssayInput & { timerId: string }
+  ): Promise<SubmitEssayResponse> {
+    const { questionId, answerText, timerId, currentQuestionIndex, parentQuestionId } = input;
+
+    const question = await prisma.questionSet.findUnique({
+      where: { id: questionId },
+    });
+
+    if (!question) {
+      throw new NotFoundError('Question not found');
+    }
+
+    // END TIMER
+    const timer = await prisma.questionTimer.update({
+      where: { id: timerId },
+      data: { endedAt: new Date() },
+    });
+
+    const timeTakenSeconds = Math.floor(
+      (timer.endedAt!.getTime() - timer.startedAt.getTime()) / 1000
+    );
+
+    const wordCount = answerText.trim().split(/\s+/).length;
+
+    // Call Claude AI for grading
+    const aiResponse = await this.gradeEssayWithClaude(answerText, question.text, question.subject);
+
+    console.log(aiResponse);
+
+    const attempt = await prisma.essayAttempt.create({
+      data: {
+        userId,
+        questionId,
+        answerText,
+        timeTakenSeconds,
+        wordCount,
+        aiScore: aiResponse.score,
+        band: aiResponse.band,
+        feedback: aiResponse.feedback,
+        strengths: aiResponse.strengths,
+        improvements: aiResponse.improvements,
+        provider: 'anthropic',
+        model: 'claude-sonnet-4-20250514',
+        tokensUsed: aiResponse.tokensUsed,
+        isSimulation: false,
+      },
+    });
+
+    // RECALCULATE WITH NEW TIME
+    await this.recalculateAverageTime(questionId, timeTakenSeconds);
+
+    const parentQuestion = await prisma.question.findUnique({
+      where: { id: parentQuestionId },
+      include: { questionSets: { orderBy: { order: 'asc' } } },
+    });
+
+    const totalQuestions = parentQuestion?.questionSets.length || 5;
+    const nextQuestionIndex = currentQuestionIndex + 1;
+    const hasNextQuestion = nextQuestionIndex < totalQuestions;
+
+    return {
+      attemptId: attempt.id,
+      userAnswer: answerText,
+      aiScore: aiResponse.score,
+      band: aiResponse.band,
+      feedback: aiResponse.feedback,
+      strengths: aiResponse.strengths,
+      improvements: aiResponse.improvements,
+      sampleAnswer: aiResponse.sampleAnswer,
+      currentQuestionIndex,
+      nextQuestionIndex: hasNextQuestion ? nextQuestionIndex : null,
+      totalQuestions: 5,
+      hasNextQuestion,
     };
   }
 }
