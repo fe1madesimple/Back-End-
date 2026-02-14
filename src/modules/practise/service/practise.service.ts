@@ -632,7 +632,7 @@ class Practise {
       avgTime = Math.round(total / (attempts.length + 1));
     }
 
-    await prisma.questionSet.update({
+    await prisma.question.update({
       where: { id: questionId },
       data: { averageAttemptTimeSeconds: avgTime },
     });
