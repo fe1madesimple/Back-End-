@@ -72,6 +72,8 @@ model User {
   playlists          Playlist[]
   quizSessions       QuizSession[]
   dailyStudySessions DailyStudySession[]
+  essayAttempts      EssayAttempt[]
+  simulations        Simulation[]
 
   @@index([email])
   @@index([googleId])
@@ -810,34 +812,119 @@ enum AssetType {
 
 model Question {
   id       String  @id @default(cuid())
-  moduleId String? // Questions belong to modules
+  moduleId String?
   module   Module? @relation(fields: [moduleId], references: [id], onDelete: SetNull)
 
-  type          QuestionType
-  text          String       @db.Text
-  options       Json? // For MCQ: ["A: ...", "B: ...", "C: ...", "D: ..."]
-  correctAnswer String? // For MCQ: "A"
-  explanation   String?      @db.Text
-  points        Int          @default(1)
+  type                      QuestionType
+  description               String?      @db.Text // Card preview
+  text                      String       @db.Text // Main question text
+  options                   Json?
+  averageAttemptTimeSeconds Int          @default(1800)
+  correctAnswer             String?
+  explanation               String?      @db.Text
+  points                    Int          @default(1)
 
-  // For past questions
   year     Int?
   subject  String?
-  examType String? // "Essay", "Problem", "MCQ"
+  examType String?
 
   order       Int     @default(0)
   isPublished Boolean @default(true)
 
-  // Relations - ADD THESE 3 LINES:
+  // Relations
+  questionSets  QuestionSet[] // ← 5 questions under this card
   timedSessions TimedSession[]
   quizAttempts  QuizAttempt[]
   aiEvaluations AIEvaluation[]
   attempts      QuestionAttempt[]
+  essayAttempts EssayAttempt[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
+  @@index([moduleId])
+  @@index([type])
+  @@index([subject])
+  @@index([year])
   @@map("questions")
+}
+
+model QuestionSet {
+  id               String   @id @default(cuid())
+  parentQuestionId String
+  parentQuestion   Question @relation(fields: [parentQuestionId], references: [id], onDelete: Cascade)
+
+  type        QuestionType
+  subject     String
+  year        Int
+  examType    String
+  description String       @db.Text
+  text        String       @db.Text
+  points      Int          @default(20)
+  order       Int // 1-5
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([parentQuestionId])
+  @@index([subject])
+  @@index([year])
+  @@map("question_sets")
+}
+
+model Simulation {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  startedAt        DateTime  @default(now())
+  endedAt          DateTime?
+  totalTimeSeconds Int?
+
+  overallScore Int?
+  passed       Boolean?
+
+  attempts EssayAttempt[]
+
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([userId, createdAt])
+  @@map("simulations")
+}
+
+model EssayAttempt {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  questionId String
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  answerText       String @db.Text
+  timeTakenSeconds Int
+  wordCount        Int
+
+  aiScore      Int?
+  band         String?
+  feedback     Json?
+  strengths    String[]
+  improvements String[]
+
+  provider   String?
+  model      String?
+  tokensUsed Int?
+
+  isSimulation Boolean     @default(false)
+  simulationId String?
+  simulation   Simulation? @relation(fields: [simulationId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([questionId])
+  @@index([simulationId])
+  @@index([userId, questionId])
+  @@map("essay_attempts")
 }
 
 enum QuestionType {

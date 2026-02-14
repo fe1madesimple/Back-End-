@@ -43,18 +43,6 @@ export interface PastQuestionsListResponse {
   };
 }
 
-export interface QuickQuizResponse {
-  sessionId: string;
-  questions: Array<{
-    id: string;
-    text: string;
-    options: any;
-    order: number;
-    subject: string;
-    module: string;
-  }>;
-  totalAvailable: number;
-}
 
 export interface PastQuestionDetailResponse {
   id: string;
@@ -71,6 +59,19 @@ export interface PastQuestionDetailResponse {
     appPass: boolean | null;
     createdAt: Date;
   }[];
+}
+
+export interface QuickQuizResponse {
+  sessionId: string;
+  questions: Array<{
+    id: string;
+    text: string;
+    options: any;
+    order: number;
+    subject: string;
+    module: string;
+  }>;
+  totalAvailable: number;
 }
 
 

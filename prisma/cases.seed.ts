@@ -11,8 +11,8 @@ export async function seedCases() {
       citation: '[1893] 1 QB 256',
       year: 1893,
       court: 'UK Court of Appeal',
-      jurisdiction: CaseJurisdiction.UK_COURT_OF_APPEAL, // ← Changed
-      frequency: CaseFrequency.HIGH_FREQUENCY, // ← Changed
+      jurisdiction: CaseJurisdiction.UK_COURT_OF_APPEAL,
+      frequency: CaseFrequency.HIGH_FREQUENCY, 
       subjects: ['Contract Law'],
       topics: ['Offer & Acceptance', 'Unilateral Contracts', 'Consideration'],
       facts:
