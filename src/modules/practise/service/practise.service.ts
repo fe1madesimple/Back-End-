@@ -231,6 +231,74 @@ class Practise {
       },
     };
   }
+  async getPastQuestionDetail(
+    userId: string,
+    questionId: string
+  ): Promise<PastQuestionDetailResponse> {
+    const parentQuestion = await prisma.question.findUnique({
+      where: { id: questionId },
+      include: {
+        questionSets: {
+          orderBy: { order: 'asc' },
+        },
+      },
+    });
+
+    if (!parentQuestion) {
+      throw new NotFoundError('Question not found');
+    }
+
+    const previousAttempts = await prisma.essayAttempt.findMany({
+      where: {
+        userId,
+        questionId: { in: [questionId, ...parentQuestion.questionSets.map((q) => q.id)] },
+      },
+      select: {
+        id: true,
+        questionId: true,
+        aiScore: true,
+        band: true,
+        createdAt: true,
+      },
+      orderBy: { createdAt: 'desc' },
+    });
+
+    const questions = [
+      {
+        id: parentQuestion.id,
+        type: parentQuestion.type,
+        subject: parentQuestion.subject!,
+        year: parentQuestion.year!,
+        examType: parentQuestion.examType!,
+        description: parentQuestion.description || '',
+        text: parentQuestion.text,
+        order: parentQuestion.order,
+      },
+      ...parentQuestion.questionSets.map((q) => ({
+        id: q.id,
+        type: q.type,
+        subject: q.subject,
+        year: q.year,
+        examType: q.examType,
+        description: q.description,
+        text: q.text,
+        order: q.order,
+      })),
+    ];
+
+    return {
+      parentQuestion: questions[0]!,
+      questions,
+      averageAttemptTimeSeconds: parentQuestion.averageAttemptTimeSeconds,
+      userPreviousAttempts: previousAttempts.map((a) => ({
+        id: a.id,
+        questionId: a.questionId,
+        aiScore: a.aiScore!,
+        band: a.band!,
+        createdAt: a.createdAt,
+      })),
+    };
+  }
 
   async getTopicChallenge(userId: string, subjectId: string): Promise<TopicChallengeResponse> {
     const session = await prisma.quizSession.create({
