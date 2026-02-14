@@ -71,8 +71,8 @@ export const getQuizResults = asyncHandler(async (req: Request, res: Response) =
   sendSuccess(res, 'Quiz results retrieved', results);
 });
 
-export const initiateStartPractice = asyncHandler(async (req: Request, res: Response) => {
-  
+export const initiateStartPractice = asyncHandler(async (req: Request, re: Response) => {
+
 })
 
 
