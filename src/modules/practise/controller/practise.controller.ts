@@ -71,8 +71,14 @@ export const getQuizResults = asyncHandler(async (req: Request, res: Response) =
   sendSuccess(res, 'Quiz results retrieved', results);
 });
 
-export const initiateStartPractice = asyncHandler(async (req: Request, re: Response) => {
+export const initiateStartPractice = asyncHandler(async (req: Request, res: Response) => {
+    const userId = req.user!.user.id;
+    const { parentQuestionId } = req.body;
 
+    if (!parentQuestionId) throw new AppError('parent question id must be supplied');
+
+    const result = await practiseService.initiateStartPractice(parentQuestionId, userId);
+    sendSuccess(res, 'start practice initiated', result, 201);
 })
 
 
@@ -83,5 +89,5 @@ export const startPractice = asyncHandler(async (req: Request, res: Response) =>
   if (!parentQuestionId) throw new AppError("parent question id must be supplied")
 
   const result = await practiseService.startPractice(parentQuestionId, userId);
-  sendSuccess(res, 'Practice started', result, 201);
+  sendSuccess(res, 'practice begins', result, 201);
 });
