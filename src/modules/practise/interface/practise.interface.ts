@@ -12,6 +12,9 @@ export interface MixedPracticeResponse {
   modulesIncluded: number;
 }
 
+
+// src/modules/practice/interfaces/practice.interface.ts
+
 export interface PastQuestionsQuery {
   search?: string;
   subject?: string;
@@ -29,6 +32,9 @@ export interface PastQuestionsListResponse {
     subject: string;
     examType: string;
     order: number;
+    description: string;
+    averageAttemptTimeSeconds: number;
+    questionCount: number;
   }>;
   pagination: {
     total: number;
@@ -43,23 +49,94 @@ export interface PastQuestionsListResponse {
   };
 }
 
+export interface QuestionDetail {
+  id: string;
+  type: string;
+  subject: string;
+  year: number;
+  examType: string;
+  description: string;
+  text: string;
+  order: number;
+}
 
 export interface PastQuestionDetailResponse {
-  id: string;
-  text: string;
-  year: number;
+  parentQuestion: QuestionDetail;
+  questions: QuestionDetail[];
+  averageAttemptTimeSeconds: number;
+  userPreviousAttempts: Array<{
+    id: string;
+    questionId: string;
+    aiScore: number;
+    band: string;
+    createdAt: Date;
+  }>;
+}
+
+export interface StartPracticeResponse {
+  currentQuestionIndex: number;
+  totalQuestions: number;
+  questionId: string;
   subject: string;
   examType: string;
-  order: number;
-  userAttempts: {
-    id: string;
-    answer: string;
-    aiScore: number | null;
-    band: string | null;
-    appPass: boolean | null;
-    createdAt: Date;
-  }[];
+  text: string;
+  averageAttemptTimeSeconds: number;
 }
+
+export interface SubmitEssayInput {
+  questionId: string;
+  answerText: string;
+  timeTakenSeconds: number;
+  currentQuestionIndex: number;
+  parentQuestionId: string;
+}
+
+export interface SubmitEssayResponse {
+  attemptId: string;
+  userAnswer: string;
+  aiScore: number;
+  band: string;
+  feedback: any;
+  strengths: string[];
+  improvements: string[];
+  sampleAnswer: string;
+  currentQuestionIndex: number;
+  nextQuestionIndex: number | null;
+  totalQuestions: number;
+  hasNextQuestion: boolean;
+}
+
+export interface NextQuestionResponse {
+  currentQuestionIndex: number;
+  totalQuestions: number;
+  questionId: string;
+  subject: string;
+  examType: string;
+  text: string;
+  averageAttemptTimeSeconds: number;
+}
+
+export interface AttemptDetailsResponse {
+  attemptId: string;
+  userAnswer: string;
+  aiScore: number;
+  band: string;
+  feedback: any;
+  strengths: string[];
+  improvements: string[];
+  sampleAnswer: string;
+  timeTakenSeconds: number;
+  wordCount: number;
+  createdAt: Date;
+  currentQuestionIndex: number;
+  totalQuestions: number;
+  subject: string;
+  examType: string;
+  questionText: string;
+  hasNextQuestion: boolean;
+  hasPreviousQuestion: boolean;
+}
+
 
 export interface QuickQuizResponse {
   sessionId: string;

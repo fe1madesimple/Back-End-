@@ -649,7 +649,7 @@ Reference Fransson, Egenberger, Bauer, and Charter case law.`,
 
 createNewEssaySets()
   .catch((e) => {
-    console.error('❌ Creation failed:', e);
+    console.error('❌ Creation failed', e);
     process.exit(1);
   })
   .finally(async () => {
