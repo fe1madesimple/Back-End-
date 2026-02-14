@@ -231,10 +231,7 @@ class Practise {
       },
     };
   }
-  async getPastQuestionDetail(
-    userId: string,
-    questionId: string
-  ): Promise<any> {
+  async getPastQuestionDetail(userId: string, questionId: string): Promise<any> {
     const parentQuestion = await prisma.question.findUnique({
       where: { id: questionId },
       include: {
@@ -273,7 +270,7 @@ class Practise {
         description: parentQuestion.description || '',
         text: parentQuestion.text,
         order: parentQuestion.order,
-        averageTime: 1800
+        averageTime: 1800,
       },
       ...parentQuestion.questionSets.map((q) => ({
         id: q.id,
@@ -284,7 +281,7 @@ class Practise {
         description: q.description,
         text: q.text,
         order: q.order,
-        averageTime: 1800
+        averageTime: 1800,
       })),
     ];
 
@@ -457,6 +454,33 @@ class Practise {
         avgTimerPerQuestion,
         quizStreak,
       },
+    };
+  }
+
+  async startPractice(userId: string, parentQuestionId: string): Promise<StartPracticeResponse> {
+    const parentQuestion = await prisma.question.findUnique({
+      where: { id: parentQuestionId },
+      include: {
+        questionSets: {
+          orderBy: { order: 'asc' },
+        },
+      },
+    });
+
+    if (!parentQuestion || parentQuestion.questionSets.length === 0) {
+      throw new NotFoundError('Question set not found');
+    }
+
+    const firstQuestion = parentQuestion.questionSets[0]!;
+
+    return {
+      currentQuestionIndex: 0,
+      totalQuestions: parentQuestion.questionSets.length,
+      questionId: firstQuestion.id,
+      subject: firstQuestion.subject,
+      examType: firstQuestion.examType,
+      text: firstQuestion.text,
+      averageAttemptTimeSeconds: parentQuestion.averageAttemptTimeSeconds,
     };
   }
 }
