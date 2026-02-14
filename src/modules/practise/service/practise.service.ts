@@ -458,7 +458,7 @@ class Practise {
     };
   }
 
-  async initiateStartPractice(parentQuestionId: string, userId: string): Promise<any> {
+  async initiateStartPractice(parentQuestionId: string): Promise<any> {
     const parentQuestion = await prisma.question.findUnique({
       where: { id: parentQuestionId },
       include: {
@@ -476,7 +476,7 @@ class Practise {
 
     return {
       currentQuestionIndex: 0,
-      totalQuestions: parentQuestion.questionSets.length,
+      totalQuestions: parentQuestion.questionSets.length + 5,
       questionId: firstQuestion.id,
       subject: firstQuestion.subject,
       examType: firstQuestion.examType,
@@ -527,7 +527,7 @@ class Practise {
     return {
       timerId: timer.id,
       currentQuestionIndex: 0,
-      totalQuestions: parentQuestion.questionSets.length,
+      totalQuestions: parentQuestion.questionSets.length + 1,
       questionId: firstQuestion.id,
       subject: firstQuestion.subject,
       examType: firstQuestion.examType,
