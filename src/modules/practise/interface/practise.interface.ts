@@ -206,3 +206,89 @@ export interface QuizResultsResponse {
     quizStreak: number;
   }
 }
+
+
+
+
+// simulation interface
+
+// src/modules/practice/interfaces/simulation.interface.ts
+
+export interface StartSimulationResponse {
+  simulationId: string;
+  startedAt: Date;
+  totalTimeSeconds: number; // 10800 (3 hours)
+  questions: Array<{
+    questionId: string;
+    questionIndex: number;
+    subject: string;
+    examType: string;
+    text: string;
+  }>;
+}
+
+export interface SubmitSimulationAnswerInput {
+  simulationId: string;
+  questionId: string;
+  answerText: string;
+  timeTakenSeconds: number;
+  currentQuestionIndex: number;
+}
+
+export interface SubmitSimulationAnswerResponse {
+  attemptId: string;
+  saved: true;
+  timeTakenSeconds: number;
+  currentQuestionIndex: number;
+  nextQuestionIndex: number | null;
+  hasNextQuestion: boolean;
+  nextQuestion: {
+    questionId: string;
+    questionIndex: number;
+    subject: string;
+    examType: string;
+    text: string;
+  } | null;
+}
+
+export interface GetSimulationQuestionResponse {
+  currentQuestionIndex: number;
+  totalQuestions: number;
+  questionId: string;
+  subject: string;
+  examType: string;
+  text: string;
+  userAnswer: string | null;
+  isSubmitted: boolean;
+  timeTakenSeconds: number | null;
+  canEdit: boolean;
+}
+
+export interface FinishSimulationResponse {
+  simulationId: string;
+  overallScore: number;
+  passed: boolean;
+  passThreshold: number; // 50
+  appPassThreshold: number; // 80
+  totalTimeSeconds: number;
+  averageTimePerQuestion: number;
+  results: Array<{
+    questionId: string;
+    questionIndex: number;
+    subject: string;
+    userAnswer: string;
+    timeTakenSeconds: number;
+    aiScore: number;
+    band: string;
+    feedback: any;
+    strengths: string[];
+    improvements: string[];
+    sampleAnswer: string;
+  }>;
+}
+
+export interface FailSimulationResponse {
+  failed: true;
+  reason: string;
+  message: string;
+}
