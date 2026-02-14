@@ -459,7 +459,30 @@ class Practise {
   }
 
   async initiateStartPractice(parentQuestionId: string): Promise<any> {
-    
+    const parentQuestion = await prisma.question.findUnique({
+      where: { id: parentQuestionId },
+      include: {
+        questionSets: {
+          orderBy: { order: 'asc' },
+        },
+      },
+    });
+
+    if (!parentQuestion || parentQuestion.questionSets.length === 0) {
+      throw new NotFoundError('Question set not found');
+    }
+
+    const firstQuestion = parentQuestion.questionSets[0]!;
+
+    return {
+      currentQuestionIndex: 0,
+      totalQuestions: parentQuestion.questionSets.length,
+      questionId: firstQuestion.id,
+      subject: firstQuestion.subject,
+      examType: firstQuestion.examType,
+      text: firstQuestion.text,
+      averageAttemptTimeSeconds: parentQuestion.averageAttemptTimeSeconds,
+    };
   }
 
   async startPractice(parentQuestionId: string, userId: string): Promise<StartPracticeResponse> {
