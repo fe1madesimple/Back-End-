@@ -216,7 +216,7 @@ class Practise {
         order: q.order,
         description: q.description || q.text.substring(0, 150) + '...',
         averageAttemptTimeSeconds: q.averageAttemptTimeSeconds,
-        questionCount: q.questionSets.length,
+        questionCount: q.questionSets.length + 1,
       })),
       pagination: {
         total,
