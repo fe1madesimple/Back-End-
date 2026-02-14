@@ -269,7 +269,7 @@ class Practise {
         description: parentQuestion.description || '',
         text: parentQuestion.text,
         order: parentQuestion.order,
-        averageTime: 1800,
+        averageTime: parentQuestion.questionSets[0]?.averageAttemptSeconds,
       },
       ...parentQuestion.questionSets.map((q) => ({
         id: q.id,
@@ -280,7 +280,7 @@ class Practise {
         description: q.description,
         text: q.text,
         order: q.order,
-        averageTime: 1800,
+        averageTime: parentQuestion.questionSets[0]?.averageAttemptSeconds,
       })),
     ];
 
@@ -458,7 +458,6 @@ class Practise {
   }
 
   async initiateStartPractice(parentQuestionId: string): Promise<any> {
-
     const parentQuestion = await prisma.question.findUnique({
       where: { id: parentQuestionId },
       include: {
