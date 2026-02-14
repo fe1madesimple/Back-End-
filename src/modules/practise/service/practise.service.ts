@@ -4,7 +4,7 @@ import {
   MixedChallengeResponse,
   PastQuestionsListResponse,
   PastQuestionsQuery,
-  PastQuestionDetailResponse,
+  StartPracticeResponse,
   QuizResultsResponse,
   TopicChallengeResponse,
 } from '../interface/practise.interface';
@@ -286,6 +286,7 @@ class Practise {
     ];
 
     return {
+      parentId: parentQuestion.id,
       questions,
       userPreviousAttempts: previousAttempts.map((a) => ({
         id: a.id,
@@ -457,7 +458,7 @@ class Practise {
     };
   }
 
-  async startPractice(userId: string, parentQuestionId: string): Promise<StartPracticeResponse> {
+  async startPractice(parentQuestionId: string): Promise<StartPracticeResponse> {
     const parentQuestion = await prisma.question.findUnique({
       where: { id: parentQuestionId },
       include: {
