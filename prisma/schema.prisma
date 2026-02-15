@@ -74,7 +74,7 @@ model User {
   dailyStudySessions DailyStudySession[]
   essayAttempts      EssayAttempt[]
   simulations        Simulation[]
-  questionTimers QuestionTimer[]
+  questionTimers     QuestionTimer[]
 
   @@index([email])
   @@index([googleId])
@@ -442,6 +442,12 @@ enum AchievementType {
   QUIZ_ACCURACY
   EXAM_SIMULATION
   SUBJECT_MASTERY
+  PRACTICE_MILESTONE
+  TIME_ACHIEVEMENT
+  IMPROVEMENT_ACHIEVEMENT
+  VIDEO_ENGAGEMENT
+  CASE_LAW_MASTERY
+  COMBO_ACHIEVEMENT
 }
 
 model UserAchievement {
@@ -855,15 +861,15 @@ model QuestionSet {
   parentQuestionId String
   parentQuestion   Question @relation(fields: [parentQuestionId], references: [id], onDelete: Cascade)
 
-  type        QuestionType
-  subject     String
-  year        Int
-  examType    String
-  description String       @db.Text
-  text        String       @db.Text
-  points      Int          @default(20)
-  order       Int 
-  averageAttemptSeconds Int @default(1800)
+  type                  QuestionType
+  subject               String
+  year                  Int
+  examType              String
+  description           String       @db.Text
+  text                  String       @db.Text
+  points                Int          @default(20)
+  order                 Int
+  averageAttemptSeconds Int          @default(1800)
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -894,15 +900,16 @@ model Simulation {
   @@index([userId, createdAt])
   @@map("simulations")
 }
+
 model QuestionTimer {
   id         String    @id @default(cuid())
   userId     String
   user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   questionId String
-   isStarted  Boolean   @default(true)
+  isStarted  Boolean   @default(true)
   startedAt  DateTime  @default(now())
   endedAt    DateTime?
-  
+
   @@index([userId, questionId])
   @@map("question_timers")
 }

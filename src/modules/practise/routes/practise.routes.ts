@@ -283,19 +283,19 @@ practiceRouter.post('/submit', protect, submitEssay);
 
 practiceRouter.post('/next-question', protect, getNextQuestion);
 
+
+
+
+
 practiceRouter.post('/simulation/start', protect, startSimulation);
 
-practiceRouter.post('/simulation/submit-answer', protect, submitSimulationAnswer)
+practiceRouter.post('/simulation/submit-answer', protect, submitSimulationAnswer);
 
 practiceRouter.post('/simulation/:simulationId/finish', protect, finishSimulation);
 
-practiceRouter.post('/simulation/:simulationId/fail', protect,failSimulation);
+practiceRouter.post('/simulation/:simulationId/fail', protect, failSimulation);
 
-practiceRouter.get(
-  '/simulation/:simulationId/question/:questionId',
-  protect,
-  getSimulationQuestion
-);
+
 
 
 practiceRouter.get(
