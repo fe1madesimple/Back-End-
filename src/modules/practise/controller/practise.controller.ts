@@ -140,9 +140,9 @@ export const getSimulationQuestion = asyncHandler(async (req: Request, res: Resp
   const { simulationId, questionId } = req.params;
   const { questionIndex } = req.query;
 
-  if (!simulationId) throw new AppError("simulationId is required")
-  
-  if (!questionId) throw new AppError("questionid is required")
+  if (!simulationId) throw new AppError('simulationId is required');
+
+  if (!questionId) throw new AppError('questionid is required');
 
   const result = await simulationService.getSimulationQuestion(
     userId,
@@ -151,4 +151,14 @@ export const getSimulationQuestion = asyncHandler(async (req: Request, res: Resp
     Number(questionIndex)
   );
   sendSuccess(res, 'Question retrieved', result);
+});
+
+export const finishSimulation = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { simulationId } = req.params;
+
+  if (!simulationId) throw new AppError("simulationId is required")
+
+  const result = await simulationService.finishSimulation(userId, simulationId);
+  sendSuccess(res, 'Simulation completed', result);
 });
