@@ -126,3 +126,11 @@ export const startSimulation = asyncHandler(async (req: Request, res: Response) 
   const result = await simulationService.startSimulation(userId);
   sendSuccess(res, 'Simulation started', result, 201);
 });
+
+export const submitSimulationAnswer = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const input = req.body;
+
+  const result = await simulationService.submitSimulationAnswer(userId, input);
+  sendSuccess(res, 'Answer saved', result);
+});
