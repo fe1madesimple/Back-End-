@@ -140,7 +140,51 @@ class SimulationService {
       nextQuestion,
     };
   }
+
+  async getSimulationQuestion(
+    userId: string,
+    simulationId: string,
+    questionId: string,
+    questionIndex: number
+  ): Promise<GetSimulationQuestionResponse> {
+    const simulation = await prisma.simulation.findUnique({
+      where: { id: simulationId },
+    });
+
+    if (!simulation || simulation.userId !== userId) {
+      throw new NotFoundError('Simulation not found');
+    }
+
+    const question = await prisma.questionSet.findUnique({
+      where: { id: questionId },
+    });
+
+    if (!question) {
+      throw new NotFoundError('Question not found');
+    }
+
+    // Check if user has submitted this question
+    const attempt = await prisma.essayAttempt.findFirst({
+      where: {
+        userId,
+        questionId,
+        simulationId,
+      },
+    });
+
+    return {
+      currentQuestionIndex: questionIndex,
+      totalQuestions: 5,
+      questionId: question.id,
+      subject: question.subject,
+      examType: question.examType,
+      text: question.text,
+      userAnswer: attempt?.answerText || null,
+      isSubmitted: !!attempt,
+      timeTakenSeconds: attempt?.timeTakenSeconds || null,
+      canEdit: !attempt, 
+    };
+  }
 }
 
-
-export default new SimulationService()
+export default new SimulationService();
