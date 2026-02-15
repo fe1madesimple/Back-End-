@@ -10,7 +10,8 @@ import {
   initiateStartPractice,
   submitEssay,
   getNextQuestion,
-  getAttemptDetails
+  getAttemptDetails,
+  startSimulation
 
 } from '../controller/practise.controller';
 import { protect } from '@/shared/middleware/auth.middleware';
@@ -277,6 +278,8 @@ practiceRouter.post('/start-question', protect, startPractice);
 practiceRouter.post('/submit', protect, submitEssay);
 
 practiceRouter.post('/next-question', protect, getNextQuestion);
+
+practiceRouter.post('/simulation/start', protect, startSimulation);
 
 
 practiceRouter.get('/attempt/:questionId/:parentQuestionId', protect, getAttemptDetails);
