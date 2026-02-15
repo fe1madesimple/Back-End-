@@ -107,3 +107,15 @@ export const getNextQuestion = asyncHandler(async (req: Request, res: Response) 
   const result = await practiseService.getNextQuestion(parentQuestionId, currentIndex, userId);
   sendSuccess(res, 'Next question retrieved', result);
 });
+
+export const getAttemptDetails = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { questionId, parentQuestionId } = req.params;
+
+  if (!questionId) throw new AppError("question id must be provided")
+  
+  if (!parentQuestionId) throw new AppError('question id must be provided');
+
+  const result = await practiseService.getAttemptDetails(userId, questionId, parentQuestionId);
+  sendSuccess(res, 'Attempt details retrieved', result);
+});
