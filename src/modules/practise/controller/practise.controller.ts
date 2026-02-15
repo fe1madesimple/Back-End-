@@ -54,7 +54,7 @@ export const getPastQuestionById = asyncHandler(async (req: Request, res: Respon
 
   if (!id) throw new AppError('past question id must be supplied');
 
-  const question = await practiseService.getPastQuestionDetail(userId, id)
+  const question = await practiseService.getPastQuestionDetail(userId, id);
 
   sendSuccess(res, 'Past question retrieved', { ...question });
 });
@@ -73,22 +73,29 @@ export const getQuizResults = asyncHandler(async (req: Request, res: Response) =
 });
 
 export const initiateStartPractice = asyncHandler(async (req: Request, res: Response) => {
-    // const userId = req.user!.user.id;
-    const { parentQuestionId } = req.body;
+  // const userId = req.user!.user.id;
+  const { parentQuestionId } = req.body;
 
-    if (!parentQuestionId) throw new AppError('parent question id must be supplied');
+  if (!parentQuestionId) throw new AppError('parent question id must be supplied');
 
-    const result = await practiseService.initiateStartPractice(parentQuestionId);
-    sendSuccess(res, 'start practice initiated', result, 201);
-})
-
+  const result = await practiseService.initiateStartPractice(parentQuestionId);
+  sendSuccess(res, 'start practice initiated', result, 201);
+});
 
 export const startPractice = asyncHandler(async (req: Request, res: Response) => {
   const userId = req.user!.user.id;
   const { parentQuestionId } = req.body;
 
-  if (!parentQuestionId) throw new AppError("parent question id must be supplied")
+  if (!parentQuestionId) throw new AppError('parent question id must be supplied');
 
   const result = await practiseService.startPractice(parentQuestionId, userId);
   sendSuccess(res, 'practice begins', result, 201);
+});
+
+export const submitEssay = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const input = req.body;
+
+  const result = await practiseService.submitEssay(userId, input);
+  sendSuccess(res, 'Essay submitted and graded', result);
 });
