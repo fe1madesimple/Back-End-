@@ -213,7 +213,7 @@ class SimulationService {
 
     // Grade all 5 essays in parallel
     const gradingPromises = simulation.attempts.map((attempt) =>
-      this.gradeEssayWithClaude(attempt.answerText, attempt.question.text, attempt.question.subject)
+      this.gradeEssayWithClaude(attempt.answerText, attempt.question.text, attempt.question.subject!)
     );
 
     const gradingResults = await Promise.all(gradingPromises);

@@ -275,10 +275,10 @@ export interface FinishSimulationResponse {
   results: Array<{
     questionId: string;
     questionIndex: number;
-    subject: string;
+    subject: any;
     userAnswer: string;
     timeTakenSeconds: number;
-    aiScore: number;
+    aiScore: number;   
     band: string;
     feedback: any;
     strengths: string[];
