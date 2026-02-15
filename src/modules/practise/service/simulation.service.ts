@@ -59,9 +59,18 @@ class SimulationService {
 
   async submitSimulationAnswer(
     userId: string,
-    input: SubmitSimulationAnswerInput
+    input: SubmitSimulationAnswerInput & { timerId: string }
   ): Promise<SubmitSimulationAnswerResponse> {
-    const { simulationId, questionId, answerText, timeTakenSeconds, currentQuestionIndex } = input;
+    const { simulationId, questionId, answerText, timerId, currentQuestionIndex } = input;
+
+    const timer = await prisma.questionTimer.update({
+      where: { id: timerId },
+      data: { endedAt: new Date() },
+    });
+
+    const timeTakenSeconds = Math.floor(
+      (timer.endedAt!.getTime() - timer.startedAt.getTime()) / 1000
+    );
 
     // Verify simulation exists and belongs to user
     const simulation = await prisma.simulation.findUnique({
@@ -213,7 +222,11 @@ class SimulationService {
 
     // Grade all 5 essays in parallel
     const gradingPromises = simulation.attempts.map((attempt) =>
-      this.gradeEssayWithClaude(attempt.answerText, attempt.question.text, attempt.question.subject!)
+      this.gradeEssayWithClaude(
+        attempt.answerText,
+        attempt.question.text,
+        attempt.question.subject!
+      )
     );
 
     const gradingResults = await Promise.all(gradingPromises);
@@ -361,7 +374,7 @@ Return ONLY valid JSON with this exact structure:
       }),
     });
 
-    const data = await response.json() as any;
+    const data = (await response.json()) as any;
     const content = data.content[0].text;
 
     const cleaned = content.replace(/```json|```/g, '').trim();
