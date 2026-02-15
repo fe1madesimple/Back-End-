@@ -4,6 +4,7 @@ import { asyncHandler } from '@/shared/utils';
 import practiseService from '../service/practise.service';
 import { sendSuccess } from '@/shared/utils';
 import { PastQuestionsQuery } from '../interface/practise.interface';
+import simulationService from '../service/simulation.service';
 
 export const getQuickQuiz = asyncHandler(async (req: Request, res: Response) => {
   const userId = req.user!.user.id;
