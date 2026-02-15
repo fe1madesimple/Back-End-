@@ -14,7 +14,8 @@ import {
   startSimulation,
   submitSimulationAnswer,
   getSimulationQuestion,
-  finishSimulation
+  finishSimulation,
+  failSimulation
 
 } from '../controller/practise.controller';
 import { protect } from '@/shared/middleware/auth.middleware';
@@ -288,7 +289,7 @@ practiceRouter.post('/simulation/submit-answer', protect, submitSimulationAnswer
 
 practiceRouter.post('/simulation/:simulationId/finish', protect, finishSimulation);
 
-
+practiceRouter.post('/simulation/:simulationId/fail', protect,failSimulation);
 
 practiceRouter.get(
   '/simulation/:simulationId/question/:questionId',
