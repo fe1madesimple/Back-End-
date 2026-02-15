@@ -157,8 +157,19 @@ export const finishSimulation = asyncHandler(async (req: Request, res: Response)
   const userId = req.user!.user.id;
   const { simulationId } = req.params;
 
-  if (!simulationId) throw new AppError("simulationId is required")
+  if (!simulationId) throw new AppError('simulationId is required');
 
   const result = await simulationService.finishSimulation(userId, simulationId);
   sendSuccess(res, 'Simulation completed', result);
+});
+
+export const failSimulation = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { simulationId } = req.params;
+  const { reason } = req.body;
+
+  if (!simulationId) throw new AppError("simulation id is required")
+
+  const result = await simulationService.failSimulation(userId, simulationId, reason);
+  sendSuccess(res, 'Simulation failed', result);
 });
