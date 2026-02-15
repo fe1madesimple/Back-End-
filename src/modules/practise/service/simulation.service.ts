@@ -281,6 +281,40 @@ class SimulationService {
       })),
     };
   }
+
+  async failSimulation(
+    userId: string,
+    simulationId: string,
+    reason: string
+  ): Promise<FailSimulationResponse> {
+    const simulation = await prisma.simulation.findUnique({
+      where: { id: simulationId },
+    });
+
+    if (!simulation || simulation.userId !== userId) {
+      throw new NotFoundError('Simulation not found');
+    }
+
+    if (simulation.endedAt) {
+      throw new BadRequestError('Simulation already completed');
+    }
+
+    // Mark as failed
+    await prisma.simulation.update({
+      where: { id: simulationId },
+      data: {
+        endedAt: new Date(),
+        passed: false,
+        overallScore: 0,
+      },
+    });
+
+    return {
+      failed: true,
+      reason,
+      message: 'Your simulation has been automatically failed due to leaving the exam window.',
+    };
+  }
 }
 
 export default new SimulationService();
