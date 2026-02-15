@@ -7,7 +7,9 @@ import {
   getPastQuestionById,
   getTopicChallenge,
   getQuizResults,
-  initiateStartPractice
+  initiateStartPractice,
+  submitEssay,
+  getNextQuestion
 
 } from '../controller/practise.controller';
 import { protect } from '@/shared/middleware/auth.middleware';
@@ -146,11 +148,6 @@ practiceRouter.get(
   getPastQuestions
 );
 
-
-
-
-
-
 /**
  * @swagger
  * /api/v1/practice/mixed-challenge:
@@ -276,6 +273,9 @@ practiceRouter.post('/initiate-start-question', protect, initiateStartPractice);
 
 practiceRouter.post('/start-question', protect, startPractice);
 
+practiceRouter.post('/submit', protect, submitEssay);
+
+practiceRouter.post('/next-question', protect, getNextQuestion);
 
 
 /**
