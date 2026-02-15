@@ -286,6 +286,16 @@ practiceRouter.post('/simulation/start', protect, startSimulation);
 practiceRouter.post('/simulation/submit-answer', protect, submitSimulationAnswer)
 
 
+
+
+
+practiceRouter.get(
+  '/simulation/:simulationId/question/:questionId',
+  protect,
+  getSimulationQuestion
+);
+
+
 practiceRouter.get(
   '/simulation/:simulationId/question/:questionId',
   protect,
@@ -293,8 +303,6 @@ practiceRouter.get(
 );
 
 practiceRouter.get('/attempt/:questionId/:parentQuestionId', protect, getAttemptDetails);
-
-
 
 /**
  * @swagger
@@ -371,7 +379,6 @@ practiceRouter.get('/attempt/:questionId/:parentQuestionId', protect, getAttempt
  *         description: Subject not found or no questions available
  */
 practiceRouter.get('/topic-challenge/:subjectId', protect, getTopicChallenge);
-
 
 /**
  * @swagger
