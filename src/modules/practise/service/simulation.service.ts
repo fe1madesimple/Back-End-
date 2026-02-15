@@ -182,7 +182,103 @@ class SimulationService {
       userAnswer: attempt?.answerText || null,
       isSubmitted: !!attempt,
       timeTakenSeconds: attempt?.timeTakenSeconds || null,
-      canEdit: !attempt, 
+      canEdit: !attempt,
+    };
+  }
+
+  async finishSimulation(userId: string, simulationId: string): Promise<FinishSimulationResponse> {
+    const simulation = await prisma.simulation.findUnique({
+      where: { id: simulationId },
+      include: {
+        attempts: {
+          include: {
+            question: true,
+          },
+          orderBy: { createdAt: 'asc' },
+        },
+      },
+    });
+
+    if (!simulation || simulation.userId !== userId) {
+      throw new NotFoundError('Simulation not found');
+    }
+
+    if (simulation.endedAt) {
+      throw new BadRequestError('Simulation already completed');
+    }
+
+    if (simulation.attempts.length !== 5) {
+      throw new BadRequestError('All 5 questions must be submitted before finishing');
+    }
+
+    // Grade all 5 essays in parallel
+    const gradingPromises = simulation.attempts.map((attempt) =>
+      this.gradeEssayWithClaude(attempt.answerText, attempt.question.text, attempt.question.subject)
+    );
+
+    const gradingResults = await Promise.all(gradingPromises);
+
+    // Update each attempt with AI grading
+    await Promise.all(
+      simulation.attempts.map((attempt, index) =>
+        prisma.essayAttempt.update({
+          where: { id: attempt.id },
+          data: {
+            aiScore: gradingResults[index]!.score,
+            band: gradingResults[index]!.band,
+            feedback: gradingResults[index]!.feedback,
+            strengths: gradingResults[index]!.strengths,
+            improvements: gradingResults[index]!.improvements,
+            provider: 'anthropic',
+            model: 'claude-sonnet-4-20250514',
+            tokensUsed: gradingResults[index]!.tokensUsed,
+          },
+        })
+      )
+    );
+
+    // Calculate overall score
+    const overallScore = Math.round(
+      gradingResults.reduce((sum, r) => sum + r.score, 0) / gradingResults.length
+    );
+
+    const totalTimeSeconds = simulation.attempts.reduce((sum, a) => sum + a.timeTakenSeconds, 0);
+    const averageTimePerQuestion = Math.round(totalTimeSeconds / 5);
+
+    const passed = overallScore >= 50;
+
+    // Update simulation
+    await prisma.simulation.update({
+      where: { id: simulationId },
+      data: {
+        endedAt: new Date(),
+        totalTimeSeconds,
+        overallScore,
+        passed,
+      },
+    });
+
+    return {
+      simulationId,
+      overallScore,
+      passed,
+      passThreshold: 50,
+      appPassThreshold: 80,
+      totalTimeSeconds,
+      averageTimePerQuestion,
+      results: simulation.attempts.map((attempt, index) => ({
+        questionId: attempt.questionId,
+        questionIndex: index,
+        subject: attempt.question.subject,
+        userAnswer: attempt.answerText,
+        timeTakenSeconds: attempt.timeTakenSeconds,
+        aiScore: gradingResults[index]!.score,
+        band: gradingResults[index]!.band,
+        feedback: gradingResults[index]!.feedback,
+        strengths: gradingResults[index]!.strengths,
+        improvements: gradingResults[index]!.improvements,
+        sampleAnswer: gradingResults[index]!.sampleAnswer,
+      })),
     };
   }
 }
