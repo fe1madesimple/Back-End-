@@ -99,3 +99,11 @@ export const submitEssay = asyncHandler(async (req: Request, res: Response) => {
   const result = await practiseService.submitEssay(userId, input);
   sendSuccess(res, 'Essay submitted and graded', result);
 });
+
+export const getNextQuestion = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { parentQuestionId, currentIndex } = req.body;
+
+  const result = await practiseService.getNextQuestion(parentQuestionId, currentIndex, userId);
+  sendSuccess(res, 'Next question retrieved', result);
+});
