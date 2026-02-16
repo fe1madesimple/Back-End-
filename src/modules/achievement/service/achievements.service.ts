@@ -322,6 +322,59 @@ class AchievementService {
     }
     return false;
   }
+
+  private async checkCaseLawMastery(userId: string, condition: any): Promise<boolean> {
+    // Placeholder - requires AI feedback parsing
+    return false;
+  }
+
+  private async checkCombo(userId: string, condition: any): Promise<boolean> {
+    if (condition.videoQuizEssaySameDay) {
+      const today = new Date().toISOString().split('T')[0];
+      const [video, quiz, essay] = await Promise.all([
+        prisma.lessonProgress.findFirst({
+          where: { userId, updatedAt: { gte: new Date(today) } },
+        }),
+        prisma.quizAttempt.findFirst({
+          where: { userId, createdAt: { gte: new Date(today) } },
+        }),
+        prisma.essayAttempt.findFirst({
+          where: { userId, createdAt: { gte: new Date(today) } },
+        }),
+      ]);
+      return !!(video && quiz && essay);
+    }
+    if (condition.subjectsInWeek) {
+      const oneWeekAgo = new Date();
+      oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
+
+      const attempts = await prisma.essayAttempt.findMany({
+        where: {
+          userId,
+          createdAt: { gte: oneWeekAgo },
+        },
+        select: { question: { select: { subject: true } } },
+        distinct: ['questionId'],
+      });
+
+      const subjects = new Set(attempts.map((a) => a.question.subject));
+      return subjects.size >= condition.subjectsInWeek;
+    }
+    if (condition.simulationPassed && condition.subjectMastery) {
+      const [simulation, quizAccuracy] = await Promise.all([
+        prisma.simulation.findFirst({ where: { userId, passed: true } }),
+        prisma.quizAttempt.findMany({ where: { userId } }),
+      ]);
+
+      if (!simulation) return false;
+
+      const correct = quizAccuracy.filter((a) => a.isCorrect).length;
+      const accuracy = (correct / quizAccuracy.length) * 100;
+
+      return accuracy >= condition.subjectMastery;
+    }
+    return false;
+  }
 }
 
 export default new AchievementService();
