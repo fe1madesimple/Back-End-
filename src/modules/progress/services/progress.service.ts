@@ -1063,6 +1063,8 @@ class ProgressService {
         averageQuizScore: true,
         highestQuizScore: true,
         lowestQuizScore: true,
+        podcastRecommendations: true, // ← NEW
+        focusSubjects: true, // ← NEW
       },
     });
 
@@ -1082,7 +1084,6 @@ class ProgressService {
       !user?.hasCompletedOnboarding ||
       (hasAnyLessonProgress === 0 && hasAnyQuizAttempt === 0 && hasAnyPodcastProgress === 0);
 
-    // Use configured exam dates if no custom targetExamDate
     const examDate = user?.targetExamDate || getNextExamDate();
     const daysUntilExam = Math.ceil(
       (new Date(examDate).getTime() - Date.now()) / (1000 * 60 * 60 * 24)
@@ -1095,7 +1096,6 @@ class ProgressService {
 
     const today = new Date().toISOString().split('T')[0]!;
 
-    // Get today's study session
     const todaySession = await prisma.dailyStudySession.findUnique({
       where: {
         userId_date: {
@@ -1150,7 +1150,6 @@ class ProgressService {
       }
     }
 
-    // Get all sessions for longest streak
     const allSessions = await prisma.dailyStudySession.findMany({
       where: {
         userId,
@@ -1225,18 +1224,60 @@ class ProgressService {
         }
       : null;
 
-    const allPodcasts = await prisma.podcast.findMany({
-      select: {
-        id: true,
-        title: true,
-        subject: true,
-        duration: true,
-        thumbnail: true,
-      },
-    });
+    // ============================================
+    // ← NEW PODCAST RECOMMENDATION LOGIC
+    // ============================================
+    let recommendedPodcasts;
 
-    const shuffled = allPodcasts.sort(() => Math.random() - 0.5);
-    const randomPodcasts = shuffled.slice(0, 3);
+    if (user?.podcastRecommendations && user.focusSubjects.length > 0) {
+      // User wants recommendations based on focus subjects
+      const relevantPodcasts = await prisma.podcast.findMany({
+        where: {
+          isPublished: true,
+          subject: { in: user.focusSubjects },
+        },
+        select: {
+          id: true,
+          title: true,
+          subject: true,
+          duration: true,
+          thumbnail: true,
+        },
+        take: 3,
+      });
+
+      recommendedPodcasts = relevantPodcasts.map((p) => ({
+        id: p.id,
+        title: p.title,
+        subjectName: p.subject || 'General',
+        durationMinutes: Math.round((p.duration || 0) / 60),
+        thumbnail: p.thumbnail || '',
+      }));
+    } else {
+      // Random podcasts (default behavior)
+      const allPodcasts = await prisma.podcast.findMany({
+        where: { isPublished: true },
+        select: {
+          id: true,
+          title: true,
+          subject: true,
+          duration: true,
+          thumbnail: true,
+        },
+      });
+
+      const shuffled = allPodcasts.sort(() => Math.random() - 0.5);
+      const randomPodcasts = shuffled.slice(0, 3);
+
+      recommendedPodcasts = randomPodcasts.map((p) => ({
+        id: p.id,
+        title: p.title,
+        subjectName: p.subject || 'General',
+        durationMinutes: Math.round((p.duration || 0) / 60),
+        thumbnail: p.thumbnail || '',
+      }));
+    }
+    // ============================================
 
     return {
       isNew,
@@ -1253,18 +1294,10 @@ class ProgressService {
       },
       quizPerformance,
       resumeLearning,
-      recommendedPodcasts: randomPodcasts.map((p) => ({
-        id: p.id,
-        title: p.title,
-        subjectName: p.subject || 'General',
-        durationMinutes: Math.round((p.duration || 0) / 60),
-        thumbnail: p.thumbnail || '',
-      })),
+      recommendedPodcasts,
       lifetimeStudyHours: Math.round(((todaySession?.lifetimeTotalSeconds || 0) / 3600) * 10) / 10,
     };
   }
-
-
 }
 
 export default new ProgressService();
