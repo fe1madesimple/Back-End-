@@ -119,6 +119,33 @@ class AchievementService {
     }
     return false;
   }
+
+  private async checkLessonMilestone(userId: string, condition: any): Promise<boolean> {
+    if (condition.lessonsCompleted) {
+      const count = await prisma.lessonProgress.count({
+        where: { userId, completionPercentage: 100 },
+      });
+      return count >= condition.lessonsCompleted;
+    }
+    if (condition.lessonsInOneDay) {
+      const today = new Date().toISOString().split('T')[0];
+      const count = await prisma.lessonProgress.count({
+        where: {
+          userId,
+          completionPercentage: 100,
+          updatedAt: { gte: new Date(today) },
+        },
+      });
+      return count >= condition.lessonsInOneDay;
+    }
+    if (condition.moduleCompletion) {
+      const moduleProgress = await prisma.moduleProgress.findFirst({
+        where: { userId, completionPercentage: 100 },
+      });
+      return !!moduleProgress;
+    }
+    return false;
+  }
 }
 
 export default new AchievementService();
