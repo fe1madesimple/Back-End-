@@ -63,117 +63,80 @@ const caseRouter = Router();
  */
 caseRouter.get('/', protect, validate(searchCasesSchema), searchCases);
 
+
+
 /**
  * @swagger
- * /api/v1/cases/all:
+ * /api/v1/cases:
  *   get:
- *     summary: Get all cases (no filters)
- *     tags: [Case Law]
+ *     summary: Get all cases
+ *     tags: [Cases]
  *     security:
  *       - bearerAuth: []
- *     description: |
- *       Retrieves all published cases with pagination.
- *
- *       **SORTING:**
- *       - Primary: Exam frequency (HIGH → MEDIUM → RARE → NOT_EXAMINED)
- *       - Secondary: Year (newest first)
- *
- *       **PAGINATION:**
- *       - Default: 20 cases per page
- *       - Max: 100 cases per page
- *
- *       **USE CASES:**
- *       - Display full case library
- *       - Browse all cases without filters
- *       - Case law directory page
+ *     description: Returns paginated case briefs with save/review status.
  *     parameters:
  *       - in: query
  *         name: page
  *         schema:
  *           type: integer
  *           default: 1
- *           minimum: 1
- *         description: Page number
  *       - in: query
  *         name: limit
  *         schema:
  *           type: integer
  *           default: 20
- *           minimum: 1
- *           maximum: 100
- *         description: Cases per page
  *     responses:
  *       200:
- *         description: All cases retrieved successfully
+ *         description: Cases retrieved
  *         content:
  *           application/json:
  *             schema:
  *               type: object
  *               properties:
- *                 success:
- *                   type: boolean
- *                   example: true
- *                 message:
- *                   type: string
- *                   example: All cases retrieved successfully
- *                 data:
+ *                 cases:
+ *                   type: array
+ *                   items:
+ *                     type: object
+ *                     properties:
+ *                       id:
+ *                         type: string
+ *                       caseName:
+ *                         type: string
+ *                       citation:
+ *                         type: string
+ *                       year:
+ *                         type: integer
+ *                       court:
+ *                         type: string
+ *                       jurisdiction:
+ *                         type: string
+ *                       frequency:
+ *                         type: string
+ *                       subjects:
+ *                         type: array
+ *                         items:
+ *                           type: string
+ *                       topics:
+ *                         type: array
+ *                         items:
+ *                           type: string
+ *                       facts:
+ *                         type: string
+ *                       isSaved:
+ *                         type: boolean
+ *                       isReviewed:
+ *                         type: boolean
+ *                 pagination:
  *                   type: object
  *                   properties:
- *                     cases:
- *                       type: array
- *                       items:
- *                         type: object
- *                         properties:
- *                           id:
- *                             type: string
- *                           caseName:
- *                             type: string
- *                             example: Carlill v Carbolic Smoke Ball Co
- *                           citation:
- *                             type: string
- *                             example: "[1893] 1 QB 256"
- *                           year:
- *                             type: integer
- *                             example: 1893
- *                           court:
- *                             type: string
- *                             example: UK Court of Appeal
- *                           jurisdiction:
- *                             type: string
- *                             enum: [IRISH_SUPREME_COURT, IRISH_COURT_OF_APPEAL, IRISH_HIGH_COURT, UK_SUPREME_COURT, UK_COURT_OF_APPEAL, UK_HOUSE_OF_LORDS, ECJ_CJEU, ECHR]
- *                           frequency:
- *                             type: string
- *                             enum: [HIGH_FREQUENCY, MEDIUM_FREQUENCY, RARE, NOT_EXAMINED]
- *                           subjects:
- *                             type: array
- *                             items:
- *                               type: string
- *                             example: ["Contract Law"]
- *                           topics:
- *                             type: array
- *                             items:
- *                               type: string
- *                             example: ["Offer & Acceptance", "Unilateral Contracts"]
- *                           facts:
- *                             type: string
- *                           isSaved:
- *                             type: boolean
- *                             example: false
- *                     pagination:
- *                       type: object
- *                       properties:
- *                         total:
- *                           type: integer
- *                           example: 7
- *                         page:
- *                           type: integer
- *                           example: 1
- *                         limit:
- *                           type: integer
- *                           example: 20
- *                         totalPages:
- *                           type: integer
- *                           example: 1
+ *                     total:
+ *                       type: integer
+ *                     page:
+ *                       type: integer
+ *                     limit:
+ *                       type: integer
+ *                     totalPages:
+ *                       type: integer
  */
 caseRouter.get('/all', protect, validate(getAllCasesSchema), getAllCases);
 
