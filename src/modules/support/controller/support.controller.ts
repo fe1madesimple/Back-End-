@@ -1,4 +1,3 @@
-// src/modules/support/controllers/support.controller.ts
 
 import { Request, Response } from 'express';
 import { asyncHandler } from '@/shared/utils';
