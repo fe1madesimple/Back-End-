@@ -45,6 +45,58 @@ function getNextExamDate(): Date {
 }
 
 class ProgressService {
+  // Add to src/modules/dashboard/services/dashboard.service.ts
+
+  private async getWeeklyStats(userId: string) {
+    const oneWeekAgo = new Date();
+    oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
+
+    const sessions = await prisma.dailyStudySession.findMany({
+      where: {
+        userId,
+        date: { gte: oneWeekAgo.toISOString().split('T')[0]! },
+      },
+      select: { todayTotalSeconds: true },
+    });
+
+    const studyTimeSeconds = sessions.reduce((sum, s) => sum + s.todayTotalSeconds, 0);
+
+    const essaysCompleted = await prisma.essayAttempt.count({
+      where: {
+        userId,
+        createdAt: { gte: oneWeekAgo },
+      },
+    });
+
+    // Calculate current streak
+    const allSessions = await prisma.dailyStudySession.findMany({
+      where: { userId, todayTotalSeconds: { gt: 0 } },
+      select: { date: true },
+      orderBy: { date: 'desc' },
+    });
+
+    let streak = 0;
+    let expectedDate = new Date();
+    expectedDate.setHours(0, 0, 0, 0);
+
+    for (const session of allSessions) {
+      const sessionDate = new Date(session.date);
+      sessionDate.setHours(0, 0, 0, 0);
+
+      if (sessionDate.getTime() === expectedDate.getTime()) {
+        streak++;
+        expectedDate.setDate(expectedDate.getDate() - 1);
+      } else {
+        break;
+      }
+    }
+
+    return {
+      studyTimeSeconds,
+      streak,
+      essaysCompleted,
+    };
+  }
   async getDashboardStats(userId: string): Promise<DashboardStatsResponse> {
     const now = new Date();
     const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
