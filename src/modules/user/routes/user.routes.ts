@@ -586,119 +586,119 @@ userRouter.get('/onboarding/status', protect, getOnboardingStatus);
 
 
 
-/**
- * @swagger
- * /api/v1/users/data/export:
- *   get:
- *     summary: Export all user data (GDPR)
- *     tags: [User Profile]
- *     security:
- *       - bearerAuth: []
- *       - cookieAuth: []
- *     description: |
- *       Export all user data for GDPR compliance.
- *       
- *       **What's included:**
- *       - User profile (email, name, preferences)
- *       - Subscription details
- *       - Study logs (all activity)
- *       - Quiz attempts (scores, history)
- *       - Timed sessions (essay practice)
- *       - AI evaluations (feedback)
- *       - Saved cases
- *       - Achievements
- *       
- *       **What's excluded (for security):**
- *       - Password hash
- *       - Password reset codes
- *       - Email verification codes
- *       - Verification lock data
- *       
- *       **Frontend usage:**
- *       ```javascript
- *       // Download user data
- *       const downloadData = async () => {
- *         const response = await fetch('/api/v1/users/data/export', {
- *           credentials: 'include'
- *         });
- *         
- *         const data = await response.json();
- *         
- *         // Create downloadable JSON file
- *         const blob = new Blob([JSON.stringify(data.data.userData, null, 2)], {
- *           type: 'application/json'
- *         });
- *         
- *         const url = URL.createObjectURL(blob);
- *         const a = document.createElement('a');
- *         a.href = url;
- *         a.download = `my-data-${new Date().toISOString()}.json`;
- *         a.click();
- *       };
- *       ```
- *       
- *       **GDPR Compliance:**
- *       This endpoint fulfills the "Right to Data Portability" under GDPR Article 20.
- *       Users can download their data in a machine-readable format (JSON).
- *       
- *       **Response size:**
- *       Response size varies based on user activity (typically 10KB - 1MB).
- *     responses:
- *       200:
- *         description: User data exported successfully
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 success:
- *                   type: boolean
- *                   example: true
- *                 message:
- *                   type: string
- *                   example: User data exported successfully
- *                 data:
- *                   type: object
- *                   properties:
- *                     userData:
- *                       type: object
- *                       description: Complete user data object
- *             example:
- *               success: true
- *               message: User data exported successfully
- *               data:
- *                 userData:
- *                   id: clp_user_123
- *                   email: user@example.com
- *                   fullName: John Babatunde
- *                   subscription:
- *                     status: ACTIVE
- *                     planType: MONTHLY
- *                   studyLogs:
- *                     - activityType: LESSON_VIEW
- *                       duration: 1200
- *                       createdAt: "2025-01-15T10:00:00.000Z"
- *                   quizAttempts:
- *                     - isCorrect: true
- *                       timeSpent: 45
- *                       createdAt: "2025-01-14T15:30:00.000Z"
- *       401:
- *         description: Unauthorized
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/ErrorResponse'
- *       404:
- *         description: User not found
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/ErrorResponse'
- *             example:
- *               success: false
- *               message: User not found
- */
-userRouter.get('/data/export', protect, exportUserData);
+// /**
+//  * @swagger
+//  * /api/v1/users/data/export:
+//  *   get:
+//  *     summary: Export all user data (GDPR)
+//  *     tags: [User Profile]
+//  *     security:
+//  *       - bearerAuth: []
+//  *       - cookieAuth: []
+//  *     description: |
+//  *       Export all user data for GDPR compliance.
+//  *       
+//  *       **What's included:**
+//  *       - User profile (email, name, preferences)
+//  *       - Subscription details
+//  *       - Study logs (all activity)
+//  *       - Quiz attempts (scores, history)
+//  *       - Timed sessions (essay practice)
+//  *       - AI evaluations (feedback)
+//  *       - Saved cases
+//  *       - Achievements
+//  *       
+//  *       **What's excluded (for security):**
+//  *       - Password hash
+//  *       - Password reset codes
+//  *       - Email verification codes
+//  *       - Verification lock data
+//  *       
+//  *       **Frontend usage:**
+//  *       ```javascript
+//  *       // Download user data
+//  *       const downloadData = async () => {
+//  *         const response = await fetch('/api/v1/users/data/export', {
+//  *           credentials: 'include'
+//  *         });
+//  *         
+//  *         const data = await response.json();
+//  *         
+//  *         // Create downloadable JSON file
+//  *         const blob = new Blob([JSON.stringify(data.data.userData, null, 2)], {
+//  *           type: 'application/json'
+//  *         });
+//  *         
+//  *         const url = URL.createObjectURL(blob);
+//  *         const a = document.createElement('a');
+//  *         a.href = url;
+//  *         a.download = `my-data-${new Date().toISOString()}.json`;
+//  *         a.click();
+//  *       };
+//  *       ```
+//  *       
+//  *       **GDPR Compliance:**
+//  *       This endpoint fulfills the "Right to Data Portability" under GDPR Article 20.
+//  *       Users can download their data in a machine-readable format (JSON).
+//  *       
+//  *       **Response size:**
+//  *       Response size varies based on user activity (typically 10KB - 1MB).
+//  *     responses:
+//  *       200:
+//  *         description: User data exported successfully
+//  *         content:
+//  *           application/json:
+//  *             schema:
+//  *               type: object
+//  *               properties:
+//  *                 success:
+//  *                   type: boolean
+//  *                   example: true
+//  *                 message:
+//  *                   type: string
+//  *                   example: User data exported successfully
+//  *                 data:
+//  *                   type: object
+//  *                   properties:
+//  *                     userData:
+//  *                       type: object
+//  *                       description: Complete user data object
+//  *             example:
+//  *               success: true
+//  *               message: User data exported successfully
+//  *               data:
+//  *                 userData:
+//  *                   id: clp_user_123
+//  *                   email: user@example.com
+//  *                   fullName: John Babatunde
+//  *                   subscription:
+//  *                     status: ACTIVE
+//  *                     planType: MONTHLY
+//  *                   studyLogs:
+//  *                     - activityType: LESSON_VIEW
+//  *                       duration: 1200
+//  *                       createdAt: "2025-01-15T10:00:00.000Z"
+//  *                   quizAttempts:
+//  *                     - isCorrect: true
+//  *                       timeSpent: 45
+//  *                       createdAt: "2025-01-14T15:30:00.000Z"
+//  *       401:
+//  *         description: Unauthorized
+//  *         content:
+//  *           application/json:
+//  *             schema:
+//  *               $ref: '#/components/schemas/ErrorResponse'
+//  *       404:
+//  *         description: User not found
+//  *         content:
+//  *           application/json:
+//  *             schema:
+//  *               $ref: '#/components/schemas/ErrorResponse'
+//  *             example:
+//  *               success: false
+//  *               message: User not found
+//  */
+// userRouter.get('/data/export', protect, exportUserData);
 
 
 /**

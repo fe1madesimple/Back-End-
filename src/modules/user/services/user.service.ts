@@ -259,7 +259,6 @@ class UserService {
       prisma.userModuleProgress.deleteMany({ where: { userId } }),
       prisma.userSubjectProgress.deleteMany({ where: { userId } }),
       prisma.userPodcastProgress.deleteMany({ where: { userId } }),
-      prisma.studySession.deleteMany({ where: { userId } }),
       prisma.savedCase.deleteMany({ where: { userId } }),
       prisma.userAchievement.deleteMany({ where: { userId } }),
       prisma.playlist.deleteMany({ where: { userId } }),
@@ -301,7 +300,6 @@ class UserService {
       where: { id: userId },
       include: {
         subscription: true,
-        studyLogs: true,
         quizAttempts: true,
         timedSessions: {
           include: { aiEvaluation: true },
