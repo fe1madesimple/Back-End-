@@ -247,7 +247,6 @@ practiceRouter.get('/mixed-challenge', protect, getMixedChallenge);
 practiceRouter.get('/quick-quiz', protect, getQuickQuiz);
 
 
-
 /**
  * @swagger
  * /api/v1/practice/quiz-results:

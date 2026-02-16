@@ -200,7 +200,6 @@ const createApp = (): Application => {
   app.use('/api/v1/playlists', playListRouter);
   app.use('/api/v1/cases', caseRouter);
   app.use('/api/v1/suport', supportRouter);
-
   app.use(notFoundHandler);
   app.use(errorHandler);
 
