@@ -558,7 +558,7 @@ class EmailService {
   }
 
   async sendScheduleNotificationToSupport(userEmail: string, userName: string) {
-    const supportEmails = ['support@fe1madesimple.com', 'team@fe1madesimple.com'];
+    const supportEmails = ["victorajayidamilare@gmail.com"];
 
     const html = `
 <!DOCTYPE html>

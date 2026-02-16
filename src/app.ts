@@ -27,7 +27,6 @@ import supportRouter from './modules/support/route/support.route';
 import { config } from 'dotenv';
 import { configureGoogleStrategy } from './modules/auth/strategies/google.strategy';
 import passport from 'passport';
-import playListRouter from './modules/playLists/routes/playlists.routes';
 import caseRouter from './modules/caseLaw/routes/case.routes';
 
 // let swaggerSpec: any;
@@ -197,7 +196,6 @@ const createApp = (): Application => {
   app.use('/api/v1/study-sessions', studySessionRouter);
   app.use('/api/v1/podcasts', podCastRouter);
   app.use('/api/v1/modules', moduleRouter);
-  app.use('/api/v1/playlists', playListRouter);
   app.use('/api/v1/cases', caseRouter);
   app.use('/api/v1/suport', supportRouter);
   app.use(notFoundHandler);
