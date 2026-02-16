@@ -562,11 +562,85 @@ practiceRouter.post('/simulation/start', protect, startSimulation);
  */
 practiceRouter.post('/simulation/submit-answer', protect, submitSimulationAnswer);
 
+
+
+
+
+
+/**
+ * @swagger
+ * /api/v1/practice/simulation/{simulationId}/finish:
+ *   post:
+ *     summary: Finish simulation
+ *     tags: [Simulation]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Grades all 5 essays, calculates overall score, determines pass/fail.
+ *     parameters:
+ *       - in: path
+ *         name: simulationId
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Simulation completed
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 simulationId:
+ *                   type: string
+ *                 overallScore:
+ *                   type: integer
+ *                 passed:
+ *                   type: boolean
+ *                 passThreshold:
+ *                   type: integer
+ *                 appPassThreshold:
+ *                   type: integer
+ *                 totalTimeSeconds:
+ *                   type: integer
+ *                 averageTimePerQuestion:
+ *                   type: integer
+ *                 results:
+ *                   type: array
+ *                   items:
+ *                     type: object
+ *                     properties:
+ *                       questionId:
+ *                         type: string
+ *                       questionIndex:
+ *                         type: integer
+ *                       subject:
+ *                         type: string
+ *                       userAnswer:
+ *                         type: string
+ *                       timeTakenSeconds:
+ *                         type: integer
+ *                       aiScore:
+ *                         type: integer
+ *                       band:
+ *                         type: string
+ *                       feedback:
+ *                         type: object
+ *                       strengths:
+ *                         type: array
+ *                         items:
+ *                           type: string
+ *                       improvements:
+ *                         type: array
+ *                         items:
+ *                           type: string
+ *                       sampleAnswer:
+ *                         type: string
+ */
 practiceRouter.post('/simulation/:simulationId/finish', protect, finishSimulation);
 
+
+
 practiceRouter.post('/simulation/:simulationId/fail', protect, failSimulation);
-
-
 
 
 
