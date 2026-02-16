@@ -2,6 +2,7 @@ import { Router } from 'express';
 import { protect } from '@/shared/middleware/auth.middleware';
 import {
   getSimpleDashboard,
+  getStudyOverview,
 } from '../controllers/progress.controller';
 
 const progressRouter = Router();
@@ -786,6 +787,8 @@ const progressRouter = Router();
  */
 progressRouter.get('/dashboard-simple', protect, getSimpleDashboard);
 
+
+progressRouter.get('/study-overview', protect, getStudyOverview);
 
 // /**
 //  * @swagger
