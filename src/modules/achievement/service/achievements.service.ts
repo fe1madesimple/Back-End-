@@ -1,3 +1,5 @@
+// src/modules/achievements/services/achievement.service.ts
+
 import { prisma } from '@/shared/config';
 
 class AchievementService {
@@ -122,25 +124,26 @@ class AchievementService {
 
   private async checkLessonMilestone(userId: string, condition: any): Promise<boolean> {
     if (condition.lessonsCompleted) {
-      const count = await prisma.lessonProgress.count({
-        where: { userId, completionPercentage: 100 },
+      const count = await prisma.userLessonProgress.count({
+        where: { userId, isCompleted: true },
       });
       return count >= condition.lessonsCompleted;
     }
     if (condition.lessonsInOneDay) {
-      const today = new Date().toISOString().split('T')[0];
-      const count = await prisma.lessonProgress.count({
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const count = await prisma.userLessonProgress.count({
         where: {
           userId,
-          completionPercentage: 100,
-          updatedAt: { gte: new Date(today) },
+          isCompleted: true,
+          completedAt: { gte: today },
         },
       });
       return count >= condition.lessonsInOneDay;
     }
     if (condition.moduleCompletion) {
-      const moduleProgress = await prisma.moduleProgress.findFirst({
-        where: { userId, completionPercentage: 100 },
+      const moduleProgress = await prisma.userModuleProgress.findFirst({
+        where: { userId, progressPercent: 100 },
       });
       return !!moduleProgress;
     }
@@ -149,11 +152,30 @@ class AchievementService {
 
   private async checkStreakMilestone(userId: string, condition: any): Promise<boolean> {
     if (condition.streak) {
-      const user = await prisma.user.findUnique({
-        where: { id: userId },
-        select: { currentStreak: true },
+      // Calculate streak manually
+      const sessions = await prisma.dailyStudySession.findMany({
+        where: { userId, todayTotalSeconds: { gt: 0 } },
+        orderBy: { date: 'desc' },
+        take: 100,
       });
-      return (user?.currentStreak || 0) >= condition.streak;
+
+      let currentStreak = 0;
+      let expectedDate = new Date();
+      expectedDate.setHours(0, 0, 0, 0);
+
+      for (const session of sessions) {
+        const sessionDate = new Date(session.date);
+        sessionDate.setHours(0, 0, 0, 0);
+
+        if (sessionDate.getTime() === expectedDate.getTime()) {
+          currentStreak++;
+          expectedDate.setDate(expectedDate.getDate() - 1);
+        } else {
+          break;
+        }
+      }
+
+      return currentStreak >= condition.streak;
     }
     if (condition.weekendStudy) {
       const sessions = await prisma.dailyStudySession.findMany({
@@ -181,7 +203,7 @@ class AchievementService {
 
   private async checkQuizAccuracy(userId: string, condition: any): Promise<boolean> {
     if (condition.quizzesCompleted) {
-      const count = await prisma.quizAttempt.count({ where: { userId } });
+      const count = await prisma.quizSession.count({ where: { userId, isCompleted: true } });
       return count >= condition.quizzesCompleted;
     }
     if (condition.quizAccuracy) {
@@ -192,8 +214,12 @@ class AchievementService {
       return accuracy >= condition.quizAccuracy;
     }
     if (condition.perfectQuiz) {
-      const perfectSession = await prisma.quizSession.findFirst({
-        where: { userId, score: 100 },
+      const sessions = await prisma.quizSession.findMany({
+        where: { userId, isCompleted: true },
+      });
+      const perfectSession = sessions.find((s) => {
+        const accuracy = s.totalQuestions > 0 ? (s.correctAnswers / s.totalQuestions) * 100 : 0;
+        return accuracy === 100;
       });
       return !!perfectSession;
     }
@@ -269,8 +295,21 @@ class AchievementService {
           where: { userId, questionId: group.questionId },
           orderBy: { createdAt: 'asc' },
         });
-        const improvement = attempts[attempts.length - 1].aiScore! - attempts[0].aiScore!;
-        if (improvement >= condition.scoreImprovement) return true;
+
+        if (attempts.length < 2) continue;
+
+        const firstScore = attempts[0]?.aiScore;
+        const lastScore = attempts[attempts.length - 1]?.aiScore;
+
+        if (
+          firstScore !== null &&
+          firstScore !== undefined &&
+          lastScore !== null &&
+          lastScore !== undefined
+        ) {
+          const improvement = lastScore - firstScore;
+          if (improvement >= condition.scoreImprovement) return true;
+        }
       }
     }
     if (condition.failedThenPassed) {
@@ -286,7 +325,20 @@ class AchievementService {
           where: { userId, questionId: group.questionId },
           orderBy: { createdAt: 'asc' },
         });
-        if (attempts[0].aiScore! < 50 && attempts[attempts.length - 1].aiScore! >= 50) return true;
+
+        if (attempts.length < 2) continue;
+
+        const firstScore = attempts[0]?.aiScore;
+        const lastScore = attempts[attempts.length - 1]?.aiScore;
+
+        if (
+          firstScore !== null &&
+          firstScore !== undefined &&
+          lastScore !== null &&
+          lastScore !== undefined
+        ) {
+          if (firstScore < 50 && lastScore >= 50) return true;
+        }
       }
     }
     if (condition.sameQuestionAttempts) {
@@ -332,8 +384,8 @@ class AchievementService {
     if (condition.videoQuizEssaySameDay) {
       const today = new Date().toISOString().split('T')[0];
       const [video, quiz, essay] = await Promise.all([
-        prisma.lessonProgress.findFirst({
-          where: { userId, updatedAt: { gte: new Date(today) } },
+        prisma.userLessonProgress.findFirst({
+          where: { userId, completedAt: { gte: new Date(today) } },
         }),
         prisma.quizAttempt.findFirst({
           where: { userId, createdAt: { gte: new Date(today) } },

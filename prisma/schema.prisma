@@ -438,7 +438,6 @@ model Achievement {
   type        AchievementType
   condition   Json // Condition to unlock (e.g., {"lessons": 1})
   icon        String? // Icon name or URL
-
   // Timestamps
   createdAt DateTime @default(now())
 
