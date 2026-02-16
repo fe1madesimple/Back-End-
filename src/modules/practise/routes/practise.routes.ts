@@ -569,6 +569,63 @@ practiceRouter.post('/simulation/:simulationId/fail', protect, failSimulation);
 
 
 
+
+/**
+ * @swagger
+ * /api/v1/practice/simulation/{simulationId}/question/{questionId}:
+ *   get:
+ *     summary: Get simulation question (navigation)
+ *     tags: [Simulation]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Returns question with submission status.
+ *     parameters:
+ *       - in: path
+ *         name: simulationId
+ *         required: true
+ *         schema:
+ *           type: string
+ *       - in: path
+ *         name: questionId
+ *         required: true
+ *         schema:
+ *           type: string
+ *       - in: query
+ *         name: questionIndex
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     responses:
+ *       200:
+ *         description: Question retrieved
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 currentQuestionIndex:
+ *                   type: integer
+ *                 totalQuestions:
+ *                   type: integer
+ *                 questionId:
+ *                   type: string
+ *                 subject:
+ *                   type: string
+ *                 examType:
+ *                   type: string
+ *                 text:
+ *                   type: string
+ *                 userAnswer:
+ *                   type: string
+ *                   nullable: true
+ *                 isSubmitted:
+ *                   type: boolean
+ *                 timeTakenSeconds:
+ *                   type: integer
+ *                   nullable: true
+ *                 canEdit:
+ *                   type: boolean
+ */
 practiceRouter.get(
   '/simulation/:simulationId/question/:questionId',
   protect,
