@@ -382,18 +382,19 @@ class AchievementService {
 
   private async checkCombo(userId: string, condition: any): Promise<boolean> {
     if (condition.videoQuizEssaySameDay) {
-      const today = new Date().toISOString().split('T')[0];
-      const [video, quiz, essay] = await Promise.all([
-        prisma.userLessonProgress.findFirst({
-          where: { userId, completedAt: { gte: new Date(today) } },
-        }),
-        prisma.quizAttempt.findFirst({
-          where: { userId, createdAt: { gte: new Date(today) } },
-        }),
-        prisma.essayAttempt.findFirst({
-          where: { userId, createdAt: { gte: new Date(today) } },
-        }),
-      ]);
+     const today = new Date();
+     today.setHours(0, 0, 0, 0);
+     const [video, quiz, essay] = await Promise.all([
+       prisma.userLessonProgress.findFirst({
+         where: { userId, completedAt: { gte: today } },
+       }),
+       prisma.quizAttempt.findFirst({
+         where: { userId, createdAt: { gte: today } },
+       }),
+       prisma.essayAttempt.findFirst({
+         where: { userId, createdAt: { gte: today } },
+       }),
+     ]);
       return !!(video && quiz && essay);
     }
     if (condition.subjectsInWeek) {
