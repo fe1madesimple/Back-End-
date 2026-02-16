@@ -1,11 +1,8 @@
-
 import { prisma } from '@/shared/config';
 import { PodcastListResponse, PodcastDetailResponse } from '../interface/podcast.interface';
 import { NotFoundError } from '@/shared/utils';
 
 class Podcasts {
-
-
   async getPodcasts(subject?: string): Promise<PodcastListResponse> {
     const where: any = { isPublished: true };
 
@@ -56,7 +53,6 @@ class Podcasts {
     };
   }
 
-
   async trackPodcastProgress(
     userId: string,
     podcastId: string,
@@ -100,6 +96,39 @@ class Podcasts {
         data: { duration: audioDuration },
       });
     }
+  }
+
+  async getRelevantPodcasts(focusSubjects: string[]) {
+    if (focusSubjects.length === 0) {
+      // Return 3 random podcasts if no focus subjects
+      return await prisma.podcast.findMany({
+        where: { isPublished: true },
+        select: {
+          id: true,
+          title: true,
+          subject: true,
+          duration: true,
+          thumbnail: true,
+        },
+        take: 3,
+        orderBy: { createdAt: 'desc' },
+      });
+    }
+
+    return await prisma.podcast.findMany({
+      where: {
+        isPublished: true,
+        subject: { in: focusSubjects },
+      },
+      select: {
+        id: true,
+        title: true,
+        subject: true,
+        duration: true,
+        thumbnail: true,
+      },
+      take: 3,
+    });
   }
 }
 

@@ -1263,6 +1263,8 @@ class ProgressService {
       lifetimeStudyHours: Math.round(((todaySession?.lifetimeTotalSeconds || 0) / 3600) * 10) / 10,
     };
   }
+
+
 }
 
 export default new ProgressService();
