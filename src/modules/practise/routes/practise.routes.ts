@@ -273,6 +273,50 @@ practiceRouter.get('/quick-quiz', protect, getQuickQuiz);
 practiceRouter.post('/quiz-results', protect, getQuizResults);
 
 
+
+/**
+ * @swagger
+ * /api/v1/practice/initiate-start-question:
+ *   post:
+ *     summary: Initiate practice question
+ *     tags: [Practice]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Creates timer, returns first question from set.
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               parentQuestionId:
+ *                 type: string
+ *     responses:
+ *       201:
+ *         description: Practice started
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 timerId:
+ *                   type: string
+ *                 currentQuestionIndex:
+ *                   type: integer
+ *                 totalQuestions:
+ *                   type: integer
+ *                 questionId:
+ *                   type: string
+ *                 subject:
+ *                   type: string
+ *                 examType:
+ *                   type: string
+ *                 text:
+ *                   type: string
+ *                 averageAttemptTimeSeconds:
+ *                   type: integer
+ */
 practiceRouter.post('/initiate-start-question', protect, initiateStartPractice);
 
 
