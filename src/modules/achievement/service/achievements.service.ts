@@ -231,6 +231,29 @@ class AchievementService {
     }
     return false;
   }
+
+  private async checkSubjectMastery(userId: string, condition: any): Promise<boolean> {
+    if (condition.essaysCompleted) {
+      const count = await prisma.essayAttempt.count({
+        where: {
+          userId,
+          question: { subject: condition.subject },
+        },
+      });
+      return count >= condition.essaysCompleted;
+    }
+    if (condition.highScores) {
+      const count = await prisma.essayAttempt.count({
+        where: {
+          userId,
+          question: { subject: condition.subject },
+          aiScore: { gte: condition.minScore },
+        },
+      });
+      return count >= condition.highScores;
+    }
+    return false;
+  }
 }
 
 export default new AchievementService();
