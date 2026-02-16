@@ -223,7 +223,49 @@ class EmailService {
 
     await this.send(email, 'Welcome to FE-1 Made Simple - Your 7-Day Trial Has Started!', html);
   }
-}
 
+  async sendAccountDeletionEmail(email: string, firstName: string) {
+    const html = `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Deleted</title>
+</head>
+<body style="margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;background-color:#ffffff;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;padding:40px 20px;">
+    <tr>
+      <td align="center" style="padding-bottom:40px;">
+        <img src="https://res.cloudinary.com/dkrjrfqpy/image/upload/v1768477062/Frame_23_a3ppr0.png" alt="FE-1 Made Simple" width="60" style="display:block;">
+      </td>
+    </tr>
+    <tr>
+      <td style="background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;padding:40px;">
+        <h1 style="margin:0 0 16px;font-size:24px;font-weight:600;color:#111827;">Account Successfully Deleted</h1>
+        <p style="margin:0 0 24px;font-size:16px;line-height:24px;color:#6b7280;">Hi ${firstName},</p>
+        <p style="margin:0 0 16px;font-size:16px;line-height:24px;color:#6b7280;">Your FE-1 Made Simple account has been permanently deleted as requested. All your personal data has been removed from our systems.</p>
+        <p style="margin:0 0 16px;font-size:16px;line-height:24px;color:#6b7280;">We're sorry to see you go, and we truly appreciate the time you spent with us. Your feedback helps us improve and serve future students better.</p>
+        <p style="margin:0 0 32px;font-size:16px;line-height:24px;color:#6b7280;">If your circumstances change, we'd be honored to welcome you back. You can create a new account anytime at <a href="https://fe1madesimple.com" style="color:#2563eb;text-decoration:none;">fe1madesimple.com</a>.</p>
+        <div style="background:#f9fafb;border-radius:8px;padding:24px;margin-bottom:32px;">
+          <p style="margin:0 0 8px;font-size:14px;line-height:20px;color:#6b7280;font-weight:600;">Need help?</p>
+          <p style="margin:0;font-size:14px;line-height:20px;color:#6b7280;">If this deletion was a mistake or you have questions, contact us at <a href="mailto:support@fe1madesimple.com" style="color:#2563eb;text-decoration:none;">support@fe1madesimple.com</a> within 30 days.</p>
+        </div>
+        <p style="margin:0;font-size:16px;line-height:24px;color:#6b7280;">We wish you all the best in your FE-1 exam journey and future legal career.</p>
+        <p style="margin:16px 0 0;font-size:16px;line-height:24px;color:#6b7280;">Best regards,<br><strong>The FE-1 Made Simple Team</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" style="padding-top:32px;">
+        <p style="margin:0;font-size:14px;color:#9ca3af;">© 2026 FE-1 Made Simple. All rights reserved.</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+
+    await this.send(email, 'Your Account Has Been Deleted - FE-1 Made Simple', html);
+  }
+}
 
 export default new EmailService();
