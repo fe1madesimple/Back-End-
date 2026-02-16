@@ -16,6 +16,17 @@ class AchievementService {
       orderBy: { unlockedAt: 'desc' },
     });
   }
+
+  async initializeCache(userId: string) {
+    if (this.unlockedCache.has(userId)) return;
+
+    const unlocked = await prisma.userAchievement.findMany({
+      where: { userId },
+      select: { achievementId: true },
+    });
+
+    this.unlockedCache.set(userId, new Set(unlocked.map((u) => u.achievementId)));
+  }
 }
 
 export default new AchievementService();
