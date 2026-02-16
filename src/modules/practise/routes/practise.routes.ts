@@ -466,6 +466,78 @@ practiceRouter.get(
   getSimulationQuestion
 );
 
+
+
+/**
+ * @swagger
+ * /api/v1/practice/attempt/{questionId}/{parentQuestionId}:
+ *   get:
+ *     summary: Get attempt details (back navigation)
+ *     tags: [Practice]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Returns previously submitted answer with AI feedback.
+ *     parameters:
+ *       - in: path
+ *         name: questionId
+ *         required: true
+ *         schema:
+ *           type: string
+ *       - in: path
+ *         name: parentQuestionId
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Attempt details retrieved
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 attemptId:
+ *                   type: string
+ *                 userAnswer:
+ *                   type: string
+ *                 aiScore:
+ *                   type: integer
+ *                 band:
+ *                   type: string
+ *                 feedback:
+ *                   type: object
+ *                 strengths:
+ *                   type: array
+ *                   items:
+ *                     type: string
+ *                 improvements:
+ *                   type: array
+ *                   items:
+ *                     type: string
+ *                 sampleAnswer:
+ *                   type: string
+ *                 timeTakenSeconds:
+ *                   type: integer
+ *                 wordCount:
+ *                   type: integer
+ *                 createdAt:
+ *                   type: string
+ *                   format: date-time
+ *                 currentQuestionIndex:
+ *                   type: integer
+ *                 totalQuestions:
+ *                   type: integer
+ *                 subject:
+ *                   type: string
+ *                 examType:
+ *                   type: string
+ *                 questionText:
+ *                   type: string
+ *                 hasNextQuestion:
+ *                   type: boolean
+ *                 hasPreviousQuestion:
+ *                   type: boolean
+ */
 practiceRouter.get('/attempt/:questionId/:parentQuestionId', protect, getAttemptDetails);
 
 /**
