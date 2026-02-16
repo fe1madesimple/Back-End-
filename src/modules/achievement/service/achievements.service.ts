@@ -178,6 +178,35 @@ class AchievementService {
     }
     return false;
   }
+
+  private async checkQuizAccuracy(userId: string, condition: any): Promise<boolean> {
+    if (condition.quizzesCompleted) {
+      const count = await prisma.quizAttempt.count({ where: { userId } });
+      return count >= condition.quizzesCompleted;
+    }
+    if (condition.quizAccuracy) {
+      const attempts = await prisma.quizAttempt.findMany({ where: { userId } });
+      if (attempts.length < condition.minQuizzes) return false;
+      const correct = attempts.filter((a) => a.isCorrect).length;
+      const accuracy = (correct / attempts.length) * 100;
+      return accuracy >= condition.quizAccuracy;
+    }
+    if (condition.perfectQuiz) {
+      const perfectSession = await prisma.quizSession.findFirst({
+        where: { userId, score: 100 },
+      });
+      return !!perfectSession;
+    }
+    if (condition.consecutiveCorrect) {
+      const attempts = await prisma.quizAttempt.findMany({
+        where: { userId },
+        orderBy: { createdAt: 'desc' },
+        take: condition.consecutiveCorrect,
+      });
+      return attempts.length === condition.consecutiveCorrect && attempts.every((a) => a.isCorrect);
+    }
+    return false;
+  }
 }
 
 export default new AchievementService();
