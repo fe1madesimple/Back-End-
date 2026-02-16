@@ -207,6 +207,30 @@ class AchievementService {
     }
     return false;
   }
+
+  private async checkSimulation(userId: string, condition: any): Promise<boolean> {
+    if (condition.simulationsCompleted) {
+      const count = await prisma.simulation.count({ where: { userId, endedAt: { not: null } } });
+      return count >= condition.simulationsCompleted;
+    }
+    if (condition.simulationsPassed) {
+      const count = await prisma.simulation.count({ where: { userId, passed: true } });
+      return count >= condition.simulationsPassed;
+    }
+    if (condition.simulationTime) {
+      const fast = await prisma.simulation.findFirst({
+        where: { userId, totalTimeSeconds: { lte: condition.simulationTime } },
+      });
+      return !!fast;
+    }
+    if (condition.perfectSimulation) {
+      const perfect = await prisma.simulation.findFirst({
+        where: { userId, overallScore: 100 },
+      });
+      return !!perfect;
+    }
+    return false;
+  }
 }
 
 export default new AchievementService();
