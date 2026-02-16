@@ -46,7 +46,7 @@ function getNextExamDate(): Date {
 }
 
 class ProgressService {
-  // Add to src/modules/dashboard/services/dashboard.service.ts
+ 
 
   private async getWeeklyStats(userId: string) {
     const oneWeekAgo = new Date();
@@ -1437,12 +1437,12 @@ class ProgressService {
           )
         : 0;
 
-    // Practice attempts (essays)
+   
     const practiceAttempts = await prisma.essayAttempt.count({
       where: { userId },
     });
 
-    // Current streak
+    
     const allSessions = await prisma.dailyStudySession.findMany({
       where: { userId, todayTotalSeconds: { gt: 0 } },
       select: { date: true },

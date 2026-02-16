@@ -59,3 +59,12 @@ export const getSimpleDashboard = asyncHandler(async (req: Request, res: Respons
 
   sendSuccess(res, 'Dashboard data retrieved successfully', dashboard);
 });
+
+
+
+
+export const getStudyOverview = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const overview = await progressService.getStudyOverview(userId);
+  sendSuccess(res, 'Study overview retrieved', overview);
+});
