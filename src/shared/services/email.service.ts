@@ -266,6 +266,57 @@ class EmailService {
 
     await this.send(email, 'Your Account Has Been Deleted - FE-1 Made Simple', html);
   }
+
+  async sendWeeklyProgressEmail(email: string, firstName: string, stats: any) {
+    const html = `
+<!DOCTYPE html>
+<html>
+<body style="margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;background-color:#ffffff;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;padding:40px 20px;">
+    <tr>
+      <td align="center" style="padding-bottom:40px;">
+        <img src="https://res.cloudinary.com/dkrjrfqpy/image/upload/v1768477062/Frame_23_a3ppr0.png" alt="FE-1 Made Simple" width="60" style="display:block;">
+      </td>
+    </tr>
+    <tr>
+      <td style="background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;padding:40px;">
+        <h1 style="margin:0 0 16px;font-size:24px;font-weight:600;color:#111827;">Your Weekly Progress</h1>
+        <p style="margin:0 0 24px;font-size:16px;line-height:24px;color:#6b7280;">Hi ${firstName},</p>
+        <p style="margin:0 0 32px;font-size:16px;line-height:24px;color:#6b7280;">Here's how you performed this week:</p>
+        
+        <div style="background:#f9fafb;border-radius:8px;padding:24px;margin-bottom:16px;">
+          <div style="margin-bottom:16px;">
+            <div style="font-size:14px;color:#6b7280;margin-bottom:4px;">Study Time</div>
+            <div style="font-size:24px;font-weight:700;color:#111827;">${Math.floor(stats.studyTimeSeconds / 3600)}h ${Math.floor((stats.studyTimeSeconds % 3600) / 60)}m</div>
+          </div>
+          <div style="margin-bottom:16px;">
+            <div style="font-size:14px;color:#6b7280;margin-bottom:4px;">Current Streak</div>
+            <div style="font-size:24px;font-weight:700;color:#111827;">${stats.streak} days 🔥</div>
+          </div>
+          <div>
+            <div style="font-size:14px;color:#6b7280;margin-bottom:4px;">Essays Completed</div>
+            <div style="font-size:24px;font-weight:700;color:#111827;">${stats.essaysCompleted}</div>
+          </div>
+        </div>
+        
+        <a href="https://fe1madesimple.com/dashboard" style="display:inline-block;background:#2563eb;color:#ffffff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;">View Full Dashboard</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" style="padding-top:32px;">
+        <p style="margin:0;font-size:14px;color:#9ca3af;">© 2026 FE-1 Made Simple. All rights reserved.</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+
+    await this.send(
+      email,
+      `Your Weekly Progress - ${stats.studyTimeSeconds > 0 ? 'Great Work!' : "Let's Get Started!"}`,
+      html
+    );
+  }
 }
 
 export default new EmailService();
