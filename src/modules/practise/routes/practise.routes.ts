@@ -322,6 +322,78 @@ practiceRouter.post('/initiate-start-question', protect, initiateStartPractice);
 
 practiceRouter.post('/start-question', protect, startPractice);
 
+
+
+/**
+ * @swagger
+ * /api/v1/practice/submit:
+ *   post:
+ *     summary: Submit essay answer
+ *     tags: [Practice]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Submits essay, grades with AI, returns feedback.
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - questionId
+ *               - answerText
+ *               - timerId
+ *               - currentQuestionIndex
+ *               - parentQuestionId
+ *             properties:
+ *               questionId:
+ *                 type: string
+ *               answerText:
+ *                 type: string
+ *               timerId:
+ *                 type: string
+ *               currentQuestionIndex:
+ *                 type: integer
+ *               parentQuestionId:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Essay graded
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 attemptId:
+ *                   type: string
+ *                 userAnswer:
+ *                   type: string
+ *                 aiScore:
+ *                   type: integer
+ *                 band:
+ *                   type: string
+ *                 feedback:
+ *                   type: object
+ *                 strengths:
+ *                   type: array
+ *                   items:
+ *                     type: string
+ *                 improvements:
+ *                   type: array
+ *                   items:
+ *                     type: string
+ *                 sampleAnswer:
+ *                   type: string
+ *                 currentQuestionIndex:
+ *                   type: integer
+ *                 nextQuestionIndex:
+ *                   type: integer
+ *                   nullable: true
+ *                 totalQuestions:
+ *                   type: integer
+ *                 hasNextQuestion:
+ *                   type: boolean
+ */
 practiceRouter.post('/submit', protect, submitEssay);
 
 practiceRouter.post('/next-question', protect, getNextQuestion);
