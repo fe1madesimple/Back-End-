@@ -788,6 +788,52 @@ const progressRouter = Router();
 progressRouter.get('/dashboard-simple', protect, getSimpleDashboard);
 
 
+/**
+ * @swagger
+ * /api/v1/progress/study-overview:
+ *   get:
+ *     summary: Get study overview
+ *     tags: [Dashboard]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Returns weekly summary, focus subjects, and key stats.
+ *     responses:
+ *       200:
+ *         description: Study overview retrieved
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                 message:
+ *                   type: string
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     weekSummary:
+ *                       type: string
+ *                     focusSubjects:
+ *                       type: array
+ *                       items:
+ *                         type: string
+ *                     stats:
+ *                       type: object
+ *                       properties:
+ *                         subjectsEnrolled:
+ *                           type: integer
+ *                         lessonsCompleted:
+ *                           type: integer
+ *                         quizAccuracy:
+ *                           type: integer
+ *                         practiceAttempts:
+ *                           type: integer
+ *                         currentStreak:
+ *                           type: integer
+ *                     achievementHint:
+ *                       type: string
+ */
 progressRouter.get('/study-overview', protect, getStudyOverview);
 
 // /**
