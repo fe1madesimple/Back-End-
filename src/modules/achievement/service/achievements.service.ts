@@ -60,6 +60,35 @@ class AchievementService {
 
     return await Promise.all(unlockPromises);
   }
+
+  private async evaluateCondition(userId: string, achievement: any): Promise<boolean> {
+    const condition = achievement.condition as any;
+
+    switch (achievement.type) {
+      case 'PRACTICE_MILESTONE':
+        return this.checkPracticeMilestone(userId, condition);
+      case 'LESSON_MILESTONE':
+        return this.checkLessonMilestone(userId, condition);
+      case 'STREAK_MILESTONE':
+        return this.checkStreakMilestone(userId, condition);
+      case 'QUIZ_ACCURACY':
+        return this.checkQuizAccuracy(userId, condition);
+      case 'EXAM_SIMULATION':
+        return this.checkSimulation(userId, condition);
+      case 'SUBJECT_MASTERY':
+        return this.checkSubjectMastery(userId, condition);
+      case 'IMPROVEMENT_ACHIEVEMENT':
+        return this.checkImprovement(userId, condition);
+      case 'TIME_ACHIEVEMENT':
+        return this.checkTimeAchievement(userId, condition);
+      case 'CASE_LAW_MASTERY':
+        return this.checkCaseLawMastery(userId, condition);
+      case 'COMBO_ACHIEVEMENT':
+        return this.checkCombo(userId, condition);
+      default:
+        return false;
+    }
+  }
 }
 
 export default new AchievementService();
