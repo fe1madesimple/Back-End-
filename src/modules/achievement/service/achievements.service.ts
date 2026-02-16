@@ -254,6 +254,51 @@ class AchievementService {
     }
     return false;
   }
+
+  private async checkImprovement(userId: string, condition: any): Promise<boolean> {
+    if (condition.scoreImprovement) {
+      const questionAttempts = await prisma.essayAttempt.groupBy({
+        by: ['questionId'],
+        where: { userId },
+        _count: { questionId: true },
+        having: { questionId: { _count: { gte: 2 } } },
+      });
+
+      for (const group of questionAttempts) {
+        const attempts = await prisma.essayAttempt.findMany({
+          where: { userId, questionId: group.questionId },
+          orderBy: { createdAt: 'asc' },
+        });
+        const improvement = attempts[attempts.length - 1].aiScore! - attempts[0].aiScore!;
+        if (improvement >= condition.scoreImprovement) return true;
+      }
+    }
+    if (condition.failedThenPassed) {
+      const questionAttempts = await prisma.essayAttempt.groupBy({
+        by: ['questionId'],
+        where: { userId },
+        _count: { questionId: true },
+        having: { questionId: { _count: { gte: 2 } } },
+      });
+
+      for (const group of questionAttempts) {
+        const attempts = await prisma.essayAttempt.findMany({
+          where: { userId, questionId: group.questionId },
+          orderBy: { createdAt: 'asc' },
+        });
+        if (attempts[0].aiScore! < 50 && attempts[attempts.length - 1].aiScore! >= 50) return true;
+      }
+    }
+    if (condition.sameQuestionAttempts) {
+      const maxAttempts = await prisma.essayAttempt.groupBy({
+        by: ['questionId'],
+        where: { userId },
+        _count: { questionId: true },
+      });
+      return maxAttempts.some((g) => g._count.questionId >= condition.sameQuestionAttempts);
+    }
+    return false;
+  }
 }
 
 export default new AchievementService();
