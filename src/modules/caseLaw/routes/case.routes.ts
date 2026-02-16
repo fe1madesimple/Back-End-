@@ -7,6 +7,7 @@ import {
   getSavedCases,
   toggleSaveCase,
   getAllCases,
+  toggleReview
 } from '../controller/case.controller';
 import {
   searchCasesSchema,
@@ -182,6 +183,43 @@ caseRouter.get('/saved', protect, validate(getSavedCasesSchema), getSavedCases);
  *         description: Case not found
  */
 caseRouter.get('/:id', protect, validate(getCaseDetailsSchema), getCaseDetails);
+
+
+
+/**
+ * @swagger
+ * /api/v1/cases/{caseId}/toggle-review:
+ *   post:
+ *     summary: Toggle case review status
+ *     tags: [Cases]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Marks saved case as reviewed/unreviewed.
+ *     parameters:
+ *       - in: path
+ *         name: caseId
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Review status updated
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 isReviewed:
+ *                   type: boolean
+ *                 lastReviewedAt:
+ *                   type: string
+ *                   format: date-time
+ *                   nullable: true
+ *       404:
+ *         description: Case not saved
+ */
+caseRouter.post('/:caseId/toggle-review', protect, toggleReview);
+
 
 
 /**

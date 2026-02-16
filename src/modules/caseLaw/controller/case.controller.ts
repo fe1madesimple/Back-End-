@@ -51,3 +51,14 @@ export const getAllCases = asyncHandler(async (req: Request, res: Response) => {
 
   sendSuccess(res, 'All cases retrieved successfully', result);
 });
+
+
+export const toggleReview = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { caseId } = req.params;
+
+  if (!caseId) throw new AppError("toggle review")
+  
+  const result = await caseService.toggleReview(userId, caseId);
+  sendSuccess(res, 'Review status updated', result);
+});
