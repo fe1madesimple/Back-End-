@@ -299,6 +299,29 @@ class AchievementService {
     }
     return false;
   }
+
+  private async checkTimeAchievement(userId: string, condition: any): Promise<boolean> {
+    if (condition.studyTimeSeconds) {
+      const session = await prisma.dailyStudySession.findFirst({
+        where: { userId, todayTotalSeconds: { gte: condition.studyTimeSeconds } },
+      });
+      return !!session;
+    }
+    if (condition.consistentPacing) {
+      const attempts = await prisma.essayAttempt.findMany({
+        where: { userId },
+        include: { question: true },
+        orderBy: { createdAt: 'desc' },
+        take: 5,
+      });
+      if (attempts.length < 5) return false;
+      return attempts.every((a) => {
+        const diff = Math.abs(a.timeTakenSeconds - a.question.averageAttemptTimeSeconds);
+        return diff <= a.question.averageAttemptTimeSeconds * 0.1;
+      });
+    }
+    return false;
+  }
 }
 
 export default new AchievementService();
