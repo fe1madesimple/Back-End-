@@ -556,7 +556,7 @@ class EmailService {
 
     await this.send(email, 'Keep Pushing Forward - You havve Got This!', html);
   }
-  
+
   async sendScheduleNotificationToSupport(userEmail: string, userName: string) {
     const supportEmails = ['support@fe1madesimple.com', 'team@fe1madesimple.com'];
 
@@ -611,5 +611,7 @@ class EmailService {
     }
   }
 }
+
+
 
 export default new EmailService();
