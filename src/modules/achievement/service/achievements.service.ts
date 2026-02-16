@@ -89,6 +89,36 @@ class AchievementService {
         return false;
     }
   }
+
+  private async checkPracticeMilestone(userId: string, condition: any): Promise<boolean> {
+    if (condition.essaysSubmitted) {
+      const count = await prisma.essayAttempt.count({ where: { userId } });
+      return count >= condition.essaysSubmitted;
+    }
+    if (condition.highScores) {
+      const count = await prisma.essayAttempt.count({
+        where: { userId, aiScore: { gte: condition.minScore } },
+      });
+      return count >= condition.highScores;
+    }
+    if (condition.underAverageTime) {
+      const attempts = await prisma.essayAttempt.findMany({
+        where: { userId },
+        include: { question: true },
+      });
+      return attempts.some((a) => a.timeTakenSeconds < a.question.averageAttemptTimeSeconds);
+    }
+    if (condition.allSubjectsAttempted) {
+      const distinctSubjects = await prisma.essayAttempt.findMany({
+        where: { userId },
+        select: { question: { select: { subject: true } } },
+        distinct: ['questionId'],
+      });
+      const subjects = new Set(distinctSubjects.map((d) => d.question.subject));
+      return subjects.size >= 8;
+    }
+    return false;
+  }
 }
 
 export default new AchievementService();
