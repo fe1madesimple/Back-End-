@@ -448,7 +448,46 @@ practiceRouter.post('/next-question', protect, getNextQuestion);
 
 
 
-
+/**
+ * @swagger
+ * /api/v1/practice/simulation/start:
+ *   post:
+ *     summary: Start full simulation
+ *     tags: [Simulation]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Creates simulation, picks 5 random questions, starts 3-hour timer.
+ *     responses:
+ *       201:
+ *         description: Simulation started
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 simulationId:
+ *                   type: string
+ *                 startedAt:
+ *                   type: string
+ *                   format: date-time
+ *                 totalTimeSeconds:
+ *                   type: integer
+ *                 questions:
+ *                   type: array
+ *                   items:
+ *                     type: object
+ *                     properties:
+ *                       questionId:
+ *                         type: string
+ *                       questionIndex:
+ *                         type: integer
+ *                       subject:
+ *                         type: string
+ *                       examType:
+ *                         type: string
+ *                       text:
+ *                         type: string
+ */
 practiceRouter.post('/simulation/start', protect, startSimulation);
 
 practiceRouter.post('/simulation/submit-answer', protect, submitSimulationAnswer);
@@ -465,7 +504,6 @@ practiceRouter.get(
   protect,
   getSimulationQuestion
 );
-
 
 
 /**
