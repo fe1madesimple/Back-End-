@@ -396,6 +396,53 @@ practiceRouter.post('/start-question', protect, startPractice);
  */
 practiceRouter.post('/submit', protect, submitEssay);
 
+
+
+/**
+ * @swagger
+ * /api/v1/practice/next-question:
+ *   post:
+ *     summary: Get next question
+ *     tags: [Practice]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Returns next question in set, creates timer.
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               parentQuestionId:
+ *                 type: string
+ *               currentIndex:
+ *                 type: integer
+ *     responses:
+ *       200:
+ *         description: Next question retrieved
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 timerId:
+ *                   type: string
+ *                 currentQuestionIndex:
+ *                   type: integer
+ *                 totalQuestions:
+ *                   type: integer
+ *                 questionId:
+ *                   type: string
+ *                 subject:
+ *                   type: string
+ *                 examType:
+ *                   type: string
+ *                 text:
+ *                   type: string
+ *                 averageAttemptTimeSeconds:
+ *                   type: integer
+ */
 practiceRouter.post('/next-question', protect, getNextQuestion);
 
 
