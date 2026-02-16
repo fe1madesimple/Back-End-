@@ -640,6 +640,45 @@ practiceRouter.post('/simulation/:simulationId/finish', protect, finishSimulatio
 
 
 
+/**
+ * @swagger
+ * /api/v1/practice/simulation/{simulationId}/fail:
+ *   post:
+ *     summary: Fail simulation (window blur)
+ *     tags: [Simulation]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Auto-fails simulation if user leaves exam window.
+ *     parameters:
+ *       - in: path
+ *         name: simulationId
+ *         required: true
+ *         schema:
+ *           type: string
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               reason:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Simulation failed
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 failed:
+ *                   type: boolean
+ *                 reason:
+ *                   type: string
+ *                 message:
+ *                   type: string
+ */
 practiceRouter.post('/simulation/:simulationId/fail', protect, failSimulation);
 
 
