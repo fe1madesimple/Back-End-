@@ -1298,6 +1298,83 @@ class ProgressService {
       lifetimeStudyHours: Math.round(((todaySession?.lifetimeTotalSeconds || 0) / 3600) * 10) / 10,
     };
   }
+
+  // Add to src/modules/dashboard/services/dashboard.service.ts
+
+  private async getAIProgressTrend(userId: string) {
+    const twoWeeksAgo = new Date();
+    twoWeeksAgo.setDate(twoWeeksAgo.getDate() - 14);
+
+    const oneWeekAgo = new Date();
+    oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
+
+    // Last week's attempts
+    const lastWeekAttempts = await prisma.essayAttempt.findMany({
+      where: {
+        userId,
+        createdAt: {
+          gte: oneWeekAgo,
+        },
+      },
+      select: {
+        aiScore: true,
+        question: { select: { subject: true } },
+      },
+    });
+
+    // Previous week's attempts (for comparison)
+    const previousWeekAttempts = await prisma.essayAttempt.findMany({
+      where: {
+        userId,
+        createdAt: {
+          gte: twoWeeksAgo,
+          lt: oneWeekAgo,
+        },
+      },
+      select: {
+        aiScore: true,
+        question: { select: { subject: true } },
+      },
+    });
+
+    const calculateAverage = (attempts: any[]) => {
+      if (attempts.length === 0) return 0;
+      const scores = attempts.map((a) => a.aiScore).filter((s) => s !== null);
+      return scores.length > 0
+        ? Math.round(scores.reduce((sum, s) => sum + s!, 0) / scores.length)
+        : 0;
+    };
+
+    const lastWeekAverage = calculateAverage(lastWeekAttempts);
+    const previousWeekAverage = calculateAverage(previousWeekAttempts);
+    const improvement = lastWeekAverage - previousWeekAverage;
+
+    // Subject breakdown
+    const subjectPerformance: Record<string, { count: number; avgScore: number }> = {};
+
+    lastWeekAttempts.forEach((attempt) => {
+      const subject = attempt.question.subject || 'General';
+      if (!subjectPerformance[subject]) {
+        subjectPerformance[subject] = { count: 0, avgScore: 0 };
+      }
+      subjectPerformance[subject]!.count++;
+      subjectPerformance[subject]!.avgScore += attempt.aiScore || 0;
+    });
+
+    Object.keys(subjectPerformance).forEach((subject) => {
+      const perf = subjectPerformance[subject]!;
+      perf.avgScore = Math.round(perf.avgScore / perf.count);
+    });
+
+    return {
+      lastWeekAverage,
+      previousWeekAverage,
+      improvement,
+      essaysCompleted: lastWeekAttempts.length,
+      subjectPerformance,
+      hasActivity: lastWeekAttempts.length > 0,
+    };
+  }
 }
 
 export default new ProgressService();
