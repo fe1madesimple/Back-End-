@@ -21,7 +21,6 @@ import practiceRouter from './modules/practise/routes/practise.routes';
 import progressRouter from './modules/progress/routes/progress.routes';
 import studySessionRouter from './modules/study-sessions/routes/study-sessions.routes';
 import podCastRouter from './modules/podcasts/routes/podcast.routes';
-
 import subscriptionRouter from './modules/subscription/routes/subscription.routes';
 import supportRouter from './modules/support/route/support.route';
 import { config } from 'dotenv';
@@ -197,7 +196,7 @@ const createApp = (): Application => {
   app.use('/api/v1/podcasts', podCastRouter);
   app.use('/api/v1/modules', moduleRouter);
   app.use('/api/v1/cases', caseRouter);
-  app.use('/api/v1/suport', supportRouter);
+  app.use('/api/v1/support', supportRouter);
   app.use(notFoundHandler);
   app.use(errorHandler);
 
