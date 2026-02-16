@@ -386,6 +386,121 @@ class EmailService {
 
     await this.send(email, 'New Podcast Recommendations - FE-1 Made Simple', html);
   }
+
+  // Add to src/modules/email/services/email.service.ts
+
+  async sendAIProgressTrendEmail(email: string, firstName: string, data: any) {
+    const improvementText =
+      data.improvement > 0
+        ? `<span style="color:#10b981;">↑ ${data.improvement}%</span>`
+        : data.improvement < 0
+          ? `<span style="color:#ef4444;">↓ ${Math.abs(data.improvement)}%</span>`
+          : `<span style="color:#6b7280;">No change</span>`;
+
+    const subjectRows = Object.entries(data.subjectPerformance)
+      .map(
+        ([subject, perf]: [string, any]) => `
+      <tr>
+        <td style="padding:12px;border-bottom:1px solid #e5e7eb;">${subject}</td>
+        <td style="padding:12px;border-bottom:1px solid #e5e7eb;text-align:center;">${perf.count}</td>
+        <td style="padding:12px;border-bottom:1px solid #e5e7eb;text-align:center;font-weight:600;">${perf.avgScore}%</td>
+      </tr>
+    `
+      )
+      .join('');
+
+    const html = `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your AI Progress Report</title>
+</head>
+<body style="margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;background-color:#ffffff;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;padding:40px 20px;">
+    <tr>
+      <td align="center" style="padding-bottom:40px;">
+        <img src="https://res.cloudinary.com/dkrjrfqpy/image/upload/v1768477062/Frame_23_a3ppr0.png" alt="FE-1 Made Simple" width="60" style="display:block;">
+      </td>
+    </tr>
+    <tr>
+      <td style="background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;padding:40px;">
+        <h1 style="margin:0 0 8px;font-size:24px;font-weight:600;color:#111827;">Your Weekly AI Progress Report 📊</h1>
+        <p style="margin:0 0 32px;font-size:14px;color:#6b7280;">Week of ${new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</p>
+        
+        <p style="margin:0 0 24px;font-size:16px;line-height:24px;color:#6b7280;">Hi ${firstName},</p>
+        
+        <div style="background:#f9fafb;border-radius:12px;padding:24px;margin-bottom:32px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+            <div>
+              <div style="font-size:14px;color:#6b7280;margin-bottom:4px;">Last Week Average</div>
+              <div style="font-size:32px;font-weight:700;color:#111827;">${data.lastWeekAverage}%</div>
+            </div>
+            <div style="font-size:24px;font-weight:700;">${improvementText}</div>
+          </div>
+          <div style="padding-top:16px;border-top:1px solid #e5e7eb;">
+            <div style="font-size:14px;color:#6b7280;margin-bottom:4px;">Essays Completed</div>
+            <div style="font-size:20px;font-weight:600;color:#111827;">${data.essaysCompleted}</div>
+          </div>
+        </div>
+        
+        <h2 style="margin:0 0 16px;font-size:18px;font-weight:600;color:#111827;">Subject Breakdown</h2>
+        <table width="100%" style="border-collapse:collapse;margin-bottom:32px;">
+          <thead>
+            <tr style="background:#f9fafb;">
+              <th style="padding:12px;text-align:left;font-size:14px;font-weight:600;color:#6b7280;">Subject</th>
+              <th style="padding:12px;text-align:center;font-size:14px;font-weight:600;color:#6b7280;">Essays</th>
+              <th style="padding:12px;text-align:center;font-size:14px;font-weight:600;color:#6b7280;">Avg Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${subjectRows}
+          </tbody>
+        </table>
+        
+        ${
+          data.improvement > 0
+            ? `
+        <div style="background:#ecfdf5;border:1px solid #10b981;border-radius:8px;padding:16px;margin-bottom:24px;">
+          <div style="font-weight:600;color:#047857;margin-bottom:4px;">🎉 Great Progress!</div>
+          <div style="font-size:14px;color:#065f46;">You've improved by ${data.improvement}% this week. Keep up the excellent work!</div>
+        </div>
+        `
+            : data.improvement < 0
+              ? `
+        <div style="background:#fef2f2;border:1px solid #ef4444;border-radius:8px;padding:16px;margin-bottom:24px;">
+          <div style="font-weight:600;color:#dc2626;margin-bottom:4px;">💪 Room for Improvement</div>
+          <div style="font-size:14px;color:#991b1b;">Your score dipped this week. Review your feedback and focus on weak areas.</div>
+        </div>
+        `
+              : ''
+        }
+        
+        <div style="background:#f9fafb;border-radius:8px;padding:16px;margin-bottom:24px;">
+          <div style="font-weight:600;color:#111827;margin-bottom:8px;">💡 Tips for Next Week:</div>
+          <ul style="margin:0;padding-left:20px;font-size:14px;color:#6b7280;line-height:20px;">
+            <li>Focus on subjects with lower scores</li>
+            <li>Review AI feedback from previous essays</li>
+            <li>Practice IRAC structure consistently</li>
+            <li>Cite more Irish case law for higher marks</li>
+          </ul>
+        </div>
+        
+        <a href="https://fe1madesimple.com/practice" style="display:inline-block;background:#2563eb;color:#ffffff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;">Continue Practicing</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" style="padding-top:32px;">
+        <p style="margin:0;font-size:14px;color:#9ca3af;">© 2026 FE-1 Made Simple. All rights reserved.</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+
+    await this.send(email, `Your Weekly AI Progress: ${data.lastWeekAverage}% Average`, html);
+  }
 }
 
 export default new EmailService();
