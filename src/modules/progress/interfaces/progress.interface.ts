@@ -212,8 +212,6 @@ export interface SimpleDashboardResponse {
 }
 
 
-// src/modules/dashboard/interfaces/dashboard.interface.ts
-
 export interface StudyOverviewResponse {
   weekSummary: string; 
   focusSubjects: string[];

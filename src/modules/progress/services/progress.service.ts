@@ -6,6 +6,7 @@ import {
   WeeklySummaryResponse,
   ModuleStatsResponse,
   SimpleDashboardResponse,
+  StudyOverviewResponse
 } from '../interfaces/progress.interface';
 import { NotFoundError } from '@/shared/utils';
 
@@ -1299,8 +1300,6 @@ class ProgressService {
     };
   }
 
-  // Add to src/modules/dashboard/services/dashboard.service.ts
-
   private async getAIProgressTrend(userId: string) {
     const twoWeeksAgo = new Date();
     twoWeeksAgo.setDate(twoWeeksAgo.getDate() - 14);
@@ -1373,6 +1372,119 @@ class ProgressService {
       essaysCompleted: lastWeekAttempts.length,
       subjectPerformance,
       hasActivity: lastWeekAttempts.length > 0,
+    };
+  }
+
+  // src/modules/dashboard/services/dashboard.service.ts
+
+  async getStudyOverview(userId: string): Promise<StudyOverviewResponse> {
+    const user = await prisma.user.findUnique({
+      where: { id: userId },
+      select: { focusSubjects: true },
+    });
+
+    // Calculate week start (last Monday)
+    const now = new Date();
+    const dayOfWeek = now.getDay();
+    const daysToMonday = dayOfWeek === 0 ? 6 : dayOfWeek - 1;
+    const weekStart = new Date(now);
+    weekStart.setDate(now.getDate() - daysToMonday);
+    weekStart.setHours(0, 0, 0, 0);
+
+    // Get this week's study sessions
+    const weekStartStr = weekStart.toISOString().split('T')[0]!;
+    const weekSessions = await prisma.dailyStudySession.findMany({
+      where: {
+        userId,
+        date: { gte: weekStartStr },
+      },
+      select: { todayTotalSeconds: true },
+    });
+
+    const totalSecondsThisWeek = weekSessions.reduce((sum, s) => sum + s.todayTotalSeconds, 0);
+    const hoursThisWeek = Math.round((totalSecondsThisWeek / 3600) * 10) / 10;
+
+    // Lessons completed this week
+    const lessonsCompletedThisWeek = await prisma.userLessonProgress.count({
+      where: {
+        userId,
+        completedAt: { gte: weekStart },
+      },
+    });
+
+    // Subjects enrolled (has any progress)
+    const subjectProgress = await prisma.userSubjectProgress.findMany({
+      where: { userId },
+      select: { subjectId: true },
+    });
+    const subjectsEnrolled = subjectProgress.length;
+
+    // Total lessons completed (all time)
+    const lessonsCompleted = await prisma.userLessonProgress.count({
+      where: { userId, isCompleted: true },
+    });
+
+    // Quiz accuracy (average across all MCQ attempts)
+    const allQuizAttempts = await prisma.quizAttempt.findMany({
+      where: { userId },
+      select: { isCorrect: true },
+    });
+
+    const quizAccuracy =
+      allQuizAttempts.length > 0
+        ? Math.round(
+            (allQuizAttempts.filter((a) => a.isCorrect).length / allQuizAttempts.length) * 100
+          )
+        : 0;
+
+    // Practice attempts (essays)
+    const practiceAttempts = await prisma.essayAttempt.count({
+      where: { userId },
+    });
+
+    // Current streak
+    const allSessions = await prisma.dailyStudySession.findMany({
+      where: { userId, todayTotalSeconds: { gt: 0 } },
+      select: { date: true },
+      orderBy: { date: 'desc' },
+    });
+
+    let currentStreak = 0;
+    let expectedDate = new Date();
+    expectedDate.setHours(0, 0, 0, 0);
+
+    for (const session of allSessions) {
+      const sessionDate = new Date(session.date);
+      sessionDate.setHours(0, 0, 0, 0);
+
+      if (sessionDate.getTime() === expectedDate.getTime()) {
+        currentStreak++;
+        expectedDate.setDate(expectedDate.getDate() - 1);
+      } else {
+        break;
+      }
+    }
+
+    // Week summary text
+    const weekSummary = `You've studied ${hoursThisWeek} hours this week and completed ${lessonsCompletedThisWeek} modules across ${subjectsEnrolled} subjects.`;
+
+    // Achievement hint
+    const achievementHint =
+      currentStreak >= 3
+        ? `Amazing! ${currentStreak} day streak — keep going to unlock your next achievement badge.`
+        : 'Consistency pays off — stay on your streak to unlock your next achievement badge.';
+
+    return {
+      weekSummary,
+      focusSubjects: user?.focusSubjects || [],
+      stats: {
+        subjectsEnrolled,
+        lessonsCompleted,
+        quizAccuracy,
+        practiceAttempts,
+        currentStreak,
+      },
+      achievementHint,
     };
   }
 }
