@@ -490,6 +490,76 @@ practiceRouter.post('/next-question', protect, getNextQuestion);
  */
 practiceRouter.post('/simulation/start', protect, startSimulation);
 
+
+
+/**
+ * @swagger
+ * /api/v1/practice/simulation/submit-answer:
+ *   post:
+ *     summary: Submit simulation answer
+ *     tags: [Simulation]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Saves answer (no grading yet), returns next question.
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - simulationId
+ *               - questionId
+ *               - answerText
+ *               - timerId
+ *               - currentQuestionIndex
+ *             properties:
+ *               simulationId:
+ *                 type: string
+ *               questionId:
+ *                 type: string
+ *               answerText:
+ *                 type: string
+ *               timerId:
+ *                 type: string
+ *               currentQuestionIndex:
+ *                 type: integer
+ *     responses:
+ *       200:
+ *         description: Answer saved
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 attemptId:
+ *                   type: string
+ *                 saved:
+ *                   type: boolean
+ *                 timeTakenSeconds:
+ *                   type: integer
+ *                 currentQuestionIndex:
+ *                   type: integer
+ *                 nextQuestionIndex:
+ *                   type: integer
+ *                   nullable: true
+ *                 hasNextQuestion:
+ *                   type: boolean
+ *                 nextQuestion:
+ *                   type: object
+ *                   nullable: true
+ *                   properties:
+ *                     questionId:
+ *                       type: string
+ *                     questionIndex:
+ *                       type: integer
+ *                     subject:
+ *                       type: string
+ *                     examType:
+ *                       type: string
+ *                     text:
+ *                       type: string
+ */
 practiceRouter.post('/simulation/submit-answer', protect, submitSimulationAnswer);
 
 practiceRouter.post('/simulation/:simulationId/finish', protect, finishSimulation);
