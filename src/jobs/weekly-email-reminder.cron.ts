@@ -1,6 +1,6 @@
 // src/jobs/weekly-email-reminder.cron.ts
 import cron from 'node-cron';
-import emailService from '@/modules/email/services/email.service';
+import emailService from '@/shared/services/email.service';
 import { prisma } from '@/shared/config';
 
 // Run every Monday at 9 AM
