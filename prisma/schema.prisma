@@ -436,6 +436,7 @@ model Achievement {
   @@map("achievements")
 }
 
+
 enum AchievementType {
   LESSON_MILESTONE
   STREAK_MILESTONE
