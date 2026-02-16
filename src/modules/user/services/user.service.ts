@@ -6,6 +6,8 @@ import {
   UpdatePreferencesInput,
   ChangePasswordInput,
 } from '../interfaces/user.interfaces';
+import emailService from '@/shared/services/email.service';
+
 
 class UserService {
   async getProfile(userId: string) {
@@ -247,8 +249,6 @@ class UserService {
       },
     });
 
-    console.log(deleteData, "deleted data analytics")
-
     console.log('✅ Analytics saved. Now deleting account and related data...');
 
     // Delete all related data
@@ -272,6 +272,8 @@ class UserService {
     ]);
 
     console.log('✅ Account deleted successfully');
+
+    await emailService.sendAccountDeletionEmail(user.email, user.fullName || 'Student');
   }
 
   async getOnboardingStatus(userId: string) {
