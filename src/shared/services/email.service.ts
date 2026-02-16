@@ -556,6 +556,60 @@ class EmailService {
 
     await this.send(email, 'Keep Pushing Forward - You havve Got This!', html);
   }
+  
+  async sendScheduleNotificationToSupport(userEmail: string, userName: string) {
+    const supportEmails = ['support@fe1madesimple.com', 'team@fe1madesimple.com'];
+
+    const html = `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Onboarding Call Request</title>
+</head>
+<body style="margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;background-color:#ffffff;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;padding:40px 20px;">
+    <tr>
+      <td align="center" style="padding-bottom:40px;">
+        <img src="https://res.cloudinary.com/dkrjrfqpy/image/upload/v1768477062/Frame_23_a3ppr0.png" alt="FE-1 Made Simple" width="60" style="display:block;">
+      </td>
+    </tr>
+    <tr>
+      <td style="background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;padding:40px;">
+        <h1 style="margin:0 0 16px;font-size:24px;font-weight:600;color:#111827;">New Onboarding Call Request 📞</h1>
+        
+        <div style="background:#f9fafb;border-radius:8px;padding:24px;margin-bottom:24px;">
+          <div style="margin-bottom:16px;">
+            <div style="font-size:14px;color:#6b7280;margin-bottom:4px;">Student Name</div>
+            <div style="font-size:16px;font-weight:600;color:#111827;">${userName}</div>
+          </div>
+          <div style="margin-bottom:16px;">
+            <div style="font-size:14px;color:#6b7280;margin-bottom:4px;">Student Email</div>
+            <div style="font-size:16px;font-weight:600;color:#111827;">${userEmail}</div>
+          </div>
+          <div>
+            <div style="font-size:14px;color:#6b7280;margin-bottom:4px;">Requested Date</div>
+            <div style="font-size:16px;font-weight:600;color:#111827;">${new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</div>
+          </div>
+        </div>
+        
+        <p style="margin:0;font-size:14px;line-height:20px;color:#6b7280;">Please schedule a 15-minute onboarding call with this student within 24 hours.</p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" style="padding-top:32px;">
+        <p style="margin:0;font-size:14px;color:#9ca3af;">© 2026 FE-1 Made Simple. All rights reserved.</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+
+    for (const email of supportEmails) {
+      await this.send(email, `New Onboarding Call Request - ${userName}`, html);
+    }
+  }
 }
 
 export default new EmailService();
