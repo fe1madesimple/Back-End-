@@ -146,6 +146,38 @@ class AchievementService {
     }
     return false;
   }
+
+  private async checkStreakMilestone(userId: string, condition: any): Promise<boolean> {
+    if (condition.streak) {
+      const user = await prisma.user.findUnique({
+        where: { id: userId },
+        select: { currentStreak: true },
+      });
+      return (user?.currentStreak || 0) >= condition.streak;
+    }
+    if (condition.weekendStudy) {
+      const sessions = await prisma.dailyStudySession.findMany({
+        where: { userId },
+        orderBy: { date: 'desc' },
+        take: 7,
+      });
+      const weekend = sessions.filter((s) => {
+        const day = new Date(s.date).getDay();
+        return day === 0 || day === 6;
+      });
+      return weekend.length >= 2;
+    }
+    if (condition.studyBefore || condition.studyAfter) {
+      const sessions = await prisma.dailyStudySession.findMany({
+        where: { userId, currentSessionStart: { not: null } },
+      });
+      return sessions.some((s) => {
+        const hour = s.currentSessionStart!.getHours();
+        return condition.studyBefore ? hour < condition.studyBefore : hour >= condition.studyAfter;
+      });
+    }
+    return false;
+  }
 }
 
 export default new AchievementService();
