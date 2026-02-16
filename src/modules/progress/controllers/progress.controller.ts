@@ -61,8 +61,6 @@ export const getSimpleDashboard = asyncHandler(async (req: Request, res: Respons
 });
 
 
-
-
 export const getStudyOverview = asyncHandler(async (req: Request, res: Response) => {
   const userId = req.user!.user.id;
   const overview = await progressService.getStudyOverview(userId);

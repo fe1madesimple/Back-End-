@@ -23,6 +23,7 @@ import studySessionRouter from './modules/study-sessions/routes/study-sessions.r
 import podCastRouter from './modules/podcasts/routes/podcast.routes';
 
 import subscriptionRouter from './modules/subscription/routes/subscription.routes';
+import supportRouter from './modules/support/route/support.route';
 import { config } from 'dotenv';
 import { configureGoogleStrategy } from './modules/auth/strategies/google.strategy';
 import passport from 'passport';
@@ -198,6 +199,7 @@ const createApp = (): Application => {
   app.use('/api/v1/modules', moduleRouter);
   app.use('/api/v1/playlists', playListRouter);
   app.use('/api/v1/cases', caseRouter);
+  app.use('/api/v1/suport', supportRouter);
 
   app.use(notFoundHandler);
   app.use(errorHandler);
