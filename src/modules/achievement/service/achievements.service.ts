@@ -8,6 +8,14 @@ class AchievementService {
       orderBy: [{ type: 'asc' }, { createdAt: 'asc' }],
     });
   }
+
+  async getUserAchievements(userId: string) {
+    return await prisma.userAchievement.findMany({
+      where: { userId },
+      include: { achievement: true },
+      orderBy: { unlockedAt: 'desc' },
+    });
+  }
 }
 
 export default new AchievementService();
