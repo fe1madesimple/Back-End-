@@ -776,6 +776,95 @@ practiceRouter.post('/simulation/:simulationId/fail', protect, validate(failSimu
 
 
 
+/**
+ * @swagger
+ * /api/v1/practice/simulation/{simulationId}/question/{questionId}:
+ *   get:
+ *     summary: Get a simulation question
+ *     tags: [Simulation]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Returns the question with submission status and next question navigation. Automatically ends the previous question timer and creates a new one for the current question.
+ *     parameters:
+ *       - in: path
+ *         name: simulationId
+ *         required: true
+ *         schema:
+ *           type: string
+ *           example: cmkrsa95u0000vqm8ezas0326
+ *       - in: path
+ *         name: questionId
+ *         required: true
+ *         schema:
+ *           type: string
+ *           example: cmlm1u3320004vq3g7p5fjyze
+ *       - in: query
+ *         name: questionIndex
+ *         required: true
+ *         schema:
+ *           type: integer
+ *           example: 1
+ *     responses:
+ *       200:
+ *         description: Question retrieved successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 simulationId:
+ *                   type: string
+ *                   example: cmkrsa95u0000vqm8ezas0326
+ *                 currentQuestionIndex:
+ *                   type: integer
+ *                   example: 1
+ *                 totalQuestions:
+ *                   type: integer
+ *                   example: 5
+ *                 questionId:
+ *                   type: string
+ *                   example: cmlm233it000bvqpk3o15pewr
+ *                 subject:
+ *                   type: string
+ *                   example: Contract Law
+ *                 examType:
+ *                   type: string
+ *                   example: Essay
+ *                 text:
+ *                   type: string
+ *                   example: Discuss the doctrine of consideration...
+ *                 userAnswer:
+ *                   type: string
+ *                   nullable: true
+ *                   example: null
+ *                 isSubmitted:
+ *                   type: boolean
+ *                   example: false
+ *                 timeTakenSeconds:
+ *                   type: integer
+ *                   nullable: true
+ *                   example: null
+ *                 canEdit:
+ *                   type: boolean
+ *                   example: true
+ *                 nextQuestionId:
+ *                   type: string
+ *                   nullable: true
+ *                   example: cmlm2312o0001vqpko80ljp7j
+ *                   description: Null when this is the last question.
+ *                 isLastQuestion:
+ *                   type: boolean
+ *                   example: false
+ *                   description: True when this is the final question in the simulation.
+ *                 timerId:
+ *                   type: string
+ *                   example: cmkrsa95u0002vqm8ezas0328
+ *                   description: Timer ID for this question. Pass this to the submit endpoint.
+ *       400:
+ *         description: Simulation created before question tracking was added. Start a new simulation.
+ *       404:
+ *         description: Simulation or question not found
+ */
 practiceRouter.get(
   '/simulation/:simulationId/question/:questionId',
   protect,
