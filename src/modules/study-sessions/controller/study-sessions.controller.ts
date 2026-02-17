@@ -24,3 +24,12 @@ export const endSession = asyncHandler(async (req: Request, res: Response) => {
 
   sendSuccess(res, 'Study session ended');
 });
+
+export const pingSession = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { sessionId } = req.params;
+
+  if (!sessionId) throw new AppError("Session id id needed")
+  await studySessionsService.pingSession(userId, sessionId);
+  sendSuccess(res, 'Ping recorded', null);
+});
