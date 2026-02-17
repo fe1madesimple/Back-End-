@@ -60,3 +60,13 @@ export const getNextQuestionSchema = z.object({
     currentIndex: z.number().int().min(0).max(4),
   }),
 });
+
+export const submitEssaySchema = z.object({
+  body: z.object({
+    questionId: z.string().min(1, 'Question ID is required'),
+    answerText: z.string().min(50, 'Answer must be at least 50 characters'),
+    timerId: z.string().min(1, 'Timer ID is required'),
+    currentQuestionIndex: z.number().int().min(0).max(4),
+    parentQuestionId: z.string().min(1, 'Parent question ID is required'),
+  }),
+});
