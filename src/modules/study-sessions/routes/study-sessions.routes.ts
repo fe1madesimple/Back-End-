@@ -2,7 +2,7 @@
 
 import { Router } from 'express';
 import { protect } from '@/shared/middleware/auth.middleware';
-import {startSession, endSession} from '../controller/study-sessions.controller';
+import {startSession, endSession, pingSession} from '../controller/study-sessions.controller';
 
 const studySessionRouter = Router();
 
@@ -39,6 +39,9 @@ const studySessionRouter = Router();
  *                       example: "Session in progress"
  */
 studySessionRouter.post('/start', protect, startSession);
+
+
+studySessionRouter.post('/:sessionId/ping', protect, pingSession);
 
 
 /**

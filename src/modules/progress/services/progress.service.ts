@@ -6,7 +6,7 @@ import {
   WeeklySummaryResponse,
   ModuleStatsResponse,
   SimpleDashboardResponse,
-  StudyOverviewResponse
+  StudyOverviewResponse,
 } from '../interfaces/progress.interface';
 import { NotFoundError } from '@/shared/utils';
 
@@ -46,8 +46,6 @@ function getNextExamDate(): Date {
 }
 
 class ProgressService {
- 
-
   private async getWeeklyStats(userId: string) {
     const oneWeekAgo = new Date();
     oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
@@ -1134,6 +1132,10 @@ class ProgressService {
           select: { todayTotalSeconds: true },
         });
 
+        console.log(
+          `📅 Date: ${dateStr}, Day: ${['S', 'M', 'T', 'W', 'T', 'F', 'S'][date.getDay()]}, Seconds: ${daySession?.todayTotalSeconds || 0}`
+        );
+
         return {
           day: ['S', 'M', 'T', 'W', 'T', 'F', 'S'][date.getDay()]!,
           hasActivity: (daySession?.todayTotalSeconds || 0) > 0,
@@ -1141,15 +1143,22 @@ class ProgressService {
       })
     );
 
+    console.log('\n🔥 CURRENT STREAK CALCULATION (last 7 days only):');
+    console.log('weekCalendar:', JSON.stringify(weekCalendar, null, 2));
+
     let currentStreak = 0;
     for (let i = weekCalendar.length - 1; i >= 0; i--) {
       const day = weekCalendar[i];
+      console.log(`Checking index ${i}: day=${day?.day}, hasActivity=${day?.hasActivity}`);
       if (day && day.hasActivity) {
         currentStreak++;
+        console.log(`✅ Streak incremented to ${currentStreak}`);
       } else {
+        console.log(`❌ No activity, breaking streak at ${currentStreak}`);
         break;
       }
     }
+    console.log(`\n🎯 Final Current Streak: ${currentStreak}\n`);
 
     const allSessions = await prisma.dailyStudySession.findMany({
       where: {
@@ -1437,33 +1446,85 @@ class ProgressService {
           )
         : 0;
 
-   
     const practiceAttempts = await prisma.essayAttempt.count({
       where: { userId },
     });
 
-    
     const allSessions = await prisma.dailyStudySession.findMany({
       where: { userId, todayTotalSeconds: { gt: 0 } },
       select: { date: true },
       orderBy: { date: 'desc' },
     });
 
+    console.log('\n🔥 ALL SESSIONS WITH ACTIVITY:');
+    allSessions.forEach((s) => console.log(`  ${s.date}`));
+
+    // Calculate CURRENT streak (backwards from today)
     let currentStreak = 0;
     let expectedDate = new Date();
     expectedDate.setHours(0, 0, 0, 0);
+
+    console.log(
+      `\n📍 CURRENT STREAK - Starting from today: ${expectedDate.toISOString().split('T')[0]}`
+    );
 
     for (const session of allSessions) {
       const sessionDate = new Date(session.date);
       sessionDate.setHours(0, 0, 0, 0);
 
+      console.log(
+        `  Checking: ${session.date} vs Expected: ${expectedDate.toISOString().split('T')[0]}`
+      );
+
       if (sessionDate.getTime() === expectedDate.getTime()) {
         currentStreak++;
+        console.log(`    ✅ Match! Streak = ${currentStreak}`);
         expectedDate.setDate(expectedDate.getDate() - 1);
       } else {
+        console.log(`    ❌ Gap detected, breaking at streak = ${currentStreak}`);
         break;
       }
     }
+
+    // Calculate LONGEST streak (all time)
+    const allSessionsAsc = await prisma.dailyStudySession.findMany({
+      where: { userId, todayTotalSeconds: { gt: 0 } },
+      select: { date: true },
+      orderBy: { date: 'asc' },
+    });
+
+    let longestStreak = 0;
+    let tempStreak = 0;
+
+    console.log(`\n📊 LONGEST STREAK - Scanning all ${allSessionsAsc.length} sessions`);
+
+    for (let i = 0; i < allSessionsAsc.length; i++) {
+      const currentSession = allSessionsAsc[i];
+      const nextSession = allSessionsAsc[i + 1];
+
+      if (!currentSession) continue;
+
+      tempStreak++;
+
+      if (nextSession) {
+        const current = new Date(currentSession.date);
+        const next = new Date(nextSession.date);
+        const dayDiff = Math.floor((next.getTime() - current.getTime()) / (1000 * 60 * 60 * 24));
+
+        if (dayDiff > 1) {
+          console.log(
+            `  Gap found between ${currentSession.date} and ${nextSession.date} (${dayDiff} days apart)`
+          );
+          longestStreak = Math.max(longestStreak, tempStreak);
+          tempStreak = 0;
+        }
+      }
+    }
+    
+    longestStreak = Math.max(longestStreak, tempStreak);
+
+    console.log(`\n🎯 Final Current Streak: ${currentStreak}`);
+    console.log(`🏆 Final Longest Streak: ${longestStreak}\n`);
 
     // Week summary text
     const weekSummary = `You've studied ${hoursThisWeek} hours this week and completed ${lessonsCompletedThisWeek} modules across ${subjectsEnrolled} subjects.`;
@@ -1488,7 +1549,5 @@ class ProgressService {
     };
   }
 }
-
-
 
 export default new ProgressService();
