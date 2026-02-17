@@ -32,6 +32,7 @@ import {
   failSimulationSchema,
   submitEssaySchema,
   submitSimulationAnswerSchema,
+  getAttemptDetailsSchema,
 } from '../validators/practise.validators';
 
 /**
@@ -871,7 +872,7 @@ practiceRouter.get(
  *                 hasPreviousQuestion:
  *                   type: boolean
  */
-practiceRouter.get('/attempt/:questionId/:parentQuestionId', protect, getAttemptDetails);
+practiceRouter.get('/attempt/:questionId/:parentQuestionId', protect,validate(getAttemptDetailsSchema), getAttemptDetails);
 
 /**
  * @swagger
