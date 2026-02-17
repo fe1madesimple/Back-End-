@@ -53,3 +53,10 @@ export const failSimulationSchema = z.object({
     reason: z.string().min(1, 'Reason is required'),
   }),
 });
+
+export const getNextQuestionSchema = z.object({
+  body: z.object({
+    parentQuestionId: z.string().min(1, 'Parent question ID is required'),
+    currentIndex: z.number().int().min(0).max(4),
+  }),
+});
