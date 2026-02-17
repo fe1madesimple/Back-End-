@@ -774,4 +774,29 @@ userRouter.put('/password', protect, validate(changePasswordSchema), changePassw
  */
 userRouter.delete('/account', protect, validate(deleteAccountSchema), deleteAccount);
 
+
+/**
+ * @swagger
+ * /api/v1/users/export-data:
+ *   get:
+ *     summary: Export user progress data as PDF
+ *     tags: [Users]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Generates a comprehensive PDF report of the user's study progress including stats, essay attempts, simulations, achievements, and saved cases.
+ *     responses:
+ *       200:
+ *         description: PDF report generated successfully
+ *         content:
+ *           application/pdf:
+ *             schema:
+ *               type: string
+ *               format: binary
+ *       401:
+ *         description: Unauthorized
+ *       404:
+ *         description: User not found
+ */
+userRouter.get('/export-data', protect, exportUserData);
+
 export default userRouter
