@@ -2,7 +2,6 @@ import { prisma } from '@/shared/config';
 import { NotFoundError, BadRequestError } from '@/shared/utils';
 import {
   FailSimulationResponse,
-  StartSimulationResponse,
   SubmitSimulationAnswerInput,
   SubmitSimulationAnswerResponse,
   FinishSimulationResponse,
@@ -187,6 +186,13 @@ class SimulationService {
       throw new NotFoundError('Simulation not found');
     }
 
+    const questionIds: string[] = simulation.questionIds ?? [];
+    if (questionIds.length === 0) {
+      throw new BadRequestError(
+        'This simulation was created before question tracking was added. Please start a new simulation.'
+      );
+    }
+
     const question = await prisma.questionSet.findUnique({
       where: { id: questionId },
     });
@@ -203,13 +209,50 @@ class SimulationService {
       },
     });
 
-    // Derive next question from saved questionIds
-    const questionIds: string[] = simulation.questionIds;
+    // End timer of previous question if it exists and is still running
+    if (questionIndex > 0) {
+      const previousQuestionId = questionIds[questionIndex - 1];
+      if (previousQuestionId) {
+        await prisma.questionTimer.updateMany({
+          where: {
+            userId,
+            questionId: previousQuestionId,
+            endedAt: null,
+          },
+          data: { endedAt: new Date() },
+        });
+      }
+    }
+
+    // Create a new timer for the current question
+    // Only create if no timer exists yet for this question (avoid duplicates on re-visit)
+    const existingTimer = await prisma.questionTimer.findFirst({
+      where: {
+        userId,
+        questionId,
+      },
+    });
+
+    let timerId: string;
+
+    if (existingTimer) {
+      timerId = existingTimer.id;
+    } else {
+      const newTimer = await prisma.questionTimer.create({
+        data: {
+          userId,
+          questionId,
+        },
+      });
+      timerId = newTimer.id;
+    }
+
     const nextIndex = questionIndex + 1;
     const isLastQuestion = nextIndex >= questionIds.length;
     const nextQuestionId = isLastQuestion ? null : (questionIds[nextIndex] ?? null);
 
     return {
+      simulationId: simulation.id,
       currentQuestionIndex: questionIndex,
       totalQuestions: questionIds.length,
       questionId: question.id,
@@ -222,7 +265,7 @@ class SimulationService {
       canEdit: !attempt,
       nextQuestionId,
       isLastQuestion,
-      simulationId: simulation.id,
+      timerId,
     };
   }
 
