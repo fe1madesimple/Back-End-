@@ -173,3 +173,24 @@ export const failSimulation = asyncHandler(async (req: Request, res: Response) =
   const result = await simulationService.failSimulation(userId, simulationId, reason);
   sendSuccess(res, 'Simulation failed', result);
 });
+
+// src/modules/practice/controllers/practice.controller.ts
+
+export const getSingleAttempt = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { attemptId } = req.params;
+
+  if (!attemptId) throw new AppError("attempt id is needed")
+  
+  const attempt = await practiseService.getSingleAttempt(userId, attemptId);
+  sendSuccess(res, 'Attempt retrieved', attempt);
+});
+
+export const getAllEssayAttempts = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const page = req.query.page ? Number(req.query.page) : 1;
+  const limit = req.query.limit ? Number(req.query.limit) : 20;
+  
+  const attempts = await practiseService.getAllEssayAttempts(userId, page, limit);
+  sendSuccess(res, 'Essay attempts retrieved', attempts);
+});
