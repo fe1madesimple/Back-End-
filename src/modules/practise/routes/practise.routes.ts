@@ -17,15 +17,22 @@ import {
   finishSimulation,
   failSimulation,
   getSingleAttempt,
-  getAllEssayAttempts
-
+  getAllEssayAttempts,
 } from '../controller/practise.controller';
 import { protect } from '@/shared/middleware/auth.middleware';
 const practiceRouter = Router();
 import { validate } from '@/shared/middleware/validation';
-import { pastQuestionsQuerySchema } from '../validators/practise.validators';
-
-
+import {
+  pastQuestionsQuerySchema,
+  getSimulationQuestionSchema,
+  getNextQuestionSchema,
+  startPracticeSchema,
+  initiateStartPracticeSchema,
+  finishSimulationSchema,
+  failSimulationSchema,
+  submitEssaySchema,
+  submitSimulationAnswerSchema,
+} from '../validators/practise.validators';
 
 /**
  * @swagger
@@ -218,7 +225,6 @@ practiceRouter.get(
  */
 practiceRouter.get('/mixed-challenge', protect, getMixedChallenge);
 
-
 /**
  * @swagger
  * /api/v1/practice/quick-quiz:
@@ -250,7 +256,6 @@ practiceRouter.get('/mixed-challenge', protect, getMixedChallenge);
  */
 practiceRouter.get('/quick-quiz', protect, getQuickQuiz);
 
-
 /**
  * @swagger
  * /api/v1/practice/quiz-results:
@@ -275,8 +280,6 @@ practiceRouter.get('/quick-quiz', protect, getQuickQuiz);
  *         description: Quiz results retrieved
  */
 practiceRouter.post('/quiz-results', protect, getQuizResults);
-
-
 
 /**
  * @swagger
@@ -321,10 +324,73 @@ practiceRouter.post('/quiz-results', protect, getQuizResults);
  *                 averageAttemptTimeSeconds:
  *                   type: integer
  */
-practiceRouter.post('/initiate-start-question', protect, initiateStartPractice);
+practiceRouter.post('/initiate-start-question', protect, validate(initiateStartPracticeSchema),  initiateStartPractice);
 
-
-practiceRouter.post('/start-question', protect, startPractice);
+/**
+ * @swagger
+ * /api/v1/practice/start-question:
+ *   post:
+ *     summary: Start practice question
+ *     tags: [Practice]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Starts a practice session for a question set. If timer already exists, returns time elapsed.
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - parentQuestionId
+ *             properties:
+ *               parentQuestionId:
+ *                 type: string
+ *     responses:
+ *       201:
+ *         description: Practice started or already in progress
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                 data:
+ *                   oneOf:
+ *                     - type: object
+ *                       description: Already started
+ *                       properties:
+ *                         isStarted:
+ *                           type: boolean
+ *                         timeAgo:
+ *                           type: integer
+ *                           description: Seconds elapsed since timer started
+ *                     - type: object
+ *                       description: Newly started
+ *                       properties:
+ *                         timerId:
+ *                           type: string
+ *                         currentQuestionIndex:
+ *                           type: integer
+ *                         totalQuestions:
+ *                           type: integer
+ *                         questionId:
+ *                           type: string
+ *                         subject:
+ *                           type: string
+ *                         examType:
+ *                           type: string
+ *                         text:
+ *                           type: string
+ *                         averageAttemptTimeSeconds:
+ *                           type: integer
+ *                         parentQuestionId:
+ *                           type: string
+ *       404:
+ *         description: Question set not found
+ */
+practiceRouter.post('/start-question', protect, validate(startPracticeSchema), startPractice);
 
 
 /**
@@ -397,7 +463,7 @@ practiceRouter.post('/start-question', protect, startPractice);
  *                 hasNextQuestion:
  *                   type: boolean
  */
-practiceRouter.post('/submit', protect, submitEssay);
+practiceRouter.post('/submit', protect, validate(submitEssaySchema), submitEssay);
 
 practiceRouter.get('/attempts', protect, getAllEssayAttempts);
 
@@ -446,10 +512,7 @@ practiceRouter.get('/attempts', protect, getAllEssayAttempts);
  *                 averageAttemptTimeSeconds:
  *                   type: integer
  */
-practiceRouter.post('/next-question', protect, getNextQuestion);
-
-
-
+practiceRouter.post('/next-question', protect, validate(getNextQuestionSchema), getNextQuestion);
 
 /**
  * @swagger
@@ -492,8 +555,6 @@ practiceRouter.post('/next-question', protect, getNextQuestion);
  *                         type: string
  */
 practiceRouter.post('/simulation/start', protect, startSimulation);
-
-
 
 /**
  * @swagger
@@ -563,12 +624,7 @@ practiceRouter.post('/simulation/start', protect, startSimulation);
  *                     text:
  *                       type: string
  */
-practiceRouter.post('/simulation/submit-answer', protect, submitSimulationAnswer);
-
-   
-
-
-
+practiceRouter.post('/simulation/submit-answer', protect, validate(submitSimulationAnswerSchema), submitSimulationAnswer);
 
 /**
  * @swagger
@@ -639,9 +695,7 @@ practiceRouter.post('/simulation/submit-answer', protect, submitSimulationAnswer
  *                       sampleAnswer:
  *                         type: string
  */
-practiceRouter.post('/simulation/:simulationId/finish', protect, finishSimulation);
-
-
+practiceRouter.post('/simulation/:simulationId/finish', protect, validate(finishSimulationSchema),finishSimulation);
 
 /**
  * @swagger
@@ -682,9 +736,7 @@ practiceRouter.post('/simulation/:simulationId/finish', protect, finishSimulatio
  *                 message:
  *                   type: string
  */
-practiceRouter.post('/simulation/:simulationId/fail', protect, failSimulation);
-
-
+practiceRouter.post('/simulation/:simulationId/fail', protect, validate(failSimulationSchema), failSimulation);
 
 /**
  * @swagger
@@ -745,9 +797,9 @@ practiceRouter.post('/simulation/:simulationId/fail', protect, failSimulation);
 practiceRouter.get(
   '/simulation/:simulationId/question/:questionId',
   protect,
+  validate(getSimulationQuestionSchema),
   getSimulationQuestion
 );
-
 
 /**
  * @swagger
@@ -1098,7 +1150,5 @@ practiceRouter.get('/topic-challenge/:subjectId', protect, getTopicChallenge);
 practiceRouter.get('/past-questions/:id', protect, getPastQuestionById);
 
 practiceRouter.get('/attempts/:attemptId', protect, getSingleAttempt);
-
-
 
 export default practiceRouter;

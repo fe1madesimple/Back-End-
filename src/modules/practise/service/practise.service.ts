@@ -484,6 +484,7 @@ class Practise {
       examType: firstQuestion.examType,
       text: firstQuestion.text,
       averageAttemptTimeSeconds: firstQuestion.averageAttemptSeconds,
+      parentQuestionId: parentQuestion.id
     };
   }
 
@@ -535,6 +536,7 @@ class Practise {
       examType: firstQuestion.examType,
       text: firstQuestion.text,
       averageAttemptTimeSeconds: firstQuestion.averageAttemptSeconds,
+      parentQuestionId: parentQuestion.id
     };
   }
 

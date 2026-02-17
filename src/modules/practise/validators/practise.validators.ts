@@ -39,6 +39,18 @@ export const submitSimulationAnswerSchema = z.object({
   }),
 });
 
+export const startPracticeSchema = z.object({
+  body: z.object({
+    parentQuestionId: z.string().min(1, 'parent questionId is required'),
+  }),
+});
+
+export const initiateStartPracticeSchema = z.object({
+  body: z.object({
+    parentQuestionId: z.string().min(1, 'parent questionId is required'),
+  }),
+});
+
 export const finishSimulationSchema = z.object({
   params: z.object({
     simulationId: z.string().min(1, 'Simulation ID is required'),
@@ -78,5 +90,12 @@ export const getSimulationQuestionSchema = z.object({
   }),
   query: z.object({
     questionIndex: z.string().regex(/^\d+$/, 'Must be a number'),
+  }),
+});
+
+export const getAttemptDetailsSchema = z.object({
+  params: z.object({
+    questionId: z.string().min(1, 'Question ID is required'),
+    parentQuestionId: z.string().min(1, 'Parent question ID is required'),
   }),
 });
