@@ -12,7 +12,6 @@ export interface MixedPracticeResponse {
   modulesIncluded: number;
 }
 
-
 // src/modules/practice/interfaces/practice.interface.ts
 
 export interface PastQuestionsQuery {
@@ -57,7 +56,7 @@ export interface QuestionDetail {
   description: string;
   text: string;
   order: number;
-  averageTime: number
+  averageTime: number;
 }
 
 export interface PastQuestionDetailResponse {
@@ -139,7 +138,6 @@ export interface AttemptDetailsResponse {
   hasPreviousQuestion: boolean;
 }
 
-
 export interface QuickQuizResponse {
   sessionId: string;
   questions: Array<{
@@ -152,7 +150,6 @@ export interface QuickQuizResponse {
   }>;
   totalAvailable: number;
 }
-
 
 export interface MixedChallengeResponse {
   sessionId: string;
@@ -172,7 +169,6 @@ export interface MCQAttemptInput {
   sessionId: string;
   timeTaken?: number;
 }
-
 
 export interface TopicChallengeResponse {
   sessionId: string;
@@ -202,13 +198,10 @@ export interface QuizResultsResponse {
   } | null;
   performance: {
     accuracyRate: number;
-    avgTimerPerQuestion:  number;
+    avgTimerPerQuestion: number;
     quizStreak: number;
-  }
+  };
 }
-
-
-
 
 // simulation interface
 
@@ -278,7 +271,7 @@ export interface FinishSimulationResponse {
     subject: any;
     userAnswer: string;
     timeTakenSeconds: number;
-    aiScore: number;   
+    aiScore: number;
     band: string;
     feedback: any;
     strengths: string[];
@@ -291,4 +284,22 @@ export interface FailSimulationResponse {
   failed: true;
   reason: string;
   message: string;
+}
+
+export interface EssayAttemptsListResponse {
+  attempts: Array<{
+    id: string;
+    questionId: string;
+    subject: string;
+    aiScore: number;
+    band: string;
+    timeTakenSeconds: number;
+    createdAt: Date;
+  }>;
+  pagination: {
+    total: number;
+    page: number;
+    limit: number;
+    totalPages: number;
+  };
 }
