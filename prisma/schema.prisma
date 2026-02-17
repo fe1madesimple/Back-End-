@@ -815,43 +815,38 @@ enum AssetType {
   IMAGE
 }
 
-model Question {
-  id       String  @id @default(cuid())
-  moduleId String?
-  module   Module? @relation(fields: [moduleId], references: [id], onDelete: SetNull)
+model EssayAttempt {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  questionId String
+  question   QuestionSet @relation(fields: [questionId], references: [id], onDelete: Cascade) // ← CHANGED
 
-  type                      QuestionType
-  description               String?      @db.Text // Card preview
-  text                      String       @db.Text // Main question text
-  options                   Json?
-  averageAttemptTimeSeconds Int          @default(1800)
-  correctAnswer             String?
-  explanation               String?      @db.Text
-  points                    Int          @default(1)
+  answerText       String @db.Text
+  timeTakenSeconds Int
+  wordCount        Int
 
-  year     Int?
-  subject  String?
-  examType String?
+  aiScore      Int?
+  band         String?
+  feedback     Json?
+  strengths    String[]
+  improvements String[]
 
-  order       Int     @default(0)
-  isPublished Boolean @default(true)
+  provider   String?
+  model      String?
+  tokensUsed Int?
 
-  // Relations
-  questionSets  QuestionSet[] // ← 5 questions under this card
-  timedSessions TimedSession[]
-  quizAttempts  QuizAttempt[]
-  aiEvaluations AIEvaluation[]
-  attempts      QuestionAttempt[]
-  essayAttempts EssayAttempt[]
+  isSimulation Boolean     @default(false)
+  simulationId String?
+  simulation   Simulation? @relation(fields: [simulationId], references: [id], onDelete: Cascade)
 
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
 
-  @@index([moduleId])
-  @@index([type])
-  @@index([subject])
-  @@index([year])
-  @@map("questions")
+  @@index([userId])
+  @@index([questionId])
+  @@index([simulationId])
+  @@index([userId, questionId])
+  @@map("essay_attempts")
 }
 
 model QuestionSet {
@@ -869,6 +864,8 @@ model QuestionSet {
   order                 Int
   averageAttemptSeconds Int          @default(1800)
 
+  essayAttempts EssayAttempt[] // ← ADD THIS
+
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
@@ -876,6 +873,43 @@ model QuestionSet {
   @@index([subject])
   @@index([year])
   @@map("question_sets")
+}
+
+model Question {
+  id       String  @id @default(cuid())
+  moduleId String?
+  module   Module? @relation(fields: [moduleId], references: [id], onDelete: SetNull)
+
+  type                      QuestionType
+  description               String?      @db.Text
+  text                      String       @db.Text
+  options                   Json?
+  averageAttemptTimeSeconds Int          @default(1800)
+  correctAnswer             String?
+  explanation               String?      @db.Text
+  points                    Int          @default(1)
+
+  year     Int?
+  subject  String?
+  examType String?
+
+  order       Int     @default(0)
+  isPublished Boolean @default(true)
+
+  questionSets  QuestionSet[]
+  timedSessions TimedSession[]
+  quizAttempts  QuizAttempt[]
+  aiEvaluations AIEvaluation[]
+  attempts      QuestionAttempt[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([moduleId])
+  @@index([type])
+  @@index([subject])
+  @@index([year])
+  @@map("questions")
 }
 
 model Simulation {
@@ -912,39 +946,6 @@ model QuestionTimer {
   @@map("question_timers")
 }
 
-model EssayAttempt {
-  id         String   @id @default(cuid())
-  userId     String
-  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  questionId String
-  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
-
-  answerText       String @db.Text
-  timeTakenSeconds Int
-  wordCount        Int
-
-  aiScore      Int?
-  band         String?
-  feedback     Json?
-  strengths    String[]
-  improvements String[]
-
-  provider   String?
-  model      String?
-  tokensUsed Int?
-
-  isSimulation Boolean     @default(false)
-  simulationId String?
-  simulation   Simulation? @relation(fields: [simulationId], references: [id], onDelete: Cascade)
-
-  createdAt DateTime @default(now())
-
-  @@index([userId])
-  @@index([questionId])
-  @@index([simulationId])
-  @@index([userId, questionId])
-  @@map("essay_attempts")
-}
 
 enum QuestionType {
   MCQ
