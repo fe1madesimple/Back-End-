@@ -70,3 +70,13 @@ export const submitEssaySchema = z.object({
     parentQuestionId: z.string().min(1, 'Parent question ID is required'),
   }),
 });
+
+export const getSimulationQuestionSchema = z.object({
+  params: z.object({
+    simulationId: z.string().min(1, 'Simulation ID is required'),
+    questionId: z.string().min(1, 'Question ID is required'),
+  }),
+  query: z.object({
+    questionIndex: z.string().regex(/^\d+$/, 'Must be a number'),
+  }),
+});
