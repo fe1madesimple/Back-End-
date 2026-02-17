@@ -327,7 +327,6 @@ practiceRouter.post('/initiate-start-question', protect, initiateStartPractice);
 practiceRouter.post('/start-question', protect, startPractice);
 
 
-
 /**
  * @swagger
  * /api/v1/practice/submit:
@@ -566,7 +565,7 @@ practiceRouter.post('/simulation/start', protect, startSimulation);
  */
 practiceRouter.post('/simulation/submit-answer', protect, submitSimulationAnswer);
 
-
+   
 
 
 
