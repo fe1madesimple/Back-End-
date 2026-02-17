@@ -15,7 +15,9 @@ import {
   submitSimulationAnswer,
   getSimulationQuestion,
   finishSimulation,
-  failSimulation
+  failSimulation,
+  getSingleAttempt,
+  getAllEssayAttempts
 
 } from '../controller/practise.controller';
 import { protect } from '@/shared/middleware/auth.middleware';
@@ -398,7 +400,7 @@ practiceRouter.post('/start-question', protect, startPractice);
  */
 practiceRouter.post('/submit', protect, submitEssay);
 
-
+practiceRouter.get('/attempts', protect, getAllEssayAttempts);
 
 /**
  * @swagger
@@ -1095,6 +1097,9 @@ practiceRouter.get('/topic-challenge/:subjectId', protect, getTopicChallenge);
  *         description: Question is not a past question (no year assigned)
  */
 practiceRouter.get('/past-questions/:id', protect, getPastQuestionById);
+
+practiceRouter.get('/attempts/:attemptId', protect, getSingleAttempt);
+
 
 
 export default practiceRouter;
