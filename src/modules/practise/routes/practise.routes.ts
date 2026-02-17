@@ -93,7 +93,7 @@ import { pastQuestionsQuerySchema } from '../validators/practise.validators';
  *                       items:
  *                         type: object
  *                         properties:
- *                           id:
+ *                           parentid:
  *                             type: string
  *                             example: clx789ghi
  *                           text:
@@ -108,6 +108,8 @@ import { pastQuestionsQuerySchema } from '../validators/practise.validators';
  *                           examType:
  *                             type: string
  *                             example: Essay
+ *                           description:
+ *                             type: string
  *                           order:
  *                             type: integer
  *                             example: 1

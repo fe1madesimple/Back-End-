@@ -6,7 +6,7 @@ import { NotFoundError } from '@/shared/utils';
 import { ScheduleBookingResponse } from '../interface/support.interface';
 
 class SupportService {
-  async scheduleOnboardingCall(userId: string): Promise<ScheduleBookingResponse> {
+  async scheduleOnboardingCall(userId: string): Promise<any> {
     const user = await prisma.user.findUnique({
       where: { id: userId },
       select: { email: true, fullName: true },
@@ -19,7 +19,6 @@ class SupportService {
     await emailService.sendScheduleNotificationToSupport(user.email, user.fullName || 'Student');
 
     return {
-      message: 'Onboarding call request received. Our team will contact you within 24 hours.',
       emailSent: true,
     };
   }

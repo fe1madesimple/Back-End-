@@ -65,7 +65,6 @@ const caseRouter = Router();
 caseRouter.get('/', protect, validate(searchCasesSchema), searchCases);
 
 
-
 /**
  * @swagger
  * /api/v1/cases:
@@ -185,7 +184,6 @@ caseRouter.get('/saved', protect, validate(getSavedCasesSchema), getSavedCases);
 caseRouter.get('/:id', protect, validate(getCaseDetailsSchema), getCaseDetails);
 
 
-
 /**
  * @swagger
  * /api/v1/cases/{caseId}/toggle-review:
@@ -219,7 +217,6 @@ caseRouter.get('/:id', protect, validate(getCaseDetailsSchema), getCaseDetails);
  *         description: Case not saved
  */
 caseRouter.post('/:caseId/toggle-review', protect, toggleReview);
-
 
 
 /**

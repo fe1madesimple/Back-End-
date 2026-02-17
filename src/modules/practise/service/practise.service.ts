@@ -155,7 +155,7 @@ class Practise {
     };
   }
 
-  async getPastQuestions(query: PastQuestionsQuery): Promise<PastQuestionsListResponse> {
+  async getPastQuestions(query: PastQuestionsQuery): Promise<any> {
     const { search, subject, year, examType, page = 1, limit = 9 } = query;
 
     const where: any = {
@@ -210,7 +210,7 @@ class Practise {
 
     return {
       questions: questions.map((q) => ({
-        id: q.id,
+        parentQuestionId: q.id,
         text: q.text,
         year: q.year!,
         subject: q.subject!,
@@ -477,7 +477,7 @@ class Practise {
 
     return {
       currentQuestionIndex: 0,
-      totalQuestions: parentQuestion.questionSets.length + 5,
+      totalQuestions: parentQuestion.questionSets.length + 1,
       questionId: firstQuestion.id,
       subject: firstQuestion.subject,
       examType: firstQuestion.examType,
