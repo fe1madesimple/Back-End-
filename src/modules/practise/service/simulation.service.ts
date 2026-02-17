@@ -6,12 +6,10 @@ import {
   SubmitSimulationAnswerInput,
   SubmitSimulationAnswerResponse,
   FinishSimulationResponse,
-  GetSimulationQuestionResponse,
 } from '../interface/practise.interface';
 
 class SimulationService {
-  async startSimulation(userId: string): Promise<StartSimulationResponse> {
-    // Get all question sets (parents with 5 children each)
+  async startSimulation(userId: string): Promise<any> {
     const allQuestionSets = await prisma.question.findMany({
       where: {
         type: 'ESSAY',
@@ -28,11 +26,9 @@ class SimulationService {
       throw new BadRequestError('Not enough questions available for simulation');
     }
 
-    // Randomly select 5 question sets
     const shuffled = allQuestionSets.sort(() => Math.random() - 0.5);
     const selectedSets = shuffled.slice(0, 5);
 
-    // Pick first question from each set (which is parent copy)
     const selectedQuestions = selectedSets.map((set, index) => ({
       questionId: set.questionSets[0]!.id,
       questionIndex: index,
@@ -41,19 +37,46 @@ class SimulationService {
       text: set.questionSets[0]!.text,
     }));
 
+    const questionIds = selectedQuestions.map((q) => q.questionId);
+
     // Create simulation record
     const simulation = await prisma.simulation.create({
       data: {
         userId,
         startedAt: new Date(),
+        questionIds,
       },
     });
+
+    // Get first question
+    const firstQuestion = selectedQuestions[0]!;
+
+    // Create timer for first question
+    const timer = await prisma.questionTimer.create({
+      data: {
+        userId,
+        questionId: firstQuestion.questionId,
+      },
+    });
+
+    const nextQuestionId = questionIds[1] ?? null;
 
     return {
       simulationId: simulation.id,
       startedAt: simulation.startedAt,
       totalTimeSeconds: 10800,
-      questions: selectedQuestions,
+      currentQuestionIndex: 0,
+      totalQuestions: questionIds.length,
+      questionId: firstQuestion.questionId,
+      subject: firstQuestion.subject,
+      examType: firstQuestion.examType,
+      text: firstQuestion.text,
+      userAnswer: null,
+      isSubmitted: false,
+      canEdit: true,
+      nextQuestionId,
+      isLastQuestion: questionIds.length === 1,
+      timerId: timer.id,
     };
   }
 
@@ -155,7 +178,7 @@ class SimulationService {
     simulationId: string,
     questionId: string,
     questionIndex: number
-  ): Promise<GetSimulationQuestionResponse> {
+  ): Promise<any> {
     const simulation = await prisma.simulation.findUnique({
       where: { id: simulationId },
     });
@@ -172,7 +195,6 @@ class SimulationService {
       throw new NotFoundError('Question not found');
     }
 
-    // Check if user has submitted this question
     const attempt = await prisma.essayAttempt.findFirst({
       where: {
         userId,
@@ -181,9 +203,15 @@ class SimulationService {
       },
     });
 
+    // Derive next question from saved questionIds
+    const questionIds: string[] = simulation.questionIds;
+    const nextIndex = questionIndex + 1;
+    const isLastQuestion = nextIndex >= questionIds.length;
+    const nextQuestionId = isLastQuestion ? null : (questionIds[nextIndex] ?? null);
+
     return {
       currentQuestionIndex: questionIndex,
-      totalQuestions: 5,
+      totalQuestions: questionIds.length,
       questionId: question.id,
       subject: question.subject,
       examType: question.examType,
@@ -192,6 +220,9 @@ class SimulationService {
       isSubmitted: !!attempt,
       timeTakenSeconds: attempt?.timeTakenSeconds || null,
       canEdit: !attempt,
+      nextQuestionId,
+      isLastQuestion,
+      simulationId: simulation.id,
     };
   }
 

@@ -622,7 +622,7 @@ class Practise {
     parentQuestionId: string,
     currentIndex: number,
     userId: string
-  ): Promise<NextQuestionResponse> {
+  ): Promise<any> {
     const parentQuestion = await prisma.question.findUnique({
       where: { id: parentQuestionId },
       include: {
@@ -661,6 +661,7 @@ class Practise {
       examType: nextQuestion.examType,
       text: nextQuestion.text,
       averageAttemptTimeSeconds: parentQuestion.averageAttemptTimeSeconds,
+      parentQuestionId: parentQuestionId
     };
   }
 

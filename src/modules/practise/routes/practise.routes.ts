@@ -468,6 +468,7 @@ practiceRouter.post('/submit', protect, validate(submitEssaySchema), submitEssay
 
 practiceRouter.get('/attempts', protect, getAllEssayAttempts);
 
+
 /**
  * @swagger
  * /api/v1/practice/next-question:
@@ -514,6 +515,7 @@ practiceRouter.get('/attempts', protect, getAllEssayAttempts);
  *                   type: integer
  */
 practiceRouter.post('/next-question', protect, validate(getNextQuestionSchema), getNextQuestion);
+
 
 /**
  * @swagger
@@ -747,53 +749,82 @@ practiceRouter.post('/simulation/:simulationId/fail', protect, validate(failSimu
  *     tags: [Simulation]
  *     security:
  *       - bearerAuth: []
- *     description: Returns question with submission status.
+ *     description: Returns question with submission status, next question navigation, and simulation context.
  *     parameters:
  *       - in: path
  *         name: simulationId
  *         required: true
  *         schema:
  *           type: string
+ *           example: cmkrsa95u0000vqm8ezas0326
  *       - in: path
  *         name: questionId
  *         required: true
  *         schema:
  *           type: string
+ *           example: cmlm1u3320004vq3g7p5fjyze
  *       - in: query
  *         name: questionIndex
  *         required: true
  *         schema:
  *           type: integer
+ *           example: 0
  *     responses:
  *       200:
- *         description: Question retrieved
+ *         description: Question retrieved successfully
  *         content:
  *           application/json:
  *             schema:
  *               type: object
  *               properties:
+ *                 simulationId:
+ *                   type: string
+ *                   example: cmkrsa95u0000vqm8ezas0326
  *                 currentQuestionIndex:
  *                   type: integer
+ *                   example: 0
  *                 totalQuestions:
  *                   type: integer
+ *                   example: 5
  *                 questionId:
  *                   type: string
+ *                   example: cmlm1u3320004vq3g7p5fjyze
  *                 subject:
  *                   type: string
+ *                   example: Criminal Law
  *                 examType:
  *                   type: string
+ *                   example: Problem
  *                 text:
  *                   type: string
+ *                   example: Dr Murphy, a consultant surgeon...
  *                 userAnswer:
  *                   type: string
  *                   nullable: true
+ *                   example: null
  *                 isSubmitted:
  *                   type: boolean
+ *                   example: false
  *                 timeTakenSeconds:
  *                   type: integer
  *                   nullable: true
+ *                   example: null
  *                 canEdit:
  *                   type: boolean
+ *                   example: true
+ *                 nextQuestionId:
+ *                   type: string
+ *                   nullable: true
+ *                   example: cmlm233it000bvqpk3o15pewr
+ *                   description: ID of the next question. Null if this is the last question.
+ *                 isLastQuestion:
+ *                   type: boolean
+ *                   example: false
+ *                   description: True when this is the final question in the simulation.
+ *       400:
+ *         description: Simulation was created before question tracking was added. Start a new simulation.
+ *       404:
+ *         description: Simulation or question not found
  */
 practiceRouter.get(
   '/simulation/:simulationId/question/:questionId',

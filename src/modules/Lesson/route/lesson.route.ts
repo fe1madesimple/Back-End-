@@ -128,8 +128,8 @@ lessonRouter.get('/modules/:subjectId', protect, getModulesBySubject);
  *                 example: 863
  *                 description: |
  *                   Total video duration in seconds (optional).
- *                   Frontend should send this on first ping.
- *                   Backend will save it for future calculations.
+ *                   Frontend must send this on first ping.
+ *                   Backend will save it for future calculations, if not it lead to an error in usage.
  *     responses:
  *       200:
  *         description: Progress tracked successfully
