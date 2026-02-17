@@ -44,3 +44,12 @@ export const finishSimulationSchema = z.object({
     simulationId: z.string().min(1, 'Simulation ID is required'),
   }),
 });
+
+export const failSimulationSchema = z.object({
+  params: z.object({
+    simulationId: z.string().min(1, 'Simulation ID is required'),
+  }),
+  body: z.object({
+    reason: z.string().min(1, 'Reason is required'),
+  }),
+});
