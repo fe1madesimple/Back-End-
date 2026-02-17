@@ -1,6 +1,7 @@
 import { prisma } from '@/shared/config';
 import { AppError } from '@/shared/utils';
 import { LessonDetailResponse, ModuleListResponse } from '../interface/lesson.interface';
+import achievementsService from '@/modules/achievement/service/achievements.service';
 
 class Lesson {
   // src/modules/content/service/content.service.ts
@@ -22,18 +23,18 @@ class Lesson {
 
     if (videoDuration) {
       if (videoDuration <= 0) {
-        throw new AppError('Invalid video duration'); 
+        throw new AppError('Invalid video duration');
       }
-    } 
+    }
 
-    // Use provided duration (from frontend) or stored duration (from DB) 
+    // Use provided duration (from frontend) or stored duration (from DB)
     const duration = videoDuration || lesson.videoDuration;
 
-    // Calculate completion (90% threshold) 
+    // Calculate completion (90% threshold)
     const completionThreshold = 0.9;
     const isCompleted = duration ? currentTime >= duration * completionThreshold : false;
 
-    // Update lesson progress 
+    // Update lesson progress
     const completedStatus = Boolean(isCompleted);
 
     const updatedProgress = await prisma.userLessonProgress.upsert({
@@ -58,7 +59,6 @@ class Lesson {
     if (isCompleted) {
       await this.recalculateModuleProgress(userId, lesson.moduleId);
     }
-
 
     if (videoDuration && !lesson.videoDuration) {
       await prisma.lesson.update({
@@ -95,7 +95,7 @@ class Lesson {
       (sum, m) => sum + (m.userProgress[0]?.progressPercent || 0),
       0
     );
-    
+
     const progressPercent = totalModules > 0 ? totalProgress / totalModules : 0;
 
     // Calculate total time from ALL lessons in subject
@@ -115,6 +115,10 @@ class Lesson {
 
     if (completedModules === totalModules && totalModules > 0) {
       status = 'COMPLETED';
+
+      achievementsService
+        .checkAllAchievements(userId)
+        .catch((err) => console.error('Achievement check failed:', err));
     } else if (completedModules > 0 || progressPercent > 0) {
       status = 'IN_PROGRESS';
     }

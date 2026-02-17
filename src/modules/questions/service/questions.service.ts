@@ -1,6 +1,7 @@
 import { prisma } from '@/shared/config';
 import { AppError } from '@/shared/utils';
 import { MCQAttemptInput } from '@/modules/practise/interface/practise.interface';
+import achievementsService from '@/modules/achievement/service/achievements.service';
 
 // const anthropic = new Anthropic({
 //   apiKey: process.env.CLAUDE_API_KEY!,
@@ -62,6 +63,10 @@ class Questions {
       },
     });
 
+    achievementsService
+      .checkAllAchievements(userId)
+      .catch((err) => console.error('Achievement check failed:', err));
+
     return {
       attemptId: attempt.id,
       isCorrect,
@@ -70,8 +75,6 @@ class Questions {
       explanation: question.explanation,
     };
   }
-
-
 }
 
 export default new Questions();

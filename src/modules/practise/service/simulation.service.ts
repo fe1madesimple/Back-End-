@@ -3,9 +3,9 @@ import { NotFoundError, BadRequestError } from '@/shared/utils';
 import {
   FailSimulationResponse,
   SubmitSimulationAnswerInput,
-  SubmitSimulationAnswerResponse,
   FinishSimulationResponse,
 } from '../interface/practise.interface';
+import achievementsService from '@/modules/achievement/service/achievements.service';
 
 class SimulationService {
   async startSimulation(userId: string): Promise<any> {
@@ -147,20 +147,10 @@ class SimulationService {
     const hasNextQuestion = allAttempts.length < 5;
     const nextQuestionIndex = hasNextQuestion ? currentQuestionIndex + 1 : null;
 
-    // Get next question if available
-    let nextQuestion = null;
-    if (hasNextQuestion && nextQuestionIndex !== null) {
-      // Frontend should track question order and pass next questionId
-      // For now, return structure for next question
-      nextQuestion = {
-        questionId: '', // Frontend provides this
-        questionIndex: nextQuestionIndex,
-        subject: '',
-        examType: '',
-        text: '',
-      };
-    }
-
+    achievementsService
+      .checkAllAchievements(userId)
+      .catch((err) => console.error('Achievement check failed:', err));
+  
     return {
       attemptId: attempt.id,
       saved: true,
@@ -343,6 +333,10 @@ class SimulationService {
         passed,
       },
     });
+
+    achievementsService
+      .checkAllAchievements(userId)
+      .catch((err) => console.error('Achievement check failed:', err));
 
     return {
       simulationId,

@@ -57,21 +57,6 @@ userRouter.get('/profile', protect, getProfile);
  *       - bearerAuth: []
  *     description: |
  *       Update profile fields: fullName, color, exam date, study goal, focus subjects
- *       
- *       **Frontend usage:**
- *       ```javascript
- *       fetch('/api/v1/users/profile', {
- *         method: 'PUT',
- *         credentials: 'include',
- *         headers: { 'Content-Type': 'application/json' },
- *         body: JSON.stringify({
- *           fullName: 'John babatunde',
- *           targetExamDate: '2025-04-15T00:00:00.000Z',
- *           dailyStudyGoal: 3,
- *           focusSubjects: ['clp_subject_1', 'clp_subject_2']
- *         })
- *       });
- *       ```
  *     requestBody:
  *       content:
  *         application/json:

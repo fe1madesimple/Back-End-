@@ -8,11 +8,11 @@ import {
   QuizResultsResponse,
   TopicChallengeResponse,
   AttemptDetailsResponse,
-  NextQuestionResponse,
   EssayAttemptsListResponse,
   SingleAttemptResponse,
 } from '../interface/practise.interface';
 import { QuickQuizResponse } from '../interface/practise.interface';
+import achievementsService from '@/modules/achievement/service/achievements.service';
 
 class Practise {
   private async updateUserQuizStats(userId: string) {
@@ -484,7 +484,7 @@ class Practise {
       examType: firstQuestion.examType,
       text: firstQuestion.text,
       averageAttemptTimeSeconds: firstQuestion.averageAttemptSeconds,
-      parentQuestionId: parentQuestion.id
+      parentQuestionId: parentQuestion.id,
     };
   }
 
@@ -536,7 +536,7 @@ class Practise {
       examType: firstQuestion.examType,
       text: firstQuestion.text,
       averageAttemptTimeSeconds: firstQuestion.averageAttemptSeconds,
-      parentQuestionId: parentQuestion.id
+      parentQuestionId: parentQuestion.id,
     };
   }
 
@@ -602,6 +602,10 @@ class Practise {
     const nextQuestionIndex = currentQuestionIndex + 1;
     const hasNextQuestion = nextQuestionIndex < totalQuestions;
 
+    achievementsService
+      .checkAllAchievements(userId)
+      .catch((err) => console.error('Achievement check failed:', err));
+
     return {
       attemptId: attempt.id,
       userAnswer: answerText,
@@ -661,7 +665,7 @@ class Practise {
       examType: nextQuestion.examType,
       text: nextQuestion.text,
       averageAttemptTimeSeconds: parentQuestion.averageAttemptTimeSeconds,
-      parentQuestionId: parentQuestionId
+      parentQuestionId: parentQuestionId,
     };
   }
 

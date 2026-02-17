@@ -1,5 +1,5 @@
 import { prisma } from '@/shared/config';
-import { NotFoundError,  ForbiddenError } from '@/shared/utils';
+import { NotFoundError, ForbiddenError } from '@/shared/utils';
 import { StartSessionResponse } from '../interface/study-session.interface';
 
 class StudySessionService {
@@ -70,9 +70,34 @@ class StudySessionService {
       },
     });
   }
+
+  async pingSession(userId: string, sessionId: string): Promise<void> {
+    const session = await prisma.dailyStudySession.findUnique({
+      where: { id: sessionId },
+    });
+
+    if (!session || session.userId !== userId) return;
+    if (!session.currentSessionStart) return; 
+
+    const now = new Date();
+    const secondsSinceStart = Math.floor(
+      (now.getTime() - session.currentSessionStart.getTime()) / 1000
+    );
+
+   
+    const alreadySaved = session.todayTotalSeconds;
+    const lifetimeAlreadySaved = session.lifetimeTotalSeconds;
+
+   
+    await prisma.dailyStudySession.update({
+      where: { id: sessionId },
+      data: {
+        todayTotalSeconds: alreadySaved + secondsSinceStart,
+        lifetimeTotalSeconds: lifetimeAlreadySaved + secondsSinceStart,
+        currentSessionStart: now, 
+      },
+    });
+  }
 }
-
-
-
 
 export default new StudySessionService();
