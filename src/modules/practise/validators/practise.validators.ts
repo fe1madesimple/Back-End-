@@ -38,3 +38,9 @@ export const submitSimulationAnswerSchema = z.object({
     currentQuestionIndex: z.number().int().min(0).max(4),
   }),
 });
+
+export const finishSimulationSchema = z.object({
+  params: z.object({
+    simulationId: z.string().min(1, 'Simulation ID is required'),
+  }),
+});
