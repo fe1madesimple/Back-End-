@@ -53,14 +53,6 @@ export const getOnboardingStatus = asyncHandler(async (req: Request, res: Respon
   return sendSuccess(res, 'onboarding status retrieved', { user });
 });
 
-export const exportUserData = asyncHandler(async (req: Request, res: Response) => {
-  const userId = (req.user?.user as any).id;
-
-  const sanitizedData = await userService.exportUserData(userId);
-
-  sendSuccess(res, 'user data exported successfully', { sanitizedData });
-});
-
 export const completeOnboarding = asyncHandler(async (req: Request, res: Response) => {
   const userId = (req.user?.user as any).id;
   const { focusSubjects, targetExamDate, dailyStudyGoal } = req.body;
@@ -81,4 +73,18 @@ export const skipOnboarding = asyncHandler(async (req: Request, res: Response) =
   const user = await userService.skipOnboarding(userId);
 
   sendSuccess(res, 'Onboarding skipped', { user });
+});
+
+export const exportUserData = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+
+  const pdfBuffer = await userService.exportUserData(userId);
+
+  const filename = `fe1-progress-report-${new Date().toISOString().split('T')[0]}.pdf`;
+
+  res.setHeader('Content-Type', 'application/pdf');
+  res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
+  res.setHeader('Content-Length', pdfBuffer.length);
+
+  res.send(pdfBuffer);
 });
