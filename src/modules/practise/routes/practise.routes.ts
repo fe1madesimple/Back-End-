@@ -517,18 +517,19 @@ practiceRouter.get('/attempts', protect, getAllEssayAttempts);
 practiceRouter.post('/next-question', protect, validate(getNextQuestionSchema), getNextQuestion);
 
 
+
 /**
  * @swagger
  * /api/v1/practice/simulation/start:
  *   post:
- *     summary: Start full simulation
+ *     summary: Start a new simulation
  *     tags: [Simulation]
  *     security:
  *       - bearerAuth: []
- *     description: Creates simulation, picks 5 random questions, starts 3-hour timer.
+ *     description: Creates a new simulation, selects 5 random essay questions, and returns the first question ready to answer.
  *     responses:
- *       201:
- *         description: Simulation started
+ *       200:
+ *         description: Simulation started successfully
  *         content:
  *           application/json:
  *             schema:
@@ -536,26 +537,57 @@ practiceRouter.post('/next-question', protect, validate(getNextQuestionSchema), 
  *               properties:
  *                 simulationId:
  *                   type: string
+ *                   example: cmkrsa95u0000vqm8ezas0326
  *                 startedAt:
  *                   type: string
  *                   format: date-time
+ *                   example: 2026-02-17T14:54:27.006Z
  *                 totalTimeSeconds:
  *                   type: integer
- *                 questions:
- *                   type: array
- *                   items:
- *                     type: object
- *                     properties:
- *                       questionId:
- *                         type: string
- *                       questionIndex:
- *                         type: integer
- *                       subject:
- *                         type: string
- *                       examType:
- *                         type: string
- *                       text:
- *                         type: string
+ *                   example: 10800
+ *                   description: Total allowed time for the simulation (3 hours)
+ *                 currentQuestionIndex:
+ *                   type: integer
+ *                   example: 0
+ *                 totalQuestions:
+ *                   type: integer
+ *                   example: 5
+ *                 questionId:
+ *                   type: string
+ *                   example: cmlm1u3320004vq3g7p5fjyze
+ *                 subject:
+ *                   type: string
+ *                   example: Criminal Law
+ *                 examType:
+ *                   type: string
+ *                   example: Problem
+ *                 text:
+ *                   type: string
+ *                   example: Dr Murphy, a consultant surgeon...
+ *                 userAnswer:
+ *                   type: string
+ *                   nullable: true
+ *                   example: null
+ *                 isSubmitted:
+ *                   type: boolean
+ *                   example: false
+ *                 canEdit:
+ *                   type: boolean
+ *                   example: true
+ *                 nextQuestionId:
+ *                   type: string
+ *                   nullable: true
+ *                   example: cmlm233it000bvqpk3o15pewr
+ *                   description: ID of the next question. Null if only one question exists.
+ *                 isLastQuestion:
+ *                   type: boolean
+ *                   example: false
+ *                 timerId:
+ *                   type: string
+ *                   example: cmkrsa95u0001vqm8ezas0327
+ *                   description: Timer ID for the first question. Pass this to the submit endpoint.
+ *       400:
+ *         description: Not enough questions available for simulation
  */
 practiceRouter.post('/simulation/start', protect, startSimulation);
 
@@ -741,91 +773,9 @@ practiceRouter.post('/simulation/:simulationId/finish', protect, validate(finish
  */
 practiceRouter.post('/simulation/:simulationId/fail', protect, validate(failSimulationSchema), failSimulation);
 
-/**
- * @swagger
- * /api/v1/practice/simulation/{simulationId}/question/{questionId}:
- *   get:
- *     summary: Get simulation question (navigation)
- *     tags: [Simulation]
- *     security:
- *       - bearerAuth: []
- *     description: Returns question with submission status, next question navigation, and simulation context.
- *     parameters:
- *       - in: path
- *         name: simulationId
- *         required: true
- *         schema:
- *           type: string
- *           example: cmkrsa95u0000vqm8ezas0326
- *       - in: path
- *         name: questionId
- *         required: true
- *         schema:
- *           type: string
- *           example: cmlm1u3320004vq3g7p5fjyze
- *       - in: query
- *         name: questionIndex
- *         required: true
- *         schema:
- *           type: integer
- *           example: 0
- *     responses:
- *       200:
- *         description: Question retrieved successfully
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 simulationId:
- *                   type: string
- *                   example: cmkrsa95u0000vqm8ezas0326
- *                 currentQuestionIndex:
- *                   type: integer
- *                   example: 0
- *                 totalQuestions:
- *                   type: integer
- *                   example: 5
- *                 questionId:
- *                   type: string
- *                   example: cmlm1u3320004vq3g7p5fjyze
- *                 subject:
- *                   type: string
- *                   example: Criminal Law
- *                 examType:
- *                   type: string
- *                   example: Problem
- *                 text:
- *                   type: string
- *                   example: Dr Murphy, a consultant surgeon...
- *                 userAnswer:
- *                   type: string
- *                   nullable: true
- *                   example: null
- *                 isSubmitted:
- *                   type: boolean
- *                   example: false
- *                 timeTakenSeconds:
- *                   type: integer
- *                   nullable: true
- *                   example: null
- *                 canEdit:
- *                   type: boolean
- *                   example: true
- *                 nextQuestionId:
- *                   type: string
- *                   nullable: true
- *                   example: cmlm233it000bvqpk3o15pewr
- *                   description: ID of the next question. Null if this is the last question.
- *                 isLastQuestion:
- *                   type: boolean
- *                   example: false
- *                   description: True when this is the final question in the simulation.
- *       400:
- *         description: Simulation was created before question tracking was added. Start a new simulation.
- *       404:
- *         description: Simulation or question not found
- */
+
+
+
 practiceRouter.get(
   '/simulation/:simulationId/question/:questionId',
   protect,
