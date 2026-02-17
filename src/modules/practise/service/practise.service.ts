@@ -2,7 +2,6 @@ import { prisma } from '@/shared/config';
 import { AppError, NotFoundError, BadRequestError } from '@/shared/utils';
 import {
   MixedChallengeResponse,
-  PastQuestionsListResponse,
   PastQuestionsQuery,
   SubmitEssayInput,
   SubmitEssayResponse,
@@ -10,6 +9,8 @@ import {
   TopicChallengeResponse,
   AttemptDetailsResponse,
   NextQuestionResponse,
+  EssayAttemptsListResponse,
+  SingleAttemptResponse,
 } from '../interface/practise.interface';
 import { QuickQuizResponse } from '../interface/practise.interface';
 
@@ -807,6 +808,94 @@ Return ONLY valid JSON with this exact structure:
       improvements: parsed.improvements,
       sampleAnswer: parsed.sampleAnswer,
       tokensUsed: data.usage.input_tokens + data.usage.output_tokens,
+    };
+  }
+
+  async getAllEssayAttempts(
+    userId: string,
+    page: number = 1,
+    limit: number = 20
+  ): Promise<EssayAttemptsListResponse> {
+    const skip = (page - 1) * limit;
+
+    const total = await prisma.essayAttempt.count({
+      where: { userId, isSimulation: false },
+    });
+
+    const attempts = await prisma.essayAttempt.findMany({
+      where: { userId, isSimulation: false },
+      include: {
+        question: true,
+      },
+      orderBy: { createdAt: 'desc' },
+      skip,
+      take: limit,
+    });
+
+    return {
+      attempts: attempts.map((a) => ({
+        id: a.id,
+        questionId: a.questionId,
+        subject: a.question.subject || 'General',
+        examType: a.question.examType || 'Essay',
+        year: a.question.year,
+        answerText: a.answerText,
+        timeTakenSeconds: a.timeTakenSeconds,
+        wordCount: a.wordCount,
+        aiScore: a.aiScore!,
+        band: a.band!,
+        feedback: a.feedback,
+        strengths: a.strengths,
+        improvements: a.improvements,
+        createdAt: a.createdAt,
+      })),
+      pagination: {
+        total,
+        page,
+        limit,
+        totalPages: Math.ceil(total / limit),
+      },
+    };
+  }
+
+  async getSingleAttempt(userId: string, attemptId: string): Promise<SingleAttemptResponse> {
+    const attempt = await prisma.essayAttempt.findUnique({
+      where: { id: attemptId },
+      include: {
+        question: true,
+      },
+    });
+
+    if (!attempt) {
+      throw new NotFoundError('Attempt not found');
+    }
+
+    if (attempt.userId !== userId) {
+      throw new BadRequestError('Access denied');
+    }
+
+    return {
+      id: attempt.id,
+      questionId: attempt.questionId,
+      answerText: attempt.answerText,
+      timeTakenSeconds: attempt.timeTakenSeconds,
+      wordCount: attempt.wordCount,
+      aiScore: attempt.aiScore!,
+      band: attempt.band!,
+      feedback: attempt.feedback,
+      strengths: attempt.strengths,
+      improvements: attempt.improvements,
+      tokensUsed: attempt.tokensUsed,
+      isSimulation: attempt.isSimulation,
+      createdAt: attempt.createdAt,
+      question: {
+        id: attempt.question.id,
+        subject: attempt.question.subject!,
+        examType: attempt.question.examType!,
+        description: attempt.question.description!,
+        text: attempt.question.text,
+        year: attempt.question.year!,
+      },
     };
   }
 }

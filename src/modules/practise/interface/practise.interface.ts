@@ -286,14 +286,45 @@ export interface FailSimulationResponse {
   message: string;
 }
 
+export interface SingleAttemptResponse {
+  id: string;
+  questionId: string;
+  answerText: string;
+  timeTakenSeconds: number;
+  wordCount: number;
+  aiScore: number;
+  band: string;
+  feedback: any;
+  strengths: string[];
+  improvements: string[];
+  tokensUsed: number | null;
+  isSimulation: boolean;
+  createdAt: Date;
+  question: {
+    id: string;
+    subject: string;
+    examType: string;
+    description: string;
+    text: string;
+    year: number;
+  };
+}
+
 export interface EssayAttemptsListResponse {
   attempts: Array<{
     id: string;
     questionId: string;
     subject: string;
+    examType: string;
+    year: number | null;
+    answerText: string;
+    timeTakenSeconds: number;
+    wordCount: number;
     aiScore: number;
     band: string;
-    timeTakenSeconds: number;
+    feedback: any;
+    strengths: string[];
+    improvements: string[];
     createdAt: Date;
   }>;
   pagination: {
