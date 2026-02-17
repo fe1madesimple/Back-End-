@@ -82,7 +82,7 @@ class SimulationService {
   async submitSimulationAnswer(
     userId: string,
     input: SubmitSimulationAnswerInput & { timerId: string }
-  ): Promise<SubmitSimulationAnswerResponse> {
+  ): Promise<any> {
     const { simulationId, questionId, answerText, timerId, currentQuestionIndex } = input;
 
     const timer = await prisma.questionTimer.update({
@@ -168,7 +168,6 @@ class SimulationService {
       currentQuestionIndex,
       nextQuestionIndex,
       hasNextQuestion,
-      nextQuestion,
     };
   }
 

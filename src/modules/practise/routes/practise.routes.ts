@@ -644,20 +644,6 @@ practiceRouter.post('/simulation/start', protect, startSimulation);
  *                   nullable: true
  *                 hasNextQuestion:
  *                   type: boolean
- *                 nextQuestion:
- *                   type: object
- *                   nullable: true
- *                   properties:
- *                     questionId:
- *                       type: string
- *                     questionIndex:
- *                       type: integer
- *                     subject:
- *                       type: string
- *                     examType:
- *                       type: string
- *                     text:
- *                       type: string
  */
 practiceRouter.post('/simulation/submit-answer', protect, validate(submitSimulationAnswerSchema), submitSimulationAnswer);
 

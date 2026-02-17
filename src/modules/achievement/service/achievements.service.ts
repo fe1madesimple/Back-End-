@@ -108,7 +108,7 @@ class AchievementService {
         where: { userId },
         include: { question: true },
       });
-      return attempts.some((a) => a.timeTakenSeconds < a.question.averageAttemptTimeSeconds);
+      return attempts.some((a) => a.timeTakenSeconds < a.question.averageAttemptSeconds);
     }
     if (condition.allSubjectsAttempted) {
       const distinctSubjects = await prisma.essayAttempt.findMany({
@@ -368,8 +368,8 @@ class AchievementService {
       });
       if (attempts.length < 5) return false;
       return attempts.every((a) => {
-        const diff = Math.abs(a.timeTakenSeconds - a.question.averageAttemptTimeSeconds);
-        return diff <= a.question.averageAttemptTimeSeconds * 0.1;
+        const diff = Math.abs(a.timeTakenSeconds - a.question.averageAttemptSeconds);
+        return diff <= a.question.averageAttemptSeconds * 0.1;
       });
     }
     return false;
@@ -382,19 +382,19 @@ class AchievementService {
 
   private async checkCombo(userId: string, condition: any): Promise<boolean> {
     if (condition.videoQuizEssaySameDay) {
-     const today = new Date();
-     today.setHours(0, 0, 0, 0);
-     const [video, quiz, essay] = await Promise.all([
-       prisma.userLessonProgress.findFirst({
-         where: { userId, completedAt: { gte: today } },
-       }),
-       prisma.quizAttempt.findFirst({
-         where: { userId, createdAt: { gte: today } },
-       }),
-       prisma.essayAttempt.findFirst({
-         where: { userId, createdAt: { gte: today } },
-       }),
-     ]);
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const [video, quiz, essay] = await Promise.all([
+        prisma.userLessonProgress.findFirst({
+          where: { userId, completedAt: { gte: today } },
+        }),
+        prisma.quizAttempt.findFirst({
+          where: { userId, createdAt: { gte: today } },
+        }),
+        prisma.essayAttempt.findFirst({
+          where: { userId, createdAt: { gte: today } },
+        }),
+      ]);
       return !!(video && quiz && essay);
     }
     if (condition.subjectsInWeek) {
