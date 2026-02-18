@@ -28,7 +28,7 @@ class AchievementService {
     );
 
     // Combine into single array with locked/unlocked status
-    return allAchievements.map((achievement) => {
+    const combined = allAchievements.map((achievement) => {
       const unlockedAt = unlockedMap.get(achievement.id);
       return {
         id: achievement.id,
@@ -39,6 +39,18 @@ class AchievementService {
         isUnlocked: !!unlockedAt,
         unlockedAt: unlockedAt || null,
       };
+    });
+
+    // Sort: unlocked first (by unlockedAt desc), then locked (by type/creation)
+    return combined.sort((a, b) => {
+      if (a.isUnlocked && !b.isUnlocked) return -1; // a unlocked, b locked → a first
+      if (!a.isUnlocked && b.isUnlocked) return 1; // a locked, b unlocked → b first
+      if (a.isUnlocked && b.isUnlocked) {
+        // Both unlocked → sort by most recently unlocked first
+        return new Date(b.unlockedAt!).getTime() - new Date(a.unlockedAt!).getTime();
+      }
+      // Both locked → keep original order (type, createdAt)
+      return 0;
     });
   }
 
