@@ -760,8 +760,6 @@ practiceRouter.post('/simulation/:simulationId/finish', protect, validate(finish
 practiceRouter.post('/simulation/:simulationId/fail', protect, validate(failSimulationSchema), failSimulation);
 
 
-
-
 /**
  * @swagger
  * /api/v1/practice/simulation/{simulationId}/question/{questionId}:

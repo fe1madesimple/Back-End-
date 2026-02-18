@@ -12,10 +12,33 @@ class AchievementService {
   }
 
   async getUserAchievements(userId: string) {
-    return await prisma.userAchievement.findMany({
+    // Get all achievements
+    const allAchievements = await prisma.achievement.findMany({
+      orderBy: [{ type: 'asc' }, { createdAt: 'asc' }],
+    });
+
+    // Get user's unlocked achievements
+    const unlockedAchievements = await prisma.userAchievement.findMany({
       where: { userId },
-      include: { achievement: true },
-      orderBy: { unlockedAt: 'desc' },
+      select: { achievementId: true, unlockedAt: true },
+    });
+
+    const unlockedMap = new Map(
+      unlockedAchievements.map((ua) => [ua.achievementId, ua.unlockedAt])
+    );
+
+    // Combine into single array with locked/unlocked status
+    return allAchievements.map((achievement) => {
+      const unlockedAt = unlockedMap.get(achievement.id);
+      return {
+        id: achievement.id,
+        title: achievement.title,
+        description: achievement.description,
+        icon: achievement.icon,
+        type: achievement.type,
+        isUnlocked: !!unlockedAt,
+        unlockedAt: unlockedAt || null,
+      };
     });
   }
 
