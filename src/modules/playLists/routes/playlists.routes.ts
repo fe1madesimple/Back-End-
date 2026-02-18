@@ -1,21 +1,14 @@
-// import { Router } from 'express';
-// import { protect } from '@/shared/middleware/auth.middleware';
-// import { validate } from '@/shared/middleware/validation';
-// import {
-//   createPlaylist,
-//   getUserPlaylists,
-//   addPodcastToPlaylist,
-//     removePodcastFromPlaylist,
-//   deletePlaylist
-// } from '../controller/playlists.controller';
-// import {
-//   createPlaylistSchema,
-//   addPodcastToPlaylistSchema,
-//     removePodcastFromPlaylistSchema,
-//   deletePlaylistSchema
-// } from '../validator/playlists.validator';
+import { Router } from 'express';
+import { protect } from '@/shared/middleware/auth.middleware';
+import { validate } from '@/shared/middleware/validation';
+import {
+  addPodcastToPlaylist,
+} from '../controller/playlists.controller';
+import {
+  addPodcastToPlaylistSchema,
+} from '../validator/playlists.validator';
 
-// const playListRouter = Router();
+const playListRouter = Router();
 
 // /**
 //  * @swagger
@@ -58,44 +51,44 @@
 //  */
 // playListRouter.get('/', protect, getUserPlaylists);
 
-// /**
-//  * @swagger
-//  * /playlists/{id}/podcasts:
-//  *   post:
-//  *     summary: Add podcast to playlist
-//  *     tags: [Playlists]
-//  *     security:
-//  *       - bearerAuth: []
-//  *     parameters:
-//  *       - in: path
-//  *         name: id
-//  *         required: true
-//  *         schema:
-//  *           type: string
-//  *         description: Playlist ID
-//  *     requestBody:
-//  *       required: true
-//  *       content:
-//  *         application/json:
-//  *           schema:
-//  *             type: object
-//  *             required:
-//  *               - podcastId
-//  *             properties:
-//  *               podcastId:
-//  *                 type: string
-//  *     responses:
-//  *       200:
-//  *         description: Podcast added successfully
-//  *       404:
-//  *         description: Playlist or podcast not found
-//  */
-// playListRouter.post(
-//   '/:id/podcasts',
-//   protect,
-//   validate(addPodcastToPlaylistSchema),
-//   addPodcastToPlaylist
-// );
+/**
+ * @swagger
+ * /playlists/{id}/podcasts:
+ *   post:
+ *     summary: Add podcast to playlist
+ *     tags: [Playlists]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: Playlist ID
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - podcastId
+ *             properties:
+ *               podcastId:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Podcast added successfully
+ *       404:
+ *         description: Playlist or podcast not found
+ */
+playListRouter.post(
+  '/:id/podcasts',
+  protect,
+  validate(addPodcastToPlaylistSchema),
+  addPodcastToPlaylist
+);
 
 // /**
 //  * @swagger
@@ -155,4 +148,4 @@
 //  */
 // playListRouter.delete('/:id', protect, validate(deletePlaylistSchema), deletePlaylist);
 
-// export default playListRouter;
+export default playListRouter;
