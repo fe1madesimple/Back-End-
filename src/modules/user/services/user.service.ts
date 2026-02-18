@@ -7,8 +7,7 @@ import {
   ChangePasswordInput,
 } from '../interfaces/user.interfaces';
 import emailService from '@/shared/services/email.service';
-import axios from 'axios';
-import PDFDocument from 'pdfkit';
+
 
 
 class UserService {
@@ -224,7 +223,7 @@ class UserService {
     );
 
     // Save analytics
-    const deleteData = await prisma.deletedUserAnalytics.create({
+    await prisma.deletedUserAnalytics.create({
       data: {
         originalUserId: userId,
         email: user.email,

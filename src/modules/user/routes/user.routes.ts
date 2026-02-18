@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getProfile, updateProfile, updatePreferences, changePassword, deleteAccount, completeOnboarding, skipOnboarding, getOnboardingStatus, exportUserData } from '../controllers/user.controller';
+import { getProfile, updateProfile, updatePreferences, changePassword, deleteAccount, completeOnboarding, skipOnboarding, getOnboardingStatus } from '../controllers/user.controller';
 import { protect } from '@/shared/middleware/auth.middleware';
 import { validate } from '@/shared/middleware/validation';
 import { updateProfileSchema, updatePreferencesSchema, changePasswordSchema, deleteAccountSchema, completeOnboardingSchema } from '../validators/user.validator';

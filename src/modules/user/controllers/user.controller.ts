@@ -1,12 +1,11 @@
 import { Request, Response } from 'express';
 import { asyncHandler } from '@/utils/asynHandler';
-import { sendSuccess, sendNoContent } from '@/utils/response';
+import { sendSuccess} from '@/utils/response';
 import userService from '../services/user.service';
 import {
   UpdateProfileInput,
   UpdatePreferencesInput,
-  ChangePasswordInput,
-  DeleteAccountInput,
+  ChangePasswordInput
 } from '../interfaces/user.interfaces';
 
 export const getProfile = asyncHandler(async (req: Request, res: Response) => {

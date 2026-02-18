@@ -3,7 +3,6 @@
 import { prisma } from '@/shared/config';
 import emailService from '@/shared/services/email.service';
 import { NotFoundError } from '@/shared/utils';
-import { ScheduleBookingResponse } from '../interface/support.interface';
 
 class SupportService {
   async scheduleOnboardingCall(userId: string): Promise<any> {

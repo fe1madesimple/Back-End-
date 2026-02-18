@@ -5,7 +5,7 @@ import { asyncHandler } from '@/shared/utils';
 import { sendSuccess } from '@/shared/utils';
 import achievementsService from '../service/achievements.service';
 
-export const getAllAchievements = asyncHandler(async (req: Request, res: Response) => {
+export const getAllAchievements = asyncHandler(async (_req: Request, res: Response) => {
   const achievements = await achievementsService.getAllAchievements();
   sendSuccess(res, 'Achievements retrieved successfully', achievements);
 });

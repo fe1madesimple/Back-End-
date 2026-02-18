@@ -375,7 +375,7 @@ class AchievementService {
     return false;
   }
 
-  private async checkCaseLawMastery(userId: string, condition: any): Promise<boolean> {
+  private async checkCaseLawMastery(_userId: string, _condition: any): Promise<boolean> {
     // Placeholder - requires AI feedback parsing
     return false;
   }

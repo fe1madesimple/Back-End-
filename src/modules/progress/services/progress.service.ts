@@ -23,7 +23,7 @@ const OCTOBER_EXTRA_DAYS = 0;
 function getNextExamDate(): Date {
   const now = new Date();
   const currentYear = now.getFullYear();
-  const currentMonth = now.getMonth() + 1; // 1-12
+  // const currentMonth = now.getMonth() + 1;
 
   // March exam
   const marchExam = new Date(currentYear, MARCH_EXAM_MONTH - 1, MARCH_EXAM_DAY);
@@ -48,7 +48,7 @@ function getNextExamDate(): Date {
 }
 
 class ProgressService {
-  private async getWeeklyStats(userId: string) {
+  protected async getWeeklyStats(userId: string) {
     const oneWeekAgo = new Date();
     oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
 
@@ -1339,7 +1339,7 @@ class ProgressService {
     };
   }
 
-  private async getAIProgressTrend(userId: string) {
+  protected async getAIProgressTrend(userId: string) {
     const twoWeeksAgo = new Date();
     twoWeeksAgo.setDate(twoWeeksAgo.getDate() - 14);
 
@@ -1439,8 +1439,6 @@ class ProgressService {
     return `${seconds} second${seconds !== 1 ? 's' : ''}`;
   }
 
-  // src/modules/dashboard/services/dashboard.service.ts
-
   async getStudyOverview(userId: string): Promise<StudyOverviewResponse> {
     const user = await prisma.user.findUnique({
       where: { id: userId },
@@ -1466,7 +1464,6 @@ class ProgressService {
     });
 
     const totalSecondsThisWeek = weekSessions.reduce((sum, s) => sum + s.todayTotalSeconds, 0);
-    const hoursThisWeek = Math.round((totalSecondsThisWeek / 3600) * 10) / 10;
 
     // Lessons completed this week
     const lessonsCompletedThisWeek = await prisma.userLessonProgress.count({
@@ -1481,6 +1478,7 @@ class ProgressService {
       where: { userId },
       select: { subjectId: true },
     });
+
     const subjectsEnrolled = subjectProgress.length;
 
     // Total lessons completed (all time)
@@ -1581,8 +1579,8 @@ class ProgressService {
     console.log(`\n🎯 Final Current Streak: ${currentStreak}`);
     console.log(`🏆 Final Longest Streak: ${longestStreak}\n`);
 
-    // Week summary text
-    const weekSummary = `You've studied ${hoursThisWeek} hours this week and completed ${lessonsCompletedThisWeek} modules across ${subjectsEnrolled} subjects.`;
+    const formattedTime = this.formatStudyTime(totalSecondsThisWeek);
+    const weekSummary = `You've studied ${formattedTime} this week and completed ${lessonsCompletedThisWeek} modules across ${subjectsEnrolled} subjects.`;
 
     // Achievement hint
     const achievementHint =
