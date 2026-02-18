@@ -221,6 +221,7 @@ export interface StudyOverviewResponse {
     quizAccuracy: number;
     practiceAttempts: number;
     currentStreak: number;
+    totalTimeSecondsForTheWeek: number;
   };
   achievementHint: string; 
 }

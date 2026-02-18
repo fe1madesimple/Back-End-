@@ -36,6 +36,9 @@ export const protect = async (req: Request, res: Response, next: NextFunction) =
     const accessToken = req.cookies.accessToken;
     const refreshToken = req.cookies.refreshToken;
 
+    console.log(accessToken)
+    console.log(refreshToken)
+
     if (!accessToken) {
       throw new UnauthorizedError('Access token not found. Please login.');
     }
