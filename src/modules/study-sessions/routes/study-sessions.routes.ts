@@ -41,6 +41,44 @@ const studySessionRouter = Router();
 studySessionRouter.post('/start', protect, startSession);
 
 
+/**
+ * @swagger
+ * /api/v1/study-sessions/{sessionId}/ping:
+ *   post:
+ *     summary: Ping active study session
+ *     tags: [Study Sessions]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Records incremental study time for an active session. Called every 30 seconds by the frontend to prevent data loss if the browser crashes. Updates todayTotalSeconds and lifetimeTotalSeconds, then resets currentSessionStart to now for the next ping window.
+ *     parameters:
+ *       - in: path
+ *         name: sessionId
+ *         required: true
+ *         schema:
+ *           type: string
+ *           example: cmkrsa95u0000vqm8ezas0326
+ *         description: ID of the active study session
+ *     responses:
+ *       200:
+ *         description: Ping recorded successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Ping recorded
+ *                 data:
+ *                   type: null
+ *       404:
+ *         description: Study session not found
+ *       403:
+ *         description: Access denied - session does not belong to user
+ */
 studySessionRouter.post('/:sessionId/ping', protect, pingSession);
 
 
