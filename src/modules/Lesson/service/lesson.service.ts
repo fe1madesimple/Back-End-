@@ -23,7 +23,6 @@ class Lesson {
       throw new AppError('Invalid video duration');
     }
 
-    // Use provided duration or stored duration
     const duration = videoDuration || lesson.videoDuration;
 
     if (!duration) {
@@ -36,6 +35,17 @@ class Lesson {
     // 90% threshold for "completed" status
     const isCompleted = lessonProgressPercent >= 90;
 
+    // Get existing progress to calculate time spent delta
+    const existingProgress = await prisma.userLessonProgress.findUnique({
+      where: { userId_lessonId: { userId, lessonId } },
+      select: { videoWatchedSeconds: true, timeSpentSeconds: true },
+    });
+
+    // Calculate time spent delta (only add if moving forward)
+    const previousWatchedSeconds = existingProgress?.videoWatchedSeconds || 0;
+    const timeDelta = Math.max(0, currentTime - previousWatchedSeconds);
+    const newTimeSpent = (existingProgress?.timeSpentSeconds || 0) + timeDelta;
+
     // Update lesson progress
     const updatedProgress = await prisma.userLessonProgress.upsert({
       where: {
@@ -44,20 +54,20 @@ class Lesson {
       create: {
         userId,
         lessonId,
-        videoWatchedSeconds: currentTime,
-        timeSpentSeconds: currentTime, // Track time spent
+        videoWatchedSeconds: currentTime, // ✅ Just save current position
+        timeSpentSeconds: currentTime,
         isCompleted,
         completedAt: isCompleted ? new Date() : null,
       },
       update: {
-        videoWatchedSeconds: currentTime,
-        timeSpentSeconds: currentTime,
+        videoWatchedSeconds: currentTime, // ✅ Just save current position
+        timeSpentSeconds: newTimeSpent, // ✅ Accumulate actual watch time
         isCompleted,
         completedAt: isCompleted ? new Date() : null,
       },
     });
 
-    // Always recalculate module and subject progress (even if not completed)
+    // Always recalculate module and subject progress
     await this.recalculateModuleProgress(userId, lesson.moduleId);
 
     // Store video duration if not already stored
