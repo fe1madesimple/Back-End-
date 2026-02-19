@@ -4,8 +4,6 @@ import { LessonDetailResponse, ModuleListResponse } from '../interface/lesson.in
 import achievementsService from '@/modules/achievement/service/achievements.service';
 
 class Lesson {
-  // src/modules/content/service/content.service.ts
-
   async trackVideoProgress(
     userId: string,
     lessonId: string,
@@ -21,22 +19,24 @@ class Lesson {
       throw new AppError('Lesson not found');
     }
 
-    if (videoDuration) {
-      if (videoDuration <= 0) {
-        throw new AppError('Invalid video duration');
-      }
+    if (videoDuration && videoDuration <= 0) {
+      throw new AppError('Invalid video duration');
     }
 
-    // Use provided duration (from frontend) or stored duration (from DB)
+    // Use provided duration or stored duration
     const duration = videoDuration || lesson.videoDuration;
 
-    // Calculate completion (90% threshold)
-    const completionThreshold = 0.9;
-    const isCompleted = duration ? currentTime >= duration * completionThreshold : false;
+    if (!duration) {
+      throw new AppError('Video duration not available');
+    }
+
+    // Calculate lesson completion percentage (0-100)
+    const lessonProgressPercent = Math.min(100, (currentTime / duration) * 100);
+
+    // 90% threshold for "completed" status
+    const isCompleted = lessonProgressPercent >= 90;
 
     // Update lesson progress
-    const completedStatus = Boolean(isCompleted);
-
     const updatedProgress = await prisma.userLessonProgress.upsert({
       where: {
         userId_lessonId: { userId, lessonId },
@@ -45,21 +45,22 @@ class Lesson {
         userId,
         lessonId,
         videoWatchedSeconds: currentTime,
-        isCompleted: completedStatus,
-        completedAt: completedStatus ? new Date() : null,
+        timeSpentSeconds: currentTime, // Track time spent
+        isCompleted,
+        completedAt: isCompleted ? new Date() : null,
       },
       update: {
         videoWatchedSeconds: currentTime,
-        isCompleted: completedStatus,
-        completedAt: completedStatus ? new Date() : null,
+        timeSpentSeconds: currentTime,
+        isCompleted,
+        completedAt: isCompleted ? new Date() : null,
       },
     });
 
-    // If lesson just completed, update module progress
-    if (isCompleted) {
-      await this.recalculateModuleProgress(userId, lesson.moduleId);
-    }
+    // Always recalculate module and subject progress (even if not completed)
+    await this.recalculateModuleProgress(userId, lesson.moduleId);
 
+    // Store video duration if not already stored
     if (videoDuration && !lesson.videoDuration) {
       await prisma.lesson.update({
         where: { id: lessonId },
@@ -70,102 +71,61 @@ class Lesson {
     return updatedProgress;
   }
 
-  private async recalculateSubjectProgress(userId: string, subjectId: string) {
-    // Get all modules in subject
-    const modules = await prisma.module.findMany({
-      where: { subjectId, isPublished: true },
+  private async recalculateModuleProgress(userId: string, moduleId: string) {
+    // Get all published lessons in this module
+    const lessons = await prisma.lesson.findMany({
+      where: { moduleId, isPublished: true },
       include: {
         userProgress: {
           where: { userId },
         },
-        lessons: {
-          where: { isPublished: true },
-          include: {
-            userProgress: {
-              where: { userId },
-            },
-          },
-        },
       },
+      orderBy: { order: 'asc' },
     });
 
-    // Calculate average progress across modules
-    const totalModules = modules.length;
-    const totalProgress = modules.reduce(
-      (sum, m) => sum + (m.userProgress[0]?.progressPercent || 0),
-      0
-    );
+    const totalLessons = lessons.length;
 
-    const progressPercent = totalModules > 0 ? totalProgress / totalModules : 0;
-
-    // Calculate total time from ALL lessons in subject
-    const totalTimeSeconds = modules.reduce((sum, module) => {
-      const moduleTime = module.lessons.reduce(
-        (lessonSum, lesson) => lessonSum + (lesson.userProgress[0]?.timeSpentSeconds || 0),
-        0
-      );
-      return sum + moduleTime;
-    }, 0);
-
-    // Determine status
-    let status: 'NOT_STARTED' | 'IN_PROGRESS' | 'COMPLETED' = 'NOT_STARTED';
-    const completedModules = modules.filter(
-      (m) => m.userProgress[0]?.status === 'COMPLETED'
-    ).length;
-
-    if (completedModules === totalModules && totalModules > 0) {
-      status = 'COMPLETED';
-
-      achievementsService
-        .checkAllAchievements(userId)
-        .catch((err) => console.error('Achievement check failed:', err));
-    } else if (completedModules > 0 || progressPercent > 0) {
-      status = 'IN_PROGRESS';
+    if (totalLessons === 0) {
+      return; // No lessons, nothing to calculate
     }
 
-    // Update subject progress
-    await prisma.userSubjectProgress.upsert({
-      where: {
-        userId_subjectId: { userId, subjectId },
-      },
-      create: {
-        userId,
-        subjectId,
-        progressPercent,
-        status,
-        totalTimeSeconds,
-      },
-      update: {
-        progressPercent,
-        status,
-        totalTimeSeconds,
-      },
-    });
-  }
+    // Each lesson gets equal weight in the module
+    const lessonWeight = 100 / totalLessons;
 
-  private async recalculateModuleProgress(userId: string, moduleId: string) {
-    // Get total lessons in module
-    const totalLessons = await prisma.lesson.count({
-      where: { moduleId, isPublished: true },
-    });
+    let moduleProgressPercent = 0;
+    let completedLessons = 0;
 
-    // Get completed lessons count
-    const completedLessons = await prisma.userLessonProgress.count({
-      where: {
-        userId,
-        lesson: { moduleId },
-        isCompleted: true,
-      },
-    });
+    for (const lesson of lessons) {
+      const userProgress = lesson.userProgress[0];
 
-    // Calculate progress percent
-    const progressPercent = totalLessons > 0 ? (completedLessons / totalLessons) * 100 : 0;
+      if (!userProgress) {
+        // Lesson not started = 0% contribution
+        continue;
+      }
+
+      if (userProgress.isCompleted) {
+        // Completed lesson = full weight
+        moduleProgressPercent += lessonWeight;
+        completedLessons++;
+      } else if (lesson.videoDuration && lesson.videoDuration > 0) {
+        // In-progress lesson = partial weight based on watch progress
+        const lessonProgressPercent = Math.min(
+          100,
+          (userProgress.videoWatchedSeconds / lesson.videoDuration) * 100
+        );
+        moduleProgressPercent += (lessonProgressPercent / 100) * lessonWeight;
+      }
+    }
+
+    // Round to 1 decimal place
+    moduleProgressPercent = Math.round(moduleProgressPercent * 10) / 10;
 
     // Determine status
     let status: 'NOT_STARTED' | 'IN_PROGRESS' | 'COMPLETED' = 'NOT_STARTED';
+
     if (completedLessons === totalLessons && totalLessons > 0) {
       status = 'COMPLETED';
-    } else if (completedLessons > 0) {
+    } else if (moduleProgressPercent > 0) {
       status = 'IN_PROGRESS';
     }
 
@@ -177,13 +137,13 @@ class Lesson {
       create: {
         userId,
         moduleId,
-        progressPercent,
+        progressPercent: moduleProgressPercent,
         status,
         completedLessons,
         totalLessons,
       },
       update: {
-        progressPercent,
+        progressPercent: moduleProgressPercent,
         status,
         completedLessons,
       },
@@ -198,6 +158,100 @@ class Lesson {
     if (module) {
       await this.recalculateSubjectProgress(userId, module.subjectId);
     }
+
+    // Check achievements (non-blocking)
+    achievementsService
+      .checkAllAchievements(userId)
+      .catch((err) => console.error('Achievement check failed:', err));
+  }
+
+  private async recalculateSubjectProgress(userId: string, subjectId: string) {
+    // Get all published modules in subject
+    const modules = await prisma.module.findMany({
+      where: { subjectId, isPublished: true },
+      include: {
+        userProgress: {
+          where: { userId },
+        },
+      },
+    });
+
+    const totalModules = modules.length;
+
+    if (totalModules === 0) {
+      return; // No modules, nothing to calculate
+    }
+
+    // Each module gets equal weight in the subject
+    const moduleWeight = 100 / totalModules;
+
+    let subjectProgressPercent = 0;
+    let completedModules = 0;
+
+    for (const module of modules) {
+      const moduleProgress = module.userProgress[0];
+
+      if (!moduleProgress) {
+        // Module not started = 0% contribution
+        continue;
+      }
+
+      // Add module's contribution to subject progress
+      subjectProgressPercent += (moduleProgress.progressPercent / 100) * moduleWeight;
+
+      if (moduleProgress.status === 'COMPLETED') {
+        completedModules++;
+      }
+    }
+
+    // Round to 1 decimal place
+    subjectProgressPercent = Math.round(subjectProgressPercent * 10) / 10;
+
+    // Determine status
+    let status: 'NOT_STARTED' | 'IN_PROGRESS' | 'COMPLETED' = 'NOT_STARTED';
+
+    if (completedModules === totalModules && totalModules > 0) {
+      status = 'COMPLETED';
+    } else if (subjectProgressPercent > 0) {
+      status = 'IN_PROGRESS';
+    }
+
+    // Calculate total time from ALL lessons in subject
+    const allLessons = await prisma.lesson.findMany({
+      where: {
+        module: { subjectId },
+        isPublished: true,
+      },
+      include: {
+        userProgress: {
+          where: { userId },
+        },
+      },
+    });
+
+    const totalTimeSeconds = allLessons.reduce(
+      (sum, lesson) => sum + (lesson.userProgress[0]?.timeSpentSeconds || 0),
+      0
+    );
+
+    // Update subject progress
+    await prisma.userSubjectProgress.upsert({
+      where: {
+        userId_subjectId: { userId, subjectId },
+      },
+      create: {
+        userId,
+        subjectId,
+        progressPercent: subjectProgressPercent,
+        status,
+        totalTimeSeconds,
+      },
+      update: {
+        progressPercent: subjectProgressPercent,
+        status,
+        totalTimeSeconds,
+      },
+    });
   }
 
   async trackTimeSpent(userId: string, lessonId: string, seconds: number) {
