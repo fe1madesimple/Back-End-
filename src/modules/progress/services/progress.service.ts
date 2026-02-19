@@ -1114,9 +1114,14 @@ class ProgressService {
     const todayHours = todaySeconds / 3600;
     const targetHours = user?.dailyStudyGoal || 3;
 
+    const mostRecentSunday = new Date();
+    const currentDay = mostRecentSunday.getDay();
+    mostRecentSunday.setDate(mostRecentSunday.getDate() - currentDay);
+    mostRecentSunday.setHours(0, 0, 0, 0);
+
     const last7Days = Array.from({ length: 7 }, (_, i) => {
-      const date = new Date();
-      date.setDate(date.getDate() - (6 - i));
+      const date = new Date(mostRecentSunday);
+      date.setDate(date.getDate() + i);
       return date;
     });
 

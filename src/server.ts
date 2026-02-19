@@ -11,6 +11,8 @@ const PORT = parseInt(process.env.PORT || '5000', 10);
 const HOST = process.env.HOST || '0.0.0.0';
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
+console.log(PORT)
+
 /**
  * Start Server
  */
