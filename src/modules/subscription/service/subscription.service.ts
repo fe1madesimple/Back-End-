@@ -25,7 +25,7 @@ export class SubscriptionService {
         select: {
           id: true,
           email: true,
-         fullName: true,
+          fullName: true,
           subscription: {
             select: {
               stripeCustomerId: true,
@@ -557,9 +557,9 @@ export class SubscriptionService {
       throw new AppError('Coupon is not valid or has expired', 400);
     }
 
-   await stripe.subscriptions.update(subscription.stripeSubscriptionId, {
-     discounts: [{ coupon: couponCode }],
-   });
+    await stripe.subscriptions.update(subscription.stripeSubscriptionId, {
+      discounts: [{ coupon: couponCode }],
+    });
 
     return {
       code: coupon.id,
@@ -568,6 +568,24 @@ export class SubscriptionService {
       currency: coupon.currency?.toUpperCase() || null,
       duration: coupon.duration,
       durationInMonths: coupon.duration_in_months || null,
+    };
+  }
+
+  async getSubscriptionConfig(userId: string) {
+    const subscription = await prisma.subscription.findUnique({
+      where: { userId },
+    });
+
+    // If user already had a subscription before, they're not eligible for trial
+    const hasHadSubscriptionBefore = subscription?.stripeSubscriptionId !== null;
+
+    return {
+      priceId: STRIPE_CONFIG.MONTHLY_PRICE_ID,
+      amount: 999,
+      currency: 'EUR',
+      interval: 'month',
+      trialDays: 7,
+      isEligibleForTrial: !hasHadSubscriptionBefore, // ← NEW
     };
   }
 }
