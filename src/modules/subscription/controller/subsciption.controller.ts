@@ -155,4 +155,17 @@ export class SubscriptionController {
 
     return sendSuccess(res, 'Coupon applied successfully', result);
   });
+
+  /**
+   * @route   GET /api/v1/subscription/config
+   * @desc    Get public subscription configuration
+   * @access  Private (needs userId to check trial eligibility)
+   */
+  getSubscriptionConfig = asyncHandler(async (req: Request, res: Response) => {
+    const userId = req.user!.user.id;
+
+    const config = await subscriptionService.getSubscriptionConfig(userId);
+
+    return sendSuccess(res, 'Subscription config retrieved successfully', config);
+  });
 }
