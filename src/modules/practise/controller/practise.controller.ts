@@ -89,6 +89,8 @@ export const startPractice = asyncHandler(async (req: Request, res: Response) =>
     ? parseInt(req.query.questionIndex as string) 
     : undefined;
 
+  if (!parentQuestionId) throw new AppError("parent question id must be supplied")
+
   const result = await practiseService.startPractice(
     parentQuestionId, 
     userId, 
