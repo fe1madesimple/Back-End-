@@ -34,7 +34,7 @@ export class SubjectService {
               lastAccessedAt: userProgress.lastAccessedAt,
             }
           : {
-              progressPercent: 0, // ← Changed from null to 0
+              progressPercent: 0, 
               status: 'NOT_STARTED',
               totalTimeSeconds: 0,
               lastAccessedAt: null,

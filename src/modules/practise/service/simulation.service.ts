@@ -34,6 +34,7 @@ class SimulationService {
       subject: set.questionSets[0]!.subject,
       examType: set.questionSets[0]!.examType,
       text: set.questionSets[0]!.text,
+      year: set.questionSets[0]!.year,
     }));
 
     const questionIds = selectedQuestions.map((q) => q.questionId);
@@ -70,6 +71,7 @@ class SimulationService {
       subject: firstQuestion.subject,
       examType: firstQuestion.examType,
       text: firstQuestion.text,
+      year: firstQuestion.year,
       userAnswer: null,
       isSubmitted: false,
       canEdit: true,
@@ -248,6 +250,7 @@ class SimulationService {
       subject: question.subject,
       examType: question.examType,
       text: question.text,
+      year: question.year,
       userAnswer: attempt?.answerText || null,
       isSubmitted: !!attempt,
       timeTakenSeconds: attempt?.timeTakenSeconds || null,

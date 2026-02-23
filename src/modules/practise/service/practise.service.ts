@@ -535,6 +535,7 @@ class Practise {
       subject: firstQuestion.subject,
       examType: firstQuestion.examType,
       text: firstQuestion.text,
+      year: firstQuestion.year,
       averageAttemptTimeSeconds: firstQuestion.averageAttemptSeconds,
       parentQuestionId: parentQuestion.id,
     };
@@ -664,6 +665,7 @@ class Practise {
       subject: nextQuestion.subject,
       examType: nextQuestion.examType,
       text: nextQuestion.text,
+      year: nextQuestion.year,
       averageAttemptTimeSeconds: parentQuestion.averageAttemptTimeSeconds,
       parentQuestionId: parentQuestionId,
     };
