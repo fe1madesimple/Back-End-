@@ -2,7 +2,10 @@ import { Router } from 'express';
 import { SubscriptionController } from '../controller/subsciption.controller';
 import { protect } from '@/shared/middleware/auth.middleware';
 import { validate } from '@/shared/middleware/validation';
-import { createCheckoutSessionSchema, applyCouponSchema } from '../validator/subscription.validator';
+import {
+  createCheckoutSessionSchema,
+  applyCouponSchema,
+} from '../validator/subscription.validator';
 import express from 'express';
 
 const subscriptionRouter = Router();
@@ -92,7 +95,6 @@ subscriptionRouter.post(
   subscriptionController.createCheckoutSession
 );
 
-
 /**
  * @swagger
  * /api/v1/subscription/webhook:
@@ -111,7 +113,6 @@ subscriptionRouter.post(
   express.raw({ type: 'application/json' }),
   subscriptionController.handleWebhook
 );
-
 
 /**
  * @swagger
@@ -169,12 +170,7 @@ subscriptionRouter.post(
  *       404:
  *         description: No subscription found
  */
-subscriptionRouter.get(
-  '/status',
-  protect,
-  subscriptionController.getSubscriptionStatus
-);
-
+subscriptionRouter.get('/status', protect, subscriptionController.getSubscriptionStatus);
 
 /**
  * @swagger
@@ -193,12 +189,7 @@ subscriptionRouter.get(
  *       404:
  *         description: No subscription found
  */
-subscriptionRouter.post(
-  '/cancel',
-  protect,
-  subscriptionController.cancelSubscription
-);
-
+subscriptionRouter.post('/cancel', protect, subscriptionController.cancelSubscription);
 
 /**
  * @swagger
@@ -282,12 +273,7 @@ subscriptionRouter.post(
  *       404:
  *         description: No subscription found
  */
-subscriptionRouter.get(
-  '/billing-history',
-  protect,
-  subscriptionController.getBillingHistory
-);
-
+subscriptionRouter.get('/billing-history', protect, subscriptionController.getBillingHistory);
 
 /**
  * @swagger
@@ -296,7 +282,7 @@ subscriptionRouter.get(
  *     summary: Get Stripe Customer Portal URL
  *     description: |
  *       Generates a URL to Stripe's hosted customer portal where users can manage their subscription, update payment methods, and view invoices.
- *       
+ *
  *       **Note:** After completing actions in the portal, users will be redirected back to your application's subscription page. The frontend engineer must create a subscription route page where users will land after completing actions on the Stripe portal.
  *     tags: [Subscription]
  *     security:
@@ -325,14 +311,8 @@ subscriptionRouter.get(
  *         description: No Stripe customer found
  *       404:
  *         description: No subscription found
- */  
-subscriptionRouter.get(
-  '/portal',
-  protect,
-  subscriptionController.getCustomerPortal
-);
-
-
+ */
+subscriptionRouter.get('/portal', protect, subscriptionController.getCustomerPortal);
 
 /**
  * @swagger
@@ -362,11 +342,7 @@ subscriptionRouter.get(
  *       404:
  *         description: No subscription found
  */
-subscriptionRouter.post(
-  '/resume',
-  protect,
-  subscriptionController.resumeSubscription
-);
+subscriptionRouter.post('/resume', protect, subscriptionController.resumeSubscription);
 
 /**
  * @swagger
@@ -423,12 +399,7 @@ subscriptionRouter.post(
  *       404:
  *         description: No subscription found
  */
-subscriptionRouter.get(
-  '/preview-invoice',
-  protect,
-  subscriptionController.previewInvoice
-);
-
+subscriptionRouter.get('/preview-invoice', protect, subscriptionController.previewInvoice);
 
 /**
  * @swagger
@@ -502,4 +473,70 @@ subscriptionRouter.post(
   subscriptionController.applyCoupon
 );
 
-export default subscriptionRouter
+/**
+ * @swagger
+ * /api/v1/subscription/config:
+ *   get:
+ *     summary: Get subscription configuration
+ *     description: |
+ *       Returns public subscription details including price ID, amount, currency, and trial eligibility.
+ *
+ *       **Frontend Usage:**
+ *       1. Call this endpoint when loading the subscription page
+ *       2. Use `priceId` to create checkout session
+ *       3. Use `amount`, `currency`, `interval` to display pricing
+ *       4. Use `isEligibleForTrial` to show/hide trial messaging
+ *
+ *       **Trial Eligibility:**
+ *       - `isEligibleForTrial: true` → User never subscribed before (show "7-day free trial")
+ *       - `isEligibleForTrial: false` → User had subscription before (show "€9.99/month" only)
+ *     tags: [Subscription]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Configuration retrieved successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Subscription config retrieved successfully
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     priceId:
+ *                       type: string
+ *                       description: Stripe Price ID (use this in create-checkout-session)
+ *                       example: price_1SrlzdRK2xB6X2uOkYBHZn2s
+ *                     amount:
+ *                       type: integer
+ *                       description: Price in cents (999 = €9.99)
+ *                       example: 999
+ *                     currency:
+ *                       type: string
+ *                       description: Currency code
+ *                       example: EUR
+ *                     interval:
+ *                       type: string
+ *                       description: Billing interval
+ *                       example: month
+ *                     trialDays:
+ *                       type: integer
+ *                       description: Number of trial days (if eligible)
+ *                       example: 7
+ *                     isEligibleForTrial:
+ *                       type: boolean
+ *                       description: Whether this user qualifies for trial
+ *                       example: true
+ *       401:
+ *         description: Unauthorized - Authentication required
+ */
+subscriptionRouter.get('/config', protect, subscriptionController.getSubscriptionConfig);
+
+export default subscriptionRouter;
