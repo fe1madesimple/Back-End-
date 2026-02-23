@@ -331,11 +331,36 @@ practiceRouter.post('/initiate-start-question', protect, validate(initiateStartP
  * @swagger
  * /api/v1/practice/start-question:
  *   post:
- *     summary: Start practice question
+ *     summary: Start practice question or get specific question by index
  *     tags: [Practice]
  *     security:
  *       - bearerAuth: []
- *     description: Starts a practice session for a question set. If timer already exists, returns time elapsed.
+ *     description: |
+ *       Starts a practice session for a question set OR retrieves a specific question by index.
+ *       
+ *       **Without questionIndex (Start practice):**
+ *       - Returns the first question (index 0)
+ *       - Creates a timer
+ *       - If timer already exists, returns time elapsed
+ *       
+ *       **With questionIndex (Page reload/navigation):**
+ *       - Returns the specific question at that index
+ *       - Does NOT create a timer
+ *       - Useful for page reloads or navigating to specific questions
+ *       
+ *       **Question Index:**
+ *       - First question: 0
+ *       - Second question: 1
+ *       - Third question: 2
+ *       - etc.
+ *     parameters:
+ *       - in: query
+ *         name: questionIndex
+ *         schema:
+ *           type: integer
+ *           minimum: 0
+ *         description: Optional - Zero-based index of the question to retrieve (0 = first, 1 = second, etc.)
+ *         example: 0
  *     requestBody:
  *       required: true
  *       content:
@@ -347,9 +372,11 @@ practiceRouter.post('/initiate-start-question', protect, validate(initiateStartP
  *             properties:
  *               parentQuestionId:
  *                 type: string
+ *                 description: ID of the parent question containing the question set
+ *                 example: cml3hee0s000svq8csqkp4qvo
  *     responses:
- *       201:
- *         description: Practice started or already in progress
+ *       200:
+ *         description: Practice started, already in progress, or specific question retrieved
  *         content:
  *           application/json:
  *             schema:
@@ -357,39 +384,94 @@ practiceRouter.post('/initiate-start-question', protect, validate(initiateStartP
  *               properties:
  *                 success:
  *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: Practice session retrieved
  *                 data:
  *                   oneOf:
  *                     - type: object
- *                       description: Already started
+ *                       description: Timer already started (no questionIndex provided)
  *                       properties:
  *                         isStarted:
  *                           type: boolean
+ *                           example: true
  *                         timeAgo:
  *                           type: integer
  *                           description: Seconds elapsed since timer started
+ *                           example: 120
  *                     - type: object
- *                       description: Newly started
+ *                       description: Newly started or specific question retrieved
  *                       properties:
  *                         timerId:
  *                           type: string
+ *                           description: Timer ID (null if questionIndex was provided)
+ *                           example: timer123abc
+ *                           nullable: true
  *                         currentQuestionIndex:
  *                           type: integer
+ *                           description: Zero-based index of current question
+ *                           example: 0
  *                         totalQuestions:
  *                           type: integer
+ *                           description: Total number of questions in the set
+ *                           example: 5
  *                         questionId:
  *                           type: string
+ *                           description: ID of the current question
+ *                           example: question456xyz
  *                         subject:
  *                           type: string
+ *                           description: Subject name
+ *                           example: Contract Law
  *                         examType:
  *                           type: string
+ *                           description: Type of exam
+ *                           example: MCQ
  *                         text:
  *                           type: string
+ *                           description: Question text
+ *                           example: What is the definition of consideration?
+ *                         year:
+ *                           type: integer
+ *                           description: Year the question was from
+ *                           example: 2023
+ *                           nullable: true
  *                         averageAttemptTimeSeconds:
  *                           type: integer
+ *                           description: Average time students take to answer this question
+ *                           example: 180
+ *                           nullable: true
  *                         parentQuestionId:
  *                           type: string
+ *                           description: ID of the parent question
+ *                           example: cml3hee0s000svq8csqkp4qvo
+ *       400:
+ *         description: Invalid question index
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                   example: Question index does not exist
  *       404:
  *         description: Question set not found
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                   example: Question set not found
  */
 practiceRouter.post('/start-question', protect, validate(startPracticeSchema), startPractice);
 

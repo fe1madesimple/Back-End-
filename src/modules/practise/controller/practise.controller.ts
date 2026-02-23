@@ -84,7 +84,7 @@ export const initiateStartPractice = asyncHandler(async (req: Request, res: Resp
 
 export const startPractice = asyncHandler(async (req: Request, res: Response) => {
   const userId = req.user!.user.id;
-  const { parentQuestionId } = req.params;
+  const { parentQuestionId } = req.body;
   const questionIndex = req.query.questionIndex 
     ? parseInt(req.query.questionIndex as string) 
     : undefined;

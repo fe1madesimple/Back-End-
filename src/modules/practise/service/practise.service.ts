@@ -519,7 +519,7 @@ class Practise {
       return {
         timerId: null, // No timer created when fetching specific question
         currentQuestionIndex: questionIndex,
-        totalQuestions: parentQuestion.questionSets.length,
+        totalQuestions: parentQuestion.questionSets.length + 1,
         questionId: targetQuestion.id,
         subject: targetQuestion.subject,
         examType: targetQuestion.examType,
@@ -559,7 +559,7 @@ class Practise {
     return {
       timerId: timer.id,
       currentQuestionIndex: 0,
-      totalQuestions: parentQuestion.questionSets.length,
+      totalQuestions: parentQuestion.questionSets.length + 1,
       questionId: firstQuestion.id,
       subject: firstQuestion.subject,
       examType: firstQuestion.examType,
@@ -689,7 +689,7 @@ class Practise {
     return {
       timerId: timer.id,
       currentQuestionIndex: nextIndex,
-      totalQuestions: parentQuestion.questionSets.length,
+      totalQuestions: parentQuestion.questionSets.length + 1,
       questionId: nextQuestion.id,
       subject: nextQuestion.subject,
       examType: nextQuestion.examType,
