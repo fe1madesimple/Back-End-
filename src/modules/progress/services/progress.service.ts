@@ -1115,41 +1115,41 @@ class ProgressService {
     const targetHours = user?.dailyStudyGoal || 3;
 
     // Generate last 7 days starting from most recent Sunday
-const mostRecentSunday = new Date();
-const currentDay = mostRecentSunday.getDay(); // 0 = Sunday
-mostRecentSunday.setDate(mostRecentSunday.getDate() - currentDay);
-mostRecentSunday.setHours(0, 0, 0, 0);
+    const mostRecentSunday = new Date();
+    const currentDay = mostRecentSunday.getDay(); // 0 = Sunday
+    mostRecentSunday.setDate(mostRecentSunday.getDate() - currentDay);
+    mostRecentSunday.setHours(0, 0, 0, 0);
 
-const last7Days = Array.from({ length: 7 }, (_, i) => {
-  const date = new Date(mostRecentSunday);
-  date.setDate(date.getDate() + i); // Add i days from Sunday
-  return date;
-});
-
-const weekCalendar = await Promise.all(
-  last7Days.map(async (date) => {
-    const dateStr = date.toISOString().split('T')[0]!;
-
-    const daySession = await prisma.dailyStudySession.findUnique({
-      where: {
-        userId_date: {
-          userId,
-          date: dateStr,
-        },
-      },
-      select: { todayTotalSeconds: true },
+    const last7Days = Array.from({ length: 7 }, (_, i) => {
+      const date = new Date(mostRecentSunday);
+      date.setDate(date.getDate() + i); // Add i days from Sunday
+      return date;
     });
 
-    console.log(
-      `📅 Date: ${dateStr}, Day: ${['S', 'M', 'T', 'W', 'T', 'F', 'S'][date.getDay()]}, Seconds: ${daySession?.todayTotalSeconds || 0}`
-    );
+    const weekCalendar = await Promise.all(
+      last7Days.map(async (date) => {
+        const dateStr = date.toISOString().split('T')[0]!;
 
-    return {
-      day: ['S', 'M', 'T', 'W', 'T', 'F', 'S'][date.getDay()]!,
-      hasActivity: (daySession?.todayTotalSeconds || 0) > 0,
-    };
-  })
-);
+        const daySession = await prisma.dailyStudySession.findUnique({
+          where: {
+            userId_date: {
+              userId,
+              date: dateStr,
+            },
+          },
+          select: { todayTotalSeconds: true },
+        });
+
+        console.log(
+          `📅 Date: ${dateStr}, Day: ${['S', 'M', 'T', 'W', 'T', 'F', 'S'][date.getDay()]}, Seconds: ${daySession?.todayTotalSeconds || 0}`
+        );
+
+        return {
+          day: ['S', 'M', 'T', 'W', 'T', 'F', 'S'][date.getDay()]!,
+          hasActivity: (daySession?.todayTotalSeconds || 0) > 0,
+        };
+      })
+    );
 
     console.log('\n🔥 CURRENT STREAK CALCULATION (last 7 days only):');
     console.log('weekCalendar:', JSON.stringify(weekCalendar, null, 2));
@@ -1259,6 +1259,7 @@ const weekCalendar = await Promise.all(
       ? {
           lessonTitle: lastLesson.lesson.title,
           subjectName: lastLesson.lesson.module.subject.name,
+          subjectId: lastLesson.lesson.module.subjectId,
           minutesRemaining: lastLesson.lesson.videoDuration
             ? Math.ceil((lastLesson.lesson.videoDuration - lastLesson.videoWatchedSeconds) / 60)
             : 0,

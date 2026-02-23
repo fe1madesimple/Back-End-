@@ -58,12 +58,14 @@ class Lesson {
         timeSpentSeconds: currentTime,
         isCompleted,
         completedAt: isCompleted ? new Date() : null,
+        lastAccessedAt: new Date(),
       },
       update: {
         videoWatchedSeconds: currentTime, // ✅ Just save current position
         timeSpentSeconds: newTimeSpent, // ✅ Accumulate actual watch time
         isCompleted,
         completedAt: isCompleted ? new Date() : null,
+        lastAccessedAt: new Date(),
       },
     });
 
@@ -151,11 +153,13 @@ class Lesson {
         status,
         completedLessons,
         totalLessons,
+        lastAccessedAt: new Date(),
       },
       update: {
         progressPercent: moduleProgressPercent,
         status,
         completedLessons,
+        lastAccessedAt: new Date(),
       },
     });
 
@@ -255,11 +259,13 @@ class Lesson {
         progressPercent: subjectProgressPercent,
         status,
         totalTimeSeconds,
+        lastAccessedAt: new Date(),
       },
       update: {
         progressPercent: subjectProgressPercent,
         status,
         totalTimeSeconds,
+        lastAccessedAt: new Date(),
       },
     });
   }
