@@ -488,7 +488,11 @@ class Practise {
     };
   }
 
-  async startPractice(parentQuestionId: string, userId: string): Promise<any> {
+  async startPractice(
+    parentQuestionId: string,
+    userId: string,
+    questionIndex?: number
+  ): Promise<any> {
     const parentQuestion = await prisma.question.findUnique({
       where: { id: parentQuestionId },
       include: {
@@ -502,6 +506,31 @@ class Practise {
       throw new NotFoundError('Question set not found');
     }
 
+    // Check if questionIndex is provided and valid
+    if (questionIndex !== undefined) {
+      // Validate index is within bounds (0 to length-1)
+      if (questionIndex < 0 || questionIndex >= parentQuestion.questionSets.length) {
+        throw new AppError('Question index does not exist', 400);
+      }
+
+      // Return the specific question at the given index
+      const targetQuestion = parentQuestion.questionSets[questionIndex]!;
+
+      return {
+        timerId: null, // No timer created when fetching specific question
+        currentQuestionIndex: questionIndex,
+        totalQuestions: parentQuestion.questionSets.length,
+        questionId: targetQuestion.id,
+        subject: targetQuestion.subject,
+        examType: targetQuestion.examType,
+        text: targetQuestion.text,
+        year: targetQuestion.year,
+        averageAttemptTimeSeconds: targetQuestion.averageAttemptSeconds,
+        parentQuestionId: parentQuestion.id,
+      };
+    }
+
+    // Original logic - start from first question (index 0)
     const firstQuestion = parentQuestion.questionSets[0]!;
 
     const isTimer = await prisma.questionTimer.findFirst({
@@ -530,7 +559,7 @@ class Practise {
     return {
       timerId: timer.id,
       currentQuestionIndex: 0,
-      totalQuestions: parentQuestion.questionSets.length + 1,
+      totalQuestions: parentQuestion.questionSets.length,
       questionId: firstQuestion.id,
       subject: firstQuestion.subject,
       examType: firstQuestion.examType,
