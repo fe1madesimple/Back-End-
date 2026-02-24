@@ -326,9 +326,18 @@ export class SubscriptionService {
       },
     });
 
+    // ✅ SEND EMAIL
+    const user = await prisma.user.findUnique({
+      where: { id: userId },
+      select: { email: true, fullName: true },
+    });
+
+    if (user) {
+      await emailService.sendSubscriptionActivatedEmail(user.email, user.fullName!);
+    }
+
     console.log(`✅ Subscription created for user: ${userId}`);
   }
-
   /**
    * Handle customer.subscription.updated event
    */
