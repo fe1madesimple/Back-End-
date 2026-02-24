@@ -328,6 +328,54 @@ class EmailService {
     await this.send(email, 'Your Account Has Been Deleted - FE-1 Made Simple', html);
   }
 
+  async sendPaymentFailedEmail(email: string, firstName: string, failureReason: string) {
+    const html = `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Failed</title>
+</head>
+<body style="margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;background-color:#ffffff;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;padding:40px 20px;">
+    <tr>
+      <td align="center" style="padding-bottom:40px;">
+        <img src="https://res.cloudinary.com/dkrjrfqpy/image/upload/v1768477062/Frame_23_a3ppr0.png" alt="FE-1 Made Simple" width="60" style="display:block;">
+      </td>
+    </tr>
+    <tr>
+      <td style="background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;padding:40px;">
+        <h1 style="margin:0 0 16px;font-size:24px;font-weight:600;color:#dc2626;">Payment Failed</h1>
+        <p style="margin:0 0 24px;font-size:16px;line-height:24px;color:#6b7280;">Hi ${firstName},</p>
+        <p style="margin:0 0 16px;font-size:16px;line-height:24px;color:#6b7280;">We were unable to process your payment for FE-1 Made Simple.</p>
+        
+        <div style="background:#fef2f2;border:1px solid #fecaca;border-radius:8px;padding:20px;margin-bottom:32px;">
+          <p style="margin:0 0 8px;font-size:14px;font-weight:600;color:#991b1b;">Reason:</p>
+          <p style="margin:0;font-size:14px;line-height:20px;color:#7f1d1d;">${failureReason}</p>
+        </div>
+
+        <p style="margin:0 0 32px;font-size:16px;line-height:24px;color:#6b7280;">Please update your payment method to continue enjoying FE-1 Made Simple.</p>
+
+        <div style="text-align:center;margin-bottom:24px;">
+          <a href="${process.env.FRONTEND_URL}/subscription" style="display:inline-block;background:#dc2626;color:#ffffff;text-decoration:none;padding:14px 28px;border-radius:8px;font-weight:600;font-size:16px;">Update Payment Method</a>
+        </div>
+
+        <p style="margin:0;font-size:14px;line-height:20px;color:#9ca3af;">If you have any questions, please contact our support team.</p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" style="padding-top:32px;">
+        <p style="margin:0;font-size:14px;color:#9ca3af;">© 2026 FE-1 Made Simple. All rights reserved.</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+
+    await this.send(email, 'Payment Failed - Action Required - FE-1 Made Simple', html);
+  }
+
   async sendWeeklyProgressEmail(email: string, firstName: string, stats: any) {
     const html = `
 <!DOCTYPE html>
