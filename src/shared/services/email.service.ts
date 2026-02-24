@@ -72,7 +72,11 @@ class EmailService {
     await this.send(email, 'Verify Your Email - FE-1 Made Simple', html);
   }
 
-  async sendTrialEndingReminder(email: string, firstName: string | null, trialEndDate: Date | null) {
+  async sendTrialEndingReminder(
+    email: string,
+    firstName: string | null,
+    trialEndDate: Date | null
+  ) {
     const formattedDate = trialEndDate
       ? new Date(trialEndDate).toLocaleDateString('en-IE', {
           month: 'long',
@@ -718,6 +722,84 @@ class EmailService {
     for (const email of supportEmails) {
       await this.send(email, `New Onboarding Call Request - ${userName}`, html);
     }
+  }
+
+  async sendPaymentSuccessEmail(
+    email: string,
+    firstName: string,
+    amount: number,
+    currency: string,
+    nextBillingDate: Date,
+    invoiceUrl?: string
+  ) {
+    const formattedAmount = (amount / 100).toFixed(2);
+    const formattedDate = nextBillingDate.toLocaleDateString('en-IE', {
+      month: 'long',
+      day: 'numeric',
+      year: 'numeric',
+    });
+
+    const html = `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Successful</title>
+</head>
+<body style="margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;background-color:#ffffff;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;padding:40px 20px;">
+    <tr>
+      <td align="center" style="padding-bottom:40px;">
+        <img src="https://res.cloudinary.com/dkrjrfqpy/image/upload/v1768477062/Frame_23_a3ppr0.png" alt="FE-1 Made Simple" width="60" style="display:block;">
+      </td>
+    </tr>
+    <tr>
+      <td style="background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;padding:40px;">
+        <div style="text-align:center;margin-bottom:24px;">
+          <div style="display:inline-block;background:#10b981;border-radius:50%;width:64px;height:64px;line-height:64px;">
+            <span style="color:#ffffff;font-size:32px;">✓</span>
+          </div>
+        </div>
+        
+        <h1 style="margin:0 0 16px;font-size:24px;font-weight:600;color:#111827;text-align:center;">Payment Successful</h1>
+        <p style="margin:0 0 24px;font-size:16px;line-height:24px;color:#6b7280;">Hi ${firstName},</p>
+        <p style="margin:0 0 32px;font-size:16px;line-height:24px;color:#6b7280;">Your payment has been processed successfully.</p>
+        
+        <div style="background:#f9fafb;border-radius:8px;padding:24px;margin-bottom:32px;">
+          <table width="100%" cellpadding="8" cellspacing="0">
+            <tr>
+              <td style="font-size:14px;color:#6b7280;">Amount Paid</td>
+              <td align="right" style="font-size:18px;font-weight:600;color:#111827;">€${formattedAmount}</td>
+            </tr>
+            <tr>
+              <td style="font-size:14px;color:#6b7280;border-top:1px solid #e5e7eb;padding-top:12px;">Next Billing Date</td>
+              <td align="right" style="font-size:14px;color:#111827;border-top:1px solid #e5e7eb;padding-top:12px;">${formattedDate}</td>
+            </tr>
+          </table>
+        </div>
+
+        ${
+          invoiceUrl
+            ? `<div style="text-align:center;margin-bottom:24px;">
+          <a href="${invoiceUrl}" style="display:inline-block;background:#2563eb;color:#ffffff;text-decoration:none;padding:12px 24px;border-radius:8px;font-weight:600;font-size:14px;">Download Invoice</a>
+        </div>`
+            : ''
+        }
+
+        <p style="margin:0;font-size:14px;line-height:20px;color:#9ca3af;text-align:center;">Thank you for your continued support!</p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" style="padding-top:32px;">
+        <p style="margin:0;font-size:14px;color:#9ca3af;">© 2026 FE-1 Made Simple. All rights reserved.</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+
+    await this.send(email, 'Payment Successful - FE-1 Made Simple', html);
   }
 }
 
