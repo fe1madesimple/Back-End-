@@ -4,7 +4,9 @@ import { stripe, STRIPE_CONFIG } from '@/shared/config/stripe.config';
 import {
   ICreateCheckoutSessionRequest,
   ICheckoutSessionResponse,
-  StripeWebhookEvent,IWebhookResponse, ISubscriptionResponse
+  StripeWebhookEvent,
+  IWebhookResponse,
+  ISubscriptionResponse,
 } from '../interface/subscription.interface';
 import emailService from '@/shared/services/email.service';
 
@@ -40,6 +42,84 @@ export class SubscriptionService {
     );
 
     console.log(`⚠️ Trial ending in 3 days for: ${existingSubscription.user.email}`);
+  }
+
+  /**
+   * Handle payment_intent.payment_failed event
+   * Provides detailed failure information for better user communication
+   */
+  private async handlePaymentIntentFailed(paymentIntent: Stripe.PaymentIntent) {
+    // Cast to 'any' to access invoice property (exists at runtime but not in types)
+    const invoiceId = (paymentIntent as any).invoice as string | null;
+
+    if (!invoiceId) {
+      console.error('No invoice ID in payment intent');
+      return;
+    }
+
+    try {
+      // Get invoice to find subscription
+      const invoice = await stripe.invoices.retrieve(invoiceId);
+
+      // Cast to 'any' to access subscription property
+      const subscriptionId = (invoice as any).subscription as string | null;
+
+      if (!subscriptionId) {
+        console.error('No subscription ID in invoice');
+        return;
+      }
+
+      const subscription = await prisma.subscription.findUnique({
+        where: { stripeSubscriptionId: subscriptionId },
+        include: {
+          user: {
+            select: {
+              id: true,
+              email: true,
+              fullName: true,
+            },
+          },
+        },
+      });
+
+      if (!subscription) {
+        console.error(`Subscription not found: ${subscriptionId}`);
+        return;
+      }
+
+      // Get detailed failure information
+      const failureCode = paymentIntent.last_payment_error?.code || 'unknown';
+      const declineCode = paymentIntent.last_payment_error?.decline_code;
+      const failureMessage = paymentIntent.last_payment_error?.message || 'Payment failed';
+
+      // Create user-friendly message based on error type
+      let userMessage = failureMessage;
+
+      if (declineCode === 'insufficient_funds') {
+        userMessage = 'Your card has insufficient funds. Please use a different payment method.';
+      } else if (declineCode === 'expired_card') {
+        userMessage = 'Your card has expired. Please update your payment method.';
+      } else if (failureCode === 'card_declined') {
+        userMessage = 'Your card was declined. Please contact your bank or use a different card.';
+      }
+
+      // Send detailed payment failed email
+      await emailService.sendPaymentFailedEmail(
+        subscription.user.email,
+        subscription.user.fullName,
+        userMessage
+      );
+
+      console.log(`❌ Payment Intent Failed:`, {
+        userId: subscription.user.id,
+        email: subscription.user.email,
+        failureCode,
+        declineCode,
+        message: userMessage,
+      });
+    } catch (error) {
+      console.error('Error handling payment intent failed:', error);
+    }
   }
   /**
    * Create Stripe Checkout Session for subscription

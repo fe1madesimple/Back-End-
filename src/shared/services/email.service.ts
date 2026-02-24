@@ -328,7 +328,7 @@ class EmailService {
     await this.send(email, 'Your Account Has Been Deleted - FE-1 Made Simple', html);
   }
 
-  async sendPaymentFailedEmail(email: string, firstName: string, failureReason: string) {
+  async sendPaymentFailedEmail(email: string, firstName: string | null, failureReason: string) {
     const html = `
 <!DOCTYPE html>
 <html>
