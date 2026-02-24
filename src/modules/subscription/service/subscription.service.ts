@@ -666,6 +666,14 @@ export class SubscriptionService {
   async resumeSubscription(userId: string): Promise<void> {
     const subscription = await prisma.subscription.findUnique({
       where: { userId },
+      include: {
+        user: {
+          select: {
+            email: true,
+            fullName: true,
+          },
+        },
+      },
     });
 
     if (!subscription) {
@@ -692,6 +700,13 @@ export class SubscriptionService {
         cancelledAt: null,
       },
     });
+
+    // ✅ SEND EMAIL
+    await emailService.sendSubscriptionResumedEmail(
+      subscription.user.email,
+      subscription.user.fullName!,
+      subscription.currentPeriodEnd!
+    );
   }
 
   /**
