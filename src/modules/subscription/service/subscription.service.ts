@@ -514,6 +514,14 @@ export class SubscriptionService {
   async cancelSubscription(userId: string): Promise<void> {
     const subscription = await prisma.subscription.findUnique({
       where: { userId },
+      include: {
+        user: {
+          select: {
+            email: true,
+            fullName: true,
+          },
+        },
+      },
     });
 
     if (!subscription) {
@@ -540,6 +548,13 @@ export class SubscriptionService {
         cancelledAt: new Date(),
       },
     });
+
+    // ✅ SEND EMAIL
+    await emailService.sendSubscriptionCancelledEmail(
+      subscription.user.email,
+      subscription.user.fullName!,
+      subscription.currentPeriodEnd!
+    );
   }
 
   /**
