@@ -458,6 +458,15 @@ export class SubscriptionService {
 
     const subscription = await prisma.subscription.findUnique({
       where: { stripeSubscriptionId: subscriptionId },
+      include: {
+        user: {
+          select: {
+            id: true,
+            email: true,
+            fullName: true,
+          },
+        },
+      },
     });
 
     if (!subscription) {
@@ -478,6 +487,13 @@ export class SubscriptionService {
         paymentMethod: 'card',
       },
     });
+
+    // ✅ SEND EMAIL (if payment_intent.payment_failed didn't already send one)
+    await emailService.sendPaymentFailedEmail(
+      subscription.user.email,
+      subscription.user.fullName,
+      'Your payment failed. Please update your payment method to continue your subscription.'
+    );
 
     console.log(`❌ Payment failed for subscription: ${subscriptionId}`);
   }
