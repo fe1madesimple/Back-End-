@@ -247,12 +247,20 @@ export class SubscriptionService {
           await this.handleSubscriptionDeleted(event.data.object as Stripe.Subscription);
           break;
 
+        case StripeWebhookEvent.CUSTOMER_SUBSCRIPTION_TRIAL_WILL_END: 
+          await this.handleTrialWillEnd(event.data.object as Stripe.Subscription);
+          break;
+
         case StripeWebhookEvent.INVOICE_PAYMENT_SUCCEEDED:
           await this.handlePaymentSucceeded(event.data.object as Stripe.Invoice);
           break;
 
         case StripeWebhookEvent.INVOICE_PAYMENT_FAILED:
           await this.handlePaymentFailed(event.data.object as Stripe.Invoice);
+          break;
+
+        case StripeWebhookEvent.PAYMENT_INTENT_PAYMENT_FAILED: 
+          await this.handlePaymentIntentFailed(event.data.object as Stripe.PaymentIntent);
           break;
 
         default:
