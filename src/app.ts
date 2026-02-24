@@ -1,6 +1,7 @@
 import express, { Application } from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
+import path from 'path';
 import compression from 'compression';
 import cookieParser from 'cookie-parser';
 import 'express-async-errors'; // Handles async errors automatically
@@ -40,7 +41,13 @@ import achievementRouter from './modules/achievement/routes/achievrments.routes'
 //   swaggerSpec = null;
 // }
 
-config();
+config({ path: path.join(__dirname, '../../.env') });
+
+// ✅ ADD THIS DEBUG LOG
+console.log('🔍 Environment Check:');
+console.log('STRIPE_WEBHOOK_SECRET exists:', !!process.env.STRIPE_WEBHOOK_SECRET);
+console.log('STRIPE_WEBHOOK_SECRET length:', process.env.STRIPE_WEBHOOK_SECRET?.length);
+console.log('First 10 chars:', process.env.STRIPE_WEBHOOK_SECRET?.substring(0, 10));
 
 /**
  * Create Express Application
