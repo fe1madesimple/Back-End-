@@ -247,7 +247,7 @@ export class SubscriptionService {
           await this.handleSubscriptionDeleted(event.data.object as Stripe.Subscription);
           break;
 
-        case StripeWebhookEvent.CUSTOMER_SUBSCRIPTION_TRIAL_WILL_END: 
+        case StripeWebhookEvent.CUSTOMER_SUBSCRIPTION_TRIAL_WILL_END:
           await this.handleTrialWillEnd(event.data.object as Stripe.Subscription);
           break;
 
@@ -259,7 +259,7 @@ export class SubscriptionService {
           await this.handlePaymentFailed(event.data.object as Stripe.Invoice);
           break;
 
-        case StripeWebhookEvent.PAYMENT_INTENT_PAYMENT_FAILED: 
+        case StripeWebhookEvent.PAYMENT_INTENT_PAYMENT_FAILED:
           await this.handlePaymentIntentFailed(event.data.object as Stripe.PaymentIntent);
           break;
 
@@ -551,27 +551,71 @@ export class SubscriptionService {
   /**
    * Generate Stripe Customer Portal URL
    */
+  /**
+   * Generate Stripe Customer Portal URL
+   */
+  /**
+   * Generate Stripe Customer Portal URL
+   */
   async createCustomerPortalSession(userId: string): Promise<{ url: string }> {
     const subscription = await prisma.subscription.findUnique({
       where: { userId },
+      include: {
+        user: {
+          select: {
+            email: true,
+            fullName: true,
+          },
+        },
+      },
     });
 
     if (!subscription) {
       throw new AppError('No subscription found', 404);
     }
 
-    if (!subscription.stripeCustomerId) {
-      throw new AppError('No Stripe customer found', 400);
+    // ✅ CREATE CUSTOMER IF DOESN'T EXIST
+    let stripeCustomerId = subscription.stripeCustomerId;
+
+    if (!stripeCustomerId) {
+      // Ensure email and name are not null
+      const email = subscription.user.email;
+      const name = subscription.user.fullName || 'User'; // ✅ Fallback if null
+
+      if (!email) {
+        throw new AppError('User email is required to create customer', 400);
+      }
+
+      // Create Stripe customer
+      const customer = await stripe.customers.create({
+        email: email, // ✅ Now guaranteed to be string
+        name: name, // ✅ Now guaranteed to be string
+        metadata: {
+          userId: subscription.userId,
+        },
+      });
+
+      stripeCustomerId = customer.id;
+
+      // Save customer ID to database
+      await prisma.subscription.update({
+        where: { userId },
+        data: {
+          stripeCustomerId: customer.id,
+        },
+      });
+
+      console.log(`✅ Created Stripe customer for user: ${userId}`);
     }
 
+    // Create portal session
     const session = await stripe.billingPortal.sessions.create({
-      customer: subscription.stripeCustomerId,
+      customer: stripeCustomerId,
       return_url: `${process.env.FRONTEND_URL}/subscription`,
     });
 
     return { url: session.url };
   }
-
   /**
    * Resume cancelled subscription
    */

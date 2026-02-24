@@ -191,6 +191,8 @@ subscriptionRouter.get('/status', protect, subscriptionController.getSubscriptio
  */
 subscriptionRouter.post('/cancel', protect, subscriptionController.cancelSubscription);
 
+
+
 /**
  * @swagger
  * /api/v1/subscription/billing-history:
@@ -274,6 +276,7 @@ subscriptionRouter.post('/cancel', protect, subscriptionController.cancelSubscri
  *         description: No subscription found
  */
 subscriptionRouter.get('/billing-history', protect, subscriptionController.getBillingHistory);
+
 
 /**
  * @swagger
