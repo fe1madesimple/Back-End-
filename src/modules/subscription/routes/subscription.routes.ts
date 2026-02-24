@@ -191,8 +191,6 @@ subscriptionRouter.get('/status', protect, subscriptionController.getSubscriptio
  */
 subscriptionRouter.post('/cancel', protect, subscriptionController.cancelSubscription);
 
-
-
 /**
  * @swagger
  * /api/v1/subscription/billing-history:
@@ -277,7 +275,6 @@ subscriptionRouter.post('/cancel', protect, subscriptionController.cancelSubscri
  */
 subscriptionRouter.get('/billing-history', protect, subscriptionController.getBillingHistory);
 
-
 /**
  * @swagger
  * /api/v1/subscription/portal:
@@ -286,7 +283,18 @@ subscriptionRouter.get('/billing-history', protect, subscriptionController.getBi
  *     description: |
  *       Generates a URL to Stripe's hosted customer portal where users can manage their subscription, update payment methods, and view invoices.
  *
- *       **Note:** After completing actions in the portal, users will be redirected back to your application's subscription page. The frontend engineer must create a subscription route page where users will land after completing actions on the Stripe portal.
+ *       **How it works:**
+ *       - If user has never subscribed, a Stripe customer is automatically created
+ *       - Returns a portal URL that opens in a new browser tab
+ *       - User can manage payment methods, view invoices, and update billing info
+ *       - After completing actions, user is redirected back to `/subscription` page
+ *
+ *       **What users can do in the portal:**
+ *       - Add/remove payment methods (credit cards)
+ *       - Set default payment method
+ *       - Update billing email and address
+ *       - View and download past invoices
+ *       - Cancel subscription (if active)
  *     tags: [Subscription]
  *     security:
  *       - bearerAuth: []
@@ -309,11 +317,36 @@ subscriptionRouter.get('/billing-history', protect, subscriptionController.getBi
  *                   properties:
  *                     url:
  *                       type: string
- *                       example: https://billing.stripe.com/p/session/test_xxx
+ *                       description: Stripe-hosted portal URL to open in new tab
+ *                       example: https://billing.stripe.com/p/session/test_YWNjdF8xT3pRUEMyeFNWRw...
  *       400:
- *         description: No Stripe customer found
+ *         description: User email is required to create customer
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                   example: User email is required to create customer
+ *       401:
+ *         description: Unauthorized - Authentication required
  *       404:
  *         description: No subscription found
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                   example: No subscription found
  */
 subscriptionRouter.get('/portal', protect, subscriptionController.getCustomerPortal);
 
