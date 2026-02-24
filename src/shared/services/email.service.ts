@@ -728,7 +728,7 @@ class EmailService {
     email: string,
     firstName: string,
     amount: number,
-    currency: string,
+    _currency: string,
     nextBillingDate: Date,
     invoiceUrl?: string
   ) {
