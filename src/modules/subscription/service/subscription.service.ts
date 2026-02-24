@@ -298,11 +298,38 @@ export class SubscriptionService {
   /**
    * Handle customer.subscription.created event
    */
+  /**
+   * Handle customer.subscription.created event
+   */
   private async handleSubscriptionCreated(subscription: any) {
-    const userId = subscription.metadata?.userId;
+    // Try to get userId from subscription metadata first
+    let userId = subscription.metadata?.userId;
+
+    // If not in subscription metadata, get it from the customer
+    if (!userId) {
+      const customerId = subscription.customer as string;
+
+      if (!customerId) {
+        console.error('No customer ID in subscription');
+        return;
+      }
+
+      // Find subscription by Stripe customer ID
+      const existingSubscription = await prisma.subscription.findFirst({
+        where: { stripeCustomerId: customerId },
+        select: { userId: true },
+      });
+
+      if (!existingSubscription) {
+        console.error(`No subscription found for customer: ${customerId}`);
+        return;
+      }
+
+      userId = existingSubscription.userId;
+    }
 
     if (!userId) {
-      console.error('No userId in subscription metadata');
+      console.error('Could not determine userId for subscription');
       return;
     }
 
@@ -342,9 +369,21 @@ export class SubscriptionService {
    * Handle customer.subscription.updated event
    */
   private async handleSubscriptionUpdated(subscription: any) {
-    const existingSubscription = await prisma.subscription.findUnique({
+    // Try to find by subscription ID first
+    let existingSubscription = await prisma.subscription.findUnique({
       where: { stripeSubscriptionId: subscription.id },
     });
+
+    // If not found, try by customer ID
+    if (!existingSubscription) {
+      const customerId = subscription.customer as string;
+
+      if (customerId) {
+        existingSubscription = await prisma.subscription.findFirst({
+          where: { stripeCustomerId: customerId },
+        });
+      }
+    }
 
     if (!existingSubscription) {
       console.error(`Subscription not found: ${subscription.id}`);
@@ -352,8 +391,9 @@ export class SubscriptionService {
     }
 
     await prisma.subscription.update({
-      where: { stripeSubscriptionId: subscription.id },
+      where: { id: existingSubscription.id },
       data: {
+        stripeSubscriptionId: subscription.id, // Save it if it wasn't there before
         status:
           subscription.status === 'active'
             ? 'ACTIVE'
