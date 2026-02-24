@@ -801,6 +801,58 @@ class EmailService {
 
     await this.send(email, 'Payment Successful - FE-1 Made Simple', html);
   }
+
+  async sendSubscriptionActivatedEmail(email: string, firstName: string) {
+    const html = `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription Activated</title>
+</head>
+<body style="margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;background-color:#ffffff;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;padding:40px 20px;">
+    <tr>
+      <td align="center" style="padding-bottom:40px;">
+        <img src="https://res.cloudinary.com/dkrjrfqpy/image/upload/v1768477062/Frame_23_a3ppr0.png" alt="FE-1 Made Simple" width="60" style="display:block;">
+      </td>
+    </tr>
+    <tr>
+      <td style="background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;padding:40px;">
+        <h1 style="margin:0 0 16px;font-size:24px;font-weight:600;color:#111827;">🎉 Welcome to Premium!</h1>
+        <p style="margin:0 0 24px;font-size:16px;line-height:24px;color:#6b7280;">Hi ${firstName},</p>
+        <p style="margin:0 0 16px;font-size:16px;line-height:24px;color:#6b7280;">Your premium subscription is now active! You now have unlimited access to all FE-1 exam preparation features.</p>
+        
+        <div style="background:#f0fdf4;border:1px solid #86efac;border-radius:8px;padding:24px;margin-bottom:32px;">
+          <p style="margin:0 0 12px;font-size:14px;font-weight:600;color:#166534;">Premium Features Unlocked:</p>
+          <ul style="margin:0;padding-left:20px;font-size:14px;line-height:24px;color:#15803d;">
+            <li>All 8 FE-1 subjects</li>
+            <li>Unlimited practice questions</li>
+            <li>AI essay feedback</li>
+            <li>Progress tracking</li>
+            <li>Past exam questions</li>
+          </ul>
+        </div>
+
+        <div style="text-align:center;margin-bottom:24px;">
+          <a href="${process.env.FRONTEND_URL}/dashboard" style="display:inline-block;background:#2563eb;color:#ffffff;text-decoration:none;padding:14px 28px;border-radius:8px;font-weight:600;font-size:16px;">Start Learning</a>
+        </div>
+
+        <p style="margin:0;font-size:14px;line-height:20px;color:#9ca3af;text-align:center;">You'll be charged €9.99/month. Cancel anytime.</p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" style="padding-top:32px;">
+        <p style="margin:0;font-size:14px;color:#9ca3af;">© 2026 FE-1 Made Simple. All rights reserved.</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+
+    await this.send(email, 'Welcome to Premium - FE-1 Made Simple', html);
+  }
 }
 
 export default new EmailService();
