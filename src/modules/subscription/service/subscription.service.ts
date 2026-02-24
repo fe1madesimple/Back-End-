@@ -6,10 +6,41 @@ import {
   ICheckoutSessionResponse,
   StripeWebhookEvent,IWebhookResponse, ISubscriptionResponse
 } from '../interface/subscription.interface';
+import emailService from '@/shared/services/email.service';
 
 import { AppError } from '@/shared/utils';
 
 export class SubscriptionService {
+  private async handleTrialWillEnd(subscription: Stripe.Subscription) {
+    const existingSubscription = await prisma.subscription.findUnique({
+      where: { stripeSubscriptionId: subscription.id },
+      include: {
+        user: {
+          select: {
+            id: true,
+            email: true,
+            fullName: true,
+          },
+        },
+      },
+    });
+
+    if (!existingSubscription) {
+      console.error(`Subscription not found: ${subscription.id}`);
+      return;
+    }
+
+    const trialEndDate = subscription.trial_end ? new Date(subscription.trial_end * 1000) : null;
+
+    // Send trial ending reminder email
+    await emailService.sendTrialEndingReminder(
+      existingSubscription.user.email,
+      existingSubscription.user.fullName,
+      trialEndDate
+    );
+
+    console.log(`⚠️ Trial ending in 3 days for: ${existingSubscription.user.email}`);
+  }
   /**
    * Create Stripe Checkout Session for subscription
    */

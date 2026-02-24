@@ -72,7 +72,7 @@ class EmailService {
     await this.send(email, 'Verify Your Email - FE-1 Made Simple', html);
   }
 
-  async sendTrialEndingReminder(email: string, firstName: string, trialEndDate: Date | null) {
+  async sendTrialEndingReminder(email: string, firstName: string | null, trialEndDate: Date | null) {
     const formattedDate = trialEndDate
       ? new Date(trialEndDate).toLocaleDateString('en-IE', {
           month: 'long',
