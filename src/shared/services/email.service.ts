@@ -907,6 +907,64 @@ class EmailService {
 
     await this.send(email, 'Subscription Cancelled - FE-1 Made Simple', html);
   }
+
+  async sendSubscriptionResumedEmail(email: string, firstName: string, nextBillingDate: Date) {
+    const formattedDate = nextBillingDate.toLocaleDateString('en-IE', {
+      month: 'long',
+      day: 'numeric',
+      year: 'numeric',
+    });
+
+    const html = `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription Reactivated</title>
+</head>
+<body style="margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;background-color:#ffffff;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;padding:40px 20px;">
+    <tr>
+      <td align="center" style="padding-bottom:40px;">
+        <img src="https://res.cloudinary.com/dkrjrfqpy/image/upload/v1768477062/Frame_23_a3ppr0.png" alt="FE-1 Made Simple" width="60" style="display:block;">
+      </td>
+    </tr>
+    <tr>
+      <td style="background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;padding:40px;">
+        <div style="text-align:center;margin-bottom:24px;">
+          <div style="display:inline-block;background:#10b981;border-radius:50%;width:64px;height:64px;line-height:64px;">
+            <span style="color:#ffffff;font-size:32px;">✓</span>
+          </div>
+        </div>
+        
+        <h1 style="margin:0 0 16px;font-size:24px;font-weight:600;color:#111827;text-align:center;">Welcome Back!</h1>
+        <p style="margin:0 0 24px;font-size:16px;line-height:24px;color:#6b7280;">Hi ${firstName},</p>
+        <p style="margin:0 0 32px;font-size:16px;line-height:24px;color:#6b7280;">Your subscription has been reactivated! You'll continue to have access to all premium features.</p>
+        
+        <div style="background:#f9fafb;border-radius:8px;padding:24px;margin-bottom:32px;">
+          <p style="margin:0 0 8px;font-size:14px;color:#6b7280;">Next Billing Date:</p>
+          <p style="margin:0;font-size:18px;font-weight:600;color:#111827;">${formattedDate}</p>
+        </div>
+
+        <div style="text-align:center;margin-bottom:24px;">
+          <a href="${process.env.FRONTEND_URL}/dashboard" style="display:inline-block;background:#2563eb;color:#ffffff;text-decoration:none;padding:14px 28px;border-radius:8px;font-weight:600;font-size:16px;">Continue Learning</a>
+        </div>
+
+        <p style="margin:0;font-size:14px;line-height:20px;color:#9ca3af;text-align:center;">Glad to have you back!</p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" style="padding-top:32px;">
+        <p style="margin:0;font-size:14px;color:#9ca3af;">© 2026 FE-1 Made Simple. All rights reserved.</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+
+    await this.send(email, 'Subscription Reactivated - FE-1 Made Simple', html);
+  }
 }
 
 export default new EmailService();
