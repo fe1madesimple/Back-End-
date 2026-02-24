@@ -853,6 +853,60 @@ class EmailService {
 
     await this.send(email, 'Welcome to Premium - FE-1 Made Simple', html);
   }
+
+  async sendSubscriptionCancelledEmail(email: string, firstName: string, accessUntilDate: Date) {
+    const formattedDate = accessUntilDate.toLocaleDateString('en-IE', {
+      month: 'long',
+      day: 'numeric',
+      year: 'numeric',
+    });
+
+    const html = `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription Cancelled</title>
+</head>
+<body style="margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;background-color:#ffffff;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;padding:40px 20px;">
+    <tr>
+      <td align="center" style="padding-bottom:40px;">
+        <img src="https://res.cloudinary.com/dkrjrfqpy/image/upload/v1768477062/Frame_23_a3ppr0.png" alt="FE-1 Made Simple" width="60" style="display:block;">
+      </td>
+    </tr>
+    <tr>
+      <td style="background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;padding:40px;">
+        <h1 style="margin:0 0 16px;font-size:24px;font-weight:600;color:#111827;">Subscription Cancelled</h1>
+        <p style="margin:0 0 24px;font-size:16px;line-height:24px;color:#6b7280;">Hi ${firstName},</p>
+        <p style="margin:0 0 16px;font-size:16px;line-height:24px;color:#6b7280;">We've received your request to cancel your FE-1 Made Simple subscription.</p>
+        
+        <div style="background:#fef3c7;border:1px solid #fcd34d;border-radius:8px;padding:20px;margin-bottom:32px;">
+          <p style="margin:0 0 8px;font-size:14px;font-weight:600;color:#92400e;">Access Until:</p>
+          <p style="margin:0;font-size:18px;font-weight:600;color:#78350f;">${formattedDate}</p>
+        </div>
+
+        <p style="margin:0 0 24px;font-size:16px;line-height:24px;color:#6b7280;">You'll continue to have full access to all premium features until ${formattedDate}. After that, your account will revert to the free plan.</p>
+
+        <div style="text-align:center;margin-bottom:24px;">
+          <a href="${process.env.FRONTEND_URL}/subscription" style="display:inline-block;background:#2563eb;color:#ffffff;text-decoration:none;padding:12px 24px;border-radius:8px;font-weight:600;font-size:14px;">Reactivate Subscription</a>
+        </div>
+
+        <p style="margin:0;font-size:14px;line-height:20px;color:#9ca3af;text-align:center;">Changed your mind? You can reactivate anytime before ${formattedDate}.</p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" style="padding-top:32px;">
+        <p style="margin:0;font-size:14px;color:#9ca3af;">© 2026 FE-1 Made Simple. All rights reserved.</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+
+    await this.send(email, 'Subscription Cancelled - FE-1 Made Simple', html);
+  }
 }
 
 export default new EmailService();
