@@ -220,6 +220,13 @@ export class SubscriptionService {
    */
   async handleWebhook(signature: string, rawBody: Buffer): Promise<IWebhookResponse> {
     try {
+      // ✅ DEBUG LOGS
+      console.log('🔑 WEBHOOK DEBUG:');
+      console.log('STRIPE_CONFIG.WEBHOOK_SECRET exists:', !!STRIPE_CONFIG.WEBHOOK_SECRET);
+      console.log('STRIPE_CONFIG.WEBHOOK_SECRET length:', STRIPE_CONFIG.WEBHOOK_SECRET?.length);
+      console.log('First 20 chars:', STRIPE_CONFIG.WEBHOOK_SECRET?.substring(0, 20));
+      console.log('Signature received:', signature?.substring(0, 50) + '...');
+
       // 1. Verify webhook signature
       const event = stripe.webhooks.constructEvent(
         rawBody,
@@ -227,7 +234,7 @@ export class SubscriptionService {
         STRIPE_CONFIG.WEBHOOK_SECRET
       );
 
-      console.log(`Webhook received: ${event.type}`);
+      console.log(`✅ Webhook received: ${event.type}`);
 
       // 2. Handle different event types
       switch (event.type) {
@@ -273,10 +280,11 @@ export class SubscriptionService {
       };
     } catch (error) {
       if (error instanceof Stripe.errors.StripeSignatureVerificationError) {
+        console.error('❌ Invalid webhook signature');
         throw new AppError('Invalid webhook signature', 400);
       }
 
-      console.error('Webhook error:', error);
+      console.error('❌ Webhook error:', error);
       throw new AppError('Webhook processing failed', 500);
     }
   }
