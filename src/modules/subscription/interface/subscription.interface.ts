@@ -35,6 +35,7 @@ export enum StripeWebhookEvent {
   CUSTOMER_SUBSCRIPTION_DELETED = 'customer.subscription.deleted',
   INVOICE_PAYMENT_SUCCEEDED = 'invoice.payment_succeeded',
   INVOICE_PAYMENT_FAILED = 'invoice.payment_failed',
+  CUSTOMER_SUBSCRIPTION_TRIAL_WILL_END = 'customer.subscription.trial_will_end',
 }
 
 export interface IWebhookResponse {
