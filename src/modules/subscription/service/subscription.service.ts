@@ -231,7 +231,7 @@ export class SubscriptionService {
       const event = stripe.webhooks.constructEvent(
         rawBody,
         signature,
-        STRIPE_CONFIG.WEBHOOK_SECRET
+        'whsec_dDo0yGcSVAj0igMm6yZH3WDtBpUPR3cn'
       );
 
       console.log(`✅ Webhook received: ${event.type}`);
