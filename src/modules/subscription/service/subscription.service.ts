@@ -397,6 +397,14 @@ export class SubscriptionService {
 
     const subscription = await prisma.subscription.findUnique({
       where: { stripeSubscriptionId: subscriptionId },
+      include: {
+        user: {
+          select: {
+            email: true,
+            fullName: true,
+          },
+        },
+      },
     });
 
     if (!subscription) {
@@ -421,6 +429,18 @@ export class SubscriptionService {
         },
       },
     });
+
+    // ✅ SEND EMAIL
+    const nextBillingDate = new Date(invoice.lines.data[0]?.period?.end * 1000 || Date.now());
+
+    await emailService.sendPaymentSuccessEmail(
+      subscription.user.email,
+      subscription.user.fullName!,
+      invoice.amount_paid,
+      invoice.currency.toUpperCase(),
+      nextBillingDate,
+      invoice.hosted_invoice_url
+    );
 
     console.log(`✅ Payment succeeded for subscription: ${subscriptionId}`);
   }
