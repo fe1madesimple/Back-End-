@@ -484,21 +484,13 @@ export class SubscriptionService {
 
     const paymentIntentId = invoice.payment_intent as string;
 
-    // ✅ Check if payment already exists
-    if (paymentIntentId) {
-      const existingPayment = await prisma.payment.findUnique({
-        where: { stripePaymentIntentId: paymentIntentId },
-      });
-
-      if (existingPayment) {
-        console.log(`⚠️ Payment already recorded: ${paymentIntentId}`);
-        return;
-      }
-    }
-
-    // Create payment record
-    await prisma.payment.create({
-      data: {
+    // ✅ Upsert prevents duplicate inserts from concurrent webhooks
+    const payment = await prisma.payment.upsert({
+      where: {
+        stripePaymentIntentId: paymentIntentId || '',
+      },
+      update: {}, // already exists, nothing to change
+      create: {
         userId: subscription.userId,
         subscriptionId: subscription.id,
         amount: invoice.amount_paid,
@@ -514,21 +506,25 @@ export class SubscriptionService {
       },
     });
 
-    console.log(`✅ Payment record created for subscription: ${subscriptionId}`);
+    console.log(`✅ Payment record upserted for subscription: ${subscriptionId}`);
 
-    // ✅ SEND EMAIL
-    const nextBillingDate = new Date(invoice.lines.data[0]?.period?.end * 1000 || Date.now());
+    // Only send email if this was a fresh insert (not a duplicate hit)
+    if (payment.createdAt.getTime() > Date.now() - 5000) {
+      const nextBillingDate = new Date(invoice.lines.data[0]?.period?.end * 1000 || Date.now());
 
-    await emailService.sendPaymentSuccessEmail(
-      subscription.user.email,
-      subscription.user.fullName!,
-      invoice.amount_paid,
-      invoice.currency.toUpperCase(),
-      nextBillingDate,
-      invoice.hosted_invoice_url
-    );
+      await emailService.sendPaymentSuccessEmail(
+        subscription.user.email,
+        subscription.user.fullName!,
+        invoice.amount_paid,
+        invoice.currency.toUpperCase(),
+        nextBillingDate,
+        invoice.hosted_invoice_url
+      );
 
-    console.log(`✅ Payment succeeded for subscription: ${subscriptionId}`);
+      console.log(`✅ Payment success email sent for subscription: ${subscriptionId}`);
+    } else {
+      console.log(`⚠️ Duplicate webhook detected, skipping email: ${paymentIntentId}`);
+    }
   }
   /**
    * Handle invoice.payment_failed event
