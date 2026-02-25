@@ -309,7 +309,10 @@ export class SubscriptionService {
   /**
    * Handle customer.subscription.created event
    */
+
   private async handleSubscriptionCreated(subscription: any) {
+    console.log('📝 FULL SUBSCRIPTION OBJECT:', JSON.stringify(subscription, null, 2));
+
     // Try to get userId from subscription metadata first
     let userId = subscription.metadata?.userId;
 
@@ -348,20 +351,21 @@ export class SubscriptionService {
       return;
     }
 
-    // ✅ FIX: Properly convert timestamps to dates
-    const currentPeriodStart = subscription.current_period_start
-      ? new Date(Number(subscription.current_period_start) * 1000)
-      : new Date();
+    // ✅ Get dates from the subscription object
+    const periodStart = subscription.current_period_start || subscription.billing_cycle_anchor;
+    const periodEnd = subscription.current_period_end;
 
-    const currentPeriodEnd = subscription.current_period_end
-      ? new Date(Number(subscription.current_period_end) * 1000)
-      : new Date();
+    const currentPeriodStart = periodStart ? new Date(Number(periodStart) * 1000) : new Date();
 
-    console.log('Date conversion check:');
-    console.log('current_period_start raw:', subscription.current_period_start);
-    console.log('current_period_start converted:', currentPeriodStart);
-    console.log('current_period_end raw:', subscription.current_period_end);
-    console.log('current_period_end converted:', currentPeriodEnd);
+    const currentPeriodEnd = periodEnd
+      ? new Date(Number(periodEnd) * 1000)
+      : new Date(Date.now() + 30 * 24 * 60 * 60 * 1000); // 30 days from now as fallback
+
+    console.log('📅 Period dates:');
+    console.log('Start timestamp:', periodStart);
+    console.log('End timestamp:', periodEnd);
+    console.log('Start date:', currentPeriodStart);
+    console.log('End date:', currentPeriodEnd);
 
     // Update subscription in database
     await prisma.subscription.update({
