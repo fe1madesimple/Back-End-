@@ -437,17 +437,17 @@ export class SubscriptionService {
    */
   private async handlePaymentSucceeded(invoice: any) {
     console.log('📧 Processing invoice.payment_succeeded');
-    console.log('Invoice ID:', invoice.id);
-    console.log('Invoice subscription field:', invoice.subscription);
-    console.log('Invoice object keys:', Object.keys(invoice));
 
-    const subscriptionId = invoice.subscription as string;
+    // ✅ Get subscription ID from the parent.subscription_details object
+    const subscriptionId =
+      invoice.parent?.subscription_details?.subscription || invoice.subscription;
 
     if (!subscriptionId) {
       console.error('No subscription ID in invoice');
-      console.error('Full invoice object:', JSON.stringify(invoice, null, 2));
       return;
     }
+
+    console.log(`Processing payment for subscription: ${subscriptionId}`);
 
     const subscription = await prisma.subscription.findUnique({
       where: { stripeSubscriptionId: subscriptionId },
@@ -505,7 +505,11 @@ export class SubscriptionService {
    * Handle invoice.payment_failed event
    */
   private async handlePaymentFailed(invoice: any) {
-    const subscriptionId = invoice.subscription as string;
+    console.log('❌ Processing invoice.payment_failed');
+
+    // ✅ Get subscription ID from the parent.subscription_details object
+    const subscriptionId =
+      invoice.parent?.subscription_details?.subscription || invoice.subscription;
 
     if (!subscriptionId) {
       console.error('No subscription ID in invoice');
@@ -544,7 +548,7 @@ export class SubscriptionService {
       },
     });
 
-    // ✅ SEND EMAIL (if payment_intent.payment_failed didn't already send one)
+    // ✅ SEND EMAIL
     await emailService.sendPaymentFailedEmail(
       subscription.user.email,
       subscription.user.fullName,
