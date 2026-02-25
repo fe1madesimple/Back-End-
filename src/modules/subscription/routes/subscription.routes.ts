@@ -4,7 +4,6 @@ import { protect } from '@/shared/middleware/auth.middleware';
 import { validate } from '@/shared/middleware/validation';
 import {
   createCheckoutSessionSchema,
-  applyCouponSchema,
 } from '../validator/subscription.validator';
 import express from 'express';
 
@@ -172,24 +171,24 @@ subscriptionRouter.post(
  */
 subscriptionRouter.get('/status', protect, subscriptionController.getSubscriptionStatus);
 
-/**
- * @swagger
- * /api/v1/subscription/cancel:
- *   post:
- *     summary: Cancel subscription
- *     description: Cancels the user's subscription. Access continues until current period ends.
- *     tags: [Subscription]
- *     security:
- *       - bearerAuth: []
- *     responses:
- *       200:
- *         description: Subscription cancelled successfully
- *       400:
- *         description: Already cancelled or no active subscription
- *       404:
- *         description: No subscription found
- */
-subscriptionRouter.post('/cancel', protect, subscriptionController.cancelSubscription);
+// /**
+//  * @swagger
+//  * /api/v1/subscription/cancel:
+//  *   post:
+//  *     summary: Cancel subscription
+//  *     description: Cancels the user's subscription. Access continues until current period ends.
+//  *     tags: [Subscription]
+//  *     security:
+//  *       - bearerAuth: []
+//  *     responses:
+//  *       200:
+//  *         description: Subscription cancelled successfully
+//  *       400:
+//  *         description: Already cancelled or no active subscription
+//  *       404:
+//  *         description: No subscription found
+//  */
+// subscriptionRouter.post('/cancel', protect, subscriptionController.cancelSubscription);
 
 /**
  * @swagger
@@ -350,164 +349,164 @@ subscriptionRouter.get('/billing-history', protect, subscriptionController.getBi
  */
 subscriptionRouter.get('/portal', protect, subscriptionController.getCustomerPortal);
 
-/**
- * @swagger
- * /api/v1/subscription/resume:
- *   post:
- *     summary: Resume cancelled subscription
- *     description: Reactivates a cancelled subscription before the current period ends
- *     tags: [Subscription]
- *     security:
- *       - bearerAuth: []
- *     responses:
- *       200:
- *         description: Subscription resumed successfully
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 success:
- *                   type: boolean
- *                   example: true
- *                 message:
- *                   type: string
- *                   example: Subscription resumed successfully
- *       400:
- *         description: Subscription is not cancelled
- *       404:
- *         description: No subscription found
- */
-subscriptionRouter.post('/resume', protect, subscriptionController.resumeSubscription);
+// /**
+//  * @swagger
+//  * /api/v1/subscription/resume:
+//  *   post:
+//  *     summary: Resume cancelled subscription
+//  *     description: Reactivates a cancelled subscription before the current period ends
+//  *     tags: [Subscription]
+//  *     security:
+//  *       - bearerAuth: []
+//  *     responses:
+//  *       200:
+//  *         description: Subscription resumed successfully
+//  *         content:
+//  *           application/json:
+//  *             schema:
+//  *               type: object
+//  *               properties:
+//  *                 success:
+//  *                   type: boolean
+//  *                   example: true
+//  *                 message:
+//  *                   type: string
+//  *                   example: Subscription resumed successfully
+//  *       400:
+//  *         description: Subscription is not cancelled
+//  *       404:
+//  *         description: No subscription found
+//  */
+// subscriptionRouter.post('/resume', protect, subscriptionController.resumeSubscription);
 
-/**
- * @swagger
- * /api/v1/subscription/preview-invoice:
- *   get:
- *     summary: Preview upcoming invoice
- *     description: Shows what the user will be charged on their next billing date
- *     tags: [Subscription]
- *     security:
- *       - bearerAuth: []
- *     responses:
- *       200:
- *         description: Invoice preview retrieved
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 success:
- *                   type: boolean
- *                   example: true
- *                 message:
- *                   type: string
- *                   example: Invoice preview retrieved
- *                 data:
- *                   type: object
- *                   properties:
- *                     amount:
- *                       type: integer
- *                       example: 999
- *                     currency:
- *                       type: string
- *                       example: EUR
- *                     billingDate:
- *                       type: string
- *                       format: date-time
- *                     items:
- *                       type: array
- *                       items:
- *                         type: object
- *                         properties:
- *                           description:
- *                             type: string
- *                           amount:
- *                             type: integer
- *                           quantity:
- *                             type: integer
- *                     tax:
- *                       type: integer
- *                     total:
- *                       type: integer
- *       400:
- *         description: No active subscription
- *       404:
- *         description: No subscription found
- */
-subscriptionRouter.get('/preview-invoice', protect, subscriptionController.previewInvoice);
+// /**
+//  * @swagger
+//  * /api/v1/subscription/preview-invoice:
+//  *   get:
+//  *     summary: Preview upcoming invoice
+//  *     description: Shows what the user will be charged on their next billing date
+//  *     tags: [Subscription]
+//  *     security:
+//  *       - bearerAuth: []
+//  *     responses:
+//  *       200:
+//  *         description: Invoice preview retrieved
+//  *         content:
+//  *           application/json:
+//  *             schema:
+//  *               type: object
+//  *               properties:
+//  *                 success:
+//  *                   type: boolean
+//  *                   example: true
+//  *                 message:
+//  *                   type: string
+//  *                   example: Invoice preview retrieved
+//  *                 data:
+//  *                   type: object
+//  *                   properties:
+//  *                     amount:
+//  *                       type: integer
+//  *                       example: 999
+//  *                     currency:
+//  *                       type: string
+//  *                       example: EUR
+//  *                     billingDate:
+//  *                       type: string
+//  *                       format: date-time
+//  *                     items:
+//  *                       type: array
+//  *                       items:
+//  *                         type: object
+//  *                         properties:
+//  *                           description:
+//  *                             type: string
+//  *                           amount:
+//  *                             type: integer
+//  *                           quantity:
+//  *                             type: integer
+//  *                     tax:
+//  *                       type: integer
+//  *                     total:
+//  *                       type: integer
+//  *       400:
+//  *         description: No active subscription
+//  *       404:
+//  *         description: No subscription found
+//  */
+// subscriptionRouter.get('/preview-invoice', protect, subscriptionController.previewInvoice);
 
-/**
- * @swagger
- * /api/v1/subscription/apply-coupon:
- *   post:
- *     summary: Apply coupon to subscription
- *     description: Applies a promotional coupon code to the user's subscription
- *     tags: [Subscription]
- *     security:
- *       - bearerAuth: []
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             required:
- *               - couponCode
- *             properties:
- *               couponCode:
- *                 type: string
- *                 example: STUDENT50
- *     responses:
- *       200:
- *         description: Coupon applied successfully
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 success:
- *                   type: boolean
- *                   example: true
- *                 message:
- *                   type: string
- *                   example: Coupon applied successfully
- *                 data:
- *                   type: object
- *                   properties:
- *                     code:
- *                       type: string
- *                       example: STUDENT50
- *                     percentOff:
- *                       type: number
- *                       nullable: true
- *                       example: 50
- *                     amountOff:
- *                       type: number
- *                       nullable: true
- *                       example: null
- *                     currency:
- *                       type: string
- *                       nullable: true
- *                       example: null
- *                     duration:
- *                       type: string
- *                       example: once
- *                     durationInMonths:
- *                       type: number
- *                       nullable: true
- *                       example: null
- *       400:
- *         description: Invalid coupon or no active subscription
- *       404:
- *         description: No subscription found
- */
-subscriptionRouter.post(
-  '/apply-coupon',
-  protect,
-  validate(applyCouponSchema),
-  subscriptionController.applyCoupon
-);
+// /**
+//  * @swagger
+//  * /api/v1/subscription/apply-coupon:
+//  *   post:
+//  *     summary: Apply coupon to subscription
+//  *     description: Applies a promotional coupon code to the user's subscription
+//  *     tags: [Subscription]
+//  *     security:
+//  *       - bearerAuth: []
+//  *     requestBody:
+//  *       required: true
+//  *       content:
+//  *         application/json:
+//  *           schema:
+//  *             type: object
+//  *             required:
+//  *               - couponCode
+//  *             properties:
+//  *               couponCode:
+//  *                 type: string
+//  *                 example: STUDENT50
+//  *     responses:
+//  *       200:
+//  *         description: Coupon applied successfully
+//  *         content:
+//  *           application/json:
+//  *             schema:
+//  *               type: object
+//  *               properties:
+//  *                 success:
+//  *                   type: boolean
+//  *                   example: true
+//  *                 message:
+//  *                   type: string
+//  *                   example: Coupon applied successfully
+//  *                 data:
+//  *                   type: object
+//  *                   properties:
+//  *                     code:
+//  *                       type: string
+//  *                       example: STUDENT50
+//  *                     percentOff:
+//  *                       type: number
+//  *                       nullable: true
+//  *                       example: 50
+//  *                     amountOff:
+//  *                       type: number
+//  *                       nullable: true
+//  *                       example: null
+//  *                     currency:
+//  *                       type: string
+//  *                       nullable: true
+//  *                       example: null
+//  *                     duration:
+//  *                       type: string
+//  *                       example: once
+//  *                     durationInMonths:
+//  *                       type: number
+//  *                       nullable: true
+//  *                       example: null
+//  *       400:
+//  *         description: Invalid coupon or no active subscription
+//  *       404:
+//  *         description: No subscription found
+//  */
+// subscriptionRouter.post(
+//   '/apply-coupon',
+//   protect,
+//   validate(applyCouponSchema),
+//   subscriptionController.applyCoupon
+// );
 
 /**
  * @swagger
