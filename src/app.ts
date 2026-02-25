@@ -70,6 +70,17 @@ const createApp = (): Application => {
     });
   }
 
+  // ✅ CRITICAL: Mount webhook route BEFORE express.json()
+  app.post(
+    '/api/v1/subscription/webhook',
+    express.raw({ type: 'application/json' }),
+    (req, res, next) => {
+      // Route to subscription router's webhook handler
+      subscriptionRouter(req, res, next);
+    }
+  );
+
+  // NOW add body parsers for all other routes
   app.use(express.json({ limit: '10mb' }));
   app.use(express.urlencoded({ extended: true, limit: '10mb' }));
   app.use(cookieParser());
@@ -102,30 +113,11 @@ const createApp = (): Application => {
     })
   );
 
-  logger.info('Security middleware (Helmet) enabled'); // ← Add this
-
-  logger.info('CORS enabled', { allowedOrigins: corsOrigins }); // ← Add this
-
-  logger.info('Body parsers enabled', { limit: '10mb' }); // ← Add this
-
-  logger.info('Response compression enabled');
-
   app.use(passport.initialize());
   configureGoogleStrategy();
 
   app.use(requestLogger);
 
-  /**
-   * @swagger
-   * /:
-   *   get:
-   *     summary: API Welcome
-   *     description: Welcome message and API information
-   *     tags: [General]
-   *     responses:
-   *       200:
-   *         description: API information
-   */
   app.get('/', (_req, res) => {
     res.status(200).json({
       success: true,
@@ -137,42 +129,6 @@ const createApp = (): Application => {
     });
   });
 
-  logger.info('Root endpoint registered at /');
-
-  /**
-   * @swagger
-   * /health:
-   *   get:
-   *     summary: Health check
-   *     description: Check if the server is running and healthy
-   *     tags: [Health]
-   *     responses:
-   *       200:
-   *         description: Server is healthy
-   *         content:
-   *           application/json:
-   *             schema:
-   *               type: object
-   *               properties:
-   *                 success:
-   *                   type: boolean
-   *                   example: true
-   *                 message:
-   *                   type: string
-   *                   example: Server is healthy
-   *                 timestamp:
-   *                   type: string
-   *                   format: date-time
-   *                 uptime:
-   *                   type: number
-   *                   example: 123.456
-   *                 environment:
-   *                   type: string
-   *                   example: development
-   *                 version:
-   *                   type: string
-   *                   example: 1.0.0
-   */
   app.get('/health', (_req, res) => {
     res.status(200).json({
       success: true,
@@ -184,17 +140,13 @@ const createApp = (): Application => {
     });
   });
 
-  logger.info('Health check endpoint registered at /health');
-
   app.use('/api-docs', swaggerUi.serve);
   app.get('/api-docs', swaggerUi.setup(swaggerSpec));
 
-  logger.info('Swagger API documentation available at /api-docs');
-  logger.info('Swagger API documentation available at /api-docs');
-
+  // Mount all routes
   app.use('/api/v1/auth', authRouter);
   app.use('/api/v1/users', userRouter);
-  app.use('/api/v1/subscription', subscriptionRouter);
+  app.use('/api/v1/subscription', subscriptionRouter); // Other subscription routes (not webhook)
   app.use('/api/v1/practice', practiceRouter);
   app.use('/api/v1/subjects', subjectRouter);
   app.use('/api/v1/lessons', lessonRouter);
@@ -206,6 +158,7 @@ const createApp = (): Application => {
   app.use('/api/v1/achievements', achievementRouter);
   app.use('/api/v1/cases', caseRouter);
   app.use('/api/v1/support', supportRouter);
+
   app.use(notFoundHandler);
   app.use(errorHandler);
 
