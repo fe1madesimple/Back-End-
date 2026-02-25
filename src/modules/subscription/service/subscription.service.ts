@@ -348,6 +348,21 @@ export class SubscriptionService {
       return;
     }
 
+    // ✅ FIX: Properly convert timestamps to dates
+    const currentPeriodStart = subscription.current_period_start
+      ? new Date(Number(subscription.current_period_start) * 1000)
+      : new Date();
+
+    const currentPeriodEnd = subscription.current_period_end
+      ? new Date(Number(subscription.current_period_end) * 1000)
+      : new Date();
+
+    console.log('Date conversion check:');
+    console.log('current_period_start raw:', subscription.current_period_start);
+    console.log('current_period_start converted:', currentPeriodStart);
+    console.log('current_period_end raw:', subscription.current_period_end);
+    console.log('current_period_end converted:', currentPeriodEnd);
+
     // Update subscription in database
     await prisma.subscription.update({
       where: { userId },
@@ -356,8 +371,8 @@ export class SubscriptionService {
         stripePriceId: priceId,
         status: 'ACTIVE',
         planType: 'MONTHLY',
-        currentPeriodStart: new Date((subscription.current_period_start as number) * 1000),
-        currentPeriodEnd: new Date((subscription.current_period_end as number) * 1000),
+        currentPeriodStart: currentPeriodStart,
+        currentPeriodEnd: currentPeriodEnd,
       },
     });
 
