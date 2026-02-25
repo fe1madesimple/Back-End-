@@ -62,7 +62,6 @@ class Practise {
     });
   }
 
-
   async getQuickQuiz(userId: string): Promise<QuickQuizResponse> {
     const session = await prisma.quizSession.create({
       data: {
@@ -110,7 +109,6 @@ class Practise {
     };
   }
 
-
   async getMixedChallenge(userId: string): Promise<MixedChallengeResponse> {
     const session = await prisma.quizSession.create({
       data: {
@@ -157,7 +155,6 @@ class Practise {
       totalAvailable: totalCount,
     };
   }
-
 
   async getPastQuestions(query: PastQuestionsQuery): Promise<any> {
     const { search, subject, year, examType, page = 1, limit = 9 } = query;
@@ -236,7 +233,6 @@ class Practise {
       },
     };
   }
-
 
   async getPastQuestionDetail(userId: string, questionId: string): Promise<any> {
     const parentQuestion = await prisma.question.findUnique({
@@ -514,11 +510,12 @@ class Practise {
     // Check if questionIndex is provided and valid
     if (questionIndex !== undefined) {
       // Validate index is within bounds (0 to length-1)
-      if (questionIndex < 0 || questionIndex >= parentQuestion.questionSets.length) {
+      if (questionIndex < 0 || questionIndex > parentQuestion.questionSets.length) {
         throw new AppError('Question index does not exist', 400);
       }
 
       // find the existing timer
+      let timer;
 
       const existingTimer = await prisma.questionTimer.findFirst({
         where: {
@@ -529,11 +526,24 @@ class Practise {
         },
       });
 
+      if (existingTimer) {
+        timer = existingTimer
+      }
+
+      if (!existingTimer) {
+        timer = await prisma.questionTimer.create({
+          data: {
+            userId,
+            questionId: parentQuestion.id,
+          },
+        });
+      }
+
       // Return the specific question at the given index
       const targetQuestion = parentQuestion.questionSets[questionIndex]!;
 
       return {
-        timerId: existingTimer?.id,
+        timerId: timer?.id,
         currentQuestionIndex: questionIndex,
         totalQuestions: parentQuestion.questionSets.length + 1,
         questionId: targetQuestion.id,
@@ -668,7 +678,6 @@ class Practise {
     };
   }
 
-  
   async getNextQuestion(
     parentQuestionId: string,
     currentIndex: number,
@@ -954,7 +963,5 @@ Return ONLY valid JSON with this exact structure:
     };
   }
 }
-
-
 
 export default new Practise();
