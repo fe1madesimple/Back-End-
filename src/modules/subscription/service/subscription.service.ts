@@ -482,12 +482,18 @@ export class SubscriptionService {
       return;
     }
 
-    const paymentIntentId = invoice.payment_intent as string;
+    // ✅ Fallback to invoice ID if payment_intent is null
+    const paymentIntentId = (invoice.payment_intent || invoice.id) as string;
+
+    // ✅ Check before upsert to reliably detect duplicates
+    const existingPayment = await prisma.payment.findUnique({
+      where: { stripePaymentIntentId: paymentIntentId },
+    });
 
     // ✅ Upsert prevents duplicate inserts from concurrent webhooks
     const payment = await prisma.payment.upsert({
       where: {
-        stripePaymentIntentId: paymentIntentId || '',
+        stripePaymentIntentId: paymentIntentId,
       },
       update: {}, // already exists, nothing to change
       create: {
@@ -496,7 +502,7 @@ export class SubscriptionService {
         amount: invoice.amount_paid,
         currency: invoice.currency.toUpperCase(),
         status: 'SUCCESS',
-        stripePaymentIntentId: paymentIntentId || '',
+        stripePaymentIntentId: paymentIntentId,
         stripeInvoiceId: invoice.id,
         paymentMethod: 'card',
         metadata: {
@@ -508,9 +514,9 @@ export class SubscriptionService {
 
     console.log(`✅ Payment record upserted for subscription: ${subscriptionId}`);
 
-    // Only send email if this was a fresh insert (not a duplicate hit)
-    if (payment.createdAt.getTime() > Date.now() - 5000) {
-      const nextBillingDate = new Date(invoice.lines.data[0]?.period?.end * 1000 || Date.now());
+    // ✅ Only send email if this was a genuinely new payment record
+    if (!existingPayment) {
+      const nextBillingDate = new Date(invoice.lines?.data[0]?.period?.end * 1000 || Date.now());
 
       await emailService.sendPaymentSuccessEmail(
         subscription.user.email,
