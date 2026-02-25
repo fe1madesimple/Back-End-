@@ -436,10 +436,16 @@ export class SubscriptionService {
    * Handle invoice.payment_succeeded event
    */
   private async handlePaymentSucceeded(invoice: any) {
+    console.log('📧 Processing invoice.payment_succeeded');
+    console.log('Invoice ID:', invoice.id);
+    console.log('Invoice subscription field:', invoice.subscription);
+    console.log('Invoice object keys:', Object.keys(invoice));
+
     const subscriptionId = invoice.subscription as string;
 
     if (!subscriptionId) {
       console.error('No subscription ID in invoice');
+      console.error('Full invoice object:', JSON.stringify(invoice, null, 2));
       return;
     }
 
@@ -477,6 +483,8 @@ export class SubscriptionService {
         },
       },
     });
+
+    console.log(`✅ Payment record created for subscription: ${subscriptionId}`);
 
     // ✅ SEND EMAIL
     const nextBillingDate = new Date(invoice.lines.data[0]?.period?.end * 1000 || Date.now());
