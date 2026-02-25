@@ -457,7 +457,6 @@ export class SubscriptionService {
   private async handlePaymentSucceeded(invoice: any) {
     console.log('📧 Processing invoice.payment_succeeded');
 
-    // ✅ Get subscription ID from the parent.subscription_details object
     const subscriptionId =
       invoice.parent?.subscription_details?.subscription || invoice.subscription;
 
@@ -466,9 +465,6 @@ export class SubscriptionService {
       return;
     }
 
-    console.log(`Processing payment for subscription: ${subscriptionId}`);
-
-    // ✅ Try to find subscription, but don't fail if not found yet
     const subscription = await prisma.subscription.findUnique({
       where: { stripeSubscriptionId: subscriptionId },
       include: {
@@ -482,13 +478,22 @@ export class SubscriptionService {
     });
 
     if (!subscription) {
-      console.log(
-        `⚠️ Subscription not found yet (may be created by another webhook): ${subscriptionId}`
-      );
-      console.log(
-        `⚠️ Skipping payment record creation - will be handled by customer.subscription.created`
-      );
+      console.log(`⚠️ Subscription not found yet: ${subscriptionId}`);
       return;
+    }
+
+    const paymentIntentId = invoice.payment_intent as string;
+
+    // ✅ Check if payment already exists
+    if (paymentIntentId) {
+      const existingPayment = await prisma.payment.findUnique({
+        where: { stripePaymentIntentId: paymentIntentId },
+      });
+
+      if (existingPayment) {
+        console.log(`⚠️ Payment already recorded: ${paymentIntentId}`);
+        return;
+      }
     }
 
     // Create payment record
@@ -499,7 +504,7 @@ export class SubscriptionService {
         amount: invoice.amount_paid,
         currency: invoice.currency.toUpperCase(),
         status: 'SUCCESS',
-        stripePaymentIntentId: (invoice.payment_intent as string) || '',
+        stripePaymentIntentId: paymentIntentId || '',
         stripeInvoiceId: invoice.id,
         paymentMethod: 'card',
         metadata: {
