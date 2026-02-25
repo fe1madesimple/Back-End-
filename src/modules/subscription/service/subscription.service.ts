@@ -491,7 +491,7 @@ export class SubscriptionService {
     });
 
     // ✅ Upsert prevents duplicate inserts from concurrent webhooks
-    const payment = await prisma.payment.upsert({
+    await prisma.payment.upsert({
       where: {
         stripePaymentIntentId: paymentIntentId,
       },
