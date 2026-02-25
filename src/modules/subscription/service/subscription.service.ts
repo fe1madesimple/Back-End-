@@ -365,7 +365,6 @@ export class SubscriptionService {
     console.log('Start date:', currentPeriodStart);
     console.log('End date:', currentPeriodEnd);
 
-    // Update subscription in database
     await prisma.subscription.update({
       where: { userId },
       data: {
@@ -375,6 +374,7 @@ export class SubscriptionService {
         planType: 'MONTHLY',
         currentPeriodStart: currentPeriodStart,
         currentPeriodEnd: currentPeriodEnd,
+        cancelledAt: null,
       },
     });
 
@@ -416,8 +416,7 @@ export class SubscriptionService {
       return;
     }
 
-    console.log(subscription.cancel_at_period_end, "cancelled")
-    
+    console.log(subscription.cancel_at_period_end, 'cancelled');
 
     const cancelledAt = subscription.cancel_at_period_end
       ? subscription.canceled_at
@@ -437,10 +436,8 @@ export class SubscriptionService {
               : 'ACTIVE',
         currentPeriodStart: new Date(subscription.current_period_start * 1000),
         currentPeriodEnd: new Date(subscription.current_period_end * 1000),
-        cancelledAt, 
+        cancelledAt,
       },
-
-      
     });
 
     console.log(`✅ Subscription updated: ${subscription.id}`);
@@ -802,7 +799,6 @@ export class SubscriptionService {
       throw new AppError('No subscription found', 404);
     }
 
-    // ✅ Fixed condition - cancelledAt set means scheduled for cancellation
     if (!subscription.cancelledAt) {
       throw new AppError('Subscription is not scheduled for cancellation', 400);
     }
@@ -811,7 +807,7 @@ export class SubscriptionService {
       throw new AppError('No active Stripe subscription', 400);
     }
 
-    // Check period hasn't already ended
+   
     if (subscription.currentPeriodEnd && subscription.currentPeriodEnd < new Date()) {
       throw new AppError('Subscription period has ended, please re-subscribe', 400);
     }
