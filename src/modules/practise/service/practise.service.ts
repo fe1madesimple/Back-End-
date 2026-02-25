@@ -218,7 +218,8 @@ class Practise {
         examType: q.examType!,
         order: q.order,
         description: q.description || q.text.substring(0, 150) + '...',
-        questionCount: q.questionSets.length + 1,
+        questionCount: q.questionSets.length,
+        questionSets: q.questionSets
       })),
       pagination: {
         total,
@@ -510,7 +511,7 @@ class Practise {
     // Check if questionIndex is provided and valid
     if (questionIndex !== undefined) {
       // Validate index is within bounds (0 to length-1)
-      if (questionIndex < 0 || questionIndex > parentQuestion.questionSets.length) {
+      if (questionIndex < 0 || questionIndex >= parentQuestion.questionSets.length) {
         throw new AppError('Question index does not exist', 400);
       }
 
@@ -545,7 +546,7 @@ class Practise {
       return {
         timerId: timer?.id,
         currentQuestionIndex: questionIndex,
-        totalQuestions: parentQuestion.questionSets.length + 1,
+        totalQuestions: parentQuestion.questionSets.length,
         questionId: targetQuestion.id,
         subject: targetQuestion.subject,
         examType: targetQuestion.examType,
@@ -585,7 +586,7 @@ class Practise {
     return {
       timerId: timer.id,
       currentQuestionIndex: 0,
-      totalQuestions: parentQuestion.questionSets.length + 1,
+      totalQuestions: parentQuestion.questionSets.length,
       questionId: firstQuestion.id,
       subject: firstQuestion.subject,
       examType: firstQuestion.examType,
@@ -715,7 +716,7 @@ class Practise {
     return {
       timerId: timer.id,
       currentQuestionIndex: nextIndex,
-      totalQuestions: parentQuestion.questionSets.length + 1,
+      totalQuestions: parentQuestion.questionSets.length,
       questionId: nextQuestion.id,
       subject: nextQuestion.subject,
       examType: nextQuestion.examType,
