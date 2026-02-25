@@ -449,6 +449,7 @@ export class SubscriptionService {
 
     console.log(`Processing payment for subscription: ${subscriptionId}`);
 
+    // ✅ Try to find subscription, but don't fail if not found yet
     const subscription = await prisma.subscription.findUnique({
       where: { stripeSubscriptionId: subscriptionId },
       include: {
@@ -462,7 +463,12 @@ export class SubscriptionService {
     });
 
     if (!subscription) {
-      console.error(`Subscription not found: ${subscriptionId}`);
+      console.log(
+        `⚠️ Subscription not found yet (may be created by another webhook): ${subscriptionId}`
+      );
+      console.log(
+        `⚠️ Skipping payment record creation - will be handled by customer.subscription.created`
+      );
       return;
     }
 
@@ -500,7 +506,6 @@ export class SubscriptionService {
 
     console.log(`✅ Payment succeeded for subscription: ${subscriptionId}`);
   }
-
   /**
    * Handle invoice.payment_failed event
    */
