@@ -62,6 +62,7 @@ class Practise {
     });
   }
 
+
   async getQuickQuiz(userId: string): Promise<QuickQuizResponse> {
     const session = await prisma.quizSession.create({
       data: {
@@ -109,6 +110,7 @@ class Practise {
     };
   }
 
+
   async getMixedChallenge(userId: string): Promise<MixedChallengeResponse> {
     const session = await prisma.quizSession.create({
       data: {
@@ -155,6 +157,7 @@ class Practise {
       totalAvailable: totalCount,
     };
   }
+
 
   async getPastQuestions(query: PastQuestionsQuery): Promise<any> {
     const { search, subject, year, examType, page = 1, limit = 9 } = query;
@@ -233,6 +236,8 @@ class Practise {
       },
     };
   }
+
+
   async getPastQuestionDetail(userId: string, questionId: string): Promise<any> {
     const parentQuestion = await prisma.question.findUnique({
       where: { id: questionId },
@@ -513,11 +518,22 @@ class Practise {
         throw new AppError('Question index does not exist', 400);
       }
 
+      // find the existing timer
+
+      const existingTimer = await prisma.questionTimer.findFirst({
+        where: {
+          userId,
+          questionId: parentQuestionId,
+          isStarted: true,
+          endedAt: null,
+        },
+      });
+
       // Return the specific question at the given index
       const targetQuestion = parentQuestion.questionSets[questionIndex]!;
 
       return {
-        timerId: null, // No timer created when fetching specific question
+        timerId: existingTimer?.id,
         currentQuestionIndex: questionIndex,
         totalQuestions: parentQuestion.questionSets.length + 1,
         questionId: targetQuestion.id,
@@ -552,7 +568,7 @@ class Practise {
     const timer = await prisma.questionTimer.create({
       data: {
         userId,
-        questionId: firstQuestion.id,
+        questionId: parentQuestion.id,
       },
     });
 
@@ -937,5 +953,7 @@ Return ONLY valid JSON with this exact structure:
     };
   }
 }
+
+
 
 export default new Practise();
