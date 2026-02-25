@@ -171,24 +171,28 @@ subscriptionRouter.post(
  */
 subscriptionRouter.get('/status', protect, subscriptionController.getSubscriptionStatus);
 
-// /**
-//  * @swagger
-//  * /api/v1/subscription/cancel:
-//  *   post:
-//  *     summary: Cancel subscription
-//  *     description: Cancels the user's subscription. Access continues until current period ends.
-//  *     tags: [Subscription]
-//  *     security:
-//  *       - bearerAuth: []
-//  *     responses:
-//  *       200:
-//  *         description: Subscription cancelled successfully
-//  *       400:
-//  *         description: Already cancelled or no active subscription
-//  *       404:
-//  *         description: No subscription found
-//  */
-// subscriptionRouter.post('/cancel', protect, subscriptionController.cancelSubscription);
+
+/**
+ * @swagger
+ * /api/v1/subscription/cancel:
+ *   post:
+ *     summary: Cancel subscription
+ *     description: Cancels the user's subscription. Access continues until current period ends.
+ *     tags: [Subscription]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Subscription cancelled successfully
+ *       400:
+ *         description: Already cancelled or no active subscription
+ *       404:
+ *         description: No subscription found
+ */
+subscriptionRouter.post('/cancel', protect, subscriptionController.cancelSubscription);
+
+
+
 
 /**
  * @swagger
