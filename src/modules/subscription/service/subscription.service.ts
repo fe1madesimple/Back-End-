@@ -394,15 +394,16 @@ export class SubscriptionService {
    * Handle customer.subscription.updated event
    */
   private async handleSubscriptionUpdated(subscription: any) {
-    // Try to find by subscription ID first
+    console.log('canceled_at from Stripe:', subscription.canceled_at);
+    console.log('cancel_at_period_end from Stripe:', subscription.cancel_at_period_end);
+    console.log('status from Stripe:', subscription.status);
+
     let existingSubscription = await prisma.subscription.findUnique({
       where: { stripeSubscriptionId: subscription.id },
     });
 
-    // If not found, try by customer ID
     if (!existingSubscription) {
       const customerId = subscription.customer as string;
-
       if (customerId) {
         existingSubscription = await prisma.subscription.findFirst({
           where: { stripeCustomerId: customerId },
@@ -415,10 +416,19 @@ export class SubscriptionService {
       return;
     }
 
+    console.log(subscription.cancel_at_period_end, "cancelled")
+    
+
+    const cancelledAt = subscription.cancel_at_period_end
+      ? subscription.canceled_at
+        ? new Date(subscription.canceled_at * 1000)
+        : new Date()
+      : null;
+
     await prisma.subscription.update({
       where: { id: existingSubscription.id },
       data: {
-        stripeSubscriptionId: subscription.id, // Save it if it wasn't there before
+        stripeSubscriptionId: subscription.id,
         status:
           subscription.status === 'active'
             ? 'ACTIVE'
@@ -427,8 +437,10 @@ export class SubscriptionService {
               : 'ACTIVE',
         currentPeriodStart: new Date(subscription.current_period_start * 1000),
         currentPeriodEnd: new Date(subscription.current_period_end * 1000),
-        cancelledAt: subscription.canceled_at ? new Date(subscription.canceled_at * 1000) : null,
+        cancelledAt, 
       },
+
+      
     });
 
     console.log(`✅ Subscription updated: ${subscription.id}`);
@@ -437,6 +449,7 @@ export class SubscriptionService {
   /**
    * Handle customer.subscription.deleted event
    */
+
   private async handleSubscriptionDeleted(subscription: Stripe.Subscription) {
     await prisma.subscription.update({
       where: { stripeSubscriptionId: subscription.id },
@@ -615,6 +628,9 @@ export class SubscriptionService {
     // ✅ willRenew is true only if active AND not scheduled for cancellation
     const willRenew = subscription.status === 'ACTIVE' && !subscription.cancelledAt;
 
+    console.log(subscription.status);
+    console.log(subscription.cancelledAt);
+
     return {
       ...subscription,
       willRenew,
@@ -769,7 +785,6 @@ export class SubscriptionService {
     return { url: session.url };
   }
 
-
   /**
    * Resume cancelled subscription
    */
@@ -817,7 +832,6 @@ export class SubscriptionService {
     );
   }
 
-
   /**
    * Preview upcoming invoice
    */
@@ -860,7 +874,6 @@ export class SubscriptionService {
     };
   }
 
-  
   /**
    * Apply coupon to subscription
    */
