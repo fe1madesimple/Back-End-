@@ -121,6 +121,7 @@ export class SubscriptionService {
       console.error('Error handling payment intent failed:', error);
     }
   }
+
   /**
    * Create Stripe Checkout Session for subscription
    */
@@ -303,9 +304,6 @@ export class SubscriptionService {
     console.log(`✅ Checkout completed for user: ${userId}`);
   }
 
-  /**
-   * Handle customer.subscription.created event
-   */
   /**
    * Handle customer.subscription.created event
    */
@@ -612,12 +610,21 @@ export class SubscriptionService {
       },
     });
 
-    return subscription;
+    if (!subscription) return null;
+
+    // ✅ willRenew is true only if active AND not scheduled for cancellation
+    const willRenew = subscription.status === 'ACTIVE' && !subscription.cancelledAt;
+
+    return {
+      ...subscription,
+      willRenew,
+    };
   }
 
   /**
    * Cancel user's subscription
    */
+
   async cancelSubscription(userId: string): Promise<void> {
     const subscription = await prisma.subscription.findUnique({
       where: { userId },
@@ -702,12 +709,6 @@ export class SubscriptionService {
   /**
    * Generate Stripe Customer Portal URL
    */
-  /**
-   * Generate Stripe Customer Portal URL
-   */
-  /**
-   * Generate Stripe Customer Portal URL
-   */
   async createCustomerPortalSession(userId: string): Promise<{ url: string }> {
     const subscription = await prisma.subscription.findUnique({
       where: { userId },
@@ -767,6 +768,8 @@ export class SubscriptionService {
 
     return { url: session.url };
   }
+
+
   /**
    * Resume cancelled subscription
    */
@@ -775,10 +778,7 @@ export class SubscriptionService {
       where: { userId },
       include: {
         user: {
-          select: {
-            email: true,
-            fullName: true,
-          },
+          select: { email: true, fullName: true },
         },
       },
     });
@@ -787,34 +787,36 @@ export class SubscriptionService {
       throw new AppError('No subscription found', 404);
     }
 
-    if (subscription.status !== 'ACTIVE' || !subscription.cancelledAt) {
-      throw new AppError('Subscription is not cancelled', 400);
+    // ✅ Fixed condition - cancelledAt set means scheduled for cancellation
+    if (!subscription.cancelledAt) {
+      throw new AppError('Subscription is not scheduled for cancellation', 400);
     }
 
     if (!subscription.stripeSubscriptionId) {
       throw new AppError('No active Stripe subscription', 400);
     }
 
-    // Resume subscription in Stripe
+    // Check period hasn't already ended
+    if (subscription.currentPeriodEnd && subscription.currentPeriodEnd < new Date()) {
+      throw new AppError('Subscription period has ended, please re-subscribe', 400);
+    }
+
     await stripe.subscriptions.update(subscription.stripeSubscriptionId, {
       cancel_at_period_end: false,
     });
 
-    // Update database
     await prisma.subscription.update({
       where: { userId },
-      data: {
-        cancelledAt: null,
-      },
+      data: { cancelledAt: null },
     });
 
-    // ✅ SEND EMAIL
     await emailService.sendSubscriptionResumedEmail(
       subscription.user.email,
       subscription.user.fullName!,
       subscription.currentPeriodEnd!
     );
   }
+
 
   /**
    * Preview upcoming invoice
@@ -858,6 +860,7 @@ export class SubscriptionService {
     };
   }
 
+  
   /**
    * Apply coupon to subscription
    */

@@ -26,6 +26,7 @@ export interface ISubscriptionResponse {
   cancelledAt: Date | null;
   createdAt: Date;
   updatedAt: Date;
+  willRenew: boolean;
 }
 
 export enum StripeWebhookEvent {
