@@ -192,8 +192,6 @@ subscriptionRouter.get('/status', protect, subscriptionController.getSubscriptio
 subscriptionRouter.post('/cancel', protect, subscriptionController.cancelSubscription);
 
 
-
-
 /**
  * @swagger
  * /api/v1/subscription/billing-history:
@@ -278,6 +276,7 @@ subscriptionRouter.post('/cancel', protect, subscriptionController.cancelSubscri
  */
 subscriptionRouter.get('/billing-history', protect, subscriptionController.getBillingHistory);
 
+
 /**
  * @swagger
  * /api/v1/subscription/portal:
@@ -352,6 +351,7 @@ subscriptionRouter.get('/billing-history', protect, subscriptionController.getBi
  *                   example: No subscription found
  */
 subscriptionRouter.get('/portal', protect, subscriptionController.getCustomerPortal);
+
 
 /**
  * @swagger
@@ -511,8 +511,6 @@ subscriptionRouter.post('/resume', protect, subscriptionController.resumeSubscri
 //   validate(applyCouponSchema),
 //   subscriptionController.applyCoupon
 // );
-
-
 
 
 /**

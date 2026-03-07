@@ -1,0 +1,179 @@
+{
+  "subject": "Constitutional Law",
+  "el_script_ref": "ConstitutionalLaw_ElevenLabs_Module01_Lesson01.txt",
+  "module_number": 1,
+  "module_title": "Introduction to the Irish Constitution",
+  "lesson_number": 1,
+  "lesson_title": "History and Origins of Bunreacht na hÉireann",
+  "total_questions": 14,
+  "questions": [
+    {
+      "id": "CON_M01_L01_Q01",
+      "question": "Bunreacht na hÉireann was enacted on 1 July 1937 and entered into force on 29 December 1937. Which earlier constitutional document did it replace, and what was the fundamental legal deficiency of that predecessor from an Irish nationalist perspective?",
+      "options": {
+        "A": "The Government of Ireland Act 1920 — which partitioned Ireland and established two subordinate parliaments rather than an independent sovereign State",
+        "B": "The Constitution of the Irish Free State (Saorstát Éireann) 1922 — which was enacted under the Irish Free State Constitution Act 1922 (UK), reflecting Ireland's continuing status as a British dominion dependent on Westminster authority",
+        "C": "The Treaty (Articles of Agreement for a Treaty between Great Britain and Ireland) 1921 — which was a treaty rather than a constitution and therefore lacked the binding force of a domestic fundamental law",
+        "D": "The Home Rule Act 1914 — which was suspended and never brought into operation, leaving Ireland without any constitutional framework until 1937"
+      },
+      "correct_answer": "B",
+      "explanation": "The 1937 Constitution replaced the Constitution of the Irish Free State (Saorstát Éireann) 1922. The 1922 Constitution's fundamental deficiency from a nationalist perspective was that it was a dominion constitution — enacted under the Irish Free State Constitution Act 1922, a UK Act of Parliament. Its authority derived from Westminster, reflecting Ireland's continuing legal status as a dominion within the British Empire. Successive amendments (removing the Oath of Allegiance, the Governor-General, and appeals to the Privy Council) had progressively hollowed out the dominion elements, but the 1937 Constitution was designed to sever this dependence entirely and assert full popular sovereignty. The Government of Ireland Act 1920 (option A) was a partition measure that the Free State government did not formally operate under."
+    },
+    {
+      "id": "CON_M01_L01_Q02",
+      "question": "Article 6 of Bunreacht na hÉireann provides the foundational statement of popular sovereignty. Which of the following most accurately captures the principle established by Article 6?",
+      "options": {
+        "A": "All powers of government derive from the Oireachtas as the democratically elected legislature, and the Oireachtas may delegate such powers to the President or Government as it sees fit",
+        "B": "All powers of government — legislative, executive and judicial — derive, under God, from the People, whose right it is to designate the rulers of the State and, in final appeal, to decide all questions of national policy",
+        "C": "The People exercise supreme authority through referendums only; in all other matters, authority vests in the organs of State established by the Constitution",
+        "D": "Sovereignty is shared between the People and the President, who as Head of State exercises constituent power on behalf of the nation between referendums"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 6.1 provides: 'All powers of government, legislative, executive and judicial, derive, under God, from the people, whose right it is to designate the rulers of the State and, in final appeal, to decide all questions of national policy, according to the requirements of the common good.' This establishes the principle of popular sovereignty — the People as the ultimate source of all State authority. Article 6.2 then limits exercise of these powers to organs established by the Constitution. Option A incorrectly locates sovereignty in the Oireachtas; option C incorrectly restricts People's role to referendums; option D mischaracterises the President's constitutional role."
+    },
+    {
+      "id": "CON_M01_L01_Q03",
+      "question": "The drafting of the 1937 Constitution drew on several intellectual and political traditions. Which of the following most accurately identifies the primary influences on the constitutional text?",
+      "options": {
+        "A": "The Weimar Constitution (1919) and the League of Nations Covenant — reflecting post-war European constitutionalism and Ireland's commitment to international law",
+        "B": "Catholic social teaching (particularly Papal Encyclicals Rerum Novarum and Quadragesimo Anno), American constitutionalism, and the 1922 Free State Constitution",
+        "C": "British parliamentary conventions, the Universal Declaration of Human Rights, and the European Convention on Human Rights",
+        "D": "Rousseau's social contract theory, Montesquieu's doctrine of separation of powers, and natural law philosophy as expressed in the French Declaration of the Rights of Man 1789"
+      },
+      "correct_answer": "B",
+      "explanation": "The 1937 Constitution drew primarily on three traditions: (1) Catholic social teaching — particularly evident in the provisions on the family (Art. 41), education (Art. 42), religion (Art. 44), and private property (Art. 43), reflecting the influence of Papal Encyclicals Rerum Novarum (1891) and Quadragesimo Anno (1931) under de Valera's direction; (2) American constitutionalism — the justiciable fundamental rights in Articles 40–44 and judicial review of legislation owe much to the US model; and (3) the 1922 Free State Constitution — many structural elements were carried forward. The UDHR and ECHR (options C/D) postdate 1937; the Weimar Constitution (option A) was a less direct influence."
+    },
+    {
+      "id": "CON_M01_L01_Q04",
+      "question": "Article 15.4.1° of the Constitution prohibits the Oireachtas from enacting laws that are 'in any respect repugnant to this Constitution or any provision thereof.' What is the primary legal consequence where an Act of the Oireachtas is found to be repugnant to the Constitution?",
+      "options": {
+        "A": "The Act is suspended for 12 months pending a referendum in which the People may approve the legislation notwithstanding its unconstitutionality",
+        "B": "The Act is invalid to the extent of its repugnancy — it has no legal effect from the date of its enactment (ex tunc), or from the date of the court's declaration where the court exercises its discretion to suspend the declaration",
+        "C": "The Act remains valid but Parliament must amend it within 6 months; failure to amend triggers automatic invalidity",
+        "D": "The President may refer the Act back to the Oireachtas for reconsideration, and if re-passed by a two-thirds majority, the constitutional challenge is extinguished"
+      },
+      "correct_answer": "B",
+      "explanation": "The consequence of a finding of repugnancy under Art. 15.4 is invalidity — the legislation has no legal force. The traditional position is that invalidity operates ex tunc (from the date of enactment), not merely from the date of the court's declaration. However, as established in Heneghan v Minister for Housing [2023] IESC 18, the court may exceptionally suspend a declaration of unconstitutionality to allow the Oireachtas to enact curative legislation — only the second time this occurred in Irish constitutional history. Option A incorrectly invokes a referendum mechanism; option C fabricates an amendment obligation; option D mischaracterises the presidential reference procedure (Art. 26 applies pre-enactment only, and re-passage by supermajority does not cure unconstitutionality)."
+    },
+    {
+      "id": "CON_M01_L01_Q05",
+      "question": "Under Article 25.5.4° of the Constitution, what rule applies where there is a conflict between the Irish-language text (téacs Gaeilge) and the English-language text (téacs Béarla) of the Constitution?",
+      "options": {
+        "A": "The English text prevails as the operative text, since it was the language in which the Constitution was originally drafted and debated",
+        "B": "The conflict is resolved by the Supreme Court applying a purposive interpretation, with neither language version given automatic precedence",
+        "C": "The Irish text prevails, as confirmed by the Supreme Court in AG v Ryan's Car Hire Ltd [1965] IR 642",
+        "D": "The President resolves textual conflicts in an official interpretation signed by the President and countersigned by the Taoiseach"
+      },
+      "correct_answer": "C",
+      "explanation": "Article 25.5.4° provides: 'In case of conflict between the texts of any copy of this Constitution enrolled under this section, the text in the national language shall prevail.' In AG v Ryan's Car Hire Ltd [1965] IR 642, Ó Dálaigh CJ confirmed that the Irish text is authoritative where there is a conflict between the two language versions. This is constitutionally significant because the Irish and English texts do not always use precisely equivalent language, and the Irish text may carry a narrower or broader meaning in particular provisions. In practice, courts now routinely examine the Irish text as a primary tool of constitutional interpretation."
+    },
+    {
+      "id": "CON_M01_L01_Q06",
+      "question": "Two provisions of the original 1937 Constitution that attracted significant controversy were Articles 2–3 (territorial claim) and Article 44.1.2° (special position of the Catholic Church). What happened to each of these provisions through the amendment process?",
+      "options": {
+        "A": "Article 44.1.2° was deleted by referendum in 1972; Articles 2–3 were replaced by entirely new provisions recognising the principle of consent and the aspiration to unity by referendum in 1998 (implementing the Good Friday Agreement)",
+        "B": "Article 44.1.2° was deleted by the Supreme Court's declaration of unconstitutionality in McGee v AG [1974] IR 284; Articles 2–3 were repealed by the Oireachtas without referendum in 2000",
+        "C": "Both Articles 44.1.2° and Articles 2–3 were removed in the 1998 Good Friday Agreement referendum, which amended the Constitution in a single combined amendment",
+        "D": "Article 44.1.2° remains in force as a statement of historical fact rather than legal privilege; Articles 2–3 were amended in 1998 but continue to assert Ireland's territorial sovereignty over Northern Ireland"
+      },
+      "correct_answer": "A",
+      "explanation": "The Fifth Amendment of the Constitution Act 1972, approved by referendum on 7 December 1972, deleted Article 44.1.2° (which had given a 'special position' to the Holy Catholic Apostolic and Roman Church) and Article 44.1.3° (which recognised other named religious denominations). This followed the Report of the Committee on the Constitution 1967 and reflected changing social attitudes. The Nineteenth Amendment of the Constitution Act 1998, approved by referendum on 22 May 1998 (the Good Friday Agreement referendum), replaced the original Articles 2 and 3 (which had asserted a territorial claim over Northern Ireland) with new provisions expressing an aspiration to unity by consent. These were two separate amendment referendums (1972 and 1998)."
+    },
+    {
+      "id": "CON_M01_L01_Q07",
+      "question": "The Constitution establishes which organs of State in its institutional provisions, and under which Articles are the core institutions found?",
+      "options": {
+        "A": "The President (Art. 12), the Oireachtas (Arts. 15–27), the Government (Art. 28), the Courts (Arts. 34–37), and the Attorney General (Art. 30)",
+        "B": "The President (Art. 6), the Dáil (Art. 12), the Seanad (Art. 15), the Government (Art. 28), and the Supreme Court (Art. 34)",
+        "C": "The President (Art. 12), the Dáil only (Art. 16), the Government (Art. 28), the Courts (Arts. 34–37), and the Council of State (Art. 31)",
+        "D": "The President (Arts. 12–14), the Oireachtas comprising Dáil and Seanad (Arts. 15–27), the Government (Art. 28), and the Courts (Arts. 34–37)"
+      },
+      "correct_answer": "D",
+      "explanation": "The Constitution's institutional architecture is: Arts. 12–14 (the President — election, functions, powers, Council of State); Arts. 15–27 (the Oireachtas — Dáil Éireann Art. 16, Seanad Éireann Art. 18, legislative process Arts. 20–27); Art. 28 (the Government); Arts. 34–37 (the Courts — establishment, judicial independence, judicial power). Art. 30 (Attorney General) is correct in option A but Art. 6 is the sovereignty provision (not the President's Article — option B wrong). The Council of State is in Art. 31 (option C is incomplete). Option D correctly identifies the main institutional provisions."
+    },
+    {
+      "id": "CON_M01_L01_Q08",
+      "question": "The 1937 Constitution asserts in Article 6 that all powers of government are 'exercisable only by or on the authority of the organs of State established by this Constitution.' What doctrine of constitutional law does this provision underpin?",
+      "options": {
+        "A": "The doctrine of legitimate expectation — State organs cannot exercise powers beyond those reasonably expected by citizens based on prior conduct",
+        "B": "The doctrine of separation of powers — each of the three functions of government must be exercised by the designated organ and cannot be transferred or usurped",
+        "C": "The doctrine of parliamentary sovereignty — the Oireachtas may override any constitutional provision by a sufficient majority",
+        "D": "The doctrine of implied repeal — later constitutional provisions automatically override earlier inconsistent ones without formal amendment"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 6.2's statement that powers are 'exercisable only by or on the authority of the organs of State established by this Constitution' is the constitutional foundation of the separation of powers doctrine. It means that legislative power is exercisable only by or on the authority of the Oireachtas (Art. 15), executive power by the Government (Art. 28), and judicial power by the Courts (Art. 34). This prevents any organ from usurping the functions of another and limits delegation of powers beyond constitutional boundaries — the basis for challenges to the delegation of legislative power to the executive (Henry VIII clauses) and the distinction between justice (Art. 34) and non-judicial adjudication. Parliamentary sovereignty (option C) is a UK doctrine incompatible with Irish constitutional supremacy."
+    },
+    {
+      "id": "CON_M01_L01_Q09",
+      "question": "The Preamble to Bunreacht na hÉireann opens with the words 'We, the people of Éire, Humbly acknowledging all our obligations to our Divine Lord, Jesus Christ...' What is the legal status of the Preamble as an aid to constitutional interpretation?",
+      "options": {
+        "A": "The Preamble has no legal status whatsoever — it is a purely aspirational statement with no bearing on the interpretation of any substantive provision",
+        "B": "The Preamble forms an operative part of the Constitution and takes precedence over the substantive Articles in cases of ambiguity",
+        "C": "The Preamble is not a source of enforceable rights but is a legitimate aid to constitutional interpretation, providing context for the values and principles underpinning the Constitution",
+        "D": "The Preamble operates as a Bill of Rights, and any law inconsistent with the values stated in the Preamble is automatically unconstitutional regardless of the substantive Articles"
+      },
+      "correct_answer": "C",
+      "explanation": "The Irish courts have held that the Preamble is not itself a source of enforceable individual rights (it does not confer justiciable rights directly), but it is a legitimate and important aid to constitutional interpretation. It expresses the fundamental values and purposes of the Constitution — popular sovereignty, Christian morality, justice, peace, and national independence — and the courts may use it to illuminate the meaning and scope of the substantive Articles. In Meskell v CIÉ [1973] IR 121, Walsh J used the Preamble to support a broad reading of constitutional rights. It does not take precedence over substantive Articles (option B wrong) nor is it a bill of rights (option D wrong)."
+    },
+    {
+      "id": "CON_M01_L01_Q10",
+      "question": "A key structural feature distinguishing the 1937 Constitution from the 1922 Free State Constitution was the introduction of justiciable fundamental rights in Articles 40–44. What was the significance of making these rights 'justiciable'?",
+      "options": {
+        "A": "It meant the rights could be overridden by the Oireachtas through ordinary legislation without constitutional amendment",
+        "B": "It meant the rights were enforceable in court — any person whose constitutional right was violated could seek a legal remedy directly from the courts, and the courts could declare inconsistent legislation unconstitutional",
+        "C": "It meant the rights were subject to periodic review by the President, who must certify their continued relevance every five years",
+        "D": "It meant the rights applied only between citizens and the State, creating no horizontal obligations on private parties or statutory bodies"
+      },
+      "correct_answer": "B",
+      "explanation": "Making fundamental rights 'justiciable' means they are enforceable in court — citizens whose constitutional rights are violated can bring proceedings seeking vindication, including declarations of invalidity of legislation that infringes those rights. This is the defining characteristic of the Irish model compared to parliamentary systems where rights may be political aspirations rather than legally enforceable norms. The courts can (and do) strike down legislation under Art. 15.4 and grant injunctive and other relief for rights violations. Option A is wrong — justiciability means the opposite (courts can invalidate legislation). Option D is also incomplete, as the courts have developed 'horizontal effect' of certain constitutional rights even between private parties."
+    },
+    {
+      "id": "CON_M01_L01_Q11",
+      "question": "In the years following 1937, which Article of the original Constitution had to be amended to allow Ireland to ratify the European Communities Treaties and give effect to EU law in the Irish legal system?",
+      "options": {
+        "A": "Article 5 (Ireland is a sovereign, independent, democratic state) — because EU membership was inconsistent with full sovereignty",
+        "B": "Article 29 (International Relations) — by adding Article 29.4.3° (now Art. 29.4.6°) permitting the State to be bound by EU law notwithstanding any other provision of the Constitution",
+        "C": "Article 15.2 (sole and exclusive power of the Oireachtas to make laws) — to permit the EU institutions to make directly applicable regulations",
+        "D": "Article 46 (amendment procedure) — to allow treaties to be ratified by Oireachtas resolution rather than referendum for future EU treaty changes"
+      },
+      "correct_answer": "B",
+      "explanation": "The Third Amendment of the Constitution 1972 (approved by referendum on 10 May 1972) added Art. 29.4.3° (renumbered over time, now Art. 29.4.6°) to permit the State to ratify the Treaties of Rome and to be bound by EU law 'notwithstanding any other provision of this Constitution.' This 'notwithstanding' clause was essential because, without it, EU law (including directly applicable regulations under Art. 288 TFEU and the primacy principle) would have conflicted with Art. 15.2 (exclusive Oireachtas law-making power) and other provisions. Each significant EU treaty since (Single European Act 1987 via Crotty — Tenth Amendment, Maastricht, Amsterdam, Nice, Lisbon) required a separate constitutional amendment and referendum."
+    },
+    {
+      "id": "CON_M01_L01_Q12",
+      "question": "What is the constitutional basis for the Dáil's power to pass legislation, and what constraint does the Constitution place on the nature of that legislation?",
+      "options": {
+        "A": "The Dáil's legislative power derives from Article 15.2.1°, which vests 'the sole and exclusive power of making laws for the State' in the Oireachtas; legislation must not be repugnant to the Constitution (Art. 15.4)",
+        "B": "The Dáil's legislative power derives from Article 6 (popular sovereignty) and is subject only to the approval of the President under Article 13",
+        "C": "The Dáil's legislative power is unlimited — as the democratically elected chamber, its enactments are subject to no constitutional constraint other than the requirement of a quorum",
+        "D": "The Dáil's legislative power derives from the common law tradition inherited from the UK Parliament and is not explicitly stated in the Constitution"
+      },
+      "correct_answer": "A",
+      "explanation": "Article 15.2.1° provides: 'The sole and exclusive power of making laws for the State is hereby vested in the Oireachtas: no other legislative authority has power to make laws for the State.' This is the source of the Oireachtas's legislative authority. Art. 15.4 is the corresponding constraint: laws must not be repugnant to the Constitution. The President's role under Art. 13.3 is to sign bills into law (with an option to refer to the Supreme Court under Art. 26) — not to confer or limit legislative power. Option C incorrectly asserts unlimited Oireachtas power, which is incompatible with constitutional supremacy. Option D is wrong — Irish constitutional law is not derived from UK parliamentary tradition."
+    },
+    {
+      "id": "CON_M01_L01_Q13",
+      "question": "The Constitution provides for a bicameral legislature. Which body comprises the Oireachtas, and how do the two chambers differ in their democratic mandate and legislative powers?",
+      "options": {
+        "A": "The Dáil (elected by proportional representation) and the Senate (appointed by the President) — the Senate has equal legislative power to the Dáil but the President resolves deadlocks",
+        "B": "The Dáil Éireann (directly elected under PR-STV, Art. 16) and Seanad Éireann (partly elected by vocational panels, partly elected by university graduates, partly nominated by Taoiseach, Art. 18) — the Dáil is the dominant chamber; the Seanad may delay but not permanently defeat Money Bills or other Bills",
+        "C": "The Dáil (directly elected) and the Council of State (appointed by the President) — both chambers have equal standing in the legislative process",
+        "D": "The Dáil (elected by first-past-the-post) and the Seanad (directly elected by the people) — both have an absolute veto over legislation"
+      },
+      "correct_answer": "B",
+      "explanation": "The Oireachtas consists of Dáil Éireann (Art. 16 — directly elected by proportional representation using the single transferable vote) and Seanad Éireann (Art. 18 — comprising 60 senators: 43 elected from vocational panels by councillors/Oireachtas members, 6 elected by university graduates, 11 nominated by the Taoiseach). The Dáil is the dominant chamber: the Government is responsible to the Dáil (Art. 28.4); Money Bills (Art. 21) must originate in the Dáil and the Seanad has only 21 days to consider them; the Seanad can delay ordinary bills by 90 days but cannot permanently defeat them (Art. 23). The Council of State (option C) is an advisory body to the President, not a legislative chamber. Seanad elections are not direct popular votes (option D wrong)."
+    },
+    {
+      "id": "CON_M01_L01_Q14",
+      "question": "In Heneghan v Minister for Housing [2023] IESC 18, the Supreme Court took an exceptional step regarding a declaration of unconstitutionality. What was the nature of this step and why was it significant?",
+      "options": {
+        "A": "The Supreme Court dismissed the constitutional challenge on the grounds that it was premature, establishing that declarations of unconstitutionality can only be granted where the challenger has already suffered concrete harm",
+        "B": "For only the second time in Irish legal history, the Supreme Court suspended a declaration of unconstitutionality — finding the Seanad election provisions unconstitutional but deferring the effect of the declaration to allow the Oireachtas to enact curative legislation by a set deadline",
+        "C": "The Supreme Court granted a declaration of unconstitutionality but declined to award any remedy, holding that curative legislation was exclusively a matter for the Oireachtas without any judicial enforcement mechanism",
+        "D": "The Supreme Court made a declaration of unconstitutionality operative immediately and ordered the relevant Minister to refund all Seanad expenses incurred under the unconstitutional provisions for the preceding 10 years"
+      },
+      "correct_answer": "B",
+      "explanation": "Heneghan v Minister for Housing [2023] IESC 18 concerned the constitutionality of the Seanad electoral system as it excluded certain Irish citizens resident outside the jurisdiction from voting. The Supreme Court found the provisions unconstitutional but, crucially, exercised its jurisdiction to suspend the declaration — only the second instance in Irish legal history (the first being A v Governor of Arbour Hill Prison [2006] IESC 45). The court gave the Oireachtas until 31 May 2025 to enact curative legislation, which was done via the Seanad Electoral (University Members) (Amendment) Act 2024. This case is significant because it demonstrates the court's willingness to manage the consequences of unconstitutionality rather than producing immediate legal chaos, particularly where invalidating an election system retroactively would be unworkable."
+    }
+  ]
+}

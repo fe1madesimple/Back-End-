@@ -326,49 +326,6 @@ model AIEvaluation {
   @@map("ai_evaluations")
 }
 
-model CaseBrief {
-  id           String           @id @default(cuid())
-  caseName     String // "Donoghue v Stevenson"
-  citation     String           @unique // "[1932] AC 562"
-  year         Int
-  court        String // "House of Lords"
-  jurisdiction CaseJurisdiction @default(IRISH_SUPREME_COURT)
-  frequency    CaseFrequency    @default(NOT_EXAMINED)
-
-  facts                   String   @db.Text
-  issue                   String   @db.Text
-  ruling                  String   @db.Text
-  reasoning               String   @db.Text
-  significance            String   @db.Text
-  principleAndApplication String?  @db.Text
-  examTip                 String?  @db.Text
-  examRelevance           String?  @db.Text
-  appearsInPapers         String[] // ["March 2023", "October 2021"]
-  topics                  String[] // ["Offer & Acceptance", "Negligence - Duty of Care"]
-
-  subjects String[] // Related subject IDs (no relation - just array)
-
-  // For AI search
-  embedding Json? // Vector embedding (optional)
-
-  // Timestamps
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  // Relations
-  savedBy        SavedCase[]
-  caseRelations  CaseRelation[]
-  relatedCases   CaseRelation[] @relation("ParentCase")
-  relatedToCases CaseRelation[] @relation("RelatedCase")
-
-  @@index([year])
-  @@index([caseName])
-  @@index([citation])
-  @@index([jurisdiction])
-  @@index([frequency])
-  @@map("case_briefs")
-}
-
 model SavedCase {
   id          String    @id @default(cuid())
   userId      String
@@ -417,6 +374,7 @@ enum ActivityType {
   CASE_REVIEW
   PODCAST_LISTEN
 }
+
 enum AchievementType {
   LESSON_MILESTONE
   STREAK_MILESTONE
@@ -439,7 +397,7 @@ model Achievement {
   condition   Json // Condition to unlock (e.g., {"lessons": 1})
   icon        String? // Icon name or URL
   // Timestamps
-  createdAt DateTime @default(now())
+  createdAt   DateTime        @default(now())
 
   // Relations
   userAchievements UserAchievement[]
@@ -562,6 +520,46 @@ model PlaylistPodcast {
   @@index([playlistId])
   @@index([podcastId])
   @@map("playlist_podcasts")
+}
+
+model CaseBrief {
+  id           String           @id @default(cuid())
+  caseName     String
+  citation     String           @unique
+  year         Int
+  court        String
+  jurisdiction CaseJurisdiction @default(IRISH_SUPREME_COURT)
+
+  facts                   String?  @db.Text
+  issue                   String?  @db.Text
+  ruling                  String?  @db.Text
+  reasoning               String?  @db.Text
+  significance            String?  @db.Text
+  principleAndApplication String?  @db.Text
+  examTip                 String?  @db.Text
+  examRelevance           String?  @db.Text
+  appearsInPapers         String[]
+  topics                  String[]
+  subjects                String[]
+  legalPrinciple          String?  @db.Text
+  keyQuote                String?  @db.Text
+  fullSummary             String?  @db.Text
+
+  embedding Json?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  savedBy        SavedCase[]
+  caseRelations  CaseRelation[]
+  relatedCases   CaseRelation[] @relation("ParentCase")
+  relatedToCases CaseRelation[] @relation("RelatedCase")
+
+  @@index([year])
+  @@index([caseName])
+  @@index([citation])
+  @@index([jurisdiction])
+  @@map("case_briefs")
 }
 
 model CaseRelation {
@@ -816,9 +814,9 @@ enum AssetType {
 }
 
 model EssayAttempt {
-  id         String   @id @default(cuid())
+  id         String      @id @default(cuid())
   userId     String
-  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user       User        @relation(fields: [userId], references: [id], onDelete: Cascade)
   questionId String
   question   QuestionSet @relation(fields: [questionId], references: [id], onDelete: Cascade) // ← CHANGED
 
@@ -924,8 +922,8 @@ model Simulation {
   overallScore Int?
   passed       Boolean?
 
-  attempts EssayAttempt[]
-  questionIds String[] 
+  attempts    EssayAttempt[]
+  questionIds String[]
 
   createdAt DateTime @default(now())
 
@@ -947,26 +945,30 @@ model QuestionTimer {
   @@map("question_timers")
 }
 
+enum CaseJurisdiction {
+  IRELAND
+  UNITED_KINGDOM
+  AUSTRALIA
+  EUROPEAN_UNION
+  UNITED_STATES
+  NEW_ZEALAND
+  CANADA
+  INTERNATIONAL
+  ECHR
+  ENGLAND
+  ENGLAND_AND_WALES
+  SCOTLAND
+  SCOTLAND_UK
+  NORTHERN_IRELAND
+  NEW_SOUTH_WALES
+  GERMANY
+  JAMAICA
+  HONG_KONG
+  SINGAPORE
+  OTHER
+}
 
 enum QuestionType {
   MCQ
   ESSAY
-}
-
-enum CaseJurisdiction {
-  IRISH_SUPREME_COURT
-  IRISH_COURT_OF_APPEAL
-  IRISH_HIGH_COURT
-  UK_SUPREME_COURT
-  UK_COURT_OF_APPEAL
-  UK_HOUSE_OF_LORDS
-  ECJ_CJEU
-  ECHR
-}
-
-enum CaseFrequency {
-  HIGH_FREQUENCY
-  MEDIUM_FREQUENCY
-  RARE
-  NOT_EXAMINED
 }
