@@ -549,7 +549,7 @@ model CaseBrief {
   @@index([jurisdiction])
   @@map("case_briefs")
 }
-s
+
 
 model DailyStudySession {
   id     String @id @default(cuid())
