@@ -523,37 +523,25 @@ model PlaylistPodcast {
 }
 
 model CaseBrief {
-  id           String           @id @default(cuid())
-  caseName     String
-  citation     String           @unique
-  year         Int
-  court        String
-  jurisdiction CaseJurisdiction @default(IRISH_SUPREME_COURT)
-
-  facts                   String?  @db.Text
-  issue                   String?  @db.Text
-  ruling                  String?  @db.Text
-  reasoning               String?  @db.Text
-  significance            String?  @db.Text
-  principleAndApplication String?  @db.Text
-  examTip                 String?  @db.Text
-  examRelevance           String?  @db.Text
-  appearsInPapers         String[]
-  topics                  String[]
-  subjects                String[]
-  legalPrinciple          String?  @db.Text
-  keyQuote                String?  @db.Text
-  fullSummary             String?  @db.Text
-
-  embedding Json?
+  id                 String           @id @default(cuid())
+  caseName           String
+  citation           String           @unique
+  year               Int
+  court              String
+  jurisdiction       CaseJurisdiction @default(OTHER)
+  isFrequentlyTested Boolean          @default(false)
+  legalPrinciple     String?          @db.Text
+  keyQuote           String?          @db.Text
+  fullSummary        String?          @db.Text
+  subjects           String[]
+  topics             String[]
+  appearsInPapers    String[]
+  embedding          Json?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  savedBy        SavedCase[]
-  caseRelations  CaseRelation[]
-  relatedCases   CaseRelation[] @relation("ParentCase")
-  relatedToCases CaseRelation[] @relation("RelatedCase")
+  savedBy SavedCase[]
 
   @@index([year])
   @@index([caseName])
@@ -561,25 +549,7 @@ model CaseBrief {
   @@index([jurisdiction])
   @@map("case_briefs")
 }
-
-model CaseRelation {
-  id            String    @id @default(cuid())
-  parentCaseId  String
-  parentCase    CaseBrief @relation("ParentCase", fields: [parentCaseId], references: [id], onDelete: Cascade)
-  relatedCaseId String
-  relatedCase   CaseBrief @relation("RelatedCase", fields: [relatedCaseId], references: [id], onDelete: Cascade)
-
-  relationshipType String? // "Similar Facts", "Overruled By", "Distinguished From"
-
-  createdAt   DateTime   @default(now())
-  caseBrief   CaseBrief? @relation(fields: [caseBriefId], references: [id])
-  caseBriefId String?
-
-  @@unique([parentCaseId, relatedCaseId])
-  @@index([parentCaseId])
-  @@index([relatedCaseId])
-  @@map("case_relations")
-}
+s
 
 model DailyStudySession {
   id     String @id @default(cuid())
@@ -949,12 +919,12 @@ enum CaseJurisdiction {
   IRELAND
   UNITED_KINGDOM
   AUSTRALIA
-  EUROPEAN_UNION
   UNITED_STATES
   NEW_ZEALAND
+  EUROPEAN_UNION
+  ECHR
   CANADA
   INTERNATIONAL
-  ECHR
   ENGLAND
   ENGLAND_AND_WALES
   SCOTLAND
