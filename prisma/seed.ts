@@ -661,7 +661,7 @@ Intentionally or recklessly causing serious harm to another.
 
 
 
-  await prisma.question.createMany({
+  await prisma.question.createMany({  
     data: [
       // Module 1 Questions  -- crimninal law
       {

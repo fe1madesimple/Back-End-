@@ -1,0 +1,227 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": "ContractLaw_ElevenLabs_Module07_Lesson02.txt",
+  "module_number": 5,
+  "module_title": "Illegality and Public Policy",
+  "lesson_number": 3,
+  "lesson_title": "Contracts Contrary to Public Policy",
+  "total_questions": 18,
+  "questions": [
+    {
+      "id": 1,
+      "question": "The category of contracts void as contrary to public policy is wider than contracts that are strictly illegal. What is the rationale for voiding contracts on public policy grounds?",
+      "options": {
+        "A": "Such contracts are inherently unpredictable and create commercial uncertainty",
+        "B": "The courts will not enforce agreements that are harmful to the interests of society, public morals, or the proper functioning of state institutions, even if they involve no specific legal prohibition",
+        "C": "Public policy grounds are used exclusively to protect vulnerable parties who lack bargaining power",
+        "D": "Such contracts are only void if the parties were aware their agreement might harm third parties"
+      },
+      "correct_answer": "B",
+      "explanation": "Contracts contrary to public policy are void even where they do not violate a specific statutory or criminal prohibition. The rationale is that courts — as institutions serving the public interest — will not be used to enforce agreements that, if widely upheld, would harm society, undermine public institutions, corrupt morals, or interfere with the administration of justice. The categories include contracts to oust the jurisdiction of the courts, contracts promoting corruption in public life, contracts involving sexual immorality, and contracts prejudicial to the institution of marriage."
+    },
+    {
+      "id": 2,
+      "question": "A contract that purports to exclude the jurisdiction of the courts entirely — requiring all disputes to be resolved exclusively by a non-judicial body without any right of appeal — is generally:",
+      "options": {
+        "A": "Valid because freedom of contract allows parties to choose their dispute resolution mechanism",
+        "B": "Void as contrary to public policy — the courts will not allow their jurisdiction to be completely ousted",
+        "C": "Valid only if both parties are commercial entities with equal bargaining power",
+        "D": "Valid in Ireland provided the alternative dispute body is approved by the Minister for Justice"
+      },
+      "correct_answer": "B",
+      "explanation": "The courts will not permit their jurisdiction to be wholly ousted by private contract — this is a fundamental public policy principle: Scott v Avery [1856] and Lee v Showmen's Guild [1952]. Arbitration agreements that require preliminary arbitration before court proceedings are permitted, but a clause that purports to prevent any recourse to the courts altogether is void. This principle is subject to limitations — modern arbitration law (Arbitration Act 2010 in Ireland) allows very broad arbitration agreements, but the courts retain supervisory jurisdiction and arbitration awards remain subject to judicial review on limited grounds."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is an example of a contract that is contrary to public policy as tending to corruption in public life?",
+      "options": {
+        "A": "A contract between two private parties to resolve a civil dispute by agreement without involving the courts",
+        "B": "A contract by which one person agrees to pay another to vote in a particular way at a public election",
+        "C": "A contract for the provision of professional lobbying services to a government body",
+        "D": "A contract by which a party agrees not to make complaints about another person's commercial practices"
+      },
+      "correct_answer": "B",
+      "explanation": "Contracts that involve corruption in public life or the democratic process are void as contrary to public policy. A contract to pay a person to vote in a particular way at a public election involves the subversion of the democratic process. Other examples of contracts tending to corruption in public life include contracts to procure a public office, contracts to influence the exercise of a public function by improper means, and contracts for the sale of honours. Such contracts are void regardless of whether they involve a specific statutory offence."
+    },
+    {
+      "id": 4,
+      "question": "A maintenance agreement is one by which a person who has no legitimate interest in litigation agrees to fund or support another person's claim in exchange for a share of the proceeds. At common law, such agreements were:",
+      "options": {
+        "A": "Valid as they promote access to justice",
+        "B": "Void as contrary to public policy (maintenance and champerty)",
+        "C": "Void only if the funder was a professional insurer",
+        "D": "Valid provided the funding party had a genuine interest in the outcome of the litigation"
+      },
+      "correct_answer": "B",
+      "explanation": "Maintenance (supporting another person's litigation without legitimate interest) and champerty (maintenance in exchange for a share of the proceeds) were historically both criminal offences and torts, and contracts involving them were void as contrary to public policy. The rationale was that such arrangements encouraged frivolous litigation and corrupted the administration of justice. In modern law, the position has been significantly modified — third-party litigation funding has grown considerably and the Law Reform Commission of Ireland has considered reform of the maintenance and champerty rules. The Criminal Law Act 1967 (UK) abolished criminal maintenance and champerty in England but Ireland's position remains more conservative."
+    },
+    {
+      "id": 5,
+      "question": "In Persona Digital Telephony Ltd v Minister for Public Enterprise [2017] (SC Ireland), the Irish Supreme Court considered the champerty and maintenance rules. The Court held:",
+      "options": {
+        "A": "Third-party litigation funding agreements are automatically void as champerty in Ireland",
+        "B": "The rules on maintenance and champerty remain in force in Ireland and commercial third-party litigation funding agreements that constitute champerty are void and unenforceable",
+        "C": "Third-party litigation funding is valid in all commercial cases provided the funder is a licensed entity",
+        "D": "The Supreme Court abolished the rules on maintenance and champerty by judicial decision"
+      },
+      "correct_answer": "B",
+      "explanation": "In Persona Digital [2017], the Irish Supreme Court confirmed that the common law rules on maintenance and champerty remain in force in Ireland and that third-party commercial litigation funding agreements that constitute champerty are void and unenforceable. Unlike England (where criminal and tortious aspects were abolished by the Criminal Law Act 1967), Ireland has not legislated to reform champerty, and the Supreme Court declined to modify the doctrine judicially. This is a significant difference from English law and is an important FE-1 area."
+    },
+    {
+      "id": 6,
+      "question": "Contracts prejudicial to the institution of marriage were historically void as contrary to public policy. Which of the following is an example of this category?",
+      "options": {
+        "A": "A prenuptial agreement regulating financial arrangements between spouses",
+        "B": "A contract between two unmarried people setting out their financial responsibilities",
+        "C": "A contract by which a person agrees to marry a specific individual in exchange for payment (a contract to marry for money)",
+        "D": "A contract restricting a party from remarrying after divorce"
+      },
+      "correct_answer": "D",
+      "explanation": "Contracts prejudicial to the institution of marriage are void at common law. The recognised categories include: (1) a contract by which a married person agrees to marry another person after the death of their spouse — this was historically void as prejudicial to the marital state; (2) contracts in unreasonable restraint of marriage (e.g., a condition that a beneficiary shall not marry anyone); and (3) contracts restricting remarriage after divorce or widowhood, if unreasonable. Prenuptial agreements have a complex position in Irish law — they are not automatically enforceable but may be given weight by courts in ancillary relief proceedings."
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is a recognised exception allowing maintenance of litigation without offending the champerty rule?",
+      "options": {
+        "A": "Any agreement between a solicitor and client to share the proceeds of litigation",
+        "B": "A genuine interest in the litigation — such as a person with a financial or familial stake in the outcome — funding the litigation of another",
+        "C": "An agreement between two commercial companies to share litigation costs and proceeds",
+        "D": "A trade union funding litigation on behalf of a member regardless of the union's interest"
+      },
+      "correct_answer": "B",
+      "explanation": "A person who has a genuine and legitimate interest in the outcome of litigation — such as a family member, business partner with a financial stake, or a creditor with a direct interest in the subject matter — may fund the litigation of another without committing maintenance. The interest must be genuine and related to the litigation in question, not merely a desire to speculate on the outcome. This 'legitimate interest' exception is an important qualification to the rule against maintenance and may be relevant in Irish practice given the continuing application of the champerty doctrine."
+    },
+    {
+      "id": 8,
+      "question": "A contract by which a party agrees to commit perjury or give false evidence in a legal proceeding is:",
+      "options": {
+        "A": "Voidable at the option of the innocent party",
+        "B": "Void as contrary to public policy — it tends to corrupt the administration of justice",
+        "C": "Void only because perjury is a criminal offence — if the parties are in a civil matter, such a contract might be valid",
+        "D": "Unenforceable only if the perjury relates to a material fact in the proceedings"
+      },
+      "correct_answer": "B",
+      "explanation": "A contract to commit perjury or to give false evidence is void as contrary to public policy. It falls within the general category of contracts that corrupt or tend to corrupt the administration of justice — one of the most fundamental public interests. Such a contract is not merely illegal (perjury being a statutory offence) but is fundamentally contrary to the principle that courts must be able to rely on truthful evidence. The ex turpi causa rule also applies: no party to such an agreement can seek the court's assistance in enforcing it."
+    },
+    {
+      "id": 9,
+      "question": "Contracts promoting sexual immorality were historically void as contrary to public policy. In modern Irish law, which of the following statements is most accurate?",
+      "options": {
+        "A": "All contracts with any connection to sexual activity are automatically void",
+        "B": "The category has contracted significantly — contracts are void only where they promote conduct that is actively harmful, rather than merely morally objectionable by historical standards, reflecting evolving social norms",
+        "C": "The category has expanded under the Irish Constitution to include any contract contrary to Christian morality",
+        "D": "Contracts promoting sexual immorality are void only if they involve a criminal offence"
+      },
+      "correct_answer": "B",
+      "explanation": "The category of contracts void as promoting sexual immorality has contracted considerably in modern law, reflecting changing social and legal norms. Courts are reluctant to impose Victorian-era moral standards on modern transactions. The emphasis has shifted towards conduct that is positively harmful or exploitative rather than merely morally objectionable by older standards. The legalisation of same-sex marriage, changes to the law on prostitution, and evolving attitudes to cohabitation have all contributed to a narrowing of this category. Irish courts are unlikely to void contracts on grounds of 'immorality' unless the conduct is positively harmful."
+    },
+    {
+      "id": 10,
+      "question": "A contract by which a party agrees not to report a crime to the police in exchange for payment is:",
+      "options": {
+        "A": "Valid if both parties are adults and the arrangement is freely made",
+        "B": "Void as contrary to public policy — it involves compounding a criminal offence and undermines the criminal justice system",
+        "C": "Valid only if the crime is a minor offence",
+        "D": "Valid because there is no legal obligation on a private individual to report a crime"
+      },
+      "correct_answer": "B",
+      "explanation": "An agreement not to report a crime in exchange for money is void as contrary to public policy — it amounts to compounding a criminal offence and undermines the integrity of the criminal justice system. While there is generally no legal duty to report a crime in Ireland (absent specific statutory provisions), an agreement to suppress a crime in return for payment is contrary to public policy because it interferes with the processes of criminal justice and may facilitate criminals. The agreement is also unenforceable: if the promisee refuses to comply with their promise, the court will not assist the promisor in enforcing it."
+    },
+    {
+      "id": 11,
+      "question": "In O'Neill v Murphy [1936] (SC Ireland), the Supreme Court considered a wagering contract (a betting agreement). The Court held:",
+      "options": {
+        "A": "Wagering contracts are valid in Irish law and enforceable in court",
+        "B": "Wagering contracts are void — they are contrary to public policy and cannot be enforced in the Irish courts",
+        "C": "Wagering contracts are void only where the amount at stake exceeds a prescribed statutory limit",
+        "D": "Wagering contracts are voidable — the party who loses may elect to rescind the agreement"
+      },
+      "correct_answer": "B",
+      "explanation": "Wagering contracts (contracts of betting) are void and unenforceable in Irish law under the Gaming and Lotteries Act 1956 (as amended). The Act renders wagering contracts null and void — no action lies in any court for the recovery of any money alleged to be won by wagering. O'Neill v Murphy [1936] pre-dates the 1956 Act but reflects the long-standing policy. In England, the Gaming Act 2005 fundamentally changed the position (rendering certain gambling contracts enforceable), but Irish law has maintained the traditional approach, with regulated betting subject to specific licensing requirements rather than general enforceability of wagering contracts."
+    },
+    {
+      "id": 12,
+      "question": "Which of the following contracts would most clearly be void as contrary to public policy in Irish law?",
+      "options": {
+        "A": "A contract between two adults for the sale of a high-value watch",
+        "B": "A contract by which a company agrees to make political donations in exchange for government contracts",
+        "C": "A contract by which a landlord agrees to delay eviction proceedings for six months",
+        "D": "A contract by which a trade union agrees to support an employer's restructuring plan"
+      },
+      "correct_answer": "B",
+      "explanation": "A contract by which a company agrees to make political donations in exchange for government contracts is void as contrary to public policy — it amounts to bribery and corruption in the procurement of public contracts, which is both a criminal offence and fundamentally contrary to the public interest. Such arrangements corrupt the political and administrative process and undermine fair competition for public contracts. This falls squarely within the category of contracts tending to corruption in public life. Option A is a lawful commercial contract. Options C and D may raise other issues but are not clearly contrary to public policy."
+    },
+    {
+      "id": 13,
+      "question": "A contract that provides for the division of matrimonial assets and financial arrangements in advance of marriage (a prenuptial agreement) in Irish law:",
+      "options": {
+        "A": "Is automatically void as contrary to Irish constitutional provisions on the family",
+        "B": "Is not automatically void but has uncertain enforceability — Irish courts may take the agreement into account but are not bound by it; the Family Law Act 1995 and judicial practice give judges broad discretion",
+        "C": "Is fully enforceable if validly executed before a solicitor",
+        "D": "Is void only if it purports to exclude the jurisdiction of the Family Court"
+      },
+      "correct_answer": "B",
+      "explanation": "Prenuptial agreements in Irish law occupy an uncertain position. The Irish Constitution's recognition of the family based on marriage gives courts broad powers to make provision on marital breakdown. Under the Family Law Act 1995 and Family Law (Divorce) Act 1996, courts have wide discretion in ancillary relief and are not bound by pre-marital agreements. The Law Reform Commission recommended in 2014 that prenuptial agreements should be given legal recognition subject to conditions (independent advice, fairness, timing). Currently, Irish courts may take a prenuptial agreement into account as a factor but will not automatically enforce it."
+    },
+    {
+      "id": 14,
+      "question": "The doctrine that 'public policy is an unruly horse' was expressed by Burrough J in Richardson v Mellish [1824]. This warning reflects:",
+      "options": {
+        "A": "The principle that public policy arguments in contract law are always rejected by the courts",
+        "B": "The courts' caution about expanding public policy as a basis for voiding contracts — the category should not be extended without clear justification, lest the courts substitute their own moral views for those of the parties",
+        "C": "The difficulty of proving that a contract is contrary to public policy beyond reasonable doubt",
+        "D": "The instruction that judges must always follow the precedent cases on public policy and may not create new categories"
+      },
+      "correct_answer": "B",
+      "explanation": "Burrough J's description of public policy as 'a very unruly horse, and when once you get astride it you never know where it will carry you' reflects judicial caution about using public policy to void contracts too freely. The concern is that courts may abuse the public policy doctrine to impose their own moral or political views, thereby undermining contractual freedom and legal certainty. The categories of contracts void as contrary to public policy should therefore be established by precedent and not expanded arbitrarily. This caution has meant the categories have evolved slowly and the courts are reluctant to create new ones."
+    },
+    {
+      "id": 15,
+      "question": "In Napier v National Business Agency Ltd [1951] (CA England), an employment contract specified a salary plus a tax-free expenses allowance that both parties knew was fictitious. The Court of Appeal held:",
+      "options": {
+        "A": "The employment contract was valid — the expenses arrangement was a separate matter",
+        "B": "The entire contract was tainted by the illegal scheme to defraud the Revenue and was unenforceable — the employee could not recover the salary",
+        "C": "Only the expenses provision was void — the salary portion could be enforced",
+        "D": "The employee could recover the agreed salary under unjust enrichment principles"
+      },
+      "correct_answer": "B",
+      "explanation": "In Napier v National Business Agency [1951], the Court of Appeal held that the employment contract was wholly tainted by the illegal scheme to defraud the Revenue (by treating non-existent expenses as tax-free allowances). Because the salary and the fictitious expenses were inextricably linked in a single arrangement designed to mislead the tax authorities, the entire contract was unenforceable — the employee could not recover any wages. The case illustrates that where the illegal element is inseparable from the lawful element, the entire contract is void and the courts will not assist either party."
+    },
+    {
+      "id": 16,
+      "question": "Contracts that tend to undermine national security or that involve trading with the enemy during wartime are:",
+      "options": {
+        "A": "Regulated by statute only — no common law principle applies",
+        "B": "Void at common law and under statute as contrary to public policy — contracts with enemy aliens during wartime are discharged or void",
+        "C": "Voidable at the option of the government but otherwise valid between the contracting parties",
+        "D": "Valid unless the other contracting party is a recognised hostile state under international law"
+      },
+      "correct_answer": "B",
+      "explanation": "Contracts with enemy aliens or that tend to assist the enemy during wartime are void as contrary to public policy. The common law principle that trading with the enemy is impermissible was reinforced by wartime emergency legislation. The Trading with the Enemy Act 1939 (UK) and equivalent emergency powers provide statutory reinforcement. In Fibrosa Spolka Akcyjna v Fairbairn Lawson Combe Barbour Ltd [1943], the outbreak of war frustrated a commercial contract as the parties found themselves on opposite sides. Contracts involving national security matters may also be regulated by specific legislation."
+    },
+    {
+      "id": 17,
+      "question": "A 'yellow dog contract' — an agreement by which an employee promises not to join a trade union as a condition of employment — would in Irish law be:",
+      "options": {
+        "A": "Valid as an exercise of freedom of contract between employer and employee",
+        "B": "Void and unenforceable as contrary to public policy and inconsistent with constitutional and statutory rights to freedom of association",
+        "C": "Valid only if the employer is engaged in a business sector where trade union membership is incompatible with the role",
+        "D": "Voidable at the election of the employee but valid until rescinded"
+      },
+      "correct_answer": "B",
+      "explanation": "A condition of employment that prohibits an employee from joining a trade union is contrary to public policy and inconsistent with the constitutional right to freedom of association under Article 40.6.1(iii) of the Irish Constitution. The Employment Equality Acts 1998-2015 and general employment law protections reinforce this position. The Industrial Relations Act 1990 also contains provisions relevant to trade union rights. An agreement by which an employee waives their right to trade union membership as a condition of obtaining employment would be void as contrary to both public policy and constitutional rights."
+    },
+    {
+      "id": 18,
+      "question": "Which of the following statements most accurately describes the Irish courts' current approach to contracts alleged to be contrary to public policy?",
+      "options": {
+        "A": "Irish courts take a highly interventionist approach, routinely extending the categories of contracts void as contrary to public policy",
+        "B": "Irish courts are cautious about voiding contracts on public policy grounds, recognising established categories but being reluctant to create new ones without clear justification, balancing freedom of contract against the societal interests at stake",
+        "C": "Irish courts treat public policy arguments as irrelevant in commercial contract disputes",
+        "D": "Irish courts defer entirely to the Oireachtas on public policy matters and will only void contracts where there is a specific statutory provision to that effect"
+      },
+      "correct_answer": "B",
+      "explanation": "Irish courts, like their English counterparts, approach public policy arguments with caution. They recognise established categories of contracts void as contrary to public policy — contracts ousting court jurisdiction, those tending to corruption, maintenance and champerty, wagering contracts, contracts contrary to marital institutions — while being reluctant to extend those categories without compelling justification. The principle from Richardson v Mellish [1824] (the 'unruly horse') is taken seriously. Courts balance freedom of contract (recognised both at common law and impliedly in the constitutional right to earn a livelihood) against identified societal harms."
+    }
+  ]
+}

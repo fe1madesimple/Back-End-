@@ -37,6 +37,8 @@ async function fixTitles() {
   console.log(`\n✨ Done! Fixed ${fixedCount} lesson titles.`);
 }
 
+
+
 fixTitles()
   .catch((error) => {
     console.error('❌ Error:', error);

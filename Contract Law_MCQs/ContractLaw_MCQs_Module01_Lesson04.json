@@ -1,0 +1,227 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": "ContractLaw_ElevenLabs_Module01_Lesson04.txt",
+  "module_number": 1,
+  "module_title": "Formation of a Contract",
+  "lesson_number": 4,
+  "lesson_title": "Intention to Create Legal Relations",
+  "total_questions": 18,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the legal test for intention to create legal relations (ITCLR)?",
+      "options": {
+        "A": "Whether the parties subjectively intended their agreement to be legally binding",
+        "B": "An objective test — whether a reasonable person in the circumstances would regard the agreement as intended to create legal obligations",
+        "C": "Whether the agreement was made in writing and signed by both parties",
+        "D": "Whether both parties had access to legal advice before entering the agreement"
+      },
+      "correct_answer": "B",
+      "explanation": "ITCLR is assessed objectively — the courts ask whether a reasonable person, in the position of the parties and having regard to all the circumstances, would conclude the agreement was intended to be legally binding. Subjective beliefs are generally irrelevant. The objective test prevents parties from escaping liability by later claiming they did not 'really' intend to be bound."
+    },
+    {
+      "id": 2,
+      "question": "What presumption applies to agreements made in a domestic or social context?",
+      "options": {
+        "A": "There is a strong presumption that domestic and social agreements ARE intended to be legally binding",
+        "B": "There is a rebuttable presumption that domestic and social agreements are NOT intended to create legal relations",
+        "C": "There is no presumption — each case is decided purely on its facts",
+        "D": "The presumption is that domestic agreements are enforceable only if made in writing"
+      },
+      "correct_answer": "B",
+      "explanation": "In the domestic and social sphere, the courts presume that parties do not intend to create legal relations. This presumption arises from the nature of personal relationships and the expectation that domestic arrangements are acts of goodwill rather than binding contracts. The presumption is rebuttable by clear evidence of a contrary intention (Balfour v Balfour [1919])."
+    },
+    {
+      "id": 3,
+      "question": "In Balfour v Balfour [1919], the Court of Appeal held that a husband's promise to pay his wife maintenance while she remained in England was not legally binding because:",
+      "options": {
+        "A": "The wife had not provided consideration for the promise",
+        "B": "Agreements between spouses living together are presumed not to be intended as legally binding",
+        "C": "The amount promised was uncertain",
+        "D": "The agreement was contrary to public policy"
+      },
+      "correct_answer": "B",
+      "explanation": "In Balfour v Balfour [1919], the Court of Appeal held that the agreement was not intended to create legal relations. Atkin LJ reasoned that agreements between husbands and wives living together are not contracts because the parties do not intend to be sued. The presumption against legal relations in domestic agreements means such promises are generally honoured, if at all, as moral obligations only."
+    },
+    {
+      "id": 4,
+      "question": "In Merritt v Merritt [1970], the Court of Appeal distinguished Balfour v Balfour and held that the husband's written promise to transfer the matrimonial home was legally binding. The distinguishing factor was:",
+      "options": {
+        "A": "The agreement was supported by valuable consideration in the form of money",
+        "B": "The agreement was made after the parties had separated and had adverse interests, and was put in writing",
+        "C": "The wife had received independent legal advice before signing",
+        "D": "The property had already been registered in the wife's name"
+      },
+      "correct_answer": "B",
+      "explanation": "In Merritt v Merritt [1970], the parties had already separated when the agreement was made — they were dealing at arm's length with adverse interests. The agreement was also reduced to writing. The Court of Appeal held that in these circumstances the presumption against domestic legal relations was rebutted, and the husband's promise was legally binding."
+    },
+    {
+      "id": 5,
+      "question": "What presumption applies to commercial agreements?",
+      "options": {
+        "A": "There is a strong presumption that commercial agreements are NOT intended to create legal relations",
+        "B": "There is a rebuttable presumption that commercial agreements ARE intended to be legally binding",
+        "C": "Commercial agreements are only presumed binding if made between incorporated companies",
+        "D": "There is no presumption in commercial agreements — intent must always be proved"
+      },
+      "correct_answer": "B",
+      "explanation": "In commercial dealings, the courts apply the opposite presumption to the domestic context: parties to commercial agreements are presumed to intend their agreements to be legally binding. This presumption reflects commercial reality and the needs of business. However, it is rebuttable — parties can clearly and expressly exclude legal relations (e.g., 'subject to contract' or 'binding in honour only' clauses)."
+    },
+    {
+      "id": 6,
+      "question": "In Rose & Frank Co v Crompton Bros [1925], the House of Lords held that a commercial agreement was not legally binding because:",
+      "options": {
+        "A": "The parties were competitors and lacked good faith",
+        "B": "The agreement expressly stated it was 'binding in honour only' and not subject to legal jurisdiction",
+        "C": "The agreement was for the supply of goods prohibited under US law",
+        "D": "One party lacked the legal capacity to enter a binding commercial contract"
+      },
+      "correct_answer": "B",
+      "explanation": "In Rose & Frank Co v Crompton Bros [1925], the House of Lords held that the 'honourable pledge clause' — expressly stating the arrangement was not subject to legal jurisdiction and was binding in honour only — was effective to exclude legal relations even in a commercial context. Parties to commercial dealings may rebut the presumption of legal relations by clear language excluding it."
+    },
+    {
+      "id": 7,
+      "question": "The phrase 'subject to contract' in negotiations for a land sale typically means:",
+      "options": {
+        "A": "A binding contract has been made subject to the terms being performed",
+        "B": "The parties do not yet intend to be bound and the agreement will only become binding when a formal contract is executed",
+        "C": "The agreement is conditional on planning permission being obtained",
+        "D": "The sale is subject to the vendor's mortgage being discharged"
+      },
+      "correct_answer": "B",
+      "explanation": "Under Irish and English law, 'subject to contract' indicates that the parties do not intend to be legally bound until a formal written contract is executed. Negotiations conducted on this basis cannot be converted into a binding contract merely by agreement on price and terms — the formal contract is required. This is particularly important in Irish land transactions where LCLRA 2009 s51 also requires written contracts."
+    },
+    {
+      "id": 8,
+      "question": "In Carlill v Carbolic Smoke Ball Co [1893], the company argued that advertisements of rewards could not give rise to binding contracts. The court rejected this argument because:",
+      "options": {
+        "A": "The advertisement contained all essential terms of a contract",
+        "B": "The deposit of £1,000 in a bank demonstrated the company's serious intention to be bound by the offer",
+        "C": "The company had previously paid out on similar claims",
+        "D": "The Consumer Protection Act required companies to honour advertised rewards"
+      },
+      "correct_answer": "B",
+      "explanation": "In Carlill, the court rejected the argument that the advertisement was mere puff because the company had taken the step of depositing £1,000 in a named bank 'to show our sincerity'. This act objectively demonstrated the company's intention to be legally bound. The combination of specific terms and a demonstrable commitment to performance rebutted any argument that ITCLR was absent."
+    },
+    {
+      "id": 9,
+      "question": "Which of the following agreements is MOST likely to be found to lack intention to create legal relations?",
+      "options": {
+        "A": "A written commercial agreement between two companies for the supply of goods",
+        "B": "A husband's promise at dinner to buy his wife a birthday present",
+        "C": "A written settlement agreement between former business partners",
+        "D": "A letter of intent signed by both parties during commercial negotiations"
+      },
+      "correct_answer": "B",
+      "explanation": "A casual promise at dinner between spouses — a purely social/domestic context — is almost certainly not intended to create legal relations. In contrast, commercial agreements, letters of intent, and settlement agreements between former business partners are far more likely to be legally binding. The presumption in the domestic/social sphere is that parties do not intend legal relations."
+    },
+    {
+      "id": 10,
+      "question": "In Jones v Padavatton [1969], a mother's promise to pay her daughter an allowance to study for the bar in England was held to be:",
+      "options": {
+        "A": "A legally binding contract supported by the daughter's detriment in giving up her job",
+        "B": "Not legally binding because it was a family arrangement not intended to create legal relations",
+        "C": "Enforceable under the doctrine of promissory estoppel",
+        "D": "A binding unilateral contract because the daughter performed the condition"
+      },
+      "correct_answer": "B",
+      "explanation": "In Jones v Padavatton [1969], the Court of Appeal held that the arrangement between the mother and daughter was a family arrangement not intended to be legally binding. Despite the daughter giving up employment in the United States to study in England, the context (family relations, vagueness, and informal communication) indicated the presumption against legal relations in the domestic sphere had not been rebutted."
+    },
+    {
+      "id": 11,
+      "question": "Which of the following factors may rebut the presumption against legal relations in domestic agreements?",
+      "options": {
+        "A": "The fact that the parties are relatives",
+        "B": "The fact that the agreement is oral rather than written",
+        "C": "Evidence that the parties were dealing at arm's length with adverse interests, or that the agreement was made in a business-like manner with significant financial stakes",
+        "D": "The use of the word 'promise' by one of the parties"
+      },
+      "correct_answer": "C",
+      "explanation": "The presumption against legal relations in domestic/social agreements can be rebutted by evidence showing the parties dealt at arm's length with adverse interests (Merritt v Merritt [1970]), or that one party suffered significant financial detriment in reliance on the agreement, or that the agreement was concluded in a business-like manner with full knowledge of the consequences."
+    },
+    {
+      "id": 12,
+      "question": "Honour clauses and 'gentlemen's agreements' in commercial arrangements:",
+      "options": {
+        "A": "Are always legally binding in Irish law regardless of their terms",
+        "B": "Can effectively rebut the commercial presumption of ITCLR if clearly and expressly stated",
+        "C": "Are treated as unenforceable exclusion clauses under consumer protection legislation",
+        "D": "Are effective only in agreements between private individuals, not companies"
+      },
+      "correct_answer": "B",
+      "explanation": "Commercial parties may rebut the presumption of ITCLR by clearly and expressly stating that their agreement is not legally binding — for example, by using an 'honour clause' or 'gentlemen's agreement' language. This was confirmed in Rose & Frank Co v Crompton Bros [1925]. The language must be clear and unequivocal; courts will not lightly find commercial arrangements lack legal force."
+    },
+    {
+      "id": 13,
+      "question": "In the Irish case of Courtney v McCarthy [2007], the Supreme Court considered whether preliminary negotiations on a property transaction created a binding contract. The court held:",
+      "options": {
+        "A": "Agreements 'subject to contract' are binding once price and parties are agreed",
+        "B": "Preliminary negotiations expressed 'subject to contract' did not give rise to a binding agreement because the parties had not yet formed the requisite intention to be bound",
+        "C": "All oral agreements for the sale of land are void for want of writing",
+        "D": "A binding contract existed because the parties had reached agreement on all material terms"
+      },
+      "correct_answer": "B",
+      "explanation": "In Courtney v McCarthy [2007], the Irish Supreme Court confirmed the established rule that 'subject to contract' negotiations do not create binding contractual obligations. The parties clearly reserved their position pending execution of a formal contract. The court emphasised that ITCLR must be present at the time agreement is reached, and 'subject to contract' language negates this."
+    },
+    {
+      "id": 14,
+      "question": "Promotional competitions and prize draws: when is ITCLR likely to be present?",
+      "options": {
+        "A": "Only where the prize is of a monetary value exceeding a statutory threshold",
+        "B": "Where the competition rules are sufficiently certain and the promoter has made a clear, binding promise to award the prize to the winner",
+        "C": "Never — competitions are always marketing exercises without legal force",
+        "D": "Only where the entrant has paid consideration to enter the competition"
+      },
+      "correct_answer": "B",
+      "explanation": "Promotional competitions can give rise to binding contracts where the terms are sufficiently certain and the promoter objectively intends to be bound (as in Carlill). In Carroll v An Post National Lottery Co [1996], the Irish High Court found a binding unilateral contract where An Post, by issuing a scratch card, made a clear promise to pay the prize shown on a winning card. The intent to be bound was objectively evident from the nature of the commercial promotion."
+    },
+    {
+      "id": 15,
+      "question": "Which of the following best describes the interaction between ITCLR and consideration?",
+      "options": {
+        "A": "ITCLR and consideration are the same requirement stated differently",
+        "B": "ITCLR is a separate requirement from consideration — an agreement may be supported by consideration yet still lack ITCLR",
+        "C": "Where consideration is present, ITCLR is automatically presumed",
+        "D": "ITCLR is only relevant where consideration is absent, acting as a substitute"
+      },
+      "correct_answer": "B",
+      "explanation": "ITCLR and consideration are distinct requirements for a binding contract. An agreement may be supported by consideration yet still fail for lack of ITCLR (e.g., Balfour v Balfour, where both parties arguably provided some consideration but the agreement lacked ITCLR). Both elements must be satisfied independently for a contract to be enforceable."
+    },
+    {
+      "id": 16,
+      "question": "In Simpkins v Pays [1955], a grandmother, her granddaughter and a lodger entered competitions together and agreed to share any winnings. The court held the agreement:",
+      "options": {
+        "A": "Was a domestic arrangement lacking ITCLR",
+        "B": "Was legally binding because the arrangement included a lodger (a third party) and had the character of a commercial joint venture",
+        "C": "Was unenforceable because winnings from competitions are not legally recognised property",
+        "D": "Was enforceable only as to the lodger's share, not the family members'"
+      },
+      "correct_answer": "B",
+      "explanation": "In Simpkins v Pays [1955], the court held the arrangement was legally binding. The presence of a lodger (not a family member) and the mutual exchange of contributions towards entry fees gave the arrangement a commercial character that displaced the presumption against legal relations. All three parties had contributed and all expected to share — this mutuality indicated ITCLR."
+    },
+    {
+      "id": 17,
+      "question": "In Tanner v Tanner [1975], the Court of Appeal held that the defendant had a contractual licence to occupy the matrimonial home. Which factor supported the presence of ITCLR?",
+      "options": {
+        "A": "The parties had signed a written agreement before the defendant moved in",
+        "B": "The defendant had given up a Rent Act tenancy in reliance on the plaintiff's assurances, demonstrating a serious arrangement with legal consequences",
+        "C": "The defendant was the legal owner of the property",
+        "D": "The plaintiff had received legal advice before making the promise"
+      },
+      "correct_answer": "B",
+      "explanation": "In Tanner v Tanner [1975], the Court of Appeal held that a binding contractual licence existed because the defendant had given up a protected Rent Act tenancy — a significant sacrifice — in exchange for the assurance that she could remain in the house to raise the children. This serious and tangible detriment evidenced the parties' intention to enter into a legally binding arrangement, rebutting the domestic presumption."
+    },
+    {
+      "id": 18,
+      "question": "Collective agreements between trade unions and employers in Ireland are generally:",
+      "options": {
+        "A": "Legally binding contracts between the union and the employer",
+        "B": "Presumed not to be legally enforceable contracts unless expressly stated otherwise",
+        "C": "Binding only where incorporated expressly into individual employment contracts",
+        "D": "Enforceable under the Industrial Relations Acts as contracts of employment"
+      },
+      "correct_answer": "B",
+      "explanation": "In Ireland (as in England), collective agreements between trade unions and employers are generally presumed not to be legally enforceable contracts. They are regarded as 'binding in honour' only. Terms from collective agreements may, however, become legally enforceable if incorporated into individual contracts of employment — either expressly or by implication from custom and practice."
+    }
+  ]
+}

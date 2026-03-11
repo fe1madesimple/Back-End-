@@ -1,0 +1,567 @@
+{
+  "subject": "Contract Law",
+  "subject_code": "ContractLaw",
+  "brand_colour": "#fbc203",
+  "generated": "2026-03-06T06:20:55Z",
+  "total_el_scripts": 25,
+  "total_mcq_files": 25,
+  "total_questions": 494,
+  "mapping_type": "complex",
+  "mapping_notes": "EL and MCQ module structures differ. Some EL scripts share MCQ files; some MCQ files are linked to multiple EL scripts. See per-lesson notes field.",
+  "known_issues": [
+    "Total questions: 494 (target: 500 — 6 questions short)"
+  ],
+  "shared_mcq_files": [
+    {
+      "mcq_file": "ContractLaw_MCQs_Module01_Lesson03.json",
+      "mcq_lesson_title": "Consideration",
+      "linked_el_scripts": [
+        "ContractLaw_ElevenLabs_Module01_Lesson02.txt",
+        "ContractLaw_ElevenLabs_Module01_Lesson03.txt"
+      ]
+    },
+    {
+      "mcq_file": "ContractLaw_MCQs_Module02_Lesson01.json",
+      "mcq_lesson_title": "Express Terms and Classification",
+      "linked_el_scripts": [
+        "ContractLaw_ElevenLabs_Module02_Lesson01.txt",
+        "ContractLaw_ElevenLabs_Module02_Lesson02.txt",
+        "ContractLaw_ElevenLabs_Module02_Lesson05.txt"
+      ]
+    },
+    {
+      "mcq_file": "ContractLaw_MCQs_Module02_Lesson04.json",
+      "mcq_lesson_title": "Unfair Terms in Consumer Contracts",
+      "linked_el_scripts": [
+        "ContractLaw_ElevenLabs_Module03_Lesson01.txt",
+        "ContractLaw_ElevenLabs_Module03_Lesson02.txt",
+        "ContractLaw_ElevenLabs_Module03_Lesson03.txt"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "el_ref": "M01_L01",
+      "el_module": 1,
+      "el_lesson": 1,
+      "el_script_file": "ContractLaw_ElevenLabs_Module01_Lesson01.txt",
+      "el_script_title": "Offer and Acceptance",
+      "mcq_file_count": 2,
+      "total_questions_linked": 42,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module01_Lesson01.json",
+          "mcq_module_number": 1,
+          "mcq_lesson_number": 1,
+          "mcq_module_title": "Formation of a Contract",
+          "mcq_lesson_title": "Offer",
+          "question_count": 22
+        },
+        {
+          "mcq_file": "ContractLaw_MCQs_Module01_Lesson02.json",
+          "mcq_module_number": 1,
+          "mcq_lesson_number": 2,
+          "mcq_module_title": "Formation of a Contract",
+          "mcq_lesson_title": "Acceptance",
+          "question_count": 20
+        }
+      ]
+    },
+    {
+      "el_ref": "M01_L02",
+      "el_module": 1,
+      "el_lesson": 2,
+      "el_script_file": "ContractLaw_ElevenLabs_Module01_Lesson02.txt",
+      "el_script_title": "Consideration",
+      "mcq_file_count": 1,
+      "total_questions_linked": 22,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module01_Lesson03.json",
+          "mcq_module_number": 1,
+          "mcq_lesson_number": 3,
+          "mcq_module_title": "Formation of a Contract",
+          "mcq_lesson_title": "Consideration",
+          "question_count": 22
+        }
+      ],
+      "notes": "mcq shared with EL: ['M01_L03']"
+    },
+    {
+      "el_ref": "M01_L03",
+      "el_module": 1,
+      "el_lesson": 3,
+      "el_script_file": "ContractLaw_ElevenLabs_Module01_Lesson03.txt",
+      "el_script_title": "Promissory Estoppel",
+      "mcq_file_count": 1,
+      "total_questions_linked": 22,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module01_Lesson03.json",
+          "mcq_module_number": 1,
+          "mcq_lesson_number": 3,
+          "mcq_module_title": "Formation of a Contract",
+          "mcq_lesson_title": "Consideration",
+          "question_count": 22
+        }
+      ],
+      "notes": "mcq shared with EL: ['M01_L02']"
+    },
+    {
+      "el_ref": "M01_L04",
+      "el_module": 1,
+      "el_lesson": 4,
+      "el_script_file": "ContractLaw_ElevenLabs_Module01_Lesson04.txt",
+      "el_script_title": "Intention to Create Legal Relations",
+      "mcq_file_count": 1,
+      "total_questions_linked": 18,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module01_Lesson04.json",
+          "mcq_module_number": 1,
+          "mcq_lesson_number": 4,
+          "mcq_module_title": "Formation of a Contract",
+          "mcq_lesson_title": "Intention to Create Legal Relations",
+          "question_count": 18
+        }
+      ]
+    },
+    {
+      "el_ref": "M01_L05",
+      "el_module": 1,
+      "el_lesson": 5,
+      "el_script_file": "ContractLaw_ElevenLabs_Module01_Lesson05.txt",
+      "el_script_title": "Capacity to Contract",
+      "mcq_file_count": 1,
+      "total_questions_linked": 20,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module03_Lesson01.json",
+          "mcq_module_number": 3,
+          "mcq_lesson_number": 1,
+          "mcq_module_title": "Capacity, Formalities and Privity",
+          "mcq_lesson_title": "Capacity to Contract",
+          "question_count": 20
+        }
+      ]
+    },
+    {
+      "el_ref": "M01_L06",
+      "el_module": 1,
+      "el_lesson": 6,
+      "el_script_file": "ContractLaw_ElevenLabs_Module01_Lesson06.txt",
+      "el_script_title": "Formal Requirements",
+      "mcq_file_count": 1,
+      "total_questions_linked": 20,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module03_Lesson02.json",
+          "mcq_module_number": 3,
+          "mcq_lesson_number": 2,
+          "mcq_module_title": "Capacity, Formalities and Privity",
+          "mcq_lesson_title": "Formalities and Writing Requirements",
+          "question_count": 20
+        }
+      ]
+    },
+    {
+      "el_ref": "M02_L01",
+      "el_module": 2,
+      "el_lesson": 1,
+      "el_script_file": "ContractLaw_ElevenLabs_Module02_Lesson01.txt",
+      "el_script_title": "Express Terms and Representations",
+      "mcq_file_count": 1,
+      "total_questions_linked": 20,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module02_Lesson01.json",
+          "mcq_module_number": 2,
+          "mcq_lesson_number": 1,
+          "mcq_module_title": "Contractual Terms",
+          "mcq_lesson_title": "Express Terms and Classification",
+          "question_count": 20
+        }
+      ],
+      "notes": "mcq shared with EL: ['M02_L02', 'M02_L05']"
+    },
+    {
+      "el_ref": "M02_L02",
+      "el_module": 2,
+      "el_lesson": 2,
+      "el_script_file": "ContractLaw_ElevenLabs_Module02_Lesson02.txt",
+      "el_script_title": "Conditions, Warranties and Innominate Terms",
+      "mcq_file_count": 1,
+      "total_questions_linked": 20,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module02_Lesson01.json",
+          "mcq_module_number": 2,
+          "mcq_lesson_number": 1,
+          "mcq_module_title": "Contractual Terms",
+          "mcq_lesson_title": "Express Terms and Classification",
+          "question_count": 20
+        }
+      ],
+      "notes": "mcq shared with EL: ['M02_L01', 'M02_L05']"
+    },
+    {
+      "el_ref": "M02_L03",
+      "el_module": 2,
+      "el_lesson": 3,
+      "el_script_file": "ContractLaw_ElevenLabs_Module02_Lesson03.txt",
+      "el_script_title": "Implied Terms and Interpretation",
+      "mcq_file_count": 1,
+      "total_questions_linked": 20,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module02_Lesson02.json",
+          "mcq_module_number": 2,
+          "mcq_lesson_number": 2,
+          "mcq_module_title": "Contractual Terms",
+          "mcq_lesson_title": "Implied Terms",
+          "question_count": 20
+        }
+      ]
+    },
+    {
+      "el_ref": "M02_L04",
+      "el_module": 2,
+      "el_lesson": 4,
+      "el_script_file": "ContractLaw_ElevenLabs_Module02_Lesson04.txt",
+      "el_script_title": "Exemption Clauses",
+      "mcq_file_count": 1,
+      "total_questions_linked": 20,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module02_Lesson03.json",
+          "mcq_module_number": 2,
+          "mcq_lesson_number": 3,
+          "mcq_module_title": "Contractual Terms",
+          "mcq_lesson_title": "Exclusion Clauses",
+          "question_count": 20
+        }
+      ]
+    },
+    {
+      "el_ref": "M02_L05",
+      "el_module": 2,
+      "el_lesson": 5,
+      "el_script_file": "ContractLaw_ElevenLabs_Module02_Lesson05.txt",
+      "el_script_title": "Certainty of Terms",
+      "mcq_file_count": 1,
+      "total_questions_linked": 20,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module02_Lesson01.json",
+          "mcq_module_number": 2,
+          "mcq_lesson_number": 1,
+          "mcq_module_title": "Contractual Terms",
+          "mcq_lesson_title": "Express Terms and Classification",
+          "question_count": 20
+        }
+      ],
+      "notes": "mcq shared with EL: ['M02_L01', 'M02_L02']"
+    },
+    {
+      "el_ref": "M03_L01",
+      "el_module": 3,
+      "el_lesson": 1,
+      "el_script_file": "ContractLaw_ElevenLabs_Module03_Lesson01.txt",
+      "el_script_title": "Consumer Rights Act 2022: Sale of Goods",
+      "mcq_file_count": 1,
+      "total_questions_linked": 18,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module02_Lesson04.json",
+          "mcq_module_number": 2,
+          "mcq_lesson_number": 4,
+          "mcq_module_title": "Contractual Terms",
+          "mcq_lesson_title": "Unfair Terms in Consumer Contracts",
+          "question_count": 18
+        }
+      ],
+      "notes": "mcq shared with EL: ['M03_L02', 'M03_L03']"
+    },
+    {
+      "el_ref": "M03_L02",
+      "el_module": 3,
+      "el_lesson": 2,
+      "el_script_file": "ContractLaw_ElevenLabs_Module03_Lesson02.txt",
+      "el_script_title": "Consumer Rights Act 2022: Digital Content and Services",
+      "mcq_file_count": 1,
+      "total_questions_linked": 18,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module02_Lesson04.json",
+          "mcq_module_number": 2,
+          "mcq_lesson_number": 4,
+          "mcq_module_title": "Contractual Terms",
+          "mcq_lesson_title": "Unfair Terms in Consumer Contracts",
+          "question_count": 18
+        }
+      ],
+      "notes": "mcq shared with EL: ['M03_L01', 'M03_L03']"
+    },
+    {
+      "el_ref": "M03_L03",
+      "el_module": 3,
+      "el_lesson": 3,
+      "el_script_file": "ContractLaw_ElevenLabs_Module03_Lesson03.txt",
+      "el_script_title": "Unfair Contract Terms",
+      "mcq_file_count": 1,
+      "total_questions_linked": 18,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module02_Lesson04.json",
+          "mcq_module_number": 2,
+          "mcq_lesson_number": 4,
+          "mcq_module_title": "Contractual Terms",
+          "mcq_lesson_title": "Unfair Terms in Consumer Contracts",
+          "question_count": 18
+        }
+      ],
+      "notes": "mcq shared with EL: ['M03_L01', 'M03_L02']"
+    },
+    {
+      "el_ref": "M04_L01",
+      "el_module": 4,
+      "el_lesson": 1,
+      "el_script_file": "ContractLaw_ElevenLabs_Module04_Lesson01.txt",
+      "el_script_title": "Misrepresentation",
+      "mcq_file_count": 1,
+      "total_questions_linked": 24,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module04_Lesson01.json",
+          "mcq_module_number": 4,
+          "mcq_lesson_number": 1,
+          "mcq_module_title": "Vitiating Factors",
+          "mcq_lesson_title": "Misrepresentation",
+          "question_count": 24
+        }
+      ]
+    },
+    {
+      "el_ref": "M04_L02",
+      "el_module": 4,
+      "el_lesson": 2,
+      "el_script_file": "ContractLaw_ElevenLabs_Module04_Lesson02.txt",
+      "el_script_title": "Mistake",
+      "mcq_file_count": 1,
+      "total_questions_linked": 20,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module04_Lesson02.json",
+          "mcq_module_number": 4,
+          "mcq_lesson_number": 2,
+          "mcq_module_title": "Vitiating Factors",
+          "mcq_lesson_title": "Mistake",
+          "question_count": 20
+        }
+      ]
+    },
+    {
+      "el_ref": "M04_L03",
+      "el_module": 4,
+      "el_lesson": 3,
+      "el_script_file": "ContractLaw_ElevenLabs_Module04_Lesson03.txt",
+      "el_script_title": "Duress",
+      "mcq_file_count": 1,
+      "total_questions_linked": 18,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module04_Lesson03.json",
+          "mcq_module_number": 4,
+          "mcq_lesson_number": 3,
+          "mcq_module_title": "Vitiating Factors",
+          "mcq_lesson_title": "Duress",
+          "question_count": 18
+        }
+      ]
+    },
+    {
+      "el_ref": "M04_L04",
+      "el_module": 4,
+      "el_lesson": 4,
+      "el_script_file": "ContractLaw_ElevenLabs_Module04_Lesson04.txt",
+      "el_script_title": "Undue Influence",
+      "mcq_file_count": 1,
+      "total_questions_linked": 18,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module04_Lesson04.json",
+          "mcq_module_number": 4,
+          "mcq_lesson_number": 4,
+          "mcq_module_title": "Vitiating Factors",
+          "mcq_lesson_title": "Undue Influence",
+          "question_count": 18
+        }
+      ]
+    },
+    {
+      "el_ref": "M05_L01",
+      "el_module": 5,
+      "el_lesson": 1,
+      "el_script_file": "ContractLaw_ElevenLabs_Module05_Lesson01.txt",
+      "el_script_title": "Discharge by Agreement and Performance",
+      "mcq_file_count": 2,
+      "total_questions_linked": 38,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module06_Lesson01.json",
+          "mcq_module_number": 6,
+          "mcq_lesson_number": 1,
+          "mcq_module_title": "Discharge of Contract",
+          "mcq_lesson_title": "Discharge by Performance",
+          "question_count": 20
+        },
+        {
+          "mcq_file": "ContractLaw_MCQs_Module06_Lesson02.json",
+          "mcq_module_number": 6,
+          "mcq_lesson_number": 2,
+          "mcq_module_title": "Discharge of Contract",
+          "mcq_lesson_title": "Discharge by Agreement",
+          "question_count": 18
+        }
+      ]
+    },
+    {
+      "el_ref": "M05_L02",
+      "el_module": 5,
+      "el_lesson": 2,
+      "el_script_file": "ContractLaw_ElevenLabs_Module05_Lesson02.txt",
+      "el_script_title": "Discharge by Breach and Repudiation",
+      "mcq_file_count": 1,
+      "total_questions_linked": 20,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module06_Lesson04.json",
+          "mcq_module_number": 6,
+          "mcq_lesson_number": 4,
+          "mcq_module_title": "Discharge of Contract",
+          "mcq_lesson_title": "Discharge by Breach",
+          "question_count": 20
+        }
+      ]
+    },
+    {
+      "el_ref": "M05_L03",
+      "el_module": 5,
+      "el_lesson": 3,
+      "el_script_file": "ContractLaw_ElevenLabs_Module05_Lesson03.txt",
+      "el_script_title": "Discharge by Frustration",
+      "mcq_file_count": 1,
+      "total_questions_linked": 22,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module06_Lesson03.json",
+          "mcq_module_number": 6,
+          "mcq_lesson_number": 3,
+          "mcq_module_title": "Discharge of Contract",
+          "mcq_lesson_title": "Discharge by Frustration",
+          "question_count": 22
+        }
+      ]
+    },
+    {
+      "el_ref": "M06_L01",
+      "el_module": 6,
+      "el_lesson": 1,
+      "el_script_file": "ContractLaw_ElevenLabs_Module06_Lesson01.txt",
+      "el_script_title": "Damages",
+      "mcq_file_count": 1,
+      "total_questions_linked": 24,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module07_Lesson01.json",
+          "mcq_module_number": 7,
+          "mcq_lesson_number": 1,
+          "mcq_module_title": "Remedies for Breach of Contract",
+          "mcq_lesson_title": "Damages",
+          "question_count": 24
+        }
+      ]
+    },
+    {
+      "el_ref": "M06_L02",
+      "el_module": 6,
+      "el_lesson": 2,
+      "el_script_file": "ContractLaw_ElevenLabs_Module06_Lesson02.txt",
+      "el_script_title": "Equitable Remedies",
+      "mcq_file_count": 2,
+      "total_questions_linked": 38,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module07_Lesson02.json",
+          "mcq_module_number": 7,
+          "mcq_lesson_number": 2,
+          "mcq_module_title": "Remedies for Breach of Contract",
+          "mcq_lesson_title": "Equitable Remedies",
+          "question_count": 20
+        },
+        {
+          "mcq_file": "ContractLaw_MCQs_Module07_Lesson03.json",
+          "mcq_module_number": 7,
+          "mcq_lesson_number": 3,
+          "mcq_module_title": "Remedies for Breach of Contract",
+          "mcq_lesson_title": "Limitation of Actions",
+          "question_count": 18
+        }
+      ]
+    },
+    {
+      "el_ref": "M07_L01",
+      "el_module": 7,
+      "el_lesson": 1,
+      "el_script_file": "ContractLaw_ElevenLabs_Module07_Lesson01.txt",
+      "el_script_title": "Privity of Contract",
+      "mcq_file_count": 1,
+      "total_questions_linked": 18,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module03_Lesson03.json",
+          "mcq_module_number": 3,
+          "mcq_lesson_number": 3,
+          "mcq_module_title": "Capacity, Formalities and Privity",
+          "mcq_lesson_title": "Privity of Contract",
+          "question_count": 18
+        }
+      ]
+    },
+    {
+      "el_ref": "M07_L02",
+      "el_module": 7,
+      "el_lesson": 2,
+      "el_script_file": "ContractLaw_ElevenLabs_Module07_Lesson02.txt",
+      "el_script_title": "Illegal and Void Contracts",
+      "mcq_file_count": 3,
+      "total_questions_linked": 54,
+      "mcq_files": [
+        {
+          "mcq_file": "ContractLaw_MCQs_Module05_Lesson01.json",
+          "mcq_module_number": 5,
+          "mcq_lesson_number": 1,
+          "mcq_module_title": "Illegality and Public Policy",
+          "mcq_lesson_title": "Illegal Contracts",
+          "question_count": 18
+        },
+        {
+          "mcq_file": "ContractLaw_MCQs_Module05_Lesson02.json",
+          "mcq_module_number": 5,
+          "mcq_lesson_number": 2,
+          "mcq_module_title": "Illegality and Public Policy",
+          "mcq_lesson_title": "Restraint of Trade",
+          "question_count": 18
+        },
+        {
+          "mcq_file": "ContractLaw_MCQs_Module05_Lesson03.json",
+          "mcq_module_number": 5,
+          "mcq_lesson_number": 3,
+          "mcq_module_title": "Illegality and Public Policy",
+          "mcq_lesson_title": "Contracts Contrary to Public Policy",
+          "question_count": 18
+        }
+      ]
+    }
+  ]
+}

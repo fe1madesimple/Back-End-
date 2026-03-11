@@ -714,7 +714,7 @@ model Module {
   subject   Subject @relation(fields: [subjectId], references: [id], onDelete: Cascade)
 
   name        String
-  slug        String
+  slug        String?
   description String? @db.Text
   order       Int // Display order within subject
   isPublished Boolean @default(true)
@@ -752,6 +752,7 @@ model Lesson {
   // Relations
   assets       LessonAsset[]
   userProgress UserLessonProgress[]
+  questions    Question[]
 
   createdAt    DateTime      @default(now())
   updatedAt    DateTime      @updatedAt
@@ -853,6 +854,7 @@ model QuestionSet {
 model Question {
   id       String  @id @default(cuid())
   moduleId String?
+  lessonId String?
   module   Module? @relation(fields: [moduleId], references: [id], onDelete: SetNull)
 
   type                      QuestionType
@@ -867,10 +869,10 @@ model Question {
   year     Int?
   subject  String?
   examType String?
+  lesson   Lesson? @relation(fields: [lessonId], references: [id], onDelete: SetNull)
 
-  order       Int     @default(0)
-  isPublished Boolean @default(true)
-
+  order         Int               @default(0)
+  isPublished   Boolean           @default(true)
   questionSets  QuestionSet[]
   timedSessions TimedSession[]
   quizAttempts  QuizAttempt[]
@@ -880,7 +882,7 @@ model Question {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  @@index([moduleId])
+  @@index([lessonId])
   @@index([type])
   @@index([subject])
   @@index([year])

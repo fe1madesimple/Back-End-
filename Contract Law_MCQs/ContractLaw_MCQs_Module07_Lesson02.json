@@ -1,0 +1,251 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": "ContractLaw_ElevenLabs_Module06_Lesson02.txt",
+  "module_number": 7,
+  "module_title": "Remedies for Breach of Contract",
+  "lesson_number": 2,
+  "lesson_title": "Equitable Remedies",
+  "total_questions": 20,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Specific performance is an equitable remedy. Which of the following statements best describes when it will be granted?",
+      "options": {
+        "A": "Specific performance is available as of right whenever a party is in breach of contract",
+        "B": "Specific performance is granted at the court's discretion where damages would be an inadequate remedy",
+        "C": "Specific performance is only available in contracts for the sale of real property",
+        "D": "Specific performance is only available where the contract has been signed by both parties"
+      },
+      "correct_answer": "B",
+      "explanation": "Specific performance is a discretionary equitable remedy, granted where the court considers that damages at common law would be an inadequate remedy. The adequacy of damages is the threshold test. Specific performance is most commonly awarded in contracts for the sale of land (where each parcel is considered unique) but may also be granted for unique chattels and, in limited circumstances, for other contracts. As an equitable remedy, it is subject to discretionary bars."
+    },
+    {
+      "id": 2,
+      "question": "Specific performance will not generally be ordered for a contract of personal services because:",
+      "options": {
+        "A": "Personal service contracts are automatically void as being contrary to public policy",
+        "B": "Courts are reluctant to compel individuals to work for one another and cannot practically supervise such performance",
+        "C": "Personal service contracts are only enforceable by way of injunction, not specific performance",
+        "D": "The Sale of Goods Act 1893 excludes personal service contracts from equitable relief"
+      },
+      "correct_answer": "B",
+      "explanation": "Courts consistently refuse to order specific performance of personal service contracts on two grounds: (1) the reluctance to compel individuals to work for one another in a relationship that has broken down (which may amount to a form of forced labour), and (2) the practical difficulty of supervising compliance with such an order. This principle was affirmed in De Francesco v Barnum [1890] and remains settled law. The refusal to compel personal service is a well-established bar to specific performance."
+    },
+    {
+      "id": 3,
+      "question": "The equitable maxim most directly relevant to the availability of specific performance is:",
+      "options": {
+        "A": "He who comes to equity must come with clean hands",
+        "B": "Equity will not act in vain",
+        "C": "Equity follows the law",
+        "D": "Equity looks to the intent rather than the form"
+      },
+      "correct_answer": "A",
+      "explanation": "The 'clean hands' maxim — that a claimant seeking equitable relief must not themselves have acted inequitably in relation to the subject matter of the action — is directly applicable to specific performance. If the claimant has engaged in fraud, misrepresentation, sharp practice, or breach of their own obligations under the contract, the court may decline to exercise its discretion to grant specific performance. Other equitable maxims (such as delay defeats equity/laches) also apply."
+    },
+    {
+      "id": 4,
+      "question": "An injunction restraining a breach of contract is an equitable remedy that operates by:",
+      "options": {
+        "A": "Ordering the defendant to perform their contractual obligations",
+        "B": "Restraining the defendant from doing something that would constitute a breach of contract",
+        "C": "Awarding a sum of money equivalent to the cost of performance",
+        "D": "Nullifying the contract and restoring the parties to their pre-contractual positions"
+      },
+      "correct_answer": "B",
+      "explanation": "A prohibitory injunction restrains a party from doing something — in the contractual context, it prevents a party from acting in breach of a negative stipulation in the contract. It does not order performance (that is specific performance) but prevents the breach of a promise not to do something. In some cases, as in Lumley v Wagner [1852], an injunction restraining breach of a negative covenant can effectively (though not directly) compel performance of the positive obligation."
+    },
+    {
+      "id": 5,
+      "question": "In Lumley v Wagner [1852], the court granted an injunction preventing an opera singer from performing for a rival theatre. This was controversial because:",
+      "options": {
+        "A": "It directly ordered specific performance of a personal service contract",
+        "B": "It effectively compelled performance of a personal service contract indirectly, by leaving the defendant with no practical alternative",
+        "C": "It was granted without any consideration of the balance of convenience",
+        "D": "It was granted on the basis of a unilateral contract without mutual obligations"
+      },
+      "correct_answer": "B",
+      "explanation": "In Lumley v Wagner [1852], the opera singer Johanna Wagner had agreed to perform exclusively for Lumley and not to sing elsewhere during the contract period. The court refused to specifically enforce the positive obligation to perform but granted an injunction restraining her from performing for a rival. Although technically consistent with the principle against compelled personal service, the injunction effectively pressured her to perform for Lumley, since her alternative was not to perform at all. This indirect coercion remains controversial."
+    },
+    {
+      "id": 6,
+      "question": "Rescission as an equitable remedy operates to:",
+      "options": {
+        "A": "Vary the terms of the contract to make them fair",
+        "B": "Discharge the contract for the future while preserving accrued rights",
+        "C": "Set the contract aside ab initio and restore the parties to their pre-contractual positions",
+        "D": "Award damages calculated to place the claimant in their pre-contractual position"
+      },
+      "correct_answer": "C",
+      "explanation": "Rescission operates retrospectively — it sets aside the contract as if it had never existed and seeks to restore the parties to their pre-contractual position through mutual restitution. It is available for misrepresentation, mistake, undue influence, duress, and breach of fiduciary duty. Rescission is to be distinguished from termination for breach, which only operates prospectively. The right to rescind may be lost through bars such as affirmation, lapse of time, third party rights, and impossibility of restitution."
+    },
+    {
+      "id": 7,
+      "question": "Rectification is an equitable remedy that enables the court to:",
+      "options": {
+        "A": "Rewrite the contract to reflect terms that would be fairer to the weaker party",
+        "B": "Correct a written document that, due to a common mistake, fails to accurately reflect the true agreement of the parties",
+        "C": "Set aside the contract where there has been a fundamental mistake as to its subject matter",
+        "D": "Fill in gaps in a contract by implying the terms the parties would have agreed"
+      },
+      "correct_answer": "B",
+      "explanation": "Rectification corrects a written document where it fails, through common (or in some cases unilateral) mistake, to reflect the parties' actual prior agreement. The court aligns the document with what was truly agreed. The standard of proof is high — the court must be satisfied by convincing evidence that the document does not reflect the agreed terms. Joscelyne v Nissen [1970] is the leading English authority, confirming that there must be a clear prior accord that the document failed to record. Rectification does not create new obligations — it corrects the record of existing ones."
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is a bar to the remedy of rescission?",
+      "options": {
+        "A": "The parties have equal bargaining power",
+        "B": "The representee knew the representation was false at the time it was made",
+        "C": "Affirmation — the innocent party has, with knowledge of the right to rescind, elected to continue with the contract",
+        "D": "The breach of contract was committed negligently rather than fraudulently"
+      },
+      "correct_answer": "C",
+      "explanation": "Affirmation is a well-established bar to rescission. Where the representee, with knowledge of the facts giving rise to the right to rescind and of the right itself, elects to treat the contract as valid and subsisting, they lose the right to rescind. Affirmation may be express or implied by conduct (such as continuing to accept benefits under the contract). Other bars include: lapse of time, intervention of third party rights, and impossibility of restitutio in integrum."
+    },
+    {
+      "id": 9,
+      "question": "An injunction is classified as mandatory where it:",
+      "options": {
+        "A": "Requires the court's leave before it can be sought",
+        "B": "Orders the defendant to perform a positive act to undo a breach",
+        "C": "Is granted without notice to the defendant",
+        "D": "Is granted only after a full trial on the merits"
+      },
+      "correct_answer": "B",
+      "explanation": "A mandatory injunction orders the defendant to take positive steps — typically to undo the effects of a past or ongoing breach. This is to be contrasted with a prohibitory injunction, which simply restrains further conduct. Courts are more reluctant to grant mandatory injunctions and apply a higher threshold — they must be satisfied that the injunction is clearly right and that withholding it would cause greater injustice than granting it. Mandatory injunctions are frequently sought in construction disputes and breach of restrictive covenant cases."
+    },
+    {
+      "id": 10,
+      "question": "The test for granting an interlocutory injunction in Ireland derives from:",
+      "options": {
+        "A": "American Cyanamid Co v Ethicon Ltd [1975], adopted in Campus Oil v Minister for Industry [1983]",
+        "B": "The Chancery Division's inherent jurisdiction without any formal test",
+        "C": "Section 22 of the Courts Act 1971, which codified the American Cyanamid principles",
+        "D": "The Civil Liability and Courts Act 2004"
+      },
+      "correct_answer": "A",
+      "explanation": "In Ireland, the test for an interlocutory injunction derives from American Cyanamid Co v Ethicon Ltd [1975] (HL), as adopted and adapted by the Irish Supreme Court in Campus Oil v Minister for Industry and Energy [1983]. The Irish test asks: (1) Is there a fair bona fide question to be tried? (2) Would damages be an inadequate remedy for the applicant? (3) Does the balance of convenience favour granting or refusing the injunction? Campus Oil also recognises that in cases involving serious issues affecting the public interest, the balance of convenience may be assessed differently."
+    },
+    {
+      "id": 11,
+      "question": "A Mareva injunction (freezing order) is an equitable remedy that:",
+      "options": {
+        "A": "Orders specific performance of a contract involving moveable assets",
+        "B": "Freezes the defendant's assets to prevent their dissipation pending judgment",
+        "C": "Transfers the defendant's assets to the claimant as security for the claim",
+        "D": "Prohibits the defendant from entering into any further contracts during litigation"
+      },
+      "correct_answer": "B",
+      "explanation": "A Mareva injunction (now called a freezing order in England and Wales under the CPR) prevents a defendant from disposing of or dissipating their assets so as to frustrate the enforcement of a future judgment. It originated in Mareva Compania Naviera v International Bulkcarriers [1975] and was developed by the Court of Appeal under Lord Denning MR. The applicant must demonstrate a good arguable case, that assets exist within jurisdiction, and a real risk that they will be dissipated."
+    },
+    {
+      "id": 12,
+      "question": "Quantum meruit as a remedy in contract allows a claimant to recover:",
+      "options": {
+        "A": "The expectation value of the contract as if it had been fully performed",
+        "B": "A reasonable sum for work done or services rendered under a contract that has been discharged or where no price was agreed",
+        "C": "Punitive damages for a cynical breach of contract by the defendant",
+        "D": "The cost of the claimant's reliance expenditure wasted as a result of the breach"
+      },
+      "correct_answer": "B",
+      "explanation": "Quantum meruit ('as much as has been earned') allows a claimant to recover a reasonable remuneration for work done or services rendered. It arises in several contexts: where a contract has been discharged by breach before payment, where services are rendered under a contract later found void, or where work is done beyond the scope of the contract with the other party's knowledge and acquiescence. It is a restitutionary remedy aimed at preventing unjust enrichment rather than protecting the expectation interest."
+    },
+    {
+      "id": 13,
+      "question": "Under which circumstances might a court grant specific performance of a contract for the sale of ordinary commercial goods (i.e., not unique items)?",
+      "options": {
+        "A": "Specific performance is never available for the sale of goods — damages are always the exclusive remedy",
+        "B": "Specific performance may be granted even for goods that are not unique if damages would be inadequate — for example, where the goods are not obtainable elsewhere on the market",
+        "C": "Specific performance for goods contracts is available as of right under the Sale of Goods Act 1893",
+        "D": "Specific performance for goods is only available in Ireland, not in England"
+      },
+      "correct_answer": "B",
+      "explanation": "While specific performance is rarely granted for the sale of ordinary goods (since substitute goods can usually be purchased and damages are adequate), it is not categorically excluded. Section 52 of the Sale of Goods Act 1893 gives the court a discretion to order specific performance in an action for breach of a contract for delivery of specific or ascertained goods. Where substitutes are not obtainable, damages would be inadequate and specific performance may be appropriate — for example, for unique or irreplaceable commercial items."
+    },
+    {
+      "id": 14,
+      "question": "Where a party seeks rectification of a written contract on the basis of unilateral mistake, they must additionally show:",
+      "options": {
+        "A": "That the other party was aware of the mistake and sought to take unconscionable advantage of it",
+        "B": "That the mistake was caused by the negligence of the other party",
+        "C": "That the written document was prepared by the party seeking rectification",
+        "D": "That the mistake related to the price term of the contract"
+      },
+      "correct_answer": "A",
+      "explanation": "Rectification on the ground of unilateral mistake requires not only that one party was mistaken about the terms of the written document, but also that the other party was aware of the mistake and, in effect, sought to take unconscionable advantage of it by insisting on the erroneous written terms. This was confirmed in A Roberts and Co Ltd v Leicestershire County Council [1961] and Thomas Bates and Son Ltd v Wyndham's (Lingerie) Ltd [1981]. The conduct of the non-mistaken party must be such that it would be unconscionable to allow them to enforce the document as written."
+    },
+    {
+      "id": 15,
+      "question": "The equitable doctrine of laches may bar a claimant from seeking rescission where:",
+      "options": {
+        "A": "The claimant commenced proceedings within the relevant limitation period",
+        "B": "The claimant has delayed unreasonably in asserting their right to rescind, and the other party has acted to their detriment in reliance on that delay",
+        "C": "The contract was entered into more than six years before the claim was brought",
+        "D": "The claimant failed to give formal notice of rescission in writing"
+      },
+      "correct_answer": "B",
+      "explanation": "Laches is an equitable doctrine that may bar an equitable remedy where the claimant has delayed unreasonably in asserting their rights and the other party has changed their position in reliance on that delay such that it would be unjust to grant relief. It is distinct from statutory limitation — a claim may be within the limitation period but still barred by laches if the delay is otherwise unreasonable. The doctrine applies particularly to rescission, injunctions, and specific performance."
+    },
+    {
+      "id": 16,
+      "question": "Which of the following best describes 'account of profits' as a remedy?",
+      "options": {
+        "A": "A method of calculating expectation damages based on the defendant's contract price",
+        "B": "A gain-based remedy requiring the defendant to disgorge profits made through their wrongdoing",
+        "C": "A remedy available only in cases of fraudulent breach of contract",
+        "D": "An order requiring the defendant to prepare and file financial statements with the court"
+      },
+      "correct_answer": "B",
+      "explanation": "An account of profits is a gain-based or restitutionary remedy that requires the defendant to give up profits made through their breach or wrongdoing, rather than compensating the claimant for their loss. In contract law, it was awarded in Attorney General v Blake [2001] (HL) in exceptional circumstances where normal compensatory damages would be inadequate and the claimant has a legitimate interest in preventing the defendant's profit. It is primarily associated with breach of fiduciary duty and intellectual property in equity."
+    },
+    {
+      "id": 17,
+      "question": "A court will refuse specific performance where the contract lacks mutuality. This means:",
+      "options": {
+        "A": "The court will not enforce a contract that was not negotiated by lawyers",
+        "B": "The court will not order specific performance in favour of a claimant who could not themselves be required to specifically perform",
+        "C": "The court will not enforce a contract where consideration is unequal",
+        "D": "The court will not grant specific performance where one party has died"
+      },
+      "correct_answer": "B",
+      "explanation": "The mutuality principle in specific performance provides that the court will not ordinarily grant the remedy in favour of a party who could not themselves be required to specifically perform. This is because equity requires that specific performance be available to both sides — if the court would not order specific performance against the claimant (for example, because the contract involves personal services the claimant would have to provide), it will be reluctant to order it in the claimant's favour. The extent and application of this principle has been much debated."
+    },
+    {
+      "id": 18,
+      "question": "In Beswick v Beswick [1968], the House of Lords granted specific performance of an agreement to pay an annuity to a third party. This was significant because:",
+      "options": {
+        "A": "It established that third parties have enforceable rights under contracts before the Contracts (Rights of Third Parties) Act 1999",
+        "B": "It showed that specific performance could be ordered not in the claimant's personal capacity but in their capacity as administrator of the promisor's estate",
+        "C": "It established that damages are always inadequate for contracts involving annuity payments",
+        "D": "It overruled the privity rule in the context of family contracts"
+      },
+      "correct_answer": "B",
+      "explanation": "In Beswick v Beswick [1968], the widow sought to enforce a promise by her nephew (the promisee's successor) to pay her an annuity. As a third party, she had no contractual right — but she was also the administratrix of her husband's estate, and in that capacity could sue on the contract. The House of Lords granted specific performance, awarding the annuity to her in her capacity as administratrix. Damages in her personal capacity would have been nominal (she had suffered no loss). The case illustrates the use of specific performance to overcome the inadequacy of damages."
+    },
+    {
+      "id": 19,
+      "question": "Under Irish law, which court has jurisdiction to grant all forms of equitable relief in contract cases?",
+      "options": {
+        "A": "Only the High Court of Ireland, as equity is exclusively within the High Court's jurisdiction",
+        "B": "The High Court has full equitable jurisdiction; the Circuit Court has jurisdiction to grant equitable relief within its financial limits",
+        "C": "Only the Court of Appeal can grant mandatory injunctions",
+        "D": "The District Court has concurrent jurisdiction with the High Court for all equitable remedies"
+      },
+      "correct_answer": "B",
+      "explanation": "In Ireland, the High Court exercises full original jurisdiction in all matters of law and equity. Since the Judicature (Ireland) Act 1877 (and now under the Courts (Establishment and Constitution) Act 1961 and subsequent Courts Acts), law and equity are administered in the same court. The Circuit Court and District Court have statutory civil jurisdiction within financial limits and may grant certain equitable relief (including injunctions) within those limits, but complex equitable matters and high-value cases are heard in the High Court."
+    },
+    {
+      "id": 20,
+      "question": "Where a claimant seeks rescission for innocent misrepresentation and it would be impossible to fully restore the parties to their pre-contractual positions (restitutio in integrum), the court may:",
+      "options": {
+        "A": "Order rescission and ignore the impossibility of complete restoration",
+        "B": "Refuse rescission entirely and confine the claimant to damages at common law",
+        "C": "Order rescission with an allowance or compensation to achieve substantial restitution, or (in Ireland, following the Misrepresentation Act not applying) exercise similar discretion under general equitable principles",
+        "D": "Order rectification of the contract as an alternative to rescission"
+      },
+      "correct_answer": "C",
+      "explanation": "The bars to rescission include 'impossibility of restitutio in integrum' — where the parties cannot be restored to their original positions. However, equity does not require perfect restitution: it may order 'practical restitution' with a financial allowance to account for any benefit the claimant has received. In Ireland, since there is no equivalent to s.2(2) of the Misrepresentation Act 1967 (which allows an English court to award damages in lieu of rescission for innocent misrepresentation), Irish courts exercise their equitable jurisdiction to achieve a just result — including fashioning appropriate terms for rescission where possible."
+    }
+  ]
+}

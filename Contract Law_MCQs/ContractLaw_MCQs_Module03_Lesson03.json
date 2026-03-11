@@ -1,0 +1,227 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": "ContractLaw_ElevenLabs_Module07_Lesson01.txt",
+  "module_number": 3,
+  "module_title": "Capacity, Formalities and Privity",
+  "lesson_number": 3,
+  "lesson_title": "Privity of Contract",
+  "total_questions": 18,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the doctrine of privity of contract?",
+      "options": {
+        "A": "The rule that parties who have agreed to keep the terms of their contract private may do so",
+        "B": "The rule that only the parties to a contract can sue upon or be bound by it — a third party cannot acquire rights or be subjected to obligations under a contract to which they are not a party",
+        "C": "The rule that contracts must be formed in private, without witnesses",
+        "D": "The equitable doctrine that prevents unconscionable enforcement of contracts"
+      },
+      "correct_answer": "B",
+      "explanation": "The doctrine of privity provides that a contract creates rights and obligations only between the parties to it. A third party who was not a party to the contract — even if the contract was made for their benefit — cannot sue on it, nor can they be bound by obligations imposed on them by it. This doctrine was affirmed in Dunlop Pneumatic Tyre Co v Selfridge & Co [1915] (HL) and remains the foundation of the law in Ireland."
+    },
+    {
+      "id": 2,
+      "question": "The doctrine of privity was classically established in Tweddle v Atkinson [1861]. What were the facts and holding of that case?",
+      "options": {
+        "A": "A third party beneficiary could sue because the contract was expressly for his benefit",
+        "B": "The son (intended beneficiary) could not sue because he was not a party to the agreement between his father and father-in-law, and had provided no consideration",
+        "C": "The courts enforced the third party's right because the contract was made in contemplation of his marriage",
+        "D": "The son was entitled to sue because equity recognised his beneficial interest"
+      },
+      "correct_answer": "B",
+      "explanation": "In Tweddle v Atkinson [1861], the plaintiff's father and his intended father-in-law agreed that each would pay a sum to the plaintiff on his marriage. The father-in-law died without paying. The plaintiff sued on the agreement. The court held he could not succeed: he was not a party to the agreement and had provided no consideration. This case classically stated the requirement that consideration must move from the promisee."
+    },
+    {
+      "id": 3,
+      "question": "In Dunlop Pneumatic Tyre Co v Selfridge & Co [1915], the House of Lords confirmed the privity rule. What was the contractual chain at issue?",
+      "options": {
+        "A": "Dunlop sold directly to Selfridge, who then resold to the public at below list price",
+        "B": "Dunlop sold to Dew (a dealer), who agreed not to sell below list price; Dew sold to Selfridge, who then undercut the list price; Dunlop sued Selfridge despite being a stranger to the Dew-Selfridge contract",
+        "C": "Dunlop and Selfridge were parties to the same contract but Selfridge repudiated it",
+        "D": "Dunlop assigned its contractual rights to a third party who then sued Selfridge"
+      },
+      "correct_answer": "B",
+      "explanation": "In Dunlop v Selfridge [1915], Dunlop sold tyres to Dew on condition that Dew would not resell below list price. Dew sold to Selfridge, who agreed to observe the price restriction. Selfridge undercut the price. Dunlop sued Selfridge directly, but failed — Dunlop was a stranger to the Dew-Selfridge contract and could not enforce a term of it. The privity doctrine barred the claim."
+    },
+    {
+      "id": 4,
+      "question": "What is the current position in Irish law regarding the right of a third party to enforce a contract made for their benefit?",
+      "options": {
+        "A": "Ireland has enacted legislation (similar to the UK Contracts (Rights of Third Parties) Act 1999) giving third parties a direct right to enforce",
+        "B": "Ireland has not enacted third-party rights legislation — the common law doctrine of privity applies with equitable and common law exceptions",
+        "C": "Irish courts freely enforce third-party contractual rights by analogy with trust principles",
+        "D": "The Irish Constitution guarantees third-party rights to enforce contracts made for their benefit"
+      },
+      "correct_answer": "B",
+      "explanation": "Unlike England and Wales (which enacted the Contracts (Rights of Third Parties) Act 1999), Ireland has not enacted equivalent legislation. The doctrine of privity applies in full. However, Irish courts have developed and applied exceptions including agency, trusts of promises, assignment, and specific statutory exceptions. The Law Reform Commission has recommended reform, but as of 2025–26 no legislation has been enacted."
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is an established common law or equitable exception to the privity rule under Irish law?",
+      "options": {
+        "A": "Where a contract is made orally between two parties in the presence of a third party",
+        "B": "Where one contracting party acts as agent for a third party who is named or identifiable as principal",
+        "C": "Where the third party would suffer loss if the contract were not performed",
+        "D": "Where the subject matter of the contract is a consumer good"
+      },
+      "correct_answer": "B",
+      "explanation": "Agency is a well-established exception to privity. Where one party contracts as agent for an identified or identifiable principal, the principal (third party) can sue and be sued on the contract as if they were a party to it. The agent drops out of the contract (or is an additional party) once the principal is disclosed. The undisclosed principal doctrine also allows a principal to intervene on certain contracts made by the agent in their own name."
+    },
+    {
+      "id": 6,
+      "question": "In Drimmie v Davis [1899] (Ireland), the courts applied the 'trust of a promise' exception to privity. This exception operates where:",
+      "options": {
+        "A": "A contract is assigned from one party to a third party with the other contracting party's consent",
+        "B": "A promisee holds the benefit of a contractual promise on trust for a third party, who may then enforce the promise in equity",
+        "C": "A deed is executed conferring a benefit on a third party",
+        "D": "A statutory provision makes the contract enforceable by a third party"
+      },
+      "correct_answer": "B",
+      "explanation": "The trust of a promise exception allows a third party to enforce a contract where the promisee holds the benefit of the promise on trust for the third party. The third party can sue in equity, joining the promisee as a defendant if necessary. In Drimmie v Davis [1899], an Irish court recognised a covenant in a partnership deed as enforceable by a third-party beneficiary through trust principles. The courts have been restrictive in finding a trust, however, requiring clear intention to create a trust."
+    },
+    {
+      "id": 7,
+      "question": "In The Eurymedon [1975] (New Zealand Shipping Co v Satterthwaite & Co) (PC), the Privy Council found a way to avoid the privity rule by holding that:",
+      "options": {
+        "A": "A stevedore (third party) could rely on an exclusion clause in the bill of lading through agency — the carrier contracted as agent for the stevedore",
+        "B": "The privity rule did not apply to commercial contracts",
+        "C": "The stevedore had an implied contractual right to benefit from all terms in the bill of lading",
+        "D": "The stevedore's tort liability was excluded by the Hague Rules"
+      },
+      "correct_answer": "A",
+      "explanation": "In The Eurymedon [1975], the Privy Council held that a stevedore (third-party contractor) could rely on the exception clause in the bill of lading. The carrier had contracted as agent for the stevedore; by unloading the goods, the stevedore provided consideration for the shipper's promise. A collateral contract was identified — the shipper offered to exempt the stevedore from liability, and the stevedore accepted by performing. This creatively used agency and collateral contract to circumvent privity."
+    },
+    {
+      "id": 8,
+      "question": "Which of the following represents a statutory exception to the privity rule in Irish law?",
+      "options": {
+        "A": "The Consumer Rights Act 2022 giving consumers rights against manufacturers",
+        "B": "Third-party motor insurance under the Road Traffic Acts — an injured third party has a direct right against the insurer",
+        "C": "The Companies Act 2014 allowing shareholders to sue for company debts",
+        "D": "The Statute of Frauds 1695 creating enforceable obligations on third parties"
+      },
+      "correct_answer": "B",
+      "explanation": "The Road Traffic Acts (Ireland) create a statutory exception to privity in motor insurance. A third party who suffers injury or damage from a road traffic accident has a direct right of action against the wrongdoer's insurer, despite not being a party to the insurance contract. This statutory exception reflects the public policy objective of ensuring accident victims can recover compensation."
+    },
+    {
+      "id": 9,
+      "question": "In Hearn v Collins [1998] (HC Ireland), the court considered whether a third party could enforce an agreement between two solicitors. The case illustrates which principle?",
+      "options": {
+        "A": "Solicitors' agreements between themselves are binding on their clients as a matter of professional conduct",
+        "B": "A third party who is the intended beneficiary of an inter-solicitor undertaking may have a direct cause of action, the court considering whether trust or agency principles apply",
+        "C": "Inter-solicitor agreements are binding only in the context of litigation",
+        "D": "Solicitors cannot enter binding contracts on behalf of clients without express authority"
+      },
+      "correct_answer": "B",
+      "explanation": "In Hearn v Collins [1998], the Irish High Court considered whether a third-party beneficiary (the client of one solicitor) could enforce an undertaking given by another solicitor. The case engaged with the exceptions to privity, including trust of promise and the equitable basis for direct enforcement of solicitors' undertakings. Irish courts have been attentive to the policy of allowing beneficiaries to enforce professional undertakings made for their benefit."
+    },
+    {
+      "id": 10,
+      "question": "What is meant by 'collateral contract' as a device to overcome privity?",
+      "options": {
+        "A": "A second contract made as security for the first",
+        "B": "A separate contract between a party to the main contract and a third party, under which the third party provides consideration (e.g., entering the main contract) in exchange for a promise from the contracting party",
+        "C": "A contract that runs alongside the main agreement but is unenforceable",
+        "D": "A standard form contract imposed by one party on another"
+      },
+      "correct_answer": "B",
+      "explanation": "A collateral contract is a separate contract between one party to the main contract and a third party. The third party's consideration is usually entering into (or performing) the main contract. This device allows a third party to enforce a promise that would otherwise fail for privity. In Shanklin Pier v Detel Products [1951], the pier owner was able to enforce a promise by a paint manufacturer directly because they had entered the main painting contract in exchange for the manufacturer's promise about the paint."
+    },
+    {
+      "id": 11,
+      "question": "What is the effect of the privity rule on attempts by a contracting party to impose obligations on a third party?",
+      "options": {
+        "A": "Obligations may be imposed on third parties if the contract is made in their presence",
+        "B": "A contract cannot impose obligations on a person who is not a party to it — a third party cannot be bound by a contract without their consent",
+        "C": "Third parties are automatically bound by contracts that affect their property",
+        "D": "A third party is bound if the contract is made for their benefit"
+      },
+      "correct_answer": "B",
+      "explanation": "Privity works both ways: a contract cannot impose obligations or liabilities on a non-party without their consent. In Scruttons Ltd v Midland Silicones Ltd [1962] (HL), the House of Lords held that a third-party stevedore could not benefit from the limitation clause in a bill of lading to which it was not party. Third parties cannot be both burdened and benefited by a contract unless they become parties to it."
+    },
+    {
+      "id": 12,
+      "question": "Can a promisee (party A) recover substantial damages for breach of a contract that was made for the benefit of a third party (C)?",
+      "options": {
+        "A": "No — A has suffered no loss personally, so only nominal damages are available",
+        "B": "Yes, in some circumstances — A may recover substantial damages on behalf of C, particularly where A has a legal obligation to account to C or has already suffered a loss",
+        "C": "Only where A and C are members of the same family",
+        "D": "Only where the contract was made by deed"
+      },
+      "correct_answer": "B",
+      "explanation": "In Linden Gardens Trust v Lenesta Sludge Disposals [1994] and Jackson v Horizon Holidays [1975], courts have allowed a contracting party to recover substantial damages for a third party's loss, particularly where the contract was made for the benefit of others or where the contracting party suffered loss by reason of the third party's failure. The principle allows the promisee to recover and hold damages for the benefit of the third party in appropriate cases."
+    },
+    {
+      "id": 13,
+      "question": "The doctrine of 'burden' in privity refers to the rule that a third party cannot be bound by an obligation in a contract to which they are not party. Which case illustrates a challenge to this in the context of restrictive covenants?",
+      "options": {
+        "A": "Dunlop v Selfridge [1915]",
+        "B": "Tulk v Moxhay [1848]",
+        "C": "Tweddle v Atkinson [1861]",
+        "D": "The Eurymedon [1975]"
+      },
+      "correct_answer": "B",
+      "explanation": "Tulk v Moxhay [1848] established the equitable doctrine of restrictive covenants running with land. In equity, a purchaser with notice of a restrictive covenant over land is bound by it, even though not a party to the original covenant. This is a significant qualification on the privity rule in the land law context — the burden of a restrictive covenant can run in equity to bind successors in title who take with notice."
+    },
+    {
+      "id": 14,
+      "question": "In Jackson v Horizon Holidays [1975], the Court of Appeal allowed the plaintiff to recover damages for the disappointment suffered by his family. Lord Denning's approach was:",
+      "options": {
+        "A": "The family members were parties to the contract through agency",
+        "B": "The plaintiff had contracted on behalf of his family and was entitled to recover damages representing their loss, which he would hold on their behalf",
+        "C": "The Contracts (Rights of Third Parties) Act 1999 applied",
+        "D": "Horizon Holidays had made a separate contract with each family member"
+      },
+      "correct_answer": "B",
+      "explanation": "In Jackson v Horizon Holidays [1975], Lord Denning MR held that the plaintiff had contracted for the benefit of himself and his family, and could recover damages representing the loss suffered by the entire family group, to be held for their benefit. Lord Denning's approach was controversial — the better analysis (adopted in Woodar Investment v Wimpey [1980] HL) may be that a contracting party can recover for their own loss where the purpose of the contract was to benefit others."
+    },
+    {
+      "id": 15,
+      "question": "The Law Reform Commission of Ireland has recommended reform of the privity doctrine. Which approach has been recommended?",
+      "options": {
+        "A": "Abolition of the doctrine entirely",
+        "B": "A statutory reform similar to the UK Contracts (Rights of Third Parties) Act 1999, allowing third parties to enforce contracts made for their benefit",
+        "C": "Retaining strict privity with no exceptions",
+        "D": "Allowing third parties to enforce contracts only where made by deed"
+      },
+      "correct_answer": "B",
+      "explanation": "The Law Reform Commission of Ireland has recommended (LRC Reports on Privity of Contract) reform of the doctrine along the lines of the UK Contracts (Rights of Third Parties) Act 1999, which allows a third party to enforce a contractual term if the contract expressly provides so or if the term purports to confer a benefit on the third party. As of 2025–26, Ireland has not enacted such legislation, and the common law with its exceptions continues to apply."
+    },
+    {
+      "id": 16,
+      "question": "The 'Himalaya clause' in shipping contracts is designed to:",
+      "options": {
+        "A": "Give the carrier unlimited liability for loss of cargo",
+        "B": "Extend the benefit of exclusion and limitation clauses in the bill of lading to third-party servants and agents (e.g., stevedores) of the carrier",
+        "C": "Allow cargo owners to sue stevedores directly in contract",
+        "D": "Exclude the application of the Hague-Visby Rules"
+      },
+      "correct_answer": "B",
+      "explanation": "A Himalaya clause is a device developed after Adler v Dickson [1954] (the Himalaya case) to extend contractual protections to third parties such as employees, agents, and sub-contractors of the main carrier. It typically provides that servants and agents shall be entitled to the same protections (exclusions, limitations) as the carrier. The Eurymedon [1975] upheld such a clause using agency and consideration analysis."
+    },
+    {
+      "id": 17,
+      "question": "In what circumstances can a third party take the benefit of a contract in Irish law through the trust mechanism?",
+      "options": {
+        "A": "Whenever the contract uses the words 'for the benefit of' a third party",
+        "B": "Where the court finds a clear intention by the promisee to constitute himself a trustee of the promise for the third party — not merely an intention to benefit the third party",
+        "C": "Where a deed is used in the transaction",
+        "D": "Whenever the third party has provided any form of consideration"
+      },
+      "correct_answer": "B",
+      "explanation": "The trust exception requires more than an intention to benefit a third party — the promisee must intend to hold the benefit of the promise as trustee for the third party (Re Schebsman [1944]). An ordinary contractual intention to benefit a third party is insufficient. The courts require a clear and express intention to create a trust relationship, not merely a gratuitous intention to benefit. This requirement has significantly limited the exception's practical application."
+    },
+    {
+      "id": 18,
+      "question": "Which of the following correctly states the current position in Ireland on the privity doctrine?",
+      "options": {
+        "A": "The doctrine has been abolished by the Irish courts through the development of equitable principles",
+        "B": "The doctrine applies in full, subject to established exceptions including agency, trust of a promise, collateral contract, statutory exceptions, and assignment of contractual rights",
+        "C": "The doctrine applies only to commercial contracts — family contracts are outside its scope",
+        "D": "The doctrine applies only where both parties expressly agree to it in their contract"
+      },
+      "correct_answer": "B",
+      "explanation": "The privity doctrine applies in full in Ireland. There is no general legislative reform equivalent to the UK's Contracts (Rights of Third Parties) Act 1999. However, the courts have developed established exceptions: agency (including undisclosed principal), trust of a promise, collateral contract, statutory third-party rights (e.g., motor insurance), and the law of assignment (which allows the transfer of the benefit, though not the burden, of a contract to a third party)."
+    }
+  ]
+}

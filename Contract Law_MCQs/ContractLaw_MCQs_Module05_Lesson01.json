@@ -1,0 +1,227 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": "ContractLaw_ElevenLabs_Module07_Lesson02.txt",
+  "module_number": 5,
+  "module_title": "Illegality and Public Policy",
+  "lesson_number": 1,
+  "lesson_title": "Illegal Contracts",
+  "total_questions": 18,
+  "questions": [
+    {
+      "id": 1,
+      "question": "A contract is said to be illegal at formation where:",
+      "options": {
+        "A": "One of the parties was intoxicated at the time of entering the contract",
+        "B": "The contract itself, as formed, involves the commission of an illegal act or has an illegal purpose",
+        "C": "One party subsequently uses the contract for an unlawful purpose without the other party's knowledge",
+        "D": "The contract is void for uncertainty about the price"
+      },
+      "correct_answer": "B",
+      "explanation": "A contract is illegal at formation (as opposed to illegal in its performance or use) where the very formation of the contract involves or requires the commission of an illegal act, or where the contract's stated or obvious purpose is unlawful. Examples include contracts to commit a crime or tort, or contracts expressly made in contravention of a statute. Illegality at formation is distinguished from cases where a contract is lawfully formed but subsequently performed in an illegal manner."
+    },
+    {
+      "id": 2,
+      "question": "What is the general consequence of a contract that is illegal at common law?",
+      "options": {
+        "A": "The contract is voidable — the innocent party may elect to rescind it",
+        "B": "The contract is void and unenforceable — neither party can sue on it, and courts will generally leave the parties where they find them",
+        "C": "The contract is unenforceable only by the party who committed the illegal act",
+        "D": "The contract is valid but the illegal term is severed and the rest is enforceable"
+      },
+      "correct_answer": "B",
+      "explanation": "A contract that is illegal at common law is generally void and unenforceable — neither party can sue on the contract, and courts apply the maxim ex turpi causa non oritur actio (no right of action arises from a base cause). The courts will 'leave the parties where they find them,' meaning money paid or property transferred under an illegal contract is generally not recoverable. This can operate harshly where one party is less morally culpable than the other, but the rule has been qualified in various ways."
+    },
+    {
+      "id": 3,
+      "question": "In Holman v Johnson [1775] (KB), Lord Mansfield articulated the ex turpi causa principle. He held:",
+      "options": {
+        "A": "A claimant who has participated equally in an illegal contract may recover if the illegal purpose has not yet been carried out",
+        "B": "No court will lend its aid to a claimant whose cause of action is founded in their own immoral or illegal act",
+        "C": "A defendant may not rely on the illegality of a contract as a defence where they were the wrongdoer",
+        "D": "The court has a general discretion to award restitution where fairness requires it, notwithstanding the illegality"
+      },
+      "correct_answer": "B",
+      "explanation": "In Holman v Johnson [1775], Lord Mansfield stated the classic formulation of ex turpi causa: 'No court will lend its aid to a man who founds his cause of action upon an immoral or illegal act.' This principle underlies the law's refusal to enforce illegal contracts. The rationale is that the courts should not be used as instruments to enforce arrangements that the law condemns. However, the principle has been significantly qualified in modern law — it is no longer an absolute rule and courts balance the competing public policies at stake."
+    },
+    {
+      "id": 4,
+      "question": "Which of the following is an example of a contract that is illegal by statute?",
+      "options": {
+        "A": "A contract for the sale of counterfeit goods",
+        "B": "A contract for professional services where the service provider is not registered as required by statute",
+        "C": "A contract for the sale of goods where the price is not agreed in advance",
+        "D": "A contract for the lease of property to a person with a criminal record"
+      },
+      "correct_answer": "B",
+      "explanation": "A contract entered into in contravention of a statutory prohibition may be illegal by statute. Many regulatory statutes require persons to be licensed or registered before providing certain services — a contract entered into by an unregistered person in breach of such a prohibition may be unenforceable: e.g., unlicensed moneylenders, unregistered builders (in contexts requiring registration). Whether the statutory illegality renders the contract void or merely unenforceable depends on the construction of the statute and the public policy at stake."
+    },
+    {
+      "id": 5,
+      "question": "The distinction between contracts void by statute and contracts illegal by statute is significant because:",
+      "options": {
+        "A": "Void contracts attract criminal sanctions; illegal contracts do not",
+        "B": "Void contracts may allow recovery of money paid; illegal contracts generally do not, due to the ex turpi causa principle",
+        "C": "Void contracts can be enforced by innocent parties; illegal contracts cannot be enforced by any party",
+        "D": "There is no practical distinction — both categories have identical consequences"
+      },
+      "correct_answer": "B",
+      "explanation": "Where a statute renders a contract void (without declaring it illegal per se), the courts may still allow restitutionary recovery of benefits conferred — the ex turpi causa principle may not apply with the same force. Where a contract is illegal, courts will generally refuse to assist either party and will leave them where they find them. The classification matters for recovery of money paid: a party to a void contract may have better prospects of recovering under unjust enrichment than a party to an illegal contract. The distinction depends on the proper interpretation of the statute in question."
+    },
+    {
+      "id": 6,
+      "question": "The 'locus poenitentiae' exception to the illegal contracts rule allows a party to recover money paid under an illegal contract where:",
+      "options": {
+        "A": "The party seeking recovery was not aware the contract was illegal at the time of making it",
+        "B": "The illegal purpose has not yet been fully performed and the party seeking recovery voluntarily withdraws from the illegal enterprise before it is carried out",
+        "C": "The court considers recovery to be equitable in all the circumstances",
+        "D": "The party seeking recovery has co-operated fully with the prosecuting authorities in relation to the illegal activity"
+      },
+      "correct_answer": "B",
+      "explanation": "The locus poenitentiae (place of repentance) exception permits a party who withdraws from an illegal contract before the illegal purpose has been substantially performed to recover money or property transferred. The withdrawal must be voluntary and genuine — not merely because performance has become impossible. In Taylor v Bowers [1876], the claimant was allowed to recover property transferred to defraud creditors because he repented of the scheme before it was completed. The exception recognises that a genuine withdrawal from an illegal enterprise should not be discouraged."
+    },
+    {
+      "id": 7,
+      "question": "In St John Shipping Corp v Joseph Rank Ltd [1957] (QB), Devlin J distinguished between contracts that are:",
+      "options": {
+        "A": "Illegal in their formation and illegal in the manner of their performance",
+        "B": "Void at common law and void by statute",
+        "C": "Illegal by criminal statute and illegal by civil statute",
+        "D": "Illegal in the commercial sphere and illegal in the personal sphere"
+      },
+      "correct_answer": "A",
+      "explanation": "In St John Shipping [1957], Devlin J drew the important distinction between contracts that are illegal as formed (the subject matter is inherently illegal) and contracts that are legal in themselves but performed in an illegal manner. A contract of carriage is a lawful contract; overloading a ship in breach of statutory regulations is an illegal manner of performing it. The court held that the illegal performance did not render the contract as a whole unenforceable — the distinction has practical significance because it limits the reach of illegality where the contract itself is lawful."
+    },
+    {
+      "id": 8,
+      "question": "Where only one party is aware of the illegal nature of a contract, what is the general consequence for the innocent party?",
+      "options": {
+        "A": "The innocent party is also barred from enforcing the contract under the ex turpi causa rule",
+        "B": "The innocent party may sue on the contract as if it were lawful — the other party cannot rely on their own illegality to defeat the claim",
+        "C": "The contract is valid and enforceable by both parties once the illegal element is removed",
+        "D": "The innocent party may only claim restitution — they cannot claim damages for breach"
+      },
+      "correct_answer": "B",
+      "explanation": "Where only one party knows of the illegal purpose, the innocent party is generally entitled to enforce the contract and is not tainted by the illegality. The ex turpi causa principle operates on the basis of the claimant's own moral turpitude — where the claimant is innocent and the defendant is the wrongdoer, the courts will not allow the defendant to use their own illegality as a shield: Archbolds (Freightage) Ltd v S Spanglett Ltd [1961] (CA). The innocent party may recover in contract or, alternatively, in restitution."
+    },
+    {
+      "id": 9,
+      "question": "The doctrine of severance allows courts to:",
+      "options": {
+        "A": "Replace an illegal term with a lawful substitute term that reflects the parties' intentions",
+        "B": "Strike out an illegal or void term and enforce the remainder of the contract, provided the remainder is capable of standing alone and the illegal part is not central to the whole contract",
+        "C": "Sever the contract into two separate contracts — one lawful and one illegal — and enforce only the lawful part",
+        "D": "Apply only where the illegal term is a collateral one of no importance to the main transaction"
+      },
+      "correct_answer": "B",
+      "explanation": "Severance (the 'blue pencil' rule) allows courts to strike out an illegal or void provision from a contract and enforce the remainder, provided: (1) the remaining terms are capable of standing alone and make sense without the severed part; (2) the severed part is not so central or fundamental to the contract that removing it would alter its character; and (3) there is sufficient independent consideration for what remains. The courts cannot add words or substitute new terms — they may only delete. Severance is commonly applied to restraint of trade clauses: Goldsoll v Goldman [1915]."
+    },
+    {
+      "id": 10,
+      "question": "In Tinsley v Milligan [1994] (HL), the House of Lords considered the recovery of property transferred under an illegal arrangement. The majority held that the claimant could recover because:",
+      "options": {
+        "A": "The claimant's conscience was clear — they had not committed any wrongdoing",
+        "B": "The claimant could establish their proprietary interest without relying on the illegal arrangement — the illegality was not necessary to found the claim",
+        "C": "The court exercised its discretion to allow recovery on grounds of fairness",
+        "D": "The House of Lords applied the locus poenitentiae exception because the scheme had not been completed"
+      },
+      "correct_answer": "B",
+      "explanation": "In Tinsley v Milligan [1994] (HL), the House of Lords held that a party to an illegal arrangement could recover property transferred under it if they could establish their equitable interest without pleading the illegality. The test was whether the claimant needed to rely on the illegal act to establish their claim. Since the claimant could establish their equitable interest through a resulting trust without reference to the illegal purpose, they were entitled to recover. This 'reliance test' was subsequently replaced in English law by Patel v Mirza [2016] (UK SC)."
+    },
+    {
+      "id": 11,
+      "question": "In Patel v Mirza [2016] (UK SC), the Supreme Court overhauled the approach to illegal contracts. Lord Toulson's majority approach holds that courts should:",
+      "options": {
+        "A": "Apply the ex turpi causa rule rigidly in all cases where an illegal contract is established",
+        "B": "Ask whether enforcing the claim would be harmful to the integrity of the legal system, having regard to the underlying purpose of the relevant prohibition, any relevant public policies, and the proportionality of denying relief",
+        "C": "Always enforce illegal contracts between commercial parties acting at arm's length",
+        "D": "Apply the locus poenitentiae exception generously to prevent unjust enrichment in all illegal contract cases"
+      },
+      "correct_answer": "B",
+      "explanation": "In Patel v Mirza [2016], Lord Toulson (with majority support) replaced the rigid 'reliance test' of Tinsley v Milligan with a policy-based, multi-factorial approach. The court must ask: (1) what are the underlying purposes of the prohibition? (2) what other relevant public policies are at stake? (3) would it be disproportionate to deny relief? This approach gives courts flexibility to assess whether denying relief would be out of proportion to the nature of the illegality and the harm caused. Note: Patel v Mirza is English law — its full impact on Irish law remains to be authoritatively determined."
+    },
+    {
+      "id": 12,
+      "question": "A contract to commit a crime will be:",
+      "options": {
+        "A": "Voidable at the option of the party who would commit the criminal act",
+        "B": "Void and unenforceable by either party, as contrary to both criminal law and public policy",
+        "C": "Valid provided the crime involved is relatively minor",
+        "D": "Enforceable in civil courts even if criminal proceedings have been taken in separate proceedings"
+      },
+      "correct_answer": "B",
+      "explanation": "A contract to commit a crime (for example, to commit theft, assault, or fraud) is void and unenforceable as contrary to public policy. The courts will refuse to enforce such a contract and will leave the parties without any remedy on the contract. This is one of the clearest applications of the ex turpi causa principle — the courts will not assist parties in enforcing agreements to break the law. The severity of the criminal act is not a determinative factor: even minor illegalities may render contracts unenforceable in appropriate cases."
+    },
+    {
+      "id": 13,
+      "question": "In Ireland, which statutory provision most directly addresses the enforceability of contracts made in contravention of statute?",
+      "options": {
+        "A": "Section 2 of the Statute of Frauds (Ireland) 1695",
+        "B": "There is no single statutory provision — the enforceability of contracts made in contravention of statute depends on the proper interpretation of each individual statute and the common law principles of illegality",
+        "C": "Section 45 of the Sale of Goods and Supply of Services Act 1980",
+        "D": "Section 12 of the Consumer Rights Act 2022"
+      },
+      "correct_answer": "B",
+      "explanation": "There is no single Irish statute that governs the enforceability of all contracts made in breach of statutory provisions. The enforceability of such contracts depends on: (1) the proper construction of the specific statute in question — does it impliedly or expressly prohibit the contract?; (2) whether the legislature intended the statutory breach to render the contract void, unenforceable, or merely subject to a penalty; and (3) general common law principles on illegality. Irish courts apply these common law and statutory interpretation principles on a case-by-case basis."
+    },
+    {
+      "id": 14,
+      "question": "A contract is entered into for the purpose of defrauding creditors — known to both parties. What is the consequence?",
+      "options": {
+        "A": "The contract is voidable by the defrauded creditors only",
+        "B": "The contract is void and unenforceable between the parties, as it is contrary to law and public policy (and may also be subject to challenge by defrauded creditors under insolvency legislation)",
+        "C": "The contract is valid between the parties but cannot be relied upon against the creditors",
+        "D": "The contract is enforceable because fraud on creditors is a separate civil wrong that does not affect contractual obligations"
+      },
+      "correct_answer": "B",
+      "explanation": "A contract entered into for the common purpose of defrauding creditors is illegal and void — both parties have participated in an illegal scheme and the courts will not assist either of them in enforcing it. In addition to being void between the parties, such transactions may be challenged by creditors or by a liquidator/trustee in bankruptcy under insolvency legislation (e.g., the Companies Act 2014 and the Insolvency Acts) as fraudulent conveyances. The policy of protecting creditors reinforces the common law position."
+    },
+    {
+      "id": 15,
+      "question": "The concept of 'collateral illegality' refers to:",
+      "options": {
+        "A": "An illegality that is incidental to the contract and does not necessarily render the whole contract unenforceable",
+        "B": "Illegality that is committed in the course of performing a contract that is lawful in itself",
+        "C": "An illegal side-agreement made alongside an otherwise lawful contract",
+        "D": "All three of the above descriptions of how illegality may arise outside the main terms of a contract"
+      },
+      "correct_answer": "A",
+      "explanation": "Collateral illegality refers to an illegality that is incidental or peripheral to an otherwise lawful contract — it does not necessarily render the whole contract void or unenforceable. The courts assess whether the illegality is so connected to the contract as to taint it, or whether it is sufficiently remote that the main contract can be enforced despite it. In St John Shipping [1957], the overloading of the ship was an illegal performance of an otherwise lawful carriage contract — the court held the illegality in performance did not preclude recovery of freight charges."
+    },
+    {
+      "id": 16,
+      "question": "In the case of Anderson Ltd v Daniel [1924] (CA England), a contract for the sale of goods was held unenforceable because:",
+      "options": {
+        "A": "The seller had no title to the goods",
+        "B": "The seller failed to provide an invoice that was required by statute, rendering the contract of sale unlawful",
+        "C": "The goods were defective and the seller had misrepresented their quality",
+        "D": "The contract had not been put in writing as required by the Sale of Goods Act"
+      },
+      "correct_answer": "B",
+      "explanation": "In Anderson Ltd v Daniel [1924], a statute required sellers of artificial fertiliser to provide an invoice specifying certain chemical constituents. The seller failed to provide the required invoice — a breach of a statutory obligation. The Court of Appeal held that the contract of sale was unenforceable because it had been performed in a manner that was illegal by statute. The case illustrates that where a statute makes a particular contractual obligation a criminal offence, breach of that statutory requirement may render the transaction unenforceable even where the subject matter of the contract is otherwise lawful."
+    },
+    {
+      "id": 17,
+      "question": "Where a contract is partially illegal, the court will sever the illegal part and enforce the remainder if:",
+      "options": {
+        "A": "The illegal part accounts for less than 50% of the total value of the contract",
+        "B": "The remaining lawful part is supported by sufficient consideration, is capable of standing alone, and would have been agreed to by the parties independently of the illegal part",
+        "C": "The parties expressly agreed at the time of contracting that the lawful parts would survive any invalidity",
+        "D": "The illegality was not discovered until after substantial performance of the lawful parts"
+      },
+      "correct_answer": "B",
+      "explanation": "The requirements for severance are: (1) the remaining part must be capable of standing alone as a complete and coherent agreement — it must not be so intertwined with the illegal part that removing the latter distorts the whole; (2) the remaining part must be supported by independent consideration; and (3) it must be apparent that the parties would have agreed to the lawful terms independently of the illegal ones. If the illegal part is so central to the bargain that the rest would not have been agreed without it, severance is not possible and the whole contract fails."
+    },
+    {
+      "id": 18,
+      "question": "A party who has paid money under a contract that is void for statutory illegality may seek to recover it through:",
+      "options": {
+        "A": "Breach of contract — they can sue the other party for failing to perform a valid contract",
+        "B": "Unjust enrichment — provided they are not relying on their own illegality to found the claim and the circumstances support restitution",
+        "C": "Misrepresentation — the other party misled them into believing the contract was valid",
+        "D": "No recovery is possible in any circumstances once a contract is illegal"
+      },
+      "correct_answer": "B",
+      "explanation": "Where a contract is void for illegality, the claimant cannot sue in contract — the contract has no legal effect. However, recovery may be available in unjust enrichment, particularly where: (1) the parties are not equally at fault; (2) the claimant does not need to rely on the illegal purpose to establish their claim; or (3) recovery would not undermine the legislative policy behind the prohibition. The rigid 'reliance test' from Tinsley v Milligan [1994] gave way in English law to the more flexible approach in Patel v Mirza [2016] — Irish courts are likely to apply similar policy-based reasoning."
+    }
+  ]
+}

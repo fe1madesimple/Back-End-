@@ -1,0 +1,299 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": "ContractLaw_ElevenLabs_Module04_Lesson01.txt",
+  "module_number": 4,
+  "module_title": "Vitiating Factors",
+  "lesson_number": 1,
+  "lesson_title": "Misrepresentation",
+  "total_questions": 24,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is the correct definition of an actionable misrepresentation in contract law?",
+      "options": {
+        "A": "A false statement of law made by one party to induce the other to enter a contract",
+        "B": "A false statement of existing fact made by one party to the other that induces the other to enter the contract",
+        "C": "Any statement made during contractual negotiations that proves to be inaccurate",
+        "D": "A deliberate lie about the future intentions of one of the parties"
+      },
+      "correct_answer": "B",
+      "explanation": "An actionable misrepresentation requires: (1) a false statement; (2) of existing fact (not law, opinion, or future intention); (3) made by one contracting party to the other; (4) that induces the representee to enter the contract. All four elements must be satisfied. Statements of opinion, puff, or law (pre-Kleinwort Benson) did not traditionally qualify, though the law/fact distinction has been softened in modern case law."
+    },
+    {
+      "id": 2,
+      "question": "In Derry v Peek [1889] (HL), the House of Lords established that fraudulent misrepresentation requires proof that the defendant made a false statement:",
+      "options": {
+        "A": "Knowing it was false, or without belief in its truth, or recklessly as to whether it was true or false",
+        "B": "Knowing it was false and with an intention to cause loss to the claimant",
+        "C": "Knowing it was false and in the context of a commercial transaction",
+        "D": "Without belief in its truth, provided the claimant suffered financial damage"
+      },
+      "correct_answer": "A",
+      "explanation": "In Derry v Peek [1889], the House of Lords held that fraud requires proof that a false representation was made: (1) knowingly; (2) without belief in its truth; or (3) recklessly as to whether it was true or false. This tripartite test for fraud remains the foundational authority. A negligent or careless belief in the truth of a statement does not constitute fraud — there must be dishonesty."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following scenarios would constitute a misrepresentation by conduct?",
+      "options": {
+        "A": "A seller who fails to mention a defect in goods that the buyer could have discovered on inspection",
+        "B": "A seller who polishes a car to conceal rust before showing it to a prospective buyer",
+        "C": "A seller who refuses to answer the buyer's questions about the property",
+        "D": "A seller who provides an optimistic but honest opinion about the value of the property"
+      },
+      "correct_answer": "B",
+      "explanation": "Misrepresentation can occur through conduct as well as words. Concealing a defect by physical means — such as painting over structural cracks or polishing a car to hide rust — amounts to a positive misrepresentation by conduct. Mere silence (option A) is generally not actionable because the law does not impose a duty of disclosure in ordinary commercial contracts (caveat emptor). Options C and D do not involve false statements of existing fact."
+    },
+    {
+      "id": 4,
+      "question": "A statement of opinion may amount to an actionable misrepresentation if:",
+      "options": {
+        "A": "The opinion is expressed with great confidence by an expert",
+        "B": "The opinion implies a statement of fact — for example, that the representor holds the opinion they express and has reasonable grounds for it",
+        "C": "The opinion later proves to be incorrect and the other party suffers loss",
+        "D": "The representor is a professional who charges fees for giving opinions"
+      },
+      "correct_answer": "B",
+      "explanation": "The general rule is that statements of opinion are not actionable misrepresentations. However, in Smith v Land and House Property Corp [1884], Bowen LJ held that a statement of opinion may imply a statement of fact — namely, that the representor holds the opinion they express and has an honest, reasonable basis for it. If the representor does not actually hold the opinion or has no grounds for it, the statement of opinion may carry a false statement of fact."
+    },
+    {
+      "id": 5,
+      "question": "The traditional rule that statements of law cannot ground misrepresentation has been significantly affected by:",
+      "options": {
+        "A": "The Supreme Court of Ireland decision in Sheehan v Breccia [2018]",
+        "B": "The House of Lords decision in Kleinwort Benson Ltd v Lincoln City Council [1998], which abolished the mistake of law rule",
+        "C": "The Misrepresentation Act 1967 (UK), which extended misrepresentation to statements of law",
+        "D": "EU Directive 93/13/EEC, which required all consumer misstatements to be actionable"
+      },
+      "correct_answer": "B",
+      "explanation": "The traditional rule that a mistake or misrepresentation of law is not actionable was significantly undermined by Kleinwort Benson Ltd v Lincoln City Council [1998] (HL), which abolished the distinction between mistakes of fact and law for the purposes of unjust enrichment. The same reasoning has influenced misrepresentation law, and the fact/law distinction in misrepresentation is now less absolute, with courts more willing to treat misstatements about the legal effect of documents as actionable."
+    },
+    {
+      "id": 6,
+      "question": "Which of the following is an example of a statement of future intention that could be actionable as a misrepresentation?",
+      "options": {
+        "A": "A seller who says: 'I think the property will increase in value over the next five years'",
+        "B": "A seller who says: 'I intend to use this money to pay off a mortgage' when they have no such intention at the time",
+        "C": "A seller who says: 'I believe this car is in good condition' when they are genuinely uncertain",
+        "D": "A seller who says: 'The property may require some repairs in the future'"
+      },
+      "correct_answer": "B",
+      "explanation": "The general rule is that a statement of future intention is not a statement of existing fact and therefore cannot found a misrepresentation claim. However, in Edgington v Fitzmaurice [1885], it was held that 'the state of a man's mind is as much a fact as the state of his digestion.' If a party makes a statement about their current intention and they do not in fact have that intention, they make a false statement of fact about their present state of mind — this is actionable."
+    },
+    {
+      "id": 7,
+      "question": "The requirement of inducement in misrepresentation means that:",
+      "options": {
+        "A": "The representee must have been the only person to whom the representation was made",
+        "B": "The false statement must have been at least one of the reasons that induced the representee to enter the contract — it need not be the sole cause",
+        "C": "The representee must have relied exclusively and solely on the representation without making any independent enquiries",
+        "D": "The representor must have intended to induce the representee to enter the contract by means of the false statement"
+      },
+      "correct_answer": "B",
+      "explanation": "Inducement requires that the misrepresentation materially contributed to the representee's decision to enter the contract. It need not be the sole cause — it is sufficient that the misrepresentation was 'an inducing cause' alongside other factors. In Edgington v Fitzmaurice [1885], the claimant would have entered the contract even without the misrepresentation, but the court held there was still inducement because the false statement was one of the operating reasons."
+    },
+    {
+      "id": 8,
+      "question": "Where a representee discovers the falsity of a representation before entering the contract, what is the effect on their misrepresentation claim?",
+      "options": {
+        "A": "They may still claim for negligent misrepresentation provided the statement was made carelessly",
+        "B": "The claim is barred because they cannot have been induced by a statement they knew to be false",
+        "C": "They may still claim but damages are reduced proportionately for contributory negligence",
+        "D": "The claim is unaffected — the representor remains liable for making the false statement"
+      },
+      "correct_answer": "B",
+      "explanation": "If the representee knew the statement was false before entering the contract, they cannot have been induced by it. Inducement requires actual reliance on the false statement as true. In Attwood v Small [1838], the claimants conducted independent verification of a seller's statements and could not therefore rely on the misrepresentation claim. Similarly, if a buyer is told the truth before exchange, any prior misrepresentation is neutralised."
+    },
+    {
+      "id": 9,
+      "question": "What is the primary remedy for an actionable misrepresentation?",
+      "options": {
+        "A": "Damages assessed on an expectation basis as if the representation had been true",
+        "B": "Rescission — setting aside the contract ab initio to restore the parties to their pre-contractual positions",
+        "C": "Specific performance of the misrepresented term",
+        "D": "An injunction restraining the representor from repeating the false statement"
+      },
+      "correct_answer": "B",
+      "explanation": "The primary remedy for misrepresentation is rescission — the equitable remedy of setting the contract aside as if it had never been made, restoring the parties to their pre-contractual positions. Rescission is available for all categories of misrepresentation (fraudulent, negligent, and innocent). Damages are also available, but the measure and basis differ depending on the category of misrepresentation. Expectation damages (as if the representation were true) are not available for misrepresentation."
+    },
+    {
+      "id": 10,
+      "question": "Which of the following is a recognised bar to rescission for misrepresentation?",
+      "options": {
+        "A": "The representee has obtained independent legal advice",
+        "B": "The representee has affirmed the contract after learning of the misrepresentation",
+        "C": "The misrepresentation was made orally rather than in writing",
+        "D": "The misrepresentation related to a term that was not a condition of the contract"
+      },
+      "correct_answer": "B",
+      "explanation": "The bars to rescission in misrepresentation include: (1) affirmation — where the representee, with full knowledge of the misrepresentation, elects to continue with the contract; (2) lapse of time — particularly for innocent misrepresentation (Leaf v International Galleries [1950]); (3) restitution impossible — where it is not possible to restore the parties to their original positions; (4) intervention of third party rights — where a bona fide third party acquires rights for value. Affirmation must be unequivocal and with knowledge of the misrepresentation."
+    },
+    {
+      "id": 11,
+      "question": "In Hedley Byrne & Co Ltd v Heller & Partners Ltd [1964] (HL), the House of Lords established liability for negligent misstatement causing pure economic loss where there is:",
+      "options": {
+        "A": "A contractual relationship between the parties at the time the statement is made",
+        "B": "A special relationship of proximity giving rise to a duty of care, with the defendant knowing the claimant would rely on the statement",
+        "C": "A fraudulent intention on the part of the representor to mislead the claimant",
+        "D": "A direct request by the claimant for information and an express promise of accuracy by the defendant"
+      },
+      "correct_answer": "B",
+      "explanation": "In Hedley Byrne v Heller [1964], the House of Lords held that liability in tort for negligent misstatement causing pure economic loss arises where there is a 'special relationship' between the parties — one of proximity in which the defendant knows or ought to know that the claimant will rely on the statement and it is reasonable for them to do so. The defendant must have assumed responsibility for the accuracy of the information. This is the foundation for negligent misrepresentation liability in tort alongside any contractual claim."
+    },
+    {
+      "id": 12,
+      "question": "In the Irish case of UB (Ireland) Ltd v Ulster Bank Ltd [1999] (HC), the court considered negligent misrepresentation in a commercial context. What principle does this case illustrate?",
+      "options": {
+        "A": "Irish courts do not recognise negligent misrepresentation as a separate cause of action",
+        "B": "Irish courts apply the Hedley Byrne principle and will impose liability where there is a special relationship and foreseeable reliance on advice given by one with expertise",
+        "C": "Banks in Ireland owe a duty of care only to their direct customers, not to third parties",
+        "D": "Pure economic loss from negligent misrepresentation is not recoverable in Irish law"
+      },
+      "correct_answer": "B",
+      "explanation": "Irish courts have adopted the Hedley Byrne principle and recognise liability for negligent misrepresentation causing economic loss where a special relationship of proximity exists. UB (Ireland) Ltd v Ulster Bank Ltd [1999] confirmed that where a party with relevant expertise provides information knowing another will rely on it, and where it is reasonable for them to do so, a duty of care arises. This principle applies across professional and commercial contexts in Irish law."
+    },
+    {
+      "id": 13,
+      "question": "Fraudulent misrepresentation entitles the representee to claim damages in the tort of deceit. The measure of damages in deceit is:",
+      "options": {
+        "A": "Expectation losses — putting the claimant in the position they would have been in had the representation been true",
+        "B": "Reliance losses — all losses caused by entering the transaction, assessed on a tortious basis (restoring the claimant to their pre-transaction position), with no reduction for unforeseeable consequences",
+        "C": "Losses limited to the difference in value between what was represented and what was received",
+        "D": "Consequential losses only, excluding any direct financial loss from the transaction itself"
+      },
+      "correct_answer": "B",
+      "explanation": "In the tort of deceit, the claimant is entitled to recover all losses caused by entering the transaction as a result of the fraudulent misrepresentation. The test of remoteness is more generous than in contract or negligence — the defendant is liable for all direct consequences of the fraud regardless of foreseeability (Doyle v Olby (Ironmongers) Ltd [1969]). The measure is to restore the claimant to their pre-transaction position — not the expectation measure. Smith New Court Securities v Scrimgeour Vickers [1997] confirmed the broad measure of recovery in deceit."
+    },
+    {
+      "id": 14,
+      "question": "Which of the following statements correctly distinguishes fraudulent misrepresentation from negligent misrepresentation?",
+      "options": {
+        "A": "Fraudulent misrepresentation requires dishonesty; negligent misrepresentation requires only that the representor failed to take reasonable care to ensure the statement was accurate",
+        "B": "Fraudulent misrepresentation is actionable without proof of loss; negligent misrepresentation requires proof of financial damage",
+        "C": "Fraudulent misrepresentation gives rise only to rescission; negligent misrepresentation gives rise only to damages",
+        "D": "Fraudulent misrepresentation applies only to written statements; negligent misrepresentation applies to oral statements"
+      },
+      "correct_answer": "A",
+      "explanation": "The fundamental distinction is dishonesty: fraudulent misrepresentation (Derry v Peek [1889]) requires that the defendant did not honestly believe the statement to be true — knowingly false, without belief, or recklessly indifferent. Negligent misrepresentation requires only that the representor failed to take reasonable care to verify the accuracy of the statement. Rescission and damages are potentially available for both categories, though the measure of damages differs."
+    },
+    {
+      "id": 15,
+      "question": "Innocent misrepresentation arises where the representor makes a false statement:",
+      "options": {
+        "A": "Without intending to cause any harm to the representee",
+        "B": "Honestly believing it to be true and having reasonable grounds for that belief, without fraud or negligence",
+        "C": "Without any contractual relationship between the parties at the time of the statement",
+        "D": "In a private rather than commercial context"
+      },
+      "correct_answer": "B",
+      "explanation": "Innocent misrepresentation occurs where the representor makes a false statement honestly believing it to be true and with reasonable grounds for that belief — there is no fraud and no negligence. The remedy for innocent misrepresentation is traditionally rescission only (not damages at common law), though in some jurisdictions (under the UK Misrepresentation Act 1967, s2(2)) a court may award damages in lieu of rescission. In Irish law, damages for innocent misrepresentation remain unavailable except where the court exercises a discretion."
+    },
+    {
+      "id": 16,
+      "question": "The 'half-truth' principle in misrepresentation law holds that:",
+      "options": {
+        "A": "A statement that is technically accurate but misleading in its overall effect can amount to a misrepresentation",
+        "B": "A statement needs only be half accurate to escape liability for misrepresentation",
+        "C": "A partial disclosure of material facts reduces the representor's liability by 50%",
+        "D": "A statement is only a misrepresentation if more than half of its content is false"
+      },
+      "correct_answer": "A",
+      "explanation": "The half-truth principle recognises that a statement may be literally true but misleading — and may therefore amount to an actionable misrepresentation. In Dimmock v Hallett [1866], a seller described land as 'fully let' — technically true at the time, but failing to mention that the tenants had given notice to quit. The court held this was a misrepresentation. The principle that silence can be misleading when partial disclosure creates a false impression is an important qualification on the general rule that mere silence is not actionable."
+    },
+    {
+      "id": 17,
+      "question": "Which of the following contracts is classified as a contract uberrimae fidei (of the utmost good faith), requiring full disclosure by both parties?",
+      "options": {
+        "A": "A contract for the sale of residential property",
+        "B": "A consumer purchase of electronic goods",
+        "C": "A contract of insurance",
+        "D": "An employment contract"
+      },
+      "correct_answer": "C",
+      "explanation": "Contracts uberrimae fidei — of the utmost good faith — are an exception to the general rule that mere silence does not constitute misrepresentation. Insurance contracts are the primary category: each party is required to disclose all material facts, whether or not asked. The insured's duty is particularly extensive — failure to disclose a material fact (even innocently) entitles the insurer to avoid the policy. Other examples include family settlements and partnerships. In ordinary sale contracts, caveat emptor applies."
+    },
+    {
+      "id": 18,
+      "question": "A continuing representation is one where a statement made before contract is not yet false when made but becomes false before the contract is concluded. What is the effect?",
+      "options": {
+        "A": "There is no misrepresentation because the statement was true when made",
+        "B": "The representor must correct the statement; failure to do so can constitute an actionable misrepresentation",
+        "C": "The representee assumes the risk of any change in circumstances after the statement is made",
+        "D": "The contract is automatically void if the statement becomes inaccurate before execution"
+      },
+      "correct_answer": "B",
+      "explanation": "Where a representation is made that is true at the time of making but subsequently becomes false before the contract is concluded, the representor is under an obligation to correct it. Failure to disclose the change in circumstances may amount to an actionable misrepresentation: With v O'Flanagan [1936] — a medical practice was represented as having a certain income when negotiations began; by the time of signing, the income had dramatically fallen due to the vendor's illness. The Court of Appeal held the vendor had a duty to disclose the change."
+    },
+    {
+      "id": 19,
+      "question": "In Irish law, the primary statutory basis for a damages claim in respect of non-fraudulent misrepresentation that induces a contract is:",
+      "options": {
+        "A": "The Misrepresentation Act 1967 (UK, directly applicable in Ireland)",
+        "B": "The Sale of Goods and Supply of Services Act 1980, s45",
+        "C": "There is no equivalent of the Misrepresentation Act 1967 in Irish law — claims for non-fraudulent misrepresentation are pursued through the Hedley Byrne tort of negligent misstatement or equity",
+        "D": "The Consumer Rights Act 2022, which provides a statutory damages remedy for all pre-contractual misrepresentations in consumer contracts"
+      },
+      "correct_answer": "C",
+      "explanation": "Unlike England and Wales, Ireland did not enact a Misrepresentation Act equivalent to the UK's 1967 Act. Accordingly, for negligent (non-fraudulent) pre-contractual misrepresentation, Irish claimants must rely on: (1) the tort of negligent misstatement under Hedley Byrne principles; (2) the equitable remedy of rescission (for all categories); or (3) any applicable statutory provisions for specific regulated sectors. This is a significant structural difference between Irish and English misrepresentation law that FE-1 candidates must recognise."
+    },
+    {
+      "id": 20,
+      "question": "Where a misrepresentation has become a term of the contract, the representee may choose to:",
+      "options": {
+        "A": "Pursue only a misrepresentation claim — the contractual claim is extinguished by merger",
+        "B": "Sue for breach of contract (if the term is breached) or pursue a misrepresentation claim — the remedies available may differ",
+        "C": "Pursue only the contractual claim — misrepresentation is absorbed into the contractual term",
+        "D": "Seek an injunction preventing further breach of the incorporated representation"
+      },
+      "correct_answer": "B",
+      "explanation": "Where a misrepresentation is incorporated as a term of the contract, the representee has concurrent remedies: they may sue for breach of contract (claiming expectation damages if the term is breached) or pursue a misrepresentation claim (seeking rescission and/or tortious damages). The remedies differ in measure and scope. The choice matters: breach of contract damages are measured on an expectation basis, while misrepresentation damages restore the claimant to the pre-contractual position."
+    },
+    {
+      "id": 21,
+      "question": "In Bank of Ireland v Smith [1966] (SC Ireland), the Supreme Court considered the materiality requirement for misrepresentation. The test for materiality is:",
+      "options": {
+        "A": "Whether the representor subjectively regarded the statement as important",
+        "B": "Whether a reasonable person in the position of the representee would have been influenced by the statement in deciding to enter the contract",
+        "C": "Whether the misrepresentation affected the price paid under the contract",
+        "D": "Whether the misrepresentation would have led a reasonable representor to withdraw from the negotiation"
+      },
+      "correct_answer": "B",
+      "explanation": "Materiality in misrepresentation law is assessed objectively: the question is whether a reasonable person in the representee's position would have been influenced by the statement in their decision to enter the contract. This is distinct from the subjective question of whether the particular representee was in fact induced — both are required for a successful claim (though inducement is assessed subjectively for the actual representee). Irish courts apply this objective materiality standard consistent with the general common law approach."
+    },
+    {
+      "id": 22,
+      "question": "A clause in a contract purports to exclude or limit liability for misrepresentation. In Irish law, such a clause:",
+      "options": {
+        "A": "Is always void as contrary to public policy",
+        "B": "Is valid provided it is incorporated into the contract and is reasonable",
+        "C": "Is void if it attempts to exclude liability for fraudulent misrepresentation but may be valid for negligent or innocent misrepresentation, subject to reasonableness",
+        "D": "Is automatically valid in commercial contracts between parties of equal bargaining power"
+      },
+      "correct_answer": "C",
+      "explanation": "At common law, liability for fraudulent misrepresentation cannot be excluded — such a clause would itself be procured by fraud and is contrary to public policy. As regards negligent or innocent misrepresentation, exclusion clauses may be valid subject to the usual requirements of incorporation and the reasonableness test (as applied under the CRA 2022 in consumer contracts). In commercial contexts, the reasonableness of the clause is assessed on the facts. This mirrors the position under s3 of the UK Misrepresentation Act 1967, which has no direct Irish equivalent but informs judicial reasoning."
+    },
+    {
+      "id": 23,
+      "question": "Rescission for misrepresentation operates ab initio, meaning:",
+      "options": {
+        "A": "The contract is terminated from the date the misrepresentation is discovered",
+        "B": "The contract is treated as never having been made, and the parties are restored to their pre-contractual positions",
+        "C": "Only the affected term is set aside; the rest of the contract remains binding",
+        "D": "Future obligations under the contract are discharged but past performance is not affected"
+      },
+      "correct_answer": "B",
+      "explanation": "Rescission ab initio treats the contract as void from the outset — as if it had never existed. The parties must be restored to their pre-contractual positions through the equitable remedy of restitution. This is distinct from termination for breach, which discharges future obligations but leaves past transactions intact. The ab initio effect of rescission explains why restitution impossibility (e.g., where goods have been consumed or significantly altered) is a bar to rescission — the courts cannot unwind what cannot be restored."
+    },
+    {
+      "id": 24,
+      "question": "Which of the following correctly summarises the three categories of misrepresentation and their remedies in Irish law?",
+      "options": {
+        "A": "Fraudulent (rescission + deceit damages); Negligent (rescission + Hedley Byrne damages in tort); Innocent (rescission only — no damages available at common law)",
+        "B": "Fraudulent (damages only); Negligent (rescission + statutory damages); Innocent (rescission + indemnity)",
+        "C": "All three categories (rescission + expectation damages), distinguished only by the standard of proof required",
+        "D": "Fraudulent (rescission only); Negligent (damages only in tort); Innocent (no remedy in Irish law)"
+      },
+      "correct_answer": "A",
+      "explanation": "In Irish law: (1) Fraudulent misrepresentation — rescission plus damages in the tort of deceit on a generous reliance basis (all losses flowing from the fraud, without foreseeability limitation); (2) Negligent misrepresentation — rescission plus damages in tort under Hedley Byrne (where a special relationship exists) assessed on a tortious basis; (3) Innocent misrepresentation — rescission only (no damages available at common law in Ireland, unlike the position under the UK Misrepresentation Act 1967 s2(2) which allows damages in lieu of rescission)."
+    }
+  ]
+}
