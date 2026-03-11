@@ -1,12 +1,21 @@
 import { z } from 'zod';
-import { CaseJurisdiction, CaseFrequency } from '@prisma/client';
+import { CaseJurisdiction } from '@prisma/client';
 
 export const searchCasesSchema = z.object({
   query: z.object({
     search: z.string().optional(),
     subject: z.string().optional(),
-    jurisdiction: z.nativeEnum(CaseJurisdiction).optional(),
-    frequency: z.nativeEnum(CaseFrequency).optional(),
+    jurisdiction: z
+      .string()
+      .optional()
+      .transform((val) => (val ? (val.toUpperCase() as CaseJurisdiction) : undefined)),
+    year: z
+      .string()
+      .optional()
+      .transform((val) => (val ? parseInt(val) : undefined)),
+    caseName: z.string().optional(),
+    citation: z.string().optional(),
+    frequency: z.enum(['High', 'Low']).optional(),
     page: z
       .string()
       .optional()
@@ -14,7 +23,7 @@ export const searchCasesSchema = z.object({
     limit: z
       .string()
       .optional()
-      .transform((val) => (val ? parseInt(val) : 10)),
+      .transform((val) => (val ? parseInt(val) : 20)),
   }),
 });
 
@@ -36,15 +45,8 @@ export const saveCaseSchema = z.object({
   }),
 });
 
-export const getAllCasesSchema = z.object({
-  query: z.object({
-    page: z
-      .string()
-      .optional()
-      .transform((val) => (val ? parseInt(val) : 1)),
-    limit: z
-      .string()
-      .optional()
-      .transform((val) => (val ? parseInt(val) : 20)),
+export const toggleReviewSchema = z.object({
+  params: z.object({
+    caseId: z.string().cuid(),
   }),
 });
