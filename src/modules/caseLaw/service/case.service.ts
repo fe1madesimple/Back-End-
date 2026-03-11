@@ -103,7 +103,7 @@ class CaseService {
     }
 
     if (subject) where.subjects = { has: subject };
-    if (jurisdiction) where.jurisdiction = jurisdiction;
+    if (jurisdiction) where.jurisdiction = jurisdiction.toUpperCase() as CaseJurisdiction;
     if (year) where.year = year;
     if (caseName) where.caseName = { contains: caseName, mode: 'insensitive' };
     if (citation) where.citation = { contains: citation, mode: 'insensitive' };
