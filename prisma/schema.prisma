@@ -97,6 +97,11 @@ model QuizSession {
 
   user     User              @relation(fields: [userId], references: [id])
   attempts QuestionAttempt[]
+  lessonId String?
+  moduleId String?
+
+  lesson Lesson? @relation(fields: [lessonId], references: [id], onDelete: SetNull)
+  module Module? @relation(fields: [moduleId], references: [id], onDelete: SetNull)
 
   @@index([userId])
   @@index([isCompleted])
@@ -550,7 +555,6 @@ model CaseBrief {
   @@map("case_briefs")
 }
 
-
 model DailyStudySession {
   id     String @id @default(cuid())
   userId String
@@ -719,8 +723,9 @@ model Module {
   questions    Question[] // Module-level questions
   userProgress UserModuleProgress[]
 
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  quizSessions QuizSession[]
 
   @@unique([subjectId, slug])
   @@map("modules")
@@ -748,8 +753,9 @@ model Lesson {
   assets       LessonAsset[]
   userProgress UserLessonProgress[]
 
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  quizSessions QuizSession[]
 
   @@unique([moduleId, slug])
   @@map("lessons")
@@ -807,6 +813,7 @@ model EssayAttempt {
   isSimulation Boolean     @default(false)
   simulationId String?
   simulation   Simulation? @relation(fields: [simulationId], references: [id], onDelete: Cascade)
+  source       String?
 
   createdAt DateTime @default(now())
 
