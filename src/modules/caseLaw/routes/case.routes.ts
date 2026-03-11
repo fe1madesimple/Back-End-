@@ -8,6 +8,14 @@ import {
   toggleSaveCase,
   toggleReview,
 } from '../controller/case.controller';
+import {
+  searchCasesSchema,
+  getCaseDetailsSchema,
+  getSavedCasesSchema,
+  saveCaseSchema,
+  toggleReviewSchema,
+} from '../validator/case.validator';
+import { validate } from '@/shared/middleware/validation';
 
 const caseRouter = Router();
 
@@ -44,7 +52,7 @@ caseRouter.get('/filters', protect, getCaseFilters);
  *       200:
  *         description: Saved cases retrieved successfully
  */
-caseRouter.get('/saved', protect, getSavedCases);
+caseRouter.get('/saved', protect, validate(getSavedCasesSchema), getSavedCases);
 
 /**
  * @swagger
@@ -101,7 +109,7 @@ caseRouter.get('/saved', protect, getSavedCases);
  *       200:
  *         description: Cases retrieved successfully
  */
-caseRouter.get('/', protect, searchCases);
+caseRouter.get('/', protect, validate(searchCasesSchema), searchCases);
 
 /**
  * @swagger
@@ -124,7 +132,7 @@ caseRouter.get('/', protect, searchCases);
  *       404:
  *         description: Case not found
  */
-caseRouter.get('/:id', protect, getCaseDetails);
+caseRouter.get('/:id', protect, validate(getCaseDetailsSchema), getCaseDetails);
 
 /**
  * @swagger
@@ -146,7 +154,7 @@ caseRouter.get('/:id', protect, getCaseDetails);
  *       404:
  *         description: Case not found
  */
-caseRouter.post('/:id/save', protect, toggleSaveCase);
+caseRouter.post('/:id/save', protect, validate(saveCaseSchema), toggleSaveCase);
 
 /**
  * @swagger
@@ -169,6 +177,6 @@ caseRouter.post('/:id/save', protect, toggleSaveCase);
  *       404:
  *         description: Case not saved
  */
-caseRouter.post('/:caseId/toggle-review', protect, toggleReview);
+caseRouter.post('/:caseId/toggle-review', protect, validate(toggleReviewSchema), toggleReview);
 
 export default caseRouter;
