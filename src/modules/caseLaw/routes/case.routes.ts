@@ -1,29 +1,56 @@
 import { Router } from 'express';
 import { protect } from '@/shared/middleware/auth.middleware';
-import { validate } from '@/shared/middleware/validation';
 import {
+  getCaseFilters,
   searchCases,
   getCaseDetails,
   getSavedCases,
   toggleSaveCase,
-  getAllCases,
-  toggleReview
+  toggleReview,
 } from '../controller/case.controller';
-import {
-  searchCasesSchema,
-  getCaseDetailsSchema,
-  getSavedCasesSchema,
-  saveCaseSchema,
-  getAllCasesSchema,
-} from '../validator/case.validator';
 
 const caseRouter = Router();
 
 /**
  * @swagger
+ * /api/v1/cases/filters:
+ *   get:
+ *     summary: Get all filter options for case law library
+ *     tags: [Case Law]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Returns all available filter values — years, case names, jurisdictions, citations, and frequency options. Call this on library page load to populate dropdowns.
+ *     responses:
+ *       200:
+ *         description: Filters retrieved successfully
+ */
+caseRouter.get('/filters', protect, getCaseFilters);
+
+/**
+ * @swagger
+ * /api/v1/cases/saved:
+ *   get:
+ *     summary: Get user's saved cases
+ *     tags: [Case Law]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: query
+ *         name: subject
+ *         schema:
+ *           type: string
+ *         description: Filter saved cases by subject
+ *     responses:
+ *       200:
+ *         description: Saved cases retrieved successfully
+ */
+caseRouter.get('/saved', protect, getSavedCases);
+
+/**
+ * @swagger
  * /api/v1/cases:
  *   get:
- *     summary: Search and filter case law
+ *     summary: Search and filter case law library
  *     tags: [Case Law]
  *     security:
  *       - bearerAuth: []
@@ -32,49 +59,34 @@ const caseRouter = Router();
  *         name: search
  *         schema:
  *           type: string
- *         description: Search by case name, citation, or topic
+ *         description: Full text search across case name, citation, topics, summary
  *       - in: query
  *         name: subject
  *         schema:
  *           type: string
- *         description: Filter by subject (e.g., "Contract Law")
  *       - in: query
  *         name: jurisdiction
  *         schema:
  *           type: string
- *           enum: [IRISH_SUPREME_COURT, IRISH_COURT_OF_APPEAL, IRISH_HIGH_COURT, UK_SUPREME_COURT, UK_COURT_OF_APPEAL, UK_HOUSE_OF_LORDS, ECJ_CJEU, ECHR]
+ *           enum: [IRELAND, UNITED_KINGDOM, AUSTRALIA, UNITED_STATES, NEW_ZEALAND, EUROPEAN_UNION, ECHR, CANADA, INTERNATIONAL, ENGLAND, ENGLAND_AND_WALES, SCOTLAND, NORTHERN_IRELAND, OTHER]
+ *       - in: query
+ *         name: year
+ *         schema:
+ *           type: integer
+ *       - in: query
+ *         name: caseName
+ *         schema:
+ *           type: string
+ *       - in: query
+ *         name: citation
+ *         schema:
+ *           type: string
  *       - in: query
  *         name: frequency
  *         schema:
  *           type: string
- *           enum: [HIGH_FREQUENCY, MEDIUM_FREQUENCY, RARE, NOT_EXAMINED]
- *       - in: query
- *         name: page
- *         schema:
- *           type: integer
- *           default: 1
- *       - in: query
- *         name: limit
- *         schema:
- *           type: integer
- *           default: 10
- *     responses:
- *       200:
- *         description: Cases retrieved successfully
- */
-caseRouter.get('/', protect, validate(searchCasesSchema), searchCases);
-
-
-/**
- * @swagger
- * /api/v1/cases:
- *   get:
- *     summary: Get all cases
- *     tags: [Cases]
- *     security:
- *       - bearerAuth: []
- *     description: Returns paginated case briefs with save/review status.
- *     parameters:
+ *           enum: [High, Low]
+ *         description: High = isFrequentlyTested true, Low = false
  *       - in: query
  *         name: page
  *         schema:
@@ -87,84 +99,38 @@ caseRouter.get('/', protect, validate(searchCasesSchema), searchCases);
  *           default: 20
  *     responses:
  *       200:
- *         description: Cases retrieved
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 cases:
- *                   type: array
- *                   items:
- *                     type: object
- *                     properties:
- *                       id:
- *                         type: string
- *                       caseName:
- *                         type: string
- *                       citation:
- *                         type: string
- *                       year:
- *                         type: integer
- *                       court:
- *                         type: string
- *                       jurisdiction:
- *                         type: string
- *                       frequency:
- *                         type: string
- *                       subjects:
- *                         type: array
- *                         items:
- *                           type: string
- *                       topics:
- *                         type: array
- *                         items:
- *                           type: string
- *                       facts:
- *                         type: string
- *                       isSaved:
- *                         type: boolean
- *                       isReviewed:
- *                         type: boolean
- *                 pagination:
- *                   type: object
- *                   properties:
- *                     total:
- *                       type: integer
- *                     page:
- *                       type: integer
- *                     limit:
- *                       type: integer
- *                     totalPages:
- *                       type: integer
+ *         description: Cases retrieved successfully
  */
-caseRouter.get('/all', protect, validate(getAllCasesSchema), getAllCases);
-
-/**
- * @swagger
- * /api/v1/cases/saved:
- *   get:
- *     summary: Get all saved cases
- *     tags: [Case Law]
- *     security:
- *       - bearerAuth: []
- *     parameters:
- *       - in: query
- *         name: subject
- *         schema:
- *           type: string
- *         description: Filter by subject
- *     responses:
- *       200:
- *         description: Saved cases retrieved successfully
- */
-caseRouter.get('/saved', protect, validate(getSavedCasesSchema), getSavedCases);
+caseRouter.get('/', protect, searchCases);
 
 /**
  * @swagger
  * /api/v1/cases/{id}:
  *   get:
- *     summary: Get case details with all tabs
+ *     summary: Get full case detail
+ *     tags: [Case Law]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Returns full summary, legal principle, key quote, metadata, and save status.
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Case details retrieved successfully
+ *       404:
+ *         description: Case not found
+ */
+caseRouter.get('/:id', protect, getCaseDetails);
+
+/**
+ * @swagger
+ * /api/v1/cases/{id}/save:
+ *   post:
+ *     summary: Toggle save/unsave case for revision
  *     tags: [Case Law]
  *     security:
  *       - bearerAuth: []
@@ -174,25 +140,23 @@ caseRouter.get('/saved', protect, validate(getSavedCasesSchema), getSavedCases);
  *         required: true
  *         schema:
  *           type: string
- *         description: Case ID
  *     responses:
  *       200:
- *         description: Case details retrieved
+ *         description: Case saved or unsaved
  *       404:
  *         description: Case not found
  */
-caseRouter.get('/:id', protect, validate(getCaseDetailsSchema), getCaseDetails);
-
+caseRouter.post('/:id/save', protect, toggleSaveCase);
 
 /**
  * @swagger
  * /api/v1/cases/{caseId}/toggle-review:
  *   post:
- *     summary: Toggle case review status
- *     tags: [Cases]
+ *     summary: Toggle reviewed status on a saved case
+ *     tags: [Case Law]
  *     security:
  *       - bearerAuth: []
- *     description: Marks saved case as reviewed/unreviewed.
+ *     description: Case must be saved first. Toggles lastReviewedAt between now and null.
  *     parameters:
  *       - in: path
  *         name: caseId
@@ -202,45 +166,9 @@ caseRouter.get('/:id', protect, validate(getCaseDetailsSchema), getCaseDetails);
  *     responses:
  *       200:
  *         description: Review status updated
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 isReviewed:
- *                   type: boolean
- *                 lastReviewedAt:
- *                   type: string
- *                   format: date-time
- *                   nullable: true
  *       404:
  *         description: Case not saved
  */
 caseRouter.post('/:caseId/toggle-review', protect, toggleReview);
-
-
-/**
- * @swagger
- * /api/v1/cases/{id}/save:
- *   post:
- *     summary: Save or unsave case for revision
- *     tags: [Case Law]
- *     security:
- *       - bearerAuth: []
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema:
- *           type: string
- *         description: Case ID
- *     responses:
- *       200:
- *         description: Case saved/unsaved successfully
- *       404:
- *         description: Case not found
- */
-caseRouter.post('/:id/save', protect, validate(saveCaseSchema), toggleSaveCase);
-
 
 export default caseRouter;
