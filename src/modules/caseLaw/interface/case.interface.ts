@@ -61,11 +61,10 @@ export interface CaseDetailResponse {
 export interface CaseFiltersResponse {
   years: number[];
   caseNames: string[];
-  jurisdictions: { value: CaseJurisdiction; label: string }[];
+  jurisdictions: string[];
   citations: string[];
-  frequency: { value: string; label: string }[];
+  frequency: string[];
 }
-
 export interface SavedCaseCardResponse {
   id: string;
   caseName: string;

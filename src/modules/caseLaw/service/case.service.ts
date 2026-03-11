@@ -66,14 +66,8 @@ class CaseService {
       years: years.map((r) => r.year),
       caseNames: caseNames.map((r) => r.caseName),
       citations: citations.map((r) => r.citation),
-      jurisdictions: jurisdictions.map((r) => ({
-        value: r.jurisdiction,
-        label: JURISDICTION_DISPLAY[r.jurisdiction],
-      })),
-      frequency: [
-        { value: 'High', label: 'High Frequency' },
-        { value: 'Low', label: 'Rare' },
-      ],
+      jurisdictions: jurisdictions.map((r) => JURISDICTION_DISPLAY[r.jurisdiction]),
+      frequency: ['High Frequency', 'Rare'],
     };
   }
 
