@@ -31,2028 +31,1484 @@ const jurisdictionMap: Record<string, CaseJurisdiction> = {
 
 const rawCases = [
   {
-    case_name: "The People (AG) v O'Brien",
-    citation: '[1965] IR 142',
-    year: 1965,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
+    case_name: 'Carlill v Carbolic Smoke Ball Co',
+    citation: '[1893] 1 QB 256',
+    year: 1893,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
     legal_principle:
-      "The Supreme Court established that evidence obtained in breach of constitutional rights is not automatically inadmissible; the court must balance the accused's right to a fair trial against the gravity of the constitutional infringement. Kingsmill Moore J held that the seriousness of the breach, the bona fides of the Gardaí, and the importance of the evidence are all relevant considerations. This 'balancing test' governed Irish law until The People (DPP) v Kenny [1990].",
+      'An advertisement containing a specific promise backed by a deposit of money constitutes a binding unilateral offer to the world at large. Acceptance of a unilateral offer occurs through performance of the stipulated act, and notification of acceptance is not required. The deposit of money in the advertisement displaced the presumption that it was mere puff.',
     key_quote:
-      'Not every infringement of constitutional rights necessarily involves an exclusion of the evidence obtained thereby.',
+      'It was intended to be understood by the public as an offer which was to be acted upon, and it was acted upon by the plaintiff to the benefit of the defendants.',
     full_summary:
-      "The People (AG) v O'Brien [1965] IR 142 is a seminal Supreme Court decision establishing the foundational Irish approach to the exclusion of unconstitutionally obtained evidence. The case arose from a search conducted pursuant to a warrant that incorrectly identified the address of the premises to be searched. The Gardaí acted in good faith, but the warrant was defective. The Supreme Court, in a landmark judgment delivered by Kingsmill Moore J, declined to adopt the automatic exclusion rule then prevailing in the United States under Mapp v Ohio. Instead, the court crafted a distinctively Irish 'balancing test': a judge must weigh the accused's right to a fair trial and the vindication of constitutional rights against the public interest in the prosecution of crime and the importance of the evidence to the prosecution case. Key factors in the balance include the seriousness of the constitutional breach, whether the breach was deliberate or inadvertent, and the bona fides of the Gardaí. Evidence obtained by deliberate unconstitutional conduct was to be treated more seriously than evidence obtained through inadvertent error. The O'Brien balancing test remained the governing approach in Irish law for over two decades and was applied across numerous subsequent cases. It was ultimately overruled by the Supreme Court in The People (DPP) v Kenny [1990], which replaced it with an absolute exclusionary rule, though Kenny itself was later modified by The People (DPP) v JC [2017]. O'Brien remains essential reading as the historical starting point for understanding the evolution of the Irish exclusionary rule.",
-    subjects: ['criminal'],
+      'The Carbolic Smoke Ball Company advertised that it would pay £100 to any person who contracted influenza after using its smoke ball three times daily for two weeks, and deposited £1,000 in a named bank to show its sincerity. Mrs Carlill used the ball as directed and contracted influenza. The Court of Appeal held that the advertisement was a valid unilateral offer to the whole world, not mere puff, because the bank deposit demonstrated a genuine intent to be bound. Acceptance was constituted by performance of the stipulated conditions; notification of acceptance was unnecessary in unilateral contracts. Consideration was supplied both by the inconvenience of using the ball and by the benefit of increased sales conferred on the company. The case is foundational FE-1 authority for: (1) unilateral offers to the world at large, (2) acceptance by performance/conduct, (3) waiver of the requirement to notify acceptance, and (4) the distinction between a binding offer and mere advertising puff. It is one of the most frequently examined cases across all FE-1 contract papers and students must know all three grounds of the Court of Appeal judgment (Lindley, Bowen and Smith LJJ).',
+    subjects: ['contract-law'],
     topics: [
-      'admissibility',
-      'exclusionary rule',
-      'unconstitutionally obtained evidence',
-      'balancing test',
+      'offer-and-acceptance',
+      'unilateral-contracts',
+      'acceptance-by-performance',
+      'consideration',
     ],
     is_frequently_tested: true,
+    past_paper_appearances: [
+      'Contract Autumn 2019 Q1',
+      'Contract Spring 2022 Q3',
+      'Contract Autumn 2023 Q1',
+    ],
+  },
+  {
+    case_name: 'Pharmaceutical Society of Great Britain v Boots Cash Chemists (Southern) Ltd',
+    citation: '[1953] 1 QB 401',
+    year: 1953,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'The display of goods on a shelf in a self-service shop is an invitation to treat, not an offer. The contract is formed at the cash desk when the customer presents goods for purchase and the cashier accepts. The customer makes the offer by presenting goods, which the retailer may accept or reject.',
+    key_quote:
+      'In the case of an ordinary shop, although goods are displayed and it is intended that customers should go and choose what they want, the contract is not completed until, the customer having indicated the articles which he needs, the shopkeeper, or someone on his behalf, accepts that offer.',
+    full_summary:
+      "Boots operated a self-service pharmacy in which certain drugs were displayed on open shelves. The Pharmaceutical Society argued that a sale occurred when a customer placed items in their basket, meaning a pharmacist was not present to supervise the 'sale' as required by the Pharmacy and Poisons Act 1933. The Court of Appeal held that the display of goods was merely an invitation to treat. The customer made an offer when presenting goods at the cash desk, and the contract was concluded when the cashier (supervised by a pharmacist) accepted. This distinguished the moment of 'offer' from the earlier browsing stage, ensuring the sale occurred under pharmacist supervision. The case is the leading authority for the distinction between invitation to treat and offer in retail contexts, and is central to any FE-1 question on the formation of contract in shop settings, online retail, and catalogue sales.",
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'invitation-to-treat', 'formation-of-contract'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2021 Q1', 'Contract Autumn 2022 Q2'],
+  },
+  {
+    case_name: 'Fisher v Bell',
+    citation: '[1961] 1 QB 394',
+    year: 1961,
+    court: "Queen's Bench Division",
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "The display of an article in a shop window with a price tag is an invitation to treat, not an offer to sell. General contract law principles apply to the interpretation of criminal statutes using the language of 'offer for sale' unless Parliament clearly intends otherwise.",
+    key_quote:
+      'It is perfectly clear that according to the ordinary law of contract the display of an article with a price on it in a shop window is merely an invitation to treat.',
+    full_summary:
+      "A shopkeeper displayed a flick knife in his shop window with a price label. He was charged with offering for sale an offensive weapon contrary to the Restriction of Offensive Weapons Act 1959. The Divisional Court held he was not guilty because a shop window display is an invitation to treat, not an offer. Parliament used the phrase 'offer for sale' without a contrary definition, so the ordinary contract law meaning applied. The knife was not being 'offered for sale' in the legal sense; only an invitation to treat was made. The case reinforces the offer/invitation to treat distinction established in Boots and is frequently used in FE-1 to illustrate how ordinary contract law principles interact with statute. It also demonstrates the policy problem of adopting the invitation to treat rule — Parliament subsequently amended the Act to cover 'exposing for sale'.",
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'invitation-to-treat', 'shop-displays'],
+    is_frequently_tested: false,
     past_paper_appearances: [],
   },
   {
-    case_name: 'The People (DPP) v Kenny',
-    citation: '[1990] 2 IR 110',
-    year: 1990,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
+    case_name: 'Partridge v Crittenden',
+    citation: '[1968] 1 WLR 1204',
+    year: 1968,
+    court: "Queen's Bench Division",
+    jurisdiction: 'England & Wales',
     legal_principle:
-      "The Supreme Court replaced the O'Brien balancing test with an absolute exclusionary rule: evidence obtained by deliberate and conscious violation of constitutional rights must be excluded regardless of the good faith of the Gardaí. Finlay CJ held that the courts must uphold constitutional rights as a matter of principle and cannot admit evidence obtained in deliberate breach of those rights. This rule was later modified by The People (DPP) v JC [2017].",
+      "An advertisement in a periodical offering to sell goods is generally an invitation to treat, not an offer to sell. This preserves the advertiser's freedom not to be bound to an unlimited number of buyers when supply is limited.",
     key_quote:
-      'The detection of crime and the conviction of guilty persons, however important they may be, are not objectives which can override the constitutional rights of the citizen.',
+      'When one is dealing with advertisements and circulars, unless they indeed come from manufacturers, there is business sense in their being construed as invitations to treat and not offers for sale.',
     full_summary:
-      "The People (DPP) v Kenny [1990] 2 IR 110 represents the high-water mark of Irish constitutional protection against improperly obtained evidence. The case concerned the validity of a search warrant issued under the Misuse of Drugs Act 1977. The warrant was found to have been issued on an insufficient basis — the District Justice had acted without jurisdiction — rendering it constitutionally invalid. The Gardaí acted in complete good faith, genuinely believing the warrant to be valid. The Supreme Court, departing from the O'Brien balancing test, held by majority that once evidence is obtained by a deliberate and conscious violation of constitutional rights, it must be excluded regardless of the officer's subjective good faith. Finlay CJ, delivering the majority judgment, reasoned that the courts, as guardians of constitutional rights, must uphold those rights absolutely and cannot be seen to profit from their violation. The public interest in crime detection cannot override the constitutional rights of the citizen. The absolute nature of the Kenny rule was widely criticised as potentially producing unjust results — excluding highly probative evidence because of technical inadvertence — and it generated significant academic and judicial debate. It was eventually modified, though not overruled in its core application, by the Supreme Court in The People (DPP) v JC [2017], which introduced a good-faith exception for bona fide errors of law. Kenny remains foundational to understanding the Irish exclusionary rule and is invariably discussed alongside O'Brien and JC.",
-    subjects: ['criminal'],
-    topics: [
-      'admissibility',
-      'exclusionary rule',
-      'unconstitutionally obtained evidence',
-      'search warrant',
-      'absolute rule',
-    ],
-    is_frequently_tested: true,
+      "Mr Partridge placed an advertisement in Cage and Aviary Birds magazine reading 'Bramblefinch cocks, bramblefinch hens, 25s each'. He was charged with offering for sale a wild bird contrary to the Protection of Birds Act 1954. The Divisional Court held that the advertisement was an invitation to treat, not an offer. The practical rationale is that an advertiser cannot be bound by unlimited contracts — if 1,000 people 'accepted' the advertisement, the advertiser would have insufficient stock. The court cited Fisher v Bell and Boots with approval. The case is a key FE-1 authority establishing that newspaper/magazine advertisements are invitations to treat. Contrasted with Carlill v Carbolic Smoke Ball where specific unilateral promises with defined conditions can constitute binding offers.",
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'invitation-to-treat', 'advertisements'],
+    is_frequently_tested: false,
     past_paper_appearances: [],
   },
   {
-    case_name: 'The People (DPP) v JC',
-    citation: '[2017] IESC 6',
-    year: 2017,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
+    case_name: 'Bowerman v Association of British Travel Agents Ltd',
+    citation: '[1996] CLC 451',
+    year: 1996,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
     legal_principle:
-      'The Supreme Court by majority modified the absolute exclusionary rule in Kenny and adopted a new test: evidence unconstitutionally obtained must be excluded only where the breach involved a deliberate, reckless, or grossly negligent disregard for constitutional rights. Good faith breaches may, in the interests of justice, render such evidence admissible. The court balanced the right to a fair trial with the need to ensure that the courts remain effective in the administration of criminal justice.',
+      'A notice displayed by a travel agent that members of ABTA will provide reimbursement to customers if a member becomes insolvent constitutes a unilateral offer binding on ABTA, capable of acceptance by any member of the public who books a holiday through the member agent.',
     key_quote:
-      'Evidence obtained in deliberate or reckless disregard of constitutional rights must be excluded, but evidence obtained as a result of a bona fide error of law need not automatically be excluded.',
+      'The notice ... was plainly intended to be read by members of the public and to induce them to book holidays with ABTA members in reliance on it.',
     full_summary:
-      "The People (DPP) v JC [2017] IESC 6 is the most recent and authoritative Supreme Court statement on the Irish exclusionary rule. The case involved evidence obtained during a search conducted pursuant to a warrant that was subsequently found to be defective. The Supreme Court, by a 4:3 majority, held that the absolute exclusionary rule established in Kenny required modification. Clarke J, delivering the majority judgment, identified three categories of unconstitutionally obtained evidence: (1) evidence obtained by deliberate, calculated breach of constitutional rights, which must always be excluded; (2) evidence obtained by reckless or grossly negligent breach, which will ordinarily be excluded; and (3) evidence obtained as a result of a bona fide error of law, where the officer genuinely and reasonably believed the conduct was lawful, which may be admitted in the interests of justice. The majority reasoned that the Kenny rule had produced disproportionate outcomes and that the public interest in the fair and effective administration of criminal justice required a more calibrated approach. The dissenting judges, led by Hardiman J, argued that the majority was undermining a fundamental constitutional protection. JC significantly reshaped the Irish exclusionary rule and must now be read as the primary authority, synthesising the earlier approaches in O'Brien and Kenny into a three-part framework.",
-    subjects: ['criminal'],
-    topics: [
-      'admissibility',
-      'exclusionary rule',
-      'unconstitutionally obtained evidence',
-      'reckless disregard',
-      'good faith',
-    ],
-    is_frequently_tested: true,
+      "A school party booked a skiing holiday through an ABTA member travel agent. The agent became insolvent before the holiday. ABTA displayed a notice in all member offices stating that in the event of a member's financial failure, ABTA would arrange alternative holidays or provide refunds. The Court of Appeal held, applying Carlill, that this notice was a unilateral offer to the world capable of acceptance by booking a holiday with an ABTA member. The plaintiff had acted in reliance on the notice (acceptance by performance) and ABTA was bound to reimburse her. The case is a modern application of the Carlill principle to consumer protection contexts and illustrates how trade association notices can create binding unilateral contracts. It is useful FE-1 material for unilateral contracts and acceptance by conduct.",
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'unilateral-contracts', 'acceptance-by-performance'],
+    is_frequently_tested: false,
     past_paper_appearances: [],
   },
   {
-    case_name: 'Damache v Director of Public Prosecutions',
-    citation: '[2012] IESC 11',
-    year: 2012,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
+    case_name: 'Harvey v Facey',
+    citation: '[1893] AC 552',
+    year: 1893,
+    court: 'Privy Council',
+    jurisdiction: 'Jamaica',
     legal_principle:
-      'The Supreme Court declared s.29(1) of the Offences Against the State Act 1939 unconstitutional insofar as it permitted a Superintendent to authorise a search of premises in a case in which the Superintendent was him/herself involved in the investigation. The issuing of a search warrant by a person involved in the investigation lacked the necessary independence and impartiality required by the Constitution. Evidence obtained pursuant to such a warrant was excluded.',
+      'A reply to a request for information stating the lowest acceptable price is not an offer but merely the supply of information. An offer requires a clear indication of willingness to be bound on specified terms; a statement of minimum price does not of itself constitute an offer capable of acceptance.',
     key_quote:
-      'A person charged with the function of issuing a warrant must be sufficiently independent of the investigation to bring an objective assessment to bear on the application.',
+      'The reply to the telegram was an answer to the second question only. It gave the lowest price, but did not make any offer to sell.',
     full_summary:
-      "Damache v DPP [2012] IESC 11 is a significant Supreme Court decision on the constitutional requirements for the valid issuance of search warrants. The applicant was suspected of terrorist offences. A search warrant for his premises was issued under s.29(1) of the Offences Against the State Act 1939 by a Superintendent who was himself involved in the investigation of the applicant. Denham J, delivering the judgment of the Supreme Court, held that s.29(1) was incompatible with the constitutional requirement that warrants be issued by an independent and impartial authority. The constitutional right to the inviolability of the dwelling under Article 40.5 demands that any authorisation to enter and search a person's home be granted by someone capable of bringing an objective and impartial assessment to the application. A Superintendent who is personally engaged in the investigation of the suspected person is structurally incapable of providing that independence. The section was accordingly declared unconstitutional, and evidence obtained under it was inadmissible. The decision has had significant practical consequences, prompting legislative amendment to the warrant regime for scheduled offences. Damache illustrates the constitutional dimension of the exclusionary rule and the requirement of independence in the warrant-issuing process, drawing on principles of natural justice and separation of functions.",
-    subjects: ['criminal'],
-    topics: [
-      'search warrant',
-      'constitutional rights',
-      'Offences Against the State Act',
-      'exclusionary rule',
-      's.29',
-    ],
+      "Harvey telegraphed Facey asking 'Will you sell us Bumper Hall Pen? Telegraph lowest cash price.' Facey replied 'Lowest price for Bumper Hall Pen, £900.' Harvey telegraphed back 'We agree to buy Bumper Hall Pen for the sum of £900 asked by you.' Facey refused to sell. The Privy Council held there was no contract. Facey's reply merely answered the question about the lowest price; it did not constitute an offer to sell. Harvey's final telegram was therefore not an acceptance but a new offer to buy, which Facey had never accepted. This case is critical FE-1 authority establishing that a statement of minimum price (or a statement of willingness to consider selling at a price) is merely the provision of information, not an offer. It is frequently contrasted with Storer v Manchester City Council where more specific wording created a binding offer.",
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'invitation-to-treat', 'negotiations'],
     is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2020 Q1', 'Contract Autumn 2021 Q2'],
+  },
+  {
+    case_name: 'Gibson v Manchester City Council',
+    citation: '[1979] 1 WLR 294',
+    year: 1979,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "A letter from a council stating it 'may be prepared to sell' a house at a specified price and inviting a mortgage application is not an offer but an invitation to treat. Whether an offer exists must be assessed objectively from the language used; words such as 'may be prepared to' indicate an absence of a firm intention to be bound.",
+    key_quote:
+      "The words 'may be prepared to sell' are fatal to any suggestion that this is a firm offer.",
+    full_summary:
+      "Manchester City Council, as part of its council house sales scheme, sent Gibson a letter stating it 'may be prepared to sell' the house to him at £2,725, inviting him to make a formal application. Gibson replied with a completed application form. Before contracts were exchanged, the council (under new Labour control) resolved not to sell council houses and refused to complete. The House of Lords reversed the Court of Appeal and held there was no binding contract. The council's letter was not an offer but merely an invitation to treat, given the equivocal language 'may be prepared to sell'. Gibson's application form was the offer, which was never accepted by the council. Lords Diplock and Russell emphasised the need to look for a clear offer and unequivocal acceptance, and rejected 'the global view' of the correspondence favoured by the Court of Appeal. Essential FE-1 authority on the distinction between offer and invitation to treat in the context of formal negotiations.",
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'invitation-to-treat', 'formation-of-contract'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2020 Q1'],
+  },
+  {
+    case_name: 'Spencer v Harding',
+    citation: '(1870) LR 5 CP 561',
+    year: 1870,
+    court: 'Court of Common Pleas',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'A circular announcing that a business will sell its stock by tender is an invitation to treat, not an offer. Unless the circular contains an express undertaking to accept the highest tender, the advertiser is under no obligation to accept any tender submitted.',
+    key_quote:
+      "If the circular had said 'we will sell to the highest bidder', that would have been a different matter; but this circular says nothing of the kind.",
+    full_summary:
+      "The defendants sent out a circular stating 'We are instructed to offer to the wholesale trade for sale by tender' a stock of goods, and that tenders should be submitted by a certain date. The plaintiff submitted the highest tender but it was not accepted. The Court of Common Pleas held there was no binding contract. The circular was merely an invitation to treat, not an offer to sell to the highest bidder. There was no undertaking to accept the highest (or any) tender. The case is the leading authority establishing that invitations to tender (and tender processes generally) are invitations to treat unless they expressly undertake to accept the highest or lowest bid. Contrasted with Harvela Investments v Royal Trust of Canada where the invitation to tender did contain such an express undertaking.",
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'invitation-to-treat', 'tenders'],
+    is_frequently_tested: false,
     past_paper_appearances: [],
   },
   {
-    case_name: "DPP v Quilligan and O'Reilly",
-    citation: '[1986] IR 495',
+    case_name: 'Harvela Investments Ltd v Royal Trust Co of Canada',
+    citation: '[1986] AC 207',
     year: 1986,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Supreme Court considered the constitutionality of detention under s.30 of the Offences Against the State Act 1939 for the purpose of investigation. The court upheld the detention power but emphasised that it must be used for the genuine purpose of investigating the scheduled offence for which the person was arrested. Detention for purposes other than the stated purpose would be unlawful. The treatment of detainees and the right to legal advice were also considered.',
-    key_quote:
-      'Detention under s.30 must be for the genuine purpose of investigating the scheduled offence; it cannot be used as a device for general interrogation.',
-    full_summary:
-      "DPP v Quilligan and O'Reilly [1986] IR 495 is the leading Supreme Court authority on the scope and limits of detention under s.30 of the Offences Against the State Act 1939. The defendants were arrested and detained under s.30 in connection with suspected subversive activity. The constitutionality of the detention regime was challenged on the grounds that it authorised a serious restriction on the right to liberty guaranteed by Article 40.4 of the Constitution without adequate safeguards. The Supreme Court upheld the power of detention under s.30 as a constitutionally permissible derogation from the right to liberty, justified by the special dangers posed by subversive crime. However, the court imposed important limits: the power of detention may only be exercised for the genuine and bona fide purpose of investigating the scheduled offence for which the arrest was effected. Detention under s.30 cannot be used as a device to detain a person for questioning about offences other than the scheduled offence stated as the basis for arrest. The court also addressed the conditions of detention and the obligation to inform the detainee of their rights. Quilligan is an important case on the constitutional limits of executive detention powers and the relationship between s.30 detention and the right to liberty, legal advice, and the exclusionary rule.",
-    subjects: ['criminal'],
-    topics: [
-      'detention',
-      'arrest',
-      'Offences Against the State Act',
-      'right to liberty',
-      'interrogation',
-    ],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: "The People (DPP) v O'Brien",
-    citation: '[2012] IECCA 68',
-    year: 2012,
-    court: 'Court of Criminal Appeal',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Court of Criminal Appeal considered the admissibility of evidence and the drawing of inferences from an accused's silence when cautioned. The court addressed the proper application of the statutory caution under the Criminal Justice Act 1984 and the circumstances in which adverse inferences can be drawn from pre-trial silence. The right to silence must be respected and any restriction on it must be proportionate.",
-    key_quote:
-      'Adverse inferences from silence may only be drawn where the statutory requirements are strictly complied with and the accused had the opportunity to seek legal advice.',
-    full_summary:
-      "The People (DPP) v O'Brien [2012] IECCA 68 is a Court of Criminal Appeal decision addressing the admissibility of evidence and the use of pre-trial silence as a basis for adverse inference in criminal proceedings. The case required the court to consider the legislative framework governing the caution given to suspects at the time of arrest and during Garda questioning, specifically the statutory caution introduced under the Criminal Justice Act 1984 and its amendments. The court examined the circumstances in which a trial court may direct a jury that it is entitled to draw adverse inferences from a suspect's failure to mention facts when questioned. The court emphasised that the right to silence, while not absolute under Irish law, remains a significant constitutional protection. Any statutory curtailment of that right must be strictly applied: the proper caution must have been administered, the detainee must have been afforded an adequate opportunity to consult with a solicitor before questioning, and the questioning must itself have been conducted lawfully. Where these preconditions are not satisfied, adverse inferences cannot be drawn. The decision is significant for its analysis of the interaction between the statutory inference regime and the constitutional right to silence, and for the procedural safeguards it identifies as necessary before inferences can be invited.",
-    subjects: ['criminal'],
-    topics: [
-      'admissibility',
-      'right to silence',
-      'caution',
-      'inferences from silence',
-      'Criminal Justice Act',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Director of Public Prosecutions v Gray',
-    citation: '[1987] IR 173',
-    year: 1987,
-    court: 'High Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The High Court considered the standard to be applied when a direction to acquit (no case to answer) is sought at the close of the prosecution case. The test is whether the prosecution has established a prima facie case such that a reasonable jury, properly directed, could convict. The judge must not usurp the function of the jury but should withdraw the case from them where there is no evidence upon which a reasonable jury could convict.',
-    key_quote:
-      'A direction to acquit is appropriate where there is no evidence upon which a reasonable jury, properly directed, could return a verdict of guilty.',
-    full_summary:
-      "DPP v Gray [1987] IR 173 is a High Court decision that clarified the test applicable to applications for a direction to acquit at the close of the prosecution case in Irish criminal proceedings. When the prosecution has concluded its evidence, the defence may apply to the trial judge for a direction on the grounds that no case has been established sufficient to go to the jury. The court in Gray articulated the applicable standard: the judge must assess whether the prosecution has adduced sufficient evidence — taking the evidence at its height from the prosecution's perspective — such that a properly directed reasonable jury could return a verdict of guilty. The trial judge is not required, and indeed not entitled, to assess the weight or credibility of the evidence at this stage; those are matters for the jury. Only where there is a complete absence of evidence on an essential element of the offence, or where the evidence adduced is so manifestly unreliable that no reasonable jury could act upon it, should the case be withdrawn. The decision draws on the corresponding English authority in R v Galbraith [1981] and applies the same principles within the Irish constitutional framework. Gray is a standard authority on the mechanics of directed verdicts and the division of function between judge and jury in the Irish criminal process.",
-    subjects: ['criminal'],
-    topics: ['direction to acquit', 'no case to answer', 'standard of proof', 'directed verdict'],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Murphy v Greene',
-    citation: '[1990] 2 IR 566',
-    year: 1990,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Supreme Court considered obligations under the Criminal Justice Act to answer questions and give information to Gardaí. The court held that a statutory obligation to furnish information does not necessarily infringe the right to silence where appropriately circumscribed. The privilege against self-incrimination must be considered in the context of the specific statutory scheme. This case must be read alongside Heaney v Ireland.',
-    key_quote:
-      'A statutory obligation to provide information must be proportionate to the legitimate aim pursued and must not wholly negate the right to silence.',
-    full_summary:
-      'Murphy v Greene [1990] 2 IR 566 is a Supreme Court decision addressing the tension between statutory obligations to furnish information to law enforcement authorities and the constitutional right to silence and the privilege against self-incrimination. The case arose in the context of obligations imposed under the Criminal Justice Act to provide information and answer questions posed by members of An Garda Síochána. The Supreme Court examined whether the imposition of a duty to speak, backed by criminal sanction for refusal, constituted an unconstitutional infringement of the right to silence. The court held that a carefully circumscribed statutory obligation to furnish information is not inherently unconstitutional, provided it is proportionate to a legitimate objective of the criminal justice system and does not wholly abrogate the right to silence. The court considered the extent of the obligation, the nature of the information required, and the availability of use immunity or other safeguards. Murphy v Greene is a precursor to Heaney v Ireland [1996], in which the Supreme Court struck down s.52 of the Offences Against the State Act 1939 as a disproportionate interference with the right to silence. The two cases together illustrate the proportionality analysis applied by the Irish courts when statutory obligations to speak are challenged on constitutional grounds.',
-    subjects: ['criminal'],
-    topics: [
-      'right to silence',
-      'compellability',
-      'privilege against self-incrimination',
-      'Criminal Justice Act',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Heaney v Ireland',
-    citation: '[1996] 1 IR 580',
-    year: 1996,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Supreme Court held that s.52 of the Offences Against the State Act 1939, which required a person to give an account of their movements on pain of criminal sanction, was a disproportionate interference with the constitutional right to silence and the privilege against self-incrimination. The court applied the proportionality test: the means employed must be rationally connected to the objective and must not impair constitutional rights more than necessary. The section was declared unconstitutional.',
-    key_quote:
-      'The right to silence is a right of the highest importance and any interference with it must be strictly proportionate to the legitimate aims of the criminal justice system.',
-    full_summary:
-      'Heaney v Ireland [1996] 1 IR 580 is a landmark Supreme Court decision on the constitutional right to silence and the privilege against self-incrimination. The plaintiffs were arrested under s.30 of the Offences Against the State Act 1939 and required, under s.52 of the same Act, to give a full account of their movements and actions during a specified period. Failure to comply was itself a criminal offence carrying a term of imprisonment. The plaintiffs challenged the constitutionality of s.52. The Supreme Court, applying a proportionality analysis, held that s.52 constituted an unjustifiable interference with the constitutional right to silence enshrined in Article 38.1 (right to fair trial) and the privilege against self-incrimination as a corollary of that right. The court applied the Heaney test of proportionality: the legislative objective must be sufficiently important, the means adopted must be rationally connected to that objective, the means must impair the right as little as possible, and the effect on rights must be proportional to the objective. Section 52 failed this test because it compelled persons, on pain of imprisonment, to provide information that could be used in evidence against them in criminal proceedings. The section was declared unconstitutional. Heaney remains the definitive Irish authority on the constitutional status of the right to silence and the limits of statutory compulsion to speak.',
-    subjects: ['criminal'],
-    topics: [
-      'right to silence',
-      'self-incrimination',
-      's.52 Offences Against the State Act',
-      'proportionality',
-      'constitutional rights',
-    ],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'DPP v Colbert',
-    citation: '[2016] IESC 69',
-    year: 2016,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Supreme Court considered the right of a person in Garda custody to have access to a solicitor before and during questioning. The court confirmed that the right of access to a solicitor is a constitutional right and that evidence obtained in breach of that right will ordinarily be excluded under the Kenny/JC principles. Any delay in providing access must be strictly justified. The proper administration of cautions was also considered.',
-    key_quote:
-      'A detained person has a constitutional right to obtain legal advice before being questioned; evidence obtained in breach of that right is presumptively inadmissible.',
-    full_summary:
-      'DPP v Colbert [2016] IESC 69 is a Supreme Court decision reaffirming the constitutional dimension of the right to legal advice for persons in Garda custody. The case concerned a person detained for questioning at a Garda station who was not afforded timely access to a solicitor before the commencement of interview. Statements made during those interviews were subsequently tendered in evidence. The Supreme Court confirmed that the right of access to a solicitor prior to and during Garda questioning is a constitutional right, derived from the right to fair trial under Article 38.1 and the right to counsel. Where that right is infringed, evidence obtained is subject to the exclusionary principles developed in Kenny and subsequently modified in JC. The court held that any delay in affording access to legal advice must be strictly justified by reference to recognised exceptions, and that unjustified delay will ordinarily result in the exclusion of any statements obtained in the interim. The court also confirmed the obligations of the Gardaí in administering the appropriate caution when the right to legal advice is invoked or waived. Colbert is significant as it confirms the integration of the right to legal advice into the constitutional framework of the Irish exclusionary rule, ensuring that the Kenny/JC principles apply to breaches of this right.',
-    subjects: ['criminal'],
-    topics: [
-      'right to legal advice',
-      'detention',
-      'exclusionary rule',
-      'Garda questioning',
-      'constitutional rights',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v Casey and Casey',
-    citation: '[2018] IECA 121',
-    year: 2018,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Court of Appeal considered the admissibility of evidence given by video-link by a complainant in a sexual assault case pursuant to s.13 of the Criminal Evidence Act 1992. The court confirmed that the use of video-link does not infringe the accused's right to a fair trial provided the evidence is given in a manner that allows proper cross-examination. The special measures provisions of the 1992 Act are compatible with constitutional fair trial rights.",
-    key_quote:
-      'The use of video-link evidence does not deprive the accused of a fair trial provided adequate opportunity for cross-examination is afforded.',
-    full_summary:
-      "The People (DPP) v Casey and Casey [2018] IECA 121 is a significant Court of Appeal decision on the use of special measures — specifically video-link testimony — in sexual assault trials. The appellants were convicted of sexual assault offences and appealed on the grounds, inter alia, that the trial judge had erred in permitting the complainant to give evidence via live video-link pursuant to s.13 of the Criminal Evidence Act 1992. The appellants argued that this procedure infringed their constitutional right to a fair trial and their right to confront witnesses against them. The Court of Appeal dismissed the appeal on this ground, holding that the video-link mechanism under the 1992 Act is a lawful and constitutionally permissible means of receiving evidence from complainants in sexual offence cases. The court emphasised that the essential safeguard is that the accused must be afforded a full and adequate opportunity to cross-examine the complainant: the medium through which evidence is received does not of itself diminish the accused's right to challenge that evidence. The court reviewed the legislative history of the 1992 Act and the balancing of interests reflected in its special measures provisions. Casey and Casey is the leading Court of Appeal authority on video-link evidence in sexual offence trials and confirms the compatibility of s.13 with constitutional fair trial rights.",
-    subjects: ['criminal'],
-    topics: [
-      'sexual offences',
-      'video-link evidence',
-      'special measures',
-      'complainant',
-      'Criminal Evidence Act',
-    ],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Director of Public Prosecutions v FE',
-    citation: '[2019] IESC 85',
-    year: 2019,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Supreme Court considered whether a trial judge must give a corroboration warning in respect of complainant evidence in sexual offence trials. The court held that such a warning is no longer mandatory and its necessity depends on the specific circumstances of the case. The judge retains discretion to give a warning where the circumstances require it, but its routine administration in all sexual offence cases is no longer appropriate. The stigmatising impact of automatic corroboration warnings on complainants was acknowledged.',
-    key_quote:
-      'A corroboration warning in sexual offence trials is discretionary, not mandatory; the trial judge must assess the circumstances of the individual case.',
-    full_summary:
-      'DPP v FE [2019] IESC 85 is a landmark Supreme Court decision abolishing the mandatory corroboration warning in sexual offence trials in Ireland. Historically, trial judges were required to warn juries of the dangers of convicting on the uncorroborated evidence of a complainant in sexual offence cases — a rule rooted in outdated and now-discredited assumptions about the unreliability of complainants in such cases. The Supreme Court conducted a thorough review of the historical basis for the corroboration warning, its legislative modification under s.7 of the Criminal Law (Rape) Amendment Act 1990, and its practical application in the courts. The court held that the mandatory warning is no longer required as a matter of law. A trial judge retains a discretion to give a tailored warning in the specific circumstances of a particular case where the evidence or manner of giving it raises genuine reliability concerns, but the reflexive and formulaic administration of a corroboration warning in every sexual offence trial is no longer appropriate. The court acknowledged the stigmatising effect of such warnings on complainants and their inconsistency with the legislative trajectory towards greater protection of complainants in the criminal process. FE is essential reading on the evolution of corroboration requirements in Irish sexual offence law and the discretion now vested in trial judges.',
-    subjects: ['criminal'],
-    topics: [
-      'sexual offences',
-      'corroboration warning',
-      'complainant evidence',
-      'warning to jury',
-      'credibility',
-    ],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The Director of Public Prosecutions v SC',
-    citation: '[2019] IECA 348',
-    year: 2019,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Court of Appeal considered the application of the special measures provisions of the Criminal Law (Sexual Offences) Act 2017 in a sexual offence trial. The court addressed the scope of restrictions on cross-examination of the complainant regarding previous sexual history and the balancing of the accused's right to fair trial against the complainant's right to dignity. Restrictions on cross-examination about previous sexual history are presumptively applicable unless the court orders otherwise.",
-    key_quote:
-      "The restrictions on cross-examination of complainants in sexual offence trials serve a legitimate purpose and are compatible with the accused's right to a fair trial where there is adequate safeguard for testing the complainant's evidence.",
-    full_summary:
-      "DPP v SC [2019] IECA 348 is a Court of Appeal decision concerning the application of the special measures introduced by the Criminal Law (Sexual Offences) Act 2017, in particular the restrictions on cross-examination of complainants about their previous sexual history. The Act introduced a default prohibition on such cross-examination, subject to a judicial application to depart from that prohibition on defined grounds. The accused sought to cross-examine the complainant on matters relating to her prior sexual conduct, arguing that such cross-examination was necessary to challenge her credibility and to advance the defence case. The Court of Appeal considered the threshold for granting leave under the 2017 Act and the manner in which the trial judge must balance the accused's right to a fair trial against the complainant's rights to dignity and privacy. The court held that the statutory restrictions are constitutionally valid and serve the legitimate purpose of protecting complainants from unwarranted intrusions while preserving the accused's right to a fair trial through the availability of a judicial leave mechanism. The decision provides guidance on how trial judges should approach leave applications under the 2017 Act and the factors relevant to the exercise of the judicial discretion. It is a key authority on the operation of the 2017 Act's complainant protection provisions.",
-    subjects: ['criminal'],
-    topics: [
-      'sexual offences',
-      'special measures',
-      'cross-examination',
-      'complainant',
-      'Criminal Law (Sexual Offences) Act 2017',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The Director of Public Prosecutions v BK',
-    citation: '[2022] IECA 153',
-    year: 2022,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Court of Appeal considered the use of an intermediary to facilitate cross-examination of a vulnerable complainant in a sexual offence trial. The court addressed the extent to which cross-examination can be conducted through an intermediary without infringing the accused's right to challenge the evidence against him. The use of an intermediary does not render cross-examination ineffective provided sufficient opportunity to test the complainant's evidence is preserved.",
-    key_quote:
-      "The use of an intermediary in the cross-examination of a vulnerable witness is a permissible special measure where it does not substantially impair the accused's ability to test the evidence.",
-    full_summary:
-      "DPP v BK [2022] IECA 153 addresses the use of an intermediary as a special measure in sexual offence proceedings involving a vulnerable complainant. The intermediary mechanism allows questions posed by counsel in cross-examination to be rephrased or reformulated by a trained professional before being put to the witness, thereby facilitating comprehension without altering the substance of the inquiry. The accused challenged the use of an intermediary on the grounds that it impaired his right to effective cross-examination and undermined the fairness of the trial. The Court of Appeal reviewed the statutory basis for the intermediary mechanism, its procedural safeguards, and its compatibility with the accused's right to a fair trial under Article 38.1 of the Constitution and Article 6 of the European Convention on Human Rights. The court held that the use of an intermediary is a permissible and proportionate special measure where the complainant is vulnerable and where the mechanism does not substantially curtail the ability of the defence to test the complainant's evidence. The court identified the conditions under which the intermediary procedure satisfies the constitutional and Convention requirements of fairness. BK is an important authority on the developing law of special measures for vulnerable witnesses in Ireland.",
-    subjects: ['criminal'],
-    topics: [
-      'sexual offences',
-      'intermediary',
-      'special measures',
-      'cross-examination',
-      'vulnerable witness',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v PB',
-    citation: '[2021] IECA 152',
-    year: 2021,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Court of Appeal considered the procedure for making an application to adduce evidence of a complainant's previous sexual history in a sexual offence trial under s.3 of the Criminal Law (Rape) Amendment Act 1990. The court held that the application must be made in a voir dire and the judge must assess whether such evidence is relevant and, if so, whether its probative value outweighs its prejudicial effect. The court must also be satisfied the evidence is not sought to impugn the complainant's credibility generally.",
-    key_quote:
-      "Evidence of a complainant's previous sexual history is admissible only where its probative value substantially outweighs its prejudicial effect and it is relevant to a specific issue in the trial.",
-    full_summary:
-      "The People (DPP) v PB [2021] IECA 152 is a Court of Appeal decision on the admissibility of evidence of a complainant's previous sexual history in sexual offence proceedings. The accused sought leave under s.3 of the Criminal Law (Rape) Amendment Act 1990 to adduce evidence and conduct cross-examination concerning the complainant's prior sexual conduct. The court reviewed the procedure to be followed when such an application is made: the application must be heard in the absence of the jury in a voir dire, and the judge must make specific findings as to the relevance of the proposed evidence, its probative value relative to its prejudicial effect, and whether it is genuinely directed at a specific live issue in the trial as opposed to a general attack on the complainant's credibility or character. The court emphasised that s.3 creates a presumption against the admission of such evidence, and the burden lies on the applicant to displace that presumption by demonstrating that the evidence crosses the probative-value threshold. The decision provides detailed procedural guidance for trial judges on conducting the s.3 voir dire and the factors to be weighed. It is an important authority on the sexual history evidence provisions and the protection they afford to complainants from irrelevant and prejudicial questioning about their private lives.",
-    subjects: ['criminal'],
-    topics: [
-      'sexual offences',
-      'trial procedure',
-      'application to adduce evidence',
-      'complainant',
-      'Criminal Evidence Act 1992',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v R.K.',
-    citation: '[2023] IECA 290',
-    year: 2023,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Court of Appeal considered an appeal against sentence imposed for sexual offences against a child by a person in a position of trust. The court applied the sentencing principles for sexual offences against children, including the aggravating factor of abuse of position of trust. The headline sentence and the discount for mitigating factors were assessed. The victim's vulnerability and the duration of the offending were significant aggravating features.",
-    key_quote:
-      'An abuse of position of trust in the commission of sexual offences against a child is a significant aggravating factor requiring a substantial headline sentence.',
-    full_summary:
-      'The People (DPP) v R.K. [2023] IECA 290 is a Court of Appeal sentencing decision concerning serious sexual offences committed against a child by a person who stood in a position of trust in relation to the victim. The accused was convicted of multiple counts of sexual abuse perpetrated over an extended period. The Court of Appeal applied the structured sentencing methodology now well-established in Irish sentencing law: the court first identifies a headline sentence reflecting the intrinsic gravity of the offending, and then adjusts that sentence upward or downward to reflect aggravating and mitigating factors. The court identified as key aggravating features the abuse of a position of trust, the youth and consequent vulnerability of the victim, and the prolonged nature of the offending. These features placed the offending at the upper end of the sentencing scale. The court reviewed the mitigation available to the accused, including personal circumstances and the absence of previous convictions. The decision provides guidance on the appropriate sentencing range for position-of-trust sexual offences against children and the weight to be given to individual aggravating and mitigating factors within that range. R.K. is an important recent authority on child sexual abuse sentencing.',
-    subjects: ['criminal'],
-    topics: [
-      'sexual offences',
-      'sentence appeal',
-      'Child Trafficking and Pornography Act',
-      'abuse of position of trust',
-      'sentencing',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v Jake Boles',
-    citation: '[2023] IECA 189',
-    year: 2023,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Court of Appeal addressed the appropriate sentence for sexual assault offences and the weight to be given to a guilty plea as a mitigating factor. The court confirmed that a guilty plea, particularly at an early stage, merits a significant reduction in sentence as it spares the victim the ordeal of giving evidence. The court reviewed the headline sentence and adjusted the mitigation discount applied by the trial judge.',
-    key_quote:
-      'A timely guilty plea in sexual offence cases merits significant mitigation as it spares the complainant the distress of giving evidence at trial.',
-    full_summary:
-      "The People (DPP) v Jake Boles [2023] IECA 189 is a Court of Appeal decision on sentencing for sexual assault, with particular focus on the weight to be afforded to a guilty plea entered at an early stage of proceedings. The accused pleaded guilty to sexual assault and was sentenced in the Circuit Criminal Court. The DPP appealed the sentence as unduly lenient, and the accused also appealed certain aspects of the sentence. The Court of Appeal reviewed the headline sentence identified by the sentencing judge and the discount applied for the guilty plea and other mitigating factors. The court confirmed the well-established principle that a timely guilty plea in sexual offence cases attracts meaningful mitigation, for two related reasons: it is an expression of remorse that is capable of indicating rehabilitative potential, and critically, it spares the complainant the additional trauma and distress of being required to give evidence and face cross-examination at trial. The court also reviewed the mitigating weight to be given to the accused's personal circumstances, his engagement with therapeutic services, and the absence of previous convictions. The decision provides practical guidance on the quantification of guilty-plea discounts in sexual assault sentencing and the overall calibration of the sentencing exercise.",
-    subjects: ['criminal'],
-    topics: ['sexual assault', 'sentence appeal', 'guilty plea', 'mitigation', 'sexual offences'],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v JK',
-    citation: '[2020] IECA 131',
-    year: 2020,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Court of Appeal considered the admissibility of out-of-court statements made by a complainant in a sexual offence case. The court examined the boundaries of the hearsay rule and its exceptions in sexual offence trials, including the res gestae and prior consistent statements exceptions. The court confirmed that recent complaint evidence remains admissible in Irish law as an exception to the hearsay rule in sexual offence cases.',
-    key_quote:
-      "Recent complaint evidence is admissible as an exception to the hearsay rule in sexual offence cases, going to the consistency of the complainant's account.",
-    full_summary:
-      "The People (DPP) v JK [2020] IECA 131 is a Court of Appeal decision on the admissibility of recent complaint evidence and out-of-court statements made by complainants in sexual offence proceedings. The appeal raised questions about the application of the hearsay rule and its recognised exceptions in the context of a historical sexual abuse trial. The court reviewed the status of the recent complaint doctrine under Irish law: evidence that the complainant made a complaint about the alleged offence to another person shortly after its occurrence is admissible as an exception to the hearsay rule, not to prove the truth of the complaint's contents, but to establish the consistency of the complainant's account and to rebut any suggestion of recent fabrication. The court considered the conditions for the admission of such evidence: the complaint must have been made voluntarily and at the first reasonable opportunity, and the person to whom it was made may give evidence of what was said. The decision also addressed the distinction between recent complaint evidence and prior consistent statements more generally, and the appropriate directions a trial judge must give to the jury concerning the limited evidential use of such evidence. JK is an important authority on the operation of the recent complaint exception and the treatment of out-of-court statements in Irish sexual offence trials.",
-    subjects: ['criminal'],
-    topics: [
-      'sexual offences',
-      'trial procedure',
-      'hearsay',
-      'complainant evidence',
-      'out-of-court statements',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'DPP v M (Otherwise J)',
-    citation: '[2019] IECA 92',
-    year: 2019,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Court of Appeal considered the statutory protection of anonymity for complainants in rape and sexual assault proceedings under the Criminal Law (Rape) Act 1981. The court confirmed the scope of the prohibition on publication of information identifying the complainant and the consequences of breach. The anonymity provisions serve the vital public interest of encouraging complainants to come forward without fear of public identification.',
-    key_quote:
-      'The prohibition on publication of identifying information about a complainant in rape proceedings is absolute and serves the important public interest of encouraging the reporting of sexual offences.',
-    full_summary:
-      "DPP v M (Otherwise J) [2019] IECA 92 is a Court of Appeal decision on the statutory anonymity regime for complainants in rape and sexual assault proceedings under the Criminal Law (Rape) Act 1981, as amended. The case required the court to consider the scope of the prohibition on publication of any matter that would be likely to identify a complainant in such proceedings. The court reviewed the terms of the 1981 Act and its subsequent amendments, confirming that the prohibition is broad and extends to any publication — whether in print, broadcast, or online — that could reasonably lead a member of the public to identify the complainant. The prohibition is not limited to direct naming of the complainant but extends to the publication of other identifying details such as the accused's identity in cases where that would lead to identification of the complainant. The court considered the consequences of breach of the anonymity provisions, including criminal sanctions. The decision underlines the seriousness with which Irish law treats the protection of complainants' identities and the strong public interest rationale for the anonymity regime: encouraging victims of sexual offences to report those offences by assuring them that their identity will not be disclosed to the public. This case is a key authority on the scope and enforcement of complainant anonymity protections.",
-    subjects: ['criminal'],
-    topics: [
-      'sexual offences',
-      'anonymity',
-      'publication of identity',
-      'Criminal Law (Rape) Act 1981',
-      'complainant protection',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v Paul Crosby',
-    citation: '[2021] IECA 157',
-    year: 2021,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Court of Appeal reviewed a sentence for sexual assault and considered the appropriate headline sentence for aggravated sexual assault. The court applied the structured sentencing approach: identifying a headline sentence reflecting the gravity of the offence, then adjusting for mitigating factors. The court confirmed the gravity of sexual assault offences committed against vulnerable victims and the weight to be given to the accused's good character prior to the offence.",
-    key_quote:
-      'In assessing the appropriate sentence for sexual assault, the court identifies a headline sentence reflecting gravity and then adjusts downward for established mitigating factors.',
-    full_summary:
-      "The People (DPP) v Paul Crosby [2021] IECA 157 is a Court of Appeal sentencing decision addressing the appropriate sentencing framework for sexual assault offences, with particular attention to cases involving vulnerable victims. The accused was convicted of sexual assault and sentenced in the Circuit Criminal Court. The Court of Appeal conducted a full sentencing review, applying the structured approach now standard in Irish sentencing jurisprudence. The court first identified the appropriate headline sentence — the sentence that would be appropriate in the absence of any mitigating factors — by reference to the objective gravity of the offending, the harm caused to the victim, and the relevant aggravating features including the victim's vulnerability. The court then assessed the mitigating factors available to the accused: his good character and absence of previous convictions, expressions of remorse, and personal circumstances. The decision provides a worked example of the structured sentencing methodology as applied to sexual assault cases and offers guidance on the weight to be attributed to good character as a mitigating factor in the context of serious sexual offending. The court also addressed the interaction between aggravating factors relating to victim vulnerability and the overall calibration of the headline sentence. Crosby is a useful authority on the practical application of sentencing principles in sexual assault cases.",
-    subjects: ['criminal'],
-    topics: [
-      'sexual assault',
-      'sentence',
-      'aggravating factors',
-      'sentencing principles',
-      'assault',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Director of Public Prosecutions v LE',
-    citation: '[2020] IECA 101',
-    year: 2020,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Court of Appeal considered the significance of delay in reporting historical sexual offences and the evidential and legal consequences of such delay for both the prosecution and the accused. The court confirmed that delay in reporting is not fatal to a prosecution but a jury must be directed to consider the reason for the delay and its bearing on the complainant's credibility. Where adequate explanation for the delay is established, the case may properly proceed.",
-    key_quote:
-      'Delay in reporting historical sexual abuse does not automatically render the prosecution unsustainable; the jury must be directed to consider the explanation for the delay.',
-    full_summary:
-      "DPP v LE [2020] IECA 101 is a Court of Appeal decision addressing the legal and evidential treatment of delay in the reporting of historical sexual offences. The case involved allegations of sexual abuse that were not reported to the authorities until many years after the alleged offending. The accused challenged the prosecution on the grounds that the delay had prejudiced his ability to defend himself and that the trial judge had failed to give an adequate direction to the jury regarding the significance of the delay. The Court of Appeal confirmed the established Irish jurisprudence on delay in historical sexual abuse cases: delay in reporting does not, of itself, render a prosecution unsustainable or require the trial judge to halt the trial. However, the trial judge must give the jury a careful direction explaining that they should consider the reasons offered by the complainant for the delay in reporting, assess whether those reasons are credible and understandable in all the circumstances, and consider the bearing of the delay on the overall credibility of the complainant's account. The court reviewed the content of the trial judge's direction and found it adequate. The decision also touched on the prejudice caused to an accused by delay and the extent to which such prejudice can ground an application to prohibit the prosecution. LE is an important authority on the delay direction and the treatment of historical sexual abuse complaints.",
-    subjects: ['criminal'],
-    topics: [
-      'sexual offences',
-      'delay in reporting',
-      'explanation for delay',
-      'credibility',
-      'complainant',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'DPP v Beard',
-    citation: '[1920] AC 479',
-    year: 1920,
     court: 'House of Lords',
-    jurisdiction: 'UK',
+    jurisdiction: 'England & Wales',
     legal_principle:
-      "The House of Lords established the foundational distinction between specific intent and basic intent offences in the context of intoxication. Where intoxication prevents formation of a specific intent, it may negative that intent and reduce liability (e.g. from murder to manslaughter). However, intoxication is not a defence to basic intent crimes where recklessness suffices for the mental element. Lord Birkenhead's rules remain the starting point for intoxication analysis throughout the common law world.",
+      'Where an invitation to submit sealed tenders expressly undertakes to accept the highest bid, it constitutes a binding offer to sell to the highest bidder. A referential bid (e.g. £X above the highest bid) is ineffective in a fixed-bid tender as it defeats the purpose of a sealed competitive process.',
     key_quote:
-      'If a man is charged with murder and the evidence discloses that he was so drunk that he was incapable of forming the intent to kill or do grievous bodily harm, he is not guilty of murder.',
+      'If the vendors made a unilateral contract by their invitation to bid, the acceptance of that offer was the submission of the highest bid.',
     full_summary:
-      "DPP v Beard [1920] AC 479 is the foundational House of Lords authority on intoxication as a defence in criminal law. Lord Birkenhead LC delivered the leading speech, articulating what became known as the Beard rules. The case arose from a conviction for murder in which the accused argued that his state of intoxication prevented him from forming the requisite intent. The House of Lords distinguished between two categories of offences: specific intent offences (such as murder), which require proof that the accused formed a particular purposive intent, and basic intent offences (such as manslaughter or assault), where recklessness is sufficient. Intoxication may negative specific intent, potentially reducing murder to manslaughter, but cannot serve as a defence to basic intent crimes. Lord Birkenhead's three rules state: (1) insanity from alcohol is treated as any insanity; (2) if too intoxicated to form specific intent, this may be a defence to specific intent crimes; (3) evidence of intoxication falling short of insanity is not a general defence. This framework has been applied across the common law world, including Ireland, England, Australia, and New Zealand. It remains the essential starting point for any examination question on intoxication. Students must be able to state the specific/basic intent distinction, articulate the rationale for the rule, and apply it to problem scenarios involving voluntary intoxication.",
-    subjects: ['criminal'],
-    topics: ['intoxication', 'specific intent', 'basic intent', 'mens rea', 'defence'],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'DPP v Majewski',
-    citation: '[1977] AC 443',
-    year: 1977,
-    court: 'House of Lords',
-    jurisdiction: 'UK',
-    legal_principle:
-      'The House of Lords confirmed that voluntary intoxication is not a defence to a basic intent crime. Where an accused voluntarily becomes intoxicated and in that state commits a basic intent offence (such as assault), the recklessness in becoming intoxicated supplies the mental element for the offence. The Beard rules were confirmed and applied: intoxication may negate specific intent but cannot negate basic intent crimes.',
-    key_quote:
-      'A man who by voluntarily getting drunk deprives himself of the capacity to foresee or appreciate risks is guilty of the basic intent crime even though at the time of the act he was not conscious of what he was doing.',
-    full_summary:
-      "DPP v Majewski [1977] AC 443 is the leading House of Lords authority confirming and extending the Beard rules on voluntary intoxication. Majewski was convicted of assault occasioning actual bodily harm following a violent incident in a pub while heavily intoxicated on drugs and alcohol. He argued that his intoxication negated the mental element for assault. The House of Lords unanimously dismissed the appeal. The speeches confirmed that assault is a basic intent offence, and that voluntary intoxication cannot negate the mental element of such an offence. The policy rationale was that a person who deliberately makes himself intoxicated is culpably reckless; his recklessness in getting drunk supplies the necessary mental element for basic intent crimes. Lord Elwyn-Jones LC held that allowing voluntary intoxication as a defence to basic intent crimes would leave substantial gaps in the criminal law and would not accord with the ordinary person's understanding of responsibility. The decision firmly closed the door to intoxication as a general defence. It has been consistently applied in England and Wales and adopted in Irish law through cases such as People (DPP) v Reilly. Majewski is essential for exam purposes: students must know the specific/basic intent distinction, the policy rationale for denying the defence, and be able to apply it to assault, criminal damage, and related offences.",
-    subjects: ['criminal'],
-    topics: [
-      'intoxication',
-      'voluntary intoxication',
-      'basic intent',
-      'specific intent',
-      'self-induced intoxication',
-    ],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'R v Sheehan and Moore',
-    citation: '(1975) 60 Cr App R 308',
-    year: 1975,
-    court: 'Court of Appeal (England and Wales)',
-    jurisdiction: 'UK',
-    legal_principle:
-      "The Court of Appeal held that the jury must be directed to consider whether, notwithstanding the defendant's intoxication, he did in fact form the specific intent required for the offence charged. The issue is not whether intoxication could prevent formation of intent in the abstract, but whether the defendant, in fact, formed the intent. A simple direction — 'Did the defendant intend to do what he did?' — was approved.",
-    key_quote:
-      'The question is not whether in theory drink could have prevented the accused from forming an intent, but whether on the evidence he did in fact form the necessary intent.',
-    full_summary:
-      "R v Sheehan and Moore (1975) 60 Cr App R 308 is an important Court of Appeal decision clarifying the approach the jury must take when intoxication is raised in a specific intent case. The appellants were convicted of arson with intent to endanger life following an incident in which they set fire to a building after a drinking session. They argued that they were so intoxicated as to be incapable of forming the specific intent. The Court of Appeal held that the correct direction to the jury is a simple, factual one: did the accused in fact form the specific intent required? The court disapproved of any direction suggesting the jury must determine whether intoxication theoretically prevented the formation of intent. The focus must be on what the accused actually intended at the time. The court approved the direction: 'A drunken intent is nonetheless an intent.' This confirms that even a heavily intoxicated person can form specific intent, and the jury should not assume that intoxication automatically negates intent. Sheehan and Moore is frequently cited alongside Beard and Majewski to provide a complete picture of the intoxication defence. It is particularly useful in problem questions where the accused was intoxicated but may nonetheless have formed intent, and in critical questions about the adequacy of jury directions.",
-    subjects: ['criminal'],
-    topics: ['intoxication', 'mens rea', 'specific intent', 'intention', 'murder'],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'R v Garlick',
-    citation: '(1980) 72 Cr App R 291',
-    year: 1980,
-    court: 'Court of Appeal (England and Wales)',
-    jurisdiction: 'UK',
-    legal_principle:
-      'The Court of Appeal confirmed that voluntary intoxication cannot be relied upon as a defence to a crime of basic intent. Even where the accused argues he did not appreciate the risks of his conduct due to intoxication, his recklessness in voluntarily becoming intoxicated supplies the mental element for basic intent offences. Garlick applied and consolidated Majewski in the context of assault.',
-    key_quote:
-      'Voluntary intoxication affords no defence to a crime requiring only basic intent, since the recklessness of becoming drunk supplies the necessary mental element.',
-    full_summary:
-      'R v Garlick (1980) 72 Cr App R 291 is a Court of Appeal decision that applied and consolidated the Majewski principle in the specific context of assault. The appellant had been convicted of assault following an incident in which he attacked another person while heavily intoxicated. He argued that his voluntary intoxication was so severe that he had no appreciation of what he was doing and thus lacked the mental element for the offence. The Court of Appeal rejected this argument. Following Majewski, the court confirmed that assault is a basic intent offence and that voluntary intoxication cannot negative the mental element of such an offence. The court emphasised that the recklessness of voluntarily becoming drunk is itself sufficient to supply the mental element required for basic intent crimes. Garlick is useful as a consolidating authority: it shows that Majewski was not confined to its own facts but was a general principle applicable across all basic intent offences. For examination purposes, Garlick is useful when contrasting the treatment of basic and specific intent offences, and when discussing whether any flexibility in the Majewski rule exists. The case confirms that the public policy underpinning Majewski — that voluntarily intoxicated offenders should not escape liability for basic intent offences — is robust.',
-    subjects: ['criminal'],
-    topics: ['intoxication', 'basic intent', 'recklessness', 'voluntary intoxication', 'assault'],
+      "Royal Trust invited two parties, including Harvela, to submit sealed offers for a parcel of shares, stating it 'bind[ed] itself' to accept the highest offer. Harvela bid a fixed sum; Sir Leonard Outerbridge bid a fixed sum plus £101,000 in excess of any other offer (a referential bid). Royal Trust accepted the referential bid. The House of Lords held that the invitation constituted a binding unilateral offer to sell to the highest fixed bidder. Harvela's fixed bid was the highest and the Royal Trust was contractually bound to accept it. The referential bid was invalid because it was incompatible with a fixed-bid sealed tender process — it would have the effect of one bidder piggybacking on another, contrary to the nature of the process. The case is important FE-1 authority distinguishing the Spencer v Harding rule: where the invitation expressly undertakes to accept the best bid, it is a binding offer.",
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'tenders', 'unilateral-contracts'],
     is_frequently_tested: false,
     past_paper_appearances: [],
   },
   {
-    case_name: 'People (DPP) v Reilly',
-    citation: '[2005] 3 IR 111',
-    year: 2005,
-    court: 'Court of Criminal Appeal',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Court of Criminal Appeal applied the Beard/Majewski framework in Irish law and confirmed that voluntary intoxication may negative specific intent. In a murder trial, if the jury is satisfied the accused was so intoxicated as to be incapable of forming the intention to kill or cause serious injury, a verdict of manslaughter rather than murder may be appropriate. The Irish courts have adopted the UK distinction between specific and basic intent offences.',
-    key_quote:
-      'Voluntary intoxication may negative the specific intent required for murder; if so, the accused is guilty of manslaughter rather than the greater offence.',
-    full_summary:
-      'People (DPP) v Reilly [2005] 3 IR 111 is the leading Irish authority confirming the adoption of the Beard/Majewski framework in Irish criminal law. The Court of Criminal Appeal considered an appeal against a conviction for murder in which the accused raised voluntary intoxication as a factor relevant to his mental state at the time of the killing. The court confirmed that Irish law follows the distinction between specific intent and basic intent offences established in Beard and Majewski. Murder is a specific intent offence requiring an intention to kill or cause serious injury. If the accused was so intoxicated at the time of the killing as to be incapable of forming that specific intent, a verdict of manslaughter rather than murder may be appropriate. The court confirmed that the jury must be properly directed on this issue: they must consider whether, despite his intoxication, the accused did in fact form the specific intent required for murder. Reilly is the essential Irish authority on intoxication and should be cited in all Irish criminal law exam questions on intoxication. It confirms that Irish law has adopted the UK approach rather than the more permissive New Zealand model. Students must be able to articulate the specific intent requirement for murder and explain how intoxication may, but need not, negate it.',
-    subjects: ['criminal'],
-    topics: ['intoxication', 'Irish law', 'specific intent', 'murder', 'manslaughter'],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v Celyn Eadon',
-    citation: '[2019] IESC 98',
-    year: 2019,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Supreme Court considered whether extreme intoxication could negate the mental element of sexual assault. The court held that where a person is so extremely intoxicated as to be in a state akin to automatism — that is, incapable of knowing what they are doing — this may negative the mental element of the offence. However, this defence is available only in exceptional circumstances and the burden is on the accused to raise it. The court distinguished between general intoxication (no defence) and extreme intoxication amounting to automatism.',
-    key_quote:
-      'Extreme intoxication amounting to a state of automatism — where the accused was wholly unaware of his actions — may negative the mental element of sexual assault.',
-    full_summary:
-      'The People (DPP) v Celyn Eadon [2019] IESC 98 is a landmark Supreme Court of Ireland decision addressing the defence of extreme intoxication in the context of sexual assault. The accused was charged with sexual assault and argued that his level of intoxication was so extreme at the time of the alleged offence that he was in a state equivalent to automatism and was wholly unaware of his actions. The Supreme Court held that extreme intoxication, reaching the threshold of a complete absence of voluntary control akin to automatism, may in principle negative the mental element of sexual assault. The court drew a critical distinction between ordinary voluntary intoxication — which provides no defence — and extreme intoxication of such severity that the accused was effectively acting as an automaton. The court confirmed that this defence is of an exceptional character, requires an evidential basis to be raised, and places an evidential burden on the accused to point to evidence capable of supporting it. The court also addressed the proper direction to be given to juries when this rare defence is raised. Eadon generated significant academic and practitioner commentary in Ireland and was revisited and clarified by the Supreme Court in DPP v Crawford [2024] IESC 44. It is highly relevant to Irish criminal law examinations on intoxication, automatism, and sexual offences.',
-    subjects: ['criminal'],
-    topics: [
-      'intoxication',
-      'extreme intoxication',
-      'sexual assault',
-      'mens rea',
-      'Irish law',
-      'automatism',
-    ],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v Mark Crawford',
-    citation: '[2024] IESC 44',
-    year: 2024,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Supreme Court revisited the Eadon principles and provided further guidance on the defence of extreme intoxication in sexual assault cases. The court clarified the threshold for extreme intoxication as a defence: the accused must have been so intoxicated as to be incapable of forming the mental element required for the offence. The court also considered the standard of proof and how the jury should be directed on this issue in light of Eadon.',
-    key_quote:
-      'For extreme intoxication to negate the mental element of sexual assault, the accused must establish that his intoxication was so extreme as to wholly prevent the formation of intent.',
-    full_summary:
-      'The People (DPP) v Mark Crawford [2024] IESC 44 is the most recent Supreme Court authority on extreme intoxication as a defence in Irish criminal law. Following its earlier decision in Eadon, the Supreme Court was again asked to consider the defence of extreme intoxication in a sexual assault case and to clarify the principles applicable. The court reaffirmed the Eadon framework but provided significant additional guidance. The court clarified that the threshold for the defence is extremely high: the accused must demonstrate that his intoxication was so severe as to wholly prevent him from forming the mental element required for the offence charged. The court addressed how the jury should be directed on this issue, the evidential threshold for leaving the defence to the jury, and the relationship between extreme intoxication and the broader Majewski/Reilly framework. Crawford confirms that extreme intoxication as a defence to sexual assault remains available in Irish law in principle, but is subject to a stringent threshold that will rarely be met in practice. This decision is of direct relevance to Irish criminal law students and practitioners dealing with sexual offence cases where intoxication is raised. It updates and refines the Eadon jurisprudence and must be read alongside Reilly and Eadon for a complete picture of the Irish law on intoxication defences.',
-    subjects: ['criminal'],
-    topics: [
-      'intoxication',
-      'sexual assault',
-      'mens rea',
-      'Eadon',
-      'extreme intoxication',
-      'Irish law',
-    ],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Viro v The Queen',
-    citation: '(1978) 141 CLR 88',
-    year: 1978,
-    court: 'High Court of Australia',
-    jurisdiction: 'AU',
-    legal_principle:
-      'The High Court of Australia considered the interaction between intoxication and self-defence, holding that an honest but unreasonable belief arising from intoxication may still negate the mental element of murder. Where the accused genuinely but mistakenly believed self-defence was necessary, even if the belief was unreasonable due to intoxication, he may not be guilty of murder but could be convicted of manslaughter. This is an important Commonwealth comparator for the Irish approach.',
-    key_quote:
-      'An honest belief in the necessity for self-defence, even if unreasonable by reason of intoxication, may be sufficient to prevent a conviction for murder.',
-    full_summary:
-      "Viro v The Queen (1978) 141 CLR 88 is a significant High Court of Australia decision addressing the intersection of intoxication, self-defence, and the mental element of murder. The accused killed his victim and claimed he honestly believed that force was necessary in self-defence. The evidence showed that his belief, while genuine, was unreasonable and was at least in part attributable to his intoxicated state. The High Court considered whether an honest but unreasonable belief in the necessity of self-defence — arising from intoxication — could reduce murder to manslaughter. The court held that it could: an honest though unreasonable belief in the need for self-defence negates the mental element of murder, even if the belief is unreasonable by reason of the accused's intoxicated state. This reflects the Australian approach to self-defence, which focuses on the honesty of the belief rather than its reasonableness. Viro provides a useful comparative law perspective when studying the Irish approach in DPP v Dwyer and related cases. It illustrates the divergence between jurisdictions on the role of reasonableness in self-defence and the extent to which intoxication-induced beliefs can affect criminal liability. For examination purposes, Viro is a useful comparative authority when discussing whether the subjective or objective limb of the self-defence test should govern in cases of intoxicated mistake.",
-    subjects: ['criminal'],
-    topics: ['intoxication', 'self-defence', 'reasonable belief', 'honest belief', 'intent'],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'R v Kamipeli',
-    citation: '[1975] 2 NZLR 610',
-    year: 1975,
-    court: 'Court of Appeal of New Zealand',
-    jurisdiction: 'NZ',
-    legal_principle:
-      'The New Zealand Court of Appeal held that evidence of intoxication is relevant whenever it bears on the question of whether the accused had the required mental state for the offence charged. New Zealand rejected the specific/basic intent distinction adopted in England, instead allowing intoxication evidence in all cases where it is relevant to the mental element. This represents a more permissive approach than the Irish/English position and provides useful comparative material.',
-    key_quote:
-      'Evidence of intoxication is relevant to any offence where a specific mental state is required; the question is always whether the accused in fact had the required mental state.',
-    full_summary:
-      'R v Kamipeli [1975] 2 NZLR 610 is the leading New Zealand Court of Appeal decision on intoxication as a defence in criminal law. The case was decided in the same era as Majewski, but the New Zealand court took a markedly different approach. Rather than adopting the specific intent/basic intent distinction, the New Zealand Court of Appeal held that evidence of intoxication is always relevant to the mental element of any offence where a mental state must be proven. The question is simply whether the accused, having regard to all the evidence including evidence of intoxication, in fact had the required mental state at the time of the offence. This approach avoids the conceptual difficulties inherent in the specific/basic intent classification and treats intoxication as a straightforward evidential matter going to mens rea. The New Zealand position was subsequently modified by statute, but Kamipeli remains the common law baseline in New Zealand and an important comparative point of reference. For Irish criminal law students, Kamipeli is valuable comparative material for any essay or problem question requiring a critical analysis of the Beard/Majewski/Reilly framework. It illustrates the policy choices involved in the treatment of intoxication: the New Zealand model is more favourable to accused persons but risks undermining deterrence and criminal responsibility.',
-    subjects: ['criminal'],
-    topics: ['intoxication', 'mens rea', 'specific intent', 'New Zealand', 'comparative'],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'DPP v SA',
-    citation: '[2020] IECA 60',
-    year: 2020,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Court of Appeal considered the significance of the complainant's intoxication on the issue of consent in a sexual assault case. The court confirmed that a complainant who is so intoxicated as to be incapable of consenting to sexual activity does not consent in law. The accused's knowledge of the complainant's incapacity is relevant to his mental state. The interaction between the complainant's intoxication and consent was carefully analysed.",
-    key_quote:
-      'A complainant who is so intoxicated as to be incapable of understanding the nature of the act or making a free choice is incapable of consenting in law.',
-    full_summary:
-      "DPP v SA [2020] IECA 60 is a Court of Appeal of Ireland decision addressing the interaction between intoxication and consent in sexual assault cases, considered from the perspective of the complainant rather than the accused. The court considered an appeal against a conviction for sexual assault in which the complainant had been heavily intoxicated at the time of the alleged offence. The court confirmed the legal principle that a complainant who is so intoxicated as to be incapable of understanding the nature of the sexual act, or of exercising a free choice as to whether to engage in it, is legally incapable of giving consent. The court analysed the degree of intoxication required to negate capacity to consent and the evidential issues that arise in practice. The court also addressed the relevance of the accused's knowledge of, or recklessness as to, the complainant's incapacity to his mental state. SA is an important case for Irish criminal law students not only on intoxication but also on consent in sexual offence law. It complements the cases dealing with the accused's intoxication by addressing the separate but related question of how the complainant's intoxication affects the consent analysis. It should be read alongside the Criminal Law (Sexual Offences) Act 2017 provisions on consent.",
-    subjects: ['criminal'],
-    topics: [
-      'sexual assault',
-      'intoxication',
-      'complainant intoxication',
-      'consent',
-      'mental element',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (AG) v Dwyer',
-    citation: '[1972] IR 416',
-    year: 1972,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Supreme Court established the Irish test for self-defence: the accused must have an honest belief in the necessity to use force in self-defence, and the force used must be proportionate. The test is primarily subjective — the accused's honest belief is central — but the force used must not be grossly disproportionate. If excessive force is used in circumstances of genuine self-defence, the accused may be guilty of manslaughter rather than murder. This remains the leading Irish authority on self-defence.",
-    key_quote:
-      'If a person believes, honestly though mistakenly, that he is in danger of losing his life, and uses force in self-defence, he is not guilty of murder even if the force used was excessive, provided the jury is satisfied the force was not so excessive as to negate the defence entirely.',
-    full_summary:
-      "The People (AG) v Dwyer [1972] IR 416 is the foundational Supreme Court of Ireland authority on the law of self-defence. The case arose from a killing in which the accused claimed he acted in genuine self-defence, though the force he used was arguably excessive. The Supreme Court held that the primary test for self-defence in Irish law is subjective: the accused must have had an honest belief that the use of force was necessary to defend himself from an unjust attack. The court confirmed that an honest though mistaken belief is sufficient — the accused need not have been objectively correct in his assessment of the threat. However, the force used must be proportionate to the perceived threat and must not be grossly excessive. Importantly, the court confirmed the 'excessive force' rule: where an accused uses force that is genuinely believed to be necessary but is excessive in the circumstances, the appropriate verdict is manslaughter rather than murder. This partial mitigation reflects the accused's genuine but imperfect self-defensive intent. Dwyer remains the essential Irish authority on self-defence and must be cited in any Irish criminal law examination involving a plea of self-defence or force used in protection of person. It is the starting point for analysis and is frequently contrasted with English authorities such as R v Clegg and Scots authorities on the partial defence.",
-    subjects: ['criminal'],
-    topics: ['self-defence', 'honest belief', 'reasonable force', 'murder', 'manslaughter'],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v M.',
-    citation: '[1994] 3 IR 306',
-    year: 1994,
-    court: 'Court of Criminal Appeal',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Court of Criminal Appeal considered the defence of provocation in the context of murder. The court held that provocation as a partial defence to murder (reducing liability to manslaughter) requires both a subjective element (the accused was in fact provoked to lose self-control) and an objective element (a person of reasonable temperament might have been similarly provoked). The court also considered whether cumulative provocation can amount to sufficient provocation.',
-    key_quote:
-      'For provocation to reduce murder to manslaughter, the accused must actually have lost self-control as a result of provocation, and the provocation must have been sufficient to induce a loss of self-control in a person of ordinary temperament.',
-    full_summary:
-      'The People (DPP) v M. [1994] 3 IR 306 is the leading Court of Criminal Appeal authority on the partial defence of provocation in Irish murder cases. The case involved a killing in the context of a domestic relationship in which the accused claimed to have acted under provocation. The court considered the elements of provocation as a partial defence to murder: the effect of the defence, if established, is to reduce the verdict from murder to manslaughter. The court held that both a subjective and an objective element must be established. First, the accused must actually have been provoked and must in fact have lost his self-control as a result of the provocative conduct. Second, the provocation must have been of a kind sufficient to cause a person of ordinary temperament and self-control to lose control in similar circumstances. The court considered the role of cumulative provocation — a series of provocative acts building over time — and confirmed that this may in appropriate circumstances be sufficient to ground the defence even where no single act would have been sufficient in isolation. The decision is central to Irish criminal law on partial defences and is contrasted in practice with the position under the Coroners and Justice Act 2009 in England, which replaced provocation with the loss of control defence. Students must know both the subjective and objective limbs, the cumulative provocation doctrine, and the outcome of a successful plea.',
-    subjects: ['criminal'],
-    topics: [
-      'murder',
-      'provocation',
-      'diminished responsibility',
-      'manslaughter',
-      'mental element',
-    ],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v Byrne',
-    citation: '[1995] 1 ILRM 279',
+    case_name: 'Tansey v College of Occupational Therapists',
+    citation: '[1995] IEHC (unreported, 27 January 1995)',
     year: 1995,
-    court: 'Court of Criminal Appeal',
-    jurisdiction: 'IE',
+    court: 'High Court',
+    jurisdiction: 'Ireland',
     legal_principle:
-      "The Court of Criminal Appeal considered the distinction between murder and manslaughter in the context of a killing arising from a domestic altercation. The court examined the mental element required for murder (intention to kill or cause serious injury) and the circumstances in which a verdict of manslaughter is more appropriate. The judge's direction to the jury on the distinction between the two offences was closely scrutinised.",
+      'An advertisement for a course or examination is generally an invitation to treat. However, where the advertisement contains definite and specific terms and the applicant acts in reliance on it, the court may find a binding contract was formed on the terms of the advertisement.',
     key_quote:
-      'The distinction between murder and manslaughter depends on the presence or absence of the intention to kill or cause serious injury; the jury must be carefully directed on this distinction.',
+      'The advertisement set out the conditions with sufficient clarity that a reasonable person reading it would understand the College was committing itself to those terms.',
     full_summary:
-      "The People (DPP) v Byrne [1995] 1 ILRM 279 is a Court of Criminal Appeal decision that considered the critical distinction between murder and manslaughter in Irish law. The case arose from a killing in the context of a domestic dispute and focused substantially on whether the trial judge had correctly directed the jury on the mental element required for murder as opposed to manslaughter. The court emphasised that murder in Irish law requires proof of an intention to kill or cause serious injury to any person, and that this intention must be proven beyond reasonable doubt. Where the jury is not satisfied that such intention was present, the appropriate verdict is manslaughter rather than murder. The court scrutinised the trial judge's jury charge in detail, examining whether the distinction between the two offences had been adequately communicated. The decision reinforces the central importance of the mental element in distinguishing murder from manslaughter and confirms that the trial judge's direction must leave the jury in no doubt about what they must find before returning a verdict of murder. Byrne is a useful authority for examination purposes in highlighting the practical importance of the mens rea distinction and the procedural significance of the jury direction. It should be read alongside The People (DPP) v M. and the statutory provisions in the Criminal Justice Act 1964 on the mental element for murder.",
-    subjects: ['criminal'],
-    topics: ['murder', 'manslaughter', 'specific intent', 'provocation', 'sentencing'],
+      "The plaintiff applied for and was accepted onto a course run by the College of Occupational Therapists, relying on representations in the College's prospectus regarding the qualification she would receive. The College subsequently changed the terms of the qualification. The High Court considered whether the prospectus constituted a contractual offer or merely an invitation to treat, and whether the plaintiff's application constituted acceptance. The court found that where an educational institution sets out specific terms for a programme in its prospectus with sufficient clarity, those terms may form part of the contract between the institution and the student. This is a useful Irish authority for FE-1 students on offer/acceptance in the educational services context and on the binding nature of prospectus terms.",
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'invitation-to-treat', 'irish-cases', 'formation-of-contract'],
     is_frequently_tested: false,
     past_paper_appearances: [],
   },
   {
-    case_name: 'R v Brown and Stratton',
-    citation: '[1998] Crim LR 485',
-    year: 1998,
-    court: 'Court of Appeal (England and Wales)',
-    jurisdiction: 'UK',
+    case_name: 'Billings v Arnotts',
+    citation: '[1946] Ir Jur Rep 50',
+    year: 1946,
+    court: 'Circuit Court',
+    jurisdiction: 'Ireland',
     legal_principle:
-      'The Court of Appeal considered the mental element in joint enterprise cases where the accused did not personally commit the act constituting the offence. The court addressed whether a secondary party to a joint enterprise is guilty of murder where the principal commits an act that the secondary party contemplated might occur but did not intend. This case provides comparative analysis relevant to Irish criminal law on participation in joint enterprise.',
+      "An advertisement for a job posted in a newspaper is an invitation to treat, not an offer of employment. The contract of employment is formed when the employer accepts the applicant's offer made through their application, not at the moment the advertisement is published.",
     key_quote:
-      'A secondary party to a joint enterprise is guilty of murder only if he contemplated that the principal might cause death or serious injury with intent; mere foresight of the act is insufficient.',
+      'The advertisement invites applications; it does not itself constitute an offer of employment capable of immediate acceptance.',
     full_summary:
-      'R v Brown and Stratton [1998] Crim LR 485 is a Court of Appeal (England and Wales) decision dealing with the mental element required for secondary liability in murder cases involving joint enterprise. The appellants participated in an attack as part of a group. The principal inflicted fatal injuries. The court considered whether the secondary parties were guilty of murder on the basis of their participation in the joint enterprise. The court held that a secondary party to a joint enterprise can be guilty of murder only where he contemplated that the principal might cause death or serious injury with the requisite intent for murder — it is not sufficient merely to foresee that the principal might perform the acts in question. The decision was part of the line of authority that culminated in R v Jogee [2016] UKSC 8, which subsequently abolished the parasitic accessory liability rule. Brown and Stratton is cited in the context of the pre-Jogee law and is useful for comparative analysis against Irish law on joint enterprise and secondary liability. In the Irish context, the principles of participation liability and the mental element required for secondary parties in murder cases are governed by the Criminal Law Act 1997 and common law principles. Students should be aware of both the English and Irish approaches and the significance of Jogee in reforming the English law.',
-    subjects: ['criminal'],
-    topics: ['joint enterprise', 'intent', 'common purpose', 'conviction', 'manslaughter'],
+      "Arnotts department store placed a newspaper advertisement seeking employees. Billings argued that the advertisement constituted an offer of employment and that his application letter was acceptance of that offer, forming a binding employment contract. The Circuit Court rejected this argument. Applying the general principle from Boots and Pharmaceutical Society cases, the court held that an advertisement for a job is merely an invitation to treat. The applicant makes the offer by submitting an application; the employer's offer is made when they invite the applicant for interview or make a formal job offer, which the applicant may accept. This is an important Irish authority for the application of the invitation to treat rule to employment contexts, and is regularly cited in FE-1 answers on the formation of contract.",
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'invitation-to-treat', 'advertisements', 'irish-cases'],
     is_frequently_tested: false,
     past_paper_appearances: [],
   },
   {
-    case_name: 'R v Robinson',
-    citation: '(1966) 1 CCR 3',
-    year: 1966,
-    court: 'Court of Appeal (Canada)',
-    jurisdiction: 'UK',
+    case_name: 'Payne v Cave',
+    citation: '(1789) 3 Term Rep 148',
+    year: 1789,
+    court: "King's Bench",
+    jurisdiction: 'England & Wales',
     legal_principle:
-      'The Canadian Court of Appeal considered whether evidence of intoxication is relevant to the question of whether the accused had an honest belief in the necessity of self-defence. The court held that where intoxication causes an honest but mistaken belief in the need for self-defence, this may negative the intent required for murder. Robinson provides comparative support for the subjective honest belief element in Irish self-defence cases.',
+      "At an auction, each bid is an offer made by the bidder and the contract is concluded when the auctioneer's hammer falls, constituting acceptance. Until the hammer falls, any bid may be withdrawn. The auctioneer's invitation for bids is an invitation to treat.",
     key_quote:
-      'Evidence of intoxication is relevant to whether the accused honestly believed that self-defence was necessary, even if that belief was unreasonable.',
+      'Every bidding is nothing more than an offer on one side, which is not binding on either side till the hammer is down.',
     full_summary:
-      "R v Robinson (1966) 1 CCR 3 is a Canadian Court of Appeal decision that addresses the intersection of intoxication and self-defence belief. The accused was charged with murder following a killing in which he raised both intoxication and self-defence. The court considered whether his intoxicated state was relevant to the question of whether he honestly believed it was necessary to use force in self-defence. The court held that evidence of intoxication is relevant to the genuineness of a claimed belief in the necessity of self-defence: if the accused's intoxication contributed to an honest but mistaken belief that he was under attack and needed to defend himself, this may negative the specific intent required for murder. Robinson represents the Canadian approach to the interaction between intoxication and self-defence, which focuses on the honesty of the belief in a manner analogous to the Irish subjective test in Dwyer. It is a useful comparative authority for Irish criminal law students examining the extent to which an intoxicated person's beliefs can ground a plea of self-defence and how different common law jurisdictions treat the overlap between these two defences. It should be read alongside Viro v The Queen from Australia and the Irish authorities on self-defence and intoxication.",
-    subjects: ['criminal'],
-    topics: ['intoxication', 'specific intent', 'murder', 'honest belief', 'self-defence'],
+      "Cave bid at an auction for goods but withdrew his bid before the auctioneer's hammer fell. The question arose whether he was bound by his bid. The King's Bench held that he was not. At an auction, each bid constitutes an offer from the bidder. No contract is formed until the auctioneer brings down the hammer (acceptance). Until that moment, any bid may be freely withdrawn without liability. The auctioneer's calling for bids is merely an invitation to treat. This ancient authority remains good law and underpins the Sale of Land by Auction Act and the Sale of Goods Act provisions on auction sales. For FE-1 purposes it establishes the mechanics of offer and acceptance at auction, and explains why a bidder at a property auction who withdraws before the hammer falls has not breached any contract.",
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'auctions', 'withdrawal-of-offer'],
     is_frequently_tested: false,
     past_paper_appearances: [],
   },
   {
-    case_name: "O'B v O'B",
-    citation: '[1984] IR 182',
-    year: 1984,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
+    case_name: 'Ramsgate Victoria Hotel Co v Montefiore',
+    citation: '(1866) LR 1 Ex 109',
+    year: 1866,
+    court: 'Exchequer Chamber',
+    jurisdiction: 'England & Wales',
     legal_principle:
-      'The Supreme Court considered the extent to which a spouse is compellable to give evidence against the other spouse in criminal proceedings. The court held that the marital privilege preventing a spouse from being compelled to give evidence against their partner in criminal proceedings is a constitutionally recognised value. The court considered the scope and limits of spousal immunity and the circumstances in which it may be waived. This case raises important questions about the interaction of marital privacy and criminal justice.',
+      'An offer lapses after a reasonable time has passed without acceptance, even if no time limit was specified. What constitutes a reasonable time depends on the subject matter; for share offers in a volatile market, a few months may exceed a reasonable time.',
     key_quote:
-      'The constitutional protection of the family extends to preventing one spouse from being compelled to give evidence against the other in criminal proceedings.',
+      'Where no time is fixed for acceptance, it must be made within a reasonable time, which is a question of fact depending on the circumstances of the case.',
     full_summary:
-      "O'B v O'B [1984] IR 182 is the leading Supreme Court of Ireland authority on spousal compellability as a witness in criminal proceedings. The case raised the fundamental question of whether one spouse can be compelled to give evidence against the other in a criminal trial. The Supreme Court held that the constitutional protection accorded to the family under Article 41 of the Constitution of Ireland is relevant to the question of spousal compellability. The marital relationship and the constitutional status of the family are engaged when one spouse is compelled to testify against the other. The court recognised a constitutional dimension to the marital privilege at common law. However, the court also acknowledged that this privilege is not absolute and may be subject to limitations in the interests of criminal justice, particularly where offences against family members are concerned. The decision is foundational for the topic of compellability in Irish evidence law and must be read alongside the Criminal Justice (Evidence) Act 1924, as amended, and subsequent legislative developments. Students must understand the distinction between competence (whether a spouse can give evidence) and compellability (whether a spouse can be required to do so), the constitutional underpinning of the privilege, and the circumstances in which it may or may not apply.",
-    subjects: ['criminal'],
+      "In June 1864, Montefiore applied to the Ramsgate Victoria Hotel Company for shares and sent a deposit. He heard nothing until November 1864 when the company purported to allot him shares. By then shares had fallen in value and he declined to take them. The Exchequer Chamber held that the company's purported acceptance in November came too late. An offer to take shares in a company (where the market price can fluctuate rapidly) lapses after a reasonable time. The five-month interval was unreasonable given the volatile share market, so the original offer had lapsed before the purported acceptance. The case establishes the lapse of offer by effluxion of time and is essential FE-1 authority on this ground for termination of an offer. Contrasted with offers relating to land, where a longer reasonable time may apply.",
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'lapse-of-offer', 'reasonable-time'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Dickinson v Dodds',
+    citation: '(1876) 2 Ch D 463',
+    year: 1876,
+    court: 'Court of Appeal in Chancery',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'An offeror may revoke an offer at any time before acceptance, even where the offer states it will remain open for a specified period. Communication of revocation may be through a reliable third party; it need not come directly from the offeror.',
+    key_quote:
+      'A man who has made an offer to sell a property may withdraw that offer at any time before acceptance, and the withdrawal is complete when the offeree has notice of it, even though that notice comes through a third party.',
+    full_summary:
+      'Dodds offered to sell his house to Dickinson for £800, the offer to remain open until 9am on 12 June. On 11 June, Dickinson heard from Berry (a reliable third party) that Dodds had already sold or agreed to sell the property to Allan. Dickinson then formally accepted on the morning of 12 June. The Court of Appeal held there was no contract. The offer had been effectively revoked by the time Dickinson purported to accept it. Revocation need not be communicated personally by the offeror — communication through a reliable third party suffices. There is no consideration for a promise to keep an offer open, so the promise to hold it open until 9am was not binding. The case establishes two key FE-1 principles: (1) an unaccepted offer can be revoked at any time before acceptance; and (2) revocation through a reliable third party is effective.',
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'revocation-of-offer', 'option-contracts'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2021 Q2', 'Contract Autumn 2022 Q1'],
+  },
+  {
+    case_name: 'Henthorn v Fraser',
+    citation: '[1892] 2 Ch 27',
+    year: 1892,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'The postal rule applies — acceptance is complete when the letter is posted — where it was within the reasonable contemplation of the parties that the post might be used as a means of communicating acceptance. This is a question of fact considering the circumstances in which the offer was made.',
+    key_quote:
+      'Where it is within the reasonable contemplation of the parties that the post might be used as a means of communicating acceptance of an offer, the acceptance is complete as soon as it is posted.',
+    full_summary:
+      "Fraser gave Henthorn (who lived in Birkenhead, outside Liverpool) a written option to purchase certain property. The next day, before Fraser's revocation arrived, Henthorn posted his acceptance. The revocation was sent before the acceptance was posted but arrived after it was posted. The Court of Appeal applied the postal rule and held a contract was formed when the acceptance was posted (not when it arrived). The postal rule applied because, given that Henthorn lived in a different town, it was within the reasonable contemplation of the parties that he would use the post to communicate acceptance. The case refines the postal rule from Adams v Lindsell by adding the requirement of reasonable contemplation — the postal rule does not apply automatically but only where postal acceptance was reasonably contemplated. A crucial FE-1 authority on the postal rule and timing of acceptance.",
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'postal-rule', 'acceptance', 'revocation-of-offer'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2023 Q2'],
+  },
+  {
+    case_name: 'Errington v Errington and Woods',
+    citation: '[1952] 1 KB 290',
+    year: 1952,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'In a unilateral contract, the offeror cannot revoke the offer once the offeree has commenced performance of the specified act. The offer remains irrevocable as long as performance continues, but the offeree may abandon performance at any time without completing the contract.',
+    key_quote:
+      "The father's promise was a unilateral contract — a promise of the house in return for their act of paying the instalments. It could not be revoked by him once the couple entered on performance of the act.",
+    full_summary:
+      'A father purchased a house on mortgage and told his son and daughter-in-law that if they paid the mortgage instalments, he would make over the house to them when the mortgage was paid off. They moved in and began making the payments. After the father died, his widow sought to revoke the arrangement and obtain possession. The Court of Appeal (Denning LJ) held that the widow could not revoke the arrangement. The father had made a unilateral offer — the promise of the house in return for paying the instalments. Once the son and daughter-in-law had entered upon performance (started paying), the offer became irrevocable. However, they could stop paying at any time, in which case no contract would be formed and they would have no claim to the house. The case is a key FE-1 authority on the revocability of unilateral offers once performance has commenced, and intersects with promissory estoppel and licence issues in land law.',
+    subjects: ['contract-law'],
     topics: [
-      'spousal compellability',
-      'privilege',
-      'evidence',
-      'marital privilege',
-      'right to silence',
+      'offer-and-acceptance',
+      'unilateral-contracts',
+      'revocation-of-offer',
+      'acceptance-by-performance',
+    ],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Soulsbury v Soulsbury',
+    citation: '[2007] EWCA Civ 969',
+    year: 2007,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'A unilateral offer to pay a sum of money if the offeree refrains from doing something (forbearance) constitutes a binding contract if the offeree performs the condition by refraining as requested. The offeror cannot revoke the offer once the offeree has substantially performed the requested forbearance.',
+    key_quote:
+      "The husband's offer was a unilateral contract and acceptance was constituted by the wife refraining from pursuing the maintenance application.",
+    full_summary:
+      "Following divorce, the husband promised to pay his former wife £100,000 in his will if she did not enforce the outstanding maintenance order against him. The wife refrained from enforcing the order during the husband's lifetime. He died without honouring the promise. His estate refused to pay on the basis there was no binding contract. The Court of Appeal held there was a binding unilateral contract: the husband offered £100,000 in exchange for the wife's forbearance from enforcing the maintenance order. Acceptance by performance (forbearance) occurred throughout the period the wife refrained. The estate was bound by the husband's promise. The case is a useful modern illustration of unilateral contracts based on forbearance, and of acceptance by inaction/restraint from action rather than positive acts. Relevant to FE-1 questions on both unilateral contracts and the adequacy of consideration (forbearance as good consideration).",
+    subjects: ['contract-law'],
+    topics: [
+      'offer-and-acceptance',
+      'unilateral-contracts',
+      'consideration',
+      'acceptance-by-performance',
+    ],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Financings Ltd v Stimson',
+    citation: '[1962] 1 WLR 1184',
+    year: 1962,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "An offer is made on the assumption that the subject matter remains in the same condition as when the offer was made. If the subject matter is materially damaged before acceptance, the offer lapses because the offeree's acceptance relates to the goods in their present damaged state, not to what was originally offered.",
+    key_quote:
+      'The offer was made in respect of the car as it was at the time of the offer; the offer could not be accepted in respect of a materially different car.',
+    full_summary:
+      'Stimson agreed to buy a car under a hire-purchase agreement, completing a form which the dealer submitted to Financings (the finance company). Before Financings signed and returned their copy (constituting acceptance), the car was stolen and returned damaged. Financings accepted the signed agreement without knowing of the damage. The Court of Appeal held that there was no binding contract. The offer made by Stimson was in respect of the car as it was in its original condition. By the time of acceptance, the subject matter had materially changed. The offer had lapsed because it was made on the implicit condition that the car remained in substantially the same state. The case is an important FE-1 authority on the lapse of an offer where the subject matter changes between offer and acceptance, and illustrates the objective principle that an offer is made in reference to existing circumstances.',
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'lapse-of-offer', 'hire-purchase', 'formation-of-contract'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Hyde v Wrench',
+    citation: '(1840) 3 Beav 334',
+    year: 1840,
+    court: 'Rolls Court',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'A counter-offer destroys the original offer. Once a counter-offer is made, the original offer is no longer available for acceptance, even if the counter-offeror later purports to accept the original terms.',
+    key_quote:
+      'A counter offer is a rejection of the original offer. When the defendant made the counter offer of £1,000, the original offer of £950 was killed and could not be subsequently accepted.',
+    full_summary:
+      'Wrench offered to sell a farm to Hyde for £1,000. Hyde counter-offered £950. Wrench rejected the counter-offer. Hyde then purported to accept the original offer of £1,000. The Rolls Court (Lord Langdale MR) held there was no binding contract. By making a counter-offer of £950, Hyde had rejected and destroyed the original offer of £1,000. Once destroyed, the original offer could not be revived by a later purported acceptance. Wrench had never renewed the offer at £1,000. The case establishes the fundamental rule that a counter-offer kills the original offer, and is one of the most important FE-1 cases on offer and acceptance. It is distinguished from a mere inquiry (Stevenson Jaques v McLean), where asking for information does not constitute a counter-offer.',
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'counter-offer', 'rejection-of-offer'],
+    is_frequently_tested: true,
+    past_paper_appearances: [
+      'Contract Autumn 2019 Q2',
+      'Contract Spring 2021 Q1',
+      'Contract Autumn 2023 Q2',
+    ],
+  },
+  {
+    case_name: 'Butler Machine Tool Co Ltd v Ex-Cell-O Corporation (England) Ltd',
+    citation: '[1979] 1 WLR 401',
+    year: 1979,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "In a battle of forms, the contract is generally made on the terms of the last document sent before performance commences (the 'last shot' rule), unless one party's terms contain a 'locking-in' clause providing that only their terms will apply. The court must assess the whole course of dealing to determine which terms prevail.",
+    key_quote:
+      'In many of these cases our traditional offer and acceptance approach may be too simplistic; the better approach is to look at all the documents passing between the parties and glean from them, or from the conduct of the parties, whether they have reached agreement on all material points.',
+    full_summary:
+      "Butler Machine Tool offered to sell a machine on their standard terms (including a price variation clause). Ex-Cell-O placed an order on their own standard terms (which did not include a price variation clause), accompanied by a tear-off slip acknowledging acceptance of Ex-Cell-O's terms. Butler signed and returned the slip. The Court of Appeal held that the contract was formed on Ex-Cell-O's terms, without the price variation clause. By signing and returning the acknowledgment slip, Butler accepted Ex-Cell-O's counter-offer. Lord Denning MR favoured a broader approach of looking at the whole course of dealing to find a composite agreement, but the majority (Bridge and Lawton LJJ) applied the traditional 'last shot' analysis. The case is essential FE-1 material on the battle of forms and the limits of the offer/counter-offer analysis in commercial negotiations.",
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'battle-of-forms', 'counter-offer', 'standard-terms'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2021 Q1', 'Contract Spring 2023 Q1'],
+  },
+  {
+    case_name: 'Stevenson Jaques & Co v McLean',
+    citation: '(1880) 5 QBD 346',
+    year: 1880,
+    court: "Queen's Bench Division",
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'A request for further information or clarification does not constitute a counter-offer and does not destroy the original offer. The distinction between a counter-offer (which kills the original offer) and a mere inquiry (which does not) turns on whether the response indicates a rejection of the original terms.',
+    key_quote:
+      'There is nothing in this to show that the plaintiff was disposing of his power to accept the offer as made to him.',
+    full_summary:
+      "McLean offered to sell iron to Stevenson at 40 shillings per ton, the offer remaining open over the weekend. Stevenson telegraphed asking whether McLean would accept 40 shillings for delivery over two months or what was the longest time he could give. This was not answered. Stevenson then purported to accept the original offer. By then McLean had sold to a third party and denied any contract existed. Lush J held that Stevenson's telegram was merely a request for information, not a counter-offer, and therefore did not destroy the original offer. When Stevenson sent the telegram of acceptance, the original offer was still available. The case is an important FE-1 authority distinguishing requests for clarification from counter-offers, and must be read alongside Hyde v Wrench.",
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'counter-offer', 'inquiries', 'negotiations'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Adams v Lindsell',
+    citation: '(1818) 1 B & Ald 681',
+    year: 1818,
+    court: "King's Bench",
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Acceptance of an offer by post is complete and binding at the moment the letter of acceptance is posted, not when it is received by the offeror. This is the postal rule (or posting rule).',
+    key_quote:
+      'If the defendants were not bound by their offer when accepted by the plaintiffs till the answer was received, then the plaintiffs ought not to be bound till after they had received the notification that the defendants had received their answer.',
+    full_summary:
+      "Lindsell wrote to Adams offering to sell wool, requiring an answer by return of post. The letter was misdirected and arrived late. Adams immediately posted an acceptance, but it arrived later than it would have had the offer letter not been misdirected. By the time Adams' acceptance arrived, Lindsell had sold the wool to a third party. The King's Bench held that a contract was concluded when Adams posted the acceptance letter, not when it was received. If acceptance were only complete on receipt, there could be no binding contract until the offeree had received a letter confirming the offeror had received the acceptance, creating an infinite regress. The postal rule cuts this off by deeming acceptance complete on posting. The case is the foundational FE-1 authority for the postal rule, applicable whenever use of the post was expressly or impliedly authorised by the offer.",
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'postal-rule', 'acceptance', 'formation-of-contract'],
+    is_frequently_tested: true,
+    past_paper_appearances: [
+      'Contract Spring 2020 Q2',
+      'Contract Autumn 2022 Q2',
+      'Contract Spring 2024 Q1',
+    ],
+  },
+  {
+    case_name: 'Holwell Securities Ltd v Hughes',
+    citation: '[1974] 1 WLR 155',
+    year: 1974,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "The postal rule does not apply where the offer expressly or impliedly requires actual communication of acceptance to the offeror. Where the offer requires 'notice in writing' or similar language, acceptance is not complete until the notice is actually received.",
+    key_quote:
+      'The postal rule does not apply where the express terms of the offer specify that the acceptance must be communicated to and received by the offeror.',
+    full_summary:
+      "Hughes granted Holwell an option to purchase property, exercisable 'by notice in writing to the intending vendor' within six months. Holwell posted a letter exercising the option five days before the deadline, but the letter was never delivered (lost in the post). The Court of Appeal held the option had not been validly exercised. The phrase 'notice in writing to the vendor' required actual communication — the notice had to reach Hughes. The postal rule did not apply because the offer required actual notification. The court also noted the postal rule would not apply where it would lead to 'manifest inconvenience and absurdity'. The case limits the postal rule and is critical FE-1 authority showing that the rule is a default rule which parties can contract out of by requiring actual communication or receipt.",
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'postal-rule', 'acceptance', 'options'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2021 Q3', 'Contract Autumn 2023 Q3'],
+  },
+  {
+    case_name: 'Entores Ltd v Miles Far East Corporation',
+    citation: '[1955] 2 QB 327',
+    year: 1955,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Where parties are in direct (instantaneous) communication, acceptance is only effective when it is actually received by the offeror. The postal rule has no application to instantaneous communications such as telephone or telex. The contract is formed at the place where acceptance is received.',
+    key_quote:
+      'When a contract is made by telephone, telex, or other instantaneous means of communication, the contract is made when and where the acceptance is received.',
+    full_summary:
+      "Entores (London) sent a telex offer to Miles Far East's agent in Amsterdam. The agent telexed back an acceptance. The question was where the contract was made (relevant to jurisdiction). The Court of Appeal held that the postal rule does not apply to instantaneous communications. When parties communicate by telephone or telex, the acceptance is only complete when it is received by the offeror. Lord Denning MR used the analogy: if you shout an acceptance across a garden and a aircraft flies overhead drowning it out, and the offeror says 'I cannot hear you', there is no contract until the acceptance is heard and understood. The contract was made in London where the acceptance was received. The case established that the postal rule is limited to non-instantaneous communications. It is essential FE-1 authority on acceptance by instantaneous communication, extended and confirmed by Brinkibon v Stahag Stahl.",
+    subjects: ['contract-law'],
+    topics: [
+      'offer-and-acceptance',
+      'acceptance',
+      'instantaneous-communication',
+      'postal-rule',
+      'formation-of-contract',
     ],
     is_frequently_tested: true,
-    past_paper_appearances: [],
+    past_paper_appearances: ['Contract Spring 2022 Q2', 'Contract Autumn 2022 Q2'],
   },
   {
-    case_name: 'NK v SK',
-    citation: '[2017] IECA 1',
-    year: 2017,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
+    case_name: 'Brinkibon Ltd v Stahag Stahl GmbH',
+    citation: '[1983] 2 AC 34',
+    year: 1983,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
     legal_principle:
-      'The Court of Appeal reconsidered the question of spousal compellability under the Criminal Justice (Evidence) Act 1924 and constitutional provisions. The court held that a spouse may in certain circumstances be a compellable witness for the prosecution, particularly in cases involving violence within the family. The extent to which the 1924 Act preserves or modifies the common law position on marital privilege was carefully analysed.',
+      "Acceptance by telex (or similar instantaneous communication) is effective when and where it is received by the offeror, not when it is sent, following Entores. However, where a telex is received outside business hours, it may be effective only when the recipient's office opens — this turns on the parties' intentions and prevailing business practices.",
     key_quote:
-      'The question of spousal compellability must be assessed in light of both the statutory framework and the constitutional protection of the family under Article 41.',
+      'The general rule is that communication by telex operates when and where it is received. But there may be special circumstances which take the case out of the general rule.',
     full_summary:
-      "NK v SK [2017] IECA 1 is a Court of Appeal of Ireland decision that revisited the law on spousal compellability in the context of a domestic violence prosecution. The court examined the interaction between the Criminal Justice (Evidence) Act 1924, the constitutional protection of the family under Article 41, and the common law position on marital privilege established in O'B v O'B. The court acknowledged that the 1924 Act modified aspects of the common law position and that the question of whether a spouse is compellable must be determined with reference to both the statutory framework and constitutional values. The court recognised that in cases involving violence or abuse within the family, there are strong countervailing public interests that may outweigh the marital privilege. The decision is significant as a modern re-examination of the O'B v O'B principles and reflects the evolution of Irish law in the area of domestic violence. Students should understand the statutory and constitutional frameworks applicable, the distinction between competence and compellability, and the circumstances in which the exception for spousal violence applies. NK v SK should be read alongside O'B v O'B and any relevant provisions of the Domestic Violence Act 2018 that may affect evidential rules in domestic abuse prosecutions.",
-    subjects: ['criminal'],
+      "Brinkibon (London) sent a telex accepting an offer from Stahag Stahl (Vienna). The question was where the contract was formed (relevant to whether English courts had jurisdiction). The House of Lords confirmed Entores: telex acceptance takes effect where and when received. However, the Lords noted the complexity introduced by out-of-hours receipt: if a telex is sent and received by the machine outside office hours, the acceptance may only be communicated to the offeror's mind when the office reopens the next day. Whether the contract is formed at the moment of machine-receipt or on the opening of business depends on the circumstances and the parties' intentions. The case confirms the Entores rule for the House of Lords and raises the important question of out-of-hours electronic communications — a highly relevant modern issue for email, text messages, and online contracts.",
+    subjects: ['contract-law'],
     topics: [
-      'spousal compellability',
-      'criminal evidence',
-      'privilege',
-      'witness',
-      'Criminal Justice (Evidence) Act 1924',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'X v Y',
-    citation: '[2020] IEHC 525',
-    year: 2020,
-    court: 'High Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The High Court considered the circumstances in which anonymity orders can be granted in criminal or quasi-criminal proceedings to protect the identity of parties. The court balanced the open justice principle against the right to privacy and other constitutional values. The court confirmed that anonymity orders in criminal proceedings are exceptional measures requiring strong justification, but may be appropriate where publication of identity would cause disproportionate harm.',
-    key_quote:
-      'The principle of open justice is fundamental to the criminal process, but may yield to anonymity where strict necessity and proportionality are established.',
-    full_summary:
-      'X v Y [2020] IEHC 525 is a High Court of Ireland decision considering the circumstances in which courts may grant anonymity orders in criminal or quasi-criminal proceedings. The case raised the tension between the fundamental principle of open justice — that courts conduct their business in public and that parties and proceedings are identified — and competing rights, including the constitutional right to privacy, the right to a fair trial, and in some cases the rights of victims and vulnerable parties. The High Court confirmed that anonymity orders are exceptional in the criminal context. Open justice is a foundational principle of the Irish legal system, embedded in both constitutional and common law norms. However, the court acknowledged that in specific circumstances — for example, where the identity of a vulnerable complainant, a child, or a witness protection subject is at issue — the principle of open justice may be displaced by strict necessity. The court applied a proportionality analysis, requiring that any restriction on open justice be no more than necessary to achieve the legitimate aim pursued. X v Y is relevant to Irish criminal procedure, evidence, and constitutional law. Students should understand the open justice principle, the constitutional basis for restrictions on it, and the applicable test for granting anonymity orders. This case also has relevance in the context of reporting restrictions and media law.',
-    subjects: ['criminal'],
-    topics: [
-      'anonymity',
-      'criminal proceedings',
-      'reporting restrictions',
-      'public interest',
-      'constitutional rights',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v Redmond',
-    citation: '[2001] 3 IR 390',
-    year: 2001,
-    court: 'Court of Criminal Appeal',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Court of Criminal Appeal considered the mandatory life sentence for murder and whether it constitutes an inhuman or degrading punishment in particular circumstances. The court upheld the constitutional validity of the mandatory life sentence for murder under Article 38 and Article 40.3 of the Constitution. The court considered the discretion in setting tariffs for review and the interaction of judicial and executive functions in life sentence management.',
-    key_quote:
-      'The mandatory life sentence for murder is constitutionally valid; it reflects the unique gravity of the intentional taking of a human life.',
-    full_summary:
-      'The People (DPP) v Redmond [2001] 3 IR 390 is a Court of Criminal Appeal decision addressing the constitutional validity of the mandatory life sentence for murder in Irish law. The appellant argued that the imposition of a mandatory life sentence without any individual judicial consideration of the appropriate period of imprisonment constituted an unjust attack on his constitutional rights, including rights under Article 38 (trial in due course of law) and Article 40.3 (personal rights). The court upheld the constitutionality of the mandatory life sentence. The court reasoned that the mandatory sentence reflects the unique and irreversible nature of murder — the intentional taking of a human life — and that the Oireachtas was entitled to impose a mandatory sanction for the gravest criminal offence. The court also considered the role of the executive branch in managing life sentences, including the power of the Minister for Justice to release life sentence prisoners, and the relationship between judicial sentencing and executive administration of the sentence. Redmond is an important authority for understanding the constitutional framework for sentencing in Ireland and the special status of the murder offence. It should be read alongside The People (DPP) v Duffy [2023] IESC 1, which revisited these issues in the light of more recent constitutional developments.',
-    subjects: ['criminal'],
-    topics: [
-      'murder',
-      'sentencing',
-      'mandatory sentence',
-      'life imprisonment',
-      'constitutional challenge',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v Stephen Duffy',
-    citation: '[2023] IESC 1',
-    year: 2023,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Supreme Court considered the constitutional issues arising from the mandatory life sentence for murder and the system for reviewing such sentences. The court addressed the interaction between the judicial and executive functions in managing life sentences and the constitutional right of a prisoner to have the lawfulness of their detention reviewed. The court provided important guidance on the sentence review process and the rights of life sentence prisoners.',
-    key_quote:
-      'A person sentenced to life imprisonment for murder retains constitutional rights, including the right to have the circumstances of their detention and any conditions imposed reviewed.',
-    full_summary:
-      "The People (DPP) v Stephen Duffy [2023] IESC 1 is a landmark Supreme Court decision addressing the constitutional framework for mandatory life sentences for murder in Ireland. The Supreme Court revisited and significantly developed the principles established in earlier decisions including The People (DPP) v Redmond. The case concerned a life sentence prisoner who challenged aspects of the sentence review process and the interaction between judicial sentencing and executive administration of life imprisonment. The Supreme Court held that a prisoner serving a mandatory life sentence for murder retains constitutional rights that must be respected in the administration of that sentence, including the right to have the circumstances and conditions of his detention periodically reviewed. The court considered the extent to which judicial oversight is required in the life sentence review process and the extent to which the executive retains discretion in managing life sentence prisoners. The decision is particularly significant in the context of the separation of powers and the constitutional rights of prisoners. Duffy represents an important contemporary development in Irish criminal law and sentencing, confirming that the mandatory life sentence framework, while constitutionally valid, must be administered in a manner consistent with prisoners' rights. Students should read Duffy alongside Redmond and the relevant provisions of the Criminal Justice Acts governing life sentence management.",
-    subjects: ['criminal'],
-    topics: [
-      'murder',
-      'sentencing',
-      'life sentence',
-      'review',
-      'mandatory sentence',
-      'constitutional rights',
+      'offer-and-acceptance',
+      'acceptance',
+      'instantaneous-communication',
+      'telex',
+      'electronic-contracts',
     ],
     is_frequently_tested: true,
-    past_paper_appearances: [],
+    past_paper_appearances: ['Contract Spring 2022 Q2', 'Contract Autumn 2024 Q1'],
   },
   {
-    case_name: 'DK v Crowley',
-    citation: '[2002] 2 IR 744',
-    year: 2002,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
+    case_name: 'Felthouse v Bindley',
+    citation: '(1862) 11 CBNS 869',
+    year: 1862,
+    court: 'Court of Common Pleas',
+    jurisdiction: 'England & Wales',
     legal_principle:
-      "The Supreme Court established the two-part test for prohibiting a trial on grounds of delay: (1) the delay must be established, and (2) the delay must have caused real and serious prejudice to the accused's ability to defend himself. The court distinguished between prosecutorial delay and systemic delay. The accused bears the burden of establishing that the delay has actually prejudiced the defence; mere apprehension of prejudice is insufficient.",
+      'Acceptance must be communicated to the offeror. Silence cannot constitute acceptance, even if the offeror stipulates that silence shall be treated as acceptance. A contract cannot be imposed on a party without their active acceptance.',
     key_quote:
-      "It is not delay alone which grounds an application to prohibit a trial, but delay coupled with real and serious prejudice to the accused's ability to mount a defence.",
+      'The uncle had no right to impose upon his nephew a sale of his horse for £30 15s unless he chose to comply with the condition of writing to say he would not take it.',
     full_summary:
-      'DK v Crowley is the leading Supreme Court authority on the test for prohibiting a criminal trial on grounds of delay. The case arose from historical sexual abuse allegations where significant time had elapsed between the alleged offences and the prosecution. The Supreme Court, in a judgment of central importance to Irish criminal procedure, articulated the two-part test that must be satisfied before a court will prohibit a trial on delay grounds. First, the applicant must establish that unreasonable delay has occurred, whether prosecutorial, systemic, or otherwise attributable to the State. Second, and critically, the applicant must demonstrate that the delay has caused real and serious prejudice to his ability to defend himself at trial. The court drew a sharp distinction between prosecutorial delay — delay attributable to the DPP or Garda — and systemic delay arising from court backlogs or resource constraints. Both can, in principle, found a prohibition application, but prejudice must be specifically demonstrated in either case. The judgment firmly rejected the proposition that delay alone, however lengthy, automatically justifies prohibition. The burden rests on the accused to show that the passage of time has concretely impaired the defence, for example through the death of witnesses, loss of documentary evidence, or fading of memory in a material respect. DK v Crowley remains the foundational authority cited in virtually every subsequent delay/prohibition case in Irish criminal law.',
-    subjects: ['criminal'],
-    topics: ['delay', 'fair trial', 'prohibition of trial', 'prosecutorial delay', 'prejudice'],
+      "An uncle wrote to his nephew offering to buy his horse for £30 15s, adding 'If I hear no more about him, I consider the horse mine at that price.' The nephew intended to accept but failed to write back to his uncle. He told the auctioneer (Bindley) not to sell the horse, but Bindley accidentally included it in an auction. When the uncle sued Bindley, the court had to determine whether a contract existed between the uncle and nephew. The Court of Common Pleas held there was no contract because the nephew had not communicated his acceptance to the uncle. The uncle could not stipulate that silence would constitute acceptance; acceptance requires a positive act of communication. This is the foundational FE-1 authority for the rule that silence cannot constitute acceptance, protecting parties from having contracts imposed on them.",
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'acceptance', 'silence', 'communication-of-acceptance'],
     is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2020 Q2', 'Contract Spring 2022 Q1'],
+  },
+  {
+    case_name: 'Brogden v Metropolitan Railway Co',
+    citation: '(1877) 2 App Cas 666',
+    year: 1877,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Acceptance can be implied from conduct even without express words. Where a party acts in accordance with an unsigned or unacknowledged agreement, a contract may be inferred from that conduct, provided the conduct unequivocally evidences acceptance of the terms.',
+    key_quote:
+      'The act of supplying coal and paying for it under the terms of the unsigned agreement imported an acceptance by conduct of those terms.',
+    full_summary:
+      "Brogden supplied coal to the Metropolitan Railway under an informal arrangement for many years. The railway eventually sent a draft written agreement to Brogden, who filled in certain details (including the name of an arbitrator), signed it, and returned it marked 'approved'. The railway manager put the draft in his desk and never formally executed it. However, both parties continued to deal with each other on the terms of the draft for some time. When a dispute arose, Brogden argued there was no binding contract because the draft had never been formally accepted. The House of Lords held that a binding contract had been formed by the parties' conduct in dealing with each other consistently with the draft's terms. Acceptance can arise from conduct without formal words. This is a key FE-1 authority on acceptance by conduct and on the formation of contracts from correspondence and subsequent dealing.",
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'acceptance-by-conduct', 'formation-of-contract'],
+    is_frequently_tested: false,
     past_paper_appearances: [],
   },
   {
-    case_name: 'B.F. v Director of Public Prosecutions',
-    citation: '[2001] 1 IR 656',
-    year: 2001,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
+    case_name: 'Parkgrange Investments Ltd v Shandon Park Mills Ltd',
+    citation: '[1991] IEHC (unreported, 7 May 1991)',
+    year: 1991,
+    court: 'High Court',
+    jurisdiction: 'Ireland',
     legal_principle:
-      "The Supreme Court considered the approach to delay in historical sexual abuse cases where the complainant delayed reporting due to the dominant effect of the alleged abuser. The court held that where delay in reporting is explained by the accused's dominant position over the complainant, such delay does not of itself ground a prohibition of the trial. The complainant's inhibition caused by the accused's dominance can explain the delay and counterbalance any prejudice to the accused.",
+      "An exchange of letters in a property transaction can constitute a binding contract even if formal contracts have not been exchanged, provided all essential terms have been agreed and the parties have demonstrated an intention to be bound. The 'subject to contract' qualification will prevent a binding contract unless the parties subsequently waive it.",
     key_quote:
-      "Where delay in reporting is caused by the accused's own dominant position over the complainant, the accused cannot rely on that delay as grounds for prohibiting the prosecution.",
+      'Where the essential terms of a property transaction have been agreed in correspondence and the conduct of the parties is consistent only with a concluded bargain, the court will find a binding contract notwithstanding the absence of executed formal contracts.',
     full_summary:
-      "B.F. v Director of Public Prosecutions is a significant Supreme Court authority establishing the so-called dominant position doctrine in delay cases arising from historical sexual abuse. The applicant sought to prohibit his trial for historical sexual offences on the basis that the lengthy lapse of time between the alleged abuse and the complaint had caused him irremediable prejudice. The Supreme Court acknowledged that in sexual abuse cases, particularly those involving familial or authority relationships, it is common for complainants to delay reporting for many years. The court developed the principle that where the delay in reporting can be explained by the dominant position the accused held over the complainant — such as a position of parental authority, guardianship, or institutional control — the accused cannot seek to rely on that self-generated delay as a basis for prohibiting the prosecution. The rationale is that the accused's own conduct created the conditions which suppressed the complaint; it would be unconscionable to allow him to benefit from that suppression. The court further held that the complainant's inhibition, rooted in the accused's dominance, can act as a counterweight to the accused's claims of prejudice arising from the passage of time. B.F. v DPP is thus the origin of a doctrine subsequently refined and qualified in Donoghue v DPP and remains essential reading for the Irish law of delay in sexual offence prosecutions.",
-    subjects: ['criminal'],
-    topics: ['delay', 'sexual offences', 'fair trial', 'historical abuse', 'prohibition of trial'],
+      "Negotiations for the sale of a commercial property in Dublin were conducted by correspondence. Letters were exchanged which agreed on price, parties, and essential terms, but no formal contracts were signed. A dispute arose as to whether a binding contract had been formed. The Irish High Court examined the correspondence and surrounding circumstances to determine whether the parties had reached a concluded agreement. The court applied English and Irish authorities on 'subject to contract' clauses and the point at which negotiations crystallise into binding contracts in property sales. The case is useful Irish authority for FE-1 students on formation of contracts by correspondence and the effect of 'subject to contract' qualifications in the Irish property market context.",
+    subjects: ['contract-law'],
+    topics: [
+      'offer-and-acceptance',
+      'formation-of-contract',
+      'subject-to-contract',
+      'property',
+      'irish-cases',
+    ],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Dooley v Egan',
+    citation: '[1938] Ir Jur Rep 56',
+    year: 1938,
+    court: 'Circuit Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      'An offer made to a specific individual is personal to that person and can only be accepted by them. Purported acceptance by a third party (even an agent) without proper authorisation does not create a binding contract with the original offeror.',
+    key_quote:
+      'The offer was addressed personally to Dooley and could only be accepted by him; acceptance purportedly made on his behalf by Egan without authority was ineffective.',
+    full_summary:
+      "An offer to purchase land was made to a specific named individual (Dooley). A third party (Egan) purported to accept the offer on Dooley's behalf without proper authority. The Circuit Court held there was no binding contract. An offer made to a specific individual is personal to that person and must be accepted by them. Where a third party purports to accept on another's behalf without actual authority, there is no valid acceptance and no contract is formed. The case is a useful Irish authority on the personal nature of offers addressed to specific individuals, and on the limits of agency in accepting offers. It reinforces the principle that acceptance must come from the person to whom the offer was directed.",
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'acceptance', 'agency', 'irish-cases'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Re Whelan',
+    citation: '[1897] 1 IR 575',
+    year: 1897,
+    court: 'Court of Appeal (Ireland)',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      "An offer lapses on the death of the offeror before acceptance, at least where the contract is of a personal nature or where performance would require the continued existence of the offeror. Notice of the offeror's death before acceptance prevents a valid contract from being formed.",
+    key_quote:
+      'An offer to contract lapses upon the death of the offeror where the proposed contract requires the personal performance of or is otherwise dependent upon the survival of the offeror.',
+    full_summary:
+      "The case concerned whether an offer remained open for acceptance after the death of the offeror, where the offeree had notice of the death. The Irish Court of Appeal held that an offer lapses upon the death of the offeror, particularly where the contract is of a personal nature. Where the offeree has notice of the offeror's death, they cannot accept the offer. The case deals with the lapse of an offer by death of the offeror, which is one of the recognised grounds on which an offer terminates automatically without any act of the parties. It is a useful Irish authority confirming this general principle, relevant to FE-1 questions on termination of offers.",
+    subjects: ['contract-law'],
+    topics: ['offer-and-acceptance', 'lapse-of-offer', 'death-of-offeror', 'irish-cases'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Scammell and Nephew Ltd v Ouston',
+    citation: '[1941] AC 251',
+    year: 1941,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "A contract is void for uncertainty if its terms are so vague that the courts cannot ascertain what the parties intended with reasonable certainty. An agreement to acquire goods 'on hire-purchase terms' without further specification is too uncertain to be enforced because 'hire-purchase terms' admits of many varieties.",
+    key_quote:
+      'There are many forms of hire-purchase agreements and the statement that the balance is to be paid on hire-purchase terms is much too vague to constitute a binding contract.',
+    full_summary:
+      "Ouston agreed to purchase a van from Scammell, with the balance of the price to be paid 'on hire-purchase terms over two years'. A dispute arose and Ouston sued for breach of contract. The House of Lords held that no binding contract existed because the phrase 'hire-purchase terms' was too vague and uncertain. 'Hire-purchase' admits of a variety of different terms as to interest, payment schedules, and default provisions, and the parties had agreed on none of these. The court cannot fill in the gaps when the parties themselves have not reached agreement on essential terms. The case is a leading FE-1 authority on certainty of terms and the principle that the courts will not make a contract for the parties by guessing at what they might have meant.",
+    subjects: ['contract-law'],
+    topics: ['certainty-of-terms', 'formation-of-contract', 'void-contracts'],
     is_frequently_tested: true,
-    past_paper_appearances: [],
+    past_paper_appearances: ['Contract Autumn 2021 Q3', 'Contract Spring 2024 Q2'],
   },
   {
-    case_name: 'Donoghue v Director of Public Prosecutions',
-    citation: '[2014] 2 IR 762',
-    year: 2014,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
+    case_name: 'Hillas & Co Ltd v Arcos Ltd',
+    citation: '(1932) 147 LT 503',
+    year: 1932,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
     legal_principle:
-      "The Supreme Court revisited the law on prosecution delay and held that the dominant position approach in sexual offence cases applies only where the complainant's delay was caused by the accused. Prosecutorial delay (as opposed to the complainant's delay in reporting) must be assessed separately. Where systemic or prosecutorial delay has caused prejudice to the accused's right to a fair trial, prohibition may be granted even in sexual offence cases.",
+      "Courts will strive to give effect to commercial agreements where the parties clearly intend to be bound, and may resolve apparent uncertainty by reference to the parties' previous dealings, trade custom, or by implying a term of reasonableness. Uncertainty is to be distinguished from mere difficulty of construction.",
     key_quote:
-      "The dominant position doctrine does not apply to prosecutorial delay; where the State has delayed unreasonably after receiving a complaint, the accused's fair trial rights must be assessed on that basis.",
+      'It is a perfectly good contract, and the courts ought to do their best to give effect to it, having regard to the fact that the parties have made a commercial bargain.',
     full_summary:
-      "Donoghue v Director of Public Prosecutions is a critically important Supreme Court decision that refined and limited the dominant position doctrine originating in B.F. v DPP. The case concerned a prosecution for historical sexual offences in which there had been delay both in the complainant's reporting of the abuse and in the subsequent conduct of the prosecution by the State. The Supreme Court drew a fundamental distinction between two temporally distinct phases of delay: first, the period during which the complainant refrained from reporting the offence, and second, the period following the making of the complaint during which prosecutorial or systemic delay occurred. The dominant position doctrine, the court held, is relevant only to the first phase — delay in reporting attributable to the accused's influence over the complainant. It has no application whatsoever to prosecutorial delay occurring after the complaint has been made. In the second phase, the ordinary DK v Crowley framework applies without qualification: the accused must demonstrate both the unreasonableness of the State's delay and specific prejudice arising from it. The court emphasised that even in sexual offence cases, the State cannot shelter behind the dominant position doctrine to excuse its own dilatory conduct after receiving a complaint. Donoghue v DPP has substantially reshaped the landscape of delay litigation in Ireland and is now routinely cited alongside DK v Crowley as one of the two central authorities.",
-    subjects: ['criminal'],
-    topics: [
-      'delay',
-      'prohibition of trial',
-      'prosecution delay',
-      'fair trial',
-      'constitutional rights',
-    ],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'A.B. v Director of Public Prosecutions',
-    citation: '(Unreported, Court of Appeal, 21 January 2020)',
-    year: 2020,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Court of Appeal considered an application to prohibit a prosecution for historical sexual offences on grounds of delay, where a material witness had died during the period of delay. The court held that the loss of evidence through the death of a witness can constitute real and specific prejudice capable of grounding a prohibition. The court applied the DK v Crowley framework and examined whether the accused could establish that the witness's evidence would have been material to the defence.",
-    key_quote:
-      'The death of a potentially material witness during a period of delay may constitute specific prejudice capable of warranting prohibition of the trial.',
-    full_summary:
-      "A.B. v Director of Public Prosecutions is a Court of Appeal decision addressing the type of prejudice capable of grounding a prohibition order in the context of historical sexual offence prosecutions. The applicant sought to prohibit his trial on the grounds that a witness who would have been material to his defence had died during the period of delay attributable to the State. The Court of Appeal affirmed that the death of a witness during a period of unreasonable delay is a paradigmatic example of specific prejudice within the DK v Crowley framework. However, the court emphasised that the mere fact of a witness's death is not automatically sufficient; the applicant must go further and establish that the deceased witness's evidence would, in some identifiable and material respect, have assisted the defence. This requires some indication of what the witness would have said or the nature of the testimony that has been lost. The court declined to accept that speculative assertions about what a deceased witness might have confirmed are sufficient to meet the specific prejudice threshold. The judgment therefore balances the seriousness of the loss of witness evidence against the need for precision in establishing how that loss concretely undermines the defence case. The case illustrates the courts' insistence on particularised prejudice even in the most compelling factual scenarios and is frequently cited in cases where delay has resulted in the unavailability of witnesses.",
-    subjects: ['criminal'],
-    topics: ['delay', 'prohibition', 'historical sexual offences', 'prejudice', 'deceased witness'],
+      "Hillas contracted to buy timber from Arcos 'of fair specification'. A clause gave Hillas an option to purchase timber in the following year. Arcos argued the option clause was too uncertain to be enforceable because it did not specify the type, quantity, or quality of timber. The House of Lords upheld the option clause as enforceable. The court could resolve the uncertainty by reference to the parties' previous dealings, trade custom in the timber industry, and by implying a term that the specification would be fair and usual. The law leans in favour of giving effect to commercial agreements — courts should not be too ready to find that a contract is void for uncertainty where the parties clearly intended to be bound. The case is contrasted with Scammell v Ouston and is key FE-1 authority on the court's attitude to apparent commercial uncertainty.",
+    subjects: ['contract-law'],
+    topics: ['certainty-of-terms', 'formation-of-contract', 'implied-terms', 'trade-custom'],
     is_frequently_tested: false,
     past_paper_appearances: [],
   },
   {
-    case_name: 'Director of Public Prosecutions v JH',
-    citation: '[2017] IECA 206',
-    year: 2017,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
+    case_name: 'Nicolene Ltd v Simmonds',
+    citation: '[1953] 1 QB 543',
+    year: 1953,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
     legal_principle:
-      "The Court of Appeal balanced the accused's right to a fair trial against the public interest in prosecuting serious sexual offences in a case where significant delay had occurred. The court confirmed that even where delay is established, the court retains a residual discretion to allow the prosecution to proceed where the public interest strongly favours trial and prejudice to the accused can be reduced by appropriate judicial directions. The severity of the alleged offences was a relevant consideration.",
+      'A meaningless or surplus phrase in a contract may be severed (struck out) if it does not go to the root of the agreement and the remainder of the contract is otherwise certain and enforceable. The severance of a meaningless clause does not render the entire contract void.',
     key_quote:
-      'Even where delay and prejudice are established, the court may decline to prohibit a trial where the public interest in prosecution outweighs the residual prejudice to the accused.',
+      "The phrase 'the usual conditions of acceptance' was a meaningless addition which could be struck out, leaving a good and binding contract.",
     full_summary:
-      "Director of Public Prosecutions v JH is a Court of Appeal authority examining the balancing exercise a court must undertake when delay and some prejudice have been established but prohibition is not automatic. The case involved serious sexual offence charges where the accused sought prohibition on the basis of prosecutorial delay and argued that the trial could not be fair in the circumstances. The Court of Appeal, while accepting that delay had occurred, considered whether prohibition was the necessary and proportionate remedy in all the circumstances. The court affirmed that the grant of a prohibition order, even where the threshold conditions of delay and prejudice are met, involves a balancing exercise. On one side of the balance is the accused's constitutional right to a fair trial; on the other is the public interest in ensuring that serious criminal offences, particularly those involving vulnerable complainants, are brought to trial. The court held that the trial judge retains a residual discretion to decline prohibition where judicial directions and appropriate trial management can adequately address and reduce the prejudice flowing from the delay to a level consistent with a fair trial. The severity of the alleged offences, the nature of the complainant's interest in having the matter determined, and the extent to which the identified prejudice can be mitigated are all relevant factors. This decision acknowledges that prohibition is not the only or automatic remedy for delay-related prejudice and places the balancing of competing constitutional rights at the centre of the analysis.",
-    subjects: ['criminal'],
-    topics: ['delay', 'prohibition', 'sexual offences', 'balance of interests', 'public interest'],
+      "Simmonds agreed to sell steel bars to Nicolene, with the order letter including the phrase 'subject to the usual conditions of acceptance'. There were no established 'usual conditions' between these parties. Simmonds argued the contract was void for uncertainty. The Court of Appeal held that the phrase was meaningless and could simply be struck out (severed), leaving a valid and certain contract for the sale of steel bars. The case established the principle of severance of meaningless clauses: where a clause is mere surplusage or is meaningless and does not go to the essence of the agreement, it can be ignored and the rest of the contract remains binding. It is contrasted with Scammell v Ouston where the uncertainty went to the core of the agreement.",
+    subjects: ['contract-law'],
+    topics: ['certainty-of-terms', 'severance', 'formation-of-contract'],
     is_frequently_tested: false,
     past_paper_appearances: [],
   },
   {
-    case_name: "O'R v Director of Public Prosecutions",
-    citation: '[2004] IESC 52',
-    year: 2004,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
+    case_name: 'Foley v Classique Coaches Ltd',
+    citation: '[1934] 2 KB 1',
+    year: 1934,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
     legal_principle:
-      "The Supreme Court considered an application to prohibit a sexual offence prosecution on grounds of delay and held that the applicant must show something more than apprehension of unfairness; actual or specific prejudice must be established. The dominant position doctrine was considered and the court confirmed that the balance of constitutional rights requires careful analysis of both the accused's fair trial rights and the victim's access to justice.",
+      "Where parties have agreed on all essential terms and acted on their agreement for some time, the courts will be reluctant to hold the contract void for uncertainty of a subsidiary term. An agreement to supply petrol 'at a price to be agreed' may be enforceable where a prior course of dealing fills in the price gap, and a term of reasonable price may be implied.",
     key_quote:
-      'An applicant for prohibition of a criminal trial must demonstrate real and specific prejudice; a general apprehension of unfairness is insufficient.',
+      'The [petrol supply] agreement was intended to create, and did create, a binding obligation on the defendants; the price to be agreed term is workable by the court in default of agreement.',
     full_summary:
-      "O'R v Director of Public Prosecutions is a Supreme Court decision reinforcing the stringent prejudice requirement that an applicant must satisfy in order to obtain a prohibition order on grounds of delay. The applicant, charged with historical sexual offences, sought to prohibit his trial by reference to the lapse of time between the alleged events and the prosecution. The Supreme Court confirmed, applying and extending DK v Crowley, that the mere passage of time and a general sense that a fair trial may be more difficult to achieve does not suffice. The applicant must identify and establish specific, concrete prejudice — the kind that can be articulated with reference to particular lost evidence, particular deceased witnesses, or particular identified failures of recollection that materially affect the ability to mount a defence. A vague apprehension that the trial will be unfair because of the passage of time is not enough to cross the threshold. The court also examined the dominant position doctrine in the context of the specific relationship between the accused and the complainant and confirmed that where the doctrine applies, it weighs against granting prohibition even where some general prejudice from delay can be discerned. The judgment is notable for its articulation of the tension between the accused's fair trial rights under Article 38 of the Constitution and the complainant's own constitutional rights, including the right to have a criminal complaint prosecuted. It remains an important point of reference in the delay jurisprudence for its clarity on the specificity of prejudice required.",
-    subjects: ['criminal'],
-    topics: [
-      'delay',
-      'prohibition',
-      'sexual offences',
-      'apprehension of unfair trial',
-      'specific prejudice',
-    ],
+      "As part of a land sale, Foley included a clause requiring Classique Coaches to purchase all their petrol from Foley 'at a price to be agreed by the parties from time to time'. Classique Coaches later sought to repudiate this agreement as too uncertain. The Court of Appeal held the agreement was binding. The parties had acted on it for three years and the arrangement was clearly intended to be binding. In the absence of agreement on price, a court could imply an obligation to supply at a reasonable price. The case is distinguished from Scammell because the parties had a working relationship and the prior course of dealing provided content for the price obligation. It is key FE-1 authority on how courts can save agreements of uncertain price where the parties have performed.",
+    subjects: ['contract-law'],
+    topics: ['certainty-of-terms', 'implied-terms', 'formation-of-contract', 'price'],
     is_frequently_tested: false,
     past_paper_appearances: [],
   },
   {
-    case_name: 'Daly v Director of Public Prosecutions',
-    citation: '[2015] IEHC 405',
-    year: 2015,
-    court: 'High Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The High Court applied the delay and prohibition principles to a non-sexual offence prosecution where significant prosecutorial delay had occurred. The court held that unreasonable prosecutorial delay, where it causes demonstrable prejudice to the accused's ability to mount a defence, can ground a prohibition order even outside the sexual offence context. The prejudice must be real and specific, not speculative.",
-    key_quote:
-      "Unreasonable prosecutorial delay that causes real and specific prejudice to the accused's right to a fair trial may ground a prohibition order regardless of the nature of the alleged offence.",
-    full_summary:
-      "Daly v Director of Public Prosecutions is a High Court decision of significance because it confirms that the delay and prohibition principles developed primarily in the sexual offence context apply with equal force to prosecutions for other serious criminal offences. The case involved a non-sexual offence prosecution in which the applicant complained of substantial prosecutorial delay — delay attributable to the DPP and investigating Garda — rather than to any inhibition on the complainant's part. The High Court, applying DK v Crowley and Donoghue v DPP, held that unreasonable prosecutorial delay is capable of grounding a prohibition order in any criminal case, provided the applicant can establish that the delay has caused real and specific prejudice to the defence. The court rejected any suggestion that the more permissive approach applicable in sexual offence cases (where dominant position reasoning is available) alters the fundamental requirement of specific prejudice. In a non-sexual offence case, and indeed in any case where prosecutorial delay is at issue, the applicant must identify the precise ways in which the delay has impaired the defence case. Speculative or generalised assertions about the difficulties of a stale prosecution are insufficient. The judgment also addressed the obligation of the prosecution to move proceedings with reasonable expedition and confirmed that the State's failure to do so without good reason weighs in favour of the accused in the balancing exercise. Daly v DPP thus underlines the universality of the delay/prohibition framework across the spectrum of criminal prosecutions.",
-    subjects: ['criminal'],
-    topics: ['delay', 'prohibition', 'prosecutorial delay', 'prejudice', 'constitutional rights'],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Furlong v Director of Public Prosecutions',
-    citation: '[2022] IECA 85',
-    year: 2022,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Court of Appeal examined an application to prohibit a prosecution on delay grounds in historical offence proceedings. The court applied DK v Crowley and Donoghue v DPP in finding that delay alone, without demonstrated prejudice, is insufficient. The court also considered whether the accused's age and health at the time of the application could constitute a form of prejudice capable of grounding prohibition.",
-    key_quote:
-      'Age and infirmity of the accused at the time of trial may, in exceptional circumstances, constitute a form of prejudice arising from delay capable of grounding prohibition.',
-    full_summary:
-      "Furlong v Director of Public Prosecutions is a 2022 Court of Appeal decision that adds an important dimension to the Irish law on delay and prohibition by considering whether the accused's deteriorating health and advanced age, consequent upon delay, can themselves constitute the requisite prejudice. The applicant sought prohibition of historical criminal proceedings on the basis that the delay had been so lengthy that his health had significantly declined, rendering him less able to participate effectively in his own trial and mounting a meaningful defence. The Court of Appeal applied the foundational authorities of DK v Crowley and Donoghue v DPP and confirmed that delay alone, however extreme, is not sufficient to ground a prohibition order; specific prejudice must be identified and established. The court proceeded to consider whether the deterioration in the applicant's physical and mental health, directly attributable to the effluxion of time during the period of unreasonable delay, could constitute cognisable prejudice for these purposes. The court held that in exceptional circumstances, age and infirmity resulting from delay may indeed constitute a form of prejudice capable of warranting prohibition, particularly where the accused's diminished capacity to instruct legal representatives or recall events is material to the conduct of the defence. The court was careful, however, to confine this to genuinely exceptional cases where the nexus between the delay and the accused's incapacity is clearly established. The decision represents a relatively novel extension of the prejudice concept and is likely to be invoked in future cases involving elderly accused persons.",
-    subjects: ['criminal'],
-    topics: ['delay', 'prohibition', 'fair trial', 'specific prejudice', 'historical offences'],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Brophy v Director of Public Prosecutions',
-    citation: '[2024] IEHC 392',
-    year: 2024,
-    court: 'High Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The High Court in this recent 2024 decision applied the established prohibition on the basis of delay framework to a contemporaneous prosecution. The court applied DK v Crowley and Donoghue v DPP and confirmed that prosecutorial delay combined with specific prejudice remains the required threshold for prohibition. The case illustrates the continued application of the established principles to modern prosecutions.',
-    key_quote:
-      'The principles governing prohibition of a trial on grounds of delay are well established; the applicant must demonstrate both unreasonable delay and real specific prejudice.',
-    full_summary:
-      "Brophy v Director of Public Prosecutions is a 2024 High Court decision that demonstrates the continued vitality and consistent application of the delay and prohibition framework in contemporary Irish criminal law. The case came before the High Court by way of a judicial review application seeking to prohibit criminal proceedings on the grounds that unreasonable prosecutorial delay had occurred and that this delay had caused the applicant real and specific prejudice. The court, following the established trajectory of DK v Crowley and Donoghue v DPP without departure, confirmed that the dual requirement — unreasonable delay and specific prejudice — remains the cornerstone of every prohibition application, regardless of the recency of the underlying prosecution. The applicant was required to identify with precision the ways in which the delay had impaired the defence; generalised references to faded memory or the passage of time were treated as insufficient. The court examined the prosecution's explanation for the delay and assessed whether the period of inactivity was excusable by reference to investigative complexity, resource constraints, or other legitimate considerations. Finding that the delay was not adequately explained and that the applicant had identified specific evidential disadvantages, the court considered whether prohibition was the appropriate remedy. Brophy v DPP serves as a useful modern illustration of how the principles articulated in the early 2000s continue to be applied in everyday judicial review litigation, and it confirms that the courts have not relaxed the threshold for prohibition despite academic commentary suggesting the threshold may be too demanding.",
-    subjects: ['criminal'],
-    topics: ['delay', 'prohibition', 'recent case', '2024', 'fair trial'],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'MS v Director of Public Prosecutions',
-    citation: '[2015] IEHC 84; [2015] IECA 309; [2020] IEHC 659; [2021] IECA 193',
-    year: 2021,
-    court: 'High Court and Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'This long-running litigation (spanning High Court and Court of Appeal decisions from 2015 to 2021) concerned repeated applications to prohibit a prosecution for historical sexual offences on grounds of delay. The courts consistently applied the DK v Crowley/Donoghue framework, emphasising that the accused must establish specific prejudice arising from the delay. The case illustrates the persistence of the litigation in delay/prohibition jurisprudence and the strict application of the specific prejudice requirement across multiple hearings.',
-    key_quote:
-      'Repeated applications to prohibit a prosecution cannot succeed without fresh evidence of specific prejudice arising from the delay; general delay alone does not establish grounds for prohibition.',
-    full_summary:
-      'MS v Director of Public Prosecutions is an unusually protracted piece of litigation arising from a prosecution for historical sexual offences, generating a series of High Court and Court of Appeal decisions spanning the years 2015 to 2021. The case is notable not only for the legal principles it articulates but also for what it reveals about the dynamics of delay and prohibition litigation in practice. The applicant made multiple applications to prohibit the prosecution at different stages of the proceedings, each time seeking to rely on the passage of time and evolving claims of prejudice. The courts, across all hearings, consistently applied the DK v Crowley and Donoghue v DPP framework and refused to lower the threshold for prohibition. A central principle to emerge from the repeated hearings is that an applicant cannot return to court on a second or subsequent prohibition application without presenting fresh evidence of specific prejudice that was not before the court on any earlier application; re-litigating the same ground of delay without new material is impermissible. The dominant position doctrine was also considered at various stages, with the courts examining the nature of the relationship between the accused and the complainant and its role in explaining the delay in reporting. The litigation as a whole offers a comprehensive illustration of how the courts manage repeated prohibition applications, the res judicata and issue estoppel principles that arise in that context, and the enduring strictness of the specific prejudice requirement even across extended litigation timelines. MS v DPP is a valuable teaching resource on the procedural as well as substantive dimensions of the delay jurisprudence.',
-    subjects: ['criminal'],
-    topics: ['delay', 'prohibition', 'sexual offences', 'multiple hearings', 'specific prejudice'],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Kavanagh v Ireland',
-    citation: '[1996] 1 IR 321',
-    year: 1996,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Supreme Court rejected a constitutional challenge to the Special Criminal Court established under the Offences Against the State Act 1939. The court held that Article 38.3 of the Constitution expressly permits the establishment of special courts where the ordinary courts are inadequate to secure the effective administration of justice and the preservation of public peace and order. The DPP's decision to direct trial before the Special Criminal Court is not subject to judicial review unless made in bad faith or for improper motive.",
-    key_quote:
-      "The Special Criminal Court is a constitutionally authorised tribunal; the DPP's direction to it is an exercise of a constitutional discretion not normally amenable to judicial review.",
-    full_summary:
-      "Kavanagh v Ireland is the foundational Supreme Court authority on the constitutional validity of the Special Criminal Court and the scope of judicial review of the DPP's direction to send an accused for trial before that court. The applicant challenged the decision to direct his trial before the Special Criminal Court on the grounds that it infringed his constitutional right to trial by jury under Article 38.5 of the Constitution. The Supreme Court dismissed the challenge, grounding its reasoning in Article 38.3, which expressly authorises the Oireachtas to provide for the establishment of special courts where it is satisfied that the ordinary courts are inadequate to secure the effective administration of justice and the preservation of public peace and order. The court held that the Offences Against the State Act 1939 is a valid exercise of this constitutional power, and that the Special Criminal Court constituted thereunder operates as a fully constitutional tribunal. Of particular practical importance is the court's treatment of the reviewability of the DPP's direction. The court held that the decision to direct trial before the Special Criminal Court is an exercise of a prosecutorial discretion conferred by the Constitution itself. It is not amenable to judicial review on the ordinary grounds; the applicant can only succeed in impugning the direction by establishing that it was made in bad faith, for an improper or collateral purpose, or in a manner inconsistent with constitutional justice. This high threshold has consistently been applied in subsequent challenges to Special Criminal Court directions. Kavanagh v Ireland remains the anchor authority for all subsequent litigation concerning the Special Criminal Court.",
-    subjects: ['criminal'],
-    topics: [
-      'Special Criminal Court',
-      'non-jury trial',
-      'constitution',
-      'Article 38',
-      'Offences Against the State Act',
-    ],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Lynch v Minister for Justice, Equality and Law Reform',
-    citation: '[2010] IESC 34',
-    year: 2010,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Supreme Court rejected a challenge to trial before the Special Criminal Court on the basis that the accused's Article 6 ECHR right to a fair trial was not engaged in the same way as in domestic constitutional law. The court confirmed that trial before the Special Criminal Court does not per se infringe the accused's right to a fair trial. The absence of a jury is constitutionally sanctioned; what is required is an independent and impartial tribunal deciding both fact and law.",
-    key_quote:
-      'Trial before the Special Criminal Court does not infringe the right to a fair trial; what is required is an independent and impartial tribunal, not necessarily a jury.',
-    full_summary:
-      'Lynch v Minister for Justice, Equality and Law Reform is a Supreme Court decision addressing the compatibility of trial before the Special Criminal Court with the right to a fair trial as guaranteed both under the Irish Constitution and under Article 6 of the European Convention on Human Rights. The applicant, who had been directed for trial before the Special Criminal Court, contended that the absence of a jury in proceedings before that court infringed his right to a fair trial and his Article 6 ECHR entitlement. The Supreme Court dismissed both grounds of challenge. On the domestic constitutional ground, the court reaffirmed the principle established in Kavanagh v Ireland that the Special Criminal Court is an expressly authorised constitutional institution and that the absence of jury trial in its proceedings is constitutionally sanctioned by Article 38.3. On the ECHR ground, the court confirmed that Article 6 does not guarantee trial by jury; what it requires is an independent and impartial tribunal capable of determining the facts and applying the law. The Special Criminal Court, composed of serving judges of the superior or circuit courts, plainly satisfies this requirement. The court also addressed the procedural safeguards available to an accused before the Special Criminal Court — including the right to legal representation, the right to cross-examine witnesses, and the right to call evidence — and confirmed that these safeguards collectively ensure that proceedings are fair within the meaning of both the Constitution and the ECHR. Lynch v Minister for Justice remains the primary authority for the proposition that the Special Criminal Court is ECHR-compliant.',
-    subjects: ['criminal'],
-    topics: [
-      'Special Criminal Court',
-      'non-jury trial',
-      'fair trial',
-      'constitutional rights',
-      'ECHR',
-    ],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Carmody v Minister for Justice, Equality and Law Reform',
-    citation: '[2009] IESC 71',
-    year: 2009,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Supreme Court held that the failure to provide legal aid for representation in District Court criminal proceedings where the accused faced imprisonment could, in the circumstances, constitute a breach of the constitutional right to a fair trial. The court confirmed that the right to legal representation in criminal proceedings is a constitutional right, and its denial when liberty is at stake is constitutionally impermissible. The judgment led to legislative reform of legal aid provision.',
-    key_quote:
-      'An accused person facing imprisonment has a constitutional right to legal representation; the absence of legal aid in such circumstances may render a trial unfair.',
-    full_summary:
-      'Carmody v Minister for Justice, Equality and Law Reform is a landmark Supreme Court decision that confirmed and elaborated the constitutional right to legal representation in criminal proceedings, with profound consequences for the legal aid system in Ireland. The applicant faced criminal charges before the District Court that, if resulting in conviction, carried the potential for a custodial sentence. He was unable to afford legal representation and applied for criminal legal aid, which was not available in the circumstances under the then prevailing statutory scheme. The Supreme Court held that where an accused person faces a real risk of imprisonment upon conviction, the denial of legal representation — whether through the absence of a legal aid scheme or through the unavailability of legal aid under an existing scheme — can render the proceedings constitutionally infirm. The right to a fair trial under Article 38 of the Constitution encompasses, in appropriate circumstances, the right to be legally represented, particularly where the case involves complexity, where the accused is vulnerable, or where the stakes in terms of liberty are high. The court did not go so far as to hold that legal representation is constitutionally mandated in every criminal case regardless of the circumstances, but it established that the denial of legal aid where imprisonment is a realistic prospect is constitutionally impermissible. The judgment prompted the government to introduce legislative measures extending criminal legal aid to District Court proceedings where imprisonment was at stake. Carmody v Minister for Justice remains a foundational authority on the relationship between legal aid, fair trial rights, and constitutional justice in Irish criminal procedure.',
-    subjects: ['criminal'],
-    topics: [
-      'legal aid',
-      'fair trial',
-      'District Court',
-      'constitutional rights',
-      'legal representation',
-    ],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People at the Suit of the DPP v Dowdall',
-    citation: '[2023] IECA 182',
-    year: 2023,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Court of Appeal considered the sentence imposed on Jonathan Dowdall, a former Sinn Féin councillor, who pleaded guilty in the Special Criminal Court to facilitating the murder of David Byrne at the Regency Hotel in 2016. The court addressed sentencing principles for facilitation of murder, the weight to be given to a guilty plea, and cooperation with the prosecution. The case is significant as part of the broader Kinahan/Hutch feud litigation before the Special Criminal Court.',
-    key_quote:
-      'Facilitation of murder is an extremely serious offence; a guilty plea and cooperation with the prosecution are significant mitigating factors but cannot reduce the sentence below a substantial period.',
-    full_summary:
-      "The People at the Suit of the DPP v Dowdall is a 2023 Court of Appeal sentencing decision arising from one of the most high-profile criminal prosecutions in recent Irish legal history. Jonathan Dowdall, a former Sinn Féin councillor, pleaded guilty before the Special Criminal Court to facilitating the murder of David Byrne at the Regency Hotel in Dublin in February 2016, an event that became one of the most publicly visible incidents in the Kinahan-Hutch organised crime feud. The Special Criminal Court imposed a sentence of four years' imprisonment, and Dowdall appealed against that sentence as being unduly severe while the DPP cross-appealed on the basis of undue leniency. The Court of Appeal considered the appropriate sentencing framework for the offence of facilitation of murder, noting its seriousness as an offence that, while not involving the physical commission of the killing, directly enables and furthers a deliberate taking of life. The court addressed the weight to be attached to mitigating factors, including Dowdall's early guilty plea, his cooperation with the prosecution as a witness in the subsequent Gerry Hutch murder trial, and the personal and professional consequences he had already suffered. The judgment provides an authoritative account of how courts approach sentencing for serious organised crime facilitation offences and how cooperation and disclosure are weighted in the sentencing calculus. It is also significant as one of the first decisions to emerge from the substantial body of Special Criminal Court litigation arising from the Kinahan-Hutch feud.",
-    subjects: ['criminal'],
-    topics: [
-      'Special Criminal Court',
-      'guilty plea',
-      'Regency Hotel',
-      'organised crime',
-      'sentencing',
-    ],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Noah Musueni David Amah v Ireland and the Attorney General',
-    citation: '[2024] IEHC 523',
-    year: 2024,
-    court: 'High Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The High Court rejected a constitutional challenge to the DPP's direction to send the accused for trial before the Special Criminal Court. The court applied Kavanagh v Ireland and confirmed that the DPP's decision to direct trial before the Special Criminal Court is an exercise of a constitutional discretion. A direction will only be set aside where it is shown to have been made in bad faith, for an improper motive, or in a manner inconsistent with constitutional justice. The applicant failed to establish any such ground.",
-    key_quote:
-      "The DPP's direction to the Special Criminal Court will only be set aside where it is established that the decision was made in bad faith or for an improper motive.",
-    full_summary:
-      "Noah Musueni David Amah v Ireland and the Attorney General is a 2024 High Court decision confirming the continued application and robustness of the Kavanagh v Ireland principles governing constitutional challenges to directions by the DPP to send an accused for trial before the Special Criminal Court. The applicant challenged the DPP's decision to direct his trial before the Special Criminal Court, arguing that the direction was constitutionally invalid and that there was no proper basis for denying him the protection of trial by jury guaranteed by Article 38.5 of the Constitution. The High Court, applying Kavanagh v Ireland and the established line of subsequent authorities, confirmed that the DPP's decision to direct trial before the Special Criminal Court is an exercise of a discretion that is itself constitutionally grounded in Article 38.3. The court reiterated the established principle that this discretion is not subject to judicial review on ordinary administrative law grounds; it can be impugned only where the applicant discharges the high burden of showing that the decision was made in bad faith, for an improper or collateral motive, or in a procedurally unfair manner inconsistent with constitutional justice. The applicant's challenge did not meet this threshold. The court declined to depart from the established jurisprudence or to introduce a requirement that the DPP give reasons for its direction in each individual case. The decision reinforces the near-unreviewable character of DPP directions to the Special Criminal Court and the very limited scope for constitutional challenge to such directions under the current framework.",
-    subjects: ['criminal'],
-    topics: [
-      'Special Criminal Court',
-      'constitutional challenge',
-      'DPP direction',
-      'Article 38',
-      'non-jury trial',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'DPP v Aylmer',
-    citation: '[2020] IECA 106',
-    year: 2020,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Court of Appeal considered the proper direction to the jury on similar fact evidence and the admission of evidence of the accused's bad character in a criminal trial. The court held that such evidence is admissible only where its probative value substantially outweighs its prejudicial effect. The judge must give a careful direction to the jury as to the limited use that can be made of such evidence and the dangers of reasoning from bad character to guilt.",
-    key_quote:
-      'Similar fact evidence and evidence of bad character are admissible only where their probative value substantially outweighs their prejudicial effect; the jury must be carefully directed on its limited use.',
-    full_summary:
-      "DPP v Aylmer is a Court of Appeal decision examining the admissibility of similar fact evidence and evidence of the accused's bad character in jury trials, and the directions that must be given to the jury where such evidence is admitted. The accused was charged with serious criminal offences and, in the course of the trial, the prosecution sought to adduce evidence of the accused's prior misconduct and bad character on the basis that it was relevant to an issue in the proceedings. The Court of Appeal confirmed the governing principle that similar fact evidence and bad character evidence occupy an exceptional position in Irish criminal law: they are admissible only where their probative value substantially outweighs their prejudicial effect. The strong default presumption is against admissibility, and the prosecution must satisfy the court on this weighing exercise before such evidence is placed before the jury. The court went further to address the judicial direction that must accompany the admission of such evidence. A bare admission without adequate direction is insufficient; the judge must carefully explain to the jury the limited purpose for which the evidence has been admitted, the specific issue it is relevant to, and the danger of impermissible reasoning from bad character or prior misconduct to a general propensity to commit the offence charged. The judgment provides clear guidance on the content and adequacy of such directions and confirms that failure to give an adequate direction where bad character evidence has been admitted is a ground of appeal against conviction. DPP v Aylmer is an important authority for the evidential rules applicable in jury trials.",
-    subjects: ['criminal'],
-    topics: [
-      'jury directions',
-      'similar fact evidence',
-      'character evidence',
-      'criminal trial',
-      'prejudice',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Doe and Others v Director of Public Prosecutions',
-    citation: '[2024] IEHC 112',
-    year: 2024,
-    court: 'High Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The High Court considered a challenge to the DPP's decision to prosecute the applicants and to refer their trials to a non-jury tribunal. The court applied the established principles from Kavanagh v Ireland and held that the DPP's discretion to prosecute and to direct a non-jury trial is a constitutional discretion amenable to review only in the narrowest circumstances. The court confirmed that fair procedures require that an accused be given reasons for the direction only where a compelling and identifiable interest of justice so demands.",
-    key_quote:
-      "The DPP's decision to prosecute and to direct a non-jury trial is a constitutional discretion; absent bad faith or improper motive, the courts will not interfere with its exercise.",
-    full_summary:
-      "Doe and Others v Director of Public Prosecutions is a 2024 High Court decision addressing a constitutional challenge brought by multiple applicants to the DPP's decisions both to prosecute them and to refer their cases for trial before a non-jury tribunal. The case raised questions about whether the DPP was obliged to give reasons for the direction to a non-jury trial and whether, in the absence of such reasons, the applicants' fair procedure rights under Article 40.3 of the Constitution and Article 6 of the ECHR were infringed. The High Court, applying Kavanagh v Ireland and the subsequent line of authorities, firmly rejected the challenge. The court reiterated the foundational principle that the DPP's prosecutorial discretion — including the decision as to the mode of trial — is a constitutional discretion rooted in Article 38.3 and the Prosecution of Offences Act 1974. As such, it is not an administrative decision reviewable on ordinary judicial review grounds, and the DPP is not in general required to give reasons for individual prosecution decisions. The court further held that the fair procedures guarantee does not, in this context, require the DPP to explain its direction, provided there is no evidence of bad faith, collateral purpose, or constitutional impropriety. The applicants' challenge failed on all grounds. The decision reinforces the strong institutional protection afforded to the DPP's discretion in Irish law and confirms that the threshold for successfully challenging a direction to a non-jury court remains exceedingly high. It is a useful companion authority to Noah Musueni David Amah v Ireland for practitioners advising in Special Criminal Court matters.",
-    subjects: ['criminal'],
-    topics: [
-      'DPP',
-      'constitutional challenge',
-      'prosecution decision',
-      'Article 38',
-      'fair procedures',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v Patrick Quirke',
-    citation: '[2023] IECA 258',
-    year: 2023,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Court of Appeal dismissed Patrick Quirke's appeal against his conviction for the murder of Bobby Ryan. The court addressed the use of circumstantial evidence in a murder prosecution, confirming that a conviction can be sustained on circumstantial evidence where the proven facts are consistent only with the guilt of the accused and inconsistent with any other rational hypothesis. The evidential treatment of digital and forensic evidence was also considered.",
-    key_quote:
-      "A conviction on circumstantial evidence is valid where the proved facts are consistent only with the accused's guilt and are incapable of explanation upon any other reasonable hypothesis.",
-    full_summary:
-      "The People (DPP) v Patrick Quirke is a 2023 Court of Appeal decision arising from one of the most closely followed murder prosecutions in recent Irish criminal history. Patrick Quirke was convicted of the murder of Bobby Ryan, a part-time DJ who went missing in 2011 and whose remains were discovered on Quirke's farm in 2013. The prosecution case was built entirely on circumstantial evidence; there were no eyewitnesses, no confession, and no direct forensic evidence placing Quirke at the scene of the killing. Quirke appealed his conviction on a number of grounds, including that the trial judge had erred in law in directing the jury on circumstantial evidence and that the verdict was unsafe. The Court of Appeal dismissed the appeal in its entirety and provided an authoritative restatement of the law governing convictions based on circumstantial evidence. The court confirmed the long-established principle that a jury is entitled to convict on circumstantial evidence alone, provided that the combination of proved facts is consistent only with the guilt of the accused and cannot be explained on any rational hypothesis consistent with innocence. The court also addressed the treatment of digital evidence, including evidence retrieved from the accused's computer relating to research into methods of concealing a body, and confirmed that such evidence had been properly admitted and adequately explained to the jury. The Quirke decision is an important modern authority on circumstantial evidence in murder prosecutions and on the approach of the Court of Appeal to challenges against jury verdicts in high-profile cases.",
-    subjects: ['criminal'],
-    topics: ['murder', 'circumstantial evidence', 'appeal', 'conviction', 'high-profile'],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v Stronge',
-    citation: '[2011] IECCA 79',
-    year: 2011,
-    court: 'Court of Criminal Appeal',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Court of Criminal Appeal authoritatively set out the structured approach to sentencing in Ireland: the court must first identify the appropriate headline sentence reflecting the gravity of the offence and the circumstances in which it was committed, before then applying mitigating factors to arrive at the actual sentence. The headline sentence represents the notional pre-mitigation sentence for the particular offence. The court must not begin with a maximum sentence and work downward but must assess gravity in a structured way.',
-    key_quote:
-      'The correct approach to sentencing is to identify a headline sentence reflecting the gravity of the offence, and then to apply mitigating factors to arrive at the actual sentence.',
-    full_summary:
-      'DPP v Stronge [2011] IECCA 79 is the foundational Irish authority on the structured approach to sentencing. The Court of Criminal Appeal held that a sentencing court must follow a two-stage process: first, the court identifies the headline sentence, which is the notional sentence that would be appropriate for the offence having regard to its gravity and the circumstances in which it was committed, without reference to mitigation. Second, the court applies the relevant mitigating factors to arrive at the actual sentence to be imposed. The headline sentence is not the maximum for the offence but rather the sentence the judge considers appropriate for this particular instance of the offence, assessed by reference to the nature and circumstances of the offending. This structured approach prevents the court from working downward from the statutory maximum, which had been criticised as an inappropriate methodology. Stronge is cited in virtually every Irish sentencing appeal and has been consistently applied across all offence categories. It was later built upon by the Court of Appeal in cases such as DPP v Mahoney and DPP v Crilly and remains the cornerstone of Irish sentencing jurisprudence. The case also affirmed that the sentencing court must give reasons for its headline figure, ensuring transparency and facilitating appellate review of sentencing decisions.',
-    subjects: ['criminal'],
-    topics: [
-      'sentencing',
-      'proportionality',
-      'headline sentence',
-      'mitigation',
-      'structured approach',
-    ],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v Maguire',
-    citation: '[2018] IECA 71',
-    year: 2018,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Court of Appeal applied the structured sentencing approach in a sexual offence case. The court identified the headline sentence for the offence category, applied aggravating factors (including abuse of position of trust and the impact on the victim), and then assessed the mitigation available. The structured Stronge approach was confirmed as the framework for all sentencing decisions including serious sexual offences.',
-    key_quote:
-      'In applying the structured sentencing approach, the court must identify all relevant aggravating and mitigating factors and reflect them appropriately in the actual sentence.',
-    full_summary:
-      "DPP v Maguire [2018] IECA 71 confirmed the application of the structured Stronge sentencing framework to serious sexual offence cases before the Court of Appeal. The court systematically applied the two-stage methodology: identifying the headline sentence and then adjusting for mitigation. In Maguire, significant aggravating factors were present, including the accused's abuse of a position of trust in relation to the victim. The court held that an abuse of trust is a well-recognised aggravating factor that elevates the headline sentence above the baseline for the offence category. The impact on the victim, as evidenced by a victim impact statement, was also treated as an aggravating consideration. On the mitigating side, the court examined the accused's personal circumstances, prior record, and expressions of remorse. Maguire demonstrates that the structured approach operates consistently across offence types, requiring the sentencing court to identify each relevant factor and reflect it in a principled way. The judgment also addresses the importance of victim impact statements in the sentencing process for sexual offences, affirming that such evidence is central to the court's assessment of the harm caused. Maguire is a useful illustration of the structured approach applied at an intermediate level of gravity within the sexual offences category.",
-    subjects: ['criminal'],
-    topics: [
-      'sentencing',
-      'sexual offences',
-      'aggravating factors',
-      'headline sentence',
-      'mitigation',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v Broe',
-    citation: '[2020] IECA 140',
-    year: 2020,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Court of Appeal considered the totality principle in sentencing where multiple offences arise from a series of related events. The court confirmed that where consecutive sentences are imposed, the overall sentence must be reviewed to ensure it does not exceed what is proportionate when the totality of the offending is considered. The totality principle acts as a safeguard against crushing sentences for multiple but related offending.',
-    key_quote:
-      "Where consecutive sentences are imposed, the court must step back and consider whether the total sentence is proportionate to the overall gravity of the accused's conduct.",
-    full_summary:
-      "DPP v Broe [2020] IECA 140 is an important Court of Appeal authority on the totality principle in Irish sentencing law. The case arose where the accused had been convicted of multiple related offences and the sentencing court imposed consecutive sentences. On appeal, the Court of Appeal examined whether the overall term of imprisonment was proportionate to the totality of the offending conduct. The totality principle requires that once individual sentences have been fixed, the sentencing court must step back and assess the overall effect of consecutive sentences. If the aggregate sentence is disproportionately severe in light of the totality of the offending, it must be adjusted downward. The court confirmed that this principle is not a licence to unduly reduce appropriate sentences for multiple offenders, but rather a safeguard against the imposition of crushing or excessive overall sentences. Broe provides practical guidance on how the totality principle operates in conjunction with the structured Stronge approach: the headline sentence is first identified for each offence, mitigation is applied, and then the overall consecutive total is reviewed for proportionality. The judgment notes that the principle is particularly important where offending arises from a common transaction or criminal enterprise, and that the accused's overall culpability, rather than the mere arithmetical sum of individual sentences, should govern the final outcome.",
-    subjects: ['criminal'],
-    topics: [
-      'sentencing',
-      'consecutive sentences',
-      'totality principle',
-      'multiple offences',
-      'proportionality',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v Coughlan',
-    citation: '[2019] IECA 173',
-    year: 2019,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Court of Appeal considered the activation of a suspended sentence following breach of its conditions. The court confirmed that where an accused breaches the conditions of a suspended sentence, the court retains a discretion as to whether to activate the sentence and in what measure. The discretion must be exercised judicially having regard to the nature of the breach, the accused's personal circumstances, and the interests of justice.",
-    key_quote:
-      'The activation of a suspended sentence following breach of conditions is a matter for judicial discretion; the court must consider all relevant circumstances before deciding whether and to what extent to activate.',
-    full_summary:
-      "DPP v Coughlan [2019] IECA 173 addresses the legal principles governing the activation of suspended sentences in Irish criminal law. Where a court suspends a sentence on conditions and the accused subsequently breaches those conditions, the sentencing court must decide whether to activate the suspended sentence and, if so, to what extent. The Court of Appeal held that this decision is a matter of judicial discretion and is not automatic. The nature and seriousness of the breach are centrally relevant: a minor or technical breach may not warrant full activation, whereas a substantive breach reflecting continued offending will generally warrant activation of the full sentence. The court must also consider the accused's personal circumstances at the time of the activation hearing, including any steps taken toward rehabilitation since the original sentencing. The interests of justice, including the need for deterrence and the maintenance of public confidence in the court's orders, are also relevant. Coughlan is consistent with the broader principle that the ultimate objective of sentencing is rehabilitation where possible, and that an activation hearing is not a mechanical exercise but a fresh assessment of the appropriate response to the accused's overall conduct. The judgment also confirms that the court may activate only part of a suspended sentence where partial activation is proportionate to the breach.",
-    subjects: ['criminal'],
-    topics: ['sentencing', 'suspended sentence', 'activation', 'breach', 'conditions'],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v Crilly',
-    citation: '[2019] IECA 143',
-    year: 2019,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Court of Appeal considered the appropriate discount for a guilty plea in serious criminal proceedings. The court confirmed that a guilty plea at an early stage warrants a significant discount, both because it saves the State the cost and uncertainty of a trial and because it spares witnesses (particularly victims) the ordeal of giving evidence. The timing of the plea is highly relevant to the extent of the discount.',
-    key_quote:
-      'The timing of a guilty plea is crucial to the extent of the sentencing discount; an early plea warrants a greater reduction than a late plea on the first day of trial.',
-    full_summary:
-      'DPP v Crilly [2019] IECA 143 is a leading Court of Appeal authority on the sentencing discount available for a guilty plea in Irish criminal proceedings. The court confirmed that a guilty plea is a significant mitigating factor that ordinarily justifies a meaningful reduction in the sentence that would otherwise be imposed. The rationale for the discount is threefold: it saves the State the expense and uncertainty of a contested trial; it spares witnesses, in particular victims, from the ordeal of giving evidence; and it may represent genuine remorse on the part of the accused. Crilly emphasises that the timing of the plea is critical to the extent of the discount available. A plea entered at the earliest opportunity, such as at the District Court level or immediately following return for trial, warrants a greater reduction than a plea entered on the morning of trial. A late plea, while still mitigating, attracts a much more modest discount because the main utilitarian benefits have been foregone. The court also clarified that the discount is not automatic and must be assessed in context: where the accused had no viable defence or was caught red-handed, a lesser discount may be appropriate because the decision to plead guilty carried less weight. Crilly integrates the guilty plea discount into the broader structured Stronge framework, treating it as one component of the mitigating analysis rather than a separate calculation.',
-    subjects: ['criminal'],
-    topics: [
-      'sentencing',
-      'post-plea discount',
-      'guilty plea',
-      'mitigation',
-      'sentencing discount',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v Farnan',
-    citation: '[2020] IECA 256',
-    year: 2020,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Court of Appeal considered sentencing for causing death by dangerous driving. The court identified the range of sentences appropriate to this offence and the relevant aggravating factors (including the degree of culpability, prior driving record, and multiple fatalities). The court applied the structured Stronge approach and confirmed the appropriate headline sentence range for the most serious cases of dangerous driving causing death.',
-    key_quote:
-      'Causing death by dangerous driving is a very serious offence; the headline sentence must reflect the degree of culpability and the tragic consequences of the offending.',
-    full_summary:
-      'DPP v Farnan [2020] IECA 256 provides important sentencing guidance for the offence of causing death by dangerous driving contrary to s.53 of the Road Traffic Act 1961. The Court of Appeal applied the structured Stronge sentencing framework to this offence and identified the relevant range of headline sentences, which will vary according to the culpability of the driving, the number of victims, and the presence of additional aggravating factors. The court identified relevant aggravating factors, including grossly dangerous driving behaviour, driving under the influence of alcohol or drugs, previous road traffic convictions, and the causing of multiple fatalities. The court emphasised that the tragic and irreversible consequences of causing death are central to the assessment of the headline sentence, though the primary driver of the headline must be the degree of culpability rather than outcome alone. Farnan confirms that causing death by dangerous driving attracts a custodial sentence in all but the most exceptional cases involving the lowest level of culpability. The judgment provides a useful tariff framework for practitioners and sentencing judges and situates the offence within the broader proportionality principles applicable to all Irish sentencing. The court also considered the appropriate discount for mitigating factors including early guilty plea, genuine remorse, and clean prior record.',
-    subjects: ['criminal'],
-    topics: [
-      'sentencing',
-      'road traffic',
-      'causing death by dangerous driving',
-      'aggravating factors',
-      'tariff',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v Kane',
-    citation: '[2023] IECA 86',
-    year: 2023,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Court of Appeal considered sentencing for drug trafficking offences involving significant quantities. The court applied the Misuse of Drugs Act mandatory minimum sentencing provisions and assessed whether a substantial departure from the minimum was warranted. The court confirmed that while mandatory minimum sentences represent the legislature's judgment on the appropriate tariff, the sentencing court retains the obligation to impose a proportionate sentence.",
-    key_quote:
-      'Mandatory minimum sentencing provisions must be applied in a manner consistent with proportionality; the court must consider whether the circumstances warrant a departure below the minimum.',
-    full_summary:
-      'DPP v Kane [2023] IECA 86 addresses the application of the mandatory minimum sentencing regime under the Misuse of Drugs Act 1977, as amended. The Court of Appeal examined s.15A, which prescribes a mandatory minimum sentence of ten years for possession of controlled drugs with a value of €13,000 or more for sale or supply. The court confirmed that the mandatory minimum represents a legislative judgment on the appropriate tariff for this category of offence, but noted that the sentencing court retains a residual discretion to impose a lesser sentence where the accused can establish exceptional and specific circumstances. Kane analyses the circumstances that may qualify as exceptional, including substantial assistance rendered to Gardaí, early guilty plea, personal circumstances of particular severity, and an absence of prior convictions. The court cautioned against the routine invocation of s.15A exceptions, which would undermine the legislative purpose. Kane also addresses proportionality: even where the statutory minimum applies, the Constitution requires that the sentence not be so disproportionate as to be unjust. The judgment provides practitioners with a structured analysis of how mandatory minimum provisions interact with the general Stronge framework and with constitutional proportionality requirements. The court clarified that the two-stage structured approach still applies within the mandatory minimum regime to determine whether the minimum is itself the appropriate sentence or whether the exceptional circumstances gateway is engaged.',
-    subjects: ['criminal'],
-    topics: [
-      'sentencing',
-      'drug offences',
-      'significant drug quantity',
-      'aggravating factors',
-      'proportionality',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v Mahoney',
-    citation: '[2016] IECA 27',
-    year: 2016,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Court of Appeal considered the appropriateness of a non-custodial sentence (community service) for a serious assault offence. The court confirmed that the availability of non-custodial penalties must be considered in all cases, particularly where the accused has no prior convictions and demonstrates genuine remorse. The court emphasised that imprisonment should be a last resort and that the sentencing court must consider alternatives to custody in all but the most serious cases.',
-    key_quote:
-      'Imprisonment should be imposed only where non-custodial alternatives cannot adequately meet the requirements of proportionality and the protection of society.',
-    full_summary:
-      'DPP v Mahoney [2016] IECA 27 is a significant Court of Appeal authority affirming the principle that imprisonment is a measure of last resort in Irish sentencing law. The case arose from a serious assault conviction and the question of whether a community service order was an appropriate alternative to a custodial sentence. The court confirmed that the sentencing court must consider non-custodial alternatives in every case before imposing a term of imprisonment. This obligation is not merely formal: the court must genuinely assess whether the objectives of sentencing — deterrence, rehabilitation, protection of the public, and denunciation — can be adequately served by a non-custodial penalty. Mahoney holds that for first-time offenders, or offenders with limited criminal history who demonstrate genuine remorse and a commitment to rehabilitation, a community service order or suspended sentence may be proportionate even in cases involving significant violence. The judgment references the broader principle that over-reliance on imprisonment is both socially counterproductive and constitutionally suspect where a lesser penalty adequately addresses the gravity of the offending. The court also addressed the practical operation of community service orders, including the importance of ensuring the order is workable and that appropriate conditions are attached. Mahoney sits alongside DPP v Stronge as an authority on the principled framework governing Irish sentencing practice.',
-    subjects: ['criminal'],
-    topics: [
-      'sentencing',
-      'assault',
-      'community service',
-      'non-custodial sentence',
-      'proportionality',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v McCormack',
-    citation: '[2000] 4 IR 356',
-    year: 2000,
-    court: 'Court of Criminal Appeal',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Court of Criminal Appeal provided guidance on the appropriate headline sentence range for rape offences, establishing a tariff framework that has influenced subsequent sentencing in serious sexual assault cases. The court emphasised that rape is among the most serious crimes known to law and that sentences must reflect both the gravity of the offence and the severe impact on the victim. This case established the sentencing framework that was later developed in DPP v Connor, Sutton, and DC.',
-    key_quote:
-      "Rape is one of the most serious crimes in the criminal calendar; the headline sentence must reflect the gravity of the violation of the victim's bodily integrity and dignity.",
-    full_summary:
-      "DPP v McCormack [2000] 4 IR 356 is the foundational Irish authority on sentencing for rape. The Court of Criminal Appeal held that rape is one of the gravest offences known to law and that sentencing must reflect the profound violation of the victim's bodily integrity, autonomy, and dignity. The court established a tariff framework identifying the range of appropriate sentences for rape, anchored by headline sentence figures that represent the court's assessment of appropriate pre-mitigation sentences for different levels of gravity. McCormack emphasised that no rape is trivial and that even cases at the lower end of the scale of gravity involve a serious crime warranting a substantial custodial sentence. The judgment identified a number of aggravating factors relevant to rape sentencing, including the use of violence beyond that inherent in the act itself, the vulnerability of the victim, prior planning, and the duration of the ordeal. Mitigating factors discussed include guilty plea, absence of prior convictions, youth, and evidence of genuine remorse. McCormack formed the bedrock of Irish rape sentencing jurisprudence for two decades and was ultimately updated and replaced by the Connor/Sutton/DC trilogy in 2020-2022, which revised the headline sentence ranges upward to reflect evolving social values and a greater understanding of the impact of sexual violence. McCormack remains relevant as the historical baseline and is frequently cited alongside its successor authorities in sentencing appeals.",
-    subjects: ['criminal'],
-    topics: ['sentencing', 'rape', 'tariff', 'headline sentence', 'serious sexual offences'],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v McGrath, Dolan and Brazil',
-    citation: '[2020] IECA 50',
-    year: 2020,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Court of Appeal considered sentencing where multiple accused are convicted of related offences committed together. The court addressed the principle that sentences should not be disproportionately disparate between co-offenders where their culpability is similar. However, where there are genuine differences in culpability, role, or personal circumstances, differentiated sentences are appropriate. The individual circumstances of each accused must be assessed.',
-    key_quote:
-      'Where multiple accused are sentenced for related offending, the sentences should reflect their relative culpability; disproportionate disparity between co-offenders should be avoided.',
-    full_summary:
-      "DPP v McGrath, Dolan and Brazil [2020] IECA 50 addresses the principles applicable to sentencing co-offenders convicted of related criminal conduct. The Court of Appeal considered the extent to which courts should seek consistency between sentences imposed on multiple accused who participated jointly in the same or related offences. The court confirmed that disproportionate disparity in sentences between co-offenders is a relevant ground of appeal, but that the principle of consistency must be applied with care. Where two accused have genuinely similar culpability, similar roles, and comparable personal circumstances, substantially different sentences will be difficult to justify. However, where differences in role, culpability, criminal record, remorse, or cooperation with the investigation exist, differentiated sentencing is not only permissible but required. The court cautioned that the principle of consistency does not operate as a levelling-down mechanism: a well-deserved severe sentence cannot be reduced simply because a co-offender received a lesser sentence without justification. Each accused is entitled to be sentenced on the particular facts of their own case. The judgment provides a balanced framework for practitioners dealing with joint sentencing hearings and confirms that the individual assessment of each accused's circumstances remains paramount within the broader principle of consistency.",
-    subjects: ['criminal'],
-    topics: ['sentencing', 'multiple accused', 'joint offending', 'disparity', 'proportionality'],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'DPP v Rae',
-    citation: '(Court of Appeal, 2018/190)',
-    year: 2018,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Court of Appeal considered the application of the mandatory minimum sentencing regime under s.15A of the Misuse of Drugs Act 1977 for possession of drugs with a value of €13,000 or more for sale or supply. The court examined the grounds on which a court can impose a sentence below the statutory minimum and confirmed that exceptional and specific circumstances must be established. The legislature's decision to set a minimum tariff represents a valid policy choice.",
-    key_quote:
-      'The mandatory minimum sentence under s.15A of the Misuse of Drugs Act 1977 can only be departed from where exceptional and specific circumstances are established by the accused.',
-    full_summary:
-      "DPP v Rae (Court of Appeal, 2018/190) is a significant decision on the mandatory minimum sentencing framework for drug trafficking under s.15A of the Misuse of Drugs Act 1977, as amended by the Criminal Justice Act 1999. The Court of Appeal examined the circumstances in which a sentencing court may lawfully impose a sentence below the prescribed ten-year minimum for possession of drugs valued at €13,000 or more for sale or supply. The court confirmed that the statutory gateway of exceptional and specific circumstances is to be applied strictly, reflecting the legislature's deliberate policy choice to set a minimum tariff for serious drug trafficking. The judgment identifies the categories of circumstances most commonly relied upon to establish exceptionality, including substantial cooperation with Gardaí investigations, provision of information leading to further convictions, early guilty plea, youth of the accused, and an absence of previous convictions. However, the court cautioned that these factors, even in combination, do not automatically establish the exceptional circumstances threshold and must be assessed holistically in each case. Rae also addresses the interaction between the mandatory minimum regime and the constitutional principle of proportionality, confirming that the ten-year minimum does not in itself violate Article 38.1 of the Constitution. The decision is an important companion to DPP v Kane and provides concrete guidance on the practical application of s.15A in the Court of Appeal.",
-    subjects: ['criminal'],
-    topics: [
-      'sentencing',
-      'drug trafficking',
-      'possession for sale or supply',
-      'Misuse of Drugs Act',
-      'minimum sentence',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'People (DPP) v P. McC.',
-    citation: '[2018] IECA 309',
-    year: 2018,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Court of Appeal assessed sentences imposed on a person convicted of multiple counts of child sexual abuse. The court applied the structured approach and identified the headline sentences for the most serious individual counts before applying mitigating factors. The duration of offending, the multiplicity of offences, and the age and vulnerability of the victims were all significant aggravating factors. The court also applied the totality principle to the overall sentence.',
-    key_quote:
-      'Multiple counts of child sexual abuse committed over an extended period call for a substantial headline sentence; the totality principle then governs the overall sentence imposed.',
-    full_summary:
-      "People (DPP) v P. McC. [2018] IECA 309 is a Court of Appeal sentencing judgment addressing the principles applicable to multiple counts of child sexual abuse. The court applied the structured Stronge methodology to each of the most serious counts and identified appropriate headline sentences before applying mitigating factors. The judgment provides detailed analysis of the aggravating factors that arise in child sexual abuse cases: the age and vulnerability of the victims, the duration and frequency of the offending, the breach of trust inherent in the familial or quasi-familial relationship between accused and victim, and the long-term psychological harm caused to the victims. The court held that these features combine to place such cases in a high band of gravity, warranting substantial headline sentences. Having fixed individual sentences, the court then applied the totality principle to ensure that the overall sentence arising from the consecutive and concurrent structure was proportionate to the totality of the accused's offending. The judgment confirms that the totality principle does not operate to unduly reduce sentences in cases involving persistent child abuse, but ensures that the overall effect is not crushing in a way that serves no legitimate penological purpose. P. McC. is a useful authority for practitioners on the interaction between the structured sentencing approach, multi-count indictments, child sexual abuse aggravators, and the totality principle.",
-    subjects: ['criminal'],
-    topics: [
-      'sentencing',
-      'child sexual abuse',
-      'abuse of trust',
-      'headline sentence',
-      'multiple counts',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v Connor',
-    citation: '[2020] IECA 255',
-    year: 2020,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Court of Appeal in Connor significantly developed the sentencing framework for rape offences established in DPP v McCormack [2000], increasing the headline sentence ranges to reflect contemporary social values and the severity of the offence. The court divided rape offences into categories by gravity and established updated tariff ranges for each category. Connor, together with Sutton and DC, forms the modern trilogy on rape sentencing in Ireland.',
-    key_quote:
-      'The sentencing framework for rape must be updated to reflect contemporary values; the headline sentences established in McCormack no longer adequately reflect the severity of the offence.',
-    full_summary:
-      "DPP v Connor [2020] IECA 255 is the first of three judgments delivered by the Court of Appeal in 2020 that together revised and modernised the sentencing framework for rape in Ireland, superseding the older McCormack tariff. The court in Connor reviewed the headline sentence ranges established in DPP v McCormack [2000] 4 IR 356 and found that they no longer adequately reflected the seriousness of rape as understood in contemporary Irish society, particularly in light of the greater appreciation of the lasting psychological harm suffered by victims of sexual violence. The court divided rape into categories based on gravity, providing updated headline sentence ranges for each category. The categorisation takes into account factors such as the degree of violence used, the duration of the assault, prior planning, the vulnerability of the victim, and the relationship between the parties. Connor is the leading authority on the general framework and is cited alongside Sutton (which provided further category-specific guidance) and DC (which applied and refined the framework) in every subsequent rape sentencing appeal. The court in Connor also addressed the role of victim impact evidence in rape sentencing and confirmed that such evidence is entitled to significant weight. The decision represents a watershed moment in Irish criminal sentencing, acknowledging the evolution of social norms and the criminal law's response to sexual violence, and it is one of the most frequently cited Irish sentencing authorities of the post-2020 period.",
-    subjects: ['criminal'],
-    topics: ['sentencing', 'rape', 'headline sentence', 'McCormack', 'tariff development'],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v Sutton',
-    citation: '[2020] IECA 280',
-    year: 2020,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Court of Appeal in Sutton further developed the rape sentencing tariff alongside Connor. The court identified three categories of rape based on gravity and set headline sentence ranges for each: Category 1 (lower range), Category 2 (mid-range), and Category 3 (most serious). The court provided guidance on the factors distinguishing each category, including the degree of violence, the victim's vulnerability, and the duration of the offending. Sutton is one of the three leading modern rape sentencing authorities.",
-    key_quote:
-      'Rape offences should be categorised by gravity and sentenced within identified ranges reflecting the severity of the specific offending behaviour.',
-    full_summary:
-      'DPP v Sutton [2020] IECA 280 is the second pillar of the modern Irish rape sentencing trilogy, delivered shortly after DPP v Connor [2020] IECA 255. In Sutton, the Court of Appeal provided more granular guidance on the three-category framework for rape sentencing, specifying the headline sentence ranges applicable to Category 1, Category 2, and Category 3 rapes respectively. Category 1 encompasses rapes at the lower end of the gravity spectrum, typically involving a single incident without significant additional aggravation. Category 2 captures mid-range offending characterised by some additional aggravating features. Category 3 addresses the most serious instances of rape, involving multiple serious aggravating factors such as extreme violence, particular vulnerability of the victim, repeated rape, or rape in the context of other serious criminal behaviour. The court in Sutton provided detailed guidance on the factors that determine category placement, enabling sentencing judges to identify the appropriate category with greater precision. Sutton is consistently cited alongside Connor in all rape sentencing hearings and appeals as the definitive authority on the category structure and headline ranges. The judgment also addressed the question of how to deal with cases that straddle category boundaries, confirming that sentencing courts should apply their judgment holistically rather than mechanically and that the categories are guides rather than rigid boxes. Sutton reinforces the principle that the Connor/Sutton framework must be applied within the broader structured Stronge methodology.',
-    subjects: ['criminal'],
-    topics: ['sentencing', 'rape', 'headline sentence', 'Connor', 'tariff'],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The People (DPP) v DC',
-    citation: '[2022] IECA 327',
-    year: 2022,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'In DC, the Court of Appeal applied and refined the Connor/Sutton tariff framework for rape sentencing. The court considered the appropriate headline sentence for a rape with multiple aggravating features and provided further guidance on the interaction between aggravating factors and category placement. DC completes the modern trilogy on rape sentencing. The court emphasised that each case must be assessed individually within the framework.',
-    key_quote:
-      'The Connor/Sutton sentencing framework provides the structure within which individual rape cases must be assessed; the specific aggravating and mitigating features of each case determine the final sentence.',
-    full_summary:
-      'DPP v DC [2022] IECA 327 is the third authority in the modern Irish rape sentencing trilogy, completing the framework established by Connor and Sutton. In DC, the Court of Appeal applied the three-category Connor/Sutton framework to a case involving a rape with multiple serious aggravating features and provided further guidance on how aggravating factors interact with category placement and headline sentence selection. The court confirmed that the framework established in Connor and Sutton is now the definitive approach for rape sentencing in Ireland and that sentencing courts must apply it consistently in all rape cases. DC addresses the question of how to approach cases where the number and severity of aggravating factors might place the offending above the top of the Category 3 range, holding that even in the most egregious cases the framework should be applied flexibly to ensure proportionality. The judgment also provides guidance on the weight to be given to victim impact evidence and on the interaction between the category tariff and the structured Stronge two-stage process. DC is particularly significant in confirming the upward revision of the pre-2020 McCormack tariff and in signalling that Irish courts will continue to reassess sentencing norms for serious sexual offences as understanding of harm to victims develops. Together, Connor, Sutton, and DC form the essential trilogy that every criminal law practitioner and student must know on rape sentencing.',
-    subjects: ['criminal'],
-    topics: ['sentencing', 'rape', 'updated tariff', 'Connor', 'Sutton', 'aggravating factors'],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'R v Campbell',
-    citation: '[2020] NICA 25',
-    year: 2020,
-    court: 'Court of Appeal of Northern Ireland',
-    jurisdiction: 'UK',
-    legal_principle:
-      'The Court of Appeal of Northern Ireland considered the tariff setting process for mandatory life sentences for murder. The court addressed the factors relevant to determining the minimum period before a life prisoner becomes eligible for consideration for release. The judgment provides useful comparative material for Irish sentencing law on murder, though the systems differ in that Northern Ireland retains the mandatory life sentence as in England and Wales.',
-    key_quote:
-      'The tariff for a life sentence for murder must reflect the seriousness of the offence, the circumstances of the killing, and the personal circumstances of the offender.',
-    full_summary:
-      'R v Campbell [2020] NICA 25 is a decision of the Court of Appeal of Northern Ireland addressing the principles governing the setting of tariffs for mandatory life sentences imposed following murder convictions. In Northern Ireland, as in England and Wales, a conviction for murder carries a mandatory sentence of life imprisonment; the court sets a minimum tariff representing the period to be served before eligibility for consideration for release on licence by the Parole Commissioners. In Campbell, the court reviewed the tariff-setting process and confirmed the factors that bear upon the appropriate minimum term, including the premeditation of the killing, the degree of violence used, the vulnerability of the victim, the motivation for the killing, and the personal circumstances of the offender. The case provides useful comparative material for Irish criminal law students and practitioners, particularly in the context of examining how common law jurisdictions approach murder sentencing. It is significant to note the contrast with the Republic of Ireland, where the mandatory 40-year sentence for murder (subject to the Oireachtas power to remit) differs from the flexible tariff model used in Northern Ireland and England and Wales. Campbell is relevant to discussions of comparative criminal sentencing and to the specific context of Northern Ireland criminal law within the broader island of Ireland legal education framework.',
-    subjects: ['criminal'],
-    topics: [
-      'murder',
-      'sentencing',
-      'tariff',
-      'life sentence',
-      'mandatory minimum',
-      'Northern Ireland',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'People (DPP) v CC',
-    citation: '[2024] IESCDET 40',
-    year: 2024,
-    court: 'Supreme Court of Ireland (determination)',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Supreme Court issued a determination granting leave to appeal in this 2024 sexual offence case, indicating that the sentencing issues arising were of general public importance. The determination signals the Supreme Court's willingness to develop the law on sentencing for serious sexual offences beyond the rape-specific framework in Connor/Sutton/DC. The full appeal addresses the principles applicable to sentencing for aggravated sexual assault.",
-    key_quote:
-      'The Supreme Court granted leave to appeal in CC because the sentencing principles for serious sexual offences beyond rape require authoritative guidance from the court of final appeal.',
-    full_summary:
-      "People (DPP) v CC [2024] IESCDET 40 is a Supreme Court leave determination of significant importance for the development of Irish sexual offence sentencing law. The Supreme Court granted leave to appeal on the basis that the sentencing principles applicable to serious sexual offences beyond rape — in particular aggravated sexual assault under s.2 of the Criminal Law (Rape) (Amendment) Act 1990 — raise issues of general public importance that have not been authoritatively resolved. The Connor/Sutton/DC trilogy specifically addressed rape sentencing, but no equivalent structured framework existed for the distinct offence of aggravated sexual assault, which can attract a sentence of up to life imprisonment. The determination signals that the Supreme Court intends to fill this gap by providing authoritative guidance on the appropriate sentencing framework, headline sentence ranges, and relevant aggravating and mitigating factors for aggravated sexual assault. The case is therefore of the highest prospective importance for practitioners and students, as it will likely result in a judgment that sits alongside the rape sentencing trilogy as a cornerstone authority on sexual offence sentencing in Ireland. Even at the determination stage, CC represents the Supreme Court's recognition of the need for clarity and consistency in the sentencing of the most serious categories of sexual violence. It is also noteworthy as one of the first major criminal sentencing cases to reach the Supreme Court under the post-2014 appellate structure.",
-    subjects: ['criminal'],
-    topics: [
-      'sexual offences',
-      'sentencing',
-      'leave to appeal',
-      'Supreme Court',
-      'serious sexual assault',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'The Trial of Gerard Hutch (Regency Hotel)',
-    citation: '[2022] IEHC 81',
-    year: 2022,
-    court: 'Special Criminal Court',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Special Criminal Court acquitted Gerard Hutch of the murder of David Byrne at the Regency Hotel in February 2016. The court found that the prosecution had not proved beyond reasonable doubt that Hutch was one of the gunmen. The three-judge court gave a detailed judgment on the standard of proof, the credibility of witness evidence including that of an accomplice witness, and the circumstantial evidence relied upon by the prosecution.',
-    key_quote:
-      'In a criminal trial, the prosecution must prove guilt beyond reasonable doubt; an acquittal does not mean the accused is innocent, but that the required standard of proof was not met.',
-    full_summary:
-      "The trial of Gerard Hutch before the Special Criminal Court, reported at [2022] IEHC 81, is the most high-profile Irish criminal trial in decades and generated enormous public interest. Hutch was charged with the murder of David Byrne at the Regency Hotel, Dublin, on 5 February 2016, during a boxing weigh-in event. The prosecution alleged that Hutch was one of a number of gunmen who attacked the event in the context of the violent feud between the Hutch and Kinahan criminal organisations. The Special Criminal Court, a non-jury court comprised of three judges sitting under the Offences Against the State Act 1939, heard extensive evidence over a prolonged trial. The court ultimately acquitted Hutch on all counts, holding that the prosecution had not established guilt beyond reasonable doubt. The judgment addressed several important evidential and procedural issues: the standard of proof in a non-jury criminal trial before the Special Criminal Court; the assessment of the credibility and reliability of prosecution witnesses, including a key accomplice witness whose evidence was central to the State's case; the probative value of CCTV and photographic identification evidence; and the treatment of circumstantial evidence in a murder trial. The case raised broader questions about the role of the Special Criminal Court in modern Irish society, the constitutional basis for non-jury trials, and the adequacy of the available evidence in gangland prosecution cases. It remains one of the most significant decisions of the Special Criminal Court in the post-Celtic Tiger era.",
-    subjects: ['criminal'],
-    topics: [
-      'murder',
-      'Special Criminal Court',
-      'Regency Hotel',
-      'Kinahan',
-      'acquittal',
-      'gangland',
-    ],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'DPP v Eadon',
-    citation: '[2019] IESC 98',
-    year: 2019,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Supreme Court in Eadon considered whether extreme intoxication could negative the mental element of sexual assault under the Criminal Law (Rape) (Amendment) Act 1990. The court concluded that where intoxication is so extreme as to produce a state akin to automatism, it may negative the mental element. The court directed a re-trial. Also reported as [2020] 1 ILRM 233.',
-    key_quote:
-      'Extreme intoxication, if it reduces the accused to a state akin to automatism, may negative the mental element of sexual assault and should be left to the jury.',
-    full_summary:
-      'DPP v Eadon [2019] IESC 98 (also reported as [2020] 1 ILRM 233) is a landmark Supreme Court decision on the relevance of extreme self-induced intoxication to criminal liability for sexual assault in Irish law. The accused had been convicted of sexual assault contrary to s.2 of the Criminal Law (Rape) (Amendment) Act 1990, and argued on appeal that his intoxication was so extreme at the time of the offence as to negative the requisite mental element — namely an intentional or reckless sexual assault. The Supreme Court examined the mens rea of sexual assault under the 1990 Act and held that, as a matter of principle, intoxication of the most extreme kind — approaching a state akin to automatism or complete absence of voluntary control — could, if established on the evidence, negative the mental element of the offence. The court distinguished between ordinary drunkenness, which cannot excuse criminal conduct, and extreme intoxication that renders a person incapable of forming the relevant mental state. The court directed a re-trial to enable the jury to assess this issue on proper directions. Eadon is highly significant because it recognises that Irish law does not adopt the absolute rule precluding reliance on intoxication as a defence to sexual offences that applies in some other common law jurisdictions. It also raises important policy questions about the extent to which self-induced incapacity should excuse criminal conduct and has been the subject of substantial academic commentary. The case is cross-referenced with the primary entry in Batch 3.',
-    subjects: ['criminal'],
-    topics: ['intoxication', 'sexual assault', 'mens rea', 'extreme intoxication', 'automatism'],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Kemmy v Ireland',
-    citation: '[2009] 4 IR 74',
-    year: 2009,
-    court: 'High Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The High Court considered a challenge to the constitutionality of a period of pre-trial detention on remand and the conditions under which it was held. The court addressed the constitutional right to liberty and the grounds on which detention on remand is constitutionally justified. The lawfulness of the continued detention was assessed against the requirements of Article 40 of the Constitution.',
-    key_quote:
-      'Pre-trial detention must comply with the constitutional requirements of Article 40; the court must be satisfied that the detention is in accordance with law and does not constitute an unjust deprivation of liberty.',
-    full_summary:
-      "Kemmy v Ireland [2009] 4 IR 74 is a High Court authority on the constitutional standards applicable to pre-trial detention (remand custody) in Ireland. The applicant challenged the legality of continued detention on remand under Article 40 of the Constitution, which guarantees personal liberty and provides a mechanism — akin to habeas corpus — for testing the lawfulness of any deprivation of liberty. The High Court considered the basis on which an individual may be detained pending trial and the standards of review applicable to such detention. The court confirmed that pre-trial detention engages the fundamental constitutional right to liberty under Article 40.4.1° and must therefore be authorised by law and carried out in accordance with the requirements of that provision. The court examined whether the procedures by which the applicant was remanded in custody were consistent with constitutional requirements, including the right to a bail hearing before an independent court and the proportionality of the continued detention. Kemmy is relevant to the broader topic of constitutional rights in the criminal process, including the right to bail, the presumption of innocence, and the conditions of pre-trial imprisonment. The decision also touches on the State's obligation under the European Convention on Human Rights (Article 5) in relation to pre-trial detention, which operates alongside the domestic constitutional protection. Kemmy is a useful authority for questions on the constitutional dimension of criminal procedure and the enforcement of personal liberty rights through Article 40 inquiry proceedings.",
-    subjects: ['criminal'],
-    topics: [
-      'detention',
-      'remand',
-      'constitutional rights',
-      'unconstitutional detention',
-      'habeas corpus',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Cox v Ireland',
-    citation: '[1992] 2 IR 503',
+    case_name: 'Walford v Miles',
+    citation: '[1992] 2 AC 128',
     year: 1992,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Supreme Court struck down s.34 of the Offences Against the State Act 1939, which provided for automatic forfeiture of employment in the public sector upon conviction of a scheduled offence. The court held that automatic forfeiture without any judicial consideration of proportionality was an unjust attack on property rights under Article 40.3 and the right to earn a livelihood. Blanket legislative provisions that deprive citizens of constitutional rights without individual assessment are invalid.',
-    key_quote:
-      'A statutory provision that automatically deprives a person of their livelihood upon criminal conviction, without any judicial consideration of proportionality, is an unjust attack on constitutionally protected rights.',
-    full_summary:
-      "Cox v Ireland [1992] 2 IR 503 is a landmark Supreme Court decision in which the court declared s.34 of the Offences Against the State Act 1939 unconstitutional. Section 34 provided that any person employed in the public sector who was convicted of a scheduled offence automatically forfeited their employment and became disqualified from public sector employment for seven years. The plaintiff, a teacher, was convicted of a scheduled offence and was dismissed from his teaching post by operation of the section. He challenged the constitutionality of the provision. The Supreme Court held that s.34 constituted an unjust attack on the plaintiff's property rights and his right to earn a livelihood, both of which are protected under Article 40.3 of the Constitution. The court emphasised that the automatic nature of the forfeiture — triggered by conviction without any judicial consideration of proportionality or individual circumstances — was the fatal constitutional defect. The Constitution does not permit the legislature to impose such severe collateral consequences on a convicted person without any mechanism for individualised judicial assessment. The judgment is a foundational statement of the proportionality principle in Irish constitutional law and has been applied in numerous subsequent cases challenging blanket legislative disqualifications.",
-    subjects: ['criminal'],
-    topics: [
-      'constitutional rights',
-      'forfeiture',
-      'employment',
-      'Offences Against the State Act',
-      'proportionality',
-    ],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Brennan v Attorney General',
-    citation: '[1983] ILRM 449',
-    year: 1983,
-    court: 'High Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The High Court considered a challenge to a criminal law provision that was alleged to unjustifiably restrict constitutional rights. The court applied the proportionality test in the context of criminal law legislation and confirmed that even laws designed to combat crime must not unnecessarily infringe constitutional rights. The judgment is an important early statement of the proportionality principle in Irish constitutional criminal law.',
-    key_quote:
-      'Criminal law legislation, however necessary, must not infringe constitutional rights more than is necessary to achieve its legitimate objective.',
-    full_summary:
-      "Brennan v Attorney General [1983] ILRM 449 is an early High Court decision that considered the constitutional limits on criminal law legislation. The plaintiff challenged a statutory provision on the basis that it unjustifiably restricted personal constitutional rights. The High Court, applying the proportionality framework that was then emerging in Irish constitutional jurisprudence, confirmed that even legislation enacted for the legitimate purpose of combating crime must be proportionate to that aim. A criminal law measure that infringes constitutional rights more than is necessary to achieve its objective is invalid. The court examined whether the provision in question struck a fair balance between the legitimate aim of the criminal law and the constitutional rights of the individual. The judgment is significant as one of the earlier Irish decisions to articulate the proportionality principle in explicit terms in the criminal law context, predating the more developed proportionality analysis of the 1990s and 2000s. It reflects the High Court's willingness to scrutinise criminal law legislation for constitutional compliance and to declare invalid provisions that impose disproportionate burdens on citizens.",
-    subjects: ['criminal'],
-    topics: [
-      'constitutional rights',
-      'criminal law',
-      'legislative validity',
-      'right to earn a livelihood',
-      'fair procedures',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Dillane v Attorney General',
-    citation: '[1980] ILRM 167',
-    year: 1980,
-    court: 'High Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The High Court considered the constitutional validity of a criminal law provision creating an absolute offence without a mental element. The court held that the imposition of criminal liability without any mental element may, in certain circumstances, constitute a disproportionate interference with constitutional rights. The judgment is an early Irish statement of the principle that criminal liability must have a rational foundation in culpability.',
-    key_quote:
-      'An absolute criminal offence imposing liability without fault may, where the consequences are severe, constitute a disproportionate interference with the personal rights of the citizen.',
-    full_summary:
-      'Dillane v Attorney General [1980] ILRM 167 is an early High Court decision addressing the constitutional dimension of strict liability criminal offences. The plaintiff challenged the constitutional validity of a provision that created an absolute offence — that is, a criminal offence that could be established without proof of any mental element or fault on the part of the accused. The court approached the question by reference to the constitutional protection of personal rights under Article 40.3 and the principle of proportionality. The High Court held that, while absolute offences may be constitutionally permissible in certain regulatory contexts, the imposition of criminal liability without any mental element can, where the consequences for the accused are severe, constitute a disproportionate interference with constitutional rights. The fundamental notion that criminal liability should be grounded in culpability — the moral blameworthiness of the accused — was given constitutional expression in this judgment. Dillane is an important forerunner of later Irish decisions on mens rea and the constitutional requirements of the criminal law, including the more developed analysis in subsequent Supreme Court decisions on the nature of criminal liability.',
-    subjects: ['criminal'],
-    topics: [
-      'constitutional rights',
-      'criminal offence',
-      'validity of legislation',
-      'proportionality',
-      'personal rights',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'P McD v The Governor of the X Prison',
-    citation: '[2021] IESC 65',
-    year: 2021,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Supreme Court considered the rights of a prisoner under Article 40 of the Constitution and the capacity of the courts to review prison conditions and the lawfulness of detention. The court confirmed that a prisoner retains constitutional rights notwithstanding their imprisonment. Conditions of imprisonment that amount to inhuman or degrading treatment engage constitutional protections and may render the detention unlawful. The courts have jurisdiction to order the release or improved conditions of imprisoned persons where detention is unconstitutional.',
-    key_quote:
-      'A prisoner retains constitutional rights; where prison conditions amount to inhuman or degrading treatment, the courts may intervene to protect those rights including by ordering release.',
-    full_summary:
-      "P McD v The Governor of the X Prison [2021] IESC 65 is a significant Supreme Court decision on prisoners' rights under Article 40 of the Constitution. The applicant, a serving prisoner, challenged the conditions of his detention by way of an Article 40 inquiry, alleging that the conditions amounted to inhuman or degrading treatment contrary to constitutional standards. The Supreme Court confirmed the well-established principle that imprisonment does not deprive a person of all constitutional rights — a prisoner retains those rights that are not necessarily curtailed by the fact of imprisonment itself. The court confirmed that the State bears a positive obligation to ensure that prison conditions meet minimum constitutional standards. Where conditions of imprisonment are so poor as to amount to inhuman or degrading treatment, the constitutional right of the prisoner is violated and the courts have jurisdiction to intervene. The available remedies include ordering release or, where appropriate, ordering the improvement of conditions. The judgment is a key authority on the constitutional dimension of prison law in Ireland and the interaction between Article 40 habeas corpus inquiries and the substantive quality of detention conditions.",
-    subjects: ['criminal'],
-    topics: [
-      "prisoners' rights",
-      'Article 40',
-      'habeas corpus',
-      'inhuman treatment',
-      'prison conditions',
-    ],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'J(S)T v The President of the Circuit Court',
-    citation: '[2015] IESC 25',
-    year: 2015,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Supreme Court considered the supervisory jurisdiction of the High Court over the Circuit Court in criminal proceedings and the grounds upon which prohibition or certiorari could issue. The court confirmed that the High Court has an inherent constitutional jurisdiction to supervise inferior courts and prevent them from acting without or in excess of jurisdiction. The constitutional right to a fair trial underlies the supervisory jurisdiction.',
-    key_quote:
-      "The High Court's supervisory jurisdiction over inferior courts in criminal matters derives from the Constitution and is not limited by statute.",
-    full_summary:
-      "J(S)T v The President of the Circuit Court [2015] IESC 25 concerned the scope of the High Court's supervisory jurisdiction over the Circuit Court in the context of criminal proceedings. The applicant sought relief by way of prohibition or certiorari to prevent or quash criminal proceedings in the Circuit Court. The Supreme Court examined the constitutional basis for the High Court's supervisory role and confirmed that this jurisdiction is grounded in the Constitution itself rather than in any statutory grant. The court confirmed that the High Court may intervene by way of judicial review where an inferior court is acting without jurisdiction, in excess of jurisdiction, or in a manner that violates constitutional rights. The constitutional right to a fair trial is the animating principle underlying the supervisory jurisdiction. The judgment clarified the relationship between the superior and inferior courts in criminal proceedings and confirmed that the reach of judicial review in this context is not restricted by statute. The case has practical significance for criminal practitioners seeking to challenge the validity of proceedings in the Circuit Court.",
-    subjects: ['criminal'],
-    topics: ['jurisdiction', 'Circuit Court', 'prohibition', 'certiorari', 'constitutional rights'],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Donnelly v Minister for Social Protection',
-    citation: '[2022] IESC 31',
-    year: 2022,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Supreme Court considered the impact of a criminal conviction on access to social welfare benefits and whether statutory restrictions on benefits for convicted persons are constitutionally proportionate. The court applied the proportionality test and confirmed that legislative restrictions on the rights of convicted persons must be justified and proportionate to the legitimate aims of the criminal justice system. Blanket disqualifications may be constitutionally suspect.',
-    key_quote:
-      'Restrictions on the social welfare entitlements of convicted persons must be proportionate to a legitimate aim; blanket disqualifications may constitute a disproportionate interference with constitutional rights.',
-    full_summary:
-      'Donnelly v Minister for Social Protection [2022] IESC 31 is a Supreme Court decision examining the constitutional consequences of criminal conviction in the area of social welfare entitlements. The appellant challenged statutory provisions that restricted or disqualified convicted persons from social welfare benefits, arguing that these restrictions were disproportionate and constituted an unjustified attack on constitutional rights. The Supreme Court applied the proportionality test developed in cases such as Cox v Ireland and confirmed that all legislative measures restricting the rights of convicted persons must be rationally connected to a legitimate aim and must not impair rights more than is necessary. The court distinguished between restrictions that are proportionate to the gravity of the offence and the aims of the criminal justice system, and blanket disqualifications that may be constitutionally suspect because they do not permit any individualised assessment. The judgment develops the line of authority on collateral consequences of criminal conviction and confirms that social and economic rights are not forfeit upon criminal conviction. It is a significant 2022 decision for the interface between criminal law and social welfare law.',
-    subjects: ['criminal'],
-    topics: [
-      'constitutional rights',
-      'social welfare',
-      'criminal record',
-      'proportionality',
-      'Article 40',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: "O'Meara v Minister for Social Protection",
-    citation: '[2024] IESC 1',
-    year: 2024,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Supreme Court in this 2024 judgment considered constitutional challenges to provisions affecting social welfare entitlements. The court applied the established proportionality and equality framework in assessing whether the impugned provisions were constitutionally valid. The judgment continues the Supreme Court's development of proportionality doctrine in the context of social and economic rights.",
-    key_quote:
-      'Legislation affecting social welfare entitlements must be assessed for proportionality; the court must consider whether the measure is rationally connected to its objective and does not impair rights more than necessary.',
-    full_summary:
-      "O'Meara v Minister for Social Protection [2024] IESC 1 is a 2024 Supreme Court decision addressing constitutional challenges to social welfare legislation. The appellants challenged provisions affecting their entitlement to social welfare benefits on grounds of unconstitutionality, relying on Articles 40 and 41 of the Constitution and the equality guarantee. The Supreme Court applied the well-established proportionality and equality framework to assess the constitutional validity of the impugned provisions. The court examined whether the measures pursued a legitimate aim, whether they were rationally connected to that aim, and whether they impaired constitutional rights more than was necessary. The 2024 judgment continues the court's development of proportionality doctrine as it applies to social and economic rights and represents the most recent Supreme Court statement on the constitutional constraints on social welfare legislation. The case is also significant for its engagement with the equality analysis under Article 40.1 in the context of social welfare law, and illustrates how the proportionality doctrine developed in the criminal law context has permeated into adjacent areas of constitutional adjudication.",
-    subjects: ['criminal'],
-    topics: ['constitutional rights', 'social welfare', 'equality', 'proportionality', '2024'],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'O.R. (A Minor) v An tArd Chláraitheoir',
-    citation: '[2014] 3 IR 533',
-    year: 2014,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Supreme Court considered the constitutional rights of a child in the context of birth registration and the obligation of the State to vindicate those rights. The court applied Article 42A of the Constitution, which inserted in 2012 guarantees the rights of all children. The court confirmed that children have independent constitutional rights that may, in appropriate circumstances, take precedence over parental rights.',
-    key_quote:
-      'Children have independent constitutional rights under Article 42A; the State has an obligation to vindicate those rights even where they may conflict with the rights of parents.',
-    full_summary:
-      "O.R. (A Minor) v An tArd Chláraitheoir [2014] 3 IR 533 is a Supreme Court decision that considered the constitutional rights of a child arising from birth registration procedures. The case arose following the insertion of Article 42A into the Irish Constitution by the Children and Family Relationships referendum of 2012, which for the first time explicitly guaranteed the rights of all children as independent constitutional rights. The Supreme Court applied the newly enacted Article 42A in the context of a dispute concerning the registration of a child's birth and identity. The court confirmed that children possess independent constitutional rights that are not simply derivative of parental rights, and that the State has a positive obligation to vindicate those rights. Where children's rights conflict with the rights of parents, Article 42A may require the rights of the child to take precedence depending on the circumstances. The judgment is a significant early authority on the meaning and reach of Article 42A and on the State's obligation to protect children's constitutional rights in administrative and legal proceedings.",
-    subjects: ['criminal'],
-    topics: [
-      "children's rights",
-      'constitutional rights',
-      'registration',
-      'Article 42A',
-      'family rights',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'RAS Medical Ltd v Royal College of Surgeons in Ireland',
-    citation: '[2019] 1 IR 63',
-    year: 2019,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Supreme Court considered the requirements of fair procedures (audi alteram partem and nemo iudex) in the context of a decision made by a professional body. The court confirmed that constitutional justice requires that decision-makers act fairly, that affected parties have an opportunity to be heard, and that decisions are made by impartial decision-makers. These principles apply in quasi-criminal and regulatory contexts as well as formal criminal proceedings.',
-    key_quote:
-      'Constitutional justice requires fair procedures at every level of decision-making; the principles of audi alteram partem and nemo iudex in causa sua are fundamental constitutional guarantees.',
-    full_summary:
-      'RAS Medical Ltd v Royal College of Surgeons in Ireland [2019] 1 IR 63 is a Supreme Court decision addressing the requirements of constitutional justice and fair procedures in the context of a decision-making process by a professional regulatory body. The applicant challenged a decision of the RCSI affecting its accreditation, alleging breaches of fair procedures. The Supreme Court considered the two foundational principles of constitutional justice — audi alteram partem (the right to be heard) and nemo iudex in causa sua (no person may be a judge in their own cause) — and confirmed their application in the regulatory and quasi-judicial sphere. The court held that these principles of constitutional justice are not confined to formal criminal or civil proceedings but apply wherever a body makes a decision that adversely affects the rights or legitimate expectations of another. The decision-maker must act fairly, must afford the affected party an opportunity to present their case, and must be free from actual or perceived bias. The case is important for its authoritative restatement of fair procedure requirements in Irish law and their applicability beyond the formal court system.',
-    subjects: ['criminal'],
-    topics: [
-      'fair procedures',
-      'judicial review',
-      'constitutional justice',
-      'decision-making',
-      'proportionality',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'J.D. v Residential Institutions Redress Review Committee',
-    citation: '[2010] 1 IR 262',
-    year: 2010,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Supreme Court considered the constitutionality of the Residential Institutions Redress Act 2002 and the procedures of the Review Committee established thereunder. The court held that the committee must observe fair procedures in assessing claims for redress arising from historical institutional abuse. The constitutional dimension — the State's historic failure to protect children in institutions — underscored the importance of fair and accessible redress mechanisms.",
-    key_quote:
-      "The State's obligation to vindicate constitutional rights extends to providing fair and accessible redress for persons who suffered abuse in institutions where the State had responsibility for their care.",
-    full_summary:
-      "J.D. v Residential Institutions Redress Review Committee [2010] 1 IR 262 is a Supreme Court case arising out of the system of redress established under the Residential Institutions Redress Act 2002 for survivors of historical abuse in State-supported residential institutions. The applicant challenged the procedures of the Review Committee established to hear appeals from decisions of the Redress Board, arguing that the committee had failed to observe fair procedures in determining his claim. The Supreme Court considered the constitutional dimension of the redress scheme, noting that the scheme arose from the State's acknowledged failure to protect children in its care in residential institutions over many decades. This constitutional background — the historic violation of children's constitutional rights — gave particular force to the obligation to ensure that the redress process was fair, accessible, and effective. The court held that the Review Committee was bound by fair procedure requirements and that a failure to observe those requirements in the determination of a redress claim would render the decision unlawful. The judgment is a significant authority on the constitutional obligations of statutory redress bodies and on the State's duty to make good historic violations of constitutional rights.",
-    subjects: ['criminal'],
-    topics: [
-      'institutional abuse',
-      'redress',
-      'constitutional rights',
-      'fair procedures',
-      'Residential Institutions Redress Act',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'B. v Director of Oberstown Children Detention Centre',
-    citation: '[2020] IESC 18',
-    year: 2020,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Supreme Court considered the constitutionality of conditions in the Oberstown children detention centre and the rights of detained children under Article 40. The court held that children in detention retain constitutional rights and that the State must ensure conditions of detention comply with constitutional standards. Overcrowding, isolation, and inadequate educational provision may render the detention of children unconstitutional. The court ordered improvements to conditions.',
-    key_quote:
-      'Children in detention are among the most vulnerable members of society; the State has an enhanced obligation to ensure their conditions of detention are humane, educational, and rehabilitative.',
-    full_summary:
-      "B. v Director of Oberstown Children Detention Centre [2020] IESC 18 is a landmark Supreme Court decision on the constitutional rights of children held in State detention at the Oberstown children detention campus in Co. Kildare. The applicant, a detained juvenile, challenged the conditions of his detention by way of an Article 40 inquiry, contending that those conditions were unconstitutional. The Supreme Court held that children who are detained by the State do not forfeit their constitutional rights and are, if anything, in an enhanced position as regards the State's protective obligations, given their vulnerability and the fact that they are in the direct care of the State. The court found that conditions at Oberstown — including overcrowding, the use of isolation as a disciplinary tool, and deficiencies in educational provision — fell below the constitutional minimum. The State's obligation to detained children is not merely to keep them physically secure but to ensure that detention serves rehabilitative and educational purposes. The judgment is a defining authority on youth detention law in Ireland and prompted significant reforms to the operation of Oberstown.",
-    subjects: ['criminal'],
-    topics: [
-      'youth justice',
-      "children's detention",
-      'constitutional rights',
-      'Article 40',
-      'conditions of detention',
-    ],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: "M. v Director of Oberstown Children's Detention Centre",
-    citation: '[2020] IECA 249',
-    year: 2020,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Court of Appeal considered conditions of detention at Oberstown and the constitutional rights of a detained child. Applying the Supreme Court's decision in B. v Oberstown, the court confirmed that conditions in youth detention must meet constitutional standards. The court addressed the specific conditions complained of and assessed whether they amounted to a constitutional violation. The judgment formed part of a series of cases addressing the reform of youth detention in Ireland.",
-    key_quote:
-      'The constitutional rights of detained children require the State to provide conditions that are compatible with their dignity, developmental needs, and rehabilitation.',
-    full_summary:
-      "M. v Director of Oberstown Children's Detention Centre [2020] IECA 249 is a Court of Appeal decision that followed in the wake of the Supreme Court's judgment in B. v Director of Oberstown [2020] IESC 18 and applied the constitutional principles laid down in that case to the specific circumstances of another detained child. The applicant challenged conditions at Oberstown by way of an Article 40 inquiry, raising concerns about isolation, physical conditions, and the adequacy of educational and welfare provision. The Court of Appeal applied the framework established by the Supreme Court, confirming that the constitutional rights of detained children require the State to ensure that conditions of detention are compatible with their dignity, developmental needs, and the objective of rehabilitation. The court carefully examined the conditions complained of and assessed whether they met or fell below the constitutional threshold. The judgment is one of a series of cases in 2020 that together formed a body of authority compelling reform of the Oberstown facility and clarifying the constitutional obligations of the State in the administration of youth detention.",
-    subjects: ['criminal'],
-    topics: [
-      'youth justice',
-      "children's detention",
-      'Article 40',
-      'conditions',
-      'constitutional rights',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Byrne v Director of Oberstown School',
-    citation: '[2013] IEHC 562',
-    year: 2013,
-    court: 'High Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The High Court considered the constitutionality of placing a detained juvenile in isolation/solitary confinement as a disciplinary measure. The court held that prolonged solitary confinement of a juvenile detainee is constitutionally impermissible and may amount to inhuman treatment. The court confirmed that children in detention retain the protection of Article 40.3 of the Constitution and that solitary confinement engages these protections.',
-    key_quote:
-      'Prolonged isolation of a juvenile in detention is constitutionally impermissible; the State must ensure that disciplinary measures in youth detention do not amount to inhuman treatment.',
-    full_summary:
-      "Byrne v Director of Oberstown School [2013] IEHC 562 is an important High Court decision that addressed the use of solitary confinement as a disciplinary measure in respect of detained juveniles at Oberstown. The applicant, a young person detained at Oberstown, challenged the lawfulness of his placement in isolation, contending that prolonged solitary confinement amounted to inhuman and degrading treatment contrary to the Constitution and the European Convention on Human Rights. The High Court held that children in detention retain the protection of Article 40.3 of the Constitution and that the use of solitary confinement or isolation as a disciplinary measure engages those constitutional protections. The court found that prolonged isolation of a juvenile detainee is constitutionally impermissible and may amount to inhuman treatment, having particular regard to the developmental vulnerability of young people. The judgment was an early High Court decision in the line of cases that ultimately led to the Supreme Court's authoritative ruling in B. v Oberstown in 2020, and it established important constitutional parameters for the disciplinary regime in youth detention.",
-    subjects: ['criminal'],
-    topics: [
-      'youth detention',
-      'conditions',
-      'constitutional rights',
-      'Article 40',
-      'solitary confinement',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'E.D. v C.K.',
-    citation: '[2024] IEHC 126',
-    year: 2024,
-    court: 'High Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The High Court in this 2024 judgment considered the interaction between the right to privacy and victim anonymity in sexual assault proceedings and the public interest in open justice. The court addressed the circumstances in which anonymity orders may be extended beyond the statutory provisions to protect victims and witnesses in criminal proceedings. The court balanced constitutional rights to privacy and dignity against the principle of open justice.',
-    key_quote:
-      'The right of a victim in sexual assault proceedings to anonymity may extend beyond statutory protection where constitutional rights of dignity and privacy require it.',
-    full_summary:
-      "E.D. v C.K. [2024] IEHC 126 is a 2024 High Court decision addressing the scope of anonymity protection available to victims of sexual assault in criminal and related civil proceedings. The case arose in the context of proceedings in which the victim sought anonymity protections beyond those provided by statute, relying on constitutional rights to privacy, dignity, and bodily integrity. The High Court considered the tension between the principle of open justice — which ordinarily requires that court proceedings be conducted in public and that parties be identified — and the constitutional rights of victims to privacy and dignity, particularly in the sensitive context of sexual assault proceedings. The court examined the circumstances in which the court's inherent jurisdiction or constitutional mandate permits the extension of anonymity orders beyond the express statutory provisions, including situations where the victim's identity could be pieced together through the combination of publicly available information. The judgment is a significant 2024 contribution to the developing law on victim protection in criminal proceedings and the constitutional underpinning of anonymity orders.",
-    subjects: ['criminal'],
-    topics: [
-      'anonymity',
-      'sexual assault',
-      'criminal proceedings',
-      'reporting restrictions',
-      'victim protection',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'People (DPP) v C.C.',
-    citation: '[2024] IESCDET 40',
-    year: 2024,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Supreme Court determination granting leave to appeal in CC indicates that the sentencing principles for serious sexual assault are of general public importance requiring authoritative Supreme Court guidance. The determination flags the need to address whether the Connor/Sutton/DC rape sentencing framework should be extended to cover other serious sexual offences. This 2024 case signals a significant development in sexual offence sentencing law.',
-    key_quote:
-      'The sentencing framework for serious sexual offences requires Supreme Court guidance; leave to appeal was granted because the issue is of general public importance.',
-    full_summary:
-      "People (DPP) v C.C. [2024] IESCDET 40 is a Supreme Court determination granting leave to appeal in a case involving sentencing for serious sexual assault. The determination is significant because it signals that the Supreme Court considers the sentencing framework applicable to serious sexual offences — beyond the specific crime of rape — to be an issue of general public importance warranting authoritative guidance from the court of final appeal. The Court of Appeal had addressed the sentencing structure in the case below, but the Supreme Court's grant of leave indicates that the principled framework established in cases such as The People (DPP) v Connor, Sutton, and DC — which set out headline sentences and discount structures for rape — may need to be extended, refined, or authoritatively applied to other serious sexual offences. The 2024 determination therefore signals a forthcoming landmark Supreme Court judgment that will shape sentencing practice across the spectrum of serious sexual offences and is a development of considerable importance for criminal law practitioners.",
-    subjects: ['criminal'],
-    topics: [
-      'sexual offences',
-      'sentencing',
-      'leave to appeal',
-      'Supreme Court determination',
-      'serious sexual assault',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Kelly v Hennessy',
-    citation: '[1995] 3 IR 253',
-    year: 1995,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Supreme Court laid down the Irish test for recovery for nervous shock (psychiatric injury). A primary victim who sustains psychiatric injury as a direct result of an accident does not require a separate proximity analysis. Secondary victims (those who suffer shock from witnessing injury to others) must establish: (i) they are in a close relationship of love and affection with the primary victim; (ii) they were proximate in time and space to the accident or its immediate aftermath; (iii) the psychiatric injury resulted from direct sensory perception of the accident. This is the leading Irish authority on nervous shock.',
-    key_quote:
-      'To recover for psychiatric injury as a secondary victim, the plaintiff must establish close ties of love and affection with the primary victim, proximity in time and space to the event, and direct sensory perception of the accident.',
-    full_summary:
-      "Kelly v Hennessy [1995] 3 IR 253 is the leading Irish Supreme Court authority on the recovery of damages for nervous shock (psychiatric injury). The plaintiff, the wife of a man seriously injured in a road traffic accident, suffered severe psychiatric illness as a result of witnessing her husband's condition in hospital in the immediate aftermath of the accident. The Supreme Court laid down the Irish test for recovery by secondary victims — that is, persons who suffer psychiatric injury not as direct participants in an accident but as witnesses to the injury of others. The court held that a secondary victim must establish three elements: first, that they were in a close relationship of love and affection with the primary victim; second, that they were proximate in time and space to the accident or its immediate aftermath; and third, that their psychiatric injury resulted from direct sensory perception of the accident or its immediate aftermath. The court confirmed that mere receipt of distressing news, or witnessing injury through television, will not suffice. The judgment adapts and refines the approach of the House of Lords in McLoughlin v O'Brian and Alcock v Chief Constable for the Irish jurisdiction and remains the definitive Irish statement of the nervous shock rules.",
-    subjects: ['criminal', 'torts'],
-    topics: [
-      'nervous shock',
-      'psychiatric injury',
-      'primary victim',
-      'secondary victim',
-      'proximity',
-    ],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: "McLoughlin v O'Brian",
-    citation: '[1983] 1 AC 410',
-    year: 1983,
     court: 'House of Lords',
-    jurisdiction: 'UK',
+    jurisdiction: 'England & Wales',
     legal_principle:
-      'The House of Lords extended liability for nervous shock to a secondary victim who witnessed the aftermath of an accident at a hospital some time after the accident itself. Lord Bridge and Lord Scarman favoured a principled approach based on foreseeability alone. Lord Wilberforce applied a policy-based three-stage test for proximity. The case was a significant expansion of nervous shock liability and influenced subsequent Irish and English case law including Alcock v Chief Constable and Kelly v Hennessy.',
+      "An agreement to negotiate in good faith is unenforceable in English and Irish law because it is inherently repugnant to the adversarial position of the parties in negotiations. Such an agreement lacks the certainty required of a binding contract, as the court cannot assess whether a party has negotiated 'in good faith'.",
     key_quote:
-      'Nervous shock suffered by a secondary victim who witnesses the immediate aftermath of an accident may be recoverable where the relationship with the primary victim and proximity to the event are established.',
+      'A lock-out agreement can only be of value to the prospective purchaser if it is for a definite period; an agreement to negotiate in good faith is inherently unworkable and therefore unenforceable.',
     full_summary:
-      "McLoughlin v O'Brian [1983] 1 AC 410 is a House of Lords decision that significantly extended the law of nervous shock. The plaintiff's family was involved in a serious road traffic accident. She was informed at home and travelled to the hospital where she witnessed her family members in a seriously injured condition shortly after the accident. She suffered serious psychiatric illness as a result. The House of Lords held that she was entitled to recover damages for nervous shock despite not having witnessed the accident itself, only its aftermath at the hospital. The law lords were divided on the appropriate basis for the decision. Lord Wilberforce favoured a restrictive three-part test requiring foreseeability, a close relationship between the plaintiff and the primary victim, and physical and temporal proximity to the accident. Lords Bridge and Scarman favoured a broader foreseeability-based approach. The case is significant for extending liability to the 'aftermath' of an accident and for the debate about policy versus principle in nervous shock cases. It directly influenced the approach taken by the House of Lords in Alcock and by the Irish Supreme Court in Kelly v Hennessy.",
-    subjects: ['criminal', 'torts'],
-    topics: ['nervous shock', 'psychiatric injury', 'secondary victim', 'aftermath', 'proximity'],
+      "The Walford family were negotiating to buy Miles's business. Miles verbally agreed to stop negotiating with other parties and negotiate in good faith exclusively with Walford provided Walford provided a 'comfort letter'. Miles broke off negotiations and sold to a third party. Walford sued on the 'lock-out' agreement and agreement to negotiate in good faith. The House of Lords (Lord Ackner) held that an agreement to negotiate in good faith is unenforceable because it is too uncertain — how would a court determine whether a party is negotiating in good faith? Such an obligation is also inconsistent with a party's right to pursue its own interests in negotiations. A lock-out agreement for a definite period (agreeing not to negotiate with others for a fixed time) can be enforceable; it is the obligation to negotiate in good faith that is void.",
+    subjects: ['contract-law'],
+    topics: ['certainty-of-terms', 'good-faith', 'negotiations', 'pre-contractual-agreements'],
     is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2022 Q4', 'Contract Autumn 2023 Q3'],
+  },
+  {
+    case_name: 'Jet2.com Ltd v Blackpool Airport Ltd',
+    citation: '[2012] EWCA Civ 417',
+    year: 2012,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "An agreement to use 'best endeavours' or 'reasonable endeavours' to promote a commercial venture can be sufficiently certain to be enforceable, provided the obligations can be given workable content by the courts. The standard of 'best endeavours' requires a party to take all reasonable steps that a prudent and determined person would take.",
+    key_quote:
+      'An obligation to use best endeavours is not too uncertain to be enforced; it requires a party to take all reasonable steps that a prudent and determined person would take.',
+    full_summary:
+      "Jet2 entered into an agreement with Blackpool Airport to develop low-cost airline services. The airport agreed to use 'best endeavours' to promote Jet2's flights. The airport later refused to permit Jet2 to use the airport outside normal operating hours. The Court of Appeal held that the 'best endeavours' obligation was sufficiently certain and enforceable. The obligation required the airport to take all reasonable steps that a prudent airport operator would take to facilitate Jet2's operations, including accepting out-of-hours flights. This is important FE-1 authority establishing the difference between a void agreement to negotiate (Walford v Miles) and an enforceable 'best endeavours' obligation.",
+    subjects: ['contract-law'],
+    topics: ['certainty-of-terms', 'best-endeavours', 'commercial-contracts'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Greater London Council v Connolly',
+    citation: '[1970] 2 QB 100',
+    year: 1970,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "A 'subject to conditions from time to time laid down' clause does not necessarily render a contract void for uncertainty if the conditions are objectively ascertainable or if one party has a discretion that is fettered by an implied obligation to act reasonably.",
+    key_quote:
+      "The words 'as directed' do not make the agreement uncertain; they are to be read as importing an obligation on the party giving the directions to act reasonably.",
+    full_summary:
+      "A tenancy agreement provided that rent was payable 'subject to conditions from time to time laid down by the council'. When the council attempted to impose new conditions, the tenant argued the clause was void for uncertainty. The Court of Appeal held the clause was valid. Uncertainty arising from a power to vary terms is not fatal where the discretion must be exercised reasonably. A public body has an implied obligation to act rationally and for a proper purpose when exercising discretion. The case is used in FE-1 materials to show that apparently uncertain 'as directed' or 'subject to conditions' clauses can be saved by implying a reasonableness obligation.",
+    subjects: ['contract-law'],
+    topics: ['certainty-of-terms', 'implied-terms', 'discretion-clauses'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Currie v Misa',
+    citation: '(1875) LR 10 Ex 153',
+    year: 1875,
+    court: 'Exchequer Chamber',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Consideration consists of some right, interest, profit or benefit accruing to one party, or some forbearance, detriment, loss or responsibility given, suffered or undertaken by the other. This is the classic definition of consideration encompassing both benefit to the promisor and detriment to the promisee.',
+    key_quote:
+      'A valuable consideration, in the sense of the law, may consist either in some right, interest, profit, or benefit accruing to the one party, or some forbearance, detriment, loss, or responsibility, given, suffered, or undertaken by the other.',
+    full_summary:
+      "Misa drew bills of exchange on Currie's bankers as consideration for funds he received. A dispute arose as to whether valid consideration existed for the transactions. Lush J in the Exchequer Chamber formulated the classic definition of consideration used in virtually all contract law textbooks: consideration is either a benefit to the promisor or a detriment to the promisee. This dual formulation — either limb will suffice — remains the foundational definition of consideration in Irish and English law. FE-1 students must know this definition verbatim and apply it to identify whether acts or forbearances constitute valid consideration in examination problems.",
+    subjects: ['contract-law'],
+    topics: ['consideration', 'definition', 'benefit-detriment'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2019 Q3', 'Contract Autumn 2021 Q4'],
+  },
+  {
+    case_name: 'Thomas v Thomas',
+    citation: '(1842) 2 QB 851',
+    year: 1842,
+    court: "Queen's Bench",
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Consideration must move from the promisee but need not be adequate. Courts will not investigate the commercial adequacy of consideration provided it is of some value, however small. A peppercorn rent of £1 per year can be good consideration even where the market value of the property is far higher.',
+    key_quote:
+      'Motive is not the same thing with consideration. Consideration means something which is of some value in the eye of the law; a peppercorn may be a trifle, but it is sufficient.',
+    full_summary:
+      "Mr Thomas promised in his will that his widow could live in their house for her lifetime. His executors (the Thomas brothers) agreed that the widow could remain in the house so long as she paid £1 per year and kept it in good repair. When they tried to eject her, she claimed a binding contract. The court held there was a good contract: the £1 annual payment and obligation to maintain the property constituted sufficient consideration, even though it was far below market value. The court distinguished between motive (why a party enters the contract — honouring the deceased's wishes) and consideration (what is given in exchange). Motive cannot be consideration; only acts or forbearances of legal value suffice. This case establishes both the adequacy rule and the motive/consideration distinction, both key FE-1 points.",
+    subjects: ['contract-law'],
+    topics: ['consideration', 'adequacy', 'past-consideration', 'motive'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2020 Q3'],
+  },
+  {
+    case_name: 'Chappell & Co Ltd v Nestlé Co Ltd',
+    citation: '[1960] AC 87',
+    year: 1960,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Consideration need not be adequate and need not have any intrinsic value. Even a worthless wrapper can form part of the consideration for a contract, provided it is bargained for and the parties treat it as part of the exchange.',
+    key_quote:
+      'A peppercorn does not cease to be good consideration if it is established that the promisee does not like pepper and will throw away the corn.',
+    full_summary:
+      'Nestlé offered gramophone records for 1s 6d plus three chocolate bar wrappers. The issue was whether the copyright royalties should be calculated on the full sale price including the wrappers. Nestlé argued the wrappers were of no value and therefore not part of the consideration. The House of Lords held that the wrappers were part of the consideration for the sale of the records, even though they had no economic value. Nestlé wanted the wrappers for their promotional and marketing value. Since Nestlé bargained for the wrappers as part of the exchange, they were good consideration regardless of their intrinsic worth. The majority (3:2) held that consideration need not be adequate, and even commercially worthless things are good consideration if bargained for. A famous FE-1 authority on the sufficiency and adequacy of consideration.',
+    subjects: ['contract-law'],
+    topics: ['consideration', 'adequacy', 'sufficiency'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'White v Bluett',
+    citation: '(1853) 23 LJ Ex 36',
+    year: 1853,
+    court: 'Exchequer',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'A promise to cease complaining is not good consideration because a person has no legal right to complain. Consideration must have legal value; a mere promise to refrain from doing something the promisor has no legal right to do in the first place is not sufficient consideration.',
+    key_quote:
+      'The son had no right to make such complaints, and the father had no right to treat them as a reason for releasing him from his obligations; the promise was without consideration.',
+    full_summary:
+      "A son owed money to his father. The father allegedly promised to release the son from the debt if he would stop complaining about the distribution of family property. The son stopped complaining. The court held there was no valid consideration for the father's promise. A promise to cease complaining, when the son had no legal right to complain, is not good consideration. For consideration to be legally sufficient, it must involve giving up or performing something of legal value — a mere forbearance from doing something the promisor has no right to do cannot be consideration. The case illustrates the distinction between 'sufficient' consideration (having legal value) and acts that appear to be detriments but have no legal content.",
+    subjects: ['contract-law'],
+    topics: ['consideration', 'sufficiency', 'forbearance'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Re McArdle',
+    citation: '[1951] Ch 669',
+    year: 1951,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "Past consideration is no consideration. A promise to pay for an act that has already been fully performed before the promise was made is unenforceable for want of consideration, unless the past act was performed at the promisor's request with an implied promise of payment.",
+    key_quote:
+      'The work had been done before the promise to pay was made, so the consideration for the promise was past and therefore no consideration at all.',
+    full_summary:
+      'Mrs McArdle carried out improvements to a family home at her own expense. Afterwards, other family members promised in writing to reimburse her out of the estate. They later refused to pay. The Court of Appeal held the promise was unenforceable. All the work had been completed before the promise was made; the consideration was therefore past. Past consideration is no consideration because the performance of the act was not induced by the promise to pay — the promise came after the act was done. For consideration to be good, the act must be performed in response to (or at least contemporaneously with) the promise. This is the leading FE-1 case on the past consideration rule, alongside Lampleigh v Braithwait for the exception.',
+    subjects: ['contract-law'],
+    topics: ['consideration', 'past-consideration'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2021 Q4', 'Contract Autumn 2022 Q3'],
+  },
+  {
+    case_name: 'Lampleigh v Braithwait',
+    citation: '(1615) Hob 105',
+    year: 1615,
+    court: "King's Bench",
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "Past consideration can be good consideration where: (1) the act was performed at the promisor's express or implied request; (2) both parties understood that payment would be made; and (3) the subsequent promise is in respect of that prior act. In these circumstances the original request and subsequent promise are treated as one transaction.",
+    key_quote:
+      'A mere voluntary courtesy will not have a consideration to uphold an assumpsit; but if such courtesy were moved by a suit or request of the party that gives the assumpsit, it will bind.',
+    full_summary:
+      "Braithwait killed a man and asked Lampleigh to obtain a royal pardon for him. Lampleigh went to considerable expense and effort to do so. After the pardon was obtained, Braithwait promised to pay Lampleigh £100 but later refused. The King's Bench held that the promise to pay was enforceable. Although the services had been rendered before the promise, they were performed at Braithwait's request, and both parties understood that some payment would be made. The request and the subsequent promise were regarded as a single transaction. This is the leading authority on the exception to the past consideration rule, codified in Pao On v Lau Yiu Long, and essential FE-1 learning alongside Re McArdle.",
+    subjects: ['contract-law'],
+    topics: ['consideration', 'past-consideration', 'implied-request'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Stilk v Myrick',
+    citation: '(1809) 2 Camp 317; 6 Esp 129',
+    year: 1809,
+    court: "King's Bench",
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Performance of a pre-existing contractual duty owed to the promisor is not good consideration for a further promise by the promisor. A promise to perform what one is already contractually bound to do cannot support a new obligation.',
+    key_quote:
+      'If the crew had deserted, the captain might have been justified in compelling them to return to their duty; their voluntary return was no more than they were already bound to do.',
+    full_summary:
+      "A ship sailed with a crew of eleven. Two sailors deserted during the voyage. The captain promised the remaining nine that if they worked the ship home short-handed, he would divide the deserters' wages among them. On arrival, the ship owners refused to pay. The court held there was no enforceable contract to pay the extra wages. The remaining crew were already contractually obligated to work the ship home as best they could — they had simply performed their pre-existing contractual duty. They provided no fresh consideration for the captain's promise. The policy reason was also to prevent economic duress — crews should not be able to extort extra pay from vulnerable ship owners mid-voyage. Stilk v Myrick is the cornerstone FE-1 case on pre-existing contractual duty, significantly qualified (but not overruled) by Williams v Roffey Brothers.",
+    subjects: ['contract-law'],
+    topics: ['consideration', 'pre-existing-duty', 'performance-of-contractual-duty'],
+    is_frequently_tested: true,
+    past_paper_appearances: [
+      'Contract Autumn 2019 Q4',
+      'Contract Spring 2021 Q4',
+      'Contract Spring 2023 Q3',
+    ],
+  },
+  {
+    case_name: 'Hartley v Ponsonby',
+    citation: '(1857) 7 El & Bl 872',
+    year: 1857,
+    court: "Queen's Bench",
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Where crew desertions are so numerous that working the remaining ship becomes radically more dangerous and burdensome than the original contract required, a promise of extra pay to the remaining crew can be enforceable. The original contract is discharged by the radical change and a new contract is formed.',
+    key_quote:
+      'When so many men had deserted that the performance of the duty became so onerous as to be different in kind from that originally contracted for, the original contract was at an end.',
+    full_summary:
+      "Thirty-six of a ship's crew of sixty deserted. The captain promised extra pay to the remaining crew if they would sail the ship home with so few hands. The court distinguished this case from Stilk v Myrick on the grounds that the crew shortage was so severe that sailing short-handed was a fundamentally different and far more dangerous task than what the original contract required. The original contract was effectively discharged by the changed circumstances, and a new contract on new terms was formed. The case creates an important qualification to Stilk v Myrick and is relevant to FE-1 for understanding when a change in circumstances can provide fresh consideration for extra pay.",
+    subjects: ['contract-law'],
+    topics: ['consideration', 'pre-existing-duty', 'discharge', 'sailors'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Williams v Roffey Bros & Nicholls (Contractors) Ltd',
+    citation: '[1991] 1 QB 1',
+    year: 1991,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Where a party obtains a practical benefit from a promise to pay more for performance of an existing contractual obligation, and the promise is not obtained by duress or fraud, that practical benefit can constitute good consideration for the additional promise. This significantly qualifies but does not overrule Stilk v Myrick.',
+    key_quote:
+      "If A has entered into a contract with B to do work for, or to supply goods or services to, B in return for payment by B and, before A has completely performed his obligations under the contract B has reason to doubt whether A will, or will be able to, complete his side of the bargain and B thereupon promises A an additional payment in return for A's promise to perform his contractual obligations on time, and as a result of giving his promise B obtains in practice a benefit ... then ... B's promise shall be legally binding.",
+    full_summary:
+      'Roffey Bros contracted with a housing association to refurbish flats. They subcontracted the carpentry work to Williams at a price Williams later realised was too low. Williams fell into financial difficulty and Roffey Bros, worried about having to pay penalty clauses under the main contract, promised Williams extra payments to complete the work. Williams completed several flats and Roffey Bros refused to pay the extra amount. The Court of Appeal held Williams was entitled to the extra payments. Although Williams was only performing his pre-existing contractual obligation (qualifying under Stilk v Myrick as no new consideration), Roffey Bros had obtained a practical benefit — avoiding the penalty clauses under the main contract. That practical benefit was good consideration for the extra promise, provided the promise was freely given without duress. The case is a critical FE-1 authority both for its modification of Stilk v Myrick and for its interaction with economic duress.',
+    subjects: ['contract-law'],
+    topics: ['consideration', 'pre-existing-duty', 'practical-benefit', 'modification-of-contract'],
+    is_frequently_tested: true,
+    past_paper_appearances: [
+      'Contract Spring 2019 Q4',
+      'Contract Autumn 2021 Q4',
+      'Contract Spring 2024 Q3',
+    ],
+  },
+  {
+    case_name: 'Foakes v Beer',
+    citation: '(1884) 9 App Cas 605',
+    year: 1884,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Payment of a lesser sum cannot satisfy a debt for a greater sum, even if the creditor agrees to accept the lesser sum in full satisfaction. Part-payment of a debt is not good consideration for a promise to forego the balance.',
+    key_quote:
+      'The giving of a lesser sum in satisfaction of a greater sum cannot be any satisfaction for the whole; the benefit accruing to the creditor by payment being present is not sufficient.',
+    full_summary:
+      "Mrs Beer obtained a judgment against Dr Foakes for £2,090. She agreed in writing that if Foakes paid £500 immediately and the rest in instalments, she would not take proceedings on the judgment. After Foakes had paid the full principal, Beer sued for the interest (about £360) which had been accumulating on the judgment. The House of Lords held Beer was entitled to the interest. Foakes' agreement to pay the judgment debt in instalments was not good consideration for Beer's promise not to enforce interest — he was only doing what he was already obliged to do (pay the judgment debt). The principle from Pinnel's Case (1602) was reaffirmed: payment of a lesser sum is not satisfaction of a greater. This is modified in equity by the doctrine of promissory estoppel (Central London Property v High Trees House).",
+    subjects: ['contract-law'],
+    topics: [
+      'consideration',
+      'part-payment-of-debt',
+      'pre-existing-duty',
+      'accord-and-satisfaction',
+    ],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2020 Q3', 'Contract Spring 2022 Q3'],
+  },
+  {
+    case_name: 'Re Selectmove Ltd',
+    citation: '[1995] 1 WLR 474',
+    year: 1995,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'The Williams v Roffey principle of practical benefit as consideration applies to promises to pay more for existing services, but cannot be extended to promises to accept less in discharge of an existing debt. The doctrine of Foakes v Beer governs part-payment of debts and the courts will not extend Williams v Roffey to undermine it.',
+    key_quote:
+      'Williams v Roffey Bros cannot be extended to cases governed by Foakes v Beer; if it were, it would leave Foakes v Beer without any application.',
+    full_summary:
+      'Selectmove Ltd owed substantial arrears of PAYE tax. A company representative alleged he had agreed with an Inland Revenue collector that Selectmove would pay future taxes as they arose and the arrears by instalments. The Revenue later sought to wind up the company for the full amount. Selectmove argued the Revenue had given consideration for its promise to accept instalments by obtaining the practical benefit of receiving something rather than nothing. The Court of Appeal refused to extend Williams v Roffey to part-payment of debts. If it were so extended, the principle would entirely undermine Foakes v Beer. Only the House of Lords could overrule Foakes. The case draws a clear distinction: Williams v Roffey applies to promises to perform extra services (not just more of the same); it does not apply to part-payment of debts.',
+    subjects: ['contract-law'],
+    topics: [
+      'consideration',
+      'part-payment-of-debt',
+      'practical-benefit',
+      'modification-of-contract',
+    ],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2021 Q4', 'Contract Spring 2023 Q3'],
+  },
+  {
+    case_name: 'Eastwood v Kenyon',
+    citation: '(1840) 11 Ad & El 438',
+    year: 1840,
+    court: "Queen's Bench",
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "A moral obligation does not constitute good consideration. A promise made in recognition of a past moral debt — where the act was not performed at the promisor's request — cannot support an enforceable contract. Past consideration is not valid consideration in the absence of a prior request.",
+    key_quote:
+      'A moral obligation arising from a benefit received is not sufficient to support an assumpsit; the law will not imply a promise from moral obligation alone.',
+    full_summary:
+      'Eastwood was the guardian of a young woman and spent his own money on her education and maintenance. After she came of age, she and her husband (Kenyon) promised to repay Eastwood. They later refused. The court held the promise was unenforceable. Eastwood had spent the money of his own accord without any request from the woman. The acts were past consideration. A moral obligation to reimburse a person who has conferred a benefit does not constitute legally sufficient consideration. This case firmly establishes that moral obligation alone cannot constitute consideration, and is a useful FE-1 counterpoint to Lampleigh v Braithwait (which requires a prior request for the exception to apply).',
+    subjects: ['contract-law'],
+    topics: ['consideration', 'past-consideration', 'moral-obligation'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Pao On v Lau Yiu Long',
+    citation: '[1980] AC 614',
+    year: 1980,
+    court: 'Privy Council',
+    jurisdiction: 'Hong Kong',
+    legal_principle:
+      "The principle that past consideration may be good consideration where the act was done at the promisor's request (Lampleigh v Braithwait) was confirmed and codified. An act done before a formal promise is not past consideration if it was done at the promisor's request, with both parties understanding payment would follow, and a binding promise was legally enforceable from the outset.",
+    key_quote:
+      "An act done before the giving of a promise can sometimes be consideration for the promise if the act was done at the promisor's request, the parties understood that the act was to be remunerated either by a payment or the conferment of some other benefit, and payment, or the conferment of a benefit, would have been legally enforceable had it been promised in advance.",
+    full_summary:
+      "Pao On agreed to sell shares in Fu Chip to the company, retaining 60% for one year. To protect against a fall in value, Lau Yiu Long (majority shareholders) agreed to buy the retained shares at the original price if Pao On requested. After the main agreement, Pao On threatened to repudiate it unless Lau Yiu Long gave a guarantee. Lau Yiu Long gave a revised guarantee. Pao On later relied on this guarantee when the share price fell. The Privy Council held the guarantee was enforceable. The earlier act (agreeing to the main contract) was done at Lau Yiu Long's request; both parties understood payment or benefit would follow; and enforcement would have been available at the time. The three conditions for the past consideration exception were satisfied. The case codifies Lampleigh v Braithwait and is essential FE-1 authority on past consideration.",
+    subjects: ['contract-law'],
+    topics: ['consideration', 'past-consideration', 'implied-request', 'economic-duress'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Central London Property Trust Ltd v High Trees House Ltd',
+    citation: '[1947] KB 130',
+    year: 1947,
+    court: "King's Bench Division",
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Where a party makes a clear and unequivocal promise to waive or vary contractual rights, intending that the other party will act on it, and the promisee acts in reliance, the promisor is estopped from going back on that promise for the period during which it was acted upon. This doctrine of promissory estoppel may be used as a shield to defend against a strict legal right, but not as a sword to found a cause of action.',
+    key_quote:
+      'A promise made knowing it will be relied on and in fact relied on, is binding, notwithstanding no consideration in the strict sense.',
+    full_summary:
+      'A landlord leased a block of flats in 1937 for 99 years at £2,500 per annum. The flats could not be fully sublet during the war and in 1940 the landlord agreed in writing to reduce the rent to £1,250. After the war ended and the flats were fully occupied, the landlord sought to enforce the full original rent for all periods. Denning J (as he then was) held that the landlord could recover the full rent from the end of the war onwards, but was estopped from claiming arrears for the wartime period when the tenants had relied on the reduced rent. He reformulated and extended the doctrine from Hughes v Metropolitan Railway, creating the modern doctrine of promissory estoppel. The doctrine requires: (1) a clear and unambiguous promise to forgo legal rights; (2) an intention that the promise would be acted upon; (3) detrimental reliance. This is the single most important FE-1 case on promissory estoppel.',
+    subjects: ['contract-law'],
+    topics: ['promissory-estoppel', 'consideration', 'waiver', 'modification-of-contract'],
+    is_frequently_tested: true,
+    past_paper_appearances: [
+      'Contract Spring 2019 Q3',
+      'Contract Autumn 2020 Q4',
+      'Contract Spring 2022 Q3',
+      'Contract Autumn 2024 Q2',
+    ],
+  },
+  {
+    case_name: 'Combe v Combe',
+    citation: '[1951] 2 KB 215',
+    year: 1951,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Promissory estoppel can only be used as a shield (a defence) and not as a sword (a cause of action). A promisee cannot use promissory estoppel as the basis of an independent claim against the promisor; it can only be used to prevent the promisor from enforcing his strict legal rights.',
+    key_quote:
+      'Estoppel cannot be used as a cause of action. It can only be used in defence. It is a shield, not a sword.',
+    full_summary:
+      "During divorce proceedings, a husband promised his wife that he would pay her £100 per year in maintenance. He paid nothing. When she sued to enforce the promise, she argued promissory estoppel as she had refrained from applying to the divorce court for maintenance in reliance on his promise. The Court of Appeal held there was no enforceable contract (no consideration) and promissory estoppel could not be used as a cause of action (a sword) — it could only prevent the promisee from resiling from a promise they had made (a shield). The wife's act of forbearing from applying to court was not done at the husband's request and was therefore not consideration. The case firmly establishes the 'shield not sword' limitation on promissory estoppel and the requirement for consideration to ground an independent cause of action.",
+    subjects: ['contract-law'],
+    topics: ['promissory-estoppel', 'consideration', 'shield-not-sword'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2020 Q4', 'Contract Spring 2023 Q4'],
+  },
+  {
+    case_name: 'D & C Builders Ltd v Rees',
+    citation: '[1966] 2 QB 617',
+    year: 1966,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "Promissory estoppel requires that the promise or representation be freely given. It is inequitable to allow a party to rely on promissory estoppel where the promise was obtained by duress or by taking advantage of the promisor's financial difficulties. Equity will not assist a promisee who has acted inequitably.",
+    key_quote:
+      'There is no equity in a debtor who secures a promise to accept less than the full amount of his debt by threatening not to pay anything at all.',
+    full_summary:
+      'D&C Builders were owed £482 for building work. When they desperately needed money, Mrs Rees threatened that unless they accepted £300 in full settlement, she would pay nothing. They reluctantly agreed. The Court of Appeal held they could sue for the balance. Foakes v Beer applied — part-payment is not satisfaction of the full debt. Promissory estoppel could not assist Mrs Rees because her promise had been extracted by a form of duress — she knew the builders were in financial difficulty and exploited that to extract a discount. Estoppel must be used consistently with equitable principles; it is unavailable to a party who has acted unconscionably or applied pressure to obtain the promise. The case is critical FE-1 learning on the limits of promissory estoppel, and on the interaction between consideration, part-payment, and equitable doctrines.',
+    subjects: ['contract-law'],
+    topics: ['promissory-estoppel', 'consideration', 'part-payment-of-debt', 'duress', 'equity'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2022 Q3', 'Contract Spring 2024 Q4'],
+  },
+  {
+    case_name: 'Hughes v Metropolitan Railway Co',
+    citation: '(1877) 2 App Cas 439',
+    year: 1877,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'If parties enter into negotiations which lead one party to believe that the strict rights under the contract will not be enforced, equity will prevent the strict rights from being enforced for so long as the negotiations continue and the promisee is relying on the representation. This is the foundational statement of the principle underlying promissory estoppel.',
+    key_quote:
+      'If parties who have entered into definite and distinct terms involving certain legal results afterwards by their conduct negotiate in such a way as would lead a reasonable man to suppose that the strict rights are to be released or not enforced, the court will not allow the party who has negotiated away his strict legal rights to enforce them.',
+    full_summary:
+      "A landlord gave a tenant six months' notice to carry out repairs under the lease or face forfeiture. During the notice period, the landlord and tenant entered into negotiations for a new lease. Two months before the notice expired, negotiations broke down. The landlord then sought forfeiture, arguing the tenant had only four months instead of six to complete the repairs. The House of Lords held the landlord could not rely on the notice period running during negotiations. By entering into negotiations suggesting the notice might be extended or the lease renegotiated, the landlord had led the tenant to believe the strict notice period would not be enforced. Equity would prevent the landlord from enforcing the notice period from the date when negotiations commenced, restoring the full six months from when they ended. This is the historical foundation of promissory estoppel, developed by Denning J in High Trees.",
+    subjects: ['contract-law'],
+    topics: ['promissory-estoppel', 'waiver', 'equity', 'notice'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Cullen v Cullen',
+    citation: '[1962] IR 268',
+    year: 1962,
+    court: 'High Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      'Promissory estoppel applies in Irish law and can prevent a landowner from asserting title to land against a licensee where the owner has made a clear representation that the licensee could occupy the land and the licensee has spent money in reliance on that representation.',
+    key_quote:
+      'Where a man has made a representation to another which has led that other to act to his detriment, equity will prevent the first man from going back on his representation.',
+    full_summary:
+      "A son (Martin Cullen) occupied land owned by his father and spent money improving it, relying on his father's repeated assurances that the land would be his. The father subsequently tried to enforce his strict legal title. Kenny J in the Irish High Court held that the father was estopped by promissory estoppel from asserting his strict legal title. The son had acted in reliance on his father's clear assurances and it would be unconscionable to allow the father to go back on them. The case is the leading Irish authority on promissory estoppel/proprietary estoppel in a family land context. It confirms the availability of estoppel in Irish law and that it can arise in the context of informal family arrangements. It is frequently cited in FE-1 Contract and Property Law papers.",
+    subjects: ['contract-law'],
+    topics: ['promissory-estoppel', 'proprietary-estoppel', 'irish-cases', 'equity'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2021 Q5', 'Contract Spring 2023 Q4'],
+  },
+  {
+    case_name: 'Kenny v Kelly',
+    citation: '[1988] IR 457',
+    year: 1988,
+    court: 'High Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      'For promissory estoppel to operate, there must be a clear and unequivocal promise or representation. A mere statement of future intention that falls short of a clear promise is insufficient to found an estoppel. The promise must be intended to affect the legal relations between the parties.',
+    key_quote:
+      'A vague expression of hope or intention does not amount to the clear and unequivocal representation required to found a promissory estoppel.',
+    full_summary:
+      "Kenny sought to invoke promissory estoppel against Kelly, claiming that Kelly's statements had led him to act in reliance on a promise that Kelly would not enforce a strict legal right. The Irish High Court examined the nature of the representation and found it was insufficiently clear and unequivocal to found an estoppel. The court set out the Irish requirements for promissory estoppel: (1) a clear and unambiguous representation; (2) the representor intended the representee to act on it; (3) the representee did act on it; (4) it would be inequitable for the representor to resile from it. A mere expression of hope or qualified intention will not suffice. The case is a key Irish authority establishing the standard for the required representation in promissory estoppel cases.",
+    subjects: ['contract-law'],
+    topics: ['promissory-estoppel', 'irish-cases', 'requirements-of-estoppel'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Balfour v Balfour',
+    citation: '[1919] 2 KB 571',
+    year: 1919,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Agreements between spouses (or parties in a domestic relationship) are presumed not to be intended to create legal relations. This presumption can be rebutted by evidence that the parties intended their agreement to be legally binding, but where the parties are living amicably together and make household arrangements, the courts will not give legal effect to those arrangements.',
+    key_quote:
+      'Agreements such as this are outside the realm of contracts altogether. The common law does not regulate the form of agreements between spouses. Their promises are not sealed with seals and sealing wax. The consideration that really obtains for them is that natural love and affection which counts for so little in these cold Courts.',
+    full_summary:
+      'A husband working in Ceylon promised to pay his wife £30 per month while she remained in England on medical advice. The marriage later broke down and the husband stopped paying. The wife sued for the arrears. The Court of Appeal held there was no enforceable contract. Agreements between spouses living in amicable relations are presumed not to be intended to be legally binding. Domestic arrangements do not give rise to contracts because the parties cannot be supposed to have intended legal consequences. This presumption against legal relations in domestic/family agreements is a cornerstone FE-1 principle, to be contrasted with Merritt v Merritt where the presumption was rebutted because the parties had already separated.',
+    subjects: ['contract-law'],
+    topics: ['intention-to-create-legal-relations', 'domestic-agreements', 'family-contracts'],
+    is_frequently_tested: true,
+    past_paper_appearances: [
+      'Contract Spring 2020 Q5',
+      'Contract Autumn 2022 Q4',
+      'Contract Spring 2024 Q5',
+    ],
+  },
+  {
+    case_name: 'Merritt v Merritt',
+    citation: '[1970] 1 WLR 1211',
+    year: 1970,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "The presumption against legal relations in domestic agreements can be rebutted by evidence of a genuine intention to be legally bound. Where spouses have already separated and make a formal written agreement about property at arm's length, legal relations are intended and the agreement is binding.",
+    key_quote:
+      "The parties were bargaining at arm's length after the marriage had broken down. In such circumstances, they must be taken to have intended legal consequences.",
+    full_summary:
+      "After Mr Merritt left his wife for another woman, the couple met and Mr Merritt signed a document agreeing that if his wife paid off the mortgage, she could have the house. She paid off the mortgage but he refused to transfer the house. The Court of Appeal held the agreement was legally binding. Unlike Balfour v Balfour (where parties were living amicably), these parties had already separated. Agreements made at arm's length by separating spouses are intended to be legally binding, especially when reduced to writing. The signed document confirmed the seriousness of intent. The case is essential FE-1 authority as a counterpart to Balfour v Balfour, showing when the domestic presumption can be displaced.",
+    subjects: ['contract-law'],
+    topics: [
+      'intention-to-create-legal-relations',
+      'domestic-agreements',
+      'rebuttal-of-presumption',
+    ],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2020 Q5', 'Contract Autumn 2022 Q4'],
+  },
+  {
+    case_name: 'Jones v Padavatton',
+    citation: '[1969] 1 WLR 328',
+    year: 1969,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'An arrangement between a mother and daughter for the mother to support the daughter while studying for the Bar lacked the necessary intention to create legal relations. Family arrangements, even where specific terms are discussed, remain in the domestic sphere unless clearly intended to be legally binding.',
+    key_quote:
+      'This is a family arrangement of the kind that falls within Balfour v Balfour. There was not the necessary intention to create legal relations.',
+    full_summary:
+      'A mother persuaded her daughter to give up a well-paid job in the United States and come to England to study for the Bar, promising to pay her a monthly allowance. Later the mother bought a house in London which the daughter occupied and sublet. A dispute arose and the mother sought possession of the house. The Court of Appeal held there was no enforceable contract for the allowance — it was a typical domestic family arrangement without legal intent. As to the house, even if there was an agreement, it was too vague and uncertain to be enforced. The case reinforces Balfour v Balfour and shows that even detailed family discussions may lack the requisite contractual intent, particularly where the arrangement is of a moral or familial rather than a commercial character.',
+    subjects: ['contract-law'],
+    topics: ['intention-to-create-legal-relations', 'domestic-agreements', 'family-contracts'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Rose & Frank Co v JR Crompton & Bros Ltd',
+    citation: '[1925] AC 445',
+    year: 1925,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "Parties may expressly exclude the intention to create legal relations in commercial agreements, making the arrangement a binding gentleman's agreement only. However, orders placed and accepted under such an arrangement may give rise to binding contracts for those specific transactions even if the overarching framework is not legally enforceable.",
+    key_quote:
+      'Where parties to a commercial arrangement express their intention that it shall not create legal relations, the court will give effect to that intention.',
+    full_summary:
+      "Crompton Brothers appointed Rose & Frank as their sole US agent. The agreement contained an 'honourable pledge' clause stating it was 'not subject to legal jurisdiction in the law courts'. Crompton then terminated without notice and declined to fulfil outstanding orders. The House of Lords held that the overarching arrangement was not legally binding — the honourable pledge clause validly excluded legal intent. However, individual orders placed and accepted under the arrangement were separate binding contracts for the supply of goods. The case establishes that the presumption in favour of legal intent in commercial agreements can be displaced by an express exclusion. It also shows that a non-binding framework can coexist with binding individual transactions.",
+    subjects: ['contract-law'],
+    topics: [
+      'intention-to-create-legal-relations',
+      'commercial-agreements',
+      'honour-clauses',
+      'exclusion-of-legal-intent',
+    ],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Edwards v Skyways Ltd',
+    citation: '[1964] 1 WLR 349',
+    year: 1964,
+    court: "Queen's Bench Division",
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "In commercial agreements, there is a strong presumption in favour of legal intent. This presumption is difficult to displace and requires compelling evidence of a contrary intention. A promise made 'ex gratia' does not prevent legal intent — 'ex gratia' means only that no prior liability was admitted, not that the promise is not legally binding.",
+    key_quote:
+      'In commercial affairs, the courts lean towards finding legal intention; the defendant has not discharged the burden of rebutting that presumption.',
+    full_summary:
+      "Edwards was a pilot employed by Skyways who was made redundant. His employer promised him an 'ex gratia' payment equivalent to the employer's contributions to his pension fund. Skyways later refused to pay, claiming the promise was not legally binding. Megaw J held the promise was enforceable. In commercial contexts, there is a strong presumption in favour of legal intent. The phrase 'ex gratia' meant only that Skyways was not admitting a prior legal liability; it did not prevent the promise from giving rise to a new legally binding obligation. The burden of rebutting the commercial presumption is a heavy one, and Skyways failed to discharge it. This is a key FE-1 case contrasting with the domestic presumption from Balfour v Balfour.",
+    subjects: ['contract-law'],
+    topics: ['intention-to-create-legal-relations', 'commercial-agreements', 'ex-gratia-payments'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Blue v Ashley',
+    citation: '[2017] EWHC 1553 (Comm)',
+    year: 2017,
+    court: 'High Court (Commercial Division)',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'An alleged oral agreement made in a pub during informal conversation may lack the necessary intention to create legal relations even in a commercial context. The circumstances in which the alleged agreement was made, including the social setting and the implausibility of the terms, are relevant to whether legal relations were intended.',
+    key_quote:
+      'The meeting in the pub was too informal and the alleged terms too implausible for any reasonable person to conclude that a legally binding agreement was intended.',
+    full_summary:
+      "A city consultant (Blue) claimed that Mike Ashley (founder of Sports Direct) had orally promised to pay him £15 million if he could get Sports Direct's share price to £8. Blue claimed this was made at a meeting in a London pub. The Commercial Court dismissed the claim. Even if words to that effect were spoken, no binding contract was intended. The context — an informal social occasion in a pub — was inconsistent with a serious commercial contract for £15 million. The alleged terms were implausible and no reasonable person in Ashley's position would have intended to be legally bound. The case is a modern FE-1 illustration of the factors relevant to commercial intention, showing that even in commercial contexts the court will scrutinise the circumstances.",
+    subjects: ['contract-law'],
+    topics: ['intention-to-create-legal-relations', 'commercial-agreements', 'oral-contracts'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Hynes v Hynes',
+    citation: '[1984] IEHC (unreported)',
+    year: 1984,
+    court: 'High Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      'In family arrangements in Ireland, the courts apply a rebuttable presumption against legal relations similar to that in Balfour v Balfour. The Irish courts will examine all the circumstances to determine whether the parties genuinely intended to create legally binding obligations, with particular attention to the seriousness and formality of the arrangement.',
+    key_quote:
+      'The presumption that domestic arrangements are not intended to be legally binding can be rebutted by evidence that the parties intended their agreement to be enforceable at law.',
+    full_summary:
+      'This Irish High Court case applied the principle from Balfour v Balfour and Merritt v Merritt to a dispute between members of a family about a property arrangement. The court examined whether the arrangement was intended to be legally binding, applying the presumption that domestic and family arrangements lack contractual intent. The case is a useful Irish authority confirming that Irish courts adopt the same approach as English courts on the question of intention to create legal relations in family contexts, applying the rebuttable presumption against legal intent and assessing the circumstances to determine whether it is rebutted.',
+    subjects: ['contract-law'],
+    topics: ['intention-to-create-legal-relations', 'domestic-agreements', 'irish-cases'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Edmonds v Lawson',
+    citation: '[2000] QB 501',
+    year: 2000,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "A pupil barrister (trainee) in a barristers' chambers is a party to a contract with the chambers despite the tradition of not paying pupils. The arrangement has commercial dimensions and binding obligations on both sides, sufficient to constitute a contract with legal intent even if the pupil receives no financial reward.",
+    key_quote:
+      'The relationship between a pupil and the chambers which accepts her has all the characteristics of a contractual relationship: offer, acceptance, consideration, and the objective intention to be bound.',
+    full_summary:
+      "Edmonds was a pupil barrister who received no payment during pupillage. She sought to determine whether she was a worker entitled to the National Minimum Wage. The Court of Appeal held she was in a contractual relationship with her chambers. The legal profession's traditions did not prevent legal intent from arising — both parties undertook binding obligations: the chambers to provide training, the pupil to attend and carry out the work of pupillage. The commercial and professional context meant legal intent could be inferred. The case is relevant to FE-1 for showing the range of contexts in which the intention question arises beyond the family/commercial dichotomy.",
+    subjects: ['contract-law'],
+    topics: ['intention-to-create-legal-relations', 'professional-arrangements', 'consideration'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Nash v Inman',
+    citation: '[1908] 2 KB 1',
+    year: 1908,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "A minor is only liable to pay a reasonable price for necessaries supplied to them. 'Necessaries' means goods suitable to the condition in life of the minor and to their actual requirements at the time of delivery. A minor is not bound by executory contracts; their liability for necessaries is quasi-contractual.",
+    key_quote:
+      'Necessaries means goods suitable to the condition in life of the infant and to his actual requirements at the time of sale and delivery.',
+    full_summary:
+      "A tailor sued a Cambridge student (a minor) for the price of fancy waistcoats and other clothes. The Court of Appeal held the tailor could not recover. The clothes could only be 'necessaries' if they were suitable to the minor's condition in life AND to his actual requirements at the time. The minor's father had already provided him with adequate clothing, so the fancy waistcoats were not necessaries given his existing wardrobe. The burden of proving that goods are necessaries lies with the supplier. The case defines 'necessaries' for the purposes of the Sale of Goods Act and common law capacity rules, and is an essential FE-1 authority on minors' contracts. The minor's liability for necessaries is restitutionary (paying a reasonable price) rather than purely contractual.",
+    subjects: ['contract-law'],
+    topics: ['capacity', 'minors', 'necessaries', 'contracts-of-minors'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2021 Q6', 'Contract Spring 2023 Q5'],
+  },
+  {
+    case_name: 'De Francesco v Barnum',
+    citation: '(1890) 45 Ch D 430',
+    year: 1890,
+    court: 'Chancery Division',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "A contract of apprenticeship or training for a minor is binding if it is for the minor's benefit as a whole. However, if the terms are oppressive or onerous and not for the minor's overall benefit, the contract is voidable by the minor. Courts will assess the contract as a whole to determine whether it is sufficiently beneficial.",
+    key_quote:
+      'A contract of service with an infant is binding only if, taken as a whole, it is for the benefit of the infant.',
+    full_summary:
+      "Barnum (aged 14) was apprenticed to De Francesco as a stage dancer under a seven-year contract. The terms gave De Francesco absolute control: she could not marry or accept other engagements, he could sublet her services, but he was not obliged to employ her and was not bound to pay her if she was not performing. When De Francesco sought an injunction to prevent Barnum from performing elsewhere, the court refused. Looking at the contract as a whole, it was not for the minor's benefit — it was oppressively one-sided in favour of De Francesco. Beneficial contracts of service or apprenticeship bind minors; contracts that are not for their benefit are voidable. The case defines the 'beneficial contract of service' test used in FE-1 to assess minors' employment and training contracts.",
+    subjects: ['contract-law'],
+    topics: ['capacity', 'minors', 'beneficial-contracts', 'contracts-of-service'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Chaplin v Frewin (Publishers) Ltd',
+    citation: '[1966] Ch 71',
+    year: 1966,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "A contract between a minor and a publisher for the writing of the minor's autobiography is a contract analogous to a contract of service or apprenticeship. It is binding on the minor if it is taken as a whole for the minor's benefit, even if individual clauses are onerous.",
+    key_quote:
+      'The contract must be looked at as a whole. If it is for the benefit of the infant, it is binding; if it is not, it is voidable.',
+    full_summary:
+      "Charles Chaplin Jr (son of Charlie Chaplin), while a minor, entered into a contract with Frewin Publishers to write his autobiography. After turning 21, he repudiated the contract. The Court of Appeal held the contract was binding. Applying the beneficial contract principle from De Francesco v Barnum, the court found that the contract as a whole was for Chaplin's benefit: it provided him with a guaranteed income and the means of earning a livelihood through the exploitation of his name and story. Even though some individual terms were unfavourable, the contract overall was beneficial. The case extends the beneficial contract principle to publishing and licensing agreements involving minors.",
+    subjects: ['contract-law'],
+    topics: ['capacity', 'minors', 'beneficial-contracts', 'publishing-contracts'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Imperial Loan Co v Stone',
+    citation: '[1892] 1 QB 599',
+    year: 1892,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'A contract entered into by a person of unsound mind is voidable, not void. It is only voidable if the person was so mentally incapacitated as not to understand the nature of the transaction, and the other party knew of the incapacity at the time. Where the other party did not know, the contract is fully binding.',
+    key_quote:
+      'A contract made by a person of unsound mind is not void, but voidable at his option; and to avoid the contract he must plead and prove that the other party knew of his unsound mind.',
+    full_summary:
+      "Stone signed a promissory note while allegedly of unsound mind. The Imperial Loan Company sued on the note. The Court of Appeal held that a contract made by a person of unsound mind is voidable, not void. To avoid the contract, the person of unsound mind must prove both (1) that they were incapable of understanding the transaction and (2) that the other party knew of their incapacity. If the other party contracted in good faith without knowledge of the mental incapacity, the contract is binding. This is the foundational FE-1 authority on the capacity of persons of unsound mind, and contrasts with minors' contracts (which are either void, voidable, or binding regardless of knowledge).",
+    subjects: ['contract-law'],
+    topics: ['capacity', 'mental-incapacity', 'voidable-contracts'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Ryder v Wombwell',
+    citation: '(1868) LR 4 Ex 32',
+    year: 1868,
+    court: 'Exchequer Chamber',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "Necessaries for a minor are goods 'suitable to the condition in life of the infant and to his actual requirements at the time'. Luxuries do not become necessaries merely because the minor is wealthy. The category of necessaries must be assessed with reference to the minor's actual circumstances.",
+    key_quote:
+      'Articles of mere luxury are always excluded, though luxuries of a cheaper sort are sometimes necessaries; what is a necessary for one infant may not be for another.',
+    full_summary:
+      "Wombwell, the son of a baronet, purchased items including jewelled cuff links and an antique goblet. A supplier sued for the price. The court held the items were not necessaries. Even for a wealthy minor of high social standing, jewelled ornaments and luxury items are not 'suitable to his condition in life' in the legal sense required to make them necessaries. The test has a subjective element (suitability to his station) but luxuries are excluded regardless of wealth. The case is used in FE-1 alongside Nash v Inman to illustrate the boundaries of what constitutes necessaries for different classes of minor.",
+    subjects: ['contract-law'],
+    topics: ['capacity', 'minors', 'necessaries'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Keays v Great Southern Railways Co',
+    citation: '[1941] IR 534',
+    year: 1941,
+    court: 'High Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      'A minor can enter into a binding contract of employment where the contract, taken as a whole, is for their benefit. An Irish minor who enters into a contract of employment in the transport industry on terms that are standard and not oppressive is bound by the terms of that contract.',
+    key_quote:
+      'The test is whether the contract, taken as a whole, is beneficial to the minor. If it is, the contract is binding.',
+    full_summary:
+      "Keays, a minor employed by Great Southern Railways, was injured in the course of his employment. He sought to recover compensation but the railway company relied on a contract term limiting liability. The High Court had to consider whether the contract of employment, including the limiting term, was binding on the minor. Applying the beneficial contracts principle from English law, the court found the contract as a whole was beneficial to the minor — it provided regular employment, wages, and standard benefits. The limiting clause alone was not sufficient to render the whole contract non-beneficial. The case confirms that Irish courts apply the beneficial contract of service test to determine the binding effect of minors' employment contracts.",
+    subjects: ['contract-law'],
+    topics: ['capacity', 'minors', 'beneficial-contracts', 'irish-cases', 'employment'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Tweddle v Atkinson',
+    citation: '(1861) 1 B & S 393',
+    year: 1861,
+    court: "Queen's Bench",
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'A stranger to a contract (a third party) cannot sue on it even if the contract was made for their benefit. Only a party to a contract who has provided consideration can enforce it. The doctrine of privity of contract prevents third-party enforcement.',
+    key_quote:
+      'It is now established that no stranger to the consideration can take advantage of a contract, although made for his benefit.',
+    full_summary:
+      "The fathers of a bride and groom agreed in writing that each would pay the other's son a sum of money. The groom's father-in-law died without paying. The groom sued on the contract. The Queen's Bench held he could not enforce it. He was a stranger both to the contract (not a party) and to the consideration (he had given nothing). Only parties to a contract can sue on it. The case is the nineteenth-century precursor to Dunlop v Selfridge and the formal statement of the privity rule in English and Irish law. It is the starting point for FE-1 privity questions.",
+    subjects: ['contract-law'],
+    topics: ['privity-of-contract', 'third-party-rights', 'consideration'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2020 Q5', 'Contract Spring 2022 Q5'],
+  },
+  {
+    case_name: 'Dunlop Pneumatic Tyre Co Ltd v Selfridge & Co Ltd',
+    citation: '[1915] AC 847',
+    year: 1915,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Only a party to a contract who has furnished consideration may sue to enforce it. A stranger to the consideration cannot sue on a contract even if it was made for their benefit. This is the authoritative House of Lords statement of the privity rule.',
+    key_quote:
+      'In the law of England certain principles are fundamental. One is that only a person who is a party to a contract can sue on it.',
+    full_summary:
+      "Dunlop sold tyres to a dealer (Dew) who agreed not to sell below Dunlop's list price. Dew in turn sold tyres to Selfridge, who also agreed not to sell below list price. When Selfridge did sell below that price, Dunlop sued. The House of Lords held Dunlop could not sue Selfridge: Dunlop was not a party to the Dew-Selfridge contract and had provided no consideration. Viscount Haldane LC stated the privity rule definitively: only a person who is a party to a contract can sue on it, and that person must also have provided consideration. This remains the authoritative statement of the privity rule in Irish and English law (though modified by statute in England under the Contracts (Rights of Third Parties) Act 1999, which has not been enacted in Ireland).",
+    subjects: ['contract-law'],
+    topics: ['privity-of-contract', 'third-party-rights', 'consideration'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2020 Q5', 'Contract Spring 2023 Q5'],
+  },
+  {
+    case_name: 'Beswick v Beswick',
+    citation: '[1968] AC 58',
+    year: 1968,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'A third party who is not privy to a contract cannot sue in their own right on it. However, the promisee (who is a party) can obtain specific performance to compel the promisor to perform obligations owed to the third party. An administrator or executor who is also the third-party beneficiary can sue in their representative capacity.',
+    key_quote:
+      'There is no ground on which [the widow] as a person claiming under the contract in her personal capacity can claim to enforce the contract; but as administratrix she is entitled to specific performance.',
+    full_summary:
+      "Old Mr Beswick transferred his coal business to his nephew in exchange for a promise that the nephew would pay him a weekly sum for life and thereafter pay £5 per week to his widow. After the uncle died, the nephew refused to pay the widow. The widow sued both in her personal capacity and as administratrix of her husband's estate. The House of Lords held she could not sue in her personal capacity (she was not a party); but suing in her representative capacity as administratrix, she could obtain specific performance — the court would compel the nephew to perform the contract. This case is pivotal for FE-1 because it demonstrates both the rigour of the privity rule and the availability of specific performance as a remedy to enforce third-party benefits via the contracting party.",
+    subjects: ['contract-law'],
+    topics: ['privity-of-contract', 'third-party-rights', 'specific-performance', 'remedies'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2021 Q5', 'Contract Autumn 2023 Q5'],
+  },
+  {
+    case_name: 'Midland Silicones Ltd v Scruttons Ltd',
+    citation: '[1962] AC 446',
+    year: 1962,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'A stevedore (or independent contractor) cannot rely on an exclusion clause in a contract between the cargo owner and the carrier to which the stevedore is not a party. Third parties cannot take the benefit of, or shelter under, exclusion clauses in contracts to which they are strangers.',
+    key_quote:
+      'It would, in my opinion, be quite wrong to allow a stranger to a contract to take advantage of a provision in it, even if that provision was inserted for his benefit.',
+    full_summary:
+      'A US company contracted to ship chemical drums with a carrier. The bill of lading limited liability to $500 per package. Scruttons (stevedores, not parties to the bill of lading) negligently damaged the drums. The US company sued Scruttons for the full loss. Scruttons argued they could rely on the limitation clause in the bill of lading. The House of Lords held they could not. The stevedores were not parties to the bill of lading and had provided no consideration for the benefit of the limitation clause. Third parties cannot rely on exclusion clauses in contracts to which they are strangers. This case prompted the development of the Eurymedon device (Himalaya clause) and is essential FE-1 material on privity and exclusion clauses.',
+    subjects: ['contract-law'],
+    topics: ['privity-of-contract', 'exclusion-clauses', 'third-party-rights', 'shipping'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'New Zealand Shipping Co Ltd v AM Satterthwaite & Co Ltd (The Eurymedon)',
+    citation: '[1975] AC 154',
+    year: 1975,
+    court: 'Privy Council',
+    jurisdiction: 'New Zealand',
+    legal_principle:
+      "Where a bill of lading contains a 'Himalaya clause' extending its protection to stevedores, and the stevedores perform their obligations (unloading goods), they provide consideration for the benefit of the limitation clause and can rely on it as parties to a collateral unilateral contract. The bill of lading acts as an offer by the cargo owner to the stevedores which is accepted by their performance.",
+    key_quote:
+      'The bill of lading brought into existence a bargain initially unilateral but capable of becoming mutual, between the shipper and the stevedore, made through the carrier as agent.',
+    full_summary:
+      "A bill of lading contained a Himalaya clause extending the carrier's limitation of liability to 'servants, agents, and independent contractors including stevedores'. Satterthwaite (stevedores) damaged a drilling machine while unloading. They claimed the benefit of the limitation clause. The Privy Council (Lord Wilberforce) held the stevedores could rely on the clause. The bill of lading constituted an offer by the cargo owner to the stevedores (via the carrier as agent) to limit liability in exchange for unloading the goods. By unloading the goods, the stevedores accepted that offer (a unilateral contract). They had provided consideration by their act of unloading and had the carrier's authority to contract on this basis. The case is the leading authority on the Himalaya clause and a creative solution to the privity problem in shipping.",
+    subjects: ['contract-law'],
+    topics: [
+      'privity-of-contract',
+      'exclusion-clauses',
+      'himalaya-clause',
+      'unilateral-contracts',
+      'agency',
+    ],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Jackson v Horizon Holidays Ltd',
+    citation: '[1975] 1 WLR 1468',
+    year: 1975,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'A contracting party may recover substantial damages not only for their own loss but also for the loss suffered by third parties on whose behalf they contracted where this was within the reasonable contemplation of the parties. Lord Denning MR went further to suggest a contracting party could recover on behalf of third party beneficiaries as a matter of general principle.',
+    key_quote:
+      'When a man makes a contract for the benefit of his family, and the holiday is ruined for all, he can sue not only for his own distress but for the distress caused to his family.',
+    full_summary:
+      "Jackson booked a holiday for himself, his wife, and two children. The holiday was a disaster — accommodation was not as described and facilities were unavailable. Jackson sued Horizon Holidays for himself and his family. The Court of Appeal awarded damages for the whole family's disappointment and distress. Lord Denning MR held that a person contracting for the benefit of others can recover for the loss suffered by those others. James LJ preferred to explain the result on the narrow ground that Jackson could recover the full cost of the family holiday because that was his loss as the contracting party. The case is important FE-1 material on the exceptions to the privity rule and on recovery of damages for third parties' losses. It is significantly developed by Linden Gardens Trust v Lenesta Sludge in the House of Lords.",
+    subjects: ['contract-law'],
+    topics: ['privity-of-contract', 'third-party-rights', 'damages', 'holiday-contracts'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Drimmie v Davies',
+    citation: '[1899] 1 IR 176',
+    year: 1899,
+    court: 'Court of Appeal (Ireland)',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      'A third party for whose benefit a contract is made cannot sue on that contract in Irish common law. The Irish courts follow the English privity rule from Tweddle v Atkinson. However, the doctrine of trust may provide an exception where the promisee holds the benefit of the promise on trust for the third party.',
+    key_quote:
+      'The plaintiff, being a stranger to the contract, cannot maintain an action upon it, notwithstanding that the contract was made for his benefit.',
+    full_summary:
+      'In this early Irish authority, the Court of Appeal of Ireland applied the privity rule to deny a third-party beneficiary the right to sue on a contract made for their benefit. The court confirmed that Irish common law followed the English rule from Tweddle v Atkinson that third parties cannot sue on contracts to which they are strangers, even if those contracts were made entirely for their benefit. The case is an important Irish authority establishing that the privity rule applies in Ireland in the same way as in England, and that in Ireland (unlike England since 1999) there is no statutory reform of the privity rule. FE-1 students must understand that the Contracts (Rights of Third Parties) Act 1999 does not apply in Ireland.',
+    subjects: ['contract-law'],
+    topics: ['privity-of-contract', 'third-party-rights', 'irish-cases'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2022 Q5', 'Contract Spring 2024 Q5'],
+  },
+  {
+    case_name: 'Wall v Hegarty and Callanan',
+    citation: '[1980] ILRM 124',
+    year: 1980,
+    court: 'High Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      'A solicitor who negligently prepares a will owes a duty of care in tort to the intended beneficiaries of that will. The beneficiary may sue the solicitor in negligence even though there is no contract between them. This provides a tort-based route around the privity rule for disappointed beneficiaries.',
+    key_quote:
+      "The solicitor knows that the beneficiary's ability to take the legacy depends on the competent performance of his task; the solicitor is liable to the beneficiary in tort for that negligent failure.",
+    full_summary:
+      "Wall instructed solicitors to draft a will leaving property to certain beneficiaries. Due to negligent drafting by Hegarty (the solicitor), the will was invalid and the intended beneficiaries lost their legacies. The beneficiaries sued the solicitor. The Irish High Court followed White v Jones (HL) and held the solicitor owed a duty of care in negligence to the intended beneficiaries. Although there was no contract between the solicitor and the beneficiaries (privity prevents a contract claim), the beneficiaries could recover in tort for the loss caused by the solicitor's negligence. This is the leading Irish authority for the tort exception to the privity rule in wills/negligent drafting cases.",
+    subjects: ['contract-law'],
+    topics: ['privity-of-contract', 'negligence', 'wills', 'solicitors-liability', 'irish-cases'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2022 Q5', 'Contract Autumn 2023 Q5'],
+  },
+  {
+    case_name: 'Cadbury Ireland Ltd v Kerry Co-operative Creameries Ltd',
+    citation: '[1982] ILRM 77',
+    year: 1982,
+    court: 'High Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      "The collateral contract device can be used to circumvent privity in appropriate circumstances. Where a third party makes a promise in return for the main contracting party entering the main contract, that third party's promise can be enforced as a collateral contract between the third party and the main contracting party.",
+    key_quote:
+      "The existence of a collateral contract between the third party and the plaintiff can provide the consideration and the privity necessary to enforce the third party's promise.",
+    full_summary:
+      'Cadbury contracted with suppliers, and in the course of negotiations Kerry Co-operative (a third party to the main supply contract) made representations and gave assurances to Cadbury. When the main contract failed to perform, Cadbury sought to hold Kerry Co-operative liable on the basis that Kerry had entered into a collateral contract. The Irish High Court considered whether the collateral contract device could be used to create enforceable obligations between Cadbury and Kerry notwithstanding the general privity rule. The case examines the use of collateral contracts as a device to get around the privity rule in Irish law, and is a useful FE-1 authority on collateral contracts as an exception to privity.',
+    subjects: ['contract-law'],
+    topics: ['privity-of-contract', 'collateral-contracts', 'irish-cases'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Murphy v Bower',
+    citation: '(1866) 1 IR CL 506',
+    year: 1866,
+    court: 'Common Pleas Division (Ireland)',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      'The principle of privity of contract applies equally in Ireland: a person who is a stranger to a contract cannot sue upon it. This early Irish authority confirms the application of the English privity rule in the Irish legal system.',
+    key_quote:
+      'A stranger to a contract can derive no right of action from it, even if he be the person for whose benefit the contract was made.',
+    full_summary:
+      'This early Irish authority from the Common Pleas Division established the application of the English privity doctrine in Ireland. The plaintiff sought to enforce a contract to which they were not a party. The court applied the same rule as Tweddle v Atkinson: a third party who is a stranger to a contract cannot sue on it, regardless of whether the contract was made for their benefit. The case is one of the foundational Irish authorities confirming the privity rule in this jurisdiction, predating both Dunlop v Selfridge and the modern Irish authorities on the topic.',
+    subjects: ['contract-law'],
+    topics: ['privity-of-contract', 'third-party-rights', 'irish-cases'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Shanklin Pier Ltd v Detel Products Ltd',
+    citation: '[1951] 2 KB 854',
+    year: 1951,
+    court: "King's Bench Division",
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "A collateral contract can arise between a manufacturer or supplier and a third party where the third party directs another party to contract with the manufacturer/supplier in reliance on the manufacturer's representations. The consideration for the collateral contract is the third party's act of instructing the purchase.",
+    key_quote:
+      "The consideration given by the plaintiffs for the defendants' promise was the plaintiffs' causing a contract for the supply of paint to be made between them and the defendants.",
+    full_summary:
+      "Shanklin Pier instructed their painters to buy Detel paint after Detel's representative told Shanklin the paint would last for seven years. The painters contracted with Detel for the paint; Shanklin were not a party to that purchase contract. The paint lasted only three months. Shanklin sued Detel. The court held there was a binding collateral contract between Shanklin and Detel: Shanklin's consideration was directing their painters to buy Detel's paint, and Detel's consideration was their representation/warranty about the paint's quality. The case is a key FE-1 authority on collateral contracts as a device to circumvent the privity rule, alongside Carlill v Carbolic and the main contract analysis.",
+    subjects: ['contract-law'],
+    topics: ['privity-of-contract', 'collateral-contracts', 'representations', 'warranties'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Flynn v Kelly',
+    citation: '[1979] ILRM 22',
+    year: 1979,
+    court: 'High Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      'The trust exception to the privity rule may apply where it can be inferred from the circumstances that the promisee intended to hold the benefit of the contract on trust for the third party. However, courts require clear evidence of the intention to create a trust before this exception will be applied.',
+    key_quote:
+      'The trust exception requires clear evidence of an intention by the promisee to constitute himself a trustee of the contractual right for the benefit of the third party.',
+    full_summary:
+      'Flynn sought to enforce a contractual right as a third-party beneficiary under the trust exception to the privity rule. The Irish High Court examined the circumstances to determine whether the promisee had intended to hold the contractual benefit on trust for Flynn. The court confirmed that while the trust exception to privity exists in Irish law, it requires clear evidence of an intention to create a trust in favour of the third party. A mere intention that the third party should benefit is insufficient; there must be evidence that the promisee intended to act as trustee. This case is useful FE-1 authority on the trust exception to privity in Ireland.',
+    subjects: ['contract-law'],
+    topics: ['privity-of-contract', 'trust-exception', 'third-party-rights', 'irish-cases'],
+    is_frequently_tested: false,
     past_paper_appearances: [],
   },
   {
@@ -2060,872 +1516,1392 @@ const rawCases = [
     citation: '[1932] AC 562',
     year: 1932,
     court: 'House of Lords',
-    jurisdiction: 'UK',
+    jurisdiction: 'Scotland / UK',
     legal_principle:
-      "The House of Lords established the modern law of negligence through Lord Atkin's 'neighbour principle': a person owes a duty of care to those who are so closely and directly affected by their acts that they ought reasonably to have them in contemplation. The manufacturer of ginger beer owed a duty of care to the ultimate consumer. Donoghue v Stevenson is the foundational authority for the law of negligence and duty of care throughout the common law world.",
+      "A manufacturer owes a duty of care in tort (negligence) to the ultimate consumer of their product where the consumer has no opportunity to examine the goods before use and the manufacturer knows this. This duty exists despite the absence of any contract between the manufacturer and consumer. The neighbour principle establishes that a duty of care is owed to persons who are closely and directly affected by one's acts.",
     key_quote:
-      'You must take reasonable care to avoid acts or omissions which you can reasonably foresee would be likely to injure your neighbour — persons who are so closely and directly affected by your act that you ought reasonably to have them in contemplation.',
+      'You must take reasonable care to avoid acts or omissions which you can reasonably foresee would be likely to injure your neighbour.',
     full_summary:
-      "Donoghue v Stevenson [1932] AC 562 is the foundational case of the modern law of negligence. The appellant, Mrs Donoghue, drank ginger beer from an opaque bottle purchased by a friend and allegedly found the decomposed remains of a snail in the bottle, suffering gastroenteritis and nervous shock as a result. Having no contractual relationship with the manufacturer, she sued in tort. The House of Lords, by a majority, held that the manufacturer owed a duty of care to the ultimate consumer. Lord Atkin's leading judgment articulated the famous 'neighbour principle': one owes a duty of care to persons so closely and directly affected by one's acts that one ought reasonably to have them in contemplation as being so affected. This principle transcended the facts and became the cornerstone of duty of care analysis across the common law world. The case swept away the privity-based limitations that had previously confined negligence liability and established that liability in tort is grounded in the reasonable foreseeability of harm to one's 'neighbour'. Donoghue v Stevenson is invariably the starting point for any analysis of the duty of care in Irish and English law.",
-    subjects: ['criminal', 'torts'],
-    topics: ['negligence', 'duty of care', 'neighbour principle', 'product liability', 'torts'],
+      "Mrs Donoghue's friend bought her a bottle of ginger beer from a café. The bottle contained a decomposed snail, and Mrs Donoghue suffered gastroenteritis and shock. She had no contract with either the café (her friend had purchased) or the manufacturer (Stevenson). She sued Stevenson in tort. The House of Lords held manufacturers owe a duty of care in negligence to the ultimate consumer where there is no reasonable opportunity for intermediate examination and the manufacturer knows the product will reach consumers in the same state. The case is primarily a Torts authority (establishing the modern duty of care in negligence) but is also critical in Contract Law for FE-1 because it demonstrates the alternative remedy available when privity prevents a contract claim. It shows the historical separation between contract and tort law.",
+    subjects: ['contract-law', 'torts'],
+    topics: ['privity-of-contract', 'negligence', 'product-liability', 'duty-of-care'],
     is_frequently_tested: true,
-    past_paper_appearances: [],
+    past_paper_appearances: ['Contract Autumn 2022 Q5'],
   },
   {
-    case_name: 'Alcock v Chief Constable of South Yorkshire Police',
-    citation: '[1992] 1 AC 310',
-    year: 1992,
+    case_name: 'Heilbut Symons & Co v Buckleton',
+    citation: '[1913] AC 30',
+    year: 1913,
     court: 'House of Lords',
-    jurisdiction: 'UK',
+    jurisdiction: 'England & Wales',
     legal_principle:
-      'The House of Lords considered claims by spectators and relatives of victims of the Hillsborough disaster for psychiatric injury suffered as secondary victims. The court confirmed the three-part proximity test for secondary victims: close relationship with the primary victim, proximity to the event in time and space, and direct sensory perception. Claims by those who witnessed the disaster on television failed the proximity requirements. Alcock defined the modern English law on secondary victim claims.',
+      "The test for whether a pre-contractual statement is a term or mere representation is the objective intention of the parties, assessed from all the circumstances. Statements made as inducements rather than as part of the contractual bargain are representations, not terms. The court will look at the parties' conduct, the relative expertise of the parties, and the importance attached to the statement.",
     key_quote:
-      'To succeed as a secondary victim in nervous shock, the plaintiff must establish ties of love and affection with the primary victim, physical proximity to the accident, and direct perception of the event or its immediate aftermath.',
+      'An affirmation at the time of sale is a warranty, provided it appear on evidence to be so intended.',
     full_summary:
-      'Alcock v Chief Constable of South Yorkshire Police [1992] 1 AC 310 is the leading House of Lords authority on the recovery of damages for psychiatric injury by secondary victims. The case arose from the Hillsborough stadium disaster of 1989, in which 96 Liverpool football supporters were killed in a crush. The plaintiffs were relatives and friends of victims who had either been present at the ground or had watched events unfold on live television. All suffered serious psychiatric illness. The House of Lords dismissed all the claims. The court laid down a definitive three-part proximity test for secondary victim claims: first, the plaintiff must have a close relationship of love and affection with the primary victim; second, the plaintiff must have been physically close to the accident or its immediate aftermath; and third, the psychiatric injury must have been caused by direct sensory perception of the accident, not by later receipt of news about it. The court held that witnessing events on television did not satisfy the proximity requirement. The judgment has been the touchstone for English and Irish nervous shock cases ever since and was applied and adapted by the Irish Supreme Court in Kelly v Hennessy.',
-    subjects: ['criminal', 'torts'],
-    topics: [
-      'nervous shock',
-      'secondary victim',
-      'proximity',
-      'Hillsborough disaster',
-      'psychiatric injury',
-    ],
+      "The manager of a rubber company told a purchaser 'We are bringing this out as a rubber company', which the purchaser took to mean the company was a rubber company. The shares were largely worthless. The House of Lords held the statement was not a contractual warranty but merely a representation. Looking at the circumstances, the manager's statement was made casually and was not intended to be part of the contractual deal. The test for distinguishing terms from representations is the objective intention of the parties at the time of contracting. This is a foundational FE-1 case on the distinction between terms and representations, and sets out the factors to consider: relative expertise, importance of the statement, timing, and whether the parties reduced the contract to writing after the statement was made.",
+    subjects: ['contract-law'],
+    topics: ['contractual-terms', 'representations', 'warranties', 'terms-vs-representations'],
     is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2021 Q7'],
+  },
+  {
+    case_name: 'Oscar Chess Ltd v Williams',
+    citation: '[1957] 1 WLR 370',
+    year: 1957,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Where a statement is made by a party without special knowledge and the other party has greater expertise, the statement is less likely to be a contractual term and more likely to be a mere representation. Relative expertise is a key factor in distinguishing terms from representations.',
+    key_quote:
+      'If the seller is in a position to know the truth and the buyer is not, and the seller asserts a fact, that will often be a warranty. But if the seller states something he does not know, and the buyer could easily have checked, the statement is more likely to be a representation.',
+    full_summary:
+      "Williams (a private individual) sold a car to Oscar Chess Ltd (car dealers) describing it as a 1948 model based on the registration document. The car was in fact a 1939 model and worth much less. The Court of Appeal held Williams' statement was not a contractual warranty. Williams had no special expertise in the matter; he relied on the registration document in good faith. Oscar Chess, as professional car dealers, were in a far better position to verify the vehicle's age. Given the relative expertise of the parties (an expert buyer and a non-expert seller), the statement was a representation, not a term. The case establishes the importance of relative expertise in distinguishing terms from representations, and is contrasted with Dick Bentley v Harold Smith Motors.",
+    subjects: ['contract-law'],
+    topics: ['contractual-terms', 'representations', 'terms-vs-representations', 'expertise'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2020 Q7', 'Contract Autumn 2023 Q7'],
+  },
+  {
+    case_name: 'Dick Bentley Productions Ltd v Harold Smith (Motors) Ltd',
+    citation: '[1965] 1 WLR 623',
+    year: 1965,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'A statement made by a person in a position of special skill or knowledge about the subject matter, upon which the other party reasonably relies, is more likely to be a contractual term than a representation. The expertise of the seller is a significant factor in favour of finding a term.',
+    key_quote:
+      'If a representation is made in the course of dealings for a contract for the very purpose of inducing the other party to act on it, that is prima facie ground for inferring that it was intended as a warranty.',
+    full_summary:
+      "A car dealer (Harold Smith Motors) told Dick Bentley Productions that a Bentley car had only done 20,000 miles since being fitted with a replacement engine and gearbox. This was false; the car had done 100,000 miles. The Court of Appeal (distinguishing Oscar Chess v Williams) held the statement was a contractual term. The car dealer was in a better position than the buyer to know the car's mileage, and the statement was made as an inducement and with the intention of inducing the buyer to purchase. Where the seller is the expert and the buyer relies on the seller's expertise, the statement is more likely to be a term. The case is contrasted with Oscar Chess v Williams in FE-1 to illustrate how relative expertise affects the term/representation distinction.",
+    subjects: ['contract-law'],
+    topics: ['contractual-terms', 'representations', 'terms-vs-representations', 'expertise'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2020 Q7', 'Contract Autumn 2023 Q7'],
+  },
+  {
+    case_name: "L'Estrange v Graucob",
+    citation: '[1934] 2 KB 394',
+    year: 1934,
+    court: "King's Bench Division",
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'A party who signs a contractual document is bound by all its terms, whether or not they have read or understood them, unless the document was signed under a misrepresentation as to its character or contents. This is the signature rule.',
+    key_quote:
+      'When a document containing contractual terms is signed, then, in the absence of fraud or misrepresentation, the party signing it is bound, and it is wholly immaterial whether he has read the document or not.',
+    full_summary:
+      "L'Estrange bought a cigarette vending machine for her café, signing a sales agreement in small print that excluded all implied conditions and warranties. When the machine did not work, she sued for breach of implied condition under the Sale of Goods Act. The defendant relied on the exclusion clause. The court held she was bound by the exclusion clause even though she had not read it. By signing the document she was bound by all its terms. The signature rule is absolute in the absence of fraud or misrepresentation. This is a fundamental FE-1 case on incorporation of terms by signature, and contrasted with Thornton v Shoe Lane Parking (unsigned documents/tickets) where different rules apply.",
+    subjects: ['contract-law'],
+    topics: ['contractual-terms', 'signature-rule', 'incorporation-of-terms', 'exclusion-clauses'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2020 Q7', 'Contract Spring 2022 Q7'],
+  },
+  {
+    case_name: 'Curtis v Chemical Cleaning and Dyeing Co',
+    citation: '[1951] 1 KB 805',
+    year: 1951,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Where a party misrepresents the effect of an exclusion clause before asking the other party to sign a document containing it, the party cannot rely on the full width of the exclusion clause. The representation narrows or limits the scope of the clause the other party can be taken to have agreed to.',
+    key_quote:
+      'If the assistant made a false statement as to the nature of the document signed, the defendant cannot rely on any larger exclusion than that which the plaintiff was given to understand she was signing.',
+    full_summary:
+      "Mrs Curtis took a wedding dress to be cleaned. When asked to sign a receipt, she was told it exempted the company from liability for damage to beads and sequins. She signed without reading the receipt, which in fact excluded all liability for damage however caused. When the dress was returned with a stain, the company relied on the full exclusion. The Court of Appeal held the company could not rely on the exclusion to the full extent. By misrepresenting the scope of the exclusion (saying it only covered beads and sequins), the company was limited to relying on it only to that extent. This case qualifies L'Estrange v Graucob: a misrepresentation about the content of a signed document limits the scope of the terms the other party is bound by.",
+    subjects: ['contract-law'],
+    topics: ['contractual-terms', 'signature-rule', 'exclusion-clauses', 'misrepresentation'],
+    is_frequently_tested: false,
     past_paper_appearances: [],
   },
   {
-    case_name: 'Glencar Exploration plc v Mayo County Council (No 2)',
-    citation: '[2002] 1 IR 84',
+    case_name: 'Bannerman v White',
+    citation: '(1861) 10 CBNS 844',
+    year: 1861,
+    court: 'Common Pleas',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "A statement that is so important to a party that they would not have contracted but for it is likely to be a contractual term. Where a buyer makes clear that a specific characteristic is essential to their agreeing to the contract, a seller's assurance on that point will be a term.",
+    key_quote:
+      'The plaintiff made it perfectly clear that he would not deal with the defendant if sulphur had been used; the defendant knew this was a condition on which the plaintiff was dealing.',
+    full_summary:
+      "A buyer of hops asked the seller whether sulphur had been used in their treatment. The seller said no; the buyer said that if sulphur had been used he would not even bother to ask the price. Sulphur had in fact been used and the buyer rejected the hops. The court held the seller's statement that sulphur had not been used was a contractual term. The buyer had clearly indicated that this was fundamental to his agreeing to buy the hops at all. The seller knew the importance attached to the statement. The importance attached to a statement by the party to whom it is made, communicated clearly to the maker, is a factor pointing towards it being a term. This case is used in FE-1 alongside Heilbut Symons and Oscar Chess to illustrate the importance-of-the-statement criterion.",
+    subjects: ['contract-law'],
+    topics: ['contractual-terms', 'representations', 'terms-vs-representations', 'warranties'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'The Moorcock',
+    citation: '(1889) 14 PD 64',
+    year: 1889,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "A term will be implied into a contract where it is necessary to give business efficacy to the contract — that is, where without the term the contract would be futile or unworkable. The 'business efficacy' test asks what term, if any, must be implied to make the contract work.",
+    key_quote:
+      'In business transactions such as this, what the law will imply is not a warranty that the thing contracted for shall answer the purpose of the contract, but a warranty that the party contracting has taken reasonable care to make the thing reasonably fit for the purpose.',
+    full_summary:
+      'The owner of a wharf agreed to moor the Moorcock (a ship) alongside his wharf for loading and unloading. The ship grounded on a ridge of hard ground concealed at low tide and was damaged. The question was whether the wharfinger had impliedly warranted the safety of the berth. The Court of Appeal held there was an implied term that the wharfinger had taken reasonable care to see that the berth was safe. Without this implied term, the contract would lack business efficacy — a shipowner would never agree to moor at a wharf unless the wharfinger had satisfied himself that it was reasonably safe. The business efficacy test is the original basis for implying terms in fact, and is a central FE-1 case on implied terms alongside the officious bystander test from Shirlaw v Southern Foundries.',
+    subjects: ['contract-law'],
+    topics: ['contractual-terms', 'implied-terms', 'business-efficacy'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2021 Q8', 'Contract Spring 2023 Q8'],
+  },
+  {
+    case_name: 'Shirlaw v Southern Foundries (1926) Ltd',
+    citation: '[1939] 2 KB 206',
+    year: 1939,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "A term may be implied into a contract where, if an officious bystander had suggested it at the time of contracting, both parties would at once have said 'Oh, of course'. This is the officious bystander test for implying terms in fact, complementing the business efficacy test.",
+    key_quote:
+      "Prima facie that which in any contract is left to be implied and need not be expressed is something so obvious that it goes without saying; so that, if while the parties were making their bargain an officious bystander were to suggest some express provision for it in their agreement, they would testily suppress him with a common 'Oh, of course!'",
+    full_summary:
+      "Shirlaw was appointed managing director under a service agreement. The company later altered its articles of association to give it power to dismiss directors, and exercised that power against Shirlaw. He argued that there was an implied term in his service contract that the company would not alter its articles in a way that would permit his premature dismissal. MacKinnon LJ formulated the famous officious bystander test: a term is implied if any officious bystander, asked to include it in the contract, would have been testily suppressed with 'Oh, of course!' The test is both objective and demanding — the term must be so obvious that both parties would have assented to it without hesitation. The case is paired with The Moorcock in FE-1 for the two traditional tests for implying terms in fact.",
+    subjects: ['contract-law'],
+    topics: ['contractual-terms', 'implied-terms', 'officious-bystander'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2021 Q8', 'Contract Spring 2023 Q8'],
+  },
+  {
+    case_name: 'Hong Kong Fir Shipping Co Ltd v Kawasaki Kisen Kaisha Ltd',
+    citation: '[1962] 2 QB 26',
+    year: 1962,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "Contractual terms are not simply divided into conditions and warranties; there is a third category of 'innominate' (intermediate) terms. For innominate terms, the right to terminate depends on whether the breach goes to the root of the contract and deprives the innocent party of substantially the whole benefit of the contract.",
+    key_quote:
+      'There are contractual undertakings of such a nature that it cannot be predicated of them that any and every breach will entitle the innocent party to treat himself as discharged from further performance; yet some breaches of them may have this effect while others will not.',
+    full_summary:
+      'The Kawasaki chartered the Hong Kong Fir from its owners for 24 months. The ship was to be seaworthy. Due to the incompetence of the engine room crew and old engines, the ship was in dock for repairs for long periods. The charterers purported to terminate the charterparty for breach of the seaworthiness obligation. The Court of Appeal held that the obligation of seaworthiness was neither a condition (any breach giving right to terminate) nor a warranty (no right to terminate). It was an innominate term: the right to terminate depended on whether the breach deprived the charterer of substantially the whole benefit of the contract. On the facts, the breach was not sufficiently serious to justify termination. The innominate term concept is a major FE-1 topic, significantly affecting the analysis of breach and termination.',
+    subjects: ['contract-law'],
+    topics: [
+      'contractual-terms',
+      'innominate-terms',
+      'conditions',
+      'warranties',
+      'breach',
+      'termination',
+    ],
+    is_frequently_tested: true,
+    past_paper_appearances: [
+      'Contract Spring 2021 Q8',
+      'Contract Autumn 2022 Q7',
+      'Contract Spring 2024 Q7',
+    ],
+  },
+  {
+    case_name: 'Bettini v Gye',
+    citation: '(1876) 1 QBD 183',
+    year: 1876,
+    court: "Queen's Bench Division",
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'A term in a contract is a condition if it goes to the root of the contract, so that breach entitles the innocent party to terminate. A term is a warranty if it is less central, and breach only gives rise to damages, not termination. Classifying a term requires examining its relative importance to the whole contract.',
+    key_quote:
+      'We must look at the whole contract and the circumstances to see whether the obligation is a condition of the contract or only a warranty.',
+    full_summary:
+      "Bettini, an opera singer, was engaged to perform and to attend rehearsals for six days before performances. He arrived three days late for rehearsals due to illness but was ready to perform. The employer refused to proceed with the engagement and Bettini sued. The court held the rehearsal clause was a warranty, not a condition. Missing three rehearsal days did not go to the root of the contract — the employer could still benefit substantially from Bettini's performances. The employer was not entitled to terminate but could claim damages for the breach of the rehearsal obligation. Contrasted with Poussard v Spiers (inability to perform itself is a condition breach). Both cases are standard FE-1 authority on classifying terms as conditions or warranties.",
+    subjects: ['contract-law'],
+    topics: ['contractual-terms', 'conditions', 'warranties', 'breach', 'termination'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2022 Q7', 'Contract Spring 2024 Q7'],
+  },
+  {
+    case_name: 'Poussard v Spiers and Pond',
+    citation: '(1876) 1 QBD 410',
+    year: 1876,
+    court: "Queen's Bench Division",
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Where a performer is unable to fulfil the very obligation that is the subject matter of the contract — particularly for the opening performances — their failure goes to the root of the contract and constitutes breach of a condition, entitling the other party to terminate and engage a substitute.',
+    key_quote:
+      'The inability to perform on the first night and the following nights was a failure of a condition going to the root of the contract.',
+    full_summary:
+      'Madame Poussard was engaged to play the lead role in an opera at the Criterion Theatre. She fell ill and could not perform at the opening and several subsequent performances. Spiers and Pond engaged a substitute who could only be engaged on the basis she would remain for the whole run. When Madame Poussard recovered, she was refused reinstatement. The court held that her inability to perform at the opening was a breach of condition — the ability to perform at the opening was central to the contract. This entitled Spiers and Pond to treat the contract as discharged and engage a permanent replacement. Contrasted with Bettini v Gye in FE-1: missing rehearsals is a warranty breach; failing to appear for the opening is a condition breach.',
+    subjects: ['contract-law'],
+    topics: ['contractual-terms', 'conditions', 'warranties', 'breach', 'termination'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2022 Q7', 'Contract Spring 2024 Q7'],
+  },
+  {
+    case_name: 'Clayton Love v B & I Steam Packet Co',
+    citation: '(1970) 104 ILTR 157',
+    year: 1970,
+    court: 'Supreme Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      'Under the parol evidence rule, extrinsic evidence of prior negotiations is not admissible to vary or contradict the terms of a written contract. However, extrinsic evidence may be admitted to explain ambiguity, to establish a collateral contract, or to show the contract was not meant to be a complete record of the agreement.',
+    key_quote:
+      'Where parties have reduced their agreement to writing, the court will presume that the writing is the whole of their contract; extrinsic evidence of prior negotiations is excluded to vary or contradict the writing.',
+    full_summary:
+      "Clayton Love contracted with B&I for the carriage of frozen food. The written contract did not address temperature requirements during loading. Clayton Love's goods were damaged due to the temperature at which they were loaded. They sought to rely on oral representations made before the contract was signed about the temperatures that would be maintained. The Irish Supreme Court examined the admissibility of extrinsic evidence to supplement or vary the written contract. The court applied the parol evidence rule but also considered whether a collateral contract had been created by the oral representations. The case is a key Irish FE-1 authority on the parol evidence rule and the collateral contract exception in Irish law.",
+    subjects: ['contract-law'],
+    topics: ['contractual-terms', 'parol-evidence-rule', 'collateral-contracts', 'irish-cases'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2022 Q8'],
+  },
+  {
+    case_name: "O'Reilly v Irish Press Ltd",
+    citation: '(1937) 71 ILTR 194',
+    year: 1937,
+    court: 'High Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      'An implied term of trust and confidence exists in contracts of employment. An employer may not, without reasonable and proper cause, conduct itself in a manner calculated or likely to destroy or seriously damage the relationship of confidence and trust with its employee.',
+    key_quote:
+      'There is implied in every contract of employment an obligation on the employer to treat the employee fairly and not to act in such a way as would destroy the relationship of mutual trust and confidence.',
+    full_summary:
+      "O'Reilly was a senior journalist employed by the Irish Press. His employer changed his working conditions in a way that seriously damaged his position and professional standing. The High Court considered whether there was an implied term in the employment contract protecting the employee's dignity and professional reputation. The court found that there was an implied term of reasonable treatment in employment contracts, and that the employer's conduct amounted to a breach of that implied term. The case is a useful Irish authority on implied terms in employment contracts and the duty of trust and confidence, which is important FE-1 learning on the relationship between express and implied terms.",
+    subjects: ['contract-law'],
+    topics: ['contractual-terms', 'implied-terms', 'employment', 'irish-cases'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Parker v South Eastern Railway Co',
+    citation: '(1877) 2 CPD 416',
+    year: 1877,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'For an exemption clause in an unsigned document (e.g. a ticket or cloakroom receipt) to be incorporated into the contract, reasonable notice of its existence must be given before or at the time of contracting. The question is whether the party knew or ought reasonably to have known that the document contained contractual terms.',
+    key_quote:
+      'If the delivering of the paper ticket is the delivery of a contractual document, then the question whether reasonable notice was given of the condition is a question of fact for the jury.',
+    full_summary:
+      "Parker deposited a bag at a railway cloakroom and received a ticket. He did not read it, but the ticket stated it was 'subject to conditions' displayed in the cloak room. The bag was lost. Parker claimed the limitation clause was not part of the contract. The Court of Appeal held the clause could be incorporated if: (1) Parker knew the ticket contained conditions, or (2) the railway had done what was reasonably sufficient to give notice of those conditions. The case establishes the 'reasonable notice' test for incorporating exclusion clauses in non-signed documents (tickets, receipts, signs), which is the primary FE-1 rule for ticket cases and unsigned documents.",
+    subjects: ['contract-law'],
+    topics: ['exemption-clauses', 'incorporation', 'notice', 'ticket-cases'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2021 Q9', 'Contract Autumn 2023 Q8'],
+  },
+  {
+    case_name: 'Thornton v Shoe Lane Parking Ltd',
+    citation: '[1971] 2 QB 163',
+    year: 1971,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Where terms are particularly wide or unusual (especially those excluding liability for personal injury or death), a higher standard of notice is required for their incorporation. Conditions which appear on a ticket only after the contract has been concluded (e.g. after money has been inserted in an automatic machine) are not incorporated.',
+    key_quote:
+      'The ticket was issued by an automatic machine. The customer put his money in and only then got the ticket. The contract was concluded before the customer could read the conditions on the ticket.',
+    full_summary:
+      'Thornton was injured at an automatic car park operated by Shoe Lane Parking. The ticket, dispensed after payment, purported to exclude all liability including for personal injury. The Court of Appeal held the exclusion clause was not incorporated. The contract was concluded when Thornton put his money into the automatic machine — the ticket came too late to vary the terms. Lord Denning MR also held that for particularly wide clauses (especially excluding liability for personal injury), extra notice would be required in any event — the clause would need to be printed in red ink with a red hand pointing to it. The case is a key FE-1 authority on the timing of notice (the clause must be brought to attention before or at contracting) and on the higher standard for unusual or onerous terms.',
+    subjects: ['contract-law'],
+    topics: ['exemption-clauses', 'incorporation', 'notice', 'ticket-cases', 'timing'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2021 Q9', 'Contract Autumn 2022 Q8'],
+  },
+  {
+    case_name: 'Chapelton v Barry UDC',
+    citation: '[1940] 1 KB 532',
+    year: 1940,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'A receipt or ticket which a reasonable person would regard merely as evidence of payment and not as a contractual document is insufficient to give notice of conditions. Terms cannot be incorporated via a document that is not reasonably expected to contain contractual conditions.',
+    key_quote:
+      'The receipt was not a contractual document but a mere voucher or receipt; no reasonable person would read it to ascertain conditions.',
+    full_summary:
+      'Chapelton hired deckchairs from Barry UDC on a beach. There was a notice at the pile of chairs stating the price. He received a ticket when he paid, which he put in his pocket unread. The ticket contained an exclusion clause. His deckchair collapsed and injured him. The Court of Appeal held the exclusion clause was not incorporated. The ticket was a mere receipt; a reasonable person would not expect it to contain contractual conditions. The offer was made by the notice at the pile of chairs (which had no exclusion), and the contract was formed when Chapelton took the chair. The ticket came after the contract and was only a receipt. The case is an important FE-1 case on the distinction between a contractual document and a mere receipt, and reinforces the timing rule from Thornton.',
+    subjects: ['contract-law'],
+    topics: ['exemption-clauses', 'incorporation', 'notice', 'ticket-cases'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'McCutcheon v David MacBrayne Ltd',
+    citation: '[1964] 1 WLR 125',
+    year: 1964,
+    court: 'House of Lords',
+    jurisdiction: 'Scotland / UK',
+    legal_principle:
+      'Terms cannot be incorporated by a previous course of dealing unless that course of dealing was regular, consistent, and sufficiently clear to indicate that the parties had contracted on those terms on each occasion. If a party did not always sign the relevant document, a course of dealing cannot be established.',
+    key_quote:
+      'Where there has been no consistent course of dealing on the same terms, a clause cannot be incorporated by reference to previous transactions.',
+    full_summary:
+      "McCutcheon shipped his brother-in-law's car across the Irish Sea on MacBrayne's ferries. On some occasions he had signed a risk note excluding liability; on this occasion he did not. The car was lost due to the negligence of MacBrayne. The House of Lords held MacBrayne could not rely on the exclusion clause. The clause could not be incorporated by course of dealing because the dealing had not been consistent — sometimes the risk note was signed, sometimes not. For a course of dealing to incorporate terms, the dealing must be regular and the same terms must have been used on each occasion. The case is a key FE-1 authority on course of dealing as a method of incorporating terms.",
+    subjects: ['contract-law'],
+    topics: ['exemption-clauses', 'incorporation', 'course-of-dealing'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Photo Production Ltd v Securicor Transport Ltd',
+    citation: '[1980] AC 827',
+    year: 1980,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'The courts should give effect to clearly worded exclusion clauses in commercial contracts between parties of equal bargaining power. The doctrine of fundamental breach (that an exclusion clause cannot protect against a fundamental breach) is not a rule of law but a matter of construction. Post-UCTA, exclusion clauses in commercial contracts are subject only to the reasonableness test.',
+    key_quote:
+      'The doctrine of fundamental breach as a rule of law has been long expired. Whether an exclusion clause extends to a fundamental breach is purely a matter of construction.',
+    full_summary:
+      "Photo Production contracted with Securicor for security services at their factory. A Securicor guard deliberately started a fire, destroying the factory. Securicor relied on a clause excluding liability for acts by employees. The House of Lords held the clause was effective and Securicor was not liable. The doctrine of fundamental breach (that you cannot exclude liability for a fundamental breach of contract) was rejected as a rule of law. Exclusion clauses in commercial contracts are to be construed according to their natural meaning, giving effect to the parties' freedom to allocate risks as they see fit. The Unfair Contract Terms Act 1977 (not applicable to Ireland, but the Consumer Protection Act 2007 contains similar provisions) provides sufficient protection. The case is essential FE-1 learning on the construction of exclusion clauses post-UCTA.",
+    subjects: ['contract-law'],
+    topics: ['exemption-clauses', 'fundamental-breach', 'construction', 'commercial-contracts'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2022 Q9', 'Contract Autumn 2023 Q9'],
+  },
+  {
+    case_name: 'Karsales (Harrow) Ltd v Wallis',
+    citation: '[1956] 1 WLR 936',
+    year: 1956,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'A party cannot rely on an exemption clause where they have delivered something fundamentally different from what was contracted for, so different in character that it cannot be said to fall within the description of the contracted subject matter at all. (Note: the doctrine of fundamental breach as a rule of law was later rejected in Photo Production v Securicor.)',
+    key_quote:
+      'You cannot use an exemption clause to exempt yourself from the consequences of tendering something utterly different from what you contracted to supply.',
+    full_summary:
+      'Wallis inspected a car in good working order and agreed to buy it on hire-purchase through Karsales. When the car was delivered, it was being towed, could not be driven under its own power, and had the engine totally seized with damaged and missing parts. Karsales sought to rely on a clause in the hire-purchase agreement excluding all implied conditions and warranties. The Court of Appeal held the clause could not protect them. The car delivered was so fundamentally different from what was contracted for that the exclusion clause did not apply. Lord Denning MR held there was a doctrine of fundamental breach of contract which precluded the use of exclusion clauses in such cases. Note: this doctrine was overruled in Photo Production v Securicor but the case is still frequently cited in FE-1 materials.',
+    subjects: ['contract-law'],
+    topics: ['exemption-clauses', 'fundamental-breach', 'hire-purchase'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Western Meats Ltd v National Ice and Cold Storage Co Ltd',
+    citation: '[1982] ILRM 101',
+    year: 1982,
+    court: 'High Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      "An exclusion clause must be construed strictly and any ambiguity is to be resolved against the party seeking to rely on it (contra proferentem rule). An exclusion clause that covers negligence must use clear and unambiguous language to exclude liability for the promisor's own negligence.",
+    key_quote:
+      'If a party wishes to exclude liability for negligence, he must do so in clear and unambiguous terms; any ambiguity is resolved against the party relying on the exclusion.',
+    full_summary:
+      "Western Meats stored meat in a cold storage facility. The meat was damaged due to the negligence of the storage company's employees. The storage company relied on an exclusion clause in the storage contract. The Irish High Court applied the contra proferentem rule of construction to the exclusion clause: any ambiguity in its wording was to be construed against the party seeking to rely on it. As the clause was not clearly expressed to cover the company's own negligence, it was not effective to exclude liability for negligent damage to the stored meat. The case is a key Irish authority on the construction of exclusion clauses and the application of the contra proferentem rule in the Irish courts.",
+    subjects: ['contract-law'],
+    topics: [
+      'exemption-clauses',
+      'contra-proferentem',
+      'construction',
+      'negligence',
+      'irish-cases',
+    ],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2023 Q9', 'Contract Autumn 2024 Q8'],
+  },
+  {
+    case_name: 'Miley v McKechnie Ltd',
+    citation: '(1949) 84 ILTR 89',
+    year: 1949,
+    court: 'High Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      'An exemption clause purporting to exclude liability for negligence must be read strictly. Where a clause can be read as either covering or not covering negligence, the court will resolve the ambiguity against the party seeking its protection, unless the clause expressly refers to negligence.',
+    key_quote:
+      'Exemption clauses must be construed strictly; any doubt as to their meaning is resolved against the party who relies upon them.',
+    full_summary:
+      "Miley's property was damaged whilst in the care of McKechnie. McKechnie sought to rely on an exclusion of liability clause in their contract. The Irish High Court applied the principle that exclusion clauses are to be construed strictly and any ambiguity resolved against the party relying on them (contra proferentem). The case is an early Irish authority confirming the strict construction of exclusion clauses. It is used in FE-1 as an Irish counterpart to the English authorities on contra proferentem construction of exclusion clauses.",
+    subjects: ['contract-law'],
+    topics: ['exemption-clauses', 'contra-proferentem', 'construction', 'irish-cases'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Shea v Great Southern Railways Co',
+    citation: '[1944] Ir Jur Rep 26',
+    year: 1944,
+    court: 'Circuit Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      'An exclusion clause on a ticket is not incorporated into the contract if reasonable notice of its existence is not given at or before the time of contracting. The notice must be such that a reasonable person would be alerted to the existence of conditions.',
+    key_quote:
+      'For a ticket clause to be part of the contract, the passenger must have been given reasonable notice of it before the contract was concluded.',
+    full_summary:
+      "Shea purchased a rail ticket which contained conditions excluding the railway's liability. He suffered loss and sought to hold Great Southern Railways liable. The railway relied on the exclusion clause. The Circuit Court applied the English rules on incorporation of exclusion clauses by notice (Parker v South Eastern Railway). The court found that the railway had not given Shea reasonable notice of the conditions at the time of contracting, and accordingly the exclusion clause was not incorporated. The case is a useful Irish Circuit Court authority applying the English reasonable notice rule to railway tickets in the Irish context.",
+    subjects: ['contract-law'],
+    topics: ['exemption-clauses', 'incorporation', 'notice', 'ticket-cases', 'irish-cases'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'ESL Consulting Ltd v Verizon Ireland Ltd',
+    citation: '[2008] IEHC 369',
+    year: 2008,
+    court: 'High Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      'An exclusion clause in a commercial IT services contract will be upheld as valid and enforceable between sophisticated commercial parties where it is clearly and unambiguously drafted and the parties were of equal bargaining power. The courts will not rewrite commercial bargains after the event.',
+    key_quote:
+      'Where two sophisticated commercial parties have freely negotiated their contract and included an exclusion clause, the court will give effect to it according to its natural and ordinary meaning.',
+    full_summary:
+      "ESL Consulting provided IT services to Verizon Ireland under a contract containing an exclusion clause limiting Verizon's liability. A dispute arose as to whether Verizon could rely on the limitation clause. The Irish High Court held that in a commercial contract between two sophisticated parties of equal bargaining power, an exclusion clause that is clearly and unambiguously drafted will be given full effect according to its ordinary meaning. The court applied the principles from Photo Production v Securicor and found no reason to depart from the agreed contractual allocation of risk. The case is a useful modern Irish authority on the enforcement of commercial exclusion clauses.",
+    subjects: ['contract-law'],
+    topics: ['exemption-clauses', 'commercial-contracts', 'construction', 'irish-cases'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Rogers v Parish (Scarborough) Ltd',
+    citation: '[1987] QB 933',
+    year: 1987,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'For a new car purchased by a consumer, the implied term of satisfactory quality (s.14(2) Sale of Goods Act 1979) and the implied term of fitness for purpose (s.14(3)) require a high standard. A new car with defects is not of satisfactory quality even if it remains driveable; the standard reflects the expectation of a purchaser of new goods.',
+    key_quote:
+      'The buyer of a new car is entitled to something that functions properly and is free from defect to a reasonable standard; minor but persistent faults may cumulatively render a car unsatisfactory.',
+    full_summary:
+      'Rogers bought a new Range Rover from a dealer. From the outset the car suffered from defects including misfiring, oil leaks, defective bodywork, and persistent minor faults. Despite several repair attempts, the faults recurred. Rogers sought to reject the car under the Sale of Goods Act. The Court of Appeal held the car was not of merchantable quality (now satisfactory quality) because it did not meet the standard a reasonable person would regard as satisfactory for a new car. The standard is higher for new goods purchased at full price — a buyer is entitled to more than a merely functional car. The case establishes a robust standard for consumer goods and is essential FE-1 authority on the implied terms in the Sale of Goods Act.',
+    subjects: ['contract-law'],
+    topics: ['consumer-protection', 'sale-of-goods', 'satisfactory-quality', 'implied-terms'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2020 Q9', 'Contract Autumn 2022 Q9'],
+  },
+  {
+    case_name: 'Bernstein v Pamson Motors (Golders Green) Ltd',
+    citation: '[1987] 2 All ER 220',
+    year: 1987,
+    court: "Queen's Bench Division",
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "Under the Sale of Goods Act 1979, the right to reject goods for breach of condition (implied terms) is lost once the buyer has accepted the goods. Acceptance can occur after a short period of use where the goods have been used in a way inconsistent with the seller's ownership, even if the defect has not yet been discovered.",
+    key_quote:
+      'The Act does not contemplate a prolonged examination or trial. A buyer who has had the car for three weeks and put 140 miles on the clock has had a reasonable opportunity to examine it.',
+    full_summary:
+      'Bernstein purchased a new Nissan car. After about three weeks and 140 miles, the engine seized due to a blob of sealant blocking the oil supply — a latent defect present from the start. Bernstein sought to reject the car. The court held that while the car was not of merchantable quality at the time of sale, Bernstein had lost his right to reject it by acceptance. Using the car for three weeks constituted acceptance, even though he had not discovered the defect. Once accepted, he was limited to claiming damages rather than rejecting the goods. The case establishes the short window for rejection and is important FE-1 learning on the right to reject vs. the right to damages, and on when acceptance occurs under the Sale of Goods Act. Note: this rule has been modified by the Sale of Goods and Supply of Services Act 1980 (Ireland).',
+    subjects: ['contract-law'],
+    topics: ['consumer-protection', 'sale-of-goods', 'rejection', 'acceptance-of-goods'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2021 Q9'],
+  },
+  {
+    case_name: 'Wallis v Russell',
+    citation: '[1902] 2 IR 585',
+    year: 1902,
+    court: 'Court of Appeal (Ireland)',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      "Under the Sale of Goods Act 1893 (Ireland), there is an implied condition that goods sold by description must correspond with the description. Even a private sale on caveat emptor ('buyer beware') principles may be subject to this implied condition where the parties have contracted by description.",
+    key_quote:
+      'Where goods are sold by description, there is an implied condition that they shall correspond with the description. This is a condition, breach of which entitles the buyer to reject the goods.',
+    full_summary:
+      "Wallis purchased crabs described as 'live fresh crabs' from Russell. Some of the crabs were in fact dead and unsuitable for food. The Irish Court of Appeal held that 'live fresh crabs' was a sale by description, and the dead crabs did not correspond with that description. This was a breach of the implied condition under s.13 of the Sale of Goods Act 1893 (Ireland), entitling Wallis to reject the entire consignment. The case is a leading Irish authority on sale by description under the Sale of Goods Act, and is particularly relevant to FE-1 students as it applies the Irish Sale of Goods Act rather than the English equivalent.",
+    subjects: ['contract-law'],
+    topics: [
+      'consumer-protection',
+      'sale-of-goods',
+      'sale-by-description',
+      'implied-terms',
+      'irish-cases',
+    ],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2023 Q9', 'Contract Autumn 2024 Q9'],
+  },
+  {
+    case_name: 'Lutton v Saville Tractors (Belfast) Ltd',
+    citation: '[1986] NI 327',
+    year: 1986,
+    court: "Queen's Bench Division (Northern Ireland)",
+    jurisdiction: 'Northern Ireland',
+    legal_principle:
+      'A car purchased by a consumer must be of merchantable quality. Where persistent defects render a vehicle unroadworthy or fundamentally unsatisfactory, the buyer may be entitled to reject it. The implied condition of merchantable quality applies to second-hand goods, but at a lower standard reflecting the age and price paid.',
+    key_quote:
+      'The standard of merchantable quality for second-hand goods is lower than for new goods, but the goods must still be in a reasonable condition having regard to their age, mileage and price.',
+    full_summary:
+      'Lutton bought a second-hand car from Saville Tractors. The car suffered from persistent mechanical defects. The court considered the implied condition of merchantable quality under the Sale of Goods Act in the context of a second-hand vehicle. It held that while the standard for second-hand goods is lower, a car that is so defective as to be unroadworthy or unsafe fails to meet the implied condition. The buyer is entitled to a car that is roadworthy and reasonably fit for purpose, having regard to its age, condition, and price. This Northern Ireland authority is frequently cited in Irish FE-1 materials on the implied terms in consumer sales.',
+    subjects: ['contract-law'],
+    topics: ['consumer-protection', 'sale-of-goods', 'merchantable-quality', 'second-hand-goods'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Draper v Rubenstein',
+    citation: '(1925) 59 ILTR 119',
+    year: 1925,
+    court: 'Circuit Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      'Under the Sale of Goods Act 1893 (Ireland), where goods are sold by sample, there is an implied condition that the bulk shall correspond with the sample in quality and that the goods shall be free from any defect rendering them unmerchantable that would not be apparent on reasonable examination of the sample.',
+    key_quote:
+      'There is an implied condition on a sale by sample that the bulk shall correspond with the sample and that the goods shall be free from hidden defects.',
+    full_summary:
+      'Draper purchased goods from Rubenstein on the basis of a sample. The goods supplied did not correspond with the sample. The Circuit Court applied the Sale of Goods Act 1893, holding that in a sale by sample there is an implied condition that the bulk corresponds with the sample and that the goods are free from any defect making them unmerchantable that would not be apparent from reasonable examination. Breach of this condition entitled the buyer to reject the goods. The case is a useful Irish authority on sale by sample under the Sale of Goods Act 1893 as applied in the Irish courts.',
+    subjects: ['contract-law'],
+    topics: [
+      'consumer-protection',
+      'sale-of-goods',
+      'sale-by-sample',
+      'implied-terms',
+      'irish-cases',
+    ],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'George Mitchell (Chesterhall) Ltd v Finney Lock Seeds Ltd',
+    citation: '[1983] 2 AC 803',
+    year: 1983,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "Under the Unfair Contract Terms Act 1977, a limitation of liability clause in a commercial sale of goods contract is subject to the reasonableness test. In determining reasonableness, the court considers: relative bargaining strength, availability of insurance, whether the clause was brought to the buyer's attention, and the practical consequences of upholding or striking down the clause.",
+    key_quote:
+      'The relevant question under the Act is whether it is fair and reasonable to allow reliance on the limitation clause having regard to all the circumstances known to or reasonably contemplated by the parties.',
+    full_summary:
+      "Finney Lock Seeds supplied cabbage seed to George Mitchell. The seed supplied was the wrong variety and the crop was a total failure. The seed cost £201; the crop loss was nearly £62,000. The contract limited Finney's liability to the cost of the seed. The House of Lords applied the Unfair Contract Terms Act 1977 reasonableness test and held the limitation clause was unreasonable. Factors: the seed company could have insured against the risk at little cost and passed it on in prices; the seller was better placed to bear the risk of supply failures; and it would not be reasonable to limit liability to the price of seed when the buyer suffered catastrophic losses. This is the leading case on the UCTA reasonableness test and is important in FE-1 for its equivalent under the Sale of Goods and Supply of Services Act 1980 (Ireland).",
+    subjects: ['contract-law'],
+    topics: ['consumer-protection', 'exemption-clauses', 'reasonableness-test', 'sale-of-goods'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2022 Q9'],
+  },
+  {
+    case_name: 'Ashington Piggeries Ltd v Christopher Hill Ltd',
+    citation: '[1972] AC 441',
+    year: 1972,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "For goods to satisfy the implied condition of fitness for purpose under s.14(3) Sale of Goods Act, the buyer must make known the particular purpose for which the goods are required; reliance on the seller's skill and judgment may be implied from the circumstances. The test is whether the goods are fit for the purpose for which they are normally and usually used.",
+    key_quote:
+      "If a buyer indicates a particular purpose for which goods are required and relies on the seller's skill and judgment, there is an implied condition that the goods will be reasonably fit for that purpose.",
+    full_summary:
+      "Ashington Piggeries prepared animal feed compounds for Christopher Hill to a specification. The feed contained herring meal contaminated with DMNA, a substance toxic to mink. Ashington Piggeries supplied the feed to Christopher Hill, who sold it for use in mink feed. The mink died. The House of Lords held that the relevant purposes were known (mink food) and the sellers were in breach of the implied condition of fitness for purpose. The case explores the scope of the fitness for purpose condition and the meaning of 'reliance' on the seller's skill and judgment, important FE-1 analysis for multi-level supply chains.",
+    subjects: ['contract-law'],
+    topics: ['consumer-protection', 'sale-of-goods', 'fitness-for-purpose', 'implied-terms'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Derry v Peek',
+    citation: '(1889) 14 App Cas 337',
+    year: 1889,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Fraud (fraudulent misrepresentation) is established by proving that the defendant made a false representation: (1) knowingly, or (2) without belief in its truth, or (3) recklessly as to whether it was true or false. An honest belief in the truth of a statement, however unreasonable, prevents a finding of fraud.',
+    key_quote:
+      'Fraud is proved when it is shewn that a false representation has been made (1) knowingly, or (2) without belief in its truth, or (3) recklessly, careless whether it be true or false.',
+    full_summary:
+      "The directors of a tramway company included in their prospectus a statement that they had permission to use steam-powered trams, when in fact only a provisional order had been obtained, requiring Board of Trade consent. They believed the permission would be granted as a formality. The consent was refused and the company was wound up. Peek sued for deceit. The House of Lords held the directors were not fraudulent because they honestly believed the statement was true. Lord Herschell's definition of fraud in this case remains the authoritative statement. The case also established that negligent misrepresentation (short of fraud) did not give rise to an independent action in tort (since qualified by Hedley Byrne). It is the foundation of the law of misrepresentation for FE-1 purposes.",
+    subjects: ['contract-law'],
+    topics: ['misrepresentation', 'fraudulent-misrepresentation', 'fraud', 'deceit'],
+    is_frequently_tested: true,
+    past_paper_appearances: [
+      'Contract Autumn 2019 Q10',
+      'Contract Spring 2021 Q10',
+      'Contract Autumn 2023 Q10',
+    ],
+  },
+  {
+    case_name: 'Edgington v Fitzmaurice',
+    citation: '(1885) 29 Ch D 459',
+    year: 1885,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "A statement of intention or opinion can constitute a misrepresentation of fact if the representor does not genuinely hold that intention or opinion. A statement about one's state of mind is a statement of fact, and a false statement of intention constitutes fraudulent misrepresentation.",
+    key_quote:
+      "The state of a man's mind is as much a fact as the state of his digestion. It is true that it is very difficult to prove what the state of a man's mind at a particular time is, but if it can be ascertained it is as much a fact as anything else.",
+    full_summary:
+      "A company's prospectus stated that money raised by debentures would be used to complete certain alterations to the company's buildings and to extend the business. In fact, the directors intended to use the money to pay off existing liabilities. An investor sued for misrepresentation. The Court of Appeal held this was a fraudulent misrepresentation of fact. A statement of intention is a statement about the speaker's state of mind — which is a fact. If the representor knows the stated intention is false, that is a fraudulent misrepresentation. Bowen LJ's famous observation that 'the state of a man's mind is as much a fact as the state of his digestion' is one of the most cited lines in contract law. Essential FE-1 authority on statements of intention as misrepresentations.",
+    subjects: ['contract-law'],
+    topics: [
+      'misrepresentation',
+      'fraudulent-misrepresentation',
+      'statement-of-intention',
+      'statements-of-fact',
+    ],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2020 Q10', 'Contract Autumn 2022 Q10'],
+  },
+  {
+    case_name: "With v O'Flanagan",
+    citation: '[1936] Ch 575',
+    year: 1936,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Where a statement is true when made but becomes false before the contract is concluded due to a change in circumstances, the representor has a duty to disclose the change. Failure to correct a statement that has become false is itself a misrepresentation (continuing misrepresentation by conduct).',
+    key_quote:
+      'If a party makes a representation which is true at the date when made but which becomes untrue by the date of the contract, he is under a duty to communicate the change to the other party.',
+    full_summary:
+      "A medical practice was sold. During negotiations, the vendor correctly stated the practice earned £2,000 per year. Between making that statement and the signing of the contracts, the vendor fell ill and the practice's income dropped substantially. The buyer was not told of this change. When he discovered it, he sought to rescind. The Court of Appeal held he was entitled to rescind. The vendor was under a duty to disclose the change in circumstances because the original statement had become false. A misrepresentation that was true when made but is false by the time of contracting amounts to a misrepresentation by silence/omission (a continuing representation). This is an important FE-1 exception to the general rule that there is no duty to disclose.",
+    subjects: ['contract-law'],
+    topics: [
+      'misrepresentation',
+      'continuing-misrepresentation',
+      'duty-to-disclose',
+      'change-of-circumstances',
+    ],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2021 Q10', 'Contract Autumn 2023 Q10'],
+  },
+  {
+    case_name: 'Bisset v Wilkinson',
+    citation: '[1927] AC 177',
+    year: 1927,
+    court: 'Privy Council',
+    jurisdiction: 'New Zealand',
+    legal_principle:
+      'A statement of opinion is not a misrepresentation of fact unless the representor knows it to be false or does not honestly hold that opinion. Where both parties know that the representor is only expressing an opinion (especially on matters where neither party has superior knowledge), the statement cannot ground a claim for misrepresentation.',
+    key_quote:
+      'If a vendor states that in his opinion the land will carry 2,000 sheep, and the buyer knows the statement is a matter of opinion, there is no misrepresentation of fact.',
+    full_summary:
+      'Bisset sold land to Wilkinson, telling him the land would support 2,000 sheep if properly worked. Both parties knew the land had never been used as a sheep farm and that the statement was an expression of opinion. The land proved incapable of supporting that number. The Privy Council held the statement was an honestly held opinion, not a statement of fact. Where both parties know the speaker is only expressing a personal opinion without any special expertise, no misrepresentation arises. The test is whether the opinion is honestly held; if it is, no actionable misrepresentation results even if the opinion is wrong. The case is essential FE-1 authority on distinguishing statements of opinion from statements of fact in misrepresentation claims.',
+    subjects: ['contract-law'],
+    topics: ['misrepresentation', 'statements-of-opinion', 'statements-of-fact'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2020 Q10', 'Contract Spring 2024 Q10'],
+  },
+  {
+    case_name: 'Smith v Land and House Property Corp',
+    citation: '(1884) 28 Ch D 7',
+    year: 1884,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "A statement of opinion may carry an implied representation of fact where the speaker has superior knowledge or access to facts from which the opinion is derived. A vendor who describes a tenant as 'most desirable' impliedly represents that they have reasonable grounds for that opinion.",
+    key_quote:
+      'If the facts are not equally known to both sides, then a statement of opinion by the one who knows the facts best involves very often a statement of a material fact, for he impliedly states that he knows facts which justify his opinion.',
+    full_summary:
+      "The vendor sold a hotel 'let to Mr Frederick Fleck (a most desirable tenant)'. In fact, the vendor knew Fleck had been persistently in arrears with rent and was being pressed for payment. The Court of Appeal held this was an actionable misrepresentation. The description 'most desirable tenant' was not merely an opinion — it carried an implied representation of fact that the vendor had reasonable grounds for believing Fleck was a desirable tenant. Where the facts are not equally known and the vendor has superior knowledge, a statement of opinion implies a factual statement that the speaker has adequate grounds for it. This case qualifies the Bisset v Wilkinson principle and is key FE-1 authority on opinion statements where one party has superior knowledge.",
+    subjects: ['contract-law'],
+    topics: [
+      'misrepresentation',
+      'statements-of-opinion',
+      'statements-of-fact',
+      'implied-representations',
+    ],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Attwood v Small',
+    citation: '(1838) 6 Cl & F 232',
+    year: 1838,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "A misrepresentation does not induce a contract if the representee does not rely on it, for example because they independently verified the facts through their own investigation. If the buyer makes their own examination and relies on that rather than on the seller's statement, the seller's misrepresentation cannot have induced the contract.",
+    key_quote:
+      'Where the purchaser did not rely on the representations but verified the facts for himself, the representations cannot be said to have induced the contract.',
+    full_summary:
+      "A mine was sold with various representations about its capacity and output. The purchasers sent their own agents to verify the representations before completing. Those agents reported the representations to be correct. When the mine proved less valuable than represented, the purchasers sought rescission. The House of Lords rejected the claim. The purchasers had commissioned an independent investigation and had relied on their own agents' report rather than on the vendor's representations. The vendor's misrepresentations had not induced the contract — the purchasers had substituted their own investigation for reliance on those representations. The case establishes that inducement (actual reliance on the misrepresentation) is an essential element of misrepresentation, and that independent verification can break the chain of reliance.",
+    subjects: ['contract-law'],
+    topics: ['misrepresentation', 'inducement', 'reliance'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Redgrave v Hurd',
+    citation: '(1881) 20 Ch D 1',
+    year: 1881,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'A representee is entitled to rely on a material representation and is not obliged to investigate its truth. A failure to take up an opportunity to read documents does not prevent a representee from claiming that the representation induced the contract, unless the representee actually relied on their own inspection rather than on the representation.',
+    key_quote:
+      'A man is not obliged to test the accuracy of a representation which has been made to him; he may rely on it as it stands.',
+    full_summary:
+      "Redgrave sold his solicitor's practice to Hurd, representing that the business brought in about £300 per year. In fact, it brought in only £200. Hurd was shown papers relating to the business but did not read them, in which case he might have discovered the truth. When he discovered the misrepresentation, he refused to complete and Redgrave sued. The Court of Appeal held Hurd could rescind. A representee is not required to verify a representation — they are entitled to rely on it. Even though Hurd had the opportunity to check the papers, his failure to do so did not prevent him from asserting misrepresentation, as he had actually relied on the representation rather than on his own examination. The case is essential FE-1 authority on the rule that failure to verify does not disentitle a representee from rescinding for misrepresentation.",
+    subjects: ['contract-law'],
+    topics: ['misrepresentation', 'inducement', 'reliance', 'rescission'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2022 Q10'],
+  },
+  {
+    case_name: 'Hedley Byrne & Co Ltd v Heller & Partners Ltd',
+    citation: '[1964] AC 465',
+    year: 1964,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "A duty of care in respect of negligent misstatements exists where: (1) there is a 'special relationship' between the parties characterised by an assumption of responsibility by the defendant and reasonable reliance by the claimant; and (2) the defendant knows the claimant will rely on the statement. Liability for negligent misrepresentation outside contract was established for the first time.",
+    key_quote:
+      'Where there is a relationship equivalent to contract—a special relationship—and a party makes a careless statement knowing it will be relied upon, they may be liable for the loss caused by reliance on that statement.',
+    full_summary:
+      "Hedley Byrne asked their bank to seek a credit reference from Heller, the bankers of a company (Easipower) with which they were dealing. Heller gave a favourable reference headed 'without responsibility'. Hedley Byrne relied on the reference and suffered loss when Easipower became insolvent. The House of Lords held that in principle Heller could have been liable for negligent misstatement, but the 'without responsibility' disclaimer protected them. The case established the Hedley Byrne principle of liability for negligent misstatement outside contract: where there is a special relationship (voluntary assumption of responsibility + reasonable reliance), the maker of a statement may be liable in tort for negligent misrepresentation causing pure economic loss. This is a critical FE-1 and Torts case.",
+    subjects: ['contract-law', 'torts'],
+    topics: ['misrepresentation', 'negligent-misrepresentation', 'hedley-byrne', 'duty-of-care'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2020 Q10', 'Contract Spring 2023 Q10'],
+  },
+  {
+    case_name: 'Esso Petroleum Co Ltd v Mardon',
+    citation: '[1976] QB 801',
+    year: 1976,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'A party who negligently makes a statement about a technical matter within their expertise, on which another party relies to their detriment, may be liable for negligent misrepresentation under the Hedley Byrne principle. A negligent misrepresentation inducing a contract gives rise to concurrent liability in contract (under Misrepresentation Act s.2(1)) and tort.',
+    key_quote:
+      'Esso, with their expertise in the petrol trade, made a statement about estimated throughput which they knew or ought to have known would be relied upon; that gives rise to a duty of care.',
+    full_summary:
+      'Esso negotiated with Mardon for him to take a tenancy of a petrol station. An experienced Esso employee (who knew the site was now on a back street since planning permission refused for roadside access) nevertheless represented to Mardon that throughput would reach 200,000 gallons per year. The actual throughput was much lower and Mardon suffered losses. The Court of Appeal held Esso liable both: (1) in contract, for negligent misrepresentation under the Misrepresentation Act 1967 (s.2(1)); and (2) in tort under Hedley Byrne. The expert making a statement to a non-expert who relies on it creates a special relationship. The case is a key FE-1 authority on negligent misrepresentation and on the interaction of tort and contract liability for pre-contractual representations.',
+    subjects: ['contract-law'],
+    topics: [
+      'misrepresentation',
+      'negligent-misrepresentation',
+      'hedley-byrne',
+      'concurrent-liability',
+    ],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2022 Q10'],
+  },
+  {
+    case_name: 'Chariot Inns Ltd v Assicurazioni Generali SPA',
+    citation: '[1981] IR 199',
+    year: 1981,
+    court: 'Supreme Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      'In contracts uberrimae fidei (of the utmost good faith), such as insurance contracts, there is a duty of disclosure of all material facts known to the proposer. Failure to disclose a material fact, even innocently, entitles the insurer to avoid the contract. A material fact is one that would influence a prudent insurer in deciding whether to accept the risk and on what terms.',
+    key_quote:
+      'In a contract of insurance, the proposer is under a duty of utmost good faith to disclose all material facts; failure to do so entitles the insurer to avoid the policy.',
+    full_summary:
+      'Chariot Inns sought to claim under a fire insurance policy. The insurer sought to avoid the policy on the ground of non-disclosure of material facts. The Irish Supreme Court applied the principle of uberrima fides (utmost good faith) applicable to insurance contracts. It held that the proposer is under a duty to disclose all facts material to the risk without waiting to be asked. A material fact is one that would affect the judgment of a prudent insurer. Failure to disclose, even innocently, entitles the insurer to avoid the contract. This is the leading Irish authority on the duty of utmost good faith in insurance contracts, relevant to FE-1 questions on misrepresentation and non-disclosure.',
+    subjects: ['contract-law'],
+    topics: ['misrepresentation', 'non-disclosure', 'uberrima-fides', 'insurance', 'irish-cases'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2021 Q10', 'Contract Autumn 2024 Q10'],
+  },
+  {
+    case_name: 'Gahan v Boland',
+    citation: '[1984] ILRM 302',
+    year: 1984,
+    court: 'Supreme Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      "A vendor who makes a representation that induces the purchaser to enter a contract for the sale of land is liable for misrepresentation in Irish law. The vendor's failure to disclose material defects in title can amount to misrepresentation, and the purchaser may be entitled to rescind or claim damages.",
+    key_quote:
+      'A vendor who makes a positive representation to induce a purchaser to buy is liable in misrepresentation if that representation is false, even if made innocently.',
+    full_summary:
+      'In a sale of land, the vendor made representations about the property that induced the purchaser to buy. The representations were found to be false. The Irish Supreme Court considered the application of the law of misrepresentation to the sale of land in Ireland, including the availability of rescission and damages. The court affirmed that the general principles of misrepresentation apply to land contracts in Ireland and that a purchaser who has been induced by a false representation is entitled to rescind or claim damages. The case is an important Irish authority on misrepresentation in conveyancing transactions.',
+    subjects: ['contract-law'],
+    topics: ['misrepresentation', 'rescission', 'land-transactions', 'irish-cases'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2020 Q10', 'Contract Autumn 2021 Q10'],
+  },
+  {
+    case_name: 'Northern Bank Finance Corporation Ltd v Charlton',
+    citation: '[1979] IR 149',
+    year: 1979,
+    court: 'Supreme Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      'In Irish law, a misrepresentation that induces a party to enter a contract may render the contract voidable at the option of the representee. The representee must elect to rescind promptly upon discovering the misrepresentation; delay or affirmation of the contract may bar the remedy of rescission.',
+    key_quote:
+      'A party who has been induced by misrepresentation to enter into a contract is entitled to rescind it, but must do so promptly and before affirming the contract.',
+    full_summary:
+      'Charlton alleged that false representations made by Northern Bank Finance Corporation induced him to enter into a loan agreement. The Irish Supreme Court examined the requirements for rescission for misrepresentation in Irish law. The court confirmed that misrepresentation rendering a contract voidable entitles the representee to rescind, but this right may be lost by affirmation of the contract (treating it as valid after discovering the misrepresentation), by lapse of time, or by the intervention of third-party rights. The case sets out the Irish law on the conditions for and bars to rescission for misrepresentation, central to FE-1 misrepresentation questions.',
+    subjects: ['contract-law'],
+    topics: ['misrepresentation', 'rescission', 'bars-to-rescission', 'irish-cases'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2023 Q10'],
+  },
+  {
+    case_name: 'Long v Lloyd',
+    citation: '[1958] 1 WLR 753',
+    year: 1958,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'The right to rescind a contract for misrepresentation is lost once the contract has been affirmed. Taking the benefit of the contract after discovering the truth of a misrepresentation (or a partial truth) constitutes affirmation and bars rescission.',
+    key_quote:
+      'Once a party who has been induced by misrepresentation to enter a contract elects to affirm it after discovering the true facts, he loses his right to rescind.',
+    full_summary:
+      "Long bought a lorry from Lloyd, who represented it was in good condition. After taking delivery and encountering problems, Long accepted Lloyd's offer to pay half the cost of repairing one defect. He continued to use the lorry. Further serious defects emerged and Long sought to rescind. The Court of Appeal held rescission was barred by affirmation. By accepting the part-payment for repairs and continuing to use the lorry after learning of defects, Long had affirmed the contract. A party who continues to use goods and accept benefits under a contract after becoming aware of a misrepresentation (or partial disclosure) cannot thereafter rescind. The case is essential FE-1 authority on affirmation as a bar to rescission.",
+    subjects: ['contract-law'],
+    topics: ['misrepresentation', 'rescission', 'affirmation', 'bars-to-rescission'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2023 Q10'],
+  },
+  {
+    case_name: "Smelter Corporation of Ireland Ltd v O'Driscoll",
+    citation: '[1977] IR 305',
+    year: 1977,
+    court: 'Supreme Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      'In Irish law, a negligent misrepresentation that induces a contract may give rise to a remedy of rescission and/or damages in equity, notwithstanding the general rule that innocent misrepresentation does not give rise to damages in common law. The court has a broad equitable jurisdiction to grant rescission for pre-contractual misrepresentations.',
+    key_quote:
+      'The Court has jurisdiction in equity to grant rescission where a party has been induced to enter a contract by a misrepresentation, whether fraudulent, negligent or innocent.',
+    full_summary:
+      "O'Driscoll entered into a contract with Smelter Corporation in reliance on representations about the nature and benefits of the transaction. When the representations proved false, O'Driscoll sought to rescind in equity. The Irish Supreme Court affirmed the broad equitable jurisdiction to grant rescission for misrepresentation in Irish law. It noted that in Ireland (unlike England where the Misrepresentation Act 1967 codifies the remedies), the equitable jurisdiction remains the primary source of remedies for misrepresentation, including both rescission and, in appropriate cases, damages in lieu of rescission. The case is essential for FE-1 students because it shows that Irish misrepresentation law differs from English law in this important respect.",
+    subjects: ['contract-law'],
+    topics: ['misrepresentation', 'rescission', 'equity', 'irish-cases'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2020 Q10', 'Contract Spring 2022 Q10'],
+  },
+  {
+    case_name: 'Loonam v Kenny',
+    citation: '[1993] IEHC (unreported)',
+    year: 1993,
+    court: 'High Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      'Where a representee discovers a misrepresentation and continues to perform the contract without seeking rescission, they may be held to have affirmed the contract. Affirmation requires knowledge of the misrepresentation and a clear intention to proceed with the contract despite it.',
+    key_quote:
+      'Affirmation requires both knowledge of the right to rescind and a clear and unequivocal election to proceed with the contract.',
+    full_summary:
+      'Loonam entered into a contract with Kenny in reliance on representations that later proved to be false. After discovering the misrepresentation, Loonam continued to deal with Kenny for some time before seeking rescission. The Irish High Court considered whether this continued dealing amounted to affirmation. It held that for affirmation to bar rescission, the representee must have known both of the misrepresentation and of their right to rescind, and must have unequivocally elected to proceed. A party who continues to perform a contract in ignorance of their right to rescind has not affirmed. The case is a useful Irish authority on the knowledge requirement for affirmation as a bar to rescission.',
+    subjects: ['contract-law'],
+    topics: ['misrepresentation', 'rescission', 'affirmation', 'bars-to-rescission', 'irish-cases'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Leaf v International Galleries',
+    citation: '[1950] 2 KB 86',
+    year: 1950,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'The right to rescind a contract for innocent misrepresentation can be lost by lapse of time, even where the buyer did not discover the misrepresentation until some years later. Equity requires that the right to rescind be exercised within a reasonable time of when it could, with reasonable diligence, have been discovered.',
+    key_quote:
+      'A party cannot rescind for innocent misrepresentation after an unreasonable lapse of time, even if the true facts have only recently been discovered.',
+    full_summary:
+      'In 1944, Leaf bought a painting from International Galleries, who represented it was by Constable. Five years later, Leaf sought to sell the painting and discovered it was not a genuine Constable. He immediately sought to rescind. The Court of Appeal held that the right to rescind for innocent misrepresentation had been lost by lapse of time. Five years was too long. The court refused to treat an innocent misrepresentation in the same way as a fraudulent one (where the limitation period runs from discovery). Lapse of time is an independent bar to rescission in cases of innocent misrepresentation. The case is a key FE-1 authority on lapse of time as a bar to rescission, contrasted with the position for fraudulent misrepresentation.',
+    subjects: ['contract-law'],
+    topics: ['misrepresentation', 'rescission', 'lapse-of-time', 'bars-to-rescission'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2023 Q10'],
+  },
+  {
+    case_name: 'Bell v Lever Brothers Ltd',
+    citation: '[1932] AC 161',
+    year: 1932,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Common mistake at common law makes a contract void only if the mistake is so fundamental that it renders the subject matter of the contract essentially different from what the parties believed it to be. A shared false assumption that merely affects the value or quality of the subject matter is insufficient; the threshold is high.',
+    key_quote:
+      'Mistake as to the quality of the subject matter of the contract is not sufficient to avoid the contract at common law; the mistake must render the subject matter essentially different from what was contracted for.',
+    full_summary:
+      'Bell and Snelling were senior employees of Lever Brothers. They were paid large compensation sums to terminate their service agreements. Lever Brothers later discovered that Bell and Snelling had been in breach of their service agreements (through secret dealings) and could therefore have been dismissed without compensation. Lever Brothers claimed the compensation agreements were void for common mistake — both sides had been mistaken about whether the service agreements were capable of being terminated without compensation. The House of Lords held the contracts were valid. Common mistake at common law renders a contract void only if the subject matter contracted for is essentially different from what both parties supposed. Here both parties knew they were contracting to terminate existing service agreements — the mistake only went to the quality of those agreements, not to their essence.',
+    subjects: ['contract-law'],
+    topics: ['mistake', 'common-mistake', 'void-contracts'],
+    is_frequently_tested: true,
+    past_paper_appearances: [
+      'Contract Spring 2019 Q11',
+      'Contract Autumn 2021 Q11',
+      'Contract Spring 2024 Q11',
+    ],
+  },
+  {
+    case_name: 'Cooper v Phibbs',
+    citation: '(1867) LR 2 HL 149',
+    year: 1867,
+    court: 'House of Lords',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      'Where both parties to a contract are under a common mistake as to the existence of the subject matter or as to the ownership of the thing contracted for, equity will rescind the contract on terms. This is the equitable doctrine of common mistake, which has a lower threshold than the common law doctrine from Bell v Lever Brothers.',
+    key_quote:
+      'If parties contract under a mutual mistake and misapprehension as to their relative and respective rights, the result is that the agreement is void or the court will refuse to enforce it.',
+    full_summary:
+      'Cooper agreed to take a lease of a fishery from Phibbs. Unknown to either party, Cooper was already the tenant for life of the fishery under a family settlement — he was in effect leasing from himself. The House of Lords held the lease should be set aside in equity, because it was entered into under a fundamental common mistake as to the ownership of the subject matter. Where both parties are mistaken about the basic facts underlying their agreement and equity would be offended by enforcing it, the court can rescind the contract on terms (here, on terms that Phibbs be compensated for improvements). The case is a leading authority on mistake in equity and is relevant to FE-1 questions on common mistake and its equitable dimension.',
+    subjects: ['contract-law'],
+    topics: ['mistake', 'common-mistake', 'equity', 'rescission', 'irish-cases'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Great Peace Shipping Ltd v Tsavliris Salvage (International) Ltd',
+    citation: '[2002] EWCA Civ 1407',
     year: 2002,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
     legal_principle:
-      'The Supreme Court adopted a three-part test for the existence of a duty of care in Irish negligence law: (i) foreseeability of damage; (ii) proximity between the parties; and (iii) it must be just and reasonable to impose a duty. Keane CJ emphasised that the third element requires the court to consider the broader implications of imposing liability. This is the leading Irish authority on the duty of care and has been applied in countless subsequent cases.',
+      'Common mistake in equity (as reformulated in Solle v Butcher) has no separate existence from common mistake at common law after Bell v Lever Brothers. If the mistake is insufficient to void the contract at common law, equity cannot provide wider relief by rescission. The doctrine of mistake at common law and in equity is unified.',
     key_quote:
-      'For a duty of care to exist, the damage must be foreseeable, there must be sufficient proximity between the parties, and it must be just and reasonable to impose a duty.',
+      'If the common law does not avoid a contract for mistake, we can see no principled basis upon which equity can intervene to rescind it; Solle v Butcher is inconsistent with Bell v Lever Brothers and cannot stand.',
     full_summary:
-      'Glencar Exploration plc v Mayo County Council (No 2) [2002] 1 IR 84 is the leading Supreme Court authority on the existence of a duty of care in Irish negligence law. The plaintiffs, mining companies, claimed that Mayo County Council had acted negligently in adopting a development plan that incorporated a mining ban, causing economic loss. Keane CJ, delivering the principal judgment, adopted a tripartite test for the duty of care drawing on the approach in Caparo Industries plc v Dickman in English law: first, the damage to the plaintiff must be reasonably foreseeable; second, there must be a sufficient relationship of proximity between the parties; and third, it must be just and reasonable to impose a duty of care in all the circumstances. The chief justice emphasised that the third limb — just and reasonable — requires an examination of the broader implications of imposing liability, including policy considerations. This framework displaced the two-stage Anns test and established a more cautious approach to duty of care. Glencar has been applied in virtually every subsequent Irish negligence case and is the foundational starting point for duty of care analysis in Ireland.',
-    subjects: ['criminal', 'torts'],
-    topics: [
-      'negligence',
-      'duty of care',
-      'three-part test',
-      'public body liability',
-      'foreseeability',
-    ],
+      'A vessel was in distress and Tsavliris hired the Great Peace for salvage assistance, believing it to be close to the distressed vessel. In fact it was 410 miles away, rendering it useless for the purpose. Tsavliris cancelled the contract and argued it was void for common mistake. The Court of Appeal held the contract was not void for common mistake. The mistake did not render performance impossible; the Great Peace could still sail to assist, just more slowly. More significantly, the court reviewed Solle v Butcher (the main equitable common mistake case) and held it was inconsistent with Bell v Lever Brothers. There is no separate equitable jurisdiction to rescind contracts for common mistake where the mistake is insufficient to void them at common law. This abolition of the equitable doctrine significantly restricts mistake doctrine in English law (and potentially Irish law).',
+    subjects: ['contract-law'],
+    topics: ['mistake', 'common-mistake', 'equity', 'solle-v-butcher'],
     is_frequently_tested: true,
-    past_paper_appearances: [],
+    past_paper_appearances: ['Contract Spring 2022 Q11'],
   },
   {
-    case_name: 'Cuddy v Mays',
-    citation: '[2003] IEHC 103',
+    case_name: 'Smith v Hughes',
+    citation: '(1871) LR 6 QB 597',
+    year: 1871,
+    court: "Queen's Bench",
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "Where only one party is mistaken about the quality of the subject matter, and the other party knows of the mistake but does not correct it, the contract is nonetheless binding. Unilateral mistake as to quality generally does not affect the validity of a contract; the exception is where the other party knows of and 'snaps' at the mistake.",
+    key_quote:
+      "If, whatever a man's real intention may be, he so conducts himself that a reasonable man would believe that he was assenting to the terms proposed by the other party, and that other party upon that belief enters into the contract with him, the man thus conducting himself would be equally bound as if he had intended to agree to the other party's terms.",
+    full_summary:
+      "A buyer agreed to purchase oats from a farmer. He believed he was purchasing 'old oats' but the farmer knew he was contracting only for 'oats' (which could include new oats). The buyer sought to rescind when the oats proved to be new. The court held the contract was binding. The offer and acceptance, assessed objectively, were for oats — not specifically for old oats. Although the buyer was mistaken as to the quality, the seller had not misrepresented anything. Even if the seller knew the buyer was mistaken about the quality of the oats, mere knowledge of another's mistake as to quality does not render the contract void. Unilateral mistake as to quality does not vitiate a contract. The case also established the objective theory of contract formation.",
+    subjects: ['contract-law'],
+    topics: ['mistake', 'unilateral-mistake', 'quality-mistake', 'objective-theory'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2022 Q11'],
+  },
+  {
+    case_name: 'Cundy v Lindsay',
+    citation: '(1878) 3 App Cas 459',
+    year: 1878,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Where a party is induced to contract with a fraudulent impersonator and the fraudster sells the goods to an innocent third party, the contract with the fraudster is void (not merely voidable) for unilateral mistake as to identity. The innocent purchaser therefore acquires no title.',
+    key_quote:
+      'The minds of the parties never met: Lindsay intended to contract with Blenkirn & Co, not with Cundy, and so there was no contract between Lindsay and the fraudster.',
+    full_summary:
+      "A rogue (Blenkarn) wrote to Lindsay & Co, a linen manufacturer, mimicking the address of a reputable firm 'Blenkirn & Co'. Lindsay sent goods on credit. Blenkarn sold them to Cundy (an innocent purchaser) and absconded. The House of Lords held that there was never a contract between Lindsay and Blenkarn: Lindsay intended to contract only with Blenkirn & Co. Since there was no contract, no property passed to Blenkarn, and Cundy acquired no title. The contract was void for mistake as to identity (not merely voidable for fraud). This is the leading case on mistake as to identity where the parties never met face-to-face, and is contrasted with Phillips v Brooks and Lewis v Averay where the face-to-face presumption applies.",
+    subjects: ['contract-law'],
+    topics: ['mistake', 'identity-mistake', 'void-contracts', 'nemo-dat'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2020 Q11', 'Contract Spring 2023 Q11'],
+  },
+  {
+    case_name: 'Phillips v Brooks Ltd',
+    citation: '[1919] 2 KB 243',
+    year: 1919,
+    court: "King's Bench Division",
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Where parties contract face-to-face, there is a presumption that the offeror intends to deal with the person physically present. A mistake as to the identity of the person physically present (as opposed to their creditworthiness or attributes) makes the contract voidable for fraud, not void for mistake. An innocent third-party purchaser who acquires goods before the contract is avoided obtains good title.',
+    key_quote:
+      'When two parties deal face-to-face and there is no document to contradict the inference, the vendor intends to sell to the person before him, whoever he may be.',
+    full_summary:
+      'A rogue entered a jewellers claiming to be Sir George Bullough, a person of known creditworthiness. He was allowed to take away a ring against a cheque that bounced. He pawned the ring at Brooks Ltd. The court held the contract with the rogue was voidable for fraud, not void for mistake. When parties deal face-to-face, the jeweller intended to contract with the person physically present; the mistake was as to his creditworthiness, not his identity. The contract being voidable (rather than void), the rogue acquired property in the ring and could pass title to Brooks before the contract was avoided. The case is the leading FE-1 authority on the face-to-face presumption in unilateral identity mistake cases, contrasted with Cundy v Lindsay.',
+    subjects: ['contract-law'],
+    topics: ['mistake', 'identity-mistake', 'voidable-contracts', 'nemo-dat'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2020 Q11', 'Contract Spring 2023 Q11'],
+  },
+  {
+    case_name: 'Lewis v Averay',
+    citation: '[1972] 1 QB 198',
+    year: 1972,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Where the parties contract face-to-face, the presumption is that the seller intends to deal with the person present, not an assumed identity. A fraudulent misrepresentation as to identity in a face-to-face sale only makes the contract voidable, not void. A purchaser who acquires goods before the contract is avoided obtains good title.',
+    key_quote:
+      'When two people deal face-to-face the court will, unless there is very strong evidence to the contrary, hold that the seller intended to deal with the person in front of him and not with some other person.',
+    full_summary:
+      "Lewis advertised his car for sale. A rogue came to inspect the car, claiming to be the actor 'Richard Greene'. He was allowed to take the car against a cheque with supporting evidence (an old Pinewood Studios pass). The cheque bounced. The rogue sold the car to Averay before Lewis could avoid the contract. The Court of Appeal held the contract was voidable for fraud, not void for mistake. Applying Phillips v Brooks, when parties deal face-to-face the presumption is that the seller intends to deal with the person present. The mistake was as to attributes (whether the person was who he claimed to be), not as to identity in the Cundy v Lindsay sense. Averay had acquired good title before avoidance. The case is the leading modern FE-1 authority on face-to-face identity mistake.",
+    subjects: ['contract-law'],
+    topics: ['mistake', 'identity-mistake', 'voidable-contracts', 'nemo-dat'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2023 Q11'],
+  },
+  {
+    case_name: 'Shogun Finance Ltd v Hudson',
+    citation: '[2003] UKHL 62',
     year: 2003,
-    court: 'High Court of Ireland',
-    jurisdiction: 'IE',
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
     legal_principle:
-      "The High Court applied the duty of care principles and occupier's liability provisions to a personal injury claim. The court considered the standard of care owed by an occupier to a visitor and the circumstances in which liability for negligence arises from a failure to maintain premises in a safe condition. The Occupiers' Liability Act 1995 and Glencar Exploration principles were applied.",
+      "Where a written contract is concluded with a specific named party, the contract is with that named party and not with anyone else. A fraudster who assumes a real person's identity in a written hire-purchase agreement does not contract with the finance company — the company contracts with the named person only. The contract is void for mistake as to identity.",
     key_quote:
-      'An occupier owes a duty of common duty of care to visitors; this requires taking such care as is reasonable in all the circumstances to ensure the visitor does not suffer injury.',
+      'The transaction between the dealer and the rogue was not a contract and therefore the rogue could not pass title to Hudson.',
     full_summary:
-      "Cuddy v Mays [2003] IEHC 103 is a High Court decision in which the court applied both the common law duty of care framework and the statutory regime of the Occupiers' Liability Act 1995 to a personal injury claim arising from an accident on the defendant's premises. The plaintiff was injured on the defendant's property and claimed that the defendant, as occupier, had failed to take reasonable steps to ensure the safety of visitors. The High Court applied the duty of care test from Glencar Exploration plc v Mayo County Council (No 2) to assess foreseeability, proximity, and the justice of imposing liability. The court also applied the Occupiers' Liability Act 1995, which codified and modified the common law rules governing the duty owed by occupiers to entrants on their land. The standard imposed on occupiers under the Act in respect of visitors — the common duty of care — requires taking reasonable care in all the circumstances. The judgment is a useful illustration of how the common law Glencar framework and the statutory occupier's liability regime operate alongside each other in practice.",
-    subjects: ['criminal', 'torts'],
+      "A rogue produced a stolen driving licence in the name of 'Patel' to a car dealer and obtained a Mitsubishi Shogun under a hire-purchase agreement. The finance company (Shogun Finance) checked and approved 'Patel' as the customer. The rogue sold the car to Hudson. The House of Lords held (3:2) that the contract was void for mistake as to identity, not merely voidable. Because the contract was written and made with a specifically named person ('Patel'), Shogun Finance had contracted with that person only and not with the rogue physically present. No property passed to the rogue and Hudson acquired no title. The case (controversially) reaffirms the Cundy v Lindsay approach for written contracts, while Phillips v Brooks/Lewis v Averay apply to face-to-face oral contracts.",
+    subjects: ['contract-law'],
+    topics: ['mistake', 'identity-mistake', 'void-contracts', 'hire-purchase', 'nemo-dat'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Lucy v Laurel Construction Ltd',
+    citation: '[1970] IEHC (unreported)',
+    year: 1970,
+    court: 'High Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      'A mutual mistake as to the subject matter of a contract, where both parties are mistaken about a fundamental fact, may render the contract void or subject to rescission in Irish law, applying both common law and equitable principles.',
+    key_quote:
+      'Where both parties have contracted under a fundamental and shared mistake about the subject matter, the court may in equity grant rescission of the contract.',
+    full_summary:
+      'Lucy and Laurel Construction entered into a contract based on a shared mistake about the characteristics of the subject matter of the agreement. The Irish High Court applied both the common law and equitable principles applicable to common mistake. The court examined whether the mistake was sufficiently fundamental to render the contract void at common law (applying the Bell v Lever Brothers standard) or whether equitable relief was available. The case is a useful Irish authority confirming the application of English mistake principles in Irish contract law, and is frequently cited in FE-1 materials on common mistake in the Irish context.',
+    subjects: ['contract-law'],
+    topics: ['mistake', 'common-mistake', 'equity', 'irish-cases'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Mespil Ltd v Capaldi',
+    citation: '[1986] ILRM 373',
+    year: 1986,
+    court: 'Supreme Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      'A non est factum (it is not my deed) plea can succeed where a party signed a document under a fundamental mistake as to its nature, provided the mistake was not caused by their own carelessness. The document signed must be fundamentally different in character from what the signer believed they were signing.',
+    key_quote:
+      'The plea of non est factum requires proof that the document is fundamentally different in character from what the signer believed, and that the signer was not careless in signing it.',
+    full_summary:
+      "Capaldi claimed that a document he had signed was fundamentally different in character from what he believed he was signing, relying on the plea of non est factum. The Irish Supreme Court applied the principles from Saunders v Anglia Building Society (Foster v Mackinnon), requiring that: (1) the document be fundamentally different in character from what was believed; and (2) the signing not be attributable to the signer's carelessness. The court examined Capaldi's conduct and the circumstances of the signing. The case is a useful Irish authority on the non est factum plea, which is a narrow exception to the signature rule from L'Estrange v Graucob.",
+    subjects: ['contract-law'],
+    topics: ['mistake', 'non-est-factum', 'signature-rule', 'irish-cases'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Beresford v Royal Insurance Co Ltd',
+    citation: '[1938] AC 586',
+    year: 1938,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'A contract the performance of which would involve the commission of a crime, or a contract expressly or impliedly prohibited by statute, is void and unenforceable as a matter of public policy. No person can recover under a contract if to do so they would have to rely on their own criminal act.',
+    key_quote:
+      'No person can benefit from their own deliberate criminal act; public policy forbids such a claim.',
+    full_summary:
+      "Royal Insurance held a life insurance policy on Beresford's life. Beresford died by suicide. The insurer refused to pay on the ground that committing suicide (then a criminal act) was illegal. The House of Lords held the insurance company was not liable. A person cannot use the courts to claim a benefit arising directly from their own criminal act. Public policy prevents enforcement of contracts where performance involves a crime. Even though the contract itself was valid, enforcement of the claim would allow the estate to benefit from a criminal act. The case is the foundational FE-1 authority on the ex turpi causa (from an immoral cause) principle in contract law.",
+    subjects: ['contract-law'],
+    topics: ['illegality', 'illegal-contracts', 'public-policy', 'ex-turpi-causa'],
+    is_frequently_tested: false,
+    past_paper_appearances: [],
+  },
+  {
+    case_name: 'Patel v Mirza',
+    citation: '[2016] UKSC 42',
+    year: 2016,
+    court: 'UK Supreme Court',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'The illegality defence (ex turpi causa) should not automatically bar a claim; the court must use a range-of-factors approach to determine whether it would be disproportionate to deny the claimant a remedy. Factors include: the underlying purpose of the rule breached, any relevant public policy engaged, and the proportionality of the denial of relief.',
+    key_quote:
+      'The court should consider whether it would be disproportionate to deny the claimant a remedy having regard to the conduct in question, the purpose of the rule which was breached, and the circumstances of the case.',
+    full_summary:
+      'Patel paid Mirza £620,000 to bet on the movement of RBS shares using insider information. The insider information never materialised and Mirza refused to return the money. The Supreme Court (by majority) held that Patel could recover his money. Lord Toulson reformulated the approach to illegality: instead of automatic rules (reliance test, proportionality test), the court should consider the purpose of the relevant statutory rule, any other relevant public policy, and whether denying relief would be proportionate. Allowing Patel to recover his money did not undermine the rule against insider trading and it would be disproportionate to deny him restitution. The case significantly changes the illegality rules in English law and may influence Irish law development.',
+    subjects: ['contract-law'],
+    topics: ['illegality', 'ex-turpi-causa', 'public-policy', 'restitution'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2021 Q12', 'Contract Spring 2024 Q12'],
+  },
+  {
+    case_name: 'Nordenfeldt v Maxim Nordenfeldt Guns and Ammunition Co Ltd',
+    citation: '[1894] AC 535',
+    year: 1894,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'A restraint of trade clause is void as contrary to public policy unless it protects a legitimate interest and is reasonable in scope (duration, area, and subject matter). A clause that is wider than necessary to protect the legitimate interest of the covenantee is void, but the courts will consider the whole context including the nature of the business sold.',
+    key_quote:
+      'All interference with individual liberty of action in trading and all restraints of trade of themselves... are contrary to public policy and therefore void. That is the rule. The exceptions are: where the restriction is reasonable—reasonable, that is, in reference to the interests of the parties concerned, and in reference to the interests of the public.',
+    full_summary:
+      'Nordenfeldt sold his weapons manufacturing business to a company (later acquired by Maxim) and agreed not to compete in the manufacture of guns or ammunition anywhere in the world for 25 years. He later sought to trade in competition. The House of Lords upheld the restraint of trade clause. Given the unique, global nature of the business (armaments) sold for a very large sum, a worldwide restriction for 25 years was reasonable and not contrary to public policy. The case established the modern doctrine of restraint of trade and the two-stage test: (1) legitimate interest to protect; (2) reasonable in scope. Central FE-1 authority on restraint of trade covenants.',
+    subjects: ['contract-law'],
+    topics: ['illegality', 'restraint-of-trade', 'public-policy', 'non-compete'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2021 Q12', 'Contract Autumn 2023 Q12'],
+  },
+  {
+    case_name: 'Fraser v Buckle',
+    citation: '[1996] 1 IR 1',
+    year: 1996,
+    court: 'Supreme Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      'A champertous maintenance agreement (an agreement by a third party to fund litigation in exchange for a share of the proceeds) is contrary to public policy and unenforceable in Ireland. The Irish courts maintain the traditional common law prohibition on champerty and maintenance.',
+    key_quote:
+      'Champerty, which is the sharing of the proceeds of litigation by a stranger in exchange for funding the action, remains contrary to public policy and void in Ireland.',
+    full_summary:
+      "Fraser agreed to fund Buckle's litigation in exchange for a share of the proceeds if successful. A dispute arose about the terms of the arrangement. The Irish Supreme Court held the agreement was champertous and therefore unenforceable as contrary to public policy. Unlike England, where the law has been partially reformed, Ireland retains the full common law prohibition on champerty and maintenance. The court examined the policy reasons for the prohibition (preventing strangers from wantonly stirring up litigation for profit) and confirmed they remain valid in Ireland. The case is important for FE-1 because it shows that Irish law differs from English law in this important respect, and also demonstrates the public policy doctrine of illegality as applied to champerty.",
+    subjects: ['contract-law'],
+    topics: ['illegality', 'champerty', 'maintenance', 'public-policy', 'irish-cases'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2022 Q12', 'Contract Autumn 2024 Q12'],
+  },
+  {
+    case_name: 'Barton v Armstrong',
+    citation: '[1976] AC 104',
+    year: 1976,
+    court: 'Privy Council',
+    jurisdiction: 'New South Wales',
+    legal_principle:
+      'A contract entered into as a result of physical threats or duress is voidable at the option of the coerced party. Duress need only be one of the reasons why the contract was entered into; it need not be the sole or predominant cause. Once duress is established, the onus passes to the other party to show the threats contributed nothing to the agreement.',
+    key_quote:
+      "If Armstrong's threats were a reason for Barton's executing the agreement, the deed is liable to be set aside even if Barton might well have entered into it had he not been threatened.",
+    full_summary:
+      'Armstrong (who controlled a company) threatened Barton (the other director) with death if he did not sign an agreement transferring rights in the company. Barton signed. The Privy Council held the agreement was voidable for duress. Even if Barton might have signed the agreement voluntarily in any event, the threats were a factor in his decision to sign. Once threats were established, the burden shifted to Armstrong to prove the threats contributed nothing to the decision. He could not discharge that burden. The case is a foundational FE-1 authority on physical (common law) duress and establishes that duress need not be the sole cause of the contract.',
+    subjects: ['contract-law'],
+    topics: ['duress', 'physical-duress', 'voidable-contracts', 'illegitimate-pressure'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2022 Q12'],
+  },
+  {
+    case_name: 'Atlas Express Ltd v Kafco (Importers and Distributors) Ltd',
+    citation: '[1989] QB 833',
+    year: 1989,
+    court: "Queen's Bench Division",
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Economic duress can vitiate a contract or contractual variation. Economic duress involves illegitimate pressure applied to a party that coerces them into entering an agreement; it leaves the victim with no practical choice. A contract modification extracted by economic duress is voidable.',
+    key_quote:
+      'The defendants had no realistic alternative to agreeing to the increased price; they were at the mercy of the plaintiffs and were compelled to sign an agreement they had no wish to sign.',
+    full_summary:
+      "Atlas Express contracted to deliver Kafco's goods to Woolworths (a vital customer). After loading the first consignment, Atlas demanded a new contract at a higher rate (having discovered they had underpriced the job). Kafco, who had no time to find an alternative carrier and would have lost the Woolworths contract if deliveries failed, reluctantly agreed. When Atlas sued for the higher rates, Kafco refused to pay. The court held the new agreement was void for economic duress. The pressure was illegitimate (a deliberate threat to break the existing contract) and Kafco had no practical alternative. Economic duress renders a variation voidable. This is an important FE-1 authority on economic duress, to be read alongside Williams v Roffey Bros (for the consideration analysis).",
+    subjects: ['contract-law'],
+    topics: ['duress', 'economic-duress', 'voidable-contracts', 'illegitimate-pressure'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2021 Q12', 'Contract Autumn 2022 Q12'],
+  },
+  {
+    case_name: 'Royal Bank of Scotland plc v Etridge (No 2)',
+    citation: '[2001] UKHL 44',
+    year: 2001,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "Where a wife stands surety for her husband's debts and the transaction is one in which undue influence or misrepresentation by the husband may have occurred, the creditor (bank) is put on inquiry and must take reasonable steps to ensure the wife freely consented. Those steps require the bank to insist the wife receives independent legal advice. The bank is not fixed with notice of the undue influence unless it has failed to take those steps.",
+    key_quote:
+      'The bank is put on inquiry whenever the relationship between the surety and the debtor is non-commercial and the bank is aware of the relationship; it must then take reasonable steps, principally ensuring the surety has received independent legal advice.',
+    full_summary:
+      "A series of appeals all involved wives who had mortgaged the matrimonial home to secure their husbands' business debts, claiming undue influence by their husbands. The House of Lords (Lord Nicholls) provided comprehensive guidance. First, two types of undue influence: actual (proved from conduct) and presumed (arising from the nature of the relationship plus a transaction calling for explanation). Second, the bank is 'put on inquiry' whenever a non-commercial surety relationship is involved. To discharge its notice, the bank must communicate directly with the surety and insist on independent legal advice. Third, independent advice need not be from a specialist — what matters is that it is genuinely independent. The case is the definitive FE-1 authority on undue influence in the surety context.",
+    subjects: ['contract-law'],
+    topics: ['undue-influence', 'duress', 'surety', 'banks', 'voidable-contracts'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2020 Q12', 'Contract Autumn 2023 Q12'],
+  },
+  {
+    case_name: 'Bank of Ireland v Smyth',
+    citation: '[1995] 2 IR 459',
+    year: 1995,
+    court: 'Supreme Court',
+    jurisdiction: 'Ireland',
+    legal_principle:
+      "In Ireland, where a bank lends money on the security of the family home and the spouse's consent is required under the Family Home Protection Act 1976, the bank must ensure the consenting spouse gave full, free, and informed consent. A spouse who signs a consent without understanding its nature may have a claim to set aside the consent on the ground of non est factum, undue influence, or failure to obtain informed consent.",
+    key_quote:
+      'The consent of a spouse under the Family Home Protection Act must be a fully informed consent, freely given; the bank must satisfy itself that this is so.',
+    full_summary:
+      'Mrs Smyth signed a consent to the Bank of Ireland obtaining a mortgage over the family home which her husband had arranged to secure business debts. She claimed she did not understand what she was signing and had not received adequate advice. The Irish Supreme Court held that the bank could not rely on the consent. Under the Family Home Protection Act 1976, consent must be fully informed and freely given. The bank could not rely on the formal signature if it knew (or ought to have known) that the spouse had not been properly advised. This is a critical Irish authority on the intersection of undue influence, the Family Home Protection Act, and bank lending in Ireland — directly relevant to FE-1.',
+    subjects: ['contract-law'],
+    topics: ['undue-influence', 'family-home-protection-act', 'surety', 'banks', 'irish-cases'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2021 Q12', 'Contract Spring 2023 Q12'],
+  },
+  {
+    case_name: 'Taylor v Caldwell',
+    citation: '(1863) 3 B & S 826',
+    year: 1863,
+    court: "Queen's Bench",
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Where the performance of a contract depends on the continued existence of a specific thing, and that thing is destroyed without fault of either party after the contract is made, both parties are excused from performance. The contract is discharged by frustration (impossibility of performance).',
+    key_quote:
+      'In contracts in which the performance depends on the continued existence of a given person or thing, a condition is implied that the impossibility of performance arising from the perishing of the person or thing shall excuse performance.',
+    full_summary:
+      'Taylor hired Surrey Gardens Music Hall from Caldwell for a series of concerts. Before the first concert, the music hall burned down through no fault of either party. Taylor sued Caldwell for wasted expenses. The court held that both parties were excused from performance. The contract contained an implied condition that the music hall would continue to exist — a condition that failed when the hall burned down. This is the foundational case establishing the doctrine of frustration in English and Irish contract law. Before Taylor v Caldwell, contracts were binding absolutely — the doctrine of absolute contracts (Paradine v Jane) prevailed. The case introduced the possibility of discharge by supervening impossibility.',
+    subjects: ['contract-law'],
+    topics: ['frustration', 'discharge-of-contract', 'impossibility'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2019 Q13', 'Contract Autumn 2021 Q13'],
+  },
+  {
+    case_name: 'Krell v Henry',
+    citation: '[1903] 2 KB 740',
+    year: 1903,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Frustration can arise where the foundation or basis of the contract (as opposed to merely its subject matter) has been destroyed by a supervening event. A contract may be frustrated where its commercial purpose has been entirely destroyed even if literal performance remains technically possible.',
+    key_quote:
+      'The coronation procession of King Edward VII was the foundation of the contract; when the procession was cancelled, the foundation failed and both parties were discharged.',
+    full_summary:
+      "Krell let rooms to Henry for two days to watch King Edward VII's coronation procession. The coronation was postponed due to the King's illness. Henry refused to pay the balance of the licence fee. The Court of Appeal held the contract was frustrated. The hire of the rooms was specifically for watching the coronation procession — that purpose was the very foundation of the contract. When the procession was cancelled, the commercial purpose of the contract was defeated. Performance was technically still possible (the rooms still existed) but the commercial purpose had been entirely destroyed. The case extends frustration beyond physical impossibility to commercial impossibility (failure of purpose). Contrasted with Herne Bay Steam Boat Co v Hutton where only a secondary purpose failed.",
+    subjects: ['contract-law'],
+    topics: ['frustration', 'failure-of-purpose', 'coronation-cases'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Autumn 2022 Q13'],
+  },
+  {
+    case_name: 'Davis Contractors Ltd v Fareham Urban District Council',
+    citation: '[1956] AC 696',
+    year: 1956,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      "A contract is frustrated only if a supervening event renders its performance radically different from what was undertaken at the time of contracting. Mere hardship, inconvenience, or the fact that the contract has become more onerous or costly does not constitute frustration. The test is objective, not based on the parties' subjective expectations.",
+    key_quote:
+      'Frustration occurs where, without default of either party, a contractual obligation has become incapable of being performed because the circumstances in which performance is called for would render it a thing radically different from that which was undertaken by the contract.',
+    full_summary:
+      "Davis Contractors agreed to build 78 houses for Fareham Council in eight months for a fixed price. Due to labour and material shortages (not caused by either party), the work took 22 months. Davis argued the contract was frustrated and they were entitled to a quantum meruit. The House of Lords held the contract was not frustrated. A contract is not frustrated merely because it has become more burdensome or costly than expected. The test (Lord Radcliffe's classic formulation) is whether the circumstances of performance would render it 'radically different' from what was undertaken. Doing the same work more slowly is not radically different from what was agreed. The case establishes the high threshold for frustration in English and Irish law.",
+    subjects: ['contract-law'],
+    topics: ['frustration', 'radically-different', 'hardship', 'discharge-of-contract'],
+    is_frequently_tested: true,
+    past_paper_appearances: ['Contract Spring 2021 Q13', 'Contract Autumn 2023 Q13'],
+  },
+  {
+    case_name: 'Fibrosa Spolka Akcyjna v Fairbairn Lawson Combe Barbour Ltd',
+    citation: '[1943] AC 32',
+    year: 1943,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
+    legal_principle:
+      'Where a contract is frustrated and money has been paid under it by a party who has received no benefit at all (total failure of consideration), that money is recoverable in restitution. The rule in Chandler v Webster (that money paid before frustration is irrecoverable) is overruled.',
+    key_quote:
+      'Money paid in advance under a frustrated contract, where there has been a total failure of consideration, can be recovered.',
+    full_summary:
+      'Fibrosa (a Polish company) contracted with Fairbairn (an English company) for machinery, paying a deposit in advance. Germany occupied Poland and the contract was frustrated as enemy territory trading became illegal. Fibrosa sought return of the deposit. The House of Lords overruled Chandler v Webster and held that money paid under a frustrated contract where there has been a total failure of consideration can be recovered in restitution. Since Fairbairn had delivered nothing and the entire basis of the payment had failed, justice required that Fibrosa recover its deposit. However, Fairbairn could not recover its expenses incurred before frustration. This deficiency led to the Law Reform (Frustrated Contracts) Act 1943 (UK) and the Civil Liability Act 1961 (Ireland) provisions on frustrated contracts.',
+    subjects: ['contract-law'],
     topics: [
-      'negligence',
-      "occupier's liability",
-      'visitor',
-      'standard of care',
-      'personal injury',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Sheehan v Bus Eireann and Others',
-    citation: '[2020] IEHC 160',
-    year: 2020,
-    court: 'High Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The High Court assessed liability and damages in a personal injury claim arising from an incident on a public bus. The court applied the duty of care and contributory negligence principles, allocated liability between the defendants, and assessed general and special damages. The case illustrates the application of standard negligence principles in the public transport context.',
-    key_quote:
-      'A carrier owes a duty to take reasonable care for the safety of its passengers; failure to do so will result in liability for any resulting injury.',
-    full_summary:
-      "Sheehan v Bus Eireann and Others [2020] IEHC 160 is a High Court personal injury decision arising from an incident on a public bus operated by Bus Eireann. The plaintiff was injured during the course of the journey and claimed that the defendant carrier and other defendants had been negligent. The court applied the standard negligence framework, examining whether Bus Eireann owed a duty of care to its passengers (which was not in serious dispute), whether there had been a breach of that duty, whether the breach caused the plaintiff's injuries, and the quantum of damages. The court also considered contributory negligence, apportioning liability between the parties where appropriate. The High Court assessed both general damages for pain and suffering and special damages for financial losses flowing from the injury. The judgment is a practical illustration of how negligence principles and the duty of a carrier to its passengers are applied in the transport liability context in Ireland, with reference to the Glencar duty of care framework and the Civil Liability Act 1961 apportionment provisions.",
-    subjects: ['criminal', 'torts'],
-    topics: [
-      'personal injury',
-      'negligence',
-      'public transport',
-      'contributory negligence',
-      'damages',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Devlin v National Maternity Hospital',
-    citation: '[2007] IESC 50',
-    year: 2007,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Supreme Court considered the standard of care in medical negligence and the appropriate use of the res ipsa loquitur doctrine. The court held that res ipsa loquitur may assist a plaintiff where the occurrence of injury in itself suggests negligence, but the defendant may rebut the inference by providing an alternative explanation consistent with the absence of negligence. The court also considered the role of expert evidence in establishing the standard of care.',
-    key_quote:
-      'In medical negligence, the standard of care is that of the reasonably competent practitioner in the relevant specialty; res ipsa loquitur may arise where the event would not ordinarily occur without negligence.',
-    full_summary:
-      'Devlin v National Maternity Hospital [2007] IESC 50 is a Supreme Court decision addressing the standard of care in medical negligence litigation and the application of the res ipsa loquitur doctrine. The plaintiff suffered a serious injury in circumstances connected with her medical treatment at the defendant hospital and argued that the nature of the injury was such that it could not have occurred without negligence, thereby invoking the res ipsa loquitur principle. The Supreme Court confirmed the standard of care applicable in medical negligence cases: the test is that of the reasonably competent practitioner in the relevant specialty, as established in Dunne v National Maternity Hospital [1989] IR 91. The court addressed res ipsa loquitur, confirming that the doctrine may apply in medical cases where the occurrence of injury would not ordinarily happen in the absence of negligence, giving rise to an inference that the defendant was negligent. However, that inference may be rebutted by the defendant providing an alternative explanation consistent with no negligence having occurred. The judgment also addressed the role of expert evidence in establishing both the standard and whether it was breached.',
-    subjects: ['criminal', 'torts'],
-    topics: [
-      'medical negligence',
-      'standard of care',
-      'res ipsa loquitur',
-      'causation',
-      'expert evidence',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Quinn v Topaz Energy Group Limited',
-    citation: '[2021] IEHC 750',
-    year: 2021,
-    court: 'High Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The High Court considered liability for a personal injury sustained by an employee in a workplace accident at a petrol station. The court applied the employer's duty to provide a safe system of work and assessed whether the employer had taken reasonable precautions to prevent the type of injury that occurred. The interaction between common law negligence and the Safety, Health and Welfare at Work Act 2005 was considered.",
-    key_quote:
-      'An employer owes a non-delegable duty to provide a safe system of work; a failure to take reasonable precautions against a foreseeable risk of injury will ground liability.',
-    full_summary:
-      "Quinn v Topaz Energy Group Limited [2021] IEHC 750 is a High Court personal injury decision arising from a workplace accident sustained by an employee at a Topaz petrol station. The plaintiff was injured in the course of his employment and brought proceedings against his employer, alleging a failure to provide a safe system of work and adequate risk assessment and training. The court applied the well-established employer's duty of care, which is non-delegable: the employer must provide a safe place of work, safe equipment, a safe system of work, and competent colleagues. The court examined whether the employer had conducted an adequate risk assessment in respect of the relevant task, whether appropriate training and supervision had been provided, and whether the precautions taken were sufficient to address the foreseeable risk of the type of injury that in fact occurred. The court also considered the interaction between the common law duty of care and the statutory duties imposed by the Safety, Health and Welfare at Work Act 2005 and related regulations. The judgment illustrates the practical application of employer's liability principles in the retail and service sector context.",
-    subjects: ['criminal', 'torts'],
-    topics: ["employers' liability", 'negligence', 'personal injury', 'workplace', 'duty of care'],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Larkin v Dublin County Council',
-    citation: '[2007] IEHC 416',
-    year: 2007,
-    court: 'High Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The High Court considered the liability of a local authority for injury caused by a defective condition of public property. The court applied occupier's liability principles and considered whether the local authority was aware or ought to have been aware of the dangerous condition. The standard of care owed by a public authority as occupier of public spaces was examined.",
-    key_quote:
-      'A public authority as occupier owes a duty of care to persons who use public facilities; the standard of care requires reasonable inspection and maintenance.',
-    full_summary:
-      "Larkin v Dublin County Council [2007] IEHC 416 is a High Court decision considering the liability of a local authority as occupier for personal injury caused by a defective or dangerous condition on public property. The plaintiff was injured on premises under the control of Dublin County Council and claimed that the local authority had failed to take reasonable steps to identify and remedy the dangerous condition. The court applied the Occupiers' Liability Act 1995 and the common law duty of care as developed in Glencar Exploration. The court examined whether the local authority knew or ought to have known of the dangerous condition through a reasonable system of inspection and maintenance, and whether its failure to act constituted a breach of the duty of care owed to persons using the public facility. The judgment addresses the standard of care imposed on public authorities as occupiers of public spaces, taking into account the practical constraints on maintenance resources while confirming that a reasonable regime of inspection and repair is required. The case is illustrative of the occupier's liability and public authority negligence framework in the Irish courts.",
-    subjects: ['criminal', 'torts'],
-    topics: [
-      "occupier's liability",
-      'public authority',
-      'negligence',
-      'highway',
-      'personal injury',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Courtney v Our Lady of Lourdes Hospital',
-    citation: '[2011] IEHC 226',
-    year: 2011,
-    court: 'High Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The High Court applied the medical negligence standard of care in proceedings arising from alleged negligent treatment at a hospital. The court considered the standard expected of a competent medical practitioner and assessed causation between the alleged breach and the plaintiff's injury. The test from Dunne v National Maternity Hospital [1989] was applied to assess whether the treatment fell below the required standard.",
-    key_quote:
-      'A hospital owes its patients a duty to ensure that treatment is provided to the standard of the reasonably competent practitioner; departure from that standard which causes injury constitutes actionable negligence.',
-    full_summary:
-      'Courtney v Our Lady of Lourdes Hospital [2011] IEHC 226 is a High Court medical negligence decision arising from treatment provided at a hospital in Drogheda. The plaintiff alleged that he suffered injury as a result of negligent medical treatment and that the defendant hospital was vicariously liable for the negligence of its medical and nursing staff. The High Court applied the standard of care established in Dunne v National Maternity Hospital [1989] IR 91, which requires a plaintiff to establish that the defendant departed from the standard of the ordinary skilled person exercising and professing to have the special skill of the relevant specialty. The court heard expert evidence as to the standard of practice applicable in the circumstances and assessed whether the treatment provided departed from that standard. The causation analysis examined whether the alleged breach was a material cause of the injury complained of. The judgment is a representative High Court application of the Dunne medical negligence standard and illustrates the role of expert evidence and causation analysis in medical negligence litigation.',
-    subjects: ['criminal', 'torts'],
-    topics: [
-      'medical negligence',
-      'hospital liability',
-      'standard of care',
-      'causation',
-      'damages',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Curran v Cadbury (Ireland) Ltd',
-    citation: '[2000] WJSC-CC 7070',
-    year: 2000,
-    court: 'Circuit Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Circuit Court applied the employer's duty of care in the context of a personal injury sustained in a workplace. The court considered the Glencar foreseeability and proximity analysis and the employer's obligation to provide a safe system of work and adequate training. The case illustrates the application of the Donoghue v Stevenson/Glencar framework in an employment injury context at Circuit Court level.",
-    key_quote:
-      "An employer's duty to provide a safe system of work requires not just a physically safe environment but also adequate training, supervision, and procedures to prevent foreseeable injury.",
-    full_summary:
-      "Curran v Cadbury (Ireland) Ltd [2000] WJSC-CC 7070 is a Circuit Court personal injury decision in which the court assessed an employer's liability for injury sustained by an employee in the course of employment at Cadbury's manufacturing premises. The plaintiff was injured during a workplace activity and alleged that the employer had been negligent in failing to provide a safe system of work, adequate training, and appropriate supervision. The Circuit Court applied the duty of care principles derived from Donoghue v Stevenson and — applying the framework that would later be authoritatively stated in Glencar Exploration v Mayo County Council in 2002 — assessed whether the employer could reasonably have foreseen the risk of the type of injury that occurred. The court confirmed that the employer's non-delegable duty requires not merely a physically safe environment but also the provision of adequate training and safe procedures to prevent foreseeable injury. The judgment is a useful illustration of the application of employer's liability and negligence principles at Circuit Court level in the manufacturing employment context.",
-    subjects: ['criminal', 'torts'],
-    topics: ["employers' liability", 'personal injury', 'negligence', 'workplace', 'duty of care'],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'People (DPP) v Smyth',
-    citation: '[2024] IESC 22',
-    year: 2024,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Supreme Court held that mobile phone traffic and location data retained under the Communications (Retention of Data) Act 2011 — declared incompatible with EU law — was nonetheless admissible under the JC test because the breach was not deliberate and conscious, arising instead from a subsequent EU legal development rather than any deliberate Garda wrongdoing. The court rejected the Court of Appeal's application of the older O'Brien balancing test, confirming that the JC test applies even where EU Charter rights are engaged. Smyth's conviction for attempted murder before the Special Criminal Court was upheld.",
-    key_quote:
-      'Where a breach of constitutional or EU rights arises from a subsequent development in the law rather than from deliberate Garda wrongdoing, the evidence obtained is not automatically excluded under the JC test.',
-    full_summary:
-      "In People (DPP) v Smyth [2024] IESC 22, the Supreme Court considered whether mobile phone traffic and location data retained under the Communications (Retention of Data) Act 2011 — subsequently found incompatible with EU law — was admissible in criminal proceedings. The court applied the JC test established in People (DPP) v JC [2015] IESC 31, which asks whether the breach was deliberate and conscious by the Garda Síochána. The court held that where a breach arises from a subsequent development in EU law rather than deliberate wrongdoing at the time of collection, the evidence is not automatically excluded. The Supreme Court rejected the Court of Appeal's reliance on the older O'Brien balancing test, confirming that the JC framework applies even where EU Charter rights under Articles 7 and 8 are engaged alongside constitutional rights. The court emphasised that gardaí acted lawfully under domestic legislation at the time of retention; any incompatibility with EU law was not known or foreseeable at that point. Smyth had been convicted before the Special Criminal Court of attempted murder arising from a gangland shooting. The Supreme Court upheld his conviction, confirming that the phone data was properly admitted at trial. The case is one of three companion cases — alongside McAreavey and Graham Dwyer — that together resolve the long-running controversy over phone data admissibility in Irish criminal proceedings following the CJEU's Digital Rights Ireland and Tele2/Watson jurisprudence.",
-    subjects: ['criminal'],
-    topics: [
-      'admissibility',
-      'JC principles',
-      'phone data',
-      'EU Charter',
-      'Special Criminal Court',
+      'frustration',
+      'restitution',
+      'total-failure-of-consideration',
+      'consequences-of-frustration',
     ],
     is_frequently_tested: true,
-    past_paper_appearances: [],
+    past_paper_appearances: ['Contract Spring 2022 Q13'],
   },
   {
-    case_name: 'People (DPP) v McAreavey',
-    citation: '[2024] IESC 23',
-    year: 2024,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
+    case_name: 'Hadley v Baxendale',
+    citation: '(1854) 9 Ex 341',
+    year: 1854,
+    court: 'Court of Exchequer',
+    jurisdiction: 'England & Wales',
     legal_principle:
-      "Companion case to Smyth, applying the same JC analysis to uphold the admissibility of phone data. However, McAreavey's conviction for assisting an offender under s.7(2) of the Criminal Law Act 1997 was quashed: the Special Criminal Court had relied on mere constructive belief rather than actual knowledge or belief that an arrestable offence had been committed, which is incompatible with Article 38.1's requirement of trial in due course of law.",
+      'Damages for breach of contract are limited to losses that: (1) arise naturally in the usual course of things from the breach (limb one — general damages); or (2) were in the reasonable contemplation of both parties at the time of contracting as the probable result of the breach (limb two — special damages). Special circumstances known to the defendant may make otherwise remote losses recoverable.',
     key_quote:
-      'Section 7(2) of the Criminal Law Act 1997 requires actual knowledge or belief that an arrestable offence was committed; mere constructive belief is insufficient and will not support a conviction.',
+      'Where two parties have made a contract which one of them has broken, the damages which the other party ought to receive in respect of such breach should be such as may fairly and reasonably be considered either arising naturally... or such as may reasonably be supposed to have been in the contemplation of both parties, at the time they made the contract.',
     full_summary:
-      "People (DPP) v McAreavey [2024] IESC 23 is the companion case to Smyth and was decided on the same day. On the admissibility question, the Supreme Court applied the same JC analysis, holding that phone data retained under the Communications (Retention of Data) Act 2011 was admissible because any breach of EU Charter rights was inadvertent and arose from a subsequent legal development rather than deliberate Garda wrongdoing. However, the Supreme Court parted ways with the Special Criminal Court on the substantive conviction. McAreavey had been convicted of assisting an offender contrary to s.7(2) of the Criminal Law Act 1997. The Special Criminal Court had relied on a constructive belief standard — what McAreavey ought to have known — rather than actual knowledge or belief that an arrestable offence had been committed. The Supreme Court held this was an error of law: s.7(2) is a serious offence carrying a maximum of ten years' imprisonment and requires proof of actual knowledge or belief, not constructive or imputed belief. Reliance on constructive belief failed to satisfy the standard of proof required by Article 38.1 of the Constitution for a conviction in due course of law. McAreavey's conviction was accordingly quashed. The case is significant both for confirming the JC admissibility principles and for its analysis of the mental element required for the assisting an offender offence.",
-    subjects: ['criminal'],
-    topics: [
-      'admissibility',
-      'JC principles',
-      'phone data',
-      'assisting offender',
-      'Special Criminal Court',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'People (DPP) v Graham Dwyer',
-    citation: '[2024] IESC 39',
-    year: 2024,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Supreme Court unanimously upheld Graham Dwyer's conviction for the murder of Elaine O'Hara, dismissing his challenge to the admissibility of mobile phone traffic and location data retained in breach of EU Charter rights. Collins J held the breach was inadvertent and arose from a subsequent EU legal development, so the JC test was not triggered. Even if the data were inadmissible, the proviso under s.3(1) of the Criminal Procedure Act 1993 applied as the remaining evidence was overwhelming. The case finally resolves the admissibility of phone data in Irish criminal proceedings.",
-    key_quote:
-      'Where the remaining evidence, absent the disputed material, is overwhelming and unanswerable, no miscarriage of justice occurs and the proviso applies to uphold the conviction.',
-    full_summary:
-      "People (DPP) v Graham Dwyer [2024] IESC 39 is the landmark conclusion to one of Ireland's most high-profile murder trials. Dwyer had been convicted in 2015 of the murder of childcare worker Elaine O'Hara. His appeal was initially the catalyst for the CJEU reference in Dwyer v Commissioner of An Garda Síochána (C-140/20), which confirmed that blanket and generalised retention of communications data was incompatible with EU law. On remittal, the Supreme Court unanimously upheld the conviction. Collins J, writing for the court, applied the JC test and held that gardaí had acted lawfully under the Communications (Retention of Data) Act 2011 at the time of retention; the incompatibility with EU Charter Articles 7 and 8 was prospective and arose from CJEU rulings issued long after the data was collected. There was no deliberate and conscious violation of rights by the Garda Síochána. The court also applied the proviso in s.3(1) of the Criminal Procedure Act 1993, finding that even absent the phone data the remaining evidence — including physical evidence, witness testimony, and BDSM contract material — was overwhelming. No miscarriage of justice had occurred. The case, together with Smyth and McAreavey, provides definitive Irish authority on phone data admissibility and ends the uncertainty that had threatened dozens of prosecutions arising from the Tele2/Watson and Digital Rights Ireland CJEU jurisprudence.",
-    subjects: ['criminal'],
-    topics: [
-      'admissibility',
-      'JC principles',
-      'EU Charter',
-      'phone data',
-      'murder',
-      'exclusionary rule',
-    ],
+      "A mill owner's crankshaft broke. He sent it with the carrier (Baxendale) to be used as a model for a new shaft. Due to the carrier's delay, the mill remained closed for longer than it should have. The mill owner claimed for loss of profits. The court held the loss of profits was not recoverable. The carrier did not know that the mill would be out of action until the crankshaft was returned — there were many mills that had spare crankshafts. The loss of profits did not arise naturally and was not in the reasonable contemplation of both parties (the carrier knowing only that a crankshaft was being carried). This is the single most important FE-1 case on remoteness of damages in contract law and contains the foundational two-limb test for recoverable loss.",
+    subjects: ['contract-law'],
+    topics: ['remedies', 'damages', 'remoteness', 'hadley-v-baxendale'],
     is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'People (DPP) v LN',
-    citation: '[2024] IECA 100',
-    year: 2024,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Court of Appeal dismissed arguments that counts relating to separate complainants should have been severed from the indictment. Applying the Supreme Court framework in People (DPP) v Limen [2021], the court confirmed that the test for severance and system evidence admissibility is whether probative value outweighs prejudicial effect — not the older striking similarity test. Familial context and similar exploitation of the family relationship across complainants provided sufficient probative linkage.',
-    key_quote:
-      'The test for admissibility of system evidence and for refusing severance of an indictment is whether the probative value of the evidence substantially outweighs its prejudicial effect.',
-    full_summary:
-      "People (DPP) v LN [2024] IECA 100 involved an appeal against conviction for sexual offences committed against multiple complainants within a family setting. The accused argued that counts relating to different complainants should have been severed from the indictment and that the admission of their evidence as system evidence was impermissible. The Court of Appeal rejected both grounds. Applying the framework set out by the Supreme Court in People (DPP) v Limen [2021] IESC 23, the court confirmed that the test for both severance and the admissibility of system evidence is whether the probative value of the evidence substantially outweighs its prejudicial effect. The older striking similarity test — which required near-identical features between offending episodes — was firmly rejected as the applicable standard. The court found that the familial context and the accused's similar exploitation of relationships of trust and access within the family provided a sufficient probative link across the various complainants. The evidence of each complainant was capable of corroborating and contextualising the others, making it appropriate to try the counts together. The conviction was upheld. The case is a useful post-Limen illustration of how the probative value/prejudicial effect balancing exercise is applied in multi-complainant sexual offence cases.",
-    subjects: ['criminal'],
-    topics: ['sexual offences', 'severance', 'system evidence', 'joinder', 'probative value'],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Director of Public Prosecutions v PM',
-    citation: '[2024] IECA 21',
-    year: 2024,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Court of Appeal upheld the refusal to sever an indictment involving sexual offences against three complainants (two nieces and a nephew), applying the Limen framework. The accused's common method — exploiting access to children within the family setting — provided a probative link across complainants. The admission of a fourth witness's evidence as system evidence corroborating one complainant's account was also upheld. The inherent improbability of multiple independent fabrications was a relevant consideration.",
-    key_quote:
-      'Where multiple complainants allege similar offending by the same accused in similar circumstances, the inherent improbability of independent fabrication is a relevant factor supporting joinder and the admission of system evidence.',
-    full_summary:
-      "Director of Public Prosecutions v PM [2024] IECA 21 concerned an appeal against convictions for historical sexual abuse committed against three complainants: two nieces and a nephew of the accused. The accused challenged the trial judge's refusal to sever the indictment and the admission of a fourth person's evidence as system evidence. The Court of Appeal dismissed both grounds, applying the probative value/prejudicial effect framework from People (DPP) v Limen [2021] IESC 23. The court found that the accused's common modus operandi — exploiting his position of trust and access as a family member to abuse children in a domestic setting — provided a sufficient probative link between the separate complainants. This link elevated the probative value of the combined evidence beyond what any single complainant could offer in isolation. On the system evidence point, the court held that the fourth witness's account corroborated one complainant's evidence by demonstrating a consistent pattern of exploitation. The court also noted, as a reinforcing consideration, that the inherent improbability of three or four independent false allegations against the same person in similar circumstances was relevant to the probative value assessment, though this was not a freestanding test. The conviction was upheld in full.",
-    subjects: ['criminal'],
-    topics: [
-      'sexual offences',
-      'historical abuse',
-      'severance',
-      'system evidence',
-      'multiple complainants',
+    past_paper_appearances: [
+      'Contract Autumn 2019 Q14',
+      'Contract Spring 2021 Q14',
+      'Contract Autumn 2023 Q14',
     ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
   },
   {
-    case_name: 'Director of Public Prosecutions v NF',
-    citation: '[2024] IECA 131',
-    year: 2024,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
+    case_name: 'Victoria Laundry (Windsor) Ltd v Newman Industries Ltd',
+    citation: '[1949] 2 KB 528',
+    year: 1949,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
     legal_principle:
-      'In a historical sexual abuse sentencing appeal, the Court of Appeal confirmed that consecutive sentences in serial sexual offending should be used sparingly where offences are closely similar in character and time. The court also addressed whether culpable prosecutorial delay, falling short of warranting prohibition of trial, may nonetheless be treated as a mitigating factor at sentencing. Where the State has unreasonably delayed bringing proceedings, this can reduce the appropriate sentence.',
+      "The second limb of Hadley v Baxendale requires that the type of loss was within the reasonable contemplation of the parties as a serious possibility, not merely as a speculative possibility. The defendant need not have known the precise details of the special circumstances; general knowledge of the claimant's business may be sufficient to bring ordinary loss of profits within the first limb.",
     key_quote:
-      "Culpable prosecutorial delay, while insufficient to warrant prohibition of trial, may nonetheless reduce the appropriate sentence as a mitigating factor reflecting the accused's prolonged exposure to prosecution.",
+      'It suffices that the defendant knew or ought reasonably to have known that such a type of loss would result from breach; he need not know the precise extent of the loss.',
     full_summary:
-      "Director of Public Prosecutions v NF [2024] IECA 131 was a prosecution appeal against sentence in a historical sexual abuse case. The accused had been convicted of multiple sexual offences committed over several years against a child victim. The Court of Appeal addressed two sentencing principles of general importance. First, on the use of consecutive sentences, the court confirmed that consecutive sentencing for serial sexual offending should be used sparingly: where offences are closely similar in character, closely proximate in time, and part of a continuing campaign against the same victim, the court should generally structure sentences concurrently, applying the totality principle to arrive at a proportionate overall term. Excessive use of consecutive sentences risks producing a crushing sentence disproportionate to the offender's overall culpability. Second, on prosecutorial delay, the court held that culpable delay by the State in bringing proceedings — even where it falls short of the threshold required to prohibit the trial altogether — is a legitimate mitigating factor at sentencing. The accused's prolonged exposure to the anxiety and uncertainty of a pending prosecution, caused by the State's own tardiness, can properly reduce the sentence imposed. The appeal was dismissed but the sentencing analysis provided useful prospective guidance.",
-    subjects: ['criminal'],
-    topics: [
-      'sexual offences',
-      'sentencing',
-      'consecutive sentences',
-      'prosecutorial delay',
-      'mitigation',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'People (DPP) v JMcM',
-    citation: '[2024] IECA 220',
-    year: 2024,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Court of Appeal refused to allow the defence to withdraw a sentence appeal mid-hearing and proceeded to increase the sentence from 11 years to 15 years and 6 months for serious sexual abuse of a child aged 8–11 over three years. The court applied the DPP v FE [2019] IESC 85 sentencing framework and found the original sentence was outside the appropriate range given the gravity of offending and the vulnerability of the victim. The case is a stark reminder that a defence sentence appeal carries a genuine risk of sentence increase.',
-    key_quote:
-      'A court hearing a defence appeal against sentence may increase that sentence where the original sentence was outside the appropriate range; the accused takes the risk of an increased sentence when appealing.',
-    full_summary:
-      'People (DPP) v JMcM [2024] IECA 220 arose from a defence appeal against an 11-year sentence for serious sexual abuse of a child who was aged between 8 and 11 years throughout the period of offending, which spanned approximately three years. When the Court of Appeal indicated during the hearing that it considered the original sentence may have been too lenient, the defence sought to withdraw the appeal. The court refused, confirming that once an appeal has been lodged and proceedings have commenced, the court retains jurisdiction to consider whether the sentence is appropriate in either direction. The Court of Appeal applied the FE sentencing framework for child sexual abuse cases established in People (DPP) v FE [2019] IESC 85, placing the offending at the higher end of the spectrum given the prolonged period of abuse, the young age of the victim, the significant breach of trust, and the lasting psychological harm caused. The court found the original sentence of 11 years was manifestly outside the appropriate range on the low side and increased it to 15 years and 6 months. The case serves as a prominent warning to defence practitioners that appealing a sentence carries genuine risk; the appellate court is not bound to hold the sentence at the original level or reduce it.',
-    subjects: ['criminal'],
-    topics: [
-      'sexual offences',
-      'sentencing',
-      'sentence increased on defence appeal',
-      'FE sentencing framework',
-      'child abuse',
-    ],
+      'Victoria Laundry ordered a large boiler from Newman Industries for immediate use in expanding their laundry business. Newman delivered the boiler five months late. Victoria Laundry claimed for: (1) loss of ordinary profits they would have earned in those five months; and (2) loss of profits from lucrative dyeing contracts they had been hoping to secure. The Court of Appeal held that ordinary profits were recoverable (Newman knew it was a laundry urgently wanting the boiler). The exceptional lucrative dyeing contracts were not recoverable because Newman had not been told about them. The case develops Hadley v Baxendale by requiring only that the type (not extent) of loss was within reasonable contemplation, and distinguishes ordinary from special business contracts.',
+    subjects: ['contract-law'],
+    topics: ['remedies', 'damages', 'remoteness', 'loss-of-profits'],
     is_frequently_tested: true,
-    past_paper_appearances: [],
+    past_paper_appearances: ['Contract Autumn 2020 Q14', 'Contract Spring 2023 Q14'],
   },
   {
-    case_name: 'Director of Public Prosecutions v Crawford',
-    citation: '[2024] IESC 44',
-    year: 2024,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
+    case_name: 'Dunlop Pneumatic Tyre Co Ltd v New Garage and Motor Co Ltd',
+    citation: '[1915] AC 79',
+    year: 1915,
+    court: 'House of Lords',
+    jurisdiction: 'England & Wales',
     legal_principle:
-      "The Supreme Court definitively held that s.18 of the Non-Fatal Offences Against the Person Act 1997 abolished the common law Dwyer self-defence test and now governs the use of force in all cases including homicide. The new test is hybrid: the accused must have an honest (subjective) belief that force was necessary, and the force used must be objectively reasonable in the circumstances as the accused honestly believed them to be. Where force is honestly believed necessary but is objectively excessive, the appropriate verdict is manslaughter rather than murder, preserving the partial defence. Crawford's murder conviction was upheld as the jury rejected his honest belief entirely.",
+      'A sum stipulated in a contract as payable on breach is enforceable as a liquidated damages clause if it is a genuine pre-estimate of loss. It is an unenforceable penalty if it is a payment in terrorem, with no relation to the actual loss. The courts look at the nature of the sum and the circumstances at the time of contracting.',
     key_quote:
-      'Section 18 of the Non-Fatal Offences Against the Person Act 1997 governs all use of force including in homicide cases; the test combines a subjective honest belief in the necessity for force with an objective assessment of the reasonableness of the force used.',
+      'The essence of a penalty is a payment of money stipulated as in terrorem of the offending party; the essence of liquidated damages is a genuine covenanted pre-estimate of damage.',
     full_summary:
-      "Director of Public Prosecutions v Crawford [2024] IESC 44 is the Supreme Court's definitive ruling on the Irish law of self-defence following the enactment of s.18 of the Non-Fatal Offences Against the Person Act 1997. The accused had killed a man during an altercation and raised self-defence at trial. The jury convicted him of murder. On appeal, the Supreme Court definitively resolved a longstanding uncertainty about whether the common law Dwyer test survived the 1997 Act. The court held that s.18 abolished the common law entirely and now provides the exclusive framework for the use of force in all criminal cases including homicide. The test under s.18 is a hybrid one: the accused must have held an honest and genuine subjective belief that the use of force was necessary, and the force actually used must have been objectively reasonable in the circumstances as the accused honestly believed them to be. Where the accused honestly believes force is necessary but uses force that is objectively excessive in the circumstances as believed, the appropriate verdict is manslaughter — not murder — thereby preserving a form of partial defence from excessive force. In Crawford's case, however, the jury had rejected his account entirely, finding no honest belief in the necessity for force. His murder conviction was upheld. The case provides definitive guidance on the structure of the s.18 defence and its relationship to both murder and manslaughter.",
-    subjects: ['criminal'],
-    topics: [
-      'self-defence',
-      'murder',
-      's.18 NFOA 1997',
-      'hybrid test',
-      'lawful use of force',
-      'manslaughter',
-    ],
+      "Dunlop supplied tyres to a dealer on terms that the dealer would not sell below Dunlop's price list, and would pay £5 for each tyre sold in breach. The dealer argued this was an unenforceable penalty clause. The House of Lords upheld it as a valid liquidated damages clause. Lord Dunedin gave the leading judgment setting out the criteria for distinguishing penalties from liquidated damages: (1) a clause is a penalty if the sum is extravagant compared to the greatest possible loss; (2) if the breach is non-payment of money, a sum greater than the sum is a penalty; (3) if one sum is payable for multiple different breaches, it is probably a penalty; (4) it is not a penalty merely because the exact pre-estimate is difficult. The case provides the FE-1 framework for penalty/liquidated damages analysis, recently revised in ParkingEye v Beavis.",
+    subjects: ['contract-law'],
+    topics: ['remedies', 'liquidated-damages', 'penalty-clauses'],
     is_frequently_tested: true,
-    past_paper_appearances: [],
+    past_paper_appearances: ['Contract Autumn 2021 Q14', 'Contract Spring 2024 Q14'],
   },
   {
-    case_name: 'Director of Public Prosecutions v Anderson',
-    citation: '[2024] IECA 50',
-    year: 2024,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
+    case_name: 'ParkingEye Ltd v Beavis',
+    citation: '[2015] UKSC 67',
+    year: 2015,
+    court: 'UK Supreme Court',
+    jurisdiction: 'England & Wales',
     legal_principle:
-      "The Court of Appeal confirmed the three-stage sentencing methodology for manslaughter by reason of diminished responsibility: (1) nominate a headline sentence ignoring the mental disorder; (2) adjust the headline downward to reflect the reduced culpability arising from the mental condition; (3) apply any remaining mitigation. The court upheld an 11-year sentence (3 years suspended) for the killing of a man during a psychotic episode arising from bipolar disorder. The methodology ensures appropriate weight is given to both the gravity of the offence and the accused's reduced culpability.",
+      "A contractual clause requiring payment of a sum on breach is not an unenforceable penalty if the sum represents a genuine commercial justification — a legitimate interest in the performance of the contract — even if the sum is not a pre-estimate of the party's own loss. The reformulated penalty rule asks whether the sum is out of all proportion to any legitimate interest of the innocent party.",
     key_quote:
-      'Sentencing for manslaughter by diminished responsibility requires a three-stage approach: setting a headline sentence, adjusting for the mental disorder, and then applying further mitigating factors.',
+      'The penalty rule is engaged only where the sum stipulated is out of all proportion to any legitimate interest that the innocent party could have in the enforcement of the obligation.',
     full_summary:
-      "Director of Public Prosecutions v Anderson [2024] IECA 50 concerned an appeal against a sentence of 11 years' imprisonment (with the final 3 years suspended) imposed for manslaughter by reason of diminished responsibility under s.6 of the Criminal Law (Insanity) Act 2006. The accused had killed a man during a severe psychotic episode arising from bipolar disorder. The Court of Appeal upheld the sentence and, in doing so, confirmed and elaborated on the three-stage sentencing methodology for diminished responsibility manslaughter. At stage one, the court nominates a headline sentence based on the objective gravity of the killing, disregarding the mental disorder entirely. At stage two, the court adjusts the headline downward to reflect the reduced moral culpability attributable to the mental condition — this is the most significant stage and requires expert psychiatric evidence. At stage three, any further personal mitigating factors (such as guilty plea, remorse, cooperation, and prospects of rehabilitation) are applied. The court rejected the argument that the mental disorder should simply be treated as an ordinary mitigating factor at stage three; its significance warrants separate consideration at stage two. The methodology is designed to produce proportionate sentences that acknowledge both the gravity of the taking of life and the partial exculpatory effect of the accused's mental state. The case provides important procedural guidance for practitioners and sentencing judges in diminished responsibility cases.",
-    subjects: ['criminal'],
-    topics: [
-      'manslaughter',
-      'diminished responsibility',
-      'sentencing methodology',
-      'mental disorder',
-      'three-stage approach',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'People (DPP) v Gehlen',
-    citation: '[2023] IECA 320',
-    year: 2023,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Court of Appeal elaborated on the provocation defence to murder following People (DPP) v McNamara [2020] IESC 34. The defence requires a sudden and total loss of self-control — not a considered or partial response. The court confirmed that cumulative provocation may suffice but the loss of self-control must be actual and complete at the moment of the killing. The judgment is significant for clarifying the suddenness and totality requirements of the Irish provocation defence.',
-    key_quote:
-      'Provocation as a partial defence to murder requires a sudden and total loss of self-control; a considered or partial response, however provoked, will not reduce murder to manslaughter.',
-    full_summary:
-      "People (DPP) v Gehlen [2023] IECA 320 is one of two companion cases — the other being People (DPP) v Dauska — decided together by the Court of Appeal, both addressing the requirements of the provocation partial defence to murder following the Supreme Court's restatement in People (DPP) v McNamara [2020] IESC 34. In Gehlen, the accused had killed his partner following a prolonged and acrimonious relationship. He argued that the killing resulted from cumulative provocation that caused him to lose control. The Court of Appeal examined the McNamara requirements in detail: the provocation defence demands (1) an act or acts of provocation by the deceased; (2) a sudden and total loss of self-control on the part of the accused caused by that provocation; (3) a response from the accused while in that state of lost control; and (4) that the objective standard — how a reasonable person would have reacted — is also met. The court emphasised that the loss of self-control must be both sudden and total: a considered, planned, or partial response will not suffice regardless of the level of provocation. It confirmed that cumulative provocation, building over time, can constitute the required provocation but the final loss of control must itself be sudden. The conviction for murder was upheld as the evidence pointed to a deliberate rather than impulsive act.",
-    subjects: ['criminal'],
-    topics: [
-      'murder',
-      'provocation',
-      'partial defence',
-      'manslaughter',
-      'sudden loss of self-control',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'People (DPP) v Dauska',
-    citation: '[2023] IECA 321',
-    year: 2023,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "Companion case to Gehlen, applying and confirming the provocation framework from People (DPP) v McNamara [2020] IESC 34. The Court of Appeal confirmed that the suddenness requirement distinguishes a genuine loss of self-control from a calculated response. The court rejected the argument that the accused's response was provoked, finding the evidence pointed to a deliberate rather than impulsive reaction. Both Gehlen and Dauska consolidate McNamara's requirements for the provocation partial defence.",
-    key_quote:
-      'The companion case to Gehlen: the provocation defence requires proof of a sudden and total loss of self-control; a response that follows reflection or deliberation cannot constitute provocation reducing murder to manslaughter.',
-    full_summary:
-      "People (DPP) v Dauska [2023] IECA 321 was decided alongside People (DPP) v Gehlen [2023] IECA 320 and applies the same McNamara provocation framework to different facts. The accused in Dauska had killed another man following an altercation. The defence argued that words and conduct by the deceased had provoked the accused into a sudden loss of control. The Court of Appeal dismissed the appeal. Applying McNamara, the court found no adequate basis for concluding that the accused had experienced a sudden and total loss of self-control. The evidence — including the nature and sequence of the violence, the accused's movements before and after the killing, and the manner in which the blows were delivered — pointed to a considered and deliberate response rather than an impulsive one born of lost control. The court reaffirmed that the suddenness requirement is not a technical hurdle but a substantive element of the defence: it marks the dividing line between a genuine reactive loss of control (partial excuse) and a considered act of violence (full murder). Together, Gehlen and Dauska consolidate and apply McNamara's reformulation of the Irish provocation defence and provide useful guidance on the evidential indicators relevant to assessing suddenness and totality of the loss of control.",
-    subjects: ['criminal'],
-    topics: ['murder', 'provocation', 'partial defence', 'manslaughter', 'McNamara'],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'DOE v Director of Public Prosecutions',
-    citation: '[2024] IEHC 112',
-    year: 2024,
-    court: 'High Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'Three young accused charged with serious offences sought prohibition of trial on grounds that prosecutorial delay caused them to age out of the protections of the Children Act 2001, losing their entitlement to anonymity and youth-specific sentencing. The High Court found blameworthy prosecutorial delay but held that the only proven prejudice — loss of reporting restrictions — could be mitigated by ad hoc reporting restrictions at trial. Applying the Donoghue balancing test, the public interest in prosecuting serious offences outweighed the residual prejudice and the trial was allowed to proceed. An important application of the DK v Crowley principles in the juvenile context.',
-    key_quote:
-      'Prosecutorial delay causing an accused to age out of Children Act protections is a serious prejudice, but the trial court can mitigate that prejudice by imposing reporting restrictions; prohibition is not automatic.',
-    full_summary:
-      'DOE v Director of Public Prosecutions [2024] IEHC 112 involved three young persons who had been charged with serious criminal offences alleged to have been committed while they were under 18. Prosecutorial delay meant that, by the time proceedings progressed to trial, all three had turned 18 and had therefore aged out of the statutory protections afforded to children under the Children Act 2001. These protections included automatic anonymity from media reporting, the possibility of referral to the Garda Youth Diversion Programme, and youth-specific sentencing provisions. The High Court found that the delay was blameworthy and attributable to the State. However, applying the Donoghue v Director of Public Prosecutions balancing test, the court assessed the actual prejudice caused against the public interest in prosecution. The court found that the primary concrete prejudice — loss of automatic reporting restrictions — could be substantially addressed by the trial judge imposing reporting restrictions ad hoc during the trial proceedings. Other alleged prejudices, including loss of diversion and youth sentencing, were either speculative or not established with sufficient specificity. The public interest in prosecuting serious criminal offences was significant. Balancing these factors, the court declined to grant prohibition. The case is an important application of the DK v Crowley framework in the juvenile context and demonstrates that aging out of Children Act protections, while serious, does not automatically warrant prohibition of trial.',
-    subjects: ['criminal'],
-    topics: [
-      'delay',
-      'prohibition of trial',
-      'Children Act 2001',
-      'aging out',
-      'juvenile',
-      'prosecutorial delay',
-    ],
+      "ParkingEye operated a car park with free parking for a maximum of two hours. Beavis overstayed and was charged an £85 fee. Beavis argued this was an unenforceable penalty. The Supreme Court held the charge was enforceable. ParkingEye had a legitimate interest in managing the car park efficiently and encouraging turnover (even though it did not itself suffer an £85 loss per overstaying vehicle). The new test for penalties is whether the charge is 'out of all proportion' to any legitimate interest of the party enforcing it — a wider concept than the traditional 'genuine pre-estimate of loss'. The case represents a significant relaxation of the penalty rule and is important for FE-1 analysis of commercial liquidated damages clauses.",
+    subjects: ['contract-law'],
+    topics: ['remedies', 'penalty-clauses', 'liquidated-damages', 'legitimate-interest'],
     is_frequently_tested: true,
-    past_paper_appearances: [],
+    past_paper_appearances: ['Contract Autumn 2023 Q14'],
   },
   {
-    case_name: 'N.B. v Director of Public Prosecutions',
-    citation: '[2024] IEHC 137',
-    year: 2024,
-    court: 'High Court of Ireland',
-    jurisdiction: 'IE',
+    case_name: 'Robinson v Harman',
+    citation: '(1848) 1 Ex 850',
+    year: 1848,
+    court: 'Exchequer',
+    jurisdiction: 'England & Wales',
     legal_principle:
-      "The High Court refused prohibition of a trial for historic indecent assault arising from a nearly four-year delay between the complaint and service of the book of evidence. The court found the delay was not inordinate, culpable or unjust in the circumstances. The applicant's assertion of prejudice from the death of potential exonerating witnesses was not established with sufficient specificity to displace the public interest in prosecution. The DK v Crowley / Donoghue v DPP framework was applied.",
+      'The purpose of damages for breach of contract is to put the innocent party in the position they would have been in had the contract been performed, so far as money can do so. This is the expectation measure (protecting the expectation or performance interest).',
     key_quote:
-      'A delay of four years between complaint and book of evidence, while undesirable, is not automatically inordinate or culpable; the applicant must establish specific and actual prejudice to ground prohibition.',
+      'Where a party sustains a loss by reason of a breach of contract, he is, so far as money can do it, to be placed in the same situation with respect to damages as if the contract had been performed.',
     full_summary:
-      "N.B. v Director of Public Prosecutions [2024] IEHC 137 involved an application for prohibition of a trial for historical indecent assault. The applicant argued that a delay of approximately four years between the making of the complaint and the service of the book of evidence was inordinate, culpable, and had caused him specific prejudice, including the death during the delay period of witnesses who could potentially have supported his defence. The High Court refused prohibition, applying the framework from DK v Crowley [2002] 2 IR 744 as subsequently developed in Donoghue v Director of Public Prosecutions. The court found that the delay, while regrettable, was not of the magnitude required to be classified as inordinate given the complexity of historical investigations. The court also found that the delay was not attributable to blameworthy conduct on the part of the prosecution. On prejudice, the court held that the applicant's assertion regarding the deceased witnesses was insufficient: he had not identified with the required specificity what those witnesses would have said or how their evidence would have assisted his defence. Mere assertion that witnesses who might have helped him have died does not establish the actual and specific prejudice necessary to found prohibition. The public interest in prosecuting serious historic offences of a sexual nature remained a weighty consideration on the other side of the balance.",
-    subjects: ['criminal'],
-    topics: [
-      'delay',
-      'prohibition of trial',
-      'historic indecent assault',
-      'prosecutorial delay',
-      'prejudice',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'DK v Director of Public Prosecutions',
-    citation: '[2023] IEHC 274',
-    year: 2023,
-    court: 'High Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The High Court granted prohibition of a prosecution where an unexplained nine-month delay caused the juvenile accused to age out of the Children Act 2001, losing anonymity protections and being exposed to lifelong internet reporting. The court found the State owed a special duty of expedition to child defendants. The loss of Children Act protections — including anonymity, the Garda Youth Diversion Programme, and youth-specific sentencing — constituted real and specific prejudice that outweighed the public interest in proceeding with an assault charge. A landmark ruling on prosecutorial delay and juvenile defendants.',
-    key_quote:
-      'The State owes a heightened duty of expedition when prosecuting juvenile defendants; delay that causes a young accused to lose the protections of the Children Act 2001 may constitute specific prejudice warranting prohibition.',
-    full_summary:
-      'DK v Director of Public Prosecutions [2023] IEHC 274 is a landmark High Court decision on prosecutorial delay in the context of juvenile accused persons. The applicant had been charged with an assault offence committed when he was a minor. An unexplained nine-month delay in progressing the prosecution meant that by the time the case came on for hearing the applicant had turned 18. As a result, he had lost all the statutory protections available to children under the Children Act 2001: automatic anonymity, exposure to lifelong internet search results, the possibility of referral to the Garda Youth Diversion Programme, and access to youth-specific sentencing options. The High Court held that the State owes a heightened duty of expedition when dealing with juvenile accused persons. The court characterised the loss of Children Act protections not as a speculative or abstract harm but as real, specific, and irreversible prejudice — the applicant would face a public adult trial for something he did as a child, with the results potentially accessible online indefinitely. The court found no adequate explanation for the nine-month delay. Applying the Donoghue balancing test, the court found the prejudice outweighed the public interest in prosecuting what was a relatively minor assault charge. Prohibition was granted. DK became a highly influential authority and was applied and distinguished in subsequent cases including DOE v DPP [2024] IEHC 112.',
-    subjects: ['criminal'],
-    topics: [
-      'delay',
-      'prohibition',
-      'juvenile defendant',
-      'Children Act 2001',
-      'aging out',
-      'prosecutorial delay',
-    ],
+      "Harman contracted to give a lease of property to Robinson but was unable to do so because he did not have good title. Robinson was awarded damages in the amount that would put him in the same position as if the contract had been properly performed. Parke B stated the fundamental principle of contract damages: to restore the claimant to the position he would have been in had the contract been performed. This 'expectation interest' or 'performance interest' measure is the default measure of contract damages, and is the starting principle for every FE-1 remedies question.",
+    subjects: ['contract-law'],
+    topics: ['remedies', 'damages', 'expectation-interest', 'measure-of-damages'],
     is_frequently_tested: true,
-    past_paper_appearances: [],
+    past_paper_appearances: ['Contract Spring 2020 Q14', 'Contract Autumn 2022 Q14'],
   },
   {
-    case_name: 'Director of Public Prosecutions v McCann',
-    citation: '[2024] IEHC 314',
-    year: 2024,
-    court: 'High Court of Ireland',
-    jurisdiction: 'IE',
+    case_name: 'Cullen v Horgan',
+    citation: '[1925] 1 IR 1',
+    year: 1925,
+    court: "King's Bench Division (Ireland)",
+    jurisdiction: 'Ireland',
     legal_principle:
-      "The High Court found that prosecutorial delay had caused prejudice to the accused in an assault case but declined to grant prohibition, applying the Donoghue v DPP balancing exercise. Even where specific prejudice is established, the court must weigh the accused's fair trial rights against the public interest in prosecution. In this case, the nature of the offence and the public interest tipped the balance in favour of allowing the trial to proceed. The case illustrates the nuanced application of the balancing exercise.",
+      'The plaintiff in a breach of contract claim is under a duty to take reasonable steps to mitigate their loss. Damages cannot be recovered for losses that reasonable steps would have avoided. The burden of proving a failure to mitigate lies on the defendant.',
     key_quote:
-      "Even where delay and specific prejudice are established, the court must balance the accused's fair trial rights against the public interest in prosecution; prejudice does not automatically mandate prohibition.",
+      'A plaintiff who has suffered a breach of contract must take all reasonable steps to minimise his loss; he cannot recover for losses which he has failed to mitigate.',
     full_summary:
-      "Director of Public Prosecutions v McCann [2024] IEHC 314 is a High Court judicial review of a prosecution for assault. The applicant established that prosecutorial delay had occurred and pointed to specific prejudice caused by that delay, including the unavailability of certain witnesses and the difficulties in reconstructing events from memory over a prolonged period. The High Court accepted that the delay was significant and that some prejudice had been established. However, the court declined to grant prohibition. Applying the Donoghue v Director of Public Prosecutions balancing test, the court emphasised that the establishment of delay and prejudice does not automatically lead to prohibition: the court must engage in a genuine balancing exercise between the applicant's right to a fair trial and the public interest in having criminal offences prosecuted and determined. In McCann, the nature of the assault — a violent physical attack — and the public interest in the prosecution and conviction of those who commit violent offences against others weighed significantly in favour of allowing the trial to proceed. The court also considered whether the identified prejudice could be addressed or mitigated at trial. On the overall balance, the public interest prevailed. The case is a useful illustration of the Donoghue balancing exercise where the prejudice is real but not so grave as to render a fair trial impossible.",
-    subjects: ['criminal'],
-    topics: ['delay', 'prohibition', 'balancing test', 'prosecutorial delay', 'assault'],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'People (DPP) v Darren Murphy',
-    citation: '[2023] IECA 330',
-    year: 2023,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Court of Appeal upheld a Special Criminal Court conviction for murder where gardaí identified the accused from CCTV footage. The court held that recognition evidence from CCTV is admissible without formal identification parade foils, provided a double-blind viewing procedure at a garda station (without prior contextual information) provides adequate safeguards. Where gardaí access PULSE records before viewing CCTV, this affects the weight rather than the admissibility of their identification. The accused's role as a spotter tracking the victim's movements sufficed for joint enterprise liability for murder.",
-    key_quote:
-      'Recognition evidence from CCTV footage is admissible without identification parade foils, provided the viewing procedure at a garda station is conducted in a double-blind manner free from prior contextual information.',
-    full_summary:
-      "People (DPP) v Darren Murphy [2023] IECA 330 arose from a Special Criminal Court conviction for the murder of a man in a gangland shooting. The accused had not fired the fatal shot but was convicted on the basis of joint enterprise liability: evidence showed he had acted as a spotter, monitoring and tracking the victim's movements in advance of the shooting and communicating this information to the principal offender. The Court of Appeal dismissed the appeal. Two significant legal issues arose. First, on recognition evidence: gardaí had identified the accused from CCTV footage at a garda station viewing. The court confirmed that recognition evidence from CCTV does not require the formal safeguards of an identification parade (such as foils), provided that the viewing procedure was conducted in a double-blind fashion — meaning the viewing garda had no prior knowledge or contextual information suggesting the accused's involvement. Where a garda has accessed the PULSE criminal records database before viewing the CCTV and thereby acquired prior information, this affects the weight of the identification evidence rather than its admissibility. Second, on joint enterprise: the court confirmed that active participation in the common design — here, spotting and directing the principal — renders a person liable as a party to the murder even though they did not personally inflict the fatal injury. The conviction was upheld.",
-    subjects: ['criminal'],
-    topics: [
-      'Special Criminal Court',
-      'murder',
-      'recognition evidence',
-      'CCTV',
-      'joint enterprise',
-      'organised crime',
-    ],
+      "Cullen suffered loss as a result of Horgan's breach of contract. The Irish courts applied the duty to mitigate. The plaintiff must take reasonable steps to avoid unnecessary loss following a breach. Losses that could have been avoided by taking reasonable steps are not recoverable. The duty to mitigate is not onerous — the plaintiff need only take reasonable steps, not heroic or unduly burdensome ones. This is the foundational Irish authority on the duty to mitigate in contract law, applying the same principle as British Westinghouse v Underground Electric Railway (HL). It is standard FE-1 learning for all remedies questions.",
+    subjects: ['contract-law'],
+    topics: ['remedies', 'damages', 'mitigation', 'duty-to-mitigate', 'irish-cases'],
     is_frequently_tested: true,
-    past_paper_appearances: [],
+    past_paper_appearances: ['Contract Spring 2022 Q14', 'Contract Autumn 2024 Q14'],
   },
   {
-    case_name: 'People (DPP) v Faulkner',
-    citation: '[2024] IESC 16',
-    year: 2024,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
+    case_name: 'Anglia Television Ltd v Reed',
+    citation: '[1972] 1 QB 60',
+    year: 1972,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
     legal_principle:
-      'The Supreme Court upheld a 12-year sentence for burglary, confirming the Casey burglary sentencing bands remain good law. Where dangerous driving formed an integral part of the criminal plan — here a high-speed getaway from the burglary of an elderly couple — it properly informs the headline sentence for the burglary itself rather than being sentenced separately. The targeting of vulnerable elderly victims and the absence of a guilty plea were significant aggravating factors. The sentence was upheld as proportionate.',
+      'Where it is difficult to quantify lost profits (expectation loss), a claimant may instead claim wasted expenditure (reliance loss) incurred in anticipation of the contract. Pre-contract expenditure may be recoverable as wasted expenditure if it was reasonably within the contemplation of the parties that such expenditure would be wasted if the contract was broken.',
     key_quote:
-      'Where dangerous driving is an integral component of the criminal plan rather than an independent offence, it properly aggravates the headline sentence for the primary offence rather than attracting a separate consecutive sentence.',
+      "The plaintiff can claim for expenditure wasted by the defendant's breach, including expenditure incurred before the contract was made, if the defendant could reasonably have foreseen that such expenditure would be wasted.",
     full_summary:
-      'People (DPP) v Faulkner [2024] IESC 16 was a Supreme Court sentencing appeal in a burglary case involving an elderly couple. The accused had broken into the home of two elderly victims at night, threatened them, and fled in a vehicle which was then driven at high speed through residential streets in a manner endangering others. A 12-year sentence had been imposed. The Supreme Court dismissed the appeal, confirming the Casey burglary sentencing bands established in People (DPP) v Casey [2018] IECA 121 remain the applicable framework. The court addressed the treatment of dangerous driving where it forms an integral part of the criminal enterprise. Rather than attracting a separate consecutive sentence, dangerous driving that is intrinsically connected to the commission of the primary offence — here the getaway — properly aggravates the headline sentence for the burglary itself, subject to the totality principle. The targeting of vulnerable elderly victims in their home at night was a very significant aggravating factor, as was the psychological impact on the victims and the complete absence of remorse or a guilty plea. The court confirmed the 12-year sentence was proportionate to the overall criminality. The decision provides useful guidance on integrated criminal episodes where multiple criminal acts form part of a single continuous plan.',
-    subjects: ['criminal'],
-    topics: [
-      'sentencing',
-      'burglary',
-      'Casey bands',
-      'dangerous driving',
-      'totality',
-      'vulnerable victims',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Director of Public Prosecutions v Kenna',
-    citation: '[2024] IECA 180',
-    year: 2024,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Court of Appeal allowed a DPP undue leniency appeal against a wholly suspended three-year sentence for s.15A possession of cocaine. The court emphasised that fully suspended sentences for s.15A drug offences are generally inappropriate absent truly exceptional circumstances, even where substantial mitigation exists. The accused was resentenced to a custodial term with the final 18 months suspended. The case provides a useful comparative survey of sentencing across similar s.15A cases and reinforces the legislative intent behind the mandatory minimum regime.',
-    key_quote:
-      'A wholly suspended sentence for a s.15A Misuse of Drugs Act offence will generally be inappropriate; the mandatory minimum sentencing regime reflects a strong legislative policy in favour of custodial sentences for serious drug trafficking.',
-    full_summary:
-      'Director of Public Prosecutions v Kenna [2024] IECA 180 was a DPP appeal against sentence pursuant to s.2 of the Criminal Justice Act 1993 (undue leniency) following the imposition of a wholly suspended three-year sentence for an offence under s.15A of the Misuse of Drugs Act 1977, involving possession of cocaine for sale or supply with a street value above the statutory threshold. The Court of Appeal allowed the appeal, finding the sentence unduly lenient. The court surveyed the sentencing landscape for s.15A offences and reaffirmed the strong legislative policy underpinning the mandatory minimum regime: sentences for s.15A offences should generally involve a custodial element unless truly exceptional circumstances justify full suspension. In Kenna, while there was genuine mitigation including a guilty plea and personal circumstances, these did not amount to exceptional circumstances sufficient to justify a wholly suspended sentence. The accused was resentenced to a period of imprisonment with the final 18 months suspended, maintaining a custodial element. The case provides practitioners with a useful comparative analysis of s.15A sentencing decisions and clarifies that the threshold for fully suspending such sentences is very high. The court emphasised that the Oireachtas had enacted the mandatory minimum regime deliberately to signal the gravity with which society views serious drug trafficking.',
-    subjects: ['criminal'],
-    topics: [
-      'drug offences',
-      's.15A Misuse of Drugs Act',
-      'undue leniency',
-      'suspended sentence',
-      'sentencing',
-    ],
+      "Anglia TV contracted with Robert Reed (an actor) to play the leading role in a film. Reed pulled out in breach of contract. Anglia could not find a replacement and abandoned the film. They claimed for all pre-contract and post-contract expenditure wasted as a result of Reed's breach. The Court of Appeal held Anglia could recover the pre-contract expenditure as well as post-contract expenditure. Where loss of profits (expectation loss) cannot be proved with sufficient certainty, the claimant can claim wasted expenditure (reliance loss). Pre-contract expenditure was recoverable because it was foreseeable that it would be wasted if Reed broke his contract. The case is the key FE-1 authority on reliance loss as an alternative to expectation loss.",
+    subjects: ['contract-law'],
+    topics: ['remedies', 'damages', 'reliance-loss', 'wasted-expenditure'],
     is_frequently_tested: true,
-    past_paper_appearances: [],
+    past_paper_appearances: ['Contract Autumn 2021 Q14'],
   },
   {
-    case_name: "Director of Public Prosecutions v O'Sullivan",
-    citation: '[2024] IECA 98',
-    year: 2024,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
+    case_name: 'Dinnegan v Ryan',
+    citation: '[2002] IESC 1',
+    year: 2002,
+    court: 'Supreme Court',
+    jurisdiction: 'Ireland',
     legal_principle:
-      'A DPP undue leniency appeal in a s.15A drug case where the accused also had previous relevant convictions and had committed other offences on bail. The Court of Appeal confirmed that sentencing judges are not obliged to prioritise rehabilitation over retribution and deterrence for serious drug offences, particularly where there is a history of offending. The court declined to interfere on this occasion but provided useful guidance on the factors bearing on the s.15A sentencing exercise including prior record and bail offending.',
+      'In Ireland, damages for breach of contract may include a sum for mental distress, disappointment, or loss of enjoyment where the very object of the contract was to provide enjoyment, relaxation, or peace of mind. This is the Irish counterpart to Jarvis v Swans Tours.',
     key_quote:
-      'A sentencing judge is not obliged to prioritise rehabilitation over retribution and deterrence in serious drug offence cases, particularly where the accused has relevant prior convictions and has offended on bail.',
+      'Where the whole purpose of a contract was to provide pleasure and enjoyment, damages may include a sum for the disappointment and loss of enjoyment caused by the breach.',
     full_summary:
-      "Director of Public Prosecutions v O'Sullivan [2024] IECA 98 arose from a DPP undue leniency application in a s.15A Misuse of Drugs Act case where the accused had a significant prior criminal record including relevant drug offences and had committed further offences while on bail awaiting sentencing for the s.15A offence. The Court of Appeal provided useful guidance on the sentencing exercise for s.15A offences where these aggravating features are present. The court confirmed that, while rehabilitation is a legitimate sentencing consideration, a sentencing judge is not obliged to prioritise it over the objectives of retribution, deterrence, and the protection of the public, particularly in cases of serious drug trafficking by those with relevant prior convictions. Bail offending is an independent aggravating factor that warrants upward adjustment of sentence and reflects disrespect for the courts and the rule of law. The court engaged in a detailed comparative analysis of s.15A sentencing decisions, finding that while the sentence was at the lenient end of the permissible range, it was not so lenient as to constitute an error in principle warranting intervention under the undue leniency test. The appeal was dismissed, but the judgment adds significantly to the body of guidance on the proper approach to s.15A sentencing across different factual profiles.",
-    subjects: ['criminal'],
-    topics: [
-      'drug offences',
-      's.15A Misuse of Drugs Act',
-      'undue leniency',
-      'sentencing',
-      'proportionality',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Director of Public Prosecutions v BK',
-    citation: '[2023] IESC 38',
-    year: 2023,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Supreme Court upheld a Court of Appeal order quashing an acquittal and ordering a retrial under s.23 of the Criminal Procedure Act 2010 where the trial judge had wrongly excluded confessions made during a psychological wardship assessment. The court held that confessions made in a clinical or therapeutic context are not automatically inadmissible in criminal proceedings; the trial judge had applied an unduly rigid exclusionary approach. The interests of justice test under s.23 was satisfied given the gravity of the alleged child sexual abuse. The DPP's right to appeal acquittals in serious cases was confirmed.",
-    key_quote:
-      'Confessions made in a clinical or therapeutic context are not automatically inadmissible in criminal proceedings; a trial judge cannot apply a blanket exclusionary rule unsupported by established principle.',
-    full_summary:
-      "Director of Public Prosecutions v BK [2023] IESC 38 concerned the DPP's appeal, under s.23 of the Criminal Procedure Act 2010, against an acquittal following the wrongful exclusion of confession evidence at trial. The accused had been charged with serious child sexual abuse offences. During the investigation, the accused had made admissions in the course of a psychological assessment conducted as part of wardship proceedings relating to his children. The trial judge excluded these admissions on the basis that they had been obtained in a clinical and therapeutic context and should not be introduced into criminal proceedings. The Supreme Court held this was an error of law. The court confirmed that there is no blanket rule rendering confessions made in a therapeutic or clinical context inadmissible in criminal proceedings. Admissibility depends on the established principles applicable to confessions generally — voluntariness, oppression, and constitutional fairness — and not on the setting in which they were made. A confession made freely and without inducement does not become inadmissible merely because it occurred in a medical or psychological context. The court upheld the Court of Appeal's order quashing the acquittal and directing a retrial. It confirmed that the interests of justice test under s.23 was satisfied given the gravity of the offending alleged — serious sexual abuse of a child — and the significance of the wrongly excluded evidence to the prosecution case.",
-    subjects: ['criminal'],
-    topics: [
-      'confessions',
-      'admissibility',
-      'clinical context',
-      's.23 retrial',
-      'fair trial',
-      'double jeopardy',
-    ],
+      'Dinnegan suffered loss and disappointment as a result of a breach of contract by Ryan where the contract had been made specifically for the purpose of providing enjoyment or peace of mind. The Irish Supreme Court confirmed that damages for non-pecuniary loss (disappointment, mental distress) may be awarded in Irish contract law where the very purpose of the contract was to secure a pleasurable or psychological benefit. The case follows the approach in Jarvis v Swans Tours and is the leading Irish authority on non-pecuniary damages in contract law, directly applicable to FE-1 questions on consumer contracts for holidays, wedding services, and similar.',
+    subjects: ['contract-law'],
+    topics: ['remedies', 'damages', 'non-pecuniary-loss', 'mental-distress', 'irish-cases'],
     is_frequently_tested: true,
-    past_paper_appearances: [],
+    past_paper_appearances: ['Contract Spring 2021 Q14', 'Contract Autumn 2023 Q14'],
   },
   {
-    case_name: 'ESB v Sharkey',
-    citation: '[2024] IEHC 65',
-    year: 2024,
-    court: 'High Court of Ireland',
-    jurisdiction: 'IE',
+    case_name: 'Hoenig v Isaacs',
+    citation: '[1952] 2 All ER 176',
+    year: 1952,
+    court: 'Court of Appeal',
+    jurisdiction: 'England & Wales',
     legal_principle:
-      'The High Court held that the constitutional right to silence and privilege against self-incrimination can be invoked by an employee in private employment disciplinary proceedings where there is a real risk that compelled answers may be used in parallel criminal proceedings. The right to silence is not confined to formal police interrogations but extends to any coercive questioning where the answers may expose the person to criminal liability. This case is significant for the relationship between employment disciplinary processes and concurrent criminal investigations.',
+      'Where a contractor has substantially performed their contractual obligations, the contractor is entitled to the contract price less a deduction for the cost of remedying defects. The rule that a party must perform entirely before being entitled to payment (the entire contracts rule) is subject to the doctrine of substantial performance.',
     key_quote:
-      'The constitutional right to silence is not confined to police interrogations; it extends to employment disciplinary proceedings where there is a real risk that compelled answers will be used in criminal proceedings against the employee.',
+      'If a party has substantially performed his contract, he is entitled to the contract price less a deduction for the defects and omissions.',
     full_summary:
-      "ESB v Sharkey [2024] IEHC 65 raised a question of considerable constitutional importance: whether an employee facing parallel employment disciplinary proceedings and criminal investigation could invoke the constitutional right to silence and the privilege against self-incrimination to refuse to answer questions at a disciplinary hearing. The ESB sought a declaration that Sharkey was obliged to participate in internal disciplinary proceedings notwithstanding the ongoing criminal investigation into the same conduct. The High Court held in favour of Sharkey. The court confirmed that the constitutional right to silence, derived from Article 38.1 of the Constitution and the common law privilege against self-incrimination, is not limited to formal police interrogations or criminal proceedings. The right extends to any setting where there is a real and appreciable risk that answers given under compulsion could be used against a person in criminal proceedings. Employment disciplinary proceedings, while private in nature, engage this constitutional protection where participation in them could provide incriminating material capable of use in a parallel criminal prosecution. The court's decision has broad implications for how employers in regulated industries must structure their disciplinary processes when employees are also under criminal investigation, and for the admissibility of disciplinary findings in subsequent criminal proceedings.",
-    subjects: ['criminal'],
-    topics: [
-      'right to silence',
-      'privilege against self-incrimination',
-      'employment disciplinary proceedings',
-      'criminal investigation',
-      'constitutional rights',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Director of Public Prosecutions v FX',
-    citation: '[2024] IESC 25',
-    year: 2024,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Supreme Court considered the operation of s.4(8) of the Criminal Law (Insanity) Act 2006, addressing whether a trial judge conducting a fitness-for-trial hearing may consider alternative offences not charged on the indictment. The court examined the distinction between actus reus and mens rea in this statutory context and the procedural rights of an accused at a fitness hearing. The decision provides important guidance on the scope of the court's inquiry at fitness-for-trial hearings in serious criminal cases including murder.",
-    key_quote:
-      'A fitness-for-trial hearing under the Criminal Law (Insanity) Act 2006 requires consideration of the actus reus of the offence charged; the court may consider alternative verdicts where the evidence so warrants.',
-    full_summary:
-      'Director of Public Prosecutions v FX [2024] IESC 25 concerned an appeal on a question of law relating to the conduct of fitness-for-trial hearings under s.4 of the Criminal Law (Insanity) Act 2006. The accused had been charged with murder but there was a substantial question as to his fitness to stand trial. The specific issue before the Supreme Court was whether, in conducting the s.4(8) inquiry — which requires a determination of whether the accused did the act charged — the trial judge may or must consider alternative offences not stated on the indictment, such as manslaughter. The court examined the structure and purpose of s.4 of the 2006 Act, including the distinction between the actus reus inquiry (did the accused do the act?) and the mental element (was the accused criminally responsible?), and the procedural rights of the accused at such a hearing. The Supreme Court held that the fitness-for-trial inquiry under s.4(8) is limited to the actus reus of the offence charged, but that the court has jurisdiction to consider alternative verdicts, including manslaughter, where the evidence at the hearing supports such a finding. The decision provides important procedural and substantive guidance for courts and practitioners dealing with fitness-for-trial applications in serious criminal cases.',
-    subjects: ['criminal'],
-    topics: [
-      'insanity',
-      'fitness for trial',
-      'Criminal Law (Insanity) Act 2006',
-      'alternative verdicts',
-      'actus reus',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'M v Ireland and Amah v Ireland',
-    citation: '[2024] IEHC 523',
-    year: 2024,
-    court: 'High Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'Simons J declared unconstitutional the interaction of s.2 of the Criminal Justice Act 1990 (mandatory life for murder) and s.156 of the Children Act 2001 (no imprisonment of children) insofar as it imposed a mandatory life sentence on persons who committed murder as juveniles but were sentenced after turning 18. The differential treatment of identically situated juvenile murderers based solely on whether they turned 18 before sentencing had no objective justification and violated Article 40.1 equality. The Criminal Justice (Amendment) Act 2024 was enacted in immediate response, disapplying the mandatory life sentence for aged-out juvenile murderers.',
-    key_quote:
-      'The Constitution requires equal treatment of persons in materially identical situations; subjecting a juvenile murderer to mandatory life imprisonment solely because they turned 18 before sentencing, when equally culpable peers sentenced earlier faced no such mandatory sentence, violates Article 40.1.',
-    full_summary:
-      'M v Ireland and Amah v Ireland [2024] IEHC 523 are joined constitutional challenges decided together by Simons J in the High Court. Both applicants had committed murder while juveniles under 18. Due to delays in proceedings — in some instances attributable to the accused, in others to the State — both were over 18 by the time of sentencing. Under the combined operation of s.2 of the Criminal Justice Act 1990 (which imposes a mandatory life sentence for murder) and s.156 of the Children Act 2001 (which prohibits the imprisonment of children and thereby prevents the mandatory sentence applying to those sentenced before turning 18), the applicants faced mandatory life imprisonment, whereas identically situated peers who happened to be sentenced before their 18th birthdays faced no such mandatory term. Simons J held that this differential treatment — based solely on the arbitrary circumstance of whether the accused happened to turn 18 before sentencing — lacked objective justification and violated the equality guarantee in Article 40.1 of the Constitution. The declaration of unconstitutionality was granted. The Oireachtas responded with extraordinary speed, enacting the Criminal Justice (Amendment) Act 2024 to disapply the mandatory life sentence in such cases, allowing the court to impose an appropriate sentence for juvenile murderers sentenced in adulthood. The case is a landmark in both criminal law and constitutional equality jurisprudence.',
-    subjects: ['criminal'],
-    topics: [
-      'youth justice',
-      'mandatory life sentence',
-      'juvenile offenders',
-      'constitutional equality',
-      'Article 40.1',
-      'aging out',
-      'murder',
-    ],
+      "Hoenig contracted to decorate and furnish Isaacs' flat for £750. Hoenig completed the work but with some defects: a bookcase and wardrobe were defective and would cost about £55 to remedy. Isaacs paid £400 and refused to pay more. The Court of Appeal held Hoenig was entitled to the balance of the contract price less the cost of remedying the defects. The work was substantially performed — the flat was liveable and furnished. The entire contracts rule (Cutter v Powell) was modified: a contractor who has substantially (but not perfectly) performed is entitled to the price subject to a deduction. This is a central FE-1 case on the doctrine of substantial performance in construction and service contracts.",
+    subjects: ['contract-law'],
+    topics: ['remedies', 'performance', 'substantial-performance', 'discharge-of-contract'],
     is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Murray v Governor of Midlands Prison',
-    citation: '[2024] IECA 42',
-    year: 2024,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Court of Appeal held that a prison governor's disciplinary jurisdiction under the Prison Rules 2007 extends to prisoner conduct occurring in a courtroom. The court rejected the proposition that a prisoner passes into exclusive 'judicial custody' while physically present in court, finding no such concept in Irish law. The governor's power to discipline a prisoner for throwing an object at a judge during sentencing was lawfully exercised. The case clarifies the scope of prison disciplinary authority beyond the prison gates.",
-    key_quote:
-      "A prison governor's disciplinary jurisdiction extends to prisoner conduct in a courtroom; a prisoner does not pass into a category of exclusive judicial custody simply by being present in court.",
-    full_summary:
-      "Murray v Governor of Midlands Prison [2024] IECA 42 arose from a prisoner's challenge to a disciplinary award imposed by the prison governor following an incident in which the prisoner threw an object at a judge during sentencing proceedings. The prisoner argued that his conduct in the courtroom was outside the governor's disciplinary jurisdiction under the Prison Rules 2007, on the basis that once a prisoner is in court he passes into a category of exclusive judicial custody and is subject only to the court's own contempt and disciplinary powers. The Court of Appeal rejected this argument in its entirety. The court held that there is no concept of 'judicial custody' in Irish law that displaces the governor's continuing disciplinary authority over a prisoner. A prisoner remains in the custody and under the disciplinary jurisdiction of the governor at all times, including while physically present in a courtroom. The court noted that the court's inherent contempt jurisdiction and the governor's disciplinary jurisdiction are not mutually exclusive; they can operate concurrently in respect of the same conduct. The disciplinary award was upheld as lawfully made. The case has practical importance for prison administrators and clarifies the reach of the Prison Rules 2007 to conduct occurring outside the physical confines of the prison.",
-    subjects: ['criminal'],
-    topics: [
-      'prisoners rights',
-      'prison discipline',
-      "governor's jurisdiction",
-      'courtroom conduct',
-      'Prison Rules 2007',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'Cantwell v Governor of Castlerea Prison',
-    citation: '[2024] IEHC 39',
-    year: 2024,
-    court: 'High Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The High Court considered a constitutional challenge to conditions of detention at Castlerea Prison, which was operating at 111% capacity. The case is part of a developing body of Irish jurisprudence applying Article 40 of the Constitution and the Prison Rules 2007 to challenge the legality of overcrowded and degrading prison conditions. The court confirmed that Article 40 is engaged where conditions of detention amount to inhuman or degrading treatment. The case contributes to the developing Irish law on the constitutional limits of prison overcrowding.',
-    key_quote:
-      'Prison conditions that amount to inhuman or degrading treatment may render the detention unconstitutional; Article 40 requires the court to enquire into the lawfulness of detention and the conditions in which it is served.',
-    full_summary:
-      'Cantwell v Governor of Castlerea Prison [2024] IEHC 39 is a constitutional challenge under Article 40 of the Constitution to the conditions of detention at Castlerea Prison, which was operating at approximately 111% of its intended capacity at the time of the proceedings. The applicant challenged the lawfulness of his detention on the grounds that overcrowding and associated conditions — including inadequate facilities, limited access to sanitation, and reduced regime — amounted to inhuman or degrading treatment contrary to the Constitution and potentially in breach of obligations under the European Convention on Human Rights. The High Court confirmed that Article 40 of the Constitution, which guarantees the right to personal liberty, is engaged not only in respect of the legal basis for detention but also in respect of the conditions in which detention is served: if conditions are so poor as to amount to inhuman or degrading treatment, the detention itself may be rendered unlawful. The court examined the evidence about conditions at Castlerea and the Prison Rules 2007. While the court acknowledged the seriousness of the overcrowding, it engaged in a careful examination of whether the threshold of inhuman or degrading treatment had been met on the specific facts. The case is part of an emerging body of Irish jurisprudence addressing the constitutional and Convention dimensions of prison overcrowding and contributes to establishing the legal limits of acceptable prison conditions.',
-    subjects: ['criminal'],
-    topics: [
-      'prisoners rights',
-      'Article 40',
-      'habeas corpus',
-      'prison overcrowding',
-      'conditions of detention',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'People (DPP) v MB',
-    citation: '[2024] IESC 33',
-    year: 2024,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Supreme Court upheld a conviction for assault causing serious harm in a joint enterprise case where the accused was absent from the scene of the final assault. Charleton J held that joint enterprise liability does not require physical presence; a consistent pattern of shared violence and a common design to harm the victim rendered the accused culpable for the assault committed in his absence. Recklessness suffices as the mental element in joint enterprise liability. The decision has broad implications for secondary liability in domestic violence and organised crime contexts.',
-    key_quote:
-      'Joint enterprise liability does not require physical presence at the scene of the offence; where there is a common design and a consistent pattern of shared violence, the absent accused may be held liable on the basis of recklessness.',
-    full_summary:
-      "People (DPP) v MB [2024] IESC 33 was a Supreme Court appeal concerning the scope of joint enterprise liability in the context of domestic violence. The accused had been convicted of assault causing serious harm under s.3 of the Non-Fatal Offences Against the Person Act 1997. The serious assault had been carried out by a co-accused in MB's absence. The prosecution argued that MB was liable on the basis of joint enterprise arising from a sustained pattern of shared domestic violence against the victim over a prolonged period. The Supreme Court, in a judgment delivered by Charleton J, upheld the conviction and confirmed several important principles. First, joint enterprise liability does not require the accused to be physically present at the scene of the specific offence charged. Second, a common design to harm a particular victim, evidenced by a consistent pattern of shared violence, renders each participant liable for acts done in furtherance of that common design, including acts carried out in the absence of one of the participants. Third, recklessness as to whether the victim would be harmed suffices as the mental element for joint enterprise liability; it is not necessary to prove that the absent accused specifically intended the particular harm inflicted. The decision has significant implications beyond domestic violence, extending to organised crime and gang contexts where a common design is established. The ruling was described by Charleton J as consistent with the fundamental principle that criminal liability attaches to those who collectively bring about unlawful harm.",
-    subjects: ['criminal'],
-    topics: [
-      'murder',
-      'joint enterprise',
-      'secondary liability',
-      'common design',
-      'recklessness',
-      'domestic violence',
-    ],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: "Director of Public Prosecutions v Sweeney, Beirne and O'Toole",
-    citation: '[2024] IECA 205',
-    year: 2024,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Court of Appeal dismissed all appeals against convictions arising from a firearms search, confirming that a search warrant under s.10(1) of the Criminal Justice (Miscellaneous Provisions) Act 1997 requires only that the applying officer holds a reasonable suspicion — nothing more is required at that stage. Restricting a person's movement within their home during a lawful search does not constitute unlawful detention prior to formal arrest. The reasonable suspicion standard was reaffirmed as set out in Tallant [2003].",
-    key_quote:
-      "A search warrant under s.10(1) of the Criminal Justice (Miscellaneous Provisions) Act 1997 requires only that the applying officer holds a reasonable suspicion; restricting a person's movement within their home during a lawful search is not an arrest.",
-    full_summary:
-      "Director of Public Prosecutions v Sweeney, Beirne and O'Toole [2024] IECA 205 involved three co-accused who appealed their convictions following a search of a premises under warrant where firearms and related material were discovered. Two significant grounds of appeal were raised. First, all three accused challenged the validity of the search warrant issued under s.10(1) of the Criminal Justice (Miscellaneous Provisions) Act 1997, arguing that the applying garda had not established sufficient grounds for the warrant. The Court of Appeal reaffirmed the principle established in DPP v Tallant [2003] 4 IR 343: a search warrant under s.10(1) requires no more than that the applying officer holds a genuine reasonable suspicion that evidence of an offence is present at the premises. The standard is not a prima facie case or anything approaching a balance of probabilities; reasonable suspicion is the sole requirement and was clearly present on the evidence. Second, the accused argued that their movement had been restricted by gardaí within the premises before they were formally arrested, and that this amounted to an unlawful detention invalidating the evidence. The Court of Appeal rejected this, holding that restricting a person's freedom of movement within premises in the course of a lawful search does not constitute a de facto arrest or detention requiring justification under the arrest powers. All three appeals were dismissed and the convictions upheld.",
-    subjects: ['criminal'],
-    topics: [
-      'search warrant',
-      'firearms',
-      'reasonable suspicion',
-      'admissibility',
-      'detention',
-      'arrest',
-    ],
-    is_frequently_tested: false,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: "Director of Public Prosecutions v O'Flaherty",
-    citation: '[2024] IESC 54',
-    year: 2024,
-    court: 'Supreme Court of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      'The Supreme Court held that the obligation to provide an oral fluid specimen for a drug test under s.10 of the Road Traffic Act 2010 necessarily implies an obligation to remain at the checkpoint scene pending the result. This resolved a 2023 High Court ruling that had threatened hundreds of drug-driving prosecutions. However, informing a driver they must wait up to one hour (which had no statutory basis) was itself an error of law; the District Court must assess whether the actual waiting time caused material prejudice. The case was of wide public importance for road traffic enforcement.',
-    key_quote:
-      'The statutory obligation to provide an oral fluid specimen for a roadside drug test necessarily implies an obligation to remain at the checkpoint pending the result of that test.',
-    full_summary:
-      "Director of Public Prosecutions v O'Flaherty [2024] IESC 54 concerned a case stated from the District Court on the statutory basis for requiring a driver to remain at a Garda checkpoint following the provision of an oral fluid specimen under s.10 of the Road Traffic Act 2010. A 2023 High Court decision had held that the Road Traffic Act 2010 did not expressly confer a power to detain a driver at the scene pending the result of an oral fluid test. This ruling had threatened to invalidate hundreds of pending drug-driving prosecutions. The Supreme Court overturned the High Court decision, holding that the statutory obligation to provide an oral fluid specimen necessarily implies an obligation to remain at the scene for a reasonable time to allow the test to be completed and the result obtained; without this implied obligation, the statutory scheme for roadside drug-testing would be rendered unworkable and futile. The court found that this implied obligation is not a detention requiring separate statutory authorisation but is rather a reasonable incident of the express statutory duty to cooperate with testing. However, the court also held that gardaí who had informed drivers they must remain for up to one hour — for which there was no statutory basis — had gone further than the law permits. The District Court must in each case assess whether the actual time the driver was required to remain caused material prejudice to the accused. The decision was of wide public importance for drug-driving enforcement.",
-    subjects: ['criminal'],
-    topics: [
-      'road traffic',
-      'drug driving',
-      'Garda checkpoint',
-      'oral fluid test',
-      'detention at checkpoint',
-    ],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
-  },
-  {
-    case_name: 'People (DPP) v Kane',
-    citation: '[2023] IECA 86',
-    year: 2023,
-    court: 'Court of Appeal of Ireland',
-    jurisdiction: 'IE',
-    legal_principle:
-      "The Court of Appeal dismissed Ireland's first appeal against conviction and sentence for coercive control under s.39 of the Domestic Violence Act 2018. The court confirmed the appropriate sentencing approach for coercive control, identifying that an upper-mid range headline sentence was appropriate for a prolonged, physically and psychologically violent campaign including threats with intimate images. A cumulative sentence of 10.5 years (12.5 years with 2 suspended) was upheld. The judgment provides the foundational Irish guidance on sentencing for coercive control offences.",
-    key_quote:
-      'A prolonged campaign of coercive and controlling behaviour, combining physical violence, psychological abuse, and threats to distribute intimate images, warrants an upper-mid range headline sentence under s.39 of the Domestic Violence Act 2018.',
-    full_summary:
-      'People (DPP) v Kane [2023] IECA 86 is a landmark judgment as the first appeal in Ireland against a conviction and sentence for coercive control under s.39 of the Domestic Violence Act 2018, which came into force in January 2019. The accused had conducted a prolonged campaign of coercive and controlling behaviour against his partner, involving serious physical assaults, psychological abuse, financial control, isolation from family and friends, and threats to distribute intimate images without consent. He was convicted and sentenced to a cumulative term of 12.5 years with 2 years suspended, yielding an effective sentence of 10.5 years. The Court of Appeal dismissed both the conviction and sentence appeals. On sentence, the court conducted the first judicial analysis of the appropriate sentencing framework for coercive control under the 2018 Act. The court found that the offending — spanning several years and involving multiple serious forms of abuse — properly attracted an upper-mid range headline sentence. The court confirmed that each separate type of coercive conduct (violence, psychological abuse, intimate image threats) is a relevant aggravating feature, and that the duration of the campaign and its devastating impact on the victim are significant factors. The absence of remorse and the early indication of a not guilty plea were further aggravators. The judgment is now the primary reference point for sentencing in coercive control cases in Ireland and provides structured guidance on headline sentence ranges, aggravating and mitigating factors, and totality in this novel offence.',
-    subjects: ['criminal'],
-    topics: [
-      'coercive control',
-      'Domestic Violence Act 2018',
-      'sentencing',
-      'first appeal',
-      'domestic abuse',
-    ],
-    is_frequently_tested: true,
-    past_paper_appearances: [],
+    past_paper_appearances: ['Contract Spring 2020 Q13', 'Contract Autumn 2022 Q13'],
   },
 ];
 async function main() {
