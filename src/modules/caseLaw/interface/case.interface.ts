@@ -1,10 +1,13 @@
-import { CaseJurisdiction, CaseFrequency } from '@prisma/client';
+import { CaseJurisdiction } from '@prisma/client';
 
 export interface CaseSearchQuery {
   search?: string;
   subject?: string;
   jurisdiction?: CaseJurisdiction;
-  frequency?: CaseFrequency;
+  year?: number;
+  caseName?: string;
+  citation?: string;
+  frequency?: 'High' | 'Low';
   page?: number;
   limit?: number;
 }
@@ -16,12 +19,12 @@ export interface CaseCardResponse {
   year: number;
   court: string;
   jurisdiction: CaseJurisdiction;
-  frequency: CaseFrequency;
+  isFrequentlyTested: boolean;
+  frequencyLabel: 'High Frequency' | 'Rare';
   subjects: string[];
   topics: string[];
-  facts: string;
+  fullSummary: string | null;
   isSaved: boolean;
-  isReviewed: boolean; // ← ADD THIS
 }
 
 export interface CaseSearchResponse {
@@ -34,65 +37,54 @@ export interface CaseSearchResponse {
   };
 }
 
-export interface RelatedCaseResponse {
-  id: string;
-  caseName: string;
-  citation: string;
-  facts: string;
-  relationshipType: string | null;
-}
-
 export interface CaseDetailResponse {
   id: string;
   caseName: string;
   citation: string;
   year: number;
   court: string;
-  jurisdiction: string;
-  frequency: string;
+  jurisdiction: CaseJurisdiction;
+  jurisdictionDisplay: string;
+  isFrequentlyTested: boolean;
+  frequencyLabel: 'High Frequency' | 'Rare';
+  examRelevance: 'High' | 'Rare';
   subjects: string[];
   topics: string[];
-
-  // Tab 1: Summary
-  facts: string;
-
-  // Tab 2: Principle & Application
-  issue: string;
-  ruling: string;
-  reasoning: string;
-  significance: string;
-  principleAndApplication: string | null;
-  examTip: string | null;
-
-  // Tab 3: Exam Relevance
-  examRelevance: string | null;
+  fullSummary: string | null;
+  legalPrinciple: string | null;
+  keyQuote: string | null;
   appearsInPapers: string[];
-
-  // Tab 4: Related Cases
-  relatedCases: RelatedCaseResponse[];
-
   isSaved: boolean;
-  isReviewed: boolean; // ← ADD THIS
+  savedAt: Date | null;
 }
 
-export interface SavedCaseResponse {
+export interface CaseFiltersResponse {
+  years: number[];
+  caseNames: string[];
+  jurisdictions: { value: CaseJurisdiction; label: string }[];
+  citations: string[];
+  frequency: { value: string; label: string }[];
+}
+
+export interface SavedCaseCardResponse {
   id: string;
   caseName: string;
   citation: string;
   year: number;
   court: string;
-  jurisdiction: string;
-  frequency: string;
+  jurisdiction: CaseJurisdiction;
+  isFrequentlyTested: boolean;
+  frequencyLabel: 'High Frequency' | 'Rare';
   subjects: string[];
   topics: string[];
-  facts: string;
+  fullSummary: string | null;
   savedAt: Date;
   lastReviewedAt: Date | null;
-  isReviewed: boolean; // ← ADD THIS
+  isReviewed: boolean;
 }
 
 export interface SavedCasesListResponse {
-  cases: SavedCaseResponse[];
+  cases: SavedCaseCardResponse[];
   total: number;
 }
 
@@ -101,7 +93,6 @@ export interface SaveCaseResponse {
   isSaved: boolean;
 }
 
-// ← ADD THIS NEW INTERFACE
 export interface ToggleReviewResponse {
   isReviewed: boolean;
   lastReviewedAt: Date | null;
