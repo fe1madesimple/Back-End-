@@ -1,19 +1,96 @@
 import { prisma } from '@/shared/config';
+import { CaseJurisdiction } from '@prisma/client';
 import {
   CaseSearchQuery,
   CaseSearchResponse,
   CaseDetailResponse,
+  CaseFiltersResponse,
   SavedCasesListResponse,
   SaveCaseResponse,
+  ToggleReviewResponse,
 } from '../interface/case.interface';
 import { NotFoundError } from '@/shared/utils';
 
+const JURISDICTION_DISPLAY: Record<CaseJurisdiction, string> = {
+  IRELAND: 'Ireland',
+  UNITED_KINGDOM: 'UK (Persuasive)',
+  AUSTRALIA: 'Australia',
+  UNITED_STATES: 'United States',
+  NEW_ZEALAND: 'New Zealand',
+  EUROPEAN_UNION: 'EU / CJEU',
+  ECHR: 'ECHR',
+  CANADA: 'Canada',
+  INTERNATIONAL: 'International',
+  ENGLAND: 'England',
+  ENGLAND_AND_WALES: 'England & Wales',
+  SCOTLAND: 'Scotland',
+  SCOTLAND_UK: 'Scotland / UK',
+  NORTHERN_IRELAND: 'Northern Ireland',
+  NEW_SOUTH_WALES: 'New South Wales',
+  GERMANY: 'Germany',
+  JAMAICA: 'Jamaica',
+  HONG_KONG: 'Hong Kong',
+  SINGAPORE: 'Singapore',
+  OTHER: 'Other',
+};
+
+const frequencyLabel = (isFrequentlyTested: boolean) =>
+  isFrequentlyTested ? 'High Frequency' : 'Rare';
+
 class CaseService {
+  async getCaseFilters(): Promise<CaseFiltersResponse> {
+    const [years, caseNames, citations, jurisdictions] = await Promise.all([
+      prisma.caseBrief.findMany({
+        select: { year: true },
+        distinct: ['year'],
+        orderBy: { year: 'desc' },
+      }),
+      prisma.caseBrief.findMany({
+        select: { caseName: true },
+        distinct: ['caseName'],
+        orderBy: { caseName: 'asc' },
+      }),
+      prisma.caseBrief.findMany({
+        select: { citation: true },
+        distinct: ['citation'],
+        orderBy: { citation: 'asc' },
+      }),
+      prisma.caseBrief.findMany({
+        select: { jurisdiction: true },
+        distinct: ['jurisdiction'],
+        orderBy: { jurisdiction: 'asc' },
+      }),
+    ]);
+
+    return {
+      years: years.map((r) => r.year),
+      caseNames: caseNames.map((r) => r.caseName),
+      citations: citations.map((r) => r.citation),
+      jurisdictions: jurisdictions.map((r) => ({
+        value: r.jurisdiction,
+        label: JURISDICTION_DISPLAY[r.jurisdiction],
+      })),
+      frequency: [
+        { value: 'High', label: 'High Frequency' },
+        { value: 'Low', label: 'Rare' },
+      ],
+    };
+  }
+
   async searchCases(userId: string, query: CaseSearchQuery): Promise<CaseSearchResponse> {
-    const { search, subject, jurisdiction, frequency, page = 1, limit = 10 } = query;
+    const {
+      search,
+      subject,
+      jurisdiction,
+      year,
+      caseName,
+      citation,
+      frequency,
+      page = 1,
+      limit = 20,
+    } = query;
 
     const skip = (page - 1) * limit;
-
     const where: any = {};
 
     if (search) {
@@ -21,48 +98,43 @@ class CaseService {
         { caseName: { contains: search, mode: 'insensitive' } },
         { citation: { contains: search, mode: 'insensitive' } },
         { topics: { has: search } },
+        { fullSummary: { contains: search, mode: 'insensitive' } },
       ];
     }
 
-    if (subject) {
-      where.subjects = { has: subject };
-    }
+    if (subject) where.subjects = { has: subject };
+    if (jurisdiction) where.jurisdiction = jurisdiction;
+    if (year) where.year = year;
+    if (caseName) where.caseName = { contains: caseName, mode: 'insensitive' };
+    if (citation) where.citation = { contains: citation, mode: 'insensitive' };
+    if (frequency === 'High') where.isFrequentlyTested = true;
+    if (frequency === 'Low') where.isFrequentlyTested = false;
 
-    if (jurisdiction) {
-      where.jurisdiction = jurisdiction;
-    }
-
-    if (frequency) {
-      where.frequency = frequency;
-    }
-
-    const total = await prisma.caseBrief.count({ where });
-
-    const cases = await prisma.caseBrief.findMany({
-      where,
-      select: {
-        id: true,
-        caseName: true,
-        citation: true,
-        year: true,
-        court: true,
-        jurisdiction: true,
-        frequency: true,
-        subjects: true,
-        topics: true,
-        facts: true,
-        savedBy: {
-          where: { userId },
-          select: {
-            id: true,
-            lastReviewedAt: true,
+    const [total, cases] = await Promise.all([
+      prisma.caseBrief.count({ where }),
+      prisma.caseBrief.findMany({
+        where,
+        select: {
+          id: true,
+          caseName: true,
+          citation: true,
+          year: true,
+          court: true,
+          jurisdiction: true,
+          isFrequentlyTested: true,
+          subjects: true,
+          topics: true,
+          fullSummary: true,
+          savedBy: {
+            where: { userId },
+            select: { id: true },
           },
         },
-      },
-      orderBy: [{ frequency: 'asc' }, { year: 'desc' }],
-      skip,
-      take: limit,
-    });
+        orderBy: [{ isFrequentlyTested: 'desc' }, { year: 'desc' }],
+        skip,
+        take: limit,
+      }),
+    ]);
 
     return {
       cases: cases.map((c) => ({
@@ -72,12 +144,12 @@ class CaseService {
         year: c.year,
         court: c.court,
         jurisdiction: c.jurisdiction,
-        frequency: c.frequency,
+        isFrequentlyTested: c.isFrequentlyTested,
+        frequencyLabel: frequencyLabel(c.isFrequentlyTested),
         subjects: c.subjects,
         topics: c.topics,
-        facts: c.facts,
+        fullSummary: c.fullSummary,
         isSaved: c.savedBy.length > 0,
-        isReviewed: c.savedBy.length > 0 && c.savedBy[0]?.lastReviewedAt !== null,
       })),
       pagination: {
         total,
@@ -94,29 +166,14 @@ class CaseService {
       include: {
         savedBy: {
           where: { userId },
-          select: {
-            id: true,
-            lastReviewedAt: true,
-          },
-        },
-        relatedCases: {
-          include: {
-            relatedCase: {
-              select: {
-                id: true,
-                caseName: true,
-                citation: true,
-                facts: true,
-              },
-            },
-          },
+          select: { id: true, createdAt: true },
         },
       },
     });
 
-    if (!caseData) {
-      throw new NotFoundError('Case not found');
-    }
+    if (!caseData) throw new NotFoundError('Case not found');
+
+    const saved = caseData.savedBy[0] ?? null;
 
     return {
       id: caseData.id,
@@ -125,38 +182,24 @@ class CaseService {
       year: caseData.year,
       court: caseData.court,
       jurisdiction: caseData.jurisdiction,
-      frequency: caseData.frequency,
+      jurisdictionDisplay: JURISDICTION_DISPLAY[caseData.jurisdiction],
+      isFrequentlyTested: caseData.isFrequentlyTested,
+      frequencyLabel: frequencyLabel(caseData.isFrequentlyTested),
+      examRelevance: caseData.isFrequentlyTested ? 'High' : 'Rare',
       subjects: caseData.subjects,
       topics: caseData.topics,
-      facts: caseData.facts,
-      issue: caseData.issue,
-      ruling: caseData.ruling,
-      reasoning: caseData.reasoning,
-      significance: caseData.significance,
-      principleAndApplication: caseData.principleAndApplication,
-      examTip: caseData.examTip,
-      examRelevance: caseData.examRelevance,
+      fullSummary: caseData.fullSummary,
+      legalPrinciple: caseData.legalPrinciple,
+      keyQuote: caseData.keyQuote,
       appearsInPapers: caseData.appearsInPapers,
-      relatedCases: caseData.relatedCases.map((rc) => ({
-        id: rc.relatedCase.id,
-        caseName: rc.relatedCase.caseName,
-        citation: rc.relatedCase.citation,
-        facts: rc.relatedCase.facts,
-        relationshipType: rc.relationshipType,
-      })),
-      isSaved: caseData.savedBy.length > 0,
-      isReviewed: caseData.savedBy.length > 0 && caseData.savedBy[0]?.lastReviewedAt !== null,
+      isSaved: !!saved,
+      savedAt: saved?.createdAt ?? null,
     };
   }
 
   async getSavedCases(userId: string, subject?: string): Promise<SavedCasesListResponse> {
     const where: any = { userId };
-
-    if (subject) {
-      where.caseBrief = {
-        subjects: { has: subject },
-      };
-    }
+    if (subject) where.caseBrief = { subjects: { has: subject } };
 
     const savedCases = await prisma.savedCase.findMany({
       where,
@@ -169,10 +212,10 @@ class CaseService {
             year: true,
             court: true,
             jurisdiction: true,
-            frequency: true,
+            isFrequentlyTested: true,
             subjects: true,
             topics: true,
-            facts: true,
+            fullSummary: true,
           },
         },
       },
@@ -187,10 +230,11 @@ class CaseService {
         year: sc.caseBrief.year,
         court: sc.caseBrief.court,
         jurisdiction: sc.caseBrief.jurisdiction,
-        frequency: sc.caseBrief.frequency,
+        isFrequentlyTested: sc.caseBrief.isFrequentlyTested,
+        frequencyLabel: frequencyLabel(sc.caseBrief.isFrequentlyTested),
         subjects: sc.caseBrief.subjects,
         topics: sc.caseBrief.topics,
-        facts: sc.caseBrief.facts,
+        fullSummary: sc.caseBrief.fullSummary,
         savedAt: sc.createdAt,
         lastReviewedAt: sc.lastReviewedAt,
         isReviewed: sc.lastReviewedAt !== null,
@@ -200,147 +244,42 @@ class CaseService {
   }
 
   async toggleSaveCase(userId: string, caseId: string): Promise<SaveCaseResponse> {
-    // Check if case exists
     const caseExists = await prisma.caseBrief.findUnique({
       where: { id: caseId },
       select: { id: true },
     });
+    if (!caseExists) throw new NotFoundError('Case not found');
 
-    if (!caseExists) {
-      throw new NotFoundError('Case not found');
-    }
-
-    // Check if already saved
     const existing = await prisma.savedCase.findUnique({
-      where: {
-        userId_caseBriefId: {
-          userId,
-          caseBriefId: caseId,
-        },
-      },
+      where: { userId_caseBriefId: { userId, caseBriefId: caseId } },
     });
 
     if (existing) {
-      // Unsave
-      await prisma.savedCase.delete({
-        where: { id: existing.id },
-      });
-
-      return {
-        message: 'Case removed from saved',
-        isSaved: false,
-      };
-    } else {
-      // Save
-      await prisma.savedCase.create({
-        data: {
-          userId,
-          caseBriefId: caseId,
-        },
-      });
-
-      return {
-        message: 'Case saved for revision',
-        isSaved: true,
-      };
+      await prisma.savedCase.delete({ where: { id: existing.id } });
+      return { message: 'Case removed from saved', isSaved: false };
     }
+
+    await prisma.savedCase.create({ data: { userId, caseBriefId: caseId } });
+    return { message: 'Case saved for revision', isSaved: true };
   }
 
-  async getAllCases(
-    userId: string,
-    page: number = 1,
-    limit: number = 20
-  ): Promise<CaseSearchResponse> {
-    const skip = (page - 1) * limit;
-
-    const total = await prisma.caseBrief.count();
-
-    const cases = await prisma.caseBrief.findMany({
-      select: {
-        id: true,
-        caseName: true,
-        citation: true,
-        year: true,
-        court: true,
-        jurisdiction: true,
-        frequency: true,
-        subjects: true,
-        topics: true,
-        facts: true,
-        savedBy: {
-          where: { userId },
-          select: {
-            id: true,
-            lastReviewedAt: true,
-          },
-        },
-      },
-      orderBy: [{ frequency: 'asc' }, { year: 'desc' }],
-      skip,
-      take: limit,
-    });
-
-    return {
-      cases: cases.map((c) => ({
-        id: c.id,
-        caseName: c.caseName,
-        citation: c.citation,
-        year: c.year,
-        court: c.court,
-        jurisdiction: c.jurisdiction,
-        frequency: c.frequency,
-        subjects: c.subjects,
-        topics: c.topics,
-        facts: c.facts,
-        isSaved: c.savedBy.length > 0,
-        isReviewed: c.savedBy.length > 0 && c.savedBy[0]?.lastReviewedAt !== null,
-      })),
-      pagination: {
-        total,
-        page,
-        limit,
-        totalPages: Math.ceil(total / limit),
-      },
-    };
-  }
-
-  async toggleReview(
-    userId: string,
-    caseId: string
-  ): Promise<{ isReviewed: boolean; lastReviewedAt: Date | null }> {
-    // Check if case exists
+  async toggleReview(userId: string, caseId: string): Promise<ToggleReviewResponse> {
     const caseExists = await prisma.caseBrief.findUnique({
       where: { id: caseId },
       select: { id: true },
     });
+    if (!caseExists) throw new NotFoundError('Case not found');
 
-    if (!caseExists) {
-      throw new NotFoundError('Case not found');
-    }
-
-    // Check if case is saved
     const savedCase = await prisma.savedCase.findUnique({
-      where: {
-        userId_caseBriefId: {
-          userId,
-          caseBriefId: caseId,
-        },
-      },
+      where: { userId_caseBriefId: { userId, caseBriefId: caseId } },
     });
+    if (!savedCase) throw new NotFoundError('Save the case first before marking as reviewed');
 
-    if (!savedCase) {
-      throw new NotFoundError('Case not saved. Save the case first before marking as reviewed.');
-    }
-
-    // Toggle review status
-    const isCurrentlyReviewed = savedCase.lastReviewedAt !== null;
-    const newReviewedAt = isCurrentlyReviewed ? null : new Date();
+    const newReviewedAt = savedCase.lastReviewedAt !== null ? null : new Date();
 
     const updated = await prisma.savedCase.update({
       where: { id: savedCase.id },
-      data: {
-        lastReviewedAt: newReviewedAt,
-      },
+      data: { lastReviewedAt: newReviewedAt },
     });
 
     return {
@@ -349,6 +288,5 @@ class CaseService {
     };
   }
 }
-
 
 export default new CaseService();
