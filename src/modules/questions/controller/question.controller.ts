@@ -31,4 +31,3 @@ export const attemptMCQ = asyncHandler(async (req: Request, res: Response) => {
 
   sendSuccess(res, 'Answer submitted', result);
 });
-
