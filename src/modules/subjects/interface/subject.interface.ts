@@ -1,9 +1,8 @@
-// src/modules/content/interface/content.interface.ts
+// src/modules/content/interface/subject.interface.ts
 
 export interface SubjectDetail {
   id: string;
   name: string;
-  slug: string;
   description: string | null;
   color: string;
   progressColor: string;
@@ -16,7 +15,7 @@ export interface SubjectDetail {
   modules: Array<{
     id: string;
     name: string;
-    slug: string;
+    slug: string | null; // slug is nullable on Module model
     order: number;
     lessonsCount: number;
     completedLessons: number;
@@ -34,7 +33,6 @@ export interface SubjectDetail {
 export interface SubjectWithProgress {
   id: string;
   name: string;
-  slug: string;
   description: string | null;
   icon: string | null;
   color: string;
@@ -47,4 +45,3 @@ export interface SubjectWithProgress {
     lastAccessedAt: Date | null;
   };
 }
-

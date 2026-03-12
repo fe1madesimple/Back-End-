@@ -126,7 +126,7 @@ export class SubjectService {
             lastAccessedAt: null,
           },
       modules: subject.modules.map((module) => ({
-        id: module.id,
+        id: module.id,    
         name: module.name,
         slug: module.slug,
         order: module.order,
