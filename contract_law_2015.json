@@ -1,0 +1,86 @@
+{
+  "subject": "Contract Law",
+  "year": 2015,
+  "questions": [
+    {
+      "examType": "Problem",
+      "description": "On Monday, Paul, a jewellery shop owner places a necklace in his shop… Breach Of Contract.",
+      "text": "On Monday, Paul, a jewellery shop owner places a necklace in his shop window with the following sign: 'classic 1930's gold necklace, €1500 or nearest offer' On Tuesday, Joan sees the necklace in the front window and goes into the shop saying to Paul 'I will give you €900 for it'. Paul replies 'I cannot go that low but I will sell it to you for €1200.00'. Joan is not sure if she is willing to pay this much so she asks Paul if she can have until Saturday to decide. Paul agrees not to sell the necklace to anyone else before Saturday but leaves the necklace and sign in the window. On Wednesday, Joan decides that she is willing to pay €1,200 and phones Paul at his jewellery shop. Since there is no reply, Joan leaves a message on Paul's answering machine, saying that she will buy the necklace for €1,200. Unfortunately although the machine records the message, Paul's cleaner accidentally deletes all the messages before Paul hears them. On Friday morning, Joan's friend Sharon goes into Paul's jewellery shop and offers Paul €1,400 for the necklace. Delighted by this offer and entirely forgetting about Joan, Paul immediately accepts. However, when Joan and Sharon meet that afternoon, Sharon shows Joan her new necklace. Joan is furious as she believes she has a contract with Paul not to sell to anyone else as well as a fully formed contract of sale for the necklace itself. She immediately goes down to Pauls shop to complain and threatens to sue Paul for breach of contract. Advise Paul."
+    },
+    {
+      "examType": "Problem",
+      "description": "Sam is a keen follower of rugby and a Munster supporter. Advise Sam.",
+      "text": "Sam is a keen follower of rugby and a Munster supporter. He is the owner of a rugby ball signed by the Munster team that beat the All-Blacks in 1978. Having recently fallen on hard times, he decides to sell the ball and advertises it in the Rugby Times. Several weeks later, Sam receives a letter containing an offer to buy the ball for €5,000. It is sent be a person claiming to be Nicola Ward, a descendant of one of the signatories of the ball. Nicola requests that the ball be sent before payment so that the signature son it can be verified. Sam verifies with the Irish Rugby Union that the descendant of one of the 1978 team is indeed named Nicola Ward. He sends the ball to the address given in the letter with an invoice addressed to Nicola Ward for €5,000. Several days, later he receives a cheque for €5,000 signed by Nicola Ward but the bank refuses to honour the cheque. When he tries to phone Nicola the telephone line has been disconnected and further enquiries reveal no one named Nicola Ward at the address given. The writer of the letter is in fact a person named Naomi who makes the practice of cheating people out of sporting memorabilia and uses several addresses and contacts as a means of carrying out her frauds. A few days later Naomi sells the ball to Conor, a collector of sporting memorabilia for €4,000 paid in cash as requested. Sam has managed to trace the ball to Conor and wishes to recover the ball from him. Advise Sam."
+    },
+    {
+      "examType": "Problem",
+      "description": "Beta Ltd provides computer maintenance and repair services to small… Damages, Company.",
+      "text": "Beta Ltd provides computer maintenance and repair services to small businesses in Dublin. In April 2014, Beta Ltd enters into a contract with Accounts Ltd, a small accountancy firm whereby Beta Ltd agrees to service and repair all the computers used by Accounts Ltd for a period of 2 years from April 2014 for a fixed price per month. Term 6 of the contract states: 'Term 6: Beta Ltd will service all the computers at the premises of Accounts Ltd every Tuesday from April 2014 to March 2016 and carry out any necessary repairs or maintenance. This obligation will not apply on any public holidays that fall on a Tuesday for the period stated'. From April 2014 to January 2015, Beta Ltd provide this service as agreed and Accounts Ltd is happy with the performance. However in February 2015, Beta Ltd's computer engineers fail to show up without giving any reason on two consecutive Tuesdays. Two computers break down during this period and it is not possible to use complex accountancy software on them for over a week. Accounts Ltd estimates that it lost approximately €2,000 due to this. In addition, Accounts Ltd has recently learned that another computer maintenance and repair service company, Alpha Ltd, could supply the same service as Beta Ltd but at a lower cost. Accounts Ltd wants to hire Alpha Ltd instead and wants to know if it can rely on the failure to perform in February 2015 to validly terminate its contract with Beta Ltd. Accounts Ltd also wants to claim damages for the losses it suffered in February 2015. Advise Accounts Ltd."
+    },
+    {
+      "examType": "Problem",
+      "description": "Freezer Ltd is a transport company that specialises in the transport of… Negligenc, Damages.",
+      "text": "Freezer Ltd is a transport company that specialises in the transport of frozen and refrigerated goods across Ireland. Kate, the manager of Medical Drugs Galway Ltd (MDG Ltd) regularly hires Freezer Ltd to transport pharmaceutical drugs from MDG Ltd's warehouse in Galway to hospitals and pharmacies across the country. When she needs a batch of drugs transported, Kate simply phones Ross, the manager of Freezer Ltd and he sends her over a refrigerated lorry. On three or four occasions in the past Kate has emphasised to Ross the importance of keeping the pharmaceutical drugs at a temperature of no higher than 2 degrees Celsius. When the lorries arrive at the warehouse to collect the drugs, Kate fills in a form headed 'delivery details' specifying the destination and contents of the delivery and signing it at the bottom. In January 2014, Kate phones Ross to send over a lorry to transport drugs from the warehouse to Cork and signs the 'delivery details' form as per usual. However, on this occasion Freezer Ltd's driver fails to set up the refrigeration system correctly and the drugs are stored at a temperature of 10 degrees Celsius. As a result the drugs are all damaged and have to be thrown away, causing MDG Ltd a loss of €100,000. However, when Kate complains to Ross he points to the 'delivery details' form which at the bottom in capital letters says: 'ALL DELIVERIES ARE SUBJECT TO FREEZER LTD'S TERMS AND CONDITIONS WHICH CAN BE FOUND ON OUR WEBSITE'. Ross tells Kate that Term 3 of the terms and conditions of transport to the website states: 'Freezer Ltd is not responsible in tort or contract for any damage caused to any products transported owing to any technical failure in the refrigeration system whether caused by negligence or otherwise'. Kate wishes to sue Freezer Ltd for damages for the loss suffered and wants to know about the exclusion clause. Advise Kate."
+    },
+    {
+      "examType": "Essay",
+      "description": "Discuss the need to reform the Doctrine of privity in Ireland.",
+      "text": "Discuss the need to reform the Doctrine of privity in Ireland."
+    },
+    {
+      "examType": "Essay",
+      "description": "Discuss the relationship between consideration and promissory estoppel.",
+      "text": "Discuss the relationship between consideration and promissory estoppel."
+    },
+    {
+      "examType": "Essay",
+      "description": "Answer (a) and (b) (a) Discuss the extent to which it is possible to recover damages to protect the injured party's…",
+      "text": "Answer (a) and (b) (a) Discuss the extent to which it is possible to recover damages to protect the injured party's performance interest. [And]{.underline} (b) Discuss the extent to which it is possible to recover damages for the stress and inconvenience caused by breach of contract."
+    },
+    {
+      "examType": "Essay",
+      "description": "Answer (a) OR (b) (a) Outline the duty of utmost good faith in Irish insurance contract law [OR]{.underline} (b)…",
+      "text": "Answer (a) OR (b) (a) Outline the duty of utmost good faith in Irish insurance contract law [OR]{.underline} (b) Outline the circumstances in which the plea of non est factum is available."
+    },
+    {
+      "examType": "Essay",
+      "description": "In January 2015, Alice commissioned a painting of her pedigree dog Maggie from Pet Portraits Ltd (PP Ltd) for a fee of…",
+      "text": "In January 2015, Alice commissioned a painting of her pedigree dog Maggie from Pet Portraits Ltd (PP Ltd) for a fee of €3000.00. The commissioned painting was to be produced from sketches made during the three one-hour observations of Maggie the dog and Alice was to have full ownership rights in the finished product. Alice also agreed to allow PP Ltd to use (free of charge) a digital copy of the image in its promotional material. After Maggie's three observation sessions, PP Ltd wrote to all its customers indicating that it was in financial difficulties and would be unable to complete the projects at the fee agreed. Alice contacted PP Ltd and offered an extra €1,000 if the portrait was completed. PP Ltd accepted the promise of additional payment and completed the project. Alice was pleased with the final portrait and paid €4,000 on delivery. However, when Maggie won the Woofts dog show in March 2015, Alice withdrew her permission to use the image. PPP Ltd argued that she was unable to do so as they had relied on her promise in spending €5,000 producing promotional material for their business with Maggie's image on it, within the terms of the licence. Alice is also demanding the return of the extra €1,000 paid as she claims that she received 'nothing extra' in return for this money."
+    },
+    {
+      "examType": "Problem",
+      "description": "Finn books Joes theatre to host a concert for his wine club at a total… Frustrat, Company.",
+      "text": "Finn books Joes theatre to host a concert for his wine club at a total cost of €4,000. Finn informs Joe of his plans to seat 500 people for the event and that he intends to provide food and wine to the entire audience. Joe accepts a €1,000 deposit and they agree that the remaining €3,000 will be paid on the morning of the concert. Two days before the concert, Finn's application for a wine licence for the event is turned down by the District Court on the grounds that Finn had not completed all the relevant paper work to accompany the application. Finn tells Joe that their contract is frustrated and that he is treating the contract as at an end. Joe disputes this and argues that the contract is valid but that he is treating Finn's statement as a repudiatory breach. Joe has discovered that Finn is delighted with the District Courts outcome as he was having difficulties getting wine for the event as his suppliers had declined to supply Finn on credit due to payment arrears. Advise Joe."
+    },
+    {
+      "examType": "Problem",
+      "description": "Talbot Ltd is a small accountancy business in Dublin which has recently… Company, Director.",
+      "text": "Talbot Ltd is a small accountancy business in Dublin which has recently expanded and increased its staff. Its managing director, Ciara, decides that the Company needs to purchase ten computers for the new employees. She visits Mega Computers Ltd and explains that the computers must be suitable to allow employees to use complex accountancy software programmes. The salesman, Max, tells Ciara that the 'IRL 2015' computer will be suitable for complex accountancy software and that it is 'speedy, reliable and easy to use'. Convinced by this, Ciara immediately orders 10 'IRL 2015' computers. When the computers are delivered, Ciara is given a document headed 'standard business purchase from' which she signs and returns to the delivery man. Unfortunately, when the employers at Talbot Ltd begin to sue their computers, it transpires that the new computers are all very slow as the computer processors are all underpowered. As a result, employees cannot efficiently use the accountancy software on them. In addition, 3 out of 10 of the computers have blurry screens and cannot be used at all. Ciara is furious and wishes to return the computers and get her money back. However, when she complains to Max, he points to Mega Computers standard business form which states: 'All sales are final and all statutory warranties and conditions are excluded. The seller is not liable for any loss caused by any defect in any product whatsoever'. Advise Ciara."
+    },
+    {
+      "examType": "Problem",
+      "description": "Ben is a plumber but he decided to change career and follow his lifelong…",
+      "text": "Ben is a plumber but he decided to change career and follow his lifelong dream of going to university to study law. To find his studies, he offers to sell his van and its contents to his friend Paula who is planning on setting up her own plumbing business. Paula agrees to buy the van and its contents for €5,000. However, one week after delivering the van to Paula, Ben realises he accidentally left a small box of antique jewellery in the van. This box of jewellery is worth approximately €3,000 he immediately phones Paula to claim it back. However, Paula refuses to hand back the jewellery saying that Ben agreed to sell the 'van and its contents' including the antique jewellery. Ben says that Paula must have realised that he made a mistake and did not intend to include the antique box with the van. Two weeks later, Paula's apprentice Paddy is injured when the van veers off the road and crashes into a lamp post. An accident report confirms that the accident was caused by a serious defect in the vans steering. Advise Ben on his legal situation vis-á-vis Paula and on his possible liability to Paddy under Irish Statute law."
+    },
+    {
+      "examType": "Essay",
+      "description": "Answer (a) [AND]{.underline} (b) (a) Discuss why a contracting party might bring an action for misrepresentation rather…",
+      "text": "Answer (a) [AND]{.underline} (b) (a) Discuss why a contracting party might bring an action for misrepresentation rather than an action for breach of contract. [AND]{.underline} (b) Outline how the remedies for misrepresentation differ to the remedies for breach of contract."
+    },
+    {
+      "examType": "Essay",
+      "description": "Answer (a) [OR]{.underline} (b) (a) Discuss how the Irish courts would determine when an acceptance made by e-mail was…",
+      "text": "Answer (a) [OR]{.underline} (b) (a) Discuss how the Irish courts would determine when an acceptance made by e-mail was effective in creating a binding contract [OR]{.underline} (b) Explain how the rules on offer and acceptance apply in the context of an auction."
+    },
+    {
+      "examType": "Essay",
+      "description": "'The fundamental problem created by the decision in Attorney General v Blake [2001] 1 AC 268, is not the result in that…",
+      "text": "'The fundamental problem created by the decision in Attorney General v Blake [2001] 1 AC 268, is not the result in that case but in deciding how far the principle of gains-based damages should extend into ordinary commercial contracts' Discuss the extent to which the Irish Courts should apply the principle in Attorney General v Blake [2001] 1 AC 268 to ordinary commercial contracts."
+    },
+    {
+      "examType": "Essay",
+      "description": "Discuss the need to reform the rules on minors' capacity to contract.",
+      "text": "Discuss the need to reform the rules on minors' capacity to contract."
+    }
+  ]
+}
