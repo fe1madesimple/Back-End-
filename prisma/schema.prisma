@@ -828,6 +828,28 @@ model EssayAttempt {
   @@map("essay_attempts")
 }
 
+model PracticeSession {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  subject  String
+  year     Int
+  questionIds String[] // the 8 questions shown
+
+  startedAt        DateTime  @default(now())
+  submittedAt      DateTime?
+  totalTimeSeconds Int?      // filled on submit
+
+  isCompleted Boolean @default(false)
+
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([userId, createdAt])
+  @@map("practice_sessions")
+}
+
 model QuestionSet {
   id               String   @id @default(cuid())
   parentQuestionId String
