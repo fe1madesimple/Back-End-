@@ -12,40 +12,147 @@ import {
 } from '../interfaces/progress.interface';
 import { NotFoundError } from '@/shared/utils';
 
-const MARCH_EXAM_MONTH = 3; // March
-const MARCH_EXAM_DAY = 1; // Default to 1st
-const MARCH_EXTRA_DAYS = 0; // Add days when actual date announced
+const MARCH_EXAM_MONTH = 3;
+const MARCH_EXAM_DAY = 1;
+const MARCH_EXTRA_DAYS = 0;
 
-const OCTOBER_EXAM_MONTH = 10; // October
-const OCTOBER_EXAM_DAY = 1; // Default to 1st
+const OCTOBER_EXAM_MONTH = 10;
+const OCTOBER_EXAM_DAY = 1;
 const OCTOBER_EXTRA_DAYS = 0;
 
-function getNextExamDate(): Date {
-  const now = new Date();
-  const currentYear = now.getFullYear();
-  // const currentMonth = now.getMonth() + 1;
+// ── Exam date helpers ────────────────────────────────────────
 
-  // March exam
-  const marchExam = new Date(currentYear, MARCH_EXAM_MONTH - 1, MARCH_EXAM_DAY);
-  marchExam.setDate(marchExam.getDate() + MARCH_EXTRA_DAYS);
-
-  // October exam
-  const octoberExam = new Date(currentYear, OCTOBER_EXAM_MONTH - 1, OCTOBER_EXAM_DAY);
-  octoberExam.setDate(octoberExam.getDate() + OCTOBER_EXTRA_DAYS);
-
-  // Next year's March exam
-  const nextMarchExam = new Date(currentYear + 1, MARCH_EXAM_MONTH - 1, MARCH_EXAM_DAY);
-  nextMarchExam.setDate(nextMarchExam.getDate() + MARCH_EXTRA_DAYS);
-
-  // Determine next exam
-  if (now < marchExam) {
-    return marchExam; // Before March → Next is March
-  } else if (now < octoberExam) {
-    return octoberExam; // After March, before October → Next is October
-  } else {
-    return nextMarchExam; // After October → Next is March next year
-  }
+/**
+ * Builds an exam Date for a given month/day/year with the configured offset.
+ */
+function buildExamDate(year: number, month: number, day: number, extraDays: number): Date {
+  const d = new Date(year, month - 1, day);
+  d.setDate(d.getDate() + extraDays);
+  return d;
 }
+
+/**
+ * Returns all future exam dates starting from the current or next year when needed.
+ * Always returns at least 2 upcoming options.
+ */
+function getUpcomingExamDates(fromDate: Date = new Date()): Date[] {
+  const year = fromDate.getFullYear();
+  const candidates: Date[] = [];
+
+  for (let y = year; y <= year + 1; y++) {
+    candidates.push(buildExamDate(y, MARCH_EXAM_MONTH, MARCH_EXAM_DAY, MARCH_EXTRA_DAYS));
+    candidates.push(buildExamDate(y, OCTOBER_EXAM_MONTH, OCTOBER_EXAM_DAY, OCTOBER_EXTRA_DAYS));
+  }
+
+  // Return only future dates (strictly after fromDate midnight)
+  const today = new Date(fromDate);
+  today.setHours(0, 0, 0, 0);
+
+  return candidates.filter((d) => d >= today);
+}
+
+/**
+ * Next exam date from today — used when user has no targetExamDate set.
+ */
+function getNextExamDate(): Date {
+  return getUpcomingExamDates()[0]!;
+}
+
+/**
+ * Format a Date as "Month YYYY" e.g. "October 2026"
+ */
+function formatExamMonthYear(date: Date): string {
+  return date.toLocaleDateString('en-IE', { month: 'long', year: 'numeric' });
+}
+
+// ── ExamCountdown interface ──────────────────────────────────
+
+export interface ExamCountdownResult {
+  daysUntilExam: number;
+  examDate: string; // ISO date string YYYY-MM-DD
+  missed: boolean; // true when targetExamDate is in the past
+  missedMessage: string | null; // "You missed your March 2026 exam. Choose your next target."
+  nextOptions: ExamOption[] | null; // shown in the reschedule popup
+}
+
+export interface ExamOption {
+  label: string; // "October 2026"
+  examDate: string; // YYYY-MM-DD — send this back to updateProfile
+  isPast: boolean; // true for the month that just passed (blurred in UI)
+}
+
+// ── buildExamCountdown ───────────────────────────────────────
+// Core logic. Called from getSimpleDashboard only.
+
+function buildExamCountdown(targetExamDate: Date | null | undefined): ExamCountdownResult {
+  const now = new Date();
+  const todayMidnight = new Date(now);
+  todayMidnight.setHours(0, 0, 0, 0);
+
+  // If no target date set — use the next system exam date, never missed
+  if (!targetExamDate) {
+    const next = getNextExamDate();
+    const daysUntilExam = Math.ceil((next.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
+    return {
+      daysUntilExam,
+      examDate: next.toISOString().split('T')[0]!,
+      missed: false,
+      missedMessage: null,
+      nextOptions: null,
+    };
+  }
+
+  const target = new Date(targetExamDate);
+  target.setHours(0, 0, 0, 0);
+
+  // Not yet missed — normal countdown
+  if (target >= todayMidnight) {
+    const daysUntilExam = Math.ceil((target.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
+    return {
+      daysUntilExam,
+      examDate: target.toISOString().split('T')[0]!,
+      missed: false,
+      missedMessage: null,
+      nextOptions: null,
+    };
+  }
+
+  // ── Missed state ─────────────────────────────────────────
+  // targetExamDate is in the past. Stop at 0, compute next options.
+
+  const missedLabel = formatExamMonthYear(target);
+  const missedMessage = `You missed your ${missedLabel} exam. Choose your next target.`;
+
+  // The month that just passed should be shown as blurred (isPast: true)
+  // Then show the next 2 future exam dates
+  const upcomingDates = getUpcomingExamDates(now);
+
+  // We want to show:
+  // - The exam that was missed (blurred, isPast: true) — for UI context
+  // - The 2 next upcoming ones
+  const nextOptions: ExamOption[] = [
+    {
+      label: missedLabel,
+      examDate: target.toISOString().split('T')[0]!,
+      isPast: true,
+    },
+    ...upcomingDates.slice(0, 2).map((d) => ({
+      label: formatExamMonthYear(d),
+      examDate: d.toISOString().split('T')[0]!,
+      isPast: false,
+    })),
+  ];
+
+  return {
+    daysUntilExam: 0,
+    examDate: target.toISOString().split('T')[0]!,
+    missed: true,
+    missedMessage,
+    nextOptions,
+  };
+}
+
+// ────────────────────────────────────────────────────────────
 
 class ProgressService {
   protected async getWeeklyStats(userId: string) {
@@ -69,7 +176,6 @@ class ProgressService {
       },
     });
 
-    // Calculate current streak
     const allSessions = await prisma.dailyStudySession.findMany({
       where: { userId, todayTotalSeconds: { gt: 0 } },
       select: { date: true },
@@ -98,6 +204,7 @@ class ProgressService {
       essaysCompleted,
     };
   }
+
   async getDashboardStats(userId: string): Promise<DashboardStatsResponse> {
     const now = new Date();
     const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
@@ -105,7 +212,6 @@ class ProgressService {
 
     weekStart.setDate(weekStart.getDate() - 7);
 
-    // Get user for exam date and goals
     const user = await prisma.user.findUnique({
       where: { id: userId },
       select: {
@@ -114,7 +220,6 @@ class ProgressService {
       },
     });
 
-    // Overall progress across all subjects
     const subjectProgress = await prisma.userSubjectProgress.findMany({
       where: { userId },
       include: {
@@ -131,7 +236,6 @@ class ProgressService {
         ? subjectProgress.reduce((sum, s) => sum + s.progressPercent, 0) / totalSubjects
         : 0;
 
-    // Today's activity
     const todayLessons = await prisma.userLessonProgress.count({
       where: {
         userId,
@@ -151,11 +255,9 @@ class ProgressService {
     });
 
     const todayTime = subjectProgress.reduce((sum, s) => {
-      // Approximate today's time (this is simplified - you may want to track this separately)
-      return sum + s.totalTimeSeconds * 0.1; // Rough estimate
+      return sum + s.totalTimeSeconds * 0.1;
     }, 0);
 
-    // Week activity
     const weekLessons = await prisma.userLessonProgress.count({
       where: {
         userId,
@@ -190,7 +292,6 @@ class ProgressService {
           ) / weekQuestions.length
         : 0;
 
-    // Recent activity (last 5 activities)
     const recentLessons = await prisma.userLessonProgress.findMany({
       where: { userId, completedAt: { not: null } },
       include: {
@@ -217,7 +318,6 @@ class ProgressService {
       timestamp: activity.completedAt!,
     }));
 
-    // Upcoming goals
     const daysUntilExam = user?.targetExamDate
       ? Math.ceil((user.targetExamDate.getTime() - now.getTime()) / (1000 * 60 * 60 * 24))
       : null;
@@ -256,7 +356,6 @@ class ProgressService {
     userId: string,
     subjectId: string
   ): Promise<SubjectProgressDetailResponse> {
-    // Get subject with progress
     const subjectProgress = await prisma.userSubjectProgress.findUnique({
       where: {
         userId_subjectId: { userId, subjectId },
@@ -275,7 +374,6 @@ class ProgressService {
       throw new NotFoundError('Subject progress not found');
     }
 
-    // Get all modules with progress
     const modules = await prisma.module.findMany({
       where: {
         subjectId,
@@ -303,13 +401,11 @@ class ProgressService {
       orderBy: { order: 'asc' },
     });
 
-    // Calculate module stats
     const moduleStats = modules.map((module) => {
       const progress = module.userProgress[0];
       const totalLessons = module.lessons.length;
       const completedLessons = progress?.completedLessons || 0;
 
-      // Calculate average quiz score for this module
       const allAttempts = module.questions.flatMap((q) => q.attempts);
       const totalPoints = module.questions.reduce((sum, q) => sum + q.points, 0);
       const earnedPoints = allAttempts.reduce((sum, a) => sum + a.pointsEarned, 0);
@@ -326,7 +422,6 @@ class ProgressService {
       };
     });
 
-    // Overall performance stats
     const totalLessons = modules.reduce((sum, m) => sum + m.lessons.length, 0);
     const totalLessonsCompleted = moduleStats.reduce((sum, m) => sum + m.completedLessons, 0);
 
@@ -367,12 +462,10 @@ class ProgressService {
           ) / allQuizAttempts.length
         : 0;
 
-    // Get week start
     const now = new Date();
     const weekStart = new Date(now);
     weekStart.setDate(weekStart.getDate() - 7);
 
-    // Time spent this week (approximate from lesson progress updates)
     const weekLessons = await prisma.userLessonProgress.findMany({
       where: {
         userId,
@@ -394,7 +487,6 @@ class ProgressService {
 
     const completionRate = totalLessons > 0 ? (totalLessonsCompleted / totalLessons) * 100 : 0;
 
-    // Recent lessons completed
     const recentLessons = await prisma.userLessonProgress.findMany({
       where: {
         userId,
@@ -446,7 +538,6 @@ class ProgressService {
   }
 
   async getStudyStreak(userId: string): Promise<StudyStreakResponse> {
-    // Get user's daily goal
     const user = await prisma.user.findUnique({
       where: { id: userId },
       select: { dailyStudyGoal: true },
@@ -455,7 +546,6 @@ class ProgressService {
     const dailyGoalHours = user?.dailyStudyGoal || 2;
     const dailyGoalSeconds = dailyGoalHours * 3600;
 
-    // Get all lesson progress updates (proxy for study sessions)
     const allProgress = await prisma.userLessonProgress.findMany({
       where: {
         userId,
@@ -468,7 +558,6 @@ class ProgressService {
       orderBy: { updatedAt: 'asc' },
     });
 
-    // Group by date
     const dailyActivity = new Map<string, number>();
 
     allProgress.forEach((progress) => {
@@ -479,14 +568,12 @@ class ProgressService {
       }
     });
 
-    // Calculate current streak
     let currentStreak = 0;
     let longestStreak = 0;
     let tempStreak = 0;
     const today = new Date();
     const dates = Array.from(dailyActivity.keys()).sort();
 
-    // Calculate streaks
     for (let i = dates.length - 1; i >= 0; i--) {
       const dateStr = dates[i];
       if (!dateStr) continue;
@@ -509,14 +596,12 @@ class ProgressService {
       longestStreak = tempStreak;
     }
 
-    // Today's progress
     const todayKey = today.toISOString().split('T')[0];
     const todaySeconds = todayKey ? dailyActivity.get(todayKey) || 0 : 0;
     const todayMinutes = Math.floor(todaySeconds / 60);
     const todayProgress = Math.min(100, Math.round((todaySeconds / dailyGoalSeconds) * 100));
     const goalMet = todaySeconds >= dailyGoalSeconds;
 
-    // Last 7 days activity
     const weekActivity = [];
     for (let i = 6; i >= 0; i--) {
       const date = new Date(today);
@@ -534,7 +619,6 @@ class ProgressService {
       }
     }
 
-    // Last 30 days calendar
     const monthCalendar = [];
     for (let i = 29; i >= 0; i--) {
       const date = new Date(today);
@@ -552,7 +636,6 @@ class ProgressService {
       }
     }
 
-    // Streak history (simplified - find continuous streaks)
     const streakHistory: {
       startDate: Date;
       endDate: Date;
@@ -581,7 +664,6 @@ class ProgressService {
           streakLength++;
         } else {
           if (streakLength >= 3) {
-            // Only record streaks of 3+ days
             streakHistory.push({
               startDate: streakStart,
               endDate: date,
@@ -606,7 +688,7 @@ class ProgressService {
       },
       weekActivity,
       monthCalendar,
-      streakHistory: streakHistory.slice(-5), // Last 5 streaks
+      streakHistory: streakHistory.slice(-5),
     };
   }
 
@@ -619,7 +701,6 @@ class ProgressService {
     const weekEnd = new Date(today);
     weekEnd.setHours(23, 59, 59, 999);
 
-    // Get user's daily goal
     const user = await prisma.user.findUnique({
       where: { id: userId },
       select: { dailyStudyGoal: true },
@@ -627,7 +708,6 @@ class ProgressService {
 
     const dailyGoalSeconds = (user?.dailyStudyGoal || 2) * 3600;
 
-    // Get all lesson progress for the week
     const weekLessons = await prisma.userLessonProgress.findMany({
       where: {
         userId,
@@ -651,7 +731,6 @@ class ProgressService {
       },
     });
 
-    // Get completed lessons this week
     const completedLessons = await prisma.userLessonProgress.count({
       where: {
         userId,
@@ -663,7 +742,6 @@ class ProgressService {
       },
     });
 
-    // Get questions attempted this week
     const weekQuestions = await prisma.questionAttempt.findMany({
       where: {
         userId,
@@ -681,7 +759,6 @@ class ProgressService {
       },
     });
 
-    // Calculate average quiz score
     const averageQuizScore =
       weekQuestions.length > 0
         ? weekQuestions.reduce(
@@ -690,7 +767,6 @@ class ProgressService {
           ) / weekQuestions.length
         : 0;
 
-    // Group data by day
     const dailyData = new Map<
       string,
       {
@@ -701,7 +777,6 @@ class ProgressService {
       }
     >();
 
-    // Process lesson data
     weekLessons.forEach((lesson) => {
       const dateKey = lesson.updatedAt.toISOString().split('T')[0];
       if (!dateKey) return;
@@ -724,7 +799,6 @@ class ProgressService {
       dailyData.set(dateKey, current);
     });
 
-    // Process question data
     weekQuestions.forEach((attempt) => {
       const dateKey = attempt.createdAt.toISOString().split('T')[0];
       if (!dateKey) return;
@@ -742,7 +816,6 @@ class ProgressService {
       dailyData.set(dateKey, current);
     });
 
-    // Build daily breakdown for last 7 days
     const dailyBreakdown = [];
     let daysStudied = 0;
     let dailyGoalsMet = 0;
@@ -782,7 +855,6 @@ class ProgressService {
       });
     }
 
-    // Calculate top subjects
     const subjectData = new Map<string, { timeSeconds: number; lessonsCompleted: number }>();
 
     weekLessons.forEach((lesson) => {
@@ -806,7 +878,6 @@ class ProgressService {
       .sort((a, b) => b.timeSeconds - a.timeSeconds)
       .slice(0, 3);
 
-    // Generate achievements
     const achievements: { type: string; title: string; description: string }[] = [];
 
     if (daysStudied === 7) {
@@ -841,7 +912,6 @@ class ProgressService {
       });
     }
 
-    // Calculate total time
     const totalTimeSeconds = Array.from(dailyData.values()).reduce(
       (sum, day) => sum + day.timeSeconds,
       0
@@ -867,7 +937,6 @@ class ProgressService {
   }
 
   async getModuleStats(userId: string, moduleId: string): Promise<ModuleStatsResponse> {
-    // Get module with progress
     const module = await prisma.module.findUnique({
       where: { id: moduleId, isPublished: true },
       include: {
@@ -908,7 +977,6 @@ class ProgressService {
 
     const moduleProgress = module.userProgress[0];
 
-    // Lesson statistics
     const totalLessons = module.lessons.length;
     const completedLessons = module.lessons.filter((l) => l.userProgress[0]?.isCompleted).length;
 
@@ -920,7 +988,6 @@ class ProgressService {
     const averageTimePerLesson =
       completedLessons > 0 ? Math.floor(totalTimeSpent / completedLessons) : 0;
 
-    // Quiz statistics
     const totalQuestions = module.questions.length;
     const attemptedQuestions = module.questions.filter((q) => q.attempts.length > 0).length;
 
@@ -935,11 +1002,10 @@ class ProgressService {
     const bestScore = scores.length > 0 ? Math.max(...scores) : 0;
     const worstScore = scores.length > 0 ? Math.min(...scores) : 0;
 
-    // Performance analysis - strong/weak topics
     const topicPerformance = new Map<string, { correct: number; total: number }>();
 
     module.questions.forEach((question) => {
-      const topic = question.text.split(' ').slice(0, 5).join(' '); // Simplified topic extraction
+      const topic = question.text.split(' ').slice(0, 5).join(' ');
 
       question.attempts.forEach((attempt) => {
         const current = topicPerformance.get(topic) || { correct: 0, total: 0 };
@@ -957,7 +1023,7 @@ class ProgressService {
         score: data.total > 0 ? (data.correct / data.total) * 100 : 0,
         attempts: data.total,
       }))
-      .filter((t) => t.attempts >= 2); // Only topics with 2+ attempts
+      .filter((t) => t.attempts >= 2);
 
     const strongTopics = topicScores
       .filter((t) => t.score >= 75)
@@ -977,7 +1043,6 @@ class ProgressService {
         score: Math.round(t.score * 10) / 10,
       }));
 
-    // Recent attempts (last 10)
     const recentAttempts = allAttempts.slice(0, 10).map((attempt) => ({
       questionText: attempt.question.text.slice(0, 80) + '...',
       isCorrect: attempt.isCorrect ?? false,
@@ -985,7 +1050,6 @@ class ProgressService {
       timestamp: attempt.createdAt,
     }));
 
-    // Generate recommendations
     const recommendations: { type: string; message: string }[] = [];
 
     if (completedLessons < totalLessons) {
@@ -1064,8 +1128,8 @@ class ProgressService {
         averageQuizScore: true,
         highestQuizScore: true,
         lowestQuizScore: true,
-        podcastRecommendations: true, // ← NEW
-        focusSubjects: true, // ← NEW
+        podcastRecommendations: true,
+        focusSubjects: true,
       },
     });
 
@@ -1085,15 +1149,10 @@ class ProgressService {
       !user?.hasCompletedOnboarding ||
       (hasAnyLessonProgress === 0 && hasAnyQuizAttempt === 0 && hasAnyPodcastProgress === 0);
 
-    const examDate = user?.targetExamDate || getNextExamDate();
-    const daysUntilExam = Math.ceil(
-      (new Date(examDate).getTime() - Date.now()) / (1000 * 60 * 60 * 24)
-    );
-
-    const examCountdown = {
-      daysUntilExam,
-      examDate: typeof examDate === 'string' ? examDate : examDate.toISOString().split('T')[0]!,
-    };
+    // ── FIXED: examCountdown now uses buildExamCountdown ──────
+    // Never goes negative. Missed state + reschedule options returned.
+    const examCountdown = buildExamCountdown(user?.targetExamDate);
+    // ─────────────────────────────────────────────────────────
 
     const today = new Date().toISOString().split('T')[0]!;
 
@@ -1114,15 +1173,14 @@ class ProgressService {
     const todayHours = todaySeconds / 3600;
     const targetHours = user?.dailyStudyGoal || 3;
 
-    // Generate last 7 days starting from most recent Sunday
     const mostRecentSunday = new Date();
-    const currentDay = mostRecentSunday.getDay(); // 0 = Sunday
+    const currentDay = mostRecentSunday.getDay();
     mostRecentSunday.setDate(mostRecentSunday.getDate() - currentDay);
     mostRecentSunday.setHours(0, 0, 0, 0);
 
     const last7Days = Array.from({ length: 7 }, (_, i) => {
       const date = new Date(mostRecentSunday);
-      date.setDate(date.getDate() + i); // Add i days from Sunday
+      date.setDate(date.getDate() + i);
       return date;
     });
 
@@ -1163,7 +1221,6 @@ class ProgressService {
     console.log('\n🔥 ALL SESSIONS WITH ACTIVITY:');
     allSessions.forEach((s) => console.log(`  ${s.date}`));
 
-    // Calculate CURRENT streak (backwards from today)
     let currentStreak = 0;
     let expectedDate = new Date();
     expectedDate.setHours(0, 0, 0, 0);
@@ -1190,7 +1247,6 @@ class ProgressService {
       }
     }
 
-    // Calculate LONGEST streak (all time)
     const allSessionsAsc = await prisma.dailyStudySession.findMany({
       where: { userId, todayTotalSeconds: { gt: 0 } },
       select: { date: true },
@@ -1271,13 +1327,9 @@ class ProgressService {
         }
       : null;
 
-    // ============================================
-    // ← NEW PODCAST RECOMMENDATION LOGIC
-    // ============================================
     let recommendedPodcasts;
 
     if (user?.podcastRecommendations && user.focusSubjects.length > 0) {
-      // User wants recommendations based on focus subjects
       const relevantPodcasts = await prisma.podcast.findMany({
         where: {
           isPublished: true,
@@ -1301,7 +1353,6 @@ class ProgressService {
         thumbnail: p.thumbnail || '',
       }));
     } else {
-      // Random podcasts (default behavior)
       const allPodcasts = await prisma.podcast.findMany({
         where: { isPublished: true },
         select: {
@@ -1324,7 +1375,6 @@ class ProgressService {
         thumbnail: p.thumbnail || '',
       }));
     }
-    // ============================================
 
     return {
       isNew,
@@ -1353,7 +1403,6 @@ class ProgressService {
     const oneWeekAgo = new Date();
     oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
 
-    // Last week's attempts
     const lastWeekAttempts = await prisma.essayAttempt.findMany({
       where: {
         userId,
@@ -1367,7 +1416,6 @@ class ProgressService {
       },
     });
 
-    // Previous week's attempts (for comparison)
     const previousWeekAttempts = await prisma.essayAttempt.findMany({
       where: {
         userId,
@@ -1394,7 +1442,6 @@ class ProgressService {
     const previousWeekAverage = calculateAverage(previousWeekAttempts);
     const improvement = lastWeekAverage - previousWeekAverage;
 
-    // Subject breakdown
     const subjectPerformance: Record<string, { count: number; avgScore: number }> = {};
 
     lastWeekAttempts.forEach((attempt) => {
@@ -1427,7 +1474,6 @@ class ProgressService {
     const seconds = totalSeconds % 60;
 
     if (hours > 0) {
-      // Has hours
       if (minutes > 0) {
         return `${hours} hour${hours !== 1 ? 's' : ''} ${minutes} minute${minutes !== 1 ? 's' : ''}`;
       }
@@ -1435,14 +1481,12 @@ class ProgressService {
     }
 
     if (minutes > 0) {
-      // Has minutes but no hours
       if (seconds > 0) {
         return `${minutes} minute${minutes !== 1 ? 's' : ''} ${seconds} second${seconds !== 1 ? 's' : ''}`;
       }
       return `${minutes} minute${minutes !== 1 ? 's' : ''}`;
     }
 
-    // Only seconds
     return `${seconds} second${seconds !== 1 ? 's' : ''}`;
   }
 
@@ -1452,7 +1496,6 @@ class ProgressService {
       select: { focusSubjects: true },
     });
 
-    // Calculate week start (last Monday)
     const now = new Date();
     const dayOfWeek = now.getDay();
     const daysToMonday = dayOfWeek === 0 ? 6 : dayOfWeek - 1;
@@ -1460,7 +1503,6 @@ class ProgressService {
     weekStart.setDate(now.getDate() - daysToMonday);
     weekStart.setHours(0, 0, 0, 0);
 
-    // Get this week's study sessions
     const weekStartStr = weekStart.toISOString().split('T')[0]!;
     const weekSessions = await prisma.dailyStudySession.findMany({
       where: {
@@ -1472,7 +1514,6 @@ class ProgressService {
 
     const totalSecondsThisWeek = weekSessions.reduce((sum, s) => sum + s.todayTotalSeconds, 0);
 
-    // Lessons completed this week
     const lessonsCompletedThisWeek = await prisma.userLessonProgress.count({
       where: {
         userId,
@@ -1480,7 +1521,6 @@ class ProgressService {
       },
     });
 
-    // Subjects enrolled (has any progress)
     const subjectProgress = await prisma.userSubjectProgress.findMany({
       where: { userId },
       select: { subjectId: true },
@@ -1488,12 +1528,10 @@ class ProgressService {
 
     const subjectsEnrolled = subjectProgress.length;
 
-    // Total lessons completed (all time)
     const lessonsCompleted = await prisma.userLessonProgress.count({
       where: { userId, isCompleted: true },
     });
 
-    // Quiz accuracy (average across all MCQ attempts)
     const allQuizAttempts = await prisma.quizAttempt.findMany({
       where: { userId },
       select: { isCorrect: true },
@@ -1519,7 +1557,6 @@ class ProgressService {
     console.log('\n🔥 ALL SESSIONS WITH ACTIVITY:');
     allSessions.forEach((s) => console.log(`  ${s.date}`));
 
-    // Calculate CURRENT streak (backwards from today)
     let currentStreak = 0;
     let expectedDate = new Date();
     expectedDate.setHours(0, 0, 0, 0);
@@ -1546,7 +1583,6 @@ class ProgressService {
       }
     }
 
-    // Calculate LONGEST streak (all time)
     const allSessionsAsc = await prisma.dailyStudySession.findMany({
       where: { userId, todayTotalSeconds: { gt: 0 } },
       select: { date: true },
@@ -1589,7 +1625,6 @@ class ProgressService {
     const formattedTime = this.formatStudyTime(totalSecondsThisWeek);
     const weekSummary = `You've studied ${formattedTime} this week and completed ${lessonsCompletedThisWeek} modules across ${subjectsEnrolled} subjects.`;
 
-    // Achievement hint
     const achievementHint =
       currentStreak >= 3
         ? `Amazing! ${currentStreak} day streak — keep going to unlock your next achievement badge.`

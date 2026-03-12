@@ -695,12 +695,44 @@ const progressRouter = Router();
  *                       properties:
  *                         daysUntilExam:
  *                           type: integer
- *                           nullable: true
  *                           example: 42
+ *                           description: Days remaining. Always 0 or positive — never negative. Clamps to 0 when exam date has passed.
  *                         examDate:
  *                           type: string
+ *                           example: "2026-10-01"
+ *                           description: The user's target exam date in YYYY-MM-DD format.
+ *                         missed:
+ *                           type: boolean
+ *                           example: false
+ *                           description: True when the target exam date is in the past. Frontend should show missed state UI and a reschedule CTA button.
+ *                         missedMessage:
+ *                           type: string
  *                           nullable: true
- *                           example: "2026-05-31"
+ *                           example: "You missed your March 2026 exam. Choose your next target."
+ *                           description: Human-readable message shown when missed=true. Null when missed=false.
+ *                         nextOptions:
+ *                           type: array
+ *                           nullable: true
+ *                           description: |
+ *                             Shown in the reschedule popup when missed=true. Always 3 items:
+ *                             the missed month (isPast=true, render blurred) followed by the next 2 upcoming exam dates.
+ *                             Null when missed=false.
+ *                             Frontend sends the chosen examDate back to PATCH /api/v1/users/profile to update targetExamDate.
+ *                           items:
+ *                             type: object
+ *                             properties:
+ *                               label:
+ *                                 type: string
+ *                                 example: "October 2026"
+ *                                 description: Display label shown in the popup option.
+ *                               examDate:
+ *                                 type: string
+ *                                 example: "2026-10-01"
+ *                                 description: YYYY-MM-DD date to send back to updateProfile when user selects this option.
+ *                               isPast:
+ *                                 type: boolean
+ *                                 example: false
+ *                                 description: True for the exam month that was missed. Frontend should render this option blurred/disabled.
  *                     todayStudy:
  *                       type: object
  *                       properties:
