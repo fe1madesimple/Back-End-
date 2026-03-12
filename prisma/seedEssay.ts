@@ -1133,9 +1133,11 @@ async function main() {
   console.log('🌱 Starting essay question seed...\n');
 
   // Step 1: Wipe all existing questions
-  console.log('🗑️  Wiping all existing questions...');
-  await prisma.question.deleteMany({});
-  console.log('✅ All questions deleted\n');
+ console.log('🗑️  Wiping related records...');
+ await prisma.quizAttempt.deleteMany({});
+ await prisma.questionAttempt.deleteMany({});
+ await prisma.essayAttempt.deleteMany({});
+ await prisma.timedSession.deleteMany({});
 
   let totalSeeded = 0;
 
