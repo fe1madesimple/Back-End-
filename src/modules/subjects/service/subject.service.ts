@@ -1,3 +1,5 @@
+// src/modules/content/service/subject.service.ts
+
 import prisma from '@/config/database';
 import { SubjectWithProgress, SubjectDetail } from '../interface/subject.interface';
 import { AppError } from '@/shared/utils';
@@ -20,7 +22,6 @@ export class SubjectService {
       return {
         id: subject.id,
         name: subject.name,
-        slug: subject.slug,
         description: subject.description,
         icon: subject.icon,
         color: subject.color,
@@ -34,7 +35,7 @@ export class SubjectService {
               lastAccessedAt: userProgress.lastAccessedAt,
             }
           : {
-              progressPercent: 0, 
+              progressPercent: 0,
               status: 'NOT_STARTED',
               totalTimeSeconds: 0,
               lastAccessedAt: null,
@@ -108,7 +109,6 @@ export class SubjectService {
     return {
       id: subject.id,
       name: subject.name,
-      slug: subject.slug,
       description: subject.description,
       color: subject.color,
       progressColor: subject.progressColor,
@@ -126,9 +126,9 @@ export class SubjectService {
             lastAccessedAt: null,
           },
       modules: subject.modules.map((module) => ({
-        id: module.id,    
+        id: module.id,
         name: module.name,
-        slug: module.slug,
+        slug: module.slug ?? null, // nullable — slug removed from Subject, still exists on Module
         order: module.order,
         lessonsCount: module.lessons.length,
         completedLessons: module.userProgress[0]?.completedLessons || 0,
@@ -162,7 +162,7 @@ export class SubjectService {
     return modules.map((module) => ({
       id: module.id,
       name: module.name,
-      slug: module.slug,
+      slug: module.slug ?? null,
       description: module.description,
       order: module.order,
       totalLessons: module.lessons.length,
