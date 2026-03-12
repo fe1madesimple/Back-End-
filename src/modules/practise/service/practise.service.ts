@@ -14,9 +14,8 @@ import {
   PracticeResultsResponse,
   PracticeAttemptReviewResponse,
   ClaudeGradingResult,
+  QuestionScoreItem,
 } from '../interface/practise.interface';
-
-const PRACTICE_TIME_LIMIT = 10800; // 3 hours in seconds
 
 // ── getPastQuestionsService ──────────────────────────────────
 
@@ -98,9 +97,9 @@ export async function getPastQuestionsService(
 }
 
 // ── startPracticeService ─────────────────────────────────────
-// Body receives subject + year directly (from the card the user clicked)
-// Picks 8 random questions from that subject + year
-// If an incomplete session already exists → returns it (reload / network recovery)
+// Creates session, picks 8 random questions from subject+year.
+// Returns only sessionId — frontend drives all navigation from here.
+// Recovery: if incomplete session exists for same user+subject+year → returns it.
 
 export async function startPracticeService(
   userId: string,
@@ -108,78 +107,26 @@ export async function startPracticeService(
 ): Promise<StartPracticeResponse> {
   const { subject, year } = input;
 
-  // 1. Check for existing incomplete session (page reload / network recovery)
+  // Recovery: return existing incomplete session
   const existingSession = await prisma.practiceSession.findFirst({
     where: { userId, subject, year, isCompleted: false },
     orderBy: { createdAt: 'desc' },
   });
 
   if (existingSession) {
-    const questions = await prisma.question.findMany({
-      where: { id: { in: existingSession.questionIds } },
-      select: {
-        id: true,
-        subject: true,
-        year: true,
-        examType: true,
-        text: true,
-        description: true,
-        order: true,
-      },
-    });
-
-    // Preserve original order from questionIds array
-    const sortedQuestions = existingSession.questionIds
-      .map((id, index) => {
-        const q = questions.find((q) => q.id === id);
-        if (!q) return null;
-        return { ...q, index };
-      })
-      .filter(Boolean) as any[];
-
-    const existingAttempts = await prisma.essayAttempt.findMany({
-      where: { userId, source: 'PRACTICE', simulationId: existingSession.id },
-      select: { questionId: true },
-    });
-
-    const answeredQuestionIds = existingAttempts.map((a) => a.questionId);
-
-    // Recover timer — anchored to first questionId of session
-    const timer = await prisma.questionTimer.findFirst({
-      where: { userId, questionId: existingSession.questionIds[0]!, endedAt: null },
-    });
-
-    const elapsedSeconds = timer
-      ? Math.floor((Date.now() - timer.startedAt.getTime()) / 1000)
-      : (existingSession.totalTimeSeconds ?? 0);
-
     return {
       practiceSessionId: existingSession.id,
-      subject,
-      year,
-      timerId: timer?.id ?? '',
+      subject: existingSession.subject!,
+      year: existingSession.year!,
+      totalQuestions: existingSession.questionIds.length,
       startedAt: existingSession.startedAt,
-      elapsedSeconds,
-      totalTimeSeconds: PRACTICE_TIME_LIMIT,
-      questions: sortedQuestions,
-      totalQuestions: sortedQuestions.length,
-      answeredQuestionIds,
-      currentQuestionIndex: 0,
     };
   }
 
-  // 2. Pick 8 random questions for this subject + year
+  // Pick up to 8 random questions from subject + year
   const allAvailable = await prisma.question.findMany({
     where: { type: 'ESSAY', isPublished: true, subject, year },
-    select: {
-      id: true,
-      subject: true,
-      year: true,
-      examType: true,
-      text: true,
-      description: true,
-      order: true,
-    },
+    select: { id: true },
   });
 
   if (allAvailable.length < 5) {
@@ -190,36 +137,24 @@ export async function startPracticeService(
   const selected = shuffled.slice(0, Math.min(8, allAvailable.length));
   const questionIds = selected.map((q) => q.id);
 
-  // 3. Create practice session
   const session = await prisma.practiceSession.create({
     data: { userId, subject, year, questionIds, startedAt: new Date() },
   });
-
-  // 4. Create timer anchored to first question — tracks total elapsed time
-  const timer = await prisma.questionTimer.create({
-    data: { userId, questionId: questionIds[0]! },
-  });
-
-  const questions = selected.map((q, index) => ({ ...q, index }));
 
   return {
     practiceSessionId: session.id,
     subject,
     year,
-    timerId: timer.id,
+    totalQuestions: questionIds.length,
     startedAt: session.startedAt,
-    elapsedSeconds: 0,
-    totalTimeSeconds: PRACTICE_TIME_LIMIT,
-    questions,
-    totalQuestions: questions.length,
-    answeredQuestionIds: [],
-    currentQuestionIndex: 0,
   };
 }
 
 // ── getPracticeQuestionService ───────────────────────────────
-// Called on every box click, next, previous, and page reload
-// sessionId + questionIndex is enough to rebuild the full screen
+// The single endpoint for ALL navigation: initial load, box click,
+// next, previous, and page reload.
+// sessionId + questionIndex is enough to fully rebuild the screen.
+// elapsedSeconds = now - session.startedAt (no timer model needed).
 
 export async function getPracticeQuestionService(
   userId: string,
@@ -231,11 +166,13 @@ export async function getPracticeQuestionService(
   });
 
   if (!session || session.userId !== userId) throw new NotFoundError('Session not found');
+  if (session.isCompleted) throw new BadRequestError('This session has already been submitted');
 
   if (questionIndex < 0 || questionIndex >= session.questionIds.length) {
     throw new BadRequestError('Invalid question index');
   }
 
+  // Resolve questionId from index — this is the source of truth
   const questionId = session.questionIds[questionIndex]!;
 
   const question = await prisma.question.findUnique({
@@ -253,49 +190,48 @@ export async function getPracticeQuestionService(
 
   if (!question) throw new NotFoundError('Question not found');
 
-  // Get elapsed time from live timer
-  const timer = await prisma.questionTimer.findFirst({
-    where: { userId, questionId: session.questionIds[0]!, endedAt: null },
-  });
+  // Elapsed seconds from session start — session IS the timer
+  const elapsedSeconds = Math.floor((Date.now() - session.startedAt.getTime()) / 1000);
 
-  const elapsedSeconds = timer
-    ? Math.floor((Date.now() - timer.startedAt.getTime()) / 1000)
-    : (session.totalTimeSeconds ?? 0);
-
-  // Get all answered questions for box state
+  // Get all attempted answers for this session
   const attempts = await prisma.essayAttempt.findMany({
     where: { userId, source: 'PRACTICE', simulationId: sessionId },
     select: { questionId: true, answerText: true },
   });
 
-  const answeredQuestionIds = attempts.map((a) => a.questionId);
+  // Map answered questionIds back to their indexes for box highlighting
+  const answeredIndexes = attempts
+    .map((a) => session.questionIds.indexOf(a.questionId))
+    .filter((i) => i !== -1);
+
+  // Pre-fill textarea if this question was already answered
   const savedAttempt = attempts.find((a) => a.questionId === questionId);
 
   return {
     practiceSessionId: session.id,
     subject: session.subject,
     year: session.year,
-    timerId: timer?.id ?? '',
     elapsedSeconds,
-    totalTimeSeconds: PRACTICE_TIME_LIMIT,
     question: { ...question, index: questionIndex },
     totalQuestions: session.questionIds.length,
     currentQuestionIndex: questionIndex,
-    answeredQuestionIds,
+    answeredIndexes,
     savedAnswer: savedAttempt?.answerText ?? null,
   };
 }
 
 // ── submitPracticeService ────────────────────────────────────
-// Stops timer, grades all answers in parallel with Claude
-// Saves one EssayAttempt per answer (source: PRACTICE, simulationId: practiceSessionId)
-// Marks PracticeSession complete
+// No timerId — totalTimeSeconds = now - session.startedAt.
+// Frontend sends: { practiceSessionId, answers: [{ questionIndex, answerText }] }.
+// Backend resolves questionId = session.questionIds[questionIndex].
+// Grades all in parallel, saves EssayAttempt per answer.
+// Returns scoreboard data: only attempted questions, sorted by questionIndex.
 
 export async function submitPracticeService(
   userId: string,
   input: SubmitPracticeInput
 ): Promise<SubmitPracticeResponse> {
-  const { practiceSessionId, timerId, answers } = input;
+  const { practiceSessionId, answers } = input;
 
   if (answers.length < 5) {
     throw new BadRequestError('You must answer at least 5 questions before submitting');
@@ -308,53 +244,52 @@ export async function submitPracticeService(
   if (!session || session.userId !== userId) throw new NotFoundError('Session not found');
   if (session.isCompleted) throw new BadRequestError('Session already submitted');
 
-  // Stop the timer
-  const timer = await prisma.questionTimer.update({
-    where: { id: timerId },
-    data: { endedAt: new Date() },
-  });
+  // Validate all indexes are within bounds
+  for (const answer of answers) {
+    if (answer.questionIndex < 0 || answer.questionIndex >= session.questionIds.length) {
+      throw new BadRequestError(`Invalid question index: ${answer.questionIndex}`);
+    }
+  }
 
-  const totalTimeSeconds = Math.floor(
-    (timer.endedAt!.getTime() - timer.startedAt.getTime()) / 1000
-  );
+  // Session IS the timer
+  const totalTimeSeconds = Math.floor((Date.now() - session.startedAt.getTime()) / 1000);
 
-  // Fetch full question data for all submitted answers
-  const questionIds = answers.map((a) => a.questionId);
+  // Resolve questionIds from indexes
+  const resolvedAnswers = answers.map((a) => ({
+    questionIndex: a.questionIndex,
+    questionId: session.questionIds[a.questionIndex]!,
+    answerText: a.answerText,
+  }));
+
+  // Fetch question texts for grading
+  const questionIds = resolvedAnswers.map((a) => a.questionId);
   const questions = await prisma.question.findMany({
     where: { id: { in: questionIds } },
-    select: {
-      id: true,
-      subject: true,
-      year: true,
-      examType: true,
-      text: true,
-      description: true,
-      order: true,
-    },
+    select: { id: true, subject: true, year: true, examType: true, text: true },
   });
 
   // Grade all in parallel
   const gradingResults = await Promise.all(
-    answers.map((answer) => {
-      const question = questions.find((q) => q.id === answer.questionId)!;
-      return gradeEssayWithClaude(answer.answerText, question.text, question.subject ?? '');
+    resolvedAnswers.map((a) => {
+      const question = questions.find((q) => q.id === a.questionId)!;
+      return gradeEssayWithClaude(a.answerText, question.text, question.subject ?? '');
     })
   );
 
-  // Save EssayAttempt for each answer
-  // simulationId = practiceSessionId so history queries can group by session
   const timePerQuestion = Math.floor(totalTimeSeconds / answers.length);
 
-  const savedAttempts = await Promise.all(
-    answers.map((answer, index) => {
+  // Save one EssayAttempt per answer
+  // simulationId = practiceSessionId groups attempts under this session for history
+  await Promise.all(
+    resolvedAnswers.map((a, index) => {
       const grading = gradingResults[index]!;
-      const wordCount = answer.answerText.trim().split(/\s+/).length;
+      const wordCount = a.answerText.trim().split(/\s+/).length;
 
       return prisma.essayAttempt.create({
         data: {
           userId,
-          questionId: answer.questionId,
-          answerText: answer.answerText,
+          questionId: a.questionId,
+          answerText: a.answerText,
           timeTakenSeconds: timePerQuestion,
           wordCount,
           aiScore: grading.score,
@@ -378,54 +313,47 @@ export async function submitPracticeService(
     gradingResults.reduce((sum, r) => sum + r.score, 0) / gradingResults.length
   );
 
-  const passed = overallScore >= 50;
+  const submittedAt = new Date();
 
-  // Mark session complete
   await prisma.practiceSession.update({
     where: { id: practiceSessionId },
-    data: { isCompleted: true, submittedAt: new Date(), totalTimeSeconds },
+    data: { isCompleted: true, submittedAt, totalTimeSeconds },
   });
 
   achievementsService
     .checkAllAchievements(userId)
     .catch((err) => console.error('Achievement check failed:', err));
 
+  // Only attempted questions, sorted by their box position
+  const scores: QuestionScoreItem[] = resolvedAnswers
+    .map((a, index) => {
+      const grading = gradingResults[index]!;
+      return {
+        questionIndex: a.questionIndex,
+        aiScore: Math.round((grading.score / 100) * 20),
+        scoreOutOf: 20,
+        band: grading.band,
+        appPass: grading.score >= 80,
+      };
+    })
+    .sort((a, b) => a.questionIndex - b.questionIndex);
+
   return {
     practiceSessionId,
     subject: session.subject,
     year: session.year,
+    submittedAt,
     totalAnswered: answers.length,
     totalTimeSeconds,
     overallScore,
-    passed,
-    results: answers.map((answer, index) => {
-      const question = questions.find((q) => q.id === answer.questionId)!;
-      const grading = gradingResults[index]!;
-
-      return {
-        questionId: answer.questionId,
-        questionIndex: session.questionIds.indexOf(answer.questionId),
-        subject: question.subject,
-        year: question.year,
-        examType: question.examType,
-        questionText: question.text,
-        userAnswer: answer.answerText,
-        aiScore: grading.score,
-        band: grading.band,
-        appPass: grading.score >= 80,
-        feedback: grading.feedback,
-        strengths: grading.strengths,
-        improvements: grading.improvements,
-        sampleAnswer: grading.sampleAnswer,
-        timeTakenSeconds: savedAttempts[index]!.timeTakenSeconds,
-        wordCount: savedAttempts[index]!.wordCount,
-      };
-    }),
+    passed: overallScore >= 50,
+    scores,
   };
 }
 
 // ── getPracticeResultsService ────────────────────────────────
-// Scoreboard screen — called after grading completes
+// Scoreboard fetch for back-navigation or direct link.
+// Only returns attempted questions sorted by session box order.
 
 export async function getPracticeResultsService(
   userId: string,
@@ -439,19 +367,7 @@ export async function getPracticeResultsService(
 
   const attempts = await prisma.essayAttempt.findMany({
     where: { userId, source: 'PRACTICE', simulationId: sessionId },
-    include: {
-      question: {
-        select: {
-          id: true,
-          subject: true,
-          year: true,
-          examType: true,
-          text: true,
-          description: true,
-          order: true,
-        },
-      },
-    },
+    select: { questionId: true, aiScore: true, band: true, appPass: true },
     orderBy: { createdAt: 'asc' },
   });
 
@@ -459,6 +375,17 @@ export async function getPracticeResultsService(
     attempts.length > 0
       ? Math.round(attempts.reduce((sum, a) => sum + (a.aiScore ?? 0), 0) / attempts.length)
       : 0;
+
+  // Resolve index for each attempt then sort by box position
+  const scores: QuestionScoreItem[] = attempts
+    .map((a) => ({
+      questionIndex: session.questionIds.indexOf(a.questionId),
+      aiScore: Math.round(((a.aiScore ?? 0) / 100) * 20),
+      scoreOutOf: 20,
+      band: a.band ?? '',
+      appPass: a.appPass ?? false,
+    }))
+    .sort((a, b) => a.questionIndex - b.questionIndex);
 
   return {
     practiceSessionId: session.id,
@@ -469,29 +396,14 @@ export async function getPracticeResultsService(
     overallScore,
     passed: overallScore >= 50,
     totalAnswered: attempts.length,
-    results: attempts.map((a, index) => ({
-      questionId: a.questionId,
-      questionIndex: index,
-      subject: a.question.subject,
-      year: a.question.year,
-      examType: a.question.examType,
-      questionText: a.question.text,
-      userAnswer: a.answerText,
-      aiScore: a.aiScore,
-      band: a.band,
-      appPass: a.appPass,
-      feedback: a.feedback as object,
-      strengths: a.strengths,
-      improvements: a.improvements,
-      sampleAnswer: a.sampleAnswer,
-      timeTakenSeconds: a.timeTakenSeconds,
-      wordCount: a.wordCount,
-    })),
+    scores,
   };
 }
 
 // ── getPracticeAttemptReviewService ─────────────────────────
-// Review screen — question by question with next/previous navigation
+// Review screen — one attempted question at a time.
+// questionIndex here is the position within attempted questions only (0, 1, 2...).
+// hasNext/hasPrevious drives the navigation arrows.
 
 export async function getPracticeAttemptReviewService(
   userId: string,
@@ -504,6 +416,7 @@ export async function getPracticeAttemptReviewService(
 
   if (!session || session.userId !== userId) throw new NotFoundError('Session not found');
 
+  // Fetch only attempted questions sorted by their session box order
   const attempts = await prisma.essayAttempt.findMany({
     where: { userId, source: 'PRACTICE', simulationId: sessionId },
     include: {
@@ -522,23 +435,30 @@ export async function getPracticeAttemptReviewService(
     orderBy: { createdAt: 'asc' },
   });
 
-  if (questionIndex < 0 || questionIndex >= attempts.length) {
+  // Sort attempts by their original box position in session
+  const sortedAttempts = attempts.sort(
+    (a, b) => session.questionIds.indexOf(a.questionId) - session.questionIds.indexOf(b.questionId)
+  );
+
+  if (questionIndex < 0 || questionIndex >= sortedAttempts.length) {
     throw new BadRequestError('Invalid question index');
   }
 
-  const attempt = attempts[questionIndex]!;
+  const attempt = sortedAttempts[questionIndex]!;
+  const sessionBoxIndex = session.questionIds.indexOf(attempt.questionId);
 
   return {
     practiceSessionId: session.id,
     subject: session.subject,
     year: session.year,
     currentQuestionIndex: questionIndex,
-    totalAnswered: attempts.length,
-    hasNext: questionIndex < attempts.length - 1,
+    totalAnswered: sortedAttempts.length,
+    hasNext: questionIndex < sortedAttempts.length - 1,
     hasPrevious: questionIndex > 0,
-    question: { ...attempt.question, index: questionIndex },
+    question: { ...attempt.question, index: sessionBoxIndex },
     userAnswer: attempt.answerText,
-    aiScore: attempt.aiScore,
+    aiScore: attempt.aiScore !== null ? Math.round((attempt.aiScore / 100) * 20) : null,
+    scoreOutOf: 20,
     band: attempt.band,
     appPass: attempt.appPass,
     feedback: attempt.feedback as object | null,
@@ -551,7 +471,7 @@ export async function getPracticeAttemptReviewService(
 }
 
 // ── gradeEssayWithClaude ─────────────────────────────────────
-// Shared between practice and simulation
+// Shared between practice and simulation.
 
 export async function gradeEssayWithClaude(
   answerText: string,
