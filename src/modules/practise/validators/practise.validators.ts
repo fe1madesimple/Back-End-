@@ -1,10 +1,6 @@
-import z from 'zod';
+// src/modules/practise/validators/practise.validators.ts
 
-export const moduleIdParamSchema = z.object({
-  params: z.object({
-    moduleId: z.string().cuid(),
-  }),
-});
+import z from 'zod';
 
 export const pastQuestionsQuerySchema = z.object({
   query: z.object({
@@ -15,7 +11,6 @@ export const pastQuestionsQuerySchema = z.object({
       .regex(/^\d{4}$/)
       .optional()
       .transform((val) => (val ? parseInt(val) : undefined)),
-    examType: z.string().optional(),
     page: z
       .string()
       .regex(/^\d+$/)
@@ -29,28 +24,48 @@ export const pastQuestionsQuerySchema = z.object({
   }),
 });
 
-export const submitSimulationAnswerSchema = z.object({
-  body: z.object({
-    simulationId: z.string().min(1, 'Simulation ID is required'),
-    questionId: z.string().min(1, 'Question ID is required'),
-    answerText: z.string().min(50, 'Answer must be at least 50 characters'),
-    timerId: z.string().min(1, 'Timer ID is required'),
-    currentQuestionIndex: z.number().int().min(0).max(4),
-  }),
-});
-
 export const startPracticeSchema = z.object({
   body: z.object({
-    parentQuestionId: z.string().min(1, 'parent questionId is required'),
+    subject: z.string().min(1, 'Subject is required'),
+    year: z.number().int().min(1990).max(2030),
   }),
 });
 
-export const initiateStartPracticeSchema = z.object({
+export const getPracticeQuestionSchema = z.object({
+  params: z.object({
+    sessionId: z.string().min(1, 'Session ID is required'),
+    questionIndex: z.string().regex(/^\d+$/, 'Must be a number'),
+  }),
+});
+
+export const submitPracticeSchema = z.object({
   body: z.object({
-    parentQuestionId: z.string().min(1, 'parent questionId is required'),
+    practiceSessionId: z.string().min(1, 'Session ID is required'),
+    answers: z
+      .array(
+        z.object({
+          questionIndex: z.number().int().min(0).max(7),
+          answerText: z.string().min(50, 'Answer must be at least 50 characters'),
+        })
+      )
+      .min(5, 'You must answer at least 5 questions'),
   }),
 });
 
+export const sessionIdParamSchema = z.object({
+  params: z.object({
+    sessionId: z.string().min(1, 'Session ID is required'),
+  }),
+});
+
+export const attemptReviewSchema = z.object({
+  params: z.object({
+    sessionId: z.string().min(1, 'Session ID is required'),
+    questionIndex: z.string().regex(/^\d+$/, 'Must be a number'),
+  }),
+});
+
+// Simulation validators (used by simulation.routes.ts)
 export const finishSimulationSchema = z.object({
   params: z.object({
     simulationId: z.string().min(1, 'Simulation ID is required'),
@@ -63,39 +78,5 @@ export const failSimulationSchema = z.object({
   }),
   body: z.object({
     reason: z.string().min(1, 'Reason is required'),
-  }),
-});
-
-export const getNextQuestionSchema = z.object({
-  body: z.object({
-    parentQuestionId: z.string().min(1, 'Parent question ID is required'),
-    currentIndex: z.number().int().min(0).max(4),
-  }),
-});
-
-export const submitEssaySchema = z.object({
-  body: z.object({
-    questionId: z.string().min(1, 'Question ID is required'),
-    answerText: z.string().min(50, 'Answer must be at least 50 characters'),
-    timerId: z.string().min(1, 'Timer ID is required'),
-    currentQuestionIndex: z.number().int().min(0).max(4),
-    parentQuestionId: z.string().min(1, 'Parent question ID is required'),
-  }),
-});
-
-export const getSimulationQuestionSchema = z.object({
-  params: z.object({
-    simulationId: z.string().min(1, 'Simulation ID is required'),
-    questionId: z.string().min(1, 'Question ID is required'),
-  }),
-  query: z.object({
-    questionIndex: z.string().regex(/^\d+$/, 'Must be a number'),
-  }),
-});
-
-export const getAttemptDetailsSchema = z.object({
-  params: z.object({
-    questionId: z.string().min(1, 'Question ID is required'),
-    parentQuestionId: z.string().min(1, 'Parent question ID is required'),
   }),
 });
