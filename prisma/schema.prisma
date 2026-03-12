@@ -75,7 +75,6 @@ model User {
   essayAttempts      EssayAttempt[]
   simulations        Simulation[]
   practiceSessions   PracticeSession[]
-  practiceSessionS   PracticeSession[]
 
   @@index([email])
   @@index([googleId])
