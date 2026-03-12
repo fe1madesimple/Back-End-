@@ -880,9 +880,8 @@ model Question {
   attempts      QuestionAttempt[]
   essayAttempts EssayAttempt[]
 
-  createdAt    DateTime      @default(now())
-  updatedAt    DateTime      @updatedAt
-  questionSets QuestionSet[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   @@index([lessonId])
   @@index([type])
