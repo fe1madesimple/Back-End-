@@ -8,8 +8,6 @@ import {
 } from '../interfaces/user.interfaces';
 import emailService from '@/shared/services/email.service';
 
-
-
 class UserService {
   async getProfile(userId: string) {
     const user = await prisma.user.findUnique({
@@ -126,12 +124,10 @@ class UserService {
 
     console.log('📊 Collecting user analytics before deletion...');
 
-    // Get all subjects
     const allSubjects = await prisma.subject.findMany({
       select: { id: true, name: true },
     });
 
-    // Get user's subject progress
     const userSubjectProgress = await prisma.userSubjectProgress.findMany({
       where: { userId },
       include: {
@@ -140,9 +136,7 @@ class UserService {
     });
 
     const subjectsStarted = userSubjectProgress.length;
-
     const subjectsCompleted = userSubjectProgress.filter((s) => s.status === 'COMPLETED').length;
-
     const subjectsNeverOpened = allSubjects.length - subjectsStarted;
 
     const subjectProgressData = userSubjectProgress.map((sp) => ({
@@ -151,12 +145,10 @@ class UserService {
       timeSpentSeconds: sp.totalTimeSeconds,
     }));
 
-    // Get module progress
     const modulesCompleted = await prisma.userModuleProgress.count({
       where: { userId, status: 'COMPLETED' },
     });
 
-    // Get lesson progress
     const lessonsCompleted = await prisma.userLessonProgress.count({
       where: { userId, isCompleted: true },
     });
@@ -171,12 +163,8 @@ class UserService {
       0
     );
 
-    // Get quiz data
     const completedSessions = await prisma.quizSession.findMany({
-      where: {
-        userId,
-        isCompleted: true,
-      },
+      where: { userId, isCompleted: true },
       select: {
         correctAnswers: true,
         totalQuestions: true,
@@ -206,7 +194,6 @@ class UserService {
     const highestQuizScore = user.highestQuizScore || 0;
     const lowestQuizScore = user.lowestQuizScore || 0;
 
-    // Get subscription data
     const subscription = await prisma.subscription.findUnique({
       where: { userId },
     });
@@ -222,7 +209,6 @@ class UserService {
       (Date.now() - new Date(user.createdAt).getTime()) / (1000 * 60 * 60 * 24)
     );
 
-    // Save analytics
     await prisma.deletedUserAnalytics.create({
       data: {
         originalUserId: userId,
@@ -253,7 +239,6 @@ class UserService {
 
     console.log('✅ Analytics saved. Now deleting account and related data...');
 
-    // Delete all related data
     await prisma.$transaction([
       prisma.quizSession.deleteMany({ where: { userId } }),
       prisma.questionAttempt.deleteMany({ where: { userId } }),
@@ -300,7 +285,6 @@ class UserService {
   }
 
   async exportUserData(userId: string): Promise<Buffer> {
-    // Fetch comprehensive user data
     const [
       user,
       subjectProgress,
@@ -332,9 +316,7 @@ class UserService {
         include: {
           lesson: {
             include: {
-              module: {
-                include: { subject: true },
-              },
+              module: { include: { subject: true } },
             },
           },
         },
@@ -347,16 +329,18 @@ class UserService {
         where: { userId },
         include: { question: true },
       }),
+      // ── FIXED: removed parentQuestion (relation no longer exists on flat Question model) ──
       prisma.essayAttempt.findMany({
         where: { userId },
-        include: { question: { include: { parentQuestion: true } } },
+        include: { question: true },
         orderBy: { createdAt: 'desc' },
       }),
+      // ── FIXED: removed parentQuestion from simulation attempts ──
       prisma.simulation.findMany({
         where: { userId },
         include: {
           attempts: {
-            include: { question: { include: { parentQuestion: true } } },
+            include: { question: true },
           },
         },
         orderBy: { startedAt: 'desc' },
@@ -384,7 +368,6 @@ class UserService {
       throw new NotFoundError('User not found');
     }
 
-    // Calculate statistics
     const totalStudyHours = studySessions.reduce((sum, s) => sum + s.todayTotalSeconds, 0) / 3600;
     const completedLessons = lessonProgress.filter((l) => l.isCompleted).length;
     const totalQuizAccuracy =
@@ -397,7 +380,6 @@ class UserService {
         ? essayAttempts.reduce((sum, e) => sum + (e.aiScore || 0), 0) / essayAttempts.length
         : 0;
 
-    // Current streak calculation
     let currentStreak = 0;
     const sortedSessions = studySessions
       .filter((s) => s.todayTotalSeconds > 0)
@@ -417,16 +399,12 @@ class UserService {
       }
     }
 
-    // Generate PDF using PDFKit
     const PDFDocument = require('pdfkit');
     const axios = require('axios');
-
     const doc = new PDFDocument({ margin: 50 });
-
     const chunks: Buffer[] = [];
     doc.on('data', (chunk: Buffer) => chunks.push(chunk));
 
-    // Fetch logo from Cloudinary
     const logoUrl =
       'https://res.cloudinary.com/dkrjrfqpy/image/upload/v1768477062/Frame_23_a3ppr0.png';
     let logoBuffer: Buffer | null = null;
@@ -438,7 +416,6 @@ class UserService {
       console.error('Failed to fetch logo:', error);
     }
 
-    // Header with logo
     if (logoBuffer) {
       doc.image(logoBuffer, 50, 40, { width: 120 });
       doc.moveDown(5);
@@ -461,7 +438,6 @@ class UserService {
       })
       .moveDown(2);
 
-    // Personal Information
     doc.fontSize(16).font('Helvetica-Bold').text('Personal Information').moveDown(0.5);
     doc
       .fontSize(11)
@@ -477,7 +453,6 @@ class UserService {
       )
       .moveDown(2);
 
-    // Study Statistics
     doc.fontSize(16).font('Helvetica-Bold').text('Study Statistics').moveDown(0.5);
     doc
       .fontSize(11)
@@ -496,7 +471,6 @@ class UserService {
       .text(`Podcasts Listened: ${podcastProgress.filter((p) => p.isCompleted).length}`)
       .moveDown(2);
 
-    // Subject Progress
     if (subjectProgress.length > 0) {
       doc.fontSize(16).font('Helvetica-Bold').text('Subject Progress').moveDown(0.5);
       subjectProgress.forEach((sp) => {
@@ -512,7 +486,6 @@ class UserService {
       doc.moveDown(2);
     }
 
-    // Recent Essay Attempts (Top 10)
     if (essayAttempts.length > 0) {
       doc.fontSize(16).font('Helvetica-Bold').text('Recent Essay Practice (Last 10)').moveDown(0.5);
       essayAttempts.slice(0, 10).forEach((attempt, index) => {
@@ -533,16 +506,12 @@ class UserService {
       doc.moveDown(1);
     }
 
-    // Simulation Results
     if (simulations.length > 0) {
       doc.addPage();
-
-      // Add logo to new page
       if (logoBuffer) {
         doc.image(logoBuffer, 50, 40, { width: 80 });
         doc.moveDown(4);
       }
-
       doc.fontSize(16).font('Helvetica-Bold').text('Simulation Results').moveDown(0.5);
       simulations.forEach((sim, index) => {
         doc
@@ -562,16 +531,12 @@ class UserService {
       doc.moveDown(1);
     }
 
-    // Achievements
     if (achievements.length > 0) {
       doc.addPage();
-
-      // Add logo to new page
       if (logoBuffer) {
         doc.image(logoBuffer, 50, 40, { width: 80 });
         doc.moveDown(4);
       }
-
       doc.fontSize(16).font('Helvetica-Bold').text('Achievements Unlocked').moveDown(0.5);
       achievements.forEach((ua) => {
         doc
@@ -587,16 +552,12 @@ class UserService {
       doc.moveDown(1);
     }
 
-    // Saved Cases
     if (savedCases.length > 0) {
       doc.addPage();
-
-      // Add logo to new page
       if (logoBuffer) {
         doc.image(logoBuffer, 50, 40, { width: 80 });
         doc.moveDown(4);
       }
-
       doc.fontSize(16).font('Helvetica-Bold').text('Saved Case Law').moveDown(0.5);
       savedCases.forEach((sc) => {
         doc
@@ -615,7 +576,6 @@ class UserService {
       });
     }
 
-    // Footer
     doc
       .moveDown(2)
       .fontSize(9)
@@ -627,7 +587,6 @@ class UserService {
 
     doc.end();
 
-    // Return PDF buffer
     return new Promise((resolve, reject) => {
       doc.on('end', () => resolve(Buffer.concat(chunks)));
       doc.on('error', reject);
