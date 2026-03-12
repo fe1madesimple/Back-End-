@@ -44,6 +44,10 @@ export async function getPracticeQuestion(req: Request, res: Response) {
   try {
     const userId = (req as any).user.id;
     const { sessionId, questionIndex } = req.params;
+
+    if (!sessionId) throw new AppError('sessionId needed');
+
+    if (!questionIndex) throw new AppError('questionIndex needed');
     const data = await getPracticeQuestionService(userId, sessionId, parseInt(questionIndex));
     res.json({ success: true, message: 'Question retrieved', data });
   } catch (error: any) {
@@ -68,6 +72,8 @@ export async function getPracticeResults(req: Request, res: Response) {
   try {
     const userId = (req as any).user.id;
     const { sessionId } = req.params;
+
+    if (!sessionId) throw new AppError('sessionId needed');
     const data = await getPracticeResultsService(userId, sessionId);
     res.json({ success: true, message: 'Results retrieved', data });
   } catch (error: any) {
@@ -80,6 +86,10 @@ export async function getPracticeAttemptReview(req: Request, res: Response) {
   try {
     const userId = (req as any).user.id;
     const { sessionId, questionIndex } = req.params;
+
+    if (!sessionId) throw new AppError('sessionId needed');
+
+    if (!questionIndex) throw new AppError('questionIndex needed');
     const data = await getPracticeAttemptReviewService(userId, sessionId, parseInt(questionIndex));
     res.json({ success: true, message: 'Attempt review retrieved', data });
   } catch (error: any) {
