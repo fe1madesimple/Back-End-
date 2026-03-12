@@ -38,12 +38,22 @@ export interface PastQuestionsResponse {
   filters: PastQuestionsFilters;
 }
 
-// ── Practice Session ─────────────────────────────────────────
+// ── Start Practice ───────────────────────────────────────────
 
 export interface StartPracticeInput {
   subject: string;
   year: number;
 }
+
+export interface StartPracticeResponse {
+  practiceSessionId: string;
+  subject: string;
+  year: number;
+  totalQuestions: number;
+  startedAt: Date; // frontend uses this to sync elapsed timer on reload
+}
+
+// ── Get Question ─────────────────────────────────────────────
 
 export interface PracticeQuestionItem {
   id: string;
@@ -53,81 +63,54 @@ export interface PracticeQuestionItem {
   text: string;
   description: string | null;
   order: number;
-  index: number; // 0–7
-}
-
-export interface StartPracticeResponse {
-  practiceSessionId: string;
-  subject: string;
-  year: number;
-  timerId: string;
-  startedAt: Date;
-  elapsedSeconds: number;
-  totalTimeSeconds: number; // enforced limit = 10800
-  questions: PracticeQuestionItem[];
-  totalQuestions: number;
-  answeredQuestionIds: string[];
-  currentQuestionIndex: number;
+  index: number; // 0-based position in session (box number - 1)
 }
 
 export interface GetPracticeQuestionResponse {
   practiceSessionId: string;
   subject: string | null;
   year: number | null;
-  timerId: string;
-  elapsedSeconds: number;
-  totalTimeSeconds: number;
+  elapsedSeconds: number; // now - session.startedAt
   question: PracticeQuestionItem;
   totalQuestions: number;
   currentQuestionIndex: number;
-  answeredQuestionIds: string[];
-  savedAnswer: string | null;
+  answeredIndexes: number[]; // which box indexes have been answered
+  savedAnswer: string | null; // pre-fill textarea on reload
 }
 
-// ── Submit ───────────────────────────────────────────────────
+// ── Submit Practice ──────────────────────────────────────────
 
 export interface SubmitAnswerItem {
-  questionId: string;
+  questionIndex: number; // 0-based index — backend resolves questionId via session.questionIds[index]
   answerText: string;
 }
 
 export interface SubmitPracticeInput {
   practiceSessionId: string;
-  timerId: string;
-  answers: SubmitAnswerItem[];
+  answers: SubmitAnswerItem[]; // min 5
 }
 
-export interface GradingResult {
-  questionId: string;
-  questionIndex: number;
-  subject: string | null;
-  year: number | null;
-  examType: string | null;
-  questionText: string;
-  userAnswer: string;
-  aiScore: number;
+export interface QuestionScoreItem {
+  questionIndex: number; // drives Q1, Q2... label on frontend
+  aiScore: number; // out of 20
+  scoreOutOf: number; // always 20
   band: string;
   appPass: boolean;
-  feedback: object;
-  strengths: string[];
-  improvements: string[];
-  sampleAnswer: string;
-  timeTakenSeconds: number;
-  wordCount: number;
 }
 
 export interface SubmitPracticeResponse {
   practiceSessionId: string;
   subject: string | null;
   year: number | null;
+  submittedAt: Date;
   totalAnswered: number;
   totalTimeSeconds: number;
-  overallScore: number;
+  overallScore: number; // percentage e.g. 71
   passed: boolean;
-  results: GradingResult[];
+  scores: QuestionScoreItem[]; // sorted by questionIndex for scoreboard bars
 }
 
-// ── Results / Review ─────────────────────────────────────────
+// ── Results (scoreboard fetch) ───────────────────────────────
 
 export interface PracticeResultsResponse {
   practiceSessionId: string;
@@ -138,8 +121,10 @@ export interface PracticeResultsResponse {
   overallScore: number | null;
   passed: boolean | null;
   totalAnswered: number;
-  results: GradingResult[];
+  scores: QuestionScoreItem[];
 }
+
+// ── Review ───────────────────────────────────────────────────
 
 export interface PracticeAttemptReviewResponse {
   practiceSessionId: string;
@@ -152,6 +137,7 @@ export interface PracticeAttemptReviewResponse {
   question: PracticeQuestionItem;
   userAnswer: string;
   aiScore: number | null;
+  scoreOutOf: number;
   band: string | null;
   appPass: boolean | null;
   feedback: object | null;
