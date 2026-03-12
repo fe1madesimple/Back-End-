@@ -791,11 +791,11 @@ enum AssetType {
 }
 
 model EssayAttempt {
-  id         String      @id @default(cuid())
+  id         String   @id @default(cuid())
   userId     String
-  user       User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   questionId String
-  question   QuestionSet @relation(fields: [questionId], references: [id], onDelete: Cascade) // ← CHANGED
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
 
   answerText       String @db.Text
   timeTakenSeconds Int
@@ -803,25 +803,28 @@ model EssayAttempt {
 
   aiScore      Int?
   band         String?
+  appPass      Boolean?
   feedback     Json?
   strengths    String[]
   improvements String[]
+  sampleAnswer String?  @db.Text
 
   provider   String?
   model      String?
   tokensUsed Int?
 
-  isSimulation Boolean     @default(false)
+  source       String? // "PRACTICE" | "SIMULATION"
   simulationId String?
-  simulation   Simulation? @relation(fields: [simulationId], references: [id], onDelete: Cascade)
-  source       String?
+  simulation   Simulation? @relation(fields: [simulationId], references: [id], onDelete: SetNull)
 
-  createdAt DateTime @default(now())
+  createdAt     DateTime     @default(now())
+  questionSet   QuestionSet? @relation(fields: [questionSetId], references: [id])
+  questionSetId String?
 
   @@index([userId])
   @@index([questionId])
   @@index([simulationId])
-  @@index([userId, questionId])
+  @@index([userId, createdAt])
   @@map("essay_attempts")
 }
 
@@ -871,8 +874,8 @@ model Question {
   subject  String?
   examType String?
 
-  order         Int               @default(0)
-  isPublished   Boolean           @default(true)
+  order       Int     @default(0)
+  isPublished Boolean @default(true)
 
   timedSessions TimedSession[]
   quizAttempts  QuizAttempt[]
@@ -880,8 +883,9 @@ model Question {
   attempts      QuestionAttempt[]
   essayAttempts EssayAttempt[]
 
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  questionSets QuestionSet[]
 
   @@index([lessonId])
   @@index([type])
