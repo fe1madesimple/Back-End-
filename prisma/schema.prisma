@@ -818,9 +818,7 @@ model EssayAttempt {
   simulationId String?
   simulation   Simulation? @relation(fields: [simulationId], references: [id], onDelete: SetNull)
 
-  createdAt     DateTime     @default(now())
-  questionSet   QuestionSet? @relation(fields: [questionSetId], references: [id])
-  questionSetId String?
+  createdAt DateTime @default(now())
 
   @@index([userId])
   @@index([questionId])
