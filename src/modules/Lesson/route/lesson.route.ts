@@ -1,114 +1,181 @@
+// src/modules/content/routes/lesson.routes.ts
+
 import { Router } from 'express';
 import { protect } from '@/shared/middleware/auth.middleware';
-import { getLessonById, trackVideoProgress, trackTimeSpent,getModulesBySubject } from '../controller/lesson.controller';
-import { trackVideoSchema, trackTimeSchema } from '../validator/lesson.validator';
-import { validate } from '@/shared/middleware/validation';
+import {
+  trackVideoProgress,
+  trackTimeSpent,
+  getModulesBySubject,
+  getLessonById,
+  getLessonMCQs,
+  getLessonEssayQuestion,
+  submitLessonEssay,
+} from '../controller/lesson.controller';
 
 const lessonRouter = Router();
 
-
+// ─── ROUTE ORDER MATTERS ──────────────────────────────────────────────────────
+// Static routes (/subject/:x, /essay/submit) MUST be registered before
+// the dynamic /:id route, otherwise Express will try to match "essay" as a lessonId.
 
 /**
  * @swagger
- * /api/v1/lessons/modules/{subjectId}:
+ * /api/v1/lessons/subject/{subjectId}/modules:
  *   get:
- *     summary: Get all modules with lessons for a subject
+ *     summary: Get all modules for a subject with their lessons
  *     tags: [Lessons]
  *     security:
  *       - bearerAuth: []
- *     description: Returns all modules for a subject with lesson list, progress status, and completion count. Used for module list screen showing expandable/collapsible modules with lesson titles.
+ *     description: |
+ *       Returns all published modules for a subject, each with its lessons array,
+ *       user progress status (NOT_STARTED | IN_PROGRESS | COMPLETED),
+ *       and completed/total lesson counts.
  *     parameters:
  *       - in: path
  *         name: subjectId
  *         required: true
- *         schema:
- *           type: string
- *         description: Subject ID
+ *         schema: { type: string }
  *     responses:
  *       200:
- *         description: Modules retrieved successfully
+ *         description: Returns modules[] with lessons[], status, and progress
  *         content:
  *           application/json:
  *             schema:
  *               type: object
  *               properties:
- *                 success:
- *                   type: boolean
- *                   example: true
- *                 message:
- *                   type: string
- *                   example: Modules retrieved successfully
- *                 data:
- *                   type: object
- *                   properties:
- *                     modules:
- *                       type: array
- *                       items:
+ *                 modules:
+ *                   type: array
+ *                   items:
+ *                     type: object
+ *                     properties:
+ *                       id: { type: string }
+ *                       name: { type: string }
+ *                       slug: { type: string, nullable: true }
+ *                       order: { type: integer }
+ *                       status:
+ *                         type: string
+ *                         enum: [NOT_STARTED, IN_PROGRESS, COMPLETED]
+ *                       progress:
  *                         type: object
  *                         properties:
- *                           id:
- *                             type: string
- *                           name:
- *                             type: string
- *                             example: "Module 1: Foundations of Criminal Law"
- *                           slug:
- *                             type: string
- *                           order:
- *                             type: integer
- *                           status:
- *                             type: string
- *                             enum: [COMPLETED, IN_PROGRESS, NOT_STARTED]
- *                             example: COMPLETED
- *                           progress:
- *                             type: object
- *                             properties:
- *                               completedLessons:
- *                                 type: integer
- *                                 example: 5
- *                               totalLessons:
- *                                 type: integer
- *                                 example: 5
- *                           lessons:
- *                             type: array
- *                             items:
- *                               type: object
- *                               properties:
- *                                 id:
- *                                   type: string
- *                                 title:
- *                                   type: string
- *                                   example: "Lesson 1: Characteristics of a Crime"
- *                                 order:
- *                                   type: integer
- *       404:
- *         description: Subject not found
+ *                           completedLessons: { type: integer }
+ *                           totalLessons: { type: integer }
+ *                       lessons:
+ *                         type: array
+ *                         items:
+ *                           type: object
+ *                           properties:
+ *                             id: { type: string }
+ *                             title: { type: string }
+ *                             order: { type: integer }
  */
-lessonRouter.get('/modules/:subjectId', protect, getModulesBySubject);
-
-
+lessonRouter.get('/subject/:subjectId/modules', protect, getModulesBySubject);
 
 /**
  * @swagger
- * /api/v1/lessons/{id}/track-video:
+ * /api/v1/lessons/essay/submit:
  *   post:
- *     summary: Track video watch progress
+ *     summary: Submit a lesson essay for AI grading
  *     tags: [Lessons]
  *     security:
  *       - bearerAuth: []
  *     description: |
- *       Updates user's video watch position. Called by frontend video player.
+ *       Grades the student's answer using Claude AI and returns the COMPLETE
+ *       review screen data in a single response. No follow-up request is needed.
  *
- *       **AUTO-COMPLETION:**
- *       - Video watched >= 90% → Lesson automatically marked complete
- *       - Module progress recalculated
- *       - Subject progress updated
- *       - No "Mark as Complete" button needed
+ *       The response includes:
+ *       - The original question text
+ *       - The student's answer (echoed back)
+ *       - AI score out of 20 and grade band
+ *       - appPass (score >= 80/100 → 16/20) and passed (score >= 50/100 → 10/20)
+ *       - Structured feedback, strengths[], improvements[]
+ *       - sampleAnswer — the ideal answer for comparison
+ *
+ *       The EssayAttempt is saved with source=LESSON_PRACTICE and will appear
+ *       in the student's history.
+ *
+ *       NOTE: essayQuestionId is an EssayQuestion.id (from the dedicated question
+ *       bank), NOT a Question.id from the MCQ/practice model.
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required: [lessonId, essayQuestionId, answerText]
+ *             properties:
+ *               lessonId:
+ *                 type: string
+ *                 description: The lesson the student was practising on
+ *               essayQuestionId:
+ *                 type: string
+ *                 description: EssayQuestion.id from GET /lessons/:id/essay
+ *               answerText:
+ *                 type: string
+ *                 description: The student's written answer (min ~20 words)
+ *     responses:
+ *       200:
+ *         description: Essay graded — full review data returned
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 attemptId: { type: string }
+ *                 lessonId: { type: string }
+ *                 lessonTitle: { type: string }
+ *                 question:
+ *                   type: object
+ *                   properties:
+ *                     id: { type: string }
+ *                     text: { type: string }
+ *                     subject: { type: string }
+ *                 userAnswer: { type: string }
+ *                 aiScore: { type: integer, description: "Score out of 20" }
+ *                 scoreOutOf: { type: integer, example: 20 }
+ *                 band:
+ *                   type: string
+ *                   example: "Merit"
+ *                   description: "Distinction | Merit | Pass | Fail"
+ *                 appPass:
+ *                   type: boolean
+ *                   description: "true if score >= 16/20 (80%)"
+ *                 passed:
+ *                   type: boolean
+ *                   description: "true if score >= 10/20 (50%)"
+ *                 feedback: { type: object, nullable: true }
+ *                 strengths:
+ *                   type: array
+ *                   items: { type: string }
+ *                 improvements:
+ *                   type: array
+ *                   items: { type: string }
+ *                 sampleAnswer:
+ *                   type: string
+ *                   nullable: true
+ *                   description: The ideal answer for the student to compare against
+ *                 timeTakenSeconds: { type: integer }
+ *                 wordCount: { type: integer }
+ */
+lessonRouter.post('/essay/submit', protect, submitLessonEssay);
+
+/**
+ * @swagger
+ * /api/v1/lessons/{id}/progress/video:
+ *   post:
+ *     summary: Track video watch progress for a lesson
+ *     tags: [Lessons]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Called periodically as the student watches the lesson video.
+ *       Marks lesson as completed once currentTime >= 90% of total duration.
+ *       Triggers recalculation of module and subject progress.
  *     parameters:
  *       - in: path
  *         name: id
  *         required: true
- *         schema:
- *           type: string
+ *         schema: { type: string }
  *         description: Lesson ID
  *     requestBody:
  *       required: true
@@ -116,188 +183,208 @@ lessonRouter.get('/modules/:subjectId', protect, getModulesBySubject);
  *         application/json:
  *           schema:
  *             type: object
- *             required:
- *               - currentTime
+ *             required: [currentTime]
  *             properties:
  *               currentTime:
- *                 type: integer
- *                 example: 450
+ *                 type: number
  *                 description: Current video position in seconds
  *               videoDuration:
- *                 type: integer
- *                 example: 863
- *                 description: |
- *                   Total video duration in seconds (optional).
- *                   Frontend must send this on first ping.
- *                   Backend will save it for future calculations, if not it lead to an error in usage.
+ *                 type: number
+ *                 description: Total video duration in seconds (stored if not already set)
  *     responses:
  *       200:
- *         description: Progress tracked successfully
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 success:
- *                   type: boolean
- *                   example: true
- *                 message:
- *                   type: string
- *                   example: Video progress tracked
- *       404:
- *         description: Lesson not found
+ *         description: Progress tracked
  */
-lessonRouter.post(
-  '/:id/track-video',
-  protect,
-  validate(trackVideoSchema),
-  trackVideoProgress
-);
-
+lessonRouter.post('/:id/progress/video', protect, trackVideoProgress);
 
 /**
  * @swagger
- * /api/v1/lessons/{id}/track-time:
+ * /api/v1/lessons/{id}/progress/time:
  *   post:
- *     summary: Track time spent on lesson
+ *     summary: Increment time spent on a lesson
  *     tags: [Lessons]
  *     security:
  *       - bearerAuth: []
- *     description: |
- *       Tracks time user spends on lesson (watching video, reading content).
- *
- *
- *       **This contributes to:**
- *       - Subject total time (Image 16: "8h 15m")
- *       - Dashboard daily time (Image 13: "2 Hours time spent today")
+ *     description: Adds the given seconds to the user's time spent on this lesson and subject.
  *     parameters:
  *       - in: path
  *         name: id
  *         required: true
- *         schema:
- *           type: string
+ *         schema: { type: string }
  *     requestBody:
  *       required: true
  *       content:
  *         application/json:
  *           schema:
  *             type: object
- *             required:
- *               - seconds
+ *             required: [seconds]
  *             properties:
  *               seconds:
  *                 type: integer
- *                 example: 30
- *                 description: Seconds elapsed since last ping (usually 30)
+ *                 description: Seconds to add
  *     responses:
  *       200:
  *         description: Time tracked successfully
  */
-lessonRouter.post('/:id/track-time', protect, validate(trackTimeSchema), trackTimeSpent);
+lessonRouter.post('/:id/progress/time', protect, trackTimeSpent);
 
+/**
+ * @swagger
+ * /api/v1/lessons/{id}:
+ *   get:
+ *     summary: Get full lesson detail — video, transcript, progress, sidebar
+ *     tags: [Lessons]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Returns the full lesson detail page data:
+ *       - videoUrl, videoDuration, transcript, content
+ *       - User's current progress (videoWatchedSeconds, isCompleted, etc.)
+ *       - subjectModules: full module/lesson list for the sidebar navigation
+ *
+ *       Creates a userLessonProgress record (all zeros) if first time accessing.
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema: { type: string }
+ *         description: Lesson ID
+ *     responses:
+ *       200:
+ *         description: Full lesson data
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 id: { type: string }
+ *                 title: { type: string }
+ *                 slug: { type: string, nullable: true }
+ *                 videoUrl: { type: string, nullable: true }
+ *                 videoDuration: { type: number, nullable: true }
+ *                 transcript: { type: string, nullable: true }
+ *                 content: { type: string, nullable: true }
+ *                 order: { type: integer }
+ *                 module:
+ *                   type: object
+ *                   properties:
+ *                     id: { type: string }
+ *                     name: { type: string }
+ *                     subjectId: { type: string }
+ *                     subjectName: { type: string }
+ *                 userProgress:
+ *                   type: object
+ *                   nullable: true
+ *                   properties:
+ *                     isCompleted: { type: boolean }
+ *                     videoWatchedSeconds: { type: number }
+ *                     timeSpentSeconds: { type: number }
+ *                     lastAccessedAt: { type: string, format: date-time, nullable: true }
+ *                 subjectModules:
+ *                   type: array
+ *                   items:
+ *                     type: object
+ *                     properties:
+ *                       id: { type: string }
+ *                       name: { type: string }
+ *                       order: { type: integer }
+ *                       lessons:
+ *                         type: array
+ *                         items:
+ *                           type: object
+ *                           properties:
+ *                             id: { type: string }
+ *                             title: { type: string }
+ *                             order: { type: integer }
+ */
+lessonRouter.get('/:id', protect, getLessonById);
 
+/**
+ * @swagger
+ * /api/v1/lessons/{id}/mcq:
+ *   get:
+ *     summary: Get up to 7 randomised MCQ questions for a lesson
+ *     tags: [Lessons]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Returns up to 7 MCQ questions linked to this lesson, randomised on every call.
+ *       Used for the "Quick Quizzes" button on the lesson page.
+ *       Options are returned as a key-value map: { A: "...", B: "...", C: "...", D: "..." }
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema: { type: string }
+ *         description: Lesson ID
+ *     responses:
+ *       200:
+ *         description: Returns lessonId, lessonTitle, and questions[] (max 7)
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 lessonId: { type: string }
+ *                 lessonTitle: { type: string }
+ *                 questions:
+ *                   type: array
+ *                   items:
+ *                     type: object
+ *                     properties:
+ *                       id: { type: string }
+ *                       text: { type: string }
+ *                       options:
+ *                         type: object
+ *                         additionalProperties: { type: string }
+ *                       points: { type: integer }
+ */
+lessonRouter.get('/:id/mcq', protect, getLessonMCQs);
 
-  /**
-   * @swagger
-   * /api/v1/lessons/{id}:
-   *   get:
-   *     summary: Get lesson details with sidebar navigation
-   *     tags: [Lessons]
-   *     security:
-   *       - bearerAuth: []
-   *     description: Returns complete lesson details including video URL, content (markdown), transcript, user progress, and all modules/lessons for sidebar navigation.
-   *     parameters:
-   *       - in: path
-   *         name: id
-   *         required: true
-   *         schema:
-   *           type: string
-   *         description: Lesson ID
-   *     responses:
-   *       200:
-   *         description: Lesson retrieved successfully
-   *         content:
-   *           application/json:
-   *             schema:
-   *               type: object
-   *               properties:
-   *                 success:
-   *                   type: boolean
-   *                 message:
-   *                   type: string
-   *                 data:
-   *                   type: object
-   *                   properties:
-   *                     id:
-   *                       type: string
-   *                     title:
-   *                       type: string
-   *                       example: "Lesson 1: Characteristics of a Crime"
-   *                     slug:
-   *                       type: string
-   *                     content:
-   *                       type: string
-   *                       nullable: true
-   *                       description: Lesson content in markdown format
-   *                     videoUrl:
-   *                       type: string
-   *                       nullable: true
-   *                     videoDuration:
-   *                       type: integer
-   *                       nullable: true
-   *                     transcript:
-   *                       type: string
-   *                       nullable: true
-   *                     order:
-   *                       type: integer
-   *                     module:
-   *                       type: object
-   *                       properties:
-   *                         id:
-   *                           type: string
-   *                         name:
-   *                           type: string
-   *                         subjectId:
-   *                           type: string
-   *                         subjectName:
-   *                           type: string
-   *                     userProgress:
-   *                       type: object
-   *                       nullable: true
-   *                       properties:
-   *                         isCompleted:
-   *                           type: boolean
-   *                         videoWatchedSeconds:
-   *                           type: integer
-   *                         timeSpentSeconds:
-   *                           type: integer
-   *                         lastAccessedAt:
-   *                           type: string
-   *                           format: date-time
-   *                           nullable: true
-   *                     subjectModules:
-   *                       type: array
-   *                       items:
-   *                         type: object
-   *                         properties:
-   *                           id:
-   *                             type: string
-   *                           name:
-   *                             type: string
-   *                           order:
-   *                             type: integer
-   *                           lessons:
-   *                             type: array
-   *                             items:
-   *                               type: object
-   *                               properties:
-   *                                 id:
-   *                                   type: string
-   *                                 title:
-   *                                   type: string
-   *                                 order:
-   *                                   type: integer
-   */
-  lessonRouter.get('/:id', protect, getLessonById);
+/**
+ * @swagger
+ * /api/v1/lessons/{id}/essay:
+ *   get:
+ *     summary: Get a random essay question for lesson practice
+ *     tags: [Lessons]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Returns one randomly selected essay question for the student to practise on.
+ *       Source: EssayQuestion bank (the dedicated 747-question bank).
+ *
+ *       Lookup priority:
+ *       1. EssayQuestions linked directly to this lesson
+ *       2. Any EssayQuestion in the same subject (fallback)
+ *
+ *       Triggered when the student clicks "Essay Practice" on the lesson page.
+ *       The returned question.id is an EssayQuestion.id — pass it as
+ *       essayQuestionId when submitting.
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema: { type: string }
+ *         description: Lesson ID
+ *     responses:
+ *       200:
+ *         description: One random essay question
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 lessonId: { type: string }
+ *                 lessonTitle: { type: string }
+ *                 question:
+ *                   type: object
+ *                   properties:
+ *                     id:
+ *                       type: string
+ *                       description: EssayQuestion.id — pass as essayQuestionId on submit
+ *                     text: { type: string }
+ *                     subject: { type: string }
+ */
+lessonRouter.get('/:id/essay', protect, getLessonEssayQuestion);
 
 export default lessonRouter;
