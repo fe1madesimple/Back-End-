@@ -87,4 +87,3 @@ export const submitLessonEssay = asyncHandler(async (req: Request, res: Response
   // the review screen directly from this response.
   sendSuccess(res, 'Essay graded', result);
 });
-s
