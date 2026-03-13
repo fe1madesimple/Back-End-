@@ -723,9 +723,10 @@ model Module {
   questions    Question[] // Module-level questions
   userProgress UserModuleProgress[]
 
-  createdAt    DateTime      @default(now())
-  updatedAt    DateTime      @updatedAt
-  quizSessions QuizSession[]
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+  quizSessions   QuizSession[]
+  essayQuestions EssayQuestion[]
 
   @@unique([subjectId, slug])
   @@map("modules")
@@ -754,9 +755,10 @@ model Lesson {
   userProgress UserLessonProgress[]
   questions    Question[]
 
-  createdAt    DateTime      @default(now())
-  updatedAt    DateTime      @updatedAt
-  quizSessions QuizSession[]
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+  quizSessions   QuizSession[]
+  essayQuestions EssayQuestion[]
 
   @@unique([moduleId, slug])
   @@map("lessons")
@@ -791,11 +793,13 @@ enum AssetType {
 }
 
 model EssayAttempt {
-  id         String   @id @default(cuid())
-  userId     String
-  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  questionId String
-  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  id              String         @id @default(cuid())
+  userId          String
+  user            User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  questionId      String
+  question        Question       @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  essayQuestionId String?
+  essayQuestion   EssayQuestion? @relation(fields: [essayQuestionId], references: [id], onDelete: SetNull)
 
   answerText       String @db.Text
   timeTakenSeconds Int
@@ -817,12 +821,14 @@ model EssayAttempt {
   simulationId String?
   simulation   Simulation? @relation(fields: [simulationId], references: [id], onDelete: SetNull)
 
-  createdAt DateTime @default(now())
+  createdAt       DateTime       @default(now())
+  
 
   @@index([userId])
   @@index([questionId])
   @@index([simulationId])
   @@index([userId, createdAt])
+  @@index([essayQuestionId])
   @@map("essay_attempts")
 }
 
@@ -911,6 +917,28 @@ model Simulation {
   @@index([userId])
   @@index([userId, createdAt])
   @@map("simulations")
+}
+
+model EssayQuestion {
+  id       String @id @default(cuid())
+  moduleId String
+  lessonId String
+  module   Module @relation(fields: [moduleId], references: [id], onDelete: Cascade)
+  lesson   Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  subject     String
+  text        String  @db.Text
+  isPublished Boolean @default(true)
+
+  attempts EssayAttempt[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([moduleId])
+  @@index([lessonId])
+  @@index([subject])
+  @@map("essay_questions")
 }
 
 enum CaseJurisdiction {
