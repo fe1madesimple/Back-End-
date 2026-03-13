@@ -1,10 +1,8 @@
-import { AppError } from '@/shared/utils';
-import { asyncHandler } from '@/shared/utils';
+// src/modules/content/controller/lesson.controller.ts
+
+import { AppError, asyncHandler, sendSuccess } from '@/shared/utils';
 import lessonService from '../service/lesson.service';
 import { Request, Response } from 'express';
-import { sendSuccess } from '@/shared/utils';
-
-
 
 export const trackVideoProgress = asyncHandler(async (req: Request, res: Response) => {
   const userId = req.user!.user.id;
@@ -34,7 +32,7 @@ export const getModulesBySubject = asyncHandler(async (req: Request, res: Respon
   const userId = req.user!.user.id;
   const { subjectId } = req.params;
 
-  if (!subjectId) throw new AppError("subjectId must be provided")
+  if (!subjectId) throw new AppError('subjectId must be provided');
 
   const result = await lessonService.getModulesBySubject(userId, subjectId);
 
@@ -45,11 +43,48 @@ export const getLessonById = asyncHandler(async (req: Request, res: Response) =>
   const userId = req.user!.user.id;
   const { id } = req.params;
 
-  if (!id) throw new AppError("lesson id is required")
+  if (!id) throw new AppError('lesson id is required');
 
   const result = await lessonService.getLessonById(userId, id);
 
   sendSuccess(res, 'Lesson retrieved successfully', result);
 });
 
+export const getLessonMCQs = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { id } = req.params;
 
+  if (!id) throw new AppError('lesson id is required');
+
+  const result = await lessonService.getLessonMCQs(userId, id);
+
+  sendSuccess(res, 'MCQ questions retrieved', result);
+});
+
+export const getLessonEssayQuestion = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { id } = req.params;
+
+  if (!id) throw new AppError('lesson id is required');
+
+  const result = await lessonService.getLessonEssayQuestion(userId, id);
+
+  sendSuccess(res, 'Essay question retrieved', result);
+});
+
+export const submitLessonEssay = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { lessonId, essayQuestionId, answerText } = req.body;
+
+  const result = await lessonService.submitLessonEssay(userId, {
+    lessonId,
+    essayQuestionId,
+    answerText,
+  });
+
+  // result contains everything: question, userAnswer, sampleAnswer,
+  // score, band, feedback, strengths, improvements — frontend renders
+  // the review screen directly from this response.
+  sendSuccess(res, 'Essay graded', result);
+});
+s
