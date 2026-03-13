@@ -1,0 +1,21 @@
+{
+  "subject": "Tort Law",
+  "module": "Causation",
+  "lessons": [
+    {
+      "title": "Factual Causation — The But For Test",
+      "description": "The primary test for factual causation is the but for test: but for the defendant's breach of duty, would the plaintiff have suffered the same damage?",
+      "order": 1
+    },
+    {
+      "title": "Novus Actus Interveniens",
+      "description": "The concept of novus actus interveniens reflects the principle that the law cannot hold a defendant responsible indefinitely for all consequences that flow from their breach.",
+      "order": 2
+    },
+    {
+      "title": "Material Contribution and Complex Causation",
+      "description": "We established in Lesson 4.1 that where the but for test cannot be strictly satisfied — because of multiple causes — the material contribution test may bridge the gap.",
+      "order": 3
+    }
+  ]
+}

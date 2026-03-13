@@ -1,0 +1,21 @@
+{
+  "subject": "EU Law",
+  "module": "Member State Liability and National Procedural Autonomy",
+  "lessons": [
+    {
+      "title": "The Francovich Principle",
+      "description": "Let us begin with the background and the problem that gave rise to the doctrine. Before 1991, the position of an individual harmed by a state's failure to implement a directive was unenviable.",
+      "order": 1
+    },
+    {
+      "title": "Brasserie, Factortame and the Sufficiently Serious Breach",
+      "description": "These cases extended and refined the Francovich principle in ways that are of fundamental importance for FE-1 candidates.",
+      "order": 2
+    },
+    {
+      "title": "National Procedural Autonomy and Its Limits",
+      "description": "This is a topic of fundamental practical importance: when an individual wishes to enforce an EU law right before a national court, the procedural rules governing that claim — time limits, rules of standing, limitations on remedies...",
+      "order": 3
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "subject": "Property Law",
+  "module": "Easements & Profits à Prendre",
+  "lessons": [
+    {
+      "title": "Nature and Requirements of Easements",
+      "description": "Let me give you a precise definition. An easement is a proprietary right enjoyed by the owner of one piece of land — called the dominant tenement — over another piece of land — called the servient tenement — for the benefit of...",
+      "order": 1
+    },
+    {
+      "title": "Acquisition of Easements",
+      "description": "The first and most straightforward method is express grant.",
+      "order": 2
+    },
+    {
+      "title": "Prescription",
+      "description": "Prescription is the acquisition of an easement by long, continuous, uninterrupted use over time.",
+      "order": 3
+    },
+    {
+      "title": "Extinguishment and Profits a Prendre",
+      "description": "Easements can be extinguished in three main ways: by express release, by abandonment, and by unity of ownership.",
+      "order": 4
+    }
+  ]
+}

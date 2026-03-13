@@ -1,0 +1,16 @@
+{
+  "subject": "Tort Law",
+  "module": "The Standard of Care",
+  "lessons": [
+    {
+      "title": "The Objective Standard and the Reasonable Person",
+      "description": "The general standard in negligence is objective. The law does not ask whether this particular defendant did their best.",
+      "order": 1
+    },
+    {
+      "title": "Breach of Duty and the Factors Courts Consider",
+      "description": "The question of breach is determined by the judge — it is ultimately a question of fact, not of law.",
+      "order": 2
+    }
+  ]
+}

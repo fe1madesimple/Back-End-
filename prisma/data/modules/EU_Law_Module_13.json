@@ -1,0 +1,16 @@
+{
+  "subject": "EU Law",
+  "module": "Free Movement of Services and Freedom of Establishment",
+  "lessons": [
+    {
+      "title": "Freedom of Establishment — Article 49 TFEU",
+      "description": "Freedom of establishment is closely connected to free movement of services, and the boundary between the two has been the subject of considerable case law.",
+      "order": 1
+    },
+    {
+      "title": "Free Movement of Services — Article 56 TFEU and the Services Directive",
+      "description": "Lesson Two — the final lesson in this EU Law module series. Today we examine the free movement of services under Article 56 TFEU and the Services Directive 2006/123/EC.",
+      "order": 2
+    }
+  ]
+}

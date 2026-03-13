@@ -1,0 +1,21 @@
+{
+  "subject": "Contract Law",
+  "module": "Discharge of Contract",
+  "lessons": [
+    {
+      "title": "Discharge by Agreement and Performance",
+      "description": "The core principle. A contract may be discharged — that is, the parties' obligations brought to an end — in four principal ways: by agreement, by performance, by breach, and by frustration.",
+      "order": 1
+    },
+    {
+      "title": "Discharge by Breach and Repudiation",
+      "description": "The core principle. Not every breach discharges a contract.",
+      "order": 2
+    },
+    {
+      "title": "Discharge by Frustration",
+      "description": "The doctrine emerged in the nineteenth century to mitigate the harshness of absolute contractual obligation.",
+      "order": 3
+    }
+  ]
+}

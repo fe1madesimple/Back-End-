@@ -1,0 +1,26 @@
+{
+  "subject": "Criminal Law",
+  "module": "Homicide",
+  "lessons": [
+    {
+      "title": "Murder — Definition, Mens Rea, and Capital Murder",
+      "description": "The definition of murder in Irish law is found in Section 4(1) of the Criminal Justice Act 1964.",
+      "order": 1
+    },
+    {
+      "title": "Voluntary Manslaughter — Provocation",
+      "description": "Voluntary manslaughter is the offence where the accused has committed what would otherwise be murder — the actus reus and mens rea for murder are both present — but where a partial defence operates to reduce the conviction from mu...",
+      "order": 2
+    },
+    {
+      "title": "Involuntary Manslaughter and Dangerous Driving Causing Death",
+      "description": "There are two distinct types of involuntary manslaughter, and you need to know both.",
+      "order": 3
+    },
+    {
+      "title": "Assisted Suicide and the Right to Die",
+      "description": "Let us begin with the foundational statutory position.",
+      "order": 4
+    }
+  ]
+}

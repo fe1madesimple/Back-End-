@@ -1,0 +1,16 @@
+{
+  "subject": "Equity Law",
+  "module": "Breach of Trust and Equitable Remedies",
+  "lessons": [
+    {
+      "title": "Breach of Trust Personal Liability and Defences",
+      "description": "A trustee commits a breach of trust where they act in a manner inconsistent with their duties — whether by taking an unauthorised act, or by failing to take a required act.",
+      "order": 1
+    },
+    {
+      "title": "Third Party Liability Knowing Receipt and Dishonest Assistance",
+      "description": "There are two heads of liability: knowing receipt and dishonest assistance.",
+      "order": 2
+    }
+  ]
+}

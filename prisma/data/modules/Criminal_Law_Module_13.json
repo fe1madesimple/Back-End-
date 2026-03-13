@@ -1,0 +1,16 @@
+{
+  "subject": "Criminal Law",
+  "module": "Criminal Procedure, Courts, and Bail",
+  "lessons": [
+    {
+      "title": "Courts, Classification, and Arrest",
+      "description": "Let us begin with the court structure. Ireland's criminal court structure is layered, with each court having a defined jurisdiction over particular categories of offence.",
+      "order": 1
+    },
+    {
+      "title": "Bail and the Right to Silence",
+      "description": "Let us begin with bail. Bail is the conditional release of an accused person pending trial.",
+      "order": 2
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "subject": "Company Law",
+  "module": "Incorporation, Company Types and the Statutory Contract",
+  "lessons": [
+    {
+      "title": "What is Company Law? The Nature of a Company",
+      "description": "What actually is a company? At its core, a company is a legal entity — a legal person — that is distinct from the individuals who form it.",
+      "order": 1
+    },
+    {
+      "title": "Advantages and Disadvantages of Incorporation",
+      "description": "In our last lesson, we established that a company is a separate legal person, distinct from its members. In this lesson, we're going to explore why that matters in practice.",
+      "order": 2
+    },
+    {
+      "title": "Section 31 — The Statutory Contract",
+      "description": "Section 31 has appeared on the paper repeatedly — in October 2023, October 2022, March 2022, March 2021, March 2020, and March 2019. If there is one essay question you should be fully prepared to answer, it is this one.",
+      "order": 3
+    },
+    {
+      "title": "LTDs versus DACs — Key Differences",
+      "description": "An LTD — a private company limited by shares — is governed by Part 2 of the Companies Act 2014.",
+      "order": 4
+    }
+  ]
+}

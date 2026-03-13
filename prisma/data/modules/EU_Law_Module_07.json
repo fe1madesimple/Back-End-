@@ -1,0 +1,26 @@
+{
+  "subject": "EU Law",
+  "module": "Judicial Review — Article 263 TFEU",
+  "lessons": [
+    {
+      "title": "Grounds of Review and Reviewable Acts",
+      "description": "Article 263 TFEU provides that the Court of Justice of the European Union shall review the legality of legislative acts, of acts of the Council, of the Commission and of the European Central Bank, other than recommendations and op...",
+      "order": 1
+    },
+    {
+      "title": "Standing — Privileged, Quasi-Privileged and Non-Privileged Applicants",
+      "description": "Article 263 TFEU divides applicants into three categories: privileged applicants — the member states and principal EU institutions — who may challenge any act without demonstrating a particular interest; quasi-privileged applicants who may challenge acts that infringe their institutional prerogatives; and non-privileged applicants — individuals and companies — who must show direct and individual concern under the restrictive Plaumann test established by the Court of Justice in 1963 and still in force today.",
+      "order": 2
+    },
+    {
+      "title": "The Plea of Illegality — Article 277 and Indirect Challenges",
+      "description": "These mechanisms are important because the restrictive standing rules under Article 263 — particularly the Plaumann test for individual concern — mean that many private parties cannot challenge EU measures directly.",
+      "order": 3
+    },
+    {
+      "title": "Article 265 — Failure to Act",
+      "description": "This action is the counterpart to the Article 263 annulment action: whereas Article 263 challenges unlawful acts, Article 265 challenges unlawful omissions.",
+      "order": 4
+    }
+  ]
+}

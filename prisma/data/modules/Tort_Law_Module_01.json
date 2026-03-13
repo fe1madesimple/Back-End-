@@ -1,0 +1,16 @@
+{
+  "subject": "Tort Law",
+  "module": "The Nature and Function of Tort Law",
+  "lessons": [
+    {
+      "title": "Nature and Function of Tort Law",
+      "description": "So, what is a tort? A tort is a civil wrong — other than a breach of contract or a breach of trust — for which the law provides a remedy.",
+      "order": 1
+    },
+    {
+      "title": "FE-1 Tort Paper Structure and Exam Strategy",
+      "description": "The FE-1 Tort paper consists of eight questions. You must answer five.",
+      "order": 2
+    }
+  ]
+}

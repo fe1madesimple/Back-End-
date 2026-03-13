@@ -1,0 +1,26 @@
+{
+  "subject": "Property Law",
+  "module": "Co-Ownership",
+  "lessons": [
+    {
+      "title": "Joint Tenancy and Tenancy in Common",
+      "description": "Co-ownership arises whenever two or more people simultaneously hold an interest in the same piece of land. In Irish law, there are two forms of co-ownership: the joint tenancy and the tenancy in common.",
+      "order": 1
+    },
+    {
+      "title": "Creation of Co Ownership under LCLRA 2009",
+      "description": "We established that section 30 of the LCLRA 2009 creates a statutory default of joint tenancy for post-2009 conveyances to multiple parties.",
+      "order": 2
+    },
+    {
+      "title": "Severance of Joint Tenancy",
+      "description": "Severance is the process by which a joint tenancy is converted into a tenancy in common.",
+      "order": 3
+    },
+    {
+      "title": "Rights and Obligations of Co Owners",
+      "description": "The fundamental right of every co-owner — whether joint tenant or tenant in common — is the right to occupy the whole of the property.",
+      "order": 4
+    }
+  ]
+}

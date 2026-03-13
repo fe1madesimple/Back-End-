@@ -1,0 +1,21 @@
+{
+  "subject": "Equity Law",
+  "module": "Express Trusts: Trustee Duties and Powers",
+  "lessons": [
+    {
+      "title": "Trustees Duties Duties of Investment and the Prudent Trustee Standard",
+      "description": "Trustees have extensive duties when managing trust property.",
+      "order": 1
+    },
+    {
+      "title": "Trustees Duties Duty not to Profit and the Rule against Self-Dealing",
+      "description": "These are grounded in equity's fierce protection of the fiduciary relationship — the relationship of trust and confidence that a trustee holds with the beneficiaries.",
+      "order": 2
+    },
+    {
+      "title": "Trustees Powers Delegation Advancement and Maintenance",
+      "description": "The general rule at common law was that a trustee could not delegate their duties. Trustees are appointed personally for their judgment and skill — delegatus non potest delegare — a delegate cannot delegate.",
+      "order": 3
+    }
+  ]
+}

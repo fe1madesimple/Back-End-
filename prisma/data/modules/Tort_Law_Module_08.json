@@ -1,0 +1,11 @@
+{
+  "subject": "Tort Law",
+  "module": "Product Liability",
+  "lessons": [
+    {
+      "title": "Product Liability Common Law and the 1991 Act",
+      "description": "Let us begin with the common law. The foundational authority is, of course, Donoghue v Stevenson, decided by the House of Lords in 1932.",
+      "order": 1
+    }
+  ]
+}

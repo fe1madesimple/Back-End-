@@ -1,0 +1,16 @@
+{
+  "subject": "Criminal Law",
+  "module": "Public Order, Offences Against Justice, and State Offences",
+  "lessons": [
+    {
+      "title": "Public Order Offences",
+      "description": "Let us begin with the structure of the Act, because it is important to understand the architecture before diving into individual offences.",
+      "order": 1
+    },
+    {
+      "title": "Offences Against Justice and State Offences",
+      "description": "Let us begin with perjury. For most of Irish legal history, perjury was a common law offence — there was no dedicated statute.",
+      "order": 2
+    }
+  ]
+}

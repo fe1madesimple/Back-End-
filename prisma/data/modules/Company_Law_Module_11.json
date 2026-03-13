@@ -1,0 +1,26 @@
+{
+  "subject": "Company Law",
+  "module": "Insolvency — Examinership, Receivership and Liquidation",
+  "lessons": [
+    {
+      "title": "Examinership",
+      "description": "This is the process by which a company in financial difficulty can be given breathing space, protected from its creditors, and given a genuine chance to survive.",
+      "order": 1
+    },
+    {
+      "title": "Receivership",
+      "description": "In the last lesson, we looked at examinership — a process designed to rescue a company. Receivership is something quite different. A receiver is not there to save the company.",
+      "order": 2
+    },
+    {
+      "title": "Liquidation, or Winding Up",
+      "description": "This is the process by which a company's assets are realised, its debts are paid, and the company is dissolved. It is the end of the road.",
+      "order": 3
+    },
+    {
+      "title": "Realisation of Corporate Assets — Voidable Transactions",
+      "description": "In the previous lessons, we looked at examinership, receivership, and liquidation.",
+      "order": 4
+    }
+  ]
+}

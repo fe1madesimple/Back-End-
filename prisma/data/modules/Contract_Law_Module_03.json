@@ -1,0 +1,21 @@
+{
+  "subject": "Contract Law",
+  "module": "Consumer Protection and Sale of Goods",
+  "lessons": [
+    {
+      "title": "Consumer Rights Act 2022: Sale of Goods",
+      "description": "The core principle is this. Where a trader sells goods to a consumer, the Consumer Rights Act 2022 imposes statutory conformity obligations on the trader and grants the consumer a tiered set of remedies.",
+      "order": 1
+    },
+    {
+      "title": "Consumer Rights Act 2022: Digital Content and Services",
+      "description": "First, the definitions in section 2. Digital content means data produced and supplied in digital form — digital games, software, digital music, digital films, e-books.",
+      "order": 2
+    },
+    {
+      "title": "Unfair Contract Terms",
+      "description": "The history is important for any essay question in this area.",
+      "order": 3
+    }
+  ]
+}

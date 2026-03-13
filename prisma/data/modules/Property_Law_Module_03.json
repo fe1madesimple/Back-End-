@@ -1,0 +1,21 @@
+{
+  "subject": "Property Law",
+  "module": "Adverse Possession",
+  "lessons": [
+    {
+      "title": "Adverse Possession Basic Framework",
+      "description": "Let me begin with what adverse possession actually does, because students often misstate this. Adverse possession does not positively grant title to a squatter.",
+      "order": 1
+    },
+    {
+      "title": "Requirements for Adverse Possession",
+      "description": "The requirements for adverse possession are well-established in Irish and English case law.",
+      "order": 2
+    },
+    {
+      "title": "Special Cases and Advanced Issues",
+      "description": "Let us begin with future interests and reversions. Where land is subject to a lease, the paper owner holds the freehold reversion — the right to recover possession at the end of the lease.",
+      "order": 3
+    }
+  ]
+}

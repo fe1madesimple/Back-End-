@@ -1,0 +1,16 @@
+{
+  "subject": "Equity Law",
+  "module": "Constitution of Trusts",
+  "lessons": [
+    {
+      "title": "Constitution of Trusts The Rule in Milroy v Lord",
+      "description": "A trust is constituted when the trust property has been effectively transferred to the trustee or, where the settlor is themselves the trustee, when the settlor has effectively declared themselves trustee of the identified property.",
+      "order": 1
+    },
+    {
+      "title": "Constitution of Trusts Exceptions and Equity Will Perfect",
+      "description": "The fundamental distinction is between volunteers — those who have given no consideration — and persons who have given valuable consideration. The maxim: equity will not assist a volunteer.",
+      "order": 2
+    }
+  ]
+}

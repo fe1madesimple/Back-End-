@@ -1,0 +1,31 @@
+{
+  "subject": "EU Law",
+  "module": "Institutions of the European Union",
+  "lessons": [
+    {
+      "title": "The European Parliament",
+      "description": "We now turn to the institutions of the European Union.",
+      "order": 1
+    },
+    {
+      "title": "The Council and European Council",
+      "description": "Both are intergovernmental in character — representing the interests of member state governments — but they are distinct institutions with very different compositions, functions, and legal roles.",
+      "order": 2
+    },
+    {
+      "title": "The European Commission",
+      "description": "The Commission is unique in the EU's institutional architecture.",
+      "order": 3
+    },
+    {
+      "title": "The Court of Justice",
+      "description": "In terms of its constitutional impact on the EU legal order, the Court of Justice may be the single most important institution of the Union.",
+      "order": 4
+    },
+    {
+      "title": "Democratic Deficit and Institutional Accountability",
+      "description": "This concept refers to the perceived gap between the legislative and executive power exercised by EU institutions and the degree of direct democratic accountability to which those institutions are subject.",
+      "order": 5
+    }
+  ]
+}

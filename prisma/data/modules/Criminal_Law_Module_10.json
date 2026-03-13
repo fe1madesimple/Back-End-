@@ -1,0 +1,16 @@
+{
+  "subject": "Criminal Law",
+  "module": "Defences",
+  "lessons": [
+    {
+      "title": "Duress and Self-Defence",
+      "description": "Duress is a defence available where the accused commits a crime because they were subjected to a threat of immediate death or serious harm that a person of reasonable firmness would also have been unable to resist.",
+      "order": 1
+    },
+    {
+      "title": "Defence of the Dwelling",
+      "description": "The governing legislation is the Criminal Law (Defence and Dwelling) Act 2011.",
+      "order": 2
+    }
+  ]
+}

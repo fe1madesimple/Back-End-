@@ -1,0 +1,16 @@
+{
+  "subject": "Tort Law",
+  "module": "Remedies in Tort",
+  "lessons": [
+    {
+      "title": "Remedies in Tort Damages",
+      "description": "The fundamental principle underlying damages in tort is restitutio in integrum — restoration to the position the plaintiff would have been in had the tort not been committed.",
+      "order": 1
+    },
+    {
+      "title": "Remedies in Tort Injunctions",
+      "description": "In the context of tort law, injunctions are most commonly sought to restrain continuing or threatened tortious conduct.",
+      "order": 2
+    }
+  ]
+}

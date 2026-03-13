@@ -1,0 +1,21 @@
+{
+  "subject": "Constitutional Law",
+  "module": "The Constitution — Foundation and Interpretation",
+  "lessons": [
+    {
+      "title": "The Constitution — Structure and Supremacy",
+      "description": "Bunreacht na hÉireann is the fundamental law of the Irish State.",
+      "order": 1
+    },
+    {
+      "title": "Constitutional Interpretation",
+      "description": "The Irish courts have developed four main approaches to constitutional interpretation: literal or textual interpretation; historical or originalist interpretation; natural law interpretation; and the harmonious or living document interpretation.",
+      "order": 2
+    },
+    {
+      "title": "The Separation of Powers",
+      "description": "We examine the formal mechanism for altering Bunreacht na hÉireann, and the important body of case law on whether substantive limits exist on what may be amended.",
+      "order": 3
+    }
+  ]
+}

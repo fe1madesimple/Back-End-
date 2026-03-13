@@ -1,0 +1,26 @@
+{
+  "subject": "Property Law",
+  "module": "Licences, Proprietary Estoppel and Rights of Residence",
+  "lessons": [
+    {
+      "title": "Types of Licences",
+      "description": "There are four types of licence. The first is the bare licence.",
+      "order": 1
+    },
+    {
+      "title": "Contractual Licences",
+      "description": "A contractual licence arises wherever a person is given permission to be on or use land under a contract supported by consideration.",
+      "order": 2
+    },
+    {
+      "title": "Proprietary Estoppel",
+      "description": "The core elements of proprietary estoppel are three. First, a representation or assurance by the owner that the claimant has or will have rights over the land.",
+      "order": 3
+    },
+    {
+      "title": "Rights of Residence",
+      "description": "A right of residence is typically created by a deed of transfer or a will in favour of a family member, most commonly an elderly parent who transfers the family farm or home to a child on the condition that the child provides the parent with accommodation and support during their lifetime.",
+      "order": 4
+    }
+  ]
+}

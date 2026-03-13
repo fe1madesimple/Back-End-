@@ -1,0 +1,26 @@
+{
+  "subject": "EU Law",
+  "module": "Supremacy and Direct Effect",
+  "lessons": [
+    {
+      "title": "Supremacy of EU Law",
+      "description": "Supremacy — sometimes called primacy — means that wherever EU law and national law conflict, EU law prevails. The national rule must be set aside, not just interpreted compatibly, but positively disapplied.",
+      "order": 1
+    },
+    {
+      "title": "Direct Effect of Treaty Articles and Regulations",
+      "description": "Direct effect is complementary to supremacy: where supremacy determines which law prevails, direct effect determines whether an individual can rely on EU law at all.",
+      "order": 2
+    },
+    {
+      "title": "Direct Effect of Directives",
+      "description": "Directives present a particular challenge because, under Article 288 TFEU, they are binding as to the result to be achieved but leave to national authorities the choice of form and methods of implementation.",
+      "order": 3
+    },
+    {
+      "title": "Indirect Effect and Limits in Criminal Proceedings",
+      "description": "Understanding indirect effect, and critically understanding its limits, is essential for FE-1 candidates.",
+      "order": 4
+    }
+  ]
+}

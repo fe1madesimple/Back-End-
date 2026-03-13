@@ -1,0 +1,21 @@
+{
+  "subject": "Criminal Law",
+  "module": "Sexual Offences",
+  "lessons": [
+    {
+      "title": "Rape — Definition, Honest Belief ABOLISHED, and Consent",
+      "description": "The law on rape is primarily found in the Criminal Law (Rape) Act 1981, as amended by the Criminal Law (Rape) (Amendment) Act 1990, and as further amended by the Criminal Law (Sexual Offences) Act 2017, and most recently by the Criminal Law (Sexual Offences and Human Trafficking) Act 2024.",
+      "order": 1
+    },
+    {
+      "title": "Sexual Assault and Rape Under Section 4",
+      "description": "The offence is defined in Section 2(1) of the Criminal Law (Rape) Amendment Act 1990.",
+      "order": 2
+    },
+    {
+      "title": "Sexual Offences Against Children and Protected Persons",
+      "description": "The primary legislation in this area is the Criminal Law (Sexual Offences) Act 2006, substantially amended by the Criminal Law (Sexual Offences) Act 2017.",
+      "order": 3
+    }
+  ]
+}

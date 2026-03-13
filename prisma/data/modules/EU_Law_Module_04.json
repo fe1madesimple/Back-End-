@@ -1,0 +1,21 @@
+{
+  "subject": "EU Law",
+  "module": "General Principles and Fundamental Rights",
+  "lessons": [
+    {
+      "title": "General Principles of EU Law",
+      "description": "We have examined the written sources of EU law — the treaties, the Charter, and secondary legislation. But EU law also has an important category of unwritten law: the general principles.",
+      "order": 1
+    },
+    {
+      "title": "Fundamental Rights — Development and the Charter",
+      "description": "In Lesson One, we saw that fundamental rights form part of the general principles of EU law.",
+      "order": 2
+    },
+    {
+      "title": "Scope of the Charter — When Does It Apply to Member States?",
+      "description": "We know that the Charter of Fundamental Rights is legally binding from 1 December 2009. We know it applies to EU institutions and bodies at all times. But when does it apply to Member States?",
+      "order": 3
+    }
+  ]
+}

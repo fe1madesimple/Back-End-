@@ -1,0 +1,21 @@
+{
+  "subject": "EU Law",
+  "module": "Sources of EU Law",
+  "lessons": [
+    {
+      "title": "Primary Law — Treaties and the Charter",
+      "description": "We begin at the very top of that hierarchy: primary law. Primary law is the constitutional bedrock of the entire European Union legal order.",
+      "order": 1
+    },
+    {
+      "title": "Secondary Law — Regulations, Directives and Decisions",
+      "description": "We have seen that primary law — the Treaties and the Charter — sits at the apex of the EU legal order.",
+      "order": 2
+    },
+    {
+      "title": "Delegated Acts, Implementing Acts and Comitology",
+      "description": "We have examined primary law and the core types of secondary legislation — regulations, directives, and decisions.",
+      "order": 3
+    }
+  ]
+}

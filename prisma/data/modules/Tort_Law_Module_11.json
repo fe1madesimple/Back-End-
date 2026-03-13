@@ -1,0 +1,21 @@
+{
+  "subject": "Tort Law",
+  "module": "Trespass to Land and Nuisance",
+  "lessons": [
+    {
+      "title": "Trespass to Land",
+      "description": "What is trespass to land? Trespass to land is the direct, intentional, and unlawful interference with land in the possession of another.",
+      "order": 1
+    },
+    {
+      "title": "Private Nuisance",
+      "description": "Private nuisance is the unlawful, indirect interference with another's use or enjoyment of land, or with some right over or in connection with land.",
+      "order": 2
+    },
+    {
+      "title": "Public Nuisance and the Rule in Rylands v Fletcher",
+      "description": "Public nuisance is primarily a crime — it consists of an act or omission which endangers the life, health, property, or comfort of the public, or which obstructs the public in the exercise of rights common to all members of societ...",
+      "order": 3
+    }
+  ]
+}

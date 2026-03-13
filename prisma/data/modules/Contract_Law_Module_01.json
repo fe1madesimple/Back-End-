@@ -1,0 +1,36 @@
+{
+  "subject": "Contract Law",
+  "module": "Formation of Contract",
+  "lessons": [
+    {
+      "title": "Offer and Acceptance",
+      "description": "I'm your guide through Contract Law — and we're starting at the very beginning: how a contract is formed.",
+      "order": 1
+    },
+    {
+      "title": "Consideration",
+      "description": "Here is the core principle. Every contract not made under seal requires consideration.",
+      "order": 2
+    },
+    {
+      "title": "Promissory Estoppel",
+      "description": "The philosophical foundation was elegantly put by Lord Neuberger: \"A doctrine which puts legal clothing on the adage that you should not lead people up the garden path.\"",
+      "order": 3
+    },
+    {
+      "title": "Intention to Create Legal Relations",
+      "description": "The core principle is this. The parties must objectively intend to create a legal relationship.",
+      "order": 4
+    },
+    {
+      "title": "Capacity to Contract",
+      "description": "The law categorises contracts involving minors into three groups.",
+      "order": 5
+    },
+    {
+      "title": "Formal Requirements",
+      "description": "The core principle is this. The general rule is that contracts may be formed informally — orally, in writing, or even by conduct.",
+      "order": 6
+    }
+  ]
+}

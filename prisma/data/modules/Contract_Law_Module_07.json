@@ -1,0 +1,16 @@
+{
+  "subject": "Contract Law",
+  "module": "Privity, Illegality and Void Contracts",
+  "lessons": [
+    {
+      "title": "Privity of Contract",
+      "description": "The core principle. Only a party to a contract may sue to enforce it or be bound by its obligations.",
+      "order": 1
+    },
+    {
+      "title": "Illegal and Void Contracts",
+      "description": "The core principle. A contract that is illegal is void from the outset — neither party may enforce it or obtain any remedy from it.",
+      "order": 2
+    }
+  ]
+}

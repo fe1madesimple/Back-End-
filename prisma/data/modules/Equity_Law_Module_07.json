@@ -1,0 +1,16 @@
+{
+  "subject": "Equity Law",
+  "module": "Constructive Trusts",
+  "lessons": [
+    {
+      "title": "Constructive Trusts Categories and Common Intention",
+      "description": "A constructive trust is not created by the express intention of the parties.",
+      "order": 1
+    },
+    {
+      "title": "Proprietary Estoppel",
+      "description": "What is proprietary estoppel? Proprietary estoppel arises where: the owner of land makes a representation or assurance — express or implied — that the claimant has or will have rights over that land; the claimant relies on that re...",
+      "order": 2
+    }
+  ]
+}

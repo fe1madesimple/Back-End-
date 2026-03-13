@@ -1,0 +1,26 @@
+{
+  "subject": "Constitutional Law",
+  "module": "International Law and the European Union — Article 29",
+  "lessons": [
+    {
+      "title": "International Law — Article 29 and Dualism",
+      "description": "Article 29 of Bunreacht na hÉireann governs Ireland's international relations.",
+      "order": 1
+    },
+    {
+      "title": "Ireland and the EU — Article 29.4 and the Crotty Principle",
+      "description": "Ireland joined the European Economic Community on 1 January 1973, alongside the United Kingdom and Denmark.",
+      "order": 2
+    },
+    {
+      "title": "Primacy of EU Law — The Irish Position",
+      "description": "To understand the Irish position, we must first understand what the Court of Justice of the European Union says about primacy.",
+      "order": 3
+    },
+    {
+      "title": "The ECHR in Irish Law",
+      "description": "Ireland was a founding member of the Council of Europe and ratified the European Convention on Human Rights in 1953. For five decades, however, the Convention was not part of Irish domestic law.",
+      "order": 4
+    }
+  ]
+}

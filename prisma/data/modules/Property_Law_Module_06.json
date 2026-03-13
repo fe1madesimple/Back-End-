@@ -1,0 +1,26 @@
+{
+  "subject": "Property Law",
+  "module": "Family Property",
+  "lessons": [
+    {
+      "title": "Family Home Protection Act 1976",
+      "description": "Let us start with the core rule. Section 3 of the 1976 Act provides that a conveyance of an interest in the family home by one spouse is void unless the prior written consent of the other spouse has been obtained.",
+      "order": 1
+    },
+    {
+      "title": "Civil Partnership and Cohabitants",
+      "description": "The Civil Partnership and Certain Rights and Obligations of Cohabitants Act 2010 created two separate but related regimes.",
+      "order": 2
+    },
+    {
+      "title": "Family Law Acts and Property Adjustment Orders",
+      "description": "The primary statutory basis for property adjustment orders on judicial separation is the Judicial Separation and Family Law Reform Act 1989 and, on divorce, the Family Law Divorce Act 1996, as amended by the Family Law Act 2019.",
+      "order": 3
+    },
+    {
+      "title": "Bankruptcy and the Family Home",
+      "description": "When an individual is adjudicated bankrupt, their property — including their interest in the family home — vests automatically in the Official Assignee in Bankruptcy.",
+      "order": 4
+    }
+  ]
+}

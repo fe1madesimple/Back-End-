@@ -1,0 +1,36 @@
+{
+  "subject": "Property Law",
+  "module": "Succession Law",
+  "lessons": [
+    {
+      "title": "Testamentary Capacity",
+      "description": "The governing statute is the Succession Act 1965 — one of the most important pieces of legislation in Irish property law.",
+      "order": 1
+    },
+    {
+      "title": "Revocation Codicils and Alteration",
+      "description": "A will is by nature ambulatory — it speaks from death, not from the date it is made.",
+      "order": 2
+    },
+    {
+      "title": "Construction of Wills",
+      "description": "The governing principle in construction of wills is the testator's intention — what did the testator mean?",
+      "order": 3
+    },
+    {
+      "title": "Legal Right Share Section 111",
+      "description": "Under section 111 of the Succession Act 1965, where a testator leaves a spouse and children, the spouse's legal right share is one third of the estate.",
+      "order": 4
+    },
+    {
+      "title": "Provision for Children Section 117",
+      "description": "Section 117(1) of the Succession Act 1965 provides that where a testator fails in their moral duty to make proper provision for a child in accordance with their means, the court may order such provision to be made from the estate as the court thinks just.",
+      "order": 5
+    },
+    {
+      "title": "Intestacy",
+      "description": "There are two types of intestacy. Total intestacy arises where the deceased has left no valid will at all.",
+      "order": 6
+    }
+  ]
+}

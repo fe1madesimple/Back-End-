@@ -1,0 +1,21 @@
+{
+  "subject": "Constitutional Law",
+  "module": "Articles 43, 44 and 45 — Property, Religion and Directive Principles",
+  "lessons": [
+    {
+      "title": "Right to Private Property — Article 43",
+      "description": "In a country experiencing a prolonged housing and land use crisis, the interface between constitutional property rights and the demands of the common good has never been more practically significant.",
+      "order": 1
+    },
+    {
+      "title": "Freedom of Religion — Article 44",
+      "description": "Let us begin with the constitutional text in its current form. Article 44.1 provides: \"The State acknowledges that the homage of public worship is due to Almighty God.",
+      "order": 2
+    },
+    {
+      "title": "Directive Principles — Article 45",
+      "description": "Let us begin with the text. Article 45 opens with a preamble: \"The principles of social policy set forth in this Article are intended for the general guidance of the Oireachtas.",
+      "order": 3
+    }
+  ]
+}

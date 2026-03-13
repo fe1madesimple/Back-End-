@@ -1,0 +1,31 @@
+{
+  "subject": "Contract Law",
+  "module": "Terms of a Contract",
+  "lessons": [
+    {
+      "title": "Express Terms and Representations",
+      "description": "Here is the core principle. Not every statement made during negotiations becomes a term of the contract.",
+      "order": 1
+    },
+    {
+      "title": "Conditions, Warranties and Innominate Terms",
+      "description": "A condition is a core term — one that goes to the root of the contract.",
+      "order": 2
+    },
+    {
+      "title": "Implied Terms and Interpretation",
+      "description": "Let us start with the core principle on implied terms. Courts may imply a term into a contract where the parties' express agreement is incomplete.",
+      "order": 3
+    },
+    {
+      "title": "Exemption Clauses",
+      "description": "Here is the core principle. An exemption clause is a contractual term by which one party seeks to cut down their liability or limit the other party's remedies.",
+      "order": 4
+    },
+    {
+      "title": "Certainty of Terms",
+      "description": "Here is the core principle. For a contract to be enforceable, its terms must be sufficiently certain.",
+      "order": 5
+    }
+  ]
+}

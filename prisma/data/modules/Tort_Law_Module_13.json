@@ -1,0 +1,16 @@
+{
+  "subject": "Tort Law",
+  "module": "Defences in Tort Law",
+  "lessons": [
+    {
+      "title": "Defences Contributory Negligence and the Civil Liability Act 1961",
+      "description": "What is contributory negligence? Contributory negligence arises where the plaintiff's own failure to take reasonable care for their own safety contributed to the damage they suffered.",
+      "order": 1
+    },
+    {
+      "title": "Defences Volenti Non Fit Injuria and Limitation of Actions",
+      "description": "Volenti non fit injuria — the Latin phrase means: to one who consents, no injury is done. This is the defence of voluntary assumption of risk.",
+      "order": 2
+    }
+  ]
+}

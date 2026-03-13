@@ -1,0 +1,21 @@
+{
+  "subject": "Criminal Law",
+  "module": "Theft, Property Offences, and Cybercrime",
+  "lessons": [
+    {
+      "title": "Theft and Deception",
+      "description": "The definition of theft is found in Section 4(1) of the 2001 Act.",
+      "order": 1
+    },
+    {
+      "title": "Burglary and Aggravated Burglary",
+      "description": "Burglary is defined in Section 12 of the Criminal Justice (Theft and Fraud Offences) Act 2001.",
+      "order": 2
+    },
+    {
+      "title": "Handling Stolen Goods, Criminal Damage, and Cybercrime",
+      "description": "A person is guilty of handling stolen goods if, knowing or believing property to be stolen, they dishonestly receive it, assist in its disposal or removal, or arrange to do either of those things.",
+      "order": 3
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "subject": "Property Law",
+  "module": "Finding & Relativity of Title",
+  "lessons": [
+    {
+      "title": "Relativity of Title",
+      "description": "Now, before we get into the detail, I want you to pause on something that surprises most students when they first encounter it.",
+      "order": 1
+    },
+    {
+      "title": "The Law of Finding",
+      "description": "The basic rule is this. A finder of a lost object acquires a title to that object that is good against all the world — except the true owner.",
+      "order": 2
+    }
+  ]
+}

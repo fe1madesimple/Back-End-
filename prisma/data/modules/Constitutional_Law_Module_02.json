@@ -1,0 +1,36 @@
+{
+  "subject": "Constitutional Law",
+  "module": "The Oireachtas and Legislation",
+  "lessons": [
+    {
+      "title": "The Oireachtas — Composition and Powers",
+      "description": "The doctrine of separation of powers holds that the three principal functions of government — legislative, executive, and judicial — must be exercised by separate and distinct organs of the State.",
+      "order": 1
+    },
+    {
+      "title": "The Legislative Process",
+      "description": "Article 15.2.1° of Bunreacht na hÉireann vests the sole and exclusive power of making laws for the State in the Oireachtas — no other legislative authority may make law for the State. This monopoly on law-making is the constitutional foundation for the separation of powers in Ireland and the starting point for any analysis of delegated legislation or the validity of sub-constitutional rule-making.",
+      "order": 2
+    },
+    {
+      "title": "Delegated Legislation",
+      "description": "The Government is the executive organ of the Irish State, and the constitutional provisions governing its composition, accountability, and the scope of its executive power are among the most practically important in the Constitution.",
+      "order": 3
+    },
+    {
+      "title": "The President and the Reference to the Supreme Court",
+      "description": "Article 34.1 is the most frequently litigated provision in the separation of powers framework.",
+      "order": 4
+    },
+    {
+      "title": "The Government and Executive Power",
+      "description": "While the President's role is largely ceremonial, the Constitution confers a number of significant personal discretions on the President — powers that are exercised without any obligation to take government advice, and that function as important constitutional safeguards.",
+      "order": 5
+    },
+    {
+      "title": "The Judiciary and Judicial Independence",
+      "description": "While Article 15.2.1° vests the sole and exclusive law-making power in the Oireachtas, the Oireachtas may delegate limited rule-making authority to ministers and bodies — provided it lays down principles and policies in the parent Act to guide that authority. A delegation conferring unlimited or unprincipled rule-making power constitutes an unconstitutional abdication of the exclusive legislative function, and Henry VIII clauses — permitting ministers to amend Acts of the Oireachtas by statutory instrument — pose a particular constitutional problem.",
+      "order": 6
+    }
+  ]
+}

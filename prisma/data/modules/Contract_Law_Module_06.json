@@ -1,0 +1,16 @@
+{
+  "subject": "Contract Law",
+  "module": "Remedies for Breach of Contract",
+  "lessons": [
+    {
+      "title": "Damages",
+      "description": "The core principle. Where a party has breached a contract, the innocent party is entitled to damages designed to put them in the position they would have been in had the contract been performed.",
+      "order": 1
+    },
+    {
+      "title": "Equitable Remedies",
+      "description": "The core principle. Equitable remedies are discretionary — they are awarded at the court's discretion, not as of right.",
+      "order": 2
+    }
+  ]
+}

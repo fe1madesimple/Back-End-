@@ -1,0 +1,21 @@
+{
+  "subject": "EU Law",
+  "module": "Free Movement of Workers",
+  "lessons": [
+    {
+      "title": "Free Movement of Workers — Article 45 TFEU: Scope, Rights and Limitations",
+      "description": "Free movement of workers is guaranteed by Article 45 TFEU, and its detailed implementation is set out primarily in Regulation 492/2011.",
+      "order": 1
+    },
+    {
+      "title": "Workers — Family Members, Jobseekers and Rights After Employment",
+      "description": "In our last lesson we examined who qualifies as a worker and what rights that status confers.",
+      "order": 2
+    },
+    {
+      "title": "Derogations — Public Policy, Security, Health and Expulsion Safeguards",
+      "description": "Article 45(3) TFEU states that the rights guaranteed by free movement of workers may be limited on grounds of public policy, public security or public health.",
+      "order": 3
+    }
+  ]
+}

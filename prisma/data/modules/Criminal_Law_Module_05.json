@@ -1,0 +1,16 @@
+{
+  "subject": "Criminal Law",
+  "module": "Non-Fatal Offences Against the Person",
+  "lessons": [
+    {
+      "title": "Assault, Assault Causing Harm, and Serious Harm",
+      "description": "Section 2 of the NFOATP 1997 defines the offence of assault.",
+      "order": 1
+    },
+    {
+      "title": "Harassment and Stalking — S.10, S.10A NFOATP 1997",
+      "description": "This is a topic that the FE-1 examiner has tested before, and it is an area where students frequently confuse the two offences. So let's get it absolutely clear.",
+      "order": 2
+    }
+  ]
+}

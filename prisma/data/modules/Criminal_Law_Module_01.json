@@ -1,0 +1,16 @@
+{
+  "subject": "Criminal Law",
+  "module": "Foundations of Criminal Law",
+  "lessons": [
+    {
+      "title": "Characteristics and Indicia of a Crime",
+      "description": "The core principle is this: a crime is a public wrong. Not a private wrong — a public one. When someone commits a crime, it is not just an injury to the victim. It is an injury to the entire community.",
+      "order": 1
+    },
+    {
+      "title": "Classification of Criminal Offences",
+      "description": "At common law — before statute changed things — criminal offences were divided into three categories.",
+      "order": 2
+    }
+  ]
+}

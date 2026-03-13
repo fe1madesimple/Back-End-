@@ -1,0 +1,21 @@
+{
+  "subject": "Company Law",
+  "module": "Charges, Securities and Retention of Title",
+  "lessons": [
+    {
+      "title": "Fixed and Floating Charges — Definitions, Registration, and Priority",
+      "description": "A charge is, in essence, an agreement that certain property will be available to satisfy a debt in the event that the borrower defaults.",
+      "order": 1
+    },
+    {
+      "title": "Fixed versus Floating Charges and Crystallisation",
+      "description": "The causes of crystallisation of a floating charge have been examined in March 2024, March 2021, March 2020, March 2019, and March 2018. If you are sitting the exam, you need to know this material cold.",
+      "order": 2
+    },
+    {
+      "title": "Retention of Title Clauses",
+      "description": "Retention of title — often abbreviated to ROT — is one of those topics that appears on the FE-1 almost exclusively as a problem question.",
+      "order": 3
+    }
+  ]
+}

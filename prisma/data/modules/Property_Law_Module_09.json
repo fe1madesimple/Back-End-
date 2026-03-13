@@ -1,0 +1,26 @@
+{
+  "subject": "Property Law",
+  "module": "Landlord and Tenant Law",
+  "lessons": [
+    {
+      "title": "Nature of a Lease and Distinction from Licence",
+      "description": "Let us begin with the most fundamental question: what is a lease?",
+      "order": 1
+    },
+    {
+      "title": "Covenants in Leases",
+      "description": "Covenants in leases fall into two categories: express covenants, which the parties have specifically agreed to in the lease document; and implied covenants, which are implied by law regardless of whether the parties have included them in writing.",
+      "order": 2
+    },
+    {
+      "title": "Residential Tenancies Act 2004",
+      "description": "Let us begin with the scope of the Act. The Residential Tenancies Act 2004 applies to dwelling lettings — the letting of a dwelling for residential use by an individual as their home.",
+      "order": 3
+    },
+    {
+      "title": "Commercial Leases and Ground Rents",
+      "description": "Let us begin with commercial leases.",
+      "order": 4
+    }
+  ]
+}

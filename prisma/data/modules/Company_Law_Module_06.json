@@ -1,0 +1,16 @@
+{
+  "subject": "Company Law",
+  "module": "Transactions with Directors",
+  "lessons": [
+    {
+      "title": "Section 238 and Substantial Non-Cash Asset Transactions",
+      "description": "We are now entering a module that deals with the legislative controls placed on transactions between a company and its directors. In our previous module, we examined the fiduciary duties directors owe to the company.",
+      "order": 1
+    },
+    {
+      "title": "Section 239 and Loans to Directors",
+      "description": "In our last lesson, we examined Section 238 and the controls on substantial non-cash asset transactions.",
+      "order": 2
+    }
+  ]
+}

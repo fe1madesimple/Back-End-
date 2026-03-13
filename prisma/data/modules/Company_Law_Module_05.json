@@ -1,0 +1,21 @@
+{
+  "subject": "Company Law",
+  "module": "Directors' Duties",
+  "lessons": [
+    {
+      "title": "Types of Directors and The Duty to Act in Good Faith",
+      "description": "Section 2(1) of the Companies Act 2014 tells us that \"director\" includes any person occupying the position of director, by whatever name called.",
+      "order": 1
+    },
+    {
+      "title": "Duty to Avoid Conflicts of Interest and the Duty of Skill, Care, and Diligence",
+      "description": "In our last lesson, we looked at the duty to act in good faith and for a proper purpose.",
+      "order": 2
+    },
+    {
+      "title": "Remedies for Breach of Directors' Duties",
+      "description": "This lesson is absolutely critical for your FE-1 exam preparation. The examiners have made it clear, in their own reports, that when you discuss directors' duties, you must also discuss the remedies for breach.",
+      "order": 3
+    }
+  ]
+}

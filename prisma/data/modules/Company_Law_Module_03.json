@@ -1,0 +1,16 @@
+{
+  "subject": "Company Law",
+  "module": "Company Management, Capacity and Authority",
+  "lessons": [
+    {
+      "title": "Section 158 — Delegation of Management Powers to Directors",
+      "description": "If there is one provision in the Companies Act 2014 that you absolutely must know inside and out for the FE-1, it is Section 158. It has been described — rightly — as the cornerstone of corporate governance.",
+      "order": 1
+    },
+    {
+      "title": "Corporate Capacity and Authority — The Indoor Management Rule",
+      "description": "Is the company bound? And what protections exist for the innocent third party who dealt with that officer in good faith? The answers lie in the Indoor Management Rule and Section 40 of the Companies Act 2014.",
+      "order": 2
+    }
+  ]
+}

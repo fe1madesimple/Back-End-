@@ -1,0 +1,36 @@
+{
+  "subject": "Constitutional Law",
+  "module": "Article 40 — Fundamental Rights",
+  "lessons": [
+    {
+      "title": "Equality Before the Law — Article 40.1",
+      "description": "Let us start with the text itself, because the wording of this provision is crucial to understanding its scope — and its limits.",
+      "order": 1
+    },
+    {
+      "title": "Unenumerated Personal Rights — Article 40.3",
+      "description": "Let us begin with the text. Article 40.3.1° provides: \"The State guarantees in its laws to respect, and, as far as practicable, to defend and vindicate the personal rights of the citizen.\"",
+      "order": 2
+    },
+    {
+      "title": "Liberty of the Person — Article 40.4",
+      "description": "Let us begin with the text. Article 40.4.1° provides: \"No citizen shall be deprived of his personal liberty save in accordance with law.\"",
+      "order": 3
+    },
+    {
+      "title": "Inviolability of the Dwelling — Article 40.5",
+      "description": "The text is concise: \"The dwelling of every citizen is inviolable and shall not be forcibly entered save in accordance with law.\"",
+      "order": 4
+    },
+    {
+      "title": "Freedom of Expression — Article 40.6",
+      "description": "Let us begin with the constitutional text. Article 40.6.1°(i) provides: \"The right of the citizens to express freely their convictions and opinions.\" The subclause then immediately qualifies this: the education of public opinion i...",
+      "order": 5
+    },
+    {
+      "title": "Freedom of Assembly and Association — Article 40.6",
+      "description": "The constitutional text. Article 40.6.1°(ii) guarantees: \"The right of the citizens to assemble peaceably and without arms.\" Article 40.6.1°(iii) guarantees: \"The right of the citizens to form associations and unions.\" Both provis...",
+      "order": 6
+    }
+  ]
+}

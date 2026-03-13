@@ -1,0 +1,26 @@
+{
+  "subject": "Contract Law",
+  "module": "Vitiating Factors",
+  "lessons": [
+    {
+      "title": "Misrepresentation",
+      "description": "The core principle is this. A misrepresentation is a false statement of fact made by one party before or at the time of contracting which induces the other party to enter the contract.",
+      "order": 1
+    },
+    {
+      "title": "Mistake",
+      "description": "The core principle. At common law, mistake is narrowly construed.",
+      "order": 2
+    },
+    {
+      "title": "Duress",
+      "description": "The core principle. A contract entered into as a result of duress — illegitimate pressure applied by one party to coerce another into contracting — is voidable at the option of the innocent party.",
+      "order": 3
+    },
+    {
+      "title": "Undue Influence",
+      "description": "Biehler captures the essence: undue influence arises where the defendant has caused the plaintiff's judgment to become \"clouded by domination,\" resulting in the plaintiff entering a disadvantageous transaction.",
+      "order": 4
+    }
+  ]
+}

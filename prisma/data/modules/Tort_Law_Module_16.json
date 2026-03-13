@@ -1,0 +1,21 @@
+{
+  "subject": "Tort Law",
+  "module": "Concurrent Wrongdoers and Vicarious Liability",
+  "lessons": [
+    {
+      "title": "Concurrent Wrongdoers Civil Liability Act 1961",
+      "description": "What are concurrent wrongdoers?",
+      "order": 1
+    },
+    {
+      "title": "Vicarious Liability Employers and Independent Contractors",
+      "description": "In practice, vicarious liability most commonly arises in the employment context — an employer is vicariously liable for the torts of their employee committed in the course of employment.",
+      "order": 2
+    },
+    {
+      "title": "Medical Negligence The Dunne Principles",
+      "description": "Medical negligence in Ireland is governed by the Dunne principles, laid down by Finlay CJ in Dunne v National Maternity Hospital [1989] SC. A medical practitioner is not negligent if they acted in accordance with a general and approved practice of the relevant specialty — but following a defective practice will not immunise a defendant. On informed consent, Irish law adopts a patient-centred standard: the question is what a reasonable patient in the plaintiff's position would want to know, per Geoghegan v Harris [2000] and Fitzpatrick v White [2007].",
+      "order": 3
+    }
+  ]
+}

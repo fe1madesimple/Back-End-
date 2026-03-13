@@ -1,0 +1,26 @@
+{
+  "subject": "EU Law",
+  "module": "Citizenship of the European Union",
+  "lessons": [
+    {
+      "title": "EU Citizenship — Origins, Nature and the Maastricht Innovation",
+      "description": "Understanding EU citizenship is essential for FE-1 candidates because it underpins the rights of free movement, equal treatment, and political participation that arise throughout EU law.",
+      "order": 1
+    },
+    {
+      "title": "Right of Residence Under Directive 2004/38 — Conditions and Welfare",
+      "description": "The Directive consolidates and replaces a series of earlier instruments and creates a tiered residence framework that rewards longer residence with more secure status.",
+      "order": 2
+    },
+    {
+      "title": "Third Country National Family Members — Zambrano, McCarthy and Dereci",
+      "description": "This area is defined by three landmark cases: Ruiz Zambrano , McCarthy , and Dereci . Understanding these cases and the limits they impose on each other is essential for FE-1 candidates.",
+      "order": 3
+    },
+    {
+      "title": "Political Rights, Consular Protection and Constitutional Significance",
+      "description": "the final lesson of Module Eleven. In our previous lessons we have examined the right of residence under Directive 2004/38 and the Zambrano-McCarthy-Dereci jurisprudence on third country national family members.",
+      "order": 4
+    }
+  ]
+}

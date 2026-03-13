@@ -1,0 +1,21 @@
+{
+  "subject": "Tort Law",
+  "module": "Defamation",
+  "lessons": [
+    {
+      "title": "Defamation The Defamation Act 2009 and the Elements of the Tort",
+      "description": "The elements of defamation under the 2009 Act are as follows.",
+      "order": 1
+    },
+    {
+      "title": "Defamation Defences Under the 2009 Act",
+      "description": "The first and most important defence is truth. Under section 16 of the Act, it is a complete defence to prove that the defamatory statement is true in all material respects.",
+      "order": 2
+    },
+    {
+      "title": "Defamation Remedies and Practical Exam Application",
+      "description": "In this short but exam-critical lesson, we are consolidating the remedies available in defamation and walking through how to approach a defamation problem question on the FE-1 paper.",
+      "order": 3
+    }
+  ]
+}

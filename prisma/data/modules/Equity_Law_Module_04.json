@@ -1,0 +1,16 @@
+{
+  "subject": "Equity Law",
+  "module": "Secret Trusts and Mutual Wills",
+  "lessons": [
+    {
+      "title": "Secret Trusts Fully Secret and Half-Secret Trusts",
+      "description": "A secret trust arises where a testator leaves property to a person in their will — apparently as an outright gift — but has communicated to that person, outside the will, that the property is to be held on trust for a third party.",
+      "order": 1
+    },
+    {
+      "title": "Mutual Wills",
+      "description": "What are mutual wills? Mutual wills are wills made by two persons — typically spouses — pursuant to an agreement that both will make wills in agreed terms and that neither will revoke their will without the consent of the other.",
+      "order": 2
+    }
+  ]
+}

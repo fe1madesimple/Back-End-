@@ -1,0 +1,26 @@
+{
+  "subject": "Property Law",
+  "module": "Mortgages",
+  "lessons": [
+    {
+      "title": "Historical Methods of Creating Mortgages",
+      "description": "At common law, a mortgage was created by a conveyance of the legal fee simple to the mortgagee — the lender — subject to a proviso for redemption.",
+      "order": 1
+    },
+    {
+      "title": "Mortgagees Remedies on Default",
+      "description": "There are four primary remedies available to a mortgagee on default.",
+      "order": 2
+    },
+    {
+      "title": "Equity of Redemption and Clogs",
+      "description": "Recall from Lesson 7.1 that equity intervened to protect mortgagors who had missed the common law date for repayment.",
+      "order": 3
+    },
+    {
+      "title": "Consumer Mortgage Protections",
+      "description": "The primary regulatory framework for consumer mortgage protection in Ireland is the Central Bank's Code of Conduct on Mortgage Arrears, commonly known as the CCMA.",
+      "order": 4
+    }
+  ]
+}

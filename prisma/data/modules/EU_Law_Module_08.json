@@ -1,0 +1,21 @@
+{
+  "subject": "EU Law",
+  "module": "Preliminary Reference — Article 267 TFEU",
+  "lessons": [
+    {
+      "title": "The Preliminary Reference Mechanism and Foto-Frost",
+      "description": "Article 267 TFEU provides that the Court of Justice of the European Union shall have jurisdiction to give preliminary rulings concerning the interpretation of the Treaties and concerning the validity and interpretation of acts of...",
+      "order": 1
+    },
+    {
+      "title": "Mandatory Duty to Refer and Acte Clair",
+      "description": "The distinction between mandatory and discretionary references, and the doctrine of acte clair, is one of the most practically important aspects of EU procedural law and is regularly examined in the FE-1.",
+      "order": 2
+    },
+    {
+      "title": "Effect of Preliminary Rulings and Temporal Limitations",
+      "description": "We also examine the relationship between the Court of Justice and national courts within this cooperative procedure.",
+      "order": 3
+    }
+  ]
+}

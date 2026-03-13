@@ -1,0 +1,16 @@
+{
+  "subject": "Criminal Law",
+  "module": "Secondary Participation and Common Enterprise",
+  "lessons": [
+    {
+      "title": "Aid, Abet, Counsel, Procure — and Accessories",
+      "description": "The foundation of secondary participation in Irish law is Section 7(1) of the Criminal Law Act 1997.",
+      "order": 1
+    },
+    {
+      "title": "Common Design, Joint Enterprise, and Withdrawal",
+      "description": "Let's establish the core principle first. Where two or more persons agree to commit a crime, each is liable for all acts done in furtherance of the common design.",
+      "order": 2
+    }
+  ]
+}

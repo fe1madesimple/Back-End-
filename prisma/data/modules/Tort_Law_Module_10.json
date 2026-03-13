@@ -1,0 +1,21 @@
+{
+  "subject": "Tort Law",
+  "module": "Trespass to the Person",
+  "lessons": [
+    {
+      "title": "Trespass to the Person Battery",
+      "description": "What is battery? Battery is the intentional application of direct and unlawful physical force to another person without their consent.",
+      "order": 1
+    },
+    {
+      "title": "Trespass to the Person Assault and False Imprisonment",
+      "description": "Let us begin with assault. In tort law — and it is important to distinguish this from criminal law — assault is the intentional act of causing the plaintiff to apprehend an imminent, unlawful application of force.",
+      "order": 2
+    },
+    {
+      "title": "Trespass to the Person Intentional Infliction of Emotional Distress",
+      "description": "The traditional trespass torts — battery, assault, and false imprisonment — protect against specific forms of intentional wrongdoing.",
+      "order": 3
+    }
+  ]
+}

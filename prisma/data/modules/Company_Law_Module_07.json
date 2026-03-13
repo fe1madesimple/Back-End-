@@ -1,0 +1,16 @@
+{
+  "subject": "Company Law",
+  "module": "Shareholder Remedies",
+  "lessons": [
+    {
+      "title": "S212 — Oppression and Disregard of Members' Interests",
+      "description": "If there is one shareholder remedy you must know inside and out for the FE-1 exam, it is this one.",
+      "order": 1
+    },
+    {
+      "title": "The Rule in Foss v Harbottle and the Derivative Action",
+      "description": "In our last lesson, we explored Section 212 — the most important shareholder remedy in Irish company law.",
+      "order": 2
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "subject": "Company Law",
+  "module": "Capital, Distributions and Share Transfer",
+  "lessons": [
+    {
+      "title": "Dividends and Distributions",
+      "description": "This is a topic that appears regularly in FE-1 examinations, and getting it right requires a solid understanding of both the statutory framework and the key case law.",
+      "order": 1
+    },
+    {
+      "title": "Transfer of Shares",
+      "description": "A share is fundamentally freely transferable. It is a chose in action — a bundle of rights, interests, and obligations that can be bought, sold, or gifted.",
+      "order": 2
+    }
+  ]
+}

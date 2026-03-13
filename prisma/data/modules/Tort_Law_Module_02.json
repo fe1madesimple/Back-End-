@@ -1,0 +1,21 @@
+{
+  "subject": "Tort Law",
+  "module": "The Duty of Care",
+  "lessons": [
+    {
+      "title": "Historical Development and the Glencar Test",
+      "description": "Before 1932, the courts recognised duties of care only in narrow, established categories — between parties in a contractual relationship, or in a small number of defined tortious relationships.",
+      "order": 1
+    },
+    {
+      "title": "Special Duty Situations — Omissions Third Parties and Public Authorities",
+      "description": "Let us begin with omissions. The general rule in negligence is that there is no duty to act — only a duty to refrain from harmful action.",
+      "order": 2
+    },
+    {
+      "title": "Pure Economic Loss and Negligent Misstatement",
+      "description": "The general rule: in negligence, the courts will compensate for physical injury and physical damage to property.",
+      "order": 3
+    }
+  ]
+}

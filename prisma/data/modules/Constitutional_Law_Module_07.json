@@ -1,0 +1,51 @@
+{
+  "subject": "Constitutional Law",
+  "module": "Criminal Justice and Due Process — Article 38",
+  "lessons": [
+    {
+      "title": "Due Course of Law — The Core Guarantee",
+      "description": "Over nine lessons, we work through every major aspect of the constitutional framework for criminal proceedings, from the definition of a criminal charge to the right to legal representation.",
+      "order": 1
+    },
+    {
+      "title": "Vague Offences",
+      "description": "The principle is sometimes expressed as the rule against vague offences, and sometimes as the principle of legal certainty in criminal law. The underlying rationale is both fairness and the rule of law.",
+      "order": 2
+    },
+    {
+      "title": "Presumption of Innocence and Reverse Onus",
+      "description": "The presumption of innocence is not expressed in terms in Article 38.1.",
+      "order": 3
+    },
+    {
+      "title": "Undue Delay",
+      "description": "The right to trial with reasonable expedition flows from Article 38.1's guarantee of trial in due course of law.",
+      "order": 4
+    },
+    {
+      "title": "Duty to Seek and Preserve Evidence",
+      "description": "The principle is straightforward in its foundation: the constitutional right to a fair trial requires that an accused person be tried on the basis of all available evidence, including evidence that might exculpate or assist the de...",
+      "order": 5
+    },
+    {
+      "title": "Pre-Trial Publicity",
+      "description": "This is Lesson Six of Module Seven — Constitutional Law for the FE-1 Examination.",
+      "order": 6
+    },
+    {
+      "title": "Fair Procedures and Natural Justice",
+      "description": "Article 38.1 provides that no person shall be tried on any criminal charge save in due course of law.",
+      "order": 7
+    },
+    {
+      "title": "Special Criminal Court — Article 38.3",
+      "description": "The Constitutional Framework — Articles 38.3 and 38.5",
+      "order": 8
+    },
+    {
+      "title": "Right to Legal Representation",
+      "description": "The right to a fair trial under Article 38.1 of the Constitution encompasses, in serious criminal cases, the right to have the assistance of a lawyer.",
+      "order": 9
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "subject": "Property Law",
+  "module": "Freehold Covenants",
+  "lessons": [
+    {
+      "title": "Freehold Covenants at Common Law",
+      "description": "Common examples of freehold covenants include: \"The purchaser covenants not to use the property for commercial purposes\"; \"The purchaser covenants to maintain the boundary fence\"; \"The purchaser covenants not to build above two st...",
+      "order": 1
+    },
+    {
+      "title": "Equity and the LCLRA 2009",
+      "description": "Equity's intervention on covenants is one of the most important doctrinal developments in English and Irish property law.",
+      "order": 2
+    }
+  ]
+}

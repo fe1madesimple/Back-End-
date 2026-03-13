@@ -1,0 +1,26 @@
+{
+  "subject": "EU Law",
+  "module": "Free Movement of Goods",
+  "lessons": [
+    {
+      "title": "Customs Union — Articles 28 to 30 TFEU",
+      "description": "The foundation of free movement of goods is the customs union, established by Articles 28 to 32 TFEU. The customs union has two components.",
+      "order": 1
+    },
+    {
+      "title": "Article 110 TFEU — Internal Taxation, Discrimination and Protection",
+      "description": "Article 110 operates in a different area from Article 30 — it is not concerned with charges imposed at the border, but with fiscal systems applied internally within a member state that nevertheless distort competition between dome...",
+      "order": 2
+    },
+    {
+      "title": "Articles 34 and 35 — MEQRs, Dassonville, Cassis and Keck",
+      "description": "Article 34 prohibits quantitative restrictions on imports and all measures having equivalent effect between member states. Article 35 applies the same prohibition to exports.",
+      "order": 3
+    },
+    {
+      "title": "Article 36 Justifications and Proportionality",
+      "description": "Article 36 is the safety valve of the free movement of goods regime — it acknowledges that the elimination of trade barriers is not an absolute value and that member states retain legitimate interests that may sometimes conflict w...",
+      "order": 4
+    }
+  ]
+}

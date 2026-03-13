@@ -1,0 +1,16 @@
+{
+  "subject": "Company Law",
+  "module": "Restriction and Disqualification of Directors",
+  "lessons": [
+    {
+      "title": "Restriction of Directors — Section 819 of the Companies Act 2014",
+      "description": "Section 819 of the Companies Act 2014 establishes a mandatory restriction regime: where a company is wound up insolvent, the liquidator must apply to court to have each director restricted — unless the court is satisfied the director acted honestly and responsibly, co-operated with the liquidator, and that no other just and equitable reason warrants restriction. The default position is restriction; the burden falls on the director to displace it.",
+      "order": 1
+    },
+    {
+      "title": "Disqualification of Directors — Section 839 of the Companies Act 2014",
+      "description": "Section 839 of the Companies Act 2014 empowers a court to disqualify a person from acting as a director for such period as the court thinks fit. Unlike the fixed five-year restriction order under Section 819, disqualification is discretionary in duration and operates on broader grounds — including fraud, criminal conviction, persistent default in filing obligations, and conduct that makes it just and equitable to disqualify.",
+      "order": 2
+    }
+  ]
+}

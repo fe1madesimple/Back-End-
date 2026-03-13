@@ -1,0 +1,16 @@
+{
+  "subject": "Criminal Law",
+  "module": "Actus Reus",
+  "lessons": [
+    {
+      "title": "Actus Reus — Core Principles, Voluntariness, and Omissions",
+      "description": "We're in Module 2 now — Actus Reus — and this is where the building blocks of criminal liability really come together. You cannot commit a crime without both an actus reus and a mens rea.",
+      "order": 1
+    },
+    {
+      "title": "Causation",
+      "description": "There are two stages of causation that you must work through in sequence: factual causation, and then legal causation.",
+      "order": 2
+    }
+  ]
+}

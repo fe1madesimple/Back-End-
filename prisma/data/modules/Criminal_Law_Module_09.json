@@ -1,0 +1,11 @@
+{
+  "subject": "Criminal Law",
+  "module": "Inchoate Offences",
+  "lessons": [
+    {
+      "title": "Conspiracy, Incitement, and Attempt",
+      "description": "The defining feature of inchoate offences is this: liability attaches before a substantive offence is complete.",
+      "order": 1
+    }
+  ]
+}

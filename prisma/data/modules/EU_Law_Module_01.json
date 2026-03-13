@@ -1,0 +1,21 @@
+{
+  "subject": "EU Law",
+  "module": "History and Development of the European Union",
+  "lessons": [
+    {
+      "title": "Origins of European Integration",
+      "description": "So let us go back. The year is 1945. The Second World War has just ended. Europe lies in ruins — physically, economically, morally. Two world wars within thirty years.",
+      "order": 1
+    },
+    {
+      "title": "Constitutional Evolution — SEA to Lisbon",
+      "description": "In our last lesson, we covered the founding of the EEC in 1957. Today we trace the constitutional evolution of the EU from the 1980s through to the Lisbon Treaty of 2009 — the treaty framework currently in force.",
+      "order": 2
+    },
+    {
+      "title": "Brexit and Article 50 TEU",
+      "description": "Brexit matters for FE-1 candidates not only as a historical event but because Article 50 TEU was invoked and tested for the first time, producing important CJEU case law on the nature of the withdrawal right.",
+      "order": 3
+    }
+  ]
+}

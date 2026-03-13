@@ -1,0 +1,21 @@
+{
+  "subject": "Constitutional Law",
+  "module": "Articles 41, 42 and 42A — Family, Education and Children",
+  "lessons": [
+    {
+      "title": "The Family — Article 41",
+      "description": "Article 41 recognises the Family as the natural primary and fundamental unit group of Society — a moral institution with inalienable and imprescriptible rights antecedent and superior to all positive law. That protection was historically confined to the marital family, as confirmed in The State (Nicolaou) v An Bord Uchtála, but has been progressively challenged through referendum, litigation, and — most recently — the contested 2024 referendums on the definition of family and care.",
+      "order": 1
+    },
+    {
+      "title": "Education — Article 42",
+      "description": "Let us begin with the core constitutional text. Article 42.1 provides: \"The State acknowledges that the primary and natural educator of the child is the Family and guarantees to respect the inalienable right and duty of parents to...",
+      "order": 2
+    },
+    {
+      "title": "Children's Rights — Article 42A",
+      "description": "Let us begin with the context. Before the Thirty-first Amendment, Irish constitutional law recognised children's rights primarily as derivative — they flowed from and through the rights of parents, particularly the family rights p...",
+      "order": 3
+    }
+  ]
+}

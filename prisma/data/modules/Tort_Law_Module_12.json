@@ -1,0 +1,11 @@
+{
+  "subject": "Tort Law",
+  "module": "Strict Liability",
+  "lessons": [
+    {
+      "title": "Strict Liability Animals and the Animals Act",
+      "description": "The common law recognised strict liability for animals in two main categories: cattle trespass and the scienter rule.",
+      "order": 1
+    }
+  ]
+}

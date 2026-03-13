@@ -1,0 +1,21 @@
+{
+  "subject": "Company Law",
+  "module": "Company Meetings and Decision-Making",
+  "lessons": [
+    {
+      "title": "Types of Resolutions",
+      "description": "The Companies Act 2014 recognises four types of resolution: ordinary resolutions passed by simple majority; special resolutions requiring seventy-five per cent of votes cast; unanimous written resolutions; and majority written resolutions. The type required depends on the nature of the decision — and special resolutions must be filed with the Companies Registration Office within fifteen days of being passed under Section 198.",
+      "order": 1
+    },
+    {
+      "title": "General Meetings — AGMs and EGMs",
+      "description": "This is a highly practical area that is regularly tested in FE-1 examinations. There are specific numbers, thresholds, and time limits that you will need to memorise, so pay close attention.",
+      "order": 2
+    },
+    {
+      "title": "Director Meetings and Board Governance",
+      "description": "Directors exercise their powers collectively at board meetings, or, where the constitution permits, through written resolutions of the board.",
+      "order": 3
+    }
+  ]
+}

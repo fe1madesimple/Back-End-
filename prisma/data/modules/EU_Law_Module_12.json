@@ -1,0 +1,16 @@
+{
+  "subject": "EU Law",
+  "module": "Equality Law",
+  "lessons": [
+    {
+      "title": "The Equal Pay Principle — Article 157 TFEU and Defrenne",
+      "description": "Equality law begins with the principle of equal pay for equal work, now enshrined in Article 157 TFEU, and the foundational trilogy of Defrenne judgments that transformed what began as an economic harmonisation measure into a fund...",
+      "order": 1
+    },
+    {
+      "title": "Equal Treatment Directives and the Broadened Equality Framework",
+      "description": "In our last lesson we examined the equal pay principle under Article 157 TFEU.",
+      "order": 2
+    }
+  ]
+}

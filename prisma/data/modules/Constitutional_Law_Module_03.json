@@ -1,0 +1,21 @@
+{
+  "subject": "Constitutional Law",
+  "module": "Judicial Review of Administrative Action",
+  "lessons": [
+    {
+      "title": "Judicial Review — Grounds and Procedure",
+      "description": "Judicial review is the supervisory jurisdiction of the High Court by which the legality of decisions, actions, and failures of public bodies — including legislation — is assessed.",
+      "order": 1
+    },
+    {
+      "title": "Constitutional Dimension of Administrative Fairness",
+      "description": "Once a court determines that a law or act is unconstitutional, what happens?",
+      "order": 2
+    },
+    {
+      "title": "Remedies in Judicial Review",
+      "description": "This is a distinctive feature of Irish constitutional law: the power of the President to refer a bill to the Supreme Court for a determination of its constitutionality before it is signed into law.",
+      "order": 3
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "subject": "Company Law",
+  "module": "Corporate Enforcement",
+  "lessons": [
+    {
+      "title": "Establishment and Functions of the Corporate Enforcement Authority",
+      "description": "This is our final lesson in the entire Company Law course, and it covers a topic that is both relatively new and increasingly important — the Corporate Enforcement Authority, or CEA.",
+      "order": 1
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "subject": "Tort Law",
+  "module": "Psychiatric Injury",
+  "lessons": [
+    {
+      "title": "Psychiatric Injury Primary Victims",
+      "description": "Let us begin with first principles. The law distinguishes between two categories of plaintiff in psychiatric injury cases: primary victims and secondary victims.",
+      "order": 1
+    },
+    {
+      "title": "Psychiatric Injury Secondary Victims and the Kelly v Hennessy Test",
+      "description": "A secondary victim is someone who suffers psychiatric injury not because they were in the zone of physical danger themselves, but because they witnessed — or learned of — the death or serious injury of another person.",
+      "order": 2
+    }
+  ]
+}

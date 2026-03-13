@@ -1,0 +1,16 @@
+{
+  "subject": "Equity Law",
+  "module": "Formation and Validity of Trusts",
+  "lessons": [
+    {
+      "title": "The Three Certainties Certainty of Intention and Subject Matter",
+      "description": "What is a trust? A trust arises where a person — the trustee — holds property on behalf of another — the beneficiary.",
+      "order": 1
+    },
+    {
+      "title": "The Three Certainties Certainty of Objects",
+      "description": "The objects of a trust are its beneficiaries. For a trust to be valid, the beneficiaries must be ascertainable with sufficient certainty.",
+      "order": 2
+    }
+  ]
+}
