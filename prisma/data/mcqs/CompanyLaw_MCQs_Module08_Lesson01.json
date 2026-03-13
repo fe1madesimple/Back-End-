@@ -1,0 +1,251 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module08_Lesson01.txt",
+  "module_number": 8,
+  "module_title": "Director Accountability: Restriction and Disqualification",
+  "lesson_number": 1,
+  "lesson_title": "Restriction of Directors — s.819 CA 2014",
+  "total_questions": 20,
+  "questions": [
+    {
+      "id": "CL_M08_L01_Q01",
+      "question": "Under s.819 CA 2014, a court MUST make a restriction order against a director of an insolvent company UNLESS one of three conditions is satisfied. Which of the following is NOT one of those three conditions?",
+      "options": {
+        "A": "The director acted honestly and responsibly in relation to the conduct of the company's affairs",
+        "B": "There is no other reason why it would be just and equitable to make the restriction order",
+        "C": "The director resigned from the company at least 12 months before the commencement of its winding up",
+        "D": "The director co-operated with the liquidator in the realisation of assets and discharge of liabilities"
+      },
+      "correct_answer": "C",
+      "explanation": "s.819(1) CA 2014 requires restriction UNLESS the director satisfies the court that: (1) they acted honestly and responsibly; (2) they cooperated with the liquidator; AND/OR (3) there is no other reason making restriction just and equitable. Resignation 12 months before winding up is not a statutory defence to restriction under s.819."
+    },
+    {
+      "id": "CL_M08_L01_Q02",
+      "question": "A director of an insolvent company applies to court to be relieved from restriction under s.819 CA 2014. The liquidator opposes the application. The director argues they acted at all times on the advice of the company's accountants. How will the court approach this argument?",
+      "options": {
+        "A": "Reliance on professional advice is an absolute defence to restriction — the court must automatically grant relief",
+        "B": "Reliance on professional advice is a relevant but not conclusive factor — the court will examine the overall pattern of conduct and whether the director meaningfully engaged with the advice",
+        "C": "Reliance on professional advice is irrelevant — restriction is a strict liability regime with no defences based on advice received",
+        "D": "The court will accept the advice defence only if the accountants are professionally indemnified and the director was not a qualified accountant themselves"
+      },
+      "correct_answer": "B",
+      "explanation": "Irish courts consider reliance on professional advice as a relevant factor in assessing honesty and responsibility under s.819, but it is not an automatic defence. The court examines whether the director genuinely engaged with and acted upon the advice, not merely used professional advisers as a shield: Re Costello Doors Ltd [1995]."
+    },
+    {
+      "id": "CL_M08_L01_Q03",
+      "question": "The seminal Irish authority setting out the five-fold test for 'acting honestly and responsibly' under the restriction regime is La Moselle Clothing Ltd v Soualhi [1998] IEHC. Which of the following is NOT one of the five factors identified by Shanley J?",
+      "options": {
+        "A": "The extent to which the director complied with the requirements of the Companies Acts",
+        "B": "The extent to which the director has contributed to the insolvency of the company",
+        "C": "The director's personal financial contribution to the company's share capital",
+        "D": "Whether the director acted responsibly in the conduct of the company's affairs in light of all the circumstances of the company"
+      },
+      "correct_answer": "C",
+      "explanation": "In La Moselle Clothing Ltd v Soualhi [1998] IEHC, Shanley J set out a five-factor test including: compliance with Companies Acts obligations; the extent to which the director's conduct contributed to insolvency; the general standard of conduct; whether the director acted on reasonable professional advice; and whether they took appropriate action when difficulties arose. Personal financial contribution to share capital was not one of the enumerated factors."
+    },
+    {
+      "id": "CL_M08_L01_Q04",
+      "question": "Under s.819 CA 2014, what is the effect of a restriction order on a restricted person?",
+      "options": {
+        "A": "The restricted person is permanently banned from acting as a director of any company incorporated in Ireland",
+        "B": "For five years from the date of the order, the restricted person may not be a director or secretary of any company unless that company has a minimum issued share capital of €500,000 (public company) or €100,000 (private company)",
+        "C": "For five years, the restricted person may not be a director or secretary of any company unless that company has a minimum paid-up share capital of €500,000 (plc) or €100,000 (private company)",
+        "D": "For three years, the restricted person may not act as a director, officer, or employee of any company registered in Ireland"
+      },
+      "correct_answer": "C",
+      "explanation": "Under s.819 and s.820 CA 2014, a restricted person may not be appointed or act as director, secretary or promoter of a company for five years unless that company has a minimum allotted and paid-up share capital of €500,000 (public company) or €100,000 (private company). The capital must be PAID UP, not merely issued."
+    },
+    {
+      "id": "CL_M08_L01_Q05",
+      "question": "Who bears the burden of proof in an application under s.819 CA 2014, and what is the standard of proof?",
+      "options": {
+        "A": "The liquidator must prove beyond reasonable doubt that the director acted dishonestly or irresponsibly",
+        "B": "The burden is on the director to satisfy the court on the balance of probabilities that they acted honestly and responsibly — it is a reversed burden of proof",
+        "C": "The burden of proof is equally divided between the liquidator and the director and the court weighs all evidence without attribution of burden",
+        "D": "The Corporate Enforcement Authority bears the burden of establishing dishonesty on the balance of probabilities"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.819 CA 2014, the statutory scheme reverses the burden of proof: the director must satisfy the court on the balance of probabilities that they acted honestly and responsibly. Once an insolvent winding up is established, restriction follows unless the director displaces it: Re Vehicle Imports Ltd [2000]; Fennell v Appelbe [2022] IECA."
+    },
+    {
+      "id": "CL_M08_L01_Q06",
+      "question": "In Fennell v Appelbe [2022] IECA, the Court of Appeal considered the restriction regime. What was the court's key holding regarding the standard expected of directors facing restriction applications?",
+      "options": {
+        "A": "The court applied a subjective standard — directors are only restricted if they acted dishonestly given their own personal experience and qualifications",
+        "B": "The court affirmed that an objective standard of honesty and responsibility applies — directors are measured against a reasonable, competent director in their position, not their personal knowledge",
+        "C": "The court held that non-executive directors are automatically exempt from restriction orders regardless of their conduct",
+        "D": "The court limited restriction orders to directors who were in office for at least 12 months before the winding up commenced"
+      },
+      "correct_answer": "B",
+      "explanation": "In Fennell v Appelbe [2022] IECA, the Court of Appeal affirmed that the standard of responsibility under s.819 is objective — measured against a reasonable, competent director in the same circumstances. A director cannot escape restriction simply by arguing ignorance of their obligations."
+    },
+    {
+      "id": "CL_M08_L01_Q07",
+      "question": "In Re Newcastle Timber Ltd [2001] IEHC, the court restricted all directors of the insolvent company. One director argued he was merely a 'sleeping director' who had never attended board meetings or participated in management. How did the court approach this argument?",
+      "options": {
+        "A": "The court accepted the sleeping director argument as a full defence — non-participation in management means there is no responsibility to assess",
+        "B": "The court held that acting as a director while taking no active role in the company's affairs was itself irresponsible — directors cannot avoid restriction by disengaging from their obligations",
+        "C": "The court found that sleeping directors are treated as shadow directors and must satisfy a higher burden of proof to avoid restriction",
+        "D": "The court restricted the sleeping director for only two years instead of the standard five, treating passivity as a mitigating factor"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Newcastle Timber Ltd [2001] IEHC, the court held that failing to engage in the company's affairs, attend board meetings, or take any active role as a director is itself irresponsible conduct. Directors cannot insulate themselves from restriction by simply doing nothing — the standard requires active, responsible stewardship."
+    },
+    {
+      "id": "CL_M08_L01_Q08",
+      "question": "A director of an insolvent company continued trading for 18 months after receiving professional advice that the company was insolvent. During that period, the company incurred €800,000 in additional creditor liabilities. What is the most likely outcome at the s.819 restriction hearing?",
+      "options": {
+        "A": "Restriction will be refused — the director was acting on professional advice and this satisfies the honesty and responsibility test",
+        "B": "Restriction is likely to be imposed — continued trading despite knowledge of insolvency, accumulating further creditor liabilities, is a paradigm example of irresponsible conduct",
+        "C": "Restriction will be refused because s.819 only applies to directors who have personally misappropriated company assets",
+        "D": "The court will impose restriction for three years rather than five, as the director did not personally benefit from continued trading"
+      },
+      "correct_answer": "B",
+      "explanation": "Continued trading while knowingly insolvent and accumulating creditor losses is a classic ground for restriction under s.819: Re Vehicle Imports Ltd [2000]; La Moselle Clothing [1998]. The director cannot use professional advice as a shield where they ignored the insolvency and allowed creditor exposure to worsen."
+    },
+    {
+      "id": "CL_M08_L01_Q09",
+      "question": "Under s.819 CA 2014, the applicant for the restriction order is typically the liquidator. However, the Corporate Enforcement Authority (CEA) can also make an application. Which section of CA 2014 grants the CEA this power?",
+      "options": {
+        "A": "s.839 CA 2014, which deals with disqualification orders",
+        "B": "s.842 CA 2014, which empowers the CEA to apply for both restriction and disqualification orders",
+        "C": "s.825 CA 2014, which creates a register of restricted persons",
+        "D": "s.819(3) CA 2014, which creates a general enforcement mechanism for the CEA"
+      },
+      "correct_answer": "B",
+      "explanation": "s.842 CA 2014 expressly empowers the Corporate Enforcement Authority to apply to court for restriction orders under s.819 and disqualification orders under s.839. This dual power was a key feature of the CEA Act 2021 and reinforces the CEA's enforcement mandate."
+    },
+    {
+      "id": "CL_M08_L01_Q10",
+      "question": "Re Vehicle Imports Ltd [2000] IEHC is a leading authority on what constitutes 'irresponsible' conduct for s.819 purposes. The court identified continuing to trade while knowingly insolvent as irresponsible. Which additional factor did the court emphasise as compounding the irresponsibility?",
+      "options": {
+        "A": "The director failed to keep proper accounting records in accordance with s.281 CA 2014",
+        "B": "The director took excessive remuneration during the period of insolvency",
+        "C": "The director failed to file annual returns with the CRO for three consecutive years",
+        "D": "The director had never attended a corporate governance training course"
+      },
+      "correct_answer": "A",
+      "explanation": "In Re Vehicle Imports, the court highlighted the failure to maintain proper books and records (now s.281-282 CA 2014) as a significant aggravating factor demonstrating irresponsibility. Inability to demonstrate the company's financial position through adequate records compounded the finding of irresponsible conduct."
+    },
+    {
+      "id": "CL_M08_L01_Q11",
+      "question": "Re Squash (Ireland) Ltd [2001] IEHC concerned a non-profit sporting body that became insolvent. The directors argued that restriction was inappropriate given the non-commercial nature of the organisation and the absence of personal gain. How did the court treat this argument?",
+      "options": {
+        "A": "The court accepted the argument and refused restriction — s.819 was designed for commercial companies and does not apply to non-profit entities",
+        "B": "The court rejected the argument — the restriction regime applies to directors of all companies regardless of their non-profit status; the standard of honest and responsible conduct applies equally",
+        "C": "The court modified the restriction by reducing its duration to two years, recognising the non-commercial nature of the enterprise as a mitigating factor",
+        "D": "The court referred the matter to the Charities Regulator rather than applying s.819"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Squash (Ireland) Ltd, the High Court held that the restriction regime under s.819 applies to directors of all companies — commercial or otherwise. The obligation to act honestly and responsibly applies equally to directors of non-profit companies. The absence of personal gain was a factor but did not excuse failure to manage the company's affairs properly."
+    },
+    {
+      "id": "CL_M08_L01_Q12",
+      "question": "A company is placed into creditors' voluntary liquidation. The liquidator applies for restriction orders against two directors. Director A resigned 18 months before the liquidation commenced. Director B continued as director until the liquidation. Under s.818 CA 2014, which of the following is correct regarding the look-back period?",
+      "options": {
+        "A": "Only Director B is subject to restriction — Director A's earlier resignation takes them outside the scope of s.819",
+        "B": "Both directors are subject to restriction as s.818 CA 2014 extends the restriction regime to persons who were directors within 12 months prior to the commencement of winding up",
+        "C": "Director A cannot be restricted because they resigned before the company became technically insolvent",
+        "D": "Both directors are subject to restriction only if the company's deficiency exceeds €500,000"
+      },
+      "correct_answer": "B",
+      "explanation": "s.818 CA 2014 defines the persons subject to the restriction regime. It extends to any person who was a director of the company at any time during the 12 months preceding the commencement of the insolvent winding up. Director A, having resigned 18 months before liquidation, falls OUTSIDE the 12-month look-back period and would not be subject to s.819. Director B remains subject."
+    },
+    {
+      "id": "CL_M08_L01_Q13",
+      "question": "Under s.822 CA 2014, there is an obligation on the liquidator of an insolvent company to report to the Corporate Enforcement Authority in respect of each director. When does this obligation arise, and what is the default position?",
+      "options": {
+        "A": "The liquidator must report to the CEA within 6 months of appointment — the default position is that the CEA then decides whether to apply for restriction",
+        "B": "The liquidator must report to the CEA unless the liquidator is satisfied that a restriction application is not warranted — the default is that the liquidator applies to court for restriction of every director",
+        "C": "The liquidator must send a report on each director within 3 months of commencement and the CEA must apply for restriction within 12 months or the right is lost",
+        "D": "The obligation only arises where the company's deficiency exceeds €250,000"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.822 CA 2014, the liquidator must apply for restriction of all directors UNLESS they report to the CEA that restriction is not warranted. The statutory default is that restriction proceedings are commenced — the liquidator must actively justify any departure from this by reporting to the CEA. This ensures accountability and review."
+    },
+    {
+      "id": "CL_M08_L01_Q14",
+      "question": "A court grants a restriction order against a director of Insolvent Co Ltd. Two years later, the same person is found acting as a director of NewCo Ltd, which has a paid-up share capital of only €50,000. What consequence follows under CA 2014?",
+      "options": {
+        "A": "No consequence — a restricted person may always act as a director of a private company as long as any amount of share capital is paid up",
+        "B": "The restriction order is automatically extended by a further five years",
+        "C": "Acting as a director of a company that does not meet the minimum capital requirement while restricted is a Category 2 offence, and any acts done as director may be void",
+        "D": "The person must pay a fine of €10,000 per director act taken while the company is under-capitalised"
+      },
+      "correct_answer": "C",
+      "explanation": "Under s.820 CA 2014, a restricted person who acts as a director of a company not meeting the minimum capital threshold commits a Category 2 offence (up to 5 years / €50,000 on indictment). Additionally, acts done as a director of such a company during the restriction period may be impugnable, and personal liability for company debts may arise under s.821."
+    },
+    {
+      "id": "CL_M08_L01_Q15",
+      "question": "The court has discretion under s.819 CA 2014 to grant relief to a director even after finding that they did not act honestly and responsibly. When might the court exercise this residual discretion to grant relief?",
+      "options": {
+        "A": "Where the director was below 25 years of age at the time of the conduct",
+        "B": "Never — once the court finds that the director failed to act honestly and responsibly, restriction must be imposed as a matter of statute with no residual discretion",
+        "C": "Where it would be unjust and inequitable to make the order in the circumstances — the third limb of the s.819 defence",
+        "D": "Where the company was a sole-shareholder company and the director was the only beneficial owner"
+      },
+      "correct_answer": "C",
+      "explanation": "Under s.819(1)(c), even where the director failed the honesty and responsibility test, restriction may be refused if the court is satisfied 'there is no other reason why it would be just and equitable' to make the order. This residual equity-based safety valve allows courts to avoid unjust outcomes in exceptional circumstances."
+    },
+    {
+      "id": "CL_M08_L01_Q16",
+      "question": "A director of an insolvent company presents evidence that: (1) they maintained adequate books and records; (2) they sought legal advice when signs of financial difficulty emerged; (3) they filed all statutory returns on time; and (4) they cooperated fully with the liquidator. The liquidator still seeks restriction, arguing the company was insolvent for two years before liquidation. What is the most likely outcome?",
+      "options": {
+        "A": "Restriction will be imposed because the mere fact of insolvency for two years demonstrates irresponsible conduct regardless of other factors",
+        "B": "The director is likely to succeed in resisting restriction — the court will weigh the positive indicators holistically and is likely to find that the honesty and responsibility test is satisfied",
+        "C": "The director will not succeed because cooperation with the liquidator is not one of the three statutory defences",
+        "D": "The director must also demonstrate that they personally injected capital into the company to resist restriction successfully"
+      },
+      "correct_answer": "B",
+      "explanation": "The court under s.819 takes a holistic view of the director's overall conduct. Full statutory compliance, timely professional advice, proper record-keeping, and liquidator cooperation are all strongly positive factors under the La Moselle five-fold test. Insolvency alone does not compel restriction — the question is whether the director behaved honestly and responsibly throughout."
+    },
+    {
+      "id": "CL_M08_L01_Q17",
+      "question": "What is the relationship between a restriction order under s.819 CA 2014 and personal liability for company debts under s.821 CA 2014?",
+      "options": {
+        "A": "A restriction order automatically makes the restricted director personally liable for all company debts incurred during the insolvency period",
+        "B": "Restriction under s.819 does not of itself impose personal liability — s.821 imposes personal liability only where a restricted person subsequently acts as director of a company that fails to meet the minimum capital requirement and that company itself becomes insolvent",
+        "C": "A restricted person is jointly and severally liable for all debts of any company in which they hold a directorship during the restriction period, regardless of capital levels",
+        "D": "s.821 imposes personal liability only where the restricted person was also disqualified under s.839"
+      },
+      "correct_answer": "B",
+      "explanation": "s.821 CA 2014 creates personal liability as a CONSEQUENCE of acting in breach of the restriction order — specifically, where a restricted person acts as director of a company that does not meet the minimum capital requirement AND that company subsequently becomes insolvent. Restriction alone does not impose personal liability; the consequential breach triggers it."
+    },
+    {
+      "id": "CL_M08_L01_Q18",
+      "question": "A director argues that the restriction application should be dismissed because they were a de jure director in name only — they had no real involvement and were included as a director as a formality at the request of a dominant co-director. Under s.819 CA 2014, how will the court respond?",
+      "options": {
+        "A": "The court will accept this argument — a director who has no involvement cannot be said to have conducted the company's affairs responsibly or irresponsibly",
+        "B": "The court will likely reject this as a defence — accepting a directorship and doing nothing is itself irresponsible, and courts have consistently held that passivity does not excuse a director from their statutory obligations",
+        "C": "The court will examine the shareholder register and if the director has no shares, will automatically grant relief from restriction",
+        "D": "The court treats the de jure director as a nominee and restricts only the person who actually controlled the company"
+      },
+      "correct_answer": "B",
+      "explanation": "Irish courts consistently reject the 'nominal director' excuse: Re Newcastle Timber [2001]. A person who accepts appointment as director but fails to engage with the company's affairs thereby acts irresponsibly. The decision to accept a directorship carries inherent obligations that cannot be avoided by inaction."
+    },
+    {
+      "id": "CL_M08_L01_Q19",
+      "question": "The Companies (Corporate Governance, Enforcement and Regulatory Provisions) Act 2024 made amendments relating to the restriction regime. Which of the following represents an enhancement introduced or formalised by the 2024 Act in the context of director accountability?",
+      "options": {
+        "A": "The 2024 Act increased the minimum capital requirement for restricted persons from €100,000 to €500,000 for private companies",
+        "B": "The 2024 Act extended the CEA's powers to apply for restriction in circumstances where company insolvency is pending but not yet commenced",
+        "C": "The 2024 Act empowered the CEA with enhanced enforcement capabilities including formal investigation powers and updated the offence regime categories",
+        "D": "The 2024 Act removed the liquidator's obligation to apply for restriction of directors by default"
+      },
+      "correct_answer": "C",
+      "explanation": "The Companies (Corporate Governance, Enforcement and Regulatory Provisions) Act 2024 enhanced the CEA's investigation and enforcement powers, updated the offence categorisation system, and strengthened the regulatory framework. It did not alter the minimum capital thresholds for restricted persons or remove the liquidator's default obligation to seek restriction."
+    },
+    {
+      "id": "CL_M08_L01_Q20",
+      "question": "A director successfully resists a restriction application in 2022. In 2025, the same director is a director of a second company that also becomes insolvent. Can fresh restriction proceedings be brought against the director in respect of the second insolvency?",
+      "options": {
+        "A": "No — once a director has resisted a restriction application, they are permanently immune from future restriction proceedings",
+        "B": "Yes — a successful defence to restriction in respect of one company does not provide immunity in respect of a different company's insolvency; each application is assessed on its own facts",
+        "C": "No — a second restriction application may only be brought where the first application was refused on procedural grounds, not on the merits",
+        "D": "Yes — but the court must reduce the restriction period to three years where the director was previously acquitted"
+      },
+      "correct_answer": "B",
+      "explanation": "s.819 restriction applications are assessed on a case-by-case basis in respect of each insolvent company. A prior successful defence creates no estoppel or immunity. Each liquidator independently applies for restriction and the court assesses the director's conduct in relation to the specific company in question."
+    }
+  ]
+}

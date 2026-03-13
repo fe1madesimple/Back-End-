@@ -1,0 +1,275 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "EquityLaw_ElevenLabs_Module06_Lesson01.txt",
+  "module_number": 6,
+  "module_title": "TRUSTEESHIP",
+  "lesson_number": 1,
+  "lesson_title": "DUTIES, POWERS AND LIABILITIES OF TRUSTEES",
+  "total_questions": 22,
+  "questions": [
+    {
+      "id": "EQL_M06_L01_Q01",
+      "question": "A trustee occupies a fiduciary position. What does this mean for the standard of conduct expected of a trustee?",
+      "options": {
+        "A": "A trustee is only liable for gross negligence and not ordinary negligence",
+        "B": "A trustee holds property for the benefit of others and is subject to strict obligations that place the beneficiaries' interests above their own",
+        "C": "A trustee's duties are primarily contractual and enforced by contract law",
+        "D": "A trustee owes duties only to the settlor who appointed them"
+      },
+      "correct_answer": "B",
+      "explanation": "A trustee occupies a fiduciary position — they hold property for the benefit of others (the beneficiaries) and the law imposes strict obligations that prioritise the beneficiaries' interests above the trustee's own. Fiduciary duties are more onerous than ordinary contractual or tortious duties: a fiduciary must not allow personal interest to conflict with duty, must not profit from their position, and must act in the exclusive best interests of the beneficiaries."
+    },
+    {
+      "id": "EQL_M06_L01_Q02",
+      "question": "In Re Waterman's Will Trusts [1952], Harman J articulated the duty of care for trustees as:",
+      "options": {
+        "A": "A trustee must act to the standard of an expert fund manager",
+        "B": "A trustee must act as an ordinary prudent person of business would act in managing similar affairs of their own",
+        "C": "A trustee must act in a manner consistent with the directions of the settlor in all cases",
+        "D": "A trustee need only avoid deliberate misconduct — inadvertent errors are not actionable"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Waterman's Will Trusts [1952], Harman J stated that a trustee must act as an ordinary prudent person of business would act in managing similar affairs of their own. This is an objective standard — it does not require expert financial knowledge but does require the level of care and diligence that a reasonable, prudent business person would apply to the management of their own affairs."
+    },
+    {
+      "id": "EQL_M06_L01_Q03",
+      "question": "Which legislation provides the primary statutory framework for trustees in Ireland?",
+      "options": {
+        "A": "Trustee Act 2001 (Ireland)",
+        "B": "Charities Act 2009",
+        "C": "Trustee Act 1893",
+        "D": "Succession Act 1965"
+      },
+      "correct_answer": "C",
+      "explanation": "The Trustee Act 1893 is the primary legislation governing trustees in Ireland, supplemented by common law and equitable principles. Ireland has not enacted a modern equivalent to the Trustee Act 2000 (England and Wales) or the Trustee Act (Northern Ireland) 2001. The 1893 Act provides the statutory framework for matters including authorised investments (though modern trust instruments often expand these), delegation powers, and relief from liability."
+    },
+    {
+      "id": "EQL_M06_L01_Q04",
+      "question": "The self-dealing rule, established in Keech v Sandford [1726], provides that:",
+      "options": {
+        "A": "A trustee may purchase trust property for themselves if they pay fair market value",
+        "B": "A trustee must not purchase trust property for themselves, and any profit made in breach of this rule must be held on constructive trust",
+        "C": "A trustee may deal in trust property on behalf of the trust but not for personal profit",
+        "D": "Self-dealing is permitted if all beneficiaries give their informed consent"
+      },
+      "correct_answer": "B",
+      "explanation": "In Keech v Sandford [1726], Lord King LC established that a trustee must not purchase trust property for themselves. In that case, a trustee had renewed a lease in his own name after the landlord refused to renew it for the infant beneficiary. Despite acting honestly, the trustee was required to hold the renewed lease on constructive trust. The rule operates strictly — no inquiry is made into whether the transaction was at a fair price."
+    },
+    {
+      "id": "EQL_M06_L01_Q05",
+      "question": "In Keech v Sandford [1726], why was the trustee required to hold the renewed lease on constructive trust even though the landlord had refused to renew it for the infant beneficiary?",
+      "options": {
+        "A": "Because the trustee had acted fraudulently in obtaining the lease",
+        "B": "Because the self-dealing rule applies strictly — a trustee cannot take a personal benefit from their position even where the trust itself could not have obtained that benefit",
+        "C": "Because the infant beneficiary had expressly requested the lease be held on trust",
+        "D": "Because the trustee had failed to inform the court before renewing the lease"
+      },
+      "correct_answer": "B",
+      "explanation": "Keech v Sandford [1726] establishes the strict operation of the self-dealing rule. The trustee was required to hold the lease on constructive trust even though the landlord had refused to renew for the infant — and thus the trust itself could not have obtained the benefit. The rule operates as a prophylactic: equity will not permit a trustee to profit from their fiduciary position even in situations where the trust was incapable of taking the benefit. The strictness ensures that trustees never have a personal incentive to act in their own interest at the trust's expense."
+    },
+    {
+      "id": "EQL_M06_L01_Q06",
+      "question": "The fair-dealing rule applies when a trustee wishes to purchase a beneficiary's equitable interest. What does the fair-dealing rule require?",
+      "options": {
+        "A": "The transaction is automatically void unless a court approves it in advance",
+        "B": "The transaction must be entirely fair and transparent, with the onus on the trustee to show it was at arm's length and at a fair price",
+        "C": "The beneficiary must obtain independent legal advice before selling their interest",
+        "D": "The purchase price must be certified by an independent valuer appointed by the court"
+      },
+      "correct_answer": "B",
+      "explanation": "The fair-dealing rule applies where a trustee wishes to purchase a beneficiary's equitable interest — not trust property itself (which is the self-dealing rule). Under the fair-dealing rule, the transaction is not automatically void, but the onus is on the trustee to show that it was entirely fair, transparent, conducted at arm's length, and at a fair price. The trustee must demonstrate that the beneficiary had full information and that no advantage was taken of the fiduciary relationship."
+    },
+    {
+      "id": "EQL_M06_L01_Q07",
+      "question": "The no-profit rule was established in Boardman v Phipps [1967]. What did the House of Lords hold?",
+      "options": {
+        "A": "That a trustee who acts in good faith and brings a profit to the trust may retain their personal profit",
+        "B": "That a trustee must not profit from their position — even where the trustee acted in good faith and the trust benefited, any profit made using information obtained through the trusteeship must be held on constructive trust",
+        "C": "That the no-profit rule does not apply to solicitors acting as trustees",
+        "D": "That the no-profit rule is displaced where the trust instrument expressly permits the trustee to retain profits"
+      },
+      "correct_answer": "B",
+      "explanation": "In Boardman v Phipps [1967], the House of Lords held that even where the trustee had acted in good faith and had actually brought a profit to the trust, the profit made by the trustee using information obtained through the trusteeship must be held on constructive trust for the beneficiaries. The no-profit rule operates strictly and regardless of the trustee's good faith: any profit flowing from the fiduciary position belongs to the trust."
+    },
+    {
+      "id": "EQL_M06_L01_Q08",
+      "question": "The duty to invest trust funds requires trustees to invest with what level of prudence?",
+      "options": {
+        "A": "At the highest possible return regardless of risk",
+        "B": "In accordance with the specific investments listed in Section 1 of the Trustee Act 1893 only",
+        "C": "As a prudent person would, having regard to the need for diversification and the suitability of investments",
+        "D": "In accordance with the instructions of the settlor only, regardless of changed circumstances"
+      },
+      "correct_answer": "C",
+      "explanation": "The duty to invest requires trustees to invest as a prudent person would, having regard to the need for diversification of investments and the suitability of each investment for the trust's purposes. Under the Trustee Act 1893, the range of authorised investments was limited, but modern trust instruments typically grant wider investment powers. The prudent investor standard requires balancing risk and return with appropriate diversification."
+    },
+    {
+      "id": "EQL_M06_L01_Q09",
+      "question": "In Nestle v National Westminster Bank [1993], the English Court of Appeal held that in an investment breach claim:",
+      "options": {
+        "A": "Any failure to invest in authorised investments is actionable regardless of resulting loss",
+        "B": "A beneficiary claiming breach of the investment duty must show that the trust fund actually suffered a loss as a result of the breach",
+        "C": "The bank trustee was automatically liable for failing to take proper investment advice",
+        "D": "The Trustee Act 1893 imposes strict liability for any deviation from authorised investments"
+      },
+      "correct_answer": "B",
+      "explanation": "In Nestle v National Westminster Bank [1993], the Court of Appeal held that while a trustee who fails to invest competently may be liable, the beneficiary must prove that the trust fund actually suffered a loss as a result of the breach of the investment duty. A mere breach without demonstrable loss is insufficient. This causation requirement prevents theoretical or speculative claims for 'lost profits' where the investment portfolio still performed adequately."
+    },
+    {
+      "id": "EQL_M06_L01_Q010",
+      "question": "If a trustee distributes trust property to a person who is not the correct beneficiary, the trustee's legal position is:",
+      "options": {
+        "A": "The trustee is not liable if they acted in good faith and made reasonable enquiries",
+        "B": "The trustee may be personally liable for any loss caused by the misdistribution",
+        "C": "The trustee is automatically entitled to be indemnified from the trust fund",
+        "D": "The trustee is not liable if the distribution was in accordance with the provisions of the trust deed"
+      },
+      "correct_answer": "B",
+      "explanation": "If a trustee distributes trust property to the wrong person — a misdistribution — the trustee may be personally liable for any resulting loss to the trust estate. The duty to distribute is a core trustee obligation and distributing to the wrong person constitutes a breach of trust. Personal liability may arise even if the trustee acted in good faith, as liability for breach of trust is strict in principle."
+    },
+    {
+      "id": "EQL_M06_L01_Q011",
+      "question": "A Benjamin order is named after Re Benjamin [1902]. What is a Benjamin order and what protection does it provide?",
+      "options": {
+        "A": "An order requiring a trustee to distribute in accordance with a specific Benjamin formula",
+        "B": "An order authorising trustees to distribute on the basis that a missing beneficiary is presumed dead or cannot be found, thereby protecting the trustees from personal liability",
+        "C": "An order granting the trustees extended powers of investment",
+        "D": "An order preventing trustees from making a distribution until all beneficiaries have been traced"
+      },
+      "correct_answer": "B",
+      "explanation": "A Benjamin order (named after Re Benjamin [1902]) authorises trustees to distribute the trust estate on the basis that a missing beneficiary is presumed dead or cannot be found after reasonable enquiries. It protects the trustees from personal liability for distributing without the missing beneficiary's share being held back. If the missing beneficiary later appears, their remedy is against the recipients of the distribution, not against the trustees personally."
+    },
+    {
+      "id": "EQL_M06_L01_Q012",
+      "question": "Section 23 of the Trustee Act 1893 addresses the power of delegation. What limitation applies to this power?",
+      "options": {
+        "A": "Trustees may delegate all functions to any agent they choose",
+        "B": "Trustees may delegate certain functions, but the core duty to exercise judgment and discretion remains personal and cannot be delegated",
+        "C": "Trustees may only delegate investment functions to a professional investment manager",
+        "D": "Delegation is not permitted under the Trustee Act 1893 and is only available by express trust deed provision"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 23 of the Trustee Act 1893 allows trustees to delegate certain functions — for example, appointing agents to manage specific tasks. However, the core duty to exercise judgment and discretion remains personal and cannot be delegated. A trustee who delegates does not shed their fiduciary responsibilities: they must supervise the delegate appropriately and cannot shelter behind the delegation to escape liability for breach of trust."
+    },
+    {
+      "id": "EQL_M06_L01_Q013",
+      "question": "A trustee who commits a breach of trust causing loss to the trust estate is liable on what basis?",
+      "options": {
+        "A": "Only if they acted with fraudulent or dishonest intent",
+        "B": "Strictly — good faith alone is not a defence to a breach of trust that causes loss",
+        "C": "Only if they made a profit personally from the breach",
+        "D": "On a contributory negligence basis where the beneficiaries are partly responsible"
+      },
+      "correct_answer": "B",
+      "explanation": "Trustee liability for breach of trust is strict — good faith is not a sufficient defence where the breach has caused loss to the trust estate. This is a fundamental principle: equity holds trustees to their obligations regardless of their subjective intentions. A trustee who genuinely believed they were acting properly may still be liable if they breached a fiduciary duty and caused loss. The only statutory relief from this strict liability is Section 61 of the Trustee Act 1893."
+    },
+    {
+      "id": "EQL_M06_L01_Q014",
+      "question": "Section 61 of the Trustee Act 1893 gives the court a discretion to relieve a trustee from liability. What conditions must be satisfied?",
+      "options": {
+        "A": "The trustee must have made a profit from the breach which they are willing to return",
+        "B": "The trustee acted honestly and reasonably and ought fairly to be excused",
+        "C": "The trustee must have obtained legal advice before committing the breach",
+        "D": "The breach must have resulted in no actual loss to the trust fund"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 61 of the Trustee Act 1893 provides the court with a discretion to relieve a trustee from personal liability for breach of trust where: (1) the trustee acted honestly; (2) the trustee acted reasonably; and (3) the trustee ought fairly to be excused. All three elements must be satisfied. The section provides a safety valve for trustees who, despite acting in good faith and with reasonable care, have technically committed a breach of trust."
+    },
+    {
+      "id": "EQL_M06_L01_Q015",
+      "question": "Where multiple trustees are jointly liable for a breach of trust, the court may:",
+      "options": {
+        "A": "Only hold the trustee who directed the breach liable — innocent co-trustees are automatically exempt",
+        "B": "Apportion liability according to their respective degrees of fault — a more culpable trustee may be required to indemnify a less culpable co-trustee",
+        "C": "Hold each trustee equally liable for exactly one-third (or other equal fraction) of the total loss",
+        "D": "Require the most senior trustee to bear sole liability as the lead fiduciary"
+      },
+      "correct_answer": "B",
+      "explanation": "Where multiple trustees are jointly liable for a breach of trust, the court may apportion liability according to the degree of fault of each trustee. A trustee who directed, instigated, or was more culpable for the breach may be required to indemnify a less culpable co-trustee. This principle prevents the injustice of making an innocent or passive trustee bear the full cost of a breach primarily caused by a more active or culpable colleague."
+    },
+    {
+      "id": "EQL_M06_L01_Q016",
+      "question": "A trustee discovers an opportunity to purchase shares in a company using confidential information they received while managing the trust's investment portfolio. They purchase the shares personally and make a profit. What is the legal position?",
+      "options": {
+        "A": "The trustee may keep the profit as the shares were purchased personally and not with trust funds",
+        "B": "The trustee must hold the profit on constructive trust for the beneficiaries under the no-profit rule from Boardman v Phipps [1967]",
+        "C": "The trustee is only liable if the beneficiaries can show they lost an equivalent opportunity",
+        "D": "The trustee is liable only for the profit that corresponds to the proportion of trust information used"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the no-profit rule, a trustee must not profit from their fiduciary position. Using confidential information obtained through the trusteeship to make a personal profit is a clear breach of the no-profit rule established in Boardman v Phipps [1967]. The profit must be held on constructive trust for the beneficiaries, even though the trustee used their own money to make the purchase. The source of the information — obtained through the fiduciary relationship — is what triggers the rule."
+    },
+    {
+      "id": "EQL_M06_L01_Q017",
+      "question": "A trustee is also a professional investment adviser. They recommend trust investments in a company where they hold a personal stake, resulting in a loss to the trust. Which fiduciary rule is most directly engaged?",
+      "options": {
+        "A": "The fair-dealing rule",
+        "B": "The self-dealing rule",
+        "C": "The no-conflict rule — a trustee must not place themselves in a position where their personal interests conflict with their duty to the beneficiaries",
+        "D": "The duty of care under Re Waterman's Will Trusts [1952]"
+      },
+      "correct_answer": "C",
+      "explanation": "This scenario most directly engages the no-conflict rule (sometimes called the conflict of interest rule): a trustee must not place themselves in a position where their personal interests conflict with their duty to the beneficiaries. Recommending trust investments in a company where the trustee holds a personal financial stake creates a direct conflict — the trustee's personal interest in the success of that company may have influenced their professional recommendation contrary to the trust's best interests."
+    },
+    {
+      "id": "EQL_M06_L01_Q018",
+      "question": "A trustee is authorised to invest in equities but instead keeps the entire trust fund in a low-interest bank account for five years during which the stock market significantly outperforms. Which duty has the trustee most likely breached?",
+      "options": {
+        "A": "The self-dealing rule",
+        "B": "The duty to invest prudently — including the need to consider diversification and the suitability of investments in the context of the trust's purposes",
+        "C": "The duty to distribute to the correct beneficiaries",
+        "D": "The fair-dealing rule"
+      },
+      "correct_answer": "B",
+      "explanation": "Keeping an entire trust fund in a low-interest bank account when authorised to invest in equities and when the stock market significantly outperforms constitutes a likely breach of the duty to invest prudently. The prudent investor standard requires trustees to actively consider investment opportunities that are suitable and to diversify the portfolio appropriately. Passive, risk-averse non-investment — keeping everything in cash when authorised to invest broadly — may fail to meet this standard. Following Nestle v NatWest [1993], the beneficiaries would need to show actual loss from the breach."
+    },
+    {
+      "id": "EQL_M06_L01_Q019",
+      "question": "The duty to act in the best interests of the beneficiaries means a trustee must NOT:",
+      "options": {
+        "A": "Consider the beneficiaries' individual circumstances when exercising discretion",
+        "B": "Act in a manner that benefits the trustee or third parties at the expense of the beneficiaries",
+        "C": "Take professional legal advice before making decisions",
+        "D": "Seek the consent of all beneficiaries before exercising investment powers"
+      },
+      "correct_answer": "B",
+      "explanation": "The duty to act in the best interests of the beneficiaries is a cardinal fiduciary duty: a trustee must not act in their own interest or in the interest of third parties at the expense of the beneficiaries. The beneficiaries' interests are paramount — the trustee holds the trust property for them, not for any other purpose. Acting for personal advantage or to benefit third parties at the beneficiaries' expense is a fundamental breach of the fiduciary relationship."
+    },
+    {
+      "id": "EQL_M06_L01_Q020",
+      "question": "A sole trustee distributes the trust estate but a dispute later arises as to whether one beneficiary was correctly identified. The trustee had made all reasonable enquiries but the dispute was unforeseeable. To protect themselves prospectively, what should the trustee have sought before distributing?",
+      "options": {
+        "A": "A written indemnity from each beneficiary",
+        "B": "The directions of the court, or a Benjamin order if a beneficiary could not be traced",
+        "C": "A statutory declaration from the beneficiaries confirming their identities",
+        "D": "A certificate from a solicitor confirming the beneficiaries' identities"
+      },
+      "correct_answer": "B",
+      "explanation": "To protect themselves against personal liability for misdistribution, a trustee should seek the directions of the court before distributing in cases of uncertainty. If a beneficiary cannot be located after reasonable enquiries, the trustee should apply for a Benjamin order — an order authorising distribution on the presumption that the missing beneficiary is dead or cannot be found. A Benjamin order protects the trustee from personal liability: their remedy is against the recipients of the distribution, not the trustee."
+    },
+    {
+      "id": "EQL_M06_L01_Q021",
+      "question": "A trustee invests in an unauthorised investment that increases in value. The beneficiaries seek to retain the investment. Is the trustee liable for the breach?",
+      "options": {
+        "A": "No — the beneficiaries cannot claim the profit and allege breach simultaneously; they must elect",
+        "B": "Yes — investing in an unauthorised investment is a breach regardless of the profit made; the beneficiaries may retain the benefit while also claiming compensation for any related losses",
+        "C": "No — an investment that profits the trust cannot constitute a breach",
+        "D": "Yes, but only if the trustee deliberately chose an unauthorised investment knowing it was outside their powers"
+      },
+      "correct_answer": "A",
+      "explanation": "Where an unauthorised investment proves profitable, the beneficiaries face an election: they may affirm the transaction and retain the profit (but thereby affirm the breach and cannot claim further compensation), or they may repudiate the breach and seek compensation for any losses. They cannot simultaneously claim the profit while also holding the trustee liable for the breach of investing in an unauthorised vehicle — equity requires them to elect between inconsistent positions."
+    },
+    {
+      "id": "EQL_M06_L01_Q022",
+      "question": "An FE-1 question presents a scenario where a trustee has: (1) failed to invest prudently; (2) sold trust property to themselves at below market value; and (3) failed to distribute to a beneficiary. The correct analytical approach is to:",
+      "options": {
+        "A": "Apply only the most serious breach and calculate liability on that basis alone",
+        "B": "Identify each breach separately — duty to invest (Re Waterman), self-dealing rule (Keech v Sandford), duty to distribute — assess liability for each, consider s.61 relief, and identify available remedies for the beneficiaries",
+        "C": "Apply the Campus Oil test to determine whether an injunction is appropriate before addressing liability",
+        "D": "Consider only whether the trustee acted in good faith as this is the sole defence to all three breaches"
+      },
+      "correct_answer": "B",
+      "explanation": "When multiple trustee breaches are presented in an FE-1 scenario, each breach must be analysed separately and systematically: (1) failure to invest prudently — duty of care (Re Waterman's Will Trusts [1952]) and need to show loss (Nestle v NatWest [1993]); (2) purchase of trust property at undervalue — self-dealing rule (Keech v Sandford [1726]), constructive trust remedy; (3) failure to distribute — personal liability for breach of duty to distribute. Consider s.61 Trustee Act 1893 relief and available remedies (account of profits, equitable compensation, constructive trust) for each breach."
+    }
+  ]
+}

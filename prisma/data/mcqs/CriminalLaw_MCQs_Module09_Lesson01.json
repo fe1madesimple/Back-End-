@@ -1,0 +1,131 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module09_Lesson01.txt",
+  "module_number": 9,
+  "module_title": "Inchoate Offences",
+  "lesson_number": 1,
+  "lesson_title": "Conspiracy",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CRL_M09_L01_Q01",
+      "question": "Conspiracy is a common law inchoate offence. What is the core definition of criminal conspiracy?",
+      "options": {
+        "A": "An agreement between two or more persons to do an unlawful act, provided that act is subsequently carried out",
+        "B": "An agreement between two or more persons to pursue a common unlawful purpose or to pursue a lawful purpose by unlawful means \u2014 the offence is the agreement itself; no overt act in furtherance of the agreement is required for the conspiracy to be complete",
+        "C": "A secret communication between two or more persons indicating an intention to commit a future crime",
+        "D": "An agreement between two or more persons that is reduced to writing and evidences a shared intention to commit an offence"
+      },
+      "correct_answer": "B",
+      "explanation": "Criminal conspiracy is the agreement between two or more persons to pursue an unlawful common purpose or to pursue a lawful purpose by unlawful means. The crucial feature is that the offence is the agreement itself \u2014 conspiracy is complete as soon as the agreement is made. No overt act in furtherance of the agreement is required, and the offence does not require the substantive crime to be committed. This inchoate character (punishing agreement before any act) is the defining feature of conspiracy and distinguishes it from the completed offence (which would attract the substantive charges). The agreement need not be express \u2014 it can be implied from the conduct of the parties. Option A incorrectly requires a subsequent act. Option C adds an unnecessary secrecy element. Option D incorrectly requires written documentation."
+    },
+    {
+      "id": "CRL_M09_L01_Q02",
+      "question": "Can one person alone commit the offence of conspiracy? And what happens to conspiracy charges where the alleged co-conspirators are acquitted?",
+      "options": {
+        "A": "Yes \u2014 a person can conspire alone if they form a firm intention to commit an offence; acquittals of co-conspirators automatically require the remaining accused to be acquitted",
+        "B": "No \u2014 conspiracy requires at least two parties to the agreement; a single person cannot conspire alone; however, the acquittal of co-conspirators does not automatically require the remaining conspirator to be acquitted \u2014 the jury may convict a sole remaining defendant even where other alleged conspirators have been acquitted, provided there is evidence of an agreement",
+        "C": "No \u2014 conspiracy requires at least two parties; and where one conspirator is acquitted the other must also be acquitted since there can no longer be an agreement between them",
+        "D": "Yes \u2014 conspiracy can be committed by a single person where they form an agreement with a person who later dies before trial"
+      },
+      "correct_answer": "B",
+      "explanation": "Conspiracy requires at least two parties \u2014 it is definitionally an agreement between persons, and a single person cannot conspire alone. However, the rule on co-conspirator acquittals is more nuanced. The acquittal of alleged co-conspirators does not automatically require that any remaining defendant be acquitted. Juries can legitimately convict one person while acquitting another, and the appellate courts have been reluctant to overturn such convictions on the basis of inconsistency alone, provided there is evidence of the agreement. The jury may have taken a different view of the evidence as it applied to each defendant. This prevents the conspiracy charge from collapsing simply because the prosecution fails against one alleged conspirator. Option A incorrectly allows solo conspiracy. Option C incorrectly requires automatic acquittal when co-conspirators are acquitted. Option D creates an exception (deceased co-conspirator) that does not resolve the fundamental problem that one cannot agree with oneself."
+    },
+    {
+      "id": "CRL_M09_L01_Q03",
+      "question": "What is the mens rea required for criminal conspiracy?",
+      "options": {
+        "A": "The accused must have intended to enter the agreement \u2014 recklessness as to whether the agreement would result in an unlawful act is sufficient",
+        "B": "The accused must have: (1) intended to enter into the agreement; and (2) intended that the unlawful purpose would be carried out \u2014 mere knowledge of a conspiracy without agreement to further it is insufficient",
+        "C": "The accused must have known that their co-conspirator intended to commit an offence \u2014 their own agreement to participate is not required if they provided material support",
+        "D": "Conspiracy is a strict liability offence \u2014 the prosecution need only prove the agreement and the unlawful purpose"
+      },
+      "correct_answer": "B",
+      "explanation": "The mens rea for conspiracy is twofold: (1) the accused must have intended to enter into the agreement \u2014 conspiracy requires a genuine meeting of minds, not a mere passing expression of support; and (2) the accused must have intended that the unlawful purpose be carried out \u2014 a person who enters an agreement but secretly intends never to go through with it may not be liable. The requirement of intention to carry out the unlawful purpose is important: it prevents liability attaching to persons who are told about a plan but do not genuinely agree to participate in it. Mere knowledge of a conspiracy without agreement is insufficient \u2014 a bystander who learns of a conspiracy and does nothing does not become a conspirator. Option A incorrectly accepts recklessness. Option C incorrectly replaces the requirement of agreement with material support. Option D removes the mental element."
+    },
+    {
+      "id": "CRL_M09_L01_Q04",
+      "question": "In DPP v Nock [1978] HOL (England and Wales), the accused conspired to extract cocaine from a substance that, unknown to them, contained no cocaine. The House of Lords considered whether this impossible conspiracy was an offence. What did the court hold?",
+      "options": {
+        "A": "The conspiracy was still an offence \u2014 impossibility is never a defence to conspiracy",
+        "B": "The conspiracy was not an offence \u2014 where it is impossible to carry out the object of the conspiracy (the substance contained no cocaine, making extraction impossible), no offence of conspiracy is committed; the House of Lords held impossibility does operate as a defence to conspiracy",
+        "C": "The conspiracy was an offence but only because the accused genuinely believed cocaine was present \u2014 subjective belief in possibility is sufficient",
+        "D": "The court did not address impossibility \u2014 it convicted on the basis of the agreement alone"
+      },
+      "correct_answer": "B",
+      "explanation": "DPP v Nock [1978] HOL is the leading English authority on impossibility and conspiracy. The House of Lords held that where it is impossible to carry out the object of the conspiracy, the agreement does not give rise to a criminal conspiracy. In Nock, the agreed object was to extract cocaine from a substance that contained no cocaine \u2014 the goal was impossible from the outset. The court held this impossibility prevented conspiracy liability from attaching. This decision has been controversial \u2014 it creates a gap in the law where persons can agree to commit crimes that happen to be impossible. Note: this position has been challenged by R v Sew Hoy [1994] NZCA (impossibility not a defence) and the area remains unsettled in Irish law. Option A adopts the Sew Hoy approach, which Nock rejected. Option C introduces a subjective belief test that the court did not adopt. Option D incorrectly states the court did not address impossibility."
+    },
+    {
+      "id": "CRL_M09_L01_Q05",
+      "question": "In R v Sew Hoy [1994] NZCA (New Zealand), the court took a different approach to impossibility and conspiracy from that in DPP v Nock. What did the New Zealand Court of Appeal hold?",
+      "options": {
+        "A": "The court agreed with DPP v Nock \u2014 impossibility is a complete defence to conspiracy",
+        "B": "The court held that impossibility is not a defence to conspiracy \u2014 the agreement is complete when it is made, and the fact that the agreed object cannot be achieved does not prevent the conspiracy from being an offence; what matters is the agreement and the intention, not whether the goal was achievable",
+        "C": "The court held that impossibility is a partial defence to conspiracy \u2014 it reduces the sentence but does not result in acquittal",
+        "D": "The court held that impossibility only operates as a defence to conspiracy if the parties knew at the time of the agreement that the object was impossible"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Sew Hoy [1994] NZCA adopted a directly contrary position to DPP v Nock on the impossibility question. The New Zealand Court of Appeal held that impossibility is not a defence to conspiracy: the offence is the agreement itself, and the fact that it is impossible to carry out the agreed purpose does not make the agreement any less criminal. The conspirators still had the guilty intention and still made the criminal agreement \u2014 the impossibility of execution is a matter of luck, not of innocence. This approach aligns with the general position on impossibility and attempt (where impossibility is generally not a defence). The tension between Nock and Sew Hoy is unresolved in Irish law \u2014 this is an area flagged as uncertain for FE-1 purposes. Options A, C, and D misstate the Sew Hoy holding."
+    },
+    {
+      "id": "CRL_M09_L01_Q06",
+      "question": "Under s.4 of the Offences Against the Person Act 1861 (as amended), conspiracy to murder is a specific statutory offence. What is the maximum penalty for conspiracy to murder following the Criminal Justice (Miscellaneous Provisions) Act 2023?",
+      "options": {
+        "A": "10 years imprisonment",
+        "B": "14 years imprisonment",
+        "C": "Life imprisonment",
+        "D": "20 years imprisonment"
+      },
+      "correct_answer": "C",
+      "explanation": "This is an exam-critical sentencing update. The Criminal Justice (Miscellaneous Provisions) Act 2023 (in force 1 November 2023) increased the maximum penalty for conspiracy to murder from 10 years to LIFE IMPRISONMENT. Under s.4 of the Offences Against the Person Act 1861 (as amended), conspiracy to murder is a specific statutory offence. The increase to life imprisonment reflects the legislature's view that conspiring to commit the gravest offence (murder) warrants a maximum sentence equivalent to the completed offence. DPP v Gillane [2023] IECA was one of the first cases applying the updated penalty regime. FE-1 candidates must know this change \u2014 an answer of 10 years is now incorrect. Option A states the pre-2023 maximum. Options B and D state incorrect figures."
+    },
+    {
+      "id": "CRL_M09_L01_Q07",
+      "question": "Abby, Bernard, and Carl agree to carry out a bank robbery. Abby then changes her mind and withdraws before the robbery takes place. Bernard and Carl carry out the robbery. Has Abby committed conspiracy?",
+      "options": {
+        "A": "No \u2014 Abby withdrew before the robbery; since conspiracy requires the offence to be completed, her withdrawal means she has not committed conspiracy",
+        "B": "Yes \u2014 Abby committed conspiracy at the moment she entered the agreement with Bernard and Carl; conspiracy is complete upon the agreement; her subsequent withdrawal does not undo the conspiracy offence (though it may be relevant to the withdrawal doctrine for the substantive offence of robbery)",
+        "C": "No \u2014 Abby's withdrawal is effective to cancel all criminal liability arising from the agreement, including the conspiracy charge",
+        "D": "Yes \u2014 but Abby's liability is automatically reduced to a lesser offence because she withdrew"
+      },
+      "correct_answer": "B",
+      "explanation": "This scenario tests the inchoate nature of conspiracy. The conspiracy was complete the moment Abby, Bernard, and Carl agreed to rob the bank \u2014 that is the moment the offence was committed. Abby's subsequent change of heart and withdrawal does not retrospectively erase the fact that she was party to the agreement. Withdrawal from a common design (as analysed in Module 8) can prevent secondary liability for the substantive offence (the robbery), but it does not undo the completed offence of conspiracy. Abby remains guilty of conspiracy even if she never participated in the robbery itself. The prosecution can charge her with conspiracy regardless of the robbery's outcome. Option A incorrectly requires the substantive offence to be completed. Option C incorrectly treats withdrawal as cancelling conspiracy liability. Option D invents an automatic reduction in charge."
+    },
+    {
+      "id": "CRL_M09_L01_Q08",
+      "question": "Dara and Evan agree to commit fraud. They are arrested before they do anything to further the agreement. Fiona, who was present during the discussion but said nothing and made no agreement, is also arrested. Who is liable for conspiracy?",
+      "options": {
+        "A": "All three \u2014 Fiona's presence at the meeting and failure to object constitutes agreement",
+        "B": "Dara and Evan only \u2014 they agreed to commit fraud; the conspiracy is complete upon their agreement; Fiona, who made no agreement (even though present), is not a conspirator; mere presence at discussions without agreement is insufficient",
+        "C": "None of them \u2014 no overt act was performed in furtherance of the conspiracy",
+        "D": "Dara and Evan are liable for conspiracy; Fiona is liable as an aider and abettor to the conspiracy by her presence"
+      },
+      "correct_answer": "B",
+      "explanation": "Only Dara and Evan are liable for conspiracy. The analysis is: (1) Conspiracy requires an agreement \u2014 Dara and Evan agreed to commit fraud; the conspiracy is complete at that moment, without any overt act being required; (2) Fiona's position is governed by the mere presence principle (analogous to AG's Reference No.1 [1975] in secondary participation): mere presence at a meeting where a conspiracy is formed, without agreement to participate, is not sufficient to make Fiona a conspirator. She said nothing, made no agreement, and took no active steps. Silence and passive presence are not agreement. Fiona is not a conspirator \u2014 though she might conceivably face other liability depending on further facts. Option A incorrectly criminalises Fiona's passive presence. Option C incorrectly requires an overt act \u2014 conspiracy is complete on agreement. Option D incorrectly creates an aiding and abetting route for Fiona based solely on her presence."
+    },
+    {
+      "id": "CRL_M09_L01_Q09",
+      "question": "What is meant by a 'wheel conspiracy' versus a 'chain conspiracy'?",
+      "options": {
+        "A": "A wheel conspiracy involves a large number of principal offenders; a chain conspiracy involves only two parties in sequence",
+        "B": "A wheel conspiracy has a central figure ('hub') who separately conspires with multiple others ('spokes'), who may or may not know each other; a chain conspiracy involves a series of linked agreements where each person knows the next link but not the full extent of the conspiracy; both are recognisable forms of conspiracy in law",
+        "C": "A wheel conspiracy requires written agreements at each 'spoke'; a chain conspiracy operates entirely orally",
+        "D": "A wheel conspiracy is a statutory concept; a chain conspiracy is a common law concept"
+      },
+      "correct_answer": "B",
+      "explanation": "These terms describe structural forms of conspiracy: (1) Wheel conspiracy \u2014 there is a central hub figure who conspires separately with each of the 'spokes.' The spokes may have no knowledge of each other. The question is whether there is one conspiracy or multiple separate conspiracies. If the spokes share awareness of the common unlawful purpose (even indirectly), they may all be part of one wheel conspiracy. If each spoke is ignorant of the others, there may be separate bilateral conspiracies between the hub and each spoke. (2) Chain conspiracy \u2014 each person knows the next link in the chain but not the full conspiracy. Drug trafficking is a classic chain: A supplies to B, B to C, C to D \u2014 each knows only their immediate counterpart. Where each link in the chain is knowingly part of the same overarching unlawful enterprise, all can be charged as part of a single conspiracy. These structural analyses are relevant to complex multi-defendant conspiracy cases."
+    },
+    {
+      "id": "CRL_M09_L01_Q010",
+      "question": "Gary and Harry agree to defraud an insurance company. Gary performs all the preparatory acts (forging documents, making false statements) while Harry waits for the proceeds. Before any claim is made, both are arrested. Can they be charged with conspiracy to defraud even though no money was obtained?",
+      "options": {
+        "A": "No \u2014 conspiracy to defraud requires that at least an attempt to obtain money be made; mere agreement without any attempt is insufficient",
+        "B": "Yes \u2014 the conspiracy is complete upon the agreement between Gary and Harry to defraud the insurance company; the fact that the fraud was interrupted before any money was obtained does not affect the conspiracy charge; the overt preparatory acts (forging documents) may be evidence of the agreement but are not required elements of the conspiracy",
+        "C": "No \u2014 Gary's acts (forging documents) constitute attempt, not conspiracy; the prosecution must choose between charging conspiracy or attempt, not both",
+        "D": "Yes \u2014 but only Gary can be charged with conspiracy since he performed the preparatory acts; Harry, having done nothing, cannot be a conspirator"
+      },
+      "correct_answer": "B",
+      "explanation": "Gary and Harry can be charged with conspiracy to defraud. The conspiracy was complete the moment they agreed to defraud the insurance company \u2014 no further act is required. The overt preparatory acts (forging documents) are evidence from which the jury can infer the existence of the agreement, but they are not required elements of the offence. The fact that the fraud was interrupted before any money was obtained is entirely irrelevant to the conspiracy charge \u2014 it confirms that inchoate offences punish planning and agreement before completion. Additionally, the preparatory acts by Gary might separately constitute offences (false instruments under the CJ(T&F)A 2001), and both conspiracy and any substantive offences arising from the preparatory acts can be charged concurrently. Option A incorrectly requires an attempt. Option C incorrectly requires a choice between conspiracy and attempt. Option D incorrectly excludes Harry despite his clear agreement to participate."
+    }
+  ]
+}

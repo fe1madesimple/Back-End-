@@ -1,0 +1,251 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": "ContractLaw_ElevenLabs_Module01_Lesson05.txt",
+  "module_number": 3,
+  "module_title": "Capacity, Formalities and Privity",
+  "lesson_number": 1,
+  "lesson_title": "Capacity to Contract",
+  "total_questions": 20,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the general rule on contractual capacity in Irish law?",
+      "options": {
+        "A": "All persons over the age of 16 have full contractual capacity",
+        "B": "All natural persons of full age (18 years) and sound mind, and incorporated entities within their constitutional objects, have full contractual capacity",
+        "C": "Contractual capacity requires a written declaration of competence signed before a notary",
+        "D": "Capacity is presumed only for commercial parties and must be proved for private individuals"
+      },
+      "correct_answer": "B",
+      "explanation": "The general rule is that all natural persons of the age of majority (18 years in Ireland under the Age of Majority Act 1985) and of sound mind have full contractual capacity. Companies and other incorporated entities have capacity within their constitutional objects (subject to ultra vires principles). Capacity may be limited by minority, mental incapacity, or intoxication."
+    },
+    {
+      "id": 2,
+      "question": "Under Irish law, what is the age of majority for the purposes of contractual capacity?",
+      "options": {
+        "A": "16 years",
+        "B": "17 years",
+        "C": "18 years",
+        "D": "21 years"
+      },
+      "correct_answer": "C",
+      "explanation": "The Age of Majority Act 1985 reduced the age of majority in Ireland from 21 to 18 years. Persons under 18 (minors) have limited contractual capacity. Contracts made with minors are governed by the Minors' Contracts Act 1996 (if enacted) and the common law rules distinguishing between valid, voidable, and void contracts with minors."
+    },
+    {
+      "id": 3,
+      "question": "Under the common law (applicable in Ireland), which of the following contracts made with a minor is VALID and binding?",
+      "options": {
+        "A": "A contract for the purchase of a luxury car",
+        "B": "A contract for necessaries — goods or services suitable to the minor's station in life and actual requirements",
+        "C": "A contract for a commercial loan to fund a business venture",
+        "D": "A contract for the purchase of a house"
+      },
+      "correct_answer": "B",
+      "explanation": "At common law, a minor is bound by contracts for necessaries. Necessaries are goods or services that are suitable to the condition in life of the minor and to their actual requirements at the time of the sale and delivery (Sale of Goods Act 1893, s2). A minor must pay a reasonable price for necessaries but not necessarily the contract price. Classic examples include food, clothing, and housing."
+    },
+    {
+      "id": 4,
+      "question": "In Nash v Inman [1908], a Cambridge undergraduate purchased 11 fancy waistcoats. The Court of Appeal held the waistcoats were NOT necessaries because:",
+      "options": {
+        "A": "Clothing is never a necessary under the common law",
+        "B": "The minor was already sufficiently supplied with adequate clothing",
+        "C": "The minor had not reached the age of 18 when he placed the order",
+        "D": "The seller was aware of the minor's age at the time of contracting"
+      },
+      "correct_answer": "B",
+      "explanation": "In Nash v Inman [1908], the Court of Appeal held that the fancy waistcoats were not necessaries because the minor was already adequately supplied with clothes suitable to his station. The definition of necessaries is two-limbed: the goods must be suitable to the minor's condition of life (objective limb) AND the minor must actually need them at the time (actual requirements limb). Failure on either limb means the item is not a necessary."
+    },
+    {
+      "id": 5,
+      "question": "What is the general effect of a contract made by a minor for goods that are NOT necessaries?",
+      "options": {
+        "A": "The contract is void ab initio — it has no legal effect from the outset",
+        "B": "The contract is voidable at the minor's option — the minor can choose to enforce or repudiate it",
+        "C": "The contract is valid and binding on both parties",
+        "D": "The contract is void and the other party can recover goods supplied but not money paid"
+      },
+      "correct_answer": "B",
+      "explanation": "The general rule at common law is that a contract for non-necessaries made by a minor is voidable at the minor's option. The minor may choose to enforce the contract or repudiate it before or within a reasonable time of reaching majority. The adult party is bound but the minor is not. Upon repudiation, the minor may recover money paid if there has been a total failure of consideration."
+    },
+    {
+      "id": 6,
+      "question": "A minor who makes a contract for non-necessaries repudiates it on reaching majority. Which of the following is the correct position regarding money paid by the minor?",
+      "options": {
+        "A": "The minor can always recover all money paid",
+        "B": "The minor can recover money paid only if there has been a total failure of consideration",
+        "C": "The minor cannot recover any money paid under a voidable contract",
+        "D": "The minor can recover money paid only if they repudiate within 7 days of reaching majority"
+      },
+      "correct_answer": "B",
+      "explanation": "Upon repudiation by the minor, money paid can be recovered only if there has been a total failure of consideration — i.e., the minor received nothing of value under the contract. In Steinberg v Scala (Leeds) Ltd [1923], a minor who purchased shares could not recover the purchase price on repudiation because she had received shares (had the right to attend meetings and receive dividends), even though no dividends were actually paid."
+    },
+    {
+      "id": 7,
+      "question": "Which of the following contracts made during minority are voidable on attaining majority (continuing obligations contracts)?",
+      "options": {
+        "A": "A contract to purchase a single item of clothing",
+        "B": "A partnership agreement, a lease, and an agreement to take shares in a company",
+        "C": "A contract of employment",
+        "D": "A contract for a student loan"
+      },
+      "correct_answer": "B",
+      "explanation": "At common law, certain contracts involving a continuing obligation — such as a partnership agreement, a lease, a share subscription, or a marriage settlement — are voidable by the minor upon (or before) attaining majority. These are sometimes called 'continuing contracts'. If not repudiated promptly after majority, the adult becomes bound by them. They are valid and binding unless and until repudiated."
+    },
+    {
+      "id": 8,
+      "question": "Under the Assisted Decision-Making (Capacity) Act 2015 (Ireland), how is legal capacity assessed?",
+      "options": {
+        "A": "On the basis of a medical diagnosis of mental disorder alone",
+        "B": "On a functional, decision-specific basis — a person may have capacity for some decisions but not others at a given time",
+        "C": "By a court-appointed guardian who has absolute authority over all decisions",
+        "D": "On the basis of age — persons over 65 are presumed to lack capacity"
+      },
+      "correct_answer": "B",
+      "explanation": "The Assisted Decision-Making (Capacity) Act 2015 replaced the traditional status-based approach to capacity with a functional, decision-specific model. Capacity is assessed in relation to a specific decision at a specific time — a person may have capacity for some decisions and not others. There is a presumption of capacity, and all practicable steps must be taken to support the person in making their own decision."
+    },
+    {
+      "id": 9,
+      "question": "At common law, what is the effect of a contract made by a person of unsound mind?",
+      "options": {
+        "A": "All contracts made by a person of unsound mind are void ab initio",
+        "B": "The contract is voidable at the option of the person lacking capacity, provided the other party knew of the incapacity",
+        "C": "The contract is binding on both parties if the other party was unaware of the incapacity",
+        "D": "The contract is void, and neither party can enforce it"
+      },
+      "correct_answer": "B",
+      "explanation": "At common law, a contract made by a person of unsound mind is voidable (not void) at the option of that person, but only if the other party knew of the incapacity at the time of contracting. If the other party contracted in good faith without knowledge of the incapacity, the contract is binding: Imperial Loan Co v Stone [1892]. Additionally, a person of unsound mind must pay a reasonable price for necessaries supplied to them (SGA 1893, s2)."
+    },
+    {
+      "id": 10,
+      "question": "Under the Sale of Goods Act 1893, s2, what is the effect of supplying necessaries to a person who is of unsound mind or a minor?",
+      "options": {
+        "A": "There is no obligation to pay — contracts with persons lacking capacity are unenforceable",
+        "B": "The person of unsound mind or minor must pay a reasonable price for the necessaries",
+        "C": "The seller may recover only the cost price, not any profit element",
+        "D": "The contract price is recoverable if the goods are of adequate quality"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 2 of the Sale of Goods Act 1893 (Ireland) provides that where necessaries are sold and delivered to a minor or to a person of unsound mind who is unable to contract, they must pay a reasonable price for them. This is not necessarily the contract price — the court determines what is reasonable. This prevents unjust enrichment while recognising the contractual incapacity of the person."
+    },
+    {
+      "id": 11,
+      "question": "What is the effect of a contract made by a person who is intoxicated at the time of contracting?",
+      "options": {
+        "A": "All contracts made while intoxicated are void",
+        "B": "The contract is voidable at the option of the intoxicated party, provided the intoxication was so severe as to prevent understanding and the other party knew of it",
+        "C": "Intoxication is never a ground for avoiding a contract at common law",
+        "D": "The contract is binding because voluntary intoxication is not a vitiating factor"
+      },
+      "correct_answer": "B",
+      "explanation": "Intoxication may render a contract voidable on similar principles to mental incapacity. The intoxicated party must show: (1) the intoxication was so severe they did not understand the nature of the transaction; and (2) the other party was aware of the intoxication. The contract may then be avoided. Upon sobering, the intoxicated party must act promptly to avoid affirmation (Matthews v Baxter [1873])."
+    },
+    {
+      "id": 12,
+      "question": "Under the Assisted Decision-Making (Capacity) Act 2015, a Decision Support Agreement (DSA) is:",
+      "options": {
+        "A": "A court order appointing a guardian to make decisions on behalf of a person",
+        "B": "An agreement between a person with capacity difficulties and a chosen supporter, enabling the person to make their own assisted decisions",
+        "C": "A statutory form replacing the enduring power of attorney",
+        "D": "A medical certificate confirming that a person has full legal capacity"
+      },
+      "correct_answer": "B",
+      "explanation": "A Decision Support Agreement (DSA) under the Assisted Decision-Making (Capacity) Act 2015 is a formal arrangement between a person who has some difficulty with decision-making and a chosen 'decision-making assistant'. The assistant helps and supports the person — who retains full legal capacity — in gathering information and communicating their decisions. The DSA is registered with the Decision Support Service."
+    },
+    {
+      "id": 13,
+      "question": "A company incorporated under the Companies Act 2014 (Ireland) purports to enter a contract outside its constitutional objects. What is the position under modern Irish company law?",
+      "options": {
+        "A": "The contract is always void as ultra vires — the company has no capacity to enter it",
+        "B": "The ultra vires doctrine has been substantially abolished for contracts with third parties — a company may enter contracts outside its objects if the other party is acting in good faith",
+        "C": "The company must obtain shareholder approval before any contract can bind it",
+        "D": "The directors are personally liable for contracts entered outside the company's objects"
+      },
+      "correct_answer": "B",
+      "explanation": "The Companies Act 2014 substantially abolished the ultra vires doctrine as it affects third parties. Under s973, the validity of a company's acts shall not be called into question on the ground of lack of capacity by reason of anything in the company's constitution. A company has full capacity to do any act or enter any transaction if done in good faith by the other party. Internally, directors may still be liable for exceeding their authority."
+    },
+    {
+      "id": 14,
+      "question": "Which of the following is an example of a 'beneficial contract of service' that would bind a minor?",
+      "options": {
+        "A": "A contract for a minor to sell luxury goods",
+        "B": "A contract of employment or apprenticeship that is substantially for the minor's benefit, including reasonable terms that restrict the minor's activities",
+        "C": "A contract to guarantee the debts of a third party",
+        "D": "A loan agreement to fund educational expenses"
+      },
+      "correct_answer": "B",
+      "explanation": "At common law, contracts of employment, apprenticeship, or other agreements for the minor's education and training are binding on the minor if, taken as a whole, they are for the minor's benefit. In De Francesco v Barnum [1890], an apprenticeship contract was not beneficial because its terms were too harsh and one-sided. Where the contract is substantially beneficial — even if it contains some unfavourable terms — it will bind the minor."
+    },
+    {
+      "id": 15,
+      "question": "In MacRobbie v Haldane [1901] and related Irish authority, a contract for a minor's 'benefit' but containing onerous terms may:",
+      "options": {
+        "A": "Still bind the minor if the beneficial element predominates over the onerous element",
+        "B": "Never bind the minor if any term is onerous",
+        "C": "Bind the minor only if ratified on reaching majority",
+        "D": "Be treated as a contract for necessaries and enforced at cost price"
+      },
+      "correct_answer": "A",
+      "explanation": "The test for beneficial contracts of service is whether the contract, viewed as a whole, is for the minor's benefit. Minor courts look at the overall effect of the contract — if the beneficial provisions predominate, the contract binds the minor even if some terms are onerous. The question is whether the agreement, in substance, advances the minor's interests (Chaplin v Leslie Frewin [1966])."
+    },
+    {
+      "id": 16,
+      "question": "What is the effect of a minor ratifying a contract after reaching majority?",
+      "options": {
+        "A": "Ratification has no legal effect — a contract unenforceable against a minor remains unenforceable",
+        "B": "Ratification after majority binds the now-adult for future performance, and consideration for the original contract is sufficient to support the ratification",
+        "C": "Ratification requires fresh consideration to be effective",
+        "D": "Ratification automatically makes the original contract retrospectively valid from the date it was made"
+      },
+      "correct_answer": "B",
+      "explanation": "A minor who chooses to ratify a voidable contract on or after reaching majority becomes bound by it. Ratification may be express or implied from conduct (e.g., continuing to perform). No fresh consideration is required for ratification — the original consideration suffices. Ratification operates prospectively, binding the now-adult party, but does not automatically create liability for obligations that arose during minority."
+    },
+    {
+      "id": 17,
+      "question": "Under Irish law, can a minor's guardian or parent make a binding contract on the minor's behalf?",
+      "options": {
+        "A": "Yes — a parent always has authority to contract on behalf of their minor child",
+        "B": "Only in specific circumstances and within the scope of agency authority — a parent or guardian may bind the minor where they act as agent within their authority",
+        "C": "No — only the minor can make a binding contract in their own name",
+        "D": "Only if the minor countersigns the contract on reaching the age of 16"
+      },
+      "correct_answer": "B",
+      "explanation": "A parent or guardian can act as agent for a minor, binding the minor within the scope of agency authority. A guardian appointed by the court may enter contracts on the minor's behalf in relation to the minor's property or welfare, within the powers conferred by the court. General agency principles govern whether the guardian/parent has authority and whether the minor is thereby bound."
+    },
+    {
+      "id": 18,
+      "question": "In Doyle v White City Stadium [1935], a professional boxer's contract contained provisions, some of which were unfavourable to him as a minor. The Court of Appeal held the contract was binding because:",
+      "options": {
+        "A": "Boxing contracts are classified as contracts for necessaries",
+        "B": "The contract, taken as a whole, was for the boxer's benefit — it was a contract of service enabling him to earn his livelihood and develop his career",
+        "C": "The minor had ratified the contract by performing under it",
+        "D": "The other party had acted in good faith and without knowledge of the minor's age"
+      },
+      "correct_answer": "B",
+      "explanation": "In Doyle v White City Stadium [1935], the Court of Appeal held that the contract was a beneficial contract of service. Viewed as a whole, it was for the minor's benefit — it allowed him to pursue his professional career as a boxer. The fact that some terms (e.g., forfeiture of part of his earnings) were unfavourable did not prevent the contract from being binding where the overall purpose and effect was beneficial."
+    },
+    {
+      "id": 19,
+      "question": "Which of the following is NOT a category of persons whose contractual capacity may be limited under Irish law?",
+      "options": {
+        "A": "Minors (persons under 18)",
+        "B": "Persons of unsound mind",
+        "C": "Intoxicated persons (where the other party is aware of the intoxication)",
+        "D": "Persons who have filed for personal insolvency but have not been adjudicated bankrupt"
+      },
+      "correct_answer": "D",
+      "explanation": "Persons who have merely filed for personal insolvency under the Personal Insolvency Act 2012 (Ireland) do not thereby lose contractual capacity — they continue to be able to contract, subject to any specific provisions of the relevant arrangement. In contrast, minors, persons of unsound mind, and intoxicated persons (in defined circumstances) are recognised categories of persons with limited contractual capacity at common law."
+    },
+    {
+      "id": 20,
+      "question": "Under the Assisted Decision-Making (Capacity) Act 2015, which principle is paramount in all decisions affecting a person who may lack capacity?",
+      "options": {
+        "A": "The best interests of the person as determined by medical professionals",
+        "B": "The person's own will and preferences must be respected and given effect to, so far as practicable",
+        "C": "The views of the person's family members take priority over the person's own views",
+        "D": "Capacity is presumed absent unless specifically proved by a court"
+      },
+      "correct_answer": "B",
+      "explanation": "The guiding principle of the Assisted Decision-Making (Capacity) Act 2015 is respect for the person's own will and preferences. The Act moves away from a 'best interests' standard (which allows substituted decision-making) towards the UNCRPD model of supported decision-making — the person retains legal capacity and their will and preferences are central. Decision-supporters assist, not replace, the person's decision-making."
+    }
+  ]
+}

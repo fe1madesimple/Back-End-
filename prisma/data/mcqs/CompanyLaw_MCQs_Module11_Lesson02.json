@@ -1,0 +1,167 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module11_Lesson02.txt",
+  "module_number": 11,
+  "module_title": "Corporate Insolvency",
+  "lesson_number": 2,
+  "lesson_title": "Receivership",
+  "total_questions": 13,
+  "questions": [
+    {
+      "id": "CL_M11_L02_Q01",
+      "question": "Under the Companies Act 2014, what is the primary legal basis on which a receiver over the assets and undertaking of an Irish company is most commonly appointed?",
+      "options": {
+        "A": "By order of the High Court under s.569 on a petition by a judgment creditor",
+        "B": "By the debenture holder exercising a contractual power under a fixed and floating charge instrument",
+        "C": "By ordinary resolution of the shareholders following a solvency declaration under s.580",
+        "D": "By the Corporate Enforcement Authority under s.842 where a company is insolvent"
+      },
+      "correct_answer": "B",
+      "explanation": "In Irish practice, the overwhelming majority of receivers are appointed out of court by a secured creditor (typically a bank) exercising a contractual power contained in a debenture that includes a fixed charge and a crystallised floating charge. Court-appointed receivers under s.438 CA 2014 are significantly less common. s.569 relates to compulsory winding-up; s.580 to members' voluntary liquidation; s.842 to the CEA's enforcement powers."
+    },
+    {
+      "id": "CL_M11_L02_Q02",
+      "question": "In Ruby Property Company Ltd v Kilty [1999] IEHC, the court considered the duty owed by a receiver when selling charged assets. Which of the following most accurately states the legal principle established?",
+      "options": {
+        "A": "A receiver owes a strict fiduciary duty to the company and is obliged to delay a sale until market conditions improve",
+        "B": "A receiver owes a duty to the company to take reasonable care to obtain the best price reasonably obtainable at the time of sale, even if that requires waiting",
+        "C": "A receiver's primary duty is to the appointing debenture holder and any duty to the company is purely moral, not legal",
+        "D": "A receiver must obtain at least three independent valuations before proceeding with a sale of real property"
+      },
+      "correct_answer": "B",
+      "explanation": "Ruby Property v Kilty [1999] confirmed that while the receiver's primary duty is to realise assets for the benefit of the appointing creditor, the receiver nevertheless owes a duty of care to the company (and guarantors) to take reasonable care to obtain the best price reasonably obtainable at the time of sale. This does not require waiting indefinitely for better market conditions but does require proper marketing and timing. Option C overstates the position following this case."
+    },
+    {
+      "id": "CL_M11_L02_Q03",
+      "question": "Under s.439 of the Companies Act 2014, what specific obligation does a receiver of the property of a company owe when selling that property?",
+      "options": {
+        "A": "To obtain the consent of the High Court before completing any disposal of property valued over €50,000",
+        "B": "To obtain the best price reasonably obtainable for the property at the time of sale",
+        "C": "To sell by public auction to ensure transparency and avoid conflicts of interest",
+        "D": "To give preferential creditors a right of first refusal before selling charged assets"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 439 CA 2014 codifies the receiver's duty when selling: the receiver must obtain the best price reasonably obtainable at the time of sale. This is a statutory duty owed to the company, its shareholders, and guarantors. It does not mandate public auction (s.439(2) permits private treaty sales), nor does it require court approval or give preferential creditors pre-emption rights. The standard is reasonable obtainability at the time — the receiver is not expected to wait indefinitely."
+    },
+    {
+      "id": "CL_M11_L02_Q04",
+      "question": "A receiver is appointed over the assets of Crane Ltd on 15 March. The company has 45 employees. Under s.438 of the Companies Act 2014, within what period must the receiver notify employees and the Registrar of Companies of the appointment?",
+      "options": {
+        "A": "7 days of appointment for both employees and the Registrar",
+        "B": "14 days of appointment for both employees and the Registrar",
+        "C": "3 days of appointment for employees and 7 days for the Registrar",
+        "D": "The receiver is only required to notify the Registrar; employee notification is a matter for the company"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 438 CA 2014 requires a receiver to notify both the Registrar of Companies and the company's employees (where the company has employees) within 14 days of appointment. Failure to comply is a criminal offence. The receiver must also include the words 'in receivership' on all company correspondence and documents issued during the receivership, ensuring third parties dealing with the company are on notice of the appointment."
+    },
+    {
+      "id": "CL_M11_L02_Q05",
+      "question": "In Casey v Irish Intercontinental Bank [1979] IR 364, the Supreme Court considered a receiver's liability for pre-appointment contracts of the company. Which principle did the court apply?",
+      "options": {
+        "A": "A receiver personally assumes liability for all pre-appointment contractual obligations of the company on taking up office",
+        "B": "A receiver is an agent of the company and therefore the company (not the receiver personally) remains liable on pre-appointment contracts",
+        "C": "A receiver who continues to perform a pre-appointment contract novates the contract and becomes personally liable on it",
+        "D": "Pre-appointment contracts are automatically rescinded upon the appointment of a receiver unless the counterparty elects to affirm"
+      },
+      "correct_answer": "B",
+      "explanation": "Casey v IIB [1979] established the fundamental agency principle: a receiver appointed under a debenture is deemed the agent of the company (a statutory agency under s.437 CA 2014), meaning the company — not the receiver personally — is liable on contracts entered into or continued by the receiver. However, the receiver does incur personal liability on new contracts entered into after appointment (s.437(2)), unless the contract expressly excludes personal liability. Option C (novation by performance) was rejected."
+    },
+    {
+      "id": "CL_M11_L02_Q06",
+      "question": "Under s.437 of the Companies Act 2014, a receiver appointed under a debenture is deemed to be the agent of the company. What is the practical significance of this deemed agency in terms of the receiver's personal liability?",
+      "options": {
+        "A": "The receiver incurs no personal liability whatsoever, all obligations being the company's alone both pre- and post-appointment",
+        "B": "The receiver is personally liable on pre-appointment contracts but the company bears liability on post-appointment contracts the receiver adopts",
+        "C": "The receiver is personally liable on contracts entered into after appointment, subject to any contractual exclusion of personal liability",
+        "D": "The deemed agency is merely nominal; in practice the debenture holder bears all contractual liabilities incurred during receivership"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 437(2) CA 2014 provides that a receiver is personally liable on contracts entered into by the receiver in carrying out the receivership, unless the contract expressly limits or excludes that liability. The company's assets are the source of indemnity for the receiver. Pre-appointment contracts remain the company's liability (Casey v IIB). Thus the receiver has personal exposure on new post-appointment contracts but not on pre-existing ones (absent adoption/novation)."
+    },
+    {
+      "id": "CL_M11_L02_Q07",
+      "question": "Floating charges are central to receivership practice. Which of the following most accurately describes when a floating charge 'crystallises' under Irish law?",
+      "options": {
+        "A": "When the company's annual return is not filed within the statutory deadline, the floating charge crystallises automatically by operation of statute",
+        "B": "Upon the occurrence of a crystallisation event specified in the debenture (such as appointment of a receiver or commencement of winding up), converting the floating charge to a fixed charge over assets then held by the company",
+        "C": "When the company's board resolves to cease trading, the floating charge crystallises over future-acquired assets only",
+        "D": "Floating charges crystallise only upon a court order and cannot crystallise automatically by contractual provision"
+      },
+      "correct_answer": "B",
+      "explanation": "Crystallisation is the process by which a floating charge attaches to and becomes fixed over the specific assets then in the company's possession. Under Irish law (consistent with English authorities such as Evans v Rival Granite Quarries [1910]), crystallisation occurs upon a contractually specified event — classically the appointment of a receiver or commencement of winding up, though modern debentures often include automatic crystallisation clauses on the happening of defined events. It is entirely contractual, not statutory, and affects all assets held at the moment of crystallisation."
+    },
+    {
+      "id": "CL_M11_L02_Q08",
+      "question": "In a receivership, the order of priority for distribution of proceeds from realisation of assets secured by a floating charge (after fixed charge assets are applied) is governed by statute. Which of the following correctly states the Irish law priority sequence?",
+      "options": {
+        "A": "Floating charge holder → Preferential creditors → Unsecured creditors → Fixed charge holder",
+        "B": "Fixed charge holder → Preferential creditors → Floating charge holder → Unsecured creditors",
+        "C": "Preferential creditors → Floating charge holder → Unsecured creditors → Fixed charge holder",
+        "D": "Fixed charge holder → Floating charge holder → Preferential creditors → Unsecured creditors"
+      },
+      "correct_answer": "B",
+      "explanation": "The correct statutory order under s.440 CA 2014 (reflecting the Preferential Payments in Bankruptcy (Ireland) Act 1889 tradition) for distribution of floating charge proceeds is: (1) costs and expenses of the receivership; (2) preferential creditors (employees' wages, PAYE/PRSI arrears up to prescribed limits, certain Revenue claims); (3) the floating charge holder; (4) unsecured/ordinary creditors (who in practice receive nothing in most receiverships). Fixed charge proceeds are applied to the fixed charge holder first, ahead of all others including preferential creditors. Option D incorrectly subordinates preferential creditors."
+    },
+    {
+      "id": "CL_M11_L02_Q09",
+      "question": "Re Bula Ltd [1990] 1 IR 440 was a landmark Irish case concerning receiver independence. What was the critical principle established by the Supreme Court?",
+      "options": {
+        "A": "A receiver is an officer of the court and therefore owes duties to all creditors equally, not merely the appointing debenture holder",
+        "B": "A receiver who has previously acted as an adviser to the appointing bank may be disqualified for conflict of interest, as a receiver must be independent of both the company and the appointing creditor",
+        "C": "The receiver must be a qualified insolvency practitioner; appointment of an unqualified person renders the receivership void ab initio",
+        "D": "Where two banks jointly appoint a receiver, the receiver's primary duty is to the bank holding the larger charge"
+      },
+      "correct_answer": "B",
+      "explanation": "Re Bula [1990] established that a receiver must be, and must be seen to be, independent of both the company and the appointing creditor. In Bula, the proposed receiver had previously acted as an adviser to the appointing bank, and the Supreme Court held this created a sufficient conflict that disqualified the appointment. This principle of independence reflects the receiver's dual exposure: as agent of the company (s.437) while acting to realise assets for the secured creditor. The absence of a formal 'officer of the court' status (contrast with examiner or liquidator) does not eliminate the independence requirement."
+    },
+    {
+      "id": "CL_M11_L02_Q10",
+      "question": "A receiver is appointed over Bray Industrial Ltd and discovers that the company's most valuable asset (a Dublin warehouse) was mortgaged to Bank A by way of fixed charge three years ago, and to Bank B by way of a subsequent floating charge two years ago. Bank B appointed the receiver. In what order should the receiver distribute proceeds from the warehouse sale?",
+      "options": {
+        "A": "Bank A (first fixed charge) → Bank B (floating charge) → Preferential creditors → Unsecured creditors",
+        "B": "Bank B (appointing creditor) → Bank A (prior fixed charge) → Preferential creditors → Unsecured creditors",
+        "C": "Preferential creditors → Bank A (first fixed charge) → Bank B (floating charge) → Unsecured creditors",
+        "D": "Bank A (first fixed charge) → Preferential creditors → Bank B (floating charge) → Unsecured creditors"
+      },
+      "correct_answer": "A",
+      "explanation": "Fixed charge priority is determined by registration priority and the nemo dat principle: Bank A's prior registered fixed charge over the specific warehouse takes priority over Bank B's subsequent floating charge over the same asset. After the first fixed charge holder (Bank A) is satisfied, preferential creditors are paid from floating charge proceeds (s.440 CA 2014), then Bank B as floating charge holder, then unsecured creditors. The appointing creditor's status as appointor does not give it super-priority over a prior fixed charge holder. Option D is the common wrong answer — it inserts preferential creditors above Bank B but below Bank A, but preferential creditors rank ahead of the floating charge holder (Bank B), not the fixed charge holder (Bank A)."
+    },
+    {
+      "id": "CL_M11_L02_Q11",
+      "question": "Under s.441 of the Companies Act 2014, a receiver who is unable to pay a preferential debt in full must notify the creditor of that fact. Which additional obligation does s.441 impose on the receiver in relation to preferential debts?",
+      "options": {
+        "A": "The receiver must obtain High Court approval before distributing any amount less than the full preferential debt",
+        "B": "The receiver must make a pro-rata distribution to all preferential creditors where assets are insufficient to pay preferential debts in full",
+        "C": "The receiver is personally liable to top up any shortfall in preferential payments from their own funds",
+        "D": "The receiver must convene a meeting of preferential creditors to agree a compromise before distributing less than the full amount"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 441 CA 2014 provides that where a receiver cannot pay preferential creditors in full from the assets available, the receiver must distribute the available assets among preferential creditors on a pro-rata (pari passu) basis — preferential creditors rank equally among themselves. The receiver has no personal liability for the shortfall (option C is wrong), nor is court approval or a creditors' meeting required (options A and D wrong). This pro-rata distribution reflects the principle that once assets are insufficient, equity among creditors of equal rank governs."
+    },
+    {
+      "id": "CL_M11_L02_Q12",
+      "question": "A key distinction between receivership and examinership in Irish insolvency law concerns the effect on the company as a going concern. Which of the following most accurately captures this distinction?",
+      "options": {
+        "A": "Both processes aim to preserve the company as a going concern; the key difference is that examinership requires shareholder approval while receivership requires creditor approval",
+        "B": "Receivership is primarily a creditor-enforcement mechanism aimed at realising secured assets for the debenture holder, while examinership is a court-supervised rescue process aimed at preserving the company as a going concern",
+        "C": "Both processes can result in liquidation, but receivership involves a court-supervised sale while examinership involves a private sale",
+        "D": "Receivership is exclusively available to PLCs while examinership is available to all company types including private limited companies"
+      },
+      "correct_answer": "B",
+      "explanation": "The fundamental distinction is purpose: receivership exists to enforce a creditor's security — the receiver's primary objective is to realise assets to repay the debenture holder, with no obligation to preserve the company. Examinership (Part 10 CA 2014) is a rescue procedure under court supervision, aimed at preserving employment and the company as a going concern through a scheme of arrangement approved by creditors and confirmed by the High Court. A company in receivership may continue trading temporarily, but this is incidental to asset realisation, not a rescue objective. Both are available to companies of all types (option D wrong)."
+    },
+    {
+      "id": "CL_M11_L02_Q13",
+      "question": "Section 437(6) of the Companies Act 2014 addresses the situation where a receiver is appointed over the whole or substantially the whole of a company's property. What obligation does this create for the directors?",
+      "options": {
+        "A": "Directors must resign within 14 days of the receiver's appointment and cannot be re-appointed until the receivership concludes",
+        "B": "Directors must prepare and submit a Statement of Affairs to the receiver within 30 days (or such extended period as the receiver allows) of being notified by the receiver",
+        "C": "Directors must convene an extraordinary general meeting within 21 days to inform shareholders of the receivership and seek a mandate to continue",
+        "D": "Directors' powers are suspended in their entirety from the date of appointment and vest solely in the receiver for the duration of the receivership"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 437(6) CA 2014 requires the company's directors (and other officers/employees specified by the receiver) to submit a Statement of Affairs to the receiver within 30 days of being so required (extendable at the receiver's discretion). The Statement of Affairs provides a snapshot of the company's assets, liabilities, creditors, and security. This is a critical tool for the receiver to understand the company's position. Note that directors do not resign automatically (option A wrong); their powers are curtailed only to the extent that the receiver's authority over charged assets supersedes them (option D overstates the position — directors retain residual powers over uncharged assets)."
+    }
+  ]
+}

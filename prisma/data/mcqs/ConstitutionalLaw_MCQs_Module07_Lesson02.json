@@ -1,0 +1,167 @@
+{
+  "subject": "Constitutional Law",
+  "el_script_ref": "ConstitutionalLaw_ElevenLabs_Module07_Lesson02.txt",
+  "module_number": 7,
+  "module_title": "Criminal Justice and Fair Procedures",
+  "lesson_number": 2,
+  "lesson_title": "Vague and Uncertain Offences",
+  "total_questions": 13,
+  "questions": [
+    {
+      "id": "CON_M07_L02_Q01",
+      "question": "The constitutional requirement that criminal offences be sufficiently certain and defined is primarily derived from which constitutional provision?",
+      "options": {
+        "A": "Art. 40.1 — equality before the law",
+        "B": "Art. 38.1 — trial in due course of law and Art. 15.5.1° — prohibition on retrospective criminal legislation",
+        "C": "Art. 34.1 — administration of justice in courts",
+        "D": "Art. 40.4.1° — personal liberty"
+      },
+      "correct_answer": "B",
+      "explanation": "The void for vagueness doctrine in Irish constitutional law flows from Art. 38.1's guarantee of trial 'in due course of law' (which requires fair notice of what is prohibited) and Art. 15.5.1°'s prohibition on declaring acts criminal retrospectively. Together these provisions require that offences be defined with sufficient clarity that a person of reasonable intelligence can know what conduct is prohibited."
+    },
+    {
+      "id": "CON_M07_L02_Q02",
+      "question": "In King v Attorney General [1981] IR 233, the Supreme Court struck down provisions of the Vagrancy Act 1824 on the ground that they were unconstitutionally vague. What was the offending feature of those provisions?",
+      "options": {
+        "A": "They imposed strict liability without a mental element",
+        "B": "They allowed a Garda to arrest without warrant for breach of the peace",
+        "C": "They left the definition of criminality entirely to the discretion of the arresting Garda, with no objective standard in the statute",
+        "D": "They created retrospective criminal liability contrary to Art. 15.5.1°"
+      },
+      "correct_answer": "C",
+      "explanation": "In King v AG [1981] IR 233, O'Higgins CJ (Supreme Court) struck down s.4 of the Vagrancy Act 1824 (and related provisions) because they made it a criminal offence to behave in a manner that a Garda believed indicated criminal intent. Criminality depended entirely on the subjective view of the arresting officer, with no objective statutory definition of prohibited conduct. This offended the constitutional requirement that citizens know in advance what the law prohibits."
+    },
+    {
+      "id": "CON_M07_L02_Q03",
+      "question": "The test applied by Irish courts to determine whether a criminal offence is unconstitutionally vague is:",
+      "options": {
+        "A": "Whether the offence is defined with mathematical precision",
+        "B": "Whether a person of reasonable intelligence can ascertain from the statute what conduct is prohibited",
+        "C": "Whether the offence has been prosecuted consistently for at least five years",
+        "D": "Whether the DPP has published guidelines on the offence's application"
+      },
+      "correct_answer": "B",
+      "explanation": "Irish courts apply an 'ordinary person of reasonable intelligence' test: the statutory definition of a criminal offence must be sufficiently clear that a person of ordinary intelligence can, by reading it (with legal advice if necessary), understand what conduct is prohibited and what is permitted. Some degree of uncertainty at the margins is tolerable — the offence need not be defined with total precision — but it cannot leave the entire definition to official discretion or be so broad as to give no fair warning."
+    },
+    {
+      "id": "CON_M07_L02_Q04",
+      "question": "In CC v Ireland [2006] 4 IR 1, the Supreme Court declared the offence of unlawful carnal knowledge of a girl under 15 (s.1(1) Criminal Law Amendment Act 1935) unconstitutional in part because:",
+      "options": {
+        "A": "The offence imposed strict liability without a defence of honest mistake as to age, creating an unjust and disproportionate criminal liability",
+        "B": "The offence was impermissibly vague in its definition of 'carnal knowledge'",
+        "C": "The Oireachtas had not validly delegated power to criminalise the conduct",
+        "D": "The offence duplicated provisions already in the Criminal Law (Sexual Offences) Act 1993"
+      },
+      "correct_answer": "A",
+      "explanation": "In CC v Ireland [2006] 4 IR 1, the Supreme Court held that the strict liability nature of the offence — which provided no defence of honest and reasonable mistake as to the girl's age — violated constitutional principles of fairness and proportionality embedded in Art. 38.1. Criminalising conduct without any fault element where the accused genuinely and reasonably believed the girl was over 15 was constitutionally disproportionate. This is distinct from a pure vagueness challenge; the offence was clearly defined but unfair in its strict liability application."
+    },
+    {
+      "id": "CON_M07_L02_Q05",
+      "question": "Which principle best explains why a criminal offence that gives law enforcement entirely unfettered discretion in its application is constitutionally suspect in Ireland?",
+      "options": {
+        "A": "The principle of judicial supremacy — only courts can define crimes",
+        "B": "The principle of legality (nullum crimen sine lege) — citizens must be able to know in advance what is criminal and what is not",
+        "C": "The separation of powers — only the Oireachtas can direct how Gardaí exercise discretion",
+        "D": "The equality guarantee in Art. 40.1 — discretion leads to unequal enforcement"
+      },
+      "correct_answer": "B",
+      "explanation": "The principle of legality (nullum crimen sine lege — no crime without law) requires that the law itself, not official discretion, defines what is criminal. An offence that leaves the definition of criminality to the arresting officer's subjective view fails this standard because the citizen cannot know from the law whether their conduct is prohibited. Art. 38.1's 'due course of law' and Art. 15.5.1°'s anti-retrospectivity principle both reflect this underlying demand for legal certainty and fair notice."
+    },
+    {
+      "id": "CON_M07_L02_Q06",
+      "question": "In Dokie v DPP [2011] IESC 40, the Supreme Court upheld the constitutionality of s.4 of the Criminal Justice (Public Order) Act 1994 (intoxication in a public place causing danger). Which feature of the provision was critical to its survival?",
+      "options": {
+        "A": "It applied only to repeat offenders",
+        "B": "It required proof that the accused's condition presented a danger to themselves or others, providing an objective threshold",
+        "C": "The Oireachtas had expressly stated the provision was consistent with the Constitution",
+        "D": "The offence carried only a minor penalty, removing constitutional concerns"
+      },
+      "correct_answer": "B",
+      "explanation": "In Dokie v DPP [2011] IESC 40, the Supreme Court upheld s.4 of the Criminal Justice (Public Order) Act 1994 because the offence required proof that the accused was so intoxicated in a public place as to be a danger to themselves or others. This objective statutory element — danger — provided sufficient definition to satisfy the certainty requirement. Unlike the Vagrancy Act provisions in King v AG (which relied entirely on police discretion), s.4 gave an objective standard by which conduct could be assessed."
+    },
+    {
+      "id": "CON_M07_L02_Q07",
+      "question": "The distinction between an offence that is 'uncertain' (unconstitutionally vague) and one that is merely 'broad' (constitutionally permissible) is that:",
+      "options": {
+        "A": "Broad offences cover many types of conduct but still define what conduct is prohibited; uncertain offences fail to define the prohibited conduct at all or delegate definition to officials",
+        "B": "Broad offences require jury trial; uncertain offences are always minor offences",
+        "C": "Broad offences are permissible only where the penalty is under €2,500; uncertain offences are never permissible",
+        "D": "Broad offences are found in pre-1937 legislation; uncertain offences are in post-1937 Acts"
+      },
+      "correct_answer": "A",
+      "explanation": "A broad offence may cover a wide range of conduct (e.g., 'theft' encompasses many forms of dishonest taking) but still provides a clear definition of what is prohibited, giving citizens fair notice. An uncertain or vague offence fails to define the prohibited conduct with sufficient clarity — either leaving it to official discretion, using terms so indeterminate that no reasonable person can know what is prohibited, or creating liability based on status or suspicion rather than defined acts. Breadth alone does not render an offence unconstitutional."
+    },
+    {
+      "id": "CON_M07_L02_Q08",
+      "question": "A statutory offence provides that it is an offence to act 'in a manner likely to cause annoyance to any person.' Applying Irish constitutional principles, this offence is most likely:",
+      "options": {
+        "A": "Constitutional, as ordinary language should be given its plain meaning",
+        "B": "Constitutional, as subjective standards are permissible in criminal law",
+        "C": "Unconstitutional, because 'annoyance' is so subjective and undefined that citizens cannot know in advance what conduct is prohibited",
+        "D": "Constitutional, as any residual uncertainty can be resolved by the DPP's prosecution guidelines"
+      },
+      "correct_answer": "C",
+      "explanation": "A provision criminalising conduct 'likely to cause annoyance' would be constitutionally suspect under Irish law because the standard is entirely subjective and undefined. What one person finds annoying differs widely from another's view. This offends the requirement in King v AG [1981] IR 233 that the citizen be able to ascertain from the statute itself what conduct is prohibited. The DPP's guidelines cannot cure a constitutionally vague statute — the definition must come from the law itself."
+    },
+    {
+      "id": "CON_M07_L02_Q09",
+      "question": "In McGowan v Carville [1960] IR 330, the Supreme Court considered an offence of 'loitering with intent.' The key constitutional concern with such offences is:",
+      "options": {
+        "A": "That they criminalise mere presence in a place rather than a defined prohibited act",
+        "B": "That they carry excessive penalties disproportionate to the conduct",
+        "C": "That they infringe freedom of movement under Art. 40.4",
+        "D": "That they were enacted before the 1937 Constitution and are therefore impliedly repealed"
+      },
+      "correct_answer": "A",
+      "explanation": "Status-based or suspicion-based offences — such as 'loitering with intent' or older vagrancy-type provisions — are constitutionally problematic because they criminalise what a person is or where they are, rather than what they have done. The constitutional guarantee of trial 'in due course of law' (Art. 38.1) requires that criminal liability attach to defined acts, not to presence, status, or an officer's suspicion of intent. Absent an objective statutory definition of prohibited conduct, such offences fail the certainty requirement."
+    },
+    {
+      "id": "CON_M07_L02_Q010",
+      "question": "The Oireachtas enacts a statute providing that the Minister may, by order, declare any activity to be a criminal offence. Applying the principles from People (DPP) v McDonagh [2001] 3 IR 411 and the Cityview Press principles-and-policies test, this provision is most likely:",
+      "options": {
+        "A": "Constitutional, as the Oireachtas retains oversight through the negative resolution procedure",
+        "B": "Unconstitutional, as it constitutes an impermissible delegation of legislative power — the Oireachtas itself must define what is criminal",
+        "C": "Constitutional, as the Minister is a member of the Executive which has inherent power to regulate conduct",
+        "D": "Constitutional, provided the activities so declared relate to public order"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the Cityview Press v An Bord Telecom [1980] IR 381 principles-and-policies test and People (DPP) v McDonagh [2001] 3 IR 411, the Oireachtas cannot delegate to the Executive the power to create criminal offences at large. The Oireachtas must itself establish the principles and policies — including what conduct is prohibited and the circumstances of liability — with the Minister limited to giving effect to the legislative policy in specific circumstances. A broad power to criminalise any activity by ministerial order is an unconstitutional delegation of core legislative power."
+    },
+    {
+      "id": "CON_M07_L02_Q11",
+      "question": "Why does Art. 15.5.1° of the Constitution (prohibition on declaring acts criminal retrospectively) reinforce the void for vagueness doctrine?",
+      "options": {
+        "A": "Because retrospective legislation is always vague by definition",
+        "B": "Because both provisions reflect the same underlying principle — that citizens must have fair notice of what is criminal before they act",
+        "C": "Because Art. 15.5.1° expressly prohibits uncertainty in criminal statutes",
+        "D": "Because retrospective legislation and vague legislation both violate equality before the law"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 15.5.1° (no retrospective criminal liability) and the vagueness doctrine both reflect the same constitutional principle of fair notice and legal certainty. Retrospective criminalisation punishes conduct that was lawful when performed — the citizen had no notice it was criminal. Similarly, a vague offence fails to give the citizen adequate notice of what is prohibited. Both violations undermine the fundamental fairness that Art. 38.1's 'due course of law' demands. Together they constitute the Irish expression of the principle of legality (nullum crimen sine lege)."
+    },
+    {
+      "id": "CON_M07_L02_Q12",
+      "question": "In assessing whether a criminal offence is unconstitutionally vague, Irish courts apply which approach to the presumption of constitutionality?",
+      "options": {
+        "A": "No presumption applies to criminal legislation — all such statutes are strictly scrutinised",
+        "B": "Post-1937 legislation enjoys a presumption of constitutionality; the burden falls on the challenger to establish invalidity beyond reasonable doubt",
+        "C": "Pre-1937 legislation is presumed constitutional; post-1937 legislation must affirmatively demonstrate compliance",
+        "D": "The presumption of constitutionality is displaced wherever a fundamental right (such as personal liberty) is engaged"
+      },
+      "correct_answer": "B",
+      "explanation": "Post-1937 Oireachtas legislation enjoys a strong presumption of constitutionality established in Pigs Marketing Board v Donnelly [1939] IR 413. This means that in a vagueness challenge, the burden falls on the challenger to establish that no reasonable interpretation of the statutory language could render the offence sufficiently certain. Courts will, where possible, give a constitutionally conforming construction to save a statute. The presumption does not apply to pre-1937 legislation, which must be assessed directly against the 1937 Constitution."
+    },
+    {
+      "id": "CON_M07_L02_Q13",
+      "question": "A criminal statute creates an offence of 'causing a public disturbance' but provides no definition of what constitutes a 'disturbance.' Subsequent case law over 20 years has developed a settled and clear meaning of the term. Is the offence constitutionally valid?",
+      "options": {
+        "A": "No — the constitutional certainty requirement applies to the text of the statute alone; judicial elaboration cannot cure statutory vagueness",
+        "B": "Yes — the combination of the statutory language and the established judicial interpretation provides citizens with sufficient notice of what is prohibited",
+        "C": "No — the offence should be referred to the Oireachtas for clarification before further prosecutions",
+        "D": "Yes — but only if the DPP certifies that the prosecution policy is clear and consistently applied"
+      },
+      "correct_answer": "B",
+      "explanation": "The constitutional certainty requirement does not demand that statutes alone, read in isolation, define offences with total precision. Settled judicial interpretation forms part of the law and can, over time, give sufficient definition to initially uncertain terms. If a long line of consistent case law has established a clear meaning for 'public disturbance' such that a person of reasonable intelligence can ascertain what conduct is prohibited, the offence satisfies the constitutional requirement. This reflects the common law method of statutory interpretation and is consistent with Art. 38.1."
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "subject": "Constitutional Law",
+  "el_script_ref": "ConstitutionalLaw_ElevenLabs_Module02_Lesson03.txt",
+  "module_number": 2,
+  "module_title": "Separation of Powers",
+  "lesson_number": 3,
+  "lesson_title": "The Government and Executive Power (Article 28)",
+  "total_questions": 14,
+  "questions": [
+    {
+      "id": "CON_M02_L03_Q01",
+      "question": "Article 28.2 of the Constitution vests executive power in the Government. Which of the following most accurately describes the scope of this executive power in light of the constitutional text and judicial interpretation?",
+      "options": {
+        "A": "Executive power is limited to the implementation of legislation enacted by the Oireachtas; the Government has no independent power to act in any area not covered by statute",
+        "B": "Executive power encompasses the management of the affairs of state — including prerogative-type powers in areas such as foreign affairs, national security, and the maintenance of constitutional order — subject to the Constitution and law",
+        "C": "Executive power extends to all three branches of government; the Government may exercise legislative and judicial powers in emergency situations where the Oireachtas is not sitting",
+        "D": "Executive power is co-extensive with the powers listed in Article 28; any government action not expressly authorised by Article 28 requires primary legislation"
+      },
+      "correct_answer": "B",
+      "explanation": "The executive power vested in the Government by Article 28.2 is broad: it encompasses the administration and governance of the State, including inherent powers analogous to royal prerogative in other jurisdictions — particularly in external relations (treaty negotiation under Art. 29.1), national security, appointment of state officers, and the management of public property. The Supreme Court confirmed in cases such as Crotty v An Taoiseach [1987] that the Government exercises an inherent executive power in external affairs, albeit subject to constitutional constraints (notably the requirement for a referendum to transfer sovereignty). The executive power is not limited to implementing legislation — it includes independent constitutional powers, though significant actions affecting rights require statutory authorisation."
+    },
+    {
+      "id": "CON_M02_L03_Q02",
+      "question": "Attorney General v Hamilton (No.1) [1993] 2 IR 250 (Supreme Court) considered the principle of cabinet confidentiality in the context of a tribunal of inquiry. Which of the following most accurately states the legal principle established and the constitutional consequence?",
+      "options": {
+        "A": "The court held that cabinet confidentiality is a qualified privilege that may be overridden by a tribunal of inquiry where the public interest in disclosure outweighs the executive interest in confidentiality",
+        "B": "The court held that cabinet discussions are absolutely protected by constitutional confidentiality derived from Article 28.4, and that a tribunal of inquiry had no power to compel disclosure of cabinet discussions regardless of their relevance",
+        "C": "The court held that cabinet confidentiality applies to formal cabinet decisions but not to the discussions or deliberations leading to those decisions, which may be disclosed to a tribunal",
+        "D": "The court held that cabinet confidentiality is a statutory protection under the Official Secrets Act 1963 and not a constitutional right, meaning it could be modified by ordinary legislation"
+      },
+      "correct_answer": "B",
+      "explanation": "In AG v Hamilton (No.1) [1993] 2 IR 250, the Supreme Court held that the principle of cabinet confidentiality was an implied constitutional requirement essential to the functioning of cabinet government under Art. 28. The court held that cabinet discussions were absolutely protected — even a tribunal of inquiry established by Act of the Oireachtas could not compel disclosure. This absolute protection was controversial and was directly addressed by the Seventeenth Amendment of the Constitution Act 1997, which inserted a new Article 28.4.3 degrees permitting disclosure of cabinet discussions in limited circumstances (principally where the High Court determines that the public interest in disclosure outweighs cabinet confidentiality). The Hamilton case and the subsequent constitutional amendment together define the current state of the law."
+    },
+    {
+      "id": "CON_M02_L03_Q03",
+      "question": "Following AG v Hamilton (No.1) [1993], the Seventeenth Amendment inserted a new provision into Article 28.4.3 degrees of the Constitution. Which of the following correctly describes the test for overriding cabinet confidentiality under this amended provision?",
+      "options": {
+        "A": "Cabinet discussions may be disclosed if a majority of the Cabinet consents to disclosure and the Taoiseach issues a formal direction authorising the release of the relevant records",
+        "B": "A court (or tribunal authorised by legislation) may, on application, order disclosure of cabinet discussions where the public interest in disclosure outweighs the public interest in preserving cabinet confidentiality",
+        "C": "Cabinet discussions become disclosable after 30 years under the National Archives Act 1986 without any court order, unless the Government certifies that continued confidentiality is necessary for national security",
+        "D": "The Oireachtas, by resolution of both Houses, may direct the disclosure of cabinet discussions where a motion of no confidence has been passed against the relevant minister"
+      },
+      "correct_answer": "B",
+      "explanation": "The Seventeenth Amendment (1997) inserted Art. 28.4.3 degrees providing that a court may order disclosure of cabinet discussions where the public interest requires it — specifically, where the court determines that the public interest in ensuring the proper workings of government is outweighed by the public interest in the administration of justice. This replaces the absolute constitutional protection established in AG v Hamilton (No.1) with a balancing test applied by the courts (or, in the context of tribunal investigations, by legislation authorising disclosure in appropriate circumstances). The amendment was a direct constitutional response to the perceived excess of the absolute protection, while still recognising that cabinet discussions deserve a strong degree of protection in the public interest in ensuring effective and candid government deliberation."
+    },
+    {
+      "id": "CON_M02_L03_Q04",
+      "question": "Article 28.4.1 degrees of the Constitution provides that the Government shall be collectively responsible to Dail Eireann. Which of the following most accurately describes the practical and constitutional implications of this principle of collective responsibility?",
+      "options": {
+        "A": "Collective responsibility requires that all Ministers must vote the same way on every legislative measure before the Oireachtas, regardless of their personal views; a dissenting vote by a minister does not automatically require resignation",
+        "B": "Collective responsibility requires that the Government act as a unit — all Ministers are bound by and must publicly support cabinet decisions; a minister who publicly dissents from a cabinet decision must either resign or be removed by the Taoiseach",
+        "C": "Collective responsibility is a political convention with no constitutional force; its breach by an individual minister has no constitutional consequence and cannot be enforced by the courts",
+        "D": "Collective responsibility applies to the Dail only; individual ministers retain the right to express dissent from cabinet policy in the Seanad without constitutional consequence"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 28.4.1 degrees makes collective responsibility a constitutional requirement, not merely a political convention: the Government as a whole is responsible to Dail Eireann for the collective decisions and actions of the Government. The practical implication is that all ministers must support cabinet decisions publicly — once a decision is made collectively, each member is constitutionally bound by it. A minister who cannot support a cabinet decision must resign rather than publicly dissent. This is reinforced by Article 28.9.4 degrees, which gives the Taoiseach power to require the resignation of a minister. Cabinet confidentiality (Art. 28.4.3 degrees) is the constitutional instrument that protects the deliberative process that enables collective decisions to be made candidly."
+    },
+    {
+      "id": "CON_M02_L03_Q05",
+      "question": "Article 28.7.1 degrees provides that every member of the Government must be a member of Dail Eireann or Seanad Eireann. However, a specific additional constraint applies to the Taoiseach, Tanaiste, and Minister for Finance. Which of the following correctly states that constraint?",
+      "options": {
+        "A": "The Taoiseach, Tanaiste, and Minister for Finance must all be members of Dail Eireann; they may not hold these offices if they are senators only",
+        "B": "The Taoiseach, Tanaiste, and Minister for Finance must hold at least one professional qualification (barrister, solicitor, or accountant) as a constitutional prerequisite for appointment to these offices",
+        "C": "The Taoiseach, Tanaiste, and Minister for Finance must be members of Dail Eireann for at least three years before appointment to these offices",
+        "D": "The Taoiseach must be a member of Dail Eireann; the Tanaiste and Minister for Finance may be senators, but only if fewer than two senators are already serving as ministers"
+      },
+      "correct_answer": "A",
+      "explanation": "Article 28.7.2 degrees provides that the Taoiseach, the Tanaiste, and the Minister for Finance must be members of Dail Eireann. This is a constitutional requirement that goes beyond the general rule in Art. 28.7.1 degrees (which merely requires membership of one of the Houses). The rationale is that these are the three most senior and constitutionally significant positions in the Government, and they must be directly accountable to the elected chamber. Other ministers may in principle be senators (though this is rare in practice). Senator-ministers cannot participate in Dail votes and have more limited accountability to the elected chamber. There is no analogous qualification requirement beyond Oireachtas membership."
+    },
+    {
+      "id": "CON_M02_L03_Q06",
+      "question": "The constitutional position in relation to the Government's power to dissolve Dail Eireann underwent a significant change following the Twenty-Ninth Amendment of the Constitution Act 2011. Which of the following accurately describes both the pre-amendment position and the change effected?",
+      "options": {
+        "A": "Pre-amendment: the President could dissolve the Dail on the advice of the Taoiseach at any time; post-amendment: dissolution now requires a two-thirds majority resolution of the Dail passed within 60 days of a confidence vote",
+        "B": "Pre-amendment: the Taoiseach could advise the President to dissolve the Dail at any time; post-amendment: the President may refuse a dissolution where the Taoiseach has ceased to retain the support of a majority in the Dail, and the Dail may now dissolve itself by resolution",
+        "C": "Pre-amendment: the President had an absolute discretion to dissolve the Dail; post-amendment: dissolution must be on the advice of the Taoiseach, with the President losing all personal discretion",
+        "D": "Pre-amendment: Dail dissolution required the consent of both the President and the Seanad; post-amendment: the Seanad's role was removed and dissolution now rests exclusively with the President on Taoiseach's advice"
+      },
+      "correct_answer": "B",
+      "explanation": "The Twenty-Ninth Amendment (2011) amended Article 16.3 and related provisions to introduce the concept of a 'fixed-term Dail' by limiting dissolution: the Dail may now dissolve itself by passing a resolution for dissolution (introduced for the first time), and the President may refuse to dissolve the Dail on the Taoiseach's advice where the Taoiseach has lost the confidence of the Dail and an alternative government is available. Previously, the President's power to refuse dissolution when the Taoiseach lost a confidence vote existed but was contested; post-amendment, the Dail has new powers of self-dissolution. This reform aimed to reduce the Prime Ministerial advantage of timing elections strategically at moments most favourable to the incumbent Government."
+    },
+    {
+      "id": "CON_M02_L03_Q07",
+      "question": "Article 28.3.1 degrees of the Constitution provides special protection for legislation enacted during periods of national emergency. Which of the following most accurately describes the constitutional effect of Article 28.3.3 degrees on laws made in time of war or armed rebellion?",
+      "options": {
+        "A": "Laws enacted during a national emergency declared under Article 28.3.2 degrees are immune from constitutional challenge entirely and cannot be struck down by any court for any reason during the emergency",
+        "B": "Laws enacted pursuant to an Oireachtas resolution under Article 28.3.3 degrees — expressly expressed to be necessary for securing the public safety and preservation of the State in time of war or armed rebellion — shall not be called into question in any court",
+        "C": "During a national emergency, the Government may by executive decree make laws that have the same constitutional status as Acts of the Oireachtas, without being subject to constitutional review",
+        "D": "Article 28.3.3 degrees permits the President to grant an emergency order enabling the Government to suspend Articles 40 to 44 (fundamental rights) for the duration of the emergency"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 28.3.3 degrees provides a specific constitutional immunity for laws enacted 'expressed to be for the purpose of securing the public safety and preservation of the State in time of war or armed rebellion' pursuant to a resolution of both Houses under Art. 28.3.2 degrees. Such laws shall not be called into question in any court on the ground that they are repugnant to the Constitution. This is the only express constitutional provision that ousts judicial review. However, the immunity requires: (1) an Oireachtas resolution declaring a state of emergency, (2) the legislation to be expressly stated to be for the specified public safety purpose, and (3) a genuine connection to the emergency. It does not permit the executive alone to make emergency laws. This provision was invoked during the Emergency (1939-1945) and is now of largely historical significance."
+    },
+    {
+      "id": "CON_M02_L03_Q08",
+      "question": "In Carrigaline Community Television Broadcasting Co Ltd v Minister for Transport, Energy and Communications [1997] 1 ILRM 241, the Supreme Court considered the justiciability of executive discretion in the allocation of broadcasting licences. Which of the following most accurately states the court's approach to reviewing executive discretionary decisions?",
+      "options": {
+        "A": "The court held that all executive discretionary decisions are non-justiciable political questions and refused to review the licensing decision on any ground whatsoever",
+        "B": "The court held that while it would not review the merits of the Minister's exercise of discretion, it could review whether the discretion was exercised within constitutional limits — including compliance with fair procedures and the absence of arbitrariness",
+        "C": "The court held that broadcasting licence allocation is a judicial function because it determines legal rights, and therefore must be made by a court or an independent tribunal rather than a minister",
+        "D": "The court held that the executive's licensing decision was unreviewable because broadcasting is a matter of national security within the exclusive competence of the executive under Article 28.2"
+      },
+      "correct_answer": "B",
+      "explanation": "Carrigaline Community Television [1997] illustrates the Irish courts' approach to reviewing executive discretion: the courts will not substitute their judgment for that of the executive on the merits of a discretionary decision (that would violate separation of powers), but they will review whether the decision was made within constitutional and legal bounds. This includes checking: (1) that the decision-maker had the requisite statutory power; (2) that fair procedures were followed; (3) that the decision was not irrational, arbitrary, or made for an improper purpose; and (4) that constitutional rights were respected. This is the Irish equivalent of Wednesbury unreasonableness review (Associated Provincial Picture Houses v Wednesbury Corporation [1948] 1 KB 223), applied constitutionally."
+    },
+    {
+      "id": "CON_M02_L03_Q09",
+      "question": "The concept of 'prerogative powers' — residual executive powers not derived from statute — has a complex status under the Irish Constitution. Which of the following most accurately describes the Irish position on the existence and scope of such powers?",
+      "options": {
+        "A": "Ireland inherited the full body of British royal prerogative powers upon independence in 1922; these were transferred to the Government under Article 28.2 and remain available to be exercised without statutory authority",
+        "B": "The Irish Constitution abolished prerogative powers entirely; all government action in Ireland must have a specific statutory basis and inherent executive powers do not exist",
+        "C": "The Irish Government has inherent executive powers derived from Article 28.2 that are analogous to prerogative powers, particularly in foreign affairs and national security, but these are subject to the Constitution and may be constrained by statute",
+        "D": "Prerogative powers in Ireland are vested exclusively in the President as head of state under Article 13; the Government exercises these powers only on the President's behalf pursuant to Article 13.9"
+      },
+      "correct_answer": "C",
+      "explanation": "The Irish constitutional position on executive prerogative is nuanced. Unlike the UK, Ireland's 1937 Constitution was an act of popular sovereignty that did not formally inherit the royal prerogative. However, the courts have recognised that the Government possesses inherent executive powers derived from Art. 28.2 — particularly in the areas of external relations (treaty negotiation, recognition of states), defence, and the maintenance of public order — that do not require specific statutory authority for every action. These powers are, however, subject to the Constitution: Crotty v An Taoiseach [1987] held that even prerogative-type powers in external affairs are constrained by Art. 6.2. The Irish position thus acknowledges inherent executive power while embedding it firmly within the constitutional order, unlike the UK's common law prerogative which sits outside statute."
+    },
+    {
+      "id": "CON_M02_L03_Q10",
+      "question": "Article 28.9.4 degrees of the Constitution provides that the Taoiseach may 'at any time, for reasons which to him seem sufficient, request a member of the Government to resign'. If the member refuses to resign, what happens?",
+      "options": {
+        "A": "The Taoiseach must then bring a motion of no confidence in the minister before Dail Eireann; only a majority vote of the Dail can remove a minister who refuses to resign voluntarily",
+        "B": "The President shall terminate the appointment of the minister on the advice of the Taoiseach, allowing the Taoiseach effectively to dismiss ministers without recourse to the Dail",
+        "C": "The minister is automatically suspended from cabinet meetings pending a vote of confidence in the minister by the Government as a whole",
+        "D": "The Supreme Court has power to adjudicate on whether the Taoiseach's reasons are constitutionally sufficient, preventing arbitrary dismissal of ministers"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 28.9.4 degrees gives the Taoiseach a near-absolute power to dismiss ministers: if a minister refuses to resign when requested, the President shall terminate the appointment on the advice of the Taoiseach. This creates a constitutional structure where the Taoiseach has effectively unchecked power to remove ministers: the President acts on advice, the courts have no role in reviewing the 'sufficient reasons', and the Dail is not involved in the removal of individual ministers (though it could bring down the Government as a whole). This power reinforces the Taoiseach's constitutional dominance over the cabinet and is a significant concentration of executive authority in the office of the Taoiseach — critics have described Ireland's Taoiseach as constitutionally the most powerful prime minister in any Westminster-derived system."
+    },
+    {
+      "id": "CON_M02_L03_Q11",
+      "question": "The constitutional status of decisions made at meetings of Ministers of State (junior ministers) rather than Cabinet (full ministers) was considered in Devanney v Shields [1998] 1 IR 230. Which of the following correctly states the constitutional significance of this distinction?",
+      "options": {
+        "A": "Ministers of State (junior ministers) have full constitutional status as members of the Government for the purpose of Article 28; their decisions have the same constitutional weight as cabinet decisions",
+        "B": "The Government in the constitutional sense consists only of senior ministers appointed under Article 28.1; Ministers of State are statutory creations without constitutional status as members of the Government",
+        "C": "The distinction between Ministers of State and full ministers is purely administrative; all ministers — senior and junior — share collective responsibility under Article 28.4",
+        "D": "Ministers of State may exercise the powers of full ministers in their absence, making decisions that are constitutionally equivalent to cabinet decisions for the purposes of Article 28"
+      },
+      "correct_answer": "B",
+      "explanation": "The Government in the constitutional sense (Art. 28.1) consists of not fewer than seven and not more than fifteen members — these are the full ministers appointed by the President on the nomination of the Taoiseach. 'Ministers of State' (junior ministers or parliamentary secretaries) are statutory creations under the Ministers and Secretaries Acts — they assist full ministers but do not have constitutional status as members of the Government. They are not bound by cabinet collective responsibility in the constitutional sense (though they are bound by political convention), and they cannot make decisions that constitute 'Government decisions' for constitutional purposes. This distinction matters particularly for cabinet confidentiality (Art. 28.4.3 degrees), which applies to the Government proper, not to discussions at ministerial sub-committee level involving junior ministers."
+    },
+    {
+      "id": "CON_M02_L03_Q12",
+      "question": "The right of the Government to govern and make executive decisions without judicial supervision on the merits is a core aspect of separation of powers. However, AG v X [1992] 1 IR 1 demonstrates that the executive is bound by constitutional obligations when exercising executive functions. How does this case illustrate the boundary between executive discretion and constitutional obligation?",
+      "options": {
+        "A": "The case is irrelevant to executive discretion; AG v X concerned solely the constitutionality of Article 40.3.3 degrees and its effect on abortion legislation",
+        "B": "The Attorney General's injunction preventing X from travelling to England for an abortion was executive action subject to constitutional challenge; the Supreme Court held that the executive (through the AG) was bound by the constitutional obligation to vindicate both the right to life of the unborn and the equal right to life of the mother under Article 40.3.3 degrees",
+        "C": "The case established that the executive has no role in enforcing Article 40.3.3 degrees; only the courts can make determinations about the right to life of the unborn, making any executive action in this area unconstitutional",
+        "D": "The case established that the Government, not the courts, has the primary constitutional function of balancing competing constitutional rights, with judicial review available only on grounds of manifest unreasonableness"
+      },
+      "correct_answer": "B",
+      "explanation": "AG v X [1992] 1 IR 1 is a landmark case illustrating that even where the executive (through the Attorney General) is exercising a discretionary function — whether to seek an injunction to protect the right to life of the unborn under Art. 40.3.3 degrees — it is bound by all relevant constitutional provisions. The Supreme Court held that the AG, in seeking to enforce Art. 40.3.3 degrees, had failed to give equal weight to the constitutional right to life of the mother. The AG's action constituted executive decision-making, and the court's overturning of the injunction demonstrates that the executive's exercise of its constitutional functions is subject to constitutional review. The case also established the 'real and substantial risk to the life of the mother' test for permissible termination of pregnancy under Art. 40.3.3 degrees."
+    },
+    {
+      "id": "CON_M02_L03_Q13",
+      "question": "A difficulty arising from the doctrine of separation of powers in the Irish constitutional context concerns ministerial orders made under 'Henry VIII' clauses that purport to amend primary legislation. If a Minister, purporting to act under such a clause, made an order that in substance repealed a provision of an Act of the Oireachtas in order to implement an EU directive obligation, which of the following most accurately states the constitutional analysis?",
+      "options": {
+        "A": "The order would be invalid in all circumstances; the separation of powers absolutely prohibits the executive from amending or repealing Acts of the Oireachtas regardless of the purpose",
+        "B": "The order would be valid if made under the European Communities Act 1972, s.3, which provides an express constitutional mandate (via Article 29.4) for ministers to implement EU obligations by secondary legislation, including by modifying prior inconsistent national law",
+        "C": "The order would be valid provided the Taoiseach certified to the President that the amendment was required by EU law; the presidential signature would then give the order the status of primary legislation",
+        "D": "The order would be valid only if the Oireachtas subsequently passed a resolution of approval within 21 days; without such approval, ministerial orders amending primary legislation automatically lapse"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 3 of the European Communities Act 1972 (as amended) allows ministers to make regulations implementing EU obligations with the force of law, even where those regulations modify existing primary legislation. This was upheld in Meagher v Minister for Agriculture [1994] 1 IR 329 on the basis that Article 29.4 of the Constitution provides a specific constitutional mandate for Ireland to fulfil its EU obligations — which includes implementation of directives — and this mandate justifies the Henry VIII element of s.3. The EU law context thus creates a constitutionally authorised exception to the general rule that secondary legislation cannot amend primary legislation. This is constitutionally distinct from a purely domestic Henry VIII clause, which would face much more serious constitutional obstacles under the Cityview Press analysis."
+    },
+    {
+      "id": "CON_M02_L03_Q14",
+      "question": "Article 28.5.1 degrees provides that the Taoiseach shall keep the President generally informed on matters of domestic and international policy. Which of the following most accurately describes the constitutional significance of this provision?",
+      "options": {
+        "A": "It gives the President the power to demand full details of all government deliberations on any matter and to veto government decisions with which the President disagrees",
+        "B": "It establishes a constitutional obligation of communication between the Government and the President, enabling the President to exercise constitutional functions such as the Council of State, Article 26 references, and emergency proclamations on an informed basis",
+        "C": "It converts the President into the effective head of government with supervisory power over the Taoiseach, making the Irish system presidential rather than parliamentary in character",
+        "D": "It creates a constitutionally enforceable duty that can be litigated: if the Taoiseach fails to inform the President, the President may bring proceedings in the Supreme Court to compel disclosure"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 28.5.1 degrees imposes a constitutional duty on the Taoiseach to keep the President generally informed on domestic and international policy. This is significant because it maintains the President's ability to fulfil constitutional functions intelligently — particularly the power to refuse dissolution of the Dail (Art. 13.2.2 degrees), refer Bills to the Supreme Court under Article 26, convene the Council of State, and exercise emergency proclamation powers — all of which require the President to be informed about the general state of affairs. However, it does not give the President power to veto government decisions or demand access to cabinet discussions (which are protected by Art. 28.4.3 degrees). The provision confirms that despite being constitutionally limited in power, the President is not entirely excluded from knowledge of government affairs."
+    }
+  ]
+}

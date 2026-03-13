@@ -1,0 +1,131 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module07_Lesson01.txt",
+  "module_number": 7,
+  "module_title": "Theft, Property Offences, and Cybercrime",
+  "lesson_number": 1,
+  "lesson_title": "Theft (s.4 Criminal Justice (Theft and Fraud Offences) Act 2001)",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CRL_M07_L01_Q01",
+      "question": "Section 4(1) of the Criminal Justice (Theft and Fraud Offences) Act 2001 defines the offence of theft. Which of the following correctly states the definition?",
+      "options": {
+        "A": "A person is guilty of theft if they take property belonging to another with the intention of keeping it permanently",
+        "B": "A person is guilty of theft if they dishonestly appropriate property belonging to another with the intention of depriving the other of it",
+        "C": "A person is guilty of theft if they take any item of value from another person without permission, regardless of their mental state",
+        "D": "A person is guilty of theft if they use property belonging to another without the owner's knowledge, even temporarily"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 4(1) Criminal Justice (Theft and Fraud Offences) Act 2001 defines theft as dishonestly appropriating property belonging to another with the intention of depriving the other of it. This contains two actus reus elements \u2014 (1) appropriating (2) property belonging to another \u2014 and two mens rea elements \u2014 (1) dishonesty and (2) intention to permanently deprive. Each element must be proven beyond reasonable doubt. Option A is incomplete \u2014 it omits the dishonesty requirement and the appropriation element, replacing both with 'take... keep permanently.' Option C eliminates the mental element entirely, making theft sound like strict liability. Option D is wrong \u2014 temporary use without intent to permanently deprive is not theft (see DPP v O'Loughlin [2009] IECCA, which confirmed that permanent deprivation is essential; borrowing without intent to retain is not theft)."
+    },
+    {
+      "id": "CRL_M07_L01_Q02",
+      "question": "In R v Morris [1984] HOL, the accused switched price labels in a supermarket, replacing the correct price on a more expensive item with a lower price. Was this an 'appropriation' for the purposes of theft?",
+      "options": {
+        "A": "No \u2014 appropriation requires physically taking the item from the store; label switching alone is insufficient",
+        "B": "Yes \u2014 switching price labels constitutes an appropriation; by switching the labels, the accused assumed one of the rights of the owner (the right to price goods) without the owner's authority",
+        "C": "No \u2014 the appropriation only occurred when the accused attempted to pay the lower price at the till",
+        "D": "No \u2014 appropriation requires an intention to never return the goods; at the moment of switching labels, there was no final decision about the goods"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Morris [1984] HOL established that appropriation means assuming the rights of the owner \u2014 not necessarily taking physical possession of property. By switching the price labels, the accused assumed the owner's right to price and value the goods, doing so without the owner's authority. This constituted an appropriation at the moment the labels were switched. The House of Lords clarified that appropriation can occur without physical removal of property and without the owner's knowledge \u2014 any assumption of the owner's rights without their authority constitutes appropriation. This principle has been adopted in Ireland under the CJ(T&F)A 2001. Options A, C, and D each incorrectly require a later or more complete act (physical removal, payment attempt, or final decision) before appropriation occurs."
+    },
+    {
+      "id": "CRL_M07_L01_Q03",
+      "question": "What is the test for dishonesty under s.4(5) of the Criminal Justice (Theft and Fraud Offences) Act 2001, as confirmed by DPP v Bowe [2012] IECA?",
+      "options": {
+        "A": "A subjective test \u2014 the accused must personally have considered their conduct dishonest",
+        "B": "An objective test \u2014 whether reasonable people would regard the conduct as dishonest; the accused cannot escape liability by claiming a personal moral code that differs from that of reasonable people",
+        "C": "A hybrid test \u2014 the prosecution must prove both that the accused knew their conduct would be considered dishonest AND that reasonable people would so consider it",
+        "D": "A test based solely on intent \u2014 if the accused intended to gain a benefit, the conduct is dishonest regardless of objective assessments"
+      },
+      "correct_answer": "B",
+      "explanation": "DPP v Bowe [2012] IECA confirmed that the test for dishonesty under the CJ(T&F)A 2001 is objective \u2014 would reasonable people regard the conduct as dishonest? The accused cannot escape liability by claiming their own moral code justified the conduct. If ordinary reasonable people would consider the appropriation dishonest, the dishonesty element is satisfied. This objective approach prevents accused persons from constructing idiosyncratic moral frameworks to justify misappropriation. It is to be contrasted with the honest belief defence in s.4(2) (see below), which operates as a separate carve-out. Option A incorrectly makes dishonesty purely subjective. Option C adds a knowledge element to the objective test that is not part of the formulation. Option D incorrectly defines dishonesty purely by reference to intent to gain."
+    },
+    {
+      "id": "CRL_M07_L01_Q04",
+      "question": "Section 4(2) CJ(T&F)A 2001 provides a defence of honest belief. What exactly does this defence provide?",
+      "options": {
+        "A": "Where the accused honestly believed the property was worth less than its market value, they are not liable for theft",
+        "B": "Where the accused honestly believed they had a legal right to the property, or that the owner had consented or would have consented to the appropriation, there is no dishonesty and therefore no theft; the belief need only be genuine, not reasonable",
+        "C": "Where the accused honestly believed no one would notice the appropriation, the dishonesty element is negated",
+        "D": "The honest belief defence applies only where the accused was intoxicated at the time of the appropriation"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 4(2) CJ(T&F)A 2001 provides that a person who appropriates property without dishonesty is not guilty of theft. Dishonesty is absent where the accused honestly believed: (a) they had a legal right to the property; OR (b) the owner had consented to the appropriation; OR (c) the owner would have consented if asked. Crucially, the belief need only be genuine (subjective) \u2014 it does not need to be reasonable. This is a subjective honest belief test, unlike the objective dishonesty test in s.4(5). This asymmetry reflects the principle that a person who genuinely (even unreasonably) believed they were entitled to the property lacked the culpability required for criminal conviction. Option A introduces a property value consideration that has no statutory basis. Option C replaces the legal and moral basis of honest belief with mere calculation of detection risk. Option D invents an intoxication limitation on the defence."
+    },
+    {
+      "id": "CRL_M07_L01_Q05",
+      "question": "In DPP v O'Loughlin [2009] IECCA, the accused took a car belonging to another person, used it, and returned it. The court addressed whether this constituted theft. What did the court confirm?",
+      "options": {
+        "A": "The court held that taking and using property temporarily without the owner's knowledge always constitutes theft",
+        "B": "The court confirmed that intention to permanently deprive is essential to theft \u2014 borrowing property without any intent to permanently retain it does not constitute theft under s.4, even if the borrowing is unauthorised",
+        "C": "The court held that temporary taking constitutes theft if it extends beyond 24 hours",
+        "D": "The court held that returning property after use is a mitigating factor in sentencing but does not affect liability for theft"
+      },
+      "correct_answer": "B",
+      "explanation": "DPP v O'Loughlin [2009] IECCA confirmed the fundamental principle that intention to permanently deprive is an essential element of theft under s.4 CJ(T&F)A 2001. An accused who borrows property without authority but with the genuine intention of returning it does not commit theft \u2014 the permanent deprivation element is absent. This reflects the distinction between theft and the separate offence of unauthorised taking of a vehicle (which is a distinct offence under the Road Traffic Acts, not requiring intent to permanently deprive). Option A incorrectly treats temporary unauthorised use as automatically constituting theft. Option C invents a 24-hour temporal threshold for liability. Option D miscategorises the return of property as relevant to sentencing rather than the fundamental question of whether the offence was committed at all."
+    },
+    {
+      "id": "CRL_M07_L01_Q06",
+      "question": "Paul, a supermarket manager, takes \u20ac200 from the till each week, telling himself the company 'owes' him extra pay for his hard work. He has not been authorised to take this money. Has Paul committed theft?",
+      "options": {
+        "A": "No \u2014 Paul believes he is entitled to the money as compensation for his efforts; his honest belief provides a complete defence",
+        "B": "Yes \u2014 applying DPP v Bowe [2012] IECA's objective dishonesty test, reasonable people would regard Paul's unauthorised taking of money as dishonest; his personal rationalisation that the company 'owes' him does not override the objective test; the appropriation of the company's property for personal enrichment without authority is dishonest",
+        "C": "No \u2014 Paul is the manager and has implied authority over the company's finances",
+        "D": "Yes \u2014 but only if Paul intended to never repay the money; if he planned to repay it eventually, no theft is made out"
+      },
+      "correct_answer": "B",
+      "explanation": "DPP v Bowe [2012] IECA directly addresses this type of scenario. The objective dishonesty test asks whether reasonable people would regard the conduct as dishonest \u2014 they clearly would regard an employee's unauthorised taking of cash from a till as dishonest, regardless of the employee's personal rationalisation that the employer 'owes' them. Paul cannot claim an honest belief in a legal right to the money \u2014 he knows he has no authorisation to take it. The s.4(2) honest belief defence requires belief in a genuine legal right or the owner's actual or hypothetical consent \u2014 Paul has neither. His personal sense of moral entitlement is not a legal right. All elements of theft are present: dishonest appropriation of property belonging to another with intent to permanently deprive. Option A incorrectly elevates a subjective rationalisation to an honest belief in legal entitlement. Option C invents authority from managerial status. Option D incorrectly conditions theft on whether repayment was ever planned."
+    },
+    {
+      "id": "CRL_M07_L01_Q07",
+      "question": "Section 2(1) of the Criminal Justice (Theft and Fraud Offences) Act 2001 defines 'property' for the purposes of theft. Which of the following is NOT included within this definition?",
+      "options": {
+        "A": "Money",
+        "B": "Things in action (such as debts owed)",
+        "C": "Real property (land)",
+        "D": "Information or confidential knowledge in itself, where nothing tangible has been taken"
+      },
+      "correct_answer": "D",
+      "explanation": "Section 2(1) CJ(T&F)A 2001 defines property as including money, all other real or personal property (including things in action), and any other intangible property. This is broad and includes: money (cash and electronic), land and interests in land, personal property (physical objects), things in action (debts, intellectual property rights), and intangibles. However, pure information or confidential knowledge in itself \u2014 where no tangible medium carrying that information has been taken \u2014 is generally not 'property' for theft purposes. Stealing a trade secret by memorising it and walking out, without taking any document or device, would not constitute theft of property under the Act (though it may constitute other offences). Options A, B, and C are all clearly within the statutory definition. Option D correctly identifies the boundary \u2014 pure information without a tangible carrier is typically not property for theft purposes."
+    },
+    {
+      "id": "CRL_M07_L01_Q08",
+      "question": "A person finds a wallet on the street containing \u20ac500. They pick it up, intending to hand it in to the police, but then decides to keep the money. At what point, if any, did they commit theft?",
+      "options": {
+        "A": "At the moment of picking up the wallet \u2014 taking it without the owner's permission constitutes appropriation from that point",
+        "B": "At the moment of deciding to keep the money \u2014 appropriation can occur at any time during continued possession; when the finder decided to permanently deprive the owner of the money, they appropriated it at that point with the necessary dishonesty and intent",
+        "C": "Never \u2014 finders keepers applies; property found on the street belongs to the finder in law",
+        "D": "Never \u2014 theft requires knowing who the owner is; as the finder does not know the owner's identity, the intent to permanently deprive cannot be established"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the CJ(T&F)A 2001, appropriation can occur at any point during possession \u2014 it is not limited to the initial taking. When the finder initially picked up the wallet intending to hand it in, there was no dishonest appropriation \u2014 the intent was to return it. However, the moment the finder decided to keep the money, they assumed the owner's rights dishonestly with intent to permanently deprive. At that point, all elements of theft were present: dishonest appropriation of property belonging to another with intent to permanently deprive. This principle reflects the understanding that appropriation is a continuing concept. Option A incorrectly makes the initial innocent taking a theft. Option C is wrong \u2014 finders keepers is not a legal principle that overrides theft liability. Option D incorrectly requires knowledge of the specific owner's identity before theft can be committed."
+    },
+    {
+      "id": "CRL_M07_L01_Q09",
+      "question": "What is the maximum penalty for theft under s.4 CJ(T&F)A 2001 on conviction on indictment?",
+      "options": {
+        "A": "5 years imprisonment",
+        "B": "7 years imprisonment",
+        "C": "10 years imprisonment and/or an unlimited fine",
+        "D": "14 years imprisonment"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 4 CJ(T&F)A 2001 provides for a maximum penalty of 10 years imprisonment and/or an unlimited fine on conviction on indictment. This reflects the seriousness with which organised and large-scale theft is treated in Irish law. Theft is triable either way \u2014 on indictment in the Circuit Court (maximum 10 years) or summarily in the District Court (maximum 12 months). The unlimited fine provision allows courts to impose substantial financial penalties alongside or instead of imprisonment, which is particularly relevant in commercial fraud and large-scale theft cases. Options A, B, and D state incorrect maximum sentences for the indictable offence."
+    },
+    {
+      "id": "CRL_M07_L01_Q010",
+      "question": "Simon borrows his friend's laptop without asking, uses it for a week, and then returns it undamaged. His friend did not know Simon had taken it. Has Simon committed theft?",
+      "options": {
+        "A": "Yes \u2014 Simon took the laptop without consent, which satisfies the appropriation element; dishonesty and intent to deprive can be inferred from the unauthorised taking",
+        "B": "No \u2014 Simon lacked the intention to permanently deprive his friend of the laptop; following DPP v O'Loughlin [2009] IECCA, permanent deprivation is essential; borrowing with intention to return does not satisfy this element even if the taking was unauthorised",
+        "C": "Yes \u2014 taking any property without consent always constitutes theft, regardless of intent to return",
+        "D": "No \u2014 theft requires the owner to complain to the Garda\u00ed; if the friend did not report the taking, no offence can be prosecuted"
+      },
+      "correct_answer": "B",
+      "explanation": "Applying DPP v O'Loughlin [2009] IECCA: Simon did not intend to permanently deprive his friend of the laptop \u2014 he returned it undamaged after a week. The intention to permanently deprive is an essential element of theft under s.4 CJ(T&F)A 2001. Without that element, however dishonest the taking might otherwise appear, the offence of theft is not made out. Simon may have committed a different wrong (breach of trust, possibly an unauthorised use offence), but not theft. This scenario illustrates the critical importance of the 'intention to permanently deprive' element \u2014 it is what distinguishes theft from mere borrowing. Option A incorrectly treats dishonesty as automatically establishing the permanent deprivation element. Option C incorrectly makes all unauthorised taking theft regardless of intent. Option D incorrectly conditions prosecution on the victim reporting the matter."
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module07_Lesson03.txt",
+  "module_number": 7,
+  "module_title": "Judicial Review of EU Acts",
+  "lesson_number": 3,
+  "lesson_title": "Article 265 TFEU: Failure to Act, and Article 277: The Plea of Illegality",
+  "questions": [
+    {
+      "id": "EUL_M07_L03_Q01",
+      "question": "Article 265 TFEU provides a remedy where an EU institution fails to act. Which institutions are potentially subject to an action for failure to act?",
+      "options": {
+        "A": "Only the Commission",
+        "B": "The European Parliament, the European Council, the Council, the Commission, the European Central Bank, and EU bodies, offices, or agencies",
+        "C": "Only institutions with legislative powers",
+        "D": "Only the Council and Commission jointly"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 265(1) TFEU covers the European Parliament, the European Council, the Council, the Commission, and the European Central Bank. Article 265(3) extends to bodies, offices, and agencies of the EU. An action may be brought if any of these fails to act in infringement of the Treaties, provided the procedural requirements (including prior call to act) have been satisfied."
+    },
+    {
+      "id": "EUL_M07_L03_Q02",
+      "question": "Before bringing an action under Article 265 TFEU, the applicant must first:",
+      "options": {
+        "A": "Bring a complaint before the European Ombudsman and wait for a report",
+        "B": "Call upon the institution to act — the institution then has two months to define its position; if it has not done so, the action may be brought within a further two months",
+        "C": "File an informal complaint with the Commission and allow three months for a response",
+        "D": "Obtain a preliminary ruling from a national court confirming the institution has failed to act"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 265(2) TFEU: the action is inadmissible unless the institution concerned has first been called upon to act. The institution has two months from being called upon to define its position. If within that two-month period the institution defines its position (even a negative decision — a refusal to act), the failure to act ceases and Article 265 cannot proceed (though Article 263 may become relevant if the adopted position itself is challengeable). If no position is defined, the action for failure to act may be brought within a further two months."
+    },
+    {
+      "id": "EUL_M07_L03_Q03",
+      "question": "What is the effect of the institution 'defining its position' in response to a call to act under Article 265 TFEU?",
+      "options": {
+        "A": "It automatically satisfies the applicant's demand and terminates the proceedings",
+        "B": "It extinguishes the Article 265 failure to act claim — once the institution has defined its position (positively or negatively), there is no longer a failure to act; the applicant may then challenge the defined position under Article 263 if it constitutes a reviewable act",
+        "C": "It triggers a compulsory six-month period during which the institution must adopt the requested measure",
+        "D": "It confirms that the institution agrees with the applicant's position and must immediately adopt the measure"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 265(2): once the institution defines its position, the failure to act ends and Article 265 proceedings are no longer possible. The 'defined position' may be a refusal to act — this does not satisfy the applicant, but it transforms the situation into a potential Article 263 annulment action (if the refusal is a reviewable act) rather than a failure to act claim. The Article 265 procedure is thus designed to end institutional silence, not to guarantee a positive outcome."
+    },
+    {
+      "id": "EUL_M07_L03_Q04",
+      "question": "Which of the following are privileged applicants under Article 265 TFEU?",
+      "options": {
+        "A": "Only the Commission and Council",
+        "B": "Member states and EU institutions — they can challenge a failure to act without showing any specific interest",
+        "C": "Only member states — EU institutions cannot bring failure to act claims against each other",
+        "D": "Any person directly affected by the failure to act"
+      },
+      "correct_answer": "B",
+      "explanation": "Under Article 265(1) TFEU, member states and EU institutions are privileged applicants — they may bring failure to act proceedings without having to establish any particular interest or concern. By contrast, under Article 265(3), any natural or legal person (non-privileged applicant) may only complain of a failure to address to them an act other than a recommendation or opinion — they must establish standing in a manner analogous to (but not identical with) the individual concern requirements of Article 263."
+    },
+    {
+      "id": "EUL_M07_L03_Q05",
+      "question": "What must a non-privileged applicant show to bring a failure to act claim under Article 265(3) TFEU?",
+      "options": {
+        "A": "That they are directly and individually concerned by the failure to act in the same way as Plaumann requires for Article 263",
+        "B": "That the institution failed to address to them (specifically) an act — the institution must have been under a duty to adopt an act addressed to the individual applicant, not a general obligation to legislate",
+        "C": "That the failure to act was intentional and in bad faith",
+        "D": "That they suffered quantifiable financial loss as a result of the failure to act"
+      },
+      "correct_answer": "B",
+      "explanation": "Under Article 265(3), a non-privileged applicant must show the institution failed to address to them a specific act that should have been addressed to them — not merely that the institution failed to legislate generally. The institution must have been under a legal obligation to adopt an act specifically directed at the applicant. This is a high threshold: the failure to adopt general legislation (even if harmful) does not give standing under Article 265(3) for private parties."
+    },
+    {
+      "id": "EUL_M07_L03_Q06",
+      "question": "The relationship between Articles 263 and 265 TFEU was explained in which case?",
+      "options": {
+        "A": "IBM v Commission [1981]",
+        "B": "Chevalley v Commission [1970] — the two provisions form a coherent system; Article 265 applies where the institution fails to act, Article 263 where it does act; they are 'two aspects of the same legal remedy'",
+        "C": "Parti Ecologiste Les Verts [1988]",
+        "D": "Parliament v Council [1990]"
+      },
+      "correct_answer": "B",
+      "explanation": "In Chevalley v Commission (Case 15/70), the Court described Articles 263 and 265 as forming a coherent system of judicial protection — they are 'two aspects of the same legal remedy'. Article 263 deals with the challenge to acts (positive action); Article 265 deals with failures to act (inaction). Together they ensure institutions cannot escape judicial scrutiny either by acting unlawfully or by unlawfully refusing to act. They are complementary, not competing, remedies."
+    },
+    {
+      "id": "EUL_M07_L03_Q07",
+      "question": "Article 277 TFEU (the plea of illegality) allows a party to:",
+      "options": {
+        "A": "Directly annul a Regulation that is more than two months old",
+        "B": "In proceedings before the CJEU, challenge the legality of an act of general application incidentally — as a preliminary issue — where that act is the legal basis of a measure that is directly under challenge, without being subject to the two-month time limit of Article 263",
+        "C": "File a complaint with the Commission challenging the validity of delegated acts",
+        "D": "Challenge a Regulation in any proceedings at any time, even where the applicant had standing to bring a direct challenge and failed to do so"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 277 TFEU (formerly Article 241 EC): in any proceedings in which a measure of general application is at issue, any party (including institutions and member states) may plead the inapplicability of the general act, notwithstanding that the time limit for a direct challenge under Article 263 has expired. The plea of illegality is incidental — it does not lead to formal annulment of the general act (no erga omnes effect) but renders it inapplicable in the particular case, leading to annulment of the individual decision based on it."
+    },
+    {
+      "id": "EUL_M07_L03_Q08",
+      "question": "The plea of illegality under Article 277 TFEU cannot be used as a substitute for a direct action under Article 263. This means:",
+      "options": {
+        "A": "Article 277 can only be raised by non-privileged applicants",
+        "B": "Where an applicant had clear standing to bring a timely direct challenge under Article 263 and deliberately chose not to, they cannot later raise Article 277 as a way of circumventing the time limit — the plea is inadmissible in such circumstances (TWD Textilwerke Deggendorf)",
+        "C": "Article 277 can only be raised in preliminary reference proceedings before a national court",
+        "D": "The plea of illegality must always be raised in the same proceedings as an Article 263 action"
+      },
+      "correct_answer": "B",
+      "explanation": "TWD Textilwerke Deggendorf (C-188/92, 1994) established the principle that where an applicant had an obvious and clear right to bring a direct challenge under Article 263 (so clear that they would unquestionably have had standing) and chose not to, they cannot later use Article 277 or preliminary reference to challenge the validity of the same act. This prevents the time limit provisions being circumvented by those who deliberately avoided timely direct challenge. The policy is legal certainty."
+    },
+    {
+      "id": "EUL_M07_L03_Q09",
+      "question": "What is the effect of a successful plea of illegality under Article 277 TFEU?",
+      "options": {
+        "A": "The general act (e.g., Regulation) is annulled with erga omnes effect",
+        "B": "The general act is declared inapplicable in the particular case — the individual decision based on it is annulled, but the general act itself remains in force (its inapplicability binds only the parties to the proceedings)",
+        "C": "The general act is suspended pending re-adoption by the institution with corrected content",
+        "D": "Damages are awarded to the applicant equal to the harm suffered from application of the unlawful general act"
+      },
+      "correct_answer": "B",
+      "explanation": "A successful Article 277 plea results in a finding that the general act is inapplicable in the specific case — it does not lead to formal annulment. The individual decision based on the unlawful general act is then annulled, but the general act itself continues to exist in the EU legal order. Only those parties to the proceedings benefit from the ruling. This contrasts with the erga omnes effect of a successful direct annulment action under Article 263. The institution must then either repeal the general act or adopt it afresh to avoid further successful pleas."
+    },
+    {
+      "id": "EUL_M07_L03_Q10",
+      "question": "Which types of act can be challenged via Article 277 TFEU?",
+      "options": {
+        "A": "Only Regulations — Article 277 expressly uses the term 'regulation'",
+        "B": "Acts of general application — interpreted broadly to cover any act with normative (legislative or regulatory) characteristics, including delegated acts and decisions of general application, though not individual decisions",
+        "C": "Only secondary legislation — Treaty provisions are excluded from the plea of illegality",
+        "D": "Any EU act, including opinions and recommendations"
+      },
+      "correct_answer": "B",
+      "explanation": "Although Article 277 uses the term 'act of general application', the CJEU has interpreted this broadly to cover any normative act of general application — not just formal Regulations. Decisions addressed to all member states or those with legislative characteristics have been treated as within the scope of Article 277 (e.g., Simmenthal). However, the plea does not apply to individual decisions — those must be challenged directly under Article 263. The key is that the challenged measure is normative and of general application."
+    },
+    {
+      "id": "EUL_M07_L03_Q11",
+      "question": "Article 265 TFEU was used in Parliament v Council [1985] (Transport Policy Case) to significant effect. What was the significance of that case?",
+      "options": {
+        "A": "It was the first case in which the Parliament was held to have standing as an applicant to bring an action for failure to act",
+        "B": "It confirmed that the Council's failure to develop a common transport policy as required by the Treaty was a reviewable failure to act — establishing that Articles 263 and 265 together ensure institutional obligations can be enforced",
+        "C": "It established that Article 265 could be used to require the Commission to propose legislation",
+        "D": "It held that the Parliament could act under Article 265 to force the Council to vote on any legislative proposal"
+      },
+      "correct_answer": "A",
+      "explanation": "Parliament v Council (Case 13/83, the Transport Policy case) was significant because: (1) the European Parliament was a privileged applicant for Article 265 purposes even before the Maastricht Treaty formally gave it standing; (2) the Court found that the Council had infringed the Treaty by failing to introduce a common transport policy — a failure to act cognisable under Article 265. This confirmed that both the Parliament's standing and the substantive obligation to implement treaty-mandated policies could be enforced through the failure to act procedure."
+    },
+    {
+      "id": "EUL_M07_L03_Q12",
+      "question": "Can a failure to act claim under Article 265 TFEU be combined with an action for damages under Article 340 TFEU?",
+      "options": {
+        "A": "No — they are mutually exclusive remedies",
+        "B": "Yes — a party may simultaneously bring a failure to act claim and a claim for non-contractual liability for damages caused by the institution's failure to act, provided the conditions for each are independently satisfied",
+        "C": "Only if the failure to act caused physical harm, not mere economic loss",
+        "D": "Only after the failure to act has been confirmed by the CJEU in previous proceedings"
+      },
+      "correct_answer": "B",
+      "explanation": "The remedies of Article 265 (failure to act) and Article 340 (non-contractual liability for damages) are independent but complementary. A party may combine them: they can seek both a declaration that the institution has failed to act unlawfully (Article 265) and compensation for the loss caused by that failure (Article 340). The conditions for each must independently be satisfied — the failure to act must be an unlawful omission (Article 265) and must have caused actual damage with a causal link (Article 340)."
+    },
+    {
+      "id": "EUL_M07_L03_Q13",
+      "question": "The concept of 'failure to act' under Article 265 TFEU extends to which type of omission?",
+      "options": {
+        "A": "Only total failures to adopt binding legal acts",
+        "B": "Any infringement of the Treaties by abstaining from acting — including failure to reach a decision in proceedings, failure to reply to a request for action, or failure to adopt an act required by Treaty obligation, but not mere delay where a response is still forthcoming",
+        "C": "Only failures by the Commission to propose legislation within a specified time",
+        "D": "Only failures that the Court of Auditors has specifically identified in a special report"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 265 covers any infringement of the Treaties by abstaining from acting — this includes failure to adopt a required binding act, failure to reach a final decision in administrative proceedings (e.g., competition investigations), and failure to reply to a request for action. However, the institution must first have the obligation to act — the Treaty must impose a duty. Mere delay is not automatically a failure to act if the institution is still proceeding; the failure crystallises when the institution remains silent after being called upon to act and allowing the two-month response period."
+    }
+  ],
+  "total_questions": 13
+}

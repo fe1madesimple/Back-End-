@@ -1,0 +1,275 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "EquityLaw_ElevenLabs_Module04_Lesson03.txt",
+  "module_number": 4,
+  "module_title": "CHARITABLE TRUSTS",
+  "lesson_number": 3,
+  "lesson_title": "THE CY-PRES DOCTRINE",
+  "total_questions": 22,
+  "questions": [
+    {
+      "id": "EQL_M04_L03_Q01",
+      "question": "The term 'cy-pres' derives from the French and means:",
+      "options": {
+        "A": "By proximity — that which is nearest in time",
+        "B": "As near as possible",
+        "C": "For the public benefit",
+        "D": "By the general will of the testator"
+      },
+      "correct_answer": "B",
+      "explanation": "Cy-pres is a French term meaning 'as near as possible.' In equity, the cy-pres doctrine allows the court to direct that charitable trust property be applied to a purpose as close as possible to the original charitable purpose when that original purpose cannot be carried out as specified."
+    },
+    {
+      "id": "EQL_M04_L03_Q02",
+      "question": "The cy-pres doctrine applies when a charitable trust cannot be carried out in the precise manner directed. In what two situations does it operate?",
+      "options": {
+        "A": "Where the charitable trust is void ab initio, and where the trustee is insolvent",
+        "B": "Initial failure — where the purpose is impossible or impracticable from the outset — and subsequent failure — where the purpose was once achievable but has since become impossible or impracticable",
+        "C": "Where the settlor lacks testamentary capacity, and where the named charity has changed its objects",
+        "D": "Where the trust fund is insufficient, and where the trust has been operating for over 50 years"
+      },
+      "correct_answer": "B",
+      "explanation": "The cy-pres doctrine operates in two distinct situations: (1) initial failure — where the charitable purpose is impossible or impracticable from the very outset; and (2) subsequent failure — where the charitable purpose was once achievable but has since become impossible or impracticable. Different rules apply to each situation, particularly regarding the need to establish general charitable intention."
+    },
+    {
+      "id": "EQL_M04_L03_Q03",
+      "question": "Where a charitable trust fails at the outset (initial failure), for the cy-pres doctrine to apply the court must find:",
+      "options": {
+        "A": "That the Attorney General consents to the cy-pres application",
+        "B": "A general charitable intention — a paramount intention to benefit charity generally as opposed to one specific institution",
+        "C": "That the donor is deceased and cannot take the property back",
+        "D": "That the value of the fund exceeds €10,000"
+      },
+      "correct_answer": "B",
+      "explanation": "For initial failure cases, the court must find a 'general charitable intention' — a paramount intention to benefit charity generally, as opposed to a specific institution or purpose and no other. If general charitable intention is found, the fund is applied cy-pres. If the intent was purely specific — to that one institution only — the trust fails and the property results back to the donor or their estate."
+    },
+    {
+      "id": "EQL_M04_L03_Q04",
+      "question": "In Re Harwood [1936], the court dealt with two charitable bequests. A gift to 'the Wisbech Peace Society, Cambridge' — which had never existed — was treated differently from a gift to a named society that had once existed but was subsequently wound up. What was the significance of this distinction?",
+      "options": {
+        "A": "The court held both gifts failed and resulted back to the estate",
+        "B": "The court applied cy-pres to the gift to the non-existent society because general charitable intention was found; the gift to the wound-up society was treated differently",
+        "C": "The court merged both gifts into a single charitable fund",
+        "D": "Only the gift to the wound-up society could be applied cy-pres because the purpose had once been possible"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Harwood [1936], the gift to the Wisbech Peace Society (which had never existed) was applied cy-pres because the court found a general charitable intention. Where a society never existed, there was never a specific attachment to that institution, making it easier to find a general intention. The gift to the society that had once existed but was wound up raised different considerations about whether the donor intended to benefit that specific institution only."
+    },
+    {
+      "id": "EQL_M04_L03_Q05",
+      "question": "In cases of subsequent failure of a charitable trust, the requirement to establish a general charitable intention is:",
+      "options": {
+        "A": "The same as for initial failure — general charitable intention must always be shown",
+        "B": "More stringent — subsequent failure requires a higher standard of charitable intention",
+        "C": "Generally not required — once property has been dedicated to charity and the purpose subsequently fails, the court will usually apply the funds cy-pres",
+        "D": "Irrelevant — subsequent failure always results in a resulting trust back to the donor"
+      },
+      "correct_answer": "C",
+      "explanation": "For subsequent failure, cy-pres applies more readily. Once property has been dedicated to charity and vested in the charitable purpose, the donor has no further claim to it. If the purpose subsequently fails, the court will generally apply the funds cy-pres without needing to find a general charitable intention. The rationale is that the property has already left the donor's estate and has been effectively dedicated to charity."
+    },
+    {
+      "id": "EQL_M04_L03_Q06",
+      "question": "Section 47 of the Charities Act 2009 (Ireland) gives the High Court power to make cy-pres schemes in which circumstances?",
+      "options": {
+        "A": "Only where the original charitable purpose has become wholly impossible",
+        "B": "Where the original purpose has become impossible, impracticable, or where the purpose has been adequately provided for by other means",
+        "C": "Only on application by the Attorney General",
+        "D": "Where the Charities Regulator issues a direction that cy-pres is appropriate"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 47 of the Charities Act 2009 gives the High Court broad powers to make cy-pres schemes. The grounds include: the original purpose has become impossible or impracticable; the original purpose has been adequately provided for by other means; the original purpose has ceased to be charitable; or the original purpose provides a use for only part of the property. This is a broader jurisdiction than the traditional common law cy-pres."
+    },
+    {
+      "id": "EQL_M04_L03_Q007",
+      "question": "Section 48 of the Charities Act 1961 (Ireland) is particularly important for FE-1 candidates. What does subsection (1) provide?",
+      "options": {
+        "A": "That surplus charitable funds must be returned to identifiable donors",
+        "B": "That the High Court may apply property cy-pres if it belongs to donors who cannot be identified or who have disclaimed their right to its return",
+        "C": "That all charitable collections are presumed to be donated for general charitable purposes",
+        "D": "That the Charities Regulator must approve all cy-pres applications"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 48(1) of the Charities Act 1961 provides that the High Court may apply property cy-pres if it belongs to donors who cannot be identified or who have disclaimed their right to the return of the property. This is crucial for situations where a specific charitable purpose fails and there is a question about what happens to the donated funds."
+    },
+    {
+      "id": "EQL_M04_L03_Q08",
+      "question": "The conclusive presumption in Section 48(2) of the Charities Act 1961 applies to which category of donations?",
+      "options": {
+        "A": "All charitable donations made by deed of covenant",
+        "B": "Donations made in response to a public television appeal",
+        "C": "Proceeds of collections and other means where it is impossible to distinguish one gift from another — these belong to donors who cannot be identified",
+        "D": "Donations made by corporate entities rather than individuals"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 48(2) of the Charities Act 1961 creates a conclusive presumption that proceeds of collections and other means where it is impossible to distinguish one gift from another (e.g., collection boxes) belong to donors who cannot be identified. This means they can be applied cy-pres without needing to identify and return funds to individual donors. This is of direct practical importance for charity fundraising scenarios."
+    },
+    {
+      "id": "EQL_M04_L03_Q09",
+      "question": "A charity organises a street collection using sealed collection boxes. The charitable purpose subsequently fails. Based on Section 48(2) of the Charities Act 1961, what happens to the collected funds?",
+      "options": {
+        "A": "They must be returned to donors on a pro-rata basis",
+        "B": "They result back to the Crown as bona vacantia",
+        "C": "They are conclusively presumed to belong to unidentifiable donors and can be applied cy-pres",
+        "D": "They must be paid into the Charities Regulator's general fund"
+      },
+      "correct_answer": "C",
+      "explanation": "Under Section 48(2) of the Charities Act 1961, proceeds of collections where it is impossible to distinguish one gift from another (such as sealed collection boxes) are conclusively presumed to belong to donors who cannot be identified. They can therefore be applied cy-pres. The rationale is that individual donations are pooled and cannot be traced back to specific donors."
+    },
+    {
+      "id": "EQL_M04_L03_Q010",
+      "question": "A charity fundraiser collects donations through sponsorship cards with donors' names and addresses for a specific charitable purpose that subsequently fails. What is the legal position of these identified donors?",
+      "options": {
+        "A": "Their donations are conclusively presumed to be for general charitable purposes under s.48(2) Charities Act 1961",
+        "B": "They hold a resulting trust interest in the proportion of the fund representing their donation and can seek its return or disclaim in favour of cy-pres",
+        "C": "They automatically forfeit their right to the return of their donation after two years",
+        "D": "Their donations vest in the Charities Regulator as a matter of statute"
+      },
+      "correct_answer": "B",
+      "explanation": "Where donors are identifiable (e.g., through sponsorship cards with names and addresses), each donor holds a resulting trust interest in their proportion of the fund. They can seek the return of their donation or disclaim that right, in which case the funds may be applied cy-pres. This contrasts with collection box donations which, being unidentifiable under s.48(2) of the Charities Act 1961, are presumed to belong to unidentifiable donors and can be applied cy-pres directly."
+    },
+    {
+      "id": "EQL_M04_L03_Q011",
+      "question": "Re Gillingham Bus Disaster Fund [1958] involved funds collected after a road accident. What happened to the surplus after the charitable purpose was fulfilled?",
+      "options": {
+        "A": "The surplus was applied cy-pres to a similar disaster fund",
+        "B": "The court held that donors had donated for a specific purpose and, once that purpose was achieved, each donor had a resulting trust interest — unless cy-pres applied",
+        "C": "The surplus was paid to the next of kin of the victims",
+        "D": "The surplus was forfeited to the Crown as bona vacantia"
+      },
+      "correct_answer": "B",
+      "explanation": "Re Gillingham Bus Disaster Fund [1958] illustrates the tension between cy-pres and resulting trusts. The court held that donors who donated for a specific purpose retained a resulting trust interest once that purpose was fulfilled or failed. Each donor had donated for that specific purpose, and when it was achieved, a resulting trust arose in their favour — unless cy-pres could apply to the surplus."
+    },
+    {
+      "id": "EQL_M04_L03_Q012",
+      "question": "The cy-pres doctrine differs from a resulting trust in that:",
+      "options": {
+        "A": "A resulting trust returns property to the Crown; cy-pres returns it to the donor",
+        "B": "Cy-pres allows charitable funds to be redirected to a similar charitable purpose; a resulting trust returns the property to the donor or their estate",
+        "C": "A resulting trust applies only to inter vivos trusts; cy-pres applies only to testamentary trusts",
+        "D": "There is no practical difference — both doctrines achieve the same outcome"
+      },
+      "correct_answer": "B",
+      "explanation": "The fundamental distinction is the destination of the property. Under a resulting trust, property returns to the donor or their estate (since the beneficial interest was never disposed of). Under the cy-pres doctrine, the property remains in charitable hands and is redirected to a purpose as near as possible to the original charitable intention. Cy-pres thus preserves the charitable character of the fund."
+    },
+    {
+      "id": "EQL_M04_L03_Q013",
+      "question": "A testator leaves €50,000 'to the XYZ Cancer Research Society' which has never existed. The testator had a long history of supporting cancer research charities generally. What result applies?",
+      "options": {
+        "A": "The gift fails as the named institution does not exist and the money results back to the estate",
+        "B": "The gift is void for uncertainty as the institution cannot be identified",
+        "C": "The court may apply the gift cy-pres to another cancer research charity, finding a general charitable intention",
+        "D": "The gift will be treated as a gift to the nearest existing cancer research charity by operation of law"
+      },
+      "correct_answer": "C",
+      "explanation": "This is an initial failure case: the named institution never existed. Following the approach in Re Harwood [1936], where a society never existed, the court is more willing to find a general charitable intention (here, supported by the testator's history of supporting cancer research charities generally). With a general charitable intention found, the court can apply the fund cy-pres to a similar cancer research charity."
+    },
+    {
+      "id": "EQL_M04_L03_Q014",
+      "question": "Which of the following scenarios would be classified as a 'subsequent failure' rather than 'initial failure' for cy-pres purposes?",
+      "options": {
+        "A": "A bequest to a charity that had been wound up one month before the testator's death",
+        "B": "A bequest to a charity that does not exist at the date of the will",
+        "C": "An inter vivos gift to a named hospital that closes ten years after the trust is established and operating",
+        "D": "A trust for a purpose that was always illegal from the outset"
+      },
+      "correct_answer": "C",
+      "explanation": "Subsequent failure occurs where the charitable purpose was once achievable but later becomes impossible or impracticable. A hospital that closes ten years after the trust was established and operating is a classic subsequent failure — the purpose was possible and was being carried out, but subsequently became impossible. Options A and B are initial failure scenarios (the charity did not exist when the trust was created). Option D is not a cy-pres case at all."
+    },
+    {
+      "id": "EQL_M04_L03_Q015",
+      "question": "For an FE-1 exam problem involving surplus charitable funds after a specific purpose is achieved, the correct analytical sequence is:",
+      "options": {
+        "A": "Assume cy-pres applies; determine if the surplus should go to a similar charity",
+        "B": "Identify whether failure is initial or subsequent; assess general charitable intention if initial failure; apply s.48 Charities Act 1961 to different donor categories",
+        "C": "Consult the Charities Regulator guidelines; apply them to the facts",
+        "D": "Return all funds to donors regardless of how they were collected"
+      },
+      "correct_answer": "B",
+      "explanation": "The correct analytical sequence for cy-pres problem questions is: (1) identify whether the failure is initial or subsequent; (2) if initial failure, assess whether there is a general charitable intention; (3) apply Section 48 of the Charities Act 1961 to distinguish between identifiable donors (resulting trust) and unidentifiable donors (conclusive presumption under s.48(2) that funds belong to unidentifiable donors and can be applied cy-pres). This is the systematic approach required in FE-1 answers."
+    },
+    {
+      "id": "EQL_M04_L03_Q016",
+      "question": "A charitable fund is established by public appeal for the benefit of victims of a specific flood disaster. After all victims are compensated, a substantial surplus remains. Which statement best reflects the legal position?",
+      "options": {
+        "A": "The surplus automatically vests in the state as bona vacantia",
+        "B": "Identifiable donors have a resulting trust claim; unidentifiable donors (e.g., collection box proceeds) are presumed unidentifiable under s.48(2) and the surplus can be applied cy-pres",
+        "C": "The surplus must be distributed equally among all donors",
+        "D": "The surplus must be returned to the original charitable purpose trustees"
+      },
+      "correct_answer": "B",
+      "explanation": "This scenario requires applying both resulting trust principles and Section 48 of the Charities Act 1961. Identifiable donors (e.g., cheque donors with names on file) hold a resulting trust interest and can claim back their donation or disclaim it. Proceeds from collection boxes and anonymous sources fall under s.48(2) — they are conclusively presumed to belong to unidentifiable donors and can be applied cy-pres to a similar disaster relief purpose."
+    },
+    {
+      "id": "EQL_M04_L03_Q017",
+      "question": "The rationale for applying cy-pres more readily in subsequent failure cases than initial failure cases is:",
+      "options": {
+        "A": "Subsequent failure cases are more common and require a simpler rule",
+        "B": "Once property has been dedicated to charity and vested in the charitable purpose, the donor has no further claim to it — the property is effectively given over to charity",
+        "C": "Courts have broader statutory powers in subsequent failure cases under the Charities Act 2009",
+        "D": "Donors are presumed to intend to benefit charity generally in all subsequent failure cases as a matter of common law"
+      },
+      "correct_answer": "B",
+      "explanation": "The rationale for the more relaxed approach to subsequent failure is that once property has left the donor and vested in the charitable purpose, the donor has no further equitable claim to it. The property has been effectively dedicated to charity. If the purpose subsequently becomes impossible, it would be contrary to the donor's charitable intent to return the funds rather than redirect them to a similar charitable purpose."
+    },
+    {
+      "id": "EQL_M04_L03_Q018",
+      "question": "Which Irish statute currently governs the primary cy-pres jurisdiction for the High Court?",
+      "options": {
+        "A": "Charities Act 1961, Section 47",
+        "B": "Charities Act 2009, Section 47",
+        "C": "Succession Act 1965, Section 89",
+        "D": "Trustee Act 1893, Section 10"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 47 of the Charities Act 2009 currently governs the primary cy-pres jurisdiction in Ireland, giving the High Court broad powers to make cy-pres schemes where the original purpose has become impossible, impracticable, or where it has been adequately provided for by other means. Section 48 of the Charities Act 1961 remains relevant for its specific provisions on unidentifiable donors and collection proceeds."
+    },
+    {
+      "id": "EQL_M04_L03_Q019",
+      "question": "A testator makes a specific bequest to 'The Dublin Animal Hospital, Parnell Street' which was closed and wound up three years before the testator's death. There is no evidence of any general charitable intention beyond this specific institution. What is the most likely outcome?",
+      "options": {
+        "A": "The gift is applied cy-pres as all charitable gifts are presumed to carry a general charitable intention",
+        "B": "The gift fails and the property results back to the residuary estate because no general charitable intention can be established",
+        "C": "The gift is applied to the nearest animal hospital currently operating in Dublin",
+        "D": "The gift is treated as a gift to the ISPCA as the statutory successor to all animal charities"
+      },
+      "correct_answer": "B",
+      "explanation": "This is an initial failure case — the specific institution had already ceased to exist before the testator's death. For cy-pres to apply in initial failure, the court must find a general charitable intention. On these facts, there is no evidence of any general charitable intention beyond this specific institution. Without such intention, the gift fails and the property results back to the residuary estate (or on intestacy if there is no residuary clause). Contrast with Re Harwood [1936] where general intention was found."
+    },
+    {
+      "id": "EQL_M04_L03_Q020",
+      "question": "How does the approach to cy-pres under Section 47 of the Charities Act 2009 differ from the traditional common law cy-pres doctrine?",
+      "options": {
+        "A": "Section 47 restricts the court's jurisdiction compared to common law",
+        "B": "Section 47 broadens the grounds for cy-pres to include cases where the original purpose has been adequately provided for by other means — not just impossible or impracticable",
+        "C": "Section 47 abolishes the distinction between initial and subsequent failure",
+        "D": "Section 47 removes the requirement for general charitable intention in all initial failure cases"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 47 of the Charities Act 2009 extends the cy-pres jurisdiction beyond traditional impossibility or impracticability. It includes as grounds: the original purpose has become impossible, impracticable, or has been adequately provided for by other means, or the original purpose no longer serves the intended purpose. This is a broader statutory jurisdiction than the traditional common law cy-pres which was confined to impossibility or impracticability."
+    },
+    {
+      "id": "EQL_M04_L03_Q021",
+      "question": "Which of the following best describes a 'general charitable intention' for cy-pres purposes?",
+      "options": {
+        "A": "An intention to benefit a specific named charity and no other",
+        "B": "An intention expressed in the widest possible terms covering all charitable purposes",
+        "C": "A paramount intention to benefit charity generally, as opposed to a fixed intention to benefit one particular institution and no other",
+        "D": "An intention declared in an express deed of charitable dedication executed before a solicitor"
+      },
+      "correct_answer": "C",
+      "explanation": "A general charitable intention is a paramount intention to benefit charity generally — the donor's overriding purpose was to advance charity, and the specific institution or purpose was merely the chosen vehicle. It contrasts with a specific intention fixed on one particular institution and no other. Courts assess general charitable intention by examining all available evidence, including the terms of the gift, surrounding circumstances, and the donor's history of charitable giving."
+    },
+    {
+      "id": "EQL_M04_L03_Q022",
+      "question": "In an FE-1 examination question, a charity collects funds through both a public gala dinner (guests pay by credit card with names recorded) and collection boxes placed around the venue. The charitable purpose fails. Which statement correctly differentiates the two categories of donation?",
+      "options": {
+        "A": "Both categories are treated the same — all funds result back to donors",
+        "B": "Both categories are treated the same — all funds can be applied cy-pres under s.48(2)",
+        "C": "Gala dinner guests are identifiable donors with a resulting trust claim; collection box proceeds are presumed to belong to unidentifiable donors under s.48(2) and can be applied cy-pres",
+        "D": "The credit card donors have no claim as payment by card implies unconditional donation"
+      },
+      "correct_answer": "C",
+      "explanation": "This scenario requires applying the distinction at the heart of Section 48 of the Charities Act 1961. Gala dinner guests who paid by credit card with their names recorded are identifiable donors: they hold a resulting trust interest and can seek return of their donation or disclaim it. Collection box proceeds, where it is impossible to distinguish one gift from another, fall under s.48(2): they are conclusively presumed to belong to unidentifiable donors and can be applied cy-pres. This is a classic FE-1 examination scenario requiring precise analysis."
+    }
+  ]
+}

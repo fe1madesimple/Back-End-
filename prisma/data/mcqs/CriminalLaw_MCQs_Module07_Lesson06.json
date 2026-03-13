@@ -1,0 +1,107 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module07_Lesson03.txt",
+  "module_number": 7,
+  "module_title": "Theft, Property Offences, and Cybercrime",
+  "lesson_number": 6,
+  "lesson_title": "False Instruments (ss.24-28 Criminal Justice (Theft and Fraud Offences) Act 2001)",
+  "total_questions": 8,
+  "questions": [
+    {
+      "id": "CRL_M07_L06_Q01",
+      "question": "Sections 24-28 of the Criminal Justice (Theft and Fraud Offences) Act 2001 create a suite of false instrument offences. Which of the following best describes what constitutes a 'false instrument' under the Act?",
+      "options": {
+        "A": "Any document that contains any false information, however minor",
+        "B": "An instrument that tells a lie about itself \u2014 that is, a document or article which purports to be something it is not; for example, a document that purports to be made by a person who did not make it, or made on a date when it was not made, or made with an authority that was not granted",
+        "C": "Any document used in a commercial transaction that has not been officially stamped or registered",
+        "D": "A document that has been forged by the use of advanced printing or copying technology"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the CJ(T&F)A 2001, a 'false instrument' is an instrument (broadly construed to include any document, disc, tape, or electronic record) that tells a lie about itself. The falsity relates to the instrument's own character or origin \u2014 not merely its content. An instrument is false if it purports: (1) to have been made by a person who did not make it; (2) to have been made on a date on which it was not made; (3) to have been made by a person who did not exist; (4) to have been altered in a way in which it was not altered; or (5) to have been made with an authority that was not given. This concept is narrower than simply containing false information \u2014 the lie must be about the instrument itself, not just about facts stated within it. A document that states false facts but accurately represents who made it and when is not a false instrument (though it may support other fraud charges). Option A is too broad. Option C introduces a formality requirement (stamping/registration) that is not the definition. Option D incorrectly limits false instruments to technologically sophisticated forgeries."
+    },
+    {
+      "id": "CRL_M07_L06_Q02",
+      "question": "Which of the following conducts is covered by the false instrument offences in ss.24-28 CJ(T&F)A 2001?",
+      "options": {
+        "A": "Making a false instrument only \u2014 possession and use of false instruments are covered by other legislation",
+        "B": "Making a false instrument (s.24); copying a false instrument (s.25); using a false instrument (s.26); using a copy of a false instrument (s.27); and possessing or controlling a false instrument with intent (s.28)",
+        "C": "Making and using false instruments only \u2014 copying and possession are not covered by the 2001 Act",
+        "D": "The Act creates a single omnibus offence covering all dealings with false instruments without distinguishing between making, copying, using and possessing"
+      },
+      "correct_answer": "B",
+      "explanation": "Sections 24-28 CJ(T&F)A 2001 create a comprehensive range of false instrument offences: s.24 \u2014 making a false instrument with intent to induce another to act or refrain from acting to their or another's prejudice; s.25 \u2014 copying a false instrument with the same intent; s.26 \u2014 using a false instrument, knowing or believing it to be false, with intent to induce another to act or refrain from acting; s.27 \u2014 using a copy of a false instrument knowing or believing the original to be false; s.28 \u2014 possessing or controlling a false instrument with intent to use it in the commission of an offence. This comprehensive framework addresses the full lifecycle of a false instrument from creation through to use. The legislative approach ensures there are no gaps through which persons who are involved at different stages of the fraud chain can escape liability. Options A and C artificially limit the covered conduct. Option D incorrectly treats the provisions as a single undifferentiated offence."
+    },
+    {
+      "id": "CRL_M07_L06_Q03",
+      "question": "In Minister for Justice v Doyle [2010] (Ireland), a case arising from European Arrest Warrant proceedings, the court considered the false instruments provisions of the 2001 Act. What was the significance of this case?",
+      "options": {
+        "A": "The court held that the false instruments provisions of the 2001 Act were unconstitutional",
+        "B": "The case confirmed the scope of the false instrument offences in the 2001 Act in the context of European Arrest Warrant proceedings, affirming the dual criminality requirements and the breadth of the false instrument provisions as capturing document forgery offences",
+        "C": "The court held that electronic documents cannot constitute instruments for the purposes of the 2001 Act",
+        "D": "The court held that the mental element for false instrument offences requires proof of financial gain \u2014 non-financial prejudice is insufficient"
+      },
+      "correct_answer": "B",
+      "explanation": "Minister for Justice v Doyle [2010] arose in the context of European Arrest Warrant proceedings where the issue was whether conduct in another jurisdiction corresponded to an offence under Irish law \u2014 the dual criminality requirement for extradition. The case confirmed that the false instrument provisions of the CJ(T&F)A 2001 are broad and capture document forgery offences of the type that commonly arise in extradition proceedings. The case is significant for confirming the scope of the Irish false instrument regime in an international context and affirming that document fraud offences in European jurisdictions will typically have a corresponding Irish offence under ss.24-28. For FE-1 purposes, the case is cited as authority for the breadth of the false instrument provisions. Options A, C, and D each state holdings that are contrary to the actual significance of the case."
+    },
+    {
+      "id": "CRL_M07_L06_Q04",
+      "question": "What mental element must be proven for the offence of making a false instrument under s.24 CJ(T&F)A 2001?",
+      "options": {
+        "A": "Strict liability \u2014 the prosecution need only prove that the accused made the false instrument; no mental element is required",
+        "B": "The accused must have made the false instrument with the intention of inducing somebody to accept it as genuine and by reason of so accepting it to do or refrain from doing some act to the prejudice of that person or any other person",
+        "C": "The accused must have made the false instrument knowing it was false \u2014 the intent to induce another is not required; knowledge alone suffices",
+        "D": "The accused must have made the false instrument intending to obtain a financial benefit for themselves specifically"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 24 CJ(T&F)A 2001 requires that the accused made the false instrument with the intention of: (1) inducing somebody to accept it as genuine; and (2) by reason of so accepting it, to do or refrain from doing some act to the prejudice of that person or any other person. This is a specific intent offence \u2014 the prosecution must prove not just the making of a false instrument but the purpose behind its making: that the accused intended to pass the instrument off as genuine and that acceptance of it as genuine would cause someone to act to their prejudice. 'Prejudice' is broadly construed and includes economic and other harm. The prejudice need not be to the person directly deceived \u2014 it can be to any person. This two-stage intention (induce acceptance + cause prejudice) is the hallmark of the offence. Option A incorrectly removes the mental element. Option C requires only knowledge, not the specific intent. Option D incorrectly personalises the benefit to the accused."
+    },
+    {
+      "id": "CRL_M07_L06_Q05",
+      "question": "Peter creates a fake university degree certificate bearing the name of a real university. He then uses it in a job application, presenting it to the employer as genuine. Peter gets the job on the basis of the false certificate. Which of the following offences has Peter committed?",
+      "options": {
+        "A": "Peter has only committed obtaining by deception under s.6 \u2014 false instruments are irrelevant where deception is the operative mechanism",
+        "B": "Peter has committed making a false instrument (s.24) by creating the fake certificate; and using a false instrument (s.26) by presenting it to the employer; knowing it was false and intending to induce the employer to accept it as genuine and to act to their prejudice (hiring Peter on false credentials)",
+        "C": "Peter has not committed any criminal offence \u2014 misrepresentation of qualifications is an employment law matter, not a criminal one",
+        "D": "Peter has committed identity theft only \u2014 falsely claiming someone else's educational credentials is identity-based fraud"
+      },
+      "correct_answer": "B",
+      "explanation": "Peter's conduct satisfies multiple false instrument offences: (1) Making a false instrument (s.24) \u2014 Peter made the fake degree certificate; it is a false instrument because it tells a lie about itself (purports to have been issued by a university that did not issue it); his intention was to induce an employer to accept it as genuine and thereby act to their prejudice (hiring an underqualified person); (2) Using a false instrument (s.26) \u2014 Peter used the false instrument (presented it to the employer) knowing it was false, with intent to induce acceptance as genuine and to act prejudicially. The employer's prejudice is clear: they hired Peter (who they would not have hired on his real qualifications), potentially to the detriment of a better-qualified candidate and their own business. This scenario is a classic false instrument fact pattern. Obtaining by deception may also be separately charged (Option A is right that deception is also present), but the false instrument offences are specifically applicable and should be identified. Option C incorrectly dismisses criminal liability. Option D incorrectly characterises this as identity theft."
+    },
+    {
+      "id": "CRL_M07_L06_Q06",
+      "question": "What is the maximum penalty for the false instrument offences under ss.24-28 CJ(T&F)A 2001 on conviction on indictment?",
+      "options": {
+        "A": "5 years imprisonment",
+        "B": "7 years imprisonment",
+        "C": "10 years imprisonment",
+        "D": "14 years imprisonment"
+      },
+      "correct_answer": "C",
+      "explanation": "The maximum penalty for the false instrument offences under ss.24-28 CJ(T&F)A 2001 on conviction on indictment is 10 years imprisonment. This reflects the serious nature of document fraud, which can undermine commercial, professional, and government systems. The 10-year maximum is consistent with other serious fraud offences under the 2001 Act. The false instrument offences are triable on indictment in the Circuit Court. For FE-1 candidates, the sentencing comparison to note is: obtaining by deception (s.6) = 5 years maximum; theft (s.4) = 10 years; false instruments = 10 years; burglary (s.12) = 14 years; aggravated burglary (s.13) = life. Options A and B state lower maximums. Option D states the maximum for burglary."
+    },
+    {
+      "id": "CRL_M07_L06_Q07",
+      "question": "Lisa obtains a genuine bank cheque made out to 'Cash' and alters the amount from \u20ac100 to \u20ac10,000 before attempting to cash it. Has Lisa made a false instrument?",
+      "options": {
+        "A": "No \u2014 the cheque was genuine when issued; Lisa did not make the cheque, she merely altered it; making a false instrument requires creating a document from scratch",
+        "B": "Yes \u2014 under the false instrument provisions, an instrument is false if it purports to have been altered in a way in which it was not authorised to be altered; Lisa's alteration of the amount creates a false instrument because the cheque now purports to have been issued for \u20ac10,000 when it was not",
+        "C": "No \u2014 altering a cheque amount is a banking matter governed by financial regulation, not a criminal offence under the 2001 Act",
+        "D": "Yes \u2014 but Lisa has only committed the possession offence (s.28) not the making offence (s.24), because she did not create the cheque from scratch"
+      },
+      "correct_answer": "B",
+      "explanation": "Lisa's conduct falls within the false instrument provisions because one of the categories of falsity is that the instrument purports to have been altered in a way in which it was not. By changing the amount from \u20ac100 to \u20ac10,000, Lisa has created a false instrument \u2014 the cheque now purports (falsely) to be a cheque for \u20ac10,000, when it was actually issued for \u20ac100. The unauthorised alteration makes the instrument tell a lie about itself: it purports to record an authorisation (for \u20ac10,000) that was never given. Making a false instrument under s.24 does not require creating a document from scratch \u2014 it includes making alterations that render a genuine document false. Lisa's making of the false instrument (by alteration) with intent to use it to get \u20ac10,000 from the bank satisfies s.24, and her attempt to cash it would engage s.26. Option A incorrectly limits 'making' to creation ex nihilo. Option C incorrectly removes criminal liability. Option D correctly identifies s.28 but misses the primary s.24 offence."
+    },
+    {
+      "id": "CRL_M07_L06_Q08",
+      "question": "Is the offence of making a false instrument under s.24 CJ(T&F)A 2001 complete when the false instrument is made, or does the accused need to have actually induced someone to act on it?",
+      "options": {
+        "A": "The offence is only complete when the false instrument has been successfully used to induce another person to act \u2014 an unused false instrument cannot found a conviction",
+        "B": "The offence is complete upon the making of the false instrument with the requisite intent \u2014 it is not necessary for the instrument to actually be used or for anyone to actually be induced to act; the intent to induce is sufficient",
+        "C": "The offence requires that the instrument be presented to at least one person, though actual inducement is not required",
+        "D": "The offence requires that the instrument be used and that prejudice actually results \u2014 a false instrument that causes no prejudice in practice cannot found a conviction"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 24 CJ(T&F)A 2001 is complete upon the making of the false instrument with the intention to induce \u2014 it is a crime of specific intent that does not require any subsequent action on the false instrument. The offence is inchoate in nature: like conspiracy or attempt, it punishes the preparatory conduct (making) combined with the criminal purpose (intent to induce prejudice). This means that a person who makes a fake passport or forged contract but is arrested before ever using it has nonetheless committed the full offence of making a false instrument. The lack of an actual use or actual prejudice requirement prevents accused persons from avoiding conviction by arguing they had not yet deployed the instrument. For FE-1 analysis, this inchoate structure is an important feature of the false instrument offences. Option A requires actual successful use. Option C requires at least presentation to someone. Option D requires actual prejudice \u2014 none of these additional requirements appear in the statute."
+    }
+  ]
+}

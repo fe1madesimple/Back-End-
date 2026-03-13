@@ -1,0 +1,119 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module13_Lesson01.txt",
+  "module_number": 13,
+  "module_title": "Criminal Procedure, Courts, and Bail",
+  "lesson_number": 2,
+  "lesson_title": "Classification of Offences",
+  "total_questions": 9,
+  "questions": [
+    {
+      "id": "CRL_M13_L02_Q01",
+      "question": "Prior to 1997, Irish law recognised a distinction between felonies and misdemeanours. What happened to this distinction?",
+      "options": {
+        "A": "The felony/misdemeanour distinction was replaced by the indictable/summary distinction in 1967 by the Criminal Procedure Act",
+        "B": "Section 3 of the Criminal Law Act 1997 abolished the distinction between felonies and misdemeanours in Irish law \u2014 all such offences are now simply 'arrestable offences' or other offences; the practical consequences of the felony/misdemeanour distinction (including the old common law powers) were also removed; this was a significant modernisation of Irish criminal law",
+        "C": "The felony/misdemeanour distinction was abolished by the Constitution \u2014 Article 38 provides that only summary and indictable offences exist in Irish law",
+        "D": "The felony/misdemeanour distinction was abolished by the Offences Against the State Act 1939 for national security offences only \u2014 it remains in force for all other offences"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 3 of the Criminal Law Act 1997 abolished the distinction between felonies and misdemeanours in Irish law. Prior to the 1997 Act, the common law distinction between felonies (traditionally the more serious offences, originally punishable by death or forfeiture) and misdemeanours (less serious offences) had procedural consequences including different powers of arrest and different rules at trial. Section 3 CLA 1997 swept away this ancient distinction and the procedural consequences that flowed from it. The 1997 Act replaced these categories with the concept of 'arrestable offences' (offences carrying 5 years or more) for powers of arrest purposes. FE-1 candidates must know that the felony/misdemeanour distinction was abolished by s.3 CLA 1997. Option A incorrectly attributes abolition to the 1967 Act. Option C incorrectly credits the Constitution. Option D incorrectly limits abolition to national security offences."
+    },
+    {
+      "id": "CRL_M13_L02_Q02",
+      "question": "What are the three categories of criminal offence in Irish law following the Criminal Law Act 1997?",
+      "options": {
+        "A": "Felonies, misdemeanours, and regulatory offences",
+        "B": "Summary offences, indictable offences, and hybrid (either-way) offences \u2014 summary offences are tried in the District Court without a jury; indictable offences are tried on indictment before a judge and jury; hybrid offences (also called 'scheduled' offences under the CJA 1951) can be tried either way depending on the circumstances",
+        "C": "Minor offences, serious offences, and capital offences",
+        "D": "Arrestable offences, non-arrestable offences, and petty offences"
+      },
+      "correct_answer": "B",
+      "explanation": "Following the abolition of the felony/misdemeanour distinction by s.3 CLA 1997, the classification of criminal offences in Irish law is: (1) Summary offences \u2014 minor offences tried in the District Court by a judge sitting alone without a jury; authorised by Art 38.2 of the Constitution; (2) Indictable offences \u2014 serious offences tried on indictment before a judge and jury in the Circuit Court, Central Criminal Court, or Special Criminal Court; (3) Hybrid (either-way) offences \u2014 technically indictable offences that may be tried summarily in the District Court if the DPP consents, the court is satisfied the offence is minor, and the accused consents (s.2 Criminal Justice Act 1951). This three-category system is the modern framework for Irish criminal procedure. Option A incorrectly retains the abolished felony/misdemeanour categories. Options C and D describe incorrect or incomplete frameworks."
+    },
+    {
+      "id": "CRL_M13_L02_Q03",
+      "question": "Article 38.2 of the Irish Constitution provides for the trial of minor offences without a jury. What is the constitutional significance of this provision?",
+      "options": {
+        "A": "Article 38.2 requires that all minor offences be tried with a jury \u2014 it is a protection for accused persons",
+        "B": "Article 38.2 provides that minor offences may be tried by courts of summary jurisdiction \u2014 this is the constitutional authorisation for the District Court's summary jurisdiction to try minor criminal offences without a jury; the provision creates an exception to the general right to jury trial under Art 38.5 for offences that are genuinely minor in nature",
+        "C": "Article 38.2 prohibits the trial of minor offences altogether \u2014 only serious offences may be the subject of criminal proceedings",
+        "D": "Article 38.2 requires the Oireachtas to classify all offences as either minor or non-minor by statute \u2014 judge-made classification is unconstitutional"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 38.2 provides that 'Minor offences may be tried by courts of summary jurisdiction.' This provision is the constitutional basis for the District Court's summary jurisdiction \u2014 it creates an exception to the general jury trial requirement under Art 38.5 for offences that qualify as 'minor.' The distinction between minor and non-minor offences is therefore constitutionally significant \u2014 only offences that are genuinely minor in nature can be tried summarily without a jury. The courts have developed criteria for distinguishing minor from non-minor offences, including the severity of the potential punishment and the moral stigma attached to conviction. This provision is one of the key constitutional provisions governing Irish criminal procedure. Option A inverts the provision \u2014 Art 38.2 permits trial without jury for minor offences. Option C misreads the provision as prohibitive. Option D incorrectly requires statutory classification by the Oireachtas."
+    },
+    {
+      "id": "CRL_M13_L02_Q04",
+      "question": "Article 38.5 of the Constitution provides for the right to jury trial for non-minor offences. What does this provision establish, and what are its key limitations?",
+      "options": {
+        "A": "Article 38.5 provides an absolute right to jury trial for all criminal offences in Ireland \u2014 no exceptions exist",
+        "B": "Article 38.5 provides that no person shall be tried on any criminal charge without a jury save in accordance with Art 38.2 (minor offences) or Art 38.3 (special courts); this establishes the general right to jury trial for non-minor offences while recognising the two exceptions \u2014 summary trial for minor offences and the Special Criminal Court for cases where ordinary courts are inadequate",
+        "C": "Article 38.5 provides the right to jury trial only in the Central Criminal Court \u2014 the Circuit Court can try serious offences without a jury",
+        "D": "Article 38.5 was amended in 2004 to permit trial without jury for serious fraud cases \u2014 an exception that the original Article did not contain"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 38.5 establishes the general constitutional right to jury trial: 'Save in the case of the trial of offences under section 2, section 3 or section 4 of this Article no person shall be tried on any criminal charge without a jury.' The exceptions are: (1) Art 38.2 \u2014 minor offences tried in courts of summary jurisdiction; (2) Art 38.3 \u2014 special courts (Special Criminal Court) for cases where the ordinary courts are inadequate; and (3) Art 38.4 \u2014 military tribunals for military law offences. For all other (non-minor) criminal charges, the accused has a constitutional right to jury trial. This right cannot be waived or taken away by ordinary legislation. The right to jury trial under Art 38.5 is therefore one of the most important constitutional protections in Irish criminal law. Option A ignores the express exceptions. Option C incorrectly limits the right to the Central Criminal Court. Option D invents a 2004 amendment."
+    },
+    {
+      "id": "CRL_M13_L02_Q05",
+      "question": "The three conditions for hybrid offence trial under s.2 of the Criminal Justice Act 1951 are well-established. What are these three conditions?",
+      "options": {
+        "A": "The DPP must consent; the accused must consent; and the case must originate in Dublin",
+        "B": "The DPP must consent to summary disposal; the District Court judge must be satisfied that the facts constitute a minor offence suitable for summary trial; and the accused must be informed of their right to trial by jury and must consent to summary trial \u2014 all three conditions must be satisfied; if any is absent, the case proceeds on indictment",
+        "C": "Only the DPP's consent is required \u2014 the accused has no right to insist on trial by jury for scheduled hybrid offences",
+        "D": "The accused must apply for summary trial; the DPP may consent or refuse at their discretion; the court has no independent role in the decision"
+      },
+      "correct_answer": "B",
+      "explanation": "The three conditions for hybrid offence summary trial under s.2 CJA 1951 are all mandatory \u2014 if any one is absent, the offence cannot be tried summarily. The conditions are: (1) DPP consent \u2014 the Director of Public Prosecutions must consent to summary disposal; (2) District Court judge satisfaction \u2014 the judge must be satisfied that the offence as disclosed is minor in nature and the facts are suitable for summary trial; (3) Accused consent \u2014 the accused must be informed of their right to jury trial (under Art 38.5) and must consent to waive that right and proceed summarily. The accused's consent is crucial \u2014 the constitutional right to jury trial cannot be removed without the accused's agreement. The interplay of these three conditions reflects the respective roles of the prosecution, court, and accused in the criminal justice system. Option A incorrectly adds a geographic requirement. Option C incorrectly removes the accused's consent requirement. Option D inverts the roles."
+    },
+    {
+      "id": "CRL_M13_L02_Q06",
+      "question": "What is an 'arrestable offence' in Irish law following the Criminal Law Act 1997, and why is this category significant?",
+      "options": {
+        "A": "An arrestable offence is any offence for which arrest without warrant is specifically authorised by statute",
+        "B": "Following s.3 of the Criminal Law Act 1997, an 'arrestable offence' means an offence for which a person may be punished by imprisonment for a term of 5 years or more \u2014 this category is significant because it defines the circumstances in which a Garda may arrest a person without a warrant; the power of arrest without warrant is available for arrestable offences, providing an important practical tool for law enforcement",
+        "C": "An arrestable offence is any offence listed in the First Schedule to the Criminal Law Act 1997 \u2014 the list is exhaustive",
+        "D": "The concept of 'arrestable offence' was abolished by the Criminal Justice Act 2007 \u2014 it is no longer a legally recognised category"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 3 of the Criminal Law Act 1997, in abolishing the felony/misdemeanour distinction, introduced the concept of the 'arrestable offence' to replace the old common law power of arrest without warrant for felonies. An arrestable offence is defined as an offence for which a person may be punished by imprisonment for a term of 5 years or more (or a more severe penalty). The 5-year threshold captures serious indictable offences while excluding minor offences from the power of warrantless arrest. A Garda may arrest a person without warrant for an arrestable offence where they have reasonable grounds to suspect the person is guilty of the offence. This category is therefore procedurally significant \u2014 it determines the scope of the warrantless arrest power. Option A incorrectly defines the category by reference to specific statutory authorisation. Option C incorrectly makes it an exhaustive scheduled list. Option D incorrectly states the concept was abolished."
+    },
+    {
+      "id": "CRL_M13_L02_Q07",
+      "question": "Kevin is charged with theft of goods worth \u20ac200 \u2014 an offence under s.4 of the Criminal Justice (Theft and Fraud Offences) Act 2001, which is an indictable offence carrying a maximum of 10 years. The DPP consents to summary disposal and the District Court judge is satisfied the facts are minor. What must happen before the case can be tried summarily?",
+      "options": {
+        "A": "The case can proceed summarily immediately \u2014 the DPP's consent and the judge's satisfaction are sufficient; Kevin has no further role to play in the decision",
+        "B": "Before the case can be tried summarily, Kevin must be informed of his constitutional right to trial by jury under Art 38.5 and must consent to having the case tried summarily in the District Court; only if Kevin consents does the court have jurisdiction to proceed summarily; this is the third of the three conditions required by s.2 CJA 1951",
+        "C": "Kevin must apply to the High Court for leave to be tried summarily \u2014 the District Court cannot itself determine the mode of trial for an indictable offence",
+        "D": "The case can never be tried summarily \u2014 theft is a reserved indictable offence under s.29 CPA 1967 that must be tried in the Central Criminal Court"
+      },
+      "correct_answer": "B",
+      "explanation": "This scenario tests the three conditions for s.2 CJA 1951 hybrid summary trial. Two of the three conditions are already met: (1) DPP consent \u2014 given; (2) Judge satisfaction that the offence is minor \u2014 given. The third and final condition is: (3) Kevin's consent. Kevin must be informed of his constitutional right to trial by jury under Art 38.5 of the Constitution. He must be told that theft is technically an indictable offence that he is entitled to have tried before a judge and jury. Only if Kevin knowingly waives this right and consents to summary trial can the District Court proceed. If Kevin elects for jury trial (refuses consent), the case must go to the Circuit Court on indictment. This protection of the accused's constitutional right to jury trial is the reason the consent condition exists. Option A incorrectly removes Kevin's consent requirement. Option C invents a High Court leave requirement. Option D incorrectly treats theft as a reserved offence \u2014 theft is not reserved under s.29 CPA 1967."
+    },
+    {
+      "id": "CRL_M13_L02_Q08",
+      "question": "What is the significance of Melling v O'Mathghamhna [1962] IR in the context of classifying offences as minor or non-minor for constitutional purposes?",
+      "options": {
+        "A": "The case established that all offences carrying more than 6 months imprisonment are automatically non-minor and must be tried by jury",
+        "B": "Melling v O'Mathghamhna [1962] IR is a foundational Supreme Court authority on the criteria for distinguishing minor from non-minor offences under Art 38.2 \u2014 the court held that the test is not merely the maximum sentence but involves consideration of the moral quality of the conduct, the traditional classification of the offence, and the penalties actually imposed in practice; the characterisation of an offence as minor for constitutional purposes requires consideration of the nature and moral stigma of the offence, not just its maximum penalty",
+        "C": "The case held that no offence carrying a custodial sentence can be a minor offence \u2014 the availability of imprisonment automatically makes an offence non-minor",
+        "D": "The case established that all offences created before 1922 are automatically classified as minor offences under the Constitution"
+      },
+      "correct_answer": "B",
+      "explanation": "Melling v O'Mathghamhna [1962] IR is the foundational Irish Supreme Court authority on the constitutional distinction between minor and non-minor offences under Art 38.2. The court held that the characterisation of an offence as minor does not depend solely on the maximum sentence \u2014 it involves consideration of: (1) the moral quality and gravity of the conduct proscribed; (2) the traditional classification of the offence in Irish legal history; (3) the penalties actually imposed in practice (as distinct from the maximum available); and (4) the general nature and seriousness of the offence as perceived by the public. This multi-factor test means that an offence carrying a relatively modest maximum sentence might nonetheless be non-minor if it carries significant moral stigma, or conversely that an offence might be minor despite having some custodial element. Option A incorrectly imposes a rigid 6-month rule. Option C incorrectly excludes all custodial offences from the minor category. Option D invents an arbitrary 1922 dividing line."
+    },
+    {
+      "id": "CRL_M13_L02_Q09",
+      "question": "Linda is charged with an offence that is technically indictable but is listed in the Schedule to the Criminal Justice Act 1951 as capable of summary disposal. The DPP consents to summary trial. Linda wishes to have the case dealt with on indictment by a jury. Can the DPP or the court override Linda's wish and insist on summary trial?",
+      "options": {
+        "A": "Yes \u2014 the DPP's consent to summary disposal is binding on both the court and the accused; once the DPP consents, the accused has no right to insist on indictment",
+        "B": "No \u2014 Linda has a constitutional right under Art 38.5 to trial by jury for a non-minor (indictable) offence; her consent is the third mandatory condition under s.2 CJA 1951; neither the DPP nor the District Court can override her wish to be tried on indictment; if Linda refuses consent, the case must be returned for trial on indictment",
+        "C": "Yes \u2014 once the District Court judge determines the offence is minor, the accused's preference is irrelevant",
+        "D": "Yes \u2014 the right to jury trial under Art 38.5 only applies to offences not listed in the Schedule to the CJA 1951; scheduled offences can be tried summarily without the accused's consent"
+      },
+      "correct_answer": "B",
+      "explanation": "Linda cannot be compelled to accept summary trial. The constitutional right to jury trial under Art 38.5 is a personal right of the accused \u2014 it cannot be removed without the accused's consent. Section 2 CJA 1951 requires all three conditions: DPP consent (given), District Court judge satisfaction (assumed), and accused consent (Linda's). The accused's consent protects the constitutional right to jury trial. If Linda refuses to consent to summary trial, the case must be returned for trial on indictment before a jury in the Circuit Court. Neither the DPP nor the District Court judge can override Linda's election for jury trial. This is a fundamental protection in Irish criminal procedure. Option A incorrectly makes the DPP's consent binding on the accused. Option C incorrectly removes the accused's role once the court characterises the offence as minor. Option D incorrectly removes Art 38.5 protection for scheduled offences."
+    }
+  ]
+}

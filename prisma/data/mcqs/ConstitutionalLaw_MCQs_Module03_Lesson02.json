@@ -1,0 +1,179 @@
+{
+  "subject": "Constitutional Law",
+  "el_script_ref": "ConstitutionalLaw_ElevenLabs_Module03_Lesson02.txt",
+  "module_number": 3,
+  "module_title": "Judicial Review and Constitutional Remedies",
+  "lesson_number": 2,
+  "lesson_title": "Constitutional Remedies",
+  "total_questions": 14,
+  "questions": [
+    {
+      "id": "CON_M03_L02_Q01",
+      "question": "In Meskell v CIÉ [1973] IR 121, Walsh J established that a plaintiff may maintain a direct constitutional action for breach of a constitutional right. What is the most significant implication of this decision?",
+      "options": {
+        "A": "Statutory torts are unnecessary where a constitutional right has been infringed",
+        "B": "A cause of action lies directly for breach of a constitutionally protected right, independently of any pre-existing common law or statutory cause of action",
+        "C": "Constitutional rights may only be vindicated through judicial review proceedings, not through plenary actions",
+        "D": "Only the State and its agencies are subject to direct constitutional actions; private parties are immune"
+      },
+      "correct_answer": "B",
+      "explanation": "Meskell v CIÉ [1973] IR 121 established the 'constitutional tort' — the principle that a plaintiff whose constitutional rights have been violated may bring a direct action for damages in the courts, without needing to establish a pre-existing common law or statutory tort. This was a landmark development making constitutional rights actionable horizontally (against private parties in some cases) and vertically (against the State)."
+    },
+    {
+      "id": "CON_M03_L02_Q02",
+      "question": "The Supreme Court in Shortt v Commissioner of An Garda Síochána [2007] IESC 9 awarded exemplary damages for a serious violation of constitutional rights. Which of the following best describes the basis for exemplary/aggravated damages in constitutional tort cases?",
+      "options": {
+        "A": "They are awarded automatically whenever a constitutional right is breached",
+        "B": "They are available where the infringement was deliberate or reckless, to vindicate the plaintiff and deter future violations",
+        "C": "They are capped by statute at three times the compensatory damages awarded",
+        "D": "They are only available where the plaintiff can show loss of earnings as a result of the violation"
+      },
+      "correct_answer": "B",
+      "explanation": "Exemplary or aggravated damages in constitutional tort are available where the infringement of rights was deliberate, reckless or carried out with conscious disregard for the plaintiff's rights. The rationale is vindicatory — to mark the court's disapproval of the conduct and deter similar violations. They go beyond compensation for actual loss. See also Conway v Irish National Teachers Organisation [1991] 2 IR 305 on exemplary damages in tort."
+    },
+    {
+      "id": "CON_M03_L02_Q03",
+      "question": "A declaration of constitutional invalidity under Irish law operates ex tunc (from the beginning) rather than ex nunc (from the date of the ruling). What is the practical consequence of this principle?",
+      "options": {
+        "A": "The invalid legislation is treated as never having had any legal effect, which may affect completed acts, convictions and contracts made under it",
+        "B": "The court may suspend the declaration for six months to allow the Oireachtas to replace the invalid law",
+        "C": "Only future applications of the legislation are affected; past acts under it remain legally valid",
+        "D": "The ex tunc effect applies only to criminal legislation; civil legislation is invalidated only prospectively"
+      },
+      "correct_answer": "A",
+      "explanation": "Irish constitutional invalidity operates ex tunc: an Act declared unconstitutional is treated as having been void from the date of its enactment. This contrasts with, for example, the German or US approach to prospective overruling. The ex tunc principle has significant implications — convictions under invalid statutes may require reassessment, contracts may be affected, and State acts may be rendered retrospectively unlawful. See Murphy v AG [1982] IR 241 on the retrospective effect of constitutional invalidity."
+    },
+    {
+      "id": "CON_M03_L02_Q04",
+      "question": "An inquiry by the High Court judge concludes that a person was wrongfully convicted under a statute subsequently declared unconstitutional. However, the State argues that the convict had not challenged the statute before the conviction. What doctrine may limit their ability to rely on the unconstitutionality?",
+      "options": {
+        "A": "The doctrine of legitimate expectation prevents retrospective reliance on newly declared unconstitutionality",
+        "B": "The doctrine of 'res judicata' prevents re-opening a final conviction even where the law is later held invalid",
+        "C": "In People (DPP) v O'Shea [1982] IR 384, the Supreme Court held that not every declaration of invalidity automatically reopens concluded proceedings",
+        "D": "Murphy v AG [1982] IR 241 holds that the ex tunc effect is absolute and all past convictions under the statute must be quashed"
+      },
+      "correct_answer": "B",
+      "explanation": "Where a conviction has become final (by exhaustion of appeal or expiry of time), the doctrine of res judicata operates so that a subsequent declaration of constitutional invalidity does not automatically reopen it. The courts apply a pragmatic approach, balancing the ex tunc principle against legal certainty and finality. Murphy v AG [1982] IR 241 (on married persons' tax) addressed the retrospective financial implications of unconstitutionality while acknowledging practical limits on retrospection."
+    },
+    {
+      "id": "CON_M03_L02_Q05",
+      "question": "Where a statutory provision is found unconstitutional, Irish courts have the power to sever the invalid portion from the remainder of the Act. What is the test for severability?",
+      "options": {
+        "A": "The court may sever if there is any part of the Act that could operate independently",
+        "B": "Severance is possible only if the Oireachtas expressly included a severance clause in the Act",
+        "C": "The invalid provision may be severed if what remains is consistent with the Oireachtas’s legislative intent and is capable of standing alone as enacted",
+        "D": "Severance requires that the invalid and valid provisions are found in different sections of the Act"
+      },
+      "correct_answer": "C",
+      "explanation": "The severability test in Irish constitutional law asks whether the remaining provisions, after excision of the invalid part, are capable of independent operation and consistent with the Oireachtas’s legislative intent. If the remainder can stand alone and the Oireachtas would have enacted it without the offending provision, severance is permitted. If the remaining provisions are so intertwined with the invalid part as to be inseparable, the entire Act (or affected portion) may be struck down."
+    },
+    {
+      "id": "CON_M03_L02_Q06",
+      "question": "In McDonnell v Ireland [1998] 1 IR 134, the Supreme Court addressed the question of whether the State has immunity from suit for constitutional torts. What was the outcome?",
+      "options": {
+        "A": "The State has full immunity from constitutional tort actions under the principle of crown immunity which survived the Constitution",
+        "B": "The State enjoys no immunity; it is liable in damages for breaches of constitutional rights committed by its servants",
+        "C": "The State has qualified immunity: it cannot be sued for legislative or policy functions but can be sued for operational failures",
+        "D": "State immunity from constitutional tort was held to be incompatible with Article 40.3 and was abolished prospectively"
+      },
+      "correct_answer": "B",
+      "explanation": "In McDonnell v Ireland [1998] 1 IR 134, the Supreme Court confirmed that the Meskell principle applies against the State: the State (through its agents) can be held liable in damages for breach of constitutional rights. The ancient doctrine of crown immunity does not survive in Irish constitutional law where it would deprive a citizen of the constitutional right to have rights vindicated. The State therefore has no general immunity from suit for constitutional torts."
+    },
+    {
+      "id": "CON_M03_L02_Q07",
+      "question": "A person whose Art. 40.4 rights (personal liberty) have been violated seeks damages. The High Court awards €15,000 compensatory damages and €50,000 exemplary damages. The State appeals the exemplary award. What is the most likely basis for the Supreme Court to uphold the exemplary award?",
+      "options": {
+        "A": "The State must always pay exemplary damages for unlawful detention regardless of the circumstances",
+        "B": "Exemplary damages are appropriate where the State’s agents acted with deliberate or reckless disregard for the plaintiff’s constitutional rights",
+        "C": "The amount is reasonable as a percentage of the State’s annual Garda budget",
+        "D": "Exemplary damages must be awarded in every Article 40.4 case to deter future unlawful detention"
+      },
+      "correct_answer": "B",
+      "explanation": "Exemplary damages in constitutional rights cases (including Art. 40.4 unlawful detention claims) are justified where the infringement was deliberate or reckless and ordinary compensatory damages are insufficient to mark the court's disapproval. The deliberate or reckless nature of the detention is the key factor, not mere negligence. Appellate courts assess whether the award is proportionate to the conduct, not just the loss suffered."
+    },
+    {
+      "id": "CON_M03_L02_Q08",
+      "question": "What is a 'suspended declaration of incompatibility' in Irish constitutional law and in which case did the Irish Supreme Court deploy this remedy?",
+      "options": {
+        "A": "A declaration that a law is incompatible with the ECHR but allowing Parliament six months to remedy the defect, as in O’Brien v Ireland [2017]",
+        "B": "A declaration of constitutional invalidity whose effect is suspended to allow the Oireachtas time to enact replacement legislation, deployed in Heneghan v Minister for Housing [2023] IESC 18",
+        "C": "A declaration that the Constitution is itself incompatible with EU law obligations, giving the Oireachtas one year to hold a referendum",
+        "D": "A declaration available under the ECHR Act 2003 s.5 that primary legislation is incompatible with a Convention right"
+      },
+      "correct_answer": "B",
+      "explanation": "In Heneghan v Minister for Housing [2023] IESC 18, the Supreme Court found the Seanad panel election system unconstitutional (university seats excluded graduates of newer universities) but suspended the declaration of invalidity to allow the Oireachtas time to remedy the defect. This is an innovative remedy — the declaration takes effect in the future rather than immediately, preserving legal certainty during the reform period. The ECHR Act 2003 s.5 declaration of incompatibility is a separate, distinct remedy."
+    },
+    {
+      "id": "CON_M03_L02_Q09",
+      "question": "A statutory instrument is found to breach the plaintiff's constitutional rights. The plaintiff seeks (i) certiorari to quash the instrument and (ii) damages for losses suffered due to the instrument's operation. Can both remedies be granted in the same proceedings?",
+      "options": {
+        "A": "No — certiorari is a public law remedy only available in O.84 proceedings; damages must be sought in separate plenary proceedings",
+        "B": "Yes — under O.84, rule 24 RSC, the court may award damages in judicial review proceedings where they could have been awarded in plenary proceedings on the same facts",
+        "C": "No — the constitutional tort remedy of damages is available only in plenary proceedings in the High Court sitting as a full court",
+        "D": "Only if the plaintiff obtains leave to add a damages claim from the Supreme Court on a leapfrog appeal"
+      },
+      "correct_answer": "B",
+      "explanation": "Order 84, rule 24 RSC provides that where an applicant in judicial review proceedings is entitled to damages on the facts, the court may grant such damages in the same proceedings — it is not necessary to bring a separate plenary action. This avoids duplicative proceedings. The court may award damages in O.84 proceedings if they would have been available in plenary proceedings on the same underlying facts."
+    },
+    {
+      "id": "CON_M03_L02_Q10",
+      "question": "In the context of constitutional remedies, what is the distinction between a 'declaration of invalidity' and a 'declaration of incompatibility' under the ECHR Act 2003?",
+      "options": {
+        "A": "Both are identical remedies but one applies to Acts of the Oireachtas and the other to statutory instruments",
+        "B": "A declaration of invalidity under the Constitution renders the law void from enactment; a declaration of incompatibility under the ECHR Act 2003 does not affect the validity or operation of the legislation but invites Oireachtas action",
+        "C": "A declaration of incompatibility under the ECHR Act 2003 renders the legislation unconstitutional and takes effect as a declaration of invalidity",
+        "D": "Both remedies are available in the same proceedings and both result in the impugned legislation being struck down"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.5 of the ECHR Act 2003, the High Court or Supreme Court may make a declaration that a statutory provision is incompatible with the ECHR. Crucially, this declaration does not affect the validity or enforceability of the legislation — it remains in force. It is merely a signal to the Oireachtas to consider reform. This contrasts with a declaration of constitutional invalidity which renders the Act void from enactment (ex tunc). The s.5 declaration is a much weaker remedy."
+    },
+    {
+      "id": "CON_M03_L02_Q11",
+      "question": "The Supreme Court in Murphy v AG [1982] IR 241 held that married couples were entitled to repayment of tax paid under the unconstitutional provisions of the Income Tax Act 1967. However, the court limited the scope of recovery. On what basis?",
+      "options": {
+        "A": "Recovery was limited to the year preceding the declaration of unconstitutionality",
+        "B": "The ex tunc principle was applied in full without limitation; all tax ever paid under the provision was recoverable",
+        "C": "Recovery was limited to applicants who had contested their tax assessment before the declaration; those who had paid without challenge could not recover",
+        "D": "The court limited recovery to persons who had issued proceedings before the date of the declaration, acknowledging practical constraints on retrospective relief"
+      },
+      "correct_answer": "D",
+      "explanation": "Murphy v AG [1982] IR 241 is the leading case on the retrospective effect of constitutional invalidity and its practical limits. While affirming the ex tunc principle, the Supreme Court recognised that full retrospective application would be unworkable (huge number of claimants, massive State liability) and limited relief to those who had already commenced proceedings. This pragmatic approach limits the theoretical absoluteness of ex tunc invalidity."
+    },
+    {
+      "id": "CON_M03_L02_Q12",
+      "question": "A plaintiff claims that the State failed to vindicate his constitutional right to bodily integrity by failing to pass legislation requiring seatbelts in all new vehicles. Is there a cause of action against the State for failure to legislate?",
+      "options": {
+        "A": "Yes — Article 40.3.1° imposes a positive duty on the State to legislate for all enumerated rights",
+        "B": "No — the courts will not compel the Oireachtas to enact legislation; such claims are non-justiciable as they engage the separation of powers",
+        "C": "Yes — Meskell v CIÉ established that constitutional omissions are actionable in the same way as positive violations",
+        "D": "Only if the plaintiff can demonstrate that the absence of legislation is irrational in the Keegan sense"
+      },
+      "correct_answer": "B",
+      "explanation": "Irish courts will not issue orders compelling the Oireachtas to legislate, even where rights are engaged. The separation of powers prevents judicial direction of the legislative branch. While Art. 40.3.1° imposes a duty on the State to respect and vindicate rights, this is primarily interpreted as a duty not to violate rights rather than a positive duty to legislate in any specific way. Courts lack the constitutional competence to prescribe legislative content to the Oireachtas."
+    },
+    {
+      "id": "CON_M03_L02_Q13",
+      "question": "Where a court finds that an unconstitutional law has been applied and that the plaintiff suffered harm, but the court is satisfied that full retrospective relief would cause 'disproportionate hardship to the State', which remedy is most likely?",
+      "options": {
+        "A": "A declaration without damages, leaving it to the plaintiff to seek redress from the Oireachtas",
+        "B": "A suspended declaration with a direction that the Oireachtas remedy the situation within a fixed period",
+        "C": "A prospective declaration of invalidity with no retrospective relief, limiting the ruling to future conduct only",
+        "D": "A declaratory order plus damages limited to the plaintiff's specific loss, without general retrospective relief to the wider class"
+      },
+      "correct_answer": "D",
+      "explanation": "Consistent with Murphy v AG [1982], Irish courts may grant relief in the specific case before them (declaration plus damages/refund) without general retrospective relief to the wider class. This tailoring of remedy balances the plaintiff's constitutional right to vindication with the practical reality of State finances and legal certainty. The court retains a discretion as to the form and extent of relief in constitutional cases."
+    },
+    {
+      "id": "CON_M03_L02_Q14",
+      "question": "Which of the following constitutional remedies is specifically designed to secure the release of a person unlawfully detained and is directly provided for in the Constitution?",
+      "options": {
+        "A": "Certiorari",
+        "B": "Mandamus",
+        "C": "An inquiry under Article 40.4.2° (habeas corpus)",
+        "D": "A declaration of incompatibility under the ECHR Act 2003"
+      },
+      "correct_answer": "C",
+      "explanation": "Article 40.4.2° of the Constitution provides the mechanism for challenging the lawfulness of detention: any citizen (or any person on their behalf) may apply to the High Court for an inquiry into the legality of the detention. If the court is satisfied that the detention is unlawful, the person must be released. This constitutional habeas corpus procedure is entrenched in the Constitution itself and cannot be suspended except under Art. 28.3.3° emergency conditions."
+    }
+  ]
+}

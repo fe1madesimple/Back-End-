@@ -1,0 +1,383 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module06_Lesson01.txt",
+  "module_number": 6,
+  "module_title": "Special Categories: Pure Economic Loss, Psychiatric Damage, and Res Ipsa Loquitur",
+  "lesson_number": 1,
+  "lesson_title": "Pure Economic Loss, Negligent Misstatement, Psychiatric Damage, and Res Ipsa Loquitur",
+  "total_questions": 31,
+  "questions": [
+    {
+      "id": "TL_M06_L01_Q01",
+      "question": "What is the key distinction between consequential economic loss and pure economic loss?",
+      "options": {
+        "A": "Consequential economic loss flows from physical harm to person or property; pure economic loss arises without any accompanying physical injury or property damage",
+        "B": "Consequential economic loss is always recoverable in tort; pure economic loss is never recoverable",
+        "C": "Pure economic loss arises from careless deeds; consequential loss arises from careless words",
+        "D": "Consequential economic loss is unrecoverable in negligence; pure economic loss is recoverable through contract"
+      },
+      "correct_answer": "A",
+      "explanation": "Consequential economic loss (financial losses flowing from physical harm — e.g., medical bills, lost wages) is recoverable in negligence. Pure economic loss is financial loss unaccompanied by any physical harm to person or property. The traditional common law rule is that pure economic loss is not recoverable, subject to the Hedley Byrne exception."
+    },
+    {
+      "id": "TL_M06_L01_Q02",
+      "question": "In Spartan Steel and Alloys Ltd v Martin and Co (Contractors) Ltd [1973], the defendants negligently cut a power cable serving the plaintiff's factory. Which category of loss was NOT recoverable?",
+      "options": {
+        "A": "Physical damage to the melt in the furnace at the time of the power cut",
+        "B": "Lost profits from subsequent melts that could not be processed while the power was off",
+        "C": "Profit lost on the specific melt that was physically damaged at the time of the cut",
+        "D": "Damage to the furnace itself caused by the uncontrolled power failure"
+      },
+      "correct_answer": "B",
+      "explanation": "In Spartan Steel, three types of loss arose: (1) physical damage to the melt in the furnace — recoverable property damage; (2) lost profit on that damaged melt — recoverable consequential economic loss flowing from physical damage; (3) lost profits from subsequent melts that could not be processed — pure economic loss with no accompanying physical damage — NOT recoverable."
+    },
+    {
+      "id": "TL_M06_L01_Q03",
+      "question": "What are the three main policy concerns justifying the general rule that pure economic loss is not recoverable in negligence?",
+      "options": {
+        "A": "Risk of double recovery; disproportionate fault; and preference for contract law",
+        "B": "Difficulty of proof; remoteness concerns; and lack of proximity between the parties",
+        "C": "Indeterminate liability to an unlimited class; crushing liability disproportionate to fault; and the view that pure economic interests are better protected by contract",
+        "D": "Floodgates concern; double compensation risk; and protection of defendants' economic freedom"
+      },
+      "correct_answer": "C",
+      "explanation": "The courts identified three concerns: (1) indeterminate liability — one careless statement could expose a defendant to liability to an unlimited class of relying plaintiffs; (2) crushing liability disproportionate to any fault; and (3) the view that pure economic interests are better protected by contract rather than tort."
+    },
+    {
+      "id": "TL_M06_L01_Q04",
+      "question": "Which House of Lords case established that negligent misstatement causing pure economic loss can give rise to liability in negligence?",
+      "options": {
+        "A": "Spartan Steel and Alloys Ltd v Martin and Co [1973]",
+        "B": "Glencar Exploration plc v Mayo County Council [2002]",
+        "C": "Caparo Industries plc v Dickman [1990]",
+        "D": "Hedley Byrne and Co Ltd v Heller and Partners Ltd [1964]"
+      },
+      "correct_answer": "D",
+      "explanation": "Hedley Byrne and Co Ltd v Heller and Partners Ltd [1964] transformed the law by establishing that, in principle, liability can arise for pure economic loss caused by a negligent misstatement. The key concept was a 'special relationship' between the parties. On the facts, a disclaimer protected the defendant, but the principle was firmly established."
+    },
+    {
+      "id": "TL_M06_L01_Q05",
+      "question": "In Hedley Byrne v Heller, why did the House of Lords ultimately find no liability on the facts despite establishing the principle?",
+      "options": {
+        "A": "Heller had added a disclaimer of responsibility when giving the credit reference",
+        "B": "The plaintiff had not actually relied on the reference before extending credit to the client",
+        "C": "The loss suffered was consequential economic loss rather than pure economic loss",
+        "D": "No special relationship existed between Hedley Byrne and Heller's bank"
+      },
+      "correct_answer": "A",
+      "explanation": "Although the House of Lords established in principle that negligent misstatement causing pure economic loss can give rise to liability, they found no liability on the facts because Heller had added a disclaimer of responsibility to the credit reference. The disclaimer was effective and protected the defendant."
+    },
+    {
+      "id": "TL_M06_L01_Q06",
+      "question": "What is the foundational concept that enables liability for negligent misstatement under Hedley Byrne?",
+      "options": {
+        "A": "Voluntary assumption of risk by the plaintiff relying on the statement",
+        "B": "A special relationship between the parties, sometimes called a Hedley Byrne relationship",
+        "C": "The reasonable foreseeability of the type of economic loss suffered",
+        "D": "A pre-existing contractual relationship between the defendant and the plaintiff"
+      },
+      "correct_answer": "B",
+      "explanation": "The foundational concept in Hedley Byrne is the 'special relationship' between the parties — sometimes called a Hedley Byrne relationship. Where such a relationship exists, liability for negligent misstatement causing pure economic loss may arise. The special relationship is built on expertise, assumption of responsibility, and reasonable reliance."
+    },
+    {
+      "id": "TL_M06_L01_Q07",
+      "question": "Which of the following is NOT one of the five elements required to establish a Hedley Byrne special relationship?",
+      "options": {
+        "A": "The defendant must have special skill or expertise in the relevant area",
+        "B": "The defendant must have voluntarily assumed responsibility for the accuracy of the information",
+        "C": "The defendant must have received payment or consideration for the advice given",
+        "D": "The plaintiff must have reasonably relied on the advice, and it must have been reasonable in the circumstances to do so"
+      },
+      "correct_answer": "C",
+      "explanation": "Payment or consideration is not one of the five elements. The five elements are: (1) special skill or expertise in the defendant; (2) voluntary assumption of responsibility; (3) reasonable reliance by the plaintiff; (4) the defendant knew or ought to have known the plaintiff was relying; and (5) it was reasonable in the circumstances for the plaintiff to rely."
+    },
+    {
+      "id": "TL_M06_L01_Q08",
+      "question": "What additional refinement did Caparo Industries plc v Dickman [1990] add to the Hedley Byrne analysis?",
+      "options": {
+        "A": "It abolished the special relationship requirement and replaced it with a general foreseeability test",
+        "B": "It extended Hedley Byrne liability to careless deeds as well as careless words",
+        "C": "It removed the need for a disclaimer to protect defendants in financial advice cases",
+        "D": "The defendant must have known that the advice was required for a specific transaction and that the identity of the plaintiff or their class was known or contemplated"
+      },
+      "correct_answer": "D",
+      "explanation": "Caparo Industries plc v Dickman [1990] added the requirement that the defendant must have known that their advice or information was required for a specific transaction or specific purpose, and that the identity of the plaintiff — or at least their class — was known or contemplated. This addresses the fear of indeterminate liability by narrowing the scope of the duty."
+    },
+    {
+      "id": "TL_M06_L01_Q09",
+      "question": "Which Irish Supreme Court decision confirmed that pure economic loss is recoverable in Ireland where the Hedley Byrne special relationship criteria are satisfied?",
+      "options": {
+        "A": "Glencar Exploration plc v Mayo County Council [2002]",
+        "B": "Wildgust v Bank of Ireland [2006]",
+        "C": "Kelly v Hennessy [1995]",
+        "D": "Hanrahan v Merck Sharp and Dohme (Ireland) Ltd [1988]"
+      },
+      "correct_answer": "A",
+      "explanation": "Glencar Exploration plc v Mayo County Council [2002] is the leading Irish authority confirming that pure economic loss is recoverable where the special relationship criteria are satisfied. Keane CJ applied the three-stage framework (proximity, foreseeability, fairness) while emphasising individual assessment rather than mechanical formula."
+    },
+    {
+      "id": "TL_M06_L01_Q10",
+      "question": "Hedley Byrne liability for negligent misstatement is specifically limited to:",
+      "options": {
+        "A": "Financial institutions giving credit references to business clients",
+        "B": "Careless words — statements and advice — not careless deeds or negligent acts",
+        "C": "Professional advisers in regulated occupations only",
+        "D": "Situations where a contractual relationship also exists between the parties"
+      },
+      "correct_answer": "B",
+      "explanation": "Hedley Byrne is specifically limited to careless words — negligent statements and advice — not careless deeds. Economic loss caused by negligent acts (as opposed to statements) is almost never recoverable. This is an important limitation: the doctrine applies to words, not actions."
+    },
+    {
+      "id": "TL_M06_L01_Q11",
+      "question": "A financial adviser gives negligent investment advice to a client who relies on it and loses a significant sum. No physical damage occurs. Which principle enables the client to potentially recover?",
+      "options": {
+        "A": "Re Polemis — the financial loss was a direct consequence of the advice",
+        "B": "The Wagon Mound reasonable foreseeability test — financial loss was foreseeable",
+        "C": "Hedley Byrne — there is a special relationship based on expertise, voluntary assumption of responsibility, and reasonable reliance; this is negligent misstatement causing pure economic loss",
+        "D": "Spartan Steel — consequential economic loss is always recoverable from negligent advisers"
+      },
+      "correct_answer": "C",
+      "explanation": "This scenario involves pure economic loss (no physical harm) caused by a negligent statement (advice). Recovery depends on establishing a Hedley Byrne special relationship — expertise, voluntary assumption of responsibility, reasonable reliance, the defendant's knowledge of reliance, and the reasonableness of that reliance. Spartan Steel concerns negligent acts; Re Polemis and Wagon Mound concern the type and extent of harm, not the category of loss."
+    },
+    {
+      "id": "TL_M06_L01_Q12",
+      "question": "In the law of negligence, the term 'nervous shock' is now considered:",
+      "options": {
+        "A": "The correct technical term for all forms of psychiatric injury in Irish tort law",
+        "B": "Applicable only to physical manifestations of psychological trauma",
+        "C": "Applicable to secondary victims only, not primary victims",
+        "D": "Archaic — the preferred modern term is 'psychiatric damage' or 'psychiatric injury'"
+      },
+      "correct_answer": "D",
+      "explanation": "'Nervous shock' was the terminology used in older cases but is now considered archaic. The preferred modern terms are 'psychiatric damage' or 'psychiatric injury'. These terms are used in contemporary Irish case law and academic writing, and should be used in FE-1 answers."
+    },
+    {
+      "id": "TL_M06_L01_Q13",
+      "question": "What is a 'primary victim' in the context of a claim for psychiatric injury?",
+      "options": {
+        "A": "A person who was directly involved in the incident and was typically at physical risk of injury themselves",
+        "B": "A person who witnessed the incident but was not themselves at physical risk",
+        "C": "A person who suffered the most severe psychiatric injury from an incident",
+        "D": "A person who was the first on the scene and witnessed the immediate aftermath"
+      },
+      "correct_answer": "A",
+      "explanation": "A primary victim is a person who was directly involved in the incident — typically, someone who was themselves at physical risk of injury. If a defendant negligently causes a car accident and the plaintiff narrowly escapes physical injury but develops PTSD, the plaintiff is a primary victim. Physical injury to a primary victim was reasonably foreseeable."
+    },
+    {
+      "id": "TL_M06_L01_Q14",
+      "question": "What is the key rule for a primary victim's claim for psychiatric injury as established in Page v Smith [1996]?",
+      "options": {
+        "A": "The primary victim must satisfy all five criteria from Kelly v Hennessy",
+        "B": "Once physical injury was reasonably foreseeable to the primary victim, the defendant is also liable for any psychiatric injury without additional control mechanisms",
+        "C": "The primary victim must prove that psychiatric injury itself was reasonably foreseeable",
+        "D": "The primary victim must show sudden shock rather than gradual realisation of harm"
+      },
+      "correct_answer": "B",
+      "explanation": "Page v Smith [1996] established that once physical injury is reasonably foreseeable to a primary victim, the defendant is also liable for any psychiatric injury suffered — without any additional control mechanisms. Lord Lloyd held that the thin skull rule applies: the full extent of psychiatric injury is compensable. The five Kelly criteria apply only to secondary victims."
+    },
+    {
+      "id": "TL_M06_L01_Q15",
+      "question": "Which is the leading Irish Supreme Court authority governing secondary victim claims for psychiatric injury?",
+      "options": {
+        "A": "Page v Smith [1996]",
+        "B": "Alcock v Chief Constable of South Yorkshire Police [1992]",
+        "C": "Kelly v Hennessy [1995]",
+        "D": "Mullaly v Bus Éireann [1992]"
+      },
+      "correct_answer": "C",
+      "explanation": "Kelly v Hennessy [1995] is the leading Irish Supreme Court authority for secondary victim psychiatric injury claims. Finlay CJ laid down five criteria that must be satisfied for a secondary victim to recover. Alcock is the English equivalent following Hillsborough, but Kelly is the Irish governing authority. Mullaly v Bus Éireann [1992] anticipated Kelly's approach at High Court level."
+    },
+    {
+      "id": "TL_M06_L01_Q16",
+      "question": "In Kelly v Hennessy [1995], what was the nature of the plaintiff's claim?",
+      "options": {
+        "A": "She witnessed a road accident directly and suffered immediate psychiatric shock at the scene",
+        "B": "She heard about the accident over the phone and developed depression solely from receiving the news",
+        "C": "She was physically injured in the accident but primarily suffered psychiatric rather than physical harm",
+        "D": "She suffered severe reactive depression upon learning of and witnessing the aftermath of her husband's and daughters' serious injuries in an accident she did not directly witness"
+      },
+      "correct_answer": "D",
+      "explanation": "In Kelly v Hennessy, the plaintiff's husband and daughters were seriously injured in a road accident. The plaintiff was not present at the accident scene. She suffered severe reactive depression upon learning of and witnessing the aftermath of her family's injuries. The Irish Supreme Court held she could recover as a secondary victim, applying the five criteria."
+    },
+    {
+      "id": "TL_M06_L01_Q17",
+      "question": "Under the first Kelly criterion, what type of harm must the plaintiff establish to succeed as a secondary victim?",
+      "options": {
+        "A": "A recognisable psychiatric illness — not mere grief, distress, or ordinary emotional reaction, however understandable",
+        "B": "Any form of psychological distress caused by witnessing the accident or its aftermath",
+        "C": "A medically diagnosed condition that requires ongoing professional treatment of a specified duration",
+        "D": "A psychiatric condition arising within 24 hours of witnessing the relevant event"
+      },
+      "correct_answer": "A",
+      "explanation": "The first Kelly criterion requires a recognisable psychiatric illness — not mere grief, distress, or ordinary human emotion, however understandable and however genuine. The injury must be a diagnosed medical condition. This criterion reflects the court's concern about indeterminate liability and ensures only genuine psychiatric harm is compensated."
+    },
+    {
+      "id": "TL_M06_L01_Q18",
+      "question": "The third Kelly criterion requires that the plaintiff's psychiatric illness was caused by:",
+      "options": {
+        "A": "A close family or personal relationship with the primary victim",
+        "B": "Sudden shock — a sudden, traumatic, sensory experience rather than gradual realisation of what has happened",
+        "C": "Witnessing the accident directly rather than its immediate aftermath",
+        "D": "A reasonably foreseeable risk of physical danger to the plaintiff themselves"
+      },
+      "correct_answer": "B",
+      "explanation": "The third Kelly criterion (the sudden shock mechanism requirement) provides that the psychiatric illness must have been caused by sudden shock — by a sudden, traumatic, sensory experience — rather than by a gradual realisation of what has happened. This distinguishes recoverable shock-induced psychiatric injury from non-compensable grief developing over time."
+    },
+    {
+      "id": "TL_M06_L01_Q19",
+      "question": "The fourth Kelly criterion requires that:",
+      "options": {
+        "A": "The defendant had actual foresight of the precise psychiatric condition suffered by the plaintiff",
+        "B": "The plaintiff was physically present at the scene of the accident at the time it occurred",
+        "C": "The defendant could reasonably foresee that a person of ordinary fortitude in the plaintiff's position would suffer psychiatric illness as a result of the negligence",
+        "D": "The plaintiff had a close family tie with the primary victim and was in close spatial proximity"
+      },
+      "correct_answer": "C",
+      "explanation": "The fourth Kelly criterion applies the objective standard: the defendant must have been able to reasonably foresee that a person of ordinary fortitude in the plaintiff's position would suffer psychiatric illness as a result of the negligence. This is objective, not subjective — the test is based on a person of ordinary fortitude, not the particular plaintiff."
+    },
+    {
+      "id": "TL_M06_L01_Q20",
+      "question": "The fifth Kelly criterion concerns proximity of relationship between the plaintiff and the primary victim. This encompasses:",
+      "options": {
+        "A": "Blood relationships only — parents, children, and siblings",
+        "B": "Spousal and civil partnership relationships only",
+        "C": "Closeness of family tie alone — spatial and temporal proximity are irrelevant for secondary victims",
+        "D": "Closeness of the personal or family tie, spatial proximity to the accident or its immediate aftermath, and temporal proximity to the shocking event"
+      },
+      "correct_answer": "D",
+      "explanation": "The fifth Kelly criterion is proximity of relationship in a broad sense, encompassing: (1) closeness of the family or personal tie between plaintiff and primary victim; (2) spatial proximity — whether the plaintiff was near the accident or its immediate aftermath; and (3) temporal proximity — how close in time the plaintiff experienced the shocking event."
+    },
+    {
+      "id": "TL_M06_L01_Q21",
+      "question": "Which Irish High Court decision from 1992 applied an approach to psychiatric injury consistent with what was later formalised in Kelly v Hennessy?",
+      "options": {
+        "A": "Mullaly v Bus Éireann [1992]",
+        "B": "Glencar Exploration plc v Mayo County Council [2002]",
+        "C": "Lindsay v Mid-Western Health Board [1993]",
+        "D": "Counihan v Bus Átha Cliath [2004]"
+      },
+      "correct_answer": "A",
+      "explanation": "Mullaly v Bus Éireann [1992] was an Irish High Court decision in which the plaintiff suffered psychiatric injury upon witnessing her husband being killed in a bus accident. Denham J applied an approach consistent with what was later formalised in Kelly v Hennessy [1995]. It is an important precursor to the Kelly criteria in Irish law."
+    },
+    {
+      "id": "TL_M06_L01_Q22",
+      "question": "A person hears about a serious accident in which their close friend is injured. They become distressed and suffer ongoing grief. Are they entitled to recover for psychiatric injury as a secondary victim?",
+      "options": {
+        "A": "Yes — close friendship satisfies the proximity requirement under the fifth Kelly criterion",
+        "B": "No — mere grief or distress is not a recognisable psychiatric illness; the first Kelly criterion is not satisfied without a diagnosed medical condition",
+        "C": "Yes — provided they can satisfy all five Kelly criteria, grief from close friendship is compensable",
+        "D": "No — only blood family relationships qualify under Kelly v Hennessy"
+      },
+      "correct_answer": "B",
+      "explanation": "The first Kelly criterion is not satisfied. However genuine and distressing, ordinary grief or emotional upset is not a recognisable psychiatric illness. Recovery requires a diagnosed psychiatric condition, not mere grief. Even if all other criteria were satisfied, the absence of a diagnosable psychiatric illness defeats the claim at the first hurdle."
+    },
+    {
+      "id": "TL_M06_L01_Q23",
+      "question": "Res ipsa loquitur is best described as:",
+      "options": {
+        "A": "A separate tort available where physical injury cannot otherwise be proven",
+        "B": "A presumption of negligence that shifts the full legal burden of proof to the defendant",
+        "C": "An evidential doctrine that assists a plaintiff in establishing negligence where direct evidence of how an accident occurred is unavailable but the circumstances speak of negligence",
+        "D": "A Latin maxim meaning 'the defendant must explain their conduct'"
+      },
+      "correct_answer": "C",
+      "explanation": "Res ipsa loquitur (meaning 'the thing speaks for itself') is not a separate tort or independent cause of action — it is an evidential doctrine. It assists a plaintiff in circumstances where direct evidence of how the accident happened is unavailable, but the accident itself and the surrounding circumstances speak so clearly of negligence that proof of specific acts is unnecessary."
+    },
+    {
+      "id": "TL_M06_L01_Q24",
+      "question": "In which case did Baron Pollock classically state the doctrine of res ipsa loquitur?",
+      "options": {
+        "A": "Hanrahan v Merck Sharp and Dohme (Ireland) Ltd [1988]",
+        "B": "Lindsay v Mid-Western Health Board [1993]",
+        "C": "Wagon Mound No 1 [1961]",
+        "D": "Byrne v Boadle [1863]"
+      },
+      "correct_answer": "D",
+      "explanation": "Baron Pollock classically stated the doctrine of res ipsa loquitur in Byrne v Boadle [1863]. A barrel of flour fell from the defendant's premises and struck the plaintiff in the street. The plaintiff had no evidence of specific negligence. Baron Pollock held that the mere fact of a barrel falling onto a pedestrian was sufficient evidence of negligence to go to the jury."
+    },
+    {
+      "id": "TL_M06_L01_Q25",
+      "question": "What were the facts of Byrne v Boadle [1863]?",
+      "options": {
+        "A": "A barrel of flour fell from an upper window of the defendant's premises and struck the plaintiff in the street below; the plaintiff had no evidence of specific negligent conduct",
+        "B": "Cattle belonging to the plaintiff were injured by emissions from the defendant's pharmaceutical factory",
+        "C": "A patient found a surgical instrument remaining inside their body after an operation performed by the defendant",
+        "D": "The plaintiff was struck by a vehicle that the defendant had negligently left unattended on a slope"
+      },
+      "correct_answer": "A",
+      "explanation": "In Byrne v Boadle [1863], a barrel of flour fell from an upper window of the defendant's premises and struck the plaintiff on the head in the street below. The plaintiff had no idea how the barrel came to fall and could produce no evidence of specific negligent conduct. Baron Pollock held the doctrine applied — barrels do not fall from windows without negligence."
+    },
+    {
+      "id": "TL_M06_L01_Q26",
+      "question": "The first condition for res ipsa loquitur to apply requires that:",
+      "options": {
+        "A": "The accident is of a kind that would not ordinarily happen without negligence",
+        "B": "The thing causing the injury was under the management or control of the defendant or someone for whom the defendant is responsible",
+        "C": "The cause of the accident must be entirely unknown to both parties",
+        "D": "The plaintiff must have suffered physical rather than psychiatric or economic harm"
+      },
+      "correct_answer": "B",
+      "explanation": "The first Byrne v Boadle condition requires that the thing that caused the injury was under the management or control of the defendant — or someone for whom the defendant is responsible. If the instrumentality was in someone else's control, the doctrine will not assist the plaintiff in establishing a prima facie inference of negligence against this defendant."
+    },
+    {
+      "id": "TL_M06_L01_Q27",
+      "question": "Which of the following best illustrates the second condition for res ipsa loquitur — that the accident is of a kind that would not ordinarily happen without negligence?",
+      "options": {
+        "A": "A car skids on black ice and injures a pedestrian",
+        "B": "A factory worker is injured operating complex machinery under supervision",
+        "C": "A surgical instrument is found inside a patient's body after an operation",
+        "D": "A pedestrian is struck by a vehicle on a public road in low visibility"
+      },
+      "correct_answer": "C",
+      "explanation": "A surgical instrument remaining inside a patient's body after an operation is a classic illustration of the second condition — this type of accident does not ordinarily happen without negligence. In contrast, skidding on ice or a vehicle collision can occur without negligence. The second condition requires that the occurrence of the accident type, standing alone, raises an inference of carelessness."
+    },
+    {
+      "id": "TL_M06_L01_Q28",
+      "question": "What did Henchy J hold in Hanrahan v Merck Sharp and Dohme (Ireland) Ltd [1988] regarding the effect of res ipsa loquitur?",
+      "options": {
+        "A": "The doctrine shifts the full legal burden of proof to the defendant to disprove negligence on the balance of probabilities",
+        "B": "The doctrine creates an irrebuttable presumption of negligence once the three conditions are met",
+        "C": "The doctrine has no place in Irish tort law and should not be applied",
+        "D": "The doctrine shifts only an evidential burden — raising a prima facie inference of negligence — while the legal burden of proving negligence on the balance of probabilities always remains with the plaintiff"
+      },
+      "correct_answer": "D",
+      "explanation": "Henchy J in Hanrahan v Merck Sharp and Dohme (Ireland) Ltd [1988] held that res ipsa loquitur shifts only an evidential burden — not the legal burden of proof. The legal burden of proving negligence on the balance of probabilities always remains with the plaintiff. The doctrine raises a prima facie inference of negligence from the proved facts, which the defendant may rebut."
+    },
+    {
+      "id": "TL_M06_L01_Q29",
+      "question": "In Hanrahan v Merck Sharp and Dohme (Ireland) Ltd [1988], what was the subject matter of the plaintiffs' claim?",
+      "options": {
+        "A": "Farmers' cattle suffered illness allegedly caused by emissions from the defendant's pharmaceutical factory",
+        "B": "A barrel of flour fell from the defendant's premises and struck a pedestrian in the street",
+        "C": "A patient suffered post-operative complications from a retained surgical instrument",
+        "D": "A plaintiff was injured when a lift in the defendant's building failed unexpectedly"
+      },
+      "correct_answer": "A",
+      "explanation": "In Hanrahan v Merck Sharp and Dohme (Ireland) Ltd [1988], the plaintiffs were farmers whose cattle suffered illness allegedly caused by emissions from the defendant's pharmaceutical factory. The plaintiffs sought to invoke res ipsa loquitur to shift the burden of proof. Henchy J in the Irish Supreme Court clarified that the doctrine shifts only an evidential burden."
+    },
+    {
+      "id": "TL_M06_L01_Q30",
+      "question": "Which Irish Supreme Court case confirmed that res ipsa loquitur has only an evidential effect and applied the Hanrahan approach?",
+      "options": {
+        "A": "Hanrahan v Merck Sharp and Dohme (Ireland) Ltd [1988]",
+        "B": "Lindsay v Mid-Western Health Board [1993]",
+        "C": "Kelly v Hennessy [1995]",
+        "D": "Glencar Exploration plc v Mayo County Council [2002]"
+      },
+      "correct_answer": "B",
+      "explanation": "Lindsay v Mid-Western Health Board [1993] is the Irish Supreme Court decision that confirmed res ipsa loquitur has only an evidential effect and applied the Hanrahan approach. The legal burden of proof remains with the plaintiff throughout. Hanrahan established the principle; Lindsay confirmed and applied it."
+    },
+    {
+      "id": "TL_M06_L01_Q31",
+      "question": "In an FE-1 problem, a plaintiff cannot explain how an accident happened but the circumstances strongly suggest negligence. Which is the correct approach?",
+      "options": {
+        "A": "Apply the directness test from Re Polemis — direct harm implies negligence",
+        "B": "Apply the Wagon Mound test — if the type of harm was foreseeable, negligence is inferred",
+        "C": "Apply the three Byrne v Boadle conditions for res ipsa loquitur; note from Hanrahan that only an evidential burden shifts; and acknowledge the defendant can rebut by offering a plausible explanation consistent with reasonable care",
+        "D": "Apply Kelly v Hennessy — if the plaintiff cannot identify the cause, the court will apply secondary victim rules"
+      },
+      "correct_answer": "C",
+      "explanation": "The correct FE-1 approach when the cause of an accident is unknown: (1) identify whether the three Byrne v Boadle conditions are met — control of the instrumentality, type of accident suggesting negligence, and unknown cause; (2) apply Hanrahan — only an evidential burden shifts, legal burden remains with plaintiff; (3) note the defendant can rebut by offering a plausible explanation consistent with the absence of negligence."
+    }
+  ]
+}

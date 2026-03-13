@@ -1,0 +1,275 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "EquityLaw_ElevenLabs_Module03_Lesson02.txt",
+  "module_number": 3,
+  "module_title": "CONSTITUTION OF TRUSTS",
+  "lesson_number": 2,
+  "lesson_title": "STRONG v BIRD AND DONATIO MORTIS CAUSA",
+  "total_questions": 22,
+  "questions": [
+    {
+      "id": "EQL_M03_L02_Q01",
+      "question": "The rule in Strong v Bird [1874] operates to perfect an imperfect gift when:",
+      "options": {
+        "A": "The donor makes a written declaration of their intention to give within one year of death",
+        "B": "The intended donee is appointed as executor of the donor's will, thereby obtaining legal title by operation of law",
+        "C": "The donor delivers the property to the donee accompanied by a signed letter of intent",
+        "D": "The donee provides consideration to the donor's estate after the donor's death"
+      },
+      "correct_answer": "B",
+      "explanation": "The rule in Strong v Bird [1874] operates where the intended donee of an imperfect gift is appointed as the executor of the donor's will. When the donee obtains a grant of probate, legal title to the donor's assets vests in the executor by operation of law. The imperfect gift is thereby perfected because the donee has acquired legal title."
+    },
+    {
+      "id": "EQL_M03_L02_Q02",
+      "question": "For the rule in Strong v Bird to apply, which THREE requirements must be met?",
+      "options": {
+        "A": "Written declaration of gift, delivery of subject matter, and acceptance by the donee",
+        "B": "Continuing intention to give until death, imperfect gift during lifetime, and donee becoming executor or administrator",
+        "C": "Contemplation of death, conditional delivery, and dominion over the subject matter",
+        "D": "Consideration, written agreement, and registration of the transfer"
+      },
+      "correct_answer": "B",
+      "explanation": "The three requirements for the rule in Strong v Bird are: (1) the donor must have had a continuing intention to make the gift right up until their death — the intention must not have been abandoned; (2) the gift must have been imperfect during the donor's lifetime; (3) the donee must become the executor or administrator of the donor's estate, thereby obtaining legal title by operation of law."
+    },
+    {
+      "id": "EQL_M03_L02_Q03",
+      "question": "In the original Strong v Bird [1874] case, what was the subject matter of the imperfect gift?",
+      "options": {
+        "A": "A life estate in land that was never formally transferred",
+        "B": "A debt — the stepmother had lent Bird money and then forgave the debt, but never executed a formal release",
+        "C": "Shares that were never transferred using a share transfer form",
+        "D": "A painting that was promised but never physically delivered"
+      },
+      "correct_answer": "B",
+      "explanation": "In Strong v Bird [1874], Bird had borrowed money from his stepmother. She later forgave the debt (intending to give him the release), but never executed a formal legal release. When she died, Bird was appointed her executor. The court held that his appointment as executor, which vested the relevant property in him, perfected the release of the debt — the imperfect gift of the debt forgiveness was perfected."
+    },
+    {
+      "id": "EQL_M03_L02_Q04",
+      "question": "If a donor's continuing intention to make the gift was abandoned before death, what is the effect on the Strong v Bird rule?",
+      "options": {
+        "A": "The rule still applies if the donee can show reliance on the promise",
+        "B": "The rule cannot apply — the continuing intention to give up to the point of death is an essential requirement",
+        "C": "The rule applies but only to the extent the gift was partially completed during the donor's lifetime",
+        "D": "The rule is replaced by proprietary estoppel if there was detrimental reliance"
+      },
+      "correct_answer": "B",
+      "explanation": "If the donor's intention to make the gift was abandoned before death, the rule in Strong v Bird cannot apply. Continuing intention to make the gift right up until the donor's death is an essential requirement. If the donor changed their mind — by revoking the promise or treating it as lapsed — the condition of continuing intention is not met and the rule fails."
+    },
+    {
+      "id": "EQL_M03_L02_Q05",
+      "question": "The extension of the rule in Strong v Bird to administrators (as opposed to executors) was considered in:",
+      "options": {
+        "A": "Re Rose [1952]",
+        "B": "Milroy v Lord [1862]",
+        "C": "Re James [1935]",
+        "D": "Cain v Moon [1896]"
+      },
+      "correct_answer": "C",
+      "explanation": "The extension of the Strong v Bird rule to administrators — not just executors — was considered in Re James [1935], where Farwell J held the rule could apply where the donee was appointed as administrator of the donor's estate. This extension has been accepted in Ireland, broadening the rule's application beyond cases where the donee is appointed executor."
+    },
+    {
+      "id": "EQL_M03_L02_Q06",
+      "question": "Donatio mortis causa is best described as:",
+      "options": {
+        "A": "A testamentary gift made in a will that takes effect on the testator's death",
+        "B": "A gift made in contemplation of the donor's impending death, conditional on death, with delivery of dominion",
+        "C": "A gift made under duress and therefore voidable at the donee's option",
+        "D": "A legacy that is satisfied by a prior inter vivos transfer"
+      },
+      "correct_answer": "B",
+      "explanation": "Donatio mortis causa is a gift made in contemplation of the donor's impending death, conditional on death, with delivery of the subject matter or dominion over it. It is a unique doctrine that allows a gift to be valid even without complying with the formal requirements of the Wills Act, provided the three conditions set out in Cain v Moon and Sen v Headley are satisfied."
+    },
+    {
+      "id": "EQL_M03_L02_Q07",
+      "question": "The three requirements for a valid donatio mortis causa were set out in which case?",
+      "options": {
+        "A": "Re Rose [1952] and Milroy v Lord [1862]",
+        "B": "Cain v Moon [1896] and Sen v Headley [1991]",
+        "C": "Strong v Bird [1874] and Re James [1935]",
+        "D": "Jones v Lock [1865] and Richards v Delbridge [1874]"
+      },
+      "correct_answer": "B",
+      "explanation": "The three requirements for a valid donatio mortis causa were set out in Cain v Moon [1896] and refined in the leading modern case of Sen v Headley [1991]. The requirements are: (1) the gift must be made in contemplation of impending death; (2) the gift must be conditional on death; (3) there must be delivery of the subject matter or dominion over it."
+    },
+    {
+      "id": "EQL_M03_L02_Q08",
+      "question": "For a donatio mortis causa, the contemplation of death must be:",
+      "options": {
+        "A": "A general awareness that death must come to everyone eventually",
+        "B": "Contemplation of a specific peril or illness that the donor believes will cause their death",
+        "C": "Written in a letter signed by the donor and witnessed by two persons",
+        "D": "Notified to the intended donee at least 48 hours before the donor's death"
+      },
+      "correct_answer": "B",
+      "explanation": "The contemplation of death for a donatio mortis causa must be contemplation of a specific peril or illness that the donor believes will cause their death — not a general awareness of mortality. The donor must be facing an immediate threat or danger. If the donor recovers, the gift is automatically revoked."
+    },
+    {
+      "id": "EQL_M03_L02_Q09",
+      "question": "The conditional nature of a donatio mortis causa means that:",
+      "options": {
+        "A": "The gift is only valid if the donee survives the donor by 30 days",
+        "B": "If the donor recovers from the illness or peril, the gift is automatically revoked",
+        "C": "The gift is conditional on the donee performing some obligation in return",
+        "D": "The gift is only valid if the donor's estate is insolvent at the time of death"
+      },
+      "correct_answer": "B",
+      "explanation": "The conditional nature of a donatio mortis causa means that the gift is conditional on death — if the donor recovers from the illness or peril that prompted the gift, the gift is automatically revoked. The gift 'springs' into life only on the donor's death from the contemplated peril. If the donor recovers, the donee must return the property."
+    },
+    {
+      "id": "EQL_M03_L02_Q10",
+      "question": "In Sen v Headley [1991], the Court of Appeal held that donatio mortis causa can apply to:",
+      "options": {
+        "A": "Bank accounts only, not real property",
+        "B": "Land — the gift of the house was perfected by delivery of keys to a box containing title deeds",
+        "C": "Shares only, provided the share certificates are delivered",
+        "D": "Cash only, where the donor physically hands over banknotes"
+      },
+      "correct_answer": "B",
+      "explanation": "In Sen v Headley [1991], the Court of Appeal confirmed that donatio mortis causa can apply to land. The donor told the plaintiff 'the house is yours' and gave her the keys to a steel box containing the title deeds. The Court held this was a valid donatio mortis causa — the keys to the box represented delivery of dominion over the deeds, which represented dominion over the land."
+    },
+    {
+      "id": "EQL_M03_L02_Q11",
+      "question": "The concept of 'delivery of dominion' in donatio mortis causa means:",
+      "options": {
+        "A": "The donor must physically hand over the actual property",
+        "B": "The donor must deliver something that gives the donee control or dominion over the subject matter",
+        "C": "The donor must transfer legal title by the correct formality for that type of property",
+        "D": "The donee must take possession of the property without the donor's knowledge"
+      },
+      "correct_answer": "B",
+      "explanation": "Delivery of dominion means the donor must deliver something that gives the donee control or dominion over the subject matter — not necessarily the physical property itself. In Sen v Headley, handing over keys to a box containing title deeds constituted delivery of dominion over land. The courts take a liberal approach to this requirement."
+    },
+    {
+      "id": "EQL_M03_L02_Q12",
+      "question": "Why is Sen v Headley [1991] considered a landmark decision?",
+      "options": {
+        "A": "It abolished the requirement for delivery in donatio mortis causa",
+        "B": "It confirmed that donatio mortis causa can apply to land and demonstrated the court's willingness to take a liberal approach to the delivery requirement",
+        "C": "It extended the rule in Strong v Bird to apply to donatio mortis causa situations",
+        "D": "It replaced the three requirements for donatio mortis causa with a single unconscionability test"
+      },
+      "correct_answer": "B",
+      "explanation": "Sen v Headley [1991] is a landmark decision because it confirmed that donatio mortis causa can apply to land — something that was previously doubted. It also demonstrated the Court of Appeal's willingness to take a liberal approach to the delivery requirement, accepting keys to a box containing title deeds as sufficient delivery of dominion over the land."
+    },
+    {
+      "id": "EQL_M03_L02_Q13",
+      "question": "Which of the following scenarios CORRECTLY satisfies all three requirements for donatio mortis causa?",
+      "options": {
+        "A": "A person in good health writes in their diary 'I want my nephew to have my car when I die'",
+        "B": "A seriously ill hospital patient hands their bank book to a friend saying 'this is yours if I don't pull through', and then dies from the illness",
+        "C": "A testator leaves a legacy in their will to be paid on death from their bank account",
+        "D": "A donor gifts shares to a trustee to hold for a named beneficiary after the donor's death"
+      },
+      "correct_answer": "B",
+      "explanation": "Option B satisfies all three requirements: (1) contemplation of impending death — a seriously ill hospital patient; (2) conditionality on death — 'if I don't pull through'; (3) delivery — physically handing the bank book to the friend represents delivery of dominion. The donor then dies from the illness. All three conditions are met."
+    },
+    {
+      "id": "EQL_M03_L02_Q14",
+      "question": "What is the key practical distinction between the rule in Strong v Bird and donatio mortis causa?",
+      "options": {
+        "A": "Strong v Bird applies to gifts of land only; donatio mortis causa applies to personalty only",
+        "B": "Strong v Bird operates through the donee's appointment as executor and legal vesting; donatio mortis causa operates through conditional delivery in contemplation of death",
+        "C": "Strong v Bird requires consideration; donatio mortis causa does not",
+        "D": "There is no distinction — both doctrines have identical requirements and operate in the same circumstances"
+      },
+      "correct_answer": "B",
+      "explanation": "The key distinction is in the mechanism of perfection: Strong v Bird operates through the donee's appointment as executor or administrator, causing legal title to vest in them by operation of law on the grant of probate. Donatio mortis causa operates through conditional delivery of the property or dominion over it in contemplation of death. They solve different problems and have different requirements."
+    },
+    {
+      "id": "EQL_M03_L02_Q15",
+      "question": "A dying person hands their neighbour the keys to their car saying 'I want you to have my car.' The person recovers from the illness. What is the legal position?",
+      "options": {
+        "A": "The gift is valid — once dominion was delivered, the gift is irrevocable",
+        "B": "The gift is revoked automatically because a donatio mortis causa is conditional on death",
+        "C": "The gift is void because cars cannot be the subject of a donatio mortis causa",
+        "D": "The gift is valid as a completed gift because keys constitute sufficient delivery"
+      },
+      "correct_answer": "B",
+      "explanation": "The gift is automatically revoked because a donatio mortis causa is conditional on death — if the donor recovers from the illness or peril that prompted the gift, the gift is revoked and the donee must return the property. The gift 'springs' into life only on the donor's death from the contemplated peril."
+    },
+    {
+      "id": "EQL_M03_L02_Q16",
+      "question": "A common exam pitfall is confusing Strong v Bird and donatio mortis causa. Which statement helps distinguish them?",
+      "options": {
+        "A": "Donatio mortis causa requires appointment as executor; Strong v Bird requires delivery",
+        "B": "Strong v Bird requires continuing intention and appointment as executor; donatio mortis causa requires contemplation of death, conditionality, and delivery of dominion",
+        "C": "Both doctrines require delivery of the property to the donee before the donor's death",
+        "D": "Strong v Bird applies only to debt forgiveness; donatio mortis causa applies only to land"
+      },
+      "correct_answer": "B",
+      "explanation": "Strong v Bird requires: (1) continuing intention to give, (2) imperfect gift, and (3) appointment as executor/administrator. Donatio mortis causa requires: (1) contemplation of impending death, (2) gift conditional on death, and (3) delivery of dominion. These are entirely different mechanisms — confusing them in an exam is a common mistake that should be avoided."
+    },
+    {
+      "id": "EQL_M03_L02_Q17",
+      "question": "Both the rule in Strong v Bird and donatio mortis causa are described as exceptions to which general principle?",
+      "options": {
+        "A": "The rule against perpetuities",
+        "B": "The rule that equity will not perfect an imperfect gift",
+        "C": "The rule that trusts must have identifiable beneficiaries",
+        "D": "The rule that trusts of land must be evidenced in writing"
+      },
+      "correct_answer": "B",
+      "explanation": "Both the rule in Strong v Bird and donatio mortis causa are exceptions to the general rule that 'equity will not perfect an imperfect gift' — the central principle established in Milroy v Lord [1862]. Each doctrine provides a specific mechanism by which an otherwise incomplete gift is perfected despite the absence of the normal legal formalities."
+    },
+    {
+      "id": "EQL_M03_L02_Q18",
+      "question": "In an FE-1 problem question, a donor intends to give their nephew their investment portfolio but never completes the transfer forms. The donor then dies and the nephew is named as executor. Which analysis is CORRECT?",
+      "options": {
+        "A": "The gift fails because the donor did not deliver the portfolio to the nephew before death",
+        "B": "The gift may be perfected under the rule in Strong v Bird if the donor had a continuing intention to give the portfolio up to death and the nephew is appointed executor",
+        "C": "The gift is valid under donatio mortis causa because the nephew is aware of the donor's intention",
+        "D": "The gift is void for non-compliance with the Statute of Frauds"
+      },
+      "correct_answer": "B",
+      "explanation": "This scenario engages the rule in Strong v Bird. The gift may be perfected if: (1) the donor had a continuing intention to give the portfolio to the nephew up to the point of death; (2) the gift was imperfect — no transfer form was completed; (3) the nephew is appointed as executor, causing legal title to vest in the nephew by operation of law on the grant of probate."
+    },
+    {
+      "id": "EQL_M03_L02_Q19",
+      "question": "Why does donatio mortis causa allow a gift to be valid despite non-compliance with the Wills Act requirements?",
+      "options": {
+        "A": "Because donatio mortis causa is a common law remedy that overrides statutory formality requirements",
+        "B": "Because the delivery of dominion during the donor's lifetime distinguishes it from a purely testamentary gift — the gift is inter vivos in character, conditional on death",
+        "C": "Because wills are only required for gifts of land and donatio mortis causa applies only to personalty",
+        "D": "Because the doctrine is a creature of statute that expressly exempts it from Wills Act requirements"
+      },
+      "correct_answer": "B",
+      "explanation": "Donatio mortis causa escapes the Wills Act requirements because the delivery of dominion during the donor's lifetime gives the gift an inter vivos character — it is not a purely testamentary disposition. The conditionality on death makes it revocable if the donor recovers, but the delivery distinguishes it from a will, which takes effect only on death without any prior act."
+    },
+    {
+      "id": "EQL_M03_L02_Q20",
+      "question": "If a donor hands over share certificates on their deathbed saying 'these are yours when I die', is this a valid donatio mortis causa?",
+      "options": {
+        "A": "No — shares can never be the subject of a donatio mortis causa",
+        "B": "Yes — delivery of share certificates can constitute delivery of dominion, provided all three requirements are met",
+        "C": "No — a formal share transfer form must be executed for any gift of shares",
+        "D": "Yes — but only if the company registers the transfer before the donor dies"
+      },
+      "correct_answer": "B",
+      "explanation": "Delivery of share certificates can constitute delivery of dominion over the shares for the purposes of donatio mortis causa, provided all three requirements are met: (1) contemplation of impending death, (2) gift conditional on death, and (3) delivery of dominion. The courts take a liberal approach to the delivery requirement."
+    },
+    {
+      "id": "EQL_M03_L02_Q21",
+      "question": "The doctrine of donatio mortis causa provides an important 'safety valve' for which type of situation?",
+      "options": {
+        "A": "Commercial transactions where written contracts have not been signed",
+        "B": "Cases where a dying person wishes to make a gift but has not had time or ability to execute a will or complete a formal transfer",
+        "C": "Situations where a testamentary gift fails due to uncertainty of subject matter",
+        "D": "Cases where a trust has been constituted but the trustee refuses to distribute to the beneficiary"
+      },
+      "correct_answer": "B",
+      "explanation": "Donatio mortis causa provides an important safety valve for cases where a dying person wishes to make a gift but has not had time or ability to execute a will or complete a formal transfer. It allows equity to give effect to the genuine last wishes of a dying donor in circumstances where compliance with legal formalities was practically impossible."
+    },
+    {
+      "id": "EQL_M03_L02_Q22",
+      "question": "Which of the following would DEFEAT a claim based on donatio mortis causa?",
+      "options": {
+        "A": "The gift was of land rather than personal property",
+        "B": "The donor died from a different cause than the specific peril contemplated when making the gift",
+        "C": "The donor gave the donee only a verbal promise without delivery of any item representing the property",
+        "D": "Both B and C are capable of defeating the claim"
+      },
+      "correct_answer": "D",
+      "explanation": "Both options B and C are capable of defeating a donatio mortis causa claim. If the donor died from a different cause than the specific peril contemplated (B), the 'contemplation of impending death' requirement may not be met. If there was only a verbal promise without delivery of anything representing the property (C), the delivery of dominion requirement is not met. Either deficiency is fatal to the claim."
+    }
+  ]
+}

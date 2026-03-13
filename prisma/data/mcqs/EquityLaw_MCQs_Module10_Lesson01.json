@@ -1,0 +1,263 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "EquityLaw_ElevenLabs_Module10_Lesson01.txt",
+  "module_number": 10,
+  "module_title": "RESULTING TRUSTS",
+  "lesson_number": 1,
+  "lesson_title": "AUTOMATIC AND PRESUMED RESULTING TRUSTS",
+  "total_questions": 21,
+  "questions": [
+    {
+      "id": "EQL_M10_L01_Q01",
+      "question": "What is a resulting trust, and what is the origin of the term?",
+      "options": {
+        "A": "A trust resulting from a written agreement between the settlor and the trustee, from the Latin 'resultatio' meaning agreement",
+        "B": "A trust that arises by operation of law where property is transferred in circumstances where equity presumes the transferor did not intend the transferee to take beneficially — the property 'springs back' to the transferor, from the Latin 'resultare' meaning to spring back",
+        "C": "A trust created as a result of a court order in equity proceedings, from the Latin 'res' meaning property",
+        "D": "A trust arising from a contract to create a trust, from the Latin 'resultantia' meaning consequence"
+      },
+      "correct_answer": "B",
+      "explanation": "A resulting trust arises by operation of law where property is transferred to a person in circumstances where equity presumes that the transferor did not intend the transferee to take beneficially. The beneficial interest 'results back' — from the Latin 'resultare', meaning to spring back — to the transferor or their estate. The trust arises not from any express intention but from equity's inference that the transferor retained the beneficial interest despite the legal transfer."
+    },
+    {
+      "id": "EQL_M10_L01_Q02",
+      "question": "In Re Vandervell's Trusts (No 2) [1974], Megarry J classified resulting trusts into two categories. What are they?",
+      "options": {
+        "A": "Consensual resulting trusts and non-consensual resulting trusts",
+        "B": "Automatic resulting trusts (arising where an express trust fails) and presumed resulting trusts (arising from voluntary transfer or purchase in another's name)",
+        "C": "Legal resulting trusts and equitable resulting trusts",
+        "D": "Formal resulting trusts and informal resulting trusts"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Vandervell's Trusts (No 2) [1974], Megarry J classified resulting trusts into two categories: (1) automatic resulting trusts — which arise automatically where an express trust fails in whole or in part and the beneficial interest is undisposed of; and (2) presumed resulting trusts — which arise where property is transferred voluntarily without consideration, or where property is purchased in the name of another, and equity presumes the transferor did not intend a gift. This classification remains the standard framework for analysing resulting trusts."
+    },
+    {
+      "id": "EQL_M10_L01_Q03",
+      "question": "In what three main situations does an automatic resulting trust arise?",
+      "options": {
+        "A": "On the death of a trustee, on the dissolution of a company, and on the expiry of a lease",
+        "B": "Where an express trust fails entirely (e.g., uncertain objects), where trust property is surplus after trust purposes are fulfilled, and where the beneficial interest is not completely exhausted",
+        "C": "Where a charity is wound up, where a beneficiary disclaims, and where a trustee becomes insolvent",
+        "D": "Where a will is declared invalid, where a deed is not executed correctly, and where a contract fails for lack of consideration"
+      },
+      "correct_answer": "B",
+      "explanation": "Automatic resulting trusts arise in three main situations: (1) where an express trust fails entirely — for example, because the objects are uncertain or the trust is void for perpetuity (as in Re Cochrane [1955]); (2) where trust property is surplus after the trust purposes have been fulfilled — as in Re Abbott Fund Trusts [1900] and Re Gillingham Bus Disaster Fund [1958]; and (3) where the beneficial interest is not completely exhausted — as in Vandervell v Inland Revenue Commissioners [1967] where an option to repurchase was not effectively disposed of. In each case, the undisposed-of beneficial interest results back to the settlor or their estate."
+    },
+    {
+      "id": "EQL_M10_L01_Q04",
+      "question": "In Re Cochrane [1955], an Irish case, what happened when an express trust failed for uncertainty of objects?",
+      "options": {
+        "A": "The property was distributed among the testator's next of kin under the intestacy rules",
+        "B": "The property was held on automatic resulting trust for the settlor's estate when the trust failed",
+        "C": "The court applied a cy-pres scheme and redirected the property to a related purpose",
+        "D": "The trustee was entitled to keep the property beneficially as compensation for their services"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Cochrane [1955], an Irish case, the express trust failed for uncertainty of objects. The court held that the property was held on automatic resulting trust for the settlor's estate. Where an express trust fails, equity will not allow the intended trustee to keep the property beneficially — the beneficial interest springs back to the settlor (or their estate if deceased). This exemplifies the first category of automatic resulting trust: failure of an express trust leaving beneficial interest undisposed of."
+    },
+    {
+      "id": "EQL_M10_L01_Q05",
+      "question": "In Re Abbott Fund Trusts [1900], money was collected for the maintenance of two elderly ladies. When both ladies died with a surplus remaining, how did the court deal with the surplus?",
+      "options": {
+        "A": "The surplus passed to the Crown as bona vacantia",
+        "B": "The surplus was applied cy-pres to a related charitable purpose",
+        "C": "The surplus was held on automatic resulting trust for the subscribers (the original contributors)",
+        "D": "The surplus was retained by the trustees as remuneration for administering the fund"
+      },
+      "correct_answer": "C",
+      "explanation": "In Re Abbott Fund Trusts [1900], the surplus funds remaining after both ladies had died were held on automatic resulting trust for the subscribers — the original contributors to the fund. Since the trust purpose (maintenance of the ladies) had been fulfilled and the beneficial interest was undisposed of (there was no provision for the surplus), the undistributed funds resulted back to those who had provided the money. This is the second category of automatic resulting trust: surplus property after trust purposes are fulfilled."
+    },
+    {
+      "id": "EQL_M10_L01_Q06",
+      "question": "In Vandervell v Inland Revenue Commissioners [1967], the House of Lords held that a resulting trust arose in respect of an option. What was the basis for this?",
+      "options": {
+        "A": "The original transfer of shares was void for want of proper documentation",
+        "B": "The beneficial interest under the option to repurchase had not been effectively disposed of, and so resulted back to Mr Vandervell under an automatic resulting trust",
+        "C": "Mr Vandervell had not paid adequate consideration for the original transfer of shares",
+        "D": "The trust was void because it lacked certainty of objects"
+      },
+      "correct_answer": "B",
+      "explanation": "In Vandervell v IRC [1967], Mr Vandervell had transferred shares to a college, subject to an option for a trustee company to repurchase them. The House of Lords held that the beneficial interest under the option had not been effectively disposed of — there was no valid declaration of trust over it. The undisposed-of beneficial interest therefore resulted back to Mr Vandervell under an automatic resulting trust. This had significant adverse tax consequences for him and illustrates the third category of automatic resulting trust: where the beneficial interest is not completely exhausted by the arrangements made."
+    },
+    {
+      "id": "EQL_M10_L01_Q07",
+      "question": "What are the two main situations in which a presumed resulting trust arises?",
+      "options": {
+        "A": "Failure of consideration and mistake as to the identity of the transferee",
+        "B": "Voluntary transfer of property without consideration (where the transferor is presumed not to have intended a gift) and purchase in the name of another (where one person pays but the property is registered in another's name)",
+        "C": "Breach of fiduciary duty and unauthorised profit by a trustee",
+        "D": "Failure of an express trust and subsequent disposal of surplus property"
+      },
+      "correct_answer": "B",
+      "explanation": "Presumed resulting trusts arise in two main situations: (1) voluntary transfer of property without consideration — where property is transferred gratuitously, equity presumes the transferor did not intend to make a gift and a resulting trust arises in the transferor's favour; and (2) purchase in the name of another — where one person provides the purchase money but the property is put in another person's name, equity raises a resulting trust in favour of the person who provided the money (Dyer v Dyer [1788])."
+    },
+    {
+      "id": "EQL_M10_L01_Q08",
+      "question": "What principle was established in Dyer v Dyer [1788] regarding purchase in the name of another?",
+      "options": {
+        "A": "That a person who pays the purchase price for property registered in another's name has no interest in that property",
+        "B": "That where purchase money is advanced by one person and the conveyance is taken in the name of another, equity raises a resulting trust in favour of the person who provided the money",
+        "C": "That a person who provides purchase money for property registered in another's name is entitled to an equitable mortgage over it",
+        "D": "That the person in whose name property is registered is always the beneficial owner regardless of who provided the money"
+      },
+      "correct_answer": "B",
+      "explanation": "In Dyer v Dyer [1788], Eyre CB established the foundational principle of the presumed resulting trust arising from purchase in another's name: where one person advances the purchase money but the conveyance is taken in the name of another, equity raises a resulting trust in favour of the person who provided the money. The person whose name appears on the title holds the legal interest but the equitable/beneficial interest results back to the contributor. This is a rebuttable presumption — it can be displaced by evidence of intention or by the counter-presumption of advancement."
+    },
+    {
+      "id": "EQL_M10_L01_Q09",
+      "question": "What is the 'presumption of advancement' and when does it apply to displace a resulting trust?",
+      "options": {
+        "A": "A presumption that all property in a family home is equally shared between spouses",
+        "B": "A presumption that where a transferor is under an obligation to provide for the transferee (e.g., a father transferring to a child), equity presumes an outright gift rather than a resulting trust",
+        "C": "A presumption that all inter vivos transfers between family members are loans rather than gifts",
+        "D": "A presumption that equity will advance funds to a beneficiary pending the administration of a trust"
+      },
+      "correct_answer": "B",
+      "explanation": "The presumption of advancement applies where the transferor is under a recognised legal or moral duty to provide for the transferee — classically, a father transferring property to a child. In such cases, equity presumes the transferor intended a gift (an 'advancement') rather than a resulting trust. This counter-presumption displaces the presumption of resulting trust that would otherwise arise from a voluntary transfer or purchase in another's name. As confirmed in Re Roberts [1946], the presumption of advancement applied where a father purchased property in the name of his child."
+    },
+    {
+      "id": "EQL_M10_L01_Q10",
+      "question": "Section 3 of the Family Law (Miscellaneous Provisions) Act 2023 reformed the presumption of advancement in Ireland. What change did it make?",
+      "options": {
+        "A": "It abolished the presumption of advancement entirely in Irish law",
+        "B": "It extended the presumption of advancement to apply equally as between both parents (mother and father) and a child, reflecting constitutional principles of equality",
+        "C": "It restricted the presumption of advancement to apply only where the transfer occurs within a marriage",
+        "D": "It replaced the presumption of advancement with a statutory right of contribution"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 3 of the Family Law (Miscellaneous Provisions) Act 2023 reformed the presumption of advancement in Ireland to apply equally between both parents — mother and father — and a child. Traditionally, the presumption applied only from father to child (and in some cases from persons in loco parentis). The reform reflects the constitutional principle of equality between men and women and brings Irish law in line with modern expectations of shared parental obligations. This is a significant and examinable Irish law development."
+    },
+    {
+      "id": "EQL_M10_L01_Q11",
+      "question": "In Bennet v Bennet [1879], the presumption of advancement was considered in relation to persons in loco parentis. What did the court hold?",
+      "options": {
+        "A": "The presumption of advancement cannot apply to persons who are not biological parents",
+        "B": "The presumption of advancement extends to persons who stand in loco parentis — those who have assumed the duties and obligations of a parent towards a child",
+        "C": "The presumption of advancement applies only where the person in loco parentis has formally adopted the child",
+        "D": "Persons in loco parentis are presumed to create resulting trusts rather than advancements when they transfer property to a child"
+      },
+      "correct_answer": "B",
+      "explanation": "In Bennet v Bennet [1879], the court confirmed that the presumption of advancement extends beyond biological parents to persons who stand in loco parentis — that is, persons who have assumed the role and obligations of a parent towards a child, including the duty to make financial provision. This recognises that the rationale for the presumption (a person under a parental duty to provide for a child is likely to intend a gift rather than a loan or trust) applies equally to those who have taken on parental responsibilities, regardless of the formal legal relationship."
+    },
+    {
+      "id": "EQL_M10_L01_Q12",
+      "question": "In Tinsley v Milligan [1994], the House of Lords considered the interplay between resulting trusts and illegality. What did the court hold?",
+      "options": {
+        "A": "That a claimant can never rely on a resulting trust where the underlying transaction was tainted by any form of illegality",
+        "B": "That a claimant can rely on a resulting trust arising from their contribution to the purchase price, even where the underlying transaction was tainted by illegality, provided they do not need to plead the illegality to establish their claim",
+        "C": "That illegality automatically defeats any resulting trust arising from the same transaction",
+        "D": "That equity will not assist a party to an illegal scheme under any circumstances"
+      },
+      "correct_answer": "B",
+      "explanation": "In Tinsley v Milligan [1994], the House of Lords held that a claimant can rely on a resulting trust arising from their contribution to the purchase price even where the underlying transaction was tainted by illegality — provided the claimant does not need to plead the illegality to establish their claim (the 'reliance principle'). Miss Milligan was able to assert the resulting trust arising from her contribution to the purchase price without needing to disclose the fraudulent purpose for which the property had been registered solely in the other party's name. This is a significant and examinable case on the resulting trust and illegality intersection."
+    },
+    {
+      "id": "EQL_M10_L01_Q13",
+      "question": "A father pays the full purchase price for a house but registers the property in his adult son's name. There is no express declaration of trust. What is the position in Irish law?",
+      "options": {
+        "A": "The son holds the property absolutely — the father has no interest because the property is registered in the son's name",
+        "B": "A presumed resulting trust arises in the father's favour (Dyer v Dyer [1788]), but this is displaced by the presumption of advancement (Re Roberts [1946]; now s.3 Family Law (Miscellaneous Provisions) Act 2023) — the presumption is that the father intended a gift to the son",
+        "C": "A constructive trust arises because the son has been unjustly enriched",
+        "D": "The Land Registry will automatically note the father's equitable interest regardless of the registration"
+      },
+      "correct_answer": "B",
+      "explanation": "In this scenario, a presumed resulting trust would ordinarily arise under Dyer v Dyer [1788] because the father provided the purchase money but the property was registered in another's name. However, the presumption of resulting trust is displaced by the counter-presumption of advancement — because a father (parent) is under a legal and moral duty to provide for a child, equity presumes the transfer was intended as a gift (advancement). Under s.3 of the Family Law (Miscellaneous Provisions) Act 2023, the presumption of advancement now applies between both parents and children in Irish law. The son is therefore presumed to hold beneficially, absent evidence to rebut this."
+    },
+    {
+      "id": "EQL_M10_L01_Q14",
+      "question": "Re Gillingham Bus Disaster Fund [1958] involved surplus charitable collection funds. How did the court treat the surplus?",
+      "options": {
+        "A": "The surplus was applied cy-pres because the original purpose was charitable",
+        "B": "The surplus was held on resulting trust for the subscribers/contributors to the fund",
+        "C": "The surplus was donated to the local council of the area where the disaster occurred",
+        "D": "The surplus was paid to the Crown as bona vacantia because the contributors were unidentifiable"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Gillingham Bus Disaster Fund [1958], the court held that surplus funds remaining after the purpose of the fund had been fulfilled were held on resulting trust for the contributors. The cy-pres doctrine did not apply because the original purpose was not charitable (it was a private disaster fund). The automatic resulting trust returned the surplus to those who had provided the money, reflecting equity's presumption that contributors to such funds intend only to provide for the stated purpose — any surplus is held on resulting trust for them."
+    },
+    {
+      "id": "EQL_M10_L01_Q15",
+      "question": "Can the presumption of resulting trust (arising from voluntary transfer or purchase in another's name) be rebutted?",
+      "options": {
+        "A": "No — the presumption of resulting trust is irrebuttable and always arises in both situations",
+        "B": "Yes — it can be rebutted by evidence of the transferor's actual intention to make a gift, or by the presumption of advancement where applicable",
+        "C": "Only where the rebuttal is evidenced in writing and witnessed by a solicitor",
+        "D": "Only where there is a contemporaneous deed of gift executed at the time of the transfer"
+      },
+      "correct_answer": "B",
+      "explanation": "The presumption of resulting trust is a rebuttable presumption. It can be displaced by: (1) evidence that the transferor actually intended to make a gift — if there is sufficient evidence of donative intent, the presumption is rebutted; or (2) the presumption of advancement — where the transferor stood in a parental or in loco parentis relationship to the transferee, equity presumes a gift rather than a resulting trust (Re Roberts [1946]; Bennet v Bennet [1879]; now s.3 Family Law (Miscellaneous Provisions) Act 2023). The presumption is a starting point, not a conclusive rule."
+    },
+    {
+      "id": "EQL_M10_L01_Q16",
+      "question": "What is the correct Megarry J classification for a resulting trust arising from the failure of an express trust?",
+      "options": {
+        "A": "A presumed resulting trust",
+        "B": "An automatic resulting trust",
+        "C": "A constructive resulting trust",
+        "D": "A statutory resulting trust"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the Megarry J classification from Re Vandervell's Trusts (No 2) [1974], a resulting trust arising from the failure of an express trust is an automatic resulting trust. It is 'automatic' because it arises by operation of law as a consequence of the failure — no inquiry into intention is required. Where an express trust fails and the beneficial interest is undisposed of, equity automatically raises a resulting trust in favour of the settlor or their estate. The 'presumed' category, by contrast, applies to voluntary transfers and purchase in another's name where the presumption is based on an inference of intention."
+    },
+    {
+      "id": "EQL_M10_L01_Q17",
+      "question": "A person transfers €100,000 to a friend without receiving anything in return. There is no express declaration of trust. The person now claims the money is held on resulting trust for them. Is this correct?",
+      "options": {
+        "A": "No — a voluntary transfer is presumed to be an outright gift and no resulting trust arises",
+        "B": "Yes — a voluntary transfer without consideration gives rise to a presumed resulting trust in favour of the transferor, as equity presumes the transferor did not intend a gift unless there is evidence to the contrary",
+        "C": "No — resulting trusts only arise in respect of real property, not money",
+        "D": "Yes — any transfer of money without consideration automatically creates a constructive trust"
+      },
+      "correct_answer": "B",
+      "explanation": "A voluntary transfer of property without consideration gives rise to a presumed resulting trust in favour of the transferor. Equity presumes that where a transferor receives nothing in return for a transfer, they did not intend to make a gift — the beneficial interest therefore results back to them. The transferor can assert the resulting trust against the recipient. This presumption can be rebutted by evidence of donative intent or by the presumption of advancement where applicable. The doctrine applies to personal property (including money) as well as real property."
+    },
+    {
+      "id": "EQL_M10_L01_Q18",
+      "question": "A mother pays the deposit and mortgage instalments on a house registered in her daughter's name. The mother and daughter have a falling out. The mother claims a beneficial interest. What is the most likely analysis?",
+      "options": {
+        "A": "The mother has no interest — property registered in the daughter's name belongs to the daughter",
+        "B": "A presumed resulting trust arises in the mother's favour based on her financial contributions (Dyer v Dyer [1788]), but the presumption of advancement may operate to displace it — under s.3 Family Law (Miscellaneous Provisions) Act 2023, the presumption of advancement now applies between a mother and child in Irish law",
+        "C": "The mother can claim a constructive trust only if she can prove a common intention with the daughter",
+        "D": "No equitable interest arises because the mother's payments were voluntary and not under any legal obligation"
+      },
+      "correct_answer": "B",
+      "explanation": "On these facts, the mother has contributed to the purchase price of property registered in her daughter's name. Under Dyer v Dyer [1788], a presumed resulting trust arises in the mother's favour to the extent of her contributions. However, the presumption of advancement applies as a counter-presumption: since a parent is under a duty to provide for a child, equity presumes the mother intended an advancement (gift) to the daughter rather than a resulting trust. Crucially, under s.3 of the Family Law (Miscellaneous Provisions) Act 2023, the presumption of advancement in Irish law now applies between a mother and child (not only father and child). The outcome depends on whether there is evidence to rebut the advancement presumption."
+    },
+    {
+      "id": "EQL_M10_L01_Q19",
+      "question": "Which of the following is the best structured FE-1 approach for a resulting trust question?",
+      "options": {
+        "A": "State that a resulting trust exists and leave it at that",
+        "B": "Identify which category applies (automatic or presumed); state the circumstances giving rise to it; consider whether the presumption of advancement displaces the resulting trust; apply the relevant cases; and conclude on the beneficial ownership",
+        "C": "Advise the client to seek rectification of the title documents",
+        "D": "Refer immediately to the Megarry classification without applying it to the facts"
+      },
+      "correct_answer": "B",
+      "explanation": "The correct FE-1 approach to a resulting trust question is: (1) classify the resulting trust as automatic or presumed, using the Megarry J classification from Re Vandervell's Trusts (No 2) [1974]; (2) identify and apply the circumstances giving rise to each category; (3) consider whether the presumption of advancement applies to displace the presumed resulting trust (Re Roberts [1946]; Bennet v Bennet [1879]; s.3 Family Law (Miscellaneous Provisions) Act 2023); (4) apply the key cases (Dyer v Dyer [1788], Tinsley v Milligan [1994], Re Cochrane [1955] etc.); and (5) conclude on who holds the beneficial interest. This structured approach demonstrates command of the topic."
+    },
+    {
+      "id": "EQL_M10_L01_Q20",
+      "question": "The 'reliance principle' from Tinsley v Milligan [1994] states that a party can rely on a resulting trust if they do not need to plead the illegality to establish their claim. What practical consequence does this have?",
+      "options": {
+        "A": "It means that illegality can never affect a resulting trust, regardless of how closely connected the illegality is to the transaction",
+        "B": "A party who contributed to the purchase price of property — even where the arrangement involved an illegal purpose — can assert the resulting trust arising from their contribution without disclosing the illegal purpose, as long as proof of the contribution alone establishes the trust",
+        "C": "It means that all illegal transactions automatically give rise to resulting trusts as a matter of public policy",
+        "D": "It provides that the party who was more morally culpable in the illegal arrangement loses their share under the resulting trust"
+      },
+      "correct_answer": "B",
+      "explanation": "The reliance principle from Tinsley v Milligan [1994] means that where a claimant's contribution to the purchase price is sufficient to raise the presumption of resulting trust, and establishing that trust does not require the claimant to plead or rely on the illegal purpose, the claimant can assert their beneficial interest. In Tinsley v Milligan, Miss Milligan's contribution to the purchase price was sufficient to raise the resulting trust — she did not need to disclose that the registration in the other party's sole name was for a fraudulent purpose. This practical rule prevents the illegality from entirely defeating the resulting trust claim where the trust can be proved independently."
+    },
+    {
+      "id": "EQL_M10_L01_Q21",
+      "question": "Which of the following statements about resulting trusts in Irish law is INCORRECT?",
+      "options": {
+        "A": "The Megarry J classification of resulting trusts into automatic and presumed categories, from Re Vandervell's Trusts (No 2) [1974], is the standard framework applied in Irish law",
+        "B": "Section 3 of the Family Law (Miscellaneous Provisions) Act 2023 extended the presumption of advancement to apply between both parents and a child in Ireland",
+        "C": "Re Cochrane [1955] is an Irish case confirming that property is held on automatic resulting trust for the settlor's estate where an express trust fails",
+        "D": "The presumption of resulting trust arising from a voluntary transfer is irrebuttable and cannot be displaced by any evidence of the transferor's intention"
+      },
+      "correct_answer": "D",
+      "explanation": "Option D is incorrect. The presumption of resulting trust arising from a voluntary transfer is a rebuttable presumption — it can be displaced by evidence that the transferor actually intended to make a gift (i.e., evidence of donative intent) or by the presumption of advancement where applicable. It is not irrebuttable. Options A (Megarry J classification), B (s.3 Family Law (Miscellaneous Provisions) Act 2023 reform), and C (Re Cochrane [1955] as Irish authority on automatic resulting trusts) are all correct statements about resulting trusts in Irish law."
+    }
+  ]
+}

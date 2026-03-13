@@ -1,0 +1,119 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module04_Lesson03.txt",
+  "module_number": 4,
+  "module_title": "Homicide",
+  "lesson_number": 4,
+  "lesson_title": "Dangerous Driving Causing Death",
+  "total_questions": 9,
+  "questions": [
+    {
+      "id": "CRL_M04_L04_Q01",
+      "question": "Under the Road Traffic Act 1961 (as amended), the offence of dangerous driving causing death is contained in which section, and what is the maximum sentence on conviction on indictment?",
+      "options": {
+        "A": "Section 53 RTA 1961; maximum 10 years imprisonment",
+        "B": "Section 53 RTA 1961 (as amended by Road Traffic Acts); the maximum sentence on conviction on indictment for dangerous driving causing death is 10 years imprisonment",
+        "C": "Section 49 RTA 1961; maximum 5 years",
+        "D": "Section 53 RTA 1961; maximum life imprisonment"
+      },
+      "correct_answer": "B",
+      "explanation": "Dangerous driving causing death in Ireland is an offence under s.53 of the Road Traffic Act 1961 as amended (principally by the Road Traffic Act 2010 and Road Traffic Act 2016). The maximum sentence on conviction on indictment is 10 years imprisonment. This is a significant sentence reflecting the gravity of a fatality caused by dangerous driving, while recognising that it is a less serious offence than manslaughter or murder (which carry longer maxima or mandatory life). The offence is tried on indictment in the Circuit Court. Section 49 (Option C) covers drink driving offences. Life imprisonment (Option D) is not available for this offence."
+    },
+    {
+      "id": "CRL_M04_L04_Q02",
+      "question": "What is the standard of proof/test for 'dangerous driving' for the purposes of s.53 RTA 1961?",
+      "options": {
+        "A": "Subjective \u2014 the driver must have known their driving was dangerous",
+        "B": "Objective \u2014 whether the driving fell far below what would be expected of a competent and careful driver, and it would be obvious to a competent and careful driver that driving in that way would be dangerous",
+        "C": "Objective \u2014 whether the driving was below the standard of a reasonable driver",
+        "D": "Subjective \u2014 whether the driver was reckless as to the risk of an accident"
+      },
+      "correct_answer": "B",
+      "explanation": "The test for dangerous driving in Irish road traffic law is objective: the standard is whether the driving fell far below what would be expected of a competent and careful driver in all the circumstances. This is a higher threshold than mere careless or inconsiderate driving (which requires the driving to fall below the standard of a competent careful driver, without the 'far below' qualifier). The objective nature of the test means that the driver's subjective awareness of danger is not required \u2014 the focus is on the quality and character of the driving, assessed from the external perspective of the competent and careful driver. Option A (subjective knowledge) is not the test. Option C describes the lower 'careless driving' standard. Option D (subjective recklessness) applies the criminal recklessness test from Cunningham, not the road traffic standard."
+    },
+    {
+      "id": "CRL_M04_L04_Q03",
+      "question": "Why might the prosecution prefer to charge dangerous driving causing death rather than gross negligence manslaughter in a road traffic fatality case?",
+      "options": {
+        "A": "Dangerous driving causing death carries a higher maximum sentence than manslaughter",
+        "B": "There is no reason to prefer dangerous driving \u2014 the charges are identical in practice",
+        "C": "Dangerous driving causing death has an entirely objective test and is easier to establish; manslaughter requires the jury to find the negligence was 'gross' and criminal (a circular and uncertain test); dangerous driving also carries specific road-safety legislative purposes",
+        "D": "Gross negligence manslaughter cannot be charged in road traffic cases"
+      },
+      "correct_answer": "C",
+      "explanation": "Prosecutors in road traffic fatality cases have often preferred to charge dangerous driving causing death (or causing serious bodily harm) for several reasons: (1) The test for dangerous driving is purely objective and more clearly defined \u2014 the jury applies the 'far below the competent and careful driver' standard without having to make the complex judgment of whether the conduct was 'criminal' as required by Adomako gross negligence manslaughter; (2) The Adomako test's circularity (is the negligence 'gross' enough to be criminal?) is avoided; (3) Dangerous driving causing death is specifically designed for road traffic fatalities and reflects particular legislative intent to regulate road use; (4) Juries may be more comfortable convicting of a driving offence than manslaughter where they know the latter carries significant stigma. Option A is wrong \u2014 manslaughter carries a higher maximum (life vs. 10 years). Option B is incorrect \u2014 material practical differences exist. Option D is wrong \u2014 gross negligence manslaughter can apply to road traffic cases."
+    },
+    {
+      "id": "CRL_M04_L04_Q04",
+      "question": "The Road Traffic Acts also create an offence of 'careless driving causing death.' How does careless driving causing death differ from dangerous driving causing death?",
+      "options": {
+        "A": "There is no difference \u2014 careless and dangerous are interchangeable terms in road traffic law",
+        "B": "Careless driving causing death requires proof that the driving fell below the standard of a competent and careful driver (but not 'far below'), resulting in death; dangerous driving causing death requires proof that the driving fell far below that standard and was obviously dangerous to a competent careful driver \u2014 the threshold for 'dangerous' is significantly higher",
+        "C": "Careless driving causing death applies only where the driver was distracted; dangerous driving applies where the driver was drunk",
+        "D": "Careless driving causing death carries a higher sentence because it is more common"
+      },
+      "correct_answer": "B",
+      "explanation": "The distinction between careless and dangerous driving in Irish road traffic law is one of degree, assessed against the objective standard of the competent and careful driver: (1) Careless driving \u2014 driving that falls below the standard of a competent and careful driver; (2) Dangerous driving \u2014 driving that falls far below that standard AND would be obvious to a competent and careful driver that driving in that way would be dangerous. The 'far below' threshold and the 'obvious' requirement make dangerous driving a significantly more serious category. Both can result in death, giving rise to their respective aggravated causing-death offences. The sentencing consequences also differ: dangerous driving causing death carries a higher maximum than careless driving causing death. Options A, C, and D each contain significant inaccuracies about the test or the sentence."
+    },
+    {
+      "id": "CRL_M04_L04_Q05",
+      "question": "Kevin drives his car at 120km/h in a 50km/h zone late at night, runs a red light, and kills a pedestrian crossing on a green light. The pedestrian had no visibility of Kevin's approach. Is this dangerous driving causing death?",
+      "options": {
+        "A": "No \u2014 Kevin may not have seen the pedestrian and thus lacked the required intent",
+        "B": "Yes \u2014 Kevin's driving (grossly exceeding the speed limit, failing to observe traffic signals) clearly fell far below the standard of a competent and careful driver and would obviously be dangerous to such a driver; death resulted",
+        "C": "No \u2014 dangerous driving causing death requires proof that Kevin specifically targeted the pedestrian",
+        "D": "Yes \u2014 but only if Kevin was also under the influence of alcohol"
+      },
+      "correct_answer": "B",
+      "explanation": "On these facts, dangerous driving causing death is clearly established: (1) Dangerous driving \u2014 driving at 120km/h in a 50km/h zone while running a red light is driving that falls far below the standard of the competent and careful driver; no competent careful driver would drive at more than twice the speed limit and ignore a red traffic light; this would be obviously dangerous to any such driver; (2) Causation \u2014 Kevin's dangerous driving caused the pedestrian's death; (3) The offence is result-based \u2014 the dangerous driving must cause death, which it did. The lack of specific intent (Option A) is irrelevant \u2014 dangerous driving causing death is an objective offence not requiring subjective awareness of danger. Option C invents a targeting requirement that does not exist. Option D introduces a drink driving element that is separate and not required for this charge."
+    },
+    {
+      "id": "CRL_M04_L04_Q06",
+      "question": "A driver suffers a sudden and unforeseen medical episode (e.g., first-ever epileptic seizure) at the wheel and kills a pedestrian. Does the automatism defence or the absence of voluntary control defeat a dangerous driving causing death charge?",
+      "options": {
+        "A": "No \u2014 drivers are strictly liable for any accident occurring while they are at the wheel",
+        "B": "Yes \u2014 if the driver genuinely lost control of their faculties due to an unforeseen and involuntary medical episode (sane automatism), their act was not voluntary; the actus reus for dangerous driving (which requires voluntary conduct) may not be established",
+        "C": "No \u2014 the defence only applies to criminal offences with a mens rea element; road traffic offences are strict liability",
+        "D": "Yes \u2014 but only if the driver was aware they might have such an episode in advance"
+      },
+      "correct_answer": "B",
+      "explanation": "The defence of automatism (sane automatism \u2014 where the accused's acts were involuntary due to an external factor or a sudden unforeseen internal medical episode) may be relevant to road traffic offences. For automatism to succeed, the accused must have suffered a complete loss of voluntary control. A first-ever epileptic seizure while driving could give rise to such a defence \u2014 if the driver had no previous warning of the condition and no reason to know they might seize at the wheel, their physical act of driving during the seizure was involuntary. Dangerous driving requires voluntary driving that is of a dangerous standard; if the driver had no control, the actus reus of voluntary dangerous driving may not be made out. Note: where the accused knew of a condition that might cause them to lose control while driving (e.g., they had prior warnings of seizures), they may be liable on the basis that driving while knowing of the risk was itself the dangerous act. Option A (strict liability) is incorrect for this analysis. Option C similarly applies a strict liability approach. Option D correctly notes the distinction where the driver had prior knowledge."
+    },
+    {
+      "id": "CRL_M04_L04_Q07",
+      "question": "Under the Road Traffic Act 2010, what is the relevance of drink or drugs in the context of dangerous or careless driving causing death?",
+      "options": {
+        "A": "Drink or drug driving is a completely separate offence with no connection to dangerous driving causing death",
+        "B": "Being under the influence of alcohol or drugs is an aggravating factor that may be considered by the sentencing court; additionally, being over the legal alcohol limit while driving dangerously may be charged as a separate concurrent offence and typically leads to longer sentences and mandatory disqualification",
+        "C": "Drink driving automatically elevates careless driving to dangerous driving as a matter of law",
+        "D": "A drunk driver cannot be convicted of dangerous driving causing death \u2014 only manslaughter"
+      },
+      "correct_answer": "B",
+      "explanation": "Under Irish road traffic law, being under the influence of alcohol or drugs while driving dangerously or carelessly and causing death involves two interrelated issues: (1) The drink/drug impairment is an aggravating factor for sentencing \u2014 courts consistently impose longer sentences where a fatality resulted from drunk driving; (2) The driver may face separate charges of drink driving (s.49 RTA 1961) or drug driving in addition to the dangerous driving causing death charge; (3) Courts in Ireland impose mandatory disqualification from driving for dangerous driving causing death, and drink driving typically results in lengthier disqualification. Option A incorrectly treats them as entirely separate and unconnected. Option C is wrong \u2014 drink driving does not automatically convert careless to dangerous as a legal matter (it is evidence relevant to the standard of driving). Option D is wrong \u2014 a drunk driver can be convicted of dangerous driving causing death."
+    },
+    {
+      "id": "CRL_M04_L04_Q08",
+      "question": "A cyclist (non-motorised) causes a pedestrian's death through extremely reckless cycling on a footpath at high speed. Can the cyclist be charged with dangerous driving causing death?",
+      "options": {
+        "A": "Yes \u2014 the offence applies to all road users including cyclists",
+        "B": "No \u2014 the Road Traffic Acts' dangerous driving provisions apply to mechanically propelled vehicles; a non-motorised bicycle is not a mechanically propelled vehicle; the cyclist may be charged with manslaughter (unlawful act or gross negligence) but not with the specific s.53 RTA offence",
+        "C": "Yes \u2014 dangerous cycling is a subset of dangerous driving under the Road Traffic Acts",
+        "D": "No \u2014 cyclists have no criminal liability for accidents on footpaths"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 53 of the Road Traffic Act 1961 (dangerous driving causing death) applies to the driving of mechanically propelled vehicles. A non-motorised bicycle is not a mechanically propelled vehicle and is therefore outside the scope of the RTA dangerous driving offence. However, a cyclist who kills through grossly reckless or dangerous cycling may be charged with: (1) Gross negligence manslaughter (if the cycling fell far below reasonable standards and the jury find the negligence criminal); (2) Unlawful act manslaughter (if the cycling constituted an unlawful and dangerous act \u2014 e.g., cycling on a footpath at high speed is unlawful and objectively dangerous); (3) Reckless manslaughter (if the cyclist was subjectively reckless as to the risk of death or serious injury). The absence of a specific road traffic offence for lethal cycling has been a gap in Irish law and has attracted reform calls. Option A incorrectly extends the s.53 offence to cyclists. Option C invents a non-existent sub-category. Option D incorrectly eliminates all criminal liability."
+    },
+    {
+      "id": "CRL_M04_L04_Q09",
+      "question": "What mandatory ancillary orders must a court impose upon conviction for dangerous driving causing death in Ireland?",
+      "options": {
+        "A": "No mandatory orders exist \u2014 the court has complete discretion",
+        "B": "The court must impose a mandatory disqualification from driving for a specified minimum period, and may also order endorsement; the minimum disqualification period for dangerous driving causing death is 4 years on a first offence",
+        "C": "The court must impose a mandatory community service order in addition to imprisonment",
+        "D": "The court must order that the convicted person never drives again regardless of circumstances"
+      },
+      "correct_answer": "B",
+      "explanation": "Upon conviction for dangerous driving causing death under s.53 of the Road Traffic Act 1961 (as amended), the court is required to impose mandatory disqualification from driving. The Road Traffic Acts prescribe minimum disqualification periods for serious road traffic offences. For dangerous driving causing death, the minimum disqualification period is 4 years (s.26 RTA 1961 as amended). The court may impose a longer disqualification depending on the circumstances. This mandatory disqualification is an ancillary order separate from the custodial sentence. Courts also endorse the driving licence. Option A incorrectly states there are no mandatory orders. Option C invents a mandatory community service requirement. Option D overstates the position \u2014 disqualification is not automatic for life, though courts may impose lengthy or lifetime bans in appropriate cases."
+    }
+  ]
+}

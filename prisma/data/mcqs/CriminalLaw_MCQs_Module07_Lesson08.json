@@ -1,0 +1,119 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module07_Lesson03.txt",
+  "module_number": 7,
+  "module_title": "Theft, Property Offences, and Cybercrime",
+  "lesson_number": 8,
+  "lesson_title": "Cybercrime (Criminal Justice (Offences Relating to Information Systems) Act 2017)",
+  "total_questions": 9,
+  "questions": [
+    {
+      "id": "CRL_M07_L08_Q01",
+      "question": "The Criminal Justice (Offences Relating to Information Systems) Act 2017 ('CJ(OIS)A 2017') is Ireland's primary cybercrime legislation. What legislative obligation prompted its enactment?",
+      "options": {
+        "A": "The Act was enacted to implement the Budapest Convention on Cybercrime 2001 \u2014 the Council of Europe treaty on cybercrime",
+        "B": "The Act was enacted to give effect to EU Directive 2013/40/EU on attacks against information systems, implementing Ireland's obligations to criminalise cyberattacks under EU law",
+        "C": "The Act was enacted to consolidate existing computer crime offences previously scattered across multiple pieces of Irish legislation",
+        "D": "The Act was enacted in response to a specific high-profile cyberattack on Irish government infrastructure"
+      },
+      "correct_answer": "B",
+      "explanation": "The Criminal Justice (Offences Relating to Information Systems) Act 2017 was enacted to give effect to EU Directive 2013/40/EU on attacks against information systems. EU membership requires Ireland to implement EU directives, and Directive 2013/40/EU required member states to criminalise specific cyberattacks including illegal access to information systems, illegal system interference, illegal data interference, and the provision of tools for these offences. The 2017 Act brought Irish law into compliance with these EU obligations while also implementing aspects of the Council of Europe Budapest Convention. For FE-1 purposes, the EU Directive implementation context is the primary legislative driver. Option A describes the Budapest Convention context \u2014 relevant but secondary. Option C describes a consolidation purpose \u2014 the Act is not primarily a consolidation measure. Option D invents a specific incident as the cause."
+    },
+    {
+      "id": "CRL_M07_L08_Q02",
+      "question": "Section 2 of the CJ(OIS)A 2017 creates the offence of illegal access to an information system (hacking). What are the core elements of this offence?",
+      "options": {
+        "A": "A person who accesses any computer or information system, regardless of whether they were authorised to do so",
+        "B": "A person who intentionally accesses an information system without lawful authority \u2014 the access must be intentional and without the right to access; negligent or accidental access is insufficient; accessing a system one is authorised to access is not an offence",
+        "C": "A person who accesses an information system and obtains data from it \u2014 mere access without data extraction is insufficient",
+        "D": "A person who accesses another person's information system with intent to cause damage or financial loss"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 2 CJ(OIS)A 2017 creates the offence of illegal access to an information system. The elements are: (1) Intentional access \u2014 the access must be intentional; accidental or negligent access is not an offence; (2) Without lawful authority \u2014 the person must not have the right or permission to access the system; accessing a system one is authorised to use (e.g., an employee accessing their employer's system for work purposes) is not an offence under s.2; (3) An information system \u2014 broadly defined to cover computers, networks, and connected devices. There is no requirement that data be extracted or that damage or financial loss result \u2014 illegal access itself is the offence. The maximum sentence is 5 years imprisonment on conviction on indictment. Option A removes the 'without authority' element. Option C adds a data extraction requirement. Option D adds a damage/financial loss intent requirement \u2014 neither is an element of the basic hacking offence."
+    },
+    {
+      "id": "CRL_M07_L08_Q03",
+      "question": "Section 3 of the CJ(OIS)A 2017 creates the offence of illegal system interference. How does this differ from the illegal access offence under s.2?",
+      "options": {
+        "A": "There is no meaningful difference \u2014 illegal system interference is simply a more serious form of illegal access",
+        "B": "Illegal system interference (s.3) targets conduct that seriously hinders or interrupts the functioning of an information system \u2014 for example, DDoS attacks that overwhelm a system; it is not limited to gaining unauthorised access but covers disruption of the system itself; it carries a higher maximum sentence (10 years) than illegal access (5 years)",
+        "C": "Illegal system interference applies only to government or critical infrastructure systems; s.2 hacking applies to all systems",
+        "D": "Illegal system interference requires physical interference with hardware; s.2 covers purely software-based attacks"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 3 CJ(OIS)A 2017 creates a distinct offence from s.2: illegal system interference targets conduct that seriously hinders or interrupts the functioning of an information system. The paradigm example is a Distributed Denial of Service (DDoS) attack \u2014 flooding a server with requests to make it unavailable to legitimate users. This is distinct from s.2 hacking (unauthorised access) because system interference may not involve accessing the system at all \u2014 the attacker simply overwhelms or disrupts it. The maximum sentence for s.3 is 10 years, compared to 5 years for s.2 hacking, reflecting the potentially greater harm of system interference (critical services could be disrupted). The sentencing differential reflects the legislature's assessment that system interference can have more widespread consequences than mere unauthorised access. Option A incorrectly equates the two offences. Option C limits s.3 to government systems without statutory basis. Option D incorrectly restricts s.3 to physical interference."
+    },
+    {
+      "id": "CRL_M07_L08_Q04",
+      "question": "Section 4 of the CJ(OIS)A 2017 creates the offence of illegal data interference. What conduct does this section target?",
+      "options": {
+        "A": "The offence targets the unauthorised reading or viewing of data stored on an information system",
+        "B": "The offence targets the intentional deletion, damaging, deteriorating, altering, suppressing, or rendering inaccessible of data on an information system without authority \u2014 it is the data equivalent of criminal damage to property",
+        "C": "The offence targets the intentional copying or downloading of data from an information system without authority",
+        "D": "The offence applies only to the alteration of financial data; other data interference is covered by different provisions"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 4 CJ(OIS)A 2017 creates the offence of illegal data interference: intentionally deleting, damaging, deteriorating, altering, suppressing, or rendering inaccessible data on an information system without lawful authority. This offence is conceptually analogous to criminal damage (Criminal Damage Act 1991) but applied to data \u2014 damaging or destroying data is treated similarly to damaging or destroying physical property. Examples include: deleting database records, deploying ransomware (which encrypts/renders inaccessible data), altering medical records, or corrupting software. The maximum sentence for s.4 is 10 years imprisonment on indictment. Note that mere unauthorised reading of data (without alteration or deletion) is not covered by s.4 \u2014 that would fall under s.2 (illegal access). Option A (mere reading) is not s.4 data interference. Option C (copying/downloading) is also not covered by s.4 directly. Option D invents a financial data restriction."
+    },
+    {
+      "id": "CRL_M07_L08_Q05",
+      "question": "Section 5 of the CJ(OIS)A 2017 creates the offence of illegal interception of data. What does this section specifically target?",
+      "options": {
+        "A": "Accessing stored data on a server without permission \u2014 the same conduct as illegal access under s.2",
+        "B": "The intentional interception of non-public transmissions of computer data to, from, or within an information system without lawful authority \u2014 it targets the interception of data in transit, not data at rest",
+        "C": "Obtaining data that has already been stored on a system following an interception by another party",
+        "D": "Listening to telephone calls made using internet-based telephone services"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 5 CJ(OIS)A 2017 creates the offence of illegal interception: intentionally intercepting non-public transmissions of computer data to, from, or within an information system without lawful authority. This targets the interception of data in transit \u2014 data being transmitted across a network. Examples include: packet sniffing (intercepting network traffic), man-in-the-middle attacks (intercepting communications between two parties), and wiretapping internet communications. The key distinguishing feature from s.2 (illegal access) is that s.5 targets transmissions in transit, not stored data. The maximum sentence for s.5 is 5 years on indictment \u2014 the same as the basic illegal access offence under s.2. The 'non-public' qualifier means that lawfully public transmissions (e.g., open Wi-Fi broadcasts the operator intends to be received by anyone) are not covered. Option A confuses s.5 with s.2. Option C addresses secondary receipt of intercepted data, not s.5. Option D invents a limitation to telephone services."
+    },
+    {
+      "id": "CRL_M07_L08_Q06",
+      "question": "Section 6 of the CJ(OIS)A 2017 creates the offence of possession or use of tools for cybercrime. What conduct does s.6 target?",
+      "options": {
+        "A": "Possession or use of any computer or software capable of being used for hacking",
+        "B": "Intentional production, sale, procurement, import, distribution, or possession of devices, computer programs, or data specifically designed or adapted for the purpose of committing a cybercrime offence under the Act, with intent to commit such an offence",
+        "C": "The commercial sale of legitimate security testing tools to persons the seller knows will use them for criminal purposes",
+        "D": "Possession of any malware or virus program, regardless of intended use"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 6 CJ(OIS)A 2017 targets the cybercrime tools trade: the intentional production, sale, procurement, import, distribution, or possession of devices, programs, or data specifically designed or adapted for committing offences under the Act, with intent to use them or enable their use in committing such offences. This targets the supply side of cybercrime \u2014 those who create and distribute hacking tools, malware, exploit kits, and similar instruments. The key elements are: (1) the tool must be specifically designed or adapted for cybercrime (not a legitimate tool with incidental potential for misuse); and (2) the accused must have the intent to commit or enable a s.2-s.5 offence. This ensures that legitimate cybersecurity professionals who possess penetration testing tools are not criminalised \u2014 they lack the criminal intent. The maximum sentence for s.6 is 2 years on indictment \u2014 the lowest in the hierarchy, reflecting that this is a preparatory offence. Option A incorrectly criminalises possession of any capable software. Option C targets the seller's knowledge \u2014 not an element of s.6 as formulated. Option D removes the intent requirement."
+    },
+    {
+      "id": "CRL_M07_L08_Q07",
+      "question": "What are the maximum sentences for each of the main CJ(OIS)A 2017 offences?",
+      "options": {
+        "A": "s.2 hacking: 2 years; s.3 system interference: 5 years; s.4 data interference: 5 years; s.5 interception: 2 years; s.6 tools: 1 year",
+        "B": "s.2 hacking: 5 years; s.3 system interference: 10 years; s.4 data interference: 10 years; s.5 interception: 5 years; s.6 tools: 2 years",
+        "C": "s.2 hacking: 10 years; s.3 system interference: 10 years; s.4 data interference: 14 years; s.5 interception: 10 years; s.6 tools: 5 years",
+        "D": "All cybercrime offences under the 2017 Act carry the same maximum of 10 years imprisonment"
+      },
+      "correct_answer": "B",
+      "explanation": "The maximum sentences under the CJ(OIS)A 2017 are: s.2 illegal access (hacking): 5 years on indictment; s.3 illegal system interference: 10 years on indictment; s.4 illegal data interference: 10 years on indictment; s.5 illegal interception: 5 years on indictment; s.6 possession of tools: 2 years on indictment. The sentencing hierarchy reflects the relative severity of harm: system and data interference (which can disable critical systems and destroy or corrupt data) carry the highest maximums at 10 years; access and interception (which may not cause direct damage) carry 5 years; possession of tools (preparatory conduct) carries 2 years. These figures are important FE-1 examination facts \u2014 memorise the hierarchy. Option A understates all maximums. Option C overstates the maximums significantly. Option D incorrectly equalises all offences."
+    },
+    {
+      "id": "CRL_M07_L08_Q08",
+      "question": "An employee of a company, acting out of curiosity, accesses a colleague's personal email folder stored on the company's server. The employee has legitimate access to the server generally, but is not authorised to access the colleague's private folders. Has the employee committed an offence under the CJ(OIS)A 2017?",
+      "options": {
+        "A": "No \u2014 the employee has authorised access to the company's server; accessing any part of a system one has general authorisation for cannot constitute illegal access",
+        "B": "Yes \u2014 applying the R v Baker principle to the cybercrime context: the employee's authorisation extends only to their own work area; accessing the colleague's private email folder exceeds the scope of that authorisation and constitutes illegal access to an information system under s.2 without lawful authority; the 'without lawful authority' element is satisfied by exceeding the scope of permitted access",
+        "C": "No \u2014 the offence requires intent to gain a benefit from the access; mere curiosity without intent to profit is insufficient",
+        "D": "Yes \u2014 but only if the employee actually downloaded or read the contents of the emails; accessing the folder without reading the content is not illegal access"
+      },
+      "correct_answer": "B",
+      "explanation": "This scenario applies the Baker-type principle (from R v Baker [1994] in the burglary context) to cyber law: a person may have general authorisation to access a system or part of a system, but that authorisation does not extend to all parts of the system. The employee's work credentials permit access to the company server \u2014 but not to a colleague's private email folder. Accessing that folder is 'without lawful authority' for the purposes of s.2 CJ(OIS)A 2017 because the employee's authority does not extend to that area. The access was also intentional (the employee deliberately navigated to the colleague's folder). s.2 is therefore satisfied: intentional access to an information system (the colleague's private email folder within the server) without lawful authority. Curiosity alone does not negate the 'without lawful authority' element. This scenario illustrates that 'without lawful authority' in cyber law, as in burglary, can be established by exceeding the scope of permission. Option A incorrectly treats general server access as blanket authorisation. Option C invents a profit motive requirement. Option D adds a content-reading requirement."
+    },
+    {
+      "id": "CRL_M07_L08_Q09",
+      "question": "A ransomware attack encrypts all data on a hospital's information systems, making patient records inaccessible until a ransom is paid. The attack is carried out remotely from outside Ireland by a criminal organisation. Which offences under the CJ(OIS)A 2017 are potentially engaged?",
+      "options": {
+        "A": "Section 2 (illegal access) only \u2014 the attack gains access to the hospital's system without authority",
+        "B": "Section 3 (illegal system interference) \u2014 the attack seriously hinders or interrupts the functioning of the hospital's information systems; s.4 (illegal data interference) \u2014 the ransomware renders the data inaccessible (a form of data interference); and potentially s.6 (tools) if the ransomware itself is considered a tool designed for cybercrime",
+        "C": "The CJ(OIS)A 2017 does not apply because the attack originated from outside Ireland \u2014 Irish criminal law has no jurisdiction over cyberattacks launched from other countries",
+        "D": "Section 5 (illegal interception) \u2014 the ransomware intercepts data transmissions to prevent access"
+      },
+      "correct_answer": "B",
+      "explanation": "A ransomware attack on a hospital's information systems engages multiple provisions of the CJ(OIS)A 2017: (1) Section 3 \u2014 illegal system interference: the ransomware seriously hinders or interrupts the functioning of the hospital's information systems by making them inoperable until a ransom is paid; this is precisely the type of conduct s.3 targets; (2) Section 4 \u2014 illegal data interference: the ransomware renders the patient records inaccessible \u2014 'rendering inaccessible' is expressly listed as a form of illegal data interference; (3) Section 2 \u2014 illegal access: the attackers would have needed to access the hospital's systems to deploy the ransomware; and (4) Potentially s.6 \u2014 the ransomware itself is a program specifically designed for cybercrime (meeting the s.6 definition). Regarding jurisdiction: Irish courts can have jurisdiction over cybercrime offences affecting systems in Ireland even where the attacker is physically abroad \u2014 the harmful effect in Ireland grounds jurisdiction. Option A is too narrow. Option C incorrectly denies Irish jurisdiction. Option D mischaracterises ransomware as an interception tool."
+    }
+  ]
+}

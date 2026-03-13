@@ -1,0 +1,119 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module05_Lesson01.txt",
+  "module_number": 5,
+  "module_title": "Non-Fatal Offences Against the Person",
+  "lesson_number": 7,
+  "lesson_title": "Consent in the Context of NFOATP",
+  "total_questions": 9,
+  "questions": [
+    {
+      "id": "CRL_M05_L07_Q01",
+      "question": "As a general principle, consent operates as a defence to s.2 assault under the NFOATP 1997. What is the principled basis for this?",
+      "options": {
+        "A": "Consent is relevant to s.2 because s.2(1) expressly provides that force must be applied 'without the consent of the other person' \u2014 consent negates the actus reus by removing the element of non-consensual contact",
+        "B": "Consent operates as an extrinsic defence to s.2 \u2014 it must be separately pleaded and does not affect the actus reus",
+        "C": "Consent is irrelevant to s.2 assault \u2014 once force is applied, the offence is complete regardless of consent",
+        "D": "Consent only operates as a defence to s.2 assault where the force applied resulted in no physical harm whatsoever"
+      },
+      "correct_answer": "A",
+      "explanation": "Section 2(1) NFOATP 1997 expressly incorporates consent into the definition of the offence: it applies to the application of force to another 'without the consent of the other person.' This means that consent is not an extrinsic defence to s.2 but rather goes to the actus reus itself \u2014 if the complainant genuinely consented to the physical contact, there was no assault because a key element of the offence (absence of consent) is not established. Consent must be genuine (not obtained by fraud), voluntary (not by duress), and informed. Section 22 NFOATP 1997 also provides that consent to ordinary and everyday contact is implied in social interaction. Option B incorrectly characterises consent as an extrinsic defence. Option C is flatly wrong \u2014 s.2 expressly requires absence of consent. Option D adds a no-harm qualification that does not appear in s.2."
+    },
+    {
+      "id": "CRL_M05_L07_Q02",
+      "question": "In R v Brown [1994] HOL, the House of Lords considered whether consent was a defence to assault occasioning actual bodily harm (ABH) and grievous bodily harm (GBH) arising from consensual sadomasochistic activity. What was the decision?",
+      "options": {
+        "A": "The House of Lords held that consent is always a complete defence to any assault, regardless of the degree of harm inflicted",
+        "B": "The House of Lords held (by a 3:2 majority) that consent was not a valid defence to ABH and GBH arising from sadomasochistic activity; the public interest in protecting individuals from harm inflicted for sexual gratification outweighed the individual's right to consent to such harm",
+        "C": "The House of Lords held that consent is a valid defence to ABH but not to GBH",
+        "D": "The House of Lords held that consent in sadomasochistic contexts is invalid only where the harm results in hospitalisation"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Brown [1994] HOL is the leading UK authority on the limits of consent to harm. By a 3:2 majority (Lords Templeman, Jauncey, and Lowry; dissenting Lords Mustill and Slynn), the House of Lords held that consent was not a valid defence to charges of ABH and GBH arising from consensual sadomasochistic activity causing pain for sexual gratification. The majority reasoning was that: (1) The public interest requires that individuals be protected from harm deliberately inflicted for sexual gratification; (2) There is no 'good reason' for the infliction of such harm that would permit the law to recognise consent as valid; (3) Allowing consent would open the door to increasing levels of harm. The decision has been criticised for imposing the court's moral views on private consensual activity. It has been followed in Ireland in DPP v Brown [2023] IESC (though on slightly different reasoning). Options A, C, and D misstate the decision."
+    },
+    {
+      "id": "CRL_M05_L07_Q03",
+      "question": "In R v Wilson [1997] CA (England and Wales), the Court of Appeal distinguished R v Brown in a case involving a husband branding his initials on his wife at her request. What was the basis for the distinction?",
+      "options": {
+        "A": "The Court of Appeal held that any consensual conduct between spouses is lawful, regardless of the harm caused",
+        "B": "The Court of Appeal distinguished Brown on the basis that the branding was analogous to tattooing \u2014 a form of consensual body adornment \u2014 and occurred in a domestic/marital context at the wife's request for purely personal reasons; the law should not intrude into the privacy of the matrimonial home to criminalise consensual conduct of this kind",
+        "C": "The Court of Appeal held that R v Brown was wrongly decided and should not be followed",
+        "D": "The Court of Appeal held that the husband's conduct was not ABH because branding heals \u2014 the injury was temporary"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Wilson [1997] CA (England and Wales) is important for illustrating the limits of R v Brown. The court distinguished Brown by finding that the branding of a wife's buttocks with her husband's initials at her request was more analogous to tattooing than to sadomasochistic harm inflicted for sexual gratification. The key distinctions were: (1) The purpose was personal adornment/expression, not sexual gratification from pain; (2) The wife had requested it; (3) The domestic/private context meant the criminal law should not intrude. The CA expressly declined to hold that all consensual body modification is criminal. Wilson is thus a recognised exception to the Brown principle, available where the purpose of the body modification is legitimate (adornment, personal expression) rather than the infliction of harm for its own sake. Option A overstates Wilson as giving blanket spousal immunity. Option C misrepresents the court's attitude to Brown. Option D focuses on permanence which was not the basis of the decision."
+    },
+    {
+      "id": "CRL_M05_L07_Q04",
+      "question": "In DPP v Brown [2023] IESC, the Irish Supreme Court addressed consent as a defence to s.3 assault causing harm arising from consensual sadomasochistic activity. What was the majority's reasoning?",
+      "options": {
+        "A": "The majority held that consent is a complete defence to all NFOATP offences, including s.3",
+        "B": "The majority (per Dunne J) held that consent is not a valid defence to s.3 assault causing harm where the harm is inflicted for an unlawful purpose; sadomasochistic harm for sexual gratification has no legally recognised purpose and therefore consent cannot negate criminal liability under s.3",
+        "C": "The majority held that consent is available as a defence to s.3 only if the harm is minimal and no medical treatment is required",
+        "D": "The majority held that Irish law is bound by the UK decision in R v Brown [1994] and must follow it without independent analysis"
+      },
+      "correct_answer": "B",
+      "explanation": "DPP v Brown [2023] IESC is the leading Irish authority on consent in the s.3 context. Dunne J (writing for the majority) held that: (1) Consent is not a valid defence to s.3 where the harm is inflicted for an unlawful purpose; (2) The relevant question is whether the purpose for which harm is inflicted is recognised by law \u2014 if the purpose is lawful (surgery, tattooing, recognised sporting competition), consent may be valid; if the purpose is itself unlawful (sadomasochistic harm for sexual gratification), consent cannot negate criminal liability; (3) The court reached a conclusion broadly consistent with R v Brown [1994] HOL, though the Irish court framed it in terms of 'unlawful purpose' rather than 'public interest.' Minority opinions (Finlay Geoghegan J and McKechnie J) argued for greater weight to individual autonomy. Option A incorrectly extends consent to all NFOATP offences. Option C invents a threshold on minimal harm. Option D incorrectly treats English case law as binding in Irish courts."
+    },
+    {
+      "id": "CRL_M05_L07_Q05",
+      "question": "In R v Dica [2004] CA (England and Wales), the Court of Appeal considered whether consent could operate as a defence in a case involving the reckless transmission of HIV through unprotected sex. What principle did this case establish?",
+      "options": {
+        "A": "Consent to sexual intercourse includes implied consent to the risk of any sexually transmissible infection",
+        "B": "Consent to sexual intercourse does not extend to consent to the risk of HIV infection where the complainant was not informed of the accused's HIV status; consent given in ignorance of the HIV risk is no valid consent to the risk of infection; the accused was guilty of inflicting grievous bodily harm (assault causing bodily harm) because the consent was vitiated by the non-disclosure",
+        "C": "The Court of Appeal held that HIV transmission can never be criminalised regardless of consent",
+        "D": "The Court of Appeal held that only intentional HIV transmission can constitute an offence; reckless transmission is not criminal"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Dica [2004] CA (England and Wales) established the important principle that consent to sexual intercourse is not the same as consent to the risk of sexually transmissible infections. The complainant had consented to unprotected sex but was not told of Dica's HIV status. The Court of Appeal held: (1) The complainant had consented to sex, not to the risk of HIV infection; (2) The informed consent to risk of HIV infection was not given \u2014 consent vitiated by ignorance of the relevant risk is no valid consent; (3) Therefore, the reckless transmission of HIV through unprotected sex (where the accused knows of their HIV status and fails to disclose it) constitutes infliction of bodily harm without valid consent. This principle is relevant to Irish law through DPP v RK [2023] IESC 36 (which confirmed the same approach for s.4 NFOATP serious harm cases). Options A, C, and D each misstate the Dica principle."
+    },
+    {
+      "id": "CRL_M05_L07_Q06",
+      "question": "Fraud as to the nature of an act vitiates consent. In the NFOATP context, what types of fraud are most relevant?",
+      "options": {
+        "A": "Any misrepresentation \u2014 even a minor false statement \u2014 made before physical contact automatically vitiates consent",
+        "B": "Fraud as to the nature of the act (deceiving someone as to what act they are consenting to) and fraud as to the identity of the actor are the two forms of fraud that clearly vitiate consent in the NFOATP context; misrepresentation about collateral matters (such as wealth or relationship status) does not vitiate consent",
+        "C": "Fraud only vitiates consent in sexual offences, not in assault-based offences under the NFOATP",
+        "D": "Any dishonest statement made before the physical act automatically constitutes fraud vitiating consent for all purposes"
+      },
+      "correct_answer": "B",
+      "explanation": "The law on fraud vitiating consent draws a distinction between fundamental and non-fundamental misrepresentation: (1) Fraud as to the nature of the act \u2014 deceiving someone about what physical act they are consenting to clearly vitiates consent (e.g., pretending a medical procedure is necessary when it is not; or an accused pretending a sexual act is medical treatment); (2) Fraud as to identity \u2014 if the complainant consents to contact with person A but is actually subjected to contact by person B, consent is vitiated; (3) Collateral misrepresentations \u2014 lies about wealth, status, or unrelated matters do not vitiate consent to the physical act (the complainant is consenting to the act itself, even if they were deceived about surrounding circumstances). This principle is most sharply illustrated in sexual offences (Module 6) but applies equally in the NFOATP context. Option A is overbroad \u2014 only fundamental fraud vitiates consent. Option C incorrectly limits the principle to sexual offences. Option D is also overbroad."
+    },
+    {
+      "id": "CRL_M05_L07_Q07",
+      "question": "In R v BM [2018] CA (England and Wales), the Court of Appeal considered whether body modification procedures performed by an unlicensed practitioner can be consented to. What was the decision?",
+      "options": {
+        "A": "The court held that all body modification procedures are lawful if the person consents, regardless of who performs them",
+        "B": "The court rejected the existence of a general 'body modification' exception to the rule that consent is no defence to ABH/GBH; procedures not performed by licensed medical or tattoo/piercing professionals do not fall within any recognised consent category; extreme body modification for cosmetic or other purposes causing significant harm cannot be lawfully consented to",
+        "C": "The court held that any procedure performed for cosmetic reasons is lawful with consent, as long as no permanent disability results",
+        "D": "The court held that body modification is lawful where the practitioner sincerely believes they are helping the recipient"
+      },
+      "correct_answer": "B",
+      "explanation": "R v BM [2018] CA (England and Wales) involved an unlicensed practitioner who performed extreme body modification procedures (ear removal, nipple removal, tongue bifurcation) on customers who had consented. The Court of Appeal held: (1) There is no general 'recognised body modification' exception to the principle that consent is no defence to wounding/GBH; (2) The only recognised exceptions are: surgery by licensed professionals, tattooing, body piercing, ritual circumcision, and other long-established social practices; (3) Extreme body modification causing significant harm falls outside these exceptions and cannot be consented to as a matter of law. BM is relevant to Irish law in illustrating the limits of autonomous consent in the body modification context, consistent with DPP v Brown [2023] IESC's 'unlawful purpose' framework. Options A and C suggest wider consent availability than the court permitted. Option D creates an irrelevant subjective good faith test."
+    },
+    {
+      "id": "CRL_M05_L07_Q08",
+      "question": "Two people engage in a consensual bare-knuckle fight in a private location. One sustains a broken nose and severe lacerations requiring medical treatment, but neither intended to cause serious harm. What is the likely legal position?",
+      "options": {
+        "A": "Lawful \u2014 as both consented to the fight, no criminal offence is committed",
+        "B": "Criminal \u2014 the fight involves the deliberate infliction of harm that falls within the s.3 definition; following DPP v Brown [2023] IESC, consent is not a valid defence to s.3 where harm is inflicted for an unlawful purpose; an unlicensed bare-knuckle fight is not a recognised sporting contest and therefore consent does not negate liability",
+        "C": "Lawful \u2014 provided neither party was under the influence of alcohol, consensual fighting between adults in private is permissible",
+        "D": "Criminal \u2014 but only if one of the participants suffered injuries requiring more than one night's hospitalisation"
+      },
+      "correct_answer": "B",
+      "explanation": "Bare-knuckle fighting that causes significant harm (broken nose, severe lacerations) engages s.3 NFOATP 1997. Following DPP v Brown [2023] IESC and R v Brown [1994] HOL, consent is not a valid defence where harm is inflicted for an unlawful purpose. An unlicensed bare-knuckle fight is not a recognised sporting contest and does not fall within the sports exception (which requires a regulated, rule-governed activity within organised sports infrastructure). The fight is itself an unlawful activity \u2014 participants cannot consent to the harm that flows from it, even if conducted in private and between consenting adults. This outcome may be criticised as paternalistic but reflects the current state of the law. The Garda\u00ed could prosecute both participants as principal offenders under s.3. Option A incorrectly treats mutual consent as a complete defence. Option C invents a sobriety requirement that has no legal basis. Option D applies an irrelevant hospitalisation duration test."
+    },
+    {
+      "id": "CRL_M05_L07_Q09",
+      "question": "A patient undergoing surgery under general anaesthetic does not consciously consent at the moment of each incision. Does the surgeon commit assault under s.2 NFOATP 1997 with each incision?",
+      "options": {
+        "A": "Yes \u2014 the patient is unconscious and cannot give real-time consent; therefore each incision is an assault",
+        "B": "No \u2014 the patient's prior informed consent to the surgical procedure, given before anaesthesia, is a continuing consent that covers the agreed acts performed during surgery; additionally, s.22 NFOATP 1997 provides for implied consent to ordinary social contact, and medical consensus supports implied consent for necessary acts during an agreed procedure",
+        "C": "Yes \u2014 but the surgeon has a defence of necessity which negates criminal liability even without consent",
+        "D": "No \u2014 surgeons have absolute statutory immunity from assault charges for any acts performed in an operating theatre"
+      },
+      "correct_answer": "B",
+      "explanation": "The surgeon does not commit assault during surgery because the patient has provided prior informed consent to the procedure. Several principles support this: (1) The patient's informed consent given before anaesthesia extends to the surgical acts required to perform the procedure \u2014 consent is not required anew for each individual incision; (2) The consent must be for the specific procedure performed (acting outside the scope of the consented procedure would vitiate consent); (3) Section 22 NFOATP 1997 (implied consent to ordinary social contact) and the broader doctrine of medical consent in healthcare law provide a framework within which medical procedures on consented patients are lawful; (4) Emergency medical procedures where the patient cannot consent may also be justified on necessity grounds, but that is a distinct scenario. The key principle is that meaningful consent encompasses the acts necessary to fulfil the consented purpose. Option A is incorrect as consent does not require moment-by-moment renewal. Option C is unnecessary \u2014 consent, not necessity, is the primary basis. Option D invents a statutory immunity for surgeons."
+    }
+  ]
+}

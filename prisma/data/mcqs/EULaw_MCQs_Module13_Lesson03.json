@@ -1,0 +1,155 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module13_Lesson03.txt",
+  "module_number": 13,
+  "module_title": "Freedom of Establishment and Freedom to Provide Services",
+  "lesson_number": 3,
+  "lesson_title": "The Legislative Framework: Posted Workers, Professional Qualifications, and the Services Directive",
+  "questions": [
+    {
+      "id": "EUL_M13_L03_Q01",
+      "question": "The Posted Workers Directive 96/71/EC (as amended by Directive 2018/957) governs the terms and conditions of employment applicable to workers temporarily posted by their employer to another member state. The Directive applies a 'hard core' of minimum conditions from the host state. Which of the following is NOT included in the hard core of mandatory conditions under the original Directive 96/71?",
+      "options": {
+        "A": "Maximum work periods and minimum rest periods",
+        "B": "Minimum rates of pay",
+        "C": "Pension contributions at the level of host state pension schemes",
+        "D": "Health, safety, and hygiene at work"
+      },
+      "correct_answer": "C",
+      "explanation": "Directive 96/71 Article 3(1) specifies the 'hard core' of terms and conditions that the host state may impose on posted workers (regardless of the law applicable to the employment contract): maximum work periods and minimum rest periods; minimum paid annual holidays; minimum rates of pay (including overtime rates); health, safety and hygiene; protective measures for pregnant women and young people; equal treatment conditions; and conditions for temporary workers. Pension contributions are not listed in the hard core — pension entitlements are governed by the law of the employment contract (typically the home state) and EU social security coordination rules (Regulation 883/2004). Directive 2018/957 (the revised PWD) strengthened protections by replacing 'minimum rates of pay' with 'remuneration' (a broader concept) and extending the hard core to long-term postings (over 12 months, the full host state employment law applies)."
+    },
+    {
+      "id": "EUL_M13_L03_Q02",
+      "question": "In Rüffert v Land Niedersachsen [2008] (C-346/06), a German Land (Lower Saxony) required public procurement contractors to pay wages at the level set by the local construction industry collective agreement. A Polish posted workers employer failed to comply. The CJEU held:",
+      "options": {
+        "A": "The Land's requirement was justified as public procurement is within member state competence",
+        "B": "Requiring posted workers to be paid wages set by a collective agreement that is not universally applicable within the meaning of Directive 96/71 Article 3(8) goes beyond what the Directive permits — the PWD ceiling prevents host states from imposing wage levels beyond those in universally applicable collective agreements or statutory minimum wage laws",
+        "C": "Collective agreements in the construction sector automatically bind foreign posted workers",
+        "D": "The requirement was lawful as social protection of workers is a valid overriding requirement that can justify any wage requirement"
+      },
+      "correct_answer": "B",
+      "explanation": "Rüffert concerned the scope of the Posted Workers Directive and the extent to which host states can impose wage conditions on posted workers. The CJEU held that the host state's power to impose wages on posted workers is limited to: (a) statutory minimum wage laws; and (b) collective agreements that are 'universally applicable' within the meaning of Article 3(8) of Directive 96/71 (i.e., applicable to all enterprises in the sector/geographic area by law or by the relevant authorities). Lower Saxony's public procurement law, which required compliance with a regional collective agreement that was not universally applicable, went beyond what the Directive permits. The Court thus confirmed that Directive 96/71 operates as both a floor (minimum protections for posted workers) and a ceiling (host states cannot exceed the Directive's hard core), consistent with Laval. This interpretation has since been significantly modified by Directive 2018/957."
+    },
+    {
+      "id": "EUL_M13_L03_Q03",
+      "question": "Directive 2018/957 (amending Directive 96/71) introduced the concept of 'long-term posting'. Where a posting exceeds 12 months (or 18 months with a motivated notification), the revised Directive provides:",
+      "options": {
+        "A": "The posted worker becomes an employee of the host state and is fully integrated into its labour market",
+        "B": "Virtually the entire body of host state employment law (not just the hard core) applies to the posted worker — reflecting that long-term posting is more akin to establishment than temporary service provision; only rules on conclusion and termination of employment contracts and supplementary occupational retirement pension schemes are excluded",
+        "C": "The posted worker must reapply for a new visa or work permit under the host state's immigration rules",
+        "D": "The employer must establish a permanent place of business in the host state after 18 months of posting"
+      },
+      "correct_answer": "B",
+      "explanation": "Directive 2018/957 introduced a crucial distinction between short-term posting (up to 12 months) and long-term posting. For long-term postings (over 12 months, or 18 months with a motivated notification to the competent authority), virtually all of the host state's employment law applies — not just the hard core. The only exceptions are rules on the conclusion and termination of employment contracts (including post-contractual non-compete clauses) and supplementary occupational retirement pension schemes. This reflects the policy judgment that long-term posting transitions from 'temporary service provision' (where home state law primarily applies) toward a situation requiring integration into the host state's labour market framework. Directive 2018/957 was a legislative response to Laval/Rüffert controversies, seeking to strengthen the social dimension of the internal market while maintaining the framework for cross-border services."
+    },
+    {
+      "id": "EUL_M13_L03_Q04",
+      "question": "Directive 2006/123 (the Services Directive, known as the 'Bolkestein Directive') was adopted to facilitate the completion of the internal market in services. Article 16 of the Services Directive governs the freedom to provide services. Which of the following sectors is EXCLUDED from the scope of Directive 2006/123?",
+      "options": {
+        "A": "Legal services provided by lawyers",
+        "B": "Accounting and audit services",
+        "C": "Healthcare services and audiovisual services",
+        "D": "Tourism and travel agency services"
+      },
+      "correct_answer": "C",
+      "explanation": "Directive 2006/123 excludes several important service sectors from its scope. Article 2(2) lists the exclusions: services of general non-economic interest; financial services (governed by specific financial services legislation); electronic communications networks and services (governed by the Electronic Communications Framework); transport services (subject to a specific Treaty Title); services of temporary work agencies; healthcare services; audiovisual services (broadcasting, cinema — governed by AVMSD); gambling activities; activities connected with the exercise of official authority; social services relating to social housing, childcare, and support of families and individuals in need. Notably, legal services provided by lawyers were initially controversial but are covered by the Directive (subject to the professional qualifications regulatory framework). The exclusion of healthcare reflects member states' sensitivity about commercialisation of health systems — healthcare is instead governed by Directive 2011/24 (Patients' Rights)."
+    },
+    {
+      "id": "EUL_M13_L03_Q05",
+      "question": "Directive 2006/123 Article 9 provides that member states may make access to a service activity subject to authorisation (licensing) only if three cumulative conditions are met. What are those conditions?",
+      "options": {
+        "A": "The service is economically significant; the provider has demonstrated financial solvency; and there is consumer demand for licensing",
+        "B": "The authorisation scheme must be non-discriminatory; must be justified by an overriding reason of public interest; and must be proportionate — the objective cannot be attained by less restrictive measures such as ex post controls",
+        "C": "The Commission must first approve the authorisation scheme; the scheme must be time-limited; and the provider must be notified of the decision within 30 days",
+        "D": "The authorisation scheme must be based on objective criteria; must be published in the Official Journal; and must be administrated by an independent body"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 9 of the Services Directive codifies the test for permissible authorisation (licensing) schemes: they must be (1) non-discriminatory — not targeting providers from other member states; (2) justified by an overriding reason of public interest (as developed in the case law); and (3) proportionate — the objective cannot be attained by a less restrictive measure (e.g., mandatory insurance requirements, registration rather than full licensing, or a posteriori controls are preferable to prior authorisation where they would achieve the same objective). These three conditions reflect the application of the Gebhard test to authorisation requirements. Articles 10–13 of the Services Directive then impose specific requirements on the conditions for granting authorisations (they must be based on objective, non-discriminatory, proportionate criteria that are published in advance) and procedural requirements (time limits, implied authorisation, etc.)."
+    },
+    {
+      "id": "EUL_M13_L03_Q06",
+      "question": "Directive 2005/36 on the recognition of professional qualifications introduced the European Professional Card (EPC), which allows mobile professionals to have their qualifications recognised more quickly across member states. The EPC system operates through:",
+      "options": {
+        "A": "A paper-based application submitted directly to each host state authority",
+        "B": "An online platform (IMI — Internal Market Information System) through which the home state transmits the application and supporting documents to the host state; the home state verifies the authenticity of the documents; the host state must then recognise the qualification (for regulated professions with automatic recognition) or decide on the application within a short time limit",
+        "C": "A uniform European qualification that replaces all national professional qualifications",
+        "D": "A passport document issued by the European Commission confirming entitlement to practise across all member states"
+      },
+      "correct_answer": "B",
+      "explanation": "The European Professional Card (EPC), introduced by Directive 2013/55/EU amending Directive 2005/36, is an electronic procedure managed through the Internal Market Information System (IMI). The key features: the professional applies through IMI in their home member state; the home state verifies the completeness and authenticity of documents; for professions subject to automatic recognition (nurses, pharmacists, physiotherapists, mountain guides, real estate agents), the host state must issue an EPC or refuse within a specified time limit; for professions under the general system, the host state decides on recognition within a short time limit. The EPC does not replace national qualifications but expedites their cross-border recognition. If the host state fails to act within the time limit, the EPC is deemed granted (implied authorisation). The EPC system significantly reduces administrative burden for mobile professionals."
+    },
+    {
+      "id": "EUL_M13_L03_Q07",
+      "question": "In Rush Portuguesa Lda v Office National d'Immigration [1990] (C-113/89), a Portuguese company providing services in France brought Portuguese workers with it. French law required foreign workers to obtain work permits and be processed through the national immigration office. The CJEU held:",
+      "options": {
+        "A": "France was entitled to require Portuguese workers to obtain French work permits as French immigration law applies to all workers in France",
+        "B": "A service provider established in one member state may bring its own workforce from that state to provide services in another member state without those workers needing host state work permits — the workers are not accessing the host state's labour market; the host state cannot apply its immigration rules (work permit requirements) to EU nationals lawfully employed by an EU service provider, though it may take measures to prevent abuse",
+        "C": "Third-country national workers employed by an EU service provider automatically acquire EU free movement rights when their employer exercises Article 56 rights",
+        "D": "Portugal being a new member state at the time meant its workers had limited free movement rights subject to transitional provisions that justified French immigration controls"
+      },
+      "correct_answer": "B",
+      "explanation": "Rush Portuguesa established a fundamental principle for the cross-border posting of workers. A service provider from one member state that brings its own employees to provide services in another member state does not access the labour market of the host state — the workers remain part of the provider's enterprise and return home after the service is completed. Therefore, the host state cannot impose its national immigration regime (work permit requirements) on these workers as a condition of service provision — doing so would be a restriction on Article 56. The CJEU did, however, note that Community law does not preclude member states from applying their rules on minimum wages and working conditions to service providers who temporarily deploy workers to their territory — a principle subsequently elaborated in the Posted Workers Directive 96/71 and the Laval jurisprudence."
+    },
+    {
+      "id": "EUL_M13_L03_Q08",
+      "question": "The Services Directive 2006/123 Article 16 sets out the framework for the freedom to provide services on a temporary basis. Host state requirements on incoming service providers must meet three cumulative criteria. What are they?",
+      "options": {
+        "A": "Prior authorisation; financial guarantee; and registration with a host state authority",
+        "B": "Non-discrimination; necessity (justified by public policy, public security, public health, or environmental protection — an exhaustive list); and proportionality",
+        "C": "Non-discrimination; objective criteria; and advance publication of requirements",
+        "D": "Compliance with home state rules; proportionality; and approval by the host state authority"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 16(1) of Services Directive 2006/123 provides that member states shall respect the right of providers to provide services in a member state other than their own. Any requirements imposed must be non-discriminatory (not directly or indirectly based on nationality or registered office location), necessary (justified only by public policy, public security, public health, or environmental protection — an exhaustive list of justifications, significantly narrower than the open-ended list of overriding requirements under Article 56 case law), and proportionate (suitable and not beyond what is necessary). Article 16(2) provides an indicative list of prohibited requirements (e.g., requiring establishment, registration with professional bodies, local address). The scope of Article 16 is subject to the Directive's exclusions — sectors excluded from the Directive are governed by general Article 56 TFEU principles with the broader range of possible justifications."
+    },
+    {
+      "id": "EUL_M13_L03_Q09",
+      "question": "The Services Directive 2006/123 includes a 'Points of Single Contact' (PSC) obligation under Article 6. This requires member states to:",
+      "options": {
+        "A": "Establish a single national regulator to approve all service providers across all sectors",
+        "B": "Ensure that service providers can complete all procedures and formalities required to access and exercise service activities through a single administrative point of contact (a one-stop shop) — either electronically or in person — to reduce administrative burdens on cross-border providers",
+        "C": "Ensure that all regulatory decisions on service authorisation are taken by a single ministry",
+        "D": "Create a single EU-wide database of authorised service providers accessible to all member states"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 6 of Directive 2006/123 requires each member state to establish Points of Single Contact (PSCs) — administrative one-stop shops through which service providers can complete all procedures and formalities required to access and exercise service activities, including notifications, authorisation applications, and registrations. This significantly reduces the administrative burden on cross-border service providers, who previously had to navigate multiple competent authorities in the host state. PSCs must be accessible electronically (Articles 7–8) and must provide information on requirements, procedures, fees, and appeal mechanisms. PSCs are a key instrument of administrative simplification in the internal market. Their quality varies significantly across member states in practice — the Commission has engaged in peer review processes to improve PSC functionality."
+    },
+    {
+      "id": "EUL_M13_L03_Q10",
+      "question": "Article 15 of Directive 2006/123 requires member states to evaluate existing requirements applicable to service providers who wish to establish in their territory. Economic needs tests — requirements that the provider demonstrate market demand before receiving authorisation — are specifically prohibited unless:",
+      "options": {
+        "A": "The service sector is already oversaturated with providers",
+        "B": "Article 15(3) permits economic needs tests only if the three cumulative conditions of non-discrimination, necessity by an overriding reason of public interest, and proportionality are met — in practice, pure economic needs tests (demand or supply-based quantitative limits without objective public interest justification) are almost never justifiable under Article 15",
+        "C": "The member state economy requires protection of strategic sectors from foreign competition",
+        "D": "The number of providers has exceeded a fixed statutory limit established by the member state"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 15 of the Services Directive addresses requirements for access to service activities within a member state (establishment). It lists requirements that member states must evaluate and justify — including economic needs tests (authorisation dependent on proof of market demand), quantitative restrictions on the number of operators, minimum tariff requirements, and restrictions on multi-disciplinary activities. Article 15(1) requires member states to examine whether their legal systems contain these requirements. Article 15(2)-(3) permits them only if non-discriminatory, justified by an overriding reason of public interest, and proportionate. Economic needs tests — requiring a provider to demonstrate market demand before being permitted to establish — are particularly problematic because they restrict market access for reasons of competitive protection (protecting existing operators from new entrants), which is an economic rather than a public interest justification. The Directive was significant in driving deregulation across service sectors in many member states."
+    },
+    {
+      "id": "EUL_M13_L03_Q11",
+      "question": "The Posted Workers Directive (as amended by Directive 2018/957) applies to three scenarios of cross-border posting. Which of the following is NOT a recognised posting scenario under the Directive?",
+      "options": {
+        "A": "A worker posted to the territory of a member state on the employer's account and under its direction, under a contract concluded between the employer and the service recipient operating in that state",
+        "B": "A worker posted to an establishment or an undertaking owned by the employer group in the territory of a member state (intra-group posting)",
+        "C": "A worker who independently relocates to another member state to seek employment and is engaged by an employer established in that member state",
+        "D": "A worker posted by a temporary employment undertaking or placement agency to a user enterprise established or operating in the territory of a member state"
+      },
+      "correct_answer": "C",
+      "explanation": "The Posted Workers Directive applies to three posting scenarios (Article 1(3)): (a) the employer posts a worker to another member state on its account and under its direction to fulfil a service contract (classical posting); (b) the employer posts a worker to an establishment or group undertaking in another member state (intra-group posting); (c) a temporary employment agency or placement agency hires out a worker to a user enterprise established or operating in another member state. The Directive does NOT apply to a worker who independently moves to another member state to seek and take up employment there — that person is exercising freedom of movement as a worker under Article 45 TFEU and Regulation 492/2011, not being 'posted' by an employer. The key defining feature of a posted worker is that they are employed and directed by an employer established in another member state and are temporarily sent to work in the host state — they are not joining the host state's labour market."
+    },
+    {
+      "id": "EUL_M13_L03_Q12",
+      "question": "The mutual recognition principle that a service provider lawfully established in one member state should generally be able to provide services in another without being required to comply with all the host state's requirements applies throughout Article 56 TFEU case law. However, which of the following remains a legitimate tool for host state regulation of cross-border service providers even under the Services Directive framework?",
+      "options": {
+        "A": "Requiring service providers to maintain a permanent place of business in the host state before providing any services there",
+        "B": "Applying universally applicable health and safety rules to all workers performing services in the host state — regardless of the provider's home state law — where these rules are genuinely and objectively justified by the need to protect worker health and safety on the host state's territory",
+        "C": "Requiring incoming service providers to use only host state-certified subcontractors",
+        "D": "Applying the host state's consumer protection laws only to services provided by foreign providers — not to domestic providers"
+      },
+      "correct_answer": "B",
+      "explanation": "Despite the mutual recognition principle and the Services Directive's restrictions on host state requirements, the host state retains the right to apply its health and safety rules to all service activities conducted on its territory — including those of incoming foreign providers. This is because health and safety directly concerns the physical wellbeing of workers on the host state's territory and cannot always be adequately assured by home state regulation. The Posted Workers Directive expressly includes health, safety, and hygiene in its hard core of mandatory host state conditions. Services Directive Article 17 (derogations from Article 16) includes provisions for matters covered by Directive 96/71. The key principle: health and safety is a valid, established overriding requirement capable of justifying proportionate host state measures — but only if genuinely necessary, non-discriminatory, and not duplicating equivalent home state protections. Option A (requiring permanent establishment) is a direct violation of Article 56. Option C is potentially unjustifiably restrictive. Option D is direct discrimination."
+    }
+  ],
+  "total_questions": 12
+}

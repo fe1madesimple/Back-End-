@@ -1,0 +1,167 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module03_Lesson03.txt",
+  "module_number": 3,
+  "module_title": "Sources and Hierarchy of EU Law",
+  "lesson_number": 3,
+  "lesson_title": "The Ordinary Legislative Procedure and the Legal Basis",
+  "questions": [
+    {
+      "id": "EUL_M03_L03_Q01",
+      "question": "The ordinary legislative procedure (OLP) under Article 294 TFEU requires the participation of which institutions?",
+      "options": {
+        "A": "The Commission and the Council only",
+        "B": "The European Parliament, the Council, and the Commission (which holds the right of initiative)",
+        "C": "The European Parliament and the European Council",
+        "D": "The Council, the EESC, and the Committee of the Regions"
+      },
+      "correct_answer": "B",
+      "explanation": "The OLP involves the Commission (exclusive right of legislative initiative in most areas), the European Parliament (co-legislator, acting by majority), and the Council (co-legislator, typically acting by QMV). The Parliament and Council are co-equal legislators under the OLP."
+    },
+    {
+      "id": "EUL_M03_L03_Q02",
+      "question": "At first reading under the ordinary legislative procedure, the Parliament adopts its position. If the Council approves the Parliament's position without amendment:",
+      "options": {
+        "A": "The act is referred to the European Council for final approval",
+        "B": "The act is deemed to have been adopted in accordance with the position of the Parliament",
+        "C": "The act must proceed to conciliation to ensure democratic legitimacy",
+        "D": "The Commission must re-examine its proposal before the act can enter into force"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 294(4) TFEU: if the Council approves the Parliament's first-reading position, the act concerned shall be deemed to have been adopted in accordance with that position. This is the most common outcome — a 'first reading agreement' or 'early second reading agreement', often negotiated informally through 'trilogues'."
+    },
+    {
+      "id": "EUL_M03_L03_Q03",
+      "question": "If the Council does not agree with the Parliament's first-reading position, it adopts its own position (first reading Council position). The Parliament then has how long to act at second reading?",
+      "options": {
+        "A": "One month",
+        "B": "Three months",
+        "C": "Six months",
+        "D": "One year"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 294(7) TFEU: the Parliament has three months from communication of the Council's first-reading position to act at second reading. It may approve, amend by absolute majority of component members, or reject the position. The three-month period can be extended by one month at Parliament's initiative."
+    },
+    {
+      "id": "EUL_M03_L03_Q04",
+      "question": "If the Council does not approve the Parliament's second-reading amendments, a Conciliation Committee is convened. The Conciliation Committee is composed of:",
+      "options": {
+        "A": "The full European Parliament and all Council members",
+        "B": "Equal numbers of members of the European Parliament and of the Council (27 members each)",
+        "C": "The Commission acting as mediator between Parliament and Council representatives",
+        "D": "Representatives appointed by the European Council to resolve institutional disputes"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 294(10) TFEU: the Conciliation Committee is composed of the members of the Council or their representatives and an equal number of MEPs representing the European Parliament. The Commission participates to assist in reaching agreement. The Committee must agree a joint text within six weeks (or eight weeks by extension)."
+    },
+    {
+      "id": "EUL_M03_L03_Q05",
+      "question": "The choice of legal basis for an EU legislative act is important because:",
+      "options": {
+        "A": "It determines only which institution proposes the act",
+        "B": "It determines the legislative procedure to be followed, the majority required, and the competence of the EU to act — and must be based on objective factors capable of judicial review",
+        "C": "It determines which member states are bound by the resulting act",
+        "D": "It determines the level of financial penalty for non-compliance"
+      },
+      "correct_answer": "B",
+      "explanation": "The legal basis must be based on objective factors including the aim and content of the measure (not political preference). It determines: (1) which legislative procedure applies (OLP vs. special procedure); (2) the voting rule in the Council (QMV vs. unanimity); (3) the Parliament's role; and (4) whether the EU has competence to act. Incorrect legal basis is a ground for annulment."
+    },
+    {
+      "id": "EUL_M03_L03_Q06",
+      "question": "The 'centre of gravity' test for choosing the correct legal basis, established in the Court's case law, means:",
+      "options": {
+        "A": "The legal basis is determined by which institution would benefit most from each procedure",
+        "B": "When a measure pursues multiple objectives, the legal basis is determined by the predominant purpose — if one purpose is clearly dominant, that basis applies; if genuinely dual, dual legal bases may be required",
+        "C": "The legal basis with the most lenient majority requirement should always be chosen to facilitate legislation",
+        "D": "Member states vote by unanimity to determine the appropriate legal basis for each proposal"
+      },
+      "correct_answer": "B",
+      "explanation": "The Court of Justice has established that where a measure pursues several objectives, the legal basis reflects the predominant purpose, determined by objective examination of aim and content. If the measure has one principal and one incidental objective, the principal objective governs. Only in exceptional cases of genuinely equal objectives may dual legal bases be used (Titanium Dioxide — Case C-300/89)."
+    },
+    {
+      "id": "EUL_M03_L03_Q07",
+      "question": "'Trilogues' in the EU legislative process are:",
+      "options": {
+        "A": "Formal three-reading procedures required for all EU legislation",
+        "B": "Informal tripartite negotiations between Parliament, Council, and Commission representatives, conducted outside formal procedures to reach early agreements",
+        "C": "A procedure unique to CFSP legislation requiring three Council formations to agree",
+        "D": "The three stages (first reading, second reading, conciliation) of the ordinary legislative procedure"
+      },
+      "correct_answer": "B",
+      "explanation": "Trilogues are informal inter-institutional negotiations between Parliament (rapporteur and shadow rapporteurs), Council (Presidency), and Commission representatives. They facilitate early agreement, often at first or second reading, avoiding the full multi-stage procedure. While efficient, they have been criticised for reducing transparency."
+    },
+    {
+      "id": "EUL_M03_L03_Q08",
+      "question": "The 'special legislative procedure' under Article 289 TFEU differs from the ordinary legislative procedure in that:",
+      "options": {
+        "A": "It applies only to emergency legislation and must be completed within 48 hours",
+        "B": "Either the Council acts alone (with Parliament consulting or consenting) or the Parliament acts with Council approval, rather than both being co-equal co-legislators",
+        "C": "It requires unanimity in both the Council and an absolute majority of MEPs",
+        "D": "It applies only to acts of the European Council, not the Council of the EU"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 289(2) TFEU: special legislative procedures apply in specific cases. They typically involve the Council acting (often by unanimity) with the Parliament either consulted (giving an opinion the Council is not bound by) or providing consent (a formal requirement but no power of amendment). These apply to areas like taxation, treaty amendment, and certain constitutional decisions."
+    },
+    {
+      "id": "EUL_M03_L03_Q09",
+      "question": "The 'consent procedure' (formerly 'assent') requires:",
+      "options": {
+        "A": "The Council to obtain the unanimous agreement of all member states",
+        "B": "The Parliament's approval, by absolute majority or majority of votes cast depending on the matter, before the Council can act",
+        "C": "The Commission to formally endorse the Council's decision",
+        "D": "A referendum in affected member states"
+      },
+      "correct_answer": "B",
+      "explanation": "The consent procedure requires the Parliament's approval before the Council can adopt the act. It applies to: accession of new member states, withdrawal agreements (Article 50), international agreements, and certain constitutional and structural acts. The Parliament can only accept or reject — it cannot amend."
+    },
+    {
+      "id": "EUL_M03_L03_Q10",
+      "question": "The subsidiarity principle under Article 5(3) TEU means:",
+      "options": {
+        "A": "The EU must legislate in all areas where member states cannot act effectively",
+        "B": "In areas of non-exclusive EU competence, the EU shall act only if the objectives of the proposed action cannot be sufficiently achieved by member states but can, by reason of scale or effects, be better achieved at Union level",
+        "C": "Member states retain the right to act in areas of EU competence provided they notify the Commission",
+        "D": "EU secondary legislation automatically supersedes national law in all areas of shared competence"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 5(3) TEU: the subsidiarity principle applies to non-exclusive EU competences. The EU may act if action at EU level is necessary because the objectives cannot be sufficiently achieved at member state level ('sufficiency test') and can better be achieved at Union level ('value-added test'). National parliaments may issue reasoned opinions objecting to proposals under Protocol 2 (the 'yellow card' and 'orange card' procedures)."
+    },
+    {
+      "id": "EUL_M03_L03_Q11",
+      "question": "Exclusive EU competences (Article 3 TFEU) include:",
+      "options": {
+        "A": "Employment, social policy, and education",
+        "B": "The customs union, the establishing of competition rules for the internal market, monetary policy for eurozone states, common commercial policy, and conservation of marine biological resources",
+        "C": "All internal market legislation adopted under the ordinary legislative procedure",
+        "D": "Environmental policy and consumer protection"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 3 TFEU lists the areas of exclusive EU competence: customs union; establishment of competition rules for the internal market; monetary policy for eurozone member states; conservation of marine biological resources under the common fisheries policy; and common commercial policy. In exclusive competence areas, only the EU may legislate — member states may only do so if empowered by the EU."
+    },
+    {
+      "id": "EUL_M03_L03_Q12",
+      "question": "The 'flexibility clause' in Article 352 TFEU allows the EU to:",
+      "options": {
+        "A": "Adopt legislation in any area it considers desirable, overriding the principle of conferral",
+        "B": "Act to attain an objective within the scope of the Treaties where the Treaties have not provided the necessary powers, subject to unanimity in the Council, Parliament consent, and national parliamentary notification",
+        "C": "Transfer exclusive competence to member states in areas that have been superseded by national law",
+        "D": "Adopt Regulations without Commission proposal in urgent circumstances"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 352 TFEU (formerly Article 308 TEC) is the 'implied powers' or 'flexibility' provision. It allows the Council (by unanimity, on Commission proposal, after Parliament consent) to act where action is necessary to attain a Treaty objective but the Treaties have not provided the specific powers required. It cannot be used to circumvent constitutional limits (Opinion 2/94) and national parliaments must be notified."
+    },
+    {
+      "id": "EUL_M03_L03_Q13",
+      "question": "The Court of Justice annulled the Tobacco Advertising Directive (Case C-376/98, Germany v Parliament and Council [2000]) because:",
+      "options": {
+        "A": "The Parliament had not been consulted before the Council adopted the Directive",
+        "B": "The Directive used the internal market legal basis (Article 95 TEC) but its real aim was public health protection, a matter for member state competence — it did not genuinely contribute to removal of obstacles to free movement",
+        "C": "The Commission had exceeded its powers by proposing legislation in an area of exclusive member state competence",
+        "D": "The Council had failed to provide adequate reasons for the Directive as required by the Treaties"
+      },
+      "correct_answer": "B",
+      "explanation": "In the Tobacco Advertising case, Germany challenged a Directive banning tobacco advertising adopted under Article 95 TEC (internal market). The Court annulled it, holding that a measure adopted on the internal market basis must genuinely contribute to the removal of obstacles to free movement or distortions of competition. A measure essentially aimed at protecting public health cannot use Article 95 as its legal basis. This landmark ruling disciplined 'Treaty base shopping'."
+    }
+  ],
+  "total_questions": 13
+}

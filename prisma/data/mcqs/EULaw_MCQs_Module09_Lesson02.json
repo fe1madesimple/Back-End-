@@ -1,0 +1,167 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module09_Lesson02.txt",
+  "module_number": 9,
+  "module_title": "Free Movement of Goods",
+  "lesson_number": 2,
+  "lesson_title": "Cassis de Dijon: Mutual Recognition and Mandatory Requirements",
+  "questions": [
+    {
+      "id": "EUL_M09_L02_Q01",
+      "question": "Cassis de Dijon [1979] (Case 120/78) is a landmark in free movement of goods law. The case concerned a German rule requiring fruit liqueurs to have a minimum alcohol content of 25%. The German rule was challenged by an importer of French Cassis de Dijon (alcohol content 15–20%). The CJEU held:",
+      "options": {
+        "A": "That Germany's minimum alcohol content rule was justified under Article 36 on public health grounds",
+        "B": "That the German rule was an MEE contrary to Article 34 and could not be justified — giving rise to two major principles: the principle of mutual recognition and the mandatory requirements doctrine",
+        "C": "That indistinctly applicable national measures are outside Article 34 altogether",
+        "D": "That the French government had to prove that French Cassis was safe before it could be imported into Germany"
+      },
+      "correct_answer": "B",
+      "explanation": "Cassis de Dijon (Rewe-Zentral AG v Bundesmonopolverwaltung für Branntwein) established two foundational principles: (1) Mutual recognition — goods lawfully produced and marketed in one member state must in principle be admitted to the markets of all other member states; member states may not use regulatory differences as barriers unless justified. (2) Mandatory requirements (imperative requirements) — indistinctly applicable national measures can be justified by mandatory requirements of public interest (fiscal supervision, consumer protection, fairness of commercial transactions, public health) provided the measure is proportionate and cannot be achieved by less restrictive means. The minimum alcohol content rule failed both — it was not necessary and could be addressed by labelling."
+    },
+    {
+      "id": "EUL_M09_L02_Q02",
+      "question": "The principle of mutual recognition derived from Cassis de Dijon means:",
+      "options": {
+        "A": "Member states must automatically recognise all products from other member states without any regulatory scrutiny",
+        "B": "Products lawfully produced and marketed in one member state are presumed to satisfy the requirements of all other member states — the import state bears the burden of justifying any restrictions on the basis of specific, proportionate concerns",
+        "C": "Member states must harmonise their product regulations with the member state that has the most liberal rules",
+        "D": "The Commission must certify mutual recognition agreements between individual member states"
+      },
+      "correct_answer": "B",
+      "explanation": "Mutual recognition is a presumption, not an absolute rule: products complying with their home state's rules are presumed to meet host state standards. The burden shifts to the host state to show why its additional requirements are justified. This principle has had profound regulatory significance — it reduces the need for harmonisation by requiring member states to accept each other's product standards as equivalent unless there is a specific, proportionate, justified concern. Mutual recognition does not mean there are no standards — it means the home state's standards are presumed adequate. It also underpins the EU's technical standards framework (Regulation 764/2008)."
+    },
+    {
+      "id": "EUL_M09_L02_Q03",
+      "question": "The 'mandatory requirements' (or 'imperative requirements') doctrine from Cassis de Dijon allows member states to justify indistinctly applicable MEEs on grounds not listed in Article 36 TFEU. The original list from Cassis included:",
+      "options": {
+        "A": "Consumer protection, environmental protection, and cultural policy",
+        "B": "Fiscal supervision of imports, protection of public health, fairness of commercial transactions, and defence of the consumer",
+        "C": "Consumer protection, worker protection, and industrial policy",
+        "D": "Consumer protection, national cultural heritage, and prevention of unfair competition"
+      },
+      "correct_answer": "B",
+      "explanation": "In Cassis, the CJEU listed four mandatory requirements: (1) effectiveness of fiscal supervision; (2) protection of public health; (3) fairness of commercial transactions; and (4) defence of the consumer. Critically, public health appears in both Article 36 and the mandatory requirements doctrine — but mandatory requirements are judge-made, open-ended, and have been expanded by subsequent cases to include environmental protection (Commission v Denmark [1988] — Danish bottles), cultural policy, road safety, press diversity, and others. The list is not closed. The key distinction from Article 36: mandatory requirements can only justify indistinctly applicable measures."
+    },
+    {
+      "id": "EUL_M09_L02_Q04",
+      "question": "A critical limitation of the mandatory requirements doctrine is that it can ONLY justify which type of national measure?",
+      "options": {
+        "A": "Any national measure affecting trade, whether distinctly or indistinctly applicable",
+        "B": "Only indistinctly applicable measures — measures that apply without distinction to both imported and domestic products; distinctly applicable measures (those specifically targeting imports) can only be justified under Article 36",
+        "C": "Only measures adopted after EU harmonisation in the relevant area",
+        "D": "Only measures adopted by national legislatures, not by executive or administrative bodies"
+      },
+      "correct_answer": "B",
+      "explanation": "This is one of the most important limitations of the Cassis mandatory requirements doctrine: it applies ONLY to indistinctly applicable measures — rules that apply in the same way to both domestic and imported products. A distinctly applicable measure (one that specifically burdens imports) cannot be saved by mandatory requirements — it can only be justified under the exhaustive list in Article 36. This distinction has practical significance: if a national rule applies only to imports (or has the effect of singling out imports), it must be justified under Article 36's closed list, not by judge-made mandatory requirements."
+    },
+    {
+      "id": "EUL_M09_L02_Q05",
+      "question": "Commission v Denmark [1988] (the Danish Bottles case, Case 302/86) involved a Danish system requiring beer and soft drinks to be sold in returnable containers on an approved list. The CJEU held:",
+      "options": {
+        "A": "That the measure was justified under Article 36 on public morality grounds",
+        "B": "That environmental protection is a mandatory requirement that can justify an indistinctly applicable MEE; however, the specific requirement that containers be on an approved list was disproportionate — manufacturers could use non-approved containers for limited quantities",
+        "C": "That member states have no power to regulate packaging in ways that affect trade",
+        "D": "That the measure was fully justified as environmental protection always takes precedence over free movement"
+      },
+      "correct_answer": "B",
+      "explanation": "The Danish Bottles case is significant for two reasons: (1) it confirmed that environmental protection is a mandatory requirement — a legitimate ground for justifying indistinctly applicable MEEs (complementing Article 36's list); (2) it applied strict proportionality. The system of returnable containers was justified (serving genuine environmental goals) but the requirement that containers be on an approved government list went further than necessary — it prevented new container types even when manufacturers could demonstrate equivalent environmental performance. The proportionality requirement prevents mandatory requirements from being used to maintain unnecessary market access barriers."
+    },
+    {
+      "id": "EUL_M09_L02_Q06",
+      "question": "After Cassis, if a national measure is an MEE but is justified by a mandatory requirement, what further requirement must the member state satisfy?",
+      "options": {
+        "A": "None — establishing a mandatory requirement is sufficient to validate any national measure",
+        "B": "Proportionality — the measure must be appropriate to achieve the stated mandatory requirement objective and must not go further than necessary; less trade-restrictive alternatives must have been considered",
+        "C": "Prior notification to the Commission and a six-month waiting period",
+        "D": "Approval by a qualified majority of other member states in the Council"
+      },
+      "correct_answer": "B",
+      "explanation": "Satisfying a mandatory requirement is necessary but not sufficient — proportionality is always required. The CJEU applies a two-stage proportionality analysis: (1) suitability — is the measure capable of achieving the mandatory requirement objective? (2) necessity — does it go beyond what is necessary? In many cases measures have failed at proportionality even where the underlying objective is legitimate. For example, labelling requirements are frequently found to be a sufficient (less trade-restrictive) way of achieving consumer protection objectives without imposing outright import bans or composition requirements. The measure must target the specific risk, not be overly broad."
+    },
+    {
+      "id": "EUL_M09_L02_Q07",
+      "question": "The Cassis de Dijon principle of mutual recognition has had what effect on EU legislative harmonisation strategy?",
+      "options": {
+        "A": "It has made harmonisation unnecessary — the CJEU now resolves all trade disputes through mutual recognition",
+        "B": "It shifted EU harmonisation from total (imposing a single European standard) to minimum harmonisation and 'new approach' directives — establishing essential requirements that products must meet, while leaving detailed standards to private bodies; goods meeting these standards enjoy mutual recognition throughout the EU",
+        "C": "It has required the Commission to harmonise all product rules by Regulation to prevent further divergence",
+        "D": "It has no effect on legislative policy — harmonisation and mutual recognition are legally separate processes"
+      },
+      "correct_answer": "B",
+      "explanation": "Cassis transformed the EU's approach to harmonisation: the Commission's 1985 White Paper on completing the internal market (inspired by Cassis) endorsed the 'new approach' to technical harmonisation. Instead of detailed pan-European product standards, 'new approach' directives set essential safety and performance requirements; detailed technical standards are left to European standards bodies (CEN, CENELEC). Products certified as meeting these standards carry the CE mark and are presumed to comply throughout the EU. Where harmonisation has not occurred, mutual recognition (as a matter of EU free movement law) fills the gap. Cassis thus underpins the entire single market programme."
+    },
+    {
+      "id": "EUL_M09_L02_Q08",
+      "question": "The case of Commission v Germany (Beer Purity / Reinheitsgebot) [1987] (Case 178/84) applied the Cassis principle to German rules requiring beer to contain only specified ingredients. The CJEU held:",
+      "options": {
+        "A": "That the Reinheitsgebot was a valid mandatory requirement protecting German cultural heritage",
+        "B": "That the beer purity rules, as applied to imports, were MEEs unjustifiable under mandatory requirements or Article 36 — consumers could be adequately protected by proper labelling of ingredients rather than outright import bans",
+        "C": "That member states may impose composition requirements on beer as a matter of public health",
+        "D": "That the Reinheitsgebot was lawful as it applied equally to German and foreign beer producers"
+      },
+      "correct_answer": "B",
+      "explanation": "Commission v Germany (Reinheitsgebot) is a classic application of Cassis proportionality. Germany's beer purity law, prohibiting beers made with ingredients not on the permitted list (such as maize or rice common in non-German beers), was an MEE. Germany argued consumer protection — German consumers expected 'beer' to mean a pure malt-and-hops product. The CJEU rejected this: consumer protection could be adequately achieved through mandatory labelling of ingredients, which is a less trade-restrictive measure. An outright import ban on foreign-style beers was disproportionate. This case established labelling as the preferred proportionate alternative to composition rules."
+    },
+    {
+      "id": "EUL_M09_L02_Q09",
+      "question": "Can the mandatory requirements doctrine justify MEEs in areas where EU harmonisation has occurred?",
+      "options": {
+        "A": "Yes — mandatory requirements always apply regardless of EU harmonisation",
+        "B": "No — where EU legislation has harmonised the relevant area, national measures must comply with that legislation; a member state cannot use mandatory requirements to go beyond (or undercut) harmonised EU standards in a way that hinders free movement",
+        "C": "Yes, but only where the EU legislation expressly permits national variation",
+        "D": "No — but member states may use Article 36 TFEU regardless of harmonisation"
+      },
+      "correct_answer": "B",
+      "explanation": "EU harmonisation measures pre-empt national measures in the relevant area. Where an EU Directive or Regulation exhaustively harmonises product standards, a member state cannot invoke mandatory requirements (or Article 36) to apply additional or different standards — doing so would undermine the harmonisation and fragment the single market. Member states may only impose stricter standards than EU harmonised rules where the harmonisation measure expressly permits national opt-outs (e.g., minimum harmonisation Directives) or under specific Treaty provisions allowing enhanced protection (e.g., Article 114(4)-(5) TFEU). Where harmonisation is only partial, mandatory requirements can still fill the remaining gap."
+    },
+    {
+      "id": "EUL_M09_L02_Q10",
+      "question": "The Cassis mandatory requirements doctrine was originally limited to four grounds. How has the CJEU developed this list since 1979?",
+      "options": {
+        "A": "The list has been closed — the CJEU has not added new mandatory requirements since Cassis",
+        "B": "The CJEU has progressively expanded the list through case law to include environmental protection, road safety, cultural policy, press diversity, worker protection, and others — the list is open-ended and continues to evolve",
+        "C": "The Commission has legislative power to add new mandatory requirements by Regulation",
+        "D": "New mandatory requirements require unanimous Council approval under Article 352 TFEU"
+      },
+      "correct_answer": "B",
+      "explanation": "The mandatory requirements list has been significantly expanded since Cassis through judicial development. Recognised additional grounds include: environmental protection (Commission v Denmark [1988]); road safety (Commission v France [1986] — taxi regulations); cultural and linguistic policy (Cinéthèque [1985] — French cinema release windows; Familiapress [1997] — Austrian press diversity); protection of fundamental rights (Schmidberger [2003] — freedom of expression/assembly overriding free movement); worker protection; maintaining the financial balance of social security systems. The list is open — the CJEU assesses whether the asserted interest is legitimate and proportionately pursued."
+    },
+    {
+      "id": "EUL_M09_L02_Q11",
+      "question": "In Schmidberger v Austria [2003] (C-112/00), Austria permitted a road closure for an environmental demonstration, which blocked the Brenner motorway (a key transit route) for 28 hours, restricting transport of goods. The CJEU held:",
+      "options": {
+        "A": "That Austria had violated Article 34 TFEU — member states cannot permit activities that prevent free movement of goods",
+        "B": "That Austria's decision to permit the demonstration was a restriction on free movement but was justified — freedom of expression and freedom of assembly (fundamental rights) are legitimate justifications for restricting free movement, subject to proportionality; the restriction was temporary and reasonable",
+        "C": "That fundamental rights are irrelevant to the free movement of goods analysis",
+        "D": "That the demonstrators were liable in damages under Article 340 TFEU for restricting trade"
+      },
+      "correct_answer": "B",
+      "explanation": "Schmidberger is a landmark case in the relationship between free movement and fundamental rights. Austria's permission for the demonstration constituted a state measure restricting free movement of goods (it allowed a blockade of the Brenner motorway). However, the CJEU held that the protection of fundamental rights — here, freedom of expression and assembly — constitutes a legitimate interest capable of justifying restrictions on fundamental freedoms. The measure was proportionate: the demonstration lasted 28 hours, authorities took steps to minimise disruption, it was well-publicised, and alternative routes were available. EU fundamental rights can thus justify MEEs."
+    },
+    {
+      "id": "EUL_M09_L02_Q12",
+      "question": "What is the significance of the 'rule of reason' concept in EU free movement of goods law?",
+      "options": {
+        "A": "It is a formal legal doctrine codified in Article 34 TFEU",
+        "B": "It is the academic term used to describe the Cassis mandatory requirements approach — national measures that would otherwise constitute MEEs can be 'reasonably' justified by legitimate public interest objectives, provided they are proportionate; it reflects a balancing between market integration and national regulatory autonomy",
+        "C": "It applies only to selling arrangements as defined in Keck",
+        "D": "It gives the Commission discretion to exempt certain national measures from Article 34 scrutiny"
+      },
+      "correct_answer": "B",
+      "explanation": "The 'rule of reason' is an academic term (not found in the Treaty) used to describe the approach in Cassis: even where a national measure falls within the Dassonville definition of MEE, it may be justified by a legitimate public interest objective, provided it is proportionate. It reflects the CJEU's recognition that member states must be able to regulate in the public interest even when that regulation affects trade. The rule of reason is a balancing exercise — the question is not whether there is any restriction on trade, but whether the restriction is justified and proportionate. It coexists with Article 36 TFEU's express derogations."
+    },
+    {
+      "id": "EUL_M09_L02_Q13",
+      "question": "Following Cassis, where is the burden of proof in free movement of goods disputes?",
+      "options": {
+        "A": "The importer must prove the national measure constitutes an MEE AND that it is unjustified",
+        "B": "The importer (or Commission) must demonstrate that the measure is an MEE (capable of restricting trade); the burden then shifts to the member state to justify the measure under Article 36 or mandatory requirements, and to demonstrate proportionality",
+        "C": "The burden always lies with the member state to prove all elements",
+        "D": "There is no formal burden allocation — the CJEU decides based on the available evidence regardless of which party bears the burden"
+      },
+      "correct_answer": "B",
+      "explanation": "The burden of proof in free movement disputes operates in two stages: (1) The challenger (importer, trader, or Commission in infringement proceedings) must establish that the national measure is an MEE — that it is 'capable of hindering' trade (the Dassonville standard — a relatively easy threshold to meet). (2) Once an MEE is established, the burden shifts to the member state to demonstrate: a valid justification ground (Article 36 or mandatory requirements); and proportionality. Member states bear the burden of justifying their restrictions — they must provide credible scientific or policy grounds and demonstrate the measure does not go beyond what is necessary."
+    }
+  ],
+  "total_questions": 13
+}

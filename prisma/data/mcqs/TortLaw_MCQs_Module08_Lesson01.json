@@ -1,0 +1,383 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module08_Lesson01.txt",
+  "module_number": 8,
+  "module_title": "Employers' Liability",
+  "lesson_number": 1,
+  "lesson_title": "The Non-Delegable Duty, Four Heads, Contributory Negligence, and Psychiatric Harm",
+  "total_questions": 31,
+  "questions": [
+    {
+      "id": "TL_M08_L01_Q01",
+      "question": "The employer's common law duty to employees is described as 'non-delegable'. Which of the following correctly states the effect of this principle?",
+      "options": {
+        "A": "The employer remains personally liable even where an independent contractor performed the work negligently",
+        "B": "The employer cannot hire contractors to carry out any work on their premises",
+        "C": "The employer is strictly liable for all workplace accidents regardless of fault",
+        "D": "Liability passes entirely to the contractor once the employer has delegated the task"
+      },
+      "correct_answer": "A",
+      "explanation": "Non-delegable means the employer cannot escape liability by pointing to a contractor's negligence. The employer remains directly and personally responsible for ensuring the duty is discharged, as confirmed in Connolly v Dundalk UDC [1990]."
+    },
+    {
+      "id": "TL_M08_L01_Q02",
+      "question": "Which Irish Supreme Court decision confirmed that the employer's duty of care to employees is personal and non-delegable?",
+      "options": {
+        "A": "Latimer v AEC Limited [1953]",
+        "B": "Connolly v Dundalk Urban District Council [1990]",
+        "C": "Kirby v South Eastern Health Board [1995]",
+        "D": "McCann v Brinks Allied Limited [1997]"
+      },
+      "correct_answer": "B",
+      "explanation": "Connolly v Dundalk UDC [1990] is the leading Irish authority. Finlay CJ confirmed that the employer's duty is personal and non-delegable — even where dangerous conditions arose from an independent contractor's negligence, the employer remained liable."
+    },
+    {
+      "id": "TL_M08_L01_Q03",
+      "question": "Which of the following correctly lists the four heads of the employer's common law duty of care to employees?",
+      "options": {
+        "A": "Safe place, adequate pay, safe equipment, and reasonable hours",
+        "B": "Competent management, safe contracts, insurance, and risk assessments",
+        "C": "Safe place of work, safe equipment, safe system of work, and competent co-workers",
+        "D": "Safe place, supervision, grievance procedures, and written risk assessments"
+      },
+      "correct_answer": "C",
+      "explanation": "The common law organises the employer's duty into four overlapping heads: (1) safe place of work, (2) safe equipment and tools, (3) safe system of work, and (4) competent co-workers."
+    },
+    {
+      "id": "TL_M08_L01_Q04",
+      "question": "In Latimer v AEC Limited [1953], the employer spread sawdust after a factory flood but an employee slipped where sawdust had not been laid. The House of Lords held that:",
+      "options": {
+        "A": "The employer was strictly liable as the floor presented a known hazard",
+        "B": "The employer should have closed the factory to fully eliminate the risk",
+        "C": "The employee was contributorily negligent for entering the unprotected area",
+        "D": "The employer had taken reasonable precautions and was not liable"
+      },
+      "correct_answer": "D",
+      "explanation": "Latimer illustrates the balancing approach under the safe place head. The employer took reasonable precautions by spreading sawdust. Closing the factory would have been disproportionate. The employer was not liable."
+    },
+    {
+      "id": "TL_M08_L01_Q05",
+      "question": "Under the safe place of work head, an employer's obligation extends to:",
+      "options": {
+        "A": "Both the employer's own premises and, subject to qualification, third-party premises to which the employee is sent",
+        "B": "Only the employer's own premises where the employment contract was signed",
+        "C": "All premises in the country where the employer's business operates",
+        "D": "Only premises specifically listed in the employee's contract of employment"
+      },
+      "correct_answer": "A",
+      "explanation": "The duty to provide a safe place of work extends not only to the employer's own premises but also — subject to qualification — to third-party premises to which the employee is sent. The duty is calibrated to what is reasonably practicable."
+    },
+    {
+      "id": "TL_M08_L01_Q06",
+      "question": "Regarding the Employer's Liability (Defective Equipment) Act 1969, which statement is correct in the Irish context?",
+      "options": {
+        "A": "It applies in Ireland and imposes strict liability for defective equipment on employers",
+        "B": "There is no Irish equivalent — employers in Ireland rely on common law negligence for equipment defect claims",
+        "C": "It was adopted in Ireland in 1985 with modifications for Irish employment law",
+        "D": "It applies in Ireland only to equipment weighing more than 50 kilograms"
+      },
+      "correct_answer": "B",
+      "explanation": "The Employer's Liability (Defective Equipment) Act 1969 is English legislation with no Irish equivalent. In Ireland, employer liability for defective equipment rests on common law negligence principles only — a key distinction for FE-1."
+    },
+    {
+      "id": "TL_M08_L01_Q07",
+      "question": "Rogers v Bus Átha Cliath [1986], where an employee driver was injured due to a mechanical defect in his bus, illustrates which head of the employer's duty?",
+      "options": {
+        "A": "Safe place of work",
+        "B": "Competent co-workers",
+        "C": "Safe equipment and tools",
+        "D": "Safe system of work"
+      },
+      "correct_answer": "C",
+      "explanation": "Rogers v Bus Átha Cliath illustrates the safe equipment head. The employer was found liable for failing to maintain the bus in a safe mechanical condition, causing injury to the employee driver."
+    },
+    {
+      "id": "TL_M08_L01_Q08",
+      "question": "The 'safe system of work' head of the employer's duty encompasses which of the following?",
+      "options": {
+        "A": "Only the physical layout and condition of the workplace",
+        "B": "Only the provision of personal protective equipment",
+        "C": "Exclusively formal written risk assessments required by statute",
+        "D": "The organisation of tasks, sequencing, instructions, supervision, and provision of protective equipment"
+      },
+      "correct_answer": "D",
+      "explanation": "The safe system of work head is the broadest of the four. It encompasses the manner and method of work organisation including: tasks, sequencing, instructions, supervision, and provision of protective equipment."
+    },
+    {
+      "id": "TL_M08_L01_Q09",
+      "question": "McCann v Brinks Allied Limited [1997] concerned an employee injured during cash-in-transit operations due to a failure to implement a safe working system. Which head of the employer's duty was engaged?",
+      "options": {
+        "A": "Safe system of work",
+        "B": "Safe equipment",
+        "C": "Safe place of work",
+        "D": "Competent co-workers"
+      },
+      "correct_answer": "A",
+      "explanation": "McCann illustrates the safe system of work head. The employer failed to implement a structured, safe procedure for a foreseeably dangerous activity — handling cash collections — and this failure constituted a breach."
+    },
+    {
+      "id": "TL_M08_L01_Q10",
+      "question": "In Kirby v South Eastern Health Board [1995], a nurse was injured lifting a patient. The Health Board was held liable for breach of which head?",
+      "options": {
+        "A": "Safe place of work — the ward layout was inadequate",
+        "B": "Safe system of work — no proper manual handling system, training, or equipment was in place",
+        "C": "Safe equipment — the hoist provided was defective",
+        "D": "Competent co-workers — the co-worker performed the lift incorrectly"
+      },
+      "correct_answer": "B",
+      "explanation": "Kirby illustrates the safe system of work head. The Health Board failed to have an adequate system for manual handling — including proper training and equipment — resulting in the nurse's injury during a foreseeable task."
+    },
+    {
+      "id": "TL_M08_L01_Q11",
+      "question": "Under the competent co-workers head, when does employer liability arise?",
+      "options": {
+        "A": "Whenever a co-worker commits any act that causes injury to a fellow employee",
+        "B": "Only where the co-worker was unqualified under statute to perform the relevant task",
+        "C": "Where the employer negligently employs or retains a person known to be dangerous or incompetent",
+        "D": "Automatically, if the employer fails to provide training to all staff at induction"
+      },
+      "correct_answer": "C",
+      "explanation": "The competent co-workers head imposes a duty to take reasonable care not to employ persons known to be incompetent or dangerous to fellow employees. The key element is employer knowledge of the danger and failure to act on it."
+    },
+    {
+      "id": "TL_M08_L01_Q12",
+      "question": "An employer delegates scaffolding maintenance to an independent contractor. The contractor is negligent and an employee falls from defective scaffolding. What is the employer's position in Ireland?",
+      "options": {
+        "A": "The employer is not liable as the independent contractor assumed responsibility",
+        "B": "The employer is only liable if they were personally aware of the defect",
+        "C": "The contractor alone bears liability as they performed the work",
+        "D": "The employer is liable because the duty to provide a safe place of work is non-delegable"
+      },
+      "correct_answer": "D",
+      "explanation": "Because the employer's duty is non-delegable (confirmed in Connolly v Dundalk UDC [1990]), the employer cannot escape liability by pointing to the contractor's negligence. The employer remains liable even where the defect arose from the contractor's act."
+    },
+    {
+      "id": "TL_M08_L01_Q13",
+      "question": "Contributory negligence in personal injury claims in Ireland is governed by:",
+      "options": {
+        "A": "Section 34 of the Civil Liability Act 1961",
+        "B": "Section 8 of the Safety, Health and Welfare at Work Act 2005",
+        "C": "Section 11 of the Occupiers' Liability Act 1995",
+        "D": "Section 77 of the Succession Act 1965"
+      },
+      "correct_answer": "A",
+      "explanation": "Section 34 of the Civil Liability Act 1961 governs contributory negligence in Ireland. It replaced the old common law complete bar with a proportional apportionment regime."
+    },
+    {
+      "id": "TL_M08_L01_Q14",
+      "question": "Under section 34 of the Civil Liability Act 1961, what is the consequence of a finding of contributory negligence against a plaintiff?",
+      "options": {
+        "A": "The plaintiff's claim is completely defeated and they receive nothing",
+        "B": "The plaintiff's damages are reduced in proportion to the degree of fault attributed to them",
+        "C": "The plaintiff must bring a separate action against the defendant for the reduced amount",
+        "D": "The court orders a new trial limited to the issue of damages"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.34, contributory negligence leads to apportionment — the plaintiff's damages are reduced by the percentage of fault attributed to them. This replaced the old common law rule where contributory negligence was a complete bar to recovery."
+    },
+    {
+      "id": "TL_M08_L01_Q15",
+      "question": "At common law, before the Civil Liability Act 1961, what was the effect of a finding of contributory negligence on a plaintiff's claim?",
+      "options": {
+        "A": "Damages were reduced proportionally to reflect the plaintiff's fault",
+        "B": "The plaintiff received 50% of full damages by default",
+        "C": "The claim was completely defeated — a contributorily negligent plaintiff received nothing",
+        "D": "The court directed referral of the damages question to the Injuries Board"
+      },
+      "correct_answer": "C",
+      "explanation": "At common law, contributory negligence acted as a complete defence. A contributorily negligent plaintiff received nothing. Section 34 of the Civil Liability Act 1961 changed this to a proportional apportionment regime."
+    },
+    {
+      "id": "TL_M08_L01_Q16",
+      "question": "The Irish case of Stewart v Killeen Paper Mills [1959] illustrates which principle in the employment context?",
+      "options": {
+        "A": "Employees who breach workplace rules are always found fully contributorily negligent",
+        "B": "Contributory negligence apportionment in employment cases always results in a 50/50 split",
+        "C": "Courts will never reduce an employee's damages if the employer created a dangerous system",
+        "D": "Contributory negligence must be assessed against the backdrop of the employer's own obligations — an employee acting under pressure within the employer's system is in a different position"
+      },
+      "correct_answer": "D",
+      "explanation": "Stewart v Killeen Paper Mills illustrates that employee contributory negligence in the employment context must be assessed against the employer's obligations. An employee acting under pressure within a system created by the employer is in a fundamentally different position from one ignoring obvious dangers of their own volition."
+    },
+    {
+      "id": "TL_M08_L01_Q17",
+      "question": "The foundational English authority in work-related stress claims, which laid down sixteen propositions governing employer liability, is:",
+      "options": {
+        "A": "Hatton v Sutherland [2002]",
+        "B": "Maher v Jabil Global Services [2005]",
+        "C": "Berber v Dunnes Stores Limited [2009]",
+        "D": "Quigley v Complex Tooling and Moulding Company [2009]"
+      },
+      "correct_answer": "A",
+      "explanation": "Hatton v Sutherland [2002] is the foundational English Court of Appeal authority that laid down sixteen propositions governing employer liability for occupational stress. These were influential in Ireland but have been supplemented by Irish authorities including the Maher test."
+    },
+    {
+      "id": "TL_M08_L01_Q18",
+      "question": "The Maher three-question test for employer liability for work-related psychiatric harm was formulated in which Irish case?",
+      "options": {
+        "A": "Berber v Dunnes Stores Limited [2009]",
+        "B": "Maher v Jabil Global Services [2005]",
+        "C": "Ruffley v Board of Management of Saint Anne's School [2017]",
+        "D": "O'Brien v Bus Éireann [2023]"
+      },
+      "correct_answer": "B",
+      "explanation": "The Maher three-question test was formulated by Clarke J (as he then was) in Maher v Jabil Global Services [2005] in the Irish High Court. It is the primary Irish test for employer liability for psychiatric harm from workplace stress."
+    },
+    {
+      "id": "TL_M08_L01_Q19",
+      "question": "The first question in the Maher three-question test asks:",
+      "options": {
+        "A": "Was the employer subjectively aware of the employee's vulnerability to psychiatric harm?",
+        "B": "Did the employee take steps to mitigate their own psychiatric harm before bringing a claim?",
+        "C": "Was the kind of harm — psychiatric illness — reasonably foreseeable in the circumstances?",
+        "D": "Was the psychiatric harm caused by the employer's deliberate or intentional conduct?"
+      },
+      "correct_answer": "C",
+      "explanation": "The first Maher question asks whether the kind of harm suffered — psychiatric illness — was reasonably foreseeable in the circumstances. This is an objective test assessing whether a reasonable employer would have foreseen the risk of psychiatric harm."
+    },
+    {
+      "id": "TL_M08_L01_Q20",
+      "question": "The second question in the Maher test — whether the actual psychiatric illness was reasonably foreseeable — is described as more demanding than the first question because:",
+      "options": {
+        "A": "It requires proof that the employer intentionally caused the specific illness",
+        "B": "It automatically fails if the first question is answered in the affirmative",
+        "C": "It requires medical expert evidence establishing the precise clinical cause",
+        "D": "It asks whether the specific clinical condition (not just stress generally) was foreseeable, which is a higher threshold"
+      },
+      "correct_answer": "D",
+      "explanation": "The second Maher question is more demanding. An employer might foresee that overwork could cause stress, but the further question is whether they could foresee that it would cause the specific clinical condition that materialised — such as a major depressive disorder rather than temporary anxiety."
+    },
+    {
+      "id": "TL_M08_L01_Q21",
+      "question": "The third question in the Maher test asks what steps the employer could and should have taken. How is this assessed?",
+      "options": {
+        "A": "Through a balancing exercise between the gravity of the risk, the available precautions, and whether it was reasonable to take them",
+        "B": "By strict liability — if psychiatric harm was foreseeable, the employer must prevent it at any cost",
+        "C": "By reference to the statutory code of practice as the definitive standard of care",
+        "D": "By assessing whether the employer sought legal or occupational health advice"
+      },
+      "correct_answer": "A",
+      "explanation": "The third Maher question involves a balancing exercise: the gravity of the risk of psychiatric harm, the precautions available, and whether it was reasonable to expect the employer to have taken them. It is not a strict liability test."
+    },
+    {
+      "id": "TL_M08_L01_Q22",
+      "question": "Berber v Dunnes Stores Limited [2009] is the leading Irish Supreme Court authority on work-related stress. Its key contribution is:",
+      "options": {
+        "A": "Establishing that only physical injuries are recoverable from employers at common law",
+        "B": "Confirming that foreseeability must be assessed with knowledge of the employee's particular vulnerabilities — the thin skull rule applies in the employment context",
+        "C": "Introducing the Maher three-question test for the first time at Supreme Court level",
+        "D": "Holding that employers are strictly liable for psychiatric harm resulting from overwork"
+      },
+      "correct_answer": "B",
+      "explanation": "Berber v Dunnes Stores [2009] is the leading Irish Supreme Court authority. Critically, it confirmed that foreseeability is assessed with knowledge of the particular employee's vulnerabilities — the thin skull principle applies. Mr Berber's pre-existing condition was relevant to what harm was foreseeable."
+    },
+    {
+      "id": "TL_M08_L01_Q23",
+      "question": "Which Irish instrument provides the primary regulatory framework for workplace bullying?",
+      "options": {
+        "A": "Safety, Health and Welfare at Work Act 2005",
+        "B": "Employment Equality Acts 1998–2015",
+        "C": "Code of Practice for Employers and Employees on the Prevention and Resolution of Bullying at Work (SI 672/2020)",
+        "D": "Industrial Relations Act 1990"
+      },
+      "correct_answer": "C",
+      "explanation": "SI 672/2020 (the Code of Practice on Bullying) provides the primary regulatory framework. Breach of the Code does not directly give rise to civil liability, but it is relevant to whether the employer took reasonable steps to prevent and address bullying."
+    },
+    {
+      "id": "TL_M08_L01_Q24",
+      "question": "Which Irish Supreme Court case provides the leading legal definition of workplace bullying for civil liability purposes?",
+      "options": {
+        "A": "Berber v Dunnes Stores Limited [2009]",
+        "B": "Maher v Jabil Global Services [2005]",
+        "C": "Ruffley v Board of Management of Saint Anne's School [2017]",
+        "D": "Quigley v Complex Tooling and Moulding Company [2009]"
+      },
+      "correct_answer": "D",
+      "explanation": "Quigley v Complex Tooling and Moulding Company [2009] is the leading Irish Supreme Court case defining workplace bullying. Macken J defined it as repeated inappropriate behaviour that could reasonably be regarded as undermining the individual's right to dignity at work."
+    },
+    {
+      "id": "TL_M08_L01_Q25",
+      "question": "Under the Quigley definition, why does a single unpleasant incident at work generally not constitute bullying in Irish law?",
+      "options": {
+        "A": "Because the Quigley definition requires repeated behaviour — a pattern — not an isolated incident",
+        "B": "Because the Safety, Health and Welfare at Work Act 2005 imposes a minimum of three incidents",
+        "C": "Because a single incident is actionable only under criminal law",
+        "D": "Because a single incident cannot cause a recognisable psychiatric illness"
+      },
+      "correct_answer": "A",
+      "explanation": "The Quigley definition requires repeated behaviour — a pattern. A single incident, however unpleasant, does not constitute bullying in law. This is one of the three key features of the definition emphasised in the FE-1 materials."
+    },
+    {
+      "id": "TL_M08_L01_Q26",
+      "question": "The Quigley definition of workplace bullying employs which standard of assessment?",
+      "options": {
+        "A": "A subjective standard — whether the employee personally experienced the behaviour as undermining their dignity",
+        "B": "An objective standard — whether the behaviour could reasonably be regarded as undermining the employee's right to dignity at work",
+        "C": "A statutory standard — whether the conduct breaches SI 672/2020",
+        "D": "A comparative standard — whether other employees in the same workplace would have been more resilient"
+      },
+      "correct_answer": "B",
+      "explanation": "The Quigley definition employs an objective standard. The question is whether the behaviour could reasonably be regarded as undermining the employee's dignity at work — not simply whether the employee subjectively experienced it that way."
+    },
+    {
+      "id": "TL_M08_L01_Q27",
+      "question": "Ruffley v Board of Management of Saint Anne's School [2017] reinforced the test for workplace bullying by holding that:",
+      "options": {
+        "A": "The plaintiff's subjective experience of bullying is determinative of whether it occurred",
+        "B": "A minimum of three repeated incidents must be established before the Quigley definition is satisfied",
+        "C": "The reasonable observer test applies — would a reasonable observer, with full knowledge of the circumstances, regard the conduct as bullying?",
+        "D": "Teachers in educational settings have a lower threshold for bullying claims due to their professional vulnerability"
+      },
+      "correct_answer": "C",
+      "explanation": "Ruffley v Board of Management of Saint Anne's School [2017] confirmed the objective reasonable observer test. The Irish Supreme Court held that the question is whether a reasonable observer, with full knowledge of the circumstances, would regard the conduct as bullying. The plaintiff's subjective experience, while relevant, is not determinative."
+    },
+    {
+      "id": "TL_M08_L01_Q28",
+      "question": "O'Brien v Bus Éireann [2023] is significant in workplace bullying law because it illustrates:",
+      "options": {
+        "A": "That workplace bullying can only be remedied through the Workplace Relations Commission, not the civil courts",
+        "B": "That employers are strictly liable for bullying by managers under the 2005 Act",
+        "C": "That contributory negligence cannot be pleaded in workplace bullying claims",
+        "D": "The concurrent availability of a common law negligence action and a statutory duty claim under s.8(2)(g) of the Safety, Health and Welfare at Work Act 2005"
+      },
+      "correct_answer": "D",
+      "explanation": "O'Brien v Bus Éireann [2023] illustrates that bullied employees have concurrent pathways: the common law negligence action and a statutory duty claim under s.8(2)(g) of the Safety, Health and Welfare at Work Act 2005 for failure to prevent workplace bullying."
+    },
+    {
+      "id": "TL_M08_L01_Q29",
+      "question": "For FE-1 purposes, in a problem question involving a workplace stress claim, after establishing breach, which authority should be cited as the leading Irish Supreme Court case?",
+      "options": {
+        "A": "Berber v Dunnes Stores [2009] — for the application of the Maher test and confirmation of the thin skull principle",
+        "B": "Quigley v Complex Tooling [2009] — for the definition of stress-induced workplace harm",
+        "C": "Latimer v AEC [1953] — for the balancing exercise applicable in stress claims",
+        "D": "Connolly v Dundalk UDC [1990] — for the non-delegable duty as it applies to psychiatric harm"
+      },
+      "correct_answer": "A",
+      "explanation": "Berber v Dunnes Stores [2009] is the leading Irish Supreme Court authority on work-related stress. It applies and refines the Maher test, confirms the thin skull principle, and is the primary authority to cite when addressing employer liability for psychiatric harm from stress."
+    },
+    {
+      "id": "TL_M08_L01_Q30",
+      "question": "An employer knows that an employee has a pre-existing anxiety disorder. The employer doubles the employee's workload, and the employee develops a severe depressive disorder. The employer argues foreseeability of this severity cannot be established. How does Berber v Dunnes Stores affect this argument?",
+      "options": {
+        "A": "Berber supports the employer — foreseeability is assessed purely objectively without reference to individual vulnerability",
+        "B": "Berber defeats this argument — foreseeability must be assessed with knowledge of the employee's particular vulnerabilities, meaning the severity of harm was foreseeable",
+        "C": "Berber only applies to retail employees and is of no relevance in other sectors",
+        "D": "Berber requires that the employee first seek medical treatment before the employer's duty is triggered"
+      },
+      "correct_answer": "B",
+      "explanation": "Berber v Dunnes Stores [2009] confirms that where the employer has knowledge of an employee's pre-existing vulnerability, foreseeability is assessed in light of that knowledge. The thin skull principle applies. The employer who knew of the anxiety disorder cannot argue the severe depressive disorder was unforeseeable."
+    },
+    {
+      "id": "TL_M08_L01_Q31",
+      "question": "Which of the following best describes the FE-1 exam approach to an employer's liability problem question?",
+      "options": {
+        "A": "Apply strict liability and calculate full damages without considering defences",
+        "B": "Focus only on statutory duties under the Safety, Health and Welfare at Work Act 2005",
+        "C": "Establish the employment relationship, identify the relevant head of duty, apply cases, note the non-delegable nature of the duty citing Connolly v Dundalk UDC, and consider contributory negligence under s.34 CLA 1961",
+        "D": "Identify only whether the injury was foreseeable without categorising the specific head of duty"
+      },
+      "correct_answer": "C",
+      "explanation": "The FE-1 approach requires: establishing the employment relationship, identifying the relevant head of duty (safe place/equipment/system/competent staff), applying relevant cases, noting the non-delegable nature of the duty citing Connolly v Dundalk UDC, and considering contributory negligence under s.34 CLA 1961."
+    }
+  ]
+}

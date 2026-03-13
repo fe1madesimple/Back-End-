@@ -1,0 +1,167 @@
+{
+  "subject": "Constitutional Law",
+  "el_script_ref": "ConstitutionalLaw_ElevenLabs_Module06_Lesson03.txt",
+  "module_number": 6,
+  "module_title": "Fundamental Rights III: Property, Religion and Directive Principles",
+  "lesson_number": 3,
+  "lesson_title": "Directive Principles of Social Policy (Art. 45)",
+  "total_questions": 13,
+  "questions": [
+    {
+      "id": "CON_M06_L03_Q01",
+      "question": "Article 45 sets out 'Directive Principles of Social Policy'. Article 45 itself states that these principles are 'intended for the general guidance of the Oireachtas' and that the 'application of those principles in the making of laws shall be the care of the Oireachtas exclusively'. What is the constitutional status of Art. 45?",
+      "options": {
+        "A": "Art. 45 creates directly enforceable constitutional rights that individuals can assert in court",
+        "B": "Art. 45 is non-justiciable — its principles cannot be enforced by courts as individual rights; they are exclusively a matter for the Oireachtas and cannot provide a basis for a constitutional action",
+        "C": "Art. 45 creates absolute obligations on the State that are enforceable by the Supreme Court only",
+        "D": "Art. 45 has been superseded by EU fundamental rights law and is no longer of constitutional relevance"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 45 is the only provision of the Irish Constitution that is expressly non-justiciable — it states on its face that application of the principles is 'the care of the Oireachtas exclusively'. Courts have consistently held that Art. 45 cannot found a constitutional action and cannot be relied upon to invalidate legislation. Individuals cannot invoke Art. 45 to claim social welfare benefits, housing rights, or minimum wages as constitutional entitlements. However, Art. 45 can inform the interpretation of other constitutional provisions and has influenced unenumerated rights jurisprudence (State (Healy) v Donoghue)."
+    },
+    {
+      "id": "CON_M06_L03_Q02",
+      "question": "Article 45.2(i) provides that the State shall, in particular, direct its policy towards securing that the citizens (all of whom, men and women equally, have the right to an adequate means of livelihood) may through their occupations find the means of making reasonable provision for their domestic needs. Has the courts recognised a justiciable constitutional right to a minimum income based on this provision?",
+      "options": {
+        "A": "Yes — the Supreme Court in Landers v Minister for Social Welfare [2000] recognised a constitutional right to a minimum income",
+        "B": "No — Art. 45 is non-justiciable; the right to an adequate means of livelihood in Art. 45.2(i) cannot be enforced in court; any such claim must rely on Art. 40.3 unenumerated rights or specific statutory provisions",
+        "C": "Yes — but only through EU fundamental rights (Art. 34 of the EU Charter)",
+        "D": "Yes — the right to a minimum income is enforceable under Art. 40.1 equality"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 45.2(i) contains an aspirational reference to citizens' right to adequate means of livelihood, but this is not a justiciable constitutional right. Courts have consistently declined to derive enforceable socio-economic rights from Art. 45. Any constitutional claim to social welfare benefits must be grounded in Art. 40.3 (unenumerated rights), Art. 40.1 (equality — challenging discrimination in benefit entitlement) or statutory provisions. The Supreme Court confirmed in multiple cases that Art. 45 does not provide the constitutional foundation for individually enforceable socio-economic rights."
+    },
+    {
+      "id": "CON_M06_L03_Q03",
+      "question": "In State (Healy) v Donoghue [1976] IR 325, O'Higgins CJ referenced Article 45.4 (concerning minimum wages and conditions) as informing the scope of constitutional rights. How was Art. 45 used in this context?",
+      "options": {
+        "A": "Art. 45.4 was used directly to establish an enforceable right to legal representation",
+        "B": "Art. 45 was used interpretively — not as a direct source of rights but as confirming the social context within which unenumerated rights under Art. 40.3 should be understood; it informed the recognition of the right to legal representation in serious criminal proceedings as a constitutional right under Art. 40.3.1° and Art. 38.1",
+        "C": "Art. 45 provided the legal basis for the statutory free legal aid scheme",
+        "D": "Art. 45 was cited as a reason to strike down the failure to provide legal aid as unconstitutional in its own right"
+      },
+      "correct_answer": "B",
+      "explanation": "State (Healy) v Donoghue [1976] IR 325 is notable for O'Higgins CJ's use of Art. 45 as an interpretive guide — though not as a direct source of justiciable rights. He referred to Art. 45's social policy directives to contextualise the recognition of the right to legal representation as an aspect of the unenumerated rights under Art. 40.3.1° and the fair trial guarantee of Art. 38.1. This illustrates Art. 45's indirect constitutional utility: while it cannot ground a court action, it can inform the content and scope of justiciable rights derived from other constitutional provisions."
+    },
+    {
+      "id": "CON_M06_L03_Q04",
+      "question": "Article 45.3.1° provides that the State shall favour and, where necessary, supplement private initiative in industry and commerce. Does this provision require the State to maintain a free market economy and prevent State ownership of enterprises?",
+      "options": {
+        "A": "Yes — Art. 45.3.1° constitutionally mandates a fully private enterprise economy",
+        "B": "No — Art. 45.3.1° is non-justiciable and merely expresses a preference for private initiative; it does not prevent the State from establishing State enterprises, nationalising industries, or otherwise intervening in the economy",
+        "C": "Yes — the Supreme Court held in ESB v Lawlor [1961] that State commercial enterprises violate Art. 45",
+        "D": "Art. 45.3.1° prohibits all State commercial activity but permits State regulation of private commerce"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 45.3.1° — like all of Art. 45 — is non-justiciable and cannot be used to strike down legislation. It expresses a constitutional preference for private initiative but does not prohibit State enterprise. Ireland has had extensive State enterprise since 1937 (ESB, CIÉ, Bord na Móna, RTÉ, Aer Lingus etc.) without constitutional challenge on Art. 45 grounds. The Oireachtas has full discretion in deciding the extent of State economic intervention and Art. 45 cannot ground a court challenge to legislation establishing or maintaining State enterprises."
+    },
+    {
+      "id": "CON_M06_L03_Q05",
+      "question": "Article 45.4.1° provides that the State shall endeavour to ensure that the strength and health of workers, men and women, and the tender age of children, shall not be abused and that citizens shall not be forced by economic necessity to enter avocations unsuited to their sex, age or strength. Has this provision been used in court proceedings?",
+      "options": {
+        "A": "Yes — it directly grounds employment discrimination claims in all Irish courts",
+        "B": "No — Art. 45.4.1° is non-justiciable; claims about unsuitable working conditions or exploitation of workers must rely on statutory employment law (Safety, Health and Welfare at Work Act, Employment Equality Acts, Organisation of Working Time Act) rather than Art. 45",
+        "C": "Yes — the High Court in Cullen v Minister for Labour [1985] awarded damages based on Art. 45.4",
+        "D": "Art. 45.4 creates a directly enforceable right not to be required to work more than 48 hours per week"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 45.4.1° is part of the non-justiciable social policy directives of Art. 45. Courts cannot enforce its aspirations as individual rights. The extensive body of Irish and EU employment law — the Safety, Health and Welfare at Work Act 2005, the Organisation of Working Time Act 1997 (implementing the EU Working Time Directive), the Employment Equality Acts 1998-2015, and the National Minimum Wage Act 2000 — gives practical legislative effect to the social policy aims of Art. 45 without those aims being directly enforceable as constitutional rights."
+    },
+    {
+      "id": "CON_M06_L03_Q06",
+      "question": "Which of the following claims could most plausibly succeed in court as a constitutional argument?",
+      "options": {
+        "A": "Claim A: A social welfare recipient sues the State directly under Art. 45.2(i) for failure to provide an adequate means of livelihood",
+        "B": "Claim B: A person challenges a social welfare provision that discriminates between two otherwise identical claimants purely on grounds of race, invoking Art. 40.1 equality (and Art. 45 as interpretive context)",
+        "C": "Claim C: A housing applicant sues the State under Art. 45 for failure to provide adequate housing",
+        "D": "Claim D: An employee sues the State under Art. 45.4 for requiring work conditions unsuited to their age"
+      },
+      "correct_answer": "B",
+      "explanation": "Claims A, C and D all directly invoke Art. 45 as a source of justiciable rights — which courts have consistently rejected given Art. 45's express non-justiciability. Claim B is different: it uses Art. 40.1 (a fully justiciable provision) as the primary basis, with Art. 45 as interpretive context to inform what equality requires in the social welfare context. Courts can adjudicate Art. 40.1 equality challenges to social welfare legislation — the question is whether the discriminatory distinction is rational and proportionate. Art. 45 can add context but cannot stand alone as a ground of claim."
+    },
+    {
+      "id": "CON_M06_L03_Q07",
+      "question": "Article 45.1 provides that the State shall strive to promote the welfare of the whole people by securing and protecting as effectively as it may a social order in which justice and charity shall inform all the institutions of the national life. Does this general principle have any legal effect?",
+      "options": {
+        "A": "Yes — it creates a directly enforceable right to social justice for all citizens",
+        "B": "No direct legal effect — Art. 45.1 is a non-justiciable general aspiration; however, it reflects the constitutional value of solidarity and social justice that has influenced the approach to unenumerated rights and the State's positive obligations in areas such as legal aid and education",
+        "C": "Art. 45.1 creates a constitutional obligation on the Supreme Court to intervene whenever it perceives social injustice",
+        "D": "Art. 45.1 creates mandatory annual reporting obligations for the Government on social welfare adequacy"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 45.1 is an aspirational statement of the constitutional vision for social policy — non-justiciable but reflective of the Constitution's underlying value commitment to social solidarity and the common good. While it cannot found a court action, it informs the overall constitutional context. Courts have occasionally referenced Art. 45's social policy aims to support the recognition of positive State obligations under Art. 40.3 and to justify measures promoting social welfare as constitutionally legitimate exercises of the common good power. It is a constitutional aspiration, not a right."
+    },
+    {
+      "id": "CON_M06_L03_Q08",
+      "question": "How does Article 45's non-justiciability compare to the approach in countries such as India, South Africa or Germany where socio-economic rights are directly enforceable through courts?",
+      "options": {
+        "A": "Ireland's approach is identical to South Africa where all social rights are fully justiciable",
+        "B": "Ireland's Art. 45 represents a classic 'directive principles' approach — social goals are set for the legislature but are not individually enforceable; by contrast, South Africa's Constitution (Arts. 26-29) makes socio-economic rights directly enforceable subject to progressive realisation; Germany's Basic Law grounds socio-economic policy in human dignity (Art. 1) but with limited direct enforcement; Ireland's approach leaves social policy primarily to democratic choice",
+        "C": "Ireland's approach is stricter than all other constitutional systems — no country enforces socio-economic rights",
+        "D": "Art. 45 is identical to India's Directive Principles in that both are non-justiciable suggestions with no constitutional weight"
+      },
+      "correct_answer": "B",
+      "explanation": "Ireland's Art. 45 'directive principles' approach (modelled partly on India's Constitution and social Catholicism) leaves socio-economic rights as legislative aspirations rather than individually enforceable rights. South Africa's Constitution represents the most advanced model of justiciable socio-economic rights — courts can review whether the State is taking reasonable progressive steps to realise rights to housing, health, education and social security (Government of the RSA v Grootboom [2000]). The TD v Minister for Education [2001] and Sinnott [2001] cases show Irish courts' reluctance to move beyond Art. 45's non-justiciable framework toward South African-style enforcement."
+    },
+    {
+      "id": "CON_M06_L03_Q09",
+      "question": "The National Minimum Wage Act 2000 set a statutory minimum hourly rate. Is this legislation required by Article 45, and what is the constitutional basis for the legislation?",
+      "options": {
+        "A": "The legislation is constitutionally required by Art. 45.4.1° and would be unconstitutional if repealed",
+        "B": "The legislation gives effect to the social policy aspirations of Art. 45 but is not constitutionally compelled by it; its constitutional basis is the Oireachtas's general power to legislate (Art. 15.2.1°); it could theoretically be repealed without constitutional violation as Art. 45 is non-justiciable",
+        "C": "The minimum wage legislation is exclusively an EU law requirement and has no domestic constitutional basis",
+        "D": "The minimum wage is a constitutional right under Art. 40.3 and the legislation would be unconstitutional if it set the wage too low"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 45.4.1° aspirationally encourages adequate working conditions and wages — but as a non-justiciable principle, it cannot compel legislation or make its repeal unconstitutional. The National Minimum Wage Act 2000 reflects the social policy goals of Art. 45 but derives its constitutional legitimacy from the general Oireachtas legislative power under Art. 15.2.1°. EU law (EU Adequate Minimum Wages Directive 2022) now provides a supranational minimum wage framework. The minimum wage as a specific amount is not constitutionally fixed; the Oireachtas has discretion to set, adjust, or (theoretically) repeal it, subject to EU law obligations."
+    },
+    {
+      "id": "CON_M06_L03_Q10",
+      "question": "Article 45.3.2° provides that the State shall endeavour to ensure that the ownership and control of the material resources of the community may be so distributed amongst private individuals and the various classes as best to subserve the common good. Could a person use this provision to challenge the concentration of media ownership in a few private companies?",
+      "options": {
+        "A": "Yes — Art. 45.3.2° directly prohibits media monopolies and grounds an individual court action",
+        "B": "No — Art. 45.3.2° is non-justiciable; individuals cannot invoke it to challenge private media concentration; regulatory policy on media ownership is a matter for the Oireachtas and the executive (through competition law and media pluralism legislation such as the Broadcasting Act 2009 and Competition Act 2002)",
+        "C": "Yes — but only if the media concentration also violates Art. 40.6.1°(i) freedom of expression",
+        "D": "Art. 45.3.2° creates a justiciable right in citizens to diversified media ownership"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 45.3.2°'s aspiration for distributed ownership of material resources cannot ground individual court actions — it is non-justiciable by Art. 45's express terms. Challenges to media concentration must rely on competition law (Competition Act 2002, EU merger regulation), broadcasting regulation (Broadcasting Act 2009, media mergers under Competition Acts), or freedom of expression arguments under Art. 40.6. The appropriate mechanism for addressing media pluralism concerns is legislative and regulatory, not constitutional litigation under Art. 45."
+    },
+    {
+      "id": "CON_M06_L03_Q11",
+      "question": "A politician argues that Art. 45 requires the State to provide free universal healthcare. Is this argument constitutionally correct?",
+      "options": {
+        "A": "Yes — Art. 45.4.1° requires free universal healthcare as a constitutional obligation",
+        "B": "No — Art. 45 is non-justiciable and does not constitutionally compel any specific healthcare system; the constitutional basis for healthcare obligations is more appropriately Art. 40.3.2° (right to life and bodily integrity) which imposes some positive State obligations, and any universal healthcare entitlement would require legislation rather than constitutional compulsion",
+        "C": "Yes — the unenumerated right to health derived from Art. 40.3 mandates a specific national healthcare system",
+        "D": "Yes — EU law requires member states to provide universal healthcare and overrides Art. 45's non-justiciability"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 45 cannot be used to compel the State to provide any specific level of healthcare provision — it is non-justiciable. The closest constitutional provision for healthcare obligations is Art. 40.3.2° (State must protect the right to life and bodily integrity), which has generated some positive State obligations (e.g., emergency healthcare). However, even Art. 40.3 does not constitutionally mandate a particular healthcare system model. Ireland's universal healthcare ambitions (Sláintecare) are a matter of legislative and executive policy choice, not constitutional compulsion. The Health Acts and related legislation provide the statutory framework."
+    },
+    {
+      "id": "CON_M06_L03_Q12",
+      "question": "Why might Article 45's directive principles nonetheless matter in Irish constitutional discourse, despite their non-justiciability?",
+      "options": {
+        "A": "They have no constitutional significance — non-justiciable provisions are effectively deleted from the Constitution",
+        "B": "Art. 45 matters because: (i) it reflects the constitutional framers' social vision and values; (ii) it can inform courts' interpretation of justiciable provisions (Art. 40.3 unenumerated rights, Art. 40.1 equality); (iii) it provides political and constitutional legitimacy for extensive State social welfare legislation; and (iv) it reflects a constitutional commitment to social solidarity that informs the overall constitutional order",
+        "C": "Art. 45 matters only because the EU Charter of Fundamental Rights incorporates it by reference",
+        "D": "Art. 45 matters because it can be relied on by the Oireachtas to override any other constitutional provision"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 45 has constitutional significance despite non-justiciability. First, it reflects the constitutional architecture's commitment to social justice, solidarity and the common good — values that permeate constitutional interpretation. Second, courts have used Art. 45 as interpretive context for justiciable provisions: O'Higgins CJ in State (Healy) v Donoghue [1976] used Art. 45 to confirm the breadth of unenumerated rights. Third, Art. 45 provides constitutional legitimacy for extensive welfare legislation — statutes implementing social policy cannot easily be challenged as unconstitutional interference if they align with Art. 45's directives. Fourth, it shapes political discourse about what the Constitution means."
+    },
+    {
+      "id": "CON_M06_L03_Q13",
+      "question": "Article 45.2(ii) provides that the State shall endeavour to ensure that the ownership and control of material resources of the community shall not be concentrated in the hands of a few to the common detriment. Could a claimant use this to challenge a tax system that benefits the very wealthy at the expense of the general population?",
+      "options": {
+        "A": "Yes — Art. 45.2(ii) creates a constitutional right to progressive taxation",
+        "B": "No — Art. 45.2(ii) is non-justiciable; taxation policy is exclusively a matter for the Oireachtas under Art. 17 (Money Bills) and Art. 21; a challenge to taxation as insufficiently redistributive cannot be grounded in Art. 45; the appropriate avenue is democratic and political, not judicial",
+        "C": "Yes — but only through the EU's Pillar of Social Rights",
+        "D": "Yes — Art. 40.1 equality combined with Art. 45.2(ii) creates an enforceable right to a tax system that does not favour the wealthy"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 45.2(ii) is non-justiciable — courts cannot strike down tax legislation as constitutionally inadequate on the basis that it does not sufficiently redistribute wealth. Taxation policy is the exclusive domain of the Oireachtas under Art. 17 (Money Bills must originate in Dáil Éireann) and Art. 21 (Seanad cannot amend Money Bills). The courts have consistently declined to second-guess taxation policy on grounds of social justice or redistributive adequacy. Constitutional challenges to taxation can only succeed on grounds such as Art. 40.1 discriminatory classifications — not Art. 45 aspirations."
+    }
+  ]
+}

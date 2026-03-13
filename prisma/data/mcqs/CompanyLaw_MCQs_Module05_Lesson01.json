@@ -1,0 +1,215 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module05_Lesson01.txt",
+  "module_number": 5,
+  "module_title": "Directors and Their Fiduciary Duties",
+  "lesson_number": 1,
+  "lesson_title": "Types of Directors and the Duty to Act in Good Faith",
+  "total_questions": 17,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Mark has never been formally appointed as a director of Techno Ltd, but he has attended every board meeting for two years, made all major commercial decisions, and the other directors routinely defer to him. The company becomes insolvent. The liquidator seeks a restriction order against Mark. Can Mark be restricted under S819 CA 2014?",
+      "options": {
+        "A": "No — restriction orders under S819 can only be made against formally appointed directors whose names appear in the CRO register",
+        "B": "Yes — Mark is a de facto director under S222 CA 2014 (a person occupying the position of director without formal appointment) and is treated as a director for all purposes of Part 5",
+        "C": "No — Mark can only be disqualified under S839, not restricted under S819, because he was never formally appointed",
+        "D": "Yes, but only if Mark also held shares in the company"
+      },
+      "correct_answer": "B",
+      "explanation": "S222 CA 2014 defines a de facto director as a person who occupies the position of director but has not been formally appointed. Such a person is treated as a director for the purposes of Part 5 CA 2014. Re Lynrowan Enterprises confirmed it would be 'nonsensical' not to permit restriction proceedings against persons who acted as directors without formal appointment. Secretary of State v Tjolle established the test: whether 'the person was part of the corporate governing structure.' Mark satisfies this test clearly — he made all major decisions and the board deferred to him."
+    },
+    {
+      "id": 2,
+      "question": "Laura is not a director or employee of Widgets Ltd, but the two formally appointed directors habitually act in accordance with her instructions. When Laura says jump, they ask how high. The company enters liquidation. Under S221 CA 2014, how is Laura classified and what are the implications?",
+      "options": {
+        "A": "Laura is a de facto director — she occupies the position of director without formal appointment",
+        "B": "Laura is a shadow director — a person who is not formally appointed but in accordance with whose instructions or directions the board is accustomed to act. She is treated as a director and subject to the same duties and liability",
+        "C": "Laura has no legal liability — she is merely an informal adviser and advisers are expressly excluded from all Companies Act obligations",
+        "D": "Laura is a nominee director representing an undisclosed principal"
+      },
+      "correct_answer": "B",
+      "explanation": "S221 CA 2014 defines a shadow director as a person 'in accordance with whose directions or instructions the directors of the company are accustomed to act.' Note the distinction from a de facto director (S222 — someone who acts as a director openly) vs a shadow director (someone who controls from behind the scenes). Where the board habitually acts on Laura's instructions, she is a shadow director. Shadow directors are subject to the same duties as formally appointed directors under Part 5 CA 2014, and can be restricted (S819) and disqualified (S839). The professional adviser exception: where a person gives advice in a professional capacity, they do not automatically become a shadow director — but Laura's relationship clearly exceeds mere advice."
+    },
+    {
+      "id": 3,
+      "question": "S227(1) CA 2014 provides that a director owes the duties set out in S228 'to the company.' Three minority shareholders of FastPrint Ltd believe directors are acting against the shareholders' personal financial interests. The minority shareholders wish to sue the directors for breach of duty directly. Under S227(1), what is the correct legal position?",
+      "options": {
+        "A": "Directors owe duties directly to shareholders — shareholders can sue directors directly for breach of fiduciary duty",
+        "B": "Directors owe duties to the company alone — only the company can enforce breach of S228. Individual shareholders cannot sue directors for breach unless acting via a derivative action or S212 remedy",
+        "C": "Directors owe duties to shareholders and creditors equally — any party may enforce",
+        "D": "Directors owe duties to the company but shareholders can substitute for the company in all enforcement actions as beneficial owners"
+      },
+      "correct_answer": "B",
+      "explanation": "S227(1) CA 2014 is clear: the duties in S228 are owed 'to the company and the company alone.' Individual shareholders cannot sue directors directly for breach of fiduciary duty — the action belongs to the company. This is an application of the Foss v Harbottle proper plaintiff rule. Shareholders seeking to challenge director conduct have two routes: (i) the derivative action (acting on behalf of the company where fraud on the minority is established — Fanning v Murtagh [2009]); or (ii) S212 CA 2014 oppression/disregard of interests petition. The distinction matters greatly: if directors have harmed the company (reducing share value), the loss is the company's, not the shareholder's personal loss."
+    },
+    {
+      "id": 4,
+      "question": "The directors of BuildCon Ltd issue 500,000 new shares to a consortium of investors in order to ensure that a hostile takeover bid by a rival company will be blocked — the new shares will dilute the rival's stake below the level needed to pass a special resolution. No capital is needed and the issue is not in the company's commercial interest. Applying Howard Smith Ltd v Ampol Petroleum [1974] AC 821 (PC), are the directors in breach of duty?",
+      "options": {
+        "A": "No — directors have an absolute power to issue shares; a power exercised in good faith cannot be challenged",
+        "B": "Yes — issuing shares for the primary purpose of blocking a takeover is an exercise of the share allotment power for an improper purpose — this is a breach of S228(1)(b) CA 2014",
+        "C": "No — blocking a hostile takeover is always in the interests of the company and its shareholders",
+        "D": "Yes, but only if the directors personally benefited from the share issue"
+      },
+      "correct_answer": "B",
+      "explanation": "Howard Smith Ltd v Ampol Petroleum [1974] AC 821 (PC) (Lord Wilberforce) is the seminal authority on the 'proper purpose' duty. Directors may issue shares for the proper purpose of raising capital or other legitimate corporate purposes — but NOT as a mechanism to affect voting power or block a takeover. Lord Wilberforce: 'The court must examine the substantial purpose for which the power was exercised.' Where the substantial purpose is to ensure the takeover fails, the share issue is for an improper purpose regardless of the directors' subjective belief that blocking the takeover is good for the company. This breaches S228(1)(b) CA 2014 (act for a proper purpose) — the shares can be set aside."
+    },
+    {
+      "id": 5,
+      "question": "In Re Smith & Fawcett Ltd [1942] CA, Lord Greene MR stated the classic formulation of the bona fide duty. A director of a small private company believes (genuinely but incorrectly) that a business decision will benefit the company — but the court considers it was a bad decision that damaged the company. Is the director in breach of the bona fide duty under S228(1)(a) CA 2014?",
+      "options": {
+        "A": "Yes — the test is objective; the court substitutes its view of what was in the company's interests",
+        "B": "No — the test for the bona fide duty is SUBJECTIVE. If the director genuinely believed the decision was in the company's interest, there is no breach — even if the court considers it objectively wrong",
+        "C": "Yes — any decision that damages the company retrospectively constitutes a breach of the bona fide duty",
+        "D": "No, but only if the director took independent legal advice before making the decision"
+      },
+      "correct_answer": "B",
+      "explanation": "Re Smith & Fawcett Ltd [1942] CA (Lord Greene MR): directors 'must exercise their discretion bona fide in what they consider — not what a court may consider — is in the interests of the company.' The bona fide duty is SUBJECTIVE: the question is what the director genuinely believed, not whether the court thinks the decision was commercially sound. Regen Crest PLC v Cohen confirmed: the court will not objectively decide whether an act was in the interests of the company — it asks whether the director 'honestly believed his act/omission was in the interests of the company.' However — the proper purpose test (Howard Smith) is OBJECTIVE, creating an important distinction between the two limbs of the good faith duty."
+    },
+    {
+      "id": 6,
+      "question": "A company's articles give directors power to issue new shares. A majority director issues shares to himself to dilute a minority shareholder's stake, reduce her voting power, and entrench his own control. He claims he subjectively believed this was in the company's best interests. Applying Nash v Lancegaye and Howard Smith v Ampol, what is the likely outcome?",
+      "options": {
+        "A": "Valid — subjective belief in the company's interest is sufficient; courts cannot second-guess director business decisions",
+        "B": "Invalid — issuing shares merely to entrench directorial control or to oppress a minority is an exercise of the power for an improper purpose and a breach of S228(1)(b), regardless of subjective belief",
+        "C": "Invalid only if the minority shareholder can establish she has suffered a financial loss",
+        "D": "Valid — directors have an absolute right to manage the company, including share capital, under S158 CA 2014"
+      },
+      "correct_answer": "B",
+      "explanation": "Nash v Lancegaye held that shares issued merely to ensure continued control of directors will be set aside. Howard Smith v Ampol [1974] establishes that the 'proper purpose' test is objective — courts examine the SUBSTANTIAL purpose of the exercise of power. Where directors issue shares primarily to dilute a minority or entrench their own control, this is for an improper purpose regardless of subjective belief about the company's interests. The proper purpose test provides an OBJECTIVE check on the otherwise subjective bona fide duty. The share issue can be set aside as a breach of S228(1)(b) CA 2014. The minority shareholder can also bring a S212 oppression petition as a separate remedy."
+    },
+    {
+      "id": 7,
+      "question": "Clark v Workman [1920] IR 107 (Ireland) established an important principle regarding directors' fidelity to the company's interests when dealing with competing offers. What did the court hold?",
+      "options": {
+        "A": "Directors can give binding pre-commitments to potential acquirers to vote in favour of a takeover — such undertakings are commercial necessities",
+        "B": "Directors are bound to consider the interests of all shareholders, unfettered by any undertaking or promise made to an intending purchaser — they cannot fetter their discretion",
+        "C": "Directors owe a duty to accept the highest offer for the company regardless of any other considerations",
+        "D": "Directors who agree to support a particular takeover are agents of the bidder and owe them fiduciary duties"
+      },
+      "correct_answer": "B",
+      "explanation": "Clark v Workman [1920] IR 107 is an important Irish authority on the duty not to fetter discretion. The court held directors 'are bound to consider the interests of all the shareholders, unfettered by any undertaking or promise to any intending purchaser.' A director who has given a pre-commitment to vote for a specific takeover has fettered their discretion — they can no longer exercise an independent judgment about what is best for the company and all shareholders at the time the decision must actually be made. This is a breach of S228(1)(a) CA 2014. Directors must remain free to reconsider their position as circumstances change — any attempt to contract out of this obligation to the company is void as contrary to public policy."
+    },
+    {
+      "id": 8,
+      "question": "S224A CA 2014 was inserted by SI 380/2022 (European Union (Preventive Restructuring) Regulations 2022). It imposes an additional duty on directors when a company is in the 'zone of insolvency.' To whom is this duty owed, and what does it require?",
+      "options": {
+        "A": "The duty is owed directly to creditors individually — each creditor can sue the director personally for any loss",
+        "B": "The duty is owed to the company — but it requires directors to have regard to the interests of creditors when the company is insolvent or likely to become insolvent, alongside their general duty to act in the company's interest",
+        "C": "The duty is owed to employees only — directors must prioritise employment protection over creditor claims",
+        "D": "The duty replaces the general bona fide duty in S228(1)(a) when the company enters the zone of insolvency"
+      },
+      "correct_answer": "B",
+      "explanation": "S224A CA 2014 (inserted by Regulation 4, SI 380/2022, in force 29 July 2022) codifies the common law duty established in Winkworth v Edward Baron Development Co [1987] and West Mercia Safetywear v Dodd [1988]. Key features: (1) the duty is owed to the COMPANY, not directly to creditors — creditors cannot sue directors personally under S224A; (2) it arises when the company is insolvent or 'likely to become insolvent' (the zone of insolvency); (3) directors must HAVE REGARD to creditors' interests in their decision-making — this supplements but does not replace the general duty to the company. This is an important post-2022 development that is highly examinable — especially in conjunction with S610 reckless trading."
+    },
+    {
+      "id": 9,
+      "question": "What is the distinction between a 'de facto director' under S222 CA 2014 and a 'shadow director' under S221 CA 2014, and why does the distinction matter in practice?",
+      "options": {
+        "A": "There is no meaningful distinction — both terms describe the same person and carry identical legal consequences",
+        "B": "A de facto director acts openly as a director without formal appointment; a shadow director controls from behind the scenes without being seen to act as a director. Both are treated as directors for fiduciary duties and restriction/disqualification — but a shadow director is specifically the person whose instructions the board follows",
+        "C": "A de facto director is always a former director who continues acting after their term expires; a shadow director is a controlling shareholder",
+        "D": "A shadow director is liable only for financial misconduct; a de facto director is liable for governance failures only"
+      },
+      "correct_answer": "B",
+      "explanation": "S221 CA 2014 (shadow director): a person in accordance with whose directions the directors are accustomed to act. The shadow director operates covertly — typically a dominant shareholder or external controller who issues instructions to the board. S222 CA 2014 (de facto director): a person who occupies the position of director but was not formally appointed — they attend meetings, sign documents, and hold themselves out as a director. Secretary of State v Tjolle: 'Was the person part of the corporate governing structure?' applies to both. The distinction matters: different fact patterns trigger each definition. Both carry identical duties under Part 5 and both can be restricted (S819) and disqualified (S839). Section 610 liability (reckless trading) also extends to both."
+    },
+    {
+      "id": 10,
+      "question": "Five directors of CapInvest Ltd pass a board resolution approving a major investment. Three months later, the investment fails spectacularly and the company suffers significant losses. Two of the five directors claim they had serious reservations but said nothing at the board meeting. Can silence at a board meeting constitute a breach of fiduciary duty?",
+      "options": {
+        "A": "No — directors have no obligation to speak at board meetings; their duty is fulfilled by attending",
+        "B": "Yes — a director who has reservations about a decision and remains silent, without registering dissent or seeking adjournment, may breach S228(1)(a) and (h) — they failed to act in the company's interest and failed to exercise proper skill, care and diligence",
+        "C": "No — the duty of care only applies to decisions directors actively participate in making",
+        "D": "Yes, but only if the director personally profited from the failed investment"
+      },
+      "correct_answer": "B",
+      "explanation": "Directors cannot escape liability by passive attendance. S228(1)(h) CA 2014 requires directors to exercise the skill that may reasonably be expected of a person in their position. A director who attends a board meeting, votes for (or fails to dissent from) a decision they privately believe is wrong, and takes no steps to raise concerns, register a dissent in the minutes, or seek legal/expert advice, is in breach of their duty of skill and care. Fennell v Appelbe [2022] CA confirmed that passive directorship — mere presence without engagement — does not satisfy the requirements of honest and responsible conduct. Directors must actively exercise their judgment and register dissent where appropriate."
+    },
+    {
+      "id": 11,
+      "question": "S2(1) CA 2014 provides that 'director includes any person occupying the position of director by whatever name called.' A company appoints a person as 'Chief Executive Officer' and 'Group President' but does not use the word 'director.' Can this person be subject to directors' duties under Part 5 CA 2014?",
+      "options": {
+        "A": "No — only persons formally designated 'director' in the CRO register are subject to directors' duties",
+        "B": "Yes — S2(1) defines directors by function, not title. A person occupying the substantive role of a director — making strategic decisions, managing corporate affairs — is subject to all directors' duties regardless of the title used",
+        "C": "No — the CEO role is classified as an employment relationship; employment law governs rather than companies legislation",
+        "D": "Yes, but only if the company has fewer than 5 directors"
+      },
+      "correct_answer": "B",
+      "explanation": "S2(1) CA 2014 defines 'director' to include 'any person occupying the position of director by whatever name called.' This is a function-based, not title-based, definition. A person designated as 'Chief Executive Officer,' 'Managing Director,' 'President,' or 'General Manager' who occupies the substantive position of a director — making major decisions, directing the company's affairs — falls within the definition. This prevents evasion of directors' duties by creative titling. The courts look to substance: is this person part of the corporate governing structure (Secretary of State v Tjolle)? If yes, they are a director for all purposes of Part 5, including fiduciary duties, restriction (S819) and disqualification (S839)."
+    },
+    {
+      "id": 12,
+      "question": "G&S Doherty Ltd (HC) considered whose interests directors must act in. While S227(1) says duties are owed to the company, what did the Irish High Court recognise about the relationship between the company's interests and shareholders' interests in a solvent, going-concern company?",
+      "options": {
+        "A": "The company's interests are entirely separate from shareholders' interests — directors must ignore shareholder concerns in all circumstances",
+        "B": "In a solvent, going-concern company, the interests of the company and the interests of shareholders are substantially aligned — the company's interests can be treated as equivalent to the collective interests of shareholders",
+        "C": "Directors must always prioritise creditors over shareholders in their decision-making",
+        "D": "Shareholders' interests are legally irrelevant — only the interests of the company as a separate legal entity matter"
+      },
+      "correct_answer": "B",
+      "explanation": "G&S Doherty Ltd (HC) recognised that while S227(1) provides duties are owed to the company alone, in a solvent going-concern company, the company's interests can be treated as substantially aligned with the collective interests of its shareholders — since the shareholders are the ultimate owners and the primary beneficiaries of the company's prosperity. This reflects the practical reality that 'the company's interest' in a solvent company often means maximising long-term shareholder value. However, this alignment breaks down on insolvency: S224A CA 2014 requires directors to pivot and have regard to creditors' interests when the company is insolvent or likely to become insolvent — at that point, creditor interests take priority."
+    },
+    {
+      "id": 13,
+      "question": "Regen Crest PLC v Cohen articulates the court's role when assessing whether a director acted in good faith. A director makes a commercially disastrous decision and the company sues for breach of S228(1)(a). The director claims she genuinely believed the decision was in the company's interests. What does the court assess?",
+      "options": {
+        "A": "The court applies an objective test — would a reasonable director in the same position have considered the decision to be in the company's interests?",
+        "B": "The court assesses whether the director HONESTLY BELIEVED her act was in the company's interests — it does not substitute its own objective judgment for the director's subjective assessment",
+        "C": "The court compares the decision to industry benchmarks to determine whether it was commercially reasonable",
+        "D": "The court does not assess good faith separately — it determines only whether the company suffered a loss"
+      },
+      "correct_answer": "B",
+      "explanation": "Regen Crest PLC v Cohen is the leading authority on the court's approach to the bona fide duty: 'The question is not whether objectively the act was in the interests of the company — the question is whether the director honestly believed his act or omission was in the interests of the company.' This confirms the SUBJECTIVE nature of the S228(1)(a) bona fide duty — the court does not second-guess business decisions or substitute its own commercial judgment. However, where a director's claimed belief is implausible given the circumstances, the court may find they did not genuinely hold it. Note: this subjective test applies to the bona fide duty, not the skill and care duty (S228(1)(h)) which has an objective component."
+    },
+    {
+      "id": 14,
+      "question": "A director of a company gives an undertaking to a major investor that she will vote in favour of any resolution the investor proposes at board level for the next three years. Two years later, a resolution comes before the board that the director privately believes is harmful to the company. Is the director obliged to vote in favour of the resolution pursuant to the undertaking?",
+      "options": {
+        "A": "Yes — commercial undertakings are binding and the director must honour them",
+        "B": "No — directors cannot fetter their discretion by giving binding pre-commitments about how they will vote on company matters. The undertaking is void as contrary to S228(1)(a) CA 2014 and the principle in Clark v Workman",
+        "C": "Yes — the undertaking is valid because it was given in return for investment capital",
+        "D": "No — but only if the director's personal financial interests conflict with the resolution"
+      },
+      "correct_answer": "B",
+      "explanation": "Clark v Workman [1920] IR 107 established that directors cannot fetter their discretion. A director must be free, at all times, to exercise an independent judgment about what is in the company's interests. A pre-commitment to vote in favour of whatever a particular investor proposes — regardless of the merits — is an attempt to fetter that discretion. Such an undertaking is void as contrary to S228(1)(a) CA 2014 (the duty to act in the company's interests) because it predetermines the director's vote without regard to the company's circumstances at the time. The investor cannot enforce the undertaking against the director. Honouring such an undertaking when the director believes it harms the company would itself be a breach of duty."
+    },
+    {
+      "id": 15,
+      "question": "The March 2024 FE-1 Company Law examination included a question on directors' duties to members, employees and creditors. Which of the following most accurately states the full legal framework applicable to that question?",
+      "options": {
+        "A": "S227(1) — duties owed to company alone; S228 codifies the common law duties; but S224A CA 2014 (SI 380/2022) requires directors to ALSO have regard to creditors when the company is insolvent or likely to become insolvent",
+        "B": "Directors owe duties directly to shareholders, employees, creditors and the company equally — they must balance all four sets of interests at all times",
+        "C": "S227(1) — duties owed to company alone; directors have no obligation to consider any party other than the company in any circumstances",
+        "D": "S228 replaced all common law duties — no reference should be made to common law cases when answering exam questions on directors' duties"
+      },
+      "correct_answer": "A",
+      "explanation": "The complete framework for the March 2024 question: (1) S227(1) — duties in S228 are owed to THE COMPANY alone; (2) S228 codifies the common law fiduciary duties — but the common law origins remain relevant and should be cited (Re Smith & Fawcett, Regal Hastings, Howard Smith v Ampol, etc.); (3) S224A CA 2014 (inserted by SI 380/2022, in force 29 July 2022) introduces an obligation to HAVE REGARD to creditors' interests when the company is insolvent or likely to become insolvent — this does NOT create a direct duty to creditors but modifies how the duty to the company must be exercised in the zone of insolvency. Always cite West Mercia Safetywear v Dodd [1988] as the common law antecedent of S224A."
+    },
+    {
+      "id": 16,
+      "question": "A non-executive director of BankCo Ltd attends board meetings four times per year. She relies entirely on management information prepared by the executive directors and does not seek any independent verification. The company later fails following fraudulent misrepresentation in its accounts. Can the NED be restricted under S819?",
+      "options": {
+        "A": "No — non-executive directors are categorically exempt from restriction proceedings because they have no executive role",
+        "B": "Yes — Fennell v Appelbe [2022] CA confirmed that NEDs cannot escape restriction by claiming they had no involvement in management. All directors — including NEDs — are required to exercise skill, care and diligence (S228(1)(h)) and passivity is not a defence",
+        "C": "No — restriction applies only to executive directors with day-to-day management responsibility",
+        "D": "Yes, but only if the NED signed the fraudulent accounts"
+      },
+      "correct_answer": "B",
+      "explanation": "Fennell v Appelbe [2022] CA is decisive: the Court of Appeal confirmed that non-executive directors cannot escape restriction by claiming they had no involvement in the specific matters giving rise to the company's failure. In that case, one NED argued NAMA dealt only with the managing director — not with him. The CA rejected this: a director must actively discharge their duties, including seeking out and scrutinising information. S228(1)(h) CA 2014 requires ALL directors (executive and non-executive) to exercise the skill reasonably expected of a person in their position. A NED who rubber-stamps management decisions without scrutiny fails this standard. The burden of proof under S819 lies on the director to demonstrate they acted honestly and responsibly — bare assertions of passivity do not discharge this burden."
+    },
+    {
+      "id": 17,
+      "question": "S228 CA 2014 is described as 'codifying' the common law duties of directors. Which of the following statements most accurately describes the relationship between S228 and the pre-existing common law?",
+      "options": {
+        "A": "S228 completely abolishes all common law directors' duties — cases like Re Smith & Fawcett and Regal Hastings are no longer applicable",
+        "B": "S228 codifies the pre-existing common law duties — the statute and the common law cases that established those duties are both relevant and should be cited together in any authoritative analysis",
+        "C": "S228 supersedes the common law only in respect of the duty of care, leaving fiduciary duties entirely governed by equity",
+        "D": "S228 applies exclusively to public companies — common law governs all duties of directors in private limited companies"
+      },
+      "correct_answer": "B",
+      "explanation": "S228 CA 2014 'codifies' the pre-existing common law and equitable duties of directors — it does not create an entirely new regime, but instead gives statutory form to principles developed through case law. S227(3) confirms: 'The duties in S228 are enforceable in the same way as any other fiduciary duty owed to a company by its directors.' This means both the statutory provisions and the underlying case law remain relevant. When answering any exam question on directors' duties, candidates must cite: (1) the specific S228 subsection; and (2) the case law that developed the principle (e.g., Re Smith & Fawcett for bona fide duty; Regal Hastings for secret profits; Howard Smith v Ampol for proper purpose). The examiner reports repeatedly note that candidates who cite only the statute without case law lose marks."
+    }
+  ]
+}

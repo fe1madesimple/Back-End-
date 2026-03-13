@@ -1,0 +1,611 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "PropertyLaw_ElevenLabs_Module08_Lesson01.txt",
+  "module_number": 8,
+  "module_title": "Licences, Proprietary Estoppel, and Rights of Residence",
+  "lesson_number": 1,
+  "lesson_title": "Licences, Proprietary Estoppel, and Rights of Residence: Categories, Elements, Remedies, and Classification",
+  "total_questions": 50,
+  "questions": [
+    {
+      "id": "PRL_M08_L01_Q01",
+      "question": "How many categories of licence over land are recognised in Irish and English property law?",
+      "options": {
+        "A": "Four — bare licence, licence coupled with an interest, contractual licence, and estoppel licence",
+        "B": "Two — contractual licence and bare licence",
+        "C": "Three — bare licence, contractual licence, and proprietary licence",
+        "D": "Five — bare, coupled, contractual, estoppel, and statutory licence"
+      },
+      "correct_answer": "A",
+      "explanation": "Irish property law recognises four categories of licence: the bare licence; the licence coupled with an interest (or grant); the contractual licence; and the estoppel licence. Each category has different legal consequences, particularly as regards revocability and enforceability against third parties."
+    },
+    {
+      "id": "PRL_M08_L01_Q02",
+      "question": "What is a bare licence in the law of licences over land?",
+      "options": {
+        "A": "A licence granted under a formal deed and binding on successors in title",
+        "B": "A gratuitous permission to enter or use land which is revocable at will by the licensor",
+        "C": "A licence supported by contractual consideration and irrevocable for a fixed term",
+        "D": "A licence granted as part of an equitable estoppel claim"
+      },
+      "correct_answer": "B",
+      "explanation": "A bare licence is a gratuitous permission — one given without consideration — allowing the licensee to enter or use land. Because it is not supported by any contractual consideration or equity, it is revocable at will by the licensor. On revocation, the licensee becomes a trespasser."
+    },
+    {
+      "id": "PRL_M08_L01_Q03",
+      "question": "What is a licence coupled with an interest (or coupled with a grant) and what is its key characteristic?",
+      "options": {
+        "A": "A licence that arises automatically on the creation of a lease",
+        "B": "A licence linked to a contractual obligation and revocable on breach of that obligation",
+        "C": "A licence that is ancillary to and inseparable from a proprietary interest in the land, and therefore irrevocable for as long as the interest subsists",
+        "D": "A licence that binds third parties in equity as a constructive trust"
+      },
+      "correct_answer": "C",
+      "explanation": "A licence coupled with an interest is one that is ancillary to a recognised proprietary interest — such as a profit a prendre or a right to enter and take goods. Because it is necessary to give effect to the proprietary interest, it cannot be revoked separately from it. It is irrevocable for as long as the proprietary interest subsists."
+    },
+    {
+      "id": "PRL_M08_L01_Q04",
+      "question": "A contractual licence differs from a bare licence in which of the following ways?",
+      "options": {
+        "A": "A contractual licence always creates an interest in land binding on successors in title",
+        "B": "A contractual licence cannot be revoked under any circumstances",
+        "C": "A contractual licence is registered in the Land Registry and is binding on third parties as a matter of law",
+        "D": "A contractual licence is supported by consideration and may be irrevocable during the contractual period"
+      },
+      "correct_answer": "D",
+      "explanation": "A contractual licence is supported by valuable consideration, which distinguishes it from a bare licence. Because it rests on contract, the licensor may be restrained from revoking it during the contractual period by injunction or damages for breach. However, whether it binds third parties — successors in title — is contested."
+    },
+    {
+      "id": "PRL_M08_L01_Q05",
+      "question": "An estoppel licence arises where:",
+      "options": {
+        "A": "The licensor is estopped from revoking permission because the licensee has relied to their detriment on an assurance given by the licensor",
+        "B": "The licence is granted by a statutory authority and cannot be revoked without compensation",
+        "C": "The licensor fails to register the licence in the Land Registry within a prescribed period",
+        "D": "The licensee has occupied the land for a continuous period sufficient to establish adverse possession"
+      },
+      "correct_answer": "A",
+      "explanation": "An estoppel licence arises where the licensor has given an assurance to the licensee, the licensee has relied on that assurance, and has suffered detriment as a result. Equity will not allow the licensor to revoke the permission in those circumstances. The estoppel licence is closely related to proprietary estoppel."
+    },
+    {
+      "id": "PRL_M08_L01_Q06",
+      "question": "In Errington v Errington and Woods [1952], Denning LJ held that a contractual licence could not be revoked against a licensee in occupation who continued to perform the conditions attached to it. The case involved:",
+      "options": {
+        "A": "A commercial tenant seeking to enforce a renewal option against a new landlord",
+        "B": "A father who had promised his son and daughter-in-law that the house would be theirs when the mortgage was paid off — provided they continued paying the instalments",
+        "C": "A widow seeking to enforce a life estate against the deceased's personal representatives",
+        "D": "A licensee seeking to restrain a trespass by a third party purchaser with notice"
+      },
+      "correct_answer": "B",
+      "explanation": "In Errington v Errington [1952], a father promised his son and daughter-in-law that if they continued paying the mortgage instalments the house would be theirs when the mortgage was paid off. Denning LJ held this contractual licence could not be revoked while the conditions were being performed, and that it bound the father's estate."
+    },
+    {
+      "id": "PRL_M08_L01_Q07",
+      "question": "In Binions v Evans [1972], Denning LJ held that a purchaser who took land expressly subject to an occupier's contractual licence held the land on constructive trust for the occupier. This decision was controversial because:",
+      "options": {
+        "A": "It held that a contractual licence automatically creates a legal estate in land",
+        "B": "It created a new form of registrable interest not recognised by statute",
+        "C": "It effectively treated a contractual licence as capable of binding third parties through the constructive trust device, which was subsequently doubted",
+        "D": "It overruled Errington v Errington on the irrevocability of contractual licences"
+      },
+      "correct_answer": "C",
+      "explanation": "In Binions v Evans [1972], Denning LJ held that the purchasers, who had taken expressly subject to the occupier's licence, held on constructive trust for her. This was controversial because it effectively made the contractual licence capable of binding third parties. The approach was subsequently doubted in Ashburn Anstalt v Arnold [1989]."
+    },
+    {
+      "id": "PRL_M08_L01_Q08",
+      "question": "In Ashburn Anstalt v Arnold [1989], the English Court of Appeal doubted the Binions v Evans approach to contractual licences. What was the Irish courts' response to this debate?",
+      "options": {
+        "A": "Irish courts followed Binions v Evans, holding that all contractual licences bind third parties as constructive trusts",
+        "B": "Irish courts abolished the contractual licence category entirely",
+        "C": "Irish courts adopted a middle position, treating some contractual licences as proprietary interests",
+        "D": "Irish courts have adopted the narrower Ashburn Anstalt approach, rejecting the automatic imposition of a constructive trust"
+      },
+      "correct_answer": "D",
+      "explanation": "Irish courts have followed the narrower Ashburn Anstalt approach, rejecting the proposition that a constructive trust is automatically imposed whenever land is taken subject to a contractual licence. A constructive trust will only arise if the circumstances clearly justify it. This is the accepted Irish position."
+    },
+    {
+      "id": "PRL_M08_L01_Q09",
+      "question": "Which of the following best describes the Irish courts' approach to whether a contractual licence binds a third party purchaser with notice?",
+      "options": {
+        "A": "All contractual licences automatically bind third parties with notice as equitable interests",
+        "B": "Contractual licences can never bind successors in title regardless of notice",
+        "C": "Contractual licences bind third parties only if registered in the Land Registry",
+        "D": "Following the narrower Ashburn Anstalt position, a constructive trust and binding effect on third parties requires something more than merely taking subject to the licence"
+      },
+      "correct_answer": "D",
+      "explanation": "The Irish position following Ashburn Anstalt v Arnold [1989] is that taking land subject to a contractual licence does not automatically impose a constructive trust. Something more is needed — for example, the parties must clearly intend a binding trust, or there must be circumstances that make it unconscionable for the purchaser to deny the licensee's rights."
+    },
+    {
+      "id": "PRL_M08_L01_Q10",
+      "question": "Proprietary estoppel requires the claimant to establish three elements. Which of the following correctly states those three elements?",
+      "options": {
+        "A": "Offer, acceptance, and consideration",
+        "B": "Assurance, reliance, and detriment",
+        "C": "Promise, notice, and occupation",
+        "D": "Representation, registration, and reliance"
+      },
+      "correct_answer": "B",
+      "explanation": "Proprietary estoppel requires: (1) an assurance by the landowner that the claimant has or will acquire rights in the land; (2) reliance on that assurance by the claimant; and (3) detriment suffered by the claimant in reliance on the assurance. Where all three are established, it would be unconscionable to allow the landowner to resile from the assurance."
+    },
+    {
+      "id": "PRL_M08_L01_Q11",
+      "question": "In proprietary estoppel, what is the nature of the assurance required to ground a claim?",
+      "options": {
+        "A": "The assurance must be made in a formal deed or registered document",
+        "B": "The assurance must be express and communicated directly to the claimant in unambiguous terms",
+        "C": "The assurance must be sufficiently clear in context, whether made expressly or by conduct, such that the claimant could reasonably rely on it",
+        "D": "The assurance must be a legally binding promise supported by consideration"
+      },
+      "correct_answer": "C",
+      "explanation": "The assurance required for proprietary estoppel need not be express — it can arise by conduct. As confirmed in Thorner v Major [2009] SC, the assurance must be sufficiently clear in context that the claimant could reasonably rely on it. It does not need to be made in formal terms or with legal precision."
+    },
+    {
+      "id": "PRL_M08_L01_Q12",
+      "question": "In proprietary estoppel, what must a claimant demonstrate in relation to the requirement of reliance?",
+      "options": {
+        "A": "That they received legal advice and acted on it",
+        "B": "That they undertook a financial transaction in response to the assurance",
+        "C": "That they changed their position in response to the assurance — that is, that they would not have acted as they did but for the assurance",
+        "D": "That their reliance was registered against the landowner's title"
+      },
+      "correct_answer": "C",
+      "explanation": "Reliance in proprietary estoppel requires the claimant to show that they changed their position because of the assurance — that they would not have acted as they did but for the landowner's assurance. The claimant's conduct must be causally connected to the assurance given."
+    },
+    {
+      "id": "PRL_M08_L01_Q13",
+      "question": "What must a claimant establish in relation to the element of detriment in a proprietary estoppel claim?",
+      "options": {
+        "A": "That they suffered a quantifiable financial loss capable of exact valuation",
+        "B": "That they lost the opportunity to acquire equivalent land elsewhere",
+        "C": "That they obtained independent legal advice before acting to their detriment",
+        "D": "That they suffered some form of disadvantage in reliance on the assurance — financial or otherwise — such that it would be unconscionable for the assurance to be resiled from"
+      },
+      "correct_answer": "D",
+      "explanation": "Detriment in proprietary estoppel does not need to be financial — it can take many forms, including personal sacrifices, working without pay, or caring for the landowner. The key is that the claimant has acted to their disadvantage in reliance on the assurance, such that it would be unconscionable to allow the landowner to resile from it."
+    },
+    {
+      "id": "PRL_M08_L01_Q14",
+      "question": "In Thorner v Major [2009], the House of Lords (now Supreme Court) held that the assurance for proprietary estoppel purposes need not be expressed in clear terms. What test did the court apply?",
+      "options": {
+        "A": "The assurance must be expressed with the same clarity as a contractual offer",
+        "B": "The assurance need only be clear enough in its context that the claimant could reasonably rely on it",
+        "C": "The assurance must be made in writing and signed by the landowner",
+        "D": "The assurance must identify the specific property to be transferred with legal precision"
+      },
+      "correct_answer": "B",
+      "explanation": "In Thorner v Major [2009], the House of Lords held that the assurance in proprietary estoppel need only be clear enough in its context — having regard to all the circumstances — that the claimant could reasonably rely on it. Peter Thorner had made indirect references over many years to the farm going to David, which were held sufficient assurance in the farming context."
+    },
+    {
+      "id": "PRL_M08_L01_Q15",
+      "question": "Cullen v Cullen [1962] is the leading Irish case on proprietary estoppel. Which judge delivered the landmark judgment?",
+      "options": {
+        "A": "Walsh J",
+        "B": "Henchy J",
+        "C": "Kenny J",
+        "D": "Costello J"
+      },
+      "correct_answer": "C",
+      "explanation": "Cullen v Cullen [1962] was decided by Kenny J sitting in the High Court. His judgment is the foundational Irish authority on proprietary estoppel, establishing the elements required for a successful claim and the equitable principles governing the court's remedy."
+    },
+    {
+      "id": "PRL_M08_L01_Q16",
+      "question": "Which Irish case, decided in 1997, provided further development of the Irish law on proprietary estoppel?",
+      "options": {
+        "A": "Cullen v Cullen [1962]",
+        "B": "Re Shanahan [1919]",
+        "C": "Irwin v Deasy (No.2) [2011]",
+        "D": "Smyth v Halpin [1997]"
+      },
+      "correct_answer": "D",
+      "explanation": "Smyth v Halpin [1997] is an important Irish High Court authority on proprietary estoppel that built on the foundation established in Cullen v Cullen [1962]. It confirmed and developed the Irish approach to the elements of the claim and the nature of the equitable remedy available."
+    },
+    {
+      "id": "PRL_M08_L01_Q17",
+      "question": "How does a court approach the remedy in a proprietary estoppel claim?",
+      "options": {
+        "A": "The court must always order the full transfer of the property promised by the landowner",
+        "B": "The court has no discretion — the claimant is entitled to the full value of the expectation created by the assurance",
+        "C": "The court must award monetary compensation calculated by reference to the detriment suffered",
+        "D": "The court exercises a discretion to award the minimum equity sufficient to satisfy the equities — what is proportionate in all the circumstances"
+      },
+      "correct_answer": "D",
+      "explanation": "The remedy in proprietary estoppel is discretionary. The court awards the minimum equity sufficient to satisfy the equities in the circumstances. This may be a transfer of land, a monetary award, a licence, or a lesser interest — depending on the nature of the assurance, the extent of the reliance, and the detriment suffered."
+    },
+    {
+      "id": "PRL_M08_L01_Q18",
+      "question": "What does the concept of minimum equity mean in the context of a proprietary estoppel remedy?",
+      "options": {
+        "A": "The claimant receives the lowest possible financial award to avoid unjust enrichment",
+        "B": "The court grants only what is necessary to satisfy the equity — not necessarily the full expectation of the claimant, but the minimum remedy that is proportionate to the unconscionable conduct and the detriment",
+        "C": "The court orders the landowner to convey the property plus pay compensation for any shortfall",
+        "D": "The remedy is fixed at the open market value of the property at the date of the assurance"
+      },
+      "correct_answer": "B",
+      "explanation": "The minimum equity principle means the court grants what is proportionate and necessary to remedy the unconscionable conduct — not automatically the full expectation created by the assurance. In Guest v Guest [2022] SC, the Supreme Court confirmed that the remedy is calibrated against both the expectation and the detriment, and grants the minimum sufficient to satisfy the equity."
+    },
+    {
+      "id": "PRL_M08_L01_Q19",
+      "question": "In Pascoe v Turner [1979], the English Court of Appeal ordered that the landowner execute a conveyance of the property to the claimant. Why was such an extensive remedy justified?",
+      "options": {
+        "A": "The claimant had registered a caution against the property before the proceedings were issued",
+        "B": "The landowner had expressly promised to convey the property by deed",
+        "C": "The claimant had spent her modest savings on improving the property in reliance on the assurance that it was hers, and only a full conveyance was sufficient to satisfy the equity given the landowner's conduct",
+        "D": "The court was required to order the full expectation remedy because the assurance had been made in writing"
+      },
+      "correct_answer": "C",
+      "explanation": "In Pascoe v Turner [1979], the claimant had spent her limited savings on improving the property in reliance on the assurance that it was hers. The court ordered a full conveyance because the landowner's conduct — including attempts to evict her — was such that only a full conveyance would adequately protect her. This illustrates how a full expectation remedy can be justified in appropriate cases."
+    },
+    {
+      "id": "PRL_M08_L01_Q20",
+      "question": "In Guest v Guest [2022], what principle did the UK Supreme Court confirm regarding the relationship between the expectation and detriment in a proprietary estoppel remedy?",
+      "options": {
+        "A": "The remedy must always match the full expectation of the claimant with no reduction for proportionality",
+        "B": "The detriment alone determines the level of the remedy, with no reference to the expectation",
+        "C": "Only a monetary award can satisfy the equity — no court can order a conveyance of land",
+        "D": "The remedy should be calibrated by reference to both the expectation and the detriment — the minimum equity to do justice — and may be less than the full expectation where appropriate"
+      },
+      "correct_answer": "D",
+      "explanation": "In Guest v Guest [2022] SC, the Supreme Court confirmed that the remedy in proprietary estoppel should reflect both the expectation created and the detriment suffered, and grant only the minimum equity necessary to do justice. The court retains a broad discretion and need not award the full expectation if a lesser remedy adequately satisfies the equity."
+    },
+    {
+      "id": "PRL_M08_L01_Q21",
+      "question": "A general right of residence in Irish property law is classified as:",
+      "options": {
+        "A": "A personal right binding only on the grantor and not transmissible to third parties",
+        "B": "A proprietary interest enforceable against all successors in title",
+        "C": "An easement capable of being appurtenant to a dominant tenement",
+        "D": "A profit a prendre entitling the holder to take something from the land"
+      },
+      "correct_answer": "A",
+      "explanation": "A general right of residence — one that does not include exclusive occupation of the property — is classified as a personal right under Irish law, following Re Shanahan [1919]. As a personal right, it binds only the grantor and is not enforceable against successors in title or third parties."
+    },
+    {
+      "id": "PRL_M08_L01_Q22",
+      "question": "Re Shanahan [1919] is the leading Irish case on rights of residence. What did it establish?",
+      "options": {
+        "A": "An exclusive right of residence is always a personal right and cannot bind third parties",
+        "B": "A general right of residence — one that does not include exclusive occupation — is a personal right and cannot bind successors in title",
+        "C": "Any right of residence is automatically a proprietary interest if it is registered in the Land Registry",
+        "D": "A right of residence granted in a will is always irrevocable for the life of the holder"
+      },
+      "correct_answer": "B",
+      "explanation": "Re Shanahan [1919] established the general principle that a right of residence which does not confer exclusive occupation of the property is a personal right — not a proprietary interest. Because it is personal, it binds only the grantor and cannot be enforced against successors in title."
+    },
+    {
+      "id": "PRL_M08_L01_Q23",
+      "question": "Where a right of residence confers exclusive occupation of the entire property on the holder, what is its classification under Irish law?",
+      "options": {
+        "A": "It is always a personal right regardless of the degree of exclusivity",
+        "B": "It is treated as a short-term lease governed by the Residential Tenancies Act 2004",
+        "C": "It may be a proprietary interest capable of binding successors in title, depending on the circumstances",
+        "D": "It is an easement of exclusive use and must be registered to be enforceable"
+      },
+      "correct_answer": "C",
+      "explanation": "Where a right of residence confers exclusive occupation of the entire property, it may be characterised as a proprietary interest under Irish law. Irwin v Deasy (No.2) [2011] confirmed that the classification depends on whether the right amounts to exclusive occupation — if it does, it may be proprietary rather than merely personal."
+    },
+    {
+      "id": "PRL_M08_L01_Q24",
+      "question": "What did the Irish High Court hold in Irwin v Deasy (No.2) [2011] regarding an exclusive right of residence?",
+      "options": {
+        "A": "An exclusive right of residence is always personal and can never bind third parties",
+        "B": "An exclusive right of residence granted by deed is automatically void unless registered",
+        "C": "An exclusive right of residence can be registered as a burden on the title under the Registration of Title Act 1964",
+        "D": "An exclusive right of residence may be a proprietary interest capable of binding successors in title, distinguishing it from a merely general right of residence"
+      },
+      "correct_answer": "D",
+      "explanation": "In Irwin v Deasy (No.2) [2011], the Irish High Court held that an exclusive right of residence — one entitling the holder to exclusive occupation of the property — may be a proprietary interest capable of binding successors in title. This distinguishes it from the general right of residence (personal only) established in Re Shanahan [1919]."
+    },
+    {
+      "id": "PRL_M08_L01_Q25",
+      "question": "A bare licence to enter someone's garden for a social visit is revocable:",
+      "options": {
+        "A": "At any time, without notice, by the licensor — though reasonable notice of withdrawal may be required in practice",
+        "B": "Only with six months notice under the Residential Tenancies Act 2004",
+        "C": "Only after the licensee has had a reasonable opportunity to complete any activity they began on the land",
+        "D": "On the first breach of any implied term of the licence"
+      },
+      "correct_answer": "A",
+      "explanation": "A bare licence is revocable at will — the licensor can withdraw permission at any time. In practice, the licensee must be given a reasonable opportunity to leave the property, but there is no contractual or equitable fetter on the licensor's right to revoke. Once revoked and the licensee fails to leave, they become a trespasser."
+    },
+    {
+      "id": "PRL_M08_L01_Q26",
+      "question": "In what circumstances may a contractual licence be treated as irrevocable by a court of equity?",
+      "options": {
+        "A": "Where the licence has been in existence for more than one year",
+        "B": "Where revoking the licence during the contractual period would constitute a breach of contract, which equity may prevent by injunction",
+        "C": "Where the contractual licence has been registered as an overriding interest in the Land Registry",
+        "D": "Where the licensor has obtained an independent legal opinion confirming the licence is revocable"
+      },
+      "correct_answer": "B",
+      "explanation": "A contractual licence may be treated as irrevocable during the contractual period because revoking it would breach the contract. Courts of equity can restrain such a breach by injunction. This was illustrated in Errington v Errington [1952], where the conditional promise to convey was held to be irrevocable while the conditions were being performed."
+    },
+    {
+      "id": "PRL_M08_L01_Q27",
+      "question": "An estoppel licence arises in circumstances where proprietary estoppel is established. It is described as a licence because:",
+      "options": {
+        "A": "It grants the licensee a leasehold estate in the land of finite duration",
+        "B": "It is always registered in the Land Registry as a burden on the licensor's title",
+        "C": "The equity that arises is satisfied by the grant of a right to use or occupy the land without transferring a full proprietary interest",
+        "D": "It is derived from an act of the legislature rather than from equitable principles"
+      },
+      "correct_answer": "C",
+      "explanation": "An estoppel licence arises where the minimum equity required to satisfy the equitable claim is a right to occupy or use the land — not a full proprietary interest. The court exercises its discretion in fashioning the remedy and may conclude that a licence, rather than a conveyance, is the minimum equity to do justice in the circumstances."
+    },
+    {
+      "id": "PRL_M08_L01_Q28",
+      "question": "Proprietary estoppel operates to prevent which form of conduct by a landowner?",
+      "options": {
+        "A": "Selling land at an undervalue to a related party",
+        "B": "Granting competing licences over the same land simultaneously",
+        "C": "Registering charges over land without notifying existing licensees",
+        "D": "Unconscionably denying rights in land to a person who has relied to their detriment on the landowner's assurance"
+      },
+      "correct_answer": "D",
+      "explanation": "Proprietary estoppel prevents a landowner from unconscionably denying rights in land to a person who has relied to their detriment on the landowner's assurance or encouragement. The underlying principle is that it is unconscionable for the landowner to resile from the assurance once the claimant has acted on it to their detriment."
+    },
+    {
+      "id": "PRL_M08_L01_Q29",
+      "question": "In Thorner v Major [2009], the assurance for proprietary estoppel purposes was found in:",
+      "options": {
+        "A": "A written document signed by the landowner expressly stating that the farm would pass to the claimant",
+        "B": "A series of indirect and oblique statements made by the landowner to the claimant over many years in the context of a farming relationship, held sufficient in context",
+        "C": "An oral agreement recorded in a solicitor's file note confirming the arrangement",
+        "D": "A clause in the landowner's will bequeathing the farm to the claimant"
+      },
+      "correct_answer": "B",
+      "explanation": "In Thorner v Major [2009], the House of Lords held that the assurance could be found in the indirect and oblique statements made by Peter Thorner to his cousin David over more than twenty years working on the farm together. The statements were never explicit but were clear enough in context. The court rejected the requirement of a clear and unambiguous express statement."
+    },
+    {
+      "id": "PRL_M08_L01_Q30",
+      "question": "In Cullen v Cullen [1962], Kenny J applied proprietary estoppel to prevent a father from reneging on an assurance to his son. What was the significance of the case for Irish law?",
+      "options": {
+        "A": "It confirmed that proprietary estoppel cannot apply within a family context in Ireland",
+        "B": "It established Cullen v Cullen as the leading Irish authority recognising proprietary estoppel as an equitable doctrine applicable in Irish land law",
+        "C": "It held that the son's claim must fail because he had received consideration for his work",
+        "D": "It confirmed that the doctrine applies only to registered land in Ireland"
+      },
+      "correct_answer": "B",
+      "explanation": "Cullen v Cullen [1962] is the landmark Irish authority on proprietary estoppel. Kenny J recognised and applied the doctrine in an Irish context, establishing it as a live equitable principle in Irish land law. It remains the foundational domestic authority on which all subsequent Irish estoppel cases build."
+    },
+    {
+      "id": "PRL_M08_L01_Q31",
+      "question": "When fashioning a remedy in a proprietary estoppel claim, the court will consider which of the following factors?",
+      "options": {
+        "A": "Only the financial value of the expectation created by the assurance",
+        "B": "Only the detriment suffered by the claimant without reference to the expectation",
+        "C": "Both the nature of the assurance given and the detriment suffered, awarding the minimum equity proportionate to the circumstances",
+        "D": "The open market value of the land as at the date the proceedings are issued"
+      },
+      "correct_answer": "C",
+      "explanation": "In fashioning a remedy, the court considers both the nature and extent of the assurance and the detriment suffered by the claimant. The remedy is the minimum equity necessary to satisfy the equities — it is proportionate and discretionary, calibrated by reference to both the expectation and the detriment as confirmed in Guest v Guest [2022]."
+    },
+    {
+      "id": "PRL_M08_L01_Q32",
+      "question": "Guest v Guest [2022] SC confirmed which principle regarding the proprietary estoppel remedy?",
+      "options": {
+        "A": "That the remedy must always equal the full value of the expectation promised by the landowner",
+        "B": "That proprietary estoppel cannot apply where the landowner is still alive",
+        "C": "That the remedy must always be monetary and never include a conveyance of land",
+        "D": "That the remedy is calibrated against both expectation and detriment, granting only the minimum equity necessary to do justice — which may be less than the full expectation"
+      },
+      "correct_answer": "D",
+      "explanation": "Guest v Guest [2022] SC confirmed that the proprietary estoppel remedy is not automatically the full expectation. The court calibrates the remedy against both the expectation and the detriment, and grants the minimum equity necessary to do justice. In Guest, the Supreme Court reduced the remedy from what the Court of Appeal had awarded, reflecting the proportionality principle."
+    },
+    {
+      "id": "PRL_M08_L01_Q33",
+      "question": "A licence coupled with a grant — or coupled with an interest — is best illustrated by which of the following examples?",
+      "options": {
+        "A": "A landowner giving a neighbour permission to park on their driveway without charge",
+        "B": "A party who has been granted a profit a prendre to cut timber on land — the licence to enter the land is ancillary to and inseparable from the profit",
+        "C": "A tenant who has a contractual right to use a communal garden under their lease",
+        "D": "An occupier who has remained on land following the expiry of a lease and seeks to establish a periodic tenancy"
+      },
+      "correct_answer": "B",
+      "explanation": "The paradigm example of a licence coupled with an interest is the right to enter land to exercise a profit a prendre — such as the right to cut timber or take game. The licence to enter is ancillary to the profit and inseparable from it. It cannot be revoked without also extinguishing the profit."
+    },
+    {
+      "id": "PRL_M08_L01_Q34",
+      "question": "In Binions v Evans [1972], Denning LJ held that the purchasers took the land subject to the occupier's licence and were bound by it as constructive trustees. What was the basis for imposing a constructive trust?",
+      "options": {
+        "A": "The occupier had registered her interest in the Land Charges Register",
+        "B": "The purchasers had expressly taken the land subject to the occupier's right and therefore held on constructive trust for her",
+        "C": "The occupier had a proprietary estoppel claim enforceable against successors in title",
+        "D": "The contractual licence automatically became a legal interest on the death of the original grantor"
+      },
+      "correct_answer": "B",
+      "explanation": "In Binions v Evans [1972], Denning LJ held that because the purchasers had expressly taken the land subject to the occupier's contractual licence, it would be unconscionable for them to ignore it. They therefore held on constructive trust for her. This reasoning — using the constructive trust to bind third parties to contractual licences — was doubted in Ashburn Anstalt [1989]."
+    },
+    {
+      "id": "PRL_M08_L01_Q35",
+      "question": "The English Court of Appeal in Ashburn Anstalt v Arnold [1989] doubted the Binions v Evans constructive trust approach. What was the Irish courts' response?",
+      "options": {
+        "A": "Irish courts confirmed that all contractual licences bind successors in title through a constructive trust",
+        "B": "Irish courts held that contractual licences can never bind third parties under Irish law",
+        "C": "Irish courts adopted the narrower Ashburn Anstalt position, requiring something more than merely taking subject to the licence before a constructive trust will be imposed",
+        "D": "Irish courts have not yet addressed the Ashburn Anstalt versus Binions v Evans debate"
+      },
+      "correct_answer": "C",
+      "explanation": "Irish courts have adopted the narrower Ashburn Anstalt position. Taking expressly subject to a contractual licence does not automatically impose a constructive trust. Something more is required — circumstances making it unconscionable for the purchaser to deny the licensee's rights. This is the accepted Irish approach."
+    },
+    {
+      "id": "PRL_M08_L01_Q36",
+      "question": "Before a bare licence can be validly revoked, the licensor must give:",
+      "options": {
+        "A": "Six months notice in writing",
+        "B": "Notice equivalent to the period during which the licensee has occupied the land",
+        "C": "Notice by court order only",
+        "D": "Reasonable notice to allow the licensee a fair opportunity to depart from the land"
+      },
+      "correct_answer": "D",
+      "explanation": "Although a bare licence is revocable at will, the licensor must give the licensee reasonable notice — sufficient time to allow them to leave the land. If the licensee fails to leave after reasonable notice, they become a trespasser. What is reasonable notice will depend on all the circumstances."
+    },
+    {
+      "id": "PRL_M08_L01_Q37",
+      "question": "A landowner tells his nephew: if you give up your city job and come to work on my farm, it will be yours when I die. The nephew gives up his job and works the farm for fifteen years for minimal pay. The landowner dies leaving the farm to someone else. The nephew brings a proprietary estoppel claim. Which element is most clearly established in these facts?",
+      "options": {
+        "A": "Assurance, reliance, and detriment — all three elements are clearly present on the facts",
+        "B": "Reliance only — there is no clear assurance that the farm would pass to the nephew",
+        "C": "Detriment only — but the absence of a formal assurance defeats the claim",
+        "D": "None — the nephew should have insisted on a written agreement"
+      },
+      "correct_answer": "A",
+      "explanation": "On these facts, all three elements of proprietary estoppel are clearly present: the landowner gave an assurance that the farm would be the nephew's; the nephew relied on it by giving up his career; and he suffered detriment through fifteen years of underpaid work. This is a paradigm proprietary estoppel scenario."
+    },
+    {
+      "id": "PRL_M08_L01_Q38",
+      "question": "Which of the following would most likely satisfy the detriment requirement in a proprietary estoppel claim?",
+      "options": {
+        "A": "Merely expressing gratitude to the landowner for the promise made",
+        "B": "Giving up a career, spending personal savings on improvements to the property, or providing long-term care for the landowner in reliance on the assurance",
+        "C": "Registering a notice against the landowner's title in the Land Registry",
+        "D": "Entering into a formal contract of employment with the landowner"
+      },
+      "correct_answer": "B",
+      "explanation": "Detriment can take many forms — financial expenditure, giving up employment, providing unpaid labour, or personal sacrifices. Cullen v Cullen [1962] and the subsequent case law confirm that what matters is that the claimant changed their position in a substantial way in reliance on the assurance, making it unconscionable to resile from it."
+    },
+    {
+      "id": "PRL_M08_L01_Q39",
+      "question": "Can an assurance for proprietary estoppel purposes be given by conduct rather than by express words?",
+      "options": {
+        "A": "No — the assurance must be express and unambiguous to ground a claim",
+        "B": "No — only written assurances are recognised in Irish law following Cullen v Cullen",
+        "C": "Yes — the assurance can arise from conduct as well as words, provided it is sufficiently clear in context that the claimant could reasonably rely on it",
+        "D": "Yes — but only where the landowner is a business rather than an individual"
+      },
+      "correct_answer": "C",
+      "explanation": "An assurance for proprietary estoppel can arise from conduct as well as express words. Thorner v Major [2009] confirms that the assurance need not be expressed in clear terms — it must be sufficiently clear in its context. The landowner's conduct and the surrounding circumstances are examined to determine whether a reasonable person in the claimant's position would have understood the assurance."
+    },
+    {
+      "id": "PRL_M08_L01_Q40",
+      "question": "In Pascoe v Turner [1979], the court ordered a full conveyance of the property to the claimant. In which type of case is such an extensive remedy appropriate in proprietary estoppel?",
+      "options": {
+        "A": "In all proprietary estoppel cases, as the full expectation should always be satisfied",
+        "B": "Only where the assurance was made in a formal document signed by the landowner",
+        "C": "Only where the landowner is a company or commercial entity",
+        "D": "Where the nature of the assurance and the extent of the detriment make a full conveyance the minimum equity required to do justice — particularly where a lesser remedy would leave the claimant exposed"
+      },
+      "correct_answer": "D",
+      "explanation": "Pascoe v Turner [1979] illustrates that a full conveyance may be the appropriate minimum equity where the detriment is substantial and a lesser remedy (such as a licence) would leave the claimant vulnerable. The court found that only a full conveyance protected the claimant given the landowner's conduct and her limited ability to seek further redress."
+    },
+    {
+      "id": "PRL_M08_L01_Q41",
+      "question": "Can a general right of residence bind successors in title to the burdened property under Irish law?",
+      "options": {
+        "A": "No — as established in Re Shanahan [1919], a general right of residence is a personal right and does not bind successors in title",
+        "B": "Yes — all rights of residence are proprietary interests binding successors in title",
+        "C": "Yes — if the right of residence is granted by deed and registered in the Land Registry",
+        "D": "Only if the holder of the right is in actual occupation at the time of the sale"
+      },
+      "correct_answer": "A",
+      "explanation": "A general right of residence — one not involving exclusive occupation — is a personal right under Re Shanahan [1919]. As a personal right, it is enforceable only against the grantor and does not bind successors in title, purchasers, or mortgagees. Registration does not convert a personal right into a proprietary one."
+    },
+    {
+      "id": "PRL_M08_L01_Q42",
+      "question": "Re Shanahan [1919] established that a general right of residence is personal only. What practical consequence flows from this?",
+      "options": {
+        "A": "The holder of the right can enforce it against any purchaser who buys with notice of the right",
+        "B": "If the property is sold, the new owner is not bound by the right of residence and the holder cannot enforce it against them",
+        "C": "The right of residence is automatically converted to a leasehold interest on the death of the grantor",
+        "D": "The holder can seek damages from the Land Registry if the right is not noted on the folio"
+      },
+      "correct_answer": "B",
+      "explanation": "Because a general right of residence is personal and not proprietary, it is not enforceable against successors in title. If the property is sold, the purchaser takes free of the right. The holder can only pursue a claim in contract or damages against the original grantor. This is the key practical significance of Re Shanahan [1919]."
+    },
+    {
+      "id": "PRL_M08_L01_Q43",
+      "question": "Following Irwin v Deasy (No.2) [2011], where a right of residence confers exclusive occupation of the entire property, the position under Irish law is that:",
+      "options": {
+        "A": "It remains a personal right regardless of the exclusivity of occupation",
+        "B": "It is automatically classified as a full legal estate in land",
+        "C": "It may be classified as a proprietary interest capable of binding successors in title, depending on the circumstances and the degree of exclusivity involved",
+        "D": "It is governed entirely by the Residential Tenancies Act 2004 as a residential tenancy"
+      },
+      "correct_answer": "C",
+      "explanation": "Irwin v Deasy (No.2) [2011] confirmed that an exclusive right of residence — one conferring exclusive occupation of the entire property — may be characterised as a proprietary interest capable of binding successors in title. This distinguishes it from the merely general right of residence which Re Shanahan [1919] held to be personal only."
+    },
+    {
+      "id": "PRL_M08_L01_Q44",
+      "question": "The principle of minimum equity in proprietary estoppel — confirmed in Guest v Guest [2022] — means that the remedy:",
+      "options": {
+        "A": "Is always the lowest available monetary award and cannot include a transfer of property",
+        "B": "Must match the full expectation unless the claimant was partially at fault",
+        "C": "Is set by reference only to the detriment suffered without regard to the expectation created",
+        "D": "Is the least that a court considers necessary to do justice between the parties — proportionate to both the expectation and the detriment — and need not equal the full promise made"
+      },
+      "correct_answer": "D",
+      "explanation": "The minimum equity principle in proprietary estoppel means that the court grants only what is proportionate to both the expectation and the detriment and is necessary to do justice. In Guest v Guest [2022], the Supreme Court reduced the remedial award, confirming that it is not automatic that the full expectation will be satisfied — the minimum equity required is the governing principle."
+    },
+    {
+      "id": "PRL_M08_L01_Q45",
+      "question": "A claimant alleges proprietary estoppel. They establish that the landowner assured them they would inherit the farm, that they worked on the farm for decades without pay in reliance on this, and that they declined offers to work abroad. If the court is satisfied on all three elements, what must it then determine?",
+      "options": {
+        "A": "The appropriate remedy — the minimum equity necessary to satisfy the equities in the circumstances",
+        "B": "Whether the claimant registered a notice against the landowner's folio before the landowner died",
+        "C": "Whether the landowner had testamentary capacity at the time of the assurance",
+        "D": "Whether the three elements were established by the criminal standard of proof"
+      },
+      "correct_answer": "A",
+      "explanation": "Once the three elements of proprietary estoppel — assurance, reliance, detriment — are established, the court moves to the remedial stage. It determines the minimum equity sufficient to satisfy the equities, which may be a full conveyance, a life interest, a licence, monetary compensation, or some other remedy — calibrated by reference to the expectation and the detriment."
+    },
+    {
+      "id": "PRL_M08_L01_Q46",
+      "question": "Where a contractual licence is revoked in breach of contract, what remedy may a court of equity grant?",
+      "options": {
+        "A": "A mandatory order requiring the licensor to pay the market rent for the period of the licence",
+        "B": "An injunction restraining the revocation or breach, treating the contractual right as deserving equitable protection for the duration of the contractual period",
+        "C": "An order vesting a legal estate in the licensee equivalent to the value of the remaining contractual term",
+        "D": "An automatic conversion of the contractual licence into an estoppel licence"
+      },
+      "correct_answer": "B",
+      "explanation": "Where a contractual licence is revoked in breach of contract, a court of equity may grant an injunction restraining the licensor from acting in breach of the contract. This was central to Errington v Errington [1952] — equity protected the contractual right by refusing to allow the licensor to revoke it while the conditions were being performed."
+    },
+    {
+      "id": "PRL_M08_L01_Q47",
+      "question": "Which of the following is the best example of a bare licence?",
+      "options": {
+        "A": "A tenant who pays rent and has a periodic tenancy in the property",
+        "B": "A licensee who has paid for the right to use a private car park for six months",
+        "C": "A friend who is invited to attend a dinner party at a private house",
+        "D": "A person who enters land pursuant to a registered profit a prendre"
+      },
+      "correct_answer": "C",
+      "explanation": "A bare licence is a gratuitous permission — given without consideration — to enter or use land. A friend invited to attend a dinner party is the paradigm example: the invitation is given for free, without any legal formality, and can be revoked by the host at any time. Once revoked, continued presence constitutes trespass."
+    },
+    {
+      "id": "PRL_M08_L01_Q48",
+      "question": "A licence coupled with a grant is inseparable from the underlying proprietary interest to which it is ancillary. What follows from this?",
+      "options": {
+        "A": "The licence and the underlying interest can be assigned separately to different parties",
+        "B": "The licence expires at the end of five years regardless of whether the underlying interest continues",
+        "C": "The licence can be revoked independently once the underlying interest has been in existence for twenty years",
+        "D": "The licence cannot be revoked separately from the underlying interest — it lasts as long as the interest to which it is coupled"
+      },
+      "correct_answer": "D",
+      "explanation": "A licence coupled with an interest is ancillary to and inseparable from the proprietary interest it serves — such as a profit a prendre. Because the two cannot be separated, the licence cannot be revoked without also extinguishing the underlying interest. It endures for as long as the interest to which it is coupled."
+    },
+    {
+      "id": "PRL_M08_L01_Q49",
+      "question": "In which year was Cullen v Cullen decided, establishing the foundational Irish authority on proprietary estoppel?",
+      "options": {
+        "A": "1962",
+        "B": "1979",
+        "C": "1997",
+        "D": "2011"
+      },
+      "correct_answer": "A",
+      "explanation": "Cullen v Cullen was decided in 1962, with Kenny J delivering the judgment in the High Court. It established proprietary estoppel as a live equitable doctrine in Irish land law and remains the foundational domestic authority on the doctrine."
+    },
+    {
+      "id": "PRL_M08_L01_Q50",
+      "question": "Which of the following correctly summarises the Irish law on the remedy for a successful proprietary estoppel claim?",
+      "options": {
+        "A": "The claimant is always entitled to a full conveyance of the property consistent with the promise made",
+        "B": "The court exercises a broad discretion to award the minimum equity proportionate to the assurance and detriment — which may range from a conveyance to a licence to monetary compensation",
+        "C": "The remedy is assessed by reference to the detriment only, without regard to any expectation created",
+        "D": "The remedy must be registered in the Land Registry before it takes effect against third parties"
+      },
+      "correct_answer": "B",
+      "explanation": "In Irish law, following Cullen v Cullen [1962], Smyth v Halpin [1997], and the UK Supreme Court in Thorner v Major [2009] and Guest v Guest [2022], the court exercises a broad discretion in fashioning the remedy for a successful proprietary estoppel claim. It awards the minimum equity proportionate to the assurance and detriment — which may be a conveyance, a life interest, a licence, or compensation."
+    }
+  ]
+}

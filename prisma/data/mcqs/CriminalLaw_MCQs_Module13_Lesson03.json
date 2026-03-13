@@ -1,0 +1,119 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module13_Lesson01.txt",
+  "module_number": 13,
+  "module_title": "Criminal Procedure, Courts, and Bail",
+  "lesson_number": 3,
+  "lesson_title": "Arrest and Detention",
+  "total_questions": 9,
+  "questions": [
+    {
+      "id": "CRL_M13_L03_Q01",
+      "question": "Section 4 of the Criminal Justice Act 1984 is the primary statutory basis for detention following arrest in Ireland. What is the initial period of detention permitted under s.4, and how can it be extended?",
+      "options": {
+        "A": "The initial period of detention is 24 hours; this can be extended by a District Court judge for a further 24 hours",
+        "B": "Under s.4 of the Criminal Justice Act 1984, the initial period of detention following arrest is 6 hours; this can be extended by a Superintendent (or higher) for a further period up to a maximum of 24 hours in total; the extensions must be authorised by an officer of the rank of Superintendent or higher",
+        "C": "The initial period of detention is 12 hours; there is no provision for extension \u2014 the suspect must be charged or released after 12 hours",
+        "D": "Section 4 provides for an initial period of 48 hours detention without charge \u2014 no extension is required"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 4 of the Criminal Justice Act 1984 provides the standard detention framework following arrest. The initial detention period is 6 hours. This can be extended by a Superintendent (or officer of higher rank) for a further period, bringing the maximum to 24 hours total. Any extension beyond the initial 6 hours must be authorised by an officer of at least Superintendent rank and only where the Superintendent has reasonable grounds to believe that continued detention is necessary for the proper investigation of the offence. After 24 hours, the suspect must be charged or released \u2014 they cannot be held indefinitely without charge. The 6-hour initial period and 24-hour maximum are important exam details. FE-1 candidates must know the s.4 CJA 1984 framework. Option A incorrectly states an initial 24-hour period. Option C states incorrect figures. Option D is entirely incorrect."
+    },
+    {
+      "id": "CRL_M13_L03_Q02",
+      "question": "Section 30 of the Offences Against the State Act 1939 provides a separate detention regime for scheduled offences. What periods does it provide, and who can authorise extension?",
+      "options": {
+        "A": "Section 30 provides for 24 hours detention \u2014 there is no provision for extension under this section",
+        "B": "Section 30 OATSA 1939 provides for an initial period of 24 hours detention for scheduled offences; this can be extended for a further 24 hours by a Chief Superintendent, and then for a further 24 hours on the authority of a Chief Superintendent where the scheduled offences relate to terrorist activities; the total maximum under s.30 can reach 72 hours",
+        "C": "Section 30 provides for 48 hours initial detention extendable to 7 days by court order",
+        "D": "Section 30 applies only to members of the Garda S\u00edoch\u00e1na suspected of offences \u2014 it does not apply to ordinary members of the public"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 30 of the Offences Against the State Act 1939 creates a separate and more extensive detention regime for persons arrested in connection with scheduled offences (offences against the State, including membership of unlawful organisations). The framework under s.30 is: (1) initial 24-hour detention; (2) first extension of 24 hours authorised by a Chief Superintendent; (3) second extension of 24 hours authorised by a Chief Superintendent where the offence relates to terrorist activities \u2014 reaching a potential total of 72 hours. This more extensive detention period reflects the special security concerns surrounding offences against the State and the operational difficulties of investigating clandestine organisations. The s.30 regime provides greater detention powers than the s.4 CJA 1984 framework but applies only to scheduled offences. Options A, C, and D all misstate the s.30 provisions."
+    },
+    {
+      "id": "CRL_M13_L03_Q03",
+      "question": "Section 2 of the Criminal Justice (Drug Trafficking) Act 1996 provides an even more extensive detention regime for serious drug offences. What is the maximum detention period under s.2?",
+      "options": {
+        "A": "48 hours maximum",
+        "B": "72 hours maximum \u2014 the same as the s.30 OATSA 1939 framework",
+        "C": "7 days \u2014 the maximum detention period under s.2 of the Criminal Justice (Drug Trafficking) Act 1996 is 7 days; extensions beyond 48 hours require court authorisation; this reflects the grave social harm caused by drug trafficking and the operational complexity of investigating major drug networks",
+        "D": "14 days \u2014 drug trafficking is treated as equivalent to terrorism in terms of detention powers"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 2 of the Criminal Justice (Drug Trafficking) Act 1996 provides the most extensive detention regime in Irish law for persons suspected of serious drug trafficking offences. The maximum detention period is 7 days. Extensions beyond the initial period require court authorisation \u2014 a judge of the District Court must be satisfied that continued detention is justified. The 7-day maximum reflects the gravity of serious drug trafficking offences and the operational reality that investigating large-scale drug networks requires extended time to gather evidence, trace networks, and interview multiple suspects. FE-1 candidates must know the three detention regimes and their maximum periods: s.4 CJA 1984 (24 hours max); s.30 OATSA 1939 (up to 72 hours); s.2 CJ(DT)A 1996 (7 days). Option A states too short a maximum. Option B equates s.2 with s.30. Option D invents a 14-day maximum."
+    },
+    {
+      "id": "CRL_M13_L03_Q04",
+      "question": "Article 40.4 of the Irish Constitution provides the constitutional protection against unlawful detention. What remedy does it provide?",
+      "options": {
+        "A": "Article 40.4 provides for the right to compensation for unlawful detention \u2014 it does not provide a mechanism for immediate release",
+        "B": "Article 40.4 provides for the constitutional remedy of habeas corpus (an inquiry into the legality of detention) \u2014 any person who is unlawfully detained can apply to the High Court for an order directing that they be produced before the court; if the High Court finds the detention is unlawful, it must order the person's release; this is one of the most fundamental constitutional rights in Irish law",
+        "C": "Article 40.4 provides that no person may be detained without charge for more than 24 hours \u2014 any detention beyond 24 hours is automatically unconstitutional",
+        "D": "Article 40.4 is merely a declaratory provision \u2014 it does not create an enforceable right to challenge detention"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 40.4 of the Constitution provides the constitutional remedy of habeas corpus \u2014 a fundamental protection against unlawful detention. The provision allows any person (or a person on their behalf) who claims to be unlawfully detained to apply to the High Court for an inquiry into the legality of the detention. The High Court must enquire into the circumstances of the detention and, if it finds the detention to be unlawful, must order the person's immediate release. This is a powerful constitutional safeguard \u2014 it cannot be suspended except in very narrow constitutional emergency circumstances (Art 28.3.3). The habeas corpus remedy operates as a check on the extensive statutory detention powers provided by the CJA 1984, OATSA 1939, and CJ(DT)A 1996 frameworks. Option A incorrectly limits the remedy to compensation. Option C incorrectly imposes a 24-hour constitutional limit. Option D incorrectly characterises Art 40.4 as merely declaratory."
+    },
+    {
+      "id": "CRL_M13_L03_Q05",
+      "question": "What is the constitutional and legal basis for a Garda's power to arrest a person without a warrant in Ireland?",
+      "options": {
+        "A": "There is no power of arrest without warrant in Irish law \u2014 Garda\u00ed must always obtain a warrant before arresting anyone",
+        "B": "A Garda has power to arrest without warrant under: (1) common law \u2014 for breach of the peace; (2) the statutory 'arrestable offence' power under s.4 of the Criminal Law Act 1997 \u2014 allowing arrest without warrant for offences carrying 5 years or more; and (3) specific statutory provisions creating arrest powers for particular offences; the s.4 CLA 1997 power is the most commonly used general power",
+        "C": "Garda\u00ed can only arrest without a warrant where the offence is being committed in their presence \u2014 the power does not extend to suspicion of past offences",
+        "D": "The power of arrest without warrant derives solely from Article 40 of the Constitution \u2014 statute cannot create or expand this power"
+      },
+      "correct_answer": "B",
+      "explanation": "The power of arrest without warrant in Irish law derives from multiple sources: (1) Common law \u2014 the power to arrest for breach of the peace or to prevent an imminent breach; (2) Section 4 of the Criminal Law Act 1997 \u2014 the general 'arrestable offence' power, allowing a Garda to arrest without warrant a person they reasonably suspect has committed, is committing, or is about to commit an arrestable offence (carrying 5 years or more); and (3) Specific statutory provisions \u2014 many acts create specific powers of arrest without warrant for particular offences (e.g., s.30 OATSA 1939 for scheduled offences). The s.4 CLA 1997 power replaced the old common law felony arrest power. Option A incorrectly denies any warrantless arrest power. Option C incorrectly limits the power to in-presence situations. Option D incorrectly locates the source solely in the Constitution."
+    },
+    {
+      "id": "CRL_M13_L03_Q06",
+      "question": "What obligations does a Garda have when arresting a person \u2014 what must they tell the arrested person?",
+      "options": {
+        "A": "A Garda arresting someone has no legal obligation to inform the person of the reason for arrest \u2014 the person will be informed at the station",
+        "B": "When arresting a person, a Garda must inform the person of the fact of their arrest and the reason for the arrest \u2014 this obligation derives from common law principles and has constitutional underpinning; failure to inform the arrested person of the reason for their arrest renders the arrest unlawful; the person is entitled to know why their liberty is being interfered with",
+        "C": "A Garda must provide the arrested person with a written statement of the offence for which they are arrested before the arrest can be made",
+        "D": "The only obligation is to inform the person that they are under arrest \u2014 the reason need not be given until the person is brought to the Garda station"
+      },
+      "correct_answer": "B",
+      "explanation": "When making an arrest, a Garda must inform the arrested person of the fact of their arrest and the reason for it. This obligation derives from the common law principle established in Christie v Leachinsky [1947] HOL \u2014 that an arrested person is entitled to know the reason for the interference with their liberty so that they can judge whether to submit and seek legal advice. An arrest that does not comply with this requirement may be unlawful and any subsequent detention may also be tainted. In Ireland, this principle is reinforced by constitutional protection for personal liberty under Art 40.4. The reason for arrest must be given in terms sufficiently clear for the person to understand why they are being arrested \u2014 though technical precision is not required. Options A and D incorrectly delay the obligation to inform. Option C incorrectly requires a written statement in advance."
+    },
+    {
+      "id": "CRL_M13_L03_Q07",
+      "question": "Peter is arrested under s.30 of the Offences Against the State Act 1939 on suspicion of membership of an unlawful organisation. He is held for 24 hours. A Chief Superintendent then extends the detention for a further 24 hours. Is this lawful?",
+      "options": {
+        "A": "No \u2014 the initial 24-hour detention under s.30 cannot be extended by any officer; Peter must be charged or released after 24 hours",
+        "B": "Yes \u2014 the extension is lawful; under s.30 OATSA 1939, the initial 24-hour detention can be extended by a Chief Superintendent for a further 24 hours where the officer has reasonable grounds to believe that continued detention is necessary for the proper investigation of the scheduled offence; a Chief Superintendent is an officer of sufficient rank to authorise the extension",
+        "C": "No \u2014 extensions under s.30 require court authorisation; a Chief Superintendent cannot extend detention without a court order",
+        "D": "Yes \u2014 but only if Peter was found to be in possession of incriminating material during the initial 24 hours; extensions cannot be authorised in the absence of concrete evidence"
+      },
+      "correct_answer": "B",
+      "explanation": "The extension of Peter's detention is lawful on the facts given. Under s.30 OATSA 1939: (1) initial detention of 24 hours is permitted following arrest for a scheduled offence; (2) a Chief Superintendent can authorise a first extension of a further 24 hours \u2014 total of 48 hours \u2014 where the officer believes continued detention is necessary for the proper investigation; (3) a further extension to 72 hours is available in certain circumstances. On the facts, the Chief Superintendent has authorised a first extension of 24 hours \u2014 bringing the total to 48 hours. This is within the s.30 framework and is lawful. No court order is required for the first extension under s.30 (contrast with the s.2 CJ(DT)A 1996 framework where extended detention beyond certain periods requires court authorisation). Option A incorrectly denies any extension power. Option C incorrectly requires court authorisation for the first extension. Option D incorrectly conditions the extension on finding evidence."
+    },
+    {
+      "id": "CRL_M13_L03_Q08",
+      "question": "What rights does an arrested person have upon arrival at a Garda station during the period of detention under s.4 of the Criminal Justice Act 1984?",
+      "options": {
+        "A": "An arrested person has no rights while in custody \u2014 they must submit to all questioning",
+        "B": "Under the Criminal Justice Act 1984 and related provisions, a detained person has the right to: (1) be informed of their rights; (2) consult a solicitor privately; (3) have a person notified of their detention (next of kin or another person); (4) receive a copy of their rights; these rights are given effect by the Criminal Justice Act 1984 (Treatment of Persons in Custody in Garda S\u00edoch\u00e1na Stations) Regulations 1987 and the right to legal advice is constitutionally grounded",
+        "C": "The only right is to be told the nature of the offence being investigated \u2014 solicitor access is a discretionary facility that Garda\u00ed can refuse if questioning might be prejudiced",
+        "D": "Rights only arise once the person is formally charged \u2014 during the period of detention before charge, no rights apply"
+      },
+      "correct_answer": "B",
+      "explanation": "A person detained under s.4 CJA 1984 has several important rights upon arrival at a Garda station. These are provided for under the Criminal Justice Act 1984 (Treatment of Persons in Custody in Garda S\u00edoch\u00e1na Stations) Regulations 1987 and include: (1) right to be informed of their rights and of the offence being investigated; (2) right to consult a solicitor privately \u2014 this is constitutionally grounded under Art 40.3 (personal rights) and the right to a fair trial under Art 38.1; (3) right to have a person notified of their detention; (4) right to receive a written notice of their rights. The right to legal advice is particularly important \u2014 denying access to a solicitor without good reason can taint the admissibility of any statements made during detention. Option A incorrectly denies all rights. Option C incorrectly makes solicitor access discretionary. Option D incorrectly delays rights until charge."
+    },
+    {
+      "id": "CRL_M13_L03_Q09",
+      "question": "Sarah is arrested under s.4 CJA 1984 on suspicion of burglary (an arrestable offence). After 24 hours, the Garda\u00ed have not charged her. What must happen?",
+      "options": {
+        "A": "Sarah can be held for a further 24 hours if a District Court judge authorises the extension",
+        "B": "Sarah must be released \u2014 the maximum detention period under s.4 CJA 1984 is 24 hours in total; once the maximum period expires, the detained person must be charged or released; continued detention beyond the statutory maximum without charge is unlawful and Sarah would be entitled to challenge her detention under Art 40.4 of the Constitution (habeas corpus)",
+        "C": "Sarah can be transferred to s.30 OATSA 1939 detention if the Garda\u00ed determine that the burglary had a political motivation",
+        "D": "The Garda\u00ed can request a 48-hour extension from a Chief Superintendent \u2014 the standard maximum of 24 hours can always be extended in serious cases"
+      },
+      "correct_answer": "B",
+      "explanation": "Once the maximum detention period of 24 hours under s.4 CJA 1984 has expired, Sarah must be released. The 24 hours represents the absolute maximum under s.4 \u2014 there is no provision for further court-ordered extension under this section. If the Garda\u00ed wish to continue holding Sarah, they would need to charge her (which triggers different procedural rules about bail) or release her. Continued detention beyond the statutory maximum is unlawful \u2014 Sarah would be entitled to challenge her detention by way of habeas corpus under Art 40.4 of the Constitution. The constitutional protection ensures that statutory detention periods are strictly observed. Option A invents a court-authorised extension under s.4 that does not exist. Option C incorrectly allows transfer to s.30 OATSA based on an invented political motivation test. Option D invents a Chief Superintendent extension power beyond the 24-hour maximum under s.4."
+    }
+  ]
+}

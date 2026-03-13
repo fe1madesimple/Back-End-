@@ -1,0 +1,215 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module05_Lesson02.txt",
+  "module_number": 5,
+  "module_title": "Directors and Their Fiduciary Duties",
+  "lesson_number": 2,
+  "lesson_title": "Conflicts of Interest, Secret Profits, and the Duty of Skill and Care",
+  "total_questions": 17,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Regent, a director of CopperMine Ltd, learns in the course of his duties that a rival company has identified a mineral deposit that CopperMine cannot afford to purchase. Regent acquires the deposit personally and profits handsomely. CopperMine sues for an account of profits. Which authority most directly governs this scenario?",
+      "options": {
+        "A": "Aberdeen Railway v Blaikie [1854] — no-conflict rule prevents directors from entering contracts with their own company",
+        "B": "Regal (Hastings) v Gulliver [1942] HL — a director who profits by reason of their fiduciary position must account, regardless of whether the company could have taken the opportunity",
+        "C": "Peso Silver Mines v Cropper [1966] — a director may exploit an opportunity the company has genuinely declined in good faith",
+        "D": "Re Smith and Fawcett [1942] — a director acts subjectively in what they honestly believe to be the company's interest"
+      },
+      "correct_answer": "B",
+      "explanation": "Regal (Hastings) v Gulliver [1942] AC 134 (HL) is the leading authority on the no-profit rule: a director who acquires a profit by reason of their fiduciary position must account for it, even if the company could not have taken the opportunity itself. The House of Lords held the directors liable to account despite acting honestly. This was approved in Ireland in AIB plc v Diamond [2011] IEHC 505."
+    },
+    {
+      "id": 2,
+      "question": "In AIB plc v Diamond [2011] IEHC 505, Clarke J considered the Regal Hastings no-profit rule in an Irish context. Which of the following best captures the significance of that decision for Irish company law?",
+      "options": {
+        "A": "It modified Regal Hastings to require actual dishonest intent before an account of profits can be ordered",
+        "B": "It confined the no-profit rule to directors who are also majority shareholders",
+        "C": "It confirmed the application of Regal Hastings in Ireland and held that the no-profit rule operates automatically without the need to prove dishonesty or damage to the company",
+        "D": "It held that Irish law requires the company to first establish it suffered a quantifiable financial loss before ordering an account of profits"
+      },
+      "correct_answer": "C",
+      "explanation": "In AIB plc v Diamond [2011] IEHC 505, Clarke J (as he then was) confirmed that the Regal Hastings no-profit rule applies in Irish company law and that a director who makes a profit by virtue of their position must account for it without the need to establish dishonesty or actual financial loss to the company. The rule is strict liability."
+    },
+    {
+      "id": 3,
+      "question": "Tom is the managing director of InfraCo Ltd. The company is negotiating a construction contract with BuildRight plc. Tom fails to disclose that he is a 40% shareholder in BuildRight. The contract is subsequently entered into at above-market rates. The applicable foundational principle derives from which authority?",
+      "options": {
+        "A": "Regal Hastings v Gulliver [1942] — no-profit rule",
+        "B": "Aberdeen Railway Co v Blaikie Brothers [1854] HL — a director cannot enter into a contract on behalf of a company in which they have a personal interest without disclosure and approval",
+        "C": "Cook v Deeks [1916] PC — directors cannot divert corporate opportunities to themselves",
+        "D": "Howard Smith Ltd v Ampol Petroleum [1974] PC — directors must exercise powers for the proper purpose for which they were conferred"
+      },
+      "correct_answer": "B",
+      "explanation": "Aberdeen Railway Co v Blaikie Brothers [1854] 1 Macq 461 (HL) is the foundational authority for the no-conflict rule: a director acting on behalf of the company cannot enter into a contract in which they have a personal interest, as their duty to the company and their personal interest are in direct conflict. This is now codified in S228(1)(g) CA 2014."
+    },
+    {
+      "id": 4,
+      "question": "Kieran, director of VentureTech Ltd, is approached by a third party offering a lucrative licensing deal. The board considers the proposal but formally resolves to decline, concluding it falls outside VentureTech's current strategic priorities. Kieran then enters the deal personally. In the event VentureTech seeks an account of profits, which authority is most relevant to Kieran's defence?",
+      "options": {
+        "A": "Regal Hastings v Gulliver [1942] — strict no-profit rule; company's inability to pursue the opportunity is no defence",
+        "B": "Peso Silver Mines v Cropper [1966] — a director may pursue an opportunity the company has genuinely declined in good faith, provided the company's decision was bona fide and not influenced by the director",
+        "C": "IDA v Cooley [1972] — a director must resign before taking a corporate opportunity even after refusal by the board",
+        "D": "Gencor v Dalby [2000] — a director who makes a profit after leaving office must still account to the company"
+      },
+      "correct_answer": "B",
+      "explanation": "Peso Silver Mines v Cropper [1966] SCR 673 (Canada SC, persuasive authority) provides a potential defence: where the company has genuinely and independently declined an opportunity in good faith, and the director's pursuit of it was not influenced by their insider position, they may be free to take it. However, Gencor v Dalby [2000] Ch 602 established that a director cannot simply wait out the board's refusal and then exploit the opportunity — the refusal must be genuinely independent."
+    },
+    {
+      "id": 5,
+      "question": "In IDA v Cooley [1972] 1 WLR 443, Cooley, managing director of the IDA, obtained information through his position that a third party wished to award a contract. He feigned illness to procure his release from his directorship and then accepted the contract personally. Which principle does this case primarily establish?",
+      "options": {
+        "A": "A director who resigns before taking an opportunity is free from the no-profit rule",
+        "B": "A director cannot use information or opportunities obtained by virtue of their office for personal gain, even after resignation, where the opportunity arose during the directorship",
+        "C": "The no-profit rule does not apply to public sector bodies",
+        "D": "A director who obtains a personal benefit must account only where the company suffered an equivalent loss"
+      },
+      "correct_answer": "B",
+      "explanation": "IDA v Cooley [1972] 1 WLR 443 established that a director cannot escape liability by resigning before taking an opportunity that was identified or developed in the course of the directorship. Cooley's resignation was engineered precisely to enable him to take the opportunity — the court held he was in breach of fiduciary duty and ordered an account of profits. This principle was also applied in Gencor v Dalby [2000]."
+    },
+    {
+      "id": 6,
+      "question": "Fintan is a director of RetailGroup Ltd. He sets up a competing retail business in his own name, operates it while remaining a director of RetailGroup, and diverts customers he meets in his RetailGroup capacity to his personal business. The earliest Irish authority establishing a director's duty not to compete with the company is:",
+      "options": {
+        "A": "Regal Hastings v Gulliver [1942] — English House of Lords",
+        "B": "Moore v McGlynn [1894] — Irish High Court, establishing that a director who sets up a competing business is in breach of fiduciary duty",
+        "C": "Aberdeen Railway v Blaikie [1854] — no-conflict rule",
+        "D": "Cook v Deeks [1916] — diversion of corporate opportunity"
+      },
+      "correct_answer": "B",
+      "explanation": "Moore v McGlynn [1894] 1 IR 74 is a foundational Irish authority establishing that a director who secretly competes with the company they serve is in breach of fiduciary duty. Chatterton VC held that a managing director owed a duty of undivided loyalty and could not simultaneously operate a competing business."
+    },
+    {
+      "id": 7,
+      "question": "After leaving MedPharm Ltd, where he was CEO, Dr Conor immediately joins a competitor company and exploits commercially sensitive pricing information he obtained at MedPharm. Which of the following principles, as applied in Gencor v Dalby [2000] Ch 602, most directly supports MedPharm's claim?",
+      "options": {
+        "A": "A former director owes no obligations to their previous company once the directorship terminates",
+        "B": "A director who exploits an opportunity developed during the directorship — even after resignation — must account for profits earned from it",
+        "C": "The no-conflict rule extinguishes on the termination of the director's appointment",
+        "D": "A former director may use general skills acquired during the directorship but not confidential information — and these are the same thing"
+      },
+      "correct_answer": "B",
+      "explanation": "Gencor v Dalby [2000] Ch 602 (England) extended the no-profit rule to post-resignation exploitation of opportunities that were developed during the directorship. A director who positions themselves to profit from the company's information or opportunity, then resigns to exploit it, remains liable to account. The underlying principle is that a director cannot use their fiduciary position as a springboard for post-resignation profit."
+    },
+    {
+      "id": 8,
+      "question": "S228(1)(h) CA 2014 imposes a duty on directors in respect of skill and care. Which statement correctly characterises the standard of care?",
+      "options": {
+        "A": "Purely subjective — measured by the director's actual skill, knowledge, and experience only",
+        "B": "Dual objective-subjective — a director must meet the standard of a reasonably diligent person with (i) general knowledge, skill and experience reasonably expected of a person in that role; and (ii) the actual knowledge, skill and experience that the director in question has",
+        "C": "The standard of care is aspirational only — breach creates no personal liability",
+        "D": "The standard is set by the company's constitution and overrides the statutory standard"
+      },
+      "correct_answer": "B",
+      "explanation": "S228(1)(h) CA 2014 adopts the dual objective-subjective standard: the director must meet the standard of a reasonably diligent person having the general knowledge, skill and experience that may reasonably be expected of a person in the same role AND the actual knowledge, skill and experience of that specific director. This is the same approach as S174 of the UK Companies Act 2006 and is derived from the Re D'Jan of London [1994] standard."
+    },
+    {
+      "id": 9,
+      "question": "A director of a financial services company was a qualified actuary with 20 years of experience in complex derivatives. The company entered into a disastrous interest rate swap. The director claims their duty of care should be assessed against what a general non-specialist director would have known. Under S228(1)(h) CA 2014, is this submission correct?",
+      "options": {
+        "A": "Yes — the test is purely objective and applies the same baseline standard to all directors regardless of expertise",
+        "B": "No — the dual standard means the director's actual expertise as a qualified actuary is incorporated; they are held to the higher standard their qualifications bring",
+        "C": "Yes — personal expertise cannot be used against a director as it would discourage qualified professionals from serving as directors",
+        "D": "No — but only if the company's constitution specifies a higher standard for specialist directors"
+      },
+      "correct_answer": "B",
+      "explanation": "S228(1)(h) CA 2014 expressly provides that a director with particular expertise or experience is held to the higher standard that their personal qualifications and experience bring. The dual standard operates as a floor (general reasonable director standard) which the director's actual expertise elevates. A specialist director cannot rely on ignorance they ought not to have."
+    },
+    {
+      "id": 10,
+      "question": "S224A CA 2014, inserted by SI 380/2022 (implementing the EU Preventive Restructuring Directive), provides that directors must have regard to the interests of creditors when the company is insolvent or likely to become so. The antecedent English authority often cited for this duty is:",
+      "options": {
+        "A": "Regal Hastings v Gulliver [1942] — no-profit rule",
+        "B": "West Mercia Safetywear Ltd v Dodd [1988] 4 BCC 30 (EW CA) — a director must consider creditor interests when the company is insolvent or near-insolvent",
+        "C": "Re Smith and Fawcett [1942] — directors act bona fide in the interests of the company",
+        "D": "Howard Smith Ltd v Ampol [1974] PC — directors must exercise powers for proper purposes"
+      },
+      "correct_answer": "B",
+      "explanation": "West Mercia Safetywear Ltd v Dodd [1988] 4 BCC 30 is the leading English authority establishing that when a company is insolvent or on the verge of insolvency, directors owe a duty to have regard to the interests of creditors. S224A CA 2014 (inserted by SI 380/2022) codifies this principle in Irish law: when the company is insolvent or likely to become insolvent, the interests of creditors must be considered alongside (and may override) shareholder interests."
+    },
+    {
+      "id": 11,
+      "question": "Under S224A CA 2014 (as inserted by SI 380/2022), when does the duty to consider creditor interests first engage?",
+      "options": {
+        "A": "Only once a liquidator has been formally appointed",
+        "B": "Once the company is actually unable to pay its debts as defined by S570 CA 2014",
+        "C": "When the company is insolvent or likely to become insolvent — a forward-looking threshold that may trigger before technical insolvency occurs",
+        "D": "Once a receiver has been appointed by a debenture holder"
+      },
+      "correct_answer": "C",
+      "explanation": "S224A CA 2014 uses a forward-looking formulation: the creditor duty engages when the company 'is or is likely to become unable to pay its debts as they fall due' (the zone of insolvency). This means directors must take action before formal insolvency — failing to consider creditors in this period may expose them to liability under S224A and/or S610 reckless trading."
+    },
+    {
+      "id": 12,
+      "question": "In Dynamic Technology Ltd v Loughran [2009] IEHC, a director profited by channelling contracts from the company to a related entity he controlled. Which provision of the CA 2014 most directly codifies the duty breached?",
+      "options": {
+        "A": "S228(1)(a) — bona fide in the interests of the company",
+        "B": "S228(1)(g) — avoid any situation in which the director has, or can have, a direct or indirect interest conflicting with the interests of the company",
+        "C": "S228(1)(h) — exercise skill and care",
+        "D": "S228(1)(b) — act only in accordance with the constitution and exercise powers only for lawful purposes"
+      },
+      "correct_answer": "B",
+      "explanation": "S228(1)(g) CA 2014 codifies the duty to avoid conflicts of interest. A director who channels business from the company to a related entity controlled by them has a direct conflict between their personal financial interest and the interests of the company. This was the core breach in Dynamic Technology v Loughran [2009], where the director was held liable to account for profits derived from the conflicted transactions."
+    },
+    {
+      "id": 13,
+      "question": "Helena, a director of CleanEnergy Ltd, used confidential pricing information obtained in her role to assist a competitor company in winning a tender that CleanEnergy was bidding for. She received a consultancy fee from the competitor. CleanEnergy seeks to recover the consultancy fee. What is the legal basis for recovery?",
+      "options": {
+        "A": "S228(1)(h) — failure to exercise skill and care",
+        "B": "S228(1)(g) — no-conflict rule; Helena must account for any profit made from exploiting information obtained in her fiduciary capacity",
+        "C": "S228(1)(a) — breach of bona fide duty; but recovery requires proof that CleanEnergy suffered an equivalent loss",
+        "D": "Recovery is not available as Helena received the fee from a third party, not from CleanEnergy"
+      },
+      "correct_answer": "B",
+      "explanation": "The no-profit and no-conflict rules operate in combination: a director who uses information obtained in their fiduciary capacity to obtain personal gain must account for any profit, regardless of whether the company could have made the same profit itself or suffered a quantifiable loss. The fee was generated through exploitation of a fiduciary position. See Regal Hastings; AIB v Diamond [2011]; and S228(1)(g) CA 2014."
+    },
+    {
+      "id": 14,
+      "question": "A director discloses a conflict of interest at a board meeting and obtains approval from the remaining non-conflicted directors. S228(1)(g) CA 2014 provides for this mechanism. What is the effect of valid disclosure and approval?",
+      "options": {
+        "A": "It has no legal effect — only shareholder ratification by special resolution can relieve a conflict",
+        "B": "It provides a complete defence to breach of the no-conflict duty, provided the disclosure is full and the approval is given by genuinely independent directors",
+        "C": "It reduces the remedy available to the company from account of profits to an award of nominal damages only",
+        "D": "It relieves the director of the S228(1)(g) duty but not from S228(1)(a) bona fide duty"
+      },
+      "correct_answer": "B",
+      "explanation": "S228(1)(g) CA 2014 expressly provides that the no-conflict duty does not apply if the situation has been authorised by the directors. For board authorisation to be effective: (i) the conflicted director must make full disclosure; (ii) the approval must be given by genuinely independent directors (not by the conflicted director themselves); and (iii) the authorisation must not be prohibited by the company's constitution. Valid authorisation is a complete defence."
+    },
+    {
+      "id": 15,
+      "question": "A non-executive director of TechFin Ltd attended only 2 of 20 board meetings over two years and signed off on accounts without reading them. The company subsequently went insolvent. Under S228(1)(h) CA 2014, which of the following most accurately describes the legal position?",
+      "options": {
+        "A": "Non-executive directors are not subject to the S228(1)(h) standard as they do not manage the company day-to-day",
+        "B": "The director is in breach of the S228(1)(h) standard — even NEDs are required to exercise the diligence of a reasonably diligent person with the general knowledge and experience expected of their role",
+        "C": "Attendance at board meetings is merely a matter of good practice and not a legal requirement",
+        "D": "The director cannot be liable under S228(1)(h) if they received no remuneration for the role"
+      },
+      "correct_answer": "B",
+      "explanation": "S228(1)(h) CA 2014 applies to all directors, including NEDs. The standard requires a reasonably diligent person with the general knowledge and experience expected of a person in that role. Systemic non-attendance and rubber-stamping of accounts without scrutiny falls far short of this standard. Fennell v Appelbe [2022] (CA) confirmed that passive directors cannot use their passivity as a shield — the duty is active, not passive."
+    },
+    {
+      "id": 16,
+      "question": "In which circumstance would a director MOST likely successfully resist an account of profits under the corporate opportunity doctrine?",
+      "options": {
+        "A": "Where the director personally needed the money and the company's shareholders were sympathetic",
+        "B": "Where the company has been fully and independently informed of the opportunity and has, without any influence from the director, resolved not to pursue it — and the director's exploitation of the opportunity was entirely separate from their directorial position",
+        "C": "Where the opportunity was obtained through the director's personal contacts rather than directly through company business",
+        "D": "Where the director resigned before taking the opportunity and waited six months"
+      },
+      "correct_answer": "B",
+      "explanation": "The most robust defence to a corporate opportunity claim is genuine, independent board refusal followed by an arm's-length exploitation (Peso Silver Mines v Cropper [1966]). However, the courts scrutinise such defences closely: if the director influenced the board's decision, if the refusal was engineered (as in IDA v Cooley [1972]), or if the opportunity emerged from the directorial role, the defence will fail. Merely resigning (Option D) is insufficient if the opportunity arose during the directorship (Gencor v Dalby [2000])."
+    },
+    {
+      "id": 17,
+      "question": "S228(1)(e) CA 2014 provides that a director must not agree to restrict their exercise of an independent judgment in the future. Brian, a director, enters into a side agreement with a major shareholder to always vote in favour of that shareholder's candidates for board positions. Which legal consequences follow?",
+      "options": {
+        "A": "The agreement is valid as shareholders can legitimately request director voting commitments",
+        "B": "The agreement is void as it fetters Brian's independent judgment in breach of S228(1)(e), and Brian may be personally liable to the company for any loss flowing from votes cast pursuant to the fetter",
+        "C": "The agreement is voidable at Brian's option only — he may choose whether to honour it",
+        "D": "The agreement is valid if approved by a majority of shareholders at a general meeting"
+      },
+      "correct_answer": "B",
+      "explanation": "S228(1)(e) CA 2014 codifies the principle from Clark v Workman [1920] IR 107: a director cannot lawfully agree in advance to exercise their discretion in a particular way. Such an agreement fetters the director's judgment and removes the very discretion they are required to exercise in the company's interests. Any such agreement is void as contrary to the director's fiduciary duty, and Brian remains obliged to vote as he independently considers best for the company at the time."
+    }
+  ]
+}

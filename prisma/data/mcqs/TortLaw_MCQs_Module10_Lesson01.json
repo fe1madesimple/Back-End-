@@ -1,0 +1,383 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module10_Lesson01.txt",
+  "module_number": 10,
+  "module_title": "Defences and Concurrent Wrongdoers",
+  "lesson_number": 1,
+  "lesson_title": "Contributory Negligence, Volenti, Illegality, Concurrent Wrongdoers, and Limitation of Actions",
+  "total_questions": 31,
+  "questions": [
+    {
+      "id": "TL_M10_L01_Q01",
+      "question": "Contributory negligence arises where the plaintiff's own failure to take reasonable care has contributed to their damage. Under section 34 of the Civil Liability Act 1961, what is the effect of a finding of contributory negligence?",
+      "options": {
+        "A": "The plaintiff's damages are reduced in proportion to their own degree of fault",
+        "B": "The plaintiff's claim is completely defeated and they recover nothing",
+        "C": "The defendant is entitled to a stay of proceedings pending the plaintiff's appeal",
+        "D": "The court must refer the matter to the Injuries Board for reassessment"
+      },
+      "correct_answer": "A",
+      "explanation": "Under s.34 of the Civil Liability Act 1961, contributory negligence leads to proportional reduction — not extinguishment — of the plaintiff's damages. The court apportions fault between the parties and reduces the award accordingly."
+    },
+    {
+      "id": "TL_M10_L01_Q02",
+      "question": "Before the Civil Liability Act 1961, what was the common law position on contributory negligence?",
+      "options": {
+        "A": "Damages were reduced proportionally to the plaintiff's fault",
+        "B": "Contributory negligence was a complete bar — a plaintiff even one percent at fault received nothing",
+        "C": "The court had a discretion to award full or reduced damages",
+        "D": "Contributory negligence could only be raised as a defence in personal injury cases"
+      },
+      "correct_answer": "B",
+      "explanation": "At common law, contributory negligence was a complete bar. A plaintiff even minimally at fault received nothing. This produced manifestly unjust results and the Civil Liability Act 1961 replaced it with proportionate apportionment under s.34."
+    },
+    {
+      "id": "TL_M10_L01_Q03",
+      "question": "In Hussey v Twomey [2009], Fennelly J confirmed that apportionment of fault under section 34 of the Civil Liability Act 1961 is:",
+      "options": {
+        "A": "A mathematical exercise based on the percentage of physical causation attributable to each party",
+        "B": "Determined solely by reference to what the plaintiff failed to do",
+        "C": "A matter of assessing the relative blameworthiness and causative potency of each party's contribution",
+        "D": "Fixed at 50/50 in road traffic accident cases"
+      },
+      "correct_answer": "C",
+      "explanation": "Hussey v Twomey [2009] is the leading Irish authority on apportionment. Fennelly J confirmed that apportionment is not a mathematical exercise but a matter of assessing the relative blameworthiness and causative potency of each party's contribution to the loss."
+    },
+    {
+      "id": "TL_M10_L01_Q04",
+      "question": "Volenti non fit injuria, if successfully established, operates as:",
+      "options": {
+        "A": "A partial defence reducing the plaintiff's damages",
+        "B": "A defence extinguishing liability only for property damage claims",
+        "C": "A defence available only in cases of sporting activity",
+        "D": "A complete defence that extinguishes the plaintiff's claim entirely"
+      },
+      "correct_answer": "D",
+      "explanation": "Volenti non fit injuria is a complete defence — unlike contributory negligence which merely reduces damages. A successful volenti plea extinguishes the claim entirely. Because of this, courts apply it narrowly and both elements must be strictly proved."
+    },
+    {
+      "id": "TL_M10_L01_Q05",
+      "question": "The two elements required to establish the defence of volenti non fit injuria are:",
+      "options": {
+        "A": "Full knowledge of the nature and extent of the risk, and voluntary agreement to accept that risk",
+        "B": "Express written consent and participation in an inherently dangerous activity",
+        "C": "Awareness of the risk and failure to take any precautions against it",
+        "D": "Contractual consent and payment of an admission fee to participate in the activity"
+      },
+      "correct_answer": "A",
+      "explanation": "Volenti requires two elements: (1) full knowledge of the nature and extent of the specific risk; and (2) voluntary agreement to accept that risk — not merely knowledge, not mere participation, but a genuine, free choice to accept the risk. Both must be proved for the defence to succeed."
+    },
+    {
+      "id": "TL_M10_L01_Q06",
+      "question": "In McComiskey v McDermott [1974], the Irish Supreme Court rejected a volenti plea because:",
+      "options": {
+        "A": "The plaintiff had not been warned about the risks of rally driving before getting into the car",
+        "B": "The plaintiff may have accepted general rally risks but had not consented to the specific risk of the defendant's reckless driving",
+        "C": "Volenti cannot apply to road traffic accidents under the Civil Liability Act 1961",
+        "D": "The plaintiff was under economic duress to participate in the rally event"
+      },
+      "correct_answer": "B",
+      "explanation": "McComiskey v McDermott [1974] is the leading Irish authority on volenti. Walsh J held that while the plaintiff may have accepted ordinary rally risks, she had not consented to the specific risk of the defendant's reckless driving. Volenti requires consent to the very risk that materialised — not merely to the general activity."
+    },
+    {
+      "id": "TL_M10_L01_Q07",
+      "question": "Under section 34(1)(b) of the Civil Liability Act 1961, which of the following is clarified regarding volenti?",
+      "options": {
+        "A": "Volenti applies automatically in all cases where the plaintiff signed a waiver",
+        "B": "Volenti is available only to occupiers, not to ordinary defendants in negligence",
+        "C": "Acceptance of risk is not to be inferred from the mere fact that the plaintiff knew of the risk — knowledge does not equal consent",
+        "D": "Volenti can only be pleaded in conjunction with contributory negligence"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 34(1)(b) Civil Liability Act 1961 expressly preserves volenti but makes clear that acceptance of risk is not to be inferred merely from knowledge of the risk. Knowledge is a necessary but not sufficient element — there must also be genuine and voluntary consent."
+    },
+    {
+      "id": "TL_M10_L01_Q08",
+      "question": "The illegality defence in Irish tort law is codified in which provision?",
+      "options": {
+        "A": "Section 34 of the Civil Liability Act 1961",
+        "B": "Section 11 of the Civil Liability Act 1961",
+        "C": "Section 7 of the Civil Liability and Courts Act 2004",
+        "D": "Section 57 of the Civil Liability Act 1961"
+      },
+      "correct_answer": "D",
+      "explanation": "The illegality defence (ex turpi causa non oritur actio) is codified in s.57 of the Civil Liability Act 1961. It provides that tortious liability does not arise where the act giving rise to the claim was engaged in by the plaintiff while committing a serious criminal offence."
+    },
+    {
+      "id": "TL_M10_L01_Q09",
+      "question": "For the illegality defence under section 57 of the Civil Liability Act 1961 to apply, which condition must be met?",
+      "options": {
+        "A": "The plaintiff's illegal conduct must be closely connected to and integral to the claim — not merely incidental",
+        "B": "The plaintiff must have been convicted of the criminal offence before proceedings are issued",
+        "C": "Any illegal conduct by the plaintiff at the time of the accident bars their claim",
+        "D": "The defendant must also have been engaged in the illegal activity for the defence to apply"
+      },
+      "correct_answer": "A",
+      "explanation": "The illegality defence is narrow. The plaintiff's illegal conduct must be closely connected to and integral to the circumstances giving rise to the claim. A person illegally driving a car with a defective licence who is injured by another driver's negligence cannot be defeated by the illegality defence — the illegality is not sufficiently connected."
+    },
+    {
+      "id": "TL_M10_L01_Q10",
+      "question": "Under section 11(1) of the Civil Liability Act 1961, a 'concurrent wrongdoer' is defined as:",
+      "options": {
+        "A": "A defendant who was negligent at the same time as a co-defendant, but for a different purpose",
+        "B": "One of two or more persons whose wrongful acts — whether committed at the same time or different times — cause or contribute to the same damage",
+        "C": "Only persons who are jointly sued in the same proceedings",
+        "D": "Two defendants whose negligence was precisely equal in causative contribution"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 11(1) CLA 1961 defines concurrent wrongdoers as two or more persons whose wrongful acts — whether simultaneous or sequential — cause or contribute to the same damage. The acts need not occur at the same time; what matters is that they contributed to the same damage."
+    },
+    {
+      "id": "TL_M10_L01_Q11",
+      "question": "Concurrent wrongdoers under the Civil Liability Act 1961 are jointly and severally liable for the plaintiff's damage. What does this mean in practice?",
+      "options": {
+        "A": "Each wrongdoer is only liable for their proportionate share of the damage",
+        "B": "The plaintiff must sue all concurrent wrongdoers in the same proceedings",
+        "C": "The plaintiff can recover the full amount of their loss from any one concurrent wrongdoer, regardless of that wrongdoer's proportion of fault",
+        "D": "The liability of each wrongdoer is capped at 50% of the total loss"
+      },
+      "correct_answer": "C",
+      "explanation": "Joint and several liability means the plaintiff can recover the full amount of their loss from any one concurrent wrongdoer. The plaintiff need not sue all wrongdoers and may choose the defendant most able to pay. The paying defendant then has a right of contribution against co-wrongdoers."
+    },
+    {
+      "id": "TL_M10_L01_Q12",
+      "question": "The 'innocent plaintiff rule' under section 12 of the Civil Liability Act 1961 provides that:",
+      "options": {
+        "A": "A plaintiff who did not contribute to the accident can only recover from the most blameworthy defendant",
+        "B": "Plaintiff innocence must be established before any claim can be brought against concurrent wrongdoers",
+        "C": "An innocent plaintiff may only recover in proportion to each wrongdoer's relative fault",
+        "D": "A wholly innocent plaintiff is entitled to recover their full damages from any concurrent wrongdoer, even if that wrongdoer's proportionate fault was minor"
+      },
+      "correct_answer": "D",
+      "explanation": "Section 12 CLA 1961 establishes the innocent plaintiff rule: a plaintiff bearing no contributory negligence is entitled to full damages from any concurrent wrongdoer, even if that wrongdoer's fault was relatively small. The defendant who overpays their proportionate share then has contribution rights against co-wrongdoers under s.21."
+    },
+    {
+      "id": "TL_M10_L01_Q13",
+      "question": "Under section 21 of the Civil Liability Act 1961, a right of contribution between concurrent wrongdoers arises where:",
+      "options": {
+        "A": "A concurrent wrongdoer has discharged more than their proportionate share of the plaintiff's loss and seeks to recover the excess from co-wrongdoers",
+        "B": "Two or more wrongdoers wish to pool their liability before a trial",
+        "C": "A wrongdoer is insolvent and seeks State indemnification for the unpaid share",
+        "D": "A wrongdoer believes another party bears greater responsibility and applies to have the case reassessed"
+      },
+      "correct_answer": "A",
+      "explanation": "Section 21 CLA 1961 governs contribution between concurrent wrongdoers. A wrongdoer who has discharged more than their proportionate share of the plaintiff's loss may recover the excess from co-wrongdoers by way of contribution proceedings."
+    },
+    {
+      "id": "TL_M10_L01_Q14",
+      "question": "Under section 16(2) of the Civil Liability Act 1961, a judgment against one concurrent wrongdoer:",
+      "options": {
+        "A": "Automatically bars any further claims against co-wrongdoers for the same damage",
+        "B": "Does not bar an action against another concurrent wrongdoer for the same damage, provided the judgment has not been satisfied",
+        "C": "Requires the plaintiff to distribute the recovery equally among all identified wrongdoers",
+        "D": "Must be lodged with the court before proceedings against other wrongdoers may be commenced"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 16(2) CLA 1961 provides that a judgment against one concurrent wrongdoer does not bar a claim against another for the same damage — provided the judgment has not been satisfied. The plaintiff can pursue multiple defendants and collect from all, up to but not exceeding the total proven loss."
+    },
+    {
+      "id": "TL_M10_L01_Q15",
+      "question": "The core limitation period for personal injury claims in negligence in Ireland is set out in section 7 of the Civil Liability and Courts Act 2004. What is the period?",
+      "options": {
+        "A": "Six years from the date of the accident",
+        "B": "Three years from the date on which the plaintiff suffered damage",
+        "C": "Two years from the date on which the cause of action accrued or the date of the plaintiff's knowledge — whichever is later",
+        "D": "One year from the date of the accident or date of knowledge, extendable by the court"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 7 of the Civil Liability and Courts Act 2004 provides a two-year limitation period for personal injury claims in negligence, nuisance, or breach of duty — running from the date the cause of action accrued or the date of the plaintiff's knowledge, whichever is later."
+    },
+    {
+      "id": "TL_M10_L01_Q16",
+      "question": "Under section 11(2)(a) of the Statute of Limitations 1957, the limitation period for general tort claims (not involving personal injury) is:",
+      "options": {
+        "A": "Two years from the date of the cause of action",
+        "B": "Three years from the date on which the plaintiff discovered the damage",
+        "C": "One year from the date of the cause of action, extendable in exceptional circumstances",
+        "D": "Six years from the date on which the cause of action accrued"
+      },
+      "correct_answer": "D",
+      "explanation": "Section 11(2)(a) of the Statute of Limitations 1957 provides a six-year limitation period for general tort claims not involving personal injury — such as property damage or pure economic loss — running from the date the cause of action accrued."
+    },
+    {
+      "id": "TL_M10_L01_Q17",
+      "question": "The limitation period for defamation claims in Ireland under section 38 of the Defamation Act 2009 is:",
+      "options": {
+        "A": "One year from the date on which the cause of action accrued, extendable to two years by the court in exceptional circumstances",
+        "B": "Two years from the date of publication of the defamatory statement",
+        "C": "Six years from the date on which the plaintiff discovered the defamatory statement",
+        "D": "Three years from the date the plaintiff suffered reputational damage"
+      },
+      "correct_answer": "A",
+      "explanation": "Section 38 of the Defamation Act 2009 provides a one-year limitation period for defamation claims, running from the date the cause of action accrued. The court may extend this to two years in exceptional circumstances."
+    },
+    {
+      "id": "TL_M10_L01_Q18",
+      "question": "Under section 48A of the Civil Liability Act 1961, what is the limitation period for fatal injury claims?",
+      "options": {
+        "A": "Two years from the date of death",
+        "B": "Three years from the date of death or the date of the deceased's personal representative's knowledge — whichever is later",
+        "C": "Six years from the date the estate is administered",
+        "D": "One year from the date of death, extendable in exceptional circumstances"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 48A CLA 1961 provides that fatal injury claims must be brought within three years of the date of death or the date of the deceased's personal representative's knowledge — whichever is later."
+    },
+    {
+      "id": "TL_M10_L01_Q19",
+      "question": "The 'date of knowledge' rule, set out in section 3 of the Statute of Limitations (Amendment) Act 1991, provides that the limitation period begins to run from the date on which the plaintiff had knowledge of material facts. 'Knowledge' in this context means:",
+      "options": {
+        "A": "The date on which the plaintiff obtained legal advice confirming their right of action",
+        "B": "The date on which the plaintiff was diagnosed with a clinically recognised condition",
+        "C": "Factual knowledge — the date on which the plaintiff knew or ought reasonably to have known the relevant facts (including identity of the defendant and nature of the injury), not the date of legal knowledge",
+        "D": "The date on which the plaintiff first consulted a solicitor about the potential claim"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 3 of the Statute of Limitations (Amendment) Act 1991 provides that knowledge means factual knowledge — when the plaintiff knew or ought reasonably to have known the material facts including the defendant's identity and the nature of the injury. It is not the date the plaintiff knew they had a legal right of action."
+    },
+    {
+      "id": "TL_M10_L01_Q20",
+      "question": "Under section 48 of the Statute of Limitations 1957, the limitation period for a plaintiff under a disability (e.g., a minor or a person of unsound mind) begins to run from:",
+      "options": {
+        "A": "The date the cause of action accrued, regardless of the disability",
+        "B": "The date the plaintiff's litigation friend is appointed to act on their behalf",
+        "C": "The date the plaintiff turns 18 in all cases, irrespective of when the disability arose",
+        "D": "The date the disability ceases"
+      },
+      "correct_answer": "D",
+      "explanation": "Section 48 of the Statute of Limitations 1957 provides that where a plaintiff is under a disability — such as a minor or a person of unsound mind — the limitation period does not begin to run until the disability ceases. This protects vulnerable plaintiffs from being time-barred while incapable of bringing proceedings."
+    },
+    {
+      "id": "TL_M10_L01_Q21",
+      "question": "Under section 72 of the Statute of Limitations 1957, where a defendant conceals a claim by fraud, the limitation period:",
+      "options": {
+        "A": "Does not begin to run until the plaintiff discovers or ought reasonably to have discovered the fraud",
+        "B": "Continues to run from the date the cause of action accrued, as fraud does not suspend limitation",
+        "C": "Is automatically extended by five years upon proof of fraud",
+        "D": "Is suspended only if the plaintiff was induced by the fraud to delay issuing proceedings"
+      },
+      "correct_answer": "A",
+      "explanation": "Section 72 of the Statute of Limitations 1957 provides that where a claim is concealed by fraud, the limitation period does not begin to run until the plaintiff discovers or ought to have discovered the fraud. This prevents defendants from using limitation as a tool where they have concealed the cause of action."
+    },
+    {
+      "id": "TL_M10_L01_Q22",
+      "question": "The three-stage test for dismissal of an action for want of prosecution, derived from Primor plc v Stokes Kennedy Crowley [1996], requires the court to ask:",
+      "options": {
+        "A": "Was the delay deliberate; was it caused by the defendant's conduct; and did it prejudice the plaintiff?",
+        "B": "Has there been inordinate delay; is that delay inexcusable; and on the balance of justice, should the claim be dismissed?",
+        "C": "Was the claim issued in time; was it served promptly; and was a hearing date applied for within one year?",
+        "D": "Did the plaintiff breach case management directions; was there a fair trial still possible; and was the defendant prejudiced?"
+      },
+      "correct_answer": "B",
+      "explanation": "Primor plc v Stokes Kennedy Crowley [1996] IESC established the three-stage test for want of prosecution: (1) has there been inordinate delay? (2) is that delay inexcusable? (3) on the balance of justice — considering prejudice to both parties — should the claim be dismissed?"
+    },
+    {
+      "id": "TL_M10_L01_Q23",
+      "question": "A plaintiff sues two concurrent wrongdoers, X and Y. The court apportions fault 70% to X and 30% to Y. The plaintiff is wholly innocent. The plaintiff recovers full damages from Y (the 30% wrongdoer). Can Y recover from X?",
+      "options": {
+        "A": "No — Y can only recover from X if X was more than 50% at fault",
+        "B": "No — Y chose to pay voluntarily and waived any contribution right",
+        "C": "Yes — under section 21 CLA 1961, Y can recover 70% of the total damages from X by way of contribution proceedings",
+        "D": "Yes — but only if X was a party to the original proceedings against the plaintiff"
+      },
+      "correct_answer": "C",
+      "explanation": "Under the innocent plaintiff rule (s.12 CLA 1961), the wholly innocent plaintiff can recover full damages from Y. Y then has a right of contribution under s.21 CLA 1961 against X for X's proportionate share (70%) of the total damages. Y must pursue X separately in contribution proceedings."
+    },
+    {
+      "id": "TL_M10_L01_Q24",
+      "question": "A plaintiff who suffered personal injury in a construction accident in 2020 discovers in 2024 that a second contractor was also responsible for the accident. They issue proceedings in 2024. Is the claim against the second contractor time-barred under the Civil Liability and Courts Act 2004?",
+      "options": {
+        "A": "Yes — the two-year period ran from the date of the accident in 2020 and expired in 2022",
+        "B": "Yes — the plaintiff had constructive knowledge of all parties involved from the date of the accident",
+        "C": "Yes — the plaintiff must join all concurrent wrongdoers within one year of the accident",
+        "D": "Potentially no — if the date of knowledge (when the plaintiff knew or ought to have known the second contractor's identity and involvement) was 2024, the two-year period may only start from that date"
+      },
+      "correct_answer": "D",
+      "explanation": "Section 7 CLCA 2004 runs the two-year limitation period from the date the cause of action accrued OR the date of the plaintiff's knowledge — whichever is later. If the plaintiff only had factual knowledge of the second contractor's identity and involvement in 2024, the limitation period may only start then."
+    },
+    {
+      "id": "TL_M10_L01_Q25",
+      "question": "Two persons engaged in a joint burglary: A negligently injures B during the course of the burglary. B sues A in negligence. Is the illegality defence available to A?",
+      "options": {
+        "A": "Yes — the ex turpi causa defence under s.57 CLA 1961 is likely to apply because the plaintiff's illegal conduct (the burglary) is closely connected and integral to the circumstances of the tort",
+        "B": "No — the illegality defence is not available between participants in a joint enterprise",
+        "C": "No — s.57 CLA 1961 only applies where the plaintiff has been convicted of the criminal offence",
+        "D": "Yes — but only if B was the organiser of the burglary, not merely a participant"
+      },
+      "correct_answer": "A",
+      "explanation": "Where two persons are engaged in a joint criminal enterprise and one is injured by the other's negligence in the course of that enterprise, the illegality defence under s.57 CLA 1961 is likely to apply. The plaintiff's illegal conduct is closely connected and integral to the circumstances giving rise to the claim."
+    },
+    {
+      "id": "TL_M10_L01_Q26",
+      "question": "A person driving a car without a valid licence is injured by another driver's negligence. Can the defendant raise the illegality defence (s.57 CLA 1961) to defeat the claim?",
+      "options": {
+        "A": "Yes — the plaintiff was committing a criminal offence at the time and is therefore barred from recovery",
+        "B": "No — the plaintiff's illegal driving is not sufficiently connected to the tortious act (the other driver's negligence) to engage the defence",
+        "C": "Yes — but the plaintiff's damages will be reduced proportionally for the illegality",
+        "D": "No — the illegality defence is only available where the plaintiff is injured by a police officer"
+      },
+      "correct_answer": "B",
+      "explanation": "The illegality defence is narrow. A person driving without a licence who is injured by another's negligence cannot be defeated by s.57 — the plaintiff's illegality (driving without a licence) is not sufficiently closely connected to the tortious act (the defendant's negligent driving) to engage the defence."
+    },
+    {
+      "id": "TL_M10_L01_Q27",
+      "question": "For FE-1 purposes, which of the following is the correct sequence of defences to consider in a negligence problem question?",
+      "options": {
+        "A": "First apply illegality, then volenti, then limitation periods, then contributory negligence",
+        "B": "Raise all defences simultaneously without distinction as to their nature or effect",
+        "C": "Identify whether each defence — contributory negligence (partial), volenti (complete), or illegality (complete) — is supported on the facts, cite the relevant provision, and apply the standard required",
+        "D": "Apply only the most favourable defence to the defendant without considering others"
+      },
+      "correct_answer": "C",
+      "explanation": "The FE-1 approach requires identifying which defences are supported on the facts, noting whether each is a complete or partial defence, citing the relevant provisions (s.34 for contributory negligence; s.34(1)(b) and McComiskey for volenti; s.57 for illegality), and applying the required standard for each."
+    },
+    {
+      "id": "TL_M10_L01_Q28",
+      "question": "A plaintiff's personal injury claim is issued within the two-year limitation period but has sat dormant for four years with no meaningful steps taken. The defendant applies to dismiss for want of prosecution. Which test applies?",
+      "options": {
+        "A": "Section 34 CLA 1961 — the court apportions the delay between the parties",
+        "B": "Section 7 CLCA 2004 — the plaintiff must refile within the original limitation period",
+        "C": "Section 3 of the Statute of Limitations (Amendment) Act 1991 — the date of knowledge test",
+        "D": "The Primor plc v Stokes Kennedy Crowley [1996] test — inordinate delay, inexcusable delay, balance of justice"
+      },
+      "correct_answer": "D",
+      "explanation": "Primor plc v Stokes Kennedy Crowley [1996] provides the test for dismissal for want of prosecution, which is a separate procedural tool even where proceedings were issued within the limitation period. The court asks: (1) inordinate delay? (2) inexcusable delay? (3) balance of justice — should the claim be dismissed?"
+    },
+    {
+      "id": "TL_M10_L01_Q29",
+      "question": "For FE-1 purposes, when identifying concurrent wrongdoers under the Civil Liability Act 1961, which provisions should be cited?",
+      "options": {
+        "A": "Section 11(1) for the definition; section 12 for the innocent plaintiff rule; section 21 for contribution rights; and section 16(2) for the effect of judgment",
+        "B": "Section 34 for apportionment; section 57 for illegality; and section 7 CLCA 2004 for limitation",
+        "C": "Section 11(3) for joint liability and section 48 for the disability exception",
+        "D": "Section 21 for definition; section 12 for contribution; and section 34 for the innocent plaintiff rule"
+      },
+      "correct_answer": "A",
+      "explanation": "The FE-1 framework for concurrent wrongdoers under the CLA 1961 requires: s.11(1) for the definition; s.12 for the innocent plaintiff rule; s.21 for contribution rights between wrongdoers; and s.16(2) for the effect of judgment on further claims against co-wrongdoers."
+    },
+    {
+      "id": "TL_M10_L01_Q30",
+      "question": "A plaintiff who participated in a drag race on a public road is injured when the defendant's car collides with theirs. The defendant pleads volenti non fit injuria. Applying McComiskey v McDermott [1974], is the plea likely to succeed?",
+      "options": {
+        "A": "Yes — the plaintiff voluntarily chose to race and therefore accepted all risks arising from the race",
+        "B": "Depends — the plaintiff may have accepted the general risks of drag racing but volenti requires consent to the specific risk of the defendant's negligent driving, not merely the general activity",
+        "C": "No — volenti is never available in cases involving motor vehicles on public roads",
+        "D": "Yes — participation in an illegal activity automatically establishes volenti consent"
+      },
+      "correct_answer": "B",
+      "explanation": "Applying McComiskey v McDermott [1974], volenti requires consent to the very risk that materialised — not merely to the general activity. While the plaintiff accepted the risks of drag racing, the question is whether they consented to the specific risk of the defendant's negligent driving. This is a matter of degree and fact."
+    },
+    {
+      "id": "TL_M10_L01_Q31",
+      "question": "Which of the following correctly identifies the limitation periods for personal injury, general tort, and defamation claims in Ireland?",
+      "options": {
+        "A": "Personal injury: six years; general tort: two years; defamation: three years",
+        "B": "Personal injury: three years; general tort: six years; defamation: two years",
+        "C": "Personal injury: two years (s.7 CLCA 2004); general tort: six years (s.11(2)(a) Statute of Limitations 1957); defamation: one year extendable to two (s.38 Defamation Act 2009)",
+        "D": "Personal injury: two years; general tort: three years; defamation: six years"
+      },
+      "correct_answer": "C",
+      "explanation": "The correct Irish limitation periods are: personal injury — 2 years under s.7 CLCA 2004; general tort (property damage, economic loss) — 6 years under s.11(2)(a) Statute of Limitations 1957; defamation — 1 year (extendable to 2) under s.38 Defamation Act 2009. This distinction is frequently tested in FE-1."
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module06_Lesson02.txt",
+  "module_number": 6,
+  "module_title": "Sexual Offences",
+  "lesson_number": 4,
+  "lesson_title": "Rape Under Section 4 (Criminal Law (Rape) Amendment Act 1990)",
+  "total_questions": 9,
+  "questions": [
+    {
+      "id": "CRL_M06_L04_Q01",
+      "question": "Section 4 of the Criminal Law (Rape) Amendment Act 1990 defines 'rape under section 4.' Which of the following correctly identifies the acts captured by this offence?",
+      "options": {
+        "A": "Penile-vaginal penetration without consent \u2014 the same act as rape under s.2(1) Criminal Law (Rape) Act 1981",
+        "B": "Penile penetration of the anus or mouth of another person without consent; and penetration of a woman's vagina by any object (not a penis) without consent",
+        "C": "Any form of sexual penetration of any orifice of the body without consent, including penile-vaginal intercourse",
+        "D": "Penile penetration of the anus only \u2014 oral penetration is a separate offence under different legislation"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 4 Criminal Law (Rape) Amendment Act 1990 creates the offence of 'rape under section 4,' which captures non-penile-vaginal penetration: (1) Penile penetration of the anus of another person (male or female) without consent; (2) Penile penetration of the mouth of another person without consent (oral rape); (3) Penetration of a woman's vagina with any object (not a penis) put there by a person without consent. The key distinguishing feature from s.2(1) rape is that s.4 rape does not involve penile-vaginal intercourse \u2014 that remains governed by s.2(1). Section 4 rape is gender-neutral in terms of victim \u2014 it can be committed against any person. Option A describes s.2(1) rape, not s.4. Option C is overbroad \u2014 not all penetration without consent constitutes s.4 rape (penetration of the anus by a finger, for example, would be sexual assault, not s.4 rape). Option D incorrectly limits s.4 to anal penetration."
+    },
+    {
+      "id": "CRL_M06_L04_Q02",
+      "question": "Is rape under s.4 limited to male perpetrators, and can it be committed against male victims?",
+      "options": {
+        "A": "Yes \u2014 only males can commit s.4 rape, and it can only be committed against female victims",
+        "B": "No \u2014 s.4 rape is gender-neutral in both perpetrator and victim; it can be committed by any person against any person",
+        "C": "Yes \u2014 only males can commit s.4 rape, but it can be committed against both male and female victims",
+        "D": "No \u2014 females can commit s.4 rape but only against male victims"
+      },
+      "correct_answer": "B",
+      "explanation": "Unlike rape under s.2(1) Criminal Law (Rape) Act 1981 (which by definition requires penile-vaginal penetration and therefore requires a male perpetrator and female victim), rape under s.4 of the 1990 Act is gender-neutral in both directions: (1) It can be committed against any person \u2014 male or female \u2014 because penetration of the anus or mouth can affect any person, and vaginal penetration by an object can affect female victims; (2) As regards the perpetrator, a female can commit s.4 rape in the object-vaginal penetration variant. This gender neutrality reflects the recognition that sexual violence takes many forms and is not limited to penile-vaginal rape. Options A, C, and D each impose gender restrictions on perpetrator or victim that are not part of the statutory definition."
+    },
+    {
+      "id": "CRL_M06_L04_Q03",
+      "question": "In DPP v G.P [2021] IECA, the complainant had been on a night out, tried to contact friends, fell asleep in a car and woke up to find the accused's penis in her mouth. The accused was charged with rape under s.4. What was the outcome and what did the case confirm?",
+      "options": {
+        "A": "The accused was acquitted because the complainant was unconscious and therefore could not have communicated non-consent at the time of the act",
+        "B": "The accused was convicted of rape under s.4 and sentenced to 6 years imprisonment; the case confirmed that penile penetration of the mouth of an unconscious or sleeping person who has not consented constitutes s.4 rape; unconsciousness equals absence of consent",
+        "C": "The accused was convicted of sexual assault only \u2014 the court held that penile-oral penetration requires more than momentary contact before rape under s.4 is established",
+        "D": "The accused was convicted and sentenced to life imprisonment \u2014 the mandatory maximum for s.4 rape"
+      },
+      "correct_answer": "B",
+      "explanation": "DPP v G.P [2021] IECA is the leading Irish authority on s.4 rape in the oral penetration context. The accused drove the complainant home after a night out; she fell asleep in the car and woke up with the accused's penis in her mouth. The Court of Appeal upheld the conviction for rape under s.4 and the sentence of 6 years imprisonment. The case confirmed: (1) Penile penetration of the mouth of another person without consent constitutes rape under s.4; (2) An unconscious or sleeping person cannot consent \u2014 their absence of resistance is not consent; (3) The slightest penetration suffices. The 6-year sentence illustrates the sentencing range for s.4 rape (with life as the maximum). Option A is wrong \u2014 unconsciousness equals incapacity to consent, not a bar to establishing non-consent. Option C incorrectly applies a duration requirement to penetration. Option D misstates the sentence \u2014 life is the maximum, not the mandatory sentence."
+    },
+    {
+      "id": "CRL_M06_L04_Q04",
+      "question": "For the object-penetration variant of s.4 rape (penetration of a woman's vagina by an object), what mental element must the prosecution prove?",
+      "options": {
+        "A": "The accused must have intended to cause harm to the complainant \u2014 penetration alone without intent to harm is insufficient",
+        "B": "The accused must have intentionally penetrated the complainant with an object knowing she was not consenting, or been reckless as to whether she was consenting \u2014 the same mental element as s.2(1) rape applies",
+        "C": "Strict liability applies \u2014 the prosecution need only prove penetration by an object without consent; no mental element is required",
+        "D": "The accused must have had sexual gratification as the purpose of the penetration \u2014 object penetration for other purposes is not s.4 rape"
+      },
+      "correct_answer": "B",
+      "explanation": "The mental element for s.4 rape (all variants) mirrors that of s.2(1) rape: the accused must have intentionally penetrated the complainant knowing she was not consenting, or been reckless as to whether she was consenting. Following the CLSO(HT)A 2024 (in force 31 August 2024), the accused must also have had a reasonable belief in consent \u2014 an honest but unreasonable belief in consent is no longer sufficient. The mental element applies to both the act of penetration (which must be intentional) and to the complainant's consent (knowledge of non-consent or recklessness as to consent). Option A incorrectly substitutes intent to harm for the actual mental element. Option C incorrectly applies strict liability \u2014 s.4 rape is not a strict liability offence. Option D adds a sexual gratification requirement that is not part of the offence definition."
+    },
+    {
+      "id": "CRL_M06_L04_Q05",
+      "question": "How does rape under s.4 differ from the offence of sexual assault in terms of sentencing?",
+      "options": {
+        "A": "They carry the same maximum sentence \u2014 10 years imprisonment",
+        "B": "Rape under s.4 carries a maximum of life imprisonment; sexual assault carries a maximum of 10 years imprisonment",
+        "C": "Sexual assault carries life imprisonment while s.4 rape carries a maximum of 14 years",
+        "D": "Both carry a maximum of 14 years imprisonment on indictment"
+      },
+      "correct_answer": "B",
+      "explanation": "Rape under s.4 Criminal Law (Rape) Amendment Act 1990 carries a maximum sentence of life imprisonment on conviction on indictment \u2014 the same maximum as rape under s.2(1) Criminal Law (Rape) Act 1981. This reflects the legislative view that non-penile-vaginal rape is equally serious as penile-vaginal rape. By contrast, sexual assault under s.2 of the same 1990 Act carries a maximum of 10 years imprisonment. The sentencing hierarchy under the 1990 Act therefore runs: sexual assault (10 years maximum) \u2014 rape under s.4 (life) \u2014 aggravated sexual assault (life). Options A and D incorrectly equalise the two sentences at lower maximums. Option C inverts the correct sentencing hierarchy."
+    },
+    {
+      "id": "CRL_M06_L04_Q06",
+      "question": "An accused digitally penetrates (with fingers) the vagina of a complainant without her consent. This is clearly an assault of a sexual nature. Is this rape under s.4?",
+      "options": {
+        "A": "Yes \u2014 any penetration of the vagina without consent constitutes rape under s.4",
+        "B": "No \u2014 s.4 rape for vaginal penetration requires penetration by an 'object' \u2014 fingers are part of the human body and are not an 'object' within the statutory definition; digital penetration would constitute sexual assault, not s.4 rape",
+        "C": "Yes \u2014 fingers constitute 'objects' within the plain meaning of s.4",
+        "D": "No \u2014 digital penetration without consent constitutes a separate specific offence of 'assault by penetration' under a different statute"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 4 of the Criminal Law (Rape) Amendment Act 1990, for the vaginal penetration variant, specifies 'penetration by any object' placed there by a person. The word 'object' in the Irish provision does not include parts of the body \u2014 'object' connotes an external inanimate item or instrument. Digital penetration (penetration with fingers) is part of the body of the person and is not an 'object' within this definition. Accordingly, non-consensual digital vaginal penetration would not constitute rape under s.4 but would constitute sexual assault under s.2 of the same 1990 Act (an assault of a sexual nature). This is to be contrasted with the position in England and Wales under the Sexual Offences Act 2003, which has a specific offence of 'assault by penetration' expressly covering penetration by a body part. Ireland does not have an equivalent provision \u2014 such conduct is prosecuted as sexual assault."
+    },
+    {
+      "id": "CRL_M06_L04_Q07",
+      "question": "Which court has jurisdiction to try rape under s.4 cases in Ireland?",
+      "options": {
+        "A": "The District Court \u2014 with a maximum sentence of 12 months",
+        "B": "The Central Criminal Court has exclusive jurisdiction over rape under s.4, as it does over s.2(1) rape and aggravated sexual assault",
+        "C": "The Circuit Criminal Court \u2014 with a maximum sentence of life imprisonment",
+        "D": "The Special Criminal Court \u2014 where the DPP certifies that a jury trial would be inappropriate"
+      },
+      "correct_answer": "B",
+      "explanation": "Rape under s.4 is one of the offences that falls within the exclusive jurisdiction of the Central Criminal Court (the High Court exercising criminal jurisdiction). This is the same exclusive jurisdiction that applies to s.2(1) rape and aggravated sexual assault. The Central Criminal Court hears all rape trials without a jury sitting in the Circuit Court \u2014 all rape trials must be before a judge and jury in the Central Criminal Court. This means the DPP cannot consent to trial at Circuit Court level for s.4 rape. The maximum sentence is life imprisonment. Options A and C incorrectly assign jurisdiction to the District or Circuit Courts. Option D mischaracterises the Special Criminal Court's role \u2014 it is a non-jury court for scheduled offences under the Offences Against the State Act, not for sexual offences generally."
+    },
+    {
+      "id": "CRL_M06_L04_Q08",
+      "question": "A complainant consents to penile penetration of her vagina but expressly refuses anal penetration. The accused penetrates her anally without consent. Which offence should be charged?",
+      "options": {
+        "A": "Rape under s.2(1) Criminal Law (Rape) Act 1981 \u2014 because penile penetration occurred",
+        "B": "Rape under s.4 Criminal Law (Rape) Amendment Act 1990 \u2014 because penile penetration of the anus occurred without consent",
+        "C": "Sexual assault only \u2014 because overall sexual activity was consensual",
+        "D": "No offence \u2014 the complainant consented to sexual activity with this person"
+      },
+      "correct_answer": "B",
+      "explanation": "The complainant consented to penile-vaginal intercourse but explicitly refused anal penetration. The accused's act of non-consensual penile anal penetration constitutes rape under s.4 Criminal Law (Rape) Amendment Act 1990 \u2014 penile penetration of the anus of another person without consent. The consent to vaginal penetration does not extend to anal penetration \u2014 consent is specific to the act consented to, not a general consent to all sexual acts. The refusal of anal penetration was explicit, making the absence of consent clear. Option A incorrectly characterises the offence as s.2(1) rape \u2014 s.2(1) rape requires penile-vaginal penetration; the non-consensual act here is anal penetration. Option C incorrectly treats overall consensual sexual activity as negating the specific non-consensual act. Option D incorrectly generalises the consent."
+    },
+    {
+      "id": "CRL_M06_L04_Q09",
+      "question": "A woman uses a vibrator to penetrate the vagina of a complainant without her consent. Can the woman be charged with rape under s.4?",
+      "options": {
+        "A": "No \u2014 only men can commit rape, whether under s.2(1) or s.4",
+        "B": "Yes \u2014 s.4 rape encompasses penetration of a woman's vagina by an object put there by a person; a vibrator is an object, and any person (including a woman) who places it in another person's vagina without consent commits s.4 rape",
+        "C": "No \u2014 the vibrator is a sex toy and consent to use of sex toys is implied from agreement to sexual activity generally",
+        "D": "Yes \u2014 but only if the complainant suffered physical harm from the penetration"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 4 Criminal Law (Rape) Amendment Act 1990 provides, in the object-penetration variant, that the offence is committed by any person who penetrates a woman's vagina by an object 'put there by a person.' The statutory language is gender-neutral regarding the perpetrator \u2014 'a person' can be male or female. A vibrator is clearly an object within the statutory meaning (it is an external inanimate item). Accordingly, a woman who uses a vibrator to penetrate the vagina of another woman without consent commits s.4 rape. This illustrates the gender-neutrality of s.4. Option A incorrectly limits rape to male perpetrators \u2014 while s.2(1) requires a male perpetrator (penile-vaginal), s.4 is gender-neutral in the object-penetration variant. Option C invents implied consent to sex toys from general sexual consent. Option D adds a physical harm requirement that is absent from the statute."
+    }
+  ]
+}

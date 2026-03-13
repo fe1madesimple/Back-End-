@@ -1,0 +1,119 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module07_Lesson03.txt",
+  "module_number": 7,
+  "module_title": "Theft, Property Offences, and Cybercrime",
+  "lesson_number": 7,
+  "lesson_title": "Criminal Damage (Criminal Damage Act 1991)",
+  "total_questions": 9,
+  "questions": [
+    {
+      "id": "CRL_M07_L07_Q01",
+      "question": "Section 2 of the Criminal Damage Act 1991 creates the primary criminal damage offence. Which of the following correctly identifies the actus reus and mens rea of the s.2 offence?",
+      "options": {
+        "A": "A person damages property belonging to another; the mental element is negligence as to whether the property might be damaged",
+        "B": "A person who without lawful excuse damages any property belonging to another intending to damage such property or being reckless as to whether such property would be damaged",
+        "C": "A person who destroys property belonging to another; minor damage not amounting to destruction is covered by a lesser civil remedy only",
+        "D": "A person who damages any property intending to damage it; recklessness is not a sufficient mental element for the basic offence"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 2 Criminal Damage Act 1991 creates the offence of criminal damage. The actus reus is damaging any property belonging to another (or, in the case of s.2(2) aggravated criminal damage, with intent to endanger life). The mens rea under s.2 is intention to damage the property or recklessness as to whether it would be damaged. Section 2(6) of the Act defines recklessness subjectively \u2014 the accused must have been aware of a risk that the act would damage property and it was unreasonable to take that risk. The Act uses 'without lawful excuse' as a negative element \u2014 the prosecution proves the damage, the accused may raise a lawful excuse defence under s.6. Option A incorrectly applies a negligence standard. Option C incorrectly limits the offence to destruction \u2014 'damage' is defined broadly to include impairment, degradation, and rendering the property inoperable. Option D incorrectly excludes recklessness from the basic offence."
+    },
+    {
+      "id": "CRL_M07_L07_Q02",
+      "question": "Section 2(6) of the Criminal Damage Act 1991 defines 'reckless' for the purposes of the Act. Which type of recklessness applies?",
+      "options": {
+        "A": "Objective recklessness \u2014 whether a reasonable person would have foreseen the risk of damage",
+        "B": "Subjective recklessness \u2014 the accused must have been personally aware of the risk of damage; it is not sufficient that a reasonable person would have been aware",
+        "C": "A hybrid test \u2014 whether either the accused or a reasonable person was aware of the risk",
+        "D": "Strict liability \u2014 once damage is proven, no further mental element is required for the recklessness variant"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 2(6) Criminal Damage Act 1991 expressly defines recklessness for the purposes of the Act: a person is reckless if they are aware of a risk that property would be damaged and it is unreasonable, having regard to the circumstances known to them, to take that risk. This is the subjective Cunningham recklessness test \u2014 the accused must actually be aware of the risk. Objective Caldwell recklessness (which would catch a person who ought to have been aware) does not apply under the 1991 Act. This statutory definition is significant because in English law, Caldwell recklessness was for a time applicable to criminal damage (before being overturned in R v G [2003] HL). Ireland's 1991 Act avoided that controversy by expressly defining recklessness subjectively. For FE-1 purposes, always emphasise that s.2(6) mandates subjective recklessness \u2014 the accused must have been personally aware of the specific risk. Option A applies objective recklessness. Option C creates a hybrid. Option D removes the mental element entirely."
+    },
+    {
+      "id": "CRL_M07_L07_Q03",
+      "question": "Section 2(1) and s.2(2) of the Criminal Damage Act 1991 create two main variants of criminal damage. What is the key distinction between them?",
+      "options": {
+        "A": "Section 2(1) applies to property damage generally; s.2(2) applies only to property damage occurring at night",
+        "B": "Section 2(1) is the basic criminal damage offence \u2014 damaging property; s.2(2) is aggravated criminal damage \u2014 damaging property intending to endanger the life of another or being reckless as to whether the life of another would be thereby endangered",
+        "C": "Section 2(1) applies to private property; s.2(2) applies to public property or state infrastructure",
+        "D": "Section 2(1) requires actual damage; s.2(2) covers threatened damage where property has not yet been damaged"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 2(1) Criminal Damage Act 1991 creates the basic criminal damage offence: damaging property belonging to another without lawful excuse, intending damage or being reckless. Section 2(2) creates the aggravated variant: damaging property, additionally intending to endanger the life of another thereby or being reckless as to whether another's life would be endangered. The critical aggravating element is the life endangerment intent or recklessness \u2014 the accused must not only intend the damage but also intend (or be reckless as to) the risk to human life that the damage creates. This aggravated offence carries a life imprisonment maximum \u2014 the same as murder \u2014 reflecting the serious threat to life. Notably, the property damaged in s.2(2) does not need to belong to another \u2014 a person can commit aggravated criminal damage to their own property if they intend thereby to endanger another's life. Options A, C, and D create distinctions (time, property type, actual vs. threatened) that are not part of the statutory framework."
+    },
+    {
+      "id": "CRL_M07_L07_Q04",
+      "question": "Section 2(3) of the Criminal Damage Act 1991 creates the specific offence of arson. What distinguishes arson from the basic criminal damage offence?",
+      "options": {
+        "A": "Arson applies only to residential properties; criminal damage to commercial buildings is always charged as basic criminal damage",
+        "B": "Arson is the destruction of or damage to property by fire; it carries a greater maximum penalty than basic criminal damage \u2014 life imprisonment for s.2(3) arson versus 10 years for basic criminal damage",
+        "C": "Arson requires actual destruction of the property by fire; if the fire is quickly extinguished, the basic criminal damage offence applies",
+        "D": "Arson can only be charged where the accused was the direct cause of the fire; indirect causation of fire is basic criminal damage"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 2(3) Criminal Damage Act 1991 creates arson as a specific offence where property is destroyed or damaged by fire. The key characteristics are: (1) The damaging agent must be fire \u2014 arson requires that the damage is caused by fire, not other destructive means; (2) The maximum penalty for arson is life imprisonment, compared to 10 years for basic criminal damage (s.2(1)) \u2014 reflecting the particularly dangerous nature of fire which can spread unpredictably and endanger lives; (3) The same mental element applies (intention or subjective recklessness under s.2(6)). The life imprisonment maximum makes arson one of the most serious property offences in Irish law \u2014 not because of the value of property destroyed but because of the inherent risk fire poses to human life. Options A, C, and D create restrictions (residential property, complete destruction, direct causation) that do not appear in the statute."
+    },
+    {
+      "id": "CRL_M07_L07_Q05",
+      "question": "In R v Miller [1983] HOL (England and Wales), the accused fell asleep while smoking. His mattress caught fire. He woke up, saw the fire, but moved to another room and went back to sleep without attempting to extinguish it. The house was damaged. What principle did this case establish regarding criminal damage?",
+      "options": {
+        "A": "Criminal damage requires an affirmative act; failure to extinguish a fire one accidentally started cannot constitute criminal damage as there is no actus reus",
+        "B": "Where a person accidentally creates a dangerous situation (fire) and becomes aware of it, they assume a duty to take reasonable steps to avert the danger; failing to do so with the requisite mens rea (recklessness) can constitute criminal damage through omission",
+        "C": "The accused cannot be liable because he did not intentionally start the fire; criminal damage requires intentional fire-raising",
+        "D": "The accused's movement to another room was a novus actus interveniens breaking the causal chain between his initial act and the damage"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Miller [1983] HOL is the foundational case on liability for criminal damage through omission. The House of Lords held that where a person accidentally creates a dangerous situation \u2014 a state of affairs giving rise to a risk of damage \u2014 and then becomes aware of that situation, they assume a duty to take reasonable steps to avert the danger. Failure to discharge that duty, with the requisite mens rea, can found criminal liability. In Miller, by moving rooms and going back to sleep rather than extinguishing the fire or calling for help, Miller was reckless as to whether the property would be damaged \u2014 he was aware of the risk (the burning mattress) and failed to act. This principle is applicable under the Criminal Damage Act 1991 in Ireland: a person who accidentally causes a fire and fails to avert it, being reckless as to the damage, can be convicted. The Miller principle is a significant exception to the general rule that omissions are not criminally actionable. Option A incorrectly applies that general rule. Option C incorrectly requires intentional fire-raising. Option D misapplies the novus actus concept \u2014 Miller's own ongoing omission is not a novus actus."
+    },
+    {
+      "id": "CRL_M07_L07_Q06",
+      "question": "Section 6(1) of the Criminal Damage Act 1991 provides a 'lawful excuse' defence to criminal damage. What are the two main grounds of lawful excuse under s.6(1)?",
+      "options": {
+        "A": "Consent of the property owner; and the necessity of preventing greater harm",
+        "B": "Belief that the person to whom the property belongs has consented or would have consented to the damage; and belief that the property was at risk of greater damage and the accused's actions were reasonable to protect it",
+        "C": "Actual consent of the property owner; and a genuine emergency requiring immediate action",
+        "D": "Legal entitlement to possess the property; and judicial authorisation to remove or destroy the property"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 6(1) Criminal Damage Act 1991 provides that a person has a lawful excuse to criminal damage where they act in the honest belief that: (1) the owner of the property has consented or would consent to the damage if asked \u2014 a belief-based consent defence; or (2) the property in respect of which their act was done was in immediate need of protection and the means of protection adopted were reasonable having regard to the circumstances known or believed by them to exist \u2014 a belief-based necessity/protection defence. Crucially, both limbs are assessed subjectively \u2014 the belief need only be honest (genuine), not reasonable. This means an honestly held but unreasonable belief can still ground the defence. The classic example of limb (2) is a person who damages a locked gate to rescue a dog they genuinely believe is drowning. Option A is close but uses 'actual' consent rather than believed consent. Option C requires actual consent and actual emergency rather than honest belief. Option D creates legal entitlement and judicial authorisation grounds that are not part of s.6(1)."
+    },
+    {
+      "id": "CRL_M07_L07_Q07",
+      "question": "Dan, in a rage, smashes his neighbour Emma's car windscreen after a dispute. He claims he had every right to do so because Emma had previously scratched his car. Can Dan rely on the lawful excuse defence under s.6 Criminal Damage Act 1991?",
+      "options": {
+        "A": "Yes \u2014 Emma damaged his property first; the principle of self-help entitles Dan to damage Emma's property in return",
+        "B": "No \u2014 neither limb of s.6(1) assists Dan; he does not have Emma's consent or belief in her consent to the damage; his car was not in immediate need of protection requiring him to damage Emma's windscreen; retributive self-help is not a lawful excuse",
+        "C": "Yes \u2014 Dan honestly believed he was entitled to retaliate; the honest belief test under s.6(1) is subjective and his belief in his entitlement satisfies the defence",
+        "D": "No \u2014 but Dan may raise the provocation defence to reduce the charge; provocation is a partial defence to criminal damage"
+      },
+      "correct_answer": "B",
+      "explanation": "Dan cannot avail of the lawful excuse defence under s.6 Criminal Damage Act 1991. Analysis of both limbs: (1) Consent limb \u2014 Dan has no basis for believing Emma consented or would have consented to the damage; she would obviously not consent to having her windscreen smashed in retaliation; (2) Protection limb \u2014 Dan's car was not in immediate need of protection when he smashed Emma's windscreen; the threat to his car (if it existed) had already passed; the protection limb requires an immediate and ongoing threat to property, not a retrospective retaliatory act. Retributive self-help \u2014 damaging another's property as payback for damage to one's own \u2014 is not and has never been a legal justification. The honest belief test in s.6(1) is subjective, but Dan cannot honestly believe he had a right to retaliate by damaging Emma's property \u2014 this is a misunderstanding of the law, not an honest belief in consent or necessity. Option A applies a non-existent self-help principle. Option C incorrectly treats a mistaken belief in a legal right to retaliate as satisfying s.6(1). Option D invents a provocation partial defence to criminal damage."
+    },
+    {
+      "id": "CRL_M07_L07_Q08",
+      "question": "What are the maximum penalties for (i) basic criminal damage under s.2(1), (ii) arson under s.2(3), and (iii) aggravated criminal damage under s.2(2) of the Criminal Damage Act 1991?",
+      "options": {
+        "A": "(i) 5 years; (ii) 10 years; (iii) 14 years",
+        "B": "(i) 7 years; (ii) 14 years; (iii) life",
+        "C": "(i) 10 years; (ii) life; (iii) life",
+        "D": "(i) 10 years; (ii) 10 years; (iii) life"
+      },
+      "correct_answer": "C",
+      "explanation": "The maximum penalties under the Criminal Damage Act 1991 are: (i) Basic criminal damage (s.2(1)) \u2014 10 years imprisonment on conviction on indictment; (ii) Arson (s.2(3)) \u2014 life imprisonment \u2014 reflecting the inherent danger fire poses to life regardless of whether life endangerment is specifically intended; (iii) Aggravated criminal damage (s.2(2)) \u2014 life imprisonment \u2014 reflecting the specific intent to endanger or recklessness as to endangering human life. The life imprisonment maximum for both arson and aggravated criminal damage places these offences in the same sentencing tier as murder, rape, and aggravated burglary. These sentencing distinctions are important for FE-1 examination answers: always distinguish between the three variants of criminal damage and state the correct maximum for each. Options A and B state incorrect maximums. Option D incorrectly equates arson with basic criminal damage at 10 years rather than life."
+    },
+    {
+      "id": "CRL_M07_L07_Q09",
+      "question": "Kate throws a petrol bomb at a building, intending to destroy it but not caring whether anyone inside is killed. The building burns down and two people die. Which criminal damage offence (if any) has Kate committed, leaving aside any homicide charges?",
+      "options": {
+        "A": "Basic criminal damage under s.2(1) only \u2014 the deaths are relevant to homicide charges, not to the criminal damage analysis",
+        "B": "Aggravated criminal damage under s.2(2) \u2014 Kate damaged property (the building) by fire (arson) and was reckless as to whether another's life would be endangered thereby; as the most serious variant, aggravated criminal damage captures her conduct",
+        "C": "Kate has not committed criminal damage because she used fire \u2014 fire-related damage is exclusively covered by the arson provision and cannot simultaneously be charged as aggravated criminal damage",
+        "D": "Basic criminal damage only \u2014 Kate intended to destroy the building, not to endanger life; subjective recklessness as to life endangerment requires that she specifically thought about the risk to human life"
+      },
+      "correct_answer": "B",
+      "explanation": "Kate has committed aggravated criminal damage under s.2(2) Criminal Damage Act 1991: (1) She damaged (destroyed) property (the building) \u2014 actus reus established; (2) She was reckless as to whether the lives of another would be thereby endangered \u2014 'not caring whether anyone inside is killed' is a clear statement of conscious indifference to a risk to human life; per s.2(6)'s subjective recklessness definition, she was aware of the risk of life endangerment (people being inside the building she was setting fire to) and proceeded regardless. The use of fire also means she has committed arson under s.2(3). Both s.2(2) and s.2(3) carry life imprisonment maximums. In practice, the prosecution would charge the most appropriate variants. Option A incorrectly treats the deaths as irrelevant to criminal damage analysis \u2014 the risk to life (recklessness as to endangerment) is central to s.2(2). Option C incorrectly treats arson and aggravated criminal damage as mutually exclusive. Option D incorrectly requires a specific thought about life risk \u2014 'not caring' IS the subjective recklessness test."
+    }
+  ]
+}

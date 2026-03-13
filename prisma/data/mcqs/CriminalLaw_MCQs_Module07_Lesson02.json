@@ -1,0 +1,119 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module07_Lesson01.txt",
+  "module_number": 7,
+  "module_title": "Theft, Property Offences, and Cybercrime",
+  "lesson_number": 2,
+  "lesson_title": "Deception (s.6 Criminal Justice (Theft and Fraud Offences) Act 2001)",
+  "total_questions": 9,
+  "questions": [
+    {
+      "id": "CRL_M07_L02_Q01",
+      "question": "Section 6 of the Criminal Justice (Theft and Fraud Offences) Act 2001 defines the offence of obtaining by deception. Which of the following correctly states the elements of this offence?",
+      "options": {
+        "A": "A person dishonestly induces another to do or refrain from doing an act by any deception, where that act or omission results in a gain for the accused or a loss for the other party",
+        "B": "A person dishonestly takes property from another by making a false statement, where the false statement causes the other to hand over the property",
+        "C": "A person dishonestly pretends to be someone they are not, thereby inducing the other party to enter a contract",
+        "D": "A person obtains a financial advantage by making a false representation to a financial institution"
+      },
+      "correct_answer": "A",
+      "explanation": "Section 6 CJ(T&F)A 2001 creates the offence of obtaining by deception. The elements are: (1) dishonesty \u2014 the same objective test as in theft (DPP v Bowe [2012] IECA); (2) by any deception \u2014 a broad concept covering false representations, misleading conduct, or failures to disclose; (3) inducing another to do or refrain from doing an act \u2014 the deception must cause the other party to act or omit; and (4) that act or omission results in a gain for the accused or a loss for the victim. The key distinguishing feature from theft is that deception offences require the inducement of another party \u2014 the victim is caused to do or omit something, unlike theft where the appropriation is by the accused without the owner's valid consent. Option B narrowly frames the offence as requiring a false statement and handover of property. Option C incorrectly limits deception to identity fraud. Option D invents a requirement of a financial institution."
+    },
+    {
+      "id": "CRL_M07_L02_Q02",
+      "question": "In Laks [2009] IECCA, the court addressed the relationship between the deception and the act induced. What principle did the court confirm?",
+      "options": {
+        "A": "The deception must precede the act in time but need not be the cause of the act \u2014 proximity in time is sufficient",
+        "B": "The act must be dishonest and the deception must be the operative cause that induces the action \u2014 there must be a causal link between the deception and the act induced",
+        "C": "The deception and the act must occur simultaneously \u2014 deceptions made after the act is underway are insufficient",
+        "D": "The court held that deception requires physical misrepresentation \u2014 verbal deceptions alone are insufficient to satisfy the section"
+      },
+      "correct_answer": "B",
+      "explanation": "Laks [2009] IECCA confirmed the essential causal connection required for the deception offence: the deception must be the operative cause of the act or omission induced. The court stated that 'the act must be dishonest and the deception must induce the action.' This means it is not sufficient that a deception was made and that a person subsequently acted \u2014 the deception must actually have caused the other party to act or omit. If the victim would have acted in exactly the same way regardless of the deception, the causal element is not satisfied. This mirrors the causation requirements in other areas of criminal law: the deception must be a sine qua non of the induced act. Option A incorrectly replaces causation with mere temporal proximity. Option C invents a simultaneity requirement. Option D incorrectly excludes verbal deceptions."
+    },
+    {
+      "id": "CRL_M07_L02_Q03",
+      "question": "How does the offence of obtaining by deception under s.6 CJ(T&F)A 2001 differ from theft under s.4 of the same Act?",
+      "options": {
+        "A": "There is no meaningful difference \u2014 obtaining by deception is simply a form of theft where the victim hands over the property",
+        "B": "In theft, the accused appropriates property without the owner's valid consent; in obtaining by deception, the accused induces the other party to do or omit an act \u2014 the victim is an active participant, albeit deceived; no appropriation by the accused is required",
+        "C": "Obtaining by deception requires physical property to change hands, whereas theft can involve intangible property",
+        "D": "Theft applies only to property; deception applies only to services and financial benefits"
+      },
+      "correct_answer": "B",
+      "explanation": "The fundamental structural difference between theft and obtaining by deception is the role of the victim. In theft under s.4, the accused appropriates property \u2014 they assume the owner's rights without valid consent, acting against or independently of the owner. In obtaining by deception under s.6, the accused causes the victim to take an action (or refrain from acting) \u2014 the victim is induced to do something they might not otherwise have done. The victim participates in the transaction, but their participation is procured by deception. There is no requirement that the accused themselves take or appropriate anything. For example, inducing a person to forgive a debt by deception involves no physical appropriation but satisfies s.6. This structural distinction helps distinguish the appropriate charge in problem questions. Option A incorrectly equates the two offences. Option C invents a tangibility requirement for deception. Option D incorrectly partitions the two offences by subject matter."
+    },
+    {
+      "id": "CRL_M07_L02_Q04",
+      "question": "Does 'deception' under s.6 CJ(T&F)A 2001 require a false statement, or can it include other forms of misleading conduct?",
+      "options": {
+        "A": "Deception is limited to express false statements \u2014 implied deceptions or misleading conduct by omission are insufficient",
+        "B": "Deception is broad \u2014 it includes any false representation (express or implied), any misleading conduct, and in some circumstances a failure to disclose information that creates or perpetuates a false impression; it is not limited to express false statements",
+        "C": "Deception requires both a false statement and an intention to cause financial harm to the victim",
+        "D": "Deception can only be made in writing \u2014 verbal representations do not satisfy the statutory requirement"
+      },
+      "correct_answer": "B",
+      "explanation": "The concept of 'deception' in s.6 CJ(T&F)A 2001 is interpreted broadly and is not confined to express false statements. Deception encompasses: (1) express false representations \u2014 stating something that is untrue; (2) implied false representations \u2014 conduct that creates a false impression without explicit assertion (e.g., using counterfeit currency implicitly represents it is genuine); (3) misleading conduct \u2014 behaviour designed to create a false belief; and (4) in some circumstances, a failure to correct a false impression that the accused created or is under a duty to correct. This broad approach reflects the variety of ways in which dishonest persons seek to deceive others for gain. The courts have been reluctant to narrow the concept artificially. Options A and D impose unjustified restrictions on the form of the deception. Option C adds a financial harm intention element that is not required \u2014 gain to the accused or loss to the victim is sufficient, not harm."
+    },
+    {
+      "id": "CRL_M07_L02_Q05",
+      "question": "What is the maximum sentence for obtaining by deception under s.6 CJ(T&F)A 2001 on conviction on indictment?",
+      "options": {
+        "A": "2 years imprisonment",
+        "B": "5 years imprisonment",
+        "C": "10 years imprisonment",
+        "D": "14 years imprisonment"
+      },
+      "correct_answer": "B",
+      "explanation": "The maximum sentence for obtaining by deception under s.6 CJ(T&F)A 2001 on conviction on indictment is 5 years imprisonment. This is notably lower than theft under s.4 (maximum 10 years) and reflects the legislative hierarchy of property offences. The difference in maximum sentences reflects the policy view that appropriation-based theft carries greater culpability than inducement-based deception in many cases, though both involve dishonest acquisition. The offence is triable either way \u2014 on indictment in the Circuit Court (maximum 5 years) or summarily in the District Court (maximum 12 months). The lower maximum compared to theft is a common FE-1 examination point and should be noted in sentencing analysis questions. Options A, C, and D state incorrect maximums."
+    },
+    {
+      "id": "CRL_M07_L02_Q06",
+      "question": "Anne, a builder, shows prospective clients a portfolio of completed luxury homes, representing them as her own work. In fact, the images are of homes built by other contractors. Clients hire Anne on the basis of this portfolio and pay a deposit. Which of the following best describes Anne's criminal liability?",
+      "options": {
+        "A": "Anne has committed theft \u2014 she appropriated the clients' money without consent",
+        "B": "Anne has committed obtaining by deception under s.6 CJ(T&F)A 2001 \u2014 she dishonestly induced the clients, by a false representation (the portfolio) which was the operative cause of their decision to pay deposits, to do an act (pay money) resulting in a gain for Anne and a loss for the clients",
+        "C": "Anne has committed no criminal offence \u2014 misrepresentation in business dealings is a civil wrong only",
+        "D": "Anne has committed fraud by abuse of position only \u2014 no other offence is disclosed"
+      },
+      "correct_answer": "B",
+      "explanation": "Anne's conduct satisfies all elements of s.6 CJ(T&F)A 2001 obtaining by deception: (1) Dishonesty \u2014 presenting others' work as her own to secure business contracts is objectively dishonest (DPP v Bowe test: reasonable people would so regard it); (2) By deception \u2014 the false portfolio constitutes a false representation (her skill and track record); (3) Inducing an act \u2014 the false representation causes the clients to pay deposits they would not otherwise have paid; (4) Resulting in gain (to Anne) and loss (to the clients). The deception (false portfolio) is the operative cause of the payment (Laks [2009] causal requirement satisfied). The distinction from theft: the clients voluntarily pay (induced by deception) rather than Anne appropriating their money without any action on their part. Option A incorrectly characterises this as theft \u2014 the clients choose to pay, albeit induced by deception. Option C incorrectly dismisses criminal liability. Option D is inapplicable."
+    },
+    {
+      "id": "CRL_M07_L02_Q07",
+      "question": "Tom applies for a mortgage by overstating his income on the application form. The bank approves the mortgage in reliance on the stated income figures. Has Tom committed an offence under s.6 CJ(T&F)A 2001?",
+      "options": {
+        "A": "No \u2014 a mortgage application is a civil contract; misrepresentation on an application form is a breach of contract, not a criminal offence",
+        "B": "Yes \u2014 Tom made a false representation (overstated income) which dishonestly induced the bank to act (approve the mortgage) resulting in a gain for Tom (the mortgage funds) and a potential loss to the bank; all elements of s.6 are satisfied",
+        "C": "No \u2014 deception offences only apply to cash transactions; mortgage applications are outside the scope of the Act",
+        "D": "Yes \u2014 but only if the bank actually suffered a financial loss; if Tom repays the mortgage, no offence is committed"
+      },
+      "correct_answer": "B",
+      "explanation": "Tom's conduct satisfies s.6 CJ(T&F)A 2001: (1) Dishonesty \u2014 overstating income on a mortgage application to secure funds one would not otherwise qualify for is objectively dishonest; (2) By deception \u2014 the false income figures are a false representation; (3) Inducing the bank to act \u2014 the false representation causes the bank to approve and advance the mortgage; (4) Resulting in a gain to Tom (access to mortgage funds) and potential loss to the bank (lending to a borrower who misrepresented creditworthiness). The gain/loss need not be permanent \u2014 securing the mortgage itself is the gain. The deception (false income) is the operative cause of the bank's decision to lend (Laks causation satisfied). This scenario illustrates mortgage fraud, which is a common form of the s.6 offence prosecuted in Ireland. Option A incorrectly limits the wrong to civil law. Option C invents a cash-only restriction. Option D incorrectly conditions the offence on ultimate financial loss \u2014 the gain/loss at the time of inducement is sufficient."
+    },
+    {
+      "id": "CRL_M07_L02_Q08",
+      "question": "Maria owes David \u20ac1,000. She calls him and falsely tells him she has already paid the debt by bank transfer. David checks his account, sees a recent lodgement from someone else that he mistakes for Maria's payment, and marks the debt as settled. Has Maria committed obtaining by deception?",
+      "options": {
+        "A": "No \u2014 Maria did not obtain property or money; she merely induced David to forego a debt; a debt forgiveness is not within the scope of s.6",
+        "B": "Yes \u2014 Maria dishonestly induced David, by her false representation that she had paid, to do an act (forgive the debt/mark it settled) resulting in a gain for Maria (extinguishment of her liability) and a loss for David (the \u20ac1,000 owed to him); obtaining by deception is not limited to physical property",
+        "C": "No \u2014 David's own mistake (misidentifying the lodgement) breaks the causal chain between Maria's deception and the outcome",
+        "D": "No \u2014 because Maria intended to pay and the deception was only temporary; there was no permanent gain"
+      },
+      "correct_answer": "B",
+      "explanation": "Maria's conduct satisfies s.6 CJ(T&F)A 2001 despite no physical property changing hands: (1) Dishonesty \u2014 falsely claiming payment has been made to avoid a genuine debt is objectively dishonest; (2) By deception \u2014 the false representation that payment has been made; (3) Inducing David to act \u2014 David marks the debt settled, relinquishing his right to recover the \u20ac1,000; (4) Gain to Maria (extinguishment of \u20ac1,000 liability = financial gain) and loss to David (losing the debt owed to him). The Act is not limited to physical property \u2014 inducing another to forego a debt constitutes gaining a financial benefit. This is a textbook scenario for teaching that deception offences extend beyond tangible property to financial advantages. Regarding Option C: David's misidentification of the lodgement does not break the causal chain \u2014 it was Maria's deception that set the chain in motion and caused David to mark the debt settled. Option D: Maria clearly has no intention to pay \u2014 she is falsely claiming she already has."
+    },
+    {
+      "id": "CRL_M07_L02_Q09",
+      "question": "What is the significance of the 'dishonesty' element in s.6 CJ(T&F)A 2001, and how is it assessed?",
+      "options": {
+        "A": "Dishonesty in deception offences is assessed subjectively \u2014 if the accused personally believed they were entitled to what they obtained, there is no dishonesty",
+        "B": "Dishonesty in deception offences is assessed using the same objective test as in theft \u2014 whether reasonable people would regard the conduct as dishonest; per DPP v Bowe [2012] IECA, the accused cannot escape liability by claiming a personal moral code that differs from that of reasonable people",
+        "C": "Dishonesty in deception offences requires proof that the accused knew their conduct was illegal \u2014 ignorance of the criminal law negates dishonesty",
+        "D": "Dishonesty in s.6 is a strict liability element \u2014 once deception is proven, dishonesty is automatically established"
+      },
+      "correct_answer": "B",
+      "explanation": "The 'dishonesty' element in s.6 CJ(T&F)A 2001 deception offences is assessed using the same objective standard as in theft under s.4. DPP v Bowe [2012] IECA confirmed that the test for dishonesty under the CJ(T&F)A 2001 is whether reasonable people would regard the conduct as dishonest. The accused cannot escape liability by constructing a personal moral framework justifying the conduct. This objective test applies across the theft and fraud offences in the 2001 Act. It prevents accused persons from claiming that they personally saw nothing wrong with their deceptive conduct. However, as with theft, the s.4(2) honest belief defence analogue may apply: if the accused genuinely believed they were legally entitled to what they obtained, the dishonesty element may be negated \u2014 but the belief must be in a genuine legal entitlement, not simply a personal sense of moral justification. Option A makes the test purely subjective. Option C substitutes knowledge of illegality for dishonesty. Option D incorrectly applies strict liability to the dishonesty element."
+    }
+  ]
+}

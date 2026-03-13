@@ -1,0 +1,215 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module02_Lesson02.txt",
+  "module_number": 2,
+  "module_title": "Separate Legal Personality",
+  "lesson_number": 2,
+  "lesson_title": "Lifting the Corporate Veil",
+  "total_questions": 17,
+  "questions": [
+    {
+      "id": 1,
+      "question": "A liquidator seeks a declaration under section 610 CA 2014 (reckless trading) against a director who continued trading for 8 months after the company was balance-sheet insolvent. The director argues she genuinely believed the company would recover. Following the 2024 Act amendments, how does this defence fare?",
+      "options": {
+        "A": "The defence of genuine belief in recovery is a complete defence to a S610 claim",
+        "B": "The 2024 Act removed the subjective honest belief defence — the court applies an objective standard of recklessness",
+        "C": "The defence succeeds if the director can show she consulted a solicitor about the insolvency",
+        "D": "The defence is only available to non-executive directors who had no day-to-day involvement"
+      },
+      "correct_answer": "B",
+      "explanation": "The Companies (Corporate Governance, Enforcement and Regulatory Provisions) Act 2024 removed the word ‘knowingly’ and the ‘honest and responsibly’ defence from S610. The 2024 amendments moved S610 closer to an objective standard, making it harder for directors to rely on a subjective belief that trading was justified."
+    },
+    {
+      "id": 2,
+      "question": "A court is asked to pierce the corporate veil over a company that is effectively controlled by its sole director but is not being used fraudulently. There is no statutory basis invoked. Under current Irish law following Coen v Doyle [2023], the court will:",
+      "options": {
+        "A": "Pierce the veil as a matter of discretion wherever it would be just and equitable to do so",
+        "B": "Refuse to pierce the veil — there is no general equitable jurisdiction to lift the veil absent fraud, sham, or specific statutory authority",
+        "C": "Pierce the veil only if the company has fewer than three directors",
+        "D": "Pierce the veil automatically as the sole director breached their duty of care to creditors"
+      },
+      "correct_answer": "B",
+      "explanation": "Coen v Doyle [2023] IECA confirms the restrictive Irish approach: courts will not pierce the corporate veil on a general ‘just and equitable’ basis. Veil-piercing requires specific legal justification — fraud, a statutory provision, or the company being used as a sham or facade to evade an existing legal obligation."
+    },
+    {
+      "id": 3,
+      "question": "In which of the following situations is the court LEAST likely to lift the corporate veil?",
+      "options": {
+        "A": "A director incorporates a new company to continue operating a business, thereby evading a personal guarantee he gave to a creditor of his former company",
+        "B": "A company fails to hold a board meeting for 18 months while operating normally",
+        "C": "A company is formed by a defendant specifically to receive assets transferred to defeat a court order against the defendant personally",
+        "D": "A company is incorporated as part of a scheme designed to defraud investors by false representations"
+      },
+      "correct_answer": "B",
+      "explanation": "Failing to hold board meetings — while constituting a corporate governance failing and potentially a category 3 or 4 offence — does not constitute fraud or evasion of a legal obligation. This is the least likely basis for piercing the veil. Options A, C, and D all involve using the company as a sham or instrument of fraud, which are recognised grounds for lifting the veil."
+    },
+    {
+      "id": 4,
+      "question": "A director who is also the majority shareholder withdraws €200,000 from the company’s bank account for personal purposes shortly before the company becomes insolvent. A liquidator later appointed seeks recovery. Which provision(s) of the CA 2014 are most directly applicable?",
+      "options": {
+        "A": "Section 31 (statutory contract) and section 38 (capacity)",
+        "B": "Section 228 (directors’ duties) and section 604 (unfair preferences) and potentially section 599 (fraudulent trading)",
+        "C": "Section 175 (AGM) and section 176 (EGM)",
+        "D": "Section 819 (restriction) only — no other provision applies until after liquidation"
+      },
+      "correct_answer": "B",
+      "explanation": "The director’s withdrawal of company funds breaches S228 fiduciary duties (duty not to misappropriate company assets). If the company was insolvent at the time, S604 unfair preference analysis applies. If done knowingly to defraud creditors, S599 fraudulent trading is engaged. S819 restriction is a consequence — not the primary remedy for recovery of assets."
+    },
+    {
+      "id": 5,
+      "question": "The principle in Adams v Cape Industries plc [1990] significantly restricts veil-piercing in group company structures. Which of the following outcomes is CONSISTENT with that decision?",
+      "options": {
+        "A": "A parent company is automatically liable for all tortious acts of its subsidiary",
+        "B": "A subsidiary company’s employees can sue the parent company for personal injury claims based solely on group membership",
+        "C": "A parent company is not liable for its subsidiary’s debts or torts merely because they share directors or are within the same corporate group",
+        "D": "Where a subsidiary is wholly owned, the parent's liability is proportional to its shareholding"
+      },
+      "correct_answer": "C",
+      "explanation": "Adams v Cape Industries plc [1990] Ch 433 is the leading English authority (applied in Ireland) on the independence of companies within a group. Membership of the same corporate group does not create any form of shared liability — each company is independently assessed. The veil between parent and subsidiary remains intact absent fraud, agency, or statute."
+    },
+    {
+      "id": 6,
+      "question": "Under section 599 CA 2014, a court makes a declaration of personal liability for fraudulent trading against two directors. The company owes €500,000 to its creditors. What is the maximum liability of the two directors under such a declaration?",
+      "options": {
+        "A": "Limited to each director’s shareholding in the company",
+        "B": "The declaration can make directors personally liable without limit to contribute to the company’s assets",
+        "C": "Capped at the total remuneration received by each director in the prior 12 months",
+        "D": "Limited to €65,000 per director as a category 2 offence under CA 2014"
+      },
+      "correct_answer": "B",
+      "explanation": "A fraudulent trading declaration under S599 CA 2014 can make the directors personally liable without limit to contribute to the company’s assets as the court thinks proper. There is no statutory cap — the order can extend to the full amount of the company’s liabilities if the court sees fit."
+    },
+    {
+      "id": 7,
+      "question": "Company X is a wholly-owned subsidiary of Company Y. A lender takes security over Company X’s assets. On insolvency of Company X, Company Y argues it has an equitable interest in the charged assets as sole beneficial owner. This argument will:",
+      "options": {
+        "A": "Succeed — a parent company has beneficial ownership of its subsidiaries’ assets by virtue of full ownership",
+        "B": "Fail — under the Salomon principle, Company X owns its assets beneficially in its own right; Company Y has no direct proprietary interest",
+        "C": "Succeed — a wholly-owned subsidiary holds its assets on trust for the parent",
+        "D": "Succeed only if the security interest was created before the subsidiary was incorporated"
+      },
+      "correct_answer": "B",
+      "explanation": "Applying the Salomon principle and Macaura, a parent company (as shareholder) has no direct beneficial ownership of the subsidiary’s assets. The subsidiary owns its assets beneficially as a separate legal entity. The parent has a contractual and statutory relationship with the subsidiary, not a proprietary one. The lender's security is valid."
+    },
+    {
+      "id": 8,
+      "question": "A director of an insolvent company is also the sole shareholder. He argues that because he is a creditor of the company (having lent it €50,000), the winding-up petition should be dismissed as the company has no net assets to distribute to outsiders. The court is likely to:",
+      "options": {
+        "A": "Dismiss the petition as the director’s loan as creditor extinguishes the need for a liquidation",
+        "B": "Proceed with the petition — the Salomon principle means the director’s claim as creditor is valid but does not prevent an insolvent liquidation sought by another creditor",
+        "C": "Treat the director’s loan as equity, not a creditor claim, and proceed",
+        "D": "Lift the veil and treat the director personally liable for all company debts before considering the petition"
+      },
+      "correct_answer": "B",
+      "explanation": "Applying the Salomon principle, a director's loan to their own company is valid creditor debt. However, this does not bar a petition by an independent creditor. The winding-up proceeds; the director ranks as an unsecured creditor (or secured, if documented) and is paid accordingly — the same as any other creditor of equivalent rank."
+    },
+    {
+      "id": 9,
+      "question": "Company A transfers its only valuable asset — a warehouse — to Company B (a newly formed sister company with the same directors and shareholders) for €1, on the day before a large creditor issues proceedings. A liquidator is appointed 3 months later. Which ground is MOST appropriate for recovering the warehouse?",
+      "options": {
+        "A": "Section 31 CA 2014 — breach of the statutory contract",
+        "B": "Section 604 CA 2014 — unfair preference or fraudulent disposition under section 601, and/or section 599 fraudulent trading, alongside veil-piercing as Company B is a sham",
+        "C": "Section 819 CA 2014 — restriction of directors is the primary remedy",
+        "D": "Section 176 CA 2014 — failure to hold an EGM before the transfer"
+      },
+      "correct_answer": "B",
+      "explanation": "The transfer at gross undervalue to connected persons to defeat a creditor engages multiple provisions: S601 (fraudulent disposition — intent to defraud); S604 (preference/connected person — 2-year look-back); potentially S599 (fraudulent trading). Company B, as a vehicle formed to receive the asset, may also be treated as a sham justifying veil-piercing. This is a multi-ground attack."
+    },
+    {
+      "id": 10,
+      "question": "Section 610 CA 2014 (reckless trading) differs from section 599 (fraudulent trading) principally in that:",
+      "options": {
+        "A": "Section 610 requires proof of actual intent to defraud; section 599 requires reckless disregard of consequences",
+        "B": "Section 610 requires reckless conduct (now without a subjective element following the 2024 Act); section 599 requires actual fraudulent intent — making S610 the lower threshold provision",
+        "C": "Section 610 applies only to shareholders; section 599 applies only to directors",
+        "D": "Section 610 applies in examinership; section 599 applies only in liquidation"
+      },
+      "correct_answer": "B",
+      "explanation": "The critical distinction: S599 (fraudulent trading) requires actual dishonest intent to defraud — a high threshold. S610 (reckless trading) requires reckless conduct (and following the 2024 Act, the subjective ‘knowingly’ qualifier was removed), making it the lower threshold. Liquidators typically prefer S610 where fraud cannot be proven."
+    },
+    {
+      "id": 11,
+      "question": "The courts in Ireland have recognised that the Salomon principle may sometimes be displaced in the context of ‘single economic unit’ arguments — where related companies are treated as one. This approach is:",
+      "options": {
+        "A": "The general rule in Irish law since DHN Food Distributors Ltd v Tower Hamlets [1976]",
+        "B": "Broadly rejected by Irish courts — the group entity concept is not a recognised basis for lifting the veil absent fraud or agency",
+        "C": "Codified in Part 6 of the CA 2014 for group companies with more than ten subsidiaries",
+        "D": "Applicable automatically wherever a holding company owns 75% or more of a subsidiary"
+      },
+      "correct_answer": "B",
+      "explanation": "The ‘single economic unit’ argument from DHN Food Distributors [1976] was rejected by the House of Lords in Woolfson v Strathclyde Regional Council [1978] and has not been accepted as a general basis for veil-piercing in Ireland. The Salomon principle remains the starting point and veil-piercing requires specific legal justification."
+    },
+    {
+      "id": 12,
+      "question": "A sole director agrees to buy his company’s only asset at a price significantly below market value, arguing there was a shareholders’ meeting that approved the sale. On a subsequent insolvency, a liquidator challenges the transaction. Under which provision is the liquidator most likely to succeed in setting aside this transaction?",
+      "options": {
+        "A": "Section 175 CA 2014 (AGM obligation)",
+        "B": "Section 238 CA 2014 (substantial non-cash asset transactions requiring independent member approval, potentially also S604 unfair preference)",
+        "C": "Section 819 CA 2014 (restriction of directors — restriction is the sole remedy)",
+        "D": "Section 31 CA 2014 (statutory contract breach)"
+      },
+      "correct_answer": "B",
+      "explanation": "A sale of the company’s only asset to a director at undervalue engages S238 CA 2014 (substantial non-cash asset transaction requiring independent member approval beyond the director themselves). It is voidable unless proper approval was obtained. It may also constitute an unfair preference under S604 if the company was insolvent and the director was a connected person."
+    },
+    {
+      "id": 13,
+      "question": "For the purposes of section 599 CA 2014 fraudulent trading, which of the following would constitute a party ‘knowingly party to the carrying on’ of business fraudulently?",
+      "options": {
+        "A": "A passive non-executive director who attended no board meetings but drew a salary",
+        "B": "A director who was aware that the company was insolvent but took no steps to address it",
+        "C": "A director who continued to accept credit from suppliers knowing the company could not pay, while concealing the true financial position from those suppliers",
+        "D": "A shadow director who provided general commercial advice to the board on investment strategy"
+      },
+      "correct_answer": "C",
+      "explanation": "Knowingly accepting credit from suppliers while concealing the company's inability to pay constitutes carrying on business with intent to defraud those creditors — a classic S599 fraudulent trading scenario. The director is deliberately deceiving specific creditors as to the company's financial position. Options A and B describe potential reckless trading (S610) or S819 restriction grounds, but not necessarily fraud."
+    },
+    {
+      "id": 14,
+      "question": "In a liquidation, a liquidator discovers that the director transferred the company’s trade name and goodwill to a new company controlled by the same director’s adult children, for nominal consideration, 18 months before the winding-up petition was presented. The most relevant provision is:",
+      "options": {
+        "A": "Section 604(4) CA 2014 — the 2-year look-back period for connected persons, combined with the presumption that the company desired to prefer the connected person",
+        "B": "Section 175 CA 2014 — failure to hold an AGM within the relevant period",
+        "C": "Section 819 CA 2014 — restriction application alone is sufficient to recover the assets",
+        "D": "Section 239 CA 2014 — loans to directors applies to transfers of goodwill"
+      },
+      "correct_answer": "A",
+      "explanation": "Adult children of a director are connected persons under S220 CA 2014. A transfer of assets for nominal consideration to connected persons within 2 years of the winding-up petition falls within S604(4). There is a presumption that the company desired to prefer them, which the connected persons must rebut. S601 (fraudulent disposition) may also apply if intent to defraud is evident."
+    },
+    {
+      "id": 15,
+      "question": "Which of the following best states the test for ‘lifting the veil’ in Irish law as it currently stands?",
+      "options": {
+        "A": "Whenever it is just and equitable to treat the company and its controllers as one",
+        "B": "Only where the company is used as a facade or sham to evade existing legal obligations, or where a specific statutory provision applies — there is no general equitable discretion to pierce the veil",
+        "C": "Whenever the company has been insolvent for more than 12 months",
+        "D": "Whenever a director is also the majority shareholder and controls all board decisions"
+      },
+      "correct_answer": "B",
+      "explanation": "Following Coen v Doyle [2023], the Irish Court of Appeal confirmed the restrictive approach: veil-piercing is available only where the company is a sham or facade used to evade a pre-existing legal obligation, or where statute specifically authorises it. There is no free-standing general equity jurisdiction to pierce the veil in Irish law."
+    },
+    {
+      "id": 16,
+      "question": "A company is being used by its director as an ‘alter ego’ — all business is conducted in the company name, but the director treats company funds as personal income, files no returns, and keeps no separate accounts. A creditor seeks to hold the director personally liable. The STRONGEST legal basis is:",
+      "options": {
+        "A": "The ‘alter ego’ doctrine — automatically applies when a director treats the company as their personal property",
+        "B": "Section 228 (breach of duty), section 599 or 610 (trading liabilities), and potentially S601 (fraudulent disposition) — cumulative application of specific provisions rather than a general alter ego doctrine",
+        "C": "The company secretary is personally liable for the director's conduct under CA 2014",
+        "D": "The company is automatically dissolved if no annual return is filed, extinguishing the Salomon protection"
+      },
+      "correct_answer": "B",
+      "explanation": "Irish law does not recognise a general ‘alter ego’ doctrine as a basis for lifting the veil. The strongest approach is to rely on specific provisions: S228 breach of duty, S599/610 trading liability, S601/604 voidable transactions. The conduct described may also trigger an S839 disqualification application by the liquidator or CEA."
+    },
+    {
+      "id": 17,
+      "question": "Where a liquidator successfully brings a fraudulent trading claim under S599 CA 2014, the effect of the court’s order is to:",
+      "options": {
+        "A": "Automatically dissolve the company and redistribute its assets",
+        "B": "Impose personal liability on the director to contribute to the company’s assets — the money goes into the company's estate for the benefit of all creditors, not directly to the claimant",
+        "C": "Award compensation directly to the specific creditor who brought the claim",
+        "D": "Impose a fixed fine not exceeding €500,000 on the director concerned"
+      },
+      "correct_answer": "B",
+      "explanation": "A successful S599 declaration results in an order that the director contribute to the company’s assets — the funds go into the insolvent estate for distribution to all creditors in accordance with priority rules. It is not a compensation order for the benefit of one creditor but an asset recovery mechanism for the benefit of the general body of creditors."
+    }
+  ]
+}

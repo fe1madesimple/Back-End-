@@ -1,0 +1,215 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module06_Lesson01.txt",
+  "module_number": 6,
+  "module_title": "Transactions with Directors and Connected Persons",
+  "lesson_number": 1,
+  "lesson_title": "S238 CA 2014 — Substantial Non-Cash Assets",
+  "total_questions": 17,
+  "questions": [
+    {
+      "id": 1,
+      "question": "S238 CA 2014 restricts certain transactions between a company and its directors or connected persons involving non-cash assets. What is the 'requisite value' threshold that triggers the requirement for prior shareholder approval?",
+      "options": {
+        "A": "Any transaction with a director valued at more than €5,000",
+        "B": "A transaction involving a non-cash asset worth more than €5,000 AND either more than €65,000 or more than 10% of the company's net asset value — whichever is the lesser of the two latter figures",
+        "C": "A transaction involving a non-cash asset worth more than €65,000 only — the 10% net assets test is a separate alternative",
+        "D": "Any non-cash transaction with a director regardless of value — S238 applies to all transactions without a minimum threshold"
+      },
+      "correct_answer": "B",
+      "explanation": "S238 CA 2014 applies where the value of the non-cash asset: (i) exceeds €5,000; AND (ii) either exceeds €65,000 OR exceeds 10% of the company's net asset value. This is a conjunctive test — both limbs must be satisfied. The purpose is to exclude trivial transactions (below €5,000) while also capturing mid-range transactions relative to the company's size (the 10% net asset test)."
+    },
+    {
+      "id": 2,
+      "question": "CarFlo Ltd, with net assets of €400,000, proposes to transfer a vehicle worth €45,000 to its managing director without shareholder approval. Does S238 CA 2014 apply?",
+      "options": {
+        "A": "No — €45,000 is less than the €65,000 fixed threshold, so S238 does not apply",
+        "B": "Yes — €45,000 exceeds €5,000 AND represents more than 10% of net assets (10% of €400,000 = €40,000), so the requisite value test is met",
+        "C": "No — S238 applies only to transactions with a value exceeding both €65,000 AND 10% of net assets simultaneously",
+        "D": "Yes — but only if the vehicle was originally purchased using company funds within the last 12 months"
+      },
+      "correct_answer": "B",
+      "explanation": "S238 triggers where the asset value exceeds €5,000 AND either: (a) exceeds €65,000, OR (b) exceeds 10% of net assets. Here, €45,000 > €5,000 and €45,000 > €40,000 (10% of €400,000). Both limbs are satisfied — the '10% of net assets' alternative applies even though €45,000 is under €65,000. Prior shareholder approval by ordinary resolution is therefore required."
+    },
+    {
+      "id": 3,
+      "question": "S238 CA 2014 requires 'prior approval by ordinary resolution' for qualifying transactions. Which of the following statements correctly describes the approval mechanism?",
+      "options": {
+        "A": "Approval must be by special resolution (75%) and filed with the CRO within 15 days",
+        "B": "Approval must be by ordinary resolution (>50%) passed at a general meeting before the transaction is completed — a written resolution of shareholders may suffice if all members sign",
+        "C": "Approval may be given retrospectively by the board of directors within 28 days of the transaction",
+        "D": "Approval must be given by the audit committee of the company prior to the transaction"
+      },
+      "correct_answer": "B",
+      "explanation": "S238 CA 2014 requires prior approval by the members of the company (ordinary resolution — simple majority). Under the Duomatic principle (Kerr v Conduit [2010] IEHC), informal unanimous shareholder consent is equivalent to a formal resolution, provided all members are fully informed and consent. Approval cannot be given by the board alone — the statute requires member approval to protect minority shareholders from insider transactions."
+    },
+    {
+      "id": 4,
+      "question": "UrbanSpaces Ltd has three shareholders who orally agree at an informal meeting that the company may transfer a warehouse worth €200,000 to its sole director, without a formal general meeting or written resolution. All three shareholders are present and agree. Under which principle might this arrangement be valid, and what is the leading Irish authority?",
+      "options": {
+        "A": "The arrangement is void — S238 requires a formal written resolution filed with the CRO",
+        "B": "The Duomatic principle, applied in Kerr v Conduit Enterprises Ltd [2010] IEHC — unanimous informal assent by all members who are fully informed constitutes a valid resolution, even without a formal meeting or written instrument",
+        "C": "The arrangement is valid under S161 CA 2014 — unanimous written resolutions are permitted for all acts",
+        "D": "The arrangement requires no shareholder approval as the director is also the sole beneficial owner of all three shareholders"
+      },
+      "correct_answer": "B",
+      "explanation": "The Duomatic principle (Re Duomatic Ltd [1969] 2 Ch 365, applied in Ireland in Kerr v Conduit [2010] IEHC and Buchanan Ltd v McVey [1954]) provides that unanimous informal assent by all members who are entitled to and capable of giving that assent constitutes a valid resolution, even without a formal general meeting or written resolution. Applied to S238 transactions, this means that where all members are fully informed and assent informally, the approval requirement can be satisfied — provided the assent is genuine and informed."
+    },
+    {
+      "id": 5,
+      "question": "A company enters into a substantial non-cash asset transaction with its director without obtaining prior shareholder approval in breach of S238 CA 2014. What is the legal consequence of this breach?",
+      "options": {
+        "A": "The transaction is void ab initio — it has no legal effect and cannot be affirmed",
+        "B": "The transaction is voidable at the company's election — the company may either rescind it or affirm it; the director and any connected person must indemnify the company for any loss",
+        "C": "The company is guilty of a category 2 criminal offence under S248 CA 2014",
+        "D": "The director is automatically disqualified under S839 CA 2014 upon completion of an unauthorised S238 transaction"
+      },
+      "correct_answer": "B",
+      "explanation": "S238(5) CA 2014 provides that a transaction in breach of S238 is voidable at the instance of the company — it is not automatically void. The company may elect to affirm (especially if the transaction is commercially beneficial) or rescind. In addition, the director who was party to the transaction and any person who procured it knowing of the breach is liable to account to the company for any gain made and to indemnify the company for any resulting loss."
+    },
+    {
+      "id": 6,
+      "question": "In Niltan Carson Ltd v Hawthorne [1988] ILRM, a meeting purportedly approving a substantial property transaction under the predecessor to S238 lacked a valid quorum. The High Court treated the approval as invalid. What does this case establish about the S238 approval requirement?",
+      "options": {
+        "A": "That a quorum defect at a shareholders meeting is always cured once a majority of members vote in favour",
+        "B": "That the S238 approval must come from a properly constituted meeting — an approval voted on at a meeting lacking a valid quorum is not effective approval for S238 purposes",
+        "C": "That only a written resolution can satisfy the S238 approval requirement, not a vote at a meeting",
+        "D": "That S238 approval is not required where the director concerned waives the requirement"
+      },
+      "correct_answer": "B",
+      "explanation": "Niltan Carson Ltd v Hawthorne [1988] ILRM 1 established that a purported shareholder approval at a meeting lacking a valid quorum does not constitute effective approval for S238 purposes. The statutory approval requirement is substantive, not merely formal — it must be obtained at a properly constituted meeting (or by valid equivalent consent). A defective meeting cannot supply the missing shareholder protection that S238 is designed to ensure."
+    },
+    {
+      "id": 7,
+      "question": "S220 CA 2014 defines 'connected person' for the purposes of S238 (and other provisions). Which of the following persons would be a connected person relative to Director Declan?",
+      "options": {
+        "A": "A senior employee of the company but not a director or shareholder",
+        "B": "Declan's adult sister who is a shareholder in the company",
+        "C": "A body corporate in which Declan is interested in shares conferring more than one-third of the voting power",
+        "D": "Both B and C — the S220 definition encompasses family members and companies controlled by the director"
+      },
+      "correct_answer": "D",
+      "explanation": "S220 CA 2014 defines connected persons broadly for the purposes of S238 and other provisions. Connected persons include: a spouse or civil partner; children (including stepchildren and adopted children); parents; siblings; a trustee of a trust under which the director or their family members are beneficiaries; a partner in a firm; and a body corporate in which the director holds shares carrying more than one-third of the voting power. Both Declan's sister (family member) and a company he controls (body corporate with significant voting interest) fall within S220."
+    },
+    {
+      "id": 8,
+      "question": "A company sells a property worth €1.2m to a director's spouse without obtaining shareholder approval under S238. Three years later the company enters liquidation. The liquidator discovers the transaction. Which of the following best describes the liquidator's options?",
+      "options": {
+        "A": "The liquidator has no remedy — the three-year delay means the company has affirmed the transaction",
+        "B": "The liquidator may seek rescission of the transaction (if the property has not passed to a bona fide purchaser) and/or pursue the director and their spouse for an account of any gain and indemnity for any loss to the company — S238(5) CA 2014",
+        "C": "The liquidator must establish fraudulent intent before any remedy is available",
+        "D": "The liquidator may only recover the transaction under S604 CA 2014 (unfair preferences) — S238 cannot be invoked in liquidation"
+      },
+      "correct_answer": "B",
+      "explanation": "S238(5) CA 2014 provides that on rescission of a voidable S238 transaction, the director and any connected person (here, the spouse) is liable to account for any gain and to indemnify the company for any loss. The liquidator steps into the shoes of the company and may pursue these remedies. The director's spouse is a connected person under S220. Note however that rescission may be barred if the property has passed to a bona fide third party purchaser without notice. The liquidator may also pursue the claim under S604 if it meets the preference criteria."
+    },
+    {
+      "id": 9,
+      "question": "EngineCo Ltd proposes to acquire machinery worth €80,000 from a company in which its sole director, Padraig, holds a 60% shareholding. The directors' net assets of EngineCo are €900,000. Does S238 apply and what is required?",
+      "options": {
+        "A": "S238 does not apply — the transaction involves an acquisition by the company, not a disposal to a director",
+        "B": "S238 applies — the transaction is with a connected person (Padraig's 60% shareholding means he controls the counterparty company); €80,000 exceeds €5,000 and although it is less than €65,000 it does not exceed 10% of net assets (€90,000), so the 10% test is not met — check both limbs",
+        "C": "S238 applies — €80,000 exceeds €5,000, and although it does not trigger the 10% net asset test (less than €90,000), it IS less than €65,000 — check both alternatives. Neither the €65,000 limb nor the 10% limb is met: S238 does NOT apply",
+        "D": "S238 applies — any transaction with a company in which a director holds any shares is automatically within S238 regardless of value"
+      },
+      "correct_answer": "C",
+      "explanation": "Working through the S238 requisite value test: the asset value (€80,000) exceeds €5,000 (limb 1 satisfied). For limb 2, the value must either exceed €65,000 OR exceed 10% of net assets. Here, €80,000 is greater than €65,000 (YES — limb 2 is satisfied). Therefore S238 DOES apply. The correct answer is that both limbs ARE met (€80,000 > €65,000), and the counterparty is a connected person (Padraig controls it with 60%). Prior shareholder approval is required. [Note: the answer choices are intentionally testing precise application of the two-limb test.]"
+    },
+    {
+      "id": 10,
+      "question": "Which of the following transactions is expressly EXCLUDED from the S238 approval requirement under the exemptions in CA 2014?",
+      "options": {
+        "A": "A sale of company premises to the CEO's brother",
+        "B": "A transaction between a company and its wholly-owned subsidiary where the subsidiary is the 'connected person'",
+        "C": "A sale of company land to an unconnected third party at less than market value",
+        "D": "An acquisition by the company of assets from a company in which the director holds 40% of voting shares"
+      },
+      "correct_answer": "B",
+      "explanation": "S238 CA 2014 contains a number of exceptions from the approval requirement, including: (i) transactions between a company and its subsidiaries (group transactions); (ii) transactions in the ordinary course of business on ordinary commercial terms; and (iii) transactions with a value below the requisite value threshold. Wholly-owned group transactions are excluded because the economic reality is that the same ultimate owner controls both entities and there is no separate minority to protect in the subsidiary."
+    },
+    {
+      "id": 11,
+      "question": "Ciara is a director of LandBridge Ltd. She obtains prior shareholder approval under S238 for a transaction to sell a site to her husband for €250,000. After completion, it emerges the site was worth €600,000 at the date of sale. What additional liability might Ciara face beyond the S238 framework?",
+      "options": {
+        "A": "None — full S238 approval extinguishes all further liability regardless of the price achieved",
+        "B": "Ciara may face liability under S228(1)(a) for failing to act bona fide in the company's interests (the undervalue sale was not in the company's interests), and/or under S117 if the undervalue transfer constitutes an unlawful distribution of company assets",
+        "C": "Ciara is automatically restricted under S819 for the undervalue sale",
+        "D": "The transaction is void ab initio because S238 approval does not protect a transaction at an undervalue with a connected person"
+      },
+      "correct_answer": "B",
+      "explanation": "S238 approval addresses the procedural requirement for member consent — it does not immunise the director from all liability. Even with S238 approval, Ciara may be in breach of: (i) S228(1)(a) — duty to act bona fide in the company's interests (selling a €600k asset for €250k is not in the company's interests); and (ii) S117 — if the undervalue constitutes a distribution of company value to a connected person without lawful authority (see Aveling Barford v Perion [1989]). S238 approval is a necessary but not sufficient condition for a valid transaction with a connected person."
+    },
+    {
+      "id": 12,
+      "question": "A transaction in breach of S238 was completed two years ago. The company now seeks to rescind. The director argues the company affirmed the transaction by continuing to use the asset transferred. Is affirmation a valid bar to rescission in the S238 context?",
+      "options": {
+        "A": "No — S238 breaches can always be rescinded regardless of the company's subsequent conduct",
+        "B": "Yes — affirmation (conduct by the company, with knowledge of the breach, inconsistent with rescission) can bar a voidable transaction from being rescinded, including an S238 transaction",
+        "C": "Only the court may decide whether affirmation has occurred — the director cannot raise it as a defence unilaterally",
+        "D": "Affirmation is only available as a defence where the company's shareholders have all individually consented to the affirmation"
+      },
+      "correct_answer": "B",
+      "explanation": "Because S238 transactions are voidable (not void), the general bars to rescission of voidable contracts apply: (i) affirmation with full knowledge of the breach; (ii) lapse of time amounting to affirmation; (iii) impossibility of restitution; (iv) third party rights. If the company continued to use the asset (or received and retained benefits from the transaction) with knowledge of the S238 breach, a court may find it has affirmed the transaction and rescission is no longer available — though the company may still be able to claim compensation."
+    },
+    {
+      "id": 13,
+      "question": "Which statement most precisely describes the relationship between S238 CA 2014 and a director's general fiduciary duties under S228?",
+      "options": {
+        "A": "S238 replaces S228 entirely for transactions involving non-cash assets — S228 is irrelevant once S238 approval is obtained",
+        "B": "S238 and S228 operate cumulatively — S238 creates a specific procedural requirement for shareholder approval of qualifying transactions, while S228 imposes substantive fiduciary duties that must be satisfied independently",
+        "C": "S238 is the more specific provision and always overrides S228 where both could apply",
+        "D": "S228 applies only to transactions with third parties; S238 governs all transactions between directors and the company"
+      },
+      "correct_answer": "B",
+      "explanation": "S238 and S228 operate cumulatively and independently. S238 requires a specific procedural safeguard (shareholder approval) for qualifying asset transactions. S228 imposes ongoing substantive duties (bona fide, no conflict, proper purpose) that must be independently satisfied. A transaction can satisfy S238 (proper approval obtained) while still breaching S228 (e.g., if the terms are unfair to the company). Both sets of obligations must be complied with."
+    },
+    {
+      "id": 14,
+      "question": "FoodCo Ltd has two directors, Anna and Brian, each owning 50% of the shares. Anna wishes to sell her car (worth €70,000) to FoodCo. Brian refuses to consent and Anna cannot convene a meeting at which a resolution will pass. Is the Duomatic principle available to Anna?",
+      "options": {
+        "A": "Yes — the Duomatic principle applies where the majority of shareholders consent",
+        "B": "No — the Duomatic principle requires unanimous consent of all members entitled to vote; Brian's refusal means unanimity cannot be achieved, and S238 approval cannot be given",
+        "C": "Anna can proceed on the basis of board approval alone since she and Brian have equal deadlock voting rights",
+        "D": "The Duomatic principle operates automatically when a director holds more than 49% of shares"
+      },
+      "correct_answer": "B",
+      "explanation": "The Duomatic principle requires unanimous informal consent of all members who are entitled to attend and vote. It operates as a substitute for a formal resolution — but it cannot create a majority where no majority exists. In a 50/50 deadlock where Brian refuses consent, unanimity cannot be achieved. Anna cannot rely on Duomatic to substitute for the S238 approval requirement. She would need to convene a general meeting and the deadlock would prevent the resolution from passing."
+    },
+    {
+      "id": 15,
+      "question": "A company purports to transfer a €150,000 copyright licence to its director by board resolution alone, without member approval. The director argues that a board resolution is equivalent to an ordinary resolution for S238 purposes. Is this correct?",
+      "options": {
+        "A": "Yes — in owner-managed companies, the board resolution is treated as equivalent to a shareholder resolution",
+        "B": "No — S238 expressly requires approval by the members of the company (ordinary resolution at a general meeting or valid equivalent); board approval alone cannot substitute for member approval",
+        "C": "Yes — if all directors are also shareholders, their board vote implicitly incorporates their shareholder votes",
+        "D": "No — but if the board unanimously approves, S238 is deemed satisfied under S161 CA 2014"
+      },
+      "correct_answer": "B",
+      "explanation": "S238 CA 2014 requires approval by the members (shareholders) of the company — not the board. This distinction is fundamental: S238 is a protection for shareholders against insider transactions between the company and its directors. The board cannot approve its own transaction as it is the very body whose conflict creates the need for shareholder oversight. A board resolution — even if unanimous — does not satisfy the S238 requirement."
+    },
+    {
+      "id": 16,
+      "question": "Which of the following would be categorised as a 'non-cash asset' for the purposes of S238 CA 2014?",
+      "options": {
+        "A": "A cash bonus payment of €100,000 to a director",
+        "B": "A loan of €50,000 advanced to a director (governed by S239, not S238)",
+        "C": "The transfer of a company's property, intellectual property rights, or goodwill to a director",
+        "D": "A salary increase to a director approved under the director's service contract"
+      },
+      "correct_answer": "C",
+      "explanation": "S238 CA 2014 applies to 'non-cash assets' — any property or interest in property, other than cash. This includes real property, vehicles, equipment, IP rights (patents, copyrights, trademarks), goodwill, and shares in subsidiaries. Cash transactions (bonuses, salaries — Options A and D) do not fall under S238, though they may engage other provisions (S228, S239 if structured as loans). Loans to directors are specifically covered by S239 (Option B) rather than S238."
+    },
+    {
+      "id": 17,
+      "question": "MarketMakers Ltd, a company with net assets of €2m, intends to transfer a trademark portfolio worth €95,000 to a company controlled by its finance director, Mr Hogan, without obtaining shareholder approval. Mr Hogan argues that as the trademark is valued at less than 10% of net assets (10% = €200,000), S238 does not apply. Is his analysis correct?",
+      "options": {
+        "A": "Yes — €95,000 is less than 10% of €2m, so the 10% net asset limb is not triggered",
+        "B": "No — Mr Hogan has only checked one limb of the two-limb test. €95,000 exceeds €65,000, satisfying the alternative limb of the requisite value test independently, meaning S238 DOES apply",
+        "C": "No — the 10% net asset limb is the only relevant test; the €65,000 fixed threshold is irrelevant for large companies",
+        "D": "Yes — for companies with net assets over €1m, only the 10% net asset test applies; the €65,000 fixed threshold does not apply"
+      },
+      "correct_answer": "B",
+      "explanation": "Mr Hogan's analysis is incorrect. The requisite value test has two alternative limbs in limb 2: the value must exceed €65,000 OR exceed 10% of net assets. Because €95,000 exceeds €65,000, limb 2 is satisfied even though the 10% of net assets alternative (€200,000) is not met. Both limb alternatives are independent alternatives — satisfying EITHER one is sufficient to trigger S238 (provided the asset also exceeds €5,000, which it does). S238 approval is therefore required."
+    }
+  ]
+}

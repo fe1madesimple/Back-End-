@@ -1,0 +1,275 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "EquityLaw_ElevenLabs_Module05_Lesson03.txt",
+  "module_number": 5,
+  "module_title": "INJUNCTIONS",
+  "lesson_number": 3,
+  "lesson_title": "MANDATORY INJUNCTIONS",
+  "total_questions": 22,
+  "questions": [
+    {
+      "id": "EQL_M05_L03_Q01",
+      "question": "The key distinction between a mandatory injunction and a prohibitory injunction is:",
+      "options": {
+        "A": "A mandatory injunction is permanent; a prohibitory injunction is temporary",
+        "B": "A mandatory injunction compels the defendant to take positive action; a prohibitory injunction requires the defendant to refrain from doing something",
+        "C": "A mandatory injunction is only available in the High Court; a prohibitory injunction can be granted in the District Court",
+        "D": "A mandatory injunction requires the consent of both parties; a prohibitory injunction can be granted ex parte"
+      },
+      "correct_answer": "B",
+      "explanation": "A mandatory injunction compels the defendant to take positive action — typically to undo something already done, such as demolishing a structure. A prohibitory injunction, by contrast, requires the defendant to stop doing or refrain from doing something. Because mandatory injunctions require positive action and may be expensive, disruptive, and difficult to reverse, courts impose a higher threshold before granting them."
+    },
+    {
+      "id": "EQL_M05_L03_Q02",
+      "question": "Why do courts impose a higher threshold for granting mandatory injunctions compared to prohibitory injunctions?",
+      "options": {
+        "A": "Because mandatory injunctions are a statutory remedy and require Parliamentary authority",
+        "B": "Because mandatory injunctions are more drastic — they compel positive action which may be expensive, disruptive, and difficult to reverse",
+        "C": "Because mandatory injunctions cannot be appealed and are therefore subject to greater scrutiny at first instance",
+        "D": "Because the defendant has constitutional protection against being compelled to act"
+      },
+      "correct_answer": "B",
+      "explanation": "Mandatory injunctions carry a higher threshold because they are inherently more drastic than prohibitory injunctions. Ordering someone to take positive steps — demolishing a wall, rebuilding a structure, reinstating the original position — may be extremely expensive, highly disruptive, and irreversible. This severity justifies requiring the applicant to demonstrate a stronger case before the court will intervene in such a forceful way."
+    },
+    {
+      "id": "EQL_M05_L03_Q03",
+      "question": "The threshold for granting a mandatory interlocutory injunction is:",
+      "options": {
+        "A": "A fair issue to be tried, the same as for prohibitory injunctions",
+        "B": "A strong prima facie case — a higher standard than the ordinary Campus Oil first criterion",
+        "C": "Proof beyond reasonable doubt that the defendant has acted unlawfully",
+        "D": "A probability that the defendant will refuse to comply with any court order at trial"
+      },
+      "correct_answer": "B",
+      "explanation": "For a mandatory interlocutory injunction, the applicant must show a strong prima facie case — a higher standard than the ordinary Campus Oil 'fair issue to be tried' threshold. As confirmed in Charleton v Scriven in the Irish courts, the elevated standard reflects the severity of mandatory relief and the drastic nature of compelling positive action, particularly where the order would require demolition, rebuilding, or other irreversible steps."
+    },
+    {
+      "id": "EQL_M05_L03_Q04",
+      "question": "In Charleton v Scriven, the Irish courts confirmed that a mandatory interlocutory injunction requires:",
+      "options": {
+        "A": "The applicant to give a personal guarantee rather than an undertaking as to damages",
+        "B": "A strong prima facie case, particularly where the order would require demolition, rebuilding, or other irreversible action",
+        "C": "Evidence that the defendant acted with malicious intent",
+        "D": "An agreement between the parties submitted to the court confirming the mandatory nature of the relief sought"
+      },
+      "correct_answer": "B",
+      "explanation": "Charleton v Scriven is the leading Irish authority confirming the heightened threshold for mandatory interlocutory injunctions. The courts held that a strong prima facie case is required — not merely a fair issue to be tried. This is particularly important where the mandatory relief would require the defendant to demolish, rebuild, or take other irreversible steps, which may cause severe harm if the injunction turns out to have been wrongly granted."
+    },
+    {
+      "id": "EQL_M05_L03_Q05",
+      "question": "Mandatory injunctions arise most commonly in which type of dispute?",
+      "options": {
+        "A": "Intellectual property disputes over copyright infringement",
+        "B": "Construction disputes, for example where a party has built on another's land or erected a structure in breach of a restrictive covenant",
+        "C": "Employment disputes involving wrongful dismissal",
+        "D": "Family law disputes over division of matrimonial property"
+      },
+      "correct_answer": "B",
+      "explanation": "Mandatory injunctions arise most commonly in construction and property disputes — for example, where a party has built an extension on a neighbour's land, erected a structure in breach of a restrictive covenant, or blocked a right of way. In such cases, the court may be asked to order demolition or removal of the offending structure. However, the court will only order this where the case for doing so is compelling and the order is proportionate."
+    },
+    {
+      "id": "EQL_M05_L03_Q06",
+      "question": "Even where a breach of covenant is established, a court may decline to grant a mandatory injunction requiring demolition if:",
+      "options": {
+        "A": "The building has been completed and is currently occupied",
+        "B": "The cost and disruption would be wholly out of proportion to the harm suffered",
+        "C": "The applicant delayed more than six months before seeking the injunction",
+        "D": "The defendant has offered to pay nominal damages instead"
+      },
+      "correct_answer": "B",
+      "explanation": "Courts apply the equitable principle that remedies are discretionary and must be just. Even where a breach is established, a mandatory injunction requiring demolition may be refused if the cost and disruption to the defendant would be wholly disproportionate to the harm caused to the applicant. This proportionality consideration is a practical application of equitable discretion in mandatory injunction cases."
+    },
+    {
+      "id": "EQL_M05_L03_Q07",
+      "question": "A neighbour builds an extension that encroaches by 5cm onto the applicant's land. The applicant seeks a mandatory injunction requiring demolition of the entire extension at a cost of €200,000. The encroachment causes the applicant no practical difficulty. The court is likely to:",
+      "options": {
+        "A": "Grant the mandatory injunction as the applicant has an absolute property right",
+        "B": "Refuse the mandatory injunction on grounds of proportionality — the cost of demolition is wholly disproportionate to the trivial encroachment",
+        "C": "Grant the injunction only if the applicant can demonstrate they have suffered financial loss",
+        "D": "Order the defendant to pay the applicant the market value of the 5cm strip of land"
+      },
+      "correct_answer": "B",
+      "explanation": "Courts apply proportionality when considering whether to grant a mandatory injunction. A €200,000 demolition order for a 5cm encroachment causing no practical difficulty would be wholly disproportionate. The court would likely refuse the mandatory injunction and instead award damages in lieu of an injunction (under Lord Cairns' Act / Chancery Amendment Act principles). This illustrates the discretionary nature of equitable remedies."
+    },
+    {
+      "id": "EQL_M05_L03_Q08",
+      "question": "For FE-1 exam purposes, when a question involves a mandatory injunction, a candidate must first:",
+      "options": {
+        "A": "Apply the standard Campus Oil four-part test without modification",
+        "B": "Identify that the mandatory nature of the relief triggers a higher threshold — a strong prima facie case — and then address the modified balance of convenience with greater weight given to proportionality",
+        "C": "Advise the client to seek damages in lieu of the mandatory injunction as this is always preferable",
+        "D": "Determine whether the mandatory action has already been performed by the defendant"
+      },
+      "correct_answer": "B",
+      "explanation": "In FE-1 examination answers involving mandatory injunctions, the candidate must identify that the mandatory nature of the relief modifies the Campus Oil framework. The 'fair issue to be tried' is elevated to 'strong prima facie case,' and the balance of convenience must give even greater weight to the proportionality of the mandatory order, the cost and disruption to the defendant, and the severity of the breach. These modifications must be explicitly flagged and applied."
+    },
+    {
+      "id": "EQL_M05_L03_Q09",
+      "question": "A developer builds a wall in breach of a restrictive covenant protecting a neighbour's access to light. The neighbour seeks a mandatory injunction requiring demolition. The developer argues it would cost €500,000 to demolish. The neighbour's light loss is minimal. How should the court approach this?",
+      "options": {
+        "A": "Grant the injunction automatically as breach of a restrictive covenant is always remedied by mandatory injunction",
+        "B": "Apply a strong prima facie case threshold; consider proportionality — the substantial demolition cost against minimal harm — and consider whether damages in lieu would be more appropriate",
+        "C": "Refuse the injunction as the neighbour does not have a property right to light under Irish law",
+        "D": "Order the developer to pay the full value of the property including the wall and surrounding land"
+      },
+      "correct_answer": "B",
+      "explanation": "The court must apply the strong prima facie case threshold (Charleton v Scriven). On the proportionality analysis, the €500,000 demolition cost against minimal light loss raises a serious proportionality concern: the cost and disruption to the developer may be wholly disproportionate to the harm to the neighbour. The court would likely consider whether damages in lieu of an injunction would adequately compensate the neighbour, rather than order demolition. This is a classic mandatory injunction proportionality problem."
+    },
+    {
+      "id": "EQL_M05_L03_Q010",
+      "question": "The principle that 'remedies are discretionary and must be just' in the context of mandatory injunctions most directly reflects which maxim of equity?",
+      "options": {
+        "A": "He who comes to equity must come with clean hands",
+        "B": "Equity will not suffer a wrong to be without a remedy",
+        "C": "Equity acts in personam",
+        "D": "Equity does nothing in vain — it will not grant an order the consequences of which would be unjust or disproportionate"
+      },
+      "correct_answer": "D",
+      "explanation": "The proportionality consideration in mandatory injunctions reflects the equitable principle that equity does nothing in vain — it will not grant relief whose consequences are unjust, disproportionate, or impractical. This connects to the broader equitable discretion over remedies: courts balance the severity of the breach against the harshness of the remedy. Mandatory injunctions that would cause massive disruption out of all proportion to the harm are refused in favour of more proportionate relief such as damages."
+    },
+    {
+      "id": "EQL_M05_L03_Q011",
+      "question": "Which of the following scenarios would most clearly warrant a mandatory injunction as the appropriate remedy?",
+      "options": {
+        "A": "A tenant refuses to pay rent and the landlord wants the rent paid",
+        "B": "A developer has concreted over a public right of way in breach of a planning condition and the public interest requires it to be reinstated",
+        "C": "A former employee has taken confidential files and the employer wants them returned",
+        "D": "A creditor seeks payment of a debt that the debtor refuses to pay"
+      },
+      "correct_answer": "B",
+      "explanation": "Option B is the clearest case for a mandatory injunction: the developer has taken positive action (concreting over a right of way) in breach of a planning condition affecting public rights. The remedy requires positive action (reinstating the right of way) rather than merely stopping conduct. The public interest element strengthens the case, the breach is clear, and reinstating a right of way is a concrete, identifiable action. Options A and D are monetary claims; Option C raises issues about delivery up of documents rather than a classic mandatory injunction scenario."
+    },
+    {
+      "id": "EQL_M05_L03_Q012",
+      "question": "How does the balance of convenience analysis differ for a mandatory injunction compared to a standard prohibitory interlocutory injunction?",
+      "options": {
+        "A": "The balance of convenience is irrelevant for mandatory injunctions",
+        "B": "The balance of convenience is given even greater weight in mandatory injunction cases, and proportionality of the mandatory order is a specific additional consideration",
+        "C": "The balance of convenience always favours the applicant when a mandatory injunction is sought",
+        "D": "The balance of convenience for mandatory injunctions is assessed by the trial judge, not the judge hearing the interlocutory application"
+      },
+      "correct_answer": "B",
+      "explanation": "For mandatory injunctions, the balance of convenience carries even greater weight than in standard prohibitory injunction cases, and proportionality is a specific additional consideration. The court must weigh the cost and disruption to the defendant of taking the required positive steps against the harm to the applicant if the injunction is refused. Where the mandatory action would be hugely expensive or disruptive relative to the harm caused, the balance of convenience may tip against granting the order."
+    },
+    {
+      "id": "EQL_M05_L03_Q013",
+      "question": "A mandatory injunction is described as more 'drastic' than a prohibitory injunction. In practice, this drastic quality manifests in which way?",
+      "options": {
+        "A": "The defendant must comply immediately with no opportunity to appeal",
+        "B": "Compliance requires positive expenditure, effort, and action — not merely the passive restraint required by a prohibitory injunction",
+        "C": "Non-compliance with a mandatory injunction carries an automatic criminal sanction",
+        "D": "A mandatory injunction can only be granted by a High Court judge sitting in the Chancery division"
+      },
+      "correct_answer": "B",
+      "explanation": "The drastic quality of a mandatory injunction lies in the fact that compliance requires positive expenditure, effort, and action by the defendant — not merely the passive restraint (stopping doing something) required by a prohibitory injunction. Ordering someone to demolish a building, remove materials, or reinstate damaged property may require substantial resources and effort. This practical severity justifies the higher threshold of a strong prima facie case."
+    },
+    {
+      "id": "EQL_M05_L03_Q014",
+      "question": "The Campus Oil standard 'fair issue to be tried' is modified to 'strong prima facie case' for mandatory injunctions. Which of the following best illustrates a 'strong prima facie case'?",
+      "options": {
+        "A": "The applicant has filed proceedings and the case has not been struck out",
+        "B": "The applicant can demonstrate clear evidence of an established breach — such as a structural survey confirming encroachment — with detailed documentary proof",
+        "C": "The applicant has the support of a reputable firm of solicitors",
+        "D": "The applicant has previously succeeded in a related matter in another court"
+      },
+      "correct_answer": "B",
+      "explanation": "A 'strong prima facie case' for a mandatory injunction requires substantially more than a merely arguable claim. Clear, concrete evidence of an established breach — such as a structural survey confirming encroachment on the applicant's land — would satisfy this higher threshold. The court needs to be clearly satisfied that the applicant has a strong entitlement to the relief, given the drastic nature of the order. Mere filing of proceedings (Option A) satisfies only the 'fair issue to be tried' standard."
+    },
+    {
+      "id": "EQL_M05_L03_Q015",
+      "question": "A claimant seeks an interlocutory mandatory injunction requiring a defendant landlord to restore heating and hot water to a rented property the defendant has disconnected in breach of the lease. This is:",
+      "options": {
+        "A": "A prohibitory injunction as it prevents ongoing breach by the landlord",
+        "B": "A mandatory injunction as it compels the defendant to take positive action — reconnecting heating and hot water",
+        "C": "Neither a mandatory nor a prohibitory injunction — this is a specific performance claim",
+        "D": "A quia timet injunction as the harm has not yet been suffered"
+      },
+      "correct_answer": "B",
+      "explanation": "An injunction requiring a landlord to reconnect services that they have disconnected is a mandatory injunction — it compels the defendant to take positive action (physically reconnecting heating and hot water). The breach is already occurring (services are disconnected), so this is not a quia timet injunction. While there is overlap with specific performance of the lease obligations, the label 'mandatory injunction' is correct for this type of interlocutory order requiring positive action."
+    },
+    {
+      "id": "EQL_M05_L03_Q016",
+      "question": "In the context of mandatory injunctions, the court's consideration of proportionality is best understood as:",
+      "options": {
+        "A": "A standalone legal test that replaces the balance of convenience in mandatory cases",
+        "B": "A factor within the balance of convenience — the court weighs the cost and disruption to the defendant against the harm to the applicant to determine if the mandatory order would be just",
+        "C": "A constitutional requirement imposed by Article 40.3 of the Irish Constitution",
+        "D": "An alternative ground for refusing an injunction only where the defendant is a natural person rather than a company"
+      },
+      "correct_answer": "B",
+      "explanation": "Proportionality is a factor within the balance of convenience stage of the mandatory injunction analysis — it is not a separate standalone test. The court weighs the cost, disruption, and burden of the mandatory action on the defendant against the harm to the applicant if the injunction is refused. If the mandatory steps required would be wholly disproportionate to the harm caused by the breach, the balance of convenience may tip against granting the order."
+    },
+    {
+      "id": "EQL_M05_L03_Q017",
+      "question": "Where a court refuses a mandatory injunction on proportionality grounds, what alternative remedy may it award?",
+      "options": {
+        "A": "A declaration of breach with no monetary relief",
+        "B": "Damages in lieu of an injunction, under the equitable jurisdiction to award damages as a substitute for equitable relief",
+        "C": "An order requiring the defendant to lodge security with the court",
+        "D": "A suspended mandatory injunction operative only if the defendant repeats the breach"
+      },
+      "correct_answer": "B",
+      "explanation": "Where a mandatory injunction is refused on proportionality grounds, the court may award damages in lieu of an injunction. This jurisdiction (originating from Lord Cairns' Act / Chancery Amendment Act 1858, preserved in Irish equitable jurisdiction) allows the court to award damages as a substitute for equitable relief. Damages in lieu may be assessed on a different basis than ordinary common law damages, potentially reflecting the value of the right to insist on the mandatory order."
+    },
+    {
+      "id": "EQL_M05_L03_Q018",
+      "question": "Which of the following scenarios would a court be MOST likely to grant a mandatory injunction?",
+      "options": {
+        "A": "The applicant's neighbour erects a fence 2cm inside the applicant's boundary, causing no practical inconvenience",
+        "B": "A company has dumped toxic waste on the applicant's farmland in clear breach of environmental regulations, causing ongoing contamination of soil and water",
+        "C": "A developer's scaffolding overhangs the applicant's garden by 30cm for a period of one week during construction",
+        "D": "A neighbour's tree branches extend marginally over the applicant's wall at high level"
+      },
+      "correct_answer": "B",
+      "explanation": "Option B presents the strongest case for a mandatory injunction: there is a clear, serious breach (illegal toxic waste dumping); the harm is substantial and ongoing (soil and water contamination); the applicant has an urgent need for mandatory action (removal of the toxic waste); and the proportionality calculation strongly favours the applicant's interest in clean land over the cost to the defendant of removing the waste. Options A, C, and D involve minor or trivial intrusions where proportionality would likely counsel against mandatory relief."
+    },
+    {
+      "id": "EQL_M05_L03_Q019",
+      "question": "A defendant argues that complying with a mandatory injunction requiring them to reinstate a demolished building would cost €1.5 million and take 18 months. This argument goes primarily to which aspect of the mandatory injunction analysis?",
+      "options": {
+        "A": "Whether there is a strong prima facie case for the applicant",
+        "B": "The balance of convenience and proportionality — these factors weigh heavily against granting the order unless the harm to the applicant is of comparable severity",
+        "C": "Whether the applicant has given an adequate undertaking as to damages",
+        "D": "Whether the court has jurisdiction to make the order at all"
+      },
+      "correct_answer": "B",
+      "explanation": "The defendant's argument about cost (€1.5 million) and time (18 months) goes directly to the balance of convenience and proportionality analysis. These are precisely the kinds of factors the court weighs when assessing whether a mandatory injunction is appropriate. Unless the harm to the applicant of refusing the injunction is of comparable severity, the court may decline the mandatory order and award damages in lieu. This is the equitable principle that remedies must be proportionate and just."
+    },
+    {
+      "id": "EQL_M05_L03_Q020",
+      "question": "The 'strong prima facie case' threshold for mandatory injunctions is essentially a modified version of which Campus Oil criterion?",
+      "options": {
+        "A": "The undertaking as to damages",
+        "B": "The adequacy of damages",
+        "C": "The fair issue to be tried",
+        "D": "The balance of convenience"
+      },
+      "correct_answer": "C",
+      "explanation": "The 'strong prima facie case' is a modified, elevated version of the Campus Oil first criterion — 'fair issue to be tried.' For ordinary prohibitory interlocutory injunctions, the applicant need only show the claim is not frivolous. For mandatory interlocutory injunctions (and for the dispositive injunction exception from B and S Ltd), this threshold is elevated to require a strong prima facie case — something closer to a probability of success — reflecting the more drastic nature of the relief sought."
+    },
+    {
+      "id": "EQL_M05_L03_Q021",
+      "question": "An applicant seeks a mandatory injunction requiring a defendant to remove 50 tonnes of building rubble deposited on the applicant's land in clear breach of a written agreement. There is an unambiguous written agreement prohibiting the depositing of any materials. Which factors favour granting the mandatory injunction?",
+      "options": {
+        "A": "The existence of a written agreement only — no other factors matter",
+        "B": "Clear written evidence of breach satisfies the strong prima facie case; the continuing physical occupation of the applicant's land means damages may not be adequate; and removal of rubble, while burdensome, is proportionate to the serious breach",
+        "C": "The applicant's financial ability to fund the litigation",
+        "D": "The fact that the breach was intentional"
+      },
+      "correct_answer": "B",
+      "explanation": "This scenario presents a compelling case for a mandatory injunction: (1) the unambiguous written agreement satisfies the strong prima facie case threshold (clear evidence of breach); (2) the continuing physical occupation of the applicant's land means damages alone may not be an adequate remedy — the land remains unusable; (3) removal of rubble, while burdensome, is proportionate to the severity of the breach (50 tonnes of material on private land). All three key factors in the mandatory injunction analysis support granting the order."
+    },
+    {
+      "id": "EQL_M05_L03_Q022",
+      "question": "Which of the following statements most accurately describes the relationship between the Campus Oil test and the threshold for mandatory injunctions?",
+      "options": {
+        "A": "The Campus Oil test does not apply to mandatory injunctions — a completely separate test applies",
+        "B": "The Campus Oil framework applies but is modified: the first criterion is elevated from 'fair issue to be tried' to 'strong prima facie case,' and proportionality is an additional consideration in the balance of convenience",
+        "C": "Campus Oil applies in full without modification to both mandatory and prohibitory injunctions",
+        "D": "Mandatory injunctions are governed by statute and do not engage the Campus Oil equitable principles"
+      },
+      "correct_answer": "B",
+      "explanation": "The Campus Oil framework applies to mandatory injunctions but is modified in two key respects: (1) the first criterion is elevated from 'fair issue to be tried' to 'strong prima facie case,' reflecting the drastic nature of mandatory relief (Charleton v Scriven); and (2) proportionality is a specific additional consideration within the balance of convenience, requiring the court to weigh the cost and disruption of the mandatory action against the harm to the applicant. The Campus Oil structure is not abandoned — it is adapted."
+    }
+  ]
+}

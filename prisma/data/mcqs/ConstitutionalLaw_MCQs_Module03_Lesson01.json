@@ -1,0 +1,179 @@
+{
+  "subject": "Constitutional Law",
+  "el_script_ref": "ConstitutionalLaw_ElevenLabs_Module03_Lesson01.txt",
+  "module_number": 3,
+  "module_title": "Judicial Review and Constitutional Remedies",
+  "lesson_number": 1,
+  "lesson_title": "Grounds and Procedure of Judicial Review",
+  "total_questions": 14,
+  "questions": [
+    {
+      "id": "CON_M03_L01_Q01",
+      "question": "Under Order 84 of the Rules of the Superior Courts 1986, an application for leave to seek judicial review must generally be made promptly and in any event within how many months of the date of the decision?",
+      "options": {
+        "A": "One month",
+        "B": "Three months",
+        "C": "Six months",
+        "D": "Twelve months"
+      },
+      "correct_answer": "C",
+      "explanation": "Order 84, rule 21(1) RSC provides that an application for leave to apply for judicial review shall be made promptly and in any event within six months from the date when grounds for the application first arose. Shorter time limits apply in specific contexts (e.g., planning — eight weeks under the Planning and Development Act 2000). The court retains a discretion to extend time where there is good reason to do so."
+    },
+    {
+      "id": "CON_M03_L01_Q02",
+      "question": "The threshold for obtaining leave to apply for judicial review in Ireland requires the applicant to demonstrate:",
+      "options": {
+        "A": "A prima facie case that the decision is unlawful",
+        "B": "That it is arguable that a good ground for review exists (the arguable grounds standard)",
+        "C": "A likelihood of success on the merits exceeding 50%",
+        "D": "That the decision has caused actual damage to the applicant"
+      },
+      "correct_answer": "B",
+      "explanation": "The leave threshold in Ireland is that the applicant must demonstrate arguable grounds — i.e., that there is an arguable case that the impugned decision is invalid. This is a relatively low threshold (G v DPP [1994] 1 IR 374). The purpose is to filter out clearly unmeritorious applications without imposing a full merits assessment at the leave stage."
+    },
+    {
+      "id": "CON_M03_L01_Q03",
+      "question": "In State (Keegan) v Stardust Victims Compensation Tribunal [1986] IR 642, Henchy J articulated the Irish test for unreasonableness in judicial review. Which of the following best captures the Keegan/O'Keeffe standard?",
+      "options": {
+        "A": "The decision must be the most reasonable option open to the decision-maker on the evidence",
+        "B": "The decision must be so unreasonable that no reasonable decision-maker could have made it — the 'irrationality' standard",
+        "C": "The decision must be proportionate and necessary in a democratic society",
+        "D": "The decision must conform to the requirements of natural justice and fair procedures"
+      },
+      "correct_answer": "B",
+      "explanation": "The O'Keeffe v An Bord Pleanala [1993] 1 IR 39 / Keegan test is that a court may intervene where the decision is so unreasonable that no reasonable decision-maker would have reached it — sometimes described as 'irrationality' or 'manifest unreasonableness'. This is a high threshold that respects the decision-maker’s primary domain. It is distinct from the Wednesbury standard but in substance very similar."
+    },
+    {
+      "id": "CON_M03_L01_Q04",
+      "question": "Which of the following is a recognised ground of judicial review in Ireland developed by the courts?",
+      "options": {
+        "A": "Proportionality — applicable to all administrative decisions involving any interference with rights",
+        "B": "Legitimate expectation — where a public body has created a reasonable expectation through representation or practice",
+        "C": "Reasonableness of outcome — courts assess whether the correct decision was made on the merits",
+        "D": "Comparative deference — courts compare the decision with those of similar bodies in other jurisdictions"
+      },
+      "correct_answer": "B",
+      "explanation": "Legitimate expectation is a well-established ground of Irish judicial review: where a public authority has made a clear and unambiguous representation (by promise, policy or practice) that it will act in a particular way, the court may enforce that expectation unless the public interest requires otherwise. See Glencar Exploration plc v Mayo County Council [2002] 1 IR 84 (SC) per Fennelly J, setting out the requirements for a successful legitimate expectation claim."
+    },
+    {
+      "id": "CON_M03_L01_Q05",
+      "question": "Certiorari, mandamus and prohibition are the principal judicial review orders. Which of the following correctly matches each order with its function?",
+      "options": {
+        "A": "Certiorari quashes a decision; mandamus compels performance of a duty; prohibition prevents an unlawful act before it occurs",
+        "B": "Certiorari prevents future action; mandamus quashes past decisions; prohibition grants a declaration of rights",
+        "C": "Certiorari declares a decision void; mandamus orders the payment of damages; prohibition removes a decision-maker",
+        "D": "Certiorari stays proceedings; mandamus awards costs against the decision-maker; prohibition suspends a statutory power"
+      },
+      "correct_answer": "A",
+      "explanation": "Certiorari quashes (brings up and sets aside) a decision already made; mandamus commands a public body to perform a public duty it has failed to perform; prohibition prevents a body from proceeding with or completing an action it proposes to take unlawfully. A declaration (formerly a fourth prerogative remedy) states the legal position without directly compelling action. These are the classic remedies in O.84 RSC."
+    },
+    {
+      "id": "CON_M03_L01_Q06",
+      "question": "In Meadows v Minister for Justice [2010] IESC 3, the Supreme Court held that where fundamental rights are at stake in an administrative decision, the proportionality principle applies as a ground of review. This means:",
+      "options": {
+        "A": "The court replaces the decision-maker’s assessment of proportionality with its own on all questions of fact and law",
+        "B": "The court reviews whether the decision-maker properly considered proportionality and whether the restriction of rights is proportionate, applying a heightened standard of review",
+        "C": "Proportionality only applies where the decision involves criminal sanctions",
+        "D": "Proportionality review is limited to decisions of the Minister for Justice under immigration law"
+      },
+      "correct_answer": "B",
+      "explanation": "Meadows v Minister for Justice [2010] IESC 3 extended the proportionality standard of review to administrative decisions that affect constitutional rights. Where fundamental rights are engaged, the O’Keeffe irrationality standard gives way to a more intensive proportionality review: the court examines whether the impairment of rights is proportionate to the legitimate aim pursued. However, this remains a review for error of principle rather than a full merits reassessment."
+    },
+    {
+      "id": "CON_M03_L01_Q07",
+      "question": "The rule against bias (nemo iudex in causa sua) in Irish administrative law requires what standard of review for apparent bias?",
+      "options": {
+        "A": "The decision-maker had a subjective belief that they were not biased",
+        "B": "A reasonable and informed observer would have a reasonable apprehension of bias",
+        "C": "The decision-maker had a direct financial interest in the outcome of the decision",
+        "D": "The applicant can demonstrate that the outcome would have been different but for the bias"
+      },
+      "correct_answer": "B",
+      "explanation": "The test for apparent bias in Irish law is the objective apprehension test: would a reasonable observer, with knowledge of the relevant facts and circumstances, have a reasonable apprehension that the decision-maker might not bring an impartial mind to bear? (Bula Ltd v Tara Mines [2000] 4 IR 412 per Denham J; Dublin County Council v Balfe, unreported). Actual bias is not required — the appearance of impartiality matters."
+    },
+    {
+      "id": "CON_M03_L01_Q08",
+      "question": "Which of the following best describes the principle of audi alteram partem as applied in Irish judicial review?",
+      "options": {
+        "A": "Every person affected by an administrative decision must be given a full oral hearing with legal representation",
+        "B": "A person whose rights or legitimate interests are adversely affected by a decision must be given prior notice and a fair opportunity to be heard",
+        "C": "Both parties to a dispute must make written submissions before any decision can be made",
+        "D": "Public authorities must publish draft decisions for public comment before making final determinations"
+      },
+      "correct_answer": "B",
+      "explanation": "Audi alteram partem (hear the other side) requires that before a decision adversely affecting a person's rights or interests is made, that person must be given notice of the case against them and a fair opportunity to respond. The content of the required hearing varies with the nature of the decision and the interests at stake (the sliding scale): In Re Haughey [1971] IR 217; State (Gleeson) v Minister for Defence [1976] IR 280."
+    },
+    {
+      "id": "CON_M03_L01_Q09",
+      "question": "An applicant seeks judicial review of a planning decision on grounds of irrationality. The An Bord Pleanála inspector’s report supported refusal; the Board granted permission without giving reasons for departing from the report. What is the most relevant judicial review ground?",
+      "options": {
+        "A": "Illegality — the Board had no power to grant permission contrary to its inspector’s recommendation",
+        "B": "Failure to give reasons — where a decision departs from the inspector’s report, adequate reasons must be given",
+        "C": "Proportionality — the decision must be the least restrictive option consistent with planning objectives",
+        "D": "Legitimate expectation — the applicant was entitled to rely on the inspector’s recommendation as the outcome"
+      },
+      "correct_answer": "B",
+      "explanation": "Irish law (O’Donoghue v An Bord Pleanála [1991]; Mulholland v An Bord Pleanála [2005]) requires adequate reasons when a planning authority departs from its inspector’s report. Reasons must be intelligible, adequate and deal with substantial matters in controversy. Failure to give reasons constitutes a ground of review under the duty to give reasons — an aspect of natural justice/fair procedures."
+    },
+    {
+      "id": "CON_M03_L01_Q10",
+      "question": "The doctrine of 'legitimate expectation' in Irish law was authoritatively restated in Glencar Exploration plc v Mayo County Council [2002] 1 IR 84. Which of the following conditions did Fennelly J identify as necessary for a successful claim?",
+      "options": {
+        "A": "The representation must be made in writing by a senior official of the public body",
+        "B": "The applicant must have suffered quantifiable financial loss in reliance on the representation",
+        "C": "There must be a clear and unambiguous representation by the public body, actual or reasonably anticipated reliance, and it must be fair in all the circumstances to uphold the expectation",
+        "D": "The representation must have been confirmed by the relevant Minister and published in Iris Oifigiúil"
+      },
+      "correct_answer": "C",
+      "explanation": "Fennelly J in Glencar identified three elements: (1) a clear and unambiguous representation (by promise, practice or policy) by the public authority; (2) actual or reasonably anticipated reliance by the applicant on that representation; (3) it must be fair, in all the circumstances, to uphold the expectation (this includes considering the public interest). The remedy may be procedural (consultation before departure) or substantive (enforcement of the expectation)."
+    },
+    {
+      "id": "CON_M03_L01_Q11",
+      "question": "In judicial review proceedings, what is the significance of the distinction between 'jurisdictional error' and 'error within jurisdiction' historically, and how has Irish law approached this distinction?",
+      "options": {
+        "A": "Jurisdictional errors were always reviewable; errors within jurisdiction were only reviewable if a privative clause was absent — Irish law now generally reviews all errors of law on the face of the record",
+        "B": "Irish courts have maintained a strict distinction: only jurisdictional errors are reviewable; errors within jurisdiction are immune from review",
+        "C": "Irish law follows the English position in Anisminic [1969] that any error of law goes to jurisdiction, making all errors reviewable",
+        "D": "The distinction is codified in the Courts of Justice Act 1936 and applies to all inferior courts and tribunals"
+      },
+      "correct_answer": "C",
+      "explanation": "Following the English decision in Anisminic v Foreign Compensation Commission [1969] 2 AC 147, Irish law has broadly adopted the position that errors of law by inferior courts and tribunals may be reviewable without strict reliance on the old jurisdictional/intra-jurisdictional distinction. O'Keeffe v An Bord Pleanála [1993] and subsequent cases confirm that Irish courts can review errors of law, though with varying intensity depending on expertise of the tribunal and the nature of the question."
+    },
+    {
+      "id": "CON_M03_L01_Q12",
+      "question": "A statutory scheme contains a privative clause stating: 'A decision under this Act shall be final and conclusive and shall not be questioned in any court.' Under Irish constitutional law, what is the effect of such a clause?",
+      "options": {
+        "A": "The clause is fully effective and bars all judicial review",
+        "B": "The clause bars review for errors within jurisdiction but does not exclude review for jurisdictional error or constitutional invalidity",
+        "C": "The clause is constitutionally invalid because Article 34.1 guarantees a constitutional right of access to the courts that cannot be removed by statute",
+        "D": "The clause is effective only for decisions of the High Court but not for administrative tribunals"
+      },
+      "correct_answer": "C",
+      "explanation": "In Irish constitutional law, a privative clause cannot completely oust the judicial review jurisdiction of the High Court because Article 34.1 vests judicial power in the courts, and Art. 34.3.1° guarantees the right of access to the High Court. A statutory clause purporting to exclude all judicial review is unconstitutional to the extent it bars constitutional review. The courts will, however, read such clauses narrowly to restrict review to the minimum constitutionally required."
+    },
+    {
+      "id": "CON_M03_L01_Q13",
+      "question": "What does the public law/private law divide mean in the context of Irish judicial review, and what is the consequence of proceeding by judicial review rather than by plenary summons where private law rights are at stake?",
+      "options": {
+        "A": "Private law rights cannot be vindicated in any way through judicial review; the claim must always be brought by plenary summons",
+        "B": "Where the claim is essentially a private law claim, it should be brought by plenary summons; using judicial review inappropriately may result in dismissal, but the court has a discretion to allow proceedings to continue or transfer to plenary action",
+        "C": "O.84 RSC prohibits any claim involving contractual rights from being brought by way of judicial review",
+        "D": "The distinction is now abolished — all claims against public bodies must be brought by way of judicial review under O.84 RSC"
+      },
+      "correct_answer": "B",
+      "explanation": "Irish courts have adopted the O.84 RSC framework which applies to the exercise of public law functions. Where a claimant’s complaint is essentially about private law rights (e.g., contract, tort), judicial review may be inappropriate. The court has a discretion to dismiss or transfer proceedings to plenary action. However, Irish courts are less strict about this distinction than English courts following O'Reilly v Mackman [1983] — see Geoghegan J in Blascaod Mór Teoranta v Commissioners of Public Works [2000]."
+    },
+    {
+      "id": "CON_M03_L01_Q14",
+      "question": "A public body makes a decision affecting a person's livelihood. The person claims they were given inadequate notice of the hearing and insufficient time to prepare submissions. The court accepts that the hearing was procedurally deficient. What is the court most likely to consider before granting an order of certiorari?",
+      "options": {
+        "A": "Whether the applicant appealed through any available statutory appeals mechanism before seeking judicial review",
+        "B": "Whether the procedural defect necessarily affected the outcome, since certiorari will be refused if the outcome would have been the same",
+        "C": "Whether the applicant had legal representation at the original hearing",
+        "D": "Both A and B, plus whether it would be futile to remit the matter for rehearing"
+      },
+      "correct_answer": "D",
+      "explanation": "The court considers multiple factors in exercising its discretion to grant certiorari even where grounds are established: (1) exhaustion of alternative remedies — judicial review is a remedy of last resort; (2) whether the procedural defect was prejudicial or would have changed the outcome (though procedural unfairness does not always require a causation showing — the right is to a fair process); (3) futility — certiorari may be refused if remittal for rehearing would be pointless. Judicial review remedies are always discretionary."
+    }
+  ]
+}

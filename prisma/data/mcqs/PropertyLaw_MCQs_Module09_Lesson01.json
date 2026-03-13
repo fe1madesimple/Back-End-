@@ -1,0 +1,611 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "PropertyLaw_ElevenLabs_Module09_Lesson01.txt",
+  "module_number": 9,
+  "module_title": "Landlord and Tenant",
+  "lesson_number": 1,
+  "lesson_title": "Landlord and Tenant: Leases and Licences, Covenants, and Residential Tenancy Law",
+  "total_questions": 50,
+  "questions": [
+    {
+      "id": "PRL_M09_L01_Q01",
+      "question": "In Street v Mountford [1985], Lord Templeman identified the key test for distinguishing a tenancy from a licence. What are the three essential elements of that test?",
+      "options": {
+        "A": "Exclusive possession, a fixed or periodic term, and the payment of rent",
+        "B": "A written agreement, a registered title, and exclusive possession",
+        "C": "The intention of the parties, the payment of a premium, and exclusive use",
+        "D": "Exclusive use, notice to quit, and periodic payment"
+      },
+      "correct_answer": "A",
+      "explanation": "In Street v Mountford [1985] HL, Lord Templeman held that where an occupier is granted exclusive possession of property for a fixed or periodic term at a rent, the legal consequence is a tenancy — regardless of the label applied. The three elements are: exclusive possession, a term, and rent."
+    },
+    {
+      "id": "PRL_M09_L01_Q02",
+      "question": "In Street v Mountford [1985], why is exclusive possession the most critical element for identifying a tenancy?",
+      "options": {
+        "A": "Because exclusive possession is the only element that can be agreed without a formal deed",
+        "B": "Because exclusive possession is the hallmark of a tenancy — a licensee does not have the right to exclude the landowner, but a tenant does",
+        "C": "Because exclusive possession determines the duration of the occupier's interest",
+        "D": "Because exclusive possession triggers the application of rent pressure zone legislation"
+      },
+      "correct_answer": "B",
+      "explanation": "Exclusive possession is the hallmark of a tenancy — it means the occupier has the right to exclude all others, including the landlord, from the property for the duration of the term. A mere licensee has no such right. Lord Templeman held in Street v Mountford that exclusive possession, combined with a term and rent, creates a tenancy irrespective of what the agreement is called."
+    },
+    {
+      "id": "PRL_M09_L01_Q03",
+      "question": "What is the fundamental principle established by Street v Mountford [1985] regarding the label applied to an occupancy agreement?",
+      "options": {
+        "A": "The label chosen by the parties determines whether the agreement is a lease or a licence",
+        "B": "The label is only relevant where there is ambiguity about the level of rent agreed",
+        "C": "Substance prevails over form — if the three elements of a tenancy are present, the agreement is a tenancy regardless of the label applied",
+        "D": "The label is determinative in the residential context but not in commercial arrangements"
+      },
+      "correct_answer": "C",
+      "explanation": "Street v Mountford [1985] established that substance prevails over form. A landlord cannot escape statutory tenant protections simply by labelling an agreement a licence. If the occupier has exclusive possession for a term at a rent, the agreement is a tenancy in law regardless of what the document calls it."
+    },
+    {
+      "id": "PRL_M09_L01_Q04",
+      "question": "Deasy's Act — the Landlord and Tenant Law Amendment Act (Ireland) 1860 — provides that the relationship of landlord and tenant in Ireland arises from:",
+      "options": {
+        "A": "The registration of the tenancy in the Land Registry",
+        "B": "The payment of a year's rent by the tenant to the landlord",
+        "C": "The granting of exclusive possession under a formal deed",
+        "D": "Contract — from the express or implied agreement of the parties"
+      },
+      "correct_answer": "D",
+      "explanation": "Deasy's Act 1860 provides that the relationship of landlord and tenant in Ireland arises from contract — from the express or implied agreement of the parties. This is a distinct conceptual basis from English law, which rests on the common law concept of tenure."
+    },
+    {
+      "id": "PRL_M09_L01_Q05",
+      "question": "What is the significance of Deasy's Act 1860 having a contractual rather than tenure-based foundation for the landlord and tenant relationship in Ireland?",
+      "options": {
+        "A": "It means that any agreement to share land creates a landlord and tenant relationship in Irish law",
+        "B": "It means the landlord and tenant relationship in Ireland rests on the agreement of the parties rather than on the feudal concept of tenure, making Ireland's approach conceptually distinct from English land law",
+        "C": "It means that Irish landlord and tenant relationships must always be in writing to be enforceable",
+        "D": "It means that the common law rules about tenure apply in Ireland but are supplemented by additional contractual rights"
+      },
+      "correct_answer": "B",
+      "explanation": "Deasy's Act 1860 is significant because it grounds the landlord and tenant relationship in Ireland in contract — the express or implied agreement of the parties — rather than in the English common law concept of tenure. This makes Ireland's conceptual approach distinctive, though in practice the practical rules are often similar."
+    },
+    {
+      "id": "PRL_M09_L01_Q06",
+      "question": "Walsh v Lonsdale [1882] established which principle regarding an agreement for a lease where all terms have been agreed but the formal deed has not yet been executed?",
+      "options": {
+        "A": "The agreement has no legal effect until the formal deed is executed",
+        "B": "In equity, an agreement for a lease where all terms are agreed is treated as if the formal lease had already been executed",
+        "C": "The agreement creates a periodic tenancy at common law for the period of occupation",
+        "D": "The agreement entitles the landlord to recover possession immediately if the formal deed is not completed"
+      },
+      "correct_answer": "B",
+      "explanation": "Walsh v Lonsdale [1882] established the equitable principle that an agreement for a lease — where all terms are agreed — is treated in equity as if the formal lease had been executed. This reflects the maxim that equity treats as done that which ought to be done. It is practically significant where parties have agreed all terms but have not completed the formal deed."
+    },
+    {
+      "id": "PRL_M09_L01_Q07",
+      "question": "The maxim underlying Walsh v Lonsdale [1882] is:",
+      "options": {
+        "A": "He who comes to equity must come with clean hands",
+        "B": "Delay defeats equity",
+        "C": "Equity treats as done that which ought to be done",
+        "D": "Equity follows the law"
+      },
+      "correct_answer": "C",
+      "explanation": "The equitable principle applied in Walsh v Lonsdale [1882] is the maxim that equity treats as done that which ought to be done. Because the parties had agreed all the terms of the lease, equity treated it as if the formal deed had been executed — giving the tenant equitable rights under the agreement notwithstanding the absence of a formal grant."
+    },
+    {
+      "id": "PRL_M09_L01_Q08",
+      "question": "Spencer's Case [1583] established which principle regarding leasehold covenants?",
+      "options": {
+        "A": "A landlord can enforce the original tenant's covenants against a sub-tenant in all circumstances",
+        "B": "Leasehold covenants are personal and cannot be enforced against assignees of the lease",
+        "C": "Only covenants relating to payment of rent can pass to successors in title of a lease",
+        "D": "Covenants in a lease that touch and concern the land pass between successors in title — binding assignees of the lease and of the reversion"
+      },
+      "correct_answer": "D",
+      "explanation": "Spencer's Case [1583] established that leasehold covenants that touch and concern the land pass between successors in title. Covenants to pay rent, to repair, and not to assign without consent all touch and concern the land and will bind assignees of the lease and of the reversion — not just the original parties."
+    },
+    {
+      "id": "PRL_M09_L01_Q09",
+      "question": "Under Spencer's Case [1583], what must a covenant do to be capable of passing between successors in title of a lease?",
+      "options": {
+        "A": "It must touch and concern the land — that is, it must benefit or burden the land itself rather than merely the personal interests of the original parties",
+        "B": "It must be expressly assigned with the lease when the lease is transferred",
+        "C": "It must be registered as a burden on the freehold title in the Land Registry",
+        "D": "It must be agreed in writing and witnessed by at least two witnesses"
+      },
+      "correct_answer": "A",
+      "explanation": "For a covenant to pass between successors under Spencer's Case [1583], it must touch and concern the land — it must benefit or burden the land itself, not merely the personal interests of the original landlord or tenant. Covenants to pay rent, to repair, and not to assign without consent all satisfy this requirement."
+    },
+    {
+      "id": "PRL_M09_L01_Q10",
+      "question": "Which of the following covenants in a lease would satisfy the touch and concern test under Spencer's Case [1583]?",
+      "options": {
+        "A": "A covenant by the landlord to give the tenant a personal loan to refurbish the premises",
+        "B": "A covenant by the tenant to pay rent and to keep the property in good repair",
+        "C": "A covenant by the tenant to name the landlord as executor of their will",
+        "D": "A covenant by the landlord to secure employment for the tenant's family members"
+      },
+      "correct_answer": "B",
+      "explanation": "Covenants to pay rent and to keep the property in repair are paradigm examples of covenants that touch and concern the land under Spencer's Case [1583]. They directly relate to the subject matter of the lease and the occupation of the land, and will bind assignees of the lease and of the reversion."
+    },
+    {
+      "id": "PRL_M09_L01_Q11",
+      "question": "Under the Residential Tenancies Act 2004, Part 4 gives tenants in residential tenancies security of tenure. When does a Part 4 tenancy arise?",
+      "options": {
+        "A": "Immediately upon the commencement of the tenancy",
+        "B": "After three months of continuous occupation",
+        "C": "Once the tenancy has lasted for six continuous months",
+        "D": "After twelve months of continuous occupation"
+      },
+      "correct_answer": "C",
+      "explanation": "Part 4 of the Residential Tenancies Act 2004 gives tenants security of tenure once the tenancy has lasted for six continuous months. Following the 2021 amendments, Part 4 tenancies are now of unlimited duration — the previous six-year renewal cycle was abolished."
+    },
+    {
+      "id": "PRL_M09_L01_Q12",
+      "question": "Under Part 4 of the Residential Tenancies Act 2004 as amended, once a tenant has been in occupation for six months, their Part 4 tenancy:",
+      "options": {
+        "A": "Continues for a fixed period of six years before renewal is required",
+        "B": "Automatically converts to a fixed-term tenancy of three years",
+        "C": "Can be terminated by the landlord at any time on one month's notice",
+        "D": "Continues for an unlimited duration and can only be terminated on one of the statutory grounds"
+      },
+      "correct_answer": "D",
+      "explanation": "Following the 2021 amendments to the Residential Tenancies Act 2004, Part 4 tenancies are now of unlimited duration. There is no longer a six-year renewal cycle. Once the tenant has been in occupation for six months, their tenancy continues until it is validly terminated on one of the fourteen specified statutory grounds."
+    },
+    {
+      "id": "PRL_M09_L01_Q13",
+      "question": "What significant change did the 2021 amendments to the Residential Tenancies Act 2004 make to Part 4 tenancies that represented a fundamental shift in residential security of tenure?",
+      "options": {
+        "A": "Part 4 tenancies were given unlimited duration, replacing the previous six-year renewable cycle",
+        "B": "The qualifying period for Part 4 was reduced from twelve months to six months",
+        "C": "The number of statutory termination grounds was reduced from twenty-one to fourteen",
+        "D": "All existing Part 4 tenancies were automatically converted to fixed-term tenancies of ten years"
+      },
+      "correct_answer": "A",
+      "explanation": "The 2021 amendments to the Residential Tenancies Act 2004 made Part 4 tenancies of unlimited duration, replacing the previous six-year cycle. Once a tenant qualifies for Part 4 after six months, their tenancy now continues indefinitely and can only be ended on one of the statutory grounds. This is one of the most significant reforms to Irish residential tenancy law."
+    },
+    {
+      "id": "PRL_M09_L01_Q14",
+      "question": "A landlord can only terminate a Part 4 tenancy under the Residential Tenancies Act 2004 on one of how many specified statutory grounds?",
+      "options": {
+        "A": "Six",
+        "B": "Fourteen",
+        "C": "Twenty-one",
+        "D": "Ten"
+      },
+      "correct_answer": "B",
+      "explanation": "Following the 2021 amendments to the Residential Tenancies Act 2004, a landlord can only terminate a Part 4 tenancy on one of fourteen specified statutory grounds. The landlord cannot simply decide to end the tenancy without a valid statutory ground."
+    },
+    {
+      "id": "PRL_M09_L01_Q15",
+      "question": "Which of the following is one of the statutory grounds on which a landlord can terminate a Part 4 tenancy under the Residential Tenancies Act 2004?",
+      "options": {
+        "A": "The landlord wishes to refurbish the property for a higher rental return",
+        "B": "The tenant has had the property for more than six years",
+        "C": "The tenant has breached their obligations under the tenancy",
+        "D": "The landlord wishes to increase the rent and the tenant refuses to agree"
+      },
+      "correct_answer": "C",
+      "explanation": "Tenant breach is one of the fourteen statutory grounds on which a landlord may terminate a Part 4 tenancy. Other key grounds include intention to sell, landlord's own occupation or family occupation, and intention to substantially renovate the property. A desire to achieve a higher rent or the mere passage of time is not a statutory ground."
+    },
+    {
+      "id": "PRL_M09_L01_Q16",
+      "question": "Which of the following is also a statutory ground for terminating a Part 4 tenancy under the Residential Tenancies Act 2004?",
+      "options": {
+        "A": "The landlord discovers the tenant earns above a specified income threshold",
+        "B": "The tenancy has reached the end of an agreed fixed-term period",
+        "C": "The tenant has sublet one room without the landlord's written consent",
+        "D": "The landlord intends to sell the property"
+      },
+      "correct_answer": "D",
+      "explanation": "Intention to sell the property is one of the fourteen statutory grounds for terminating a Part 4 tenancy. The landlord must serve a valid notice of termination specifying the statutory ground and comply with the prescribed notice periods. A landlord who claims intention to sell but does not proceed may face RTB proceedings."
+    },
+    {
+      "id": "PRL_M09_L01_Q17",
+      "question": "Which of the following is a further statutory ground for terminating a Part 4 tenancy under the Residential Tenancies Act 2004?",
+      "options": {
+        "A": "The landlord's own occupation of the property or occupation by a member of the landlord's family",
+        "B": "The landlord's desire to redecorate the property between tenancies",
+        "C": "The tenant refusing to allow the landlord access for annual inspections",
+        "D": "The property increasing in value such that the landlord wishes to sell for capital gain"
+      },
+      "correct_answer": "A",
+      "explanation": "Landlord's own occupation or occupation by a member of the landlord's family is a statutory ground for termination of a Part 4 tenancy. The landlord must have a genuine intention to occupy and must comply with conditions attaching to this ground. Redecoration alone is not a ground — substantial renovation is the relevant ground."
+    },
+    {
+      "id": "PRL_M09_L01_Q18",
+      "question": "As of 2024, what is the geographic scope of Rent Pressure Zone designation in Ireland?",
+      "options": {
+        "A": "Only the five largest cities: Dublin, Cork, Limerick, Galway, and Waterford",
+        "B": "The entire country of Ireland is designated as a Rent Pressure Zone",
+        "C": "Designated urban areas with populations exceeding 20,000",
+        "D": "Only areas where average rents exceed a specified national threshold"
+      },
+      "correct_answer": "B",
+      "explanation": "As of 2024, the entire country of Ireland is designated as a Rent Pressure Zone. This means the RPZ rent caps apply to all residential tenancies throughout the country, not just in specified urban areas."
+    },
+    {
+      "id": "PRL_M09_L01_Q19",
+      "question": "Under the Rent Pressure Zone regime, at what rate are annual rent increases capped?",
+      "options": {
+        "A": "Five percent per year",
+        "B": "Three percent per year",
+        "C": "Two percent per year, or the Harmonised Index of Consumer Prices if that is lower",
+        "D": "The rate of inflation as measured by the Consumer Price Index without any cap"
+      },
+      "correct_answer": "C",
+      "explanation": "In a Rent Pressure Zone, rent increases are capped at two percent per year, or the Harmonised Index of Consumer Prices (HICP) if that figure is lower. The cap is designed to prevent excessive rent increases in areas of high demand."
+    },
+    {
+      "id": "PRL_M09_L01_Q20",
+      "question": "Under the Rent Pressure Zone regime, what is the significance of the Harmonised Index of Consumer Prices (HICP)?",
+      "options": {
+        "A": "The HICP sets the minimum rent increase a landlord may apply annually",
+        "B": "The HICP is the benchmark used to calculate market rent in RPZ areas",
+        "C": "The HICP is the preferred method of calculating rent in all residential tenancies regardless of RPZ status",
+        "D": "If the HICP is lower than two percent, the lower HICP rate applies as the rent increase cap in an RPZ"
+      },
+      "correct_answer": "D",
+      "explanation": "Under the RPZ regime, rent increases are capped at the lower of two percent per year or the HICP. Where inflation as measured by the HICP is below two percent, the HICP figure applies as the ceiling. The rule is: whichever of the two figures is lower is the applicable cap."
+    },
+    {
+      "id": "PRL_M09_L01_Q21",
+      "question": "Under the Rent Pressure Zone provisions of the Residential Tenancies Act 2004, how frequently may a landlord review the rent in an RPZ?",
+      "options": {
+        "A": "Once every six months",
+        "B": "Twice per year with three months notice each time",
+        "C": "At any time, provided the total annual increase does not exceed the RPZ cap",
+        "D": "No more than once every twelve months"
+      },
+      "correct_answer": "D",
+      "explanation": "Under the RPZ regime, rent may only be reviewed once every twelve months. A landlord cannot circumvent the cap by conducting multiple reviews within a twelve-month period. Each review is subject to the two percent cap (or HICP if lower)."
+    },
+    {
+      "id": "PRL_M09_L01_Q22",
+      "question": "What is the Residential Tenancies Board (RTB) and what is its primary function?",
+      "options": {
+        "A": "A government body that sets rent levels for all residential properties in Ireland",
+        "B": "The statutory dispute resolution body established under the Residential Tenancies Act 2004 to resolve residential tenancy disputes",
+        "C": "A court with jurisdiction to make possession orders against tenants in arrears",
+        "D": "A registration authority for landlords operating in Rent Pressure Zones only"
+      },
+      "correct_answer": "B",
+      "explanation": "The Residential Tenancies Board (RTB) is the statutory body established under the Residential Tenancies Act 2004 to register tenancies and resolve residential tenancy disputes. All residential tenancy disputes are dealt with through the RTB process — not through the ordinary courts."
+    },
+    {
+      "id": "PRL_M09_L01_Q23",
+      "question": "Under the Residential Tenancies Act 2004, what obligation does a landlord have in relation to registration of the tenancy?",
+      "options": {
+        "A": "Landlords must register their tenancy only if it is subject to a rent increase review",
+        "B": "Landlords must register only where the tenant requests it",
+        "C": "All tenancies must be registered with the Residential Tenancies Board",
+        "D": "Registration is voluntary but recommended for landlords who wish to use the RTB dispute resolution process"
+      },
+      "correct_answer": "C",
+      "explanation": "Under the Residential Tenancies Act 2004, all residential tenancies must be registered with the RTB. Registration is a mandatory statutory obligation for landlords. Failure to register can have consequences for the landlord, including in enforcement proceedings."
+    },
+    {
+      "id": "PRL_M09_L01_Q24",
+      "question": "What is the correct sequence of the RTB dispute resolution process under the Residential Tenancies Act 2004?",
+      "options": {
+        "A": "High Court hearing, then RTB mediation, then adjudication",
+        "B": "District Court, Circuit Court, then RTB Tribunal",
+        "C": "RTB adjudication, then appeal to the High Court on fact and law",
+        "D": "Mediation, then adjudication, then the Tenancy Tribunal, with appeal to the High Court on a point of law only"
+      },
+      "correct_answer": "D",
+      "explanation": "The RTB dispute resolution process proceeds through four stages: first mediation; then adjudication by a single adjudicator; then the Tenancy Tribunal (a three-person panel); and finally an appeal to the High Court — but only on a point of law. There is no appeal on the merits of the facts to the High Court."
+    },
+    {
+      "id": "PRL_M09_L01_Q25",
+      "question": "Which legislation abolished the remedy of distress for rent — the landlord's right to seize and sell a tenant's goods in lieu of unpaid rent — in Ireland?",
+      "options": {
+        "A": "The Land and Conveyancing Law Reform Act 2009",
+        "B": "The Residential Tenancies Act 2004",
+        "C": "Deasy's Act 1860",
+        "D": "The Civil Law (Miscellaneous Provisions) Act 2011"
+      },
+      "correct_answer": "A",
+      "explanation": "Distress for rent — the ancient remedy allowing a landlord to seize a tenant's goods in satisfaction of unpaid rent — was abolished in Ireland by the Land and Conveyancing Law Reform Act 2009. This is a significant change noted in exam tips: candidates should state clearly that distress no longer exists as a remedy."
+    },
+    {
+      "id": "PRL_M09_L01_Q26",
+      "question": "In which year was Street v Mountford decided by the House of Lords?",
+      "options": {
+        "A": "1979",
+        "B": "1985",
+        "C": "1982",
+        "D": "1990"
+      },
+      "correct_answer": "B",
+      "explanation": "Street v Mountford was decided by the House of Lords in 1985. Lord Templeman delivered the leading judgment, which remains the foundational authority for distinguishing a tenancy from a licence in both English and Irish law."
+    },
+    {
+      "id": "PRL_M09_L01_Q27",
+      "question": "In Street v Mountford [1985], Lord Templeman held that where an occupier is granted exclusive possession for a term at a rent, the legal consequence is a tenancy. Which of the following scenarios would most clearly satisfy this test?",
+      "options": {
+        "A": "A hotel guest who pays nightly charges and shares facilities with other guests",
+        "B": "A friend who is given permission to stay in a spare room for a few days without paying",
+        "C": "An occupier who is given exclusive use of a self-contained flat for twelve months at a fixed weekly rent",
+        "D": "A family member who informally moves into a house without any agreement on duration or payment"
+      },
+      "correct_answer": "C",
+      "explanation": "An occupier given exclusive use of a self-contained flat for twelve months at a fixed weekly rent clearly satisfies all three elements of the Street v Mountford test: exclusive possession, a fixed term, and rent. This arrangement would be a tenancy regardless of any label applied to the agreement."
+    },
+    {
+      "id": "PRL_M09_L01_Q28",
+      "question": "A landlord drafts an agreement titled Licence to Occupy, providing that the occupier has exclusive use of a two-bedroom flat for six months at a weekly payment. What is the legal consequence under Street v Mountford [1985]?",
+      "options": {
+        "A": "The agreement is a licence because it is expressly labelled as such",
+        "B": "The agreement is a licence because it is for a short fixed term only",
+        "C": "The agreement is ambiguous — the court will consider the intention of the parties to determine its nature",
+        "D": "Notwithstanding the label, the agreement is a tenancy because all three elements of exclusive possession, a term, and rent are present"
+      },
+      "correct_answer": "D",
+      "explanation": "Under Street v Mountford [1985], the label applied to the agreement is irrelevant. If the three elements — exclusive possession, a fixed or periodic term, and rent — are present, the legal consequence is a tenancy. A landlord cannot evade the statutory protections conferred on tenants by calling an agreement a licence."
+    },
+    {
+      "id": "PRL_M09_L01_Q29",
+      "question": "In which year was Deasy's Act — the Landlord and Tenant Law Amendment Act (Ireland) — enacted?",
+      "options": {
+        "A": "1860",
+        "B": "1876",
+        "C": "1921",
+        "D": "1958"
+      },
+      "correct_answer": "A",
+      "explanation": "Deasy's Act — the Landlord and Tenant Law Amendment Act (Ireland) — was enacted in 1860. It provides that the relationship of landlord and tenant in Ireland arises from the express or implied agreement of the parties, giving the Irish landlord and tenant relationship a contractual rather than tenure-based foundation."
+    },
+    {
+      "id": "PRL_M09_L01_Q30",
+      "question": "Walsh v Lonsdale [1882] is significant in landlord and tenant law because it established that in equity:",
+      "options": {
+        "A": "A landlord can recover possession without a court order where the tenant breaches the lease",
+        "B": "An agreement for a lease, once all terms are agreed, is treated as if the formal lease had been executed",
+        "C": "A lease must be in writing to be enforceable against a purchaser of the landlord's interest",
+        "D": "A tenant can only enforce the terms of the lease once it has been registered in the Land Registry"
+      },
+      "correct_answer": "B",
+      "explanation": "Walsh v Lonsdale [1882] established that in equity, an agreement for a lease — where all terms have been agreed — is treated as if the formal lease had been executed. The maxim is that equity treats as done that which ought to be done. This is important in practice where parties have agreed all terms but have not yet completed the formal deed."
+    },
+    {
+      "id": "PRL_M09_L01_Q31",
+      "question": "Spencer's Case is a foundational authority in leasehold law. In which year was it decided?",
+      "options": {
+        "A": "1776",
+        "B": "1882",
+        "C": "1583",
+        "D": "1835"
+      },
+      "correct_answer": "C",
+      "explanation": "Spencer's Case was decided in 1583. Despite its antiquity, it remains a foundational authority on the passing of leasehold covenants between successors in title. Its central principle — that covenants which touch and concern the land pass with the lease and the reversion — continues to apply in Irish and English law."
+    },
+    {
+      "id": "PRL_M09_L01_Q32",
+      "question": "An assignee of a lease takes an assignment of the tenant's interest. Which of the following obligations from the original lease will bind the assignee?",
+      "options": {
+        "A": "All obligations, including purely personal obligations of the original tenant",
+        "B": "Only obligations that relate to payment of rent",
+        "C": "No obligations — the original tenant remains solely liable for all covenants",
+        "D": "Only covenants that touch and concern the land, such as covenants to pay rent, to repair, and not to assign without consent"
+      },
+      "correct_answer": "D",
+      "explanation": "Under Spencer's Case [1583], only covenants that touch and concern the land pass to the assignee of the lease. Covenants to pay rent, to repair, and not to assign without consent all touch and concern the land and will bind the assignee. Purely personal covenants between the original parties do not pass."
+    },
+    {
+      "id": "PRL_M09_L01_Q33",
+      "question": "In which year was the Residential Tenancies Act 2004 enacted?",
+      "options": {
+        "A": "2004",
+        "B": "2000",
+        "C": "2010",
+        "D": "1999"
+      },
+      "correct_answer": "A",
+      "explanation": "The Residential Tenancies Act 2004 was enacted in 2004. It established the principal statutory framework for residential tenancies in Ireland, including the Part 4 security of tenure regime, the RTB, and tenancy registration. It has been significantly amended in 2021 and 2022."
+    },
+    {
+      "id": "PRL_M09_L01_Q34",
+      "question": "Under Part 4 of the Residential Tenancies Act 2004 as amended in 2021, what triggers the tenant's entitlement to security of tenure?",
+      "options": {
+        "A": "The tenant paying a deposit at the commencement of the tenancy",
+        "B": "The tenant remaining in occupation for a continuous period of six months",
+        "C": "The tenant registering the tenancy with the Residential Tenancies Board",
+        "D": "The landlord confirming in writing that the tenant may remain in occupation"
+      },
+      "correct_answer": "B",
+      "explanation": "Part 4 security of tenure arises once the tenant has been in occupation for a continuous period of six months. Following the 2021 amendments, the Part 4 tenancy then continues for an unlimited duration and can only be terminated on one of the fourteen specified statutory grounds."
+    },
+    {
+      "id": "PRL_M09_L01_Q35",
+      "question": "Prior to the 2021 amendments to the Residential Tenancies Act 2004, what was the duration of a Part 4 tenancy?",
+      "options": {
+        "A": "Unlimited duration from the outset of the tenancy",
+        "B": "A fixed term of three years after the six-month qualifying period",
+        "C": "A period of six years, after which the tenancy had to be renewed",
+        "D": "An indefinite period terminable at will by the landlord"
+      },
+      "correct_answer": "C",
+      "explanation": "Prior to the 2021 amendments, Part 4 tenancies operated on a six-year cycle. After six months of occupation, the tenant had security of tenure for a period of six years, at the end of which the tenancy had to be renewed. The 2021 amendments abolished this cycle and replaced it with an unlimited duration."
+    },
+    {
+      "id": "PRL_M09_L01_Q36",
+      "question": "Following the 2021 amendments to the Residential Tenancies Act 2004, what change was made to the duration of Part 4 tenancies?",
+      "options": {
+        "A": "The six-month qualifying period was extended to twelve months",
+        "B": "Part 4 tenancies were converted into fixed-term tenancies of ten years",
+        "C": "Part 4 tenancies remain subject to a six-year cycle but with stronger renewal rights",
+        "D": "The previous six-year cycle was abolished and Part 4 tenancies are now of unlimited duration"
+      },
+      "correct_answer": "D",
+      "explanation": "The 2021 amendments to the Residential Tenancies Act 2004 abolished the previous six-year renewal cycle for Part 4 tenancies. From the point of the amendment, Part 4 tenancies are of unlimited duration. There is no longer a requirement for the tenant to renew at the end of a six-year period."
+    },
+    {
+      "id": "PRL_M09_L01_Q37",
+      "question": "Which of the following is a statutory ground for terminating a Part 4 tenancy under the Residential Tenancies Act 2004?",
+      "options": {
+        "A": "The landlord intending to substantially renovate the property",
+        "B": "The landlord wishing to use the property as short-term tourist accommodation",
+        "C": "The tenant having occupied the property for more than four years",
+        "D": "The landlord requiring the property for use as commercial premises"
+      },
+      "correct_answer": "A",
+      "explanation": "Intention to substantially renovate the property is one of the fourteen statutory grounds on which a landlord may terminate a Part 4 tenancy. The renovation must be substantial — minor repairs or redecoration do not satisfy this ground. The landlord must comply with specific notice and verification requirements."
+    },
+    {
+      "id": "PRL_M09_L01_Q38",
+      "question": "Under the Residential Tenancies Act 2004, by what process are Rent Pressure Zones designated?",
+      "options": {
+        "A": "By ministerial order on the recommendation of the RTB, following evidence that rents are increasing rapidly",
+        "B": "By a resolution of both Houses of the Oireachtas passed by a simple majority",
+        "C": "By application of the local authority in whose area the pressure zone is proposed",
+        "D": "By the RTB automatically on receipt of complaints from tenants in a given area"
+      },
+      "correct_answer": "A",
+      "explanation": "Rent Pressure Zones are designated by ministerial order on the recommendation of the RTB, based on evidence that rents in the area have been increasing at a rate above a prescribed threshold. As of 2024, the entire country has been designated by ministerial order as an RPZ."
+    },
+    {
+      "id": "PRL_M09_L01_Q39",
+      "question": "In a Rent Pressure Zone, the applicable rent increase cap is:",
+      "options": {
+        "A": "The higher of two percent per year or the HICP",
+        "B": "A fixed two percent per year with no reference to inflation",
+        "C": "The lower of two percent per year or the Harmonised Index of Consumer Prices (HICP)",
+        "D": "The rate of inflation as measured by the CSO without any upper limit"
+      },
+      "correct_answer": "C",
+      "explanation": "In an RPZ, rent increases are capped at the lower of two percent per year or the HICP. Where the HICP is below two percent, the lower HICP rate applies. Where the HICP exceeds two percent, the two percent cap is the applicable ceiling. The formula ensures the tenant is always protected by the more favourable rate."
+    },
+    {
+      "id": "PRL_M09_L01_Q40",
+      "question": "An appeal from a decision of the Tenancy Tribunal under the Residential Tenancies Act 2004 can be taken to the High Court on:",
+      "options": {
+        "A": "Questions of fact and law equally",
+        "B": "Any ground the appellant considers sufficient",
+        "C": "Questions of fact only, not questions of law",
+        "D": "A point of law only — there is no appeal to the High Court on the merits of the facts"
+      },
+      "correct_answer": "D",
+      "explanation": "An appeal from the Tenancy Tribunal lies to the High Court on a point of law only. There is no appeal on the merits or on questions of fact. This is a significant limitation and ensures that the RTB process is the primary forum for resolving disputes of fact in residential tenancy matters."
+    },
+    {
+      "id": "PRL_M09_L01_Q41",
+      "question": "Street v Mountford [1985] was decided by which court?",
+      "options": {
+        "A": "The House of Lords",
+        "B": "The English Court of Appeal",
+        "C": "The Irish Supreme Court",
+        "D": "The English High Court"
+      },
+      "correct_answer": "A",
+      "explanation": "Street v Mountford [1985] was decided by the House of Lords (now the UK Supreme Court). Lord Templeman delivered the principal judgment, which established the tripartite test for a tenancy — exclusive possession, a fixed or periodic term, and rent — and the principle that substance prevails over form."
+    },
+    {
+      "id": "PRL_M09_L01_Q42",
+      "question": "What is the conceptual difference between how the landlord and tenant relationship arises in Ireland under Deasy's Act 1860 compared with England?",
+      "options": {
+        "A": "In Ireland the relationship arises from registration; in England from the execution of a formal deed",
+        "B": "In Ireland the relationship arises from the contract of the parties; in England it rests on the common law concept of tenure",
+        "C": "In Ireland the relationship requires exclusive possession; in England only occupation is needed",
+        "D": "In Ireland the relationship requires court approval; in England it arises automatically on the payment of rent"
+      },
+      "correct_answer": "B",
+      "explanation": "Deasy's Act 1860 provides that the landlord and tenant relationship in Ireland arises from the express or implied contract of the parties. This is conceptually distinct from English law, where the relationship historically rests on the feudal concept of tenure — the granting of an estate in land. In practice the rules are often similar but the theoretical basis differs."
+    },
+    {
+      "id": "PRL_M09_L01_Q43",
+      "question": "In the period between an agreement for a lease and the execution of the formal lease deed (applying Walsh v Lonsdale [1882]), what is the tenant's position?",
+      "options": {
+        "A": "The tenant has no enforceable rights until the formal lease is executed",
+        "B": "The tenant has a legal tenancy equivalent to a periodic tenancy only",
+        "C": "In equity, the tenant has rights under the agreement as if the formal lease had been executed, but only equitable rights until the deed is signed",
+        "D": "The tenant has a statutory right to demand that the formal lease be executed within three months"
+      },
+      "correct_answer": "C",
+      "explanation": "Applying Walsh v Lonsdale [1882], the agreement for a lease — where all terms are agreed — gives the tenant equitable rights as if the formal lease had been executed. However, these are equitable rights only — not legal rights — until the formal deed is completed. The distinction matters because equitable interests are vulnerable to bona fide purchasers for value without notice."
+    },
+    {
+      "id": "PRL_M09_L01_Q44",
+      "question": "Under Spencer's Case [1583], for a burden to pass to an assignee of the lease, the covenant must:",
+      "options": {
+        "A": "Have been expressly assigned to the assignee as part of the transfer of the lease",
+        "B": "Have been registered against the freehold title in the Land Registry",
+        "C": "Have been agreed by the original landlord and tenant in open court",
+        "D": "Touch and concern the land — benefiting or burdening the land itself rather than merely the personal interests of the original parties"
+      },
+      "correct_answer": "D",
+      "explanation": "Under Spencer's Case [1583], the burden of a leasehold covenant passes to the assignee only if it touches and concerns the land. The covenant must relate to the subject matter of the lease and affect the land itself — not merely create personal obligations between the original landlord and tenant. Covenants to pay rent, repair, and not to assign without consent all satisfy this test."
+    },
+    {
+      "id": "PRL_M09_L01_Q45",
+      "question": "What obligation does the Residential Tenancies Act 2004 impose on landlords regarding registration of tenancies with the RTB?",
+      "options": {
+        "A": "All tenancies must be registered with the RTB — registration is a mandatory statutory obligation for landlords",
+        "B": "Only tenancies in Rent Pressure Zones must be registered with the RTB",
+        "C": "Registration is encouraged but not legally required unless the landlord intends to use RTB dispute resolution",
+        "D": "Only tenancies of longer than twelve months must be registered with the RTB"
+      },
+      "correct_answer": "A",
+      "explanation": "All residential tenancies must be registered with the Residential Tenancies Board. Registration is a mandatory statutory obligation for landlords under the Residential Tenancies Act 2004. Failure to register can have consequences, including in enforcement and dispute resolution proceedings."
+    },
+    {
+      "id": "PRL_M09_L01_Q46",
+      "question": "Under the Rent Pressure Zone provisions, once a valid rent review notice has been served, the next rent review in an RPZ cannot take place until:",
+      "options": {
+        "A": "Three months after the previous review",
+        "B": "At least twelve months after the previous review",
+        "C": "Six months after the previous review",
+        "D": "Twenty-four months after the previous review"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the RPZ provisions, rent may only be reviewed once every twelve months. A landlord who serves a rent review notice must wait at least twelve months before the next review can take place. This prevents landlords from conducting multiple reviews within a year to circumvent the two percent cap."
+    },
+    {
+      "id": "PRL_M09_L01_Q47",
+      "question": "In applying the Street v Mountford [1985] test to determine whether an agreement creates a tenancy or a licence, the court asks:",
+      "options": {
+        "A": "What did the parties intend — lease or licence — at the time they entered the agreement",
+        "B": "Whether the agreement was drawn up by a solicitor and whether the occupier received legal advice",
+        "C": "Whether exclusive possession was granted — if so, combined with a term and rent, a tenancy arises regardless of the label on the document",
+        "D": "Whether the occupier has any right to exclude the landlord from shared areas of the property"
+      },
+      "correct_answer": "C",
+      "explanation": "The Street v Mountford test is objective, not subjective. The court asks whether exclusive possession was granted for a term at a rent — not what label the parties used or what they intended. If those three elements are present, the legal consequence is a tenancy. The label is irrelevant and substance prevails over form."
+    },
+    {
+      "id": "PRL_M09_L01_Q48",
+      "question": "Under the Residential Tenancies Act 2004, which of the following is a statutory ground for termination of a Part 4 tenancy?",
+      "options": {
+        "A": "The tenant paying rent late on two occasions in a twelve-month period",
+        "B": "The landlord wishing to redecorate the property before re-letting at a higher rent",
+        "C": "The tenant having obtained an additional property and no longer needing the tenancy",
+        "D": "The landlord requiring the property for occupation by an immediate family member"
+      },
+      "correct_answer": "D",
+      "explanation": "Occupation by an immediate family member of the landlord is one of the fourteen statutory grounds for termination of a Part 4 tenancy. The landlord must comply with notice requirements and verification conditions. Redecoration, rent increases, or the tenant's personal circumstances are not statutory grounds."
+    },
+    {
+      "id": "PRL_M09_L01_Q49",
+      "question": "Which Act abolished the landlord's remedy of distress for rent in Ireland?",
+      "options": {
+        "A": "The Land and Conveyancing Law Reform Act 2009",
+        "B": "The Residential Tenancies Act 2004",
+        "C": "Deasy's Act 1860",
+        "D": "The Land and Conveyancing Law Reform Act 2013"
+      },
+      "correct_answer": "A",
+      "explanation": "Distress for rent — the ancient remedy allowing a landlord to seize a tenant's chattels in satisfaction of unpaid rent — was abolished in Ireland by the Land and Conveyancing Law Reform Act 2009. Candidates should note that distress no longer exists as a remedy for landlords in Ireland."
+    },
+    {
+      "id": "PRL_M09_L01_Q50",
+      "question": "What is the first step in the RTB dispute resolution process under the Residential Tenancies Act 2004?",
+      "options": {
+        "A": "Issuing High Court proceedings for an injunction",
+        "B": "Mediation — an attempt to resolve the dispute with the assistance of a neutral mediator before proceeding to adjudication",
+        "C": "Filing a claim with the District Court for possession",
+        "D": "Applying to the Tenancy Tribunal for a binding determination"
+      },
+      "correct_answer": "B",
+      "explanation": "The first step in the RTB dispute resolution process is mediation — an attempt to resolve the dispute with the assistance of a neutral mediator. If mediation fails, the matter proceeds to adjudication by a single RTB adjudicator. If adjudication is appealed, it goes to the Tenancy Tribunal, and a further appeal lies to the High Court on a point of law only."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module06_Lesson01.txt",
+  "module_number": 6,
+  "module_title": "Sexual Offences",
+  "lesson_number": 1,
+  "lesson_title": "Rape (s.2(1) Criminal Law (Rape) Act 1981)",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CRL_M06_L01_Q01",
+      "question": "Section 2(1) of the Criminal Law (Rape) Act 1981 defines rape. Which of the following correctly identifies all the elements that the prosecution must prove to secure a conviction for rape?",
+      "options": {
+        "A": "That the accused had sexual intercourse with the complainant; that the complainant did not consent; and that the accused knew the complainant was not consenting or was reckless as to whether she was consenting",
+        "B": "That the accused penetrated the complainant's vagina with his penis with intent to cause harm; that no consent was given; and that the accused used force or threats",
+        "C": "That the accused had sexual intercourse with the complainant; that the complainant did not consent; and that the accused intended to cause the complainant distress",
+        "D": "That the accused engaged in sexual intercourse with the complainant without her consent, and that the accused held a genuine belief that she was consenting, whether or not that belief was reasonable"
+      },
+      "correct_answer": "A",
+      "explanation": "Section 2(1) Criminal Law (Rape) Act 1981 defines rape as consisting of three elements: (1) Sexual intercourse with a woman (penile-vaginal penetration \u2014 s.2(2) provides that the slightest penetration is sufficient, per AG v Dermody [1956]); (2) Absence of consent by the complainant; (3) The accused knew she was not consenting OR was reckless as to whether she was consenting. Following the Criminal Law (Sexual Offences and Human Trafficking) Act 2024 (CLSO(HT)A 2024), in force 31 August 2024, the honest belief defence was abolished \u2014 the accused's belief must now be both genuine AND reasonable (an objective test). Option B incorrectly adds a force/harm requirement \u2014 rape does not require force, only absence of consent. Option C substitutes 'intent to cause distress' for the actual mental element. Option D describes the old pre-2024 honest belief formulation which has been abolished."
+    },
+    {
+      "id": "CRL_M06_L01_Q02",
+      "question": "What is the critical change made by the Criminal Law (Sexual Offences and Human Trafficking) Act 2024 (CLSO(HT)A 2024) to the law of rape in Ireland, and from what date did it take effect?",
+      "options": {
+        "A": "It extended the definition of rape to include penile penetration of the mouth and anus \u2014 effective 1 January 2024",
+        "B": "It abolished the honest belief defence and replaced it with a requirement of reasonable belief in consent \u2014 effective 31 August 2024",
+        "C": "It increased the maximum sentence for rape from 10 years to life imprisonment \u2014 effective 31 August 2024",
+        "D": "It removed the requirement that the accused be male \u2014 making rape a gender-neutral offence \u2014 effective 31 August 2024"
+      },
+      "correct_answer": "B",
+      "explanation": "The CLSO(HT)A 2024 came into force on 31 August 2024 and made one reform that is exam-critical: it abolished the honest belief defence in rape. Under the old law (pre-31 August 2024), a man who genuinely but unreasonably believed the complainant was consenting had to be acquitted (see DPP v C O'R [2016] IECA, where Charleton J stated this principle). From 31 August 2024, the law requires that the accused's belief in consent must be both genuine AND reasonable in the circumstances \u2014 an objective test. This aligns Irish law with the Sexual Offences Act 2003 (England and Wales). Option A is wrong \u2014 penile penetration of the anus or mouth constitutes rape under s.4 Criminal Law (Rape) Amendment Act 1990, not s.2(1). Option C is wrong \u2014 life imprisonment was already the maximum for rape. Option D is wrong \u2014 rape under s.2(1) continues to require the accused to be male (though s.4 rape is gender-neutral)."
+    },
+    {
+      "id": "CRL_M06_L01_Q03",
+      "question": "In AG v Dermody [1956], the Irish court addressed the degree of penetration required to constitute sexual intercourse for the purposes of rape. What did the court hold?",
+      "options": {
+        "A": "The court held that full penetration of the vagina, past the hymen if intact, is required before rape is made out",
+        "B": "The court held that the slightest degree of penile penetration of the vagina is sufficient to constitute sexual intercourse for the purposes of rape \u2014 there is no requirement of full penetration or ejaculation",
+        "C": "The court held that penetration must be sufficient to cause some physical harm to the complainant",
+        "D": "The court held that the degree of penetration is a matter for expert medical evidence in each case"
+      },
+      "correct_answer": "B",
+      "explanation": "AG v Dermody [1956] established the longstanding rule that the slightest penetration of the vagina by the penis is sufficient to constitute sexual intercourse for the purposes of rape. There is no requirement that penetration be full, that the hymen be penetrated, or that ejaculation occur. This reflects the principle that rape is a serious violation of bodily autonomy from the moment of penetration, however slight. This principle is now reflected in s.2(2) of the Criminal Law (Rape) Act 1981. Options A, C, and D each add requirements \u2014 of full penetration, of harm, or of expert evidence \u2014 that have no statutory or case law basis."
+    },
+    {
+      "id": "CRL_M06_L01_Q04",
+      "question": "In Kaitamaki v R [1985] (Privy Council, accepted in Irish law), the accused initially penetrated the complainant with her consent but she withdrew consent during intercourse. He continued. The Privy Council was asked whether rape could be committed where penetration initially occurred with consent. What was the decision?",
+      "options": {
+        "A": "No \u2014 consent to penetration is irrevocable; once given at the moment of penetration, it cannot be withdrawn",
+        "B": "Yes \u2014 sexual intercourse is a continuing act; if the complainant withdraws consent during intercourse and the accused continues, penetration from that point onwards is without consent and constitutes rape",
+        "C": "No \u2014 rape requires that the penetration itself occur without consent; withdrawal of consent after penetration cannot retrospectively make the act rape",
+        "D": "Yes \u2014 but only where the accused uses force to continue after consent is withdrawn"
+      },
+      "correct_answer": "B",
+      "explanation": "Kaitamaki v R [1985] (Privy Council, New Zealand) established and Irish courts have accepted the principle that sexual intercourse is a continuing act \u2014 it does not end at the moment of penetration but continues throughout the act. Accordingly, if consent is withdrawn during intercourse and the accused continues, the continuation of penetration from the point of withdrawal of consent constitutes rape. Consent can be withdrawn at any time, and the accused must desist immediately upon withdrawal. This principle is now reinforced by s.48 Criminal Law (Sexual Offences) Act 2017, which provides that consent can be withdrawn at any time. Option A is plainly wrong \u2014 consent is not irrevocable. Option C states the position that Kaitamaki rejected. Option D incorrectly adds a force requirement."
+    },
+    {
+      "id": "CRL_M06_L01_Q05",
+      "question": "DPP v TS [2019] IECA concerned marital rape. What is the legal significance of this case in Irish law?",
+      "options": {
+        "A": "The court held that marriage is a complete bar to a rape conviction \u2014 marital exemption still exists in Irish law",
+        "B": "The court held that marital rape is a criminal offence under Irish law and that rape within marriage is treated as an aggravated form of rape for sentencing purposes, given the abuse of trust inherent in the marital relationship",
+        "C": "The court held that marital rape can only be prosecuted where the parties are separated \u2014 rape within a cohabiting marriage cannot be prosecuted",
+        "D": "The court held that marital rape is a lesser offence carrying a maximum of 7 years rather than life imprisonment"
+      },
+      "correct_answer": "B",
+      "explanation": "DPP v TS [2019] IECA confirmed that marital rape is fully criminalised in Irish law and that the historical common law marital exemption (which treated marriage as implied perpetual consent) no longer exists. The Criminal Law (Rape) (Amendment) Act 1990 (s.5) had abolished the marital exemption. In DPP v TS, the Court of Appeal confirmed the conviction and held that the marital context \u2014 far from mitigating the offence \u2014 could be treated as an aggravating factor for sentencing purposes, given the particular abuse of trust inherent in rape within a marital relationship. DPP consent is required under s.5(2) of the Criminal Law (Rape) (Amendment) Act 1990 before marital rape proceedings can be brought. Options A, C, and D each misstate the current legal position."
+    },
+    {
+      "id": "CRL_M06_L01_Q06",
+      "question": "Tom is charged with rape. His defence is that he genuinely believed the complainant was consenting, even though no reasonable person in his position would have held that belief. The incident occurred in September 2024. Which of the following correctly states Tom's legal position?",
+      "options": {
+        "A": "Tom is entitled to an acquittal \u2014 a genuine honest belief in consent, however unreasonable, is a complete defence to rape",
+        "B": "Tom's defence fails \u2014 following the CLSO(HT)A 2024 (in force 31 August 2024), an accused's belief in consent must be both genuine AND reasonable; an unreasonable belief in consent is not a defence",
+        "C": "Tom may rely on his honest belief as a partial defence, reducing the offence from rape to sexual assault",
+        "D": "Tom's honest belief is relevant only to mitigation of sentence, not to liability"
+      },
+      "correct_answer": "B",
+      "explanation": "Since the incident occurred in September 2024 \u2014 after the CLSO(HT)A 2024 came into force on 31 August 2024 \u2014 the new reasonable belief standard applies. Under the new law, an accused cannot rely on a belief in consent that is not both genuine and reasonable in the circumstances. The old honest belief defence (which required only that the belief be genuine, not that it be reasonable) has been abolished. Tom's unreasonable belief in consent, even if genuinely held, does not provide a defence. This aligns Irish law with the Sexual Offences Act 2003 in England and Wales. Option A describes the pre-2024 position, which no longer applies. Options C and D invent partial defence or mitigation-only frameworks that have no basis in the law."
+    },
+    {
+      "id": "CRL_M06_L01_Q07",
+      "question": "The mens rea for rape under s.2(1) Criminal Law (Rape) Act 1981 includes recklessness as to consent. What does this mean in practice?",
+      "options": {
+        "A": "The accused is reckless if they did not stop to think about whether the complainant was consenting \u2014 negligence as to consent suffices",
+        "B": "The accused is reckless as to consent if they were subjectively aware that there was a risk that the complainant was not consenting and proceeded regardless; confirmed in DPP v MC [2018] IECA: a person who 'couldn't care less' whether the other is consenting is reckless",
+        "C": "Recklessness as to consent is determined by an objective standard \u2014 whether a reasonable person would have recognised the absence of consent",
+        "D": "Recklessness only applies where the accused made no enquiry about consent before intercourse; if any enquiry was made, only knowledge of non-consent suffices"
+      },
+      "correct_answer": "B",
+      "explanation": "The recklessness standard for rape is subjective. DPP v MC [2018] IECA confirmed that it is not a misdirection to tell the jury that if the accused 'decided to have sex with another person and couldn't care less about whether the other person is consenting or not,' that person is reckless as to consent. This captures the accused who is indifferent to the question of consent \u2014 they proceed without caring whether consent exists. This is distinct from negligence (Option A), which is an objective standard. Option C incorrectly frames recklessness as objective \u2014 it remains a subjective inquiry. Option D creates an artificial enquiry/no-enquiry distinction that is not part of the legal test. Post-CLSO(HT)A 2024, the reasonable belief requirement supplements this \u2014 a genuine but unreasonable belief will not excuse, but subjective recklessness (indifference) remains a route to conviction."
+    },
+    {
+      "id": "CRL_M06_L01_Q08",
+      "question": "DPP v C O'R [2016] IECA (per Charleton J) is an important pre-2024 rape authority. What principle did it establish, and what is its current status?",
+      "options": {
+        "A": "It established that recklessness as to consent is sufficient for rape; this principle remains good law",
+        "B": "It confirmed the old honest belief defence \u2014 that a genuine but unreasonable belief in consent required acquittal; this case is now superseded by the CLSO(HT)A 2024 which abolished the honest belief defence from 31 August 2024",
+        "C": "It held that marital rape is an aggravated offence; this principle was overturned by DPP v TS [2019]",
+        "D": "It established that the slightest penetration suffices for rape; this remains good law"
+      },
+      "correct_answer": "B",
+      "explanation": "DPP v C O'R [2016] IECA (Charleton J) reaffirmed the honest belief defence under the pre-2024 law: 'where the accused believed genuinely, albeit unreasonably, that the woman was consenting\u2026 he must, even though she did not consent, be acquitted.' This statement of the law represented the position in Ireland until 31 August 2024. The case is now superseded by the CLSO(HT)A 2024, which abolished the honest belief defence and replaced it with a requirement that the belief be both genuine and reasonable. DPP v C O'R remains important for exam purposes as it demonstrates what the law was before the 2024 reform and helps candidates understand the significance of the change. Any question requiring application of the law to facts after 31 August 2024 must apply the new reasonable belief standard. Options A, C, and D attribute incorrect principles to the case."
+    },
+    {
+      "id": "CRL_M06_L01_Q09",
+      "question": "Mark has sexual intercourse with Jane without her consent in February 2024. Jane reports the incident to the Garda\u00ed. Mark's defence is that he genuinely believed Jane was consenting, even though no reasonable person would have thought so. Which legal regime applies to Mark's case?",
+      "options": {
+        "A": "The CLSO(HT)A 2024 applies \u2014 the honest belief defence is not available; Mark must show his belief was reasonable",
+        "B": "The pre-2024 law applies \u2014 the incident predates the commencement of the CLSO(HT)A 2024 (31 August 2024); accordingly, if Mark genuinely believed Jane was consenting, he must be acquitted even if that belief was unreasonable",
+        "C": "The CLSO(HT)A 2024 applies retrospectively to all cases charged after 31 August 2024, regardless of when the incident occurred",
+        "D": "The law applicable depends on when the case comes to trial, not when the offence occurred"
+      },
+      "correct_answer": "B",
+      "explanation": "The incident occurred in February 2024 \u2014 before the CLSO(HT)A 2024 came into force on 31 August 2024. The general principle of criminal law is that legislation does not operate retrospectively to criminalise or increase liability for conduct that occurred before its commencement. Accordingly, the law applicable to Mark's case is the pre-2024 law, under which the honest belief defence was available \u2014 a genuine belief in consent, however unreasonable, would require acquittal (per DPP v C O'R [2016] IECA). If Mark's belief was genuine, he should be acquitted under the then-applicable law. Option A incorrectly applies the new law retrospectively. Option C states that the 2024 Act applies retrospectively, which is constitutionally impermissible under Art. 15.5.1 of the Irish Constitution (which prohibits retrospective criminal legislation). Option D applies the wrong temporal rule."
+    },
+    {
+      "id": "CRL_M06_L01_Q010",
+      "question": "Which court has jurisdiction to try rape cases in Ireland, and what is the maximum sentence?",
+      "options": {
+        "A": "The District Court \u2014 summary jurisdiction \u2014 maximum 12 months imprisonment",
+        "B": "The Central Criminal Court (part of the High Court) has exclusive jurisdiction over rape; the maximum sentence is life imprisonment",
+        "C": "The Circuit Criminal Court \u2014 maximum 10 years imprisonment",
+        "D": "The Special Criminal Court \u2014 maximum life imprisonment"
+      },
+      "correct_answer": "B",
+      "explanation": "Rape is one of the offences that falls within the exclusive jurisdiction of the Central Criminal Court (the High Court exercising criminal jurisdiction). This is provided by s.10(4) of the Criminal Procedure Act 1967, as amended. The Central Criminal Court must try all rape offences, sexual assault causing serious harm, and a small number of other serious offences. The maximum sentence for rape under s.2(1) is life imprisonment. This exclusive jurisdiction means that rape cannot be remitted to the Circuit Court even if the accused consents. The District Court has no jurisdiction. The Special Criminal Court is a non-jury court established under the Offences Against the State Act 1939 for specific categories of offences and does not ordinarily try rape cases."
+    }
+  ]
+}

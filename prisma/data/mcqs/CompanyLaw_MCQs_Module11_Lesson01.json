@@ -1,0 +1,215 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module11_Lesson01.txt",
+  "module_number": 11,
+  "module_title": "Corporate Insolvency",
+  "lesson_number": 1,
+  "lesson_title": "Examinership",
+  "total_questions": 17,
+  "questions": [
+    {
+      "id": "CL_M11_L01_Q01",
+      "question": "Under s.509 CA 2014, what is the fundamental eligibility criterion for a company to be placed under the protection of the court via examinership?",
+      "options": {
+        "A": "The company must be already insolvent and unable to pay debts as they fall due",
+        "B": "The company must be, or likely to be, unable to pay its debts, AND the court must be satisfied that there is a reasonable prospect of the company's survival as a going concern",
+        "C": "The company must have a minimum of 50 employees to qualify for examinership",
+        "D": "The company must have been trading for at least two years before petitioning for examinership"
+      },
+      "correct_answer": "B",
+      "explanation": "s.509 CA 2014 requires: (1) the company is or is likely to be unable to pay its debts; AND (2) there is a reasonable prospect of survival of the company and the whole or any part of its undertaking as a going concern. Both conditions must be satisfied — a company that is already terminally insolvent without rescue prospects cannot be placed in examinership."
+    },
+    {
+      "id": "CL_M11_L01_Q02",
+      "question": "Under s.520 CA 2014, what is the maximum duration of the examinership protection period, and under what circumstances may it be extended?",
+      "options": {
+        "A": "50 days; may be extended to 70 days by court order where the examiner demonstrates significant progress",
+        "B": "70 days; may be extended to 100 days by court order where the examiner demonstrates significant progress in formulating the scheme of arrangement",
+        "C": "90 days; no extension is possible — the examiner must report within 90 days or the protection lapses",
+        "D": "60 days; may be extended to 120 days at the court's discretion without conditions"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.520 CA 2014, the initial protection period is 70 days. The court may extend this by up to 30 additional days (to a maximum of 100 days) where the examiner applies and demonstrates that the examiner is likely to be able to formulate proposals for a scheme of arrangement. The total maximum period is therefore 100 days."
+    },
+    {
+      "id": "CL_M11_L01_Q03",
+      "question": "In Re Vantive Holdings Ltd [2010] IEHC, the High Court considered the threshold for appointing an examiner. What key principle regarding the 'reasonable prospect' of survival did the court articulate?",
+      "options": {
+        "A": "The court must be satisfied that survival of the company is certain before appointing an examiner — a mere possibility is insufficient",
+        "B": "The threshold for 'reasonable prospect' is low — the petitioner need only show that survival is not a remote possibility. The court should not engage in a detailed merits analysis at the petition stage",
+        "C": "The court requires independent expert evidence from an investment bank confirming that the company has a greater than 50% probability of survival",
+        "D": "A 'reasonable prospect' requires the petitioner to have secured committed third-party investment before the petition is heard"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Vantive Holdings [2010] IEHC, the High Court held that the 'reasonable prospect' threshold does not require certainty or even probability — it is sufficient that survival is a realistic possibility and not too remote. The court should not conduct an in-depth merits analysis at the threshold stage; a prima facie case of survival prospect is sufficient for appointment."
+    },
+    {
+      "id": "CL_M11_L01_Q04",
+      "question": "Under s.520A CA 2014 (ipso facto clause prohibition, as amended), what protection does examinership provide in relation to contracts containing ipso facto clauses?",
+      "options": {
+        "A": "Ipso facto clauses in contracts are automatically void once a company enters examinership — all contracts continue on their existing terms",
+        "B": "Counterparties to contracts may not exercise termination rights that arise solely because of the commencement of examinership proceedings — ipso facto clauses triggered purely by the insolvency appointment are unenforceable during the protection period",
+        "C": "Ipso facto clauses remain fully enforceable — counterparties may terminate contracts for any reason during the examinership protection period",
+        "D": "s.520A applies only to employment contracts and lease agreements — commercial supply contracts retain full ipso facto clause enforceability"
+      },
+      "correct_answer": "B",
+      "explanation": "s.520A CA 2014 prevents counterparties from relying solely on the commencement of examinership as a trigger to terminate, suspend, or alter contracts under ipso facto clauses. This protects the company's ability to continue trading and preserves the value of its business during the protection period. Counterparties may still terminate for independent contractual breaches."
+    },
+    {
+      "id": "CL_M11_L01_Q05",
+      "question": "In Re Ina's Kitchen Ltd [2022] IEHC, the High Court examined the obligations of an examiner and the viability of a proposed scheme. What principle regarding the examiner's independence was reinforced?",
+      "options": {
+        "A": "The examiner may act as an agent of the majority creditors who support the rescue plan",
+        "B": "The examiner must act as an independent officer of the court, not as an agent of either the company or any particular creditor class — the examiner's duty is to the court and the process",
+        "C": "The examiner owes fiduciary duties exclusively to the company's shareholders as the ultimate risk-bearers",
+        "D": "The examiner may accept a retainer from the company's largest secured creditor provided this is disclosed to the court"
+      },
+      "correct_answer": "B",
+      "explanation": "Re Ina's Kitchen [2022] IEHC reinforced that the examiner is an officer of the court whose overriding duty is to the court and the examinership process, not to any stakeholder group. An examiner must maintain independence throughout the process, and any conflict of interest must be disclosed to and adjudicated upon by the court."
+    },
+    {
+      "id": "CL_M11_L01_Q06",
+      "question": "SI 380/2022 (European Communities (Companies) (Cross-Class Cram-Down) Regulations 2022) introduced a 'cross-class cram-down' mechanism into Irish examinership. Under s.521A CA 2014, what is required for the court to impose a scheme on a dissenting class of creditors?",
+      "options": {
+        "A": "A majority of all creditor classes must approve the scheme; dissenting creditors may appeal within 21 days",
+        "B": "At least one 'in the money' class of affected creditors must approve the scheme, and the court must be satisfied that: the dissenting class receives at least as much as they would receive in liquidation; no class receives more than the full value of its claims; and the best interests of creditors test is met",
+        "C": "The court may impose a cram-down only where the dissenting class is a preferential creditor class",
+        "D": "Cross-class cram-down requires the unanimous approval of all secured creditors before the court can override objections from unsecured creditor classes"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.521A CA 2014 (implementing the EU Restructuring Directive via SI 380/2022), the cross-class cram-down allows a court to confirm a scheme over a dissenting class provided: (1) at least one in-the-money class approves; (2) the dissenting class receives at least the liquidation value of their claim (no creditor worse off test); (3) no class receives more than 100% of its claim; and (4) the scheme is fair and equitable. This is a significant extension of the examiner's powers."
+    },
+    {
+      "id": "CL_M11_L01_Q07",
+      "question": "Re New Look Retailers (Ireland) Ltd [2021] IEHC considered the treatment of landlord claims in an examinership scheme. What challenge did this case highlight regarding the use of examinership against secured or semi-secured creditor classes?",
+      "options": {
+        "A": "The court held that all landlord claims are fully secured and cannot be impaired in any examinership scheme",
+        "B": "The case highlighted the tension between the examiner's need to restructure high-cost leases and the landlords' status as creditors with substantial claims — the court examined whether impairment of landlord claims in a scheme was consistent with the 'no creditor worse off' principle when compared to liquidation outcomes",
+        "C": "The court held that leases must be assigned to a new entity before examinership can be used to impair rental obligations",
+        "D": "The court held that the examiner has no power to impair lease obligations — only financial creditors' claims may be restructured in examinership"
+      },
+      "correct_answer": "B",
+      "explanation": "Re New Look Retailers (Ireland) [2021] IEHC dealt with the treatment of landlords' lease obligations in the examinership scheme. The court examined whether the scheme satisfied the 'no creditor worse off' test compared to a hypothetical liquidation — if landlords would receive less under the scheme than in liquidation, the scheme cannot be imposed. The case was significant for its analysis of how lease restructuring interacts with the court's confirmation jurisdiction."
+    },
+    {
+      "id": "CL_M11_L01_Q08",
+      "question": "During the examinership protection period, can a secured creditor enforce their security (e.g. appoint a receiver) against the company's assets?",
+      "options": {
+        "A": "Yes — secured creditors' enforcement rights are unaffected by court protection in examinership",
+        "B": "No — under s.520 CA 2014, once the company is under court protection, no receiver may be appointed and no proceedings (including enforcement of security) may be commenced or continued against the company without court consent",
+        "C": "Secured creditors may enforce their security during examinership but only up to the value of the secured asset",
+        "D": "Enforcement of security is automatically stayed for 30 days from the appointment of the examiner, after which secured creditors may proceed"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.520(1) CA 2014, during the period of court protection, no receiver may be appointed over company property and no proceedings may be instituted or continued against the company without leave of the court. This moratorium applies to secured creditors as well, protecting the company's assets from piecemeal enforcement during the restructuring process."
+    },
+    {
+      "id": "CL_M11_L01_Q09",
+      "question": "Who may petition for the appointment of an examiner under CA 2014?",
+      "options": {
+        "A": "Only the company itself or its directors may petition — creditors have no standing to petition for examinership",
+        "B": "The company, its directors, a creditor (including contingent/prospective creditors), or a member holding at least 10% of paid-up voting capital",
+        "C": "Only the company acting by special resolution of shareholders",
+        "D": "Any interested party, including employees, trade unions, and regulatory bodies"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.509(2) CA 2014, an application for the appointment of an examiner may be made by the company, the directors of the company, a creditor (including a contingent or prospective creditor), or a member holding not less than 10% of the paid-up voting capital. The petitioner must also present an independent expert's report under s.511."
+    },
+    {
+      "id": "CL_M11_L01_Q10",
+      "question": "What is the content requirement for the Independent Expert's Report that must accompany a petition for examinership under s.511 CA 2014?",
+      "options": {
+        "A": "A report from the company's own auditors confirming that the company has been solvent for at least 18 months",
+        "B": "A report from an independent accountant (a qualified person) assessing whether the company has a reasonable prospect of survival as a going concern, with reasons, and stating the likely outcome for creditors in an examinership versus liquidation",
+        "C": "A report from a licensed insolvency practitioner confirming that no alternative to examinership exists",
+        "D": "A report from the company's bankers confirming that further credit facilities are available to fund the examinership"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.511 CA 2014, the petition must be accompanied by a report from an independent expert (a qualified accountant) that: (a) states whether the company has a reasonable prospect of survival; (b) states the facts and assumptions on which that opinion is based; and (c) provides an estimate of the company's assets and liabilities and the likely outcome for creditors in a winding up. This report is central to the court's assessment of the petition."
+    },
+    {
+      "id": "CL_M11_L01_Q11",
+      "question": "A scheme of arrangement under examinership is approved by creditors at a creditors' meeting. The court must then confirm the scheme. Under s.541 CA 2014, on what grounds may the court REFUSE to confirm a scheme even if it has been approved by creditors?",
+      "options": {
+        "A": "The court must always confirm a scheme approved by creditors — it has no discretion to refuse once the creditor vote threshold is met",
+        "B": "The court may refuse to confirm the scheme if: it is not fair and equitable to any class of creditors who voted against it and whose interests are not adequately protected; it is contrary to public interest; or the implementation of the scheme is not reasonably likely to achieve a successful outcome for the company",
+        "C": "The court may only refuse confirmation where a statutory offence has been committed by the company during the protection period",
+        "D": "The court may refuse confirmation only where the Revenue Commissioners or the State is a dissenting creditor"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.541 CA 2014, the court retains full discretion to refuse to confirm a scheme even after creditor approval. Grounds include: the scheme is unfair and inequitable to a creditor class that voted against it; it is contrary to public interest; or there is doubt about the company's ability to implement the scheme. The court's role is not merely rubber-stamping creditor votes."
+    },
+    {
+      "id": "CL_M11_L01_Q12",
+      "question": "A company in examinership has both secured creditors (bank, €5m) and unsecured trade creditors (€2m). The examiner proposes a scheme that pays the bank 80% of its claim and trade creditors 20%. What is the key test the court will apply in deciding whether to confirm this scheme?",
+      "options": {
+        "A": "All creditors must receive at least 50% of their claims — a scheme paying less than 50% to any class cannot be confirmed",
+        "B": "The court applies the 'no creditor worse off' test — no creditor may receive less under the scheme than they would receive in a liquidation of the company at the time of confirmation",
+        "C": "The court applies a proportionality test — all creditor classes must receive equal percentage recovery in any confirmed scheme",
+        "D": "The court only examines whether the total payments to creditors under the scheme exceed the company's going concern value"
+      },
+      "correct_answer": "B",
+      "explanation": "The fundamental test under s.541 CA 2014 is that no creditor may receive less under the scheme than they would receive on a winding up of the company — the 'no creditor worse off' or 'floor' test. If the scheme offers a creditor less than their liquidation entitlement, the court may refuse confirmation unless the creditor consented. This protects creditors from having a scheme imposed at below-liquidation values."
+    },
+    {
+      "id": "CL_M11_L01_Q13",
+      "question": "The examiner certifies certain liabilities as expenses of the examinership under s.529 CA 2014. What is the priority of such certified liabilities in the event that the examinership fails and the company is subsequently wound up?",
+      "options": {
+        "A": "Examiner-certified liabilities rank as ordinary unsecured creditor claims with no priority over other unsecured debts",
+        "B": "Examiner-certified liabilities rank ahead of all other unsecured creditors and preferential creditors, but behind the costs of the winding up",
+        "C": "Examiner-certified liabilities are treated as preferential debts ranking alongside Revenue and employee claims",
+        "D": "Examiner-certified liabilities rank as costs of the examinership and are paid ahead of all pre-examinership liabilities, including preferential debts, in a subsequent liquidation"
+      },
+      "correct_answer": "D",
+      "explanation": "Under s.529 CA 2014, liabilities certified by the examiner as necessary to preserve the company or its undertaking during the protection period rank as a charge on the company's assets ahead of all other claims — including preferential debts — in any subsequent liquidation. This 'super-priority' incentivises third parties to deal with an examiner-supervised company."
+    },
+    {
+      "id": "CL_M11_L01_Q14",
+      "question": "A major creditor argues at the scheme confirmation hearing that the examiner failed to convene proper creditor meetings and that the proposed scheme was not communicated to all creditors. What consequence may flow from this procedural failing?",
+      "options": {
+        "A": "Procedural failings in the creditor meeting process are automatically cured once the court confirms the scheme",
+        "B": "The court may refuse to confirm the scheme if the procedural requirements for creditor meetings under ss.534-540 CA 2014 were not properly followed, as this goes to the validity of the approval",
+        "C": "The affected creditor must bring a separate judicial review of the meeting procedure within 7 days or lose the right to challenge",
+        "D": "Procedural defects in the creditor meeting can only be remedied by appointing a second examiner to reconvene the meetings"
+      },
+      "correct_answer": "B",
+      "explanation": "The creditor meeting requirements under ss.534-540 CA 2014 are substantive procedural safeguards. Failure to properly convene or notify creditors may invalidate the approval process and give the court grounds to refuse confirmation. The court cannot simply cure a fundamental procedural failure at the confirmation hearing."
+    },
+    {
+      "id": "CL_M11_L01_Q15",
+      "question": "Under CA 2014, what happens to proceedings or enforcement actions against the company that were already in train before the court protection period commenced?",
+      "options": {
+        "A": "All pre-existing proceedings and enforcement actions automatically terminate on the appointment of the examiner",
+        "B": "Pre-existing proceedings and enforcement actions are stayed and may not be continued without court leave during the protection period — the stay applies equally to new and pre-existing actions",
+        "C": "Pre-existing proceedings that were at final judgment stage before the examiner's appointment may continue — only new proceedings are stayed",
+        "D": "Pre-existing enforcement actions by secured creditors over assets other than the company's primary trading assets may continue during the protection period"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.520 CA 2014, the court protection moratorium applies to all proceedings — both existing and new. Proceedings that were already commenced before the protection period are stayed and cannot be continued without court leave. This comprehensive moratorium is fundamental to preserving the company's position during the examinership process."
+    },
+    {
+      "id": "CL_M11_L01_Q16",
+      "question": "A company in examinership proposes to sell a major asset as part of its restructuring. This sale requires shareholder approval under s.238 CA 2014 (substantial non-cash asset transaction). Does the examinership process override the s.238 shareholder approval requirement?",
+      "options": {
+        "A": "Yes — once a company is in examinership, the examiner has full power to effect all transactions without shareholder approval",
+        "B": "No — unless the court specifically authorises the transaction under s.522 CA 2014 (examiner's powers to dispose of charged property), shareholder approval requirements continue to apply during examinership",
+        "C": "Yes — the court protection order automatically suspends all requirements for member approvals under CA 2014",
+        "D": "The examiner may seek court approval under s.523 CA 2014 to override any company constitution requirement, including s.238 shareholder approval"
+      },
+      "correct_answer": "D",
+      "explanation": "Under s.523 CA 2014, the examiner may apply to court for authority to take actions that would normally require company approval — including shareholder approvals that would be required under s.238. The court may sanction such actions as part of the restructuring. The examiner's power is not automatic but requires specific court authorisation to override standard corporate approvals."
+    },
+    {
+      "id": "CL_M11_L01_Q17",
+      "question": "In Re Atlantic Magnetics Ltd [1993] 2 IR 561, the Supreme Court set out important principles on the court's approach to examinership petitions. Which of the following represents the key principle established?",
+      "options": {
+        "A": "The court must be satisfied that survival is more likely than not before appointing an examiner",
+        "B": "The court should take a pragmatic and not overly restrictive approach to the 'reasonable prospect' threshold — the purpose of examinership is rescue, not liquidation, and the court should not require certainty of survival",
+        "C": "The Supreme Court held that only the company itself (not directors or creditors) has standing to petition for examinership",
+        "D": "The court must appoint an independent examiner even where the parties agree to an out-of-court restructuring, to protect the interests of the State as a potential creditor"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Atlantic Magnetics [1993] 2 IR 561, the Supreme Court emphasised that the examinership process was designed to facilitate company rescue and that the court should approach petitions with this purpose in mind. The 'reasonable prospect' test does not require near-certainty — a genuine prospect of survival justifies the appointment. This purposive approach has guided Irish examinership jurisprudence."
+    }
+  ]
+}

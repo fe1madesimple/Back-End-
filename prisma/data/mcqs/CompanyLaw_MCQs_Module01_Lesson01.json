@@ -1,0 +1,215 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module01_Lesson01.txt",
+  "module_number": 1,
+  "module_title": "Introduction to Company Law and Incorporation",
+  "lesson_number": 1,
+  "lesson_title": "What is Company Law? The Nature of a Company",
+  "total_questions": 17,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which Act consolidated Irish company law into a single statute?",
+      "options": {
+        "A": "Companies Act 1963",
+        "B": "Companies Act 2014",
+        "C": "Companies (Amendment) Act 1990",
+        "D": "Company Law Enforcement Act 2001"
+      },
+      "correct_answer": "B",
+      "explanation": "The Companies Act 2014 consolidated 16 separate company law statutes into a single Act of 1,448 sections, coming into operation on 1 June 2015."
+    },
+    {
+      "id": 2,
+      "question": "How many sections does the Companies Act 2014 contain?",
+      "options": {
+        "A": "963",
+        "B": "1,200",
+        "C": "1,448",
+        "D": "1,500"
+      },
+      "correct_answer": "C",
+      "explanation": "The Companies Act 2014 contains 1,448 sections, making it one of the most substantial pieces of legislation in Irish legal history."
+    },
+    {
+      "id": 3,
+      "question": "A company acquires legal personality upon the issue of which document?",
+      "options": {
+        "A": "A memorandum of association",
+        "B": "A certificate of incorporation",
+        "C": "An annual return",
+        "D": "A shareholders' agreement"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 37 CA 2014, upon registration the Registrar issues a certificate of incorporation, at which point the company becomes a body corporate with a legal existence separate from its members."
+    },
+    {
+      "id": 4,
+      "question": "Under section 37 CA 2014, what is the effect of incorporation on the liability of members of a company limited by shares?",
+      "options": {
+        "A": "Members are personally liable for all company debts",
+        "B": "Members' liability is unlimited",
+        "C": "Members' liability is limited to the amount unpaid on their shares",
+        "D": "Members bear no liability whatsoever"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 37 CA 2014 provides that incorporation limits members' liability to the amount, if any, unpaid on their shares. This is the foundational benefit of the limited liability company."
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is NOT one of the five types of company that may be formed under the Companies Act 2014?",
+      "options": {
+        "A": "Private company limited by shares (LTD)",
+        "B": "Designated activity company (DAC)",
+        "C": "Unlimited liability company (ULC)",
+        "D": "Registered partnership (RP)"
+      },
+      "correct_answer": "D",
+      "explanation": "The CA 2014 provides for five types of company: LTD, DAC, PLC, CLG (company limited by guarantee), and ULC. A registered partnership is not a company type under the CA 2014."
+    },
+    {
+      "id": 6,
+      "question": "In Salomon v Salomon & Co Ltd [1897], the House of Lords held that a company is:",
+      "options": {
+        "A": "An agent of its principal shareholders",
+        "B": "A separate legal entity distinct from its members",
+        "C": "An alter ego of the majority shareholder",
+        "D": "A partnership in disguise if it has fewer than seven members"
+      },
+      "correct_answer": "B",
+      "explanation": "In Salomon v Salomon & Co Ltd [1897] AC 22, the House of Lords definitively established that a validly incorporated company is a legal entity entirely separate and distinct from its members, regardless of who owns or controls it."
+    },
+    {
+      "id": 7,
+      "question": "Which body is responsible for the registration of companies in Ireland?",
+      "options": {
+        "A": "The Corporate Enforcement Authority (CEA)",
+        "B": "The Companies Registration Office (CRO)",
+        "C": "The Financial Conduct Authority (FCA)",
+        "D": "The Department of Enterprise, Trade and Employment"
+      },
+      "correct_answer": "B",
+      "explanation": "The Companies Registration Office (CRO) is the central repository of public statutory information on Irish companies and is responsible for registration of new companies and maintenance of the public register."
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is a consequence of separate legal personality?",
+      "options": {
+        "A": "The company cannot own property in its own name",
+        "B": "The company can sue and be sued in its own name",
+        "C": "The company's assets belong to its shareholders",
+        "D": "Shareholders are liable for the company's debts"
+      },
+      "correct_answer": "B",
+      "explanation": "A consequence of separate legal personality is that the company can sue and be sued in its own name, enter contracts, own property, and employ staff — all distinct from any action taken by its shareholders."
+    },
+    {
+      "id": 9,
+      "question": "Perpetual succession means that a company:",
+      "options": {
+        "A": "Automatically dissolves on the death of its founding member",
+        "B": "Continues in existence regardless of changes in membership",
+        "C": "Must wind up after 25 years of trading",
+        "D": "Passes to the heirs of the majority shareholder on death"
+      },
+      "correct_answer": "B",
+      "explanation": "Perpetual succession is a key characteristic of incorporation: the company continues to exist regardless of changes in its membership through death, retirement, or transfer of shares."
+    },
+    {
+      "id": 10,
+      "question": "The document that governs a private limited company (LTD) under the CA 2014 is called:",
+      "options": {
+        "A": "The memorandum and articles of association",
+        "B": "The constitution",
+        "C": "The shareholders' agreement",
+        "D": "The debenture"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the CA 2014, a private limited company (LTD) has a single constitutional document called the constitution, which replaces the separate memorandum and articles of association used under the older regime."
+    },
+    {
+      "id": 11,
+      "question": "Under section 38 CA 2014, what is the legal capacity of a private limited company (LTD)?",
+      "options": {
+        "A": "Limited to the objects stated in its constitution",
+        "B": "Restricted to activities approved by the CRO",
+        "C": "Unlimited — it has full capacity of a natural person",
+        "D": "Limited to commercial activities only"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 38 CA 2014 gives an LTD the full capacity of a natural person. Unlike older companies and DACs, an LTD has no objects clause and its legal capacity is unlimited."
+    },
+    {
+      "id": 12,
+      "question": "How many previous company law statutes did the Companies Act 2014 consolidate?",
+      "options": {
+        "A": "8",
+        "B": "12",
+        "C": "16",
+        "D": "22"
+      },
+      "correct_answer": "C",
+      "explanation": "The Companies Act 2014 consolidated 16 separate company law statutes that had accumulated since 1963, replacing them with a single, unified Act."
+    },
+    {
+      "id": 13,
+      "question": "Under the CA 2014, which company type is the default vehicle for a private business?",
+      "options": {
+        "A": "Designated activity company (DAC)",
+        "B": "Company limited by guarantee (CLG)",
+        "C": "Private limited company (LTD)",
+        "D": "Public limited company (PLC)"
+      },
+      "correct_answer": "C",
+      "explanation": "The private limited company (LTD) is the default and most common vehicle for private businesses under the CA 2014, combining limited liability with maximum flexibility and minimal formality."
+    },
+    {
+      "id": 14,
+      "question": "In which case did the Court of Appeal of England and Wales hold that a company is not an agent or trustee of its members?",
+      "options": {
+        "A": "Lee v Lee's Air Farming [1961]",
+        "B": "Macaura v Northern Assurance [1925]",
+        "C": "Salomon v Salomon & Co Ltd [1897]",
+        "D": "Adams v Cape Industries [1990]"
+      },
+      "correct_answer": "C",
+      "explanation": "The Salomon decision confirmed that a company is not an agent or trustee of its shareholders — it is a fully independent legal entity, capable of holding property and incurring liabilities on its own behalf."
+    },
+    {
+      "id": 15,
+      "question": "A company limited by shares is formed with the object of making profit for its members. Under which category does this fall?",
+      "options": {
+        "A": "Company limited by guarantee",
+        "B": "Unlimited liability company",
+        "C": "Private limited company or public limited company",
+        "D": "Statutory corporation"
+      },
+      "correct_answer": "C",
+      "explanation": "A company limited by shares — whether private (LTD/DAC) or public (PLC) — is the vehicle for commercial profit-making activity. Companies limited by guarantee (CLG) are more commonly used for non-profit and charitable purposes."
+    },
+    {
+      "id": 16,
+      "question": "Which Act came into operation on 1 June 2015 and governs the formation and regulation of companies in Ireland?",
+      "options": {
+        "A": "Companies Act 1963",
+        "B": "Companies (Amendment) Act 1990",
+        "C": "Companies Act 2014",
+        "D": "Corporate Governance Act 2019"
+      },
+      "correct_answer": "C",
+      "explanation": "The Companies Act 2014 came into operation on 1 June 2015 and is the primary statute governing the formation, management, and dissolution of companies in Ireland."
+    },
+    {
+      "id": 17,
+      "question": "Which of the following characteristics is shared by both a private limited company (LTD) and a designated activity company (DAC)?",
+      "options": {
+        "A": "Both have objects clauses in their constitution",
+        "B": "Both are limited liability vehicles",
+        "C": "Both must hold an annual general meeting",
+        "D": "Both require at least two directors"
+      },
+      "correct_answer": "B",
+      "explanation": "Both the LTD and DAC are companies limited by shares and carry the fundamental characteristic of limited liability. They differ in structure: the LTD has a single document and no objects clause; the DAC has two documents and an objects clause."
+    }
+  ]
+}

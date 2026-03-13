@@ -1,0 +1,167 @@
+{
+  "subject": "Constitutional Law",
+  "el_script_ref": "ConstitutionalLaw_ElevenLabs_Module02_Lesson05.txt",
+  "module_number": 2,
+  "module_title": "Institutions of the State",
+  "lesson_number": 5,
+  "lesson_title": "The President (Arts. 12–14)",
+  "total_questions": 13,
+  "questions": [
+    {
+      "id": "CON_M02_L05_Q01",
+      "question": "Under Article 12.3.1° of the Constitution, what is the term of office of the President of Ireland and what restriction applies to re-election?",
+      "options": {
+        "A": "Five-year term with no restriction on re-election",
+        "B": "Seven-year term with a maximum of two terms in total",
+        "C": "Seven-year term with no restriction on re-election",
+        "D": "Six-year term with a maximum of two consecutive terms"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 12.3.1° provides for a seven-year term. Article 12.3.2° limits a person to two terms as President, whether consecutive or not. This two-term absolute cap distinguishes the Irish presidency from some other republican models."
+    },
+    {
+      "id": "CON_M02_L05_Q02",
+      "question": "Which of the following acts may the President perform in his/her absolute discretion under Article 13 of the Constitution, without being bound by the advice of the Government?",
+      "options": {
+        "A": "Appointing judges on the advice of the Judicial Appointments Advisory Board",
+        "B": "Refusing to dissolve the Dáil to a Taoiseach who has ceased to retain the confidence of the Dáil",
+        "C": "Signing a Bill that has not been referred under Article 26",
+        "D": "Promulgating Acts of the Oireachtas within the prescribed time limit"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 13.2.2° expressly grants the President an absolute discretion to refuse dissolution of the Dáil to a Taoiseach who has ceased to retain the confidence of the Dáil. This is one of a small category of discretionary powers (along with Art. 26 references and convening the Council of State) not subject to Government advice."
+    },
+    {
+      "id": "CON_M02_L05_Q03",
+      "question": "Under Article 26 of the Constitution, within what period must the President refer a Bill to the Supreme Court after consultation with the Council of State?",
+      "options": {
+        "A": "Seven days",
+        "B": "Fourteen days",
+        "C": "Twenty-one days",
+        "D": "Thirty days"
+      },
+      "correct_answer": "A",
+      "explanation": "Article 26.1.1° requires the President to refer the Bill within seven days of the date on which it was presented to the President. The referral requires prior consultation with the Council of State. This is the exclusive mechanism for pre-enactment constitutionality review."
+    },
+    {
+      "id": "CON_M02_L05_Q04",
+      "question": "The Supreme Court upheld the constitutionality of a Bill referred under Article 26. The Bill was subsequently enacted and a citizen later challenged it on constitutional grounds in plenary proceedings. What is the legal position?",
+      "options": {
+        "A": "The Act may be challenged, but only on grounds not considered by the Supreme Court in the Article 26 reference",
+        "B": "The Act is immune from any future constitutional challenge by virtue of Article 34.3.2°",
+        "C": "The Act may be challenged by any party who was not represented in the Article 26 proceedings",
+        "D": "The Act is presumed constitutional but may still be declared invalid if new constitutional arguments are raised"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 34.3.2° creates an irrebuttable constitutional immunity: once a Bill is upheld by the Supreme Court under an Article 26 reference, the resulting Act is absolutely protected from any future constitutional challenge. This is an absolute bar, regardless of arguments not considered, new developments, or persons not represented. See Re Article 26 and the Employment Equality Bill 1996 [1997] 2 IR 321."
+    },
+    {
+      "id": "CON_M02_L05_Q05",
+      "question": "Which body must the President consult before exercising the discretionary power to refer a Bill to the Supreme Court under Article 26?",
+      "options": {
+        "A": "The Attorney General",
+        "B": "The Cabinet",
+        "C": "The Council of State",
+        "D": "The Chief Justice"
+      },
+      "correct_answer": "C",
+      "explanation": "Article 26.1.1° requires prior consultation with the Council of State before making an Article 26 reference. The Council of State (Art. 31) is an advisory body chaired by the President comprising ex-officio members (Taoiseach, Ceann Comhairle, etc.) and up to seven Presidential nominees. Consultation is mandatory but not binding on the President."
+    },
+    {
+      "id": "CON_M02_L05_Q06",
+      "question": "In Boland v An Taoiseach [1974] IR 338, the Supreme Court held that certain Presidential functions are non-justiciable. Which of the following best captures the constitutional basis for that conclusion?",
+      "options": {
+        "A": "The President enjoys absolute immunity from suit under Article 13.8.1°",
+        "B": "Separation of powers prevents courts reviewing the exercise of purely political or constitutional functions expressly assigned to another organ",
+        "C": "The Council of State’s advisory role displaces any judicial supervisory jurisdiction",
+        "D": "Article 15.4 prohibits any legal challenge to actions taken under the Constitution"
+      },
+      "correct_answer": "B",
+      "explanation": "The non-justiciability of Presidential functions flows from the separation of powers: courts will not review the merits of decisions expressly and exclusively assigned by the Constitution to another organ (such as the President’s discretionary acts under Art. 13). Article 13.8.1° confirms the President’s immunity from civil proceedings for acts done in the exercise of Presidential functions."
+    },
+    {
+      "id": "CON_M02_L05_Q07",
+      "question": "Under Article 14 of the Constitution, a Commission of Presidential Functions is established in certain circumstances. Which of the following situations would trigger the operation of the Commission?",
+      "options": {
+        "A": "Where the President is absent from the State for more than 48 hours",
+        "B": "Where the presidential election result is under legal challenge",
+        "C": "Where the President is incapacitated, or the office is vacant and an election has not yet been held",
+        "D": "Where the President refuses to sign a Bill within the constitutional time limit"
+      },
+      "correct_answer": "C",
+      "explanation": "Article 14.1 establishes the Commission of Presidential Functions to exercise Presidential functions when (a) the President is incapacitated, (b) the office is vacant pending an election, or (c) the President is abroad. The Commission consists of the Chief Justice, the Ceann Comhairle, and the Cathaoirleach of the Seanad. Simple absence abroad does not require 48 hours before the Commission operates — all foreign travel engages the Commission."
+    },
+    {
+      "id": "CON_M02_L05_Q08",
+      "question": "Under Article 12.10, the President may be removed from office. Which of the following correctly states the procedure?",
+      "options": {
+        "A": "By a resolution passed by both Houses of the Oireachtas on grounds of stated misbehaviour or incapacity, without any role for the courts",
+        "B": "By the Supreme Court following an Article 26 reference establishing incapacity",
+        "C": "By impeachment proceedings initiated in the Seanad and confirmed by the Dáil",
+        "D": "By the Council of State on a two-thirds majority vote certifying incapacity"
+      },
+      "correct_answer": "A",
+      "explanation": "Article 12.10 provides that the President may be impeached by the Oireachtas: charges are laid by one House (requiring a two-thirds majority) and investigated and adjudicated by the other House. If the President is found guilty by a two-thirds majority of the second House, the President stands removed. This is a parliamentary procedure with no judicial involvement. Contrast Art. 35.4 which provides for removal of judges by address of both Houses."
+    },
+    {
+      "id": "CON_M02_L05_Q09",
+      "question": "Which of the following presidential acts requires the positive advice of the Government rather than the President’s personal discretion?",
+      "options": {
+        "A": "Referring a Bill to the Supreme Court under Article 26",
+        "B": "Convening the Council of State on the President’s own initiative",
+        "C": "Appointing the Taoiseach nominated by Dáil Éireann",
+        "D": "Addressing both Houses of the Oireachtas on a matter of national or public importance on the President’s own initiative"
+      },
+      "correct_answer": "C",
+      "explanation": "The appointment of the Taoiseach (Art. 13.1.1°) is mandatory once the Dáil nominates — the President has no discretion. In contrast, Art. 26 references, convening the Council of State, and addressing the Oireachtas on the President’s own initiative are all discretionary acts that do not require Government advice."
+    },
+    {
+      "id": "CON_M02_L05_Q10",
+      "question": "The President exercises the power of commutation and remission of punishment under which Article, and is this an absolute discretion?",
+      "options": {
+        "A": "Article 13.6; yes, it is an absolute discretion exercised without advice",
+        "B": "Article 13.6; no, it is exercised on the advice of the Government",
+        "C": "Article 28.2; yes, as an executive power of the State",
+        "D": "Article 34.4; no, it requires concurrence of the Supreme Court"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 13.6 grants the President the power to commute or remit punishment imposed by a court, but unlike the discretionary acts under Arts. 13.2.2° and 26, this power is exercised on the advice of the Government. The distinction between Presidential acts exercised in absolute discretion and those requiring Government advice is a classic FE-1 examination topic."
+    },
+    {
+      "id": "CON_M02_L05_Q11",
+      "question": "A Bill has been passed by both Houses of the Oireachtas. The President signs and promulgates the Bill without referring it under Article 26. Two years later, the Act is challenged in the High Court as unconstitutional. Which statement is correct?",
+      "options": {
+        "A": "The challenge is barred because the President’s signature creates an irrebuttable presumption of constitutionality",
+        "B": "The challenge may proceed; the irrebuttable bar under Art. 34.3.2° applies only where the Bill was actually referred under Art. 26 and upheld",
+        "C": "The challenge is barred if it concerns a right that existed at the time of enactment",
+        "D": "The challenge may only proceed in the Supreme Court via a leapfrog appeal from the High Court"
+      },
+      "correct_answer": "B",
+      "explanation": "The Article 34.3.2° irrebuttable bar is triggered only where a Bill has been referred under Article 26 and found constitutional by the Supreme Court. Where the President signs without referral, the Act enjoys only the ordinary rebuttable presumption of constitutionality (Pigs Marketing Board v Donnelly [1939]) and can be challenged in plenary proceedings in the ordinary courts."
+    },
+    {
+      "id": "CON_M02_L05_Q12",
+      "question": "Which of the following Bills CANNOT be referred by the President to the Supreme Court under Article 26?",
+      "options": {
+        "A": "A Finance Bill",
+        "B": "A Bill to amend the Defence Acts",
+        "C": "A Bill containing a Henry VIII clause",
+        "D": "A Bill to amend or repeal the Constitution"
+      },
+      "correct_answer": "D",
+      "explanation": "Article 26.1.1° expressly excludes from the Article 26 reference procedure: (i) Money Bills, (ii) Bills expressed to be urgent under Article 24, and (iii) Bills to amend the Constitution. The rationale is that constitutional amendments derive their validity from popular approval in a referendum and are therefore beyond judicial pre-enactment review."
+    },
+    {
+      "id": "CON_M02_L05_Q13",
+      "question": "Article 13.8.1° provides that the President shall not be answerable to either House of the Oireachtas or to any court for the exercise and performance of Presidential functions. A citizen brings judicial review proceedings challenging the President’s failure to exercise a discretionary power. What is the most likely outcome?",
+      "options": {
+        "A": "The court will grant relief if the refusal to exercise the power is unreasonable in the Wednesbury sense",
+        "B": "The court will dismiss the proceedings as non-justiciable given Article 13.8.1° and the separation of powers",
+        "C": "The court will order the President to exercise the discretion but will not prescribe the outcome",
+        "D": "The Council of State may be ordered to intervene and direct the President"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 13.8.1° creates a constitutional immunity: the President is not answerable to any court for the exercise of Presidential functions. This, combined with the separation of powers principle (as affirmed in Boland v An Taoiseach [1974]), renders challenges to the exercise of Presidential discretionary functions non-justiciable. Courts will not inquire into the exercise of powers expressly assigned by the Constitution to the President acting in personal discretion."
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "subject": "Constitutional Law",
+  "el_script_ref": "ConstitutionalLaw_ElevenLabs_Module08_Lesson01.txt",
+  "module_number": 8,
+  "module_title": "International Relations and European Union Law",
+  "lesson_number": 1,
+  "lesson_title": "International Law and Foreign Policy (Art. 29)",
+  "total_questions": 13,
+  "questions": [
+    {
+      "id": "CON_M08_L01_Q01",
+      "question": "Art. 29 of the Irish Constitution deals with Ireland's approach to international relations. Art. 29.1 provides that Ireland:",
+      "options": {
+        "A": "May enter into any international treaty without Oireachtas approval provided the Government so decides",
+        "B": "Affirms its devotion to the ideal of peace and friendly co-operation amongst nations founded on international justice and morality",
+        "C": "Accepts the principle of monism — international law is automatically part of domestic Irish law",
+        "D": "Is bound by all decisions of the United Nations Security Council as superior to domestic constitutional law"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 29.1 expresses Ireland's aspiration to the ideal of peace and friendly cooperation amongst nations founded on international justice and morality. Art. 29.2 affirms Ireland's adherence to the principle of pacific settlement of international disputes. These are aspirational commitments; they do not of themselves create justiciable legal rights, but they inform the interpretation of other constitutional provisions and Ireland's engagement with international organisations and treaties."
+    },
+    {
+      "id": "CON_M08_L01_Q02",
+      "question": "Art. 29.3 of the Constitution provides that Ireland accepts the 'generally recognised principles of international law as its rule of conduct in its relations with other States.' This provision:",
+      "options": {
+        "A": "Automatically incorporates all customary international law into Irish domestic law with constitutional force",
+        "B": "Governs Ireland's conduct in its external relations with other states but does not automatically incorporate customary international law into domestic Irish law — it applies to Ireland's international conduct, not to the rights of individuals in domestic courts",
+        "C": "Requires the Oireachtas to pass legislation giving effect to all UN resolutions",
+        "D": "Creates justiciable rights for individual citizens to enforce international law standards in Irish courts"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 29.3 commits Ireland to conduct its relations with other states in accordance with generally recognised principles of international law. However, Irish courts have consistently held (e.g., in Re Ó Laighléis [1960] IR 93) that this provision governs Ireland's international conduct — it does not automatically incorporate customary international law into domestic law so as to be enforceable by individuals in Irish courts. For customary international law to be directly applicable in Irish courts, it must be incorporated by legislation or the Constitution. Art. 29.3 is thus a guide to executive action, not a direct source of individual rights."
+    },
+    {
+      "id": "CON_M08_L01_Q03",
+      "question": "The leading case on the status of customary international law in Irish domestic law is Re Ó Laighléis [1960] IR 93, in which the Supreme Court held:",
+      "options": {
+        "A": "That customary international law is automatically incorporated into Irish law and prevails over inconsistent domestic legislation",
+        "B": "That the European Convention on Human Rights (then unincorporated) could not be relied upon as a source of rights in Irish courts, as international treaty obligations do not form part of Irish domestic law unless incorporated by the Oireachtas",
+        "C": "That Art. 29.3 of the Constitution itself creates justiciable rights in international law for Irish citizens",
+        "D": "That the Government has unlimited power to derogate from international human rights treaties"
+      },
+      "correct_answer": "B",
+      "explanation": "Re Ó Laighléis [1960] IR 93 is the foundational Irish authority on the dualist nature of Ireland's approach to international law. The Supreme Court held that the European Convention on Human Rights, which Ireland had ratified but not incorporated into domestic law, could not be relied upon as a source of enforceable rights in Irish courts. This reflects the dualist principle — international law and domestic law are separate systems, and treaty obligations only form part of Irish domestic law when incorporated by legislation enacted by the Oireachtas. This dualist approach was maintained until the ECHR Act 2003."
+    },
+    {
+      "id": "CON_M08_L01_Q04",
+      "question": "Under Art. 29.5.1° and 29.5.2° of the Constitution, the Oireachtas's role in international treaty-making is:",
+      "options": {
+        "A": "The Oireachtas must ratify all treaties before Ireland is internationally bound by them",
+        "B": "The State shall not be bound by any international agreement involving a charge upon public funds without prior approval of Dáil Éireann; the Government may conclude international agreements but the Oireachtas must approve those with significant financial implications or that alter domestic law",
+        "C": "The Dáil has no role in treaty-making — the Government has exclusive constitutional power over foreign affairs",
+        "D": "All treaties must be approved by both Houses of the Oireachtas and confirmed by referendum"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 29.5.1° provides that the State shall not be bound by any international agreement involving a charge upon public funds without the prior approval of Dáil Éireann. Art. 29.5.2° provides that the international agreements to which the State becomes a party shall be laid before Dáil Éireann. In practice, the Government has significant executive power over foreign affairs and treaty conclusion; Dáil approval (rather than full Oireachtas ratification) is required for treaties involving public funds. Some treaties also require constitutional amendment by referendum if they alter the Constitution — as established in Crotty v An Taoiseach [1987] IR 713."
+    },
+    {
+      "id": "CON_M08_L01_Q05",
+      "question": "In Crotty v An Taoiseach [1987] IR 713 (Supreme Court), the Court held that Ireland could not ratify the Single European Act without a constitutional amendment approved by referendum. The basis for this decision was:",
+      "options": {
+        "A": "That all international treaties require constitutional amendment by referendum",
+        "B": "That Title III of the SEA (European Political Cooperation) purported to bind Ireland to adopt common foreign policy positions, thereby constraining the Government's future exercise of its executive foreign policy power — an abridgement of sovereignty that could only be authorised by constitutional amendment",
+        "C": "That the Single European Act was incompatible with Art. 29.1's commitment to peaceful international relations",
+        "D": "That any extension of EU competences automatically requires a referendum under the Constitution"
+      },
+      "correct_answer": "B",
+      "explanation": "In Crotty v An Taoiseach [1987] IR 713, the Supreme Court held that while some Treaty amendments could be ratified under Art. 29.4.3° (the then-EC amendment), Title III of the Single European Act — dealing with European Political Cooperation in foreign policy — could not. Title III committed Ireland to coordinate and align its foreign policy with other member states, which the Court held was an unconstitutional abridgement of the Government's constitutional prerogative over foreign policy. This could only be done by constitutional amendment and referendum, not by Government ratification alone. This decision established the principle that significant transfers of sovereignty require a constitutional referendum."
+    },
+    {
+      "id": "CON_M08_L01_Q06",
+      "question": "Ireland's dualist approach to international law means that:",
+      "options": {
+        "A": "International law and domestic Irish law are the same system — international law is automatically law in Ireland",
+        "B": "International law and domestic Irish law are separate legal systems — international treaty obligations do not become part of Irish domestic law unless specifically incorporated by legislation enacted by the Oireachtas",
+        "C": "International law takes precedence over domestic law in all cases involving Ireland's international commitments",
+        "D": "The Irish Constitution is subordinate to international customary law in all circumstances"
+      },
+      "correct_answer": "B",
+      "explanation": "Ireland follows the dualist approach to international law, clearly established in Re Ó Laighléis [1960] IR 93 and affirmed repeatedly. Dualism treats international law and domestic law as separate systems: treaty obligations bind the State at international level but do not automatically become enforceable domestic law. Incorporation by the Oireachtas (legislation) is required to give international obligations domestic legal effect. This contrasts with the monist approach (as in some EU member states), where international law is automatically part of the domestic legal order. The principal exception in Irish law is EU law, which has a special constitutional status under Art. 29.4."
+    },
+    {
+      "id": "CON_M08_L01_Q07",
+      "question": "The constitutional basis for Ireland's membership of the United Nations is:",
+      "options": {
+        "A": "Art. 29.4 — the EU membership provision, applied by analogy",
+        "B": "Art. 29.1, 29.2, and 29.3 — Ireland's general commitments to international law and peaceful cooperation, together with the Government's executive power over foreign affairs under Art. 29",
+        "C": "A specific referendum amending the Constitution to permit UN membership",
+        "D": "Art. 28.3 — the war powers of the Government"
+      },
+      "correct_answer": "B",
+      "explanation": "Ireland's membership of the United Nations (since 1955) does not rest on a specific constitutional amendment (unlike EU membership, which required Art. 29.4 amendments). It is founded on the Government's general executive power over foreign affairs and Ireland's constitutional commitments under Art. 29.1-29.3 to international peace, cooperation, and the principles of international law. Because UN membership does not in itself transfer legislative or judicial power from Ireland's constitutional order in the way EU membership does, it did not require a constitutional referendum."
+    },
+    {
+      "id": "CON_M08_L01_Q08",
+      "question": "A plaintiff in an Irish court seeks to enforce rights under an international human rights treaty (other than the ECHR) that Ireland has ratified but which has not been incorporated by statute into Irish domestic law. The court will:",
+      "options": {
+        "A": "Enforce the treaty rights directly — ratification alone creates domestic legal obligations",
+        "B": "Decline to enforce the treaty rights as self-executing domestic law — in a dualist system, unincorporated treaty obligations are not directly enforceable in domestic courts; however, the court may use the treaty as an interpretive aid when construing domestic statutes or constitutional provisions",
+        "C": "Refer the matter to the Government for instruction on whether to enforce the treaty",
+        "D": "Apply the treaty directly if the plaintiff establishes that it was intended to confer individual rights"
+      },
+      "correct_answer": "B",
+      "explanation": "In Ireland's dualist system, unincorporated international treaties — even if ratified by the Government — do not create directly enforceable rights in domestic courts. The courts cannot apply treaty provisions as autonomous sources of domestic law. However, courts may use unincorporated treaties as interpretive guides when: (a) construing ambiguous domestic legislation (the presumption of conformity with international obligations); or (b) identifying unenumerated personal rights under Art. 40.3 where the treaty reflects international consensus on fundamental rights. The treaty itself cannot override contrary domestic legislation or provide a standalone cause of action."
+    },
+    {
+      "id": "CON_M08_L01_Q09",
+      "question": "Art. 29.6 of the Constitution (inserted by referendum) provides that no provision of the Constitution invalidates laws enacted, acts done, or measures adopted by the State that are necessitated by membership of the European Union. This provision operates to:",
+      "options": {
+        "A": "Allow EU law to override the Irish Constitution entirely in all circumstances",
+        "B": "Immunise from constitutional challenge those laws, acts, and measures that are necessitated by Ireland's EU membership obligations — creating a constitutional shield for EU-required measures",
+        "C": "Require the Oireachtas to implement all EU directives regardless of their content",
+        "D": "Permit the Government to amend the Constitution by executive order in order to comply with EU law"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 29.4.6° (now Art. 29.6 following consolidation) provides that no provision of the Constitution invalidates laws, acts, or measures 'necessitated by the obligations of membership' of the European Union. This was inserted to prevent constitutional challenge to measures required by EU membership — for example, laws implementing EU directives that might conflict with specific constitutional provisions. The key word is 'necessitated': measures that merely relate to EU law, or that go beyond what EU law requires, do not benefit from this immunity. This provision was critical in resolving the tension between EU supremacy and Irish constitutional supremacy."
+    },
+    {
+      "id": "CON_M08_L01_Q010",
+      "question": "The Lisbon Treaty ratification process in Ireland required two referendums (2008 initial rejection; 2009 approval after renegotiation). The constitutional requirement for a referendum in Ireland for significant EU treaty amendments is established by:",
+      "options": {
+        "A": "A standing requirement in the Constitution that all EU Treaties must be approved by referendum",
+        "B": "The Crotty v An Taoiseach [1987] IR 713 principle — any international agreement that significantly transfers or abridges Irish sovereignty or constitutional powers, beyond what existing constitutional amendments permit, requires amendment of Art. 29.4 by referendum",
+        "C": "A statutory requirement in the European Union Act 2009 that all EU treaties go to referendum",
+        "D": "A Government policy decision — referendums are politically required but not constitutionally mandated for EU Treaty amendments"
+      },
+      "correct_answer": "B",
+      "explanation": "Following Crotty v An Taoiseach [1987] IR 713, any EU Treaty amendment that transfers new or significantly expanded powers to the EU beyond those already authorised in the existing text of Art. 29.4 requires a constitutional amendment — and thus a referendum under Art. 46. This has been the basis for Irish referendums on EU Treaties: Maastricht (1992), Amsterdam (1998), Nice (first failed in 2001, passed in 2002), and Lisbon (failed in 2008, passed in 2009 after legal guarantees). The referendum requirement is constitutionally driven by the sovereignty principle, not by statute or Government policy."
+    },
+    {
+      "id": "CON_M08_L01_Q11",
+      "question": "Art. 29.4.2° of the Constitution (inserted by the 10th Amendment 1987) provides that the State may ratify the Single European Act. This amendment was required following:",
+      "options": {
+        "A": "The Government's voluntary decision to hold a referendum on the Single European Act",
+        "B": "Crotty v An Taoiseach [1987] IR 713, in which the Supreme Court held that Title III of the SEA required constitutional authorisation not available under the existing Art. 29.4 provisions, necessitating a referendum",
+        "C": "A ruling of the Court of Justice of the EU that Ireland was in breach of its Community obligations",
+        "D": "Pressure from other EU member states to amend the Irish Constitution to conform with EU law"
+      },
+      "correct_answer": "B",
+      "explanation": "It was the Supreme Court's decision in Crotty v An Taoiseach [1987] IR 713 that directly necessitated the constitutional amendment. The Court held that while some provisions of the Single European Act fell within existing constitutional authorisation, Title III (European Political Cooperation) required a specific constitutional amendment. The Government therefore held a referendum, which approved the 10th Amendment, inserting Art. 29.4.2° to authorise ratification of the SEA including its foreign policy cooperation provisions."
+    },
+    {
+      "id": "CON_M08_L01_Q12",
+      "question": "Art. 29.8 of the Constitution (inserted by the 19th Amendment 1998) concerns Ireland's relationship with Northern Ireland and provides that provisions of the Constitution concerning the national territory shall not apply to or affect matters arising out of the Good Friday Agreement 1998. This amendment was necessary because:",
+      "options": {
+        "A": "The EU required Ireland to amend its Constitution as a condition of its membership",
+        "B": "Arts. 2 and 3 (as then drafted) asserted a territorial claim over Northern Ireland and the Good Friday Agreement required abandonment of that claim, necessitating constitutional amendment replacing the territorial claim with an aspiration to unity by peaceful means and consent",
+        "C": "The UK Supreme Court ruled that Arts. 2 and 3 violated international law",
+        "D": "The 19th Amendment was a routine procedural amendment with no impact on territorial provisions"
+      },
+      "correct_answer": "B",
+      "explanation": "Arts. 2 and 3 of the original 1937 Constitution asserted Ireland's claim to the whole island of Ireland as its national territory. The Good Friday Agreement (Belfast Agreement) 1998 required Ireland to remove this territorial claim and replace it with an affirmation that a united Ireland can only be achieved by peaceful means and with the consent of a majority in Northern Ireland. The 19th Amendment 1998 (approved by referendum) replaced the original Arts. 2 and 3 with new provisions reflecting the consent principle and mutual respect for different traditions. The 29th Amendment (also 1998) provided for the Good Friday Agreement's cross-border bodies."
+    },
+    {
+      "id": "CON_M08_L01_Q13",
+      "question": "The distinction between Art. 29.3 (accepted principles of international law as rule of conduct) and Art. 29.4 (EU membership) is that:",
+      "options": {
+        "A": "Art. 29.3 is justiciable in domestic courts; Art. 29.4 is not",
+        "B": "Art. 29.3 governs Ireland's international conduct in relations with other states but does not create directly enforceable domestic rights; Art. 29.4 provides a specific constitutional basis for EU membership, under which EU law has direct effect and primacy as a matter of both EU and Irish constitutional law",
+        "C": "Art. 29.3 applies only to military alliances; Art. 29.4 applies only to economic treaties",
+        "D": "Art. 29.4 supersedes Art. 29.3 for all international law purposes"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 29.3's acceptance of generally recognised principles of international law as Ireland's 'rule of conduct' in relations with other states is a guide to executive conduct — it governs how Ireland behaves internationally but does not grant individuals enforceable rights in domestic courts (Re Ó Laighléis [1960] IR 93). Art. 29.4, by contrast, provides the specific constitutional authorisation for EU membership and creates the framework within which EU law has direct effect and primacy in the Irish legal order — enforceable by individuals in Irish courts and taking precedence over inconsistent domestic law. These are qualitatively different constitutional mechanisms."
+    }
+  ]
+}

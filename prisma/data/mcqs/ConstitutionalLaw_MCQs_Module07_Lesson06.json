@@ -1,0 +1,167 @@
+{
+  "subject": "Constitutional Law",
+  "el_script_ref": "ConstitutionalLaw_ElevenLabs_Module07_Lesson06.txt",
+  "module_number": 7,
+  "module_title": "Criminal Justice and Fair Procedures",
+  "lesson_number": 6,
+  "lesson_title": "Pre-Trial Publicity and the Right to an Impartial Jury",
+  "total_questions": 13,
+  "questions": [
+    {
+      "id": "CON_M07_L06_Q01",
+      "question": "The constitutional right to an impartial jury in a criminal trial is most directly derived from:",
+      "options": {
+        "A": "Art. 40.1 — equality before the law",
+        "B": "Art. 38.1 — trial in due course of law, which encompasses the right to a fair and impartial tribunal",
+        "C": "Art. 34.1 — administration of justice in courts established by law",
+        "D": "Art. 38.5 — the right to trial by jury in non-minor offences"
+      },
+      "correct_answer": "B",
+      "explanation": "The right to an impartial jury flows from Art. 38.1's guarantee of trial 'in due course of law.' A fair trial necessarily requires that the jury — as the tribunal of fact — approaches the case impartially, without pre-existing views of the accused's guilt formed through prejudicial pre-trial publicity. Art. 38.5, which guarantees trial by jury for non-minor offences, is complementary; the qualitative requirement that the jury be impartial derives from the due course of law guarantee in Art. 38.1."
+    },
+    {
+      "id": "CON_M07_L06_Q02",
+      "question": "Z v DPP [1994] 2 IR 476 (Supreme Court) is the leading Irish authority on pre-trial publicity. Its central holding is that:",
+      "options": {
+        "A": "Extensive pre-trial media coverage automatically requires the prohibition of the trial",
+        "B": "The test for prohibition based on pre-trial publicity is whether there is a real and serious risk of an unfair trial — a risk that cannot be overcome by safeguards such as judicial directions to the jury",
+        "C": "Pre-trial publicity affects only the right to an expeditious trial, not the right to an impartial jury",
+        "D": "Prohibition is the only available remedy — trial judges have no power to address prejudicial publicity"
+      },
+      "correct_answer": "B",
+      "explanation": "Z v DPP [1994] 2 IR 476 established the governing test: prohibition on grounds of pre-trial publicity will only be granted where there is a real and serious risk that the accused cannot receive a fair trial by reason of the publicity, and where that risk cannot be adequately addressed by safeguards available within the trial process itself (such as judicial directions to the jury, warnings to disregard media coverage, or challenges for cause of jurors). Adverse publicity alone is insufficient — the court must be satisfied that prejudice is so pervasive and serious that no trial remedy can cure it."
+    },
+    {
+      "id": "CON_M07_L06_Q03",
+      "question": "In assessing whether pre-trial publicity justifies prohibition of a trial, Irish courts consider a range of factors. Which of the following is NOT one of the key factors?",
+      "options": {
+        "A": "The nature and extent of the publicity — was it widespread, inflammatory, or focused on the accused's character rather than the alleged facts?",
+        "B": "The time elapsed between the publicity and the proposed trial — does the passage of time allow prejudice to fade?",
+        "C": "The availability of safeguards within the trial process to address residual prejudice",
+        "D": "Whether the accused's legal team had previously acted in high-profile cases"
+      },
+      "correct_answer": "D",
+      "explanation": "The key factors assessed in pre-trial publicity applications include: (1) the nature, content, and extent of the publicity — was it prejudicial, inflammatory, or did it convey guilt? (2) the extent of circulation and the likely impact on the jury pool; (3) the time elapsed between the publicity and the proposed trial — faded publicity is less prejudicial; (4) the adequacy of intra-trial safeguards (jury directions, challenges to jurors); and (5) the gravity of the charges and the public interest in prosecution. The previous experience of the accused's legal team is irrelevant to this constitutional analysis."
+    },
+    {
+      "id": "CON_M07_L06_Q04",
+      "question": "A accused in a high-profile murder trial argues that extensive media coverage — including detailed and vivid accounts of the alleged killing published across all major news outlets — means they cannot receive a fair trial. The most likely outcome of a prohibition application is:",
+      "options": {
+        "A": "Prohibition will be granted — murder cases with media coverage always require prohibition",
+        "B": "The court will apply the Z v DPP test and assess whether a real and serious risk of unfair trial exists that cannot be addressed by intra-trial safeguards such as judicial directions — prohibition is unlikely unless the publicity was uniquely prejudicial and pervasive",
+        "C": "The case must be transferred to a different jurisdiction",
+        "D": "The DPP must re-charge the accused under a different offence to reduce public attention"
+      },
+      "correct_answer": "B",
+      "explanation": "High-profile murder cases routinely attract significant media coverage, but this alone does not warrant prohibition under Z v DPP [1994] 2 IR 476. Courts recognise that jurors are directed to decide cases only on the evidence presented in court, and that directions to disregard pre-trial publicity are generally effective. Prohibition requires proof of a real and serious risk of unfair trial that cannot be addressed by these safeguards. The courts have shown confidence in the jury system's ability to set aside pre-trial exposure where appropriate judicial guidance is given."
+    },
+    {
+      "id": "CON_M07_L06_Q05",
+      "question": "Which of the following intra-trial safeguards is available to a trial judge to address prejudicial pre-trial publicity?",
+      "options": {
+        "A": "Ordering the media to apologise publicly to the accused before the trial commences",
+        "B": "Directing the jury to decide the case solely on the evidence adduced in court and to disregard any media coverage they may have encountered; conducting voir dire to identify and discharge jurors with pre-formed views; and (in extreme cases) discharging the jury if it becomes impossible to continue fairly",
+        "C": "Excluding all members of the public from the courtroom for the duration of the trial",
+        "D": "Reducing the charges to a less serious offence to reduce media interest"
+      },
+      "correct_answer": "B",
+      "explanation": "Trial judges have several tools to address the effect of pre-trial publicity: (1) strong and clear directions to the jury to decide the case exclusively on evidence heard in court and to disregard all external information including media coverage; (2) voir dire questioning of jurors during empanelment to identify those with knowledge of the case or pre-formed views, followed by challenges for cause; (3) discharge of the jury mid-trial if prejudicial material emerges (e.g., a juror reveals they had read prejudicial material); and (4) in rare cases, discharge of the entire jury and retrial. Courts presume these mechanisms are effective absent evidence to the contrary."
+    },
+    {
+      "id": "CON_M07_L06_Q06",
+      "question": "The constitutional principle of contempt of court in the context of criminal proceedings serves which purpose relevant to pre-trial publicity?",
+      "options": {
+        "A": "It prevents the media from reporting on any criminal case unless approved by the DPP",
+        "B": "It protects the accused's right to a fair and impartial trial by penalising publications that create a substantial risk of serious prejudice to pending criminal proceedings",
+        "C": "It prohibits all commentary on court proceedings as a matter of constitutional law",
+        "D": "It gives the trial judge power to imprison journalists who attend court without accreditation"
+      },
+      "correct_answer": "B",
+      "explanation": "The law of contempt of court — derived partly from common law and recognised as serving constitutional values — protects the right to a fair trial (Art. 38.1) by penalising publications that create a real risk of prejudice to active criminal proceedings. Once proceedings are 'active' (typically from arrest), the media commits contempt by publishing material that creates a substantial risk of serious prejudice to a fair trial — such as publishing prior convictions, inflammatory accounts of the accused's character, or stating the accused is guilty. This is balanced against the constitutional guarantee of freedom of expression under Art. 40.6.1°(i)."
+    },
+    {
+      "id": "CON_M07_L06_Q07",
+      "question": "A television programme broadcast a detailed documentary about an accused's alleged criminal activities — including interviews with alleged victims — one week before the trial was due to begin. The documentary implied the accused was guilty. The accused applies for prohibition. Applying Z v DPP [1994] 2 IR 476, which consideration most strongly supports granting prohibition?",
+      "options": {
+        "A": "The documentary was broadcast by a well-known public broadcaster",
+        "B": "The documentary was broadcast very close in time to the trial, included prejudicial content implying guilt (not merely factual reporting), and was widely circulated — leaving insufficient time for the prejudice to diminish before jurors would be empanelled",
+        "C": "The documentary was longer than 30 minutes in duration",
+        "D": "The accused's legal team had not sought an injunction to prevent the broadcast"
+      },
+      "correct_answer": "B",
+      "explanation": "Under Z v DPP, the combination of: (i) proximity in time between the broadcast and the trial (creating a real risk that jurors will have seen it and the impression created will be fresh in their minds); (ii) explicitly prejudicial content that implied guilt rather than merely reporting facts; and (iii) widespread circulation — creates the strongest basis for prohibition. These features distinguish this scenario from routine pre-trial media coverage and point to a real and serious risk of an unfair trial that jury directions alone may not be sufficient to cure."
+    },
+    {
+      "id": "CON_M07_L06_Q08",
+      "question": "The passage of time between prejudicial pre-trial publicity and the commencement of trial is relevant to a prohibition application because:",
+      "options": {
+        "A": "It is irrelevant — once publicity occurs, the prejudice is permanent",
+        "B": "A longer period between the publicity and the trial allows the prejudicial impact on potential jurors to fade, making it more likely that any residual prejudice can be addressed by judicial directions rather than by prohibition",
+        "C": "The courts have a strict rule that any publicity more than 6 months old cannot ground a prohibition application",
+        "D": "The passage of time automatically cures any constitutional breach caused by pre-trial publicity"
+      },
+      "correct_answer": "B",
+      "explanation": "Courts consistently treat the passage of time as a factor that mitigates the prejudicial impact of pre-trial publicity. Where significant time has elapsed between the publicity and the trial, the risk that jurors retain vivid prejudicial impressions diminishes. This may be sufficient to allow the trial to proceed with robust judicial directions. Conversely, where prejudicial publicity is very recent — particularly immediately before trial — the risk is at its greatest. There is no fixed time threshold; the question is always whether, in all the circumstances, intra-trial safeguards are adequate to secure a fair trial."
+    },
+    {
+      "id": "CON_M07_L06_Q09",
+      "question": "In a joint trial of multiple accused, highly prejudicial pre-trial publicity names only one co-accused. A second co-accused (unnamed in the media) applies for prohibition. Is the second accused's application likely to succeed?",
+      "options": {
+        "A": "Yes — prejudicial publicity about one co-accused automatically taints all joint proceedings",
+        "B": "The court applies the Z v DPP test to the second accused's specific situation — the question is whether the publicity about the named co-accused creates a real risk of unfair trial for the unnamed accused, which may be less acute unless the publicity identifies them implicitly or the jury may assume guilt by association",
+        "C": "No — the unnamed accused has no standing to bring a prohibition application based on publicity about another person",
+        "D": "Yes — all accused in a joint trial share identical rights and remedies in respect of pre-trial publicity"
+      },
+      "correct_answer": "B",
+      "explanation": "Each accused's rights are assessed individually. The second accused must demonstrate a real and serious risk of unfair trial specific to their position. Publicity naming only a co-accused may create an indirect risk — jurors may associate the unnamed accused with the depicted guilt of the named co-accused — but this is less direct than publicity about the applicant themselves. The court will consider whether the publicity identifies, implies, or tars the unnamed accused by association, and whether the proposed trial structure and jury directions can adequately address the risk."
+    },
+    {
+      "id": "CON_M07_L06_Q10",
+      "question": "The Irish courts' treatment of pre-trial publicity reflects a tension between two constitutional values. These are:",
+      "options": {
+        "A": "Art. 38.1 (fair trial/impartial jury) and Art. 40.6.1°(i) (freedom of expression/freedom of the press)",
+        "B": "Art. 38.5 (trial by jury) and Art. 34.1 (administration of justice in public)",
+        "C": "Art. 38.1 (fair trial) and Art. 40.4.1° (personal liberty)",
+        "D": "Art. 40.3 (personal rights) and Art. 15.2 (legislative power of the Oireachtas)"
+      },
+      "correct_answer": "A",
+      "explanation": "Pre-trial publicity cases involve a direct tension between: (1) Art. 38.1's guarantee of a fair trial and the accused's right to have their guilt or innocence determined by an impartial jury free from prejudice; and (2) Art. 40.6.1°(i)'s guarantee of freedom of expression, including the press's right to report on matters of public interest — including criminal proceedings. The courts must balance these competing constitutional values, protecting fair trial rights without unduly chilling legitimate media reporting. The contempt jurisdiction and prohibition both serve to maintain this balance."
+    },
+    {
+      "id": "CON_M07_L06_Q11",
+      "question": "Where a trial judge decides mid-trial that a juror has been exposed to highly prejudicial material (e.g., a juror reveals they read an article stating the accused had prior convictions), the appropriate response is:",
+      "options": {
+        "A": "Immediately acquit the accused",
+        "B": "Discharge the affected juror (and continue with remaining jurors if numbers permit) or, where contamination is so severe that the jury as a whole cannot continue fairly, discharge the entire jury and order a retrial — after giving the prosecution and defence an opportunity to be heard",
+        "C": "Impose a fine on the juror for contempt and direct them to ignore what they read",
+        "D": "Adjourn the trial to allow the media coverage to fade"
+      },
+      "correct_answer": "B",
+      "explanation": "A trial judge has wide case management powers to deal with juror exposure to prejudicial material. The graduated approach is: (1) if only one juror is affected and the remaining jury is unaffected, discharge the individual juror and continue (provided the requisite quorum of jurors remains under the Juries Act 1976); (2) if the contamination is so serious or widespread that the jury as a whole cannot reach a fair verdict, discharge the entire jury and order a retrial. The judge must hear submissions from both prosecution and defence before taking either step. Acquittal is not the automatic result — the issue is whether a fair trial can continue."
+    },
+    {
+      "id": "CON_M07_L06_Q12",
+      "question": "Irish law provides a constitutional framework for in camera (private) hearings in certain criminal proceedings. How does this interact with the Art. 34.1 principle that justice be administered in public?",
+      "options": {
+        "A": "In camera hearings are always unconstitutional — Art. 34.1 permits no exceptions",
+        "B": "Art. 34.1 permits the Oireachtas to provide by law for exceptions to the public administration of justice in specific circumstances (such as child sex abuse cases, family law proceedings, or national security matters), and in camera hearings in those cases do not violate the Constitution",
+        "C": "In camera hearings are permissible only in non-jury trials",
+        "D": "The Constitution is silent on in camera hearings — the practice is purely a matter of judicial discretion"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 34.1 provides that justice shall be administered in public 'save in such special and limited cases as may be prescribed by law.' This expressly contemplates Oireachtas legislation permitting in camera hearings in defined circumstances. Legislation providing for private hearings in, for example, sexual offences trials involving child complainants (s.45 Criminal Justice Act 1999), family law proceedings, or national security cases, is constitutionally permissible. In camera orders also protect certain witnesses and complainants, reflecting the State's obligation to balance open justice with other constitutional interests such as the right to privacy and bodily integrity."
+    },
+    {
+      "id": "CON_M07_L06_Q13",
+      "question": "The principle established in Z v DPP [1994] 2 IR 476 — that prohibition for pre-trial publicity requires a 'real and serious risk' of unfair trial — reflects which broader constitutional value?",
+      "options": {
+        "A": "The supremacy of the Oireachtas in matters of criminal procedure",
+        "B": "The public interest in the prosecution of serious crime, balanced against the accused's right to a fair trial — neither value is absolute, and prohibition should be reserved for cases where no intra-trial remedy can adequately protect the accused's rights",
+        "C": "The primacy of the accused's rights over all other considerations in criminal proceedings",
+        "D": "The media's constitutional right to report on criminal matters without restriction"
+      },
+      "correct_answer": "B",
+      "explanation": "The 'real and serious risk' threshold in Z v DPP reflects the courts' recognition that both the public interest in prosecuting crime and the accused's right to a fair trial are legitimate constitutional values. Setting a high threshold for prohibition acknowledges that: (a) the public has a significant interest in seeing serious offences prosecuted; (b) intra-trial safeguards (jury directions, challenges to jurors) are generally effective; and (c) pre-trial publicity, while potentially prejudicial, is an endemic feature of media coverage of criminal proceedings in a democratic society. Prohibition is reserved for cases where these safeguards cannot adequately protect the accused's constitutional right."
+    }
+  ]
+}

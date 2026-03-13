@@ -1,0 +1,119 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module11_Lesson01.txt",
+  "module_number": 11,
+  "module_title": "Domestic Violence and Related Offences",
+  "lesson_number": 1,
+  "lesson_title": "Domestic Violence Act 2018",
+  "total_questions": 9,
+  "questions": [
+    {
+      "id": "CRL_M11_L01_Q01",
+      "question": "When did the Domestic Violence Act 2018 come into force in Ireland?",
+      "options": {
+        "A": "1 January 2018 \u2014 the Act came into force on the date of its enactment",
+        "B": "2 January 2019 \u2014 the Domestic Violence Act 2018, while enacted in 2018, commenced on 2 January 2019",
+        "C": "1 September 2018 \u2014 a phased commencement of the Act began six months after enactment",
+        "D": "1 January 2020 \u2014 the Act was delayed by implementing regulations that took effect only in 2020"
+      },
+      "correct_answer": "B",
+      "explanation": "The Domestic Violence Act 2018 was enacted in 2018 but did not come into force (commence) until 2 January 2019. This commencement date is an exam-relevant detail. The Act replaced and consolidated the previous domestic violence legislation (including the Domestic Violence Act 1996) and significantly updated the legal framework for civil and criminal remedies for domestic violence in Ireland. The 2018 Act introduced enhanced provisions including the specific coercive control offence (s.39), updated orders, and strengthened protections for victims. FE-1 candidates must know both the Act's number/name and its commencement date. Option A incorrectly states commencement on the date of enactment. Option C invents a phased commencement date. Option D is entirely incorrect."
+    },
+    {
+      "id": "CRL_M11_L01_Q02",
+      "question": "The Domestic Violence Act 2018 provides for three primary protective orders. What are these orders?",
+      "options": {
+        "A": "Restraining Order, Injunction, and Exclusion Order",
+        "B": "Safety Order, Barring Order, and Emergency Barring Order \u2014 each provides different levels of protection and applies in different circumstances",
+        "C": "Non-Molestation Order, Occupation Order, and Prohibited Steps Order",
+        "D": "Protection Order, Exclusion Zone Order, and Supervised Contact Order"
+      },
+      "correct_answer": "B",
+      "explanation": "The Domestic Violence Act 2018 provides for three main forms of civil protective orders: (1) Safety Order \u2014 prohibits the respondent from threatening, harassing, or molesting the applicant; does not require the respondent to leave the shared home; can be granted for up to 5 years; (2) Barring Order \u2014 requires the respondent to leave the shared home and prohibits return and contact; a more serious order appropriate where the safety of the applicant requires the respondent to vacate; and (3) Emergency Barring Order \u2014 an interim order available on an emergency basis without prior notice to the respondent; provides immediate short-term protection. These three orders collectively provide a graduated system of protection from the least restrictive (Safety Order) to the most immediate (Emergency Barring Order). The terminology from the English Domestic Proceedings regime (Non-Molestation Order, Occupation Order etc.) does not apply in Ireland. Option A uses a mix of incorrect and partially correct terminology. Options C and D use English or invented order types."
+    },
+    {
+      "id": "CRL_M11_L01_Q03",
+      "question": "Under the Domestic Violence Act 2018, what is the maximum duration of a Safety Order?",
+      "options": {
+        "A": "1 year \u2014 Safety Orders expire after 12 months and must be renewed on application",
+        "B": "5 years \u2014 under the Domestic Violence Act 2018, a Safety Order can be granted for a period of up to 5 years",
+        "C": "3 years \u2014 the maximum duration for a Safety Order under the 2018 Act is 3 years",
+        "D": "Safety Orders are permanent and have no fixed maximum duration \u2014 they can only be discharged by court order"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the Domestic Violence Act 2018, a Safety Order can be granted for a period of up to 5 years. This represents an increase from the previous regime under the 1996 Act. The 5-year maximum duration reflects the legislature's recognition that domestic violence situations often persist over extended periods and that short-term orders may be insufficient to protect victims. A Safety Order prohibits the respondent from using or threatening to use violence, molesting, or putting the applicant in fear. It does not require the respondent to leave the family home \u2014 this distinguishes it from a Barring Order. At the expiry of a Safety Order, the applicant can apply for a renewal. Options A and C state incorrect maximum durations. Option D incorrectly makes Safety Orders permanent."
+    },
+    {
+      "id": "CRL_M11_L01_Q04",
+      "question": "Section 5 of the Domestic Violence Act 2018 provides a non-exhaustive list of factors a court must have regard to when determining applications for protective orders. Which of the following best describes the nature and purpose of this provision?",
+      "options": {
+        "A": "Section 5 creates a closed and exhaustive list of circumstances in which domestic violence orders may be granted \u2014 applicants outside these circumstances cannot obtain an order",
+        "B": "Section 5 provides a non-exhaustive list of 17 factors that the court must have regard to when determining whether to grant a protective order \u2014 including the safety and welfare of the applicant and any dependent children; the factors are not conditions but considerations that assist the court in exercising its discretion to grant appropriate protection",
+        "C": "Section 5 applies only to Emergency Barring Orders \u2014 other orders are governed by different statutory criteria",
+        "D": "Section 5 requires the applicant to prove at least five of the listed factors to establish entitlement to a protective order"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 5 of the Domestic Violence Act 2018 provides a non-exhaustive list of 17 factors that the court must have regard to when determining applications for protective orders. The factors include matters such as: the safety and welfare of the applicant and any dependent children; any history of violence or threats by the respondent; the respondent's compliance with any prior orders; the effect on children of being exposed to domestic violence; and other relevant circumstances. The list is non-exhaustive \u2014 the court is not limited to these factors and may consider other relevant matters. The factors are considerations, not conditions or prerequisites \u2014 the applicant does not need to prove all or any particular number of factors; the court weighs all relevant circumstances. The provision reflects a holistic, welfare-oriented approach to domestic violence protection. Option A incorrectly characterises the list as closed and exhaustive. Option C incorrectly limits s.5 to Emergency Barring Orders. Option D incorrectly requires a minimum number of factors to be proved."
+    },
+    {
+      "id": "CRL_M11_L01_Q05",
+      "question": "Who may apply for protective orders under the Domestic Violence Act 2018 \u2014 is the Act limited to married couples or persons in formal relationships?",
+      "options": {
+        "A": "The Act applies only to married couples and registered civil partners \u2014 other domestic relationships are outside its scope",
+        "B": "The Act applies broadly to protect persons in a wide range of domestic relationships \u2014 including married couples, civil partners, cohabiting couples, persons in intimate relationships (including non-cohabiting intimate partners), parents of a shared child, and in some circumstances other family members; the scope reflects the reality that domestic violence occurs across many types of relationship",
+        "C": "The Act applies only to heterosexual couples who are either married or cohabiting \u2014 same-sex couples who are not civil partners are excluded",
+        "D": "The Act requires the applicant and respondent to be living in the same household \u2014 persons in non-cohabiting relationships cannot apply"
+      },
+      "correct_answer": "B",
+      "explanation": "The Domestic Violence Act 2018 applies broadly across many types of domestic relationships. The Act is not limited to married couples \u2014 it extends to: married couples; civil partners; cohabiting couples (cohabitants); intimate partners who are not cohabiting; parents of a child together; and in certain circumstances, other specified family members. The broad scope of the Act reflects the legislature's recognition that domestic violence is not confined to formal or cohabiting relationships and that non-cohabiting intimate partners may also be at risk. This broad application distinguishes the 2018 Act from its predecessor (the 1996 Act) which had a narrower scope. Option A incorrectly limits the Act to married couples and civil partners. Option C incorrectly excludes same-sex couples (the Act applies regardless of the gender or sexual orientation of the parties). Option D incorrectly requires cohabitation."
+    },
+    {
+      "id": "CRL_M11_L01_Q06",
+      "question": "Under the Domestic Violence Act 2018, how does proof that an offence was committed in the context of an intimate relationship affect sentencing?",
+      "options": {
+        "A": "It has no effect on sentencing \u2014 criminal offences in domestic violence contexts are treated identically to offences between strangers",
+        "B": "Under the Domestic Violence Act 2018, the fact that an offence was committed by the accused against a person with whom they are or were in an intimate relationship is an aggravating factor in sentencing \u2014 it must be treated by the court as an aggravating factor when sentencing for the relevant offence, reflecting the heightened culpability involved in domestic violence",
+        "C": "It operates as a mitigating factor \u2014 offences within intimate relationships are treated more leniently due to the emotional complexity of such relationships",
+        "D": "It is relevant only where the accused has a prior conviction for a domestic violence offence \u2014 a first-time domestic violence offence is not treated differently for sentencing purposes"
+      },
+      "correct_answer": "B",
+      "explanation": "The Domestic Violence Act 2018 specifically provides that the fact that a criminal offence was committed by the accused against a person with whom they are or were in an intimate relationship is an aggravating factor in sentencing. This is a significant provision \u2014 it moves the law from treating domestic violence as potentially mitigated by relationship factors (as some courts historically approached it) to expressly treating the domestic context as an aggravating feature that increases the seriousness of the offence for sentencing purposes. This provision reflects the legislature's view that betraying the trust and special vulnerability inherent in intimate relationships makes the offence worse, not better. The court is required to treat this as an aggravating factor \u2014 it is not discretionary. Option A incorrectly treats domestic and stranger offences identically. Option C incorrectly characterises the intimate relationship context as a mitigating factor. Option D incorrectly limits the aggravating factor provision to cases with prior convictions."
+    },
+    {
+      "id": "CRL_M11_L01_Q07",
+      "question": "What is the criminal consequence of breaching a Barring Order made under the Domestic Violence Act 2018?",
+      "options": {
+        "A": "Breach of a Barring Order is merely a civil contempt and cannot result in imprisonment \u2014 the only remedy is a further civil order",
+        "B": "Breach of a Barring Order made under the Domestic Violence Act 2018 is a criminal offence \u2014 a person who breaches an order without reasonable excuse commits a criminal offence and is liable to prosecution; the court can impose penalties including imprisonment and fines",
+        "C": "Breach of a Barring Order is dealt with exclusively by the Garda\u00ed who may issue a fixed charge notice \u2014 it cannot be prosecuted in court",
+        "D": "Breach of a Barring Order results only in the Garda\u00ed escorting the respondent from the premises \u2014 no criminal penalty attaches to breach"
+      },
+      "correct_answer": "B",
+      "explanation": "Breach of a Barring Order (or Safety Order or Emergency Barring Order) made under the Domestic Violence Act 2018 is a criminal offence. A person who, without reasonable excuse, breaches the terms of an order made under the Act commits a criminal offence and may be arrested, charged, and prosecuted. The criminal sanction for breach is an important feature of the domestic violence regime \u2014 it gives the protective orders teeth and allows for immediate Garda intervention. This means that the Garda\u00ed can arrest a respondent who breaches an order, and the respondent can be brought before a court and sentenced. The maximum penalties include imprisonment and fines. This criminal enforcement mechanism is one of the key protections the Act provides \u2014 civil orders without criminal enforcement would be significantly weaker. Option A incorrectly characterises breach as merely civil contempt. Options C and D incorrectly limit the response to Garda administrative action."
+    },
+    {
+      "id": "CRL_M11_L01_Q08",
+      "question": "Anne and Brian have been in a relationship but do not live together. Brian has been sending Anne threatening messages and following her to work. Anne wishes to apply for a protective order under the Domestic Violence Act 2018. Can Anne apply for an order given that she and Brian are not cohabiting?",
+      "options": {
+        "A": "No \u2014 the Domestic Violence Act 2018 requires the parties to be cohabiting or to have cohabited together; non-cohabiting couples cannot access protective orders under the Act",
+        "B": "Yes \u2014 the Domestic Violence Act 2018 extends to persons who are or were in an intimate relationship with the respondent, regardless of whether they cohabit or cohabited; a non-cohabiting intimate partner such as Anne can apply for a protective order",
+        "C": "Yes \u2014 but Anne can only apply for a Safety Order, not a Barring Order, because she and Brian are not cohabiting; the Barring Order (which relates to the shared home) is not applicable",
+        "D": "No \u2014 Anne's situation is better addressed by a civil injunction; the Domestic Violence Act 2018 is limited to cases where the parties share a home"
+      },
+      "correct_answer": "B",
+      "explanation": "Anne can apply for a protective order under the Domestic Violence Act 2018 despite not cohabiting with Brian. The Act specifically extends to persons who are or were in an intimate relationship, regardless of whether they share or shared a home. This was a deliberate expansion from the 1996 Act \u2014 the legislature recognised that non-cohabiting intimate partners can also be victims of domestic violence and should have access to protective orders. Anne, being in an intimate relationship with Brian, falls within the scope of the Act. In terms of the type of order available: a Safety Order would be the most relevant for Anne's situation (prohibiting Brian from contacting or following her), since a Barring Order relates to excluding someone from a shared home which is not applicable where there is no shared home. Option A incorrectly requires cohabitation. Option C correctly identifies the Safety Order as the relevant order but the reason given needs refinement \u2014 the Act does cover non-cohabitants for Safety Orders. Option D incorrectly excludes Anne from the Act entirely."
+    },
+    {
+      "id": "CRL_M11_L01_Q09",
+      "question": "What was the primary legislative reform introduced by the Domestic Violence Act 2018 compared to the previous domestic violence legislation?",
+      "options": {
+        "A": "The 2018 Act introduced mandatory arrest for all suspected domestic violence incidents \u2014 Garda\u00ed are required to arrest in all cases",
+        "B": "The primary legislative reform was the introduction of the offence of coercive control (s.39) \u2014 criminalising, for the first time in Irish law, persistent patterns of psychological, emotional, and controlling conduct in intimate relationships; the Act also updated and consolidated the civil order regime, expanded the range of persons who can apply for orders, and enhanced sentencing provisions",
+        "C": "The 2018 Act introduced mandatory reporting of domestic violence to child protection services in all cases where children are present",
+        "D": "The 2018 Act removed the distinction between married and unmarried couples for all domestic violence purposes and made all Barring Orders permanent"
+      },
+      "correct_answer": "B",
+      "explanation": "The primary and most significant legislative reform introduced by the Domestic Violence Act 2018 was the creation of the specific criminal offence of coercive control under s.39. Prior to the Act, coercive control \u2014 persistent psychological, emotional, financial, or other controlling behaviour that does not rise to the level of physical assault \u2014 was not specifically criminalised in Irish law. The 2018 Act filled this gap by making it a criminal offence for a person to knowingly and persistently engage in behaviour that is controlling or coercive towards an intimate partner and that has a serious effect on the partner. This is examined in detail in the next lesson (Module 11, Lesson 2). Beyond coercive control, the Act also consolidated and updated the civil order regime, expanded the range of persons who can access orders (including non-cohabiting intimate partners), and introduced the aggravating sentencing provision. Option A invents a mandatory arrest provision. Option C invents a mandatory reporting provision. Option D misstates the changes to Barring Order provisions."
+    }
+  ]
+}

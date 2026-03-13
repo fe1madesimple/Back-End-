@@ -1,0 +1,275 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "EquityLaw_ElevenLabs_Module05_Lesson01.txt",
+  "module_number": 5,
+  "module_title": "INJUNCTIONS",
+  "lesson_number": 1,
+  "lesson_title": "INTERLOCUTORY INJUNCTIONS AND THE CAMPUS OIL TEST",
+  "total_questions": 22,
+  "questions": [
+    {
+      "id": "EQL_M05_L01_Q01",
+      "question": "An interlocutory injunction is best described as:",
+      "options": {
+        "A": "A permanent court order restraining a party indefinitely",
+        "B": "A temporary court order granted before the full trial of an action to preserve the status quo and prevent irreparable harm",
+        "C": "A court order requiring a party to pay damages in advance of trial",
+        "D": "A court order that can only be made by the High Court on application by the Attorney General"
+      },
+      "correct_answer": "B",
+      "explanation": "An interlocutory injunction is a temporary court order granted before the full hearing of an action. Its purpose is to preserve the status quo and prevent irreparable harm while the case awaits a full trial. Because the merits have not yet been fully argued, the court applies a structured test — in Ireland, the Campus Oil test — to balance competing interests."
+    },
+    {
+      "id": "EQL_M05_L01_Q02",
+      "question": "The leading Irish case establishing the test for granting interlocutory injunctions is:",
+      "options": {
+        "A": "American Cyanamid v Ethicon [1975] (House of Lords)",
+        "B": "Okunade v Minister for Justice [2012] (Supreme Court)",
+        "C": "Campus Oil v Minister for Industry and Energy (No. 2) [1983] (Supreme Court)",
+        "D": "B and S Ltd v Irish Auto Trader [1995] (Supreme Court)"
+      },
+      "correct_answer": "C",
+      "explanation": "Campus Oil v Minister for Industry and Energy (No. 2) [1983] is the leading Irish Supreme Court case establishing the test for interlocutory injunctions in Ireland. O'Higgins CJ laid down the criteria that Irish courts apply. FE-1 candidates must know and apply these criteria systematically. American Cyanamid [1975] is the English equivalent but is not followed in Ireland as the primary test."
+    },
+    {
+      "id": "EQL_M05_L01_Q03",
+      "question": "The first criterion of the Campus Oil test requires the applicant to establish:",
+      "options": {
+        "A": "A probability of success at trial",
+        "B": "That the respondent has acted fraudulently",
+        "C": "A fair issue to be tried — that the claim is not frivolous or vexatious",
+        "D": "That damages would be an inadequate remedy"
+      },
+      "correct_answer": "C",
+      "explanation": "The first Campus Oil criterion is that the applicant must establish a fair issue to be tried — a serious or fair bona fide question. This is a deliberately low threshold: the applicant does not need to demonstrate a probability of success, merely that the claim is not frivolous or vexatious. This ensures that only clearly hopeless claims are filtered out at the interlocutory stage."
+    },
+    {
+      "id": "EQL_M05_L01_Q04",
+      "question": "The second criterion of the Campus Oil test requires the applicant to demonstrate that:",
+      "options": {
+        "A": "The balance of convenience favours the applicant",
+        "B": "Damages would not be an adequate remedy",
+        "C": "The respondent has been unjustly enriched",
+        "D": "The applicant would suffer loss exceeding €100,000"
+      },
+      "correct_answer": "B",
+      "explanation": "The second Campus Oil criterion is that the applicant must show damages would not be an adequate remedy. If money could fully compensate the applicant for the harm suffered pending trial, there is no need for the extraordinary remedy of an injunction. The question is whether a monetary award at trial would adequately repair the harm — if yes, the injunction is not necessary; if no, this criterion is satisfied."
+    },
+    {
+      "id": "EQL_M05_L01_Q05",
+      "question": "The third criterion of the Campus Oil test — the balance of convenience — requires the court to:",
+      "options": {
+        "A": "Assess which party is more financially powerful",
+        "B": "Weigh the potential harm to the applicant if the injunction is refused against the potential harm to the respondent if it is granted",
+        "C": "Consider whether the respondent will be able to pay any eventual damages award",
+        "D": "Determine which party has the stronger legal case on the merits"
+      },
+      "correct_answer": "B",
+      "explanation": "The balance of convenience requires the court to weigh the potential harm to the applicant if the injunction is refused against the potential harm to the respondent if it is granted. The court asks which course of action carries the least risk of injustice. As confirmed in Okunade v Minister for Justice [2012], this is not a mechanical exercise but requires consideration of all relevant circumstances, including any special factors such as the public interest."
+    },
+    {
+      "id": "EQL_M05_L01_Q06",
+      "question": "The fourth requirement of the Campus Oil test — the undertaking as to damages — serves what purpose?",
+      "options": {
+        "A": "It ensures the applicant has sufficient financial resources to pay the respondent's costs",
+        "B": "It is a promise by the applicant to compensate the respondent for any loss suffered if the injunction was wrongly granted and the applicant ultimately loses at trial",
+        "C": "It transfers the burden of proof to the respondent to justify their conduct",
+        "D": "It gives the court jurisdiction to award punitive damages at trial"
+      },
+      "correct_answer": "B",
+      "explanation": "The undertaking as to damages is a crucial safeguard for the respondent in interlocutory injunction applications. The applicant must promise to compensate the respondent for any loss suffered as a result of the injunction if it transpires that the injunction was wrongly granted — i.e., if the applicant ultimately loses at trial. This balances the risk of granting an injunction before the merits are fully heard."
+    },
+    {
+      "id": "EQL_M05_L01_Q07",
+      "question": "In Okunade v Minister for Justice [2012], the Irish Supreme Court's contribution to the law on interlocutory injunctions was to:",
+      "options": {
+        "A": "Replace the Campus Oil test with the American Cyanamid approach",
+        "B": "Confirm the Campus Oil principles and emphasise that the balance of convenience is not a mechanical exercise but requires consideration of all relevant circumstances including the public interest",
+        "C": "Hold that interlocutory injunctions may never be granted against government ministers",
+        "D": "Abolish the requirement for an undertaking as to damages in constitutional cases"
+      },
+      "correct_answer": "B",
+      "explanation": "In Okunade v Minister for Justice [2012], the Supreme Court confirmed the Campus Oil principles remain the applicable test in Ireland. The court emphasised that the balance of convenience is not a mechanical exercise — it requires consideration of all relevant circumstances, including any special factors such as the public interest. The case involved an immigration context and highlighted the need for flexible application of the balance of convenience criterion."
+    },
+    {
+      "id": "EQL_M05_L01_Q08",
+      "question": "How does the first Campus Oil criterion differ from the English 'serious question to be tried' standard from American Cyanamid v Ethicon [1975]?",
+      "options": {
+        "A": "The Campus Oil threshold is higher — Irish courts require a probability of success",
+        "B": "They are functionally similar low thresholds; both require only that the claim is not frivolous or vexatious",
+        "C": "American Cyanamid requires proof of irreparable harm at the first stage",
+        "D": "Campus Oil requires the applicant to demonstrate the merits of their case in full"
+      },
+      "correct_answer": "B",
+      "explanation": "Both the Campus Oil 'fair issue to be tried' and the American Cyanamid 'serious question to be tried' are low threshold tests that require only that the claim is not frivolous or vexatious. The applicant need not show a probability of success. The two tests are functionally similar, though Campus Oil is the applicable Irish test. The main practical difference lies in how Irish courts apply the balance of convenience stage with Irish-specific factors."
+    },
+    {
+      "id": "EQL_M05_L01_Q09",
+      "question": "Which of the following situations would most clearly satisfy the Campus Oil requirement that 'damages would not be an adequate remedy'?",
+      "options": {
+        "A": "A dispute where the applicant seeks to recover a specific sum of money owed by the respondent",
+        "B": "A case where the respondent threatens to publish confidential information that, once published, cannot be recalled",
+        "C": "A contract dispute where the only issue is the interpretation of a commercial clause",
+        "D": "A property dispute where the property has a clear market value"
+      },
+      "correct_answer": "B",
+      "explanation": "Damages are inadequate where money cannot fully repair the harm. The threatened publication of confidential information is a classic example: once confidential information is published, the damage cannot be undone by a monetary award. The harm is irreversible. By contrast, a money claim (Option A), a contract interpretation dispute (Option C), or a property dispute with a quantifiable market value (Option D) are all more susceptible to adequate compensation in damages."
+    },
+    {
+      "id": "EQL_M05_L01_Q010",
+      "question": "An applicant seeks an interlocutory injunction to restrain the respondent from building a wall on disputed land. The respondent argues that even if the injunction is wrongly granted, the respondent can simply start building again after trial. Which Campus Oil criterion is most relevant to this argument?",
+      "options": {
+        "A": "Fair issue to be tried",
+        "B": "Adequacy of damages to the applicant",
+        "C": "Balance of convenience — assessing the comparative harm to each party",
+        "D": "Undertaking as to damages"
+      },
+      "correct_answer": "C",
+      "explanation": "The respondent's argument goes to the balance of convenience — the relative harm to each party. If granting the injunction merely delays construction (a recoverable position for the respondent) while refusing it would allow permanent alterations to disputed land (an irreversible harm to the applicant), the balance tips in favour of granting the injunction. The balance of convenience requires the court to weigh the comparative harm to each party from granting or refusing the order."
+    },
+    {
+      "id": "EQL_M05_L01_Q011",
+      "question": "A plaintiff brings an action for defamation and seeks an interlocutory injunction to prevent publication of an allegedly defamatory article. The defendant argues there is a fair issue to be tried on whether the material is true. The court is likely to:",
+      "options": {
+        "A": "Grant the injunction automatically as defamation is presumed to cause irreparable harm",
+        "B": "Refuse the injunction, applying the principle that courts are reluctant to grant prior restraints on speech where the defendant intends to justify the publication",
+        "C": "Grant the injunction on the basis that the balance of convenience always favours protection of reputation",
+        "D": "Refer the matter to the High Court for a full trial immediately"
+      },
+      "correct_answer": "B",
+      "explanation": "In defamation cases, courts are traditionally reluctant to grant interlocutory injunctions where the defendant intends to justify (i.e., plead truth as a defence). The defendant's assertion that the material is true creates a fair issue to be tried on justification, and courts respect freedom of expression and the danger of using injunctions as prior restraints on speech. This is a recognised qualification to the Campus Oil framework in defamation contexts."
+    },
+    {
+      "id": "EQL_M05_L01_Q012",
+      "question": "Which judge delivered the Campus Oil test in the Supreme Court in 1983?",
+      "options": {
+        "A": "Walsh J",
+        "B": "Finlay CJ",
+        "C": "O'Higgins CJ",
+        "D": "Henchy J"
+      },
+      "correct_answer": "C",
+      "explanation": "O'Higgins CJ delivered the judgment laying down the Campus Oil test in Campus Oil v Minister for Industry and Energy (No. 2) [1983]. FE-1 candidates should know the case name, court (Supreme Court), year (1983), and the judge who delivered the criteria."
+    },
+    {
+      "id": "EQL_M05_L01_Q013",
+      "question": "An applicant succeeds in obtaining an interlocutory injunction but ultimately loses at full trial. What is the legal consequence of the undertaking as to damages?",
+      "options": {
+        "A": "The undertaking has no legal effect as the applicant was acting in good faith",
+        "B": "The respondent may apply to enforce the undertaking and be compensated for losses suffered as a result of the wrongly granted injunction",
+        "C": "The applicant must pay a fixed statutory penalty to the court",
+        "D": "The court automatically awards punitive damages to the respondent"
+      },
+      "correct_answer": "B",
+      "explanation": "If an applicant gives an undertaking as to damages and ultimately loses at trial (meaning the injunction should not have been granted), the respondent may apply to the court to enforce the undertaking. The respondent will then be compensated for the losses suffered as a direct result of the injunction being wrongly in place during the period between its grant and the final trial decision. This is the primary protection for respondents in interlocutory injunction proceedings."
+    },
+    {
+      "id": "EQL_M05_L01_Q014",
+      "question": "The purpose of requiring an applicant to satisfy the 'fair issue to be tried' threshold at the first stage of Campus Oil is to:",
+      "options": {
+        "A": "Ensure that only wealthy litigants can obtain injunctions",
+        "B": "Filter out clearly hopeless claims so that the court does not grant injunctions that restrain valid conduct",
+        "C": "Replace the need for a full trial on the merits",
+        "D": "Establish which party is more likely to succeed at trial"
+      },
+      "correct_answer": "B",
+      "explanation": "The 'fair issue to be tried' threshold serves as a filter to prevent the court from granting injunctions in support of clearly hopeless or frivolous claims. It is deliberately a low bar — the court is not conducting a mini-trial on the merits at the interlocutory stage. The threshold ensures that the injunction procedure is not abused to restrain conduct that is clearly lawful, while making it accessible to applicants with genuine claims."
+    },
+    {
+      "id": "EQL_M05_L01_Q015",
+      "question": "Campus Oil v Minister for Industry [1983] itself involved which commercial context?",
+      "options": {
+        "A": "A dispute over a non-compete clause in a solicitor's employment contract",
+        "B": "A challenge to the constitutionality of the Planning Act",
+        "C": "A petroleum company challenging a statutory obligation to purchase Irish oil",
+        "D": "A dispute between two pharmaceutical companies over intellectual property"
+      },
+      "correct_answer": "C",
+      "explanation": "Campus Oil v Minister for Industry and Energy (No. 2) [1983] arose from a petroleum company's challenge to a statutory obligation requiring importers to purchase a percentage of their petroleum products from the state-owned National Petroleum Corporation. The Supreme Court, in addressing the interlocutory injunction application, laid down the now-standard four-part test. The commercial context involved the oil industry and a clash between private commercial interests and state energy policy."
+    },
+    {
+      "id": "EQL_M05_L01_Q016",
+      "question": "In a Campus Oil analysis, if the court finds that damages would be an adequate remedy for the applicant, what is the consequence?",
+      "options": {
+        "A": "The court moves to the balance of convenience stage regardless",
+        "B": "The injunction will ordinarily be refused as there is no need for the extraordinary remedy",
+        "C": "The applicant must pay increased costs as a penalty",
+        "D": "The court refers the case to mediation"
+      },
+      "correct_answer": "B",
+      "explanation": "If damages would be an adequate remedy for the applicant — meaning money can fully compensate for the harm pending trial — the injunction will ordinarily be refused. The rationale is that an injunction is an extraordinary equitable remedy, and its principal justification is that ordinary legal remedies (damages) would be insufficient. If damages are adequate, there is no basis for the court to grant an interim restriction on the respondent's conduct."
+    },
+    {
+      "id": "EQL_M05_L01_Q017",
+      "question": "An employee seeks an interlocutory injunction to prevent his employer from placing him on 'garden leave' (paid suspension pending investigation). Which Campus Oil criterion is most likely to be in dispute?",
+      "options": {
+        "A": "Whether there is a fair issue to be tried — employment injunctions are automatically barred",
+        "B": "Whether damages would be an adequate remedy — garden leave involves loss of role and reputational harm potentially uncompensable in damages",
+        "C": "Whether the applicant has given a sufficient undertaking as to damages",
+        "D": "Whether the respondent employer intends to continue the conduct"
+      },
+      "correct_answer": "B",
+      "explanation": "In garden leave and employment injunction cases, the key battleground is often whether damages would be an adequate remedy. An employee placed on paid garden leave may suffer losses beyond mere salary — loss of professional role, market position, reputational damage, and skill atrophy — which may not be fully compensable in damages. The adequacy of damages criterion is central to such disputes, as confirmed in cases like Maha Lingam v HSE [2005] and Bergin v Galway Clinic [2008]."
+    },
+    {
+      "id": "EQL_M05_L01_Q018",
+      "question": "Which of the following factors does NOT feature as a distinct criterion in the Campus Oil test for interlocutory injunctions?",
+      "options": {
+        "A": "Fair issue to be tried",
+        "B": "Damages not an adequate remedy",
+        "C": "The applicant's probability of success at trial",
+        "D": "Balance of convenience"
+      },
+      "correct_answer": "C",
+      "explanation": "The Campus Oil test does not include 'probability of success at trial' as a criterion. The first criterion is merely a 'fair issue to be tried' — a low threshold requiring only that the claim is not frivolous or vexatious. The court does not assess the relative merits or likelihood of success at the interlocutory stage (except in modified circumstances discussed in Lesson 5.2). Probability of success is an English Cyanamid concept that has been modified in certain Irish contexts."
+    },
+    {
+      "id": "EQL_M05_L01_Q019",
+      "question": "A company seeks an interlocutory injunction to prevent a former employee from working for a competitor in breach of a non-compete clause. The former employee argues the clause is an unreasonable restraint of trade. Which Campus Oil consideration does this raise?",
+      "options": {
+        "A": "The former employee's argument goes directly to whether there is a fair issue to be tried, but does not automatically defeat the application",
+        "B": "The former employee's argument automatically defeats the application as restraint of trade clauses are void",
+        "C": "The argument is irrelevant at the interlocutory stage and will only be considered at trial",
+        "D": "The balance of convenience always favours the employer in commercial injunction cases"
+      },
+      "correct_answer": "A",
+      "explanation": "The former employee's restraint of trade argument goes to whether there is a fair issue to be tried — if there is a legitimate question about the clause's validity, this is a fair issue. However, raising this argument does not automatically defeat the application: the court still has a fair issue to try (interpretation and validity of the clause), and the other Campus Oil criteria — adequacy of damages and balance of convenience — must also be assessed. The former employee's ability to earn their livelihood is highly relevant to the balance of convenience."
+    },
+    {
+      "id": "EQL_M05_L01_Q020",
+      "question": "The balance of convenience stage in Campus Oil is described in Okunade v Minister for Justice [2012] as:",
+      "options": {
+        "A": "A purely mathematical weighing of financial interests on each side",
+        "B": "Not a mechanical exercise but one requiring consideration of all relevant circumstances including any special factors such as the public interest",
+        "C": "Always resolved in favour of the state when government bodies are respondents",
+        "D": "Superseded by a new test requiring the court to examine the relative merits of each party's case"
+      },
+      "correct_answer": "B",
+      "explanation": "In Okunade v Minister for Justice [2012], the Supreme Court confirmed that the balance of convenience is not a mechanical exercise. It requires consideration of all relevant circumstances and any special factors, including the public interest. This reflects a flexible, contextual approach to the balance of convenience stage, ensuring that the test can adapt to diverse factual situations including those involving public authorities."
+    },
+    {
+      "id": "EQL_M05_L01_Q021",
+      "question": "For an FE-1 examination on interlocutory injunctions, the correct sequence for applying the Campus Oil test is:",
+      "options": {
+        "A": "Balance of convenience → adequacy of damages → fair issue to be tried → undertaking as to damages",
+        "B": "Fair issue to be tried → damages not adequate → balance of convenience → undertaking as to damages",
+        "C": "Undertaking as to damages → fair issue to be tried → damages not adequate → balance of convenience",
+        "D": "Probability of success → damages not adequate → balance of convenience → undertaking as to damages"
+      },
+      "correct_answer": "B",
+      "explanation": "The correct sequence for the Campus Oil test is: (1) fair issue to be tried; (2) damages not an adequate remedy; (3) balance of convenience; (4) undertaking as to damages. A common FE-1 error is jumping straight to balance of convenience without first addressing the threshold question of a fair issue and the adequacy of damages. The analysis must proceed in sequence and each criterion must be addressed in turn."
+    },
+    {
+      "id": "EQL_M05_L01_Q022",
+      "question": "An applicant seeks an interlocutory injunction to prevent a respondent from demolishing a building that the applicant claims is protected under planning legislation. The respondent accepts there is a legal argument but says they can pay any damages award. Which Campus Oil criterion most likely favours the applicant here?",
+      "options": {
+        "A": "Probability of success, as the applicant's planning argument is strong",
+        "B": "Adequacy of damages, as demolition of a building is irreversible and money cannot restore the structure",
+        "C": "Balance of convenience, as the respondent's financial strength means the court should favour them",
+        "D": "Fair issue to be tried — the applicant need only establish any arguable planning claim"
+      },
+      "correct_answer": "B",
+      "explanation": "The most powerful argument for the applicant at the Campus Oil analysis is that damages would not be an adequate remedy. Once a building is demolished, the harm is irreversible — no monetary award can restore the structure to its pre-demolition state. This is a classic example of irreparable harm that cannot be adequately compensated in damages. While Option D is also correct (there is clearly a fair issue on the planning point), the adequacy of damages criterion is the most decisive criterion in the applicant's favour here."
+    }
+  ]
+}

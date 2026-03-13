@@ -1,0 +1,383 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module12_Lesson01.txt",
+  "module_number": 12,
+  "module_title": "Nuisance, Rylands v Fletcher, Animals, and Fire",
+  "lesson_number": 1,
+  "lesson_title": "Public Nuisance, Private Nuisance, Rylands v Fletcher, Liability for Animals, and Liability for Fire",
+  "total_questions": 31,
+  "questions": [
+    {
+      "id": "TL_M12_L01_Q01",
+      "question": "Which statement best describes the nature of public nuisance in Irish law?",
+      "options": {
+        "A": "It is both a crime and a tort",
+        "B": "It is a purely civil wrong with no criminal dimension",
+        "C": "It only applies where the defendant acted negligently",
+        "D": "It requires proof of damage to a right over land"
+      },
+      "correct_answer": "A",
+      "explanation": "Public nuisance is both a crime (an act or omission materially affecting the reasonable comfort of a class of citizens) and a tort (providing a private right of action to individuals who suffer special damage beyond that suffered by the public generally)."
+    },
+    {
+      "id": "TL_M12_L01_Q02",
+      "question": "What is required for an individual to bring a private law action in tort for public nuisance?",
+      "options": {
+        "A": "Proof that the defendant acted negligently in creating the nuisance",
+        "B": "That the plaintiff suffered special damage differing in kind or degree from damage suffered by the public generally",
+        "C": "A proprietary interest in the affected property",
+        "D": "That the defendant derived a commercial benefit from the nuisance-causing activity"
+      },
+      "correct_answer": "B",
+      "explanation": "The key requirement for a private tort action in public nuisance is special damage — damage that is different in kind or degree from that suffered by the public at large. Any member of the public may be affected by the nuisance, but only the individual who has suffered particular damage has a private cause of action."
+    },
+    {
+      "id": "TL_M12_L01_Q03",
+      "question": "In Connolly v South of Ireland Asphalt [1977], on what basis did the plaintiff succeed in a private law action for public nuisance?",
+      "options": {
+        "A": "The defendant had been criminally convicted of public nuisance before the civil proceedings",
+        "B": "The plaintiff proved that the defendant had caused the obstruction negligently",
+        "C": "The plaintiff's vehicle was damaged by materials falling from the defendant's lorry on a public road, constituting special damage over and above that suffered by the public",
+        "D": "The defendant failed to comply with a statutory notice requiring removal of the hazard"
+      },
+      "correct_answer": "C",
+      "explanation": "In Connolly v South of Ireland Asphalt [1977], the plaintiff's vehicle was damaged by stones and loose materials falling from the defendant's lorry on a public road. The court found this constituted a public nuisance and the plaintiff's particular damage to her vehicle satisfied the special damage requirement for a private tort claim."
+    },
+    {
+      "id": "TL_M12_L01_Q04",
+      "question": "Which of the following would NOT be recognised as a common example of public nuisance giving rise to a private tort claim?",
+      "options": {
+        "A": "Obstruction of the highway",
+        "B": "Dangerous excavations adjacent to public roads",
+        "C": "Operations creating hazards for the general public on a public road",
+        "D": "Interference with the plaintiff's quiet enjoyment of their own private property"
+      },
+      "correct_answer": "D",
+      "explanation": "Interference with a plaintiff's quiet enjoyment of their own private property is the basis of private nuisance, not public nuisance. Public nuisance involves an act or omission affecting the general public — such as highway obstructions, dangerous excavations near public roads, or hazardous operations affecting road users."
+    },
+    {
+      "id": "TL_M12_L01_Q05",
+      "question": "What is the primary distinction between public nuisance as a crime and public nuisance as a tort?",
+      "options": {
+        "A": "As a crime it affects a class of the public; as a tort it additionally requires the individual plaintiff to have suffered special damage beyond that suffered by the public generally",
+        "B": "As a crime it requires negligence; as a tort it is a strict liability offence",
+        "C": "As a crime it is prosecuted by the State; as a tort it is actionable only by the local authority",
+        "D": "As a crime it covers acts only; as a tort it covers both acts and omissions"
+      },
+      "correct_answer": "A",
+      "explanation": "Public nuisance as a crime requires an act or omission materially affecting a class of the public. As a tort, it additionally requires the individual claimant to have suffered special damage — particular damage that is different in kind or degree from that suffered by the public generally — to sustain a private law action."
+    },
+    {
+      "id": "TL_M12_L01_Q06",
+      "question": "Which person has standing to bring a private law action in tort for public nuisance?",
+      "options": {
+        "A": "Any member of the public who was present in the area where the nuisance occurred",
+        "B": "An individual who suffered particular damage over and above that sustained by the public at large",
+        "C": "Any person who reported the nuisance to the relevant local authority",
+        "D": "Only a person with a proprietary interest in land affected by the nuisance"
+      },
+      "correct_answer": "B",
+      "explanation": "Standing in a private tort action for public nuisance requires the plaintiff to demonstrate that they suffered special damage — particular damage differing in kind or degree from that suffered by the public generally. Mere presence in the affected area, or reporting the nuisance, does not confer standing without this additional element."
+    },
+    {
+      "id": "TL_M12_L01_Q07",
+      "question": "Which of the following is the most accurate definition of private nuisance?",
+      "options": {
+        "A": "A direct, intentional interference with the plaintiff's use of their land",
+        "B": "An act or omission that materially affects the reasonable comfort of a class of the public",
+        "C": "Unlawful interference with another person's use or enjoyment of their land, or with their rights over or in connection with it",
+        "D": "The accumulation of dangerous things on land causing foreseeable damage upon escape"
+      },
+      "correct_answer": "C",
+      "explanation": "Private nuisance is defined as unlawful interference with another person's use or enjoyment of their land, or with their rights over or in connection with it. It is distinguished from trespass (which involves direct physical entry) and from public nuisance (which affects the general public). Option D describes the rule in Rylands v Fletcher."
+    },
+    {
+      "id": "TL_M12_L01_Q08",
+      "question": "The principle that 'what would be a nuisance in Belgravia Square would not necessarily be so in Bermondsey' derives from which case?",
+      "options": {
+        "A": "Hanrahan v Merck Sharp and Dohme (Ireland) Ltd [1988]",
+        "B": "Hunter v Canary Wharf Ltd [1997]",
+        "C": "Rylands v Fletcher [1868]",
+        "D": "Sturges v Bridgman [1879]"
+      },
+      "correct_answer": "D",
+      "explanation": "The famous locality principle — that what would be a nuisance in Belgravia Square would not necessarily be so in Bermondsey — derives from Sturges v Bridgman [1879]. The principle establishes that the locality in which the parties are situated is a key factor in assessing whether interference is unreasonable for the purposes of private nuisance."
+    },
+    {
+      "id": "TL_M12_L01_Q09",
+      "question": "Which of the following factors is relevant to assessing whether an interference is unreasonable in the tort of private nuisance?",
+      "options": {
+        "A": "The locality in which both parties are situated",
+        "B": "Whether the defendant was the original occupier of the land from which the interference emanated",
+        "C": "Whether the plaintiff has a right of way over the defendant's land",
+        "D": "The market value of the plaintiff's property"
+      },
+      "correct_answer": "A",
+      "explanation": "Locality is a key factor in assessing unreasonableness in private nuisance, as established in Sturges v Bridgman [1879]. Courts also consider duration of interference, time of day, sensitivity of the plaintiff, and utility of the defendant's conduct. Whether the defendant was the original occupier is not a relevant factor."
+    },
+    {
+      "id": "TL_M12_L01_Q10",
+      "question": "What principle did Henchy J confirm in Hanrahan v Merck Sharp and Dohme (Ireland) Ltd [1988] regarding private nuisance?",
+      "options": {
+        "A": "That a licensee has the same standing as a tenant to sue in private nuisance",
+        "B": "That the defendant's use of their land must be unreasonable in the circumstances, and that foreseeability of harm is a relevant factor in assessing that reasonableness",
+        "C": "That the locality principle does not apply where the nuisance emanates from an industrial site",
+        "D": "That strict liability applies to all emissions from pharmaceutical plants"
+      },
+      "correct_answer": "B",
+      "explanation": "In Hanrahan v Merck Sharp and Dohme (Ireland) Ltd [1988], Henchy J in the Supreme Court confirmed that for private nuisance the defendant's use of their land must be unreasonable in the circumstances, and that foreseeability of harm is a relevant factor in assessing the reasonableness of that use. The case arose from noxious emissions from a pharmaceutical plant affecting the plaintiffs' farm."
+    },
+    {
+      "id": "TL_M12_L01_Q11",
+      "question": "Following Hunter v Canary Wharf Ltd [1997], which person has standing to sue in private nuisance?",
+      "options": {
+        "A": "Any person who regularly occupies the property, including family members and long-term guests",
+        "B": "Any person who can demonstrate they suffered actual physical damage to property on the land",
+        "C": "A person with a proprietary interest in the land, such as an owner or a tenant",
+        "D": "Any person who has a contractual right to use the land"
+      },
+      "correct_answer": "C",
+      "explanation": "In Hunter v Canary Wharf Ltd [1997], the House of Lords held that only a person with a proprietary interest in the land — an owner or a tenant — has standing to sue in private nuisance. A mere licensee, family member, or person without a tenancy or ownership right cannot bring a private nuisance claim. This restrictive approach has been generally followed in Ireland."
+    },
+    {
+      "id": "TL_M12_L01_Q12",
+      "question": "What is the key distinction between trespass to land and private nuisance?",
+      "options": {
+        "A": "Trespass to land requires proof of damage, while private nuisance is actionable per se",
+        "B": "Trespass to land applies only to intentional acts, while private nuisance requires negligence",
+        "C": "Trespass to land is a crime; private nuisance is a purely civil wrong",
+        "D": "Trespass to land involves a direct physical entry onto the plaintiff's land; private nuisance involves an indirect interference with the plaintiff's use or enjoyment of land"
+      },
+      "correct_answer": "D",
+      "explanation": "The key distinction is directness of interference. Trespass to land involves a direct, physical entry onto the plaintiff's land and is actionable per se. Private nuisance involves indirect interference — noise, smell, vibration, smoke emanating from the defendant's land — that impairs the plaintiff's use or enjoyment of their own land without involving a direct physical entry."
+    },
+    {
+      "id": "TL_M12_L01_Q13",
+      "question": "What are the primary remedies available in private nuisance?",
+      "options": {
+        "A": "Injunction to restrain the continuing nuisance and damages to compensate for past harm",
+        "B": "Abatement of the nuisance at the defendant's expense and exemplary damages",
+        "C": "A declaration by the court that the nuisance exists and a mandatory order to cease immediately",
+        "D": "An order requiring the defendant to pay for the plaintiff's relocation to alternative premises"
+      },
+      "correct_answer": "A",
+      "explanation": "The primary remedies in private nuisance are an injunction to restrain the continuing nuisance and damages to compensate for past harm. Courts balance the competing interests of the parties in deciding which remedy is appropriate — in some cases, damages in lieu of an injunction may be awarded where the harm is relatively minor or where granting an injunction would be disproportionate."
+    },
+    {
+      "id": "TL_M12_L01_Q14",
+      "question": "In Rylands v Fletcher [1868], Blackburn J stated the rule imposing liability for escape of dangerous things. What crucial additional requirement did the House of Lords add to this rule?",
+      "options": {
+        "A": "The defendant must have derived financial profit from accumulating the dangerous thing",
+        "B": "The use of the land must be non-natural",
+        "C": "The thing accumulated must be inherently dangerous rather than merely capable of causing mischief",
+        "D": "The escape must have been foreseeable by the defendant at the time of accumulation"
+      },
+      "correct_answer": "B",
+      "explanation": "The House of Lords in Rylands v Fletcher [1868] added the requirement that the use of the land must be non-natural. Blackburn J's formulation covered any accumulation of things likely to do mischief if they escape, but the House limited this to non-natural uses of land — ordinary agricultural, domestic, or standard industrial uses would not attract strict liability under the rule."
+    },
+    {
+      "id": "TL_M12_L01_Q15",
+      "question": "In the context of Rylands v Fletcher, which use of land would most likely be classified as 'non-natural'?",
+      "options": {
+        "A": "The keeping of livestock on a working farm",
+        "B": "The operation of a domestic boiler in a residential property",
+        "C": "The storage of large quantities of chemicals under pressure in an industrial reservoir",
+        "D": "The planting of trees whose roots extend onto neighbouring land"
+      },
+      "correct_answer": "C",
+      "explanation": "Storage of large quantities of chemicals under pressure in an industrial reservoir would constitute a non-natural use of land, as it involves an exceptional accumulation of a dangerous substance beyond ordinary use. Keeping livestock on a farm, a domestic boiler, and planting trees all represent ordinary or natural uses of land and would not attract Rylands v Fletcher liability."
+    },
+    {
+      "id": "TL_M12_L01_Q16",
+      "question": "Which of the following correctly states the four elements of the rule in Rylands v Fletcher?",
+      "options": {
+        "A": "Duty of care, breach, causation, and damage",
+        "B": "Accumulation, natural use, escape, and physical damage to property only",
+        "C": "Non-natural use, negligence, escape, and foreseeability of the type of damage",
+        "D": "Accumulation of a thing on land, non-natural use, escape from the land, and resulting damage to the plaintiff"
+      },
+      "correct_answer": "D",
+      "explanation": "The four elements of Rylands v Fletcher are: (1) the defendant brought and kept something on their land capable of causing mischief if it escapes (accumulation); (2) the use of the land is non-natural; (3) there was an escape from the land; and (4) the escape caused damage to the plaintiff. Option A describes negligence; Option C incorrectly requires negligence and misstates the foreseeability requirement (from Cambridge Water)."
+    },
+    {
+      "id": "TL_M12_L01_Q17",
+      "question": "In Superquinn v Bray Urban District Council [1998], why was the defendant local authority held strictly liable under the rule in Rylands v Fletcher?",
+      "options": {
+        "A": "The accumulation of water in a reservoir under pressure constituted a non-natural use of land, and the reservoir burst flooding the plaintiff's supermarket",
+        "B": "The defendant had been negligent in constructing the reservoir, which the court treated as equivalent to non-natural use",
+        "C": "The plaintiff had no proprietary interest in the flooded premises and relied solely on Rylands v Fletcher as an alternative basis of liability",
+        "D": "The damage to the supermarket was foreseeable and the defendant had failed to take adequate precautions to prevent flooding"
+      },
+      "correct_answer": "A",
+      "explanation": "In Superquinn v Bray UDC [1998], the High Court applied Rylands v Fletcher and held the local authority strictly liable because: the accumulation of water in a reservoir under pressure constituted a non-natural use of land; the reservoir burst; and the escaping water flooded the plaintiff's supermarket, causing the requisite damage. The case is the leading Irish application of the Rylands v Fletcher rule."
+    },
+    {
+      "id": "TL_M12_L01_Q18",
+      "question": "What requirement did the House of Lords add to the rule in Rylands v Fletcher in Cambridge Water Company v Eastern Counties Leather plc [1994]?",
+      "options": {
+        "A": "That the escape must have been caused by the defendant's negligence in failing to prevent it",
+        "B": "That the type of damage caused by the escape must have been reasonably foreseeable",
+        "C": "That the defendant must have known of the dangerous propensity of the accumulated substance",
+        "D": "That the plaintiff must have a proprietary interest in the land affected by the escape"
+      },
+      "correct_answer": "B",
+      "explanation": "In Cambridge Water Company v Eastern Counties Leather plc [1994], the House of Lords added the requirement that the type of damage caused by the escape must have been reasonably foreseeable — aligning Rylands v Fletcher with the Wagon Mound remoteness test. Unforeseeable damage, even if caused by an escape from a non-natural accumulation, is not recoverable under the rule."
+    },
+    {
+      "id": "TL_M12_L01_Q19",
+      "question": "Which of the following correctly describes the defence of 'Act of God' in the rule in Rylands v Fletcher?",
+      "options": {
+        "A": "Any natural event that contributed to the escape, regardless of whether it was foreseeable",
+        "B": "A natural event, provided the defendant took all reasonable precautions against its effects",
+        "C": "An extraordinary event entirely beyond human foresight or control, such as an unprecedented storm, that directly caused the escape",
+        "D": "Any act of nature that broke the chain of causation between the accumulation and the resulting damage"
+      },
+      "correct_answer": "C",
+      "explanation": "The Act of God defence requires that the escape was caused by an extraordinary event entirely beyond human foresight or control — for example, an unprecedented storm or exceptional natural event. Ordinary foreseeable weather events would not qualify. The defence provides a complete answer to a Rylands v Fletcher claim where the natural event, and not the defendant's accumulation, caused the escape."
+    },
+    {
+      "id": "TL_M12_L01_Q20",
+      "question": "Under the rule in Rylands v Fletcher, which scenario would most clearly establish the defence of 'act of a stranger'?",
+      "options": {
+        "A": "A third party with a contractual right to access the defendant's land tampered with the storage facility",
+        "B": "The plaintiff's own employee accessed the defendant's land and interfered with the accumulation",
+        "C": "The defendant's employee acted in excess of their authority when adjusting the containment system",
+        "D": "An unforeseeable act by a trespasser over whom the defendant had no control caused the escape"
+      },
+      "correct_answer": "D",
+      "explanation": "The act of a stranger defence applies where the escape was caused by the unforeseeable act of a third party over whom the defendant had no control — typically a trespasser. A person with contractual access is not a 'stranger'; the defendant's own employee's acts are attributable to the defendant; and an act foreseeable to the defendant would not establish the defence."
+    },
+    {
+      "id": "TL_M12_L01_Q21",
+      "question": "What does the 'escape' requirement mean in the context of the rule in Rylands v Fletcher?",
+      "options": {
+        "A": "The thing accumulated must move from the defendant's land or premises to outside the area of the defendant's occupation and control",
+        "B": "The thing must escape in a catastrophic manner rather than as a slow or gradual leak",
+        "C": "The defendant must have been unable to prevent the escape despite taking all reasonable precautions",
+        "D": "The escape must have been caused by an extraordinary event beyond the defendant's control"
+      },
+      "correct_answer": "A",
+      "explanation": "The escape requirement means that the dangerous thing must move from the defendant's land or premises to outside the area of the defendant's occupation and control. This was confirmed in Read v J Lyons & Co Ltd [1947], where an explosion within the defendant's factory injured a government inspector. Because the 'thing' did not escape from the defendant's land, the rule did not apply."
+    },
+    {
+      "id": "TL_M12_L01_Q22",
+      "question": "Which of the following would be classified as an ordinary or natural use of land and would therefore NOT attract liability under the rule in Rylands v Fletcher?",
+      "options": {
+        "A": "Storing large quantities of fuel oil in tanks situated near a public road",
+        "B": "The use of a domestic water supply pipe connected to the mains water system in a private dwelling",
+        "C": "Operating an industrial reservoir designed to hold water under high hydraulic pressure",
+        "D": "Accumulating large quantities of mining slag on the surface of disused land"
+      },
+      "correct_answer": "B",
+      "explanation": "A domestic water supply pipe connected to the mains system in a private dwelling represents an ordinary, natural use of land — part of everyday domestic habitation — and would not attract Rylands v Fletcher liability. Storing large quantities of fuel oil near a road, operating a high-pressure industrial reservoir, and accumulating mining slag all represent non-natural uses that could attract liability upon escape."
+    },
+    {
+      "id": "TL_M12_L01_Q23",
+      "question": "What type of liability does section 21 of the Control of Dogs Act 1986 impose on the owner or keeper of a dog that attacks and injures a person?",
+      "options": {
+        "A": "Negligence-based liability, requiring proof that the owner knew or ought to have known the dog was dangerous",
+        "B": "Liability based on the scienter principle, requiring proof of the dog's known dangerous propensity prior to the attack",
+        "C": "Strict liability, without any requirement to prove prior knowledge of the dog's dangerous nature",
+        "D": "Vicarious liability for the acts of the dog, subject to a defence of reasonable care in supervision"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 21 of the Control of Dogs Act 1986 imposes strict liability on the owner or keeper of a dog that attacks or injures a person, damages property, or worries livestock. There is no requirement to prove that the dog had a known propensity to attack, or that the defendant was negligent. The fact of the attack and ownership or keeping is sufficient to establish liability."
+    },
+    {
+      "id": "TL_M12_L01_Q24",
+      "question": "What did O'Reilly v Lavelle [1990] confirm in the context of liability for dog attacks?",
+      "options": {
+        "A": "That the scienter action applies to all dog attacks, regardless of any statutory provisions",
+        "B": "That the owner of a dog is not liable unless they had specific knowledge that the dog had previously attacked",
+        "C": "That the plaintiff must show the defendant failed to keep the dog under proper control at the time of the attack",
+        "D": "That strict liability under section 21 of the Control of Dogs Act 1986 applies without any need to establish prior knowledge of the dog's dangerous nature"
+      },
+      "correct_answer": "D",
+      "explanation": "In O'Reilly v Lavelle [1990], the plaintiff was attacked by the defendant's dog. The court applied section 21 of the Control of Dogs Act 1986 and held the defendant strictly liable without any requirement to establish prior knowledge of the dog's dangerous nature. This case confirms the strict liability nature of the statutory cause of action for dog attacks."
+    },
+    {
+      "id": "TL_M12_L01_Q25",
+      "question": "What must a plaintiff prove to succeed in the common law scienter action for damage caused by a domesticated animal?",
+      "options": {
+        "A": "That the animal had a dangerous propensity and that the defendant knew of that propensity before the injury occurred",
+        "B": "That the defendant failed to exercise reasonable care in controlling the animal on the occasion of the attack",
+        "C": "That the animal had previously caused damage on at least two separate occasions known to the defendant",
+        "D": "That the defendant derived a commercial benefit from keeping the animal"
+      },
+      "correct_answer": "A",
+      "explanation": "The scienter action requires the plaintiff to prove two things: first, that the animal had a dangerous propensity; and second, that the defendant knew of that dangerous propensity before the injury occurred. For domesticated animals (mansuetae naturae), there is no presumption of dangerous propensity — the plaintiff must affirmatively establish both the propensity and the defendant's prior knowledge of it."
+    },
+    {
+      "id": "TL_M12_L01_Q26",
+      "question": "What is the key distinction between liability for ferae naturae (wild animals) and mansuetae naturae (domesticated animals) at common law?",
+      "options": {
+        "A": "The owner of a wild animal is liable only for foreseeable damage; the owner of a domesticated animal is strictly liable for all damage caused",
+        "B": "The dangerous propensity of a wild animal is presumed from its nature; for a domesticated animal the plaintiff must prove the defendant knew of the specific animal's dangerous propensity",
+        "C": "Wild animals are regulated exclusively by statute; domesticated animals are governed entirely by common law",
+        "D": "The owner of a wild animal is only liable if the animal escapes from their land; the owner of a domesticated animal is liable for damage caused anywhere"
+      },
+      "correct_answer": "B",
+      "explanation": "For ferae naturae (wild animals such as lions, wolves, venomous snakes), the owner is strictly liable because the dangerous propensity is presumed from the nature of the animal itself. For mansuetae naturae (domesticated animals such as cattle, horses, and dogs), the owner is only liable if they knew of the specific animal's dangerous propensity before the injury — the plaintiff must establish both the propensity and the prior knowledge."
+    },
+    {
+      "id": "TL_M12_L01_Q27",
+      "question": "The maxim that 'every dog is entitled to one bite' reflects which legal principle?",
+      "options": {
+        "A": "The first attack by a dog cannot give rise to any liability in tort, whether at common law or under statute",
+        "B": "A dog owner can only be held liable from the second attack onwards, and never for the first attack",
+        "C": "The first attack may provide the owner with the knowledge of the dog's dangerous propensity required for subsequent scienter liability at common law",
+        "D": "Section 21 of the Control of Dogs Act 1986 only applies after the owner has received a formal warning following the dog's first attack"
+      },
+      "correct_answer": "C",
+      "explanation": "The maxim that 'every dog is entitled to one bite' reflects the scienter principle for domesticated animals at common law: the first attack may give the owner the knowledge of the dog's dangerous propensity that is required for liability in subsequent incidents. It does NOT mean the first attack is immune from liability — section 21 of the Control of Dogs Act 1986 imposes strict liability without any need for prior knowledge."
+    },
+    {
+      "id": "TL_M12_L01_Q28",
+      "question": "What protection does section 1(1) of the Accidental Fires Act 1943 provide?",
+      "options": {
+        "A": "It imposes strict liability on landowners for all fires that spread from their land to neighbouring property",
+        "B": "It provides a partial defence reducing liability where fire spread to a neighbouring property that was unoccupied",
+        "C": "It limits the damages recoverable for property damage caused by fire to the reinstatement value of the affected structures",
+        "D": "Where a fire accidentally began on a person's land, no action lies against that person in respect of damage caused to another's property by the spread of that fire"
+      },
+      "correct_answer": "D",
+      "explanation": "Section 1(1) of the Accidental Fires Act 1943 provides that where a fire accidentally began on a person's land or premises, no action shall lie against them in respect of damage caused to another's property by the spread of that fire. The critical word is 'accidentally' — the protection only applies where the fire began accidentally and not as a result of the defendant's negligence."
+    },
+    {
+      "id": "TL_M12_L01_Q29",
+      "question": "In which of the following circumstances does the Accidental Fires Act 1943 NOT provide protection to a defendant?",
+      "options": {
+        "A": "Where the fire began or spread as a result of the defendant's negligence",
+        "B": "Where the fire spread to a neighbouring property that was unoccupied at the time of the fire",
+        "C": "Where the defendant derived a commercial benefit from the activity that gave rise to the fire",
+        "D": "Where the fire destroyed goods or stock rather than structures or permanent fixtures"
+      },
+      "correct_answer": "A",
+      "explanation": "The Accidental Fires Act 1943 does NOT protect a defendant where the fire began or spread as a result of their negligence. The Act's protection applies only to fires that began accidentally — that is, without any negligence, recklessness, or deliberate act on the part of the defendant. Where negligence is proved, the defendant remains fully liable at common law and the 1943 Act provides no shield."
+    },
+    {
+      "id": "TL_M12_L01_Q30",
+      "question": "In Nugent v Fogarty [2015], what key issue did the court examine when fire spread from the defendant's land to the plaintiff's property?",
+      "options": {
+        "A": "Whether the defendant had a valid insurance policy that should have indemnified the plaintiff for the damage",
+        "B": "Whether the fire began accidentally or through negligence, since the Accidental Fires Act 1943's protection depends entirely on the accidental character of the fire's origin",
+        "C": "Whether the plaintiff had taken adequate precautions to protect their own property from the foreseeable risk of fire spread",
+        "D": "Whether the defendant had complied with fire safety regulations applicable to the use of the relevant land"
+      },
+      "correct_answer": "B",
+      "explanation": "In Nugent v Fogarty [2015], when fire spread from the defendant's land to the plaintiff's property, the Court of Appeal examined whether the fire began accidentally or through negligence. The court confirmed that the Accidental Fires Act 1943's protection depends entirely on the accidental character of the fire's origin — only an accidentally started fire attracts the statutory shield from liability."
+    },
+    {
+      "id": "TL_M12_L01_Q31",
+      "question": "If a fire started on the defendant's land due to the defendant's negligence and then spread to the plaintiff's property, what is the correct legal position?",
+      "options": {
+        "A": "The defendant is protected by the Accidental Fires Act 1943 regardless of negligence, because the spread of fire to neighbouring property occurred accidentally",
+        "B": "The plaintiff must prove that the defendant specifically foresaw the risk of spread to the plaintiff's property in particular",
+        "C": "The defendant is fully liable at common law and the Accidental Fires Act 1943 provides no protection",
+        "D": "The defendant may rely on the 1943 Act as a partial defence, reducing liability in proportion to the accidental nature of the fire's subsequent spread"
+      },
+      "correct_answer": "C",
+      "explanation": "Where fire begins on the defendant's land as a result of their negligence, the defendant is fully liable at common law for damage caused by the spread of that fire. The Accidental Fires Act 1943 provides no protection in such circumstances — the Act only shields defendants where the fire began accidentally (without negligence). This principle was confirmed in Nugent v Fogarty [2015] and Feeney v Andreu [2015]."
+    }
+  ]
+}

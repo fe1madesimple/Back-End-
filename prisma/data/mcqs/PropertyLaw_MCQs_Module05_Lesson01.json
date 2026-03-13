@@ -1,0 +1,611 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "PropertyLaw_ElevenLabs_Module05_Lesson01.txt",
+  "module_number": 5,
+  "module_title": "Freehold Covenants",
+  "lesson_number": 1,
+  "lesson_title": "Freehold Covenants: Common Law, Equity, the LCLRA 2009, and Building Schemes",
+  "total_questions": 50,
+  "questions": [
+    {
+      "id": "PRL_M05_L01_Q01",
+      "question": "Which case is the primary common law authority for the rule that the burden of a freehold covenant does not run with the land?",
+      "options": {
+        "A": "Austerberry v Corporation of Oldham [1885]",
+        "B": "Tulk v Moxhay [1848]",
+        "C": "Rhone v Stephens [1994]",
+        "D": "Elliston v Reacher [1908]"
+      },
+      "correct_answer": "A",
+      "explanation": "Austerberry v Corporation of Oldham [1885] established that the burden of a freehold covenant does not run with the land at common law. This was the primary authority, later emphatically confirmed by the House of Lords in Rhone v Stephens [1994]."
+    },
+    {
+      "id": "PRL_M05_L01_Q02",
+      "question": "In Rhone v Stephens [1994], which court emphatically confirmed that the burden of a positive freehold covenant does not run at common law?",
+      "options": {
+        "A": "The Irish Supreme Court",
+        "B": "The House of Lords",
+        "C": "The English Court of Appeal",
+        "D": "The Privy Council"
+      },
+      "correct_answer": "B",
+      "explanation": "The House of Lords in Rhone v Stephens [1994] emphatically confirmed that the burden of a freehold covenant — particularly a positive one — does not run with the land at common law. Lord Templeman delivered the leading judgment."
+    },
+    {
+      "id": "PRL_M05_L01_Q03",
+      "question": "In Rhone v Stephens [1994], which Law Lord made clear that equity does not supplement the common law rule in respect of the burden of positive covenants?",
+      "options": {
+        "A": "Lord Diplock",
+        "B": "Lord Denning",
+        "C": "Lord Templeman",
+        "D": "Lord Hoffmann"
+      },
+      "correct_answer": "C",
+      "explanation": "Lord Templeman in Rhone v Stephens [1994] made clear that equity does not supplement the common law to allow the burden of positive covenants to run with freehold land. The common law rule stands — the burden does not run."
+    },
+    {
+      "id": "PRL_M05_L01_Q04",
+      "question": "The benefit of a freehold covenant can run at common law. Which of the following is a required condition?",
+      "options": {
+        "A": "The covenant must be negative in substance — restricting what the covenantor can do",
+        "B": "The covenantor must have held a legal estate in the burdened land at the time of the covenant",
+        "C": "The successor in title must have registered the benefit in the Land Registry",
+        "D": "The covenant must touch and concern the land — benefit the land itself rather than the covenantee personally"
+      },
+      "correct_answer": "D",
+      "explanation": "For the benefit of a covenant to run at common law, the covenant must touch and concern the land — meaning it must benefit the dominant land itself, not merely the personal interests of the original covenantee."
+    },
+    {
+      "id": "PRL_M05_L01_Q05",
+      "question": "In Tulk v Moxhay [1848], what was the subject matter of the dispute?",
+      "options": {
+        "A": "Moxhay proposed to build on Leicester Square despite knowing of a covenant requiring it to be kept as an open garden",
+        "B": "Moxhay sought to enforce a covenant against a developer who had purchased land with notice",
+        "C": "Tulk sought to register a restrictive covenant against Moxhay's neighbouring residential estate",
+        "D": "Moxhay challenged the validity of a covenant imposed by Tulk on the sale of a row of terraced houses"
+      },
+      "correct_answer": "A",
+      "explanation": "In Tulk v Moxhay [1848], Tulk had sold Leicester Square on terms that it be kept as an open garden. The land passed through several hands to Moxhay, who knew of the covenant and proposed to build on the square. The court granted an injunction."
+    },
+    {
+      "id": "PRL_M05_L01_Q06",
+      "question": "What equitable principle underlies the rule in Tulk v Moxhay?",
+      "options": {
+        "A": "A successor in title takes subject to all covenants regardless of notice",
+        "B": "It would be unconscionable for a purchaser who took with notice of a restrictive covenant to act in breach of it — equity acts on the conscience",
+        "C": "Equity supplements the common law so that the burden of all covenants — positive and negative — runs with land",
+        "D": "A restrictive covenant is a proprietary right that runs automatically with the servient land without the need for notice"
+      },
+      "correct_answer": "B",
+      "explanation": "The principle underlying Tulk v Moxhay is that equity acts on the conscience. It would be unconscionable for a purchaser who took with notice of a restrictive covenant to act in breach of it. Equity therefore enforces the covenant against that purchaser."
+    },
+    {
+      "id": "PRL_M05_L01_Q07",
+      "question": "Under the rule in Tulk v Moxhay, which of the following is the FIRST condition for the burden of a restrictive covenant to run in equity?",
+      "options": {
+        "A": "The covenant must accommodate and serve an identified dominant tenement",
+        "B": "The successor in title must have actual notice of the covenant",
+        "C": "The covenant must be negative in substance — restricting the covenantor from doing something",
+        "D": "The original parties must have intended the burden to run with the servient land"
+      },
+      "correct_answer": "C",
+      "explanation": "The first condition from Tulk v Moxhay is that the covenant must be negative in substance — it must restrict the covenantor from doing something. This is the defining characteristic of a restrictive covenant capable of running in equity."
+    },
+    {
+      "id": "PRL_M05_L01_Q08",
+      "question": "Under Tulk v Moxhay, the second condition for the burden of a restrictive covenant to run in equity is that it must accommodate and serve a dominant tenement. What does this mean?",
+      "options": {
+        "A": "The covenant must be for the benefit of a local authority or planning body",
+        "B": "The covenant must have been entered into at the time of a conveyance of the dominant tenement",
+        "C": "The covenant must have been registered against the servient tenement in the Land Registry",
+        "D": "The covenant must benefit identified land retained by the covenantee — not merely benefit the covenantee personally"
+      },
+      "correct_answer": "D",
+      "explanation": "The second Tulk v Moxhay condition requires the covenant to accommodate and serve a dominant tenement — it must benefit identified land, not merely the personal interests of the covenantee. This mirrors the accommodation condition from easement law."
+    },
+    {
+      "id": "PRL_M05_L01_Q09",
+      "question": "Which condition from Tulk v Moxhay addresses the subjective intention of the original parties to the covenant?",
+      "options": {
+        "A": "The original parties must have intended that the burden of the covenant would run with the land",
+        "B": "The original parties must have intended that the benefit would run with the dominant tenement",
+        "C": "The successor in title must have intended to be bound by the covenant when they purchased",
+        "D": "The original parties must have made the covenant for valuable consideration"
+      },
+      "correct_answer": "A",
+      "explanation": "The third condition from Tulk v Moxhay is that the original parties must have intended that the burden of the covenant would run with the servient land — binding not just the original covenantor but also successors in title."
+    },
+    {
+      "id": "PRL_M05_L01_Q10",
+      "question": "Under Tulk v Moxhay, the fourth condition is that the successor must have notice. In the modern era of registered land, how is this requirement satisfied?",
+      "options": {
+        "A": "By the successor signing a declaration at the time of purchase acknowledging the covenant",
+        "B": "By registration of the covenant as a burden on the servient title in the Land Registry",
+        "C": "By actual occupation of the dominant tenement by a person claiming the benefit",
+        "D": "By notification to the Land Registry within six months of the covenant being created"
+      },
+      "correct_answer": "B",
+      "explanation": "In the modern era of registered land, notice is established by registration. A restrictive covenant must be registered as a burden on the servient land's folio in the Land Registry to bind successors who would otherwise take without notice."
+    },
+    {
+      "id": "PRL_M05_L01_Q11",
+      "question": "What is the critical date that determines whether the pre-2009 common law and equitable rules or the LCLRA 2009 regime applies to a freehold covenant?",
+      "options": {
+        "A": "1 January 2009",
+        "B": "1 June 2009",
+        "C": "1 December 2009",
+        "D": "1 December 2010"
+      },
+      "correct_answer": "C",
+      "explanation": "The LCLRA 2009 came into force on 1 December 2009. Covenants created from that date onwards are governed by sections 48-50 of the 2009 Act. Covenants created before that date remain governed by the pre-2009 common law and equitable rules."
+    },
+    {
+      "id": "PRL_M05_L01_Q12",
+      "question": "Under section 49 of the LCLRA 2009, what fundamental change was made to the running of freehold covenants created from 1 December 2009?",
+      "options": {
+        "A": "The burden of restrictive covenants was abolished and replaced by planning conditions",
+        "B": "The benefit of covenants can now run at common law without needing to touch and concern the land",
+        "C": "Only restrictive covenants — not positive covenants — can run in equity under the 2009 Act",
+        "D": "Both positive and restrictive covenants can now run in equity with freehold land, provided the required conditions are met"
+      },
+      "correct_answer": "D",
+      "explanation": "Section 49 of the LCLRA 2009 made a fundamental change for covenants created from 1 December 2009 — both positive and restrictive covenants can now run with freehold land in equity, breaking from the common law rule that restricted the burden to restrictive covenants only."
+    },
+    {
+      "id": "PRL_M05_L01_Q13",
+      "question": "What are the conditions under section 49 of the LCLRA 2009 for a freehold covenant to run with the land in equity?",
+      "options": {
+        "A": "The covenant must be for the benefit of land retained by the covenantee or made in connection with a building scheme; there must be an intention to run; and the successor must have notice",
+        "B": "The covenant must be registered within 12 months of creation and must be negative in substance",
+        "C": "The covenant must be supported by consideration and the servient land must be registered freehold",
+        "D": "Both parties must have been legally represented at the time the covenant was created"
+      },
+      "correct_answer": "A",
+      "explanation": "Under section 49 of the LCLRA 2009, for a covenant to run with the land, the required conditions are: (1) the covenant must be for the benefit of land retained by the covenantee or made in connection with a building scheme; (2) there must be an intention to run; and (3) the successor must have notice."
+    },
+    {
+      "id": "PRL_M05_L01_Q14",
+      "question": "What does section 50 of the Land and Conveyancing Law Reform Act 2009 provide?",
+      "options": {
+        "A": "Section 50 governs the acquisition of freehold covenants by prescription after 20 years",
+        "B": "Section 50 provides a mechanism for the discharge or modification of covenants where they have become obsolete or are no longer necessary for the protection of the benefited land",
+        "C": "Section 50 sets out the transitional provisions for pre-2009 covenants under the old law",
+        "D": "Section 50 extends the Tulk v Moxhay conditions to all freehold covenants including positive ones"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 50 of the LCLRA 2009 provides a mechanism by which a court can discharge or modify a covenant where it has become obsolete or is no longer necessary for the protection of the benefited land. This is an important safety valve for landowners burdened by outdated covenants."
+    },
+    {
+      "id": "PRL_M05_L01_Q15",
+      "question": "A restrictive covenant was entered into in 1990. Which legal regime applies?",
+      "options": {
+        "A": "The LCLRA 2009 regime under sections 48-50 applies to all covenants regardless of when made",
+        "B": "The LCLRA 2009 regime applies because the old law has been entirely replaced",
+        "C": "The old law applies — including the Austerberry and Rhone v Stephens rule and the Tulk v Moxhay conditions — because the LCLRA 2009 only applies to covenants created from 1 December 2009",
+        "D": "The covenant is no longer enforceable because it was created before the LCLRA 2009"
+      },
+      "correct_answer": "C",
+      "explanation": "The LCLRA 2009 only applies to covenants created from 1 December 2009. A covenant created in 1990 predates the Act and is governed by the pre-2009 common law and equitable rules: the Austerberry/Rhone v Stephens rule on burden at common law and the Tulk v Moxhay conditions for restrictive covenants in equity."
+    },
+    {
+      "id": "PRL_M05_L01_Q16",
+      "question": "A covenant to maintain a boundary fence was entered into in 2020. If the burdened land is sold, can the burden run with the land?",
+      "options": {
+        "A": "No — the burden of positive covenants never runs with land regardless of when created",
+        "B": "No — only restrictive covenants can run under the LCLRA 2009",
+        "C": "Yes — but only if the covenant was registered as a burden on the title in the Land Registry",
+        "D": "Yes — under section 49 of the LCLRA 2009, both positive and restrictive covenants created from 1 December 2009 can run in equity, provided the required conditions are satisfied"
+      },
+      "correct_answer": "D",
+      "explanation": "A covenant to maintain a fence is a positive covenant created in 2020 — after the commencement of the LCLRA 2009. Under section 49, both positive and restrictive covenants created from 1 December 2009 can run with freehold land in equity, provided the covenant is for the benefit of retained land or a building scheme, there is intent to run, and the successor has notice."
+    },
+    {
+      "id": "PRL_M05_L01_Q17",
+      "question": "What is a 'building scheme' in the context of freehold covenants?",
+      "options": {
+        "A": "An arrangement where a developer sells plots on a housing development subject to a common set of covenants, with the mutual intention that all purchasers are bound by and entitled to enforce the covenants against each other",
+        "B": "A scheme under the LCLRA 2009 for registering covenants on a development of five or more units",
+        "C": "A local authority planning scheme imposing covenants on all new developments in a designated area",
+        "D": "A contractual arrangement between adjacent landowners to share the maintenance of common infrastructure"
+      },
+      "correct_answer": "A",
+      "explanation": "A building scheme arises where a developer sells plots on a development subject to a common set of covenants, with the mutual intention that all purchasers shall be bound by and entitled to enforce the covenants against each other. The leading case is Elliston v Reacher [1908]."
+    },
+    {
+      "id": "PRL_M05_L01_Q18",
+      "question": "The leading case on building schemes is Elliston v Reacher [1908]. What must be established for a valid building scheme?",
+      "options": {
+        "A": "The developer must have registered the scheme with the Land Registry before any plots are sold",
+        "B": "The plots must have been sold by a common vendor subject to a common set of covenants, with the mutual intention that all purchasers are bound by and entitled to enforce those covenants",
+        "C": "At least half of the plot owners must have signed a deed of mutual covenant at the time of purchase",
+        "D": "The building scheme covenants must have been approved by a planning authority before being imposed"
+      },
+      "correct_answer": "B",
+      "explanation": "Under Elliston v Reacher [1908], a valid building scheme requires: plots sold by a common vendor subject to a common set of covenants, with the mutual intention that all purchasers are bound by and can enforce the covenants against each other."
+    },
+    {
+      "id": "PRL_M05_L01_Q19",
+      "question": "Where a valid building scheme exists, which of the following is correct?",
+      "options": {
+        "A": "Only the original vendor can enforce the covenants against any purchaser in the scheme",
+        "B": "Only purchasers who took their title directly from the original vendor can enforce the covenants",
+        "C": "Every plot owner within the scheme can enforce the covenants against every other plot owner, regardless of whether they were parties to each other's conveyances",
+        "D": "Only negative covenants can be enforced within a building scheme — positive covenants are unenforceable"
+      },
+      "correct_answer": "C",
+      "explanation": "A valid building scheme creates mutual enforceability. Every plot owner within the scheme can enforce the scheme covenants against every other plot owner — regardless of whether they were parties to each other's conveyances. This overcomes the privity of contract limitation."
+    },
+    {
+      "id": "PRL_M05_L01_Q20",
+      "question": "A purchaser buys land in 2005 and enters into a positive covenant to maintain a shared access road. The land is later sold. Can the burden bind the successor?",
+      "options": {
+        "A": "Yes — the original covenantor is automatically released from the covenant on sale of the land",
+        "B": "Yes — the positive covenant is enforceable against the successor if it was registered as a burden",
+        "C": "Yes — the positive covenant is enforceable against the successor by virtue of the principle in Tulk v Moxhay",
+        "D": "No — the burden of a positive covenant does not run at common law; the obligation remains with the original covenantor, who retains personal liability under the pre-2009 rules"
+      },
+      "correct_answer": "D",
+      "explanation": "Under the pre-2009 rules (applicable to a 2005 covenant), the burden of a positive covenant does not run with the land at common law (Austerberry; Rhone v Stephens). The successor in title is not bound. Personal liability remains with the original covenantor."
+    },
+    {
+      "id": "PRL_M05_L01_Q21",
+      "question": "Why did courts historically distinguish between positive and restrictive covenants in the context of running with land?",
+      "options": {
+        "A": "Because a positive covenant imposes an ongoing financial or physical obligation on successors — considered too burdensome to impose on a purchaser who had no part in the original agreement",
+        "B": "Because positive covenants were held to be contrary to public policy as a restraint on trade",
+        "C": "Because positive covenants require consideration while restrictive covenants do not",
+        "D": "Because positive covenants cannot be registered in the Land Registry"
+      },
+      "correct_answer": "A",
+      "explanation": "Courts distinguished positive from restrictive covenants because a positive covenant imposes an ongoing financial or physical obligation on a successor who was not party to the original agreement. This was considered too burdensome. A restrictive covenant merely limits what the successor can do — a lesser imposition on autonomy."
+    },
+    {
+      "id": "PRL_M05_L01_Q22",
+      "question": "A developer sold 20 plots on a housing estate in 2015 subject to identical covenants not to use the land for commercial purposes. Plot owner A now operates a business from her home. Can plot owner B enforce the covenant against A?",
+      "options": {
+        "A": "No — B was not a party to A's conveyance and has no contractual right to enforce",
+        "B": "Yes — the common vendor, common covenants, and mutual intention create a building scheme, enabling B to enforce the covenant against A",
+        "C": "Yes — but only if B can establish that the covenant was registered against A's title before A's purchase",
+        "D": "No — under the LCLRA 2009, covenants in a building scheme can only be enforced by the original developer"
+      },
+      "correct_answer": "B",
+      "explanation": "The facts disclose a building scheme — a common vendor selling multiple plots subject to identical covenants with mutual intention of enforceability. Under the building scheme doctrine (Elliston v Reacher), plot owner B can enforce the covenant against plot owner A despite having no direct contractual relationship."
+    },
+    {
+      "id": "PRL_M05_L01_Q23",
+      "question": "A restrictive covenant created in 2015 prevents any building on a plot. It was not registered when created. The plot is now sold to a purchaser with no actual notice. Can the purchaser be bound?",
+      "options": {
+        "A": "Yes — a restrictive covenant always binds all successors regardless of registration",
+        "B": "Yes — actual knowledge of the covenant at the time of purchase is sufficient to bind the purchaser",
+        "C": "No — in the modern registered land system, registration establishes notice; an unregistered covenant cannot bind a purchaser who had no actual notice",
+        "D": "No — all covenants created after 1 December 2009 are void unless registered within 12 months"
+      },
+      "correct_answer": "C",
+      "explanation": "In the registered land system, notice is established through registration. A restrictive covenant that has not been registered as a burden on the servient folio cannot bind a purchaser who had no actual notice of it. Registration is how the notice requirement under Tulk v Moxhay and section 49 LCLRA 2009 is satisfied in practice."
+    },
+    {
+      "id": "PRL_M05_L01_Q24",
+      "question": "What is a restrictive covenant, as distinct from a positive covenant?",
+      "options": {
+        "A": "A restrictive covenant is one that requires the covenantor to pay money to the covenantee",
+        "B": "A restrictive covenant is one that requires the covenantor to carry out works on the burdened land",
+        "C": "A restrictive covenant is one that can only be enforced by the Land Registry, not by private parties",
+        "D": "A restrictive covenant restricts what the covenantor may do with the land — it is negative in substance, prohibiting certain uses or activities"
+      },
+      "correct_answer": "D",
+      "explanation": "A restrictive covenant is negative in substance — it restricts the covenantor from doing something with the burdened land, such as building, using the land for commercial purposes, or subdividing. This distinguishes it from a positive covenant, which imposes an obligation to act."
+    },
+    {
+      "id": "PRL_M05_L01_Q25",
+      "question": "Under the common law rules for the benefit of a covenant to run, the covenant must 'touch and concern' the land. What does this mean?",
+      "options": {
+        "A": "The covenant must benefit the land itself and affect the mode of use or enjoyment of the land — not merely the personal interests of the covenantee",
+        "B": "The covenant must be physically marked on the land or included in the title deeds",
+        "C": "The covenant must relate only to the physical structure of the dominant tenement",
+        "D": "The covenant must have been in existence for at least 12 years before a successor seeks to enforce it"
+      },
+      "correct_answer": "A",
+      "explanation": "'Touch and concern' the land means the covenant must benefit the land itself and affect the mode of its use or enjoyment — not merely the personal interests of the original covenantee. A covenant touching and concerning the land runs with it on a transfer."
+    },
+    {
+      "id": "PRL_M05_L01_Q26",
+      "question": "In what way does section 49 of the LCLRA 2009 depart most significantly from the pre-2009 common law position?",
+      "options": {
+        "A": "It abolishes the need for a dominant tenement for the benefit of a covenant to run",
+        "B": "It allows the burden of positive covenants — not just restrictive covenants — to run with freehold land in equity for covenants created from 1 December 2009",
+        "C": "It removes the requirement of notice for a successor in title to be bound by a covenant",
+        "D": "It gives the courts an express power to award damages in lieu of an injunction for breach of covenant"
+      },
+      "correct_answer": "B",
+      "explanation": "The most significant departure in section 49 of the LCLRA 2009 is that the burden of both positive and restrictive covenants can now run with freehold land in equity — for covenants created from 1 December 2009. Under the pre-2009 rules, only restrictive covenants could run in equity; positive covenants could not."
+    },
+    {
+      "id": "PRL_M05_L01_Q27",
+      "question": "What was Lord Templeman's key statement in Rhone v Stephens [1994] regarding positive covenants?",
+      "options": {
+        "A": "That equity supplements the common law to allow the burden of positive covenants to run with land",
+        "B": "That the burden of positive covenants runs with freehold land under the principle of Tulk v Moxhay",
+        "C": "That equity does not supplement the common law rule — the burden of a positive covenant does not run, and equity does not fill the gap",
+        "D": "That positive covenants may run with freehold land where the covenantor expressly agrees to this at the time of sale"
+      },
+      "correct_answer": "C",
+      "explanation": "Lord Templeman in Rhone v Stephens [1994] made emphatically clear that equity does not supplement the common law to allow positive covenant burdens to run. The position is stark: the burden of a positive covenant does not run at common law, and equity does not provide a remedy in this regard."
+    },
+    {
+      "id": "PRL_M05_L01_Q28",
+      "question": "Under section 49 of the LCLRA 2009, which of the following is a condition for a covenant to run with the land in equity?",
+      "options": {
+        "A": "The covenant must have been created by deed and witnessed by a solicitor",
+        "B": "The covenant must have been created on or after 1 June 2009",
+        "C": "The covenant must be registered as a burden within 30 days of creation",
+        "D": "The covenant must have been made for the benefit of land retained by the covenantee, or made in connection with a building scheme"
+      },
+      "correct_answer": "D",
+      "explanation": "One of the conditions under section 49 of the LCLRA 2009 for a covenant to run with freehold land in equity is that it must have been made for the benefit of land retained by the covenantee or in connection with a building scheme. This ensures the covenant serves a genuine proprietary purpose."
+    },
+    {
+      "id": "PRL_M05_L01_Q29",
+      "question": "Which of the following is an example of a POSITIVE covenant?",
+      "options": {
+        "A": "A covenant by a purchaser to maintain and repair the boundary wall between their property and the vendor's retained land",
+        "B": "A covenant by a purchaser not to build above a certain height on the purchased land",
+        "C": "A covenant by a purchaser not to use the purchased land for commercial purposes",
+        "D": "A covenant by a purchaser not to subdivide the purchased land without the vendor's consent"
+      },
+      "correct_answer": "A",
+      "explanation": "A covenant to maintain and repair the boundary wall is a positive covenant — it imposes an active obligation on the covenantor to do something (carry out maintenance). Covenants not to build, not to use for commercial purposes, and not to subdivide are all negative (restrictive) covenants."
+    },
+    {
+      "id": "PRL_M05_L01_Q30",
+      "question": "Which of the following is an example of a RESTRICTIVE covenant?",
+      "options": {
+        "A": "A covenant by a purchaser to keep the garden in a neat and tidy condition at all times",
+        "B": "A covenant by a purchaser not to use the land for any purpose other than residential use",
+        "C": "A covenant by a purchaser to contribute to the maintenance costs of a shared access road",
+        "D": "A covenant by a purchaser to erect and maintain a boundary fence on the eastern side of the property"
+      },
+      "correct_answer": "B",
+      "explanation": "A covenant not to use the land for any purpose other than residential use is a restrictive covenant — it is negative in substance, restricting what the covenantor may do. Covenants to maintain, contribute costs, or erect fences are positive covenants."
+    },
+    {
+      "id": "PRL_M05_L01_Q31",
+      "question": "In an FE-1 exam question involving a freehold covenant created in 2005, what is the first critical issue to address?",
+      "options": {
+        "A": "Whether the covenant satisfies the conditions under section 49 of the LCLRA 2009",
+        "B": "Whether the covenant has been registered as a burden on the Land Registry folio",
+        "C": "The date of creation — a 2005 covenant predates the LCLRA 2009, so the pre-2009 law applies, including the Austerberry/Rhone v Stephens rule and the Tulk v Moxhay conditions",
+        "D": "Whether the covenant is positive or negative — which determines whether the LCLRA 2009 applies"
+      },
+      "correct_answer": "C",
+      "explanation": "The date of the covenant is the critical threshold issue. A 2005 covenant was created before 1 December 2009, so the pre-2009 rules apply. The LCLRA 2009 sections 48-50 do not govern it. The examiner expects you to identify this transition point clearly."
+    },
+    {
+      "id": "PRL_M05_L01_Q32",
+      "question": "Why is the date of 1 December 2009 of such importance in the law of freehold covenants?",
+      "options": {
+        "A": "It is the date on which all pre-existing freehold covenants automatically expired under the LCLRA 2009",
+        "B": "It is the date from which all covenants must be registered in the Land Registry to be legally effective",
+        "C": "It is the date on which Rhone v Stephens was overruled in Ireland by the Supreme Court",
+        "D": "It is the commencement date of the LCLRA 2009 — covenants created from that date are governed by sections 48-50; earlier covenants are governed by the old law"
+      },
+      "correct_answer": "D",
+      "explanation": "1 December 2009 is the commencement date of the LCLRA 2009. This date operates as a bright-line threshold. Covenants created from 1 December 2009 are governed by the new statutory regime in sections 48-50; covenants created before that date remain subject to the pre-2009 common law and equitable rules."
+    },
+    {
+      "id": "PRL_M05_L01_Q33",
+      "question": "Under the old common law position (applicable to pre-December 2009 covenants), can the burden of a restrictive covenant run in equity with freehold land?",
+      "options": {
+        "A": "Yes — the burden of a restrictive covenant can run in equity under the rule in Tulk v Moxhay, provided all four conditions are satisfied",
+        "B": "No — under the rule in Austerberry and Rhone v Stephens, the burden of no covenant runs at common law or in equity",
+        "C": "Yes — but only where the restrictive covenant has been registered as a burden on the folio",
+        "D": "No — restrictive covenants can only be enforced by the original covenantee, not by successors"
+      },
+      "correct_answer": "A",
+      "explanation": "Under the pre-2009 rules, the burden of a restrictive covenant can run in equity under Tulk v Moxhay, provided the four conditions are satisfied: (1) negative in substance, (2) accommodating a dominant tenement, (3) intent to run, (4) notice. Only positive covenants are excluded from this equitable rule."
+    },
+    {
+      "id": "PRL_M05_L01_Q34",
+      "question": "In Tulk v Moxhay [1848], who was Tulk?",
+      "options": {
+        "A": "The purchaser who proposed to build on Leicester Square despite knowing of the covenant",
+        "B": "The original vendor of Leicester Square who had imposed the covenant requiring it to be maintained as an open garden",
+        "C": "The judge who decided the case in the Court of Chancery",
+        "D": "The local authority that sought to enforce the covenant as a matter of public interest"
+      },
+      "correct_answer": "B",
+      "explanation": "Tulk was the original vendor of Leicester Square. He had sold it on terms that it be kept as an open garden. Moxhay was the subsequent purchaser who, with knowledge of the covenant, proposed to build on the square. The court granted Tulk an injunction."
+    },
+    {
+      "id": "PRL_M05_L01_Q35",
+      "question": "Under section 50 of the LCLRA 2009, a court can discharge or modify a covenant. On what grounds?",
+      "options": {
+        "A": "Only where the covenant was created by mistake or under duress",
+        "B": "Only where more than 20 years have passed since the covenant was created",
+        "C": "Where the covenant has become obsolete or where its continued enforcement is no longer necessary for the protection of the benefited land",
+        "D": "Only where the benefited land has been sold and the new owner has not enforced the covenant for at least five years"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 50 of the LCLRA 2009 empowers a court to discharge or modify a covenant where it has become obsolete or where its continued enforcement is no longer necessary for the protection of the benefited land. This provides a mechanism for landowners to free their land from outdated obligations."
+    },
+    {
+      "id": "PRL_M05_L01_Q36",
+      "question": "A developer sells plots in a new housing estate in 2022 subject to a covenant requiring each owner to maintain the shared gardens. Can this positive covenant run with the land?",
+      "options": {
+        "A": "No — positive covenants can never run with freehold land, even under the LCLRA 2009",
+        "B": "No — positive covenants can only run in building schemes created before 1 December 2009",
+        "C": "Yes — but only if the covenant is registered as a burden in the Land Registry within 30 days",
+        "D": "Yes — under section 49 of the LCLRA 2009, both positive and restrictive covenants created from 1 December 2009 can run with freehold land in equity, provided the required conditions are met"
+      },
+      "correct_answer": "D",
+      "explanation": "Under section 49 of the LCLRA 2009, both positive and restrictive covenants created from 1 December 2009 can run with freehold land in equity. A 2022 positive covenant to maintain shared gardens can run with the land provided: it is for the benefit of land retained or made in connection with a building scheme; there is intent to run; and successors have notice."
+    },
+    {
+      "id": "PRL_M05_L01_Q37",
+      "question": "When advising on a freehold covenant question in the FE-1, what should you do first?",
+      "options": {
+        "A": "Identify the date on which the covenant was created — to determine whether the pre-2009 common law rules or the LCLRA 2009 regime applies",
+        "B": "Determine whether the covenant is registered in the Land Registry",
+        "C": "Identify whether the covenant is positive or negative, as this is the only relevant distinction",
+        "D": "Apply section 49 of the LCLRA 2009 to all covenants regardless of their date of creation"
+      },
+      "correct_answer": "A",
+      "explanation": "The FE-1 exam invariably includes a date for the covenant. Identifying that date is the essential first step — it tells you whether the pre-2009 rules (Austerberry; Rhone v Stephens; Tulk v Moxhay) or the LCLRA 2009 regime (ss. 48-50) applies. The examiner is testing this transition point."
+    },
+    {
+      "id": "PRL_M05_L01_Q38",
+      "question": "For the benefit of a covenant to run at common law, which of the following conditions must also be satisfied?",
+      "options": {
+        "A": "The benefit must have been registered in the Land Registry within 12 months of the covenant's creation",
+        "B": "There must have been an intention — express or implied — that the benefit should run with the dominant tenement",
+        "C": "The covenant must have been made for valuable monetary consideration",
+        "D": "The original covenantee must have continued to hold the dominant tenement for at least two years after the covenant"
+      },
+      "correct_answer": "B",
+      "explanation": "For the benefit of a covenant to run at common law, one of the conditions is that there must have been an intention — express or implied — that the benefit would run with the dominant tenement and be enforceable by successors in title."
+    },
+    {
+      "id": "PRL_M05_L01_Q39",
+      "question": "A vendor sells a plot in 2022 and the purchaser covenants not to build above two storeys. Can the benefit of this restrictive covenant run with the vendor's retained land?",
+      "options": {
+        "A": "No — under the LCLRA 2009, the benefit of covenants can only run in a building scheme context",
+        "B": "No — the benefit of covenants can never run with retained land under Irish law",
+        "C": "Yes — under section 49 of the LCLRA 2009, the benefit can run with the vendor's retained land if the required conditions — including intention to run and successor's notice — are satisfied",
+        "D": "Yes — but only if the benefit is expressly mentioned in any subsequent conveyance of the retained land"
+      },
+      "correct_answer": "C",
+      "explanation": "Under section 49 of the LCLRA 2009, the benefit of a covenant created from 1 December 2009 can run with land retained by the vendor. The required conditions — covenant for benefit of retained land, intention to run, notice — must be satisfied."
+    },
+    {
+      "id": "PRL_M05_L01_Q40",
+      "question": "What was the significance of the decision in Tulk v Moxhay [1848] for the development of covenant law?",
+      "options": {
+        "A": "It extended the running of the benefit of covenants at common law to all successors in title",
+        "B": "It established that positive covenants run with the land in equity as well as at common law",
+        "C": "It created a statutory regime for freehold covenants more than 150 years before the LCLRA 2009",
+        "D": "It introduced the equitable doctrine that the burden of a restrictive covenant can run with land in equity where a successor takes with notice — creating a proprietary right enforceable against third parties"
+      },
+      "correct_answer": "D",
+      "explanation": "Tulk v Moxhay [1848] was foundational — it introduced the equitable doctrine that the burden of a restrictive covenant runs with land in equity where the successor takes with notice. This transformed restrictive covenants into proprietary rights enforceable against third parties, not merely personal contractual obligations."
+    },
+    {
+      "id": "PRL_M05_L01_Q41",
+      "question": "Where no building scheme exists, can a plot owner on a development generally enforce a covenant against another plot owner who bought from the same developer?",
+      "options": {
+        "A": "Generally no — without a building scheme, each purchaser's covenant is only enforceable by the original covenantee (developer); horizontal enforcement between plot owners requires direct privity or a building scheme",
+        "B": "Yes — whenever plots are sold subject to common covenants, all purchasers can enforce against each other",
+        "C": "Yes — a building scheme is automatically created whenever a developer imposes common covenants on multiple plots",
+        "D": "No — restrictive covenants are never enforceable between plot owners on a development"
+      },
+      "correct_answer": "A",
+      "explanation": "Without a building scheme, a covenant is enforceable only by those in direct privity with the covenantor — typically the developer. Horizontal enforcement between plot owners requires either a building scheme or direct contractual privity. The mere fact of common covenants does not automatically create a building scheme."
+    },
+    {
+      "id": "PRL_M05_L01_Q42",
+      "question": "Which of the following covenants entered into in 1998 could run in equity with freehold land?",
+      "options": {
+        "A": "A covenant by a purchaser to pay half the cost of repairs to a shared boundary wall",
+        "B": "A covenant by a purchaser not to use the land for any purpose other than private residential use",
+        "C": "A covenant by a purchaser to build a garage within 12 months of completion",
+        "D": "A covenant by a purchaser to contribute to the maintenance of shared facilities on the estate"
+      },
+      "correct_answer": "B",
+      "explanation": "A 1998 covenant is governed by the pre-2009 rules. Under Tulk v Moxhay, only the burden of a restrictive (negative) covenant can run in equity. A covenant not to use the land other than for residential purposes is negative in substance and can potentially run in equity. The others are positive covenants and cannot run at common law or in equity under the pre-2009 rules."
+    },
+    {
+      "id": "PRL_M05_L01_Q43",
+      "question": "What is the correct approach to a freehold covenant question in the FE-1 where the covenant was made in 2014?",
+      "options": {
+        "A": "Apply only the LCLRA 2009 regime and disregard the pre-2009 rules entirely",
+        "B": "Apply the pre-2009 rules as the LCLRA 2009 does not apply to 2014 covenants",
+        "C": "Apply the LCLRA 2009 sections 48-50, as the covenant was created after 1 December 2009 — both positive and restrictive covenants are governed by the new statutory regime",
+        "D": "Apply the pre-2009 rules for the benefit and the LCLRA 2009 for the burden"
+      },
+      "correct_answer": "C",
+      "explanation": "A 2014 covenant was created after 1 December 2009, so it is governed by the LCLRA 2009 regime (sections 48-50). Both positive and restrictive covenants created from that date are subject to the new statutory rules. The pre-2009 rules do not apply."
+    },
+    {
+      "id": "PRL_M05_L01_Q44",
+      "question": "A 2022 covenant requires owners to maintain the shared entrance to a development. A purchaser buys without any notice of the covenant because it was not registered. Can the purchaser be bound?",
+      "options": {
+        "A": "Yes — all covenants created from 2009 onwards run with land automatically under the LCLRA 2009",
+        "B": "No — the purchaser did not consent to the covenant and cannot be bound by it",
+        "C": "Yes — but only if the covenant is classified as restrictive under section 49 of the LCLRA 2009",
+        "D": "This depends on whether the covenant was registered as a burden on the Land Registry folio — if registered, the purchaser is deemed to have notice; if not, the purchaser may not be bound for want of notice"
+      },
+      "correct_answer": "D",
+      "explanation": "Section 49 of the LCLRA 2009 requires that the successor have notice for the covenant to bind them. In the registered land system, notice is established through registration as a burden on the folio. An unregistered covenant may not bind a purchaser who had no actual notice of it."
+    },
+    {
+      "id": "PRL_M05_L01_Q45",
+      "question": "What was the result in Tulk v Moxhay — what remedy was granted?",
+      "options": {
+        "A": "An injunction was granted preventing Moxhay from building on Leicester Square, on the ground that it would be unconscionable for him to act in breach of a covenant he knew about when he purchased",
+        "B": "Damages were awarded against Moxhay in lieu of an injunction for the loss of amenity suffered by Tulk",
+        "C": "The court refused any remedy as Moxhay was a purchaser for value who could not be bound by a personal covenant",
+        "D": "A declaration was made that the covenant was valid but specific performance was refused as impractical"
+      },
+      "correct_answer": "A",
+      "explanation": "In Tulk v Moxhay, the Lord Chancellor granted an injunction preventing Moxhay from building on Leicester Square. It was unconscionable for Moxhay — who had purchased with full knowledge of the covenant — to act in breach of it. This is the foundational equitable remedy in covenant law."
+    },
+    {
+      "id": "PRL_M05_L01_Q46",
+      "question": "What distinguishes a restrictive covenant (enforceable in equity under the pre-2009 rules) from a positive covenant (not enforceable against successors at common law or equity)?",
+      "options": {
+        "A": "A restrictive covenant is contained in a deed while a positive covenant may be in a contract",
+        "B": "A restrictive covenant is negative in substance — restricting the covenantor from doing something; a positive covenant imposes an obligation to do something",
+        "C": "A restrictive covenant must relate to the physical land while a positive covenant can relate to financial obligations",
+        "D": "A restrictive covenant requires consideration while a positive covenant does not"
+      },
+      "correct_answer": "B",
+      "explanation": "The distinction is one of substance: a restrictive covenant is negative — it restricts what the covenantor may do with the land. A positive covenant imposes an active obligation to do something. This distinction is crucial under both the pre-2009 rules (where only restrictive covenants ran in equity) and the LCLRA 2009 (which changed the position for post-2009 covenants)."
+    },
+    {
+      "id": "PRL_M05_L01_Q47",
+      "question": "A plot was sold in 1985 subject to a covenant not to build more than one dwelling. The plot has changed hands several times and the current owner wants to build three houses. Can the covenant be enforced?",
+      "options": {
+        "A": "No — the LCLRA 2009 abolished all pre-2009 restrictive covenants",
+        "B": "Yes — all restrictive covenants run automatically with land regardless of notice",
+        "C": "Possibly — applying the pre-2009 law, the burden of this restrictive covenant may run in equity under Tulk v Moxhay if it is negative in substance, accommodates a dominant tenement, there was intent to run, and the current owner had notice",
+        "D": "No — a covenant imposed in 1985 has a maximum enforcement period of 30 years and is now spent"
+      },
+      "correct_answer": "C",
+      "explanation": "A 1985 covenant is governed by the pre-2009 rules. The burden of a restrictive covenant may run in equity under Tulk v Moxhay, provided all four conditions are met: (1) negative in substance, (2) accommodating a dominant tenement, (3) intent to run, (4) notice. If established, the covenant may be enforced against the current owner."
+    },
+    {
+      "id": "PRL_M05_L01_Q48",
+      "question": "Where a building scheme is established on the facts of an FE-1 question, what is the key legal consequence?",
+      "options": {
+        "A": "All covenants — positive and negative — automatically run with all plots regardless of date of creation",
+        "B": "The developer retains the right to enforce all covenants indefinitely against all plot owners",
+        "C": "The local authority has the power to enforce the building scheme covenants as planning conditions",
+        "D": "Every plot owner within the scheme can enforce the scheme covenants against every other plot owner — creating mutual enforceability among all purchasers regardless of privity of contract"
+      },
+      "correct_answer": "D",
+      "explanation": "The key legal consequence of a valid building scheme is mutual enforceability. Every plot owner can enforce the covenants against every other plot owner — regardless of the absence of direct contractual privity between them. This is the principal advantage of establishing a building scheme."
+    },
+    {
+      "id": "PRL_M05_L01_Q49",
+      "question": "A covenant imposed on a plot of land in 2010 requires the owner to paint the exterior of the building annually. Which regime governs this covenant?",
+      "options": {
+        "A": "The LCLRA 2009 applies — the covenant was created after 1 December 2009, so sections 48-50 govern whether the burden of this positive covenant can run with the land",
+        "B": "The pre-2009 rules apply — only the LCLRA 2009 building scheme provisions apply to post-2009 covenants",
+        "C": "The pre-2009 rules apply — the LCLRA 2009 only changed the law for restrictive covenants, not positive ones",
+        "D": "Neither regime applies — painting obligations are personal contracts and cannot run with land under any regime"
+      },
+      "correct_answer": "A",
+      "explanation": "A 2010 covenant was created after 1 December 2009 and is therefore governed by the LCLRA 2009 (sections 48-50). Under section 49, even this positive covenant (to paint annually) may run with the land in equity if the required conditions are met. The old rule (no positive covenants run) no longer applies to post-2009 covenants."
+    },
+    {
+      "id": "PRL_M05_L01_Q50",
+      "question": "What is the most significant practical change introduced by the LCLRA 2009 in relation to freehold covenants?",
+      "options": {
+        "A": "The LCLRA 2009 for the first time allowed restrictive covenants to run in equity — a power not previously recognised",
+        "B": "The LCLRA 2009 allowed the burden of positive covenants to run with freehold land in equity for covenants created from 1 December 2009 — a major departure from the common law position in Austerberry and Rhone v Stephens",
+        "C": "The LCLRA 2009 abolished the building scheme doctrine and replaced it with a statutory registration scheme",
+        "D": "The LCLRA 2009 required all existing covenants to be re-registered in the Land Registry to remain enforceable"
+      },
+      "correct_answer": "B",
+      "explanation": "The most significant change introduced by the LCLRA 2009 was allowing the burden of positive covenants to run with freehold land in equity for covenants created from 1 December 2009. This was a major departure from the longstanding common law position established in Austerberry [1885] and confirmed in Rhone v Stephens [1994]."
+    }
+  ]
+}

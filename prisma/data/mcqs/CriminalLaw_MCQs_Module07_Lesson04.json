@@ -1,0 +1,119 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module07_Lesson02.txt",
+  "module_number": 7,
+  "module_title": "Theft, Property Offences, and Cybercrime",
+  "lesson_number": 4,
+  "lesson_title": "Aggravated Burglary (s.13 Criminal Justice (Theft and Fraud Offences) Act 2001)",
+  "total_questions": 9,
+  "questions": [
+    {
+      "id": "CRL_M07_L04_Q01",
+      "question": "Section 13 of the Criminal Justice (Theft and Fraud Offences) Act 2001 creates the offence of aggravated burglary. What distinguishes aggravated burglary from ordinary burglary under s.12?",
+      "options": {
+        "A": "Aggravated burglary is burglary committed at night; ordinary burglary can occur at any time",
+        "B": "Aggravated burglary is burglary committed while the accused has with them a firearm or imitation firearm, weapon of offence, or any explosive; the presence of such an item at the time of commission aggravates the offence",
+        "C": "Aggravated burglary is burglary where the accused actually commits violence against an occupant; ordinary burglary requires only the entry with intent",
+        "D": "Aggravated burglary applies only to residential dwellings; ordinary burglary covers all buildings"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 13 CJ(T&F)A 2001 provides that aggravated burglary is committed where a person commits burglary (under s.12) and at the time has with them: (1) a firearm or imitation firearm; (2) a weapon of offence (any article made or adapted for causing injury, or intended for use for such purpose); or (3) any explosive. The aggravating element is the presence of such a dangerous item during the burglary. The carrying of weapons during a burglary dramatically increases the potential for harm to occupants and is therefore treated much more seriously. The maximum sentence is life imprisonment \u2014 compared to 14 years for ordinary burglary. Option A introduces a temporal element (nighttime) from the old common law formulation which is not part of the modern offence. Option C requires actual violence, which is not an element of aggravated burglary. Option D incorrectly limits the offence to dwellings."
+    },
+    {
+      "id": "CRL_M07_L04_Q02",
+      "question": "At what point during the burglary must the accused have the weapon 'with them' for the offence of aggravated burglary to be committed? This was directly addressed in R v Murphy [1986] CA (England and Wales).",
+      "options": {
+        "A": "The accused need only have the weapon at some point during the day of the burglary \u2014 not necessarily during the entry or commission of the offence within",
+        "B": "The accused must have the weapon with them at the time of entry as a trespasser \u2014 if the weapon is acquired after entry, the offence of aggravated burglary is not made out (though ordinary burglary may be)",
+        "C": "The weapon must be present throughout the entire burglary \u2014 if the accused puts it down at any point, the aggravated element is lost",
+        "D": "The accused must use the weapon during the burglary \u2014 mere possession without use does not satisfy the 'with them' requirement"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Murphy [1986] CA (England and Wales) directly addressed the temporal requirement of the 'with them' element in aggravated burglary. The court held that the accused must have the weapon with them at the time of entry as a trespasser (for the entry limb of burglary) or at the time of committing the ulterior offence (for the conduct limb). Crucially, if the accused enters as a trespasser without a weapon but acquires one after entry \u2014 for example, picks up a kitchen knife found inside the premises \u2014 this does not constitute aggravated burglary. The ordinary burglary charge remains available, but the aggravated element requires the weapon to be present at the relevant time. This rule prevents the unfair extension of aggravated burglary to situations where an unarmed burglar arms themselves opportunistically after entry. Option A incorrectly broadens 'with them' to any point in the day. Option C creates an unduly strict continuous possession requirement. Option D adds a use requirement that is absent from the statute."
+    },
+    {
+      "id": "CRL_M07_L04_Q03",
+      "question": "In R v McCalla [1988] CA (England and Wales), the accused committed burglary while carrying a screwdriver. The question arose whether a screwdriver constitutes a 'weapon of offence' for aggravated burglary purposes. What did the court hold?",
+      "options": {
+        "A": "No \u2014 a screwdriver is a tool, not a weapon; only items designed as weapons can constitute a weapon of offence",
+        "B": "Yes \u2014 a screwdriver can constitute a weapon of offence where it is carried with the intention of using it to cause injury; the test is not what the item was designed for but what the accused intended to use it for; intent to use the item to cause injury makes it a weapon of offence",
+        "C": "Yes \u2014 but only if the accused actually used the screwdriver to threaten or injure an occupant during the burglary",
+        "D": "No \u2014 a screwdriver does not satisfy the definition because it is not an 'article made or adapted for causing injury'; only items specifically adapted (sharpened, modified) can qualify"
+      },
+      "correct_answer": "B",
+      "explanation": "R v McCalla [1988] CA established that whether an item constitutes a 'weapon of offence' for aggravated burglary depends not solely on the item's design but on the accused's intention regarding its use. A screwdriver is a tool \u2014 it is not designed or made for causing injury. However, if the accused carries it intending to use it to cause injury (for example, to threaten or stab an occupant who confronts them), it becomes a weapon of offence by virtue of that intention. The definition of 'weapon of offence' typically covers: (a) articles made or adapted for causing injury; and (b) articles intended by the accused for use for causing injury. McCalla falls into category (b). This is important because many burglars carry tools (crowbars, screwdrivers) that can be weapons if intended for use against persons. Option A incorrectly limits weapons to items designed as such. Option C adds an actual use requirement. Option D incorrectly limits weapons to adapted items."
+    },
+    {
+      "id": "CRL_M07_L04_Q04",
+      "question": "In R v Bentham [2005] HOL (England and Wales), the accused held his fingers in his jacket pocket to simulate a gun, demanding money. The House of Lords considered whether fingers in a pocket could constitute an 'imitation firearm' for aggravated burglary. What did the court hold?",
+      "options": {
+        "A": "Yes \u2014 if an observer would reasonably believe the accused was carrying a firearm, the imitation requirement is satisfied regardless of the actual item used",
+        "B": "No \u2014 fingers cannot constitute an imitation firearm; an imitation firearm must be an article that is separate from the person's body; a person cannot detach a part of themselves to make it an article; the defendant's fingers were not an imitation firearm",
+        "C": "Yes \u2014 the court held that any representation of a firearm (whether by a physical object or a gesture) satisfies the imitation requirement",
+        "D": "No \u2014 but only because the accused did not actually claim verbally to have a gun; if he had made the verbal assertion alongside the gesture, the imitation firearm requirement would be satisfied"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Bentham [2005] HOL is the leading authority on what constitutes an 'imitation firearm' in this context. The House of Lords held that fingers in a pocket cannot constitute an imitation firearm. The key reasoning was that an imitation firearm must be an article \u2014 a physical object separable from the person. A person cannot detach a part of their own body to constitute an 'article' for this purpose. While pointing fingers to mimic a gun may be threatening conduct capable of supporting other charges (such as false imprisonment or robbery by threats), it does not satisfy the statutory definition of imitation firearm for aggravated burglary. This decision defines the outer boundary of 'imitation firearm': it requires an actual physical object that resembles a firearm, even if non-functional. Option A applies a purely observer-based perceptual test that the Lords rejected. Option C extends the definition to gestures alone. Option D invents a verbal assertion requirement."
+    },
+    {
+      "id": "CRL_M07_L04_Q05",
+      "question": "In the Klass case (applied in Ireland), the accused carried a realistic-looking replica gun while committing burglary. The replica was made of plastic and entirely inoperable. Could this constitute an 'imitation firearm' for aggravated burglary purposes?",
+      "options": {
+        "A": "No \u2014 an imitation firearm must be capable of firing something; an inoperable replica cannot intimidate in the same way as a real firearm",
+        "B": "Yes \u2014 an imitation firearm is an article which has the appearance of being a firearm, whether or not it is capable of discharging any shot or projectile; a realistic plastic replica gun that appears to be a firearm satisfies this definition",
+        "C": "No \u2014 only metallic or weighted replicas qualify as imitation firearms; plastic replicas are distinguishable from real firearms",
+        "D": "Yes \u2014 but only if the accused pointed the replica at an occupant during the burglary; carrying it without pointing or threatening with it is insufficient"
+      },
+      "correct_answer": "B",
+      "explanation": "The Klass case, applied in the Irish context, illustrates the definition of imitation firearm: an article which has the appearance of being a firearm, regardless of whether it is capable of discharging any shot, bullet, or projectile. A realistic-looking plastic replica gun clearly has the appearance of a firearm \u2014 it would be perceived by any person confronted with it as a real gun. The purpose of including imitation firearms in the definition of aggravated burglary is the intimidatory and threatening effect on victims \u2014 a victim confronted with a realistic replica gun is just as terrified as one confronted with a real firearm. Operability is irrelevant to this analysis: what matters is appearance. This contrasts with Bentham (fingers) which was rejected because fingers do not have the appearance of a firearm in an objective sense. Options A and C incorrectly require operability or specific materials. Option D adds a use/pointing requirement that is absent from the statute."
+    },
+    {
+      "id": "CRL_M07_L04_Q06",
+      "question": "What is the maximum sentence for aggravated burglary under s.13 CJ(T&F)A 2001?",
+      "options": {
+        "A": "14 years imprisonment",
+        "B": "20 years imprisonment",
+        "C": "Life imprisonment",
+        "D": "25 years imprisonment"
+      },
+      "correct_answer": "C",
+      "explanation": "The maximum sentence for aggravated burglary under s.13 CJ(T&F)A 2001 is life imprisonment. This reflects the extreme seriousness of committing burglary while armed \u2014 the combination of trespass in a building with the carrying of a weapon or explosive creates a very high risk of lethal violence to occupants. Life imprisonment is also the maximum for murder, rape, and aggravated sexual assault \u2014 placing aggravated burglary in the highest tier of Irish criminal offences by sentencing. The dramatic increase from ordinary burglary (14 years maximum) to aggravated burglary (life) signals how significantly the legislature views the additional element of weaponry. Option A states the maximum for ordinary burglary. Options B and D are not standard maximum sentences under the Act."
+    },
+    {
+      "id": "CRL_M07_L04_Q07",
+      "question": "James enters a house at night through an unlocked back door. He is carrying a baseball bat. He finds the house empty, searches it and takes jewellery. Has James committed aggravated burglary under s.13 CJ(T&F)A 2001?",
+      "options": {
+        "A": "No \u2014 aggravated burglary requires the accused to threaten or use the weapon against an occupant; the house was empty so the baseball bat was never used",
+        "B": "Yes \u2014 James entered as a trespasser (without permission) with a weapon of offence (a baseball bat, which is an article either made or adapted for causing injury, or intended by James for use in causing injury) and committed theft therein; it is irrelevant that no occupant was present or that the weapon was not used",
+        "C": "No \u2014 aggravated burglary requires a firearm or imitation firearm; a baseball bat is neither and cannot constitute a weapon of offence",
+        "D": "No \u2014 James entered through an unlocked door; unlocked entry cannot constitute burglary because there is no trespass if no barrier was overcome"
+      },
+      "correct_answer": "B",
+      "explanation": "James has committed aggravated burglary under s.13 CJ(T&F)A 2001. Analysis: (1) Burglary established \u2014 James entered a house (building) as a trespasser (without permission) and committed theft therein (conduct limb); (2) Aggravating element \u2014 James had with him a baseball bat at the time. A baseball bat is an article capable of constituting a weapon of offence: either as an article intended by James to be used to cause injury (if he brought it to threaten anyone who confronted him) or potentially as an article adapted for causing injury. R v McCalla's principle applies \u2014 the nature of the item and the intention behind carrying it make it a weapon of offence. There is no requirement that the weapon be used or that an occupant be present. The statute requires only that the accused has the weapon with them during the burglary. Option A incorrectly adds an actual use requirement. Option C incorrectly limits aggravated burglary to firearms \u2014 weapons of offence are a separate category. Option D incorrectly treats unlocked entry as non-trespassory \u2014 entry without permission is trespass regardless of whether a door was locked."
+    },
+    {
+      "id": "CRL_M07_L04_Q08",
+      "question": "Which court has jurisdiction to try aggravated burglary cases in Ireland?",
+      "options": {
+        "A": "The District Court \u2014 up to 2 years imprisonment on summary conviction",
+        "B": "The Circuit Criminal Court \u2014 with a maximum sentence of life imprisonment",
+        "C": "The Central Criminal Court \u2014 because the maximum is life imprisonment and the offence is in the same tier as murder",
+        "D": "Either the District Court (summarily) or the Circuit Court (on indictment) \u2014 it is triable either way"
+      },
+      "correct_answer": "B",
+      "explanation": "Aggravated burglary under s.13 CJ(T&F)A 2001 is tried on indictment in the Circuit Criminal Court. Despite carrying a maximum of life imprisonment, aggravated burglary is within the jurisdiction of the Circuit Court rather than the Central Criminal Court. The Central Criminal Court has exclusive jurisdiction over a specific list of offences: murder, rape (s.2(1)), rape under s.4, aggravated sexual assault, and certain other grave offences. Aggravated burglary, despite its severity, is not in that exclusive list. The Circuit Court has jurisdiction to impose life imprisonment for aggravated burglary. This is an important distinction for FE-1 candidates \u2014 maximum sentence alone does not determine which court has jurisdiction. Option A incorrectly assigns summary jurisdiction (the offence is indictable only). Option C incorrectly assigns Central Criminal Court jurisdiction. Option D incorrectly states it is triable either way."
+    },
+    {
+      "id": "CRL_M07_L04_Q09",
+      "question": "Laura enters a house as a trespasser intending to steal. Inside, she finds a kitchen knife on the counter and picks it up, intending to use it against anyone who might confront her. She then steals valuables and leaves. Has Laura committed aggravated burglary?",
+      "options": {
+        "A": "Yes \u2014 Laura had a weapon (the kitchen knife) with her during the burglary; the source of the knife is irrelevant",
+        "B": "No \u2014 following R v Murphy [1986] CA, the accused must have the weapon with them at the time of entry as a trespasser; Laura entered without a weapon and only acquired the knife after entry; she committed ordinary burglary, not aggravated burglary",
+        "C": "Yes \u2014 because Laura formed the intent to use the knife as a weapon; intent to use an item as a weapon transforms it into a weapon of offence regardless of when it was acquired",
+        "D": "No \u2014 a kitchen knife is not a weapon of offence because it is not made or adapted for causing injury; it is a domestic utensil"
+      },
+      "correct_answer": "B",
+      "explanation": "Applying R v Murphy [1986] CA: Laura did not have a weapon with her at the time of entry as a trespasser. She entered the house unarmed and only acquired the kitchen knife after entry. Per Murphy, the 'with them' requirement in aggravated burglary must be satisfied at the time of entry \u2014 a weapon acquired after trespassory entry does not satisfy the temporal requirement. Laura has therefore committed ordinary burglary under s.12 CJ(T&F)A 2001 (entry as trespasser + theft committed therein), with a maximum of 14 years, but not aggravated burglary under s.13. Regarding Option D: a kitchen knife could constitute a weapon of offence if intended for use to cause injury (per McCalla's intent-based analysis) \u2014 but this point is academic here because the Murphy timing point defeats the aggravated charge regardless. Option A incorrectly treats the timing of acquisition as irrelevant. Option C correctly identifies the intent analysis but wrongly applies it to override the Murphy timing rule."
+    }
+  ]
+}

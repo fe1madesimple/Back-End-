@@ -1,0 +1,383 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module16_Lesson01.txt",
+  "module_number": 16,
+  "module_title": "Damages, Limitation of Actions, Fatal Injuries, and Passing Off",
+  "lesson_number": 1,
+  "lesson_title": "Damages, Limitation Periods, Fatal Injuries, Survival of Actions, and Passing Off",
+  "total_questions": 31,
+  "questions": [
+    {
+      "id": "TL_M16_L01_Q01",
+      "question": "What is the overarching principle governing the assessment of damages in tort law?",
+      "options": {
+        "A": "Restitutio in integrum — the plaintiff is to be restored, so far as money can do it, to the position they were in before the tort was committed",
+        "B": "The plaintiff is to be compensated for all losses, past and future, regardless of foreseeability",
+        "C": "The plaintiff is to be placed in the position they would have been in had the contract been performed",
+        "D": "The defendant is to be deprived of any profit or benefit made from the tortious act"
+      },
+      "correct_answer": "A",
+      "explanation": "The overarching principle of tortious compensation is restitutio in integrum — the plaintiff is to be restored, so far as money can do it, to the position they were in before the tort was committed. This principle drives the entire framework of compensatory damages in tort and distinguishes tortious recovery from contractual expectation damages."
+    },
+    {
+      "id": "TL_M16_L01_Q02",
+      "question": "Which of the following is the correct description of special damages in tort law?",
+      "options": {
+        "A": "Damages assessed by the court on a global basis to reflect pain, suffering, and loss of amenity",
+        "B": "Damages that can be specifically calculated and quantified before trial, representing past and identifiable pecuniary losses",
+        "C": "Additional compensatory damages reflecting the indignity or outrage caused by the defendant's conduct",
+        "D": "Non-compensatory damages awarded to punish outrageous conduct and deter similar behaviour"
+      },
+      "correct_answer": "B",
+      "explanation": "Special damages are those that can be specifically calculated and quantified before trial. They represent past and identifiable pecuniary losses — medical expenses, loss of earnings from injury to trial, care costs, and property damage. Special damages must be specifically pleaded and proved, as confirmed in Jeffers v Cahill [2009] IHC."
+    },
+    {
+      "id": "TL_M16_L01_Q03",
+      "question": "Which of the following is a recognised head of general damages in a personal injury action?",
+      "options": {
+        "A": "Pre-trial medical expenses specifically vouched by the plaintiff",
+        "B": "Loss of earnings from the date of injury to the date of trial",
+        "C": "Loss of amenity — the loss of the capacity to engage in activities enjoyed before the injury",
+        "D": "Cost of replacing or repairing damaged property"
+      },
+      "correct_answer": "C",
+      "explanation": "Loss of amenity — the loss of the capacity to engage in activities enjoyed before the injury — is a recognised head of general damages. Other heads include pain and suffering (past and future) and loss of expectation of life. General damages cannot be precisely quantified and are assessed globally by the court. Options A, B, and D are heads of special damages."
+    },
+    {
+      "id": "TL_M16_L01_Q04",
+      "question": "Which Irish Supreme Court decision from 1983 provided early guidance on the assessment of general damages in personal injury actions, emphasising proportionality and consistency?",
+      "options": {
+        "A": "Philip v Ryan [2004] IHC",
+        "B": "Conway v INTO [1991] IESC",
+        "C": "Shortt v Commissioner of An Garda Síochána [2007] IESC",
+        "D": "Reddy v Bates [1983] IESC"
+      },
+      "correct_answer": "D",
+      "explanation": "Reddy v Bates [1983] IESC is the leading early Irish Supreme Court authority on the assessment of general damages in personal injury actions. The court emphasised that the assessment of general damages must be proportionate and consistent across cases, providing an early framework for structuring such awards."
+    },
+    {
+      "id": "TL_M16_L01_Q05",
+      "question": "Pursuant to which Act were the Personal Injuries Guidelines 2021 issued by the Judicial Council?",
+      "options": {
+        "A": "Civil Liability and Courts Act 2004",
+        "B": "Personal Injuries Assessment Board Act 2003",
+        "C": "Civil Liability Act 1961",
+        "D": "Judicial Council Act 2019"
+      },
+      "correct_answer": "A",
+      "explanation": "The Personal Injuries Guidelines 2021 were issued by the Judicial Council pursuant to the Judicial Council Act 2019. The Guidelines set out indicative ranges of damages for different categories and severities of personal injury, providing a structured framework that courts are required to have regard to when assessing general damages."
+    },
+    {
+      "id": "TL_M16_L01_Q06",
+      "question": "In Delaney v Personal Injuries Assessment Board [2024] IESC, the Supreme Court ruled on the constitutionality of the Personal Injuries Guidelines. What was the outcome?",
+      "options": {
+        "A": "The Guidelines were held unconstitutional in their entirety as an impermissible delegation of judicial power",
+        "B": "The Guidelines were upheld as constitutionally valid, and courts are bound to have regard to them, though section 7(2)(g) of the Judicial Council Act 2019 was struck down in certain respects",
+        "C": "The Guidelines were declared unconstitutional, but their effect was suspended pending Oireachtas legislation",
+        "D": "The Guidelines were held valid and binding, with no provision of the 2019 Act struck down"
+      },
+      "correct_answer": "B",
+      "explanation": "In Delaney v Personal Injuries Assessment Board [2024] IESC, the Supreme Court, by a five-to-two majority, held that the Personal Injuries Guidelines 2021 are constitutionally valid and that courts are bound to have regard to them. However, section 7(2)(g) of the Judicial Council Act 2019 — which empowered the Council to set the guidelines — was struck down in certain respects, meaning any future revision requires primary Oireachtas legislation."
+    },
+    {
+      "id": "TL_M16_L01_Q07",
+      "question": "What is the legal nature of aggravated damages in Irish tort law?",
+      "options": {
+        "A": "Non-compensatory damages designed to punish the defendant for outrageous conduct",
+        "B": "Purely nominal damages awarded to vindicate a legal right where no actual loss exists",
+        "C": "Compensatory damages reflecting the additional hurt, indignity, or outrage suffered by the plaintiff due to the defendant's conduct",
+        "D": "Statutory damages awarded under the Civil Liability Act 1961 for fatal injuries"
+      },
+      "correct_answer": "C",
+      "explanation": "Aggravated damages are compensatory in nature — they reflect the additional hurt, indignity, or outrage suffered by the plaintiff as a result of the manner in which the tort was committed or the defendant's conduct during or after litigation. They are not punitive; that function is served by exemplary (punitive) damages. Philip v Ryan [2004] IHC is a leading Irish example."
+    },
+    {
+      "id": "TL_M16_L01_Q08",
+      "question": "In Conway v INTO [1991] IESC, which judge laid down the five principles governing the award of exemplary (punitive) damages in Ireland?",
+      "options": {
+        "A": "Walsh J",
+        "B": "Henchy J",
+        "C": "Geoghegan J",
+        "D": "Finlay CJ"
+      },
+      "correct_answer": "D",
+      "explanation": "Finlay CJ laid down the five Conway principles governing the award of exemplary damages in Conway v INTO [1991] IESC. These principles are: (1) awarded only in exceptional circumstances; (2) non-compensatory and punitive; (3) defendant's conduct must be outrageous or high-handed; (4) plaintiff's own conduct is relevant; (5) the award must be moderate and proportionate to the punitive purpose."
+    },
+    {
+      "id": "TL_M16_L01_Q09",
+      "question": "In Shortt v Commissioner of An Garda Síochána [2007] IESC, why did the Supreme Court award exemplary damages?",
+      "options": {
+        "A": "The plaintiff had suffered unusually severe personal injuries due to garda negligence during an arrest",
+        "B": "The plaintiff was wrongly imprisoned as a result of evidence planted by gardaí, and exemplary damages were awarded applying the Conway principles to mark the court's condemnation of that outrageous state conduct",
+        "C": "The defendant had failed to comply with a court order, requiring a punitive sanction",
+        "D": "The plaintiff had suffered aggravated damages that could not be captured by a compensatory award alone"
+      },
+      "correct_answer": "A",
+      "explanation": "In Shortt v Commissioner of An Garda Síochána [2007] IESC, the plaintiff had been wrongly imprisoned as a result of evidence planted against him by members of An Garda Síochána. The Supreme Court awarded exemplary damages, applying the Conway principles, to mark the court's condemnation of the outrageous conduct of state agents who had deliberately subverted the justice system."
+    },
+    {
+      "id": "TL_M16_L01_Q10",
+      "question": "What is the limitation period for personal injury claims arising from negligence, nuisance, or breach of duty in Ireland, and under which statute is it set?",
+      "options": {
+        "A": "Six years, under section 11(2)(a) of the Statute of Limitations 1957",
+        "B": "Two years, under section 7 of the Civil Liability and Courts Act 2004",
+        "C": "Three years, under section 48A of the Civil Liability Act 1961",
+        "D": "One year, under section 38 of the Defamation Act 2009"
+      },
+      "correct_answer": "B",
+      "explanation": "The limitation period for personal injury claims arising from negligence, nuisance, or breach of duty is two years, set by section 7 of the Civil Liability and Courts Act 2004. The two-year period runs from the date of accrual of the cause of action or the date of knowledge, whichever is the later."
+    },
+    {
+      "id": "TL_M16_L01_Q11",
+      "question": "Under which statutory provision, and for what period, does the limitation period run for general tort claims (including property damage) in Ireland?",
+      "options": {
+        "A": "Two years under section 7 of the Civil Liability and Courts Act 2004",
+        "B": "Three years under section 48A of the Civil Liability Act 1961",
+        "C": "Six years under section 11(2)(a) of the Statute of Limitations 1957",
+        "D": "Four years under section 3 of the Statute of Limitations (Amendment) Act 1991"
+      },
+      "correct_answer": "C",
+      "explanation": "General tort claims — including property damage claims and pure economic loss — have a limitation period of six years from accrual, under section 11(2)(a) of the Statute of Limitations 1957. This is the default limitation period for tort actions that do not fall within the specific regimes for personal injury, defamation, or fatal injuries."
+    },
+    {
+      "id": "TL_M16_L01_Q12",
+      "question": "Under the Defamation Act 2009, what is the primary limitation period for defamation claims, and what discretion does the court have?",
+      "options": {
+        "A": "Three years, with no discretion to extend",
+        "B": "Two years, with discretion to extend to four years in exceptional circumstances",
+        "C": "Six years, with no discretion to reduce",
+        "D": "One year from accrual, with a court discretion to extend to two years in exceptional circumstances"
+      },
+      "correct_answer": "D",
+      "explanation": "Under section 38 of the Defamation Act 2009, the limitation period for defamation claims is one year from the date on which the cause of action accrued. The court has a discretion to extend this to two years in exceptional circumstances. This short limitation period reflects the unique harm that unresolved defamation allegations can cause to a defendant's reputation over time."
+    },
+    {
+      "id": "TL_M16_L01_Q13",
+      "question": "Under section 48A of the Civil Liability Act 1961, what is the limitation period for fatal injury claims brought by a deceased person's dependants?",
+      "options": {
+        "A": "Two years from the date of death",
+        "B": "Six years from the date of the tort that caused the death",
+        "C": "One year from the date of death or the date of knowledge of the personal representative",
+        "D": "Three years from the date of death or the date of knowledge of the personal representative, whichever is later"
+      },
+      "correct_answer": "A",
+      "explanation": "Under section 48A of the Civil Liability Act 1961, the limitation period for fatal injury claims is three years from the date of death or the date of knowledge of the deceased's personal representative, whichever is the later. This specific provision applies to claims brought by dependants under sections 47-49 of the 1961 Act."
+    },
+    {
+      "id": "TL_M16_L01_Q14",
+      "question": "The date of knowledge rule — which defers the start of the limitation period in cases of latent injury — is set out in which statutory provision?",
+      "options": {
+        "A": "Section 48 of the Statute of Limitations 1957",
+        "B": "Section 3 of the Statute of Limitations (Amendment) Act 1991",
+        "C": "Section 7 of the Civil Liability and Courts Act 2004",
+        "D": "Section 72 of the Statute of Limitations 1957"
+      },
+      "correct_answer": "B",
+      "explanation": "The date of knowledge rule is set out in section 3 of the Statute of Limitations (Amendment) Act 1991. It provides that the limitation period runs from the date on which the plaintiff had knowledge of the material facts: that the injury was significant, that it was attributable to the act or omission in question, and the identity of the defendant. Crucially, this is factual knowledge, not legal knowledge."
+    },
+    {
+      "id": "TL_M16_L01_Q15",
+      "question": "Under the date of knowledge rule, when does the limitation period begin to run in relation to the plaintiff's awareness of their legal rights?",
+      "options": {
+        "A": "From the date the plaintiff first consults a solicitor about the potential claim",
+        "B": "From the date the plaintiff realises they have a cause of action in law",
+        "C": "From the date the plaintiff knew or reasonably ought to have known the material facts, not when they appreciated the legal significance of those facts",
+        "D": "From the date on which an expert report confirms the link between the defendant's act and the plaintiff's injury"
+      },
+      "correct_answer": "C",
+      "explanation": "Under the date of knowledge rule, the limitation period begins to run when the plaintiff knew or reasonably ought to have known the material facts — not when they realised they had a legal remedy. A plaintiff who knows the relevant facts but does not appreciate their legal significance cannot indefinitely defer the running of the limitation period. Knowledge under section 3 of the SLA 1991 is factual, not legal."
+    },
+    {
+      "id": "TL_M16_L01_Q16",
+      "question": "The Primor test for dismissal of proceedings for want of prosecution derives from which case?",
+      "options": {
+        "A": "Donoghue v Stevenson [1932] HL",
+        "B": "Conway v INTO [1991] IESC",
+        "C": "Roche v Peilow [1985] IESC",
+        "D": "Primor plc v Stokes Kennedy Crowley [1996] IESC"
+      },
+      "correct_answer": "D",
+      "explanation": "The Primor test for dismissal of proceedings for want of prosecution derives from Primor plc v Stokes Kennedy Crowley [1996] IESC. The test asks three questions: first, has there been inordinate delay; second, has that delay been inexcusable; and third, on the balance of justice — considering prejudice to both parties — should the claim be dismissed."
+    },
+    {
+      "id": "TL_M16_L01_Q17",
+      "question": "Under the Primor test, once inordinate and inexcusable delay is established, what governs the third and final stage of the analysis?",
+      "options": {
+        "A": "Whether the defendant has been prejudiced — if yes, the claim is automatically dismissed",
+        "B": "A strict rule that any inordinate and inexcusable delay results in dismissal without further inquiry",
+        "C": "A genuine balance of justice weighing the prejudice to the defendant against the prejudice to the plaintiff from dismissal",
+        "D": "Whether the plaintiff can offer a satisfactory explanation for the delay at the third stage"
+      },
+      "correct_answer": "A",
+      "explanation": "Under the Primor test, once inordinate and inexcusable delay is established, the third stage involves a balance of justice. The court weighs the extent of prejudice to the defendant in defending the stale claim against the prejudice to the plaintiff from dismissal. Even where both threshold elements are met, the court conducts a genuine balancing exercise and does not automatically dismiss the proceedings."
+    },
+    {
+      "id": "TL_M16_L01_Q18",
+      "question": "Under section 8(1) of the Civil Liability Act 1961, what is the general rule regarding the survival of causes of action on a person's death?",
+      "options": {
+        "A": "All causes of action vest in the State on the death of the person",
+        "B": "All causes of action that subsisted against or vested in a person survive against or for the benefit of their estate on their death",
+        "C": "Only contractual causes of action survive death — tortious claims die with the tortfeasor",
+        "D": "All causes of action are extinguished on death unless proceedings had been commenced before death"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 8(1) of the Civil Liability Act 1961 provides that on the death of any person, all causes of action that subsisted against or vested in them survive against or for the benefit of their estate. This reversed the common law rule that personal causes of action in tort died with the claimant, enabling the estate to pursue (or defend) claims that the deceased had at the time of death."
+    },
+    {
+      "id": "TL_M16_L01_Q19",
+      "question": "Under section 8(2) of the Civil Liability Act 1961, which of the following causes of action does NOT survive a person's death?",
+      "options": {
+        "A": "A claim in negligence arising from a road traffic accident",
+        "B": "A claim for breach of contract against the deceased",
+        "C": "A claim for bereavement or loss of expectation of life",
+        "D": "A claim for conversion of personal property"
+      },
+      "correct_answer": "C",
+      "explanation": "Under section 8(2) of the Civil Liability Act 1961, claims for bereavement or loss of expectation of life do not survive a person's death — the loss of the pleasure of living is purely personal and dies with the person. A defamation claim that had not been commenced before the death of the defamed person also does not survive. Claims in negligence, contract, and conversion do survive under section 8(1)."
+    },
+    {
+      "id": "TL_M16_L01_Q20",
+      "question": "The claims brought by dependants of a person killed through another's tort are governed by which sections of the Civil Liability Act 1961?",
+      "options": {
+        "A": "Sections 1 to 5 of the Civil Liability Act 1961",
+        "B": "Sections 21 to 25 of the Civil Liability Act 1961",
+        "C": "Sections 30 to 35 of the Civil Liability Act 1961",
+        "D": "Sections 47 to 49 of the Civil Liability Act 1961"
+      },
+      "correct_answer": "D",
+      "explanation": "Fatal injury claims — brought by the dependants of a person killed through another's tort — are governed by sections 47 to 49 of the Civil Liability Act 1961. These provisions confer on qualifying dependants a right of action in their own name for their own losses arising from the death, independently of any survival action brought by the estate under section 8(1)."
+    },
+    {
+      "id": "TL_M16_L01_Q21",
+      "question": "Under the Civil Liability Act 1961, which of the following is a category of dependant entitled to bring a fatal injuries claim?",
+      "options": {
+        "A": "Any person who claims to have suffered emotional distress following the death",
+        "B": "Any person who attended the scene of the accident that caused the death",
+        "C": "Only the deceased's spouse or civil partner",
+        "D": "The deceased's spouse, civil partner, children, parents, brothers, sisters, grandparents, grandchildren, and persons in a relationship of financial dependency with the deceased"
+      },
+      "correct_answer": "A",
+      "explanation": "Section 47 of the Civil Liability Act 1961 defines dependants broadly to include the deceased's spouse, civil partner, children, parents, brothers, sisters, grandparents, grandchildren, and persons in a relationship of financial dependency with the deceased — even outside the formal family structure. The definition goes well beyond spouses and children to capture those who were economically or personally dependent on the deceased."
+    },
+    {
+      "id": "TL_M16_L01_Q22",
+      "question": "Which is the leading Irish authority on the multiplicand-multiplier method for assessing financial dependency loss in fatal injury claims?",
+      "options": {
+        "A": "Reddy v Bates [1983] IESC",
+        "B": "Fitzsimons v Bord Telecom Éireann [1991]",
+        "C": "Conway v INTO [1991] IESC",
+        "D": "Wall v Hegarty [1980] IHC"
+      },
+      "correct_answer": "B",
+      "explanation": "Fitzsimons v Bord Telecom Éireann [1991] is the leading Irish authority on the multiplicand-multiplier method for assessing financial dependency loss in fatal injury claims. The multiplicand is the annual value of the deceased's financial contribution; the multiplier reflects the period during which that contribution would have continued, discounted to present value."
+    },
+    {
+      "id": "TL_M16_L01_Q23",
+      "question": "Under Irish law, approximately what is the cap on the mental distress award available to a qualifying dependant (such as a spouse or child) in a fatal injuries claim?",
+      "options": {
+        "A": "Approximately €10,000 per qualifying dependant",
+        "B": "Approximately €100,000 per qualifying dependant, subject to court discretion",
+        "C": "Approximately €35,000 per qualifying dependant",
+        "D": "There is no cap — the award reflects the full extent of the dependant's proven grief"
+      },
+      "correct_answer": "C",
+      "explanation": "The mental distress award available to a qualifying dependant in a fatal injuries claim is capped at approximately €35,000 per qualifying dependant. This cap applies to spouses, civil partners, and children. Mental distress compensates for the grief and bereavement suffered as a result of the death, but is subject to this statutory cap to ensure proportionality."
+    },
+    {
+      "id": "TL_M16_L01_Q24",
+      "question": "Under section 50 of the Civil Liability Act 1961, what is the position regarding benefits received by dependants as a result of the deceased's death?",
+      "options": {
+        "A": "All insurance and pension benefits received are deducted from the fatal injuries award",
+        "B": "Benefits received are deducted only if the defendant can demonstrate they exceed the plaintiff's loss",
+        "C": "Benefits are deducted in full only where they are paid directly by the defendant or their insurer",
+        "D": "Certain benefits received by the dependants as a result of the death — such as insurance proceeds, pension payments, or social welfare benefits — are not deductible from the fatal injuries award"
+      },
+      "correct_answer": "D",
+      "explanation": "Section 50 of the Civil Liability Act 1961 provides that certain benefits received by the dependants as a result of the death — including insurance proceeds, pension payments, and social welfare benefits — are not deductible from the fatal injuries award. The defendant cannot reduce their liability by pointing to the fact that the dependants received other financial benefits arising from the death."
+    },
+    {
+      "id": "TL_M16_L01_Q25",
+      "question": "The classic trinity of elements for passing off — goodwill, misrepresentation, and damage — was articulated by Lord Oliver in which House of Lords decision?",
+      "options": {
+        "A": "Reckitt and Colman Products Ltd v Borden Inc [1990] HL",
+        "B": "Erven Warnink BV v J Townend and Sons (Hull) Ltd [1979] HL",
+        "C": "IRC v Muller and Co's Margarine Ltd [1901] HL",
+        "D": "J Bollinger v Costa Brava Wine Company Ltd [1961]"
+      },
+      "correct_answer": "A",
+      "explanation": "The classic trinity of elements for passing off — goodwill, misrepresentation, and damage — was articulated by Lord Oliver in Reckitt and Colman Products Ltd v Borden Inc [1990] HL (the 'Jif lemon' case). This formulation provides the foundational framework for all modern passing off claims and is the starting point for any FE-1 analysis of this tort."
+    },
+    {
+      "id": "TL_M16_L01_Q26",
+      "question": "Goodwill was classically described as 'the attractive force which brings in custom' in which House of Lords decision?",
+      "options": {
+        "A": "Reckitt and Colman Products Ltd v Borden Inc [1990] HL",
+        "B": "IRC v Muller and Co's Margarine Ltd [1901] HL",
+        "C": "Erven Warnink BV v J Townend and Sons (Hull) Ltd [1979] HL",
+        "D": "J Bollinger v Costa Brava Wine Company Ltd [1961]"
+      },
+      "correct_answer": "B",
+      "explanation": "Goodwill was classically described as 'the attractive force which brings in custom' in IRC v Muller and Co's Margarine Ltd [1901] HL. This enduring definition emphasises that goodwill is not merely fame or reputation — it is the proprietary commercial attraction associated with a business or trade, and it must be associated with the plaintiff's business and located in the relevant jurisdiction."
+    },
+    {
+      "id": "TL_M16_L01_Q27",
+      "question": "The Irish Supreme Court decision in C&A Modes v C&A (Waterford) Ltd [1976] IESC is significant in the law of passing off for which proposition?",
+      "options": {
+        "A": "It established that goodwill requires a physical trading presence in the jurisdiction where passing off is alleged",
+        "B": "It established that reputation with customers familiar with the plaintiff's brand — even without a physical trading presence in the jurisdiction — can be sufficient to found goodwill in Ireland",
+        "C": "It confirmed that the substantial confusion test is the governing test for misrepresentation in Ireland",
+        "D": "It established that damage in passing off requires proof of actual loss rather than merely likely diversion of custom"
+      },
+      "correct_answer": "C",
+      "explanation": "C&A Modes v C&A (Waterford) Ltd [1976] IESC confirmed that goodwill does not require a physical trading presence in the jurisdiction. The Supreme Court held that the plaintiff had established goodwill in Ireland based on its reputation with Irish customers who had visited its UK stores and were familiar with its brand — even though it had no retail outlets in Ireland at the time. Reputation without a trading presence can be sufficient to found goodwill in Ireland."
+    },
+    {
+      "id": "TL_M16_L01_Q28",
+      "question": "What test was applied to the misrepresentation element in McCambridge Ltd v Joseph Brennan Bakeries [2012] IHC?",
+      "options": {
+        "A": "Whether any single consumer would be confused by the defendant's packaging",
+        "B": "Whether the majority of consumers would be likely to purchase the defendant's product in preference to the plaintiff's",
+        "C": "Whether the defendant intended to pass off their product as the plaintiff's",
+        "D": "Whether a substantial number of consumers would be likely to be confused into believing that the defendant's product was the plaintiff's"
+      },
+      "correct_answer": "D",
+      "explanation": "In McCambridge Ltd v Joseph Brennan Bakeries [2012] IHC, the court applied the substantial confusion test: whether a substantial number of consumers would be likely to be confused into believing that the defendant's product was the plaintiff's. The court found that the similarity of the bread packaging was such that a substantial number of consumers would indeed be confused. McCambridge is the leading Irish authority on the misrepresentation element of passing off."
+    },
+    {
+      "id": "TL_M16_L01_Q29",
+      "question": "Allergan Inc v Ocean Healthcare Ltd [2008] IHC involved a passing off dispute relating to which type of products?",
+      "options": {
+        "A": "Consumer food products in supermarket packaging",
+        "B": "Competing pharmaceutical or cosmetic products — specifically Botox and a competing product",
+        "C": "Clothing and fashion retail brands with similar names",
+        "D": "Competing alcoholic beverages with similar names and branding"
+      },
+      "correct_answer": "A",
+      "explanation": "Allergan Inc v Ocean Healthcare Ltd [2008] IHC examined the misrepresentation element of passing off in the context of pharmaceutical/cosmetic products — specifically the alleged confusion between Botox (the plaintiff's product) and Azzalure (the defendant's competing product). The case illustrates the application of the misrepresentation element in professional goods markets where confusion may affect healthcare professionals as well as end consumers."
+    },
+    {
+      "id": "TL_M16_L01_Q30",
+      "question": "In Falcon Travel Ltd v Owners Abroad Group plc [1991] IHC, what principle regarding damage in passing off was established?",
+      "options": {
+        "A": "Damage requires proof of actual financial loss before an injunction can be granted",
+        "B": "Damage includes the likely diversion of custom from the plaintiff to the defendant, even where actual losses cannot be precisely quantified",
+        "C": "Damage can only be established where the plaintiff's business has ceased to trade as a result of the defendant's misrepresentation",
+        "D": "Damage must be established by expert economic evidence of market share loss"
+      },
+      "correct_answer": "B",
+      "explanation": "In Falcon Travel Ltd v Owners Abroad Group plc [1991] IHC, the court held that damage in passing off includes the likely diversion of custom from the plaintiff to the defendant, even where actual losses cannot be precisely quantified. The likelihood of lost business — based on the probability of customer confusion — is sufficient to establish the damage element. Passing off claimants do not need to wait until actual, quantified losses materialise."
+    },
+    {
+      "id": "TL_M16_L01_Q31",
+      "question": "Extended passing off — which protects the shared goodwill of a class of products having a particular characteristic — was established in which landmark House of Lords decision?",
+      "options": {
+        "A": "Reckitt and Colman Products Ltd v Borden Inc [1990] HL",
+        "B": "IRC v Muller and Co's Margarine Ltd [1901] HL",
+        "C": "Erven Warnink BV v J Townend and Sons (Hull) Ltd [1979] HL",
+        "D": "J Bollinger v Costa Brava Wine Company Ltd [1961]"
+      },
+      "correct_answer": "C",
+      "explanation": "The doctrine of extended passing off was established in Erven Warnink BV v J Townend and Sons (Hull) Ltd [1979] HL (the 'Advocaat' case). The House of Lords held that a class of producers could maintain a passing off action to protect the shared reputation of a product name distinctive of a particular category of goods — enabling, for example, Dutch Advocaat producers to prevent the use of that name for a non-conforming product."
+    }
+  ]
+}

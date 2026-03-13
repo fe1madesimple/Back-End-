@@ -1,0 +1,167 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module02_Lesson01.txt",
+  "module_number": 2,
+  "module_title": "Institutions of the European Union",
+  "lesson_number": 1,
+  "lesson_title": "The Council and the European Council: Intergovernmental Power in the EU System",
+  "questions": [
+    {
+      "id": "EUL_M02_L01_Q01",
+      "question": "The Council of the European Union (Council of Ministers) is composed of:",
+      "options": {
+        "A": "One elected representative from each member state's parliament",
+        "B": "A representative of each member state government at ministerial level",
+        "C": "The heads of state or government of all member states",
+        "D": "Commissioners appointed by each member state"
+      },
+      "correct_answer": "B",
+      "explanation": "The Council of the EU (Article 16 TEU) is composed of a representative of each member state at ministerial level who is authorised to commit the government of that member state. Its composition varies by subject matter — finance ministers meet as ECOFIN, foreign ministers as the Foreign Affairs Council, etc."
+    },
+    {
+      "id": "EUL_M02_L01_Q02",
+      "question": "The Council of the EU exercises which two primary functions?",
+      "options": {
+        "A": "Proposes legislation and implements EU law",
+        "B": "Jointly exercises legislative function with the Parliament and adopts the EU budget",
+        "C": "Enforces EU law and reviews acts of the Commission",
+        "D": "Adopts the EU budget and sets monetary policy"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 16(1) TEU provides that the Council shall, jointly with the European Parliament, exercise legislative and budgetary functions and carry out policy-making and coordinating functions."
+    },
+    {
+      "id": "EUL_M02_L01_Q03",
+      "question": "Qualified majority voting (QMV) in the Council under the Lisbon Treaty (the 'double majority') requires:",
+      "options": {
+        "A": "A majority of member states representing at least 60% of the EU population",
+        "B": "At least 55% of member states (at least 15) representing at least 65% of the EU population",
+        "C": "At least two-thirds of member states representing at least 50% of the EU population",
+        "D": "Unanimous agreement of all member states"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 16(4) TEU establishes the 'double majority': QMV requires at least 55% of Council members (at least 15 member states in a 27-member EU) comprising member states representing at least 65% of the total EU population."
+    },
+    {
+      "id": "EUL_M02_L01_Q04",
+      "question": "Which configuration of the Council is chaired by the High Representative for Foreign Affairs and Security Policy, rather than by the rotating Presidency?",
+      "options": {
+        "A": "The General Affairs Council",
+        "B": "The Economic and Financial Affairs Council",
+        "C": "The Foreign Affairs Council",
+        "D": "The Justice and Home Affairs Council"
+      },
+      "correct_answer": "C",
+      "explanation": "The Foreign Affairs Council is the only Council configuration chaired by the High Representative of the Union for Foreign Affairs and Security Policy (Article 18(3) TEU), rather than by the rotating six-month Presidency of the Council held by each member state in turn."
+    },
+    {
+      "id": "EUL_M02_L01_Q05",
+      "question": "The European Council, as an institution of the EU under the Lisbon Treaty, is composed of:",
+      "options": {
+        "A": "All members of the European Parliament and the Council",
+        "B": "The heads of state or government of the member states, together with its President and the President of the Commission",
+        "C": "The Foreign Ministers of all member states",
+        "D": "One elected representative from each member state's national parliament"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 15(2) TEU: the European Council consists of the heads of state or government of the member states, together with its President and the President of the Commission. The High Representative participates in its work."
+    },
+    {
+      "id": "EUL_M02_L01_Q06",
+      "question": "The European Council's primary role is to:",
+      "options": {
+        "A": "Exercise legislative power alongside the European Parliament",
+        "B": "Provide the Union with the necessary impetus for its development and define its general political directions and priorities",
+        "C": "Adopt binding decisions on EU law that apply directly in member states",
+        "D": "Oversee the implementation of EU law by the Commission and member states"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 15(1) TEU: the European Council provides the Union with the necessary impetus for its development and defines the general political directions and priorities. It does not exercise a legislative function — this distinction between strategic/political direction (European Council) and day-to-day legislation (Council of the EU + Parliament) is constitutionally important."
+    },
+    {
+      "id": "EUL_M02_L01_Q07",
+      "question": "The President of the European Council is elected by the European Council by qualified majority. The term of office is:",
+      "options": {
+        "A": "One year, renewable once",
+        "B": "Two and a half years, renewable once",
+        "C": "Five years, non-renewable",
+        "D": "Two years, renewable twice"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 15(5) TEU: the President of the European Council is elected by the European Council by qualified majority for a term of two and a half years, renewable once. The post was created by the Lisbon Treaty to provide continuity and coordination of European Council work."
+    },
+    {
+      "id": "EUL_M02_L01_Q08",
+      "question": "How does the Council Presidency rotate among member states?",
+      "options": {
+        "A": "The largest member state by population holds the Presidency permanently",
+        "B": "Each member state holds the Presidency for six months on a rotating basis",
+        "C": "The Presidency rotates annually, determined by the European Council",
+        "D": "The member state with the longest EU membership holds the Presidency for two years"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 16(9) TEU: the Presidency of the Council (other than the Foreign Affairs Council) rotates among member states on a basis of equal rotation. In practice, states hold the Presidency for six months each, in an order determined by the European Council."
+    },
+    {
+      "id": "EUL_M02_L01_Q09",
+      "question": "A 'blocking minority' in qualified majority voting requires:",
+      "options": {
+        "A": "Any single large member state to vote against",
+        "B": "At least four member states representing at least 35% of the EU population",
+        "C": "At least five member states representing more than 25% of the EU population",
+        "D": "At least half of the member states to vote against"
+      },
+      "correct_answer": "B",
+      "explanation": "To block a QMV decision, at least four member states representing at least 35% of the EU population must vote against. This mirrors the QMV threshold of 55% of states/65% of population — a blocking minority can be formed by fewer than 55% of states if they represent more than 35% of population."
+    },
+    {
+      "id": "EUL_M02_L01_Q10",
+      "question": "The European Council's decision to convene the 2004 Intergovernmental Conference that produced the Constitutional Treaty illustrates which function?",
+      "options": {
+        "A": "Legislative — the European Council was enacting binding secondary law",
+        "B": "Strategic — the European Council setting the political agenda and direction for treaty reform",
+        "C": "Judicial — the European Council interpreting existing treaty obligations",
+        "D": "Supervisory — the European Council reviewing Commission conduct"
+      },
+      "correct_answer": "B",
+      "explanation": "The European Council's role in convening IGCs for treaty reform exemplifies its strategic and impetus-giving function under Article 15(1) TEU. Treaty reform is initiated by the European Council, not through the ordinary legislative procedure — reflecting its role as the constitutional guardian and political engine of the integration process."
+    },
+    {
+      "id": "EUL_M02_L01_Q11",
+      "question": "In which areas does the Council still typically act by unanimity (rather than QMV)?",
+      "options": {
+        "A": "Internal market legislation and competition law",
+        "B": "Taxation, foreign policy, constitutional matters (treaty revision), and certain areas of social policy",
+        "C": "All legislation under the ordinary legislative procedure",
+        "D": "Trade agreements with third countries"
+      },
+      "correct_answer": "B",
+      "explanation": "While QMV is the default under the ordinary legislative procedure, unanimity remains required in politically sensitive areas including direct taxation, CFSP, treaty amendment under Article 48, and certain aspects of social security. The 'passerelle' clauses in the Treaties allow the European Council to move from unanimity to QMV in certain areas without full treaty amendment."
+    },
+    {
+      "id": "EUL_M02_L01_Q12",
+      "question": "The distinction between the 'Council of the EU' and the 'European Council' is constitutionally important because:",
+      "options": {
+        "A": "They are the same institution meeting in different formats",
+        "B": "The European Council sets strategic political direction but does not legislate; the Council of the EU exercises legislative and budgetary functions",
+        "C": "The European Council has legally superior acts to those of the Council of the EU",
+        "D": "Only the Council of the EU is bound by the principle of supremacy of EU law"
+      },
+      "correct_answer": "B",
+      "explanation": "The two institutions are legally distinct (both now formally recognised as institutions under Article 13 TEU). The European Council (heads of state/government) sets political direction; the Council of the EU (ministers) legislates and budgets. Conflating them is a common error — the Council of the EU is the legislative body; the European Council is the strategic/constitutional summit."
+    },
+    {
+      "id": "EUL_M02_L01_Q13",
+      "question": "The COREPER (Committee of Permanent Representatives) is significant because:",
+      "options": {
+        "A": "It is the main legislative chamber of the Council for major decisions",
+        "B": "It prepares Council business, negotiates compromise texts, and enables the Council to adopt 'A items' (agreed at COREPER level) without discussion",
+        "C": "It provides judicial review of Council legislative acts",
+        "D": "It represents the European Parliament in Council negotiations"
+      },
+      "correct_answer": "B",
+      "explanation": "COREPER (Article 240 TFEU) consists of the permanent representatives (ambassadors) of member states to the EU. It prepares and filters Council business: matters agreed at COREPER level become 'A items' adopted by the Council without debate; disputed matters become 'B items' requiring ministerial discussion. COREPER is crucial to the practical functioning of the Council."
+    }
+  ],
+  "total_questions": 13
+}

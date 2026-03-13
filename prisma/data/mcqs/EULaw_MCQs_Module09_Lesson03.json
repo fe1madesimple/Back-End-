@@ -1,0 +1,167 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module09_Lesson03.txt",
+  "module_number": 9,
+  "module_title": "Free Movement of Goods",
+  "lesson_number": 3,
+  "lesson_title": "Keck, Selling Arrangements, and Article 36 Derogations",
+  "questions": [
+    {
+      "id": "EUL_M09_L03_Q01",
+      "question": "In Keck and Mithouard [1993] (Joined Cases C-267/91 and C-268/91), the CJEU departed from the broad Dassonville formula. What was the factual background of the case?",
+      "options": {
+        "A": "German rules requiring minimum labelling standards on retail goods",
+        "B": "French rules prohibiting resale at a loss (below purchase price) — traders argued this restricted their ability to compete and thus hindered imports",
+        "C": "Belgian rules requiring imported goods to carry Belgian language labelling",
+        "D": "Dutch rules limiting opening hours for retail businesses"
+      },
+      "correct_answer": "B",
+      "explanation": "Keck involved French traders who were prosecuted for reselling goods below purchase price, contrary to French law prohibiting resale at a loss. They argued the French rule violated Article 34 TFEU because it restricted their ability to promote and sell imported goods cheaply, thus hindering trade. The CJEU used this case to reformulate the law on selling arrangements — a category of national measures that, the Court held, fall outside Article 34 altogether, provided they meet certain conditions. The case represented a conscious judicial policy choice to limit the scope of Article 34 in response to the flood of cases using Dassonville to challenge routine commercial regulation."
+    },
+    {
+      "id": "EUL_M09_L03_Q02",
+      "question": "The Keck ruling distinguished between two categories of national measures. What are they and how does Article 34 apply to each?",
+      "options": {
+        "A": "Discriminatory measures (caught by Article 34) and non-discriminatory measures (outside Article 34)",
+        "B": "Product requirements (subject to Article 34 and potentially justified under Cassis/Article 36) and selling arrangements (outside Article 34 entirely, provided they apply to all traders operating in the national territory and do not affect the marketing of domestic and imported goods differently in law or in fact)",
+        "C": "Regulatory measures (subject to Article 34) and fiscal measures (subject to Article 110 TFEU only)",
+        "D": "Technical standards (subject to Article 34) and labelling requirements (subject to consumer protection law only)"
+      },
+      "correct_answer": "B",
+      "explanation": "Keck established the crucial distinction: (1) Product requirements — rules relating to the characteristics of the good itself (name, composition, shape, size, weight, labelling, packaging) — remain subject to Article 34 and the Dassonville/Cassis framework. (2) Selling arrangements — rules regulating how goods are sold (when, where, by whom, at what price, using what promotional techniques) — fall outside Article 34 entirely, provided: (a) they apply to all traders in the national territory; and (b) they affect the marketing of domestic and imported products in the same manner in law and in fact. If a selling arrangement is discriminatory in effect, it remains within Article 34."
+    },
+    {
+      "id": "EUL_M09_L03_Q03",
+      "question": "What was the CJEU's stated reason for introducing the Keck distinction?",
+      "options": {
+        "A": "To align EU free movement law with WTO rules on non-tariff barriers",
+        "B": "Because it had become increasingly common for economic operators to invoke Article 34 to challenge rules that had nothing to do with hindering market access for goods from other member states — the Court was concerned about an unacceptable broadening of the scope of Article 34",
+        "C": "Because the Dassonville formula was held to be incompatible with the principle of subsidiarity introduced by the Maastricht Treaty",
+        "D": "Because the Commission had requested the Court to limit Article 34's scope to reduce the number of infringement proceedings"
+      },
+      "correct_answer": "B",
+      "explanation": "The CJEU in Keck explicitly acknowledged that it was departing from earlier case law. The Court stated that in view of the growing tendency of traders to invoke Article 34 to challenge any rules whose effect is to limit their commercial freedom, even where such rules are not aimed at products from other member states, it was necessary to re-examine the case law. Selling arrangements — rules on when, where, and how goods are sold — do not by nature hinder market access for foreign goods; they regulate the conditions of sale that apply equally to all operators. The CJEU reserved the free movement framework for genuine barriers to market access."
+    },
+    {
+      "id": "EUL_M09_L03_Q04",
+      "question": "A Spanish rule prohibits the sale of alcohol in shops between 10pm and 6am (a trading hours restriction). Under the Keck framework, this is:",
+      "options": {
+        "A": "A product requirement subject to Article 34",
+        "B": "A selling arrangement — a rule on the conditions of sale (when goods may be sold) — outside Article 34 if it applies to all traders equally and does not discriminate against imports in law or in fact",
+        "C": "A quantitative restriction contrary to Article 34",
+        "D": "A measure requiring justification under Article 36 on public health grounds"
+      },
+      "correct_answer": "B",
+      "explanation": "Trading hours restrictions are the paradigm example of a selling arrangement under Keck. A rule on when goods may be sold regulates the conditions of sale, not the characteristics of the goods themselves. Provided the rule applies to all traders in the national territory without discrimination — and does not in practice affect imported products more heavily than domestic products — it is outside Article 34 entirely. Sunday trading restrictions (Torfaen Borough Council v B&Q [1990], decided before Keck) and closing hours rules are now firmly categorised as selling arrangements. No justification is needed for measures outside Article 34."
+    },
+    {
+      "id": "EUL_M09_L03_Q05",
+      "question": "In Gourmet International Products [2001] (C-405/98), Sweden's ban on alcohol advertising in magazines and the broadcast media was assessed. How did the CJEU approach the advertising ban?",
+      "options": {
+        "A": "As a product requirement — outside Article 34 because it related to packaging",
+        "B": "As a selling arrangement that was potentially caught by Article 34 because advertising bans affect imported products more heavily than domestic products — domestic products are better known to consumers and benefit from brand recognition built before the ban; imported products depend more on advertising to penetrate the market",
+        "C": "As a selling arrangement outside Article 34 entirely — advertising is not a characteristic of the product",
+        "D": "As a measure justified under Article 36 on grounds of public morality"
+      },
+      "correct_answer": "B",
+      "explanation": "Gourmet International Products is an important qualification on Keck: advertising bans may be classified as selling arrangements, but they can still fall within Article 34 if they affect imported products more heavily in fact than domestic products. The CJEU found that a total ban on alcohol advertising in magazines and broadcasting in Sweden placed a greater burden on imported products — which rely on advertising to break into the market — than on Swedish domestic alcohol brands (already established with existing consumer recognition). This illustrates that Keck's exclusion is conditional: if a selling arrangement is discriminatory in effect (even without discriminatory intent), it remains within Article 34."
+    },
+    {
+      "id": "EUL_M09_L03_Q06",
+      "question": "The Keck framework has been criticised for which principal reason?",
+      "options": {
+        "A": "That it makes all selling arrangements lawful without any justification",
+        "B": "That the distinction between 'product requirements' and 'selling arrangements' is artificial and difficult to apply — some measures fall in both categories or on the borderline; and the 'in law and in fact' non-discrimination test for selling arrangements can be as complex to apply as the original Dassonville analysis",
+        "C": "That it applies only in the goods context and not to services, creating inconsistency",
+        "D": "That it was adopted without consultation with the member states and violates democratic principles"
+      },
+      "correct_answer": "B",
+      "explanation": "Keck has been extensively criticised by academic commentators and Advocates General. The core criticism is that the product requirement/selling arrangement distinction is not always clear or principled — where does packaging (a product requirement) end and advertising (a selling arrangement) begin? Furthermore, the factual discrimination test for selling arrangements (must apply in the same manner 'in law and in fact') can be as complex and uncertain as the original Dassonville inquiry. Critics (including AG Jacobs in Leclerc-Siplec) have proposed replacing Keck with a 'market access' test — whether the measure substantially impedes market access — but the CJEU has maintained the Keck framework."
+    },
+    {
+      "id": "EUL_M09_L03_Q07",
+      "question": "Post-Keck, the CJEU has developed a 'market access' strand to free movement of goods analysis. In Commission v Italy (Trailers) [2009] (C-110/05), the CJEU held:",
+      "options": {
+        "A": "That Italy's ban on using trailers behind motorcycles was a selling arrangement outside Article 34",
+        "B": "That the Italian rule was an MEE — it prevented goods lawfully marketed in other member states (trailers designed for motorcycle use) from accessing the Italian market; hindering market access is a key criterion for Article 34 even for measures that are not product requirements in the traditional sense",
+        "C": "That the Italian rule was justified under Article 36 on road safety grounds",
+        "D": "That member states may freely regulate the use of products on their territory without Article 34 applying"
+      },
+      "correct_answer": "B",
+      "explanation": "Commission v Italy (Trailers) is significant because the CJEU reformulated the analysis for measures regulating product use: the Italian rule banned the towing of trailers by motorcycles. The rule was not a product requirement (it didn't relate to trailer characteristics) or a classic selling arrangement (it wasn't about conditions of sale). The CJEU held that the rule prevented trailers from being used in Italy for their specific purpose — effectively barring the market for trailers designed for motorcycles. This 'market access' reasoning shows that Article 34 captures measures that hinder market access for goods lawfully marketed elsewhere, even if they don't fit neatly into traditional categories."
+    },
+    {
+      "id": "EUL_M09_L03_Q08",
+      "question": "Article 36 TFEU permits derogations on grounds of protection of 'industrial and commercial property'. In which type of case has this derogation been successfully invoked?",
+      "options": {
+        "A": "Cases involving trade marks, patents, and copyright where the IP holder seeks to prevent parallel imports of goods they have placed on the market in another member state",
+        "B": "Cases where member states wish to restrict imports of goods competing with state-owned enterprises",
+        "C": "Cases involving protection of national brands from foreign competition",
+        "D": "Cases where a member state wishes to grant exclusive rights to a national distributor"
+      },
+      "correct_answer": "A",
+      "explanation": "The 'industrial and commercial property' derogation in Article 36 allows IP holders to restrict imports that infringe their rights (e.g., counterfeit goods, imports of patent-protected products without authorisation). However, the doctrine of EU exhaustion of rights limits its use: where the IP owner (or their licensee with consent) has placed the goods on the market in any EU member state, the IP rights are exhausted and cannot be used to prevent parallel imports within the EU (Centrafarm v Sterling Drug). The derogation can be used to prevent imports of counterfeits or goods placed on the market without the IP holder's consent, but cannot be used to partition the EU single market for genuine goods."
+    },
+    {
+      "id": "EUL_M09_L03_Q09",
+      "question": "The doctrine of EU exhaustion of IP rights (relevant to Article 36 TFEU) means:",
+      "options": {
+        "A": "Once an IP right expires, any goods produced under it can be freely traded throughout the EU",
+        "B": "Once goods protected by an IP right have been placed on the market in any EU member state by the right holder or with their consent, the IP right is exhausted — the right holder cannot use their IP rights to prevent the goods being re-exported and sold in other EU member states",
+        "C": "IP rights are automatically exhausted once goods leave the manufacturer's possession",
+        "D": "IP rights are exhausted only if they are registered in all EU member states"
+      },
+      "correct_answer": "B",
+      "explanation": "EU exhaustion of IP rights is the doctrine that prevents IP holders from using their rights to partition the internal market. Once the right holder (or their authorised licensee/distributor) has first placed the goods on the market in an EU member state, the IP rights in those goods are exhausted throughout the EU. The right holder cannot use trade mark, patent, or copyright rights to block parallel imports of the same goods from other EU member states. This prevents the internal market being divided into national segments by IP law. International exhaustion (extending to goods placed on market outside the EU) is not required — IP holders can block re-imports of goods first placed on markets outside the EU (Silhouette International)."
+    },
+    {
+      "id": "EUL_M09_L03_Q10",
+      "question": "The 'public morality' derogation under Article 36 TFEU was considered in R v Henn and Darby [1979] (C-34/79), which concerned UK restrictions on importing obscene material. The CJEU held:",
+      "options": {
+        "A": "That public morality is not a valid justification for restricting imports of pornographic material",
+        "B": "That each member state has the right to determine the requirements of public morality in its territory — the UK could restrict imports of material considered obscene, but could not apply more restrictive rules to imports than to comparable domestic production",
+        "C": "That the UK restriction was unlawful because it discriminated against foreign pornography producers",
+        "D": "That the public morality derogation can never justify a total ban on imports of any category of goods"
+      },
+      "correct_answer": "B",
+      "explanation": "Henn and Darby established the principle that member states have a margin of discretion in defining their standards of public morality — the CJEU does not set a single European standard of morality. However, the margin is not unlimited: a member state cannot apply stricter standards to imports than to comparable domestic goods. If the member state permits domestic production and sale of equivalent material (even under restrictions), it cannot justify a total import ban as a matter of public morality. In Henn and Darby, because there was no lawful domestic trade in such material in Great Britain, the import restriction was consistent with the morality derogation."
+    },
+    {
+      "id": "EUL_M09_L03_Q11",
+      "question": "The 'public policy' ground in Article 36 TFEU has been interpreted strictly by the CJEU. What is the relationship between 'public policy' and other Article 36 grounds?",
+      "options": {
+        "A": "Public policy is the broadest ground and can be used as a catch-all justification",
+        "B": "Public policy is interpreted narrowly and is available only as a residual ground where no other Article 36 derogation applies — it cannot serve as a general override clause and requires a genuine, sufficiently serious threat to a fundamental social interest",
+        "C": "Public policy applies only to criminal law matters and cannot justify trade restrictions",
+        "D": "Public policy has the same broad scope as mandatory requirements under Cassis"
+      },
+      "correct_answer": "B",
+      "explanation": "The CJEU has consistently interpreted 'public policy' (ordre public) under Article 36 strictly. It cannot serve as a general catch-all justification — doing so would undermine the principle of free movement. Public policy requires a genuine, sufficiently serious threat affecting a fundamental interest of society (adopting the criteria developed for free movement of persons: Rutili [1975]). Economic reasons alone cannot constitute public policy grounds. The CJEU requires objective evidence of a genuine public policy concern — not merely inconvenience or political preference. Because other Article 36 grounds cover specific areas, public policy remains a residual, narrow derogation."
+    },
+    {
+      "id": "EUL_M09_L03_Q12",
+      "question": "Can a member state rely on a mandatory requirement (Cassis doctrine) to justify a distinctly applicable measure — one that applies specifically to imports and not to domestic products?",
+      "options": {
+        "A": "Yes — the mandatory requirements doctrine applies to any MEE regardless of whether it is discriminatory",
+        "B": "No — mandatory requirements are only available for indistinctly applicable measures; distinctly applicable measures (discriminating against imports) can only be justified under the exhaustive list of Article 36 TFEU",
+        "C": "Yes, but only if the mandatory requirement is consumer protection or environmental protection",
+        "D": "It depends on whether the measure was adopted before or after EU harmonisation in the relevant area"
+      },
+      "correct_answer": "B",
+      "explanation": "This is a fundamental rule: mandatory requirements (Cassis) apply only to indistinctly applicable measures. A distinctly applicable measure — one that singles out imports for different (less favourable) treatment than comparable domestic goods — must be justified under Article 36 TFEU's exhaustive closed list. The rationale is that discriminatory measures are presumptively protectionist and therefore subject to the stricter, Treaty-based justification regime. The Cassis mandatory requirements doctrine was developed specifically for non-discriminatory national measures that incidentally restrict trade but serve genuine public interest objectives — it is not available to rescue overtly discriminatory restrictions."
+    },
+    {
+      "id": "EUL_M09_L03_Q13",
+      "question": "Member states sometimes seek to justify free movement restrictions on 'economic' grounds — for example, to protect the national economy or a domestic industry. How does the CJEU treat purely economic justifications?",
+      "options": {
+        "A": "Economic justifications are the most commonly accepted — protecting national employment is a sufficient ground",
+        "B": "Purely economic justifications cannot justify restrictions on free movement of goods — economic interests do not appear in Article 36 and are not accepted as mandatory requirements; only non-economic public interest grounds are capable of justifying MEEs",
+        "C": "Economic justifications are accepted where they relate to the financial balance of the national social security system",
+        "D": "Economic justifications are accepted for five years following a member state's accession to the EU as a transitional measure"
+      },
+      "correct_answer": "B",
+      "explanation": "The CJEU has consistently and explicitly held that purely economic justifications cannot justify restrictions on free movement. In Commission v Italy (Export Restriction on Art Treasures) and numerous subsequent cases, the Court has stated that measures pursuing purely economic aims (protecting national industries, maintaining employment levels, avoiding economic disruption) do not qualify under Article 36 and are not accepted as mandatory requirements. Free movement law exists precisely to prevent national economic protectionism. While economic considerations may be incidental to legitimate non-economic objectives (e.g., protecting the financial balance of social security — accepted in the free movement of persons context), they cannot stand alone as a justification for trade restrictions."
+    }
+  ],
+  "total_questions": 13
+}

@@ -1,0 +1,119 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module05_Lesson01.txt",
+  "module_number": 5,
+  "module_title": "Non-Fatal Offences Against the Person",
+  "lesson_number": 4,
+  "lesson_title": "Threats to Kill or Cause Serious Harm (s.5 NFOATP 1997)",
+  "total_questions": 9,
+  "questions": [
+    {
+      "id": "CRL_M05_L04_Q01",
+      "question": "Section 5 of the Non-Fatal Offences Against the Person Act 1997 creates the offence of threats to kill or cause serious harm. What does the section require?",
+      "options": {
+        "A": "That the accused threatened by act or gesture to apply immediate force to another, causing that person to believe the threat will be carried out at once",
+        "B": "That the accused, without lawful excuse, made to another a threat, by any means, to kill or cause serious harm to that other or a third person, intending the other to believe it would be carried out",
+        "C": "That the accused communicated a threat in writing, intending the recipient to fear for their immediate physical safety",
+        "D": "That the accused made a conditional threat \u2014 'if you do not comply, I will harm you' \u2014 which operates as both a threat and a form of blackmail"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 5 NFOATP 1997 provides that a person who, without lawful excuse, makes to another a threat, by any means, intending the other to believe it will be carried out, to kill or cause serious harm to that other or a third person, shall be guilty of an offence. Key elements: (1) A threat (by any means \u2014 verbal, written, electronic, gestural); (2) Without lawful excuse; (3) To kill or cause serious harm to the recipient or a third person; (4) Intending the other to believe the threat will be carried out. Crucially, there is no requirement that the accused actually intends to carry out the threat \u2014 only that they intend the recipient to believe it will be carried out. There is also no immediacy requirement (unlike threatened assault under s.2). Option A conflates s.5 with s.2's threatened assault. Option C incorrectly restricts the mode of communication to writing. Option D describes blackmail, which is a different offence."
+    },
+    {
+      "id": "CRL_M05_L04_Q02",
+      "question": "How does the s.5 threats offence differ from the s.2 threatened assault in the NFOATP 1997?",
+      "options": {
+        "A": "They are identical offences \u2014 the only difference is the section number and maximum sentence",
+        "B": "S.2 threatened assault requires immediacy (the recipient must believe force will be applied immediately) and covers threats to apply force generally; s.5 does not require immediacy and is limited to threats to kill or cause serious harm \u2014 both offences can arise from the same conduct but the s.5 offence captures future threats that fall outside the immediacy requirement of s.2",
+        "C": "S.5 is a summary offence; s.2 is an indictable offence \u2014 the distinction is purely procedural",
+        "D": "S.2 covers threats by gesture only; s.5 covers threats by written communication only"
+      },
+      "correct_answer": "B",
+      "explanation": "The s.2 threatened assault and the s.5 threats offence address different situations: (1) S.2 threatened assault \u2014 requires that the recipient believes on reasonable grounds that force will be applied to them immediately; this immediacy element means that threats of future harm do not constitute s.2 assault; (2) S.5 threats to kill or cause serious harm \u2014 no immediacy requirement; a threat communicated now, of violence to be carried out at a future date, satisfies s.5. This is why a text message saying 'I will hurt you when I see you tomorrow' would not constitute s.2 assault (lack of immediacy) but could constitute a s.5 threat. S.5 is triable on indictment with a maximum of 10 years, so Option C is wrong about summary/indictable classification. Option D incorrectly restricts the modes of communication for each offence \u2014 both can be committed by any means. Option A is incorrect as the two offences are substantively different."
+    },
+    {
+      "id": "CRL_M05_L04_Q03",
+      "question": "In DPP v Wayne Dundon [2013] IECCA, the Court of Criminal Appeal considered the s.5 offence in a case where the accused threatened to kill a witness. What did the court confirm about the s.5 offence?",
+      "options": {
+        "A": "The court held that a s.5 threat requires proof that the accused was capable of carrying out the threat at the time it was made",
+        "B": "The court confirmed that the s.5 offence is complete when the threat is made \u2014 no requirement that the accused actually intends to carry it out; only that the accused intends the recipient to believe it will be carried out; intimidation of witnesses is a recognised application of s.5",
+        "C": "The court held that threats to witnesses are governed exclusively by contempt of court provisions and cannot be charged under s.5",
+        "D": "The court held that s.5 cannot be charged where the victim is aware the threat may be empty"
+      },
+      "correct_answer": "B",
+      "explanation": "DPP v Wayne Dundon [2013] IECCA arose from a notorious case involving threats made to witnesses in connection with a murder trial. The Court of Criminal Appeal confirmed: (1) The s.5 offence is complete at the moment the threat is communicated \u2014 there is no requirement that the accused actually intends to carry out the threat; (2) The mens rea is simply that the accused intended the recipient to believe the threat would be carried out; (3) Threatening witnesses to prevent them from giving evidence constitutes a recognised application of s.5 NFOATP 1997 (witness intimidation); (4) The seriousness of witness intimidation is reflected in the 10-year maximum. This case illustrates the breadth of s.5 \u2014 it is not limited to physical confrontations but extends to any use of threats to kill or cause serious harm for criminal purposes. Options A, C, and D each misstate the legal requirements of the offence."
+    },
+    {
+      "id": "CRL_M05_L04_Q04",
+      "question": "What is the maximum penalty for the s.5 threats to kill or cause serious harm offence?",
+      "options": {
+        "A": "2 years imprisonment \u2014 it is a summary offence",
+        "B": "5 years imprisonment on indictment",
+        "C": "10 years imprisonment on indictment",
+        "D": "Life imprisonment \u2014 because it is a threat to kill"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 5 NFOATP 1997 provides for a maximum penalty of 10 years imprisonment on conviction on indictment. The offence is triable on indictment in the Circuit Court. This maximum reflects the seriousness of making threats to kill or cause serious harm \u2014 such threats cause significant fear and psychological harm to victims, and are often associated with intimidation in criminal contexts (such as threatening witnesses or victims of organised crime). The offence is not a summary offence (so Option A is wrong). The maximum is not 5 years (Option B). Life imprisonment (Option D) is not available for s.5 \u2014 that maximum applies to s.4 causing serious harm and s.3A strangulation."
+    },
+    {
+      "id": "CRL_M05_L04_Q05",
+      "question": "Mark sends an anonymous letter to his business rival stating: 'You will be killed before Christmas. Make your peace.' Mark intends the rival to believe the threat will be carried out. Mark has no intention of actually killing his rival \u2014 it is intended as intimidation in a commercial dispute. Has Mark committed an offence under s.5 NFOATP 1997?",
+      "options": {
+        "A": "No \u2014 because Mark does not actually intend to kill his rival, the mens rea for s.5 is absent",
+        "B": "Yes \u2014 s.5 requires only that the accused intended the recipient to believe the threat would be carried out; Mark's intention to intimidate (making the rival believe the threat is real) satisfies this mental element; there is no requirement that Mark actually intended to follow through with the threat",
+        "C": "No \u2014 the threat is conditional on a date ('before Christmas') and therefore lacks the immediacy required for s.5",
+        "D": "Yes \u2014 but only because the letter was anonymous; named threats are treated differently under s.5"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 5's mens rea is that the accused intended the other to believe the threat would be carried out \u2014 not that the accused actually intended to carry it out. Mark's deliberate intention to make the rival believe the threat is real satisfies this mental element. The key distinction: under English law pre-1997, the prosecution often had to prove an intent to carry out the threat; s.5 NFOATP 1997 requires only intent that the recipient believe it will be carried out. This is an important and deliberately broader formulation. Commercial intimidation through threats to kill is a serious offence carrying 10 years maximum. The anonymous nature of the letter is irrelevant to the elements of the offence (Option D is wrong). Option A is the key distractor \u2014 many students incorrectly equate 'intent to make believe' with 'intent to carry out.' Option C incorrectly applies the immediacy requirement from s.2 to s.5."
+    },
+    {
+      "id": "CRL_M05_L04_Q06",
+      "question": "S.5 NFOATP 1997 includes threats to cause serious harm to 'a third person.' What does this mean in practice?",
+      "options": {
+        "A": "The threat must be directed at the person receiving it \u2014 threats about third parties cannot ground a s.5 charge",
+        "B": "The accused can commit s.5 by threatening to kill or cause serious harm not only to the person they are communicating with, but also to a third person (e.g., a family member) \u2014 threatening someone that you will harm their child is within the scope of s.5",
+        "C": "S.5 applies to threats against third parties only where the third party is present when the threat is made",
+        "D": "Threats to third parties are governed by the Protection from Harassment provisions, not s.5"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 5 expressly extends to threats to kill or cause serious harm to 'that other or a third person.' This extension is significant: an accused can commit s.5 by threatening the recipient with harm to their family member, partner, child, or any other third person. For example: 'If you give evidence, I will harm your children' is a s.5 threat directed at the witness (to make them believe their children will be harmed). The threat does not need to be of immediate harm to the recipient personally. The third person need not be present when the threat is made (Option C is wrong). This scope recognises that coercive threats frequently target the vulnerabilities of the recipient \u2014 their loved ones \u2014 rather than the recipient themselves. Option A incorrectly limits s.5 to direct threats. Option D misclassifies the applicable provision."
+    },
+    {
+      "id": "CRL_M05_L04_Q07",
+      "question": "A person receives a credible text message stating: 'I know where you live. I am going to kill you tonight.' They forward this to the Garda\u00ed. The sender is identified. Which offence(s) might be relevant?",
+      "options": {
+        "A": "S.2 threatened assault only \u2014 because the threat includes immediacy ('tonight')",
+        "B": "S.5 NFOATP 1997 \u2014 the threat to kill, made by text, with intent that the recipient believe it would be carried out, satisfies s.5; s.2 threatened assault may also be considered as the threat implies immediate force; harassment under s.10 may also be relevant if this is part of a pattern; the primary charge would be s.5",
+        "C": "No offence \u2014 communication of threats via electronic means falls outside the NFOATP 1997",
+        "D": "S.4 causing serious harm \u2014 because the threat itself constitutes psychological harm to the recipient"
+      },
+      "correct_answer": "B",
+      "explanation": "On these facts, the primary applicable provision is s.5 NFOATP 1997 (threats to kill by any means, including electronic communication, intending the recipient to believe it will be carried out). Additionally: (1) S.2 threatened assault may apply if the immediacy element is met \u2014 'tonight' could satisfy the requirement that the recipient believes force will be applied immediately; (2) S.10 harassment (or s.10A stalking) may apply if this is part of a pattern of conduct causing fear; (3) The Harmful Online Content legislation may also be relevant in terms of online communications. Charging prosecutors would typically lead with s.5 given the explicit threat to kill. Option A incorrectly limits the analysis to s.2 and ignores s.5. Option C incorrectly suggests electronic threats fall outside the NFOATP 1997 \u2014 s.5 applies 'by any means.' Option D misapplies s.4, which requires actual causation of serious harm, not the mere communication of a threat."
+    },
+    {
+      "id": "CRL_M05_L04_Q08",
+      "question": "Does s.5 NFOATP 1997 require the threat to be communicated directly to the person threatened?",
+      "options": {
+        "A": "Yes \u2014 the threat must be communicated face-to-face; indirect threats communicated through third parties are insufficient",
+        "B": "No \u2014 s.5 provides that the threat may be made 'by any means'; this includes threats communicated through third parties, through social media, through written communications, or by any other mechanism, provided the accused intended the victim to receive and believe the threat",
+        "C": "Yes \u2014 the threat must be communicated in writing to satisfy the evidential requirements of s.5",
+        "D": "No \u2014 but the threat must be recorded and produced in court; oral threats that are not corroborated cannot ground a s.5 conviction"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 5 NFOATP 1997 uses the phrase 'makes to another a threat, by any means' \u2014 the 'by any means' formulation is deliberately broad. Threats communicated through intermediaries (e.g., 'tell John I'll kill him'), through social media posts, through letters, through phone calls, or by any other mechanism are within the section's scope, provided: (1) the accused made the threat; (2) without lawful excuse; (3) the threat was to kill or cause serious harm; (4) the accused intended the other to believe it would be carried out. The mode of communication is irrelevant to liability. Option A incorrectly restricts the section to face-to-face communication. Option C invents a writing requirement. Option D invents a corroboration requirement \u2014 s.5 is not subject to mandatory corroboration, though in practice the prosecution will want to adduce as much evidence as possible."
+    },
+    {
+      "id": "CRL_M05_L04_Q09",
+      "question": "For s.5 NFOATP 1997, what does the 'lawful excuse' qualification mean?",
+      "options": {
+        "A": "Any threat made during an argument is automatically excused as it is emotionally spontaneous and therefore lawful",
+        "B": "A lawful excuse might include self-defence warnings (e.g., 'if you attack me, I will defend myself with lethal force if necessary') made in appropriate circumstances \u2014 the accused must have had a genuine legal justification for the communication that led to the threatening statement; the excuse must be objectively reasonable",
+        "C": "Lawful excuse only applies to police officers who may issue verbal threats as part of law enforcement",
+        "D": "Lawful excuse means the accused was not sober at the time \u2014 intoxication is the primary lawful excuse to s.5 charges"
+      },
+      "correct_answer": "B",
+      "explanation": "The 'without lawful excuse' element means that s.5 does not apply where there is a legally recognised justification for the communication. Examples of potential lawful excuses are narrow: (1) A genuine and proportionate warning in a self-defence context (e.g., 'Stop, I have a weapon and I will use it if you come any closer') might not constitute a s.5 threat if objectively justified; (2) A solicitor's letter warning of legal consequences does not constitute a s.5 threat even if strongly worded. The excuse must be genuinely lawful \u2014 venting emotions in an argument ('I'll kill you!') is not a recognised lawful excuse, though in practice such statements may be treated with more prosecutorial discretion. Intoxication is not a lawful excuse (Option D is wrong). Lawful excuse is not restricted to police officers (Option C is wrong). Option A would eliminate the offence in almost every case \u2014 spontaneity is not a lawful excuse."
+    }
+  ]
+}

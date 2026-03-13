@@ -1,0 +1,131 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module06_Lesson01.txt",
+  "module_number": 6,
+  "module_title": "Sexual Offences",
+  "lesson_number": 2,
+  "lesson_title": "Consent in Sexual Offences",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CRL_M06_L02_Q01",
+      "question": "Section 48 of the Criminal Law (Sexual Offences) Act 2017 (substituting s.9 of the Criminal Law (Rape) Amendment Act 1990) provides the legislative definition of consent. Which of the following correctly states that definition?",
+      "options": {
+        "A": "Consent means active verbal agreement \u2014 non-verbal consent is not legally recognised",
+        "B": "Consent means free and voluntary agreement; it must be given affirmatively \u2014 silence or passivity does not constitute consent; consent can be withdrawn at any time",
+        "C": "Consent means the absence of physical resistance \u2014 if a complainant does not physically resist, consent is presumed",
+        "D": "Consent is defined as the complainant's subjective state of mind at the time of the act \u2014 if the complainant did not feel harmed, consent is implied"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 48 Criminal Law (Sexual Offences) Act 2017 defines consent as free and voluntary agreement. Key aspects: (1) Consent must be given affirmatively \u2014 passivity, silence, or failure to resist does not constitute consent; (2) Consent can be withdrawn at any time during an act (Kaitamaki v R [1985]); (3) Consent must be genuine \u2014 not obtained by fraud, threats, or in circumstances where the complainant lacked capacity. The common law case DPP v C [2001] IESC had defined consent as 'voluntary agreement or acquiescence' and this is consistent with the statutory definition. R v Olugboja [1982] (accepted in Ireland) confirmed there is 'a difference between consent and submission \u2014 every consent involves a submission, but it by no means follows that a mere submission involves consent.' Option A incorrectly limits consent to verbal agreement. Option C inverts the correct rule \u2014 absence of resistance is not consent. Option D creates a subjective harm test that has no basis in law."
+    },
+    {
+      "id": "CRL_M06_L02_Q02",
+      "question": "In R v Olugboja [1982] (accepted in Irish law), the Court of Appeal considered whether submission to sexual intercourse under fear constituted consent. What principle did this case establish?",
+      "options": {
+        "A": "The court held that submission under fear always constitutes consent \u2014 the victim must prove physical resistance before non-consent is established",
+        "B": "The court held that there is a fundamental distinction between consent and submission: every consent involves a submission, but submission does not involve consent; the jury must consider all circumstances to determine whether the complainant genuinely consented or merely submitted out of fear",
+        "C": "The court held that only submission induced by direct physical force vitiates consent \u2014 submission induced by psychological pressure retains its character as consent",
+        "D": "The court held that the test for consent is objective \u2014 what a reasonable person in the complainant's position would have done"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Olugboja [1982] arose from a case where two teenagers were brought to a bungalow; one complainant was told she would be raped and lay still without resistance while the accused had intercourse with her. The Court of Appeal held that the distinction between consent and submission was crucial: 'There is a difference between consent and submission; every consent involves a submission, but it by no means follows that a mere submission involves consent.' The jury must look at all the circumstances \u2014 the age of the parties, any threats, the complainant's state of mind \u2014 to determine whether the complainant was consenting or merely submitting out of fear. This case was accepted in Ireland in DPP v MC [2018] IECA. Options A and C each suggest that submission amounts to or is equivalent to consent, which is precisely what Olugboja rejected. Option D mischaracterises the test as objective when it requires a holistic factual inquiry."
+    },
+    {
+      "id": "CRL_M06_L02_Q03",
+      "question": "In DPP v Sherlock [2018] IECA, the accused and complainant agreed to have sexual intercourse on the condition that he would use a condom. He penetrated her without one. What principle did this case establish?",
+      "options": {
+        "A": "The accused was not guilty of rape because the complainant had consented to sexual intercourse; the condition about the condom did not affect the consent to penetration itself",
+        "B": "The accused was guilty of rape \u2014 consent was conditional on the use of a condom; by penetrating without a condom, he exceeded the scope of the consent given; conditional consent does not extend to the act as performed",
+        "C": "The accused was guilty of sexual assault but not rape \u2014 the deception about the condom did not vitiate consent to sexual intercourse itself",
+        "D": "The accused was not guilty of any offence \u2014 conditions placed on sexual consent are not legally enforceable"
+      },
+      "correct_answer": "B",
+      "explanation": "DPP v Sherlock [2018] IECA is the leading Irish authority on conditional consent in sexual offences. The Court of Appeal upheld the conviction for rape on the basis that the complainant's consent to sexual intercourse was conditional \u2014 she consented only on the condition that a condom would be used. By penetrating her without a condom, the accused exceeded the scope of the consent given. The consent did not extend to unprotected penetration. This is sometimes called 'stealthing' \u2014 the covert removal or non-use of a condom contrary to the partner's agreement. The case is a high-value exam scenario: whenever a problem question involves a condom condition, the answer should analyse conditional consent using Sherlock. Options A and D treat the condition as legally irrelevant. Option C misstates the offence established."
+    },
+    {
+      "id": "CRL_M06_L02_Q04",
+      "question": "In R v McNally [2013] CA (England and Wales), Justine McNally (17) met a complainant (16) online, posed as a male, and on meeting digitally and orally penetrated the complainant who believed McNally was male. What principle did this case establish about deception and consent?",
+      "options": {
+        "A": "Deception as to gender identity does not vitiate consent to the sexual acts \u2014 the complainant consented to the penetration itself",
+        "B": "Consent obtained by deception as to gender identity is vitiated \u2014 the complainant had consented to penetration by a male, not by a female; the deception went to the fundamental nature of the act consented to; McNally was convicted of assault by penetration",
+        "C": "Deception as to gender identity is only relevant where the accused is transgender \u2014 McNally was convicted because of the transgender context specifically",
+        "D": "Only deception as to the nature of the act (not the identity of the actor) vitiates consent \u2014 McNally should not have been convicted"
+      },
+      "correct_answer": "B",
+      "explanation": "R v McNally [2013] CA (England and Wales) established that deception as to gender identity can vitiate consent to sexual acts. The complainant had consented to digital and oral penetration by someone she believed to be male. The Court of Appeal upheld 6 convictions of assault by penetration, holding that the complainant's consent was conditioned on her belief about McNally's gender \u2014 she had consented to acts with a male, not with a female. The deception as to fundamental identity vitiated the consent. This case is relevant in the Irish context: while consent to the physical acts was given, that consent was obtained by a fundamental deception going to the identity of the actor, not merely a peripheral or collateral matter. Options A and D suggest the conviction was wrong. Option C incorrectly restricts the principle to transgender cases specifically \u2014 the principle applies to any deception as to gender identity."
+    },
+    {
+      "id": "CRL_M06_L02_Q05",
+      "question": "Section 9(2) of the Criminal Law (Rape) Amendment Act 1990 (as substituted by s.48 CLSO Act 2017) lists circumstances in which consent is absent. Which of the following is NOT one of those listed circumstances?",
+      "options": {
+        "A": "The complainant was asleep or unconscious at the time of the act",
+        "B": "The complainant submitted due to the presence of a third party who made no threats",
+        "C": "The complainant consented because of a false belief about the nature or purpose of the act, induced by the accused",
+        "D": "The complainant consented due to threats of force or fear of force against themselves or another person"
+      },
+      "correct_answer": "B",
+      "explanation": "The circumstances listed in s.9(2) (as substituted by s.48 CLSO Act 2017) under which consent is absent include: (a) the use of force or threats of force against the complainant or another person; (b) the complainant being asleep or unconscious; (c) the complainant being incapable of consenting due to substance use; (d) consent induced by false belief as to the nature or purpose of the act; (e) the complainant consenting because of a mistaken belief about the identity of the accused. The mere presence of a third party who made no threats is NOT a listed circumstance \u2014 the law requires that the complainant's submission be induced by the threat or fear of force, not merely the presence of another person. The presence of a third party without threats would need to be analysed as a broader factual question of whether submission was voluntary. Options A, C, and D are all listed circumstances under s.9(2)."
+    },
+    {
+      "id": "CRL_M06_L02_Q06",
+      "question": "In R v Flattery [1877] and R v Williams [1923], the courts addressed consent obtained by fraud as to the nature of the act. What principle do these cases illustrate?",
+      "options": {
+        "A": "Fraud as to the nature of the act can never vitiate consent in sexual offences \u2014 the complainant's physical submission is what matters",
+        "B": "Where the accused misrepresents what act the complainant is consenting to (e.g., pretending a sexual act is a medical procedure), the complainant has not consented to sexual intercourse \u2014 they consented to something different; the fraud vitiates the consent",
+        "C": "Fraud as to the nature of the act only vitiates consent where the complainant is under 18 years of age",
+        "D": "These cases are no longer relevant \u2014 fraud vitiating consent is now exclusively a statutory concept under s.9(2) CLRA 1990"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Flattery [1877] (accused told complainant sexual intercourse was a surgical procedure to cure her fits \u2014 she consented to surgery not to sex) and R v Williams [1923] (accused told a pupil that intercourse was an exercise to improve her singing voice \u2014 she consented to the exercise, not to sex) both establish that where the accused misrepresents the nature of the act itself, the complainant has not truly consented to sexual intercourse. The complainant is consenting to something fundamentally different. This principle of fraud as to the nature of the act is now reflected in s.9(2) of the Criminal Law (Rape) Amendment Act 1990 (as substituted), which provides that consent is absent where it was induced by a false belief as to the nature or purpose of the act. These cases remain relevant as illustrations of the principle. Options A and C misstate the law. Option D overstates the degree to which the statutory provision has displaced the case law principles."
+    },
+    {
+      "id": "CRL_M06_L02_Q07",
+      "question": "In R v Dica [2004] CA (England and Wales) and R v B [2006] CA, the courts considered whether lying about HIV status vitiates consent to sexual intercourse. What was the conclusion?",
+      "options": {
+        "A": "Non-disclosure of HIV status vitiates consent to sexual intercourse and constitutes rape",
+        "B": "Non-disclosure of HIV status does not vitiate consent to sexual intercourse \u2014 both parties consented to the sexual acts; however, reckless transmission of HIV through unprotected sex can constitute an assault causing bodily harm offence",
+        "C": "Non-disclosure of HIV status vitiates consent if the complainant would not have consented had they known \u2014 therefore, it always constitutes rape",
+        "D": "HIV-positive persons who do not disclose their status commit strict liability rape regardless of consent"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Dica [2004] and R v B [2006] (both England and Wales) established that non-disclosure of HIV status does not vitiate consent to sexual intercourse for the purposes of rape. The complainants consented to sexual intercourse \u2014 they were not deceived about the nature of the act (as in Flattery) or the identity of the actor. They were deceived about a collateral matter \u2014 the accused's health status. Accordingly, the relevant offence is not rape but assault causing bodily harm (reckless transmission of HIV). In DPP v RK [2023] IESC 36, the Irish Supreme Court confirmed that reckless HIV transmission can constitute s.4 causing serious harm under the NFOATP 1997, though that conviction was quashed due to inadequate jury directions. The principle is clear: fraud as to venereal health does not constitute rape but can constitute an assault offence. Options A, C, and D each mischaracterise the effect of non-disclosure as vitiating consent to intercourse."
+    },
+    {
+      "id": "CRL_M06_L02_Q08",
+      "question": "A person who is intoxicated to the point of insensibility is approached by an acquaintance who has sexual intercourse with them while they are in this state. The acquaintance argues that the intoxicated person said nothing to indicate non-consent. Which of the following is correct?",
+      "options": {
+        "A": "No offence is committed \u2014 the intoxicated person's silence does not constitute non-consent; the accused cannot be expected to know the other was incapacitated",
+        "B": "The intoxicated person lacked capacity to consent \u2014 a person who is insensible through intoxication cannot give free and voluntary agreement to sexual intercourse; accordingly, the sexual intercourse occurred without consent and the acquaintance may be guilty of rape",
+        "C": "The acquaintance is guilty of sexual assault but not rape \u2014 incapacity through intoxication cannot constitute non-consent to rape",
+        "D": "Intoxication of the complainant raises only a question of mitigation \u2014 it does not affect the question of consent"
+      },
+      "correct_answer": "B",
+      "explanation": "A person who is insensible through intoxication lacks the capacity to give free and voluntary agreement to sexual intercourse. Section 9(2) of the Criminal Law (Rape) Amendment Act 1990 (as substituted by s.48 CLSO Act 2017) includes incapacity through substance use as a circumstance in which consent is absent. DPP v C [2001] IESC had confirmed that a person who is asleep or unconscious cannot consent. The same principle applies to a person who is insensible through intoxication. Consent requires positive agreement \u2014 silence or passivity (including the passivity of unconsciousness or insensibility) is not consent. The acquaintance may be guilty of rape, subject to proof of all elements including the mental element. Option A treats silence as a neutral factor, which it is not \u2014 consent must be free and voluntary. Options C and D misstate the law."
+    },
+    {
+      "id": "CRL_M06_L02_Q09",
+      "question": "DPP v MC [2018] IECA addressed the mental element for rape, specifically the nature of recklessness as to consent. What did the court confirm?",
+      "options": {
+        "A": "Recklessness as to consent requires that the accused deliberately planned to ignore the complainant's wishes",
+        "B": "Recklessness as to consent is established where the accused decided to have sex and 'couldn't care less' whether the other person was consenting or not \u2014 conscious indifference to consent satisfies the subjective recklessness standard",
+        "C": "Recklessness as to consent is an objective standard \u2014 what a reasonable person would have concluded about the complainant's consent",
+        "D": "Recklessness as to consent only applies where the accused took some positive step to suppress the complainant's expression of non-consent"
+      },
+      "correct_answer": "B",
+      "explanation": "DPP v MC [2018] IECA is the leading Irish authority on the mens rea of recklessness in sexual offences. The Court of Appeal confirmed that it is not a misdirection to instruct a jury that 'if someone decides to have sex with another person and couldn't care less about whether the other person is consenting or not... that person is reckless.' This is a subjective standard \u2014 the accused must be aware that there is a risk of non-consent and proceed regardless, with conscious indifference to whether consent exists. This does not require the accused to have formed a deliberate plan to ignore non-consent (Option A), nor is it simply an objective reasonable person standard (Option C). The 'couldn't care less' formulation captures the essence of subjective recklessness as applied in the sexual offences context."
+    },
+    {
+      "id": "CRL_M06_L02_Q010",
+      "question": "A complainant initially declines sexual intercourse but later says 'fine, do what you want' in a resigned tone with no enthusiasm, and lies passively throughout. The accused argues she consented because she did not resist and gave verbal agreement. Which principle is most relevant to analysing this scenario?",
+      "options": {
+        "A": "Verbal agreement, however qualified, constitutes consent \u2014 the accused is not guilty",
+        "B": "R v Olugboja [1982] \u2014 the distinction between consent and submission is critical; the jury must consider all circumstances; resigned submission to an unwanted act is not free and voluntary agreement and may not constitute consent; the fact-finder must consider whether the complainant genuinely agreed or merely submitted",
+        "C": "The complaint is not legally capable of withdrawing consent once verbal agreement was given",
+        "D": "Passive acquiescence following an initial refusal is legally treated as conditional consent"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Olugboja [1982] (accepted in Irish law) is directly applicable: 'every consent involves a submission, but it by no means follows that a mere submission involves consent.' The 'fine, do what you want' statement, delivered in a resigned tone following an initial refusal, may be submission rather than free and voluntary agreement. The jury must examine all the circumstances: the initial refusal, the resigned tone, the passive behaviour during intercourse, and the overall context. Section 48 CLSO Act 2017 defines consent as free and voluntary agreement \u2014 resigned submission to avoid further confrontation is not free and voluntary agreement. The trial jury would need to determine as a matter of fact whether true consent was given. Option A treats any verbal utterance as consent regardless of context. Option C incorrectly suggests that a qualified verbal statement is irrevocable. Option D invents a legal category of conditional consent that does not apply here."
+    }
+  ]
+}

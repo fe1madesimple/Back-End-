@@ -1,0 +1,299 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": "ContractLaw_ElevenLabs_Module06_Lesson01.txt",
+  "module_number": 7,
+  "module_title": "Remedies for Breach of Contract",
+  "lesson_number": 1,
+  "lesson_title": "Damages",
+  "total_questions": 24,
+  "questions": [
+    {
+      "id": 1,
+      "question": "The foundational principle underlying an award of damages for breach of contract is:",
+      "options": {
+        "A": "To punish the party in breach",
+        "B": "To deter future breaches by making breach economically unattractive",
+        "C": "To place the innocent party in the position they would have been in had the contract been performed",
+        "D": "To restore the innocent party to the position they were in before the contract was made"
+      },
+      "correct_answer": "C",
+      "explanation": "Contractual damages are compensatory and forward-looking. The aim is to protect the claimant's 'expectation interest' — placing them in the position they would have been in if the contract had been duly performed. This was confirmed in Robinson v Harman [1848], where Parke B stated that the rule is to put the party who has suffered the breach in the same position, as far as money can do it, as if the contract had been performed."
+    },
+    {
+      "id": 2,
+      "question": "In Hadley v Baxendale [1854], the court established that damages for breach of contract are limited to losses:",
+      "options": {
+        "A": "That were directly caused by the breach, without any remoteness limitation",
+        "B": "That either arise naturally from the breach in the usual course of things, or were in the reasonable contemplation of both parties at the time of contracting",
+        "C": "That were foreseen or foreseeable by the party in breach at any time before judgment",
+        "D": "That can be quantified with mathematical certainty at the time of trial"
+      },
+      "correct_answer": "B",
+      "explanation": "In Hadley v Baxendale [1854], Alderson B formulated the two limbs of the remoteness test: (1) losses arising naturally from the breach in the ordinary course of things (first limb); and (2) losses within the reasonable contemplation of both parties at the time of contracting as a probable consequence of breach (second limb). This remains the foundational authority on remoteness of damage in contract law in both England and Ireland."
+    },
+    {
+      "id": 3,
+      "question": "The 'second limb' of Hadley v Baxendale applies where:",
+      "options": {
+        "A": "The loss was an unusually large consequence of a common type of breach",
+        "B": "Special circumstances were communicated to the breaching party at the time of contracting, such that the unusual loss was within their reasonable contemplation",
+        "C": "The loss arises naturally without reference to any special knowledge",
+        "D": "The breach was committed intentionally rather than negligently"
+      },
+      "correct_answer": "B",
+      "explanation": "The second limb of Hadley v Baxendale covers losses that, because of special circumstances known to both parties at the time of contracting, were within their reasonable contemplation as a probable result of breach. If the defendant has knowledge of the special circumstances giving rise to the unusual loss, those losses fall within the second limb. Crucially, the knowledge must exist at the time of contracting, not merely at the time of breach."
+    },
+    {
+      "id": 4,
+      "question": "In Victoria Laundry (Windsor) Ltd v Newman Industries Ltd [1949], the Court of Appeal refined the Hadley v Baxendale remoteness test by introducing the requirement that damages be:",
+      "options": {
+        "A": "Certain in amount before they can be recovered",
+        "B": "A 'reasonable contemplation' of the parties, applying a foreseeability standard similar to tort",
+        "C": "Recoverable only where the breaching party had specific notice of the loss",
+        "D": "Recoverable in full once any part of the loss was contemplated"
+      },
+      "correct_answer": "B",
+      "explanation": "In Victoria Laundry [1949], the Court of Appeal, through Asquith LJ, reformulated the test by asking what was within the 'reasonable contemplation' of the parties — a concept aligned with foreseeability. The court distinguished between ordinary lost profits (recoverable — within ordinary contemplation) and exceptional profits from a lucrative government contract (not recoverable — not communicated to the defendant). This 'type of loss' approach was later refined in The Heron II [1969]."
+    },
+    {
+      "id": 5,
+      "question": "The Heron II [1969] clarified the standard of probability required for a loss to fall within the remoteness rules. The correct standard is:",
+      "options": {
+        "A": "The loss must have been a mere possibility",
+        "B": "The loss must have been more likely than not (balance of probabilities)",
+        "C": "The loss must have been a 'serious possibility' or 'real danger' in the contemplation of the parties",
+        "D": "The loss must have been virtually certain to occur following the breach"
+      },
+      "correct_answer": "C",
+      "explanation": "In The Heron II [1969], the House of Lords clarified that the standard of probability in contract is higher than the foreseeability test in tort. Lord Reid indicated that the loss must have been a 'serious possibility' or 'real danger' — not a mere possibility. This is a higher threshold than the 'not unlikely' or 'reasonably foreseeable' standard in negligence, reflecting the greater certainty parties are expected to bring to their contractual dealings."
+    },
+    {
+      "id": 6,
+      "question": "The 'expectation interest', 'reliance interest', and 'restitution interest' are three bases for calculating contractual damages. Which of the following correctly pairs each interest with its aim?",
+      "options": {
+        "A": "Expectation = restore pre-contract position; Reliance = protect performance expectations; Restitution = recover gains of the breaching party",
+        "B": "Expectation = protect the benefit of the bargain; Reliance = restore expenditure wasted in reliance on the contract; Restitution = recover benefits conferred on the defendant",
+        "C": "Expectation = punish the breach; Reliance = compensate for lost profits; Restitution = restore the parties to the status quo ante",
+        "D": "Expectation = recover all consequential losses; Reliance = cover only direct losses; Restitution = assess damages on a gain-based basis"
+      },
+      "correct_answer": "B",
+      "explanation": "Fuller and Perdue's classification: (1) Expectation interest protects the claimant's anticipated benefit from performance — putting them in the position they would have been in had the contract been performed. (2) Reliance interest covers expenditure incurred in reliance on the contract that has been wasted — restoring the pre-contract position. (3) Restitution interest recovers the value of benefits conferred on the defendant — preventing unjust enrichment. The primary measure in contract is expectation; reliance is an alternative where expectation losses are difficult to prove."
+    },
+    {
+      "id": 7,
+      "question": "An innocent party who has suffered a breach of contract is under an obligation to:",
+      "options": {
+        "A": "Accept all losses flowing from the breach without any obligation to act",
+        "B": "Take all reasonably practicable steps to minimise their loss",
+        "C": "Apply to court for an injunction before claiming damages",
+        "D": "Give formal written notice of the breach before any duty to mitigate arises"
+      },
+      "correct_answer": "B",
+      "explanation": "The duty to mitigate requires the innocent party to take all reasonable steps to reduce their loss following a breach. They cannot recover for losses that could reasonably have been avoided. The principle is derived from British Westinghouse Electric v Underground Electric Railways [1912] (HL), where Lord Haldane stated that a claimant who fails to take reasonable steps to mitigate cannot recover losses that would not have been suffered had those steps been taken. The duty does not require the innocent party to take undue risks or embark on doubtful litigation."
+    },
+    {
+      "id": 8,
+      "question": "In Anglia Television Ltd v Reed [1972], the Court of Appeal held that a claimant may recover pre-contract expenditure as reliance damages where:",
+      "options": {
+        "A": "The pre-contract expenditure was incurred after the defendant knew of the possibility of breach",
+        "B": "The pre-contract expenditure was within the reasonable contemplation of the parties as likely to be wasted if the contract was broken",
+        "C": "The defendant specifically approved the pre-contract expenditure",
+        "D": "The contract expressly allocated the risk of pre-contract expenditure to the defendant"
+      },
+      "correct_answer": "B",
+      "explanation": "In Anglia Television v Reed [1972], the defendant actor repudiated a contract to appear in a television film. Anglia sought to recover not only post-contract expenditure but also pre-contract costs incurred in setting up production. Lord Denning MR held that pre-contract expenditure may be recovered as wasted reliance expenditure provided it was within the reasonable contemplation of both parties at the time of contracting that such expenditure would be wasted if the contract was broken."
+    },
+    {
+      "id": 9,
+      "question": "Damages for mental distress arising from a breach of contract are generally:",
+      "options": {
+        "A": "Freely recoverable in all contracts",
+        "B": "Not recoverable, except in limited categories of case where the object of the contract was to provide pleasure, relaxation, or peace of mind",
+        "C": "Recoverable only where the breach was committed fraudulently",
+        "D": "Recoverable only under statute in Ireland"
+      },
+      "correct_answer": "B",
+      "explanation": "Following Addis v Gramophone Co [1909] and refined in Watts v Morrow [1991] and Farley v Skinner [2001], damages for mental distress are generally not available in commercial contract law. However, the House of Lords in Farley v Skinner confirmed that where a major or important object of the contract is to provide pleasure, relaxation, or peace of mind, damages for disappointment and distress may be recovered. Holiday contracts (Jarvis v Swan Tours [1973]) are a well-established example."
+    },
+    {
+      "id": 10,
+      "question": "The rule in Peevyhouse v Garland Coal Mining Co (1963) and its English counterpart Ruxley Electronics v Forsyth [1996] concerns:",
+      "options": {
+        "A": "The measure of damages where a party mitigates loss by entering into an alternative contract",
+        "B": "The choice between 'cost of cure' and 'difference in value' as the measure of damages where cure would be disproportionately expensive",
+        "C": "The right to claim expectation damages where the contract produces no measurable financial benefit",
+        "D": "The recovery of punitive damages for deliberate breach of contract"
+      },
+      "correct_answer": "B",
+      "explanation": "In Ruxley Electronics v Forsyth [1996], the House of Lords considered whether to award the full cost of rebuilding a swimming pool to the contractual depth (around £21,000) or the difference in value (nil). The HL held that where the cost of cure is disproportionate to any benefit gained, the court may award a lower sum reflecting loss of amenity rather than cost of cure. The case confirms courts' discretion to select the more appropriate measure of damages where the cost of cure would be out of all proportion to the benefit."
+    },
+    {
+      "id": 11,
+      "question": "A liquidated damages clause in a contract:",
+      "options": {
+        "A": "Is always void as a penalty clause",
+        "B": "Is enforceable if it represents a genuine pre-estimate of the loss likely to be suffered upon breach",
+        "C": "Can only be invoked by the party in breach, not by the innocent party",
+        "D": "Must be approved by the courts before it becomes binding"
+      },
+      "correct_answer": "B",
+      "explanation": "A liquidated damages clause is enforceable if, at the time of contracting, it represented a genuine pre-estimate of the likely loss arising from breach. The distinction between a legitimate liquidated damages clause and an unenforceable penalty was reformulated in Cavendish Square Holding v Makdessi [2015] (UK SC) — the new test asks whether the clause imposes a detriment out of all proportion to any legitimate interest the innocent party has in enforcement, rather than focusing narrowly on whether it is a genuine pre-estimate of loss."
+    },
+    {
+      "id": 12,
+      "question": "Following Cavendish Square Holding BV v Makdessi [2015], which of the following is the correct test for whether a clause is an unenforceable penalty?",
+      "options": {
+        "A": "Whether the sum payable on breach is greater than a genuine pre-estimate of loss",
+        "B": "Whether the clause is extravagant and unconscionable in comparison with the innocent party's greatest loss",
+        "C": "Whether the clause imposes a detriment on the breaching party out of all proportion to any legitimate business interest of the innocent party in enforcing it",
+        "D": "Whether the clause was negotiated by parties of unequal bargaining power"
+      },
+      "correct_answer": "C",
+      "explanation": "In Cavendish Square v Makdessi [2015] (UKSC), Lords Neuberger and Sumption reformulated the penalty doctrine. The test is no longer simply whether the clause is a genuine pre-estimate of loss but rather whether it is a secondary obligation which imposes a detriment on the contract-breaker 'out of all proportion to any legitimate interest of the innocent party in the enforcement of the primary obligation'. This broader test allows commercially justified clauses to stand even where they exceed a simple pre-estimate of loss."
+    },
+    {
+      "id": 13,
+      "question": "In Wrotham Park Estate Co v Parkside Homes [1974], the court awarded damages calculated by reference to:",
+      "options": {
+        "A": "The claimant's lost profits arising from the breach",
+        "B": "The full cost of putting the defendant's wrongful act right",
+        "C": "A proportion of the profit made by the defendant through their breach",
+        "D": "The claimant's expenditure wasted as a result of the breach"
+      },
+      "correct_answer": "C",
+      "explanation": "In Wrotham Park Estate v Parkside Homes [1974], the defendant built houses in breach of a restrictive covenant. Rather than ordering demolition or awarding nominal damages, Brightman J awarded a sum representing a 'reasonable share' of the profits made by the defendant — assessed as what the parties would notionally have negotiated as a price for releasing the covenant. This gain-based or 'negotiating damages' award was later developed in Attorney General v Blake [2001] and confirmed in One Step Support Ltd v Morris-Garner [2018]."
+    },
+    {
+      "id": 14,
+      "question": "In Attorney General v Blake [2001], the House of Lords held that gain-based damages (stripping the defendant's profits) are available in contract where:",
+      "options": {
+        "A": "The defendant's breach was intentional and in bad faith",
+        "B": "Normal compensatory damages are an adequate remedy",
+        "C": "The claimant has a legitimate interest in preventing the defendant's profit-making activity that makes normal compensatory damages inadequate",
+        "D": "The contract was for the personal services of a public figure"
+      },
+      "correct_answer": "C",
+      "explanation": "In AG v Blake [2001], the HL held that gain-based damages — an account of profits — may be awarded in exceptional cases where the claimant has a 'legitimate interest' in preventing the defendant's profit and where normal compensatory damages are inadequate. The case involved a former spy who published a memoir in breach of his obligations to the Crown. Lord Nicholls confirmed that an account of profits in contract would be 'exceptional' and the legitimate interest test is demanding, confining such awards to unusual circumstances."
+    },
+    {
+      "id": 15,
+      "question": "The 'cost of cure' measure of damages is most appropriate where:",
+      "options": {
+        "A": "The breach has caused no financial loss to the claimant",
+        "B": "The claimant has a genuine intention to use the money to cure the defect and the cost of cure is not disproportionate to the benefit obtained",
+        "C": "The contract is a consumer contract regulated by statute",
+        "D": "The contract is for the sale of real property rather than personal property"
+      },
+      "correct_answer": "B",
+      "explanation": "Cost of cure damages are awarded where the claimant genuinely intends to use the award to remedy the defect and the cost is not disproportionate to the benefit obtained. In Ruxley Electronics v Forsyth [1996], the House of Lords confirmed that where the claimant has no genuine intention to cure and/or the cost would be wholly disproportionate to any benefit, the court will award the lesser 'difference in value' measure or a sum reflecting loss of amenity."
+    },
+    {
+      "id": 16,
+      "question": "Where a claimant elects to claim reliance damages rather than expectation damages, they:",
+      "options": {
+        "A": "Cannot recover any expenditure incurred before the contract was made",
+        "B": "Recover the expenditure wasted in reliance on the contract, but the defendant may show that the claimant would not have recouped that expenditure even if the contract had been performed",
+        "C": "Are entitled to both reliance and expectation damages cumulatively",
+        "D": "Lose the right to seek any equitable remedy in addition to the reliance award"
+      },
+      "correct_answer": "B",
+      "explanation": "A claimant may elect to claim reliance damages — recovering wasted expenditure — instead of expectation losses, typically where expectation losses are difficult to quantify. However, the defendant may rebut a reliance claim by showing that the contract was a bad bargain — i.e., even if fully performed, the claimant would not have recouped the expenditure. This was confirmed in Cullinane v British Rema Manufacturing Co [1954]. A claimant cannot cumulate expectation and reliance awards for the same loss."
+    },
+    {
+      "id": 17,
+      "question": "The concept of 'loss of a chance' in contract damages was addressed in Chaplin v Hicks [1911]. The court held that:",
+      "options": {
+        "A": "Damages for loss of a chance are never recoverable in contract as the loss is too speculative",
+        "B": "The loss of a chance to obtain a benefit can be compensated in damages, even where the outcome was uncertain",
+        "C": "Loss of a chance damages are only recoverable where the probability of success exceeded 50%",
+        "D": "Loss of a chance claims are governed exclusively by tort principles and cannot arise in contract"
+      },
+      "correct_answer": "B",
+      "explanation": "In Chaplin v Hicks [1911], the defendant actor's agent wrongfully prevented the plaintiff from attending a competition for roles. The Court of Appeal held that the loss of the chance to compete was itself a compensable loss, valued by reference to the probability of success. This established that in contract, as in tort, a claimant may recover for the loss of a chance to obtain a benefit, provided the chance was a real and substantial one, not merely speculative."
+    },
+    {
+      "id": 18,
+      "question": "Under Irish law, are punitive (exemplary) damages available for breach of contract?",
+      "options": {
+        "A": "Yes, punitive damages are routinely awarded for serious or deliberate breaches of contract",
+        "B": "No — damages for breach of contract are purely compensatory; punitive damages are not available",
+        "C": "Yes, but only in contracts involving consumer protection legislation",
+        "D": "Yes, under the Civil Liability Act 1961"
+      },
+      "correct_answer": "B",
+      "explanation": "Contractual damages are strictly compensatory in both English and Irish law. The purpose is not to punish the party in breach but to compensate the innocent party for their loss. Punitive or exemplary damages are not available for breach of contract, as confirmed in Addis v Gramophone Co [1909]. This remains the position in Ireland — any punitive element must be pursued through tort or other equitable remedies, not through the contractual damages framework."
+    },
+    {
+      "id": 19,
+      "question": "In Dunlop Pneumatic Tyre Co v New Garage and Motor Co [1915], Lord Dunedin set out four principles for distinguishing a penalty from liquidated damages. Which of the following is one of those principles?",
+      "options": {
+        "A": "A clause is conclusively a penalty if it provides for a sum greater than the contract price",
+        "B": "A clause is presumed to be a penalty where a single lump sum is payable on the occurrence of several different events of varying gravity",
+        "C": "A clause is valid as liquidated damages where the sum is less than the anticipated loss",
+        "D": "A clause is a penalty if it was negotiated without legal advice"
+      },
+      "correct_answer": "B",
+      "explanation": "In Dunlop v New Garage [1915], Lord Dunedin identified (among others) the principle that where a single lump sum is payable on the occurrence of one or more events of varying gravity, it is presumed to be a penalty — as the same sum cannot represent a genuine pre-estimate of loss for events of such different severity. This Dunlop test, while refined by Cavendish Square [2015], remains instructive in applying the penalty doctrine and is still cited in Irish and English authorities."
+    },
+    {
+      "id": 20,
+      "question": "In the Irish context, which statute provides for a regime of statutory interest on debt and commercial contracts to address delayed payment?",
+      "options": {
+        "A": "The Civil Liability Act 1961",
+        "B": "The Late Payment in Commercial Transactions Regulations 2002 (SI 388/2002), implementing EU Directive 2000/35/EC",
+        "C": "The Sale of Goods Act 1893",
+        "D": "The Consumer Credit Act 1995"
+      },
+      "correct_answer": "B",
+      "explanation": "The Late Payment in Commercial Transactions Regulations 2002 (SI 388/2002), implementing EU Directive 2000/35/EC (and subsequently Directive 2011/7/EU), provide for statutory interest on late payments in commercial transactions. This allows creditors to recover interest without having to establish special damages or remoteness. The Regulations apply to business-to-business transactions and to transactions involving public authorities as debtors."
+    },
+    {
+      "id": 21,
+      "question": "Where a claimant seeks damages for non-pecuniary loss arising from a breach of a holiday contract, which case is the leading English authority?",
+      "options": {
+        "A": "Jarvis v Swan Tours Ltd [1973]",
+        "B": "Watts v Morrow [1991]",
+        "C": "Farley v Skinner [2001]",
+        "D": "Ruxley Electronics v Forsyth [1996]"
+      },
+      "correct_answer": "A",
+      "explanation": "Jarvis v Swan Tours Ltd [1973] is the leading case on damages for distress and disappointment in holiday contracts. Lord Denning MR held that where a party enters a contract for a holiday and the holiday turns out to be a disaster falling far short of what was promised, the claimant may recover not only for pecuniary loss but also for mental distress and disappointment. The case established that where the object of a contract is to provide pleasure or enjoyment, damages for non-pecuniary loss are recoverable."
+    },
+    {
+      "id": 22,
+      "question": "The principle from The Achilleas (Transfield Shipping Inc v Mercator Shipping Inc) [2008] introduced what refinement to the remoteness rules?",
+      "options": {
+        "A": "That remoteness should be assessed subjectively by reference to what the breaching party actually knew",
+        "B": "That a party should only be liable for loss of a type for which they have assumed responsibility under the contract",
+        "C": "That the Hadley v Baxendale test should be replaced by a tort-based foreseeability standard",
+        "D": "That remoteness rules do not apply where the contract contains an exclusion clause"
+      },
+      "correct_answer": "B",
+      "explanation": "In The Achilleas [2008], the House of Lords, while ostensibly applying Hadley v Baxendale, introduced a nuanced 'assumption of responsibility' approach. Lord Hoffmann held that the extent of a party's liability should be determined by asking what losses the parties must reasonably be taken to have assumed responsibility for when contracting. In that case, the charterers were not liable for the full extent of the shipowners' lost charter because, given market practices, they could not be taken to have assumed responsibility for losses of that magnitude and type."
+    },
+    {
+      "id": 23,
+      "question": "A claimant who fails to take reasonable steps to mitigate their loss following a breach of contract will:",
+      "options": {
+        "A": "Forfeit their entire claim for damages",
+        "B": "Have their damages reduced by the amount by which they could have reduced their loss had they taken reasonable steps",
+        "C": "Be liable in contributory negligence for their share of the loss",
+        "D": "Only recover nominal damages unless they can prove their failure to mitigate was reasonable"
+      },
+      "correct_answer": "B",
+      "explanation": "Failure to mitigate does not extinguish the claim — it reduces it. The innocent party will recover only such damages as they would have suffered had they taken the reasonable steps to mitigate. The burden of proving a failure to mitigate lies on the defendant — it is for the party in breach to show that the claimant failed to take reasonable steps, not for the claimant to prove every mitigation step was taken. This is well-established in both English and Irish law."
+    },
+    {
+      "id": 24,
+      "question": "Where a contract is terminated for breach and the innocent party claims damages, the date of assessment for the claimant's loss is generally:",
+      "options": {
+        "A": "The date the contract was entered into",
+        "B": "The date of breach or the date of termination of the contract",
+        "C": "The date of judgment",
+        "D": "The earliest date on which the claimant could reasonably have mitigated their loss"
+      },
+      "correct_answer": "B",
+      "explanation": "The general rule is that damages are assessed at the date of breach (or, for anticipatory breach, the date at which the innocent party accepts the repudiation). However, this is a prima facie rule and courts retain discretion to assess damages at a later date where justice requires — particularly where the claimant could not reasonably have mitigated immediately, or where market values have fluctuated. The goal is always to compensate the claimant for their actual loss as accurately as possible."
+    }
+  ]
+}

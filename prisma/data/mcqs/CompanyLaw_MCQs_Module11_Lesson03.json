@@ -1,0 +1,155 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module11_Lesson03.txt",
+  "module_number": 11,
+  "module_title": "Corporate Insolvency",
+  "lesson_number": 3,
+  "lesson_title": "Liquidation",
+  "total_questions": 12,
+  "questions": [
+    {
+      "id": "CL_M11_L03_Q01",
+      "question": "Dunmore Ltd has been unable to pay its debts for six months. Its directors, wishing to avoid a compulsory winding up, resolve to place the company into creditors' voluntary liquidation. Under the Companies Act 2014, which section governs creditors' voluntary liquidation and what is the key procedural requirement distinguishing it from a members' voluntary liquidation?",
+      "options": {
+        "A": "Part 11, s.580 — the key distinction is that in a CVL the directors must execute a statutory declaration of solvency before the resolution is passed",
+        "B": "Part 11, s.587 — the key distinction is that in a CVL no declaration of solvency is made and creditors play a central role, including their ability to nominate a liquidator who takes precedence over the members' nominee",
+        "C": "Part 11, s.569 — the distinction is that a CVL requires a High Court petition whereas an MVL requires only a special resolution",
+        "D": "Part 11, s.580 — the distinction is that a CVL requires a unanimous resolution while an MVL requires only a 75% special resolution"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the CA 2014, a Creditors' Voluntary Liquidation (CVL) is governed by Part 11 provisions including s.587. The defining characteristic is the absence of a solvency declaration — directors cannot honestly declare solvency. In a CVL: creditors hold a meeting concurrent with (or immediately after) the members' meeting; creditors may nominate their own choice of liquidator, and if different from the members' nominee, the creditors' nominee prevails (s.587(3)). By contrast, a Members' Voluntary Liquidation (MVL) under s.580 requires directors to make a statutory declaration of solvency (that the company will pay all debts within 12 months). s.569 governs compulsory winding up by court order."
+    },
+    {
+      "id": "CL_M11_L03_Q02",
+      "question": "A creditor of Ashfield Ltd has obtained a judgment for €25,000 and served a formal demand for payment. The company has failed to pay within the statutory period. Under s.570 of the Companies Act 2014, which of the following most accurately states the grounds on which a company is deemed unable to pay its debts?",
+      "options": {
+        "A": "A company is deemed unable to pay its debts only if a court-appointed examiner certifies insolvency following an independent expert's report",
+        "B": "A company is deemed unable to pay its debts if it fails to satisfy a written demand for a sum exceeding €10,000 within 21 days, or if execution is returned unsatisfied, or if it is proved to the court's satisfaction that the company cannot pay its debts (balance sheet or cash flow insolvency)",
+        "C": "A company is deemed unable to pay its debts only on balance-sheet insolvency (liabilities exceeding assets), not cash-flow insolvency alone",
+        "D": "A company is deemed unable to pay its debts upon failure to pay any creditor any amount within 30 days of the creditor's written demand, regardless of the sum"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 570 CA 2014 sets out the Irish law tests for inability to pay debts: (1) failure to satisfy a written demand for a sum exceeding €10,000 (the 'statutory demand') within 21 days; (2) unsatisfied execution (sheriff returns nulla bona); or (3) proof to the court's satisfaction that the company cannot pay its debts as they fall due (cash-flow insolvency), taking future contingent liabilities into account. This is a tripartite test — either limb suffices. The threshold is €10,000, not unlimited (option D wrong), and cash-flow insolvency is independently sufficient (option C wrong). No examiner certification is needed (option A wrong)."
+    },
+    {
+      "id": "CL_M11_L03_Q03",
+      "question": "In Re Burren Springs Ltd [2013] IEHC, Finlay Geoghegan J considered the basis on which the court should make a winding-up order where a company is insolvent and there is a clear case for winding up. Which principle did she apply?",
+      "options": {
+        "A": "The court has an absolute discretion to refuse a winding-up order even on proved insolvency if it considers examinership a better alternative",
+        "B": "A winding-up order is granted ex debito justitiae (as of right) once a creditor establishes inability to pay debts — the court has no general discretion to refuse where insolvency is established and the petitioning creditor is a bona fide creditor",
+        "C": "The court applies a balancing test weighing the interests of all stakeholders, including employees and the wider community, before granting a winding-up order",
+        "D": "A winding-up order is available only as a last resort; the court must first explore restructuring alternatives including examinership before ordering liquidation"
+      },
+      "correct_answer": "B",
+      "explanation": "Re Burren Springs [2013] confirmed the ex debito justitiae principle: where a creditor establishes that a company is unable to pay its debts and the creditor has a legitimate and subsisting debt, the court is entitled (and generally obliged) to make a winding-up order as of right — it is not purely at the court's general discretion. While the court retains some residual discretion (e.g., to adjourn where a rescue is genuinely possible, or to refuse if the petition is an abuse), the ex debito justitiae principle means that a proved insolvent company cannot simply invoke a discretion to avoid winding up. The court does not conduct a stakeholder balancing exercise (option C) or require examinership to be exhausted first (option D)."
+    },
+    {
+      "id": "CL_M11_L03_Q04",
+      "question": "Rockport Ltd is being wound up compulsorily. Its assets include a long-term lease over a Dublin warehouse that the liquidator considers onerous (below-market rent with significant ongoing maintenance obligations). Under s.561 of the Companies Act 2014, what power does the liquidator have, and what are the conditions for its exercise?",
+      "options": {
+        "A": "The liquidator may disclaim the lease with the consent of the High Court, provided the lease was entered into within 12 months of commencement of winding up",
+        "B": "The liquidator may disclaim the lease as onerous property with leave of the court, within a reasonable time of becoming aware of the property; disclaimer releases the company from liability but does not affect third-party rights",
+        "C": "The liquidator may assign the lease to any third party at below-market value without landlord consent, as the company's insolvency displaces the landlord's right of consent",
+        "D": "The liquidator may disclaim the lease only if the landlord agrees to waive arrears of rent accrued prior to the commencement of winding up"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 561 CA 2014 empowers a liquidator in a compulsory winding up to disclaim onerous property (including unprofitable contracts, unsaleable land, and property that may give rise to a liability to pay money or perform an onerous act) with leave of the court. The disclaimer: (i) releases the company and its property from liability; (ii) must be exercised within a reasonable time of the liquidator becoming aware of the property; and (iii) does not affect the rights of third parties inter se (e.g., guarantors remain liable). Leave of court is required — it is not an automatic power. The landlord's consent is not required (option D wrong)."
+    },
+    {
+      "id": "CL_M11_L03_Q05",
+      "question": "A members' voluntary liquidation of Broadstone Ltd is underway. The liquidator subsequently discovers that the company's assets are insufficient to pay all creditors in full — the company was insolvent at the time the solvency declaration was made. What must the liquidator do?",
+      "options": {
+        "A": "Continue with the MVL but apply to the High Court for additional time to realise assets before determining whether a conversion is necessary",
+        "B": "Immediately convene a creditors' meeting and convert the liquidation to a creditors' voluntary liquidation under s.581 CA 2014, at which point creditors gain the right to nominate a new liquidator",
+        "C": "Apply to have the MVL converted to an examinership, since the company may still be rescued if the liquidator identifies a viable scheme of arrangement",
+        "D": "Resign as liquidator and notify the CEA, who will then appoint an official liquidator to conduct the winding up on behalf of the State"
+      },
+      "correct_answer": "B",
+      "explanation": "Where the liquidator in an MVL forms the opinion that the company will not be able to pay its debts in full within the period stated in the solvency declaration (12 months), s.581 CA 2014 requires the liquidator to: (i) immediately summon a meeting of creditors; (ii) lay a statement of assets and liabilities before that meeting; and (iii) the liquidation converts to a CVL. At the creditors' meeting, creditors may appoint their own nominated liquidator (who, if different from the existing liquidator, takes precedence under s.587(3)). The directors who made a false solvency declaration may face criminal liability under s.207 CA 2014."
+    },
+    {
+      "id": "CL_M11_L03_Q06",
+      "question": "Under s.569 of the Companies Act 2014, the High Court may order the winding up of a company on a number of grounds. Which of the following is NOT a statutory ground for compulsory winding up under s.569?",
+      "options": {
+        "A": "The company has passed a special resolution that it be wound up by the court",
+        "B": "The company is unable to pay its debts as defined by s.570",
+        "C": "The court is of the opinion that it is just and equitable to wind up the company",
+        "D": "The company has failed to hold its annual general meeting within the period prescribed by s.176"
+      },
+      "correct_answer": "D",
+      "explanation": "Section 569 CA 2014 lists the grounds for compulsory winding up, which include: (a) special resolution to wind up by court; (b) failure to commence business within a year; (c) suspension of business for a year; (d) inability to pay debts (s.570); (e) just and equitable ground (s.569(1)(e)); and (f) oppression under s.212 where winding up is the appropriate remedy. Failure to hold an AGM is not a ground for compulsory winding up — the remedy for AGM default is a court order to convene a meeting (s.179 CA 2014) or a complaint to the CEA. Note also that LTDs are not required to hold AGMs under s.175, making option D particularly inappropriate."
+    },
+    {
+      "id": "CL_M11_L03_Q07",
+      "question": "In a compulsory winding up of Glendale Ltd, the liquidator seeks to set aside a transaction where the company, six months before commencement of winding up, transferred its headquarters building to a connected company for no consideration. Under which provision of the Companies Act 2014 is such a transaction most directly challenged, and what must the liquidator prove?",
+      "options": {
+        "A": "s.604 (unfair preference) — prove that the company intended to prefer the connected company over other creditors at the time of the transfer",
+        "B": "s.601 (fraudulent disposition) — prove that the transfer was made with intent to defraud creditors and occurred within the look-back period for connected parties",
+        "C": "s.599 (related party transactions) — prove that proper board procedures for related party transactions were not followed",
+        "D": "s.212 (oppression) — prove that the transfer constituted conduct oppressive to minority shareholders who were unaware of the transaction"
+      },
+      "correct_answer": "B",
+      "explanation": "A gratuitous transfer to a connected party at an undervalue for no consideration is most directly addressed by s.601 CA 2014 (fraudulent disposition — formerly s.139 Companies Act 1990). The liquidator must prove: (i) a disposition of property; (ii) with intent to defraud creditors (actual fraudulent intent, not just an objective test); (iii) made at any time before the commencement of winding up. For connected parties, s.604 (unfair preference) may also be relevant, but the distinctive feature of a zero-consideration transfer is fraudulent intent under s.601. s.604 addresses preferences (paying one creditor over others), not gratuitous disposals. The court may set aside the transaction and order restoration of the property."
+    },
+    {
+      "id": "CL_M11_L03_Q08",
+      "question": "Once a compulsory winding-up order is made by the High Court, what is the effect on legal proceedings against the company and what court approval is required to proceed?",
+      "options": {
+        "A": "All legal proceedings against the company are automatically stayed and cannot be resumed without leave of the court that made the winding-up order",
+        "B": "Legal proceedings are automatically stayed only if the liquidator files a notice of stay with the High Court within 7 days of the winding-up order",
+        "C": "All legal proceedings are stayed for 6 months only, after which they may proceed without court leave if the company's assets have not been distributed",
+        "D": "Only secured creditors' enforcement proceedings are automatically stayed; unsecured creditors may continue legal proceedings to establish the quantum of their claims"
+      },
+      "correct_answer": "A",
+      "explanation": "Under s.573 CA 2014, once a winding-up order is made by the court, no action or proceeding against the company can be commenced or continued except with leave of the court and subject to such terms as the court imposes. This automatic stay applies to all actions — secured and unsecured. The purpose is to prevent a race among creditors to obtain priority through litigation, and to centralise all claims through the liquidation process. The stay operates automatically upon the making of the order (option B wrong — no additional filing required). There is no 6-month limitation (option C wrong)."
+    },
+    {
+      "id": "CL_M11_L03_Q09",
+      "question": "In a liquidation, which of the following debts ranks as preferential under s.621 of the Companies Act 2014 and is payable ahead of floating charge holders?",
+      "options": {
+        "A": "Amounts owed to the company's solicitors for legal services rendered in the 12 months before winding up",
+        "B": "Employees' wages and salary (up to a prescribed limit per employee) for services rendered in the four months before the commencement of winding up",
+        "C": "All amounts owed to Revenue Commissioners for any tax liability arising in the three years before winding up",
+        "D": "Loan repayments owed to the company's principal bank under a facility agreement signed two years before winding up"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 621 CA 2014 (reflecting the long-standing preferential creditor regime) provides that employees' wages and salaries up to a prescribed statutory maximum per employee, for services rendered in the four months immediately before the commencement of winding up, rank as preferential debts payable ahead of floating charge holders (but behind fixed charge holders and the costs of the liquidation). Revenue claims are preferential only for specific limited categories (PAYE/PRSI within time limits, not all tax debts). Solicitors' fees and bank loan repayments are ordinary unsecured debts ranking pari passu with general creditors (subject to any security held by the bank)."
+    },
+    {
+      "id": "CL_M11_L03_Q10",
+      "question": "Under s.631 of the Companies Act 2014, a liquidator has a general obligation to hold meetings of contributories and creditors. However, in a compulsory winding up, which body has primary supervisory responsibility for the liquidator's conduct?",
+      "options": {
+        "A": "The Corporate Enforcement Authority, which has statutory power to investigate and remove liquidators in all winding-up proceedings",
+        "B": "The High Court, which retains ongoing supervisory jurisdiction over the conduct of compulsory winding-up proceedings, with the liquidator as an officer of the court",
+        "C": "The committee of inspection (if appointed), which has exclusive supervisory power over the liquidator and whose decisions bind the court",
+        "D": "The Revenue Commissioners, as the State's largest preferential creditor in most insolvencies, who exercise de facto supervisory control"
+      },
+      "correct_answer": "B",
+      "explanation": "In a compulsory (court-ordered) winding up, the High Court retains ongoing supervisory jurisdiction as the winding up proceeds under its direction. The liquidator is an officer of the court and must act consistently with court orders and report to the court. Any creditor, contributory, or interested party may apply to the court to examine the liquidator's conduct (s.631). A committee of inspection may be appointed under s.632, but it is advisory/collaborative rather than having exclusive supervisory power binding the court (option C wrong). The CEA has powers to investigate but is not the primary supervisory body in an individual winding up (option A overstates its role)."
+    },
+    {
+      "id": "CL_M11_L03_Q11",
+      "question": "Tiverton Ltd is being wound up. A creditor claims it is owed €80,000 for goods supplied. The liquidator disputes the claim on the basis that the goods were defective and the company had a valid counterclaim. Under Irish liquidation law, how are disputed claims determined?",
+      "options": {
+        "A": "Disputed claims must be litigated in the ordinary courts; the liquidator cannot determine any disputed claim and must await a court judgment before admitting the claim",
+        "B": "The liquidator has power to admit or reject proofs of debt (adjudicate on claims), subject to the creditor's right to appeal the liquidator's decision to the court",
+        "C": "Disputed claims are automatically treated as contingent liabilities and admitted at a nominal value of €1 pending final resolution",
+        "D": "Once a claim is disputed by the liquidator, the creditor loses all right to participate in the liquidation and must pursue a separate action against the company's directors personally"
+      },
+      "correct_answer": "B",
+      "explanation": "In Irish liquidation practice, the liquidator adjudicates on proofs of debt — creditors submit proofs and the liquidator has power to admit claims in full, admit in part, or reject them. A creditor aggrieved by the liquidator's decision on a proof of debt may appeal to the High Court (s.631 CA 2014 and the Companies (Winding Up) Rules). This process avoids the necessity of separate litigation for every disputed claim. The liquidator must act fairly and judicially in adjudicating proofs. Claims with genuine counterclaims may be admitted only for the net balance — the liquidator applies set-off principles where appropriate."
+    },
+    {
+      "id": "CL_M11_L03_Q12",
+      "question": "Under s.622 of the Companies Act 2014, a liquidator may apply to the High Court to examine any person who is or has been an officer of the company, or any person believed to have been involved in the promotion, formation or management of the company, or to have in their possession any property belonging to the company. This power is known as the public examination. In what circumstances can the court order such an examination?",
+      "options": {
+        "A": "Only where the liquidator has already commenced criminal proceedings against the officer; the examination is ancillary to criminal prosecution",
+        "B": "In a compulsory winding up, the court may order the private examination of any person on the application of the Official Liquidator, a creditor, or a contributory, where there are reasonable grounds to believe that person can provide information relevant to the winding up",
+        "C": "The public examination under s.622 is available only in voluntary liquidations; compulsory liquidations use a different procedure under the Companies Acts",
+        "D": "The examination under s.622 is exclusively reserved for directors who have been restricted or disqualified; it cannot be used against third-party professional advisers"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 622 CA 2014 (reflecting the former s.245 Companies Act 1963) empowers the court in a compulsory winding up to order the private examination (not 'public' in the open-court sense) of any officer, promoter, or person involved in company management, or any person believed to have possession of company property or knowledge of its affairs, on the application of the Official Liquidator, any creditor, or any contributory. The person examined may be required to produce books and documents. The examination can extend to professional advisers, bankers, and others — it is not limited to officers or disqualified persons. No criminal proceedings need to have been commenced first."
+    }
+  ]
+}

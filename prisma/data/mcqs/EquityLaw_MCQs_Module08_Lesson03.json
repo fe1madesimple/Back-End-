@@ -1,0 +1,263 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "EquityLaw_ElevenLabs_Module08_Lesson03.txt",
+  "module_number": 8,
+  "module_title": "EQUITABLE DOCTRINES",
+  "lesson_number": 3,
+  "lesson_title": "THE DOCTRINE OF SATISFACTION",
+  "total_questions": 21,
+  "questions": [
+    {
+      "id": "EQL_M08_L03_Q01",
+      "question": "What equitable maxim underpins the doctrine of satisfaction?",
+      "options": {
+        "A": "Equity regards as done that which ought to be done",
+        "B": "Equity imputes an intention to fulfil an obligation",
+        "C": "He who seeks equity must do equity",
+        "D": "Equity follows the law"
+      },
+      "correct_answer": "B",
+      "explanation": "The doctrine of satisfaction is based on the equitable maxim 'equity imputes an intention to fulfil an obligation.' Where a person is under a legal obligation and subsequently does an act that could be referable to that obligation, equity may presume that the act was intended to satisfy it. This maxim reflects equity's tendency to presume that a person intends to fulfil their obligations, and to prevent double benefits where one act could be construed as satisfying another."
+    },
+    {
+      "id": "EQL_M08_L03_Q02",
+      "question": "How many main types of satisfaction are there, and what are they?",
+      "options": {
+        "A": "Two — satisfaction of debts by legacies, and satisfaction of legacies by portions",
+        "B": "Three — satisfaction of debts by legacies, satisfaction of legacies by legacies (ademption), and satisfaction of portions by legacies/portions (rule against double portions)",
+        "C": "Four — satisfaction of debts, ademption by portions, ademption by legacies, and satisfaction of covenants",
+        "D": "One — the doctrine of satisfaction applies only to debts satisfied by legacies"
+      },
+      "correct_answer": "B",
+      "explanation": "There are three main types of satisfaction: (1) satisfaction of debts by legacies — where a testator leaves a legacy to a creditor to whom they owe a debt; (2) satisfaction of legacies by legacies, also known as the doctrine of ademption of legacies by legacies — where a testator leaves two legacies to the same person; and (3) satisfaction of portions by legacies and portions by portions — the rule against double portions, which prevents a child from receiving a double benefit from a parent or person in loco parentis."
+    },
+    {
+      "id": "EQL_M08_L03_Q03",
+      "question": "The rule in Talbot v Duke of Shrewsbury [1714] governs satisfaction of debts by legacies. What does this rule provide?",
+      "options": {
+        "A": "A legacy to a creditor is always presumed to be in addition to the debt",
+        "B": "A legacy to a creditor is presumed to be in satisfaction of the debt if the legacy is equal to or greater than the debt, is of the same nature, and is payable at the same time",
+        "C": "A legacy to a creditor only satisfies the debt if the testator expressly states in the will that the legacy is intended to replace the debt",
+        "D": "A creditor who receives a legacy forfeits their right to claim the debt regardless of the amount of the legacy"
+      },
+      "correct_answer": "B",
+      "explanation": "The rule in Talbot v Duke of Shrewsbury [1714] provides that where a testator leaves a legacy to a person to whom they also owe a debt, the legacy is presumed to be in satisfaction of that debt if three conditions are met: (1) the legacy is equal to or greater than the debt; (2) it is of the same nature as the debt; and (3) it is payable at the same time as the debt. If all three conditions are satisfied, the creditor cannot claim both the legacy and the debt — the legacy is treated as the testator's intended method of discharging the obligation."
+    },
+    {
+      "id": "EQL_M08_L03_Q04",
+      "question": "A testator owes a creditor €10,000. In their will, they leave the creditor a legacy of €10,000. What is the presumption under the doctrine of satisfaction?",
+      "options": {
+        "A": "The creditor is entitled to both the legacy and the debt — €20,000 in total",
+        "B": "The legacy is presumed to satisfy the debt — the creditor receives only €10,000 under the legacy and cannot separately claim the debt",
+        "C": "The creditor may choose whether to claim the legacy or the debt, but not both",
+        "D": "The legacy revokes the debt only if expressly stated in the will"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the rule in Talbot v Duke of Shrewsbury [1714], where the legacy equals the debt, the legacy is presumed in satisfaction of the debt. The conditions are satisfied: the legacy (€10,000) equals the debt (€10,000), is of the same nature (a monetary payment), and is presumably payable at the same time. The creditor therefore receives only €10,000 under the legacy and cannot additionally claim the €10,000 debt from the estate. To claim both would allow a double recovery, which the doctrine of satisfaction is designed to prevent."
+    },
+    {
+      "id": "EQL_M08_L03_Q05",
+      "question": "What is the position where the legacy to a creditor is LESS than the amount of the debt?",
+      "options": {
+        "A": "The legacy is still presumed to satisfy the debt in full and the creditor cannot claim the balance",
+        "B": "The presumption of satisfaction does not apply and the creditor can claim both the legacy and the full debt",
+        "C": "The legacy satisfies the debt pro tanto — the creditor can claim the balance of the debt but not the full legacy",
+        "D": "The legacy lapses and the creditor can only pursue their debt claim"
+      },
+      "correct_answer": "B",
+      "explanation": "Where the legacy is less than the amount of the debt, the rule in Talbot v Duke of Shrewsbury [1714] does not apply. The presumption of satisfaction requires the legacy to be equal to or greater than the debt. If the legacy is smaller, the conditions for the presumption are not met and the creditor may claim both the legacy and the full amount of the debt. The doctrine will not be applied where to do so would leave the creditor under-compensated for a pre-existing obligation."
+    },
+    {
+      "id": "EQL_M08_L03_Q06",
+      "question": "What is the doctrine of ademption of legacies by legacies?",
+      "options": {
+        "A": "Where a specific bequest is destroyed or ceases to exist before the testator dies, the gift fails",
+        "B": "Where a testator leaves two legacies to the same person — whether in the same will or in a will and later codicil — the question arises whether the second legacy was intended to replace the first",
+        "C": "Where a beneficiary disclaims a legacy, it is said to be adeemed and falls back into residue",
+        "D": "Where a legacy is revoked by a subsequent marriage of the testator"
+      },
+      "correct_answer": "B",
+      "explanation": "The doctrine of ademption of legacies by legacies — the second type of satisfaction — arises where a testator leaves two legacies to the same person, whether in the same will or in a will and a later codicil. The question is whether the second legacy was intended to replace (adeem) the first. The general rule is that both legacies are payable unless the second is clearly intended to replace the first. This is distinct from the separate doctrine of ademption by extinction, which applies where specific bequeathed property ceases to exist before the testator's death."
+    },
+    {
+      "id": "EQL_M08_L03_Q07",
+      "question": "Under the doctrine of satisfaction of legacies by legacies, when will BOTH legacies be payable to the beneficiary?",
+      "options": {
+        "A": "Always — a beneficiary who receives two legacies is always entitled to both",
+        "B": "Only where the second legacy is expressed in identical terms to the first",
+        "C": "Both legacies are payable unless the second is clearly intended to replace the first — which requires clear evidence of the testator's intention to substitute rather than supplement",
+        "D": "Only where the legacies were given in the same will and not in a will and codicil combination"
+      },
+      "correct_answer": "C",
+      "explanation": "Under the doctrine of satisfaction of legacies by legacies, the general rule is that both legacies are payable to the beneficiary. The doctrine of satisfaction will only operate — causing the second legacy to replace the first — where there is clear evidence that the testator intended the second legacy to be substituted for the first, rather than an additional gift. Absent such clear indication, the presumption favours the beneficiary receiving both legacies."
+    },
+    {
+      "id": "EQL_M08_L03_Q08",
+      "question": "What is the 'rule against double portions' in the law of satisfaction?",
+      "options": {
+        "A": "A testator cannot leave more than two legacies to any one beneficiary",
+        "B": "Where a parent or person in loco parentis provides a portion to a child inter vivos and subsequently leaves a legacy of a similar nature, there is a presumption that the legacy was intended to replace the portion, preventing the child from receiving a double benefit",
+        "C": "A child who receives a portion from a parent cannot also receive a share of the parent's residuary estate",
+        "D": "A testator cannot give portions to more than two children without the written consent of all beneficiaries"
+      },
+      "correct_answer": "B",
+      "explanation": "The rule against double portions is the third type of satisfaction. It provides that where a parent (or person in loco parentis) provides a portion to a child — whether by an inter vivos gift or settlement — and subsequently leaves a legacy of a similar nature in their will, there is a presumption that the testamentary legacy was intended to replace or be set off against the earlier portion. The rationale is to prevent the child from receiving a double benefit at the expense of other beneficiaries of the estate, in keeping with the equitable maxim against double portions."
+    },
+    {
+      "id": "EQL_M08_L03_Q09",
+      "question": "What is a 'portion' in the context of the doctrine of satisfaction?",
+      "options": {
+        "A": "Any gift made by a parent to a child during their lifetime",
+        "B": "A substantial provision made by a parent or person in loco parentis to a child for the purpose of establishing them in life — such as a settlement, a payment on marriage, or funds for setting up a business",
+        "C": "A share of the residuary estate left by a parent to a child under a will",
+        "D": "Any sum of money transferred between family members regardless of purpose"
+      },
+      "correct_answer": "B",
+      "explanation": "A 'portion' in the law of satisfaction is a substantial provision made by a parent (or a person standing in loco parentis) to a child for the purpose of establishing that child in life. Classic examples include a marriage settlement, a payment to set the child up in a profession or business, or a substantial cash gift on the occasion of the child leaving home. Not every gift from parent to child constitutes a portion — it must be a substantial provision designed to establish the child in their future life, distinguishable from ordinary maintenance or modest gifts."
+    },
+    {
+      "id": "EQL_M08_L03_Q10",
+      "question": "In Re George's Will Trusts [1949], the court applied the rule against double portions. What were the key facts and principle applied?",
+      "options": {
+        "A": "A father left two testamentary gifts to the same child and the court held both were payable",
+        "B": "A father made an inter vivos settlement for his child and later left a testamentary gift — the court applied the presumption that the legacy was intended to replace the portion, preventing the child from receiving both",
+        "C": "A mother left a portion to an illegitimate child and the court held the rule against double portions did not apply",
+        "D": "The testator was not a parent but a grandparent and the court held the rule did not extend beyond parent-child relationships"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re George's Will Trusts [1949], a father made an inter vivos settlement during his lifetime for the purpose of establishing his child in life, and then subsequently left a testamentary gift of a similar nature. The court applied the presumption that the testamentary legacy was intended to replace the portion — that is, to satisfy rather than supplement the earlier provision. This prevented the child from receiving a double benefit, in accordance with the rule against double portions and the equitable maxim that equity imputes an intention to fulfil an obligation."
+    },
+    {
+      "id": "EQL_M08_L03_Q11",
+      "question": "Can the presumption under the doctrine of satisfaction be rebutted?",
+      "options": {
+        "A": "No — the presumption is conclusive and cannot be displaced by any evidence",
+        "B": "Yes — the presumption can be rebutted by evidence showing that the testator did not intend the later act to satisfy the earlier obligation",
+        "C": "Only where the testator expressly states in the will that the legacy is additional to and not in satisfaction of any prior obligation",
+        "D": "Only in cases involving the rule against double portions, not in debt satisfaction cases"
+      },
+      "correct_answer": "B",
+      "explanation": "The presumptions under the doctrine of satisfaction are rebuttable — they can be displaced by evidence to the contrary. If there is evidence showing that the testator did not intend the later legacy or act to satisfy or replace the earlier obligation — for example, through the terms of the will, contemporaneous correspondence, or the surrounding circumstances — the court will give effect to that intention rather than applying the presumption. The doctrine of satisfaction operates as a presumption of intention, not as an irrebuttable rule of law."
+    },
+    {
+      "id": "EQL_M08_L03_Q12",
+      "question": "A testator owes €5,000 to a creditor. The testator's will leaves the same creditor a legacy of €8,000. Does the doctrine of satisfaction apply?",
+      "options": {
+        "A": "No — the doctrine of satisfaction only applies where the legacy and the debt are identical in amount",
+        "B": "Yes — the legacy is equal to or greater than the debt and the presumption of satisfaction applies, meaning the creditor receives the €8,000 legacy in satisfaction of the €5,000 debt and cannot additionally claim the debt",
+        "C": "The creditor can choose to take the €8,000 legacy and the €5,000 debt together — €13,000 in total",
+        "D": "The doctrine does not apply where the legacy exceeds the debt; the creditor receives both"
+      },
+      "correct_answer": "B",
+      "explanation": "The rule in Talbot v Duke of Shrewsbury [1714] requires the legacy to be equal to or greater than the debt for the presumption to apply. Here, the legacy (€8,000) is greater than the debt (€5,000), so the presumption of satisfaction is triggered. The creditor receives the €8,000 legacy in satisfaction of the €5,000 debt — they cannot claim both the legacy and the debt. The excess (€3,000) effectively becomes a windfall gift from the testator to the creditor. To claim both would be a double recovery which the doctrine prevents."
+    },
+    {
+      "id": "EQL_M08_L03_Q13",
+      "question": "What is the connection between the doctrine of satisfaction and the equitable maxim 'equity will not assist a volunteer'?",
+      "options": {
+        "A": "The doctrine of satisfaction renders volunteers unable to claim legacies in equity",
+        "B": "There is no connection between the two — they operate in entirely separate areas of equity",
+        "C": "Both doctrines are premised on equity preventing unjust enrichment — satisfaction ensures that parties do not receive double benefits, consistent with equity's general aversion to enrichment without corresponding obligation",
+        "D": "The doctrine of satisfaction is an application of 'equity will not assist a volunteer' in the testamentary context"
+      },
+      "correct_answer": "C",
+      "explanation": "While the doctrine of satisfaction and the maxim 'equity will not assist a volunteer' are distinct, both are underpinned by equity's general aversion to unjust enrichment and double recovery. Satisfaction prevents a party from receiving a double benefit — whether by claiming both a debt and a legacy, or two portions — by presuming that a subsequent act was intended to fulfil an earlier obligation. This reflects the broader equitable principle that equity imputes fair and reasonable intentions and resists enrichment beyond what is equitable in the circumstances."
+    },
+    {
+      "id": "EQL_M08_L03_Q14",
+      "question": "Which of the following is NOT a requirement for the presumption of satisfaction of a debt by a legacy to apply?",
+      "options": {
+        "A": "The legacy must be equal to or greater than the debt",
+        "B": "The legacy must be of the same nature as the debt",
+        "C": "The legacy must be expressed to be in satisfaction of the debt in the will",
+        "D": "The legacy must be payable at the same time as the debt"
+      },
+      "correct_answer": "C",
+      "explanation": "Under the rule in Talbot v Duke of Shrewsbury [1714], it is NOT required that the will expressly states the legacy is in satisfaction of the debt. The whole point of the presumption is that, in the absence of express statement, equity infers (presumes) an intention to satisfy. The three actual requirements are: (1) the legacy must be equal to or greater than the debt (option A); (2) it must be of the same nature (option B); and (3) it must be payable at the same time (option D). An express statement would of course confirm satisfaction, but its absence does not prevent the presumption from arising."
+    },
+    {
+      "id": "EQL_M08_L03_Q15",
+      "question": "Does the doctrine of satisfaction apply to a legacy left to a stranger (non-family member) creditor in the same way as to a family member?",
+      "options": {
+        "A": "No — the doctrine of satisfaction only applies between family members",
+        "B": "The rule in Talbot v Duke of Shrewsbury [1714] (satisfaction of debt by legacy) applies regardless of the relationship between testator and creditor; the rule against double portions applies only where there is a parent-child or in loco parentis relationship",
+        "C": "The doctrine of satisfaction applies more strictly to strangers than to family members",
+        "D": "Satisfaction of debts by legacies only applies where the testator acknowledged the debt in the will itself"
+      },
+      "correct_answer": "B",
+      "explanation": "The different types of satisfaction have different relational requirements. The rule in Talbot v Duke of Shrewsbury (satisfaction of debts by legacies) does not require any particular relationship — it can apply between the testator and any creditor. However, the rule against double portions (satisfaction of portions by legacies or portions by portions) is specifically predicated on a parent-child or in loco parentis relationship, because it is only in that context that the presumption of a 'portion' (a provision to establish a child in life) arises."
+    },
+    {
+      "id": "EQL_M08_L03_Q16",
+      "question": "A parent makes a €50,000 inter vivos settlement on their daughter on the occasion of her marriage to assist with purchasing a home. The parent's will later leaves the daughter a legacy of €50,000. What does the rule against double portions presume?",
+      "options": {
+        "A": "The daughter is entitled to both — the inter vivos settlement and the testamentary legacy — totalling €100,000",
+        "B": "The testamentary legacy is presumed to be in satisfaction of the inter vivos settlement, so the daughter receives only €50,000 in total",
+        "C": "The inter vivos settlement is revoked automatically upon the testator's death",
+        "D": "The daughter must elect which gift she prefers before she can claim either"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the rule against double portions, where a parent makes an inter vivos settlement (a portion) on a child and subsequently leaves a legacy of a similar nature in the will, the legacy is presumed to be in satisfaction of the portion. Both are for the purpose of establishing the daughter in life and are of the same nature and amount. The presumption prevents the daughter from receiving a double benefit — €100,000 in total — at the expense of other beneficiaries of the estate. The daughter would receive €50,000 in total (the legacy in satisfaction of the portion), absent evidence to rebut the presumption."
+    },
+    {
+      "id": "EQL_M08_L03_Q17",
+      "question": "Who qualifies as a 'person in loco parentis' for the purposes of the rule against double portions?",
+      "options": {
+        "A": "Any adult who has ever looked after a child on a temporary basis",
+        "B": "A person who has assumed the role and responsibilities of a parent towards a child — such as a step-parent, guardian, or other person who has taken on the duty of making provision for the child as a parent would",
+        "C": "Only a biological parent — stepparents and adoptive parents are excluded",
+        "D": "Any person who is named as a guardian in the child's birth certificate"
+      },
+      "correct_answer": "B",
+      "explanation": "A person 'in loco parentis' for the purposes of the rule against double portions is a person who has assumed the role and responsibilities of a parent towards a child — including the duty of making financial provision for the child as a parent would. This includes step-parents, guardians, and others who have taken on parental responsibility. It is not limited to biological parents. The key question is whether the person has assumed a parental duty to make provision for the child's establishment in life."
+    },
+    {
+      "id": "EQL_M08_L03_Q18",
+      "question": "Which of the following circumstances would most likely rebut the presumption of satisfaction of a debt by a legacy?",
+      "options": {
+        "A": "The legacy is exactly equal to the amount of the debt",
+        "B": "The will contains an express statement that 'all legacies in this will are in addition to and not in satisfaction of any debts owed to the legatees'",
+        "C": "The testator died without making any other provision for the creditor",
+        "D": "The legacy is payable at the same time as the debt was due"
+      },
+      "correct_answer": "B",
+      "explanation": "The most effective way to rebut the presumption of satisfaction is to include an express statement in the will indicating that legacies are additional to and not in satisfaction of any pre-existing debts. Such a statement directly contradicts the presumption of intention and displaces it. Courts will give effect to the testator's expressed intention. Options A, C, and D describe facts that would support — not rebut — the application of the presumption under Talbot v Duke of Shrewsbury [1714]."
+    },
+    {
+      "id": "EQL_M08_L03_Q19",
+      "question": "The doctrine of satisfaction is sometimes described as a 'niche' topic in equity. Why is it nonetheless important for FE-1 candidates to understand it?",
+      "options": {
+        "A": "It is not important — FE-1 candidates can safely ignore it as it never appears on the exam",
+        "B": "Understanding the doctrine of satisfaction demonstrates knowledge of the equitable maxims that underpin equity, and the topic does appear in FE-1 questions — candidates who know it can score additional marks",
+        "C": "It is important only for candidates specialising in probate and succession law, not for general equity candidates",
+        "D": "It is required by statute to be covered in all Irish law courses regardless of its practical relevance"
+      },
+      "correct_answer": "B",
+      "explanation": "While the doctrine of satisfaction is a more technical area of equity, it does appear in FE-1 examinations. Candidates who understand the underlying equitable maxim (equity imputes an intention to fulfil an obligation), the three types of satisfaction, the presumptions that apply in each case, and the conditions for those presumptions, are able to answer questions in this area and earn marks that other candidates miss. The subject also tests candidates' broader understanding of how equitable doctrines and maxims interact with property and succession law."
+    },
+    {
+      "id": "EQL_M08_L03_Q20",
+      "question": "Which of the following correctly distinguishes the doctrine of satisfaction from the doctrine of election?",
+      "options": {
+        "A": "They are identical doctrines with different names in different jurisdictions",
+        "B": "Satisfaction presumes that a subsequent act fulfils a prior obligation; election requires a person to choose between two inconsistent benefits or rights",
+        "C": "Satisfaction applies only to debts; election applies only to legacies",
+        "D": "Satisfaction is a common law doctrine; election is exclusively equitable"
+      },
+      "correct_answer": "B",
+      "explanation": "Satisfaction and election are distinct equitable doctrines. The doctrine of satisfaction operates on the presumption that a subsequent act (e.g., a legacy) fulfils a prior obligation (e.g., a debt or a portion). The doctrine of election, by contrast, requires a person who receives a benefit under an instrument to choose between that benefit and a right that is inconsistent with it — they cannot take both. The two doctrines are addressed in successive lessons precisely because they are related (both concern equity's approach to multiple benefits) but they operate on fundamentally different principles."
+    },
+    {
+      "id": "EQL_M08_L03_Q21",
+      "question": "Which of the following statements about the doctrine of satisfaction is INCORRECT?",
+      "options": {
+        "A": "The doctrine is based on the maxim 'equity imputes an intention to fulfil an obligation'",
+        "B": "Satisfaction of a debt by a legacy requires the legacy to be equal to or greater than the debt, of the same nature, and payable at the same time",
+        "C": "The presumption of satisfaction is irrebuttable and cannot be displaced by evidence of the testator's contrary intention",
+        "D": "The rule against double portions prevents a child from receiving both an inter vivos portion and a testamentary legacy of a similar nature from a parent"
+      },
+      "correct_answer": "C",
+      "explanation": "Option C is incorrect. The presumption under the doctrine of satisfaction is rebuttable — it can be displaced by evidence of the testator's contrary intention. This is fundamental to the operation of the doctrine: because it is based on a presumed intention, any evidence showing a different actual intention will override the presumption. A testator who wishes to leave both a legacy and maintain an outstanding debt obligation can do so by clearly expressing that intention in the will. Options A, B, and D are all correct statements about the doctrine of satisfaction."
+    }
+  ]
+}

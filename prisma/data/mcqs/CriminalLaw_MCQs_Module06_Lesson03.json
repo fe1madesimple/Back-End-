@@ -1,0 +1,119 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module06_Lesson02.txt",
+  "module_number": 6,
+  "module_title": "Sexual Offences",
+  "lesson_number": 3,
+  "lesson_title": "Sexual Assault (s.2(1) Criminal Law (Rape) Amendment Act 1990)",
+  "total_questions": 9,
+  "questions": [
+    {
+      "id": "CRL_M06_L03_Q01",
+      "question": "Section 2(1) of the Criminal Law (Rape) Amendment Act 1990 defines sexual assault. What are the three elements the prosecution must prove?",
+      "options": {
+        "A": "That the accused touched the complainant in a sexual manner; that the touching was without consent; and that the accused was motivated by sexual gratification",
+        "B": "That there was an assault (applying force or causing apprehension of force); that the assault was sexual in nature (capable of being considered sexual by right-minded persons); and that the accused intended the assault to be of a sexual nature",
+        "C": "That the accused physically touched the complainant without consent; that the touching caused physical harm; and that the accused acted with recklessness",
+        "D": "That the assault involved penetration; that no consent was given; and that the accused had a specific sexual motive"
+      },
+      "correct_answer": "B",
+      "explanation": "The offence of sexual assault under s.2(1) Criminal Law (Rape) Amendment Act 1990 requires proof of three distinct elements: (1) An assault \u2014 this is the assault element, encompassing both touching and causing apprehension of touching; per R v Court [1989] HOL (Lord Ackner): 'First stage in the proof of the offence is proof of assault'; (2) The assault was sexual in nature \u2014 meaning it was 'capable of being considered by right-minded persons as sexual'; and (3) The accused intended the assault to be of a sexual nature. DPP v Babayev [2019] IECA confirmed that intention is the relevant mens rea. Option A incorrectly requires sexual gratification as a motive \u2014 R v Bernier [2003] CA (Canada) confirmed that sexual gratification need not be proven. Option C adds a physical harm requirement that is not part of the offence. Option D incorrectly adds a penetration requirement \u2014 sexual assault does not require penetration."
+    },
+    {
+      "id": "CRL_M06_L03_Q02",
+      "question": "In R v Court [1989] HOL, Lord Ackner articulated the test for whether an assault is 'sexual' in nature. What is that test?",
+      "options": {
+        "A": "An assault is sexual if it causes the accused to experience sexual arousal",
+        "B": "An assault is sexual in nature if it is capable of being considered by right-minded persons as sexual \u2014 this is an objective test assessed from the perspective of a reasonable person observing the conduct",
+        "C": "An assault is sexual only if it involves contact with the primary or secondary sexual organs of the body",
+        "D": "An assault is sexual if the accused admits to a sexual motive or is found to have harboured sexual thoughts during the act"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Court [1989] HOL established the objective test for the 'sexual' element of sexual assault: the assault must be 'capable of being considered by right-minded persons as sexual.' This is evaluated objectively \u2014 not from the perspective of the accused's subjective motivation, but from the perspective of what a reasonable right-minded person would conclude about the nature of the act. This test has been accepted in Irish law. The objective nature of the test means that conduct clearly sexual in character (touching genital areas, for example) will satisfy the test regardless of the accused's claimed motivation. Ambiguous conduct (like a pat on the back) may require consideration of the accused's intention to determine if it is sexual. Option A subjectively focuses on the accused's arousal. Option C incorrectly restricts sexual assault to contact with sexual organs. Option D requires an admission or proof of subjective sexual thoughts, which is not required."
+    },
+    {
+      "id": "CRL_M06_L03_Q03",
+      "question": "In DPP v Babayev [2019] IECA, the Court of Appeal confirmed the mens rea for sexual assault. What did the court hold?",
+      "options": {
+        "A": "The court held that recklessness is the sole mens rea for sexual assault \u2014 intention is not required",
+        "B": "The court confirmed that intention is the relevant mens rea for sexual assault \u2014 the accused must intentionally commit the assault and intend it to be of a sexual nature",
+        "C": "The court held that strict liability applies to the 'sexual' element of sexual assault \u2014 once a sexual act is proven, the accused's mental state is irrelevant",
+        "D": "The court held that the accused need only be negligent as to the sexual nature of the act"
+      },
+      "correct_answer": "B",
+      "explanation": "DPP v Babayev [2019] IECA confirmed that intention is the relevant mens rea for the actus reus elements of sexual assault \u2014 both for the assault element and for the sexual nature element. The accused must intentionally commit the assault and must intend it to be of a sexual nature. However, DPP v MX [2020] IECA complemented this by confirming that lack of consent is an actus reus component of sexual assault and that being reckless as to lack of consent also forms part of the mens rea \u2014 so the full mens rea picture is: intentional assault, intentional sexual nature, but recklessness suffices for the consent element. Option A overstates the role of recklessness. Option C incorrectly applies strict liability to the sexual element. Option D applies a negligence standard which is incorrect \u2014 the test is intention for the act and sexual nature, with recklessness for the consent element."
+    },
+    {
+      "id": "CRL_M06_L03_Q04",
+      "question": "In DPP v MX [2020] IECA, the Court of Appeal addressed the consent element in sexual assault. What did the court confirm?",
+      "options": {
+        "A": "Lack of consent is not an element of sexual assault \u2014 sexual assault is committed by the assault itself, regardless of consent",
+        "B": "Lack of consent is an actus reus component of sexual assault; the accused must intend the assault and its sexual nature, but recklessness as to lack of consent also forms part of the mens rea \u2014 an accused who is reckless as to whether the complainant consents can be convicted",
+        "C": "Consent is only relevant where the complainant communicated non-consent verbally",
+        "D": "The burden of proving consent falls on the accused once the prosecution establishes the assault element"
+      },
+      "correct_answer": "B",
+      "explanation": "DPP v MX [2020] IECA is an important decision that confirmed the role of consent in sexual assault. The Court of Appeal held that lack of consent is an actus reus component of sexual assault \u2014 the prosecution must prove non-consent as part of the case. The court also confirmed that the mens rea for sexual assault encompasses recklessness as to the lack of consent \u2014 so an accused who proceeds with a sexual act knowing there is a risk of non-consent and indifferent to whether consent exists can be convicted. This is consistent with the approach in DPP v MC [2018] IECA in the rape context. The overall mens rea picture for sexual assault is therefore: intention (for the assault and its sexual nature) plus knowledge of or recklessness as to non-consent. Option A incorrectly excludes consent from the elements. Option C narrows consent communication to verbal expression only. Option D incorrectly shifts the burden to the accused."
+    },
+    {
+      "id": "CRL_M06_L03_Q05",
+      "question": "In R v Tabassam [2000] CA (England and Wales), the accused asked women to participate in what he represented as a breast cancer survey, touching their breasts. He had no medical qualifications as he had claimed. What principle did this case illustrate?",
+      "options": {
+        "A": "The women consented to the touching \u2014 they were told it was a medical survey and agreed to participate; the accused's false qualifications did not vitiate consent",
+        "B": "Consent obtained by fraud as to the accused's qualifications or the nature of the act is vitiated \u2014 the women consented to a medical examination, not to a sexual assault; the fraud went to the fundamental nature of the act consented to",
+        "C": "The accused could not be convicted of sexual assault because the touching was not inherently sexual \u2014 it could have been a legitimate medical examination",
+        "D": "The case established that only fraud as to identity (not fraud as to qualifications) can vitiate consent to touching"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Tabassam [2000] CA illustrates the principle that consent obtained by fraud as to the nature of the act is vitiated. The women agreed to participate in what they believed was a legitimate breast cancer survey conducted by a qualified professional. In fact, the accused had no medical qualifications. The Court of Appeal held that consent was vitiated \u2014 the women had consented to a medical examination by a qualified person, not to a sexual assault by an unqualified person using a fraudulent pretence. The deception went to the fundamental nature of the act: they were consenting to medical touching, not to sexual touching. This case is directly applicable to the Irish law of sexual assault. Option A incorrectly treats the consent as effective despite the fraud. Option C incorrectly suggests the touching was not inherently sexual \u2014 with the fraud, the touching was not consensual medical examination. Option D incorrectly limits fraud-based vitiation to identity fraud only."
+    },
+    {
+      "id": "CRL_M06_L03_Q06",
+      "question": "A doctor performs a legitimate intimate examination of a patient for a genuine medical purpose, with the patient's informed consent. Has the doctor committed sexual assault?",
+      "options": {
+        "A": "Yes \u2014 any touching of intimate areas by a doctor constitutes sexual assault regardless of consent",
+        "B": "No \u2014 the patient's informed consent to the medical examination, given for a legitimate medical purpose, means there is no assault; additionally, the touching is not capable of being considered sexual in nature where performed in a genuine medical context by a licensed professional",
+        "C": "Yes \u2014 doctors have no immunity from sexual assault charges and must obtain written consent before all intimate examinations",
+        "D": "No \u2014 but only because the Medical Council provides statutory immunity to doctors for all clinical touching"
+      },
+      "correct_answer": "B",
+      "explanation": "A doctor performing a legitimate medical examination with a patient's informed consent does not commit sexual assault for two interconnected reasons: (1) The patient has consented to the touching \u2014 the consent is valid as it is free, voluntary, and informed; and (2) The touching in a genuine clinical context by a licensed professional is not 'capable of being considered by right-minded persons as sexual' within the R v Court test \u2014 the context strips the touching of its sexual character. This is the antithesis of R v Tabassam [2000] where the accused had fraudulently claimed medical qualifications. Where the medical practitioner is genuinely qualified and the examination is genuinely medical, both the consent and the non-sexual nature of the touching negative sexual assault liability. Option A incorrectly ignores the consent and context. Option C adds a written consent requirement with no legal basis. Option D incorrectly asserts a statutory immunity, which does not exist."
+    },
+    {
+      "id": "CRL_M06_L03_Q07",
+      "question": "Does the prosecution need to prove that the accused was motivated by sexual gratification to secure a sexual assault conviction?",
+      "options": {
+        "A": "Yes \u2014 without evidence of sexual motivation, the assault cannot be characterised as sexual",
+        "B": "No \u2014 evidence of sexual gratification is not an essential element of sexual assault; the test is whether a right-minded person would consider the assault to be sexual in nature, not whether the accused was sexually motivated; R v Bernier [2003] CA (Canada) confirmed this",
+        "C": "Yes \u2014 but sexual motivation can be inferred from the nature of the touching alone",
+        "D": "No \u2014 but the absence of sexual motivation is a complete defence to the charge"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Bernier [2003] CA (Canada) \u2014 accepted as a persuasive authority in Irish proceedings \u2014 confirmed that evidence of desire for sexual gratification is not an essential element of sexual assault. In Bernier, an employee who slapped and inappropriately touched a resident's testicles and breasts 'for his own amusement' (not sexual gratification) was still convicted of sexual assault. The test for whether an assault is sexual is the R v Court objective test \u2014 whether it is 'capable of being considered by right-minded persons as sexual' \u2014 not whether the accused was personally motivated by sexual desire. This prevents accused persons from evading conviction by claiming a non-sexual motive for objectively sexual touching. Option A requires proof of subjective sexual motivation which is incorrect. Option C is partly correct (motivation can be inferred from context) but incorrectly frames it as a requirement. Option D invents a complete defence from absence of sexual motivation."
+    },
+    {
+      "id": "CRL_M06_L03_Q08",
+      "question": "A, without physical contact, exposes himself to B in a threatening manner, causing B to believe she is about to be touched sexually and to experience serious fear. Has A committed sexual assault?",
+      "options": {
+        "A": "No \u2014 sexual assault requires physical contact; non-contact conduct cannot constitute sexual assault",
+        "B": "Yes \u2014 sexual assault includes causing apprehension of an unlawful sexual touching; where the conduct causes the complainant to apprehend an imminent sexual act, the assault (apprehension) element is satisfied even without physical contact; if the conduct is sexual in nature and A intended it to be sexual, all elements of sexual assault are present",
+        "C": "No \u2014 exposure alone constitutes a separate offence of indecent exposure; it cannot constitute sexual assault",
+        "D": "Yes \u2014 but only if A made physical contact during the same incident"
+      },
+      "correct_answer": "B",
+      "explanation": "Sexual assault does not require physical contact \u2014 the assault element encompasses both the application of force and the causing of apprehension of force (or unlawful sexual touching). Where A exposes himself in a threatening manner causing B to apprehend an imminent sexual act, the apprehension element of assault is satisfied. If the conduct is sexual in nature (objectively, per R v Court \u2014 a right-minded person would consider threatening sexual exposure to constitute a sexual act) and A intended it to be sexual, all elements of sexual assault are present. This analysis applies the same principle as s.2 NFOATP 1997's distinction between contact assault and threatened assault: in both, the apprehension of the act is sufficient for the assault element. Option A incorrectly requires physical contact. Option C incorrectly treats indecent exposure as an exclusive charge. Option D adds an unjustified contact requirement."
+    },
+    {
+      "id": "CRL_M06_L03_Q09",
+      "question": "What is the maximum sentence for sexual assault under s.2 Criminal Law (Rape) Amendment Act 1990?",
+      "options": {
+        "A": "5 years imprisonment on indictment",
+        "B": "10 years imprisonment on indictment",
+        "C": "14 years imprisonment on indictment",
+        "D": "Life imprisonment on indictment"
+      },
+      "correct_answer": "B",
+      "explanation": "The maximum sentence for sexual assault under s.2 Criminal Law (Rape) Amendment Act 1990 is 10 years imprisonment on conviction on indictment. This distinguishes sexual assault from the more serious offence of rape (life imprisonment) and aggravated sexual assault (life imprisonment). Sexual assault cases are heard in the Central Criminal Court (which has exclusive jurisdiction over sexual offences). The 10-year maximum reflects the serious nature of sexual assault while distinguishing it from the most serious sexual offences. In practice, sentences across the range are imposed depending on the nature and circumstances of the assault. Options A, C, and D state incorrect maximum sentences."
+    }
+  ]
+}

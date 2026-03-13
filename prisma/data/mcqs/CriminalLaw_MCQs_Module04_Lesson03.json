@@ -1,0 +1,131 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module04_Lesson03.txt",
+  "module_number": 4,
+  "module_title": "Homicide",
+  "lesson_number": 3,
+  "lesson_title": "Involuntary Manslaughter",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CRL_M04_L03_Q01",
+      "question": "Irish law recognises three categories of involuntary manslaughter. Which of the following correctly identifies all three categories?",
+      "options": {
+        "A": "Constructive manslaughter, reckless manslaughter, and negligent manslaughter",
+        "B": "Unlawful act (constructive) manslaughter, gross negligence manslaughter, and reckless manslaughter",
+        "C": "Voluntary manslaughter, involuntary manslaughter, and corporate manslaughter",
+        "D": "Provocation manslaughter, self-defence manslaughter, and accidental manslaughter"
+      },
+      "correct_answer": "B",
+      "explanation": "Irish criminal law recognises three categories of involuntary manslaughter (killings without the intention to kill or cause serious injury required for murder under s.4(1) CJA 1964): (1) Unlawful act (constructive) manslaughter \u2014 where death results from an unlawful and dangerous act; (2) Gross negligence manslaughter \u2014 where the accused owed a duty of care, breached it to a grossly negligent degree, and death resulted (R v Adomako [1994] HL, applied in Ireland); (3) Reckless manslaughter \u2014 where the accused was subjectively reckless as to whether death or serious injury would result from their conduct. Option A incorrectly lists 'negligent manslaughter' as distinct from gross negligence. Option C confuses categories by including voluntary manslaughter and corporate manslaughter (which is a distinct statutory creature). Option D describes partial defences, not categories of involuntary manslaughter."
+    },
+    {
+      "id": "CRL_M04_L03_Q02",
+      "question": "For unlawful act (constructive) manslaughter, what are the four essential elements that must be proved by the prosecution?",
+      "options": {
+        "A": "An unlawful act; the act was objectively dangerous to a reasonable person; the act caused death; the accused intended to cause death",
+        "B": "An unlawful act; the act was objectively dangerous (likely to cause harm to some person, assessed objectively); the act caused the victim's death; the accused committed the act voluntarily (with the mens rea of the base unlawful act)",
+        "C": "An unlawful act; the act caused death; the accused was reckless as to death",
+        "D": "An unlawful act; the victim was a reasonably foreseeable victim; the act caused death; the accused knew the act was dangerous"
+      },
+      "correct_answer": "B",
+      "explanation": "In R v Church [1966] and confirmed in DPP v Newbury and Jones [1977] HL, the elements of unlawful act manslaughter are: (1) The accused committed an unlawful act \u2014 a criminal act, not merely a civil wrong (DPP v Newbury and Jones); (2) The act was objectively dangerous \u2014 it was such as all sober and reasonable people would inevitably recognise must subject some other person to the risk of at least some harm (Church test \u2014 assessed objectively, not by the accused's subjective knowledge); (3) The unlawful act caused the death of the victim; (4) The accused committed the act with the mens rea appropriate to the underlying unlawful act (they need not foresee death or serious injury). Option A incorrectly adds an intent to cause death. Option C incorrectly states that recklessness as to death is required (it is not \u2014 only the mens rea of the base unlawful act is needed). Option D incorrectly requires subjective knowledge of danger."
+    },
+    {
+      "id": "CRL_M04_L03_Q03",
+      "question": "Jake punches Patrick once in the face. Patrick stumbles, falls awkwardly, and hits his head on the kerb, suffering a fatal brain haemorrhage. Jake had no intention to cause serious injury and the punch was minor. Is Jake guilty of unlawful act manslaughter?",
+      "options": {
+        "A": "No \u2014 Jake did not intend to kill and the punch was minor; he cannot be liable for the death",
+        "B": "Yes \u2014 the punch is an unlawful act (assault causing harm at minimum); it is objectively dangerous in that sober reasonable people would recognise it subjected Patrick to at least some risk of harm; it caused the death; Jake committed the assault voluntarily. The egg-shell skull rule means he must take Patrick as he finds him",
+        "C": "No \u2014 the fall and impact with the kerb was an intervening cause breaking the chain",
+        "D": "Yes \u2014 but only if Jake intended to cause Patrick to fall"
+      },
+      "correct_answer": "B",
+      "explanation": "Jake's single punch satisfies all four elements of unlawful act manslaughter: (1) Unlawful act \u2014 assault (or battery); (2) Objectively dangerous \u2014 any sober reasonable person would recognise that punching someone on the face subjects them to at least some risk of harm (not necessarily death, but some harm); (3) Causation \u2014 the punch caused Patrick to fall, and the fall caused the fatal head injury; Patrick must be taken as he is (egg-shell skull rule); (4) Mens rea \u2014 Jake committed the assault voluntarily. The fall and kerb impact were consequences of the punch, not independent intervening acts. This is a classic constructive manslaughter case \u2014 the accused is 'constructed' with liability for the unintended death through their voluntary commission of an unlawful and dangerous act. Option A incorrectly requires intent to kill. Option C misapplies novus actus \u2014 the fall was a direct consequence of the punch, not an independent act. Option D adds an intent to fall requirement that does not exist."
+    },
+    {
+      "id": "CRL_M04_L03_Q04",
+      "question": "In R v Adomako [1994] HL, the House of Lords set out the test for gross negligence manslaughter. Which of the following correctly states that test?",
+      "options": {
+        "A": "The test is whether the defendant was negligent \u2014 any breach of duty causing death constitutes gross negligence manslaughter",
+        "B": "The test requires: (1) a duty of care; (2) breach of that duty; (3) risk of death (not merely injury) from the breach; (4) the breach was so bad that it should be judged criminal by the jury \u2014 the degree of negligence must be gross, going beyond a mere matter of compensation",
+        "C": "The test requires only proof of objective recklessness \u2014 the defendant created an obvious risk of death",
+        "D": "The test requires proof that the defendant foresaw the risk of death and ignored it"
+      },
+      "correct_answer": "B",
+      "explanation": "In R v Adomako [1994], Lord Mackay articulated the elements of gross negligence manslaughter: (1) The existence of a duty of care owed by the accused to the victim (established using the Caparo civil negligence test or similar); (2) Breach of that duty \u2014 the accused's conduct fell below the standard of the reasonable person in their position; (3) The breach caused the death; (4) The breach involved a risk of death (not merely injury \u2014 this was emphasised in subsequent cases, e.g., R v Misra [2004]); (5) The breach was so grossly negligent that it ought to be condemned as criminal \u2014 this is a jury question involving a circular element. Adomako remains the leading authority. Option A applies too low a threshold. Option C (objective recklessness) was the pre-Adomako approach under R v Seymour [1983], overruled by Adomako. Option D (foresight of risk) applies a subjective test not required for gross negligence manslaughter."
+    },
+    {
+      "id": "CRL_M04_L03_Q05",
+      "question": "Dr. Flynn is an anaesthetist who fails to notice that a breathing tube has become disconnected during surgery. The patient dies from lack of oxygen. Dr. Flynn was distracted and did not follow standard protocols. Is this a potential gross negligence manslaughter case?",
+      "options": {
+        "A": "No \u2014 doctors are immune from criminal liability for medical mistakes",
+        "B": "Yes \u2014 this is precisely the scenario in Adomako itself; Dr. Flynn owed a duty of care, breached it through serious inattention, the breach created a risk of death and caused death; whether the breach was 'gross' is a question for the jury",
+        "C": "No \u2014 only intentional medical errors can ground criminal liability",
+        "D": "Yes \u2014 but only because Dr. Flynn was reckless as to the patient's death"
+      },
+      "correct_answer": "B",
+      "explanation": "This scenario mirrors the facts of R v Adomako [1994] itself. Dr. John Bodkin Adams had disconnected a breathing tube during an operation and failed to notice; the patient died. The House of Lords confirmed that: (1) An anaesthetist owes a duty of care to the patient \u2014 this is straightforward; (2) Failure to follow basic protocols and inattention to the patient's breathing constitutes a breach; (3) The risk was of death (not merely discomfort); (4) Whether the breach was 'gross' \u2014 so bad as to be criminal \u2014 is for the jury to assess. Courts applying Adomako have convicted medical professionals in genuine cases of catastrophic inattention. Option A is wrong \u2014 no immunity exists for criminal negligence. Option C requires intent which is not necessary for gross negligence manslaughter. Option D applies subjective recklessness which is not required \u2014 the Adomako test is objective."
+    },
+    {
+      "id": "CRL_M04_L03_Q06",
+      "question": "What is 'reckless manslaughter' and how does it differ from unlawful act manslaughter and gross negligence manslaughter?",
+      "options": {
+        "A": "Reckless manslaughter is the same as unlawful act manslaughter \u2014 they are interchangeable terms",
+        "B": "Reckless manslaughter is where the accused was subjectively reckless \u2014 actually aware of an unjustifiable risk of death or serious injury to the victim \u2014 and death resulted; it differs from unlawful act manslaughter (which requires a base unlawful act but not foresight of death) and gross negligence manslaughter (which is an objective test focused on breach of duty)",
+        "C": "Reckless manslaughter is an objective test: a reasonable person would have been aware of the risk of death",
+        "D": "Reckless manslaughter only applies to road traffic fatalities in Irish law"
+      },
+      "correct_answer": "B",
+      "explanation": "Reckless manslaughter is a distinct category of involuntary manslaughter in Irish law: it requires proof that the accused was subjectively reckless \u2014 actually aware of an unjustifiable risk of death or serious injury to the victim \u2014 and proceeded to take that risk, resulting in death. This is a higher level of culpability than unlawful act manslaughter (which requires only the mens rea of the base unlawful act and does not require foresight of death) and is assessed differently from gross negligence manslaughter (which applies an objective standard \u2014 how bad was the breach \u2014 without requiring subjective foresight of death). Reckless manslaughter occupies the space between unintentional killing and murder: the accused foresaw death or serious injury as a risk but did not intend it. Option A incorrectly equates the categories. Option C applies the objective test that belongs to gross negligence. Option D incorrectly limits the category to road traffic."
+    },
+    {
+      "id": "CRL_M04_L03_Q07",
+      "question": "In R v Church [1966], Edmund Davies J articulated the 'objective danger' test for unlawful act manslaughter. A defendant threw a woman into a river after he wrongly believed she was dead (having knocked her unconscious). The Court of Appeal considered whether the drowning was foreseeable. Which test was applied?",
+      "options": {
+        "A": "The act must have been subjectively dangerous \u2014 the defendant must have known it was dangerous",
+        "B": "The act must have been objectively dangerous \u2014 all sober and reasonable people would inevitably recognise it subjected some person to the risk of some harm",
+        "C": "The act must have been likely to cause death specifically \u2014 harm to property was insufficient",
+        "D": "The act must have been performed with ill-will toward the victim"
+      },
+      "correct_answer": "B",
+      "explanation": "In R v Church [1966], Edmund Davies J (giving the judgment of the Court of Appeal) established the objective test for the 'dangerous' element of unlawful act manslaughter: the unlawful act must be 'such as all sober and reasonable people would inevitably recognise must subject the other person to, at least, the risk of some harm therefrom, albeit not serious harm.' Two critical points: (1) Objectively assessed \u2014 by all sober and reasonable people, not by the defendant's subjective view; (2) 'Some harm' suffices \u2014 death need not have been foreseeable; it is sufficient that some physical harm to a person was foreseeable. The defendant's actual knowledge of the danger is irrelevant. On the facts, throwing a woman into a river (even if the defendant wrongly believed she was dead) clearly subjected her to risk of harm. Option A incorrectly requires subjective danger. Option C sets too high a threshold. Option D introduces ill-will which is not required."
+    },
+    {
+      "id": "CRL_M04_L03_Q08",
+      "question": "Can an omission (failure to act) constitute the unlawful act for the purposes of unlawful act manslaughter?",
+      "options": {
+        "A": "Yes \u2014 any omission that causes death can ground unlawful act manslaughter",
+        "B": "No \u2014 unlawful act manslaughter requires a positive unlawful act; an omission can ground gross negligence manslaughter (where a duty exists) but not constructive manslaughter",
+        "C": "Yes \u2014 as long as the omission occurred in a context where the defendant was present",
+        "D": "No \u2014 omissions can never ground any form of manslaughter in Irish law"
+      },
+      "correct_answer": "B",
+      "explanation": "Unlawful act (constructive) manslaughter requires a positive unlawful act as its foundation \u2014 this is inherent in the 'act' terminology. In R v Lowe [1973] CA, the court held that a failure to act (omission) cannot constitute the unlawful act for purposes of constructive manslaughter, even where the omission amounts to a criminal offence (wilful neglect). The distinction is: an omission may constitute gross negligence manslaughter where the accused owed a duty of care and their failure to act was grossly negligent \u2014 but the mechanism differs. The policy rationale is that constructive manslaughter imposes liability for an unintended consequence; extending this to omissions would be an even greater departure from the principle of individual culpability. Option A incorrectly allows all omissions. Option C adds a presence requirement that is not the law. Option D is too broad \u2014 omissions can found gross negligence manslaughter where a duty exists."
+    },
+    {
+      "id": "CRL_M04_L03_Q09",
+      "question": "A person who supplies illegal drugs to a friend who then self-administers the drugs and dies of an overdose \u2014 can the supplier be convicted of unlawful act manslaughter? Refer to R v Kennedy (No. 2) [2007] HL.",
+      "options": {
+        "A": "Yes \u2014 supplying drugs is an unlawful act and death resulted",
+        "B": "No \u2014 following R v Kennedy (No. 2) [2007] HL, the free and voluntary act of the deceased in self-administering the drug breaks the chain of causation; the supplier did not administer the drugs and cannot be convicted of unlawful act manslaughter",
+        "C": "Yes \u2014 because the supplier was reckless as to the risk of death",
+        "D": "No \u2014 only if the supplier knew the deceased would die"
+      },
+      "correct_answer": "B",
+      "explanation": "In R v Kennedy (No. 2) [2007] HL, the House of Lords definitively resolved this issue: where a drug supplier hands drugs to a user who freely and voluntarily self-administers them, the user's act of self-injection breaks the chain of causation. The voluntary act of a free adult in self-administering is a novus actus interveniens \u2014 a new independent act by the deceased themselves. The supplier cannot be convicted of unlawful act manslaughter in these circumstances. Lord Bingham, giving the unanimous judgment, emphasised that causation requires the accused's act to be an operative cause \u2014 the voluntary self-administration by the deceased supersedes this. Note: the position may differ if the accused injected the drug directly into the deceased, or if the deceased lacked the capacity to make a free and voluntary decision. Option A ignores the causation analysis. Option C applies subjective recklessness which addresses a different form of manslaughter. Option D introduces a knowledge requirement that is irrelevant to causation."
+    },
+    {
+      "id": "CRL_M04_L03_Q10",
+      "question": "The concept of a 'duty of care' for gross negligence manslaughter is borrowed from the civil law of negligence. What difficulty does this create in the criminal law context?",
+      "options": {
+        "A": "No difficulty \u2014 civil and criminal duty of care concepts are identical",
+        "B": "The difficulty is that civil duty of care (based on Caparo \u2014 foreseeability, proximity, fairness) has been developed in a compensation-focused context, not a punishment context; importing civil concepts into criminal law risks imposing criminal liability on persons who are not morally culpable in a criminal sense, and the circular nature of the gross negligence test (asking the jury whether the negligence was 'criminal') has been criticised as constitutionally uncertain",
+        "C": "The difficulty is that criminal courts cannot determine civil law questions",
+        "D": "The difficulty is that gross negligence manslaughter is unconstitutional because of this borrowing"
+      },
+      "correct_answer": "B",
+      "explanation": "The import of civil duty of care concepts into gross negligence manslaughter has attracted criticism: (1) The civil Caparo test (foreseeability, proximity, fairness) was developed to determine compensation liability \u2014 it was not designed to identify who deserves criminal punishment; (2) The test for 'gross' negligence in Adomako has been criticised as circular \u2014 the jury must decide whether the negligence was 'criminal' which is the very question being asked; (3) There is a risk that expanded duty of care from civil law widens criminal liability beyond what criminal culpability principles justify; (4) R v Misra and Srivastava [2004] CA rejected an Art 7 ECHR challenge (no punishment without law) to the certainty of the Adomako test, holding the direction was sufficient, but concerns remain. Option A incorrectly equates civil and criminal duty. Option C is factually wrong \u2014 criminal courts apply civil concepts when imported. Option D overstates the constitutional concern."
+    }
+  ]
+}

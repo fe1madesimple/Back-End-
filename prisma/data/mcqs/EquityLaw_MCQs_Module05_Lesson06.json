@@ -1,0 +1,275 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "EquityLaw_ElevenLabs_Module05_Lesson06.txt",
+  "module_number": 5,
+  "module_title": "INJUNCTIONS",
+  "lesson_number": 6,
+  "lesson_title": "MAREVA INJUNCTIONS (FREEZING ORDERS)",
+  "total_questions": 22,
+  "questions": [
+    {
+      "id": "EQL_M05_L06_Q01",
+      "question": "A Mareva injunction takes its name from which case?",
+      "options": {
+        "A": "Mareva v Naviera International Bulk Carriers [1976] (House of Lords)",
+        "B": "Mareva Compania Naviera v International Bulk Carriers [1975] (Court of Appeal, England)",
+        "C": "Countyglen v Carway [1995] (Irish Supreme Court)",
+        "D": "Campus Oil v Minister for Industry [1983] (Irish Supreme Court)"
+      },
+      "correct_answer": "B",
+      "explanation": "The Mareva injunction takes its name from Mareva Compania Naviera SA v International Bulk Carriers SA [1975], a decision of the English Court of Appeal. The case involved a shipping company whose assets were at risk of being removed from England before judgment could be enforced. The Court of Appeal granted an injunction to freeze the assets, creating what became known as the Mareva injunction — now also called a 'freezing order.'"
+    },
+    {
+      "id": "EQL_M05_L06_Q02",
+      "question": "The primary purpose of a Mareva injunction is to:",
+      "options": {
+        "A": "Prevent the defendant from entering the applicant's premises",
+        "B": "Preserve evidence that may be destroyed before trial",
+        "C": "Freeze the defendant's assets to prevent dissipation before a judgment can be enforced",
+        "D": "Restrain the defendant from committing a threatened future wrong"
+      },
+      "correct_answer": "C",
+      "explanation": "A Mareva injunction (freezing order) freezes the defendant's assets to prevent them from being dissipated or removed from the jurisdiction before a judgment in the applicant's favour can be enforced. Unlike an Anton Piller order (which preserves evidence), a Mareva is concerned with protecting the fruits of any eventual judgment — ensuring that, if the applicant wins, there are assets against which the judgment can be enforced."
+    },
+    {
+      "id": "EQL_M05_L06_Q03",
+      "question": "In Ireland, the Mareva jurisdiction was confirmed by the Supreme Court in:",
+      "options": {
+        "A": "Campus Oil v Minister for Industry [1983]",
+        "B": "Countyglen v Carway [1995]",
+        "C": "Microsoft Corporation v Brightpoint Ireland [2001]",
+        "D": "Okunade v Minister for Justice [2012]"
+      },
+      "correct_answer": "B",
+      "explanation": "In Countyglen v Carway [1995], the Irish Supreme Court confirmed that the jurisdiction to grant Mareva injunctions is part of the inherent jurisdiction of the Irish courts. The Supreme Court recognised the three requirements for a Mareva injunction and confirmed that this extraordinary equitable remedy is available in Ireland."
+    },
+    {
+      "id": "EQL_M05_L06_Q04",
+      "question": "The first requirement for a Mareva injunction is:",
+      "options": {
+        "A": "An extremely strong prima facie case",
+        "B": "A good arguable case on the merits",
+        "C": "A fair issue to be tried",
+        "D": "A probability of success at trial"
+      },
+      "correct_answer": "B",
+      "explanation": "The first requirement for a Mareva injunction is that the applicant must have a good arguable case on the merits. This is an intermediate threshold — higher than the 'fair issue to be tried' of ordinary Campus Oil applications but lower than the 'extremely strong prima facie case' required for Anton Piller orders. It reflects the serious nature of asset freezing while recognising that the applicant has not yet established their case at trial."
+    },
+    {
+      "id": "EQL_M05_L06_Q05",
+      "question": "The second requirement for a Mareva injunction is:",
+      "options": {
+        "A": "That the defendant has previous convictions for fraud",
+        "B": "That the applicant must show that the defendant has assets within the jurisdiction",
+        "C": "That the applicant's claim exceeds the market value of the defendant's assets",
+        "D": "That the defendant is a foreign national"
+      },
+      "correct_answer": "B",
+      "explanation": "The second requirement for a Mareva injunction is that the applicant must show that the defendant has assets within the jurisdiction of the court. Without assets within the jurisdiction, there is nothing to freeze, and the order would be meaningless. The applicant must identify or establish the existence of assets (e.g., bank accounts, property) that are amenable to the order."
+    },
+    {
+      "id": "EQL_M05_L06_Q06",
+      "question": "The third — and most critical — requirement for a Mareva injunction is:",
+      "options": {
+        "A": "Evidence that the defendant has already begun to transfer assets abroad",
+        "B": "A real risk that the defendant will remove their assets from the jurisdiction or dissipate them in order to frustrate any judgment that may be obtained",
+        "C": "That the defendant has expressly threatened to remove assets from the jurisdiction",
+        "D": "An existing charging order over the defendant's property"
+      },
+      "correct_answer": "B",
+      "explanation": "The third and most critical Mareva requirement is that there must be a real risk that the defendant will remove their assets from the jurisdiction or dissipate them in order to frustrate the enforcement of any judgment. Without this risk, there is no need for the extraordinary remedy of freezing assets — the defendant could simply satisfy any eventual judgment from their remaining assets. The risk must be 'real' — not merely speculative or based on the fact that the defendant is a foreign national."
+    },
+    {
+      "id": "EQL_M05_L06_Q07",
+      "question": "Why is a Mareva injunction typically applied for and granted ex parte (without notice)?",
+      "options": {
+        "A": "Because ex parte is the only procedurally valid way to apply for a freezing order under Irish rules",
+        "B": "Because giving notice to the defendant would defeat the purpose of the order — the defendant could move their assets beyond reach before the order is granted",
+        "C": "Because the defendant is presumed to be acting in bad faith and therefore forfeits the right to be heard",
+        "D": "Because the applicant is the creditor and has a superior legal right to the assets"
+      },
+      "correct_answer": "B",
+      "explanation": "Like Anton Piller orders, Mareva injunctions are typically applied for ex parte because giving notice to the defendant would defeat the entire purpose: if the defendant knew an application was being made to freeze their assets, they would immediately transfer them beyond the court's jurisdiction or otherwise dissipate them before the order could be made. The without-notice approach is thus necessitated by the practical reality that asset freezing orders must work by surprise to be effective."
+    },
+    {
+      "id": "EQL_M05_L06_Q08",
+      "question": "A critical distinction about the nature of a Mareva injunction is that it is an order in personam. What does this mean?",
+      "options": {
+        "A": "The order creates a proprietary charge over the frozen assets in the applicant's favour",
+        "B": "The order operates against the defendant personally — restraining them from dealing with their assets — but does not give the applicant any proprietary claim over those assets",
+        "C": "The order applies to the defendant's person rather than their property",
+        "D": "The order can only be made against natural persons, not companies"
+      },
+      "correct_answer": "B",
+      "explanation": "A Mareva injunction is an order in personam — it operates against the defendant personally, restraining them from dealing with or disposing of their assets. Crucially, it does not create any proprietary interest or security in the applicant's favour over those assets. The applicant remains an unsecured creditor. The frozen assets are not held on trust for the applicant; they simply cannot be dealt with by the defendant until further order of the court."
+    },
+    {
+      "id": "EQL_M05_L06_Q09",
+      "question": "A defendant whose assets are frozen by a Mareva injunction seeks to use some of the frozen funds to pay their legal costs in defending the main action. The court is likely to:",
+      "options": {
+        "A": "Refuse any access to frozen funds — the Mareva operates as an absolute freeze",
+        "B": "Allow a reasonable amount for legal costs, as the Mareva must contain a safeguard permitting reasonable legal expenses",
+        "C": "Order the applicant to pay the defendant's legal costs directly",
+        "D": "Dissolve the Mareva injunction if the defendant requires funds for legal representation"
+      },
+      "correct_answer": "B",
+      "explanation": "A Mareva injunction must include a provision allowing the defendant to access a reasonable amount for ordinary living expenses and legal costs. This safeguard reflects the principle that a Mareva, while extraordinary, must not be used as a weapon to prevent the defendant from defending themselves or living a normal life. The right to legal representation is protected, and a properly drawn Mareva will contain an express carve-out for reasonable legal costs."
+    },
+    {
+      "id": "EQL_M05_L06_Q010",
+      "question": "Once a Mareva injunction is served on a third party bank, what is the bank's legal obligation?",
+      "options": {
+        "A": "The bank may continue to process the defendant's transactions as normal until the court notifies it directly",
+        "B": "The bank is bound by the order and must not assist the defendant in dissipating the frozen assets; knowing assistance in breaching the order may render the bank in contempt",
+        "C": "The bank must immediately pay the frozen funds into court",
+        "D": "The bank is protected from liability for any transactions processed before they received actual notice of the order"
+      },
+      "correct_answer": "B",
+      "explanation": "Once a Mareva injunction is served on a third party such as a bank, that third party is bound by the order. The bank must not assist the defendant in dissipating the frozen assets — for example, by executing transfers or withdrawals. A third party who knowingly assists in breaching a Mareva injunction may be held in contempt of court. This third party binding effect is essential to the practical effectiveness of Mareva relief."
+    },
+    {
+      "id": "EQL_M05_L06_Q011",
+      "question": "The 'real risk of dissipation' requirement for a Mareva injunction is satisfied by:",
+      "options": {
+        "A": "The mere fact that the defendant is a foreign national or foreign company",
+        "B": "Concrete evidence that the defendant has taken steps to move assets, has a history of asset dissipation, or that the particular circumstances make dissipation a genuine risk",
+        "C": "The defendant's refusal to provide a voluntary undertaking not to move assets",
+        "D": "The applicant's assertion that they are concerned about asset dissipation"
+      },
+      "correct_answer": "B",
+      "explanation": "The real risk of dissipation must be established by concrete evidence — not merely by the fact that the defendant is foreign (which would amount to unlawful discrimination) or by the applicant's bare assertion. Evidence that the defendant has already begun moving assets, has a history of evading creditors, has indicated an intention to leave the jurisdiction, or that other specific circumstances create a genuine risk of dissipation will satisfy this requirement. It must be a real, not a speculative, risk."
+    },
+    {
+      "id": "EQL_M05_L06_Q012",
+      "question": "A Mareva injunction is compared to other equitable orders, it is best described as:",
+      "options": {
+        "A": "A final remedy that permanently vests the defendant's assets in the applicant",
+        "B": "A temporary, procedural asset-freezing order designed to preserve the defendant's assets pending the outcome of the main action",
+        "C": "A form of specific performance requiring the defendant to pay their debt immediately",
+        "D": "An order equivalent to a charging order over the defendant's land"
+      },
+      "correct_answer": "B",
+      "explanation": "A Mareva injunction is a temporary, procedural remedy — it freezes assets pending the outcome of the main action. It does not transfer ownership, create security, or amount to a final determination of the dispute. It is a protective measure: it preserves the status quo (the existence of the defendant's assets within the jurisdiction) so that any eventual judgment can be enforced. Once the main action is resolved, the Mareva is either dissolved or converted into an appropriate final order."
+    },
+    {
+      "id": "EQL_M05_L06_Q013",
+      "question": "The applicant under a Mareva injunction is described as remaining 'an unsecured creditor.' This means:",
+      "options": {
+        "A": "The applicant has no valid legal claim against the defendant",
+        "B": "The Mareva does not create any security interest or proprietary claim over the frozen assets — the applicant ranks equally with other unsecured creditors if the defendant becomes insolvent",
+        "C": "The applicant must provide security to the court before the Mareva can be granted",
+        "D": "The applicant can only recover damages, not any specific assets"
+      },
+      "correct_answer": "B",
+      "explanation": "The fact that a Mareva applicant remains an unsecured creditor is significant. The Mareva does not create a charge, lien, or proprietary interest over the frozen assets. If the defendant becomes insolvent, the applicant does not have priority over the frozen assets — they rank alongside other unsecured creditors. The Mareva protects against deliberate asset dissipation before judgment, not against insolvency in the normal course. This is a crucial limitation of the Mareva remedy."
+    },
+    {
+      "id": "EQL_M05_L06_Q014",
+      "question": "A supplier is owed €500,000 by a debtor. The debtor is a foreign company with Irish bank accounts. The supplier discovers the debtor has been wire-transferring funds to an offshore account in recent weeks. What remedy should the supplier seek?",
+      "options": {
+        "A": "An Anton Piller order to search the debtor's offices",
+        "B": "A Mareva injunction to freeze the debtor's Irish bank accounts pending judgment",
+        "C": "A quia timet injunction to prevent future wire transfers",
+        "D": "An ordinary Campus Oil interlocutory injunction restraining the debtor from operating its business"
+      },
+      "correct_answer": "B",
+      "explanation": "This is a classic Mareva scenario: the applicant has a good arguable case (unpaid €500,000 debt); the defendant has assets within the jurisdiction (Irish bank accounts); and there is concrete evidence of a real risk of dissipation (active wire transfers to offshore accounts). The appropriate remedy is a Mareva injunction to freeze the Irish bank accounts, ensuring that if judgment is obtained in the supplier's favour, there will be assets available for enforcement."
+    },
+    {
+      "id": "EQL_M05_L06_Q015",
+      "question": "What must the scope of a Mareva injunction be limited to?",
+      "options": {
+        "A": "All assets belonging to the defendant, wherever located in the world",
+        "B": "Assets necessary to protect the applicant's interest — not extending beyond what is necessary, and including carve-outs for reasonable living expenses and legal costs",
+        "C": "Only the specific assets that the applicant can identify by name or account number",
+        "D": "Only cash assets — Mareva injunctions cannot be applied to real property"
+      },
+      "correct_answer": "B",
+      "explanation": "The scope of a Mareva injunction must be proportionate and not extend beyond what is necessary to protect the applicant's interest. A properly drawn Mareva includes: (1) a carve-out for reasonable living expenses; (2) a carve-out for reasonable legal costs; and (3) it should generally be limited to assets up to the value of the applicant's claim. Worldwide Mareva orders (extending beyond the jurisdiction) are possible in exceptional cases but are not the default."
+    },
+    {
+      "id": "EQL_M05_L06_Q016",
+      "question": "A Mareva injunction, once obtained, is served on the defendant and their bank. The bank continues to allow withdrawals from the frozen account. What is the bank's legal position?",
+      "options": {
+        "A": "The bank is not liable as it is not a party to the main action",
+        "B": "The bank has breached its duty of confidentiality to the defendant",
+        "C": "The bank has knowingly assisted in breach of a court order and may be held in contempt of court",
+        "D": "The bank is only liable if the defendant was also in contempt"
+      },
+      "correct_answer": "C",
+      "explanation": "Once served with a Mareva injunction, a bank is bound by the order and must not permit withdrawals or transfers that would breach the freezing of the specified assets. If the bank knowingly assists the defendant in dissipating frozen assets — for example by allowing withdrawals — it may be held in contempt of court. Third party liability for knowingly assisting in breach of a court order is a well-established principle. The bank's duty to the court overrides its normal obligation to execute its customer's instructions."
+    },
+    {
+      "id": "EQL_M05_L06_Q017",
+      "question": "Which of the following would NOT be a sufficient ground to establish 'real risk of dissipation' for Mareva purposes?",
+      "options": {
+        "A": "Evidence that the defendant has transferred assets to offshore accounts in the weeks immediately before the application",
+        "B": "The defendant's history of evading creditors in previous litigation",
+        "C": "The defendant's nationality as a citizen of a non-EU country",
+        "D": "The defendant's public announcement of an intention to wind up the company and transfer remaining assets to shareholders"
+      },
+      "correct_answer": "C",
+      "explanation": "The defendant's nationality alone is not a sufficient ground to establish a real risk of dissipation — such an approach would amount to unlawful discrimination. The courts have rejected the idea that being a foreign national automatically creates a Mareva risk. Concrete, factual evidence is required: actual transfers (Option A), a history of evading creditors (Option B), or a publicly stated intention to dissipate assets (Option D) would all be relevant evidence of real risk."
+    },
+    {
+      "id": "EQL_M05_L06_Q018",
+      "question": "In Countyglen v Carway [1995], what was the basis on which the Irish Supreme Court confirmed the jurisdiction to grant Mareva injunctions?",
+      "options": {
+        "A": "The Supreme Court held that the Mareva jurisdiction was conferred by statute under the Courts Act",
+        "B": "The Supreme Court held that the Mareva jurisdiction is part of the inherent jurisdiction of the Irish courts",
+        "C": "The Supreme Court held that the Mareva jurisdiction derived from European Union law",
+        "D": "The Supreme Court held that the Mareva jurisdiction was conferred by the Trustee Act 1893"
+      },
+      "correct_answer": "B",
+      "explanation": "In Countyglen v Carway [1995], the Irish Supreme Court confirmed that the jurisdiction to grant Mareva injunctions is part of the inherent jurisdiction of the Irish courts — not a statutory creation. This means the jurisdiction flows from the court's inherent power to grant equitable relief necessary to do justice between parties, rather than from any specific legislative provision. This confirmation established Mareva relief as firmly part of Irish equity law."
+    },
+    {
+      "id": "EQL_M05_L06_Q019",
+      "question": "The applicant for a Mareva injunction must give an undertaking as to damages. If the injunction is wrongly granted and the main action fails, the consequence is:",
+      "options": {
+        "A": "No consequence — undertakings as to damages are unenforceable in Mareva cases",
+        "B": "The defendant may enforce the undertaking and recover losses suffered as a result of assets being wrongly frozen",
+        "C": "The applicant must return all legal costs to the defendant",
+        "D": "The court will immediately discharge the defendant from all obligations under the main claim"
+      },
+      "correct_answer": "B",
+      "explanation": "If a Mareva injunction is wrongly granted and the applicant ultimately fails in the main action, the defendant may apply to enforce the undertaking as to damages. The defendant can then recover losses directly caused by the wrongful freezing of their assets — for example, lost business opportunities, interest on frozen funds, and consequential losses from inability to access capital. The undertaking as to damages is the primary safeguard for defendants in Mareva proceedings."
+    },
+    {
+      "id": "EQL_M05_L06_Q020",
+      "question": "For FE-1 examination purposes, the best answer on Mareva injunctions should cover which elements?",
+      "options": {
+        "A": "Only the three requirements and the leading case Countyglen v Carway",
+        "B": "The three requirements (good arguable case; assets within jurisdiction; real risk of dissipation); the ex parte nature and rationale; the in personam character and secured creditor position; the safeguards (carve-outs for expenses and costs, proportionate scope); third party obligations; undertaking as to damages; and the leading cases",
+        "C": "Only the comparison between Mareva and Anton Piller orders",
+        "D": "The Campus Oil test applied to Mareva applications without distinguishing the specific Mareva requirements"
+      },
+      "correct_answer": "B",
+      "explanation": "A comprehensive FE-1 answer on Mareva injunctions should cover: (1) the three requirements (good arguable case; assets within jurisdiction; real risk of dissipation); (2) the ex parte nature and the rationale (giving notice would defeat the purpose); (3) the in personam character — no proprietary claim, applicant remains unsecured creditor; (4) the safeguards (carve-outs, proportionate scope); (5) third party obligations (banks bound, contempt for knowing breach); (6) undertaking as to damages; and (7) leading cases (Mareva Compania Naviera [1975]; Countyglen v Carway [1995])."
+    },
+    {
+      "id": "EQL_M05_L06_Q021",
+      "question": "How does the purpose of a Mareva injunction differ from the purpose of an Anton Piller order?",
+      "options": {
+        "A": "A Mareva injunction preserves evidence; an Anton Piller order freezes assets",
+        "B": "A Mareva injunction freezes assets to protect the enforceability of a future judgment; an Anton Piller order preserves evidence or materials at risk of destruction",
+        "C": "There is no practical difference — both orders achieve asset preservation",
+        "D": "An Anton Piller order is available against third parties; a Mareva injunction can only be made against the defendant"
+      },
+      "correct_answer": "B",
+      "explanation": "The purposes are distinct: a Mareva injunction freezes the defendant's financial assets to protect the enforceability of a future judgment — it protects against asset dissipation that would render any judgment worthless. An Anton Piller order authorises entry to premises and seizure of documents or materials — it protects against the destruction of evidence needed for the main proceedings. Both are ex parte extraordinary remedies, but they address entirely different practical problems."
+    },
+    {
+      "id": "EQL_M05_L06_Q022",
+      "question": "A defendant whose assets are frozen by a Mareva injunction becomes insolvent before judgment is entered. What is the applicant's position regarding the frozen assets?",
+      "options": {
+        "A": "The applicant has priority over other creditors in respect of the frozen assets",
+        "B": "The applicant has no priority — as an unsecured creditor, they rank equally with other unsecured creditors in the insolvency; the Mareva did not create a proprietary interest",
+        "C": "The Mareva injunction automatically converts into a fixed charge over the frozen assets upon insolvency",
+        "D": "The frozen assets vest in the applicant automatically upon the defendant's insolvency"
+      },
+      "correct_answer": "B",
+      "explanation": "This question tests the critical point that a Mareva injunction does not create a proprietary interest or security in the applicant's favour. The applicant remains an unsecured creditor. If the defendant becomes insolvent, the applicant has no priority over the frozen assets — they rank equally with all other unsecured creditors. The Mareva protected against voluntary dissipation, but it provides no protection against insolvency proceedings in which all unsecured creditors are treated equally."
+    }
+  ]
+}

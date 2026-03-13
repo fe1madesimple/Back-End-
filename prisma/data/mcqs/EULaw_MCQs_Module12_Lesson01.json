@@ -1,0 +1,155 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module12_Lesson01.txt",
+  "module_number": 12,
+  "module_title": "EU Equality Law",
+  "lesson_number": 1,
+  "lesson_title": "Article 157 TFEU, Equal Pay, and Directive 2006/54",
+  "questions": [
+    {
+      "id": "EUL_M12_L01_Q01",
+      "question": "Article 157 TFEU requires member states to ensure equal pay for male and female workers for 'equal work or work of equal value'. In Defrenne v Sabena (No. 2) [1976] (C-43/75), the CJEU held that Article 157 (then Article 119 EEC):",
+      "options": {
+        "A": "Is not directly effective — it merely imposes an obligation on member states to legislate",
+        "B": "Is directly effective both vertically (against the state) and horizontally (against private employers) — it creates individual rights enforceable in national courts",
+        "C": "Is only directly effective vertically against public employers",
+        "D": "Requires implementing legislation in each member state before individuals can rely on it"
+      },
+      "correct_answer": "B",
+      "explanation": "Defrenne (No. 2) is a landmark ruling establishing the horizontal direct effect of Article 157 TFEU (then Article 119 EEC). Ms Defrenne, an air hostess employed by Sabena (a private airline), was paid less than male colleagues. The CJEU held that the principle of equal pay has direct effect both as between the state and individuals and as between private individuals — it can be invoked before national courts against private employers. This was exceptional at the time: most Treaty provisions had only vertical direct effect. The Court grounded this in the dual purpose of Article 119/157: economic (preventing competitive distortions) and social (improving living and working conditions). The horizontal direct effect of Article 157 is now firmly established."
+    },
+    {
+      "id": "EUL_M12_L01_Q02",
+      "question": "The concept of 'pay' under Article 157(2) TFEU is defined broadly. In Garland v British Rail Engineering Ltd [1982] (C-12/81), the CJEU held that 'pay' includes:",
+      "options": {
+        "A": "Only basic wage or salary — discretionary benefits are excluded",
+        "B": "Only benefits expressly provided for in the worker's contract of employment",
+        "C": "Special travel facilities granted by employers to retired employees and their families — any benefit, in cash or in kind, received by a worker from their employer in connection with employment constitutes 'pay'",
+        "D": "Only monetary payments — in-kind benefits are not 'pay' for the purposes of Article 157"
+      },
+      "correct_answer": "C",
+      "explanation": "Garland established that the concept of 'pay' under Article 157 is extremely broad. British Rail granted special travel facilities to male retired employees and their families but not to female retired employees' families. The CJEU held this constituted discriminatory pay. Pay includes any consideration — whether in cash or in kind — which the worker receives, directly or indirectly, from the employer in respect of employment. The fact that the benefit is discretionary, paid after termination of employment, or provided to family members does not take it outside the concept of 'pay'. Subsequent cases have confirmed that occupational pensions (Barber), bonus payments, redundancy pay, and non-contractual benefits all fall within Article 157."
+    },
+    {
+      "id": "EUL_M12_L01_Q03",
+      "question": "Barber v Guardian Royal Exchange Assurance Group [1990] (C-262/88) concerned occupational pensions and equal pensionable age. The CJEU held:",
+      "options": {
+        "A": "Occupational pensions are excluded from Article 157 as they are a matter of national social security law",
+        "B": "Occupational pension benefits constitute 'pay' under Article 157 — the pensionable age must be equal for men and women; member state social security schemes are excluded but contracted-out occupational schemes are included",
+        "C": "Occupational pensions are pay only where the employer makes contributions — employee-funded schemes are excluded",
+        "D": "Equal pensionable age applies only to state pension schemes, not to private occupational schemes"
+      },
+      "correct_answer": "B",
+      "explanation": "Barber is one of the most significant Article 157 cases. The CJEU held that occupational pension benefits (including pension age and access conditions) constitute 'pay' under Article 157 and must be equal for men and women. Mr Barber was made redundant aged 52 but could not access his pension until 62 (men's pensionable age), while women could access it at 57. The Court distinguished occupational pensions (Article 157 'pay') from statutory state social security schemes (excluded from Article 157, governed by Directive 79/7). The temporal limitation the Court imposed — Barber principle applies only to pension entitlements accruing after the judgment date — was subsequently codified in a Protocol attached to the Maastricht Treaty (the 'Barber Protocol')."
+    },
+    {
+      "id": "EUL_M12_L01_Q04",
+      "question": "In Jenkins v Kingsgate (Clothing Productions) Ltd [1981] (C-96/80), a lower hourly rate for part-time workers (who were predominantly female) was challenged under Article 157. The CJEU held:",
+      "options": {
+        "A": "Part-time work pay differentials are always lawful as they apply to part-time workers regardless of sex",
+        "B": "A pay differential between part-time and full-time workers constitutes indirect sex discrimination if the lower rate adversely affects a considerably larger proportion of women than men, unless the difference is attributable to objective factors unrelated to discrimination on grounds of sex",
+        "C": "Part-time workers have no rights under Article 157 as it applies only to full-time employment",
+        "D": "Pay differentials based on working hours are direct discrimination as they target part-time workers who are predominantly female"
+      },
+      "correct_answer": "B",
+      "explanation": "Jenkins established the concept of indirect pay discrimination under Article 157. Where a pay difference between part-time and full-time workers disproportionately disadvantages women (because far more women than men work part-time), it constitutes indirect sex discrimination unless objectively justified by factors unrelated to sex. The employer cannot justify the differential merely by pointing to the part-time/full-time distinction — the Court requires genuine objective justification. Jenkins was later refined by Bilka-Kaufhaus v Weber von Hartz [1986], which established the test for objective justification of indirectly discriminatory pay practices: the measures must correspond to a genuine need of the enterprise, be appropriate to achieve the objective, and be necessary to that end."
+    },
+    {
+      "id": "EUL_M12_L01_Q05",
+      "question": "In Bilka-Kaufhaus GmbH v Weber von Hartz [1986] (C-170/84), the CJEU established the test for objectively justifying an indirectly discriminatory pay practice (excluding part-time workers from an occupational pension scheme). The objective justification test requires:",
+      "options": {
+        "A": "That the employer demonstrates genuine cost savings — economic efficiency is always an acceptable justification",
+        "B": "That the measures correspond to a genuine need of the enterprise, are appropriate with a view to achieving the objectives pursued, and are necessary to that end — economic grounds can justify indirectly discriminatory measures but must satisfy this proportionality test",
+        "C": "That the employer obtains government approval for the differential before applying it",
+        "D": "Only that the measure is applied consistently to all part-time workers regardless of sex"
+      },
+      "correct_answer": "B",
+      "explanation": "Bilka-Kaufhaus is the leading case on objective justification for indirect pay discrimination. The test has three elements: (1) the measures must correspond to a genuine need of the enterprise; (2) they must be appropriate (suitable) to achieve the objective pursued; and (3) they must be necessary (proportionate) — going no further than required. The Court acknowledged that economic grounds (such as encouraging full-time work) can in principle justify indirectly discriminatory pay measures, but only if the employer demonstrates a genuine enterprise need. Administrative convenience, generalised assumptions, or mere cost-reduction without genuine necessity will not suffice. This test applies to both employer-imposed conditions and collectively agreed pay structures (Enderby [1993])."
+    },
+    {
+      "id": "EUL_M12_L01_Q06",
+      "question": "In Enderby v Frenchay Health Authority [1993] (C-127/92), the applicant (a speech therapist, predominantly female profession) was paid significantly less than pharmacists and clinical psychologists (predominantly male professions) of equivalent value. The health authority argued the pay gap was due to separate collective bargaining processes. The CJEU held:",
+      "options": {
+        "A": "Collective bargaining always objectively justifies pay differentials between different employee categories",
+        "B": "The fact that pay rates are determined by separate collective bargaining processes — each non-discriminatory in itself — does not, by itself, constitute objective justification for a pay differential where the statistics show a significant disparity between predominantly female and predominantly male job categories",
+        "C": "Collective agreements bind the CJEU — national courts cannot review collectively agreed pay rates",
+        "D": "Pay disparities between different professional categories are outside the scope of Article 157 as they involve work of a different type"
+      },
+      "correct_answer": "B",
+      "explanation": "Enderby is significant for establishing that separate collective bargaining processes do not automatically justify pay differentials between predominantly female and predominantly male job groups of equal value. Where statistics reveal a significant difference in pay between two groups doing work of equal value, and one group is predominantly female and the other predominantly male, this establishes a prima facie case of indirect discrimination. The burden then shifts to the employer to justify the differential. Merely pointing to separate (non-discriminatory) bargaining processes is insufficient — the historical origins of a pay gap cannot alone constitute objective justification. The employer must demonstrate genuine objective reasons, which may partially account for the difference but proportionately."
+    },
+    {
+      "id": "EUL_M12_L01_Q07",
+      "question": "Directive 2006/54 (the Recast Directive) consolidates and updates EU law on sex discrimination in employment. Regarding the burden of proof in sex discrimination cases, Directive 2006/54 Article 19 provides:",
+      "options": {
+        "A": "The complainant bears the full burden of proving sex discrimination throughout the proceedings",
+        "B": "Once a complainant establishes facts from which discrimination may be presumed (a prima facie case), the burden shifts to the respondent to prove that no breach of the principle of equal treatment has occurred",
+        "C": "The burden of proof lies entirely with the employer from the outset of the proceedings",
+        "D": "Courts must accept statistics showing disparity as conclusive evidence of discrimination without any rebuttal opportunity for the employer"
+      },
+      "correct_answer": "B",
+      "explanation": "Directive 2006/54 Article 19 codifies the burden of proof rule developed in cases like Danfoss [1989] and Enderby [1993]. The rule operates in two stages: first, the complainant must establish facts from which discrimination may be presumed — a prima facie case (often established through statistics showing disproportionate adverse impact). Once this threshold is reached, the burden shifts to the respondent (employer) to prove that no breach of equal treatment has occurred — i.e., to show an objective justification or that the difference is not sex-related. This shifted burden is a crucial procedural mechanism that would otherwise make indirect discrimination claims almost impossible to prove (since pay structures and decision-making processes are within the employer's knowledge)."
+    },
+    {
+      "id": "EUL_M12_L01_Q08",
+      "question": "What is the difference between 'equal pay for equal work' and 'equal pay for work of equal value' under Article 157 TFEU and Directive 2006/54?",
+      "options": {
+        "A": "'Equal work' means identical jobs; 'work of equal value' requires a formal job evaluation study — without such a study, an equal value claim cannot proceed",
+        "B": "'Equal work' covers the same or very similar work; 'work of equal value' extends the comparison to different jobs that are assessed as equivalent in value through objective criteria such as skill, effort, responsibility, and working conditions — both are protected under Article 157",
+        "C": "'Equal pay for equal work' applies to identical jobs; 'work of equal value' applies only in public sector employment",
+        "D": "Article 157 covers only 'equal work' — 'work of equal value' was added exclusively by Directive 2006/54 and has no Treaty basis"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 157 TFEU expressly covers both 'equal work' and 'work of equal value'. 'Equal work' encompasses the same or substantially similar jobs. 'Work of equal value' extends the comparison to entirely different jobs — a comparator performing different work can be used if the work is assessed as equivalent in value. The assessment involves objective criteria: skill, effort, responsibility, and working conditions. Job evaluation schemes may be used but are not mandatory — courts can assess equal value themselves. This extension is crucial because traditionally female-dominated professions are often paid less than male-dominated professions of equivalent complexity and responsibility. The Directive 2006/54 consolidates this, and Commission v UK [1982] confirmed that member states must provide a means of claiming equal pay for work of equal value."
+    },
+    {
+      "id": "EUL_M12_L01_Q09",
+      "question": "Article 157(4) TFEU expressly permits member states to maintain or adopt measures providing for 'specific advantages' to make it easier for the 'underrepresented sex' to pursue vocational activity or to prevent/compensate for disadvantages. This provision:",
+      "options": {
+        "A": "Allows unlimited positive action — any measure favouring women is automatically lawful",
+        "B": "Permits positive action measures that go beyond strict equal treatment to promote equality in practice — but such measures must still be proportionate and not constitute automatic mechanical priority for one sex",
+        "C": "Applies only to public sector employment — private employers cannot rely on Article 157(4)",
+        "D": "Supersedes all other Article 157 obligations — member states may lawfully pay women more than men without justification"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 157(4) TFEU provides an explicit Treaty basis for positive action in employment. It allows measures giving advantages to the underrepresented sex to promote equality in practice — going beyond the formal equal treatment principle. However, as the CJEU has clarified in Kalanke [1995], Marschall [1997], Badeck [2000], and Abrahamsson [2000], positive action measures must be proportionate and targeted. They cannot operate as automatic absolute priority rules — there must be a substantive assessment of individual merit with a 'saving clause' allowing consideration of individual circumstances. Article 157(4) is the Treaty foundation; the specific positive action rules for employment are developed through the case law on Directive 76/207 (now 2006/54)."
+    },
+    {
+      "id": "EUL_M12_L01_Q10",
+      "question": "Under Directive 2006/54, which of the following constitutes direct sex discrimination?",
+      "options": {
+        "A": "A company-wide pay freeze that, due to existing pay gap, perpetuates lower pay for women",
+        "B": "A requirement that workers must have worked full-time continuously for five years to qualify for enhanced redundancy pay, where 80% of part-time workers are women",
+        "C": "Dismissal of a female employee because she is pregnant — less favourable treatment on grounds of pregnancy constitutes direct sex discrimination",
+        "D": "A requirement for a minimum number of years' service to qualify for pension membership that disadvantages younger workers who are disproportionately female"
+      },
+      "correct_answer": "C",
+      "explanation": "Under Directive 2006/54, direct discrimination occurs when one person is treated less favourably on grounds of sex than another is, has been, or would be treated in a comparable situation. The CJEU has consistently held that dismissal or refusal to hire on grounds of pregnancy constitutes direct sex discrimination — since pregnancy is a condition unique to women, treatment less favourable because of pregnancy is necessarily sex-based (Dekker [1990]; Webb [1994]). Unlike indirect discrimination, direct discrimination cannot be justified by objective factors — pregnancy-based dismissal is unlawful regardless of the employer's business reasons. Options A, B, and D describe situations of potential indirect discrimination (facially neutral rules with disproportionate impact) rather than direct sex discrimination."
+    },
+    {
+      "id": "EUL_M12_L01_Q11",
+      "question": "Directive 2006/54 Article 14 prohibits discrimination in 'access to employment, promotion, vocational training, and working conditions'. Article 14(2) provides a narrow exception for a 'genuine occupational requirement' (GOR). The GOR exception requires:",
+      "options": {
+        "A": "Only that the employer believes a particular sex is more suitable for the role",
+        "B": "That being of a particular sex constitutes a genuine and determining occupational requirement — the objective must be legitimate and the requirement proportionate; this exception is to be interpreted strictly",
+        "C": "That the employer demonstrates economic necessity for the sex-specific requirement",
+        "D": "Automatic approval from national equality bodies before a GOR can be relied upon"
+      },
+      "correct_answer": "B",
+      "explanation": "The GOR exception in Directive 2006/54 Article 14(2) (replacing the previous Article 2(2) of Directive 76/207) is extremely narrow. Being of a particular sex must constitute a 'genuine and determining occupational requirement' — the characteristic must be truly central to the job, not merely preferred or convenient. The objective must be legitimate (not mere preference or customer/client expectation), and the requirement must be proportionate. Classic examples include actors for authenticity roles or same-sex carers in sensitive personal care situations. Employers cannot rely on generalised assumptions about one sex's suitability or customer preferences (Bougnaoui [2017]). The exception is to be interpreted strictly — it must never become a basis for general exclusion of one sex from categories of employment."
+    },
+    {
+      "id": "EUL_M12_L01_Q12",
+      "question": "The principle of equal pay under Article 157 TFEU requires a 'comparator'. In the context of 'work of equal value', which of the following is correct regarding the choice of comparator?",
+      "options": {
+        "A": "The comparator must perform identical work in the same department",
+        "B": "The comparator must be employed by the same employer or an employer to whose establishment the same pay conditions apply — cross-employer comparisons are generally not permitted unless a common source determines pay conditions for both",
+        "C": "The comparator may be any worker in the same industry sector, even with a different employer",
+        "D": "Hypothetical comparators are always acceptable under Article 157 — no actual male comparator is needed"
+      },
+      "correct_answer": "B",
+      "explanation": "The CJEU has held that Article 157 comparisons require a 'single source' to be responsible for the pay inequality — i.e., there must be a body that could restore equal treatment. In Lawrence [2002], supermarket workers (predominantly female) who had been transferred to a contractor tried to compare themselves with their former direct employer's workers. The Court held this comparison was impermissible because the different employer (the contractor) was not responsible for the pay conditions of the comparator workers — there was no 'single source'. Within the same employer, comparators across establishments or departments are generally permissible. The 'single source' test rather than strict same-employer requirement is the key principle. Hypothetical comparators are not accepted under Article 157 (contrast with some national laws)."
+    }
+  ],
+  "total_questions": 12
+}

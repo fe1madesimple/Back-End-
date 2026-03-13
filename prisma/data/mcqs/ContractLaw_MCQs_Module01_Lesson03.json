@@ -1,0 +1,278 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": [
+    "ContractLaw_ElevenLabs_Module01_Lesson02.txt",
+    "ContractLaw_ElevenLabs_Module01_Lesson03.txt"
+  ],
+  "module_number": 1,
+  "module_title": "Formation of a Contract",
+  "lesson_number": 3,
+  "lesson_title": "Consideration",
+  "total_questions": 22,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following best states the classic definition of consideration in contract law?",
+      "options": {
+        "A": "A benefit conferred on the promisor or a detriment suffered by the promisee at the promisor's request",
+        "B": "Any act or forbearance, past or future, that the parties agree is of value",
+        "C": "A written acknowledgment that a party intends to be bound by a promise",
+        "D": "Money or money's worth passing from the promisee to the promisor"
+      },
+      "correct_answer": "A",
+      "explanation": "The classic definition of consideration from Currie v Misa [1875] states: 'A valuable consideration, in the sense of the law, may consist either in some right, interest, profit, or benefit accruing to the one party, or some forbearance, detriment, loss, or responsibility, given, suffered, or undertaken by the other.' It must move from the promisee at the promisor's request."
+    },
+    {
+      "id": 2,
+      "question": "The rule that 'consideration must not be past' means:",
+      "options": {
+        "A": "Consideration must be of equal or greater value than the promise it supports",
+        "B": "An act or forbearance that occurred before the promise was made cannot constitute consideration for that promise",
+        "C": "Consideration must be provided at the same time the contract is signed",
+        "D": "Consideration cannot consist of a past debt"
+      },
+      "correct_answer": "B",
+      "explanation": "Past consideration is no consideration. If the act or forbearance relied upon as consideration was performed before the promise was made, it cannot support that promise because it was not given in exchange for it. The classic example is Roscorla v Thomas [1842]: a warranty about a horse made after the sale was unsupported by consideration because the purchase money was already paid."
+    },
+    {
+      "id": 3,
+      "question": "The exception to the past consideration rule — where a past act may ground a subsequent promise — requires which of the following conditions (per Lampleigh v Braithwait [1615] and Pao On v Lau Yiu Long [1980] PC)?",
+      "options": {
+        "A": "The past act must have been performed at the promisor's request, with an understanding that payment would follow, and the subsequent promise must be legally enforceable",
+        "B": "The past act must have been performed gratuitously with no expectation of reward",
+        "C": "The past act must have been performed in writing and witnessed by a third party",
+        "D": "The subsequent promise must be made before any benefit has been received by the promisor"
+      },
+      "correct_answer": "A",
+      "explanation": "Under the exception in Lampleigh v Braithwait [1615], confirmed by the Privy Council in Pao On v Lau Yiu Long [1980], past consideration can support a subsequent promise where: (1) the act was done at the promisor's request; (2) it was understood at the time that payment or a reward would follow; and (3) the subsequent promise was legally enforceable. All three conditions must be satisfied."
+    },
+    {
+      "id": 4,
+      "question": "Which of the following correctly states the rule that 'consideration must move from the promisee'?",
+      "options": {
+        "A": "The promisee must provide consideration, but that consideration need not move to the promisor",
+        "B": "Consideration may be provided by a third party on behalf of the promisee",
+        "C": "The promisee who seeks to enforce a promise must themselves have provided consideration for it",
+        "D": "Consideration need only move from one of the contracting parties"
+      },
+      "correct_answer": "C",
+      "explanation": "Consideration must move from the promisee: the party seeking to enforce a promise must themselves have provided consideration for it (Tweddle v Atkinson [1861]). This is closely related to the privity doctrine. A third party who did not provide consideration cannot enforce the promise, even if they would benefit from its performance."
+    },
+    {
+      "id": 5,
+      "question": "The rule that 'consideration need not be adequate but must be sufficient' means:",
+      "options": {
+        "A": "Courts will enquire into whether consideration is commercially fair or proportionate",
+        "B": "Consideration need not be of equal value to the promise, but it must have some legal value recognisable by the law",
+        "C": "Consideration must be at least equivalent to the minimum wage for any service rendered",
+        "D": "Nominal or token consideration is always insufficient to support a commercial contract"
+      },
+      "correct_answer": "B",
+      "explanation": "Courts do not require consideration to be adequate (commercially proportionate or fair) — that is a matter for the parties. However, consideration must be sufficient, meaning it must have some legal value recognised by the law. A peppercorn can be good consideration if genuinely bargained for (Thomas v Thomas [1842]). Courts do not investigate adequacy, but they will refuse to recognise something of no legal value as consideration."
+    },
+    {
+      "id": 6,
+      "question": "In Foakes v Beer [1884], the House of Lords held that:",
+      "options": {
+        "A": "Part payment of a debt, even with additional terms, always discharges the full debt",
+        "B": "An agreement to accept part payment of a debt in full satisfaction is unenforceable for lack of consideration",
+        "C": "Promissory estoppel operated to enforce Beer's promise not to claim the balance",
+        "D": "Payment by a third party on behalf of the debtor fully discharges the debt"
+      },
+      "correct_answer": "B",
+      "explanation": "In Foakes v Beer [1884], the House of Lords applied the rule in Pinnel's Case [1602] and held that Beer's promise to accept instalments in full satisfaction of the judgment debt was unenforceable because Foakes provided no additional consideration for that concession. Part payment of a debt is not consideration for a promise to forgo the balance — the debtor does no more than they are already obliged to do."
+    },
+    {
+      "id": 7,
+      "question": "In Williams v Roffey Bros & Nicholls (Contractors) Ltd [1991], the Court of Appeal held that a promise to pay extra money to a subcontractor who was already bound by an existing contract was enforceable because:",
+      "options": {
+        "A": "The courts relaxed the rule that performance of an existing duty cannot be consideration",
+        "B": "The promise was supported by fresh consideration in the form of a practical benefit obtained by Roffey Bros from Williams' continued performance",
+        "C": "The original contract had been frustrated by unforeseen circumstances",
+        "D": "Promissory estoppel provided an alternative basis for enforcement"
+      },
+      "correct_answer": "B",
+      "explanation": "In Williams v Roffey Bros [1991], the Court of Appeal held that the promise to pay extra to Williams was enforceable because Roffey Bros derived a practical benefit — they avoided the penalty clause in their main contract and the need to find another subcontractor. A practical benefit to the promisor (even without a legal benefit) can constitute fresh consideration. This case qualifies (but does not overrule) Stilk v Myrick [1809]."
+    },
+    {
+      "id": 8,
+      "question": "What is the rule in Stilk v Myrick [1809]?",
+      "options": {
+        "A": "Performance of a pre-existing contractual duty owed to the promisor cannot constitute consideration for a new promise",
+        "B": "A promise to pay a sailor additional wages is always enforceable at sea",
+        "C": "Existing contractual duties can always constitute consideration for a subsequent promise",
+        "D": "Performance of a pre-existing duty is sufficient consideration provided the promisee acts in good faith"
+      },
+      "correct_answer": "A",
+      "explanation": "In Stilk v Myrick [1809], sailors who agreed to sail a ship home short-handed were promised extra pay. The court held that no contract for the extra pay existed because the sailors did no more than they were already contractually obliged to do — there was no fresh consideration. Performing an existing contractual duty owed to the promisor cannot constitute consideration for an additional promise."
+    },
+    {
+      "id": 9,
+      "question": "Which of the following constitutes valid consideration even though it involves performing an existing duty?",
+      "options": {
+        "A": "A public duty, such as a police officer attending an incident they are already obliged to attend",
+        "B": "Performance of a duty owed to a third party (not the promisor)",
+        "C": "Performance of a duty already owed to the same promisor under an existing contract",
+        "D": "A duty imposed by statute on the party claiming consideration"
+      },
+      "correct_answer": "B",
+      "explanation": "Performance of a contractual duty owed to a third party (not the promisor) can constitute valid consideration for the promisor's promise. In The Eurymedon [1975] (PC) and Shadwell v Shadwell [1860], performance of a duty owed to a third party was held to be good consideration. The crucial distinction is that the promisor receives a benefit they were not previously entitled to demand."
+    },
+    {
+      "id": 10,
+      "question": "In the context of part payment of debt, which of the following would constitute sufficient consideration to discharge a greater debt?",
+      "options": {
+        "A": "A smaller amount paid on time by an established customer",
+        "B": "Part payment made at an earlier date, a different place, or accompanied by some additional act at the creditor's request",
+        "C": "Part payment with a personal cheque instead of cash",
+        "D": "Part payment made in the presence of a witness"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the rule in Pinnel's Case [1602], part payment of a debt at a different time (earlier), place, or accompanied by some additional consideration (e.g., a chattel) at the creditor's request can be sufficient to discharge the full debt. The 'new element' — earlier payment, different place, or an added item — provides the consideration needed to support the creditor's promise to forgo the balance."
+    },
+    {
+      "id": 11,
+      "question": "Which of the following correctly describes the doctrine of promissory estoppel as developed in Central London Property Trust v High Trees House [1947]?",
+      "options": {
+        "A": "A promise supported by consideration is enforceable even if the promisor later tries to withdraw",
+        "B": "Where a promisor makes a clear representation that strict legal rights will not be enforced, and the promisee relies on it, the promisor is estopped from going back on that representation",
+        "C": "A promise made without consideration is always enforceable in equity",
+        "D": "Promissory estoppel creates new rights but does not extinguish existing ones"
+      },
+      "correct_answer": "B",
+      "explanation": "In the High Trees case [1947], Denning J held that where a landlord had agreed to accept reduced rent and the tenant had relied on this, the landlord was estopped from claiming arrears for the period of the war. Promissory estoppel operates as a shield: where a promisor makes a clear promise that legal rights will not be enforced, and the promisee relies to their detriment, equity prevents the promisor from resiling without reasonable notice."
+    },
+    {
+      "id": 12,
+      "question": "The principle that promissory estoppel 'shields but does not sword' means:",
+      "options": {
+        "A": "Promissory estoppel can be used by a defendant to resist a claim but generally cannot be used by a claimant to found a cause of action",
+        "B": "Promissory estoppel can extinguish existing rights permanently",
+        "C": "Promissory estoppel operates identically to proprietary estoppel",
+        "D": "A promisee may sue for damages equivalent to the value of the promise"
+      },
+      "correct_answer": "A",
+      "explanation": "The orthodox English (and Irish) position is that promissory estoppel is a defensive doctrine — it can be used as a shield (defence) but not as a sword (cause of action). In Combe v Combe [1951], Denning LJ confirmed that promissory estoppel cannot found an independent cause of action; it suspends or extinguishes rights but does not create new ones. Some jurisdictions (e.g., Australia) take a more expansive view."
+    },
+    {
+      "id": 13,
+      "question": "In Re McArdle [1951], the Court of Appeal held that a promise to pay for improvements already carried out on a house was unenforceable because:",
+      "options": {
+        "A": "The improvements had been made to a shared property without written authority",
+        "B": "The consideration was past — the improvements were made before the promise to pay",
+        "C": "The promise was not witnessed and therefore did not satisfy formal requirements",
+        "D": "The parties lacked intention to create legal relations"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re McArdle [1951], family members carried out improvements on a house and subsequently obtained a promise from the other beneficiaries to pay for the work. The Court of Appeal held the promise unenforceable because all the work had been completed before the promise was made — the consideration was entirely past and could not support the subsequent promise."
+    },
+    {
+      "id": 14,
+      "question": "Consideration must be of some value in the eyes of the law. Which of the following has been held NOT to constitute valid consideration?",
+      "options": {
+        "A": "A peppercorn rent",
+        "B": "Forbearance from pursuing a valid legal claim",
+        "C": "Performance of a pre-existing public duty with no additional element",
+        "D": "The transfer of nominal shares at less than market value"
+      },
+      "correct_answer": "C",
+      "explanation": "Performance of a pre-existing public duty cannot constitute consideration for an additional promise. In Collins v Godefroy [1831], a witness who was legally obliged to attend court could not claim additional payment for doing so. An officer performing their statutory duty provides no additional benefit to the promisor. Where, however, a public officer goes beyond their duty, this may constitute good consideration (Glasbrook Bros v Glamorgan CC [1925])."
+    },
+    {
+      "id": 15,
+      "question": "In the Irish case of Revenue Commissioners v Moroney [1972], the principle that natural love and affection does not constitute valuable consideration was affirmed. This means:",
+      "options": {
+        "A": "Family contracts are always void for lack of consideration",
+        "B": "A promise made purely out of love, with no legal benefit or detriment, is not legally binding without other consideration",
+        "C": "Deeds are necessary to make gifts to family members legally binding",
+        "D": "The courts will imply consideration in transactions between family members"
+      },
+      "correct_answer": "B",
+      "explanation": "Natural love and affection, while morally valuable, does not constitute legal consideration in Irish and English law. A promise made purely for sentimental or familial reasons, without a legal benefit to the promisor or legal detriment to the promisee, cannot be enforced as a contract. However, a deed can make such promises enforceable without the need for consideration."
+    },
+    {
+      "id": 16,
+      "question": "The rule in Pinnel's Case [1602], as affirmed in Foakes v Beer [1884], provides that:",
+      "options": {
+        "A": "Payment of a lesser sum can never discharge a greater debt under any circumstances",
+        "B": "Payment of a lesser sum on the day due cannot satisfy a debt for a larger amount, but early payment, payment at a different place, or payment with a chattel may do so",
+        "C": "A creditor who agrees to accept part payment is always bound by that agreement",
+        "D": "Part payment by a third party does not discharge the debtor's obligation"
+      },
+      "correct_answer": "B",
+      "explanation": "The rule in Pinnel's Case [1602] states that payment of a lesser sum on the very day it is due cannot, at common law, be satisfaction of a greater debt. However, payment at an earlier time, at a different place, or accompanied by something additional (e.g., a chattel) at the creditor's request can suffice, because that additional element provides consideration for the promise to forgo the balance."
+    },
+    {
+      "id": 17,
+      "question": "Which of the following requirements must be satisfied for promissory estoppel to operate?",
+      "options": {
+        "A": "The promise must be supported by consideration from the promisee",
+        "B": "There must be a pre-existing legal relationship, a clear promise not to enforce strict legal rights, and reliance by the promisee",
+        "C": "The promise must be made in writing and signed by the promisor",
+        "D": "The promise must be communicated to all parties who may be affected by it"
+      },
+      "correct_answer": "B",
+      "explanation": "For promissory estoppel to operate, the courts require: (1) a pre-existing legal relationship between the parties; (2) a clear and unambiguous promise or representation that strict legal rights will not be enforced; (3) reliance on that promise by the promisee (though detriment may or may not be required — the position in Ireland and England remains disputed); and (4) it would be inequitable for the promisor to go back on their promise."
+    },
+    {
+      "id": 18,
+      "question": "In the context of Williams v Roffey Bros [1991], which of the following is TRUE of the practical benefit doctrine?",
+      "options": {
+        "A": "It applies equally to promises to accept less than the full amount of a debt",
+        "B": "It was confirmed to apply to part payment of debt in Re Selectmove Ltd [1995]",
+        "C": "It applies to promises to pay more for performance of an existing contractual obligation but the Court of Appeal in Re Selectmove confined it to that context",
+        "D": "It has been adopted without qualification in Irish contract law"
+      },
+      "correct_answer": "C",
+      "explanation": "The practical benefit doctrine from Williams v Roffey Bros [1991] was limited by the Court of Appeal in Re Selectmove Ltd [1995] to the context of promises to pay more for existing obligations. The Court of Appeal refused to extend it to promises to accept less in full satisfaction of a debt (which would undermine Foakes v Beer [1884] as a House of Lords decision). The doctrine has been discussed but not definitively resolved in Irish courts."
+    },
+    {
+      "id": 19,
+      "question": "Which of the following scenarios would be analysed using the concept of 'forbearance to sue' as consideration?",
+      "options": {
+        "A": "A party who voluntarily withdraws a civil claim in exchange for a promise of payment from the defendant",
+        "B": "A party who delays bringing a claim purely because they forgot about it",
+        "C": "A party who abandons a criminal complaint in exchange for money",
+        "D": "A party who threatens litigation solely as a negotiating tactic with no genuine claim"
+      },
+      "correct_answer": "A",
+      "explanation": "Forbearance to sue — agreeing to refrain from pursuing a genuine legal claim — constitutes valid consideration, provided the claim being surrendered is a bona fide one with a reasonable chance of success (Callisher v Bischoffsheim [1870]). It confers a benefit on the promisor (freedom from litigation) and constitutes a detriment to the promisee (surrendering their legal right). Forbearing from a claim known to be invalid is not consideration."
+    },
+    {
+      "id": 20,
+      "question": "Which of the following is the correct Irish authority for the proposition that promissory estoppel cannot be used as a cause of action?",
+      "options": {
+        "A": "Revenue Commissioners v Moroney [1972]",
+        "B": "Duff v Minister for Agriculture (No 2) [1997]",
+        "C": "Combe v Combe [1951]",
+        "D": "Courtney v McCarthy [2007]"
+      },
+      "correct_answer": "B",
+      "explanation": "In Duff v Minister for Agriculture (No 2) [1997], the Irish Supreme Court engaged with the doctrine of legitimate expectation and the limits of estoppel. Irish courts have generally followed the English orthodoxy from Combe v Combe [1951] that promissory estoppel functions as a shield rather than a sword, meaning it can be raised defensively but does not create a standalone cause of action."
+    },
+    {
+      "id": 21,
+      "question": "A contract for the sale of a house at a nominal price of €1 is offered to a family member. What is the legal position as to consideration?",
+      "options": {
+        "A": "The €1 cannot be consideration because it is grossly inadequate and the courts will investigate adequacy",
+        "B": "The €1 is valid consideration because courts do not enquire into adequacy, only sufficiency, and €1 has legal value",
+        "C": "The contract is void because natural love and affection is the real motive",
+        "D": "The contract is voidable by the seller because the price is unreasonable"
+      },
+      "correct_answer": "B",
+      "explanation": "Courts do not enquire into the adequacy of consideration — they leave parties free to make their own bargains. Provided consideration has some legal value (is 'sufficient'), it will support a contract. €1, though nominal, has legal value and if genuinely bargained for is good consideration (Thomas v Thomas [1842]). The presence of a family relationship and true motive of generosity are irrelevant to the enforceability of the agreement as a contract."
+    },
+    {
+      "id": 22,
+      "question": "Under the doctrine of promissory estoppel, is the suspension of rights permanent or may the promisor resume enforcement?",
+      "options": {
+        "A": "Promissory estoppel always permanently extinguishes the rights suspended",
+        "B": "The promisor can generally resume enforcement of the original rights on giving reasonable notice, unless it would be impossible or inequitable to do so",
+        "C": "The promisor may resume enforcement immediately without giving any notice",
+        "D": "Once rights are suspended by promissory estoppel, only a court order can restore them"
+      },
+      "correct_answer": "B",
+      "explanation": "The orthodox view, following Tool Metal Manufacturing Co v Tungsten Electric Co [1955] and the High Trees case, is that promissory estoppel suspends (rather than extinguishes) legal rights. The promisor can generally resume enforcement on giving reasonable notice. However, where it is no longer possible for the promisee to revert to their original position (e.g., where the right has been permanently surrendered), the estoppel may permanently extinguish those rights."
+    }
+  ]
+}

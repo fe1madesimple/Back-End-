@@ -1,0 +1,215 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module10_Lesson02.txt",
+  "module_number": 10,
+  "module_title": "Corporate Decision-Making: Resolutions, Meetings and Board Governance",
+  "lesson_number": 2,
+  "lesson_title": "AGMs, EGMs and General Meeting Procedure",
+  "total_questions": 17,
+  "questions": [
+    {
+      "id": "CL_M10_L02_Q01",
+      "question": "Under s.175 CA 2014, which type of Irish private company is EXEMPT from the obligation to hold an annual general meeting (AGM)?",
+      "options": {
+        "A": "All private limited companies (LTDs) are exempt from the AGM obligation",
+        "B": "Only single-member companies are exempt from holding AGMs",
+        "C": "Private limited companies (LTDs) are exempt; DACs, CLGs, PLCs, and unlimited companies must hold AGMs",
+        "D": "Companies with fewer than 5 shareholders are exempt from the AGM requirement"
+      },
+      "correct_answer": "A",
+      "explanation": "Under s.175 CA 2014, private limited companies (LTDs) — the most common Irish company form — are not required to hold an AGM. This is a significant departure from the pre-2014 position. DACs, CLGs, PLCs, and unlimited companies retain the obligation to hold AGMs under s.176."
+    },
+    {
+      "id": "CL_M10_L02_Q02",
+      "question": "Under s.176 CA 2014, a DAC or other company type required to hold an AGM must do so within what time period, and what business must be transacted at the AGM?",
+      "options": {
+        "A": "Within 6 months of the financial year end; mandatory business includes consideration of accounts, directors' report, and auditors' report",
+        "B": "Within 9 months of the financial year end; mandatory business is purely at the directors' discretion",
+        "C": "Within 15 months of the previous AGM (and within 9 months of the financial year end in the first instance); mandatory business includes considering the accounts and reports",
+        "D": "Within 12 months of the previous AGM; no mandatory business is specified — the board determines the agenda"
+      },
+      "correct_answer": "C",
+      "explanation": "Under s.176 CA 2014, the AGM must be held within 15 months of the last AGM (and within 9 months of the financial year end for the first AGM). The mandatory business includes consideration of the company's statutory financial statements, the directors' report, and the auditors' report."
+    },
+    {
+      "id": "CL_M10_L02_Q03",
+      "question": "Under s.177 CA 2014, shareholders holding what minimum percentage of paid-up voting capital can requisition an Extraordinary General Meeting (EGM), and within what period must the directors convene it?",
+      "options": {
+        "A": "5% of paid-up voting capital; directors must convene within 21 days",
+        "B": "10% of paid-up voting capital; directors must convene within 21 days of requisition, and the meeting must be held within 2 months of the requisition",
+        "C": "15% of paid-up voting capital; directors have 28 days to convene",
+        "D": "25% of paid-up voting capital; directors must convene within 14 days of requisition"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.177 CA 2014, members holding not less than 10% of paid-up voting capital may requisition an EGM. The directors must convene the meeting within 21 days of receipt of the requisition, and the meeting must be held within 2 months. Failure by the directors to convene entitles the requisitionists to convene it themselves."
+    },
+    {
+      "id": "CL_M10_L02_Q04",
+      "question": "If the directors fail to convene an EGM following a valid s.177 requisition, what remedy do the requisitioning shareholders have under CA 2014?",
+      "options": {
+        "A": "They must apply to court for a mandatory order compelling the directors to hold the meeting",
+        "B": "The requisitionists themselves may convene the meeting at the company's expense within 3 months of their requisition",
+        "C": "The requisitionists may apply to the CRO to appoint an independent administrator to hold the meeting",
+        "D": "The shareholders may automatically pass the proposed resolution by written resolution under s.161 without a meeting"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.177(3) CA 2014, where the directors fail to convene an EGM within 21 days of a valid requisition, the requisitionists may themselves convene the meeting within 3 months. The reasonable expenses of doing so are recoverable from the company, and the directors responsible for the failure are personally liable to repay the company."
+    },
+    {
+      "id": "CL_M10_L02_Q05",
+      "question": "Pedley v Inland Waterways Association [1977] (England, applied in Ireland) addressed the right of members to include items on a general meeting agenda. What principle does this case illustrate?",
+      "options": {
+        "A": "Members may only add items to the agenda that are specified in the articles as ordinary business for the AGM",
+        "B": "Members who requisition a meeting for a specific purpose may not discuss matters beyond the stated purpose without unanimous shareholder consent",
+        "C": "The right to add business to a general meeting agenda belongs exclusively to the board — members have no statutory right to include items on the agenda unless the articles so provide",
+        "D": "Members holding the requisite threshold (typically 10%) may add items to the AGM agenda by serving notice on the company"
+      },
+      "correct_answer": "D",
+      "explanation": "Pedley v Inland Waterways Association [1977] establishes that members meeting the requisition threshold may require the company to include items of business on the AGM agenda. This right exists separately from the right to requisition a full EGM. Under CA 2014, s.181 provides similar rights for members to add resolutions to AGM agendas."
+    },
+    {
+      "id": "CL_M10_L02_Q06",
+      "question": "The Companies (Corporate Governance, Enforcement and Regulatory Provisions) Act 2024 inserted s.176A into CA 2014, permitting virtual or hybrid general meetings. What conditions or safeguards apply under s.176A?",
+      "options": {
+        "A": "Virtual meetings are permitted without restriction — all types of meetings may be held fully virtually at the board's discretion",
+        "B": "Virtual or hybrid meetings are permitted for all company types subject to the articles not prohibiting them; the technology used must allow all participants to see, hear, and speak in real time, and members must be able to exercise their rights effectively",
+        "C": "Virtual meetings are limited to private limited companies only and require a unanimous shareholder resolution approving virtual meeting format each year",
+        "D": "s.176A only permits virtual meeting attendance for shareholders outside Ireland — quorum must always include at least one member physically present at a designated location"
+      },
+      "correct_answer": "B",
+      "explanation": "s.176A CA 2014 (inserted by the 2024 Act) permits virtual and hybrid general meetings for all company types, subject to the articles not prohibiting them. The technology must ensure all participants can participate fully — see, hear, and speak in real time — to preserve the quality of participation that a physical meeting provides."
+    },
+    {
+      "id": "CL_M10_L02_Q07",
+      "question": "Short notice consent for a general meeting requires agreement from a specific proportion of shareholders. What proportion must agree to short notice for: (a) a meeting involving an ordinary resolution; and (b) a meeting to pass a special resolution?",
+      "options": {
+        "A": "(a) All shareholders; (b) 90% of shareholders by voting rights",
+        "B": "(a) A majority of shareholders by voting rights; (b) 75% by voting rights",
+        "C": "(a) 90% of shareholders by voting rights; (b) 90% of shareholders by voting rights — the same threshold applies to both",
+        "D": "(a) 51% by voting rights; (b) 75% by voting rights"
+      },
+      "correct_answer": "C",
+      "explanation": "Under CA 2014, short notice consent requires 90% of shareholders by voting rights for both ordinary resolution meetings and special resolution meetings. The single 90% threshold applies regardless of the type of resolution being proposed (unless the articles set a higher threshold). This is a change from the pre-2014 position where 95% was required for special resolutions."
+    },
+    {
+      "id": "CL_M10_L02_Q08",
+      "question": "A proxy votes on a poll at a general meeting. The appointing member subsequently changes their mind and attends the meeting in person. Does the member's physical attendance automatically revoke the proxy for voting purposes?",
+      "options": {
+        "A": "No — a proxy once appointed is irrevocable until the conclusion of the meeting for which it was issued",
+        "B": "Yes — a member's personal attendance at a meeting automatically revokes any proxy previously appointed for that meeting",
+        "C": "It depends — if the member gives the chairperson written notice of revocation before the proxy votes, it is revoked; otherwise the proxy vote stands",
+        "D": "No — the proxy must first be formally revoked in writing by the member; attendance alone does not revoke a proxy"
+      },
+      "correct_answer": "B",
+      "explanation": "The general rule under Irish company law is that a member's personal attendance at a general meeting automatically revokes any proxy they had previously appointed for that meeting. The member's presence supersedes the proxy. However, if the proxy has already voted on a poll before the member attends, the vote may already be counted."
+    },
+    {
+      "id": "CL_M10_L02_Q09",
+      "question": "Under CA 2014, a poll at a general meeting gives each member one vote per share held (or as otherwise provided in the articles). A show of hands gives one vote per member present. When can a member DEMAND a poll?",
+      "options": {
+        "A": "Only if the chairperson agrees to order a poll — members have no right to demand a poll as of right",
+        "B": "A poll may be demanded by members prescribed in the articles or, in default of such provision, by not fewer than five members having the right to vote, or by members holding at least 10% of total voting rights",
+        "C": "Any single member may demand a poll on any resolution at any general meeting",
+        "D": "A poll can only be demanded before the show of hands takes place — if a show of hands result has been declared, it is final and a poll cannot be ordered"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.188 CA 2014, a poll may be demanded by: not fewer than five members having the right to vote; members holding not less than 10% of total voting rights; or the chairperson. The articles may provide for additional poll demand rights. A poll demanded on the election of a chairperson or adjournment can be held immediately."
+    },
+    {
+      "id": "CL_M10_L02_Q10",
+      "question": "The court has jurisdiction to order a meeting to be held under s.179 CA 2014. When does this jurisdiction arise, and what safeguards apply?",
+      "options": {
+        "A": "The court may order a meeting only where the company is insolvent and the liquidator cannot convene the meeting voluntarily",
+        "B": "The court may order a meeting where it is impractical to call or conduct a meeting in the manner prescribed by the articles or the Act. The court may give such directions as it thinks expedient including as to the calling, holding and conduct of the meeting",
+        "C": "The court may only intervene in meeting procedure where a shareholder makes a written complaint to the CRO and the CRO refers the matter to the court",
+        "D": "The court may order a meeting only where the requisite quorum cannot be obtained because of deliberate obstruction by certain shareholders"
+      },
+      "correct_answer": "B",
+      "explanation": "s.179 CA 2014 empowers the court to call, hold and conduct meetings where it is impractical to do so in the prescribed manner — for example, where deadlock or shareholder misconduct makes it impossible. The court may set the quorum (including as low as one), appoint a chairperson, and give directions on the conduct of the meeting."
+    },
+    {
+      "id": "CL_M10_L02_Q11",
+      "question": "A company wishes to hold its AGM outside Ireland. What restrictions apply under CA 2014?",
+      "options": {
+        "A": "The AGM must always be held in Ireland — holding it abroad is an absolute prohibition under CA 2014",
+        "B": "The AGM may be held outside Ireland only with the unanimous consent of all members entitled to attend",
+        "C": "There is no statutory prohibition on holding meetings outside Ireland — the articles may authorise this, and members may agree by special resolution",
+        "D": "The AGM must be held in the EEA — it cannot be held outside the European Economic Area under EU Directive requirements"
+      },
+      "correct_answer": "C",
+      "explanation": "CA 2014 does not prohibit holding general meetings outside Ireland. If the articles so permit (or if members agree), the AGM may be held abroad. Many companies hold group meetings in the jurisdiction of the parent company. The articles typically govern the place of meetings."
+    },
+    {
+      "id": "CL_M10_L02_Q12",
+      "question": "What is the distinction between 'ordinary business' and 'special business' at an AGM, and why does it matter for notice requirements?",
+      "options": {
+        "A": "Ordinary business includes routine matters such as consideration of accounts and re-election of directors; special business includes any matter not falling within the ordinary business category. Special business generally requires fuller description in the notice convening the meeting",
+        "B": "There is no distinction under CA 2014 — all meeting business requires the same level of detail in the notice",
+        "C": "Ordinary business requires only 7 days notice; special business requires 21 days notice regardless of the type of resolution proposed",
+        "D": "Ordinary business may be transacted on a show of hands only; special business always requires a poll vote"
+      },
+      "correct_answer": "A",
+      "explanation": "The traditional distinction (retained under CA 2014 for relevant company types) is between ordinary business — routine AGM matters such as financial statements, directors' report, dividends, re-election of directors — and special business. The notice convening the meeting must adequately describe the nature of special business so that members can make an informed decision on whether to attend."
+    },
+    {
+      "id": "CL_M10_L02_Q13",
+      "question": "A member of a company that is required to hold an AGM alleges that the company failed to hold the AGM within the required period under s.176 CA 2014. What enforcement mechanisms are available?",
+      "options": {
+        "A": "The member may apply to the CRO, which will automatically strike the company off the register for failure to hold an AGM",
+        "B": "The member may apply to court under s.179 CA 2014 for an order to convene the AGM; additionally, failure to hold the AGM within the required period constitutes an offence",
+        "C": "The member may bring an oppression petition under s.212 CA 2014 — failure to hold an AGM is automatically oppressive conduct",
+        "D": "The member must first write to the CEA, which has exclusive jurisdiction to investigate and remedy failures to convene meetings"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.179 CA 2014, a member may apply to court for an order to convene a general meeting if the obligation to hold it has not been complied with. Additionally, failure to hold an AGM within the required period constitutes an offence by the company and every officer in default. Both civil and criminal sanctions are therefore available."
+    },
+    {
+      "id": "CL_M10_L02_Q14",
+      "question": "A company's articles require 14 days notice for general meetings. A shareholder wishes to challenge a resolution passed at a meeting where only 10 days notice was given and no short notice consent was obtained. What is the most likely outcome of the challenge?",
+      "options": {
+        "A": "The resolution is automatically void — any defect in notice invalidates all resolutions passed at the meeting",
+        "B": "The resolution is voidable at the election of any shareholder who suffered prejudice from the short notice; the court has a discretion to allow the resolution to stand if it is satisfied that no substantial injustice has been caused",
+        "C": "The resolution is valid provided a majority of members attended and none objected to the short notice at the meeting itself",
+        "D": "Only resolutions that required special notice under s.146 are invalidated — ordinary resolutions remain valid despite the notice defect"
+      },
+      "correct_answer": "B",
+      "explanation": "Where proper notice has not been given, resolutions passed at the meeting are potentially invalid. However, courts have discretion to validate procedurally defective resolutions under s.212 CA 2014 (rectification) or where the notice defect caused no substantial prejudice. The court balances the seriousness of the defect against the prejudice caused to affected shareholders."
+    },
+    {
+      "id": "CL_M10_L02_Q15",
+      "question": "A company has two equal shareholders ('A' and 'B'), each holding 50 shares. The articles require a quorum of two members. 'A' and 'B' are in deadlock over a fundamental business decision. 'A' calls a general meeting but 'B' refuses to attend, rendering the meeting inquorate. What mechanism is available to break this deadlock?",
+      "options": {
+        "A": "The company automatically enters examinership where shareholders are in permanent deadlock",
+        "B": "Either shareholder may apply to court under s.179 CA 2014 for an order to convene the meeting with a reduced quorum of one — the court may exercise its power to prescribe a different quorum to prevent one shareholder from paralysing the company",
+        "C": "The chairperson may unilaterally reduce the quorum to one by executive decision under the board's management authority",
+        "D": "A deadlocked company is automatically deemed to be wound up on just and equitable grounds under s.569(1)(f) CA 2014"
+      },
+      "correct_answer": "B",
+      "explanation": "Where quorum cannot be achieved due to deliberate abstention creating deadlock, s.179 CA 2014 empowers the court to order a meeting with a modified quorum — potentially as low as one member. This prevents one shareholder from frustrating the company's decision-making by simply refusing to attend. The court has broad discretion to give such directions as are expedient."
+    },
+    {
+      "id": "CL_M10_L02_Q16",
+      "question": "Under CA 2014, a company sends notices of an AGM by email to all shareholders. One shareholder alleges they did not receive the notice because it went to their spam folder. The AGM proceeds and a resolution is passed. Is the notice valid?",
+      "options": {
+        "A": "No — notices must always be delivered by post or personal service to be valid under CA 2014; email is not a valid method of service",
+        "B": "It depends on the company's articles and whether electronic communication has been authorised — if the company's articles permit electronic notices and the shareholder consented to electronic communication, the notice is valid and deemed served at the time of sending",
+        "C": "No — the notice is invalid and the resolution is void because the company must ensure actual receipt by every shareholder",
+        "D": "Yes — email delivery is always valid under GDPR and CA 2014; the sender's obligation ends on sending regardless of receipt"
+      },
+      "correct_answer": "B",
+      "explanation": "Under CA 2014, notices may be sent electronically where the articles permit and the shareholder has consented to electronic communication. Where validly authorised, notice sent by email is deemed served at the time of sending. The company is not responsible for spam filtering or delivery failures at the recipient's end — the risk of non-receipt lies with the recipient."
+    },
+    {
+      "id": "CL_M10_L02_Q17",
+      "question": "A DAC is required to hold an AGM. The sole shareholder writes to the company informing it that they consent to all the business proposed for the AGM to be transacted in writing, and that no AGM needs to be held. Is this effective under CA 2014?",
+      "options": {
+        "A": "No — even in a single-member company, the AGM obligation cannot be waived by the member",
+        "B": "Yes — under s.175(6) CA 2014, a DAC that has a single member may dispense with holding an AGM if the member passes or agrees to all resolutions that would otherwise be proposed at the AGM in writing",
+        "C": "Yes — but only if the sole member also passes a special resolution to permanently dispense with the AGM requirement for all future years",
+        "D": "No — DACs must always hold a physical AGM under s.176 CA 2014; the obligation cannot be waived even by unanimous consent"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.175(6) CA 2014, a single-member DAC (or other required company) may dispense with holding the AGM if the sole member agrees to all business that would have been transacted at the AGM in writing. This is a specific statutory dispensation for single-member companies. In multi-member companies, the AGM obligation cannot be waived simply by member agreement."
+    }
+  ]
+}

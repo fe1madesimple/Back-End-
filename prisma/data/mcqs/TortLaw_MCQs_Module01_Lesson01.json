@@ -1,0 +1,383 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module01_Lesson01.txt",
+  "module_number": 1,
+  "module_title": "The Nature and Function of Tort Law",
+  "lesson_number": 1,
+  "lesson_title": "The Nature and Function of Tort Law, Exam Strategy, and the IRAC Approach",
+  "total_questions": 31,
+  "questions": [
+    {
+      "id": "TL_M01_L01_Q01",
+      "question": "Which of the following best defines a tort in Irish law?",
+      "options": {
+        "A": "A civil wrong, other than a breach of contract or trust, for which the law provides a remedy",
+        "B": "A criminal act that causes loss to an individual and for which damages may be awarded",
+        "C": "A breach of a contractual obligation that causes economic loss to the innocent party",
+        "D": "Any wrongful act for which equitable relief may be granted by the courts"
+      },
+      "correct_answer": "A",
+      "explanation": "A tort is a civil wrong, distinct from a breach of contract or a breach of trust, for which the law provides a remedy — usually damages. This distinguishes tort from criminal law (which requires prosecution) and from contract law (which requires a voluntary agreement)."
+    },
+    {
+      "id": "TL_M01_L01_Q02",
+      "question": "The word 'tort' derives from which Latin term, meaning 'twisted' or 'wrong'?",
+      "options": {
+        "A": "Tortilis",
+        "B": "Tortus",
+        "C": "Tortura",
+        "D": "Tortum"
+      },
+      "correct_answer": "B",
+      "explanation": "The word 'tort' comes from the Latin 'tortus', meaning twisted or wrong, which passed into English via Old French. This etymology reflects the idea of conduct that deviates from the standard of right behaviour expected in society."
+    },
+    {
+      "id": "TL_M01_L01_Q03",
+      "question": "Which of the following is NOT one of the three primary functions of tort law?",
+      "options": {
+        "A": "Compensation",
+        "B": "Deterrence",
+        "C": "Punishment",
+        "D": "Vindication"
+      },
+      "correct_answer": "C",
+      "explanation": "The three primary functions of tort law are compensation (making good the plaintiff's loss), deterrence (discouraging future wrongful conduct), and vindication (affirming the plaintiff's rights). Punishment is a function of criminal law, not tort law, though aggravated or exemplary damages may occasionally be awarded in rare tort cases."
+    },
+    {
+      "id": "TL_M01_L01_Q04",
+      "question": "In a tort action in Ireland, the standard of proof required of the plaintiff is:",
+      "options": {
+        "A": "Beyond reasonable doubt",
+        "B": "Beyond all reasonable doubt",
+        "C": "Proof to the criminal standard in all cases",
+        "D": "Balance of probabilities"
+      },
+      "correct_answer": "D",
+      "explanation": "In civil proceedings, including tort actions, the plaintiff must prove their case on the balance of probabilities — that is, it is more likely than not that the defendant acted tortiously. This is a lower standard than the criminal standard of beyond reasonable doubt, which applies to prosecutions brought by the DPP."
+    },
+    {
+      "id": "TL_M01_L01_Q05",
+      "question": "Which of the following best distinguishes tort obligations from contractual obligations?",
+      "options": {
+        "A": "Tort obligations are imposed by law, whereas contractual obligations are voluntarily undertaken by the parties",
+        "B": "Tort obligations are voluntarily assumed, whereas contractual obligations are imposed by statute",
+        "C": "Tort obligations require privity of contract, whereas contractual obligations do not",
+        "D": "Tort obligations arise only where there is a pre-existing relationship between the parties"
+      },
+      "correct_answer": "A",
+      "explanation": "The fundamental distinction is that tort obligations are imposed by law and exist regardless of any agreement between the parties, whereas contractual obligations arise from a voluntary agreement entered into by the parties. A duty in tort can therefore arise between complete strangers, as confirmed in Donoghue v Stevenson [1932]."
+    },
+    {
+      "id": "TL_M01_L01_Q06",
+      "question": "In the FE-1 examination, how many questions must a candidate answer from the tort section of the Property paper?",
+      "options": {
+        "A": "4 questions from a choice of 6",
+        "B": "4 questions from a choice of 8",
+        "C": "5 questions from a choice of 8",
+        "D": "3 questions from a choice of 6"
+      },
+      "correct_answer": "B",
+      "explanation": "The FE-1 Property paper presents 8 questions, and candidates must answer 4. The examination lasts 3.5 hours, giving approximately 52 minutes per question. Candidates should select the questions they are most confident about and manage time carefully."
+    },
+    {
+      "id": "TL_M01_L01_Q07",
+      "question": "When both a tort and a crime arise from the same incident — for example, a battery — which statement is correct under Irish law?",
+      "options": {
+        "A": "The criminal proceedings must be concluded before any civil action can be brought",
+        "B": "The civil action is automatically stayed once criminal proceedings are initiated",
+        "C": "The tortfeasor may face both criminal prosecution and a civil action for damages simultaneously",
+        "D": "Concurrent criminal and civil liability for the same act is not recognised in Irish law"
+      },
+      "correct_answer": "C",
+      "explanation": "Irish law recognises concurrent liability. A single wrongful act — such as a battery — can give rise to both criminal prosecution by the DPP (beyond reasonable doubt) and a civil tort action by the victim (balance of probabilities). The two proceedings are independent of each other and may proceed simultaneously."
+    },
+    {
+      "id": "TL_M01_L01_Q08",
+      "question": "Which historical form of action covered torts that were direct and forcible in nature?",
+      "options": {
+        "A": "Action on the case",
+        "B": "Action per quod",
+        "C": "Negligence per se",
+        "D": "Trespass"
+      },
+      "correct_answer": "D",
+      "explanation": "Historically, trespass was the form of action for direct and forcible wrongs — for example, a direct blow to the person or direct damage to land. Action on the case, by contrast, covered indirect harm where the damage was a consequential result of the defendant's act rather than an immediate one."
+    },
+    {
+      "id": "TL_M01_L01_Q09",
+      "question": "Which landmark case is credited with establishing a generalised duty of care in negligence, moving beyond the old forms of action?",
+      "options": {
+        "A": "Donoghue v Stevenson [1932] AC 562",
+        "B": "Caparo Industries plc v Dickman [1990] 2 AC 605",
+        "C": "Glencar Exploration plc v Mayo County Council [2002] 1 IR 84",
+        "D": "Anns v Merton London Borough Council [1978] AC 728"
+      },
+      "correct_answer": "A",
+      "explanation": "Donoghue v Stevenson [1932] AC 562 is the foundational authority. Lord Atkin's 'neighbour principle' established that a duty of care arises towards persons who are so closely and directly affected by one's acts that one ought reasonably to have them in contemplation. This replaced the piecemeal categories of the old forms of action with a generalised principle."
+    },
+    {
+      "id": "TL_M01_L01_Q10",
+      "question": "Which Irish statute codified the rules on concurrent wrongdoers, contributory negligence, survival of actions, and fatal injuries?",
+      "options": {
+        "A": "Occupiers' Liability Act 1995",
+        "B": "Civil Liability Act 1961",
+        "C": "Civil Liability and Courts Act 2004",
+        "D": "Succession Act 1965"
+      },
+      "correct_answer": "B",
+      "explanation": "The Civil Liability Act 1961 is the principal statute governing several key areas of Irish tort law: the rules on concurrent wrongdoers (proportionate liability), contributory negligence (which reduces but does not extinguish the plaintiff's claim), survival of actions on death, and claims for fatal injuries. It remains one of the most frequently examined statutes in the FE-1 tort paper."
+    },
+    {
+      "id": "TL_M01_L01_Q11",
+      "question": "In the IRAC method used for FE-1 tort answers, what does the letter 'A' stand for?",
+      "options": {
+        "A": "Authority",
+        "B": "Argument",
+        "C": "Application",
+        "D": "Assessment"
+      },
+      "correct_answer": "C",
+      "explanation": "IRAC stands for Issue, Rule, Application, and Conclusion. The 'Application' step — often the most marks-bearing — requires the candidate to apply the identified legal rule to the specific facts of the problem question. A common FE-1 error is stating the rule but failing to apply it to the given facts."
+    },
+    {
+      "id": "TL_M01_L01_Q12",
+      "question": "In the 'cone approach' to FE-1 negligence questions, which element forms the very top of the cone — the starting point of the analysis?",
+      "options": {
+        "A": "Causation",
+        "B": "Standard of care",
+        "C": "Remoteness of damage",
+        "D": "Duty of care"
+      },
+      "correct_answer": "D",
+      "explanation": "The cone approach structures a negligence answer as follows: duty of care at the top (the threshold question — does a duty exist?), standard of care in the middle (was the duty breached?), causation and remoteness at the base (did the breach cause the recoverable loss?), and defences below the cone (contributory negligence, volenti, etc.). Without a duty, the analysis ends immediately."
+    },
+    {
+      "id": "TL_M01_L01_Q13",
+      "question": "Which Irish case should be applied when establishing a duty of care in Irish tort law, in preference to the English Caparo three-stage test?",
+      "options": {
+        "A": "Glencar Exploration plc v Mayo County Council [2002] 1 IR 84",
+        "B": "Caparo Industries plc v Dickman [1990] 2 AC 605",
+        "C": "Anns v Merton London Borough Council [1978] AC 728",
+        "D": "Donoghue v Stevenson [1932] AC 562"
+      },
+      "correct_answer": "A",
+      "explanation": "In Ireland, the Glencar test — set out by Keane CJ in Glencar Exploration plc v Mayo County Council [2002] 1 IR 84 — is the authoritative test for establishing a duty of care. FE-1 candidates must cite Glencar, not the English Caparo three-stage test, which has not been adopted in Irish law. Using English authority where Irish authority exists is a common and costly FE-1 error."
+    },
+    {
+      "id": "TL_M01_L01_Q14",
+      "question": "Which Irish case is the leading authority on the duty of care owed in respect of psychiatric injury?",
+      "options": {
+        "A": "Glencar Exploration plc v Mayo County Council [2002] 1 IR 84",
+        "B": "Kelly v Hennessy [1995] 3 IR 253",
+        "C": "Dunne v National Maternity Hospital [1989] IR 91",
+        "D": "Mulally v Bus Éireann [1992] ILRM 722"
+      },
+      "correct_answer": "B",
+      "explanation": "Kelly v Hennessy [1995] 3 IR 253 is the leading Irish Supreme Court authority on liability for psychiatric injury (nervous shock). FE-1 candidates must cite Kelly v Hennessy rather than English cases such as Alcock v Chief Constable of South Yorkshire when advising on claims for psychiatric loss in Ireland."
+    },
+    {
+      "id": "TL_M01_L01_Q15",
+      "question": "Which Irish case sets the standard for professional negligence in medical cases and must be applied in preference to English authority?",
+      "options": {
+        "A": "Bolam v Friern Hospital Management Committee [1957] 1 WLR 582",
+        "B": "Caparo Industries plc v Dickman [1990] 2 AC 605",
+        "C": "Dunne v National Maternity Hospital [1989] IR 91",
+        "D": "Kelly v Hennessy [1995] 3 IR 253"
+      },
+      "correct_answer": "C",
+      "explanation": "Dunne v National Maternity Hospital [1989] IR 91 is the leading Irish authority on medical negligence, setting out six principles (the Dunne principles) that govern whether a doctor has met the required standard of care. The English Bolam test is not applied in Ireland; FE-1 candidates must use Dunne and its six principles in all medical negligence questions."
+    },
+    {
+      "id": "TL_M01_L01_Q16",
+      "question": "A criminal prosecution for battery in Ireland is brought by which party?",
+      "options": {
+        "A": "The victim directly, in the victim's own name",
+        "B": "The victim's solicitor, on the victim's behalf",
+        "C": "The civil courts, on an application by the victim",
+        "D": "The Director of Public Prosecutions"
+      },
+      "correct_answer": "D",
+      "explanation": "In Irish criminal law, prosecutions — including for battery — are brought by the Director of Public Prosecutions (DPP), not by the victim. The victim may separately bring a civil tort action for damages. The criminal standard of proof (beyond reasonable doubt) is higher than the civil standard (balance of probabilities)."
+    },
+    {
+      "id": "TL_M01_L01_Q17",
+      "question": "The historical form of action known as 'action on the case' was developed to cover which type of harm?",
+      "options": {
+        "A": "Indirect harm where damage was a consequential result of the defendant's act",
+        "B": "Direct and forcible harm to the person or property of the plaintiff",
+        "C": "Harm arising exclusively from breach of a contractual obligation",
+        "D": "Harm arising from negligent misstatement causing pure economic loss"
+      },
+      "correct_answer": "A",
+      "explanation": "Action on the case (also called 'case') was the form of action used for indirect or consequential harm — situations where the damage was not a direct result of the defendant's act but flowed indirectly from it. This contrasted with trespass, which required the harm to be direct and forcible. The distinction between trespass and case eventually gave way to the unified tort of negligence after Donoghue v Stevenson [1932]."
+    },
+    {
+      "id": "TL_M01_L01_Q18",
+      "question": "In the 'cone approach,' which element forms the middle layer of the analysis, sitting between duty of care and causation?",
+      "options": {
+        "A": "Defences such as contributory negligence",
+        "B": "Standard of care",
+        "C": "Remoteness of damage",
+        "D": "Vicarious liability"
+      },
+      "correct_answer": "B",
+      "explanation": "The cone approach positions standard of care in the middle: after establishing that a duty of care exists (top of the cone), the candidate must ask whether that duty was breached — i.e., whether the defendant fell below the standard of the reasonable person. Only if there is a breach does the analysis proceed to causation and remoteness at the base of the cone."
+    },
+    {
+      "id": "TL_M01_L01_Q19",
+      "question": "Approximately how much time should a FE-1 candidate allocate to each tort question in the 3.5-hour examination?",
+      "options": {
+        "A": "30 minutes",
+        "B": "42 minutes",
+        "C": "52 minutes",
+        "D": "60 minutes"
+      },
+      "correct_answer": "C",
+      "explanation": "The FE-1 examination lasts 3.5 hours (210 minutes) and requires candidates to answer 4 questions from a choice of 8. This gives approximately 52 minutes per question. Candidates should be disciplined about time allocation — spending too long on one question risks failing to complete the paper."
+    },
+    {
+      "id": "TL_M01_L01_Q20",
+      "question": "Under the Civil Liability Act 1961, what is the term for two or more persons who are each liable for the same damage suffered by the plaintiff?",
+      "options": {
+        "A": "Joint tortfeasors only, where they act in furtherance of a common purpose",
+        "B": "Several tortfeasors only, where they act independently",
+        "C": "Successive wrongdoers who cause distinct sequential injuries",
+        "D": "Concurrent wrongdoers"
+      },
+      "correct_answer": "D",
+      "explanation": "Under the Civil Liability Act 1961, 'concurrent wrongdoers' are two or more persons who are each liable to the plaintiff for the same damage. Each concurrent wrongdoer is liable for the full amount of the plaintiff's loss (joint and several liability), but as between themselves liability is apportioned according to their respective degrees of fault."
+    },
+    {
+      "id": "TL_M01_L01_Q21",
+      "question": "Which of the following best describes the function of 'vindication' in Irish tort law?",
+      "options": {
+        "A": "Affirming the plaintiff's rights and dignity, independently of the monetary value of the loss suffered",
+        "B": "Awarding punitive damages to punish the defendant for deliberate wrongdoing",
+        "C": "Compensating the plaintiff exclusively for financial losses caused by the tort",
+        "D": "Deterring future tortious conduct by other potential defendants in similar situations"
+      },
+      "correct_answer": "A",
+      "explanation": "Vindication is the function of tort law that affirms the plaintiff's rights — recognising that a wrong was done to them, regardless of the quantum of damages. This is particularly significant in Irish constitutional tort law, where courts have awarded nominal or substantial damages as a recognition of a constitutional right violation even where financial loss was minimal."
+    },
+    {
+      "id": "TL_M01_L01_Q22",
+      "question": "A battery committed during an assault may give rise to which form of liability under Irish law?",
+      "options": {
+        "A": "Civil liability in tort only, as the criminal law does not recognise battery as a separate offence",
+        "B": "Both criminal liability and civil liability in tort, independently of each other",
+        "C": "Criminal liability only, once the DPP has elected to prosecute",
+        "D": "No civil liability unless the victim suffered actual physical injury proven by medical evidence"
+      },
+      "correct_answer": "B",
+      "explanation": "A battery is both a tort and a crime. The victim may bring a civil tort action for damages (on the balance of probabilities), while the DPP may simultaneously or independently prosecute the defendant in criminal proceedings (beyond reasonable doubt). This is an example of concurrent liability — the same act generating both civil and criminal consequences."
+    },
+    {
+      "id": "TL_M01_L01_Q23",
+      "question": "After the abolition of the forms of action in the nineteenth century, which general tort emerged as the primary vehicle for claims arising from indirect harm?",
+      "options": {
+        "A": "Trespass to the person",
+        "B": "Private nuisance",
+        "C": "Negligence",
+        "D": "The rule in Rylands v Fletcher"
+      },
+      "correct_answer": "C",
+      "explanation": "Following the abolition of the forms of action in the nineteenth century, negligence emerged as the primary general tort for indirect harm. The generalised duty of care was crystallised in Donoghue v Stevenson [1932], which replaced the need to fit claims into specific categories with a single unified principle based on reasonable foreseeability and proximity."
+    },
+    {
+      "id": "TL_M01_L01_Q24",
+      "question": "Which of the following is NOT covered by the Civil Liability Act 1961?",
+      "options": {
+        "A": "Contributory negligence and its effect on the plaintiff's damages",
+        "B": "The rules on concurrent wrongdoers and proportionate liability",
+        "C": "Survival of causes of action on the death of the plaintiff or defendant",
+        "D": "The statutory duties owed by occupiers to entrants on their premises"
+      },
+      "correct_answer": "D",
+      "explanation": "The Civil Liability Act 1961 covers contributory negligence, concurrent wrongdoers, survival of actions, and fatal injuries. Occupiers' liability is governed separately by the Occupiers' Liability Act 1995, which replaced the common law categories of invitee, licensee, and trespasser with a statutory framework distinguishing visitors, recreational users, and trespassers."
+    },
+    {
+      "id": "TL_M01_L01_Q25",
+      "question": "The FE-1 Property paper tests candidates across which areas of substantive tort law?",
+      "options": {
+        "A": "Negligence, trespass, nuisance, defamation, product liability, and occupiers' liability",
+        "B": "Contract, negligence, and equitable remedies",
+        "C": "Negligence and succession law only",
+        "D": "Tort, equity, and constitutional law in equal measure"
+      },
+      "correct_answer": "A",
+      "explanation": "The FE-1 Property paper covers tort law comprehensively, including: negligence (duty, standard, causation, remoteness), trespass to the person, nuisance (public and private), defamation, product liability, occupiers' liability, employer's liability, vicarious liability, professional negligence, and damages. Candidates must be prepared to answer across all these areas."
+    },
+    {
+      "id": "TL_M01_L01_Q26",
+      "question": "In the IRAC structure for FE-1 tort answers, what step should immediately follow the identification of the legal issue?",
+      "options": {
+        "A": "Applying the identified rule to the specific facts",
+        "B": "Stating the relevant legal rule or principle, supported by authority",
+        "C": "Drawing a conclusion as to liability",
+        "D": "Citing the relevant legislation without further explanation"
+      },
+      "correct_answer": "B",
+      "explanation": "In IRAC, the sequence is: Issue (identify the legal issue raised by the facts) → Rule (state the relevant legal rule or principle, citing case law and/or statute) → Application (apply the rule to the specific facts) → Conclusion (state the outcome). Identifying the issue without immediately stating the rule is a common structural error in FE-1 answers."
+    },
+    {
+      "id": "TL_M01_L01_Q27",
+      "question": "In the 'cone approach,' which element appears at the base of the cone alongside causation?",
+      "options": {
+        "A": "Duty of care",
+        "B": "Standard of care",
+        "C": "Remoteness of damage",
+        "D": "Contributory negligence"
+      },
+      "correct_answer": "C",
+      "explanation": "The base of the cone contains both causation and remoteness. Once a breach of duty is established, the plaintiff must show that the breach caused the damage (causation — the 'but for' test) and that the type of damage was not too remote (remoteness — reasonable foreseeability of the type of damage, per the Wagon Mound No 1 [1961]). Defences such as contributory negligence appear below the cone."
+    },
+    {
+      "id": "TL_M01_L01_Q28",
+      "question": "Which of the following correctly states the burden and standard of proof in a tort action?",
+      "options": {
+        "A": "The defendant bears the burden of proof and must disprove the claim beyond reasonable doubt",
+        "B": "The burden shifts automatically to the defendant once the plaintiff establishes a prima facie case",
+        "C": "The plaintiff must prove their case to a standard of beyond reasonable doubt",
+        "D": "The plaintiff bears the burden of proof and must establish their case on the balance of probabilities"
+      },
+      "correct_answer": "D",
+      "explanation": "In tort actions, the burden of proof rests on the plaintiff throughout. The plaintiff must prove, on the balance of probabilities (i.e., it is more probable than not), that the defendant committed the tort and that the plaintiff suffered the alleged damage as a result. The 'beyond reasonable doubt' standard applies only in criminal proceedings."
+    },
+    {
+      "id": "TL_M01_L01_Q29",
+      "question": "Which of the following accurately describes the 'deterrence' function of tort law?",
+      "options": {
+        "A": "Tort liability discourages potential defendants from engaging in conduct that creates an unreasonable risk of harm to others",
+        "B": "Tort law deters plaintiffs from bringing speculative claims by imposing adverse costs orders",
+        "C": "Deterrence operates exclusively in intentional torts and has no role in negligence",
+        "D": "Deterrence is achieved solely through the award of punitive or exemplary damages"
+      },
+      "correct_answer": "A",
+      "explanation": "The deterrence function of tort law operates by imposing liability on those whose conduct falls below the required standard, thereby incentivising potential defendants to take reasonable care. Deterrence operates in both negligence and intentional torts. It is not confined to punitive damages — even compensatory liability deters future wrongdoing by making risky conduct financially costly."
+    },
+    {
+      "id": "TL_M01_L01_Q30",
+      "question": "What was the primary significance of Donoghue v Stevenson [1932] AC 562 for the development of Irish and English tort law?",
+      "options": {
+        "A": "It established contributory negligence as a complete defence to all negligence actions",
+        "B": "It established that a general duty of care in negligence could arise in the absence of any contractual relationship",
+        "C": "It formally abolished the forms of action by statute and replaced them with a unified code of tort law",
+        "D": "It introduced the 'reasonable person' standard of care as a replacement for the objective Bolam test"
+      },
+      "correct_answer": "B",
+      "explanation": "The primary significance of Donoghue v Stevenson [1932] was Lord Atkin's articulation of the 'neighbour principle' — establishing that a duty of care could arise between strangers in the absence of any contractual relationship. Mrs Donoghue had no contract with the manufacturer of the ginger beer, yet the House of Lords held that the manufacturer owed her a duty of care. This generalised duty of care transformed tort law."
+    },
+    {
+      "id": "TL_M01_L01_Q31",
+      "question": "According to the 'cone approach,' which element of a negligence claim should a FE-1 candidate always consider last?",
+      "options": {
+        "A": "Duty of care — whether the defendant owed the plaintiff a duty",
+        "B": "Causation — whether the breach caused the plaintiff's loss",
+        "C": "Defences such as contributory negligence and volenti non fit injuria",
+        "D": "Standard of care — whether the duty was breached"
+      },
+      "correct_answer": "C",
+      "explanation": "In the cone approach, defences sit below the cone and are considered only after the plaintiff has established all elements of negligence: duty, breach, causation, and recoverable damage. It is an error to raise defences before establishing liability. Common defences in negligence include contributory negligence (under s.34 Civil Liability Act 1961) and volenti non fit injuria."
+    }
+  ]
+}

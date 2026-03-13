@@ -1,0 +1,119 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module08_Lesson02.txt",
+  "module_number": 8,
+  "module_title": "Secondary Participation and Common Enterprise",
+  "lesson_number": 2,
+  "lesson_title": "Common Design",
+  "total_questions": 9,
+  "questions": [
+    {
+      "id": "CRL_M08_L02_Q01",
+      "question": "The doctrine of common design (also called joint enterprise) holds that where two or more persons embark on a common criminal enterprise, each is responsible for acts done in furtherance of that common design. What is the foundational principle of the doctrine?",
+      "options": {
+        "A": "Where two or more persons act together to commit a crime, each is jointly and severally liable for all criminal acts committed by any member of the group, regardless of whether those acts were part of the original plan",
+        "B": "Where two or more persons share a common criminal purpose and act in furtherance of it, each participant is liable for acts done by co-participants that fall within the scope of the agreed common design \u2014 acts that fall outside the common design (the 'excess') may not attract secondary liability",
+        "C": "Common design requires a formal agreement between the parties \u2014 an informal understanding is insufficient to establish joint enterprise liability",
+        "D": "Common design liability only arises where all participants are physically present at the scene of the offence"
+      },
+      "correct_answer": "B",
+      "explanation": "The doctrine of common design holds that where two or more persons share a common criminal purpose and act together to further it, each is liable for acts done in furtherance of that purpose by any co-participant. The critical limitation \u2014 and the source of most of the case law \u2014 is that a secondary party is only liable for acts that fall within the scope of the common design. Where a principal goes beyond the common design and does something not contemplated or authorised by the agreement, the secondary party may not be liable for that 'excess.' This balance between group accountability and individual justice is the central tension in the doctrine. Option A incorrectly extends liability to all acts by any group member regardless of the plan. Option C incorrectly requires a formal agreement \u2014 a common design can arise informally or even implicitly. Option D incorrectly requires physical presence."
+    },
+    {
+      "id": "CRL_M08_L02_Q02",
+      "question": "In R v Anderson and Morris [1966] CA (England and Wales), two men agreed to attack a third person. Morris (the principal) produced a knife during the attack and killed the victim. Anderson did not know Morris had a knife. What did the court hold regarding Anderson's liability for murder?",
+      "options": {
+        "A": "Anderson was guilty of murder as a secondary party because he was present and participating in the common design of the attack",
+        "B": "Anderson was not guilty of murder \u2014 where the principal goes beyond the scope of the common design and does an act that was not within the contemplation of the secondary party, the secondary party is not liable for that excess; the use of the knife (unknown to Anderson) was outside their common design",
+        "C": "Anderson was guilty of manslaughter because he ought to have foreseen that Morris might use a weapon",
+        "D": "Anderson was not guilty of any offence because the death was caused solely by Morris"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Anderson and Morris [1966] CA established the foundational rule on excess in joint enterprise: where a principal departs from the common design and does an act not contemplated or authorised by the secondary party, the secondary party is not liable for that excess. Anderson and Morris had agreed to attack the victim (common design: assault). Morris then produced a knife and killed the victim \u2014 this was outside what Anderson had agreed to or knew about. The court held that Anderson could not be liable for the murder because the fatal stabbing was outside the scope of their common design. Anderson remained liable for the assault that was within the design, but not for the murder resulting from Morris's unilateral decision to use a knife. This case is the starting point for all 'excess' analysis in common design. Options A and C would hold Anderson liable despite the excess. Option D goes too far in the other direction by removing all liability."
+    },
+    {
+      "id": "CRL_M08_L02_Q03",
+      "question": "In R v Rahman [2008] HOL (England and Wales), a group attacked the victim with an assortment of weapons. One participant used a knife, killing the victim. The secondary parties claimed they did not know a knife would be used. What did the House of Lords hold?",
+      "options": {
+        "A": "The secondary parties were not guilty of murder because they did not know a knife specifically would be used",
+        "B": "The secondary parties were guilty of murder \u2014 the relevant question was whether they foresaw that a co-participant might act with intent to kill or cause serious harm; if they foresaw the possibility of lethal intent by a co-participant, the use of a knife rather than some other weapon was a 'mere detail' and did not take the act outside the common design",
+        "C": "The secondary parties were guilty of manslaughter only because they did not foresee the specific weapon used",
+        "D": "The House of Lords held that a secondary party must foresee the precise method of killing to be liable for murder"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Rahman [2008] HOL refined the Anderson and Morris excess principle. The House of Lords held that where a secondary party foresaw that a co-participant might act with intent to kill or cause serious bodily harm, the use of a knife rather than a different weapon was not a fundamental departure from the common design \u2014 it was a 'mere detail.' The critical question was not the specific weapon but the contemplated level of violence and intent. If the secondary party foresaw that someone might use lethal force (irrespective of the precise weapon), the fact that a knife rather than a bat was used did not take the killing outside the common design. Rahman confirmed that the 'excess' doctrine does not protect those who foresee serious violence from liability for the specific form that violence takes. Option A applies too narrow a test (specific weapon). Option C lowers the charge to manslaughter on insufficient grounds. Option D requires a precision of foresight that Rahman expressly rejected."
+    },
+    {
+      "id": "CRL_M08_L02_Q04",
+      "question": "Alex and Ben agree to rob a shop, with Alex serving as lookout outside. Inside, Ben, unknown to Alex, shoots and kills the shopkeeper. Alex had no idea Ben was armed. Applying the common design doctrine, what is Alex's likely liability?",
+      "options": {
+        "A": "Alex is guilty of murder \u2014 participation in a robbery where violence is foreseeable makes all participants liable for any death resulting",
+        "B": "Alex is not guilty of murder \u2014 the shooting was outside the scope of the common design (robbery); Alex had no knowledge that Ben was armed or that lethal force was contemplated; the use of a firearm to kill represents a fundamental departure from the agreed plan",
+        "C": "Alex is guilty of manslaughter because a death occurred during the robbery he participated in",
+        "D": "Alex has no criminal liability because he was not inside the shop when the killing occurred"
+      },
+      "correct_answer": "B",
+      "explanation": "Applying R v Anderson and Morris and the common design doctrine to this scenario: Alex and Ben's common design was robbery (with Alex as lookout). Alex had no knowledge that Ben was armed or that lethal violence was contemplated. Ben's decision to shoot and kill the shopkeeper was outside the scope of what was agreed \u2014 it was not a 'mere detail' in the execution of the robbery but a fundamental departure into lethal violence that Alex never foresaw or agreed to. Per Anderson and Morris, where the principal goes beyond the common design and does something not in the contemplation of the secondary party, the secondary party is not liable for that excess. Alex would remain liable for the robbery (the agreed common design), but not for the murder resulting from Ben's unilateral decision to use a firearm. Option A applies too broad a rule. Option C invents a manslaughter result on a causation theory that ignores the excess doctrine. Option D incorrectly absolves Alex of all liability."
+    },
+    {
+      "id": "CRL_M08_L02_Q05",
+      "question": "In DPP v Eccles (Ireland), the court applied the common design doctrine in an Irish context. What does the Irish case law on common design generally confirm?",
+      "options": {
+        "A": "The Irish courts have rejected the English common design doctrine entirely and apply a different test for group criminal liability",
+        "B": "The Irish courts apply the common design doctrine consistent with the English authorities \u2014 participants in a common criminal enterprise are liable for acts within the scope of that enterprise; where a principal goes beyond the common design, the secondary party may not be liable for the excess; Irish courts assess what was within the reasonable contemplation of the secondary party",
+        "C": "Irish law applies a strict liability standard for common design \u2014 all participants are equally liable for everything done by any participant regardless of foreseeability",
+        "D": "The Irish doctrine of common design requires that all participants know each other's identities before liability attaches"
+      },
+      "correct_answer": "B",
+      "explanation": "The Irish courts have adopted the English common design doctrine \u2014 applying the principles from R v Anderson and Morris and related authorities in the Irish criminal law context. The fundamental principles applied in Ireland are: (1) participants in a common criminal enterprise are liable for acts within the scope of that enterprise; (2) where the principal goes beyond the agreed plan and does something not within the contemplation of the secondary party, that excess may not attract secondary liability; (3) the test focuses on what was within the reasonable contemplation of the secondary party at the time of the enterprise. Irish cases including DPP v Eccles and DPP v Doohan have confirmed and applied these principles. Option A incorrectly suggests Ireland has rejected the doctrine. Option C removes the excess limitation and imposes strict liability. Option D invents an identity requirement with no legal basis."
+    },
+    {
+      "id": "CRL_M08_L02_Q06",
+      "question": "Clara, Donal, and Eve agree to assault Frank. During the attack, Donal produces a bottle and strikes Frank over the head, causing serious injury. Clara and Eve did not know Donal had a bottle but knew the plan was a serious beating. Applying the common design doctrine, are Clara and Eve liable for the assault causing serious harm?",
+      "options": {
+        "A": "No \u2014 Clara and Eve are not liable because the use of a bottle was not specifically agreed upon",
+        "B": "Yes \u2014 the use of a bottle to cause serious harm during a planned serious beating is arguably within the reasonable contemplation of Clara and Eve; if they foresaw that serious violence was planned and the use of an improvised weapon to cause serious harm is not a fundamental departure from the design, they remain liable as secondary parties",
+        "C": "Yes \u2014 but only for the less serious offence of assault; they cannot be liable for assault causing serious harm because the bottle elevated the harm beyond what was agreed",
+        "D": "No \u2014 the use of any weapon that was not specifically agreed renders the entire act outside the common design"
+      },
+      "correct_answer": "B",
+      "explanation": "Applying the common design doctrine to this scenario: Clara, Donal, and Eve agreed to a serious beating \u2014 an attack intended to cause significant harm. The relevant question is whether Donal's use of a bottle was within the reasonable contemplation of Clara and Eve or whether it represented a fundamental departure. If they foresaw serious violence being used (which they did \u2014 it was a planned serious beating), the use of a bottle to inflict that violence may be a 'mere detail' rather than a fundamental departure (per R v Rahman). However, if they never contemplated the use of any weapon, the analysis under Anderson and Morris might afford a defence. The answer turns on the facts \u2014 but on these facts (planned serious beating), courts would likely find the use of a bottle was not so fundamentally different as to take it outside the common design. Option A applies too narrow a 'specific agreement' test. Option C arbitrarily limits liability to a lesser offence. Option D excessively restricts common design to weapon-specific scenarios."
+    },
+    {
+      "id": "CRL_M08_L02_Q07",
+      "question": "In DPP v Murray (Ireland), the court addressed secondary liability in the context of a common criminal enterprise. What key principle relevant to common design did the case confirm in the Irish context?",
+      "options": {
+        "A": "The court held that secondary parties to a common design can only be convicted after the principal is convicted \u2014 secondary liability is entirely dependent on the principal's conviction",
+        "B": "The court confirmed that the common design doctrine operates alongside s.7(1) of the Criminal Law Act 1997 \u2014 participants in a common design are secondary parties under s.7(1) and are treated as principals; the scope of the common design determines the scope of secondary liability",
+        "C": "The court held that the common design doctrine does not apply to non-violent offences \u2014 it is limited to offences involving physical violence",
+        "D": "The court abolished the excess rule and held all participants liable for all acts committed during a criminal enterprise"
+      },
+      "correct_answer": "B",
+      "explanation": "DPP v Murray confirmed that the common design doctrine operates within the framework of s.7(1) of the Criminal Law Act 1997 in Irish law. Secondary parties who participate in a common design are treated under s.7(1) as principals \u2014 they are liable to be tried, indicted, and punished as if they were the principal offenders. The scope of their liability, however, is defined by the common design \u2014 they are liable for acts within the contemplation of the enterprise, not for acts that fall outside it (the excess principle). This integration of the common design doctrine with the s.7(1) statutory framework is the foundation of Irish secondary participation law. Option A incorrectly requires the principal's conviction as a prerequisite \u2014 Irish law does not require this. Option C unjustifiably limits common design to violent offences. Option D abolishes the excess rule without authority."
+    },
+    {
+      "id": "CRL_M08_L02_Q08",
+      "question": "What is the significance of 'foresight' in determining whether an act falls within a common design? Specifically, must a secondary party have foreseen an act as a certainty, or is a lesser degree of foresight sufficient?",
+      "options": {
+        "A": "The secondary party must have foreseen the act as a virtual certainty \u2014 a mere possibility of the act occurring is insufficient to establish common design liability",
+        "B": "The secondary party must have foreseen the act as a real possibility or a possible incident of the common design \u2014 where the secondary party foresaw that a co-participant might do an act of the type that was done (even if not certain it would happen), the act falls within the scope of the common design",
+        "C": "Foresight is irrelevant \u2014 what matters is whether the secondary party agreed explicitly to the specific act",
+        "D": "The secondary party must have foreseen the act as more likely than not \u2014 acts that were less than 50% likely to occur are outside the common design"
+      },
+      "correct_answer": "B",
+      "explanation": "The foresight standard in common design is one of 'real possibility' or 'possible incident of the enterprise' \u2014 not certainty, not probability, but a genuine (as opposed to remote or fanciful) possibility. Per R v Rahman and related authorities, if the secondary party foresaw that a co-participant might do an act of the type that was done (e.g., use violence, produce a weapon, escalate force), that act is within the contemplation of the enterprise and the secondary party remains liable. This is a lower threshold than certainty and reflects the practical reality that joint enterprises involve unpredictable escalations \u2014 the doctrine holds participants responsible for foreseeable variations. The Anderson and Morris excess principle kicks in where the act was not within this range of foreseen possibilities \u2014 where it was wholly unexpected and represented a fundamental departure. Option A requires virtual certainty \u2014 too high. Option C removes foresight and requires explicit agreement \u2014 too narrow. Option D applies a probability standard that is not the test."
+    },
+    {
+      "id": "CRL_M08_L02_Q09",
+      "question": "Four people agree to carry out a robbery. During the robbery, one participant (acting spontaneously and without any prior agreement) sexually assaults a victim in a back room. None of the other three knew of or foresaw this. Are the other three participants liable for the sexual assault under the common design doctrine?",
+      "options": {
+        "A": "Yes \u2014 all participants in a criminal enterprise are jointly liable for all crimes committed by any participant during the enterprise",
+        "B": "No \u2014 the sexual assault was a fundamental departure from the common design (robbery); it was not within the contemplation of the other three participants; as an act entirely outside the scope of the agreed enterprise, the secondary parties are not liable for the excess",
+        "C": "Yes \u2014 because the enterprise involved entry onto premises, any criminal acts committed on those premises are within the common design",
+        "D": "Yes \u2014 because the sexual assault occurred during the robbery, it is treated as part of the robbery for liability purposes"
+      },
+      "correct_answer": "B",
+      "explanation": "This scenario presents a clear case of excess \u2014 an act entirely outside the scope of the common design. The four participants agreed on a robbery. A spontaneous sexual assault committed by one participant without the knowledge or contemplation of the others is a fundamental departure from the plan. Applying R v Anderson and Morris: the principal (the perpetrator of the sexual assault) went beyond the common design and did something not within the contemplation of the other secondary parties. The sexual assault was not a 'mere detail' in the execution of the robbery \u2014 it was a wholly different offence, spontaneous, and unknown to the others. The other three are not liable for the sexual assault. They remain liable for the robbery (the agreed design). Options A, C, and D all adopt overbroad theories of group liability \u2014 they would hold participants liable for acts they had no reason to anticipate, which is inconsistent with the excess principle established in Anderson and Morris and applied throughout the common design jurisprudence."
+    }
+  ]
+}

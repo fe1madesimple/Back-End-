@@ -1,0 +1,179 @@
+{
+  "subject": "Constitutional Law",
+  "el_script_ref": "ConstitutionalLaw_ElevenLabs_Module07_Lesson01.txt",
+  "module_number": 7,
+  "module_title": "Criminal Justice and Fair Procedures",
+  "lesson_number": 1,
+  "lesson_title": "Due Course of Law (Art. 38.1)",
+  "total_questions": 14,
+  "questions": [
+    {
+      "id": "CON_M07_L01_Q01",
+      "question": "Article 38.1 provides that 'no person shall be tried on any criminal charge save in due course of law'. What does 'due course of law' require, according to the Supreme Court?",
+      "options": {
+        "A": "Only that the trial follows the procedure laid down in the relevant statute",
+        "B": "That a criminal trial must comply with constitutional justice — including fair procedures, an independent tribunal, the presumption of innocence, the right to a fair trial, and the other guarantees in Art. 38; 'due course of law' incorporates all constitutional requirements for a valid criminal trial",
+        "C": "Only that the accused is represented by a solicitor at all stages of the criminal process",
+        "D": "Only that the trial is conducted in the Irish language"
+      },
+      "correct_answer": "B",
+      "explanation": "'Due course of law' in Art. 38.1 has been interpreted broadly by the courts to encompass the totality of constitutional requirements for a valid criminal trial. It imports the principles of natural and constitutional justice, the presumption of innocence, fair procedures, the right to an independent and impartial tribunal, and the other specific guarantees in Art. 38 (trial by jury for non-minor offences, right to legal representation in serious cases, prohibition on retrospective offences, etc.). It is the constitutional foundation for the entire body of criminal procedural rights in Irish law."
+    },
+    {
+      "id": "CON_M07_L01_Q02",
+      "question": "In Hardy v Ireland [1994] 2 IR 550, the accused challenged the constitutionality of provisions of the Criminal Evidence Act 1992 that modified the rules of evidence in criminal trials. The Supreme Court considered the standard for assessing such modifications. What was held?",
+      "options": {
+        "A": "Any statutory modification of criminal evidence rules automatically violates Art. 38.1",
+        "B": "The Oireachtas may modify rules of criminal evidence provided the overall trial remains fair and meets the Art. 38.1 'due course of law' standard; individual modifications must not deprive the accused of a fair trial in the round",
+        "C": "The Criminal Evidence Act 1992 was declared unconstitutional in its entirety",
+        "D": "Art. 38.1 requires all criminal evidence rules to be identical to those at common law in 1937"
+      },
+      "correct_answer": "B",
+      "explanation": "Hardy v Ireland [1994] 2 IR 550 confirmed that the Oireachtas may modify criminal evidence rules — including departing from strict common law rules — provided the overall fairness of the trial is maintained. The constitutional test under Art. 38.1 is whether the accused receives a trial 'in due course of law' — i.e., a fair trial with all essential constitutional protections. This is an overall assessment, not a rule-by-rule analysis. Individual modifications that improve efficiency or protect vulnerable witnesses can be permissible if the accused retains a fair opportunity to defend themselves."
+    },
+    {
+      "id": "CON_M07_L01_Q03",
+      "question": "Article 38.2 provides that 'minor offences may be tried by courts of summary jurisdiction'. Which of the following most accurately describes the constitutional test for determining whether an offence is 'minor' (and thus triable without jury)?",
+      "options": {
+        "A": "Any offence carrying a maximum penalty of less than 12 months imprisonment is automatically minor",
+        "B": "The 'minor offence' test considers the nature of the penalty (severity), the moral quality of the act, and whether the offence is one that was historically treated as minor; the Supreme Court has indicated that offences carrying potential imprisonment of up to 12 months and moderate fines are generally minor, but severity of potential penalty is a key indicator",
+        "C": "An offence is minor if and only if the accused elects for summary trial",
+        "D": "The classification of offences as minor or non-minor is entirely a matter for the Oireachtas, beyond constitutional review"
+      },
+      "correct_answer": "B",
+      "explanation": "The constitutional 'minor offence' test was established in Melling v O'Mathghamhna [1962] IR 1 and developed in subsequent cases including Conroy v AG [1965] IR 411. The test is multi-factorial: courts consider the nature of the moral stigma attaching to conviction, the severity of the potential penalty (both fine and imprisonment), and the classification of the offence historically. Generally, offences carrying up to 12 months imprisonment and proportionate fines are considered minor. Non-minor offences must be tried by jury under Art. 38.5, unless tried by the Special Criminal Court (Art. 38.3) or a military tribunal (Art. 38.4)."
+    },
+    {
+      "id": "CON_M07_L01_Q04",
+      "question": "Article 38.5 provides that every person charged with a serious offence has the right to trial by jury. In O'Callaghan v Attorney General [1993] 2 IR 17, the Supreme Court considered the relationship between this right and the District Court's jurisdiction in minor offences. What principle was established?",
+      "options": {
+        "A": "The right to trial by jury can be waived by the accused in all cases",
+        "B": "The right to trial by jury for serious offences is a constitutional right that cannot be diminished by statute; the classification of an offence as 'minor' to avoid jury trial cannot be used to circumvent the constitutional right for genuinely serious offences",
+        "C": "The Oireachtas has absolute discretion to classify any offence as minor to avoid jury trial requirements",
+        "D": "The right to trial by jury applies only to offences created after 1937"
+      },
+      "correct_answer": "B",
+      "explanation": "The constitutional right to trial by jury under Art. 38.5 for non-minor offences is a fundamental procedural guarantee. Courts scrutinise attempts to classify as 'minor' offences that carry substantial penalties or significant moral stigma. The Oireachtas cannot circumvent the jury trial right simply by labelling a serious offence as 'minor'. The courts apply the constitutional minor offence test (Melling; Conroy) to ensure that offences genuinely warranting jury trial — because of their severity or nature — are not reclassified to avoid Art. 38.5. This limits legislative flexibility but protects the accused's constitutional right."
+    },
+    {
+      "id": "CON_M07_L01_Q05",
+      "question": "In The People (DPP) v DO'T [2003] 4 IR 286, the Supreme Court considered the admissibility of a statement made by an accused after extensive questioning, where the accused had limited intellectual capacity. What was the constitutional dimension?",
+      "options": {
+        "A": "Statements made by an accused are always admissible regardless of intellectual capacity",
+        "B": "Art. 38.1 requires that a criminal trial be fair to the particular accused; a statement obtained in circumstances where the accused could not meaningfully exercise their rights (due to intellectual disability, lack of understanding of caution, or undue pressure) may be inadmissible as the admission of such evidence would render the trial unfair",
+        "C": "Only physical evidence is subject to Art. 38.1 fairness requirements; confessions are governed solely by the common law voluntariness test",
+        "D": "The constitutional test requires that all accused persons have the same IQ to ensure equal trials"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 38.1's requirement of a trial 'in due course of law' includes the requirement that the trial be fair to the individual accused. Where an accused has limited intellectual capacity, the court must assess whether they genuinely understood the caution, could exercise their right to silence, and whether any statement was truly voluntary in a meaningful sense. Admitting a statement obtained in circumstances where the accused could not meaningfully exercise constitutional rights may violate Art. 38.1. Courts have discretion to exclude such evidence where admission would render the trial unfair."
+    },
+    {
+      "id": "CON_M07_L01_Q06",
+      "question": "Article 38.1 requires trial 'in due course of law'. Does this impose any obligations on the prosecution beyond procedural fairness?",
+      "options": {
+        "A": "No — Art. 38.1 only imposes procedural requirements on the court conducting the trial",
+        "B": "Yes — Art. 38.1 requires that the prosecution act fairly and in good faith; this includes the duty to disclose relevant evidence to the defence (disclosure obligations), the prohibition on non-disclosure of exculpatory material, and restrictions on prosecutorial misconduct that would undermine a fair trial",
+        "C": "Art. 38.1 imposes no obligations on the prosecution — only on the judge",
+        "D": "Art. 38.1 only applies to the Garda Síochána, not to the DPP"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 38.1's fair trial guarantee imposes obligations on the prosecution as well as the court. The DPP has a constitutional and common law duty to disclose all evidence relevant to the defence — including exculpatory material — in order to ensure a fair trial. Non-disclosure of material evidence can violate Art. 38.1 and may result in the quashing of a conviction or a stay on proceedings. This duty of disclosure is fundamental to the adversarial system and the constitutional guarantee of a fair trial. The obligation is ongoing throughout the criminal process."
+    },
+    {
+      "id": "CON_M07_L01_Q07",
+      "question": "Article 38.1 prohibits retrospective criminal offences ('nullum crimen sine lege'). Which provision of the Constitution most directly addresses this principle?",
+      "options": {
+        "A": "Art. 34 (courts) provides the prohibition on retrospective offences",
+        "B": "Art. 15.5.1° provides that the Oireachtas shall not declare acts to be infringements of the law which were not so at the date of their commission; this is the express constitutional prohibition on retrospective criminal legislation, complementing the Art. 38.1 fair trial guarantee",
+        "C": "Art. 40.4.1° (personal liberty) is the only provision prohibiting retrospective criminal law",
+        "D": "The prohibition on retrospective crimes is purely a common law principle with no express constitutional basis"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 15.5.1° expressly provides that the Oireachtas shall not declare acts to be infringements of the law which were not so at the date of their commission. This is the constitutional prohibition on retrospective criminal legislation (nullum crimen sine lege — no crime without a prior law). It complements Art. 38.1's fair trial guarantee: a person cannot be tried for conduct that was not criminal when performed. The prohibition is an aspect of the rule of law and the principle that individuals must be able to know in advance what conduct is prohibited. Art. 15.5.2° similarly prohibits retrospective increases in criminal penalties."
+    },
+    {
+      "id": "CON_M07_L01_Q08",
+      "question": "In State (Healy) v Donoghue [1976] IR 325, what specific right was recognised as part of the Art. 38.1 guarantee in serious criminal proceedings?",
+      "options": {
+        "A": "The right to remain silent",
+        "B": "The right to legal representation — where an accused facing a serious criminal charge cannot afford a solicitor, the State must provide one at public expense; failure to do so can violate Art. 38.1 and Art. 40.3",
+        "C": "The right to trial in the Irish language",
+        "D": "The right to an automatic appeal to the Court of Appeal"
+      },
+      "correct_answer": "B",
+      "explanation": "State (Healy) v Donoghue [1976] IR 325 recognised the constitutional right to legal representation in serious criminal proceedings as part of Art. 38.1's 'due course of law' guarantee and Art. 40.3's protection of personal rights. Where an accused faces serious charges (particularly involving potential imprisonment) and cannot afford legal representation, the State has a constitutional obligation to provide legal aid. This led to the Criminal Justice (Legal Aid) Act 1962 (previously in force) and the subsequent expansion of the legal aid scheme. The right is not to any particular lawyer but to the provision of adequate legal representation."
+    },
+    {
+      "id": "CON_M07_L01_Q09",
+      "question": "Article 38.3 permits the establishment of special courts for the trial of offences where the ordinary courts are inadequate to secure the effective administration of justice and the preservation of public peace and order. What procedural safeguard does Art. 38.3.2° provide regarding such courts?",
+      "options": {
+        "A": "Art. 38.3.2° requires that special courts be presided over by Supreme Court judges",
+        "B": "Art. 38.3.1° requires that special courts be established only by law; the Constitution does not expressly specify the procedural safeguards for special courts beyond this, but the courts have held that Art. 38.1 still applies — accused before the Special Criminal Court must still be tried 'in due course of law'",
+        "C": "Art. 38.3.2° requires mandatory jury trials in special courts",
+        "D": "Art. 38.3 provides that special courts may only try capital offences"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 38.3.1° permits special courts to be established by law for cases where the ordinary courts are 'inadequate to secure the effective administration of justice and the preservation of public peace and order'. The Special Criminal Court (SCC) was established under the Offences Against the State Act 1939. While the SCC sits without a jury (three judges), Art. 38.1 still applies — trials before the SCC must still be conducted 'in due course of law', meaning with fair procedures, the rules of evidence (as modified for the SCC context), the right to legal representation, and other constitutional guarantees. The absence of a jury does not exempt the SCC from Art. 38.1."
+    },
+    {
+      "id": "CON_M07_L01_Q10",
+      "question": "Can the right to trial by jury under Art. 38.5 be validly waived by an accused person?",
+      "options": {
+        "A": "No — the right to jury trial is absolute and cannot be waived",
+        "B": "In limited circumstances, an accused may consent to trial without jury — e.g., summary trial of offences that are not genuinely 'non-minor'; however, the accused cannot validly waive the constitutional right to jury trial where the offence is genuinely non-minor, as the right exists for reasons of public interest not just individual protection",
+        "C": "Yes — any accused may waive jury trial at any stage simply by filing a written waiver with the court",
+        "D": "Yes — Irish law permits judge-only trials for all indictable offences by agreement of the accused and the DPP"
+      },
+      "correct_answer": "B",
+      "explanation": "The position on waiver of the Art. 38.5 jury trial right is complex. For non-minor offences, the jury trial right exists in part for reasons of public interest in lay participation in justice, not merely individual protection. This suggests the right cannot be entirely waived by an accused alone. The Criminal Law (Jury Trials) Act has not been enacted (various proposals have been rejected). In practice, judge-only trials in Ireland are confined to the Special Criminal Court (Art. 38.3), military tribunals (Art. 38.4), and the Central Criminal Court jury waiver in limited circumstances under specific legislation. Waiver must be fully informed and voluntary."
+    },
+    {
+      "id": "CON_M07_L01_Q11",
+      "question": "Article 38.4 provides for military tribunals to try members of the Defence Forces in certain circumstances. Can a civilian be tried by a military tribunal?",
+      "options": {
+        "A": "Yes — military tribunals may try any person who assists a member of the Defence Forces",
+        "B": "No — Art. 38.4 limits military tribunal jurisdiction to members of the Defence Forces; civilians cannot be tried by military tribunal and must be tried by the ordinary courts under Art. 38.1 and 38.5",
+        "C": "Yes — during a declared emergency under Art. 28.3.3°, all persons may be tried by military tribunal",
+        "D": "Civilians who commit offences against military property may be tried by military tribunal"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 38.4 provides for military tribunals to try offences against military law by members of the Defence Forces. The jurisdiction of military tribunals is limited to Defence Forces members — civilians cannot be tried by military tribunal under normal circumstances. This is a fundamental rule of constitutional procedure: extending military jurisdiction to civilians would deprive them of their Art. 38.5 right to jury trial and Art. 38.1 'due course of law' rights before the ordinary courts. During a declared national emergency under Art. 28.3.3°, expanded military powers may apply, but this is an exceptional and strictly limited exception."
+    },
+    {
+      "id": "CON_M07_L01_Q12",
+      "question": "In Killeen v Director of Public Prosecutions [1997] 3 IR 218, the High Court considered whether the sending forward of a person for trial on indictment by a District Judge (the old 'district court preliminary examination') complied with Art. 38.1. What was the constitutional issue?",
+      "options": {
+        "A": "Whether the preliminary examination required a jury",
+        "B": "Whether the preliminary examination — which could result in a return for trial without examination of all evidence — provided adequate procedural protection consistent with the fair procedures requirement of Art. 38.1; the case engaged issues of the accused's right to test the prosecution case before being sent forward",
+        "C": "Whether preliminary examinations in the District Court were constitutional as they involved the District Judge making a credibility finding",
+        "D": "Whether the accused had a constitutional right to be present at all preliminary examination hearings"
+      },
+      "correct_answer": "B",
+      "explanation": "Killeen v DPP [1997] engaged questions about whether the preliminary examination procedure (since abolished and replaced by the book of evidence/return for trial system under the Criminal Procedure Act 1967 as amended) provided sufficient procedural protection at the pre-trial stage. The case raised Art. 38.1 'due course of law' issues about whether the accused's rights were adequately protected in the process of being sent forward for trial. The preliminary examination system has since been reformed — the 2001 Act introduced a different case management process — but the constitutional issues raised remain relevant to trial procedure generally."
+    },
+    {
+      "id": "CON_M07_L01_Q13",
+      "question": "A statutory provision creates an offence of 'failing to comply with a Garda direction' but does not specify what conduct constitutes a 'direction' or the circumstances in which it may be given. Does this raise an Art. 38.1 concern?",
+      "options": {
+        "A": "No — vague criminal offences are permissible as the Gardaí have discretion in enforcement",
+        "B": "Yes — an offence that is so vague that a person of ordinary intelligence cannot determine what conduct is prohibited violates Art. 38.1 (trial in due course of law requires a defined offence) and Art. 15.5.1° (the requirement that the criminal law be clear and ascertainable); the offence also potentially violates the nulla poena principle",
+        "C": "Vague criminal offences violate EU law but not the Irish Constitution",
+        "D": "A vague offence violates Art. 40.6 freedom of expression but not Art. 38.1"
+      },
+      "correct_answer": "B",
+      "explanation": "The void for vagueness doctrine in Irish constitutional law holds that criminal offences must be defined with sufficient clarity that a person of ordinary intelligence can determine what conduct is prohibited. This requirement flows from: Art. 38.1 (trial 'in due course of law' requires a clearly defined offence); Art. 15.5.1° (prohibition on declaring acts to be infringements of the law if they were not clearly defined as such at the time); and the general rule of law principle. The Supreme Court addressed this in Dokie v DPP [2011] and earlier cases — penal provisions must be clear enough to give adequate notice of what is prohibited. Lesson 2 of this module covers this in detail."
+    },
+    {
+      "id": "CON_M07_L01_Q14",
+      "question": "In The People (DPP) v McDonagh [2001] 3 IR 411, the Supreme Court considered whether the Misuse of Drugs Act 1977's provisions creating offences of possession of certain substances satisfied Art. 38.1. The question was whether the statutory drafting was sufficiently certain. What principle applies?",
+      "options": {
+        "A": "Criminal offences may always be defined by reference to ministerial regulations without constitutional difficulty",
+        "B": "The constitutional requirement of legal certainty in criminal law means that an offence must be defined in a law that is sufficiently accessible and precise; where the definition of what substances are prohibited is incorporated by reference to a schedule which may be amended by ministerial order, the constitutionality depends on whether the principles and policies are adequately defined in the parent Act",
+        "C": "Ministerial schedules to criminal statutes are always unconstitutional as they involve delegated criminal lawmaking",
+        "D": "Criminal law can only be defined in primary legislation passed by the Oireachtas; no delegation to ministers is permissible"
+      },
+      "correct_answer": "B",
+      "explanation": "The People (DPP) v McDonagh [2001] engaged the question of whether incorporating the definition of prohibited drugs by reference to a ministerial schedule (rather than listing them in the primary Act) satisfied Art. 38.1 legal certainty requirements and the Art. 15.2.1° delegated legislation principles. The constitutional approach requires that the parent Act contain sufficient 'principles and policies' (Cityview Press) and that the definition of prohibited conduct be sufficiently ascertainable. Ministerial schedules that can expand the list of prohibited substances without primary legislation raise Art. 15.2.1° concerns — the criminal law cannot be made entirely by ministerial order without constitutional difficulty."
+    }
+  ]
+}

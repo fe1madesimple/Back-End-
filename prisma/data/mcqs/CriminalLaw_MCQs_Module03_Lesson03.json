@@ -1,0 +1,119 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module03_Lesson01.txt",
+  "module_number": 3,
+  "module_title": "Mens Rea",
+  "lesson_number": 3,
+  "lesson_title": "Strict Liability",
+  "total_questions": 9,
+  "questions": [
+    {
+      "id": "CRL_M03_L03_Q01",
+      "question": "In Gammon (Hong Kong) Ltd v AG of Hong Kong [1985], the Privy Council set out principles for determining whether an offence imposes strict liability. Which of the following correctly summarises these principles?",
+      "options": {
+        "A": "Strict liability is presumed unless the statute expressly states a mental element",
+        "B": "There is a presumption that mens rea is required for criminal offences; this presumption can be displaced where the offence is truly criminal in nature and the legislature has clearly indicated this",
+        "C": "There is a presumption that mens rea is required; this can only be displaced where the offence is not truly criminal (regulatory/quasi-criminal) and the subject matter is one of social concern, and imposing strict liability will promote the object of the statute",
+        "D": "Strict liability is always constitutionally invalid because it punishes without fault"
+      },
+      "correct_answer": "C",
+      "explanation": "In Gammon (Hong Kong) Ltd v AG Hong Kong [1985], Lord Scarman set out the Privy Council's approach: (1) There is a presumption of law that mens rea is required before a person can be held guilty of a criminal offence. (2) The presumption is particularly strong where the offence is 'truly criminal' in character. (3) The presumption can be displaced only if this is clearly or by necessary implication the effect of the statute. (4) The presumption can be displaced where the statute is concerned with an issue of social concern (public safety, health, etc.) and where imposing strict liability will promote the object of the statute by encouraging vigilance. Option A reverses the presumption. Option B partially states the principle but incorrectly suggests strict liability can apply to truly criminal offences. Option D overstates the constitutional position \u2014 strict liability is accepted in many regulatory contexts in Irish law."
+    },
+    {
+      "id": "CRL_M03_L03_Q02",
+      "question": "Why does the Irish Constitution (Art 38.1 \u2014 right to fair trial; Art 6.1 ECHR equivalent) create particular tensions with strict liability offences?",
+      "options": {
+        "A": "Because Art 38.1 expressly prohibits strict liability offences",
+        "B": "Because strict liability offences remove the presumption of innocence (Art 6.2 ECHR) and punish without fault \u2014 convicting someone regardless of their reasonable care raises constitutional concerns about proportionality and the requirement that the accused be given a fair opportunity to present a defence",
+        "C": "Because Art 38.1 requires that all criminal offences carry a maximum sentence of imprisonment, and strict liability offences often do not",
+        "D": "Because strict liability offences are contrary to the principle of legality (nulla poena sine lege)"
+      },
+      "correct_answer": "B",
+      "explanation": "Strict liability offences are constitutionally problematic because they convict persons who may have acted entirely reasonably and with all due care, simply because a prohibited consequence occurred. This is in tension with Art 6.2 ECHR (presumption of innocence) and the Irish constitutional right to fair procedures (Art 38.1, Art 40.3). Irish courts have been alert to this tension: in Heaney and McGuinness v Ireland [2001] ECHR, the court found that compelled self-incrimination in a regulatory context violated Art 6. For strict liability to be constitutional, it must typically (a) be confined to regulatory/quasi-criminal matters rather than truly criminal offences, (b) be proportionate to a legitimate aim, and (c) often include a due diligence defence to preserve some fairness. Option A incorrectly states a blanket prohibition. Option C is incorrect \u2014 the sentence range is not the constitutional issue. Option D conflates the principle of legality (fair warning) with the distinct concern about fault."
+    },
+    {
+      "id": "CRL_M03_L03_Q03",
+      "question": "A food company is charged with supplying contaminated food contrary to food safety regulations. The company took all reasonable precautions but contamination occurred through a supplier error. The offence is strict liability under the regulations. The company argues it should not be liable because it was not at fault. How should this argument be analysed?",
+      "options": {
+        "A": "The company has a complete defence \u2014 strict liability offences require proof of negligence at minimum",
+        "B": "The company is liable because the offence is strict liability \u2014 once the prohibited act is proved, no mens rea need be shown and the absence of fault is no defence unless the statute provides a specific due diligence defence",
+        "C": "The company is not liable because corporate entities cannot be convicted of strict liability offences",
+        "D": "The company is liable only if it was aware of the contamination risk and failed to act"
+      },
+      "correct_answer": "B",
+      "explanation": "Strict liability means that the prohibited consequence (supplying contaminated food) is sufficient for conviction once proved; the prosecution need not establish that the defendant was at fault, careless, reckless, or intentional. The company's reasonable precautions are no defence unless the statute specifically provides a 'due diligence' or 'reasonable precautions' defence. Many food safety and health & safety statutes do include such defences precisely to maintain some fairness while still promoting vigilance. If the statute in question does not include such a defence, the company's lack of fault is legally irrelevant to conviction (though it may be highly relevant to sentencing). Option A incorrectly introduces a minimum negligence standard. Option C is wrong \u2014 corporations can be strictly liable. Option D applies the subjective recklessness test, which is inapplicable to strict liability offences."
+    },
+    {
+      "id": "CRL_M03_L03_Q04",
+      "question": "The distinction between 'absolute liability' and 'strict liability' is sometimes drawn in criminal law scholarship. Which statement most accurately describes the distinction?",
+      "options": {
+        "A": "They are identical \u2014 absolute liability and strict liability both require no mens rea",
+        "B": "Strict liability removes the requirement for mens rea as to one or more elements of the offence but may allow defences such as due diligence or mistake of fact; absolute liability admits of no defences at all \u2014 the commission of the prohibited act is sufficient regardless of any defence",
+        "C": "Absolute liability requires a higher degree of fault than strict liability",
+        "D": "Strict liability applies to criminal offences; absolute liability applies to civil wrongs"
+      },
+      "correct_answer": "B",
+      "explanation": "While 'strict liability' and 'absolute liability' are sometimes used interchangeably, a meaningful distinction exists: strict liability removes the requirement to prove mens rea but typically preserves certain defences (such as due diligence, reasonable mistake of fact, or acts of a third party). Absolute liability, in the stronger sense, admits no defences of any kind \u2014 the bare fact of the prohibited act occurring is conclusive. True absolute liability is rare and constitutionally suspect. In Canadian constitutional law (R v City of Sault Ste Marie [1978]), the Supreme Court of Canada distinguished between full mens rea offences, strict liability offences (due diligence defence available), and absolute liability offences (no defence). Most Irish regulatory offences create strict liability with some defences preserved. Option A incorrectly equates the two. Option C reverses the hierarchy. Option D is incorrect \u2014 the distinction applies within the criminal law itself."
+    },
+    {
+      "id": "CRL_M03_L03_Q05",
+      "question": "Under the Road Traffic Acts in Ireland, certain offences (such as exceeding the speed limit or driving with excess alcohol) are treated as strict liability. A driver exceeds the speed limit while rushing his pregnant wife to hospital. He argues he had a good reason and should not be convicted. Which statement is most accurate?",
+      "options": {
+        "A": "The driver has a valid defence because his purpose was to save life",
+        "B": "The driver's reason \u2014 however sympathetic \u2014 is generally irrelevant to liability for the strict liability offence; he exceeded the limit and is guilty; the circumstances may be relevant to sentencing discretion",
+        "C": "The driver has a defence of necessity that automatically defeats the prosecution",
+        "D": "The driver is not guilty because he did not intend to break the speed limit"
+      },
+      "correct_answer": "B",
+      "explanation": "Strict liability road traffic offences do not require proof of mens rea, and the defendant's subjective reason for committing the prohibited act is generally irrelevant to conviction. Once the act (exceeding the speed limit) is proved, conviction follows. While necessity (a common law defence allowing otherwise unlawful acts in genuine emergencies) may theoretically apply in extreme cases, it is a very narrow defence in Irish law and is rarely successfully invoked for road traffic matters. The more practically significant point is that the circumstances (rushing to hospital, genuine emergency) may properly be raised in mitigation of sentence \u2014 a court may impose a nominal penalty or apply the Probation Act \u2014 but do not negative liability. Option A overstates the reach of necessity as an automatic defence. Option C again overstates necessity. Option D introduces a mens rea requirement that strict liability offences do not have."
+    },
+    {
+      "id": "CRL_M03_L03_Q06",
+      "question": "In Sweet v Parsley [1970] HL, the House of Lords considered whether a landlord who let her property (which tenants used for cannabis smoking without her knowledge) was guilty of 'being concerned in the management of premises used for the purpose of smoking cannabis.' Which direction did the House of Lords take?",
+      "options": {
+        "A": "The House of Lords confirmed strict liability \u2014 the landlord was convicted because the acts occurred on her premises",
+        "B": "The House of Lords held that the presumption of mens rea applied; a truly criminal offence carrying moral stigma and substantial penalty requires proof of mens rea, and the landlord who had no knowledge of the drug use could not be guilty",
+        "C": "The House of Lords imposed strict liability because drug offences always carry strict liability in English law",
+        "D": "The House of Lords held the landlord guilty on the basis of transferred malice from the tenants to her"
+      },
+      "correct_answer": "B",
+      "explanation": "Sweet v Parsley [1970] is a landmark authority on the presumption of mens rea. Miss Sweet had let her farmhouse to tenants and occasionally stayed there herself. She had no knowledge that tenants were using cannabis. The House of Lords (per Lord Reid) held that the presumption of mens rea applies to all truly criminal offences \u2014 where an offence carries moral stigma and serious penalties (as drug offences do), the legislature must clearly displace the mens rea presumption for strict liability to apply. Since the statute did not clearly do so, mens rea was required and Miss Sweet's conviction was quashed. This case remains the leading authority on the application of the presumption in serious criminal offences. Option A reflects the trial outcome that was overturned. Option C is wrong \u2014 not all drug offences are strict liability. Option D invents a doctrine not applied in this context."
+    },
+    {
+      "id": "CRL_M03_L03_Q07",
+      "question": "Which of the following is the most compelling policy justification for imposing strict liability in regulatory offences such as food safety, health and safety at work, and environmental protection?",
+      "options": {
+        "A": "It punishes defendants regardless of their conduct, thereby ensuring equal treatment",
+        "B": "It ensures that persons who profit from regulated activities bear the risk of prohibited consequences, incentivises maximum vigilance, and avoids the difficulty of proving subjective mental states in commercial enterprises",
+        "C": "It allows courts to impose heavier sentences than would be available for mens rea offences",
+        "D": "It simplifies prosecution by removing the need to prove any facts about the defendant"
+      },
+      "correct_answer": "B",
+      "explanation": "The primary policy justifications for strict liability in regulatory contexts are: (1) Incentivisation of vigilance \u2014 those who conduct regulated activities (food production, construction, manufacturing) must exercise the highest standards of care because they cannot escape liability by proving they tried their best; (2) Risk allocation \u2014 those who profit from potentially dangerous activities should bear the risk of harm occurring; (3) Practical prosecutorial advantages \u2014 proving subjective mental states in large corporations or complex regulatory environments is extremely difficult; strict liability removes this burden; (4) Protection of the public \u2014 in areas affecting public health and safety, even well-intentioned mistakes cause serious harm. Option A is legally and morally inaccurate \u2014 strict liability does not treat all defendants equally; it ignores fault. Option C is incorrect \u2014 strict liability does not affect maximum sentences. Option D overstates the prosecution's advantage \u2014 they must still prove the prohibited act."
+    },
+    {
+      "id": "CRL_M03_L03_Q08",
+      "question": "An employer is charged with a workplace health and safety offence after an employee is injured. The relevant statute creates a strict liability offence but includes a statutory defence that the employer took all reasonable precautions and exercised all due diligence to avoid the offence being committed. The employer proves they had a comprehensive safety system. Which is the most accurate statement?",
+      "options": {
+        "A": "The employer is automatically liable because the offence is strict liability",
+        "B": "The employer has made out the statutory due diligence defence and should be acquitted \u2014 the burden shifts to the defendant to prove due diligence on the balance of probabilities",
+        "C": "The employer must prove due diligence beyond reasonable doubt",
+        "D": "The due diligence defence is only available if the employer also proves the employee was contributorily negligent"
+      },
+      "correct_answer": "B",
+      "explanation": "Many strict liability regulatory offences include a statutory due diligence defence (sometimes called a 'reasonable precautions' defence) as a mechanism to preserve fairness while still incentivising vigilance. Where such a defence exists, the burden of establishing it falls on the defendant, typically on the balance of probabilities (a reverse burden). This reverse burden has been upheld as compatible with the presumption of innocence (Art 6.2 ECHR) in regulatory contexts where the defendant is in the best position to know what precautions they took. Where the employer proves a comprehensive, properly implemented safety system constituting due diligence, the defence should succeed. Option A ignores the statutory defence. Option C incorrectly applies the criminal standard (beyond reasonable doubt) to what is a reverse burden defence established on the balance of probabilities. Option D invents a contributory negligence requirement that does not exist in this context."
+    },
+    {
+      "id": "CRL_M03_L03_Q09",
+      "question": "A defendant is charged with selling alcohol to a minor contrary to the Intoxicating Liquor Act. He claims he genuinely believed the purchaser was over 18 based on their appearance and demeanour. The offence is strict liability. Is his honest belief a defence?",
+      "options": {
+        "A": "Yes \u2014 honest belief in consent or age is always a defence under Irish law",
+        "B": "No \u2014 unless the statute specifically provides a defence of honest and reasonable belief as to age, the defendant's belief is irrelevant to liability for a strict liability offence; only the prohibited act (sale to a minor) need be proved",
+        "C": "Yes \u2014 because the defendant acted in good faith his prosecution would be unconstitutional",
+        "D": "No \u2014 but only because the belief was not based on documentary proof of age"
+      },
+      "correct_answer": "B",
+      "explanation": "In strict liability offences, the defendant's honest or even reasonable belief regarding an element of the offence (such as the customer's age) is generally no defence unless the statute expressly provides for such a defence. The courts have held that where Parliament/the Oireachtas has imposed strict liability, the defendant's state of mind as to the relevant element is irrelevant to liability. Some age verification statutes in Ireland and England have been amended to include specific defences for retailers who take reasonable steps (checking ID, operating challenge schemes) \u2014 this is a statutory recognition that strict liability may be unduly harsh where reasonable steps were taken. The Irish Intoxicating Liquor legislation has evolved in this respect. Option A overstates the defence \u2014 honest belief as to age is not a universal defence for all offences. Option C overstates constitutional protection \u2014 strict liability with no age defence is not automatically unconstitutional. Option D introduces a documentary requirement that is not the legal test."
+    }
+  ]
+}

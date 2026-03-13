@@ -1,0 +1,155 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module12_Lesson02.txt",
+  "module_number": 12,
+  "module_title": "EU Equality Law",
+  "lesson_number": 2,
+  "lesson_title": "Pregnancy, Gender Reassignment, and Positive Action",
+  "questions": [
+    {
+      "id": "EUL_M12_L02_Q01",
+      "question": "In Dekker v VJV-Centrum [1990] (C-177/88), a woman was refused employment because she was pregnant (as her engagement would not be covered by insurance). The CJEU held:",
+      "options": {
+        "A": "Refusing to hire a pregnant woman may be lawful if the employer faces genuine financial loss",
+        "B": "Refusal to hire a woman because she is pregnant constitutes direct sex discrimination — no male comparator is required since pregnancy is a condition unique to women; business reasons cannot justify the discrimination",
+        "C": "Pregnancy-based hiring decisions are not sex discrimination as they are based on a condition, not sex",
+        "D": "The employer's insurance difficulties provided objective justification for the refusal"
+      },
+      "correct_answer": "B",
+      "explanation": "Dekker established that refusal to hire because of pregnancy is direct sex discrimination under what is now Directive 2006/54. The reasoning: since only women can be pregnant, less favourable treatment on grounds of pregnancy is necessarily sex-based discrimination. No actual male comparator is needed — the prohibited ground (pregnancy) is intrinsically linked to sex. Crucially, the Court rejected the argument that financial loss (uninsurability) could justify the decision — once direct sex discrimination is established, there is no room for justification on economic or practical grounds. This is a fundamental feature of direct discrimination: unlike indirect discrimination, it cannot be justified. The principle was confirmed in Webb v EMO Air Cargo [1994] and codified in the Pregnant Workers Directive 92/85."
+    },
+    {
+      "id": "EUL_M12_L02_Q02",
+      "question": "Directive 92/85 (the Pregnant Workers Directive) provides specific protections for pregnant workers, those who have recently given birth, and breastfeeding workers. Which of the following is a core right under Directive 92/85?",
+      "options": {
+        "A": "A right to full pay throughout maternity leave",
+        "B": "A minimum of 14 weeks' continuous maternity leave with an adequate allowance (at least sick pay level), protection from dismissal during pregnancy and maternity leave, and protection from night work in certain circumstances",
+        "C": "A right to 26 weeks' paid maternity leave and immediate reinstatement to the identical post",
+        "D": "A requirement for employers to provide on-site childcare facilities for returning mothers"
+      },
+      "correct_answer": "B",
+      "explanation": "Directive 92/85 establishes minimum standards for pregnant workers, new mothers, and breastfeeding workers. Key provisions: Article 8 — minimum 14 weeks' continuous maternity leave; Article 11 — maintenance of remuneration and/or adequate allowance (at least equivalent to sick pay) during maternity leave; Article 10 — prohibition on dismissal from the beginning of pregnancy until the end of maternity leave (save in exceptional cases unconnected with pregnancy); Article 7 — exemption from night work during pregnancy and for a period after birth/breastfeeding (subject to medical certificate). The Directive sets minimum standards — member states may provide more favourable protection (Article 1(3)). The adequacy of the allowance has been clarified in cases such as Boyle [1998]."
+    },
+    {
+      "id": "EUL_M12_L02_Q03",
+      "question": "In Brown v Rentokil [1998] (C-394/96), Mrs Brown was dismissed after a period of pregnancy-related illness exceeded the company's threshold for sick-pay dismissal (26 weeks). The CJEU held:",
+      "options": {
+        "A": "The dismissal was lawful — gender-neutral sickness policies apply equally to men and women",
+        "B": "Dismissal of a pregnant worker during pregnancy for illness arising from the pregnancy constitutes direct sex discrimination — the illness and the pregnancy cannot be separated; comparison with a sick male worker is impermissible during the protected period",
+        "C": "The employer could rely on the sickness dismissal policy as an objective justification for the dismissal",
+        "D": "Pregnancy-related illness is treated as ordinary sickness for the purposes of dismissal protection"
+      },
+      "correct_answer": "B",
+      "explanation": "Brown v Rentokil established that during the pregnancy and maternity leave period, a woman dismissed for pregnancy-related illness is automatically a victim of sex discrimination — no comparison with a sick male worker is permissible or relevant. The Court's reasoning: during pregnancy, absence due to pregnancy-related illness is inherently linked to the protected condition (pregnancy), and comparisons with male employees on sick leave are inappropriate. The employer cannot use a facially neutral sick leave dismissal policy to dismiss during the protected period where the illness is pregnancy-related. After the maternity protection period ends, a woman may be dismissed for pregnancy-related illness on the same terms as male employees absent due to equivalent illness — but not during pregnancy itself."
+    },
+    {
+      "id": "EUL_M12_L02_Q04",
+      "question": "In P v S and Cornwall County Council [1996] (C-13/94), P was dismissed after notifying the employer of an intention to undergo gender reassignment surgery. The CJEU held:",
+      "options": {
+        "A": "Gender reassignment is not covered by sex discrimination law as it involves change of sex rather than differential treatment between the sexes",
+        "B": "Dismissal for undergoing gender reassignment constitutes sex discrimination under the Equal Treatment Directive — the scope of the principle of equal treatment cannot be reduced to discrimination between men and women only; it applies to discrimination arising from gender reassignment",
+        "C": "Gender reassignment dismissal is lawful where the employer has genuine concerns about customer reaction",
+        "D": "Gender reassignment is covered only by disability discrimination law, not sex discrimination law"
+      },
+      "correct_answer": "B",
+      "explanation": "P v S is a landmark expansion of sex discrimination law. AG Tesauro delivered an influential Opinion urging a broad reading of the principle of equal treatment, and the CJEU agreed that dismissal for gender reassignment — treating a person less favourably because they are changing sex — constitutes sex discrimination. The Court refused to confine 'sex' discrimination to male/female comparisons. It ruled that the Equal Treatment Directive, read in light of fundamental rights (human dignity), protects individuals undergoing gender reassignment. This expansive approach has since been reflected in Directive 2006/54 and the Equality Act 2010 in the UK. The decision was notable for going beyond the text of the Directive based on fundamental rights reasoning."
+    },
+    {
+      "id": "EUL_M12_L02_Q05",
+      "question": "In Kalanke v Freie Hansestadt Bremen [1995] (C-450/93), the Land Bremen had a rule that where a male and female candidate were equally qualified for a post in a sector where women were underrepresented, the woman would automatically be given priority. The CJEU held this rule:",
+      "options": {
+        "A": "Was lawful as a positive action measure expressly permitted by Article 157(4) TFEU",
+        "B": "Violated the Equal Treatment Directive — automatic absolute priority for female candidates when equally qualified goes beyond permissible positive action; it substitutes promotion of equal opportunities with a result (equal representation) and is a form of discrimination against male candidates",
+        "C": "Was lawful as positive action measures of this kind are immune from challenge under EU law",
+        "D": "Was lawful provided the tie-break operated only where there was a specific shortage of women at that level"
+      },
+      "correct_answer": "B",
+      "explanation": "Kalanke was the first CJEU case on positive action in employment. The automatic priority rule — where equally qualified female candidates are always preferred in underrepresented sectors — was held to violate the Equal Treatment Directive. The Court's reasoning: while positive action to promote equality of opportunity is permitted, automatic absolute priority substitutes the result (equal representation) for the means (equal opportunity). It goes beyond promoting equality of opportunity and constitutes discrimination against male candidates. Kalanke was controversial and widely criticised as setting too strict a standard. The CJEU subsequently moderated the position in Marschall [1997] by permitting tie-break rules that include a 'saving clause' allowing consideration of individual circumstances."
+    },
+    {
+      "id": "EUL_M12_L02_Q06",
+      "question": "In Marschall v Land Nordrhein-Westfalen [1997] (C-409/95), the Land had a positive action rule giving women priority when equally qualified for promotion in underrepresented sectors — but included a 'saving clause' allowing male candidates to prevail if reasons specific to an individual male candidate tilted the balance. The CJEU held this rule:",
+      "options": {
+        "A": "Also unlawful — any sex-based preference in promotion is incompatible with the Equal Treatment Directive",
+        "B": "Lawful — a priority rule for women in underrepresented sectors, combined with a genuine saving clause requiring an objective individual assessment of all candidates, is compatible with the Directive as a permissible positive action measure",
+        "C": "Lawful only if women constitute fewer than 30% of the relevant workforce",
+        "D": "Unlawful unless approved by the Commission as a formal positive action programme"
+      },
+      "correct_answer": "B",
+      "explanation": "Marschall distinguished Kalanke by introducing the 'saving clause' requirement. The Court held that a preferential rule for women in underrepresented sectors is compatible with the Equal Treatment Directive if it includes a saving clause ensuring that male candidates who have individual reasons (specific to them, e.g., hardship, special personal circumstances) that tilt the balance in their favour are given equal consideration. The saving clause must be genuinely applied — it cannot be a mere formality. This preserves the positive action objective while preventing rigid automatic results that eliminate all consideration of individual merit. Marschall identified the key policy concern: male candidates suffer from prejudices and stereotypes too, and true equality requires individual assessment. This approach was confirmed and refined in Badeck [2000]."
+    },
+    {
+      "id": "EUL_M12_L02_Q07",
+      "question": "In Abrahamsson and Anderson v Fogelqvist [2000] (C-407/98), a Swedish rule gave priority to a candidate from an underrepresented sex in academic posts where that candidate had 'sufficient qualifications' — even if not equally qualified with a candidate of the other sex, unless the difference was so great that the rule would give rise to a manifest breach of objectivity. The CJEU held:",
+      "options": {
+        "A": "The Swedish rule was lawful as a particularly robust form of positive action",
+        "B": "The Swedish rule was unlawful — selection based on qualifications 'sufficient' rather than 'equal' crosses the line from promoting equality of opportunity to guaranteeing equality of outcome; the link between priority and merit cannot be entirely severed",
+        "C": "Academic posts are exempt from equality law as the state may legitimately determine academic selection criteria",
+        "D": "The rule was lawful provided the qualification gap was assessed objectively in each case"
+      },
+      "correct_answer": "B",
+      "explanation": "Abrahamsson established an outer limit for permissible positive action even with a saving clause. The Swedish rule went further than Marschall: it allowed a candidate from the underrepresented sex to be preferred even where they were not equally qualified — only 'sufficiently' qualified — unless the difference was 'manifest'. The CJEU held this unlawful even with a saving clause. The selection method based on 'sufficient qualifications' is not transparent and is incompatible with the requirement of objective assessment of candidates. The core principle: positive action may tip the balance where candidates are equal or near-equal (with genuine individual assessment), but cannot install a system where a less qualified candidate wins because of sex unless the comparison is genuinely objective. Merit must remain the primary criterion with sex as only a tiebreaker of last resort."
+    },
+    {
+      "id": "EUL_M12_L02_Q08",
+      "question": "In Badeck [2000] (C-158/97), the CJEU assessed several elements of a German (Hessen) positive action plan for the public sector. Which of the following positive action measures did the Court find LAWFUL?",
+      "options": {
+        "A": "Guaranteeing women a fixed percentage of all training places regardless of qualifications",
+        "B": "Flexible targets (not rigid quotas) for women's representation, preferential access to training for women in underrepresented areas, and giving priority to women in promotion to senior posts where equally qualified — where a saving clause with objective individual assessment is included",
+        "C": "Automatic priority for women in every promotion irrespective of qualifications",
+        "D": "Reduction of working hours requirements for women only to enable them to compete with men"
+      },
+      "correct_answer": "B",
+      "explanation": "Badeck was a detailed assessment of multiple positive action measures. The Court approved: flexible targets (aspirational goals rather than rigid quotas) for women's representation in public bodies; preferential training access for women in underrepresented sectors (as training facilitates future equal opportunity); tie-break rules favouring women where candidates are equally qualified, combined with genuine saving clauses permitting individual assessment. The Court distinguished targets (permissible) from automatic quotas (unlawful in the Kalanke sense). The key principles from Badeck, Kalanke, Marschall and Abrahamsson together define the current framework: positive action is permitted where (a) it targets underrepresentation, (b) involves flexible goal-setting rather than rigid quotas, and (c) retains a genuine individual assessment mechanism."
+    },
+    {
+      "id": "EUL_M12_L02_Q09",
+      "question": "A woman returns from maternity leave to find her employer has restructured her role. She is offered a different position at a lower grade. Under Directive 2006/54 Article 15, her rights on return from maternity leave are:",
+      "options": {
+        "A": "She is entitled to a position equivalent to her previous one, with no less favourable conditions, and to benefit from any improvements in working conditions to which she would have been entitled during her absence",
+        "B": "She is entitled only to a position of equivalent salary — the nature of the role may be changed at the employer's discretion",
+        "C": "She forfeits her right to her original role after 14 weeks of maternity leave",
+        "D": "She has no EU law rights regarding her returning post — this is governed exclusively by national employment law"
+      },
+      "correct_answer": "A",
+      "explanation": "Directive 2006/54 Article 15 expressly provides that a woman on maternity leave is entitled, upon return, to her job or an equivalent post on no less favourable terms and conditions. She must also benefit from any improvement in working conditions to which she would have been entitled had she not been absent — for example, automatic pay increases, cost-of-living uplifts, or promotion opportunities arising during her absence. This prevents the practical erosion of equal treatment through restructuring during maternity leave. The principle that disadvantageous changes to the returning employee's conditions during maternity leave constitute sex discrimination is confirmed in Gillespie [1996] and Alabaster [2004]. National law may and often does provide more favourable protection."
+    },
+    {
+      "id": "EUL_M12_L02_Q10",
+      "question": "Which of the following scenarios involves DIRECT sex discrimination that CANNOT be objectively justified under Directive 2006/54?",
+      "options": {
+        "A": "A requirement that all senior managers must have been available for full-time work for the past five years (disadvantaging more women than men due to childcare responsibilities)",
+        "B": "A policy of not hiring pregnant women for roles involving heavy lifting because of a genuine safety concern",
+        "C": "Dismissal of a woman because she refuses to have a termination and will therefore require maternity leave",
+        "D": "A pay freeze applied equally to all employees that perpetuates a pre-existing pay gap"
+      },
+      "correct_answer": "C",
+      "explanation": "Dismissal of a woman because she is pregnant — or because of consequences of pregnancy such as maternity leave — is direct sex discrimination and cannot be justified. The CJEU has consistently held (Dekker, Brown, Webb) that treatment less favourable because of pregnancy is intrinsically sex-based. Option A describes potential indirect discrimination (facially neutral rule with disproportionate impact — may be justifiable). Option B is complex: safety may potentially justify different treatment in very limited circumstances, but the CJEU in Directive 92/85 has established mandatory health and safety protections. Option D is indirect perpetuation (pay freeze preserving existing gap — may be indirect discrimination but arguable). Option C is unambiguous direct sex discrimination — the reason for dismissal is directly pregnancy-related."
+    },
+    {
+      "id": "EUL_M12_L02_Q11",
+      "question": "The CJEU in Gillespie v Northern Health and Social Services Board [1996] (C-342/93) considered the level of pay required during maternity leave under Article 157 TFEU. It held:",
+      "options": {
+        "A": "Full pay must be maintained throughout maternity leave",
+        "B": "Article 157 does not require full pay during maternity leave — women on maternity leave are in a special situation sui generis; pay must be adequate (not tokenistic) but EU law does not specify the precise level",
+        "C": "Zero pay during maternity leave is lawful as women on maternity leave are not 'working'",
+        "D": "The Barber principle extends to maternity pay — women must receive their full contractual pay"
+      },
+      "correct_answer": "B",
+      "explanation": "Gillespie established that the principle of equal pay does not require women on maternity leave to receive their full pay. Pregnant workers and those on maternity leave are in a special position not comparable to men or women actually at work — the comparison breaks down because the situation is unique. However, pay during maternity leave cannot be reduced to a tokenistic level. The CJEU has held that any benefit that would have been applied during employment (such as a pay rise) must be reflected in maternity pay. The minimum level is established by Directive 92/85 Article 11(3) — 'adequate allowance' at least at the level of sick pay. Member states may be more generous. The key principle: full pay is not required, but genuine adequacy is, and accrued improvements must be carried through."
+    },
+    {
+      "id": "EUL_M12_L02_Q12",
+      "question": "Article 157(4) TFEU (positive action clause) and the Equal Treatment Directive's positive action provisions apply to 'the underrepresented sex' — not exclusively to women. This means:",
+      "options": {
+        "A": "Positive action measures can only benefit women as they are always the underrepresented sex",
+        "B": "Positive action measures can in principle benefit men in sectors where men are underrepresented (e.g., nursing, primary school teaching) — the provision is sex-neutral in its wording, addressing the underrepresented sex in any particular area",
+        "C": "Positive action measures can only be adopted by member states, not by private employers",
+        "D": "Positive action is limited to pay equality and does not extend to promotion or training"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 157(4) TFEU refers to 'the underrepresented sex' rather than 'women', making it formally sex-neutral. While in practice positive action has most commonly benefited women (reflecting historical disadvantage), the legal framework is symmetrical. Male nurses or male primary school teachers in countries where they are underrepresented could in principle benefit from positive action measures. Directive 2006/54 confirms this sex-neutral approach. The CJEU cases (Kalanke, Marschall etc.) have all involved female beneficiaries, but the principles apply to the underrepresented sex generally. Private employers may adopt positive action measures as well as state bodies — Article 157(4) permits (but does not require) such measures, giving both public and private bodies flexibility to go beyond strict formal equality in pursuit of substantive equal outcomes."
+    }
+  ],
+  "total_questions": 12
+}

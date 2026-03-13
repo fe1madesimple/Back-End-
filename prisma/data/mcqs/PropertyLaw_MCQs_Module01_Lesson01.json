@@ -1,0 +1,611 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "PropertyLaw_ElevenLabs_Module01_Lesson01.txt",
+  "module_number": 1,
+  "module_title": "Finding and Relativity of Title",
+  "lesson_number": 1,
+  "lesson_title": "Finding, Relativity of Title, and Rights in Respect of Found Objects",
+  "questions": [
+    {
+      "id": "PRL_M01_L01_Q01",
+      "question": "In Parker v British Airways Board [1982], what item was found in the airline's executive lounge?",
+      "options": {
+        "A": "A diamond ring dropped by a previous passenger",
+        "B": "A wallet containing cash and credit cards",
+        "C": "A gold bracelet",
+        "D": "A set of car keys"
+      },
+      "correct_answer": "C",
+      "explanation": "In Parker v British Airways Board [1982] CA, a passenger found a gold bracelet in the airline's executive lounge. The court held that the passenger/finder had a possessory title to the bracelet, as the airline had not manifested sufficient intention to control objects found on the premises."
+    },
+    {
+      "id": "PRL_M01_L01_Q02",
+      "question": "What is the test established in Parker v British Airways for determining when an occupier has better rights to a found chattel than the finder?",
+      "options": {
+        "A": "The occupier must have physically searched the premises before the object was found",
+        "B": "The occupier must demonstrate manifest intention to exercise control over things that might be found on the premises",
+        "C": "The occupier must have had prior knowledge of the specific object before it was found",
+        "D": "The occupier must prove the finder was a trespasser at the time of finding"
+      },
+      "correct_answer": "B",
+      "explanation": "In Parker v British Airways Board [1982] CA, the Court of Appeal held that for an occupier to prevail over a finder, the occupier must manifest an intention to exercise control over the premises and the things found on them. The mere fact of occupying premises is not sufficient."
+    },
+    {
+      "id": "PRL_M01_L01_Q03",
+      "question": "Under Parker v British Airways, which of the following would most clearly demonstrate sufficient manifest intention by an occupier to control found objects?",
+      "options": {
+        "A": "Maintaining a general policy of cleanliness and tidiness",
+        "B": "Operating CCTV cameras throughout the premises",
+        "C": "Displaying notices requiring finders to hand all found items to staff, backed by a systematic collection procedure",
+        "D": "Employing security guards to patrol the building"
+      },
+      "correct_answer": "C",
+      "explanation": "Manifest intention to control found objects requires a demonstrated intention specifically related to found goods. Notices requiring surrender of found items, combined with a systematic collection procedure, most clearly demonstrate this. General security or cleanliness measures do not show a specific intention to control found objects."
+    },
+    {
+      "id": "PRL_M01_L01_Q04",
+      "question": "A passenger on a train finds a watch on the seat beside her. The transport operator has no notices about found objects and no surrender policy. Applying Parker v British Airways, what is the most likely outcome?",
+      "options": {
+        "A": "The watch belongs to the transport operator as occupier",
+        "B": "The watch belongs to the Crown as ownerless goods",
+        "C": "The watch belongs to the true owner only — the finder has no rights",
+        "D": "The passenger/finder has a possessory title to the watch, good against everyone except the true owner"
+      },
+      "correct_answer": "D",
+      "explanation": "Applying Parker v British Airways, since the transport operator has not manifested sufficient intention to control things found on the train, the finder obtains a possessory title good against all except the true owner. The operator cannot claim the watch without evidence of manifest intention."
+    },
+    {
+      "id": "PRL_M01_L01_Q05",
+      "question": "In which case did the court hold that a chimney sweep's boy who found a jewel had a right to it enforceable against all except the true owner?",
+      "options": {
+        "A": "Armory v Delamirie (1722)",
+        "B": "South Staffordshire Water Co v Sharman [1896]",
+        "C": "Hannah v Peel [1945]",
+        "D": "Parker v British Airways [1982]"
+      },
+      "correct_answer": "A",
+      "explanation": "Armory v Delamirie (1722) is the foundational English case in which a chimney sweep's boy found a jewel and took it to a goldsmith's shop. The court held that the finder's possessory title was good against all except the true owner, establishing the basic principle of finding law."
+    },
+    {
+      "id": "PRL_M01_L01_Q06",
+      "question": "Where goods are found by an employee in the course of their employment duties, who generally has the better right to possession?",
+      "options": {
+        "A": "The finder/employee personally",
+        "B": "The State, as found property is subject to Crown prerogative",
+        "C": "The employer",
+        "D": "The person who most recently owned the goods"
+      },
+      "correct_answer": "C",
+      "explanation": "Where an employee finds goods in the course of their employment, the employer generally has the better claim. The employee acts as agent for the employer, and any possessory rights from finding accrue to the employer. This is consistent with Parker v British Airways and general agency principles."
+    },
+    {
+      "id": "PRL_M01_L01_Q07",
+      "question": "In South Staffordshire Water Co v Sharman [1896], two gold rings were found at the bottom of a pool being cleaned under licence from the landowner. What was the outcome?",
+      "options": {
+        "A": "The rings were awarded to the finders as there was no manifest intention by the landowner to control them",
+        "B": "The rings were classified as treasure trove and vested in the Crown",
+        "C": "The rings were awarded to the landowner because they were embedded in the land and the landowner had control",
+        "D": "The rings were divided equally between the finders and the landowner"
+      },
+      "correct_answer": "C",
+      "explanation": "In South Staffordshire Water Co v Sharman [1896], the court held that the rings, found embedded at the bottom of the pool, belonged to the landowner. Objects found embedded within land generally accrue to the landowner rather than to a finder or licensee operating on the land."
+    },
+    {
+      "id": "PRL_M01_L01_Q08",
+      "question": "What is the Latin maxim that expresses the principle that ownership of land extends to objects found within the subsoil?",
+      "options": {
+        "A": "Nemo dat quod non habet",
+        "B": "Prior tempore potior iure",
+        "C": "Nec vi, nec clam, nec precario",
+        "D": "Cuius est solum, eius est usque ad coelum et ad inferos"
+      },
+      "correct_answer": "D",
+      "explanation": "The maxim 'cuius est solum, eius est usque ad coelum et ad inferos' means 'whoever owns the soil owns everything up to the heavens and down to the depths.' This supports the rule that objects embedded in or beneath the surface generally belong to the landowner."
+    },
+    {
+      "id": "PRL_M01_L01_Q09",
+      "question": "In Elwes v Brigg Gas Co (1886), what object was discovered embedded in land that had been leased to the gas company?",
+      "options": {
+        "A": "A Roman mosaic pavement",
+        "B": "A hoard of medieval coins",
+        "C": "A prehistoric boat",
+        "D": "A buried chest of Victorian jewellery"
+      },
+      "correct_answer": "C",
+      "explanation": "In Elwes v Brigg Gas Co (1886), a prehistoric boat was discovered embedded in the land while the lessee (the gas company) was excavating foundations. The court held that the boat belonged to the freeholder/lessor, not the lessee or the workmen who found it."
+    },
+    {
+      "id": "PRL_M01_L01_Q10",
+      "question": "In Elwes v Brigg Gas Co (1886), the court rejected the gas company's claim to the prehistoric boat because:",
+      "options": {
+        "A": "The lease had already expired by the time the boat was found",
+        "B": "The prehistoric boat was classified as treasure trove and vested in the Crown",
+        "C": "The lease could not grant the lessee rights over objects embedded in the soil that the freeholder did not intend to give up",
+        "D": "The gas company had failed to notify the freeholder of the discovery within a reasonable time"
+      },
+      "correct_answer": "C",
+      "explanation": "The court held that the freeholder owned all objects embedded in the soil at the time the lease was granted. A lease cannot transfer to the lessee rights over objects embedded in the subsoil that the freeholder did not expressly or impliedly intend to give up."
+    },
+    {
+      "id": "PRL_M01_L01_Q11",
+      "question": "In Hannah v Peel [1945], a brooch was found in the upstairs room of a requisitioned house. The court held for the finder (a soldier billeted in the house) primarily because:",
+      "options": {
+        "A": "The owner had abandoned the premises during wartime",
+        "B": "The brooch was found in a private room inaccessible to the owner",
+        "C": "The owner had never occupied the premises and could not be said to have manifested intention to control objects found therein",
+        "D": "The brooch was classified as abandoned property under wartime regulations"
+      },
+      "correct_answer": "C",
+      "explanation": "In Hannah v Peel [1945], the owner had purchased the house but had never actually occupied it. As the owner had no knowledge of the brooch and had not manifested any intention to control objects found within the premises, Byrne J held for the finder."
+    },
+    {
+      "id": "PRL_M01_L01_Q12",
+      "question": "What general proposition does Hannah v Peel [1945] illustrate in relation to finding law?",
+      "options": {
+        "A": "An owner who has never occupied their land loses title to all objects on it after twelve years",
+        "B": "Ownership of premises automatically gives the owner rights over all objects found on them",
+        "C": "Mere ownership of premises, without occupation or manifest intention regarding found objects, may not give the owner better rights than the finder",
+        "D": "A licensee who finds goods always prevails over the licensor"
+      },
+      "correct_answer": "C",
+      "explanation": "Hannah v Peel illustrates that mere ownership of land is not enough to prevail over a finder. The occupier/owner needs actual occupation and a manifested intention to control things found on the premises. An absent owner who has never occupied cannot automatically assert superior rights over objects found by others."
+    },
+    {
+      "id": "PRL_M01_L01_Q13",
+      "question": "The Irish Supreme Court case of Webb v Ireland [1988] concerned which archaeological find?",
+      "options": {
+        "A": "The Tara Brooch, found in County Meath",
+        "B": "The Ardagh Chalice, found during roadworks",
+        "C": "The Derrynaflan Hoard, including a chalice, paten, and strainer",
+        "D": "A Viking hoard found during construction in Dublin city centre"
+      },
+      "correct_answer": "C",
+      "explanation": "Webb v Ireland [1988] SC concerned the Derrynaflan Hoard — a collection including a chalice, paten, and strainer from the early Christian period — discovered by the Webb family using metal detectors on the monastic site at Derrynaflan, County Tipperary."
+    },
+    {
+      "id": "PRL_M01_L01_Q14",
+      "question": "On what basis did the Irish Supreme Court in Webb v Ireland [1988] find that the State rather than the finders was entitled to the Derrynaflan Hoard?",
+      "options": {
+        "A": "The Webbs were trespassing when they found the hoard, so they acquired no title",
+        "B": "Article 10 of the Constitution and the national monuments statutory framework supported State ownership of unique national cultural objects",
+        "C": "The common law treasure trove doctrine vested the hoard in the Crown as it contained gold and silver",
+        "D": "A 1986 statutory instrument expressly provided that all pre-Norman artefacts were State property"
+      },
+      "correct_answer": "B",
+      "explanation": "In Webb v Ireland, the Supreme Court relied on Article 10 of the Irish Constitution (which vests natural resources in the State) and the national monuments statutory framework. The court held that unique national treasures of this kind belonged to the State. The constitutional dimension goes beyond the English common law position."
+    },
+    {
+      "id": "PRL_M01_L01_Q15",
+      "question": "Under the National Monuments Acts (as amended), what is the primary obligation of a person who discovers an archaeological object in Ireland?",
+      "options": {
+        "A": "To sell the object to the State at a price fixed by the Valuation Office",
+        "B": "To consult a qualified archaeologist before disturbing the find",
+        "C": "To report the discovery to the National Museum and generally not to disturb or remove the object",
+        "D": "To lodge a claim in the High Court within six months to establish ownership"
+      },
+      "correct_answer": "C",
+      "explanation": "Under the National Monuments Acts framework, a person who discovers an archaeological object is required to report the find to the National Museum of Ireland and must generally not disturb or remove the object. The statutory regime reflects the State's interest in protecting its cultural heritage."
+    },
+    {
+      "id": "PRL_M01_L01_Q16",
+      "question": "Which statement most accurately describes how the Irish position on finding unique historical objects differs from the English common law position?",
+      "options": {
+        "A": "Webb v Ireland followed English common law exactly on this point",
+        "B": "Under English law, all unique historical objects belong to the Crown regardless of composition",
+        "C": "Under English common law, a finder may prevail unless the object is treasure trove; Irish constitutional law and the National Monuments framework can give the State a broader claim regardless of material composition",
+        "D": "There is no difference — both systems reach the same outcome on identical bases"
+      },
+      "correct_answer": "C",
+      "explanation": "Under English common law, the treasure trove doctrine (gold/silver, hidden objects) is the main exception to finding law. In Ireland, Webb v Ireland demonstrates that constitutional principles (Article 10) and the national monuments statutory framework may give the State rights over unique cultural objects regardless of whether they technically qualify as treasure trove."
+    },
+    {
+      "id": "PRL_M01_L01_Q17",
+      "question": "The doctrine of 'relativity of title' in property law holds that:",
+      "options": {
+        "A": "The strength of a title to land depends on how long the owner has held it",
+        "B": "Title to land is relative — a claimant need only show a better right to possession than the defendant",
+        "C": "Only registered title is enforceable against third parties",
+        "D": "The paper owner of land always prevails over a person in actual possession"
+      },
+      "correct_answer": "B",
+      "explanation": "Relativity of title is the doctrine that ownership of land is not absolute. A person claiming to recover land or goods need only demonstrate a better title than the defendant — they do not need to prove absolute or indefeasible ownership. This means a person with prior possession may have a title good against a stranger."
+    },
+    {
+      "id": "PRL_M01_L01_Q18",
+      "question": "In Asher v Whitlock (1865), a squatter enclosed and farmed land, later leaving it by will to his widow and then to his daughter. After the widow remarried and died, the new husband claimed the land. The court held:",
+      "options": {
+        "A": "The new husband had better right as he was in actual occupation at the time of the action",
+        "B": "The squatter's title had lapsed when the squatter died",
+        "C": "The daughter had a title derived from the squatter's prior possession, enforceable against all except the documentary title holder",
+        "D": "The documentary title holder could recover at any time without limitation"
+      },
+      "correct_answer": "C",
+      "explanation": "In Asher v Whitlock (1865), the court held that the daughter's title, derived from the squatter's prior possession, was enforceable against the new husband who had no title at all. The case confirms that possessory title is transmissible and enforceable against strangers."
+    },
+    {
+      "id": "PRL_M01_L01_Q19",
+      "question": "Perry v Clissold [1907] (Privy Council) affirmed which principle?",
+      "options": {
+        "A": "A squatter cannot sue a stranger in trespass or ejectment",
+        "B": "Adverse possession requires uninterrupted possession for twelve years before any rights arise",
+        "C": "A person in possession of land has rights enforceable against all except those with a better title",
+        "D": "Prior possession gives an indefeasible title equivalent to a fee simple"
+      },
+      "correct_answer": "C",
+      "explanation": "In Perry v Clissold [1907], the Privy Council affirmed that a person in possession of land — even without documentary title — has a right to possession enforceable against anyone who cannot show a superior right. This confirms the relativity of title principle."
+    },
+    {
+      "id": "PRL_M01_L01_Q20",
+      "question": "A person occupies an unregistered plot of land for twenty-five years, farming it openly and without challenge from the paper owner. A stranger then enters and damages fencing. Can the occupier sue the stranger?",
+      "options": {
+        "A": "No — only the paper owner can sue in trespass",
+        "B": "No — the occupier must wait until the limitation period has run before suing anyone",
+        "C": "Yes, but only for the cost of the damaged fencing",
+        "D": "Yes — the occupier's prior possession gives a right enforceable against the stranger even without a documentary title"
+      },
+      "correct_answer": "D",
+      "explanation": "Applying Perry v Clissold and Asher v Whitlock, a person in prior possession of land may sue a stranger who disturbs that possession. Relativity of title means the occupier's possessory title is good against anyone who cannot show a better right, even if the true owner could theoretically defeat the occupier."
+    },
+    {
+      "id": "PRL_M01_L01_Q21",
+      "question": "Two cleaning employees are cleaning a hotel lounge. One finds a diamond ring behind a sofa cushion. Applying Parker v British Airways, who has the strongest claim to the ring?",
+      "options": {
+        "A": "The cleaning employee who found it personally",
+        "B": "The hotel, as occupier of the lounge, provided it has manifested sufficient intention to control found objects",
+        "C": "The cleaning company, as employer of the finder",
+        "D": "The hotel, automatically, as owner of the building"
+      },
+      "correct_answer": "B",
+      "explanation": "The hotel, as occupier of the lounge, will prevail if it can show manifest intention to exercise control over things found on the premises (Parker v British Airways). The hotel's occupier status combined with a demonstrated found-items policy gives it the strongest claim. The cleaning company may have a claim as employer, but the hotel-as-occupier-with-manifest-intention prevails."
+    },
+    {
+      "id": "PRL_M01_L01_Q22",
+      "question": "A builder working on a renovation discovers a sealed box concealed behind a wall, containing Victorian-era currency. Who is most likely entitled to the contents?",
+      "options": {
+        "A": "The builder as finder",
+        "B": "The State, as all money over twenty years old is State property",
+        "C": "The landowner, as the box was concealed within the structure of their property",
+        "D": "The builder and landowner share equally under a principle of joint discovery"
+      },
+      "correct_answer": "C",
+      "explanation": "A sealed container hidden within a wall structure is, in effect, embedded in the property. Applying the cuius est solum principle and the line of authority from South Staffordshire v Sharman and Elwes v Brigg Gas, objects found embedded in structures belonging to the landowner accrue to the landowner rather than to the finder or builder."
+    },
+    {
+      "id": "PRL_M01_L01_Q23",
+      "question": "At common law, treasure trove required that objects meet three criteria. Which of the following is NOT one of those criteria?",
+      "options": {
+        "A": "The objects consist of gold or silver",
+        "B": "The objects were deliberately hidden with the intention of recovery",
+        "C": "The original owner is unknown",
+        "D": "The objects were found by a licensed archaeologist"
+      },
+      "correct_answer": "D",
+      "explanation": "At common law, treasure trove required (1) objects of gold or silver, (2) deliberately hidden with intention of recovery (not lost or abandoned), and (3) original owner unknown. There was no requirement that the objects be found by a licensed archaeologist."
+    },
+    {
+      "id": "PRL_M01_L01_Q24",
+      "question": "A person finds a valuable watch on a public footpath. Applying the principles from Armory v Delamirie and Parker v British Airways, what is their legal position?",
+      "options": {
+        "A": "The watch belongs to the local authority as the public footpath is State land",
+        "B": "The finder acquires no right as the watch must be returned to the police",
+        "C": "The finder acquires a possessory title to the watch good against all except the true owner",
+        "D": "The finder must wait twenty-four hours before acquiring any rights to the watch"
+      },
+      "correct_answer": "C",
+      "explanation": "A person who finds goods on a public street or footpath acquires a possessory title to those goods that is good against all except the true owner (Armory v Delamirie). No party other than the true owner automatically acquires title. The finder may have statutory reporting obligations but the basic finding principle applies."
+    },
+    {
+      "id": "PRL_M01_L01_Q25",
+      "question": "What distinguishes the legal treatment of objects found on the surface of land from objects found embedded beneath the surface?",
+      "options": {
+        "A": "Surface-found objects always go to the finder; sub-surface objects always go to the Crown",
+        "B": "The distinction is irrelevant — the same rules apply to all found objects",
+        "C": "Sub-surface objects attract the cuius est solum principle and generally belong to the landowner; surface objects are governed by the manifest intention test from Parker v British Airways",
+        "D": "Surface-found objects belong to the local authority; sub-surface objects belong to the National Museum"
+      },
+      "correct_answer": "C",
+      "explanation": "The cuius est solum principle applies most strongly to objects embedded beneath the surface of land, supporting the landowner's claim (as in Elwes v Brigg Gas and South Staffordshire v Sharman). For objects found on the surface, the manifest intention test from Parker v British Airways determines whether the occupier or finder prevails."
+    },
+    {
+      "id": "PRL_M01_L01_Q26",
+      "question": "A café displays a sign at the counter stating: 'All found items must be handed to the manager.' A customer pockets a phone left on a table. Applying Parker v British Airways, who has the better right to the phone?",
+      "options": {
+        "A": "The customer/finder, as the café has no physical custody of the phone",
+        "B": "The customer/finder, who acquired title by being a lawful visitor",
+        "C": "The café has manifested sufficient intention to control found items and has the better right",
+        "D": "The true owner only — neither the finder nor the café acquires any rights"
+      },
+      "correct_answer": "C",
+      "explanation": "The café's sign requiring surrender of found items to the manager is evidence of manifest intention to exercise control over found objects. Applying Parker v British Airways, the café as occupier has demonstrated sufficient intention and therefore has the better right to the phone. The customer should have surrendered it."
+    },
+    {
+      "id": "PRL_M01_L01_Q27",
+      "question": "A farmer finds a hoard of Bronze Age gold objects in their field. Under Irish law, what is the most likely outcome?",
+      "options": {
+        "A": "The farmer is entitled to the hoard as finder on their own land",
+        "B": "The farmer and the State share the hoard equally under a compromise",
+        "C": "The hoard belongs to the farmer under the cuius est solum principle",
+        "D": "The State is entitled to the hoard under the National Monuments Acts framework and constitutional principles as reflected in Webb v Ireland"
+      },
+      "correct_answer": "D",
+      "explanation": "In Ireland, the primary legal framework for significant archaeological discoveries is the National Monuments Acts and the constitutional principles affirmed in Webb v Ireland. Even though the farmer owns the land (supporting the cuius est solum argument), the broader statutory and constitutional framework in Ireland gives the State a strong claim over unique archaeological objects."
+    },
+    {
+      "id": "PRL_M01_L01_Q28",
+      "question": "Which proposition is best supported by Armory v Delamirie (1722)?",
+      "options": {
+        "A": "A person cannot claim goods found on another's land without the owner's permission",
+        "B": "A finder of goods obtains a right of possession good against all except the true owner",
+        "C": "Finders of goods on public land acquire title only after six months",
+        "D": "A goldsmith who examines found goods in the course of business acquires title by trade custom"
+      },
+      "correct_answer": "B",
+      "explanation": "Armory v Delamirie (1722) established the foundational principle that a finder of goods acquires a possessory title good against all except the true owner. The chimney sweep's boy could maintain an action against the goldsmith who refused to return the jewel, as the finder had a better right than anyone other than the original owner."
+    },
+    {
+      "id": "PRL_M01_L01_Q29",
+      "question": "A builder excavating foundations discovers a collection of Roman coins three metres below the surface. Who has the strongest claim under English and Irish law?",
+      "options": {
+        "A": "The builder as finder",
+        "B": "The builder's employer",
+        "C": "The landowner, as the coins were embedded in the subsoil",
+        "D": "The State, as all ancient coins are automatically State property"
+      },
+      "correct_answer": "C",
+      "explanation": "Coins buried beneath the surface of land attract the cuius est solum principle. Applying South Staffordshire v Sharman and Elwes v Brigg Gas, objects found embedded beneath the surface generally belong to the landowner. In Ireland, the National Monuments Acts may also be relevant if the coins are of archaeological significance."
+    },
+    {
+      "id": "PRL_M01_L01_Q30",
+      "question": "The concept of 'manifest intention' in Parker v British Airways most closely parallels which concept from another area of property law?",
+      "options": {
+        "A": "Actual occupation in registered land law",
+        "B": "Animus possidendi in adverse possession law — the intention to possess",
+        "C": "The doctrine of notice in equity",
+        "D": "Overriding interests in registered land"
+      },
+      "correct_answer": "B",
+      "explanation": "Manifest intention in finding law and animus possidendi in adverse possession both concern a mental/intentional element — the intention to assert control or possession — required to establish rights over property. Both go beyond mere physical contact and require a demonstrable intention to control."
+    },
+    {
+      "id": "PRL_M01_L01_Q31",
+      "question": "An art gallery purchases a painting at auction, not knowing it was stolen twenty years earlier. The original owner's estate now seeks to recover the painting. Under the nemo dat rule, what is the most likely outcome?",
+      "options": {
+        "A": "The gallery's good faith purchase defeats the original owner's claim",
+        "B": "The original owner's estate cannot recover after twenty years",
+        "C": "The original owner's estate has better title — a thief cannot transfer good title and neither can anyone in their chain",
+        "D": "The auction house bears full liability and the painting is shared between gallery and estate"
+      },
+      "correct_answer": "C",
+      "explanation": "Nemo dat quod non habet — no one can transfer a better title than they themselves have. A thief acquires no title, so the art gallery takes the painting subject to the original owner's title, regardless of good faith. The original owner's estate retains the better right (subject to any relevant limitation period or statutory exception)."
+    },
+    {
+      "id": "PRL_M01_L01_Q32",
+      "question": "A hotel owner purchases a country house but never visits it or takes any steps to occupy it. A hiker finds a gold bracelet on the surface of the hotel's garden. Applying Parker v British Airways, who has the better claim?",
+      "options": {
+        "A": "The hiker, since the owner has taken no steps to manifest intention to control found objects on the property",
+        "B": "The State, since all gold objects found on private land are national monuments",
+        "C": "The hotel owner, as landowner, automatically prevails under the cuius est solum principle",
+        "D": "The hiker, as the owner's failure to visit the land amounts to abandonment"
+      },
+      "correct_answer": "A",
+      "explanation": "Applying Parker v British Airways and Hannah v Peel, if the landowner has taken no steps to demonstrate manifest intention to exercise control over found objects on their land, the finder may prevail. An absentee owner who has never visited the land and has no found-objects policy has not manifested the necessary intention."
+    },
+    {
+      "id": "PRL_M01_L01_Q33",
+      "question": "Under Irish law, a person discovers what appears to be a Bronze Age burial urn while digging in their garden. They keep the urn without reporting it. Which statement is most accurate?",
+      "options": {
+        "A": "After one year, the State's right to claim the object is extinguished",
+        "B": "The person may be committing a continuing offence under the National Monuments Acts by failing to report the find",
+        "C": "After three years of possession, the finder acquires good title",
+        "D": "The object becomes the finder's property once it cannot be linked to a specific archaeological site"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the National Monuments Acts framework, the obligation to report discovered archaeological objects is a statutory requirement. The State's interest is not defeated by the passage of time. Ongoing retention without reporting may constitute a continuing offence, and the State's claim is not extinguished by the finder's retention."
+    },
+    {
+      "id": "PRL_M01_L01_Q34",
+      "question": "The distinction between goods being 'lost' as opposed to 'abandoned' is legally significant because:",
+      "options": {
+        "A": "Lost goods belong to the finder; abandoned goods belong to the State",
+        "B": "If goods are abandoned, the original owner has relinquished all rights and the finder acquires good title with no competing claim from the prior owner; if merely lost, the true owner retains title and can recover",
+        "C": "There is no legal distinction between lost and abandoned goods",
+        "D": "Abandoned goods automatically belong to the landowner on whose land they are found"
+      },
+      "correct_answer": "B",
+      "explanation": "If goods are truly abandoned — the owner has surrendered ownership with no intention to reclaim — the original owner has no further claim and the finder acquires a good title. If goods are merely lost, the true owner retains title and can recover them from the finder. This is a fundamental distinction in finding law."
+    },
+    {
+      "id": "PRL_M01_L01_Q35",
+      "question": "A trespasser enters an unregistered plot of land and fences it. The trespasser farms it for sixteen years, then dies. The trespasser's executor seeks to sell the land. Can the executor do so?",
+      "options": {
+        "A": "No — possessory title dies with the possessor",
+        "B": "No — the executor needs a court order to establish the title",
+        "C": "Yes — possessory title acquired through adverse possession is transmissible by will or on intestacy",
+        "D": "Only if the true owner has been formally notified"
+      },
+      "correct_answer": "C",
+      "explanation": "As confirmed in Asher v Whitlock, possessory title is transmissible by will or on intestacy. The trespasser's possessory title acquired through adverse possession passes to the executor/estate. After sixteen years, the Statute of Limitations 1957 twelve-year period has run, extinguishing the paper owner's right to recover."
+    },
+    {
+      "id": "PRL_M01_L01_Q36",
+      "question": "The principle from Hannah v Peel [1945] is distinguishable from South Staffordshire Water Co v Sharman [1896] primarily because:",
+      "options": {
+        "A": "In Hannah v Peel, the object was found beneath the surface; in South Staffordshire, it was found on the surface",
+        "B": "In Hannah v Peel, the owner had never occupied the premises; in South Staffordshire, the landowner was actively using the land and had control over it",
+        "C": "In Hannah v Peel, the finder was a licensee; in South Staffordshire, the finder was a trespasser",
+        "D": "Hannah v Peel is an Irish case; South Staffordshire is English and not applicable in Ireland"
+      },
+      "correct_answer": "B",
+      "explanation": "The key distinction is the occupier's relationship to the land. In South Staffordshire, the landowner actively controlled and used the land (having the pool cleaned under licence), and the rings were embedded in it. In Hannah v Peel, the owner had never occupied the premises and could not be said to have manifested any intention to control objects within them."
+    },
+    {
+      "id": "PRL_M01_L01_Q37",
+      "question": "Article 10 of the Irish Constitution, relied upon in Webb v Ireland [1988], provides that:",
+      "options": {
+        "A": "The right to property cannot be taken without just compensation",
+        "B": "All natural resources belong to the State for the common good",
+        "C": "Cultural property is the common heritage of the Irish people and must be preserved",
+        "D": "The State shall promote the development of agriculture"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 10 of the Irish Constitution provides that all natural resources (including land, air, waterways, and the natural phenomena in those media) belong to the State. The Supreme Court in Webb v Ireland drew on this provision to support the State's claim to the Derrynaflan Hoard as part of the national heritage."
+    },
+    {
+      "id": "PRL_M01_L01_Q38",
+      "question": "A person discovers a cache of Viking-age artefacts while renovating a house and keeps them without reporting. Three years later, the National Museum investigates. Which statement best reflects the Irish legal position?",
+      "options": {
+        "A": "The finder has acquired good title through three years of open possession",
+        "B": "The State's claim has become statute-barred after one year",
+        "C": "The objects vest in the State and the finder may face criminal liability for non-disclosure",
+        "D": "The objects belong to the finder as they were discovered on private property"
+      },
+      "correct_answer": "C",
+      "explanation": "Under the National Monuments Acts framework in Ireland, discovered archaeological objects must be reported. The State's interest in such objects is not extinguished by the finder's retention. The finder may face criminal prosecution for failing to report the find and for retaining items to which the State has a claim."
+    },
+    {
+      "id": "PRL_M01_L01_Q39",
+      "question": "How does the principle from Asher v Whitlock (1865) relate to the unregistered land system in Ireland?",
+      "options": {
+        "A": "Asher v Whitlock established that adverse possession requires registration to be effective in Ireland",
+        "B": "The principle is irrelevant to Irish unregistered land",
+        "C": "Asher v Whitlock confirms that in unregistered land, possession itself can be a root of title enforceable against strangers, consistent with the deeds-based system",
+        "D": "Asher v Whitlock was overruled in Ireland by the LCLRA 2009"
+      },
+      "correct_answer": "C",
+      "explanation": "In the unregistered land system, title derives from possession and is traced through chains of title deeds. Asher v Whitlock confirms that prior possession is a valid basis for title enforceable against strangers. This is entirely consistent with the unregistered land system where possessory title has always been recognised as the foundation of property rights."
+    },
+    {
+      "id": "PRL_M01_L01_Q40",
+      "question": "Which of the following items found in Ireland would most clearly fall within the scope of the National Monuments Acts?",
+      "options": {
+        "A": "A modern sculpture buried by its artist twenty years ago",
+        "B": "A wallet containing cash lost last year by an unknown person",
+        "C": "A Bronze Age burial site uncovered during road construction",
+        "D": "A valuable piece of Victorian furniture found in an attic"
+      },
+      "correct_answer": "C",
+      "explanation": "The National Monuments Acts in Ireland apply to archaeological objects and monuments — artefacts and remains from the prehistoric and historic past. A Bronze Age burial site falls squarely within the statutory framework. Modern objects, recently lost property, and antique furniture generally do not fall within the scope of national monuments legislation."
+    },
+    {
+      "id": "PRL_M01_L01_Q41",
+      "question": "A building contractor excavating foundations discovers a sealed container from the 1950s containing banknotes. Who has the best claim to the contents?",
+      "options": {
+        "A": "The contractor as finder",
+        "B": "The contractor's employer",
+        "C": "The issuing bank of the currency notes",
+        "D": "The landowner, as the container was found embedded beneath the surface of the land"
+      },
+      "correct_answer": "D",
+      "explanation": "A sealed container buried beneath the surface of land is embedded in the soil. Applying the cuius est solum principle and the line of authority from South Staffordshire v Sharman and Elwes v Brigg Gas, the landowner has the better claim to objects found within the subsoil of their land."
+    },
+    {
+      "id": "PRL_M01_L01_Q42",
+      "question": "Which combination of cases would be most relevant in an Irish Property Law exam answer about a person who finds an ancient gold object while digging in their own garden?",
+      "options": {
+        "A": "Armory v Delamirie; Parker v British Airways; Hannah v Peel",
+        "B": "Asher v Whitlock; Perry v Clissold; Dennis v McDonald",
+        "C": "Webb v Ireland; National Monuments Acts; South Staffordshire Water Co v Sharman",
+        "D": "Browne v Ryan; Start Mortgages v Gunn; Cuckmere Brick Co"
+      },
+      "correct_answer": "C",
+      "explanation": "Finding an ancient gold object in Ireland engages the unique Irish statutory and constitutional framework. Webb v Ireland and the National Monuments Acts are directly on point, establishing the State's constitutional and statutory claim. South Staffordshire v Sharman is also relevant as the cuius est solum principle supports the landowner's claim over embedded objects."
+    },
+    {
+      "id": "PRL_M01_L01_Q43",
+      "question": "If X wrongfully takes possession of land from squatter Y who has been in adverse possession for eight years, can Y bring an action against X?",
+      "options": {
+        "A": "No — Y has no title of any kind until the twelve-year limitation period has expired",
+        "B": "No — X's position is no worse than Y's as both are wrongdoers",
+        "C": "Yes — Y's eight years of prior possession give a relative title enforceable against X, who has no claim at all",
+        "D": "Yes — but only if Y pays the true owner's outstanding rates and taxes first"
+      },
+      "correct_answer": "C",
+      "explanation": "Applying Asher v Whitlock and Perry v Clissold, Y's eight years of prior adverse possession — though not yet sufficient to extinguish the true owner's title — gives Y a possessory title good against a stranger like X, who has no claim at all. Y can maintain an action in trespass or ejectment against X. Relativity of title means Y need only show a better right than X."
+    },
+    {
+      "id": "PRL_M01_L01_Q44",
+      "question": "What additional principle does Perry v Clissold [1907] add to the principle already established in Asher v Whitlock (1865)?",
+      "options": {
+        "A": "Perry v Clissold adds nothing — it simply reaffirms Asher v Whitlock",
+        "B": "Perry v Clissold confirms that a person in possession can bring affirmative legal proceedings on the basis of their possessory title — not merely defend against others",
+        "C": "Perry v Clissold established that possessory title requires continuous, uninterrupted possession",
+        "D": "Perry v Clissold limited Asher v Whitlock to cases involving trespass only"
+      },
+      "correct_answer": "B",
+      "explanation": "While Asher v Whitlock confirmed that possessory title is transmissible and enforceable against strangers, Perry v Clissold confirmed that a person in possession can actively bring proceedings in ejectment or for recovery of land on the basis of their possessory title — not merely defend against others. This broadens the practical utility of possessory title."
+    },
+    {
+      "id": "PRL_M01_L01_Q45",
+      "question": "The concept of 'possession as root of title' in unregistered land means that:",
+      "options": {
+        "A": "The person currently in possession of land always has better title than the documentary owner",
+        "B": "Registered title can be challenged by any person in factual possession",
+        "C": "In unregistered land, possession at some point in the chain provides the basis from which title is traced — prior possession is a recognised basis for title",
+        "D": "The State has superior title to all land regardless of possession"
+      },
+      "correct_answer": "C",
+      "explanation": "In unregistered land law, possession is historically the foundation of title. The chain of title traces back through conveyances from original possession. This supports doctrines like adverse possession and explains why possessory titles (as in Asher v Whitlock) can be enforceable. It does not mean current possessors always prevail."
+    },
+    {
+      "id": "PRL_M01_L01_Q46",
+      "question": "A hotel finds a piece of expensive jewellery in its swimming pool, which only hotel guests can access and where the hotel has a sign stating 'Management takes no responsibility for valuables left unattended.' Applying Parker v British Airways, who has the better claim?",
+      "options": {
+        "A": "The hotel, as the pool is an enclosed, private area accessible only to guests",
+        "B": "The finder (whoever dredges the pool), as the sign shows the hotel disclaims responsibility",
+        "C": "The true owner only — both the hotel and finder have no rights",
+        "D": "The pool maintenance company as finder"
+      },
+      "correct_answer": "A",
+      "explanation": "An enclosed, private facility accessible only to guests suggests the hotel has a high degree of control over the area. Applying Parker v British Airways, an occupier with manifest intention to control the space (demonstrated by restricting access) would prevail over a finder. A disclaimer of responsibility for lost valuables is not the same as disclaiming rights over found items."
+    },
+    {
+      "id": "PRL_M01_L01_Q47",
+      "question": "What is the legal consequence where goods that are found are classified as 'abandoned' rather than 'lost'?",
+      "options": {
+        "A": "Abandoned goods cannot be claimed by any finder",
+        "B": "Abandoned goods vest automatically in the State",
+        "C": "If goods are truly abandoned, the original owner has relinquished all rights, and a finder who takes possession becomes the new owner with no competing claim from the prior owner",
+        "D": "Abandoned goods are treated identically to lost goods — the true owner can always recover"
+      },
+      "correct_answer": "C",
+      "explanation": "If goods are truly abandoned — the owner has surrendered ownership with no intention of reclaiming them — the original owner has no further claim. A finder who takes possession of genuinely abandoned goods acquires a good title as against all including the former owner. This distinguishes abandoned goods from merely lost goods."
+    },
+    {
+      "id": "PRL_M01_L01_Q48",
+      "question": "The rule from Parker v British Airways was not applied in South Staffordshire Water Co v Sharman because:",
+      "options": {
+        "A": "The finders in South Staffordshire were trespassers",
+        "B": "The rings in South Staffordshire were embedded beneath the land's surface, attracting the landowner's superior right under the cuius est solum principle",
+        "C": "The finders in South Staffordshire had contractually agreed to surrender all finds",
+        "D": "The rings were classified as treasure trove and vested in the Crown"
+      },
+      "correct_answer": "B",
+      "explanation": "In Parker v British Airways, the bracelet was found on the surface (in a lounge). In South Staffordshire v Sharman, the rings were found embedded at the bottom of a pool and treated as embedded in the land. The cuius est solum principle gives the landowner superior rights over objects within or beneath the soil, explaining the different outcomes."
+    },
+    {
+      "id": "PRL_M01_L01_Q49",
+      "question": "An Irish FE-1 candidate is asked to advise on the rights of a person who finds a medieval chalice in the grounds of a private house during excavation for a garden extension. Which is the best structured answer?",
+      "options": {
+        "A": "Apply Parker v British Airways — the landowner has manifest intention; the landowner wins",
+        "B": "Apply the cuius est solum principle — the chalice is embedded; the landowner wins",
+        "C": "Apply Webb v Ireland and the National Monuments Acts — the State has a strong constitutional and statutory claim; report the find to the National Museum; any claim by the landowner or finder is secondary to the State's interest",
+        "D": "Apply Armory v Delamirie — the finder has possessory title good against all except the true owner"
+      },
+      "correct_answer": "C",
+      "explanation": "In Ireland, a medieval chalice discovered during excavation is an archaeological object within the National Monuments Acts framework. Webb v Ireland established the constitutional and statutory primacy of the State's claim to unique national cultural objects. The correct advice is to report the find to the National Museum, as the State's interest supersedes both the landowner's cuius est solum claim and the finder's possessory title."
+    },
+    {
+      "id": "PRL_M01_L01_Q50",
+      "question": "Webb v Ireland [1988] is significant for Irish Property Law candidates primarily because:",
+      "options": {
+        "A": "It established the doctrine of adverse possession in Irish law",
+        "B": "It demonstrated that constitutional principles and the national monuments statutory framework can displace common law finding rules in Ireland",
+        "C": "It held that treasure trove belongs to the Crown in Ireland",
+        "D": "It established that finders of objects on private land always prevail over landowners in Ireland"
+      },
+      "correct_answer": "B",
+      "explanation": "Webb v Ireland [1988] SC is significant because it demonstrated that in Ireland, the constitutional framework (particularly Article 10) and the national monuments statutory regime can displace ordinary common law finding rules. The case shows that unique national cultural objects belong to the State, not to the finder or the landowner, regardless of the common law position."
+    }
+  ],
+  "total_questions": 50
+}

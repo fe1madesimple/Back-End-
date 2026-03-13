@@ -1,0 +1,155 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module12_Lesson03.txt",
+  "module_number": 12,
+  "module_title": "EU Equality Law",
+  "lesson_number": 3,
+  "lesson_title": "Directive 2000/78, Directive 2000/43, and the Scope of EU Non-Discrimination Law",
+  "questions": [
+    {
+      "id": "EUL_M12_L03_Q01",
+      "question": "Directive 2000/78 (the Employment Equality Directive) prohibits discrimination on grounds of religion or belief, disability, age, and sexual orientation. Its legal basis is Article 19 TFEU (ex Article 13 EC). In Mangold v Helm [2005] (C-144/04), the CJEU held that the principle of non-discrimination on grounds of age is:",
+      "options": {
+        "A": "Derived exclusively from Directive 2000/78 — it has no existence outside the Directive",
+        "B": "A general principle of EU law that pre-exists Directive 2000/78 — the Directive gives expression to this general principle, which national courts must apply and disapply conflicting national rules even before the Directive's implementation deadline",
+        "C": "A principle applicable only to employment — age discrimination outside the workplace is not governed by EU law",
+        "D": "A principle applying only to older workers — discrimination against younger workers is not prohibited by EU law"
+      },
+      "correct_answer": "B",
+      "explanation": "Mangold is one of the most controversial CJEU judgments on equality law. German law allowed fixed-term contracts with workers over 52 without objective justification, exceeding what Directive 2000/78 permits. The Court held that the principle of non-discrimination on grounds of age constitutes a general principle of EU law — it derives from international instruments, constitutional traditions, and the Directive itself is merely an expression of this pre-existing principle. Consequently, national courts must disapply national rules conflicting with this general principle even during the Directive's transposition period. Kücükdeveci [2010] confirmed this: the general principle of non-discrimination on age has horizontal direct effect — it can be invoked against a private employer directly, with the court disapplying conflicting national law."
+    },
+    {
+      "id": "EUL_M12_L03_Q02",
+      "question": "Directive 2000/78 Article 2(5) provides that the Directive 'shall be without prejudice to measures' necessary for specific purposes including public security, public order, public health, and the rights and freedoms of others. In the context of age discrimination, which of the following is the established approach to justifying compulsory retirement ages under Directive 2000/78 Article 6?",
+      "options": {
+        "A": "Compulsory retirement ages are always unlawful as they constitute age discrimination that cannot be justified",
+        "B": "Article 6(1) permits compulsory retirement ages where they can be objectively and reasonably justified by a legitimate aim (including legitimate employment policy, labour market, and vocational training objectives) and the means of achieving that aim are appropriate and necessary",
+        "C": "Compulsory retirement ages are automatically lawful as they represent a long-standing social practice in member states",
+        "D": "Compulsory retirement ages can only be justified if the worker receives a state pension on retirement"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 6(1) of Directive 2000/78 provides a specific justification provision for age discrimination. Unlike most forms of direct discrimination, direct age discrimination can be justified if it pursues a 'legitimate aim' — specifically including employment policy, labour market objectives, and vocational training objectives — and the means are appropriate and necessary. In Palacios de la Villa [2007] (C-411/05), the CJEU upheld a compulsory retirement age where it reflected a legitimate national employment policy objective (promoting youth employment and workforce renewal). In Rosenbladt [2010] and Hörnfeldt [2012], similar reasoning was applied. However, where a compulsory retirement age operates without clear policy justification and merely reflects age stereotypes, it will be unlawful (Heyday litigation in the UK)."
+    },
+    {
+      "id": "EUL_M12_L03_Q03",
+      "question": "The definition of 'disability' under Directive 2000/78 was clarified by the CJEU in Ring and HK Danmark [2013] (C-335/11 and C-337/11), following the EU's ratification of the UN Convention on the Rights of Persons with Disabilities (CRPD). The Court held that disability means:",
+      "options": {
+        "A": "Any medical condition or illness — any health impairment qualifies as a disability for the purposes of the Directive",
+        "B": "A long-term physical, mental, intellectual, or sensory impairment which in interaction with various barriers may hinder the full and effective participation of the person in professional life on an equal basis with other workers — consistent with the CRPD definition",
+        "C": "Only severe physical impairments requiring significant medical treatment or mobility assistance",
+        "D": "Any condition recognised as a disability under national social security law of the member state in question"
+      },
+      "correct_answer": "B",
+      "explanation": "Ring adopted the CRPD definition of disability for the purposes of Directive 2000/78, following the EU's accession to the CRPD. The key elements are: (1) a physical, mental, intellectual, or sensory impairment; (2) which is long-term; and (3) which in interaction with barriers (environmental, attitudinal) may hinder full and effective participation in professional life. This is a social model of disability — it is not purely medical. Earlier, in Chacón Navas [2006], the Court had defined disability more narrowly. Ring extended and aligned the definition with the CRPD. Obesity may in principle constitute a disability if it gives rise to a long-term impairment of participation in professional life (Kaltoft [2014]). The duration requirement (long-term) distinguishes disability from ordinary illness."
+    },
+    {
+      "id": "EUL_M12_L03_Q04",
+      "question": "Under Directive 2000/78 Article 5, employers are required to provide 'reasonable accommodation' for disabled workers. The CJEU in Ring [2013] confirmed this includes a reduction of working hours. An employer's failure to consider reasonable accommodation before dismissing a disabled worker:",
+      "options": {
+        "A": "Is permissible if the worker's attendance is sufficiently poor to justify dismissal under national law",
+        "B": "May constitute disability discrimination — dismissal of a disabled worker without first considering whether reasonable accommodation could enable them to remain in employment may breach Article 5 of Directive 2000/78",
+        "C": "Is only relevant where the employer employs more than 250 employees",
+        "D": "Is governed exclusively by national law — EU law does not require specific procedures before dismissing disabled workers"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 5 of Directive 2000/78 requires employers to take appropriate measures to enable a disabled person to access, participate in, or advance in employment, unless such measures impose a 'disproportionate burden'. In Ring, the CJEU held that a reduction in working hours can constitute a reasonable accommodation measure. If an employer fails to consider whether accommodation is possible before dismissing a disabled worker (e.g., for excessive absence), this failure may itself constitute disability discrimination — specifically a failure to fulfil the reasonable accommodation duty. The reasonable accommodation obligation is a positive duty, not merely a prohibition on negative acts. The disproportionate burden exception provides the limit — employers are not required to implement measures that are unduly costly relative to the benefit achieved, taking account of financial support available."
+    },
+    {
+      "id": "EUL_M12_L03_Q05",
+      "question": "In Coleman v Attridge Law [2008] (C-303/06), the applicant was not disabled herself but claimed disability discrimination because her employer treated her less favourably due to her son's disability (she was his primary carer). The CJEU held:",
+      "options": {
+        "A": "Directive 2000/78 does not protect non-disabled persons — only those who are themselves disabled can claim disability discrimination",
+        "B": "Directive 2000/78 prohibits 'associative disability discrimination' — less favourable treatment of a non-disabled worker because of their association with a disabled person falls within the Directive's prohibition; the principle of equal treatment cannot be limited only to those who are themselves disabled",
+        "C": "Discrimination by association is prohibited only in race discrimination, not in disability cases",
+        "D": "The Directive protects only the disabled person — carers have rights under different legislation"
+      },
+      "correct_answer": "B",
+      "explanation": "Coleman established the doctrine of 'associative discrimination' under EU law. The CJEU reasoned that the purpose of Directive 2000/78 — ensuring equal treatment in employment — is undermined if employers can treat non-disabled workers adversely because of their association with a disabled person. The Directive's aim (eliminating discrimination 'based on' the prohibited ground) covers discrimination directed at a non-disabled person because of a disabled person in their life. This reasoning extends across all Directive 2000/78 grounds. The case has significant practical implications: carers, parents of disabled children, partners of disabled persons, and others with close associations to protected persons may have claims. Coleman clarified that the prohibition on discrimination protects against discrimination based on the ground, not necessarily on the ground relating to the individual claimant personally."
+    },
+    {
+      "id": "EUL_M12_L03_Q06",
+      "question": "In Achbita v G4S Secure Solutions [2017] (C-157/15), G4S had an internal workplace rule prohibiting visible religious or political symbols, applied to dismiss a Muslim employee who wore a headscarf. The CJEU held:",
+      "options": {
+        "A": "A rule banning all religious symbols is always direct discrimination on grounds of religion — it can never be justified",
+        "B": "A rule prohibiting all visible political, philosophical, or religious symbols in the workplace applies without distinction to all religions and beliefs (not differentiating on the ground of religion) — it may constitute indirect discrimination if it places followers of a particular religion at a disadvantage, but may be justified by the legitimate aim of projecting an image of neutrality, provided proportionate and applied consistently",
+        "C": "A workplace neutrality rule can never be applied to restrict religious dress — freedom of religion is an absolute right",
+        "D": "Removing a headscarf is always direct discrimination on grounds of religion"
+      },
+      "correct_answer": "B",
+      "explanation": "Achbita is a leading CJEU case on the intersection of religion/belief discrimination and workplace neutrality policies. The Court held that a workplace neutrality rule (banning all visible religious, political, philosophical symbols) does not constitute direct discrimination because it applies equally to all religions — no single religion is targeted. However, it may constitute indirect discrimination where it places people of a particular religion (such as Muslim women who wear headscarves) at a particular disadvantage. The Court held this indirect discrimination may be justified if: (1) there is a legitimate aim (genuine business policy of neutrality, not mere customer preference); (2) the means are appropriate; and (3) they are necessary (confined to workers in customer-facing roles). Companion case Bougnaoui [2017] confirmed customer preference alone (without an internal neutrality policy) cannot justify the requirement to remove religious dress."
+    },
+    {
+      "id": "EUL_M12_L03_Q07",
+      "question": "Directive 2000/43 (the Race Equality Directive) prohibits discrimination on grounds of racial or ethnic origin. Compared to Directive 2000/78, Directive 2000/43 has a significantly broader material scope. What is the key difference?",
+      "options": {
+        "A": "Directive 2000/43 applies only to public sector employment; 2000/78 applies to both sectors",
+        "B": "Directive 2000/43 applies to both employment AND access to goods and services, social protection, social advantages, and education — Directive 2000/78 applies only to the employment and occupation field",
+        "C": "Directive 2000/43 covers all EU citizens; 2000/78 applies only to EU workers exercising free movement",
+        "D": "Directive 2000/43 contains stricter enforcement requirements than 2000/78"
+      },
+      "correct_answer": "B",
+      "explanation": "The material scope difference between the two Directives is significant and deliberate. Directive 2000/78 (religion, disability, age, sexual orientation) is confined to employment and occupation (Article 3). Directive 2000/43 (race/ethnic origin) has a broader scope under Article 3: it covers not only employment but also social protection (including social security and healthcare), social advantages, education, and access to and supply of goods and services available to the public (including housing). The broader scope reflects the particular seriousness of racial discrimination as a fundamental dignity issue and political consensus at the time. There has been considerable pressure to extend the broader material scope to the other Directive 2000/78 grounds — the proposed 'Horizontal Directive' would do this — but it remains blocked in the Council."
+    },
+    {
+      "id": "EUL_M12_L03_Q08",
+      "question": "Under Directive 2000/78 Article 4(1), a 'genuine occupational requirement' (GOR) can justify otherwise discriminatory treatment based on a protected characteristic. Under Article 4(2), there is a further exception for 'churches and other public or private organisations the ethos of which is based on religion or belief'. This exception allows such organisations to:",
+      "options": {
+        "A": "Discriminate against any person who is not a member of the organisation's religion in any employment context whatsoever",
+        "B": "Apply requirements relating to religion or belief where religion or belief constitutes a genuine, legitimate, and justified occupational requirement having regard to the organisation's ethos — and where the right to an effective remedy is maintained; this exception does not allow general exclusion from employment on grounds of religion or broad lifestyle-based discrimination",
+        "C": "Require all employees to be adherents of the organisation's faith regardless of the nature of the role",
+        "D": "Dismiss employees whose personal lives (e.g., same-sex relationships) conflict with the organisation's religious ethos in all circumstances"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 4(2) of Directive 2000/78 permits religious ethos organisations (churches, religious schools, faith-based charities) to require that employees adhere to or support their religious ethos — but only where this is a genuine, legitimate, and justified occupational requirement. In IR v JQ [2018] (C-68/17), the CJEU held that the exception must be subject to effective judicial review: national courts must be able to assess whether the religious requirement is genuinely necessary for the role. A blanket requirement of religious adherence for all posts regardless of function is unlawful. The exception can justify, for example, requiring a Catholic school's religious education teacher to be Catholic — but not requiring the school's IT technician to be Catholic. Lifestyle-based requirements (e.g., unmarried, not in a same-sex relationship) are subject to strict scrutiny."
+    },
+    {
+      "id": "EUL_M12_L03_Q09",
+      "question": "Kücükdeveci v Swedex GmbH [2010] (C-555/07) confirmed and extended the Mangold ruling. In Kücükdeveci, the CJEU held that the general principle of non-discrimination on grounds of age:",
+      "options": {
+        "A": "Can only be invoked against state employers — private employers are bound only by the implementing national legislation",
+        "B": "Has horizontal direct effect — it can be invoked in proceedings against a private employer, requiring the national court to disapply the conflicting national rule (not rely on the Directive itself to disapply, but on the general principle)",
+        "C": "Applies only after the Directive's implementation deadline has passed",
+        "D": "Requires that the individual first exhaust all national remedies before invoking the general principle"
+      },
+      "correct_answer": "B",
+      "explanation": "Kücükdeveci confirmed Mangold's approach: the general principle of non-discrimination on grounds of age (now reflected in Article 21 of the EU Charter) has horizontal direct effect in the sense that national courts must disapply conflicting national rules in disputes between private parties. Critically, the mechanism is not horizontal direct effect of the Directive itself (which the CJEU refused in Pfeiffer for directives generally) — it is horizontal applicability of the general principle of EU law (and of the Charter). National courts must set aside the conflicting national provision, enabling individuals to rely on EU law rights against private employers. This creates a significant tool for individuals discriminated against on grounds of age by private employers, bypassing the limitations of Directive-based claims."
+    },
+    {
+      "id": "EUL_M12_L03_Q10",
+      "question": "Which of the following types of discrimination are BOTH prohibited under Directive 2000/78 in the employment context?",
+      "options": {
+        "A": "Direct discrimination only — indirect discrimination requires a specific statutory provision in each member state",
+        "B": "Direct discrimination, indirect discrimination, harassment, and instruction to discriminate — all four are expressly prohibited by Directive 2000/78",
+        "C": "Direct discrimination and indirect discrimination only — harassment is governed exclusively by national law",
+        "D": "Direct discrimination and harassment only — indirect discrimination on grounds of disability requires reasonable accommodation, not equal treatment"
+      },
+      "correct_answer": "B",
+      "explanation": "Directive 2000/78 expressly prohibits four forms of discrimination in Articles 2–4: (1) direct discrimination — treating one person less favourably on a prohibited ground than another in comparable circumstances; (2) indirect discrimination — applying a seemingly neutral provision, criterion or practice that disadvantages persons with a protected characteristic, unless objectively justified; (3) harassment — unwanted conduct related to a prohibited ground that creates a hostile, degrading, humiliating, or offensive environment; and (4) instruction to discriminate — ordering or instructing another person to discriminate. All four forms apply to all four protected grounds in Directive 2000/78. Directive 2000/43 similarly prohibits all four forms. The comprehensive approach to what constitutes discrimination reflects the breadth of the EU's commitment to substantive equality."
+    },
+    {
+      "id": "EUL_M12_L03_Q11",
+      "question": "Article 19 TFEU (ex Article 13 EC, introduced by the Amsterdam Treaty 1997) is the legal basis for secondary EU equality legislation beyond sex. Which of the following is NOT a ground listed in Article 19 TFEU for which the Council may act to combat discrimination?",
+      "options": {
+        "A": "Disability",
+        "B": "Sexual orientation",
+        "C": "Social class or socioeconomic status",
+        "D": "Age"
+      },
+      "correct_answer": "C",
+      "explanation": "Article 19 TFEU empowers the Council (acting unanimously after obtaining the consent of the European Parliament) to take action to combat discrimination based on: sex, racial or ethnic origin, religion or belief, disability, age, or sexual orientation. Social class or socioeconomic status is not listed in Article 19 TFEU and is not currently a protected ground under any EU-wide equality directive. This is a notable limitation of EU equality law compared to some national systems. The existing grounds (Article 19) have been legislated through: Directive 2000/43 (race), Directive 2000/78 (religion, disability, age, sexual orientation), and Directive 2004/113 / Directive 2006/54 (sex). Proposals to extend the material scope of protection for non-sex grounds to cover goods and services (the 'Horizontal Directive') remain blocked in the Council."
+    },
+    {
+      "id": "EUL_M12_L03_Q12",
+      "question": "The EU Charter of Fundamental Rights Article 21 prohibits discrimination on a wide range of grounds 'within the scope of application of the Treaties'. In Dansk Industri (DI) v Rasmussen (Estate) [2016] (C-441/14), the Danish Supreme Court applied the general principle of non-discrimination on age. The CJEU held in this context that when a general principle conflicts with a national rule in a dispute between private parties:",
+      "options": {
+        "A": "The national court must always refer the matter to the CJEU before disapplying national law",
+        "B": "The national court must set aside the conflicting national provision and apply the principle of non-discrimination on grounds of age directly — it may not merely interpret national law in conformity; where interpretation is impossible, disapplication is required",
+        "C": "The general principle applies only to member state legislative acts — administrative practices cannot be challenged",
+        "D": "A national court may refuse to disapply national law if doing so would cause significant disruption to the national legal order"
+      },
+      "correct_answer": "B",
+      "explanation": "Dansk Industri confirmed the Kücükdeveci approach: where national law conflicts with the general principle of non-discrimination on grounds of age in proceedings between private parties, the national court must set aside the conflicting provision. The obligation to disapply is direct — it is not limited to cases where a Directive is directly effective. This duty flows from the primacy of EU law and the horizontal applicability of the general principle (now also the EU Charter). The Court rejected the argument that national courts retain discretion to maintain conflicting national law to protect legal certainty or existing expectations. This creates an important mechanism where: (1) directive-based claims fail (e.g., against private parties), the general principle may still be invoked; (2) national courts have a positive obligation to ensure effective judicial protection of EU equality rights."
+    }
+  ],
+  "total_questions": 12
+}

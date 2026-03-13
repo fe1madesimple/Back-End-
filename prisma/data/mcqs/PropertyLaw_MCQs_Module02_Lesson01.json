@@ -1,0 +1,611 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "PropertyLaw_ElevenLabs_Module02_Lesson01.txt",
+  "module_number": 2,
+  "module_title": "Co-Ownership",
+  "lesson_number": 1,
+  "lesson_title": "Joint Tenancy, Tenancy in Common, Severance, and Co-Ownership Disputes",
+  "questions": [
+    {
+      "id": "PRL_M02_L01_Q01",
+      "question": "Which four unities are required for a valid joint tenancy?",
+      "options": {
+        "A": "Possession, interest, title, and time",
+        "B": "Possession, title, consideration, and time",
+        "C": "Interest, occupation, time, and consent",
+        "D": "Title, possession, identity, and price"
+      },
+      "correct_answer": "A",
+      "explanation": "A joint tenancy requires four unities: (1) unity of possession — each co-owner is entitled to possess the whole; (2) unity of interest — each holds the same type and duration of estate; (3) unity of title — all owners derive title from the same document or act; and (4) unity of time — interests vested at the same time."
+    },
+    {
+      "id": "PRL_M02_L01_Q02",
+      "question": "A tenancy in common differs from a joint tenancy most fundamentally in that:",
+      "options": {
+        "A": "A tenancy in common requires all four unities to be present",
+        "B": "A tenant in common's interest is extinguished on death and cannot be devised",
+        "C": "Each tenant in common holds a distinct, undivided share that is transmissible by will or on intestacy",
+        "D": "On the death of one tenant in common, their share passes automatically to the surviving co-owners"
+      },
+      "correct_answer": "C",
+      "explanation": "The key characteristic of a tenancy in common is that each co-owner holds a distinct, undivided share that they can dispose of during their lifetime or by will. Unlike a joint tenancy, there is no right of survivorship — a tenant in common's share passes under their will or on intestacy."
+    },
+    {
+      "id": "PRL_M02_L01_Q03",
+      "question": "What is the legal right known as 'jus accrescendi'?",
+      "options": {
+        "A": "The right of each co-owner to a distinct, separate portion of the land",
+        "B": "The right of a co-owner to apply for partition of the co-owned property",
+        "C": "The automatic vesting of a deceased joint tenant's interest in the surviving joint tenant(s) upon death",
+        "D": "The right of a beneficiary to seek an account of profits from a co-owner in occupation"
+      },
+      "correct_answer": "C",
+      "explanation": "Jus accrescendi (right of survivorship) is the defining feature of a joint tenancy. On the death of one joint tenant, their interest does not pass under their will or on intestacy — it automatically vests in the surviving joint tenant(s). This operates until only one joint tenant remains, who then holds the entire property outright."
+    },
+    {
+      "id": "PRL_M02_L01_Q04",
+      "question": "Under section 30 of the Land and Conveyancing Law Reform Act 2009 (LCLRA 2009), what is the default form of co-ownership where land is conveyed to two or more persons after 1 December 2009 without specifying the type?",
+      "options": {
+        "A": "A tenancy in common arises by default",
+        "B": "The co-owners hold as beneficial tenants in common and legal joint tenants",
+        "C": "A joint tenancy arises by default",
+        "D": "The conveyance must specify the type of co-ownership or it is void for uncertainty"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 30 of the LCLRA 2009 reversed the pre-2009 equitable presumption. After 1 December 2009, the default form of co-ownership is a joint tenancy — both at law and in equity — unless the conveyance expressly creates a tenancy in common or uses words of severance."
+    },
+    {
+      "id": "PRL_M02_L01_Q05",
+      "question": "Before the LCLRA 2009, what was equity's default position where land was co-owned without express words of severance?",
+      "options": {
+        "A": "A joint tenancy arose in equity",
+        "B": "A tenancy in common arose in equity, to avoid the harsh consequences of survivorship",
+        "C": "Both forms of co-ownership arose simultaneously",
+        "D": "The courts had absolute discretion to declare the appropriate form"
+      },
+      "correct_answer": "B",
+      "explanation": "Before the LCLRA 2009, equity favoured a tenancy in common in certain recognised situations, particularly where co-owners had unequal contributions or a commercial relationship, as equity regarded the right of survivorship as inequitable in such circumstances. The LCLRA 2009 reversed this, making joint tenancy the new default."
+    },
+    {
+      "id": "PRL_M02_L01_Q06",
+      "question": "Which of the following is an example of 'words of severance' that would create a tenancy in common rather than a joint tenancy?",
+      "options": {
+        "A": "To A and B jointly",
+        "B": "To A and B in equal shares",
+        "C": "To A and B as co-owners",
+        "D": "To A and B together as one"
+      },
+      "correct_answer": "B",
+      "explanation": "Words of severance are words indicating that each co-owner is to have a distinct share, such as 'in equal shares,' 'share and share alike,' 'to be divided between,' or 'respectively.' The phrase 'in equal shares' in option B clearly indicates separate distinct shares and thus creates a tenancy in common."
+    },
+    {
+      "id": "PRL_M02_L01_Q07",
+      "question": "The case of Williams v Hensman (1861) identified three methods by which a joint tenancy can be severed. Which of the following is NOT one of the three methods identified?",
+      "options": {
+        "A": "A joint tenant acting on their own share unilaterally (e.g., by alienation)",
+        "B": "Mutual agreement between the joint tenants to treat their interests as separate",
+        "C": "Any course of dealing sufficient to intimate that the interests of all are to be treated as constituting a tenancy in common",
+        "D": "A written notice served on the other joint tenant(s)"
+      },
+      "correct_answer": "D",
+      "explanation": "Williams v Hensman (1861) identified three methods: (1) a joint tenant acting on their own share; (2) mutual agreement; and (3) any course of dealing sufficient to intimate separate treatment of interests. The fourth method — written notice — was not available at common law; it was introduced by section 31 of the LCLRA 2009."
+    },
+    {
+      "id": "PRL_M02_L01_Q08",
+      "question": "A and B hold land as joint tenants. A mortgages her share to a bank without informing B. What is the most likely effect on the co-ownership?",
+      "options": {
+        "A": "The mortgage is void — a joint tenant cannot mortgage their share without the other's consent",
+        "B": "A's mortgage severs the joint tenancy, as A has acted on her own share in a way that destroys the unities",
+        "C": "The joint tenancy continues — a mortgage does not constitute an act on A's own share",
+        "D": "The mortgage is valid but only if B subsequently consents"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the first method in Williams v Hensman, a joint tenant who acts on their own share — for example by mortgaging, alienating, or otherwise disposing of it — severs the joint tenancy. The mortgage destroys the unities of title and potentially of interest between the mortgagor and the remaining joint tenant(s)."
+    },
+    {
+      "id": "PRL_M02_L01_Q09",
+      "question": "A and B hold land as joint tenants. They sign a document stating: 'We each agree to hold our separate half-shares and not to claim the benefit of survivorship.' This document:",
+      "options": {
+        "A": "Is ineffective — a joint tenancy can only be severed by physical alienation of one party's share",
+        "B": "Severs the joint tenancy by mutual agreement under the second Williams v Hensman method",
+        "C": "Creates a new joint tenancy with a modified right of survivorship between them",
+        "D": "Must be registered in the Land Registry to take effect"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the second method in Williams v Hensman, a mutual agreement between joint tenants to treat their interests as separate is sufficient to sever the joint tenancy. The signed document clearly records such an agreement, effective in equity from the date of agreement — no formal deed or registration is required."
+    },
+    {
+      "id": "PRL_M02_L01_Q10",
+      "question": "Section 31 of the LCLRA 2009 introduced what new method of severing a joint tenancy?",
+      "options": {
+        "A": "Filing a declaration of severance in the Land Registry",
+        "B": "One joint tenant serving written notice of severance on the other joint tenant(s)",
+        "C": "A court order on the application of any interested party",
+        "D": "Automatic severance when one joint tenant applies for planning permission"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 31 of the LCLRA 2009 introduced a new, fourth method of severance: one joint tenant may sever the joint tenancy by serving a written notice on the other joint tenant(s). This allows unilateral severance without needing to alienate the share or establish mutual agreement, providing greater certainty."
+    },
+    {
+      "id": "PRL_M02_L01_Q11",
+      "question": "Under the Williams v Hensman principle of 'mutual conduct' (third method), which scenario would most clearly sever a joint tenancy?",
+      "options": {
+        "A": "Joint tenants discussing the possibility of one buying out the other without reaching agreement",
+        "B": "Joint tenants jointly applying for planning permission to develop the property together",
+        "C": "A course of dealing over several years where each dealt with their share separately, negotiated separate sale prices, and received separate rental income",
+        "D": "One joint tenant paying a greater share of mortgage repayments than the other"
+      },
+      "correct_answer": "C",
+      "explanation": "The third method in Williams v Hensman requires a course of dealing sufficient to intimate that all parties treated their interests as constituting a tenancy in common. A sustained course of separate dealing — separate rental income, separate negotiations — clearly indicates mutual treatment of interests as distinct. Mere discussions or unequal payments are insufficient."
+    },
+    {
+      "id": "PRL_M02_L01_Q12",
+      "question": "A and B hold a house as joint tenants. A is convicted of the manslaughter of B. Applying the forfeiture rule as discussed in Cawley v Lillis [2011], what is the likely outcome in relation to the property?",
+      "options": {
+        "A": "A automatically takes B's share by survivorship as the surviving joint tenant",
+        "B": "B's share passes to B's estate under their will or intestacy",
+        "C": "A cannot benefit from the right of survivorship — A's share is held on constructive trust for B's estate, preventing A from benefiting from their wrongdoing",
+        "D": "The court has discretion to award the entire property to B's dependants"
+      },
+      "correct_answer": "C",
+      "explanation": "The forfeiture rule prevents a person from benefiting from their own wrongdoing. In Cawley v Lillis [2011], the Irish High Court held that a joint tenant who kills the other cannot benefit from the right of survivorship. The killer's share of the property is held on constructive trust for the deceased's estate, reflecting the broader principle that equity will not allow a wrongdoer to profit from their wrong."
+    },
+    {
+      "id": "PRL_M02_L01_Q13",
+      "question": "What was the key legal mechanism used in Cawley v Lillis [2011] to prevent the killer from retaining the deceased's share?",
+      "options": {
+        "A": "A statutory trust imposed by the Succession Act 1965",
+        "B": "A resulting trust based on the financial contributions of the deceased",
+        "C": "A constructive trust imposed by equity to prevent unconscionable enrichment through commission of an unlawful act",
+        "D": "A legal charge registered against the property in favour of the deceased's estate"
+      },
+      "correct_answer": "C",
+      "explanation": "In Cawley v Lillis [2011], the court imposed a constructive trust. Equity intervenes to prevent a person from unconscionably retaining a benefit obtained through their own wrongdoing. The surviving joint tenant held the deceased's share on constructive trust for the deceased's estate, ensuring the wrongdoer did not profit from the killing."
+    },
+    {
+      "id": "PRL_M02_L01_Q14",
+      "question": "Dennis v McDonald [1982] (Court of Appeal, England and Wales) is relevant to Irish co-ownership law for which proposition?",
+      "options": {
+        "A": "That a tenancy in common cannot be created by implication from financial contributions",
+        "B": "That a joint tenant who exclusively occupies co-owned property to the exclusion of the other may be ordered to pay an occupation rent",
+        "C": "That severance of a joint tenancy requires registration to bind third parties",
+        "D": "That a tenancy in common cannot be severed without a court order"
+      },
+      "correct_answer": "B",
+      "explanation": "Dennis v McDonald [1982] CA established that where one co-owner occupies the co-owned property exclusively, excluding the other co-owner, the court may order the occupying co-owner to pay an occupation rent representing the fair rental value of the excluded co-owner's share. This prevents unjust enrichment through exclusive occupation."
+    },
+    {
+      "id": "PRL_M02_L01_Q15",
+      "question": "A and B are joint tenants of a house. A excludes B and occupies alone. B applies to court. Applying Dennis v McDonald, what order might the court make?",
+      "options": {
+        "A": "Immediate sale of the house and equal division of proceeds",
+        "B": "A pay B an occupation rent equivalent to B's share of the open market rental value",
+        "C": "Partition of the house, giving each party a distinct portion",
+        "D": "B to vacate proceedings as A is the registered owner"
+      },
+      "correct_answer": "B",
+      "explanation": "Applying Dennis v McDonald, where one co-owner exclusively occupies the property to the exclusion of the other, the court may order the occupying co-owner to pay an occupation rent to the excluded co-owner. The rent represents the value of the excluded co-owner's share of the market rental value of the property."
+    },
+    {
+      "id": "PRL_M02_L01_Q16",
+      "question": "The unity of possession in co-ownership means that:",
+      "options": {
+        "A": "Each co-owner has possession of their own defined, separate portion of the land",
+        "B": "All co-owners must occupy the property together at all times",
+        "C": "Only the registered co-owner can exercise possession rights",
+        "D": "Each co-owner is entitled to possess the whole of the land — no co-owner can be excluded from any part"
+      },
+      "correct_answer": "D",
+      "explanation": "Unity of possession means that each co-owner is entitled to possess and enjoy the whole of the co-owned property. No part of the land can be set aside for the exclusive use of one co-owner without the others' consent. This distinguishes co-ownership from separate ownership of distinct parcels."
+    },
+    {
+      "id": "PRL_M02_L01_Q17",
+      "question": "The unity of interest in a joint tenancy requires that:",
+      "options": {
+        "A": "Each joint tenant holds the same type of estate of the same duration",
+        "B": "The economic interest of each joint tenant must be of equal monetary value",
+        "C": "All joint tenants must share the same beneficial interest under a trust",
+        "D": "The interests of all joint tenants must have been judicially verified"
+      },
+      "correct_answer": "A",
+      "explanation": "Unity of interest requires that each joint tenant holds the same type of estate (e.g., all must hold fee simples or all must hold leases) and the estate must be of the same duration. If one co-owner holds a fee simple and another holds a life estate, the unity of interest is absent and there cannot be a joint tenancy."
+    },
+    {
+      "id": "PRL_M02_L01_Q18",
+      "question": "A and B hold land as joint tenants. A serves a written notice on B under section 31 LCLRA 2009 stating that A is severing the joint tenancy. What is the effect?",
+      "options": {
+        "A": "The notice is ineffective — only alienation of the share can sever a joint tenancy",
+        "B": "The joint tenancy is severed and A and B hold as tenants in common in equal shares from the date the notice takes effect",
+        "C": "A and B must both sign the notice for it to be effective",
+        "D": "The notice must be registered in the Land Registry before it takes effect"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 31 LCLRA 2009, a joint tenancy may be severed by one joint tenant serving written notice of severance on the other joint tenant(s). The notice is effective unilaterally — no agreement or registration is required. The effect is to convert the joint tenancy to a tenancy in common in equal shares from the date the notice takes effect."
+    },
+    {
+      "id": "PRL_M02_L01_Q19",
+      "question": "Which of the following unities distinguishes a joint tenancy from a tenancy in common — in the sense that only a joint tenancy requires all four unities?",
+      "options": {
+        "A": "Unity of possession only",
+        "B": "Unity of title and time only",
+        "C": "Unity of interest only",
+        "D": "Unity of interest, title, and time — only unity of possession is required for tenancy in common"
+      },
+      "correct_answer": "D",
+      "explanation": "Both joint tenancy and tenancy in common require unity of possession. However, only a joint tenancy requires all four unities (possession, interest, title, and time). A tenancy in common can exist with only unity of possession — co-owners can have different interests, different titles, and acquired their interests at different times."
+    },
+    {
+      "id": "PRL_M02_L01_Q20",
+      "question": "A conveyance states 'To A, B and C as tenants in common in the proportions 50%, 30% and 20% respectively.' Which unity is clearly absent from this arrangement?",
+      "options": {
+        "A": "Unity of possession",
+        "B": "Unity of title",
+        "C": "Unity of interest — the shares are unequal",
+        "D": "Unity of time"
+      },
+      "correct_answer": "C",
+      "explanation": "Unity of interest requires that all co-owners hold the same type of estate in equal shares. Where the conveyance expressly specifies unequal shares (50%, 30%, 20%), there is clearly no unity of interest. However, this does not prevent a tenancy in common from arising — a tenancy in common does not require unity of interest."
+    },
+    {
+      "id": "PRL_M02_L01_Q21",
+      "question": "A and B purchase a house together in equal shares after 1 December 2009. The conveyance simply reads 'to A and B.' Under section 30 LCLRA 2009, what form of co-ownership arises?",
+      "options": {
+        "A": "A tenancy in common in equity and a joint tenancy at law",
+        "B": "A joint tenancy both at law and in equity as the new default",
+        "C": "A tenancy in common both at law and in equity",
+        "D": "No co-ownership — the conveyance is void for uncertainty"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 30 LCLRA 2009 reversed the pre-2009 position. A conveyance 'to A and B' after 1 December 2009 creates a joint tenancy both at law and in equity by default. To create a tenancy in common, the parties must expressly use words of severance or otherwise indicate separate shares."
+    },
+    {
+      "id": "PRL_M02_L01_Q22",
+      "question": "Before the LCLRA 2009, equity presumed a tenancy in common (rather than a joint tenancy) in which of the following recognised situations?",
+      "options": {
+        "A": "Where the property was conveyed to family members only",
+        "B": "Where the property was a residential dwelling rather than commercial land",
+        "C": "Where the conveyance was completely silent as to the type of co-ownership",
+        "D": "Where co-owners were business partners who contributed unequally to the purchase price"
+      },
+      "correct_answer": "D",
+      "explanation": "Before the LCLRA 2009, equity's presumption in favour of tenancy in common applied in three recognised situations: (1) co-owners who were business partners; (2) co-owners who contributed unequal purchase prices; and (3) mortgage lenders. The rationale was that survivorship would be inequitable in these contexts."
+    },
+    {
+      "id": "PRL_M02_L01_Q23",
+      "question": "A and B are beneficial joint tenants. A secretly executes a deed transferring her share to her cousin C, without B's knowledge. What is the effect on the co-ownership?",
+      "options": {
+        "A": "The transfer is void — a joint tenant cannot transfer their share without the other's consent",
+        "B": "The transfer is valid and severs the joint tenancy, making C and B tenants in common",
+        "C": "The transfer is voidable at B's option as it was done without consent",
+        "D": "C acquires the property subject to B's right of survivorship"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the first method in Williams v Hensman, a joint tenant can act on their own share — including by transferring it to a third party. Such an act severs the joint tenancy. C and B become tenants in common. No consent from the other joint tenant is required, and B cannot void the transaction on grounds of lack of consent."
+    },
+    {
+      "id": "PRL_M02_L01_Q24",
+      "question": "A and B hold a house as joint tenants. B dies intestate. What happens to B's interest?",
+      "options": {
+        "A": "B's interest passes to B's next of kin under the rules of intestacy",
+        "B": "B's interest passes to A by right of survivorship (jus accrescendi)",
+        "C": "B's interest is divided equally between all of B's creditors",
+        "D": "B's interest is held on resulting trust for B's estate"
+      },
+      "correct_answer": "B",
+      "explanation": "The right of survivorship (jus accrescendi) is the defining feature of a joint tenancy. On B's death, B's interest automatically vests in the surviving joint tenant(s) — here, A. B's interest does not pass under a will or on intestacy; it simply accrues to A. This occurs regardless of B's wishes as expressed in a will (if any)."
+    },
+    {
+      "id": "PRL_M02_L01_Q25",
+      "question": "A, B and C are joint tenants. B serves a written notice of severance on A and C under section 31 LCLRA 2009. What is the result?",
+      "options": {
+        "A": "The joint tenancy is converted to a tenancy in common as between all three parties",
+        "B": "B holds a one-third share as tenant in common; A and C remain joint tenants as between themselves in relation to the remaining two-thirds",
+        "C": "The entire joint tenancy is destroyed and all three hold as tenants in common in equal shares",
+        "D": "B's severance notice is only effective if A and C consent"
+      },
+      "correct_answer": "B",
+      "explanation": "Where one of three or more joint tenants severs, only their own interest is severed. B holds a one-third share as tenant in common with A and C. A and C remain joint tenants as between themselves in relation to the remaining two-thirds — if A subsequently dies, their share passes to C by survivorship."
+    },
+    {
+      "id": "PRL_M02_L01_Q26",
+      "question": "Under the Williams v Hensman first method, which act by a joint tenant would most clearly constitute 'acting on their own share' to effect severance?",
+      "options": {
+        "A": "Writing a letter to the other joint tenant expressing an intention to sever",
+        "B": "Making a will leaving their share to a named beneficiary",
+        "C": "Verbally agreeing with the other joint tenant to sever",
+        "D": "Executing a legal mortgage over their interest in the jointly held property"
+      },
+      "correct_answer": "D",
+      "explanation": "Under the first Williams v Hensman method, a joint tenant severs by alienating or encumbering their own share in a way that destroys one or more unities. Executing a mortgage over one's share is a classic example of acting on the share — it creates a distinct encumbrance and severs the joint tenancy. A letter of intent, a will (which only operates on death), or a verbal agreement are not sufficient acts on the share."
+    },
+    {
+      "id": "PRL_M02_L01_Q27",
+      "question": "Why does making a will not sever a joint tenancy under the Williams v Hensman first method?",
+      "options": {
+        "A": "A will must be registered to take legal effect in property matters",
+        "B": "A will only takes effect on death, by which point the right of survivorship has already operated if the testator dies first — a will cannot act on the share during the joint tenant's lifetime",
+        "C": "A will must be executed by all joint tenants to affect real property",
+        "D": "Wills in Ireland do not affect interests in co-owned real property"
+      },
+      "correct_answer": "B",
+      "explanation": "A will is a future instrument — it only takes effect on death. If a joint tenant dies without severing, the right of survivorship operates immediately on death and the joint tenant has no interest left to leave by will. The will is therefore ineffective to pass the share. Only a severance made during the joint tenant's lifetime can defeat survivorship."
+    },
+    {
+      "id": "PRL_M02_L01_Q28",
+      "question": "In Irish equity, before the LCLRA 2009, a tenancy in common was implied in commercial and investment relationships because:",
+      "options": {
+        "A": "The State required separate registration of commercial interests",
+        "B": "Equity would not allow the right of survivorship to operate inequitably in business or investment contexts, where parties did not intend that a co-owner's death should accrue to the other",
+        "C": "Banks always required tenancies in common before advancing mortgages",
+        "D": "Commercial co-owners were expressly excluded from the joint tenancy rules"
+      },
+      "correct_answer": "B",
+      "explanation": "Equity's presumption in favour of a tenancy in common in business or commercial relationships was founded on the principle that equity treats as a tenancy in common what would be inequitable as a joint tenancy. The right of survivorship was seen as inappropriate in commercial arrangements where the parties' respective shares were business assets, not personal property they intended to accrue to a survivor."
+    },
+    {
+      "id": "PRL_M02_L01_Q29",
+      "question": "A and B are joint tenants. A is declared bankrupt. A's trustee in bankruptcy takes over A's interest. What is the effect on the co-ownership?",
+      "options": {
+        "A": "The joint tenancy is unaffected — bankruptcy does not sever co-ownership",
+        "B": "The trustee in bankruptcy steps into A's shoes as a joint tenant",
+        "C": "A's bankruptcy severs the joint tenancy, as vesting in the trustee constitutes an involuntary act on A's share",
+        "D": "A's interest is extinguished and B takes the entire property by survivorship"
+      },
+      "correct_answer": "C",
+      "explanation": "A's bankruptcy and the vesting of A's interest in the trustee in bankruptcy constitutes an involuntary act on A's share — equivalent to an alienation — which severs the joint tenancy. The trustee becomes a tenant in common with B. This is consistent with the first Williams v Hensman method: acting on one's own share."
+    },
+    {
+      "id": "PRL_M02_L01_Q30",
+      "question": "What is the key practical importance of the distinction between joint tenancy and tenancy in common for estate planning?",
+      "options": {
+        "A": "A joint tenancy allows better protection against creditors during life",
+        "B": "A joint tenant cannot include their share in a will — on death it passes to the surviving co-owner(s) by survivorship; a tenant in common can leave their distinct share by will",
+        "C": "A joint tenancy attracts lower stamp duty on subsequent transfer",
+        "D": "A tenancy in common offers greater mortgage protection to lenders"
+      },
+      "correct_answer": "B",
+      "explanation": "The most important estate planning distinction is that a joint tenant's interest cannot be left by will — on death it automatically passes to the survivors by jus accrescendi. A tenant in common has a distinct share which can be left by will or passes on intestacy. This is fundamental to advising co-owners on their testamentary wishes."
+    },
+    {
+      "id": "PRL_M02_L01_Q31",
+      "question": "A and B are tenants in common in equal shares. A dies leaving a will that gives all property to X. What happens to A's share of the co-owned property?",
+      "options": {
+        "A": "A's share passes to B by survivorship",
+        "B": "A's share passes to X under the will",
+        "C": "A's share is divided equally between X and B",
+        "D": "A's share passes to A's nearest blood relative regardless of the will"
+      },
+      "correct_answer": "B",
+      "explanation": "As tenants in common, A holds a distinct share transmissible by will. A's one-half share passes to X under the will. There is no right of survivorship in a tenancy in common. B retains their own one-half share unaffected by A's death."
+    },
+    {
+      "id": "PRL_M02_L01_Q32",
+      "question": "In relation to the Williams v Hensman second method (mutual agreement), which statement is most accurate?",
+      "options": {
+        "A": "The agreement to sever must be in writing and signed by all parties to be effective",
+        "B": "An oral or written agreement to treat the shares as separate is sufficient to sever, even if not yet acted upon",
+        "C": "The agreement must be registered in the Land Registry to be effective",
+        "D": "Only a court can declare that mutual agreement has severed a joint tenancy"
+      },
+      "correct_answer": "B",
+      "explanation": "The second Williams v Hensman method requires a mutual agreement between joint tenants to treat their interests as separate — this need not be written, formal, or acted upon. A clear oral or written agreement recording mutual intention that each party is to hold a distinct share is sufficient. However, mere negotiations without concluded agreement are not enough."
+    },
+    {
+      "id": "PRL_M02_L01_Q33",
+      "question": "After the LCLRA 2009, what is the main advantage of the section 31 written notice method of severance over the Williams v Hensman methods?",
+      "options": {
+        "A": "The written notice method is the only legally valid method of severance post-2009",
+        "B": "The written notice method allows unilateral severance without alienation or agreement — providing certainty and effectiveness from the date of service",
+        "C": "The written notice method avoids stamp duty on the severed share",
+        "D": "The written notice method can be served retrospectively to sever a joint tenancy before a co-owner's death"
+      },
+      "correct_answer": "B",
+      "explanation": "The main advantage of section 31 LCLRA 2009 severance is that it allows a joint tenant to sever unilaterally by serving a written notice, without needing to alienate their share or reach agreement with the other joint tenant(s). This provides a clear, certain method that takes effect on service of the notice."
+    },
+    {
+      "id": "PRL_M02_L01_Q34",
+      "question": "Under Irish law, can a co-owner bring court proceedings for partition or sale of co-owned land?",
+      "options": {
+        "A": "No — the courts have no jurisdiction over co-owned property",
+        "B": "Yes — under the LCLRA 2009, courts have jurisdiction to order partition or sale in lieu of partition on the application of any co-owner",
+        "C": "Only if both co-owners consent to the proceedings",
+        "D": "Only in relation to commercial property, not residential property"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the LCLRA 2009, any co-owner may apply to court for an order for partition or for sale of the co-owned property with division of the proceeds. The court has a broad discretion to make such orders in appropriate circumstances and may consider the interests of all parties including any dependent occupants."
+    },
+    {
+      "id": "PRL_M02_L01_Q35",
+      "question": "A and B purchase a house together, each contributing equally to the purchase price, taking title 'as joint tenants' in December 2010. A subsequently dies without ever severing the joint tenancy. What is the outcome?",
+      "options": {
+        "A": "A's estate takes A's half share under A's will or intestacy",
+        "B": "B takes the entire property by right of survivorship under the joint tenancy",
+        "C": "The property must be sold and proceeds divided equally between A's estate and B",
+        "D": "The court determines the beneficial shares based on financial contributions"
+      },
+      "correct_answer": "B",
+      "explanation": "A and B held as joint tenants. Since A died without severing the joint tenancy, the right of survivorship operates and B takes the entire property. A's will (if any) cannot affect the joint tenancy share, as A had no separable interest to leave — the entire property now belongs to B."
+    },
+    {
+      "id": "PRL_M02_L01_Q36",
+      "question": "Which is the leading Irish authority on the application of the forfeiture rule to co-owned property?",
+      "options": {
+        "A": "Bank of Ireland v Smyth [1995]",
+        "B": "Start Mortgages v Gunn [2011]",
+        "C": "Cawley v Lillis [2011]",
+        "D": "Containercare v Wycherley [1982]"
+      },
+      "correct_answer": "C",
+      "explanation": "Cawley v Lillis [2011] (Irish High Court) is the leading Irish case on the forfeiture rule in the context of co-owned property. It confirmed that a joint tenant who unlawfully kills the other joint tenant cannot benefit from the right of survivorship, and that a constructive trust arises to prevent such unconscionable enrichment."
+    },
+    {
+      "id": "PRL_M02_L01_Q37",
+      "question": "A and B are beneficial joint tenants. A persuades B to sign a document stating: 'We agree to hold this property as separate equal owners with no right of survivorship between us.' This document:",
+      "options": {
+        "A": "Has no effect without a deed of conveyance",
+        "B": "Severs the joint tenancy by mutual agreement under the second Williams v Hensman method",
+        "C": "Requires registration in the Land Registry to be effective",
+        "D": "Can only be effective if witnessed by a solicitor"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the second Williams v Hensman method, mutual agreement between joint tenants to treat their shares as separate — even without a formal deed or registration — is sufficient to sever the joint tenancy. The signed document clearly records such mutual agreement and is effective in equity from the date of the agreement."
+    },
+    {
+      "id": "PRL_M02_L01_Q38",
+      "question": "Prior to the LCLRA 2009, equity would imply a tenancy in common where a mortgagee (bank) lent money on the security of co-owned land. The rationale was:",
+      "options": {
+        "A": "The bank's charge would be void if the landowners held as joint tenants",
+        "B": "Equity did not allow financial institutions to hold property interests by survivorship",
+        "C": "The bank's position as lender was commercial in nature and equity would not apply the right of survivorship inequitably to a lender",
+        "D": "Statute required all mortgaged properties to be held as tenancy in common"
+      },
+      "correct_answer": "C",
+      "explanation": "Equity's third recognised category for implying a tenancy in common was the mortgagee-mortgagor relationship. The rationale was that a bank lending money on security does so in a commercial capacity — if two banks lent equal sums and one died, equity would not allow the surviving bank to take the entire security by survivorship. A tenancy in common preserved each bank's separate security interest."
+    },
+    {
+      "id": "PRL_M02_L01_Q39",
+      "question": "A and B are joint tenants. They have a dispute and agree verbally that they will 'go their separate ways' with each keeping 'their own half.' No formal steps are taken. B subsequently dies. Was the joint tenancy severed?",
+      "options": {
+        "A": "No — only a written notice or alienation can sever after the LCLRA 2009",
+        "B": "Yes — the verbal agreement constitutes mutual agreement under the second Williams v Hensman method, severing the joint tenancy",
+        "C": "No — verbal agreements cannot sever a joint tenancy as a matter of law",
+        "D": "Yes — the passage of time following the verbal agreement constitutes severance by course of dealing"
+      },
+      "correct_answer": "B",
+      "explanation": "The second Williams v Hensman method allows severance by mutual agreement, which need not be written. A verbal agreement between joint tenants that they will hold separate shares is sufficient, provided it is a concluded agreement (not merely negotiations). On these facts, 'going their separate ways' with each keeping 'their own half' sounds like a concluded mutual agreement."
+    },
+    {
+      "id": "PRL_M02_L01_Q40",
+      "question": "Under the forfeiture rule as applied in Cawley v Lillis [2011], the constructive trust operated so that:",
+      "options": {
+        "A": "The entire property vested in the State",
+        "B": "The surviving joint tenant held their OWN share only, with the deceased's share held on constructive trust for the deceased's estate",
+        "C": "The entire property was held on constructive trust for the deceased's dependants",
+        "D": "The property was transferred to a court-appointed trustee pending criminal proceedings"
+      },
+      "correct_answer": "B",
+      "explanation": "In Cawley v Lillis, the constructive trust operated specifically on the deceased's share. The surviving joint tenant (the killer) retained their own share but held the deceased's share on constructive trust for the deceased's estate. The forfeiture rule does not go so far as to strip the wrongdoer of their own pre-existing share."
+    },
+    {
+      "id": "PRL_M02_L01_Q41",
+      "question": "A and B co-own a house as tenants in common in equal shares. A occupies the property exclusively while B is living abroad. B returns and demands occupation. A refuses. Which remedy would B most likely pursue?",
+      "options": {
+        "A": "A declaration that B's share has been extinguished by long absence",
+        "B": "An order for immediate partition of the property",
+        "C": "Damages for breach of the co-ownership arrangement",
+        "D": "An order requiring A to pay B an occupation rent for the period of exclusive occupation, applying Dennis v McDonald"
+      },
+      "correct_answer": "D",
+      "explanation": "Applying Dennis v McDonald, where one co-owner has exclusively occupied the property to the exclusion of the other, the excluded co-owner may seek an order for an occupation rent. This compensates B for being deprived of the use and enjoyment of their share during A's exclusive occupation."
+    },
+    {
+      "id": "PRL_M02_L01_Q42",
+      "question": "A and B are joint tenants. A and B negotiate for several months about A buying B out, with B seeking a higher price than A is willing to pay. No agreement is reached. A then dies. Was the joint tenancy severed by the negotiations?",
+      "options": {
+        "A": "Yes — sustained negotiations constitute a course of dealing sufficient to sever",
+        "B": "Yes — B's proposal to sell constitutes an act on B's own share under the first Williams v Hensman method",
+        "C": "No — negotiations without a concluded agreement are insufficient to sever a joint tenancy by mutual agreement",
+        "D": "No — only a formal deed of partition can sever a joint tenancy in Ireland"
+      },
+      "correct_answer": "C",
+      "explanation": "The second Williams v Hensman method requires a concluded mutual agreement to treat the shares as separate. Mere negotiations without a concluded agreement are not enough. Since no agreement was reached, the joint tenancy remained intact and A's death activated the right of survivorship in B's favour."
+    },
+    {
+      "id": "PRL_M02_L01_Q43",
+      "question": "Under what circumstances would a resulting trust arise to give a co-owner a greater beneficial share than their legal title suggests?",
+      "options": {
+        "A": "Where one co-owner has painted and decorated the property at their own expense",
+        "B": "Where one co-owner has made a greater financial contribution to the purchase price, and there is no express declaration of the beneficial shares",
+        "C": "Where one co-owner has lived in the property for more than ten years",
+        "D": "Where one co-owner has paid all of the maintenance costs for the property"
+      },
+      "correct_answer": "B",
+      "explanation": "A resulting trust arises where one co-owner makes a greater financial contribution to the purchase price and there is no express declaration of the beneficial shares that addresses this. The beneficial interest under a resulting trust is proportionate to the financial contribution — but an express declaration of joint tenancy or equal beneficial shares can rebut the resulting trust."
+    },
+    {
+      "id": "PRL_M02_L01_Q44",
+      "question": "A and B hold a house as beneficial joint tenants, having expressly declared so in the conveyance. A subsequently contributes significantly more to the mortgage repayments than B. A claims a greater beneficial share. What is the most likely outcome?",
+      "options": {
+        "A": "A obtains a greater beneficial share proportionate to their mortgage contributions",
+        "B": "An express declaration of joint tenancy in the conveyance is conclusive as to the beneficial shares — A and B hold equally unless the declaration can be set aside for fraud or mistake",
+        "C": "A is entitled to additional compensation from B for the excess mortgage payments",
+        "D": "The court will automatically convert the joint tenancy to a tenancy in common based on the unequal contributions"
+      },
+      "correct_answer": "B",
+      "explanation": "An express declaration of the beneficial interests in a conveyance (or transfer) is generally conclusive. Where the parties have expressly declared a beneficial joint tenancy, this declaration overrides any presumption of resulting trust that might arise from unequal contributions. A would need to establish fraud or mistake to set aside the declaration."
+    },
+    {
+      "id": "PRL_M02_L01_Q45",
+      "question": "The 'course of dealing' method of severance (third Williams v Hensman method) requires:",
+      "options": {
+        "A": "Both joint tenants to have executed a deed of severance",
+        "B": "Evidence that both parties treated their shares as separate over a sufficient course of dealing, even without a concluded agreement",
+        "C": "That the parties have filed income tax returns separately for the property for at least five years",
+        "D": "A minimum period of ten years of separate dealing before courts recognise the severance"
+      },
+      "correct_answer": "B",
+      "explanation": "The third Williams v Hensman method requires a sufficient course of dealing between the joint tenants that intimates they both treated their interests as constituting a tenancy in common. This may arise without a formal agreement or specific act. The court looks at the totality of the parties' conduct over time to assess whether it sufficiently evidences mutual intention to hold separately."
+    },
+    {
+      "id": "PRL_M02_L01_Q46",
+      "question": "A and B are joint tenants of a house. A obtains a court judgment against B for a debt. A registers a judgment mortgage against B's interest. What is the effect on the joint tenancy?",
+      "options": {
+        "A": "The judgment mortgage has no effect on the joint tenancy — only voluntary acts can sever it",
+        "B": "The judgment mortgage severs the joint tenancy as to B's share, converting it to a tenancy in common",
+        "C": "A automatically takes B's share as the judgment creditor",
+        "D": "B's share is extinguished and vests in the court pending payment of the debt"
+      },
+      "correct_answer": "B",
+      "explanation": "Registration of a judgment mortgage against one joint tenant's share is an involuntary act on that share which can sever the joint tenancy. B's share, encumbered by the judgment mortgage, is severed from the joint tenancy and B and A become tenants in common. Note: there was a lacuna regarding judgment mortgages and the Family Home Protection Act 1976 (Containercare v Wycherley) — but the severance effect on the joint tenancy is the point here."
+    },
+    {
+      "id": "PRL_M02_L01_Q47",
+      "question": "A and B are joint tenants. A serves a written notice of severance on B under section 31 LCLRA 2009. B dies two hours after receiving the notice. Was the joint tenancy severed before B's death?",
+      "options": {
+        "A": "No — the notice only takes effect after twenty-four hours",
+        "B": "Yes — the notice took effect on receipt by B, which was before B's death, so the joint tenancy was already severed",
+        "C": "No — a section 31 notice is only effective if B is alive when the notice is registered",
+        "D": "Yes — the notice is effective from the moment A serves it, not from receipt"
+      },
+      "correct_answer": "B",
+      "explanation": "A section 31 LCLRA 2009 notice takes effect on service — i.e., when received by the other joint tenant. Since B received the notice two hours before dying, the joint tenancy was severed before B's death. B's interest at death was therefore a distinct share as tenant in common, passing under B's will or on B's intestacy — not to A by survivorship."
+    },
+    {
+      "id": "PRL_M02_L01_Q48",
+      "question": "A and B are joint tenants. A signs and sends a written notice to B under section 31 LCLRA 2009 stating that A is severing the joint tenancy. A dies that same morning before the notice is delivered to B. Was the joint tenancy severed?",
+      "options": {
+        "A": "Yes — a notice is effective from the moment it is signed and dispatched by A",
+        "B": "No — A is now deceased and the notice cannot take effect after A's death; B takes A's share by survivorship",
+        "C": "Yes — the mere intention to serve a notice is sufficient to sever",
+        "D": "The court has discretion to decide based on the proximity in time between signing and death"
+      },
+      "correct_answer": "B",
+      "explanation": "For a section 31 notice to be effective, it must be served on (received by) the other joint tenant. If A dies before the notice is delivered to B, the severance has not been effected. On A's death, the right of survivorship operates and B takes A's share. This is a critical timing issue in co-ownership law."
+    },
+    {
+      "id": "PRL_M02_L01_Q49",
+      "question": "In the context of co-ownership, what is the purpose of a court order for 'sale in lieu of partition'?",
+      "options": {
+        "A": "To transfer the entire property to the co-owner who wishes to remain in occupation",
+        "B": "To divide the property physically into separate parcels for each co-owner",
+        "C": "To direct a sale of the entire property on the open market, with the proceeds divided between the co-owners in proportion to their respective shares",
+        "D": "To impose a rent on one co-owner for exclusive occupation and distribute the rent between co-owners"
+      },
+      "correct_answer": "C",
+      "explanation": "Where physical partition is impractical (as is usually the case with residential property), the court may order a sale of the property on the open market, with the net proceeds divided between the co-owners in proportion to their respective shares. This is 'sale in lieu of partition' — the most commonly sought remedy in co-ownership disputes."
+    },
+    {
+      "id": "PRL_M02_L01_Q50",
+      "question": "An Irish property law exam question asks: 'A and B are beneficial joint tenants of a house. A is convicted of murdering B. Advise on the position of the property.' The best-structured answer would:",
+      "options": {
+        "A": "Advise that A takes the property by survivorship as the survivor of the joint tenancy",
+        "B": "Advise that B's estate takes B's half and A keeps their own half under general property principles",
+        "C": "Apply the forfeiture rule as confirmed in Cawley v Lillis [2011]: A cannot benefit from the right of survivorship; A holds B's share on constructive trust for B's estate; A retains their own share",
+        "D": "Advise that the property is confiscated by the State under criminal law as the proceeds of crime"
+      },
+      "correct_answer": "C",
+      "explanation": "Cawley v Lillis [2011] is directly on point. The forfeiture rule prevents A from benefiting from the killing — A cannot claim B's share by survivorship. However, A retains their own pre-existing share. A holds B's share on constructive trust for B's estate. The estate (not the State) takes B's share, which then passes under B's will or on intestacy."
+    }
+  ],
+  "total_questions": 50
+}

@@ -1,0 +1,119 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module12_Lesson02.txt",
+  "module_number": 12,
+  "module_title": "Public Order, Offences Against Justice, and State Offences",
+  "lesson_number": 2,
+  "lesson_title": "Offences Against the Administration of Justice (Perjury and Contempt)",
+  "total_questions": 9,
+  "questions": [
+    {
+      "id": "CRL_M12_L02_Q01",
+      "question": "The Criminal Justice (Perjury and Related Offences) Act 2021 came into force on 28 July 2021. What was the primary purpose of this Act?",
+      "options": {
+        "A": "The Act was introduced solely to increase the maximum sentence for perjury \u2014 the substantive definition of perjury was already adequately covered by common law",
+        "B": "The Act replaced the pre-existing common law and statutory offences relating to perjury and false statements with a modernised statutory framework \u2014 it codified perjury and related offences (including procuring perjury and making false statements) in a single Act and set out clear definitions, elements, and maximum sentences",
+        "C": "The Act was introduced to implement EU Directive obligations on mutual recognition of court proceedings \u2014 it does not change the domestic law on perjury",
+        "D": "The Act abolished the offence of perjury and replaced it with a general contempt of court offence"
+      },
+      "correct_answer": "B",
+      "explanation": "The Criminal Justice (Perjury and Related Offences) Act 2021 represented a significant modernisation and codification of the law on perjury and related offences in Ireland. Prior to the Act, perjury was largely governed by a combination of old statutory provisions and common law. The 2021 Act created a modern, comprehensive statutory framework that: (1) clearly defines perjury under s.2(1); (2) creates the offence of procuring perjury under s.3; (3) creates the offence of making false statements under s.5; and (4) sets out clear maximum sentences for each offence. The Act commenced on 28 July 2021. FE-1 candidates must know the Act's commencement date and the key offences and maximum sentences it creates. Option A incorrectly characterises the Act as merely increasing sentences. Option C incorrectly attributes EU Directive implementation as the purpose. Option D incorrectly states perjury was abolished."
+    },
+    {
+      "id": "CRL_M12_L02_Q02",
+      "question": "What is the maximum sentence for perjury under s.2(1) of the Criminal Justice (Perjury and Related Offences) Act 2021?",
+      "options": {
+        "A": "5 years imprisonment on indictment",
+        "B": "7 years imprisonment on indictment",
+        "C": "10 years imprisonment on indictment",
+        "D": "Life imprisonment \u2014 perjury is considered an offence of utmost gravity as it corrupts the administration of justice"
+      },
+      "correct_answer": "C",
+      "explanation": "The maximum sentence for the offence of perjury under s.2(1) of the Criminal Justice (Perjury and Related Offences) Act 2021 is 10 years imprisonment on indictment. This reflects the gravity of perjury as an offence \u2014 it strikes at the heart of the administration of justice by corrupting the truth-finding function of legal proceedings. Perjury involves making a false statement of fact under oath or affirmation in a judicial proceeding, knowing the statement to be false or not believing it to be true. The 10-year maximum is significantly higher than the maximum for procuring perjury (also 10 years) but higher than false statements under s.5 (5 years). FE-1 candidates must know the maximum sentences under the 2021 Act. Options A and B state incorrect lower maximums. Option D incorrectly states life imprisonment."
+    },
+    {
+      "id": "CRL_M12_L02_Q03",
+      "question": "Section 3 of the Criminal Justice (Perjury and Related Offences) Act 2021 creates the offence of procuring perjury. What does this offence involve, and what is the maximum sentence?",
+      "options": {
+        "A": "Procuring perjury involves bribing a witness \u2014 the maximum sentence is 5 years",
+        "B": "Procuring perjury under s.3 involves suborning, inciting, or procuring another person to commit perjury \u2014 inducing or persuading a witness to give false testimony; the maximum sentence is 10 years on indictment, which is the same as for the perjury offence itself",
+        "C": "Procuring perjury involves giving false testimony in support of another person's perjury \u2014 the maximum sentence is 7 years",
+        "D": "Procuring perjury involves the destruction of documents that would have prevented perjury from succeeding \u2014 maximum 5 years"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 3 of the CJ(Perjury and Related Offences) Act 2021 creates the offence of procuring perjury \u2014 also known as subornation of perjury. This offence is committed where a person suborns, incites, persuades, or otherwise procures another person to commit perjury. In other words, it is the 'organising' or 'engineering' of perjury rather than committing it oneself. The maximum sentence for procuring perjury is 10 years on indictment \u2014 the same as the maximum for perjury itself under s.2(1). The legislature has treated the person who engineers perjury as equally culpable to the person who actually commits it, reflecting the view that causing another to lie under oath is as damaging to the administration of justice as doing so oneself. Option A incorrectly describes only bribery and gives a lower maximum. Option C incorrectly describes the offence. Option D incorrectly describes document destruction."
+    },
+    {
+      "id": "CRL_M12_L02_Q04",
+      "question": "Section 5 of the Criminal Justice (Perjury and Related Offences) Act 2021 creates the offence of making a false statement. How does this offence differ from perjury, and what is the maximum sentence?",
+      "options": {
+        "A": "False statements under s.5 are identical to perjury \u2014 they carry the same maximum sentence of 10 years",
+        "B": "The s.5 offence of making a false statement differs from perjury in that it covers false statements made in contexts not involving a formal oath or judicial proceeding \u2014 for example, false statutory declarations or false statements in documents required by law; the maximum sentence for s.5 is 5 years on indictment, lower than the 10-year maximum for perjury",
+        "C": "False statements under s.5 refer only to written statements \u2014 oral false statements in court proceedings are governed by the perjury provision alone",
+        "D": "The s.5 offence requires that the false statement actually influenced the outcome of the proceedings \u2014 without proof of causation, the offence cannot be established"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 5 of the CJ(Perjury and Related Offences) Act 2021 creates a distinct offence of making a false statement. While perjury under s.2(1) requires a false statement of fact made under oath or affirmation in a judicial proceeding, the s.5 offence extends the criminal law to false statements made in statutory declarations, affidavits, affirmations, or other formal written statements required by law that are not necessarily made in the course of an ongoing judicial proceeding. The maximum sentence for the s.5 offence is 5 years on indictment \u2014 lower than the 10-year maximum for perjury, reflecting the generally (though not always) less immediate harm of false statements in non-court contexts. FE-1 candidates must know: s.2(1) perjury (10 years), s.3 procuring perjury (10 years), s.5 false statements (5 years). Option A incorrectly equates s.5 with perjury and gives the same maximum. Option C incorrectly limits s.5 to written statements. Option D incorrectly requires proof of causation."
+    },
+    {
+      "id": "CRL_M12_L02_Q05",
+      "question": "Contempt of court can arise in facie curiae (in the face of the court) or ex facie curiae (outside the court). What is in facie curiae contempt, and what is the key Irish authority?",
+      "options": {
+        "A": "In facie curiae contempt refers to the publication of prejudicial material about ongoing proceedings \u2014 it is the most common form of contempt in Irish law",
+        "B": "In facie curiae contempt refers to contemptuous conduct occurring in the presence of the court \u2014 behaviour that directly disrupts or disrespects the judicial process as it is occurring; examples include shouting at a judge, refusing to answer questions, or creating disorder in the courtroom; the key Irish authority is Re Rea [1986] IR, where the court confirmed the inherent power to punish contempt committed in the face of the court",
+        "C": "In facie curiae contempt refers only to contempt committed by legal professionals \u2014 contempt by members of the public is governed by different principles",
+        "D": "In facie curiae contempt has been abolished in Ireland \u2014 all contempt is now governed by statute following the Civil Law (Miscellaneous Provisions) Act 2011"
+      },
+      "correct_answer": "B",
+      "explanation": "In facie curiae contempt ('in the face of the court') refers to contemptuous conduct occurring in the presence of the court \u2014 directly disrupting, defying, or disrespecting the judicial process. Examples include: shouting at or insulting a judge; refusing to take an oath or answer questions; creating disorder in the courtroom; physically assaulting court officers. The key Irish authority is Re Rea [1986] IR, which confirmed the court's inherent jurisdiction to deal with contempt committed in its presence summarily and without delay. The immediacy of the response \u2014 the court can deal with in facie contempt instantly \u2014 distinguishes it from ex facie contempt (outside the court), which requires a more formal process. Option A describes sub-judice contempt (which is ex facie). Option C incorrectly limits in facie contempt to legal professionals. Option D incorrectly states the form of contempt was abolished."
+    },
+    {
+      "id": "CRL_M12_L02_Q06",
+      "question": "What is the sub-judice rule in the context of contempt of court, and what is the key Irish authority?",
+      "options": {
+        "A": "The sub-judice rule requires that all court proceedings be heard in public \u2014 it is the rule against secret trials",
+        "B": "The sub-judice rule restricts the publication of material about active legal proceedings that could prejudice a fair trial \u2014 once proceedings are active (i.e., 'sub judice'), publication of material that creates a real risk of prejudicing the proceedings can constitute contempt of court; the key Irish authority is Kelly v O'Neill [2000] IR, which considered the circumstances in which publication would constitute sub-judice contempt",
+        "C": "The sub-judice rule prevents parties from settling disputes while proceedings are active \u2014 settlements reached during litigation are unenforceable",
+        "D": "The sub-judice rule is purely a civil law concept \u2014 it has no application in criminal proceedings"
+      },
+      "correct_answer": "B",
+      "explanation": "The sub-judice rule is a form of ex facie (outside the court) contempt. It restricts the publication or broadcast of material about active legal proceedings where such publication could create a real risk of prejudicing the fair trial of those proceedings \u2014 for example, by influencing potential jurors or witnesses. 'Sub judice' means 'under a judge' \u2014 the matter is before the court. Once proceedings become active, the media and others must exercise caution about what they publish. The key Irish authority is Kelly v O'Neill [2000] IR, which considered the circumstances in which publication about active proceedings constitutes contempt. The rule balances freedom of expression (guaranteed under Art 40.6.1) with the right to a fair trial (Art 38.1). Option A describes the in camera rule, not sub-judice. Option C is entirely incorrect. Option D incorrectly excludes criminal proceedings."
+    },
+    {
+      "id": "CRL_M12_L02_Q07",
+      "question": "What is scandalising the court as a form of contempt, and how has it been considered in Irish law?",
+      "options": {
+        "A": "Scandalising the court refers only to physical disturbances in court \u2014 it is a synonym for in facie curiae contempt",
+        "B": "Scandalising the court is a form of ex facie contempt involving publication of material that seriously undermines public confidence in the judiciary or imputes improper motives to judges; it was recognised in R v Gray [1900] as a form of contempt; in DPP v Walsh [2014] IEHC the Irish courts considered the offence, while People (AG) v O'Ryan and Boyd [1946] addressed the boundaries of permissible criticism of the judiciary",
+        "C": "Scandalising the court is the same as the sub-judice rule \u2014 both terms describe prejudicial publication about active proceedings",
+        "D": "Scandalising the court has been abolished in Irish law following constitutional challenges based on freedom of expression"
+      },
+      "correct_answer": "B",
+      "explanation": "Scandalising the court is a form of ex facie (outside the court) contempt involving the publication of material that scandalises \u2014 that is, seriously undermines public confidence in the administration of justice or imputes corrupt or improper motives to judges. This form of contempt is distinct from the sub-judice rule (which concerns specific active proceedings) in that it involves a general attack on the judiciary. R v Gray [1900] is the foundational English authority recognising this form of contempt. In Irish law, People (AG) v O'Ryan and Boyd [1946] addressed the scope of permissible criticism of the courts and the boundaries of scandalising contempt. DPP v Walsh [2014] IEHC is a more modern Irish consideration of the offence. There is tension between this form of contempt and constitutional freedom of expression. Option A incorrectly equates it with in facie contempt. Option C incorrectly conflates it with the sub-judice rule. Option D incorrectly states it has been abolished."
+    },
+    {
+      "id": "CRL_M12_L02_Q08",
+      "question": "Mark is a witness in a fraud trial. He gives evidence under oath that he was present at a meeting on a particular date when in fact he was abroad at the time. He knows this evidence is false. Has Mark committed perjury under the Criminal Justice (Perjury and Related Offences) Act 2021, and what elements must be proved?",
+      "options": {
+        "A": "No \u2014 perjury under the 2021 Act requires that Mark's false testimony actually influenced the outcome of the trial; since the trial is ongoing, it is premature to establish perjury",
+        "B": "Yes \u2014 Mark has potentially committed perjury under s.2(1) CJ(Perjury and Related Offences) Act 2021; the elements are: (1) a statement of fact \u2014 Mark stated he was present at the meeting; (2) made under oath \u2014 witnesses give evidence under oath; (3) in a judicial proceeding \u2014 a criminal trial is a judicial proceeding; (4) which is false \u2014 Mark was abroad and knows the statement is false; (5) knowing it to be false or not believing it to be true \u2014 Mark knew the evidence was false; all elements are satisfied; maximum sentence: 10 years",
+        "C": "No \u2014 perjury requires that the false statement be made in writing; oral testimony cannot constitute perjury under the 2021 Act",
+        "D": "No \u2014 Mark can only be guilty of making a false statement under s.5 (5 years maximum) because perjury under s.2(1) requires the false statement to relate to a material issue in the trial, which has not yet been established"
+      },
+      "correct_answer": "B",
+      "explanation": "Mark has potentially committed perjury under s.2(1) of the CJ(Perjury and Related Offences) Act 2021. All five elements are satisfied: (1) Statement of fact \u2014 claiming to have been present at the meeting is a statement of fact; (2) Under oath \u2014 witnesses in criminal trials give evidence under oath or affirmation; (3) In a judicial proceeding \u2014 a criminal fraud trial is clearly a judicial proceeding; (4) The statement is false \u2014 Mark was abroad and could not have been present; (5) Mark knew the statement was false or did not believe it to be true \u2014 he knows he was abroad. The prosecution does not need to prove that the false statement affected the outcome of the trial \u2014 the offence is complete once the false statement is made under oath in a judicial proceeding with the requisite knowledge. The maximum sentence is 10 years. Option A incorrectly requires proof of influence on outcome. Option C incorrectly limits perjury to written statements. Option D incorrectly redirects to s.5 \u2014 perjury under s.2(1) is the correct provision for sworn oral testimony in court."
+    },
+    {
+      "id": "CRL_M12_L02_Q09",
+      "question": "A journalist publishes detailed and sensational coverage of an ongoing murder trial, including statements that the accused is 'obviously guilty' and graphic details not in evidence. The trial is proceeding before a jury. What form of contempt, if any, has the journalist potentially committed?",
+      "options": {
+        "A": "The journalist has committed in facie curiae contempt \u2014 the publication of prejudicial material is treated as conduct in the face of the court",
+        "B": "The journalist has potentially committed sub-judice contempt \u2014 publication of material about active proceedings that creates a real risk of prejudicing the jury's deliberations constitutes ex facie contempt of court; stating that the accused is 'obviously guilty' is precisely the type of prejudicial assertion about an active criminal trial that the sub-judice rule is designed to prevent; Kelly v O'Neill [2000] is the key Irish authority",
+        "C": "The journalist has potentially committed scandalising the court \u2014 the publication attacks the integrity of the trial process",
+        "D": "The journalist has not committed any contempt \u2014 the constitutional right to freedom of expression (Art 40.6.1) protects journalists reporting on court proceedings regardless of content"
+      },
+      "correct_answer": "B",
+      "explanation": "The journalist's conduct potentially constitutes sub-judice contempt. The analysis: (1) The murder trial is active \u2014 proceedings are 'sub judice'; (2) The publication includes assertions of guilt ('obviously guilty') and graphic details not in evidence; (3) These publications create a real risk of prejudicing the jury's deliberations \u2014 jurors who read such coverage may be influenced in their assessment of the evidence; (4) Sub-judice contempt is the precise mechanism designed to prevent this type of prejudicial publication about active trials. Kelly v O'Neill [2000] IR is the key Irish authority on sub-judice contempt. The right to freedom of expression (Art 40.6.1) does not provide an unlimited protection for such publications \u2014 it must be balanced against the accused's right to a fair trial under Art 38.1. Option A incorrectly identifies in facie contempt \u2014 the journalist is not in court. Option C incorrectly identifies scandalising \u2014 the journalist has not attacked the judiciary itself. Option D incorrectly treats freedom of expression as an absolute protection."
+    }
+  ]
+}

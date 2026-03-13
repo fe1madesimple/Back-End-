@@ -1,0 +1,275 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "EquityLaw_ElevenLabs_Module02_Lesson02.txt",
+  "module_number": 2,
+  "module_title": "TRUSTS — FORMATION AND VALIDITY",
+  "lesson_number": 2,
+  "lesson_title": "EXPRESS TRUSTS AND FORMALITIES",
+  "total_questions": 22,
+  "questions": [
+    {
+      "id": "EQL_M02_L02_Q01",
+      "question": "Under Irish law, an express trust of personal property (personalty):",
+      "options": {
+        "A": "Must be created in writing and signed by the settlor",
+        "B": "Can be created orally without any formalities, provided the three certainties are satisfied",
+        "C": "Requires a deed executed before two independent witnesses",
+        "D": "Must be registered with the Revenue Commissioners to be valid"
+      },
+      "correct_answer": "B",
+      "explanation": "Under Irish law, an express trust of personalty (personal property) can be created orally without any formalities, provided the three certainties are satisfied. Section 4 of the Statute of Frauds Ireland 1695 requires writing only for trusts of land, not for trusts of personal property."
+    },
+    {
+      "id": "EQL_M02_L02_Q02",
+      "question": "Section 4 of the Statute of Frauds Ireland 1695 requires that a declaration of trust over land must be:",
+      "options": {
+        "A": "Made in writing and executed as a deed",
+        "B": "Manifested and proved by some writing signed by the party who is by law enabled to declare such trust",
+        "C": "Evidenced by at least two witnesses who were present at the declaration",
+        "D": "Registered in the Land Registry before taking effect"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 4 of the Statute of Frauds Ireland 1695 requires that a declaration of trust over land must be 'manifested and proved by some writing signed by the party who is by law enabled to declare such trust'. Critically, the trust does not have to be created in writing — it must be manifested and proved by writing. An oral trust of land is not void but merely unenforceable without written evidence."
+    },
+    {
+      "id": "EQL_M02_L02_Q03",
+      "question": "What is the legal effect of an oral declaration of trust over land that is not evidenced in writing under Section 4 of the Statute of Frauds Ireland 1695?",
+      "options": {
+        "A": "The trust is void and of no legal effect",
+        "B": "The trust is unenforceable unless there is sufficient written evidence, but is not void",
+        "C": "The trust is valid but can only be enforced against the original trustee, not successors",
+        "D": "The trust automatically converts into a resulting trust in favour of the settlor"
+      },
+      "correct_answer": "B",
+      "explanation": "An oral declaration of trust over land that is not evidenced in writing under Section 4 of the Statute of Frauds is not void — it is merely unenforceable. If there is subsequently sufficient written evidence of the trust, it can be enforced. This distinction between void and unenforceable is critical for FE-1 candidates."
+    },
+    {
+      "id": "EQL_M02_L02_Q04",
+      "question": "Which trusts are expressly excluded from the writing requirement in Section 4 of the Statute of Frauds?",
+      "options": {
+        "A": "Charitable trusts and trusts for public purposes",
+        "B": "Testamentary trusts created by will",
+        "C": "Resulting, implied, and constructive trusts",
+        "D": "Trusts created by statute or statutory instrument"
+      },
+      "correct_answer": "C",
+      "explanation": "Resulting, implied, and constructive trusts are expressly excluded from the writing requirement in Section 4 of the Statute of Frauds. These trusts arise by operation of law, and the legislature recognised that requiring writing for informally arising trusts would be unjust — it would allow the Statute to be used as an instrument of fraud."
+    },
+    {
+      "id": "EQL_M02_L02_Q05",
+      "question": "The case of Rochefoucauld v Boustead [1897] is authority for the proposition that:",
+      "options": {
+        "A": "An oral trust of land is always valid even without written evidence",
+        "B": "Equity will not permit the Statute of Frauds to be used as an instrument of fraud, enforcing an oral trust through a constructive trust",
+        "C": "A constructive trust can only arise where there is actual fraud by the trustee",
+        "D": "The three certainties do not apply to constructive trusts"
+      },
+      "correct_answer": "B",
+      "explanation": "Rochefoucauld v Boustead [1897] is authority for the principle that equity will not permit the Statute of Frauds to be used as an instrument of fraud. Where property is conveyed on an oral undertaking to hold it on trust, and the transferee then relies on the absence of writing to deny the trust, equity will impose a constructive trust to prevent the fraud — even in the absence of the required writing."
+    },
+    {
+      "id": "EQL_M02_L02_Q06",
+      "question": "What is the legal consequence where a settlor declares themselves trustee of their own property for the benefit of another?",
+      "options": {
+        "A": "The trust is not constituted until the settlor executes a deed of transfer to a third party trustee",
+        "B": "The trust is completely constituted the moment the declaration is made because no change of legal title is needed",
+        "C": "The declaration must be registered with the Charities Regulator to take effect",
+        "D": "A self-declaration of trust requires the consent of the beneficiary before it is effective"
+      },
+      "correct_answer": "B",
+      "explanation": "A self-declaration of trust occurs when the owner of property declares themselves a trustee for another. The trust is completely constituted the moment the declaration is made because the settlor already holds the legal title — there is no transfer required. This was confirmed in Paul v Paul [1882]. No change of legal title is needed since the settlor becomes the trustee."
+    },
+    {
+      "id": "EQL_M02_L02_Q07",
+      "question": "A transfer on trust, as distinct from a self-declaration of trust, involves:",
+      "options": {
+        "A": "The settlor declaring themselves trustee and immediately vesting legal title in the beneficiary",
+        "B": "The settlor transferring legal title to a separate trustee who holds the property on trust for the beneficiaries",
+        "C": "A statutory transfer of property by a court order in family law proceedings",
+        "D": "The beneficiary acquiring legal title directly from the settlor by virtue of the trust"
+      },
+      "correct_answer": "B",
+      "explanation": "A transfer on trust involves the settlor transferring legal title to a separate trustee who holds the property on trust for the beneficiaries. The trust is not completely constituted until the legal title has actually been transferred to the trustee. If the transfer is never completed, the trust may fail — which engages the doctrine of constitution covered in Module 3."
+    },
+    {
+      "id": "EQL_M02_L02_Q08",
+      "question": "The beneficiary principle, established in Morice v Bishop of Durham [1804], provides that:",
+      "options": {
+        "A": "Every trust must have identifiable beneficiaries who can enforce it",
+        "B": "Every beneficiary must have a fixed and ascertainable share in the trust property",
+        "C": "Beneficiaries must be of full legal capacity before they can enforce a trust",
+        "D": "The number of beneficiaries must not exceed the number of trustees"
+      },
+      "correct_answer": "A",
+      "explanation": "The beneficiary principle, established in Morice v Bishop of Durham [1804], provides that every private trust must have identifiable beneficiaries who can enforce it. Grant MR stated that every trust must have a definite object and there must be someone in whose favour the court can decree performance. This is also called the rule against trusts for purposes."
+    },
+    {
+      "id": "EQL_M02_L02_Q09",
+      "question": "Which of the following is an anomalous exception to the beneficiary principle recognised by the courts?",
+      "options": {
+        "A": "A trust for the establishment of a new public library",
+        "B": "A trust for the maintenance of specific animals belonging to the testator",
+        "C": "A trust for the benefit of future generations of the settlor's family",
+        "D": "A trust for the promotion of political causes supported by the testator"
+      },
+      "correct_answer": "B",
+      "explanation": "A trust for the maintenance of specific animals belonging to the testator is one of the recognised anomalous exceptions to the beneficiary principle. Other exceptions include trusts for the erection and maintenance of graves and monuments, and trusts for the saying of private masses. These are tolerated as historical anomalies but are construed narrowly and must not offend the rule against perpetuities."
+    },
+    {
+      "id": "EQL_M02_L02_Q10",
+      "question": "Why does the beneficiary principle require that there be someone to enforce the trust?",
+      "options": {
+        "A": "Because trustees are not legally obliged to act without a beneficiary's instructions",
+        "B": "Because without a beneficiary, no one has standing to compel the trustee to carry out their obligations",
+        "C": "Because equity only operates in personam and requires an identified person against whom it acts",
+        "D": "Because the Trustee Act 1893 requires identification of all beneficiaries by name"
+      },
+      "correct_answer": "B",
+      "explanation": "The practical reason for the beneficiary principle is that without a beneficiary, no one has standing to compel the trustee to carry out their obligations. The Attorney General enforces charitable trusts in the public interest, but for private purpose trusts, there is no one with standing to hold the trustees to account — hence the trust is void."
+    },
+    {
+      "id": "EQL_M02_L02_Q11",
+      "question": "An express trust is described as being created 'inter vivos'. This means:",
+      "options": {
+        "A": "The trust takes effect on the death of the settlor",
+        "B": "The trust is created during the settlor's lifetime",
+        "C": "The trust must have a fixed duration not exceeding the settlor's lifetime",
+        "D": "The trust was created between co-living spouses"
+      },
+      "correct_answer": "B",
+      "explanation": "An express trust created 'inter vivos' is one created during the settlor's lifetime, as opposed to a testamentary trust which takes effect on the testator's death. Inter vivos trusts are created by deed or declaration during the settlor's lifetime; testamentary trusts are created by will and take effect only on death."
+    },
+    {
+      "id": "EQL_M02_L02_Q12",
+      "question": "Paul v Paul [1882] confirmed which principle relating to express trusts?",
+      "options": {
+        "A": "That a transfer on trust requires registration to be effective",
+        "B": "That a self-declaration of trust is effective immediately upon declaration without any transfer of title",
+        "C": "That precatory words in a will cannot create a trust in personalty",
+        "D": "That the three certainties must be satisfied before any trust can be enforced"
+      },
+      "correct_answer": "B",
+      "explanation": "Paul v Paul [1882] confirmed that a self-declaration of trust is effective immediately upon declaration without any need to transfer legal title. Since the settlor already owns the property and has declared themselves trustee, the trust is constituted at that moment. There is no need for a separate transfer, making the trust complete from the moment of declaration."
+    },
+    {
+      "id": "EQL_M02_L02_Q13",
+      "question": "A settlor orally declares a trust over agricultural land in County Tipperary for the benefit of their grandchildren. What is the legal status of this trust under Section 4 of the Statute of Frauds Ireland 1695?",
+      "options": {
+        "A": "Void — no oral trust of land is valid in Irish law",
+        "B": "Valid and fully enforceable as a constructive trust",
+        "C": "Unenforceable unless there is sufficient written evidence, but not void",
+        "D": "Valid for personal property trusts only — it must be converted to a trust of personalty"
+      },
+      "correct_answer": "C",
+      "explanation": "Under Section 4 of the Statute of Frauds Ireland 1695, an oral declaration of trust over land is not void but is merely unenforceable unless manifested and proved by some writing signed by the party making the declaration. Without written evidence, the trust cannot be enforced, but if written evidence later emerges, it may be enforced."
+    },
+    {
+      "id": "EQL_M02_L02_Q14",
+      "question": "An anomalous non-charitable purpose trust is sometimes described as a 'trust of imperfect obligation'. This means:",
+      "options": {
+        "A": "The trust was imperfectly constituted and can be ratified by the beneficiaries",
+        "B": "The trust is valid but unenforceable because there is no beneficiary with standing to compel the trustee",
+        "C": "The trust is valid and enforceable but only for a period not exceeding 21 years",
+        "D": "The trust's validity depends on whether the trustee has accepted the obligation in writing"
+      },
+      "correct_answer": "B",
+      "explanation": "A trust of imperfect obligation is valid but unenforceable because there is no beneficiary with standing to compel the trustee. Such trusts — covering graves, monuments, and specific animals — are upheld as anomalies but rely on the trustee's willingness to perform. No court can be asked to enforce them for want of a beneficiary."
+    },
+    {
+      "id": "EQL_M02_L02_Q15",
+      "question": "Which of the following BEST describes an express trust?",
+      "options": {
+        "A": "A trust that arises automatically by operation of law without the intention of the parties",
+        "B": "A trust that is deliberately and intentionally created by a settlor",
+        "C": "A trust that arises where the settlor fails to exhaust the beneficial interest",
+        "D": "A trust imposed by the court to prevent unconscionable conduct"
+      },
+      "correct_answer": "B",
+      "explanation": "An express trust is one that is deliberately and intentionally created by a settlor — as opposed to trusts that arise by operation of law, such as resulting trusts (arising automatically from circumstances) or constructive trusts (imposed by courts to prevent unconscionability). Express trusts can be inter vivos or testamentary."
+    },
+    {
+      "id": "EQL_M02_L02_Q16",
+      "question": "The reason that Section 4 of the Statute of Frauds does not apply to resulting, implied, and constructive trusts is that:",
+      "options": {
+        "A": "These trusts are always created over personalty and not over land",
+        "B": "Requiring writing for informally arising trusts would be unjust and would allow the Statute to be used as an instrument of fraud",
+        "C": "These trusts are exclusively governed by the Trustee Act 1893 which overrides the Statute of Frauds",
+        "D": "These trusts invariably arise in the context of commercial transactions where writing is impractical"
+      },
+      "correct_answer": "B",
+      "explanation": "Resulting, implied, and constructive trusts are excluded from the writing requirement because they arise by operation of law in informal contexts. Requiring writing for such trusts would be unjust — it would allow the Statute to be used as an instrument of fraud, enabling a person to take advantage of a trust arrangement and then deny it existed for want of writing."
+    },
+    {
+      "id": "EQL_M02_L02_Q17",
+      "question": "An FE-1 exam question describes a person who orally told their sibling 'I am holding my Dublin apartment on trust for you'. Which statement is CORRECT?",
+      "options": {
+        "A": "The declaration is valid as an express trust because the three certainties are likely satisfied",
+        "B": "The declaration requires writing to be enforceable as it concerns land under Section 4 of the Statute of Frauds",
+        "C": "The declaration is immediately effective as a self-declaration of trust over personalty",
+        "D": "The declaration is void because trusts of residential property can only be created by deed"
+      },
+      "correct_answer": "B",
+      "explanation": "The declaration concerns land (an apartment) and therefore falls within Section 4 of the Statute of Frauds Ireland 1695. It requires writing to be enforceable — though it is not void without writing, merely unenforceable. Without written evidence signed by the declarant, the trust of the apartment cannot be enforced."
+    },
+    {
+      "id": "EQL_M02_L02_Q18",
+      "question": "In an exam question combining certainty issues, what is the CORRECT sequence for analysis?",
+      "options": {
+        "A": "First assess formalities, then subject matter, then intention, then objects",
+        "B": "Work through all three certainties — intention, subject matter, objects — systematically before concluding",
+        "C": "Begin with objects as this is the most commonly deficient certainty",
+        "D": "Address only the most obviously deficient certainty to avoid overcomplicating the answer"
+      },
+      "correct_answer": "B",
+      "explanation": "In an FE-1 exam question combining certainty issues, the correct approach is to work through all three certainties — intention, subject matter, and objects — systematically before reaching a conclusion. Each certainty must be satisfied independently. A trust may fail for more than one reason, and a thorough answer demonstrates awareness of all potential deficiencies."
+    },
+    {
+      "id": "EQL_M02_L02_Q19",
+      "question": "Which of the following trusts is an express trust created by will (testamentary)?",
+      "options": {
+        "A": "A father declares himself trustee of shares for his child during his lifetime",
+        "B": "A testator leaves property to named trustees on trust for named beneficiaries under a will",
+        "C": "A court imposes a constructive trust on a solicitor who misused client funds",
+        "D": "A resulting trust arises when an express trust fails for uncertainty of objects"
+      },
+      "correct_answer": "B",
+      "explanation": "A testamentary express trust is created by will and takes effect on the testator's death. Option B describes a testator leaving property to named trustees on trust for named beneficiaries under a will — this is the classic testamentary express trust. Options A, C, and D describe other types of trusts (inter vivos express, constructive, and resulting respectively)."
+    },
+    {
+      "id": "EQL_M02_L02_Q20",
+      "question": "The rule against trusts for purposes is sometimes called 'the beneficiary principle'. Its practical effect is that a pure purpose trust — with no ascertainable beneficiaries — is:",
+      "options": {
+        "A": "Valid if the purpose is beneficial to the community",
+        "B": "Void unless it falls within the recognised exceptions or qualifies as a charitable trust",
+        "C": "Valid if the trustee agrees in writing to carry out the purpose",
+        "D": "Valid for any purpose provided it does not offend public policy"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the beneficiary principle, a pure purpose trust with no ascertainable beneficiaries is void unless it falls within the recognised anomalous exceptions (graves, monuments, specific animals, private masses) or qualifies as a charitable trust (enforced by the Attorney General). There is no general validity for purpose trusts — the default position is invalidity."
+    },
+    {
+      "id": "EQL_M02_L02_Q21",
+      "question": "A settlor transfers legal title of shares to a trustee but the trustee refuses to act. What is the legal position of the trust?",
+      "options": {
+        "A": "The trust fails because the trustee's acceptance is required before the trust is constituted",
+        "B": "The trust is constituted because legal title has passed to the trustee — equity will not allow a trust to fail for want of a trustee",
+        "C": "Legal title reverts to the settlor automatically if the trustee refuses to act",
+        "D": "The beneficiaries automatically become trustees in the trustee's place"
+      },
+      "correct_answer": "B",
+      "explanation": "Once legal title has been transferred to the trustee, the trust is constituted — equity will not allow a trust to fail for want of a trustee. The maxim is that equity will not allow a trust to fail for want of a trustee. If the named trustee refuses to act or dies, the court may appoint a substitute trustee rather than allow the trust to fail."
+    },
+    {
+      "id": "EQL_M02_L02_Q22",
+      "question": "Which of the following is NOT a valid basis for equity enforcing an oral trust of land notwithstanding the absence of writing under the Statute of Frauds?",
+      "options": {
+        "A": "The imposition of a constructive trust to prevent the Statute being used as an instrument of fraud",
+        "B": "Where the trust is a resulting trust arising by operation of law",
+        "C": "Where the oral trust is supported by consideration paid by the beneficiary",
+        "D": "Where subsequent acts of part performance render it unconscionable to deny the trust"
+      },
+      "correct_answer": "C",
+      "explanation": "The presence of consideration does not independently exempt an oral trust of land from the Statute of Frauds writing requirement. The recognised bases for equity enforcing such trusts without writing are: (1) constructive trust to prevent fraud on the Statute (Rochefoucauld v Boustead), (2) resulting or constructive trusts arising by operation of law (expressly excluded by Section 4), and (3) part performance. Consideration alone does not create a trust nor override the formality requirement."
+    }
+  ]
+}
