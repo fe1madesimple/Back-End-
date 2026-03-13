@@ -1,9 +1,21 @@
+// src/modules/content/service/lesson.service.ts
+
 import { prisma } from '@/shared/config';
 import { AppError } from '@/shared/utils';
-import { LessonDetailResponse, ModuleListResponse } from '../interface/lesson.interface';
+import {
+  LessonDetailResponse,
+  ModuleListResponse,
+  LessonMCQResponse,
+  GetLessonEssayResponse,
+  SubmitLessonEssayInput,
+  SubmitLessonEssayResponse,
+} from '../interface/lesson.interface';
 import achievementsService from '@/modules/achievement/service/achievements.service';
+import { gradeEssayWithClaude } from '@/modules/practise/service/practise.service';
 
-class Lesson {
+class LessonService {
+  // ─── Video & Time Tracking ────────────────────────────────────────────────
+
   async trackVideoProgress(
     userId: string,
     lessonId: string,
@@ -15,21 +27,12 @@ class Lesson {
       select: { id: true, videoDuration: true, moduleId: true },
     });
 
-    if (!lesson) {
-      throw new AppError('Lesson not found');
-    }
-
-    if (videoDuration && videoDuration <= 0) {
-      throw new AppError('Invalid video duration');
-    }
+    if (!lesson) throw new AppError('Lesson not found');
+    if (videoDuration && videoDuration <= 0) throw new AppError('Invalid video duration');
 
     const duration = videoDuration || lesson.videoDuration;
+    if (!duration) throw new AppError('Video duration not available');
 
-    if (!duration) {
-      throw new AppError('Video duration not available');
-    }
-
-    // ✅ SAVE VIDEO DURATION FIRST (before recalculation)
     if (videoDuration && !lesson.videoDuration) {
       await prisma.lesson.update({
         where: { id: lessonId },
@@ -50,9 +53,7 @@ class Lesson {
     const newTimeSpent = (existingProgress?.timeSpentSeconds || 0) + timeDelta;
 
     const updatedProgress = await prisma.userLessonProgress.upsert({
-      where: {
-        userId_lessonId: { userId, lessonId },
-      },
+      where: { userId_lessonId: { userId, lessonId } },
       create: {
         userId,
         lessonId,
@@ -71,48 +72,27 @@ class Lesson {
       },
     });
 
-    // ✅ NOW recalculate with videoDuration already saved
     await this.recalculateModuleProgress(userId, lesson.moduleId);
-
     return updatedProgress;
   }
 
   private async recalculateModuleProgress(userId: string, moduleId: string) {
     const lessons = await prisma.lesson.findMany({
       where: { moduleId, isPublished: true },
-      include: {
-        userProgress: {
-          where: { userId },
-        },
-      },
+      include: { userProgress: { where: { userId } } },
       orderBy: { order: 'asc' },
     });
 
     const totalLessons = lessons.length;
-
-    if (totalLessons === 0) {
-      return;
-    }
+    if (totalLessons === 0) return;
 
     const lessonWeight = 100 / totalLessons;
     let moduleProgressPercent = 0;
     let completedLessons = 0;
 
-    console.log('🔍 MODULE CALCULATION - Total lessons:', totalLessons);
-
     for (const lesson of lessons) {
       const userProgress = lesson.userProgress[0];
-
-      console.log(`📚 Lesson ${lesson.id}:`, {
-        hasProgress: !!userProgress,
-        isCompleted: userProgress?.isCompleted,
-        videoWatchedSeconds: userProgress?.videoWatchedSeconds,
-        videoDuration: lesson.videoDuration,
-      });
-
-      if (!userProgress) {
-        continue;
-      }
+      if (!userProgress) continue;
 
       if (userProgress.isCompleted) {
         moduleProgressPercent += lessonWeight;
@@ -122,11 +102,7 @@ class Lesson {
           100,
           (userProgress.videoWatchedSeconds / lesson.videoDuration) * 100
         );
-        const contribution = (lessonProgressPercent / 100) * lessonWeight;
-        console.log(
-          `  → Lesson progress: ${lessonProgressPercent.toFixed(2)}%, contributes: ${contribution.toFixed(2)}%`
-        );
-        moduleProgressPercent += contribution;
+        moduleProgressPercent += (lessonProgressPercent / 100) * lessonWeight;
       }
     }
 
@@ -139,18 +115,8 @@ class Lesson {
           ? 'IN_PROGRESS'
           : 'NOT_STARTED';
 
-    console.log('📊 MODULE RESULT:', {
-      moduleId,
-      moduleProgressPercent,
-      status,
-      completedLessons,
-      totalLessons,
-    });
-
     await prisma.userModuleProgress.upsert({
-      where: {
-        userId_moduleId: { userId, moduleId },
-      },
+      where: { userId_moduleId: { userId, moduleId } },
       create: {
         userId,
         moduleId,
@@ -173,9 +139,7 @@ class Lesson {
       select: { subjectId: true },
     });
 
-    if (module) {
-      await this.recalculateSubjectProgress(userId, module.subjectId);
-    }
+    if (module) await this.recalculateSubjectProgress(userId, module.subjectId);
 
     achievementsService
       .checkAllAchievements(userId)
@@ -185,46 +149,21 @@ class Lesson {
   private async recalculateSubjectProgress(userId: string, subjectId: string) {
     const modules = await prisma.module.findMany({
       where: { subjectId, isPublished: true },
-      include: {
-        userProgress: {
-          where: { userId },
-        },
-      },
+      include: { userProgress: { where: { userId } } },
     });
 
     const totalModules = modules.length;
-
-    if (totalModules === 0) {
-      return;
-    }
+    if (totalModules === 0) return;
 
     const moduleWeight = 100 / totalModules;
     let subjectProgressPercent = 0;
     let completedModules = 0;
 
-    console.log('🔍 SUBJECT CALCULATION - Total modules:', totalModules);
-
     for (const module of modules) {
       const moduleProgress = module.userProgress[0];
-
-      console.log(`📦 Module ${module.id}:`, {
-        hasProgress: !!moduleProgress,
-        progressPercent: moduleProgress?.progressPercent,
-        status: moduleProgress?.status,
-      });
-
-      if (!moduleProgress) {
-        continue;
-      }
-
-      const contribution = (moduleProgress.progressPercent / 100) * moduleWeight;
-      console.log(`  → Module contributes: ${contribution.toFixed(2)}%`);
-
-      subjectProgressPercent += contribution;
-
-      if (moduleProgress.status === 'COMPLETED') {
-        completedModules++;
-      }
+      if (!moduleProgress) continue;
+      subjectProgressPercent += (moduleProgress.progressPercent / 100) * moduleWeight;
+      if (moduleProgress.status === 'COMPLETED') completedModules++;
     }
 
     subjectProgressPercent = Math.round(subjectProgressPercent * 10) / 10;
@@ -236,24 +175,9 @@ class Lesson {
           ? 'IN_PROGRESS'
           : 'NOT_STARTED';
 
-    console.log('📊 SUBJECT RESULT:', {
-      subjectId,
-      subjectProgressPercent,
-      status,
-      completedModules,
-      totalModules,
-    });
-
     const allLessons = await prisma.lesson.findMany({
-      where: {
-        module: { subjectId },
-        isPublished: true,
-      },
-      include: {
-        userProgress: {
-          where: { userId },
-        },
-      },
+      where: { module: { subjectId }, isPublished: true },
+      include: { userProgress: { where: { userId } } },
     });
 
     const totalTimeSeconds = allLessons.reduce(
@@ -261,12 +185,8 @@ class Lesson {
       0
     );
 
-    console.log('⏱️ SUBJECT TOTAL TIME:', totalTimeSeconds, 'seconds');
-
     await prisma.userSubjectProgress.upsert({
-      where: {
-        userId_subjectId: { userId, subjectId },
-      },
+      where: { userId_subjectId: { userId, subjectId } },
       create: {
         userId,
         subjectId,
@@ -282,59 +202,30 @@ class Lesson {
         lastAccessedAt: new Date(),
       },
     });
-
-    console.log('✅ SUBJECT PROGRESS SAVED\n');
   }
 
   async trackTimeSpent(userId: string, lessonId: string, seconds: number) {
-    // Update lesson time
     await prisma.userLessonProgress.upsert({
-      where: {
-        userId_lessonId: { userId, lessonId },
-      },
-      create: {
-        userId,
-        lessonId,
-        timeSpentSeconds: seconds,
-      },
-      update: {
-        timeSpentSeconds: {
-          increment: seconds,
-        },
-      },
+      where: { userId_lessonId: { userId, lessonId } },
+      create: { userId, lessonId, timeSpentSeconds: seconds },
+      update: { timeSpentSeconds: { increment: seconds } },
     });
 
-    // Get lesson to find module and subject
     const lesson = await prisma.lesson.findUnique({
       where: { id: lessonId },
-      include: {
-        module: true,
-      },
+      include: { module: true },
     });
 
     if (lesson) {
-      // Update module time (not stored, but we'll update subject)
-      // Update subject total time
       await prisma.userSubjectProgress.upsert({
-        where: {
-          userId_subjectId: {
-            userId,
-            subjectId: lesson.module.subjectId,
-          },
-        },
-        create: {
-          userId,
-          subjectId: lesson.module.subjectId,
-          totalTimeSeconds: seconds,
-        },
-        update: {
-          totalTimeSeconds: {
-            increment: seconds,
-          },
-        },
+        where: { userId_subjectId: { userId, subjectId: lesson.module.subjectId } },
+        create: { userId, subjectId: lesson.module.subjectId, totalTimeSeconds: seconds },
+        update: { totalTimeSeconds: { increment: seconds } },
       });
     }
   }
+
+  // ─── getLessonById ────────────────────────────────────────────────────────
 
   async getLessonById(userId: string, lessonId: string): Promise<LessonDetailResponse> {
     const lesson = await prisma.lesson.findUnique({
@@ -342,23 +233,14 @@ class Lesson {
       include: {
         module: {
           include: {
-            subject: {
-              select: {
-                id: true,
-                name: true,
-              },
-            },
+            subject: { select: { id: true, name: true } },
           },
         },
-        userProgress: {
-          where: { userId },
-        },
+        userProgress: { where: { userId } },
       },
     });
 
-    if (!lesson) {
-      throw new AppError('Lesson not found');
-    }
+    if (!lesson) throw new AppError('Lesson not found');
 
     const userProgress = lesson.userProgress[0];
 
@@ -381,18 +263,11 @@ class Lesson {
     }
 
     const allModules = await prisma.module.findMany({
-      where: {
-        subjectId: lesson.module.subjectId,
-        isPublished: true,
-      },
+      where: { subjectId: lesson.module.subjectId, isPublished: true },
       include: {
         lessons: {
           where: { isPublished: true },
-          select: {
-            id: true,
-            title: true,
-            order: true,
-          },
+          select: { id: true, title: true, order: true },
           orderBy: { order: 'asc' },
         },
       },
@@ -402,7 +277,7 @@ class Lesson {
     return {
       id: lesson.id,
       title: lesson.title,
-      slug: lesson.slug,
+      slug: lesson.slug ?? null,
       content: lesson.content || null,
       videoUrl: lesson.videoUrl,
       videoDuration: lesson.videoDuration,
@@ -435,25 +310,18 @@ class Lesson {
     };
   }
 
+  // ─── getModulesBySubject ──────────────────────────────────────────────────
+
   async getModulesBySubject(userId: string, subjectId: string): Promise<ModuleListResponse> {
     const modules = await prisma.module.findMany({
-      where: {
-        subjectId,
-        isPublished: true,
-      },
+      where: { subjectId, isPublished: true },
       include: {
         lessons: {
           where: { isPublished: true },
-          select: {
-            id: true,
-            title: true,
-            order: true,
-          },
+          select: { id: true, title: true, order: true },
           orderBy: { order: 'asc' },
         },
-        userProgress: {
-          where: { userId },
-        },
+        userProgress: { where: { userId } },
       },
       orderBy: { order: 'asc' },
     });
@@ -474,13 +342,10 @@ class Lesson {
         return {
           id: module.id,
           name: module.name,
-          slug: module.slug,
+          slug: module.slug ?? null,
           order: module.order,
           status,
-          progress: {
-            completedLessons,
-            totalLessons,
-          },
+          progress: { completedLessons, totalLessons },
           lessons: module.lessons.map((lesson) => ({
             id: lesson.id,
             title: lesson.title,
@@ -490,6 +355,193 @@ class Lesson {
       }),
     };
   }
+
+  // ─── GET 7 MCQs for a lesson ──────────────────────────────────────────────
+
+  async getLessonMCQs(userId: string, lessonId: string): Promise<LessonMCQResponse> {
+    const lesson = await prisma.lesson.findUnique({
+      where: { id: lessonId, isPublished: true },
+      select: { id: true, title: true },
+    });
+
+    if (!lesson) throw new AppError('Lesson not found');
+
+    const allMCQs = await prisma.question.findMany({
+      where: { lessonId, type: 'MCQ', isPublished: true },
+      select: { id: true, text: true, options: true, points: true },
+    });
+
+    if (allMCQs.length === 0) {
+      throw new AppError('No MCQ questions available for this lesson');
+    }
+
+    const selected = allMCQs.sort(() => Math.random() - 0.5).slice(0, 7);
+
+    return {
+      lessonId: lesson.id,
+      lessonTitle: lesson.title,
+      questions: selected.map((q) => ({
+        id: q.id,
+        text: q.text,
+        options: q.options as Record<string, string>,
+        points: q.points,
+      })),
+    };
+  }
+
+  // ─── GET random essay question for lesson practice ────────────────────────
+  // Source: EssayQuestion model (the 747-question bank).
+  // Priority 1: questions linked directly to this lesson.
+  // Priority 2: any question from the same subject.
+
+  async getLessonEssayQuestion(userId: string, lessonId: string): Promise<GetLessonEssayResponse> {
+    const lesson = await prisma.lesson.findUnique({
+      where: { id: lessonId, isPublished: true },
+      select: {
+        id: true,
+        title: true,
+        order: true,
+        module: {
+          select: {
+            id: true,
+            name: true,
+            order: true,
+            subjectId: true,
+            subject: { select: { name: true } },
+          },
+        },
+      },
+    });
+
+    if (!lesson) throw new AppError('Lesson not found');
+
+    // Priority 1: EssayQuestions directly linked to this lesson
+    let essays = await prisma.essayQuestion.findMany({
+      where: { lessonId, isPublished: true },
+      select: { id: true, text: true, subject: true },
+    });
+
+    // Priority 2: any EssayQuestion from the same subject
+    if (essays.length === 0) {
+      essays = await prisma.essayQuestion.findMany({
+        where: {
+          isPublished: true,
+          subject: lesson.module.subject.name,
+        },
+        select: { id: true, text: true, subject: true },
+      });
+    }
+
+    if (essays.length === 0) {
+      throw new AppError('No essay questions available for this lesson');
+    }
+
+    const question = essays[Math.floor(Math.random() * essays.length)]!;
+
+    return {
+      lessonId: lesson.id,
+      lessonTitle: lesson.title,
+      subject: lesson.module.subject.name,
+      moduleOrder: lesson.module.order,
+      moduleName: lesson.module.name,
+      lessonOrder: lesson.order,
+      question: {
+        id: question.id,
+        text: question.text,
+        subject: question.subject,
+      },
+    };
+  }
+
+  // ─── SUBMIT single lesson essay ───────────────────────────────────────────
+  // Grades with Claude AI → saves EssayAttempt (source='LESSON_PRACTICE').
+  // Returns the COMPLETE review data in one response — no follow-up call needed.
+  // The frontend renders the review screen directly from this response.
+
+  async submitLessonEssay(
+    userId: string,
+    input: SubmitLessonEssayInput
+  ): Promise<SubmitLessonEssayResponse> {
+    const { lessonId, essayQuestionId, answerText } = input;
+
+    if (!answerText || answerText.trim().split(/\s+/).length < 20) {
+      throw new AppError('Answer is too short to grade');
+    }
+
+    const [lesson, essayQuestion] = await Promise.all([
+      prisma.lesson.findUnique({
+        where: { id: lessonId, isPublished: true },
+        select: { id: true, title: true },
+      }),
+      prisma.essayQuestion.findUnique({
+        where: { id: essayQuestionId },
+        select: { id: true, text: true, subject: true },
+      }),
+    ]);
+
+    if (!lesson) throw new AppError('Lesson not found');
+    if (!essayQuestion) throw new AppError('Essay question not found');
+
+    const startedAt = Date.now();
+
+    const grading = await gradeEssayWithClaude(
+      answerText,
+      essayQuestion.text,
+      essayQuestion.subject
+    );
+
+    const timeTakenSeconds = Math.floor((Date.now() - startedAt) / 1000);
+    const wordCount = answerText.trim().split(/\s+/).length;
+    const aiScore20 = Math.round((grading.score / 100) * 20);
+
+    // Save EssayAttempt — this is the history record
+    const attempt = await prisma.essayAttempt.create({
+      data: {
+        userId,
+        essayQuestionId,
+        answerText,
+        timeTakenSeconds,
+        wordCount,
+        aiScore: grading.score,
+        band: grading.band,
+        appPass: grading.score >= 80,
+        feedback: grading.feedback,
+        strengths: grading.strengths,
+        improvements: grading.improvements,
+        sampleAnswer: grading.sampleAnswer,
+        provider: 'anthropic',
+        model: 'claude-sonnet-4-20250514',
+        tokensUsed: grading.tokensUsed,
+        source: 'LESSON_PRACTICE',
+        simulationId: null,
+      } as any,
+      select: { id: true },
+    });
+
+    // Return everything the review screen needs — in one shot
+    return {
+      attemptId: attempt.id,
+      lessonId: lesson.id,
+      lessonTitle: lesson.title,
+      question: {
+        id: essayQuestion.id,
+        text: essayQuestion.text,
+        subject: essayQuestion.subject,
+      },
+      userAnswer: answerText,
+      aiScore: aiScore20,
+      scoreOutOf: 20,
+      band: grading.band,
+      appPass: grading.score >= 80,
+      passed: grading.score >= 50,
+      feedback: grading.feedback,
+      strengths: grading.strengths,
+      improvements: grading.improvements,
+      sampleAnswer: grading.sampleAnswer,
+      timeTakenSeconds,
+      wordCount,
+    };
+  }
 }
 
-export default new Lesson();
+export default new LessonService();
