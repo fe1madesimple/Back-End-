@@ -74,7 +74,7 @@ async function main() {
         order: 8,
       },
     }),
-  ]);
+  ]);    
 
   console.log('✅ Created 8 subjects');
 
