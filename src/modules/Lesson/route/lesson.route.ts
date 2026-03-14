@@ -142,32 +142,35 @@ lessonRouter.get('/mcq/results/:sessionId', protect, getQuizResults);
  */
 lessonRouter.post('/essay/submit', protect, submitLessonEssay);
 
-/**
- * @swagger
- * /api/v1/lessons/admin/mcqs:
- *   get:
- *     summary: Get all MCQ questions across all lessons (admin)
- *     tags: [Lessons]
- *     security:
- *       - bearerAuth: []
- *     responses:
- *       200:
- *         description: Full MCQ list with correct answers
- */
+
+
+// /**
+//  * @swagger
+//  * /api/v1/lessons/admin/mcqs:
+//  *   get:
+//  *     summary: Get all MCQ questions across all lessons (admin)
+//  *     tags: [Lessons]
+//  *     security:
+//  *       - bearerAuth: []
+//  *     responses:
+//  *       200:
+//  *         description: Full MCQ list with correct answers
+//  */
 lessonRouter.get('/admin/mcqs', protect, getAllMCQs);
 
-/**
- * @swagger
- * /api/v1/lessons/admin/essays:
- *   get:
- *     summary: Get all essay questions across all lessons (admin)
- *     tags: [Lessons]
- *     security:
- *       - bearerAuth: []
- *     responses:
- *       200:
- *         description: Full essay question list
- */
+
+// /**
+//  * @swagger
+//  * /api/v1/lessons/admin/essays:
+//  *   get:
+//  *     summary: Get all essay questions across all lessons (admin)
+//  *     tags: [Lessons]
+//  *     security:
+//  *       - bearerAuth: []
+//  *     responses:
+//  *       200:
+//  *         description: Full essay question list
+//  */
 lessonRouter.get('/admin/essays', protect, getAllEssayQuestions);
 
 
@@ -368,23 +371,25 @@ lessonRouter.get('/:id/essay', protect, getLessonEssayQuestion);
  */
 lessonRouter.get('/:id/essay/all', protect, getAllLessonEssayQuestions);
 
-/**
- * @swagger
- * /api/v1/lessons/subject/{subjectId}/modules:
- *   get:
- *     summary: Get all modules for a subject with user progress
- *     tags: [Lessons]
- *     security:
- *       - bearerAuth: []
- *     parameters:
- *       - in: path
- *         name: subjectId
- *         required: true
- *         schema: { type: string }
- *     responses:
- *       200:
- *         description: Module list with lessons and progress per module
- */
+
+
+// /**
+//  * @swagger
+//  * /api/v1/lessons/subject/{subjectId}/modules:
+//  *   get:
+//  *     summary: Get all modules for a subject with user progress
+//  *     tags: [Lessons]
+//  *     security:
+//  *       - bearerAuth: []
+//  *     parameters:
+//  *       - in: path
+//  *         name: subjectId
+//  *         required: true
+//  *         schema: { type: string }
+//  *     responses:
+//  *       200:
+//  *         description: Module list with lessons and progress per module
+//  */
 lessonRouter.get('/subject/:subjectId/modules', protect, getModulesBySubject);
 
 export default lessonRouter;

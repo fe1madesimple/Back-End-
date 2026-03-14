@@ -363,55 +363,71 @@ class LessonService {
   // Creates QuizSession immediately — returns sessionId + questions.
   // correctAnswer NOT exposed here, only revealed after submit in attemptMCQ.
 
-  async getLessonMCQs(userId: string, lessonId: string): Promise<LessonMCQResponse> {
-    const lesson = await prisma.lesson.findUnique({
-      where: { id: lessonId, isPublished: true },
-      select: { id: true, title: true, moduleId: true },
-    });
-
-    if (!lesson) throw new AppError('Lesson not found');
-
-    const allMCQs = await prisma.question.findMany({
-      where: { lessonId, type: 'MCQ', isPublished: true },
-      select: { id: true, text: true, options: true, points: true },
-    });
-
-    if (allMCQs.length === 0) {
-      throw new AppError('No MCQ questions available for this lesson');
-    }
-
-    const selected = allMCQs.sort(() => Math.random() - 0.5).slice(0, 7);
-    const totalQuestions = selected.length;
-
-    // Create QuizSession — stores questionIds so attemptMCQ needs no questionId from frontend
-    const session = await prisma.quizSession.create({
-      data: {
-        userId,
-        quizType: 'LESSON_MCQ',
-        totalQuestions,
-        lessonId: lesson.id,
-        moduleId: lesson.moduleId,
-        questionsAnswered: 0,
-        correctAnswers: 0,
-        totalTimeSeconds: 0,
-        isCompleted: false,
-        questionIds: selected.map((q) => q.id),
+  async getLessonMCQs(userId: string, lessonId: string): Promise<any> {
+  const lesson = await prisma.lesson.findUnique({
+    where: { id: lessonId, isPublished: true },
+    select: {
+      id: true,
+      title: true,
+      moduleId: true,
+      module: {
+        select: {
+          subject: { select: { name: true } },
+        },
       },
-    });   
-
-    return {
-      sessionId: session.id,
-      lessonId: lesson.id,
-      lessonTitle: lesson.title,
-      totalQuestions,
-      questions: selected.map((q) => ({
-        id: q.id,
-        text: q.text,
-        options: q.options as Record<string, string>,
-        points: q.points,
-      })),
-    };
+    },
+  });
+ 
+  if (!lesson) throw new AppError('Lesson not found');
+ 
+  const allMCQs = await prisma.question.findMany({
+    where: { lessonId, type: 'MCQ', isPublished: true },
+    select: { id: true, text: true, options: true, points: true },
+  });
+ 
+  if (allMCQs.length === 0) {
+    throw new AppError('No MCQ questions available for this lesson');
   }
+ 
+  // Shuffle and cap at 7 — order locked into session
+  const selected = allMCQs.sort(() => Math.random() - 0.5).slice(0, 7);
+  const totalQuestions = selected.length;
+ 
+  // Create session — questionIds stored in order, backend resolves from here on
+  const session = await prisma.quizSession.create({
+    data: {
+      userId,
+      quizType: 'LESSON_MCQ',
+      totalQuestions,
+      lessonId: lesson.id,
+      moduleId: lesson.moduleId,
+      questionsAnswered: 0,
+      correctAnswers: 0,
+      totalTimeSeconds: 0,
+      isCompleted: false,
+      questionIds: selected.map((q) => q.id),
+    },
+  });
+ 
+  // Return ONLY the first question
+  const firstQuestion = selected[0]!;
+ 
+  return {
+    sessionId:      session.id,
+    lessonId:       lesson.id,
+    lessonTitle:    lesson.title,
+    subject:        lesson.module.subject.name,
+    totalQuestions,
+    currentQuestion: 1,                         
+    isLast:          totalQuestions === 1,        
+    question: {
+      id:      firstQuestion.id,
+      text:    firstQuestion.text,
+      options: firstQuestion.options as Record<string, string>,
+      points:  firstQuestion.points,
+    },
+  };
+}
 
   // ─── attemptMCQ ───────────────────────────────────────────────────────────
   // Frontend sends: { sessionId, answer, timeTakenSeconds } — NO questionId.
