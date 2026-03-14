@@ -839,7 +839,7 @@ model PracticeSession {
   user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   subject     String
-  year        Int
+  year        Int?
   questionIds String[] // the 8 questions shown
 
   startedAt        DateTime  @default(now())
