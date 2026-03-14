@@ -539,7 +539,7 @@ Return ONLY valid JSON with this exact structure:
 }
 
 
-export async function failSimulation(userId: string, simulationId: string, reason: string) {
+export async function failSimulationService(userId: string, simulationId: string, reason: string) {
     const simulation = await prisma.simulation.findUnique({
       where: { id: simulationId },
       select: { id: true, userId: true, startedAt: true, endedAt: true },

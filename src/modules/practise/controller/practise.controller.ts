@@ -8,8 +8,10 @@ import {
   submitPracticeService,
   getPracticeResultsService,
   getPracticeAttemptReviewService,
+  failSimulationService
 } from '../service/practise.service';
 import { AppError } from '@/shared/utils';
+import { sendSuccess } from '@/shared/utils';
 
 export async function getPastQuestions(req: Request, res: Response) {
   try {
@@ -97,3 +99,17 @@ export async function getPracticeAttemptReview(req: Request, res: Response) {
     res.status(error.statusCode ?? 500).json({ success: false, message: error.message });
   }
 }
+
+export  async function failSimulation(req: Request, res: Response){
+  const userId = req.user!.user.id;
+  const { simulationId } = req.params;
+  if (!simulationId) throw new AppError('simulationId is required');
+
+  const { reason } = req.body;
+  if (!reason) throw new AppError('reason is required (WINDOW_BLUR | TIME_EXPIRED)');
+
+  const result = await failSimulationService(userId, simulationId, reason);
+
+
+  sendSuccess(res, 'Simulation failed', result);
+};
