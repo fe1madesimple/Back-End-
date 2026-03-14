@@ -10,6 +10,7 @@ import {
   submitPractice,
   getPracticeResults,
   getPracticeAttemptReview,
+  failSimulation
 } from '../controller/practise.controller';
 import {
   pastQuestionsQuerySchema,
@@ -226,5 +227,38 @@ practiceRouter.get(
   validate(attemptReviewSchema),
   getPracticeAttemptReview
 );
+
+
+/**
+ * @swagger
+ * /api/v1/simulations/{simulationId}/fail:
+ *   patch:
+ *     summary: Fail an active simulation
+ *     description: Called by the frontend when the user leaves the tab. Sets passed=false, records reason and elapsed time.
+ *     tags: [Simulations]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: simulationId
+ *         required: true
+ *         schema: { type: string }
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required: [reason]
+ *             properties:
+ *               reason:
+ *                 type: string
+ *                 enum: [WINDOW_BLUR, TIME_EXPIRED]
+ *     responses:
+ *       200:
+ *         description: Returns simulationId, failed=true, reason and totalTimeSeconds
+ */
+practiceRouter.patch('/:simulationId/fail', protect, failSimulation);
+
 
 export default practiceRouter;
