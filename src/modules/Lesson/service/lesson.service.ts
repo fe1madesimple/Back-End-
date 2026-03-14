@@ -5,7 +5,6 @@ import { AppError } from '@/shared/utils';
 import {
   LessonDetailResponse,
   ModuleListResponse,
-  LessonMCQResponse,
   MCQAttemptInput,
   MCQAttemptResponse,
   QuizResultsResponse,
