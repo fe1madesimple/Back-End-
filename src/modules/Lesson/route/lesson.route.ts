@@ -16,6 +16,7 @@ import {
   getAllLessonEssayQuestions,
   getAllMCQs,
   getAllEssayQuestions,
+  getNextQuestion,
 } from '../controller/lesson.controller';
 
 const lessonRouter = Router();
@@ -61,6 +62,71 @@ const lessonRouter = Router();
  *                 isLastQuestion: { type: boolean }
  */
 lessonRouter.post('/mcq/attempt', protect, attemptMCQ);
+
+/**
+ * @swagger
+ * /api/v1/lessons/mcq/next/{sessionId}/{index}:
+ *   get:
+ *     summary: Get next MCQ question by index
+ *     tags: [Lesson MCQ]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Called after user submits an answer and clicks "Continue To The Next Question".
+ *       Frontend passes the 0-based index of the NEXT question to show.
+ *
+ *       Flow:
+ *       - Start quiz → getLessonMCQs → returns index 0
+ *       - Submit Q1  → attemptMCQ
+ *       - Next       → getNextQuestion(sessionId, 1) → returns index 1
+ *       - Submit Q2  → attemptMCQ
+ *       - Next       → getNextQuestion(sessionId, 2) → returns index 2
+ *       - ...until attemptMCQ returns isLastQuestion: true
+ *       - View Results → getQuizResults(sessionId)
+ *     parameters:
+ *       - in: path
+ *         name: sessionId
+ *         required: true
+ *         schema: { type: string }
+ *         description: QuizSession ID from getLessonMCQs response
+ *       - in: path
+ *         name: index
+ *         required: true
+ *         schema: { type: integer, minimum: 1 }
+ *         description: 0-based index of the next question (so Q2 = index 1, Q3 = index 2)
+ *     responses:
+ *       200:
+ *         description: Next question returned
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 sessionId: { type: string }
+ *                 subject: { type: string }
+ *                 totalQuestions: { type: integer }
+ *                 currentQuestion:
+ *                   type: integer
+ *                   description: 1-based display number e.g. 2, 3, 4
+ *                 isLast:
+ *                   type: boolean
+ *                   description: true = frontend shows View Results button instead of Continue
+ *                 question:
+ *                   type: object
+ *                   properties:
+ *                     id: { type: string }
+ *                     text: { type: string }
+ *                     options:
+ *                       type: object
+ *                       additionalProperties: { type: string }
+ *                       example: { A: "Option A", B: "Option B", C: "Option C", D: "Option D" }
+ *                     points: { type: integer }
+ *       400:
+ *         description: Invalid index
+ *       404:
+ *         description: Session not found
+ */
+lessonRouter.get('/mcq/next/:sessionId/:index', protect, getNextQuestion);
 
 /**
  * @swagger
