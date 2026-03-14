@@ -157,7 +157,7 @@ class LessonService {
 
     const moduleWeight = 100 / totalModules;
     let subjectProgressPercent = 0;
-    let completedModules = 0;
+    let completedModules = 0;      
 
     for (const module of modules) {
       const moduleProgress = module.userProgress[0];
