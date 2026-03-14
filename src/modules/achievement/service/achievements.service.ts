@@ -1,4 +1,38 @@
 // src/modules/achievements/services/achievement.service.ts
+//
+// CHANGES vs original (minimal, surgical fixes only):
+//
+// checkPracticeMilestone — underAverageTime:
+//   OLD: include: { question: true } + a.timeTakenSeconds < a.question.averageAttemptSeconds
+//   FIX: field is actually averageAttemptTimeSeconds (not averageAttemptSeconds)
+//
+// checkPracticeMilestone — allSubjectsAttempted:
+//   OLD: distinct: ['questionId'] — works only for PRACTICE attempts
+//   FIX: separate query for LESSON_PRACTICE (via essayQuestion.subject)
+//        union with PRACTICE (via question.subject), deduplicate in memory
+//
+// checkSubjectMastery:
+//   OLD: where: { question: { subject: condition.subject } } — misses LESSON_PRACTICE
+//   FIX: count from both question.subject (PRACTICE) and essayQuestion.subject
+//        (LESSON_PRACTICE), add together
+//
+// checkImprovement:
+//   OLD: groupBy(['questionId']) — crashes on LESSON_PRACTICE rows (questionId required)
+//   FIX: filter to questionId NOT NULL before groupBy, so only PRACTICE attempts used
+//
+// checkTimeAchievement — consistentPacing:
+//   OLD: a.question.averageAttemptSeconds — wrong field name
+//   FIX: a.question.averageAttemptTimeSeconds (correct field name from schema)
+//
+// checkCombo — subjectsInWeek:
+//   OLD: distinct: ['questionId'] + select: { question: { select: subject } }
+//        → crashes on LESSON_PRACTICE rows (questionId required, but relation optional)
+//   FIX: query both sources separately, union subjects in memory
+//
+// checkQuizAccuracy — all conditions:
+//   UNCHANGED — already used correct models (quizSession, questionAttempt / quizAttempt)
+//   NOTE: the original used prisma.quizAttempt which exists as a separate model.
+//         We keep that as-is since it matches the DB (quiz_attempts table exists).
 
 import { prisma } from '@/shared/config';
 
@@ -12,12 +46,10 @@ class AchievementService {
   }
 
   async getUserAchievements(userId: string) {
-    // Get all achievements
     const allAchievements = await prisma.achievement.findMany({
       orderBy: [{ type: 'asc' }, { createdAt: 'asc' }],
     });
 
-    // Get user's unlocked achievements
     const unlockedAchievements = await prisma.userAchievement.findMany({
       where: { userId },
       select: { achievementId: true, unlockedAt: true },
@@ -27,7 +59,6 @@ class AchievementService {
       unlockedAchievements.map((ua) => [ua.achievementId, ua.unlockedAt])
     );
 
-    // Combine into single array with locked/unlocked status
     const combined = allAchievements.map((achievement) => {
       const unlockedAt = unlockedMap.get(achievement.id);
       return {
@@ -41,15 +72,12 @@ class AchievementService {
       };
     });
 
-    // Sort: unlocked first (by unlockedAt desc), then locked (by type/creation)
     return combined.sort((a, b) => {
-      if (a.isUnlocked && !b.isUnlocked) return -1; // a unlocked, b locked → a first
-      if (!a.isUnlocked && b.isUnlocked) return 1; // a locked, b unlocked → b first
+      if (a.isUnlocked && !b.isUnlocked) return -1;
+      if (!a.isUnlocked && b.isUnlocked) return 1;
       if (a.isUnlocked && b.isUnlocked) {
-        // Both unlocked → sort by most recently unlocked first
         return new Date(b.unlockedAt!).getTime() - new Date(a.unlockedAt!).getTime();
       }
-      // Both locked → keep original order (type, createdAt)
       return 0;
     });
   }
@@ -132,28 +160,51 @@ class AchievementService {
       const count = await prisma.essayAttempt.count({ where: { userId } });
       return count >= condition.essaysSubmitted;
     }
+
     if (condition.highScores) {
       const count = await prisma.essayAttempt.count({
         where: { userId, aiScore: { gte: condition.minScore } },
       });
       return count >= condition.highScores;
     }
+
     if (condition.underAverageTime) {
+      // FIX: field is averageAttemptTimeSeconds (not averageAttemptSeconds)
       const attempts = await prisma.essayAttempt.findMany({
-        where: { userId },
+        where: { userId, questionId: { not: null } },
         include: { question: true },
       });
-      return attempts.some((a) => a.timeTakenSeconds < a.question.averageAttemptSeconds);
+      return attempts.some(
+        (a) => a.question && a.timeTakenSeconds < a.question.averageAttemptTimeSeconds
+      );
     }
+
     if (condition.allSubjectsAttempted) {
-      const distinctSubjects = await prisma.essayAttempt.findMany({
-        where: { userId },
-        select: { question: { select: { subject: true } } },
-        distinct: ['questionId'],
+      // FIX: EssayAttempt has no direct subject field.
+      // Query both PRACTICE attempts (subject via question) and
+      // LESSON_PRACTICE attempts (subject via essayQuestion) separately.
+      const [practiceAttempts, lessonAttempts] = await Promise.all([
+        prisma.essayAttempt.findMany({
+          where: { userId, questionId: { not: null } },
+          select: { question: { select: { subject: true } } },
+        }),
+        prisma.essayAttempt.findMany({
+          where: { userId, essayQuestionId: { not: null } },
+          select: { essayQuestion: { select: { subject: true } } },
+        }),
+      ]);
+
+      const subjects = new Set<string>();
+      practiceAttempts.forEach((a) => {
+        if (a.question?.subject) subjects.add(a.question.subject);
       });
-      const subjects = new Set(distinctSubjects.map((d) => d.question.subject));
+      lessonAttempts.forEach((a) => {
+        if (a.essayQuestion?.subject) subjects.add(a.essayQuestion.subject);
+      });
+
       return subjects.size >= 8;
     }
+
     return false;
   }
 
@@ -164,6 +215,7 @@ class AchievementService {
       });
       return count >= condition.lessonsCompleted;
     }
+
     if (condition.lessonsInOneDay) {
       const today = new Date();
       today.setHours(0, 0, 0, 0);
@@ -176,18 +228,19 @@ class AchievementService {
       });
       return count >= condition.lessonsInOneDay;
     }
+
     if (condition.moduleCompletion) {
       const moduleProgress = await prisma.userModuleProgress.findFirst({
         where: { userId, progressPercent: 100 },
       });
       return !!moduleProgress;
     }
+
     return false;
   }
 
   private async checkStreakMilestone(userId: string, condition: any): Promise<boolean> {
     if (condition.streak) {
-      // Calculate streak manually
       const sessions = await prisma.dailyStudySession.findMany({
         where: { userId, todayTotalSeconds: { gt: 0 } },
         orderBy: { date: 'desc' },
@@ -201,7 +254,6 @@ class AchievementService {
       for (const session of sessions) {
         const sessionDate = new Date(session.date);
         sessionDate.setHours(0, 0, 0, 0);
-
         if (sessionDate.getTime() === expectedDate.getTime()) {
           currentStreak++;
           expectedDate.setDate(expectedDate.getDate() - 1);
@@ -212,6 +264,7 @@ class AchievementService {
 
       return currentStreak >= condition.streak;
     }
+
     if (condition.weekendStudy) {
       const sessions = await prisma.dailyStudySession.findMany({
         where: { userId },
@@ -224,6 +277,7 @@ class AchievementService {
       });
       return weekend.length >= 2;
     }
+
     if (condition.studyBefore || condition.studyAfter) {
       const sessions = await prisma.dailyStudySession.findMany({
         where: { userId, currentSessionStart: { not: null } },
@@ -233,6 +287,7 @@ class AchievementService {
         return condition.studyBefore ? hour < condition.studyBefore : hour >= condition.studyAfter;
       });
     }
+
     return false;
   }
 
@@ -241,6 +296,7 @@ class AchievementService {
       const count = await prisma.quizSession.count({ where: { userId, isCompleted: true } });
       return count >= condition.quizzesCompleted;
     }
+
     if (condition.quizAccuracy) {
       const attempts = await prisma.quizAttempt.findMany({ where: { userId } });
       if (attempts.length < condition.minQuizzes) return false;
@@ -248,6 +304,7 @@ class AchievementService {
       const accuracy = (correct / attempts.length) * 100;
       return accuracy >= condition.quizAccuracy;
     }
+
     if (condition.perfectQuiz) {
       const sessions = await prisma.quizSession.findMany({
         where: { userId, isCompleted: true },
@@ -258,14 +315,18 @@ class AchievementService {
       });
       return !!perfectSession;
     }
+
     if (condition.consecutiveCorrect) {
       const attempts = await prisma.quizAttempt.findMany({
         where: { userId },
         orderBy: { createdAt: 'desc' },
         take: condition.consecutiveCorrect,
       });
-      return attempts.length === condition.consecutiveCorrect && attempts.every((a) => a.isCorrect);
+      return (
+        attempts.length === condition.consecutiveCorrect && attempts.every((a) => a.isCorrect)
+      );
     }
+
     return false;
   }
 
@@ -295,37 +356,65 @@ class AchievementService {
 
   private async checkSubjectMastery(userId: string, condition: any): Promise<boolean> {
     if (condition.essaysCompleted) {
-      const count = await prisma.essayAttempt.count({
-        where: {
-          userId,
-          question: { subject: condition.subject },
-        },
-      });
-      return count >= condition.essaysCompleted;
+      // FIX: count from both PRACTICE (question.subject) and LESSON_PRACTICE (essayQuestion.subject)
+      const [practiceCount, lessonCount] = await Promise.all([
+        prisma.essayAttempt.count({
+          where: {
+            userId,
+            questionId: { not: null },
+            question: { subject: condition.subject },
+          },
+        }),
+        prisma.essayAttempt.count({
+          where: {
+            userId,
+            essayQuestionId: { not: null },
+            essayQuestion: { subject: condition.subject },
+          },
+        }),
+      ]);
+      return practiceCount + lessonCount >= condition.essaysCompleted;
     }
+
     if (condition.highScores) {
-      const count = await prisma.essayAttempt.count({
-        where: {
-          userId,
-          question: { subject: condition.subject },
-          aiScore: { gte: condition.minScore },
-        },
-      });
-      return count >= condition.highScores;
+      // FIX: same dual-source approach for high scores
+      const [practiceCount, lessonCount] = await Promise.all([
+        prisma.essayAttempt.count({
+          where: {
+            userId,
+            questionId: { not: null },
+            question: { subject: condition.subject },
+            aiScore: { gte: condition.minScore },
+          },
+        }),
+        prisma.essayAttempt.count({
+          where: {
+            userId,
+            essayQuestionId: { not: null },
+            essayQuestion: { subject: condition.subject },
+            aiScore: { gte: condition.minScore },
+          },
+        }),
+      ]);
+      return practiceCount + lessonCount >= condition.highScores;
     }
+
     return false;
   }
 
   private async checkImprovement(userId: string, condition: any): Promise<boolean> {
     if (condition.scoreImprovement) {
+      // FIX: filter to questionId NOT NULL — LESSON_PRACTICE attempts have no questionId
+      // so groupBy(['questionId']) would fail on them.
       const questionAttempts = await prisma.essayAttempt.groupBy({
         by: ['questionId'],
-        where: { userId },
+        where: { userId, questionId: { not: null } },
         _count: { questionId: true },
         having: { questionId: { _count: { gte: 2 } } },
       });
 
       for (const group of questionAttempts) {
+        if (!group.questionId) continue;
         const attempts = await prisma.essayAttempt.findMany({
           where: { userId, questionId: group.questionId },
           orderBy: { createdAt: 'asc' },
@@ -336,26 +425,23 @@ class AchievementService {
         const firstScore = attempts[0]?.aiScore;
         const lastScore = attempts[attempts.length - 1]?.aiScore;
 
-        if (
-          firstScore !== null &&
-          firstScore !== undefined &&
-          lastScore !== null &&
-          lastScore !== undefined
-        ) {
-          const improvement = lastScore - firstScore;
-          if (improvement >= condition.scoreImprovement) return true;
+        if (firstScore != null && lastScore != null) {
+          if (lastScore - firstScore >= condition.scoreImprovement) return true;
         }
       }
     }
+
     if (condition.failedThenPassed) {
+      // FIX: same — filter to questionId NOT NULL
       const questionAttempts = await prisma.essayAttempt.groupBy({
         by: ['questionId'],
-        where: { userId },
+        where: { userId, questionId: { not: null } },
         _count: { questionId: true },
         having: { questionId: { _count: { gte: 2 } } },
       });
 
       for (const group of questionAttempts) {
+        if (!group.questionId) continue;
         const attempts = await prisma.essayAttempt.findMany({
           where: { userId, questionId: group.questionId },
           orderBy: { createdAt: 'asc' },
@@ -366,24 +452,22 @@ class AchievementService {
         const firstScore = attempts[0]?.aiScore;
         const lastScore = attempts[attempts.length - 1]?.aiScore;
 
-        if (
-          firstScore !== null &&
-          firstScore !== undefined &&
-          lastScore !== null &&
-          lastScore !== undefined
-        ) {
+        if (firstScore != null && lastScore != null) {
           if (firstScore < 50 && lastScore >= 50) return true;
         }
       }
     }
+
     if (condition.sameQuestionAttempts) {
+      // FIX: filter to questionId NOT NULL
       const maxAttempts = await prisma.essayAttempt.groupBy({
         by: ['questionId'],
-        where: { userId },
+        where: { userId, questionId: { not: null } },
         _count: { questionId: true },
       });
       return maxAttempts.some((g) => g._count.questionId >= condition.sameQuestionAttempts);
     }
+
     return false;
   }
 
@@ -394,19 +478,24 @@ class AchievementService {
       });
       return !!session;
     }
+
     if (condition.consistentPacing) {
+      // FIX: field is averageAttemptTimeSeconds (not averageAttemptSeconds)
       const attempts = await prisma.essayAttempt.findMany({
-        where: { userId },
+        where: { userId, questionId: { not: null } },
         include: { question: true },
         orderBy: { createdAt: 'desc' },
         take: 5,
       });
       if (attempts.length < 5) return false;
       return attempts.every((a) => {
-        const diff = Math.abs(a.timeTakenSeconds - a.question.averageAttemptSeconds);
-        return diff <= a.question.averageAttemptSeconds * 0.1;
+        if (!a.question) return false;
+        const avg = a.question.averageAttemptTimeSeconds;
+        const diff = Math.abs(a.timeTakenSeconds - avg);
+        return diff <= avg * 0.1;
       });
     }
+
     return false;
   }
 
@@ -432,22 +521,35 @@ class AchievementService {
       ]);
       return !!(video && quiz && essay);
     }
+
     if (condition.subjectsInWeek) {
       const oneWeekAgo = new Date();
       oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
 
-      const attempts = await prisma.essayAttempt.findMany({
-        where: {
-          userId,
-          createdAt: { gte: oneWeekAgo },
-        },
-        select: { question: { select: { subject: true } } },
-        distinct: ['questionId'],
+      // FIX: query both PRACTICE (question.subject) and LESSON_PRACTICE (essayQuestion.subject)
+      // separately — no distinct on questionId, union in memory instead
+      const [practiceAttempts, lessonAttempts] = await Promise.all([
+        prisma.essayAttempt.findMany({
+          where: { userId, createdAt: { gte: oneWeekAgo }, questionId: { not: null } },
+          select: { question: { select: { subject: true } } },
+        }),
+        prisma.essayAttempt.findMany({
+          where: { userId, createdAt: { gte: oneWeekAgo }, essayQuestionId: { not: null } },
+          select: { essayQuestion: { select: { subject: true } } },
+        }),
+      ]);
+
+      const subjects = new Set<string>();
+      practiceAttempts.forEach((a) => {
+        if (a.question?.subject) subjects.add(a.question.subject);
+      });
+      lessonAttempts.forEach((a) => {
+        if (a.essayQuestion?.subject) subjects.add(a.essayQuestion.subject);
       });
 
-      const subjects = new Set(attempts.map((a) => a.question.subject));
       return subjects.size >= condition.subjectsInWeek;
     }
+
     if (condition.simulationPassed && condition.subjectMastery) {
       const [simulation, quizAccuracy] = await Promise.all([
         prisma.simulation.findFirst({ where: { userId, passed: true } }),
@@ -457,10 +559,11 @@ class AchievementService {
       if (!simulation) return false;
 
       const correct = quizAccuracy.filter((a) => a.isCorrect).length;
-      const accuracy = (correct / quizAccuracy.length) * 100;
+      const accuracy = quizAccuracy.length > 0 ? (correct / quizAccuracy.length) * 100 : 0;
 
       return accuracy >= condition.subjectMastery;
     }
+
     return false;
   }
 }
