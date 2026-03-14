@@ -157,7 +157,7 @@ class LessonService {
 
     const moduleWeight = 100 / totalModules;
     let subjectProgressPercent = 0;
-    let completedModules = 0;      
+    let completedModules = 0;
 
     for (const module of modules) {
       const moduleProgress = module.userProgress[0];
@@ -187,8 +187,20 @@ class LessonService {
 
     await prisma.userSubjectProgress.upsert({
       where: { userId_subjectId: { userId, subjectId } },
-      create: { userId, subjectId, progressPercent: subjectProgressPercent, status, totalTimeSeconds, lastAccessedAt: new Date() },
-      update: { progressPercent: subjectProgressPercent, status, totalTimeSeconds, lastAccessedAt: new Date() },
+      create: {
+        userId,
+        subjectId,
+        progressPercent: subjectProgressPercent,
+        status,
+        totalTimeSeconds,
+        lastAccessedAt: new Date(),
+      },
+      update: {
+        progressPercent: subjectProgressPercent,
+        status,
+        totalTimeSeconds,
+        lastAccessedAt: new Date(),
+      },
     });
   }
 
@@ -382,9 +394,7 @@ class LessonService {
   // Priority 1: questions linked directly to this lesson.
   // Priority 2: any question from the same subject.
 
-  async getLessonEssayQuestion(
-    lessonId: string
-  ): Promise<GetLessonEssayResponse> {
+  async getLessonEssayQuestion(lessonId: string): Promise<GetLessonEssayResponse> {
     const lesson = await prisma.lesson.findUnique({
       where: { id: lessonId, isPublished: true },
       select: {
@@ -546,7 +556,14 @@ class LessonService {
 
     const questions = await prisma.question.findMany({
       where: { lessonId, type: 'MCQ', isPublished: true },
-      select: { id: true, text: true, options: true, points: true, correctAnswer: true, explanation: true },
+      select: {
+        id: true,
+        text: true,
+        options: true,
+        points: true,
+        correctAnswer: true,
+        explanation: true,
+      },
       orderBy: { order: 'asc' },
     });
 
@@ -595,6 +612,66 @@ class LessonService {
         id: q.id,
         text: q.text,
         subject: q.subject,
+      })),
+    };
+  }
+
+  async getAllMCQs() {
+    const questions = await prisma.question.findMany({
+      where: { type: 'MCQ', isPublished: true, lessonId: { not: null } },
+      select: {
+        id: true,
+        text: true,
+        options: true,
+        points: true,
+        lessonId: true,
+        lesson: {
+          select: {
+            id: true,
+            title: true,
+            module: { select: { subject: { select: { name: true } } } },
+          },
+        },
+      },
+      orderBy: [{ lesson: { module: { order: 'asc' } } }, { order: 'asc' }],
+    });
+
+    return {
+      total: questions.length,
+      questions: questions.map((q) => ({
+        id: q.id,
+        text: q.text,
+        options: q.options as Record<string, string>,
+        points: q.points,
+        lessonId: q.lessonId,
+        lessonTitle: q.lesson?.title ?? null,
+        subject: q.lesson?.module?.subject?.name ?? null,
+      })),
+    };
+  }
+
+ 
+  async getAllEssayQuestions() {
+    const questions = await prisma.essayQuestion.findMany({
+      where: { isPublished: true },
+      select: {
+        id: true,
+        text: true,
+        subject: true,
+        lessonId: true,
+        lesson: { select: { id: true, title: true } },
+      },
+      orderBy: { createdAt: 'asc' },
+    });
+
+    return {
+      total: questions.length,
+      questions: questions.map((q) => ({
+        id: q.id,
+        text: q.text,
+        subject: q.subject,
+        lessonId: q.lessonId,
+        lessonTitle: q.lesson?.title ?? null,
       })),
     };
   }

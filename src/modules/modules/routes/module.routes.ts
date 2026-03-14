@@ -21,7 +21,7 @@ const moduleRouter = Router()
  *
  *       **Response includes:**
  *       - Module details
- *       - List of lessons with completion status
+ *       - List of lessons with completion status 
  *       - Video duration for each lesson
  *       - Watch progress for each lesson
  *     parameters:

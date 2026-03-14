@@ -163,75 +163,6 @@ lessonRouter.post('/essay/submit', protect, submitLessonEssay);
 
 /**
  * @swagger
- * /api/v1/lessons/{id}/progress/video:
- *   post:
- *     summary: Track video watch progress for a lesson
- *     tags: [Lessons]
- *     security:
- *       - bearerAuth: []
- *     description: |
- *       Called periodically as the student watches the lesson video.
- *       Marks lesson as completed once currentTime >= 90% of total duration.
- *       Triggers recalculation of module and subject progress.
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema: { type: string }
- *         description: Lesson ID
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             required: [currentTime]
- *             properties:
- *               currentTime:
- *                 type: number
- *                 description: Current video position in seconds
- *               videoDuration:
- *                 type: number
- *                 description: Total video duration in seconds (stored if not already set)
- *     responses:
- *       200:
- *         description: Progress tracked
- */
-lessonRouter.post('/:id/progress/video', protect, trackVideoProgress);
-
-/**
- * @swagger
- * /api/v1/lessons/{id}/progress/time:
- *   post:
- *     summary: Increment time spent on a lesson
- *     tags: [Lessons]
- *     security:
- *       - bearerAuth: []
- *     description: Adds the given seconds to the user's time spent on this lesson and subject.
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema: { type: string }
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             required: [seconds]
- *             properties:
- *               seconds:
- *                 type: integer
- *                 description: Seconds to add
- *     responses:
- *       200:
- *         description: Time tracked successfully
- */
-lessonRouter.post('/:id/progress/time', protect, trackTimeSpent);
-
-/**
- * @swagger
  * /api/v1/lessons/{id}:
  *   get:
  *     summary: Get full lesson detail — video, transcript, progress, sidebar
@@ -391,6 +322,75 @@ lessonRouter.get('/:id/essay', protect, getLessonEssayQuestion);
 
 /**
  * @swagger
+ * /api/v1/lessons/{id}/track-video:
+ *   post:
+ *     summary: Track video watch progress for a lesson
+ *     tags: [Lessons]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Called periodically as the student watches the lesson video.
+ *       Marks lesson as completed once currentTime >= 90% of total duration.
+ *       Triggers recalculation of module and subject progress.
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema: { type: string }
+ *         description: Lesson ID
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required: [currentTime]
+ *             properties:
+ *               currentTime:
+ *                 type: number
+ *                 description: Current video position in seconds
+ *               videoDuration:
+ *                 type: number
+ *                 description: Total video duration in seconds (stored if not already set)
+ *     responses:
+ *       200:
+ *         description: Progress tracked
+ */
+lessonRouter.post('/:id/track-video', protect, trackVideoProgress);
+
+/**
+ * @swagger
+ * /api/v1/lessons/{id}/track-time:
+ *   post:
+ *     summary: Increment time spent on a lesson
+ *     tags: [Lessons]
+ *     security:
+ *       - bearerAuth: []
+ *     description: Adds the given seconds to the user's time spent on this lesson and subject.
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema: { type: string }
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required: [seconds]
+ *             properties:
+ *               seconds:
+ *                 type: integer
+ *                 description: Seconds to add
+ *     responses:
+ *       200:
+ *         description: Time tracked successfully
+ */
+lessonRouter.post('/:id/track-time', protect, trackTimeSpent);
+
+/**
+ * @swagger
  * /api/v1/lessons/{id}/mcq/all:
  *   get:
  *     summary: Get ALL MCQ questions for a lesson (no cap)
@@ -474,5 +474,6 @@ lessonRouter.get('/:id/mcq/all', protect, getAllLessonMCQs);
  *                       subject: { type: string }
  */
 lessonRouter.get('/:id/essay/all', protect, getAllLessonEssayQuestions);
+
 
 export default lessonRouter;
