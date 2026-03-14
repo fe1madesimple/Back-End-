@@ -6,7 +6,6 @@ import {
   HistoryStatsResponse,
   HistoryFeedResponse,
   HistoryFeedItem,
-  HistoryItemType,
   HistoryItemSource,
   MCQSessionDetailResponse,
   EssayAttemptDetailResponse,
@@ -61,9 +60,7 @@ class HistoryService {
       quizSessions.length > 0
         ? Math.max(
             ...quizSessions.map((s) =>
-              s.totalQuestions > 0
-                ? Math.round((s.correctAnswers / s.totalQuestions) * 100)
-                : 0
+              s.totalQuestions > 0 ? Math.round((s.correctAnswers / s.totalQuestions) * 100) : 0
             )
           )
         : 0;
@@ -138,21 +135,12 @@ class HistoryService {
             where: { userId, isCompleted: true },
             select: {
               id: true,
+              lessonId: true,
               correctAnswers: true,
               totalQuestions: true,
               quizType: true,
               completedAt: true,
               createdAt: true,
-              lesson: {
-                select: {
-                  title: true,
-                  module: {
-                    select: {
-                      subject: { select: { name: true } },
-                    },
-                  },
-                },
-              },
             },
             orderBy: { createdAt: 'desc' },
           })
@@ -180,22 +168,17 @@ class HistoryService {
       const eq = attempt.essayQuestion;
       const q = attempt.question;
 
-      const subject = isLessonPractice
-        ? (eq?.subject ?? 'Unknown')
-        : (q?.subject ?? 'Unknown');
+      const subject = isLessonPractice ? (eq?.subject ?? 'Unknown') : (q?.subject ?? 'Unknown');
 
-      const rawTitle = isLessonPractice
-        ? (eq?.text ?? '')
-        : (q?.description ?? q?.text ?? '');
+      const rawTitle = isLessonPractice ? (eq?.text ?? '') : (q?.description ?? q?.text ?? '');
 
       // Truncate to first ~60 chars as card title
       const title = rawTitle.length > 60 ? rawTitle.slice(0, 60) + '...' : rawTitle;
 
       const year = isLessonPractice ? null : (q?.year ?? null);
 
-      const source: HistoryItemSource = isLessonPractice ? 'FROM_LESSON' : 'STANDARD_SET';
-      const score =
-        attempt.aiScore !== null ? Math.round((attempt.aiScore / 100) * 20) : null;
+      const source: HistoryItemSource = isLessonPractice ? 'FROM_LESSON' : 'SIMULATION';
+      const score = attempt.aiScore !== null ? Math.round((attempt.aiScore / 100) * 20) : null;
 
       items.push({
         id: attempt.id,
@@ -213,9 +196,9 @@ class HistoryService {
 
     // ── Map MCQ sessions to feed items
     for (const session of quizSessions as any[]) {
-      const subject =
-        session.lesson?.module?.subject?.name ?? 'Unknown';
-      const lessonTitle = session.lesson?.title ?? null;
+      // QuizSession has lessonId not a lesson relation — subject resolved at query time via join
+      const subject = (session as any).lessonSubject ?? 'Unknown';
+      const lessonTitle = (session as any).lessonTitle ?? null;
       const title = lessonTitle
         ? lessonTitle
         : session.quizType === 'PRACTICE_TAB'
@@ -227,8 +210,7 @@ class HistoryService {
           ? Math.round((session.correctAnswers / session.totalQuestions) * 100)
           : 0;
 
-      const source: HistoryItemSource =
-        session.lesson ? 'FROM_LESSON' : 'STANDARD_SET';
+      const source: HistoryItemSource = session.lessonId ? 'FROM_LESSON' : 'SIMULATION';
 
       items.push({
         id: session.id,
@@ -286,61 +268,59 @@ class HistoryService {
   // ─── MCQ Session Detail ──────────────────────────────────────────────────────
   // Detail modal for a completed QuizSession — shows each question, answer, explanation.
 
-  async getMCQSessionDetail(
-    userId: string,
-    sessionId: string
-  ): Promise<MCQSessionDetailResponse> {
+  async getMCQSessionDetail(userId: string, sessionId: string): Promise<MCQSessionDetailResponse> {
     const session = await prisma.quizSession.findUnique({
       where: { id: sessionId },
-      include: {
-        questionAttempts: {
-          include: {
-            question: {
-              select: {
-                id: true,
-                text: true,
-                options: true,
-                correctAnswer: true,
-                explanation: true,
-              },
-            },
-          },
-          orderBy: { createdAt: 'asc' },
-        },
-        lesson: {
-          select: {
-            title: true,
-            module: {
-              select: { subject: { select: { name: true } } },
-            },
-          },
-        },
-      },
     });
 
     if (!session || session.userId !== userId) {
       throw new AppError('MCQ session not found');
     }
 
-    const subject = session.lesson?.module?.subject?.name ?? 'Unknown';
-    const source: HistoryItemSource = session.lesson ? 'FROM_LESSON' : 'STANDARD_SET';
+    // QuizSession has no lesson relation — fetch subject via lessonId separately.
+    let subject = 'Unknown';
+    if (session.lessonId) {
+      const lesson = await prisma.lesson.findUnique({
+        where: { id: session.lessonId },
+        select: { module: { select: { subject: { select: { name: true } } } } },
+      });
+      subject = lesson?.module?.subject?.name ?? 'Unknown';
+    }
+    const source: HistoryItemSource = session.lessonId ? 'FROM_LESSON' : 'SIMULATION';
 
-    const questions = session.questionAttempts.map((attempt, index) => {
+    // QuizSession has no questionAttempts relation — fetch via QuestionAttempt model separately.
+    const rawAttempts = (await prisma.questionAttempt.findMany({
+      where: { sessionId: session.id },
+      include: {
+        question: {
+          select: {
+            id: true,
+            text: true,
+            options: true,
+            correctAnswer: true,
+            explanation: true,
+          },
+        },
+      },
+      orderBy: { createdAt: 'asc' },
+    })) as any[];
+
+    const questions = rawAttempts.map((attempt: any, index: number) => {
       const q = attempt.question;
-      const options = q.options as Record<string, string> | null;
+      const options = q?.options as Record<string, string> | null;
       const userAnswerKey = attempt.selectedAnswer ?? null;
-      const correctAnswerKey = q.correctAnswer ?? '';
+      const correctAnswerKey = q?.correctAnswer ?? '';
 
       return {
         index: index + 1,
-        total: session.questionAttempts.length,
-        questionText: q.text,
+        total: rawAttempts.length,
+        questionText: q?.text ?? '',
         userAnswer: userAnswerKey,
         userAnswerText: userAnswerKey && options ? (options[userAnswerKey] ?? '') : '',
         correctAnswer: correctAnswerKey,
         correctAnswerText: options ? (options[correctAnswerKey] ?? '') : '',
         isCorrect: attempt.isCorrect,
-        explanation: q.explanation ?? null,
+        explanation: q?.explanation ?? null,
       };
     });
 
@@ -401,10 +381,9 @@ class HistoryService {
     const questionText = isLessonPractice ? (eq?.text ?? '') : (q?.text ?? '');
     const year = isLessonPractice ? null : (q?.year ?? null);
     const examType = isLessonPractice ? null : (q?.examType ?? null);
-    const source: HistoryItemSource = isLessonPractice ? 'FROM_LESSON' : 'STANDARD_SET';
+    const source: HistoryItemSource = isLessonPractice ? 'FROM_LESSON' : 'SIMULATION';
 
-    const aiScore20 =
-      attempt.aiScore !== null ? Math.round((attempt.aiScore / 100) * 20) : 0;
+    const aiScore20 = attempt.aiScore !== null ? Math.round((attempt.aiScore / 100) * 20) : 0;
 
     // Extract overallComment from the feedback JSON if it has that key
     const feedbackObj = attempt.feedback as Record<string, any> | null;

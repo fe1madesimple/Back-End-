@@ -170,10 +170,10 @@ class AchievementService {
 
     if (condition.underAverageTime) {
       // FIX: field is averageAttemptTimeSeconds (not averageAttemptSeconds)
-      const attempts = await prisma.essayAttempt.findMany({
-        where: { userId, questionId: { not: null } },
+      const attempts = (await prisma.essayAttempt.findMany({
+        where: { userId },
         include: { question: true },
-      });
+      })) as any[];
       return attempts.some(
         (a) => a.question && a.timeTakenSeconds < a.question.averageAttemptTimeSeconds
       );
@@ -183,16 +183,16 @@ class AchievementService {
       // FIX: EssayAttempt has no direct subject field.
       // Query both PRACTICE attempts (subject via question) and
       // LESSON_PRACTICE attempts (subject via essayQuestion) separately.
-      const [practiceAttempts, lessonAttempts] = await Promise.all([
+      const [practiceAttempts, lessonAttempts] = (await Promise.all([
         prisma.essayAttempt.findMany({
-          where: { userId, questionId: { not: null } },
+          where: { userId },
           select: { question: { select: { subject: true } } },
         }),
         prisma.essayAttempt.findMany({
           where: { userId, essayQuestionId: { not: null } },
           select: { essayQuestion: { select: { subject: true } } },
         }),
-      ]);
+      ])) as [any[], any[]];
 
       const subjects = new Set<string>();
       practiceAttempts.forEach((a) => {
@@ -322,9 +322,7 @@ class AchievementService {
         orderBy: { createdAt: 'desc' },
         take: condition.consecutiveCorrect,
       });
-      return (
-        attempts.length === condition.consecutiveCorrect && attempts.every((a) => a.isCorrect)
-      );
+      return attempts.length === condition.consecutiveCorrect && attempts.every((a) => a.isCorrect);
     }
 
     return false;
@@ -361,7 +359,6 @@ class AchievementService {
         prisma.essayAttempt.count({
           where: {
             userId,
-            questionId: { not: null },
             question: { subject: condition.subject },
           },
         }),
@@ -382,7 +379,6 @@ class AchievementService {
         prisma.essayAttempt.count({
           where: {
             userId,
-            questionId: { not: null },
             question: { subject: condition.subject },
             aiScore: { gte: condition.minScore },
           },
@@ -408,7 +404,7 @@ class AchievementService {
       // so groupBy(['questionId']) would fail on them.
       const questionAttempts = await prisma.essayAttempt.groupBy({
         by: ['questionId'],
-        where: { userId, questionId: { not: null } },
+        where: { userId },
         _count: { questionId: true },
         having: { questionId: { _count: { gte: 2 } } },
       });
@@ -435,7 +431,7 @@ class AchievementService {
       // FIX: same — filter to questionId NOT NULL
       const questionAttempts = await prisma.essayAttempt.groupBy({
         by: ['questionId'],
-        where: { userId, questionId: { not: null } },
+        where: { userId },
         _count: { questionId: true },
         having: { questionId: { _count: { gte: 2 } } },
       });
@@ -462,10 +458,12 @@ class AchievementService {
       // FIX: filter to questionId NOT NULL
       const maxAttempts = await prisma.essayAttempt.groupBy({
         by: ['questionId'],
-        where: { userId, questionId: { not: null } },
+        where: { userId },
         _count: { questionId: true },
       });
-      return maxAttempts.some((g) => g._count.questionId >= condition.sameQuestionAttempts);
+      return maxAttempts.some(
+        (g) => (g._count as any)?.questionId >= condition.sameQuestionAttempts
+      );
     }
 
     return false;
@@ -481,12 +479,12 @@ class AchievementService {
 
     if (condition.consistentPacing) {
       // FIX: field is averageAttemptTimeSeconds (not averageAttemptSeconds)
-      const attempts = await prisma.essayAttempt.findMany({
-        where: { userId, questionId: { not: null } },
+      const attempts = (await prisma.essayAttempt.findMany({
+        where: { userId },
         include: { question: true },
         orderBy: { createdAt: 'desc' },
         take: 5,
-      });
+      })) as any[];
       if (attempts.length < 5) return false;
       return attempts.every((a) => {
         if (!a.question) return false;
@@ -528,16 +526,16 @@ class AchievementService {
 
       // FIX: query both PRACTICE (question.subject) and LESSON_PRACTICE (essayQuestion.subject)
       // separately — no distinct on questionId, union in memory instead
-      const [practiceAttempts, lessonAttempts] = await Promise.all([
+      const [practiceAttempts, lessonAttempts] = (await Promise.all([
         prisma.essayAttempt.findMany({
-          where: { userId, createdAt: { gte: oneWeekAgo }, questionId: { not: null } },
+          where: { userId, createdAt: { gte: oneWeekAgo } },
           select: { question: { select: { subject: true } } },
         }),
         prisma.essayAttempt.findMany({
           where: { userId, createdAt: { gte: oneWeekAgo }, essayQuestionId: { not: null } },
           select: { essayQuestion: { select: { subject: true } } },
         }),
-      ]);
+      ])) as [any[], any[]];
 
       const subjects = new Set<string>();
       practiceAttempts.forEach((a) => {

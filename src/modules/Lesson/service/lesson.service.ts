@@ -346,7 +346,7 @@ class LessonService {
 
   // ─── GET 7 MCQs for a lesson ──────────────────────────────────────────────
 
-  async getLessonMCQs(userId: string, lessonId: string): Promise<LessonMCQResponse> {
+  async getLessonMCQs(lessonId: string): Promise<LessonMCQResponse> {
     const lesson = await prisma.lesson.findUnique({
       where: { id: lessonId, isPublished: true },
       select: { id: true, title: true },
@@ -383,7 +383,6 @@ class LessonService {
   // Priority 2: any question from the same subject.
 
   async getLessonEssayQuestion(
-    userId: string,
     lessonId: string
   ): Promise<GetLessonEssayResponse> {
     const lesson = await prisma.lesson.findUnique({
@@ -537,7 +536,7 @@ class LessonService {
   // ─── GET all MCQs for a lesson (full list, no cap) ────────────────────────
   // Used for admin/debug or if frontend needs the complete set.
 
-  async getAllLessonMCQs(userId: string, lessonId: string) {
+  async getAllLessonMCQs(lessonId: string) {
     const lesson = await prisma.lesson.findUnique({
       where: { id: lessonId, isPublished: true },
       select: { id: true, title: true },
@@ -569,7 +568,7 @@ class LessonService {
   // ─── GET all essay questions for a lesson (full list) ────────────────────
   // Returns all EssayQuestions linked to this lesson from the bank.
 
-  async getAllLessonEssayQuestions(userId: string, lessonId: string) {
+  async getAllLessonEssayQuestions(lessonId: string) {
     const lesson = await prisma.lesson.findUnique({
       where: { id: lessonId, isPublished: true },
       select: {

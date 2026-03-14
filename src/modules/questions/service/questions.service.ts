@@ -1,21 +1,23 @@
+
+
 import { prisma } from '@/shared/config';
 import { AppError } from '@/shared/utils';
-import { MCQAttemptInput } from '@/modules/practise/interface/practise.interface';
+import { MCQAttemptInput } from '../interface/question.interface';
 import achievementsService from '@/modules/achievement/service/achievements.service';
 
-// const anthropic = new Anthropic({
-//   apiKey: process.env.CLAUDE_API_KEY!,
-// });
-
-class Questions {
+class QuestionsService {
   async getModuleQuestions(moduleId: string) {
+    // FIX: Question.moduleId no longer exists — filter via lesson relation instead
     const questions = await prisma.question.findMany({
       where: {
-        moduleId,
+        lesson: { moduleId },
         type: 'MCQ',
         isPublished: true,
       },
-      orderBy: { order: 'asc' },
+      orderBy: [
+        { lesson: { order: 'asc' } }, // lesson order within the module
+        { order: 'asc' },             // question order within the lesson
+      ],
       select: {
         id: true,
         text: true,
@@ -77,4 +79,4 @@ class Questions {
   }
 }
 
-export default new Questions();
+export default new QuestionsService();
