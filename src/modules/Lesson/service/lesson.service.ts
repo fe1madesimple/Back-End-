@@ -187,20 +187,8 @@ class LessonService {
 
     await prisma.userSubjectProgress.upsert({
       where: { userId_subjectId: { userId, subjectId } },
-      create: {
-        userId,
-        subjectId,
-        progressPercent: subjectProgressPercent,
-        status,
-        totalTimeSeconds,
-        lastAccessedAt: new Date(),
-      },
-      update: {
-        progressPercent: subjectProgressPercent,
-        status,
-        totalTimeSeconds,
-        lastAccessedAt: new Date(),
-      },
+      create: { userId, subjectId, progressPercent: subjectProgressPercent, status, totalTimeSeconds, lastAccessedAt: new Date() },
+      update: { progressPercent: subjectProgressPercent, status, totalTimeSeconds, lastAccessedAt: new Date() },
     });
   }
 
@@ -394,7 +382,10 @@ class LessonService {
   // Priority 1: questions linked directly to this lesson.
   // Priority 2: any question from the same subject.
 
-  async getLessonEssayQuestion(userId: string, lessonId: string): Promise<GetLessonEssayResponse> {
+  async getLessonEssayQuestion(
+    userId: string,
+    lessonId: string
+  ): Promise<GetLessonEssayResponse> {
     const lesson = await prisma.lesson.findUnique({
       where: { id: lessonId, isPublished: true },
       select: {
@@ -540,6 +531,72 @@ class LessonService {
       sampleAnswer: grading.sampleAnswer,
       timeTakenSeconds,
       wordCount,
+    };
+  }
+
+  // ─── GET all MCQs for a lesson (full list, no cap) ────────────────────────
+  // Used for admin/debug or if frontend needs the complete set.
+
+  async getAllLessonMCQs(userId: string, lessonId: string) {
+    const lesson = await prisma.lesson.findUnique({
+      where: { id: lessonId, isPublished: true },
+      select: { id: true, title: true },
+    });
+
+    if (!lesson) throw new AppError('Lesson not found');
+
+    const questions = await prisma.question.findMany({
+      where: { lessonId, type: 'MCQ', isPublished: true },
+      select: { id: true, text: true, options: true, points: true, correctAnswer: true, explanation: true },
+      orderBy: { order: 'asc' },
+    });
+
+    return {
+      lessonId: lesson.id,
+      lessonTitle: lesson.title,
+      total: questions.length,
+      questions: questions.map((q) => ({
+        id: q.id,
+        text: q.text,
+        options: q.options as Record<string, string>,
+        points: q.points,
+        correctAnswer: q.correctAnswer,
+        explanation: q.explanation,
+      })),
+    };
+  }
+
+  // ─── GET all essay questions for a lesson (full list) ────────────────────
+  // Returns all EssayQuestions linked to this lesson from the bank.
+
+  async getAllLessonEssayQuestions(userId: string, lessonId: string) {
+    const lesson = await prisma.lesson.findUnique({
+      where: { id: lessonId, isPublished: true },
+      select: {
+        id: true,
+        title: true,
+        module: { select: { subject: { select: { name: true } } } },
+      },
+    });
+
+    if (!lesson) throw new AppError('Lesson not found');
+
+    const questions = await prisma.essayQuestion.findMany({
+      where: { lessonId, isPublished: true },
+      select: { id: true, text: true, subject: true },
+      orderBy: { createdAt: 'asc' },
+    });
+
+    return {
+      lessonId: lesson.id,
+      lessonTitle: lesson.title,
+      subject: lesson.module.subject.name,
+      total: questions.length,
+      questions: questions.map((q) => ({
+        id: q.id,
+        text: q.text,
+        subject: q.subject,
+      })),
     };
   }
 }

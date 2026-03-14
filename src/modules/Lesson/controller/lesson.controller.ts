@@ -87,3 +87,19 @@ export const submitLessonEssay = asyncHandler(async (req: Request, res: Response
   // the review screen directly from this response.
   sendSuccess(res, 'Essay graded', result);
 });
+
+export const getAllLessonMCQs = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { id } = req.params;
+  if (!id) throw new AppError('lesson id is required');
+  const result = await lessonService.getAllLessonMCQs(userId, id);
+  sendSuccess(res, 'All MCQ questions retrieved', result);
+});
+
+export const getAllLessonEssayQuestions = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { id } = req.params;
+  if (!id) throw new AppError('lesson id is required');
+  const result = await lessonService.getAllLessonEssayQuestions(userId, id);
+  sendSuccess(res, 'All essay questions retrieved', result);
+});

@@ -10,6 +10,8 @@ import {
   getLessonMCQs,
   getLessonEssayQuestion,
   submitLessonEssay,
+  getAllLessonMCQs,
+  getAllLessonEssayQuestions,
 } from '../controller/lesson.controller';
 
 const lessonRouter = Router();
@@ -386,5 +388,91 @@ lessonRouter.get('/:id/mcq', protect, getLessonMCQs);
  *                     subject: { type: string }
  */
 lessonRouter.get('/:id/essay', protect, getLessonEssayQuestion);
+
+/**
+ * @swagger
+ * /api/v1/lessons/{id}/mcq/all:
+ *   get:
+ *     summary: Get ALL MCQ questions for a lesson (no cap)
+ *     tags: [Lessons]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Returns every published MCQ question linked to this lesson, ordered by question order.
+ *       Unlike GET /lessons/:id/mcq which caps at 7 and randomises,
+ *       this returns the complete set — useful for admin review or frontend caching.
+ *       Includes correctAnswer and explanation fields.
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema: { type: string }
+ *     responses:
+ *       200:
+ *         description: All MCQ questions for this lesson
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 lessonId: { type: string }
+ *                 lessonTitle: { type: string }
+ *                 total: { type: integer }
+ *                 questions:
+ *                   type: array
+ *                   items:
+ *                     type: object
+ *                     properties:
+ *                       id: { type: string }
+ *                       text: { type: string }
+ *                       options:
+ *                         type: object
+ *                         additionalProperties: { type: string }
+ *                       points: { type: integer }
+ *                       correctAnswer: { type: string }
+ *                       explanation: { type: string, nullable: true }
+ */
+lessonRouter.get('/:id/mcq/all', protect, getAllLessonMCQs);
+
+/**
+ * @swagger
+ * /api/v1/lessons/{id}/essay/all:
+ *   get:
+ *     summary: Get ALL essay questions for a lesson from the question bank
+ *     tags: [Lessons]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Returns every published EssayQuestion from the dedicated essay bank
+ *       that is linked directly to this lesson (by lessonId).
+ *       Unlike GET /lessons/:id/essay which picks one at random,
+ *       this returns the complete set.
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema: { type: string }
+ *     responses:
+ *       200:
+ *         description: All essay questions for this lesson
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 lessonId: { type: string }
+ *                 lessonTitle: { type: string }
+ *                 subject: { type: string }
+ *                 total: { type: integer }
+ *                 questions:
+ *                   type: array
+ *                   items:
+ *                     type: object
+ *                     properties:
+ *                       id: { type: string }
+ *                       text: { type: string }
+ *                       subject: { type: string }
+ */
+lessonRouter.get('/:id/essay/all', protect, getAllLessonEssayQuestions);
 
 export default lessonRouter;

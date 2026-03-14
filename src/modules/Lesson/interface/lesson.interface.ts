@@ -87,18 +87,18 @@ export interface LessonMCQResponse {
 //          This becomes the history record shown on the history page.
 
 export interface LessonEssayQuestion {
-  id: string; // EssayQuestion.id — pass back as essayQuestionId on submit
-  text: string; // the full question prompt
-  subject: string; // e.g. "Contract Law"
+  id: string;       // EssayQuestion.id — pass back as essayQuestionId on submit
+  text: string;     // the full question prompt
+  subject: string;  // e.g. "Contract Law"
 }
 
 export interface GetLessonEssayResponse {
   lessonId: string;
   lessonTitle: string;
-  subject: string; // e.g. "Contract Law"  — for the breadcrumb
-  moduleOrder: number; // e.g. 1  → displays as "Module 1"
-  moduleName: string; // e.g. "Formation of Contract"
-  lessonOrder: number; // e.g. 1  → displays as "Lesson 1"
+  subject: string;       // e.g. "Contract Law"  — for the breadcrumb
+  moduleOrder: number;   // e.g. 1  → displays as "Module 1"
+  moduleName: string;    // e.g. "Formation of Contract"
+  lessonOrder: number;   // e.g. 1  → displays as "Lesson 1"
   question: LessonEssayQuestion;
 }
 
@@ -122,11 +122,11 @@ export interface SubmitLessonEssayResponse {
   userAnswer: string;
 
   // Score
-  aiScore: number; // out of 20
+  aiScore: number;       // out of 20
   scoreOutOf: 20;
-  band: string; // e.g. "Distinction", "Merit", "Pass", "Fail"
-  appPass: boolean; // score >= 80/100 → 16/20 ("app pass" bar)
-  passed: boolean; // score >= 50/100 → 10/20 (basic pass)
+  band: string;          // e.g. "Distinction", "Merit", "Pass", "Fail"
+  appPass: boolean;      // score >= 80/100 → 16/20 ("app pass" bar)
+  passed: boolean;       // score >= 50/100 → 10/20 (basic pass)
 
   // Review content
   feedback: object | null;
