@@ -12,6 +12,8 @@ import {
   submitLessonEssay,
   getAllLessonMCQs,
   getAllLessonEssayQuestions,
+  getAllMCQs,
+  getAllEssayQuestions
 } from '../controller/lesson.controller';
 
 const lessonRouter = Router();
@@ -19,6 +21,34 @@ const lessonRouter = Router();
 // ─── ROUTE ORDER MATTERS ──────────────────────────────────────────────────────
 // Static routes (/subject/:x, /essay/submit) MUST be registered before
 // the dynamic /:id route, otherwise Express will try to match "essay" as a lessonId.
+
+/**
+ * @swagger
+ * /api/v1/lessons/mcq/all:
+ *   get:
+ *     summary: Get all MCQ questions across all lessons
+ *     tags: [Lessons]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Returns all MCQs with lessonId, lessonTitle and subject
+ */
+lessonRouter.get('/mcq/all', protect, getAllMCQs);
+ 
+/**
+ * @swagger
+ * /api/v1/lessons/essay/all:
+ *   get:
+ *     summary: Get all essay questions across all lessons
+ *     tags: [Lessons]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Returns all EssayQuestion bank entries with lessonId, lessonTitle and subject
+ */
+lessonRouter.get('/essay/all', protect, getAllEssayQuestions);
 
 /**
  * @swagger
