@@ -1,6 +1,6 @@
 // src/modules/history/controller/history.controller.ts
 
-import { asyncHandler, sendSuccess } from '@/shared/utils';
+import { asyncHandler, sendSuccess, AppError } from '@/shared/utils';
 import { Request, Response } from 'express';
 import historyService from '../service/history.service';
 
@@ -22,6 +22,7 @@ export const getHistoryFeed = asyncHandler(async (req: Request, res: Response) =
 export const getMCQSessionDetail = asyncHandler(async (req: Request, res: Response) => {
   const userId = req.user!.user.id;
   const { sessionId } = req.params;
+  if (!sessionId) throw new AppError('Session ID is required');
   const result = await historyService.getMCQSessionDetail(userId, sessionId);
   sendSuccess(res, 'MCQ session detail retrieved', result);
 });
@@ -29,6 +30,7 @@ export const getMCQSessionDetail = asyncHandler(async (req: Request, res: Respon
 export const getEssayAttemptDetail = asyncHandler(async (req: Request, res: Response) => {
   const userId = req.user!.user.id;
   const { attemptId } = req.params;
+  if (!attemptId) throw new AppError('Attempt ID is required');
   const result = await historyService.getEssayAttemptDetail(userId, attemptId);
   sendSuccess(res, 'Essay attempt detail retrieved', result);
 });
@@ -36,6 +38,7 @@ export const getEssayAttemptDetail = asyncHandler(async (req: Request, res: Resp
 export const getSimulationDetail = asyncHandler(async (req: Request, res: Response) => {
   const userId = req.user!.user.id;
   const { simulationId } = req.params;
+  if (!simulationId) throw new AppError('Simulation ID is required');
   const result = await historyService.getSimulationDetail(userId, simulationId);
   sendSuccess(res, 'Simulation detail retrieved', result);
 });

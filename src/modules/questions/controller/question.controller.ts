@@ -3,7 +3,7 @@ import { AppError } from '@/shared/utils';
 import { Request, Response } from 'express';
 import questionsService from '../service/questions.service';
 import { sendSuccess } from '@/shared/utils';
-import { MCQAttemptInput } from '@/modules/practise/interface/practise.interface';
+import { MCQAttemptInput } from '../interface/question.interface';
 
 export const getModuleQuestions = asyncHandler(
   async (req: Request, res: Response): Promise<any> => {
