@@ -294,23 +294,24 @@ lessonRouter.patch('/:id/track-time', protect, trackTimeSpent);
  */
 lessonRouter.get('/:id/mcq', protect, getLessonMCQs);
 
-/**
- * @swagger
- * /api/v1/lessons/{id}/mcq/all:
- *   get:
- *     summary: Get all MCQs for a lesson including correct answers (admin/debug)
- *     tags: [Lessons]
- *     security:
- *       - bearerAuth: []
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema: { type: string }
- *     responses:
- *       200:
- *         description: Full MCQ list with correctAnswer and explanation
- */
+
+// /**
+//  * @swagger
+//  * /api/v1/lessons/{id}/mcq/all:
+//  *   get:
+//  *     summary: Get all MCQs for a lesson including correct answers (admin/debug)
+//  *     tags: [Lessons]
+//  *     security:
+//  *       - bearerAuth: []
+//  *     parameters:
+//  *       - in: path
+//  *         name: id
+//  *         required: true
+//  *         schema: { type: string }
+//  *     responses:
+//  *       200:
+//  *         description: Full MCQ list with correctAnswer and explanation
+//  */
 lessonRouter.get('/:id/mcq/all', protect, getAllLessonMCQs);
 
 /**
@@ -352,23 +353,25 @@ lessonRouter.get('/:id/mcq/all', protect, getAllLessonMCQs);
  */
 lessonRouter.get('/:id/essay', protect, getLessonEssayQuestion);
 
-/**
- * @swagger
- * /api/v1/lessons/{id}/essay/all:
- *   get:
- *     summary: Get all essay questions for a lesson (admin/debug)
- *     tags: [Lessons]
- *     security:
- *       - bearerAuth: []
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema: { type: string }
- *     responses:
- *       200:
- *         description: Full essay question list for this lesson
- */
+
+
+// /**
+//  * @swagger
+//  * /api/v1/lessons/{id}/essay/all:
+//  *   get:
+//  *     summary: Get all essay questions for a lesson (admin/debug)
+//  *     tags: [Lessons]
+//  *     security:
+//  *       - bearerAuth: []
+//  *     parameters:
+//  *       - in: path
+//  *         name: id
+//  *         required: true
+//  *         schema: { type: string }
+//  *     responses:
+//  *       200:
+//  *         description: Full essay question list for this lesson
+//  */
 lessonRouter.get('/:id/essay/all', protect, getAllLessonEssayQuestions);
 
 
