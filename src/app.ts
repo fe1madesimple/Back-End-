@@ -159,6 +159,7 @@ const createApp = (): Application => {
   app.use('/api/v1/achievements', achievementRouter);
   app.use('/api/v1/cases', caseRouter);
   app.use('/api/v1/support', supportRouter);
+  app.use('/api/v1/history', historyRouter);
 
   app.use(notFoundHandler);
   app.use(errorHandler);
