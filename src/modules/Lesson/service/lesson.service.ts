@@ -428,7 +428,11 @@ class LessonService {
     };
   }
 
-  async getNextQuestion(userId: string, sessionId: string, index: number): Promise<any> {
+  async getNextQuestion(
+    userId: string,
+    sessionId: string,
+    index: number
+  ): Promise<any> {
     const session = await prisma.quizSession.findUnique({
       where: { id: sessionId },
       select: {
@@ -438,7 +442,6 @@ class LessonService {
         questionIds: true,
         isCompleted: true,
         lessonId: true,
-        moduleId: true,
       },
     });
 
@@ -462,7 +465,16 @@ class LessonService {
 
     if (!question) throw new AppError('Question not found');
 
-    // Fetch subject name for display
+    // ── KEY CHANGE: set questionsAnswered = index ─────────────────────────────
+    // This tells attemptMCQ exactly which question is currently on screen.
+    // attemptMCQ reads questionsAnswered → grades questionIds[questionsAnswered]
+    // → then increments questionsAnswered by 1.
+    await prisma.quizSession.update({
+      where: { id: sessionId },
+      data: { questionsAnswered: index },
+    });
+
+    // Fetch subject for display
     let subject = 'Unknown';
     if (session.lessonId) {
       const lesson = await prisma.lesson.findUnique({
