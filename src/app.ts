@@ -21,6 +21,7 @@ import questionRouter from './modules/questions/routes/question.routes';
 import practiceRouter from './modules/practise/routes/practise.routes';
 import progressRouter from './modules/progress/routes/progress.routes';
 import studySessionRouter from './modules/study-sessions/routes/study-sessions.routes';
+import historyRouter from './modules/history/routes/history.routes';
 import podCastRouter from './modules/podcasts/routes/podcast.routes';
 import subscriptionRouter from './modules/subscription/routes/subscription.routes';
 import supportRouter from './modules/support/route/support.route';
