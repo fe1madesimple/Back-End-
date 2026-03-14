@@ -251,6 +251,63 @@ lessonRouter.patch('/:id/track-video', protect, trackVideoProgress);
 lessonRouter.patch('/:id/track-time', protect, trackTimeSpent);
 
 
+
+/**
+ * @swagger
+ * /api/v1/lessons/{id}/mcq:
+ *   get:
+ *     summary: Start MCQ quiz for a lesson
+ *     tags: [Lesson MCQ]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Creates a QuizSession and returns ONLY the first question.
+ *       Subsequent questions are fetched one at a time via GET /lessons/mcq/next/:sessionId/:index.
+ *
+ *       The session stores all 7 question IDs internally — frontend never needs to
+ *       track or send question IDs. Only sessionId is needed for all follow-up calls.
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema: { type: string }
+ *         description: Lesson ID
+ *     responses:
+ *       200:
+ *         description: Session created, first question returned
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 sessionId:
+ *                   type: string
+ *                   description: Pass this to every subsequent MCQ call
+ *                 lessonId: { type: string }
+ *                 lessonTitle: { type: string }
+ *                 subject: { type: string }
+ *                 totalQuestions:
+ *                   type: integer
+ *                   description: Always ≤7, depends on how many MCQs exist for the lesson
+ *                 currentQuestion:
+ *                   type: integer
+ *                   description: Always 1 on start
+ *                 isLast:
+ *                   type: boolean
+ *                   description: true only if lesson has exactly 1 MCQ (rare edge case)
+ *                 question:
+ *                   type: object
+ *                   properties:
+ *                     id: { type: string }
+ *                     text: { type: string }
+ *                     options:
+ *                       type: object
+ *                       additionalProperties: { type: string }
+ *                       example: { A: "Option A", B: "Option B", C: "Option C", D: "Option D" }
+ *                     points: { type: integer }
+ *       404:
+ *         description: Lesson not found or no MCQ questions available
+ */
 lessonRouter.get('/:id/mcq', protect, getLessonMCQs);
 
 
