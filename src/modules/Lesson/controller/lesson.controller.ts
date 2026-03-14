@@ -51,7 +51,7 @@ export const getLessonById = asyncHandler(async (req: Request, res: Response) =>
 });
 
 export const getLessonMCQs = asyncHandler(async (req: Request, res: Response) => {
-  const userId = req.user!.user.id;
+  
   const { id } = req.params;
 
   if (!id) throw new AppError('lesson id is required');
@@ -62,7 +62,7 @@ export const getLessonMCQs = asyncHandler(async (req: Request, res: Response) =>
 });
 
 export const getLessonEssayQuestion = asyncHandler(async (req: Request, res: Response) => {
-  const userId = req.user!.user.id;
+  
   const { id } = req.params;
 
   if (!id) throw new AppError('lesson id is required');
@@ -89,7 +89,7 @@ export const submitLessonEssay = asyncHandler(async (req: Request, res: Response
 });
 
 export const getAllLessonMCQs = asyncHandler(async (req: Request, res: Response) => {
-  const userId = req.user!.user.id;
+  
   const { id } = req.params;
   if (!id) throw new AppError('lesson id is required');
   const result = await lessonService.getAllLessonMCQs(id);
@@ -97,7 +97,7 @@ export const getAllLessonMCQs = asyncHandler(async (req: Request, res: Response)
 });
    
 export const getAllLessonEssayQuestions = asyncHandler(async (req: Request, res: Response) => {
-  const userId = req.user!.user.id;
+  
   const { id } = req.params;
   if (!id) throw new AppError('lesson id is required');
   const result = await lessonService.getAllLessonEssayQuestions(id);
