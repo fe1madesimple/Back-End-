@@ -781,7 +781,7 @@ class LessonService {
       select: { id: true, title: true },
     });
 
-    const startedAt = Date.now();
+    const startedAt = Date.now(); 
 
     const grading = await gradeEssayWithClaude(
       answerText,
