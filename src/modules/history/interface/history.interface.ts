@@ -24,7 +24,7 @@ export interface HistoryStatsResponse {
 // source = 'FROM_LESSON' | 'STANDARD_SET' | 'SIMULATION'
 
 export type HistoryItemType = 'MCQ' | 'ESSAY' | 'SIMULATION';
-export type HistoryItemSource = 'FROM_LESSON' | 'STANDARD_SET' | 'SIMULATION';
+export type HistoryItemSource = 'FROM_LESSON' |  'SIMULATION';
 
 export interface HistoryFeedItem {
   id: string;               // sessionId or attemptId — used to fetch detail modal
