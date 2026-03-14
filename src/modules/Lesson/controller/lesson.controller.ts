@@ -115,3 +115,20 @@ export const getAllEssayQuestions = asyncHandler(async (_req: Request, res: Resp
   const result = await lessonService.getAllEssayQuestions();
   sendSuccess(res, 'All essay questions retrieved', result);
 });
+
+
+
+export const getNextQuestion = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user!.user.id;
+  const { sessionId, index } = req.params;
+
+  if (!sessionId) throw new AppError('sessionId is required');
+
+  const questionIndex = parseInt(index ?? '0', 10);
+  if (isNaN(questionIndex) || questionIndex < 0) {
+    throw new AppError('index must be a non-negative integer');
+  }
+
+  const result = await lessonService.getNextQuestion(userId, sessionId, questionIndex);
+  sendSuccess(res, 'Next question retrieved', result);
+});

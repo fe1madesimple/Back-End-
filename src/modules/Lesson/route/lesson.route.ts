@@ -250,48 +250,7 @@ lessonRouter.patch('/:id/track-video', protect, trackVideoProgress);
  */
 lessonRouter.patch('/:id/track-time', protect, trackTimeSpent);
 
-/**
- * @swagger
- * /api/v1/lessons/{id}/mcq:
- *   get:
- *     summary: Start MCQ session — get up to 7 randomised questions
- *     tags: [Lessons]
- *     security:
- *       - bearerAuth: []
- *     description: |
- *       Creates a QuizSession immediately and returns sessionId alongside questions.
- *       Store sessionId — required for every POST /mcq/attempt call.
- *       correctAnswer is NOT returned here, only revealed after each submit.
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema: { type: string }
- *         description: Lesson ID
- *     responses:
- *       200:
- *         description: Session created, questions returned
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 sessionId: { type: string }
- *                 lessonId: { type: string }
- *                 lessonTitle: { type: string }
- *                 totalQuestions: { type: integer }
- *                 questions:
- *                   type: array
- *                   items:
- *                     type: object
- *                     properties:
- *                       id: { type: string }
- *                       text: { type: string }
- *                       options:
- *                         type: object
- *                         additionalProperties: { type: string }
- *                       points: { type: integer }
- */
+
 lessonRouter.get('/:id/mcq', protect, getLessonMCQs);
 
 
