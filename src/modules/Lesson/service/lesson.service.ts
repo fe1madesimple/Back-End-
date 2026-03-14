@@ -364,70 +364,136 @@ class LessonService {
   // correctAnswer NOT exposed here, only revealed after submit in attemptMCQ.
 
   async getLessonMCQs(userId: string, lessonId: string): Promise<any> {
-  const lesson = await prisma.lesson.findUnique({
-    where: { id: lessonId, isPublished: true },
-    select: {
-      id: true,
-      title: true,
-      moduleId: true,
-      module: {
-        select: {
-          subject: { select: { name: true } },
+    const lesson = await prisma.lesson.findUnique({
+      where: { id: lessonId, isPublished: true },
+      select: {
+        id: true,
+        title: true,
+        moduleId: true,
+        module: {
+          select: {
+            subject: { select: { name: true } },
+          },
         },
       },
-    },
-  });
- 
-  if (!lesson) throw new AppError('Lesson not found');
- 
-  const allMCQs = await prisma.question.findMany({
-    where: { lessonId, type: 'MCQ', isPublished: true },
-    select: { id: true, text: true, options: true, points: true },
-  });
- 
-  if (allMCQs.length === 0) {
-    throw new AppError('No MCQ questions available for this lesson');
-  }
- 
-  // Shuffle and cap at 7 — order locked into session
-  const selected = allMCQs.sort(() => Math.random() - 0.5).slice(0, 7);
-  const totalQuestions = selected.length;
- 
-  // Create session — questionIds stored in order, backend resolves from here on
-  const session = await prisma.quizSession.create({
-    data: {
-      userId,
-      quizType: 'LESSON_MCQ',
-      totalQuestions,
+    });
+
+    if (!lesson) throw new AppError('Lesson not found');
+
+    const allMCQs = await prisma.question.findMany({
+      where: { lessonId, type: 'MCQ', isPublished: true },
+      select: { id: true, text: true, options: true, points: true },
+    });
+
+    if (allMCQs.length === 0) {
+      throw new AppError('No MCQ questions available for this lesson');
+    }
+
+    // Shuffle and cap at 7 — order locked into session
+    const selected = allMCQs.sort(() => Math.random() - 0.5).slice(0, 7);
+    const totalQuestions = selected.length;
+
+    // Create session — questionIds stored in order, backend resolves from here on
+    const session = await prisma.quizSession.create({
+      data: {
+        userId,
+        quizType: 'LESSON_MCQ',
+        totalQuestions,
+        lessonId: lesson.id,
+        moduleId: lesson.moduleId,
+        questionsAnswered: 0,
+        correctAnswers: 0,
+        totalTimeSeconds: 0,
+        isCompleted: false,
+        questionIds: selected.map((q) => q.id),
+      },
+    });
+
+    // Return ONLY the first question
+    const firstQuestion = selected[0]!;
+
+    return {
+      sessionId: session.id,
       lessonId: lesson.id,
-      moduleId: lesson.moduleId,
-      questionsAnswered: 0,
-      correctAnswers: 0,
-      totalTimeSeconds: 0,
-      isCompleted: false,
-      questionIds: selected.map((q) => q.id),
-    },
-  });
- 
-  // Return ONLY the first question
-  const firstQuestion = selected[0]!;
- 
-  return {
-    sessionId:      session.id,
-    lessonId:       lesson.id,
-    lessonTitle:    lesson.title,
-    subject:        lesson.module.subject.name,
-    totalQuestions,
-    currentQuestion: 1,                         
-    isLast:          totalQuestions === 1,        
-    question: {
-      id:      firstQuestion.id,
-      text:    firstQuestion.text,
-      options: firstQuestion.options as Record<string, string>,
-      points:  firstQuestion.points,
-    },
-  };
-}
+      lessonTitle: lesson.title,
+      subject: lesson.module.subject.name,
+      totalQuestions,
+      currentQuestion: 1,
+      isLast: totalQuestions === 1,
+      question: {
+        id: firstQuestion.id,
+        text: firstQuestion.text,
+        options: firstQuestion.options as Record<string, string>,
+        points: firstQuestion.points,
+      },
+    };
+  }
+
+  async getNextQuestion(
+    userId: string,
+    sessionId: string,
+    index: number 
+  ): Promise<any> {
+    const session = await prisma.quizSession.findUnique({
+      where: { id: sessionId },
+      select: {
+        id: true,
+        userId: true,
+        totalQuestions: true,
+        questionIds: true,
+        isCompleted: true,
+        lessonId: true,
+        moduleId: true,
+      },
+    });
+
+    if (!session || session.userId !== userId) {
+      throw new AppError('Quiz session not found');
+    }
+    if (session.isCompleted) {
+      throw new AppError('This quiz session is already completed');
+    }
+    if (index < 0 || index >= session.totalQuestions) {
+      throw new AppError(`Invalid question index: ${index}`);
+    }
+
+    const questionId = session.questionIds[index];
+    if (!questionId) throw new AppError('Question not found at this index');
+
+    const question = await prisma.question.findUnique({
+      where: { id: questionId, type: 'MCQ' },
+      select: { id: true, text: true, options: true, points: true },
+    });
+
+    if (!question) throw new AppError('Question not found');
+
+    // Fetch subject name for display
+    let subject = 'Unknown';
+    if (session.lessonId) {
+      const lesson = await prisma.lesson.findUnique({
+        where: { id: session.lessonId },
+        select: { module: { select: { subject: { select: { name: true } } } } },
+      });
+      subject = lesson?.module?.subject?.name ?? 'Unknown';
+    }
+
+    const currentQuestion = index + 1; // 1-based for display
+    const isLast = currentQuestion === session.totalQuestions;
+
+    return {
+      sessionId: session.id,
+      subject,
+      totalQuestions: session.totalQuestions,
+      currentQuestion, 
+      isLast, 
+      question: {
+        id: question.id,
+        text: question.text,
+        options: question.options as Record<string, string>,
+        points: question.points,
+      },
+    };
+  }
 
   // ─── attemptMCQ ───────────────────────────────────────────────────────────
   // Frontend sends: { sessionId, answer, timeTakenSeconds } — NO questionId.
@@ -558,8 +624,7 @@ class LessonService {
     const total = session.totalQuestions;
     const score = session.correctAnswers;
     const accuracyPercent = total > 0 ? Math.round((score / total) * 100) : 0;
-    const avgTimePerQuestionSeconds =
-      total > 0 ? Math.round(session.totalTimeSeconds / total) : 0;
+    const avgTimePerQuestionSeconds = total > 0 ? Math.round(session.totalTimeSeconds / total) : 0;
 
     // ── Streak: consecutive calendar days with ≥1 completed QuizSession
     const completedSessions = await prisma.quizSession.findMany({
@@ -935,9 +1000,12 @@ class LessonService {
 
   private getMotivationalMessage(accuracyPercent: number): string {
     if (accuracyPercent === 100) return 'Congratulation! You have passed the test with 100%';
-    if (accuracyPercent >= 80) return `Congratulation! You have passed the test with ${accuracyPercent}%`;
-    if (accuracyPercent >= 60) return `Good effort! You have passed the test with ${accuracyPercent}%`;
-    if (accuracyPercent >= 40) return `Don't worry - practice makes perfect! You have passed the test with ${accuracyPercent}%`;
+    if (accuracyPercent >= 80)
+      return `Congratulation! You have passed the test with ${accuracyPercent}%`;
+    if (accuracyPercent >= 60)
+      return `Good effort! You have passed the test with ${accuracyPercent}%`;
+    if (accuracyPercent >= 40)
+      return `Don't worry - practice makes perfect! You have passed the test with ${accuracyPercent}%`;
     return `Keep going! Every attempt makes you stronger. You scored ${accuracyPercent}%`;
   }
 }
