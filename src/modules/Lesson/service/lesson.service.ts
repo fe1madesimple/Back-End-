@@ -428,11 +428,7 @@ class LessonService {
     };
   }
 
-  async getNextQuestion(
-    userId: string,
-    sessionId: string,
-    index: number 
-  ): Promise<any> {
+  async getNextQuestion(userId: string, sessionId: string, index: number): Promise<any> {
     const session = await prisma.quizSession.findUnique({
       where: { id: sessionId },
       select: {
@@ -483,8 +479,8 @@ class LessonService {
       sessionId: session.id,
       subject,
       totalQuestions: session.totalQuestions,
-      currentQuestion, 
-      isLast, 
+      currentQuestion,
+      isLast,
       question: {
         id: question.id,
         text: question.text,
@@ -508,7 +504,7 @@ class LessonService {
         id: true,
         userId: true,
         totalQuestions: true,
-        questionsAnswered: true,
+        questionsAnswered: true, // ← this is what getNextQuestion just set
         isCompleted: true,
         questionIds: true,
       },
@@ -524,7 +520,7 @@ class LessonService {
       throw new AppError('All questions in this session have been answered');
     }
 
-    // Resolve current question from index — no frontend lookup needed
+    // questionsAnswered = the index of the question currently on screen
     const currentIndex = session.questionsAnswered;
     const questionId = session.questionIds[currentIndex];
     if (!questionId) throw new AppError('Could not resolve question for this session');
@@ -554,6 +550,8 @@ class LessonService {
       },
     });
 
+    // Increment questionsAnswered after grading
+    // Now points to the NEXT question — which getNextQuestion will sync to when called
     const updatedSession = await prisma.quizSession.update({
       where: { id: sessionId },
       data: {
@@ -1008,5 +1006,7 @@ class LessonService {
     return `Keep going! Every attempt makes you stronger. You scored ${accuracyPercent}%`;
   }
 }
+
+
 
 export default new LessonService();
