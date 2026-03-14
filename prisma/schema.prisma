@@ -94,6 +94,7 @@ model QuizSession {
   isCompleted       Boolean   @default(false)
   completedAt       DateTime?
   createdAt         DateTime  @default(now())
+  questionIds       String[]  @default([])
 
   user     User              @relation(fields: [userId], references: [id])
   attempts QuestionAttempt[]

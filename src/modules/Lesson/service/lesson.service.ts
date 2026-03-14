@@ -6,6 +6,9 @@ import {
   LessonDetailResponse,
   ModuleListResponse,
   LessonMCQResponse,
+  MCQAttemptInput,
+  MCQAttemptResponse,
+  QuizResultsResponse,
   GetLessonEssayResponse,
   SubmitLessonEssayInput,
   SubmitLessonEssayResponse,
@@ -356,12 +359,14 @@ class LessonService {
     };
   }
 
-  // ─── GET 7 MCQs for a lesson ──────────────────────────────────────────────
+  // ─── getLessonMCQs ────────────────────────────────────────────────────────
+  // Creates QuizSession immediately — returns sessionId + questions.
+  // correctAnswer NOT exposed here, only revealed after submit in attemptMCQ.
 
-  async getLessonMCQs(lessonId: string): Promise<LessonMCQResponse> {
+  async getLessonMCQs(userId: string, lessonId: string): Promise<LessonMCQResponse> {
     const lesson = await prisma.lesson.findUnique({
       where: { id: lessonId, isPublished: true },
-      select: { id: true, title: true },
+      select: { id: true, title: true, moduleId: true },
     });
 
     if (!lesson) throw new AppError('Lesson not found');
@@ -376,10 +381,29 @@ class LessonService {
     }
 
     const selected = allMCQs.sort(() => Math.random() - 0.5).slice(0, 7);
+    const totalQuestions = selected.length;
+
+    // Create QuizSession — stores questionIds so attemptMCQ needs no questionId from frontend
+    const session = await prisma.quizSession.create({
+      data: {
+        userId,
+        quizType: 'LESSON_MCQ',
+        totalQuestions,
+        lessonId: lesson.id,
+        moduleId: lesson.moduleId,
+        questionsAnswered: 0,
+        correctAnswers: 0,
+        totalTimeSeconds: 0,
+        isCompleted: false,
+        questionIds: selected.map((q) => q.id),
+      },
+    });
 
     return {
+      sessionId: session.id,
       lessonId: lesson.id,
       lessonTitle: lesson.title,
+      totalQuestions,
       questions: selected.map((q) => ({
         id: q.id,
         text: q.text,
@@ -389,12 +413,174 @@ class LessonService {
     };
   }
 
-  // ─── GET random essay question for lesson practice ────────────────────────
-  // Source: EssayQuestion model (the 747-question bank).
-  // Priority 1: questions linked directly to this lesson.
-  // Priority 2: any question from the same subject.
+  // ─── attemptMCQ ───────────────────────────────────────────────────────────
+  // Frontend sends: { sessionId, answer, timeTakenSeconds } — NO questionId.
+  // Current question resolved via session.questionIds[questionsAnswered].
+  // Returns isLastQuestion so frontend knows when to show "View Results".
 
-  async getLessonEssayQuestion(lessonId: string): Promise<GetLessonEssayResponse> {
+  async attemptMCQ(userId: string, input: MCQAttemptInput): Promise<MCQAttemptResponse> {
+    const { sessionId, answer, timeTakenSeconds } = input;
+
+    const session = await prisma.quizSession.findUnique({
+      where: { id: sessionId },
+      select: {
+        id: true,
+        userId: true,
+        totalQuestions: true,
+        questionsAnswered: true,
+        isCompleted: true,
+        questionIds: true,
+      },
+    });
+
+    if (!session || session.userId !== userId) {
+      throw new AppError('Quiz session not found');
+    }
+    if (session.isCompleted) {
+      throw new AppError('This quiz session is already completed');
+    }
+    if (session.questionsAnswered >= session.totalQuestions) {
+      throw new AppError('All questions in this session have been answered');
+    }
+
+    // Resolve current question from index — no frontend lookup needed
+    const currentIndex = session.questionsAnswered;
+    const questionId = session.questionIds[currentIndex];
+    if (!questionId) throw new AppError('Could not resolve question for this session');
+
+    const question = await prisma.question.findUnique({
+      where: { id: questionId, type: 'MCQ' },
+      select: { id: true, correctAnswer: true, explanation: true, points: true },
+    });
+
+    if (!question) throw new AppError('Question not found');
+
+    const skipped = !answer || answer.trim() === '';
+    const isCorrect = skipped
+      ? false
+      : answer.toUpperCase() === (question.correctAnswer ?? '').toUpperCase();
+    const pointsEarned = isCorrect ? question.points : 0;
+
+    const attempt = await prisma.questionAttempt.create({
+      data: {
+        userId,
+        questionId,
+        quizSessionId: sessionId,
+        answer: skipped ? 'SKIPPED' : answer.toUpperCase(),
+        isCorrect,
+        pointsEarned,
+        timeTakenSeconds,
+      },
+    });
+
+    const updatedSession = await prisma.quizSession.update({
+      where: { id: sessionId },
+      data: {
+        questionsAnswered: { increment: 1 },
+        correctAnswers: isCorrect ? { increment: 1 } : undefined,
+        totalTimeSeconds: { increment: timeTakenSeconds ?? 0 },
+      },
+      select: { questionsAnswered: true, totalQuestions: true },
+    });
+
+    const isLastQuestion = updatedSession.questionsAnswered >= updatedSession.totalQuestions;
+
+    achievementsService
+      .checkAllAchievements(userId)
+      .catch((err) => console.error('Achievement check failed:', err));
+
+    return {
+      attemptId: attempt.id,
+      isCorrect,
+      correctAnswer: question.correctAnswer ?? '',
+      explanation: question.explanation ?? null,
+      isLastQuestion,
+    };
+  }
+
+  // ─── getQuizResults ───────────────────────────────────────────────────────
+  // Called once after last question. Closes session, computes streak + results.
+  // All numbers are whole — no decimals sent to frontend.
+
+  async getQuizResults(userId: string, sessionId: string): Promise<QuizResultsResponse> {
+    let session = await prisma.quizSession.findUnique({
+      where: { id: sessionId },
+      select: {
+        id: true,
+        userId: true,
+        totalQuestions: true,
+        correctAnswers: true,
+        totalTimeSeconds: true,
+        isCompleted: true,
+        completedAt: true,
+        questionsAnswered: true,
+      },
+    });
+
+    if (!session || session.userId !== userId) {
+      throw new AppError('Quiz session not found');
+    }
+
+    // Idempotent — safe to call twice (e.g. double tap)
+    if (!session.isCompleted) {
+      session = await prisma.quizSession.update({
+        where: { id: sessionId },
+        data: { isCompleted: true, completedAt: new Date() },
+        select: {
+          id: true,
+          userId: true,
+          totalQuestions: true,
+          correctAnswers: true,
+          totalTimeSeconds: true,
+          isCompleted: true,
+          completedAt: true,
+          questionsAnswered: true,
+        },
+      });
+    }
+
+    const total = session.totalQuestions;
+    const score = session.correctAnswers;
+    const accuracyPercent = total > 0 ? Math.round((score / total) * 100) : 0;
+    const avgTimePerQuestionSeconds =
+      total > 0 ? Math.round(session.totalTimeSeconds / total) : 0;
+
+    // ── Streak: consecutive calendar days with ≥1 completed QuizSession
+    const completedSessions = await prisma.quizSession.findMany({
+      where: { userId, isCompleted: true, completedAt: { not: null } },
+      select: { completedAt: true },
+      orderBy: { completedAt: 'desc' },
+    });
+
+    const activeDays = new Set<string>();
+    for (const s of completedSessions) {
+      if (s.completedAt) {
+        activeDays.add(s.completedAt.toISOString().slice(0, 10));
+      }
+    }
+
+    const quizStreak = this.calculateStreak(activeDays);
+    const motivationalMessage = this.getMotivationalMessage(accuracyPercent);
+    const badgeUnlocked = accuracyPercent === 100;
+
+    return {
+      sessionId: session.id,
+      score,
+      total,
+      accuracyPercent,
+      avgTimePerQuestionSeconds,
+      quizStreak,
+      motivationalMessage,
+      badgeUnlocked,
+      completedAt: session.completedAt!.toISOString(),
+    };
+  }
+
+  // ─── getLessonEssayQuestion ───────────────────────────────────────────────
+  // Creates PracticeSession immediately on fetch.
+  // Returns practiceSessionId — frontend sends ONLY this on submit.
+
+  async getLessonEssayQuestion(userId: string, lessonId: string): Promise<GetLessonEssayResponse> {
     const lesson = await prisma.lesson.findUnique({
       where: { id: lessonId, isPublished: true },
       select: {
@@ -415,19 +601,16 @@ class LessonService {
 
     if (!lesson) throw new AppError('Lesson not found');
 
-    // Priority 1: EssayQuestions directly linked to this lesson
+    // Priority 1: questions linked to this lesson
     let essays = await prisma.essayQuestion.findMany({
       where: { lessonId, isPublished: true },
       select: { id: true, text: true, subject: true },
     });
 
-    // Priority 2: any EssayQuestion from the same subject
+    // Priority 2: any question from the same subject
     if (essays.length === 0) {
       essays = await prisma.essayQuestion.findMany({
-        where: {
-          isPublished: true,
-          subject: lesson.module.subject.name,
-        },
+        where: { isPublished: true, subject: lesson.module.subject.name },
         select: { id: true, text: true, subject: true },
       });
     }
@@ -438,7 +621,20 @@ class LessonService {
 
     const question = essays[Math.floor(Math.random() * essays.length)]!;
 
+    // Create PracticeSession immediately — frontend stores this ID for submit
+    const practiceSession = await prisma.practiceSession.create({
+      data: {
+        userId,
+        subject: lesson.module.subject.name,
+        year: null,
+        questionIds: [question.id],
+        startedAt: new Date(),
+        isCompleted: false,
+      },
+    });
+
     return {
+      practiceSessionId: practiceSession.id,
       lessonId: lesson.id,
       lessonTitle: lesson.title,
       subject: lesson.module.subject.name,
@@ -453,34 +649,47 @@ class LessonService {
     };
   }
 
-  // ─── SUBMIT single lesson essay ───────────────────────────────────────────
-  // Grades with Claude AI → saves EssayAttempt (source='LESSON_PRACTICE').
-  // Returns the COMPLETE review data in one response — no follow-up call needed.
-  // The frontend renders the review screen directly from this response.
+  // ─── submitLessonEssay ────────────────────────────────────────────────────
+  // Frontend sends: { practiceSessionId, answerText } — nothing else.
+  // Backend resolves question from session. Grades with Claude AI.
+  // Returns full review screen data in one shot.
 
   async submitLessonEssay(
     userId: string,
     input: SubmitLessonEssayInput
   ): Promise<SubmitLessonEssayResponse> {
-    const { lessonId, essayQuestionId, answerText } = input;
+    const { practiceSessionId, answerText } = input;
 
     if (!answerText || answerText.trim().split(/\s+/).length < 20) {
       throw new AppError('Answer is too short to grade');
     }
 
-    const [lesson, essayQuestion] = await Promise.all([
-      prisma.lesson.findUnique({
-        where: { id: lessonId, isPublished: true },
-        select: { id: true, title: true },
-      }),
-      prisma.essayQuestion.findUnique({
-        where: { id: essayQuestionId },
-        select: { id: true, text: true, subject: true },
-      }),
-    ]);
+    const practiceSession = await prisma.practiceSession.findUnique({
+      where: { id: practiceSessionId },
+      select: { id: true, userId: true, subject: true, questionIds: true, isCompleted: true },
+    });
 
-    if (!lesson) throw new AppError('Lesson not found');
+    if (!practiceSession || practiceSession.userId !== userId) {
+      throw new AppError('Practice session not found');
+    }
+    if (practiceSession.isCompleted) {
+      throw new AppError('This essay has already been submitted');
+    }
+
+    const essayQuestionId = practiceSession.questionIds[0];
+    if (!essayQuestionId) throw new AppError('No question found in session');
+
+    const essayQuestion = await prisma.essayQuestion.findUnique({
+      where: { id: essayQuestionId },
+      select: { id: true, text: true, subject: true, lessonId: true },
+    });
+
     if (!essayQuestion) throw new AppError('Essay question not found');
+
+    const lesson = await prisma.lesson.findUnique({
+      where: { id: essayQuestion.lessonId },
+      select: { id: true, title: true },
+    });
 
     const startedAt = Date.now();
 
@@ -494,11 +703,12 @@ class LessonService {
     const wordCount = answerText.trim().split(/\s+/).length;
     const aiScore20 = Math.round((grading.score / 100) * 20);
 
-    // Save EssayAttempt — this is the history record
+    // Save EssayAttempt — source = LESSON_PRACTICE, simulationId links to session
     const attempt = await prisma.essayAttempt.create({
       data: {
         userId,
         essayQuestionId,
+        questionId: null,
         answerText,
         timeTakenSeconds,
         wordCount,
@@ -513,16 +723,25 @@ class LessonService {
         model: 'claude-sonnet-4-20250514',
         tokensUsed: grading.tokensUsed,
         source: 'LESSON_PRACTICE',
-        simulationId: null,
+        simulationId: practiceSessionId,
       } as any,
       select: { id: true },
     });
 
-    // Return everything the review screen needs — in one shot
+    // Close the practice session
+    await prisma.practiceSession.update({
+      where: { id: practiceSessionId },
+      data: { isCompleted: true, submittedAt: new Date(), totalTimeSeconds: timeTakenSeconds },
+    });
+
+    achievementsService
+      .checkAllAchievements(userId)
+      .catch((err) => console.error('Achievement check failed:', err));
+
     return {
       attemptId: attempt.id,
-      lessonId: lesson.id,
-      lessonTitle: lesson.title,
+      lessonId: lesson?.id ?? essayQuestion.lessonId,
+      lessonTitle: lesson?.title ?? 'Lesson',
       question: {
         id: essayQuestion.id,
         text: essayQuestion.text,
@@ -543,8 +762,7 @@ class LessonService {
     };
   }
 
-  // ─── GET all MCQs for a lesson (full list, no cap) ────────────────────────
-  // Used for admin/debug or if frontend needs the complete set.
+  // ─── getAllLessonMCQs ─────────────────────────────────────────────────────
 
   async getAllLessonMCQs(lessonId: string) {
     const lesson = await prisma.lesson.findUnique({
@@ -582,8 +800,7 @@ class LessonService {
     };
   }
 
-  // ─── GET all essay questions for a lesson (full list) ────────────────────
-  // Returns all EssayQuestions linked to this lesson from the bank.
+  // ─── getAllLessonEssayQuestions ────────────────────────────────────────────
 
   async getAllLessonEssayQuestions(lessonId: string) {
     const lesson = await prisma.lesson.findUnique({
@@ -615,6 +832,8 @@ class LessonService {
       })),
     };
   }
+
+  // ─── getAllMCQs ───────────────────────────────────────────────────────────
 
   async getAllMCQs() {
     const questions = await prisma.question.findMany({
@@ -650,7 +869,8 @@ class LessonService {
     };
   }
 
- 
+  // ─── getAllEssayQuestions ─────────────────────────────────────────────────
+
   async getAllEssayQuestions() {
     const questions = await prisma.essayQuestion.findMany({
       where: { isPublished: true },
@@ -674,6 +894,35 @@ class LessonService {
         lessonTitle: q.lesson?.title ?? null,
       })),
     };
+  }
+
+  // ─── Private Helpers ──────────────────────────────────────────────────────
+
+  private calculateStreak(activeDays: Set<string>): number {
+    if (activeDays.size === 0) return 0;
+
+    let streak = 0;
+    const cursor = new Date(new Date().toISOString().slice(0, 10) + 'T00:00:00Z');
+
+    while (true) {
+      const dateKey = cursor.toISOString().slice(0, 10);
+      if (activeDays.has(dateKey)) {
+        streak++;
+        cursor.setUTCDate(cursor.getUTCDate() - 1);
+      } else {
+        break;
+      }
+    }
+
+    return streak;
+  }
+
+  private getMotivationalMessage(accuracyPercent: number): string {
+    if (accuracyPercent === 100) return 'Congratulation! You have passed the test with 100%';
+    if (accuracyPercent >= 80) return `Congratulation! You have passed the test with ${accuracyPercent}%`;
+    if (accuracyPercent >= 60) return `Good effort! You have passed the test with ${accuracyPercent}%`;
+    if (accuracyPercent >= 40) return `Don't worry - practice makes perfect! You have passed the test with ${accuracyPercent}%`;
+    return `Keep going! Every attempt makes you stronger. You scored ${accuracyPercent}%`;
   }
 }
 

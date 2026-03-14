@@ -24,7 +24,7 @@ const lessonRouter = Router();
 
 
 lessonRouter.get('/mcq/all', protect, getAllMCQs);
- 
+
 
 lessonRouter.get('/essay/all', protect, getAllEssayQuestions);
 

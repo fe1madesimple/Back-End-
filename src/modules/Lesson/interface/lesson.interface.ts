@@ -57,84 +57,92 @@ export interface ModuleListResponse {
   }>;
 }
 
-// ─── Lesson MCQ Quiz ──────────────────────────────────────────────────────────
+// ─── Lesson MCQ ───────────────────────────────────────────────────────────────
 
 export interface LessonMCQItem {
   id: string;
   text: string;
-  options: Record<string, string>; // { A: "...", B: "...", C: "...", D: "..." }
+  options: Record<string, string>;
   points: number;
 }
 
 export interface LessonMCQResponse {
+  sessionId: string; // QuizSession created on fetch — needed for attemptMCQ
   lessonId: string;
   lessonTitle: string;
-  questions: LessonMCQItem[]; // max 7
+  totalQuestions: number;
+  questions: LessonMCQItem[];
 }
 
-// ─── Single-Essay Lesson Practice ────────────────────────────────────────────
-// Source: EssayQuestion model (dedicated 747-question bank).
-//
-// Flow:
-//   1. GET  /lessons/:id/essay     → returns one random EssayQuestion
-//   2. Student writes their answer
-//   3. POST /lessons/essay/submit  → AI grades → returns FULL review inline
-//      The submit response contains everything: question, userAnswer, sampleAnswer,
-//      feedback, score, strengths, improvements — frontend renders the review
-//      screen directly. No second API call. No separate review endpoint.
-//
-// History: EssayAttempt saved on submit with source='LESSON_PRACTICE'.
-//          This becomes the history record shown on the history page.
+export interface MCQAttemptInput {
+  sessionId: string;
+  answer: string; // 'A' | 'B' | 'C' | 'D' | '' (empty = skip)
+  timeTakenSeconds: number;
+}
+
+export interface MCQAttemptResponse {
+  attemptId: string;
+  isCorrect: boolean;
+  correctAnswer: string;
+  explanation: string | null;
+  isLastQuestion: boolean; // true → frontend shows "View Results" instead of "Continue"
+}
+
+export interface QuizResultsResponse {
+  sessionId: string;
+  score: number; // correct answers — whole number
+  total: number; // total questions
+  accuracyPercent: number; // whole number, no decimals
+  avgTimePerQuestionSeconds: number; // whole number, no decimals
+  quizStreak: number; // consecutive days with ≥1 completed session
+  motivationalMessage: string;
+  badgeUnlocked: boolean; // true only on 100%
+  completedAt: string; // ISO string
+}
+
+// ─── Lesson Essay ─────────────────────────────────────────────────────────────
 
 export interface LessonEssayQuestion {
-  id: string;       // EssayQuestion.id — pass back as essayQuestionId on submit
-  text: string;     // the full question prompt
-  subject: string;  // e.g. "Contract Law"
+  id: string;
+  text: string;
+  subject: string;
 }
 
 export interface GetLessonEssayResponse {
+  practiceSessionId: string; // PracticeSession created on fetch — needed for submit
   lessonId: string;
   lessonTitle: string;
-  subject: string;       // e.g. "Contract Law"  — for the breadcrumb
-  moduleOrder: number;   // e.g. 1  → displays as "Module 1"
-  moduleName: string;    // e.g. "Formation of Contract"
-  lessonOrder: number;   // e.g. 1  → displays as "Lesson 1"
+  subject: string;
+  moduleOrder: number;
+  moduleName: string;
+  lessonOrder: number;
   question: LessonEssayQuestion;
 }
 
 export interface SubmitLessonEssayInput {
-  lessonId: string;
-  essayQuestionId: string; // EssayQuestion.id from GET /lessons/:id/essay
+  practiceSessionId: string; // replaces lessonId + essayQuestionId
   answerText: string;
 }
 
-// This single response powers the entire review screen.
-// No follow-up request needed.
 export interface SubmitLessonEssayResponse {
   attemptId: string;
   lessonId: string;
   lessonTitle: string;
-
-  // The question (so frontend can display it on the review screen)
-  question: LessonEssayQuestion;
-
-  // The student's answer echoed back
+  question: {
+    id: string;
+    text: string;
+    subject: string;
+  };
   userAnswer: string;
-
-  // Score
-  aiScore: number;       // out of 20
-  scoreOutOf: 20;
-  band: string;          // e.g. "Distinction", "Merit", "Pass", "Fail"
-  appPass: boolean;      // score >= 80/100 → 16/20 ("app pass" bar)
-  passed: boolean;       // score >= 50/100 → 10/20 (basic pass)
-
-  // Review content
+  aiScore: number;
+  scoreOutOf: number;
+  band: string;
+  appPass: boolean;
+  passed: boolean;
   feedback: object | null;
   strengths: string[];
   improvements: string[];
   sampleAnswer: string | null;
-
-  // Stats
   timeTakenSeconds: number;
   wordCount: number;
 }
