@@ -100,12 +100,12 @@ export const getAllLessonEssayQuestions = asyncHandler(async (req: Request, res:
   sendSuccess(res, 'All essay questions retrieved', result);
 });
 
-export const getAllMCQs = asyncHandler(async (req: Request, res: Response) => {
+export const getAllMCQs = asyncHandler(async (_req: Request, res: Response) => {
   const result = await lessonService.getAllMCQs();
   sendSuccess(res, 'All MCQs retrieved', result);
 });
 
-export const getAllEssayQuestions = asyncHandler(async (req: Request, res: Response) => {
+export const getAllEssayQuestions = asyncHandler(async (_req: Request, res: Response) => {
   const result = await lessonService.getAllEssayQuestions();
   sendSuccess(res, 'All essay questions retrieved', result);
 });

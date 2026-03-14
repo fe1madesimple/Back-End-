@@ -1,7 +1,7 @@
 // src/modules/practise/service/practise.service.ts
 
 import { prisma } from '@/shared/config';
-import { NotFoundError, BadRequestError } from '@/shared/utils';
+import { NotFoundError, BadRequestError, AppError } from '@/shared/utils';
 import achievementsService from '@/modules/achievement/service/achievements.service';
 import {
   PastQuestionsQuery,
@@ -537,3 +537,37 @@ Return ONLY valid JSON with this exact structure:
     tokensUsed: data.usage.input_tokens + data.usage.output_tokens,
   };
 }
+
+
+export async function failSimulation(userId: string, simulationId: string, reason: string) {
+    const simulation = await prisma.simulation.findUnique({
+      where: { id: simulationId },
+      select: { id: true, userId: true, startedAt: true, endedAt: true },
+    });
+ 
+    if (!simulation || simulation.userId !== userId) {
+      throw new AppError('Simulation not found');
+    }
+ 
+    // Already ended — idempotent, just return current state
+    if (simulation.endedAt) {
+      return { simulationId, alreadyEnded: true };
+    }
+ 
+    const now = new Date();
+    const totalTimeSeconds = Math.floor(
+      (now.getTime() - new Date(simulation.startedAt).getTime()) / 1000
+    );
+ 
+    await prisma.simulation.update({
+      where: { id: simulationId },
+      data: {
+        passed: false,
+        failReason: reason,
+        endedAt: now,
+        totalTimeSeconds,
+      },
+    });
+ 
+    return { simulationId, failed: true, reason, totalTimeSeconds };
+  }
