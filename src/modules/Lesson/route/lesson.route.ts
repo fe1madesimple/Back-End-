@@ -8,121 +8,119 @@ import {
   getModulesBySubject,
   getLessonById,
   getLessonMCQs,
+  attemptMCQ,
+  getQuizResults,
   getLessonEssayQuestion,
   submitLessonEssay,
   getAllLessonMCQs,
   getAllLessonEssayQuestions,
   getAllMCQs,
-  getAllEssayQuestions
+  getAllEssayQuestions,
 } from '../controller/lesson.controller';
 
 const lessonRouter = Router();
 
-// ─── ROUTE ORDER MATTERS ──────────────────────────────────────────────────────
-// Static routes (/subject/:x, /essay/submit) MUST be registered before
-// the dynamic /:id route, otherwise Express will try to match "essay" as a lessonId.
-
-
-lessonRouter.get('/mcq/all', protect, getAllMCQs);
-
-
-lessonRouter.get('/essay/all', protect, getAllEssayQuestions);
+// ─── Static routes FIRST (before /:id) ───────────────────────────────────────
 
 /**
  * @swagger
- * /api/v1/lessons/subject/{subjectId}/modules:
- *   get:
- *     summary: Get all modules for a subject with their lessons
- *     tags: [Lessons]
- *     security:
- *       - bearerAuth: []
- *     description: |
- *       Returns all published modules for a subject, each with its lessons array,
- *       user progress status (NOT_STARTED | IN_PROGRESS | COMPLETED),
- *       and completed/total lesson counts.
- *     parameters:
- *       - in: path
- *         name: subjectId
- *         required: true
- *         schema: { type: string }
- *     responses:
- *       200:
- *         description: Returns modules[] with lessons[], status, and progress
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 modules:
- *                   type: array
- *                   items:
- *                     type: object
- *                     properties:
- *                       id: { type: string }
- *                       name: { type: string }
- *                       slug: { type: string, nullable: true }
- *                       order: { type: integer }
- *                       status:
- *                         type: string
- *                         enum: [NOT_STARTED, IN_PROGRESS, COMPLETED]
- *                       progress:
- *                         type: object
- *                         properties:
- *                           completedLessons: { type: integer }
- *                           totalLessons: { type: integer }
- *                       lessons:
- *                         type: array
- *                         items:
- *                           type: object
- *                           properties:
- *                             id: { type: string }
- *                             title: { type: string }
- *                             order: { type: integer }
- */
-lessonRouter.get('/subject/:subjectId/modules', protect, getModulesBySubject);
-
-/**
- * @swagger
- * /api/v1/lessons/essay/submit:
+ * /api/v1/lessons/mcq/attempt:
  *   post:
- *     summary: Submit a lesson essay for AI grading
+ *     summary: Submit answer for the current MCQ question
  *     tags: [Lessons]
  *     security:
  *       - bearerAuth: []
  *     description: |
- *       Grades the student's answer using Claude AI and returns the COMPLETE
- *       review screen data in a single response. No follow-up request is needed.
- *
- *       The response includes:
- *       - The original question text
- *       - The student's answer (echoed back)
- *       - AI score out of 20 and grade band
- *       - appPass (score >= 80/100 → 16/20) and passed (score >= 50/100 → 10/20)
- *       - Structured feedback, strengths[], improvements[]
- *       - sampleAnswer — the ideal answer for comparison
- *
- *       The EssayAttempt is saved with source=LESSON_PRACTICE and will appear
- *       in the student's history.
- *
- *       NOTE: essayQuestionId is an EssayQuestion.id (from the dedicated question
- *       bank), NOT a Question.id from the MCQ/practice model.
+ *       Called once per question. Backend resolves the current question from
+ *       the session — no questionId needed from frontend.
+ *       Returns correctAnswer and explanation immediately after submit.
+ *       When isLastQuestion is true, call GET /mcq/results/:sessionId next.
  *     requestBody:
  *       required: true
  *       content:
  *         application/json:
  *           schema:
  *             type: object
- *             required: [lessonId, essayQuestionId, answerText]
+ *             required: [sessionId, answer, timeTakenSeconds]
  *             properties:
- *               lessonId:
- *                 type: string
- *                 description: The lesson the student was practising on
- *               essayQuestionId:
- *                 type: string
- *                 description: EssayQuestion.id from GET /lessons/:id/essay
- *               answerText:
- *                 type: string
- *                 description: The student's written answer (min ~20 words)
+ *               sessionId: { type: string }
+ *               answer: { type: string, description: "A | B | C | D | '' (empty = skip)" }
+ *               timeTakenSeconds: { type: integer }
+ *     responses:
+ *       200:
+ *         description: Attempt recorded
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 attemptId: { type: string }
+ *                 isCorrect: { type: boolean }
+ *                 correctAnswer: { type: string }
+ *                 explanation: { type: string, nullable: true }
+ *                 isLastQuestion: { type: boolean }
+ */
+lessonRouter.post('/mcq/attempt', protect, attemptMCQ);
+
+/**
+ * @swagger
+ * /api/v1/lessons/mcq/results/{sessionId}:
+ *   get:
+ *     summary: Get quiz results and close the session
+ *     tags: [Lessons]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Called once after the last question. Marks session as completed.
+ *       Returns score, accuracy, avg time, streak, motivational message.
+ *       All numbers are whole — no decimals. Safe to call twice (idempotent).
+ *     parameters:
+ *       - in: path
+ *         name: sessionId
+ *         required: true
+ *         schema: { type: string }
+ *     responses:
+ *       200:
+ *         description: Quiz results
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 sessionId: { type: string }
+ *                 score: { type: integer, description: "Correct answers count" }
+ *                 total: { type: integer }
+ *                 accuracyPercent: { type: integer }
+ *                 avgTimePerQuestionSeconds: { type: integer }
+ *                 quizStreak: { type: integer, description: "Consecutive days with ≥1 completed session" }
+ *                 motivationalMessage: { type: string }
+ *                 badgeUnlocked: { type: boolean, description: "True only on 100%" }
+ *                 completedAt: { type: string, format: date-time }
+ */
+lessonRouter.get('/mcq/results/:sessionId', protect, getQuizResults);
+
+/**
+ * @swagger
+ * /api/v1/lessons/essay/submit:
+ *   post:
+ *     summary: Submit and grade a lesson essay
+ *     tags: [Lessons]
+ *     security:
+ *       - bearerAuth: []
+ *     description: |
+ *       Grades the essay with Claude AI. Returns the full review screen data
+ *       in one response — question, userAnswer, sampleAnswer, score, feedback.
+ *       practiceSessionId comes from GET /lessons/:id/essay.
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required: [practiceSessionId, answerText]
+ *             properties:
+ *               practiceSessionId: { type: string }
+ *               answerText: { type: string }
  *     responses:
  *       200:
  *         description: Essay graded — full review data returned
@@ -132,126 +130,136 @@ lessonRouter.get('/subject/:subjectId/modules', protect, getModulesBySubject);
  *               type: object
  *               properties:
  *                 attemptId: { type: string }
- *                 lessonId: { type: string }
- *                 lessonTitle: { type: string }
- *                 question:
- *                   type: object
- *                   properties:
- *                     id: { type: string }
- *                     text: { type: string }
- *                     subject: { type: string }
- *                 userAnswer: { type: string }
  *                 aiScore: { type: integer, description: "Score out of 20" }
  *                 scoreOutOf: { type: integer, example: 20 }
- *                 band:
- *                   type: string
- *                   example: "Merit"
- *                   description: "Distinction | Merit | Pass | Fail"
- *                 appPass:
- *                   type: boolean
- *                   description: "true if score >= 16/20 (80%)"
- *                 passed:
- *                   type: boolean
- *                   description: "true if score >= 10/20 (50%)"
+ *                 band: { type: string }
+ *                 passed: { type: boolean }
+ *                 appPass: { type: boolean }
+ *                 strengths: { type: array, items: { type: string } }
+ *                 improvements: { type: array, items: { type: string } }
+ *                 sampleAnswer: { type: string, nullable: true }
  *                 feedback: { type: object, nullable: true }
- *                 strengths:
- *                   type: array
- *                   items: { type: string }
- *                 improvements:
- *                   type: array
- *                   items: { type: string }
- *                 sampleAnswer:
- *                   type: string
- *                   nullable: true
- *                   description: The ideal answer for the student to compare against
- *                 timeTakenSeconds: { type: integer }
- *                 wordCount: { type: integer }
  */
 lessonRouter.post('/essay/submit', protect, submitLessonEssay);
 
 /**
  * @swagger
- * /api/v1/lessons/{id}:
+ * /api/v1/lessons/admin/mcqs:
  *   get:
- *     summary: Get full lesson detail — video, transcript, progress, sidebar
+ *     summary: Get all MCQ questions across all lessons (admin)
  *     tags: [Lessons]
  *     security:
  *       - bearerAuth: []
- *     description: |
- *       Returns the full lesson detail page data:
- *       - videoUrl, videoDuration, transcript, content
- *       - User's current progress (videoWatchedSeconds, isCompleted, etc.)
- *       - subjectModules: full module/lesson list for the sidebar navigation
- *
- *       Creates a userLessonProgress record (all zeros) if first time accessing.
+ *     responses:
+ *       200:
+ *         description: Full MCQ list with correct answers
+ */
+lessonRouter.get('/admin/mcqs', protect, getAllMCQs);
+
+/**
+ * @swagger
+ * /api/v1/lessons/admin/essays:
+ *   get:
+ *     summary: Get all essay questions across all lessons (admin)
+ *     tags: [Lessons]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Full essay question list
+ */
+lessonRouter.get('/admin/essays', protect, getAllEssayQuestions);
+
+// ─── Dynamic /:id routes AFTER static ────────────────────────────────────────
+
+/**
+ * @swagger
+ * /api/v1/lessons/{id}:
+ *   get:
+ *     summary: Get lesson detail with user progress
+ *     tags: [Lessons]
+ *     security:
+ *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id
  *         required: true
  *         schema: { type: string }
- *         description: Lesson ID
  *     responses:
  *       200:
- *         description: Full lesson data
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 id: { type: string }
- *                 title: { type: string }
- *                 slug: { type: string, nullable: true }
- *                 videoUrl: { type: string, nullable: true }
- *                 videoDuration: { type: number, nullable: true }
- *                 transcript: { type: string, nullable: true }
- *                 content: { type: string, nullable: true }
- *                 order: { type: integer }
- *                 module:
- *                   type: object
- *                   properties:
- *                     id: { type: string }
- *                     name: { type: string }
- *                     subjectId: { type: string }
- *                     subjectName: { type: string }
- *                 userProgress:
- *                   type: object
- *                   nullable: true
- *                   properties:
- *                     isCompleted: { type: boolean }
- *                     videoWatchedSeconds: { type: number }
- *                     timeSpentSeconds: { type: number }
- *                     lastAccessedAt: { type: string, format: date-time, nullable: true }
- *                 subjectModules:
- *                   type: array
- *                   items:
- *                     type: object
- *                     properties:
- *                       id: { type: string }
- *                       name: { type: string }
- *                       order: { type: integer }
- *                       lessons:
- *                         type: array
- *                         items:
- *                           type: object
- *                           properties:
- *                             id: { type: string }
- *                             title: { type: string }
- *                             order: { type: integer }
+ *         description: Lesson detail including video, transcript, module tree, user progress
  */
 lessonRouter.get('/:id', protect, getLessonById);
 
 /**
  * @swagger
+ * /api/v1/lessons/{id}/video-progress:
+ *   patch:
+ *     summary: Track video watch progress for a lesson
+ *     tags: [Lessons]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema: { type: string }
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required: [currentTime]
+ *             properties:
+ *               currentTime: { type: integer, description: "Seconds watched" }
+ *               videoDuration: { type: integer, description: "Total video length in seconds" }
+ *     responses:
+ *       200:
+ *         description: Progress tracked
+ */
+lessonRouter.patch('/:id/video-progress', protect, trackVideoProgress);
+
+/**
+ * @swagger
+ * /api/v1/lessons/{id}/time:
+ *   patch:
+ *     summary: Track time spent on a lesson
+ *     tags: [Lessons]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema: { type: string }
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required: [seconds]
+ *             properties:
+ *               seconds: { type: integer }
+ *     responses:
+ *       200:
+ *         description: Time tracked
+ */
+lessonRouter.patch('/:id/time', protect, trackTimeSpent);
+
+/**
+ * @swagger
  * /api/v1/lessons/{id}/mcq:
  *   get:
- *     summary: Get up to 7 randomised MCQ questions for a lesson
+ *     summary: Start MCQ session — get up to 7 randomised questions
  *     tags: [Lessons]
  *     security:
  *       - bearerAuth: []
  *     description: |
- *       Returns up to 7 MCQ questions linked to this lesson, randomised on every call.
- *       Used for the "Quick Quizzes" button on the lesson page.
- *       Options are returned as a key-value map: { A: "...", B: "...", C: "...", D: "..." }
+ *       Creates a QuizSession immediately and returns sessionId alongside questions.
+ *       Store sessionId — required for every POST /mcq/attempt call.
+ *       correctAnswer is NOT returned here, only revealed after each submit.
  *     parameters:
  *       - in: path
  *         name: id
@@ -260,14 +268,16 @@ lessonRouter.get('/:id', protect, getLessonById);
  *         description: Lesson ID
  *     responses:
  *       200:
- *         description: Returns lessonId, lessonTitle, and questions[] (max 7)
+ *         description: Session created, questions returned
  *         content:
  *           application/json:
  *             schema:
  *               type: object
  *               properties:
+ *                 sessionId: { type: string }
  *                 lessonId: { type: string }
  *                 lessonTitle: { type: string }
+ *                 totalQuestions: { type: integer }
  *                 questions:
  *                   type: array
  *                   items:
@@ -284,23 +294,35 @@ lessonRouter.get('/:id/mcq', protect, getLessonMCQs);
 
 /**
  * @swagger
+ * /api/v1/lessons/{id}/mcq/all:
+ *   get:
+ *     summary: Get all MCQs for a lesson including correct answers (admin/debug)
+ *     tags: [Lessons]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema: { type: string }
+ *     responses:
+ *       200:
+ *         description: Full MCQ list with correctAnswer and explanation
+ */
+lessonRouter.get('/:id/mcq/all', protect, getAllLessonMCQs);
+
+/**
+ * @swagger
  * /api/v1/lessons/{id}/essay:
  *   get:
- *     summary: Get a random essay question for lesson practice
+ *     summary: Start essay practice — get a random question for this lesson
  *     tags: [Lessons]
  *     security:
  *       - bearerAuth: []
  *     description: |
- *       Returns one randomly selected essay question for the student to practise on.
- *       Source: EssayQuestion bank (the dedicated 747-question bank).
- *
- *       Lookup priority:
- *       1. EssayQuestions linked directly to this lesson
- *       2. Any EssayQuestion in the same subject (fallback)
- *
- *       Triggered when the student clicks "Essay Practice" on the lesson page.
- *       The returned question.id is an EssayQuestion.id — pass it as
- *       essayQuestionId when submitting.
+ *       Creates a PracticeSession immediately and returns practiceSessionId.
+ *       Store practiceSessionId — only thing needed for POST /essay/submit.
+ *       Priority 1: questions linked to this lesson. Priority 2: same subject.
  *     parameters:
  *       - in: path
  *         name: id
@@ -309,20 +331,20 @@ lessonRouter.get('/:id/mcq', protect, getLessonMCQs);
  *         description: Lesson ID
  *     responses:
  *       200:
- *         description: One random essay question
+ *         description: Practice session created, question returned
  *         content:
  *           application/json:
  *             schema:
  *               type: object
  *               properties:
+ *                 practiceSessionId: { type: string }
  *                 lessonId: { type: string }
  *                 lessonTitle: { type: string }
+ *                 subject: { type: string }
  *                 question:
  *                   type: object
  *                   properties:
- *                     id:
- *                       type: string
- *                       description: EssayQuestion.id — pass as essayQuestionId on submit
+ *                     id: { type: string }
  *                     text: { type: string }
  *                     subject: { type: string }
  */
@@ -330,131 +352,12 @@ lessonRouter.get('/:id/essay', protect, getLessonEssayQuestion);
 
 /**
  * @swagger
- * /api/v1/lessons/{id}/track-video:
- *   post:
- *     summary: Track video watch progress for a lesson
- *     tags: [Lessons]
- *     security:
- *       - bearerAuth: []
- *     description: |
- *       Called periodically as the student watches the lesson video.
- *       Marks lesson as completed once currentTime >= 90% of total duration.
- *       Triggers recalculation of module and subject progress.
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema: { type: string }
- *         description: Lesson ID
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             required: [currentTime]
- *             properties:
- *               currentTime:
- *                 type: number
- *                 description: Current video position in seconds
- *               videoDuration:
- *                 type: number
- *                 description: Total video duration in seconds (stored if not already set)
- *     responses:
- *       200:
- *         description: Progress tracked
- */
-lessonRouter.post('/:id/track-video', protect, trackVideoProgress);
-
-/**
- * @swagger
- * /api/v1/lessons/{id}/track-time:
- *   post:
- *     summary: Increment time spent on a lesson
- *     tags: [Lessons]
- *     security:
- *       - bearerAuth: []
- *     description: Adds the given seconds to the user's time spent on this lesson and subject.
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema: { type: string }
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             required: [seconds]
- *             properties:
- *               seconds:
- *                 type: integer
- *                 description: Seconds to add
- *     responses:
- *       200:
- *         description: Time tracked successfully
- */
-lessonRouter.post('/:id/track-time', protect, trackTimeSpent);
-
-/**
- * @swagger
- * /api/v1/lessons/{id}/mcq/all:
- *   get:
- *     summary: Get ALL MCQ questions for a lesson (no cap)
- *     tags: [Lessons]
- *     security:
- *       - bearerAuth: []
- *     description: |
- *       Returns every published MCQ question linked to this lesson, ordered by question order.
- *       Unlike GET /lessons/:id/mcq which caps at 7 and randomises,
- *       this returns the complete set — useful for admin review or frontend caching.
- *       Includes correctAnswer and explanation fields.
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema: { type: string }
- *     responses:
- *       200:
- *         description: All MCQ questions for this lesson
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 lessonId: { type: string }
- *                 lessonTitle: { type: string }
- *                 total: { type: integer }
- *                 questions:
- *                   type: array
- *                   items:
- *                     type: object
- *                     properties:
- *                       id: { type: string }
- *                       text: { type: string }
- *                       options:
- *                         type: object
- *                         additionalProperties: { type: string }
- *                       points: { type: integer }
- *                       correctAnswer: { type: string }
- *                       explanation: { type: string, nullable: true }
- */
-lessonRouter.get('/:id/mcq/all', protect, getAllLessonMCQs);
-
-/**
- * @swagger
  * /api/v1/lessons/{id}/essay/all:
  *   get:
- *     summary: Get ALL essay questions for a lesson from the question bank
+ *     summary: Get all essay questions for a lesson (admin/debug)
  *     tags: [Lessons]
  *     security:
  *       - bearerAuth: []
- *     description: |
- *       Returns every published EssayQuestion from the dedicated essay bank
- *       that is linked directly to this lesson (by lessonId).
- *       Unlike GET /lessons/:id/essay which picks one at random,
- *       this returns the complete set.
  *     parameters:
  *       - in: path
  *         name: id
@@ -462,26 +365,27 @@ lessonRouter.get('/:id/mcq/all', protect, getAllLessonMCQs);
  *         schema: { type: string }
  *     responses:
  *       200:
- *         description: All essay questions for this lesson
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 lessonId: { type: string }
- *                 lessonTitle: { type: string }
- *                 subject: { type: string }
- *                 total: { type: integer }
- *                 questions:
- *                   type: array
- *                   items:
- *                     type: object
- *                     properties:
- *                       id: { type: string }
- *                       text: { type: string }
- *                       subject: { type: string }
+ *         description: Full essay question list for this lesson
  */
 lessonRouter.get('/:id/essay/all', protect, getAllLessonEssayQuestions);
 
+/**
+ * @swagger
+ * /api/v1/lessons/subject/{subjectId}/modules:
+ *   get:
+ *     summary: Get all modules for a subject with user progress
+ *     tags: [Lessons]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: subjectId
+ *         required: true
+ *         schema: { type: string }
+ *     responses:
+ *       200:
+ *         description: Module list with lessons and progress per module
+ */
+lessonRouter.get('/subject/:subjectId/modules', protect, getModulesBySubject);
 
 export default lessonRouter;
