@@ -33,3 +33,4 @@ export const STRIPE_CONFIG = {
 
 console.log('✅ Stripe configured');
 console.log('✅ Webhook secret length:', STRIPE_CONFIG.WEBHOOK_SECRET.length);
+   

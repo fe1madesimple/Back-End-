@@ -229,8 +229,10 @@ enum SubscriptionStatus {
 }
 
 enum PlanType {
-  MONTHLY
-  ANNUAL
+  STANDARD_MONTHLY
+  STANDARD_ANNUAL
+  PREMIUM_MONTHLY
+  PREMIUM_ANNUAL
 }
 
 enum PaymentStatus {
@@ -969,3 +971,4 @@ enum QuestionType {
   MCQ
   ESSAY
 }
+f
