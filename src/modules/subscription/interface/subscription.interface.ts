@@ -1,13 +1,17 @@
+// src/modules/subscription/interface/subscription.interface.ts
+
 import { SubscriptionStatus, PlanType } from '@prisma/client';
 
-// Request DTOs
+// ─── Request DTOs ─────────────────────────────────────────────────────────────
+
 export interface ICreateCheckoutSessionRequest {
-  priceId: string;
+  priceId: string; // one of the 4 price IDs — frontend picks based on toggle + card
   successUrl: string;
   cancelUrl: string;
 }
 
-// Response DTOs
+// ─── Response DTOs ────────────────────────────────────────────────────────────
+
 export interface ICheckoutSessionResponse {
   sessionId: string;
   url: string;
@@ -29,6 +33,36 @@ export interface ISubscriptionResponse {
   willRenew: boolean;
 }
 
+// ─── Subscription Config Response ────────────────────────────────────────────
+// Returned by GET /subscription/config
+// Frontend uses this to render the pricing cards and pass the correct priceId
+// to createCheckoutSession when user clicks a card.
+
+export interface IPlanConfig {
+  priceId: string;
+  amount: number; // in cents e.g. 900 = €9.00
+  currency: string; // 'EUR'
+  interval: string; // 'month' | 'year'
+  label: string; // 'Standard Monthly' etc
+}
+
+export interface ISubscriptionConfigResponse {
+  isEligibleForTrial: boolean; // false if user has ever had a stripe subscription
+  trialDays: number; // 7
+  plans: {
+    standard: {
+      monthly: IPlanConfig;
+      annual: IPlanConfig;
+    };
+    premium: {
+      monthly: IPlanConfig;
+      annual: IPlanConfig;
+    };
+  };
+}
+
+// ─── Webhook ──────────────────────────────────────────────────────────────────
+
 export enum StripeWebhookEvent {
   CHECKOUT_SESSION_COMPLETED = 'checkout.session.completed',
   CUSTOMER_SUBSCRIPTION_CREATED = 'customer.subscription.created',
@@ -37,7 +71,7 @@ export enum StripeWebhookEvent {
   INVOICE_PAYMENT_SUCCEEDED = 'invoice.payment_succeeded',
   INVOICE_PAYMENT_FAILED = 'invoice.payment_failed',
   CUSTOMER_SUBSCRIPTION_TRIAL_WILL_END = 'customer.subscription.trial_will_end',
-  PAYMENT_INTENT_PAYMENT_FAILED = 'payment_intent.payment_failed', 
+  PAYMENT_INTENT_PAYMENT_FAILED = 'payment_intent.payment_failed',
 }
 
 export interface IWebhookResponse {
