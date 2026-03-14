@@ -290,7 +290,7 @@ class HistoryService {
 
     // QuizSession has no questionAttempts relation — fetch via QuestionAttempt model separately.
     const rawAttempts = (await prisma.questionAttempt.findMany({
-      where: { sessionId: session.id },
+      where: { quizSessionId: session.id },
       include: {
         question: {
           select: {
