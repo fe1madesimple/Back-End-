@@ -397,7 +397,7 @@ class LessonService {
         isCompleted: false,
         questionIds: selected.map((q) => q.id),
       },
-    });
+    });   
 
     return {
       sessionId: session.id,

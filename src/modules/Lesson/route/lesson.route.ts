@@ -20,7 +20,7 @@ import {
 
 const lessonRouter = Router();
 
-// ─── Static routes FIRST (before /:id) ───────────────────────────────────────
+
 
 /**
  * @swagger
@@ -170,7 +170,6 @@ lessonRouter.get('/admin/mcqs', protect, getAllMCQs);
  */
 lessonRouter.get('/admin/essays', protect, getAllEssayQuestions);
 
-// ─── Dynamic /:id routes AFTER static ────────────────────────────────────────
 
 /**
  * @swagger
@@ -193,7 +192,7 @@ lessonRouter.get('/:id', protect, getLessonById);
 
 /**
  * @swagger
- * /api/v1/lessons/{id}/video-progress:
+ * /api/v1/lessons/{id}/track-video:
  *   patch:
  *     summary: Track video watch progress for a lesson
  *     tags: [Lessons]
@@ -218,11 +217,11 @@ lessonRouter.get('/:id', protect, getLessonById);
  *       200:
  *         description: Progress tracked
  */
-lessonRouter.patch('/:id/video-progress', protect, trackVideoProgress);
+lessonRouter.patch('/:id/track-video', protect, trackVideoProgress);
 
 /**
  * @swagger
- * /api/v1/lessons/{id}/time:
+ * /api/v1/lessons/{id}/track-time:
  *   patch:
  *     summary: Track time spent on a lesson
  *     tags: [Lessons]
@@ -246,7 +245,7 @@ lessonRouter.patch('/:id/video-progress', protect, trackVideoProgress);
  *       200:
  *         description: Time tracked
  */
-lessonRouter.patch('/:id/time', protect, trackTimeSpent);
+lessonRouter.patch('/:id/track-time', protect, trackTimeSpent);
 
 /**
  * @swagger
