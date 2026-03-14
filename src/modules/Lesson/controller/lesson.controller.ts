@@ -51,7 +51,6 @@ export const getLessonById = asyncHandler(async (req: Request, res: Response) =>
 });
 
 export const getLessonMCQs = asyncHandler(async (req: Request, res: Response) => {
-  
   const { id } = req.params;
 
   if (!id) throw new AppError('lesson id is required');
@@ -62,7 +61,6 @@ export const getLessonMCQs = asyncHandler(async (req: Request, res: Response) =>
 });
 
 export const getLessonEssayQuestion = asyncHandler(async (req: Request, res: Response) => {
-  
   const { id } = req.params;
 
   if (!id) throw new AppError('lesson id is required');
@@ -89,17 +87,25 @@ export const submitLessonEssay = asyncHandler(async (req: Request, res: Response
 });
 
 export const getAllLessonMCQs = asyncHandler(async (req: Request, res: Response) => {
-  
   const { id } = req.params;
   if (!id) throw new AppError('lesson id is required');
   const result = await lessonService.getAllLessonMCQs(id);
   sendSuccess(res, 'All MCQ questions retrieved', result);
 });
-   
+
 export const getAllLessonEssayQuestions = asyncHandler(async (req: Request, res: Response) => {
-  
   const { id } = req.params;
   if (!id) throw new AppError('lesson id is required');
   const result = await lessonService.getAllLessonEssayQuestions(id);
+  sendSuccess(res, 'All essay questions retrieved', result);
+});
+
+export const getAllMCQs = asyncHandler(async (req: Request, res: Response) => {
+  const result = await lessonService.getAllMCQs();
+  sendSuccess(res, 'All MCQs retrieved', result);
+});
+
+export const getAllEssayQuestions = asyncHandler(async (req: Request, res: Response) => {
+  const result = await lessonService.getAllEssayQuestions();
   sendSuccess(res, 'All essay questions retrieved', result);
 });
