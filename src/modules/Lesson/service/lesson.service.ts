@@ -542,8 +542,7 @@ class LessonService {
     const total = session.totalQuestions;
     const score = session.correctAnswers;
     const accuracyPercent = total > 0 ? Math.round((score / total) * 100) : 0;
-    const avgTimePerQuestionSeconds =
-      total > 0 ? Math.round(session.totalTimeSeconds / total) : 0;
+    const avgTimePerQuestionSeconds = total > 0 ? Math.round(session.totalTimeSeconds / total) : 0;
 
     // ── Streak: consecutive calendar days with ≥1 completed QuizSession
     const completedSessions = await prisma.quizSession.findMany({
@@ -704,6 +703,7 @@ class LessonService {
     const aiScore20 = Math.round((grading.score / 100) * 20);
 
     // Save EssayAttempt — source = LESSON_PRACTICE, simulationId links to session
+
     const attempt = await prisma.essayAttempt.create({
       data: {
         userId,
@@ -723,7 +723,7 @@ class LessonService {
         model: 'claude-sonnet-4-20250514',
         tokensUsed: grading.tokensUsed,
         source: 'LESSON_PRACTICE',
-        simulationId: practiceSessionId,
+        simulationId: null,
       } as any,
       select: { id: true },
     });
@@ -900,11 +900,7 @@ class LessonService {
   // Called after each answer — returns the next question by index.
   // Also sets questionsAnswered = index so attemptMCQ always grades the right question.
 
-  async getNextQuestion(
-    userId: string,
-    sessionId: string,
-    index: number
-  ): Promise<any> {
+  async getNextQuestion(userId: string, sessionId: string, index: number): Promise<any> {
     const session = await prisma.quizSession.findUnique({
       where: { id: sessionId },
       select: {
@@ -956,16 +952,16 @@ class LessonService {
     const isLast = currentQuestion === session.totalQuestions;
 
     return {
-      sessionId:      session.id,
+      sessionId: session.id,
       subject,
       totalQuestions: session.totalQuestions,
       currentQuestion,
       isLast,
       question: {
-        id:      question.id,
-        text:    question.text,
+        id: question.id,
+        text: question.text,
         options: question.options as Record<string, string>,
-        points:  question.points,
+        points: question.points,
       },
     };
   }
@@ -993,9 +989,12 @@ class LessonService {
 
   private getMotivationalMessage(accuracyPercent: number): string {
     if (accuracyPercent === 100) return 'Congratulation! You have passed the test with 100%';
-    if (accuracyPercent >= 80) return `Congratulation! You have passed the test with ${accuracyPercent}%`;
-    if (accuracyPercent >= 60) return `Good effort! You have passed the test with ${accuracyPercent}%`;
-    if (accuracyPercent >= 40) return `Don't worry - practice makes perfect! You have passed the test with ${accuracyPercent}%`;
+    if (accuracyPercent >= 80)
+      return `Congratulation! You have passed the test with ${accuracyPercent}%`;
+    if (accuracyPercent >= 60)
+      return `Good effort! You have passed the test with ${accuracyPercent}%`;
+    if (accuracyPercent >= 40)
+      return `Don't worry - practice makes perfect! You have passed the test with ${accuracyPercent}%`;
     return `Keep going! Every attempt makes you stronger. You scored ${accuracyPercent}%`;
   }
 }
