@@ -9,7 +9,6 @@ import {
   HistoryItemSource,
   MCQSessionDetailResponse,
   EssayAttemptDetailResponse,
-  SimulationDetailResponse,
   SimulationEssayItem,
 } from '../interface/history.interface';
 
