@@ -164,7 +164,61 @@ export async function startPracticeService(
     startedAt: session.startedAt,
   };
 }
- 
+
+export async function getEssayQuestionsService(filters: {
+  subject?: string;
+  year?: number | string;
+}) {
+  const { subject, year } = filters;
+
+  const where: any = {
+    type: 'ESSAY',
+    isPublished: true,
+  };
+
+  if (subject) {
+    where.subject = { equals: subject, mode: 'insensitive' };
+  }
+
+  if (year !== undefined && year !== null && year !== '') {
+    const yearInt = typeof year === 'string' ? parseInt(year as string, 10) : year;
+    if (!isNaN(yearInt)) where.year = yearInt;
+  }
+
+  const questions = await prisma.question.findMany({
+    where,
+    select: {
+      id: true,
+      text: true,
+      subject: true,
+      year: true,
+      examType: true,
+      description: true,
+    },
+    orderBy: [{ subject: 'asc' }, { year: 'desc' }],
+  });
+
+  // Also return distinct subjects and years for frontend filter dropdowns
+  const allQuestions = await prisma.question.findMany({
+    where: { type: 'ESSAY', isPublished: true },
+    select: { subject: true, year: true },
+  });
+
+  const subjects = [
+    ...new Set(allQuestions.map((q) => q.subject).filter(Boolean)),
+  ].sort() as string[];
+
+  const years = [...new Set(allQuestions.map((q) => q.year).filter(Boolean))].sort(
+    (a, b) => (b as number) - (a as number)
+  ) as number[];
+
+  return {
+    total: questions.length,
+    filters: { subjects, years },
+    questions,
+  };
+}
+
 
 // ── getPracticeQuestionService ───────────────────────────────
 // The single endpoint for ALL navigation: initial load, box click,
