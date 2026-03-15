@@ -8,7 +8,8 @@ import {
   submitPracticeService,
   getPracticeResultsService,
   getPracticeAttemptReviewService,
-  failSimulationService
+  failSimulationService,
+  getEssayQuestionsService
 } from '../service/practise.service';
 import { AppError } from '@/shared/utils';
 import { sendSuccess } from '@/shared/utils';
@@ -29,6 +30,17 @@ export async function getPastQuestions(req: Request, res: Response) {
     res.status(500).json({ success: false, message: 'Failed to retrieve past questions' });
   }
 }
+
+export async function getEssayQuestions(req: Request, res: Response) {
+  const { subject, year } = req.query;
+
+  const result = await getEssayQuestionsService({
+    subject: subject as string | undefined,
+    year: year as string | undefined,
+  });
+
+  sendSuccess(res, 'Essay questions retrieved', result);
+};
 
 export async function startPractice(req: Request, res: Response) {
   try {
