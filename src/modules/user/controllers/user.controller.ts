@@ -1,11 +1,11 @@
 import { Request, Response } from 'express';
 import { asyncHandler } from '@/utils/asynHandler';
-import { sendSuccess} from '@/utils/response';
+import { sendSuccess } from '@/utils/response';
 import userService from '../services/user.service';
 import {
   UpdateProfileInput,
   UpdatePreferencesInput,
-  ChangePasswordInput
+  ChangePasswordInput,
 } from '../interfaces/user.interfaces';
 
 export const getProfile = asyncHandler(async (req: Request, res: Response) => {
@@ -76,14 +76,9 @@ export const skipOnboarding = asyncHandler(async (req: Request, res: Response) =
 
 export const exportUserData = asyncHandler(async (req: Request, res: Response) => {
   const userId = req.user!.user.id;
-
-  const pdfBuffer = await userService.exportUserData(userId);
-
-  const filename = `fe1-progress-report-${new Date().toISOString().split('T')[0]}.pdf`;
+  const buffer = await userService.exportUserData(userId);
 
   res.setHeader('Content-Type', 'application/pdf');
-  res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
-  res.setHeader('Content-Length', pdfBuffer.length);
-
-  res.send(pdfBuffer);
+  res.setHeader('Content-Disposition', 'attachment; filename="fe1-progress-report.pdf"');
+  res.end(buffer);
 });

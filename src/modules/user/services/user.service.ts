@@ -390,7 +390,7 @@ class UserService {
         : 0;
     const completedQuizSessions = quizSessions.filter((q) => q.isCompleted).length;
 
-    // ── Streak ──────────────────────────────────────────────────────────────────
+    // ── Streak ────────────────────────────────────────────────────────────────── 
     let currentStreak = 0;
     const sortedSessions = studySessions
       .filter((s) => s.todayTotalSeconds > 0)
