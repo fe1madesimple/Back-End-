@@ -1404,12 +1404,7 @@ class ProgressService {
     oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
 
     const lastWeekAttempts = await prisma.essayAttempt.findMany({
-      where: {
-        userId,
-        createdAt: {
-          gte: oneWeekAgo,
-        },
-      },
+      where: { userId, createdAt: { gte: oneWeekAgo } },
       select: {
         aiScore: true,
         question: { select: { subject: true } },
@@ -1417,13 +1412,7 @@ class ProgressService {
     });
 
     const previousWeekAttempts = await prisma.essayAttempt.findMany({
-      where: {
-        userId,
-        createdAt: {
-          gte: twoWeeksAgo,
-          lt: oneWeekAgo,
-        },
-      },
+      where: { userId, createdAt: { gte: twoWeeksAgo, lt: oneWeekAgo } },
       select: {
         aiScore: true,
         question: { select: { subject: true } },
@@ -1434,7 +1423,7 @@ class ProgressService {
       if (attempts.length === 0) return 0;
       const scores = attempts.map((a) => a.aiScore).filter((s) => s !== null);
       return scores.length > 0
-        ? Math.round(scores.reduce((sum, s) => sum + s!, 0) / scores.length)
+        ? Math.round(scores.reduce((sum: number, s: number) => sum + s, 0) / scores.length)
         : 0;
     };
 
@@ -1445,7 +1434,8 @@ class ProgressService {
     const subjectPerformance: Record<string, { count: number; avgScore: number }> = {};
 
     lastWeekAttempts.forEach((attempt) => {
-      const subject = attempt.question.subject || 'General';
+      // ← FIXED: attempt.question is now nullable
+      const subject = attempt.question?.subject || 'General';
       if (!subjectPerformance[subject]) {
         subjectPerformance[subject] = { count: 0, avgScore: 0 };
       }

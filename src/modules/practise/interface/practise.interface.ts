@@ -167,8 +167,7 @@ export interface SubmitSimulationAnswerInput {
   questionId: string;
   answerText: string;
   currentQuestionIndex: number;
-}
-
+}  
 export interface FinishSimulationResponse {
   simulationId: string;
   overallScore: number;

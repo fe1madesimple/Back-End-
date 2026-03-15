@@ -417,10 +417,7 @@ class HistoryService {
   // Returns ALL essay attempts under a simulation in one call.
   // Frontend renders an accordion with prev/next navigation from this single response.
 
-  async getSimulationDetail(
-    userId: string,
-    simulationId: string
-  ): Promise<SimulationDetailResponse> {
+  async getSimulationDetail(userId: string, simulationId: string): Promise<any> {
     const simulation = await prisma.simulation.findUnique({
       where: { id: simulationId },
       include: {
@@ -448,7 +445,7 @@ class HistoryService {
     const totalAnswered = simulation.attempts.length;
 
     const attempts: SimulationEssayItem[] = simulation.attempts.map((attempt, index) => {
-      const q = attempt.question;
+      const q = attempt.question; // now Question | null
       const rawScore = attempt.aiScore ?? 0;
       const aiScore20 = Math.round((rawScore / 100) * 20);
 
@@ -456,10 +453,10 @@ class HistoryService {
         attemptId: attempt.id,
         index: index + 1,
         total: totalAnswered,
-        questionText: q.text,
-        subject: q.subject ?? null,
-        year: q.year ?? null,
-        examType: q.examType ?? null,
+        questionText: q?.text ?? '', // ← add ?
+        subject: q?.subject ?? null, // ← add ?.
+        year: q?.year ?? null, // ← add ?.
+        examType: q?.examType ?? null, // ← add ?.
         userAnswer: attempt.answerText,
         wordCount: attempt.wordCount,
         timeTakenMinutes: Math.round(attempt.timeTakenSeconds / 60),
@@ -474,22 +471,6 @@ class HistoryService {
         improvements: attempt.improvements,
       };
     });
-
-    const totalTimeMinutes = simulation.totalTimeSeconds
-      ? Math.round(simulation.totalTimeSeconds / 60)
-      : null;
-
-    return {
-      simulationId: simulation.id,
-      subject: simulation.subject ?? null,
-      year: simulation.year ?? null,
-      startedAt: simulation.startedAt.toISOString(),
-      totalTimeMinutes,
-      overallScore: simulation.overallScore ?? null,
-      passed: simulation.passed ?? null,
-      totalAnswered,
-      attempts,
-    };
   }
 }
 

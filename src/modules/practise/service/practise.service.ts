@@ -172,7 +172,6 @@ export async function getPracticeQuestionService(
     throw new BadRequestError('Invalid question index');
   }
 
-  // Resolve questionId from index — this is the source of truth
   const questionId = session.questionIds[questionIndex]!;
 
   const question = await prisma.question.findUnique({
@@ -190,21 +189,19 @@ export async function getPracticeQuestionService(
 
   if (!question) throw new NotFoundError('Question not found');
 
-  // Elapsed seconds from session start — session IS the timer
   const elapsedSeconds = Math.floor((Date.now() - session.startedAt.getTime()) / 1000);
 
-  // Get all attempted answers for this session
   const attempts = await prisma.essayAttempt.findMany({
     where: { userId, source: 'PRACTICE', simulationId: sessionId },
     select: { questionId: true, answerText: true },
   });
 
-  // Map answered questionIds back to their indexes for box highlighting
+  // ← FIXED: a.questionId is now string | null — use ?? '' so indexOf never gets null
   const answeredIndexes = attempts
-    .map((a) => session.questionIds.indexOf(a.questionId))
+    .map((a) => session.questionIds.indexOf(a.questionId ?? ''))
     .filter((i) => i !== -1);
 
-  // Pre-fill textarea if this question was already answered
+  // null !== questionId (string) so this is safe as-is
   const savedAttempt = attempts.find((a) => a.questionId === questionId);
 
   return {
@@ -219,7 +216,6 @@ export async function getPracticeQuestionService(
     savedAnswer: savedAttempt?.answerText ?? null,
   };
 }
-
 // ── submitPracticeService ────────────────────────────────────
 // No timerId — totalTimeSeconds = now - session.startedAt.
 // Frontend sends: { practiceSessionId, answers: [{ questionIndex, answerText }] }.
@@ -379,7 +375,7 @@ export async function getPracticeResultsService(
   // Resolve index for each attempt then sort by box position
   const scores: QuestionScoreItem[] = attempts
     .map((a) => ({
-      questionIndex: session.questionIds.indexOf(a.questionId),
+      questionIndex: session.questionIds.indexOf(a.questionId ?? ''), // ← add ?? ''
       aiScore: Math.round(((a.aiScore ?? 0) / 100) * 20),
       scoreOutOf: 20,
       band: a.band ?? '',
@@ -437,7 +433,9 @@ export async function getPracticeAttemptReviewService(
 
   // Sort attempts by their original box position in session
   const sortedAttempts = attempts.sort(
-    (a, b) => session.questionIds.indexOf(a.questionId) - session.questionIds.indexOf(b.questionId)
+    (a, b) =>
+      session.questionIds.indexOf(a.questionId ?? '') -
+      session.questionIds.indexOf(b.questionId ?? '')
   );
 
   if (questionIndex < 0 || questionIndex >= sortedAttempts.length) {
@@ -445,7 +443,7 @@ export async function getPracticeAttemptReviewService(
   }
 
   const attempt = sortedAttempts[questionIndex]!;
-  const sessionBoxIndex = session.questionIds.indexOf(attempt.questionId);
+  const sessionBoxIndex = session.questionIds.indexOf(attempt.questionId ?? '');
 
   return {
     practiceSessionId: session.id,
@@ -455,7 +453,7 @@ export async function getPracticeAttemptReviewService(
     totalAnswered: sortedAttempts.length,
     hasNext: questionIndex < sortedAttempts.length - 1,
     hasPrevious: questionIndex > 0,
-    question: { ...attempt.question, index: sessionBoxIndex },
+    question: { ...attempt.question!, index: sessionBoxIndex },
     userAnswer: attempt.answerText,
     aiScore: attempt.aiScore !== null ? Math.round((attempt.aiScore / 100) * 20) : null,
     scoreOutOf: 20,
@@ -538,36 +536,35 @@ Return ONLY valid JSON with this exact structure:
   };
 }
 
-
 export async function failSimulationService(userId: string, simulationId: string, reason: string) {
-    const simulation = await prisma.simulation.findUnique({
-      where: { id: simulationId },
-      select: { id: true, userId: true, startedAt: true, endedAt: true },
-    });
- 
-    if (!simulation || simulation.userId !== userId) {
-      throw new AppError('Simulation not found');
-    }
- 
-    // Already ended — idempotent, just return current state
-    if (simulation.endedAt) {
-      return { simulationId, alreadyEnded: true };
-    }
- 
-    const now = new Date();
-    const totalTimeSeconds = Math.floor(
-      (now.getTime() - new Date(simulation.startedAt).getTime()) / 1000
-    );
- 
-    await prisma.simulation.update({
-      where: { id: simulationId },
-      data: {
-        passed: false,
-        failReason: reason,
-        endedAt: now,
-        totalTimeSeconds,
-      },
-    });
- 
-    return { simulationId, failed: true, reason, totalTimeSeconds };
+  const simulation = await prisma.simulation.findUnique({
+    where: { id: simulationId },
+    select: { id: true, userId: true, startedAt: true, endedAt: true },
+  });
+
+  if (!simulation || simulation.userId !== userId) {
+    throw new AppError('Simulation not found');
   }
+
+  // Already ended — idempotent, just return current state
+  if (simulation.endedAt) {
+    return { simulationId, alreadyEnded: true };
+  }
+
+  const now = new Date();
+  const totalTimeSeconds = Math.floor(
+    (now.getTime() - new Date(simulation.startedAt).getTime()) / 1000
+  );
+
+  await prisma.simulation.update({
+    where: { id: simulationId },
+    data: {
+      passed: false,
+      failReason: reason,
+      endedAt: now,
+      totalTimeSeconds,
+    },
+  });
+
+  return { simulationId, failed: true, reason, totalTimeSeconds };
+}
