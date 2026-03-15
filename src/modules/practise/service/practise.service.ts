@@ -107,9 +107,19 @@ export async function startPracticeService(
 ): Promise<StartPracticeResponse> {
   const { subject, year } = input;
 
+  // Always parse year as integer — frontend may send it as a string
+  const yearInt = typeof year === 'string' ? parseInt(year, 10) : year;
+
+  if (isNaN(yearInt)) throw new BadRequestError('Invalid year provided');
+
   // Recovery: return existing incomplete session
   const existingSession = await prisma.practiceSession.findFirst({
-    where: { userId, subject, year, isCompleted: false },
+    where: {
+      userId,
+      subject: { equals: subject, mode: 'insensitive' }, // ← case-insensitive
+      year: yearInt,
+      isCompleted: false,
+    },
     orderBy: { createdAt: 'desc' },
   });
 
@@ -123,9 +133,14 @@ export async function startPracticeService(
     };
   }
 
-  // Pick up to 8 random questions from subject + year
+  // Pick up to 8 random questions — case-insensitive subject match
   const allAvailable = await prisma.question.findMany({
-    where: { type: 'ESSAY', isPublished: true, subject, year },
+    where: {
+      type: 'ESSAY',
+      isPublished: true,
+      subject: { equals: subject, mode: 'insensitive' }, // ← case-insensitive
+      year: yearInt,
+    },
     select: { id: true },
   });
 
@@ -138,17 +153,18 @@ export async function startPracticeService(
   const questionIds = selected.map((q) => q.id);
 
   const session = await prisma.practiceSession.create({
-    data: { userId, subject, year, questionIds, startedAt: new Date() },
+    data: { userId, subject, year: yearInt, questionIds, startedAt: new Date() },
   });
 
   return {
     practiceSessionId: session.id,
     subject,
-    year,
+    year: yearInt,
     totalQuestions: questionIds.length,
     startedAt: session.startedAt,
   };
 }
+ 
 
 // ── getPracticeQuestionService ───────────────────────────────
 // The single endpoint for ALL navigation: initial load, box click,
