@@ -218,7 +218,6 @@ export async function getEssayQuestionsService(filters: {
   };
 }
 
-
 // ── getPracticeQuestionService ───────────────────────────────
 // The single endpoint for ALL navigation: initial load, box click,
 // next, previous, and page reload.
@@ -258,14 +257,13 @@ export async function getPracticeQuestionService(
 
   if (!question) throw new NotFoundError('Question not found');
 
-
   return {
     practiceSessionId: session.id,
     subject: session.subject,
     year: session.year,
     question: { ...question, index: questionIndex },
     totalQuestions: session.questionIds.length,
-    currentQuestionIndex: questionIndex
+    currentQuestionIndex: questionIndex,
   };
 }
 // ── submitPracticeService ────────────────────────────────────
@@ -280,57 +278,59 @@ export async function submitPracticeService(
   input: SubmitPracticeInput
 ): Promise<SubmitPracticeResponse> {
   const { practiceSessionId, answers } = input;
- 
+
   // ── Validation: 1–5 answers only ─────────────────────────────────────────
   if (answers.length === 0) {
     throw new BadRequestError('You must answer at least 1 question before submitting');
   }
- 
+
   if (answers.length > 5) {
     const excess = answers.length - 5;
     throw new BadRequestError(
       `You have answered too many questions. Please remove ${excess} answer${excess > 1 ? 's' : ''} before submitting`
     );
   }
- 
+
   const session = await prisma.practiceSession.findUnique({
     where: { id: practiceSessionId },
   });
- 
+
   if (!session || session.userId !== userId) throw new NotFoundError('Session not found');
   if (session.isCompleted) throw new BadRequestError('Session already submitted');
- 
+
   // Validate all indexes are within bounds
   for (const answer of answers) {
     if (answer.questionIndex < 0 || answer.questionIndex >= session.questionIds.length) {
       throw new BadRequestError(`Invalid question index: ${answer.questionIndex}`);
     }
   }
- 
+
   // Check for duplicate indexes
   const indexes = answers.map((a) => a.questionIndex);
   const uniqueIndexes = new Set(indexes);
   if (uniqueIndexes.size !== indexes.length) {
-    throw new BadRequestError('Duplicate question indexes found — each question can only be answered once');
+    throw new BadRequestError(
+      'Duplicate question indexes found — each question can only be answered once'
+    );
   }
- 
+
   // Session IS the timer
   const totalTimeSeconds = Math.floor((Date.now() - session.startedAt.getTime()) / 1000);
- 
+
   // Resolve questionIds from indexes
   const resolvedAnswers = answers.map((a) => ({
     questionIndex: a.questionIndex,
     questionId: session.questionIds[a.questionIndex]!,
     answerText: a.answerText,
   }));
- 
+
   // Fetch question texts for grading
   const questionIds = resolvedAnswers.map((a) => a.questionId);
   const questions = await prisma.question.findMany({
     where: { id: { in: questionIds } },
     select: { id: true, subject: true, year: true, examType: true, text: true },
   });
- 
+
   // Grade all in parallel
   const gradingResults = await Promise.all(
     resolvedAnswers.map((a) => {
@@ -338,15 +338,15 @@ export async function submitPracticeService(
       return gradeEssayWithClaude(a.answerText, question.text, question.subject ?? '');
     })
   );
- 
+
   const timePerQuestion = Math.floor(totalTimeSeconds / answers.length);
- 
+
   // Save one EssayAttempt per answer
   await Promise.all(
     resolvedAnswers.map((a, index) => {
       const grading = gradingResults[index]!;
       const wordCount = a.answerText.trim().split(/\s+/).length;
- 
+
       return prisma.essayAttempt.create({
         data: {
           userId,
@@ -370,23 +370,23 @@ export async function submitPracticeService(
       });
     })
   );
- 
+
   // Overall score — average of all graded answers
   const overallScore = Math.round(
     gradingResults.reduce((sum, r) => sum + r.score, 0) / gradingResults.length
   );
- 
+
   const submittedAt = new Date();
- 
+
   await prisma.practiceSession.update({
     where: { id: practiceSessionId },
     data: { isCompleted: true, submittedAt, totalTimeSeconds },
   });
- 
+
   achievementsService
     .checkAllAchievements(userId)
     .catch((err) => console.error('Achievement check failed:', err));
- 
+
   // Scores — only answered questions, sorted by box position (questionIndex)
   // Matches the screen: Q1 16/20, Q2 14/20 etc — only answered ones shown
   const scores: QuestionScoreItem[] = resolvedAnswers
@@ -401,7 +401,7 @@ export async function submitPracticeService(
       };
     })
     .sort((a, b) => a.questionIndex - b.questionIndex);
- 
+
   return {
     practiceSessionId,
     subject: session.subject,
@@ -409,9 +409,9 @@ export async function submitPracticeService(
     submittedAt,
     totalAnswered: answers.length,
     totalTimeSeconds,
-    overallScore,                    // 0-100 raw score for the donut circle %
-    passed: overallScore >= 50,      // drives PASSED/FAILED label
-    scores,                          // array of { questionIndex, aiScore, scoreOutOf, band, appPass }
+    overallScore, // 0-100 raw score for the donut circle %
+    passed: overallScore >= 50, // drives PASSED/FAILED label
+    scores, // array of { questionIndex, aiScore, scoreOutOf, band, appPass }
   };
 }
 
@@ -480,9 +480,8 @@ export async function getPracticeAttemptReviewService(
 
   if (!session || session.userId !== userId) throw new NotFoundError('Session not found');
 
-  // Fetch only attempted questions sorted by their session box order
   const attempts = await prisma.essayAttempt.findMany({
-    where: { userId, source: 'PRACTICE', simulationId: sessionId },
+    where: { userId, source: 'PRACTICE', practiceSessionId: sessionId }, // ← fixed
     include: {
       question: {
         select: {
@@ -499,7 +498,6 @@ export async function getPracticeAttemptReviewService(
     orderBy: { createdAt: 'asc' },
   });
 
-  // Sort attempts by their original box position in session
   const sortedAttempts = attempts.sort(
     (a, b) =>
       session.questionIds.indexOf(a.questionId ?? '') -

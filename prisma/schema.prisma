@@ -803,6 +803,8 @@ model EssayAttempt {
   question        Question?       @relation(fields: [questionId], references: [id], onDelete: Cascade)
   essayQuestionId String?
   essayQuestion   EssayQuestion? @relation(fields: [essayQuestionId], references: [id], onDelete: SetNull)
+  practiceSessionId String?
+  practiceSession   PracticeSession? @relation(fields: [practiceSessionId], references: [id], onDelete: SetNull)
 
   answerText       String @db.Text
   timeTakenSeconds Int
@@ -852,6 +854,7 @@ model PracticeSession {
 
   createdAt DateTime @default(now())
 
+  essayAttempts EssayAttempt[]
   @@index([userId])
   @@index([userId, createdAt])
   @@map("practice_sessions")
