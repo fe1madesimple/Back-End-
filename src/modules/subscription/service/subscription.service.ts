@@ -25,14 +25,8 @@ export class SubscriptionService {
   //   → frontend picks plans.standard.monthly.priceId (or whichever combo)
   //   → calls POST /subscription/create-checkout-session with that priceId
 
-  async getSubscriptionConfig(userId: string): Promise<any> {
-    const subscription = await prisma.subscription.findUnique({
-      where: { userId },
-      select: { stripeSubscriptionId: true },
-    });
-
-    
-
+  async getSubscriptionConfig(_userId: string): Promise<any> {
+   
     return {
       plans: {
         standard: {
