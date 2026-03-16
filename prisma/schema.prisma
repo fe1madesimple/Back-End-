@@ -577,6 +577,23 @@ model DailyStudySession {
   @@map("daily_study_sessions")
 }
 
+
+model ShareToken {
+  id           String   @id @default(cuid())
+  token        String   @unique
+  userId       String
+  type         String   // 'ESSAY' | 'SIMULATION' | 'MCQ'
+  resourceId   String   // attemptId / practiceSessionId / sessionId
+  expiresAt    DateTime
+  viewCount    Int      @default(0)
+  createdAt    DateTime @default(now())
+
+  @@index([token])
+  @@map("share_tokens")
+}
+
+
+
 model UserLessonProgress {
   id                  String    @id @default(cuid())
   userId              String
