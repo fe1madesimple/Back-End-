@@ -11,7 +11,7 @@ import {
   getPracticeResults,
   getPracticeAttemptReview,
   failSimulation,
-  getEssayQuestions
+  getEssayQuestions,
 } from '../controller/practise.controller';
 import {
   pastQuestionsQuerySchema,
@@ -21,6 +21,7 @@ import {
   sessionIdParamSchema,
   attemptReviewSchema,
 } from '../validators/practise.validators';
+import { gate, gateLesson } from '@/shared/middleware/gate.middleware';
 
 const practiceRouter = Router();
 
@@ -56,6 +57,7 @@ practiceRouter.get(
   '/past-questions',
   protect,
   validate(pastQuestionsQuerySchema),
+  gate('STANDARD'),
   getPastQuestions
 );
 
@@ -90,11 +92,15 @@ practiceRouter.get(
  *       201:
  *         description: Returns practiceSessionId, subject, year, totalQuestions, startedAt
  */
-practiceRouter.post('/start', protect, validate(startPracticeSchema), startPractice);
+practiceRouter.post(
+  '/start',
+  protect,
+  validate(startPracticeSchema),
+  gate('STANDARD'),
+  startPractice
+);
 
-practiceRouter.get('/essay-questions', protect, getEssayQuestions);
-
-
+practiceRouter.get('/essay-questions', protect, gate('STANDARD'), getEssayQuestions);
 
 /**
  * @swagger
@@ -148,10 +154,9 @@ practiceRouter.get(
   '/session/:sessionId/question/:questionIndex',
   protect,
   validate(getPracticeQuestionSchema),
+  gate('STANDARD'),
   getPracticeQuestion
 );
-
-
 
 /**
  * @swagger
@@ -235,7 +240,13 @@ practiceRouter.get(
  *               success: false
  *               message: "You have answered too many questions. Please remove 1 answer before submitting"
  */
-practiceRouter.post('/submit', protect, validate(submitPracticeSchema), submitPractice);
+practiceRouter.post(
+  '/submit',
+  protect,
+  validate(submitPracticeSchema),
+  gate('STANDARD', { aiLimit: true }),
+  submitPractice
+);
 
 /**
  * @swagger
@@ -259,6 +270,7 @@ practiceRouter.get(
   '/session/:sessionId/results',
   protect,
   validate(sessionIdParamSchema),
+  gate('STANDARD'),
   getPracticeResults
 );
 
@@ -292,10 +304,9 @@ practiceRouter.get(
   '/session/:sessionId/review/:questionIndex',
   protect,
   validate(attemptReviewSchema),
+  gate('STANDARD'),
   getPracticeAttemptReview
 );
-
-
 
 /**
  * @swagger
