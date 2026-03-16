@@ -17,68 +17,65 @@ class HistoryService {
   // Powers the 3 stat cards at the top of the history page.
 
   async getStats(userId: string): Promise<HistoryStatsResponse> {
-    const [essayAttempts, simulations, quizSessions] = await Promise.all([
-      // Essay practice — all sources (LESSON_PRACTICE + PRACTICE)
-      prisma.essayAttempt.findMany({
-        where: { userId },
-        select: { aiScore: true },
-      }),
-
-      // Full simulations
-      prisma.simulation.findMany({
-        where: { userId },
-        select: { id: true, passed: true, totalTimeSeconds: true },
-      }),
-
-      // MCQ batch sessions — completed ones only
-      prisma.quizSession.findMany({
-        where: { userId, isCompleted: true },
-        select: { correctAnswers: true, totalQuestions: true },
-      }),
-    ]);
-
-    // Essay stats
-    const totalEssays = essayAttempts.length;
-    const avgScore =
-      totalEssays > 0
-        ? Math.round(
-            essayAttempts.reduce((sum, a) => {
-              // aiScore stored as 0-100; convert to /20 for display
-              const score20 = a.aiScore !== null ? Math.round((a.aiScore / 100) * 20) : 0;
-              return sum + score20;
-            }, 0) / totalEssays
+  const [lessonEssayAttempts, practiceSessions, quizSessions] = await Promise.all([
+ 
+    // Essay practice — LESSON_PRACTICE only (not simulation attempts)
+    prisma.essayAttempt.findMany({
+      where: { userId, source: 'LESSON_PRACTICE' },
+      select: { aiScore: true },
+    }),
+ 
+    // Simulations — completed PracticeSessions
+    // A session counts as 1 simulation regardless of how many questions answered
+    prisma.practiceSession.findMany({
+      where: { userId, isCompleted: true },
+      select: { id: true },
+    }),
+ 
+    // MCQ batch sessions — completed ones only
+    prisma.quizSession.findMany({
+      where: { userId, isCompleted: true },
+      select: { correctAnswers: true, totalQuestions: true },
+    }),
+  ]);
+ 
+  // Essay stats — lesson practice only
+  const totalEssays = lessonEssayAttempts.length;
+  const avgScore =
+    totalEssays > 0
+      ? Math.round(
+          lessonEssayAttempts.reduce((sum, a) => {
+            const score20 = a.aiScore !== null ? Math.round((a.aiScore / 100) * 20) : 0;
+            return sum + score20;
+          }, 0) / totalEssays
+        )
+      : 0;
+ 
+  // MCQ stats
+  const totalMCQBatches = quizSessions.length;
+  const bestScore =
+    quizSessions.length > 0
+      ? Math.max(
+          ...quizSessions.map((s) =>
+            s.totalQuestions > 0 ? Math.round((s.correctAnswers / s.totalQuestions) * 100) : 0
           )
-        : 0;
-
-    // Simulation stats
-    const completedSims = simulations.filter((s) => s.totalTimeSeconds !== null);
-
-    // MCQ stats
-    const totalMCQBatches = quizSessions.length;
-    const bestScore =
-      quizSessions.length > 0
-        ? Math.max(
-            ...quizSessions.map((s) =>
-              s.totalQuestions > 0 ? Math.round((s.correctAnswers / s.totalQuestions) * 100) : 0
-            )
-          )
-        : 0;
-
-    return {
-      essayPractice: {
-        total: totalEssays,
-        avgScore,
-      },
-      fullSimulations: {
-        total: simulations.length,
-        completed: completedSims.length,
-      },
-      mcqBatches: {
-        total: totalMCQBatches,
-        bestScore,
-      },
-    };
-  }
+        )
+      : 0;
+ 
+  return {
+    essayPractice: {
+      total: totalEssays,
+      avgScore,
+    },
+    simulations: {                        // renamed from fullSimulations
+      total: practiceSessions.length,     // count of completed PracticeSessions
+    },
+    mcqBatches: {
+      total: totalMCQBatches,
+      bestScore,
+    },
+  };
+}
 
   // ─── Activity Feed ───────────────────────────────────────────────────────────
   // Paginated list of all activity, filterable by type.
