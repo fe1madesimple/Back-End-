@@ -9,6 +9,8 @@ const subjectRouter = Router();
 
 
 
+
+
 /**
  * @swagger
  * /api/v1/subjects:
@@ -91,7 +93,6 @@ const subjectRouter = Router();
 subjectRouter.get('/', protect, getSubjects);
 
 
-
 /**
  * @swagger
  * /api/v1/subjects/{id}:
@@ -105,6 +106,13 @@ subjectRouter.get('/', protect, getSubjects);
  *       inside each module, and statistics. Use this single call to render
  *       the full subject detail page including the module accordion with
  *       lesson lists. No separate getModuleById call needed.
+ *
+ *       **Gating (isLocked):**
+ *       - TRIAL or ACTIVE (any paid plan) → all modules unlocked, isLocked = false everywhere
+ *       - FREEMIUM / EXPIRED / CANCELLED → only Module 1 (order = 1) is free
+ *         All other modules and their lessons return isLocked = true
+ *       - Frontend should render a lock icon on locked modules/lessons and
+ *         block navigation. The hard 403 block is enforced on GET /lessons/:id.
  *     parameters:
  *       - in: path
  *         name: id
@@ -181,20 +189,32 @@ subjectRouter.get('/', protect, getSubjects);
  *                           status:
  *                             type: string
  *                             enum: [NOT_STARTED, IN_PROGRESS, COMPLETED]
+ *                           isLocked:
+ *                             type: boolean
+ *                             description: |
+ *                               true = free user, module order > 1.
+ *                               Frontend renders lock icon and blocks accordion expansion.
+ *                             example: false
  *                           lessons:
  *                             type: array
- *                             description: All lessons in this module — use id to navigate to lesson screen
+ *                             description: All lessons in this module — use id to call GET /lessons/:id
  *                             items:
  *                               type: object
  *                               properties:
  *                                 id:
  *                                   type: string
- *                                   description: Pass this to GET /lessons/:id
+ *                                   description: Pass to GET /lessons/:id
  *                                 title:
  *                                   type: string
  *                                   example: Characteristics of a Crime
  *                                 order:
  *                                   type: integer
+ *                                 isLocked:
+ *                                   type: boolean
+ *                                   description: |
+ *                                     Same value as parent module isLocked.
+ *                                     Frontend blocks click and shows upgrade prompt.
+ *                                   example: false
  *                     stats:
  *                       type: object
  *                       properties:
