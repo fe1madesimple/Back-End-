@@ -21,7 +21,7 @@ import {
   sessionIdParamSchema,
   attemptReviewSchema,
 } from '../validators/practise.validators';
-import { gate, gateLesson } from '@/shared/middleware/gate.middleware';
+import { gate,} from '@/shared/middleware/gate.middleware';
 
 const practiceRouter = Router();
 

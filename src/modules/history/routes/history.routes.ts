@@ -9,7 +9,7 @@ import {
   getEssayAttemptDetail,
   getSimulationDetail,
 } from '../controller/history.controller';
-import { gate, gateLesson } from '@/shared/middleware/gate.middleware';
+import { gate,  } from '@/shared/middleware/gate.middleware';
 
 const historyRouter = Router();
 

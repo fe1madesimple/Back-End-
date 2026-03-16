@@ -16,7 +16,7 @@ import {
   toggleReviewSchema,
 } from '../validator/case.validator';
 import { validate } from '@/shared/middleware/validation';
-import { gate, gateLesson } from '@/shared/middleware/gate.middleware';
+import { gate } from '@/shared/middleware/gate.middleware';
 
 const caseRouter = Router();
 
@@ -33,7 +33,7 @@ const caseRouter = Router();
  *       200:
  *         description: Filters retrieved successfully
  */
-caseRouter.get('/filters', protect, getCaseFilters);
+caseRouter.get('/filters', protect, gate('STANDARD'), getCaseFilters);
 
 /**
  * @swagger
@@ -53,7 +53,7 @@ caseRouter.get('/filters', protect, getCaseFilters);
  *       200:
  *         description: Saved cases retrieved successfully
  */
-caseRouter.get('/saved', protect, validate(getSavedCasesSchema), getSavedCases);
+caseRouter.get('/saved', protect, validate(getSavedCasesSchema), gate('STANDARD'), getSavedCases);
 
 /**
  * @swagger
@@ -155,7 +155,7 @@ caseRouter.get('/:id', protect, validate(getCaseDetailsSchema), gate('STANDARD')
  *       404:
  *         description: Case not found
  */
-caseRouter.post('/:id/save', protect, validate(saveCaseSchema), gate('STANDARD'),  toggleSaveCase);
+caseRouter.post('/:id/save', protect, validate(saveCaseSchema), gate('STANDARD'), toggleSaveCase);
 
 /**
  * @swagger
@@ -178,6 +178,12 @@ caseRouter.post('/:id/save', protect, validate(saveCaseSchema), gate('STANDARD')
  *       404:
  *         description: Case not saved
  */
-caseRouter.post('/:caseId/toggle-review', protect, validate(toggleReviewSchema), toggleReview);
+caseRouter.post(
+  '/:caseId/toggle-review',
+  protect,
+  validate(toggleReviewSchema),
+  gate('STANDARD'),
+  toggleReview
+);
 
 export default caseRouter;
