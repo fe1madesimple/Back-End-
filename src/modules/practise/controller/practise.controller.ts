@@ -9,7 +9,7 @@ import {
   getPracticeResultsService,
   getPracticeAttemptReviewService,
   failSimulationService,
-  getEssayQuestionsService
+  getEssayQuestionsService,
 } from '../service/practise.service';
 import { AppError } from '@/shared/utils';
 import { sendSuccess } from '@/shared/utils';
@@ -33,18 +33,16 @@ export async function getPastQuestions(req: Request, res: Response) {
 
 export async function getEssayQuestions(req: Request, res: Response) {
   const { subject, year } = req.query;
-
   const result = await getEssayQuestionsService({
     subject: subject as string | undefined,
     year: year as string | undefined,
   });
-
   sendSuccess(res, 'Essay questions retrieved', result);
-};
+}
 
 export async function startPractice(req: Request, res: Response) {
   try {
-    const userId = (req as any).user.id;
+    const userId = (req as any).user.user.id; // ✅ fixed
     const { subject, year } = req.body;
     const data = await startPracticeService(userId, { subject, year });
     res.status(201).json({ success: true, message: 'Practice session started', data });
@@ -56,12 +54,12 @@ export async function startPractice(req: Request, res: Response) {
 
 export async function getPracticeQuestion(req: Request, res: Response) {
   try {
-    const userId = (req as any).user.id;
+    const userId = (req as any).user.user.id; // ✅ fixed
     const { sessionId, questionIndex } = req.params;
 
     if (!sessionId) throw new AppError('sessionId needed');
-
     if (!questionIndex) throw new AppError('questionIndex needed');
+
     const data = await getPracticeQuestionService(userId, sessionId, parseInt(questionIndex));
     res.json({ success: true, message: 'Question retrieved', data });
   } catch (error: any) {
@@ -72,7 +70,7 @@ export async function getPracticeQuestion(req: Request, res: Response) {
 
 export async function submitPractice(req: Request, res: Response) {
   try {
-    const userId = (req as any).user.id;
+    const userId = (req as any).user.user.id; // ✅ fixed
     const { practiceSessionId, answers } = req.body;
     const data = await submitPracticeService(userId, { practiceSessionId, answers });
     res.json({ success: true, message: 'Practice submitted and graded', data });
@@ -84,10 +82,11 @@ export async function submitPractice(req: Request, res: Response) {
 
 export async function getPracticeResults(req: Request, res: Response) {
   try {
-    const userId = (req as any).user.id;
+    const userId = (req as any).user.user.id; // ✅ fixed
     const { sessionId } = req.params;
 
     if (!sessionId) throw new AppError('sessionId needed');
+
     const data = await getPracticeResultsService(userId, sessionId);
     res.json({ success: true, message: 'Results retrieved', data });
   } catch (error: any) {
@@ -98,12 +97,12 @@ export async function getPracticeResults(req: Request, res: Response) {
 
 export async function getPracticeAttemptReview(req: Request, res: Response) {
   try {
-    const userId = (req as any).user.id;
+    const userId = (req as any).user.user.id; // ✅ fixed
     const { sessionId, questionIndex } = req.params;
 
     if (!sessionId) throw new AppError('sessionId needed');
-
     if (!questionIndex) throw new AppError('questionIndex needed');
+
     const data = await getPracticeAttemptReviewService(userId, sessionId, parseInt(questionIndex));
     res.json({ success: true, message: 'Attempt review retrieved', data });
   } catch (error: any) {
@@ -112,8 +111,8 @@ export async function getPracticeAttemptReview(req: Request, res: Response) {
   }
 }
 
-export  async function failSimulation(req: Request, res: Response){
-  const userId = req.user!.user.id;
+export async function failSimulation(req: Request, res: Response) {
+  const userId = req.user!.user.id; // ✅ already correct
   const { simulationId } = req.params;
   if (!simulationId) throw new AppError('simulationId is required');
 
@@ -121,7 +120,5 @@ export  async function failSimulation(req: Request, res: Response){
   if (!reason) throw new AppError('reason is required (WINDOW_BLUR | TIME_EXPIRED)');
 
   const result = await failSimulationService(userId, simulationId, reason);
-
-
   sendSuccess(res, 'Simulation failed', result);
-};
+}
