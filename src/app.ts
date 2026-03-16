@@ -21,6 +21,7 @@ import questionRouter from './modules/questions/routes/question.routes';
 import practiceRouter from './modules/practise/routes/practise.routes';
 import progressRouter from './modules/progress/routes/progress.routes';
 import studySessionRouter from './modules/study-sessions/routes/study-sessions.routes';
+import shareRouter from './modules/share/routes/share.route';
 import historyRouter from './modules/history/routes/history.routes';
 import podCastRouter from './modules/podcasts/routes/podcast.routes';
 import subscriptionRouter from './modules/subscription/routes/subscription.routes';
@@ -160,6 +161,7 @@ const createApp = (): Application => {
   app.use('/api/v1/cases', caseRouter);
   app.use('/api/v1/support', supportRouter);
   app.use('/api/v1/history', historyRouter);
+  app.use('/api/v1/share', shareRouter);
 
   app.use(notFoundHandler);
   app.use(errorHandler);
