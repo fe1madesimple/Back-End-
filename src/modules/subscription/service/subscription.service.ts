@@ -55,20 +55,20 @@ export class SubscriptionService {
             label: STRIPE_CONFIG.PRICES.STANDARD_ANNUAL.label,
           },
         },
-        premium: {
+        pro: {
           monthly: {
-            priceId: STRIPE_CONFIG.PREMIUM_MONTHLY_PRICE_ID,
-            amount: STRIPE_CONFIG.PRICES.PREMIUM_MONTHLY.amount,
+            priceId: STRIPE_CONFIG.PRO_MONTHLY_PRICE_ID,
+            amount: STRIPE_CONFIG.PRICES.PRO_MONTHLY.amount,
             currency: 'EUR',
-            interval: STRIPE_CONFIG.PRICES.PREMIUM_MONTHLY.interval,
-            label: STRIPE_CONFIG.PRICES.PREMIUM_MONTHLY.label,
+            interval: STRIPE_CONFIG.PRICES.PRO_MONTHLY.interval,
+            label: STRIPE_CONFIG.PRICES.PRO_MONTHLY.label,
           },
           annual: {
-            priceId: STRIPE_CONFIG.PREMIUM_ANNUAL_PRICE_ID,
-            amount: STRIPE_CONFIG.PRICES.PREMIUM_ANNUAL.amount,
+            priceId: STRIPE_CONFIG.PRO_ANNUAL_PRICE_ID,
+            amount: STRIPE_CONFIG.PRICES.PRO_ANNUAL.amount,
             currency: 'EUR',
-            interval: STRIPE_CONFIG.PRICES.PREMIUM_ANNUAL.interval,
-            label: STRIPE_CONFIG.PRICES.PREMIUM_ANNUAL.label,
+            interval: STRIPE_CONFIG.PRICES.PRO_ANNUAL.interval,
+            label: STRIPE_CONFIG.PRICES.PRO_ANNUAL.label,
           },
         },
       },
@@ -88,8 +88,8 @@ export class SubscriptionService {
     const validPriceIds = [
       STRIPE_CONFIG.STANDARD_MONTHLY_PRICE_ID,
       STRIPE_CONFIG.STANDARD_ANNUAL_PRICE_ID,
-      STRIPE_CONFIG.PREMIUM_MONTHLY_PRICE_ID,
-      STRIPE_CONFIG.PREMIUM_ANNUAL_PRICE_ID,
+      STRIPE_CONFIG.PRO_MONTHLY_PRICE_ID,
+      STRIPE_CONFIG.PRO_ANNUAL_PRICE_ID,
     ];
 
     if (!validPriceIds.includes(data.priceId)) {
@@ -255,7 +255,7 @@ export class SubscriptionService {
     }
 
     // Resolve which plan was purchased from the priceId
-    let planType: 'STANDARD_MONTHLY' | 'STANDARD_ANNUAL' | 'PREMIUM_MONTHLY' | 'PREMIUM_ANNUAL';
+    let planType: 'STANDARD_MONTHLY' | 'STANDARD_ANNUAL' | 'PRO_MONTHLY' | 'PRO_ANNUAL';
     try {
       planType = getPlanTypeFromPriceId(priceId);
     } catch {

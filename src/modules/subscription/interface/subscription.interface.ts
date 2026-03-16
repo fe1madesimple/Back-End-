@@ -54,7 +54,7 @@ export interface ISubscriptionConfigResponse {
       monthly: IPlanConfig;
       annual: IPlanConfig;
     };
-    premium: {
+    pro: {
       monthly: IPlanConfig;
       annual: IPlanConfig;
     };

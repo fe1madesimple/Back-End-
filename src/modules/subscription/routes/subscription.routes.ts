@@ -513,69 +513,70 @@ subscriptionRouter.post('/resume', protect, subscriptionController.resumeSubscri
 // );
 
 
+
 /**
  * @swagger
  * /api/v1/subscription/config:
  *   get:
- *     summary: Get subscription configuration
- *     description: |
- *       Returns public subscription details including price ID, amount, currency, and trial eligibility.
- *
- *       **Frontend Usage:**
- *       1. Call this endpoint when loading the subscription page
- *       2. Use `priceId` to create checkout session
- *       3. Use `amount`, `currency`, `interval` to display pricing
- *       4. Use `isEligibleForTrial` to show/hide trial messaging
- *
- *       **Trial Eligibility:**
- *       - `isEligibleForTrial: true` → User never subscribed before (show "7-day free trial")
- *       - `isEligibleForTrial: false` → User had subscription before (show "€9.99/month" only)
+ *     summary: Get subscription configuration — all 4 plans
  *     tags: [Subscription]
  *     security:
  *       - bearerAuth: []
+ *     description: |
+ *       Returns all 4 price IDs + amounts for the pricing page.
+ *       Frontend uses this to render cards and pass the correct priceId
+ *       to create-checkout-session when a card is clicked.
  *     responses:
  *       200:
- *         description: Configuration retrieved successfully
+ *         description: Config retrieved
  *         content:
  *           application/json:
  *             schema:
  *               type: object
  *               properties:
- *                 success:
- *                   type: boolean
- *                   example: true
- *                 message:
- *                   type: string
- *                   example: Subscription config retrieved successfully
- *                 data:
+ *                 isEligibleForTrial: { type: boolean }
+ *                 trialDays: { type: integer, example: 7 }
+ *                 plans:
  *                   type: object
  *                   properties:
- *                     priceId:
- *                       type: string
- *                       description: Stripe Price ID (use this in create-checkout-session)
- *                       example: price_1SrlzdRK2xB6X2uOkYBHZn2s
- *                     amount:
- *                       type: integer
- *                       description: Price in cents (999 = €9.99)
- *                       example: 999
- *                     currency:
- *                       type: string
- *                       description: Currency code
- *                       example: EUR
- *                     interval:
- *                       type: string
- *                       description: Billing interval
- *                       example: month
- *                     trialDays:
- *                       type: integer
- *                       description: Number of trial days (if eligible)
- *                       example: 7
- *                     isEligibleForTrial:
- *                       type: boolean
- *                       description: Whether this user qualifies for trial
- *                       example: true
- *       401:
- *         description: Unauthorized - Authentication required
+ *                     standard:
+ *                       type: object
+ *                       properties:
+ *                         monthly:
+ *                           type: object
+ *                           properties:
+ *                             priceId: { type: string }
+ *                             amount: { type: integer, example: 2900 }
+ *                             currency: { type: string, example: EUR }
+ *                             interval: { type: string, example: month }
+ *                             label: { type: string, example: Standard Monthly }
+ *                         annual:
+ *                           type: object
+ *                           properties:
+ *                             priceId: { type: string }
+ *                             amount: { type: integer, example: 24900 }
+ *                             currency: { type: string, example: EUR }
+ *                             interval: { type: string, example: year }
+ *                             label: { type: string, example: Standard Annual }
+ *                     pro:
+ *                       type: object
+ *                       properties:
+ *                         monthly:
+ *                           type: object
+ *                           properties:
+ *                             priceId: { type: string }
+ *                             amount: { type: integer, example: 4900 }
+ *                             currency: { type: string, example: EUR }
+ *                             interval: { type: string, example: month }
+ *                             label: { type: string, example: Pro Monthly }
+ *                         annual:
+ *                           type: object
+ *                           properties:
+ *                             priceId: { type: string }
+ *                             amount: { type: integer, example: 39900 }
+ *                             currency: { type: string, example: EUR }
+ *                             interval: { type: string, example: year }
+ *                             label: { type: string, example: Pro Annual }
  */
 subscriptionRouter.get('/config', protect, subscriptionController.getSubscriptionConfig);
 
