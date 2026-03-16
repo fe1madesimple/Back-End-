@@ -534,8 +534,6 @@ subscriptionRouter.post('/resume', protect, subscriptionController.resumeSubscri
  *             schema:
  *               type: object
  *               properties:
- *                 isEligibleForTrial: { type: boolean }
- *                 trialDays: { type: integer, example: 7 }
  *                 plans:
  *                   type: object
  *                   properties:
