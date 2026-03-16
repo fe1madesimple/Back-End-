@@ -3,7 +3,6 @@
 import { prisma } from '@/shared/config';
 import { AppError } from '@/shared/utils';
 import {
-  HistoryStatsResponse,
   HistoryFeedResponse,
   HistoryFeedItem,
   HistoryItemSource,

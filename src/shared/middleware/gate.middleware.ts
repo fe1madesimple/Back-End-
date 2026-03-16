@@ -124,7 +124,7 @@ export function gate(requiredPlan: RequiredPlan, options: GateOptions = {}) {
 }
 
 export function gateLesson() {
-  return async (req: Request, res: Response, next: NextFunction) => {
+  return async (req: Request, _res: Response, next: NextFunction) => {
     try {
       const userId = req.user!.user.id;
       const lessonId = req.params.id;
