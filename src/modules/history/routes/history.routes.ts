@@ -9,6 +9,7 @@ import {
   getEssayAttemptDetail,
   getSimulationDetail,
 } from '../controller/history.controller';
+import { gate, gateLesson } from '@/shared/middleware/gate.middleware';
 
 const historyRouter = Router();
 
@@ -53,7 +54,7 @@ const historyRouter = Router();
  *                     total: { type: integer, example: 42 }
  *                     bestScore: { type: integer, example: 92, description: "Best accuracy % ever achieved" }
  */
-historyRouter.get('/stats', protect, getHistoryStats);
+historyRouter.get('/stats', protect, gate('STANDARD'), getHistoryStats);
 
 
 /**
@@ -126,7 +127,7 @@ historyRouter.get('/stats', protect, getHistoryStats);
  *                     hasNext: { type: boolean }
  *                     hasPrev: { type: boolean }
  */
-historyRouter.get('/', protect, getHistoryFeed);
+historyRouter.get('/', protect, gate('STANDARD'), getHistoryFeed);
 
 
 
@@ -181,7 +182,7 @@ historyRouter.get('/', protect, getHistoryFeed);
  *                       isCorrect: { type: boolean }
  *                       explanation: { type: string, nullable: true }
  */
-historyRouter.get('/mcq/:sessionId', protect, getMCQSessionDetail);
+historyRouter.get('/mcq/:sessionId', protect, gate('STANDARD'), getMCQSessionDetail);
 
 
 
@@ -236,7 +237,7 @@ historyRouter.get('/mcq/:sessionId', protect, getMCQSessionDetail);
  *                   items: { type: string }
  *                 overallComment: { type: string, nullable: true }
  */
-historyRouter.get('/essay/:attemptId', protect, getEssayAttemptDetail);
+historyRouter.get('/essay/:attemptId', protect, gate('STANDARD'), getEssayAttemptDetail);
 
 
 /**
@@ -305,6 +306,6 @@ historyRouter.get('/essay/:attemptId', protect, getEssayAttemptDetail);
  *                         type: array
  *                         items: { type: string }
  */
-historyRouter.get('/simulation/:simulationId', protect, getSimulationDetail);
+historyRouter.get('/simulation/:simulationId', protect, gate('STANDARD'), getSimulationDetail);
 
 export default historyRouter;

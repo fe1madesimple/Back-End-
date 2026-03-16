@@ -55,10 +55,15 @@ export class SubscriptionController {
       throw new AppError('No subscription found', 404);
     }
 
-    // Calculate additional info
     const now = new Date();
     const daysRemaining = subscription.currentPeriodEnd
-      ? Math.ceil((subscription.currentPeriodEnd.getTime() - now.getTime()) / (1000 * 60 * 60 * 24))
+      ? Math.max(
+          0,
+          Math.ceil(
+           
+            (subscription.currentPeriodEnd.getTime() - now.getTime()) / (1000 * 60 * 60 * 24)
+          )
+        )
       : 0;
 
     const response = {

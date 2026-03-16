@@ -16,6 +16,7 @@ import {
   toggleReviewSchema,
 } from '../validator/case.validator';
 import { validate } from '@/shared/middleware/validation';
+import { gate, gateLesson } from '@/shared/middleware/gate.middleware';
 
 const caseRouter = Router();
 
@@ -109,7 +110,7 @@ caseRouter.get('/saved', protect, validate(getSavedCasesSchema), getSavedCases);
  *       200:
  *         description: Cases retrieved successfully
  */
-caseRouter.get('/', protect, validate(searchCasesSchema), searchCases);
+caseRouter.get('/', protect, validate(searchCasesSchema), gate('STANDARD'), searchCases);
 
 /**
  * @swagger
@@ -132,7 +133,7 @@ caseRouter.get('/', protect, validate(searchCasesSchema), searchCases);
  *       404:
  *         description: Case not found
  */
-caseRouter.get('/:id', protect, validate(getCaseDetailsSchema), getCaseDetails);
+caseRouter.get('/:id', protect, validate(getCaseDetailsSchema), gate('STANDARD'), getCaseDetails);
 
 /**
  * @swagger
@@ -154,7 +155,7 @@ caseRouter.get('/:id', protect, validate(getCaseDetailsSchema), getCaseDetails);
  *       404:
  *         description: Case not found
  */
-caseRouter.post('/:id/save', protect, validate(saveCaseSchema), toggleSaveCase);
+caseRouter.post('/:id/save', protect, validate(saveCaseSchema), gate('STANDARD'),  toggleSaveCase);
 
 /**
  * @swagger
