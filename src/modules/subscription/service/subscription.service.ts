@@ -247,7 +247,6 @@ export class SubscriptionService {
       return;
     }
 
-    // Resolve which plan was purchased from the priceId
     let planType: 'STANDARD_MONTHLY' | 'STANDARD_ANNUAL' | 'PRO_MONTHLY' | 'PRO_ANNUAL';
     try {
       planType = getPlanTypeFromPriceId(priceId);
@@ -258,13 +257,33 @@ export class SubscriptionService {
 
     const stripeAny = subscription as any;
     const periodStart = stripeAny.current_period_start || stripeAny.billing_cycle_anchor;
-    const periodEnd = stripeAny.current_period_end;
-
     const currentPeriodStart = periodStart ? new Date(Number(periodStart) * 1000) : new Date();
 
-    const currentPeriodEnd = periodEnd
-      ? new Date(Number(periodEnd) * 1000)
-      : new Date(Date.now() + 30 * 24 * 60 * 60 * 1000);
+    // ── FIX: When subscription has a trial, Stripe sets current_period_end to the
+    // trial end date — not the real billing cycle end. Calculate it from the
+    // billing_cycle_anchor instead based on the plan interval.
+    const isAnnual = planType === 'STANDARD_ANNUAL' || planType === 'PRO_ANNUAL';
+    const hasTrial = !!subscription.trial_end;
+
+    let currentPeriodEnd: Date;
+
+    if (hasTrial) {
+      // Use billing_cycle_anchor as the real subscription start
+      // then add 1 year or 1 month depending on plan
+      const anchor = new Date(Number(stripeAny.billing_cycle_anchor) * 1000);
+      currentPeriodEnd = new Date(anchor);
+      if (isAnnual) {
+        currentPeriodEnd.setFullYear(currentPeriodEnd.getFullYear() + 1);
+      } else {
+        currentPeriodEnd.setMonth(currentPeriodEnd.getMonth() + 1);
+      }
+    } else {
+      // No trial — trust Stripe's current_period_end directly
+      const periodEnd = stripeAny.current_period_end;
+      currentPeriodEnd = periodEnd
+        ? new Date(Number(periodEnd) * 1000)
+        : new Date(Date.now() + (isAnnual ? 365 : 30) * 24 * 60 * 60 * 1000);
+    }
 
     await prisma.subscription.update({
       where: { userId },
@@ -272,7 +291,7 @@ export class SubscriptionService {
         stripeSubscriptionId: subscription.id,
         stripePriceId: priceId,
         status: 'ACTIVE',
-        planType, // ← now properly set: STANDARD_MONTHLY etc.
+        planType,
         currentPeriodStart,
         currentPeriodEnd,
         cancelledAt: null,
@@ -288,12 +307,10 @@ export class SubscriptionService {
       await emailService.sendSubscriptionActivatedEmail(user.email, user.fullName!, planType);
     }
 
-    console.log(`✅ Subscription created — user: ${userId}, plan: ${planType}`);
+    console.log(
+      `✅ Subscription created — user: ${userId}, plan: ${planType}, annual: ${isAnnual}, hasTrial: ${hasTrial}`
+    );
   }
-
-  // ─── handleSubscriptionUpdated ──────────────────────────────────────────────
-  // Handles renewals, cancellation scheduling, plan changes.
-  // planType is updated if the priceId changed (e.g. upgrade/downgrade).
 
   private async handleSubscriptionUpdated(subscription: Stripe.Subscription) {
     let existingSubscription = await prisma.subscription.findUnique({
@@ -314,7 +331,7 @@ export class SubscriptionService {
       return;
     }
 
-    // cancelledAt: only set when cancel_at_period_end = true (user scheduled cancellation)
+    // cancelledAt: only set when cancel_at_period_end = true
     const cancelledAt = subscription.cancel_at_period_end
       ? subscription.canceled_at
         ? new Date(subscription.canceled_at * 1000)
@@ -333,6 +350,26 @@ export class SubscriptionService {
     }
 
     const stripeAny = subscription as any;
+    const isTrialing = subscription.status === 'trialing';
+    const isAnnualPlan = planType === 'STANDARD_ANNUAL' || planType === 'PRO_ANNUAL';
+
+    // ── FIX: When status is still 'trialing', current_period_end from Stripe
+    // is still the trial end date. Calculate the real end from billing_cycle_anchor.
+    let currentPeriodEnd: Date;
+
+    if (isTrialing) {
+      const anchor = new Date(Number(stripeAny.billing_cycle_anchor) * 1000);
+      currentPeriodEnd = new Date(anchor);
+      if (isAnnualPlan) {
+        currentPeriodEnd.setFullYear(currentPeriodEnd.getFullYear() + 1);
+      } else {
+        currentPeriodEnd.setMonth(currentPeriodEnd.getMonth() + 1);
+      }
+    } else {
+      // Active, cancelled, or any other status — trust Stripe's value directly
+      currentPeriodEnd = new Date(stripeAny.current_period_end * 1000);
+    }
+
     await prisma.subscription.update({
       where: { id: existingSubscription.id },
       data: {
@@ -345,14 +382,15 @@ export class SubscriptionService {
             : subscription.status === 'canceled'
               ? 'CANCELLED'
               : 'ACTIVE',
-
         currentPeriodStart: new Date(stripeAny.current_period_start * 1000),
-        currentPeriodEnd: new Date(stripeAny.current_period_end * 1000),
+        currentPeriodEnd,
         cancelledAt,
       },
     });
 
-    console.log(`✅ Subscription updated: ${subscription.id}, plan: ${planType}`);
+    console.log(
+      `✅ Subscription updated: ${subscription.id}, plan: ${planType}, trialing: ${isTrialing}`
+    );
   }
 
   // ─── handleSubscriptionDeleted ──────────────────────────────────────────────
