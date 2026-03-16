@@ -18,6 +18,7 @@ import {
   getAllEssayQuestions,
   getNextQuestion,
 } from '../controller/lesson.controller';
+import { gate, gateLesson } from '@/shared/middleware/gate.middleware';
 
 const lessonRouter = Router();
 
@@ -61,7 +62,7 @@ const lessonRouter = Router();
  *                 explanation: { type: string, nullable: true }
  *                 isLastQuestion: { type: boolean }
  */
-lessonRouter.post('/mcq/attempt', protect, attemptMCQ);
+lessonRouter.post('/mcq/attempt', protect, gate('STANDARD'), attemptMCQ);
 
 /**
  * @swagger
@@ -126,7 +127,7 @@ lessonRouter.post('/mcq/attempt', protect, attemptMCQ);
  *       404:
  *         description: Session not found
  */
-lessonRouter.get('/mcq/next/:sessionId/:index', protect, getNextQuestion);
+lessonRouter.get('/mcq/next/:sessionId/:index', protect, gate('STANDARD'), getNextQuestion);
 
 /**
  * @swagger
@@ -163,7 +164,7 @@ lessonRouter.get('/mcq/next/:sessionId/:index', protect, getNextQuestion);
  *                 badgeUnlocked: { type: boolean, description: "True only on 100%" }
  *                 completedAt: { type: string, format: date-time }
  */
-lessonRouter.get('/mcq/results/:sessionId', protect, getQuizResults);
+lessonRouter.get('/mcq/results/:sessionId', protect, gate('STANDARD'), getQuizResults);
 
 /**
  * @swagger
@@ -206,7 +207,7 @@ lessonRouter.get('/mcq/results/:sessionId', protect, getQuizResults);
  *                 sampleAnswer: { type: string, nullable: true }
  *                 feedback: { type: object, nullable: true }
  */
-lessonRouter.post('/essay/submit', protect, submitLessonEssay);
+lessonRouter.post('/essay/submit', protect, gate('STANDARD', { aiLimit: true }), submitLessonEssay);
 
 
 
@@ -257,7 +258,7 @@ lessonRouter.get('/admin/essays', protect, getAllEssayQuestions);
  *       200:
  *         description: Lesson detail including video, transcript, module tree, user progress
  */
-lessonRouter.get('/:id', protect, getLessonById);
+lessonRouter.get('/:id', protect, gateLesson(), getLessonById);
 
 /**
  * @swagger
@@ -374,7 +375,7 @@ lessonRouter.patch('/:id/track-time', protect, trackTimeSpent);
  *       404:
  *         description: Lesson not found or no MCQ questions available
  */
-lessonRouter.get('/:id/mcq', protect, getLessonMCQs);
+lessonRouter.get('/:id/mcq', protect,  gate('STANDARD'), getLessonMCQs);
 
 
 // /**
@@ -433,7 +434,7 @@ lessonRouter.get('/:id/mcq/all', protect, getAllLessonMCQs);
  *                     text: { type: string }
  *                     subject: { type: string }
  */
-lessonRouter.get('/:id/essay', protect, getLessonEssayQuestion);
+lessonRouter.get('/:id/essay', protect, gate('STANDARD'), getLessonEssayQuestion);
 
 
 
