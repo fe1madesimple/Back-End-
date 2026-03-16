@@ -305,7 +305,7 @@ export async function submitPracticeService(
     }
   }
 
-  // Check for duplicate indexes
+  // Check for duplicate indexes — each question can only be answered once
   const indexes = answers.map((a) => a.questionIndex);
   const uniqueIndexes = new Set(indexes);
   if (uniqueIndexes.size !== indexes.length) {
@@ -342,6 +342,8 @@ export async function submitPracticeService(
   const timePerQuestion = Math.floor(totalTimeSeconds / answers.length);
 
   // Save one EssayAttempt per answer
+  // practiceSessionId groups attempts under this session for history
+  // simulationId is null — it only accepts Simulation table IDs
   await Promise.all(
     resolvedAnswers.map((a, index) => {
       const grading = gradingResults[index]!;
@@ -365,8 +367,9 @@ export async function submitPracticeService(
           model: 'claude-sonnet-4-20250514',
           tokensUsed: grading.tokensUsed,
           source: 'PRACTICE',
-          simulationId: practiceSessionId,
-        },
+          simulationId: null, // ← always null, wrong table
+          practiceSessionId: practiceSessionId, // ← correct field (requires migration)
+        } as any,
       });
     })
   );
@@ -387,8 +390,7 @@ export async function submitPracticeService(
     .checkAllAchievements(userId)
     .catch((err) => console.error('Achievement check failed:', err));
 
-  // Scores — only answered questions, sorted by box position (questionIndex)
-  // Matches the screen: Q1 16/20, Q2 14/20 etc — only answered ones shown
+  // Scores — only answered questions, sorted by box position
   const scores: QuestionScoreItem[] = resolvedAnswers
     .map((a, index) => {
       const grading = gradingResults[index]!;
@@ -409,9 +411,9 @@ export async function submitPracticeService(
     submittedAt,
     totalAnswered: answers.length,
     totalTimeSeconds,
-    overallScore, // 0-100 raw score for the donut circle %
-    passed: overallScore >= 50, // drives PASSED/FAILED label
-    scores, // array of { questionIndex, aiScore, scoreOutOf, band, appPass }
+    overallScore,
+    passed: overallScore >= 50,
+    scores,
   };
 }
 
