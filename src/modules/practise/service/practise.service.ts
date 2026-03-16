@@ -430,7 +430,7 @@ export async function getPracticeResultsService(
   if (!session || session.userId !== userId) throw new NotFoundError('Session not found');
 
   const attempts = await prisma.essayAttempt.findMany({
-    where: { userId, source: 'PRACTICE', simulationId: sessionId },
+    where: { userId, source: 'PRACTICE', practiceSessionId: sessionId }, // ← fixed
     select: { questionId: true, aiScore: true, band: true, appPass: true },
     orderBy: { createdAt: 'asc' },
   });
@@ -440,10 +440,9 @@ export async function getPracticeResultsService(
       ? Math.round(attempts.reduce((sum, a) => sum + (a.aiScore ?? 0), 0) / attempts.length)
       : 0;
 
-  // Resolve index for each attempt then sort by box position
   const scores: QuestionScoreItem[] = attempts
     .map((a) => ({
-      questionIndex: session.questionIds.indexOf(a.questionId ?? ''), // ← add ?? ''
+      questionIndex: session.questionIds.indexOf(a.questionId ?? ''),
       aiScore: Math.round(((a.aiScore ?? 0) / 100) * 20),
       scoreOutOf: 20,
       band: a.band ?? '',
