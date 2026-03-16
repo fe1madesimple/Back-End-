@@ -44,7 +44,9 @@ export class SubjectService {
     });
   }
 
+
   async getSubjectById(userId: string, subjectId: string): Promise<SubjectDetail> {
+    
     const subject = await prisma.subject.findUnique({
       where: { id: subjectId, isPublished: true },
       include: {
@@ -57,6 +59,7 @@ export class SubjectService {
           include: {
             lessons: {
               where: { isPublished: true },
+              orderBy: { order: 'asc' }, 
             },
             userProgress: {
               where: { userId },
@@ -70,6 +73,22 @@ export class SubjectService {
       throw new AppError('Subject not found');
     }
 
+    // ── Resolve user plan for lock UI ──────────────────────────────────────────
+    const subscription = await prisma.subscription.findUnique({
+      where: { userId },
+      select: { status: true, planType: true },
+    });
+
+    const isFree =
+      !subscription ||
+      subscription.status === 'FREEMIUM' ||
+      subscription.status === 'EXPIRED' ||
+      subscription.status === 'CANCELLED';
+
+    // TRIAL or ACTIVE (any paid plan) → full access, nothing locked
+    // FREEMIUM / EXPIRED / CANCELLED   → only module order 1 is free
+
+    // ── Stats ──────────────────────────────────────────────────────────────────
     const totalModules = subject.modules.length;
     const completedModules = subject.modules.filter(
       (m) => m.userProgress[0]?.status === 'COMPLETED'
@@ -84,17 +103,11 @@ export class SubjectService {
     const attempts = await prisma.questionAttempt.findMany({
       where: {
         userId,
-        question: {
-          module: {
-            subjectId: subject.id,
-          },
-        },
+        question: { module: { subjectId: subject.id } },
       },
       select: {
         pointsEarned: true,
-        question: {
-          select: { points: true },
-        },
+        question: { select: { points: true } },
       },
     });
 
@@ -125,20 +138,29 @@ export class SubjectService {
             totalTimeSeconds: 0,
             lastAccessedAt: null,
           },
-      modules: subject.modules.map((module) => ({
-        id: module.id,
-        name: module.name,
-        slug: module.slug ?? null, // nullable — slug removed from Subject, still exists on Module
-        order: module.order,
-        lessonsCount: module.lessons.length,
-        completedLessons: module.userProgress[0]?.completedLessons || 0,
-        status: module.userProgress[0]?.status || 'NOT_STARTED',
-        lessons: module.lessons.map((lesson) => ({
-          id: lesson.id,
-          title: lesson.title,
-          order: lesson.order,
-        })),
-      })),
+
+      modules: subject.modules.map((module) => {
+        
+        const isModuleLocked = isFree && module.order > 1;
+
+        return {
+          id: module.id,
+          name: module.name,
+          slug: module.slug ?? null,
+          order: module.order,
+          lessonsCount: module.lessons.length,
+          completedLessons: module.userProgress[0]?.completedLessons || 0,
+          status: module.userProgress[0]?.status || 'NOT_STARTED',
+          isLocked: isModuleLocked, 
+          lessons: module.lessons.map((lesson) => ({
+            id: lesson.id,
+            title: lesson.title,
+            order: lesson.order,
+            isLocked: isModuleLocked, 
+          })),
+        };
+      }),
+
       stats: {
         totalModules,
         completedModules,
