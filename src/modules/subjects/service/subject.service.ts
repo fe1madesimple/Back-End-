@@ -133,6 +133,11 @@ export class SubjectService {
         lessonsCount: module.lessons.length,
         completedLessons: module.userProgress[0]?.completedLessons || 0,
         status: module.userProgress[0]?.status || 'NOT_STARTED',
+        lessons: module.lessons.map((lesson) => ({
+          id: lesson.id,
+          title: lesson.title,
+          order: lesson.order,
+        })),
       })),
       stats: {
         totalModules,

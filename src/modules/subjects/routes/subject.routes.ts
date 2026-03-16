@@ -91,15 +91,20 @@ const subjectRouter = Router();
 subjectRouter.get('/', protect, getSubjects);
 
 
+
 /**
  * @swagger
  * /api/v1/subjects/{id}:
  *   get:
- *     summary: Get subject details with modules and stats
+ *     summary: Get subject details with modules, lessons and stats
  *     tags: [Subjects]
  *     security:
  *       - bearerAuth: []
- *     description: Returns subject information, progress, module list, and statistics.
+ *     description: |
+ *       Returns subject information, progress, all modules with their lessons
+ *       inside each module, and statistics. Use this single call to render
+ *       the full subject detail page including the module accordion with
+ *       lesson lists. No separate getModuleById call needed.
  *     parameters:
  *       - in: path
  *         name: id
@@ -166,6 +171,7 @@ subjectRouter.get('/', protect, getSubjects);
  *                             type: string
  *                           slug:
  *                             type: string
+ *                             nullable: true
  *                           order:
  *                             type: integer
  *                           lessonsCount:
@@ -174,6 +180,21 @@ subjectRouter.get('/', protect, getSubjects);
  *                             type: integer
  *                           status:
  *                             type: string
+ *                             enum: [NOT_STARTED, IN_PROGRESS, COMPLETED]
+ *                           lessons:
+ *                             type: array
+ *                             description: All lessons in this module — use id to navigate to lesson screen
+ *                             items:
+ *                               type: object
+ *                               properties:
+ *                                 id:
+ *                                   type: string
+ *                                   description: Pass this to GET /lessons/:id
+ *                                 title:
+ *                                   type: string
+ *                                   example: Characteristics of a Crime
+ *                                 order:
+ *                                   type: integer
  *                     stats:
  *                       type: object
  *                       properties:
@@ -198,72 +219,6 @@ subjectRouter.get('/', protect, getSubjects);
 subjectRouter.get('/:id', protect, getSubjectById);
 
 
-
-/**
- * @swagger
- * /api/v1/subjects/{subjectId}/modules:
- *   get:
- *     summary: Get all modules in a subject
- *     tags: [Modules]
- *     security:
- *       - bearerAuth: []
- *     description: Returns all modules within a subject with user progress tracking. Includes module details, total lessons vs completed lessons, progress percentage, and status badges (Completed, In Progress, Not Started).
- *     parameters:
- *       - in: path
- *         name: subjectId
- *         required: true
- *         schema:
- *           type: string
- *         description: Subject ID
- *     responses:
- *       200:
- *         description: Modules retrieved successfully
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 success:
- *                   type: boolean
- *                   example: true
- *                 message:
- *                   type: string
- *                   example: Modules retrieved successfully
- *                 data:
- *                   type: array
- *                   items:
- *                     type: object
- *                     properties:
- *                       id:
- *                         type: string
- *                         example: mod_123
- *                       name:
- *                         type: string
- *                         example: Module 1: Foundations of Criminal Law
- *                       slug:
- *                         type: string
- *                         example: foundations
- *                       description:
- *                         type: string
- *                         example: Core principles and elements of criminal liability
- *                       order:
- *                         type: integer
- *                         example: 1
- *                       totalLessons:
- *                         type: integer
- *                         example: 5
- *                       completedLessons:
- *                         type: integer
- *                         example: 3
- *                       progressPercent:
- *                         type: number
- *                         example: 60
- *                         description: Progress percentage (0-100). Returns 0 if no progress.
- *                       status:
- *                         type: string
- *                         enum: [NOT_STARTED, IN_PROGRESS, COMPLETED]
- *                         example: IN_PROGRESS
- */
 subjectRouter.get('/:subjectId/modules', protect, getModulesBySubject);
 
 export default subjectRouter;  
