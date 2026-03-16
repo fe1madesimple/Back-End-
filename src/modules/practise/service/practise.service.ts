@@ -8,7 +8,6 @@ import {
   PastQuestionsResponse,
   StartPracticeInput,
   StartPracticeResponse,
-  GetPracticeQuestionResponse,
   SubmitPracticeInput,
   SubmitPracticeResponse,
   PracticeResultsResponse,
