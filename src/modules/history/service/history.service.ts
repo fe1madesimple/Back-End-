@@ -16,66 +16,66 @@ class HistoryService {
   // ─── Stats Bar ──────────────────────────────────────────────────────────────
   // Powers the 3 stat cards at the top of the history page.
 
-  async getStats(userId: string): Promise<HistoryStatsResponse> {
-  const [lessonEssayAttempts, practiceSessions, quizSessions] = await Promise.all([
- 
-    // Essay practice — LESSON_PRACTICE only (not simulation attempts)
-    prisma.essayAttempt.findMany({
-      where: { userId, source: 'LESSON_PRACTICE' },
-      select: { aiScore: true },
-    }),
- 
-    // Simulations — completed PracticeSessions
-    // A session counts as 1 simulation regardless of how many questions answered
-    prisma.practiceSession.findMany({
-      where: { userId, isCompleted: true },
-      select: { id: true },
-    }),
- 
-    // MCQ batch sessions — completed ones only
-    prisma.quizSession.findMany({
-      where: { userId, isCompleted: true },
-      select: { correctAnswers: true, totalQuestions: true },
-    }),
-  ]);
- 
-  // Essay stats — lesson practice only
-  const totalEssays = lessonEssayAttempts.length;
-  const avgScore =
-    totalEssays > 0
-      ? Math.round(
-          lessonEssayAttempts.reduce((sum, a) => {
-            const score20 = a.aiScore !== null ? Math.round((a.aiScore / 100) * 20) : 0;
-            return sum + score20;
-          }, 0) / totalEssays
-        )
-      : 0;
- 
-  // MCQ stats
-  const totalMCQBatches = quizSessions.length;
-  const bestScore =
-    quizSessions.length > 0
-      ? Math.max(
-          ...quizSessions.map((s) =>
-            s.totalQuestions > 0 ? Math.round((s.correctAnswers / s.totalQuestions) * 100) : 0
+  async getStats(userId: string): Promise<any> {
+    const [lessonEssayAttempts, practiceSessions, quizSessions] = await Promise.all([
+      // Essay practice — LESSON_PRACTICE only (not simulation attempts)
+      prisma.essayAttempt.findMany({
+        where: { userId, source: 'LESSON_PRACTICE' },
+        select: { aiScore: true },
+      }),
+
+      // Simulations — completed PracticeSessions
+      // A session counts as 1 simulation regardless of how many questions answered
+      prisma.practiceSession.findMany({
+        where: { userId, isCompleted: true },
+        select: { id: true },
+      }),
+
+      // MCQ batch sessions — completed ones only
+      prisma.quizSession.findMany({
+        where: { userId, isCompleted: true },
+        select: { correctAnswers: true, totalQuestions: true },
+      }),
+    ]);
+
+    // Essay stats — lesson practice only
+    const totalEssays = lessonEssayAttempts.length;
+    const avgScore =
+      totalEssays > 0
+        ? Math.round(
+            lessonEssayAttempts.reduce((sum, a) => {
+              const score20 = a.aiScore !== null ? Math.round((a.aiScore / 100) * 20) : 0;
+              return sum + score20;
+            }, 0) / totalEssays
           )
-        )
-      : 0;
- 
-  return {
-    essayPractice: {
-      total: totalEssays,
-      avgScore,
-    },
-    simulations: {                        // renamed from fullSimulations
-      total: practiceSessions.length,     // count of completed PracticeSessions
-    },
-    mcqBatches: {
-      total: totalMCQBatches,
-      bestScore,
-    },
-  };
-}
+        : 0;
+
+    // MCQ stats
+    const totalMCQBatches = quizSessions.length;
+    const bestScore =
+      quizSessions.length > 0
+        ? Math.max(
+            ...quizSessions.map((s) =>
+              s.totalQuestions > 0 ? Math.round((s.correctAnswers / s.totalQuestions) * 100) : 0
+            )
+          )
+        : 0;
+
+    return {
+      essayPractice: {
+        total: totalEssays,
+        avgScore,
+      },
+      simulations: {
+        // renamed from fullSimulations
+        total: practiceSessions.length, // count of completed PracticeSessions
+      },
+      mcqBatches: {
+        total: totalMCQBatches,
+        bestScore,
+      },
+    };
+  }
 
   // ─── Activity Feed ───────────────────────────────────────────────────────────
   // Paginated list of all activity, filterable by type.
@@ -94,8 +94,7 @@ class HistoryService {
     const includeMCQ = type === 'all' || type === 'mcq';
     const includeSimulation = type === 'all' || type === 'simulation';
 
-    // ── Fetch all relevant records in parallel
-    const [essayAttempts, quizSessions, simulations] = await Promise.all([
+    const [essayAttempts, quizSessions, practiceSessions] = await Promise.all([
       includeEssay
         ? prisma.essayAttempt.findMany({
             where: { userId },
@@ -105,21 +104,11 @@ class HistoryService {
               appPass: true,
               source: true,
               createdAt: true,
-              // from old Question model (PRACTICE/SIMULATION source)
               question: {
-                select: {
-                  subject: true,
-                  description: true,
-                  year: true,
-                  text: true,
-                },
+                select: { subject: true, description: true, year: true, text: true },
               },
-              // from new EssayQuestion bank (LESSON_PRACTICE source)
               essayQuestion: {
-                select: {
-                  subject: true,
-                  text: true,
-                },
+                select: { subject: true, text: true },
               },
             },
             orderBy: { createdAt: 'desc' },
@@ -142,18 +131,21 @@ class HistoryService {
           })
         : Promise.resolve([]),
 
+      // Simulations — completed PracticeSessions
       includeSimulation
-        ? prisma.simulation.findMany({
-            where: { userId },
+        ? prisma.practiceSession.findMany({
+            where: { userId, isCompleted: true },
             select: {
               id: true,
               subject: true,
               year: true,
-              overallScore: true,
-              passed: true,
-              startedAt: true,
+              submittedAt: true,
+              createdAt: true,
+              essayAttempts: {
+                select: { aiScore: true },
+              },
             },
-            orderBy: { startedAt: 'desc' },
+            orderBy: { createdAt: 'desc' },
           })
         : Promise.resolve([]),
     ]);
@@ -165,15 +157,10 @@ class HistoryService {
       const q = attempt.question;
 
       const subject = isLessonPractice ? (eq?.subject ?? 'Unknown') : (q?.subject ?? 'Unknown');
-
       const rawTitle = isLessonPractice ? (eq?.text ?? '') : (q?.description ?? q?.text ?? '');
-
-      // Truncate to first ~60 chars as card title
       const title = rawTitle.length > 60 ? rawTitle.slice(0, 60) + '...' : rawTitle;
-
       const year = isLessonPractice ? null : (q?.year ?? null);
-
-      const source: HistoryItemSource = isLessonPractice ? 'FROM_LESSON' : 'SIMULATION';
+      const source: HistoryItemSource = isLessonPractice ? 'FROM_LESSON' : 'FROM_PRACTICE';
       const score = attempt.aiScore !== null ? Math.round((attempt.aiScore / 100) * 20) : null;
 
       items.push({
@@ -192,28 +179,28 @@ class HistoryService {
 
     // ── Map MCQ sessions to feed items
     for (const session of quizSessions as any[]) {
-      // QuizSession has lessonId not a lesson relation — subject resolved at query time via join
-      const subject = (session as any).lessonSubject ?? 'Unknown';
-      const lessonTitle = (session as any).lessonTitle ?? null;
-      const title = lessonTitle
-        ? lessonTitle
-        : session.quizType === 'PRACTICE_TAB'
-          ? 'Quick Quiz'
-          : 'MCQ Session';
+      let subject = 'Unknown';
+      if (session.lessonId) {
+        const lesson = await prisma.lesson.findUnique({
+          where: { id: session.lessonId },
+          select: { title: true, module: { select: { subject: { select: { name: true } } } } },
+        });
+        subject = lesson?.module?.subject?.name ?? 'Unknown';
+      }
 
       const accuracy =
         session.totalQuestions > 0
           ? Math.round((session.correctAnswers / session.totalQuestions) * 100)
           : 0;
 
-      const source: HistoryItemSource = session.lessonId ? 'FROM_LESSON' : 'SIMULATION';
+      const source: HistoryItemSource = session.lessonId ? 'FROM_LESSON' : 'FROM_PRACTICE';
 
       items.push({
         id: session.id,
         type: 'MCQ',
         source,
         subject,
-        title,
+        title: session.lessonId ? subject : 'MCQ Session',
         date: (session.completedAt ?? session.createdAt).toISOString(),
         year: null,
         score: accuracy,
@@ -222,26 +209,34 @@ class HistoryService {
       });
     }
 
-    // ── Map simulations to feed items
-    for (const sim of simulations as any[]) {
-      const score = sim.overallScore ?? null;
+    // ── Map practice sessions to feed items (simulations)
+    for (const ps of practiceSessions as any[]) {
+      const attempts = ps.essayAttempts as { aiScore: number | null }[];
+      const avgScore =
+        attempts.length > 0
+          ? Math.round(
+              attempts.reduce((sum: number, a: any) => sum + (a.aiScore ?? 0), 0) / attempts.length
+            )
+          : null;
+      const passed = avgScore !== null ? avgScore >= 50 : null;
+
       items.push({
-        id: sim.id,
+        id: ps.id,
         type: 'SIMULATION',
-        source: 'SIMULATION',
-        subject: sim.subject ?? 'Mixed',
-        title: sim.subject
-          ? `${sim.subject}${sim.year ? ` ${sim.year}` : ''} Simulation`
-          : 'Full Simulation',
-        date: sim.startedAt.toISOString(),
-        year: sim.year ?? null,
-        score,
-        passed: sim.passed ?? null,
-        appPass: score !== null ? score >= 80 : null,
+        source: 'FROM_PRACTICE',
+        subject: ps.subject ?? 'Mixed',
+        title: ps.subject
+          ? `${ps.subject}${ps.year ? ` ${ps.year}` : ''} Simulation`
+          : 'Simulation',
+        date: (ps.submittedAt ?? ps.createdAt).toISOString(),
+        year: ps.year ?? null,
+        score: avgScore,
+        passed,
+        appPass: avgScore !== null ? avgScore >= 80 : null,
       });
     }
 
-    // ── Sort all items by date desc, then paginate
+    // ── Sort by date desc, paginate
     items.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
     const total = items.length;
