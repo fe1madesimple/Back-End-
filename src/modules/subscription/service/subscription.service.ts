@@ -282,7 +282,7 @@ export class SubscriptionService {
     });
 
     if (user) {
-      await emailService.sendSubscriptionActivatedEmail(user.email, user.fullName!);
+     await emailService.sendSubscriptionActivatedEmail(user.email, user.fullName!, planType);
     }
 
     console.log(`✅ Subscription created — user: ${userId}, plan: ${planType}`);
