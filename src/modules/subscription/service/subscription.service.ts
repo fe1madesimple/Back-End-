@@ -9,7 +9,6 @@ import {
   StripeWebhookEvent,
   IWebhookResponse,
   ISubscriptionResponse,
-  ISubscriptionConfigResponse,
 } from '../interface/subscription.interface';
 import emailService from '@/shared/services/email.service';
 import { AppError } from '@/shared/utils';
