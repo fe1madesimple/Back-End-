@@ -230,7 +230,7 @@ export async function getPracticeQuestionService(
   userId: string,
   sessionId: string,
   questionIndex: number
-): Promise<GetPracticeQuestionResponse> {
+): Promise<any> {
   const session = await prisma.practiceSession.findUnique({
     where: { id: sessionId },
   });
@@ -259,31 +259,14 @@ export async function getPracticeQuestionService(
 
   if (!question) throw new NotFoundError('Question not found');
 
-  const elapsedSeconds = Math.floor((Date.now() - session.startedAt.getTime()) / 1000);
-
-  const attempts = await prisma.essayAttempt.findMany({
-    where: { userId, source: 'PRACTICE', simulationId: sessionId },
-    select: { questionId: true, answerText: true },
-  });
-
-  // ← FIXED: a.questionId is now string | null — use ?? '' so indexOf never gets null
-  const answeredIndexes = attempts
-    .map((a) => session.questionIds.indexOf(a.questionId ?? ''))
-    .filter((i) => i !== -1);
-
-  // null !== questionId (string) so this is safe as-is
-  const savedAttempt = attempts.find((a) => a.questionId === questionId);
 
   return {
     practiceSessionId: session.id,
     subject: session.subject,
     year: session.year,
-    elapsedSeconds,
     question: { ...question, index: questionIndex },
     totalQuestions: session.questionIds.length,
-    currentQuestionIndex: questionIndex,
-    answeredIndexes,
-    savedAnswer: savedAttempt?.answerText ?? null,
+    currentQuestionIndex: questionIndex
   };
 }
 // ── submitPracticeService ────────────────────────────────────

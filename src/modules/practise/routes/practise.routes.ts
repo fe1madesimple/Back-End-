@@ -94,6 +94,8 @@ practiceRouter.post('/start', protect, validate(startPracticeSchema), startPract
 
 practiceRouter.get('/essay-questions', protect, getEssayQuestions);
 
+
+
 /**
  * @swagger
  * /api/v1/practice/session/{sessionId}/question/{questionIndex}:
@@ -103,11 +105,10 @@ practiceRouter.get('/essay-questions', protect, getEssayQuestions);
  *     security:
  *       - bearerAuth: []
  *     description: |
- *       Single endpoint for initial load, box click, next, previous, and page reload.
+ *       Single endpoint for initial load, box click, next, and previous navigation.
  *       questionIndex is 0-based (box 1 = 0, box 8 = 7).
  *       Backend resolves questionId = session.questionIds[questionIndex].
- *       elapsedSeconds = now - session.startedAt — resyncs frontend timer on reload.
- *       savedAnswer pre-fills textarea if question was already answered.
+ *       Frontend manages its own timer — elapsedSeconds is not returned.
  *     parameters:
  *       - in: path
  *         name: sessionId
@@ -120,7 +121,28 @@ practiceRouter.get('/essay-questions', protect, getEssayQuestions);
  *         description: 0-based box index (0–7)
  *     responses:
  *       200:
- *         description: Returns question, elapsedSeconds, answeredIndexes[], savedAnswer
+ *         description: Question and session context returned
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 practiceSessionId: { type: string }
+ *                 subject: { type: string }
+ *                 year: { type: integer }
+ *                 totalQuestions: { type: integer }
+ *                 currentQuestionIndex: { type: integer, description: "0-based" }
+ *                 question:
+ *                   type: object
+ *                   properties:
+ *                     id: { type: string }
+ *                     text: { type: string }
+ *                     subject: { type: string }
+ *                     year: { type: integer }
+ *                     examType: { type: string }
+ *                     description: { type: string }
+ *                     order: { type: integer }
+ *                     index: { type: integer, description: "0-based position in session" }
  */
 practiceRouter.get(
   '/session/:sessionId/question/:questionIndex',
