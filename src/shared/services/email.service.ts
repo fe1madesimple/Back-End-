@@ -105,7 +105,7 @@ class EmailService {
         <h1 style="margin:0 0 16px;font-size:24px;font-weight:600;color:#111827;">Your Trial Ends in 3 Days</h1>
         <p style="margin:0 0 24px;font-size:16px;line-height:24px;color:#6b7280;">Hi ${firstName},</p>
         <p style="margin:0 0 16px;font-size:16px;line-height:24px;color:#6b7280;">Your 7-day free trial of FE-1 Made Simple is ending on <strong>${formattedDate}</strong>.</p>
-        <p style="margin:0 0 32px;font-size:16px;line-height:24px;color:#6b7280;">To continue enjoying unlimited access to all features, make sure your payment method is ready. You'll be charged <strong>€9.99/month</strong> starting ${formattedDate}.</p>
+        <p style="margin:0 0 32px;font-size:16px;line-height:24px;color:#6b7280;">To continue enjoying unlimited access to all features, make sure your payment method is ready. To keep your access, subscribe to a plan starting from <strong>€29/month</strong> starting ${formattedDate}.</p>
         
         <div style="background:#f9fafb;border-radius:8px;padding:24px;margin-bottom:32px;">
           <p style="margin:0 0 12px;font-size:14px;font-weight:600;color:#111827;">What You'll Keep:</p>
@@ -820,7 +820,7 @@ class EmailService {
     </tr>
     <tr>
       <td style="background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;padding:40px;">
-        <h1 style="margin:0 0 16px;font-size:24px;font-weight:600;color:#111827;">🎉 Welcome to Premium!</h1>
+        <h1 style="margin:0 0 16px;font-size:24px;font-weight:600;color:#111827;">🎉 Subscription Activated!</h1>
         <p style="margin:0 0 24px;font-size:16px;line-height:24px;color:#6b7280;">Hi ${firstName},</p>
         <p style="margin:0 0 16px;font-size:16px;line-height:24px;color:#6b7280;">Your premium subscription is now active! You now have unlimited access to all FE-1 exam preparation features.</p>
         
@@ -839,7 +839,7 @@ class EmailService {
           <a href="${process.env.FRONTEND_URL}/dashboard" style="display:inline-block;background:#2563eb;color:#ffffff;text-decoration:none;padding:14px 28px;border-radius:8px;font-weight:600;font-size:16px;">Start Learning</a>
         </div>
 
-        <p style="margin:0;font-size:14px;line-height:20px;color:#9ca3af;text-align:center;">You'll be charged €9.99/month. Cancel anytime.</p>
+        <p style="margin:0;font-size:14px;line-height:20px;color:#9ca3af;text-align:center;">Cancel anytime from your subscription settings.</p>
       </td>
     </tr>
     <tr>
@@ -851,7 +851,7 @@ class EmailService {
 </body>
 </html>`;
 
-    await this.send(email, 'Welcome to Premium - FE-1 Made Simple', html);
+    await this.send(email, 'Welcome to Pro - FE-1 Made Simple', html);
   }
 
   async sendSubscriptionCancelledEmail(email: string, firstName: string, accessUntilDate: Date) {
