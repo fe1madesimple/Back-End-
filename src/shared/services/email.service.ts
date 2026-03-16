@@ -8,6 +8,73 @@ const SENDER = {
   name: process.env.BREVO_SENDER_NAME!,
 };
 
+const PLAN_CONFIG: Record<
+  string,
+  {
+    name: string;
+    price: string;
+    interval: string;
+    features: string[];
+  }
+> = {
+  STANDARD_MONTHLY: {
+    name: 'Standard',
+    price: '€29',
+    interval: 'month',
+    features: [
+      'All subjects and all modules',
+      'Full case law library with bookmarking',
+      'Recall Quiz (MCQ practice)',
+      'Past question bank',
+      'Mock exam simulations',
+      'Progress analytics dashboard',
+      '15 AI feedback sessions per month',
+      'Email study reminders',
+    ],
+  },
+  STANDARD_ANNUAL: {
+    name: 'Standard',
+    price: '€249',
+    interval: 'year',
+    features: [
+      'All subjects and all modules',
+      'Full case law library with bookmarking',
+      'Recall Quiz (MCQ practice)',
+      'Past question bank',
+      'Mock exam simulations',
+      'Progress analytics dashboard',
+      '15 AI feedback sessions per month',
+      'Email study reminders',
+    ],
+  },
+  PRO_MONTHLY: {
+    name: 'Pro',
+    price: '€49',
+    interval: 'month',
+    features: [
+      'Everything in Standard',
+      '40 AI feedback sessions per month',
+      'Study Notes access (read only)',
+      'New practice questions beyond past papers',
+      'Early access to new features',
+      'Priority support — 24hr email response',
+    ],
+  },
+  PRO_ANNUAL: {
+    name: 'Pro',
+    price: '€399',
+    interval: 'year',
+    features: [
+      'Everything in Standard',
+      '40 AI feedback sessions per month',
+      'Study Notes access (read only)',
+      'New practice questions beyond past papers',
+      'Early access to new features',
+      'Priority support — 24hr email response',
+    ],
+  },
+};
+
 class EmailService {
   private async send(to: string, subject: string, htmlContent: string) {
     const sendSmtpEmail = new brevo.SendSmtpEmail();
@@ -802,7 +869,15 @@ class EmailService {
     await this.send(email, 'Payment Successful - FE-1 Made Simple', html);
   }
 
-  async sendSubscriptionActivatedEmail(email: string, firstName: string) {
+  async sendSubscriptionActivatedEmail(
+    email: string,
+    firstName: string,
+    planType: string // ← new param: 'STANDARD_MONTHLY' | 'STANDARD_ANNUAL' | 'PRO_MONTHLY' | 'PRO_ANNUAL'
+  ) {
+    const plan = PLAN_CONFIG[planType] ?? PLAN_CONFIG['STANDARD_MONTHLY']!;
+
+    const featuresHtml = plan.features.map((f) => `<li>${f}</li>`).join('');
+
     const html = `
 <!DOCTYPE html>
 <html>
@@ -820,18 +895,14 @@ class EmailService {
     </tr>
     <tr>
       <td style="background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;padding:40px;">
-        <h1 style="margin:0 0 16px;font-size:24px;font-weight:600;color:#111827;">🎉 Subscription Activated!</h1>
+        <h1 style="margin:0 0 16px;font-size:24px;font-weight:600;color:#111827;">🎉 ${plan.name} Plan Activated!</h1>
         <p style="margin:0 0 24px;font-size:16px;line-height:24px;color:#6b7280;">Hi ${firstName},</p>
-        <p style="margin:0 0 16px;font-size:16px;line-height:24px;color:#6b7280;">Your premium subscription is now active! You now have unlimited access to all FE-1 exam preparation features.</p>
-        
+        <p style="margin:0 0 16px;font-size:16px;line-height:24px;color:#6b7280;">Your <strong>${plan.name} Plan</strong> is now active at <strong>${plan.price}/${plan.interval}</strong>. Here is everything you now have access to:</p>
+
         <div style="background:#f0fdf4;border:1px solid #86efac;border-radius:8px;padding:24px;margin-bottom:32px;">
-          <p style="margin:0 0 12px;font-size:14px;font-weight:600;color:#166534;">Premium Features Unlocked:</p>
-          <ul style="margin:0;padding-left:20px;font-size:14px;line-height:24px;color:#15803d;">
-            <li>All 8 FE-1 subjects</li>
-            <li>Unlimited practice questions</li>
-            <li>AI essay feedback</li>
-            <li>Progress tracking</li>
-            <li>Past exam questions</li>
+          <p style="margin:0 0 12px;font-size:14px;font-weight:600;color:#166534;">${plan.name} Features Unlocked:</p>
+          <ul style="margin:0;padding-left:20px;font-size:14px;line-height:28px;color:#15803d;">
+            ${featuresHtml}
           </ul>
         </div>
 
@@ -851,7 +922,7 @@ class EmailService {
 </body>
 </html>`;
 
-    await this.send(email, 'Welcome to Pro - FE-1 Made Simple', html);
+    await this.send(email, `${plan.name} Plan Activated — FE-1 Made Simple`, html);
   }
 
   async sendSubscriptionCancelledEmail(email: string, firstName: string, accessUntilDate: Date) {
@@ -967,7 +1038,7 @@ class EmailService {
   }
 
   async sendTrialExpiredEmail(email: string, firstName: string | null) {
-  const html = `Subject: Your Free Trial Has Ended — FE-1 Made Simple
+    const html = `Subject: Your Free Trial Has Ended — FE-1 Made Simple
 
 <!DOCTYPE html>
 <html>
@@ -1015,8 +1086,8 @@ class EmailService {
   </table>
 </body>
 </html>`;
-  await this.send(email, 'Your Free Trial Has Ended — FE-1 Made Simple', html);
-}
+    await this.send(email, 'Your Free Trial Has Ended — FE-1 Made Simple', html);
+  }
 }
 
 export default new EmailService();
