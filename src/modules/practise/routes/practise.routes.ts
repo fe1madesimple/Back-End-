@@ -151,6 +151,8 @@ practiceRouter.get(
   getPracticeQuestion
 );
 
+
+
 /**
  * @swagger
  * /api/v1/practice/submit:
@@ -160,11 +162,19 @@ practiceRouter.get(
  *     security:
  *       - bearerAuth: []
  *     description: |
- *       Minimum 5 answers. No timerId — totalTimeSeconds = now - session.startedAt.
- *       questionIndex (0–7) resolves to questionId via session.questionIds[questionIndex].
- *       Grades all in parallel with Claude. Saves one EssayAttempt per answer
- *       (source=PRACTICE, simulationId=practiceSessionId for history grouping).
- *       Returns scoreboard: only attempted questions sorted by box order.
+ *       Submit 1–5 answers for grading. Submitting more than 5 returns an error
+ *       telling the user how many to remove.
+ *
+ *       Rules:
+ *       - Minimum: 1 answer
+ *       - Maximum: 5 answers (FE-1 exam standard — attempt 5 of 8 questions)
+ *       - Submitting 6 → "Please remove 1 answer"
+ *       - Submitting 7 → "Please remove 2 answers"
+ *       - Submitting 8 → "Please remove 3 answers"
+ *
+ *       Scores returned only for answered questions, sorted by questionIndex (box position).
+ *       overallScore is 0-100 (used for the donut circle %).
+ *       passed = overallScore >= 50.
  *     requestBody:
  *       required: true
  *       content:
@@ -177,7 +187,8 @@ practiceRouter.get(
  *                 type: string
  *               answers:
  *                 type: array
- *                 minItems: 5
+ *                 minItems: 1
+ *                 maxItems: 5
  *                 items:
  *                   type: object
  *                   required: [questionIndex, answerText]
@@ -188,10 +199,41 @@ practiceRouter.get(
  *                       maximum: 7
  *                     answerText:
  *                       type: string
- *                       minLength: 50
+ *                       minLength: 20
  *     responses:
  *       200:
- *         description: Returns overallScore, passed, submittedAt, totalTimeSeconds, scores[]
+ *         description: Graded successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 practiceSessionId: { type: string }
+ *                 subject: { type: string }
+ *                 year: { type: integer }
+ *                 submittedAt: { type: string, format: date-time }
+ *                 totalAnswered: { type: integer }
+ *                 totalTimeSeconds: { type: integer }
+ *                 overallScore: { type: integer, description: "0-100, drives donut circle %" }
+ *                 passed: { type: boolean, description: "true if overallScore >= 50" }
+ *                 scores:
+ *                   type: array
+ *                   description: Only answered questions, sorted by box position
+ *                   items:
+ *                     type: object
+ *                     properties:
+ *                       questionIndex: { type: integer }
+ *                       aiScore: { type: integer, description: "Score out of 20" }
+ *                       scoreOutOf: { type: integer, example: 20 }
+ *                       band: { type: string }
+ *                       appPass: { type: boolean }
+ *       400:
+ *         description: Too many answers submitted
+ *         content:
+ *           application/json:
+ *             example:
+ *               success: false
+ *               message: "You have answered too many questions. Please remove 1 answer before submitting"
  */
 practiceRouter.post('/submit', protect, validate(submitPracticeSchema), submitPractice);
 
