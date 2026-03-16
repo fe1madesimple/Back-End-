@@ -26,7 +26,6 @@ export class SubscriptionService {
   //   → calls POST /subscription/create-checkout-session with that priceId
 
   async getSubscriptionConfig(_userId: string): Promise<any> {
-   
     return {
       plans: {
         standard: {
@@ -95,6 +94,7 @@ export class SubscriptionService {
         subscription: {
           select: {
             stripeCustomerId: true,
+            stripeSubscriptionId: true, // ← added
             status: true,
           },
         },
@@ -107,7 +107,13 @@ export class SubscriptionService {
       throw new AppError('You already have an active subscription', 400);
     }
 
-    // Get or create Stripe customer
+    // ── Trial eligibility — check BEFORE creating customer ─────────────────────
+    // Eligible only if user has NEVER had a Stripe subscription before.
+    // stripeSubscriptionId is only set after a real payment flow completes.
+    // stripeCustomerId alone is not a reliable check — it gets set before payment.
+    const isEligibleForTrial = !user.subscription?.stripeSubscriptionId;
+
+    // ── Get or create Stripe customer ──────────────────────────────────────────
     let stripeCustomerId = user.subscription?.stripeCustomerId;
 
     if (!stripeCustomerId) {
@@ -125,10 +131,7 @@ export class SubscriptionService {
       });
     }
 
-    // Check trial eligibility
-    const isEligibleForTrial = !user.subscription?.stripeCustomerId;
-
-    // Build session params
+    // ── Build session params ────────────────────────────────────────────────────
     const sessionParams: Stripe.Checkout.SessionCreateParams = {
       customer: stripeCustomerId,
       payment_method_types: ['card'],
@@ -139,7 +142,7 @@ export class SubscriptionService {
       metadata: { userId: user.id },
     };
 
-    // Add trial only if eligible
+    // Add trial only if eligible — evaluated before customer creation so value is clean
     if (isEligibleForTrial) {
       sessionParams.subscription_data = {
         trial_period_days: 7,
@@ -282,7 +285,7 @@ export class SubscriptionService {
     });
 
     if (user) {
-     await emailService.sendSubscriptionActivatedEmail(user.email, user.fullName!, planType);
+      await emailService.sendSubscriptionActivatedEmail(user.email, user.fullName!, planType);
     }
 
     console.log(`✅ Subscription created — user: ${userId}, plan: ${planType}`);
