@@ -965,6 +965,58 @@ class EmailService {
 
     await this.send(email, 'Subscription Reactivated - FE-1 Made Simple', html);
   }
+
+  async sendTrialExpiredEmail(email: string, firstName: string | null) {
+  const html = `Subject: Your Free Trial Has Ended — FE-1 Made Simple
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Free Trial Has Ended</title>
+</head>
+<body style="margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;background-color:#ffffff;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;padding:40px 20px;">
+    <tr>
+      <td align="center" style="padding-bottom:40px;">
+        <img src="https://res.cloudinary.com/dkrjrfqpy/image/upload/v1768477062/Frame_23_a3ppr0.png" alt="FE-1 Made Simple" width="60" style="display:block;">
+      </td>
+    </tr>
+    <tr>
+      <td style="background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;padding:40px;">
+        <h1 style="margin:0 0 16px;font-size:24px;font-weight:600;color:#111827;">Your 7-Day Free Trial Has Ended</h1>
+        <p style="margin:0 0 24px;font-size:16px;line-height:24px;color:#6b7280;">Hi ${firstName},</p>
+        <p style="margin:0 0 16px;font-size:16px;line-height:24px;color:#6b7280;">Your 7-day free trial of FE-1 Made Simple has come to an end. Your account has been moved to the <strong>Free Plan</strong>.</p>
+
+        <div style="background:#fef3c7;border:1px solid #fcd34d;border-radius:8px;padding:20px;margin-bottom:32px;">
+          <p style="margin:0 0 8px;font-size:14px;font-weight:600;color:#92400e;">What you still have access to:</p>
+          <ul style="margin:0;padding-left:20px;font-size:14px;line-height:24px;color:#78350f;">
+            <li>All subjects — first module only</li>
+            <li>Study Streak Tracker</li>
+          </ul>
+        </div>
+
+        <p style="margin:0 0 32px;font-size:16px;line-height:24px;color:#6b7280;">To regain full access to all modules, essay practice, MCQ quizzes, mock exam simulations, the full case law library, and AI feedback — upgrade to a Standard or Pro plan from your subscription page.</p>
+
+        <div style="text-align:center;margin-bottom:24px;">
+          <a href="${process.env.FRONTEND_URL}/subscription" style="display:inline-block;background:#2563eb;color:#ffffff;text-decoration:none;padding:14px 28px;border-radius:8px;font-weight:600;font-size:16px;">Upgrade Now</a>
+        </div>
+
+        <p style="margin:0;font-size:14px;line-height:20px;color:#9ca3af;text-align:center;">You can upgrade anytime from the Subscription page in your app.</p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" style="padding-top:32px;">
+        <p style="margin:0 0 8px;font-size:14px;color:#6b7280;">Have questions? <a href="mailto:support@fe1madesimple.com" style="color:#2563eb;text-decoration:none;">Contact our support team</a></p>
+        <p style="margin:0;font-size:14px;color:#9ca3af;">© 2026 FE-1 Made Simple. All rights reserved.</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+  await this.send(email, 'Your Free Trial Has Ended — FE-1 Made Simple', html);
+}
 }
 
 export default new EmailService();
