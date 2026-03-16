@@ -231,8 +231,8 @@ enum SubscriptionStatus {
 enum PlanType {
   STANDARD_MONTHLY
   STANDARD_ANNUAL
-  PREMIUM_MONTHLY
-  PREMIUM_ANNUAL
+  PRO_MONTHLY       
+  PRO_ANNUAL        
 }
 
 enum PaymentStatus {
