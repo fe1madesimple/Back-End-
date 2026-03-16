@@ -46,7 +46,7 @@ export function gate(requiredPlan: RequiredPlan, options: GateOptions = {}) {
         throw new AppError('Upgrade your plan to access this feature', 403);
       }
 
-      const { status, planType } = subscription;   
+      const { status, planType } = subscription;
 
       // ── Resolve effective tier ─────────────────────────────────────────────
       let effectiveTier: 'FREE' | 'STANDARD' | 'PRO' | 'TRIAL';
@@ -115,6 +115,47 @@ export function gate(requiredPlan: RequiredPlan, options: GateOptions = {}) {
 
       // Attach plan info for downstream use if needed
       (req as any).userPlan = { effectiveTier, planType, status };
+
+      next();
+    } catch (error) {
+      next(error);
+    }
+  };
+}
+
+export function gateLesson() {
+  return async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const userId = req.user!.user.id;
+      const lessonId = req.params.id;
+
+      const subscription = await prisma.subscription.findUnique({
+        where: { userId },
+        select: { status: true, planType: true },
+      });
+
+      const status = subscription?.status;
+      const planType = subscription?.planType;
+
+      // TRIAL or any ACTIVE paid plan → full access
+      const isPaid = status === 'TRIAL' || (status === 'ACTIVE' && planType !== null);
+
+      if (isPaid) return next();
+
+      // FREE / FREEMIUM / EXPIRED / CANCELLED — check module order
+      const lesson = await prisma.lesson.findUnique({
+        where: { id: lessonId },
+        select: { module: { select: { order: true } } },
+      });
+
+      if (!lesson) return next(); // let service handle 404
+
+      if (lesson.module.order > 1) {
+        throw new AppError(
+          'This lesson is only available on Standard and Pro plans. Upgrade to unlock all modules.',
+          403
+        );
+      }
 
       next();
     } catch (error) {
