@@ -31,12 +31,10 @@ import { configureGoogleStrategy } from './modules/auth/strategies/google.strate
 import passport from 'passport';
 import caseRouter from './modules/caseLaw/routes/case.routes';
 import achievementRouter from './modules/achievement/routes/achievrments.routes';
-import '@/jobs/weekly-email-reminder.cron';
-import '@/jobs/streak-alert.cron';
-import '@/jobs/podcast-recommendations.cron';
-import '@/jobs/ai-progress-trend.cron';
-import '@/jobs/trial-expiry.cron';     
-
+import '@/jobs/weekly-email-reminder-cron.ts';
+import '@/jobs/streak-alert-cron-ts';
+import '@/jobs/ai-progress-trend.ts';
+import '@/jobs/trial-expiry-job-cron.ts';
 
 // let swaggerSpec: any;
 
