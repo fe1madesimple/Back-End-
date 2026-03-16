@@ -476,6 +476,14 @@ export class SubscriptionService {
     });
 
     if (!existingPayment) {
+      // ── Skip email for zero-amount trial invoices ─────────────────────────────
+      // Stripe fires invoice.payment_succeeded for trial subscriptions with amount = 0.
+      // We save the record to DB but do not send a payment email for €0.00 charges.
+      if (invoice.amount_paid === 0) {
+        console.log(`⚠️ Skipping payment email for zero-amount trial invoice: ${invoice.id}`);
+        return;
+      }
+
       const nextBillingDate = new Date(
         (invoice as any).lines?.data[0]?.period?.end * 1000 || Date.now()
       );
