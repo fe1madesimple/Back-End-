@@ -10,7 +10,8 @@ import {
   submitPractice,
   getPracticeResults,
   getPracticeAttemptReview,
-  failSimulation
+  failSimulation,
+  getEssayQuestions
 } from '../controller/practise.controller';
 import {
   pastQuestionsQuerySchema,
@@ -90,6 +91,8 @@ practiceRouter.get(
  *         description: Returns practiceSessionId, subject, year, totalQuestions, startedAt
  */
 practiceRouter.post('/start', protect, validate(startPracticeSchema), startPractice);
+
+practiceRouter.get('/essay-questions', protect, getEssayQuestions);
 
 /**
  * @swagger
@@ -228,7 +231,6 @@ practiceRouter.get(
   getPracticeAttemptReview
 );
 
-
 /**
  * @swagger
  * /api/v1/simulations/{simulationId}/fail:
@@ -259,6 +261,5 @@ practiceRouter.get(
  *         description: Returns simulationId, failed=true, reason and totalTimeSeconds
  */
 practiceRouter.patch('/:simulationId/fail', protect, failSimulation);
-
 
 export default practiceRouter;
