@@ -40,15 +40,16 @@ export const getPracticeQuestionSchema = z.object({
 
 export const submitPracticeSchema = z.object({
   body: z.object({
-    practiceSessionId: z.string().min(1, 'Session ID is required'),
+    practiceSessionId: z.string(),
     answers: z
       .array(
         z.object({
           questionIndex: z.number().int().min(0).max(7),
-          answerText: z.string().min(50, 'Answer must be at least 50 characters'),
+          answerText: z.string().min(20, 'Answer is too short'),
         })
       )
-      .min(5, 'You must answer at least 5 questions'),
+      .min(1, 'You must answer at least 1 question')
+      .max(5, 'You can only submit up to 5 answers'),  // ← changed from min(5) to max(5)
   }),
 });
 
