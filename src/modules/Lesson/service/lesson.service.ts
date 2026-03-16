@@ -997,6 +997,77 @@ class LessonService {
       return `Don't worry - practice makes perfect! You have passed the test with ${accuracyPercent}%`;
     return `Keep going! Every attempt makes you stronger. You scored ${accuracyPercent}%`;
   }
+
+  async getAllLessons(filters: {
+    subjectId?: string;
+    moduleId?: string;
+    page?: number;
+    limit?: number;
+  }) {
+    const { subjectId, moduleId, page = 1, limit = 50 } = filters;
+    const skip = (page - 1) * limit;
+
+    const where: any = { isPublished: true };
+
+    if (moduleId) {
+      // Direct filter by module
+      where.moduleId = moduleId;
+    } else if (subjectId) {
+      // Filter by subject — go through module relation
+      where.module = { subjectId };
+    }
+
+    const [total, lessons] = await Promise.all([
+      prisma.lesson.count({ where }),
+      prisma.lesson.findMany({
+        where,
+        select: {
+          id: true,
+          title: true,
+          slug: true,
+          order: true,
+          videoDuration: true,
+          videoUrl: true,
+          transcript: true,
+          moduleId: true,
+          module: {
+            select: {
+              id: true,
+              name: true,
+              order: true,
+              subject: {
+                select: { id: true, name: true },
+              },
+            },
+          },
+        },
+        orderBy: [{ module: { order: 'asc' } }, { order: 'asc' }],
+        skip,
+        take: limit,
+      }),
+    ]);
+
+    return {
+      total,
+      page,
+      limit,
+      totalPages: Math.ceil(total / limit),
+      lessons: lessons.map((l) => ({
+        id: l.id,
+        title: l.title,
+        slug: l.slug,
+        order: l.order,
+        videoDuration: l.videoDuration,
+        videoUrl: l.videoUrl,
+        hasTranscript: !!l.transcript,
+        moduleId: l.moduleId,
+        moduleName: l.module.name,
+        moduleOrder: l.module.order,
+        subjectId: l.module.subject.id,
+        subjectName: l.module.subject.name,
+      })),
+    };
+  }
 }
 
 export default new LessonService();

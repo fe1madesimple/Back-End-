@@ -17,12 +17,13 @@ import {
   getAllMCQs,
   getAllEssayQuestions,
   getNextQuestion,
+  getAllLessons
 } from '../controller/lesson.controller';
 import { gate, gateLesson } from '@/shared/middleware/gate.middleware';
 
 const lessonRouter = Router();
 
-
+lessonRouter.get('/all', protect, getAllLessons);
 
 /**
  * @swagger

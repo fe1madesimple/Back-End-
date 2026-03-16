@@ -116,8 +116,6 @@ export const getAllEssayQuestions = asyncHandler(async (_req: Request, res: Resp
   sendSuccess(res, 'All essay questions retrieved', result);
 });
 
-
-
 export const getNextQuestion = asyncHandler(async (req: Request, res: Response) => {
   const userId = req.user!.user.id;
   const { sessionId, index } = req.params;
@@ -131,4 +129,17 @@ export const getNextQuestion = asyncHandler(async (req: Request, res: Response) 
 
   const result = await lessonService.getNextQuestion(userId, sessionId, questionIndex);
   sendSuccess(res, 'Next question retrieved', result);
+});
+
+export const getAllLessons = asyncHandler(async (req: Request, res: Response) => {
+  const { subjectId, moduleId, page, limit } = req.query;
+
+  const result = await lessonService.getAllLessons({
+    subjectId: subjectId as string | undefined,
+    moduleId: moduleId as string | undefined,
+    page: page ? parseInt(page as string) : 1,
+    limit: limit ? parseInt(limit as string) : 50,
+  });
+
+  sendSuccess(res, 'Lessons retrieved', result);
 });
