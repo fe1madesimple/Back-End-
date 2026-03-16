@@ -12,6 +12,8 @@ import {
 
 const historyRouter = Router();
 
+
+
 /**
  * @swagger
  * /api/v1/history/stats:
@@ -23,9 +25,9 @@ const historyRouter = Router();
  *     description: |
  *       Powers the 3 stat cards at the top of the history page:
  *
- *       - **Essay Practice**: total attempts + average score out of 20
- *       - **Full Simulations**: total + completed 3hr simulations count
- *       - **MCQ Batches**: total completed sessions + best accuracy score
+ *       - **Essay Practice**: LESSON_PRACTICE attempts only + average score out of 20
+ *       - **Simulations**: count of completed PracticeSession records (any number of questions)
+ *       - **MCQ Batches**: total completed sessions + best accuracy score ever
  *
  *       Call this once when the history page loads.
  *     responses:
@@ -40,12 +42,11 @@ const historyRouter = Router();
  *                   type: object
  *                   properties:
  *                     total: { type: integer, example: 18 }
- *                     avgScore: { type: integer, example: 64, description: "Average score out of 20" }
- *                 fullSimulations:
+ *                     avgScore: { type: integer, example: 14, description: "Average score out of 20" }
+ *                 simulations:
  *                   type: object
  *                   properties:
- *                     total: { type: integer, example: 3 }
- *                     completed: { type: integer, example: 3 }
+ *                     total: { type: integer, example: 3, description: "Completed practice sessions" }
  *                 mcqBatches:
  *                   type: object
  *                   properties:
@@ -53,6 +54,7 @@ const historyRouter = Router();
  *                     bestScore: { type: integer, example: 92, description: "Best accuracy % ever achieved" }
  */
 historyRouter.get('/stats', protect, getHistoryStats);
+
 
 /**
  * @swagger
@@ -67,13 +69,13 @@ historyRouter.get('/stats', protect, getHistoryStats);
  *       Powers the main feed under the 4 tabs (All / MCQ Batches / Essay Practice / Simulations).
  *
  *       Each item includes enough data to render the card:
- *       - subject, type (MCQ/ESSAY/SIMULATION), source (FROM_LESSON/STANDARD_SET/SIMULATION)
- *       - title (lesson title or question snippet), date, year (e.g. "2022 Paper")
- *       - score (out of 20 for essay, accuracy % for MCQ), passed/appPass status
+ *       - subject, type (MCQ/ESSAY/SIMULATION), source (FROM_LESSON/FROM_PRACTICE/SIMULATION)
+ *       - title, date, year, score, passed/appPass
  *
- *       Use the returned `id` to fetch the detail modal:
- *       - MCQ card  → `GET /history/mcq/:id`
- *       - Essay card → `GET /history/essay/:id`
+ *       Use the returned `id` to fetch the detail:
+ *       - MCQ card        → GET /history/mcq/:id
+ *       - Essay card      → GET /history/essay/:id
+ *       - Simulation card → GET /history/simulation/:id
  *     parameters:
  *       - in: query
  *         name: type
@@ -81,7 +83,6 @@ historyRouter.get('/stats', protect, getHistoryStats);
  *           type: string
  *           enum: [all, mcq, essay, simulation]
  *           default: all
- *         description: Filter by activity type (tab selection)
  *       - in: query
  *         name: page
  *         schema: { type: integer, default: 1 }
@@ -101,21 +102,18 @@ historyRouter.get('/stats', protect, getHistoryStats);
  *                   items:
  *                     type: object
  *                     properties:
- *                       id: { type: string, description: "Use to fetch detail modal" }
+ *                       id: { type: string }
  *                       type:
  *                         type: string
  *                         enum: [MCQ, ESSAY, SIMULATION]
  *                       source:
  *                         type: string
- *                         enum: [FROM_LESSON, STANDARD_SET, SIMULATION]
- *                       subject: { type: string, example: "Contract Law" }
- *                       title: { type: string, example: "Offer & Acceptance Fundamentals" }
+ *                         enum: [FROM_LESSON, FROM_PRACTICE, SIMULATION]
+ *                       subject: { type: string }
+ *                       title: { type: string }
  *                       date: { type: string, format: date-time }
- *                       year: { type: integer, nullable: true, example: 2022 }
- *                       score:
- *                         type: integer
- *                         nullable: true
- *                         description: "Score out of 20 (essay/simulation) or accuracy % (MCQ)"
+ *                       year: { type: integer, nullable: true }
+ *                       score: { type: integer, nullable: true }
  *                       passed: { type: boolean, nullable: true }
  *                       appPass: { type: boolean, nullable: true }
  *                 pagination:
@@ -130,6 +128,8 @@ historyRouter.get('/stats', protect, getHistoryStats);
  */
 historyRouter.get('/', protect, getHistoryFeed);
 
+
+
 /**
  * @swagger
  * /api/v1/history/mcq/{sessionId}:
@@ -141,20 +141,14 @@ historyRouter.get('/', protect, getHistoryFeed);
  *     description: |
  *       Returns the full detail of a completed MCQ quiz session.
  *       Powers the modal shown when a student taps an MCQ batch card.
- *
- *       Returns:
- *       - subject, source, date, score summary (X/Y correct · Z% accuracy)
- *       - Each question with: text, user's answer, correct answer, isCorrect, explanation
- *       - Questions are ordered as they were answered (index 1 of N)
- *
- *       The modal shows questions collapsed by default (just "Question N of N" + tick/cross).
- *       On expand: shows question text, the chosen answer (highlighted), and explanation.
+ 
+ *       Returns each question with: text, user's answer, correct answer, isCorrect, explanation.
+ *       Questions are ordered as they were answered (index 1 of N).
  *     parameters:
  *       - in: path
  *         name: sessionId
  *         required: true
  *         schema: { type: string }
- *         description: QuizSession.id from the history feed item
  *     responses:
  *       200:
  *         description: MCQ session detail
@@ -164,30 +158,32 @@ historyRouter.get('/', protect, getHistoryFeed);
  *               type: object
  *               properties:
  *                 sessionId: { type: string }
- *                 subject: { type: string, example: "Criminal Law" }
+ *                 subject: { type: string }
  *                 source:
  *                   type: string
- *                   enum: [FROM_LESSON, STANDARD_SET]
+ *                   enum: [FROM_LESSON, FROM_PRACTICE]
  *                 attemptedAt: { type: string, format: date-time }
- *                 correctAnswers: { type: integer, example: 4 }
- *                 totalQuestions: { type: integer, example: 5 }
- *                 accuracyPercent: { type: integer, example: 80 }
+ *                 correctAnswers: { type: integer }
+ *                 totalQuestions: { type: integer }
+ *                 accuracyPercent: { type: integer }
  *                 questions:
  *                   type: array
  *                   items:
  *                     type: object
  *                     properties:
- *                       index: { type: integer, example: 1 }
- *                       total: { type: integer, example: 5 }
+ *                       index: { type: integer }
+ *                       total: { type: integer }
  *                       questionText: { type: string }
- *                       userAnswer: { type: string, nullable: true, example: "A" }
+ *                       userAnswer: { type: string, nullable: true }
  *                       userAnswerText: { type: string }
- *                       correctAnswer: { type: string, example: "B" }
+ *                       correctAnswer: { type: string }
  *                       correctAnswerText: { type: string }
  *                       isCorrect: { type: boolean }
  *                       explanation: { type: string, nullable: true }
  */
 historyRouter.get('/mcq/:sessionId', protect, getMCQSessionDetail);
+
+
 
 /**
  * @swagger
@@ -199,44 +195,33 @@ historyRouter.get('/mcq/:sessionId', protect, getMCQSessionDetail);
  *       - bearerAuth: []
  *     description: |
  *       Returns the full review data for a single essay attempt.
- *       Powers the full-screen essay review shown from the history feed.
- *
- *       Works for both sources:
- *       - **STANDARD_SET**: from past paper practice (Question model)
- *       - **FROM_LESSON**: from lesson essay practice (EssayQuestion model)
- *
- *       Returns:
- *       - subject, source, date, time taken, score/band/passed
- *       - The original question text (+ year/examType if standard set)
- *       - The student's answer
- *       - The AI sample answer
- *       - Structured feedback: strengths[], improvements[], overallComment
+ *       Works for both FROM_LESSON and FROM_PRACTICE sources.
+ *       For simulation accordion detail, use GET /history/simulation/:id instead.
  *     parameters:
  *       - in: path
  *         name: attemptId
  *         required: true
  *         schema: { type: string }
- *         description: EssayAttempt.id from the history feed item
  *     responses:
  *       200:
- *         description: Full essay attempt review data
+ *         description: Full essay attempt review
  *         content:
  *           application/json:
  *             schema:
  *               type: object
  *               properties:
  *                 attemptId: { type: string }
- *                 subject: { type: string, example: "Contract Law" }
+ *                 subject: { type: string }
  *                 source:
  *                   type: string
- *                   enum: [FROM_LESSON, STANDARD_SET, SIMULATION]
+ *                   enum: [FROM_LESSON, FROM_PRACTICE, SIMULATION]
  *                 attemptedAt: { type: string, format: date-time }
- *                 timeTakenMinutes: { type: integer, example: 40 }
+ *                 timeTakenMinutes: { type: integer }
  *                 passed: { type: boolean }
  *                 appPass: { type: boolean }
- *                 aiScore: { type: integer, description: "Score out of 20", example: 13 }
+ *                 aiScore: { type: integer, description: "Out of 20" }
  *                 scoreOutOf: { type: integer, example: 20 }
- *                 band: { type: string, example: "Merit" }
+ *                 band: { type: string }
  *                 questionText: { type: string }
  *                 year: { type: integer, nullable: true }
  *                 examType: { type: string, nullable: true }
@@ -253,6 +238,7 @@ historyRouter.get('/mcq/:sessionId', protect, getMCQSessionDetail);
  */
 historyRouter.get('/essay/:attemptId', protect, getEssayAttemptDetail);
 
+
 /**
  * @swagger
  * /api/v1/history/simulation/{simulationId}:
@@ -262,51 +248,42 @@ historyRouter.get('/essay/:attemptId', protect, getEssayAttemptDetail);
  *     security:
  *       - bearerAuth: []
  *     description: |
- *       Returns all essay attempts submitted under a simulation in a single response.
- *       The frontend renders an accordion with prev/next navigation using this data —
- *       no additional API calls are needed when navigating between questions.
+ *       Returns all essay attempts submitted under a simulation in one response.
+ *       Frontend renders an accordion with prev/next navigation from this single call —
+ *       no additional API calls needed when navigating between questions.
  *
- *       Each attempt contains: question text, subject, year, examType, the student's
- *       answer, word count, time taken, AI score out of 20, band, pass/appPass,
- *       sample answer, feedback, strengths, and improvements.
- *
- *       Attempts are ordered chronologically (the order the student answered them).
- *       Use attempt.index and attempt.total to render "Question 1 of 5" labels.
- *
- *       This endpoint is ONLY for simulation cards. For essay practice cards
- *       (single question, source = FROM_LESSON or STANDARD_SET), use
- *       GET /history/essay/:attemptId instead.
+ *       simulationId here is actually a PracticeSession.id.
+ *       Attempts are ordered chronologically.
  *     parameters:
  *       - in: path
  *         name: simulationId
  *         required: true
  *         schema: { type: string }
- *         description: Simulation.id from the history feed item
+ *         description: PracticeSession.id from the history feed simulation item
  *     responses:
  *       200:
- *         description: Full simulation detail with all answered essay attempts
+ *         description: Full simulation detail
  *         content:
  *           application/json:
  *             schema:
  *               type: object
  *               properties:
  *                 simulationId: { type: string }
- *                 subject: { type: string, nullable: true, description: "null = mixed subjects" }
+ *                 subject: { type: string, nullable: true }
  *                 year: { type: integer, nullable: true }
  *                 startedAt: { type: string, format: date-time }
  *                 totalTimeMinutes: { type: integer, nullable: true }
- *                 overallScore: { type: integer, nullable: true, description: "0-100 overall %" }
+ *                 overallScore: { type: integer, nullable: true }
  *                 passed: { type: boolean, nullable: true }
- *                 totalAnswered: { type: integer, description: "Number of essays answered (max 5)" }
+ *                 totalAnswered: { type: integer }
  *                 attempts:
  *                   type: array
- *                   description: All answered essays — send everything for accordion navigation
  *                   items:
  *                     type: object
  *                     properties:
  *                       attemptId: { type: string }
- *                       index: { type: integer, description: "1-based position" }
- *                       total: { type: integer, description: "Total attempts in this simulation" }
+ *                       index: { type: integer }
+ *                       total: { type: integer }
  *                       questionText: { type: string }
  *                       subject: { type: string, nullable: true }
  *                       year: { type: integer, nullable: true }
@@ -314,7 +291,7 @@ historyRouter.get('/essay/:attemptId', protect, getEssayAttemptDetail);
  *                       userAnswer: { type: string }
  *                       wordCount: { type: integer }
  *                       timeTakenMinutes: { type: integer }
- *                       aiScore: { type: integer, description: "Score out of 20" }
+ *                       aiScore: { type: integer }
  *                       scoreOutOf: { type: integer, example: 20 }
  *                       band: { type: string }
  *                       passed: { type: boolean }
