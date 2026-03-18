@@ -311,3 +311,86 @@ export const userAuditTrail: Record<string, Array<{id: string, action: string, d
     { id: 'ua6', action: 'TRIAL_STARTED', detail: '7-day trial activated', timestamp: '2026-03-10T14:06:00Z', actor: 'System' },
   ],
 }
+
+export const subjects = [
+  { id: 's1', name: 'Criminal Law',      slug: 'criminal-law',      color: '#EC4899', progressColor: '#EC4899', order: 1, isPublished: true, description: 'Core principles of criminal liability, offences against the person and property.', moduleCount: 5, lessonCount: 24, mcqCount: 180, createdAt: '2025-06-01T00:00:00Z' },
+  { id: 's2', name: 'Contract Law',      slug: 'contract-law',      color: '#3B82F6', progressColor: '#3B82F6', order: 2, isPublished: true, description: 'Formation, terms, breach and remedies in contract law.', moduleCount: 4, lessonCount: 18, mcqCount: 140, createdAt: '2025-06-01T00:00:00Z' },
+  { id: 's3', name: 'Tort Law',          slug: 'tort-law',          color: '#F59E0B', progressColor: '#F59E0B', order: 3, isPublished: true, description: 'Negligence, occupiers liability and defamation.', moduleCount: 3, lessonCount: 14, mcqCount: 100, createdAt: '2025-06-01T00:00:00Z' },
+  { id: 's4', name: 'Constitutional Law',slug: 'constitutional-law', color: '#10B981', progressColor: '#10B981', order: 4, isPublished: true, description: 'Irish constitutional framework and fundamental rights.', moduleCount: 3, lessonCount: 12, mcqCount: 80, createdAt: '2025-06-01T00:00:00Z' },
+  { id: 's5', name: 'EU Law',            slug: 'eu-law',            color: '#06B6D4', progressColor: '#06B6D4', order: 5, isPublished: true, description: 'Institutions, treaties and direct effect of EU law.', moduleCount: 2, lessonCount: 10, mcqCount: 60, createdAt: '2025-06-01T00:00:00Z' },
+  { id: 's6', name: 'Equity',            slug: 'equity',            color: '#8B5CF6', progressColor: '#8B5CF6', order: 6, isPublished: true, description: 'Trusts, equitable remedies and fiduciary duties.', moduleCount: 2, lessonCount: 10, mcqCount: 80, createdAt: '2025-06-01T00:00:00Z' },
+  { id: 's7', name: 'Land Law',          slug: 'land-law',          color: '#EF4444', progressColor: '#EF4444', order: 7, isPublished: true, description: 'Ownership, registration and interests in land.', moduleCount: 2, lessonCount: 8, mcqCount: 60, createdAt: '2025-06-01T00:00:00Z' },
+  { id: 's8', name: 'Company Law',       slug: 'company-law',       color: '#F97316', progressColor: '#F97316', order: 8, isPublished: false, description: 'Incorporation, directors duties and shareholder rights.', moduleCount: 1, lessonCount: 0, mcqCount: 0, createdAt: '2025-09-01T00:00:00Z' },
+]
+
+export const modules = [
+  { id: 'm1', subjectId: 's1', name: 'Foundations of Criminal Law',    order: 1, isPublished: true,  lessonCount: 5, mcqCount: 40, description: 'Actus reus, mens rea and coincidence.' },
+  { id: 'm2', subjectId: 's1', name: 'Offences Against the Person',    order: 2, isPublished: true,  lessonCount: 5, mcqCount: 40, description: 'Assault, murder, manslaughter.' },
+  { id: 'm3', subjectId: 's1', name: 'Property and Economic Offences', order: 3, isPublished: true,  lessonCount: 5, mcqCount: 40, description: 'Theft, fraud, criminal damage.' },
+  { id: 'm4', subjectId: 's1', name: 'Public Order & State Security',  order: 4, isPublished: true,  lessonCount: 5, mcqCount: 30, description: 'Public order offences and state security.' },
+  { id: 'm5', subjectId: 's1', name: 'Inchoate & Ancillary Offences',  order: 5, isPublished: false, lessonCount: 4, mcqCount: 30, description: 'Attempts, conspiracy, aiding and abetting.' },
+  { id: 'm6', subjectId: 's2', name: 'Formation of Contract',          order: 1, isPublished: true,  lessonCount: 5, mcqCount: 40, description: 'Offer, acceptance, consideration.' },
+  { id: 'm7', subjectId: 's2', name: 'Terms and Conditions',           order: 2, isPublished: true,  lessonCount: 4, mcqCount: 30, description: 'Express and implied terms.' },
+  { id: 'm8', subjectId: 's2', name: 'Breach and Remedies',            order: 3, isPublished: true,  lessonCount: 5, mcqCount: 40, description: 'Damages, rescission, specific performance.' },
+  { id: 'm9', subjectId: 's2', name: 'Vitiating Factors',              order: 4, isPublished: true,  lessonCount: 4, mcqCount: 30, description: 'Misrepresentation, duress, undue influence.' },
+  { id: 'm10',subjectId: 's3', name: 'Negligence',                     order: 1, isPublished: true,  lessonCount: 5, mcqCount: 40, description: 'Duty of care, breach, causation.' },
+  { id: 'm11',subjectId: 's3', name: 'Occupiers Liability',            order: 2, isPublished: true,  lessonCount: 4, mcqCount: 30, description: 'Duty to visitors and trespassers.' },
+  { id: 'm12',subjectId: 's3', name: 'Defamation',                     order: 3, isPublished: true,  lessonCount: 5, mcqCount: 30, description: 'Libel, slander and defences.' },
+]
+
+export const lessons = [
+  { id: 'l1',  moduleId: 'm1', title: 'Introduction to Criminal Liability', order: 1, isPublished: true,  videoDuration: 1820, videoUrl: 'https://res.cloudinary.com/dkrjrfqpy/video/upload/v1/sample1.mp3', avgCompletionRate: 88, totalViews: 187, createdAt: '2025-06-10T00:00:00Z', updatedAt: '2026-01-15T00:00:00Z' },
+  { id: 'l2',  moduleId: 'm1', title: 'Actus Reus',                         order: 2, isPublished: true,  videoDuration: 2100, videoUrl: 'https://res.cloudinary.com/dkrjrfqpy/video/upload/v1/sample2.mp3', avgCompletionRate: 82, totalViews: 174, createdAt: '2025-06-12T00:00:00Z', updatedAt: '2026-01-15T00:00:00Z' },
+  { id: 'l3',  moduleId: 'm1', title: 'Mens Rea',                           order: 3, isPublished: true,  videoDuration: 1950, videoUrl: 'https://res.cloudinary.com/dkrjrfqpy/video/upload/v1/sample3.mp3', avgCompletionRate: 79, totalViews: 168, createdAt: '2025-06-15T00:00:00Z', updatedAt: '2026-01-20T00:00:00Z' },
+  { id: 'l4',  moduleId: 'm1', title: 'Coincidence of Actus Reus and Mens Rea', order: 4, isPublished: true, videoDuration: 1680, videoUrl: null, avgCompletionRate: 71, totalViews: 142, createdAt: '2025-06-18T00:00:00Z', updatedAt: '2026-01-22T00:00:00Z' },
+  { id: 'l5',  moduleId: 'm1', title: 'Strict Liability Offences',         order: 5, isPublished: false, videoDuration: null, videoUrl: null, avgCompletionRate: 0, totalViews: 0, createdAt: '2025-07-01T00:00:00Z', updatedAt: '2025-07-01T00:00:00Z' },
+  { id: 'l6',  moduleId: 'm2', title: 'Assault and Battery',               order: 1, isPublished: true,  videoDuration: 2240, videoUrl: 'https://res.cloudinary.com/dkrjrfqpy/video/upload/v1/sample4.mp3', avgCompletionRate: 84, totalViews: 163, createdAt: '2025-06-20T00:00:00Z', updatedAt: '2026-02-01T00:00:00Z' },
+  { id: 'l7',  moduleId: 'm2', title: 'Murder and Manslaughter',           order: 2, isPublished: true,  videoDuration: 2580, videoUrl: 'https://res.cloudinary.com/dkrjrfqpy/video/upload/v1/sample5.mp3', avgCompletionRate: 90, totalViews: 201, createdAt: '2025-06-22T00:00:00Z', updatedAt: '2026-02-05T00:00:00Z' },
+  { id: 'l8',  moduleId: 'm2', title: 'Non-Fatal Offences Against the Person', order: 3, isPublished: true, videoDuration: 1920, videoUrl: null, avgCompletionRate: 76, totalViews: 154, createdAt: '2025-06-25T00:00:00Z', updatedAt: '2026-02-10T00:00:00Z' },
+  { id: 'l9',  moduleId: 'm6', title: 'Offer and Invitation to Treat',     order: 1, isPublished: true,  videoDuration: 1750, videoUrl: 'https://res.cloudinary.com/dkrjrfqpy/video/upload/v1/sample6.mp3', avgCompletionRate: 86, totalViews: 178, createdAt: '2025-07-05T00:00:00Z', updatedAt: '2026-02-15T00:00:00Z' },
+  { id: 'l10', moduleId: 'm6', title: 'Acceptance and Communication',      order: 2, isPublished: true,  videoDuration: 1600, videoUrl: null, avgCompletionRate: 81, totalViews: 165, createdAt: '2025-07-08T00:00:00Z', updatedAt: '2026-02-20T00:00:00Z' },
+]
+
+export const mcqs = [
+  { id: 'q1',  lessonId: 'l1', moduleId: 'm1', subjectId: 's1', text: 'Which element must be proven for a criminal offence?', options: ['Actus reus only', 'Mens rea only', 'Both actus reus and mens rea', 'Neither'], correctAnswer: 'Both actus reus and mens rea', difficulty: 'Easy',   totalAttempts: 187, passRate: 82, avgTimeSecs: 18, examYear: 2023 },
+  { id: 'q2',  lessonId: 'l2', moduleId: 'm1', subjectId: 's1', text: 'What does actus reus refer to?',                         options: ['The guilty mind', 'The guilty act', 'The criminal intent', 'The criminal outcome'], correctAnswer: 'The guilty act', difficulty: 'Easy',   totalAttempts: 174, passRate: 91, avgTimeSecs: 14, examYear: 2023 },
+  { id: 'q3',  lessonId: 'l3', moduleId: 'm1', subjectId: 's1', text: 'Recklessness as a form of mens rea requires:',           options: ['Foresight of certainty', 'Foresight of possibility', 'No foresight', 'Foresight of probability'], correctAnswer: 'Foresight of possibility', difficulty: 'Medium', totalAttempts: 168, passRate: 68, avgTimeSecs: 24, examYear: 2022 },
+  { id: 'q4',  lessonId: 'l3', moduleId: 'm1', subjectId: 's1', text: 'Specific intent refers to:',                             options: ['Any criminal intention', 'An ulterior motive beyond the act', 'Intent to cause serious harm', 'Basic intention'], correctAnswer: 'An ulterior motive beyond the act', difficulty: 'Hard',   totalAttempts: 168, passRate: 54, avgTimeSecs: 32, examYear: 2024 },
+  { id: 'q5',  lessonId: 'l6', moduleId: 'm2', subjectId: 's1', text: 'Assault requires:',                                       options: ['Physical contact', 'Apprehension of immediate force', 'Actual harm', 'Intent to cause grievous bodily harm'], correctAnswer: 'Apprehension of immediate force', difficulty: 'Medium', totalAttempts: 163, passRate: 74, avgTimeSecs: 21, examYear: 2023 },
+  { id: 'q6',  lessonId: 'l7', moduleId: 'm2', subjectId: 's1', text: 'The mens rea for murder in Ireland is:',                  options: ['Negligence', 'Recklessness', 'Intent to kill or cause serious harm', 'Strict liability'], correctAnswer: 'Intent to kill or cause serious harm', difficulty: 'Medium', totalAttempts: 201, passRate: 79, avgTimeSecs: 19, examYear: 2024 },
+  { id: 'q7',  lessonId: 'l9', moduleId: 'm6', subjectId: 's2', text: 'An invitation to treat is:',                              options: ['A binding offer', 'An invitation to make an offer', 'A counter offer', 'An acceptance'], correctAnswer: 'An invitation to make an offer', difficulty: 'Easy',   totalAttempts: 178, passRate: 88, avgTimeSecs: 16, examYear: 2023 },
+  { id: 'q8',  lessonId: 'l9', moduleId: 'm6', subjectId: 's2', text: 'When is a postal acceptance effective?',                  options: ['On receipt', 'On posting', 'On reading', 'On delivery'], correctAnswer: 'On posting', difficulty: 'Medium', totalAttempts: 178, passRate: 71, avgTimeSecs: 22, examYear: 2022 },
+  { id: 'q9',  lessonId: 'l10', moduleId: 'm6', subjectId: 's2', text: 'Consideration must be:',                                 options: ['Past', 'Moral', 'Sufficient but need not be adequate', 'Adequate but need not be sufficient'], correctAnswer: 'Sufficient but need not be adequate', difficulty: 'Hard',   totalAttempts: 165, passRate: 58, avgTimeSecs: 29, examYear: 2024 },
+  { id: 'q10', lessonId: 'l2', moduleId: 'm1', subjectId: 's1', text: 'An omission can constitute actus reus when:',             options: ['The defendant chose not to act', 'There is a legal duty to act', 'The victim was harmed', 'The defendant was present'], correctAnswer: 'There is a legal duty to act', difficulty: 'Hard',   totalAttempts: 174, passRate: 62, avgTimeSecs: 27, examYear: 2023 },
+]
+
+export const caseBriefs = [
+  { id: 'cb1', caseName: 'Donoghue v Stevenson', citation: '[1932] AC 562', year: 1932, court: 'House of Lords', jurisdiction: 'UNITED_KINGDOM', isFrequentlyTested: true, legalPrinciple: 'Established the modern law of negligence and the neighbour principle.', subjects: ['Tort Law'], topics: ['Negligence', 'Duty of Care'], savedCount: 87, createdAt: '2025-06-01T00:00:00Z' },
+  { id: 'cb2', caseName: 'Byrne v Ireland', citation: '[1972] IR 241', year: 1972, court: 'Supreme Court', jurisdiction: 'IRELAND', isFrequentlyTested: true, legalPrinciple: 'The State is vicariously liable for the torts of its servants.', subjects: ['Constitutional Law'], topics: ['State Liability'], savedCount: 64, createdAt: '2025-06-01T00:00:00Z' },
+  { id: 'cb3', caseName: 'Carlill v Carbolic Smoke Ball Co', citation: '[1893] 1 QB 256', year: 1893, court: 'Court of Appeal', jurisdiction: 'ENGLAND_AND_WALES', isFrequentlyTested: true, legalPrinciple: 'An advertisement can constitute a binding offer if sufficiently definite.', subjects: ['Contract Law'], topics: ['Offer', 'Acceptance'], savedCount: 102, createdAt: '2025-06-01T00:00:00Z' },
+  { id: 'cb4', caseName: 'The People (DPP) v Murray', citation: '[1977] IR 360', year: 1977, court: 'Supreme Court', jurisdiction: 'IRELAND', isFrequentlyTested: true, legalPrinciple: 'Defined the mens rea for murder in Irish law.', subjects: ['Criminal Law'], topics: ['Murder', 'Mens Rea'], savedCount: 78, createdAt: '2025-06-01T00:00:00Z' },
+  { id: 'cb5', caseName: 'Hedley Byrne v Heller', citation: '[1964] AC 465', year: 1964, court: 'House of Lords', jurisdiction: 'UNITED_KINGDOM', isFrequentlyTested: false, legalPrinciple: 'Established liability for negligent misstatement causing pure economic loss.', subjects: ['Tort Law'], topics: ['Negligence', 'Economic Loss'], savedCount: 43, createdAt: '2025-06-02T00:00:00Z' },
+  { id: 'cb6', caseName: 'Van Gend en Loos v Nederlandse Administratie', citation: 'Case 26/62', year: 1963, court: 'Court of Justice EU', jurisdiction: 'EUROPEAN_UNION', isFrequentlyTested: true, legalPrinciple: 'Established the doctrine of direct effect in EU law.', subjects: ['EU Law'], topics: ['Direct Effect', 'EU Treaties'], savedCount: 91, createdAt: '2025-06-03T00:00:00Z' },
+  { id: 'cb7', caseName: 'Central London Property Trust v High Trees', citation: '[1947] KB 130', year: 1947, court: 'King Bench Division', jurisdiction: 'ENGLAND_AND_WALES', isFrequentlyTested: true, legalPrinciple: 'Established promissory estoppel as an equitable doctrine.', subjects: ['Contract Law', 'Equity'], topics: ['Promissory Estoppel'], savedCount: 67, createdAt: '2025-06-04T00:00:00Z' },
+  { id: 'cb8', caseName: 'McGrath v Trintech Technologies', citation: '[2004] IEHC 342', year: 2004, court: 'High Court', jurisdiction: 'IRELAND', isFrequentlyTested: false, legalPrinciple: 'Applied the neighbour principle in an employment context in Ireland.', subjects: ['Tort Law'], topics: ['Negligence', 'Employment'], savedCount: 28, createdAt: '2025-06-05T00:00:00Z' },
+  { id: 'cb9', caseName: 'Costa v ENEL', citation: 'Case 6/64', year: 1964, court: 'Court of Justice EU', jurisdiction: 'EUROPEAN_UNION', isFrequentlyTested: true, legalPrinciple: 'Established the supremacy of EU law over national law.', subjects: ['EU Law'], topics: ['Supremacy', 'EU Law'], savedCount: 85, createdAt: '2025-06-06T00:00:00Z' },
+  { id: 'cb10', caseName: 'Rookes v Barnard', citation: '[1964] AC 1129', year: 1964, court: 'House of Lords', jurisdiction: 'UNITED_KINGDOM', isFrequentlyTested: false, legalPrinciple: 'Defined the categories for exemplary damages in tort.', subjects: ['Tort Law'], topics: ['Damages', 'Exemplary Damages'], savedCount: 22, createdAt: '2025-06-07T00:00:00Z' },
+]
+
+export const contentStats = {
+  totalSubjects: 8,
+  publishedSubjects: 7,
+  totalModules: 26,
+  totalLessons: 96,
+  publishedLessons: 88,
+  totalMCQs: 580,
+  totalCaseBriefs: 287,
+  frequentlyTestedCases: 142,
+  totalVideoContent: 47,
+  estimatedStorageGB: 12.4,
+  totalVideoSeconds: 187400,
+  avgLessonCompletionRate: 78,
+  avgMCQPassRate: 71,
+  mostAttemptedLesson: 'Murder and Manslaughter',
+  hardestMCQ: 'Specific intent refers to:',
+}
