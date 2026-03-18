@@ -1,0 +1,134 @@
+.mobileOnly { display: none; }
+
+@media (max-width: 768px) {
+  .mobileOnly { display: block; }
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  z-index: 250;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.backdropVisible {
+  opacity: 1;
+  pointer-events: auto;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.drawer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(14, 20, 32, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px 20px 0 0;
+  border-top: 1px solid rgba(45, 61, 96, 0.6);
+  z-index: 300;
+  max-height: 82vh;
+  overflow-y: auto;
+  transform: translateY(calc(100% - 64px));
+  transition: transform 0.38s cubic-bezier(0.32, 0.72, 0, 1);
+}
+.drawerOpen {
+  transform: translateY(0);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  background: rgba(14, 20, 32, 0.88);
+}
+
+.peekStrip {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 0 20px;
+  border-bottom: 1px solid transparent;
+}
+.drawerOpen .peekStrip {
+  border-bottom-color: var(--border-default);
+}
+
+.menuText {
+  font-size: 15px;
+  font-weight: 700;
+  color: #F1F5F9;
+  letter-spacing: 0.02em;
+}
+
+.arrowUp {
+  color: #F1F5F9;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+.arrowDown {
+  color: #F1F5F9;
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.drawerContent {
+  padding-bottom: 32px;
+}
+
+.drawerTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  padding: 20px 20px 12px;
+}
+
+.navGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 0 16px 16px;
+}
+
+.gridItem {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding: 18px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.gridItem:active {
+  transform: scale(0.97);
+}
+.gridItemActive {
+  border-color: var(--blue-primary);
+  background: var(--blue-muted);
+}
+
+.iconBox {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gridLabel {
+  font-size: 11px;
+  font-weight: 500;
+  color: #CBD5E1;
+  text-align: center;
+  line-height: 1.3;
+}
+.gridLabelActive {
+  color: var(--blue-bright);
+}

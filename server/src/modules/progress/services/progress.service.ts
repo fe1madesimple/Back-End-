@@ -1,0 +1,1652 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
+import { prisma } from '@/shared/config';
+import {
+  DashboardStatsResponse,
+  SubjectProgressDetailResponse,
+  StudyStreakResponse,
+  WeeklySummaryResponse,
+  ModuleStatsResponse,
+  SimpleDashboardResponse,
+  StudyOverviewResponse,
+} from '../interfaces/progress.interface';
+import { NotFoundError } from '@/shared/utils';
+
+const MARCH_EXAM_MONTH = 3;
+const MARCH_EXAM_DAY = 1;
+const MARCH_EXTRA_DAYS = 0;
+
+const OCTOBER_EXAM_MONTH = 10;
+const OCTOBER_EXAM_DAY = 1;
+const OCTOBER_EXTRA_DAYS = 0;
+
+// ── Exam date helpers ────────────────────────────────────────
+
+/**
+ * Builds an exam Date for a given month/day/year with the configured offset.
+ */
+function buildExamDate(year: number, month: number, day: number, extraDays: number): Date {
+  const d = new Date(year, month - 1, day);
+  d.setDate(d.getDate() + extraDays);
+  return d;
+}
+
+/**
+ * Returns all future exam dates starting from the current or next year when needed.
+ * Always returns at least 2 upcoming options.
+ */
+function getUpcomingExamDates(fromDate: Date = new Date()): Date[] {
+  const year = fromDate.getFullYear();
+  const candidates: Date[] = [];
+
+  for (let y = year; y <= year + 1; y++) {
+    candidates.push(buildExamDate(y, MARCH_EXAM_MONTH, MARCH_EXAM_DAY, MARCH_EXTRA_DAYS));
+    candidates.push(buildExamDate(y, OCTOBER_EXAM_MONTH, OCTOBER_EXAM_DAY, OCTOBER_EXTRA_DAYS));
+  }
+
+  // Return only future dates (strictly after fromDate midnight)
+  const today = new Date(fromDate);
+  today.setHours(0, 0, 0, 0);
+
+  return candidates.filter((d) => d >= today);
+}
+
+/**
+ * Next exam date from today — used when user has no targetExamDate set.
+ */
+function getNextExamDate(): Date {
+  return getUpcomingExamDates()[0]!;
+}
+
+/**
+ * Format a Date as "Month YYYY" e.g. "October 2026"
+ */
+function formatExamMonthYear(date: Date): string {
+  return date.toLocaleDateString('en-IE', { month: 'long', year: 'numeric' });
+}
+
+// ── ExamCountdown interface ──────────────────────────────────
+
+export interface ExamCountdownResult {
+  daysUntilExam: number;
+  examDate: string; // ISO date string YYYY-MM-DD
+  missed: boolean; // true when targetExamDate is in the past
+  missedMessage: string | null; // "You missed your March 2026 exam. Choose your next target."
+  nextOptions: ExamOption[] | null; // shown in the reschedule popup
+}
+
+export interface ExamOption {
+  label: string; // "October 2026"
+  examDate: string; // YYYY-MM-DD — send this back to updateProfile
+  isPast: boolean; // true for the month that just passed (blurred in UI)
+}
+
+// ── buildExamCountdown ───────────────────────────────────────
+// Core logic. Called from getSimpleDashboard only.
+
+function buildExamCountdown(targetExamDate: Date | null | undefined): ExamCountdownResult {
+  const now = new Date();
+  const todayMidnight = new Date(now);
+  todayMidnight.setHours(0, 0, 0, 0);
+
+  // If no target date set — use the next system exam date, never missed
+  if (!targetExamDate) {
+    const next = getNextExamDate();
+    const daysUntilExam = Math.ceil((next.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
+    return {
+      daysUntilExam,
+      examDate: next.toISOString().split('T')[0]!,
+      missed: false,
+      missedMessage: null,
+      nextOptions: null,
+    };
+  }
+
+  const target = new Date(targetExamDate);
+  target.setHours(0, 0, 0, 0);
+
+  // Not yet missed — normal countdown
+  if (target >= todayMidnight) {
+    const daysUntilExam = Math.ceil((target.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
+    return {
+      daysUntilExam,
+      examDate: target.toISOString().split('T')[0]!,
+      missed: false,
+      missedMessage: null,
+      nextOptions: null,
+    };
+  }
+
+  // ── Missed state ─────────────────────────────────────────
+  // targetExamDate is in the past. Stop at 0, compute next options.
+
+  const missedLabel = formatExamMonthYear(target);
+  const missedMessage = `You missed your ${missedLabel} exam. Choose your next target.`;
+
+  // The month that just passed should be shown as blurred (isPast: true)
+  // Then show the next 2 future exam dates
+  const upcomingDates = getUpcomingExamDates(now);
+
+  // We want to show:
+  // - The exam that was missed (blurred, isPast: true) — for UI context
+  // - The 2 next upcoming ones
+  const nextOptions: ExamOption[] = [
+    {
+      label: missedLabel,
+      examDate: target.toISOString().split('T')[0]!,
+      isPast: true,
+    },
+    ...upcomingDates.slice(0, 2).map((d) => ({
+      label: formatExamMonthYear(d),
+      examDate: d.toISOString().split('T')[0]!,
+      isPast: false,
+    })),
+  ];
+
+  return {
+    daysUntilExam: 0,
+    examDate: target.toISOString().split('T')[0]!,
+    missed: true,
+    missedMessage,
+    nextOptions,
+  };
+}
+
+// ────────────────────────────────────────────────────────────
+
+class ProgressService {
+  protected async getWeeklyStats(userId: string) {
+    const oneWeekAgo = new Date();
+    oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
+
+    const sessions = await prisma.dailyStudySession.findMany({
+      where: {
+        userId,
+        date: { gte: oneWeekAgo.toISOString().split('T')[0]! },
+      },
+      select: { todayTotalSeconds: true },
+    });
+
+    const studyTimeSeconds = sessions.reduce((sum, s) => sum + s.todayTotalSeconds, 0);
+
+    const essaysCompleted = await prisma.essayAttempt.count({
+      where: {
+        userId,
+        createdAt: { gte: oneWeekAgo },
+      },
+    });
+
+    const allSessions = await prisma.dailyStudySession.findMany({
+      where: { userId, todayTotalSeconds: { gt: 0 } },
+      select: { date: true },
+      orderBy: { date: 'desc' },
+    });
+
+    let streak = 0;
+    let expectedDate = new Date();
+    expectedDate.setHours(0, 0, 0, 0);
+
+    for (const session of allSessions) {
+      const sessionDate = new Date(session.date);
+      sessionDate.setHours(0, 0, 0, 0);
+
+      if (sessionDate.getTime() === expectedDate.getTime()) {
+        streak++;
+        expectedDate.setDate(expectedDate.getDate() - 1);
+      } else {
+        break;
+      }
+    }
+
+    return {
+      studyTimeSeconds,
+      streak,
+      essaysCompleted,
+    };
+  }
+
+  async getDashboardStats(userId: string): Promise<DashboardStatsResponse> {
+    const now = new Date();
+    const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    const weekStart = new Date(todayStart);
+
+    weekStart.setDate(weekStart.getDate() - 7);
+
+    const user = await prisma.user.findUnique({
+      where: { id: userId },
+      select: {
+        targetExamDate: true,
+        dailyStudyGoal: true,
+      },
+    });
+
+    const subjectProgress = await prisma.userSubjectProgress.findMany({
+      where: { userId },
+      include: {
+        subject: {
+          select: { name: true },
+        },
+      },
+    });
+
+    const totalSubjects = subjectProgress.length;
+    const completedSubjects = subjectProgress.filter((s) => s.status === 'COMPLETED').length;
+    const averageProgress =
+      totalSubjects > 0
+        ? subjectProgress.reduce((sum, s) => sum + s.progressPercent, 0) / totalSubjects
+        : 0;
+
+    const todayLessons = await prisma.userLessonProgress.count({
+      where: {
+        userId,
+        completedAt: {
+          gte: todayStart,
+        },
+      },
+    });
+
+    const todayQuestions = await prisma.questionAttempt.count({
+      where: {
+        userId,
+        createdAt: {
+          gte: todayStart,
+        },
+      },
+    });
+
+    const todayTime = subjectProgress.reduce((sum, s) => {
+      return sum + s.totalTimeSeconds * 0.1;
+    }, 0);
+
+    const weekLessons = await prisma.userLessonProgress.count({
+      where: {
+        userId,
+        completedAt: {
+          gte: weekStart,
+        },
+      },
+    });
+
+    const weekQuestions = await prisma.questionAttempt.findMany({
+      where: {
+        userId,
+        createdAt: {
+          gte: weekStart,
+        },
+      },
+      select: {
+        pointsEarned: true,
+        question: {
+          select: { points: true },
+        },
+      },
+    });
+
+    const totalWeekTime = subjectProgress.reduce((sum, s) => sum + s.totalTimeSeconds, 0);
+
+    const averageScore =
+      weekQuestions.length > 0
+        ? weekQuestions.reduce(
+            (sum, q) => sum + (q.pointsEarned / (q.question.points || 1)) * 100,
+            0
+          ) / weekQuestions.length
+        : 0;
+
+    const recentLessons = await prisma.userLessonProgress.findMany({
+      where: { userId, completedAt: { not: null } },
+      include: {
+        lesson: {
+          include: {
+            module: {
+              include: {
+                subject: {
+                  select: { name: true },
+                },
+              },
+            },
+          },
+        },
+      },
+      orderBy: { completedAt: 'desc' },
+      take: 5,
+    });
+
+    const recentActivity = recentLessons.map((activity) => ({
+      type: 'LESSON' as const,
+      title: activity.lesson.title,
+      subjectName: activity.lesson.module.subject.name,
+      timestamp: activity.completedAt!,
+    }));
+
+    const daysUntilExam = user?.targetExamDate
+      ? Math.ceil((user.targetExamDate.getTime() - now.getTime()) / (1000 * 60 * 60 * 24))
+      : null;
+
+    const dailyGoalSeconds = (user?.dailyStudyGoal || 2) * 3600;
+    const todayProgressPercent = Math.min(100, (todayTime / dailyGoalSeconds) * 100);
+
+    return {
+      overallProgress: {
+        totalSubjects,
+        completedSubjects,
+        averageProgress: Math.round(averageProgress * 10) / 10,
+      },
+      todayActivity: {
+        timeSpentSeconds: Math.round(todayTime),
+        lessonsCompleted: todayLessons,
+        questionsAttempted: todayQuestions,
+      },
+      weekActivity: {
+        totalTimeSeconds: totalWeekTime,
+        lessonsCompleted: weekLessons,
+        questionsAttempted: weekQuestions.length,
+        averageScore: Math.round(averageScore * 10) / 10,
+      },
+      recentActivity,
+      upcomingGoals: {
+        targetExamDate: user?.targetExamDate || null,
+        daysUntilExam,
+        dailyStudyGoal: user?.dailyStudyGoal || 2,
+        todayProgress: Math.round(todayProgressPercent),
+      },
+    };
+  }
+
+  async getSubjectProgressDetail(
+    userId: string,
+    subjectId: string
+  ): Promise<SubjectProgressDetailResponse> {
+    const subjectProgress = await prisma.userSubjectProgress.findUnique({
+      where: {
+        userId_subjectId: { userId, subjectId },
+      },
+      include: {
+        subject: {
+          select: {
+            id: true,
+            name: true,
+          },
+        },
+      },
+    });
+
+    if (!subjectProgress) {
+      throw new NotFoundError('Subject progress not found');
+    }
+
+    const modules = await prisma.module.findMany({
+      where: {
+        subjectId,
+        isPublished: true,
+      },
+      include: {
+        userProgress: {
+          where: { userId },
+        },
+        lessons: {
+          where: { isPublished: true },
+        },
+        questions: {
+          where: { type: 'MCQ', isPublished: true },
+          include: {
+            attempts: {
+              where: { userId },
+              select: {
+                pointsEarned: true,
+              },
+            },
+          },
+        },
+      },
+      orderBy: { order: 'asc' },
+    });
+
+    const moduleStats = modules.map((module) => {
+      const progress = module.userProgress[0];
+      const totalLessons = module.lessons.length;
+      const completedLessons = progress?.completedLessons || 0;
+
+      const allAttempts = module.questions.flatMap((q) => q.attempts);
+      const totalPoints = module.questions.reduce((sum, q) => sum + q.points, 0);
+      const earnedPoints = allAttempts.reduce((sum, a) => sum + a.pointsEarned, 0);
+      const quizAverage = totalPoints > 0 ? (earnedPoints / totalPoints) * 100 : null;
+
+      return {
+        id: module.id,
+        name: module.name,
+        progressPercent: progress?.progressPercent || 0,
+        status: progress?.status || 'NOT_STARTED',
+        completedLessons,
+        totalLessons,
+        quizAverage: quizAverage ? Math.round(quizAverage * 10) / 10 : null,
+      };
+    });
+
+    const totalLessons = modules.reduce((sum, m) => sum + m.lessons.length, 0);
+    const totalLessonsCompleted = moduleStats.reduce((sum, m) => sum + m.completedLessons, 0);
+
+    const allQuestionAttempts = await prisma.questionAttempt.count({
+      where: {
+        userId,
+        question: {
+          module: {
+            subjectId,
+          },
+        },
+      },
+    });
+
+    const allQuizAttempts = await prisma.questionAttempt.findMany({
+      where: {
+        userId,
+        question: {
+          type: 'MCQ',
+          module: {
+            subjectId,
+          },
+        },
+      },
+      select: {
+        pointsEarned: true,
+        question: {
+          select: { points: true },
+        },
+      },
+    });
+
+    const averageQuizScore =
+      allQuizAttempts.length > 0
+        ? allQuizAttempts.reduce(
+            (sum, a) => sum + (a.pointsEarned / (a.question.points || 1)) * 100,
+            0
+          ) / allQuizAttempts.length
+        : 0;
+
+    const now = new Date();
+    const weekStart = new Date(now);
+    weekStart.setDate(weekStart.getDate() - 7);
+
+    const weekLessons = await prisma.userLessonProgress.findMany({
+      where: {
+        userId,
+        lesson: {
+          module: {
+            subjectId,
+          },
+        },
+        updatedAt: {
+          gte: weekStart,
+        },
+      },
+      select: {
+        timeSpentSeconds: true,
+      },
+    });
+
+    const timeSpentThisWeek = weekLessons.reduce((sum, l) => sum + l.timeSpentSeconds, 0);
+
+    const completionRate = totalLessons > 0 ? (totalLessonsCompleted / totalLessons) * 100 : 0;
+
+    const recentLessons = await prisma.userLessonProgress.findMany({
+      where: {
+        userId,
+        isCompleted: true,
+        lesson: {
+          module: {
+            subjectId,
+          },
+        },
+      },
+      include: {
+        lesson: {
+          include: {
+            module: {
+              select: { name: true },
+            },
+          },
+        },
+      },
+      orderBy: { completedAt: 'desc' },
+      take: 5,
+    });
+
+    return {
+      subject: {
+        id: subjectProgress.subject.id,
+        name: subjectProgress.subject.name,
+        progressPercent: subjectProgress.progressPercent,
+        status: subjectProgress.status,
+        totalTimeSeconds: subjectProgress.totalTimeSeconds,
+        lastAccessedAt: subjectProgress.lastAccessedAt,
+      },
+      modules: moduleStats,
+      performance: {
+        totalLessonsCompleted,
+        totalLessons,
+        totalQuestionsAttempted: allQuestionAttempts,
+        averageQuizScore: Math.round(averageQuizScore * 10) / 10,
+        timeSpentThisWeek,
+        completionRate: Math.round(completionRate * 10) / 10,
+      },
+      recentLessons: recentLessons.map((l) => ({
+        id: l.lesson.id,
+        title: l.lesson.title,
+        moduleName: l.lesson.module.name,
+        completedAt: l.completedAt!,
+      })),
+    };
+  }
+
+  async getStudyStreak(userId: string): Promise<StudyStreakResponse> {
+    const user = await prisma.user.findUnique({
+      where: { id: userId },
+      select: { dailyStudyGoal: true },
+    });
+
+    const dailyGoalHours = user?.dailyStudyGoal || 2;
+    const dailyGoalSeconds = dailyGoalHours * 3600;
+
+    const allProgress = await prisma.userLessonProgress.findMany({
+      where: {
+        userId,
+        timeSpentSeconds: { gt: 0 },
+      },
+      select: {
+        timeSpentSeconds: true,
+        updatedAt: true,
+      },
+      orderBy: { updatedAt: 'asc' },
+    });
+
+    const dailyActivity = new Map<string, number>();
+
+    allProgress.forEach((progress) => {
+      const dateKey = progress.updatedAt.toISOString().split('T')[0];
+      if (dateKey) {
+        const current = dailyActivity.get(dateKey) || 0;
+        dailyActivity.set(dateKey, current + progress.timeSpentSeconds);
+      }
+    });
+
+    let currentStreak = 0;
+    let longestStreak = 0;
+    let tempStreak = 0;
+    const today = new Date();
+    const dates = Array.from(dailyActivity.keys()).sort();
+
+    for (let i = dates.length - 1; i >= 0; i--) {
+      const dateStr = dates[i];
+      if (!dateStr) continue;
+
+      const date = new Date(dateStr);
+      const daysDiff = Math.floor((today.getTime() - date.getTime()) / (1000 * 60 * 60 * 24));
+
+      if (daysDiff === currentStreak) {
+        currentStreak++;
+        tempStreak++;
+      } else {
+        if (tempStreak > longestStreak) {
+          longestStreak = tempStreak;
+        }
+        tempStreak = 1;
+      }
+    }
+
+    if (tempStreak > longestStreak) {
+      longestStreak = tempStreak;
+    }
+
+    const todayKey = today.toISOString().split('T')[0];
+    const todaySeconds = todayKey ? dailyActivity.get(todayKey) || 0 : 0;
+    const todayMinutes = Math.floor(todaySeconds / 60);
+    const todayProgress = Math.min(100, Math.round((todaySeconds / dailyGoalSeconds) * 100));
+    const goalMet = todaySeconds >= dailyGoalSeconds;
+
+    const weekActivity = [];
+    for (let i = 6; i >= 0; i--) {
+      const date = new Date(today);
+      date.setDate(date.getDate() - i);
+      const dateKey = date.toISOString().split('T')[0];
+
+      if (dateKey) {
+        const seconds = dailyActivity.get(dateKey) || 0;
+
+        weekActivity.push({
+          date: dateKey,
+          minutesStudied: Math.floor(seconds / 60),
+          goalMet: seconds >= dailyGoalSeconds,
+        });
+      }
+    }
+
+    const monthCalendar = [];
+    for (let i = 29; i >= 0; i--) {
+      const date = new Date(today);
+      date.setDate(date.getDate() - i);
+      const dateKey = date.toISOString().split('T')[0];
+
+      if (dateKey) {
+        const seconds = dailyActivity.get(dateKey) || 0;
+
+        monthCalendar.push({
+          date: dateKey,
+          minutesStudied: Math.floor(seconds / 60),
+          goalMet: seconds >= dailyGoalSeconds,
+        });
+      }
+    }
+
+    const streakHistory: {
+      startDate: Date;
+      endDate: Date;
+      lengthDays: number;
+    }[] = [];
+
+    let streakStart: Date | null = null;
+    let streakLength = 0;
+
+    dates.forEach((dateStr, index) => {
+      if (!dateStr) return;
+
+      const date = new Date(dateStr);
+      const nextDateStr = dates[index + 1];
+      const nextDate = nextDateStr ? new Date(nextDateStr) : null;
+
+      if (!streakStart) {
+        streakStart = date;
+        streakLength = 1;
+      } else {
+        const daysDiff = nextDate
+          ? Math.floor((nextDate.getTime() - date.getTime()) / (1000 * 60 * 60 * 24))
+          : 999;
+
+        if (daysDiff === 1) {
+          streakLength++;
+        } else {
+          if (streakLength >= 3) {
+            streakHistory.push({
+              startDate: streakStart,
+              endDate: date,
+              lengthDays: streakLength,
+            });
+          }
+          streakStart = nextDate;
+          streakLength = 1;
+        }
+      }
+    });
+
+    return {
+      currentStreak,
+      longestStreak,
+      totalStudyDays: dailyActivity.size,
+      dailyGoal: {
+        targetHours: dailyGoalHours,
+        todayProgress,
+        todayMinutes,
+        goalMet,
+      },
+      weekActivity,
+      monthCalendar,
+      streakHistory: streakHistory.slice(-5),
+    };
+  }
+
+  async getWeeklySummary(userId: string): Promise<WeeklySummaryResponse> {
+    const today = new Date();
+    const weekStart = new Date(today);
+    weekStart.setDate(weekStart.getDate() - 6);
+    weekStart.setHours(0, 0, 0, 0);
+
+    const weekEnd = new Date(today);
+    weekEnd.setHours(23, 59, 59, 999);
+
+    const user = await prisma.user.findUnique({
+      where: { id: userId },
+      select: { dailyStudyGoal: true },
+    });
+
+    const dailyGoalSeconds = (user?.dailyStudyGoal || 2) * 3600;
+
+    const weekLessons = await prisma.userLessonProgress.findMany({
+      where: {
+        userId,
+        updatedAt: {
+          gte: weekStart,
+          lte: weekEnd,
+        },
+      },
+      include: {
+        lesson: {
+          include: {
+            module: {
+              include: {
+                subject: {
+                  select: { name: true },
+                },
+              },
+            },
+          },
+        },
+      },
+    });
+
+    const completedLessons = await prisma.userLessonProgress.count({
+      where: {
+        userId,
+        isCompleted: true,
+        completedAt: {
+          gte: weekStart,
+          lte: weekEnd,
+        },
+      },
+    });
+
+    const weekQuestions = await prisma.questionAttempt.findMany({
+      where: {
+        userId,
+        createdAt: {
+          gte: weekStart,
+          lte: weekEnd,
+        },
+      },
+      select: {
+        createdAt: true,
+        pointsEarned: true,
+        question: {
+          select: { points: true },
+        },
+      },
+    });
+
+    const averageQuizScore =
+      weekQuestions.length > 0
+        ? weekQuestions.reduce(
+            (sum, q) => sum + (q.pointsEarned / (q.question.points || 1)) * 100,
+            0
+          ) / weekQuestions.length
+        : 0;
+
+    const dailyData = new Map<
+      string,
+      {
+        timeSeconds: number;
+        lessonsCompleted: number;
+        questionsAttempted: number;
+        quizScores: number[];
+      }
+    >();
+
+    weekLessons.forEach((lesson) => {
+      const dateKey = lesson.updatedAt.toISOString().split('T')[0];
+      if (!dateKey) return;
+
+      const current = dailyData.get(dateKey) || {
+        timeSeconds: 0,
+        lessonsCompleted: 0,
+        questionsAttempted: 0,
+        quizScores: [],
+      };
+
+      current.timeSeconds += lesson.timeSpentSeconds;
+      if (lesson.isCompleted && lesson.completedAt) {
+        const completedKey = lesson.completedAt.toISOString().split('T')[0];
+        if (completedKey === dateKey) {
+          current.lessonsCompleted++;
+        }
+      }
+
+      dailyData.set(dateKey, current);
+    });
+
+    weekQuestions.forEach((attempt) => {
+      const dateKey = attempt.createdAt.toISOString().split('T')[0];
+      if (!dateKey) return;
+
+      const current = dailyData.get(dateKey) || {
+        timeSeconds: 0,
+        lessonsCompleted: 0,
+        questionsAttempted: 0,
+        quizScores: [],
+      };
+
+      current.questionsAttempted++;
+      current.quizScores.push((attempt.pointsEarned / (attempt.question.points || 1)) * 100);
+
+      dailyData.set(dateKey, current);
+    });
+
+    const dailyBreakdown = [];
+    let daysStudied = 0;
+    let dailyGoalsMet = 0;
+
+    for (let i = 6; i >= 0; i--) {
+      const date = new Date(today);
+      date.setDate(date.getDate() - i);
+      const dateKey = date.toISOString().split('T')[0];
+
+      if (!dateKey) continue;
+
+      const dayData = dailyData.get(dateKey);
+      const timeSeconds = dayData?.timeSeconds || 0;
+      const goalMet = timeSeconds >= dailyGoalSeconds;
+
+      if (timeSeconds > 0) {
+        daysStudied++;
+      }
+
+      if (goalMet) {
+        dailyGoalsMet++;
+      }
+
+      const avgScore =
+        dayData && dayData.quizScores.length > 0
+          ? dayData.quizScores.reduce((sum, s) => sum + s, 0) / dayData.quizScores.length
+          : null;
+
+      dailyBreakdown.push({
+        date: dateKey,
+        dayName: date.toLocaleDateString('en-US', { weekday: 'short' }),
+        timeSeconds,
+        lessonsCompleted: dayData?.lessonsCompleted || 0,
+        questionsAttempted: dayData?.questionsAttempted || 0,
+        quizScore: avgScore ? Math.round(avgScore * 10) / 10 : null,
+        goalMet,
+      });
+    }
+
+    const subjectData = new Map<string, { timeSeconds: number; lessonsCompleted: number }>();
+
+    weekLessons.forEach((lesson) => {
+      const subjectName = lesson.lesson.module.subject.name;
+      const current = subjectData.get(subjectName) || { timeSeconds: 0, lessonsCompleted: 0 };
+
+      current.timeSeconds += lesson.timeSpentSeconds;
+      if (lesson.isCompleted) {
+        current.lessonsCompleted++;
+      }
+
+      subjectData.set(subjectName, current);
+    });
+
+    const topSubjects = Array.from(subjectData.entries())
+      .map(([subjectName, data]) => ({
+        subjectName,
+        timeSeconds: data.timeSeconds,
+        lessonsCompleted: data.lessonsCompleted,
+      }))
+      .sort((a, b) => b.timeSeconds - a.timeSeconds)
+      .slice(0, 3);
+
+    const achievements: { type: string; title: string; description: string }[] = [];
+
+    if (daysStudied === 7) {
+      achievements.push({
+        type: 'STREAK',
+        title: 'Perfect Week! 🔥',
+        description: 'You studied every day this week',
+      });
+    }
+
+    if (dailyGoalsMet >= 5) {
+      achievements.push({
+        type: 'GOAL',
+        title: 'Goal Crusher! 🎯',
+        description: `Met your daily goal ${dailyGoalsMet} times this week`,
+      });
+    }
+
+    if (completedLessons >= 10) {
+      achievements.push({
+        type: 'LESSONS',
+        title: 'Learning Machine! 📚',
+        description: `Completed ${completedLessons} lessons this week`,
+      });
+    }
+
+    if (averageQuizScore >= 80) {
+      achievements.push({
+        type: 'SCORE',
+        title: 'Quiz Master! ⭐',
+        description: `${Math.round(averageQuizScore)}% average quiz score`,
+      });
+    }
+
+    const totalTimeSeconds = Array.from(dailyData.values()).reduce(
+      (sum, day) => sum + day.timeSeconds,
+      0
+    );
+
+    return {
+      weekRange: {
+        startDate: weekStart.toISOString().split('T')[0]!,
+        endDate: weekEnd.toISOString().split('T')[0]!,
+      },
+      summary: {
+        totalTimeSeconds,
+        totalLessonsCompleted: completedLessons,
+        totalQuestionsAttempted: weekQuestions.length,
+        averageQuizScore: Math.round(averageQuizScore * 10) / 10,
+        daysStudied,
+        dailyGoalsMet,
+      },
+      dailyBreakdown,
+      topSubjects,
+      achievements,
+    };
+  }
+
+  async getModuleStats(userId: string, moduleId: string): Promise<ModuleStatsResponse> {
+    const module = await prisma.module.findUnique({
+      where: { id: moduleId, isPublished: true },
+      include: {
+        subject: {
+          select: { name: true },
+        },
+        userProgress: {
+          where: { userId },
+        },
+        lessons: {
+          where: { isPublished: true },
+          include: {
+            userProgress: {
+              where: { userId },
+            },
+          },
+        },
+        questions: {
+          where: { type: 'MCQ', isPublished: true },
+          include: {
+            attempts: {
+              where: { userId },
+              orderBy: { createdAt: 'desc' },
+              include: {
+                question: {
+                  select: { text: true, points: true },
+                },
+              },
+            },
+          },
+        },
+      },
+    });
+
+    if (!module) {
+      throw new NotFoundError('Module not found');
+    }
+
+    const moduleProgress = module.userProgress[0];
+
+    const totalLessons = module.lessons.length;
+    const completedLessons = module.lessons.filter((l) => l.userProgress[0]?.isCompleted).length;
+
+    const totalTimeSpent = module.lessons.reduce(
+      (sum: number, l) => sum + (l.userProgress[0]?.timeSpentSeconds || 0),
+      0
+    );
+
+    const averageTimePerLesson =
+      completedLessons > 0 ? Math.floor(totalTimeSpent / completedLessons) : 0;
+
+    const totalQuestions = module.questions.length;
+    const attemptedQuestions = module.questions.filter((q) => q.attempts.length > 0).length;
+
+    const allAttempts = module.questions.flatMap((q) => q.attempts);
+    const correctAttempts = allAttempts.filter((a) => a.isCorrect).length;
+
+    const scores = allAttempts.map((a) => (a.pointsEarned / (a.question.points || 1)) * 100);
+
+    const averageScore =
+      scores.length > 0 ? scores.reduce((sum: number, s: number) => sum + s, 0) / scores.length : 0;
+
+    const bestScore = scores.length > 0 ? Math.max(...scores) : 0;
+    const worstScore = scores.length > 0 ? Math.min(...scores) : 0;
+
+    const topicPerformance = new Map<string, { correct: number; total: number }>();
+
+    module.questions.forEach((question) => {
+      const topic = question.text.split(' ').slice(0, 5).join(' ');
+
+      question.attempts.forEach((attempt) => {
+        const current = topicPerformance.get(topic) || { correct: 0, total: 0 };
+        current.total++;
+        if (attempt.isCorrect) {
+          current.correct++;
+        }
+        topicPerformance.set(topic, current);
+      });
+    });
+
+    const topicScores = Array.from(topicPerformance.entries())
+      .map(([topic, data]) => ({
+        topic,
+        score: data.total > 0 ? (data.correct / data.total) * 100 : 0,
+        attempts: data.total,
+      }))
+      .filter((t) => t.attempts >= 2);
+
+    const strongTopics = topicScores
+      .filter((t) => t.score >= 75)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 3)
+      .map((t) => ({
+        topic: t.topic,
+        score: Math.round(t.score * 10) / 10,
+      }));
+
+    const weakTopics = topicScores
+      .filter((t) => t.score < 60)
+      .sort((a, b) => a.score - b.score)
+      .slice(0, 3)
+      .map((t) => ({
+        topic: t.topic,
+        score: Math.round(t.score * 10) / 10,
+      }));
+
+    const recentAttempts = allAttempts.slice(0, 10).map((attempt) => ({
+      questionText: attempt.question.text.slice(0, 80) + '...',
+      isCorrect: attempt.isCorrect ?? false,
+      score: Math.round((attempt.pointsEarned / (attempt.question.points || 1)) * 100 * 10) / 10,
+      timestamp: attempt.createdAt,
+    }));
+
+    const recommendations: { type: string; message: string }[] = [];
+
+    if (completedLessons < totalLessons) {
+      recommendations.push({
+        type: 'LESSONS',
+        message: `Complete remaining ${totalLessons - completedLessons} lessons to finish this module`,
+      });
+    }
+
+    if (averageScore < 70) {
+      recommendations.push({
+        type: 'PRACTICE',
+        message: 'Your quiz average is below 70% - review lessons and practice more questions',
+      });
+    }
+
+    if (weakTopics.length > 0) {
+      recommendations.push({
+        type: 'WEAK_TOPICS',
+        message: `Focus on: ${weakTopics.map((t) => t.topic).join(', ')}`,
+      });
+    }
+
+    if (attemptedQuestions < totalQuestions) {
+      recommendations.push({
+        type: 'QUESTIONS',
+        message: `Try all ${totalQuestions - attemptedQuestions} remaining practice questions`,
+      });
+    }
+
+    if (completedLessons === totalLessons && averageScore >= 80) {
+      recommendations.push({
+        type: 'READY',
+        message: '🎉 Great work! You are ready to move to the next module',
+      });
+    }
+
+    return {
+      module: {
+        id: module.id,
+        name: module.name,
+        subjectName: module.subject.name,
+        progressPercent: moduleProgress?.progressPercent || 0,
+        status: moduleProgress?.status || 'NOT_STARTED',
+      },
+      lessons: {
+        totalLessons,
+        completedLessons,
+        averageTimePerLesson,
+        totalTimeSpent,
+      },
+      quizzes: {
+        totalQuestions,
+        attemptedQuestions,
+        correctAnswers: correctAttempts,
+        averageScore: Math.round(averageScore * 10) / 10,
+        bestScore: Math.round(bestScore * 10) / 10,
+        worstScore: Math.round(worstScore * 10) / 10,
+      },
+      performance: {
+        strongTopics,
+        weakTopics,
+        recentAttempts,
+      },
+      recommendations,
+    };
+  }
+
+  async getSimpleDashboard(userId: string): Promise<SimpleDashboardResponse> {
+    const user = await prisma.user.findUnique({
+      where: { id: userId },
+      select: {
+        targetExamDate: true,
+        dailyStudyGoal: true,
+        hasCompletedOnboarding: true,
+        averageQuizScore: true,
+        highestQuizScore: true,
+        lowestQuizScore: true,
+        podcastRecommendations: true,
+        focusSubjects: true,
+      },
+    });
+
+    const hasAnyLessonProgress = await prisma.userLessonProgress.count({
+      where: { userId },
+    });
+
+    const hasAnyQuizAttempt = await prisma.questionAttempt.count({
+      where: { userId },
+    });
+
+    const hasAnyPodcastProgress = await prisma.userPodcastProgress.count({
+      where: { userId },
+    });
+
+    const isNew =
+      !user?.hasCompletedOnboarding ||
+      (hasAnyLessonProgress === 0 && hasAnyQuizAttempt === 0 && hasAnyPodcastProgress === 0);
+
+    // ── FIXED: examCountdown now uses buildExamCountdown ──────
+    // Never goes negative. Missed state + reschedule options returned.
+    const examCountdown = buildExamCountdown(user?.targetExamDate);
+    // ─────────────────────────────────────────────────────────
+
+    const today = new Date().toISOString().split('T')[0]!;
+
+    const todaySession = await prisma.dailyStudySession.findUnique({
+      where: {
+        userId_date: {
+          userId,
+          date: today,
+        },
+      },
+      select: {
+        todayTotalSeconds: true,
+        lifetimeTotalSeconds: true,
+      },
+    });
+
+    const todaySeconds = todaySession?.todayTotalSeconds || 0;
+    const todayHours = todaySeconds / 3600;
+    const targetHours = user?.dailyStudyGoal || 3;
+
+    const mostRecentSunday = new Date();
+    const currentDay = mostRecentSunday.getDay();
+    mostRecentSunday.setDate(mostRecentSunday.getDate() - currentDay);
+    mostRecentSunday.setHours(0, 0, 0, 0);
+
+    const last7Days = Array.from({ length: 7 }, (_, i) => {
+      const date = new Date(mostRecentSunday);
+      date.setDate(date.getDate() + i);
+      return date;
+    });
+
+    const weekCalendar = await Promise.all(
+      last7Days.map(async (date) => {
+        const dateStr = date.toISOString().split('T')[0]!;
+
+        const daySession = await prisma.dailyStudySession.findUnique({
+          where: {
+            userId_date: {
+              userId,
+              date: dateStr,
+            },
+          },
+          select: { todayTotalSeconds: true },
+        });
+
+        console.log(
+          `📅 Date: ${dateStr}, Day: ${['S', 'M', 'T', 'W', 'T', 'F', 'S'][date.getDay()]}, Seconds: ${daySession?.todayTotalSeconds || 0}`
+        );
+
+        return {
+          day: ['S', 'M', 'T', 'W', 'T', 'F', 'S'][date.getDay()]!,
+          hasActivity: (daySession?.todayTotalSeconds || 0) > 0,
+        };
+      })
+    );
+
+    console.log('\n🔥 CURRENT STREAK CALCULATION (last 7 days only):');
+    console.log('weekCalendar:', JSON.stringify(weekCalendar, null, 2));
+
+    const allSessions = await prisma.dailyStudySession.findMany({
+      where: { userId, todayTotalSeconds: { gt: 0 } },
+      select: { date: true },
+      orderBy: { date: 'desc' },
+    });
+
+    console.log('\n🔥 ALL SESSIONS WITH ACTIVITY:');
+    allSessions.forEach((s) => console.log(`  ${s.date}`));
+
+    let currentStreak = 0;
+    let expectedDate = new Date();
+    expectedDate.setHours(0, 0, 0, 0);
+
+    console.log(
+      `\n📍 CURRENT STREAK - Starting from today: ${expectedDate.toISOString().split('T')[0]}`
+    );
+
+    for (const session of allSessions) {
+      const sessionDate = new Date(session.date);
+      sessionDate.setHours(0, 0, 0, 0);
+
+      console.log(
+        `  Checking: ${session.date} vs Expected: ${expectedDate.toISOString().split('T')[0]}`
+      );
+
+      if (sessionDate.getTime() === expectedDate.getTime()) {
+        currentStreak++;
+        console.log(`    ✅ Match! Streak = ${currentStreak}`);
+        expectedDate.setDate(expectedDate.getDate() - 1);
+      } else {
+        console.log(`    ❌ Gap detected, breaking at streak = ${currentStreak}`);
+        break;
+      }
+    }
+
+    const allSessionsAsc = await prisma.dailyStudySession.findMany({
+      where: { userId, todayTotalSeconds: { gt: 0 } },
+      select: { date: true },
+      orderBy: { date: 'asc' },
+    });
+
+    let longestStreak = 0;
+    let tempStreak = 0;
+
+    console.log(`\n📊 LONGEST STREAK - Scanning all ${allSessionsAsc.length} sessions`);
+
+    for (let i = 0; i < allSessionsAsc.length; i++) {
+      const currentSession = allSessionsAsc[i];
+      const nextSession = allSessionsAsc[i + 1];
+
+      if (!currentSession) continue;
+
+      tempStreak++;
+
+      if (nextSession) {
+        const current = new Date(currentSession.date);
+        const next = new Date(nextSession.date);
+        const dayDiff = Math.floor((next.getTime() - current.getTime()) / (1000 * 60 * 60 * 24));
+
+        if (dayDiff > 1) {
+          console.log(
+            `  Gap found between ${currentSession.date} and ${nextSession.date} (${dayDiff} days apart)`
+          );
+          longestStreak = Math.max(longestStreak, tempStreak);
+          tempStreak = 0;
+        }
+      }
+    }
+    longestStreak = Math.max(longestStreak, tempStreak);
+
+    console.log(`\n🎯 Final Current Streak: ${currentStreak}`);
+    console.log(`🏆 Final Longest Streak: ${longestStreak}\n`);
+
+    const quizPerformance = {
+      averageScore: user?.averageQuizScore || 0,
+      highestScore: user?.highestQuizScore || 0,
+      lowestScore: user?.lowestQuizScore || 0,
+    };
+
+    const lastLesson = await prisma.userLessonProgress.findFirst({
+      where: {
+        userId,
+        isCompleted: false,
+        videoWatchedSeconds: { gt: 0 },
+      },
+      include: {
+        lesson: {
+          include: {
+            module: {
+              include: {
+                subject: { select: { name: true } },
+              },
+            },
+          },
+        },
+      },
+      orderBy: { updatedAt: 'desc' },
+    });
+
+    const resumeLearning = lastLesson
+      ? {
+          lessonTitle: lastLesson.lesson.title,
+          subjectName: lastLesson.lesson.module.subject.name,
+          subjectId: lastLesson.lesson.module.subjectId,
+          minutesRemaining: lastLesson.lesson.videoDuration
+            ? Math.ceil((lastLesson.lesson.videoDuration - lastLesson.videoWatchedSeconds) / 60)
+            : 0,
+          progressPercent: lastLesson.lesson.videoDuration
+            ? Math.round((lastLesson.videoWatchedSeconds / lastLesson.lesson.videoDuration) * 100)
+            : 0,
+          lessonId: lastLesson.lesson.id,
+          moduleId: lastLesson.lesson.moduleId,
+        }
+      : null;
+
+    let recommendedPodcasts;
+    console.log(user?.podcastRecommendations, "podcast recommendations")
+    console.log(user?.focusSubjects, "focus subjects")
+
+
+    if (user?.podcastRecommendations && user.focusSubjects.length > 0) {
+      const relevantPodcasts = await prisma.podcast.findMany({
+        where: {
+          isPublished: true,
+          subject: { in: user.focusSubjects },
+        },
+        select: {
+          id: true,
+          title: true,
+          subject: true,
+          duration: true,
+          thumbnail: true,
+        },
+        take: 3,
+      });
+
+      console.log(relevantPodcasts, "relevant podcasts based on user focus subjects")
+
+      recommendedPodcasts = relevantPodcasts.map((p) => ({
+        id: p.id,
+        title: p.title,
+        subjectName: p.subject || 'General',
+        durationMinutes: Math.round((p.duration || 0) / 60),
+        thumbnail: p.thumbnail || '',
+      }));
+
+
+    } else {
+
+      const allPodcasts = await prisma.podcast.findMany({
+        where: { isPublished: true },
+        select: {
+          id: true,
+          title: true,
+          subject: true,
+          duration: true,
+          thumbnail: true,
+        },
+      });
+
+
+      console.log(allPodcasts, "all published podcasts for random selection")
+
+      const shuffled = allPodcasts.sort(() => Math.random() - 0.5);
+      const randomPodcasts = shuffled.slice(0, 3);
+
+      recommendedPodcasts = randomPodcasts.map((p) => ({
+        id: p.id,
+        title: p.title,
+        subjectName: p.subject || 'General',
+        durationMinutes: Math.round((p.duration || 0) / 60),
+        thumbnail: p.thumbnail || '',
+      }));
+
+      console.log(recommendedPodcasts, "randomly recommended podcasts")
+    }
+
+    return {
+      isNew,
+      examCountdown,
+      todayStudy: {
+        hoursToday: Math.round(todayHours * 10) / 10,
+        targetHours,
+        progressPercent: Math.min(100, Math.round((todayHours / targetHours) * 100)),
+      },
+      weeklyStreak: {
+        currentStreak,
+        longestStreak,
+        weekCalendar,
+      },
+      quizPerformance,
+      resumeLearning,
+      recommendedPodcasts,
+      lifetimeStudyHours: Math.round(((todaySession?.lifetimeTotalSeconds || 0) / 3600) * 10) / 10,
+    };
+  }
+
+  protected async getAIProgressTrend(userId: string) {
+    const twoWeeksAgo = new Date();
+    twoWeeksAgo.setDate(twoWeeksAgo.getDate() - 14);
+
+    const oneWeekAgo = new Date();
+    oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
+
+    const lastWeekAttempts = await prisma.essayAttempt.findMany({
+      where: { userId, createdAt: { gte: oneWeekAgo } },
+      select: {
+        aiScore: true,
+        question: { select: { subject: true } },
+      },
+    });
+
+    const previousWeekAttempts = await prisma.essayAttempt.findMany({
+      where: { userId, createdAt: { gte: twoWeeksAgo, lt: oneWeekAgo } },
+      select: {
+        aiScore: true,
+        question: { select: { subject: true } },
+      },
+    });
+
+    const calculateAverage = (attempts: any[]) => {
+      if (attempts.length === 0) return 0;
+      const scores = attempts.map((a) => a.aiScore).filter((s) => s !== null);
+      return scores.length > 0
+        ? Math.round(scores.reduce((sum: number, s: number) => sum + s, 0) / scores.length)
+        : 0;
+    };
+
+    const lastWeekAverage = calculateAverage(lastWeekAttempts);
+    const previousWeekAverage = calculateAverage(previousWeekAttempts);
+    const improvement = lastWeekAverage - previousWeekAverage;
+
+    const subjectPerformance: Record<string, { count: number; avgScore: number }> = {};
+
+    lastWeekAttempts.forEach((attempt) => {
+      // ← FIXED: attempt.question is now nullable
+      const subject = attempt.question?.subject || 'General';
+      if (!subjectPerformance[subject]) {
+        subjectPerformance[subject] = { count: 0, avgScore: 0 };
+      }
+      subjectPerformance[subject]!.count++;
+      subjectPerformance[subject]!.avgScore += attempt.aiScore || 0;
+    });
+
+    Object.keys(subjectPerformance).forEach((subject) => {
+      const perf = subjectPerformance[subject]!;
+      perf.avgScore = Math.round(perf.avgScore / perf.count);
+    });
+
+    return {
+      lastWeekAverage,
+      previousWeekAverage,
+      improvement,
+      essaysCompleted: lastWeekAttempts.length,
+      subjectPerformance,
+      hasActivity: lastWeekAttempts.length > 0,
+    };
+  }
+
+  private formatStudyTime(totalSeconds: number): string {
+    const hours = Math.floor(totalSeconds / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+
+    if (hours > 0) {
+      if (minutes > 0) {
+        return `${hours} hour${hours !== 1 ? 's' : ''} ${minutes} minute${minutes !== 1 ? 's' : ''}`;
+      }
+      return `${hours} hour${hours !== 1 ? 's' : ''}`;
+    }
+
+    if (minutes > 0) {
+      if (seconds > 0) {
+        return `${minutes} minute${minutes !== 1 ? 's' : ''} ${seconds} second${seconds !== 1 ? 's' : ''}`;
+      }
+      return `${minutes} minute${minutes !== 1 ? 's' : ''}`;
+    }
+
+    return `${seconds} second${seconds !== 1 ? 's' : ''}`;
+  }
+
+  async getStudyOverview(userId: string): Promise<StudyOverviewResponse> {
+    const user = await prisma.user.findUnique({
+      where: { id: userId },
+      select: { focusSubjects: true },
+    });
+
+    const now = new Date();
+    const dayOfWeek = now.getDay();
+    const daysToMonday = dayOfWeek === 0 ? 6 : dayOfWeek - 1;
+    const weekStart = new Date(now);
+    weekStart.setDate(now.getDate() - daysToMonday);
+    weekStart.setHours(0, 0, 0, 0);
+
+    const weekStartStr = weekStart.toISOString().split('T')[0]!;
+    const weekSessions = await prisma.dailyStudySession.findMany({
+      where: {
+        userId,
+        date: { gte: weekStartStr },
+      },
+      select: { todayTotalSeconds: true },
+    });
+
+    const totalSecondsThisWeek = weekSessions.reduce((sum, s) => sum + s.todayTotalSeconds, 0);
+
+    const lessonsCompletedThisWeek = await prisma.userLessonProgress.count({
+      where: {
+        userId,
+        completedAt: { gte: weekStart },
+      },
+    });
+
+    const subjectProgress = await prisma.userSubjectProgress.findMany({
+      where: { userId },
+      select: { subjectId: true },
+    });
+
+    const subjectsEnrolled = subjectProgress.length;
+
+    const lessonsCompleted = await prisma.userLessonProgress.count({
+      where: { userId, isCompleted: true },
+    });
+
+    const allQuizAttempts = await prisma.quizAttempt.findMany({
+      where: { userId },
+      select: { isCorrect: true },
+    });
+
+    const quizAccuracy =
+      allQuizAttempts.length > 0
+        ? Math.round(
+            (allQuizAttempts.filter((a) => a.isCorrect).length / allQuizAttempts.length) * 100
+          )
+        : 0;
+
+    const practiceAttempts = await prisma.essayAttempt.count({
+      where: { userId },
+    });
+
+    const allSessions = await prisma.dailyStudySession.findMany({
+      where: { userId, todayTotalSeconds: { gt: 0 } },
+      select: { date: true },
+      orderBy: { date: 'desc' },
+    });
+
+    console.log('\n🔥 ALL SESSIONS WITH ACTIVITY:');
+    allSessions.forEach((s) => console.log(`  ${s.date}`));
+
+    let currentStreak = 0;
+    let expectedDate = new Date();
+    expectedDate.setHours(0, 0, 0, 0);
+
+    console.log(
+      `\n📍 CURRENT STREAK - Starting from today: ${expectedDate.toISOString().split('T')[0]}`
+    );
+
+    for (const session of allSessions) {
+      const sessionDate = new Date(session.date);
+      sessionDate.setHours(0, 0, 0, 0);
+
+      console.log(
+        `  Checking: ${session.date} vs Expected: ${expectedDate.toISOString().split('T')[0]}`
+      );
+
+      if (sessionDate.getTime() === expectedDate.getTime()) {
+        currentStreak++;
+        console.log(`    ✅ Match! Streak = ${currentStreak}`);
+        expectedDate.setDate(expectedDate.getDate() - 1);
+      } else {
+        console.log(`    ❌ Gap detected, breaking at streak = ${currentStreak}`);
+        break;
+      }
+    }
+
+    const allSessionsAsc = await prisma.dailyStudySession.findMany({
+      where: { userId, todayTotalSeconds: { gt: 0 } },
+      select: { date: true },
+      orderBy: { date: 'asc' },
+    });
+
+    let longestStreak = 0;
+    let tempStreak = 0;
+
+    console.log(`\n📊 LONGEST STREAK - Scanning all ${allSessionsAsc.length} sessions`);
+
+    for (let i = 0; i < allSessionsAsc.length; i++) {
+      const currentSession = allSessionsAsc[i];
+      const nextSession = allSessionsAsc[i + 1];
+
+      if (!currentSession) continue;
+
+      tempStreak++;
+
+      if (nextSession) {
+        const current = new Date(currentSession.date);
+        const next = new Date(nextSession.date);
+        const dayDiff = Math.floor((next.getTime() - current.getTime()) / (1000 * 60 * 60 * 24));
+
+        if (dayDiff > 1) {
+          console.log(
+            `  Gap found between ${currentSession.date} and ${nextSession.date} (${dayDiff} days apart)`
+          );
+          longestStreak = Math.max(longestStreak, tempStreak);
+          tempStreak = 0;
+        }
+      }
+    }
+
+    longestStreak = Math.max(longestStreak, tempStreak);
+
+    console.log(`\n🎯 Final Current Streak: ${currentStreak}`);
+    console.log(`🏆 Final Longest Streak: ${longestStreak}\n`);
+
+    const formattedTime = this.formatStudyTime(totalSecondsThisWeek);
+    const weekSummary = `You've studied ${formattedTime} this week and completed ${lessonsCompletedThisWeek} modules across ${subjectsEnrolled} subjects.`;
+
+    const achievementHint =
+      currentStreak >= 3
+        ? `Amazing! ${currentStreak} day streak — keep going to unlock your next achievement badge.`
+        : 'Consistency pays off — stay on your streak to unlock your next achievement badge.';
+
+    return {
+      weekSummary,
+      focusSubjects: user?.focusSubjects || [],
+      stats: {
+        subjectsEnrolled,
+        lessonsCompleted,
+        quizAccuracy,
+        practiceAttempts,
+        currentStreak,
+        totalTimeSecondsForTheWeek: totalSecondsThisWeek,
+      },
+      achievementHint,
+    };
+  }
+}
+
+export default new ProgressService();
