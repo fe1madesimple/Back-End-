@@ -20,64 +20,71 @@ class LessonService {
   // ─── Video & Time Tracking ────────────────────────────────────────────────
 
   async trackVideoProgress(
-    userId: string,
-    lessonId: string,
-    currentTime: number,
-    videoDuration?: number
-  ) {
-    const lesson = await prisma.lesson.findUnique({
+  userId: string,
+  lessonId: string,
+  currentTime: number,
+  videoDuration?: number
+) {
+  const lesson = await prisma.lesson.findUnique({
+    where: { id: lessonId },
+    select: { id: true, videoDuration: true, moduleId: true },
+  });
+
+  if (!lesson) throw new AppError('Lesson not found');
+  if (videoDuration && videoDuration <= 0) throw new AppError('Invalid video duration');
+
+  const duration = videoDuration || lesson.videoDuration;
+  if (!duration) throw new AppError('Video duration not available');
+
+  if (videoDuration && !lesson.videoDuration) {
+    await prisma.lesson.update({
       where: { id: lessonId },
-      select: { id: true, videoDuration: true, moduleId: true },
+      data: { videoDuration },
     });
-
-    if (!lesson) throw new AppError('Lesson not found');
-    if (videoDuration && videoDuration <= 0) throw new AppError('Invalid video duration');
-
-    const duration = videoDuration || lesson.videoDuration;
-    if (!duration) throw new AppError('Video duration not available');
-
-    if (videoDuration && !lesson.videoDuration) {
-      await prisma.lesson.update({
-        where: { id: lessonId },
-        data: { videoDuration },
-      });
-    }
-
-    const lessonProgressPercent = Math.min(100, (currentTime / duration) * 100);
-    const isCompleted = lessonProgressPercent >= 90;
-
-    const existingProgress = await prisma.userLessonProgress.findUnique({
-      where: { userId_lessonId: { userId, lessonId } },
-      select: { videoWatchedSeconds: true, timeSpentSeconds: true },
-    });
-
-    const previousWatchedSeconds = existingProgress?.videoWatchedSeconds || 0;
-    const timeDelta = Math.max(0, currentTime - previousWatchedSeconds);
-    const newTimeSpent = (existingProgress?.timeSpentSeconds || 0) + timeDelta;
-
-    const updatedProgress = await prisma.userLessonProgress.upsert({
-      where: { userId_lessonId: { userId, lessonId } },
-      create: {
-        userId,
-        lessonId,
-        videoWatchedSeconds: currentTime,
-        timeSpentSeconds: currentTime,
-        isCompleted,
-        completedAt: isCompleted ? new Date() : null,
-        lastAccessedAt: new Date(),
-      },
-      update: {
-        videoWatchedSeconds: currentTime,
-        timeSpentSeconds: newTimeSpent,
-        isCompleted,
-        completedAt: isCompleted ? new Date() : null,
-        lastAccessedAt: new Date(),
-      },
-    });
-
-    await this.recalculateModuleProgress(userId, lesson.moduleId);
-    return updatedProgress;
   }
+
+  const existingProgress = await prisma.userLessonProgress.findUnique({
+    where: { userId_lessonId: { userId, lessonId } },
+    select: { videoWatchedSeconds: true, timeSpentSeconds: true },
+  });
+
+  const previousWatchedSeconds = existingProgress?.videoWatchedSeconds || 0;
+
+  // ── If the user rewound or sent a lower timestamp, ignore the update entirely.
+  // We never let a lower currentTime overwrite a higher previously recorded value.
+  if (existingProgress && currentTime <= previousWatchedSeconds) {
+    return existingProgress
+  }
+
+  const timeDelta = Math.max(0, currentTime - previousWatchedSeconds)
+  const newTimeSpent = (existingProgress?.timeSpentSeconds || 0) + timeDelta
+
+  const lessonProgressPercent = Math.min(100, (currentTime / duration) * 100);
+  const isCompleted = lessonProgressPercent >= 90;
+
+  const updatedProgress = await prisma.userLessonProgress.upsert({
+    where: { userId_lessonId: { userId, lessonId } },
+    create: {
+      userId,
+      lessonId,
+      videoWatchedSeconds: currentTime,
+      timeSpentSeconds: currentTime,
+      isCompleted,
+      completedAt: isCompleted ? new Date() : null,
+      lastAccessedAt: new Date(),
+    },
+    update: {
+      videoWatchedSeconds: currentTime,
+      timeSpentSeconds: newTimeSpent,
+      isCompleted,
+      completedAt: isCompleted ? new Date() : null,
+      lastAccessedAt: new Date(),
+    },
+  });
+
+  await this.recalculateModuleProgress(userId, lesson.moduleId);
+  return updatedProgress;
+}
 
   private async recalculateModuleProgress(userId: string, moduleId: string) {
     const lessons = await prisma.lesson.findMany({
