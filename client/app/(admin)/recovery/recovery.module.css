@@ -1,0 +1,538 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pageHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.exportBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+.exportBtn:hover {
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+}
+
+.pulseGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+.pulseCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: border-color 0.2s;
+}
+.pulseCard:hover {
+  border-color: var(--border-focus);
+}
+.pulseTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pulseLabel {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.pulseIconWrap {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.pulseValue {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.pulseSub {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.cardTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.cardSub {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+.allClearBadge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--green-bg);
+  border: 1px solid var(--green);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--green);
+}
+
+.emptyQueue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 48px;
+  text-align: center;
+}
+.emptyQueueTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.emptyQueueSub {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.queueList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.queueCard {
+  border: 1px solid;
+  border-radius: var(--radius-md);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr auto;
+  gap: 20px;
+  align-items: start;
+}
+.queueCardDefault {
+  border-color: var(--border-default);
+  background: var(--bg-elevated);
+}
+.queueCardWarning {
+  border-color: rgba(245, 158, 11, 0.4);
+  background: var(--amber-bg);
+}
+.queueCardDanger {
+  border-color: rgba(239, 68, 68, 0.4);
+  background: var(--red-bg);
+}
+
+.stageIndicator {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-primary);
+  white-space: nowrap;
+  height: fit-content;
+  margin-top: 2px;
+}
+.queueUserSection {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.queueAvatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+.queueUserName {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.queueUserEmail {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+.queuePlan {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+.queueDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.queueDetailRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.queueDetailLabel {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  min-width: 80px;
+  flex-shrink: 0;
+}
+.queueDetailValue {
+  font-size: 13px;
+  color: var(--text-primary);
+}
+.queueActions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.retryBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--blue-muted);
+  border: 1px solid var(--blue-primary);
+  color: var(--blue-bright);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+  white-space: nowrap;
+}
+.retryBtn:hover {
+  background: var(--blue-primary);
+  color: white;
+}
+.retryBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.emailBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  padding: 7px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+  white-space: nowrap;
+}
+.emailBtn:hover {
+  border-color: var(--border-focus);
+  color: var(--text-primary);
+}
+.emailBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.writeOffBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid var(--border-default);
+  color: var(--text-muted);
+  border-radius: var(--radius-sm);
+  padding: 7px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+  white-space: nowrap;
+}
+.writeOffBtn:hover {
+  background: var(--amber-bg);
+  border-color: var(--amber);
+  color: var(--amber);
+}
+
+/* Pipeline */
+.pipeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  position: relative;
+}
+.pipelineStep {
+  position: relative;
+}
+.pipelineConnector {
+  position: absolute;
+  top: 32px;
+  right: -1px;
+  width: calc(100% - 32px);
+  height: 2px;
+  background: var(--border-default);
+  z-index: 0;
+  left: 50%;
+}
+.pipelineNode {
+  border: 1px solid;
+  border-radius: var(--radius-md);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 8px;
+  position: relative;
+  z-index: 1;
+}
+.pipelineStageLabel {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.pipelineTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.pipelineDesc {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+.pipelineUsers {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Settings */
+.settingsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.settingSection {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.settingSectionTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.toggleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.toggleLabel {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+.toggleSub {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+.toggle {
+  width: 40px;
+  height: 22px;
+  border-radius: 11px;
+  background: var(--bg-hover);
+  border: 1px solid var(--border-default);
+  cursor: pointer;
+  position: relative;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+.toggle::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  transition:
+    transform 0.2s,
+    background 0.2s;
+}
+.toggleOn {
+  background: var(--blue-primary);
+  border-color: var(--blue-primary);
+}
+.toggleOn::after {
+  transform: translateX(18px);
+  background: white;
+}
+.settingField {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.settingLabel {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.settingSelect {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  padding: 9px 12px;
+  font-size: 13px;
+  color: var(--text-primary);
+  outline: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+.settingSelect:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.saveBtn {
+  background: var(--blue-primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 11px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: inherit;
+}
+.saveBtn:hover {
+  background: var(--blue-bright);
+}
+.saveBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.spinning {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1200px) {
+  .pulseGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .pipeline {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .pipelineConnector {
+    display: none;
+  }
+  .settingsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .pulseGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .queueCard {
+    grid-template-columns: 1fr 1fr;
+  }
+  .settingsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .pulseGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .pipeline {
+    grid-template-columns: 1fr;
+  }
+  .queueCard {
+    grid-template-columns: 1fr;
+  }
+  .queueActions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

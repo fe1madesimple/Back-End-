@@ -238,6 +238,89 @@ export const retentionData = {
   ],
 }
 
+export const recoveryData = {
+  // Pulse stats
+  totalAtRisk: 87,
+  recoveredThisMonth: 203,
+  recoveryRate: 68,
+  avgDaysToRecover: 4.2,
+  failedInQueue: 3,
+  lostUnrecoverable: 29,
+
+  // Failed payment queue
+  failedQueue: [
+    {
+      id: 'fq1',
+      userName: 'Roisin Gallagher',
+      email: 'roisin.gal@example.com',
+      plan: 'Standard Monthly',
+      amount: 29,
+      failReason: 'Insufficient funds',
+      firstFailedAt: '2026-03-15T14:00:00Z',
+      retryCount: 1,
+      nextRetryAt: '2026-03-21T14:00:00Z',
+      escalationStage: 'Day 3',
+      status: 'Pending Retry',
+    },
+    {
+      id: 'fq2',
+      userName: 'Niamh O Brien',
+      email: 'niamh.obrien@example.com',
+      plan: 'Standard Monthly',
+      amount: 29,
+      failReason: 'Card expired',
+      firstFailedAt: '2026-03-13T09:00:00Z',
+      retryCount: 2,
+      nextRetryAt: '2026-03-22T09:00:00Z',
+      escalationStage: 'Day 7',
+      status: 'Escalated',
+    },
+    {
+      id: 'fq3',
+      userName: 'Seamus Connolly',
+      email: 'seamus.con@example.com',
+      plan: 'Standard Monthly',
+      amount: 29,
+      failReason: 'Card declined',
+      firstFailedAt: '2026-03-10T08:00:00Z',
+      retryCount: 3,
+      nextRetryAt: null,
+      escalationStage: 'Final Notice',
+      status: 'Final Notice',
+    },
+  ],
+
+  // Weekly recovery chart — 8 weeks
+  weeklyRecovery: [
+    { week: 'Week 1 Jan', failed: 116, recovered: 87  },
+    { week: 'Week 2 Jan', failed: 87,  recovered: 58  },
+    { week: 'Week 3 Jan', failed: 145, recovered: 116 },
+    { week: 'Week 4 Jan', failed: 58,  recovered: 29  },
+    { week: 'Week 1 Feb', failed: 174, recovered: 116 },
+    { week: 'Week 2 Feb', failed: 87,  recovered: 58  },
+    { week: 'Week 3 Feb', failed: 116, recovered: 87  },
+    { week: 'Week 4 Feb', failed: 87,  recovered: 58  },
+  ],
+
+  // Escalation pipeline stages
+  escalationStages: [
+    { stage: 'Day 0',     label: 'Payment Failed Email',     description: 'Automatic email sent immediately on payment failure with update card link', usersAtStage: 1, color: '#3B82F6' },
+    { stage: 'Day 3',     label: 'Reminder Email',           description: 'Second email reminding user to update payment method before access is restricted', usersAtStage: 1, color: '#F59E0B' },
+    { stage: 'Day 7',     label: 'Final Warning Email',      description: 'Final warning — account will be suspended in 3 days if payment is not updated', usersAtStage: 1, color: '#EF4444' },
+    { stage: 'Day 10',    label: 'Account Suspended',        description: 'Account automatically suspended — re-activation email sent with payment link', usersAtStage: 0, color: '#6B7280' },
+  ],
+
+  // Recovery settings defaults
+  settings: {
+    autoRetryEnabled: true,
+    retryInterval: '3days',
+    autoSuspendEnabled: true,
+    maxRetryAttempts: '3',
+    sendEmailOnFailure: true,
+    sendEmailOnRecovery: true,
+  },
+}
+
 export const users = [
   { id: '1',  name: 'Aoife Murphy',      email: 'aoife.murphy@example.com',     plan: 'Pro',      status: 'Active',   joinDate: '2025-09-15', lastActive: '2026-03-16', streak: 14, revenue: 392 },
   { id: '2',  name: 'Ciarán Walsh',      email: 'ciaran.walsh@example.com',     plan: 'Standard', status: 'Active',   joinDate: '2025-10-02', lastActive: '2026-03-15', streak: 7,  revenue: 145 },
