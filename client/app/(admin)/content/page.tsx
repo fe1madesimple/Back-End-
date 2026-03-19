@@ -142,12 +142,12 @@ export default function ContentPage() {
       {/* Stats row */}
       <div className={styles.statsGrid}>
         {[
-          { icon: BookOpen,    color: '#3B82F6', label: 'Subjects',         value: contentStats.totalSubjects,         sub: `${contentStats.publishedSubjects} published` },
-          { icon: BookOpen,    color: '#10B981', label: 'Lessons',          value: contentStats.totalLessons,          sub: `${contentStats.publishedLessons} published` },
-          { icon: HelpCircle, color: '#8B5CF6', label: 'MCQ Questions',    value: contentStats.totalMCQs,             sub: `Avg pass rate ${contentStats.avgMCQPassRate}%` },
-          { icon: Scale,       color: '#F59E0B', label: 'Case Briefs',      value: contentStats.totalCaseBriefs,       sub: `${contentStats.frequentlyTestedCases} frequently tested` },
-          { icon: Video,       color: '#EF4444', label: 'Video Lessons',    value: contentStats.totalVideoContent,     sub: `${Math.round(contentStats.totalVideoSeconds / 3600)}h total` },
-          { icon: TrendingUp,  color: '#06B6D4', label: 'Storage Used',     value: `${contentStats.estimatedStorageGB}GB`, sub: 'Cloudinary media' },
+          { icon: BookOpen,   color: '#E6027D', label: 'Subjects',         value: contentStats.totalSubjects,         sub: `${contentStats.publishedSubjects} published` },
+          { icon: BookOpen,   color: '#FDC300', label: 'Lessons',          value: contentStats.totalLessons,          sub: `${contentStats.publishedLessons} published` },
+          { icon: HelpCircle, color: '#5F3EB5', label: 'MCQ Questions',    value: contentStats.totalMCQs,             sub: `Avg pass rate ${contentStats.avgMCQPassRate}%` },
+          { icon: Scale,      color: '#B38513', label: 'Case Briefs',      value: contentStats.totalCaseBriefs,       sub: `${contentStats.frequentlyTestedCases} frequently tested` },
+          { icon: Video,      color: '#961C81', label: 'Video Lessons',    value: contentStats.totalVideoContent,     sub: `${Math.round(contentStats.totalVideoSeconds / 3600)}h total` },
+          { icon: TrendingUp, color: '#009DDD', label: 'Storage Used',     value: `${contentStats.estimatedStorageGB}GB`, sub: 'Cloudinary media' },
         ].map((s, i) => {
           const Icon = s.icon
           return (
@@ -1019,8 +1019,8 @@ export default function ContentPage() {
                   <div className={styles.formField}>
                     <label className={styles.fieldLabel}>Subject Color</label>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                      <input type="color" defaultValue={subjectModal.item?.color ?? '#3B82F6'} style={{ width: 40, height: 36, border: 'none', borderRadius: 6, cursor: 'pointer', background: 'transparent' }} />
-                      <input className={styles.fieldInput} defaultValue={subjectModal.item?.color ?? '#3B82F6'} placeholder="#3B82F6" style={{ flex: 1 }} />
+                      <input type="color" defaultValue={subjectModal.item?.color ?? '#E6027D'} style={{ width: 40, height: 36, border: 'none', borderRadius: 6, cursor: 'pointer', background: 'transparent' }} />
+                      <input className={styles.fieldInput} defaultValue={subjectModal.item?.color ?? '#E6027D'} placeholder="#E6027D" style={{ flex: 1 }} />
                     </div>
                   </div>
                   <div className={styles.formField}>

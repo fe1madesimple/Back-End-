@@ -313,15 +313,144 @@ export const userAuditTrail: Record<string, Array<{id: string, action: string, d
 }
 
 export const subjects = [
-  { id: 's1', name: 'Criminal Law',      slug: 'criminal-law',      color: '#EC4899', progressColor: '#EC4899', order: 1, isPublished: true, description: 'Core principles of criminal liability, offences against the person and property.', moduleCount: 5, lessonCount: 24, mcqCount: 180, createdAt: '2025-06-01T00:00:00Z' },
-  { id: 's2', name: 'Contract Law',      slug: 'contract-law',      color: '#3B82F6', progressColor: '#3B82F6', order: 2, isPublished: true, description: 'Formation, terms, breach and remedies in contract law.', moduleCount: 4, lessonCount: 18, mcqCount: 140, createdAt: '2025-06-01T00:00:00Z' },
-  { id: 's3', name: 'Tort Law',          slug: 'tort-law',          color: '#F59E0B', progressColor: '#F59E0B', order: 3, isPublished: true, description: 'Negligence, occupiers liability and defamation.', moduleCount: 3, lessonCount: 14, mcqCount: 100, createdAt: '2025-06-01T00:00:00Z' },
-  { id: 's4', name: 'Constitutional Law',slug: 'constitutional-law', color: '#10B981', progressColor: '#10B981', order: 4, isPublished: true, description: 'Irish constitutional framework and fundamental rights.', moduleCount: 3, lessonCount: 12, mcqCount: 80, createdAt: '2025-06-01T00:00:00Z' },
-  { id: 's5', name: 'EU Law',            slug: 'eu-law',            color: '#06B6D4', progressColor: '#06B6D4', order: 5, isPublished: true, description: 'Institutions, treaties and direct effect of EU law.', moduleCount: 2, lessonCount: 10, mcqCount: 60, createdAt: '2025-06-01T00:00:00Z' },
-  { id: 's6', name: 'Equity',            slug: 'equity',            color: '#8B5CF6', progressColor: '#8B5CF6', order: 6, isPublished: true, description: 'Trusts, equitable remedies and fiduciary duties.', moduleCount: 2, lessonCount: 10, mcqCount: 80, createdAt: '2025-06-01T00:00:00Z' },
-  { id: 's7', name: 'Land Law',          slug: 'land-law',          color: '#EF4444', progressColor: '#EF4444', order: 7, isPublished: true, description: 'Ownership, registration and interests in land.', moduleCount: 2, lessonCount: 8, mcqCount: 60, createdAt: '2025-06-01T00:00:00Z' },
-  { id: 's8', name: 'Company Law',       slug: 'company-law',       color: '#F97316', progressColor: '#F97316', order: 8, isPublished: false, description: 'Incorporation, directors duties and shareholder rights.', moduleCount: 1, lessonCount: 0, mcqCount: 0, createdAt: '2025-09-01T00:00:00Z' },
+  { id: 's1', name: 'Criminal Law',      slug: 'criminal-law',      color: '#E6027D', progressColor: '#E6027D', order: 1, isPublished: true,  description: 'Core principles of criminal liability, offences against the person and property.', moduleCount: 5, lessonCount: 24, mcqCount: 180, createdAt: '2025-06-01T00:00:00Z' },
+  { id: 's2', name: 'Contract Law',      slug: 'contract-law',      color: '#FDC300', progressColor: '#FDC300', order: 2, isPublished: true,  description: 'Formation, terms, breach and remedies in contract law.', moduleCount: 4, lessonCount: 18, mcqCount: 140, createdAt: '2025-06-01T00:00:00Z' },
+  { id: 's3', name: 'Tort Law',          slug: 'tort-law',          color: '#B38513', progressColor: '#B38513', order: 3, isPublished: true,  description: 'Negligence, occupiers liability and defamation.', moduleCount: 3, lessonCount: 14, mcqCount: 100, createdAt: '2025-06-01T00:00:00Z' },
+  { id: 's4', name: 'Constitutional Law',slug: 'constitutional-law', color: '#961C81', progressColor: '#961C81', order: 4, isPublished: true,  description: 'Irish constitutional framework and fundamental rights.', moduleCount: 3, lessonCount: 12, mcqCount: 80,  createdAt: '2025-06-01T00:00:00Z' },
+  { id: 's5', name: 'EU Law',            slug: 'eu-law',            color: '#009DDD', progressColor: '#009DDD', order: 5, isPublished: true,  description: 'Institutions, treaties and direct effect of EU law.', moduleCount: 2, lessonCount: 10, mcqCount: 60,  createdAt: '2025-06-01T00:00:00Z' },
+  { id: 's6', name: 'Equity',            slug: 'equity',            color: '#63C0F2', progressColor: '#63C0F2', order: 6, isPublished: true,  description: 'Trusts, equitable remedies and fiduciary duties.', moduleCount: 2, lessonCount: 10, mcqCount: 80,  createdAt: '2025-06-01T00:00:00Z' },
+  { id: 's7', name: 'Property Law',      slug: 'property-law',      color: '#5F3EB5', progressColor: '#5F3EB5', order: 7, isPublished: true,  description: 'Ownership, registration and interests in land.', moduleCount: 2, lessonCount: 8,  mcqCount: 60,  createdAt: '2025-06-01T00:00:00Z' },
+  { id: 's8', name: 'Company Law',       slug: 'company-law',       color: '#8659FB', progressColor: '#8659FB', order: 8, isPublished: false, description: 'Incorporation, directors duties and shareholder rights.', moduleCount: 1, lessonCount: 0,  mcqCount: 0,   createdAt: '2025-09-01T00:00:00Z' },
 ]
+
+export const aiMonitorData = {
+  // Current month snapshot
+  currentMonth: {
+    tokensUsed: 2847392,
+    tokensTotal: 5000000,
+    costEurUsed: 187.42,
+    costEurBudget: 300.00,
+    burnRateDaily: 8.52,
+    daysRemaining: 18,
+    daysInMonth: 31,
+    daysPassed: 13,
+    projectedEndOfMonth: 298.64,
+    budgetUtilisationPercent: 62,
+    anthropicBalance: 112.58,
+    lastBalanceCheck: '2026-03-18T09:00:00Z',
+  },
+
+  // Cost breakdown by feature
+  byFeature: [
+    { feature: 'Essay Grading',       tokens: 1420000, costEur: 93.40,  percent: 49.9, avgPerSession: 0.62, sessions: 150 },
+    { feature: 'Lesson Practice MCQ', tokens: 571000,  costEur: 37.60,  percent: 20.1, avgPerSession: 0.08, sessions: 470 },
+    { feature: 'Simulation Exams',    tokens: 427108,  costEur: 28.12,  percent: 15.0, avgPerSession: 0.94, sessions: 30  },
+    { feature: 'AI Feedback',         tokens: 285000,  costEur: 18.77,  percent: 10.1, avgPerSession: 0.19, sessions: 99  },
+    { feature: 'Progress Analysis',   tokens: 144284,  costEur: 9.53,   percent: 5.0,  avgPerSession: 0.06, sessions: 159 },
+  ],
+
+  // Cost by subject
+  bySubject: [
+    { subjectId: 's1', subject: 'Criminal Law',      costEur: 62.40, tokens: 946060, percent: 33.3 },
+    { subjectId: 's2', subject: 'Contract Law',      costEur: 43.18, tokens: 654848, percent: 23.0 },
+    { subjectId: 's3', subject: 'Tort Law',          costEur: 28.12, tokens: 426363, percent: 15.0 },
+    { subjectId: 's4', subject: 'Constitutional Law',costEur: 22.49, tokens: 340909, percent: 12.0 },
+    { subjectId: 's6', subject: 'Equity',            costEur: 16.87, tokens: 255681, percent: 9.0  },
+    { subjectId: 's5', subject: 'EU Law',            costEur: 14.36, tokens: 217929, percent: 7.7  },
+  ],
+
+  // Top users by consumption
+  topUsers: [
+    { userId: '16', name: 'Chiamaka Uchenna',  email: 'chiamaka.u@example.com',  plan: 'Pro',      tokensUsed: 142800, costEur: 9.41, essayCount: 18, sessionCount: 42 },
+    { userId: '6',  name: 'Tunde Adeyemi',     email: 'tunde.adeyemi@example.com', plan: 'Pro',   tokensUsed: 128700, costEur: 8.48, essayCount: 16, sessionCount: 38 },
+    { userId: '30', name: 'Rotimi Adeyemi',    email: 'rotimi.ade@example.com',  plan: 'Pro',      tokensUsed: 119200, costEur: 7.85, essayCount: 15, sessionCount: 35 },
+    { userId: '27', name: 'Aisling Flanagan',  email: 'aisling.flan@example.com', plan: 'Pro',    tokensUsed: 98400,  costEur: 6.48, essayCount: 12, sessionCount: 31 },
+    { userId: '33', name: 'Sorcha Murphy',     email: 'sorcha.mu@example.com',   plan: 'Pro',      tokensUsed: 87600,  costEur: 5.77, essayCount: 11, sessionCount: 28 },
+  ],
+
+  // Daily burn rate - last 30 days (zigzag realistic)
+  dailyBurn: [
+    { date: '2026-02-17', tokens: 78420,  costEur: 5.17 },
+    { date: '2026-02-18', tokens: 112340, costEur: 7.40 },
+    { date: '2026-02-19', tokens: 64200,  costEur: 4.23 },
+    { date: '2026-02-20', tokens: 134800, costEur: 8.88 },
+    { date: '2026-02-21', tokens: 98200,  costEur: 6.47 },
+    { date: '2026-02-22', tokens: 42100,  costEur: 2.78 },
+    { date: '2026-02-23', tokens: 38400,  costEur: 2.53 },
+    { date: '2026-02-24', tokens: 145200, costEur: 9.57 },
+    { date: '2026-02-25', tokens: 118300, costEur: 7.79 },
+    { date: '2026-02-26', tokens: 87400,  costEur: 5.76 },
+    { date: '2026-02-27', tokens: 152400, costEur: 10.04 },
+    { date: '2026-02-28', tokens: 94200,  costEur: 6.21 },
+    { date: '2026-03-01', tokens: 68100,  costEur: 4.49 },
+    { date: '2026-03-02', tokens: 44200,  costEur: 2.91 },
+    { date: '2026-03-03', tokens: 138400, costEur: 9.12 },
+    { date: '2026-03-04', tokens: 112800, costEur: 7.43 },
+    { date: '2026-03-05', tokens: 78200,  costEur: 5.15 },
+    { date: '2026-03-06', tokens: 168400, costEur: 11.09 },
+    { date: '2026-03-07', tokens: 124200, costEur: 8.18 },
+    { date: '2026-03-08', tokens: 54200,  costEur: 3.57 },
+    { date: '2026-03-09', tokens: 48100,  costEur: 3.17 },
+    { date: '2026-03-10', tokens: 142800, costEur: 9.41 },
+    { date: '2026-03-11', tokens: 108400, costEur: 7.14 },
+    { date: '2026-03-12', tokens: 92100,  costEur: 6.07 },
+    { date: '2026-03-13', tokens: 178200, costEur: 11.74 },
+    { date: '2026-03-14', tokens: 134100, costEur: 8.83 },
+    { date: '2026-03-15', tokens: 62400,  costEur: 4.11 },
+    { date: '2026-03-16', tokens: 52100,  costEur: 3.43 },
+    { date: '2026-03-17', tokens: 148200, costEur: 9.76 },
+    { date: '2026-03-18', tokens: 128400, costEur: 8.46 },
+  ],
+
+  // Surge warnings based on exam cohort
+  surgeWarnings: [
+    {
+      id: 'sw1',
+      severity: 'warning',
+      title: 'October 2026 Exam Surge Expected',
+      detail: '89 students are targeting the October 2026 sitting. Based on past patterns, usage surges 40% in the 6 weeks before the exam (mid-August onwards).',
+      expectedIncrease: 40,
+      expectedAdditionalCost: 74.97,
+      expectedMonth: 'September 2026',
+      daysUntil: 152,
+    },
+    {
+      id: 'sw2',
+      severity: 'info',
+      title: 'New User Growth Trend',
+      detail: 'You gained 18 new users this week. If this growth continues, AI costs will increase by approximately €67 next month.',
+      expectedIncrease: 22,
+      expectedAdditionalCost: 67.20,
+      expectedMonth: 'April 2026',
+      daysUntil: 13,
+    },
+    {
+      id: 'sw3',
+      severity: 'danger',
+      title: 'Budget Threshold Approaching',
+      detail: 'At current burn rate of €8.52/day you will reach your €300 budget in 13 days - before the month ends.',
+      expectedIncrease: 0,
+      expectedAdditionalCost: 0,
+      expectedMonth: 'March 2026',
+      daysUntil: 13,
+    },
+  ],
+
+  // Alert settings defaults
+  alertSettings: {
+    emailAlerts: true,
+    emailAddress: 'admin@fe1madesimple.ie',
+    smsAlerts: false,
+    phoneNumber: '',
+    threshold50: true,
+    threshold75: true,
+    threshold90: true,
+    customThreshold: 80,
+    customThresholdEnabled: false,
+    weeklyReport: true,
+    dailyDigest: false,
+  },
+}
 
 export const modules = [
   { id: 'm1', subjectId: 's1', name: 'Foundations of Criminal Law',    order: 1, isPublished: true,  lessonCount: 5, mcqCount: 40, description: 'Actus reus, mens rea and coincidence.' },
@@ -373,7 +502,7 @@ export const caseBriefs = [
   { id: 'cb6', caseName: 'Van Gend en Loos v Nederlandse Administratie', citation: 'Case 26/62', year: 1963, court: 'Court of Justice EU', jurisdiction: 'EUROPEAN_UNION', isFrequentlyTested: true, legalPrinciple: 'Established the doctrine of direct effect in EU law.', subjects: ['EU Law'], topics: ['Direct Effect', 'EU Treaties'], savedCount: 91, createdAt: '2025-06-03T00:00:00Z' },
   { id: 'cb7', caseName: 'Central London Property Trust v High Trees', citation: '[1947] KB 130', year: 1947, court: 'King Bench Division', jurisdiction: 'ENGLAND_AND_WALES', isFrequentlyTested: true, legalPrinciple: 'Established promissory estoppel as an equitable doctrine.', subjects: ['Contract Law', 'Equity'], topics: ['Promissory Estoppel'], savedCount: 67, createdAt: '2025-06-04T00:00:00Z' },
   { id: 'cb8', caseName: 'McGrath v Trintech Technologies', citation: '[2004] IEHC 342', year: 2004, court: 'High Court', jurisdiction: 'IRELAND', isFrequentlyTested: false, legalPrinciple: 'Applied the neighbour principle in an employment context in Ireland.', subjects: ['Tort Law'], topics: ['Negligence', 'Employment'], savedCount: 28, createdAt: '2025-06-05T00:00:00Z' },
-  { id: 'cb9', caseName: 'Costa v ENEL', citation: 'Case 6/64', year: 1964, court: 'Court of Justice EU', jurisdiction: 'EUROPEAN_UNION', isFrequentlyTested: true, legalPrinciple: 'Established the supremacy of EU law over national law.', subjects: ['EU Law'], topics: ['Supremacy', 'EU Law'], savedCount: 85, createdAt: '2025-06-06T00:00:00Z' },
+  { id: 'cb9', caseName: 'Costa v ENEL', citation: 'Case 6/64', year: 1964, court: 'Court of Justice EU', jurisdiction: '�OPEAN_UNION', isFrequentlyTested: true, legalPrinciple: 'Established the supremacy of EU law over national law.', subjects: ['EU Law'], topics: ['Supremacy', 'EU Law'], savedCount: 85, createdAt: '2025-06-06T00:00:00Z' },
   { id: 'cb10', caseName: 'Rookes v Barnard', citation: '[1964] AC 1129', year: 1964, court: 'House of Lords', jurisdiction: 'UNITED_KINGDOM', isFrequentlyTested: false, legalPrinciple: 'Defined the categories for exemplary damages in tort.', subjects: ['Tort Law'], topics: ['Damages', 'Exemplary Damages'], savedCount: 22, createdAt: '2025-06-07T00:00:00Z' },
 ]
 
@@ -394,3 +523,6 @@ export const contentStats = {
   mostAttemptedLesson: 'Murder and Manslaughter',
   hardestMCQ: 'Specific intent refers to:',
 }
+
+
+
