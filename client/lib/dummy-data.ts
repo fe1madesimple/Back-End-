@@ -32,6 +32,212 @@ export const userGrowthData = [
   { month: 'Nov', users: 247 },
 ]
 
+export const revenueData = {
+  // Current snapshot
+  mrr: 4280,
+  mrrLastMonth: 3620,
+  mrrGrowthPercent: 18.2,
+  arr: 51360,
+  totalRevenueAllTime: 38420,
+  arpu: 36.80,
+  netRevenueThisMonth: 4231,
+  refundsThisMonth: 49,
+  activePayingSubscribers: 187,
+  trialUsers: 60,
+
+  // Plan breakdown
+  planBreakdown: [
+    { plan: 'Standard Monthly', subscribers: 84,  mrr: 2436, percent: 56.9, color: '#3B82F6', momChange: 12 },
+    { plan: 'Pro Monthly',      subscribers: 48,  mrr: 2352, percent: 54.9, color: '#10B981', momChange: 8  },
+    { plan: 'Standard Annual',  subscribers: 32,  mrr: 664,  percent: 15.5, color: '#8B5CF6', momChange: 4  },
+    { plan: 'Pro Annual',       subscribers: 23,  mrr: 765,  percent: 17.9, color: '#F59E0B', momChange: -2 },
+  ],
+
+  // MRR trend - 14 months zigzag
+  mrrTrend: [
+    { month: 'Feb 25', mrr: 480,  churnLoss: 29  },
+    { month: 'Mar 25', mrr: 720,  churnLoss: 58  },
+    { month: 'Apr 25', mrr: 640,  churnLoss: 87  },
+    { month: 'May 25', mrr: 980,  churnLoss: 29  },
+    { month: 'Jun 25', mrr: 1240, churnLoss: 116 },
+    { month: 'Jul 25', mrr: 1180, churnLoss: 145 },
+    { month: 'Aug 25', mrr: 1620, churnLoss: 87  },
+    { month: 'Sep 25', mrr: 1840, churnLoss: 58  },
+    { month: 'Oct 25', mrr: 2180, churnLoss: 174 },
+    { month: 'Nov 25', mrr: 2640, churnLoss: 116 },
+    { month: 'Dec 25', mrr: 2480, churnLoss: 203 },
+    { month: 'Jan 26', mrr: 3180, churnLoss: 145 },
+    { month: 'Feb 26', mrr: 3620, churnLoss: 87  },
+    { month: 'Mar 26', mrr: 4280, churnLoss: 58  },
+  ],
+
+  // Churn this month
+  churnedThisMonth: [
+    { id: 'ch1', name: 'Padraig Hennigan',  email: 'padraig.hen@example.com',  plan: 'Standard Monthly', revenue: 87,  daysSubscribed: 158, reason: 'Too expensive',      cancelledAt: '2026-03-14T10:00:00Z' },
+    { id: 'ch2', name: 'Seamus Connolly',   email: 'seamus.con@example.com',   plan: 'Standard Monthly', revenue: 29,  daysSubscribed: 44,  reason: 'Not what I expected', cancelledAt: '2026-03-10T14:00:00Z' },
+    { id: 'ch3', name: 'Clodagh Byrne',     email: 'clodagh.byrne@example.com', plan: 'Standard Annual', revenue: 249, daysSubscribed: 142, reason: 'Passed exam',          cancelledAt: '2026-03-07T09:00:00Z' },
+  ],
+  churnRateThisMonth: 3.2,
+  churnRateLastMonth: 2.8,
+  avgSubscriptionLifetimeDays: 134,
+  revenueFromChurnThisMonth: 367,
+  revenueFromChurnLastMonth: 290,
+
+  // Recent payments
+  recentPayments: [
+    { id: 'pay1',  userName: 'Chiamaka Uchenna',  email: 'chiamaka.u@example.com',  amount: 49,  plan: 'Pro Monthly',      status: 'SUCCESS', method: 'Visa •••• 4242',        date: '2026-03-18T10:14:00Z' },
+    { id: 'pay2',  userName: 'Tunde Adeyemi',      email: 'tunde.adeyemi@example.com', amount: 399, plan: 'Pro Annual',        status: 'SUCCESS', method: 'Mastercard •••• 8888',  date: '2026-03-18T08:22:00Z' },
+    { id: 'pay3',  userName: 'Aoife Murphy',       email: 'aoife.murphy@example.com', amount: 49,  plan: 'Pro Monthly',      status: 'SUCCESS', method: 'Visa •••• 1234',        date: '2026-03-17T16:40:00Z' },
+    { id: 'pay4',  userName: 'Grainne Fitzgerald', email: 'grainne.fitz@example.com', amount: 49,  plan: 'Pro Monthly',      status: 'SUCCESS', method: 'Visa •••• 5566',        date: '2026-03-17T11:20:00Z' },
+    { id: 'pay5',  userName: 'Emeka Okafor',       email: 'emeka.okafor@example.com', amount: 29,  plan: 'Standard Monthly', status: 'SUCCESS', method: 'Mastercard •••• 3344',  date: '2026-03-16T09:00:00Z' },
+    { id: 'pay6',  userName: 'Roisin Gallagher',   email: 'roisin.gal@example.com',   amount: 29,  plan: 'Standard Monthly', status: 'FAILED',  method: 'Visa •••• 9900',        date: '2026-03-15T14:00:00Z' },
+    { id: 'pay7',  userName: 'Biodun Afolabi',     email: 'biodun.afo@example.com',   amount: 249, plan: 'Standard Annual',  status: 'SUCCESS', method: 'Visa •••• 7712',        date: '2026-03-15T10:30:00Z' },
+    { id: 'pay8',  userName: 'Siobhan Kelly',      email: 'siobhan.kelly@example.com',amount: 29,  plan: 'Standard Monthly', status: 'SUCCESS', method: 'Mastercard •••• 2211',  date: '2026-03-14T16:00:00Z' },
+    { id: 'pay9',  userName: 'Cormac Burke',       email: 'cormac.burke@example.com', amount: 49,  plan: 'Pro Monthly',      status: 'SUCCESS', method: 'Visa •••• 4321',        date: '2026-03-14T11:00:00Z' },
+    { id: 'pay10', userName: 'Niamh O Brien',      email: 'niamh.obrien@example.com', amount: 29,  plan: 'Standard Monthly', status: 'FAILED',  method: 'Visa •••• 0011',        date: '2026-03-13T09:00:00Z' },
+  ],
+
+  // Failed payments
+  failedPayments: [
+    { id: 'fp1', userName: 'Roisin Gallagher', email: 'roisin.gal@example.com',  amount: 29,  plan: 'Standard Monthly', failDate: '2026-03-15T14:00:00Z', retries: 1, reason: 'Insufficient funds' },
+    { id: 'fp2', userName: 'Niamh O Brien',    email: 'niamh.obrien@example.com', amount: 29,  plan: 'Standard Monthly', failDate: '2026-03-13T09:00:00Z', retries: 2, reason: 'Card expired'        },
+    { id: 'fp3', userName: 'Seamus Connolly',  email: 'seamus.con@example.com',  amount: 29,  plan: 'Standard Monthly', failDate: '2026-03-10T08:00:00Z', retries: 3, reason: 'Card declined'        },
+  ],
+
+  // Upgrades and downgrades this month
+  upgrades: [
+    { id: 'up1', userName: 'Tunde Adeyemi',    from: 'Standard Monthly', to: 'Pro Annual',       revenueGain: 370, date: '2026-03-01T10:00:00Z' },
+    { id: 'up2', userName: 'Chiamaka Uchenna', from: 'Standard Monthly', to: 'Pro Monthly',      revenueGain: 20,  date: '2026-03-05T11:00:00Z' },
+    { id: 'up3', userName: 'Aisling Flanagan', from: 'Standard Annual',  to: 'Pro Monthly',      revenueGain: 290, date: '2026-03-08T09:00:00Z' },
+  ],
+  downgrades: [
+    { id: 'dg1', userName: 'Diarmuid Healy', from: 'Standard Monthly', to: 'Free', revenueLoss: 29, date: '2026-03-12T14:00:00Z' },
+  ],
+
+  // Forecast
+  projectedMRR3Months: 5840,
+  projectedMRR6Months: 7920,
+  monthlyRunningCost: 380,
+  breakEvenSubscribers: 14,
+}
+
+export const retentionData = {
+  // Health pulse
+  activeUsersLast7Days: 89,
+  activeUsersLast30Days: 187,
+  inactiveUsers7Plus: 48,
+  inactiveUsers14Plus: 31,
+  avgDailyActiveUsers: 62,
+  retentionRate30Day: 76,
+
+  // Daily active users - last 30 days
+  dailyActiveUsers: [
+    { date: '18 Feb', dau: 54 }, { date: '19 Feb', dau: 48 },
+    { date: '20 Feb', dau: 71 }, { date: '21 Feb', dau: 68 },
+    { date: '22 Feb', dau: 42 }, { date: '23 Feb', dau: 39 },
+    { date: '24 Feb', dau: 76 }, { date: '25 Feb', dau: 81 },
+    { date: '26 Feb', dau: 74 }, { date: '27 Feb', dau: 88 },
+    { date: '28 Feb', dau: 69 }, { date: '01 Mar', dau: 47 },
+    { date: '02 Mar', dau: 41 }, { date: '03 Mar', dau: 79 },
+    { date: '04 Mar', dau: 84 }, { date: '05 Mar', dau: 77 },
+    { date: '06 Mar', dau: 91 }, { date: '07 Mar', dau: 86 },
+    { date: '08 Mar', dau: 52 }, { date: '09 Mar', dau: 44 },
+    { date: '10 Mar', dau: 83 }, { date: '11 Mar', dau: 79 },
+    { date: '12 Mar', dau: 88 }, { date: '13 Mar', dau: 94 },
+    { date: '14 Mar', dau: 87 }, { date: '15 Mar', dau: 51 },
+    { date: '16 Mar', dau: 46 }, { date: '17 Mar', dau: 82 },
+    { date: '18 Mar', dau: 78 }, { date: '19 Mar', dau: 62 },
+  ],
+
+  // At risk users
+  atRiskUsers: [
+    { id: 'ar1',  name: 'Diarmuid Healy',    email: 'diarmuid.healy@example.com', plan: 'Standard Monthly', lastActive: '2026-03-05T10:00:00Z', daysInactive: 14, streak: 0, streakBroken: true, riskLevel: 'Critical', autoEmailSent: true, trialDaysLeft: null },
+    { id: 'ar2',  name: 'Maeve Quinn',       email: 'maeve.quinn@example.com',    plan: 'Trial',            lastActive: '2026-03-07T14:00:00Z', daysInactive: 12, streak: 0, streakBroken: true, riskLevel: 'Critical', autoEmailSent: true, trialDaysLeft: 2 },
+    { id: 'ar3',  name: 'Tobenna Ezechukwu', email: 'tobenna.eze@example.com',    plan: 'Standard Monthly', lastActive: '2026-03-08T09:00:00Z', daysInactive: 11, streak: 0, streakBroken: true, riskLevel: 'High', autoEmailSent: true, trialDaysLeft: null },
+    { id: 'ar4',  name: 'Ifeoma Obi',        email: 'ifeoma.obi@example.com',     plan: 'Trial',            lastActive: '2026-03-09T16:00:00Z', daysInactive: 10, streak: 2, streakBroken: false, riskLevel: 'High', autoEmailSent: false, trialDaysLeft: 1 },
+    { id: 'ar5',  name: 'Clodagh Byrne',     email: 'clodagh.byrne@example.com',  plan: 'Standard Monthly', lastActive: '2026-03-10T11:00:00Z', daysInactive: 9, streak: 0, streakBroken: true, riskLevel: 'High', autoEmailSent: true, trialDaysLeft: null },
+    { id: 'ar6',  name: 'Babatunde Okonkwo', email: 'babatunde.ok@example.com',   plan: 'Standard Monthly', lastActive: '2026-03-11T08:00:00Z', daysInactive: 8, streak: 0, streakBroken: true, riskLevel: 'Medium', autoEmailSent: false, trialDaysLeft: null },
+    { id: 'ar7',  name: 'Aisling Flanagan',  email: 'aisling.flan@example.com',   plan: 'Pro Monthly',      lastActive: '2026-03-12T15:00:00Z', daysInactive: 7, streak: 4, streakBroken: false, riskLevel: 'Medium', autoEmailSent: false, trialDaysLeft: null },
+    { id: 'ar8',  name: 'Chinonso Obiora',   email: 'chinonso.ob@example.com',    plan: 'Trial',            lastActive: '2026-03-12T10:00:00Z', daysInactive: 7, streak: 0, streakBroken: true, riskLevel: 'Medium', autoEmailSent: false, trialDaysLeft: 3 },
+    { id: 'ar9',  name: 'Rotimi Adeyemi',    email: 'rotimi.ade@example.com',     plan: 'Pro Monthly',      lastActive: '2026-03-13T09:00:00Z', daysInactive: 6, streak: 1, streakBroken: false, riskLevel: 'Low', autoEmailSent: false, trialDaysLeft: null },
+    { id: 'ar10', name: 'Ngozi Okonkwo',     email: 'ngozi.okonkwo@example.com',  plan: 'Standard Monthly', lastActive: '2026-03-13T14:00:00Z', daysInactive: 6, streak: 0, streakBroken: true, riskLevel: 'Low', autoEmailSent: false, trialDaysLeft: null },
+  ],
+
+  // Churn prediction signals
+  signals: [
+    {
+      id: 'sig1',
+      type: 'streak_broken',
+      title: 'Broken Streaks This Week',
+      detail: 'These users broke their study streak in the last 7 days - high correlation with churn within 14 days',
+      count: 14,
+      severity: 'danger',
+      campaignLabel: 'Send streak recovery email',
+    },
+    {
+      id: 'sig2',
+      type: 'score_drop',
+      title: 'Quiz Score Drop 20%+',
+      detail: 'Users whose average quiz score dropped significantly vs last month - may be disengaging or struggling',
+      count: 8,
+      severity: 'warning',
+      campaignLabel: 'Send encouragement + tips email',
+    },
+    {
+      id: 'sig3',
+      type: 'trial_no_quiz',
+      title: 'Trials Expiring - Never Took a Quiz',
+      detail: '3 trial users expire in under 3 days and have never attempted a single MCQ - lowest conversion rate segment',
+      count: 3,
+      severity: 'danger',
+      campaignLabel: 'Send trial urgency email',
+    },
+    {
+      id: 'sig4',
+      type: 'no_lesson',
+      title: 'Standard Users - No Lesson in 14 Days',
+      detail: 'Paying Standard subscribers who have not opened a lesson in 2 weeks - at real risk of cancellation',
+      count: 11,
+      severity: 'warning',
+      campaignLabel: 'Send re-engagement email',
+    },
+  ],
+
+  // Campaign results
+  campaigns: [
+    {
+      id: 'camp1',
+      name: 'Streak Recovery - March Week 2',
+      sentAt: '2026-03-11T09:00:00Z',
+      emailsSent: 18,
+      openRate: 64,
+      clickRate: 31,
+      usersReturned: 7,
+      returnRate: 39,
+    },
+    {
+      id: 'camp2',
+      name: 'Trial Expiry Urgency - March',
+      sentAt: '2026-03-09T10:00:00Z',
+      emailsSent: 6,
+      openRate: 83,
+      clickRate: 50,
+      usersReturned: 3,
+      returnRate: 50,
+    },
+    {
+      id: 'camp3',
+      name: 'Win-Back - Inactive 14 Days',
+      sentAt: '2026-03-05T09:00:00Z',
+      emailsSent: 24,
+      openRate: 48,
+      clickRate: 22,
+      usersReturned: 5,
+      returnRate: 21,
+    },
+  ],
+}
+
 export const users = [
   { id: '1',  name: 'Aoife Murphy',      email: 'aoife.murphy@example.com',     plan: 'Pro',      status: 'Active',   joinDate: '2025-09-15', lastActive: '2026-03-16', streak: 14, revenue: 392 },
   { id: '2',  name: 'Ciarán Walsh',      email: 'ciaran.walsh@example.com',     plan: 'Standard', status: 'Active',   joinDate: '2025-10-02', lastActive: '2026-03-15', streak: 7,  revenue: 145 },

@@ -1,0 +1,404 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pageHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.exportBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+.exportBtn:hover {
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+}
+
+.pulseGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+.pulseCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: border-color 0.2s;
+}
+.pulseCard:hover {
+  border-color: var(--border-focus);
+}
+.pulseTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pulseLabel {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.pulseIconWrap {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.pulseValue {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+}
+.pulseSub {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.cardTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.cardSub {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+.chartBadge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--blue-muted);
+  border: 1px solid var(--blue-primary);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--blue-bright);
+  flex-shrink: 0;
+}
+
+.filterPills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.filterBtn {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-default);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+.filterBtnActive {
+  background: var(--blue-muted);
+  border-color: var(--blue-primary);
+  color: var(--blue-bright);
+}
+
+.tableWrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 680px;
+}
+.th {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-weight: 500;
+  padding: 0 0 12px 0;
+  text-align: left;
+  border-bottom: 1px solid var(--border-default);
+}
+.tr {
+  transition: background 0.15s;
+}
+.tr:hover {
+  background: var(--bg-elevated);
+}
+.tr:not(:last-child) td {
+  border-bottom: 1px solid var(--border-default);
+}
+.td {
+  padding: 12px 8px 12px 0;
+  vertical-align: middle;
+}
+.emptyRow {
+  padding: 32px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+.userCell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.userAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+.userName {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+.userEmail {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+.numText {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.rowActions {
+  display: flex;
+  gap: 6px;
+}
+.emailBtn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+  white-space: nowrap;
+}
+.emailBtn:hover {
+  background: var(--blue-muted);
+  border-color: var(--blue-primary);
+  color: var(--blue-bright);
+}
+.emailBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.signalsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+.signalCard {
+  border-left: 3px solid;
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.signalTop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.signalTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  flex: 1;
+}
+.signalCount {
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 20px;
+  padding: 2px 8px;
+  flex-shrink: 0;
+}
+.signalDetail {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+.campaignBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid;
+  border-radius: var(--radius-sm);
+  padding: 7px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+  width: fit-content;
+}
+.campaignBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.campaignList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.campaignRow {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.campaignName {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.campaignDate {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 3px;
+}
+.campaignStats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.campaignStat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.campaignStatLabel {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.campaignStatValue {
+  font-size: 18px;
+  font-weight: 700;
+}
+.campaignBar {
+  height: 4px;
+  background: var(--bg-hover);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.campaignBarFill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.5s ease;
+}
+
+.spinning {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1200px) {
+  .pulseGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  .pulseGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .signalsGrid {
+    grid-template-columns: 1fr;
+  }
+  .campaignStats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .pulseGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .filterPills {
+    gap: 4px;
+  }
+  .filterBtn {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+}
