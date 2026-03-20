@@ -1,0 +1,474 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 0;
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 4px;
+  max-width: 480px;
+}
+
+.exportBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-hover);
+  color: var(--text-primary);
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.exportBtn:hover {
+  background: var(--bg-active);
+  border-color: var(--border-active);
+}
+
+/* ─────────────────────────────────────────────────────────────────────── */
+/* PULSE GRID */
+/* ─────────────────────────────────────────────────────────────────────── */
+
+.pulseGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.pulseCard {
+  background: linear-gradient(
+    135deg,
+    var(--bg-base) 0%,
+    var(--bg-elevated) 100%
+  );
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.2s ease;
+}
+
+.pulseCard:hover {
+  border-color: var(--border-active);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pulseTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.pulseLabel {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pulseIconWrap {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pulseValue {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.pulseSub {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* ─────────────────────────────────────────────────────────────────────── */
+/* CARD WRAPPER */
+/* ─────────────────────────────────────────────────────────────────────── */
+
+.card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.cardSub {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* ─────────────────────────────────────────────────────────────────────── */
+/* FUNNEL VISUALIZATION */
+/* ─────────────────────────────────────────────────────────────────────── */
+
+.funnelViz {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.funnelStageWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.funnelStageRow {
+  display: grid;
+  grid-template-columns: 140px 1fr 80px;
+  gap: 12px;
+  align-items: center;
+}
+
+.funnelLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.funnelStageName {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.funnelCount {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.funnelBarTrack {
+  position: relative;
+  height: 24px;
+  background: var(--bg-base);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.funnelBar {
+  height: 100%;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.worstDropLabel {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-inverse);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
+.funnelPercent {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: right;
+}
+
+.dropOffRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-left: 140px;
+  padding-top: 4px;
+}
+
+/* ─────────────────────────────────────────────────────────────────────── */
+/* TABLE */
+/* ─────────────────────────────────────────────────────────────────────── */
+
+.filterPills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.filterBtn {
+  padding: 6px 12px;
+  border: 1px solid var(--border-light);
+  background: transparent;
+  color: var(--text-secondary);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filterBtn:hover {
+  border-color: var(--border-active);
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.filterBtnActive {
+  background: var(--blue-bright);
+  border-color: var(--blue-bright);
+  color: white;
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.th {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid var(--border-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tr {
+  border-bottom: 1px solid var(--border-light);
+  transition: background 0.2s ease;
+}
+
+.tr:hover {
+  background: var(--bg-hover);
+}
+
+.tr:last-child {
+  border-bottom: none;
+}
+
+.td {
+  padding: 12px;
+  font-size: 13px;
+}
+
+.userCell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.userAvatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+.userName {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.userEmail {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.nudgeBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-hover);
+  color: var(--text-primary);
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.nudgeBtn:hover:not(:disabled) {
+  background: var(--bg-active);
+  border-color: var(--border-active);
+}
+
+.nudgeBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ─────────────────────────────────────────────────────────────────────── */
+/* NUDGE CAMPAIGNS */
+/* ─────────────────────────────────────────────────────────────────────── */
+
+.nudgeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.nudgeCard {
+  border: 1px solid var(--border-light);
+  border-left: 3px solid;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.2s ease;
+}
+
+.nudgeCard:hover {
+  border-color: var(--border-active);
+}
+
+.nudgeTop {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nudgeStage {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.nudgeCount {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.nudgeCampaignBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border: 1px solid;
+  background: transparent;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.nudgeCampaignBtn:hover:not(:disabled) {
+  background: var(--bg-hover);
+}
+
+.nudgeCampaignBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.spinning {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────────── */
+/* RESPONSIVE */
+/* ─────────────────────────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .pageHeader {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .exportBtn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .pulseGrid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .filterPills {
+    justify-content: flex-start;
+  }
+
+  .funnelStageRow {
+    grid-template-columns: 100px 1fr 60px;
+  }
+
+  .dropOffRow {
+    padding-left: 100px;
+  }
+
+  .nudgeGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -813,5 +813,185 @@ export const contentStats = {
   hardestMCQ: 'Specific intent refers to:',
 }
 
+export const funnelData = {
+  totalSignupsThisMonth: 47,
+  trialToPaidRate: 34,
+  signupToOnboardedRate: 71,
+  onboardedToFirstLessonRate: 82,
+  avgDaysToFirstPayment: 6.4,
+  revenueFromConversionsThisMonth: 1247,
+
+  stages: [
+    { stage: 'Registered',           count: 247, percent: 100, dropOff: 0,   color: '#3B82F6' },
+    { stage: 'Email Verified',        count: 198, percent: 80,  dropOff: 49,  color: '#8B5CF6' },
+    { stage: 'Onboarding Complete',   count: 141, percent: 71,  dropOff: 57,  color: '#06B6D4' },
+    { stage: 'Started First Lesson',  count: 116, percent: 82,  dropOff: 25,  color: '#10B981' },
+    { stage: 'Trial / Subscribed',    count: 89,  percent: 77,  dropOff: 27,  color: '#F59E0B' },
+    { stage: 'Converted to Paid',     count: 187, percent: 34,  dropOff: 0,   color: '#EF4444' },
+  ],
+
+  stuckUsers: [
+    { id: 'su1', name: 'Liam Gallagher',   email: 'liam.gal@example.com',   stage: 'Email Verified',       daysSinceSignup: 14, plan: 'Free' },
+    { id: 'su2', name: 'Aoife Brennan',    email: 'aoife.bren@example.com', stage: 'Email Verified',       daysSinceSignup: 9,  plan: 'Free' },
+    { id: 'su3', name: 'Emeka Chukwu',     email: 'emeka.chu@example.com',  stage: 'Onboarding Complete',  daysSinceSignup: 7,  plan: 'Free' },
+    { id: 'su4', name: 'Sinead Moriarty',  email: 'sinead.mo@example.com',  stage: 'Onboarding Complete',  daysSinceSignup: 11, plan: 'Free' },
+    { id: 'su5', name: 'Tola Adewale',     email: 'tola.ade@example.com',   stage: 'Started First Lesson', daysSinceSignup: 5,  plan: 'Trial' },
+    { id: 'su6', name: 'Ciara Dunne',      email: 'ciara.dun@example.com',  stage: 'Started First Lesson', daysSinceSignup: 8,  plan: 'Trial' },
+    { id: 'su7', name: 'Femi Adeyinka',    email: 'femi.ade@example.com',   stage: 'Trial / Subscribed',   daysSinceSignup: 6,  plan: 'Trial' },
+    { id: 'su8', name: 'Grainne Lawlor',   email: 'grainne.law@example.com', stage: 'Trial / Subscribed',  daysSinceSignup: 4,  plan: 'Trial' },
+  ],
+
+  nudgeCampaigns: [
+    { id: 'nc1', stage: 'Email Verified',       label: 'Send verification reminder',    count: 49,  severity: 'warning' },
+    { id: 'nc2', stage: 'Onboarding Complete',  label: 'Send first lesson nudge',        count: 57,  severity: 'info'    },
+    { id: 'nc3', stage: 'Started First Lesson', label: 'Send trial activation offer',   count: 27,  severity: 'warning' },
+    { id: 'nc4', stage: 'Trial / Subscribed',   label: 'Send conversion urgency email', count: 22,  severity: 'danger'  },
+  ],
+}
+
+export const examCalendarData = {
+  upcomingExams: [
+    {
+      id: 'ex1',
+      name: 'FE-1 March 2026',
+      date: '2026-03-27T09:00:00Z',
+      studentsTargeting: 34,
+      campaignActive: true,
+      color: '#3B82F6',
+    },
+    {
+      id: 'ex2',
+      name: 'FE-1 October 2026',
+      date: '2026-10-16T09:00:00Z',
+      studentsTargeting: 89,
+      campaignActive: true,
+      color: '#10B981',
+    },
+    {
+      id: 'ex3',
+      name: 'FE-1 March 2027',
+      date: '2027-03-26T09:00:00Z',
+      studentsTargeting: 12,
+      campaignActive: false,
+      color: '#8B5CF6',
+    },
+  ],
+
+  cohortStudents: [
+    { id: 'cs1',  name: 'Tunde Adeyemi',    email: 'tunde.adeyemi@example.com', examId: 'ex2', plan: 'Pro',      progressPercent: 62, streak: 14, daysUntilExam: 211 },
+    { id: 'cs2',  name: 'Aoife Murphy',     email: 'aoife.murphy@example.com',  examId: 'ex2', plan: 'Pro',      progressPercent: 48, streak: 7,  daysUntilExam: 211 },
+    { id: 'cs3',  name: 'Chiamaka Uchenna', email: 'chiamaka.u@example.com',    examId: 'ex2', plan: 'Pro',      progressPercent: 71, streak: 22, daysUntilExam: 211 },
+    { id: 'cs4',  name: 'Niamh O Brien',    email: 'niamh.obrien@example.com',  examId: 'ex2', plan: 'Standard', progressPercent: 34, streak: 0,  daysUntilExam: 211 },
+    { id: 'cs5',  name: 'Emeka Okafor',     email: 'emeka.okafor@example.com',  examId: 'ex2', plan: 'Standard', progressPercent: 29, streak: 3,  daysUntilExam: 211 },
+    { id: 'cs6',  name: 'Grainne Fitzgerald',email: 'grainne.fitz@example.com', examId: 'ex1', plan: 'Pro',      progressPercent: 81, streak: 30, daysUntilExam: 8   },
+    { id: 'cs7',  name: 'Cormac Burke',     email: 'cormac.burke@example.com',  examId: 'ex1', plan: 'Pro',      progressPercent: 76, streak: 18, daysUntilExam: 8   },
+    { id: 'cs8',  name: 'Sorcha Murphy',    email: 'sorcha.mu@example.com',     examId: 'ex1', plan: 'Standard', progressPercent: 54, streak: 9,  daysUntilExam: 8   },
+  ],
+
+  campaignTimeline: [
+    { trigger: '90 days before', label: 'Study Plan Email',     description: 'Personalised 90-day study plan sent to each student targeting this sitting', fired: true,  color: '#3B82F6' },
+    { trigger: '60 days before', label: 'Progress Check-In',    description: 'Email showing student how far they are and what subjects need more attention', fired: true,  color: '#8B5CF6' },
+    { trigger: '30 days before', label: 'Intensive Push Email', description: 'High-urgency email encouraging daily study sessions and streak maintenance', fired: false, color: '#F59E0B' },
+    { trigger: '14 days before', label: 'MCQ Blitz Campaign',   description: 'Targeted push to complete all MCQs in weak subjects before the exam', fired: false, color: '#EF4444' },
+    { trigger: '7 days before',  label: 'Final Countdown',      description: 'Countdown email with last-minute tips and revision checklist', fired: false, color: '#EC4899' },
+    { trigger: 'Exam Day',       label: 'Good Luck Email',      description: 'Motivational exam day email sent at 7am on the morning of the sitting', fired: false, color: '#10B981' },
+  ],
+}
+
+export const essayMonitorData = {
+  stats: {
+    totalSubmissions: 487,
+    gradedByAI: 471,
+    flaggedForReview: 14,
+    avgScore: 62,
+    avgGradingTimeSeconds: 18,
+    passRate: 68,
+    highScores: 43,
+    lowScores: 89,
+  },
+  gradeDistribution: [
+    { band: 'A (80-100)', count: 43,  color: '#10B981' },
+    { band: 'B (65-79)',  count: 118, color: '#3B82F6' },
+    { band: 'C (50-64)',  count: 187, color: '#F59E0B' },
+    { band: 'D (35-49)',  count: 89,  color: '#EF4444' },
+    { band: 'F (0-34)',   count: 50,  color: '#6B7280' },
+  ],
+  recentEssays: [
+    { id: 'es1',  userName: 'Chiamaka Uchenna',  email: 'chiamaka.u@example.com',  subject: 'Criminal Law',      question: 'Discuss the mens rea requirements for murder in Irish law.', score: 74, band: 'B', wordCount: 842, gradedAt: '2026-03-18T14:22:00Z', flagged: false, aiScore: 74, timeTaken: 16 },
+    { id: 'es2',  userName: 'Tunde Adeyemi',      email: 'tunde.adeyemi@example.com', subject: 'Contract Law',   question: 'Explain the postal rule and its exceptions.', score: 81, band: 'A', wordCount: 920, gradedAt: '2026-03-18T13:10:00Z', flagged: false, aiScore: 81, timeTaken: 14 },
+    { id: 'es3',  userName: 'Niamh O Brien',      email: 'niamh.obrien@example.com', subject: 'Tort Law',        question: 'Outline the neighbour principle from Donoghue v Stevenson.', score: 48, band: 'D', wordCount: 410, gradedAt: '2026-03-18T11:44:00Z', flagged: true,  aiScore: 48, timeTaken: 22 },
+    { id: 'es4',  userName: 'Cormac Burke',       email: 'cormac.burke@example.com', subject: 'EU Law',          question: 'Explain the doctrine of direct effect established in Van Gend en Loos.', score: 67, band: 'C', wordCount: 788, gradedAt: '2026-03-17T16:30:00Z', flagged: false, aiScore: 67, timeTaken: 19 },
+    { id: 'es5',  userName: 'Aoife Murphy',       email: 'aoife.murphy@example.com', subject: 'Constitutional Law', question: 'Analyse the right to fair procedures under Article 40.', score: 88, band: 'A', wordCount: 1040, gradedAt: '2026-03-17T15:00:00Z', flagged: false, aiScore: 88, timeTaken: 12 },
+    { id: 'es6',  userName: 'Diarmuid Healy',     email: 'diarmuid.healy@example.com', subject: 'Criminal Law', question: 'Discuss the defence of intoxication in Irish criminal law.', score: 31, band: 'F', wordCount: 280, gradedAt: '2026-03-17T10:22:00Z', flagged: true,  aiScore: 31, timeTaken: 28 },
+    { id: 'es7',  userName: 'Grainne Fitzgerald', email: 'grainne.fitz@example.com', subject: 'Equity',          question: 'Explain the maxims of equity and their application.', score: 71, band: 'B', wordCount: 876, gradedAt: '2026-03-16T14:10:00Z', flagged: false, aiScore: 71, timeTaken: 15 },
+    { id: 'es8',  userName: 'Emeka Okafor',       email: 'emeka.okafor@example.com', subject: 'Property Law',    question: 'Discuss adverse possession under Irish land law.', score: 55, band: 'C', wordCount: 620, gradedAt: '2026-03-16T11:30:00Z', flagged: false, aiScore: 55, timeTaken: 20 },
+  ],
+}
+
+export const contentPerformanceData = {
+  stats: {
+    avgCompletionRate: 78,
+    avgMCQPassRate: 71,
+    totalVideoWatchHours: 1847,
+    mostEngagedSubject: 'Criminal Law',
+    leastEngagedSubject: 'Company Law',
+    highDropOffLesson: 'Strict Liability Offences',
+    avgTimePerLesson: 24,
+  },
+  subjectEngagement: [
+    { subject: 'Criminal Law',      color: '#E6027D', completionRate: 84, mcqPassRate: 76, avgTimeMin: 28, totalStudents: 187, dropOffRate: 12 },
+    { subject: 'Contract Law',      color: '#FDC300', completionRate: 79, mcqPassRate: 72, avgTimeMin: 24, totalStudents: 162, dropOffRate: 16 },
+    { subject: 'Tort Law',          color: '#B38513', completionRate: 74, mcqPassRate: 68, avgTimeMin: 22, totalStudents: 148, dropOffRate: 21 },
+    { subject: 'Constitutional Law',color: '#961C81', completionRate: 71, mcqPassRate: 64, avgTimeMin: 20, totalStudents: 134, dropOffRate: 24 },
+    { subject: 'EU Law',            color: '#009DDD', completionRate: 68, mcqPassRate: 61, avgTimeMin: 18, totalStudents: 118, dropOffRate: 28 },
+    { subject: 'Equity',            color: '#63C0F2', completionRate: 66, mcqPassRate: 59, avgTimeMin: 17, totalStudents: 104, dropOffRate: 31 },
+    { subject: 'Property Law',      color: '#5F3EB5', completionRate: 61, mcqPassRate: 55, avgTimeMin: 16, totalStudents: 89,  dropOffRate: 34 },
+    { subject: 'Company Law',       color: '#8659FB', completionRate: 28, mcqPassRate: 42, avgTimeMin: 8,  totalStudents: 22,  dropOffRate: 67 },
+  ],
+  topLessons: [
+    { title: 'Murder and Manslaughter',          subject: 'Criminal Law',   views: 201, completionRate: 90, avgWatchPercent: 88 },
+    { title: 'Introduction to Criminal Liability',subject: 'Criminal Law',  views: 187, completionRate: 88, avgWatchPercent: 84 },
+    { title: 'Offer and Invitation to Treat',    subject: 'Contract Law',   views: 178, completionRate: 86, avgWatchPercent: 82 },
+    { title: 'Assault and Battery',              subject: 'Criminal Law',   views: 163, completionRate: 84, avgWatchPercent: 80 },
+    { title: 'Acceptance and Communication',     subject: 'Contract Law',   views: 165, completionRate: 81, avgWatchPercent: 76 },
+  ],
+  dropOffLessons: [
+    { title: 'Strict Liability Offences',        subject: 'Criminal Law',   dropOffRate: 72, avgWatchPercent: 28, views: 0   },
+    { title: 'Defamation',                       subject: 'Tort Law',       dropOffRate: 64, avgWatchPercent: 36, views: 98  },
+    { title: 'Non-Fatal Offences',               subject: 'Criminal Law',   dropOffRate: 58, avgWatchPercent: 42, views: 154 },
+    { title: 'Vitiating Factors',                subject: 'Contract Law',   dropOffRate: 52, avgWatchPercent: 48, views: 121 },
+  ],
+}
+
+export const settingsData = {
+  platform: {
+    platformName: 'FE-1 Made Simple',
+    supportEmail: 'support@fe1madesimple.ie',
+    adminEmail: 'admin@fe1madesimple.ie',
+    timezone: 'Europe/Dublin',
+    maintenanceMode: false,
+  },
+  features: {
+    aiEssayGrading: true,
+    aiPredictor: true,
+    streakAlerts: true,
+    podcastRecommendations: true,
+    simulationExams: true,
+    trialEnabled: true,
+    trialDurationDays: 7,
+  },
+  stripe: {
+    webhookEndpoint: 'https://api.fe1madesimple.ie/webhooks/stripe',
+    standardMonthlyPriceId: 'price_standard_monthly',
+    standardAnnualPriceId: 'price_standard_annual',
+    proMonthlyPriceId: 'price_pro_monthly',
+    proAnnualPriceId: 'price_pro_annual',
+  },
+  admins: [
+    { id: 'adm1', name: 'Super Admin', email: 'admin@fe1madesimple.ie', role: 'Super Admin', lastLogin: '2026-03-19T09:00:00Z' },
+    { id: 'adm2', name: 'Viktor Dev',  email: 'viktor@fe1madesimple.ie', role: 'Developer',  lastLogin: '2026-03-18T14:00:00Z' },
+  ],
+}
+
 
 

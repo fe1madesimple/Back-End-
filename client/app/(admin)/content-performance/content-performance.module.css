@@ -1,0 +1,35 @@
+.page { display: flex; flex-direction: column; gap: 20px; }
+.pageHeader { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.title { font-size: 24px; font-weight: 700; color: var(--text-primary); }
+.subtitle { font-size: 14px; color: var(--text-secondary); margin-top: 4px; }
+.exportBtn { display: flex; align-items: center; gap: 6px; background: var(--bg-card); border: 1px solid var(--border-default); border-radius: var(--radius-sm); padding: 8px 14px; font-size: 13px; color: var(--text-secondary); cursor: pointer; font-family: inherit; }
+.pulseGrid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
+.pulseCard { background: var(--bg-card); border: 1px solid var(--border-default); border-radius: var(--radius-lg); padding: 18px; display: flex; flex-direction: column; gap: 6px; }
+.pulseTop { display: flex; align-items: center; justify-content: space-between; }
+.pulseLabel { font-size: 11px; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.pulseIconWrap { width: 28px; height: 28px; border-radius: 7px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.pulseValue { font-weight: 700; line-height: 1.2; }
+.card { background: var(--bg-card); border: 1px solid var(--border-default); border-radius: var(--radius-lg); padding: 24px; }
+.cardTitle { font-size: 15px; font-weight: 600; color: var(--text-primary); }
+.twoCol { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.tableWrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.table { width: 100%; border-collapse: collapse; min-width: 580px; }
+.th { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.07em; font-weight: 500; padding: 0 0 12px 0; text-align: left; border-bottom: 1px solid var(--border-default); }
+.tr { transition: background 0.15s; }
+.tr:hover { background: var(--bg-elevated); }
+.tr:not(:last-child) td { border-bottom: 1px solid var(--border-default); }
+.td { padding: 12px 8px 12px 0; vertical-align: middle; }
+.numText { font-size: 13px; color: var(--text-secondary); }
+.rateWrap { display: flex; flex-direction: column; gap: 4px; min-width: 80px; }
+.rateBar { height: 4px; background: var(--bg-hover); border-radius: 2px; overflow: hidden; }
+.rateFill { height: 100%; border-radius: 2px; }
+.lessonList { display: flex; flex-direction: column; gap: 2px; }
+.lessonRow { display: flex; align-items: center; gap: 12px; padding: 10px; border-radius: var(--radius-sm); transition: background 0.15s; }
+.lessonRow:hover { background: var(--bg-elevated); }
+.lessonRank { width: 20px; font-size: 12px; font-weight: 700; text-align: center; flex-shrink: 0; }
+.lessonInfo { flex: 1; min-width: 0; }
+.lessonTitle { font-size: 13px; font-weight: 500; color: var(--text-primary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.lessonMeta { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+@media (max-width: 1200px) { .pulseGrid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 900px) { .twoCol { grid-template-columns: 1fr; } .pulseGrid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .pulseGrid { grid-template-columns: 1fr 1fr; } }

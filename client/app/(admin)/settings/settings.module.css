@@ -1,0 +1,48 @@
+.page { display: flex; flex-direction: column; gap: 20px; }
+.pageHeader { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.title { font-size: 24px; font-weight: 700; color: var(--text-primary); }
+.subtitle { font-size: 14px; color: var(--text-secondary); margin-top: 4px; }
+.card { background: var(--bg-card); border: 1px solid var(--border-default); border-radius: var(--radius-lg); padding: 24px; display: flex; flex-direction: column; gap: 20px; }
+.sectionHeader { display: flex; align-items: center; gap: 14px; }
+.sectionIconWrap { width: 38px; height: 38px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.sectionTitle { font-size: 15px; font-weight: 600; color: var(--text-primary); }
+.sectionSub { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+.fieldsGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.fieldWrap { display: flex; flex-direction: column; gap: 6px; }
+.fieldLabel { font-size: 11px; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.fieldInput { background: var(--bg-elevated); border: 1px solid var(--border-default); border-radius: var(--radius-sm); padding: 10px 14px; font-size: 14px; color: var(--text-primary); outline: none; transition: border-color 0.2s; font-family: inherit; }
+.fieldInput:focus { border-color: var(--border-focus); }
+.fieldInput::placeholder { color: var(--text-muted); }
+.toggleRow { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px; background: var(--bg-elevated); border-radius: var(--radius-sm); border: 1px solid var(--border-default); }
+.toggleLabel { font-size: 14px; font-weight: 500; color: var(--text-primary); }
+.toggleSub { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+.toggle { width: 40px; height: 22px; border-radius: 11px; background: var(--bg-hover); border: 1px solid var(--border-default); cursor: pointer; position: relative; transition: background 0.2s; flex-shrink: 0; }
+.toggle::after { content: ''; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: 50%; background: var(--text-muted); transition: transform 0.2s, background 0.2s; }
+.toggleOn { background: var(--blue-primary); border-color: var(--blue-primary); }
+.toggleOn::after { transform: translateX(18px); background: white; }
+.warningBox { background: var(--red-bg); border: 1px solid var(--red); border-radius: 8px; padding: 12px 16px; font-size: 13px; color: var(--red); font-weight: 500; }
+.saveRow { display: flex; justify-content: flex-end; padding-top: 4px; border-top: 1px solid var(--border-default); }
+.saveBtn { display: flex; align-items: center; gap: 6px; background: var(--blue-primary); color: white; border: none; border-radius: var(--radius-sm); padding: 10px 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: background 0.2s; font-family: inherit; }
+.saveBtn:hover { background: var(--blue-bright); }
+.saveBtn:disabled { opacity: 0.6; cursor: not-allowed; }
+.featuresGrid { display: flex; flex-direction: column; gap: 2px; }
+.featureRow { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 14px; border-radius: var(--radius-sm); transition: background 0.15s; }
+.featureRow:hover { background: var(--bg-elevated); }
+.featureInfo { flex: 1; }
+.featureName { font-size: 14px; font-weight: 500; color: var(--text-primary); }
+.featureSub { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+.adminList { display: flex; flex-direction: column; gap: 8px; }
+.adminRow { display: flex; align-items: center; gap: 14px; padding: 12px 16px; background: var(--bg-elevated); border: 1px solid var(--border-default); border-radius: var(--radius-sm); flex-wrap: wrap; }
+.adminAvatar { width: 36px; height: 36px; border-radius: 50%; background: var(--blue-primary); display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; color: white; flex-shrink: 0; }
+.adminInfo { flex: 1; min-width: 120px; }
+.adminName { font-size: 14px; font-weight: 500; color: var(--text-primary); }
+.adminEmail { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+.adminRole { font-size: 12px; font-weight: 600; background: var(--blue-muted); border: 1px solid var(--blue-primary); color: var(--blue-bright); border-radius: 20px; padding: 3px 10px; white-space: nowrap; }
+.adminLastLogin { font-size: 11px; color: var(--text-muted); white-space: nowrap; }
+.removeBtn { width: 30px; height: 30px; border-radius: 6px; background: transparent; border: 1px solid var(--border-default); color: var(--text-muted); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.12s; margin-left: auto; }
+.removeBtn:hover { background: var(--red-bg); border-color: var(--red); color: var(--red); }
+.addAdminBtn { display: flex; align-items: center; gap: 6px; background: var(--bg-elevated); border: 1px solid var(--border-focus); border-radius: var(--radius-sm); padding: 7px 14px; font-size: 13px; font-weight: 500; color: var(--blue-bright); cursor: pointer; font-family: inherit; flex-shrink: 0; }
+.addAdminBtn:hover { background: var(--blue-muted); }
+.spinning { animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (max-width: 768px) { .fieldsGrid { grid-template-columns: 1fr; } .adminRow { flex-wrap: wrap; } }
