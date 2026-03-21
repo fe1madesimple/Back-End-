@@ -238,6 +238,90 @@ export const retentionData = {
   ],
 }
 
+export const podcastFolders = [
+  { id: 'f1', name: 'Criminal Law', color: '#E6027D', podcastCount: 29, createdAt: '2026-03-01T00:00:00Z' },
+  { id: 'f2', name: 'Contract Law', color: '#FDC300', podcastCount: 25, createdAt: '2026-03-01T00:00:00Z' },
+  { id: 'f3', name: 'Tort Law', color: '#B38513', podcastCount: 33, createdAt: '2026-03-01T00:00:00Z' },
+  { id: 'f4', name: 'Constitutional Law', color: '#961C81', podcastCount: 37, createdAt: '2026-03-01T00:00:00Z' },
+  { id: 'f5', name: 'EU Law', color: '#009DDD', podcastCount: 43, createdAt: '2026-03-01T00:00:00Z' },
+  { id: 'f6', name: 'Equity', color: '#63C0F2', podcastCount: 17, createdAt: '2026-03-01T00:00:00Z' },
+  { id: 'f7', name: 'Property Law', color: '#5F3EB5', podcastCount: 37, createdAt: '2026-03-01T00:00:00Z' },
+  { id: 'f8', name: 'Company Law', color: '#8659FB', podcastCount: 30, createdAt: '2026-03-01T00:00:00Z' },
+  { id: 'f9', name: 'Bonus Episodes', color: '#10B981', podcastCount: 18, createdAt: '2026-03-01T00:00:00Z' },
+]
+
+export const adminPodcasts = [
+  {
+    id: 'p1', title: 'Characteristics and Indicia of a Crime', subjectName: 'Criminal Law', subjectColor: '#E6027D',
+    duration: 397, moduleNumber: 1, lessonNumber: 1, part: 1, isBonus: false, isPublished: true,
+    audioUrl: 'https://res.cloudinary.com/dscjsf8ln/video/upload/v1774034464/fe1/podcasts/criminal-law/Module_1_Lesson_1_1.m4a',
+    thumbnail: 'https://res.cloudinary.com/db3waebh7/image/upload/v1770073930/ideogram-v3.0_Minimalist_law_podcast_cover_Irish_legal_education_theme_single_golden_scale_ico-0_ojxvyo.png',
+    notes: { concepts: ['What makes an act a crime rather than a civil wrong', 'Role of the State in prosecution', 'General indicia courts use to classify criminal obligations'], cases: ['Salomon v. A Salomon and Co Ltd [1897] - separate legal personality'] },
+    examTip: 'The distinction between civil and criminal liability is foundational - always begin a criminal law answer by confirming the act constitutes a crime before analysing the elements.',
+    plays: 847, uniqueListeners: 312, avgCompletion: 74, folderId: 'f1', order: 1, createdAt: '2026-03-01T00:00:00Z',
+  },
+  {
+    id: 'p2', title: 'Classification of Criminal Offences', subjectName: 'Criminal Law', subjectColor: '#E6027D',
+    duration: 375, moduleNumber: 1, lessonNumber: 1, part: 2, isBonus: false, isPublished: true,
+    audioUrl: 'https://res.cloudinary.com/dscjsf8ln/video/upload/v1774034471/fe1/podcasts/criminal-law/Module_1_Lesson_1_2.m4a',
+    thumbnail: 'https://res.cloudinary.com/db3waebh7/image/upload/v1770073930/ideogram-v3.0_Minimalist_law_podcast_cover_Irish_legal_education_theme_single_golden_scale_ico-0_ojxvyo.png',
+    notes: { concepts: ['Indictable vs summary offences', 'Arrestable vs non-arrestable classification', 'Impact of Criminal Law Act 1997 on arrest powers'], cases: [] },
+    examTip: 'Classification of offences matters practically - arrestable vs non-arrestable determines Garda powers of detention.',
+    plays: 634, uniqueListeners: 241, avgCompletion: 68, folderId: 'f1', order: 2, createdAt: '2026-03-01T00:00:00Z',
+  },
+  {
+    id: 'p3', title: 'Offer and Acceptance', subjectName: 'Contract Law', subjectColor: '#FDC300',
+    duration: 660, moduleNumber: 1, lessonNumber: 1, part: 1, isBonus: false, isPublished: true,
+    audioUrl: 'https://res.cloudinary.com/dscjsf8ln/video/upload/v1774034766/fe1/podcasts/contract-law/Module_1_Lesson_1_1.m4a',
+    thumbnail: 'https://res.cloudinary.com/db3waebh7/image/upload/v1770073930/ideogram-v3.0_Minimalist_law_podcast_cover_Irish_legal_education_theme_single_golden_scale_ico-0_ojxvyo.png',
+    notes: { concepts: ['Offer vs invitation to treat', 'Acceptance must be unequivocal and communicated', 'Postal rule - acceptance effective when posted', 'Counter-offer destroys original offer'], cases: ['Carlill v Carbolic Smoke Ball Co [1893] - offer to world', 'Hyde v Wrench [1840] - counter-offer destroys original offer', 'Adams v Lindsell (1818) - postal rule'] },
+    examTip: 'Always first identify whether an offer or invitation to treat was made - this determines whether acceptance is possible at all.',
+    plays: 1203, uniqueListeners: 487, avgCompletion: 82, folderId: 'f2', order: 1, createdAt: '2026-03-01T00:00:00Z',
+  },
+  {
+    id: 'p4', title: 'What is Tort Law?', subjectName: 'Tort Law', subjectColor: '#B38513',
+    duration: 288, moduleNumber: 1, lessonNumber: 1, part: 1, isBonus: false, isPublished: true,
+    audioUrl: 'https://res.cloudinary.com/dscjsf8ln/video/upload/fe1/podcasts/tort-law/Module_1_Lesson_1_1.mp3',
+    thumbnail: 'https://res.cloudinary.com/db3waebh7/image/upload/v1770073930/ideogram-v3.0_Minimalist_law_podcast_cover_Irish_legal_education_theme_single_golden_scale_ico-0_ojxvyo.png',
+    notes: { concepts: ['Tort law governs civil liability for wrongful acts', 'Relationship between tort, contract and criminal law', 'General structure of tortious liability'], cases: ['Donoghue v Stevenson [1932] - foundational neighbour principle'] },
+    examTip: 'Always begin a tort answer by identifying the tort, establishing the elements, then applying them to the facts.',
+    plays: 921, uniqueListeners: 356, avgCompletion: 71, folderId: 'f3', order: 1, createdAt: '2026-03-01T00:00:00Z',
+  },
+  {
+    id: 'p5', title: 'How to Ace a Law Firm Interview', subjectName: 'Bonus', subjectColor: '#10B981',
+    duration: 530, moduleNumber: null, lessonNumber: null, part: null, isBonus: true, isPublished: true,
+    audioUrl: 'https://res.cloudinary.com/dscjsf8ln/video/upload/fe1/podcasts/bonus/ElevenLabs_How_to_Ace_a_Law_Firm_Interview.mp3',
+    thumbnail: 'https://res.cloudinary.com/db3waebh7/image/upload/v1770073930/ideogram-v3.0_Minimalist_law_podcast_cover_Irish_legal_education_theme_single_golden_scale_ico-0_ojxvyo.png',
+    notes: { concepts: ['Common interview formats used by Irish firms', 'How to discuss FE-1 performance confidently', 'Soft skills that separate successful candidates'], cases: [] },
+    examTip: 'Interviewers often ask about current legal developments. Read the Irish Times Law section and the Law Society Gazette weekly.',
+    plays: 445, uniqueListeners: 198, avgCompletion: 88, folderId: 'f9', order: 1, createdAt: '2026-03-01T00:00:00Z',
+  },
+  {
+    id: 'p6', title: 'Mens Rea - Intention, Recklessness and Negligence', subjectName: 'Criminal Law', subjectColor: '#E6027D',
+    duration: 519, moduleNumber: 3, lessonNumber: 3, part: 1, isBonus: false, isPublished: false,
+    audioUrl: 'https://res.cloudinary.com/dscjsf8ln/video/upload/v1774034492/fe1/podcasts/criminal-law/Module_3_Lesson_3_1.m4a',
+    thumbnail: 'https://res.cloudinary.com/db3waebh7/image/upload/v1770073930/ideogram-v3.0_Minimalist_law_podcast_cover_Irish_legal_education_theme_single_golden_scale_ico-0_ojxvyo.png',
+    notes: { concepts: ['Specific vs basic intent distinction', 'Subjective and objective recklessness', 'Strict liability and its rare application'], cases: ['The People (DPP) v Murray [1977] - intention in Irish criminal law', 'DPP v Majewski [1977] - intoxication and mens rea'] },
+    examTip: 'Getting mens rea right is the difference between a pass and a fail in most FE-1 criminal scenarios.',
+    plays: 0, uniqueListeners: 0, avgCompletion: 0, folderId: 'f1', order: 3, createdAt: '2026-03-10T00:00:00Z',
+  },
+]
+
+export const podcastStats = {
+  totalEpisodes: 269,
+  published: 251,
+  drafts: 18,
+  totalPlayHours: 4847,
+  uniqueListeners: 1203,
+  avgCompletionRate: 71,
+  mostPlayed: 'Offer and Acceptance',
+  mostPlayedCount: 1203,
+  topSubject: 'Criminal Law',
+  topSubjectPlays: 12847,
+  thisWeekPlays: 847,
+  thisWeekGrowth: 12,
+}
+
 export const recoveryData = {
   // Pulse stats
   totalAtRisk: 87,

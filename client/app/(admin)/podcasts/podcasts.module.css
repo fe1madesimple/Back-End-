@@ -1,0 +1,51 @@
+.page { display: flex; flex-direction: column; gap: 20px; }
+.pageHeader { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.headerLeft { display: flex; align-items: center; gap: 12px; }
+.backBtn { width: 36px; height: 36px; border-radius: 8px; background: var(--bg-card); border: 1px solid var(--border-default); color: var(--text-secondary); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.15s; flex-shrink: 0; }
+.backBtn:hover { background: var(--bg-elevated); color: var(--text-primary); }
+.title { font-size: 24px; font-weight: 700; color: var(--text-primary); }
+.subtitle { font-size: 14px; color: var(--text-secondary); margin-top: 4px; }
+.headerActions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; flex-shrink: 0; }
+.viewBtn { display: flex; align-items: center; gap: 6px; background: var(--bg-card); border: 1px solid var(--border-default); border-radius: var(--radius-sm); padding: 8px 14px; font-size: 13px; color: var(--text-secondary); cursor: pointer; font-family: inherit; transition: all 0.15s; }
+.viewBtn:hover { background: var(--bg-elevated); color: var(--text-primary); }
+.secondaryBtn { display: flex; align-items: center; gap: 6px; background: var(--bg-card); border: 1px solid var(--border-focus); border-radius: var(--radius-sm); padding: 8px 14px; font-size: 13px; color: var(--blue-bright); cursor: pointer; font-family: inherit; transition: all 0.15s; }
+.secondaryBtn:hover { background: var(--blue-muted); }
+.primaryBtn { display: flex; align-items: center; gap: 6px; background: var(--blue-primary); color: white; border: none; border-radius: var(--radius-sm); padding: 9px 16px; font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; }
+.primaryBtn:hover { background: var(--blue-bright); }
+.statsStrip { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; }
+.statCard { background: var(--bg-card); border: 1px solid var(--border-default); border-radius: var(--radius-lg); padding: 14px 16px; }
+.statTop { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+.statLabel { font-size: 11px; color: var(--text-muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; }
+.statIconWrap { width: 26px; height: 26px; border-radius: 6px; display: flex; align-items: center; justify-content: center; }
+.statValue { font-size: 20px; font-weight: 700; }
+.searchRow { display: flex; align-items: center; gap: 10px; }
+.searchWrap { flex: 1; position: relative; display: flex; align-items: center; }
+.searchIcon { position: absolute; left: 12px; color: var(--text-muted); pointer-events: none; }
+.searchInput { width: 100%; background: var(--bg-card); border: 1px solid var(--border-default); border-radius: var(--radius-sm); padding: 10px 14px 10px 36px; font-size: 14px; color: var(--text-primary); outline: none; font-family: inherit; }
+.searchInput:focus { border-color: var(--border-focus); }
+.searchInput::placeholder { color: var(--text-muted); }
+.displayToggle { display: flex; background: var(--bg-card); border: 1px solid var(--border-default); border-radius: var(--radius-sm); overflow: hidden; }
+.toggleBtn { width: 36px; height: 36px; background: none; border: none; color: var(--text-muted); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.15s; }
+.toggleBtnActive { background: var(--bg-elevated); color: var(--text-primary); }
+.foldersGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin-bottom: 24px; }
+.folderCard { background: var(--bg-card); border: 1px solid var(--border-default); border-radius: var(--radius-lg); padding: 18px; cursor: pointer; transition: all 0.2s; position: relative; overflow: hidden; }
+.folderCard:hover { border-color: var(--border-focus); background: var(--bg-elevated); }
+.folderTop { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 12px; }
+.folderIcon { width: 44px; height: 44px; border-radius: 10px; border: 1px solid; display: flex; align-items: center; justify-content: center; }
+.menuBtn { width: 28px; height: 28px; border-radius: 6px; background: var(--bg-elevated); border: 1px solid var(--border-default); color: var(--text-muted); display: flex; align-items: center; justify-content: center; cursor: pointer; position: relative; transition: all 0.12s; }
+.menuBtn:hover { background: var(--bg-hover); color: var(--text-secondary); }
+.folderName { font-size: 14px; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+.folderMeta { font-size: 12px; color: var(--text-muted); }
+.folderBar { position: absolute; bottom: 0; left: 0; right: 0; height: 3px; }
+.dropdownMenu { position: absolute; right: 0; top: 32px; background: var(--bg-elevated); border: 1px solid var(--border-default); border-radius: 8px; z-index: 100; min-width: 150px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+.dropdownItem { width: 100%; display: flex; align-items: center; gap: 8px; padding: 9px 14px; background: none; border: none; color: var(--text-secondary); font-size: 13px; cursor: pointer; text-align: left; font-family: inherit; transition: background 0.12s; }
+.dropdownItem:hover { background: var(--bg-hover); color: var(--text-primary); }
+.dropdownItemDanger { color: var(--red) !important; }
+.dropdownItemDanger:hover { background: var(--red-bg) !important; }
+.sectionHeader { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.sectionTitle { font-size: 15px; font-weight: 600; color: var(--text-primary); }
+.viewAllBtn { display: flex; align-items: center; gap: 4px; font-size: 13px; color: var(--blue-bright); background: none; border: none; cursor: pointer; font-family: inherit; }
+.toggle { width: 40px; height: 22px; border-radius: 11px; background: var(--bg-hover); border: 1px solid var(--border-default); cursor: pointer; position: relative; transition: background 0.2s; flex-shrink: 0; }
+.toggle::after { content: ''; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: 50%; background: var(--text-muted); transition: transform 0.2s, background 0.2s; }
+@media (max-width: 1200px) { .statsStrip { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 640px) { .statsStrip { grid-template-columns: 1fr 1fr; } .headerActions { flex-wrap: wrap; } .foldersGrid { grid-template-columns: 1fr 1fr; } }
