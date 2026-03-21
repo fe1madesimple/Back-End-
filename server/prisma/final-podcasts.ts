@@ -7,7 +7,7 @@ import * as path from 'path';
 
 const prisma = new PrismaClient();
 
-const ROOT = 'C:\\Users\\User\\Desktop\\fe-1-backend\\server';
+const ROOT = process.cwd()
 
 // The two JSON files
 const UPLOADED_JSON = path.join(ROOT, 'uploaded-podcasts.json');
