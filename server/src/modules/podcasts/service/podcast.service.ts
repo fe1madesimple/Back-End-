@@ -1,135 +1,99 @@
 import { prisma } from '@/shared/config';
-import { PodcastListResponse, PodcastDetailResponse } from '../interface/podcast.interface';
 import { NotFoundError } from '@/shared/utils';
+import { PodcastQueryParams } from '../interface/podcast.interface';
 
-class Podcasts {
-  async getPodcasts(subject?: string): Promise<PodcastListResponse> {
-    const where: any = { isPublished: true };
+export class PodcastService {
+  async getAllPodcasts(params: PodcastQueryParams) {
+    const { subject, isBonus, search, page = 1, limit = 50 } = params;
+    const skip = (page - 1) * limit;
+
+    const where: any = {
+      isPublished: true,
+    };
 
     if (subject) {
-      where.subject = subject;
+      where.subjectName = {
+        equals: subject,
+        mode: 'insensitive',
+      };
+    }
+
+    if (isBonus !== undefined) {
+      where.isBonus = isBonus;
+    }
+
+    if (search) {
+      where.title = {
+        contains: search,
+        mode: 'insensitive',
+      };
     }
 
     const [podcasts, total] = await Promise.all([
       prisma.podcast.findMany({
         where,
-        select: {
-          id: true,
-          title: true,
-          description: true,
-          subject: true,
-          audioUrl: true,
-          thumbnail: true,
-          duration: true,
-          order: true,
-        },
         orderBy: { order: 'asc' },
+        skip,
+        take: limit,
       }),
       prisma.podcast.count({ where }),
     ]);
 
-    return { podcasts, total };
+    // Get distinct subjects for filter pills
+    const subjectRows = await prisma.podcast.findMany({
+      where: { isPublished: true, isBonus: false },
+      select: { subjectName: true },
+      distinct: ['subjectName'],
+      orderBy: { subjectName: 'asc' },
+    });
+
+    const subjects = subjectRows.map((s) => s.subjectName);
+
+    return { podcasts, total, subjects };
   }
 
-  async getPodcastById(userId: string, podcastId: string): Promise<PodcastDetailResponse> {
+  async getPodcastById(id: string) {
     const podcast = await prisma.podcast.findUnique({
-      where: { id: podcastId, isPublished: true },
-      include: {
-        progress: {
-          where: { userId },
-        },
-      },
+      where: { id },
     });
 
     if (!podcast) {
       throw new NotFoundError('Podcast not found');
     }
 
-    const { progress, ...podcastData } = podcast;
-
-    return {
-      podcast: podcastData,
-      progress: progress[0] || null,
-    };
-  }
-
-  async trackPodcastProgress(
-    userId: string,
-    podcastId: string,
-    currentTime: number,
-    audioDuration?: number
-  ): Promise<void> {
-    const podcast = await prisma.podcast.findUnique({
-      where: { id: podcastId },
-      select: { id: true, duration: true },
-    });
-
-    if (!podcast) {
+    if (!podcast.isPublished) {
       throw new NotFoundError('Podcast not found');
     }
 
-    const duration = audioDuration || podcast.duration;
-    const completionThreshold = 0.9;
-    const isCompleted = duration ? currentTime >= duration * completionThreshold : false;
-
-    await prisma.userPodcastProgress.upsert({
-      where: {
-        userId_podcastId: { userId, podcastId },
-      },
-      create: {
-        userId,
-        podcastId,
-        listenedSeconds: currentTime,
-        isCompleted: Boolean(isCompleted),
-        completedAt: isCompleted ? new Date() : null,
-      },
-      update: {
-        listenedSeconds: currentTime,
-        isCompleted: Boolean(isCompleted),
-        completedAt: isCompleted ? new Date() : null,
-      },
-    });
-
-    if (audioDuration && !podcast.duration) {
-      await prisma.podcast.update({
-        where: { id: podcastId },
-        data: { duration: audioDuration },
-      });
-    }
+    return podcast;
   }
 
-  async getRelevantPodcasts(focusSubjects: string[]) {
-    if (focusSubjects.length === 0) {
-      // Return 3 random podcasts if no focus subjects
-      return await prisma.podcast.findMany({
-        where: { isPublished: true },
-        select: {
-          id: true,
-          title: true,
-          subject: true,
-          duration: true,
-          thumbnail: true,
-        },
-        take: 3,
-        orderBy: { createdAt: 'desc' },
-      });
-    }
-
-    return await prisma.podcast.findMany({
+  async getPodcastsBySubject(subject: string) {
+    const podcasts = await prisma.podcast.findMany({
       where: {
         isPublished: true,
-        subject: { in: focusSubjects },
+        subjectName: {
+          equals: subject,
+          mode: 'insensitive',
+        },
       },
-      select: {
-        id: true,
-        title: true,
-        subject: true,
-        duration: true,
-        thumbnail: true,
+      orderBy: { order: 'asc' },
+    });
+
+    if (!podcasts.length) {
+      throw new NotFoundError(`No podcasts found for subject: ${subject}`);
+    }
+
+    return podcasts;
+  }
+
+  async getBonusEpisodes() {
+    return prisma.podcast.findMany({
+      where: {
+        isPublished: true,
+        isBonus: true,
       },
-      take: 3,
+      orderBy: { order: 'asc' },
     });
   }
 }
-
-export default new Podcasts();

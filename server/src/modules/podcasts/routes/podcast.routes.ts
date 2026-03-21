@@ -1,27 +1,52 @@
-import { getPodcasts, getPodcastById, trackPodcastProgress } from "../controller/podcast.controller";
-import { podcastsQuerySchema, trackPodcastSchema } from "../validator/podcast.validator";
-import { validate } from "@/shared/middleware/validation";
-import { Router } from "express";
-import { protect } from "@/shared/middleware/auth.middleware";
+import { Router } from 'express';
+import { protect } from '@/shared/middleware/auth.middleware';
+import { PodcastController } from '../controller/podcast.controller';
 
-const podCastRouter = Router()
+const router = Router();
+const podcastController = new PodcastController();
 
 /**
  * @swagger
- * /api/v1/podcasts:
+ * tags:
+ *   name: Podcasts
+ *   description: FE-1 podcast episodes and study notes
+ */
+
+/**
+ * @swagger
+ * /podcasts:
  *   get:
- *     summary: Get list of all podcasts
+ *     summary: Get all podcasts
  *     tags: [Podcasts]
  *     security:
  *       - bearerAuth: []
- *     description: Returns all published podcasts, optionally filtered by subject.
  *     parameters:
  *       - in: query
  *         name: subject
  *         schema:
  *           type: string
+ *           example: Criminal Law
  *         description: Filter by subject name
- *         example: Criminal Law
+ *       - in: query
+ *         name: isBonus
+ *         schema:
+ *           type: boolean
+ *         description: Filter bonus episodes only
+ *       - in: query
+ *         name: search
+ *         schema:
+ *           type: string
+ *         description: Search by episode title
+ *       - in: query
+ *         name: page
+ *         schema:
+ *           type: integer
+ *           default: 1
+ *       - in: query
+ *         name: limit
+ *         schema:
+ *           type: integer
+ *           default: 50
  *     responses:
  *       200:
  *         description: Podcasts retrieved successfully
@@ -40,46 +65,25 @@ const podCastRouter = Router()
  *                     podcasts:
  *                       type: array
  *                       items:
- *                         type: object
- *                         properties:
- *                           id:
- *                             type: string
- *                           title:
- *                             type: string
- *                           description:
- *                             type: string
- *                           subject:
- *                             type: string
- *                           audioUrl:
- *                             type: string
- *                           thumbnail:
- *                             type: string
- *                             nullable: true
- *                           duration:
- *                             type: integer
- *                             nullable: true
- *                           order:
- *                             type: integer
+ *                         $ref: '#/components/schemas/Podcast'
  *                     total:
  *                       type: integer
+ *                     subjects:
+ *                       type: array
+ *                       items:
+ *                         type: string
  */
-podCastRouter.get(
-  '/podcasts',
-  protect,
-  validate(podcastsQuerySchema),
-  getPodcasts
-);
+router.get('/', protect, podcastController.getAllPodcasts.bind(podcastController));
 
 
 /**
  * @swagger
- * /api/v1/podcasts/{id}:
+ * /podcasts/{id}:
  *   get:
- *     summary: Get podcast details with listening progress
+ *     summary: Get a single podcast by ID
  *     tags: [Podcasts]
  *     security:
  *       - bearerAuth: []
- *     description: Returns podcast details and user's listening progress for audio player.
  *     parameters:
  *       - in: path
  *         name: id
@@ -88,64 +92,10 @@ podCastRouter.get(
  *           type: string
  *     responses:
  *       200:
- *         description: Podcast retrieved
+ *         description: Podcast retrieved successfully
  *       404:
  *         description: Podcast not found
  */
-podCastRouter.get(
-  '/:id',
-  protect,
-  getPodcastById
-);
+router.get('/:id', protect, podcastController.getPodcastById.bind(podcastController));
 
-
-
-
-
-/**
- * @swagger
- * /api/v1/podcasts/{id}/track:
- *   post:
- *     summary: Track podcast listening progress
- *     tags: [Podcasts]
- *     security:
- *       - bearerAuth: []
- *     description: |
- *       Tracks podcast listening position. Call every 30s while playing.
- *       Auto-completes at 90% listened. Frontend sends duration on first ping.
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema:
- *           type: string
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             required:
- *               - currentTime
- *             properties:
- *               currentTime:
- *                 type: integer
- *                 example: 1200
- *               audioDuration:
- *                 type: integer
- *                 example: 2700
- *                 description: Optional - send on first ping
- *     responses:
- *       200:
- *         description: Progress tracked
- *       404:
- *         description: Podcast not found
- */
-podCastRouter.post(
-  '/:id/track',
-  protect,
-  validate(trackPodcastSchema),
-  trackPodcastProgress
-);
-
-export default podCastRouter
+export default router;

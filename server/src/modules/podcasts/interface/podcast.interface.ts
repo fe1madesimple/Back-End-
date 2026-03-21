@@ -1,38 +1,39 @@
+export interface PodcastNotes {
+  concepts: string[];
+  cases: string[];
+}
 
+export interface PodcastResponse {
+  id: string;
+  title: string;
+  subjectName: string;
+  subjectColor: string;
+  audioUrl: string;
+  publicId: string;
+  duration: number;
+  thumbnail: string | null;
+  moduleNumber: number | null;
+  lessonNumber: number | null;
+  part: number | null;
+  isBonus: boolean;
+  notes: PodcastNotes | null;
+  examTip: string | null;
+  order: number;
+  isPublished: boolean;
+  createdAt: Date;
+  updatedAt: Date;
+}
 
 export interface PodcastListResponse {
-  podcasts: {
-    id: string;
-    title: string;
-    description: string | null; // ← Add | null
-    subject: string | null; // ← Add | null
-    audioUrl: string;
-    thumbnail: string | null;
-    duration: number | null;
-    order: number;
-  }[];
+  podcasts: PodcastResponse[];
   total: number;
+  subjects: string[];
 }
 
-export interface PodcastDetailResponse {
-  podcast: {
-    id: string;
-    title: string;
-    description: string | null;
-    subject: string | null;
-    audioUrl: string;
-    thumbnail: string | null;
-    duration: number | null;
-    order: number;
-  };
-  progress: {
-    listenedSeconds: number;
-    isCompleted: boolean;
-    completedAt: Date | null;
-  } | null;
-}
-
-export interface TrackPodcastRequest {
-  currentTime: number;
-  audioDuration?: number;
+export interface PodcastQueryParams {
+  subject?: string;
+  isBonus?: boolean;
+  search?: string;
+  page?: number;
+  limit?: number;
 }

@@ -1,39 +1,54 @@
-import { AppError } from '@/shared/utils';
-import { Request, Response } from 'express';
-import { asyncHandler } from '@/shared/utils';
-import podcastService from '../service/podcast.service';
-import { sendSuccess } from '@/shared/utils';
+import { Request, Response, NextFunction } from 'express'
+import { PodcastService } from '../service/podcast.service'
+import { AppError } from '@/shared/utils'
 
+const podcastService = new PodcastService()
 
-export const getPodcasts = asyncHandler(async (req: Request, res: Response) => {
-  const { subject } = req.query;
+export class PodcastController {
 
-  const result = await podcastService.getPodcasts(subject as string | undefined);
+  async getAllPodcasts(req: Request, res: Response, next: NextFunction) {
+    try {
+      const {
+        subject,
+        isBonus,
+        search,
+        page,
+        limit,
+      } = req.query
 
-  sendSuccess(res, 'Podcasts retrieved', result);
-});
+      const params = {
+        subject: subject as string | undefined,
+        isBonus: isBonus !== undefined ? isBonus === 'true' : undefined,
+        search: search as string | undefined,
+        page: page ? parseInt(page as string) : 1,
+        limit: limit ? parseInt(limit as string) : 50,
+      }
 
-export const getPodcastById = asyncHandler(async (req: Request, res: Response): Promise<any> => {
-  const userId = req.user!.user.id;
-  const { id } = req.params;
+      const data = await podcastService.getAllPodcasts(params)
 
-  if (!id) throw new AppError('podcast id required');
+      res.status(200).json({
+        success: true,
+        message: 'Podcasts retrieved successfully',
+        data,
+      })
+    } catch (error) {
+      next(error)
+    }
+  }
 
-  const result = await podcastService.getPodcastById(userId, id);
+  async getPodcastById(req: Request, res: Response, next: NextFunction) {
+    try {
+      const { id } = req.params
+      if (!id) throw new AppError('Podcast ID is required')
+      const podcast = await podcastService.getPodcastById(id)
 
-  sendSuccess(res, 'Podcast retrieved', result);
-});
-
-// src/modules/content/controller/content.controller.ts
-
-export const trackPodcastProgress = asyncHandler(async (req: Request, res: Response) => {
-  const userId = req.user!.user.id;
-  const { id } = req.params;
-  const { currentTime, audioDuration } = req.body;
-
-  if (!id) throw new AppError('podcast id required');
-
-  await podcastService.trackPodcastProgress(userId, id, currentTime, audioDuration);
-
-  sendSuccess(res, 'Podcast progress tracked');
-});
+      res.status(200).json({
+        success: true,
+        message: 'Podcast retrieved successfully',
+        data: podcast,
+      })
+    } catch (error) {
+      next(error)
+    }
+  }
+}
