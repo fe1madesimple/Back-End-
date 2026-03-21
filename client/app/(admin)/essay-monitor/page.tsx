@@ -1,5 +1,5 @@
 'use client'
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import {
   FileText, CheckCircle, Flag, TrendingUp,
@@ -7,6 +7,9 @@ import {
   RefreshCw
 } from 'lucide-react'
 import Badge from '@/components/ui/Badge'
+import { SkStatStrip, SkTable } from '@/components/ui/Skeletons'
+import Pagination from '@/components/ui/Pagination'
+import { usePagination } from '@/lib/usePagination'
 import { essayMonitorData } from '@/lib/dummy-data'
 import styles from './essay-monitor.module.css'
 
@@ -26,11 +29,17 @@ const relativeTime = (d: string) => {
 }
 
 export default function EssayMonitorPage() {
+  const [loading, setLoading] = useState(true)
   const [toast, setToast] = useState<ToastType | null>(null)
   const [filterBand, setFilterBand] = useState('All')
   const [filterFlagged, setFilterFlagged] = useState(false)
   const [selectedEssay, setSelectedEssay] = useState<typeof essayMonitorData.recentEssays[0] | null>(null)
   const [flaggingId, setFlaggingId] = useState<string | null>(null)
+
+  useEffect(() => {
+    const t = setTimeout(() => setLoading(false), 1200)
+    return () => clearTimeout(t)
+  }, [])
 
   const showToast = useCallback((message: string, type: ToastType['type'] = 'success') => {
     setToast({ message, type })
@@ -47,12 +56,26 @@ export default function EssayMonitorPage() {
 
   const d = essayMonitorData
   const totalGraded = d.gradeDistribution.reduce((s, g) => s + g.count, 0)
+  const PER_PAGE = 15
 
-  const filtered = d.recentEssays.filter((e) => {
+  const filtered = useMemo(() => d.recentEssays.filter((e) => {
     const matchBand = filterBand === 'All' || e.band === filterBand
     const matchFlagged = !filterFlagged || e.flagged
     return matchBand && matchFlagged
-  })
+  }), [d.recentEssays, filterBand, filterFlagged])
+if (loading) return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 16, padding: '24px 0' }}>
+      <SkStatStrip count={4} />
+      <SkTable rows={10} />
+    </div>
+  )
+
+  
+  const { page, setPage, paginated, total, totalPages, reset } = usePagination(filtered, PER_PAGE)
+
+  useEffect(() => {
+    reset()
+  }, [filterBand, filterFlagged, reset])
 
   return (
     <div className={styles.page}>
@@ -115,7 +138,7 @@ export default function EssayMonitorPage() {
             </div>
           ))}
         </div>
-      </div>
+      </div>total
 
       {/* Essays table */}
       <div className={styles.card}>
@@ -155,7 +178,7 @@ export default function EssayMonitorPage() {
               </tr>
             </thead>
             <tbody>
-              {filtered.map((e) => (
+              {paginated.map((e) => (
                 <tr
                   key={e.id}
                   className={`${styles.tr} ${e.flagged ? styles.trFlagged : ''}`}
@@ -202,6 +225,7 @@ export default function EssayMonitorPage() {
             </tbody>
           </table>
         </div>
+        <Pagination page={page} total={total} perPage={PER_PAGE} onChange={setPage} />
       </div>
 
       {/* Essay detail overlay */}

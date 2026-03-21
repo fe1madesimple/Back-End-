@@ -1,5 +1,8 @@
 "use client";
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect, useMemo } from "react";
+import { SkStatStrip, SkTable } from "@/components/ui/Skeletons";
+import Pagination from "@/components/ui/Pagination";
+import { usePagination } from "@/lib/usePagination";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   BarChart,
@@ -52,6 +55,7 @@ const formatDateTime = (d: string) =>
   });
 
 export default function RecoveryPage() {
+  const [loading, setLoading] = useState(true);
   const [toast, setToast] = useState<ToastType | null>(null);
   const [retryingId, setRetryingId] = useState<string | null>(null);
   const [emailingId, setEmailingId] = useState<string | null>(null);
@@ -60,9 +64,18 @@ export default function RecoveryPage() {
   const [unrecovarableIds, setUnrecoverableIds] = useState<string[]>([]);
   const [settings, setSettings] = useState(recoveryData.settings);
   const [savingSettings, setSavingSettings] = useState(false);
+  const [queuePage, setQueuePage] = useState(1);
+  const [historyPage, setHistoryPage] = useState(1);
   const [confirmUnrecoverable, setConfirmUnrecoverable] = useState<
     (typeof recoveryData.failedQueue)[0] | null
   >(null);
+  const QUEUE_PER_PAGE = 12;
+  const HISTORY_PER_PAGE = 15;
+
+  useEffect(() => {
+    const t = setTimeout(() => setLoading(false), 1200);
+    return () => clearTimeout(t);
+  }, []);
 
   const showToast = useCallback(
     (message: string, type: ToastType["type"] = "success") => {

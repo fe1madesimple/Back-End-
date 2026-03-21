@@ -1,6 +1,9 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect, useMemo } from "react";
+import { SkStatStrip, SkTable } from "@/components/ui/Skeletons";
+import Pagination from "@/components/ui/Pagination";
+import { usePagination } from "@/lib/usePagination";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   LineChart,
@@ -62,11 +65,21 @@ const riskColor = (r: string) =>
         : "var(--text-muted)";
 
 export default function RetentionPage() {
+  const [loading, setLoading] = useState(true);
   const [toast, setToast] = useState<ToastType | null>(null);
   const [riskFilter, setRiskFilter] = useState("All");
+  const [riskPage, setRiskPage] = useState(1);
+  const [inactivePage, setInactivePage] = useState(1);
   const [sendingCampaign, setSendingCampaign] = useState<string | null>(null);
   const [sentCampaigns, setSentCampaigns] = useState<string[]>([]);
   const [emailingUser, setEmailingUser] = useState<string | null>(null);
+  const RISK_PER_PAGE = 20;
+  const INACTIVE_PER_PAGE = 20;
+
+  useEffect(() => {
+    const t = setTimeout(() => setLoading(false), 1200);
+    return () => clearTimeout(t);
+  }, []);
 
   const showToast = useCallback(
     (message: string, type: ToastType["type"] = "success") => {

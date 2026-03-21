@@ -1,6 +1,9 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect, useMemo } from "react";
+import { SkStatStrip, SkTable } from "@/components/ui/Skeletons";
+import Pagination from "@/components/ui/Pagination";
+import { usePagination } from "@/lib/usePagination";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   AreaChart,
@@ -53,11 +56,19 @@ const relativeTime = (d: string) => {
 };
 
 export default function RevenuePage() {
+  const [loading, setLoading] = useState(true);
   const [toast, setToast] = useState<ToastType | null>(null);
   const [targetMRR, setTargetMRR] = useState(6000);
   const [paymentPage, setPaymentPage] = useState(1);
   const [retryingId, setRetryingId] = useState<string | null>(null);
-  const PAYMENTS_PER_PAGE = 6;
+  const PAYMENTS_PER_PAGE = 15;
+  const CHURN_PER_PAGE = 15;
+  const UPGRADE_PER_PAGE = 15;
+
+  useEffect(() => {
+    const t = setTimeout(() => setLoading(false), 1200);
+    return () => clearTimeout(t);
+  }, []);
 
   const showToast = useCallback(
     (message: string, type: ToastType["type"] = "success") => {

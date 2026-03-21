@@ -1,0 +1,11 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Check for compile errors",
+			"type": "shell",
+			"command": "cd c:\\Users\\User\\Desktop\\fe-1-backend\\client && npm run build 2>&1 | head -50",
+			"group": "test"
+		}
+	]
+}
