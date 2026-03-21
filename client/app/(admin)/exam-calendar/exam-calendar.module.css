@@ -1,0 +1,495 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pageHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.exportBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+.exportBtn:hover {
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+}
+.addBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--blue-primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 9px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}
+.addBtn:hover {
+  background: var(--blue-bright);
+}
+
+.examGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+.examCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.examCard:hover {
+  border-color: var(--border-focus);
+  background: var(--bg-elevated);
+}
+.examCardActive {
+  background: var(--bg-elevated);
+}
+.examCardTop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.examColorDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.examName {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  flex: 1;
+}
+.examCardActions {
+  display: flex;
+  gap: 4px;
+}
+.iconBtn {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  background: var(--bg-hover);
+  border: 1px solid var(--border-default);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.12s;
+}
+.iconBtn:hover {
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+}
+.iconBtnDanger {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  background: var(--bg-hover);
+  border: 1px solid var(--border-default);
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.12s;
+}
+.iconBtnDanger:hover {
+  background: var(--red-bg);
+  border-color: var(--red);
+  color: var(--red);
+}
+.examDate {
+  font-size: 15px;
+  font-weight: 700;
+}
+.examCountdown {
+  font-size: 13px;
+}
+.examMeta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.countdownTrack {
+  height: 4px;
+  background: var(--bg-hover);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.countdownFill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.5s ease;
+}
+.campaignToggleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.campaignToggleLabel {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.addExamCard {
+  background: var(--bg-card);
+  border: 2px dashed var(--border-default);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 180px;
+  font-size: 13px;
+  color: var(--text-muted);
+  font-family: inherit;
+}
+.addExamCard:hover {
+  border-color: var(--border-focus);
+  color: var(--text-secondary);
+  background: var(--bg-elevated);
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.cardTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.cardSub {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+.campaignPausedBadge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--amber-bg);
+  border: 1px solid var(--amber);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--amber);
+}
+.cohortEmailBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid;
+  border-radius: var(--radius-sm);
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+.cohortEmailBtn:hover {
+  opacity: 0.8;
+}
+.cohortEmailBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 540px;
+}
+.th {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-weight: 500;
+  padding: 0 0 12px 0;
+  text-align: left;
+  border-bottom: 1px solid var(--border-default);
+}
+.tr {
+  transition: background 0.15s;
+}
+.tr:hover {
+  background: var(--bg-elevated);
+}
+.tr:not(:last-child) td {
+  border-bottom: 1px solid var(--border-default);
+}
+.td {
+  padding: 12px 8px 12px 0;
+  vertical-align: middle;
+}
+.userCell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.userAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+.userName {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+.userEmail {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+.progressWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 80px;
+}
+.progressBar {
+  height: 4px;
+  background: var(--bg-hover);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.progressFill {
+  height: 100%;
+  border-radius: 2px;
+}
+.nudgeBtn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+  white-space: nowrap;
+}
+.nudgeBtn:hover {
+  background: var(--blue-muted);
+  border-color: var(--blue-primary);
+  color: var(--blue-bright);
+}
+.nudgeBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.emptyState {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 40px;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.timelineStep {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  align-items: start;
+  position: relative;
+}
+.timelineDot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+  z-index: 1;
+}
+.timelineLine {
+  position: absolute;
+  left: 15px;
+  top: 34px;
+  width: 2px;
+  height: calc(100% - 10px);
+  background: var(--border-default);
+  z-index: 0;
+}
+.timelineContent {
+  padding: 4px 0 24px 16px;
+}
+.timelineContentFired {
+  opacity: 0.85;
+}
+.timelineTrigger {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+.timelineLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+.timelineDesc {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+.firedBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--green-bg);
+  border: 1px solid var(--green);
+  border-radius: 20px;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--green);
+  margin-top: 6px;
+}
+
+.toggle {
+  width: 40px;
+  height: 22px;
+  border-radius: 11px;
+  background: var(--bg-hover);
+  border: 1px solid var(--border-default);
+  cursor: pointer;
+  position: relative;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+.toggle::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  transition:
+    transform 0.2s,
+    background 0.2s;
+}
+.toggleOn {
+  background: var(--blue-primary);
+  border-color: var(--blue-primary);
+}
+.toggleOn::after {
+  transform: translateX(18px);
+  background: white;
+}
+
+.spinning {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1100px) {
+  .examGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .examGrid {
+    grid-template-columns: 1fr;
+  }
+  .headerActions {
+    flex-wrap: wrap;
+  }
+}

@@ -477,23 +477,31 @@ model UserPodcastProgress {
 }
 
 model Podcast {
-  id          String  @id @default(cuid())
-  title       String
-  description String? @db.Text
-  subject     String? // Related subject
-  audioUrl    String // Cloudinary URL
-  publicId    String // Cloudinary public_id
-  duration    Int? // Duration in seconds
-  thumbnail   String? // Cover image URL
+  id           String  @id @default(cuid())
+  title        String
+  subjectName  String
+  subjectColor String  @default("#3B82F6")
+  audioUrl     String
+  publicId     String
+  duration     Int     @default(0)
+  thumbnail    String?
 
-  order       Int     @default(0)
-  isPublished Boolean @default(true)
+  moduleNumber Int?
+  lessonNumber Int?
+  part         Int?
+  isBonus      Boolean @default(false)
 
-  progress UserPodcastProgress[]
+  notes        Json?
+  examTip      String? @db.Text
 
-  createdAt        DateTime          @default(now())
-  updatedAt        DateTime          @updatedAt
+  order        Int     @default(0)
+  isPublished  Boolean @default(true)
+
+  progress         UserPodcastProgress[]
   playlistPodcasts PlaylistPodcast[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   @@map("podcasts")
 }
