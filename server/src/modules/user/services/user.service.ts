@@ -596,7 +596,7 @@ class UserService {
   /* ── Tables ── */
   table { width: 100%; border-collapse: collapse; font-size: 11.5px; }
   th {
-    background: #1d4ed8;
+    background: #6483da;
     color: white;
     padding: 8px 10px;
     text-align: left;
@@ -806,9 +806,15 @@ class UserService {
     // ── Render HTML → PDF via puppeteer ────────────────────────────────────────
     const puppeteer = require('puppeteer');
 
+    
     const browser = await puppeteer.launch({
+      args: [
+        '--no-sandbox',
+        '--disable-setuid-sandbox',
+        '--disable-dev-shm-usage',
+        '--disable-gpu',
+      ],
       headless: true,
-      args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
     });
 
     try {
