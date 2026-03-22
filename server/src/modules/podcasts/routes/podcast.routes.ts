@@ -26,11 +26,14 @@ const podcastController = new PodcastController();
  */
 router.get('/stats', protect, podcastController.getPodcastStats.bind(podcastController));
 
+
+
+
 /**
  * @swagger
  * /api/v1/podcasts:
  *   get:
- *     summary: Get all podcasts
+ *     summary: Get all podcasts (paginated)
  *     tags: [Podcasts]
  *     security:
  *       - bearerAuth: []
@@ -40,7 +43,7 @@ router.get('/stats', protect, podcastController.getPodcastStats.bind(podcastCont
  *         schema:
  *           type: string
  *           example: Criminal Law
- *         description: Filter by subject name
+ *         description: Filter by subject name (case insensitive)
  *       - in: query
  *         name: isBonus
  *         schema:
@@ -80,12 +83,27 @@ router.get('/stats', protect, podcastController.getPodcastStats.bind(podcastCont
  *                       type: array
  *                       items:
  *                         $ref: '#/components/schemas/Podcast'
- *                     total:
- *                       type: integer
+ *                     pagination:
+ *                       type: object
+ *                       properties:
+ *                         total:
+ *                           type: integer
+ *                           example: 269
+ *                         page:
+ *                           type: integer
+ *                           example: 1
+ *                         limit:
+ *                           type: integer
+ *                           example: 50
+ *                         totalPages:
+ *                           type: integer
+ *                           example: 6
  *                     subjects:
  *                       type: array
+ *                       description: All available subject names for filter pills
  *                       items:
  *                         type: string
+ *                       example: ["Company Law", "Contract Law", "Criminal Law"]
  */
 router.get('/', protect, podcastController.getAllPodcasts.bind(podcastController));
 

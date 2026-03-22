@@ -7,15 +7,10 @@ export class PodcastService {
     const { subject, isBonus, search, page = 1, limit = 50 } = params;
     const skip = (page - 1) * limit;
 
-    const where: any = {
-      isPublished: true,
-    };
+    const where: any = { isPublished: true };
 
     if (subject) {
-      where.subjectName = {
-        equals: subject,
-        mode: 'insensitive',
-      };
+      where.subjectName = { equals: subject, mode: 'insensitive' };
     }
 
     if (isBonus !== undefined) {
@@ -23,13 +18,10 @@ export class PodcastService {
     }
 
     if (search) {
-      where.title = {
-        contains: search,
-        mode: 'insensitive',
-      };
+      where.title = { contains: search, mode: 'insensitive' };
     }
 
-    const [podcasts, total] = await Promise.all([
+    const [podcasts, total, subjectRows] = await Promise.all([
       prisma.podcast.findMany({
         where,
         orderBy: { order: 'asc' },
@@ -37,19 +29,26 @@ export class PodcastService {
         take: limit,
       }),
       prisma.podcast.count({ where }),
+      prisma.podcast.findMany({
+        where: { isPublished: true, isBonus: false },
+        select: { subjectName: true },
+        distinct: ['subjectName'],
+        orderBy: { subjectName: 'asc' },
+      }),
     ]);
-
-    // Get distinct subjects for filter pills
-    const subjectRows = await prisma.podcast.findMany({
-      where: { isPublished: true, isBonus: false },
-      select: { subjectName: true },
-      distinct: ['subjectName'],
-      orderBy: { subjectName: 'asc' },
-    });
 
     const subjects = subjectRows.map((s) => s.subjectName);
 
-    return { podcasts, total, subjects };
+    return {
+      podcasts,
+      pagination: {
+        total,
+        page,
+        limit,
+        totalPages: Math.ceil(total / limit),
+      },
+      subjects,
+    };
   }
 
   async getPodcastById(id: string) {

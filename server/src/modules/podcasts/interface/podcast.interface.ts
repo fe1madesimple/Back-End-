@@ -24,16 +24,23 @@ export interface PodcastResponse {
   updatedAt: Date;
 }
 
-export interface PodcastListResponse {
-  podcasts: PodcastResponse[];
-  total: number;
-  subjects: string[];
-}
-
 export interface PodcastQueryParams {
   subject?: string;
   isBonus?: boolean;
   search?: string;
   page?: number;
   limit?: number;
+}
+
+export interface PodcastPagination {
+  total: number;
+  page: number;
+  limit: number;
+  totalPages: number;
+}
+
+export interface PodcastListResponse {
+  podcasts: any[];
+  pagination: PodcastPagination;
+  subjects: string[];
 }
