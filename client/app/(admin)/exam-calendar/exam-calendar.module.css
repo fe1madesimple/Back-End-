@@ -1,3 +1,37 @@
+/* FILTER PILLS */
+.filterPillsRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.filterPill {
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--border-default);
+  background: var(--bg-card);
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+  white-space: nowrap;
+}
+
+.filterPill:hover {
+  border-color: var(--border-focus);
+  color: var(--text-primary);
+}
+
+.filterPillActive {
+  background: var(--blue-muted);
+  border-color: var(--blue-primary);
+  color: var(--blue-bright);
+  font-weight: 600;
+}
 .page {
   display: flex;
   flex-direction: column;
@@ -240,19 +274,24 @@
 .cohortEmailBtn {
   display: flex;
   align-items: center;
-  gap: 6px;
-  background: transparent;
-  border: 1px solid;
+  gap: 8px;
+  background: var(--green);
+  color: #fff;
+  border: none;
   border-radius: var(--radius-sm);
-  padding: 8px 16px;
-  font-size: 13px;
-  font-weight: 600;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 700;
   cursor: pointer;
-  transition: all 0.2s;
+  transition:
+    background 0.18s,
+    color 0.18s;
   font-family: inherit;
+  box-shadow: 0 2px 8px 0 rgba(16, 185, 129, 0.08);
 }
 .cohortEmailBtn:hover {
-  opacity: 0.8;
+  background: var(--green-dark, #059669);
+  color: #fff;
 }
 .cohortEmailBtn:disabled {
   opacity: 0.6;

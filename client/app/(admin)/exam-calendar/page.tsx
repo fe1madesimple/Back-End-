@@ -2,7 +2,6 @@
 import { useState, useCallback, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  Calendar,
   Users,
   Mail,
   CheckCircle,
@@ -276,11 +275,16 @@ export default function ExamCalendarPage() {
               {cohortTotal} students targeting this sitting
             </p>
           </div>
-          <div className={styles.filterPills}>
+
+          <div className={styles.filterPillsRow}>
             {["All", "March 2026", "October 2026"].map((f) => (
               <button
                 key={f}
-                className={`${styles.filterBtn} ${sittingFilter === f ? styles.filterBtnActive : ""}`}
+                className={
+                  sittingFilter === f
+                    ? styles.filterPillActive
+                    : styles.filterPill
+                }
                 onClick={() => {
                   setSittingFilter(f);
                   setCohortPage(1);
@@ -290,12 +294,9 @@ export default function ExamCalendarPage() {
               </button>
             ))}
           </div>
+
           <button
             className={styles.cohortEmailBtn}
-            style={{
-              borderColor: selectedExam.color,
-              color: selectedExam.color,
-            }}
             onClick={() =>
               handleEmailCohort(selectedExam.id, selectedExam.name)
             }
@@ -351,7 +352,7 @@ export default function ExamCalendarPage() {
                         >
                           {s.name
                             .split(" ")
-                            .map((n) => n[0])
+                            .map((n: string) => n[0])
                             .join("")
                             .slice(0, 2)}
                         </div>
@@ -717,7 +718,10 @@ export default function ExamCalendarPage() {
                       if (editingExam)
                         setEditingExam((prev) =>
                           prev
-                            ? { ...prev, campaignActive: !prev.campaignActive }
+                            ? {
+                                ...prev,
+                                campaignActive: !prev.campaignActive,
+                              }
                             : null,
                         );
                       else
@@ -796,7 +800,15 @@ export default function ExamCalendarPage() {
               right: 24,
               zIndex: 700,
               background: "var(--bg-elevated)",
-              border: `1px solid ${toast.type === "success" ? "var(--green)" : toast.type === "danger" ? "var(--red)" : toast.type === "warning" ? "var(--amber)" : "var(--blue-bright)"}`,
+              border: `1px solid ${
+                toast.type === "success"
+                  ? "var(--green)"
+                  : toast.type === "danger"
+                    ? "var(--red)"
+                    : toast.type === "warning"
+                      ? "var(--amber)"
+                      : "var(--blue-bright)"
+              }`,
               borderRadius: 10,
               padding: "12px 20px",
               fontSize: 14,

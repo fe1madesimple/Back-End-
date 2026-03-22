@@ -322,262 +322,379 @@ export const revenueData = {
 };
 
 export const subjectModuleTree = {
-  'Criminal Law': {
-    color: '#E6027D',
+  "Criminal Law": {
+    color: "#E6027D",
     modules: [
       {
-        id: 'mod-crim-1', number: 1, title: 'Introduction to Criminal Law',
+        id: "mod-crim-1",
+        number: 1,
+        title: "Introduction to Criminal Law",
         lessons: [
-          { id: 'les-crim-1-1', title: 'Characteristics and Indicia of a Crime' },
-          { id: 'les-crim-1-2', title: 'Classification of Criminal Offences' },
-          { id: 'les-crim-1-3', title: 'Parties to a Crime' },
-        ]
+          {
+            id: "les-crim-1-1",
+            title: "Characteristics and Indicia of a Crime",
+          },
+          { id: "les-crim-1-2", title: "Classification of Criminal Offences" },
+          { id: "les-crim-1-3", title: "Parties to a Crime" },
+        ],
       },
       {
-        id: 'mod-crim-2', number: 2, title: 'Actus Reus',
+        id: "mod-crim-2",
+        number: 2,
+        title: "Actus Reus",
         lessons: [
-          { id: 'les-crim-2-1', title: 'Actus Reus — The Physical Element' },
-          { id: 'les-crim-2-2', title: 'Omissions and Causation' },
-        ]
+          { id: "les-crim-2-1", title: "Actus Reus — The Physical Element" },
+          { id: "les-crim-2-2", title: "Omissions and Causation" },
+        ],
       },
       {
-        id: 'mod-crim-3', number: 3, title: 'Mens Rea',
+        id: "mod-crim-3",
+        number: 3,
+        title: "Mens Rea",
         lessons: [
-          { id: 'les-crim-3-1', title: 'Mens Rea — Intention, Recklessness and Negligence' },
-          { id: 'les-crim-3-2', title: 'Strict Liability Offences' },
-        ]
+          {
+            id: "les-crim-3-1",
+            title: "Mens Rea — Intention, Recklessness and Negligence",
+          },
+          { id: "les-crim-3-2", title: "Strict Liability Offences" },
+        ],
       },
       {
-        id: 'mod-crim-4', number: 4, title: 'General Defences',
+        id: "mod-crim-4",
+        number: 4,
+        title: "General Defences",
         lessons: [
-          { id: 'les-crim-4-1', title: 'Self Defence and Defence of Others' },
-          { id: 'les-crim-4-2', title: 'Duress, Necessity and Intoxication' },
-          { id: 'les-crim-4-3', title: 'Insanity and Automatism' },
-        ]
+          { id: "les-crim-4-1", title: "Self Defence and Defence of Others" },
+          { id: "les-crim-4-2", title: "Duress, Necessity and Intoxication" },
+          { id: "les-crim-4-3", title: "Insanity and Automatism" },
+        ],
       },
-    ]
+    ],
   },
-  'Contract Law': {
-    color: '#FDC300',
+  "Contract Law": {
+    color: "#FDC300",
     modules: [
       {
-        id: 'mod-contract-1', number: 1, title: 'Formation of Contract',
+        id: "mod-contract-1",
+        number: 1,
+        title: "Formation of Contract",
         lessons: [
-          { id: 'les-contract-1-1', title: 'Offer and Acceptance' },
-          { id: 'les-contract-1-2', title: 'Invitation to Treat' },
-          { id: 'les-contract-1-3', title: 'The Postal Rule' },
-        ]
+          { id: "les-contract-1-1", title: "Offer and Acceptance" },
+          { id: "les-contract-1-2", title: "Invitation to Treat" },
+          { id: "les-contract-1-3", title: "The Postal Rule" },
+        ],
       },
       {
-        id: 'mod-contract-2', number: 2, title: 'Consideration and Intention',
+        id: "mod-contract-2",
+        number: 2,
+        title: "Consideration and Intention",
         lessons: [
-          { id: 'les-contract-2-1', title: 'Consideration — Rules and Exceptions' },
-          { id: 'les-contract-2-2', title: 'Promissory Estoppel' },
-          { id: 'les-contract-2-3', title: 'Intention to Create Legal Relations' },
-        ]
+          {
+            id: "les-contract-2-1",
+            title: "Consideration — Rules and Exceptions",
+          },
+          { id: "les-contract-2-2", title: "Promissory Estoppel" },
+          {
+            id: "les-contract-2-3",
+            title: "Intention to Create Legal Relations",
+          },
+        ],
       },
       {
-        id: 'mod-contract-3', number: 3, title: 'Terms of Contract',
+        id: "mod-contract-3",
+        number: 3,
+        title: "Terms of Contract",
         lessons: [
-          { id: 'les-contract-3-1', title: 'Express and Implied Terms' },
-          { id: 'les-contract-3-2', title: 'Conditions, Warranties and Innominate Terms' },
-        ]
+          { id: "les-contract-3-1", title: "Express and Implied Terms" },
+          {
+            id: "les-contract-3-2",
+            title: "Conditions, Warranties and Innominate Terms",
+          },
+        ],
       },
       {
-        id: 'mod-contract-4', number: 4, title: 'Breach and Remedies',
+        id: "mod-contract-4",
+        number: 4,
+        title: "Breach and Remedies",
         lessons: [
-          { id: 'les-contract-4-1', title: 'Remedies for Breach of Contract' },
-          { id: 'les-contract-4-2', title: 'Remoteness and Mitigation of Loss' },
-        ]
+          { id: "les-contract-4-1", title: "Remedies for Breach of Contract" },
+          {
+            id: "les-contract-4-2",
+            title: "Remoteness and Mitigation of Loss",
+          },
+        ],
       },
-    ]
+    ],
   },
-  'Tort Law': {
-    color: '#B38513',
+  "Tort Law": {
+    color: "#B38513",
     modules: [
       {
-        id: 'mod-tort-1', number: 1, title: 'Introduction to Tort Law',
+        id: "mod-tort-1",
+        number: 1,
+        title: "Introduction to Tort Law",
         lessons: [
-          { id: 'les-tort-1-1', title: 'What is Tort Law?' },
-          { id: 'les-tort-1-2', title: 'Tort vs Contract vs Crime' },
-        ]
+          { id: "les-tort-1-1", title: "What is Tort Law?" },
+          { id: "les-tort-1-2", title: "Tort vs Contract vs Crime" },
+        ],
       },
       {
-        id: 'mod-tort-2', number: 2, title: 'Negligence',
+        id: "mod-tort-2",
+        number: 2,
+        title: "Negligence",
         lessons: [
-          { id: 'les-tort-2-1', title: 'Donoghue v Stevenson and the Neighbour Principle' },
-          { id: 'les-tort-2-2', title: 'Negligence — Standard of Care' },
-          { id: 'les-tort-2-3', title: 'Causation and Remoteness' },
-        ]
+          {
+            id: "les-tort-2-1",
+            title: "Donoghue v Stevenson and the Neighbour Principle",
+          },
+          { id: "les-tort-2-2", title: "Negligence — Standard of Care" },
+          { id: "les-tort-2-3", title: "Causation and Remoteness" },
+        ],
       },
       {
-        id: 'mod-tort-3', number: 3, title: 'Occupiers Liability',
+        id: "mod-tort-3",
+        number: 3,
+        title: "Occupiers Liability",
         lessons: [
-          { id: 'les-tort-3-1', title: 'Occupiers Liability Act 1995' },
-          { id: 'les-tort-3-2', title: 'Visitors, Recreational Users and Trespassers' },
-        ]
+          { id: "les-tort-3-1", title: "Occupiers Liability Act 1995" },
+          {
+            id: "les-tort-3-2",
+            title: "Visitors, Recreational Users and Trespassers",
+          },
+        ],
       },
       {
-        id: 'mod-tort-4', number: 4, title: 'Defamation',
+        id: "mod-tort-4",
+        number: 4,
+        title: "Defamation",
         lessons: [
-          { id: 'les-tort-4-1', title: 'Defamation Act 2009 — Key Provisions' },
-          { id: 'les-tort-4-2', title: 'Defences to Defamation' },
-        ]
+          { id: "les-tort-4-1", title: "Defamation Act 2009 — Key Provisions" },
+          { id: "les-tort-4-2", title: "Defences to Defamation" },
+        ],
       },
-    ]
+    ],
   },
-  'Constitutional Law': {
-    color: '#961C81',
+  "Constitutional Law": {
+    color: "#961C81",
     modules: [
       {
-        id: 'mod-const-1', number: 1, title: 'The Irish Constitution',
+        id: "mod-const-1",
+        number: 1,
+        title: "The Irish Constitution",
         lessons: [
-          { id: 'les-const-1-1', title: 'Introduction to the Irish Constitution' },
-          { id: 'les-const-1-2', title: 'The Separation of Powers' },
-        ]
+          {
+            id: "les-const-1-1",
+            title: "Introduction to the Irish Constitution",
+          },
+          { id: "les-const-1-2", title: "The Separation of Powers" },
+        ],
       },
       {
-        id: 'mod-const-2', number: 2, title: 'Fundamental Rights',
+        id: "mod-const-2",
+        number: 2,
+        title: "Fundamental Rights",
         lessons: [
-          { id: 'les-const-2-1', title: 'Personal Rights and Article 40.3' },
-          { id: 'les-const-2-2', title: 'Unenumerated Rights' },
-        ]
+          { id: "les-const-2-1", title: "Personal Rights and Article 40.3" },
+          { id: "les-const-2-2", title: "Unenumerated Rights" },
+        ],
       },
       {
-        id: 'mod-const-3', number: 3, title: 'Property and Social Rights',
+        id: "mod-const-3",
+        number: 3,
+        title: "Property and Social Rights",
         lessons: [
-          { id: 'les-const-3-1', title: 'Property Rights and Article 43' },
-          { id: 'les-const-3-2', title: 'Education and Family Rights' },
-        ]
+          { id: "les-const-3-1", title: "Property Rights and Article 43" },
+          { id: "les-const-3-2", title: "Education and Family Rights" },
+        ],
       },
       {
-        id: 'mod-const-4', number: 4, title: 'Judicial Review',
+        id: "mod-const-4",
+        number: 4,
+        title: "Judicial Review",
         lessons: [
-          { id: 'les-const-4-1', title: 'Judicial Review and Proportionality' },
-          { id: 'les-const-4-2', title: 'Constitutional Challenges to Legislation' },
-        ]
+          { id: "les-const-4-1", title: "Judicial Review and Proportionality" },
+          {
+            id: "les-const-4-2",
+            title: "Constitutional Challenges to Legislation",
+          },
+        ],
       },
-    ]
+    ],
   },
-  'EU Law': {
-    color: '#009DDD',
+  "EU Law": {
+    color: "#009DDD",
     modules: [
       {
-        id: 'mod-eu-1', number: 1, title: 'Foundations of EU Law',
+        id: "mod-eu-1",
+        number: 1,
+        title: "Foundations of EU Law",
         lessons: [
-          { id: 'les-eu-1-1', title: 'Sources and Institutions of EU Law' },
-          { id: 'les-eu-1-2', title: 'The EU Legal Order' },
-        ]
+          { id: "les-eu-1-1", title: "Sources and Institutions of EU Law" },
+          { id: "les-eu-1-2", title: "The EU Legal Order" },
+        ],
       },
       {
-        id: 'mod-eu-2', number: 2, title: 'Key Doctrines',
+        id: "mod-eu-2",
+        number: 2,
+        title: "Key Doctrines",
         lessons: [
-          { id: 'les-eu-2-1', title: 'Supremacy of EU Law' },
-          { id: 'les-eu-2-2', title: 'Direct Effect and Van Gend en Loos' },
-          { id: 'les-eu-2-3', title: 'State Liability — Francovich' },
-        ]
+          { id: "les-eu-2-1", title: "Supremacy of EU Law" },
+          { id: "les-eu-2-2", title: "Direct Effect and Van Gend en Loos" },
+          { id: "les-eu-2-3", title: "State Liability — Francovich" },
+        ],
       },
       {
-        id: 'mod-eu-3', number: 3, title: 'Free Movement',
+        id: "mod-eu-3",
+        number: 3,
+        title: "Free Movement",
         lessons: [
-          { id: 'les-eu-3-1', title: 'Free Movement of Goods' },
-          { id: 'les-eu-3-2', title: 'Free Movement of Persons and Services' },
-        ]
+          { id: "les-eu-3-1", title: "Free Movement of Goods" },
+          { id: "les-eu-3-2", title: "Free Movement of Persons and Services" },
+        ],
       },
-    ]
+    ],
   },
-  'Equity': {
-    color: '#63C0F2',
+  Equity: {
+    color: "#63C0F2",
     modules: [
       {
-        id: 'mod-equity-1', number: 1, title: 'Introduction to Equity',
+        id: "mod-equity-1",
+        number: 1,
+        title: "Introduction to Equity",
         lessons: [
-          { id: 'les-equity-1-1', title: 'History and Maxims of Equity' },
-          { id: 'les-equity-1-2', title: 'Equitable Remedies' },
-        ]
+          { id: "les-equity-1-1", title: "History and Maxims of Equity" },
+          { id: "les-equity-1-2", title: "Equitable Remedies" },
+        ],
       },
       {
-        id: 'mod-equity-2', number: 2, title: 'Express Trusts',
+        id: "mod-equity-2",
+        number: 2,
+        title: "Express Trusts",
         lessons: [
-          { id: 'les-equity-2-1', title: 'Express Trusts — Three Certainties' },
-          { id: 'les-equity-2-2', title: 'Constitution of Trusts' },
-        ]
+          { id: "les-equity-2-1", title: "Express Trusts — Three Certainties" },
+          { id: "les-equity-2-2", title: "Constitution of Trusts" },
+        ],
       },
       {
-        id: 'mod-equity-3', number: 3, title: 'Implied Trusts',
+        id: "mod-equity-3",
+        number: 3,
+        title: "Implied Trusts",
         lessons: [
-          { id: 'les-equity-3-1', title: 'Resulting Trusts' },
-          { id: 'les-equity-3-2', title: 'Constructive Trusts' },
-        ]
+          { id: "les-equity-3-1", title: "Resulting Trusts" },
+          { id: "les-equity-3-2", title: "Constructive Trusts" },
+        ],
       },
       {
-        id: 'mod-equity-4', number: 4, title: 'Trusts in Practice',
+        id: "mod-equity-4",
+        number: 4,
+        title: "Trusts in Practice",
         lessons: [
-          { id: 'les-equity-4-1', title: 'Breach of Trust and Remedies' },
-          { id: 'les-equity-4-2', title: 'Charitable Trusts' },
-        ]
+          { id: "les-equity-4-1", title: "Breach of Trust and Remedies" },
+          { id: "les-equity-4-2", title: "Charitable Trusts" },
+        ],
       },
-    ]
+    ],
   },
-  'Property Law': {
-    color: '#5F3EB5',
+  "Property Law": {
+    color: "#5F3EB5",
     modules: [
       {
-        id: 'mod-prop-1', number: 1, title: 'Foundations of Property Law',
+        id: "mod-prop-1",
+        number: 1,
+        title: "Foundations of Property Law",
         lessons: [
-          { id: 'les-prop-1-1', title: 'Introduction to Irish Property Law' },
-          { id: 'les-prop-1-2', title: 'Freehold and Leasehold Estates' },
-        ]
+          { id: "les-prop-1-1", title: "Introduction to Irish Property Law" },
+          { id: "les-prop-1-2", title: "Freehold and Leasehold Estates" },
+        ],
       },
       {
-        id: 'mod-prop-2', number: 2, title: 'Land Registration',
+        id: "mod-prop-2",
+        number: 2,
+        title: "Land Registration",
         lessons: [
-          { id: 'les-prop-2-1', title: 'Land Registration — Registered vs Unregistered' },
-          { id: 'les-prop-2-2', title: 'Adverse Possession under the LCLRA 2009' },
-        ]
+          {
+            id: "les-prop-2-1",
+            title: "Land Registration — Registered vs Unregistered",
+          },
+          {
+            id: "les-prop-2-2",
+            title: "Adverse Possession under the LCLRA 2009",
+          },
+        ],
       },
       {
-        id: 'mod-prop-3', number: 3, title: 'Rights over Land',
+        id: "mod-prop-3",
+        number: 3,
+        title: "Rights over Land",
         lessons: [
-          { id: 'les-prop-3-1', title: 'Easements and Rights over Land' },
-          { id: 'les-prop-3-2', title: 'Covenants Running with the Land' },
-        ]
+          { id: "les-prop-3-1", title: "Easements and Rights over Land" },
+          { id: "les-prop-3-2", title: "Covenants Running with the Land" },
+        ],
       },
-    ]
+    ],
   },
-  'Company Law': {
-    color: '#8659FB',
+  "Company Law": {
+    color: "#8659FB",
     modules: [
       {
-        id: 'mod-company-1', number: 1, title: 'Nature of a Company',
+        id: "mod-company-1",
+        number: 1,
+        title: "Nature of a Company",
         lessons: [
-          { id: 'les-company-1-1', title: 'What is Company Law? The Nature of a Company' },
-          { id: 'les-company-1-2', title: 'Separate Legal Personality and Salomon' },
-          { id: 'les-company-1-3', title: 'Lifting the Corporate Veil' },
-        ]
+          {
+            id: "les-company-1-1",
+            title: "What is Company Law? The Nature of a Company",
+          },
+          {
+            id: "les-company-1-2",
+            title: "Separate Legal Personality and Salomon",
+          },
+          { id: "les-company-1-3", title: "Lifting the Corporate Veil" },
+        ],
       },
       {
-        id: 'mod-company-2', number: 2, title: 'Company Formation',
+        id: "mod-company-2",
+        number: 2,
+        title: "Company Formation",
         lessons: [
-          { id: 'les-company-2-1', title: 'Incorporation and the Constitution' },
-          { id: 'les-company-2-2', title: 'Share Capital and Shareholders' },
-        ]
+          {
+            id: "les-company-2-1",
+            title: "Incorporation and the Constitution",
+          },
+          { id: "les-company-2-2", title: "Share Capital and Shareholders" },
+        ],
       },
       {
-        id: 'mod-company-3', number: 3, title: 'Directors and Management',
+        id: "mod-company-3",
+        number: 3,
+        title: "Directors and Management",
         lessons: [
-          { id: 'les-company-3-1', title: 'Directors Duties — Fiduciary and Statutory' },
-          { id: 'les-company-3-2', title: 'Directors Liabilities under the Companies Act 2014' },
-        ]
+          {
+            id: "les-company-3-1",
+            title: "Directors Duties — Fiduciary and Statutory",
+          },
+          {
+            id: "les-company-3-2",
+            title: "Directors Liabilities under the Companies Act 2014",
+          },
+        ],
       },
       {
-        id: 'mod-company-4', number: 4, title: 'Minority Shareholders',
+        id: "mod-company-4",
+        number: 4,
+        title: "Minority Shareholders",
         lessons: [
-          { id: 'les-company-4-1', title: 'Foss v Harbottle and Minority Shareholder Rights' },
-          { id: 'les-company-4-2', title: 'Oppression Remedy under the Companies Act 2014' },
-        ]
+          {
+            id: "les-company-4-1",
+            title: "Foss v Harbottle and Minority Shareholder Rights",
+          },
+          {
+            id: "les-company-4-2",
+            title: "Oppression Remedy under the Companies Act 2014",
+          },
+        ],
       },
-    ]
+    ],
   },
 };
 
@@ -4779,43 +4896,202 @@ export const settingsData = {
       lastLogin: "2026-03-18T14:00:00Z",
     },
   ],
-  };
-
-  // ──────────────── ESSAY MONITOR DUMMY DATA ────────────────
-  export const essayAttempts = [
-    // 12 lesson essays
-    {
-      id: 'ea1', userId: 'u1', userName: 'Aoife Murphy', userEmail: 'aoife@example.com', subject: 'Tort Law', subjectColor: '#B38513', lessonId: 'l1', lessonTitle: 'Negligence — Standard of Care', source: 'LESSON', essayQuestionId: 'q1', questionText: 'Discuss the standard of care in negligence.', answerText: 'The standard of care in negligence is ...', wordCount: 842, timeTakenSeconds: 1320, aiScore: 78, band: 'Merit', date: '2026-03-20T10:00:00Z', feedback: { summary: 'Strong structure.', strengths: ['Clear structure', 'Relevant cases'], improvements: ['Expand on Donoghue v Stevenson'] }, strengths: ['Clear structure', 'Relevant cases'], improvements: ['Expand on Donoghue v Stevenson'], sampleAnswer: 'A sample answer...', tokensUsed: 1200, aiModel: 'Claude-3.7', flagged: false },
-    {
-      id: 'ea2', userId: 'u2', userName: 'Ciarán O\'Brien', userEmail: 'ciaran@example.com', subject: 'Contract Law', subjectColor: '#FDC300', lessonId: 'l2', lessonTitle: 'Offer and Acceptance', source: 'LESSON', essayQuestionId: 'q2', questionText: 'Explain the postal rule.', answerText: 'The postal rule states ...', wordCount: 712, timeTakenSeconds: 1100, aiScore: 65, band: 'Pass', date: '2026-03-19T14:00:00Z', feedback: { summary: 'Good, but missed exceptions.', strengths: ['Explains rule'], improvements: ['Add exceptions'] }, strengths: ['Explains rule'], improvements: ['Add exceptions'], sampleAnswer: null, tokensUsed: 1000, aiModel: 'Claude-3.7', flagged: false },
-    // ...10 more lesson essays
-    // 6 practice session essays
-    {
-      id: 'ea13', userId: 'u3', userName: 'Siobhán Kelly', userEmail: 'siobhan@example.com', subject: 'Criminal Law', subjectColor: '#E6027D', lessonId: null, lessonTitle: null, source: 'PRACTICE', essayQuestionId: null, questionText: 'Define actus reus.', answerText: 'Actus reus is ...', wordCount: 600, timeTakenSeconds: 900, aiScore: 55, band: 'Pass', date: '2026-03-18T09:00:00Z', feedback: { summary: 'Basic answer.', strengths: ['Defines term'], improvements: ['Add case law'] }, strengths: ['Defines term'], improvements: ['Add case law'], sampleAnswer: null, tokensUsed: 800, aiModel: 'GPT-5.3', flagged: false },
-    // ...5 more practice essays
-    // 4 simulation essays
-    {
-      id: 'ea19', userId: 'u4', userName: 'Fionnuala Walsh', userEmail: 'fionnuala@example.com', subject: 'EU Law', subjectColor: '#009DDD', lessonId: null, lessonTitle: null, source: 'SIMULATION', essayQuestionId: null, questionText: 'Explain direct effect.', answerText: 'Direct effect means ...', wordCount: 900, timeTakenSeconds: 1800, aiScore: 88, band: 'Distinction', date: '2026-03-17T16:00:00Z', feedback: { summary: 'Excellent.', strengths: ['Comprehensive'], improvements: [] }, strengths: ['Comprehensive'], improvements: [], sampleAnswer: null, tokensUsed: 1400, aiModel: 'Claude-3.7', flagged: false },
-    // ...3 more simulation essays
-  ];
-
-  export const practiceSessions = [
-    {
-      id: 'ps1', userId: 'u3', userName: 'Siobhán Kelly', userEmail: 'siobhan@example.com', subject: 'Criminal Law', subjectColor: '#E6027D', year: 2026, questionIds: ['q10', 'q11', 'q12'], essayAttemptIds: ['ea13', 'ea14'], totalTimeSeconds: 2100, completed: true, startedAt: '2026-03-18T08:00:00Z',
-    },
-    {
-      id: 'ps2', userId: 'u5', userName: 'Declan Byrne', userEmail: 'declan@example.com', subject: 'Tort Law', subjectColor: '#B38513', year: 2026, questionIds: ['q13', 'q14'], essayAttemptIds: ['ea15'], totalTimeSeconds: null, completed: false, startedAt: '2026-03-17T10:00:00Z',
-    },
-    // ...3 more sessions
-  ];
-
-  export const simulations = [
-    {
-      id: 'sim1', userId: 'u4', userName: 'Fionnuala Walsh', userEmail: 'fionnuala@example.com', subject: 'EU Law', subjectColor: '#009DDD', year: 2026, questionIds: ['q20', 'q21', 'q22'], essayAttemptIds: ['ea19', 'ea20'], score: 72, passed: true, failReason: null, totalTimeSeconds: 3600, startedAt: '2026-03-17T15:00:00Z',
-    },
-    {
-      id: 'sim2', userId: 'u6', userName: 'Róisín Doyle', userEmail: 'roisin@example.com', subject: 'Contract Law', subjectColor: '#FDC300', year: 2026, questionIds: ['q23', 'q24'], essayAttemptIds: ['ea21'], score: 48, passed: false, failReason: 'TIME_EXPIRED', totalTimeSeconds: 2700, startedAt: '2026-03-16T12:00:00Z',
-    },
-    // ...2 more simulations
-  ];
 };
+
+// ──────────────── ESSAY MONITOR DUMMY DATA ────────────────
+export const essayAttempts = [
+  // 12 lesson essays
+  {
+    id: "ea1",
+    userId: "u1",
+    userName: "Aoife Murphy",
+    userEmail: "aoife@example.com",
+    subject: "Tort Law",
+    subjectColor: "#B38513",
+    lessonId: "l1",
+    lessonTitle: "Negligence — Standard of Care",
+    source: "LESSON",
+    essayQuestionId: "q1",
+    questionText: "Discuss the standard of care in negligence.",
+    answerText: "The standard of care in negligence is ...",
+    wordCount: 842,
+    timeTakenSeconds: 1320,
+    aiScore: 78,
+    band: "Merit",
+    date: "2026-03-20T10:00:00Z",
+    feedback: {
+      summary: "Strong structure.",
+      strengths: ["Clear structure", "Relevant cases"],
+      improvements: ["Expand on Donoghue v Stevenson"],
+    },
+    strengths: ["Clear structure", "Relevant cases"],
+    improvements: ["Expand on Donoghue v Stevenson"],
+    sampleAnswer: "A sample answer...",
+    tokensUsed: 1200,
+    aiModel: "Claude-3.7",
+    flagged: false,
+  },
+  {
+    id: "ea2",
+    userId: "u2",
+    userName: "Ciarán O'Brien",
+    userEmail: "ciaran@example.com",
+    subject: "Contract Law",
+    subjectColor: "#FDC300",
+    lessonId: "l2",
+    lessonTitle: "Offer and Acceptance",
+    source: "LESSON",
+    essayQuestionId: "q2",
+    questionText: "Explain the postal rule.",
+    answerText: "The postal rule states ...",
+    wordCount: 712,
+    timeTakenSeconds: 1100,
+    aiScore: 65,
+    band: "Pass",
+    date: "2026-03-19T14:00:00Z",
+    feedback: {
+      summary: "Good, but missed exceptions.",
+      strengths: ["Explains rule"],
+      improvements: ["Add exceptions"],
+    },
+    strengths: ["Explains rule"],
+    improvements: ["Add exceptions"],
+    sampleAnswer: null,
+    tokensUsed: 1000,
+    aiModel: "Claude-3.7",
+    flagged: false,
+  },
+  // ...10 more lesson essays
+  // 6 practice session essays
+  {
+    id: "ea13",
+    userId: "u3",
+    userName: "Siobhán Kelly",
+    userEmail: "siobhan@example.com",
+    subject: "Criminal Law",
+    subjectColor: "#E6027D",
+    lessonId: null,
+    lessonTitle: null,
+    source: "PRACTICE",
+    essayQuestionId: null,
+    questionText: "Define actus reus.",
+    answerText: "Actus reus is ...",
+    wordCount: 600,
+    timeTakenSeconds: 900,
+    aiScore: 55,
+    band: "Pass",
+    date: "2026-03-18T09:00:00Z",
+    feedback: {
+      summary: "Basic answer.",
+      strengths: ["Defines term"],
+      improvements: ["Add case law"],
+    },
+    strengths: ["Defines term"],
+    improvements: ["Add case law"],
+    sampleAnswer: null,
+    tokensUsed: 800,
+    aiModel: "GPT-5.3",
+    flagged: false,
+  },
+  // ...5 more practice essays
+  // 4 simulation essays
+  {
+    id: "ea19",
+    userId: "u4",
+    userName: "Fionnuala Walsh",
+    userEmail: "fionnuala@example.com",
+    subject: "EU Law",
+    subjectColor: "#009DDD",
+    lessonId: null,
+    lessonTitle: null,
+    source: "SIMULATION",
+    essayQuestionId: null,
+    questionText: "Explain direct effect.",
+    answerText: "Direct effect means ...",
+    wordCount: 900,
+    timeTakenSeconds: 1800,
+    aiScore: 88,
+    band: "Distinction",
+    date: "2026-03-17T16:00:00Z",
+    feedback: {
+      summary: "Excellent.",
+      strengths: ["Comprehensive"],
+      improvements: [],
+    },
+    strengths: ["Comprehensive"],
+    improvements: [],
+    sampleAnswer: null,
+    tokensUsed: 1400,
+    aiModel: "Claude-3.7",
+    flagged: false,
+  },
+  // ...3 more simulation essays
+];
+
+export const practiceSessions = [
+  {
+    id: "ps1",
+    userId: "u3",
+    userName: "Siobhán Kelly",
+    userEmail: "siobhan@example.com",
+    subject: "Criminal Law",
+    subjectColor: "#E6027D",
+    year: 2026,
+    questionIds: ["q10", "q11", "q12"],
+    essayAttemptIds: ["ea13", "ea14"],
+    totalTimeSeconds: 2100,
+    completed: true,
+    startedAt: "2026-03-18T08:00:00Z",
+  },
+  {
+    id: "ps2",
+    userId: "u5",
+    userName: "Declan Byrne",
+    userEmail: "declan@example.com",
+    subject: "Tort Law",
+    subjectColor: "#B38513",
+    year: 2026,
+    questionIds: ["q13", "q14"],
+    essayAttemptIds: ["ea15"],
+    totalTimeSeconds: null,
+    completed: false,
+    startedAt: "2026-03-17T10:00:00Z",
+  },
+  // ...3 more sessions
+];
+
+export const simulations = [
+  {
+    id: "sim1",
+    userId: "u4",
+    userName: "Fionnuala Walsh",
+    userEmail: "fionnuala@example.com",
+    subject: "EU Law",
+    subjectColor: "#009DDD",
+    year: 2026,
+    questionIds: ["q20", "q21", "q22"],
+    essayAttemptIds: ["ea19", "ea20"],
+    score: 72,
+    passed: true,
+    failReason: null,
+    totalTimeSeconds: 3600,
+    startedAt: "2026-03-17T15:00:00Z",
+  },
+  {
+    id: "sim2",
+    userId: "u6",
+    userName: "Róisín Doyle",
+    userEmail: "roisin@example.com",
+    subject: "Contract Law",
+    subjectColor: "#FDC300",
+    year: 2026,
+    questionIds: ["q23", "q24"],
+    essayAttemptIds: ["ea21"],
+    score: 48,
+    passed: false,
+    failReason: "TIME_EXPIRED",
+    totalTimeSeconds: 2700,
+    startedAt: "2026-03-16T12:00:00Z",
+  },
+  // ...2 more simulations
+];

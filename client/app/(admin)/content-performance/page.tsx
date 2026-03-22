@@ -66,11 +66,11 @@ export default function ContentPerformancePage() {
       <div className={styles.card}>
         <div className={styles.cardHeader} style={{ marginBottom: 16 }}>
           <h3 className={styles.cardTitle}>Lesson Performance</h3>
-          <div className={styles.filterPills}>
+          <div className={styles.filterPillsRow}>
             {['All', ...Array.from(new Set(lessonPerformance.map((l) => l.subjectName)))].map((s) => (
               <button
                 key={s}
-                className={`${styles.filterBtn} ${subjectFilter === s ? styles.filterBtnActive : ''}`}
+                className={subjectFilter === s ? styles.filterPillActive : styles.filterPill}
                 onClick={() => {
                   setSubjectFilter(s)
                   setLessonPage(1)

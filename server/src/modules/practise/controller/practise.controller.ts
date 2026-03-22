@@ -16,11 +16,12 @@ import { sendSuccess } from '@/shared/utils';
 
 export async function getPastQuestions(req: Request, res: Response) {
   try {
-    const { search, subject, year, page, limit } = req.query;
+    const { search, subject, sitting, examType, page, limit } = req.query;
     const data = await getPastQuestionsService({
       search: search as string | undefined,
       subject: subject as string | undefined,
-      year: year ? parseInt(year as string) : undefined,
+      sitting: sitting as string | undefined,
+      examType: examType as string | undefined,
       page: page ? parseInt(page as string) : 1,
       limit: limit ? parseInt(limit as string) : 9,
     });
