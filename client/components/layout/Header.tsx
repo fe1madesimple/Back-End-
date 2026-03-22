@@ -204,7 +204,7 @@ export default function Header() {
         <Image
           src="https://res.cloudinary.com/dkrjrfqpy/image/upload/v1773753081/Frame_23_1_thcowx.svg"
           alt="FE-1 Admin"
-          width={100}
+          width={40}
           height={28}
           style={{ objectFit: 'contain' }}
         />
@@ -296,7 +296,7 @@ export default function Header() {
 
               {/* Overlay footer */}
               <div style={{ display: 'flex', justifyContent: 'flex-end', padding: '16px 20px', borderTop: '1px solid var(--border-default)' }}>
-                <button
+                <button   
                   onClick={() => setSelectedNotif(null)}
                   style={{
                     background: 'var(--bg-card)', border: '1px solid var(--border-default)',
@@ -306,7 +306,7 @@ export default function Header() {
                 >
                   Close
                 </button>
-              </div>
+              </div>    
             </motion.div>
           </>
         )}

@@ -100,7 +100,7 @@ export default function Sidebar() {
 
       {/* Logo */}
       <div
-        className={`${styles.logoWrap} ${isCollapsed ? styles.logoCollapsed : styles.logoExpanded}`}
+        className={`${styles.logoWrap} ${isCollapsed ? styles.logoCollapsed : styles.logoExpanded}`}   
       >
         <Image
           src="https://res.cloudinary.com/dkrjrfqpy/image/upload/v1773753081/Frame_23_1_thcowx.svg"
@@ -109,6 +109,7 @@ export default function Sidebar() {
           height={isCollapsed ? 32 : 32}
           style={{ objectFit: "contain", transition: "all 0.28s ease" }}
         />
+        <span>Made Simple</span>
       </div>
 
       {/* Nav */}
