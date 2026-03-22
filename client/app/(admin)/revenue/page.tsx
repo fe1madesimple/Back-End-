@@ -1,7 +1,6 @@
 "use client";
 
-import { useState, useCallback, useEffect, useMemo } from "react";
-import { SkStatStrip, SkTable } from "@/components/ui/Skeletons";
+import { useState, useCallback, useMemo } from "react";
 import Pagination from "@/components/ui/Pagination";
 import { usePagination } from "@/lib/usePagination";
 import { motion, AnimatePresence } from "framer-motion";
@@ -56,19 +55,12 @@ const relativeTime = (d: string) => {
 };
 
 export default function RevenuePage() {
-  const [loading, setLoading] = useState(true);
   const [toast, setToast] = useState<ToastType | null>(null);
   const [targetMRR, setTargetMRR] = useState(6000);
-  const [paymentPage, setPaymentPage] = useState(1);
   const [retryingId, setRetryingId] = useState<string | null>(null);
   const PAYMENTS_PER_PAGE = 15;
+  const FAILED_PER_PAGE = 15;
   const CHURN_PER_PAGE = 15;
-  const UPGRADE_PER_PAGE = 15;
-
-  useEffect(() => {
-    const t = setTimeout(() => setLoading(false), 1200);
-    return () => clearTimeout(t);
-  }, []);
 
   const showToast = useCallback(
     (message: string, type: ToastType["type"] = "success") => {
@@ -92,13 +84,26 @@ export default function RevenuePage() {
   const mrrGrowth = revenueData.mrrGrowthPercent;
   const mrrTrend = revenueData.mrrTrend;
 
-  const paginatedPayments = revenueData.recentPayments.slice(
-    (paymentPage - 1) * PAYMENTS_PER_PAGE,
-    paymentPage * PAYMENTS_PER_PAGE,
-  );
-  const paymentTotalPages = Math.ceil(
-    revenueData.recentPayments.length / PAYMENTS_PER_PAGE,
-  );
+  const {
+    page: paymentPage,
+    setPage: setPaymentPage,
+    paginated: paginatedPayments,
+    total: paymentTotal,
+  } = usePagination(revenueData.recentPayments, PAYMENTS_PER_PAGE);
+
+  const {
+    page: failedPage,
+    setPage: setFailedPage,
+    paginated: paginatedFailed,
+    total: failedTotal,
+  } = usePagination(revenueData.failedPayments, FAILED_PER_PAGE);
+
+  const {
+    page: churnPage,
+    setPage: setChurnPage,
+    paginated: paginatedChurn,
+    total: churnTotal,
+  } = usePagination(revenueData.churnedThisMonth, CHURN_PER_PAGE);
 
   // Subscribers needed to hit target
   const subscribersNeeded = Math.ceil(
@@ -486,7 +491,7 @@ export default function RevenuePage() {
               </tr>
             </thead>
             <tbody>
-              {revenueData.churnedThisMonth.map((c) => (
+              {paginatedChurn.map((c) => (
                 <tr key={c.id} className={styles.tr}>
                   <td className={styles.td}>
                     <div className={styles.userCell}>
@@ -533,6 +538,12 @@ export default function RevenuePage() {
             </tbody>
           </table>
         </div>
+        <Pagination
+          page={churnPage}
+          total={churnTotal}
+          perPage={CHURN_PER_PAGE}
+          onChange={setChurnPage}
+        />
       </div>
 
       {/* SECTION 5 - UPGRADES & DOWNGRADES */}
@@ -749,39 +760,15 @@ export default function RevenuePage() {
         <div className={styles.paginationRow}>
           <span className={styles.paginationInfo}>
             Showing {(paymentPage - 1) * PAYMENTS_PER_PAGE + 1}-
-            {Math.min(
-              paymentPage * PAYMENTS_PER_PAGE,
-              revenueData.recentPayments.length,
-            )}{" "}
-            of {revenueData.recentPayments.length}
+            {Math.min(paymentPage * PAYMENTS_PER_PAGE, paymentTotal)} of{" "}
+            {paymentTotal}
           </span>
-          <div className={styles.pagination}>
-            <button
-              className={styles.pageBtn}
-              onClick={() => setPaymentPage((p) => Math.max(1, p - 1))}
-              disabled={paymentPage === 1}
-            >
-              ← Prev
-            </button>
-            {Array.from({ length: paymentTotalPages }, (_, i) => (
-              <button
-                key={i}
-                className={`${styles.pageBtn} ${paymentPage === i + 1 ? styles.pageBtnActive : ""}`}
-                onClick={() => setPaymentPage(i + 1)}
-              >
-                {i + 1}
-              </button>
-            ))}
-            <button
-              className={styles.pageBtn}
-              onClick={() =>
-                setPaymentPage((p) => Math.min(paymentTotalPages, p + 1))
-              }
-              disabled={paymentPage === paymentTotalPages}
-            >
-              Next →
-            </button>
-          </div>
+          <Pagination
+            page={paymentPage}
+            total={paymentTotal}
+            perPage={PAYMENTS_PER_PAGE}
+            onChange={setPaymentPage}
+          />
         </div>
       </div>
 
@@ -813,7 +800,7 @@ export default function RevenuePage() {
         </div>
 
         <div className={styles.failedList}>
-          {revenueData.failedPayments.map((f) => (
+          {paginatedFailed.map((f) => (
             <div key={f.id} className={styles.failedRow}>
               <div className={styles.userCell} style={{ flex: 1 }}>
                 <div
@@ -868,6 +855,12 @@ export default function RevenuePage() {
             </div>
           ))}
         </div>
+        <Pagination
+          page={failedPage}
+          total={failedTotal}
+          perPage={FAILED_PER_PAGE}
+          onChange={setFailedPage}
+        />
       </div>
 
       {/* SECTION 8 - REVENUE FORECAST */}

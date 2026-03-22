@@ -1,6 +1,4 @@
 "use client";
-import { useState, useEffect } from "react";
-import { SkStatStrip, SkCard } from "@/components/ui/Skeletons";
 import StatCard from "@/components/ui/StatCard";
 import Badge from "@/components/ui/Badge";
 import RevenueChart from "@/components/charts/RevenueChart";
@@ -14,27 +12,6 @@ import {
 import styles from "./dashboard.module.css";
 
 export default function DashboardPage() {
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    const t = setTimeout(() => setIsLoading(false), 1000);
-    return () => clearTimeout(t);
-  }, []);
-
-  if (isLoading)
-    return (
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: 16,
-          padding: "24px 0",
-        }}
-      >
-        <SkStatStrip count={6} />
-        <SkCard count={4} />
-      </div>
-    );
-
   const recentUsers = users.slice(0, 5);
   const todayIso = "2026-03-17";
 

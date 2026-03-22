@@ -31,7 +31,7 @@ import {
   Ban,
 } from "lucide-react";
 import Badge from "@/components/ui/Badge";
-import { recoveryData } from "@/lib/dummy-data";
+import { recoveryData, failedPaymentsHistory } from "@/lib/dummy-data";
 import styles from "./recovery.module.css";
 
 type ToastType = {
@@ -55,7 +55,6 @@ const formatDateTime = (d: string) =>
   });
 
 export default function RecoveryPage() {
-  const [loading, setLoading] = useState(true);
   const [toast, setToast] = useState<ToastType | null>(null);
   const [retryingId, setRetryingId] = useState<string | null>(null);
   const [emailingId, setEmailingId] = useState<string | null>(null);
@@ -64,18 +63,11 @@ export default function RecoveryPage() {
   const [unrecovarableIds, setUnrecoverableIds] = useState<string[]>([]);
   const [settings, setSettings] = useState(recoveryData.settings);
   const [savingSettings, setSavingSettings] = useState(false);
-  const [queuePage, setQueuePage] = useState(1);
-  const [historyPage, setHistoryPage] = useState(1);
   const [confirmUnrecoverable, setConfirmUnrecoverable] = useState<
     (typeof recoveryData.failedQueue)[0] | null
   >(null);
   const QUEUE_PER_PAGE = 12;
   const HISTORY_PER_PAGE = 15;
-
-  useEffect(() => {
-    const t = setTimeout(() => setLoading(false), 1200);
-    return () => clearTimeout(t);
-  }, []);
 
   const showToast = useCallback(
     (message: string, type: ToastType["type"] = "success") => {
@@ -138,6 +130,20 @@ export default function RecoveryPage() {
   const activeQueue = recoveryData.failedQueue.filter(
     (f) => !recoveredIds.includes(f.id) && !unrecovarableIds.includes(f.id),
   );
+
+  const {
+    page: queuePage,
+    setPage: setQueuePage,
+    paginated: paginatedQueue,
+    total: queueTotal,
+  } = usePagination(activeQueue, QUEUE_PER_PAGE);
+
+  const {
+    page: historyPage,
+    setPage: setHistoryPage,
+    paginated: paginatedHistory,
+    total: historyTotal,
+  } = usePagination(failedPaymentsHistory, HISTORY_PER_PAGE);
 
   const stageStatusVariant = (
     status: string,
@@ -276,7 +282,7 @@ export default function RecoveryPage() {
           </div>
         ) : (
           <div className={styles.queueList}>
-            {activeQueue.map((f) => (
+            {paginatedQueue.map((f) => (
               <div
                 key={f.id}
                 className={`${styles.queueCard} ${f.status === "Final Notice" ? styles.queueCardDanger : f.status === "Escalated" ? styles.queueCardWarning : styles.queueCardDefault}`}
@@ -411,6 +417,70 @@ export default function RecoveryPage() {
             ))}
           </div>
         )}
+        <Pagination
+          page={queuePage}
+          total={queueTotal}
+          perPage={QUEUE_PER_PAGE}
+          onChange={setQueuePage}
+        />
+      </div>
+
+      <div className={styles.card}>
+        <div className={styles.cardHeader}>
+          <div>
+            <h3 className={styles.cardTitle}>Failed Payments History</h3>
+            <p className={styles.cardSub}>Historical recovery outcomes</p>
+          </div>
+        </div>
+        <div className={styles.tableWrap}>
+          <table className={styles.table}>
+            <thead>
+              <tr>
+                {[
+                  "User",
+                  "Amount",
+                  "Plan",
+                  "Failed At",
+                  "Retries",
+                  "Status",
+                ].map((h) => (
+                  <th key={h} className={styles.th}>
+                    {h}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {paginatedHistory.map((h) => (
+                <tr key={h.id} className={styles.tr}>
+                  <td className={styles.td}>{h.userName}</td>
+                  <td className={styles.td}>€{h.amount}</td>
+                  <td className={styles.td}>{h.plan}</td>
+                  <td className={styles.td}>{formatDateTime(h.failedAt)}</td>
+                  <td className={styles.td}>{h.retries}</td>
+                  <td className={styles.td}>
+                    <Badge
+                      label={h.status}
+                      variant={
+                        h.status === "Recovered"
+                          ? "success"
+                          : h.status === "Written Off"
+                            ? "danger"
+                            : "warning"
+                      }
+                    />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <Pagination
+          page={historyPage}
+          total={historyTotal}
+          perPage={HISTORY_PER_PAGE}
+          onChange={setHistoryPage}
+        />
       </div>
 
       {/* ═══ SECTION 3 — RECOVERY CHART ═══ */}

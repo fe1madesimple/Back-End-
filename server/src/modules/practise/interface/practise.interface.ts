@@ -8,6 +8,8 @@ export interface PastQuestionsQuery {
   year?: number;
   page?: number;
   limit?: number;
+   sitting?: string; 
+   examType?: string;
 }
 
 export interface PastQuestionCard {
@@ -16,6 +18,7 @@ export interface PastQuestionCard {
   year: number | null;
   examType: string | null;
   description: string | null;
+   sitting: string | null;
   text: string;
   order: number;
 }
@@ -29,7 +32,7 @@ export interface PastQuestionsPagination {
 
 export interface PastQuestionsFilters {
   subjects: string[];
-  years: number[];
+  sittings: string[];
 }
 
 export interface PastQuestionsResponse {

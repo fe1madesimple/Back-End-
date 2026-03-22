@@ -1,6 +1,9 @@
 'use client'
+import { useMemo, useState } from 'react'
 import { TrendingUp, TrendingDown, Clock, BookOpen, HelpCircle, Download } from 'lucide-react'
-import { contentPerformanceData } from '@/lib/dummy-data'
+import Pagination from '@/components/ui/Pagination'
+import { usePagination } from '@/lib/usePagination'
+import { contentPerformanceData, lessonPerformance } from '@/lib/dummy-data'
 import styles from './content-performance.module.css'
 
 const passRateColor = (r: number) =>
@@ -8,6 +11,20 @@ const passRateColor = (r: number) =>
 
 export default function ContentPerformancePage() {
   const d = contentPerformanceData
+  const [subjectFilter, setSubjectFilter] = useState('All')
+  const LESSONS_PER_PAGE = 15
+
+  const filteredLessons = useMemo(
+    () => lessonPerformance.filter((l) => subjectFilter === 'All' || l.subjectName === subjectFilter),
+    [subjectFilter],
+  )
+
+  const {
+    page: lessonPage,
+    setPage: setLessonPage,
+    paginated: paginatedLessons,
+    total: lessonTotal,
+  } = usePagination(filteredLessons, LESSONS_PER_PAGE)
 
   return (
     <div className={styles.page}>
@@ -47,49 +64,63 @@ export default function ContentPerformancePage() {
 
       {/* Subject engagement */}
       <div className={styles.card}>
-        <h3 className={styles.cardTitle} style={{ marginBottom: 20 }}>Subject Engagement Overview</h3>
+        <div className={styles.cardHeader} style={{ marginBottom: 16 }}>
+          <h3 className={styles.cardTitle}>Lesson Performance</h3>
+          <div className={styles.filterPills}>
+            {['All', ...Array.from(new Set(lessonPerformance.map((l) => l.subjectName)))].map((s) => (
+              <button
+                key={s}
+                className={`${styles.filterBtn} ${subjectFilter === s ? styles.filterBtnActive : ''}`}
+                onClick={() => {
+                  setSubjectFilter(s)
+                  setLessonPage(1)
+                }}
+              >
+                {s}
+              </button>
+            ))}
+          </div>
+        </div>
         <div className={styles.tableWrap}>
           <table className={styles.table}>
             <thead>
               <tr>
-                {['Subject', 'Students', 'Completion Rate', 'MCQ Pass Rate', 'Avg Time', 'Drop-Off Rate'].map((h) => (
+                {['Lesson', 'Subject', 'Attempts', 'Avg Score', 'Completion', 'Avg Time', 'Difficulty', 'Flags'].map((h) => (
                   <th key={h} className={styles.th}>{h}</th>
                 ))}
               </tr>
             </thead>
             <tbody>
-              {d.subjectEngagement.map((s, i) => (
-                <tr key={i} className={styles.tr}>
+              {paginatedLessons.map((s) => (
+                <tr key={s.id} className={styles.tr}>
+                  <td className={styles.td}>
+                    <span style={{ fontSize: 13, fontWeight: 500, color: 'var(--text-primary)' }}>{s.lessonTitle}</span>
+                  </td>
                   <td className={styles.td}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                      <div style={{ width: 10, height: 10, borderRadius: '50%', background: s.color, flexShrink: 0 }} />
-                      <span style={{ fontSize: 13, fontWeight: 500, color: 'var(--text-primary)' }}>{s.subject}</span>
+                      <div style={{ width: 10, height: 10, borderRadius: '50%', background: s.subjectColor, flexShrink: 0 }} />
+                      <span style={{ fontSize: 13, fontWeight: 500, color: 'var(--text-primary)' }}>{s.subjectName}</span>
                     </div>
                   </td>
-                  <td className={styles.td}><span className={styles.numText}>{s.totalStudents}</span></td>
+                  <td className={styles.td}><span className={styles.numText}>{s.attempts}</span></td>
+                  <td className={styles.td}>
+                    <span style={{ fontSize: 13, fontWeight: 600, color: passRateColor(s.avgScore) }}>{s.avgScore}%</span>
+                  </td>
                   <td className={styles.td}>
                     <div className={styles.rateWrap}>
                       <span style={{ fontSize: 13, fontWeight: 600, color: passRateColor(s.completionRate) }}>{s.completionRate}%</span>
                       <div className={styles.rateBar}><div className={styles.rateFill} style={{ width: `${s.completionRate}%`, background: passRateColor(s.completionRate) }} /></div>
                     </div>
                   </td>
-                  <td className={styles.td}>
-                    <div className={styles.rateWrap}>
-                      <span style={{ fontSize: 13, fontWeight: 600, color: passRateColor(s.mcqPassRate) }}>{s.mcqPassRate}%</span>
-                      <div className={styles.rateBar}><div className={styles.rateFill} style={{ width: `${s.mcqPassRate}%`, background: passRateColor(s.mcqPassRate) }} /></div>
-                    </div>
-                  </td>
-                  <td className={styles.td}><span className={styles.numText}>{s.avgTimeMin}min</span></td>
-                  <td className={styles.td}>
-                    <span style={{ fontSize: 13, fontWeight: 600, color: s.dropOffRate >= 50 ? 'var(--red)' : s.dropOffRate >= 25 ? 'var(--amber)' : 'var(--green)' }}>
-                      {s.dropOffRate}%
-                    </span>
-                  </td>
+                  <td className={styles.td}><span className={styles.numText}>{s.avgTimeMinutes}min</span></td>
+                  <td className={styles.td}><span className={styles.numText}>{s.difficulty}</span></td>
+                  <td className={styles.td}><span className={styles.numText}>{s.flagCount}</span></td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
+        <Pagination page={lessonPage} total={lessonTotal} perPage={LESSONS_PER_PAGE} onChange={setLessonPage} />
       </div>
 
       {/* Top and drop-off lessons */}

@@ -905,6 +905,7 @@ model Question {
   year     Int?
   subject  String?
   examType String?
+  sitting  String? 
 
   order       Int     @default(0)
   isPublished Boolean @default(true)
@@ -921,6 +922,7 @@ model Question {
   @@index([lessonId])
   @@index([type])
   @@index([subject])
+  @@index([sitting]) 
   @@index([year])
   @@map("questions")
 }
@@ -1000,3 +1002,4 @@ enum QuestionType {
   MCQ
   ESSAY
 }
+

@@ -15,20 +15,33 @@ import {
   ClaudeGradingResult,
   QuestionScoreItem,
 } from '../interface/practise.interface';
+import { QuestionType, Prisma  } from '@prisma/client';
 
 // ── getPastQuestionsService ──────────────────────────────────
+
 
 export async function getPastQuestionsService(
   query: PastQuestionsQuery
 ): Promise<PastQuestionsResponse> {
-  const { search, subject, year, page = 1, limit = 9 } = query;
+  const { search, subject, sitting, examType, page = 1, limit = 9 } = query;
   const skip = (page - 1) * limit;
 
-  const where: any = {
-    type: 'ESSAY',
+  const monthOrder: Record<string, number> = {
+    March: 0,
+    April: 1,
+    August: 2,
+    October: 3,
+    November: 4,
+  };
+
+  const where: Prisma.QuestionWhereInput = {
+    type: QuestionType.ESSAY,
     isPublished: true,
+    lessonId: null,
+    year: { not: null },
     ...(subject && { subject }),
-    ...(year && { year }),
+    ...(sitting && { sitting }),
+    ...(examType && { examType }),
     ...(search && {
       OR: [
         { text: { contains: search, mode: 'insensitive' } },
@@ -38,45 +51,67 @@ export async function getPastQuestionsService(
     }),
   };
 
-  const [questions, total] = await Promise.all([
+  const baseWhere: Prisma.QuestionWhereInput = {
+    type: QuestionType.ESSAY,
+    isPublished: true,
+    lessonId: null,
+    year: { not: null },
+  };
+
+  const [questions, total, subjectRows, sittingRows] = await Promise.all([
     prisma.question.findMany({
       where,
       select: {
         id: true,
         subject: true,
         year: true,
+        sitting: true,
         examType: true,
         description: true,
         text: true,
         order: true,
       },
-      orderBy: [{ year: 'desc' }, { subject: 'asc' }, { order: 'asc' }],
+      orderBy: [
+        { year: 'desc' },
+        { subject: 'asc' },
+        { order: 'asc' },
+      ],
       skip,
       take: limit,
     }),
     prisma.question.count({ where }),
-  ]);
-
-  const [subjectRows, yearRows] = await Promise.all([
     prisma.question.findMany({
-      where: { type: 'ESSAY', isPublished: true },
+      where: baseWhere,
       select: { subject: true },
       distinct: ['subject'],
       orderBy: { subject: 'asc' },
     }),
     prisma.question.findMany({
-      where: { type: 'ESSAY', isPublished: true },
-      select: { year: true },
-      distinct: ['year'],
-      orderBy: { year: 'desc' },
+      where: baseWhere,
+      select: { sitting: true, year: true },
+      distinct: ['sitting'],
     }),
   ]);
 
+  const sortedSittings = sittingRows
+    .map(r => ({ sitting: r.sitting, year: r.year }))
+    .filter((r): r is { sitting: string; year: number } =>
+      r.sitting !== null && r.year !== null
+    )
+    .sort((a, b) => {
+      if (b.year !== a.year) return b.year - a.year;
+      const aMonth = a.sitting.split(' ')[0];
+      const bMonth = b.sitting.split(' ')[0];
+      return (monthOrder[aMonth] ?? 99) - (monthOrder[bMonth] ?? 99);
+    })
+    .map(r => r.sitting);
+
   return {
-    questions: questions.map((q) => ({
+    questions: questions.map(q => ({
       id: q.id,
       subject: q.subject,
       year: q.year,
+      sitting: q.sitting,
       examType: q.examType,
       description: q.description,
       text: q.text,
@@ -89,8 +124,10 @@ export async function getPastQuestionsService(
       totalPages: Math.ceil(total / limit),
     },
     filters: {
-      subjects: subjectRows.map((s) => s.subject).filter(Boolean) as string[],
-      years: yearRows.map((y) => y.year).filter(Boolean) as number[],
+      subjects: subjectRows
+        .map(s => s.subject)
+        .filter((s): s is string => s !== null),
+      sittings: sortedSittings,
     },
   };
 }

@@ -14,7 +14,7 @@ const podcastController = new PodcastController();
 
 /**
  * @swagger
- * /podcasts:
+ * /api/v1/podcasts:
  *   get:
  *     summary: Get all podcasts
  *     tags: [Podcasts]
@@ -78,7 +78,7 @@ router.get('/', protect, podcastController.getAllPodcasts.bind(podcastController
 
 /**
  * @swagger
- * /podcasts/{id}:
+ * /api/v1/podcasts/{id}:
  *   get:
  *     summary: Get a single podcast by ID
  *     tags: [Podcasts]

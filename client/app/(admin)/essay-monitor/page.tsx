@@ -1,222 +1,407 @@
-'use client'
-import { useState, useCallback, useEffect, useMemo } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+"use client";
+import { useState, useCallback, useEffect, useMemo } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import {
-  FileText, CheckCircle, Flag, TrendingUp,
-  Clock, Star, Download, X,
-  RefreshCw
-} from 'lucide-react'
-import Badge from '@/components/ui/Badge'
-import { SkStatStrip, SkTable } from '@/components/ui/Skeletons'
-import Pagination from '@/components/ui/Pagination'
-import { usePagination } from '@/lib/usePagination'
-import { essayMonitorData } from '@/lib/dummy-data'
-import styles from './essay-monitor.module.css'
+  FileText,
+  CheckCircle,
+  Flag,
+  TrendingUp,
+  Clock,
+  Star,
+  Download,
+  X,
+  RefreshCw,
+} from "lucide-react";
+import Badge from "@/components/ui/Badge";
+import Pagination from "@/components/ui/Pagination";
+import { usePagination } from "@/lib/usePagination";
+import { essayAttempts, practiceSessions, simulations } from "@/lib/dummy-data";
+import styles from "./essay-monitor.module.css";
 
-type ToastType = { message: string; type: 'success' | 'danger' | 'warning' | 'info' }
+type ToastType = {
+  message: string;
+  type: "success" | "danger" | "warning" | "info";
+};
 
-const bandVariant = (band: string): 'success' | 'info' | 'warning' | 'danger' | 'default' =>
-  band === 'A' ? 'success' : band === 'B' ? 'info' : band === 'C' ? 'warning' : band === 'D' || band === 'F' ? 'danger' : 'default'
+const bandVariant = (
+  band: string,
+): "success" | "info" | "warning" | "danger" | "default" =>
+  band === "A"
+    ? "success"
+    : band === "B"
+      ? "info"
+      : band === "C"
+        ? "warning"
+        : band === "D" || band === "F"
+          ? "danger"
+          : "default";
 
 const scoreColor = (score: number) =>
-  score >= 80 ? 'var(--green)' : score >= 65 ? 'var(--blue-bright)' : score >= 50 ? 'var(--amber)' : 'var(--red)'
+  score >= 80
+    ? "var(--green)"
+    : score >= 65
+      ? "var(--blue-bright)"
+      : score >= 50
+        ? "var(--amber)"
+        : "var(--red)";
 
 const relativeTime = (d: string) => {
-  const diff = Math.floor((Date.now() - new Date(d).getTime()) / 60000)
-  if (diff < 60) return `${diff}m ago`
-  if (diff < 1440) return `${Math.floor(diff / 60)}h ago`
-  return `${Math.floor(diff / 1440)}d ago`
-}
+  const diff = Math.floor((Date.now() - new Date(d).getTime()) / 60000);
+  if (diff < 60) return `${diff}m ago`;
+  if (diff < 1440) return `${Math.floor(diff / 60)}h ago`;
+  return `${Math.floor(diff / 1440)}d ago`;
+};
 
-export default function EssayMonitorPage() {
-  const [loading, setLoading] = useState(true)
-  const [toast, setToast] = useState<ToastType | null>(null)
-  const [filterBand, setFilterBand] = useState('All')
-  const [filterFlagged, setFilterFlagged] = useState(false)
-  const [selectedEssay, setSelectedEssay] = useState<typeof essayMonitorData.recentEssays[0] | null>(null)
-  const [flaggingId, setFlaggingId] = useState<string | null>(null)
 
-  useEffect(() => {
-    const t = setTimeout(() => setLoading(false), 1200)
-    return () => clearTimeout(t)
-  }, [])
+  const [toast, setToast] = useState<ToastType | null>(null);
+  const [tab, setTab] = useState<'lesson' | 'practice' | 'simulation'>('lesson');
+  const [search, setSearch] = useState("");
+  const [subjectFilter, setSubjectFilter] = useState("All");
+  const [selectedEssay, setSelectedEssay] = useState<any>(null);
+  const [expandedSession, setExpandedSession] = useState<string | null>(null);
+  const [expandedSim, setExpandedSim] = useState<string | null>(null);
 
-  const showToast = useCallback((message: string, type: ToastType['type'] = 'success') => {
-    setToast({ message, type })
-    setTimeout(() => setToast(null), 3000)
-  }, [])
+  // Filter helpers
+  const lessonEssays = essayAttempts.filter(e => e.source === 'LESSON' || e.essayQuestionId);
+  const filteredLessonEssays = lessonEssays.filter(e =>
+    (!search || e.userName.toLowerCase().includes(search.toLowerCase()) || e.userEmail.toLowerCase().includes(search.toLowerCase())) &&
+    (subjectFilter === 'All' || e.subject === subjectFilter)
+  );
+  const {
+    page: lessonPage,
+    setPage: setLessonPage,
+    paginated: paginatedLessonEssays,
+    total: lessonTotal,
+    reset: resetLessonPage,
+  } = usePagination(filteredLessonEssays, 15);
 
-  const handleFlag = (id: string, name: string) => {
-    setFlaggingId(id)
-    setTimeout(() => {
-      setFlaggingId(null)
-      showToast(`✓ Essay by ${name} flagged for human review`, 'warning')
-    }, 1200)
-  }
+  useEffect(() => { resetLessonPage(); }, [search, subjectFilter, resetLessonPage]);
 
-  const d = essayMonitorData
-  const totalGraded = d.gradeDistribution.reduce((s, g) => s + g.count, 0)
-  const PER_PAGE = 15
+  // Practice Sessions
+  const filteredPracticeSessions = practiceSessions.filter(s =>
+    subjectFilter === 'All' || s.subject === subjectFilter
+  );
+  const {
+    page: practicePage,
+    setPage: setPracticePage,
+    paginated: paginatedPracticeSessions,
+    total: practiceTotal,
+    reset: resetPracticePage,
+  } = usePagination(filteredPracticeSessions, 10);
+  useEffect(() => { resetPracticePage(); }, [subjectFilter, resetPracticePage]);
 
-  const filtered = useMemo(() => d.recentEssays.filter((e) => {
-    const matchBand = filterBand === 'All' || e.band === filterBand
-    const matchFlagged = !filterFlagged || e.flagged
-    return matchBand && matchFlagged
-  }), [d.recentEssays, filterBand, filterFlagged])
-if (loading) return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 16, padding: '24px 0' }}>
-      <SkStatStrip count={4} />
-      <SkTable rows={10} />
-    </div>
-  )
+  // Simulations
+  const filteredSimulations = simulations.filter(s =>
+    subjectFilter === 'All' || s.subject === subjectFilter
+  );
+  const {
+    page: simPage,
+    setPage: setSimPage,
+    paginated: paginatedSimulations,
+    total: simTotal,
+    reset: resetSimPage,
+  } = usePagination(filteredSimulations, 10);
+  useEffect(() => { resetSimPage(); }, [subjectFilter, resetSimPage]);
 
-  
-  const { page, setPage, paginated, total, totalPages, reset } = usePagination(filtered, PER_PAGE)
-
-  useEffect(() => {
-    reset()
-  }, [filterBand, filterFlagged, reset])
-
-  return (
-    <div className={styles.page}>
-
-      {/* Header */}
-      <div className={styles.pageHeader}>
-        <div>
-          <h1 className={styles.title}>Essay Grading Monitor</h1>
-          <p className={styles.subtitle}>AI-graded essay submissions - quality control and human review queue</p>
+  const showToast = useCallback(
+    (message: string, type: ToastType["type"] = "success") => {
+      setToast({ message, type });
+      setTimeout(() => setToast(null), 3000);
+    },
+    return (
+      <div className={styles.page}>
+        {/* Header */}
+        <div className={styles.pageHeader}>
+          <div>
+            <h1 className={styles.title}>Essay Grading Monitor</h1>
+            <p className={styles.subtitle}>Monitor and review all essay submissions, practice sessions, and simulations.</p>
+          </div>
         </div>
-        <button className={styles.exportBtn} onClick={() => showToast('✓ Essay report exported', 'info')}>
-          <Download size={14} /> Export Report
-        </button>
-      </div>
 
-      {/* Pulse */}
-      <div className={styles.pulseGrid}>
-        {[
-          { label: 'Total Submissions', value: d.stats.totalSubmissions, color: 'var(--blue-bright)', icon: FileText,    sub: 'all time'              },
-          { label: 'AI Graded',         value: d.stats.gradedByAI,       color: 'var(--green)',       icon: CheckCircle, sub: 'graded automatically'  },
-          { label: 'Flagged for Review',value: d.stats.flaggedForReview, color: 'var(--red)',         icon: Flag,        sub: 'need human review'     },
-          { label: 'Avg AI Score',      value: `${d.stats.avgScore}%`,   color: 'var(--amber)',       icon: Star,        sub: 'across all submissions'},
-          { label: 'Avg Grading Time',  value: `${d.stats.avgGradingTimeSeconds}s`, color: 'var(--purple)', icon: Clock, sub: 'per essay'            },
-          { label: 'Pass Rate',         value: `${d.stats.passRate}%`,   color: 'var(--green)',       icon: TrendingUp,  sub: 'scored 50% or above'   },
-        ].map((s, i) => {
-          const Icon = s.icon
-          return (
-            <div key={i} className={styles.pulseCard}>
-              <div className={styles.pulseTop}>
-                <div className={styles.pulseLabel}>{s.label}</div>
-                <div className={styles.pulseIconWrap} style={{ background: s.color + '20' }}>
-                  <Icon size={15} color={s.color} />
-                </div>
-              </div>
-              <div className={styles.pulseValue} style={{ color: s.color }}>{s.value}</div>
-              <div className={styles.pulseSub}>{s.sub}</div>
-            </div>
-          )
-        })}
-      </div>
-
-      {/* Grade distribution */}
-      <div className={styles.card}>
-        <h3 className={styles.cardTitle} style={{ marginBottom: 16 }}>Grade Distribution</h3>
-        <div className={styles.gradeDistrib}>
-          {d.gradeDistribution.map((g, i) => (
-            <div key={i} className={styles.gradeBar}>
-              <div className={styles.gradeBarLabel}>{g.band}</div>
-              <div className={styles.gradeBarTrack}>
-                <motion.div
-                  className={styles.gradeBarFill}
-                  style={{ background: g.color }}
-                  initial={{ width: 0 }}
-                  animate={{ width: `${(g.count / totalGraded) * 100}%` }}
-                  transition={{ duration: 0.6, delay: i * 0.1, ease: 'easeOut' }}
-                />
-              </div>
-              <div className={styles.gradeBarCount} style={{ color: g.color }}>{g.count}</div>
-              <div className={styles.gradeBarPercent}>{Math.round((g.count / totalGraded) * 100)}%</div>
-            </div>
+        {/* Sub-tab navigation */}
+        <div className={styles.tabNav}>
+          {[
+            { key: 'lesson', label: 'Lesson Essays' },
+            { key: 'practice', label: 'Practice Sessions' },
+            { key: 'simulation', label: 'Simulations' },
+          ].map(t => (
+            <button
+              key={t.key}
+              className={tab === t.key ? styles.tabActive : styles.tabBtn}
+              onClick={() => setTab(t.key as any)}
+            >
+              {t.label}
+            </button>
           ))}
         </div>
-      </div>total
 
-      {/* Essays table */}
-      <div className={styles.card}>
-        <div className={styles.cardHeader}>
-          <div>
-            <h3 className={styles.cardTitle}>Recent Submissions</h3>
-            <p className={styles.cardSub}>{filtered.length} essays</p>
-          </div>
-          <div className={styles.filterRow}>
-            <div className={styles.filterPills}>
-              {['All', 'A', 'B', 'C', 'D', 'F'].map((b) => (
-                <button
-                  key={b}
-                  className={`${styles.filterBtn} ${filterBand === b ? styles.filterBtnActive : ''}`}
-                  onClick={() => setFilterBand(b)}
-                >
-                  {b === 'All' ? 'All Grades' : `Grade ${b}`}
-                </button>
-              ))}
+        {/* Sub-tab content */}
+        {tab === 'lesson' && (
+          <div className={styles.card}>
+            <div className={styles.cardHeader}>
+              <h3 className={styles.cardTitle}>Lesson Essays</h3>
+              <div className={styles.filterRow}>
+                <input
+                  className={styles.searchInput}
+                  placeholder="Search student..."
+                  value={search}
+                  onChange={e => { setSearch(e.target.value); setLessonPage(1); }}
+                />
+                <div className={styles.filterPills}>
+                  {["All", ...Array.from(new Set(lessonEssays.map(e => e.subject)))].map(s => (
+                    <button
+                      key={s}
+                      className={subjectFilter === s ? styles.filterBtnActive : styles.filterBtn}
+                      onClick={() => { setSubjectFilter(s); setLessonPage(1); }}
+                    >
+                      {s === "All" ? "All Subjects" : s}
+                    </button>
+                  ))}
+                </div>
+              </div>
             </div>
-            <button
-              className={`${styles.filterBtn} ${filterFlagged ? styles.filterBtnDanger : ''}`}
-              onClick={() => setFilterFlagged((f) => !f)}
-            >
-              <Flag size={11} /> {filterFlagged ? 'Showing Flagged' : 'Show Flagged'}
-            </button>
+            <div className={styles.tableWrap}>
+              <table className={styles.table}>
+                <thead>
+                  <tr>
+                    <th>Student</th>
+                    <th>Subject</th>
+                    <th>Lesson</th>
+                    <th>Word Count</th>
+                    <th>Time Taken</th>
+                    <th>AI Score</th>
+                    <th>Band</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {paginatedLessonEssays.map(e => (
+                    <tr key={e.id} className={styles.tr}>
+                      <td>
+                        <div className={styles.userCell}>
+                          <div className={styles.userAvatar} style={{ background: scoreColor(e.aiScore) }}>
+                            {e.userName.split(" ").map(n => n[0]).join("").slice(0, 2)}
+                          </div>
+                          <div>
+                            <div className={styles.userName}>{e.userName}</div>
+                            <div className={styles.userEmail}>{e.userEmail}</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td><span className={styles.subjectTag} style={{ background: e.subjectColor }}>{e.subject}</span></td>
+                      <td><span className={styles.lessonTitleCell}>{e.lessonTitle ? e.lessonTitle.slice(0, 32) : "—"}</span></td>
+                      <td>{e.wordCount}</td>
+                      <td>{Math.floor(e.timeTakenSeconds / 60)}m {e.timeTakenSeconds % 60}s</td>
+                      <td><span style={{ color: scoreColor(e.aiScore) }}>{e.aiScore ?? 'Pending'}{e.aiScore == null ? '' : '%'}</span></td>
+                      <td><Badge label={e.band ?? 'Pending'} variant={bandVariant(e.band ?? '')} /></td>
+                      <td>{relativeTime(e.date)}</td>
+                      <td><button className={styles.viewBtn} onClick={ev => { ev.stopPropagation(); setSelectedEssay(e); }}>View Review</button></td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <Pagination page={lessonPage} total={lessonTotal} perPage={15} onChange={setLessonPage} />
           </div>
-        </div>
+        )}
 
-        <div className={styles.tableWrap}>
-          <table className={styles.table}>
-            <thead>
-              <tr>
-                {['Student', 'Subject', 'Score', 'Band', 'Words', 'AI Time', 'Graded', 'Actions'].map((h) => (
-                  <th key={h} className={styles.th}>{h}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {paginated.map((e) => (
-                <tr
-                  key={e.id}
-                  className={`${styles.tr} ${e.flagged ? styles.trFlagged : ''}`}
-                  onClick={() => setSelectedEssay(e)}
-                  style={{ cursor: 'pointer' }}
-                >
-                  <td className={styles.td}>
-                    <div className={styles.userCell}>
-                      <div className={styles.userAvatar} style={{ background: scoreColor(e.score) }}>
-                        {e.userName.split(' ').map((n) => n[0]).join('').slice(0, 2)}
-                      </div>
-                      <div>
-                        <div className={styles.userName}>{e.userName}</div>
-                        <div className={styles.userEmail}>{e.email}</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td className={styles.td}><span className={styles.subjectTag}>{e.subject}</span></td>
-                  <td className={styles.td}>
-                    <span style={{ fontSize: 16, fontWeight: 700, color: scoreColor(e.score) }}>{e.score}%</span>
-                  </td>
-                  <td className={styles.td}><Badge label={`Grade ${e.band}`} variant={bandVariant(e.band)} /></td>
-                  <td className={styles.td}><span className={styles.numText}>{e.wordCount}w</span></td>
-                  <td className={styles.td}><span className={styles.numText}>{e.timeTaken}s</span></td>
-                  <td className={styles.td}><span className={styles.numText}>{relativeTime(e.gradedAt)}</span></td>
-                  <td className={styles.td} onClick={(ev) => ev.stopPropagation()}>
-                    <div className={styles.rowActions}>
-                      {e.flagged && (
-                        <span style={{ fontSize: 10, fontWeight: 700, color: 'var(--red)', background: 'var(--red-bg)', border: '1px solid var(--red)', borderRadius: 20, padding: '2px 6px' }}>
-                          FLAGGED
-                        </span>
+        {tab === 'practice' && (
+          <div className={styles.card}>
+            <div className={styles.cardHeader}>
+              <h3 className={styles.cardTitle}>Practice Sessions</h3>
+              <div className={styles.filterRow}>
+                <div className={styles.filterPills}>
+                  {["All", ...Array.from(new Set(practiceSessions.map(s => s.subject)))].map(s => (
+                    <button
+                      key={s}
+                      className={subjectFilter === s ? styles.filterBtnActive : styles.filterBtn}
+                      onClick={() => { setSubjectFilter(s); setPracticePage(1); }}
+                    >
+                      {s === "All" ? "All Subjects" : s}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+            {/* Stats strip */}
+            <div className={styles.statsRow3} style={{ marginBottom: 16 }}>
+              <div className={styles.statsCard}>Total Sessions<br /><b>{practiceSessions.length}</b></div>
+              <div className={styles.statsCard}>Completed<br /><b>{practiceSessions.filter(s => s.completed).length}</b></div>
+              <div className={styles.statsCard}>Avg Completion Rate %<br /><b>{Math.round((practiceSessions.filter(s => s.completed).length / practiceSessions.length) * 100)}</b></div>
+              <div className={styles.statsCard}>Avg Time<br /><b>{Math.round(practiceSessions.reduce((a, s) => a + (s.totalTimeSeconds || 0), 0) / practiceSessions.length / 60)}m</b></div>
+            </div>
+            <div className={styles.tableWrap}>
+              <table className={styles.table}>
+                <thead>
+                  <tr>
+                    <th>Student</th>
+                    <th>Subject</th>
+                    <th>Year</th>
+                    <th>Questions</th>
+                    <th>Answers</th>
+                    <th>Time</th>
+                    <th>Completed</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {paginatedPracticeSessions.map(s => (
+                    <>
+                      <tr key={s.id} className={styles.tr} onClick={() => setExpandedSession(expandedSession === s.id ? null : s.id)} style={{ cursor: 'pointer' }}>
+                        <td><div className={styles.userCell}><div className={styles.userAvatar}>{s.userName.split(" ").map(n => n[0]).join("").slice(0, 2)}</div><div><div className={styles.userName}>{s.userName}</div><div className={styles.userEmail}>{s.userEmail}</div></div></div></td>
+                        <td><span className={styles.subjectTag} style={{ background: s.subjectColor }}>{s.subject}</span></td>
+                        <td>{s.year}</td>
+                        <td>{s.questionIds.length}</td>
+                        <td>{s.essayAttemptIds.length}</td>
+                        <td>{s.totalTimeSeconds ? `${Math.floor(s.totalTimeSeconds / 60)}m ${s.totalTimeSeconds % 60}s` : 'In progress'}</td>
+                        <td>{s.completed ? <Badge label="Completed" variant="success" /> : <Badge label="Incomplete" variant="warning" />}</td>
+                        <td>{relativeTime(s.startedAt)}</td>
+                      </tr>
+                      {expandedSession === s.id && (
+                        <tr className={styles.trAccordion}><td colSpan={8}>
+                          <table className={styles.innerTable}><thead><tr><th>Student</th><th>Subject</th><th>Word Count</th><th>Time Taken</th><th>AI Score</th><th>Band</th><th>Date</th><th>Actions</th></tr></thead><tbody>
+                            {essayAttempts.filter(ea => s.essayAttemptIds.includes(ea.id)).map(ea => (
+                              <tr key={ea.id}>
+                                <td>{ea.userName}</td>
+                                <td>{ea.subject}</td>
+                                <td>{ea.wordCount}</td>
+                                <td>{Math.floor(ea.timeTakenSeconds / 60)}m {ea.timeTakenSeconds % 60}s</td>
+                                <td><span style={{ color: scoreColor(ea.aiScore) }}>{ea.aiScore ?? 'Pending'}{ea.aiScore == null ? '' : '%'}</span></td>
+                                <td><Badge label={ea.band ?? 'Pending'} variant={bandVariant(ea.band ?? '')} /></td>
+                                <td>{relativeTime(ea.date)}</td>
+                                <td><button className={styles.viewBtn} onClick={ev => { ev.stopPropagation(); setSelectedEssay(ea); }}>View Review</button></td>
+                              </tr>
+                            ))}
+                          </tbody></table>
+                        </td></tr>
+                      )}
+                    </>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <Pagination page={practicePage} total={practiceTotal} perPage={10} onChange={setPracticePage} />
+          </div>
+        )}
+
+        {tab === 'simulation' && (
+          <div className={styles.card}>
+            <div className={styles.cardHeader}>
+              <h3 className={styles.cardTitle}>Simulations</h3>
+              <div className={styles.filterRow}>
+                <div className={styles.filterPills}>
+                  {["All", ...Array.from(new Set(simulations.map(s => s.subject)))].map(s => (
+                    <button
+                      key={s}
+                      className={subjectFilter === s ? styles.filterBtnActive : styles.filterBtn}
+                      onClick={() => { setSubjectFilter(s); setSimPage(1); }}
+                    >
+                      {s === "All" ? "All Subjects" : s}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+            {/* Stats strip */}
+            <div className={styles.statsRow3} style={{ marginBottom: 16 }}>
+              <div className={styles.statsCard}>Total Simulations<br /><b>{simulations.length}</b></div>
+              <div className={styles.statsCard}>Pass Rate %<br /><b>{Math.round(simulations.filter(s => s.passed).length / simulations.length * 100)}</b></div>
+              <div className={styles.statsCard}>Avg Score<br /><b>{Math.round(simulations.reduce((a, s) => a + (s.score || 0), 0) / simulations.length)}</b></div>
+              <div className={styles.statsCard}>Time Expired %<br /><b>{Math.round(simulations.filter(s => s.failReason === 'TIME_EXPIRED').length / simulations.length * 100)}</b></div>
+              <div className={styles.statsCard}>Tab Switch %<br /><b>{Math.round(simulations.filter(s => s.failReason === 'WINDOW_BLUR').length / simulations.length * 100)}</b></div>
+            </div>
+            <div className={styles.tableWrap}>
+              <table className={styles.table}>
+                <thead>
+                  <tr>
+                    <th>Student</th>
+                    <th>Subject</th>
+                    <th>Year</th>
+                    <th>Questions</th>
+                    <th>Score</th>
+                    <th>Passed</th>
+                    <th>Fail Reason</th>
+                    <th>Time</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {paginatedSimulations.map(s => (
+                    <>
+                      <tr key={s.id} className={styles.tr} onClick={() => setExpandedSim(expandedSim === s.id ? null : s.id)} style={{ cursor: 'pointer' }}>
+                        <td><div className={styles.userCell}><div className={styles.userAvatar}>{s.userName.split(" ").map(n => n[0]).join("").slice(0, 2)}</div><div><div className={styles.userName}>{s.userName}</div><div className={styles.userEmail}>{s.userEmail}</div></div></div></td>
+                        <td><span className={styles.subjectTag} style={{ background: s.subjectColor }}>{s.subject}</span></td>
+                        <td>{s.year}</td>
+                        <td>{s.questionIds.length}</td>
+                        <td><span style={{ color: scoreColor(s.score) }}>{s.score}%</span></td>
+                        <td>{s.passed ? <Badge label="PASSED" variant="success" /> : <Badge label="FAILED" variant="danger" />}</td>
+                        <td>{s.failReason === 'TIME_EXPIRED' ? <Badge label="Time Expired" variant="warning" /> : s.failReason === 'WINDOW_BLUR' ? <Badge label="Tab Switch" variant="danger" /> : null}</td>
+                        <td>{s.totalTimeSeconds ? `${Math.floor(s.totalTimeSeconds / 60)}m ${s.totalTimeSeconds % 60}s` : '—'}</td>
+                        <td>{relativeTime(s.startedAt)}</td>
+                      </tr>
+                      {expandedSim === s.id && (
+                        <tr className={styles.trAccordion}><td colSpan={9}>
+                          <table className={styles.innerTable}><thead><tr><th>Student</th><th>Subject</th><th>Word Count</th><th>Time Taken</th><th>AI Score</th><th>Band</th><th>Date</th><th>Actions</th></tr></thead><tbody>
+                            {essayAttempts.filter(ea => s.essayAttemptIds.includes(ea.id)).map(ea => (
+                              <tr key={ea.id}>
+                                <td>{ea.userName}</td>
+                                <td>{ea.subject}</td>
+                                <td>{ea.wordCount}</td>
+                                <td>{Math.floor(ea.timeTakenSeconds / 60)}m {ea.timeTakenSeconds % 60}s</td>
+                                <td><span style={{ color: scoreColor(ea.aiScore) }}>{ea.aiScore ?? 'Pending'}{ea.aiScore == null ? '' : '%'}</span></td>
+                                <td><Badge label={ea.band ?? 'Pending'} variant={bandVariant(ea.band ?? '')} /></td>
+                                <td>{relativeTime(ea.date)}</td>
+                                <td><button className={styles.viewBtn} onClick={ev => { ev.stopPropagation(); setSelectedEssay(ea); }}>View Review</button></td>
+                              </tr>
+                            ))}
+                          </tbody></table>
+                        </td></tr>
+                      )}
+                    </>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <Pagination page={simPage} total={simTotal} perPage={10} onChange={setSimPage} />
+          </div>
+        )}
+
+        {/* Review Panel */}
+        <AnimatePresence>
+          {selectedEssay && (
+            <motion.div className={styles.reviewPanel} initial={{ x: '100%' }} animate={{ x: 0 }} exit={{ x: '100%' }} transition={{ duration: 0.25 }}>
+              <div className={styles.reviewPanelHeader}>
+                <h3>Essay Review</h3>
+                <button className={styles.closeBtn} onClick={() => setSelectedEssay(null)}><X size={16} /></button>
+              </div>
+              <div className={styles.reviewPanelBody}>
+                <div className={styles.reviewStudent}><b>{selectedEssay.userName}</b><br /><span>{selectedEssay.userEmail}</span></div>
+                <div className={styles.reviewSection}><b>Question:</b><br />{selectedEssay.questionText}</div>
+                <div className={styles.reviewSection}><b>Answer:</b><div className={styles.reviewAnswer}>{selectedEssay.answerText}</div></div>
+                <div className={styles.reviewScoreBand}><span className={styles.reviewScore} style={{ color: scoreColor(selectedEssay.aiScore) }}>{selectedEssay.aiScore ?? 'Pending'}{selectedEssay.aiScore == null ? '' : '%'}</span> <Badge label={selectedEssay.band ?? 'Pending'} variant={bandVariant(selectedEssay.band ?? '')} /></div>
+                <div className={styles.reviewSection}><b>Feedback:</b><br />{selectedEssay.feedback?.summary}</div>
+                {selectedEssay.strengths?.length > 0 && <div className={styles.reviewSection}><b>Strengths:</b><ul>{selectedEssay.strengths.map((s: string, i: number) => <li key={i} style={{ color: 'var(--green)' }}>{s}</li>)}</ul></div>}
+                {selectedEssay.improvements?.length > 0 && <div className={styles.reviewSection}><b>Improvements:</b><ul>{selectedEssay.improvements.map((s: string, i: number) => <li key={i} style={{ color: 'var(--amber)' }}>{s}</li>)}</ul></div>}
+                {selectedEssay.sampleAnswer && <div className={styles.reviewSection}><details><summary>Show Sample Answer</summary><div className={styles.reviewSample}>{selectedEssay.sampleAnswer}</div></details></div>}
+                <div className={styles.reviewMeta}>Tokens: {selectedEssay.tokensUsed} · Model: {selectedEssay.aiModel}</div>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    );
                       )}
                       <button
                         className={styles.flagBtn}
                         onClick={() => handleFlag(e.id, e.userName)}
                         disabled={flaggingId === e.id || e.flagged}
                       >
-                        {flaggingId === e.id ? <RefreshCw size={11} className={styles.spinning} /> : <Flag size={11} />}
+                        {flaggingId === e.id ? (
+                          <RefreshCw size={11} className={styles.spinning} />
+                        ) : (
+                          <Flag size={11} />
+                        )}
                       </button>
                     </div>
                   </td>
@@ -225,60 +410,330 @@ if (loading) return (
             </tbody>
           </table>
         </div>
-        <Pagination page={page} total={total} perPage={PER_PAGE} onChange={setPage} />
+        <Pagination
+          page={essayPage}
+          total={essayTotal}
+          perPage={ESSAYS_PER_PAGE}
+          onChange={setEssayPage}
+        />
+      </div>
+
+      <div className={styles.card}>
+        <div className={styles.cardHeader}>
+          <div>
+            <h3 className={styles.cardTitle}>Pending / Flagged Queue</h3>
+            <p className={styles.cardSub}>{pendingTotal} essays</p>
+          </div>
+        </div>
+        <div className={styles.tableWrap}>
+          <table className={styles.table}>
+            <thead>
+              <tr>
+                {["Student", "Subject", "Status", "Words", "Submitted"].map(
+                  (h) => (
+                    <th key={h} className={styles.th}>
+                      {h}
+                    </th>
+                  ),
+                )}
+              </tr>
+            </thead>
+            <tbody>
+              {paginatedPending.map((e) => (
+                <tr key={`p-${e.id}`} className={styles.tr}>
+                  <td className={styles.td}>{e.studentName}</td>
+                  <td className={styles.td}>{e.subject}</td>
+                  <td className={styles.td}>
+                    <Badge
+                      label={e.status === "flagged" ? "flagged" : "pending"}
+                      variant={e.status === "flagged" ? "danger" : "warning"}
+                    />
+                  </td>
+                  <td className={styles.td}>{e.wordCount}</td>
+                  <td className={styles.td}>{relativeTime(e.submittedAt)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <Pagination
+          page={pendingPage}
+          total={pendingTotal}
+          perPage={PENDING_PER_PAGE}
+          onChange={setPendingPage}
+        />
       </div>
 
       {/* Essay detail overlay */}
       <AnimatePresence>
         {selectedEssay && (
           <>
-            <motion.div style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.7)', zIndex: 500 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setSelectedEssay(null)} />
             <motion.div
-              style={{ position: 'fixed', top: '50%', left: '50%', x: '-50%', y: '-50%', width: 580, maxWidth: 'calc(100vw - 32px)', maxHeight: 'calc(100vh - 48px)', background: 'var(--bg-elevated)', border: '1px solid var(--border-focus)', borderRadius: 14, zIndex: 501, overflow: 'hidden', display: 'flex', flexDirection: 'column', boxShadow: '0 24px 64px rgba(0,0,0,0.7)' }}
-              initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.95 }} transition={{ duration: 0.22 }}
+              style={{
+                position: "fixed",
+                inset: 0,
+                background: "rgba(0,0,0,0.7)",
+                zIndex: 500,
+              }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setSelectedEssay(null)}
+            />
+            <motion.div
+              style={{
+                position: "fixed",
+                top: "50%",
+                left: "50%",
+                x: "-50%",
+                y: "-50%",
+                width: 580,
+                maxWidth: "calc(100vw - 32px)",
+                maxHeight: "calc(100vh - 48px)",
+                background: "var(--bg-elevated)",
+                border: "1px solid var(--border-focus)",
+                borderRadius: 14,
+                zIndex: 501,
+                overflow: "hidden",
+                display: "flex",
+                flexDirection: "column",
+                boxShadow: "0 24px 64px rgba(0,0,0,0.7)",
+              }}
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.22 }}
             >
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '18px 24px', borderBottom: '1px solid var(--border-default)', flexShrink: 0 }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  padding: "18px 24px",
+                  borderBottom: "1px solid var(--border-default)",
+                  flexShrink: 0,
+                }}
+              >
                 <div>
-                  <div style={{ fontSize: 16, fontWeight: 600, color: 'var(--text-primary)' }}>{selectedEssay.userName}</div>
-                  <div style={{ fontSize: 13, color: 'var(--text-muted)', marginTop: 2 }}>{selectedEssay.subject} · {relativeTime(selectedEssay.gradedAt)}</div>
+                  <div
+                    style={{
+                      fontSize: 16,
+                      fontWeight: 600,
+                      color: "var(--text-primary)",
+                    }}
+                  >
+                    {selectedEssay.userName}
+                  </div>
+                  <div
+                    style={{
+                      fontSize: 13,
+                      color: "var(--text-muted)",
+                      marginTop: 2,
+                    }}
+                  >
+                    {selectedEssay.subject} ·{" "}
+                    {relativeTime(selectedEssay.gradedAt)}
+                  </div>
                 </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                  <div style={{ fontSize: 28, fontWeight: 800, color: scoreColor(selectedEssay.score) }}>{selectedEssay.score}%</div>
-                  <Badge label={`Grade ${selectedEssay.band}`} variant={bandVariant(selectedEssay.band)} />
-                  <button onClick={() => setSelectedEssay(null)} style={{ width: 30, height: 30, borderRadius: '50%', background: 'var(--bg-hover)', border: '1px solid var(--border-default)', color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}><X size={14} /></button>
+                <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                  <div
+                    style={{
+                      fontSize: 28,
+                      fontWeight: 800,
+                      color: scoreColor(selectedEssay.score),
+                    }}
+                  >
+                    {selectedEssay.score}%
+                  </div>
+                  <Badge
+                    label={`Grade ${selectedEssay.band}`}
+                    variant={bandVariant(selectedEssay.band)}
+                  />
+                  <button
+                    onClick={() => setSelectedEssay(null)}
+                    style={{
+                      width: 30,
+                      height: 30,
+                      borderRadius: "50%",
+                      background: "var(--bg-hover)",
+                      border: "1px solid var(--border-default)",
+                      color: "var(--text-secondary)",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <X size={14} />
+                  </button>
                 </div>
               </div>
-              <div style={{ overflowY: 'auto', flex: 1, padding: 24, display: 'flex', flexDirection: 'column', gap: 18 }}>
-                <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border-default)', borderRadius: 8, padding: '14px 18px' }}>
-                  <div style={{ fontSize: 11, fontWeight: 500, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 6 }}>Question</div>
-                  <div style={{ fontSize: 14, color: 'var(--text-primary)', lineHeight: 1.7 }}>{selectedEssay.question}</div>
+              <div
+                style={{
+                  overflowY: "auto",
+                  flex: 1,
+                  padding: 24,
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 18,
+                }}
+              >
+                <div
+                  style={{
+                    background: "var(--bg-card)",
+                    border: "1px solid var(--border-default)",
+                    borderRadius: 8,
+                    padding: "14px 18px",
+                  }}
+                >
+                  <div
+                    style={{
+                      fontSize: 11,
+                      fontWeight: 500,
+                      color: "var(--text-muted)",
+                      textTransform: "uppercase",
+                      letterSpacing: "0.06em",
+                      marginBottom: 6,
+                    }}
+                  >
+                    Question
+                  </div>
+                  <div
+                    style={{
+                      fontSize: 14,
+                      color: "var(--text-primary)",
+                      lineHeight: 1.7,
+                    }}
+                  >
+                    {selectedEssay.question}
+                  </div>
                 </div>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 10 }}>
+                <div
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "repeat(4, 1fr)",
+                    gap: 10,
+                  }}
+                >
                   {[
-                    { label: 'AI Score',    value: `${selectedEssay.aiScore}%`,     color: scoreColor(selectedEssay.score) },
-                    { label: 'Word Count',  value: `${selectedEssay.wordCount}w`,   color: 'var(--text-primary)' },
-                    { label: 'AI Time',     value: `${selectedEssay.timeTaken}s`,   color: 'var(--purple)' },
-                    { label: 'Status',      value: selectedEssay.flagged ? 'Flagged' : 'Auto-graded', color: selectedEssay.flagged ? 'var(--red)' : 'var(--green)' },
+                    {
+                      label: "AI Score",
+                      value: `${selectedEssay.aiScore}%`,
+                      color: scoreColor(selectedEssay.score),
+                    },
+                    {
+                      label: "Word Count",
+                      value: `${selectedEssay.wordCount}w`,
+                      color: "var(--text-primary)",
+                    },
+                    {
+                      label: "AI Time",
+                      value: `${selectedEssay.timeTaken}s`,
+                      color: "var(--purple)",
+                    },
+                    {
+                      label: "Status",
+                      value: selectedEssay.flagged ? "Flagged" : "Auto-graded",
+                      color: selectedEssay.flagged
+                        ? "var(--red)"
+                        : "var(--green)",
+                    },
                   ].map((s, i) => (
-                    <div key={i} style={{ background: 'var(--bg-card)', border: '1px solid var(--border-default)', borderRadius: 8, padding: '10px 14px', textAlign: 'center' }}>
-                      <div style={{ fontSize: 11, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 4 }}>{s.label}</div>
-                      <div style={{ fontSize: 18, fontWeight: 700, color: s.color }}>{s.value}</div>
+                    <div
+                      key={i}
+                      style={{
+                        background: "var(--bg-card)",
+                        border: "1px solid var(--border-default)",
+                        borderRadius: 8,
+                        padding: "10px 14px",
+                        textAlign: "center",
+                      }}
+                    >
+                      <div
+                        style={{
+                          fontSize: 11,
+                          color: "var(--text-muted)",
+                          textTransform: "uppercase",
+                          letterSpacing: "0.06em",
+                          marginBottom: 4,
+                        }}
+                      >
+                        {s.label}
+                      </div>
+                      <div
+                        style={{
+                          fontSize: 18,
+                          fontWeight: 700,
+                          color: s.color,
+                        }}
+                      >
+                        {s.value}
+                      </div>
                     </div>
                   ))}
                 </div>
                 {selectedEssay.flagged && (
-                  <div style={{ background: 'var(--red-bg)', border: '1px solid var(--red)', borderRadius: 8, padding: '12px 16px', fontSize: 13, color: 'var(--red)' }}>
-                    This essay has been flagged for human review - AI score may not reflect actual quality
+                  <div
+                    style={{
+                      background: "var(--red-bg)",
+                      border: "1px solid var(--red)",
+                      borderRadius: 8,
+                      padding: "12px 16px",
+                      fontSize: 13,
+                      color: "var(--red)",
+                    }}
+                  >
+                    This essay has been flagged for human review - AI score may
+                    not reflect actual quality
                   </div>
                 )}
               </div>
-              <div style={{ display: 'flex', gap: 10, padding: '16px 24px', borderTop: '1px solid var(--border-default)', flexShrink: 0 }}>
+              <div
+                style={{
+                  display: "flex",
+                  gap: 10,
+                  padding: "16px 24px",
+                  borderTop: "1px solid var(--border-default)",
+                  flexShrink: 0,
+                }}
+              >
                 {!selectedEssay.flagged && (
-                  <button onClick={() => { handleFlag(selectedEssay.id, selectedEssay.userName); setSelectedEssay(null) }} style={{ background: 'var(--amber-bg)', border: '1px solid var(--amber)', color: 'var(--amber)', borderRadius: 8, padding: '9px 18px', fontSize: 13, fontWeight: 600, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 6 }}>
+                  <button
+                    onClick={() => {
+                      handleFlag(selectedEssay.id, selectedEssay.userName);
+                      setSelectedEssay(null);
+                    }}
+                    style={{
+                      background: "var(--amber-bg)",
+                      border: "1px solid var(--amber)",
+                      color: "var(--amber)",
+                      borderRadius: 8,
+                      padding: "9px 18px",
+                      fontSize: 13,
+                      fontWeight: 600,
+                      cursor: "pointer",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 6,
+                    }}
+                  >
                     <Flag size={13} /> Flag for Review
                   </button>
                 )}
-                <button onClick={() => setSelectedEssay(null)} style={{ background: 'var(--bg-card)', border: '1px solid var(--border-default)', borderRadius: 8, padding: '9px 16px', fontSize: 13, color: 'var(--text-secondary)', cursor: 'pointer' }}>Close</button>
+                <button
+                  onClick={() => setSelectedEssay(null)}
+                  style={{
+                    background: "var(--bg-card)",
+                    border: "1px solid var(--border-default)",
+                    borderRadius: 8,
+                    padding: "9px 16px",
+                    fontSize: 13,
+                    color: "var(--text-secondary)",
+                    cursor: "pointer",
+                  }}
+                >
+                  Close
+                </button>
               </div>
             </motion.div>
           </>
@@ -287,11 +742,30 @@ if (loading) return (
 
       <AnimatePresence>
         {toast && (
-          <motion.div style={{ position: 'fixed', bottom: 24, right: 24, zIndex: 700, background: 'var(--bg-elevated)', border: `1px solid ${toast.type === 'success' ? 'var(--green)' : toast.type === 'danger' ? 'var(--red)' : toast.type === 'warning' ? 'var(--amber)' : 'var(--blue-bright)'}`, borderRadius: 10, padding: '12px 20px', fontSize: 14, color: 'var(--text-primary)', boxShadow: '0 8px 24px rgba(0,0,0,0.4)', minWidth: 260 }} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 20 }} transition={{ duration: 0.25 }}>
+          <motion.div
+            style={{
+              position: "fixed",
+              bottom: 24,
+              right: 24,
+              zIndex: 700,
+              background: "var(--bg-elevated)",
+              border: `1px solid ${toast.type === "success" ? "var(--green)" : toast.type === "danger" ? "var(--red)" : toast.type === "warning" ? "var(--amber)" : "var(--blue-bright)"}`,
+              borderRadius: 10,
+              padding: "12px 20px",
+              fontSize: 14,
+              color: "var(--text-primary)",
+              boxShadow: "0 8px 24px rgba(0,0,0,0.4)",
+              minWidth: 260,
+            }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.25 }}
+          >
             {toast.message}
           </motion.div>
         )}
       </AnimatePresence>
     </div>
-  )
+  );
 }

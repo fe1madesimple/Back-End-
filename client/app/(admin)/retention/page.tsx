@@ -1,7 +1,6 @@
 "use client";
 
-import { useState, useCallback, useEffect, useMemo } from "react";
-import { SkStatStrip, SkTable } from "@/components/ui/Skeletons";
+import { useState, useCallback, useMemo } from "react";
 import Pagination from "@/components/ui/Pagination";
 import { usePagination } from "@/lib/usePagination";
 import { motion, AnimatePresence } from "framer-motion";
@@ -65,21 +64,12 @@ const riskColor = (r: string) =>
         : "var(--text-muted)";
 
 export default function RetentionPage() {
-  const [loading, setLoading] = useState(true);
   const [toast, setToast] = useState<ToastType | null>(null);
   const [riskFilter, setRiskFilter] = useState("All");
-  const [riskPage, setRiskPage] = useState(1);
-  const [inactivePage, setInactivePage] = useState(1);
   const [sendingCampaign, setSendingCampaign] = useState<string | null>(null);
   const [sentCampaigns, setSentCampaigns] = useState<string[]>([]);
   const [emailingUser, setEmailingUser] = useState<string | null>(null);
-  const RISK_PER_PAGE = 20;
-  const INACTIVE_PER_PAGE = 20;
-
-  useEffect(() => {
-    const t = setTimeout(() => setLoading(false), 1200);
-    return () => clearTimeout(t);
-  }, []);
+  const AT_RISK_PER_PAGE = 20;
 
   const showToast = useCallback(
     (message: string, type: ToastType["type"] = "success") => {
@@ -106,9 +96,20 @@ export default function RetentionPage() {
     }, 1400);
   };
 
-  const filteredRisk = retentionData.atRiskUsers.filter(
-    (u) => riskFilter === "All" || u.riskLevel === riskFilter,
+  const filteredRisk = useMemo(
+    () =>
+      retentionData.atRiskUsers.filter(
+        (u) => riskFilter === "All" || u.riskLevel === riskFilter,
+      ),
+    [riskFilter],
   );
+
+  const {
+    page: riskPage,
+    setPage: setRiskPage,
+    paginated: paginatedRisk,
+    total: riskTotal,
+  } = usePagination(filteredRisk, AT_RISK_PER_PAGE);
 
   const d = retentionData;
 
@@ -295,7 +296,10 @@ export default function RetentionPage() {
               <button
                 key={f}
                 className={`${styles.filterBtn} ${riskFilter === f ? styles.filterBtnActive : ""}`}
-                onClick={() => setRiskFilter(f)}
+                onClick={() => {
+                  setRiskFilter(f);
+                  setRiskPage(1);
+                }}
                 style={
                   riskFilter === f && f !== "All"
                     ? {
@@ -345,7 +349,7 @@ export default function RetentionPage() {
                   </td>
                 </tr>
               )}
-              {filteredRisk.map((u) => (
+              {paginatedRisk.map((u) => (
                 <tr key={u.id} className={styles.tr}>
                   <td className={styles.td}>
                     <div className={styles.userCell}>
@@ -492,6 +496,12 @@ export default function RetentionPage() {
             </tbody>
           </table>
         </div>
+        <Pagination
+          page={riskPage}
+          total={riskTotal}
+          perPage={AT_RISK_PER_PAGE}
+          onChange={setRiskPage}
+        />
       </div>
 
       <div className={styles.card}>

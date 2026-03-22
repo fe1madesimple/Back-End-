@@ -20,7 +20,6 @@ import {
   Radio,
 } from "lucide-react";
 import Badge from "@/components/ui/Badge";
-import { SkStatStrip, SkTable } from "@/components/ui/Skeletons";
 import Pagination from "@/components/ui/Pagination";
 import { usePagination } from "@/lib/usePagination";
 import { funnelData } from "@/lib/dummy-data";
@@ -155,7 +154,6 @@ const nudgeCampaigns = [
 ];
 
 export default function FunnelPage() {
-  const [loading, setLoading] = useState(true);
   const [toast, setToast] = useState<ToastType | null>(null);
   const [nudgingId, setNudgingId] = useState<string | null>(null);
   const [sentNudges, setSentNudges] = useState<string[]>([]);
@@ -163,11 +161,7 @@ export default function FunnelPage() {
   const [stageFilter, setStageFilter] = useState("All");
   const [showSendAllConfirm, setShowSendAllConfirm] = useState(false);
   const [sendingAllNudges, setSendingAllNudges] = useState(false);
-
-  useEffect(() => {
-    const t = setTimeout(() => setLoading(false), 1200);
-    return () => clearTimeout(t);
-  }, []);
+  const STUCK_PER_PAGE = 20;
 
   const showToast = useCallback(
     (message: string, type: ToastType["type"] = "success") => {
@@ -215,32 +209,11 @@ export default function FunnelPage() {
   );
 
   const {
-    page,
-    setPage,
+    page: stuckPage,
+    setPage: setStuckPage,
     paginated: paginatedStuck,
-    total,
-    totalPages,
-    reset,
-  } = usePagination(filteredStuck, 20);
-
-  useEffect(() => {
-    reset();
-  }, [stageFilter, reset]);
-
-  if (loading)
-    return (
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: 16,
-          padding: "24px 0",
-        }}
-      >
-        <SkStatStrip count={4} />
-        <SkTable rows={10} />
-      </div>
-    );
+    total: stuckTotal,
+  } = usePagination(filteredStuck, STUCK_PER_PAGE);
 
   const d = funnelData;
   const maxCount = Math.max(...d.stages.map((s) => s.count));
@@ -474,7 +447,10 @@ export default function FunnelPage() {
               <button
                 key={f}
                 className={`${styles.filterBtn} ${stageFilter === f ? styles.filterBtnActive : ""}`}
-                onClick={() => setStageFilter(f)}
+                onClick={() => {
+                  setStageFilter(f);
+                  setStuckPage(1);
+                }}
               >
                 {f === "All" ? "All Stages" : f}
               </button>
@@ -617,7 +593,7 @@ export default function FunnelPage() {
             </tbody>
           </table>
         </div>
-        <Pagination page={page} total={total} perPage={20} onChange={setPage} />
+        <Pagination page={stuckPage} total={stuckTotal} perPage={STUCK_PER_PAGE} onChange={setStuckPage} />
       </div>
 
       {/* ═══ SECTION 4 — NUDGE CAMPAIGNS ═══ */}

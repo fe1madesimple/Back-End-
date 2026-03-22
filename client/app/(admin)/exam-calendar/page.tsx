@@ -1,5 +1,5 @@
 "use client";
-import { useState, useCallback } from "react";
+import { useState, useCallback, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Calendar,
@@ -16,6 +16,8 @@ import {
   Save,
 } from "lucide-react";
 import Badge from "@/components/ui/Badge";
+import Pagination from "@/components/ui/Pagination";
+import { usePagination } from "@/lib/usePagination";
 import { examCalendarData } from "@/lib/dummy-data";
 import styles from "./exam-calendar.module.css";
 
@@ -45,6 +47,8 @@ export default function ExamCalendarPage() {
   >(null);
   const [emailingCohort, setEmailingCohort] = useState<string | null>(null);
   const [emailingStudent, setEmailingStudent] = useState<string | null>(null);
+  const [sittingFilter, setSittingFilter] = useState("All");
+  const COHORT_PER_PAGE = 20;
   const [newExam, setNewExam] = useState({
     name: "",
     date: "",
@@ -118,9 +122,20 @@ export default function ExamCalendarPage() {
     );
   };
 
-  const cohortForSelected = examCalendarData.cohortStudents.filter(
-    (s) => s.examId === selectedExam.id,
+  const filteredCohort = useMemo(
+    () =>
+      examCalendarData.cohortStudents.filter(
+        (s) => sittingFilter === "All" || s.targetSitting === sittingFilter,
+      ),
+    [sittingFilter],
   );
+
+  const {
+    page: cohortPage,
+    setPage: setCohortPage,
+    paginated: paginatedCohort,
+    total: cohortTotal,
+  } = usePagination(filteredCohort, COHORT_PER_PAGE);
 
   return (
     <div className={styles.page}>
@@ -258,8 +273,22 @@ export default function ExamCalendarPage() {
               — Student Cohort
             </h3>
             <p className={styles.cardSub}>
-              {cohortForSelected.length} students targeting this sitting
+              {cohortTotal} students targeting this sitting
             </p>
+          </div>
+          <div className={styles.filterPills}>
+            {["All", "March 2026", "October 2026"].map((f) => (
+              <button
+                key={f}
+                className={`${styles.filterBtn} ${sittingFilter === f ? styles.filterBtnActive : ""}`}
+                onClick={() => {
+                  setSittingFilter(f);
+                  setCohortPage(1);
+                }}
+              >
+                {f}
+              </button>
+            ))}
           </div>
           <button
             className={styles.cohortEmailBtn}
@@ -284,7 +313,7 @@ export default function ExamCalendarPage() {
           </button>
         </div>
 
-        {cohortForSelected.length === 0 ? (
+        {paginatedCohort.length === 0 ? (
           <div className={styles.emptyState}>
             <Users size={28} color="var(--text-muted)" />
             <span>No students have selected this sitting yet</span>
@@ -309,7 +338,7 @@ export default function ExamCalendarPage() {
                 </tr>
               </thead>
               <tbody>
-                {cohortForSelected.map((s) => (
+                {paginatedCohort.map((s) => (
                   <tr key={s.id} className={styles.tr}>
                     <td className={styles.td}>
                       <div className={styles.userCell}>
@@ -420,6 +449,12 @@ export default function ExamCalendarPage() {
             </table>
           </div>
         )}
+        <Pagination
+          page={cohortPage}
+          total={cohortTotal}
+          perPage={COHORT_PER_PAGE}
+          onChange={setCohortPage}
+        />
       </div>
 
       {/* ═══ SECTION 3 — CAMPAIGN TIMELINE ═══ */}

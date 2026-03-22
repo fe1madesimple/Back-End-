@@ -25,6 +25,7 @@ import { gate,} from '@/shared/middleware/gate.middleware';
 
 const practiceRouter = Router();
 
+
 /**
  * @swagger
  * /api/v1/practice/past-questions:
@@ -36,22 +37,101 @@ const practiceRouter = Router();
  *     parameters:
  *       - in: query
  *         name: search
- *         schema: { type: string }
+ *         schema:
+ *           type: string
+ *         description: Search question text, description or subject
  *       - in: query
  *         name: subject
- *         schema: { type: string }
+ *         schema:
+ *           type: string
+ *           example: Tort Law
+ *         description: Filter by subject name
  *       - in: query
- *         name: year
- *         schema: { type: integer }
+ *         name: sitting
+ *         schema:
+ *           type: string
+ *           example: March 2024
+ *         description: Filter by exam sitting e.g. "March 2024" or "October 2023"
+ *       - in: query
+ *         name: examType
+ *         schema:
+ *           type: string
+ *           enum: [Essay, Problem]
+ *         description: Filter by question type
  *       - in: query
  *         name: page
- *         schema: { type: integer, default: 1 }
+ *         schema:
+ *           type: integer
+ *           default: 1
  *       - in: query
  *         name: limit
- *         schema: { type: integer, default: 9 }
+ *         schema:
+ *           type: integer
+ *           default: 9
  *     responses:
  *       200:
- *         description: Returns questions[], pagination, and filters (subjects[], years[]) for dropdowns
+ *         description: Returns questions[], pagination, and filters (subjects[], sittings[])
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                 message:
+ *                   type: string
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     questions:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           id:
+ *                             type: string
+ *                           subject:
+ *                             type: string
+ *                             example: Tort Law
+ *                           year:
+ *                             type: integer
+ *                             example: 2024
+ *                           sitting:
+ *                             type: string
+ *                             example: March 2024
+ *                           examType:
+ *                             type: string
+ *                             example: Essay
+ *                           description:
+ *                             type: string
+ *                           text:
+ *                             type: string
+ *                           order:
+ *                             type: integer
+ *                     pagination:
+ *                       type: object
+ *                       properties:
+ *                         total:
+ *                           type: integer
+ *                         page:
+ *                           type: integer
+ *                         limit:
+ *                           type: integer
+ *                         totalPages:
+ *                           type: integer
+ *                     filters:
+ *                       type: object
+ *                       properties:
+ *                         subjects:
+ *                           type: array
+ *                           items:
+ *                             type: string
+ *                           example: ["Company Law", "Contract Law", "Criminal Law"]
+ *                         sittings:
+ *                           type: array
+ *                           items:
+ *                             type: string
+ *                           example: ["March 2024", "October 2023", "March 2023"]
  */
 practiceRouter.get(
   '/past-questions',

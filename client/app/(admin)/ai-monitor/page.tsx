@@ -1,8 +1,5 @@
 ﻿"use client";
-import { useState, useCallback, useEffect, useMemo } from "react";
-import { SkStatStrip, SkTable } from "@/components/ui/Skeletons";
-import Pagination from "@/components/ui/Pagination";
-import { usePagination } from "@/lib/usePagination";
+import { useState, useCallback, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   AreaChart,
@@ -43,19 +40,12 @@ type ToastType = {
 };
 
 function AIMonitorPage() {
-  const [loading, setLoading] = useState(true);
   const [toast, setToast] = useState<ToastType | null>(null);
-  const [modelPage, setModelPage] = useState(1);
-  const [alertPage, setAlertPage] = useState(1);
   const [calcStudents, setCalcStudents] = useState(50);
   const [calcPlanMix, setCalcPlanMix] = useState<
     "all-standard" | "all-pro" | "mixed"
   >("mixed");
 
-  useEffect(() => {
-    const t = setTimeout(() => setLoading(false), 1200);
-    return () => clearTimeout(t);
-  }, []);
   const [alertSettings, setAlertSettings] = useState(
     aiMonitorData.alertSettings,
   );
