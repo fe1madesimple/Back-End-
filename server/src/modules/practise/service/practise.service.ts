@@ -15,10 +15,9 @@ import {
   ClaudeGradingResult,
   QuestionScoreItem,
 } from '../interface/practise.interface';
-import { QuestionType, Prisma  } from '@prisma/client';
+import { QuestionType, Prisma } from '@prisma/client';
 
 // ── getPastQuestionsService ──────────────────────────────────
-
 
 export async function getPastQuestionsService(
   query: PastQuestionsQuery
@@ -71,11 +70,7 @@ export async function getPastQuestionsService(
         text: true,
         order: true,
       },
-      orderBy: [
-        { year: 'desc' },
-        { subject: 'asc' },
-        { order: 'asc' },
-      ],
+      orderBy: [{ year: 'desc' }, { subject: 'asc' }, { order: 'asc' }],
       skip,
       take: limit,
     }),
@@ -94,20 +89,18 @@ export async function getPastQuestionsService(
   ]);
 
   const sortedSittings = sittingRows
-    .map(r => ({ sitting: r.sitting, year: r.year }))
-    .filter((r): r is { sitting: string; year: number } =>
-      r.sitting !== null && r.year !== null
-    )
+    .map((r) => ({ sitting: r.sitting, year: r.year }))
+    .filter((r): r is { sitting: string; year: number } => r.sitting !== null && r.year !== null)
     .sort((a, b) => {
       if (b.year !== a.year) return b.year - a.year;
-      const aMonth = a.sitting.split(' ')[0];
-      const bMonth = b.sitting.split(' ')[0];
+      const aMonth = a.sitting.split(' ')[0] ?? '';
+      const bMonth = b.sitting.split(' ')[0] ?? '';
       return (monthOrder[aMonth] ?? 99) - (monthOrder[bMonth] ?? 99);
     })
-    .map(r => r.sitting);
+    .map((r) => r.sitting);
 
   return {
-    questions: questions.map(q => ({
+    questions: questions.map((q) => ({
       id: q.id,
       subject: q.subject,
       year: q.year,
@@ -124,9 +117,7 @@ export async function getPastQuestionsService(
       totalPages: Math.ceil(total / limit),
     },
     filters: {
-      subjects: subjectRows
-        .map(s => s.subject)
-        .filter((s): s is string => s !== null),
+      subjects: subjectRows.map((s) => s.subject).filter((s): s is string => s !== null),
       sittings: sortedSittings,
     },
   };

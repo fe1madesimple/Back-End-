@@ -1336,12 +1336,12 @@ class ProgressService {
       const relevantPodcasts = await prisma.podcast.findMany({
         where: {
           isPublished: true,
-          subject: { in: user.focusSubjects },
+          subjectName: { in: user.focusSubjects },
         },
         select: {
           id: true,
           title: true,
-          subject: true,
+          subjectName : true,
           duration: true,
           thumbnail: true,
         },
@@ -1353,7 +1353,7 @@ class ProgressService {
       recommendedPodcasts = relevantPodcasts.map((p) => ({
         id: p.id,
         title: p.title,
-        subjectName: p.subject || 'General',
+        subjectName: p.subjectName || 'General',
         durationMinutes: Math.round((p.duration || 0) / 60),
         thumbnail: p.thumbnail || '',
       }));
@@ -1366,7 +1366,7 @@ class ProgressService {
         select: {
           id: true,
           title: true,
-          subject: true,
+          subjectName: true,
           duration: true,
           thumbnail: true,
         },
@@ -1381,7 +1381,7 @@ class ProgressService {
       recommendedPodcasts = randomPodcasts.map((p) => ({
         id: p.id,
         title: p.title,
-        subjectName: p.subject || 'General',
+        subjectName: p.subjectName || 'General',
         durationMinutes: Math.round((p.duration || 0) / 60),
         thumbnail: p.thumbnail || '',
       }));
