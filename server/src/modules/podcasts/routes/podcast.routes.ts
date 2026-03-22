@@ -14,6 +14,20 @@ const podcastController = new PodcastController();
 
 /**
  * @swagger
+ * /api/v1/podcasts/stats:
+ *   get:
+ *     summary: Get user's overall podcast listening stats
+ *     tags: [Podcasts]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Returns totalStarted, totalCompleted, totalInProgress, totalListenedHours
+ */
+router.get('/stats', protect, podcastController.getPodcastStats.bind(podcastController));
+
+/**
+ * @swagger
  * /api/v1/podcasts:
  *   get:
  *     summary: Get all podcasts
@@ -75,6 +89,77 @@ const podcastController = new PodcastController();
  */
 router.get('/', protect, podcastController.getAllPodcasts.bind(podcastController));
 
+/**
+ * @swagger
+ * /api/v1/podcasts/{id}/progress:
+ *   post:
+ *     summary: Track podcast listen progress
+ *     tags: [Podcasts]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required: [listenedSeconds]
+ *             properties:
+ *               listenedSeconds:
+ *                 type: integer
+ *                 description: Total seconds listened so far
+ *                 example: 240
+ *     responses:
+ *       200:
+ *         description: Progress tracked. isCompleted becomes true at 90% listened.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     podcastId:
+ *                       type: string
+ *                     listenedSeconds:
+ *                       type: integer
+ *                     isCompleted:
+ *                       type: boolean
+ *                     completedAt:
+ *                       type: string
+ *                       nullable: true
+ *                     percentageListened:
+ *                       type: integer
+ *                       example: 45
+ */
+router.post('/:id/progress', protect, podcastController.trackProgress.bind(podcastController));
+
+/**
+ * @swagger
+ * /api/v1/podcasts/{id}/progress:
+ *   get:
+ *     summary: Get user's progress on a specific podcast
+ *     tags: [Podcasts]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Returns listenedSeconds, isCompleted, percentageListened
+ */
+router.get('/:id/progress', protect, podcastController.getProgress.bind(podcastController));
 
 /**
  * @swagger
