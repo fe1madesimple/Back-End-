@@ -6,11 +6,8 @@ export const pastQuestionsQuerySchema = z.object({
   query: z.object({
     search: z.string().optional(),
     subject: z.string().optional(),
-    year: z
-      .string()
-      .regex(/^\d{4}$/)
-      .optional()
-      .transform((val) => (val ? parseInt(val) : undefined)),
+    sitting: z.string().optional(),   
+    examType: z.string().optional(), 
     page: z
       .string()
       .regex(/^\d+$/)
