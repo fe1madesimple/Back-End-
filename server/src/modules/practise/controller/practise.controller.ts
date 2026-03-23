@@ -43,9 +43,9 @@ export async function getEssayQuestions(req: Request, res: Response) {
 
 export async function startPractice(req: Request, res: Response) {
   try {
-    const userId = (req as any).user.user.id; // ✅ fixed
-    const { subject, year } = req.body;
-    const data = await startPracticeService(userId, { subject, year });
+    const userId = (req as any).user.user.id;
+    const { subject, year, sitting } = req.body;
+    const data = await startPracticeService(userId, { subject, year, sitting });
     res.status(201).json({ success: true, message: 'Practice session started', data });
   } catch (error: any) {
     console.error('startPractice error:', error);
