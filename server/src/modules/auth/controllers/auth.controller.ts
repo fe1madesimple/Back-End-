@@ -75,7 +75,7 @@ export const googleCallback = [
 
     // Redirect based on onboarding status
     if (result.needsOnBoarding) {
-      res.redirect(`${process.env.FRONTEND_URL}/onboarding`);
+      res.redirect(`${process.env.FRONTEND_URL}/personalize`);
     } else {
       res.redirect(`${process.env.FRONTEND_URL}/dashboard`);
     }
