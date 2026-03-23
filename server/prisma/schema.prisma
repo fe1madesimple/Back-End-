@@ -491,8 +491,7 @@ model Podcast {
   part         Int?
   isBonus      Boolean @default(false)
 
-  notes        Json?
-  examTip      String? @db.Text
+  notes String? @db.Text
 
   order        Int     @default(0)
   isPublished  Boolean @default(true)
