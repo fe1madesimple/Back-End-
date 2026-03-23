@@ -868,6 +868,7 @@ model PracticeSession {
   user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   subject     String
+   sitting     String? 
   year        Int?
   questionIds String[] // the 8 questions shown
 

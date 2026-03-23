@@ -8,8 +8,8 @@ export interface PastQuestionsQuery {
   year?: number;
   page?: number;
   limit?: number;
-   sitting?: string; 
-   examType?: string;
+  sitting?: string;
+  examType?: string;
 }
 
 export interface PastQuestionCard {
@@ -18,7 +18,7 @@ export interface PastQuestionCard {
   year: number | null;
   examType: string | null;
   description: string | null;
-   sitting: string | null;
+  sitting: string | null;
   text: string;
   order: number;
 }
@@ -46,11 +46,13 @@ export interface PastQuestionsResponse {
 export interface StartPracticeInput {
   subject: string;
   year: number;
+  sitting: string;
 }
 
 export interface StartPracticeResponse {
   practiceSessionId: string;
   subject: string;
+  sitting: string;
   year: number;
   totalQuestions: number;
   startedAt: Date; // frontend uses this to sync elapsed timer on reload
@@ -170,7 +172,7 @@ export interface SubmitSimulationAnswerInput {
   questionId: string;
   answerText: string;
   currentQuestionIndex: number;
-}  
+}
 export interface FinishSimulationResponse {
   simulationId: string;
   overallScore: number;
