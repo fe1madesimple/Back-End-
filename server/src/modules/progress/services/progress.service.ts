@@ -7,7 +7,6 @@ import {
   StudyStreakResponse,
   WeeklySummaryResponse,
   ModuleStatsResponse,
-  SimpleDashboardResponse,
   StudyOverviewResponse,
 } from '../interfaces/progress.interface';
 import { NotFoundError } from '@/shared/utils';
