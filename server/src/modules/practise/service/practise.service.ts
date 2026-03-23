@@ -23,7 +23,6 @@ export async function getPastQuestionsService(
   query: PastQuestionsQuery
 ): Promise<PastQuestionsResponse> {
   const { search, subject, sitting, examType, page = 1, limit = 9 } = query;
-  const skip = (page - 1) * limit;
 
   const monthOrder: Record<string, number> = {
     March: 0,
@@ -57,7 +56,7 @@ export async function getPastQuestionsService(
     year: { not: null },
   };
 
-  const [questions, total, subjectRows, sittingRows] = await Promise.all([
+  const [allQuestions, subjectRows, sittingRows] = await Promise.all([
     prisma.question.findMany({
       where,
       select: {
@@ -70,11 +69,7 @@ export async function getPastQuestionsService(
         text: true,
         order: true,
       },
-      orderBy: [{ year: 'desc' }, { subject: 'asc' }, { order: 'asc' }],
-      skip,
-      take: limit,
     }),
-    prisma.question.count({ where }),
     prisma.question.findMany({
       where: baseWhere,
       select: { subject: true },
@@ -87,6 +82,31 @@ export async function getPastQuestionsService(
       distinct: ['sitting'],
     }),
   ]);
+
+  // Sort: year desc → month order → subject alpha → question order
+  const sorted = allQuestions.sort((a, b) => {
+    if ((b.year ?? 0) !== (a.year ?? 0)) return (b.year ?? 0) - (a.year ?? 0);
+    const aMonth = (a.sitting ?? '').split(' ')[0] ?? '';
+    const bMonth = (b.sitting ?? '').split(' ')[0] ?? '';
+    const monthDiff = (monthOrder[aMonth] ?? 99) - (monthOrder[bMonth] ?? 99);
+    if (monthDiff !== 0) return monthDiff;
+    const subjectDiff = (a.subject ?? '').localeCompare(b.subject ?? '');
+    if (subjectDiff !== 0) return subjectDiff;
+    return (a.order ?? 0) - (b.order ?? 0);
+  });
+
+  // Keep only Q1 (first question) per sitting+subject combination
+  const seen = new Set<string>();
+  const deduped = sorted.filter((q) => {
+    const key = `${q.sitting}::${q.subject}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+
+  const total = deduped.length;
+  const skip = (page - 1) * limit;
+  const questions = deduped.slice(skip, skip + limit);
 
   const sortedSittings = sittingRows
     .map((r) => ({ sitting: r.sitting, year: r.year }))
