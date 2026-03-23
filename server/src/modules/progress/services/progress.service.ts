@@ -1355,7 +1355,6 @@ class ProgressService {
         subjectName: p.subjectName || 'General',
         audioUrl: p.audioUrl,
         duration: p.duration || 0,
-        durationFormatted: `${Math.floor((p.duration || 0) / 60)}m ${(p.duration || 0) % 60}s`,
         thumbnail: p.thumbnail || '',
       }));
     } else {
@@ -1382,7 +1381,6 @@ class ProgressService {
         subjectName: p.subjectName || 'General',
         audioUrl: p.audioUrl,
         duration: p.duration || 0,
-        durationFormatted: `${Math.floor((p.duration || 0) / 60)}m ${(p.duration || 0) % 60}s`,
         thumbnail: p.thumbnail || '',
       }));
 
