@@ -25,6 +25,7 @@ export const startPracticeSchema = z.object({
   body: z.object({
     subject: z.string().min(1, 'Subject is required'),
     year: z.number().int().min(1990).max(2030),
+    sitting: z.string().min(1, 'Sitting is required'),
   }),
 });
 
