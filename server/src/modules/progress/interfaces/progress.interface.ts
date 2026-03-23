@@ -207,6 +207,7 @@ export interface SimpleDashboardResponse {
     subjectName: string;
     durationMinutes: number;
     thumbnail: string;
+    audioUrl: string;
   }>;
   lifetimeStudyHours: number; 
 }
