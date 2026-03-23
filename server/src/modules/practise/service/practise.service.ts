@@ -152,19 +152,18 @@ export async function startPracticeService(
   userId: string,
   input: StartPracticeInput
 ): Promise<StartPracticeResponse> {
-  const { subject, year } = input;
+  const { subject, year, sitting } = input;
 
-  // Always parse year as integer — frontend may send it as a string
-  const yearInt = typeof year === 'string' ? parseInt(year, 10) : year;
-
+  const yearInt = typeof year === 'string' ? parseInt(year as any, 10) : year;
   if (isNaN(yearInt)) throw new BadRequestError('Invalid year provided');
 
-  // Recovery: return existing incomplete session
+  // Recovery: return existing incomplete session for same subject+sitting
   const existingSession = await prisma.practiceSession.findFirst({
     where: {
       userId,
-      subject: { equals: subject, mode: 'insensitive' }, // ← case-insensitive
+      subject: { equals: subject, mode: 'insensitive' },
       year: yearInt,
+      sitting,  // ← ADD
       isCompleted: false,
     },
     orderBy: { createdAt: 'desc' },
@@ -175,24 +174,26 @@ export async function startPracticeService(
       practiceSessionId: existingSession.id,
       subject: existingSession.subject!,
       year: existingSession.year!,
+      sitting: existingSession.sitting!,  
       totalQuestions: existingSession.questionIds.length,
       startedAt: existingSession.startedAt,
     };
   }
 
-  // Pick up to 8 random questions — case-insensitive subject match
+  // Pick up to 8 questions for this subject+sitting only
   const allAvailable = await prisma.question.findMany({
     where: {
       type: 'ESSAY',
       isPublished: true,
-      subject: { equals: subject, mode: 'insensitive' }, // ← case-insensitive
+      subject: { equals: subject, mode: 'insensitive' },
       year: yearInt,
+      sitting,  
     },
     select: { id: true },
   });
 
   if (allAvailable.length < 5) {
-    throw new BadRequestError('Not enough questions available for this subject and year');
+    throw new BadRequestError('Not enough questions available for this subject and sitting');
   }
 
   const shuffled = allAvailable.sort(() => Math.random() - 0.5);
@@ -200,13 +201,21 @@ export async function startPracticeService(
   const questionIds = selected.map((q) => q.id);
 
   const session = await prisma.practiceSession.create({
-    data: { userId, subject, year: yearInt, questionIds, startedAt: new Date() },
+    data: {
+      userId,
+      subject,
+      year: yearInt,
+      sitting,   
+      questionIds,
+      startedAt: new Date(),
+    },
   });
 
   return {
     practiceSessionId: session.id,
     subject,
     year: yearInt,
+    sitting, 
     totalQuestions: questionIds.length,
     startedAt: session.startedAt,
   };
