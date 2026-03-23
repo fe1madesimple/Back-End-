@@ -1118,7 +1118,7 @@ class ProgressService {
     };
   }
 
-  async getSimpleDashboard(userId: string): Promise<SimpleDashboardResponse> {
+  async getSimpleDashboard(userId: string): Promise<any> {
     const user = await prisma.user.findUnique({
       where: { id: userId },
       select: {
@@ -1328,9 +1328,8 @@ class ProgressService {
       : null;
 
     let recommendedPodcasts;
-    console.log(user?.podcastRecommendations, "podcast recommendations")
-    console.log(user?.focusSubjects, "focus subjects")
-
+    console.log(user?.podcastRecommendations, 'podcast recommendations');
+    console.log(user?.focusSubjects, 'focus subjects');
 
     if (user?.podcastRecommendations && user.focusSubjects.length > 0) {
       const relevantPodcasts = await prisma.podcast.findMany({
@@ -1341,39 +1340,39 @@ class ProgressService {
         select: {
           id: true,
           title: true,
-          subjectName : true,
+          subjectName: true,
+          audioUrl: true,
           duration: true,
           thumbnail: true,
         },
         take: 3,
       });
 
-      console.log(relevantPodcasts, "relevant podcasts based on user focus subjects")
+      console.log(relevantPodcasts, 'relevant podcasts based on user focus subjects');
 
       recommendedPodcasts = relevantPodcasts.map((p) => ({
         id: p.id,
         title: p.title,
         subjectName: p.subjectName || 'General',
-        durationMinutes: Math.round((p.duration || 0) / 60),
+        audioUrl: p.audioUrl,
+        duration: p.duration || 0,
+        durationFormatted: `${Math.floor((p.duration || 0) / 60)}m ${(p.duration || 0) % 60}s`,
         thumbnail: p.thumbnail || '',
       }));
-
-
     } else {
-
       const allPodcasts = await prisma.podcast.findMany({
         where: { isPublished: true },
         select: {
           id: true,
           title: true,
+          audioUrl: true,
           subjectName: true,
           duration: true,
           thumbnail: true,
         },
       });
 
-
-      console.log(allPodcasts, "all published podcasts for random selection")
+      console.log(allPodcasts, 'all published podcasts for random selection');
 
       const shuffled = allPodcasts.sort(() => Math.random() - 0.5);
       const randomPodcasts = shuffled.slice(0, 3);
@@ -1382,11 +1381,13 @@ class ProgressService {
         id: p.id,
         title: p.title,
         subjectName: p.subjectName || 'General',
-        durationMinutes: Math.round((p.duration || 0) / 60),
+        audioUrl: p.audioUrl,
+        duration: p.duration || 0,
+        durationFormatted: `${Math.floor((p.duration || 0) / 60)}m ${(p.duration || 0) % 60}s`,
         thumbnail: p.thumbnail || '',
       }));
 
-      console.log(recommendedPodcasts, "randomly recommended podcasts")
+      console.log(recommendedPodcasts, 'randomly recommended podcasts');
     }
 
     return {
