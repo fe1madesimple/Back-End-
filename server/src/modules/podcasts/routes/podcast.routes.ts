@@ -201,4 +201,6 @@ router.get('/:id/progress', protect, podcastController.getProgress.bind(podcastC
  */
 router.get('/:id', protect, podcastController.getPodcastById.bind(podcastController));
 
+
+
 export default router;
