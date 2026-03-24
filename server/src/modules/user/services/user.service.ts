@@ -520,142 +520,155 @@ class UserService {
     const logoUrl =
       'https://res.cloudinary.com/dkrjrfqpy/image/upload/v1768477062/Frame_23_a3ppr0.png';
 
-    // ── Full HTML ───────────────────────────────────────────────────────────────
-    const html = `
+   const html = `
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Helvetica Neue', Arial, sans-serif; color: #1e293b; background: #fff; font-size: 13px; }
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #1e293b;
+    background: #fff;
+    font-size: 13px;
+    line-height: 1.5;
+  }
 
   /* ── Header ── */
   .header {
-    background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
-    color: white;
-    padding: 36px 48px 28px;
+    background: #ffffff;
+    border-bottom: 3px solid #1d4ed8;
+    padding: 24px 48px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .header-left { display: flex; align-items: center; gap: 18px; }
-  .header img { width: 80px; }
-  .header-title { font-size: 22px; font-weight: 700; }
-  .header-sub { font-size: 13px; opacity: 0.85; margin-top: 4px; }
-  .header-right { text-align: right; font-size: 11px; opacity: 0.8; }
+  .header-left { display: flex; align-items: center; gap: 16px; }
+  .header img { width: 64px; height: auto; }
+  .header-title { font-size: 20px; font-weight: 700; color: #1e293b; }
+  .header-sub { font-size: 11px; color: #64748b; margin-top: 3px; }
+  .header-right {
+    text-align: right;
+    font-size: 11px;
+    color: #64748b;
+    border-left: 1px solid #e2e8f0;
+    padding-left: 20px;
+  }
+  .header-right strong { color: #1e293b; font-size: 12px; }
 
-  /* ── Page body ── */
-  .body { padding: 36px 48px; }
+  /* ── Body ── */
+  .body { padding: 28px 48px; }
 
   /* ── Section ── */
-  .section { margin-bottom: 40px; }
+  .section { margin-bottom: 28px; }
   .section-title {
-    font-size: 15px;
+    font-size: 11px;
     font-weight: 700;
     color: #1d4ed8;
-    border-bottom: 2px solid #dbeafe;
-    padding-bottom: 6px;
-    margin-bottom: 16px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.8px;
+    border-bottom: 1.5px solid #dbeafe;
+    padding-bottom: 5px;
+    margin-bottom: 12px;
   }
 
   /* ── Stat cards ── */
   .stat-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-    margin-bottom: 8px;
+    gap: 10px;
   }
   .stat-card {
     background: #f8faff;
     border: 1px solid #dbeafe;
-    border-radius: 8px;
-    padding: 14px 12px;
+    border-radius: 6px;
+    padding: 12px 10px;
     text-align: center;
   }
-  .stat-value { font-size: 22px; font-weight: 700; color: #1d4ed8; }
-  .stat-label { font-size: 10px; color: #64748b; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.4px; }
+  .stat-value { font-size: 20px; font-weight: 700; color: #1d4ed8; }
+  .stat-label { font-size: 9.5px; color: #64748b; margin-top: 3px; text-transform: uppercase; letter-spacing: 0.4px; }
 
   /* ── Info grid ── */
-  .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 32px; }
-  .info-row { display: flex; gap: 8px; padding: 5px 0; border-bottom: 1px solid #f1f5f9; }
-  .info-label { font-weight: 600; color: #475569; min-width: 160px; font-size: 12px; }
-  .info-value { color: #1e293b; font-size: 12px; }
+  .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; }
+  .info-row {
+    display: flex;
+    gap: 8px;
+    padding: 5px 0;
+    border-bottom: 1px solid #f1f5f9;
+    align-items: flex-start;
+  }
+  .info-label { font-weight: 600; color: #475569; min-width: 140px; font-size: 11px; flex-shrink: 0; }
+  .info-value { color: #1e293b; font-size: 11px; }
 
   /* ── Progress bars ── */
-  .subject-row { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
-  .subject-label { display: flex; justify-content: space-between; min-width: 200px; }
-  .subject-name { font-weight: 600; font-size: 12px; }
-  .subject-meta { font-size: 11px; color: #94a3b8; }
-  .progress-track { flex: 1; height: 8px; background: #e2e8f0; border-radius: 99px; overflow: hidden; }
+  .subject-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .subject-label { display: flex; justify-content: space-between; min-width: 180px; gap: 8px; }
+  .subject-name { font-weight: 600; font-size: 11px; color: #1e293b; }
+  .subject-meta { font-size: 10px; color: #94a3b8; }
+  .progress-track { flex: 1; height: 7px; background: #e2e8f0; border-radius: 99px; overflow: hidden; }
   .progress-fill { height: 100%; border-radius: 99px; }
-  .subject-pct { font-weight: 700; font-size: 12px; min-width: 36px; text-align: right; color: #334155; }
+  .subject-pct { font-weight: 700; font-size: 11px; min-width: 34px; text-align: right; color: #334155; }
 
   /* ── Tables ── */
-  table { width: 100%; border-collapse: collapse; font-size: 11.5px; }
+  table { width: 100%; border-collapse: collapse; font-size: 11px; }
   th {
-    background: #6483da;
+    background: #1d4ed8;
     color: white;
-    padding: 8px 10px;
+    padding: 7px 10px;
     text-align: left;
     font-weight: 600;
-    font-size: 11px;
+    font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 0.3px;
   }
-  td { padding: 7px 10px; border-bottom: 1px solid #f1f5f9; color: #334155; }
+  td { padding: 6px 10px; border-bottom: 1px solid #f1f5f9; color: #334155; vertical-align: top; }
   tr:nth-child(even) td { background: #f8faff; }
-  .empty-cell { text-align: center; color: #94a3b8; padding: 20px; }
+  .empty-cell { text-align: center; color: #94a3b8; padding: 16px; font-style: italic; }
 
   /* ── Badges ── */
-  .badge {
-    display: inline-block;
-    padding: 2px 8px;
-    border-radius: 99px;
-    font-size: 10.5px;
-    font-weight: 600;
-  }
+  .badge { display: inline-block; padding: 2px 7px; border-radius: 99px; font-size: 10px; font-weight: 600; }
   .badge-pass { background: #dcfce7; color: #16a34a; }
   .badge-fail { background: #fee2e2; color: #dc2626; }
 
   /* ── Achievements ── */
-  .achievements-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .achievements-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
   .achievement-card {
     display: flex;
     align-items: flex-start;
-    gap: 12px;
-    background: #fafafa;
+    gap: 10px;
+    background: #f8faff;
     border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    padding: 12px;
+    border-radius: 6px;
+    padding: 10px;
   }
-  .achievement-icon { font-size: 22px; }
-  .achievement-title { font-weight: 700; font-size: 12px; color: #1e293b; }
-  .achievement-desc { font-size: 11px; color: #64748b; margin-top: 2px; }
-  .achievement-date { font-size: 10px; color: #94a3b8; margin-top: 4px; }
+  .achievement-icon { font-size: 20px; line-height: 1; }
+  .achievement-title { font-weight: 700; font-size: 11px; color: #1e293b; }
+  .achievement-desc { font-size: 10px; color: #64748b; margin-top: 2px; }
+  .achievement-date { font-size: 9.5px; color: #94a3b8; margin-top: 3px; }
 
   /* ── Footer ── */
   .footer {
-    margin-top: 48px;
-    padding: 16px 48px;
+    margin-top: 32px;
+    padding: 12px 48px;
     background: #f8faff;
     border-top: 1px solid #dbeafe;
-    text-align: center;
-    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 9.5px;
     color: #94a3b8;
   }
 
-  .empty { color: #94a3b8; font-style: italic; font-size: 12px; }
+  .empty { color: #94a3b8; font-style: italic; font-size: 11px; padding: 4px 0; }
 
-  /* ── Page break ── */
-  .page-break { page-break-before: always; }
+  /* ── Divider ── */
+  .divider { border: none; border-top: 1px solid #f1f5f9; margin: 4px 0 12px; }
 </style>
 </head>
 <body>
 
-<!-- ── HEADER ─────────────────────────────────────────────────────────── -->
+<!-- ── HEADER ── -->
 <div class="header">
   <div class="header-left">
     <img src="${logoUrl}" alt="FE-1 Made Simple" />
@@ -671,7 +684,7 @@ class UserService {
 
 <div class="body">
 
-<!-- ── KEY STATS ──────────────────────────────────────────────────────── -->
+<!-- ── OVERVIEW ── -->
 <div class="section">
   <div class="section-title">Overview</div>
   <div class="stat-grid">
@@ -710,7 +723,7 @@ class UserService {
   </div>
 </div>
 
-<!-- ── PERSONAL INFO ───────────────────────────────────────────────────── -->
+<!-- ── PERSONAL INFO ── -->
 <div class="section">
   <div class="section-title">Personal Information</div>
   <div class="info-grid">
@@ -725,14 +738,14 @@ class UserService {
   </div>
 </div>
 
-<!-- ── SUBJECT PROGRESS ────────────────────────────────────────────────── -->
+<!-- ── SUBJECT PROGRESS ── -->
 <div class="section">
   <div class="section-title">Subject Progress</div>
   ${subjectBarsHTML}
 </div>
 
-<!-- ── ESSAY PRACTICE ─────────────────────────────────────────────────── -->
-<div class="section page-break">
+<!-- ── RECENT ESSAYS ── -->
+<div class="section">
   <div class="section-title">Recent Essay Practice (Last 10)</div>
   <table>
     <thead>
@@ -750,7 +763,7 @@ class UserService {
   </table>
 </div>
 
-<!-- ── SIMULATIONS ────────────────────────────────────────────────────── -->
+<!-- ── SIMULATIONS ── -->
 <div class="section">
   <div class="section-title">Simulation Results</div>
   <table>
@@ -769,13 +782,13 @@ class UserService {
   </table>
 </div>
 
-<!-- ── ACHIEVEMENTS ───────────────────────────────────────────────────── -->
-<div class="section page-break">
+<!-- ── ACHIEVEMENTS ── -->
+<div class="section">
   <div class="section-title">Achievements Unlocked (${achievements.length})</div>
   <div class="achievements-grid">${achievementsHTML}</div>
 </div>
 
-<!-- ── SAVED CASES ────────────────────────────────────────────────────── -->
+<!-- ── SAVED CASES ── -->
 <div class="section">
   <div class="section-title">Saved Case Law (${savedCases.length})</div>
   <table>
@@ -793,11 +806,12 @@ class UserService {
   </table>
 </div>
 
-</div><!-- end body -->
+</div>
 
-<!-- ── FOOTER ─────────────────────────────────────────────────────────── -->
+<!-- ── FOOTER ── -->
 <div class="footer">
-  This report contains personal study data from FE-1 Made Simple. Keep it confidential. &nbsp;|&nbsp; fe1madesimple.com
+  <span>This report contains personal study data from FE-1 Made Simple. Keep it confidential.</span>
+  <span>fe1madesimple.com</span>
 </div>
 
 </body>
