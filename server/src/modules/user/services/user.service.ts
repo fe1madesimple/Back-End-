@@ -811,7 +811,7 @@ class UserService {
 <!-- ── FOOTER ── -->
 <div class="footer">
   <span>This report contains personal study data from FE-1 Made Simple. Keep it confidential.</span>
-  <span>fe1madesimple.com</span>
+  <span>fe1madesimple.ie</span>
 </div>
 
 </body>
