@@ -10,6 +10,8 @@ export const COOKIE_OPTIONS = {
   path: '/',
 };
 
+
+
 export const setAuthCookies = (res: Response, accessToken: string, refreshToken: string) => {
   // Set access token (7 days)
   res.cookie('accessToken', accessToken, {
