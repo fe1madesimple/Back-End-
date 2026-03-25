@@ -518,7 +518,7 @@ class UserService {
 
     const generatedDate = new Date().toLocaleDateString('en-IE', { dateStyle: 'full' });
     const logoUrl =
-      'https://res.cloudinary.com/dkrjrfqpy/image/upload/v1768477062/Frame_23_a3ppr0.png';
+      'https://res.cloudinary.com/dkrjrfqpy/image/upload/v1774449295/Frame_24_vxru91.svg';
 
    const html = `
 <!DOCTYPE html>
