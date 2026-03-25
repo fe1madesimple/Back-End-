@@ -1,7 +1,6 @@
 import { Router } from 'express';
 import { protect } from '@/shared/middleware/auth.middleware';
 import { PodcastController } from '../controller/podcast.controller';
-import { gate } from '@/shared/middleware/gate.middleware';
 
 const router = Router();
 const podcastController = new PodcastController();
@@ -26,8 +25,6 @@ const podcastController = new PodcastController();
  *         description: Returns totalStarted, totalCompleted, totalInProgress, totalListenedHours
  */
 router.get('/stats', protect, podcastController.getPodcastStats.bind(podcastController));
-
-
 
 
 /**
@@ -106,7 +103,7 @@ router.get('/stats', protect, podcastController.getPodcastStats.bind(podcastCont
  *                         type: string
  *                       example: ["Company Law", "Contract Law", "Criminal Law"]
  */
-router.get('/', protect,  gate('STANDARD'), podcastController.getAllPodcasts.bind(podcastController));
+router.get('/', protect, podcastController.getAllPodcasts.bind(podcastController));
 
 /**
  * @swagger
@@ -158,7 +155,7 @@ router.get('/', protect,  gate('STANDARD'), podcastController.getAllPodcasts.bin
  *                       type: integer
  *                       example: 45
  */
-router.post('/:id/progress',  gate('STANDARD'), protect, podcastController.trackProgress.bind(podcastController));
+router.post('/:id/progress',   protect, podcastController.trackProgress.bind(podcastController));
 
 /**
  * @swagger
@@ -178,7 +175,7 @@ router.post('/:id/progress',  gate('STANDARD'), protect, podcastController.track
  *       200:
  *         description: Returns listenedSeconds, isCompleted, percentageListened
  */
-router.get('/:id/progress',  gate('STANDARD'), protect, podcastController.getProgress.bind(podcastController));
+router.get('/:id/progress',   protect, podcastController.getProgress.bind(podcastController));
 
 /**
  * @swagger
@@ -200,7 +197,7 @@ router.get('/:id/progress',  gate('STANDARD'), protect, podcastController.getPro
  *       404:
  *         description: Podcast not found
  */
-router.get('/:id', protect,  gate('STANDARD'), podcastController.getPodcastById.bind(podcastController));
+router.get('/:id', protect,  podcastController.getPodcastById.bind(podcastController));
 
 
 
