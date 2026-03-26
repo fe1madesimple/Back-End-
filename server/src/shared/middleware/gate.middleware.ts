@@ -80,12 +80,12 @@ export function gate(requiredPlan: RequiredPlan, options: GateOptions = {}) {
 
       // ── AI session limit ───────────────────────────────────────────────────
       if (options.aiLimit && effectiveTier !== 'TRIAL') {
-        const limit =
-          effectiveTier === 'PRO'
+        const limit = 
+          effectiveTier === 'PRO' 
             ? AI_LIMITS.PRO
-            : effectiveTier === 'STANDARD'
+            : effectiveTier === 'STANDARD' 
               ? AI_LIMITS.STANDARD
-              : AI_LIMITS.FREE;
+              : AI_LIMITS.FREE; 
 
         if (limit === 0) {
           throw new AppError('AI feedback requires a Standard plan or above.', 403);
