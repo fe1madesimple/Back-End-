@@ -40,7 +40,6 @@ export function gate(requiredPlan: RequiredPlan, options: GateOptions = {}) {
         select: { status: true, planType: true },
       });
 
-     
       if (!subscription) {
         if (requiredPlan === 'FREE') return next();
         throw new AppError('Upgrade your plan to access this feature', 403);
@@ -48,7 +47,11 @@ export function gate(requiredPlan: RequiredPlan, options: GateOptions = {}) {
 
       const { status, planType } = subscription;
 
-      
+      console.log('GATE CHECK - userId:', userId);
+      console.log('GATE CHECK - subscription:', subscription);
+
+      console.log(status, planType)
+
       let effectiveTier: 'FREE' | 'STANDARD' | 'PRO' | 'TRIAL';
 
       if (status === 'TRIAL') {
@@ -62,11 +65,9 @@ export function gate(requiredPlan: RequiredPlan, options: GateOptions = {}) {
           effectiveTier = 'FREE';
         }
       } else {
-        
         effectiveTier = 'FREE';
       }
 
-      
       const tierRank: Record<string, number> = { FREE: 0, STANDARD: 1, PRO: 2, TRIAL: 3 };
       const requiredRank: Record<string, number> = { FREE: 0, STANDARD: 1, PRO: 2 };
 
@@ -80,12 +81,12 @@ export function gate(requiredPlan: RequiredPlan, options: GateOptions = {}) {
 
       // ── AI session limit ───────────────────────────────────────────────────
       if (options.aiLimit && effectiveTier !== 'TRIAL') {
-        const limit = 
-          effectiveTier === 'PRO' 
+        const limit =
+          effectiveTier === 'PRO'
             ? AI_LIMITS.PRO
-            : effectiveTier === 'STANDARD' 
+            : effectiveTier === 'STANDARD'
               ? AI_LIMITS.STANDARD
-              : AI_LIMITS.FREE; 
+              : AI_LIMITS.FREE;
 
         if (limit === 0) {
           throw new AppError('AI feedback requires a Standard plan or above.', 403);
@@ -113,7 +114,6 @@ export function gate(requiredPlan: RequiredPlan, options: GateOptions = {}) {
         }
       }
 
-      
       (req as any).userPlan = { effectiveTier, planType, status };
 
       next();
