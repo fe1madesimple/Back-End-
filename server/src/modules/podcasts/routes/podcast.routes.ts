@@ -27,7 +27,6 @@ const podcastController = new PodcastController();
  */
 router.get('/stats', protect, podcastController.getPodcastStats.bind(podcastController));
 
-
 /**
  * @swagger
  * /api/v1/podcasts:
@@ -104,7 +103,12 @@ router.get('/stats', protect, podcastController.getPodcastStats.bind(podcastCont
  *                         type: string
  *                       example: ["Company Law", "Contract Law", "Criminal Law"]
  */
-router.get('/', protect,  gate('STANDARD'), podcastController.getAllPodcasts.bind(podcastController));
+router.get(
+  '/',
+  protect,
+  gate('STANDARD'),
+  podcastController.getAllPodcasts.bind(podcastController)
+);
 
 /**
  * @swagger
@@ -156,7 +160,12 @@ router.get('/', protect,  gate('STANDARD'), podcastController.getAllPodcasts.bin
  *                       type: integer
  *                       example: 45
  */
-router.post('/:id/progress',  gate('STANDARD'), protect, podcastController.trackProgress.bind(podcastController));
+router.post(
+  '/:id/progress',
+  protect,
+  gate('STANDARD'),
+  podcastController.trackProgress.bind(podcastController)
+);
 
 /**
  * @swagger
@@ -176,7 +185,12 @@ router.post('/:id/progress',  gate('STANDARD'), protect, podcastController.track
  *       200:
  *         description: Returns listenedSeconds, isCompleted, percentageListened
  */
-router.get('/:id/progress',  gate('STANDARD'), protect, podcastController.getProgress.bind(podcastController));
+router.get(
+  '/:id/progress',
+  protect,
+  gate('STANDARD'),
+  podcastController.getProgress.bind(podcastController)
+);
 
 /**
  * @swagger
@@ -198,8 +212,11 @@ router.get('/:id/progress',  gate('STANDARD'), protect, podcastController.getPro
  *       404:
  *         description: Podcast not found
  */
-router.get('/:id', protect,  gate('STANDARD'), podcastController.getPodcastById.bind(podcastController));
-
-
+router.get(
+  '/:id',
+  protect,
+  gate('STANDARD'),
+  podcastController.getPodcastById.bind(podcastController)
+);
 
 export default router;
