@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module11_Lesson02.txt",
+  "module_number": 11,
+  "module_title": "EU Citizenship",
+  "lesson_number": 2,
+  "lesson_title": "The Expansive Phase: Grzelczyk, Baumbast, and the Equal Treatment Claim",
+  "questions": [
+    {
+      "id": "EUL_M11_L02_Q01",
+      "question": "In Grzelczyk v Centre public d'aide sociale [2001] (C-184/99), a French student in Belgium claimed a Belgian 'minimex' (minimum subsistence allowance). Belgian law reserved this for Belgian nationals. The CJEU held:",
+      "options": {
+        "A": "That EU citizens have no right to social assistance in host member states until they have worked there",
+        "B": "That Mr Grzelczyk, as an EU citizen exercising free movement rights as a student, was entitled to rely on Article 12 TEC (now Article 18 TFEU) to claim the minimex on the same basis as Belgian students — EU citizenship is destined to be the 'fundamental status' of nationals of member states; he had been self-sufficient and claimed assistance only temporarily in his final year",
+        "C": "That social assistance benefits for EU students are entirely a matter for national law",
+        "D": "That a student's right to social assistance depends solely on whether they have comprehensive sickness insurance"
+      },
+      "correct_answer": "B",
+      "explanation": "Grzelczyk is the case in which the CJEU made its famous declaration that EU citizenship is 'destined to be the fundamental status of nationals of the member states'. The Court held that Mr Grzelczyk, a French student who had been self-sufficient for three years and claimed the minimex only in his fourth (final) year due to temporary financial difficulty, could rely on the non-discrimination principle (Article 18 TFEU) in conjunction with Article 21 (free movement) to claim the benefit. Belgium could treat the temporary burden as triggering the possibility of expulsion but could not automatically deny the claim. This decision began the expansive phase of EU citizenship — social rights following from the mere status of EU citizen exercising free movement."
+    },
+    {
+      "id": "EUL_M11_L02_Q02",
+      "question": "The phrase 'EU citizenship is destined to be the fundamental status of nationals of the member states' originates from Grzelczyk [2001] and was elaborated in subsequent cases. What does this mean?",
+      "options": {
+        "A": "That EU citizenship supersedes national citizenship in all legal matters",
+        "B": "That EU citizenship is not merely an add-on to sectoral free movement rights — it is a primary status conferring rights of equal treatment wherever EU citizens exercise free movement, such that comparable situations should be treated equally regardless of nationality",
+        "C": "That all EU citizens acquire the same rights as the most privileged category of EU workers from the moment of movement",
+        "D": "That EU citizenship will eventually replace national citizenship as the primary legal status in Europe"
+      },
+      "correct_answer": "B",
+      "explanation": "The 'fundamental status' language from Grzelczyk signals a constitutional shift: EU citizenship is not a derivative or sectoral concept (a bundle of specific market access rights) but a primary legal status from which rights of equal treatment flow more broadly. When an EU citizen moves to another member state and finds themselves in a situation governed by EU law (because they have exercised free movement), they are entitled to equal treatment with nationals in comparable situations. The principle means that nationality should not be a basis for differential treatment of comparable situations within the scope of EU law. However, as later cases show, 'fundamental status' has its limits — it does not collapse the distinction between citizens and nationals in all contexts."
+    },
+    {
+      "id": "EUL_M11_L02_Q03",
+      "question": "In D'Hoop v Office national de l'emploi [2002] (C-224/98), a Belgian national who had studied in France was denied a Belgian 'tide-over allowance' (for young people seeking a first job after studies) because she had not completed her secondary studies in Belgium. The CJEU held:",
+      "options": {
+        "A": "That Belgium was entitled to require completion of studies in Belgium as a condition for the allowance",
+        "B": "That the condition was contrary to Article 21 TFEU — it penalised Belgian nationals who had exercised free movement rights to study in another member state; the single criterion (where secondary studies were completed) was disproportionate and would deter EU citizens from exercising their mobility rights",
+        "C": "That study abroad does not engage free movement rights for the purposes of EU citizenship",
+        "D": "That EU citizenship rights apply only when a citizen is residing in a member state other than their own"
+      },
+      "correct_answer": "B",
+      "explanation": "D'Hoop illustrates that EU citizenship protects mobile EU citizens against their own member state penalising them for having exercised free movement rights. The Belgian condition (secondary studies completed in Belgium) was a single criterion that bore no rational relation to the social inclusion objectives of the tide-over allowance — it simply penalised prior mobility. The CJEU held that a citizen must not be placed in a worse position as a result of having exercised free movement rights. This 'obstacle' approach extends citizenship protection beyond non-discrimination between nationals and non-nationals — it protects mobility itself. D'Hoop extended the citizenship principle into the home state context."
+    },
+    {
+      "id": "EUL_M11_L02_Q04",
+      "question": "In Collins v Secretary of State for Work and Pensions [2004] (C-138/02), Mr Collins, an Irish-American national (Irish passport holder), moved to the UK to look for work and applied for a jobseeker's allowance. The CJEU held:",
+      "options": {
+        "A": "That job-seekers have the same social assistance rights as workers under EU citizenship law",
+        "B": "That while job-seekers may invoke the non-discrimination principle (Article 18 TFEU) to claim benefits such as jobseeker's allowances, member states may legitimately impose a prior residence requirement — provided it is proportionate and assessed individually — to establish a genuine link between the claimant and the national employment market",
+        "C": "That Mr Collins was a worker under Article 45 TFEU and entitled to all worker social advantages",
+        "D": "That EU citizenship confers an unconditional right to claim all benefits available to nationals of the host state"
+      },
+      "correct_answer": "B",
+      "explanation": "Collins is significant because it allows member states to impose a residence requirement as a 'genuine link' condition for job-seeker allowances — going beyond what a worker could face (workers are entitled to equal treatment in social advantages without a prior residence requirement). The CJEU held that the host state may require a genuine link with the national employment market (shown through a proportionate residence requirement) before extending jobseeker benefits. This reflects the balance between the expansive citizenship approach and fiscal realism — social assistance can be conditioned on a demonstrable integration link. Collins thus places job-seekers in an intermediate position between workers (full equal treatment) and economically inactive citizens (may be excluded from social assistance)."
+    },
+    {
+      "id": "EUL_M11_L02_Q05",
+      "question": "In Bidar [2005] (C-209/03), Mr Bidar, a French national who had settled in the UK to care for his grandmother, applied for a student maintenance loan from the UK. The CJEU held:",
+      "options": {
+        "A": "That student loans are outside the scope of EU law and entirely a matter for national law",
+        "B": "That EU citizens who are lawfully resident in the host state may invoke Article 18 TFEU to access student maintenance assistance on a non-discriminatory basis — the UK could impose a requirement of a genuine link (prior lawful residence showing integration) but could not impose a blanket rule excluding all non-nationals",
+        "C": "That student maintenance grants and loans are a social advantage under Regulation 1612/68 and must be equally available to all EU citizens from day one",
+        "D": "That student loans can only be denied to EU citizens who have not worked in the host state"
+      },
+      "correct_answer": "B",
+      "explanation": "Bidar confirmed and developed Grzelczyk in the student context. The CJEU held that EU citizenship, read with the non-discrimination principle, required the UK to extend student maintenance assistance to EU citizens who had integrated sufficiently into UK society — shown by prior lawful residence. A blanket exclusion of all non-nationals from loans was disproportionate. However, the UK could require a genuine link (demonstrated by lawful prior residence showing real integration) — Mr Bidar's three years of secondary schooling in the UK and subsequent University College London admission satisfied this. This approach — genuine link plus proportionality — became the template for subsequent cases on social benefits and EU citizenship."
+    },
+    {
+      "id": "EUL_M11_L02_Q06",
+      "question": "Trojani v Centre public d'aide sociale [2004] (C-456/02) involved a French national living in a Salvation Army hostel in Belgium, performing community work for pocket money. His worker status was rejected. The CJEU held:",
+      "options": {
+        "A": "That Mr Trojani was a worker because he performed services for remuneration",
+        "B": "That even if Mr Trojani was not a worker, as a lawfully resident EU citizen he could invoke the non-discrimination principle under Article 18 TFEU to claim the Belgian minimex — however, Belgium could assess whether his residence was lawful and whether he met the Article 7 conditions for residence",
+        "C": "That the Salvation Army was responsible for providing Trojani's social needs and Belgium had no obligation",
+        "D": "That economically inactive EU citizens have no right to any social assistance in host member states"
+      },
+      "correct_answer": "B",
+      "explanation": "Trojani demonstrates the complex interplay between residency legality and social rights. The CJEU found Trojani was not a worker (his work was not genuine and effective economic activity in the Lawrie-Blum sense — it resembled the Bettray social rehabilitation situation). However, as an EU citizen who had been lawfully granted residence by Belgian authorities (a registered permit had been issued), he could rely on Article 18 TFEU and EU citizenship to claim the minimex on an equal basis with Belgians. The Court noted Belgium could examine whether Trojani's continued residence was lawful under Article 7 — if not, it could legitimately expel rather than provide benefits. Residency legality and social entitlement are linked."
+    },
+    {
+      "id": "EUL_M11_L02_Q07",
+      "question": "Baumbast and R [2002] (C-413/99) established two important principles for EU citizenship. Beyond confirming Article 21's direct effect, what was the second major holding?",
+      "options": {
+        "A": "That EU citizens have a right to social housing in the host member state",
+        "B": "That the children of a former EU worker have an independent right to continue education in the host state under Article 12 of Regulation 1612/68, and the primary carer parent (including a non-EU national) retains a right of residence to enable this — even after the EU worker parent has left the host state or the marriage has ended",
+        "C": "That EU citizenship replaces the need to satisfy any Article 7 conditions for residence",
+        "D": "That Article 21 TFEU applies in purely internal situations with no cross-border element"
+      },
+      "correct_answer": "B",
+      "explanation": "The 'R' case (joined with Baumbast) concerned a non-EU national divorced from an EU worker who had left the UK. The CJEU held that R's children had an independent right to remain in the UK to continue their education under Article 12 of Regulation 1612/68 (now Article 10 of Regulation 492/2011), irrespective of their father's departure and their mother's non-EU nationality. Furthermore, R herself retained a derivative right of residence as the primary carer of the children — without her residence, the children's educational right would be a practical nullity. This holding established the now-important principle that Article 10 Regulation 492/2011 rights can sustain both child and primary-carer residence independently of worker status."
+    },
+    {
+      "id": "EUL_M11_L02_Q08",
+      "question": "Förster v Hoofddirectie van de Informatie Beheer Groep [2008] (C-158/07) concerned a German student in the Netherlands claiming a Dutch student maintenance grant. The Netherlands required five years of prior residence. The CJEU held:",
+      "options": {
+        "A": "That any prior residence requirement for student grants is contrary to Article 18 TFEU",
+        "B": "That a five-year prior residence requirement was proportionate and compatible with EU law — it constituted a permissible genuine link condition; unlike Bidar, where the condition was assessed individually, a clear rule requiring five years of prior residence (before claiming grants) provided legal certainty and was proportionate for the purposes of ensuring genuine integration",
+        "C": "That student grants are not within the scope of EU law",
+        "D": "That economically inactive students have the same rights to benefits as workers"
+      },
+      "correct_answer": "B",
+      "explanation": "Förster is significant because it endorsed a more restrictive approach to student maintenance grants than Bidar. The CJEU accepted that the Netherlands' five-year prior residence requirement was proportionate as a 'clear and predictable' genuine link condition — giving legal certainty. Förster (unlike Bidar) had not shown sufficient integration: she had not completed secondary education in the Netherlands and had only been there for two years. The case shows that the 'genuine link' condition may be applied through clear rules rather than individual assessments, provided the rule is not itself arbitrary or disproportionate. This reflects a more cautious approach to extending citizenship social rights — member states retain significant room to manage their social benefit systems."
+    },
+    {
+      "id": "EUL_M11_L02_Q09",
+      "question": "Morgan and Bucher [2007] (Joined Cases C-11/06 and C-12/06) concerned German nationals studying abroad who were denied German educational grants because their study was not a continuation of studies pursued in Germany for at least one year. The CJEU held:",
+      "options": {
+        "A": "That Germany was entitled to require a minimum period of prior domestic study before funding study abroad",
+        "B": "That the German rule penalised nationals who had not first studied in Germany — creating a disincentive to begin studies directly in another EU member state; this disproportionate restriction on free movement could not be justified; member states could condition grants on genuine links but not deter primary study mobility",
+        "C": "That Germany had no obligation to fund the education of its nationals studying abroad",
+        "D": "That student portability of grants is entirely governed by bilateral agreements between member states"
+      },
+      "correct_answer": "B",
+      "explanation": "Morgan and Bucher applied the D'Hoop principle in the education grants context: a member state cannot impose conditions that penalise its own nationals for starting their education directly in another member state. Germany's requirement of one year of prior domestic study before funding study abroad deterred nationals from initially going abroad — it was a disproportionate obstacle to free movement. The CJEU acknowledged Germany could impose a genuine link condition (ensuring the student genuinely intends to return and contribute to Germany), but the specific requirement (one year domestic study) was not a proportionate means of achieving this. This case shows the tension between member state control over educational funding and EU mobility rights."
+    },
+    {
+      "id": "EUL_M11_L02_Q10",
+      "question": "Chen [2004] (C-200/02) concerned a Chinese national whose baby was born in Belfast (and acquired Irish nationality under Irish birthright citizenship law). The baby's Chinese mother sought to rely on the baby's EU citizenship to establish a residence right in the UK for herself and the child. The CJEU held:",
+      "options": {
+        "A": "That EU citizenship cannot be acquired through citizenship of birth-right rules that are contrary to the spirit of EU law",
+        "B": "That Catherine Chen (the baby, an Irish/EU citizen) had a right to reside in the UK (as an EU citizen in another member state) and her mother as primary carer had a derivative right of residence — the mother's right was necessary to give practical effect to the child's EU citizenship right",
+        "C": "That citizenship acquired through deliberate birth tourism cannot ground EU law rights",
+        "D": "That only the child's rights were relevant — the non-EU mother had no derivative rights from the child's EU citizenship"
+      },
+      "correct_answer": "B",
+      "explanation": "Chen is a landmark EU citizenship case. Catherine Chen was born in Northern Ireland to Chinese parents — under Irish constitutional law at the time, she acquired Irish (and thus EU) citizenship by birth on the island of Ireland. As an EU citizen in the UK (a different member state from her Irish nationality), she had an Article 21 right of residence. Her mother, as primary carer of an infant EU citizen, had a derivative right of residence necessary to give practical effect to the child's rights. The CJEU rejected the UK's argument that the citizenship acquisition was an abuse of rights — the Irish state's decision to confer citizenship was its sovereign prerogative, and the resulting EU citizenship rights were real and must be respected."
+    }
+  ],
+  "total_questions": 10
+}

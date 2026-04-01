@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_02_Lesson_03_Severance_of_Joint_Tenancy.txt",
+  "module_number": 2,
+  "module_title": "Co-Ownership",
+  "lesson_number": 3,
+  "lesson_title": "Severance of Joint Tenancy",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M02_L03_Q01",
+      "question": "What is 'severance' in the context of co-ownership law?",
+      "options": {
+        "A": "The physical division of co-owned land into separate parcels by court order",
+        "B": "The process by which a joint tenancy is converted into a tenancy in common, destroying the right of survivorship in respect of the severing joint tenant's interest",
+        "C": "The process by which a co-owner's share is sold to a third party with the consent of all co-owners",
+        "D": "The statutory mechanism by which a court terminates a co-ownership arrangement on the application of one party"
+      },
+      "correct_answer": "B",
+      "explanation": "Severance is the process by which a joint tenancy is converted into a tenancy in common. It destroys the right of survivorship (jus accrescendi) in respect of the severing joint tenant's interest. After severance, the former joint tenant holds a defined share as a tenant in common, which they can dispose of by will or otherwise. The remaining parties may continue as joint tenants between themselves. The key practical effect is that the severed share will no longer automatically accrue to the other co-owners on the severing joint tenant's death."
+    },
+    {
+      "id": "PRL_M02_L03_Q02",
+      "question": "Williams v Hensman [1861] is the leading authority on methods of severance. Who decided that case and how many methods of severance did they identify?",
+      "options": {
+        "A": "Laffoy J in the Irish High Court; two methods",
+        "B": "Page Wood V-C in the English Court of Chancery; three methods",
+        "C": "Lord Denning MR in the English Court of Appeal; four methods",
+        "D": "The Irish Supreme Court; two methods"
+      },
+      "correct_answer": "B",
+      "explanation": "Williams v Hensman [1861] was decided by Page Wood V-C in the English Court of Chancery. In that case, he identified three methods by which a joint tenancy can be severed: (1) an act operating on the joint tenant's own share; (2) mutual agreement between the joint tenants; and (3) a course of dealing. These three methods remain the foundational common law framework for severance. A fourth, statutory method was subsequently added by section 31 of the LCLRA 2009 in Ireland."
+    },
+    {
+      "id": "PRL_M02_L03_Q03",
+      "question": "Under Williams v Hensman [1861], what is the first method of severance — 'an act operating on the joint tenant's own share'?",
+      "options": {
+        "A": "The joint tenant making a will leaving their interest to a named beneficiary",
+        "B": "Any unilateral act by which the joint tenant treats their interest as a separate thing, most commonly an alienation such as transferring their share to a third party",
+        "C": "The joint tenant applying to court for an order of partition",
+        "D": "The joint tenant giving oral notice to the other co-owners that they wish to sever"
+      },
+      "correct_answer": "B",
+      "explanation": "The first Williams v Hensman method is an act operating on the joint tenant's own share — any unilateral act by which the joint tenant treats their interest as a separate thing. The most common example is an alienation: transferring the share to a third party. When a joint tenant transfers their share, the unity of title between the original co-owners is destroyed and the transferee takes as a tenant in common. A binding and specifically enforceable agreement to sell the share can also constitute an act operating on the share in equity, even before the formal transfer is completed."
+    },
+    {
+      "id": "PRL_M02_L03_Q04",
+      "question": "Under Williams v Hensman [1861], what does 'mutual agreement' as a method of severance require?",
+      "options": {
+        "A": "A formal deed signed by all joint tenants specifically revoking the joint tenancy",
+        "B": "An agreement between all joint tenants to hold as tenants in common, which may be informal provided it is sufficiently clear that all parties have agreed to treat their interests as separate",
+        "C": "Court approval of the terms of the severance agreement before it takes effect",
+        "D": "A written agreement executed by a solicitor on behalf of all parties"
+      },
+      "correct_answer": "B",
+      "explanation": "Mutual agreement as a method of severance does not require a formal deed. It can be an informal agreement, provided it is sufficiently clear that all joint tenants have agreed to treat their interests as separate rather than as a joint interest. The Irish High Court confirmed this in McDowell v Hutchinson [2004], where an agreement to partition the land — even though it was not ultimately completed — was sufficient to sever the joint tenancy. The key requirement is that the agreement must be clear enough to demonstrate that all parties intended to deal with their interests separately."
+    },
+    {
+      "id": "PRL_M02_L03_Q05",
+      "question": "McDowell v Hutchinson [2004] is an important Irish authority on which method of severance?",
+      "options": {
+        "A": "Statutory severance by written notice under section 31 LCLRA 2009",
+        "B": "An act operating on the joint tenant's own share by way of alienation",
+        "C": "Mutual agreement — the High Court confirmed that an agreement to partition, even if not completed, sufficed to sever the joint tenancy",
+        "D": "Course of dealing — the parties had conducted their affairs in a manner inconsistent with joint tenancy"
+      },
+      "correct_answer": "C",
+      "explanation": "McDowell v Hutchinson [2004] is the key Irish High Court authority confirming the mutual agreement method of severance under Williams v Hensman [1861]. The court held that a mutual agreement to partition the land — even though it was not ultimately completed and no formal deed was executed — was sufficient to sever the joint tenancy. The agreement demonstrated clearly that all the parties had agreed to treat their interests as separate, which is the essential requirement for severance by mutual agreement."
+    },
+    {
+      "id": "PRL_M02_L03_Q06",
+      "question": "Why is the third Williams v Hensman method — 'a course of dealing' — the most difficult to establish?",
+      "options": {
+        "A": "Because it requires a formal written course of dealing extending over at least ten years",
+        "B": "Because the courts have held that a course of dealing can never amount to severance without a specific agreement",
+        "C": "Because the course of dealing must be unequivocal and sufficiently clear to indicate the parties treated their interests as separate — merely negotiating about a partition without concluding an agreement is generally not sufficient",
+        "D": "Because the Irish courts have not yet accepted course of dealing as a valid method of severance"
+      },
+      "correct_answer": "C",
+      "explanation": "A course of dealing is the most difficult Williams v Hensman method to establish because the conduct must be unequivocal — it must clearly indicate that the parties treated their interests as separate, not merely that they were in discussion about doing so. The courts have consistently held that negotiations about a possible partition, without reaching a concluded agreement, are not sufficient to demonstrate the necessary course of dealing. There must be positive, consistent conduct over time that could only be explained on the basis that the parties regarded their interests as severed."
+    },
+    {
+      "id": "PRL_M02_L03_Q07",
+      "question": "What statutory method of severance was introduced by section 31 of the LCLRA 2009?",
+      "options": {
+        "A": "A joint tenant may sever by registering a unilateral notice of severance with the Land Registry",
+        "B": "A joint tenant may sever unilaterally by serving a written notice of severance on the other joint tenant or joint tenants",
+        "C": "A joint tenant may sever by making a will leaving their interest to a named person",
+        "D": "A joint tenant may sever by obtaining a court order declaring the joint tenancy severed"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 31 of the LCLRA 2009 introduced a statutory method of severance: a joint tenant may unilaterally sever the joint tenancy by serving a written notice of severance on the other joint tenant or joint tenants. This is a major practical reform. Severance can now be achieved simply, clearly, and without the cooperation of the other joint tenants, by serving a written notice. Service may be effected personally, by leaving it at the person's last known address, or by registered post. The severance takes effect from the date of service."
+    },
+    {
+      "id": "PRL_M02_L03_Q08",
+      "question": "Under section 31(2) LCLRA 2009, how may a notice of severance be served?",
+      "options": {
+        "A": "Only by hand delivery to the other joint tenants personally in the presence of a witness",
+        "B": "Personally, by leaving it at the person's last known address, or by registered post",
+        "C": "Only through the parties' respective solicitors by way of correspondence",
+        "D": "By filing it with the Land Registry and notifying the other joint tenants of the filing reference"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 31(2) of the LCLRA 2009 provides that a notice of severance may be served personally, by leaving it at the person's last known address, or by registered post. This flexible approach to service means that a joint tenant cannot easily avoid being served with a notice of severance. The method of service chosen is important in practice because the severance takes effect from the date of service — different methods of service may produce different dates of effectiveness."
+    },
+    {
+      "id": "PRL_M02_L03_Q09",
+      "question": "What is the 'forfeiture rule' in the context of joint tenancy and the right of survivorship?",
+      "options": {
+        "A": "The rule that a joint tenant forfeits their share if they fail to pay their portion of the mortgage",
+        "B": "The rule that a person who unlawfully kills another cannot benefit from that killing — so a joint tenant who murders the other joint tenant cannot take the entire property via the right of survivorship",
+        "C": "The rule that a joint tenant who leaves the shared property forfeits their right to claim occupation rent",
+        "D": "The rule that a joint tenant's interest is forfeited to the State if they are convicted of a serious criminal offence"
+      },
+      "correct_answer": "B",
+      "explanation": "The forfeiture rule provides that a person who unlawfully kills another cannot benefit from that killing. Applied to joint tenancy, this means that a joint tenant who unlawfully kills the other joint tenant cannot take the entire property through the right of survivorship — that would allow the killer to profit directly from their own wrongdoing. The forfeiture rule is rooted in public policy and operates to prevent such an unconscionable outcome."
+    },
+    {
+      "id": "PRL_M02_L03_Q10",
+      "question": "In Cawley v Lillis [2011], what was the outcome regarding the family home that had been held by husband and wife as joint tenants, following the husband's conviction for his wife's manslaughter?",
+      "options": {
+        "A": "The husband took the entire property via the right of survivorship, as the crime was manslaughter rather than murder",
+        "B": "The property was confiscated by the State as the proceeds of crime",
+        "C": "Laffoy J imposed a constructive trust on Lillis in respect of one-half of the property, so that Mrs Lillis's estate received the benefit of that half share — the forfeiture rule prevented Lillis from profiting from his unlawful act",
+        "D": "The court severed the joint tenancy retrospectively, treating the property as always having been held as a tenancy in common"
+      },
+      "correct_answer": "C",
+      "explanation": "In Cawley v Lillis [2011], Laffoy J in the Irish High Court held that it would be unconscionable and contrary to public policy for Lillis to take the entire property through the right of survivorship arising from his own unlawful killing of his wife. A constructive trust was imposed on Lillis in respect of one-half of the property, ensuring that Mrs Lillis's estate received the benefit of that half share. The forfeiture rule — preventing a killer from profiting from their crime — was applied even in the context of manslaughter rather than murder, demonstrating the breadth of the principle in Irish law."
+    }
+  ]
+}

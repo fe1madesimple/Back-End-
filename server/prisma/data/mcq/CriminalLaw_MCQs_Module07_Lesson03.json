@@ -1,0 +1,138 @@
+{
+  "subject": "Criminal Law",
+  "module": 7,
+  "lesson": 3,
+  "title": "Handling Stolen Goods, Criminal Damage, and Cybercrime",
+  "questions": [
+    {
+      "id": "CL_M07_L03_Q01",
+      "question": "Under Section 17 of the Criminal Justice (Theft and Fraud Offences) Act 2001, what mens rea is required for handling stolen goods?",
+      "options": {
+        "A": "Mere suspicion that the goods were stolen.",
+        "B": "Knowledge or belief that the goods are stolen.",
+        "C": "Recklessness as to whether the goods are stolen.",
+        "D": "Negligence in failing to verify the provenance of the goods."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 17 of the 2001 Act requires that the accused know or believe the goods to be stolen. Mere suspicion — even strong suspicion — is not sufficient, as confirmed in DPP v O'Neill [2010] and AG v Lawless [1956]. This is one of the most commonly examined points on handling: suspicion alone does not establish the mens rea.",
+      "legislation": "Criminal Justice (Theft and Fraud Offences) Act 2001, s.17"
+    },
+    {
+      "id": "CL_M07_L03_Q02",
+      "question": "AG v Lawless [1956] is the classic Irish authority on which aspect of handling stolen goods?",
+      "options": {
+        "A": "The definition of 'retention' of stolen goods.",
+        "B": "The requirement that the receiver must know of the stolen character of the goods.",
+        "C": "The distinction between handling and assisting in the disposal of stolen goods.",
+        "D": "The penalty for handling where the goods are of high value."
+      },
+      "correct_answer": "B",
+      "explanation": "AG v Lawless [1956] is the classic Irish authority establishing that the receiver of stolen goods must know of the stolen character of the goods at the time of receipt. This knowledge requirement underpins the mens rea for handling and was further confirmed under the 2001 Act in DPP v O'Neill [2010].",
+      "cases": "AG v Lawless [1956]"
+    },
+    {
+      "id": "CL_M07_L03_Q03",
+      "question": "Offences relating to false instruments — including making, copying, using, and possessing false instruments — are found in which sections of the Criminal Justice (Theft and Fraud Offences) Act 2001?",
+      "options": {
+        "A": "Sections 4 to 6.",
+        "B": "Sections 12 to 14.",
+        "C": "Sections 17 to 19.",
+        "D": "Sections 24 to 28."
+      },
+      "correct_answer": "D",
+      "explanation": "Offences relating to false instruments (forgery) are contained in Sections 24 to 28 of the Criminal Justice (Theft and Fraud Offences) Act 2001. These sections cover making, copying, using, and possessing false instruments. The maximum penalty is ten years imprisonment on indictment.",
+      "legislation": "Criminal Justice (Theft and Fraud Offences) Act 2001, ss.24–28"
+    },
+    {
+      "id": "CL_M07_L03_Q04",
+      "question": "Under the Criminal Damage Act 1991, which of the following can constitute 'damage' within the meaning of Section 1 of the Act?",
+      "options": {
+        "A": "Only the physical destruction of tangible property.",
+        "B": "Destroying, defacing, dismantling, or corrupting property — including corrupting electronic data.",
+        "C": "Only fire or explosion damage under the arson provisions.",
+        "D": "Damage that causes financial loss exceeding a minimum statutory threshold."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 1 of the Criminal Damage Act 1991 defines damage broadly to include destroying, defacing, dismantling, or corrupting property — and this expressly includes corrupting electronic data. Deleting computer files or corrupting a database can therefore constitute criminal damage under the 1991 Act. There is no minimum financial threshold.",
+      "legislation": "Criminal Damage Act 1991, s.1"
+    },
+    {
+      "id": "CL_M07_L03_Q05",
+      "question": "Section 2(6) of the Criminal Damage Act 1991 adopts which standard of recklessness for criminal damage?",
+      "options": {
+        "A": "The Caldwell objective standard — the accused is reckless if a reasonable person would have foreseen the risk.",
+        "B": "The Cunningham subjective standard — the accused must have actually foreseen the risk of damage.",
+        "C": "A gross negligence standard — the accused must have departed markedly from the standard of a reasonable person.",
+        "D": "Strict liability — no mental element is required for criminal damage."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 2(6) of the Criminal Damage Act 1991 adopts the Cunningham subjective standard. The accused is reckless if they are aware of a risk that property will be damaged and it is unreasonable to take that risk. Ireland never adopted the Caldwell objective approach, and R v G and Another [2003] overruled Caldwell in England. Actual foresight is required.",
+      "legislation": "Criminal Damage Act 1991, s.2(6)"
+    },
+    {
+      "id": "CL_M07_L03_Q06",
+      "question": "Under Section 2(2) of the Criminal Damage Act 1991, what is the maximum penalty for arson (criminal damage caused by fire)?",
+      "options": {
+        "A": "Ten years imprisonment.",
+        "B": "Fourteen years imprisonment.",
+        "C": "Twenty years imprisonment.",
+        "D": "Life imprisonment."
+      },
+      "correct_answer": "D",
+      "explanation": "Section 2(2) of the Criminal Damage Act 1991 provides that where criminal damage is caused by fire or explosion — arson — the maximum penalty is life imprisonment. This contrasts with standard criminal damage, which carries a maximum of ten years on indictment. The distinction is significant and must be flagged in any exam answer involving fire.",
+      "legislation": "Criminal Damage Act 1991, s.2(2)"
+    },
+    {
+      "id": "CL_M07_L03_Q07",
+      "question": "R v Miller [1983] is relevant to criminal damage because it established that:",
+      "options": {
+        "A": "Recklessness is sufficient mens rea for arson.",
+        "B": "An accused who creates a dangerous situation comes under a duty to take reasonable steps to avert it, and failure to do so is the actus reus of the offence.",
+        "C": "An accused cannot be convicted of arson if the fire was started accidentally.",
+        "D": "Only intentional damage can constitute arson."
+      },
+      "correct_answer": "B",
+      "explanation": "R v Miller [1983] is the leading case on omissions liability in the context of criminal damage. The accused accidentally started a fire while asleep, woke up, and did nothing. The House of Lords held that where an accused creates a dangerous situation, they come under a duty to take reasonable steps to avert the danger, and failure to do so constitutes the actus reus of the offence.",
+      "cases": "R v Miller [1983]"
+    },
+    {
+      "id": "CL_M07_L03_Q08",
+      "question": "Which of the following offences is created by Section 3 of the Criminal Justice (Offences Relating to Information Systems) Act 2017?",
+      "options": {
+        "A": "Unauthorised access to an information system.",
+        "B": "Unauthorised interception of communications.",
+        "C": "Interference with an information system — such as a Distributed Denial of Service attack.",
+        "D": "Possession of tools intended to facilitate cybercrime."
+      },
+      "correct_answer": "C",
+      "explanation": "Section 3 of the 2017 Act creates the offence of interfering with an information system — including disruption through Distributed Denial of Service attacks. The maximum penalty is ten years on indictment. Unauthorised access (hacking) is s.2; interception of communications is s.5; possession of cybercrime tools is s.6.",
+      "legislation": "Criminal Justice (Offences Relating to Information Systems) Act 2017, s.3"
+    },
+    {
+      "id": "CL_M07_L03_Q09",
+      "question": "Under the Criminal Justice (Offences Relating to Information Systems) Act 2017, which of the following is correct regarding all five principal offences under that Act?",
+      "options": {
+        "A": "All five offences carry a maximum of ten years imprisonment.",
+        "B": "All five offences require that the conduct be intentional and unauthorised — there is no strict liability.",
+        "C": "Accidental access to a system without authorisation constitutes hacking under Section 2.",
+        "D": "Section 2 carries a higher penalty than Section 3."
+      },
+      "correct_answer": "B",
+      "explanation": "All five principal offences under the 2017 Act require the conduct to be intentional and unauthorised. There is no strict liability. Accidental access to a system the accused had permission to use is not an offence. The penalties vary — s.2 (hacking) carries five years; s.3 and s.4 carry ten years; s.5 carries five years; s.6 carries two years.",
+      "legislation": "Criminal Justice (Offences Relating to Information Systems) Act 2017"
+    },
+    {
+      "id": "CL_M07_L03_Q10",
+      "question": "An accused deliberately deletes customer records from a company's database without authorisation, causing significant financial loss. Which offences should be considered?",
+      "options": {
+        "A": "Criminal damage under the Criminal Damage Act 1991 only.",
+        "B": "Section 4 interference with data under the Criminal Justice (Offences Relating to Information Systems) Act 2017 only.",
+        "C": "Both criminal damage under the 1991 Act (corrupting electronic data) and s.4 interference with data under the 2017 Act — the two regimes can overlap.",
+        "D": "No criminal offence is committed — only civil liability arises for data loss."
+      },
+      "correct_answer": "C",
+      "explanation": "Both regimes may apply. The Criminal Damage Act 1991 defines damage to include corrupting electronic data (s.1), so deliberate deletion of data can constitute criminal damage under the 1991 Act. Section 4 of the 2017 Act separately criminalises intentional and unauthorised interference with data in an information system. The two statutory frameworks can overlap in cases involving electronic data, and both should be considered in an exam answer.",
+      "legislation": "Criminal Damage Act 1991, s.1; Criminal Justice (Offences Relating to Information Systems) Act 2017, s.4"
+    }
+  ]
+}

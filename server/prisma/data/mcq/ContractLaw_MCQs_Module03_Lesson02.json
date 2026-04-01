@@ -1,0 +1,131 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": "ContractLaw_ElevenLabs_Module01_Lesson06.txt",
+  "module_number": 3,
+  "module_title": "Capacity, Formalities and Privity",
+  "lesson_number": 2,
+  "lesson_title": "Formalities and Writing Requirements",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the general rule regarding formalities in Irish contract law?",
+      "options": {
+        "A": "All contracts must be in writing and signed to be enforceable",
+        "B": "Contracts may be made in any form — oral, written, or by conduct — unless statute requires a particular form",
+        "C": "Contracts must be witnessed by an independent third party",
+        "D": "Commercial contracts must always be in writing; only consumer contracts may be oral"
+      },
+      "correct_answer": "B",
+      "explanation": "The general rule in Irish contract law is that contracts may be made in any form — oral, written, or by conduct. Freedom of form is the default position. Statute, however, imposes formal requirements for certain categories of contract. Where statute requires writing or a deed, failure to comply renders the contract void or unenforceable."
+    },
+    {
+      "id": 2,
+      "question": "Under s51 of the Land and Conveyancing Law Reform Act 2009 (LCLRA 2009), which of the following must be in writing and signed?",
+      "options": {
+        "A": "All leases, regardless of duration",
+        "B": "Contracts for the sale or other disposition of an interest in land",
+        "C": "All contracts involving a price exceeding €10,000",
+        "D": "Contracts for the supply of services involving land (e.g., building contracts)"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 51 of the LCLRA 2009 replaced s2 of the Statute of Frauds (Ireland) 1695 for contracts made on or after 1 December 2009. It requires that a contract for the sale or other disposition of an interest in land must be evidenced in writing signed by the party to be charged (or their authorised agent). An 'interest in land' includes a lease, a charge, a licence coupled with an interest, and an option to purchase."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is NOT required to satisfy the writing requirement under s51 LCLRA 2009 for a contract for the sale of land?",
+      "options": {
+        "A": "The document must be signed by or on behalf of the party to be charged",
+        "B": "All material terms must be evidenced in writing (though they need not all appear in one document)",
+        "C": "The contract must be witnessed by an independent solicitor",
+        "D": "The document must identify the parties, the subject matter, and the consideration"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 51 LCLRA 2009 requires that the contract (or note or memorandum thereof) be signed by the party against whom enforcement is sought — not that it be witnessed. The writing must identify the parties, the property, and the consideration (or contain all material terms). It need not be a formal document — a letter, email (arguably), or any document evidencing the agreement suffices, provided it is signed."
+    },
+    {
+      "id": 4,
+      "question": "What is the doctrine of part performance as it applies to contracts for the sale of land?",
+      "options": {
+        "A": "Where a party has partly paid the purchase price, they can always enforce the contract",
+        "B": "In equity, where the parties have acted in a manner that unequivocally referable to the contract (acts of part performance), the court may enforce the contract despite non-compliance with the writing requirement",
+        "C": "Part performance allows a party to recover damages for breach even if the contract is not enforceable",
+        "D": "Part performance is only available where the other party has been enriched"
+      },
+      "correct_answer": "B",
+      "explanation": "The doctrine of part performance in equity operates as an exception to the writing requirement. Where a party has performed acts that are unequivocally referable to the alleged contract (e.g., taking possession, making substantial improvements), equity may intervene to enforce the agreement despite the absence of written evidence. The leading Irish authority is Mackey v Jones [1959]. Part performance is preserved under s51(2) LCLRA 2009."
+    },
+    {
+      "id": 5,
+      "question": "What types of acts have been held to constitute 'part performance' for the purposes of equity's jurisdiction?",
+      "options": {
+        "A": "Merely negotiating the terms of the contract",
+        "B": "Taking possession of the land with the vendor's consent and carrying out improvements, or paying a deposit in conjunction with other acts",
+        "C": "Receiving a receipt from the vendor acknowledging the agreement",
+        "D": "Signing a heads of terms document 'subject to contract'"
+      },
+      "correct_answer": "B",
+      "explanation": "Acts of part performance must be unequivocally referable to the existence of a contract relating to the specific land. Taking possession with the vendor's consent and making improvements, or part payment combined with other consistent acts, have been accepted. Mere payment alone may not be sufficient (Maddison v Alderson [1883]). The acts must be explicable only on the hypothesis of a contract of the type alleged."
+    },
+    {
+      "id": 6,
+      "question": "The Statute of Frauds (Ireland) 1695 originally required contracts of guarantee to be evidenced in writing. Under the current law, where must a guarantee be evidenced?",
+      "options": {
+        "A": "A guarantee need not be in writing under Irish law",
+        "B": "A guarantee must be evidenced in writing signed by the guarantor or their authorised agent",
+        "C": "A guarantee must be executed as a deed witnessed by two persons",
+        "D": "A guarantee must be registered with the Companies Registration Office"
+      },
+      "correct_answer": "B",
+      "explanation": "The Statute of Frauds (Ireland) 1695 (as preserved for guarantees) requires that a contract of guarantee — a promise to answer for the debt, default, or miscarriage of another — be evidenced in writing signed by the party to be charged or their agent. This remains in force. An oral guarantee is unenforceable. The writing need not be a formal document — a letter or note suffices provided it is signed and contains the material terms."
+    },
+    {
+      "id": 7,
+      "question": "What is the distinction between a guarantee and an indemnity for the purposes of the writing requirement?",
+      "options": {
+        "A": "Both a guarantee and an indemnity must be in writing to be enforceable",
+        "B": "A guarantee is a secondary obligation (requiring writing) — the guarantor is only liable if the primary debtor defaults; an indemnity is a primary obligation and need not be in writing",
+        "C": "An indemnity requires writing; a guarantee does not",
+        "D": "The distinction is irrelevant — both are treated as guarantees for writing purposes"
+      },
+      "correct_answer": "B",
+      "explanation": "A guarantee creates a secondary obligation — the guarantor promises to pay if the primary debtor fails to do so, and their liability is conditional on the default of the debtor. A guarantee must be evidenced in writing (Statute of Frauds). An indemnity, by contrast, is a primary obligation — the indemnifier agrees to keep the creditor harmless regardless of the principal debtor's default. An indemnity need not be in writing, as it falls outside the Statute."
+    },
+    {
+      "id": 8,
+      "question": "Which of the following Irish statutes requires certain hire-purchase agreements to be made in a particular form?",
+      "options": {
+        "A": "The Sale of Goods Act 1893",
+        "B": "The Hire Purchase Acts 1946–1980 and the Consumer Credit Act 1995",
+        "C": "The SGSSA 1980",
+        "D": "The Companies Act 2014"
+      },
+      "correct_answer": "B",
+      "explanation": "The Hire Purchase Acts 1946–1980 and the Consumer Credit Act 1995 impose formal requirements on hire-purchase and consumer credit agreements in Ireland. These agreements must be in writing, contain specified information, and be signed by both parties. Failure to comply with the statutory form requirements renders the agreement unenforceable by the creditor."
+    },
+    {
+      "id": 9,
+      "question": "Under the Electronic Commerce Act 2000 (Ireland), can electronic signatures satisfy writing requirements imposed by Irish law?",
+      "options": {
+        "A": "No — all electronic signatures are legally invalid as a matter of Irish law",
+        "B": "Yes, in most cases — the Act provides that an electronic signature is as legally valid as a handwritten signature, subject to specific statutory exclusions",
+        "C": "Only if the electronic signature is certified by an approved certification authority",
+        "D": "Only for commercial contracts between business parties — consumer contracts still require wet-ink signatures"
+      },
+      "correct_answer": "B",
+      "explanation": "The Electronic Commerce Act 2000 (Ireland) gives legal effect to electronic contracts and signatures. Under s9, an electronic signature satisfies any legal requirement for a signature in most cases. Excluded categories (e.g., wills, conveyances of land in traditional form) continue to require handwritten signatures. The Act implements the EU Electronic Commerce Directive and eIDAS Regulation principles in Irish law."
+    },
+    {
+      "id": 10,
+      "question": "A 'note or memorandum' of a contract for the sale of land satisfies s51 LCLRA 2009 only if it contains which of the following?",
+      "options": {
+        "A": "All terms of the contract, however minor",
+        "B": "The material terms — sufficient to identify the parties, the property, and the price or other consideration",
+        "C": "The date of the contract and the signatures of all solicitors involved",
+        "D": "A declaration by both parties that they intend to be legally bound"
+      },
+      "correct_answer": "B",
+      "explanation": "A note or memorandum satisfying s51 LCLRA 2009 must contain the material (essential) terms of the contract: identification of the parties, description of the property, and the consideration (price). Minor or incidental terms need not be recorded, but essential terms cannot be left to inference. Multiple documents may be combined (joinder of documents) to constitute the memorandum, provided they are connected."
+    }
+  ]
+}

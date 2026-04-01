@@ -1,0 +1,131 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": "ContractLaw_ElevenLabs_Module01_Lesson05.txt",
+  "module_number": 1,
+  "module_title": "Formation of Contract",
+  "lesson_number": 5,
+  "lesson_title": "Capacity to Contract",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M01_L05_Q01",
+      "question": "Under Irish law, the general rule regarding contracts made by a minor is that contracts for goods that are not necessaries are:",
+      "options": {
+        "A": "Voidable at the election of the minor",
+        "B": "Valid and binding on the minor",
+        "C": "Void — of no legal effect",
+        "D": "Unenforceable unless ratified in writing after the age of 18"
+      },
+      "correct_answer": "C",
+      "explanation": "Contracts for the repayment of loans and contracts for goods that are not necessaries are void — of no legal effect whatsoever. Neither party can enforce them. This is distinct from voidable contracts (land, shares, partnership) which are valid unless the minor avoids them."
+    },
+    {
+      "id": "CL_M01_L05_Q02",
+      "question": "In Nash v Inman [1908], a tradesman failed to recover payment from a minor student for waistcoats. The court's reasoning was that:",
+      "options": {
+        "A": "Clothing is never a necessary for a minor",
+        "B": "The student was over 18 at the time of purchase",
+        "C": "Although clothing can be a necessary in the abstract, the student already had sufficient clothing, so these specific items were not necessaries for this particular minor",
+        "D": "The contract had not been approved by the minor's parent or guardian"
+      },
+      "correct_answer": "C",
+      "explanation": "Nash v Inman [1908] established a two-stage test for necessaries: (1) are the goods necessaries in the abstract for someone in the minor's position; and (2) are they necessaries for this particular minor in their actual circumstances? The student had ample clothing already, so the waistcoats failed the second stage despite clothing being a necessary in principle."
+    },
+    {
+      "id": "CL_M01_L05_Q03",
+      "question": "A minor may avoid a voidable contract (such as one relating to land or shares) by:",
+      "options": {
+        "A": "Giving six months' written notice to the other party",
+        "B": "Applying to the High Court for a declaration of avoidance",
+        "C": "Avoiding it during minority or within a reasonable time after turning 18",
+        "D": "Returning all benefits received under the contract"
+      },
+      "correct_answer": "C",
+      "explanation": "Voidable contracts involving minors — such as those relating to land, shares, or partnership — may be avoided either during the minor's minority or within a reasonable time after they reach the age of 18. Failure to avoid within a reasonable time may result in the minor becoming bound."
+    },
+    {
+      "id": "CL_M01_L05_Q04",
+      "question": "In Doyle v White City Stadium [1935], a boxing contract that incorporated the rules of the sport — including potentially adverse terms — was held binding on a minor because:",
+      "options": {
+        "A": "Sports contracts are always valid regardless of the minor's age",
+        "B": "The contract as a whole was beneficial to the minor, giving him the opportunity to earn income and develop his career",
+        "C": "The minor had been advised by a solicitor before signing",
+        "D": "The adverse terms had been individually negotiated"
+      },
+      "correct_answer": "B",
+      "explanation": "Beneficial contracts of service are valid if the contract, taken as a whole, is for the minor's benefit. In Doyle v White City Stadium [1935], the court did not examine each clause in isolation — it asked whether the overall contract benefited the minor. Providing the opportunity to earn and develop a career made it binding."
+    },
+    {
+      "id": "CL_M01_L05_Q05",
+      "question": "A contract made by a person with a mental illness is generally valid unless:",
+      "options": {
+        "A": "The person has been formally certified as lacking capacity under the 2015 Act",
+        "B": "The mental illness prevented them from understanding the nature of the transaction, AND the other party knew of the incapacity at the time",
+        "C": "The contract involves a transaction worth more than a specified statutory threshold",
+        "D": "The person was receiving medical treatment at the time of contracting"
+      },
+      "correct_answer": "B",
+      "explanation": "Both conditions must be satisfied: (1) the mental illness must have prevented the person from understanding the nature and effect of the act; and (2) the other contracting party must have known of the incapacity at the time. If the other party was unaware, the contract is binding — protecting innocent third parties who deal in good faith."
+    },
+    {
+      "id": "CL_M01_L05_Q06",
+      "question": "The Assisted Decision-Making (Capacity) Act 2015 changed the approach to mental capacity by:",
+      "options": {
+        "A": "Raising the age of contractual capacity from 18 to 21",
+        "B": "Creating a binary test — either full capacity or none",
+        "C": "Introducing issue-specific, time-specific assessment of capacity with a presumption in favour of capacity",
+        "D": "Requiring court approval for all contracts entered into by persons with any registered disability"
+      },
+      "correct_answer": "C",
+      "explanation": "The 2015 Act moved away from binary all-or-nothing assessments. Capacity is now assessed issue by issue and at the specific time the decision is made. A person may lack capacity for a complex financial transaction but retain capacity for everyday decisions. The Act starts from a presumption of capacity."
+    },
+    {
+      "id": "CL_M01_L05_Q07",
+      "question": "A contract made by a severely intoxicated person is best described as:",
+      "options": {
+        "A": "Void — of no effect regardless of the circumstances",
+        "B": "Valid — intoxication is not a recognised ground of incapacity",
+        "C": "Voidable — if the other party knew of the intoxication, the intoxicated party may repudiate it on becoming sober",
+        "D": "Unenforceable — subject to the written evidence requirements of the Statute of Frauds"
+      },
+      "correct_answer": "C",
+      "explanation": "Intoxication does not automatically void a contract. Where a person is so severely intoxicated they cannot understand what they are doing, and the other party knew this, the contract is voidable. The intoxicated party must repudiate it within a reasonable time of becoming sober — delay or implied affirmation will bind them."
+    },
+    {
+      "id": "CL_M01_L05_Q08",
+      "question": "In Francesco v Barnum [1890], a theatrical contract with a minor was voidable because:",
+      "options": {
+        "A": "Theatrical engagements are not necessaries under the Sale of Goods Act 1893",
+        "B": "The contract bound the minor but imposed no reciprocal obligations on the other party — it was not genuinely for the minor's benefit",
+        "C": "The minor had not obtained parental consent",
+        "D": "The contract exceeded the statutory value threshold for minor contracts"
+      },
+      "correct_answer": "B",
+      "explanation": "In Francesco v Barnum [1890], the theatrical contract was one-sided — it bound the minor to obligations but imposed no meaningful duties on the theatre owner. A beneficial contract of service must be for the minor's overall benefit. This contract was not, so it was voidable."
+    },
+    {
+      "id": "CL_M01_L05_Q09",
+      "question": "The Sale of Goods Act 1893 defines necessaries for minors as:",
+      "options": {
+        "A": "All goods and services required for basic survival",
+        "B": "Goods suitable to the condition in life of the minor and to their actual requirements at the time of sale and delivery",
+        "C": "Any goods purchased with parental approval",
+        "D": "Essential goods up to a value of €1,000 per transaction"
+      },
+      "correct_answer": "B",
+      "explanation": "The Sale of Goods Act 1893 defines necessaries as 'goods suitable to the condition in life of the minor and to their actual requirements at the time of sale and delivery.' This statutory definition underpins the two-stage test in Nash v Inman — necessity in the abstract and necessity for this particular minor in their actual circumstances."
+    },
+    {
+      "id": "CL_M01_L05_Q10",
+      "question": "An FE-1 problem question shows a 16-year-old who enters a contract to purchase a luxury sports car on credit. Which category best describes this contract?",
+      "options": {
+        "A": "Valid — a car is a necessary item in modern life",
+        "B": "Voidable — contracts for durable goods are always voidable for minors",
+        "C": "Void — it is a contract for a loan or credit for non-necessaries",
+        "D": "Enforceable — the minor's parents are liable as guarantors"
+      },
+      "correct_answer": "C",
+      "explanation": "A luxury sports car is not a necessary under the Nash v Inman test, and purchasing on credit is akin to a contract for the repayment of a loan. Both categories produce void contracts for minors. The contract is of no legal effect. Parents are not automatically guarantors."
+    }
+  ]
+}

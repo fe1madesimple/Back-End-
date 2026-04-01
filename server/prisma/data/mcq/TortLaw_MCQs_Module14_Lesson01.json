@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "Module_14_Lesson_01_Remedies_in_Tort___Damages.txt",
+  "module_number": 14,
+  "module_title": "Remedies in Tort",
+  "lesson_number": 1,
+  "lesson_title": "Remedies in Tort: Damages",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M14_L01_Q01",
+      "question": "What is the fundamental principle underlying the award of damages in tort?",
+      "options": {
+        "A": "Restitutio in integrum — to restore the plaintiff to their pre-tort position.",
+        "B": "To put the plaintiff in the position they would have been in had the contract been performed.",
+        "C": "To punish the defendant for their wrongdoing.",
+        "D": "To deter similar conduct by the defendant and others in society."
+      },
+      "correct_answer": "A",
+      "explanation": "The fundamental principle in tort damages is restitutio in integrum — restoration to the position the plaintiff would have been in had the tort not been committed. Unlike contract damages, which aim to put the plaintiff in the position they would have been in had the contract been performed, tort damages aim to restore the plaintiff to their pre-tort position."
+    },
+    {
+      "id": "TL_M14_L01_Q02",
+      "question": "Which of the following is an example of special damages in a personal injury claim?",
+      "options": {
+        "A": "Pain and suffering.",
+        "B": "Loss of amenity.",
+        "C": "Past medical expenses incurred up to trial.",
+        "D": "Future loss of earnings."
+      },
+      "correct_answer": "C",
+      "explanation": "Special damages are losses capable of precise calculation at the date of trial — including past loss of earnings, past medical and hospital expenses, rehabilitation costs, and care costs incurred up to trial. They must be specifically pleaded and proved. Pain and suffering, loss of amenity, and future loss of earnings are all heads of general damages."
+    },
+    {
+      "id": "TL_M14_L01_Q03",
+      "question": "Which of the following is correctly classified as a head of general damages?",
+      "options": {
+        "A": "Ambulance fees incurred on the day of the accident.",
+        "B": "A specific bonus payment the plaintiff can prove was due.",
+        "C": "Pain and suffering — past and future.",
+        "D": "Receipted physiotherapy invoices for pre-trial treatment."
+      },
+      "correct_answer": "C",
+      "explanation": "General damages are losses that cannot be precisely calculated. They include pain and suffering (past and future), loss of amenity, future loss of earnings, and future care costs. The court exercises a broad discretion in assessing them. The other options are all capable of precise calculation and are heads of special damages."
+    },
+    {
+      "id": "TL_M14_L01_Q04",
+      "question": "In assessing future loss of earnings as a head of general damages, which method does the court use?",
+      "options": {
+        "A": "A fixed statutory tariff set by ministerial order.",
+        "B": "The multiplicand multiplied by an appropriate multiplier, discounted for accelerated receipt and the chance the income might not have been earned.",
+        "C": "A percentage of the defendant's income at the time of the tort.",
+        "D": "An equal split between the parties as a default position."
+      },
+      "correct_answer": "B",
+      "explanation": "Future loss of earnings is assessed as a lump sum calculated by multiplying a multiplicand (the annual net loss) by a multiplier (reflecting the period of loss, discounted for accelerated receipt and the chance the income might not have been earned). This is the standard approach in Irish personal injury law."
+    },
+    {
+      "id": "TL_M14_L01_Q05",
+      "question": "What is 'loss of amenity' as a head of general damages?",
+      "options": {
+        "A": "The plaintiff's loss of earnings during hospitalisation.",
+        "B": "The plaintiff's inability to enjoy the activities and lifestyle they enjoyed before the injury.",
+        "C": "The cost of adapting the plaintiff's home to accommodate their disability.",
+        "D": "The loss of a professional licence caused by the injury."
+      },
+      "correct_answer": "B",
+      "explanation": "Loss of amenity compensates the plaintiff for their inability to enjoy the activities and lifestyle they enjoyed before the injury. It is a distinct head of general damages, separate from pain and suffering, and reflects the qualitative impact of the injury on the plaintiff's life."
+    },
+    {
+      "id": "TL_M14_L01_Q06",
+      "question": "What is the duty to mitigate in the context of tort damages?",
+      "options": {
+        "A": "The defendant's obligation to compensate the plaintiff promptly.",
+        "B": "The plaintiff's obligation to take reasonable steps to reduce their losses following the tort.",
+        "C": "The court's obligation to ensure damages awards are proportionate.",
+        "D": "The plaintiff's obligation to exhaust all insurance claims before suing in tort."
+      },
+      "correct_answer": "B",
+      "explanation": "A plaintiff who unreasonably fails to take steps to reduce their losses — such as refusing medical treatment — may have their damages reduced to the extent of that failure. However, the duty is qualified: a plaintiff is not required to undergo risky surgery or accept work below their pre-injury qualification to mitigate their earnings loss."
+    },
+    {
+      "id": "TL_M14_L01_Q07",
+      "question": "What are aggravated damages in Irish tort law?",
+      "options": {
+        "A": "A punitive award designed solely to deter future wrongdoing by the defendant.",
+        "B": "Compensatory damages that take account of the additional distress and humiliation caused by the defendant's conduct in committing or pursuing the tort.",
+        "C": "Damages awarded only where the plaintiff sustains a psychiatric injury.",
+        "D": "Damages available exclusively in defamation proceedings."
+      },
+      "correct_answer": "B",
+      "explanation": "Aggravated damages are compensatory in nature. They take account of the defendant's conduct — where the manner of committing the tort, or their behaviour during litigation, increases the plaintiff's injury by adding insult to the wrong. They compensate for the additional distress and humiliation caused by the defendant's behaviour, and are not punitive."
+    },
+    {
+      "id": "TL_M14_L01_Q08",
+      "question": "Which Irish case confirmed the availability of aggravated damages in Irish law and set out the governing principles?",
+      "options": {
+        "A": "Shortt v Commissioner of An Garda Síochána [2007]",
+        "B": "O'Sullivan v Dwyer",
+        "C": "Conway v Irish National Teachers Organisation [1991]",
+        "D": "Donoghue v Stevenson [1932]"
+      },
+      "correct_answer": "C",
+      "explanation": "The Supreme Court in Conway v Irish National Teachers Organisation [1991] confirmed the availability of aggravated damages in Irish law and set out the principles governing their award. This is the leading Irish authority on aggravated damages."
+    },
+    {
+      "id": "TL_M14_L01_Q09",
+      "question": "In which of the following circumstances may exemplary (punitive) damages be awarded in Irish law?",
+      "options": {
+        "A": "Whenever the defendant acted carelessly.",
+        "B": "Where the defendant's conduct was oppressive, arbitrary, or unconstitutional action by servants of the government, or was calculated to make a profit exceeding the compensation payable.",
+        "C": "In every personal injury case where the plaintiff suffered significant pain.",
+        "D": "Automatically where the defendant has insurance cover."
+      },
+      "correct_answer": "B",
+      "explanation": "Exemplary damages are exceptional in Irish law. They are available in limited categories: oppressive, arbitrary, or unconstitutional governmental action; where the defendant calculated that their conduct would produce a profit exceeding compensation payable; and in cases of flagrant tortious misconduct. They are not compensatory — they punish and deter."
+    },
+    {
+      "id": "TL_M14_L01_Q10",
+      "question": "Which case confirmed that exemplary damages are available in Irish tort law but must be awarded sparingly?",
+      "options": {
+        "A": "Conway v Irish National Teachers Organisation [1991]",
+        "B": "O'Sullivan v Dwyer",
+        "C": "Shortt v Commissioner of An Garda Síochána [2007]",
+        "D": "Rylands v Fletcher [1868]"
+      },
+      "correct_answer": "C",
+      "explanation": "The Supreme Court in Shortt v Commissioner of An Garda Síochána [2007] confirmed that exemplary damages are available in Irish tort law but emphasised that they must be awarded sparingly and only in the recognised limited categories. This case is the leading Irish authority on exemplary damages alongside Conway."
+    }
+  ]
+}

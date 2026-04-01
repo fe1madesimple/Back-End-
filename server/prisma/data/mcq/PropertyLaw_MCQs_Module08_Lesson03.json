@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_08_Lesson_03_Proprietary_Estoppel.txt",
+  "module_number": 8,
+  "module_title": "Licences, Proprietary Estoppel, and Rights of Residence",
+  "lesson_number": 3,
+  "lesson_title": "Proprietary Estoppel",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M08_L03_Q01",
+      "question": "Which three core elements must be established to raise a proprietary estoppel claim?",
+      "options": {
+        "A": "Offer, acceptance, and consideration",
+        "B": "Representation or assurance, reliance, and detriment",
+        "C": "Writing, signature, and witnesses",
+        "D": "Payment of purchase price, delivery of possession, and registration of title"
+      },
+      "correct_answer": "B",
+      "explanation": "The three core elements of proprietary estoppel are: (1) a representation or assurance by the owner that the claimant has or will have rights over the land; (2) reliance by the claimant on that assurance; and (3) detriment suffered by the claimant in consequence of that reliance. These elements were authoritatively summarised by Lord Walker in Thorner v Major [2009]."
+    },
+    {
+      "id": "PRL_M08_L03_Q02",
+      "question": "In Dillwyn v Llewelyn [1862], what did Lord Westbury LC hold in relation to a son who built a house on land owned by his father in reliance on a memorandum indicating he could have the land?",
+      "options": {
+        "A": "The son was entitled to remain in occupation as a licensee only, as the memorandum was not a valid conveyance",
+        "B": "The son was entitled to have the land — the equity was satisfied by compelling a conveyance of the freehold",
+        "C": "The son had no rights because the memorandum did not comply with the formalities for a contract for the sale of land",
+        "D": "The son's right was limited to a right of residence for his lifetime only"
+      },
+      "correct_answer": "B",
+      "explanation": "In Dillwyn v Llewelyn [1862], Lord Westbury LC held that the son was entitled to have the land — the equity was satisfied by compelling a conveyance of the freehold. Where a person has expended money on land in reliance on an assurance, equity will compel the landowner (or their successors) to make good the promise. This case established the foundational principle that proprietary estoppel can compel a full transfer of title."
+    },
+    {
+      "id": "PRL_M08_L03_Q03",
+      "question": "In Thorner v Major [2009], what important clarification did the House of Lords provide about the nature of the assurance required for proprietary estoppel?",
+      "options": {
+        "A": "The assurance must be in writing to be legally effective",
+        "B": "The assurance need not be explicit — an implied or oblique assurance is sufficient if it was reasonable for the claimant to have understood it as such",
+        "C": "The assurance must be witnessed by a solicitor to be effective",
+        "D": "The assurance must relate to the entire property, not just part of it"
+      },
+      "correct_answer": "B",
+      "explanation": "In Thorner v Major [2009], the House of Lords held that the representation or assurance does not need to be explicit — an implied or oblique assurance is sufficient, provided that in the circumstances it was reasonable for the claimant to have understood it as such. The claimant had worked on a farm for years without pay, having been led to believe he would inherit it, and was held to have established an estoppel on the basis of implied assurances."
+    },
+    {
+      "id": "PRL_M08_L03_Q04",
+      "question": "What principle regarding the proportionality of the proprietary estoppel remedy was established in Jennings v Rice [2002]?",
+      "options": {
+        "A": "The remedy must always equal the full value of the claimant's expectation",
+        "B": "The court may award less than the claimant expected where the expectation was disproportionate to the detriment suffered",
+        "C": "The remedy is always a life interest in the property regardless of the detriment",
+        "D": "The remedy must be limited to monetary compensation and cannot include a transfer of land"
+      },
+      "correct_answer": "B",
+      "explanation": "In Jennings v Rice [2002], the English Court of Appeal established the principle of proportionality in proprietary estoppel remedies. The court may award less than the claimant expected where the expectation was disproportionate to the detriment suffered. The court asks: what is the minimum necessary to do justice between the parties? The remedy is therefore flexible and tailored to the facts."
+    },
+    {
+      "id": "PRL_M08_L03_Q05",
+      "question": "Which of the following is NOT a potential remedy in a proprietary estoppel claim?",
+      "options": {
+        "A": "A freehold or leasehold transfer of the land",
+        "B": "A licence to occupy for life",
+        "C": "A monetary payment to reflect the claimant's detriment",
+        "D": "A mandatory injunction requiring the landowner to make a public apology"
+      },
+      "correct_answer": "D",
+      "explanation": "In a proprietary estoppel claim, the court has a wide discretion to fashion the appropriate remedy. Possible remedies include: a freehold or leasehold transfer, a licence to occupy for life, a constructive trust, or a monetary payment. The court selects the minimum equity necessary to do justice. A mandatory injunction requiring a public apology is not a property law remedy and is entirely outside the doctrine's scope."
+    },
+    {
+      "id": "PRL_M08_L03_Q06",
+      "question": "In the Irish case Re JR, what circumstances were held to give rise to a proprietary estoppel equity?",
+      "options": {
+        "A": "A written agreement between a parent and child for the transfer of the family farm at a nominal sum",
+        "B": "An informal promise by a parent to a child regarding inheritance of the family farm, coupled with years of unpaid work by the child in reliance on that promise",
+        "C": "A child's contribution to the purchase price of the family home without any promise from the parent",
+        "D": "A verbal agreement between siblings to divide the family farm equally on the death of both parents"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re JR, the Irish High Court confirmed that an informal promise by a parent to a child regarding inheritance of the family farm, coupled with years of unpaid work by the child in reliance on that promise, gives rise to a proprietary estoppel equity. The Irish courts have consistently held that equity will not allow such a promise to be defeated, even where the land is registered and the promise was never reduced to writing."
+    },
+    {
+      "id": "PRL_M08_L03_Q07",
+      "question": "What important limitation on proprietary estoppel requires the assurance to relate to specific identifiable property?",
+      "options": {
+        "A": "A vague promise that the claimant will 'be well looked after' or will 'receive something' does not found an estoppel unless the specific land or interest is identifiable",
+        "B": "A promise is always sufficiently specific if it relates to 'my estate'",
+        "C": "The property must be registered land for proprietary estoppel to apply",
+        "D": "The property must be worth at least a minimum threshold value for the court to exercise its discretion"
+      },
+      "correct_answer": "A",
+      "explanation": "An important limitation on proprietary estoppel is that the assurance must relate to specific identifiable property. A vague promise that the claimant will be well looked after, or will receive something on the promisor's death, may not be sufficiently specific to found an estoppel. The land or interest over which the estoppel is claimed must be identifiable. This requirement prevents estoppel from being used to enforce purely aspirational family promises."
+    },
+    {
+      "id": "PRL_M08_L03_Q08",
+      "question": "In Yaxley v Gotts [2000], how did the English Court of Appeal address the relationship between proprietary estoppel and the writing requirements for contracts for the disposition of land?",
+      "options": {
+        "A": "The court held that proprietary estoppel can never override statutory writing requirements",
+        "B": "The court held that where a person has acted to their detriment in reliance on an oral agreement regarding land, a constructive trust may arise which satisfies the statutory writing requirements",
+        "C": "The court held that section 2 of the Law of Property (Miscellaneous Provisions) Act 1989 is always overridden by equitable estoppel",
+        "D": "The court held that oral agreements for the disposition of land are always void and estoppel cannot cure this"
+      },
+      "correct_answer": "B",
+      "explanation": "In Yaxley v Gotts [2000], the Court of Appeal held that where a person has acted to their detriment in reliance on an oral agreement to take a long lease, the resulting constructive trust satisfies the statutory writing requirements. A similar approach applies in Ireland under section 51 of the LCLRA 2009, which requires contracts for the disposition of land to be in writing. The constructive trust arising from the estoppel can satisfy the formality requirements."
+    },
+    {
+      "id": "PRL_M08_L03_Q09",
+      "question": "How does satisfying a proprietary estoppel equity interact with the law of constructive trusts, and why is this important for third parties?",
+      "options": {
+        "A": "Satisfying a proprietary estoppel extinguishes any constructive trust that might otherwise arise",
+        "B": "In some cases, satisfying a proprietary estoppel equity creates a constructive trust over the land, which will bind third parties with notice",
+        "C": "Proprietary estoppel and constructive trusts are entirely separate doctrines with no interaction",
+        "D": "A constructive trust arising from estoppel must be registered to bind third parties"
+      },
+      "correct_answer": "B",
+      "explanation": "In some cases, satisfying a proprietary estoppel equity creates a constructive trust over the land, which will bind third parties with notice. This is important for priority purposes: a constructive trust arising from an estoppel can give the claimant a proprietary right that binds purchasers and mortgagees with actual or constructive notice of it. The estoppel and the trust interact to provide proprietary protection beyond the personal remedy between the original parties."
+    },
+    {
+      "id": "PRL_M08_L03_Q10",
+      "question": "Proprietary estoppel commonly arises in which two types of scenario on the FE-1 examination?",
+      "options": {
+        "A": "Adverse possession claims and co-ownership disputes",
+        "B": "Farm inheritance scenarios where an heir works the land on a promise, and home improvement scenarios where a cohabitant funds works on a promise of an interest",
+        "C": "Commercial lease disputes and mortgage redemption claims",
+        "D": "Planning permission disputes and easement creation by prescription"
+      },
+      "correct_answer": "B",
+      "explanation": "Proprietary estoppel most commonly arises on the FE-1 paper in two types of scenario: farm inheritance scenarios — the unpaid son or daughter who works the land on the promise of inheritance (as in Thorner v Major [2009] and Re JR); and home improvement scenarios — the cohabitant who funds an extension on the promise of an interest in the property. Both scenarios involve an assurance, reliance by changing one's position, and detriment."
+    }
+  ]
+}

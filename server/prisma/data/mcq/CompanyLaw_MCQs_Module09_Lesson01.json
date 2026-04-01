@@ -1,0 +1,131 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module09_Lesson01.txt",
+  "module_number": 9,
+  "module_title": "Capital Maintenance, Dividends and Share Transfers",
+  "lesson_number": 1,
+  "lesson_title": "Dividends and Capital Maintenance",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M09_L01_Q01",
+      "question": "Under s.117 CA 2014, a company may only pay a dividend out of profits available for the purpose. How are 'profits available for distribution' defined?",
+      "options": {
+        "A": "The company's cash balance at the end of the financial year, less outstanding creditor obligations",
+        "B": "Accumulated realised profits not previously distributed or capitalised, less accumulated realised losses not previously written off in a reduction or reorganisation of capital",
+        "C": "Net asset value of the company calculated on a going concern basis at the date the dividend is declared",
+        "D": "The company's pre-tax profit for the most recent financial year, without deducting prior year losses"
+      },
+      "correct_answer": "B",
+      "explanation": "s.117(2) CA 2014 defines distributable profits as accumulated realised profits less accumulated realised losses. Unrealised profits (e.g. asset revaluations) do not count as distributable; and prior year losses must be set off before distributing. This reflects the capital maintenance principle."
+    },
+    {
+      "id": "CL_M09_L01_Q02",
+      "question": "In Flitcroft's Case (Re Exchange Banking Co, Flitcroft's Case [1882] 21 Ch D 519), the Court of Appeal established a foundational capital maintenance principle. What was the key rule?",
+      "options": {
+        "A": "Companies must maintain a minimum reserve fund equal to 10% of their issued share capital before declaring any dividend",
+        "B": "Directors who pay dividends out of capital (as opposed to realised profits) are personally liable to repay those dividends to the company",
+        "C": "Dividends may be paid out of capital if the board passes a resolution confirming the company's solvency",
+        "D": "Shareholders who receive unlawful dividends are not obliged to repay them unless they had actual knowledge of the illegality"
+      },
+      "correct_answer": "B",
+      "explanation": "In Flitcroft's Case [1882], the Court of Appeal held that directors who paid dividends out of capital — without distributable profits — were personally liable to repay those dividends to the company. This is the cornerstone of the capital maintenance doctrine: capital may not be returned to shareholders disguised as dividends."
+    },
+    {
+      "id": "CL_M09_L01_Q03",
+      "question": "Under s.122 CA 2014, a director who votes for or authorises the payment of an unlawful dividend may be personally liable. What is the nature and scope of this liability?",
+      "options": {
+        "A": "The director is liable to restore the unlawfully distributed amount to the company only if they personally received part of the dividend",
+        "B": "Each director who was party to the unlawful payment is jointly and severally liable to restore the amount paid to the company as a debt",
+        "C": "The director's liability is limited to the amount by which the dividend exceeded the company's available profits",
+        "D": "Director liability under s.122 is conditional on the company first becoming insolvent after the illegal dividend payment"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.122 CA 2014, each director who was knowingly party to the unlawful payment of a dividend is jointly and severally liable to restore the amount to the company as a debt. This mirrors Flitcroft's Case and ensures directors cannot shelter behind collective decision-making when authorising returns of capital disguised as dividends."
+    },
+    {
+      "id": "CL_M09_L01_Q04",
+      "question": "A company's accounts show realised profits of €400,000 but also an accumulated realised loss from previous years of €150,000. A director proposes paying a dividend of €300,000. Is this lawful under s.117 CA 2014?",
+      "options": {
+        "A": "Yes — the company has realised profits of €400,000 which exceed the proposed dividend",
+        "B": "No — the company's distributable profits are only €250,000 (€400,000 less €150,000 accumulated loss); a dividend of €300,000 would partially return capital",
+        "C": "Yes — prior year losses only reduce distributable profits where they arose in the last two financial years",
+        "D": "It depends — the dividend is lawful only if the directors pass a solvency statement under s.580 CA 2014"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.117(2) CA 2014, distributable profits are calculated as accumulated realised profits LESS accumulated realised losses. The distributable profit here is €400,000 − €150,000 = €250,000. A dividend of €300,000 would exceed the distributable amount and would unlawfully return €50,000 of capital."
+    },
+    {
+      "id": "CL_M09_L01_Q05",
+      "question": "In Aveling Barford Ltd v Perion Ltd [1989] Ch, a company sold an asset at a significant undervalue to a company controlled by its controlling shareholder. The court held this transaction was unlawful. On what basis?",
+      "options": {
+        "A": "The transaction was voidable under s.238 CA 2014 as a substantial non-cash asset transaction that was not approved by members",
+        "B": "The undervalue disposal was characterised as a disguised distribution of capital, contrary to the capital maintenance principle — equivalent to an unlawful dividend to the controlling shareholder",
+        "C": "The transaction was void because the board was conflicted and failed to comply with s.228(1)(g) CA 2014",
+        "D": "The disposal amounted to an unlawful preference under s.604 CA 2014 because it was made within two years of insolvency"
+      },
+      "correct_answer": "B",
+      "explanation": "In Aveling Barford v Perion [1989], Hoffmann J held that where a company sells an asset at a deliberate undervalue to a person connected to the controlling shareholder, this is a disguised distribution of capital. Capital may not be returned to shareholders (or their associates) except through lawful dividend or permitted capital reduction procedures."
+    },
+    {
+      "id": "CL_M09_L01_Q06",
+      "question": "The rule in Sowman v Samuel (No. 2) [1978] (England) and Boardman v Phipps [1967] HL was applied to dividend repayment. In the context of unlawfully paid dividends, when is a SHAREHOLDER obliged to repay dividends received?",
+      "options": {
+        "A": "A shareholder must repay unlawful dividends only if the company subsequently becomes insolvent within 12 months of the payment",
+        "B": "A shareholder who received an unlawful dividend with actual knowledge (or constructive notice) that it was paid unlawfully is liable to repay it to the company as a debt",
+        "C": "All shareholders must repay unlawful dividends jointly and severally regardless of their knowledge",
+        "D": "Shareholders are never liable to repay dividends — the liability rests exclusively with the directors who authorised the payment"
+      },
+      "correct_answer": "B",
+      "explanation": "Under general company law principles and confirmed in Irish and UK authorities, a shareholder who receives an unlawful dividend with actual or constructive knowledge of its unlawfulness must repay it to the company. A bona fide shareholder who received the dividend in good faith without knowledge of its illegality has a stronger argument against repayment."
+    },
+    {
+      "id": "CL_M09_L01_Q07",
+      "question": "A public limited company (PLC) wishes to pay a dividend. Which additional restriction under s.117(3) CA 2014 applies to PLCs but not to private limited companies?",
+      "options": {
+        "A": "A PLC must obtain approval of at least 75% of members by special resolution before declaring any dividend",
+        "B": "A PLC may only distribute profits if, after the distribution, its net assets are not less than the sum of its called-up share capital and undistributable reserves",
+        "C": "A PLC must publish its dividend decision in the CRO Gazette within 14 days of declaration",
+        "D": "A PLC must appoint an independent auditor to certify that distributable profits exist before paying any dividend"
+      },
+      "correct_answer": "B",
+      "explanation": "s.117(3) CA 2014 imposes an additional restriction on PLCs: a distribution may only be made if, immediately after the distribution, the company's net assets are not less than the aggregate of its called-up share capital plus its undistributable reserves. This stricter test reflects the higher capital protection obligations of public companies."
+    },
+    {
+      "id": "CL_M09_L01_Q08",
+      "question": "Re Irish Life and Permanent plc [2012] IEHC involved a significant examination of dividend payments in the context of a recapitalisation scheme. What principle relevant to capital maintenance was the court asked to consider?",
+      "options": {
+        "A": "Whether dividends paid to the State as shareholder during a recapitalisation could be treated as unlawful distributions to a connected person",
+        "B": "Whether circular dividend arrangements that involved the simultaneous injection and withdrawal of capital constituted a genuine profit distribution or a disguised return of capital",
+        "C": "Whether the company's articles of association could restrict the court's power to review the lawfulness of dividend payments under s.117",
+        "D": "Whether directors of a plc could be personally liable for historic dividends paid before they were appointed to the board"
+      },
+      "correct_answer": "B",
+      "explanation": "Re Irish Life and Permanent [2012] raised issues about circular financial arrangements involving dividend payments as part of recapitalisation structures. The court examined whether such arrangements — where money was simultaneously injected and returned — constituted genuine distributions out of profits or disguised capital transactions, engaging the capital maintenance rules."
+    },
+    {
+      "id": "CL_M09_L01_Q09",
+      "question": "A company's articles provide that ordinary shareholders receive a dividend only after preference shareholders receive their cumulative dividend. In a year where the company has limited distributable profits, the directors declare a dividend only for preference shareholders. An ordinary shareholder challenges this. What is the legal position?",
+      "options": {
+        "A": "The directors have acted in breach of duty — they must always pay dividends to all classes simultaneously or not at all",
+        "B": "The directors have acted lawfully — the articles create a valid preference that entitled preference shareholders to be paid first from distributable profits, and the ordinary shareholders have no entitlement until the preference is satisfied",
+        "C": "The decision is unlawful because the articles cannot validly create preferential dividend rights",
+        "D": "The directors must seek a special resolution from all shareholders approving the preferential payment each year"
+      },
+      "correct_answer": "B",
+      "explanation": "Preference shareholders may lawfully be given priority dividend rights in the articles. Directors are required to follow the class rights as set out in the articles. Where distributable profits are insufficient to pay all classes, paying preference shareholders first in accordance with their class rights is entirely lawful — ordinary shareholders have no right to dividends until the preference entitlement is satisfied."
+    },
+    {
+      "id": "CL_M09_L01_Q10",
+      "question": "Under what circumstances may a company reduce its share capital to create a distributable reserve for dividend purposes?",
+      "options": {
+        "A": "A company may reduce capital at any time by ordinary resolution without court involvement under CA 2014",
+        "B": "A private limited company may reduce its share capital by special resolution confirmed by a solvency declaration under s.84 CA 2014 (summary approval procedure), creating a distributable reserve; a PLC requires court confirmation under s.86",
+        "C": "Capital may only be reduced by a court order under s.84 CA 2014 regardless of company type",
+        "D": "Capital reduction to create a distributable reserve is always prohibited as it contravenes the capital maintenance principle"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.84 CA 2014, a private company may reduce its share capital by special resolution with a directors' solvency declaration (summary approval procedure), creating a distributable reserve. A PLC must obtain court confirmation under s.86. Capital reduction is a lawful method of creating distributable reserves where accumulated losses have eroded profits."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "Module_05_Lesson_02_Trustees_Duties___Duty_not_to_Profit_and_the_Rule_against_Self-Dealing.txt",
+  "module_number": 5,
+  "module_title": "Express Trusts: Trustee Duties and Powers",
+  "lesson_number": 2,
+  "lesson_title": "Trustees' Duties: The Duty Not to Profit and the Rule Against Self-Dealing",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EQL_M05_L02_Q01",
+      "question": "A trustee is described as a fiduciary. What is the core principle that governs a fiduciary's conduct?",
+      "options": {
+        "A": "A fiduciary must maximise the return on the assets under their management.",
+        "B": "A fiduciary must not allow their personal interests to conflict with their duty to the beneficiaries.",
+        "C": "A fiduciary is only accountable for losses caused by deliberate misconduct.",
+        "D": "A fiduciary owes duties only to the settlor who created the trust."
+      },
+      "correct_answer": "B",
+      "explanation": "A trustee is a fiduciary — a person who holds property for the benefit of others. The core principle of fiduciary law is that a fiduciary must not allow their personal interests to conflict with their duty to the beneficiaries. Equity's approach is prophylactic: the mere existence of a conflict of interest — not just actual harm — is sufficient to found liability. The trustee must act with absolute loyalty to the beneficiaries."
+    },
+    {
+      "id": "EQL_M05_L02_Q02",
+      "question": "In Boardman v Phipps (1967), the House of Lords considered the duty not to profit from a fiduciary position. What were the key facts and what did the court hold?",
+      "options": {
+        "A": "A trustee sold trust property at undervalue and was required to account for the difference in price.",
+        "B": "A solicitor to a trust used confidential information obtained through the trusteeship to purchase shares for personal profit; the court held the profits were held on constructive trust for the beneficiaries, despite the solicitor acting in good faith.",
+        "C": "A trustee invested trust funds in their own company and the court held the investment was void.",
+        "D": "A beneficiary sought to remove a trustee who had profited from a transaction unconnected to the trust."
+      },
+      "correct_answer": "B",
+      "explanation": "In Boardman v Phipps (1967), a solicitor to a trust used confidential information obtained in the course of his trusteeship to purchase shares in a company in which the trust held a minority interest. He made substantial profits. The House of Lords held that the profits were held on constructive trust for the beneficiaries — even though the trustees themselves could not have purchased the shares without court approval, and even though the solicitor had acted in good faith. The principle is absolute: a fiduciary must not profit from a position of trust."
+    },
+    {
+      "id": "EQL_M05_L02_Q03",
+      "question": "The duty not to profit from the trust is described as prophylactic. What does this mean in practice?",
+      "options": {
+        "A": "The duty only applies where the trustee acted dishonestly.",
+        "B": "The duty only applies to profits made in excess of a certain value.",
+        "C": "The duty applies regardless of whether any actual harm resulted from the conflict of interest — the mere existence of a potential conflict is sufficient to found liability.",
+        "D": "The duty is not enforceable where the trust benefited from the trustee's actions."
+      },
+      "correct_answer": "C",
+      "explanation": "The prophylactic nature of the no-profit rule means that equity does not enquire whether any actual harm resulted from a conflict of interest. The mere existence of the conflict — the possibility of a conflict — is sufficient to impose liability. Even where the trust actually benefited from the trustee's conduct, as in Boardman v Phipps (1967), equity still requires any personal profit made through the fiduciary position to be held on constructive trust for the beneficiaries."
+    },
+    {
+      "id": "EQL_M05_L02_Q04",
+      "question": "What is the self-dealing rule and what is its key characteristic?",
+      "options": {
+        "A": "A trustee may purchase trust property for themselves provided they pay a fair market price.",
+        "B": "A trustee must not purchase trust property for themselves; if they do, the beneficiaries may set the transaction aside regardless of whether the price paid was fair.",
+        "C": "A trustee may deal in trust property for personal profit provided the beneficiaries consent after the fact.",
+        "D": "The self-dealing rule applies only to trustee purchases of land; it does not apply to personal property."
+      },
+      "correct_answer": "B",
+      "explanation": "The self-dealing rule provides that a trustee must not purchase trust property for themselves. If a trustee purports to purchase trust assets — even at a fair market price — the beneficiaries may set the transaction aside. The rule is prophylactic and inflexible: no inquiry is made into whether the transaction was commercially fair. The mere fact that the trustee is on both sides of the transaction is sufficient for the rule to apply."
+    },
+    {
+      "id": "EQL_M05_L02_Q05",
+      "question": "In Aberdeen Railway v Blaikie Brothers (1854), the House of Lords applied the principle underlying the self-dealing rule. What did the court hold?",
+      "options": {
+        "A": "A director who contracted on behalf of a company with a firm in which he was a partner was in a position of conflict, and the company could set the contract aside regardless of whether the terms were fair.",
+        "B": "A trustee who invested trust funds in a railway company was required to hold the profits on constructive trust.",
+        "C": "A director who disclosed his interest in a contract was not required to account for any profit made.",
+        "D": "A company cannot contract with a firm in which one of its directors holds a personal interest under any circumstances."
+      },
+      "correct_answer": "A",
+      "explanation": "In Aberdeen Railway v Blaikie Brothers (1854), the House of Lords held that a director — in a fiduciary position — who contracted on behalf of the company with a firm of which he was a partner was in a position of conflict, and the company could set the contract aside regardless of whether the terms were fair. This case establishes the breadth of the self-dealing principle: any transaction where the fiduciary is on both sides is voidable at the election of the beneficiary."
+    },
+    {
+      "id": "EQL_M05_L02_Q06",
+      "question": "Which of the following are recognised exceptions to the self-dealing rule?",
+      "options": {
+        "A": "The trustee paying a fair market price; the trustee acting in good faith; and the trustee having a professional background in the relevant field.",
+        "B": "Express authorisation in the trust instrument; informed consent of all adult beneficiaries entitled to the whole beneficial interest; and court sanction of the transaction.",
+        "C": "The trustee disclosing the transaction to the settlor; the transaction being at arm's length; and the trustee obtaining a valuation.",
+        "D": "There are no exceptions — the self-dealing rule is absolute and admits of no qualification."
+      },
+      "correct_answer": "B",
+      "explanation": "The self-dealing rule, though strict, has recognised exceptions: (1) the trust instrument may expressly authorise the trustee to purchase trust property; (2) all beneficiaries who are of full age and sound mind and together entitled to the whole beneficial interest may give their informed consent to the transaction; and (3) the court may sanction the transaction on application by the trustee. In the absence of one of these exceptions, the transaction remains voidable at the beneficiaries' election."
+    },
+    {
+      "id": "EQL_M05_L02_Q07",
+      "question": "How does the fair-dealing rule differ from the self-dealing rule?",
+      "options": {
+        "A": "The fair-dealing rule applies where a trustee purchases trust property itself; the self-dealing rule applies where a trustee purchases the beneficial interest of a beneficiary.",
+        "B": "The fair-dealing rule applies where a trustee purchases the beneficial interest of a beneficiary; it is less strict than the self-dealing rule, provided the trustee makes full disclosure and pays a fair price.",
+        "C": "The fair-dealing rule and the self-dealing rule are interchangeable and apply in identical circumstances.",
+        "D": "The fair-dealing rule applies only to half-secret trusts; the self-dealing rule applies to all express trusts."
+      },
+      "correct_answer": "B",
+      "explanation": "The fair-dealing rule is a less strict variant that applies where a trustee purchases the beneficial interest of a beneficiary — not trust property itself. The trustee may do so, provided they make full disclosure of all information they possess, do not take any undue advantage of their fiduciary position, and pay a fair price. The transaction is voidable but will not automatically be set aside if the trustee acted fairly and made full disclosure. This distinguishes it from the self-dealing rule, which is far stricter and applies to purchases of trust property itself."
+    },
+    {
+      "id": "EQL_M05_L02_Q08",
+      "question": "What is the remedy available to beneficiaries where a trustee has breached the duty not to profit from the trust?",
+      "options": {
+        "A": "Damages equal to the loss suffered by the trust fund.",
+        "B": "A constructive trust imposed over any profit made by the trustee through their fiduciary position.",
+        "C": "An order removing the trustee from office without any financial remedy.",
+        "D": "Rescission of the trust instrument in its entirety."
+      },
+      "correct_answer": "B",
+      "explanation": "Where a trustee breaches the duty not to profit from the trust, the remedy is a constructive trust imposed over the profit made. As confirmed in Boardman v Phipps (1967), the trustee holds any profits made through their fiduciary position on constructive trust for the beneficiaries. This remedy requires the trustee to disgorge the profit regardless of whether the trust suffered any loss and regardless of the trustee's good faith. Account of profits may also be ordered as an alternative."
+    },
+    {
+      "id": "EQL_M05_L02_Q09",
+      "question": "A trustee, without the knowledge or consent of the beneficiaries, uses confidential information acquired through the trust to make a personal investment. The investment proves profitable. The trust itself was not in a position to make this investment. Can the trustee retain the profit?",
+      "options": {
+        "A": "Yes — the trust could not have made the investment, so no loss was suffered and the trustee may keep the profit.",
+        "B": "Yes — because the trustee acted in good faith and the trust was not harmed.",
+        "C": "No — following Boardman v Phipps (1967), a trustee must hold profits made through a fiduciary position on constructive trust, even where the trust itself could not have taken the opportunity and the trustee acted in good faith.",
+        "D": "No — but the remedy is limited to damages equal to the profit that the trust would have made had it been able to invest."
+      },
+      "correct_answer": "C",
+      "explanation": "Following Boardman v Phipps (1967), a trustee cannot retain profits made through use of information or opportunity acquired through the fiduciary position, even where: (a) the trust itself could not have made the investment, and (b) the trustee acted entirely in good faith. The profit is held on constructive trust for the beneficiaries. The prophylactic nature of the no-profit rule prevents equity from enquiring into whether the trust actually lost anything — the source of the profit, being the fiduciary position, is sufficient."
+    },
+    {
+      "id": "EQL_M05_L02_Q10",
+      "question": "Which of the following scenarios would engage the self-dealing rule rather than the fair-dealing rule?",
+      "options": {
+        "A": "A trustee offers to purchase the beneficial interest of one of the beneficiaries at market value.",
+        "B": "A trustee purchases trust property — a plot of land forming part of the trust fund — for themselves at a price certified by an independent valuer.",
+        "C": "A trustee lends money to a beneficiary on commercial terms.",
+        "D": "A trustee seeks to vary the trust terms with the consent of all beneficiaries."
+      },
+      "correct_answer": "B",
+      "explanation": "The self-dealing rule applies where a trustee purchases trust property itself — the very assets forming the trust fund — for their own benefit. Option B describes exactly this scenario: a trustee purchasing land that forms part of the trust fund. The self-dealing rule applies regardless of whether the price is fair or certified by a valuer; the transaction is voidable at the beneficiaries' election unless one of the recognised exceptions applies. Option A, by contrast, describes a purchase of a beneficial interest, which engages the less strict fair-dealing rule."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module13_Lesson01.txt",
+  "module_number": 13,
+  "module_title": "Freedom of Establishment and Freedom to Provide Services",
+  "lesson_number": 1,
+  "lesson_title": "Freedom of Establishment: Article 49 TFEU and the Gebhard Test",
+  "questions": [
+    {
+      "id": "EUL_M13_L01_Q01",
+      "question": "Article 49 TFEU (ex Article 43 EC) prohibits restrictions on the freedom of establishment of nationals of EU member states in any other member state. 'Establishment' in EU law is characterised by which of the following?",
+      "options": {
+        "A": "Any business activity carried out across borders, including temporary service provision",
+        "B": "Stable and continuous participation in the economic life of another member state — a settled, permanent presence involving actual economic activity, including primary establishments (main place of business) and secondary establishments (branches, agencies, subsidiaries)",
+        "C": "Only the registration of a new company in another member state — individual traders cannot claim establishment rights",
+        "D": "Any cross-border economic activity lasting more than 12 months"
+      },
+      "correct_answer": "B",
+      "explanation": "The concept of 'establishment' under Article 49 TFEU encompasses both primary and secondary establishment. Primary establishment refers to the main place of business (the seat of a company or the principal place of business of an individual). Secondary establishment covers setting up agencies, branches, or subsidiaries in other member states. The defining characteristic of establishment — as opposed to services — is stable and continuous participation in the economic life of the host state. This was clarified in Gebhard v Consiglio dell'Ordine degli Avvocati e Procuratori di Milano [1995] (C-55/94): the provider must have a fixed and stable infrastructure, with the activity pursued on a stable and continuous basis. Temporary activities fall under Article 56 (services); stable permanent presence falls under Article 49 (establishment)."
+    },
+    {
+      "id": "EUL_M13_L01_Q02",
+      "question": "In Gebhard v Consiglio dell'Ordine degli Avvocati e Procuratori di Milano [1995] (C-55/94), the CJEU established a four-part test for assessing whether national measures restricting fundamental freedoms (including establishment) are compatible with EU law. The Gebhard test requires that national measures:",
+      "options": {
+        "A": "Must be expressly authorised by the TFEU or a secondary act of the Council",
+        "B": "Must be applied in a non-discriminatory manner; must be justified by imperative requirements in the general interest; must be suitable for securing the attainment of the objective pursued; and must not go beyond what is necessary to attain it (proportionate)",
+        "C": "Must be necessary only — proportionality does not apply to non-discriminatory national measures",
+        "D": "Must be limited to measures expressly listed in Articles 52 and 62 TFEU"
+      },
+      "correct_answer": "B",
+      "explanation": "The Gebhard test (also called the four-step test) applies to national measures that restrict fundamental freedoms. It requires: (1) the measures must be applicable without discrimination on grounds of nationality — i.e., they must be non-discriminatory or their discriminatory effect must be justified; (2) they must be justified by imperative requirements in the general interest (the mandatory requirements/overriding reasons doctrine from Cassis de Dijon, adapted to services and establishment); (3) they must be suitable (appropriate) to secure the objective; and (4) they must be necessary (proportionate) — not going beyond what is needed. This test applies across all four fundamental freedoms and is a cornerstone of internal market law. Directly discriminatory measures can only be justified by express Treaty derogations (Article 52 — public policy, public security, public health)."
+    },
+    {
+      "id": "EUL_M13_L01_Q03",
+      "question": "Article 49 TFEU grants the right of establishment to 'nationals of a member state'. The CJEU has extended freedom of establishment rights to companies. Under Article 54 TFEU, which companies are entitled to rely on freedom of establishment?",
+      "options": {
+        "A": "Only companies incorporated in the EU and listed on a recognised EU stock exchange",
+        "B": "Companies or firms formed in accordance with the law of a member state and having their registered office, central administration, or principal place of business within the EU — they are treated the same as natural persons who are nationals of member states",
+        "C": "Only companies whose shareholders are EU nationals",
+        "D": "Only public limited companies with share capital exceeding €25,000"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 54 TFEU extends the freedom of establishment to companies and firms formed in accordance with the law of any member state and having their registered office, central administration, or principal place of business within the EU. They are treated equivalently to natural persons who are EU nationals for the purpose of establishment rights. This creates a powerful tool: a company incorporated in a member state with its registered office there has establishment rights throughout the EU regardless of where its actual activities are carried out. This has generated company law controversies — notably whether member states can prevent 'regulatory arbitrage' (companies incorporating in a low-regulation state while operating entirely in another). The CJEU has addressed this in Centros [1999], Überseering [2002], and Inspire Art [2003]."
+    },
+    {
+      "id": "EUL_M13_L01_Q04",
+      "question": "In Centros Ltd v Erhvervs- og Selskabsstyrelsen [1999] (C-212/97), Centros was incorporated in England (with minimal share capital — £1) to avoid Danish minimum share capital requirements, intending to operate entirely in Denmark via a branch. Denmark refused to register the branch. The CJEU held:",
+      "options": {
+        "A": "Denmark could refuse branch registration — using incorporation in another state to circumvent national rules constitutes abuse of EU law",
+        "B": "Denmark's refusal to register the branch violated Article 49 TFEU — exercising the right to form a company in accordance with the law of one member state and set up a branch in another is itself an exercise of establishment rights; Denmark could not refuse registration merely because the company was incorporated to avoid national minimum capital requirements",
+        "C": "EU law prohibits regulatory arbitrage — companies must incorporate where they carry on the majority of their activities",
+        "D": "The minimum share capital requirement was justified by the mandatory requirement of creditor protection"
+      },
+      "correct_answer": "B",
+      "explanation": "Centros is a landmark case on freedom of establishment and company law. The CJEU held that the right to set up a company under the law of one member state (here, England with its liberal incorporation rules) and then operate through a branch in another member state (Denmark) is squarely within Article 49 TFEU. Choosing the most advantageous national law for incorporation — even to avoid stricter requirements in the intended operating state — does not constitute abuse of EU law. Denmark's refusal to register the branch was an unjustifiable restriction on establishment. The Court acknowledged creditor protection as a legitimate aim but held Denmark's blanket refusal was disproportionate — less restrictive measures (e.g., disclosure requirements) were available. Centros opened EU markets to regulatory competition in company law."
+    },
+    {
+      "id": "EUL_M13_L01_Q05",
+      "question": "Article 51 TFEU (ex Article 45 EC) provides that freedom of establishment does not apply to activities which are 'connected, even occasionally, with the exercise of official authority'. In Commission v Germany [1986] (C-205/84), the CJEU interpreted this exception:",
+      "options": {
+        "A": "Broadly — any activity regulated by the state or carried out under a public licence falls within the official authority exception",
+        "B": "Narrowly — the exception applies only to activities which in themselves involve a direct and specific connection with the exercise of official authority; a profession being regulated or partly involving state powers does not automatically fall within Article 51",
+        "C": "As applicable to entire professions if any part of their work involves official authority",
+        "D": "As synonymous with the Article 45(4) public service exception for workers"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 51 TFEU (mirrored by Article 62 for services) excludes from the freedom of establishment activities involving the exercise of official authority. The CJEU has interpreted this exception narrowly, consistent with the principle that derogations from fundamental freedoms must be strictly construed. Only activities which in themselves constitute a direct and specific participation in the exercise of official authority fall outside the Treaty's scope. The fact that a profession involves some regulatory or supervisory functions does not automatically bring the entire profession within Article 51. For example, notaries in some member states may perform official functions, but this does not necessarily exclude the entire notarial profession from establishment rights — only the specific functions directly involving official authority. The Commission has pursued infringement actions against member states that interpreted Article 51 too broadly."
+    },
+    {
+      "id": "EUL_M13_L01_Q06",
+      "question": "In Überseering BV v Nordic Construction Company [2002] (C-208/00), a Dutch company (Überseering) had its registered office in the Netherlands but its shares were acquired by German nationals. Germany applied its 'real seat' doctrine — treating the company as having its administrative centre in Germany and therefore requiring reincorporation under German law to have legal capacity. The CJEU held:",
+      "options": {
+        "A": "Germany could apply its real seat doctrine — member states have sovereignty to determine when a company has legal capacity in their territory",
+        "B": "Germany's refusal to recognise the legal capacity of a company duly incorporated under the law of another member state violated Article 49 TFEU — forcing reincorporation is the most radical restriction on establishment rights and is unjustifiable",
+        "C": "The real seat doctrine is an acceptable principle of conflict of laws that EU law does not affect",
+        "D": "Überseering had lost its EU establishment rights by allowing its shares to pass to German nationals"
+      },
+      "correct_answer": "B",
+      "explanation": "Überseering is a landmark case establishing that member states must recognise the legal capacity and capacity to be a party to legal proceedings of companies validly incorporated under the law of another member state. Germany's 'real seat' doctrine (Sitztheorie) — which required companies whose administrative seat was in Germany to reincorporate under German law — was held to be incompatible with Articles 49 and 54 TFEU. Denying legal capacity to a foreign-incorporated company is the most extreme restriction on freedom of establishment — it prevents the company from accessing justice, contracting, and operating at all. Unlike Centros (which concerned branch registration), Überseering went to the fundamental question of company identity and survival. Member states may regulate foreign companies operating within their territory but cannot deny them legal existence."
+    },
+    {
+      "id": "EUL_M13_L01_Q07",
+      "question": "National rules that restrict the activities of individuals exercising their professional qualifications in another member state can restrict freedom of establishment. Under the Professional Qualifications Directive 2005/36, the general system for recognition of professional qualifications provides:",
+      "options": {
+        "A": "Automatic right to practise any profession in any member state upon production of any professional qualification from a member state",
+        "B": "A mechanism by which host states must recognise qualifications obtained in another member state, subject to possible compensatory measures (adaptation period or aptitude test) where there are substantial differences in training; automatic recognition applies to specific regulated professions (doctors, nurses, pharmacists, architects, etc.)",
+        "C": "Recognition rights only where the professional has already practised in their home state for five years",
+        "D": "Host states retain full discretion to refuse recognition of any foreign qualification regardless of equivalence"
+      },
+      "correct_answer": "B",
+      "explanation": "Directive 2005/36 on the recognition of professional qualifications creates a layered system. For certain key professions (doctors, dentists, nurses, midwives, pharmacists, veterinary surgeons, architects), there is automatic recognition based on harmonised minimum training requirements. For other regulated professions, the general system applies: the host state must recognise qualifications obtained in another member state but may impose compensatory measures — an adaptation period (supervised practice) or an aptitude test — where there are substantial differences in professional training. The host state must choose which compensatory measure to offer (the applicant generally may choose) unless only one is appropriate for the specific profession. Host states cannot simply refuse recognition of foreign qualifications — Article 49 TFEU would be infringed if genuine equivalence is disregarded."
+    },
+    {
+      "id": "EUL_M13_L01_Q08",
+      "question": "Article 52 TFEU permits member states to maintain or introduce rules on the special treatment of foreign nationals as regards the establishment of companies, where such special treatment is justified on grounds of public policy, public security, or public health. How has the CJEU approached these derogations?",
+      "options": {
+        "A": "Article 52 derogations are broadly construed — economic and administrative reasons can justify special treatment of foreign nationals in the context of establishment",
+        "B": "Article 52 derogations are strictly interpreted — they cannot be used for economic purposes; the concepts of public policy and public security require a genuine, present, and sufficiently serious threat to a fundamental interest of society; they are subject to proportionality review",
+        "C": "Article 52 derogations cannot be applied to companies — they apply only to natural persons",
+        "D": "Article 52 derogations allow member states to require foreign-incorporated companies to reincorporate domestically in all cases"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 52 TFEU derogations (public policy, public security, public health) in the establishment context are interpreted consistently with their treatment across other fundamental freedoms. The CJEU has consistently held: (1) these derogations cannot serve economic purposes — protecting national businesses from competition or administrative convenience are not valid grounds; (2) public policy and security require a genuine, present, and sufficiently serious threat to a fundamental societal interest (analogous to the Bouchereau standard in workers' free movement); (3) proportionality review applies — the measure must be no more restrictive than necessary. The approach ensures Article 52 cannot be used as a protectionist device. The Treaty expressly provides that Article 52 does not allow discrimination against EU citizens on grounds of nationality — it permits special treatment only within strictly defined limits."
+    },
+    {
+      "id": "EUL_M13_L01_Q09",
+      "question": "A self-employed EU national wishes to practise as a lawyer in another member state where they are not qualified. Under the Lawyers' Establishment Directive (98/5/EC), this person may:",
+      "options": {
+        "A": "Practise immediately under their home state professional title without any further requirements",
+        "B": "Establish themselves on a permanent basis in the host state and practise under their home state professional title — after three years of effective and regular practice of the law of the host member state, they may become fully integrated into the host state profession without further tests",
+        "C": "Only practise EU law and international law — host state law is inaccessible without full requalification",
+        "D": "Practise only in association with a local lawyer who countersigns all advice"
+      },
+      "correct_answer": "B",
+      "explanation": "Directive 98/5/EC (the Lawyers' Establishment Directive) provides a specific regime for lawyers. A lawyer qualified in one member state may establish themselves on a permanent basis in another member state under their home state professional title (e.g., 'Avocat', 'Solicitor', 'Rechtsanwalt') without any prior test. After three years of effective and regular practice of the law of the host member state (including EU law), they may apply for full integration into the host state profession without further tests or aptitude requirements. Courts of member states may require locally qualified lawyers to assist where host state law procedural rules require such representation. This Directive is a specific expression of Article 49 TFEU rights tailored to the legal profession's particular regulatory framework."
+    },
+    {
+      "id": "EUL_M13_L01_Q10",
+      "question": "In Daily Mail and General Trust plc v HM Treasury [1988] (C-81/87), the CJEU held that a company wishing to transfer its central management out of the UK (without ceasing to be a UK company) could not rely on freedom of establishment to challenge the UK's requirement for Treasury consent before transfer. The significance of Daily Mail is:",
+      "options": {
+        "A": "It established that companies have unrestricted rights to transfer their registered office across member states",
+        "B": "It established that the status, existence, and dissolution of companies (including transfers of seat) are governed by the law of the incorporating state — companies cannot rely on Article 49 to override the rules of the state under whose law they are incorporated when seeking to alter their connecting factor to that state; this is the home state applying its own incorporation law",
+        "C": "It established that freedom of establishment has no application to corporate law matters",
+        "D": "It prohibited all member state requirements for Treasury consent in cross-border transactions"
+      },
+      "correct_answer": "B",
+      "explanation": "Daily Mail established an important limitation: while Article 49 TFEU protects companies from host state restrictions on their establishment, it does not prevent the incorporating (home) state from applying its own company law — including rules governing the company's status, existence, and dissolution — when the company seeks to alter the connecting factors by which its status under that state's law is determined. The case established that EU law does not confer on companies the right to transfer their seat or central administration while retaining their legal status under the incorporating state's law against that state's wishes. This is because company law — including continuity and nationality of a company — is determined by the law of formation. The CJEU later clarified (Cartesio [2008]) that member states can provide for companies to transfer their seat while retaining legal personality — or dissolve upon transfer — as their national law determines."
+    }
+  ],
+  "total_questions": 10
+}

@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module02_Lesson01.txt",
+  "module_number": 2,
+  "module_title": "The Duty of Care",
+  "lesson_number": 1,
+  "lesson_title": "The Duty of Care: Glencar Test, Special Duty Situations, Pure Economic Loss and Negligent Misstatement",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M02_L01_Q01",
+      "question": "In Irish law, which is the authoritative test for establishing a duty of care in negligence?",
+      "options": {
+        "A": "The Glencar test — foreseeability, proximity, and no public policy reason to deny the duty",
+        "B": "The Caparo test — foreseeability, proximity, and fair, just and reasonable",
+        "C": "The Anns two-stage test — reasonable foreseeability plus absence of reasons to limit liability",
+        "D": "The neighbour principle alone, as stated by Lord Atkin in Donoghue v Stevenson [1932]"
+      },
+      "correct_answer": "A",
+      "explanation": "In Ireland, the authoritative test is the Glencar test, established by Keane CJ in Glencar Explorations plc v Mayo County Council [2002] 1 IR 84. It asks: (1) was damage of the relevant type reasonably foreseeable? (2) was there sufficient proximity? (3) is there any public policy reason to deny the duty? FE-1 candidates must not use the English Caparo test."
+    },
+    {
+      "id": "TL_M02_L01_Q02",
+      "question": "What was the revolutionary significance of Lord Atkin's 'neighbour principle' in Donoghue v Stevenson [1932]?",
+      "options": {
+        "A": "It confirmed that a duty of care could only arise within recognised pre-existing categories of relationship",
+        "B": "It established that a duty of care could arise outside any contractual relationship, based on reasonable foreseeability and proximity",
+        "C": "It replaced the Glencar test in Ireland and adopted the English Caparo three-stage approach",
+        "D": "It held that Mrs Donoghue was owed a duty of care under her contract with the café owner"
+      },
+      "correct_answer": "B",
+      "explanation": "The revolutionary aspect of Donoghue v Stevenson [1932] was that Lord Atkin articulated a general principle — the neighbour principle — allowing duties of care to arise between strangers in the complete absence of any contractual relationship. Mrs Donoghue had no contract with the manufacturer, yet the House of Lords held that a duty arose by reason of foreseeability and proximity."
+    },
+    {
+      "id": "TL_M02_L01_Q03",
+      "question": "In which case did the Irish Supreme Court establish a distinct Irish test for duty of care in negligence, separate from the English Caparo approach?",
+      "options": {
+        "A": "Donoghue v Stevenson [1932] AC 562",
+        "B": "Caparo Industries plc v Dickman [1990] 2 AC 605",
+        "C": "Glencar Explorations plc v Mayo County Council [2002] 1 IR 84",
+        "D": "Ward v McMaster [1988] IR 337"
+      },
+      "correct_answer": "C",
+      "explanation": "Glencar Explorations plc v Mayo County Council [2002] 1 IR 84 is the seminal Irish Supreme Court authority on duty of care. Keane CJ articulated the Irish three-limb test — foreseeability, proximity, and no policy reason to deny the duty — and expressly declined to adopt the English Caparo formulation."
+    },
+    {
+      "id": "TL_M02_L01_Q04",
+      "question": "Under the Glencar test, what is the third limb that distinguishes it from the English Caparo test?",
+      "options": {
+        "A": "The plaintiff must positively establish that it is fair, just and reasonable to impose a duty of care",
+        "B": "The defendant must have had a pre-existing relationship with the plaintiff before the act occurred",
+        "C": "The damage must have been a direct result of the defendant's act rather than an omission",
+        "D": "There must be no public policy reason to deny the existence of a duty of care"
+      },
+      "correct_answer": "D",
+      "explanation": "The critical distinction: under Caparo, the plaintiff must affirmatively establish it is 'fair, just and reasonable' to impose a duty. Under Glencar, the court asks whether there is any public policy reason to deny the duty. The burden is different — under Glencar, the absence of a policy reason to deny the duty satisfies the third limb, rather than requiring positive proof of fairness."
+    },
+    {
+      "id": "TL_M02_L01_Q05",
+      "question": "In which 2025 Irish Supreme Court case was it confirmed that the Glencar test applies in public authority cases, with particular attention to the policy limb?",
+      "options": {
+        "A": "Barlow v Minister for Communications [2025]",
+        "B": "Glencar Explorations plc v Mayo County Council [2002] 1 IR 84",
+        "C": "Ward v McMaster [1988] IR 337",
+        "D": "Breslin v Corcoran [2003] 2 IR 203"
+      },
+      "correct_answer": "A",
+      "explanation": "Barlow v Minister for Communications [2025] is the most recent Irish Supreme Court authority on duty of care. It affirmed that the Glencar test governs public authority cases and that, in such cases, the policy limb of the test must be examined with particular care, given the nature of public authority decision-making."
+    },
+    {
+      "id": "TL_M02_L01_Q06",
+      "question": "What is the general rule in Irish tort law regarding omissions — failures to act?",
+      "options": {
+        "A": "There is always a duty to take positive steps to prevent harm to others who are in the defendant's vicinity",
+        "B": "There is no general duty to act to prevent harm to another, even where action would be easy and effective",
+        "C": "A duty to act arises automatically wherever the defendant was in a position to prevent the harm",
+        "D": "A failure to act is treated as equivalent to a positive act for the purposes of negligence liability"
+      },
+      "correct_answer": "B",
+      "explanation": "The general rule in Irish (and English) negligence law is that there is no duty to act — no duty to rescue a stranger in danger, even where intervention would be simple and costless. The rationale is that imposing a general positive duty to act would create an open-ended and unpredictable burden. Exceptions arise only in defined circumstances: assumed responsibility, special relationships, or creation of the dangerous situation."
+    },
+    {
+      "id": "TL_M02_L01_Q07",
+      "question": "In Capital and Counties v Hampshire County Council [1997], on what basis was the fire brigade found liable?",
+      "options": {
+        "A": "The fire brigade had a general statutory duty to attend all fires reported within its area",
+        "B": "The fire brigade had assumed a duty of care simply by attending the fire at the scene",
+        "C": "The fire brigade had actively worsened the situation by switching off the building's sprinkler system",
+        "D": "The fire brigade's failure to bring adequate equipment was an operational rather than a policy decision"
+      },
+      "correct_answer": "C",
+      "explanation": "In Capital and Counties [1997], the English Court of Appeal held that a fire brigade does not generally owe a duty of care simply by attending a fire. However, in one of the joined cases, the brigade became liable because its officers had affirmatively worsened the situation by switching off the sprinkler system. This illustrates the distinction between pure omissions (no duty) and situations where an authority actively makes things worse."
+    },
+    {
+      "id": "TL_M02_L01_Q08",
+      "question": "According to Breslin v Corcoran [2003], what is the general effect of a voluntary, independent criminal act of a third party on a negligence claim?",
+      "options": {
+        "A": "It increases the defendant's proportionate liability as a concurrent wrongdoer",
+        "B": "It has no effect on the causal chain if the defendant's original negligent act created the opportunity",
+        "C": "It converts the defendant's liability from sole to concurrent, reducing their contribution",
+        "D": "It breaks the causal link between the defendant's negligence and the plaintiff's injury"
+      },
+      "correct_answer": "D",
+      "explanation": "In Breslin v Corcoran [2003] 2 IR 203, the Irish Supreme Court confirmed that where a voluntary, independent criminal act of a third party intervenes between the defendant's negligence and the plaintiff's injury, that act will generally break the chain of causation (novus actus interveniens). The defendant's liability is extinguished because the third party's independent act is treated as the effective cause of the harm."
+    },
+    {
+      "id": "TL_M02_L01_Q09",
+      "question": "In Home Office v Dorset Yacht Co [1970], on what basis was the Home Office held liable for damage caused by borstal boys who escaped?",
+      "options": {
+        "A": "The officers had a duty of control over the boys, and their negligent supervision made the escape and resulting damage foreseeable and proximate",
+        "B": "The Home Office had a general statutory liability for all tortious acts committed by persons in its lawful custody",
+        "C": "The boys' acts were treated as acts of the Home Office under the doctrine of vicarious liability",
+        "D": "The Home Office had entered into a contractual duty to protect the yacht owners' property from interference"
+      },
+      "correct_answer": "A",
+      "explanation": "In Home Office v Dorset Yacht Co [1970] AC 1004, the House of Lords held that the borstal officers owed a duty of care because they had assumed a position of control and supervision over the boys, and it was reasonably foreseeable that negligent supervision would create a risk of damage to property in the vicinity. The duty arose from the specific relationship of control, not from a general duty owed to the world."
+    },
+    {
+      "id": "TL_M02_L01_Q10",
+      "question": "What is the general rule in Irish negligence law regarding liability for the independent wrongful acts of third parties?",
+      "options": {
+        "A": "A defendant is always liable for harm caused by a third party if they had any opportunity to prevent it",
+        "B": "A defendant is generally not liable for the independent wrongful acts of a third party that cause harm to the plaintiff",
+        "C": "A defendant is jointly and severally liable with any third party who causes harm in their immediate vicinity",
+        "D": "Third-party liability is automatically imposed wherever there is a pre-existing relationship between defendant and plaintiff"
+      },
+      "correct_answer": "B",
+      "explanation": "The general rule is that a defendant is not liable for the voluntary, independent acts of a third party. Exceptions arise where the defendant: (1) has assumed control over the third party; (2) is in a special position of control; or (3) has in some way facilitated the third party's wrongdoing. These exceptions are narrow and require clear justification."
+    }
+  ]
+}

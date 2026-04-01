@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module02_Lesson05.txt",
+  "module_number": 2,
+  "module_title": "Institutions of the European Union",
+  "lesson_number": 5,
+  "lesson_title": "Democratic Deficit and Institutional Accountability",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EUL_M02_L05_Q01",
+      "question": "The concept of the 'democratic deficit' in EU law refers to:",
+      "options": {
+        "A": "The underfunding of the European Parliament's administrative budget",
+        "B": "The perceived gap between the legislative and executive power exercised by EU institutions and the degree of direct democratic accountability to which those institutions are subject",
+        "C": "The failure of member states to implement EU directives within the prescribed time limits",
+        "D": "The lack of a right to vote in EU elections for citizens of non-member states"
+      },
+      "correct_answer": "B",
+      "explanation": "The democratic deficit refers to the perceived gap between the legislative and executive power exercised by EU institutions and the degree of direct democratic accountability to which those institutions are subject. It identifies structural features of the EU's institutional architecture that depart from standard national democratic norms — including the Commission's legislative initiative monopoly, Council opacity in sensitive areas, and the absence of a single European demos."
+    },
+    {
+      "id": "EUL_M02_L05_Q02",
+      "question": "The 'legislative initiative monopoly' as a source of democratic deficit refers to:",
+      "options": {
+        "A": "The European Parliament's sole right to propose amendments to Commission legislative proposals",
+        "B": "The Commission's exclusive right of legislative initiative — meaning neither the Parliament nor the Council can introduce legislation without a Commission proposal",
+        "C": "The Council's power to veto all Commission proposals in areas requiring unanimity",
+        "D": "The Court of Justice's power to strike down legislation that violates Treaty provisions"
+      },
+      "correct_answer": "B",
+      "explanation": "The Commission holds the exclusive right of legislative initiative in the EU. Neither the European Parliament nor the Council can introduce legislation without a Commission proposal. The Commission is an appointed, not directly elected, body — Commissioners are nominated by governments and approved by the Parliament, but lack a direct democratic mandate of their own. When the Commission sets the EU's legislative agenda as a technocratic body, it does so without the direct democratic accountability of a cabinet government in a national system."
+    },
+    {
+      "id": "EUL_M02_L05_Q03",
+      "question": "What is a 'demos' in the context of the democratic deficit debate?",
+      "options": {
+        "A": "A formal democratic procedure for EU treaty amendment",
+        "B": "The collective political people whose shared identity and political culture provide the foundation for democratic government",
+        "C": "A type of EU legislative act requiring unanimous Council approval",
+        "D": "The European Parliament's committee responsible for democratic oversight"
+      },
+      "correct_answer": "B",
+      "explanation": "A 'demos' is the collective political people whose shared identity and shared political culture provide the foundation for democratic government. Critics of the EU argue that there is no single European demos — no single European people in this constitutional sense. The EU's 27 member states have 24 official languages, distinct political cultures, and different constitutional traditions. European Parliament elections are contested on national party lines, about national political issues, with national media coverage, making it difficult to identify a genuinely European democratic community."
+    },
+    {
+      "id": "EUL_M02_L05_Q04",
+      "question": "The 'citizens' initiative' introduced by the Lisbon Treaty under Article 11(4) TEU allows:",
+      "options": {
+        "A": "One million EU citizens from at least seven member states to invite the Commission to bring forward a legislative proposal",
+        "B": "Any EU citizen to bring a direct action before the Court of Justice against any EU institution",
+        "C": "One million EU citizens to petition the Council directly to amend Treaty provisions",
+        "D": "Citizens from any one member state to veto a Commission legislative proposal"
+      },
+      "correct_answer": "A",
+      "explanation": "Article 11(4) TEU provides that not less than one million EU citizens, coming from a significant number of member states (at least seven), may invite the Commission to submit a proposal on matters where they consider EU action is necessary. The Commission must respond and give reasons if it declines to act. Several successful citizens' initiatives have been organised, including one on water services. However, this mechanism falls short of a genuine binding popular initiative — the Commission retains the final decision on whether to proceed."
+    },
+    {
+      "id": "EUL_M02_L05_Q05",
+      "question": "Under Protocol No. 2 on subsidiarity and proportionality, what occurs when one-third of national parliaments issue reasoned opinions objecting to a Commission proposal?",
+      "options": {
+        "A": "The proposal is automatically rejected and the Commission must withdraw it",
+        "B": "The Commission must review the proposal — this is known as the 'yellow card' procedure",
+        "C": "The Council must vote on whether to proceed, requiring a qualified majority",
+        "D": "The proposal is referred to the Court of Justice for a subsidiarity assessment"
+      },
+      "correct_answer": "B",
+      "explanation": "Under Protocol No. 2 on subsidiarity and proportionality, national parliaments have eight weeks to issue reasoned opinions objecting to Commission proposals on subsidiarity grounds. If one-third of national parliaments submit objections, the Commission must review the proposal — this is the 'yellow card.' If a majority of national parliaments submit objections, the 'orange card' is triggered, requiring the Commission to consider and justify its position before the Parliament and Council. This mechanism provides a channel for national democratic scrutiny of EU legislation."
+    },
+    {
+      "id": "EUL_M02_L05_Q06",
+      "question": "The 2005 rejection of the Constitutional Treaty by French and Dutch voters is cited in the democratic deficit debate because:",
+      "options": {
+        "A": "It demonstrated that EU institutions had no legal basis to propose a constitution",
+        "B": "It was partly a protest against perceived EU remoteness and unaccountability, underlining the significance of the democratic deficit critique",
+        "C": "It showed that national parliaments, not citizens, should ratify EU Treaties",
+        "D": "It led directly to the dissolution of the European Parliament"
+      },
+      "correct_answer": "B",
+      "explanation": "The 2005 rejection of the Constitutional Treaty by French and Dutch voters — both founding EU member states — is a significant event in the democratic deficit debate. The 'No' votes were partly a protest against perceived EU remoteness, unaccountability, and the pace of integration. The Constitutional Treaty was subsequently abandoned and replaced by the Lisbon Treaty (which did not require referendum ratification in most states). Brexit also drew heavily on sovereignty and democratic deficit arguments, as did the rise of Eurosceptic parties across the EU."
+    },
+    {
+      "id": "EUL_M02_L05_Q07",
+      "question": "The progressive empowerment of the European Parliament is the EU's most significant structural response to the democratic deficit. Which legislative procedure was introduced by the Lisbon Treaty as the primary EU legislative process?",
+      "options": {
+        "A": "The consultation procedure",
+        "B": "The cooperation procedure",
+        "C": "The ordinary legislative procedure (formerly co-decision)",
+        "D": "The assent procedure"
+      },
+      "correct_answer": "C",
+      "explanation": "The ordinary legislative procedure (formerly known as co-decision, introduced by the Maastricht Treaty and expanded under Amsterdam and Nice) was enshrined by the Lisbon Treaty as the primary EU legislative process. Under this procedure, the European Parliament is a co-equal legislator with the Council — both must agree on the text of legislation. This is the most significant structural reform addressing the democratic deficit, transforming the Parliament from a consultative body into a genuine co-legislator for most EU law."
+    },
+    {
+      "id": "EUL_M02_L05_Q08",
+      "question": "Andrew Moravcsik's 'compound democracy' argument challenges the democratic deficit critique by contending that:",
+      "options": {
+        "A": "The EU should be abolished because it is irredeemably undemocratic",
+        "B": "The EU predominantly operates in areas of technical regulation where expert insulation from direct political pressure is a virtue, and its political decisions are made by directly elected heads of government at European Council level",
+        "C": "The democratic deficit can be eliminated only by giving the European Parliament the right of legislative initiative",
+        "D": "EU legitimacy depends entirely on member state ratification of all EU legislation"
+      },
+      "correct_answer": "B",
+      "explanation": "Andrew Moravcsik argues that the democratic deficit is overstated. He contends that the EU predominantly operates in areas of technical regulation — monetary policy, competition regulation, pharmaceutical approvals, food safety — where expert insulation from direct political pressure is not a defect but a virtue. National democracies also delegate such functions to independent regulators. Moreover, the EU's political decisions — taken at European Council level — involve directly elected heads of government and are legitimated through national democratic processes. This is the 'compound democracy' argument: combining supranational and national forms of accountability."
+    },
+    {
+      "id": "EUL_M02_L05_Q09",
+      "question": "Transparency measures in the EU's institutional framework require which of the following?",
+      "options": {
+        "A": "All Council deliberations to be broadcast live on EU television",
+        "B": "The Council to vote in public when legislating, the Commission to maintain a register of lobbyists, and Commissioners to undergo public hearings before the Parliament",
+        "C": "All Commission communications to be translated into all 24 official languages within 24 hours",
+        "D": "Members of the European Parliament to publish all correspondence with lobbyists"
+      },
+      "correct_answer": "B",
+      "explanation": "Successive treaty revisions and institutional reforms have introduced transparency measures including: the requirement that the Council votes in public when exercising its legislative functions; the European Parliament's public hearings of Commissioner nominees before approval; and the Commission's register of lobbyists and obligation to conduct wide public consultation before proposing legislation. While these measures do not eliminate opacity — particularly in informal trilogues between Parliament, Council, and Commission — they improve the visibility of EU decision-making and are part of the EU's response to the democratic deficit."
+    },
+    {
+      "id": "EUL_M02_L05_Q10",
+      "question": "The democratic deficit critique has particular force in relation to EU economic governance because:",
+      "options": {
+        "A": "The European Central Bank publishes its interest rate decisions without explanation",
+        "B": "EU economic governance, particularly in the eurozone, has required member states to accept fiscal constraints and structural adjustment conditions with limited democratic contest, as seen during the Irish and Greek financial crises",
+        "C": "The Commission sets EU tax rates without any consultation with national parliaments",
+        "D": "The European Parliament has no role in approving the EU's multi-annual financial framework"
+      },
+      "correct_answer": "B",
+      "explanation": "The most substantive critique of the democratic deficit concerns EU economic governance — particularly in the eurozone. During the financial crisis, Ireland, Greece, and other states were required to accept fiscal constraints, austerity programmes, and structural adjustment conditions as conditions of financial assistance. These conditions were imposed through mechanisms such as the Troika (Commission, ECB, and IMF), with very limited opportunity for democratic contest at either national or European level. This experience exposed the tension between supranational economic governance and democratic accountability most acutely."
+    }
+  ]
+}

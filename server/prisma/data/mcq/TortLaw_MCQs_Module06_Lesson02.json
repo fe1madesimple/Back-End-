@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module06_Lesson02.txt",
+  "module_number": 6,
+  "module_title": "Psychiatric Injury",
+  "lesson_number": 2,
+  "lesson_title": "Psychiatric Injury: Secondary Victims and the Kelly v Hennessy Test",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M06_L02_Q01",
+      "question": "What is a 'secondary victim' in the law of psychiatric injury?",
+      "options": {
+        "A": "A person who suffers physical injury in addition to psychiatric injury in the same incident",
+        "B": "A person who suffers psychiatric injury not because they were in the zone of physical danger themselves, but because they witnessed or learned of the death or serious injury of another person",
+        "C": "A person who suffers psychiatric injury as a result of witnessing damage to their property",
+        "D": "A person who is indirectly involved in litigation as a witness rather than a party"
+      },
+      "correct_answer": "B",
+      "explanation": "A secondary victim is a person who was not themselves in the zone of physical danger but who suffers a recognised psychiatric illness as a result of witnessing — or learning of — the death or serious injury of another person. The law applies more restrictive rules to secondary victims than to primary victims because of the potential for a vast range of claimants and the risk of indeterminate liability."
+    },
+    {
+      "id": "TL_M06_L02_Q02",
+      "question": "In Alcock v Chief Constable of South Yorkshire Police [1992], which disaster gave rise to the secondary victim claims?",
+      "options": {
+        "A": "The Zeebrugge ferry disaster of 1987",
+        "B": "The Hillsborough stadium disaster of 1989, in which ninety-six people were crushed to death",
+        "C": "The Kings Cross fire of 1987",
+        "D": "The Lockerbie air disaster of 1988"
+      },
+      "correct_answer": "B",
+      "explanation": "Alcock v Chief Constable of South Yorkshire Police [1992] AC 310 arose from the Hillsborough stadium disaster of April 1989, in which ninety-six football supporters were killed and hundreds injured in a crush at the stadium. Many relatives and friends of the victims brought claims for psychiatric injury as secondary victims. The House of Lords dismissed those claims and articulated the English three-part test for secondary victim liability."
+    },
+    {
+      "id": "TL_M06_L02_Q03",
+      "question": "What are the three control mechanisms for secondary victim claims under the English Alcock test?",
+      "options": {
+        "A": "Proximity in time; expert diagnosis; foreseeability of the psychiatric illness",
+        "B": "Close tie of love and affection with the primary victim; proximity to the accident in time and space; perception through the plaintiff's own unaided senses",
+        "C": "Physical presence at the scene; professional medical diagnosis; absence of pre-existing psychiatric condition",
+        "D": "Immediate family relationship; same location as primary victim; direct visual perception only"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the English Alcock test, a secondary victim must satisfy three control mechanisms: (1) a close tie of love and affection with the primary victim — spouses and parents are presumed to have this, but others must prove it; (2) proximity to the accident in time and space — the plaintiff must have been present at the scene or its immediate aftermath; and (3) perception through the plaintiff's own unaided senses — they must have seen or heard the event, not learned of it via a third party or television."
+    },
+    {
+      "id": "TL_M06_L02_Q04",
+      "question": "Why is the Alcock test NOT the correct test to apply in an FE-1 Tort Law answer on secondary victim psychiatric injury?",
+      "options": {
+        "A": "Because the Alcock test has been abolished by statute in Ireland",
+        "B": "Because Ireland has its own distinct test set out in Kelly v Hennessy [1995], which differs from Alcock in important respects",
+        "C": "Because Alcock only applies to catastrophic disasters and not to individual road traffic accidents",
+        "D": "Because the Alcock test requires a jury determination and Ireland has abolished civil juries in tort cases"
+      },
+      "correct_answer": "B",
+      "explanation": "FE-1 candidates must apply the Irish test from Kelly v Hennessy [1995] 3 IR 253, not the English Alcock test. Ireland has its own Supreme Court authority on secondary victim psychiatric injury which differs from Alcock in important respects — particularly in relation to the requirements of presence at the scene and perception through unaided senses. Using English law where Irish law differs is a serious exam error."
+    },
+    {
+      "id": "TL_M06_L02_Q05",
+      "question": "In Kelly v Hennessy [1995] 3 IR 253, who was the plaintiff and what were the facts?",
+      "options": {
+        "A": "Mr Kelly, who witnessed his wife and daughters being struck by a car while he was walking beside them",
+        "B": "Mrs Kelly, who suffered post-traumatic stress disorder after learning of the serious injuries to her husband and daughters in a car accident caused by the defendant's negligence, having not been present at the scene",
+        "C": "A nurse named Kelly who developed psychiatric illness after treating the victims of a road accident",
+        "D": "A bystander named Kelly who witnessed a fatal road accident involving strangers"
+      },
+      "correct_answer": "B",
+      "explanation": "In Kelly v Hennessy [1995] 3 IR 253, Mrs Kelly suffered post-traumatic stress disorder after being informed that her husband and daughters had been seriously injured in a road accident caused by the defendant's negligence. She had not been present at the scene of the accident. She went to the hospital and witnessed the condition of her injured family members. The Irish Supreme Court, with Finlay CJ delivering judgment, allowed her claim and set out the Irish test for secondary victim psychiatric injury."
+    },
+    {
+      "id": "TL_M06_L02_Q06",
+      "question": "What are the four requirements under the Kelly v Hennessy test for a secondary victim to succeed in a psychiatric injury claim?",
+      "options": {
+        "A": "Foreseeability, proximity, causation, and policy",
+        "B": "Physical presence at the scene, expert evidence, medical treatment, and close family relationship",
+        "C": "A recognisable psychiatric illness; the illness was shock-induced; a causal link between the negligent act and the illness; a close and proximate relationship of love and affection with the primary victim",
+        "D": "A sudden event, physical symptoms, a written medical report, and notification to the defendant"
+      },
+      "correct_answer": "C",
+      "explanation": "Under Kelly v Hennessy [1995], a secondary victim must establish: (1) that they suffered a recognisable psychiatric illness — mere grief, distress, or sorrow does not suffice; (2) that the illness was shock-induced — caused by a sudden, violent, or horrifying event rather than by the gradual accumulation of distressing news; (3) that there is a causal link between the defendant's negligent act, the peril of the primary victim, and the plaintiff's psychiatric illness; and (4) that the plaintiff had a close and proximate relationship of love and affection with the primary victim."
+    },
+    {
+      "id": "TL_M06_L02_Q07",
+      "question": "In what key respect does the Irish Kelly v Hennessy test differ from the English Alcock test?",
+      "options": {
+        "A": "The Kelly v Hennessy test requires expert psychiatric evidence; the Alcock test does not",
+        "B": "The Kelly v Hennessy test does not strictly require presence at the accident scene or perception through unaided senses, whereas Alcock imposes both requirements",
+        "C": "The Kelly v Hennessy test is more restrictive than Alcock in relation to who qualifies as a close relative",
+        "D": "The Kelly v Hennessy test applies a higher threshold for the psychiatric illness requirement than Alcock"
+      },
+      "correct_answer": "B",
+      "explanation": "The critical difference is that the Kelly v Hennessy test does not impose the strict Alcock requirements of presence at the scene or in its immediate aftermath, or perception through the plaintiff's own unaided senses. In Kelly v Hennessy itself, Mrs Kelly was not present at the accident — she learned of it and went to the hospital. The Supreme Court allowed her claim, holding that the shock caused by what she witnessed at the hospital was sufficient. The Irish test is therefore more flexible than Alcock on these proximity requirements, while remaining equally strict on the need for a recognisable psychiatric illness caused by a sudden shocking event."
+    },
+    {
+      "id": "TL_M06_L02_Q08",
+      "question": "The 'shock requirement' in Kelly v Hennessy demands that the psychiatric illness be caused by a specific type of event. What is that requirement?",
+      "options": {
+        "A": "The illness must have been caused by a negligent act of the defendant that occurred within the plaintiff's view",
+        "B": "The illness must have been caused by a sudden, violent, or horrifying event — not by the gradual accumulation of distressing news or the stress of caring for an injured relative",
+        "C": "The illness must have been caused by a single traumatic event and not by any series of incidents over time",
+        "D": "The illness must have been diagnosed within six months of the traumatic event"
+      },
+      "correct_answer": "B",
+      "explanation": "The shock requirement under Kelly v Hennessy demands that the psychiatric illness be caused by a sudden, shocking event — a sudden, violent, or horrifying realisation. It cannot be satisfied where the psychiatric illness results from the gradual stress of caring for an injured relative, the slow deterioration of a loved one's condition over time, or the accumulated distress of a prolonged difficult experience. The suddenness and horror of the event is what gives rise to the compensable shock."
+    },
+    {
+      "id": "TL_M06_L02_Q09",
+      "question": "In Curran v Cadbury (Ireland) Ltd [2000] (High Court), what type of psychiatric injury claim was rejected as falling outside the secondary victim rules?",
+      "options": {
+        "A": "A claim by a bystander who witnessed a workplace accident but had no relationship with the injured worker",
+        "B": "A claim based on psychiatric illness caused by the gradual impact of caring for an injured relative, rather than by the initial shock of a sudden event",
+        "C": "A claim by a secondary victim who could not produce expert psychiatric evidence of their condition",
+        "D": "A claim where the primary victim had not suffered physical injury, only psychiatric harm"
+      },
+      "correct_answer": "B",
+      "explanation": "In Curran v Cadbury (Ireland) Ltd [2000], the Irish High Court confirmed that psychiatric illness caused by the gradual impact of caring for an injured person — as opposed to the initial shock of a sudden horrifying event — does not qualify under the secondary victim rules in Kelly v Hennessy. The shock requirement is strictly applied: the illness must flow from the sudden traumatic realisation, not from the ongoing burden of caring for an injured family member over time."
+    },
+    {
+      "id": "TL_M06_L02_Q10",
+      "question": "Does Irish law require a secondary victim to have been present at the accident scene to recover for psychiatric injury?",
+      "options": {
+        "A": "Yes — Irish law follows Alcock and requires presence at the scene or its immediate aftermath",
+        "B": "No — under Kelly v Hennessy, there is no strict requirement of presence at the scene, provided the other requirements are satisfied and the shock arose from a sudden event",
+        "C": "Yes — but presence at the hospital qualifies as the immediate aftermath of the accident under Irish law",
+        "D": "No — under Irish law, learning of a relative's death by telephone is sufficient for a secondary victim claim"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the Irish Kelly v Hennessy test, there is no strict requirement that the plaintiff be present at the accident scene or its immediate aftermath. In Kelly v Hennessy itself, Mrs Kelly was not at the accident — she went to the hospital. The Supreme Court still allowed the claim. The Irish test is more flexible on presence than the English Alcock test, focusing instead on whether the illness was shock-induced and arose from a close and loving relationship with the primary victim. However, the court did allow the hospital visit to constitute the source of the shocking event."
+    }
+  ]
+}

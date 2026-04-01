@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module13_Lesson02.txt",
+  "module_number": 13,
+  "module_title": "Defences in Tort",
+  "lesson_number": 2,
+  "lesson_title": "Volenti Non Fit Injuria and Limitation of Actions",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M13_L02_Q01",
+      "question": "What does the Latin maxim 'volenti non fit injuria' mean, and what is its legal effect?",
+      "options": {
+        "A": "No injury is done to those who ask for it — the plaintiff's contributory negligence reduces their damages",
+        "B": "To one who consents, no injury is done — the defence is a complete bar to recovery where the plaintiff with full knowledge of a risk freely and voluntarily accepted that risk",
+        "C": "A willing plaintiff cannot recover — the defence reduces damages proportionately to the degree of the plaintiff's consent",
+        "D": "Voluntary participation in risk excuses the defendant from all duty of care"
+      },
+      "correct_answer": "B",
+      "explanation": "Volenti non fit injuria means 'to one who consents, no injury is done.' It is the defence of voluntary assumption of risk. Where a plaintiff, with full knowledge of a specific risk, freely and voluntarily accepted that risk and was subsequently injured by its materialisation, the defence operates as a complete bar to recovery. Unlike contributory negligence — which merely reduces the damages — volenti is an absolute defence that extinguishes the claim entirely."
+    },
+    {
+      "id": "TL_M13_L02_Q02",
+      "question": "What are the three requirements that must be established for the volenti defence to succeed?",
+      "options": {
+        "A": "Physical presence at the risk; contractual agreement to waive liability; and actual harm suffered",
+        "B": "Knowledge of the specific risk; free and genuine consent to assume that risk; and consent extending to the legal risk of having no claim if injured",
+        "C": "Written agreement; independent legal advice; and signature of a formal disclaimer",
+        "D": "Foreseeability of the risk; reasonable precautions taken; and the plaintiff's deliberate exposure to the risk"
+      },
+      "correct_answer": "B",
+      "explanation": "Three requirements must be established for volenti to succeed: (1) the plaintiff had knowledge of the specific risk that materialised — not a vague awareness of danger generally, but awareness of the particular risk; (2) the plaintiff freely consented to assume that risk — there must be genuine freedom of choice; and (3) the consent must extend to the legal risk — the plaintiff must have consented not merely to the physical risk of injury but to the legal risk of having no claim if injured. The third requirement makes volenti very difficult to establish."
+    },
+    {
+      "id": "TL_M13_L02_Q03",
+      "question": "In Smith v Baker and Sons [1891], a workman continued working in a quarry where cranes regularly swung rocks overhead. He was injured when a rock fell. Why did the House of Lords reject the volenti defence?",
+      "options": {
+        "A": "The workman had not been given adequate warning of the risk by his employer",
+        "B": "Knowing of the risk was not the same as consenting to the legal risk — mere knowledge does not constitute volenti",
+        "C": "The employer was strictly liable for workplace injuries and no defence was available",
+        "D": "The risk was unforeseeable and therefore the volenti defence cannot apply to unforeseeable risks"
+      },
+      "correct_answer": "B",
+      "explanation": "In Smith v Baker and Sons [1891] AC 325, the House of Lords rejected the volenti defence despite the workman's knowledge of the risk. The court held that mere knowledge of a risk is not the same as consenting to bear the legal consequences of that risk. The workman knew cranes occasionally swung rocks overhead — but this knowledge alone did not demonstrate that he had consented to give up his right to claim compensation if injured. Volenti requires consent to the legal risk, not just awareness of the physical risk."
+    },
+    {
+      "id": "TL_M13_L02_Q04",
+      "question": "Why does the volenti defence rarely succeed in employer-employee cases?",
+      "options": {
+        "A": "The Civil Liability Act 1961 expressly prohibits the volenti defence in employment-related claims",
+        "B": "Economic compulsion limits the genuine freedom of the employee's choice — an employee who faces the alternatives of working in dangerous conditions or losing their job cannot truly be said to have freely and voluntarily consented",
+        "C": "Employers always owe a non-delegable duty of care that cannot be waived by the employee's consent",
+        "D": "Irish courts apply a statutory presumption that employees never consent to workplace risks"
+      },
+      "correct_answer": "B",
+      "explanation": "Volenti rarely succeeds in employment cases because economic compulsion fundamentally undermines the element of genuine freedom of choice. An employee who faces the alternatives of working in dangerous conditions or losing their livelihood cannot be said to have freely and voluntarily assumed the risk — their 'consent' is extracted by economic necessity rather than genuine free choice. Irish courts have been reluctant to apply the defence in the workplace context for precisely this reason."
+    },
+    {
+      "id": "TL_M13_L02_Q05",
+      "question": "Why does the volenti defence generally fail in rescue cases?",
+      "options": {
+        "A": "Rescuers are always primary victims of psychiatric injury and attract special protection",
+        "B": "The emergency that necessitated the rescue negated genuine free choice — a rescuer responding to peril created by the defendant's negligence is not truly acting voluntarily",
+        "C": "Irish statute expressly preserves a rescuer's right to claim regardless of their voluntary entry into danger",
+        "D": "Rescue cases are governed by the assumption of responsibility principle which overrides volenti"
+      },
+      "correct_answer": "B",
+      "explanation": "In rescue cases, the courts hold that the rescuer was not truly volenti because the emergency situation negated genuine free choice. The imperative to save life or prevent serious harm removes the genuinely voluntary character from the rescuer's act. A person who enters a burning building to save a child is not exercising a calm, free, rational choice to accept legal risk — they are responding to an urgent imperative created by the defendant's negligence. The emergency qualifies the freedom of their 'consent.'"
+    },
+    {
+      "id": "TL_M13_L02_Q06",
+      "question": "Under which provision of the Civil Liability Act 1961 is the defence of volenti expressly preserved?",
+      "options": {
+        "A": "Section 11 — concurrent wrongdoers",
+        "B": "Section 34(1)(b) — preservation of the volenti defence for plaintiffs who have agreed to waive their legal rights in respect of a risk",
+        "C": "Section 35 — apportionment of liability",
+        "D": "Section 48 — survival of causes of action"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 34(1)(b) of the Civil Liability Act 1961 expressly preserves the defence of volenti — a plaintiff who has agreed to waive their legal rights in respect of a risk takes subject to that agreement. However, the courts scrutinise such agreements carefully, particularly where they purport to exclude liability for personal injury. An agreement must satisfy all the elements of the volenti defence — including genuine free consent and consent to the legal risk — to operate as a complete bar."
+    },
+    {
+      "id": "TL_M13_L02_Q07",
+      "question": "What is the general limitation period for personal injury claims in Irish law under the Statute of Limitations (Amendment) Act 1991?",
+      "options": {
+        "A": "Six years from the date of the accrual of the cause of action",
+        "B": "Three years from the date of the injury",
+        "C": "Two years from the date of accrual of the cause of action or the date of knowledge, whichever is later",
+        "D": "One year from the date of accrual, with a discretionary extension of one further year"
+      },
+      "correct_answer": "C",
+      "explanation": "Under section 3 of the Statute of Limitations (Amendment) Act 1991, the limitation period for personal injury claims caused by negligence, nuisance, or breach of duty is two years from the date of accrual of the cause of action, or from the date of knowledge — whichever is the later. The 'date of knowledge' provision is particularly significant in latent injury cases, postponing the running of time until the plaintiff knew — or ought reasonably to have known — that they had suffered a significant injury attributable to the defendant."
+    },
+    {
+      "id": "TL_M13_L02_Q08",
+      "question": "What is the 'date of knowledge' test in the context of the limitation period for personal injury claims?",
+      "options": {
+        "A": "The date on which the defendant first became aware of the plaintiff's injury",
+        "B": "The date on which the plaintiff knew, or ought reasonably to have known, that they had suffered a significant injury attributable to the act or omission of the defendant",
+        "C": "The date on which the plaintiff first consulted a solicitor about their claim",
+        "D": "The date on which medical evidence first confirmed the link between the defendant's act and the plaintiff's injury"
+      },
+      "correct_answer": "B",
+      "explanation": "The date of knowledge is the date on which the plaintiff knew — or ought reasonably to have known — that they had suffered a significant injury that was attributable to the act or omission of the defendant. This provision is designed to protect plaintiffs with latent conditions — such as industrial diseases — who may not become aware of the cause-and-effect relationship between their exposure and their illness until many years after the relevant exposure. The limitation period does not begin to run until the plaintiff has, or ought to have, this knowledge."
+    },
+    {
+      "id": "TL_M13_L02_Q09",
+      "question": "What is the general limitation period for tort actions not involving personal injury in Irish law under the Statute of Limitations 1957?",
+      "options": {
+        "A": "Two years from accrual",
+        "B": "Three years from accrual",
+        "C": "Six years from accrual",
+        "D": "One year from accrual"
+      },
+      "correct_answer": "C",
+      "explanation": "The general limitation period for tort actions not involving personal injury — including property damage and most nuisance claims — is six years from the date of accrual of the cause of action under the Statute of Limitations 1957. This contrasts with the two-year period for personal injury claims under the 1991 Act and the one-year period for defamation under the Defamation Act 2009. Candidates must know all three limitation periods and apply the correct one to the facts of each question."
+    },
+    {
+      "id": "TL_M13_L02_Q10",
+      "question": "What is the limitation period for defamation actions, and under which statute is it found?",
+      "options": {
+        "A": "Six years under the Statute of Limitations 1957",
+        "B": "Two years under the Statute of Limitations (Amendment) Act 1991",
+        "C": "One year from the date of publication under section 38 of the Defamation Act 2009, with a discretionary extension of up to one further year",
+        "D": "Three years under the Defamation Act 2009, reduced from the former six-year period"
+      },
+      "correct_answer": "C",
+      "explanation": "The limitation period for defamation actions is one year from the date of publication, under section 38 of the Defamation Act 2009. This was reduced from the former three-year period. The court has a discretionary jurisdiction to extend the period by up to one further year where it is just and equitable to do so. This short period reflects the desirability of resolving defamation disputes promptly and preventing the use of extended litigation threats as a tool of suppression."
+    }
+  ]
+}

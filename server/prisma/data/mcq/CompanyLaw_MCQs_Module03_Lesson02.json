@@ -1,0 +1,131 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module03_Lesson02.txt",
+  "module_number": 3,
+  "module_title": "Corporate Authority",
+  "lesson_number": 2,
+  "lesson_title": "The Indoor Management Rule (Turquand Rule)",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "The Indoor Management Rule was established in Royal British Bank v Turquand [1856]. Its essential effect is that:",
+      "options": {
+        "A": "A director who acts without board authority is personally liable on contracts",
+        "B": "An outsider dealing with a company in good faith is entitled to assume that all internal procedures have been duly complied with, even if they have not",
+        "C": "A company is always bound by contracts entered into by its directors",
+        "D": "Third parties are deemed to have constructive notice of all resolutions filed with the CRO"
+      },
+      "correct_answer": "B",
+      "explanation": "Royal British Bank v Turquand (1856) 6 E&B 327 established the Indoor Management Rule: a third party dealing with a company in good faith can assume that internal requirements (such as a resolution authorising a borrowing) have been complied with. The outsider need not verify compliance with internal procedures — that is a matter for the company’s internal management."
+    },
+    {
+      "id": 2,
+      "question": "In Freeman & Lockyer v Buckhurst Park Properties [1964], Diplock LJ identified the elements required to establish apparent (ostensible) authority. Which of the following is NOT one of those elements?",
+      "options": {
+        "A": "A representation by a person with actual authority that the agent has authority to act",
+        "B": "Reliance on that representation by the third party",
+        "C": "Alteration of the third party’s position in reliance on the representation",
+        "D": "Written confirmation of the agent’s authority in the form of a board resolution"
+      },
+      "correct_answer": "D",
+      "explanation": "In Freeman & Lockyer v Buckhurst Park Properties [1964] 2 QB 480, Diplock LJ identified three elements of apparent authority: (i) a representation by a person with actual authority; (ii) reliance by the third party; (iii) alteration of the third party’s position in reliance. A written board resolution is not a requirement — apparent authority arises from conduct and representation, not necessarily written authority."
+    },
+    {
+      "id": 3,
+      "question": "In Hely-Hutchinson v Brayhead Ltd [1968], the managing director bound the company by giving personal guarantees on its behalf without formal board authorisation. The Court of Appeal held the company was bound because:",
+      "options": {
+        "A": "The MD had express authority under the constitution to give personal guarantees",
+        "B": "The board of directors knew of and acquiesced in the MD acting as chief executive, giving him implied actual authority to give guarantees in the ordinary course of management",
+        "C": "Section 40 CA 2014 automatically applied to bind the company",
+        "D": "The Indoor Management Rule meant all internal limits on the MD’s authority were irrelevant to the third party"
+      },
+      "correct_answer": "B",
+      "explanation": "Hely-Hutchinson v Brayhead Ltd [1968] 1 QB 549 confirmed that implied actual authority arises from the board’s conduct in allowing the managing director to act as the effective chief executive. By acquiescing in the MD acting without formal authorisation, the board implicitly authorised his acts. This is actual authority — implied from conduct, not express authority."
+    },
+    {
+      "id": 4,
+      "question": "The Indoor Management Rule does NOT protect a third party where:",
+      "options": {
+        "A": "The third party is a large corporation capable of due diligence",
+        "B": "The third party is an insider — such as a director or officer of the company — who was aware or ought to have been aware of the procedural defect",
+        "C": "The contract was for an amount exceeding €100,000",
+        "D": "The company’s constitution is publicly available on the CRO register"
+      },
+      "correct_answer": "B",
+      "explanation": "A key exception to the Indoor Management Rule is that it does not protect an insider — a person who, by reason of their position within the company, knew or ought to have known that the internal requirement had not been met. An officer dealing with their own company cannot shelter behind the Turquand rule to enforce an act they knew was procedurally defective."
+    },
+    {
+      "id": 5,
+      "question": "A company secretary signs a cheque in the company’s name for a large sum. The payee relies on the secretary’s apparent authority. Under modern Irish company law (and applying the reasoning in Freeman & Lockyer), the payee is most likely to:",
+      "options": {
+        "A": "Succeed — a company secretary generally has apparent authority to sign cheques in the ordinary course of company business",
+        "B": "Fail — a company secretary has no authority to enter financial transactions on behalf of the company",
+        "C": "Succeed — all employees have apparent authority to bind the company to contracts up to €10,000",
+        "D": "Fail — only the managing director or CEO has authority to sign cheques above €1,000"
+      },
+      "correct_answer": "B",
+      "explanation": "A company secretary has administrative authority — to file documents, conduct correspondence, and carry out procedural matters. They do not generally have authority to execute financial transactions or contracts on behalf of the company. Unless there has been a specific holding out (representation of authority) by a person with actual authority, the payee cannot rely on apparent authority of the secretary for a large financial transaction."
+    },
+    {
+      "id": 6,
+      "question": "Section 40 CA 2014 (formerly section 8 European Communities (Companies) Regulations 1973) modifies the Indoor Management Rule by providing that:",
+      "options": {
+        "A": "Third parties are no longer bound by the doctrine of constructive notice of the company’s constitution",
+        "B": "Third parties dealing in good faith cannot rely on restrictions on directors’ authority in the constitution to defeat their claim",
+        "C": "Directors’ authority is unlimited under any circumstances",
+        "D": "Both A and B are correct"
+      },
+      "correct_answer": "D",
+      "explanation": "Section 40 CA 2014 has two related effects: (i) it abolishes the doctrine of constructive notice of the constitution for third parties dealing in good faith (so a party need not read the constitution); and (ii) the company cannot rely on limitations in the constitution on directors’ authority to deny a contract to a third party acting in good faith. Both propositions are part of the S40 regime."
+    },
+    {
+      "id": 7,
+      "question": "Bridget is the sole director and majority shareholder of Fasttrack Ltd. Without board or shareholder approval, she sells the company warehouse to her brother for €1. Her brother argues the sale is valid because he had no knowledge of the procedural defect. Which exception to the Indoor Management Rule applies here?",
+      "options": {
+        "A": "The forgery exception — the contract is a sham and is void",
+        "B": "The insider exception — Bridget’s brother is a connected person who, as family member of the sole director, ought reasonably to have been aware of the absence of proper corporate approvals",
+        "C": "The Turquand rule fully protects him as he was not a director",
+        "D": "Section 40 CA 2014 automatically validates the contract as the brother acted in good faith"
+      },
+      "correct_answer": "B",
+      "explanation": "The insider exception operates where the counterparty had actual or constructive knowledge that internal procedures were not complied with. A brother of the sole director purchasing the company’s only asset for €1 would reasonably be expected to know that no proper approval was obtained. Additionally, this transaction engages S238 (substantial non-cash asset transaction requiring independent member approval), further undermining the brother’s position."
+    },
+    {
+      "id": 8,
+      "question": "A bank officer discovers, on examining a company’s constitution, that a borrowing resolution is required before any loan above €50,000 can be advanced. The bank advances €80,000 without obtaining the resolution. The company later seeks to avoid repayment. Under Irish law:",
+      "options": {
+        "A": "The bank cannot recover — it had actual knowledge of the constitutional requirement and cannot rely on S40 or the Turquand rule",
+        "B": "The bank recovers because all third parties are protected regardless of actual knowledge",
+        "C": "The bank recovers if it can show the resolution was in fact passed even after the advance",
+        "D": "The company is only entitled to reduce the debt to €50,000 — the amount authorised"
+      },
+      "correct_answer": "A",
+      "explanation": "Both section 40 CA 2014 and the Turquand rule protect third parties dealing in good faith. A third party with actual knowledge of an internal procedural requirement who proceeds without verifying compliance cannot claim protection. The bank officer's personal examination of the constitution gave the bank actual notice — it cannot claim good faith ignorance of the restriction."
+    },
+    {
+      "id": 9,
+      "question": "The concept of ‘ostensible authority’ as developed in Freeman & Lockyer v Buckhurst Park Properties [1964] differs from ‘implied actual authority’ (Hely-Hutchinson v Brayhead [1968]) in that:",
+      "options": {
+        "A": "Ostensible authority requires a specific written representation; implied actual authority is always inferred from job title",
+        "B": "Ostensible authority arises from representations made to third parties by persons with actual authority; implied actual authority arises from the company’s own conduct (acquiescence) without a representation to the third party",
+        "C": "Ostensible authority applies only to directors; implied actual authority applies only to employees",
+        "D": "There is no meaningful distinction — both concepts produce identical legal consequences"
+      },
+      "correct_answer": "B",
+      "explanation": "Apparent/ostensible authority arises where a principal (the company acting through authorised persons) represents to a third party that an agent has authority — the third party relies on the external representation. Implied actual authority (Hely-Hutchinson) arises internally from the company’s conduct — the board acquiesces in a course of conduct, creating implied authorisation without any specific external representation."
+    },
+    {
+      "id": 10,
+      "question": "A company secretary of a PLC forges a board resolution and uses it to obtain a bank loan. The bank cannot enforce the loan because:",
+      "options": {
+        "A": "A company secretary has no authority to borrow money",
+        "B": "The Indoor Management Rule and section 40 do not protect parties where the act relied upon is a forgery — forgery falls outside the scope of the Turquand rule",
+        "C": "The loan exceeds the company’s authorised borrowing limit",
+        "D": "The loan was taken without prior approval from the Central Bank"
+      },
+      "correct_answer": "B",
+      "explanation": "The forgery exception to the Indoor Management Rule: if the document relied upon by the third party (here the board resolution) is a forgery, the Turquand rule does not apply. The Indoor Management Rule assumes that regular internal procedures occurred — it does not extend to fabricated documents. The company is not bound."
+    }
+  ]
+}

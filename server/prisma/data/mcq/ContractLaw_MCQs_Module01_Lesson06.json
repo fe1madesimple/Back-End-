@@ -1,0 +1,131 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": "ContractLaw_ElevenLabs_Module01_Lesson06.txt",
+  "module_number": 1,
+  "module_title": "Formation of Contract",
+  "lesson_number": 6,
+  "lesson_title": "Formal Requirements",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M01_L06_Q01",
+      "question": "Under Section 51 of the Land and Conveyancing Law Reform Act 2009, a contract for the sale of land is unenforceable unless:",
+      "options": {
+        "A": "It is executed as a deed before a commissioner for oaths",
+        "B": "The contract itself is reduced to writing and witnessed by two independent parties",
+        "C": "There is a written memorandum or note of the agreement signed by the party against whom the action is brought",
+        "D": "The purchase price is confirmed in a notarised statement"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 51 LCLRA 2009 does not require the contract itself to be in writing. It requires a memorandum or note of it, signed by the party against whom enforcement is sought (or their authorised agent). The oral agreement may be validly formed — the writing requirement is an evidential condition of enforceability."
+    },
+    {
+      "id": "CL_M01_L06_Q02",
+      "question": "The three essential contents of a valid memorandum for a land contract — the 'Three Ps' — are:",
+      "options": {
+        "A": "Parties, price, and provisions",
+        "B": "Parties, property, and price",
+        "C": "Purchaser, particulars, and payment",
+        "D": "Principal, plot, and purchase"
+      },
+      "correct_answer": "B",
+      "explanation": "The courts have identified three minimum requirements for a valid memorandum: parties (sufficiently identified), property (sufficiently described to be identifiable), and price (stated exactly — 'price to be agreed' is insufficient). Any terms the parties themselves treated as essential must also be included."
+    },
+    {
+      "id": "CL_M01_L06_Q03",
+      "question": "In Guardian Builders v Sax [1990] Irish High Court, a misspelling of the plaintiff company's name in the memorandum was held:",
+      "options": {
+        "A": "Fatal — strict accuracy as to parties is required",
+        "B": "Insufficient to invalidate the memorandum, because the identity of the parties was still reasonably identifiable",
+        "C": "Curable by sworn affidavit from both parties",
+        "D": "Irrelevant — the signature of the party is the only formal requirement"
+      },
+      "correct_answer": "B",
+      "explanation": "In Guardian Builders v Sax [1990], the Irish High Court held that the misspelling did not invalidate the memorandum. Perfect precision as to party names is not required — the court asks whether the parties are reasonably identifiable from the document. The same case also confirmed that a description by reference to land named on headed paper was sufficient for the property requirement."
+    },
+    {
+      "id": "CL_M01_L06_Q04",
+      "question": "The Statute of Frauds (Ireland) Act 1695, Section 2, requires which of the following to be evidenced in writing?",
+      "options": {
+        "A": "Contracts for the sale of goods over £10 in value",
+        "B": "All commercial contracts between businesses",
+        "C": "Guarantees, contracts for the sale of land, and contracts not to be performed within one year",
+        "D": "All contracts of employment exceeding six months in duration"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 2 of the Statute of Frauds (Ireland) Act 1695 requires three categories of contract to be evidenced in writing: guarantees (secondary obligations to answer for another's debt), contracts for the sale of land or any interest in land, and contracts not to be performed within one year of their making."
+    },
+    {
+      "id": "CL_M01_L06_Q05",
+      "question": "The doctrine of 'joinder of documents' allows a sufficient memorandum to be assembled from multiple documents, but requires:",
+      "options": {
+        "A": "Each document to be individually signed by both parties",
+        "B": "The documents to be dated within 24 hours of each other",
+        "C": "A sufficient connection between the documents — ideally an internal cross-reference — showing they all relate to the same transaction",
+        "D": "The documents to be certified by a solicitor as forming part of the same transaction"
+      },
+      "correct_answer": "C",
+      "explanation": "Documents may be joined to form a complete memorandum where there is a sufficient connection between them. An internal cross-reference is ideal. A signature on one document linked to another unsigned document does not satisfy the requirement unless the connection between them is clearly established in the text of the documents."
+    },
+    {
+      "id": "CL_M01_L06_Q06",
+      "question": "In Casey v Irish Intercontinental Bank [1979], the Irish court held that the signature requirement for a memorandum under the Statute of Frauds:",
+      "options": {
+        "A": "Requires a wet ink handwritten signature in all cases",
+        "B": "Can be satisfied by a signature on headed paper",
+        "C": "Is satisfied only by the solicitor's signature on behalf of the vendor",
+        "D": "Can be waived if the purchaser has paid a deposit"
+      },
+      "correct_answer": "B",
+      "explanation": "In Casey v Irish Intercontinental Bank [1979], the court confirmed that a signature on headed paper is sufficient. A formal handwritten signature is not strictly required. The Electronic Commerce Act 2000 further extended this by allowing electronic signatures to satisfy the writing requirement for land contracts, subject to the Act's standards."
+    },
+    {
+      "id": "CL_M01_L06_Q07",
+      "question": "The equitable doctrine of part performance allows enforcement of an oral contract for land where:",
+      "options": {
+        "A": "The parties have exchanged solicitors' letters",
+        "B": "The purchaser has paid a deposit",
+        "C": "Acts of part performance have been carried out that are unequivocally referable to the alleged contract",
+        "D": "At least three years have passed since the oral agreement was made"
+      },
+      "correct_answer": "C",
+      "explanation": "Part performance requires acts that are unequivocally referable to some such contract as alleged — mere possession of land is insufficient if it is equally consistent with another legal relationship. Where acts of part performance are established, equity will prevent the other party from relying on the absence of writing to escape their obligations."
+    },
+    {
+      "id": "CL_M01_L06_Q08",
+      "question": "A guarantee and an indemnity differ in that:",
+      "options": {
+        "A": "A guarantee is a primary obligation; an indemnity is secondary",
+        "B": "A guarantee is a secondary promise to pay if the principal debtor defaults; an indemnity is a direct primary obligation to pay regardless of the debtor's default",
+        "C": "Both require writing, but indemnities additionally require notarisation",
+        "D": "An indemnity must be registered with the Companies Registration Office; a guarantee need not be"
+      },
+      "correct_answer": "B",
+      "explanation": "A guarantee is a secondary promise — the guarantor only becomes liable if the principal debtor defaults. A guarantee requires writing under the Statute of Frauds. An indemnity is a primary obligation — the promisor undertakes to pay regardless of what happens to the principal debtor. Indemnities can be made orally. This distinction is important and occasionally appears on the FE-1."
+    },
+    {
+      "id": "CL_M01_L06_Q09",
+      "question": "A buyer and seller verbally agree the sale of a house at €350,000. The seller later sends a written letter confirming the property address, the price, and both parties' full names, and signs it. The buyer then sues to enforce the contract. The most likely outcome is:",
+      "options": {
+        "A": "The contract is unenforceable — only a formal written contract is sufficient for land",
+        "B": "The contract is enforceable — the letter constitutes a valid memorandum under Section 51 LCLRA 2009 containing the Three Ps, signed by the party against whom enforcement is sought",
+        "C": "The contract is enforceable only if the buyer has paid a deposit",
+        "D": "The contract is unenforceable — both parties must sign the memorandum"
+      },
+      "correct_answer": "B",
+      "explanation": "The seller's signed letter identifies the parties, describes the property, and states the price — satisfying the Three Ps. It is signed by the seller (the party against whom the action is brought). This is a valid memorandum under Section 51 LCLRA 2009. Only the signature of the defendant party is required — not both parties."
+    },
+    {
+      "id": "CL_M01_L06_Q10",
+      "question": "Under the Electronic Commerce Act 2000, electronic signatures in relation to contracts for the sale of land are:",
+      "options": {
+        "A": "Never sufficient — land contracts require wet ink signatures",
+        "B": "Sufficient to satisfy the writing and signature requirements, provided the Act's standards are met",
+        "C": "Sufficient only if accompanied by a qualified electronic certificate from an approved authority",
+        "D": "Recognised only for commercial land transactions above €1 million in value"
+      },
+      "correct_answer": "B",
+      "explanation": "The Electronic Commerce Act 2000 extended the signature requirement to permit electronic signatures for land contracts, subject to meeting the Act's standards. This modernised the formal requirements under both the Statute of Frauds 1695 and Section 51 LCLRA 2009."
+    }
+  ]
+}

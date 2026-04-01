@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "Module_04_Lesson_03_Scope_of_the_Charter_When_Does_It_Apply_to_Member_States.txt",
+  "module_number": 4,
+  "module_title": "General Principles and Fundamental Rights",
+  "lesson_number": 3,
+  "lesson_title": "The Scope of the Charter — When Does It Apply to Member States?",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EUL_M04_L03_Q01",
+      "question": "Which provision of the Charter of Fundamental Rights governs its application to Member States?",
+      "options": {
+        "A": "Article 47 of the Charter",
+        "B": "Article 51(1) of the Charter",
+        "C": "Article 52(1) of the Charter",
+        "D": "Article 6(1) TEU"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 51(1) of the Charter provides that its provisions are addressed to EU institutions and bodies and to Member States 'only when they are implementing Union law.' This is the foundational provision governing the Charter's scope with respect to Member State action. Article 52(1) governs limitations on Charter rights; Article 47 concerns the right to an effective remedy."
+    },
+    {
+      "id": "EUL_M04_L03_Q02",
+      "question": "According to Article 51(1) of the Charter, when does the Charter apply to Member States?",
+      "options": {
+        "A": "Whenever a Member State exercises any governmental power",
+        "B": "Only when a Member State adopts primary legislation",
+        "C": "Only when they are implementing Union law",
+        "D": "Whenever a matter falls within the broad policy objectives of the EU"
+      },
+      "correct_answer": "C",
+      "explanation": "Article 51(1) applies the Charter to Member States 'only when they are implementing Union law.' The Charter is not a general human rights code covering every act of national government. It does not give the Court of Justice a general jurisdiction over national human rights issues. A sufficient connection to EU law is required."
+    },
+    {
+      "id": "EUL_M04_L03_Q03",
+      "question": "In Wachauf v Germany [1989], what principle did the Court of Justice establish regarding Member States and fundamental rights?",
+      "options": {
+        "A": "Member States must respect fundamental rights only when adopting new legislation, not when administering existing rules",
+        "B": "Member States implementing EU measures must respect fundamental rights",
+        "C": "Fundamental rights apply to Member States only in the field of taxation",
+        "D": "The ECHR, not EU fundamental rights, governs Member State conduct in all circumstances"
+      },
+      "correct_answer": "B",
+      "explanation": "In Wachauf v Germany [1989], the Court held that Member States implementing EU measures must respect fundamental rights. This was a pre-Charter case that laid the groundwork for what later became Article 51(1) of the Charter. The term 'implementing' means applying or administering EU law — giving effect to EU obligations in national law."
+    },
+    {
+      "id": "EUL_M04_L03_Q04",
+      "question": "What additional ground for Charter application did the Court establish in ERT v DEP [1991]?",
+      "options": {
+        "A": "The Charter applies whenever a Member State receives EU funding",
+        "B": "The Charter applies where a Member State derogates from a Treaty freedom",
+        "C": "The Charter applies whenever a Member State legislates in an area of shared competence",
+        "D": "The Charter applies where a Member State has ratified the ECHR"
+      },
+      "correct_answer": "B",
+      "explanation": "In ERT v DEP [1991], the Court extended the scope of fundamental rights protection beyond 'implementing' EU law to include 'derogating.' Where a Member State relies on an exception to a Treaty freedom — such as Article 36 TFEU to restrict free movement of goods — that derogation must itself comply with fundamental rights. The internal market freedoms are EU law, and exceptions from them operate within the EU law framework."
+    },
+    {
+      "id": "EUL_M04_L03_Q05",
+      "question": "In Åkerberg Fransson [2013], why did the Court of Justice hold that the Charter applied to Swedish criminal proceedings concerning VAT fraud?",
+      "options": {
+        "A": "Because Sweden had voluntarily agreed to apply the Charter in all criminal proceedings",
+        "B": "Because Sweden's obligation to sanction VAT fraud derived from an EU Directive, making the national measures an implementation of EU law",
+        "C": "Because the criminal proceedings were directly governed by an EU Regulation",
+        "D": "Because Sweden was derogating from the free movement of capital"
+      },
+      "correct_answer": "B",
+      "explanation": "In Åkerberg Fransson [2013], Sweden's obligation to impose sanctions for VAT non-compliance derived from the EU VAT Directive. Although Sweden chose the specific form of those sanctions (tax surcharges then criminal prosecution) as a matter of national procedural autonomy, the underlying obligation to sanction VAT fraud was an EU law obligation. Sweden was therefore 'implementing Union law' and the Charter applied."
+    },
+    {
+      "id": "EUL_M04_L03_Q06",
+      "question": "What was the significance of Cruciano Siragusa v Regione Sicilia [2014] for the scope of the Charter?",
+      "options": {
+        "A": "It confirmed that the Charter applies whenever national law pursues objectives compatible with EU law",
+        "B": "It established that pursuing objectives similar to those of EU law, without specifically implementing an EU instrument, does not bring the situation within the Charter's scope",
+        "C": "It held that the Charter applies to all Member State regulatory activity in environmental law",
+        "D": "It extended Åkerberg Fransson to cover all areas of administrative law"
+      },
+      "correct_answer": "B",
+      "explanation": "In Siragusa [2014], Italian landscape protection rules operated in a policy area touched by EU environmental Directives, but the Court held the Charter did not apply. The national measure must specifically give effect to EU law, not merely pursue objectives in common with EU law. A national measure that merely operates in the same policy area as EU law, without implementing a specific EU instrument, does not come within the scope of EU law and therefore does not engage the Charter."
+    },
+    {
+      "id": "EUL_M04_L03_Q07",
+      "question": "In Willems v Burgemeester van Nuth [2015], what was the basis for the Charter applying to Member State rules on biometric passport data?",
+      "options": {
+        "A": "The Member State was derogating from the free movement of persons",
+        "B": "An EU Regulation (Regulation 2252/2004) required Member States to include fingerprints in passports",
+        "C": "The Member State had voluntarily incorporated the Charter into national law",
+        "D": "The case involved EU competition law rules applied by national authorities"
+      },
+      "correct_answer": "B",
+      "explanation": "In Willems [2015], EU Regulation 2252/2004 required Member States to include biometric fingerprint data in passports. Because the national measure implementing this requirement gave direct effect to an EU Regulation, the Member State was implementing Union law and the Charter applied — specifically Articles 7 (private life) and 8 (data protection)."
+    },
+    {
+      "id": "EUL_M04_L03_Q08",
+      "question": "When applying the Charter's scope in a problem question, which of the following situations would most clearly bring the Charter into play?",
+      "options": {
+        "A": "A Member State enacts planning rules that happen to share environmental protection goals with an EU Directive, but do not implement any specific EU obligation",
+        "B": "A Member State applies national procedures to enforce compliance with an EU Directive obligation",
+        "C": "A Member State exercises a constitutional power with no connection to any EU legislation or Treaty freedom",
+        "D": "A Member State legislates in an area where the EU has not exercised any competence"
+      },
+      "correct_answer": "B",
+      "explanation": "The Charter most clearly applies where a Member State is applying national procedures to enforce or give effect to a specific EU law obligation — as in Åkerberg Fransson, where Swedish tax enforcement derived from the EU VAT Directive. Option A describes the Siragusa situation (insufficient connection). Options C and D describe purely domestic matters outside EU law's scope."
+    },
+    {
+      "id": "EUL_M04_L03_Q09",
+      "question": "Under Article 52(1) of the Charter, what conditions must be satisfied for a limitation on a Charter right to be lawful?",
+      "options": {
+        "A": "The limitation must be approved by a unanimous Council decision and endorsed by the European Parliament",
+        "B": "The limitation must be provided for by law, respect the essence of the right, meet an objective of general interest or protect others' rights, and be necessary and proportionate",
+        "C": "The limitation is lawful if it pursues any legitimate national public interest, regardless of proportionality",
+        "D": "The limitation must be expressly authorised by the specific article of the Charter that is being restricted"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 52(1) of the Charter sets out a four-part test for justified limitations: (1) provided for by law; (2) respecting the essence of the right; (3) genuinely meeting objectives of general interest recognised by the Union or protecting the rights of others; and (4) necessary and proportionate to those objectives. All four conditions must be satisfied — failure on any one renders the limitation incompatible with the Charter."
+    },
+    {
+      "id": "EUL_M04_L03_Q10",
+      "question": "In Digital Rights Ireland [2014], the CJEU struck down the EU Data Retention Directive 2006/24. On what basis was this done?",
+      "options": {
+        "A": "The Directive had been adopted under the wrong legal base and therefore lacked competence",
+        "B": "The blanket retention of all communications metadata without suspicion failed to satisfy Article 52(1) — it went beyond what was strictly necessary and lacked adequate safeguards",
+        "C": "The Directive violated the principle of subsidiarity because data retention was better handled at national level",
+        "D": "The European Parliament had not given its consent to the Directive under the co-decision procedure"
+      },
+      "correct_answer": "B",
+      "explanation": "In Digital Rights Ireland [2014], the CJEU applied Article 52(1) to strike down the Data Retention Directive. The Directive required blanket retention of all electronic communications metadata of all EU citizens for six months to two years, regardless of any suspicion. The Court held this went beyond what was strictly necessary, failed to include adequate safeguards, and did not respect the essence of the rights to privacy and data protection under Articles 7 and 8 of the Charter. This case demonstrates that the Charter can lead to EU legislative acts being annulled."
+    }
+  ]
+}

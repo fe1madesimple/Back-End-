@@ -1,0 +1,131 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module01_Lesson05.txt",
+  "module_number": 1,
+  "module_title": "Foundations of Criminal Law",
+  "lesson_number": 5,
+  "lesson_title": "Coincidence of Actus Reus and Mens Rea",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M01_L05_Q01",
+      "question": "What does the contemporaneity rule in criminal law require?",
+      "options": {
+        "A": "That the defendant and the victim were present at the same location",
+        "B": "That the actus reus and mens rea of an offence must coincide in time",
+        "C": "That the defendant must have formed the mens rea before committing the actus reus",
+        "D": "That the consequences of the act must occur within a reasonable time of the act itself"
+      },
+      "correct_answer": "B",
+      "explanation": "The contemporaneity rule — also called the coincidence rule — requires that the actus reus and mens rea of a criminal offence must coincide at the same moment in time. It is not sufficient that both elements exist at different points. However, the courts have developed doctrines — the continuing act doctrine and the transaction principle — to prevent defendants from escaping liability through purely technical timing arguments."
+    },
+    {
+      "id": "CL_M01_L05_Q02",
+      "question": "In Fagan v Metropolitan Police Commissioner [1969], why did the court find that the defendant had committed an assault?",
+      "options": {
+        "A": "Because Fagan had intended to drive onto the officer's foot from the outset",
+        "B": "Because the act of remaining on the officer's foot was a continuing act, and mens rea coincided with the actus reus when Fagan decided to refuse to move the car",
+        "C": "Because the court applied the transaction principle to treat the driving and the refusal as one event",
+        "D": "Because Fagan was strictly liable for any contact with a police officer"
+      },
+      "correct_answer": "B",
+      "explanation": "The Divisional Court in Fagan [1969] held that driving onto and remaining on the officer's foot was a continuing act — the actus reus persisted throughout the period the car remained on the foot. When Fagan decided to refuse to move the car, he formed the requisite mens rea. At that point, the continuing actus reus and the newly formed mens rea coincided. The court did not apply the transaction principle — the continuing act doctrine was sufficient."
+    },
+    {
+      "id": "CL_M01_L05_Q03",
+      "question": "Which doctrine established in Fagan v Metropolitan Police Commissioner [1969] allows the mens rea to arise at any point during the commission of the actus reus?",
+      "options": {
+        "A": "The transaction principle",
+        "B": "The transferred malice doctrine",
+        "C": "The continuing act doctrine",
+        "D": "The prior fault doctrine"
+      },
+      "correct_answer": "C",
+      "explanation": "Fagan [1969] is the leading authority for the continuing act doctrine. Where the actus reus is not a single instantaneous event but a continuing state of affairs — such as an ongoing physical interference — it is sufficient that the defendant forms the requisite mens rea at any point during the continuation of that act. The actus reus and mens rea will then coincide."
+    },
+    {
+      "id": "CL_M01_L05_Q04",
+      "question": "Thabo Meli v R [1954] is the leading authority for which principle concerning the coincidence of actus reus and mens rea?",
+      "options": {
+        "A": "The continuing act doctrine",
+        "B": "The principle of transferred malice",
+        "C": "The transaction principle — a series of connected acts forming one continuous criminal enterprise",
+        "D": "The principle that omissions cannot ground criminal liability"
+      },
+      "correct_answer": "C",
+      "explanation": "Thabo Meli v R [1954] established the transaction principle (also called the series of acts doctrine). The Privy Council held that where a defendant has a pre-formed plan and commits a series of connected acts pursuant to that plan, it is not possible to artificially divide the sequence of events. The mens rea present at the start of the transaction can infect the entire course of conduct, even if the act that ultimately causes the prohibited result occurs at a point when the defendant no longer has the requisite mental state."
+    },
+    {
+      "id": "CL_M01_L05_Q05",
+      "question": "In Thabo Meli v R [1954], the defendants argued they lacked mens rea at the time of the act that caused death. What was that argument?",
+      "options": {
+        "A": "They were intoxicated when they attacked the victim and so lacked the relevant intention",
+        "B": "When they disposed of the body — the act that actually caused death — they believed the victim was already dead and so had no intention to kill at that moment",
+        "C": "They did not intend to cause serious injury, only to frighten the victim",
+        "D": "They were acting under duress throughout the entire sequence of events"
+      },
+      "correct_answer": "B",
+      "explanation": "The defendants in Thabo Meli [1954] argued that at the time they rolled the body over the cliff — the act which in fact caused death by exposure — they genuinely believed the victim was already dead. They therefore had no intention to kill at that moment. Their intention to kill existed during the initial attack, but they claimed the act that caused death was a separate act of body disposal. The Privy Council rejected this artificial division."
+    },
+    {
+      "id": "CL_M01_L05_Q06",
+      "question": "How did the Privy Council in Thabo Meli v R [1954] resolve the coincidence problem on the facts?",
+      "options": {
+        "A": "By holding that the defendants were strictly liable for the death",
+        "B": "By applying the continuing act doctrine to treat the initial attack as ongoing",
+        "C": "By treating the entire sequence of planned conduct as one continuous transaction, so the mens rea at the outset infected the whole",
+        "D": "By applying transferred malice from the intended victim to the actual victim"
+      },
+      "correct_answer": "C",
+      "explanation": "The Privy Council held that it was artificial and wrong to separate the attack from the subsequent disposal of the body. The defendants had devised a plan to kill and dispose of the evidence — it was one continuous criminal transaction. The intention to kill, present from the outset, was sufficient to ground liability for the eventual death even though that death resulted from a later act in the sequence. The whole series of acts was treated as one transaction."
+    },
+    {
+      "id": "CL_M01_L05_Q07",
+      "question": "R v Church [1966] extended the principle from Thabo Meli by confirming that the transaction principle applies even where:",
+      "options": {
+        "A": "There was no pre-formed plan — it is sufficient that the defendant's acts formed an obvious sequence leading to the result",
+        "B": "The defendant acted in a state of automatism throughout the transaction",
+        "C": "The victims consented to the initial act that started the transaction",
+        "D": "The defendant abandoned their mens rea before the final act in the series"
+      },
+      "correct_answer": "A",
+      "explanation": "R v Church [1966] applied and extended Thabo Meli by confirming that the transaction principle is not confined to cases involving a pre-meditated plan. In Church, the defendant attacked a woman, wrongly believed he had killed her, and threw her body into a river where she drowned. There was no elaborate plan as in Thabo Meli. The court nonetheless held that the jury could treat the whole sequence of conduct as a single transaction and assess whether the defendant's overall mental state was sufficient for liability for the ultimate death."
+    },
+    {
+      "id": "CL_M01_L05_Q08",
+      "question": "Orla forms the intention to poison her employer on a Monday. On the following Thursday, she accidentally spills a hot drink on her employer, causing serious burns. Is there coincidence of actus reus and mens rea for an offence requiring intention?",
+      "options": {
+        "A": "Yes — Orla had the requisite intention at some point and that is sufficient",
+        "B": "Yes — because the transaction principle applies to all sequences of events",
+        "C": "No — the intention formed on Monday did not exist at the moment of the Thursday accident, and neither the continuing act doctrine nor the transaction principle saves the prosecution",
+        "D": "No — because Orla had a change of heart between Monday and Thursday"
+      },
+      "correct_answer": "C",
+      "explanation": "There is no coincidence here. The act that caused harm — the accidental spillage — was not connected to Orla's earlier intention. Her Monday intention was not in force at the time of the Thursday act. The continuing act doctrine does not apply because there was no continuous act linking the intention to the accident. The transaction principle does not apply because the accident was not part of a planned or connected series of acts pursuant to the original intention. Both elements must coincide and here they do not."
+    },
+    {
+      "id": "CL_M01_L05_Q09",
+      "question": "Cian attacks Vera intending to kill her. Believing her to be dead, he places her body in the boot of his car and drives to the river to dispose of it. Vera is in fact still alive and dies from carbon monoxide poisoning in the boot. Which analysis best applies to the coincidence of actus reus and mens rea?",
+      "options": {
+        "A": "There is no coincidence — Cian lacked mens rea when he placed Vera in the boot",
+        "B": "The transaction principle applies: the attack, the concealment, and the disposal form one continuous criminal enterprise, and Cian's intention to kill, present from the outset, is sufficient for murder",
+        "C": "The continuing act doctrine applies because the attack was still ongoing while Vera was in the boot",
+        "D": "Cian can only be convicted of attempted murder because his act of killing was not the direct cause of Vera's death"
+      },
+      "correct_answer": "B",
+      "explanation": "This is a Thabo Meli-type scenario. The attack and the subsequent disposal of what Cian believed to be a corpse form one continuous transaction — there was a clear intention to kill Vera and to conceal the evidence. Applying the transaction principle from Thabo Meli [1954] and confirmed in R v Church [1966], Cian's intention to kill present at the outset of this criminal enterprise infects the entire transaction, including the act that ultimately caused death. He would be liable for murder."
+    },
+    {
+      "id": "CL_M01_L05_Q10",
+      "question": "What is the status of the contemporaneity rule, the continuing act doctrine, and the transaction principle in Irish criminal law?",
+      "options": {
+        "A": "Only the contemporaneity rule is recognised in Ireland; the two doctrines are purely English in origin and have no application here",
+        "B": "All three are recognised as part of Irish criminal law, derived from the common law tradition which Ireland inherited",
+        "C": "The transaction principle has been abolished by statute in Ireland",
+        "D": "The continuing act doctrine only applies in Ireland where expressly authorised by a statutory provision"
+      },
+      "correct_answer": "B",
+      "explanation": "The contemporaneity rule, the continuing act doctrine (Fagan [1969]), and the transaction principle (Thabo Meli [1954]) are all accepted as part of Irish criminal law. They derive from the common law tradition inherited by Ireland, and Irish courts apply them in appropriate cases. Irish academic commentary, including that of Professor Tom O'Malley, treats these principles as settled doctrine. There is no statutory modification that displaces them."
+    }
+  ]
+}

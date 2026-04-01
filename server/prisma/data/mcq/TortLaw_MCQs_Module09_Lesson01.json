@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "Module_09_Lesson_01_Defamation___The_Defamation_Act_2009_and_the_Elements_of_the_Tort.txt",
+  "module_number": 9,
+  "module_title": "Defamation",
+  "lesson_number": 1,
+  "lesson_title": "Defamation: The Defamation Act 2009 and the Elements of the Tort",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M09_L01_Q01",
+      "question": "What is the principal legislation governing defamation law in Ireland?",
+      "options": {
+        "A": "The Defamation Act 1961",
+        "B": "The Defamation Act 2009",
+        "C": "The Civil Liability Act 1961",
+        "D": "The Communications Regulation Act 2002"
+      },
+      "correct_answer": "B",
+      "explanation": "The Defamation Act 2009 comprehensively reformed defamation law in Ireland. It abolished the distinction between libel and slander and introduced a single cause of action. Candidates must know this Act in detail for the FE-1 examination."
+    },
+    {
+      "id": "TL_M09_L01_Q02",
+      "question": "How does section 2 of the Defamation Act 2009 define a 'defamatory statement'?",
+      "options": {
+        "A": "A statement that is false and known by the maker to be false",
+        "B": "A statement that tends to injure a person's reputation in the eyes of reasonable members of society",
+        "C": "A statement that causes a person to suffer financial loss",
+        "D": "A statement that is published in writing and communicated to more than one person"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 2 of the Defamation Act 2009 defines a defamatory statement as one that tends to injure a person's reputation in the eyes of reasonable members of society. This reflects the objective standard applied by the courts."
+    },
+    {
+      "id": "TL_M09_L01_Q03",
+      "question": "What significant change did the Defamation Act 2009 make to the distinction between libel and slander?",
+      "options": {
+        "A": "It retained the distinction but equated the remedies available for each",
+        "B": "It abolished the distinction and replaced it with a single cause of action",
+        "C": "It created three categories of defamation based on the medium of publication",
+        "D": "It made libel actionable per se but required proof of damage for slander"
+      },
+      "correct_answer": "B",
+      "explanation": "The Defamation Act 2009 abolished the distinction between libel (written defamation) and slander (spoken defamation) and replaced them with a single cause of action. This simplification is an important feature of the Act that FE-1 candidates must know."
+    },
+    {
+      "id": "TL_M09_L01_Q04",
+      "question": "What are the three essential elements of defamation under the Defamation Act 2009?",
+      "options": {
+        "A": "A false statement, intention to defame, and financial loss",
+        "B": "A defamatory statement, reference to the plaintiff, and publication to at least one third party",
+        "C": "A written statement, identification of the plaintiff by name, and widespread publication",
+        "D": "A malicious statement, proof of damage, and identification of the defendant"
+      },
+      "correct_answer": "B",
+      "explanation": "The three essential elements are: (1) a defamatory statement — assessed objectively by reference to reasonable members of society; (2) the statement must refer to the plaintiff — even if not named; and (3) the statement must be published — communicated to at least one person other than the plaintiff."
+    },
+    {
+      "id": "TL_M09_L01_Q05",
+      "question": "Under section 16 of the Defamation Act 2009, what presumption applies once a defamatory statement is established?",
+      "options": {
+        "A": "The statement is presumed to have been published with malice",
+        "B": "The statement is presumed to be false — the burden shifts to the defendant to prove truth",
+        "C": "The plaintiff is presumed to have suffered financial loss",
+        "D": "The defendant is presumed to have intended to cause harm"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 16, there is a presumption that a defamatory statement is false. The burden shifts to the defendant to prove truth as a defence. This reverses the common law position and is extremely favourable to plaintiffs."
+    },
+    {
+      "id": "TL_M09_L01_Q06",
+      "question": "What is defamation 'by innuendo'?",
+      "options": {
+        "A": "A defamatory statement made using coded language known only to the defendant",
+        "B": "A statement that is defamatory only in light of extrinsic facts known to the recipients, which the plaintiff must plead and prove",
+        "C": "A statement repeated by a third party that amplifies the original defamatory meaning",
+        "D": "Any defamatory statement published on social media"
+      },
+      "correct_answer": "B",
+      "explanation": "Defamation by innuendo arises where a statement appears innocent on its face but is defamatory in light of extrinsic facts known to the recipients. The plaintiff must plead and prove both the innuendo and the extrinsic facts on which they rely. The script illustrates this with a man seen leaving an address that recipients know to be a brothel."
+    },
+    {
+      "id": "TL_M09_L01_Q07",
+      "question": "What threshold must a defamatory statement meet to give rise to an actionable claim under the Defamation Act 2009?",
+      "options": {
+        "A": "The statement must have been published to more than five people",
+        "B": "The statement must have been published in a permanent form",
+        "C": "The statement must cause or be likely to cause serious harm to the plaintiff's reputation",
+        "D": "The statement must have caused actual financial loss"
+      },
+      "correct_answer": "C",
+      "explanation": "As developed in case law under section 34 of the Act, a statement must cause or be likely to cause serious harm to the plaintiff's reputation. Minor or trivial statements do not give rise to an actionable claim. This serious harm threshold acts as an important filter."
+    },
+    {
+      "id": "TL_M09_L01_Q08",
+      "question": "What does 'publication' mean in the context of defamation law?",
+      "options": {
+        "A": "Printing the statement in a newspaper or book",
+        "B": "Communication of the statement to at least one person other than the plaintiff",
+        "C": "Broadcasting the statement on television or radio",
+        "D": "Making the statement in a public place where it can be overheard"
+      },
+      "correct_answer": "B",
+      "explanation": "Publication in defamation law means communication of the statement to at least one person other than the plaintiff. It is not limited to written or broadcast media — any communication to a third party satisfies the publication requirement."
+    },
+    {
+      "id": "TL_M09_L01_Q09",
+      "question": "How does section 27 of the Defamation Act 2009 address online defamation by anonymous publishers?",
+      "options": {
+        "A": "It makes internet service providers automatically liable for all defamatory content on their platforms",
+        "B": "It provides a mechanism for plaintiffs to seek an order requiring a website operator to identify the person who posted the defamatory material",
+        "C": "It requires all online publications to carry the author's verified identity",
+        "D": "It creates a strict liability regime for online publishers"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 27 of the Defamation Act 2009 provides a mechanism for plaintiffs to seek a court order requiring an operator of a website to identify the person who posted the defamatory material. This addresses the particular challenge of anonymous online publication."
+    },
+    {
+      "id": "TL_M09_L01_Q10",
+      "question": "Under section 12 of the Defamation Act 2009, what additional requirement must a body corporate satisfy in order to bring a defamation claim?",
+      "options": {
+        "A": "It must show it is a natural person or sole trader",
+        "B": "It must prove that the statement was published internationally",
+        "C": "It must prove that the statement caused or was likely to cause financial loss to the company",
+        "D": "It must show that a named individual within the company was also defamed"
+      },
+      "correct_answer": "C",
+      "explanation": "Under section 12, a body corporate may sue for defamation if it can establish that the statement was defamatory and caused, or was likely to cause, financial loss to the company. Unlike natural persons, companies must prove financial loss — they cannot rely on reputational harm alone."
+    }
+  ]
+}

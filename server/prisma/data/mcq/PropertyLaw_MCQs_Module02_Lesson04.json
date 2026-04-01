@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_02_Lesson_04_Rights_and_Obligations_of_Co_Owners.txt",
+  "module_number": 2,
+  "module_title": "Co-Ownership",
+  "lesson_number": 4,
+  "lesson_title": "Rights and Obligations of Co-Owners",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M02_L04_Q01",
+      "question": "What is the fundamental right of every co-owner in relation to the co-owned property, regardless of whether they are a joint tenant or tenant in common?",
+      "options": {
+        "A": "The right to occupy and use only their proportionate fraction of the property",
+        "B": "The right to occupy the whole of the property",
+        "C": "The right to demand that the property be sold immediately if they wish to realise their share",
+        "D": "The right to exclude the other co-owners from the property on reasonable notice"
+      },
+      "correct_answer": "B",
+      "explanation": "The fundamental right of every co-owner — whether joint tenant or tenant in common — is the right to occupy the whole of the property. Each co-owner is entitled to use and enjoy the entire property, not merely a proportionate fraction of it. This follows from the nature of co-ownership: the co-owners together hold the entire interest and each has the right to possess the whole. One co-owner cannot legally exclude the other from possession, and they cannot physically partition the property without the other co-owner's agreement or a court order."
+    },
+    {
+      "id": "PRL_M02_L04_Q02",
+      "question": "What is 'occupation rent' in the context of co-ownership?",
+      "options": {
+        "A": "Rent payable by a co-owner to the other co-owners for using more than their proportionate share of the property",
+        "B": "A payment that may be required from a co-owner who is in sole occupation of co-owned property, compensating the excluded co-owner for the value of the exclusive use of property to which both are entitled",
+        "C": "A market rent payable by one co-owner to another where one co-owner has let the property to a third party",
+        "D": "A statutory levy imposed on co-owners in occupation by the Property Registration Authority"
+      },
+      "correct_answer": "B",
+      "explanation": "Occupation rent is the payment that may be required from a co-owner who is in sole occupation of co-owned property, compensating the excluded co-owner for the value of that exclusive use. The rationale is that equity will not allow one co-owner to enjoy a benefit — the sole use of property to which both are entitled — without accounting for the value of that benefit to the excluded co-owner. Occupation rent arises where one co-owner is excluded from possession, either by the other's conduct or by court order."
+    },
+    {
+      "id": "PRL_M02_L04_Q03",
+      "question": "Dennis v McDonald [1982] is authority for which principle regarding co-ownership?",
+      "options": {
+        "A": "That co-owners have an absolute right to demand partition at any time",
+        "B": "That where one co-owner is excluded from occupation — whether by the other's conduct or by court order — the occupying co-owner may be required to pay an occupation rent to the excluded co-owner",
+        "C": "That co-owners who improve the property are automatically entitled to a proportionate increase in their beneficial share",
+        "D": "That an occupying co-owner may deduct all mortgage payments from any occupation rent claimed against them"
+      },
+      "correct_answer": "B",
+      "explanation": "Dennis v McDonald [1982] is the leading English Court of Appeal authority establishing that where one co-owner is excluded from occupation — whether by the other co-owner's conduct or by court order — the occupying co-owner may be required to pay an occupation rent to the excluded co-owner. The rationale is that the occupying co-owner is enjoying a benefit (sole use of jointly owned property) and equity requires them to account for the value of that exclusive use. The Irish courts applied similar principles in W v W [1981]."
+    },
+    {
+      "id": "PRL_M02_L04_Q04",
+      "question": "In W v W [1981], what did the Irish Supreme Court recognise in respect of a spouse excluded from the family home following a separation order?",
+      "options": {
+        "A": "That the excluded spouse had no financial claim against the occupying spouse during the period of separation",
+        "B": "That the excluded spouse was entitled to claim an occupation rent from the occupying spouse remaining in the property",
+        "C": "That the excluded spouse's interest in the property was extinguished by virtue of the exclusion order",
+        "D": "That the excluded spouse could unilaterally sell their interest without the other spouse's consent"
+      },
+      "correct_answer": "B",
+      "explanation": "In W v W [1981], the Irish Supreme Court recognised that a spouse who was excluded from the family home following a separation order was entitled to claim an occupation rent from the spouse remaining in the property. The excluded spouse was not simply losing the use of their asset — they were entitled to compensation for the value of the exclusive use enjoyed by the occupying spouse. This is the leading Irish authority for the doctrine of occupation rent and is frequently examined in FE-1 problem questions involving relationship breakdown."
+    },
+    {
+      "id": "PRL_M02_L04_Q05",
+      "question": "Is occupation rent automatically awarded whenever one co-owner is in sole occupation?",
+      "options": {
+        "A": "Yes — occupation rent is automatic and must be paid from the moment one co-owner begins sole occupation",
+        "B": "No — the courts exercise a discretion in awarding occupation rent, taking into account factors such as the length of exclusion, the parties' conduct, and any mortgage payments made by the occupying co-owner",
+        "C": "Yes — but only where the excluded co-owner has made a formal written demand for occupation rent",
+        "D": "No — occupation rent is only available where the co-owner in sole occupation has refused a specific request to vacate the property"
+      },
+      "correct_answer": "B",
+      "explanation": "Occupation rent is not automatic. The courts exercise a discretion in awarding it. Relevant factors include: the length of the exclusion, the conduct of the parties, and whether the excluded co-owner has already been receiving a contribution to the mortgage from the occupying co-owner. In practice, occupation rent and mortgage payments are often set off against each other in the final accounting between the parties, so the net award may be reduced or eliminated depending on how much the occupying co-owner has contributed to the mortgage over the period in question."
+    },
+    {
+      "id": "PRL_M02_L04_Q06",
+      "question": "At common law, does a co-owner who carries out improvements to co-owned property have an automatic right to seek contribution from the other co-owner for the cost of those improvements?",
+      "options": {
+        "A": "Yes — any co-owner who improves the property is entitled to recover a proportionate share of the improvement costs from the other co-owners",
+        "B": "No — there is no automatic right to contribution for improvements at common law; the improving co-owner took the risk of improving without the other's agreement",
+        "C": "Yes — but only where the improvements were necessary to preserve the property from deterioration",
+        "D": "Yes — but only where all co-owners gave their prior written consent to the improvements"
+      },
+      "correct_answer": "B",
+      "explanation": "At common law, there is no automatic right to contribution for improvements carried out by one co-owner. The improving co-owner took the risk of making improvements without the agreement of the other co-owners. However, the courts may take improvements into account when calculating the respective beneficial shares in equity — particularly where the improvement significantly increased the value of the property — and this may effectively provide some form of compensation, but it is not a direct common law right to contribution."
+    },
+    {
+      "id": "PRL_M02_L04_Q07",
+      "question": "Under section 31 of the LCLRA 2009, what remedies are available to a co-owner who wishes to resolve a dispute about co-owned property?",
+      "options": {
+        "A": "Only an order for partition — the courts have no power to order sale of co-owned property",
+        "B": "Any co-owner may apply to court for an order for partition, or for sale in lieu of partition and division of the proceeds",
+        "C": "The court may only recommend mediation and cannot make binding orders regarding co-owned property",
+        "D": "An order for sale may only be made where all co-owners consent to the application"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 31 of the LCLRA 2009 provides that any co-owner may apply to court for an order for partition of the co-owned property, or for sale in lieu of partition and a division of the proceeds. The court has a wide discretion in deciding whether to order sale or partition, taking into account factors including the nature of the property, whether partition is physically practicable, the needs of any children in occupation, and the proportionate shares of the co-owners. Sale in lieu of partition is more commonly ordered in respect of residential property, which cannot easily be physically divided."
+    },
+    {
+      "id": "PRL_M02_L04_Q08",
+      "question": "What factors does the court consider when deciding whether to order sale or partition under section 31 LCLRA 2009?",
+      "options": {
+        "A": "Solely the financial needs of each co-owner at the time of the application",
+        "B": "The nature of the property, whether partition is physically practicable, the needs of any children in occupation, and the proportionate shares of the co-owners",
+        "C": "Whether the co-owners are married and whether the property is the family home",
+        "D": "The market value of the property and the outstanding mortgage balance only"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 31 LCLRA 2009, the court's wide discretion is exercised by reference to several factors: (1) the nature of the property — for example, whether it is agricultural land (which may be partitionable) or a house (which may not be); (2) whether partition is physically practicable; (3) the needs of any children in occupation — particularly relevant in family home disputes; and (4) the proportionate shares of the co-owners. No single factor is determinative and the court balances these considerations in each case."
+    },
+    {
+      "id": "PRL_M02_L04_Q09",
+      "question": "What is the interaction between co-ownership and the Family Home Protection Act 1976 (FHPA 1976) when a co-owner of the family home wishes to sell their share?",
+      "options": {
+        "A": "There is no interaction — the FHPA 1976 applies only to sole ownership situations",
+        "B": "Even if a co-owner spouse wishes to sell their share, the FHPA 1976 may prevent a sale of the entire property without the prior written consent of the non-owning spouse, because such a sale is a 'conveyance' requiring that consent",
+        "C": "The FHPA 1976 automatically converts any joint tenancy of the family home into a tenancy in common",
+        "D": "The FHPA 1976 allows either spouse to sell the family home without consent, provided they give 28 days' prior notice"
+      },
+      "correct_answer": "B",
+      "explanation": "The Family Home Protection Act 1976 creates an important statutory overlay on co-ownership disputes involving the family home. Even where a co-owner spouse wishes to sell their share, the FHPA 1976 requires prior written spousal consent before a 'conveyance' of the family home can be effected. A sale of the entire property, which would necessarily involve the family home, requires that prior written consent. This means a co-owner cannot simply force a sale of the family home through a section 31 LCLRA 2009 application without engaging with the FHPA 1976 requirements."
+    },
+    {
+      "id": "PRL_M02_L04_Q10",
+      "question": "In what three fact patterns do co-ownership disputes most commonly arise in FE-1 examination questions?",
+      "options": {
+        "A": "Commercial property disputes, planning disputes, and mortgage enforcement proceedings",
+        "B": "Relationship breakdown (spouses or cohabitants), business partners falling out, and inheritance situations where multiple siblings inherit property together",
+        "C": "Adverse possession claims, easement disputes, and freehold covenant enforcement",
+        "D": "Landlord and tenant disputes, leasehold enfranchisement, and co-ownership of registered land"
+      },
+      "correct_answer": "B",
+      "explanation": "The three most common fact patterns in FE-1 co-ownership disputes are: (1) relationship breakdown — spouses or cohabitants who separate and cannot agree on what to do with jointly owned property; (2) business partners falling out — partners who jointly purchased commercial or investment property and can no longer cooperate; and (3) inheritance situations — multiple siblings who inherit property together under a will or on intestacy and disagree about its use or sale. In all three, the analytical framework is the same: identify the type of co-ownership, address severance, then consider partition, sale, or occupation rent remedies."
+    }
+  ]
+}

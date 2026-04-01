@@ -1,0 +1,131 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module05_Lesson03.txt",
+  "module_number": 5,
+  "module_title": "Directors and Their Fiduciary Duties",
+  "lesson_number": 3,
+  "lesson_title": "Remedies for Breach of Directors' Duties",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "A director of SolarGrid Ltd secretly profits from a contract she arranged between SolarGrid and a company she controls. The board discovers the breach. Which TWO primary remedies are available to SolarGrid against the director under S233 CA 2014?",
+      "options": {
+        "A": "Criminal prosecution under S248 CA 2014 and a mandatory disqualification order",
+        "B": "An account of profits (restoring the secret profit to the company) AND/OR compensation for any loss suffered by the company from the breach",
+        "C": "Rescission of the contract and an automatic restriction order under S819 CA 2014",
+        "D": "A winding-up petition under S569 and a personal liability declaration under S610 CA 2014"
+      },
+      "correct_answer": "B",
+      "explanation": "S233 CA 2014 provides two primary civil remedies for breach of directors' duties: (1) account of profits — the director must disgorge any profit made by reason of the breach; and (2) indemnification — the director must compensate the company for any loss it suffered. These remedies may be pursued cumulatively. The court has discretion in fashioning the appropriate remedy depending on whether the breach caused identifiable loss or merely unauthorised gain."
+    },
+    {
+      "id": 2,
+      "question": "The board of Precision Ltd discovers that a director diverted a corporate contract to his own company. The board wishes to ratify the breach by ordinary resolution so as to relieve the director of liability. Under Bamford v Bamford [1970] Ch 212, which condition is essential for ratification to be effective?",
+      "options": {
+        "A": "Ratification must be by special resolution (75%) — ordinary resolution is insufficient for breach of fiduciary duty",
+        "B": "The ratifying members must be fully informed of all material facts; the ratification must be by a genuine majority with the conflicted director unable to use their own shares to manufacture a majority",
+        "C": "Ratification is only effective if the company suffered no financial loss from the breach",
+        "D": "Ratification must be confirmed by the court within 21 days of the general meeting"
+      },
+      "correct_answer": "B",
+      "explanation": "Bamford v Bamford [1970] Ch 212 (EW CA) establishes that ratification of a director's breach of duty requires: (i) full disclosure of all material facts to the members; (ii) a genuine majority vote — the director whose breach is being ratified cannot use their own shareholding to produce the majority that relieves them of liability (this would be fraud on the minority). Where these conditions are met, an ordinary resolution suffices. Where a director uses their own votes to ratify their own wrong, the ratification may be void as a fraud on the minority."
+    },
+    {
+      "id": 3,
+      "question": "Directors of MarineCo Ltd diverted to themselves a lucrative shipbuilding contract that belonged to MarineCo, passed resolutions at a shareholders' meeting purporting to ratify the diversion, and used their own shares to ensure the resolution passed. A minority shareholder seeks to challenge this. Which authority establishes that ratification in these circumstances is invalid?",
+      "options": {
+        "A": "Foss v Harbottle [1843] — the company is the proper plaintiff; minority cannot challenge",
+        "B": "Cook v Deeks [1916] 1 AC 554 (PC) — directors cannot ratify a fraud on the company by voting their own shares to approve their own wrongdoing",
+        "C": "Aberdeen Railway v Blaikie [1854] — the no-conflict rule is strict",
+        "D": "Peso Silver Mines v Cropper [1966] — bona fide refusal by the board extinguishes the claim"
+      },
+      "correct_answer": "B",
+      "explanation": "Cook v Deeks [1916] 1 AC 554 (PC) is the leading authority establishing that a fraud on the company cannot be ratified by the wrongdoers using their own votes at a shareholders' meeting. In Cook v Deeks, directors diverted a contract from the company and then purported to pass a shareholders' resolution extinguishing the company's right to sue. The Privy Council held the resolution invalid — wrongdoers cannot ratify their own fraud by manufacturing a majority from their own shareholding."
+    },
+    {
+      "id": 4,
+      "question": "A director of BuildRight Ltd entered into a contract on behalf of the company with a third party, Construct plc. The director had an undisclosed conflict in relation to the contract. The company seeks to rescind the contract. Under S227(2) CA 2014, in what circumstances will the rights of Construct plc as a third party be protected?",
+      "options": {
+        "A": "Third parties are always protected — the company cannot rescind any contract on the ground of a director's breach of duty",
+        "B": "Construct plc's rights are protected if it dealt with the company in good faith and did not have actual notice of the director's breach or conflict of interest",
+        "C": "Third party protection applies only if the contract has been fully performed on both sides",
+        "D": "Third party protection requires Construct plc to have obtained court confirmation of the transaction within 30 days of signing"
+      },
+      "correct_answer": "B",
+      "explanation": "S227(2) CA 2014 provides that where a director breaches a duty to the company, a third party who dealt with the company in good faith (without actual notice of the breach) is not affected by the breach. This protects innocent third parties from having contracts rescinded due to director misfeasance of which they were unaware. Where a third party has knowledge of the director's breach, they cannot rely on S227(2) protection."
+    },
+    {
+      "id": 5,
+      "question": "HighRise Ltd holds 100% of the shares in LowRise Ltd. All shareholders of HighRise Ltd, which in turn is the sole shareholder of LowRise Ltd, are aware that the directors of LowRise have breached their duties. A general meeting of LowRise's sole shareholder (HighRise Ltd) ratifies the breach. Is this effective?",
+      "options": {
+        "A": "No — ratification always requires an independent third party to confirm it",
+        "B": "Potentially yes — Bamford v Bamford confirms that a genuine informed majority may ratify a director's breach; where HighRise as 100% shareholder is fully informed and it is not a fraud on LowRise's minority (which has none), the ratification may be effective",
+        "C": "No — subsidiaries cannot be bound by resolutions of parent companies",
+        "D": "Yes — any unanimous written resolution of shareholders automatically extinguishes director liability regardless of disclosure"
+      },
+      "correct_answer": "B",
+      "explanation": "Where there is a 100% shareholder fully informed of all material facts, ratification under Bamford v Bamford [1970] may be effective provided it is not a fraud on a minority (there is none in a 100% subsidiary) and does not infringe third party rights or statutory provisions. The Duomatic principle may also apply. However, if the breach involves fraud on creditors or is a statutory offence (e.g., S239 loans to directors), ratification cannot override the statutory prohibition."
+    },
+    {
+      "id": 6,
+      "question": "Maria, a director of CleanTech Ltd, was removed from the board under S146 CA 2014 by ordinary resolution after a dispute with co-shareholders. She claims she is entitled to compensation for the loss of her directorship. Under S146 CA 2014, which of the following is correct?",
+      "options": {
+        "A": "S146 provides that removal of a director automatically entitles them to compensation equivalent to 12 months' remuneration",
+        "B": "S146 CA 2014 preserves any contractual rights Maria may have — if she had a service contract, she may claim compensation for its breach under general contract law, but S146 itself confers no automatic right to compensation",
+        "C": "A removed director has a right to compensation only if the removal was effected without the required 28-day special notice",
+        "D": "A removed director is entitled to compensation under S146(5) equivalent to the value of their shares at the date of removal"
+      },
+      "correct_answer": "B",
+      "explanation": "S146 CA 2014 provides that a director may be removed by ordinary resolution with 28 days' special notice. S146(7) expressly preserves any rights to compensation or damages that the director may have under their service contract or otherwise. S146 itself creates no automatic right to compensation — the removed director must rely on any contractual entitlement (e.g., damages for wrongful dismissal under their service contract). The removal power under S146 cannot be excluded by the constitution."
+    },
+    {
+      "id": 7,
+      "question": "S146 CA 2014 requires that a director being removed be given special notice. What is the required period and what rights does the targeted director have?",
+      "options": {
+        "A": "21-day special notice; the director has no right to speak at the meeting",
+        "B": "28-day special notice to the company (which must notify the director); the director has the right to make written representations to be circulated to members (S146(4)) and to speak at the meeting",
+        "C": "14-day special notice; the director may make oral representations only",
+        "D": "28-day special notice; the director's representations may only be circulated if they are less than 1,000 words"
+      },
+      "correct_answer": "B",
+      "explanation": "S146(3) CA 2014 requires 28 days' special notice of a resolution to remove a director. Under S146(4), when such notice is received by the company, the director concerned has the right to have written representations (of a reasonable length) sent to every member to whom notice of the meeting is sent. The director also has the right to attend and speak at the meeting. These procedural rights cannot be waived by the company."
+    },
+    {
+      "id": 8,
+      "question": "Where a company discovers that a director made a secret profit of €200,000 but the company suffered no independently calculable financial loss, what remedy can the company pursue?",
+      "options": {
+        "A": "No remedy is available — without proven loss, there is nothing to recover",
+        "B": "An account of profits — requiring the director to disgorge the full €200,000 profit to the company, regardless of whether the company suffered any loss",
+        "C": "Compensation limited to nominal damages of €1 to mark the principle of the breach",
+        "D": "A remedy is available only if the profit was made at the direct expense of the company"
+      },
+      "correct_answer": "B",
+      "explanation": "The no-profit rule operates independently of loss: a director who makes a secret profit by reason of their fiduciary position must account for it whether or not the company suffered equivalent financial loss. This is confirmed by Regal Hastings v Gulliver [1942] and AIB v Diamond [2011]. The remedy of account of profits focuses on the defendant's gain rather than the plaintiff's loss — it is an equitable remedy designed to strip unjust enrichment from the fiduciary."
+    },
+    {
+      "id": 9,
+      "question": "A director of AllStar Ltd entered into a contract on behalf of the company with a supplier in which she had an undisclosed interest. The company wishes to set aside the contract. Under Irish company law, what type of transaction is this and what is the effect?",
+      "options": {
+        "A": "The contract is void ab initio — no action is required to set it aside",
+        "B": "The contract is voidable at the company's election — the company may affirm or rescind it, provided third party rights have not intervened and rescission is still possible",
+        "C": "The contract is automatically rescinded once the director's conflict is established",
+        "D": "The contract remains fully binding — the director's conflict is irrelevant to third party contractual rights"
+      },
+      "correct_answer": "B",
+      "explanation": "A contract entered into by a director in breach of their duty of disclosure and conflict-avoidance is voidable at the company's election — not void. The company may choose to affirm the transaction (especially if it is commercially advantageous) or rescind it. Rescission may be barred where: (i) the third party is an innocent purchaser for value without notice; (ii) substantial restitution has become impossible; or (iii) the company has affirmed the transaction with full knowledge. See S227(2) CA 2014 for third party protection."
+    },
+    {
+      "id": 10,
+      "question": "Which of the following types of conduct by a director CANNOT be ratified by a majority of shareholders, no matter how large the majority?",
+      "options": {
+        "A": "A director who failed to attend board meetings for six months",
+        "B": "A director who entered a transaction that should have been approved under S238 CA 2014 (substantial non-cash assets) without obtaining approval",
+        "C": "A director who knowingly carried on business with intent to defraud creditors — fraudulent trading under S599/S722 CA 2014",
+        "D": "A director who exercised a power for an improper purpose but the company suffered no loss"
+      },
+      "correct_answer": "C",
+      "explanation": "Fraudulent trading under S722/S599 CA 2014 involves a statutory criminal offence and cannot be ratified by shareholders — it is not a wrong merely against the company but involves conduct contrary to public policy and the interests of creditors and the general public. A shareholder resolution cannot remove criminal liability. This principle flows from Cook v Deeks and the broader rule that shareholders cannot ratify wrongs that affect creditors or that constitute crimes. S238 non-approval (Option B) can be ratified or affirmed in certain circumstances under S238(5)."
+    }
+  ]
+}

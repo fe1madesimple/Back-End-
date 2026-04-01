@@ -1,0 +1,131 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "Module_03_Lesson_01_Constitution_of_Trusts___The_Rule_in_Milroy_v_Lord.txt",
+  "module_number": 3,
+  "module_title": "Constitution of Trusts",
+  "lesson_number": 1,
+  "lesson_title": "Constitution of Trusts: The Rule in Milroy v Lord",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EQL_M03_L01_Q01",
+      "question": "What does 'constitution' of a trust mean in trust law?",
+      "options": {
+        "A": "The drafting and execution of a formal trust deed",
+        "B": "The process by which a trust becomes fully effective — legally complete and binding",
+        "C": "The registration of the trust with the relevant government authority",
+        "D": "The appointment of at least two trustees to manage the trust property"
+      },
+      "correct_answer": "B",
+      "explanation": "The 'constitution' of a trust refers to the process by which a trust becomes fully effective — legally complete and binding. Until a trust is properly constituted, it may be unenforceable, particularly by a volunteer. Constitution requires that legal title to the trust property reaches the trustee in the correct manner."
+    },
+    {
+      "id": "EQL_M03_L01_Q02",
+      "question": "The equitable maxim 'equity will not assist a volunteer' means that:",
+      "options": {
+        "A": "Charitable trusts cannot be enforced without the involvement of the Attorney General",
+        "B": "If a settlor promises to create a trust but never completes it, equity will not compel the transfer on behalf of a beneficiary who gave no consideration",
+        "C": "A trustee who acts without payment cannot be held liable for breach of trust",
+        "D": "Equity will not grant injunctions in cases where no money is at stake"
+      },
+      "correct_answer": "B",
+      "explanation": "'Equity will not assist a volunteer' means that if a settlor promises to create a trust but never actually completes it, equity will not step in to compel the transfer of property to the trustee on behalf of a beneficiary who has not given consideration. The promise remains incomplete and unenforceable. This was firmly established in Milroy v Lord [1862]."
+    },
+    {
+      "id": "EQL_M03_L01_Q03",
+      "question": "In Milroy v Lord [1862], Turner LJ laid down how many modes by which a trust can be constituted?",
+      "options": {
+        "A": "Two — a gift or a self-declaration of trust",
+        "B": "Three — transfer on trust, outright gift, or self-declaration of trust",
+        "C": "Four — transfer, gift, declaration, or donatio mortis causa",
+        "D": "Two — transfer on trust or direction to trustees"
+      },
+      "correct_answer": "B",
+      "explanation": "In Milroy v Lord [1862], Turner LJ laid down three modes by which a voluntary settlement can be valid and effectual: (1) transfer of trust property to trustees for the benefit of beneficiaries (transfer on trust); (2) outright transfer of property to the intended beneficiary (gift); (3) declaration by the settlor that they hold the property as trustee (self-declaration of trust)."
+    },
+    {
+      "id": "EQL_M03_L01_Q04",
+      "question": "The principle stated by Turner LJ in Milroy v Lord [1862] that 'there is no equity to perfect an imperfect gift' means:",
+      "options": {
+        "A": "An imperfect gift can always be perfected by an oral undertaking from the donor",
+        "B": "If the settlor has not completed the transfer by the correct legal method, equity will not intervene to complete it",
+        "C": "A gift can only be perfect if it is made by deed",
+        "D": "The beneficiary of an imperfect gift can sue in tort to recover the property"
+      },
+      "correct_answer": "B",
+      "explanation": "'There is no equity to perfect an imperfect gift' means that if the settlor has not done one of the three things perfectly — transfer, gift, or self-declaration — the trust or gift fails. Equity will not intervene to complete what the settlor has left incomplete. This is the central rule of the constitution of trusts."
+    },
+    {
+      "id": "EQL_M03_L01_Q05",
+      "question": "For a transfer on trust of shares in a company to be effective, what steps must be taken?",
+      "options": {
+        "A": "Delivery of the share certificates to the trustee",
+        "B": "Execution of a proper share transfer form and registration by the company",
+        "C": "Oral notification to the company secretary of the intended trust",
+        "D": "A deed of gift executed before a notary public"
+      },
+      "correct_answer": "B",
+      "explanation": "For a transfer on trust of shares in a company to be effective, the correct legal formalities must be followed: execution of a proper share transfer form and registration of the transfer by the company. Until both steps are completed, legal title has not passed and the trust is not constituted. This was the issue at the heart of Re Rose [1952]."
+    },
+    {
+      "id": "EQL_M03_L01_Q06",
+      "question": "The Re Rose principle [1952] holds that a transfer of shares is complete in equity when:",
+      "options": {
+        "A": "The company registers the new shareholding in its register",
+        "B": "The transferor has done everything required of them — even if a third party (the company) has not yet completed registration",
+        "C": "The share certificates are delivered to the trustee",
+        "D": "Both the transferor and transferee have signed the share transfer form"
+      },
+      "correct_answer": "B",
+      "explanation": "The Re Rose principle holds that a transfer is complete in equity when the transferor has done everything required of them — even if a third party such as a company has not yet completed registration. In Re Rose [1952], the settlor had executed share transfer forms and delivered them to the transferee, and the Court of Appeal held the transfer was complete in equity from that moment."
+    },
+    {
+      "id": "EQL_M03_L01_Q07",
+      "question": "In a self-declaration of trust, the settlor:",
+      "options": {
+        "A": "Transfers legal title of property to a separate, independent trustee",
+        "B": "Declares that they themselves hold their own property on trust for another, without any change of legal title",
+        "C": "Transfers both legal and beneficial title to the trustee simultaneously",
+        "D": "Appoints a beneficiary to become a co-trustee alongside the settlor"
+      },
+      "correct_answer": "B",
+      "explanation": "In a self-declaration of trust, the settlor declares that they hold their own property on trust for another person. There is no transfer of legal title — the settlor becomes the trustee. The trust is constituted the moment the declaration is made because the legal owner already holds the property and has simply declared themselves a trustee."
+    },
+    {
+      "id": "EQL_M03_L01_Q08",
+      "question": "Why are courts reluctant to infer that a person has declared themselves a trustee?",
+      "options": {
+        "A": "Because self-declarations of trust are not recognised in Irish law",
+        "B": "Because declaring oneself a trustee imposes onerous fiduciary obligations",
+        "C": "Because the Statute of Frauds requires all self-declarations to be in writing",
+        "D": "Because courts prefer outright gifts to the creation of trusts"
+      },
+      "correct_answer": "B",
+      "explanation": "Courts are reluctant to infer that a person has declared themselves a trustee because doing so imposes onerous fiduciary obligations on that person. The declaration must be clear and genuine. Trusteeship is a heavy burden and courts will not lightly treat ambiguous statements as amounting to a self-declaration of trust."
+    },
+    {
+      "id": "EQL_M03_L01_Q09",
+      "question": "In Jones v Lock [1865], a father put a cheque in his infant son's hand saying 'I give this to baby'. The court held:",
+      "options": {
+        "A": "The words constituted a valid self-declaration of trust",
+        "B": "The words were not sufficient to declare the father a trustee — it was an imperfect gift",
+        "C": "The gift was valid because delivery of the cheque to the infant completed it",
+        "D": "The trust was valid as a donatio mortis causa"
+      },
+      "correct_answer": "B",
+      "explanation": "In Jones v Lock [1865], the court held that the father's words were not sufficient to declare himself a trustee — it was an imperfect gift. The father had intended to make a gift, not declare himself a trustee. Equity would not treat a failed gift as a declaration of trust merely to save the transaction. The father had not used words sufficient to declare himself a trustee."
+    },
+    {
+      "id": "EQL_M03_L01_Q10",
+      "question": "Richards v Delbridge [1874] confirmed that equity will NOT:",
+      "options": {
+        "A": "Treat a failed gift as a declaration of trust merely to save the transaction",
+        "B": "Enforce a trust where the three certainties are not satisfied",
+        "C": "Recognise trusts of future property created by a volunteer",
+        "D": "Allow a trustee to make a profit from their position"
+      },
+      "correct_answer": "A",
+      "explanation": "Richards v Delbridge [1874] confirmed that equity will not treat an imperfect gift as a declaration of trust merely to save the transaction. Jessel MR held that where the donor's intention was to give and not to declare a trust, equity respects that distinction and will not impose a trust to perfect a failed gift. The donor must have intended to create a trust, not a gift."
+    }
+  ]
+}

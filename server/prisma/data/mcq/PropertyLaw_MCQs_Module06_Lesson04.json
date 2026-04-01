@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_06_Lesson_04_Bankruptcy_and_the_Family_Home.txt",
+  "module_number": 6,
+  "module_title": "Family Property",
+  "lesson_number": 4,
+  "lesson_title": "Bankruptcy and the Family Home",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M06_L04_Q01",
+      "question": "When an individual is adjudicated bankrupt in Ireland, where does their interest in the family home vest?",
+      "options": {
+        "A": "It vests in the bankrupt's spouse automatically by operation of law",
+        "B": "It vests in the Official Assignee in Bankruptcy",
+        "C": "It vests in the State pending distribution to creditors",
+        "D": "It remains vested in the bankrupt but is subject to a charge in favour of creditors"
+      },
+      "correct_answer": "B",
+      "explanation": "When an individual is adjudicated bankrupt, their property — including their interest in the family home — vests automatically in the Official Assignee in Bankruptcy. This occurs by operation of law under the Bankruptcy Act 1988, as substantially amended by the Personal Insolvency Act 2012 and the Personal Insolvency Amendment Act 2015."
+    },
+    {
+      "id": "PRL_M06_L04_Q02",
+      "question": "What is the effect on a joint tenancy when one co-owner is adjudicated bankrupt and their interest vests in the Official Assignee?",
+      "options": {
+        "A": "The joint tenancy continues unchanged because bankruptcy does not sever unity of title",
+        "B": "The joint tenancy is severed, and the Official Assignee holds the bankrupt's share as a tenant in common",
+        "C": "The non-bankrupt co-owner automatically acquires the bankrupt's share by survivorship",
+        "D": "The entire property vests in the Official Assignee as joint tenant with the non-bankrupt spouse"
+      },
+      "correct_answer": "B",
+      "explanation": "The vesting of the bankrupt's interest in the Official Assignee severs the joint tenancy because the unity of title is destroyed. From that point, the Official Assignee holds the bankrupt's share as a tenant in common. The non-bankrupt co-owner retains their own share as a tenant in common. There is no survivorship because the joint tenancy has been severed."
+    },
+    {
+      "id": "PRL_M06_L04_Q03",
+      "question": "Under which section of which Act can the Official Assignee apply to court for an order for the sale of the family home where the bankrupt held it as a co-owner?",
+      "options": {
+        "A": "Section 3 of the Family Home Protection Act 1976",
+        "B": "Section 31 of the Land and Conveyancing Law Reform Act 2009",
+        "C": "Section 111 of the Succession Act 1965",
+        "D": "Section 14 of the Family Law (Divorce) Act 1996"
+      },
+      "correct_answer": "B",
+      "explanation": "The Official Assignee may apply to court for an order for sale under section 31 of the Land and Conveyancing Law Reform Act 2009, which gives the court jurisdiction to order the sale of co-owned property and apportion the proceeds. This is the principal mechanism by which the Official Assignee can realise the bankrupt's interest in the family home."
+    },
+    {
+      "id": "PRL_M06_L04_Q04",
+      "question": "In Re JD, the Irish High Court held that when exercising its discretion under section 31 of the LCLRA 2009, the court must have regard to which European Convention right?",
+      "options": {
+        "A": "Article 6 — the right to a fair trial",
+        "B": "Article 1 of Protocol 1 — the right to peaceful enjoyment of possessions",
+        "C": "Article 8 — the right to respect for the home",
+        "D": "Article 14 — the prohibition of discrimination"
+      },
+      "correct_answer": "C",
+      "explanation": "In Re JD, the Irish High Court held that when exercising its discretion under section 31 of the LCLRA 2009, the court must have regard to the human rights dimension — including Article 8 of the European Convention on Human Rights, which protects the right to respect for the home. This is particularly relevant where dependent children occupy the family home."
+    },
+    {
+      "id": "PRL_M06_L04_Q05",
+      "question": "In Re Citro [1991], how did the English Court of Appeal approach the competing interests of creditors and the family's housing needs in bankruptcy cases?",
+      "options": {
+        "A": "The housing interests of the family should always prevail over creditors",
+        "B": "The interests of creditors will prevail over family housing interests except in exceptional circumstances",
+        "C": "The court must always delay any order for sale for at least five years where children are present",
+        "D": "The creditors and the family share equal priority and the court must balance them equally"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Citro [1991], the English Court of Appeal held that in most bankruptcy cases, the interests of creditors will prevail over the housing interests of the family, except in exceptional circumstances — such as serious illness of a child. The Irish courts have not gone quite so far and have been more willing to allow a period of time before requiring sale, particularly where dependent children are involved."
+    },
+    {
+      "id": "PRL_M06_L04_Q06",
+      "question": "Which piece of legislation governs the primary framework for bankruptcy in Ireland, as substantially amended by the Personal Insolvency Act 2012?",
+      "options": {
+        "A": "The Companies Act 2014",
+        "B": "The Bankruptcy Act 1988",
+        "C": "The Land and Conveyancing Law Reform Act 2009",
+        "D": "The Family Home Protection Act 1976"
+      },
+      "correct_answer": "B",
+      "explanation": "The governing statute for bankruptcy in Ireland is the Bankruptcy Act 1988, as substantially amended by the Personal Insolvency Act 2012 and the Personal Insolvency Amendment Act 2015. The 2012 Act introduced significant reforms including new debt resolution mechanisms such as the Debt Settlement Arrangement and the Personal Insolvency Arrangement."
+    },
+    {
+      "id": "PRL_M06_L04_Q07",
+      "question": "Which three debt resolution mechanisms were introduced by the Personal Insolvency Act 2012?",
+      "options": {
+        "A": "Debt Relief Notice, Debt Settlement Arrangement, and Personal Insolvency Arrangement",
+        "B": "Voluntary Arrangement, Administration Order, and Company Receivership",
+        "C": "Mortgage Arrears Resolution Process, Personal Insolvency Arrangement, and Official Bankruptcy",
+        "D": "Debt Consolidation Order, Repayment Agreement, and Asset Freezing Order"
+      },
+      "correct_answer": "A",
+      "explanation": "The Personal Insolvency Act 2012 introduced three debt resolution mechanisms: the Debt Relief Notice, the Debt Settlement Arrangement, and the Personal Insolvency Arrangement. The Personal Insolvency Arrangement is most relevant in the mortgage and family home context because it is designed to allow debtors to retain the family home where the mortgage can be restructured on a sustainable basis."
+    },
+    {
+      "id": "PRL_M06_L04_Q08",
+      "question": "Why does the vesting of the bankrupt's interest in the Official Assignee NOT trigger the consent requirement under the Family Home Protection Act 1976?",
+      "options": {
+        "A": "Because the 1976 Act only applies to properties valued under a certain threshold",
+        "B": "Because the 1976 Act's consent requirement applies to conveyances, and vesting occurs by operation of law, not by conveyance",
+        "C": "Because the bankrupt's spouse consents to bankruptcy implicitly by residing in the home",
+        "D": "Because the Official Assignee is exempt from the 1976 Act as a public officer"
+      },
+      "correct_answer": "B",
+      "explanation": "The Family Home Protection Act 1976 applies to conveyances — and the vesting of the bankrupt's interest in the Official Assignee occurs by operation of law, not by conveyance. Therefore, the 1976 Act's consent requirement is not triggered. The non-bankrupt spouse cannot use the 1976 Act to block the Official Assignee from dealing with the bankrupt's interest. The non-bankrupt spouse's protection lies in their own beneficial interest in the property."
+    },
+    {
+      "id": "PRL_M06_L04_Q09",
+      "question": "What is the role of a Personal Insolvency Practitioner under the Personal Insolvency Act 2012?",
+      "options": {
+        "A": "To act as a receiver appointed by the court to sell the bankrupt's assets",
+        "B": "To supervise agreed debt resolution arrangements between the debtor and creditors",
+        "C": "To represent the Official Assignee in court proceedings",
+        "D": "To act as trustee of the family home pending resolution of bankruptcy"
+      },
+      "correct_answer": "B",
+      "explanation": "A Personal Insolvency Practitioner is an Insolvency Service-approved professional who supervises debt resolution mechanisms under the Personal Insolvency Act 2012, including Personal Insolvency Arrangements. The aim of the PIA is to allow a debtor to retain the family home where the mortgage is restructured on a sustainable basis, subject to agreement with creditors or court approval."
+    },
+    {
+      "id": "PRL_M06_L04_Q10",
+      "question": "What are the two options available to the Official Assignee in relation to the bankrupt's co-owned family home after bankruptcy severs the joint tenancy?",
+      "options": {
+        "A": "Apply for an injunction preventing sale, or apply for a charging order",
+        "B": "Seek partition or apply for an order for sale under section 31 LCLRA 2009",
+        "C": "Register a caution on the folio or apply for a property adjustment order",
+        "D": "Apply for a possession order under section 97 LCLRA 2009 or appoint a receiver"
+      },
+      "correct_answer": "B",
+      "explanation": "Once bankruptcy severs the joint tenancy and the Official Assignee holds the bankrupt's share as a tenant in common, the Official Assignee has two principal options: seek formal partition of the property, or — more practically — apply to the court for an order for sale under section 31 of the LCLRA 2009. The court then retains a discretion in how to exercise its jurisdiction, including having regard to the human rights of occupants."
+    }
+  ]
+}

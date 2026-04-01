@@ -1,0 +1,131 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module01_Lesson01.txt",
+  "module_number": 1,
+  "module_title": "Introduction to Company Law and Incorporation",
+  "lesson_number": 1,
+  "lesson_title": "What is Company Law? The Nature of a Company",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which Act consolidated Irish company law into a single statute?",
+      "options": {
+        "A": "Companies Act 1963",
+        "B": "Companies Act 2014",
+        "C": "Companies (Amendment) Act 1990",
+        "D": "Company Law Enforcement Act 2001"
+      },
+      "correct_answer": "B",
+      "explanation": "The Companies Act 2014 consolidated 16 separate company law statutes into a single Act of 1,448 sections, coming into operation on 1 June 2015."
+    },
+    {
+      "id": 2,
+      "question": "How many sections does the Companies Act 2014 contain?",
+      "options": {
+        "A": "963",
+        "B": "1,200",
+        "C": "1,448",
+        "D": "1,500"
+      },
+      "correct_answer": "C",
+      "explanation": "The Companies Act 2014 contains 1,448 sections, making it one of the most substantial pieces of legislation in Irish legal history."
+    },
+    {
+      "id": 3,
+      "question": "A company acquires legal personality upon the issue of which document?",
+      "options": {
+        "A": "A memorandum of association",
+        "B": "A certificate of incorporation",
+        "C": "An annual return",
+        "D": "A shareholders' agreement"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 37 CA 2014, upon registration the Registrar issues a certificate of incorporation, at which point the company becomes a body corporate with a legal existence separate from its members."
+    },
+    {
+      "id": 4,
+      "question": "Under section 37 CA 2014, what is the effect of incorporation on the liability of members of a company limited by shares?",
+      "options": {
+        "A": "Members are personally liable for all company debts",
+        "B": "Members' liability is unlimited",
+        "C": "Members' liability is limited to the amount unpaid on their shares",
+        "D": "Members bear no liability whatsoever"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 37 CA 2014 provides that incorporation limits members' liability to the amount, if any, unpaid on their shares. This is the foundational benefit of the limited liability company."
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is NOT one of the five types of company that may be formed under the Companies Act 2014?",
+      "options": {
+        "A": "Private company limited by shares (LTD)",
+        "B": "Designated activity company (DAC)",
+        "C": "Unlimited liability company (ULC)",
+        "D": "Registered partnership (RP)"
+      },
+      "correct_answer": "D",
+      "explanation": "The CA 2014 provides for five types of company: LTD, DAC, PLC, CLG (company limited by guarantee), and ULC. A registered partnership is not a company type under the CA 2014."
+    },
+    {
+      "id": 6,
+      "question": "In Salomon v Salomon & Co Ltd [1897], the House of Lords held that a company is:",
+      "options": {
+        "A": "An agent of its principal shareholders",
+        "B": "A separate legal entity distinct from its members",
+        "C": "An alter ego of the majority shareholder",
+        "D": "A partnership in disguise if it has fewer than seven members"
+      },
+      "correct_answer": "B",
+      "explanation": "In Salomon v Salomon & Co Ltd [1897] AC 22, the House of Lords definitively established that a validly incorporated company is a legal entity entirely separate and distinct from its members, regardless of who owns or controls it."
+    },
+    {
+      "id": 7,
+      "question": "Which body is responsible for the registration of companies in Ireland?",
+      "options": {
+        "A": "The Corporate Enforcement Authority (CEA)",
+        "B": "The Companies Registration Office (CRO)",
+        "C": "The Financial Conduct Authority (FCA)",
+        "D": "The Department of Enterprise, Trade and Employment"
+      },
+      "correct_answer": "B",
+      "explanation": "The Companies Registration Office (CRO) is the central repository of public statutory information on Irish companies and is responsible for registration of new companies and maintenance of the public register."
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is a consequence of separate legal personality?",
+      "options": {
+        "A": "The company cannot own property in its own name",
+        "B": "The company can sue and be sued in its own name",
+        "C": "The company's assets belong to its shareholders",
+        "D": "Shareholders are liable for the company's debts"
+      },
+      "correct_answer": "B",
+      "explanation": "A consequence of separate legal personality is that the company can sue and be sued in its own name, enter contracts, own property, and employ staff — all distinct from any action taken by its shareholders."
+    },
+    {
+      "id": 9,
+      "question": "Perpetual succession means that a company:",
+      "options": {
+        "A": "Automatically dissolves on the death of its founding member",
+        "B": "Continues in existence regardless of changes in membership",
+        "C": "Must wind up after 25 years of trading",
+        "D": "Passes to the heirs of the majority shareholder on death"
+      },
+      "correct_answer": "B",
+      "explanation": "Perpetual succession is a key characteristic of incorporation: the company continues to exist regardless of changes in its membership through death, retirement, or transfer of shares."
+    },
+    {
+      "id": 10,
+      "question": "The document that governs a private limited company (LTD) under the CA 2014 is called:",
+      "options": {
+        "A": "The memorandum and articles of association",
+        "B": "The constitution",
+        "C": "The shareholders' agreement",
+        "D": "The debenture"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the CA 2014, a private limited company (LTD) has a single constitutional document called the constitution, which replaces the separate memorandum and articles of association used under the older regime."
+    }
+  ]
+}

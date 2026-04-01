@@ -1,0 +1,139 @@
+{
+  "subject": "Criminal Law",
+  "module": 13,
+  "module_title": "Criminal Procedure, Courts, and Bail",
+  "lesson": 2,
+  "lesson_title": "Bail and the Right to Silence",
+  "questions": [
+    {
+      "id": "CL_M13_L02_Q01",
+      "question": "The constitutional right to liberty pending trial is protected under which provision of the Irish Constitution?",
+      "options": {
+        "A": "Article 38.1 — the right to a fair trial in due course of law.",
+        "B": "Article 40.4.1 — no citizen shall be deprived of personal liberty save in accordance with law.",
+        "C": "Article 34 — the right of access to the courts.",
+        "D": "Article 40.3.1 — the right to bodily integrity."
+      },
+      "correct_answer": "B",
+      "explanation": "Article 40.4.1 of the Constitution provides that no citizen shall be deprived of their personal liberty save in accordance with law. This is the constitutional foundation of bail — detention before conviction is prima facie a deprivation of liberty and can only be justified by law. It is the starting point for any exam answer on bail.",
+      "topic": "Bail — constitutional foundation, Art 40.4.1"
+    },
+    {
+      "id": "CL_M13_L02_Q02",
+      "question": "Which constitutional amendment introduced the 'danger to the community' ground for refusing bail, and in what year was it passed?",
+      "options": {
+        "A": "The Fifteenth Amendment — 1994.",
+        "B": "The Sixteenth Amendment — 1996.",
+        "C": "The Seventeenth Amendment — 1997.",
+        "D": "The Fourteenth Amendment — 1992."
+      },
+      "correct_answer": "B",
+      "explanation": "The Sixteenth Amendment of the Constitution, passed in 1996, inserted Article 40.4.7 and introduced the danger to the community ground for refusing bail. It permitted courts to deny bail to a person charged with a serious offence where it is reasonably considered necessary to prevent the commission of a serious offence by that person. The Bail Act 1997 then operationalised this new constitutional ground.",
+      "topic": "Bail — Sixteenth Amendment, Art 40.4.7"
+    },
+    {
+      "id": "CL_M13_L02_Q03",
+      "question": "Under the Bail Act 1997, which of the following is the correct standard a court must apply when considering the danger-to-the-community ground for refusing bail?",
+      "options": {
+        "A": "The court must be satisfied beyond reasonable doubt that the accused would commit a serious offence if released.",
+        "B": "The court must be satisfied on the balance of probabilities that the accused has previously committed a serious offence.",
+        "C": "The court must be satisfied that it is reasonably probable that the accused would commit a serious offence if released.",
+        "D": "The court must find a prima facie case that the accused poses any risk to the public."
+      },
+      "correct_answer": "C",
+      "explanation": "Under the Bail Act 1997, the standard for refusing bail on the danger-to-the-community ground is that the court must be satisfied that it is reasonably probable that the accused would commit a serious offence if released. This is a structured, multi-factor assessment — not proof beyond reasonable doubt, but more than mere suspicion. The court must assess the specific evidence in the individual case.",
+      "topic": "Bail — Bail Act 1997, danger ground standard"
+    },
+    {
+      "id": "CL_M13_L02_Q04",
+      "question": "In People (DPP) v McGinley, what was the principal contribution of the court to Irish bail law?",
+      "options": {
+        "A": "The court held that the Bail Act 1997 was unconstitutional as it reversed the presumption of innocence.",
+        "B": "The court set out how the danger-to-the-community ground is to be applied in practice, requiring a structured multi-factor assessment.",
+        "C": "The court held that bail must be refused in all cases involving previous convictions for serious offences.",
+        "D": "The court established the rule that bail conditions must include electronic monitoring in all serious cases."
+      },
+      "correct_answer": "B",
+      "explanation": "People (DPP) v McGinley is the leading Irish authority on the operation of the Bail Act 1997 danger-to-the-community ground. The court set out how this ground is to be applied in practice — it is a structured, multi-factor judicial assessment requiring genuine engagement with the individual circumstances, not a mechanical checklist.",
+      "topic": "Bail — People (DPP) v McGinley"
+    },
+    {
+      "id": "CL_M13_L02_Q05",
+      "question": "Which of the following correctly lists all three grounds on which bail may be refused under Irish law?",
+      "options": {
+        "A": "Risk of absconding; risk of reoffending; risk of failing to pay bail money.",
+        "B": "Risk of absconding; risk of interfering with witnesses or obstructing justice; risk of committing further serious offences.",
+        "C": "Seriousness of the offence; previous criminal record; risk of absconding.",
+        "D": "Risk of interfering with witnesses; failure to surrender a passport; insufficient ties to the jurisdiction."
+      },
+      "correct_answer": "B",
+      "explanation": "The three grounds for refusing bail are: (1) risk of absconding before trial — the traditional ground; (2) risk of interfering with witnesses or obstructing the course of justice — also a traditional ground; and (3) risk of committing further serious offences — the Article 40.4.7 / Bail Act 1997 danger ground. These grounds are not mutually exclusive.",
+      "topic": "Bail — three grounds for refusal"
+    },
+    {
+      "id": "CL_M13_L02_Q06",
+      "question": "Section 18 of the Criminal Justice Act 1984 permits an adverse inference to be drawn from an accused's silence in which specific circumstances?",
+      "options": {
+        "A": "Where the accused refuses to answer any question during Garda questioning.",
+        "B": "Where the accused fails to explain the presence of an object, substance, or mark when reasonably called upon to do so, and later relies on that explanation in their defence.",
+        "C": "Where the accused elects not to give evidence at trial.",
+        "D": "Where the accused invokes their right to silence immediately on arrest."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 18 of the Criminal Justice Act 1984 is narrow in its operation. It applies where: (a) the accused failed or refused to explain the presence of an object, substance, or mark during questioning, in circumstances where an explanation was reasonably called for; and (b) the accused subsequently relies on that explanation in their defence at trial. The adverse inference is drawn from the failure to give the explanation at the earlier stage.",
+      "topic": "Right to silence — s.18 CJA 1984, adverse inference"
+    },
+    {
+      "id": "CL_M13_L02_Q07",
+      "question": "What is the critical limitation on adverse inferences that is fundamental to the constitutionality of Sections 18 and 19 of the Criminal Justice Act 1984?",
+      "options": {
+        "A": "An adverse inference can only be drawn if the accused was legally represented during questioning.",
+        "B": "An adverse inference cannot, on its own, found a conviction — it can only supplement other evidence of guilt.",
+        "C": "An adverse inference can only be drawn in proceedings for indictable offences, not summary proceedings.",
+        "D": "An adverse inference can be drawn only where the accused had a previous conviction."
+      },
+      "correct_answer": "B",
+      "explanation": "The critical limitation — and the cornerstone of the constitutionality of the adverse inference provisions — is that an adverse inference cannot, on its own, found a conviction. There must be other evidence of guilt. Silence merely supplements that evidence; it cannot substitute for it. Without this limitation, the provisions would impermissibly shift the burden of proof to the accused.",
+      "topic": "Right to silence — limitation on adverse inferences"
+    },
+    {
+      "id": "CL_M13_L02_Q08",
+      "question": "In Heaney and McGuinness v Ireland (ECtHR 2001), the European Court of Human Rights held that which Irish statutory provision violated Article 6 of the ECHR?",
+      "options": {
+        "A": "Section 4 of the Criminal Justice Act 1984 — the twenty-four-hour detention power.",
+        "B": "Section 52 of the Offences Against the State Act 1939 — which required a person to give an account of their movements on pain of criminal sanction.",
+        "C": "Section 18 of the Criminal Justice Act 1984 — the adverse inference provision relating to objects.",
+        "D": "Section 21 of the Offences Against the State Act 1939 — the reverse onus membership provision."
+      },
+      "correct_answer": "B",
+      "explanation": "In Heaney and McGuinness v Ireland (ECtHR 2001), the Court held that Section 52 of the OATSA 1939 — which required a person to give an account of their movements, under threat of criminal sanction for failure to do so — violated Article 6 of the ECHR. Compelling a person to speak under threat of prosecution destroys the essence of the right to silence. This distinguishes compelled disclosure from mere adverse inference regimes.",
+      "topic": "Right to silence — Heaney and McGuinness v Ireland, ECHR"
+    },
+    {
+      "id": "CL_M13_L02_Q09",
+      "question": "In Murray v UK (ECtHR 1996), the European Court of Human Rights established what two conditions for adverse inference regimes to be compatible with Article 6 of the ECHR?",
+      "options": {
+        "A": "The accused must have been charged before questioning; and the inference must be expressly drawn by the judge in summing up.",
+        "B": "Adequate safeguards must be in place — in particular, the right to legal advice before questioning; and the inference must not be the sole or principal basis for conviction.",
+        "C": "The accused must be warned of the consequences of silence; and the inference must be corroborated by at least two independent witnesses.",
+        "D": "The adverse inference provision must be contained in primary legislation; and it must apply equally to prosecution and defence."
+      },
+      "correct_answer": "B",
+      "explanation": "In Murray v UK [1996], the ECtHR held that adverse inference regimes are not automatically incompatible with Article 6, provided: (1) adequate safeguards are in place — in particular, the right to legal advice before questioning begins; and (2) the inference is not the sole or principal basis for conviction. The Murray principle is the template for assessing any adverse inference provision against ECHR standards.",
+      "topic": "Right to silence — Murray v UK, ECHR compatibility"
+    },
+    {
+      "id": "CL_M13_L02_Q10",
+      "question": "An accused person remained completely silent during Garda questioning under Section 4 of the Criminal Justice Act 1984 and gave no account of why their fingerprints were found at the scene of the burglary. At trial, they sought to explain the fingerprints for the first time. Which provision is most directly engaged, and what is the key limitation that must be applied?",
+      "options": {
+        "A": "Section 18 CJA 1984 is engaged — but the adverse inference is only available if corroborated by a confession.",
+        "B": "Section 19 CJA 1984 is engaged — and there is no limitation; the inference alone can found a conviction.",
+        "C": "Section 18 CJA 1984 is engaged — an adverse inference may be drawn from the failure to explain the fingerprints during questioning, but the inference cannot on its own found a conviction; there must be other evidence of guilt.",
+        "D": "Section 18 CJA 1984 is engaged — but the inference can only be drawn if the accused was charged before questioning commenced."
+      },
+      "correct_answer": "C",
+      "explanation": "Fingerprints constitute a mark or substance for the purposes of Section 18 of the Criminal Justice Act 1984. The accused failed to explain them during questioning when an explanation was reasonably called for, and is now relying on an explanation for the first time at trial. Section 18 therefore permits the court to draw an adverse inference. However, the critical limitation — drawn from Murray v UK and fundamental to constitutionality — is that the inference alone cannot found a conviction. There must be other independent evidence of guilt.",
+      "topic": "Right to silence — s.18 CJA 1984, applied problem"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "subject": "Criminal Law",
+  "module": 6,
+  "lesson": 2,
+  "title": "Sexual Assault and Rape Under Section 4",
+  "questions": [
+    {
+      "id": "CL_M06_L02_Q01",
+      "question": "Which statute creates the offence of sexual assault in Irish law?",
+      "options": {
+        "A": "Criminal Law (Rape) Act 1981, s.2",
+        "B": "Criminal Law (Rape) (Amendment) Act 1990, s.2(1)",
+        "C": "Criminal Law (Sexual Offences) Act 2017, s.48",
+        "D": "Criminal Justice Act 1951, s.13"
+      },
+      "correct_answer": "B",
+      "explanation": "Sexual assault is defined in Section 2(1) of the Criminal Law (Rape) (Amendment) Act 1990. The 1981 Act creates rape under s.2(1); the 2017 Act reforms consent law; the Criminal Justice Act 1951 deals with different matters.",
+      "legislation": "Criminal Law (Rape) (Amendment) Act 1990, s.2(1)"
+    },
+    {
+      "id": "CL_M06_L02_Q02",
+      "question": "Which of the following is the correct test for determining whether an assault is 'sexual in nature' for the purposes of sexual assault?",
+      "options": {
+        "A": "The accused must have been motivated by sexual desire.",
+        "B": "The conduct must be objectively capable of being regarded by right-minded persons as sexual.",
+        "C": "The complainant must have perceived the act as sexual.",
+        "D": "The act must involve direct contact with the complainant's genitalia."
+      },
+      "correct_answer": "B",
+      "explanation": "The test from R v Court [1989] is objective — whether the conduct is capable of being regarded by right-minded persons as sexual. The accused's subjective motivation is irrelevant, as confirmed in R v Bernier [2003]. Direct genital contact is not required.",
+      "cases": "R v Court [1989]"
+    },
+    {
+      "id": "CL_M06_L02_Q03",
+      "question": "In DPP v Babayev [2019], the Irish Court of Appeal confirmed which aspect of the mens rea for sexual assault?",
+      "options": {
+        "A": "Recklessness as to the sexual nature of the act is sufficient to establish the offence.",
+        "B": "Only gross negligence as to consent satisfies the mental element.",
+        "C": "Intention is required for both the assault element and the indecency element.",
+        "D": "Sexual gratification must be proved as part of the mens rea."
+      },
+      "correct_answer": "C",
+      "explanation": "In DPP v Babayev [2019], the Court of Appeal confirmed that intention is the mens rea required for both the assault element and the indecency element of sexual assault. DPP v MX [2020] further confirmed that recklessness as to absence of consent also satisfies the mens rea.",
+      "cases": "DPP v Babayev [2019]"
+    },
+    {
+      "id": "CL_M06_L02_Q04",
+      "question": "In R v Tabassam [2000], the Court of Appeal held that consent was vitiated because:",
+      "options": {
+        "A": "The accused was HIV positive and had not disclosed this to the complainants.",
+        "B": "The accused deceived the complainants as to his qualifications and the nature of the act.",
+        "C": "The complainants had not given any form of consent to the touching.",
+        "D": "The accused's motive was sexual gratification which he concealed from the complainants."
+      },
+      "correct_answer": "B",
+      "explanation": "In R v Tabassam [2000], consent was vitiated by fraud as to the accused's medical qualifications and as to the nature of the act — the complainants thought they were participating in a medical procedure. Fraud as to qualifications or the nature of the act vitiates consent for sexual assault. This contrasts with fraud as to health (HIV status), which does not vitiate consent.",
+      "cases": "R v Tabassam [2000]"
+    },
+    {
+      "id": "CL_M06_L02_Q05",
+      "question": "Which of the following acts does NOT constitute rape under Section 4 of the Criminal Law (Rape) (Amendment) Act 1990?",
+      "options": {
+        "A": "Penile penetration of a man's anus.",
+        "B": "Penile penetration of a woman's mouth.",
+        "C": "Penetration of a woman's vagina by an object held by another person.",
+        "D": "Non-consensual penile penetration of a woman's vagina."
+      },
+      "correct_answer": "D",
+      "explanation": "Non-consensual penile penetration of a woman's vagina constitutes rape under Section 2(1) of the 1981 Act, not rape under Section 4. Section 4 covers penile penetration of the anus, penile penetration of the mouth, and penetration of a woman's vagina by an object (not a penis) held by another person.",
+      "legislation": "Criminal Law (Rape) (Amendment) Act 1990, s.4"
+    },
+    {
+      "id": "CL_M06_L02_Q06",
+      "question": "Which of the following is a key structural difference between rape under s.2(1) of the 1981 Act and rape under s.4 of the 1990 Act?",
+      "options": {
+        "A": "Only rape under s.4 carries a maximum penalty of life imprisonment.",
+        "B": "Rape under s.4 is gender-neutral; a woman can commit it and a man can be the victim.",
+        "C": "Rape under s.2(1) requires penetration; rape under s.4 does not.",
+        "D": "Rape under s.4 can be tried summarily; rape under s.2(1) cannot."
+      },
+      "correct_answer": "B",
+      "explanation": "Rape under s.4 is gender-neutral — either gender can be the perpetrator or the victim. Rape under s.2(1) requires penile penetration of the vagina and can only be committed by a man against a woman. Both offences carry a maximum of life imprisonment and are exclusively indictable.",
+      "legislation": "Criminal Law (Rape) (Amendment) Act 1990, s.4"
+    },
+    {
+      "id": "CL_M06_L02_Q07",
+      "question": "In DPP v GP [2021] IECA, the accused was convicted of rape under Section 4. What were the facts?",
+      "options": {
+        "A": "The accused penetrated the complainant's vagina with an object while she was asleep.",
+        "B": "The accused inserted his penis into the complainant's mouth while she was asleep in a car.",
+        "C": "The accused anally penetrated the complainant after she had withdrawn consent.",
+        "D": "The accused digitally penetrated the complainant while she was incapacitated by alcohol."
+      },
+      "correct_answer": "B",
+      "explanation": "In DPP v GP [2021] IECA, the complainant fell asleep in the accused's car after a night out. She woke to find his penis in her mouth. He was convicted of rape under s.4 (oral penetration) and sentenced to six years imprisonment. The case also illustrates the principle that a sleeping person cannot consent.",
+      "cases": "DPP v GP [2021] IECA"
+    },
+    {
+      "id": "CL_M06_L02_Q08",
+      "question": "Following the 2024 Act, which standard applies to the accused's belief in consent for a charge of rape under Section 4?",
+      "options": {
+        "A": "Subjective — the accused must only have honestly believed consent was present.",
+        "B": "Objective — the belief in consent must have been reasonable.",
+        "C": "The 2024 Act only applies to rape under s.2(1) and not to s.4.",
+        "D": "The belief is irrelevant to s.4 rape, which is a strict liability offence."
+      },
+      "correct_answer": "B",
+      "explanation": "The Criminal Law (Sexual Offences and Human Trafficking) Act 2024 applies to rape under Section 4 as well as rape under s.2(1). Following the Act, an accused charged with s.4 rape must have held an objectively reasonable belief in consent. An honest but unreasonable belief is no longer a defence.",
+      "legislation": "Criminal Law (Sexual Offences and Human Trafficking) Act 2024"
+    },
+    {
+      "id": "CL_M06_L02_Q09",
+      "question": "The maximum penalty for aggravated sexual assault under Section 3 of the Criminal Law (Rape) (Amendment) Act 1990 is:",
+      "options": {
+        "A": "Ten years imprisonment.",
+        "B": "Fourteen years imprisonment.",
+        "C": "Life imprisonment.",
+        "D": "Five years imprisonment."
+      },
+      "correct_answer": "C",
+      "explanation": "Aggravated sexual assault under Section 3 of the 1990 Act — involving serious violence, threat of serious violence, or causing grave injury, humiliation, or degradation — carries life imprisonment on indictment. Sexual assault under s.2 carries a maximum of ten years; rape under s.4 also carries a maximum of life imprisonment.",
+      "legislation": "Criminal Law (Rape) (Amendment) Act 1990, s.3"
+    },
+    {
+      "id": "CL_M06_L02_Q10",
+      "question": "R v Bernier [2003] is authority for which proposition in the context of sexual assault?",
+      "options": {
+        "A": "The accused must have intended to sexually gratify himself for the offence to be made out.",
+        "B": "Sexual gratification is not an essential element — the objective sexual character of the act is what matters.",
+        "C": "Recklessness as to the sexual nature of the act is insufficient mens rea.",
+        "D": "Only penile contact can constitute an act of a sexual nature."
+      },
+      "correct_answer": "B",
+      "explanation": "In R v Bernier [2003], the Canadian Court of Appeal held that evidence of sexual desire or gratification is not an essential element of sexual assault. What matters is the objective sexual character of the conduct. The accused in Bernier appeared to be motivated by a desire to humiliate rather than by sexual desire, but the conviction was upheld.",
+      "cases": "R v Bernier [2003]"
+    }
+  ]
+}

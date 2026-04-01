@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_10_Lesson_05_Provision_for_Children_Section_117.txt",
+  "module_number": 10,
+  "module_title": "Succession Law",
+  "lesson_number": 5,
+  "lesson_title": "Provision for Children: Section 117 of the Succession Act 1965",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M10_L05_Q01",
+      "question": "Under section 117(1) of the Succession Act 1965, what must a court find before it can make an order for provision from the estate in favour of a child?",
+      "options": {
+        "A": "That the testator was of unsound mind when making the will",
+        "B": "That the testator failed in their moral duty to make proper provision for the child in accordance with their means",
+        "C": "That the child was financially dependent on the testator at the date of death",
+        "D": "That the child received less than an equal share compared to siblings"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 117(1) of the Succession Act 1965 provides that where a testator fails in their moral duty to make proper provision for a child in accordance with their means, the court may order such provision to be made from the estate as it thinks just. The court must first find a failure in moral duty before it can exercise its discretion — it is not sufficient to show that the provision was merely inadequate or sub-optimal."
+    },
+    {
+      "id": "PRL_M10_L05_Q02",
+      "question": "In In re the Estate of JH [1984], what test did the Supreme Court establish for applications under section 117?",
+      "options": {
+        "A": "Whether the child was financially destitute at the time of the testator's death",
+        "B": "Whether the testator, in the circumstances known to them at the date of the will, failed in their moral duty to make proper provision for a child — assessed from the perspective of a just and prudent parent",
+        "C": "Whether the child received less than the testator's other children under the will",
+        "D": "Whether the provision made in the will was less than the child's legal right share"
+      },
+      "correct_answer": "B",
+      "explanation": "In In re the Estate of JH [1984], the Supreme Court established the authoritative test for section 117 applications: whether the testator, in the circumstances known to them at the date of the will, failed in their moral duty to make proper provision for a child. The court views this through the lens of a just and prudent parent — what would a reasonable, loving parent in the testator's circumstances have done for that child? This test is mandatory authority and must be cited in every section 117 answer."
+    },
+    {
+      "id": "PRL_M10_L05_Q03",
+      "question": "What is the 'just and prudent parent' standard in section 117 applications?",
+      "options": {
+        "A": "A standard requiring the testator to treat all children equally regardless of their circumstances",
+        "B": "The standard asks what a reasonable, loving parent in the testator's circumstances would have done for the child in question",
+        "C": "A standard requiring the testator to leave at least one third of the estate to any surviving child",
+        "D": "A standard requiring the testator to match any provision made for a non-marital child with that made for marital children"
+      },
+      "correct_answer": "B",
+      "explanation": "The just and prudent parent standard asks: what would a reasonable, loving parent in the testator's circumstances have done for this particular child? This standard acknowledges that different children may deserve different treatment — a financially independent child may require less provision than a child with special needs or a child who made sacrifices to care for the testator. The standard is objective, assessed by the court applying its judgment to the testator's known circumstances."
+    },
+    {
+      "id": "PRL_M10_L05_Q04",
+      "question": "In MPD v MD, what did the Irish High Court emphasise about the obligation to treat children equally under section 117?",
+      "options": {
+        "A": "A testator is legally obliged to treat all children equally in their will",
+        "B": "A parent is not obliged to treat all children equally — the circumstances of each child differ",
+        "C": "A testator who treats children unequally will always be found to have failed in their moral duty",
+        "D": "A testator must justify any unequal provision in a signed statement attached to the will"
+      },
+      "correct_answer": "B",
+      "explanation": "In MPD v MD, the Irish High Court emphasised that a parent is not obliged to treat all children equally — the circumstances of each child differ. A child who has been financially assisted during the parent's lifetime, or who is financially independent, may have a weaker section 117 claim. Conversely, a child with special needs, or who made sacrifices to care for the parent, may have a stronger claim. The section 117 assessment is child-specific, not comparative between siblings."
+    },
+    {
+      "id": "PRL_M10_L05_Q05",
+      "question": "Under section 117(6) of the Succession Act 1965, what is the time limit for making a section 117 application?",
+      "options": {
+        "A": "Six months from the date of the testator's death",
+        "B": "Twelve months from the first taking out of representation — the date of the grant of probate or letters of administration",
+        "C": "Two years from the date of the testator's death",
+        "D": "Three years from the date the child first becomes aware of the will's contents"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 117(6) of the Succession Act 1965, a section 117 application must be made within twelve months from the first taking out of representation — that is, from the date of the grant of probate or letters of administration. This is a strict statutory limitation. In Walsh v Walsh, the High Court confirmed that the time limit is absolute and that delay defeats the application regardless of the merits."
+    },
+    {
+      "id": "PRL_M10_L05_Q06",
+      "question": "In Walsh v Walsh, what did the High Court confirm about the section 117(6) time limit?",
+      "options": {
+        "A": "The court has a discretion to extend the time limit in cases of genuine hardship",
+        "B": "The time limit is absolute and delay defeats the application regardless of the merits",
+        "C": "The time limit can be extended if the child was unaware of the testator's death",
+        "D": "The time limit runs from the date the child discovers they have been inadequately provided for, not from the grant"
+      },
+      "correct_answer": "B",
+      "explanation": "In Walsh v Walsh, the Irish High Court confirmed that the section 117(6) twelve-month time limit is absolute and that delay defeats the application regardless of its merits. Courts have held that the period cannot be extended save in the most exceptional circumstances. The time limit runs from the first taking out of representation — the date of the grant of probate — not from the child's discovery of the will's contents."
+    },
+    {
+      "id": "PRL_M10_L05_Q07",
+      "question": "What form does a court order under section 117 take?",
+      "options": {
+        "A": "Always a fixed fraction of the net estate equivalent to the legal right share",
+        "B": "A discretionary order for provision from the estate — which might be a lump sum, a right to reside, or a transfer of a specific asset",
+        "C": "Always a monetary payment only — no transfer of specific assets is permitted",
+        "D": "Always a life interest in the family home"
+      },
+      "correct_answer": "B",
+      "explanation": "The remedy under section 117 is discretionary — the court makes such order for provision from the estate as it thinks just. This might be a lump sum, a right to reside in a property, or a transfer of a specific asset. The court does not award a fixed fraction — it makes whatever order is appropriate having considered the failure in moral duty and all the circumstances. The order is made against the estate as constituted and cannot enlarge the estate."
+    },
+    {
+      "id": "PRL_M10_L05_Q08",
+      "question": "What is the key distinction between a complete failure to provide for a child and merely inadequate provision in the context of section 117?",
+      "options": {
+        "A": "There is no distinction — any inadequate provision entitles the court to make a section 117 order",
+        "B": "The court must first find a failure in moral duty — if there has been some provision, albeit inadequate, the court may decline to make any order at all; the provision must amount to a failure before discretion is exercised",
+        "C": "The distinction affects only the quantum of the order, not whether the court will make one",
+        "D": "A complete failure is governed by the intestacy rules; merely inadequate provision is governed by section 117"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 117, an important limitation is that a court order is made only in cases of failure in moral duty. If the testator has made some provision but it is merely inadequate — rather than a complete failure of the moral duty — the court may decline to make any order at all. The court must find a failure before exercising the discretion, not merely a sub-optimal allocation of the estate between children."
+    },
+    {
+      "id": "PRL_M10_L05_Q09",
+      "question": "Which of the following factors is NOT expressly relevant to a section 117 application?",
+      "options": {
+        "A": "The character and conduct of the child making the application",
+        "B": "The financial situation and needs of the child",
+        "C": "Whether the testator had made provision for the child during their lifetime",
+        "D": "Whether the personal representative consulted the child before distributing the estate"
+      },
+      "correct_answer": "D",
+      "explanation": "Relevant factors for a section 117 application include: the relationship between the testator and the child; the character and conduct of the child; the financial situation and needs of the child; whether the testator made lifetime provision for the child; the needs of other dependants; and the overall size of the estate. Whether the personal representative consulted the child before distributing is a procedural matter and is not a listed relevant factor in the section 117 assessment."
+    },
+    {
+      "id": "PRL_M10_L05_Q10",
+      "question": "How does the surviving spouse's legal right share under section 111 interact with a section 117 application by a child?",
+      "options": {
+        "A": "The legal right share is always paid before any section 117 order and reduces the estate available for the child",
+        "B": "A section 117 order takes priority over the legal right share",
+        "C": "The legal right share and a section 117 order can never both be made in the same estate",
+        "D": "The legal right share only operates if no section 117 application is made"
+      },
+      "correct_answer": "A",
+      "explanation": "If the surviving spouse elects to take their legal right share under section 111, this reduces the estate available to satisfy a section 117 order. The child and spouse may both have competing claims on the same limited estate. In an examination question where both a section 111 claim and a section 117 claim arise in the same question, candidates should deal with both and note that the legal right share reduces the net estate available for the section 117 order."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module11_Lesson02.txt",
+  "module_number": 11,
+  "module_title": "Trespass to Land and Nuisance",
+  "lesson_number": 2,
+  "lesson_title": "Private Nuisance",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M11_L02_Q01",
+      "question": "What is the correct definition of private nuisance in Irish tort law?",
+      "options": {
+        "A": "Any act or omission that interferes with another person's use of the public highway",
+        "B": "The unlawful, indirect interference with another's use or enjoyment of land, or with some right over or in connection with land",
+        "C": "The direct physical entry onto another person's land without permission",
+        "D": "Any unreasonable conduct by the defendant that causes physical harm to the plaintiff"
+      },
+      "correct_answer": "B",
+      "explanation": "Private nuisance is the unlawful, indirect interference with another's use or enjoyment of land, or with some right over or in connection with land. The three key features are: it is unlawful; it is indirect (direct interference constitutes trespass to land); and it interferes with the plaintiff's use or enjoyment of their land or a right connected with it. Classic examples include noise, smells, vibration, fumes, and encroaching tree roots."
+    },
+    {
+      "id": "TL_M11_L02_Q02",
+      "question": "What is the critical distinction between private nuisance and trespass to land?",
+      "options": {
+        "A": "Trespass to land requires malice; private nuisance does not",
+        "B": "Private nuisance involves indirect interference with the use or enjoyment of land; trespass involves direct entry onto or interference with the land",
+        "C": "Private nuisance is actionable per se; trespass requires proof of damage",
+        "D": "Trespass is limited to residential properties; private nuisance extends to commercial land"
+      },
+      "correct_answer": "B",
+      "explanation": "The critical distinction is the directness of the interference. Trespass to land requires a direct entry onto or physical interference with the plaintiff's land — placing an object on the land, or physically entering it. Private nuisance involves indirect interference — smells, noise, vibration, fumes, or encroaching vegetation — where the consequences of activities carried out elsewhere affect the plaintiff's land or its enjoyment."
+    },
+    {
+      "id": "TL_M11_L02_Q03",
+      "question": "In Hunter v Canary Wharf Ltd [1997], the House of Lords held that only persons with a legal interest in the affected land can sue in private nuisance. What does this mean in practice?",
+      "options": {
+        "A": "Only homeowners who have paid off their mortgage can sue in private nuisance",
+        "B": "Only persons in possession of the land or with a proprietary right — such as owners or tenants — can sue; licensees without a proprietary interest cannot",
+        "C": "Only the registered owner of the land at the Land Registry can bring a nuisance claim",
+        "D": "Any person physically present on the affected land at the time of the nuisance can sue"
+      },
+      "correct_answer": "B",
+      "explanation": "In Hunter v Canary Wharf [1997] AC 655, the House of Lords confirmed that the right to sue in private nuisance belongs to persons who have a proprietary interest in the affected land — such as owners or tenants. Licensees, family members who do not themselves have a proprietary interest, and visitors cannot sue in private nuisance. The right of action is tied to the legal interest in the land, not to mere presence or occupation."
+    },
+    {
+      "id": "TL_M11_L02_Q04",
+      "question": "What is the principal test for whether an interference constitutes a private nuisance?",
+      "options": {
+        "A": "Whether the defendant intended to interfere with the plaintiff's use of their land",
+        "B": "Whether the interference was unreasonable, having regard to all the circumstances",
+        "C": "Whether the interference caused quantifiable financial loss to the plaintiff",
+        "D": "Whether the interference constituted a breach of a specific statutory environmental standard"
+      },
+      "correct_answer": "B",
+      "explanation": "The principal test for private nuisance is whether the interference was unreasonable, having regard to all the circumstances. The assessment is objective and contextual — not all interference is tortious, only interference that is unreasonable in the circumstances. The court considers the nature of the locality, the intensity and duration of the interference, the sensitivity of the plaintiff, and whether the defendant acted with malice. The standard, confirmed in Hanrahan v Merck Sharp and Dohme [1988], is the interference with the ordinary comfortable enjoyment of land by a person of ordinary sensibility."
+    },
+    {
+      "id": "TL_M11_L02_Q05",
+      "question": "In Hanrahan v Merck Sharp and Dohme [1988] ILRM 629, what were the facts and what did the Irish Supreme Court hold?",
+      "options": {
+        "A": "The Hanrahan family claimed damages for psychiatric injury caused by noise from a nearby factory; the court held negligence was established",
+        "B": "The Hanrahan family operated a farm adjacent to a pharmaceutical factory; they suffered damage to crops, livestock, and personal health from factory emissions; the Supreme Court held they were entitled to succeed in nuisance",
+        "C": "The Hanrahan family sued the local council for planning permission granted to the factory; the court held the grant was unlawful",
+        "D": "The Hanrahan family brought a trespass claim when the factory's vehicles entered their land; the court awarded damages for trespass"
+      },
+      "correct_answer": "B",
+      "explanation": "In Hanrahan v Merck Sharp and Dohme [1988] ILRM 629, the Hanrahan family operated a farm adjacent to a pharmaceutical factory in Tipperary. They suffered extensive damage — damage to crops and livestock and personal ill-health to family members — from emissions from the factory. The Irish Supreme Court held that they were entitled to succeed in nuisance. The court confirmed that the standard is whether a person of ordinary sensibility would find the interference to unreasonably affect the ordinary comfortable enjoyment of their land. This is the leading Irish authority on private nuisance."
+    },
+    {
+      "id": "TL_M11_L02_Q06",
+      "question": "Which four factors does the court consider when assessing whether an interference is unreasonable in private nuisance?",
+      "options": {
+        "A": "Foreseeability, proximity, policy, and causation",
+        "B": "Nature of the locality; intensity and duration of the interference; sensitivity of the plaintiff; malice of the defendant",
+        "C": "Physical damage to property, loss of profits, personal injury, and distress",
+        "D": "Duration of the nuisance, number of persons affected, cost of abatement, and statutory compliance"
+      },
+      "correct_answer": "B",
+      "explanation": "The four key factors the court considers in assessing the unreasonableness of the interference in private nuisance are: (1) the nature of the locality — industrial areas tolerate more than residential areas; (2) the intensity and duration of the interference — a single incident may not suffice but persistent interference is more likely to be unreasonable; (3) the sensitivity of the plaintiff — the law does not protect hypersensitive plaintiffs from ordinary activities; and (4) malice — where the defendant acts with the deliberate purpose of annoying the plaintiff, this can tip the balance toward liability even where the interference would otherwise be tolerable."
+    },
+    {
+      "id": "TL_M11_L02_Q07",
+      "question": "If a defendant has been openly and continuously carrying out the activity complained of for twenty years, what defence may be available in private nuisance?",
+      "options": {
+        "A": "Statutory authority — continuous operation for twenty years creates an implied statutory permission",
+        "B": "Prescription — the defendant may have acquired a prescriptive right to continue the activity after twenty years of open and continuous use",
+        "C": "Volenti — the plaintiff is presumed to have consented to the nuisance after tolerating it for so long",
+        "D": "Limitation — the plaintiff's cause of action would be extinguished after six years under the Statute of Limitations 1957"
+      },
+      "correct_answer": "B",
+      "explanation": "Prescription is a defence in private nuisance. Where a defendant has carried out the activity complained of openly, continuously, and without interruption for a period of twenty years, they may have acquired a prescriptive right — a form of easement — to continue it. This operates analogously to the acquisition of other prescriptive rights over land. The plaintiff cannot then bring a nuisance claim in respect of an activity that has been openly and continuously carried on for twenty years."
+    },
+    {
+      "id": "TL_M11_L02_Q08",
+      "question": "What is the defence of statutory authority in private nuisance, and when does it apply?",
+      "options": {
+        "A": "Any defendant who was issued a licence to operate by the local council has statutory authority and cannot be sued in nuisance",
+        "B": "Where a statute expressly or by necessary implication authorises the activity that constitutes the nuisance, no nuisance action lies unless the defendant was negligent in exercising that statutory authority",
+        "C": "A defendant who complied with all relevant planning regulations cannot be sued in nuisance regardless of the harm caused",
+        "D": "Statutory authority is only available to government bodies and state agencies, not to private defendants"
+      },
+      "correct_answer": "B",
+      "explanation": "The defence of statutory authority applies where a statutory provision expressly authorises the activity, or where such authority can be implied from the terms of the statute by necessary implication. If the statute authorises the activity, the defendant cannot be sued in nuisance for performing it as authorised. However, the defence is not unlimited — if the defendant was negligent in the manner in which they exercised the statutory authority, they may still be liable in nuisance."
+    },
+    {
+      "id": "TL_M11_L02_Q09",
+      "question": "In Shelfer v City of London Electric Lighting Company [1895], what principles were established regarding damages in lieu of an injunction in nuisance?",
+      "options": {
+        "A": "Damages are always awarded instead of an injunction in commercial nuisance cases",
+        "B": "Damages in lieu of an injunction are appropriate where the injury is small, can be estimated in money, can be adequately compensated by a small payment, and the case is one where it would be oppressive to grant an injunction",
+        "C": "An injunction is always preferred over damages as the remedy in private nuisance cases",
+        "D": "Damages and injunctions cannot both be awarded in the same nuisance case"
+      },
+      "correct_answer": "B",
+      "explanation": "In Shelfer v City of London Electric Lighting Company [1895] 1 Ch 287, the Court of Appeal established the principles for when damages in lieu of an injunction may be awarded in nuisance. The court held that damages in lieu are appropriate where: (1) the injury is small; (2) it is capable of being estimated in money; (3) it can be adequately compensated by a small money payment; and (4) it would be oppressive to the defendant to grant an injunction. Where these conditions are not met, the court will ordinarily grant an injunction to restrain the continuing nuisance."
+    },
+    {
+      "id": "TL_M11_L02_Q10",
+      "question": "Why is an injunction often the most important remedy in a private nuisance case?",
+      "options": {
+        "A": "Because injunctions are easier to obtain than damages in Irish tort law",
+        "B": "Because it prevents the continuing interference rather than merely compensating the plaintiff for past harm, addressing the root of the problem",
+        "C": "Because damages in nuisance are not available and injunctions are the only remedy",
+        "D": "Because injunctions are available only in nuisance and not in other torts, making them unique to this cause of action"
+      },
+      "correct_answer": "B",
+      "explanation": "An injunction is often the most important remedy in private nuisance because it stops the ongoing interference, rather than simply compensating the plaintiff in money for harm they will continue to suffer. A plaintiff whose neighbour persistently causes noise or emits harmful fumes is primarily interested in stopping the nuisance, not in receiving periodic compensation. Damages can only compensate for past harm; an injunction addresses the cause of the harm going forward."
+    }
+  ]
+}

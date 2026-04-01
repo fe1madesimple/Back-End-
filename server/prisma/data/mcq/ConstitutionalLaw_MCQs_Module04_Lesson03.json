@@ -1,0 +1,131 @@
+{
+  "subject": "Constitutional Law",
+  "el_script_ref": "ConstitutionalLaw_ElevenLabs_Module04_Lesson03.txt",
+  "module_number": 4,
+  "module_title": "Fundamental Rights I: Personal Rights",
+  "lesson_number": 3,
+  "lesson_title": "Personal Liberty and Habeas Corpus (Art. 40.4)",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CON_M04_L03_Q01",
+      "question": "Article 40.4.1° of the Constitution guarantees that no citizen shall be deprived of personal liberty save 'in accordance with law'. In The State (Burke) v Lennon [1940] IR 136, Gavan Duffy J held that this phrase means:",
+      "options": {
+        "A": "Any detention authorised by an Act of the Oireachtas is automatically lawful",
+        "B": "Detention must not only have a statutory basis but must also comply with the constitutional requirements of justice and fair procedures",
+        "C": "Only a court order can authorise a lawful deprivation of personal liberty",
+        "D": "Detention in accordance with law requires the consent of the Attorney General"
+      },
+      "correct_answer": "B",
+      "explanation": "In The State (Burke) v Lennon [1940] IR 136, Gavan Duffy J articulated the principle that 'in accordance with law' in Art. 40.4.1° means more than having a statutory basis — it requires that the law authorising detention be constitutionally valid and that the detention be consistent with the constitutional requirements of justice. A detention authorised by an unconstitutional statute is not 'in accordance with law'. This expansive interpretation transformed the habeas corpus provision into a powerful constitutional check on the executive's detention powers."
+    },
+    {
+      "id": "CON_M04_L03_Q02",
+      "question": "Under Article 40.4.2°, who may apply to the High Court for an inquiry into the legality of a person's detention?",
+      "options": {
+        "A": "Only the detained person themselves, through a legal representative",
+        "B": "Any person acting on behalf of the detained person, or the detained person themselves",
+        "C": "Only the Attorney General on behalf of the State",
+        "D": "Only persons with a legal interest in the detained person, such as family members"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 40.4.2° expressly allows any person to apply on behalf of the detained individual — or the detained person themselves — for an inquiry into the legality of the detention. This is deliberately broad: it enables family members, friends, solicitors or any concerned person to bring a habeas corpus application. This reflects the fundamental importance of the remedy and addresses the practical reality that a detained person may be unable to initiate proceedings personally."
+    },
+    {
+      "id": "CON_M04_L03_Q03",
+      "question": "Article 40.4.2° requires the High Court, upon an application, to 'forthwith' inquire into the legality of the detention and 'order the release of such person unless satisfied that he is being detained in accordance with the law'. This procedural requirement is:",
+      "options": {
+        "A": "Directory only — the court may delay inquiry if the calendar is busy",
+        "B": "Mandatory — the court must inquire urgently; any delay would be constitutionally impermissible",
+        "C": "Subject to judicial discretion as to timing based on the gravity of the alleged illegality",
+        "D": "Mandatory only where the detained person is facing criminal charges"
+      },
+      "correct_answer": "B",
+      "explanation": "The word 'forthwith' in Art. 40.4.2° is mandatory, not directory. The High Court must act immediately upon receiving a habeas corpus application — the urgency of the constitutional right to liberty demands it. This is reinforced by the gravity of the right at stake. The court has a duty to act promptly; any avoidable delay in conducting the inquiry would be constitutionally impermissible. If the court is not satisfied that the detention is lawful, it must order release."
+    },
+    {
+      "id": "CON_M04_L03_Q04",
+      "question": "In The State (Royle) v Kelly [1974] IR 259, the Supreme Court developed the distinction between 'initial invalidity' and 'subsequent invalidity' in detention. What is the significance of this distinction?",
+      "options": {
+        "A": "Only initially invalid detentions can be challenged; subsequently invalid detentions are immune from habeas corpus",
+        "B": "A detention that was initially lawful can become unlawful if its legal basis is subsequently removed (e.g., if the statute authorising it is declared unconstitutional); in that case, the person must be released",
+        "C": "Initially invalid detention cannot be cured by subsequent compliance with procedures",
+        "D": "The distinction affects only the quantum of damages available, not the right to release"
+      },
+      "correct_answer": "B",
+      "explanation": "The State (Royle) v Kelly [1974] IR 259 established that the validity of detention is assessed at the time the habeas corpus application is heard, not only at the time of arrest. A detention that began lawfully may become unlawful if the statutory basis is subsequently struck down, or if procedural requirements are subsequently breached. This ensures that the Art. 40.4.2° inquiry is a present-tense assessment of legality, not merely a retrospective review of the initial arrest."
+    },
+    {
+      "id": "CON_M04_L03_Q05",
+      "question": "Under the Offences Against the State Act 1939, s.30, a person may be detained for questioning without charge for up to 24 hours (extendable). This was challenged in The People (DPP) v Quilligan [1986] IR 495. What was the outcome?",
+      "options": {
+        "A": "The Supreme Court struck down s.30 as an unconstitutional deprivation of liberty without judicial warrant",
+        "B": "The Supreme Court upheld s.30 as a constitutionally permitted limitation on liberty in the interest of public order and security, provided the detention for questioning was genuinely carried out for that purpose",
+        "C": "The Supreme Court held s.30 was constitutional only where the detained person was also charged within 24 hours",
+        "D": "The Supreme Court referred the question of s.30’s constitutionality to the President under Article 26"
+      },
+      "correct_answer": "B",
+      "explanation": "In People (DPP) v Quilligan [1986] IR 495, the Supreme Court upheld s.30 of the Offences Against the State Act 1939 as constitutionally valid. Detention for questioning under s.30 is a constitutionally permissible limitation on personal liberty in the interests of public order and security — a legitimate objective. However, the detention must be genuinely for investigative purposes, not a pretext. If the Gardaí have no genuine intention of using the detention for questioning, the detention may be unlawful."
+    },
+    {
+      "id": "CON_M04_L03_Q06",
+      "question": "The High Court in a habeas corpus application finds that a prisoner's detention is lawful on the face of the warrant but the prisoner alleges that the Gardaí breached his rights during arrest. What is the court's approach?",
+      "options": {
+        "A": "The court must release the prisoner immediately upon any allegation of rights breach during arrest",
+        "B": "The court distinguishes between the validity of the detention order and collateral matters — unless the rights breach goes to the legality of the detention itself, the prisoner remains detained and must seek other remedies",
+        "C": "The court orders an automatic stay of the detention pending investigation of the rights breach",
+        "D": "The court refers the rights breach allegation to the Garda Ombudsman before proceeding"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 40.4.2° proceedings are focused on the current legality of detention, not on all matters relating to its circumstances. Where a detention order is valid on its face and the alleged rights breach is collateral (e.g., a breach of rights during interrogation that does not affect the lawfulness of the remand in custody), the court will not order release on that basis. Other remedies (damages in plenary action; exclusion of evidence at trial) are available. The test is whether the detention itself is in accordance with law."
+    },
+    {
+      "id": "CON_M04_L03_Q07",
+      "question": "Article 40.4.6° provides that the Article 40.4 habeas corpus procedure is in addition to any other proceedings a court has under the Constitution or at common law to inquire into detention. This preserves:",
+      "options": {
+        "A": "The statutory right of appeal from detention decisions under the Criminal Justice Act 1984",
+        "B": "The common law writ of habeas corpus alongside the constitutional procedure, giving the court flexibility to use either or both",
+        "C": "The Attorney General’s power to independently review Garda detention decisions",
+        "D": "The District Court’s exclusive jurisdiction to review pre-trial detention"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 40.4.6° preserves the pre-existing common law writ of habeas corpus alongside the Article 40.4.2° constitutional inquiry. Courts may use either procedure or both. In practice, the constitutional procedure under Art. 40.4.2° has largely superseded the common law writ, but the preservation clause ensures flexibility and avoids any argument that the constitutional provision was intended to be the exclusive remedy."
+    },
+    {
+      "id": "CON_M04_L03_Q08",
+      "question": "In The People (DPP) v Healy [1990] 2 IR 73, the Supreme Court held that a suspect had a constitutional right to consult a solicitor before and during police questioning. The constitutional basis for this right is:",
+      "options": {
+        "A": "Article 38.1 (trial in due course of law) and the right to a fair trial",
+        "B": "Article 40.4.1° (personal liberty) and the right to have detention lawful by reference to constitutional standards, including the right to legal advice during police custody",
+        "C": "Article 40.3.1° (personal rights) encompassing the right to legal representation at all stages",
+        "D": "Both A and B — the constitutional right to consult a solicitor derives from both the right to a fair trial and the requirement that detention be constitutionally valid"
+      },
+      "correct_answer": "D",
+      "explanation": "People (DPP) v Healy [1990] 2 IR 73 (Finlay CJ) held that a detained person has a constitutional right to consult a solicitor without delay. The right derives from both Art. 40.4 (the lawfulness of detention requires respect for the detainee's constitutional rights) and Art. 38.1 (the right to a fair trial requires that evidence not be obtained in deliberate violation of constitutional rights). Breach of this right may lead to exclusion of statements obtained in its violation."
+    },
+    {
+      "id": "CON_M04_L03_Q09",
+      "question": "Article 40.4.3° provides that where the body of a person is produced before the High Court in habeas corpus proceedings and the court orders release, no court shall subsequently direct that the person be detained for the same reason. This is known as the:",
+      "options": {
+        "A": "Rule of autrefois acquit",
+        "B": "Once-off nature of habeas corpus — the res judicata principle as applied to Article 40.4",
+        "C": "Principle of double jeopardy in detention",
+        "D": "Prohibition on re-arrest"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 40.4.3° provides that once the High Court has ordered release in a habeas corpus inquiry, no other court may re-detain the person for the same reason. This is a form of res judicata — the legality of the detention on that ground has been conclusively determined. It prevents the State from simply re-arresting a person on the same basis after an Art. 40.4 release order. The person may be re-arrested on different grounds or pursuant to a valid court order."
+    },
+    {
+      "id": "CON_M04_L03_Q10",
+      "question": "A person is detained under a warrant that is valid on its face. Their solicitor discovers that the Garda who signed the s.30 detention order had no authorisation to do so under the Offences Against the State Act 1939. This is argued in Article 40.4.2° proceedings. What is the most likely outcome?",
+      "options": {
+        "A": "The court will refuse to look behind a warrant that is valid on its face",
+        "B": "The court will order release because the detention lacks a valid legal basis — the unlawfulness goes to the legality of the detention itself",
+        "C": "The court will adjourn to allow the Garda to obtain retrospective authorisation",
+        "D": "The court will refer the matter to the District Court for determination"
+      },
+      "correct_answer": "B",
+      "explanation": "Where a procedural requirement going to the legality of the detention itself has not been complied with (e.g., a s.30 extension signed by an officer without authority), the detention is not 'in accordance with law' under Art. 40.4.1°. The High Court in Art. 40.4.2° proceedings will look beyond the face of the warrant to the underlying legality, and if the procedural requirement was a condition of lawful detention (not merely directory), the court will order release. This is consistent with DPP v Byrne [1987] IR 363."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module14_Lesson02.txt",
+  "module_number": 14,
+  "module_title": "Remedies in Tort",
+  "lesson_number": 2,
+  "lesson_title": "Injunctions in Tort",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M14_L02_Q01",
+      "question": "What is an injunction in the context of tort law?",
+      "options": {
+        "A": "A court order requiring the defendant to pay monetary compensation to the plaintiff",
+        "B": "An equitable court order directed at the defendant personally, commanding them to do something or to refrain from doing something, with breach constituting contempt of court",
+        "C": "A statutory declaration that the defendant's conduct was tortious",
+        "D": "An order requiring the defendant to insure against future tortious liability"
+      },
+      "correct_answer": "B",
+      "explanation": "An injunction is an equitable court order directed at the defendant personally, commanding them either to do something (a mandatory injunction) or to refrain from doing something (a prohibitory injunction). Breach of an injunction constitutes contempt of court, which is punishable by fine or imprisonment. This makes the injunction a powerful remedy — more powerful in some cases than damages, because it prevents the harm rather than merely compensating for it after the fact."
+    },
+    {
+      "id": "TL_M14_L02_Q02",
+      "question": "What are the three primary types of injunction relevant to tort law?",
+      "options": {
+        "A": "Mandatory, prohibitory, and declaratory injunctions",
+        "B": "Interlocutory injunctions, perpetual injunctions, and prohibitory injunctions",
+        "C": "Final, interim, and conditional injunctions",
+        "D": "Urgent, standard, and deferred injunctions"
+      },
+      "correct_answer": "B",
+      "explanation": "The three primary types of injunction relevant to tort law are: (1) interlocutory injunctions — interim orders granted pending trial to preserve the position of the parties and prevent continuing harm before the dispute is resolved; (2) perpetual injunctions — final orders granted at trial as part of the court's judgment; and (3) prohibitory injunctions — orders restraining the defendant from continuing or committing a specified act. In tort cases, the most frequently contested type is the interlocutory injunction."
+    },
+    {
+      "id": "TL_M14_L02_Q03",
+      "question": "In Campus Oil Ltd v Minister for Industry and Energy [1983], the Irish Supreme Court established the test for interlocutory injunctions. What are the three limbs of that test?",
+      "options": {
+        "A": "Urgency, necessity, and proportionality",
+        "B": "Fair question to be tried; balance of convenience; and — where the balance is equal — the relative strength of the cases on the merits",
+        "C": "Likelihood of success at trial; adequacy of damages; and good faith of the plaintiff",
+        "D": "Prima facie case; irreparable harm; and public interest"
+      },
+      "correct_answer": "B",
+      "explanation": "The Campus Oil test, established by the Irish Supreme Court in Campus Oil Ltd v Minister for Industry and Energy [1983] IR 88, has three limbs: (1) is there a fair question to be tried? — the plaintiff need only show the claim is neither frivolous nor vexatious, a relatively low threshold; (2) does the balance of convenience favour granting or refusing the injunction? — the court weighs the harm each party will suffer; and (3) where the balance is equal, the court may consider the relative strength of the cases on the merits."
+    },
+    {
+      "id": "TL_M14_L02_Q04",
+      "question": "What is the 'fair question to be tried' threshold under the Campus Oil test?",
+      "options": {
+        "A": "The plaintiff must establish they are more likely than not to succeed at trial",
+        "B": "The plaintiff need only show that their claim is neither frivolous nor vexatious — a relatively low threshold",
+        "C": "The plaintiff must establish a prima facie case on the balance of probabilities",
+        "D": "The plaintiff must demonstrate that the defendant is clearly liable before an interlocutory injunction will be granted"
+      },
+      "correct_answer": "B",
+      "explanation": "The first limb of the Campus Oil test — fair question to be tried — is a relatively low threshold. The plaintiff need not demonstrate they are likely to succeed at trial; they need only show that the claim raises a genuine legal question that is not frivolous or vexatious. This ensures the court does not need to conduct a mini-trial at the interlocutory stage, while filtering out clearly hopeless claims."
+    },
+    {
+      "id": "TL_M14_L02_Q05",
+      "question": "How does the 'balance of convenience' limb of the Campus Oil test work in practice?",
+      "options": {
+        "A": "The court asks whether the defendant's conduct was unreasonable and weighs this against the plaintiff's loss",
+        "B": "The court weighs the harm the plaintiff will suffer if the injunction is refused against the harm the defendant will suffer if it is granted, and grants the injunction where refusal would cause greater harm",
+        "C": "The court considers the public interest in the defendant's activities and balances this against private harm to the plaintiff",
+        "D": "The court simply asks whether damages are an adequate remedy for the plaintiff"
+      },
+      "correct_answer": "B",
+      "explanation": "The balance of convenience involves the court weighing: on one side, the harm the plaintiff will suffer if the injunction is refused and the defendant continues the conduct pending trial; against, on the other side, the harm the defendant will suffer if the injunction is granted and they are restrained from the conduct pending trial. The court grants or refuses the injunction in a way that minimises the overall harm — granting it where refusal would cause greater harm than grant, and refusing it where grant would cause greater harm than refusal."
+    },
+    {
+      "id": "TL_M14_L02_Q06",
+      "question": "What is the fundamental equitable principle that governs whether a court will grant an injunction rather than limiting the plaintiff to damages?",
+      "options": {
+        "A": "The plaintiff must show that the defendant's conduct was wilful and deliberate",
+        "B": "Damages must be an inadequate remedy for the plaintiff — if money can fully compensate the harm, an injunction is generally not warranted",
+        "C": "The court must be satisfied that the plaintiff is more likely than not to win at trial",
+        "D": "The plaintiff must demonstrate that the defendant has no viable defence to the underlying tort claim"
+      },
+      "correct_answer": "B",
+      "explanation": "The fundamental equitable principle is that damages must be an inadequate remedy before the court will exercise its discretion to grant an injunction. If monetary compensation would fully and adequately repair the plaintiff's loss, the court will generally leave the plaintiff to their remedy in damages. It is the inadequacy of damages — for example, where the harm is continuous, irreversible, or inherently unquantifiable — that justifies the court exercising its equitable jurisdiction to grant injunctive relief."
+    },
+    {
+      "id": "TL_M14_L02_Q07",
+      "question": "In which type of tort case do courts apply a particularly stringent standard before granting an interlocutory injunction to restrain publication?",
+      "options": {
+        "A": "Private nuisance cases involving industrial emissions",
+        "B": "Defamation cases, where freedom of expression commands significant constitutional protection",
+        "C": "Personal injury negligence cases where the defendant is an individual",
+        "D": "Product liability cases involving consumer goods"
+      },
+      "correct_answer": "B",
+      "explanation": "Courts apply a particularly stringent standard before granting interlocutory injunctions to restrain publication in defamation cases. This reflects the constitutional importance of freedom of expression. The threshold is that the material is clearly defamatory and that no possible defence could succeed at trial — a much higher standard than the ordinary Campus Oil 'fair question to be tried' threshold. As confirmed in Mahon v Post Publications [2007], freedom of expression weighs heavily at the interlocutory stage."
+    },
+    {
+      "id": "TL_M14_L02_Q08",
+      "question": "Why is the injunction a particularly important remedy in private nuisance cases?",
+      "options": {
+        "A": "Because damages are not available in nuisance and injunctions are the only remedy",
+        "B": "Because it addresses the root of the problem by stopping the ongoing interference, rather than merely compensating the plaintiff for continuing harm",
+        "C": "Because the courts always prefer injunctions to damages in cases involving environmental harm",
+        "D": "Because the Campus Oil test is easier to satisfy in nuisance than in other torts"
+      },
+      "correct_answer": "B",
+      "explanation": "The injunction is often the most important remedy in nuisance because it stops the continuing interference — it addresses the cause of the harm going forward, rather than simply compensating the plaintiff in money for harm they will continue to suffer indefinitely. A nuisance involving persistent noise, fumes, or vibration causes continuing daily harm; an injunction to restrain that conduct provides the plaintiff with the relief they actually need, whereas periodic damages only compensate retrospectively."
+    },
+    {
+      "id": "TL_M14_L02_Q09",
+      "question": "What consequences follow if a defendant breaches an injunction?",
+      "options": {
+        "A": "The defendant automatically becomes liable for enhanced or punitive damages",
+        "B": "The injunction is automatically dissolved and the plaintiff must seek a new order",
+        "C": "Breach of an injunction constitutes contempt of court, punishable by fine or imprisonment",
+        "D": "The plaintiff is entitled to immediately enforce the order through execution of the defendant's assets"
+      },
+      "correct_answer": "C",
+      "explanation": "Breach of an injunction constitutes contempt of court — the defendant has deliberately disobeyed an order of the court directed at them personally. Contempt of court is a serious matter and can be punished by fine or imprisonment. This consequence gives the injunction its particular force as a remedy: it is backed by the coercive power of the court, making it a more powerful tool in some situations than damages, which only compensate after the harm has been suffered."
+    },
+    {
+      "id": "TL_M14_L02_Q10",
+      "question": "In an FE-1 problem where the plaintiff is suffering ongoing noise nuisance from a factory, what remedies should be addressed and in what order?",
+      "options": {
+        "A": "Begin with damages; then consider whether an injunction adds anything",
+        "B": "Address the interlocutory injunction under the Campus Oil test if the nuisance is ongoing; address the perpetual injunction as the primary long-term remedy; address damages for past harm; note that under Shelfer principles, damages in lieu of an injunction may be appropriate only where the injury is small, quantifiable, and adequately compensatable by a small payment",
+        "C": "Address only the damages remedy, as injunctions are rarely granted in nuisance cases",
+        "D": "Address only the criminal law remedies available through the Environmental Protection Agency"
+      },
+      "correct_answer": "B",
+      "explanation": "A comprehensive FE-1 remedies answer in a nuisance case should cover: (1) if the nuisance is ongoing, consider an interlocutory injunction under Campus Oil to restrain the nuisance pending trial — particularly where continuing harm would be difficult to quantify or would be irreversible; (2) at trial, a perpetual injunction as the primary remedy to prevent future interference; (3) damages for past harm to the plaintiff's use and enjoyment of their land; and (4) note the Shelfer principles under which damages in lieu of an injunction may be substituted where the injury is small, capable of monetary compensation, and where an injunction would be oppressive."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "Module_03_Lesson_02_Constitution_of_Trusts___Exceptions_and_Equity_Will_Perfect.txt",
+  "module_number": 3,
+  "module_title": "Constitution of Trusts",
+  "lesson_number": 2,
+  "lesson_title": "Constitution of Trusts: Exceptions and Equity Will Perfect",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EQL_M03_L02_Q01",
+      "question": "The maxim 'equity will not assist a volunteer' means that a beneficiary who has given no consideration:",
+      "options": {
+        "A": "Can always enforce a trust covenant in equity",
+        "B": "Cannot compel the enforcement of an incompletely constituted trust",
+        "C": "Has no rights at all under a trust deed",
+        "D": "May obtain specific performance against the trustee"
+      },
+      "correct_answer": "B",
+      "explanation": "Equity will not assist a volunteer — a person who has given no consideration cannot compel a court to perfect an incompletely constituted trust on their behalf. This is the foundational rule from Milroy v Lord, reinforced by Re Pryce [1917]."
+    },
+    {
+      "id": "EQL_M03_L02_Q02",
+      "question": "In Pullan v Koe [1913], the court held that infant children of a marriage could enforce a settlement covenant to settle after-acquired property because:",
+      "options": {
+        "A": "They were volunteers with special statutory rights",
+        "B": "They were within the marriage consideration and thus not volunteers",
+        "C": "The covenant expressly named them as beneficiaries",
+        "D": "Their mother had breached a duty of care"
+      },
+      "correct_answer": "B",
+      "explanation": "In Pullan v Koe [1913], the children of the marriage were held to be within the marriage consideration. Because they were not volunteers, equity would treat the covenant as completely constituted in their favour and compel enforcement."
+    },
+    {
+      "id": "EQL_M03_L02_Q03",
+      "question": "Which of the following persons is NOT within the marriage consideration for the purposes of enforcing a marriage settlement?",
+      "options": {
+        "A": "The husband",
+        "B": "The wife",
+        "C": "The children of the marriage",
+        "D": "The wife's niece"
+      },
+      "correct_answer": "D",
+      "explanation": "Marriage consideration extends to the parties to the marriage and the children of the marriage. Relatives such as nephews, nieces, and other collateral family members are volunteers and cannot enforce the settlement covenant in equity."
+    },
+    {
+      "id": "EQL_M03_L02_Q04",
+      "question": "In Re Pryce [1917], the court refused to compel trustees to bring an action at law to enforce a settlement covenant on behalf of the next-of-kin because:",
+      "options": {
+        "A": "The covenant was void for uncertainty",
+        "B": "The next-of-kin were volunteers outside the marriage consideration",
+        "C": "The trustee had fully distributed the trust property",
+        "D": "The limitation period had expired"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Pryce [1917], the next-of-kin were not within the marriage consideration — they were volunteers. Equity would not assist volunteers to enforce an incomplete trust covenant, and the court directed the trustees not to take action on their behalf."
+    },
+    {
+      "id": "EQL_M03_L02_Q05",
+      "question": "Why can a beneficiary who has provided valuable consideration treat an incompletely constituted trust as complete in equity?",
+      "options": {
+        "A": "Because statute automatically perfects trusts for consideration",
+        "B": "Because the beneficiary can sue on the contract and obtain specific performance — and equity regards as done that which ought to be done",
+        "C": "Because consideration substitutes for formal transfer requirements",
+        "D": "Because the Trustee Act 1893 abolishes the volunteer rule"
+      },
+      "correct_answer": "B",
+      "explanation": "A beneficiary who has given valuable consideration can sue on the contract for specific performance. Equity's maxim — 'that which ought to be done is regarded as done' — means equity treats the trust as constituted once specific performance would be available."
+    },
+    {
+      "id": "EQL_M03_L02_Q06",
+      "question": "What was the subject matter of the settlement covenant in Pullan v Koe [1913] that the trustees sought to enforce?",
+      "options": {
+        "A": "Shares in a private company transferred by deed",
+        "B": "After-acquired property received by the wife after the marriage",
+        "C": "A legacy left to the husband under a will",
+        "D": "Land conveyed to the wife before the marriage"
+      },
+      "correct_answer": "B",
+      "explanation": "In Pullan v Koe [1913], the marriage settlement contained a covenant to settle after-acquired property. The wife received a sum of money after the marriage which fell within the after-acquired property clause, and the court held that the children of the marriage could enforce the covenant as persons within the marriage consideration."
+    },
+    {
+      "id": "EQL_M03_L02_Q07",
+      "question": "The Contracts Act 2010 in Ireland has potential relevance to trust covenants because:",
+      "options": {
+        "A": "It abolishes the volunteer rule entirely",
+        "B": "It may allow a third party named as a beneficiary in a settlement deed to enforce the benefit of that contract directly",
+        "C": "It requires all trusts to be constituted by deed",
+        "D": "It creates a statutory right of action for volunteer beneficiaries"
+      },
+      "correct_answer": "B",
+      "explanation": "The Contracts Act 2010 reformed privity rules in Ireland. A third party identified as a beneficiary of a contract may in certain circumstances enforce it directly. For trust covenants, this could allow a beneficiary named in a settlement deed to enforce it, cutting across the traditional volunteer rule — though this remains a developing area."
+    },
+    {
+      "id": "EQL_M03_L02_Q08",
+      "question": "A settlor covenants in a marriage settlement to transfer shares to trustees on trust for the children of the marriage. The shares are never transferred. Which statement is correct?",
+      "options": {
+        "A": "The trust is void as the settlor made a fraudulent promise",
+        "B": "The children, as persons within the marriage consideration, may enforce the covenant in equity",
+        "C": "The trustee must wait until the children reach majority before acting",
+        "D": "Only the settlor can enforce the covenant"
+      },
+      "correct_answer": "B",
+      "explanation": "The children of the marriage are within the marriage consideration and are not mere volunteers. Following Pullan v Koe [1913], they can enforce the covenant — equity will treat the trust as constituted because specific performance of the covenant would be available to persons who provided consideration."
+    },
+    {
+      "id": "EQL_M03_L02_Q09",
+      "question": "Which of the following correctly states the contrast between Pullan v Koe [1913] and Re Pryce [1917]?",
+      "options": {
+        "A": "Pullan v Koe involved land; Re Pryce involved personalty",
+        "B": "In Pullan v Koe the claimants were within the marriage consideration; in Re Pryce the claimants were volunteers",
+        "C": "In Pullan v Koe the trustees refused to act; in Re Pryce the trustees acted properly",
+        "D": "Both cases reached the same result but on different grounds"
+      },
+      "correct_answer": "B",
+      "explanation": "The key distinction is consideration. In Pullan v Koe [1913], the children were within the marriage consideration and could enforce the covenant. In Re Pryce [1917], the next-of-kin were volunteers outside the marriage consideration and equity would not assist them."
+    },
+    {
+      "id": "EQL_M03_L02_Q10",
+      "question": "Which equitable maxim underpins the rule that a beneficiary who has given consideration can treat an incompletely constituted trust as complete?",
+      "options": {
+        "A": "He who seeks equity must do equity",
+        "B": "Equity regards as done that which ought to be done",
+        "C": "Delay defeats equity",
+        "D": "Equity acts in personam"
+      },
+      "correct_answer": "B",
+      "explanation": "'Equity regards as done that which ought to be done' means that once a specifically enforceable obligation exists — as it does where a covenantee has given consideration — equity treats the obligation as already performed. This allows equity to treat an incompletely constituted trust as constituted where the beneficiary has provided value."
+    }
+  ]
+}

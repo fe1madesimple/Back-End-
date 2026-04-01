@@ -1,0 +1,131 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module01_Lesson04.txt",
+  "module_number": 1,
+  "module_title": "Introduction to Company Law and Incorporation",
+  "lesson_number": 4,
+  "lesson_title": "LTD vs DAC: Company Types under CA 2014",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Under the CA 2014, a private limited company (LTD) has how many constitutional documents?",
+      "options": {
+        "A": "Two — a memorandum and articles of association",
+        "B": "One — a single document called the constitution",
+        "C": "Three — a memorandum, articles, and a shareholders agreement",
+        "D": "None — the CA 2014 dispenses with constitutional documents for LTDs"
+      },
+      "correct_answer": "B",
+      "explanation": "An LTD under the CA 2014 has a single constitutional document called the constitution, replacing the old dual-document regime of memorandum and articles of association."
+    },
+    {
+      "id": 2,
+      "question": "Which company type under the CA 2014 retains an objects clause in its constitution?",
+      "options": {
+        "A": "Private limited company (LTD)",
+        "B": "Designated activity company (DAC)",
+        "C": "Company limited by guarantee (CLG) without share capital",
+        "D": "Unlimited liability company (ULC)"
+      },
+      "correct_answer": "B",
+      "explanation": "The designated activity company (DAC) retains an objects clause, restricting its capacity to the activities specified. This contrasts with an LTD, which has unlimited capacity under section 38 CA 2014."
+    },
+    {
+      "id": 3,
+      "question": "What is the minimum number of directors required for an LTD that does not have a sole director?",
+      "options": {
+        "A": "One",
+        "B": "Two",
+        "C": "Three",
+        "D": "Four"
+      },
+      "correct_answer": "B",
+      "explanation": "An LTD must have at least two directors (section 128 CA 2014), unless it operates as a sole director company under the single-director regime — in which case it must have one director and a separate secretary."
+    },
+    {
+      "id": 4,
+      "question": "A sole-director LTD must have:",
+      "options": {
+        "A": "A separate company secretary who is not also the sole director",
+        "B": "A co-director as alternate",
+        "C": "At least two shareholders in addition to the director",
+        "D": "Court approval before operating"
+      },
+      "correct_answer": "A",
+      "explanation": "Where an LTD operates with a sole director, section 129 CA 2014 requires that the company has a separate company secretary who is not the same person as the sole director."
+    },
+    {
+      "id": 5,
+      "question": "Under section 38 CA 2014, an LTD has the capacity of:",
+      "options": {
+        "A": "A company limited to its stated objects",
+        "B": "A natural person — unlimited capacity",
+        "C": "A public company, subject to stock exchange rules",
+        "D": "A partnership with joint and several liability"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 38 CA 2014 gives an LTD the full legal capacity of a natural person, free from any objects restriction. This is a fundamental distinction from the DAC, which is bound by its stated objects."
+    },
+    {
+      "id": 6,
+      "question": "A DAC must have how many constitutional documents?",
+      "options": {
+        "A": "One — a single constitution",
+        "B": "Two — a memorandum and articles of association",
+        "C": "Three — a memorandum, articles, and an objects schedule",
+        "D": "None — it is governed solely by the CA 2014 default rules"
+      },
+      "correct_answer": "B",
+      "explanation": "A DAC retains the two-document structure: a memorandum of association (containing the objects clause) and articles of association. This distinguishes it from the LTD which operates with a single constitutional document."
+    },
+    {
+      "id": 7,
+      "question": "Is a private limited company (LTD) required to hold an Annual General Meeting (AGM)?",
+      "options": {
+        "A": "Yes — all companies must hold an AGM annually",
+        "B": "No — an LTD is not required to hold an AGM unless the constitution or a member requires it",
+        "C": "Yes — but only if the LTD has more than 50 members",
+        "D": "No — an LTD is exempt from all meeting requirements"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 175 CA 2014, a private limited company (LTD) is not required to hold an AGM unless its constitution so requires or a member serves written notice requesting one. This exemption does not apply to DACs, PLCs, or CLGs."
+    },
+    {
+      "id": 8,
+      "question": "Which company type must hold an AGM within 9 months of its financial year end?",
+      "options": {
+        "A": "LTD only",
+        "B": "DAC, PLC, and CLG",
+        "C": "All Irish registered companies",
+        "D": "Only PLCs listed on the Irish Stock Exchange"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 176(1) CA 2014, a DAC, PLC, and CLG must hold an AGM within 9 months of the end of the relevant financial year. LTDs are generally exempt from this obligation."
+    },
+    {
+      "id": 9,
+      "question": "The maximum number of members an LTD may have is:",
+      "options": {
+        "A": "50",
+        "B": "100",
+        "C": "149",
+        "D": "Unlimited, subject to constitution"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 17 CA 2014 limits an LTD to a maximum of 149 members (exclusive of employee members), which is a substantial increase from the old 50-member limit."
+    },
+    {
+      "id": 10,
+      "question": "If a company acts outside its objects clause, the transaction is said to be:",
+      "options": {
+        "A": "Void ab initio",
+        "B": "Voidable at the option of the other party",
+        "C": "Ultra vires — though the effect under CA 2014 is modified",
+        "D": "Of no legal consequence, as objects clauses are never enforceable"
+      },
+      "correct_answer": "C",
+      "explanation": "Acting outside the objects clause is ultra vires. However, under CA 2014 and the EU First Directive (implemented by section 40 CA 2014), a third party dealing in good faith can enforce a transaction even if it is outside the company's objects, limiting the practical impact of ultra vires for DACs."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module07_Lesson01.txt",
+  "module_number": 7,
+  "module_title": "Occupiers' Liability",
+  "lesson_number": 1,
+  "lesson_title": "The Occupiers' Liability Act 1995 and the Courts and Civil Law (Miscellaneous Provisions) Act 2023",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M07_L01_Q01",
+      "question": "Which statute governs occupiers' liability in Ireland?",
+      "options": {
+        "A": "The Occupiers' Liability Act 1995",
+        "B": "The Occupiers' Liability Act 1957",
+        "C": "The Civil Liability Act 1961",
+        "D": "The Non-Fatal Offences Against the Person Act 1997"
+      },
+      "correct_answer": "A",
+      "explanation": "Occupiers' liability in Ireland is governed by the Occupiers' Liability Act 1995. This Act replaced the unsatisfactory pre-existing common law framework with a clearer statutory scheme. The 1957 Act applies in England, not Ireland."
+    },
+    {
+      "id": "TL_M07_L01_Q02",
+      "question": "The Occupiers' Liability Act 1995 was significantly amended by which legislation?",
+      "options": {
+        "A": "The Civil Liability (Amendment) Act 2017",
+        "B": "The Courts and Civil Law (Miscellaneous Provisions) Act 2023",
+        "C": "The Liability for Defective Products Act 1991",
+        "D": "The Personal Injuries Assessment Board Act 2003"
+      },
+      "correct_answer": "B",
+      "explanation": "The Courts and Civil Law (Miscellaneous Provisions) Act 2023 significantly amended the Occupiers' Liability Act 1995 by inserting a new section 5A. This represents a major policy shift in occupiers' liability law that every FE-1 candidate must understand."
+    },
+    {
+      "id": "TL_M07_L01_Q03",
+      "question": "Which three categories of entrant does the Occupiers' Liability Act 1995 recognise?",
+      "options": {
+        "A": "Invitees, licensees, and trespassers",
+        "B": "Business visitors, social visitors, and trespassers",
+        "C": "Visitors, recreational users, and trespassers",
+        "D": "Lawful entrants, unlawful entrants, and recreational users"
+      },
+      "correct_answer": "C",
+      "explanation": "The Occupiers' Liability Act 1995 recognises three categories: visitors, recreational users, and trespassers. The old common law categories of invitees and licensees were abolished. The duty owed differs significantly depending on which category the entrant falls into."
+    },
+    {
+      "id": "TL_M07_L01_Q04",
+      "question": "Under the Occupiers' Liability Act 1995, a visitor is defined as a person who enters:",
+      "options": {
+        "A": "With the actual invitation of the occupier expressed in writing",
+        "B": "Pursuant to a statutory right to enter conferred by legislation only",
+        "C": "With the express permission of the occupier for a clearly stated purpose",
+        "D": "With the occupier's express or implied permission for a purpose within the scope of that permission, or pursuant to a contractual or statutory right"
+      },
+      "correct_answer": "D",
+      "explanation": "Under the 1995 Act, visitors are persons who enter with the occupier's express or implied permission for a purpose within the scope of that permission. Visitors also include persons entering pursuant to a contractual right, or by virtue of a statutory right or duty. The definition is broad and encompasses both invited guests and those with statutory or contractual rights of entry."
+    },
+    {
+      "id": "TL_M07_L01_Q05",
+      "question": "The duty owed to visitors under the Occupiers' Liability Act 1995 is found in which section?",
+      "options": {
+        "A": "Section 3",
+        "B": "Section 4",
+        "C": "Section 5",
+        "D": "Section 5A"
+      },
+      "correct_answer": "A",
+      "explanation": "Section 3 of the Occupiers' Liability Act 1995 sets out the duty owed to visitors — the common duty of care. Section 4 deals with recreational users and trespassers. Section 5A (inserted by the 2023 Act) creates a complete exclusion of liability for obvious risks in dangerous recreational activities."
+    },
+    {
+      "id": "TL_M07_L01_Q06",
+      "question": "Under section 3 of the Occupiers' Liability Act 1995, the duty owed to visitors is:",
+      "options": {
+        "A": "A duty not to act with reckless disregard for the visitor's safety",
+        "B": "A common duty of care — to take such care as is reasonable in all the circumstances to ensure the visitor does not suffer injury or damage by reason of any danger on the premises",
+        "C": "A duty equivalent to strict liability for all dangers existing on the premises",
+        "D": "A duty to warn visitors of all known dangers, whether obvious or hidden"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 3 imposes a common duty of care on occupiers towards visitors: to take such care as is reasonable in all the circumstances to ensure the visitor does not suffer injury or damage by reason of any danger on the premises. This is broadly equivalent to the ordinary negligence standard. Relevant factors include the probability and seriousness of injury, cost of eliminating the danger, and whether the visitor was warned."
+    },
+    {
+      "id": "TL_M07_L01_Q07",
+      "question": "How is a recreational user defined under the Occupiers' Liability Act 1995?",
+      "options": {
+        "A": "A person who enters premises for commercial recreational activities and pays for entry",
+        "B": "A person who uses the occupier's premises for any leisure purpose, whether or not they pay",
+        "C": "A person who enters premises for the purpose of a recreational activity — broadly, outdoor pursuits such as hiking, cycling, or visiting natural features — without paying for admission",
+        "D": "A person who enters premises for organised sporting or athletic competition"
+      },
+      "correct_answer": "C",
+      "explanation": "A recreational user is a person who enters premises for the purpose of a recreational activity — broadly, outdoor pursuits such as hiking, cycling, horse-riding, picnicking, or visiting natural features — without paying for admission. The absence of payment is a defining characteristic: if payment is made, the person is typically classified as a visitor."
+    },
+    {
+      "id": "TL_M07_L01_Q08",
+      "question": "The duty owed to recreational users and trespassers under the Occupiers' Liability Act 1995 is found in which section?",
+      "options": {
+        "A": "Section 3",
+        "B": "Section 2",
+        "C": "Section 5A",
+        "D": "Section 4"
+      },
+      "correct_answer": "D",
+      "explanation": "Section 4 of the Occupiers' Liability Act 1995 sets out the duty owed to both recreational users and trespassers — a duty not to act with reckless disregard for their safety. This is a significantly lower threshold than the section 3 common duty of care owed to visitors."
+    },
+    {
+      "id": "TL_M07_L01_Q09",
+      "question": "What is the standard of duty owed to recreational users and trespassers under section 4 of the Occupiers' Liability Act 1995?",
+      "options": {
+        "A": "A duty not to act with reckless disregard for their safety — a significantly lower threshold than the reasonable care standard",
+        "B": "A common duty of care equivalent to that owed to visitors under section 3",
+        "C": "A duty to warn them of any obvious dangers on the land",
+        "D": "No duty whatsoever — neither recreational users nor trespassers can recover from occupiers"
+      },
+      "correct_answer": "A",
+      "explanation": "Section 4 imposes a duty not to act with reckless disregard for the safety of recreational users and trespassers. This is a significantly lower threshold than the section 3 reasonable care standard. Ordinary negligence — even fairly serious carelessness — will not found liability. The defendant's conduct must amount to reckless disregard: indifference to an obvious and serious risk of harm."
+    },
+    {
+      "id": "TL_M07_L01_Q10",
+      "question": "In the context of section 4 of the Occupiers' Liability Act 1995, reckless disregard means:",
+      "options": {
+        "A": "Any failure to take reasonable steps to avoid a foreseeable risk of injury",
+        "B": "An indifference to an obvious and serious risk of harm — ordinary negligence, even serious carelessness, does not suffice",
+        "C": "Intentional harm deliberately caused to entrants on the land",
+        "D": "Knowledge of a specific danger combined with a failure to post warning signs at entry points"
+      },
+      "correct_answer": "B",
+      "explanation": "Reckless disregard under section 4 means an indifference to an obvious and serious risk of harm. It is a higher threshold than ordinary negligence. Ordinary carelessness — even fairly serious failings — will not satisfy this standard. The defendant must have been indifferent to an obvious and serious risk, not merely careless."
+    }
+  ]
+}

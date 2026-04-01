@@ -1,0 +1,131 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module09_Lesson02.txt",
+  "module_number": 9,
+  "module_title": "Capital Maintenance, Dividends and Share Transfers",
+  "lesson_number": 2,
+  "lesson_title": "Share Transfer and Transmission",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M09_L02_Q01",
+      "question": "Under s.95(1)(a) CA 2014, a private limited company may restrict the transfer of its shares in its articles of association. What is the nature of the discretion typically conferred on directors to refuse registration, and what is the leading Irish authority on the standard applicable?",
+      "options": {
+        "A": "Directors have an objective discretion — they may refuse registration only where a reasonable director would do so in the same circumstances",
+        "B": "Directors have a subjective (fiduciary) discretion — they must exercise it bona fide in what they consider to be in the interests of the company, not for collateral purposes. The leading case is Re Smith & Fawcett Ltd [1942] Ch",
+        "C": "Directors have an absolute discretion — once conferred by the articles, they may refuse registration for any reason or no reason without liability",
+        "D": "Directors must always give reasons for refusing registration — an unexplained refusal is automatically void under s.95(2) CA 2014"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the standard form article, directors may refuse to register a transfer at their discretion. Re Smith & Fawcett Ltd [1942] CA established that this discretion must be exercised bona fide in the interests of the company as a whole — it is a fiduciary discretion, not an absolute or arbitrary one. Directors cannot use the power for improper collateral purposes."
+    },
+    {
+      "id": "CL_M09_L02_Q02",
+      "question": "In Re Hafner [1943] IR 426, an Irish case decided under a pre-1963 Companies Act, the court considered a refusal to register a share transfer. What principle of evidential inference did the court apply?",
+      "options": {
+        "A": "The court held that a refusal to register without giving any reasons gives rise to an inference that the discretion was exercised improperly",
+        "B": "The court held that a board minute recording a formal refusal creates an irrebuttable presumption that the directors considered the company's interests",
+        "C": "The court held that directors who refuse a transfer must file a detailed explanation with the CRO within 14 days or the refusal is void",
+        "D": "The court held that the transfer must be registered unless the directors can demonstrate objective commercial justification for the refusal"
+      },
+      "correct_answer": "A",
+      "explanation": "In Re Hafner [1943] IR 426, Gavan Duffy J held that where directors refuse to register a share transfer without providing reasons, the court may infer that the discretion was not properly exercised. While directors are not always obliged to give reasons, unexplained refusals are dangerous and may evidence improper exercise of the power."
+    },
+    {
+      "id": "CL_M09_L02_Q03",
+      "question": "Under s.96 CA 2014, once a company receives an instrument of transfer of shares, within what period must it register the transfer or notify the transferee of the reason for refusal, and what is the consequence of failing to do so?",
+      "options": {
+        "A": "The company must act within 21 days; failure creates an automatic registration of the transfer",
+        "B": "The company must act within 2 months of lodgement; failure to register or notify the reason for refusal entitles the transferee to apply to court for an order rectifying the register",
+        "C": "The company must act within 14 days; failure creates a civil liability in damages to the transferee",
+        "D": "There is no prescribed statutory period — the company may consider registration at its next board meeting, however remote"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.96 CA 2014 (mirroring s.771 UK Companies Act 2006), the company must register the transfer or send notice of refusal stating reasons within 2 months of receipt of the instrument of transfer. Failure entitles the transferee to apply to court for rectification of the register under s.174 CA 2014."
+    },
+    {
+      "id": "CL_M09_L02_Q04",
+      "question": "A company's articles contain a pre-emption clause requiring any shareholder wishing to transfer shares to first offer them pro-rata to existing shareholders at fair value before offering them to an outsider. A shareholder purports to transfer shares to an outsider without complying with the pre-emption procedure. What is the effect of this purported transfer?",
+      "options": {
+        "A": "The transfer is void ab initio — the transferee acquires no title to the shares",
+        "B": "The transfer is voidable at the company's option — the company may register it or refuse registration",
+        "C": "The transfer is effective as between transferor and transferee but the company may refuse to register it, and the other shareholders may seek an injunction restraining the transfer or requiring compliance with pre-emption",
+        "D": "The transfer is effective and the company must register it — pre-emption clauses are invalid as a matter of Irish public policy"
+      },
+      "correct_answer": "C",
+      "explanation": "A purported transfer in breach of a pre-emption clause is effective as between the parties (equitable title passes) but the other shareholders may enforce the pre-emption right. In practice: the company will refuse to register the transfer; existing shareholders may seek injunctive relief or specific performance of the pre-emption; and the purported transferee may take subject to the equities."
+    },
+    {
+      "id": "CL_M09_L02_Q05",
+      "question": "In Banfi Ltd v Moran [2006] IEHC, the High Court considered the exercise of directors' discretion to refuse share registration. What was the outcome, and on what grounds did the court intervene?",
+      "options": {
+        "A": "The court upheld the refusal — directors may refuse registration for any reason and the court will not second-guess a board decision",
+        "B": "The court found that the directors had exercised their discretion not for any legitimate purpose connected with the company's interests but to entrench the majority's control, and the refusal was accordingly found to be improper",
+        "C": "The court ordered registration because the articles did not expressly grant the board an absolute discretion to refuse transfers",
+        "D": "The court ordered an independent valuation of the shares and required the directors to state in writing their reasons for refusal within 14 days"
+      },
+      "correct_answer": "B",
+      "explanation": "In Banfi Ltd v Moran [2006] IEHC, the High Court found that the directors' refusal to register the transfer was not motivated by any genuine concern for the company but was instead designed to maintain the majority shareholders' control. Such improper purpose rendered the exercise of the discretion void, and the court ordered registration."
+    },
+    {
+      "id": "CL_M09_L02_Q06",
+      "question": "Tangney v Clarence Hotels Company Ltd [1933] IR is an important Irish authority on the right to refuse share transfer registration. What principle does this case establish regarding the obligation to give reasons?",
+      "options": {
+        "A": "Directors must always provide written reasons for a refusal to register within 7 days or the refusal is automatically invalid",
+        "B": "Directors are generally not legally obliged to give reasons for refusing to register a share transfer under a general discretion clause, but failure to give reasons makes it difficult to rebut any inference of improper exercise of the power",
+        "C": "The court held that directors must give reasons for refusal in all cases involving transfers to outsiders, but not for transfers between existing shareholders",
+        "D": "Refusal without reasons is a breach of contract between the company and the transferor shareholder"
+      },
+      "correct_answer": "B",
+      "explanation": "In Tangney v Clarence Hotels [1933] IR, the court confirmed that directors holding a general discretion to refuse registration are not always obliged to give reasons. However, a refusal without reasons creates evidential difficulties if the directors' exercise of discretion is later challenged — courts may infer improper purpose from an unexplained refusal, consistent with Re Hafner [1943]."
+    },
+    {
+      "id": "CL_M09_L02_Q07",
+      "question": "A shareholder of a private company executes an instrument of share transfer in favour of a transferee. The company refuses to register the transfer on the grounds that the articles give the directors absolute discretion to refuse any transfer. The transferee challenges this refusal. Under Irish law, can such an 'absolute' discretion clause be given full effect?",
+      "options": {
+        "A": "Yes — an express absolute discretion clause in the articles is unimpeachable under s.95(1)(a) CA 2014 and courts will not review its exercise",
+        "B": "Probably not in full — even where a discretion clause appears absolute, courts have consistently required that it be exercised bona fide in the interests of the company; a refusal motivated solely by the majority's self-interest will not be protected by the word 'absolute'",
+        "C": "Yes — s.95(1)(a) CA 2014 is express legislative sanction for unlimited director discretion over share transfers in private companies",
+        "D": "No — s.95(1)(a) limits director discretion to refusing registration on grounds of non-compliance with pre-emption rights only"
+      },
+      "correct_answer": "B",
+      "explanation": "Even where the articles purport to confer an 'absolute' discretion, Irish courts following Re Smith & Fawcett [1942] and Banfi v Moran [2006] have required bona fide exercise in the company's interests. The word 'absolute' does not permit the discretion to be used for collateral or improper purposes. A court can investigate and override an improperly exercised refusal."
+    },
+    {
+      "id": "CL_M09_L02_Q08",
+      "question": "What is the distinction between a 'transfer' of shares and a 'transmission' of shares under CA 2014, and why does it matter?",
+      "options": {
+        "A": "Transfer is a voluntary act by the shareholder; transmission occurs automatically by operation of law (on death or bankruptcy). Transmission does not require compliance with transfer restrictions in the articles unless the articles expressly provide otherwise",
+        "B": "Transfer and transmission are legally synonymous — both require compliance with pre-emption rights under s.95 CA 2014",
+        "C": "Transfer requires a stock transfer form; transmission is effected by a court order transferring shares to a liquidator",
+        "D": "Transmission is a form of transfer specific to publicly listed companies; private companies use only share certificates"
+      },
+      "correct_answer": "A",
+      "explanation": "Transfer is a voluntary disposal by the registered holder (e.g. sale, gift). Transmission occurs automatically by operation of law — on death, shares vest in the personal representative; on bankruptcy, in the trustee in bankruptcy. Article-based transfer restrictions do not automatically apply to transmissions unless the articles expressly extend restrictions to transmission: Re Sedgefield Steeplechase Co [1927]."
+    },
+    {
+      "id": "CL_M09_L02_Q09",
+      "question": "A shareholder in a private limited company dies intestate. Their personal representative applies to be registered as shareholder. The directors refuse registration, relying on the articles' transfer restriction clause. Is this refusal lawful?",
+      "options": {
+        "A": "Yes — the personal representative must comply with all transfer restrictions in the articles, including director approval, before being registered",
+        "B": "Only if the articles expressly extend transfer restrictions to transmissions — absent express provision, a transfer restriction clause does not apply to transmission by operation of law on death",
+        "C": "No — registration of a personal representative is always automatic and directors have no discretion to refuse",
+        "D": "Yes — all registered shareholders must be approved by the directors regardless of how the shares were acquired"
+      },
+      "correct_answer": "B",
+      "explanation": "Transmission by operation of law (on death or bankruptcy) falls outside ordinary transfer restriction clauses unless the articles expressly extend the restriction to transmissions. Standard transfer restrictions apply to voluntary transfers; the personal representative acquires the right to be registered unless the articles expressly apply restrictions to transmissions as well."
+    },
+    {
+      "id": "CL_M09_L02_Q10",
+      "question": "A shareholder grants a charging order over their shares to secure a loan. The lender (chargee) later seeks to enforce the security by applying to register the shares in its name after the shareholder defaults. The company's articles contain a pre-emption clause. What legal issues arise?",
+      "options": {
+        "A": "The chargee may register the shares freely — security enforcement is treated as a transmission by operation of law and pre-emption rights do not apply",
+        "B": "The enforcement of the security involves a voluntary transfer by the chargor/company, which will likely be treated as a transfer triggering pre-emption rights unless the articles or a shareholders' agreement expressly exempts security enforcement",
+        "C": "Shares cannot validly be charged — a shareholder may only grant a fixed charge over tangible assets, not intangible property like shares",
+        "D": "Once a charging order is registered against shares, the pre-emption clause is automatically suspended for the duration of the charge"
+      },
+      "correct_answer": "B",
+      "explanation": "The enforcement of share security is generally treated as a transfer requiring compliance with pre-emption rights under the articles, unless the articles or a side agreement expressly excludes security enforcement from the pre-emption regime. Failure to comply with pre-emption on enforcement exposes the chargee to challenges from other shareholders."
+    }
+  ]
+}

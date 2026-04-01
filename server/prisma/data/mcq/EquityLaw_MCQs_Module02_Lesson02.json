@@ -1,0 +1,131 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "Module_02_Lesson_02_The_Three_Certainties___Certainty_of_Objects.txt",
+  "module_number": 2,
+  "module_title": "Trusts — Formation and Validity",
+  "lesson_number": 2,
+  "lesson_title": "The Three Certainties: Certainty of Objects",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EQL_M02_L02_Q01",
+      "question": "What is the correct test for certainty of objects in a fixed trust?",
+      "options": {
+        "A": "The 'is or is not' test — it must be possible to say of any given person whether they are or are not a member of the class.",
+        "B": "The complete list test — the trustee must be able to draw up a complete list of all beneficiaries.",
+        "C": "The conceptual certainty test — the description of the class must be sufficiently clear in concept.",
+        "D": "The administrative workability test — the class must be manageable in size."
+      },
+      "correct_answer": "B",
+      "explanation": "For a fixed trust — one where each beneficiary's share is specified — the test is the complete list test established in IRC v Broadway Cottages Trust (1955). The trustee must be able to compile a complete list of all beneficiaries. If even one beneficiary cannot be identified, the trust fails for uncertainty of objects."
+    },
+    {
+      "id": "EQL_M02_L02_Q02",
+      "question": "Which House of Lords decision established the 'is or is not' test for certainty of objects in discretionary trusts?",
+      "options": {
+        "A": "Re Baden's Deed Trusts No 2 (1973)",
+        "B": "Knight v Knight (1840)",
+        "C": "IRC v Broadway Cottages Trust (1955)",
+        "D": "McPhail v Doulton (1971)"
+      },
+      "correct_answer": "D",
+      "explanation": "The 'is or is not' test for discretionary trusts was established by the House of Lords in McPhail v Doulton (1971). The test asks whether it can be said with certainty of any given person whether they are or are not a member of the class of objects. This replaced the complete list test for discretionary trusts."
+    },
+    {
+      "id": "EQL_M02_L02_Q03",
+      "question": "A trust is established for 'my friends.' Which aspect of certainty of objects is most likely to cause the trust to fail?",
+      "options": {
+        "A": "Evidential certainty — there is insufficient evidence of who the settlor's friends are.",
+        "B": "Conceptual certainty — 'friends' has no settled legal meaning and the class is conceptually uncertain.",
+        "C": "Administrative unworkability — the class of friends is too large to administer.",
+        "D": "The complete list test — the trustee cannot compile a complete list of friends."
+      },
+      "correct_answer": "B",
+      "explanation": "A trust for 'my friends' fails for lack of conceptual certainty. The word 'friends' has no agreed legal meaning — it is impossible to determine in principle who qualifies as a friend. Conceptual certainty requires that the description of the class be sufficiently clear in concept for the court to know what the words mean."
+    },
+    {
+      "id": "EQL_M02_L02_Q04",
+      "question": "In Re Baden's Deed Trusts No 2 (1973), the Court of Appeal held that which word was conceptually certain enough to satisfy the 'is or is not' test?",
+      "options": {
+        "A": "Friends",
+        "B": "Relatives",
+        "C": "Associates",
+        "D": "Deserving persons"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Baden's Deed Trusts No 2 (1973), the Court of Appeal applied the 'is or is not' test from McPhail v Doulton and held that the description 'relatives' was conceptually certain enough — notwithstanding differences among the judges as to the precise meaning — to satisfy the test for a discretionary trust."
+    },
+    {
+      "id": "EQL_M02_L02_Q05",
+      "question": "What is the distinction between conceptual certainty and evidential certainty in the context of certainty of objects?",
+      "options": {
+        "A": "Conceptual certainty concerns whether the trust deed is in writing; evidential certainty concerns whether there are witnesses.",
+        "B": "Conceptual certainty asks whether the class description has a clear meaning in law; evidential certainty asks whether it can be proved who falls within that class.",
+        "C": "Conceptual certainty concerns fixed trusts; evidential certainty concerns discretionary trusts.",
+        "D": "Conceptual certainty and evidential certainty are the same thing stated differently."
+      },
+      "correct_answer": "B",
+      "explanation": "Conceptual certainty asks whether the description of the class of objects has a sufficiently clear meaning in law — for example, whether 'old employees' has a clear enough concept. Evidential certainty asks whether, given a conceptually certain class, it can be established as a matter of evidence who falls within it. Difficulties of evidence do not invalidate a trust that is conceptually certain."
+    },
+    {
+      "id": "EQL_M02_L02_Q06",
+      "question": "Lord Wilberforce in McPhail v Doulton (1971) suggested that a trust for 'all residents of Greater London' might fail on which ground, even if conceptually certain?",
+      "options": {
+        "A": "Lack of certainty of intention",
+        "B": "Failure to satisfy the complete list test",
+        "C": "Administrative unworkability",
+        "D": "Failure to satisfy the prudent trustee standard"
+      },
+      "correct_answer": "C",
+      "explanation": "Lord Wilberforce in McPhail v Doulton (1971) gave 'all residents of Greater London' as an example of a class that might be conceptually certain but so vast in size that the trustee could not sensibly exercise their discretion. Such a trust would fail on the ground of administrative unworkability, which is a separate ground of invalidity from uncertainty of objects."
+    },
+    {
+      "id": "EQL_M02_L02_Q07",
+      "question": "If a trust fails for uncertainty of objects, what is the legal consequence for the trust property?",
+      "options": {
+        "A": "The trust property passes to the Crown as bona vacantia.",
+        "B": "The trust property is held on a resulting trust and reverts to the settlor.",
+        "C": "The trust property is distributed equally among the next of kin of the settlor.",
+        "D": "The court has discretion to appoint new objects and save the trust."
+      },
+      "correct_answer": "B",
+      "explanation": "Where a trust fails for uncertainty of objects, the property passes back to the settlor on a resulting trust. The beneficial interest cannot remain with the purported trustee and, in the absence of valid objects, results back to the person who provided the property. This is an important consequence to state in FE-1 exam answers."
+    },
+    {
+      "id": "EQL_M02_L02_Q08",
+      "question": "Which of the following is a trust for a class of objects that is most likely to satisfy the 'is or is not' test?",
+      "options": {
+        "A": "My closest friends",
+        "B": "Former employees of X Company",
+        "C": "Those whom I have found deserving over the years",
+        "D": "People of good character known to my trustees"
+      },
+      "correct_answer": "B",
+      "explanation": "Former employees of a named company is a conceptually certain description — it is possible to determine with certainty whether any given person is or is not a former employee. Descriptions such as 'closest friends,' 'those I have found deserving,' and 'people of good character' are conceptually uncertain because they have no clear, objective legal meaning."
+    },
+    {
+      "id": "EQL_M02_L02_Q09",
+      "question": "A discretionary trust is established for 'the employees and former employees of X Company and their relatives and dependants.' Which test applies to determine whether the trust is valid?",
+      "options": {
+        "A": "The complete list test from IRC v Broadway Cottages Trust (1955)",
+        "B": "The 'is or is not' test from McPhail v Doulton (1971)",
+        "C": "The administrative workability test alone",
+        "D": "The full certainty test applicable to fixed trusts"
+      },
+      "correct_answer": "B",
+      "explanation": "This is a discretionary trust, and the applicable test is the 'is or is not' test established in McPhail v Doulton (1971). The complete list test applies only to fixed trusts. The court must be able to say of any given individual whether they are or are not within the class — these were the facts of the McPhail litigation itself."
+    },
+    {
+      "id": "EQL_M02_L02_Q10",
+      "question": "In IRC v Broadway Cottages Trust (1955), which test was applied to the discretionary trust before the court?",
+      "options": {
+        "A": "The 'is or is not' test",
+        "B": "The complete list test",
+        "C": "The administrative workability test",
+        "D": "The conceptual certainty test"
+      },
+      "correct_answer": "B",
+      "explanation": "In IRC v Broadway Cottages Trust (1955), the court applied the complete list test to the discretionary trust before it. This approach was later departed from for discretionary trusts by the House of Lords in McPhail v Doulton (1971), which replaced it with the 'is or is not' test. The complete list test now applies only to fixed trusts."
+    }
+  ]
+}

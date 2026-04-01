@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module03_Lesson02.txt",
+  "module_number": 3,
+  "module_title": "Sources and Hierarchy of EU Law",
+  "lesson_number": 2,
+  "lesson_title": "Secondary Law: Regulations, Directives, and Decisions",
+  "questions": [
+    {
+      "id": "EUL_M03_L02_Q01",
+      "question": "A Regulation under Article 288 TFEU has which of the following characteristics?",
+      "options": {
+        "A": "It is binding on member states but requires national implementing legislation to take effect",
+        "B": "It has general application, is binding in its entirety, and is directly applicable in all member states without requiring national implementation",
+        "C": "It applies only to the member states specifically addressed in it",
+        "D": "It becomes part of national law only after approval by national parliaments"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 288 TFEU: a Regulation 'shall have general application. It shall be binding in its entirety and directly applicable in all Member States.' Direct applicability means Regulations automatically become part of national law on entering into force without any national implementing measure — member states may not transpose them."
+    },
+    {
+      "id": "EUL_M03_L02_Q02",
+      "question": "A Directive under Article 288 TFEU is described as:",
+      "options": {
+        "A": "Binding in its entirety and directly applicable in all member states",
+        "B": "Binding, as to the result to be achieved, upon each member state to which it is addressed, but leaving national authorities the choice of form and methods",
+        "C": "Non-binding guidance that member states should take into account when legislating",
+        "D": "Binding only on the EU institutions, not on member states"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 288 TFEU: a Directive 'shall be binding, as to the result to be achieved, upon each Member State to which it is addressed, but shall leave to the national authorities the choice of form and methods.' Directives require transposition into national law within a specified implementation period."
+    },
+    {
+      "id": "EUL_M03_L02_Q03",
+      "question": "A Decision under Article 288 TFEU that specifies those to whom it is addressed:",
+      "options": {
+        "A": "Has general application binding all member states and individuals",
+        "B": "Is binding in its entirety only upon those to whom it is addressed",
+        "C": "Is non-binding but persuasive",
+        "D": "Requires ratification by the Parliament before entering into force"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 288 TFEU: a Decision 'shall be binding in its entirety. A decision which specifies those to whom it is addressed shall be binding only on them.' Decisions may be addressed to specific member states, companies, or individuals (e.g., a Commission competition decision finding an infringement)."
+    },
+    {
+      "id": "EUL_M03_L02_Q04",
+      "question": "Recommendations and Opinions under Article 288 TFEU:",
+      "options": {
+        "A": "Are binding secondary law with direct effect",
+        "B": "Have no binding force but may be taken into account by national courts when interpreting national law",
+        "C": "Are equivalent to Directives in legal effect",
+        "D": "Create rights for individuals that can be enforced before national courts"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 288 TFEU: 'Recommendations and opinions shall have no binding force.' However, the Court of Justice held in Grimaldi v Fonds des Maladies [1989] that national courts must take Community recommendations into account when interpreting national law, particularly where they are designed to supplement binding EU provisions."
+    },
+    {
+      "id": "EUL_M03_L02_Q05",
+      "question": "The principle that member states must not frustrate the objectives of a Directive before its implementation deadline expires is established in:",
+      "options": {
+        "A": "Francovich v Italy [1991]",
+        "B": "Inter-Environnement Wallonie [1997], applying the principle of sincere cooperation",
+        "C": "Van Gend en Loos [1963]",
+        "D": "Marleasing [1990]"
+      },
+      "correct_answer": "B",
+      "explanation": "In Inter-Environnement Wallonie (C-129/96), the Court of Justice held that during the period for implementing a Directive, member states must refrain from adopting measures liable seriously to compromise the result prescribed by the Directive. This obligation derives from Article 4(3) TEU (sincere cooperation) and Article 288 TFEU."
+    },
+    {
+      "id": "EUL_M03_L02_Q06",
+      "question": "The distinction between a Regulation and a Directive matters because:",
+      "options": {
+        "A": "Regulations are proposed by the Parliament and Directives by the Commission",
+        "B": "Regulations apply automatically as national law; Directives require member state transposition and allow national discretion as to form and method of implementation",
+        "C": "Directives can only be adopted by unanimity; Regulations by QMV",
+        "D": "Regulations have direct effect; Directives never do"
+      },
+      "correct_answer": "B",
+      "explanation": "The key distinction: Regulations are directly applicable (automatic national law, no transposition needed); Directives oblige member states to achieve a specified result by a deadline but leave choice of form and method. A Directive may also have direct effect (if unconditional and sufficiently precise after the implementation deadline), but this is a consequence of failure to transpose — not the primary mechanism."
+    },
+    {
+      "id": "EUL_M03_L02_Q07",
+      "question": "'Delegated acts' under Article 290 TFEU are:",
+      "options": {
+        "A": "Acts adopted by the Commission at the request of member states to adapt EU law to local conditions",
+        "B": "Non-legislative acts of general application adopted by the Commission to supplement or amend non-essential elements of a legislative act, subject to Parliament/Council oversight",
+        "C": "Regulations adopted by the Council under special legislative procedure",
+        "D": "Acts adopted by member states under power delegated by the Commission"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 290 TFEU: legislative acts may delegate power to the Commission to adopt delegated acts to supplement or amend non-essential elements. The legislative act must define the objectives, content, scope, and duration of delegation. The Parliament or Council may revoke the delegation or object to individual delegated acts."
+    },
+    {
+      "id": "EUL_M03_L02_Q08",
+      "question": "'Implementing acts' under Article 291 TFEU differ from delegated acts because:",
+      "options": {
+        "A": "Implementing acts amend non-essential elements of legislative acts; delegated acts apply legislation uniformly",
+        "B": "Implementing acts are adopted by the Commission (or Council) to ensure uniform conditions for implementation of legally binding Union acts; delegated acts supplement or amend legislative acts",
+        "C": "Implementing acts require Parliament consent; delegated acts do not",
+        "D": "Implementing acts are adopted by member states; delegated acts by EU institutions"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 291 TFEU: where uniform conditions for implementing legally binding Union acts are needed, implementing powers are conferred on the Commission (or Council in CFSP). Implementing acts execute existing law uniformly. Delegated acts (Article 290) supplement or amend the legislative act itself (with appropriate oversight). The distinction affects the oversight mechanism applied."
+    },
+    {
+      "id": "EUL_M03_L02_Q09",
+      "question": "The GDPR (General Data Protection Regulation) was adopted as a Regulation rather than a Directive because:",
+      "options": {
+        "A": "The ordinary legislative procedure does not permit Directives in the field of data protection",
+        "B": "A Regulation ensures uniform rules across all member states without the variation in implementation that Directives allow",
+        "C": "The Commission has exclusive power to adopt Regulations in the digital internal market",
+        "D": "Regulations take effect more quickly than Directives, which require long transposition periods"
+      },
+      "correct_answer": "B",
+      "explanation": "The choice of Regulation over Directive for the GDPR was deliberate: the previous Data Protection Directive (95/46) had resulted in divergent national implementations, creating a fragmented single market for data. A Regulation ensures identical rules apply across all 27 member states simultaneously, providing the legal certainty required for cross-border data processing."
+    },
+    {
+      "id": "EUL_M03_L02_Q10",
+      "question": "Failure by a member state to transpose a Directive within the implementation deadline may have which consequences?",
+      "options": {
+        "A": "Only political consequences — no legal remedy is available to affected individuals",
+        "B": "The Commission may bring infringement proceedings; the Directive may acquire direct effect against the state; and state liability under Francovich principles may arise",
+        "C": "The Directive automatically becomes a Regulation, binding without transposition",
+        "D": "Individuals may claim damages against the Commission for failing to compel implementation"
+      },
+      "correct_answer": "B",
+      "explanation": "Non-transposition of Directives triggers multiple legal consequences: (1) infringement proceedings under Article 258 TFEU; (2) the Directive may produce direct effect (Marshall v Southampton) if unconditional and sufficiently precise; (3) Francovich state liability if the Directive grants rights, the breach is clear, and damage results. These are cumulative remedies."
+    }
+  ],
+  "total_questions": 10
+}

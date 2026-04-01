@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "Module_15_Lesson_01_Fatal_Injuries_and_Survival_of_Actions___The_Civil_Liability_Act_1961.txt",
+  "module_number": 15,
+  "module_title": "Fatal Injuries and Survival of Actions",
+  "lesson_number": 1,
+  "lesson_title": "Fatal Injuries and Survival of Actions: The Civil Liability Act 1961",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M15_L01_Q01",
+      "question": "What was the position at common law regarding causes of action when a person died as a result of a tort?",
+      "options": {
+        "A": "The cause of action vested immediately in the deceased's dependants.",
+        "B": "The cause of action died with the person and was extinguished.",
+        "C": "The tortfeasor was criminally prosecuted instead.",
+        "D": "The claim transferred automatically to the deceased's estate."
+      },
+      "correct_answer": "B",
+      "explanation": "At common law, the position was harsh: a cause of action died with the person. If the tortfeasor killed the plaintiff, the claim was extinguished and the dependants had no cause of action for their loss. The Civil Liability Act 1961 comprehensively reformed this position."
+    },
+    {
+      "id": "TL_M15_L01_Q02",
+      "question": "Under which Part of the Civil Liability Act 1961 does the survival of actions operate?",
+      "options": {
+        "A": "Part I",
+        "B": "Part II",
+        "C": "Part III",
+        "D": "Part IV"
+      },
+      "correct_answer": "C",
+      "explanation": "The survival of actions is governed by Part III of the Civil Liability Act 1961. Under section 8, all causes of action vested in the deceased at the time of death survive for the benefit of their estate."
+    },
+    {
+      "id": "TL_M15_L01_Q03",
+      "question": "Under section 8 of the Civil Liability Act 1961, what happens to a deceased person's causes of action?",
+      "options": {
+        "A": "They are extinguished on death.",
+        "B": "They survive for the benefit of the deceased's estate.",
+        "C": "They transfer only to the surviving spouse.",
+        "D": "They can only be pursued within 12 months of the date of death."
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 8 of the Civil Liability Act 1961, all causes of action vested in the deceased at the time of death survive for the benefit of their estate. The personal representatives may pursue the tortfeasor for the losses the deceased sustained up to death."
+    },
+    {
+      "id": "TL_M15_L01_Q04",
+      "question": "Which of the following may the estate recover in a survival action under Part III of the Civil Liability Act 1961?",
+      "options": {
+        "A": "Future loss of earnings beyond the date of death.",
+        "B": "Solatium for the mental distress of dependants.",
+        "C": "Special damages for pain and suffering and loss of earnings up to death.",
+        "D": "Loss of dependency suffered by the deceased's children."
+      },
+      "correct_answer": "C",
+      "explanation": "In a survival action, the estate may recover special damages for the deceased's pain and suffering up to death, loss of earnings up to death, and medical expenses. Crucially, the estate cannot recover for future loss of earnings beyond the date of death — those losses are the dependants' losses, recoverable only in a separate fatal injuries action under Part IV."
+    },
+    {
+      "id": "TL_M15_L01_Q05",
+      "question": "Under which Part of the Civil Liability Act 1961 does the fatal injuries action operate?",
+      "options": {
+        "A": "Part I",
+        "B": "Part II",
+        "C": "Part III",
+        "D": "Part IV"
+      },
+      "correct_answer": "D",
+      "explanation": "The fatal injuries action is governed by Part IV of the Civil Liability Act 1961. Under section 47, a dependant of a deceased person may bring an action for their own losses arising from the death — the financial dependency they have lost as a result of the deceased's death."
+    },
+    {
+      "id": "TL_M15_L01_Q06",
+      "question": "Who may bring a fatal injuries action under section 47 of the Civil Liability Act 1961?",
+      "options": {
+        "A": "Only the surviving spouse.",
+        "B": "Only the deceased's children under the age of 18.",
+        "C": "Dependants, defined broadly to include spouses, children, parents, grandparents, siblings, and others financially dependent on the deceased.",
+        "D": "Any person who attended the deceased's funeral."
+      },
+      "correct_answer": "C",
+      "explanation": "Section 47 defines dependants broadly to include spouses, children, parents, grandparents, siblings, and others who were financially dependent on the deceased. The action is for the dependant's own losses arising from the death."
+    },
+    {
+      "id": "TL_M15_L01_Q07",
+      "question": "What is 'solatium' in the context of a fatal injuries action under the Civil Liability Act 1961?",
+      "options": {
+        "A": "A damages award for loss of future earnings calculated on a multiplier basis.",
+        "B": "A fixed statutory sum by way of compensation for mental distress arising from the death.",
+        "C": "The reimbursement of the deceased's medical expenses prior to death.",
+        "D": "An additional punitive award against the defendant for causing a fatality."
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 49, solatium is a fixed sum by way of compensation for mental distress arising from the death, currently set at a statutory amount under ministerial order. The Law Reform Commission has repeatedly recommended review of the solatium cap as inadequate to reflect the true grief and distress suffered by dependants, making this a recognised area of ongoing reform."
+    },
+    {
+      "id": "TL_M15_L01_Q08",
+      "question": "How is the loss of dependency head of damages calculated in a fatal injuries action?",
+      "options": {
+        "A": "As a fixed statutory sum set by ministerial order.",
+        "B": "On a multiplier-multiplicand basis, assessing the net annual income the dependants received from the deceased projected over the appropriate period, with deductions for contingencies.",
+        "C": "By reference to the defendant's net assets.",
+        "D": "As a percentage of the estate's total value."
+      },
+      "correct_answer": "B",
+      "explanation": "Loss of dependency is calculated on a multiplier-multiplicand basis: the court assesses the net annual income the deceased would likely have continued to earn, the proportion received by dependants, and the period over which that benefit would have continued, adjusted by an appropriate multiplier. Deductions are made for contingencies such as the chance that the deceased might have changed jobs or become ill."
+    },
+    {
+      "id": "TL_M15_L01_Q09",
+      "question": "What is the critical distinction between the survival action under Part III and the fatal injuries action under Part IV of the Civil Liability Act 1961?",
+      "options": {
+        "A": "Part III is brought by the estate for the deceased's own losses up to death; Part IV is brought by dependants for their own losses flowing from the death.",
+        "B": "Part III is brought by dependants; Part IV is brought by the estate.",
+        "C": "Part III covers property damage only; Part IV covers personal injury only.",
+        "D": "There is no distinction — both actions recover the same heads of loss."
+      },
+      "correct_answer": "A",
+      "explanation": "The survival action under Part III is brought by the deceased's personal representatives on behalf of the estate, recovering the deceased's own losses up to death. The fatal injuries action under Part IV is brought by the dependants for their own losses flowing from the death. These are entirely distinct causes of action and must not be confused in an exam answer."
+    },
+    {
+      "id": "TL_M15_L01_Q10",
+      "question": "When does the limitation period run in a fatal injuries action, as amended by the 1991 Amendment Act?",
+      "options": {
+        "A": "From the date of the tortious act, regardless of when the death occurred.",
+        "B": "From the date of death or the date of knowledge of the dependants, whichever is later.",
+        "C": "From the date the personal representatives are appointed.",
+        "D": "From the date the inquest verdict is returned."
+      },
+      "correct_answer": "B",
+      "explanation": "Under the 1991 Amendment Act, the limitation period in a fatal injuries action runs from the date of death or the date of knowledge of the dependants, whichever is later. Candidates must flag this limitation point in any exam answer involving a fatal injury claim."
+    }
+  ]
+}

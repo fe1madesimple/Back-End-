@@ -1,0 +1,131 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "Module_02_Lesson_01_The_Three_Certainties___Certainty_of_Intention_and_Subject_Matter.txt",
+  "module_number": 2,
+  "module_title": "Trusts — Formation and Validity",
+  "lesson_number": 1,
+  "lesson_title": "The Three Certainties: Certainty of Intention and Certainty of Subject Matter",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EQL_M02_L01_Q01",
+      "question": "In which case were the three certainties required for a valid express trust first clearly established?",
+      "options": {
+        "A": "Lambe v Eames (1871)",
+        "B": "Knight v Knight (1840)",
+        "C": "Palmer v Simmonds (1854)",
+        "D": "Comiskey v Bowring-Hanbury (1905)"
+      },
+      "correct_answer": "B",
+      "explanation": "The three certainties — certainty of intention, certainty of subject matter, and certainty of objects — were established in Knight v Knight (1840). This case remains the foundational authority for the validity requirements of an express trust."
+    },
+    {
+      "id": "EQL_M02_L01_Q02",
+      "question": "A testator left his estate to his wife 'to be used in whatever manner she thought best for herself and their family.' Which of the following best describes the legal outcome?",
+      "options": {
+        "A": "A valid trust was created because the testator clearly intended to benefit his family.",
+        "B": "A trust was created by implication from the surrounding circumstances.",
+        "C": "No trust was created because the words were merely precatory and did not impose a binding obligation.",
+        "D": "A constructive trust arose because equity would not allow the wife to retain the property absolutely."
+      },
+      "correct_answer": "C",
+      "explanation": "These are the facts of Lambe v Eames (1871), in which the court held that the words used were merely precatory — expressing a wish rather than imposing a binding obligation. No trust was created and the wife received an outright gift. Certainty of intention requires imperative, not merely precatory, language."
+    },
+    {
+      "id": "EQL_M02_L01_Q03",
+      "question": "Which foundational Irish statute is identified as the primary legislation governing trusts in Ireland, supplemented by the Land and Conveyancing Law Reform Act 2009 and the Charities Act 2009?",
+      "options": {
+        "A": "Succession Act 1965",
+        "B": "Trustee Act 1893",
+        "C": "Land Act 1965",
+        "D": "Family Home Protection Act 1976"
+      },
+      "correct_answer": "B",
+      "explanation": "The Trustee Act 1893 is the foundational Irish statute governing trusts. It is supplemented by the Land and Conveyancing Law Reform Act 2009, the Charities Act 2009, and the Succession Act 1965 in the context of testamentary trusts."
+    },
+    {
+      "id": "EQL_M02_L01_Q04",
+      "question": "For the purpose of certainty of intention, the Irish courts apply which distinction when assessing whether a trust has been created?",
+      "options": {
+        "A": "The distinction between legal and equitable title",
+        "B": "The distinction between imperative and precatory language",
+        "C": "The distinction between fixed and discretionary trusts",
+        "D": "The distinction between express and implied trusts"
+      },
+      "correct_answer": "B",
+      "explanation": "Irish courts, following the approach confirmed in Re Hamilton, apply the distinction between imperative language — which imposes a binding obligation and creates a trust — and precatory language — which merely expresses a wish or hope and does not create a trust. The substance of the words, not their form, is determinative."
+    },
+    {
+      "id": "EQL_M02_L01_Q05",
+      "question": "In Comiskey v Bowring-Hanbury (1905), the House of Lords held that a trust was created despite the use of language similar to that in Lambe v Eames. What distinguished the outcome?",
+      "options": {
+        "A": "The testator had expressly used the word 'trust' in the will.",
+        "B": "The surrounding circumstances demonstrated an imperative intention to create a trust.",
+        "C": "The beneficiaries had accepted the trust obligation by acquiescence.",
+        "D": "The trust was supported by consideration provided by the wife."
+      },
+      "correct_answer": "B",
+      "explanation": "In Comiskey v Bowring-Hanbury (1905), the House of Lords found a trust on similar facts to Lambe v Eames because the surrounding circumstances compelled the conclusion that the testator intended an imperative obligation, not merely a wish. Certainty of intention is assessed from the totality of the words and context."
+    },
+    {
+      "id": "EQL_M02_L01_Q06",
+      "question": "A testator purported to leave 'the bulk of my residuary estate' on trust. What is the likely outcome in equity?",
+      "options": {
+        "A": "The trust is valid because the residuary estate is identifiable as a whole.",
+        "B": "The trust fails for uncertainty of subject matter because 'bulk' cannot identify the trust property with sufficient certainty.",
+        "C": "The trust fails for uncertainty of objects because the beneficiaries are not identified.",
+        "D": "The trust is valid provided the trustees can determine a reasonable proportion."
+      },
+      "correct_answer": "B",
+      "explanation": "These are the facts of Palmer v Simmonds (1854), where the court held that 'the bulk of my residuary estate' was too uncertain to identify the trust property. Certainty of subject matter requires that the property be identifiable with precision; 'bulk' does not satisfy that standard."
+    },
+    {
+      "id": "EQL_M02_L01_Q07",
+      "question": "In Re London Wine Shippers (1986), a trust over wine in a warehouse failed. What was the reason for the failure?",
+      "options": {
+        "A": "The wine had been consumed and therefore ceased to exist as trust property.",
+        "B": "The settlor lacked the intention to create a trust.",
+        "C": "The specific bottles belonging to each customer had not been segregated and identified from the general stock.",
+        "D": "The beneficiaries were not ascertainable with sufficient certainty."
+      },
+      "correct_answer": "C",
+      "explanation": "In Re London Wine Shippers (1986), the court held that no valid trust arose because the specific bottles said to belong to each customer had not been separated from the general warehouse stock. Without segregation, the subject matter of the purported trust could not be identified, and the trust failed for uncertainty of subject matter."
+    },
+    {
+      "id": "EQL_M02_L01_Q08",
+      "question": "Which of the following trust properties would satisfy the requirement of certainty of subject matter?",
+      "options": {
+        "A": "The bulk of the settlor's savings",
+        "B": "Some of the books in the settlor's library",
+        "C": "A one-third share of the settlor's residuary estate",
+        "D": "A reasonable portion of the settlor's investment portfolio"
+      },
+      "correct_answer": "C",
+      "explanation": "A proportionate share of an identified fund — such as a one-third share of a residuary estate — satisfies certainty of subject matter because the beneficiary holds a proportionate interest in the whole, which is identifiable even before division. Vague descriptions such as 'bulk,' 'some,' or 'reasonable portion' are insufficient."
+    },
+    {
+      "id": "EQL_M02_L01_Q09",
+      "question": "Which of the following correctly states the three certainties required for a valid express trust?",
+      "options": {
+        "A": "Certainty of intention, certainty of form, and certainty of objects",
+        "B": "Certainty of intention, certainty of subject matter, and certainty of objects",
+        "C": "Certainty of consideration, certainty of subject matter, and certainty of objects",
+        "D": "Certainty of intention, certainty of subject matter, and certainty of consent"
+      },
+      "correct_answer": "B",
+      "explanation": "The three certainties, established in Knight v Knight (1840), are certainty of intention, certainty of subject matter, and certainty of objects. All three must be present for an express trust to be valid. There is no separate requirement of certainty of form, consideration, or consent."
+    },
+    {
+      "id": "EQL_M02_L01_Q10",
+      "question": "In a trust, who holds legal title and who holds equitable title?",
+      "options": {
+        "A": "The beneficiary holds legal title; the trustee holds equitable title.",
+        "B": "The settlor retains both legal and equitable title until the trust is constituted.",
+        "C": "The trustee holds legal title; the beneficiary holds equitable title.",
+        "D": "Both the trustee and beneficiary hold legal title concurrently."
+      },
+      "correct_answer": "C",
+      "explanation": "The defining characteristic of a trust is the division of ownership: the trustee holds legal title to the trust property, while the beneficiary holds equitable title. This separation of legal and equitable ownership is unique to equity and distinguishes a trust from an outright gift or loan."
+    }
+  ]
+}

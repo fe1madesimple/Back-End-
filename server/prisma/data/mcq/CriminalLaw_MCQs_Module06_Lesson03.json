@@ -1,0 +1,138 @@
+{
+  "subject": "Criminal Law",
+  "module": 6,
+  "lesson": 3,
+  "title": "Sexual Offences Against Children and Protected Persons",
+  "questions": [
+    {
+      "id": "CL_M06_L03_Q01",
+      "question": "Under the Criminal Law (Sexual Offences) Act 2006, what is the age below which a child cannot legally consent to sexual intercourse?",
+      "options": {
+        "A": "15",
+        "B": "16",
+        "C": "17",
+        "D": "18"
+      },
+      "correct_answer": "C",
+      "explanation": "Under the Criminal Law (Sexual Offences) Act 2006, the age of consent for sexual intercourse in Ireland is 17. A child under 17 cannot legally consent to sexual intercourse, and any adult who engages in such an act commits an offence regardless of the child's apparent agreement.",
+      "legislation": "Criminal Law (Sexual Offences) Act 2006"
+    },
+    {
+      "id": "CL_M06_L03_Q02",
+      "question": "The offence of defilement of a child under Section 4 of the Criminal Law (Sexual Offences) Act 2006 (where the child is under 15) is:",
+      "options": {
+        "A": "A fault-based offence requiring proof the accused knew the victim was under 15.",
+        "B": "A strict liability offence — proof of the act and the child's age is sufficient.",
+        "C": "Qualified by the near-age peer defence provided the accused is under 18.",
+        "D": "Only applicable to male accused persons."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 4 of the 2006 Act — applying where the child is under 15 — is a strict liability offence. The prosecution need only prove the sexual act and the child's age. The accused cannot raise a mistake-of-age defence. This was confirmed in People (DPP) v RM.",
+      "legislation": "Criminal Law (Sexual Offences) Act 2006, s.4; People (DPP) v RM"
+    },
+    {
+      "id": "CL_M06_L03_Q03",
+      "question": "For the near-age peer defence under Section 3(6) of the Criminal Law (Sexual Offences) Act 2006 to apply, all four conditions must be satisfied. Which of the following would cause the defence to fail?",
+      "options": {
+        "A": "The defendant is two years older than the child.",
+        "B": "The child is 16 years old.",
+        "C": "The defendant is the child's school teacher.",
+        "D": "The defendant is younger than the child."
+      },
+      "correct_answer": "C",
+      "explanation": "The near-age peer defence is expressly unavailable where the accused is in a position of authority over the child. A school teacher holds a position of authority over a pupil, and this disqualifies the accused from relying on the defence regardless of the age gap. A two-year age difference, a 16-year-old child, or a defendant younger than the child would not cause the defence to fail.",
+      "legislation": "Criminal Law (Sexual Offences) Act 2006, s.3(6)"
+    },
+    {
+      "id": "CL_M06_L03_Q04",
+      "question": "Under Section 3(6) of the 2006 Act, the near-age peer defence applies only where the child is aged:",
+      "options": {
+        "A": "Under 15.",
+        "B": "15 but under 17.",
+        "C": "Under 16.",
+        "D": "16 but under 18."
+      },
+      "correct_answer": "B",
+      "explanation": "The near-age peer defence under s.3(6) of the 2006 Act is only available where the child is aged 15 but under 17. It cannot be raised where the child is under 15, and it does not apply to the Section 4 strict liability offence for children under 15.",
+      "legislation": "Criminal Law (Sexual Offences) Act 2006, s.3(6)"
+    },
+    {
+      "id": "CL_M06_L03_Q05",
+      "question": "Section 5 of the Criminal Law (Sexual Offences) Act 2006 provides that a female child under 17 shall not be guilty of an offence under the Act by reason of engaging in sexual intercourse. What is the purpose of this provision?",
+      "options": {
+        "A": "To create a presumption that female children always consent to sexual intercourse.",
+        "B": "To ensure that the female child victim is not herself criminalised for her participation in the act.",
+        "C": "To transfer criminal liability to the older party in all cases of underage sex.",
+        "D": "To exclude female children from the definition of 'child' for the purposes of the Act."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 5 of the 2006 Act is a protective provision. It ensures that a female child under 17 is not prosecuted for the sexual act itself. The policy rationale is to protect young girls from criminal prosecution. Only the adult, or the person who cannot satisfy the near-age peer defence, bears criminal liability.",
+      "legislation": "Criminal Law (Sexual Offences) Act 2006, s.5"
+    },
+    {
+      "id": "CL_M06_L03_Q06",
+      "question": "Which of the following is included in the statutory definition of a 'person in authority' for the purposes of the near-age peer defence?",
+      "options": {
+        "A": "An older sibling of the child.",
+        "B": "A family friend who babysits the child occasionally.",
+        "C": "A step-parent of the child.",
+        "D": "A neighbour of the child."
+      },
+      "correct_answer": "C",
+      "explanation": "The definition of a person in authority includes parent, guardian, step-parent, aunt, uncle, and any person acting in loco parentis. A step-parent falls expressly within this definition. An older sibling, occasional babysitter, or neighbour would not automatically fall within the statutory categories.",
+      "legislation": "Criminal Law (Sexual Offences) Act 2006"
+    },
+    {
+      "id": "CL_M06_L03_Q07",
+      "question": "Under Section 21(7) of the Criminal Law (Sexual Offences) Act 2017, a 'protected person' is defined as one who lacks the capacity to consent. Which of the following does NOT fall within the statutory grounds for that incapacity?",
+      "options": {
+        "A": "Inability to understand the nature or foreseeable consequences of the sexual act.",
+        "B": "Inability to evaluate information relevant to the decision to engage in the act.",
+        "C": "Inability to communicate consent to the act.",
+        "D": "Unwillingness to communicate consent due to fear of the accused."
+      },
+      "correct_answer": "D",
+      "explanation": "The protected persons definition in s.21(7) of the 2017 Act relates to incapacity arising from disability, illness, or any other cause. Unwillingness to communicate consent due to fear is not incapacity — it is a consent-vitiating circumstance under the general consent analysis (submission through fear). The three statutory grounds for protected person status are: inability to understand the nature/consequences of the act, inability to evaluate relevant information, and inability to communicate consent.",
+      "legislation": "Criminal Law (Sexual Offences) Act 2017, s.21(7)"
+    },
+    {
+      "id": "CL_M06_L03_Q08",
+      "question": "Under Irish incest law, which of the following is correct?",
+      "options": {
+        "A": "Recklessness as to the blood relationship is sufficient for a conviction for incest.",
+        "B": "Incest can be committed through any sexual act between blood relatives.",
+        "C": "The accused must have actual knowledge of the blood relationship.",
+        "D": "Step-siblings are included within the definition of blood relationship for incest purposes."
+      },
+      "correct_answer": "C",
+      "explanation": "Incest under Irish law requires actual knowledge of the blood relationship — recklessness as to the existence of the relationship is not sufficient. The offence applies only to sexual intercourse, not to other sexual acts (though other charges may arise). Step-siblings are excluded because they share no blood relationship.",
+      "legislation": "Irish incest legislation"
+    },
+    {
+      "id": "CL_M06_L03_Q09",
+      "question": "Under the Criminal Law (Incest Proceedings) Act 1995, how must incest proceedings be conducted?",
+      "options": {
+        "A": "By judge alone, without a jury.",
+        "B": "In camera — in private, without the general public present.",
+        "C": "In open court with reporting restrictions imposed by the judge.",
+        "D": "Before the Special Criminal Court."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 5 of the Criminal Law (Incest Proceedings) Act 1995 requires that all incest proceedings take place in camera — that is, in private, without the general public present. This reflects the particularly sensitive nature of incest proceedings and protects the parties involved.",
+      "legislation": "Criminal Law (Incest Proceedings) Act 1995, s.5"
+    },
+    {
+      "id": "CL_M06_L03_Q10",
+      "question": "A 25-year-old coach has sexual intercourse with a 16-year-old member of his team. The 16-year-old appeared willing. Which of the following correctly analyses the legal position?",
+      "options": {
+        "A": "No offence is committed because the 16-year-old was willing and is close to the age of 17.",
+        "B": "The near-age peer defence applies because the accused is under 30.",
+        "C": "The near-age peer defence is unavailable because the accused is in a position of authority and more than two years older.",
+        "D": "The accused can rely on a reasonable belief in consent following the 2024 Act."
+      },
+      "correct_answer": "C",
+      "explanation": "The near-age peer defence under s.3(6) of the 2006 Act fails for two independent reasons. First, the accused is nine years older than the child — far exceeding the two-year maximum age gap. Second, as the child's sports coach, the accused holds a position of authority over the child. The defence is unavailable. Apparent willingness from a child under 17 has no legal effect, and the reasonable belief standard under the 2024 Act has no application to offences involving children below the statutory age threshold.",
+      "legislation": "Criminal Law (Sexual Offences) Act 2006, s.3(6)"
+    }
+  ]
+}

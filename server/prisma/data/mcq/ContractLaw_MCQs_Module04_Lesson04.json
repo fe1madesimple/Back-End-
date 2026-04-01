@@ -1,0 +1,131 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": "ContractLaw_ElevenLabs_Module04_Lesson04.txt",
+  "module_number": 4,
+  "module_title": "Vitiating Factors",
+  "lesson_number": 4,
+  "lesson_title": "Undue Influence",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Undue influence is an equitable doctrine that operates to set aside a transaction where:",
+      "options": {
+        "A": "One party exerts physical force on the other to procure their agreement",
+        "B": "One party abuses a relationship of trust and confidence (or a dominant position) to obtain a benefit from the other",
+        "C": "One party is mistaken about the nature of the transaction they are entering",
+        "D": "One party makes a false statement of fact that induces the other to enter the transaction"
+      },
+      "correct_answer": "B",
+      "explanation": "Undue influence is an equitable doctrine (distinct from the common law doctrine of duress) that protects persons whose consent to a transaction has been obtained through the improper exercise of influence arising from a relationship of trust and confidence or a position of dominance. Where one party uses a relationship of authority or affection to procure a benefit, equity may set the transaction aside. The doctrine recognises that formal consent may not represent true autonomous choice where the will of the weaker party is subordinated to the stronger."
+    },
+    {
+      "id": 2,
+      "question": "In the leading case of Royal Bank of Scotland plc v Etridge (No 2) [2001] (HL), the House of Lords classified undue influence into which categories?",
+      "options": {
+        "A": "Type A (physical duress) and Type B (psychological pressure)",
+        "B": "Class 1 (actual undue influence) and Class 2 (presumed undue influence — arising from the nature of the relationship or from the particular facts)",
+        "C": "Manifest undue influence and latent undue influence",
+        "D": "Express undue influence and implied undue influence"
+      },
+      "correct_answer": "B",
+      "explanation": "In Etridge (No 2) [2001], the House of Lords confirmed the classification of undue influence: Class 1 — actual undue influence — where the claimant proves affirmatively that the wrongdoer exerted undue influence on them to enter the transaction; and Class 2 — presumed undue influence — which arose from the nature of the relationship (Class 2A: relationships where undue influence was irrebuttably presumed such as solicitor-client, doctor-patient, parent-child) or from the facts of the particular case (Class 2B: where the claimant proves they placed trust and confidence in the defendant). However, Lord Nicholls in Etridge discouraged strict classification in favour of a principled approach."
+    },
+    {
+      "id": 3,
+      "question": "For actual undue influence (Class 1), the claimant must prove:",
+      "options": {
+        "A": "The existence of a pre-existing relationship of trust and confidence between the parties",
+        "B": "That the defendant actually exerted undue influence over the claimant, which caused the claimant to enter the transaction",
+        "C": "That the transaction was manifestly disadvantageous to the claimant",
+        "D": "That the claimant had no independent legal advice before entering the transaction"
+      },
+      "correct_answer": "B",
+      "explanation": "For actual undue influence (Class 1), the claimant bears the burden of proving affirmatively that undue influence was in fact exercised over them by the defendant — that the defendant used their influence or position to put improper pressure on the claimant to enter the transaction. Following Etridge, it appears that manifest disadvantage is NOT a prerequisite for actual undue influence — the claimant need only prove the exercise of improper influence causing them to enter the transaction: CIBC Mortgages plc v Pitt [1994] (HL)."
+    },
+    {
+      "id": 4,
+      "question": "For presumed undue influence, what two matters must the claimant establish to raise the presumption?",
+      "options": {
+        "A": "The defendant's dominant financial position and the claimant's economic vulnerability",
+        "B": "A relationship of trust and confidence between the parties, and a transaction that calls for explanation (i.e., that is not readily explainable by ordinary motives)",
+        "C": "The existence of a fiduciary duty owed by the defendant and the defendant's breach of that duty",
+        "D": "The absence of independent legal advice and the defendant's awareness of the claimant's dependent position"
+      },
+      "correct_answer": "B",
+      "explanation": "Following Etridge (No 2) [2001], to raise a presumption of undue influence the claimant must establish: (1) a relationship of trust and confidence between themselves and the defendant (either presumed from the nature of the relationship, or proved on the facts); and (2) a transaction that calls for explanation — one that is not explicable by ordinary motives and which cries out for justification. If these two matters are established, the evidential burden shifts to the defendant to show the transaction was the product of the claimant's free and informed consent."
+    },
+    {
+      "id": 5,
+      "question": "Which of the following relationships is classified as a 'Class 2A' relationship in which undue influence is presumed from the nature of the relationship alone?",
+      "options": {
+        "A": "Husband and wife",
+        "B": "Parent and adult child",
+        "C": "Solicitor and client",
+        "D": "Bank and commercial borrower"
+      },
+      "correct_answer": "C",
+      "explanation": "Class 2A relationships — where undue influence is presumed from the very nature of the relationship — include: solicitor and client; doctor and patient; trustee and beneficiary; religious adviser and disciple; parent and minor child; and guardian and ward. Husband and wife is not a Class 2A relationship — undue influence between spouses must be established on the specific facts (Class 2B). In Barclays Bank plc v O'Brien [1994] (HL), Lord Browne-Wilkinson confirmed that the spousal relationship does not automatically give rise to a presumption of undue influence."
+    },
+    {
+      "id": 6,
+      "question": "In Barclays Bank plc v O'Brien [1994] (HL), the House of Lords addressed the enforceability of a mortgage granted by a wife who had been misled by her husband into providing security for his debts. The Court held that the bank was:",
+      "options": {
+        "A": "Not affected by the husband's undue influence because it was a separate party to the transaction",
+        "B": "Bound by the wife's equity to set aside the mortgage because the bank had constructive notice of the husband's undue influence",
+        "C": "Liable in tort for failing to advise the wife of the risks of the transaction",
+        "D": "Entitled to enforce the mortgage because the wife had signed the documents voluntarily"
+      },
+      "correct_answer": "B",
+      "explanation": "In O'Brien [1994], Lord Browne-Wilkinson held that a creditor (such as a bank) who takes a security from a person who has been subject to misrepresentation or undue influence by their partner will be fixed with constructive notice of that wrongdoing (and therefore the security will be set aside) where: (1) the transaction is not on its face to the financial advantage of the person providing security; (2) there is a substantial risk the provider has been induced by misrepresentation or undue influence; and (3) the creditor failed to take reasonable steps to ensure the person's consent was properly obtained."
+    },
+    {
+      "id": 7,
+      "question": "Following Etridge (No 2) [2001], what steps must a bank take to ensure it is not fixed with constructive notice of undue influence where a wife is asked to provide security for a husband's debts?",
+      "options": {
+        "A": "The bank must directly advise the wife in person and ensure she has independent legal advice before signing",
+        "B": "The bank must inform the wife's independent solicitor of the transaction and ask the solicitor to advise her of the implications, providing the solicitor with relevant financial information",
+        "C": "The bank must obtain a written confirmation from the wife that she has not been subject to any pressure",
+        "D": "The bank is absolved of all responsibility once the wife signs the mortgage deed in the presence of a witness"
+      },
+      "correct_answer": "B",
+      "explanation": "In Etridge (No 2) [2001], the House of Lords set out detailed practical guidance. A bank must: (1) insist that the person providing security has independent legal advice from a solicitor acting solely for them; (2) send the solicitor relevant financial information about the transaction; (3) not proceed with the transaction unless it has received confirmation from the solicitor that the transaction has been explained to the surety. The bank does not need to give advice directly — it delegates that responsibility to the independent solicitor, but must take reasonable steps to ensure the process is followed."
+    },
+    {
+      "id": 8,
+      "question": "In the Irish case of Gregg v Kidd [1956] (HC Ireland), the court considered undue influence in the context of a transaction between an elderly man and his nephew-in-law. The case illustrates which principle?",
+      "options": {
+        "A": "Undue influence requires proof that the defendant made an express threat to the claimant",
+        "B": "Irish courts apply the presumption of undue influence where a relationship of trust and confidence is established and the transaction is not readily explicable, shifting the onus to the defendant to rebut the presumption",
+        "C": "Transactions between family members are automatically subject to heightened scrutiny regardless of the facts",
+        "D": "Undue influence can only be raised within 12 months of the transaction"
+      },
+      "correct_answer": "B",
+      "explanation": "Gregg v Kidd [1956] is an important Irish authority confirming the operation of the presumption of undue influence in an Irish context. The High Court found that a trust relationship existed between the elderly man and his nephew-in-law, and that the transaction (by which the old man transferred his property) was not explicable on ordinary grounds. The presumption arose and was not rebutted. The case confirms that Irish courts follow equitable principles and will set aside transactions where the presumption of undue influence is established and not overcome by independent evidence of free and informed consent."
+    },
+    {
+      "id": 9,
+      "question": "How can a defendant rebut the presumption of undue influence once it has arisen?",
+      "options": {
+        "A": "By proving that the transaction was at arm's length and commercially reasonable",
+        "B": "By proving that the claimant entered the transaction as a result of their own free and informed exercise of independent will — typically demonstrated by proof of adequate independent advice",
+        "C": "By showing that the transaction was beneficial to a third party who had no connection to the relationship",
+        "D": "By establishing that the claimant was independently wealthy at the time of the transaction"
+      },
+      "correct_answer": "B",
+      "explanation": "Once the presumption of undue influence arises, the evidential burden shifts to the defendant to rebut it. The defendant can do so by proving that the claimant entered the transaction as a result of their own free, informed, and independent judgment. The most effective way to rebut the presumption is proof that the claimant received full and informed independent legal advice from a competent adviser acting solely for them, who explained the nature and effect of the transaction. Independent advice is not conclusive — the quality and context of the advice matters: Inche Noriah v Shaik Allie bin Omar [1929] (PC)."
+    },
+    {
+      "id": 10,
+      "question": "In Allcard v Skinner [1887] (CA England), a woman transferred significant property to her religious superior. The Court of Appeal held the transaction was voidable for undue influence but the claim failed because:",
+      "options": {
+        "A": "The woman had capacity to enter the transaction and had done so voluntarily",
+        "B": "The woman had affirmed the transaction by delaying too long in bringing her claim after leaving the religious order",
+        "C": "The religious superior was not in a position of trust and confidence in relation to the woman",
+        "D": "The transaction was not manifestly disadvantageous to the woman as she had received spiritual benefits in return"
+      },
+      "correct_answer": "B",
+      "explanation": "In Allcard v Skinner [1887], the Court of Appeal confirmed that the transaction was voidable for undue influence arising from the relationship between the novice and her religious superior. However, the claim failed because the claimant had delayed unreasonably in seeking relief after leaving the religious order. This is the bar of lapse of time — an equitable doctrine equivalent to laches. The claimant had waited long enough after escaping the undue influence that the court treated this as affirmation. The case is a leading authority on both the equitable doctrine of undue influence and the bar of laches."
+    }
+  ]
+}

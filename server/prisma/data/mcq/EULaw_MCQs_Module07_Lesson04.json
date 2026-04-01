@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module07_Lesson04.txt",
+  "module_number": 7,
+  "module_title": "Judicial Review of EU Acts",
+  "lesson_number": 4,
+  "lesson_title": "Article 265 TFEU: Failure to Act",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EUL_M07_L04_Q01",
+      "question": "Article 265 TFEU provides an action for failure to act. What is the relationship between Article 265 and Article 263 TFEU?",
+      "options": {
+        "A": "Article 265 is a specialised version of Article 263 applicable only to competition law omissions",
+        "B": "Article 265 is the counterpart to Article 263 — whereas Article 263 challenges unlawful acts, Article 265 challenges unlawful omissions by EU institutions",
+        "C": "Article 265 is a preliminary step that must be completed before an Article 263 annulment action can be brought",
+        "D": "Article 265 applies only to the Commission, while Article 263 applies to all EU institutions"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 265 TFEU is the counterpart to the Article 263 annulment action: whereas Article 263 challenges unlawful acts of EU institutions, Article 265 challenges unlawful omissions — a failure by an EU institution to act when it was under a legal duty to do so. Together, Articles 263 and 265 form a coherent system for reviewing both EU acts and EU omissions. As confirmed in Chevalley v Commission [1970] CJEU, the two provisions form a coherent whole — an institution cannot evade judicial review by choosing inaction over action."
+    },
+    {
+      "id": "EUL_M07_L04_Q02",
+      "question": "Which EU institutions are named in Article 265 TFEU as potential defendants in an action for failure to act?",
+      "options": {
+        "A": "The Commission and the Council only",
+        "B": "The European Parliament, the European Council, the Council, the Commission, and the European Central Bank",
+        "C": "All EU institutions, bodies, offices, and agencies without qualification",
+        "D": "Only institutions with legislative powers — the Parliament and the Council"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 265 TFEU expressly names the following as potential defendants: the European Parliament, the European Council, the Council, the Commission, and the European Central Bank. The Article further provides that it also applies to other institutions, bodies, offices, or agencies where they fail to act. This reflects the broad scope of the action — it is not limited to the major legislative institutions but extends to any EU body with legal duties under the Treaties."
+    },
+    {
+      "id": "EUL_M07_L04_Q03",
+      "question": "Before bringing an action under Article 265 TFEU, what mandatory pre-litigation step must an applicant take?",
+      "options": {
+        "A": "The applicant must lodge a complaint with the European Ombudsman",
+        "B": "The applicant must first call upon the institution to act — formally putting it on notice of its alleged failure and inviting it to act",
+        "C": "The applicant must bring infringement proceedings against the relevant member state",
+        "D": "The applicant must obtain a preliminary ruling from the Court of Justice confirming the institution's legal duty to act"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 265 TFEU requires a mandatory pre-litigation step: before bringing the action, the applicant must first 'call upon' the institution to act. This is a formal requirement — the applicant must put the institution on notice of its alleged failure and invite it to act. The institution then has two months to 'define its position.' Only if it fails to define any position within that period may the applicant bring the Article 265 action before the Court of Justice. These time limits are strictly observed."
+    },
+    {
+      "id": "EUL_M07_L04_Q04",
+      "question": "Under Article 265 TFEU, if the institution responds to the call to act within two months — even if that response is a refusal to act — what consequence follows?",
+      "options": {
+        "A": "The Article 265 action proceeds, and the Court will assess whether the refusal was lawful",
+        "B": "The Article 265 action becomes inadmissible — the institution has 'defined its position,' and the appropriate remedy is an annulment action under Article 263",
+        "C": "The applicant may immediately appeal the refusal to the Court of Justice under Article 267",
+        "D": "The applicant must issue a second call to act before proceedings can commence"
+      },
+      "correct_answer": "B",
+      "explanation": "The phrase 'define its position' in Article 265 TFEU is critical. If the institution responds within the two-month period — even if that response is a refusal to act — the institution has defined its position and the Article 265 failure to act action becomes inadmissible. The appropriate remedy is then an annulment action under Article 263 TFEU to challenge the refusal. Article 265 is only available where the institution has remained entirely silent and has communicated no position whatsoever to the applicant within the two-month period."
+    },
+    {
+      "id": "EUL_M07_L04_Q05",
+      "question": "What are the time limits under the Article 265 TFEU procedure?",
+      "options": {
+        "A": "The institution has one month to act; the action must then be brought within one month",
+        "B": "The institution has two months to define its position; if it fails, the action must be brought within a further two months",
+        "C": "The institution has three months to act; the action must be brought within six months",
+        "D": "There is no specific time limit — the action can be brought at any time after calling on the institution to act"
+      },
+      "correct_answer": "B",
+      "explanation": "The Article 265 TFEU procedure involves two consecutive two-month periods: first, after the formal call to act, the institution has two months to 'define its position'; second, if the institution fails to define any position within those two months, the applicant must bring the action before the Court of Justice within a further two-month period. These time limits are strictly observed by the Court, and failure to comply with them will render the action inadmissible."
+    },
+    {
+      "id": "EUL_M07_L04_Q06",
+      "question": "In the context of Article 265 TFEU, 'privileged applicants' are:",
+      "options": {
+        "A": "Individuals who have suffered direct financial loss as a result of an institution's failure to act",
+        "B": "Member states and EU institutions — who have automatic standing to bring a failure to act action without needing to demonstrate a particular interest",
+        "C": "EU citizens who have lodged a previous complaint with the European Ombudsman",
+        "D": "Only the Commission and the Council"
+      },
+      "correct_answer": "B",
+      "explanation": "The categories of applicants for an Article 265 action mirror those under Article 263. Member states and EU institutions are 'privileged applicants' who have automatic standing to bring a failure to act action without needing to demonstrate any particular interest. Natural and legal persons (individuals and companies) are 'non-privileged applicants' whose standing is significantly more restricted under Article 265(3)."
+    },
+    {
+      "id": "EUL_M07_L04_Q07",
+      "question": "Under Article 265(3) TFEU, non-privileged applicants (natural and legal persons) may bring a failure to act action only where:",
+      "options": {
+        "A": "The institution has failed to adopt any legislative act within a reasonable period",
+        "B": "An institution has failed to address to them a specific act other than a recommendation or an opinion",
+        "C": "The applicant can show that the institution's failure to act has caused them financial loss",
+        "D": "The applicant represents a class of individuals affected by the institution's omission"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 265(3) TFEU limits non-privileged applicants to bringing a failure to act action where an institution has failed to address to them a specific act other than a recommendation or opinion. This is significantly narrower than the already restricted locus standi for private applicants under Article 263. A private applicant can only complain about a failure to issue an individual decision specifically addressed to them — not about a general failure to legislate or adopt regulatory measures. This mirrors the Plaumann logic from the Article 263 case law."
+    },
+    {
+      "id": "EUL_M07_L04_Q08",
+      "question": "In Lord Bethell v Commission [1982] CJEU, Lord Bethell's Article 265 action was rejected as inadmissible. Why?",
+      "options": {
+        "A": "Lord Bethell had not formally called upon the Commission to act before bringing proceedings",
+        "B": "Lord Bethell was seeking action of a general nature — he wanted the Commission to investigate the entire civil aviation market — and he was not the potential addressee of any specific act",
+        "C": "The Commission had already defined its position by acknowledging receipt of his letter",
+        "D": "Lord Bethell lacked locus standi as a member of a national legislature rather than a natural person"
+      },
+      "correct_answer": "B",
+      "explanation": "In Lord Bethell v Commission [1982] CJEU, Lord Bethell wrote to the Commission urging it to act against civil aviation companies for alleged competition law breaches. When the Commission responded but did not initiate proceedings, he brought an Article 265 action. The Court rejected it as inadmissible: Lord Bethell was seeking general regulatory action — investigation of the whole civil aviation market — and he was not the potential addressee of any specific individual act. A private applicant can only complain about a failure to act where the omitted act would have concerned them 'directly and individually' in the same way as the Plaumann criteria for Article 263."
+    },
+    {
+      "id": "EUL_M07_L04_Q09",
+      "question": "An institution's failure to exercise its legislative discretion — a choice not to legislate — will:",
+      "options": {
+        "A": "Always constitute a failure to act challengeable under Article 265 TFEU",
+        "B": "Not constitute a challengeable failure to act under Article 265 — the failure must be a failure to discharge a legal duty to act, not merely a failure to exercise a power",
+        "C": "Be reviewable only if the failure to legislate causes demonstrable harm to member states",
+        "D": "Be challengeable only by the European Parliament, not by private applicants"
+      },
+      "correct_answer": "B",
+      "explanation": "A failure to exercise legislative discretion — a choice not to legislate — does not constitute a failure to act challengeable under Article 265 TFEU. The principle that emerged from Aktien-Zuckerfabrik Schöppenstedt v Council [1971] CJEU is that the failure must be a failure to discharge a legal duty to act under the Treaties — not merely a failure to exercise a discretionary power to legislate. If an institution has a discretion whether to act, its choice not to exercise that discretion cannot be challenged as a failure to act."
+    },
+    {
+      "id": "EUL_M07_L04_Q10",
+      "question": "If the Court of Justice finds that a failure to act has been established under Article 265 TFEU, what is the consequence?",
+      "options": {
+        "A": "The Court substitutes its own decision for that of the institution and orders the specific act to be adopted",
+        "B": "The Court issues a declaratory judgment that the failure was contrary to the Treaties; under Article 266 TFEU, the institution must then take the necessary measures to comply",
+        "C": "The institution is automatically fined a lump sum by the Court",
+        "D": "The relevant legislation is deemed to have been adopted by the Council acting alone"
+      },
+      "correct_answer": "B",
+      "explanation": "If the Court of Justice finds that the failure to act is established, it issues a declaratory judgment stating that the failure was contrary to the Treaties. This does not itself compel a specific outcome — the Court cannot substitute its own decision for that of the institution. However, under Article 266 TFEU, the institution whose failure has been declared must take the necessary measures to comply with the judgment. The Court establishes the illegality; the remedy lies with the institution. Financial penalties are available under Article 260 for non-compliance, but only in infringement proceedings against member states, not in Article 265 actions against EU institutions."
+    }
+  ]
+}

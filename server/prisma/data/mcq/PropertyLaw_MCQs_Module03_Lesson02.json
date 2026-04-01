@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_03_Lesson_02_Requirements_for_Adverse_Possession.txt",
+  "module_number": 3,
+  "module_title": "Adverse Possession",
+  "lesson_number": 2,
+  "lesson_title": "Requirements for Adverse Possession: Factual Possession and Animus Possidendi",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M03_L02_Q01",
+      "question": "What are the two essential elements that a squatter must establish to acquire title by adverse possession?",
+      "options": {
+        "A": "Open possession and animus domini (intention to become legal owner)",
+        "B": "Factual possession and animus possidendi (intention to possess as owner)",
+        "C": "Physical occupation and registration of a caution against the paper owner's title",
+        "D": "Exclusive use and a written declaration of adverse possession served on the paper owner"
+      },
+      "correct_answer": "B",
+      "explanation": "The two essential requirements for adverse possession are well-established in Irish and English case law: (1) factual possession — sometimes called physical or de facto possession — and (2) animus possidendi — the intention to possess as owner. Both elements must be present throughout the limitation period. It is not sufficient to occupy the land without the intention to possess as owner, nor is it sufficient to intend to possess without actually being in factual possession of the land."
+    },
+    {
+      "id": "PRL_M03_L02_Q02",
+      "question": "In Powell v McFarlane [1977], how did Slade J define the requirement of factual possession in the context of adverse possession?",
+      "options": {
+        "A": "The squatter must have lived on the land as their primary residence throughout the limitation period",
+        "B": "The squatter must have an appropriate degree of exclusive physical control over the land — dealing with it as an occupying owner would, to the exclusion of the paper owner and all other persons",
+        "C": "The squatter must have paid rates or taxes in respect of the land during the limitation period",
+        "D": "The squatter must have erected permanent structures on the land demonstrating an intention to remain"
+      },
+      "correct_answer": "B",
+      "explanation": "In Powell v McFarlane [1977], Slade J held that factual possession requires the squatter to have an appropriate degree of exclusive physical control over the land — dealing with it as an occupying owner would, to the exclusion of the paper owner and all other persons. The word 'exclusive' is critical: the squatter must have excluded the paper owner and others, not merely used the land alongside them. What constitutes appropriate control depends on the nature of the land: for agricultural land, fencing, grazing, and maintaining the land are indicators; for residential property, actual occupation will usually suffice."
+    },
+    {
+      "id": "PRL_M03_L02_Q03",
+      "question": "In Seamus Durack Manufacturing Ltd v Considine [1987], what did the Irish Supreme Court emphasise about the nature of the squatter's possession?",
+      "options": {
+        "A": "That adverse possession could be established by periodic visits to the land even if not continuous",
+        "B": "That the squatter must exercise a degree of control over the land consistent with its character and use, and that sporadic or intermittent use would not suffice — the possession must be continuous and exclusive throughout the limitation period",
+        "C": "That the squatter's possession was sufficient even without physical enclosure of the land",
+        "D": "That payment of the landowner's rates during the limitation period could substitute for physical possession"
+      },
+      "correct_answer": "B",
+      "explanation": "In Seamus Durack Manufacturing Ltd v Considine [1987], the Irish Supreme Court emphasised that the squatter must exercise that degree of control over the land that is consistent with its character and use. Sporadic or intermittent use would not suffice. The possession must be continuous and exclusive throughout the entire limitation period under the Statute of Limitations Act 1957. This Irish authority reinforces the Powell v McFarlane standard and makes clear that partial or irregular occupation will not satisfy the factual possession requirement."
+    },
+    {
+      "id": "PRL_M03_L02_Q04",
+      "question": "In Buckinghamshire County Council v Moran [1990], what conduct by the defendant was held to constitute sufficient factual possession and animus possidendi?",
+      "options": {
+        "A": "Placing a temporary caravan on the land for occasional weekend use",
+        "B": "Erecting a fence around and cultivating land that had been intended for a road widening scheme, and incorporating it into the defendant's garden",
+        "C": "Parking a car on the land on weekdays during business hours",
+        "D": "Paying local authority rates on the land while the paper owner failed to do so"
+      },
+      "correct_answer": "B",
+      "explanation": "In Buckinghamshire County Council v Moran [1990], the defendant had incorporated a strip of land intended for a road widening scheme into his garden by erecting a fence around it and cultivating it. The court held this was sufficient factual possession with the requisite animus possidendi. The defendant had treated the land as his own — as an occupying owner would. The erection of fences or walls is one of the clearest indicators of factual possession and animus possidendi because it demonstrates physical control and an intention to exclude others, including the paper owner."
+    },
+    {
+      "id": "PRL_M03_L02_Q05",
+      "question": "What is 'animus possidendi' and what is its essential characteristic in adverse possession law?",
+      "options": {
+        "A": "The intention to become the registered owner of the land as quickly as possible",
+        "B": "The intention to possess the land as owner — to possess it as one's own, to the exclusion of all others, for the time being; it need not be an intention to own permanently",
+        "C": "The intention to occupy the land openly and without concealment from the paper owner",
+        "D": "The intention to make a formal adverse possession claim within the limitation period"
+      },
+      "correct_answer": "B",
+      "explanation": "Animus possidendi is the intention to possess the land as owner — to possess it as one's own, to the exclusion of all others, for the time being. Critically, it need not be an intention to own the land forever or to acquire title. It is the intention to possess the land as one's own at the relevant time, to the exclusion of all others including the paper owner. This intention need not be expressed — it can be inferred from the squatter's acts. However, if the squatter's acts are equivocal and could be consistent with a licence or permission, the court may not infer the necessary intention."
+    },
+    {
+      "id": "PRL_M03_L02_Q06",
+      "question": "What is the effect of an acknowledgement of the paper owner's title under section 18 of the Statute of Limitations Act 1957 (SLA 1957)?",
+      "options": {
+        "A": "The acknowledgement immediately extinguishes any adverse possession claim already accrued",
+        "B": "The acknowledgement is irrelevant once twelve years of adverse possession have been completed",
+        "C": "The limitation period starts afresh from the date of the acknowledgement, resetting the clock even if the squatter has been in adverse possession for many years",
+        "D": "The acknowledgement converts the adverse possessor's claim into a licence, without restarting the limitation period"
+      },
+      "correct_answer": "C",
+      "explanation": "Under section 18 of the Statute of Limitations Act 1957, if the squatter acknowledges the title of the paper owner in writing, the limitation period starts afresh from the date of that acknowledgement. This is critical: even after ten or eleven years of adverse possession, a single written acknowledgement restarts the clock entirely. The acknowledgement must be in writing and signed by the squatter or their agent — an oral acknowledgement does not suffice under the statute. This is why a squatter who writes to the paper owner asking to purchase the land may inadvertently destroy years of accumulated adverse possession."
+    },
+    {
+      "id": "PRL_M03_L02_Q07",
+      "question": "For an acknowledgement under section 18 SLA 1957 to restart the limitation period, what formal requirements must it satisfy?",
+      "options": {
+        "A": "It must be witnessed by an independent solicitor and registered with the Land Registry",
+        "B": "It must be in writing and signed by the squatter or their agent — an oral acknowledgement is not sufficient",
+        "C": "It must specifically acknowledge the limitation period and the squatter's intention to abandon their claim",
+        "D": "It must be served by registered post with a return receipt confirming delivery"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 18 of the Statute of Limitations Act 1957, an acknowledgement that restarts the limitation period must be in writing and signed by the squatter or their agent. An oral acknowledgement — even a clear and express one — does not suffice under the statute. This formal requirement is important in practice: a squatter who verbally acknowledges the paper owner's title does not thereby restart the clock, but a squatter who puts any form of written acknowledgement in a signed letter does. Common examples include letters requesting to purchase the land or offering to pay rent."
+    },
+    {
+      "id": "PRL_M03_L02_Q08",
+      "question": "How does permissive occupation affect a claim for adverse possession?",
+      "options": {
+        "A": "Permission makes the adverse possession claim stronger, as it shows the paper owner was aware of the occupation",
+        "B": "If the paper owner grants the squatter permission to be on the land — even informally — the squatter becomes a licensee and cannot acquire title by adverse possession while in permissive occupation",
+        "C": "Permission only defeats an adverse possession claim if it was granted in writing and for consideration",
+        "D": "Permission is irrelevant to adverse possession once the squatter has been in occupation for more than six years"
+      },
+      "correct_answer": "B",
+      "explanation": "If the paper owner grants the squatter permission to be on the land — even informally or orally — the squatter is no longer a squatter. They are a licensee, and a licensee cannot acquire title by adverse possession. The right of action does not accrue against a licensee. This is because the essence of adverse possession is possession that is inconsistent with the paper owner's title — but a licensee's occupation is consistent with the paper owner's title, as the owner has authorised it. Permission therefore defeats the adverse possession claim entirely for as long as it continues."
+    },
+    {
+      "id": "PRL_M03_L02_Q09",
+      "question": "How may a paper owner physically interrupt an adverse possessor's continuous possession so as to break the limitation period?",
+      "options": {
+        "A": "By sending formal written notice to the squatter asserting title to the land",
+        "B": "By instructing solicitors to write to the squatter and threatening legal proceedings",
+        "C": "By physically re-entering the land and successfully resuming possession — mere assertion of ownership by letter or objection does not physically interrupt possession",
+        "D": "By registering a caution against the squatter's application at the Land Registry"
+      },
+      "correct_answer": "C",
+      "explanation": "For a paper owner to physically interrupt an adverse possessor's continuous possession and break the limitation period, they must actually re-enter the land and successfully resume possession. Mere assertion of ownership — sending letters, making objections, issuing proceedings — does not physically interrupt possession. The paper owner must take back actual physical control of the land. Once they do so, the squatter's continuous adverse possession is broken and they must start the twelve-year period afresh from the beginning."
+    },
+    {
+      "id": "PRL_M03_L02_Q10",
+      "question": "A squatter has been farming and fencing a strip of agricultural land for the past eight years without the paper owner's knowledge. The paper owner then discovers this and sends a strongly worded letter to the squatter asserting title. What is the effect on the adverse possession claim?",
+      "options": {
+        "A": "The letter interrupts the squatter's possession and the twelve-year period starts afresh",
+        "B": "The letter has no effect on the adverse possession claim — mere assertion of ownership by letter does not physically interrupt the squatter's possession",
+        "C": "The letter extinguishes the adverse possession claim because the squatter's occupation was not open to the paper owner",
+        "D": "The letter creates an implied licence which converts the squatter's adverse possession into permissive occupation"
+      },
+      "correct_answer": "B",
+      "explanation": "A strongly worded letter asserting title has no effect on the adverse possession claim. Mere assertion of ownership — whether by letter, oral demand, or threat of proceedings — does not physically interrupt the squatter's possession. The limitation period continues to run. For the paper owner to break the adverse possession, they must actually re-enter the land and successfully resume physical possession. The squatter's eight years therefore continue to count towards the twelve-year period required under the Statute of Limitations Act 1957."
+    }
+  ]
+}

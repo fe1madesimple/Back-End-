@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "Module_06_Lesson_01_Psychiatric_Injury___Primary_Victims.txt",
+  "module_number": 6,
+  "module_title": "Psychiatric Injury",
+  "lesson_number": 1,
+  "lesson_title": "Psychiatric Injury: Primary Victims",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M06_L01_Q01",
+      "question": "Which case established the foundational English authority for the law of psychiatric injury in respect of primary victims?",
+      "options": {
+        "A": "Page v Smith [1996] House of Lords",
+        "B": "Kelly v Hennessy [1995] Supreme Court",
+        "C": "Fletcher v Commissioner of Public Works [2003] Supreme Court",
+        "D": "Donoghue v Stevenson [1932] House of Lords"
+      },
+      "correct_answer": "A",
+      "explanation": "Page v Smith [1996] House of Lords is the foundational English authority for primary victims of psychiatric injury. The House of Lords held that where physical injury of some kind was foreseeable, the defendant is liable for any psychiatric injury that results, even if psychiatric injury itself was not specifically foreseeable."
+    },
+    {
+      "id": "TL_M06_L01_Q02",
+      "question": "In Page v Smith [1996], what type of injury did Mr Page sustain as a result of the road traffic collision?",
+      "options": {
+        "A": "A broken leg and post-traumatic stress disorder",
+        "B": "No physical injury, but a recurrence of myalgic encephalomyelitis (chronic fatigue syndrome)",
+        "C": "Severe burns and clinical depression",
+        "D": "A spinal injury and anxiety disorder"
+      },
+      "correct_answer": "B",
+      "explanation": "Mr Page sustained no physical injury in the minor road traffic collision. However, the accident triggered a recurrence of myalgic encephalomyelitis — chronic fatigue syndrome — from which he had previously suffered. The House of Lords held the defendant liable for this psychiatric consequence."
+    },
+    {
+      "id": "TL_M06_L01_Q03",
+      "question": "What is the key principle from Page v Smith regarding foreseeability for primary victims?",
+      "options": {
+        "A": "The defendant must have specifically foreseen that psychiatric injury would result",
+        "B": "Foreseeability of physical harm is sufficient — the defendant need not have foreseen psychiatric injury specifically",
+        "C": "The defendant must foresee both physical and psychiatric harm for liability to arise",
+        "D": "Foreseeability is irrelevant once a recognised psychiatric illness is established"
+      },
+      "correct_answer": "B",
+      "explanation": "The key principle from Page v Smith is that, for primary victims, foreseeability of physical harm is sufficient to ground liability for psychiatric injury. The defendant does not need to have foreseen psychiatric injury specifically."
+    },
+    {
+      "id": "TL_M06_L01_Q04",
+      "question": "Which Irish case confirmed the primary victim category and articulated the test for psychiatric injury claims in Irish law?",
+      "options": {
+        "A": "Page v Smith [1996]",
+        "B": "Fletcher v Commissioner of Public Works [2003]",
+        "C": "Kelly v Hennessy [1995] Supreme Court",
+        "D": "Donoghue v Stevenson [1932]"
+      },
+      "correct_answer": "C",
+      "explanation": "Kelly v Hennessy [1995] Supreme Court is the leading Irish authority. Finlay CJ articulated the test for psychiatric injury claims in Irish law, distinguishing primary from secondary victim cases and confirming that a recognisable psychiatric illness must be established."
+    },
+    {
+      "id": "TL_M06_L01_Q05",
+      "question": "What happened to Mrs Kelly in Kelly v Hennessy [1995]?",
+      "options": {
+        "A": "She was directly involved in a road traffic collision and suffered physical injuries",
+        "B": "She suffered post-traumatic stress disorder after learning that her husband and daughters had been seriously injured in a road accident",
+        "C": "She witnessed a fatal accident at her workplace and developed clinical depression",
+        "D": "She was a bystander at the scene of an accident and suffered nervous shock"
+      },
+      "correct_answer": "B",
+      "explanation": "Mrs Kelly suffered post-traumatic stress disorder after learning that her husband and daughters had been seriously injured in a road accident caused by the defendant's negligence. The Supreme Court addressed the requirements for establishing psychiatric injury claims in Irish law."
+    },
+    {
+      "id": "TL_M06_L01_Q06",
+      "question": "Which of the following is NOT one of the essential requirements for a primary victim psychiatric injury claim?",
+      "options": {
+        "A": "The plaintiff must have been within the zone of physical danger",
+        "B": "The plaintiff must have suffered a recognisable psychiatric illness",
+        "C": "The plaintiff must have witnessed the accident with their own unaided senses",
+        "D": "The psychiatric illness must have been caused by the defendant's negligent act"
+      },
+      "correct_answer": "C",
+      "explanation": "The requirement to witness the accident with one's own unaided senses is a control mechanism applied to secondary victims, not primary victims. For primary victims, the three essential requirements are: being within the zone of physical danger, suffering a recognisable psychiatric illness, and that illness being caused by the defendant's negligent act."
+    },
+    {
+      "id": "TL_M06_L01_Q07",
+      "question": "What does the law require when determining whether a plaintiff has suffered a 'recognisable psychiatric illness'?",
+      "options": {
+        "A": "The plaintiff must demonstrate that any reasonable person would have been distressed by the event",
+        "B": "The plaintiff must show the illness was caused by a sudden shocking event",
+        "C": "The condition must be one that can be diagnosed by a medical professional, established through expert evidence",
+        "D": "The plaintiff need only show severe and prolonged emotional distress"
+      },
+      "correct_answer": "C",
+      "explanation": "A recognisable psychiatric illness is one that can be diagnosed by a medical professional — such as PTSD, clinical depression, anxiety disorder, or pathological grief. It must be established through expert medical evidence. Ordinary grief, sorrow, or distress, however severe, does not suffice."
+    },
+    {
+      "id": "TL_M06_L01_Q08",
+      "question": "Which Supreme Court case confirmed that a plaintiff claiming psychiatric injury must establish a recognised psychiatric illness through expert evidence?",
+      "options": {
+        "A": "Kelly v Hennessy [1995]",
+        "B": "Page v Smith [1996]",
+        "C": "Fletcher v Commissioner of Public Works [2003]",
+        "D": "Donoghue v Stevenson [1932]"
+      },
+      "correct_answer": "C",
+      "explanation": "Fletcher v Commissioner of Public Works [2003] Supreme Court confirmed that a plaintiff claiming psychiatric injury must establish a recognised psychiatric illness through expert evidence. This requirement applies across both primary and secondary victim categories."
+    },
+    {
+      "id": "TL_M06_L01_Q09",
+      "question": "How does the thin skull rule operate in a primary victim psychiatric injury claim?",
+      "options": {
+        "A": "A pre-existing psychiatric vulnerability breaks the chain of causation and defeats the claim",
+        "B": "The defendant is only liable for the extent of injury a person without any vulnerability would have suffered",
+        "C": "Any pre-existing psychiatric vulnerability is irrelevant to liability — the defendant takes the victim as they find them",
+        "D": "The thin skull rule does not apply to psychiatric injury claims"
+      },
+      "correct_answer": "C",
+      "explanation": "The thin skull rule applies in full to primary victim psychiatric injury claims. Any pre-existing psychiatric vulnerability is irrelevant to liability — the defendant takes the victim as they find them. Page v Smith confirmed this principle."
+    },
+    {
+      "id": "TL_M06_L01_Q10",
+      "question": "What is the primary rationale for requiring a 'recognisable psychiatric illness' rather than accepting mere distress as sufficient for a psychiatric injury claim?",
+      "options": {
+        "A": "To protect defendants from all liability for emotional harm",
+        "B": "To provide an objective measure by which courts can assess the claim and to guard against a flood of claims",
+        "C": "To ensure only those with pre-existing conditions can bring claims",
+        "D": "To align Irish law with the English approach under the Limitation Act"
+      },
+      "correct_answer": "B",
+      "explanation": "The rationale for the recognisable psychiatric illness threshold is twofold: it provides an objective measure by which courts can assess the claim, and it guards against a flood of claims from anyone who suffers any emotional response to an accident. Mere grief, sorrow, or distress does not suffice."
+    }
+  ]
+}

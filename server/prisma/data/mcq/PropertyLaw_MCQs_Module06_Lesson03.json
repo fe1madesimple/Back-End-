@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_06_Lesson_03_Family_Law_Acts_and_Property_Adjustment_Orders.txt",
+  "module_number": 6,
+  "module_title": "Family Property",
+  "lesson_number": 3,
+  "lesson_title": "Family Law Acts and Property Adjustment Orders",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M06_L03_Q01",
+      "question": "Under which Act is the primary statutory basis for property adjustment orders on judicial separation found?",
+      "options": {
+        "A": "The Family Home Protection Act 1976",
+        "B": "The Judicial Separation and Family Law Reform Act 1989",
+        "C": "The Land and Conveyancing Law Reform Act 2009",
+        "D": "The Succession Act 1965"
+      },
+      "correct_answer": "B",
+      "explanation": "The Judicial Separation and Family Law Reform Act 1989 provides the primary statutory basis for property adjustment orders on judicial separation. For divorce, the Family Law (Divorce) Act 1996, as amended by the Family Law Act 2019, is the governing legislation. Together these Acts confer on the Circuit Court and the High Court a broad discretion to make orders altering the property rights of spouses."
+    },
+    {
+      "id": "PRL_M06_L03_Q02",
+      "question": "Under section 14 of the Family Law (Divorce) Act 1996, what is the nature of a property adjustment order?",
+      "options": {
+        "A": "An order requiring one spouse to pay the other a sum equivalent to half the property's market value",
+        "B": "An order requiring one spouse to transfer a property, or an interest in it, to the other spouse or to a dependent child",
+        "C": "An order preventing the sale of the family home until dependent children reach adulthood",
+        "D": "An order placing the family home in a trust for the benefit of dependent children"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 14 of the Family Law (Divorce) Act 1996 and section 9 of the Family Law Act 1995, a court may make a property adjustment order requiring one spouse to transfer a property, or an interest in it, to the other spouse or to a dependent child. This is a direct judicial reallocation of private property rights and is a powerful remedy."
+    },
+    {
+      "id": "PRL_M06_L03_Q03",
+      "question": "In T v T [2002], what principle did the Supreme Court establish regarding lengthy marriages involving substantial assets?",
+      "options": {
+        "A": "The wealthier spouse is entitled to retain two thirds of all assets accumulated during the marriage",
+        "B": "Equal division should prima facie apply as the starting point for property adjustment",
+        "C": "The matrimonial home should always be transferred to the primary carer of the children",
+        "D": "The court must apply a strict mathematical formula based on years of marriage"
+      },
+      "correct_answer": "B",
+      "explanation": "In T v T [2002], the Supreme Court established that in lengthy marriages involving substantial assets, an approach of equal division should prima facie apply. While this is a family law rather than pure property law principle, it has direct implications for how courts approach property adjustment, particularly where the family home is the primary asset."
+    },
+    {
+      "id": "PRL_M06_L03_Q04",
+      "question": "Which is NOT listed as a relevant factor when a court exercises its jurisdiction to make a property adjustment order?",
+      "options": {
+        "A": "The income, earning capacity, and financial resources of each spouse",
+        "B": "The welfare of dependent children as the first and paramount consideration",
+        "C": "The nationality of the parties",
+        "D": "Physical or mental disability of either spouse"
+      },
+      "correct_answer": "C",
+      "explanation": "When making a property adjustment order, the court has regard to all the circumstances of the case, including: the welfare of dependent children as the first and paramount consideration, the income, earning capacity, and financial resources of each spouse, their financial needs and obligations, the standard of living enjoyed during the marriage, the age of each spouse, the duration of the marriage, and physical or mental disability. Nationality is not a relevant factor."
+    },
+    {
+      "id": "PRL_M06_L03_Q05",
+      "question": "What is the key characteristic of a property adjustment order that distinguishes it from an ordinary conveyance?",
+      "options": {
+        "A": "It must be executed by a solicitor to have legal effect",
+        "B": "It requires the consent of all parties, including any mortgagee",
+        "C": "It operates as a court order and does not require the consent of the non-applicant spouse",
+        "D": "It can only be made in the High Court and not the Circuit Court"
+      },
+      "correct_answer": "C",
+      "explanation": "A property adjustment order is a court order requiring the transfer of property. Unlike a conveyance between parties, it does not require the consent of the non-applicant spouse. Once made, the order is registered and takes effect without the non-complying party's cooperation. This is particularly significant because the order typically operates precisely because the spouses cannot agree."
+    },
+    {
+      "id": "PRL_M06_L03_Q06",
+      "question": "Which section of which Act empowers the court to set aside any disposition made with the intention of defeating claims for financial relief on marital breakdown?",
+      "options": {
+        "A": "Section 3 of the Family Home Protection Act 1976",
+        "B": "Section 37 of the Family Law Act 1995",
+        "C": "Section 14 of the Family Law (Divorce) Act 1996",
+        "D": "Section 100 of the Land and Conveyancing Law Reform Act 2009"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 37 of the Family Law Act 1995 empowers the court to set aside any disposition intended to defeat claims for financial relief. In F v F [2008], one spouse had transferred assets in anticipation of divorce proceedings, and the court made orders setting aside those transactions under section 37. This provision is important for property law because it can reverse transfers of land made to defeat a spouse's claims."
+    },
+    {
+      "id": "PRL_M06_L03_Q07",
+      "question": "In F v F [2008], what did the High Court do where a spouse had transferred assets in anticipation of divorce proceedings?",
+      "options": {
+        "A": "Ordered the other spouse to accept a reduced property adjustment order",
+        "B": "Set aside the transactions under section 37 of the Family Law Act 1995",
+        "C": "Refused to make any property adjustment order because assets had already been transferred",
+        "D": "Ordered the transferee third party to pay compensation to the other spouse"
+      },
+      "correct_answer": "B",
+      "explanation": "In F v F [2008], the High Court made orders setting aside the transactions under section 37 of the Family Law Act 1995, which empowers the court to set aside any disposition intended to defeat claims for financial relief. This case illustrates the important property law point that a spouse cannot defeat property claims by transferring assets in anticipation of proceedings."
+    },
+    {
+      "id": "PRL_M06_L03_Q08",
+      "question": "Which legislation removed the four-year separation requirement for divorce and reduced it to two years?",
+      "options": {
+        "A": "The Family Law (Divorce) Act 1996",
+        "B": "The Judicial Separation and Family Law Reform Act 1989",
+        "C": "The Family Law Act 2019",
+        "D": "The Civil Partnership and Certain Rights and Obligations of Cohabitants Act 2010"
+      },
+      "correct_answer": "C",
+      "explanation": "The Family Law Act 2019 amended the divorce law to remove the four-year separation requirement and introduced a two-year threshold. This reform has practical significance because the pace at which divorce proceedings can now move may affect the timing of property orders, though the substantive property law framework governing property adjustment orders remains unchanged."
+    },
+    {
+      "id": "PRL_M06_L03_Q09",
+      "question": "During what period does the Family Home Protection Act 1976 continue to apply to a married couple whose marriage is breaking down?",
+      "options": {
+        "A": "Only until the parties physically separate and one party leaves the family home",
+        "B": "Until a decree of divorce or judicial separation is granted",
+        "C": "The 1976 Act ceases to apply once divorce proceedings are issued",
+        "D": "The 1976 Act never applies once property adjustment order proceedings begin"
+      },
+      "correct_answer": "B",
+      "explanation": "Until a decree of divorce or judicial separation is granted, the Family Home Protection Act 1976 continues to apply. A spouse cannot attempt to pre-empt a property adjustment order by conveying the family home without the other spouse's consent. Any such conveyance would be void under the 1976 Act and might in any event be set aside as a transaction defrauding a creditor under section 37 of the Family Law Act 1995."
+    },
+    {
+      "id": "PRL_M06_L03_Q10",
+      "question": "Can a property adjustment order made by a court be defeated by a subsequent voluntary conveyance by the respondent spouse?",
+      "options": {
+        "A": "Yes, provided the purchaser is a bona fide purchaser for value without notice of the order",
+        "B": "No, the order binds third parties with notice of it",
+        "C": "Yes, if the conveyance is made before the order is registered",
+        "D": "Yes, provided the respondent obtains independent legal advice before the conveyance"
+      },
+      "correct_answer": "B",
+      "explanation": "A property adjustment order made by a court cannot be defeated by a subsequent voluntary conveyance by the respondent. The order binds third parties with notice of it. This is a critical property law point: once made, the court order takes priority over any purported transfer by the respondent. Registration of the order provides constructive notice to all subsequent purchasers."
+    }
+  ]
+}

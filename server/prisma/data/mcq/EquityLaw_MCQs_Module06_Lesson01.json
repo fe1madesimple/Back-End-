@@ -1,0 +1,131 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "Module_06_Lesson_01_Resulting_Trusts___Presumed_and_Automatic.txt",
+  "module_number": 6,
+  "module_title": "Resulting Trusts",
+  "lesson_number": 1,
+  "lesson_title": "Resulting Trusts: Presumed and Automatic",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EQL_M06_L01_Q01",
+      "question": "What is a resulting trust, and what does the term 'resulting' signify?",
+      "options": {
+        "A": "A trust that results from a written agreement between the settlor and the trustee.",
+        "B": "A trust that arises by operation of law where the beneficial interest returns to the transferor — the word 'resulting' derives from the Latin re-salire, meaning to spring back.",
+        "C": "A trust that arises as a result of a court order in equity proceedings.",
+        "D": "A trust created where a settlor retains control over the trust property."
+      },
+      "correct_answer": "B",
+      "explanation": "A resulting trust arises where property passes from A to B but, in the eyes of equity, the beneficial interest returns — or results — back to A. The term 'resulting' derives from the Latin re-salire, meaning to spring back. The beneficial interest does not remain with B — it reverts to A. Resulting trusts arise by operation of law rather than from any express intention to create a trust."
+    },
+    {
+      "id": "EQL_M06_L01_Q02",
+      "question": "What are the two main categories of resulting trust?",
+      "options": {
+        "A": "Express resulting trusts and implied resulting trusts.",
+        "B": "Automatic resulting trusts and presumed resulting trusts.",
+        "C": "Fixed resulting trusts and discretionary resulting trusts.",
+        "D": "Testamentary resulting trusts and inter vivos resulting trusts."
+      },
+      "correct_answer": "B",
+      "explanation": "There are two main categories of resulting trust. An automatic resulting trust arises where an express trust fails for some reason — for example, because the three certainties are not satisfied or the trust is wound up with surplus assets remaining. A presumed resulting trust arises in two situations: where property is voluntarily transferred without consideration, and where one person provides the purchase money for property that is put in another person's name."
+    },
+    {
+      "id": "EQL_M06_L01_Q03",
+      "question": "In Westdeutsche Landesbank v Islington Borough Council (1996), Lord Browne-Wilkinson confirmed that an automatic resulting trust arises in which circumstances?",
+      "options": {
+        "A": "Where a trust is created in favour of an unborn beneficiary.",
+        "B": "Where a trust is void or has been exhausted, and the legal recipient holds the property on trust for the transferor.",
+        "C": "Where a trustee makes an unauthorised investment that later increases in value.",
+        "D": "Where a settlor fails to transfer legal title to the trustee."
+      },
+      "correct_answer": "B",
+      "explanation": "In Westdeutsche Landesbank v Islington Borough Council (1996), Lord Browne-Wilkinson confirmed that an automatic resulting trust arises where a trust is void or has been exhausted — for example, where the express trust fails because the three certainties are not satisfied, or where the trust is wound up with surplus assets remaining. The legal recipient holds the property on trust for the transferor. The beneficial interest bounces back rather than remaining with the recipient."
+    },
+    {
+      "id": "EQL_M06_L01_Q04",
+      "question": "A presumed resulting trust arises in two situations. Which of the following correctly identifies those two situations?",
+      "options": {
+        "A": "Where a trustee acts in breach of trust; and where a beneficiary disclaims their interest.",
+        "B": "Where A voluntarily transfers property to B without receiving any value in return; and where A provides the purchase money for property that is put in B's name.",
+        "C": "Where the trust instrument fails to name a trustee; and where the trust property is destroyed.",
+        "D": "Where a trustee profits from the trust; and where a beneficiary fails to take their share."
+      },
+      "correct_answer": "B",
+      "explanation": "A presumed resulting trust arises in two situations. First, where A voluntarily transfers property to B — giving B an asset without receiving any value in return — equity presumes that B holds the property on a resulting trust for A in the absence of evidence of a contrary intention. Second, where A provides the purchase money for property that is put in B's name (or in the joint names of A and B), equity presumes that B holds the property on a resulting trust for A in proportion to A's contribution."
+    },
+    {
+      "id": "EQL_M06_L01_Q05",
+      "question": "Is a presumed resulting trust an irrebuttable presumption?",
+      "options": {
+        "A": "Yes — a presumed resulting trust arises in all cases of voluntary transfer and can never be displaced.",
+        "B": "No — it is a rebuttable presumption that may be displaced by evidence that the transferor intended to make an outright gift.",
+        "C": "Yes — the presumption can only be rebutted by a deed executed before the transfer.",
+        "D": "No — the presumption only arises once a court has made a declaration to that effect."
+      },
+      "correct_answer": "B",
+      "explanation": "The presumed resulting trust is a rebuttable presumption. It may be displaced by evidence of the transferor's intention to make an outright gift — for example, evidence that A transferred property to B in recognition of services or as a gift for a specific reason. The presumption is also displaced in situations where the presumption of advancement applies. The presumption is a starting point, not a conclusive rule."
+    },
+    {
+      "id": "EQL_M06_L01_Q06",
+      "question": "What is the presumption of advancement, and in which traditional relationships does it apply?",
+      "options": {
+        "A": "A presumption that all trust property should advance to the beneficiaries as quickly as possible.",
+        "B": "A counter-presumption that where the transferor is under an obligation to maintain or advance the transferee, equity presumes an outright gift rather than a resulting trust — traditionally applying from father to child and from husband to wife.",
+        "C": "A presumption that any advance made to a beneficiary under section 32 of the Trustee Act 1893 is a gift.",
+        "D": "A presumption that a beneficiary who receives trust property is entitled to retain it absolutely."
+      },
+      "correct_answer": "B",
+      "explanation": "The presumption of advancement is a counter-presumption to the presumed resulting trust. Where the transferor is under a legal or equitable obligation to maintain or advance the transferee, equity presumes an outright gift rather than a resulting trust. The presumption of advancement traditionally applied from father to child and from husband to wife. It operates to displace the presumed resulting trust that would otherwise arise from a voluntary transfer or purchase in another's name."
+    },
+    {
+      "id": "EQL_M06_L01_Q07",
+      "question": "In McGrath v Wallis (1995), the English court considered the presumption of advancement in a property purchase dispute. Which relationship was at issue?",
+      "options": {
+        "A": "Husband and wife.",
+        "B": "Employer and employee.",
+        "C": "Father and son.",
+        "D": "Solicitor and client."
+      },
+      "correct_answer": "C",
+      "explanation": "In McGrath v Wallis (1995), the English court considered the presumption of advancement in the context of a property purchase dispute between a father and his son. The case addressed whether, where a father provided the purchase money for a property put in the son's name, the presumption of advancement displaced the presumed resulting trust that would otherwise arise. This is a leading case applied in the context of the father-to-child category of the presumption."
+    },
+    {
+      "id": "EQL_M06_L01_Q08",
+      "question": "How have the Irish courts treated the presumption of advancement in modern Irish law?",
+      "options": {
+        "A": "The Irish courts have strengthened the presumption of advancement and apply it strictly in all family contexts.",
+        "B": "The Irish courts have recognised that the presumption of advancement is a historical artefact that applies with much reduced force in modern Irish law.",
+        "C": "The Irish courts have abolished the presumption of advancement by judicial decision.",
+        "D": "The Irish courts apply the presumption of advancement only where there is a written declaration of gift."
+      },
+      "correct_answer": "B",
+      "explanation": "The Irish courts have recognised that the presumption of advancement is a historical artefact and applies with much reduced force today. In W v W, decided in the Irish courts, the court acknowledged the weakened state of the presumption. This reflects the modern social and legal context, including the Family Home Protection Act 1976 and civil partnership and cohabitation legislation, which have reshaped the landscape of property rights between family members."
+    },
+    {
+      "id": "EQL_M06_L01_Q09",
+      "question": "An express trust is declared for the benefit of a class of objects, but the class is described in terms that are conceptually uncertain. The trust fails. What happens to the trust property?",
+      "options": {
+        "A": "The property passes to the Crown as bona vacantia.",
+        "B": "The property is held by the trustee absolutely as the trust has failed.",
+        "C": "An automatic resulting trust arises and the property reverts to the settlor or the settlor's estate.",
+        "D": "The court has a discretion to redirect the property to a related purpose."
+      },
+      "correct_answer": "C",
+      "explanation": "Where an express trust fails — for example, because certainty of objects is not satisfied — an automatic resulting trust arises. The property cannot remain with the trustee; the beneficial interest springs back to the settlor or, if the settlor has died, to the settlor's estate. This is a core consequence of the automatic resulting trust doctrine, as confirmed in Westdeutsche Landesbank v Islington Borough Council (1996) and applied in the Irish courts."
+    },
+    {
+      "id": "EQL_M06_L01_Q10",
+      "question": "For FE-1 examination purposes, which of the following correctly identifies the matters a candidate must address in a resulting trust question?",
+      "options": {
+        "A": "Whether the trust was created by deed; whether the trust property was land; and whether all formalities were observed.",
+        "B": "Whether the resulting trust is automatic or presumed; the circumstances giving rise to it; whether the presumption of advancement displaces the presumed resulting trust; and the relevant case law including Westdeutsche (1996) and McGrath v Wallis (1995).",
+        "C": "Whether the trust satisfies the three certainties; whether there was a valid transfer of trust property; and whether the trustee accepted the office.",
+        "D": "Whether specific performance is available; whether rescission is possible; and whether an injunction would preserve the status quo."
+      },
+      "correct_answer": "B",
+      "explanation": "For FE-1 purposes, a resulting trust question requires: (1) identifying whether the resulting trust is automatic (arising from failure of an express trust under Westdeutsche 1996) or presumed (arising from voluntary transfer or purchase in another's name); (2) identifying the circumstances giving rise to the trust; (3) considering whether the presumption of advancement displaces the presumed resulting trust (McGrath v Wallis 1995; W v W); and (4) concluding on who holds the beneficial interest. These are the key analytical steps that attract marks."
+    }
+  ]
+}

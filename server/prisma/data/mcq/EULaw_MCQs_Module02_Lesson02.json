@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "Module_02_Lesson_02_The_Council_and_European_Council.txt",
+  "module_number": 2,
+  "module_title": "Institutions of the European Union",
+  "lesson_number": 2,
+  "lesson_title": "The Council of the EU and the European Council — Intergovernmental Power in the EU Architecture",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EUL_M02_L02_Q01",
+      "question": "Which Treaty articles govern the Council of the European Union?",
+      "options": {
+        "A": "Articles 13 and 14 TEU",
+        "B": "Articles 16 TEU and 237–243 TFEU",
+        "C": "Articles 15 TEU and 235–236 TFEU",
+        "D": "Articles 17 and 18 TEU"
+      },
+      "correct_answer": "B",
+      "explanation": "The Council of the European Union is governed by Articles 16 TEU and 237–243 TFEU. It is the principal legislative body of the EU alongside the European Parliament and represents the governments of member states."
+    },
+    {
+      "id": "EUL_M02_L02_Q02",
+      "question": "Why does the Council of the EU have no fixed permanent membership, and what is the name of the configuration that deals with economic and financial policy?",
+      "options": {
+        "A": "Membership rotates annually by alphabetical order of member states; the relevant configuration is the General Affairs Council",
+        "B": "Composition changes depending on the subject matter under discussion; the economic and financial configuration is known as ECOFIN",
+        "C": "The Council is composed of permanent ambassadors from each member state; the financial configuration is known as COREPER",
+        "D": "Each member state sends two permanent representatives; the financial configuration is the Foreign Affairs Council"
+      },
+      "correct_answer": "B",
+      "explanation": "The Council has no fixed membership because its composition changes depending on the subject matter under discussion. When economic and financial policy is on the agenda, finance ministers attend — this configuration is called ECOFIN. There are ten formally recognised Council configurations in total."
+    },
+    {
+      "id": "EUL_M02_L02_Q03",
+      "question": "What is the Presidency of the Council, how long does each member state hold it, and when did Ireland last hold it?",
+      "options": {
+        "A": "A permanent position held by the largest member state; Ireland has never held it",
+        "B": "A rotating six-month Presidency; Ireland last held it in the first half of 2013",
+        "C": "A two-and-a-half year Presidency elected by QMV; Ireland last held it in 2016",
+        "D": "An annual Presidency determined by the European Council; Ireland last held it in 2004"
+      },
+      "correct_answer": "B",
+      "explanation": "Each member state holds the Presidency of the Council for six months on a rotating basis. The Presidency chairs meetings, sets the agenda, and plays a crucial facilitating role in brokering compromises. Ireland last held the Presidency in the first half of 2013."
+    },
+    {
+      "id": "EUL_M02_L02_Q04",
+      "question": "Under the Lisbon rules in Article 16(4) TEU, what thresholds must be met for a qualified majority vote to pass in the Council?",
+      "options": {
+        "A": "Two-thirds of member states representing 75% of the EU population",
+        "B": "A simple majority of member states with no population requirement",
+        "C": "At least 55% of member states representing at least 65% of the total EU population",
+        "D": "At least 60% of member states representing at least 70% of the total EU population"
+      },
+      "correct_answer": "C",
+      "explanation": "Under Article 16(4) TEU, a qualified majority requires the support of at least 55% of member states — currently 15 of 27 — representing member states comprising at least 65% of the total EU population. A blocking minority must consist of at least four member states."
+    },
+    {
+      "id": "EUL_M02_L02_Q05",
+      "question": "In which areas does the Council of the EU continue to act by unanimity, meaning every member state holds a veto?",
+      "options": {
+        "A": "Internal market, environmental policy, and consumer protection",
+        "B": "Taxation, most foreign and security policy decisions, constitutional amendments, and accession of new member states",
+        "C": "All legislative decisions under the ordinary legislative procedure",
+        "D": "Trade policy, agriculture, and cohesion fund decisions"
+      },
+      "correct_answer": "B",
+      "explanation": "Unanimity is required for the most sensitive areas: taxation, most foreign and security policy decisions, constitutional amendments, accession of new member states, certain justice and home affairs matters, and adoption of the EU's own resources decision. Every member state has a veto in these areas."
+    },
+    {
+      "id": "EUL_M02_L02_Q06",
+      "question": "What was the Luxembourg Compromise of 1966, and what is its current legal status?",
+      "options": {
+        "A": "A formal Treaty amendment requiring unanimity for all legislative decisions; it remains binding EU law",
+        "B": "A political understanding — not a formal legal rule — under which the Council would seek unanimity when very important national interests were at stake; it has largely been superseded by the extension of QMV",
+        "C": "A Court of Justice ruling requiring member states to implement EU directives within two years; it remains part of EU law",
+        "D": "An intergovernmental agreement creating the European Monetary System; it was replaced by the Maastricht Treaty"
+      },
+      "correct_answer": "B",
+      "explanation": "The Luxembourg Compromise was a political understanding dating from 1966, arising from France's resistance under de Gaulle to being outvoted. It was never a formal legal rule. It has largely been superseded as QMV has been extended, though the political dynamics of Council decision-making still often lead to seeking consensus."
+    },
+    {
+      "id": "EUL_M02_L02_Q07",
+      "question": "What is COREPER, and what are A-points and B-points on the Council's agenda?",
+      "options": {
+        "A": "COREPER is the European Parliament's internal coordinating committee; A-points are urgent items and B-points are deferred items",
+        "B": "COREPER is the Committee of Permanent Representatives; A-points are items already agreed at COREPER level approved without debate, while B-points are contested items requiring ministerial resolution",
+        "C": "COREPER is the Commission's legislative drafting body; A-points are Commission proposals and B-points are Council amendments",
+        "D": "COREPER is the Council's legal service; A-points are treaty-based acts and B-points are delegated acts"
+      },
+      "correct_answer": "B",
+      "explanation": "COREPER — the Committee of Permanent Representatives — consists of senior diplomats and officials from each member state's Permanent Representation in Brussels. It meets weekly to prepare the Council's agenda. Items agreed at COREPER level become A-points (approved formally without debate); only contested items requiring ministerial resolution become B-points. In practice, the vast majority of EU legislative decisions are agreed at COREPER level."
+    },
+    {
+      "id": "EUL_M02_L02_Q08",
+      "question": "Under Article 15 TEU, what is the defined function of the European Council, and does it exercise legislative functions?",
+      "options": {
+        "A": "It adopts EU regulations and directives by unanimity; it is the EU's supreme legislative body",
+        "B": "It provides the Union with the necessary impetus for its development and defines general political directions and priorities; it does not exercise legislative functions",
+        "C": "It approves the EU budget and grants discharge to the Commission; it has no role in defining policy priorities",
+        "D": "It acts as the court of final appeal for EU constitutional matters; it does not legislate"
+      },
+      "correct_answer": "B",
+      "explanation": "Under Article 15(1) TEU, the European Council shall provide the Union with the necessary impetus for its development and shall define the general political directions and priorities. It does not exercise legislative functions. It gives strategic direction, resolves major political impasses, and sets the agenda for treaty change."
+    },
+    {
+      "id": "EUL_M02_L02_Q09",
+      "question": "What innovation did the Lisbon Treaty introduce regarding the Presidency of the European Council, and who assumed the role in December 2024?",
+      "options": {
+        "A": "It abolished the Presidency and replaced it with a troika system; no individual took office in December 2024",
+        "B": "It established a full-time permanent President elected by the European Council by QMV for a renewable term of two and a half years; António Costa assumed the role in December 2024",
+        "C": "It extended the rotating Presidency from six months to one year; the role rotated to Ireland in December 2024",
+        "D": "It made the Commission President also the President of the European Council; Ursula von der Leyen holds both roles"
+      },
+      "correct_answer": "B",
+      "explanation": "The Lisbon Treaty created the post of permanent President of the European Council under Article 15(6) TEU. Previously the chair rotated with the six-month Council Presidency. The permanent President is elected by QMV for a renewable term of two and a half years. Herman Van Rompuy was first, followed by Donald Tusk; António Costa assumed the role in December 2024."
+    },
+    {
+      "id": "EUL_M02_L02_Q10",
+      "question": "Which of the following statements correctly distinguishes the Council of Europe from the institutions of the European Union?",
+      "options": {
+        "A": "The Council of Europe is another name for the European Council and is composed of EU heads of government",
+        "B": "The Council of Europe is an EU institution responsible for external relations, with its seat in Strasbourg",
+        "C": "The Council of Europe is a wholly separate international organisation established in 1949, with 46 member states, responsible for the ECHR; its judicial body is the ECtHR sitting in Strasbourg — entirely distinct from the EU",
+        "D": "The Council of Europe is the predecessor institution to the Council of the EU and was dissolved when the Maastricht Treaty came into force"
+      },
+      "correct_answer": "C",
+      "explanation": "The Council of Europe is a completely separate international organisation established in 1949, with 46 member states including non-EU countries such as Norway, Switzerland, and Turkey. It is responsible for the European Convention on Human Rights. Its judicial body is the European Court of Human Rights, sitting in Strasbourg. It must not be confused with the Council of the EU or the European Council."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_04_Lesson_04_Extinguishment_and_Profits_a_Prendre.txt",
+  "module_number": 4,
+  "module_title": "Easements and Profits a Prendre",
+  "lesson_number": 4,
+  "lesson_title": "Extinguishment of Easements and Profits à Prendre",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M04_L04_Q01",
+      "question": "In what three principal ways can an easement be extinguished?",
+      "options": {
+        "A": "By non-use for twelve years, by planning permission, and by compulsory purchase order",
+        "B": "By express release, by abandonment, and by unity of ownership and possession",
+        "C": "By the death of the dominant owner, by sale of the servient tenement, and by court order",
+        "D": "By written notice from the servient owner, by statutory modification, and by adverse possession"
+      },
+      "correct_answer": "B",
+      "explanation": "The three principal methods by which an easement can be extinguished are: (1) express release — the dominant owner formally releases the easement to the servient owner by deed; (2) abandonment — the dominant owner demonstrates a fixed intention to abandon the easement permanently; and (3) unity of ownership and possession — the dominant and servient tenements come into the ownership and possession of the same person. Each method has its own specific requirements and the courts apply them carefully, given that easements are proprietary rights whose extinguishment affects the land permanently."
+    },
+    {
+      "id": "PRL_M04_L04_Q02",
+      "question": "What formal requirement must be satisfied for an express release of an easement to be effective?",
+      "options": {
+        "A": "A signed written agreement from both the dominant and servient owners",
+        "B": "A deed — an informal oral statement of release is not sufficient to extinguish a legal easement",
+        "C": "Registration of the release with the Property Registration Authority, without which it has no effect",
+        "D": "A court order confirming the release of the easement"
+      },
+      "correct_answer": "B",
+      "explanation": "Express release of an easement requires a deed. An informal oral statement of release — even if clearly expressed and genuinely intended — is not sufficient to extinguish a legal easement. This is because easements are legal proprietary rights and their creation and extinguishment must satisfy the formality requirements applicable to legal interests in land. For registered land, the release should also be noted on the register. The formal requirement protects dominant owners from inadvertently losing their easements through informal statements."
+    },
+    {
+      "id": "PRL_M04_L04_Q03",
+      "question": "What does abandonment of an easement require and why is it a high threshold?",
+      "options": {
+        "A": "Any period of non-use, however brief, constitutes abandonment if the dominant owner does not exercise the easement",
+        "B": "Proof that the dominant owner has demonstrated a fixed intention to abandon the easement permanently — not merely temporary non-use; the courts are reluctant to find abandonment because it permanently affects the land",
+        "C": "A written statement from the dominant owner indicating they no longer need the easement",
+        "D": "Non-use for a period of twelve years, mirroring the adverse possession limitation period"
+      },
+      "correct_answer": "B",
+      "explanation": "Abandonment requires proof that the dominant owner has demonstrated a fixed intention to abandon the easement permanently — not merely temporary non-use. This is a deliberately high threshold. The courts are very reluctant to find abandonment because easements are proprietary rights whose extinguishment affects the land permanently and irrevocably. The dominant owner might simply not have had occasion to use the right during the non-use period. The courts require some positive indication of intention to abandon — not just absence of use."
+    },
+    {
+      "id": "PRL_M04_L04_Q04",
+      "question": "In Benn v Hardinge [1992], how long had the right of way been unused and what did the Court of Appeal hold?",
+      "options": {
+        "A": "Five years of non-use; the Court of Appeal held this was sufficient to establish abandonment",
+        "B": "Twenty-five years of non-use; the Court of Appeal held this was not sufficient to establish abandonment — non-use must be combined with a clear intention to abandon",
+        "C": "Twelve years of non-use; the Court of Appeal held the easement was extinguished by analogy with the adverse possession limitation period",
+        "D": "Forty years of non-use; the Court of Appeal ordered the easement extinguished under the Prescription Act 1832"
+      },
+      "correct_answer": "B",
+      "explanation": "In Benn v Hardinge [1992], twenty-five years of non-use of a right of way was held by the English Court of Appeal to be insufficient to establish abandonment. The court emphasised that non-use — even for a very long period — does not by itself demonstrate abandonment. The dominant owner must have demonstrated a clear intention to abandon permanently. The court looks for some positive indication of that intention — for example, the dominant owner constructing a wall that physically blocks the easement and indicating they no longer wish to use it. Mere passage of time without use is not enough."
+    },
+    {
+      "id": "PRL_M04_L04_Q05",
+      "question": "Carroll v Sheridan [1984] is the leading Irish authority on which aspect of easement extinguishment?",
+      "options": {
+        "A": "That express release of an easement requires a deed",
+        "B": "That non-use alone is insufficient to establish abandonment of an easement — there must be evidence of a positive intention to give up the right permanently",
+        "C": "That unity of ownership extinguishes an easement only where both tenements come into the same ownership simultaneously",
+        "D": "That the Prescription Act 1832 periods apply equally to the question of abandonment"
+      },
+      "correct_answer": "B",
+      "explanation": "Carroll v Sheridan [1984] is the key Irish High Court authority on abandonment of easements. In that case, the court found that the plaintiff had not abandoned a right of way despite years of non-use, because there was no evidence of a positive intention to give up the right permanently. The Irish court applied the same principle as Benn v Hardinge [1992]: non-use alone — even prolonged non-use — is insufficient to establish abandonment. The courts require positive evidence of an intention to permanently relinquish the easement before they will find abandonment."
+    },
+    {
+      "id": "PRL_M04_L04_Q06",
+      "question": "How does unity of ownership and possession extinguish an easement and what happens if that unity of ownership later ends?",
+      "options": {
+        "A": "Unity of ownership suspends the easement during the period of common ownership; it automatically revives when the two tenements are separated again",
+        "B": "Unity of ownership extinguishes the easement because you cannot have an easement over your own land — the right merges into the ownership; if the unity later ends, the easement does not automatically revive and a new easement must be created expressly or impliedly",
+        "C": "Unity of ownership has no effect on an easement that has already been registered on the folio",
+        "D": "Unity of ownership extinguishes the easement only if the same person has owned both tenements for at least twelve years"
+      },
+      "correct_answer": "B",
+      "explanation": "Unity of ownership and possession extinguishes an easement because it is conceptually impossible to have an easement over your own land — an easement requires a dominant and a servient tenement in separate ownership. When both tenements come into the ownership and possession of the same person, the right merges into the ownership and is extinguished. Critically, if the unity of ownership later ends — for example, if the owner sells one of the parcels — the easement does not automatically revive. A new easement would need to be created, either expressly or by implication (potentially under Wheeldon v Burrows [1879] or section 40 LCLRA 2009)."
+    },
+    {
+      "id": "PRL_M04_L04_Q07",
+      "question": "What is a profit à prendre and how does it differ fundamentally from an easement?",
+      "options": {
+        "A": "A profit à prendre is a right to use another person's land; an easement is a right to take things from another person's land",
+        "B": "A profit à prendre is the right to take something from another person's land (fish, timber, peat, grazing); an easement involves use without taking — profits involve actually taking produce from the land",
+        "C": "A profit à prendre is a personal right that cannot be assigned; an easement is a proprietary right that runs with the land",
+        "D": "A profit à prendre requires a dominant tenement; an easement does not"
+      },
+      "correct_answer": "B",
+      "explanation": "A profit à prendre is the right to take something from another person's land — to take produce from the land itself. Examples include the right to fish in a private river, graze animals on another's pasture, cut and take peat from a bog, and take timber from a wood. The key distinction from an easement is that profits involve actually taking something from the land, whereas easements involve use of the land without taking. This fundamental difference is the clearest way to distinguish the two concepts."
+    },
+    {
+      "id": "PRL_M04_L04_Q08",
+      "question": "What is the key practical distinction between a profit à prendre and an easement regarding the requirement for a dominant tenement?",
+      "options": {
+        "A": "Both an easement and a profit à prendre require a dominant tenement",
+        "B": "An easement requires a dominant tenement to benefit; a profit à prendre can exist 'in gross' — it does not require a dominant tenement and can be assigned independently of any land",
+        "C": "Neither an easement nor a profit à prendre requires a dominant tenement",
+        "D": "A profit à prendre requires a dominant tenement; an easement does not"
+      },
+      "correct_answer": "B",
+      "explanation": "One of the key practical distinctions between an easement and a profit à prendre is that a profit can exist 'in gross' — independently, without the need for a dominant tenement. An easement must benefit a dominant tenement (it must accommodate and serve that tenement). A profit in gross is simply a right to take from the land, attached to a person rather than to land. Because a profit can exist in gross, it can also be assigned independently of any land — the right to fish in a river, for example, can be sold to someone who owns no adjacent land."
+    },
+    {
+      "id": "PRL_M04_L04_Q09",
+      "question": "Which of the following is an example of a profit à prendre with particular historical significance in Ireland?",
+      "options": {
+        "A": "A right of way across a neighbour's field",
+        "B": "The right to use a neighbour's drainage ditch",
+        "C": "Turbary rights — the right to cut and take peat from a bog — and rights to graze animals on common land",
+        "D": "The right to store materials in a neighbour's yard"
+      },
+      "correct_answer": "C",
+      "explanation": "Turbary rights — the right to cut and take peat from a bog — and rights to graze animals on commons (profits of pasture) have enormous historical significance in Ireland. These rights were crucial to rural communities in Ireland for centuries, providing fuel and grazing. The courts have specifically recognised and adjudicated on turbary rights in a number of Irish decisions. For FE-1 purposes, turbary rights are the archetypal example of an Irish profit à prendre and candidates should be ready to identify them in problem questions involving bogs, commons, or rural land."
+    },
+    {
+      "id": "PRL_M04_L04_Q10",
+      "question": "Under the LCLRA 2021, what is the period for acquiring a profit à prendre by prescription?",
+      "options": {
+        "A": "Twenty years under the Prescription Act 1832, which continues to apply to profits à prendre",
+        "B": "Twelve years of open, peaceable, and uninterrupted use under section 35 LCLRA 2021, which applies to both easements and profits",
+        "C": "Forty years, mirroring the period for easements of light",
+        "D": "The prescription period for profits à prendre is not regulated by statute and must be assessed under common law"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 35 of the LCLRA 2021, the twelve-year prescription period applies to both easements and profits à prendre. The LCLRA 2021 reforms brought profits into the same unified prescription regime as easements, replacing the varying periods under the Prescription Act 1832. For any prescriptive claim to a profit à prendre arising after the commencement of the LCLRA 2021, the claimant must demonstrate twelve years of open, peaceable, and uninterrupted use — the same three conditions that apply to easements."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module07_Lesson01.txt",
+  "module_number": 7,
+  "module_title": "Judicial Review of EU Acts",
+  "lesson_number": 1,
+  "lesson_title": "Article 263 TFEU: Reviewable Acts and Grounds of Review",
+  "questions": [
+    {
+      "id": "EUL_M07_L01_Q01",
+      "question": "Article 263 TFEU provides for judicial review of acts of EU institutions. Which acts are reviewable under Article 263?",
+      "options": {
+        "A": "Only Regulations and Directives — Decisions are excluded",
+        "B": "Acts of the European Parliament, Council, Commission, and European Central Bank intended to produce legal effects vis-à-vis third parties, as well as acts of bodies, offices, and agencies of the EU",
+        "C": "Only acts adopted under the ordinary legislative procedure — delegated and implementing acts are exempt",
+        "D": "Any act adopted by a majority of member states in the Council"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 263(1) TFEU covers acts of the European Parliament, the Council, the Commission, the European Central Bank (other than recommendations and opinions), and the European Council, intended to produce legal effects vis-à-vis third parties. Post-Lisbon, acts of EU bodies, offices, and agencies intended to produce legal effects vis-à-vis third parties are also reviewable. The key criterion is whether the act produces binding legal effects — internal preparatory measures and non-binding acts (opinions, recommendations) are generally not reviewable."
+    },
+    {
+      "id": "EUL_M07_L01_Q02",
+      "question": "Which of the following is NOT a ground of annulment under Article 263(2) TFEU?",
+      "options": {
+        "A": "Lack of competence",
+        "B": "Infringement of an essential procedural requirement",
+        "C": "Infringement of the Treaties or any rule of law relating to their application",
+        "D": "Economic inefficiency of the measure"
+      },
+      "correct_answer": "D",
+      "explanation": "Article 263(2) specifies four grounds of annulment: (1) lack of competence; (2) infringement of an essential procedural requirement; (3) infringement of the Treaties or any rule of law relating to their application (including general principles of EU law); (4) misuse of powers. 'Economic inefficiency' is not a ground of review — the CJEU does not substitute its judgment for the EU legislature's on policy merits. This respects the principle of institutional balance and the EU legislature's broad discretion in complex policy areas."
+    },
+    {
+      "id": "EUL_M07_L01_Q03",
+      "question": "What is 'lack of competence' as a ground of annulment under Article 263 TFEU?",
+      "options": {
+        "A": "Where the institution that adopted the act did not have legal authority to do so — either because it acted beyond the powers conferred on it by the Treaties (ultra vires) or because it used a wrong legal basis",
+        "B": "Where the individuals affected by the act lack the legal capacity to challenge it",
+        "C": "Where the institution adopted the act without consulting the European Parliament",
+        "D": "Where the act conflicts with a later act adopted by a different institution"
+      },
+      "correct_answer": "A",
+      "explanation": "Lack of competence means the EU institution acted beyond the competences conferred on it by the Treaties (ultra vires) — the principle of conferral (Article 5 TEU). This also includes acting on an incorrect legal basis: the legal basis determines the procedure (e.g., ordinary legislative procedure vs. special procedure) and the required majority. Using the wrong legal basis may therefore violate procedural requirements and alter the balance of power between institutions, making the act reviewable."
+    },
+    {
+      "id": "EUL_M07_L01_Q04",
+      "question": "The ground of 'infringement of an essential procedural requirement' includes which of the following?",
+      "options": {
+        "A": "Failure to obtain required Parliamentary consent, failure to consult a mandatory advisory body, and inadequate statement of reasons under Article 296 TFEU",
+        "B": "Failure to publish the act in all official EU languages simultaneously",
+        "C": "Adoption of the act on a day other than specified in the institution's rules of procedure",
+        "D": "Failure to secure a qualified majority in the Council when a simple majority would have sufficed"
+      },
+      "correct_answer": "A",
+      "explanation": "Essential procedural requirements include: failure to obtain required Parliament consent or to follow the correct procedure; failure to consult a body whose consultation is mandated (e.g., the Economic and Social Committee); failure to state reasons as required by Article 296 TFEU; and breach of hearing rights. Not every procedural defect is 'essential' — only those that could have affected the outcome. Minor, non-essential procedural irregularities do not ground annulment if they cannot have influenced the act's content."
+    },
+    {
+      "id": "EUL_M07_L01_Q05",
+      "question": "The obligation to state reasons under Article 296 TFEU requires EU institutions to:",
+      "options": {
+        "A": "Provide a philosophical justification for the political choices made",
+        "B": "Disclose the factual and legal basis of the measure so that parties concerned can ascertain the reasons for the measure and the CJEU can exercise its power of review",
+        "C": "Set out every competing policy option that was considered and rejected",
+        "D": "Obtain written agreement from all affected member states that the reasoning is adequate"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 296 TFEU requires legal acts to state their reasons. The CJEU has held (e.g., Germany v Commission) that the statement of reasons must disclose in a clear and unequivocal fashion the reasoning followed by the institution so that: (1) the parties can ascertain the justification for the measure and decide whether to challenge it; (2) the CJEU can exercise its review function. The extent of reasoning required depends on the nature of the act — individual decisions require more detailed reasoning than general legislative acts."
+    },
+    {
+      "id": "EUL_M07_L01_Q06",
+      "question": "'Infringement of the Treaties or any rule of law relating to their application' as a ground of annulment covers which EU law norms?",
+      "options": {
+        "A": "Only the primary treaty texts — TEU and TFEU",
+        "B": "Treaty provisions, general principles of EU law (including fundamental rights, proportionality, legal certainty, and equal treatment), and other binding EU rules",
+        "C": "Treaty provisions and secondary legislation — general principles are not 'law relating to application of the Treaties'",
+        "D": "Only directly effective EU law provisions"
+      },
+      "correct_answer": "B",
+      "explanation": "This ground is the broadest — it covers any violation of EU law, including: Treaty articles (primary law), general principles of EU law (proportionality, legal certainty, equal treatment, fundamental rights), international agreements to which the EU is party, and other binding EU legal norms. The general principles are 'rules of law relating to application of the Treaties' — they were developed by the CJEU as part of the EU legal order and must be respected by all EU institutions when exercising their powers."
+    },
+    {
+      "id": "EUL_M07_L01_Q07",
+      "question": "'Misuse of powers' (détournement de pouvoir) as a ground of annulment means:",
+      "options": {
+        "A": "The institution adopted an act that is disproportionate",
+        "B": "The institution used its power for a purpose other than that for which the power was conferred — i.e., a power granted for one purpose is used to achieve a different, impermissible objective",
+        "C": "The institution acted corruptly or with bad faith",
+        "D": "The institution exceeded the scope of its delegated authority"
+      },
+      "correct_answer": "B",
+      "explanation": "Misuse of powers (détournement de pouvoir) occurs when an institution uses a power for a purpose other than that for which it was conferred. It is an intentional misapplication of a power for an illegitimate end. For example, using a trade policy power to achieve a prohibited result that cannot be achieved directly. In practice this ground is rarely successful — it requires showing that the measure was adopted with the exclusive or main purpose of achieving ends other than those stated. It is hard to prove."
+    },
+    {
+      "id": "EUL_M07_L01_Q08",
+      "question": "The time limit for bringing an annulment action under Article 263 TFEU is:",
+      "options": {
+        "A": "One year from the date the act was adopted",
+        "B": "Two months from the date of publication or notification, or the day on which the act came to the applicant's knowledge",
+        "C": "Six months from the date the act came into force",
+        "D": "Three months from notification, with no extension for publication-based acts"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 263(6) TFEU: proceedings must be instituted within two months of publication of the measure, or notification to the applicant, or (failing either) the day on which it came to the knowledge of the applicant. The two-month period is strict — the CJEU has consistently refused to extend it. However, distance extensions apply for applicants outside Luxembourg (where the General Court sits) — effectively adding a short additional period."
+    },
+    {
+      "id": "EUL_M07_L01_Q09",
+      "question": "The CJEU will not review the merits or policy wisdom of EU legislative choices. What is the standard of review for complex legislative assessments?",
+      "options": {
+        "A": "Full merits review — the CJEU substitutes its own judgment for the legislature's",
+        "B": "Marginal review — the CJEU reviews only whether the institution manifestly erred in its assessment, committed a misuse of powers, or clearly exceeded the bounds of its discretion",
+        "C": "No review — legislative choices are completely immune from judicial scrutiny",
+        "D": "Review on a balance of probabilities — the institution must show its measure was more likely correct than incorrect"
+      },
+      "correct_answer": "B",
+      "explanation": "For complex legislative or economic assessments, the CJEU applies marginal review — it checks only for manifest error, misuse of powers, or clear excess of discretion. It does not substitute its own assessment for that of the institution (as confirmed in cases like Balkan-Import-Export and Spain v Council). This reflects judicial restraint in areas requiring complex political and economic judgments where the legislature has been conferred broad discretion. In more legally constrained areas (e.g., legal basis disputes), review may be more intensive."
+    },
+    {
+      "id": "EUL_M07_L01_Q10",
+      "question": "What is the effect of a successful annulment action under Article 264 TFEU?",
+      "options": {
+        "A": "The CJEU orders the institution to adopt a new act within three months",
+        "B": "The CJEU declares the act void — it is null and void from the date of adoption (ex tunc), though the Court may limit the temporal effects of the annulment in appropriate cases",
+        "C": "The act is suspended pending re-adoption by the institution, but produces effects in the interim",
+        "D": "The CJEU awards damages to the applicant and the act continues in force"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 264 TFEU: if the action is well founded, the CJEU declares the contested act void. The annulment has erga omnes effect (binding on all) and operates ex tunc (from the date of adoption). However, Article 264(2) allows the Court to declare which effects of the annulled act shall be considered definitive — this is used to preserve legal certainty (e.g., maintaining regulations or decisions in force until a replacement is adopted, as in Isoglucose/European Parliament v Council)."
+    }
+  ],
+  "total_questions": 10
+}

@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "Module_13_Lesson_01_Defences___Contributory_Negligence_and_the_Civil_Liability_Act_1961.txt",
+  "module_number": 13,
+  "module_title": "Defences in Tort Law",
+  "lesson_number": 1,
+  "lesson_title": "Defences: Contributory Negligence and the Civil Liability Act 1961",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M13_L01_Q01",
+      "question": "Before the Civil Liability Act 1961, what was the effect of contributory negligence on a plaintiff's claim at common law?",
+      "options": {
+        "A": "It reduced the plaintiff's damages in proportion to their fault.",
+        "B": "It was a complete bar to recovery — the plaintiff recovered nothing.",
+        "C": "It transferred liability entirely to the defendant.",
+        "D": "It had no effect on the plaintiff's recovery."
+      },
+      "correct_answer": "B",
+      "explanation": "At common law, contributory negligence was a complete bar to the plaintiff's claim. If the plaintiff was at all to blame for their own injury, they recovered nothing. This was widely regarded as unjust and was reformed by the Civil Liability Act 1961."
+    },
+    {
+      "id": "TL_M13_L01_Q02",
+      "question": "Which sections of the Civil Liability Act 1961 govern the apportionment of liability in contributory negligence cases?",
+      "options": {
+        "A": "Sections 11 and 12",
+        "B": "Sections 21 and 47",
+        "C": "Sections 34 and 35",
+        "D": "Sections 8 and 9"
+      },
+      "correct_answer": "C",
+      "explanation": "Sections 34 and 35 of the Civil Liability Act 1961 provide that contributory negligence no longer bars the plaintiff's claim entirely. Instead, the court apportions liability between the plaintiff and the defendant in proportion to their respective degrees of fault."
+    },
+    {
+      "id": "TL_M13_L01_Q03",
+      "question": "A court finds that a plaintiff was 30% at fault for their injuries and the defendant 70% at fault. What damages does the plaintiff recover?",
+      "options": {
+        "A": "Nothing, because the plaintiff was contributorily negligent.",
+        "B": "30% of their full damages.",
+        "C": "100% of their full damages.",
+        "D": "70% of their full damages."
+      },
+      "correct_answer": "D",
+      "explanation": "Under sections 34 and 35 of the Civil Liability Act 1961, the plaintiff's damages are reduced by the degree to which they were at fault. If the plaintiff was 30% at fault, they recover 70% of their full damages — the defendant's proportionate share."
+    },
+    {
+      "id": "TL_M13_L01_Q04",
+      "question": "What standard of care applies to assess whether a plaintiff has been contributorily negligent?",
+      "options": {
+        "A": "A subjective standard based on the plaintiff's personal circumstances.",
+        "B": "An objective standard — what a reasonable person in the plaintiff's position would have done.",
+        "C": "The same standard that applies to professional defendants only.",
+        "D": "No standard — contributory negligence is assessed purely on outcome."
+      },
+      "correct_answer": "B",
+      "explanation": "The Irish courts apply an objective standard to the plaintiff's conduct. As confirmed in O'Sullivan v Dwyer, the question is whether a reasonable person in the plaintiff's position would have taken care for their own safety in the way the plaintiff failed to do."
+    },
+    {
+      "id": "TL_M13_L01_Q05",
+      "question": "Which Irish case confirmed that the standard applied to a contributorily negligent plaintiff is objective?",
+      "options": {
+        "A": "Conway v Irish National Teachers Organisation",
+        "B": "O'Sullivan v Dwyer",
+        "C": "Shortt v Commissioner of An Garda Síochána",
+        "D": "Donoghue v Stevenson"
+      },
+      "correct_answer": "B",
+      "explanation": "In O'Sullivan v Dwyer, decided in the Irish High Court, the court assessed the plaintiff's conduct against the standard of the reasonable person in similar circumstances, confirming the objective nature of the contributory negligence test."
+    },
+    {
+      "id": "TL_M13_L01_Q06",
+      "question": "Under section 34(2) of the Civil Liability Act 1961, what must be established before contributory negligence can reduce a plaintiff's damages?",
+      "options": {
+        "A": "That the plaintiff was the primary cause of the accident.",
+        "B": "That the plaintiff's fault had a causal connection to the damage they suffered.",
+        "C": "That the defendant acted in good faith.",
+        "D": "That the plaintiff had legal capacity at the time of the incident."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 34(2) of the Civil Liability Act 1961 requires a causal connection between the plaintiff's fault and the damage suffered — not merely the accident. The plaintiff's negligence must have contributed to the specific damage suffered, not just to the event itself."
+    },
+    {
+      "id": "TL_M13_L01_Q07",
+      "question": "A plaintiff fails to wear a seatbelt and suffers a hand injury in a road traffic accident that a seatbelt would not have prevented. What is the correct analysis?",
+      "options": {
+        "A": "The failure to wear a seatbelt is contributory negligence in respect of the hand injury.",
+        "B": "The failure to wear a seatbelt is not contributory negligence in respect of the hand injury.",
+        "C": "The plaintiff's claim is entirely barred for not wearing a seatbelt.",
+        "D": "The court must reduce all damages by a standard penalty for seatbelt non-compliance."
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 34(2), the plaintiff's fault must have causally contributed to the damage suffered. If a seatbelt would not have prevented the hand injury, the failure to wear one is not contributory negligence in respect of that particular injury, even though it might be relevant to other injuries a seatbelt could have prevented."
+    },
+    {
+      "id": "TL_M13_L01_Q08",
+      "question": "Which of the following is a recognised example of contributory negligence in Irish tort law?",
+      "options": {
+        "A": "A plaintiff who sues in the wrong court.",
+        "B": "A plaintiff who fails to serve proceedings within time.",
+        "C": "A plaintiff who voluntarily walks across ice they knew to be dangerously slippery.",
+        "D": "A plaintiff who does not retain legal representation."
+      },
+      "correct_answer": "C",
+      "explanation": "A plaintiff who voluntarily walks across ice that they knew to be dangerously slippery is a classic example of contributory negligence — they failed to take reasonable care for their own safety. Other examples given in the script include failing to wear a seatbelt or a cycling helmet, and a plaintiff who exposed themselves to a known risk."
+    },
+    {
+      "id": "TL_M13_L01_Q09",
+      "question": "How does section 34 of the Civil Liability Act 1961 direct the court to apportion fault between plaintiff and defendant?",
+      "options": {
+        "A": "Equally between all parties unless the court finds otherwise.",
+        "B": "According to what is just and equitable having regard to the claimant's share in the responsibility for the damage.",
+        "C": "By reference to the financial means of each party.",
+        "D": "Strictly in accordance with expert actuarial evidence."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 34 requires the court to apportion responsibility according to what is just and equitable having regard to the claimant's share in the responsibility for the damage. This is a qualitative assessment of blameworthiness and causative contribution — not a precise mathematical exercise."
+    },
+    {
+      "id": "TL_M13_L01_Q10",
+      "question": "For FE-1 exam purposes, when should a candidate consider raising contributory negligence in a tort problem question?",
+      "options": {
+        "A": "Only where the plaintiff is a professional.",
+        "B": "Only in cases involving road traffic accidents.",
+        "C": "In every negligence problem question where the facts suggest the plaintiff failed to take care for their own safety.",
+        "D": "Only where the defendant specifically pleads it in the problem facts."
+      },
+      "correct_answer": "C",
+      "explanation": "Candidates should always consider contributory negligence in every negligence problem question. Even where the defendant is clearly at fault, the facts may disclose a contributory negligence argument. Apply sections 34 and 35 of the Civil Liability Act 1961, apportion both parties' degrees of fault, and state the effect on the award of damages."
+    }
+  ]
+}

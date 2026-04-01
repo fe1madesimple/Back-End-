@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_08_Lesson_02_Contractual_Licences.txt",
+  "module_number": 8,
+  "module_title": "Licences, Proprietary Estoppel, and Rights of Residence",
+  "lesson_number": 2,
+  "lesson_title": "Contractual Licences",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M08_L02_Q01",
+      "question": "What distinguishes a contractual licence from a bare licence?",
+      "options": {
+        "A": "A contractual licence is created by deed; a bare licence is created by conduct",
+        "B": "A contractual licence arises from permission supported by consideration under a contract; a bare licence arises from a mere permission without consideration",
+        "C": "A contractual licence gives the licensee a proprietary interest; a bare licence does not",
+        "D": "A contractual licence must be registered to be enforceable; a bare licence does not"
+      },
+      "correct_answer": "B",
+      "explanation": "A contractual licence arises wherever a person is given permission to be on or use land under a contract supported by consideration. A bare licence is a mere permission to be on land, revocable at will without any contractual basis. The contractual element means that, unlike a bare licence, revocation in breach of the contractual terms may give rise to a claim in contract."
+    },
+    {
+      "id": "PRL_M08_L02_Q02",
+      "question": "What was the general common law position on the revocability of licences as established in Wood v Leadbitter?",
+      "options": {
+        "A": "A contractual licence was irrevocable for the duration of the contract",
+        "B": "A licence, even a contractual one, was revocable without more at common law",
+        "C": "Only licences coupled with an interest were revocable",
+        "D": "A licence became irrevocable once the licensee had entered upon the land"
+      },
+      "correct_answer": "B",
+      "explanation": "In Wood v Leadbitter, the common law position was that a licence — even a contractual one — was revocable without more. Equity moved substantially beyond this position by developing the principle that where a contractual licence has been partly performed, equity may intervene to prevent revocation in breach of contract and may grant an injunction to restrain revocation."
+    },
+    {
+      "id": "PRL_M08_L02_Q03",
+      "question": "In Errington v Errington and Woods [1952], what principle did Lord Denning MR establish regarding contractual licences?",
+      "options": {
+        "A": "All contractual licences automatically create equitable interests in land that bind third parties",
+        "B": "Where a contractual licence has been partly performed, equity will not permit the licensor to revoke it in breach of contract and may grant an injunction to restrain revocation",
+        "C": "A contractual licence is irrevocable under all circumstances once consideration has been paid",
+        "D": "A contractual licence creates a tenancy at will which cannot be terminated without notice"
+      },
+      "correct_answer": "B",
+      "explanation": "In Errington v Errington and Woods [1952], Lord Denning MR held that where a contractual licence has been partly performed, equity will not permit the licensor to revoke it in breach of contract and may grant an injunction to restrain revocation. The licensee's reliance on the promise justifies equitable intervention. However, later cases criticised Errington for going too far in treating contractual licences as interests in land."
+    },
+    {
+      "id": "PRL_M08_L02_Q04",
+      "question": "In Ashburn Anstalt v Arnold [1989], how did the English Court of Appeal qualify the approach in Errington v Errington and Woods [1952]?",
+      "options": {
+        "A": "The court held that all contractual licences create proprietary interests and bind successors in title",
+        "B": "The court held that contractual licences operate primarily in contract and do not ordinarily bind successors in title",
+        "C": "The court held that contractual licences are void for uncertainty unless they specify a fixed duration",
+        "D": "The court held that contractual licences are equivalent to leases for all purposes"
+      },
+      "correct_answer": "B",
+      "explanation": "In Ashburn Anstalt v Arnold [1989], the English Court of Appeal retreated from the broad proposition in Errington that contractual licences create interests in land, holding instead that they operate primarily in contract and do not ordinarily bind successors in title. This qualification is important: a contractual licence is a personal right enforceable against the licensor, not a proprietary right binding on the world."
+    },
+    {
+      "id": "PRL_M08_L02_Q05",
+      "question": "In Somers v Weir [1979], what did the Irish Supreme Court hold about the proprietary character of contractual licences?",
+      "options": {
+        "A": "Contractual licences constitute equitable interests in land and bind third parties with notice",
+        "B": "Contractual licences do not constitute equitable interests in land and do not bind third parties even with notice",
+        "C": "Contractual licences bind third parties if registered as a burden on the folio",
+        "D": "Contractual licences are equivalent to life estates and bind all successors in title"
+      },
+      "correct_answer": "B",
+      "explanation": "In Somers v Weir [1979], the Irish Supreme Court declined to hold that a bare contractual licence amounted to an equitable interest in land capable of binding third parties, even with notice. This is the controlling Irish authority: contractual licences do not, as such, constitute equitable interests in land. They are creatures of contract, not property. Third-party binding requires a constructive trust or proprietary estoppel."
+    },
+    {
+      "id": "PRL_M08_L02_Q06",
+      "question": "Following Somers v Weir [1979], by what mechanism can a contractual licence potentially bind a third party purchaser in Irish law?",
+      "options": {
+        "A": "By registration of the licence as a burden on the Land Registry folio",
+        "B": "Through a constructive trust or proprietary estoppel arising from the circumstances of the licence",
+        "C": "By the operation of section 72 of the Registration of Title Act 1964 as an overriding interest",
+        "D": "By serving notice of the licence on the proposed purchaser before completion"
+      },
+      "correct_answer": "B",
+      "explanation": "Following Somers v Weir [1979], the only mechanism by which a contractual licence can bind a third party purchaser in Irish law is where the circumstances give rise to a constructive trust or proprietary estoppel. The constructive trust or estoppel is the vehicle — not the licence itself. The licence, as a mere contractual right, is personal and does not run with the land."
+    },
+    {
+      "id": "PRL_M08_L02_Q07",
+      "question": "In Binions v Evans [1972], on what basis did Lord Denning MR hold that a purchaser was bound by the widow's licence?",
+      "options": {
+        "A": "The widow's licence was registered as a burden on the title and constituted an overriding interest",
+        "B": "The purchaser took the land expressly subject to the widow's rights at a reduced price, which gave rise to a constructive trust",
+        "C": "The widow had been in actual occupation of the property for more than twelve years",
+        "D": "The widow had a proprietary estoppel arising from the original landowner's promise"
+      },
+      "correct_answer": "B",
+      "explanation": "In Binions v Evans [1972], Lord Denning MR held that the purchaser was bound because he had bought the land expressly subject to the widow's rights and at a reduced price reflecting those rights. This express notice combined with reduced purchase price gave rise to a constructive trust in favour of the widow. The constructive trust — not the licence itself — was the basis for binding the purchaser. This is consistent with the Irish approach following Somers v Weir."
+    },
+    {
+      "id": "PRL_M08_L02_Q08",
+      "question": "Why is a contractual licence not registrable as a burden under the Registration of Title Act 1964?",
+      "options": {
+        "A": "Because licences are void unless created by deed",
+        "B": "Because a contractual licence is not an interest in land in Irish law and therefore cannot be registered",
+        "C": "Because the Registration of Title Act 1964 only applies to freeholds, not to licences",
+        "D": "Because licences are automatically overriding interests and do not need registration"
+      },
+      "correct_answer": "B",
+      "explanation": "Because a contractual licence is not an interest in land in Irish law — as confirmed by the Supreme Court in Somers v Weir [1979] — it cannot be registered as a burden on the Land Registry folio. This creates significant risk for the licensee: if the licensor sells the land to a bona fide purchaser for value without notice, that purchaser takes free of the licence and the licensee's only remedy is in damages against the original licensor."
+    },
+    {
+      "id": "PRL_M08_L02_Q09",
+      "question": "What practical remedy does a licensee have if the licensor revokes the contractual licence in breach of contract?",
+      "options": {
+        "A": "A right to remain in possession indefinitely as against the licensor",
+        "B": "A damages claim against the licensor for breach of contract, and possibly an injunction to restrain revocation",
+        "C": "A right to register a caution against the licensor's title",
+        "D": "A right to acquire the freehold under the Landlord and Tenant Acts"
+      },
+      "correct_answer": "B",
+      "explanation": "If a contractual licence is revoked in breach of contract, the licensee's remedy is a claim for damages against the licensor for breach of contract. Equity may also grant an injunction to restrain revocation where the licence has been partly performed and the licensor would be acting unconscionably. However, this is an in personam remedy — it operates against the licensor, not against a third party purchaser without notice."
+    },
+    {
+      "id": "PRL_M08_L02_Q10",
+      "question": "What is the position of a bona fide purchaser for value without notice who acquires land subject to a contractual licence?",
+      "options": {
+        "A": "The purchaser is bound by the contractual licence if they have constructive notice of the licensee's occupation",
+        "B": "The purchaser takes free of the contractual licence, and the licensee's only remedy is against the original licensor",
+        "C": "The purchaser must honour the contractual licence as a matter of law regardless of notice",
+        "D": "The purchaser must compensate the licensee for the value of the licence before taking possession"
+      },
+      "correct_answer": "B",
+      "explanation": "Because a contractual licence is not an interest in land in Irish law following Somers v Weir [1979], a bona fide purchaser for value without notice takes free of the licence. The licensee's only remedy is in damages against the original licensor for breach of contract. This creates a significant vulnerability for licensees who have organised their lives around informal arrangements — which is why the constructive trust and proprietary estoppel doctrines are so important in practice."
+    }
+  ]
+}

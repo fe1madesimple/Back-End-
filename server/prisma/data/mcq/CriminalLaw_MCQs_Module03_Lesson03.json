@@ -1,0 +1,151 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module03_Lesson03.txt",
+  "module_number": 3,
+  "module_title": "Mens Rea",
+  "lesson_number": 3,
+  "lesson_title": "Burglary: The Dual-Intent Structure",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M03_L03_Q01",
+      "question": "Under which provision of Irish statute law is burglary created as a criminal offence?",
+      "options": {
+        "A": "Section 4 of the Criminal Justice (Theft and Fraud Offences) Act 2001",
+        "B": "Section 12 of the Criminal Justice (Theft and Fraud Offences) Act 2001",
+        "C": "Section 14 of the Criminal Justice (Theft and Fraud Offences) Act 2001",
+        "D": "Section 2 of the Criminal Law (Jurisdiction) Act 1976"
+      },
+      "correct_answer": "B",
+      "explanation": "Burglary is created by Section 12 of the Criminal Justice (Theft and Fraud Offences) Act 2001. Section 4 defines theft, Section 14 covers robbery, and the 1976 Act is a different statute entirely.",
+      "difficulty": "easy",
+      "topic_tag": "legislation"
+    },
+    {
+      "id": "CL_M03_L03_Q02",
+      "question": "Section 12(1)(a) of the Criminal Justice (Theft and Fraud Offences) Act 2001 (Form One burglary) is made out where a person:",
+      "options": {
+        "A": "Enters a building as a trespasser and, once inside, steals or attempts to steal anything in the building",
+        "B": "Enters a building as a trespasser with intent, at the time of entry, to steal, cause grievous bodily harm, or cause criminal damage inside",
+        "C": "Enters any premises intending to commit any criminal offence",
+        "D": "Trespasses on property and causes damage in the course of the trespass"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 12(1)(a) — Form One burglary — requires entry as a trespasser with a specific intent at the time of entry to commit one of three named offences inside: stealing, causing grievous bodily harm, or causing criminal damage. The intent must exist at the point of entry. Section 12(1)(b) covers the situation where entry as a trespasser is followed by commission of a specified act.",
+      "difficulty": "medium",
+      "topic_tag": "legislation"
+    },
+    {
+      "id": "CL_M03_L03_Q03",
+      "question": "Claire enters a shop as a legitimate customer. After entering, she impulsively decides to steal a necklace and conceals it in her bag. Which offence, if any, has Claire committed?",
+      "options": {
+        "A": "Burglary under Section 12(1)(a), as she stole from the building",
+        "B": "Burglary under Section 12(1)(b), as she entered as a trespasser and then stole",
+        "C": "Theft only — she did not enter as a trespasser, so neither form of burglary applies",
+        "D": "No offence — she had permission to be in the shop and formed no prior intent"
+      },
+      "correct_answer": "C",
+      "explanation": "Both forms of burglary under Section 12 require entry 'as a trespasser.' Claire entered as a legitimate customer with the shopkeeper's permission, so she was not a trespasser. Section 12(1)(a) is inapplicable because she had no intent to steal at the time of entry. Section 12(1)(b) is inapplicable because she did not enter as a trespasser. She is guilty of theft under Section 4, but not burglary.",
+      "difficulty": "medium",
+      "topic_tag": "application"
+    },
+    {
+      "id": "CL_M03_L03_Q04",
+      "question": "Section 12(1)(b) of the Criminal Justice (Theft and Fraud Offences) Act 2001 (Form Two burglary) differs from Section 12(1)(a) in which fundamental respect?",
+      "options": {
+        "A": "Form Two requires a specific intent to steal at the time of entry; Form One does not",
+        "B": "Form Two does not require a specific intent at the time of entry — it is satisfied where the accused, having entered as a trespasser, actually steals, attempts to steal, inflicts, or attempts to inflict grievous bodily harm inside",
+        "C": "Form Two applies only to commercial premises; Form One applies to domestic dwellings",
+        "D": "Form Two carries a higher maximum sentence than Form One"
+      },
+      "correct_answer": "B",
+      "explanation": "The key structural distinction is the mental element at entry. Form One (s.12(1)(a)) requires specific intent to commit a named offence at the time of entry. Form Two (s.12(1)(b)) requires no such prior intent at entry — it is satisfied where the accused entered as a trespasser and then actually stole, attempted to steal, or inflicted/attempted to inflict grievous bodily harm. Both forms carry the same maximum penalty.",
+      "difficulty": "medium",
+      "topic_tag": "distinction"
+    },
+    {
+      "id": "CL_M03_L03_Q05",
+      "question": "R v Jones and Smith [1976] is relevant to burglary because it established which principle?",
+      "options": {
+        "A": "That partial entry of the body is sufficient to constitute entry for the purposes of burglary",
+        "B": "That a person can enter 'as a trespasser' even where they have some general permission to enter, if they enter for a purpose that exceeds or is inconsistent with the permission given",
+        "C": "That the intent to steal must be formed before arriving at the building, not merely before entry",
+        "D": "That aggravated burglary requires proof that the weapon was used as well as carried"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Jones and Smith [1976] established that a person may enter as a trespasser even where they have a general licence to enter, if they enter for a purpose that exceeds or is inconsistent with that permission. In the case, a son who had general permission to visit his father's house entered with an intent to steal, and the court held he had entered as a trespasser. Irish courts have endorsed this approach.",
+      "difficulty": "medium",
+      "topic_tag": "case law"
+    },
+    {
+      "id": "CL_M03_L03_Q06",
+      "question": "Tom breaks into a house at night intending to steal cash. He finds only a laptop, which he also takes. He has not caused any physical harm to any person. Which form of burglary has Tom committed?",
+      "options": {
+        "A": "Section 12(1)(a) only — he had the intent to steal at the time of entry",
+        "B": "Section 12(1)(b) only — as he actually stole once inside",
+        "C": "Both Section 12(1)(a) and Section 12(1)(b) — he had the intent to steal at entry AND he actually stole inside",
+        "D": "Neither — burglary requires proof that the accused caused harm to a person inside the building"
+      },
+      "correct_answer": "C",
+      "explanation": "Tom satisfies both forms. He entered as a trespasser with intent to steal at the time of entry (s.12(1)(a)) and, having entered as a trespasser, he actually stole (s.12(1)(b)). In practice, the prosecution would typically charge the most serious available form, but both are technically made out on these facts. Burglary does not require harm to a person.",
+      "difficulty": "hard",
+      "topic_tag": "application"
+    },
+    {
+      "id": "CL_M03_L03_Q07",
+      "question": "What is the maximum penalty for burglary under Section 12 of the Criminal Justice (Theft and Fraud Offences) Act 2001?",
+      "options": {
+        "A": "Seven years' imprisonment",
+        "B": "Ten years' imprisonment",
+        "C": "Fourteen years' imprisonment",
+        "D": "Life imprisonment"
+      },
+      "correct_answer": "C",
+      "explanation": "The maximum penalty for burglary under Section 12 is fourteen years' imprisonment on indictment. This is distinct from aggravated burglary under Section 13, which carries a maximum of life imprisonment.",
+      "difficulty": "easy",
+      "topic_tag": "penalty"
+    },
+    {
+      "id": "CL_M03_L03_Q08",
+      "question": "What distinguishes aggravated burglary under Section 13 from burglary under Section 12 of the Criminal Justice (Theft and Fraud Offences) Act 2001?",
+      "options": {
+        "A": "Aggravated burglary requires that the accused caused grievous bodily harm during the burglary",
+        "B": "Aggravated burglary requires that the accused had with them a firearm, imitation firearm, weapon of offence, or explosive at the time of the burglary",
+        "C": "Aggravated burglary applies only where the building is a domestic dwelling occupied at the time",
+        "D": "Aggravated burglary requires that the accused was part of an organised criminal gang"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 13 creates aggravated burglary where the accused, at the time of committing burglary, has with them any firearm, imitation firearm, weapon of offence, or explosive. The item need not be used — mere possession of the weapon during the burglary is sufficient. The maximum penalty for aggravated burglary is life imprisonment, compared to fourteen years for basic burglary under Section 12.",
+      "difficulty": "medium",
+      "topic_tag": "legislation"
+    },
+    {
+      "id": "CL_M03_L03_Q09",
+      "question": "The mens rea analysis for Form One burglary under Section 12(1)(a) involves a dual mental element. Which statement correctly identifies both components?",
+      "options": {
+        "A": "The accused must have known or been reckless as to the fact of trespass, AND must have intended at the time of entry to commit one of the named offences inside",
+        "B": "The accused must have intended to trespass, AND must have been reckless as to whether a specified offence would be committed inside",
+        "C": "The accused must have known they were trespassing AND must have been negligent as to the risk of committing an offence inside",
+        "D": "The offence is one of strict liability once trespass and the actus reus of an inside offence are proven"
+      },
+      "correct_answer": "A",
+      "explanation": "For Form One burglary, the dual mental element is: (1) knowledge or recklessness as to the trespass — the accused must know they are entering without permission, or be reckless as to that fact; and (2) a specific intent, at the time of entry, to commit one of the named offences inside (stealing, GBH, or criminal damage). Both elements must be present and the intent must exist at the moment of entry.",
+      "difficulty": "hard",
+      "topic_tag": "mens rea"
+    },
+    {
+      "id": "CL_M03_L03_Q10",
+      "question": "Which of the following scenarios is most likely to constitute burglary under Section 12(1)(b) but NOT under Section 12(1)(a)?",
+      "options": {
+        "A": "A person breaks into a house at night intending to steal from the outset",
+        "B": "A person who had been invited to dinner at a friend's house enters the premises but, once inside, steals a watch from the bedroom while the host is distracted",
+        "C": "A person climbs in through a window with a crowbar intending to cause criminal damage",
+        "D": "A person threatens a homeowner at the doorstep and forces entry with intent to steal"
+      },
+      "correct_answer": "B",
+      "explanation": "In this scenario, the person initially entered with permission (as a dinner guest) and therefore not as a trespasser, excluding Section 12(1)(a). However, by going into the bedroom without permission to steal — exceeding the scope of their permission — they may be treated as a trespasser in that part of the building, and they have actually stolen. Section 12(1)(b) covers entry as a trespasser followed by actual theft, which may be satisfied here. Scenarios A, C, and D all involve intent at the time of entry, making them Section 12(1)(a) cases.",
+      "difficulty": "hard",
+      "topic_tag": "application"
+    }
+  ]
+}

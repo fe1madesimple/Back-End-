@@ -1,0 +1,151 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module03_Lesson02.txt",
+  "module_number": 3,
+  "module_title": "Mens Rea",
+  "lesson_number": 2,
+  "lesson_title": "Robbery: Mens Rea in Action",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M03_L02_Q01",
+      "question": "Under which provision of Irish statute law is robbery created as a criminal offence?",
+      "options": {
+        "A": "Section 4 of the Criminal Justice (Theft and Fraud Offences) Act 2001",
+        "B": "Section 12 of the Criminal Justice (Theft and Fraud Offences) Act 2001",
+        "C": "Section 14 of the Criminal Justice (Theft and Fraud Offences) Act 2001",
+        "D": "Section 17 of the Criminal Justice (Theft and Fraud Offences) Act 2001"
+      },
+      "correct_answer": "C",
+      "explanation": "Robbery is created by Section 14 of the Criminal Justice (Theft and Fraud Offences) Act 2001. Section 4 defines theft, Section 12 covers burglary, and Section 17 covers extortion/demands with menaces.",
+      "difficulty": "easy",
+      "topic_tag": "legislation"
+    },
+    {
+      "id": "CL_M03_L02_Q02",
+      "question": "Section 14 of the Criminal Justice (Theft and Fraud Offences) Act 2001 requires that force or the threat of force be used at a specific time in relation to the theft. Which of the following correctly states that timing requirement?",
+      "options": {
+        "A": "At any time during the day on which the theft takes place",
+        "B": "Immediately before or at the time of stealing, and in order to steal",
+        "C": "Immediately after the theft in order to facilitate escape",
+        "D": "At the time of planning the theft, even if no force is ultimately used"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 14 requires that the force or threat of force be used 'immediately before or at the time of stealing, and in order to steal.' Force used only after the theft is complete does not convert theft into robbery, though courts have interpreted when the theft is 'complete' generously in cases involving flight from the scene.",
+      "difficulty": "medium",
+      "topic_tag": "actus reus"
+    },
+    {
+      "id": "CL_M03_L02_Q03",
+      "question": "What is the maximum penalty for robbery under Section 14 of the Criminal Justice (Theft and Fraud Offences) Act 2001?",
+      "options": {
+        "A": "Ten years' imprisonment",
+        "B": "Fourteen years' imprisonment",
+        "C": "Life imprisonment",
+        "D": "Twenty years' imprisonment"
+      },
+      "correct_answer": "C",
+      "explanation": "Robbery under Section 14 carries a maximum penalty of life imprisonment. This reflects the serious combination of the theft element with the use of violence or threats against a person.",
+      "difficulty": "easy",
+      "topic_tag": "penalty"
+    },
+    {
+      "id": "CL_M03_L02_Q04",
+      "question": "Mark grabs Emma's handbag from her shoulder, using sufficient force to knock her off balance. He runs away with the bag. Which of the following most accurately describes the legal position?",
+      "options": {
+        "A": "Mark has committed theft only, as handbag snatching does not involve force against a person",
+        "B": "Mark has committed robbery, as he used force against Emma in order to steal, immediately at the time of stealing",
+        "C": "Mark cannot be charged with robbery unless Emma suffered a physical injury",
+        "D": "Mark has committed assault only, as the primary act was the physical contact with Emma"
+      },
+      "correct_answer": "B",
+      "explanation": "Robbery under Section 14 requires force used on a person immediately at the time of stealing and in order to steal. Knocking Emma off balance while taking her bag constitutes force on her person. The force and the theft are simultaneous, satisfying the timing requirement. Physical injury to the victim is not required for robbery.",
+      "difficulty": "medium",
+      "topic_tag": "application"
+    },
+    {
+      "id": "CL_M03_L02_Q05",
+      "question": "Robbery under Section 14 is described as a 'composite offence' because it combines two distinct elements, each with its own mental element. Which statement correctly identifies the dual mens rea requirement for robbery?",
+      "options": {
+        "A": "The accused must intend to steal (specific intent) AND intend or be reckless as to the use of force",
+        "B": "The accused must be reckless as to both the theft and the use of force",
+        "C": "The accused must intend both the theft and the use of force — recklessness is insufficient for both elements",
+        "D": "The offence is one of strict liability as to the force element once the theft intent is proven"
+      },
+      "correct_answer": "A",
+      "explanation": "Robbery has a dual mental element. The theft element requires specific intention to steal — the dishonest appropriation with intent to permanently deprive. Recklessness does not suffice for the theft limb. However, for the force element, the accused need only intend to use force or be reckless as to whether force is used. This asymmetry in the mental elements is a key FE-1 testing point.",
+      "difficulty": "hard",
+      "topic_tag": "mens rea"
+    },
+    {
+      "id": "CL_M03_L02_Q06",
+      "question": "Niamh honestly but mistakenly believes that the jacket she takes from Owen belongs to her. She pushes Owen to the ground to take it. Can Niamh be convicted of robbery?",
+      "options": {
+        "A": "Yes — she used force and took property from Owen, which satisfies both elements of robbery",
+        "B": "Yes — her mistaken belief is irrelevant as robbery is a strict liability offence",
+        "C": "No — because she lacks the intention to steal. Without the foundational theft element, robbery cannot be made out",
+        "D": "No — because she had a colour of right to the property, which is a complete defence to all criminal charges"
+      },
+      "correct_answer": "C",
+      "explanation": "Robbery requires a theft as its foundation. Theft under Section 4 of the 2001 Act requires dishonest appropriation. A person who honestly (even mistakenly) believes the property is theirs lacks the dishonest intent required for theft. Without theft, there is no robbery under Section 14. Niamh may be liable for assault, but not robbery.",
+      "difficulty": "hard",
+      "topic_tag": "mens rea"
+    },
+    {
+      "id": "CL_M03_L02_Q07",
+      "question": "AG v Ryan is the key Irish authority cited in the context of robbery under Section 14. For which proposition is the case principally cited?",
+      "options": {
+        "A": "That the force used in robbery must cause actual bodily harm to the victim",
+        "B": "That both the theft and the force must coexist, and the force must be used in order to steal — force used for a separate reason does not satisfy Section 14 even if a theft also occurs",
+        "C": "That robbery and aggravated robbery are mutually exclusive charges",
+        "D": "That a threat of future force is sufficient to satisfy the force requirement of robbery"
+      },
+      "correct_answer": "B",
+      "explanation": "AG v Ryan confirmed that for robbery under Section 14, both elements — theft and force — must coexist and the force must be used 'in order to steal.' If force is used for a separate purpose and a theft also happens to occur, Section 14 may not be satisfied. The nexus between the force and the theft is essential.",
+      "difficulty": "medium",
+      "topic_tag": "case law"
+    },
+    {
+      "id": "CL_M03_L02_Q08",
+      "question": "Ben steals a wallet from a shop counter while the shopkeeper is distracted. As he is leaving the shop, the shopkeeper notices and grabs Ben's arm. Ben pushes the shopkeeper away and runs. Is Ben guilty of robbery?",
+      "options": {
+        "A": "No — the theft was complete when Ben took the wallet, so the force came after the theft and cannot satisfy Section 14",
+        "B": "Yes — the force was used immediately after the theft and in order to retain the stolen property, which satisfies the Section 14 requirement on a broad reading of when the theft is complete",
+        "C": "No — pushing someone away in self-defence cannot constitute the force element of robbery",
+        "D": "Yes — but only if the shopkeeper suffered an injury as a result of the push"
+      },
+      "correct_answer": "B",
+      "explanation": "This scenario raises the question of when the theft is 'complete.' Courts have taken a generous approach: where force is used while the accused is still on the scene, still in possession of the property, and still in the course of the taking, the theft may be treated as ongoing and the Section 14 timing requirement satisfied. Ben is likely guilty of robbery on these facts.",
+      "difficulty": "hard",
+      "topic_tag": "application"
+    },
+    {
+      "id": "CL_M03_L02_Q09",
+      "question": "How does extortion under Section 17 of the Criminal Justice (Theft and Fraud Offences) Act 2001 differ from robbery under Section 14?",
+      "options": {
+        "A": "Extortion involves threats of future harm to coerce compliance; robbery involves force or threats of immediate force at the time of stealing",
+        "B": "Extortion requires a written demand; robbery can involve verbal threats",
+        "C": "Extortion only applies to property worth more than €1,000; robbery has no minimum value threshold",
+        "D": "Extortion requires proof of mens rea; robbery is a strict liability offence"
+      },
+      "correct_answer": "A",
+      "explanation": "The key distinction is temporal and structural. Robbery under Section 14 involves force or the threat of immediate force ('then and there') at the time of stealing. Extortion involves unwarranted demands backed by threats of future harm — it is a coercive instrument over time, not an immediate act of violence. Both are serious offences but arise on different factual patterns.",
+      "difficulty": "medium",
+      "topic_tag": "distinction"
+    },
+    {
+      "id": "CL_M03_L02_Q10",
+      "question": "Which of the following best explains why robbery is studied within the Mens Rea module rather than simply as a standalone property offence?",
+      "options": {
+        "A": "Because robbery does not involve a physical act and is therefore purely a mental element offence",
+        "B": "Because robbery has two distinct mental elements operating at different thresholds — specific intent for the theft limb and intent or recklessness for the force limb — making it an applied illustration of how mens rea operates in practice",
+        "C": "Because the mens rea for robbery is strict liability, making it an exception to the general principle that mental fault is required",
+        "D": "Because robbery is unique in that its mens rea requirement can be inferred from the actus reus without separate proof"
+      },
+      "correct_answer": "B",
+      "explanation": "Robbery is studied in the mens rea module because it demonstrates in practical terms how different levels of mental fault — specific intent and recklessness — operate within a single offence. The theft limb demands specific intention; the force limb tolerates recklessness. Analysing this asymmetry requires a firm command of the mens rea concepts introduced in Lesson 3.1.",
+      "difficulty": "medium",
+      "topic_tag": "conceptual"
+    }
+  ]
+}

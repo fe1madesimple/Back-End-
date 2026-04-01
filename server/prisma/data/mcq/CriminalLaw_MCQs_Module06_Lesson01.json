@@ -1,0 +1,138 @@
+{
+  "subject": "Criminal Law",
+  "module": 6,
+  "lesson": 1,
+  "title": "Rape: Definition, Honest Belief Abolished, and Consent",
+  "questions": [
+    {
+      "id": "CL_M06_L01_Q01",
+      "question": "Under Section 2(1) of the Criminal Law (Rape) Act 1981, which of the following best describes the mens rea required for rape?",
+      "options": {
+        "A": "The accused must have intended to cause harm to the complainant.",
+        "B": "The accused must have known the complainant did not consent, or been reckless as to whether she consented.",
+        "C": "The accused must have known the complainant did not consent.",
+        "D": "The accused must have acted with gross negligence as to consent."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 2(1) of the Criminal Law (Rape) Act 1981 provides that the mens rea is either actual knowledge that the complainant did not consent, or recklessness as to whether she consented. Both limbs satisfy the mens rea — negligence alone is not sufficient.",
+      "legislation": "Criminal Law (Rape) Act 1981, s.2(1)"
+    },
+    {
+      "id": "CL_M06_L01_Q02",
+      "question": "The Criminal Law (Sexual Offences and Human Trafficking) Act 2024, which came into force on 31 August 2024, made which of the following changes to the law of rape in Ireland?",
+      "options": {
+        "A": "It extended rape to cover oral penetration for the first time.",
+        "B": "It abolished the honest but unreasonable belief defence and replaced it with a reasonable belief standard.",
+        "C": "It abolished the marital exemption in rape cases.",
+        "D": "It introduced a statutory definition of consent for the first time."
+      },
+      "correct_answer": "B",
+      "explanation": "The 2024 Act abolished the honest belief defence previously found in s.2(2) of the 1981 Act. An accused can no longer rely on a belief in consent that was honest but unreasonable. The new standard requires that the belief in consent have been objectively reasonable. The marital exemption had been abolished earlier by s.5 of the 1990 Act; oral penetration had been covered by s.4 of the 1990 Act; and the statutory consent definition was introduced by the 2017 Act.",
+      "legislation": "Criminal Law (Sexual Offences and Human Trafficking) Act 2024"
+    },
+    {
+      "id": "CL_M06_L01_Q03",
+      "question": "Prior to the 2024 Act, which case confirmed that an honest but unreasonable belief in consent was a defence to rape in Ireland?",
+      "options": {
+        "A": "People (DPP) v MC [2018]",
+        "B": "DPP v TS [2019]",
+        "C": "DPP v C O'R [2016]",
+        "D": "R v Olugboja [1982]"
+      },
+      "correct_answer": "C",
+      "explanation": "In DPP v C O'R [2016], Charleton J in the Irish Court of Appeal confirmed that where the accused genuinely, albeit unreasonably, believed the woman was consenting, he had to be acquitted. That subjective test has since been abolished by the 2024 Act.",
+      "legislation": "Criminal Law (Rape) Act 1981, s.2(2) (as it stood pre-2024)"
+    },
+    {
+      "id": "CL_M06_L01_Q04",
+      "question": "The principle in Kaitamaki v R holds that:",
+      "options": {
+        "A": "Only the penetration itself, not the continuation of intercourse, can constitute the actus reus of rape.",
+        "B": "Intercourse is a continuing act and rape is committed if the man continues after consent is withdrawn.",
+        "C": "Once initial consent is given it cannot be withdrawn during the act of intercourse.",
+        "D": "Ejaculation is required to establish the actus reus of rape."
+      },
+      "correct_answer": "B",
+      "explanation": "Kaitamaki v R established the continuing act principle — intercourse is an ongoing act, and if consent is withdrawn at any stage and the man continues, he commits rape from the moment consent was revoked. Ejaculation is not required, and consent can always be withdrawn.",
+      "cases": "Kaitamaki v R"
+    },
+    {
+      "id": "CL_M06_L01_Q05",
+      "question": "Under Section 9 of the Criminal Law (Rape) (Amendment) Act 1990 (as inserted by the Criminal Law (Sexual Offences) Act 2017), which of the following best defines consent?",
+      "options": {
+        "A": "The absence of resistance by the complainant.",
+        "B": "Freely and voluntarily given agreement, communicated through words or conduct.",
+        "C": "The complainant's failure to communicate refusal.",
+        "D": "The complainant's acquiescence to the act."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 9 defines consent as freely and voluntarily given agreement communicated through words or conduct. Silence, passivity, and submission are not consent. The definition is positive and active — the complainant must affirmatively communicate agreement.",
+      "legislation": "Criminal Law (Sexual Offences) Act 2017, s.48 (inserting s.9 into the 1990 Act)"
+    },
+    {
+      "id": "CL_M06_L01_Q06",
+      "question": "In DPP v Sherlock [2018], a rape conviction was upheld where the accused removed a condom during intercourse without the complainant's knowledge. What legal principle does this illustrate?",
+      "options": {
+        "A": "Fraud as to health vitiates consent.",
+        "B": "Consent given subject to a condition is vitiated if that condition is not observed.",
+        "C": "Consent to one sexual act implies consent to all related acts.",
+        "D": "Deception as to identity vitiates consent."
+      },
+      "correct_answer": "B",
+      "explanation": "DPP v Sherlock illustrates that where consent is conditional — in this case, on the use of a condom — secretly departing from that condition vitiates consent from the moment the condition was breached. This is sometimes called stealthing. The act became non-consensual and constituted rape.",
+      "cases": "DPP v Sherlock [2018]"
+    },
+    {
+      "id": "CL_M06_L01_Q07",
+      "question": "In DPP v TS [2019], the Irish Court of Appeal held that marital rape is:",
+      "options": {
+        "A": "A lesser form of rape carrying a reduced penalty.",
+        "B": "No longer a criminal offence following the 1990 Act.",
+        "C": "An aggravated form of rape, because it involves a breach of trust inherent in the marital relationship.",
+        "D": "Treated identically to rape between strangers with no distinction in sentencing."
+      },
+      "correct_answer": "C",
+      "explanation": "In DPP v TS [2019], the Court of Appeal held that marital rape is an aggravated form of rape because of the betrayal of the trust and intimacy of the marriage relationship. The fact of marriage is an aggravating, not a mitigating, factor in sentencing.",
+      "cases": "DPP v TS [2019]"
+    },
+    {
+      "id": "CL_M06_L01_Q08",
+      "question": "Which of the following scenarios does NOT vitiate consent for the purposes of rape under Irish law?",
+      "options": {
+        "A": "The complainant was unconscious at the time of the act.",
+        "B": "The accused deceived the complainant as to his gender identity.",
+        "C": "The accused failed to disclose that he was HIV positive.",
+        "D": "The complainant submitted out of fear of immediate violence."
+      },
+      "correct_answer": "C",
+      "explanation": "Fraud as to health — such as failing to disclose HIV status — does not vitiate consent for the purposes of rape under Irish law, as confirmed in DPP v RK [2023] IESC 36. The accused may face liability for causing harm, but the consent to the sexual act is not negated. All other options in this question vitiate consent.",
+      "cases": "DPP v RK [2023] IESC 36"
+    },
+    {
+      "id": "CL_M06_L01_Q09",
+      "question": "The distinction between consent and submission was drawn in which case, and subsequently adopted in Ireland?",
+      "options": {
+        "A": "R v Morgan [1976]",
+        "B": "R v Olugboja [1982], adopted in DPP v MC",
+        "C": "AG v Dermody",
+        "D": "R v McNally [2013]"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Olugboja [1982] established the distinction: every consent involves a submission, but a mere submission does not involve consent. This principle was adopted in Ireland in DPP v MC. R v Morgan concerned the honest belief defence; AG v Dermody concerned the degree of penetration required.",
+      "cases": "R v Olugboja [1982]; DPP v MC [2018]"
+    },
+    {
+      "id": "CL_M06_L01_Q10",
+      "question": "Under the law as it stands following the 2024 Act, an accused charged with rape claims he believed the complainant was consenting. Which test now applies to that belief?",
+      "options": {
+        "A": "Subjective — the belief need only have been honest.",
+        "B": "Objective — the belief must have been held by a reasonable person in the same circumstances.",
+        "C": "A hybrid test — honest belief is sufficient if the accused took reasonable steps to ascertain consent.",
+        "D": "The belief is irrelevant; only the complainant's state of mind matters."
+      },
+      "correct_answer": "B",
+      "explanation": "Following the Criminal Law (Sexual Offences and Human Trafficking) Act 2024, the honest belief defence has been abolished. The test is now objective: the accused's belief in consent must have been reasonable in the circumstances. A genuine but unreasonable belief is no longer a defence.",
+      "legislation": "Criminal Law (Sexual Offences and Human Trafficking) Act 2024"
+    }
+  ]
+}

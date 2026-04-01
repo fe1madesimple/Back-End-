@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module04_Lesson02.txt",
+  "module_number": 4,
+  "module_title": "Causation",
+  "lesson_number": 2,
+  "lesson_title": "Novus Actus Interveniens",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M04_L02_Q01",
+      "question": "What does the Latin phrase 'novus actus interveniens' mean, and what is its legal effect?",
+      "options": {
+        "A": "New negligent act — it doubles the defendant's liability as a concurrent wrongdoer",
+        "B": "New intervening act — if established, it breaks the chain of causation between the defendant's breach and the plaintiff's damage, relieving the defendant of liability for that damage",
+        "C": "New contributory act — it reduces the plaintiff's damages under the Civil Liability Act 1961",
+        "D": "New judicial intervention — it refers to the court's power to modify an award of damages"
+      },
+      "correct_answer": "B",
+      "explanation": "Novus actus interveniens means a new intervening act. If a novus actus is established, it breaks the chain of causation between the defendant's breach of duty and the plaintiff's damage. The defendant is thereby relieved of liability for damage caused by the intervening act, because their negligence is no longer treated as the legal cause of that loss. The new act — whether by a third party, the plaintiff themselves, or a natural event — becomes the effective cause."
+    },
+    {
+      "id": "TL_M04_L02_Q02",
+      "question": "What is the key question a court must ask when determining whether an intervening act constitutes a novus actus interveniens?",
+      "options": {
+        "A": "Was the intervening act caused by the defendant's negligence, directly or indirectly?",
+        "B": "Was the intervening act sufficiently independent and unforeseeable to break the chain of causation?",
+        "C": "Was the intervening act carried out by a person with legal capacity?",
+        "D": "Was the intervening act reported to the defendant before the damage occurred?"
+      },
+      "correct_answer": "B",
+      "explanation": "The key question is whether the intervening act was sufficiently independent and unforeseeable to break the causal chain. If the intervening act was foreseeable — if the defendant's negligence created the very risk that the intervening act would materialise — it does not break the chain. It is only where the intervening act was independent, unexpected, and not a foreseeable consequence of the original breach that it relieves the defendant of liability."
+    },
+    {
+      "id": "TL_M04_L02_Q03",
+      "question": "In McKew v Holland, Hannen and Cubitts [1969], the plaintiff was initially injured by the defendant's negligence but later fell down a steep staircase without assistance, causing further injury. What did the House of Lords hold?",
+      "options": {
+        "A": "The defendant remained liable for all the plaintiff's injuries because the first negligent act was an operative cause throughout",
+        "B": "The plaintiff's own unreasonable act in descending a steep staircase without assistance broke the chain of causation",
+        "C": "The plaintiff's further fall was a foreseeable consequence of the original injury and the chain was not broken",
+        "D": "The defendant was liable for the original injury but contributory negligence reduced the damages for the staircase fall"
+      },
+      "correct_answer": "B",
+      "explanation": "In McKew v Holland, Hannen and Cubitts [1969] 3 All ER 1621, the House of Lords held that the plaintiff's own unreasonable act — descending a steep staircase without a handrail and without seeking assistance, when he knew his leg was prone to giving way — broke the chain of causation. The plaintiff's voluntary unreasonable conduct was not a foreseeable consequence of the original injury; it was an act that a reasonable person in his position would not have taken. The chain was therefore broken and the defendant was not liable for the additional injuries."
+    },
+    {
+      "id": "TL_M04_L02_Q04",
+      "question": "In Wieland v Cyril Lord Carpets [1969], the plaintiff fell on a staircase while wearing a cervical collar fitted as a result of the defendant's negligence, because the collar impaired her vision. Was the chain of causation broken?",
+      "options": {
+        "A": "Yes — the plaintiff's decision to use the staircase rather than take a lift was an unreasonable voluntary act",
+        "B": "No — the fall was a foreseeable consequence of the original negligence and its effects on the plaintiff's vision, and she had acted reasonably",
+        "C": "Yes — the staircase itself was an independent intervening cause",
+        "D": "No — because the defendant had been informed of the risk of the plaintiff using stairs while wearing the collar"
+      },
+      "correct_answer": "B",
+      "explanation": "In Wieland v Cyril Lord Carpets [1969] 3 All ER 1006, the court held that the chain of causation was not broken. Unlike McKew, the plaintiff in Wieland had not acted unreasonably — she was navigating a staircase in the ordinary way. Her fall was a foreseeable consequence of the impairment caused by the cervical collar, which itself was a direct result of the defendant's original negligence. A plaintiff's reasonable reaction to their injury does not break the causal chain."
+    },
+    {
+      "id": "TL_M04_L02_Q05",
+      "question": "What is the key distinction between the outcomes in McKew v Holland [1969] and Wieland v Cyril Lord Carpets [1969] in relation to novus actus?",
+      "options": {
+        "A": "In McKew the injury was physical; in Wieland it was psychiatric — different rules apply",
+        "B": "In McKew the plaintiff acted unreasonably, breaking the chain; in Wieland the plaintiff acted reasonably in response to her injury, so the chain was not broken",
+        "C": "In McKew the defendant was a private employer; in Wieland it was a public authority — different standards applied",
+        "D": "In McKew the staircase belonged to a third party; in Wieland it belonged to the defendant's premises"
+      },
+      "correct_answer": "B",
+      "explanation": "The critical distinction is the reasonableness of the plaintiff's conduct. In McKew, the plaintiff acted unreasonably by exposing himself to unnecessary risk — descending a steep staircase without assistance when he knew his leg might give way. In Wieland, the plaintiff acted in a perfectly reasonable manner — she was using a staircase in the normal way. A plaintiff's unreasonable voluntary act may break the causal chain; a plaintiff's reasonable response to their injury does not."
+    },
+    {
+      "id": "TL_M04_L02_Q06",
+      "question": "In Breslin v Corcoran [2003] 2 IR 203, the Irish Supreme Court considered the effect of a deliberate criminal act by a third party on the causal chain. What was the general principle confirmed?",
+      "options": {
+        "A": "A deliberate criminal act by a third party always confirms the defendant's liability as the originating cause",
+        "B": "A deliberate, voluntary criminal act by a third party will generally break the causal chain, unless the crime was the very risk that made the defendant's conduct negligent",
+        "C": "A criminal act by a third party converts the defendant's liability from sole to contributory",
+        "D": "The defendant remains fully liable for all consequences once their negligence is an operative cause of any kind"
+      },
+      "correct_answer": "B",
+      "explanation": "In Breslin v Corcoran [2003] 2 IR 203, the Irish Supreme Court confirmed that a voluntary, independent criminal act by a third party will generally break the chain of causation. The criminal's voluntary free act is treated as the effective cause of the plaintiff's injury. However, there is an exception: where the defendant's negligence created the very risk that the third party would act in the criminal way they did — making the criminal intervention itself foreseeable — the chain is not broken."
+    },
+    {
+      "id": "TL_M04_L02_Q07",
+      "question": "In Lamb v Camden LBC [1981], squatters caused damage to a house that had been left vacant after the local authority negligently broke a water main. Did the squatters' acts constitute a novus actus?",
+      "options": {
+        "A": "No — the damage to the house was a direct consequence of the water main burst and the chain was not broken",
+        "B": "Yes — the squatters' deliberate criminal acts broke the chain because such criminal damage was not a foreseeable consequence of the burst pipe",
+        "C": "No — the local authority had a duty to secure the property once it became vacant and their failure was the operative cause",
+        "D": "Yes — natural events such as flooding also occurred and they contributed to breaking the chain"
+      },
+      "correct_answer": "B",
+      "explanation": "In Lamb v Camden LBC [1981] QB 625, the Court of Appeal held that the squatters' acts broke the chain of causation. The damage caused by squatters entering a vacant house was not a foreseeable consequence of a burst water main. Criminal damage of this nature was sufficiently unusual and independent that it broke the connection between the council's original negligence and the ultimate damage to the property. The deliberate criminal act of the squatters was the effective cause of the property damage."
+    },
+    {
+      "id": "TL_M04_L02_Q08",
+      "question": "Can a natural event — sometimes called an act of God — constitute a novus actus interveniens?",
+      "options": {
+        "A": "No — natural events can never break the chain of causation in negligence",
+        "B": "Yes — a natural event may break the chain if it is unforeseeable, exceptional, and independent of the defendant's breach",
+        "C": "Yes — any natural event that occurs after the defendant's breach automatically relieves the defendant of liability",
+        "D": "No — natural events can only constitute a defence in strict liability, not in negligence"
+      },
+      "correct_answer": "B",
+      "explanation": "A natural event may constitute a novus actus interveniens if it is sufficiently unforeseeable, exceptional, and independent of the defendant's breach. If the natural event was foreseeable — if the defendant's negligence created a risk that a natural event of that type would cause harm — then it does not break the chain. It is only an event that is truly extraordinary, beyond what could reasonably be anticipated as a consequence of the breach, that severs the causal link."
+    },
+    {
+      "id": "TL_M04_L02_Q09",
+      "question": "The defendant negligently leaves a gas pipe unsealed. A week later, a thief enters the property, ignites the gas accidentally whilst searching for valuables, and an explosion injures a neighbour. Is the thief's act likely to be a novus actus?",
+      "options": {
+        "A": "No — the explosion was a direct consequence of the unsealed pipe and the chain is not broken",
+        "B": "Yes — the thief's independent criminal act is sufficiently unforeseeable as to break the chain, unless ignition by a trespasser was the very risk created by the unsealed pipe",
+        "C": "No — the defendant is always liable for all consequences of a dangerous gas leak, regardless of intervening events",
+        "D": "Yes — because the thief rather than the defendant directly caused the explosion, all liability shifts to the thief"
+      },
+      "correct_answer": "B",
+      "explanation": "This scenario raises a close causation question. The thief's act is an independent criminal act which would generally break the chain under Breslin v Corcoran [2003]. However, where the very risk created by leaving a gas pipe unsealed includes the risk of inadvertent or deliberate ignition by a person entering the property — particularly a foreseeable trespasser — the criminal act may not break the chain. The analysis turns on whether the thief's presence and accidental ignition was a foreseeable consequence of the original negligence."
+    },
+    {
+      "id": "TL_M04_L02_Q10",
+      "question": "In a novus actus analysis on the FE-1 paper, what should a candidate always ask first about the intervening act?",
+      "options": {
+        "A": "Was the intervening act caused by a person with legal capacity?",
+        "B": "Was the intervening act foreseeable from the defendant's perspective — was it the very risk that made the defendant's conduct negligent?",
+        "C": "Was the intervening act within the territorial jurisdiction of the Irish courts?",
+        "D": "Was the intervening act reported to the defendant before the damage occurred?"
+      },
+      "correct_answer": "B",
+      "explanation": "The first and most important question in any novus actus analysis is whether the intervening act was foreseeable from the defendant's perspective — and specifically, whether it was the very risk that made the defendant's conduct negligent in the first place. If the answer is yes, the chain is not broken. If the intervening act was unexpected, independent, and unforeseeable, it may break the chain. This foreseeability analysis is the foundation of the novus actus doctrine."
+    }
+  ]
+}

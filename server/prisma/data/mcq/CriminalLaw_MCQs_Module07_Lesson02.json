@@ -1,0 +1,139 @@
+{
+  "subject": "Criminal Law",
+  "module": 7,
+  "lesson": 2,
+  "title": "Burglary and Aggravated Burglary",
+  "questions": [
+    {
+      "id": "CL_M07_L02_Q01",
+      "question": "Under Section 12 of the Criminal Justice (Theft and Fraud Offences) Act 2001, which of the following is NOT a qualifying offence for the purposes of burglary?",
+      "options": {
+        "A": "Theft.",
+        "B": "Assault causing harm.",
+        "C": "The causing of criminal damage.",
+        "D": "Deception."
+      },
+      "correct_answer": "D",
+      "explanation": "The qualifying offences for burglary under s.12 are theft, assault causing harm, and causing criminal damage. Deception under s.6 is not a qualifying offence for burglary. An accused who enters as a trespasser intending only to commit deception does not commit burglary under the 2001 Act.",
+      "legislation": "Criminal Justice (Theft and Fraud Offences) Act 2001, s.12"
+    },
+    {
+      "id": "CL_M07_L02_Q02",
+      "question": "In R v Ryan [1996], the accused was convicted of burglary even though only his head and one arm were inside the building, with the rest of his body outside. What principle does this establish?",
+      "options": {
+        "A": "Entry requires full bodily entry into the building.",
+        "B": "Partial entry is sufficient for the entry element of burglary.",
+        "C": "Entry requires at least half the body to cross the threshold.",
+        "D": "The entry requirement was not satisfied on the facts of R v Ryan."
+      },
+      "correct_answer": "B",
+      "explanation": "R v Ryan [1996] confirmed that partial entry is sufficient. Along with R v Collins [1973] and R v Brown [1985], it forms the trilogy of cases establishing that full bodily entry is not required. The courts apply a purposive interpretation looking at whether the accused crossed the threshold, not whether they were fully inside.",
+      "cases": "R v Ryan [1996]"
+    },
+    {
+      "id": "CL_M07_L02_Q03",
+      "question": "In R v Baker [1994], the court held that a housesitter became a trespasser because:",
+      "options": {
+        "A": "The housesitter had entered the property without any permission from the owner.",
+        "B": "The housesitter exceeded the scope of the permission given by the owner.",
+        "C": "The housesitter had previously been banned from the property.",
+        "D": "A housesitter can never have a valid permission to enter another person's home."
+      },
+      "correct_answer": "B",
+      "explanation": "In R v Baker [1994], the housesitter had permission to occupy the house in the owner's absence, but used the property for purposes entirely outside the scope of that permission. The court held that by exceeding the limits of the permission granted, the housesitter became a trespasser. This excess-of-permission principle is one of the key examinable aspects of the trespass element.",
+      "cases": "R v Baker [1994]"
+    },
+    {
+      "id": "CL_M07_L02_Q04",
+      "question": "An accused enters a house lawfully as an invited guest, spends an hour socialising, and then decides to steal a watch from the bedroom. He takes the watch and leaves. Which offence has he committed?",
+      "options": {
+        "A": "Burglary under s.12, because he took property from a building.",
+        "B": "Aggravated burglary, because stealing while inside someone's home is always aggravated.",
+        "C": "Theft only — he did not enter as a trespasser, and had no intent to steal at the time of entry.",
+        "D": "No offence — he had lawful permission to be in the building."
+      },
+      "correct_answer": "C",
+      "explanation": "Burglary under s.12 requires the accused to have entered as a trespasser with intent to commit a qualifying offence at the time of entry. This accused entered lawfully and only formed the intent to steal after entry. He is guilty of theft when he takes the watch, but not burglary — the intent was not present at the moment of entry.",
+      "legislation": "Criminal Justice (Theft and Fraud Offences) Act 2001, s.12"
+    },
+    {
+      "id": "CL_M07_L02_Q05",
+      "question": "The maximum penalty for burglary under Section 12 of the 2001 Act is:",
+      "options": {
+        "A": "Ten years imprisonment.",
+        "B": "Fourteen years imprisonment.",
+        "C": "Life imprisonment.",
+        "D": "Seven years imprisonment."
+      },
+      "correct_answer": "B",
+      "explanation": "The maximum penalty for burglary under s.12 is fourteen years imprisonment on indictment. It is an exclusively indictable offence. Aggravated burglary under s.13 carries the more serious penalty of life imprisonment.",
+      "legislation": "Criminal Justice (Theft and Fraud Offences) Act 2001, s.12"
+    },
+    {
+      "id": "CL_M07_L02_Q06",
+      "question": "The critical timing requirement for aggravated burglary under Section 13 of the 2001 Act is that the accused must have had the weapon:",
+      "options": {
+        "A": "At any point during the commission of the offence, including if it was acquired inside.",
+        "B": "At the time of entry into the building.",
+        "C": "Only at the point of using the weapon during the offence.",
+        "D": "Before they left their home to commit the burglary."
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.13 and as confirmed in R v Murphy [1993], the weapon must be with the accused at the time of entry. A weapon acquired inside the building after entry does not satisfy the s.13 requirement — that scenario remains ordinary burglary under s.12 only. The weapon must have been brought to the scene by the accused.",
+      "legislation": "Criminal Justice (Theft and Fraud Offences) Act 2001, s.13; R v Murphy [1993]"
+    },
+    {
+      "id": "CL_M07_L02_Q07",
+      "question": "In R v Stone [1990], the court confirmed that whether an object is a 'weapon of offence' for the purposes of aggravated burglary depends on:",
+      "options": {
+        "A": "Whether the object is classified as an offensive weapon in primary legislation.",
+        "B": "The inherent danger of the object regardless of how it is used.",
+        "C": "Its use or intended use, not its inherent character as an object.",
+        "D": "Whether the accused purchased the item specifically for the purpose of the offence."
+      },
+      "correct_answer": "C",
+      "explanation": "R v Stone [1990] confirmed that the weapon-of-offence classification depends on use or intended use, not inherent character. An everyday object — a pen, a walking stick, a hammer — can become a weapon of offence depending on how the accused uses it or intends to use it. This was further illustrated in R v McCalla [1988] (screwdriver) and R v Kelly [1993] (hockey stick).",
+      "cases": "R v Stone [1990]"
+    },
+    {
+      "id": "CL_M07_L02_Q08",
+      "question": "In R v Bentham [2005], the House of Lords held that:",
+      "options": {
+        "A": "A replica gun is not an imitation firearm for the purposes of aggravated burglary.",
+        "B": "Fingers shaped to simulate a gun through a jacket do not constitute an imitation firearm.",
+        "C": "Any object that causes the victim to fear injury constitutes a weapon of offence.",
+        "D": "An imitation firearm must be capable of firing a projectile to satisfy the s.13 requirement."
+      },
+      "correct_answer": "B",
+      "explanation": "In R v Bentham [2005], the House of Lords held that an accused's fingers shaped through a jacket to simulate a gun did not constitute an imitation firearm. A distinct physical object separate from the accused's body is required. A physical replica gun, by contrast, was held to be an imitation firearm in Regina v Klass [1998].",
+      "cases": "R v Bentham [2005]"
+    },
+    {
+      "id": "CL_M07_L02_Q09",
+      "question": "The maximum penalty for aggravated burglary under Section 13 of the Criminal Justice (Theft and Fraud Offences) Act 2001 is:",
+      "options": {
+        "A": "Fourteen years imprisonment.",
+        "B": "Twenty years imprisonment.",
+        "C": "Life imprisonment.",
+        "D": "Ten years imprisonment."
+      },
+      "correct_answer": "C",
+      "explanation": "Aggravated burglary under s.13 carries a maximum of life imprisonment on indictment. This makes it one of the most serious property offences in Irish criminal law and one of very few non-homicide offences carrying a potential life sentence.",
+      "legislation": "Criminal Justice (Theft and Fraud Offences) Act 2001, s.13"
+    },
+    {
+      "id": "CL_M07_L02_Q10",
+      "question": "An accused enters a house at night as a trespasser, intending to steal. He finds no valuables but discovers a kitchen knife and uses it to threaten the occupant who returns home unexpectedly. Which offences has he committed?",
+      "options": {
+        "A": "Aggravated burglary under s.13, because he used a weapon inside the building.",
+        "B": "Burglary under s.12 and assault — but not aggravated burglary, because the knife was not with him at the time of entry.",
+        "C": "Aggravated burglary under s.13, because the weapon was used in the course of the burglary.",
+        "D": "Theft only, because no property was actually taken."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 13 requires the accused to have had the weapon with them at the time of entry. The accused entered unarmed and only picked up the knife inside. As held in R v Murphy [1993], a weapon acquired after entry does not satisfy the s.13 requirement. The accused is guilty of burglary under s.12 (entered as trespasser with intent to steal) and likely assault, but not aggravated burglary. Note also that burglary under s.12 is complete on entry with intent — the failure to steal does not negate it.",
+      "cases": "R v Murphy [1993]",
+      "legislation": "Criminal Justice (Theft and Fraud Offences) Act 2001, ss.12 and 13"
+    }
+  ]
+}

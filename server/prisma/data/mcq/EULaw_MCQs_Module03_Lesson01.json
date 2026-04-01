@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module03_Lesson01.txt",
+  "module_number": 3,
+  "module_title": "Sources and Hierarchy of EU Law",
+  "lesson_number": 1,
+  "lesson_title": "Primary Law: The Treaties and the Charter",
+  "questions": [
+    {
+      "id": "EUL_M03_L01_Q01",
+      "question": "Primary law of the EU consists of:",
+      "options": {
+        "A": "Regulations and Directives adopted under the ordinary legislative procedure",
+        "B": "The founding Treaties (TEU and TFEU), Protocols and Annexes attached to the Treaties, and the Charter of Fundamental Rights",
+        "C": "Decisions of the Court of Justice that have been formally recognised by the European Council",
+        "D": "General principles of law as developed by the Court of Justice"
+      },
+      "correct_answer": "B",
+      "explanation": "Primary EU law — the highest tier of the EU legal hierarchy — comprises the TEU, TFEU (and their predecessors), Protocols and Annexes attached to the Treaties (which have the same legal value), accession treaties, and the Charter of Fundamental Rights (given Treaty value by Article 6(1) TEU). It cannot be superseded by secondary legislation."
+    },
+    {
+      "id": "EUL_M03_L01_Q02",
+      "question": "The Charter of Fundamental Rights of the EU became legally binding when:",
+      "options": {
+        "A": "It was proclaimed in Nice in 2000",
+        "B": "The Lisbon Treaty entered into force in December 2009, which gave it the same legal value as the Treaties under Article 6(1) TEU",
+        "C": "The Constitutional Treaty was ratified in 2004",
+        "D": "The Court of Justice held in a landmark 2005 ruling that it had binding force"
+      },
+      "correct_answer": "B",
+      "explanation": "The Charter was originally proclaimed at Nice in 2000 as a political declaration without binding legal force. It became legally binding when the Lisbon Treaty entered into force on 1 December 2009, which by Article 6(1) TEU conferred on it the same legal value as the Treaties."
+    },
+    {
+      "id": "EUL_M03_L01_Q03",
+      "question": "Article 6(3) TEU provides that fundamental rights, as guaranteed by the ECHR and as they result from constitutional traditions common to member states, shall constitute general principles of the Union's law. This means:",
+      "options": {
+        "A": "The ECHR is directly incorporated into EU law as primary law",
+        "B": "The EU has formally acceded to the ECHR",
+        "C": "These rights inform the interpretation of EU law as general principles, even though the ECHR itself is not part of EU law",
+        "D": "National constitutional rights automatically override conflicting EU law"
+      },
+      "correct_answer": "C",
+      "explanation": "Article 6(3) TEU establishes the ECHR and national constitutional traditions as sources of general principles of EU law. This does not make the ECHR directly part of EU law — the EU has not (yet) acceded to the ECHR despite Article 6(2) TEU providing for accession. Opinion 2/13 (2014) found that the draft accession agreement was incompatible with the EU Treaties."
+    },
+    {
+      "id": "EUL_M03_L01_Q04",
+      "question": "Protocols annexed to the Treaties have what legal status?",
+      "options": {
+        "A": "They are secondary legislation with lower status than the Treaties",
+        "B": "They have the same legal value as the Treaties to which they are annexed",
+        "C": "They are non-binding political declarations",
+        "D": "They can be amended by the Council acting by unanimity, without a full IGC"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 51 TEU: Protocols and Annexes to the Treaties form an integral part of the Treaties. They therefore have the same legal value as the Treaty articles themselves. Examples include Protocol 30 (on Poland and the UK regarding the Charter), Protocol on the application of the principles of subsidiarity and proportionality, and Protocol on the Statute of the Court of Justice."
+    },
+    {
+      "id": "EUL_M03_L01_Q05",
+      "question": "The Charter of Fundamental Rights applies to member states:",
+      "options": {
+        "A": "In all circumstances, whenever domestic law is in question",
+        "B": "Only when member states are implementing EU law",
+        "C": "Only when member states are derogating from EU fundamental freedoms",
+        "D": "Only when member states are parties to proceedings before the CJEU"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 51(1) of the Charter: the Charter applies to 'the institutions, bodies, offices and agencies of the Union' and to 'the Member States only when they are implementing Union law'. The Court confirmed in Åkerberg Fransson (C-617/10) that 'implementing EU law' covers all situations where member states act within the scope of EU law."
+    },
+    {
+      "id": "EUL_M03_L01_Q06",
+      "question": "The primary law principle of sincere cooperation (Article 4(3) TEU) requires member states to:",
+      "options": {
+        "A": "Harmonise their national laws with each other without EU involvement",
+        "B": "Take all appropriate measures to fulfil their Treaty obligations and to facilitate achievement of the Union's tasks, and refrain from measures that would jeopardise Union objectives",
+        "C": "Submit all proposed national legislation to the Commission for approval before enacting it",
+        "D": "Implement EU Directives by a method of their choice within the timescale set by national parliaments"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 4(3) TEU (the principle of sincere cooperation or loyal cooperation) has three limbs: member states shall take all appropriate measures to ensure fulfilment of Treaty obligations; they shall facilitate achievement of EU tasks; and they shall refrain from any measure which could jeopardise the attainment of the Union's objectives. It has been used by the Court to develop State liability (Francovich) and the duty of consistent interpretation."
+    },
+    {
+      "id": "EUL_M03_L01_Q07",
+      "question": "Ordinary treaty revision under Article 48 TEU requires:",
+      "options": {
+        "A": "A qualified majority in the Council and simple majority in the Parliament",
+        "B": "An Intergovernmental Conference, followed by ratification by all member states in accordance with their constitutional requirements",
+        "C": "Unanimous agreement of the Council, approved by a two-thirds majority of the Parliament",
+        "D": "A referendum in each member state, with a majority in favour"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 48 TEU (ordinary revision procedure): amendments are proposed by any member state, the Parliament, or the Commission; the European Council convenes an IGC; amendments enter into force after ratification by all member states in accordance with their respective constitutional requirements (which may involve parliamentary votes, referendums, or both depending on national constitutional requirements)."
+    },
+    {
+      "id": "EUL_M03_L01_Q08",
+      "question": "The hierarchy of norms in EU law means:",
+      "options": {
+        "A": "General principles always take precedence over Treaty provisions",
+        "B": "Secondary legislation must not conflict with primary law (the Treaties, Charter, and general principles); if it does, it may be annulled by the Court of Justice",
+        "C": "Regulations always override Directives, regardless of content or legal base",
+        "D": "Member state constitutional provisions override inconsistent EU secondary legislation"
+      },
+      "correct_answer": "B",
+      "explanation": "The EU legal hierarchy (primary law → secondary law) means that Regulations, Directives, Decisions, and other secondary acts must comply with the Treaties and Charter. The Court of Justice reviews secondary legislation for compatibility under Article 263 TFEU. Conflicting secondary legislation is subject to annulment — it does not automatically become primary law."
+    },
+    {
+      "id": "EUL_M03_L01_Q09",
+      "question": "The 'passerelle' clauses in the Treaties allow:",
+      "options": {
+        "A": "The Commission to adopt legislative acts without Council approval in urgent situations",
+        "B": "The European Council (or Council) to move from unanimity to QMV, or from a special to the ordinary legislative procedure, in specified areas, without a full treaty amendment",
+        "C": "Member states to opt out of secondary legislation they consider contrary to national interests",
+        "D": "The Parliament to reject Commission proposals without a formal legislative procedure"
+      },
+      "correct_answer": "B",
+      "explanation": "Passerelle clauses (from the French for 'footbridge') allow the European Council or Council to switch from unanimity to QMV or from special to ordinary legislative procedure in certain areas (e.g., multi-annual financial framework, CFSP). This avoids the full Article 48 revision procedure but requires unanimity in the European Council and no national parliament objection."
+    },
+    {
+      "id": "EUL_M03_L01_Q10",
+      "question": "The Court of Justice in Les Verts v European Parliament [1986] held that:",
+      "options": {
+        "A": "The European Parliament had no legal personality and could not be sued",
+        "B": "The Treaties constitute a 'constitutional charter of a Community based on the rule of law' in which acts of institutions are subject to review for conformity with the Treaties",
+        "C": "Member states retained sovereign immunity from EU law claims",
+        "D": "The Commission had no power to bring infringement proceedings against member states for breach of unwritten general principles"
+      },
+      "correct_answer": "B",
+      "explanation": "In Les Verts (Case 294/83), the Court of Justice held that 'the EEC Treaty, albeit concluded in the form of an international agreement, nonetheless constitutes the constitutional charter of a Community based on the rule of law.' This was a foundational statement of the constitutional nature of the Treaties — the EU is a community of law, not just an international organisation."
+    }
+  ],
+  "total_questions": 10
+}

@@ -1,0 +1,131 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": "ContractLaw_ElevenLabs_Module02_Lesson03.txt",
+  "module_number": 2,
+  "module_title": "Contractual Terms",
+  "lesson_number": 2,
+  "lesson_title": "Implied Terms",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following correctly describes how terms may be implied into a contract?",
+      "options": {
+        "A": "Only by statute — courts cannot imply terms into written contracts",
+        "B": "By statute, by the courts (in fact or in law), or by custom and trade usage",
+        "C": "Only where all parties expressly agree that an additional term should be included",
+        "D": "By courts in all cases where the contract is silent on an issue"
+      },
+      "correct_answer": "B",
+      "explanation": "Terms may be implied into a contract in three principal ways: (1) by statute (e.g., implied conditions of quality under the Sale of Goods Act 1893 and CRA 2022); (2) by the courts either in fact (to give effect to the presumed intentions of the parties) or in law (as a necessary incident of a particular type of contract); and (3) by custom or trade usage."
+    },
+    {
+      "id": 2,
+      "question": "The 'business efficacy' test for implying a term in fact was established in which case?",
+      "options": {
+        "A": "Shirlaw v Southern Foundries [1939]",
+        "B": "The Moorcock [1889]",
+        "C": "Liverpool City Council v Irwin [1977]",
+        "D": "BP Refinery (Westernport) Pty Ltd v Shire of Hastings [1977]"
+      },
+      "correct_answer": "B",
+      "explanation": "The 'business efficacy' test originates from The Moorcock [1889] (Bowen LJ): a term may be implied in fact if it is necessary to give business efficacy to the contract — i.e., without the implied term the contract would be ineffective or fail to achieve its obvious purpose. Both parties must have intended the term; it is implied to make the contract work, not to improve it."
+    },
+    {
+      "id": 3,
+      "question": "The 'officious bystander' test for implying a term in fact was articulated in Shirlaw v Southern Foundries [1939]. It provides that a term will be implied where:",
+      "options": {
+        "A": "The term is obvious to any reasonable commercial person familiar with the industry",
+        "B": "If an officious bystander suggested including the term at the time of contracting, both parties would have replied 'Oh, of course!' — the term is so obvious it goes without saying",
+        "C": "The term is standard in the relevant industry and both parties were aware of this",
+        "D": "The court is satisfied that the term reflects the parties' actual subjective intentions"
+      },
+      "correct_answer": "B",
+      "explanation": "In Shirlaw v Southern Foundries [1939], MacKinnon LJ articulated the 'officious bystander' test: a term will be implied if, at the time of contracting, an officious bystander had suggested including it, both parties would have testily suppressed him with 'Oh, of course!' The term must be so obvious it goes without saying — it captures implied-in-fact terms that reflect the parties' clear but unstated common intentions."
+    },
+    {
+      "id": 4,
+      "question": "In Attorney-General of Belize v Belize Telecom Ltd [2009] (PC), Lord Hoffmann reformulated the approach to implying terms. His approach was:",
+      "options": {
+        "A": "Courts should imply terms freely to achieve a fair and reasonable result",
+        "B": "Implying a term is an exercise in construction — asking what the instrument, read as a whole against its background, would reasonably be understood to mean",
+        "C": "The business efficacy and officious bystander tests are strict requirements that must both be satisfied",
+        "D": "Courts should only imply terms where statute expressly permits it"
+      },
+      "correct_answer": "B",
+      "explanation": "In Belize Telecom [2009], Lord Hoffmann argued that implication of terms is an aspect of construction — the court asks what the contract, as a whole and in its commercial context, would reasonably be understood to mean. This 'unitary construction' approach was subsequently qualified in Marks & Spencer plc v BNP Paribas [2015] (SC), where the Supreme Court reasserted that the business efficacy/officious bystander tests remain the appropriate framework."
+    },
+    {
+      "id": 5,
+      "question": "In Marks & Spencer plc v BNP Paribas Securities Services [2015], the UK Supreme Court confirmed that for a term to be implied in fact:",
+      "options": {
+        "A": "The term need only be reasonable and equitable",
+        "B": "The term must satisfy the business efficacy or officious bystander test (or both), must be reasonable and equitable, capable of clear expression, and not contradict any express term",
+        "C": "The term need only satisfy the business efficacy test",
+        "D": "The court has an unfettered discretion to imply terms that would make the contract fairer"
+      },
+      "correct_answer": "B",
+      "explanation": "In Marks & Spencer v BNP Paribas [2015], the Supreme Court reasserted the requirements from BP Refinery (Westernport) for implying terms in fact: (1) reasonable and equitable; (2) necessary to give business efficacy (or passes the officious bystander test); (3) so obvious it goes without saying; (4) capable of clear expression; and (5) does not contradict any express term. The test is necessity, not mere reasonableness."
+    },
+    {
+      "id": 6,
+      "question": "Terms implied in law differ from terms implied in fact because:",
+      "options": {
+        "A": "Terms implied in law are specific to the particular contract; terms implied in fact apply to all contracts",
+        "B": "Terms implied in law are imposed by the courts as a necessary incident of a particular category of contract, regardless of the parties' actual intentions",
+        "C": "Terms implied in law require consideration; terms implied in fact do not",
+        "D": "Terms implied in law can be excluded by agreement; terms implied in fact cannot"
+      },
+      "correct_answer": "B",
+      "explanation": "Terms implied in law are imposed by the courts as a necessary incident of a recognised type of contract (e.g., landlord and tenant, employer and employee) — they apply to all contracts of that type, not just to the particular contract in issue. The test is necessity for the category of contract. In Liverpool City Council v Irwin [1977], the House of Lords implied a duty on a landlord to maintain common parts as a necessary incident of the tenancy."
+    },
+    {
+      "id": 7,
+      "question": "Under the Sale of Goods Act 1893 (Ireland, as amended), which of the following is an implied condition in a sale by description?",
+      "options": {
+        "A": "That the goods will be delivered within a reasonable time",
+        "B": "That the goods will correspond with the contract description",
+        "C": "That the seller will obtain any necessary export licence for the goods",
+        "D": "That the price paid reflects the goods' market value"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 13 of the Sale of Goods Act 1893 implies a condition that where goods are sold by description, the goods must correspond with that description. This is a condition — breach entitles the buyer to reject the goods. The condition applies even if the buyer has seen and examined the goods, provided there is a sale by description (Varley v Whipp [1900])."
+    },
+    {
+      "id": 8,
+      "question": "Under the Sale of Goods and Supply of Services Act 1980 (Ireland), s39, when a person supplies a service in the course of a business, which of the following terms is implied?",
+      "options": {
+        "A": "That the service will be supplied at a fixed price agreed by both parties",
+        "B": "That the service will be supplied with reasonable care and skill",
+        "C": "That the service will be completed within a time stipulated by statute",
+        "D": "That the service provider will indemnify the customer against all losses"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 39 of the Sale of Goods and Supply of Services Act 1980 (Ireland) implies a term into contracts for the supply of services in the course of a business that the supplier will act with due care and skill. Additional implied terms include that materials used will be of merchantable quality, that any goods supplied with the service will be reasonably fit for purpose, and that the service will be supplied within a reasonable time if no time is fixed."
+    },
+    {
+      "id": 9,
+      "question": "In the context of implied terms by custom, which of the following is required for a custom or trade usage to be implied into a contract?",
+      "options": {
+        "A": "The custom must be recognised by international trade law",
+        "B": "The custom must be certain, notorious (widely known in the trade), reasonable, and not contrary to law",
+        "C": "Both parties must expressly acknowledge the custom before it can be implied",
+        "D": "The custom must be at least 20 years old to be treated as established usage"
+      },
+      "correct_answer": "B",
+      "explanation": "For a custom or trade usage to be implied into a contract, it must be: (1) certain — clearly defined and capable of application; (2) notorious — so well known in the relevant trade or locality that both parties must be taken to have contracted with reference to it; (3) reasonable — not contrary to law or good conscience; and (4) consistent with the express terms. Even an outsider to the trade is bound if they were aware of the custom."
+    },
+    {
+      "id": 10,
+      "question": "Under the Consumer Rights Act 2022 (Ireland), which of the following terms is implied into a contract for the sale of goods to a consumer?",
+      "options": {
+        "A": "That the seller will insure the goods for the duration of the consumer's use",
+        "B": "That the goods are of satisfactory quality, fit for purpose, and conform to any description or sample",
+        "C": "That the seller will provide a 10-year guarantee",
+        "D": "That the goods comply with the technical standards of the country of manufacture"
+      },
+      "correct_answer": "B",
+      "explanation": "The Consumer Rights Act 2022 (Ireland), Part 2, implies mandatory terms into contracts for the supply of goods to consumers: goods must be of satisfactory quality (assessed by reference to a reasonable person standard, taking into account price, description and all circumstances), fit for purpose (including any particular purpose communicated to the seller), and in conformity with any description, sample or model."
+    }
+  ]
+}

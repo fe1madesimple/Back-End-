@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "PropertyLaw_ElevenLabs_Module04_Lesson01.txt",
+  "module_number": 4,
+  "module_title": "Easements and Profits a Prendre",
+  "lesson_number": 1,
+  "lesson_title": "Easements and Profits a Prendre: Conditions, Acquisition, Prescription, and Extinguishment",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M04_L01_Q01",
+      "question": "In Re Ellenborough Park [1956], which court established the four-part test for a valid easement?",
+      "options": {
+        "A": "The English Court of Appeal",
+        "B": "The House of Lords",
+        "C": "The Irish Supreme Court",
+        "D": "The Chancery Division"
+      },
+      "correct_answer": "A",
+      "explanation": "Re Ellenborough Park [1956] was decided by the English Court of Appeal. Evershed MR delivered the leading judgment setting out the four conditions a right must satisfy to constitute a valid easement."
+    },
+    {
+      "id": "PRL_M04_L01_Q02",
+      "question": "What is the FIRST condition from Re Ellenborough Park for a valid easement?",
+      "options": {
+        "A": "The easement must accommodate and serve the dominant tenement",
+        "B": "There must be both a dominant tenement and a servient tenement",
+        "C": "The dominant and servient tenements must be in different ownership",
+        "D": "The right must be capable of forming the subject matter of a grant"
+      },
+      "correct_answer": "B",
+      "explanation": "The first condition is that there must be both a dominant tenement (the land that benefits) and a servient tenement (the land that is burdened). An easement cannot exist in the abstract — it must be attached to land."
+    },
+    {
+      "id": "PRL_M04_L01_Q03",
+      "question": "What does the second condition in Re Ellenborough Park — that the easement must 'accommodate and serve' the dominant tenement — require?",
+      "options": {
+        "A": "That the easement increases the market value of the dominant tenement",
+        "B": "That the easement is used at least once each year by the dominant owner",
+        "C": "That the easement benefits the land itself, not merely the personal convenience of its current owner",
+        "D": "That the easement relates exclusively to the physical structure of the dominant tenement"
+      },
+      "correct_answer": "C",
+      "explanation": "The second condition requires the easement to benefit the land itself, not merely the personal convenience of its owner. A right that benefits a particular person rather than the land fails this condition."
+    },
+    {
+      "id": "PRL_M04_L01_Q04",
+      "question": "Why cannot an owner have a true easement over their own land?",
+      "options": {
+        "A": "Because an owner's rights over their own land are governed by adverse possession",
+        "B": "Because an easement must be registered before it can be exercised",
+        "C": "Because self-grants of easements are void under the nemo dat principle",
+        "D": "Because easements require separate ownership of the dominant and servient tenements — a right over your own land is a quasi-easement, not a true easement"
+      },
+      "correct_answer": "D",
+      "explanation": "The third condition from Re Ellenborough Park requires the dominant and servient tenements to be owned or occupied by different persons. A person cannot hold an easement over land they own — such a right is only a quasi-easement."
+    },
+    {
+      "id": "PRL_M04_L01_Q05",
+      "question": "In Re Ellenborough Park [1956], what right was held to constitute a valid easement?",
+      "options": {
+        "A": "The right of surrounding householders to use a communal garden for recreation and enjoyment",
+        "B": "The right to a general view over the open countryside",
+        "C": "The right to extract turf from a communal green area",
+        "D": "The right of a developer to restrict the use of neighbouring properties"
+      },
+      "correct_answer": "A",
+      "explanation": "In Re Ellenborough Park, the Court of Appeal held that the right of householders surrounding a communal garden to use that garden for recreation and enjoyment satisfied all four conditions and constituted a valid easement."
+    },
+    {
+      "id": "PRL_M04_L01_Q06",
+      "question": "Which of the following fails the FOURTH condition from Re Ellenborough Park — that the right must be capable of forming the subject matter of a grant?",
+      "options": {
+        "A": "A right of way over a clearly defined footpath",
+        "B": "A right to a general view over an open landscape",
+        "C": "A right to use a communal garden for recreation",
+        "D": "A right to use a defined parking space on the servient land"
+      },
+      "correct_answer": "B",
+      "explanation": "A right to a general view over an open landscape fails the fourth condition — it is too vague and uncertain to be capable of forming the subject matter of a grant by deed."
+    },
+    {
+      "id": "PRL_M04_L01_Q07",
+      "question": "In which situation does the rule in Wheeldon v Burrows [1879] operate?",
+      "options": {
+        "A": "Where a dominant owner seeks to acquire an easement by prescription over a neighbour's land",
+        "B": "Where a landowner expressly grants a right of way over the whole of their land",
+        "C": "Where a landowner disposes of part of their land and the purchaser claims quasi-easements exercised over the retained land",
+        "D": "Where a landlord's implied easements survive the expiry of a tenant's lease"
+      },
+      "correct_answer": "C",
+      "explanation": "Wheeldon v Burrows [1879] applies where a landowner disposes of part of their land. The purchaser acquires by implied grant all quasi-easements that were continuous and apparent and exercised by the vendor over the retained land at the time of the grant."
+    },
+    {
+      "id": "PRL_M04_L01_Q08",
+      "question": "Under the rule in Wheeldon v Burrows, which quasi-easements are impliedly granted to the purchaser of part of a vendor's land?",
+      "options": {
+        "A": "All rights exercised over the retained land for at least 12 years before the conveyance",
+        "B": "All rights strictly necessary for physical access to the purchased land",
+        "C": "All rights expressly identified in the conveyance as quasi-easements",
+        "D": "Those that were continuous and apparent and exercised by the vendor at the time of the grant for the reasonable enjoyment of the land conveyed"
+      },
+      "correct_answer": "D",
+      "explanation": "Under Wheeldon v Burrows, quasi-easements are impliedly granted if they were: (1) continuous and apparent, (2) used by the vendor at the time of the grant, and (3) reasonably necessary for the enjoyment of the purchased land."
+    },
+    {
+      "id": "PRL_M04_L01_Q09",
+      "question": "What does section 40 of the Land and Conveyancing Law Reform Act 2009 do in relation to easements?",
+      "options": {
+        "A": "It codifies the rule in Wheeldon v Burrows in Irish law, implying quasi-easements into a conveyance of part",
+        "B": "It abolishes the doctrine of lost modern grant for all prescriptive easement claims",
+        "C": "It provides for the discharge and modification of obsolete easements on application to the court",
+        "D": "It establishes a 12-year prescription period for claims under the doctrine of lost modern grant"
+      },
+      "correct_answer": "A",
+      "explanation": "Section 40 of the LCLRA 2009 codifies the rule in Wheeldon v Burrows in Irish law, implying into a conveyance of part the quasi-easements exercised by the vendor over the retained land at the time of the grant."
+    },
+    {
+      "id": "PRL_M04_L01_Q10",
+      "question": "What does section 71 of the Land and Conveyancing Law Reform Act 2009 provide in relation to conveyances of land?",
+      "options": {
+        "A": "It establishes a 20-year prescription period for acquiring easements by lost modern grant",
+        "B": "It implies into every conveyance of land all rights and privileges currently enjoyed with the land",
+        "C": "It abolishes the application of the Wheeldon v Burrows rule in Irish law",
+        "D": "It creates a mandatory registration requirement for all prescriptive easements within six months"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 71 of the LCLRA 2009 implies into every conveyance of land all rights and privileges currently enjoyed with the land, giving statutory force to existing use rights."
+    }
+  ]
+}

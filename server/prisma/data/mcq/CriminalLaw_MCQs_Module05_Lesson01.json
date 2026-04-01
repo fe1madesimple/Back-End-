@@ -1,0 +1,151 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module05_Lesson01.txt",
+  "module_number": 5,
+  "module_title": "Non-Fatal Offences Against the Person",
+  "lesson_number": 1,
+  "lesson_title": "Assault, Assault Causing Harm, and Causing Serious Harm",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M05_L01_Q01",
+      "question": "Under Section 2 of the Non-Fatal Offences Against the Person Act 1997, which of the following correctly defines one of the two limbs of the assault offence?",
+      "options": {
+        "A": "Intentionally or recklessly causing actual bodily harm to another person.",
+        "B": "Intentionally or recklessly causing another person to believe on reasonable grounds that they are likely to be subjected to immediate force or impact.",
+        "C": "Intentionally touching another person without their consent.",
+        "D": "Negligently causing another person to apprehend force or impact."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 2 NFOATP 1997 contains two limbs: (1) intentionally or recklessly directly or indirectly applying force to or causing an impact on the body of another, and (2) intentionally or recklessly causing the other to believe on reasonable grounds that they are likely to be subjected to such force or impact. Option B reflects the threat limb. Negligence is not sufficient — intention or recklessness is required.",
+      "difficulty": "easy",
+      "topic": "Section 2 Assault"
+    },
+    {
+      "id": "CL_M05_L01_Q02",
+      "question": "What is the maximum penalty for assault under Section 2 of the NFOATP 1997 on conviction on indictment?",
+      "options": {
+        "A": "Two years imprisonment.",
+        "B": "Three years imprisonment.",
+        "C": "Five years imprisonment.",
+        "D": "Ten years imprisonment."
+      },
+      "correct_answer": "C",
+      "explanation": "The maximum penalty for s.2 assault on conviction on indictment is five years imprisonment. On summary conviction, the maximum is six months imprisonment and/or a fine. This should not be confused with the higher maxima for s.3 (ten years) and s.4 (life).",
+      "difficulty": "easy",
+      "topic": "Section 2 Assault — Penalty"
+    },
+    {
+      "id": "CL_M05_L01_Q03",
+      "question": "In DPP v K, which principle relevant to s.2 assault was confirmed?",
+      "options": {
+        "A": "Assault requires direct physical contact between the accused and the victim.",
+        "B": "An indirect application of force can constitute assault under s.2.",
+        "C": "The victim must be aware of the force at the time it is applied.",
+        "D": "A threat of future harm can constitute assault."
+      },
+      "correct_answer": "B",
+      "explanation": "In DPP v K, a schoolboy placed acid in a hand-dryer, which was later activated injuring another student. The court held that this indirect application of force satisfied the assault definition. There is no requirement of direct physical contact — force can be applied through an instrument or mechanism, even without the accused being present at the moment of contact.",
+      "difficulty": "medium",
+      "topic": "Section 2 Assault — Indirect Force"
+    },
+    {
+      "id": "CL_M05_L01_Q04",
+      "question": "How is 'harm' defined in Section 1 of the Non-Fatal Offences Against the Person Act 1997 for the purposes of the s.3 assault causing harm offence?",
+      "options": {
+        "A": "Visible physical injury requiring medical treatment.",
+        "B": "Harm to the body or mind, including pain, unconsciousness, injury, impairment, or disease.",
+        "C": "Permanent or protracted loss of bodily function.",
+        "D": "Injury creating a substantial risk to the life of the person."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 1 NFOATP 1997 defines 'harm' as harm to body or mind, including pain, unconsciousness, injury, impairment, disease, or any other adverse effect. This is a broad definition — pain alone is sufficient; visible injury is not required. Option C describes the threshold for 'serious harm' under s.1 and s.4. Option D is part of the 'serious harm' definition.",
+      "difficulty": "medium",
+      "topic": "Section 3 Assault Causing Harm — Definition"
+    },
+    {
+      "id": "CL_M05_L01_Q05",
+      "question": "What is the current maximum penalty for assault causing harm under Section 3 of the NFOATP 1997 as of November 2023?",
+      "options": {
+        "A": "Five years imprisonment.",
+        "B": "Seven years imprisonment.",
+        "C": "Ten years imprisonment.",
+        "D": "Life imprisonment."
+      },
+      "correct_answer": "C",
+      "explanation": "The maximum penalty for s.3 assault causing harm was increased from five years to ten years by Section 58 of the Criminal Justice (Miscellaneous Provisions) Act 2023, which came into force on 1 November 2023. Stating five years in an exam sat after that date is incorrect. The current maximum is ten years.",
+      "difficulty": "easy",
+      "topic": "Section 3 — Updated Maximum Penalty"
+    },
+    {
+      "id": "CL_M05_L01_Q06",
+      "question": "In DPP v Brown [2023] IESC, the Supreme Court held that consent is not a defence to s.3 assault causing harm in which circumstances?",
+      "options": {
+        "A": "Where the harm results in permanent injury.",
+        "B": "Where the accused's purpose in inflicting harm was itself unlawful.",
+        "C": "Where the victim withdrew consent after the fact.",
+        "D": "Where both parties are intoxicated at the time of the assault."
+      },
+      "correct_answer": "B",
+      "explanation": "DPP v Brown [2023] IESC held that where the purpose of inflicting harm is itself unlawful — for example, where the assault is committed as part of a criminal enterprise — the victim's consent provides no defence. By contrast, harm in a lawful context such as contact sports, surgery, or tattooing can attract valid consent. The lawfulness of the purpose is the determining factor.",
+      "difficulty": "medium",
+      "topic": "Consent and Section 3"
+    },
+    {
+      "id": "CL_M05_L01_Q07",
+      "question": "What was the significance of DPP v RK [2023] IESC 36 for the s.3 assault causing harm offence?",
+      "options": {
+        "A": "It extended s.3 to cover threats to transmit disease.",
+        "B": "It held that the reckless transmission of a serious disease such as HIV can constitute assault causing harm under s.3.",
+        "C": "It abolished the requirement for physical contact in s.3 cases.",
+        "D": "It introduced a new defence of honest belief in the absence of disease for s.3 purposes."
+      },
+      "correct_answer": "B",
+      "explanation": "In DPP v RK [2023] IESC 36, the Supreme Court extended s.3 to include the reckless transmission of a serious disease such as HIV, holding that a person who has unprotected sexual intercourse knowing they are HIV-positive without disclosure, and who transmits the virus, can be found guilty of assault causing harm. This was a landmark decision departing from the earlier English approach in R v Dica.",
+      "difficulty": "medium",
+      "topic": "Section 3 — DPP v RK"
+    },
+    {
+      "id": "CL_M05_L01_Q08",
+      "question": "Which of the following types of injury would satisfy the definition of 'serious harm' under Section 1 of the NFOATP 1997?",
+      "options": {
+        "A": "A painful bruise requiring no medical treatment.",
+        "B": "A broken finger requiring surgery but causing no lasting impairment.",
+        "C": "An injury causing permanent loss of sight in one eye.",
+        "D": "Any injury causing the victim to attend hospital."
+      },
+      "correct_answer": "C",
+      "explanation": "Section 1 NFOATP 1997 defines 'serious harm' as injury that creates a substantial risk to life, causes permanent disfigurement, or results in permanent or protracted loss or impairment of any bodily function or mental faculty. Permanent loss of sight in one eye satisfies this definition as it involves permanent functional impairment. A bruise, a broken finger with full recovery, or hospital attendance alone do not meet the threshold.",
+      "difficulty": "medium",
+      "topic": "Section 4 — Serious Harm Definition"
+    },
+    {
+      "id": "CL_M05_L01_Q09",
+      "question": "Section 3A of the NFOATP 1997, inserted by the Criminal Justice (Miscellaneous Provisions) Act 2023, creates which offence?",
+      "options": {
+        "A": "Assault causing serious psychological harm.",
+        "B": "Strangulation or suffocation — intentionally applying pressure to the throat or neck, or covering the mouth and nose, so as to affect breathing.",
+        "C": "Coercive control in a domestic setting.",
+        "D": "Unlawful imprisonment involving restraint of movement."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 3A NFOATP 1997, inserted by the Criminal Justice (Miscellaneous Provisions) Act 2023 (in force 1 November 2023), creates the offence of strangulation or suffocation: intentionally applying pressure to the throat or neck of another, or covering their mouth and nose, so as to affect breathing, without their consent. The maximum penalty is life imprisonment. It was created in response to evidence of non-fatal strangulation as a predictor of future lethal domestic violence.",
+      "difficulty": "easy",
+      "topic": "Section 3A — Strangulation"
+    },
+    {
+      "id": "CL_M05_L01_Q10",
+      "question": "Nora punches Mark in the face, breaking his nose. Mark suffers significant pain and has surgery, but makes a full recovery with no lasting impairment. Which offence or offences most accurately apply?",
+      "options": {
+        "A": "Section 4 causing serious harm only, as the punch caused a fracture.",
+        "B": "Section 2 assault only, as no lasting harm resulted.",
+        "C": "Section 3 assault causing harm — there was an assault and harm in the form of pain and injury, but not serious harm as there is no permanent functional loss or substantial risk to life.",
+        "D": "Section 4 causing serious harm, as surgery was required."
+      },
+      "correct_answer": "C",
+      "explanation": "Nora's punch constitutes an assault (s.2). The resulting pain, injury, and need for surgery constitute 'harm' within the s.1 definition. A broken nose requiring surgery is not 'serious harm' within s.1 — there is no permanent disfigurement, no substantial risk to life, and no permanent functional loss on full recovery. The correct charge is s.3 assault causing harm at a maximum of ten years on indictment.",
+      "difficulty": "hard",
+      "topic": "Applying the NFOATP Ladder"
+    }
+  ]
+}

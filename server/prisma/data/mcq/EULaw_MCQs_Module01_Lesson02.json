@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module01_Lesson02.txt",
+  "module_number": 1,
+  "module_title": "History and Development of the EU",
+  "lesson_number": 2,
+  "lesson_title": "From Rome to Lisbon: The Constitutional Evolution of the Treaties",
+  "questions": [
+    {
+      "id": "EUL_M01_L02_Q01",
+      "question": "The Single European Act 1986 is significant because it:",
+      "options": {
+        "A": "Established the European Union and introduced EU citizenship",
+        "B": "Completed the internal market programme and extended qualified majority voting in the Council",
+        "C": "Created the euro and the European Central Bank",
+        "D": "Incorporated the European Convention on Human Rights into EU law"
+      },
+      "correct_answer": "B",
+      "explanation": "The Single European Act (in force 1987) set the target of completing the internal market by 31 December 1992, extended qualified majority voting (QMV) to internal market legislation, enhanced the role of the European Parliament, and formally recognised the European Council."
+    },
+    {
+      "id": "EUL_M01_L02_Q02",
+      "question": "The Maastricht Treaty (Treaty on European Union), which entered into force in 1993, is most significant for:",
+      "options": {
+        "A": "Abolishing the three-pillar structure and giving the EU legal personality",
+        "B": "Establishing the European Union, introducing EU citizenship, and creating the three-pillar structure",
+        "C": "Extending the ordinary legislative procedure to all areas of EU law",
+        "D": "Incorporating the Charter of Fundamental Rights as legally binding"
+      },
+      "correct_answer": "B",
+      "explanation": "The Maastricht Treaty (TEU, in force November 1993) created the European Union, introduced EU citizenship, established Economic and Monetary Union (leading to the euro), and created the three-pillar structure: Pillar 1 (Communities), Pillar 2 (CFSP), Pillar 3 (Justice and Home Affairs)."
+    },
+    {
+      "id": "EUL_M01_L02_Q03",
+      "question": "Under the three-pillar structure established by the Maastricht Treaty, which pillar governed Common Foreign and Security Policy?",
+      "options": {
+        "A": "First Pillar",
+        "B": "Second Pillar",
+        "C": "Third Pillar",
+        "D": "Fourth Pillar"
+      },
+      "correct_answer": "B",
+      "explanation": "The three pillars were: Pillar 1 — the three Communities (EEC/EC, ECSC, Euratom), governed by supranational law; Pillar 2 — Common Foreign and Security Policy (CFSP), intergovernmental; Pillar 3 — Justice and Home Affairs, intergovernmental. The Court of Justice had jurisdiction primarily over Pillar 1."
+    },
+    {
+      "id": "EUL_M01_L02_Q04",
+      "question": "The Treaty of Amsterdam (1997, in force 1999) transferred which area from the third pillar to the first pillar?",
+      "options": {
+        "A": "Common Foreign and Security Policy",
+        "B": "Asylum, immigration, and judicial cooperation in civil matters",
+        "C": "Police cooperation and judicial cooperation in criminal matters",
+        "D": "Economic and Monetary Union"
+      },
+      "correct_answer": "B",
+      "explanation": "Amsterdam 'communitarised' part of the third pillar: asylum, immigration, and judicial cooperation in civil matters moved to the EC Treaty (first pillar), becoming subject to supranational law and Court of Justice jurisdiction. Police and judicial cooperation in criminal matters remained in the third pillar (renamed Provisions on Police and Judicial Cooperation in Criminal Matters)."
+    },
+    {
+      "id": "EUL_M01_L02_Q05",
+      "question": "The Treaty of Nice (2001, in force 2003) was primarily designed to address:",
+      "options": {
+        "A": "The introduction of the euro as legal tender",
+        "B": "Institutional reform to prepare for enlargement of the EU to include Central and Eastern European states",
+        "C": "The creation of an EU Foreign Minister and diplomatic service",
+        "D": "The incorporation of the Charter of Fundamental Rights into the Treaties"
+      },
+      "correct_answer": "B",
+      "explanation": "The Treaty of Nice was driven by the need to reform the EU's institutions before the 'big bang' enlargement of 2004 (adding 10 new member states). It reformed the composition of the Commission, re-weighted votes in the Council under QMV, and adjusted the size and composition of the European Parliament and Court of Justice."
+    },
+    {
+      "id": "EUL_M01_L02_Q06",
+      "question": "The Constitutional Treaty of 2004 failed because:",
+      "options": {
+        "A": "The European Parliament rejected it by a large majority",
+        "B": "It was rejected in referendums in France and the Netherlands in 2005",
+        "C": "The UK refused to ratify it in Parliament",
+        "D": "Germany's Federal Constitutional Court declared it incompatible with the Basic Law"
+      },
+      "correct_answer": "B",
+      "explanation": "The Constitutional Treaty was signed in October 2004 but required ratification by all 25 member states. After initial positive ratifications, it was defeated in referendums in France (May 2005) and the Netherlands (June 2005), effectively killing the treaty. Most of its substance was preserved in the Lisbon Treaty (2007)."
+    },
+    {
+      "id": "EUL_M01_L02_Q07",
+      "question": "The Treaty of Lisbon (2007, in force December 2009) made which of the following key changes?",
+      "options": {
+        "A": "Created the EU for the first time and introduced EU citizenship",
+        "B": "Abolished the three-pillar structure, gave the EU legal personality, made the Charter of Fundamental Rights legally binding, and created the post of President of the European Council",
+        "C": "Introduced the euro as legal tender across all member states",
+        "D": "Established the principle of the supremacy of EU law over national law"
+      },
+      "correct_answer": "B",
+      "explanation": "The Lisbon Treaty abolished the pillar structure (with special arrangements remaining for CFSP), gave the EU legal personality under Article 47 TEU, made the Charter of Fundamental Rights legally binding (Article 6(1) TEU), created a permanent President of the European Council and the High Representative for Foreign Affairs, and renamed the EC Treaty the TFEU."
+    },
+    {
+      "id": "EUL_M01_L02_Q08",
+      "question": "Article 50 TEU, which provides the procedure for withdrawal from the EU, was introduced by:",
+      "options": {
+        "A": "The Maastricht Treaty",
+        "B": "The Amsterdam Treaty",
+        "C": "The Nice Treaty",
+        "D": "The Lisbon Treaty"
+      },
+      "correct_answer": "D",
+      "explanation": "Article 50 TEU was introduced by the Lisbon Treaty. Prior to Lisbon, the Treaties contained no express provision for withdrawal — the possibility of withdrawal under general international law principles was debated but uncodified in EU treaty law."
+    },
+    {
+      "id": "EUL_M01_L02_Q09",
+      "question": "The Lisbon Treaty renamed the Treaty establishing the European Community (TEC) as:",
+      "options": {
+        "A": "The Treaty on European Union (TEU)",
+        "B": "The Treaty on the Functioning of the European Union (TFEU)",
+        "C": "The Treaty of Rome",
+        "D": "The Constitutional Treaty"
+      },
+      "correct_answer": "B",
+      "explanation": "The Lisbon Treaty restructured the two main treaties: the Maastricht TEU was amended and retained the name Treaty on European Union (TEU); the EC Treaty (formerly TEC, formerly EEC Treaty) was renamed the Treaty on the Functioning of the European Union (TFEU). These two treaties now have equal legal status."
+    },
+    {
+      "id": "EUL_M01_L02_Q10",
+      "question": "The 'big bang' enlargement of 2004 added how many new member states to the EU?",
+      "options": {
+        "A": "Five",
+        "B": "Eight",
+        "C": "Ten",
+        "D": "Twelve"
+      },
+      "correct_answer": "C",
+      "explanation": "On 1 May 2004, ten states acceded to the EU: Poland, Czech Republic, Slovakia, Hungary, Slovenia, Estonia, Latvia, Lithuania, Cyprus, and Malta. This was the largest single enlargement in EU history."
+    }
+  ],
+  "total_questions": 10
+}

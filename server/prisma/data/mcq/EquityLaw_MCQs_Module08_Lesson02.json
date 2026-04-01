@@ -1,0 +1,131 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "Module_08_Lesson_02_Third_Party_Liability___Knowing_Receipt_and_Dishonest_Assistance.txt",
+  "module_number": 8,
+  "module_title": "Breach of Trust and Equitable Remedies",
+  "lesson_number": 2,
+  "lesson_title": "Third Party Liability: Knowing Receipt and Dishonest Assistance",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EQL_M08_L02_Q01",
+      "question": "Third-party liability for involvement in a breach of trust falls under two heads. What are they?",
+      "options": {
+        "A": "Express trust liability and implied trust liability.",
+        "B": "Knowing receipt and dishonest assistance.",
+        "C": "Actual knowledge liability and constructive knowledge liability.",
+        "D": "Direct liability and vicarious liability."
+      },
+      "correct_answer": "B",
+      "explanation": "Third-party liability for involvement in a breach of trust arises under two heads: (1) knowing receipt — where a person receives trust property that has been transferred in breach of trust; and (2) dishonest assistance — where a person assists a trustee in committing a breach of trust. Both heads impose personal liability on the third party as a constructive trustee, even though they are not the original trustee."
+    },
+    {
+      "id": "EQL_M08_L02_Q02",
+      "question": "What is the test for knowing receipt liability, as confirmed in BCCI v Akindele (2000)?",
+      "options": {
+        "A": "The defendant must have had actual notice of the breach of trust at the time of receipt.",
+        "B": "The defendant's state of knowledge must be such as to make it unconscionable for them to retain the benefit of the property received.",
+        "C": "The defendant must have acted dishonestly in receiving the trust property.",
+        "D": "The defendant must have received the trust property at an undervalue."
+      },
+      "correct_answer": "B",
+      "explanation": "In BCCI v Akindele (2000), the Court of Appeal confirmed that the test for knowing receipt is whether the defendant's state of knowledge was such as to make it unconscionable for them to retain the benefit of the property received. This is a flexible approach — it asks whether, in all the circumstances, it would be unconscionable for the defendant to keep the property knowing what they knew. Actual knowledge is sufficient, as is knowledge of facts that would make retention unconscionable."
+    },
+    {
+      "id": "EQL_M08_L02_Q03",
+      "question": "In Halley v The Law Society, the Irish courts applied the knowing receipt doctrine in what context?",
+      "options": {
+        "A": "A case involving the misappropriation of company funds by a director.",
+        "B": "A case involving a solicitor who received client funds that had been misappropriated; the court applied the unconscionability standard.",
+        "C": "A case involving the fraudulent transfer of land between family members.",
+        "D": "A case involving a bank that received mortgage payments from trust funds."
+      },
+      "correct_answer": "B",
+      "explanation": "In Halley v The Law Society, the Irish courts engaged with the knowing receipt doctrine in the context of a solicitor who received client funds that had been misappropriated. The court applied the unconscionability standard from BCCI v Akindele (2000). This is the leading Irish authority confirming that the unconscionability test for knowing receipt is part of Irish equity law."
+    },
+    {
+      "id": "EQL_M08_L02_Q04",
+      "question": "What is dishonest assistance, and does it require the defendant to have received any trust property?",
+      "options": {
+        "A": "Dishonest assistance requires the defendant to have received trust property; without receipt, there is no liability.",
+        "B": "Dishonest assistance arises where a person assists a trustee in a breach of trust dishonestly, even where they receive no trust property themselves.",
+        "C": "Dishonest assistance requires the defendant to have been a co-trustee at the time of the breach.",
+        "D": "Dishonest assistance applies only where the trustee was also acting dishonestly."
+      },
+      "correct_answer": "B",
+      "explanation": "Dishonest assistance arises where a person assists a trustee in committing a breach of trust dishonestly, even where they receive no trust property themselves. This distinguishes it from knowing receipt, which requires actual receipt of trust property. The dishonest assistant is personally liable as a constructive trustee even without ever holding trust assets. The key element is the dishonest nature of their assistance."
+    },
+    {
+      "id": "EQL_M08_L02_Q05",
+      "question": "In Royal Brunei Airlines v Tan (1995), the Privy Council established the test for dishonest assistance. What standard of dishonesty did Lord Nicholls apply?",
+      "options": {
+        "A": "A purely subjective test — the defendant must have believed their own conduct was dishonest.",
+        "B": "An objective test — dishonesty is assessed against the standard of the honest person; it is not enough that the assistant knew of the breach.",
+        "C": "A mixed test requiring both knowledge of the breach and personal profit by the defendant.",
+        "D": "A negligence standard — the defendant is liable if they ought to have known their assistance would cause loss."
+      },
+      "correct_answer": "B",
+      "explanation": "In Royal Brunei Airlines v Tan (1995), Lord Nicholls held that the liability of an accessory to a breach of trust depends on their dishonesty — assessed objectively against the standard of the honest person. It is not enough that the assistant knew of the breach; they must have been dishonest in a morally meaningful sense. The test focuses on whether the defendant's conduct fell below the standard of the honest person, assessed by an objective yardstick."
+    },
+    {
+      "id": "EQL_M08_L02_Q06",
+      "question": "In Twinsectra v Yardley (2002), the House of Lords considered the standard of dishonesty for accessory liability. How did Lord Hutton frame the test?",
+      "options": {
+        "A": "A purely objective test with no subjective element.",
+        "B": "A combined subjective-objective test — asking whether the defendant appreciated that their conduct was dishonest by the standards of honest people.",
+        "C": "A test based solely on the defendant's personal belief about the honesty of their conduct.",
+        "D": "A test requiring proof of fraudulent intent beyond reasonable doubt."
+      },
+      "correct_answer": "B",
+      "explanation": "In Twinsectra v Yardley (2002), Lord Hutton applied a combined subjective-objective test, asking whether the defendant appreciated that their conduct was dishonest by the standards of honest people. This approach introduced a subjective element — the defendant must have been aware that what they were doing was dishonest by ordinary standards — alongside the objective standard. The Privy Council in Barlow Clowes v Eurotrust subsequently refined this further towards a more purely objective test."
+    },
+    {
+      "id": "EQL_M08_L02_Q07",
+      "question": "What standard did the Privy Council adopt in Barlow Clowes International v Eurotrust for the dishonesty test in accessory liability?",
+      "options": {
+        "A": "A purely subjective test — the defendant must have known they were acting dishonestly.",
+        "B": "An objective test — would a reasonable and honest person in the defendant's position have known their conduct was dishonest?",
+        "C": "A gross negligence standard — liability arises only where the defendant's conduct was grossly unreasonable.",
+        "D": "A strict liability test — any assistance in a breach of trust is sufficient regardless of knowledge."
+      },
+      "correct_answer": "B",
+      "explanation": "In Barlow Clowes International v Eurotrust, the Privy Council refined the dishonesty test for accessory liability towards a more purely objective approach: would a reasonable and honest person in the defendant's position have known their conduct was dishonest? This confirms that the defendant cannot escape liability simply by claiming subjective belief in the honesty of their conduct if an objective reasonable person would have recognised it as dishonest."
+    },
+    {
+      "id": "EQL_M08_L02_Q08",
+      "question": "What is the remedy for a defendant held liable in knowing receipt or dishonest assistance?",
+      "options": {
+        "A": "An injunction restraining the defendant from dealing with the trust property.",
+        "B": "Personal liability — the defendant is treated as a constructive trustee and must account for the value received or the profit made; where trust property is still traceable in their hands, the beneficiary may seek a proprietary remedy.",
+        "C": "A compensation order equal to the trustee's personal liability for the breach.",
+        "D": "A declaration that the original breach of trust was void."
+      },
+      "correct_answer": "B",
+      "explanation": "The remedy for knowing receipt and dishonest assistance is personal liability — the defendant is treated as a constructive trustee and must account for the value received or for the profit made from their wrongdoing. Where the trust property is still traceable in the defendant's hands, the beneficiary may seek a proprietary remedy — asserting a claim to the specific property or its traceable substitute — in addition to or instead of a personal claim. The proprietary remedy is more powerful as it does not depend on the defendant's solvency."
+    },
+    {
+      "id": "EQL_M08_L02_Q09",
+      "question": "A professional adviser assists a trustee in diverting trust funds to an account controlled by the adviser. The adviser receives part of the diverted funds. Which head of third-party liability — or both — may apply?",
+      "options": {
+        "A": "Only knowing receipt — because the adviser received money.",
+        "B": "Only dishonest assistance — because the adviser's primary role was as an assistant.",
+        "C": "Both knowing receipt and dishonest assistance may apply — the adviser both assisted the trustee dishonestly and received trust property with knowledge sufficient to make receipt unconscionable.",
+        "D": "Neither — professional advisers are exempt from third-party liability where they act within their professional capacity."
+      },
+      "correct_answer": "C",
+      "explanation": "Both heads of liability may apply on these facts. The adviser's active role in diverting trust funds constitutes dishonest assistance — they assisted the trustee in committing a breach of trust and, applying the objective dishonesty test from Royal Brunei Airlines v Tan (1995), their conduct clearly falls below the standard of the honest person. Their receipt of part of the diverted funds also grounds a knowing receipt claim under the unconscionability test from BCCI v Akindele (2000). Both heads may be pleaded in the alternative."
+    },
+    {
+      "id": "EQL_M08_L02_Q10",
+      "question": "For FE-1 examination purposes, what is the key distinction between knowing receipt and dishonest assistance that a candidate must identify?",
+      "options": {
+        "A": "Knowing receipt applies to third parties outside the jurisdiction; dishonest assistance applies to those within Ireland only.",
+        "B": "Knowing receipt requires actual receipt of trust property with the requisite unconscionable knowledge (BCCI v Akindele 2000); dishonest assistance requires only dishonest participation in a breach of trust without any need for the defendant to have received trust property (Royal Brunei v Tan 1995).",
+        "C": "Knowing receipt is a criminal offence; dishonest assistance is a civil wrong.",
+        "D": "Knowing receipt applies to individual defendants; dishonest assistance applies to corporate defendants."
+      },
+      "correct_answer": "B",
+      "explanation": "For FE-1 purposes, the key distinction is: knowing receipt requires actual receipt of trust property transferred in breach of trust, with a state of knowledge that makes retention unconscionable — the unconscionability test from BCCI v Akindele (2000), applied in Ireland in Halley v The Law Society. Dishonest assistance requires dishonest participation in a breach of trust — assessed objectively from Royal Brunei Airlines v Tan (1995) and Barlow Clowes v Eurotrust — but does not require actual receipt of trust property. Both heads impose personal liability as a constructive trustee."
+    }
+  ]
+}

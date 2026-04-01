@@ -1,0 +1,131 @@
+{
+  "subject": "Constitutional Law",
+  "el_script_ref": "ConstitutionalLaw_ElevenLabs_Module02_Lesson01.txt",
+  "module_number": 2,
+  "module_title": "Separation of Powers",
+  "lesson_number": 1,
+  "lesson_title": "The Doctrine of Separation of Powers",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CON_M02_L01_Q01",
+      "question": "The doctrine of separation of powers as it operates under the Irish Constitution rests primarily on which Article, and how does that Article express the doctrine?",
+      "options": {
+        "A": "Article 15.4 degrees: by prohibiting the Oireachtas from enacting legislation repugnant to the Constitution, thereby separating legislative from constitutional power",
+        "B": "Article 6.2: by providing that these powers of government are exercisable only by or on the authority of the organs of State established by the Constitution",
+        "C": "Article 34.1: by providing that justice shall be administered in courts established by law by judges appointed in the manner provided by the Constitution",
+        "D": "Article 28.2: by vesting executive power in the Government, thereby separating it from the legislative power vested in the Oireachtas"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 6.2 is the principal constitutional expression of the separation of powers doctrine: 'These powers of government are exercisable only by or on the authority of the organs of State established by this Constitution.' Read with Article 6.1 (which identifies legislative, executive and judicial powers), Art. 6.2 requires that each power be exercised by or under the authority of the constitutionally designated organ — the Oireachtas (legislative), the Government (executive), and the Courts (judicial). While Articles 15, 28 and 34 spell out each organ's specific functions, Art. 6.2 is the umbrella provision that grounds the tripartite doctrine. The three-organ, three-function structure prevents arbitrary or tyrannical concentration of power in a single institution."
+    },
+    {
+      "id": "CON_M02_L01_Q02",
+      "question": "Buckley v Attorney General [1950] IR 67 is the foundational Irish authority on the prohibition on the legislature directing the outcome of judicial proceedings. Which of the following accurately describes the facts and the constitutional violation found?",
+      "options": {
+        "A": "The Oireachtas enacted legislation that retrospectively validated certain land transactions, thereby determining the outcome of pending High Court proceedings in favour of one party; the Supreme Court held this violated Article 34.1",
+        "B": "The Oireachtas enacted the Sinn Fein Funds Act 1947, which directed the courts to apply specific rules in distributing disputed funds; the Supreme Court held this unconstitutionally directed the exercise of judicial power in violation of the separation of powers",
+        "C": "The Oireachtas passed a private members' Bill naming the defendant in pending litigation as liable for specific damages; the Supreme Court held this was an unconstitutional exercise of judicial power by the legislature",
+        "D": "The Oireachtas enacted legislation purporting to amend a judicial order made in existing proceedings; the Supreme Court held this could only be done by constitutional amendment rather than ordinary statute"
+      },
+      "correct_answer": "B",
+      "explanation": "In Buckley v AG [1950] IR 67, the Sinn Fein Funds Act 1947 directed the courts to distribute disputed funds in a specific manner when a case was actually pending before them. The Supreme Court held that by enacting legislation that effectively determined the outcome of ongoing judicial proceedings, the Oireachtas had unconstitutionally usurped the judicial power. The principle established is that while the legislature may prospectively alter the general law applicable to a class of cases, it may not direct the result of a particular pending case — that would be exercising judicial power, which Article 34.1 reserves to the courts. This remains the leading authority on the legislative-judicial boundary in Ireland."
+    },
+    {
+      "id": "CON_M02_L01_Q03",
+      "question": "McDonald v Bord na gCon [1965] IR 217 established a crucial test for distinguishing judicial power from administrative power. Which of the following most accurately states the criteria applied by the Supreme Court?",
+      "options": {
+        "A": "Judicial power is characterised by finality of decision and the capacity to affect the rights of citizens; any administrative body that affects rights is therefore exercising judicial power and must be a court",
+        "B": "Judicial power involves the final determination of rights and duties existing at law; it may be distinguished from administrative power, which implements policy rather than applying pre-existing legal rights and duties",
+        "C": "Judicial power is exclusively vested in the superior courts; tribunal decisions are per se administrative in nature regardless of the procedural fairness with which they operate",
+        "D": "Any power capable of affecting a citizen's liberty is automatically a judicial power; administrative bodies may affect property rights but never liberty"
+      },
+      "correct_answer": "B",
+      "explanation": "In McDonald v Bord na gCon [1965] IR 217, the Supreme Court (Kenny J concurring) articulated the test distinguishing judicial from non-judicial functions: judicial power involves the determination of disputes about existing rights and duties established by law, with the decision having binding legal force. Administrative power, by contrast, involves applying policy, allocating resources or implementing legislative schemes rather than authoritatively determining pre-existing legal rights. This distinction matters because Article 34.1 requires that justice be administered in courts — but the concept of 'justice' here refers specifically to the judicial power in the McDonald sense. Administrative decisions affecting rights do not automatically constitute the administration of justice requiring a court; they may be made by tribunals or administrative bodies provided fair procedures apply."
+    },
+    {
+      "id": "CON_M02_L01_Q04",
+      "question": "In Goodman International v Hamilton [1992] 2 IR 542, the Supreme Court considered whether a tribunal of inquiry chaired by a judge exercised the judicial power of the State. Which of the following accurately states the court's conclusion and its reasoning?",
+      "options": {
+        "A": "The tribunal exercised judicial power because it was chaired by a judge of the High Court; any body chaired by a judge necessarily exercises the judicial power",
+        "B": "The tribunal did not exercise judicial power because it lacked the capacity to finally determine legal rights — its findings were of a historical/fact-finding nature without binding legal force",
+        "C": "The tribunal exercised judicial power because it could make findings of fact adverse to named individuals, which constituted a determination of their legal rights",
+        "D": "The tribunal was an extension of the executive power and could therefore determine rights without judicial oversight, provided it operated within the terms of the Tribunals of Inquiry (Evidence) Acts"
+      },
+      "correct_answer": "B",
+      "explanation": "In Goodman International v Hamilton [1992], the Supreme Court held that a tribunal of inquiry established under the Tribunals of Inquiry (Evidence) Acts does not exercise the judicial power of the State. The key distinction is that the tribunal's findings are historical and fact-finding in nature — they do not finally determine legal rights or obligations, and they have no binding legal force in subsequent civil or criminal proceedings (a party found culpable by a tribunal is not thereby convicted in a court). Because the tribunal lacked the capacity to finally determine rights (the McDonald test), it was not exercising judicial power and was not required to be constituted as a court under Article 34.1. The personal adverse findings of such tribunals (e.g., McCracken Tribunal, Moriarty Tribunal) therefore do not constitute judicial determinations."
+    },
+    {
+      "id": "CON_M02_L01_Q05",
+      "question": "The 'personalisation theory' and 'functional theory' are two approaches to the separation of powers. Under the Irish Constitution, which theory prevails, and what is the practical consequence?",
+      "options": {
+        "A": "The personalisation theory prevails: the same person cannot hold office in more than one organ of state simultaneously; therefore an Attorney General cannot sit as a judge, and a minister cannot hold a Dail seat",
+        "B": "The functional theory prevails in its strictest form: each constitutional function (legislative, executive, judicial) can only be exercised by the organ constitutionally designated for that function, with no overlap whatsoever",
+        "C": "A modified functional theory prevails: the functions are primarily allocated to their respective organs, but the Constitution expressly provides for some overlaps (e.g., the Government initiates legislation) and the courts have not enforced strict personalisation",
+        "D": "The personalisation theory prevails with respect to the judiciary only: judges cannot hold executive or legislative office, but ministers may simultaneously hold Dail seats and a senator may be Attorney General"
+      },
+      "correct_answer": "C",
+      "explanation": "The Irish Constitution adopts a modified functional approach. Each function is primarily allocated to its constitutional organ (legislative to the Oireachtas, executive to the Government, judicial to the courts), but the Constitution itself provides for significant overlaps: the Government (executive) initiates most legislation and has the primary role in Money Bills; the President exercises functions in each sphere (signs legislation, appoints judges, exercises executive prerogative). Furthermore, the Constitution expressly provides that ministers must be members of the Oireachtas (Art. 28.7), meaning executive and legislative roles necessarily overlap. The strict personalisation theory (which would prohibit any individual holding roles in more than one organ) has never been applied in Ireland. The functional allocation is the core principle, with constitutionally authorised overlap."
+    },
+    {
+      "id": "CON_M02_L01_Q06",
+      "question": "The Supreme Court in Boland v An Taoiseach [1974] IR 338 was asked to rule on whether the Sunningdale Agreement and the proposed Council of Ireland were constitutional. The court declined on a ground that is constitutionally significant independently of the substantive issue. What was that ground?",
+      "options": {
+        "A": "The court lacked jurisdiction because the matter had not been the subject of a referendum under Article 46, which the court held was a jurisdictional prerequisite for constitutional challenges to treaty arrangements",
+        "B": "The court declined on the ground that it lacked standing to examine governmental negotiations and political agreements before they were given effect in law — ruling that the matter was non-justiciable as it did not involve a legally enforceable right or duty",
+        "C": "The court declined on the ground that separation of powers prohibited it from issuing advisory opinions on the constitutionality of proposed government agreements before legislative enactment",
+        "D": "The court declined on standing grounds, holding that the plaintiff had no sufficient personal interest in the outcome since the Council of Ireland had not yet been established"
+      },
+      "correct_answer": "B",
+      "explanation": "In Boland v An Taoiseach [1974] IR 338, the Supreme Court declined to examine the constitutional validity of the Sunningdale Agreement on the ground that the matter was non-justiciable: there was no legally enforceable right or duty before the court because the Agreement had not yet been given legal effect in Irish law. The court held it could not adjudicate on political negotiations or arrangements that had not been translated into legal obligations. This principle — that courts will not rule on political questions that do not crystallise into justiciable legal disputes — reflects the separation of powers: the judicial organ must confine itself to the resolution of legal rights and duties, not to reviewing governmental political strategy. The distinction between political decisions and justiciable legal rights is a key aspect of Irish separation of powers doctrine."
+    },
+    {
+      "id": "CON_M02_L01_Q07",
+      "question": "The separation of powers doctrine has implications for the advisory opinion jurisdiction. Under the Irish Constitution, which of the following correctly states the position regarding the courts issuing advisory opinions?",
+      "options": {
+        "A": "The Supreme Court has an express advisory opinion jurisdiction under Article 26, which allows the President to refer any Bill before signing it; outside of this, the courts cannot issue advisory opinions",
+        "B": "The courts may issue advisory opinions on constitutional questions at the request of the Attorney General, acting on behalf of the executive",
+        "C": "The courts have no jurisdiction whatsoever to issue opinions on constitutional questions in advance of actual litigation; even Article 26 references are not advisory opinions as the reference involves a concrete Bill",
+        "D": "The courts may issue advisory opinions where the legal question is of general public importance and the High Court certifies that a sufficient legal interest exists"
+      },
+      "correct_answer": "A",
+      "explanation": "Article 26 provides the only express advisory/pre-enactment jurisdiction in the Irish Constitution: the President may refer a Bill (or specific provisions) to the Supreme Court before signing it, and the court must rule on its constitutionality within 60 days. Outside of this narrow Article 26 jurisdiction, Irish courts do not issue advisory opinions — a principle derived from the separation of powers. Courts exercise judicial power by adjudicating concrete disputes about existing legal rights; rendering opinions on hypothetical or future legal questions would be an exercise of something other than the judicial function and would blur the boundary between the judicial and executive/legislative spheres. The Article 26 jurisdiction is sui generis and constitutionally exceptional."
+    },
+    {
+      "id": "CON_M02_L01_Q08",
+      "question": "In Re Haughey [1971] IR 217, the Supreme Court considered the constitutional rights of a citizen who appeared before an Oireachtas Committee of Public Accounts. Which principle emerging from this case is most relevant to the separation of powers?",
+      "options": {
+        "A": "The Oireachtas may exercise quasi-judicial powers to determine the rights of citizens appearing before its committees, provided the procedures adopted comply with natural justice",
+        "B": "The Oireachtas committee was exercising a legitimate legislative/investigative function but in doing so was required to observe fair procedures; it could not, however, finally determine Haughey's legal rights",
+        "C": "The appearance of a Minister before an Oireachtas committee was unconstitutional as it required the executive to be accountable to the legislative organ in a manner that violated executive independence",
+        "D": "The Supreme Court held that the Oireachtas could not investigate matters within the executive's domain without first obtaining leave of the High Court"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Haughey [1971] IR 217, the Supreme Court (O'Dalaigh CJ) held that when the Oireachtas Committee of Public Accounts summoned witnesses to give evidence, it was exercising a legitimate investigative/oversight function within the legislative sphere — not the judicial power. However, the court also held that where the committee's proceedings could affect a person's good name or constitutional rights, fair procedures (audi alteram partem, right to be represented, right to cross-examine) were required. The case is thus important for two reasons: it confirms that Oireachtas committees can investigate matters within their remit (including executive conduct) without this constituting an unconstitutional usurpation of judicial power, while also establishing that even non-judicial proceedings must respect constitutional rights."
+    },
+    {
+      "id": "CON_M02_L01_Q09",
+      "question": "The principle in Buckley v Attorney General [1950] was applied and extended in subsequent cases. Which of the following scenarios would most clearly constitute an unconstitutional exercise of legislative power that infringes the judicial function?",
+      "options": {
+        "A": "The Oireachtas enacts legislation increasing the penalty for drug offences, which applies to offences committed after the Act's commencement but before any specific defendant is sentenced",
+        "B": "The Oireachtas enacts a retrospective statute that deems a named individual to have been guilty of a specified offence, without any court having adjudicated on the matter",
+        "C": "The Oireachtas enacts legislation creating a new right of appeal from circuit court decisions to the Court of Appeal, applicable to all pending cases",
+        "D": "The Oireachtas legislates to abolish a particular criminal offence with prospective effect, thereby terminating pending prosecutions for that offence"
+      },
+      "correct_answer": "B",
+      "explanation": "The clearest violation of the Buckley principle would be the legislature deeming a named individual guilty of an offence — a classic bill of attainder, which is the archetype of the legislature usurping the judicial function. By making a finding of fact and law about an identified individual's guilt, the legislature would be performing the core judicial act of adjudicating on rights and liabilities under the law, which Article 34.1 reserves exclusively to courts. Options A and C are constitutionally permissible: prospective penalty increases and new appellate structures change the general law without directing the result of any specific case. Option D (prospective abolition of an offence) terminates proceedings as a matter of law, which the legislature is entitled to do prospectively."
+    },
+    {
+      "id": "CON_M02_L01_Q10",
+      "question": "The State (Lynch) v Cooney [1982] IR 337 raised separation of powers issues in the context of the executive's control over broadcasting. Which of the following accurately states the constitutional issue determined?",
+      "options": {
+        "A": "The court held that the Minister for Posts and Telegraphs could constitutionally prohibit RTÉ from broadcasting certain political party material under the Broadcasting Authority Act 1960, provided the prohibition was not directed at a particular pending court case",
+        "B": "The court held that executive direction of RTÉ's broadcasting content violated the judicial power because broadcasting decisions must be made by an independent statutory body and not the Government",
+        "C": "The court held that Ministerial direction of RTÉ to refuse airtime to Sinn Fein violated the separation of powers because the Minister was making a quasi-judicial determination of the plaintiff's rights",
+        "D": "The court held that the executive had no power under the Broadcasting Authority Act 1960 to issue directions to RTÉ without Oireachtas approval, as this would be an unconstitutional delegation of legislative power to the executive"
+      },
+      "correct_answer": "A",
+      "explanation": "In State (Lynch) v Cooney [1982] IR 337, the Minister for Posts and Telegraphs directed RTÉ not to broadcast material from Sinn Fein, relying on s.31 of the Broadcasting Authority Act 1960. The Supreme Court upheld the constitutionality of this direction. The court confirmed that such executive direction of broadcasting content does not constitute the exercise of judicial power — the minister was exercising a statutory power within the executive domain, not determining legal rights in any judicial sense. The separation of powers concern was not engaged because the executive was operating within its legislative mandate. The case is also important for freedom of expression (Art. 40.6.1 degrees(i)) as the court held the restriction was constitutionally permissible for public order/security reasons during the Troubles period."
+    }
+  ]
+}

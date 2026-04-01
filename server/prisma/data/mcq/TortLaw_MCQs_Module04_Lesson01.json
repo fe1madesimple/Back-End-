@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "Module_04_Lesson_01_Factual_Causation_—_The_But_For_Test.txt",
+  "module_number": 4,
+  "module_title": "Causation",
+  "lesson_number": 1,
+  "lesson_title": "Factual Causation — The But-For Test",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M04_L01_Q01",
+      "question": "The but-for test for factual causation asks:",
+      "options": {
+        "A": "Whether the defendant owed the plaintiff a duty of care",
+        "B": "But for the defendant's breach, would the plaintiff have suffered the same damage?",
+        "C": "Whether the type of harm was reasonably foreseeable",
+        "D": "Whether a novus actus interveniens broke the chain of causation"
+      },
+      "correct_answer": "B",
+      "explanation": "The but-for test is the primary test for factual causation. It asks: but for the defendant's breach of duty, would the plaintiff have suffered the same damage? If the answer is no — the damage would not have occurred but for the breach — causation is established. If yes — the damage would have occurred anyway — causation fails."
+    },
+    {
+      "id": "TL_M04_L01_Q02",
+      "question": "In Barnett v Chelsea and Kensington Hospital Management Committee [1969], causation failed because:",
+      "options": {
+        "A": "The doctor owed no duty of care to the patient",
+        "B": "The patient had contributed to his own condition",
+        "C": "Even if the doctor had examined the patient, nothing could have been done — the patient would have died regardless of the breach",
+        "D": "The arsenic poisoning was too remote a cause to be foreseeable"
+      },
+      "correct_answer": "C",
+      "explanation": "In Barnett [1969], the on-call doctor negligently failed to examine a night watchman who had been poisoned by arsenic. The court held causation was not established — even if the doctor had acted non-negligently, the patient would have died. But for the breach, the outcome would have been the same. This is the classic illustration of the but-for test defeating a claim on causation."
+    },
+    {
+      "id": "TL_M04_L01_Q03",
+      "question": "The Irish Supreme Court case of Maitland v Swan is significant for factual causation because it:",
+      "options": {
+        "A": "Abolished the but-for test in favour of the material contribution test",
+        "B": "Confirmed that the but-for test is the starting point for causation analysis in Irish law",
+        "C": "Held that loss of a chance below 50% is recoverable in Ireland",
+        "D": "Applied the Wagon Mound foreseeability test to factual causation"
+      },
+      "correct_answer": "B",
+      "explanation": "Maitland v Swan (Irish Supreme Court) confirmed that the but-for test is the starting point for causation analysis. Irish courts apply it rigorously before considering more complex causation scenarios such as material contribution."
+    },
+    {
+      "id": "TL_M04_L01_Q04",
+      "question": "The but-for test faces its greatest difficulty in which type of scenario?",
+      "options": {
+        "A": "Cases involving a single negligent defendant and a single cause of injury",
+        "B": "Cases where the plaintiff has a pre-existing condition",
+        "C": "Multiple causation scenarios where several independent causes each contribute to the harm",
+        "D": "Cases involving pure economic loss"
+      },
+      "correct_answer": "C",
+      "explanation": "The but-for test breaks down in multiple causation scenarios. For example, where two defendants independently set fires that combine to destroy property, neither fire alone was sufficient — applying the but-for test to each independently would exonerate both, which would be unjust. In response, courts developed the material contribution test."
+    },
+    {
+      "id": "TL_M04_L01_Q05",
+      "question": "The material contribution test holds that a defendant may be liable if their breach:",
+      "options": {
+        "A": "Was the sole cause of the plaintiff's damage",
+        "B": "Materially contributed to the plaintiff's damage, even if it was not the only cause and even if the but-for test cannot be strictly satisfied",
+        "C": "Was a cause of the damage only where all other causes were non-tortious",
+        "D": "Occurred within the limitation period and was foreseeable in type"
+      },
+      "correct_answer": "B",
+      "explanation": "The material contribution test was developed to address cases where the but-for test produces an unjust result. A defendant is liable if their breach materially contributed to the plaintiff's damage — even where other causes (tortious or non-tortious) were also operating. It does not require the breach to be the sole or dominant cause."
+    },
+    {
+      "id": "TL_M04_L01_Q06",
+      "question": "Bonnington Castings v Wardlaw [1956] HoL established the material contribution test on facts involving:",
+      "options": {
+        "A": "A road traffic accident with multiple colliding vehicles",
+        "B": "A plaintiff who contracted pneumoconiosis from a combination of tortious and non-tortious silica dust exposure at work",
+        "C": "A patient who lost a 40% chance of recovery due to medical negligence",
+        "D": "Two defendants whose independently negligent acts combined to flood the plaintiff's property"
+      },
+      "correct_answer": "B",
+      "explanation": "In Bonnington Castings v Wardlaw [1956], the plaintiff contracted pneumoconiosis from silica dust. Some dust came from a tortious source (negligently maintained equipment) and some from a non-tortious source. The House of Lords held the defendant liable because the tortious exposure materially contributed to the disease — even though its precise contribution could not be quantified."
+    },
+    {
+      "id": "TL_M04_L01_Q07",
+      "question": "In Philp v Ryan [2004] Irish Supreme Court, the court applied the material contribution test to hold that:",
+      "options": {
+        "A": "A hospital was not liable because the patient's pre-existing condition was the dominant cause of harm",
+        "B": "A medical practitioner whose negligence materially contributed to a patient's deterioration could be held liable even where other causative factors were present",
+        "C": "The but-for test was satisfied on the facts because no other cause was operating",
+        "D": "Loss of a chance below 50% was recoverable in Irish law"
+      },
+      "correct_answer": "B",
+      "explanation": "Philp v Ryan [2004] is the leading Irish authority on material contribution in a medical context. The Irish Supreme Court confirmed that where a medical practitioner's negligence materially contributed to a patient's deterioration — even alongside other causative factors — the defendant could be held liable. It is the key Irish case to cite alongside Bonnington Castings."
+    },
+    {
+      "id": "TL_M04_L01_Q08",
+      "question": "In Hotson v East Berkshire Area Health Authority [1987], the House of Lords refused to allow recovery for:",
+      "options": {
+        "A": "Pain and suffering resulting from a surgical procedure",
+        "B": "A loss of a less-than-50% chance of a better medical outcome",
+        "C": "Future loss of earnings where the plaintiff had no employment history",
+        "D": "Psychiatric injury caused by witnessing the plaintiff's own physical injury"
+      },
+      "correct_answer": "B",
+      "explanation": "In Hotson [1987], the plaintiff argued that the hospital's negligence deprived him of a 25% chance of avoiding a permanent disability. The House of Lords refused recovery — a less-than-50% chance did not satisfy the balance of probabilities standard for causation. The loss of chance doctrine remains contested in Irish law and candidates should note the academic debate."
+    },
+    {
+      "id": "TL_M04_L01_Q09",
+      "question": "Which of the following correctly distinguishes factual causation from remoteness (legal causation)?",
+      "options": {
+        "A": "Factual causation asks whether the breach caused the harm; remoteness asks whether the harm is of a type the law will compensate",
+        "B": "Factual causation applies the Wagon Mound test; remoteness applies the but-for test",
+        "C": "Factual causation is relevant only in personal injury cases; remoteness applies to all tort claims",
+        "D": "There is no practical distinction — both are subsets of the breach inquiry"
+      },
+      "correct_answer": "A",
+      "explanation": "Factual causation and remoteness are distinct inquiries that must be kept separate. Factual causation (but-for test / material contribution) asks: did the defendant's breach cause the harm? Remoteness (Wagon Mound) asks: is the harm of a type the law will recognise? A claim can fail on either."
+    },
+    {
+      "id": "TL_M04_L01_Q10",
+      "question": "On an FE-1 problem question involving causation, the correct analytical sequence is:",
+      "options": {
+        "A": "Apply remoteness first, then if satisfied, apply the but-for test",
+        "B": "Apply the but-for test first; if it fails due to multiple causes, consider material contribution; then address remoteness separately",
+        "C": "Apply the material contribution test in all cases as it is the broader and more plaintiff-friendly test",
+        "D": "Apply both tests simultaneously and use whichever produces the better result for the plaintiff"
+      },
+      "correct_answer": "B",
+      "explanation": "The correct sequence for causation on the FE-1 is: (1) state and apply the but-for test; (2) if it fails due to multiple causes, move to material contribution (Bonnington Castings; Philp v Ryan); (3) address remoteness separately in Module 5 (Wagon Mound). Always keep factual causation and remoteness as distinct questions."
+    }
+  ]
+}

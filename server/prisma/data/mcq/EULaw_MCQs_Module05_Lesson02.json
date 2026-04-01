@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module05_Lesson02.txt",
+  "module_number": 5,
+  "module_title": "Supremacy and Direct Effect",
+  "lesson_number": 2,
+  "lesson_title": "Direct Effect: Treaty Provisions and Regulations",
+  "questions": [
+    {
+      "id": "EUL_M05_L02_Q01",
+      "question": "The principle of direct effect was established by the Court of Justice in which case?",
+      "options": {
+        "A": "Costa v ENEL [1964]",
+        "B": "Van Gend en Loos [1963]",
+        "C": "Francovich v Italy [1991]",
+        "D": "Marshall v Southampton Health Authority [1986]"
+      },
+      "correct_answer": "B",
+      "explanation": "Van Gend en Loos (Case 26/62) established direct effect. The Court held that Community law was capable of conferring rights on individuals which national courts must protect, without the need for any implementing national legislation. The case concerned Article 12 EEC (now Article 30 TFEU) — the prohibition on introducing new customs duties."
+    },
+    {
+      "id": "EUL_M05_L02_Q02",
+      "question": "In Van Gend en Loos [1963], the Court held that the EEC Treaty 'constitutes a new legal order of international law'. What was the significance of the phrase 'for the benefit of which the states have limited their sovereign rights'?",
+      "options": {
+        "A": "It confirmed that member states had transferred all legislative powers to the Community",
+        "B": "It established that the Community legal order operates independently of national law and generates rights for individuals, not just obligations for states — the Community's subjects include individuals, not only member states",
+        "C": "It confirmed that the EEC Treaty was a multilateral international agreement with no different legal character than other international treaties",
+        "D": "It provided the legal basis for the Commission to impose direct penalties on individuals"
+      },
+      "correct_answer": "B",
+      "explanation": "The 'new legal order' formulation was revolutionary: unlike traditional international law (which creates rights and obligations between states), EU law creates a legal order in which individuals are directly subject to EU law and can derive rights from it. Member states are not the only subjects of EU law — individuals too are direct subjects of this legal order, making direct effect the natural consequence."
+    },
+    {
+      "id": "EUL_M05_L02_Q03",
+      "question": "The conditions for direct effect of Treaty provisions (established in Van Gend en Loos and refined in subsequent cases) are that the provision must be:",
+      "options": {
+        "A": "Binding, published in the Official Journal, and adopted under the ordinary legislative procedure",
+        "B": "Clear and precise, unconditional, and not leaving member states or EU institutions any real discretion in implementation",
+        "C": "Directly applicable, with a specific implementation deadline, and addressed to all member states",
+        "D": "Part of primary law (Treaties) — secondary law can never have direct effect"
+      },
+      "correct_answer": "B",
+      "explanation": "The criteria for direct effect: (1) the provision must be sufficiently clear and precise in its terms; (2) it must be unconditional (not subject to any reservation allowing states to limit its application); (3) it must not leave member states or institutions a real margin of discretion. When these conditions are met, the provision confers rights which national courts must protect."
+    },
+    {
+      "id": "EUL_M05_L02_Q04",
+      "question": "'Vertical' direct effect means:",
+      "options": {
+        "A": "The provision can be relied upon in relationships between private individuals",
+        "B": "The provision can be relied upon by an individual against the state (or an emanation of the state)",
+        "C": "The provision applies from a higher treaty provision downwards to national implementing legislation",
+        "D": "The provision creates obligations that run vertically — from EU institutions to member states only"
+      },
+      "correct_answer": "B",
+      "explanation": "Vertical direct effect means the EU provision can be invoked by an individual against the state, including state agencies and emanations of the state. Treaty provisions and Regulations have vertical direct effect. Directives have only vertical direct effect (Marshall — cannot be invoked horizontally against private parties). The 'state' includes public authorities and bodies subject to state authority or control."
+    },
+    {
+      "id": "EUL_M05_L02_Q05",
+      "question": "'Horizontal' direct effect means:",
+      "options": {
+        "A": "The provision applies uniformly across all member states",
+        "B": "The provision can be relied upon by an individual against another private individual or company",
+        "C": "The provision creates obligations running from member states to EU institutions",
+        "D": "The provision applies across different policy areas, not just the one in which it is located in the Treaty"
+      },
+      "correct_answer": "B",
+      "explanation": "Horizontal direct effect allows individuals to invoke EU law rights against other private parties (not just the state). Treaty provisions on free movement of persons and equal pay (Article 157 TFEU — Defrenne No.2) have been held to have horizontal direct effect. Directives do NOT have horizontal direct effect (Marshall; Faccini Dori) — this remains a firm boundary in CJEU case law."
+    },
+    {
+      "id": "EUL_M05_L02_Q06",
+      "question": "Article 12 TFEU (now Article 30 TFEU — prohibition on customs duties and charges of equivalent effect) was held to have direct effect in Van Gend en Loos because:",
+      "options": {
+        "A": "It was a Regulation and therefore directly applicable",
+        "B": "It was a clear, precise, and unconditional prohibition on member states importing new customs duties — it left no discretion as to the result to be achieved",
+        "C": "The Netherlands had expressly incorporated it into domestic law",
+        "D": "The Commission had issued implementing legislation giving it direct force"
+      },
+      "correct_answer": "B",
+      "explanation": "The Court in Van Gend held that Article 12 EEC (prohibition on introducing new or higher customs duties — a 'standstill' obligation) was directly effective because it imposed a precise negative obligation on member states with no reservation, leaving no discretion. Its wording was clear, unconditional, and capable of being applied by a national court without further implementation."
+    },
+    {
+      "id": "EUL_M05_L02_Q07",
+      "question": "Regulations are described in Article 288 TFEU as 'directly applicable'. This relates to direct effect in what way?",
+      "options": {
+        "A": "Direct applicability means Regulations automatically have direct effect — all Regulation provisions confer enforceable individual rights",
+        "B": "Direct applicability means Regulations form part of national law automatically (no transposition needed); direct effect additionally requires the provision to be clear, precise, and unconditional to confer individual rights",
+        "C": "Direct applicability and direct effect are synonymous concepts for Regulations",
+        "D": "Regulations are directly applicable but cannot have direct effect against private parties"
+      },
+      "correct_answer": "B",
+      "explanation": "Direct applicability (specific to Regulations under Article 288 TFEU) means the Regulation automatically becomes part of national law. Direct effect is a separate question — it asks whether a specific provision is sufficiently clear, precise, and unconditional to confer rights on individuals. Most Regulation provisions will be directly effective, but not all — a provision leaving discretion to the Commission or member states may not satisfy direct effect conditions."
+    },
+    {
+      "id": "EUL_M05_L02_Q08",
+      "question": "Equal pay under Article 157 TFEU (former Article 119 EEC/141 TEC) was held to have horizontal direct effect in:",
+      "options": {
+        "A": "Van Gend en Loos [1963]",
+        "B": "Defrenne v Sabena (No.2) [1976]",
+        "C": "Marshall v Southampton Health Authority [1986]",
+        "D": "Barber v Guardian Royal Exchange [1990]"
+      },
+      "correct_answer": "B",
+      "explanation": "In Defrenne No.2 (Case 43/75), the Court held that Article 119 EEC (equal pay) had direct effect in employment relationships, including those between private parties (Defrenne worked for Sabena, a private airline). This was the first recognition of horizontal direct effect of a Treaty provision in the field of social policy. The Court limited temporal effects to avoid financial disruption to established pay systems."
+    },
+    {
+      "id": "EUL_M05_L02_Q09",
+      "question": "The Walgrave and Koch case [1974] held that the EU Treaty provisions on free movement applied to private sporting regulatory bodies because:",
+      "options": {
+        "A": "Sporting bodies are always emanations of the state under EU law",
+        "B": "Abolition of obstacles to free movement would be compromised if the prohibition on discrimination applied only to state action — it must also apply to rules of private bodies with collective regulatory power",
+        "C": "The members of the sporting body held national public office",
+        "D": "The Commission had issued a Decision specifically including sporting bodies in the scope of the free movement rules"
+      },
+      "correct_answer": "B",
+      "explanation": "Walrave and Koch established that free movement Treaty provisions apply to private regulatory bodies that collectively govern access to economic activity. The Court reasoned that free movement would be ineffective if it only bound states — private bodies exercising collective quasi-regulatory power must also be subject to the prohibition on discrimination. This is the 'public function' or 'regulatory power' rationale for horizontal application of some Treaty freedoms."
+    },
+    {
+      "id": "EUL_M05_L02_Q10",
+      "question": "Which of the following provisions of the TFEU has been held to have direct effect?",
+      "options": {
+        "A": "Article 4(3) TEU (sincere cooperation) on its own",
+        "B": "Article 45 TFEU (free movement of workers), Article 49 TFEU (freedom of establishment), Article 56 TFEU (freedom to provide services), and Article 157 TFEU (equal pay)",
+        "C": "Article 7 TEU (rule of law values procedure)",
+        "D": "Article 340 TFEU (non-contractual liability of the EU)"
+      },
+      "correct_answer": "B",
+      "explanation": "Multiple TFEU provisions have been held directly effective: Article 45 TFEU (Van Duyn; Reyners-equivalent); Article 49 TFEU (Reyners [1974]); Article 56 TFEU (services); Article 157 TFEU (Defrenne No.2). Article 34 TFEU (free movement of goods) has also been held directly effective. These provisions meet the criteria of being clear, precise, and unconditional."
+    }
+  ],
+  "total_questions": 10
+}

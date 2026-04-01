@@ -1,0 +1,131 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module01_Lesson02.txt",
+  "module_number": 1,
+  "module_title": "Introduction to Company Law and Incorporation",
+  "lesson_number": 2,
+  "lesson_title": "Advantages and Disadvantages of Incorporation",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is the primary commercial advantage of incorporating a limited company?",
+      "options": {
+        "A": "Directors gain immunity from civil suits",
+        "B": "Members' personal liability is limited to the amount unpaid on their shares",
+        "C": "The company pays no corporation tax in its first year",
+        "D": "Directors are not required to file annual returns"
+      },
+      "correct_answer": "B",
+      "explanation": "The principal advantage of incorporation is limited liability: members cannot be required to pay more than the amount (if any) unpaid on their shares, shielding personal assets from company debts."
+    },
+    {
+      "id": 2,
+      "question": "In Macaura v Northern Assurance Co Ltd [1925], the House of Lords held that a shareholder:",
+      "options": {
+        "A": "Has an insurable interest in company property as beneficial owner",
+        "B": "Has no insurable interest in property owned by the company",
+        "C": "Can insure company assets in a personal capacity",
+        "D": "Is entitled to claim on a company insurance policy as a co-insured"
+      },
+      "correct_answer": "B",
+      "explanation": "In Macaura v Northern Assurance [1925] AC 619, the House of Lords confirmed that a shareholder has no insurable interest in the company's property because the company, as a separate legal person, owns its own assets."
+    },
+    {
+      "id": 3,
+      "question": "Perpetual succession as an advantage of incorporation means that:",
+      "options": {
+        "A": "Directors serve for life",
+        "B": "The company continues to exist regardless of changes in membership or directorship",
+        "C": "Shares automatically pass to a member's children on death",
+        "D": "The company cannot be wound up without a court order"
+      },
+      "correct_answer": "B",
+      "explanation": "Perpetual succession means the company's existence is not affected by the death, retirement, or insolvency of any of its members or directors — the company continues as the same legal entity."
+    },
+    {
+      "id": 4,
+      "question": "A key advantage of the company structure over a partnership is that a company can raise capital by:",
+      "options": {
+        "A": "Issuing shares to new investors without disturbing existing members' assets",
+        "B": "Borrowing from the State at zero interest",
+        "C": "Distributing profits tax-free to shareholders",
+        "D": "Issuing bearer bonds to anonymous investors without any disclosure"
+      },
+      "correct_answer": "A",
+      "explanation": "A company can raise capital by issuing shares or debentures. New shares can be allotted to investors without disturbing the existing legal structure, making companies far more flexible capital vehicles than partnerships."
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is a disadvantage of incorporation compared to operating as a sole trader or partnership?",
+      "options": {
+        "A": "Loss of limited liability protection",
+        "B": "Regulatory burden and mandatory public disclosure requirements",
+        "C": "Inability to enter contracts in the business name",
+        "D": "Prohibition on employing staff"
+      },
+      "correct_answer": "B",
+      "explanation": "A significant disadvantage of incorporation is the regulatory burden: companies must file annual returns, financial statements, and other documents with the CRO, which are publicly accessible — increasing administration costs and disclosing information a sole trader or partnership would keep private."
+    },
+    {
+      "id": 6,
+      "question": "Under section 45 CA 2014, a person who enters a contract on behalf of a company not yet incorporated:",
+      "options": {
+        "A": "Is automatically indemnified by the company once incorporated",
+        "B": "Incurs no personal liability as a matter of law",
+        "C": "Is personally liable on that contract",
+        "D": "Can assign the contract to the company retrospectively"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 45 CA 2014 codifies the pre-incorporation contract rule: a person who purports to contract on behalf of a company that does not yet exist is personally liable on that contract, unless the other party agrees otherwise."
+    },
+    {
+      "id": 7,
+      "question": "Which of the following best describes the concept of limited liability?",
+      "options": {
+        "A": "Directors cannot be personally liable under any circumstances",
+        "B": "A member's financial exposure to company debts is capped at the amount unpaid on their shares",
+        "C": "The company's liability to third parties is limited to its share capital",
+        "D": "Only secured creditors can enforce claims against the company"
+      },
+      "correct_answer": "B",
+      "explanation": "Limited liability means that if the company cannot pay its debts, shareholders cannot be compelled to contribute more than the amount, if any, still owing on their shares. Their personal assets beyond this are protected."
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is an advantage of incorporation from the perspective of transferability of ownership?",
+      "options": {
+        "A": "Shares in a private company are freely transferable without restriction",
+        "B": "Ownership can be transferred by selling shares without dissolving the business",
+        "C": "On a transfer of shares, all contractual obligations of the company are novated",
+        "D": "Shares cannot be pledged as security, reducing risk to lenders"
+      },
+      "correct_answer": "B",
+      "explanation": "Unlike a partnership, where a change in ownership often requires dissolution and reformation of the business, shares in a company can be transferred to a new owner without affecting the company's contracts, employees, or assets."
+    },
+    {
+      "id": 9,
+      "question": "A company’s financial statements filed with the CRO are:",
+      "options": {
+        "A": "Confidential and available only to members",
+        "B": "Available only to the Revenue Commissioners",
+        "C": "Publicly accessible on the CRO register",
+        "D": "Sealed for 10 years before public release"
+      },
+      "correct_answer": "C",
+      "explanation": "A significant disadvantage of incorporation is the public disclosure requirement: annual returns and financial statements filed with the CRO are publicly accessible, meaning competitors, creditors, and others can inspect a company's financial position."
+    },
+    {
+      "id": 10,
+      "question": "The rule in Salomon v Salomon [1897] has the practical effect that:",
+      "options": {
+        "A": "A sole trader who incorporates immediately becomes personally liable for all company debts",
+        "B": "A controlling shareholder is personally responsible for company liabilities",
+        "C": "Company creditors can only proceed against the company's assets, not those of the shareholders",
+        "D": "Directors are jointly liable for any unpaid company taxes"
+      },
+      "correct_answer": "C",
+      "explanation": "The Salomon principle means that creditors of an insolvent company can only have recourse to the company's assets. They cannot, as a general rule, pursue the personal assets of shareholders — which is the commercial rationale for limited liability."
+    }
+  ]
+}

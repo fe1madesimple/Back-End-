@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module10_Lesson02.txt",
+  "module_number": 10,
+  "module_title": "Trespass to the Person",
+  "lesson_number": 2,
+  "lesson_title": "Trespass to the Person: Assault and False Imprisonment",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M10_L02_Q01",
+      "question": "How is 'assault' defined in tort law, and how does it differ from the criminal law definition?",
+      "options": {
+        "A": "In both tort and criminal law, assault requires physical contact between defendant and plaintiff",
+        "B": "In tort law, assault is the intentional act of causing the plaintiff to apprehend an imminent, unlawful application of force — no physical contact is required",
+        "C": "In tort law, assault requires physical contact; criminal assault does not",
+        "D": "Assault in tort is identical to battery — the terms are interchangeable in civil law"
+      },
+      "correct_answer": "B",
+      "explanation": "In tort law, assault is the intentional act of causing the plaintiff to reasonably apprehend an imminent, unlawful application of force. Crucially, there is no requirement for any physical contact whatsoever — assault is about the apprehension of imminent contact, not the contact itself. This is an important distinction from the everyday use of the word 'assault', which often implies physical contact. Battery is the separate tort involving actual physical contact."
+    },
+    {
+      "id": "TL_M10_L02_Q02",
+      "question": "What three requirements must be satisfied for the tort of assault?",
+      "options": {
+        "A": "Physical contact; intention to injure; actual harm suffered",
+        "B": "Intention to create apprehension; the plaintiff actually apprehended imminent force; the apprehension was reasonable",
+        "C": "Threatening words; proximity to the plaintiff; unlawful purpose",
+        "D": "Presence of witnesses; deliberate conduct; foreseeable injury"
+      },
+      "correct_answer": "B",
+      "explanation": "Three requirements must be met for the tort of assault: (1) the defendant must have intended to create the apprehension — a deliberately menacing gesture, raising a fist, or pointing a weapon; (2) the plaintiff must have actually apprehended imminent force — an apprehension the plaintiff was unaware of cannot found a claim; and (3) the apprehension must have been reasonable. If a defendant points an unloaded gun at the plaintiff who reasonably believes it is loaded, assault is established even though no actual injury was possible."
+    },
+    {
+      "id": "TL_M10_L02_Q03",
+      "question": "Can words alone constitute an assault in Irish law?",
+      "options": {
+        "A": "No — assault in tort requires a physical gesture and words alone can never suffice",
+        "B": "Yes — sufficiently threatening words directed at a person, causing reasonable apprehension of imminent battery, can constitute assault in Irish law",
+        "C": "Only if the words are accompanied by a written threat",
+        "D": "No — words are protected by freedom of expression and cannot found a tortious claim for assault"
+      },
+      "correct_answer": "B",
+      "explanation": "In Irish law, words alone can constitute an assault if they are sufficiently threatening and cause the plaintiff to reasonably apprehend imminent application of force. The case of Janvier v Sweeney [1919] in England held that threatening words accompanied by conduct were sufficient. The better modern view, consistent with the principle protecting against apprehension of imminent battery, is that sufficiently threatening words, even alone, can constitute assault where they cause a reasonable apprehension of imminent force."
+    },
+    {
+      "id": "TL_M10_L02_Q04",
+      "question": "How can words negate what would otherwise be an assault?",
+      "options": {
+        "A": "Words can only negate an assault if the defendant apologises immediately after the threatening gesture",
+        "B": "Where a defendant's words condition or qualify the threatened force in a way that removes the immediate apprehension — for example, 'Were it not for your age, I would strike you'",
+        "C": "Words can never negate an assault once a physical gesture has been made",
+        "D": "Words negate an assault only if both parties are of equal physical capacity"
+      },
+      "correct_answer": "B",
+      "explanation": "The classic illustration is a defendant who raises a fist but says 'Were it not for your age, I would strike you.' The conditional words negate the apprehension of imminent contact — the plaintiff has been told, in effect, that they will not be struck. In that moment, there is no reasonable apprehension of an immediate application of force, and therefore no assault. The words remove the essential element of imminence that the tort requires."
+    },
+    {
+      "id": "TL_M10_L02_Q05",
+      "question": "Is the tort of assault actionable per se, or must the plaintiff prove actual harm?",
+      "options": {
+        "A": "Assault requires proof of actual physical harm to the plaintiff",
+        "B": "Assault is actionable per se — no actual harm needs to be proved",
+        "C": "Assault requires proof of at least nominal psychiatric injury",
+        "D": "Assault requires proof of financial loss caused by the apprehension of force"
+      },
+      "correct_answer": "B",
+      "explanation": "Assault is actionable per se — the commission of the tort itself gives rise to a right of action, regardless of whether the plaintiff suffered any actual harm as a result of the apprehension. This reflects the law's recognition that the intentional imposition of fear of imminent physical contact is itself a wrong deserving of legal protection, even where no physical injury results. Nominal damages may be awarded where no harm is proved."
+    },
+    {
+      "id": "TL_M10_L02_Q06",
+      "question": "How is 'false imprisonment' defined in tort law?",
+      "options": {
+        "A": "Any restriction on the plaintiff's freedom of movement, whether total or partial",
+        "B": "The total, intentional, and unlawful restraint of the plaintiff's liberty without consent",
+        "C": "The physical detention of the plaintiff in a cell or locked room only",
+        "D": "Any act of a public authority that restricts the plaintiff's freedom to travel"
+      },
+      "correct_answer": "B",
+      "explanation": "False imprisonment is the total, intentional, and unlawful restraint of the plaintiff's liberty without their consent. Three elements are essential: the restraint must be total — if the plaintiff has a reasonable means of escape, there is no false imprisonment; it must be intentional — false imprisonment is an intentional tort; and it must be unlawful — a lawful arrest or detention pursuant to a valid court order is not false imprisonment."
+    },
+    {
+      "id": "TL_M10_L02_Q07",
+      "question": "Why is the requirement that the restraint be 'total' significant in false imprisonment?",
+      "options": {
+        "A": "A partial restriction on freedom of movement, such as being prevented from going in one direction but free to go in another, does not constitute false imprisonment",
+        "B": "The restraint must last for a total of at least one hour to be actionable",
+        "C": "The restraint must cover the plaintiff's entire body, including their arms and legs",
+        "D": "Total restraint means the plaintiff must have been physically pinned down"
+      },
+      "correct_answer": "A",
+      "explanation": "The 'total' requirement means that if the plaintiff has a reasonable means of escape available to them, there is no false imprisonment. If a person is prevented from going in one direction but is free to leave by another route, the restraint is not total and false imprisonment cannot be established. The key question is whether the plaintiff was completely deprived of freedom of movement, with no reasonable avenue of departure available."
+    },
+    {
+      "id": "TL_M10_L02_Q08",
+      "question": "Must physical force be used for a false imprisonment to occur?",
+      "options": {
+        "A": "Yes — false imprisonment requires physical force or restraint",
+        "B": "No — false imprisonment can be effected by a locked door, a threat of force, or a false assertion of legal authority",
+        "C": "Yes — but the physical force need only be nominal, such as placing a hand on the plaintiff's shoulder",
+        "D": "Only in cases involving state actors — private persons must use physical force"
+      },
+      "correct_answer": "B",
+      "explanation": "False imprisonment does not require physical force. A person may be falsely imprisoned by a locked door that prevents exit; by a threat of force that compels them to remain in a place against their will; or by a false assertion of legal authority — for example, falsely claiming a warrant exists when it does not. The key is that the plaintiff was compelled to remain in a place without lawful justification, by whatever means."
+    },
+    {
+      "id": "TL_M10_L02_Q09",
+      "question": "In Herd v Weardale Steel [1915], a miner sought damages for false imprisonment after being refused access to a lift to leave the mine before his shift ended. What did the House of Lords hold?",
+      "options": {
+        "A": "The employer was liable for false imprisonment because the miner had no means of escape from underground",
+        "B": "There was no false imprisonment because the miner had contractually agreed to remain underground until the end of his shift — his consent defined the limits of the restraint",
+        "C": "The employer was liable because the refusal to provide a lift was an unreasonable exercise of power",
+        "D": "The miner's claim succeeded because the employment relationship created a special duty not to restrict liberty"
+      },
+      "correct_answer": "B",
+      "explanation": "In Herd v Weardale Steel [1915] AC 67, the House of Lords held that there was no false imprisonment. The miner had contractually agreed, as a condition of his employment, to remain underground until the end of his shift. The limits of his consent defined what counted as restraint — he had agreed to remain, and the employer's refusal to provide the lift merely held him to his contractual agreement. There was no unlawful restraint because the miner had consented to remaining for the duration of the shift."
+    },
+    {
+      "id": "TL_M10_L02_Q10",
+      "question": "Is the duration of the imprisonment relevant to whether false imprisonment is established?",
+      "options": {
+        "A": "Yes — the imprisonment must last for a minimum period of one hour to be actionable",
+        "B": "No — even a momentary total restraint of the plaintiff's liberty constitutes false imprisonment, and the duration goes only to the quantum of damages",
+        "C": "Yes — brief detentions are only actionable where physical force was used",
+        "D": "Duration is relevant to both liability and damages — shorter detentions attract reduced damages on a sliding scale"
+      },
+      "correct_answer": "B",
+      "explanation": "The duration of the imprisonment is irrelevant to whether the tort is established — even a momentary total restraint of liberty may constitute false imprisonment. However, the duration will be relevant to the quantum of damages awarded. Because false imprisonment is actionable per se, no minimum period of detention is required. A brief but total restraint is as capable of giving rise to the tort as a prolonged detention."
+    }
+  ]
+}

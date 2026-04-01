@@ -1,0 +1,131 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "Module_07_Lesson_01_Constructive_Trusts___Categories_and_Common_Intention.txt",
+  "module_number": 7,
+  "module_title": "Constructive Trusts",
+  "lesson_number": 1,
+  "lesson_title": "Constructive Trusts: Categories and Common Intention",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EQL_M07_L01_Q01",
+      "question": "How does a constructive trust differ from an express trust?",
+      "options": {
+        "A": "A constructive trust requires three certainties; an express trust does not.",
+        "B": "A constructive trust is imposed by equity on a person who holds property in circumstances where it would be unconscionable for them to retain the full beneficial interest — it arises by operation of law, not from any express intention to create a trust.",
+        "C": "A constructive trust is only available in relation to land; an express trust may be created over any property.",
+        "D": "A constructive trust requires a written declaration; an express trust may be created orally."
+      },
+      "correct_answer": "B",
+      "explanation": "A constructive trust is imposed by equity on a person who holds property in circumstances where it would be unconscionable for them to retain the full beneficial interest. It is not created by the express intention of the parties — it arises by operation of law as equity's response to unconscionable behaviour in relation to property. This contrasts with an express trust, which is created by the deliberate intention of the settlor."
+    },
+    {
+      "id": "EQL_M07_L01_Q02",
+      "question": "What is the distinction between an institutional constructive trust and a remedial constructive trust?",
+      "options": {
+        "A": "An institutional constructive trust arises by court order; a remedial constructive trust arises automatically on the facts.",
+        "B": "An institutional constructive trust arises automatically the moment the relevant circumstances occur; a remedial constructive trust is a flexible remedy imposed at the court's discretion.",
+        "C": "An institutional constructive trust applies to land; a remedial constructive trust applies to personal property.",
+        "D": "There is no material distinction between the two — they are used interchangeably in Irish law."
+      },
+      "correct_answer": "B",
+      "explanation": "An institutional constructive trust arises automatically by operation of law the moment the relevant circumstances giving rise to it occur — the court's declaration merely confirms what has already happened. A remedial constructive trust is a flexible equitable remedy imposed at the court's discretion in response to unconscionable enrichment. In England and Ireland, the institutional approach predominates — the constructive trust arises automatically on the facts, not merely when declared by the court."
+    },
+    {
+      "id": "EQL_M07_L01_Q03",
+      "question": "In Lloyds Bank v Rosset (1991), Lord Bridge identified two ways in which a common intention constructive trust may be established. What are they?",
+      "options": {
+        "A": "An express declaration of trust in the property register; and payment of the full purchase price.",
+        "B": "Evidence of an actual agreement, arrangement, or understanding that both parties would have a beneficial interest; and direct contributions to the purchase price or mortgage payments from which a common intention may be inferred.",
+        "C": "Written correspondence confirming an intention to share the property; and registration of the beneficial interest at the Land Registry.",
+        "D": "A common intention formed at the time of the relationship; and subsequent cohabitation at the property."
+      },
+      "correct_answer": "B",
+      "explanation": "In Lloyds Bank v Rosset (1991), Lord Bridge held that a common intention constructive trust can be established in two ways. First, by evidence of an actual agreement, arrangement, or understanding — express words between the parties indicating that both would have a beneficial interest. Second, by evidence of direct contributions to the purchase price or mortgage payments — from which the court infers a common intention that both parties were to have a beneficial interest."
+    },
+    {
+      "id": "EQL_M07_L01_Q04",
+      "question": "The Irish Supreme Court examined the common intention constructive trust in Re W (2006). In what type of dispute is the common intention constructive trust most commonly applied?",
+      "options": {
+        "A": "Disputes between trustees and beneficiaries over the management of express trusts.",
+        "B": "Family home disputes where the property is in one person's name but another person claims a beneficial interest based on a common intention.",
+        "C": "Disputes between business partners over the ownership of commercial property.",
+        "D": "Claims by creditors against assets held by a debtor in a nominee's name."
+      },
+      "correct_answer": "B",
+      "explanation": "The common intention constructive trust is most commonly applied in family home disputes where the property is registered in one person's name but the other party claims a beneficial interest on the basis that both had a common intention to share the property. The doctrine was developed in Lloyds Bank v Rosset (1991) and applied in the Irish context in Re W (2006). The Irish courts also consider contributions by way of labour — such as home improvements — as potentially giving rise to a beneficial interest."
+    },
+    {
+      "id": "EQL_M07_L01_Q05",
+      "question": "Where a fiduciary profits from their fiduciary position in breach of their duty, what is the equitable mechanism by which the beneficiaries recover that profit?",
+      "options": {
+        "A": "The fiduciary is required to pay damages equal to the loss suffered by the beneficiaries.",
+        "B": "Equity imposes a constructive trust over the profit, requiring the fiduciary to hold it for the beneficiaries.",
+        "C": "The profit is forfeited to the Crown as a penalty for breach of fiduciary duty.",
+        "D": "The fiduciary is required to account for the profit only if they acted dishonestly."
+      },
+      "correct_answer": "B",
+      "explanation": "Where a fiduciary — such as a trustee, director, or solicitor — profits from their fiduciary position in breach of their duty, equity imposes a constructive trust over the profit. The fiduciary holds those profits on constructive trust for the beneficiaries and must account for them. As established in Boardman v Phipps (1967), this applies even where the fiduciary acted in good faith and the beneficiaries also benefited. Equity will not permit a fiduciary to retain unauthorised profits."
+    },
+    {
+      "id": "EQL_M07_L01_Q06",
+      "question": "The killing rule is one category of constructive trust. What principle does it apply?",
+      "options": {
+        "A": "A trustee who kills the settlor is automatically removed from office.",
+        "B": "Where a person murders or unlawfully kills another, equity imposes a constructive trust to prevent the killer from benefiting from their wrong — the killer cannot inherit under the will or on intestacy of their victim.",
+        "C": "A beneficiary who kills the trustee acquires the beneficial interest absolutely.",
+        "D": "The killing rule applies only where the victim had not yet made a will at the time of death."
+      },
+      "correct_answer": "B",
+      "explanation": "The killing rule provides that where a person murders or unlawfully kills another, equity imposes a constructive trust to prevent the killer from benefiting from their wrong. As applied in the Irish context in Cawley v Lillis, and in the succession context generally, a killer cannot inherit under the will or on intestacy of their victim. Equity will not permit a person to profit from their own crime, and the constructive trust gives effect to this principle by stripping the killer of any benefit they would otherwise receive."
+    },
+    {
+      "id": "EQL_M07_L01_Q07",
+      "question": "Which of the following is a correct statement about the fourth category of constructive trust — stranger liability?",
+      "options": {
+        "A": "A stranger who accidentally receives trust property is always made a constructive trustee.",
+        "B": "A person who knowingly receives trust property in breach of trust or dishonestly assists a trustee in a breach of trust may be made a constructive trustee and held personally liable.",
+        "C": "Stranger liability only arises where the stranger is related to the trustee.",
+        "D": "A stranger who receives trust property must return it only if they still hold it at the time of the claim."
+      },
+      "correct_answer": "B",
+      "explanation": "Stranger liability arises where a person who is not a trustee becomes implicated in a breach of trust. Two heads of liability exist: knowing receipt — where a person receives trust property in breach of trust with the requisite degree of knowledge — and dishonest assistance — where a person assists a trustee in a breach of trust dishonestly without necessarily receiving any trust property. In both cases, the stranger may be made a constructive trustee and held personally liable. These categories are examined in detail in Module 8."
+    },
+    {
+      "id": "EQL_M07_L01_Q08",
+      "question": "A husband and wife purchase a family home jointly but register it in the husband's name alone for administrative convenience. They both contribute to the mortgage repayments. The wife later claims a beneficial interest. Which doctrine is most directly applicable?",
+      "options": {
+        "A": "The automatic resulting trust — arising from the failure of an express trust.",
+        "B": "The common intention constructive trust — the direct contributions to the mortgage payments by the wife give rise to an inference of a common intention that both would hold a beneficial interest.",
+        "C": "Proprietary estoppel — the wife relied on a representation by the husband that she would have an interest.",
+        "D": "The presumption of advancement — as the property was transferred from the husband to himself and his wife."
+      },
+      "correct_answer": "B",
+      "explanation": "The common intention constructive trust from Lloyds Bank v Rosset (1991) is most directly applicable. The wife's direct contributions to the mortgage repayments give rise to an inference of a common intention that both parties would have a beneficial interest in the property. This satisfies the second limb of Lord Bridge's test in Rosset. Even where the property is registered in one name alone, direct financial contributions to the purchase or mortgage by the other party can found a constructive trust claim."
+    },
+    {
+      "id": "EQL_M07_L01_Q09",
+      "question": "In the Irish context, the courts have indicated that contributions by way of labour — such as home improvements — may give rise to a beneficial interest under a constructive trust. What does this suggest about the Irish approach compared to the strict Rosset test?",
+      "options": {
+        "A": "The Irish courts apply a stricter test than Rosset, requiring both actual agreement and direct financial contribution.",
+        "B": "The Irish courts have applied the doctrine in a somewhat broader manner, giving weight to non-financial contributions such as labour in the family home context, as recognised in Hussey v Palmer and Re W (2006).",
+        "C": "The Irish courts have rejected the common intention constructive trust entirely and apply only the resulting trust.",
+        "D": "The Irish courts require all common intention constructive trusts to be registered at the Land Registry to be enforceable."
+      },
+      "correct_answer": "B",
+      "explanation": "The Irish courts, as recognised in Hussey v Palmer and Re W (2006), have given weight to contributions by way of labour — such as home improvements — as potentially giving rise to a beneficial interest under a constructive trust. This reflects a somewhat broader approach than the strict Lord Bridge formulation in Lloyds Bank v Rosset (1991), which confined imputed common intention to direct financial contributions. The Irish approach is more flexible in recognising non-financial contributions in the domestic context."
+    },
+    {
+      "id": "EQL_M07_L01_Q10",
+      "question": "Which of the following correctly identifies the categories of constructive trust most likely to arise in FE-1 equity law questions?",
+      "options": {
+        "A": "Trusts for sale; charitable trusts; and statutory trusts.",
+        "B": "The common intention constructive trust (Lloyds Bank v Rosset 1991; Re W 2006); the fiduciary profit constructive trust (Boardman v Phipps 1967); the killing rule (Cawley v Lillis); and stranger liability (knowing receipt and dishonest assistance).",
+        "C": "The three certainties trust; the secret trust; and the mutual wills constructive trust.",
+        "D": "The resulting trust; the charitable trust; and the purpose trust."
+      },
+      "correct_answer": "B",
+      "explanation": "The constructive trust categories most likely to arise in FE-1 questions are: (1) the common intention constructive trust in family home disputes — Lloyds Bank v Rosset (1991) and Re W (2006); (2) the fiduciary profit constructive trust where a fiduciary profits from their position — Boardman v Phipps (1967); (3) the killing rule where a killer cannot benefit from their victim's estate — Cawley v Lillis; and (4) stranger liability — knowing receipt and dishonest assistance in breach of trust. Each category has distinct requirements and remedies."
+    }
+  ]
+}

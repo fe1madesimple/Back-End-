@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_10_Lesson_06_Intestacy.txt",
+  "module_number": 10,
+  "module_title": "Succession Law",
+  "lesson_number": 6,
+  "lesson_title": "Intestacy under the Succession Act 1965",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M10_L06_Q01",
+      "question": "What is the distinction between 'total intestacy' and 'partial intestacy' under the Succession Act 1965?",
+      "options": {
+        "A": "Total intestacy means the testator had no family; partial intestacy means the testator had some family members",
+        "B": "Total intestacy arises where the deceased left no valid will at all; partial intestacy arises where there is a valid will but it fails to dispose of part of the estate",
+        "C": "Total intestacy applies to real property; partial intestacy applies to personal property",
+        "D": "Total intestacy means the estate passes to the State; partial intestacy means part of the estate passes to the State"
+      },
+      "correct_answer": "B",
+      "explanation": "Total intestacy arises where the deceased has left no valid will at all. Partial intestacy arises where there is a valid will but it fails to dispose of part of the estate — for example, because a residuary gift fails or because the will does not address after-acquired property. In a partial intestacy, the will governs the disposed part and the intestacy rules govern the undisposed part."
+    },
+    {
+      "id": "PRL_M10_L06_Q02",
+      "question": "Under Part VI of the Succession Act 1965, if a person dies intestate leaving a spouse and children, how is the estate distributed?",
+      "options": {
+        "A": "The spouse takes the entire estate and the children take nothing",
+        "B": "The spouse and children share equally regardless of numbers",
+        "C": "The spouse takes two thirds and the children take one third divided equally among them",
+        "D": "The spouse takes one half and the children take one half divided equally among them"
+      },
+      "correct_answer": "C",
+      "explanation": "Under Part VI of the Succession Act 1965, where the deceased leaves a spouse and children on intestacy, the spouse takes two thirds of the estate and the children take one third divided equally among them. This distribution must be memorised for the FE-1 examination — it differs from the legal right share fractions under section 111, which applies to testate succession."
+    },
+    {
+      "id": "PRL_M10_L06_Q03",
+      "question": "Under the intestacy rules of the Succession Act 1965, if a person dies leaving a spouse and NO children, how is the estate distributed?",
+      "options": {
+        "A": "The spouse takes two thirds and the remaining one third goes to the deceased's parents",
+        "B": "The spouse takes the entire estate",
+        "C": "The spouse takes one half and the State takes one half",
+        "D": "The spouse takes one half and the deceased's siblings take the other half"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the intestacy rules of the Succession Act 1965, where the deceased leaves a spouse and no children, the spouse takes the entire estate. This is the most generous intestacy provision for the spouse. There is no competing claim from siblings, parents, or more remote relatives if the deceased leaves a surviving spouse."
+    },
+    {
+      "id": "PRL_M10_L06_Q04",
+      "question": "Under the Succession Act 1965 intestacy rules, if a person dies leaving children and NO spouse, how is the estate distributed?",
+      "options": {
+        "A": "The children take equal shares of the entire estate",
+        "B": "The children take half the estate and the parents of the deceased take the other half",
+        "C": "The eldest child takes the entire estate by primogeniture",
+        "D": "The children take the estate only after payment of a statutory portion to the State"
+      },
+      "correct_answer": "A",
+      "explanation": "Under the Succession Act 1965 intestacy rules, where the deceased leaves children and no spouse, the children take the entire estate in equal shares. There is no distinction between the shares of children of different ages — primogeniture does not apply under the Succession Act 1965. Each child takes an equal fractional share of the whole estate."
+    },
+    {
+      "id": "PRL_M10_L06_Q05",
+      "question": "Under section 70 of the Succession Act 1965, if a person dies intestate leaving no spouse and no children, in what order do more remote relatives take?",
+      "options": {
+        "A": "Grandchildren, then nephews and nieces, then parents, then siblings",
+        "B": "Parents (equally), then siblings (with children of deceased siblings taking their parent's share), then half-brothers and half-sisters, then nephews and nieces, then the State as bona vacantia",
+        "C": "Siblings first, then parents, then grandparents, then cousins",
+        "D": "The entire estate passes to the State once there is no spouse or children"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 70 of the Succession Act 1965, where there is no spouse and no children, the intestate estate passes: first to parents in equal shares; if no parents, to brothers and sisters equally with the children of a deceased brother or sister taking their parent's share (per stirpes); if none, to half-brothers and half-sisters; if none, to nephews and nieces; and ultimately, if no surviving relative, the estate passes to the State as bona vacantia under section 73."
+    },
+    {
+      "id": "PRL_M10_L06_Q06",
+      "question": "Under section 73 of the Succession Act 1965, what happens to an intestate estate if there is absolutely no surviving relative?",
+      "options": {
+        "A": "The estate is distributed equally among the deceased's close friends as named in any informal document",
+        "B": "The estate passes to the State as bona vacantia",
+        "C": "The estate is held in trust indefinitely pending the discovery of a relative",
+        "D": "The estate is distributed to charity under the cy-près doctrine"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 73 of the Succession Act 1965, where there is no surviving relative who can take on intestacy, the estate passes to the State as bona vacantia (ownerless goods). This is the ultimate default provision of the intestacy rules — the State takes only in the complete absence of any qualifying relative from spouse and children through to nephews and nieces."
+    },
+    {
+      "id": "PRL_M10_L06_Q07",
+      "question": "What is the right of appropriation under section 56 of the Succession Act 1965, and to whom does it apply?",
+      "options": {
+        "A": "The right of the personal representative to appropriate any asset in the estate to satisfy a legacy",
+        "B": "The right of the surviving spouse to require the personal representative to appropriate the dwelling in which they ordinarily reside as part or the whole of the spouse's share on intestacy",
+        "C": "The right of any child over the age of eighteen to appropriate the family home as part of their intestate share",
+        "D": "The right of the deceased's parents to appropriate a specified asset in satisfaction of their intestate share"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 56 of the Succession Act 1965 gives the surviving spouse the right to require the personal representative to appropriate the dwelling in which they ordinarily reside as part — or the whole — of their share of the intestate estate. This is a powerful right that prevents the forced sale of the family home against the wishes of the surviving spouse, even on intestacy."
+    },
+    {
+      "id": "PRL_M10_L06_Q08",
+      "question": "In Re Irvine's Estate, what did the court hold about the right of appropriation under section 56 where the dwelling's value exceeds the spouse's intestate share?",
+      "options": {
+        "A": "The spouse cannot appropriate a dwelling worth more than their intestate share",
+        "B": "The spouse can appropriate the dwelling even if its value exceeds their share, provided they make up the difference in money from their own resources",
+        "C": "The excess value is treated as a gift from the estate to the spouse",
+        "D": "The right of appropriation only applies where the dwelling is worth less than the spouse's intestate share"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Irvine's Estate, the court held that the right of appropriation under section 56 applies even where the dwelling's value exceeds the spouse's intestate share — in that case, the spouse can appropriate the dwelling provided they make up the difference in money from their own resources. This means the right of appropriation is not limited to situations where the dwelling is worth no more than the spouse's share."
+    },
+    {
+      "id": "PRL_M10_L06_Q09",
+      "question": "What is 'hotchpot' under section 63 of the Succession Act 1965, and when does it apply?",
+      "options": {
+        "A": "A rule requiring the personal representative to set aside a portion of the estate for future creditors",
+        "B": "A rule requiring a child who has received a substantial advancement from the deceased during their lifetime to bring that advancement into account when calculating their intestate share",
+        "C": "A rule requiring all children to contribute equally to the cost of the testator's funeral",
+        "D": "A rule requiring the surviving spouse to account for any gifts received from the deceased during the marriage"
+      },
+      "correct_answer": "B",
+      "explanation": "Hotchpot under section 63 of the Succession Act 1965 requires a child who has received a substantial advancement from the deceased during their lifetime to bring that advancement into account when calculating their share on intestacy. This prevents one child from taking a large lifetime gift and then claiming an equal share of the estate alongside children who received nothing. The child adds the value of the advancement to the total estate, divides by the number of children, and deducts the advancement already received."
+    },
+    {
+      "id": "PRL_M10_L06_Q10",
+      "question": "How is the hotchpot calculation performed under section 63 of the Succession Act 1965?",
+      "options": {
+        "A": "The advanced child's intestate share is simply reduced by the value of the advancement",
+        "B": "The child adds the value of the advancement to the total intestate estate, divides the enlarged total by the number of children, and deducts the value of the advancement already received — only the net balance (if any) is paid to the advanced child",
+        "C": "The advanced child receives no share from the estate at all",
+        "D": "The advancement is added to the estate and then divided equally, with the advanced child receiving the same share as all others"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 63, hotchpot requires the child to: (1) add the value of the advancement to the total intestate estate (creating a 'notional' enlarged estate); (2) divide the enlarged total by the number of children to find each child's notional share; (3) deduct the value of the advancement already received from the advanced child's notional share. Only the net balance — if any — is distributed to the advanced child from the estate. Where the advancement exceeds the child's notional share, the child takes nothing more from the estate."
+    }
+  ]
+}

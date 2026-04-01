@@ -1,0 +1,131 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module08_Lesson01.txt",
+  "module_number": 8,
+  "module_title": "Secondary Participation and Common Enterprise",
+  "lesson_number": 1,
+  "lesson_title": "Aid, Abet, Counsel, Procure — and Accessories",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M08_L01_Q01",
+      "question": "Under Section 7(1) of the Criminal Law Act 1997, a person who aids, abets, counsels, or procures the commission of an indictable offence is liable to be punished as:",
+      "options": {
+        "A": "An accessory, subject to a reduced sentence",
+        "B": "A principal offender",
+        "C": "A secondary offender with limited liability",
+        "D": "An accessory after the fact"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 7(1) of the Criminal Law Act 1997 provides that a person who aids, abets, counsels, or procures the commission of an indictable offence is liable to be tried, indicted, and punished as a principal offender. There is no reduced liability for secondary participants under this provision."
+    },
+    {
+      "id": "CL_M08_L01_Q02",
+      "question": "In People (DPP) v Egan [2009] IECCA, the Court of Criminal Appeal held that an aider must have:",
+      "options": {
+        "A": "Direct intent to commit the principal offence themselves",
+        "B": "Awareness of the nature of the principal offence being committed",
+        "C": "Knowledge of the precise identity of the principal offender",
+        "D": "Prior agreement with the principal offender before the offence"
+      },
+      "correct_answer": "B",
+      "explanation": "In People (DPP) v Egan [2009] IECCA, the court confirmed that an aider must be aware of the nature of the principal offence. A person cannot aid an offence if they had no knowledge of what kind of offence was being committed. This is the key Irish authority on the mens rea requirement for aiding."
+    },
+    {
+      "id": "CL_M08_L01_Q03",
+      "question": "The case of AG's Reference No. 1 of 1975 established which principle regarding aiding?",
+      "options": {
+        "A": "Mere presence at the scene is sufficient to constitute aiding",
+        "B": "Mere presence at the scene is not sufficient — assistance or encouragement is required",
+        "C": "A person who provides transport for a crime is not liable as an aider",
+        "D": "Aiding requires physical participation in the commission of the offence"
+      },
+      "correct_answer": "B",
+      "explanation": "AG's Reference No. 1 of 1975 confirmed that mere presence at the scene is not sufficient to establish aiding — there must be something more, namely assistance or encouragement. The same case is also the definitive authority on procuring, involving the spiking of a friend's drink."
+    },
+    {
+      "id": "CL_M08_L01_Q04",
+      "question": "Counselling, as a category of secondary participation under Section 7(1), is best described as:",
+      "options": {
+        "A": "Physical assistance provided to the principal during the offence",
+        "B": "Assistance provided after the offence to help the principal escape",
+        "C": "Advice, instruction, or encouragement given before the commission of the offence",
+        "D": "Causing the principal offence to occur without the principal's knowledge"
+      },
+      "correct_answer": "C",
+      "explanation": "Counselling refers to advice, instruction, or encouragement given before the offence — not at the time of it. In R v Giannetto [1997], the court confirmed that any act of positive encouragement given before the commission of the offence may constitute counselling, and elaborate planning is not required."
+    },
+    {
+      "id": "CL_M08_L01_Q05",
+      "question": "In DPP for NI v Maxwell [1978], the House of Lords held that a secondary party who contemplates a range of possible offences and renders assistance is guilty of:",
+      "options": {
+        "A": "The most serious offence within the range contemplated",
+        "B": "Only the least serious offence within the range contemplated",
+        "C": "Whichever offence from the range is actually committed",
+        "D": "No offence, because they did not know the specific offence planned"
+      },
+      "correct_answer": "C",
+      "explanation": "In DPP for NI v Maxwell [1978], the House of Lords held that where a secondary party contemplates a range of possible offences and renders assistance knowing that one from that range will be committed, they are guilty of whichever from that range is actually committed. A precise knowledge of the specific offence is not required."
+    },
+    {
+      "id": "CL_M08_L01_Q06",
+      "question": "Procuring, as a category under Section 7(1), was illustrated in AG's Reference No. 1 of 1975. Which of the following best describes procuring?",
+      "options": {
+        "A": "Encouraging another to commit an offence by being present during its commission",
+        "B": "Causing an offence to be committed, including without the principal's knowledge or prior agreement",
+        "C": "Providing physical assistance during the commission of the offence",
+        "D": "Helping an offender avoid arrest after the offence is committed"
+      },
+      "correct_answer": "B",
+      "explanation": "Procuring means causing an offence to be committed — actually bringing it about. In AG's Reference No. 1 of 1975, the accused spiked a friend's drink, causing the friend to commit drink-driving. There was no prior agreement with the principal. The procurer can bring about the offence without the principal's knowledge."
+    },
+    {
+      "id": "CL_M08_L01_Q07",
+      "question": "Under Section 7(2) of the Criminal Law Act 1997, what is required for a person to be liable as an accessory after the fact?",
+      "options": {
+        "A": "Suspicion that an offence had been committed, combined with active assistance",
+        "B": "Knowledge or belief that an offence has been committed, combined with assisting the offender to escape",
+        "C": "Direct participation in the planning of the offence, followed by post-offence assistance",
+        "D": "Presence at the scene of the offence, followed by helping the offender leave"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 7(2) requires that the person knows or believes an offence has been committed, and then assists the offender to escape arrest or punishment. Suspicion alone is insufficient — knowledge or belief is required. The accessory after the fact does not participate in the offence itself."
+    },
+    {
+      "id": "CL_M08_L01_Q08",
+      "question": "The doctrine of innocent agency applies where:",
+      "options": {
+        "A": "A principal uses a co-conspirator who is unaware of the full extent of the plan",
+        "B": "A person uses a legally innocent individual — such as a child below the age of criminal responsibility — as the instrument of an offence",
+        "C": "An accused claims they were acting on the instructions of another and lacked free will",
+        "D": "A secondary participant has no knowledge that any offence is being committed"
+      },
+      "correct_answer": "B",
+      "explanation": "Innocent agency arises where a person uses a legally innocent individual — such as a child under the age of criminal responsibility — as the instrument through which an offence is committed. The person exploiting the innocent agent is treated as the principal offender. Established in Walter v Lunt [1951]."
+    },
+    {
+      "id": "CL_M08_L01_Q09",
+      "question": "In DPP v Ryan [2011] IEHC, the court held that armed presence at a fight, providing reassurance to the principal, constituted:",
+      "options": {
+        "A": "Conspiracy to commit assault",
+        "B": "Abetting",
+        "C": "Aiding",
+        "D": "Procuring"
+      },
+      "correct_answer": "C",
+      "explanation": "In DPP v Ryan [2011] IEHC, the court held that armed presence providing reassurance to the principal constitutes aiding. The accused did not personally strike anyone, but his presence was not passive — it communicated readiness to assist, which emboldened the principal. This demonstrates how presence, combined with more, can constitute aiding."
+    },
+    {
+      "id": "CL_M08_L01_Q10",
+      "question": "The key distinction between an accessory under Section 7(1) and an accessory after the fact under Section 7(2) of the Criminal Law Act 1997 is:",
+      "options": {
+        "A": "Section 7(1) requires proof of mens rea; Section 7(2) does not",
+        "B": "Section 7(1) accessories participate in or facilitate the offence; Section 7(2) accessories only assist after the offence is complete",
+        "C": "Section 7(1) applies only to indictable offences; Section 7(2) applies to all offences",
+        "D": "Section 7(2) accessories are punished as principals; Section 7(1) accessories are not"
+      },
+      "correct_answer": "B",
+      "explanation": "The key distinction is timing. Section 7(1) covers those who aid, abet, counsel, or procure the commission of the offence — they are secondary participants in the offence itself, and are treated as principals. Section 7(2) covers those who assist the offender only after the offence is complete, to help them escape justice. Their liability is distinct and generally lower."
+    }
+  ]
+}

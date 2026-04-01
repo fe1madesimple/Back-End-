@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module11_Lesson04.txt",
+  "module_number": 11,
+  "module_title": "EU Citizenship",
+  "lesson_number": 4,
+  "lesson_title": "Political Rights, Diplomatic Protection, and the Constitutional Significance of EU Citizenship",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EUL_M11_L04_Q01",
+      "question": "Article 22(1) TFEU grants which right to EU citizens residing in a member state of which they are not a national?",
+      "options": {
+        "A": "The right to vote and stand as a candidate in national parliamentary elections on the same conditions as nationals",
+        "B": "The right to vote and stand as a candidate in municipal elections on the same conditions as nationals of the host member state",
+        "C": "The right to vote and stand in European Parliament elections in any member state of their choosing",
+        "D": "The right to stand as a candidate in presidential elections in the host member state"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 22(1) TFEU gives every EU citizen residing in a member state of which they are not a national the right to vote and stand as a candidate in municipal elections in the member state of residence under the same conditions as nationals of that state. This is a significant departure from the traditional principle that political rights are reserved for nationals. An Irish citizen living in France, for example, can vote in French local elections and stand for election to a French town council on the same basis as French nationals. The detailed conditions are governed by Council Directive 94/80/EC."
+    },
+    {
+      "id": "EUL_M11_L04_Q02",
+      "question": "Which secondary legislation implements the right of EU citizens to vote and stand as candidates in municipal elections in their host member state under Article 22(1) TFEU?",
+      "options": {
+        "A": "Council Directive 93/109/EC",
+        "B": "Council Directive 94/80/EC",
+        "C": "Directive 2004/38/EC",
+        "D": "Regulation 211/2011"
+      },
+      "correct_answer": "B",
+      "explanation": "Council Directive 94/80/EC implements the right of EU citizens to vote and stand as candidates in municipal elections in their host member state under Article 22(1) TFEU. The Directive permits member states to restrict certain senior municipal posts to their own nationals where justified by particular constitutional considerations — for example, some states restrict the office of mayor or head of a local authority to nationals. Council Directive 93/109/EC is the implementing legislation for European Parliament election rights under Article 22(2) TFEU."
+    },
+    {
+      "id": "EUL_M11_L04_Q03",
+      "question": "Article 22(2) TFEU extends EU citizens' electoral rights to European Parliament elections. Which rule prevents double voting?",
+      "options": {
+        "A": "EU citizens may vote in European Parliament elections in their state of nationality only, regardless of where they reside",
+        "B": "EU citizens cannot exercise their European Parliament voting rights simultaneously in both their state of nationality and their state of residence — they must choose one or the other",
+        "C": "EU citizens residing abroad automatically lose their European Parliament voting rights in their home state",
+        "D": "The European Parliament electoral right applies only to EU citizens who have resided in the host state for more than five years"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 22(2) TFEU and its implementing Council Directive 93/109/EC provide that every EU citizen has the right to vote and stand as a candidate in European Parliament elections in any member state in which they reside, on the same conditions as nationals. To prevent double voting, EU citizens cannot exercise their European Parliament voting rights simultaneously in both their state of nationality and their state of residence — they must choose one. An Italian national living in Ireland may vote in Irish European Parliament elections, but cannot also vote in Italy for the same election."
+    },
+    {
+      "id": "EUL_M11_L04_Q04",
+      "question": "Article 23 TFEU provides a right to consular protection. In what circumstances does this right arise?",
+      "options": {
+        "A": "When an EU citizen is arrested in another EU member state and their own state's embassy cannot provide immediate assistance",
+        "B": "When an EU citizen is in a third country (outside the EU) where their own member state is not represented, entitling them to seek diplomatic and consular protection from any other EU member state's embassy",
+        "C": "When an EU citizen is refused entry to another member state and seeks assistance from their home state's embassy",
+        "D": "When an EU citizen's passport is lost within the EU and they need emergency travel documents"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 23 TFEU provides that every EU citizen in a third country (outside the EU) where their own member state is not represented has the right to diplomatic and consular protection from any EU member state, on the same conditions as the nationals of that member state. This is a practical recognition that not every member state maintains embassies in every country. An Irish citizen in a country where Ireland has no embassy or consulate can seek assistance from the British, French, German, or any other EU member state's embassy. The right is implemented in Council Decision 95/553/EC."
+    },
+    {
+      "id": "EUL_M11_L04_Q05",
+      "question": "The European Citizens' Initiative, established by Article 24 TFEU and implemented by Regulation 211/2011, requires:",
+      "options": {
+        "A": "At least 500,000 EU citizens from at least five member states to request legislative action",
+        "B": "A minimum of one million EU citizens from at least a quarter of all member states, with a minimum number of signatories in each, to invite the Commission to submit a legislative proposal",
+        "C": "One million EU citizens from any member state to petition the European Parliament for a Treaty amendment",
+        "D": "Citizens from a majority of member states to vote in a EU-wide referendum on a legislative proposal"
+      },
+      "correct_answer": "B",
+      "explanation": "The European Citizens' Initiative (ECI), introduced by the Lisbon Treaty under Article 24 TFEU and implemented by Regulation 211/2011, allows a minimum of one million EU citizens coming from at least a quarter of all member states (currently at least seven), with minimum numbers of signatories required in each of those states, to invite the European Commission to submit a legislative proposal in an area where citizens consider EU action is necessary. The Commission must respond and give reasons if it declines. The ECI represents a form of participatory democracy at EU level, though the Commission retains the final decision on whether to propose legislation."
+    },
+    {
+      "id": "EUL_M11_L04_Q06",
+      "question": "The right of petition under Article 227 TFEU and the right to approach the European Ombudsman under Article 228 TFEU are notable because:",
+      "options": {
+        "A": "They are available only to EU citizens — not to non-citizens residing in member states",
+        "B": "They are accessible not only to EU citizens but also to any natural or legal person residing or having their registered office in a member state",
+        "C": "They require prior exhaustion of national legal remedies before they can be invoked",
+        "D": "They confer binding decision-making powers on both the Parliament and the Ombudsman"
+      },
+      "correct_answer": "B",
+      "explanation": "The right of petition to the European Parliament (Article 227 TFEU) and the right to apply to the European Ombudsman (Article 228 TFEU) are accessible not only to EU citizens but also to any natural or legal person residing or having their registered office in a member state. This broader reach takes these rights beyond strictly citizenship-based entitlements. The Ombudsman investigates complaints of maladministration by EU institutions, bodies, offices, or agencies — not national authorities. Neither the petition right nor the Ombudsman confer binding legal decisions on the EU institutions."
+    },
+    {
+      "id": "EUL_M11_L04_Q07",
+      "question": "When did the concept of EU citizenship first appear in the EU Treaties, and under which Treaty was it introduced?",
+      "options": {
+        "A": "The Single European Act 1986",
+        "B": "The Treaty of Maastricht 1993",
+        "C": "The Treaty of Amsterdam 1999",
+        "D": "The Treaty of Lisbon 2009"
+      },
+      "correct_answer": "B",
+      "explanation": "EU citizenship was introduced by the Treaty of Maastricht, which entered into force on 1 November 1993. Before Maastricht, European law was fundamentally economic — a framework for market integration governed by the treaty freedoms. The introduction of citizenship in 1993 marked a conceptual shift: European integration was no longer merely about removing trade barriers but about creating a shared political and legal identity. The Court of Justice subsequently developed the concept into a genuine status with real legal content through its case law — Grzelczyk [2001], Baumbast [2002], and Zambrano [2011] being the landmark cases."
+    },
+    {
+      "id": "EUL_M11_L04_Q08",
+      "question": "In Grzelczyk v Centre public d'aide sociale [2001] CJEU, the Court described EU citizenship as:",
+      "options": {
+        "A": "A purely symbolic status that confers no rights beyond those provided by the four freedoms",
+        "B": "The fundamental status of nationals of the member states, which allows those in the same situation to receive equal treatment in EU law regardless of nationality",
+        "C": "A status conferring unconditional rights of equal treatment with host state nationals in all areas, including welfare benefits",
+        "D": "A derivative status dependent entirely upon economic activity in the host member state"
+      },
+      "correct_answer": "B",
+      "explanation": "In Grzelczyk v Centre public d'aide sociale [2001] CJEU, the Court described EU citizenship as 'destined to be the fundamental status of nationals of the Member States.' This landmark statement gave EU citizenship a constitutional significance beyond its Treaty provisions. Mr Grzelczyk, a French student in Belgium, was initially denied a Belgian social assistance benefit (the minimex) on grounds of nationality. The Court held that his situation fell within the scope of EU law, and that discriminatory treatment on grounds of nationality was inconsistent with his status as an EU citizen. The 'fundamental status' language has been central to subsequent citizenship case law."
+    },
+    {
+      "id": "EUL_M11_L04_Q09",
+      "question": "The welfare cases — Dano v Jobcenter Leipzig [2014] and Alimanovic [2015] CJEU — are significant because they:",
+      "options": {
+        "A": "Extended EU citizenship rights to require member states to grant all EU citizens unconditional access to social assistance from the moment of arrival",
+        "B": "Established limits on EU citizenship — confirming that host states may refuse to grant social assistance to EU citizens who are economically inactive and lack sufficient resources, without violating EU law",
+        "C": "Abolished the condition of economic activity for EU citizens' right of residence after three months",
+        "D": "Required member states to grant EU citizens the same social assistance rights as their own nationals in all circumstances"
+      },
+      "correct_answer": "B",
+      "explanation": "Dano v Jobcenter Leipzig [2014] and Alimanovic [2015] CJEU represent the Court pulling back from the expansive citizenship case law of Grzelczyk and Baumbast. In Dano, the Court held that a member state may refuse to grant social assistance to economically inactive EU citizens who move to the host state without sufficient resources — Directive 2004/38 permits this and does not require unconditional equal treatment in social assistance. In Alimanovic, the Court confirmed that job-seekers who have exhausted their entitlement under the directive can be refused social assistance. These cases illustrate the tension between the 'fundamental status' rhetoric and the practical limits of conditioned residence."
+    },
+    {
+      "id": "EUL_M11_L04_Q10",
+      "question": "What was the effect of Brexit on EU citizenship for UK nationals previously resident in EU member states and EU citizens previously resident in the UK?",
+      "options": {
+        "A": "UK nationals automatically retained full EU citizenship rights in perpetuity following withdrawal",
+        "B": "The Withdrawal Agreement established a framework to protect acquired rights — EU citizens in the UK and UK nationals in EU member states who had lawfully resided before the end of the transition period (31 December 2020) were entitled to continue to reside under broadly the same conditions",
+        "C": "All EU citizens in the UK and UK nationals in EU member states were required to apply for national visas within 30 days of withdrawal",
+        "D": "Brexit had no effect on individual citizenship rights — only on trade relations between the UK and the EU"
+      },
+      "correct_answer": "B",
+      "explanation": "When the UK withdrew from the EU on 31 January 2020, EU citizens resident in the UK and UK nationals resident in EU member states faced the loss of free movement rights. The Withdrawal Agreement established a framework to protect these acquired rights: individuals who had lawfully resided under EU law before the end of the transition period (31 December 2020) were entitled to continue to reside under broadly the same conditions. In the UK, this gave rise to the EU Settlement Scheme under which eligible EU citizens could apply for settled or pre-settled status. The Court of Justice retains jurisdiction over Withdrawal Agreement rights for a period under the Agreement. Brexit demonstrated the real-world significance of EU citizenship — its loss on withdrawal caused genuine legal uncertainty for millions."
+    }
+  ]
+}

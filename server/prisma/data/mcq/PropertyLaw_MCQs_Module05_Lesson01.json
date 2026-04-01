@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "PropertyLaw_ElevenLabs_Module05_Lesson01.txt",
+  "module_number": 5,
+  "module_title": "Freehold Covenants",
+  "lesson_number": 1,
+  "lesson_title": "Freehold Covenants: Common Law, Equity, the LCLRA 2009, and Building Schemes",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M05_L01_Q01",
+      "question": "Which case is the primary common law authority for the rule that the burden of a freehold covenant does not run with the land?",
+      "options": {
+        "A": "Austerberry v Corporation of Oldham [1885]",
+        "B": "Tulk v Moxhay [1848]",
+        "C": "Rhone v Stephens [1994]",
+        "D": "Elliston v Reacher [1908]"
+      },
+      "correct_answer": "A",
+      "explanation": "Austerberry v Corporation of Oldham [1885] established that the burden of a freehold covenant does not run with the land at common law. This was the primary authority, later emphatically confirmed by the House of Lords in Rhone v Stephens [1994]."
+    },
+    {
+      "id": "PRL_M05_L01_Q02",
+      "question": "In Rhone v Stephens [1994], which court emphatically confirmed that the burden of a positive freehold covenant does not run at common law?",
+      "options": {
+        "A": "The Irish Supreme Court",
+        "B": "The House of Lords",
+        "C": "The English Court of Appeal",
+        "D": "The Privy Council"
+      },
+      "correct_answer": "B",
+      "explanation": "The House of Lords in Rhone v Stephens [1994] emphatically confirmed that the burden of a freehold covenant — particularly a positive one — does not run with the land at common law. Lord Templeman delivered the leading judgment."
+    },
+    {
+      "id": "PRL_M05_L01_Q03",
+      "question": "In Rhone v Stephens [1994], which Law Lord made clear that equity does not supplement the common law rule in respect of the burden of positive covenants?",
+      "options": {
+        "A": "Lord Diplock",
+        "B": "Lord Denning",
+        "C": "Lord Templeman",
+        "D": "Lord Hoffmann"
+      },
+      "correct_answer": "C",
+      "explanation": "Lord Templeman in Rhone v Stephens [1994] made clear that equity does not supplement the common law to allow the burden of positive covenants to run with freehold land. The common law rule stands — the burden does not run."
+    },
+    {
+      "id": "PRL_M05_L01_Q04",
+      "question": "The benefit of a freehold covenant can run at common law. Which of the following is a required condition?",
+      "options": {
+        "A": "The covenant must be negative in substance — restricting what the covenantor can do",
+        "B": "The covenantor must have held a legal estate in the burdened land at the time of the covenant",
+        "C": "The successor in title must have registered the benefit in the Land Registry",
+        "D": "The covenant must touch and concern the land — benefit the land itself rather than the covenantee personally"
+      },
+      "correct_answer": "D",
+      "explanation": "For the benefit of a covenant to run at common law, the covenant must touch and concern the land — meaning it must benefit the dominant land itself, not merely the personal interests of the original covenantee."
+    },
+    {
+      "id": "PRL_M05_L01_Q05",
+      "question": "In Tulk v Moxhay [1848], what was the subject matter of the dispute?",
+      "options": {
+        "A": "Moxhay proposed to build on Leicester Square despite knowing of a covenant requiring it to be kept as an open garden",
+        "B": "Moxhay sought to enforce a covenant against a developer who had purchased land with notice",
+        "C": "Tulk sought to register a restrictive covenant against Moxhay's neighbouring residential estate",
+        "D": "Moxhay challenged the validity of a covenant imposed by Tulk on the sale of a row of terraced houses"
+      },
+      "correct_answer": "A",
+      "explanation": "In Tulk v Moxhay [1848], Tulk had sold Leicester Square on terms that it be kept as an open garden. The land passed through several hands to Moxhay, who knew of the covenant and proposed to build on the square. The court granted an injunction."
+    },
+    {
+      "id": "PRL_M05_L01_Q06",
+      "question": "What equitable principle underlies the rule in Tulk v Moxhay?",
+      "options": {
+        "A": "A successor in title takes subject to all covenants regardless of notice",
+        "B": "It would be unconscionable for a purchaser who took with notice of a restrictive covenant to act in breach of it — equity acts on the conscience",
+        "C": "Equity supplements the common law so that the burden of all covenants — positive and negative — runs with land",
+        "D": "A restrictive covenant is a proprietary right that runs automatically with the servient land without the need for notice"
+      },
+      "correct_answer": "B",
+      "explanation": "The principle underlying Tulk v Moxhay is that equity acts on the conscience. It would be unconscionable for a purchaser who took with notice of a restrictive covenant to act in breach of it. Equity therefore enforces the covenant against that purchaser."
+    },
+    {
+      "id": "PRL_M05_L01_Q07",
+      "question": "Under the rule in Tulk v Moxhay, which of the following is the FIRST condition for the burden of a restrictive covenant to run in equity?",
+      "options": {
+        "A": "The covenant must accommodate and serve an identified dominant tenement",
+        "B": "The successor in title must have actual notice of the covenant",
+        "C": "The covenant must be negative in substance — restricting the covenantor from doing something",
+        "D": "The original parties must have intended the burden to run with the servient land"
+      },
+      "correct_answer": "C",
+      "explanation": "The first condition from Tulk v Moxhay is that the covenant must be negative in substance — it must restrict the covenantor from doing something. This is the defining characteristic of a restrictive covenant capable of running in equity."
+    },
+    {
+      "id": "PRL_M05_L01_Q08",
+      "question": "Under Tulk v Moxhay, the second condition for the burden of a restrictive covenant to run in equity is that it must accommodate and serve a dominant tenement. What does this mean?",
+      "options": {
+        "A": "The covenant must be for the benefit of a local authority or planning body",
+        "B": "The covenant must have been entered into at the time of a conveyance of the dominant tenement",
+        "C": "The covenant must have been registered against the servient tenement in the Land Registry",
+        "D": "The covenant must benefit identified land retained by the covenantee — not merely benefit the covenantee personally"
+      },
+      "correct_answer": "D",
+      "explanation": "The second Tulk v Moxhay condition requires the covenant to accommodate and serve a dominant tenement — it must benefit identified land, not merely the personal interests of the covenantee. This mirrors the accommodation condition from easement law."
+    },
+    {
+      "id": "PRL_M05_L01_Q09",
+      "question": "Which condition from Tulk v Moxhay addresses the subjective intention of the original parties to the covenant?",
+      "options": {
+        "A": "The original parties must have intended that the burden of the covenant would run with the land",
+        "B": "The original parties must have intended that the benefit would run with the dominant tenement",
+        "C": "The successor in title must have intended to be bound by the covenant when they purchased",
+        "D": "The original parties must have made the covenant for valuable consideration"
+      },
+      "correct_answer": "A",
+      "explanation": "The third condition from Tulk v Moxhay is that the original parties must have intended that the burden of the covenant would run with the servient land — binding not just the original covenantor but also successors in title."
+    },
+    {
+      "id": "PRL_M05_L01_Q10",
+      "question": "Under Tulk v Moxhay, the fourth condition is that the successor must have notice. In the modern era of registered land, how is this requirement satisfied?",
+      "options": {
+        "A": "By the successor signing a declaration at the time of purchase acknowledging the covenant",
+        "B": "By registration of the covenant as a burden on the servient title in the Land Registry",
+        "C": "By actual occupation of the dominant tenement by a person claiming the benefit",
+        "D": "By notification to the Land Registry within six months of the covenant being created"
+      },
+      "correct_answer": "B",
+      "explanation": "In the modern era of registered land, notice is established by registration. A restrictive covenant must be registered as a burden on the servient land's folio in the Land Registry to bind successors who would otherwise take without notice."
+    }
+  ]
+}

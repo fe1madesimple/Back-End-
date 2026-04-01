@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module01_Lesson01.txt",
+  "module_number": 1,
+  "module_title": "The Nature and Function of Tort Law",
+  "lesson_number": 1,
+  "lesson_title": "The Nature and Function of Tort Law, Exam Strategy, and the IRAC Approach",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M01_L01_Q01",
+      "question": "Which of the following best defines a tort in Irish law?",
+      "options": {
+        "A": "A civil wrong, other than a breach of contract or trust, for which the law provides a remedy",
+        "B": "A criminal act that causes loss to an individual and for which damages may be awarded",
+        "C": "A breach of a contractual obligation that causes economic loss to the innocent party",
+        "D": "Any wrongful act for which equitable relief may be granted by the courts"
+      },
+      "correct_answer": "A",
+      "explanation": "A tort is a civil wrong, distinct from a breach of contract or a breach of trust, for which the law provides a remedy — usually damages. This distinguishes tort from criminal law (which requires prosecution) and from contract law (which requires a voluntary agreement)."
+    },
+    {
+      "id": "TL_M01_L01_Q02",
+      "question": "The word 'tort' derives from which Latin term, meaning 'twisted' or 'wrong'?",
+      "options": {
+        "A": "Tortilis",
+        "B": "Tortus",
+        "C": "Tortura",
+        "D": "Tortum"
+      },
+      "correct_answer": "B",
+      "explanation": "The word 'tort' comes from the Latin 'tortus', meaning twisted or wrong, which passed into English via Old French. This etymology reflects the idea of conduct that deviates from the standard of right behaviour expected in society."
+    },
+    {
+      "id": "TL_M01_L01_Q03",
+      "question": "Which of the following is NOT one of the three primary functions of tort law?",
+      "options": {
+        "A": "Compensation",
+        "B": "Deterrence",
+        "C": "Punishment",
+        "D": "Vindication"
+      },
+      "correct_answer": "C",
+      "explanation": "The three primary functions of tort law are compensation (making good the plaintiff's loss), deterrence (discouraging future wrongful conduct), and vindication (affirming the plaintiff's rights). Punishment is a function of criminal law, not tort law, though aggravated or exemplary damages may occasionally be awarded in rare tort cases."
+    },
+    {
+      "id": "TL_M01_L01_Q04",
+      "question": "In a tort action in Ireland, the standard of proof required of the plaintiff is:",
+      "options": {
+        "A": "Beyond reasonable doubt",
+        "B": "Beyond all reasonable doubt",
+        "C": "Proof to the criminal standard in all cases",
+        "D": "Balance of probabilities"
+      },
+      "correct_answer": "D",
+      "explanation": "In civil proceedings, including tort actions, the plaintiff must prove their case on the balance of probabilities — that is, it is more likely than not that the defendant acted tortiously. This is a lower standard than the criminal standard of beyond reasonable doubt, which applies to prosecutions brought by the DPP."
+    },
+    {
+      "id": "TL_M01_L01_Q05",
+      "question": "Which of the following best distinguishes tort obligations from contractual obligations?",
+      "options": {
+        "A": "Tort obligations are imposed by law, whereas contractual obligations are voluntarily undertaken by the parties",
+        "B": "Tort obligations are voluntarily assumed, whereas contractual obligations are imposed by statute",
+        "C": "Tort obligations require privity of contract, whereas contractual obligations do not",
+        "D": "Tort obligations arise only where there is a pre-existing relationship between the parties"
+      },
+      "correct_answer": "A",
+      "explanation": "The fundamental distinction is that tort obligations are imposed by law and exist regardless of any agreement between the parties, whereas contractual obligations arise from a voluntary agreement entered into by the parties. A duty in tort can therefore arise between complete strangers, as confirmed in Donoghue v Stevenson [1932]."
+    },
+    {
+      "id": "TL_M01_L01_Q06",
+      "question": "In the FE-1 examination, how many questions must a candidate answer from the tort section of the Property paper?",
+      "options": {
+        "A": "4 questions from a choice of 6",
+        "B": "4 questions from a choice of 8",
+        "C": "5 questions from a choice of 8",
+        "D": "3 questions from a choice of 6"
+      },
+      "correct_answer": "B",
+      "explanation": "The FE-1 Property paper presents 8 questions, and candidates must answer 4. The examination lasts 3.5 hours, giving approximately 52 minutes per question. Candidates should select the questions they are most confident about and manage time carefully."
+    },
+    {
+      "id": "TL_M01_L01_Q07",
+      "question": "When both a tort and a crime arise from the same incident — for example, a battery — which statement is correct under Irish law?",
+      "options": {
+        "A": "The criminal proceedings must be concluded before any civil action can be brought",
+        "B": "The civil action is automatically stayed once criminal proceedings are initiated",
+        "C": "The tortfeasor may face both criminal prosecution and a civil action for damages simultaneously",
+        "D": "Concurrent criminal and civil liability for the same act is not recognised in Irish law"
+      },
+      "correct_answer": "C",
+      "explanation": "Irish law recognises concurrent liability. A single wrongful act — such as a battery — can give rise to both criminal prosecution by the DPP (beyond reasonable doubt) and a civil tort action by the victim (balance of probabilities). The two proceedings are independent of each other and may proceed simultaneously."
+    },
+    {
+      "id": "TL_M01_L01_Q08",
+      "question": "Which historical form of action covered torts that were direct and forcible in nature?",
+      "options": {
+        "A": "Action on the case",
+        "B": "Action per quod",
+        "C": "Negligence per se",
+        "D": "Trespass"
+      },
+      "correct_answer": "D",
+      "explanation": "Historically, trespass was the form of action for direct and forcible wrongs — for example, a direct blow to the person or direct damage to land. Action on the case, by contrast, covered indirect harm where the damage was a consequential result of the defendant's act rather than an immediate one."
+    },
+    {
+      "id": "TL_M01_L01_Q09",
+      "question": "Which landmark case is credited with establishing a generalised duty of care in negligence, moving beyond the old forms of action?",
+      "options": {
+        "A": "Donoghue v Stevenson [1932] AC 562",
+        "B": "Caparo Industries plc v Dickman [1990] 2 AC 605",
+        "C": "Glencar Exploration plc v Mayo County Council [2002] 1 IR 84",
+        "D": "Anns v Merton London Borough Council [1978] AC 728"
+      },
+      "correct_answer": "A",
+      "explanation": "Donoghue v Stevenson [1932] AC 562 is the foundational authority. Lord Atkin's 'neighbour principle' established that a duty of care arises towards persons who are so closely and directly affected by one's acts that one ought reasonably to have them in contemplation. This replaced the piecemeal categories of the old forms of action with a generalised principle."
+    },
+    {
+      "id": "TL_M01_L01_Q10",
+      "question": "Which Irish statute codified the rules on concurrent wrongdoers, contributory negligence, survival of actions, and fatal injuries?",
+      "options": {
+        "A": "Occupiers' Liability Act 1995",
+        "B": "Civil Liability Act 1961",
+        "C": "Civil Liability and Courts Act 2004",
+        "D": "Succession Act 1965"
+      },
+      "correct_answer": "B",
+      "explanation": "The Civil Liability Act 1961 is the principal statute governing several key areas of Irish tort law: the rules on concurrent wrongdoers (proportionate liability), contributory negligence (which reduces but does not extinguish the plaintiff's claim), survival of actions on death, and claims for fatal injuries. It remains one of the most frequently examined statutes in the FE-1 tort paper."
+    }
+  ]
+}

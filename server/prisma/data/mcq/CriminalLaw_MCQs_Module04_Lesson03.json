@@ -1,0 +1,151 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module04_Lesson03.txt",
+  "module_number": 4,
+  "module_title": "Homicide",
+  "lesson_number": 3,
+  "lesson_title": "Involuntary Manslaughter and Dangerous Driving Causing Death",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M04_L03_Q01",
+      "question": "Which of the following most accurately states the test for 'dangerousness' in unlawful and dangerous act manslaughter?",
+      "options": {
+        "A": "The accused must have subjectively foreseen a risk of some harm to the victim.",
+        "B": "A sober and reasonable person would inevitably recognise that the act carried a risk of at least some harm.",
+        "C": "The act must carry an objectively foreseeable risk of serious harm or death.",
+        "D": "The accused must have intended to place the victim at risk of harm."
+      },
+      "correct_answer": "B",
+      "explanation": "The test is objective and was set out in R v Church [1966] QB 59, adopted in Ireland. The question is what a sober and reasonable person would recognise — not what the accused personally foresaw. Crucially, the risk need only be of some harm, not serious harm or death.",
+      "difficulty": "medium",
+      "topic": "Unlawful and Dangerous Act Manslaughter"
+    },
+    {
+      "id": "CL_M04_L03_Q02",
+      "question": "In The People (DPP) v Cagney and McGrath [2007] IECCA, the Court of Criminal Appeal confirmed which of the following principles regarding unlawful act manslaughter?",
+      "options": {
+        "A": "The underlying act need only be negligent, not independently criminal.",
+        "B": "The underlying act must be an independently criminal act, not merely dangerous conduct.",
+        "C": "The accused must have intended some harm to the deceased.",
+        "D": "The prosecution must prove the accused was reckless as to the risk of death."
+      },
+      "correct_answer": "B",
+      "explanation": "Cagney and McGrath is the leading Irish authority confirming that for unlawful and dangerous act manslaughter, the underlying act must be independently unlawful — it must cross the threshold of criminality — not merely be negligent or dangerous conduct.",
+      "difficulty": "medium",
+      "topic": "Unlawful and Dangerous Act Manslaughter"
+    },
+    {
+      "id": "CL_M04_L03_Q03",
+      "question": "Dermot, intending to frighten a colleague, brandishes a knife in his direction. His colleague's partner, who had just entered the room, stumbles against the blade and is fatally injured. Dermot had no intention of harming the partner. Which statement best reflects the legal position?",
+      "options": {
+        "A": "Dermot cannot be liable for manslaughter as he had no intention of harming the partner.",
+        "B": "Dermot may be liable for unlawful and dangerous act manslaughter because his act was unlawful and objectively dangerous, causing death.",
+        "C": "Dermot can only be liable if it is proved he foresaw a risk of death to the partner specifically.",
+        "D": "Dermot may be charged with murder as the act was intentional even if the victim was unintended."
+      },
+      "correct_answer": "B",
+      "explanation": "This mirrors the facts of R v Larkin [1943]. The act of brandishing a knife is independently unlawful and objectively dangerous. There is no requirement that the accused intended harm to the person who actually died. Unlawful and dangerous act manslaughter does not require intention directed at the deceased.",
+      "difficulty": "medium",
+      "topic": "Unlawful and Dangerous Act Manslaughter"
+    },
+    {
+      "id": "CL_M04_L03_Q04",
+      "question": "What is the standard of negligence required to establish gross negligence manslaughter as set out in R v Bateman [1925]?",
+      "options": {
+        "A": "Negligence falling below the standard of a reasonable competent driver.",
+        "B": "Any failure of duty of care that causes death.",
+        "C": "Negligence so gross as to show disregard for the life and safety of others, amounting to a crime deserving punishment.",
+        "D": "Negligence that a reasonable person would have avoided in the circumstances."
+      },
+      "correct_answer": "C",
+      "explanation": "Lord Hewart CJ in R v Bateman [1925] held that criminal liability requires negligence so much worse than ordinary negligence that it shows 'such disregard for the life and safety of others as to amount to a crime against the State and conduct deserving punishment.' Ordinary civil negligence is insufficient.",
+      "difficulty": "medium",
+      "topic": "Gross Negligence Manslaughter"
+    },
+    {
+      "id": "CL_M04_L03_Q05",
+      "question": "The People (DPP) v Cullagh applied the gross negligence manslaughter standard in Ireland in which context?",
+      "options": {
+        "A": "A medical negligence case involving a surgeon.",
+        "B": "A fatal road traffic accident.",
+        "C": "An industrial accident at a construction site.",
+        "D": "A death resulting from the supply of defective goods."
+      },
+      "correct_answer": "B",
+      "explanation": "The People (DPP) v Cullagh confirmed the Bateman gross negligence standard in the context of a fatal road traffic accident, establishing that the same test applies in Ireland where a death results from a grossly negligent failure in road use.",
+      "difficulty": "easy",
+      "topic": "Gross Negligence Manslaughter"
+    },
+    {
+      "id": "CL_M04_L03_Q06",
+      "question": "Under which provision is the primary statutory offence of dangerous driving causing death or serious bodily harm created in Irish law?",
+      "options": {
+        "A": "Section 49 of the Road Traffic Act 1961.",
+        "B": "Section 53 of the Road Traffic Act 1961, as amended.",
+        "C": "Section 4 of the Criminal Justice Act 2006.",
+        "D": "Section 2 of the Road Traffic (Amendment) Act 1984."
+      },
+      "correct_answer": "B",
+      "explanation": "The offence of dangerous driving causing death or serious bodily harm is created by Section 53 of the Road Traffic Act 1961, as amended — most significantly by the Criminal Justice Act 2006. This is the primary statutory charge in road fatality cases.",
+      "difficulty": "easy",
+      "topic": "Dangerous Driving Causing Death"
+    },
+    {
+      "id": "CL_M04_L03_Q07",
+      "question": "What is the maximum penalty on conviction on indictment for the offence of dangerous driving causing death under the Road Traffic Act 1961 s.53?",
+      "options": {
+        "A": "Five years imprisonment.",
+        "B": "Seven years imprisonment.",
+        "C": "Ten years imprisonment, an unlimited fine, and mandatory disqualification.",
+        "D": "Life imprisonment."
+      },
+      "correct_answer": "C",
+      "explanation": "The maximum penalty on indictment for dangerous driving causing death under s.53 RTA 1961 as amended is ten years imprisonment, an unlimited fine, and mandatory disqualification from driving.",
+      "difficulty": "easy",
+      "topic": "Dangerous Driving Causing Death"
+    },
+    {
+      "id": "CL_M04_L03_Q08",
+      "question": "Siobhán drives through a red light while intoxicated, striking and killing a cyclist. Which charges should a prosecutor most comprehensively consider?",
+      "options": {
+        "A": "Careless driving only, as the death was accidental.",
+        "B": "Gross negligence manslaughter only, as intoxication elevates the negligence to a criminal level.",
+        "C": "Dangerous driving causing death under s.53 RTA 1961 and s.53A causing death while driving under the influence, with manslaughter also considered in the alternative.",
+        "D": "Murder, because driving through a red light while intoxicated demonstrates reckless indifference to human life."
+      },
+      "correct_answer": "C",
+      "explanation": "A prosecutor should consider s.53 RTA 1961 dangerous driving causing death, s.53A causing death by careless driving under the influence (inserted by the Road Traffic Act 2006), and common law manslaughter in the alternative. Multiple charges are commonly brought and left to the jury. Murder requires proof of intent to kill or cause serious harm — not established on these facts.",
+      "difficulty": "hard",
+      "topic": "Dangerous Driving Causing Death"
+    },
+    {
+      "id": "CL_M04_L03_Q09",
+      "question": "How does the standard required for dangerous driving causing death under s.53 RTA 1961 differ from gross negligence manslaughter?",
+      "options": {
+        "A": "Dangerous driving causing death requires proof of subjective recklessness; gross negligence manslaughter does not.",
+        "B": "Gross negligence manslaughter requires a higher degree of fault — a more fundamental dereliction of care — than dangerous driving causing death.",
+        "C": "They are identical offences and the prosecution must choose between them.",
+        "D": "Dangerous driving causing death can only be charged where the accused was intoxicated."
+      },
+      "correct_answer": "B",
+      "explanation": "The dangerous driving causing death offence under s.53 is established by proving driving that falls far below the competent driver standard — an objective test at a serious but somewhat lower threshold than gross negligence manslaughter, which requires the Bateman standard of gross departure from the standard of care deserving criminal punishment. Both are objective; gross negligence manslaughter sets the higher bar.",
+      "difficulty": "hard",
+      "topic": "Distinguishing Manslaughter from Dangerous Driving"
+    },
+    {
+      "id": "CL_M04_L03_Q10",
+      "question": "A defendant places a booby trap on a path knowing it will cause injury to whoever triggers it. A person triggers the trap and dies. The defendant claims the trap was not aimed at the deceased specifically. Which of the following best applies?",
+      "options": {
+        "A": "The defendant cannot be liable as they did not foresee the specific victim.",
+        "B": "The defendant is potentially liable for unlawful and dangerous act manslaughter — the act was independently criminal and objectively dangerous to anyone in that location.",
+        "C": "The defendant can only be convicted of a lesser offence such as criminal damage.",
+        "D": "This is gross negligence manslaughter only, as there was no direct act against the victim."
+      },
+      "correct_answer": "B",
+      "explanation": "Setting a booby trap is an independently unlawful act. It is objectively dangerous to any person who might encounter it — a reasonable person would recognise the risk of harm. The identity of the victim is irrelevant to unlawful and dangerous act manslaughter. Death resulting from such an act grounds liability even absent any intent directed at the deceased.",
+      "difficulty": "hard",
+      "topic": "Unlawful and Dangerous Act Manslaughter"
+    }
+  ]
+}

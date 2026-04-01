@@ -1,0 +1,131 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "Module_05_Lesson_01_Trustees_Duties___Duties_of_Investment_and_the_Prudent_Trustee_Standard.txt",
+  "module_number": 5,
+  "module_title": "Express Trusts: Trustee Duties and Powers",
+  "lesson_number": 1,
+  "lesson_title": "Trustees' Duties: Duties of Investment and the Prudent Trustee Standard",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EQL_M05_L01_Q01",
+      "question": "What is the standard of care applied to trustees when investing trust property in Ireland?",
+      "options": {
+        "A": "The standard of an expert fund manager with specialist financial qualifications.",
+        "B": "The prudent investor standard — the care and skill that a reasonably prudent person of business would apply when managing the affairs of others.",
+        "C": "A subjective standard based on the individual trustee's personal level of expertise.",
+        "D": "The minimum standard necessary to avoid fraud or dishonesty."
+      },
+      "correct_answer": "B",
+      "explanation": "The standard applied to trustees in Ireland is the prudent investor standard. In Learoyd v Whiteley (1887), the House of Lords held that a trustee must apply the same degree of care and skill as a prudent person of business managing their own affairs, but with the added consideration that the funds belong to others — elevating the standard beyond purely personal management. The Trustee Act 1893 codifies and supplements this obligation."
+    },
+    {
+      "id": "EQL_M05_L01_Q02",
+      "question": "In Learoyd v Whiteley (1887), the House of Lords articulated the prudent trustee standard. Which of the following correctly states that standard?",
+      "options": {
+        "A": "A trustee must maximise the return on investments regardless of the risk involved.",
+        "B": "A trustee must act as a prudent person of business managing their own affairs, but with the added consideration that the funds belong to others.",
+        "C": "A trustee is only liable if they act dishonestly or with fraudulent intent.",
+        "D": "A trustee must invest solely in government securities and bank deposits as prescribed by the Trustee Act 1893."
+      },
+      "correct_answer": "B",
+      "explanation": "In Learoyd v Whiteley (1887), the House of Lords established the prudent trustee standard. The trustee must act as a prudent person of business would act when managing their own affairs, with the additional elevation that the funds belong to others. This means the trustee cannot take risks that might be acceptable in purely personal investment decisions when those risks are with beneficiaries' money."
+    },
+    {
+      "id": "EQL_M05_L01_Q03",
+      "question": "A trustee concentrates the entire trust fund in shares of a single technology company. The company subsequently becomes insolvent and the trust fund is lost. Which duty has the trustee most likely breached?",
+      "options": {
+        "A": "The duty not to profit from the trust.",
+        "B": "The self-dealing rule.",
+        "C": "The duty to diversify investments and not over-concentrate the trust fund in a single asset or asset class.",
+        "D": "The duty to act impartially between income and capital beneficiaries."
+      },
+      "correct_answer": "C",
+      "explanation": "Trustees have a duty to diversify investments so as not to concentrate the trust fund in a single asset or a single class of assets. Over-concentration in one type of investment exposes the trust to unnecessary risk and constitutes a breach of the investment duty. The Trustee Act 1893, as informed by the prudent investor standard from Learoyd v Whiteley (1887), requires trustees to manage the investment portfolio in a balanced and prudent manner."
+    },
+    {
+      "id": "EQL_M05_L01_Q04",
+      "question": "Which Irish statute provides the primary legislative framework governing trustees' powers of investment?",
+      "options": {
+        "A": "The Trustee Act 2001",
+        "B": "The Succession Act 1965",
+        "C": "The Trustee Act 1893",
+        "D": "The Land and Conveyancing Law Reform Act 2009"
+      },
+      "correct_answer": "C",
+      "explanation": "The Trustee Act 1893 is the primary Irish statute governing trustees' powers of investment, conferring powers to invest in government securities, bank deposits, and certain company securities. Ireland has not enacted a modern equivalent to the Trustee Act 2000 (England and Wales). In practice, trust instruments frequently enlarge the statutory investment powers conferred by the 1893 Act to give trustees a broader investment mandate."
+    },
+    {
+      "id": "EQL_M05_L01_Q05",
+      "question": "Where a trustee makes an investment that falls below the prudent investor standard and the trust fund suffers a loss, what is the primary legal consequence for the trustee?",
+      "options": {
+        "A": "The trustee must resign but is not required to compensate the trust.",
+        "B": "The trustee is personally liable to make good the loss to the trust fund.",
+        "C": "The trustee is liable only if they made a personal profit from the investment.",
+        "D": "The trustee's liability is limited to the amount of fees they received for managing the trust."
+      },
+      "correct_answer": "B",
+      "explanation": "Where a trustee invests in a manner that breaches the prudent investor standard and the trust suffers a loss, the trustee is personally liable to make good that loss. The trustee must restore the trust fund to the position it would have been in had the breach not occurred. Personal liability for breach of the investment duty is the primary remedy available to beneficiaries and is a core principle of trusteeship under Irish law."
+    },
+    {
+      "id": "EQL_M05_L01_Q06",
+      "question": "Section 62 of the Trustee Act 1893 provides a mechanism by which a trustee may escape personal liability for a breach of trust. What conditions must be satisfied?",
+      "options": {
+        "A": "The trustee must have made a profit from the trust which they are willing to return.",
+        "B": "The trustee must have acted honestly and reasonably and ought fairly to be excused.",
+        "C": "The breach must have resulted in no actual loss to the trust fund.",
+        "D": "The trustee must have obtained independent legal advice before committing the breach."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 62 of the Trustee Act 1893 gives the court a discretion to relieve a trustee from personal liability for a breach of trust where: (1) the trustee acted honestly; (2) the trustee acted reasonably; and (3) the trustee ought fairly to be excused. All three elements must be present. The section provides a safety valve for trustees who, despite acting in good faith and with reasonable care, have technically committed a breach."
+    },
+    {
+      "id": "EQL_M05_L01_Q07",
+      "question": "A trust has two categories of beneficiary: a life tenant entitled to income during their lifetime, and a remainderman entitled to the capital on the life tenant's death. The trustees invest in high-income shares that steadily erode the capital value of the fund. Which duty has the trustee most likely breached?",
+      "options": {
+        "A": "The duty not to profit from the trust.",
+        "B": "The duty to act impartially between income beneficiaries and capital beneficiaries.",
+        "C": "The duty to keep proper accounts.",
+        "D": "The duty to consult all beneficiaries before making investment decisions."
+      },
+      "correct_answer": "B",
+      "explanation": "Trustees have a duty to act impartially as between income beneficiaries and capital beneficiaries. Investments that generate high income but erode capital favour the income beneficiary at the expense of the remainderman. The trustee must balance the interests of both classes and cannot adopt an investment strategy that systematically benefits one at the expense of the other. This duty of impartiality is a fundamental aspect of the prudent trustee standard."
+    },
+    {
+      "id": "EQL_M05_L01_Q08",
+      "question": "The rule in Howe v Lord Dartmouth (1802) addresses a specific duty of trustees. What does that rule require?",
+      "options": {
+        "A": "Trustees must follow the instructions of the settlor in all circumstances.",
+        "B": "Trustees must convert non-income-producing assets into income-producing investments and apportion the proceeds between income and capital beneficiaries.",
+        "C": "Trustees must obtain the court's approval before making any investment.",
+        "D": "Trustees must diversify the trust fund across at least five different asset classes."
+      },
+      "correct_answer": "B",
+      "explanation": "The rule in Howe v Lord Dartmouth (1802) requires trustees to convert non-income-producing assets — for example, a house held on trust that generates no income for the life tenant — into income-producing investments, and to apportion the proceeds equitably between income and capital beneficiaries. The rule gives effect to the duty of impartiality by ensuring that the trust fund is held in a form that fairly serves the interests of both classes of beneficiary."
+    },
+    {
+      "id": "EQL_M05_L01_Q09",
+      "question": "Which of the following correctly describes the relationship between the statutory investment powers in the Trustee Act 1893 and the powers typically found in modern trust instruments?",
+      "options": {
+        "A": "Modern trust instruments cannot expand the statutory powers — the 1893 Act is the ceiling.",
+        "B": "Modern trust instruments typically enlarge the statutory powers to confer a broader investment mandate on trustees beyond the limited range specified in the 1893 Act.",
+        "C": "The statutory powers in the 1893 Act are irrelevant as they have been impliedly repealed.",
+        "D": "Trustees may only rely on statutory powers and cannot act on enlarged powers granted by the trust instrument."
+      },
+      "correct_answer": "B",
+      "explanation": "The Trustee Act 1893 confers basic powers of investment in government securities, bank deposits, and certain company securities. However, the 1893 Act's investment range is limited by modern standards. In practice, modern trust instruments routinely enlarge these statutory powers, conferring broader investment mandates on trustees. The trust instrument is the primary source of investment authority, with the 1893 Act serving as the default position where the instrument is silent."
+    },
+    {
+      "id": "EQL_M05_L01_Q10",
+      "question": "For FE-1 examination purposes, which of the following sets out the correct combination of duties and rules applicable to a trustee managing the trust investment portfolio?",
+      "options": {
+        "A": "The duty to maximise profit; the self-dealing rule; and the duty to keep accounts.",
+        "B": "The prudent investor standard from Learoyd v Whiteley (1887); the duty to diversify; the duty of impartiality between income and capital beneficiaries; personal liability for breach; and relief under section 62 of the Trustee Act 1893.",
+        "C": "The duty to follow the settlor's instructions; the duty to consult beneficiaries; and the duty to appoint a professional investment adviser.",
+        "D": "The complete list test; the 'is or is not' test; and the rule against perpetuities."
+      },
+      "correct_answer": "B",
+      "explanation": "The key investment-related duties for FE-1 purposes are: (1) the prudent investor standard from Learoyd v Whiteley (1887) — the care of a prudent person of business managing others' funds; (2) the duty to diversify — not to over-concentrate in any single asset; (3) the duty of impartiality between income and capital beneficiaries, reinforced by the rule in Howe v Lord Dartmouth (1802); (4) personal liability to restore the trust fund where there is a breach; and (5) the potential for relief under section 62 of the Trustee Act 1893 where the trustee acted honestly and reasonably."
+    }
+  ]
+}

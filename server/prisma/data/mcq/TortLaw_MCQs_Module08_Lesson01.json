@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "Module_08_Lesson_01_Product_Liability___Common_Law_and_the_1991_Act.txt",
+  "module_number": 8,
+  "module_title": "Product Liability",
+  "lesson_number": 1,
+  "lesson_title": "Product Liability: Common Law and the Liability for Defective Products Act 1991",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M08_L01_Q01",
+      "question": "What is the foundational common law authority for product liability in Irish and English law?",
+      "options": {
+        "A": "Caparo Industries v Dickman [1990]",
+        "B": "Donoghue v Stevenson [1932] House of Lords",
+        "C": "Page v Smith [1996]",
+        "D": "Kelly v Hennessy [1995]"
+      },
+      "correct_answer": "B",
+      "explanation": "Donoghue v Stevenson [1932] House of Lords is the foundational authority for product liability at common law. Lord Atkin held that a manufacturer owed a duty of care to the ultimate consumer or user who was likely to be injured by a defect caused by negligent manufacture, where there was no reasonable possibility of intermediate examination between the manufacturer and the consumer."
+    },
+    {
+      "id": "TL_M08_L01_Q02",
+      "question": "What key principle regarding contractual privity did Donoghue v Stevenson establish in the context of product liability?",
+      "options": {
+        "A": "A duty of care arises only between parties in a contractual relationship",
+        "B": "The manufacturer owed a duty of care to the end user even without a contract between them",
+        "C": "A manufacturer is only liable to retailers, not to end consumers",
+        "D": "Privity of contract is required before any duty of care can arise in product cases"
+      },
+      "correct_answer": "B",
+      "explanation": "Donoghue v Stevenson established that physical proximity in the sense of contractual privity was not required. The manufacturer owed a duty of care to the end user — the neighbour principle applied — meaning a consumer without a contract with the manufacturer could still sue."
+    },
+    {
+      "id": "TL_M08_L01_Q03",
+      "question": "What is the key limitation of a common law product liability claim in negligence compared to a claim under the Liability for Defective Products Act 1991?",
+      "options": {
+        "A": "Common law claims cannot recover damages for personal injury",
+        "B": "Common law claims are time-barred after one year",
+        "C": "The plaintiff must prove fault — that the manufacturer was negligent in producing the defective product",
+        "D": "Common law claims can only be brought against the retailer, not the manufacturer"
+      },
+      "correct_answer": "C",
+      "explanation": "The major limitation of the common law approach is that the plaintiff must prove fault — they must establish that the manufacturer was negligent in producing the defective product. This is extremely difficult because the manufacturing process is within the knowledge of the manufacturer, not the consumer."
+    },
+    {
+      "id": "TL_M08_L01_Q04",
+      "question": "What EU Directive did the Liability for Defective Products Act 1991 implement into Irish law?",
+      "options": {
+        "A": "EC Consumer Rights Directive 2011/83/EU",
+        "B": "EC Products Liability Directive 85/374/EEC",
+        "C": "EC General Product Safety Directive 2001/95/EC",
+        "D": "EC Unfair Contract Terms Directive 93/13/EEC"
+      },
+      "correct_answer": "B",
+      "explanation": "The Liability for Defective Products Act 1991 implemented the EC Products Liability Directive 85/374/EEC into Irish law. It introduced strict liability for defective products, removing the need for the plaintiff to prove that the producer was negligent."
+    },
+    {
+      "id": "TL_M08_L01_Q05",
+      "question": "Under section 2 of the Liability for Defective Products Act 1991, which of the following is NOT included in the definition of a 'producer'?",
+      "options": {
+        "A": "The manufacturer of the finished product",
+        "B": "Anyone who imports the product into the EU for commercial purposes",
+        "C": "Anyone who purchases the product for personal use",
+        "D": "Anyone who represents themselves as the producer by putting their name on the product"
+      },
+      "correct_answer": "C",
+      "explanation": "A person who merely purchases the product for personal use is not a 'producer' under section 2. Producers include the manufacturer of the finished product, the producer of a raw material or component part, anyone who puts their name on the product, anyone who imports the product into the EU for commercial purposes, and — as a supplier of last resort — any person who supplies the product if the producer cannot be identified."
+    },
+    {
+      "id": "TL_M08_L01_Q06",
+      "question": "Under section 4 of the Liability for Defective Products Act 1991, what must a plaintiff prove to establish liability?",
+      "options": {
+        "A": "The defect in the product, the damage suffered, and causation between the defect and the damage — but not negligence",
+        "B": "That the producer was negligent and that the defect caused the damage",
+        "C": "The defect in the product and the producer's knowledge of that defect",
+        "D": "Only that they suffered damage while using the product"
+      },
+      "correct_answer": "A",
+      "explanation": "Under section 4, the plaintiff must prove the defect in the product, the damage suffered, and causation between the defect and the damage. Crucially, the plaintiff does not need to prove negligence. This is the strict liability advantage of the 1991 Act."
+    },
+    {
+      "id": "TL_M08_L01_Q07",
+      "question": "How does section 5 of the Liability for Defective Products Act 1991 define a 'defective' product?",
+      "options": {
+        "A": "A product that fails to perform its primary function as advertised",
+        "B": "A product that does not provide the safety which a person is entitled to expect, taking all circumstances into account",
+        "C": "A product that causes any harm to any user under any circumstances",
+        "D": "A product that does not meet the highest available safety standard at the time of manufacture"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 5 defines a product as defective if it does not provide the safety which a person is entitled to expect, taking all circumstances into account. This includes the presentation of the product, the use to which it could reasonably be expected to be put, and the time at which it was put into circulation. The standard is not perfection but reasonable consumer expectations."
+    },
+    {
+      "id": "TL_M08_L01_Q08",
+      "question": "What is the 'development risks defence' under section 6 of the Liability for Defective Products Act 1991?",
+      "options": {
+        "A": "A defence available where the producer was still in the process of developing the product when it was released",
+        "B": "A defence where the state of scientific and technical knowledge at the time of circulation was such that the defect could not have been discovered",
+        "C": "A defence available only to small producers who lacked the resources to test the product",
+        "D": "A defence where the product was defective due to compliance with mandatory government regulations"
+      },
+      "correct_answer": "B",
+      "explanation": "The development risks defence under section 6 allows a producer to escape liability if the state of scientific and technical knowledge at the time the product was put into circulation was such that the existence of the defect could not have been discovered. It is sometimes called the 'state-of-the-art' defence and reflects a policy choice between consumer protection and encouraging innovation."
+    },
+    {
+      "id": "TL_M08_L01_Q09",
+      "question": "What categories of damage are recoverable under section 12 of the Liability for Defective Products Act 1991?",
+      "options": {
+        "A": "All financial loss, including pure economic loss and loss of profit",
+        "B": "Death or personal injury, and damage to property ordinarily intended for private use and so used by the plaintiff",
+        "C": "Damage to the defective product itself and any property loss flowing from it",
+        "D": "Any loss whatsoever caused by the defective product"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 12 limits recovery to death or personal injury, and damage to property — but only property ordinarily intended for private use and actually used by the plaintiff for their own private use or consumption. Pure economic loss and damage to the defective product itself are not recoverable under the Act."
+    },
+    {
+      "id": "TL_M08_L01_Q10",
+      "question": "What is the limitation period and long-stop period for claims under the Liability for Defective Products Act 1991?",
+      "options": {
+        "A": "Two years from the date of damage; long-stop of five years from the date the product was put into circulation",
+        "B": "Six years from the date of damage; no long-stop period",
+        "C": "Three years from when the plaintiff became aware (or ought to have been aware) of the damage, defect, and identity of the producer; long-stop of ten years from when the product was put into circulation",
+        "D": "One year from the date of purchase; long-stop of seven years"
+      },
+      "correct_answer": "C",
+      "explanation": "Under section 7 of the Act, the limitation period is three years from the date on which the plaintiff became aware — or ought reasonably to have become aware — of the damage, the defect, and the identity of the producer. There is a long-stop period of ten years from when the product was put into circulation, after which no action can be brought."
+    }
+  ]
+}

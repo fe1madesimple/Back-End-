@@ -1,0 +1,131 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module10_Lesson02.txt",
+  "module_number": 10,
+  "module_title": "Defences",
+  "lesson_number": 2,
+  "lesson_title": "Defence of the Dwelling",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M10_L02_Q01",
+      "question": "The primary statute governing defence of the dwelling in Ireland is:",
+      "options": {
+        "A": "Section 18 of the Non-Fatal Offences Against the Person Act 1997",
+        "B": "The Criminal Law (Defence and Dwelling) Act 2011",
+        "C": "The Domestic Violence Act 2018",
+        "D": "Section 4 of the Criminal Justice Act 1964"
+      },
+      "correct_answer": "B",
+      "explanation": "The Criminal Law (Defence and Dwelling) Act 2011 is the specific statutory regime governing defence of the dwelling. It provides that a person in their dwelling may use such force as is reasonable to prevent entry of, or remove, an intruder — with no duty to retreat."
+    },
+    {
+      "id": "CL_M10_L02_Q02",
+      "question": "Under the Criminal Law (Defence and Dwelling) Act 2011, which of the following is correct?",
+      "options": {
+        "A": "The occupant must retreat from the dwelling before using force",
+        "B": "Any level of force is permissible against an intruder in the home",
+        "C": "There is no duty to retreat, but force must still be reasonable",
+        "D": "The defence is only available if the occupant is physically present when the intruder enters"
+      },
+      "correct_answer": "C",
+      "explanation": "The 2011 Act removes the duty to retreat from the dwelling but does not grant unlimited licence to use force. Proportionality and reasonableness remain the standard. The Act strengthens the householder's position — it does not create an absolute right to use any level of force."
+    },
+    {
+      "id": "CL_M10_L02_Q03",
+      "question": "The public and legal debate that directly catalysed the enactment of the Criminal Law (Defence and Dwelling) Act 2011 arose from which case?",
+      "options": {
+        "A": "DPP v Martin Keenan [2020] Circuit Court",
+        "B": "Crawford v DPP [2024] IESC 44",
+        "C": "DPP v Nally [2006] IECCA",
+        "D": "AG v Keatley [1954] IR"
+      },
+      "correct_answer": "C",
+      "explanation": "DPP v Nally [2006] IECCA — in which Padraig Nally shot and killed an intruder in his farmyard in County Mayo — prompted intense public debate about the adequacy of the law for householders confronted by intruders. It was the direct catalyst for the 2011 Act, though Nally itself is not authority for any legal proposition."
+    },
+    {
+      "id": "CL_M10_L02_Q04",
+      "question": "In DPP v Martin Keenan [2020] Circuit Court, the accused used garden shears to repel an intruder and was found not guilty. This case is significant because:",
+      "options": {
+        "A": "It established that lethal force is always justified against an intruder",
+        "B": "It confirmed the 2011 Act operates as a real and effective defence in appropriate circumstances",
+        "C": "It abolished the need for proportionality in dwelling defence cases",
+        "D": "It held that the 2011 Act applies even where the accused is a trespasser"
+      },
+      "correct_answer": "B",
+      "explanation": "Keenan [2020] confirmed that the Criminal Law (Defence and Dwelling) Act 2011 provides a real and operative defence — not merely theoretical. A jury returned a not guilty verdict on the facts. It demonstrates that the Act is applied in practice and should be cited when advising on defence of the dwelling."
+    },
+    {
+      "id": "CL_M10_L02_Q05",
+      "question": "Which of the following persons would be excluded from relying on the Criminal Law (Defence and Dwelling) Act 2011?",
+      "options": {
+        "A": "A tenant in rented accommodation who uses force to remove an intruder",
+        "B": "A homeowner who lives alone and uses force against a burglar",
+        "C": "A person who is themselves a trespasser in the property where force is used",
+        "D": "A person who uses force in the early hours of the morning"
+      },
+      "correct_answer": "C",
+      "explanation": "The 2011 Act requires the person using force to be a lawful occupant of the dwelling. A trespasser cannot rely on the defence. The defence is for those with a legitimate right of occupation — owners, tenants, and those living in the property with permission."
+    },
+    {
+      "id": "CL_M10_L02_Q06",
+      "question": "When advising on a scenario where a homeowner uses lethal force against a burglar, which two regimes must be analysed together?",
+      "options": {
+        "A": "The Criminal Law (Defence and Dwelling) Act 2011 and the Domestic Violence Act 2018",
+        "B": "The Criminal Law (Defence and Dwelling) Act 2011 and Section 18 NFOATP 1997 as interpreted by Crawford [2024] IESC 44",
+        "C": "Common law self-defence and the 2011 Act",
+        "D": "The 2011 Act and Section 39 of the Domestic Violence Act 2018"
+      },
+      "correct_answer": "B",
+      "explanation": "In a dwelling defence scenario, both regimes apply. The 2011 Act is the specific primary statutory provision for the dwelling context. Section 18 NFOATP 1997, as interpreted by Crawford v DPP [2024] IESC 44, governs the reasonableness of the force used. Both must be applied together."
+    },
+    {
+      "id": "CL_M10_L02_Q07",
+      "question": "A person using force under the Criminal Law (Defence and Dwelling) Act 2011 must believe that force is:",
+      "options": {
+        "A": "The most efficient means of subduing the intruder",
+        "B": "Immediately necessary to prevent the intruder from entering or remaining in the dwelling",
+        "C": "Authorised by prior police approval",
+        "D": "A last resort after all non-violent options have been exhausted"
+      },
+      "correct_answer": "B",
+      "explanation": "The 2011 Act requires that the person using force genuinely believed force was immediately necessary to prevent the intruder from entering or remaining in the dwelling. This belief requirement mirrors the Section 18 NFOATP 1997 standard and the two provisions should be read together."
+    },
+    {
+      "id": "CL_M10_L02_Q08",
+      "question": "A common exam error regarding the Criminal Law (Defence and Dwelling) Act 2011 is treating it as conferring:",
+      "options": {
+        "A": "A duty to retreat before using any force at home",
+        "B": "An absolute right to use lethal force against any intruder regardless of proportionality",
+        "C": "A defence available only to the legal owner, not to tenants",
+        "D": "A defence that requires prior police notification"
+      },
+      "correct_answer": "B",
+      "explanation": "A common exam error is to treat the 2011 Act as conferring an absolute right to use lethal or unlimited force against an intruder. It does not. The Act removes the duty to retreat — it does not remove the requirement of proportionality. Grossly disproportionate force will not be excused."
+    },
+    {
+      "id": "CL_M10_L02_Q09",
+      "question": "When applying the Crawford three-outcome spectrum to a dwelling defence scenario, if the force was excessive but the accused honestly believed it was necessary, the correct verdict is:",
+      "options": {
+        "A": "Acquittal under the 2011 Act",
+        "B": "Murder — disproportionate force always leads to murder",
+        "C": "Voluntary manslaughter under the Dwyer doctrine",
+        "D": "Involuntary manslaughter — because no specific intent is present"
+      },
+      "correct_answer": "C",
+      "explanation": "Under the Crawford [2024] IESC 44 three-outcome spectrum, where force was disproportionate but the accused honestly believed it was necessary, the Dwyer doctrine applies and the correct verdict is voluntary manslaughter rather than murder. This applies even in a dwelling defence context."
+    },
+    {
+      "id": "CL_M10_L02_Q10",
+      "question": "The term sometimes used to describe the principle underlying the Criminal Law (Defence and Dwelling) Act 2011 — that a person's home is a place from which they need not retreat — is:",
+      "options": {
+        "A": "The Salomon principle",
+        "B": "The castle doctrine",
+        "C": "The Dwyer principle",
+        "D": "The necessity doctrine"
+      },
+      "correct_answer": "B",
+      "explanation": "The 2011 Act is sometimes described as Ireland's version of the castle doctrine — the principle that a person's home is their castle and they are not required to retreat from it before using force against an intruder. The Act gives statutory expression to this principle while retaining the proportionality requirement."
+    }
+  ]
+}

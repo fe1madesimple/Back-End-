@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "Module_10_Lesson_01_Trespass_to_the_Person___Battery.txt",
+  "module_number": 10,
+  "module_title": "Trespass to the Person",
+  "lesson_number": 1,
+  "lesson_title": "Trespass to the Person: Battery",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M10_L01_Q01",
+      "question": "Which of the following best states the definition of battery in Irish and English tort law?",
+      "options": {
+        "A": "The negligent application of indirect physical force to another person causing actual harm",
+        "B": "The intentional application of direct and unlawful physical force to another person without their consent",
+        "C": "Any hostile act directed toward another person, whether or not physical contact occurs",
+        "D": "The intentional threatening of another person so as to put them in fear of imminent contact"
+      },
+      "correct_answer": "B",
+      "explanation": "Battery is the intentional application of direct and unlawful physical force to another person without their consent. The contact must be intentional, direct, and unlawful. Neither hostility nor actual harm is required."
+    },
+    {
+      "id": "TL_M10_L01_Q02",
+      "question": "Which element is NOT required to establish battery?",
+      "options": {
+        "A": "Intentional contact",
+        "B": "Direct contact",
+        "C": "Proof of actual physical harm",
+        "D": "Unlawful contact"
+      },
+      "correct_answer": "C",
+      "explanation": "Battery is actionable per se — the plaintiff does not need to prove actual damage. The violation of bodily integrity is itself the wrong, and nominal damages may be awarded even where no physical harm resulted."
+    },
+    {
+      "id": "TL_M10_L01_Q03",
+      "question": "In Wilson v Pringle [1987], the English Court of Appeal held that battery required an element that has since been questioned in Irish and English authorities. What was that element?",
+      "options": {
+        "A": "Proof of serious injury to the plaintiff",
+        "B": "The absence of any form of consent",
+        "C": "Hostility on the part of the defendant",
+        "D": "Indirect causation of the contact through a third party"
+      },
+      "correct_answer": "C",
+      "explanation": "In Wilson v Pringle [1987], the Court of Appeal held that the touching must be hostile. This requirement has since been questioned. The better view, reflected in Irish and English authorities, is that hostility is not a necessary element — any deliberate, unwanted, non-consensual touching will suffice."
+    },
+    {
+      "id": "TL_M10_L01_Q04",
+      "question": "What was the significance of Walsh v Family Planning Services [1992] for the law of battery in Ireland?",
+      "options": {
+        "A": "It held that medical procedures can never constitute battery where a doctor acts in good faith",
+        "B": "It confirmed that a medical procedure performed without valid consent constitutes battery",
+        "C": "It introduced the requirement of hostility as an element of battery in Irish law",
+        "D": "It held that implied consent is sufficient for all medical procedures"
+      },
+      "correct_answer": "B",
+      "explanation": "Walsh v Family Planning Services [1992] is the leading Irish authority on battery in the medical context. The Supreme Court confirmed that a medical procedure performed without valid consent constitutes a battery, and examined the role of consent in medical battery."
+    },
+    {
+      "id": "TL_M10_L01_Q05",
+      "question": "A patient consents to an appendectomy. During the operation, the surgeon also removes the patient's kidney without any discussion. Which statement is correct?",
+      "options": {
+        "A": "No battery occurred because the surgeon acted in the patient's best interests",
+        "B": "No battery occurred because the patient gave general consent to the operation",
+        "C": "Battery occurred because consent to the appendectomy did not extend to removal of the kidney",
+        "D": "Battery occurred only if the patient suffered harm from the kidney removal"
+      },
+      "correct_answer": "C",
+      "explanation": "Consent to a specific act does not extend to acts beyond its scope. A patient who consents to an appendectomy has not consented to the removal of a kidney performed in the same operation. The removal constitutes battery regardless of whether harm resulted, since battery is actionable per se."
+    },
+    {
+      "id": "TL_M10_L01_Q06",
+      "question": "Which of the following contacts would most likely be covered by the doctrine of implied consent and therefore NOT constitute battery?",
+      "options": {
+        "A": "A doctor performing a surgical procedure the patient had expressly refused",
+        "B": "Being jostled on a crowded commuter train",
+        "C": "A stranger grabbing another person's arm to prevent them crossing the road",
+        "D": "A teacher physically restraining a student as a disciplinary measure"
+      },
+      "correct_answer": "B",
+      "explanation": "Everyday physical contact — such as being jostled on a crowded train, a handshake, or a pat on the back — is impliedly consented to by participation in ordinary social life. These ordinary contacts of daily life do not constitute battery."
+    },
+    {
+      "id": "TL_M10_L01_Q07",
+      "question": "Which of the following is a valid defence to a claim of battery?",
+      "options": {
+        "A": "The defendant did not intend to cause harm, only to make contact",
+        "B": "The defendant used reasonable and proportionate force in response to an imminent and real threat",
+        "C": "The defendant was unaware that the plaintiff had not consented",
+        "D": "The physical contact was brief and caused no lasting injury"
+      },
+      "correct_answer": "B",
+      "explanation": "Self-defence is a valid defence to battery where the defendant used reasonable force in response to an imminent and real threat. The force used must be proportionate — disproportionate force defeats the defence entirely."
+    },
+    {
+      "id": "TL_M10_L01_Q08",
+      "question": "A police officer arrests a suspect using force that is clearly excessive and far beyond what the situation required. Which of the following is correct?",
+      "options": {
+        "A": "The officer has a complete defence of lawful authority because police officers are always protected when making arrests",
+        "B": "The officer has a partial defence that reduces but does not eliminate liability",
+        "C": "The defence of lawful authority fails because the force used was disproportionate",
+        "D": "Battery cannot be committed by a police officer acting in the course of their duty"
+      },
+      "correct_answer": "C",
+      "explanation": "Lawful authority is a recognised defence to battery, but the force used must be proportionate in all cases. Disproportionate force defeats the defence. A police officer who uses clearly excessive force cannot rely on lawful authority as a complete answer."
+    },
+    {
+      "id": "TL_M10_L01_Q09",
+      "question": "Battery is actionable per se. What does this mean in practice for a plaintiff?",
+      "options": {
+        "A": "The plaintiff must prove that the battery was the direct cause of a measurable loss",
+        "B": "The plaintiff can recover damages only if they suffered a recognised psychiatric injury",
+        "C": "The plaintiff does not need to prove actual damage — the unlawful contact itself constitutes the wrong",
+        "D": "The plaintiff must show that the battery was part of a repeated pattern of conduct"
+      },
+      "correct_answer": "C",
+      "explanation": "Battery is actionable per se, meaning the plaintiff does not need to prove actual damage. The violation of bodily integrity is itself the wrong, and nominal damages may be awarded even where no physical harm resulted. If physical injury did occur, compensatory damages will reflect that."
+    },
+    {
+      "id": "TL_M10_L01_Q10",
+      "question": "Which combination of elements does the script identify as the essential requirements for battery?",
+      "options": {
+        "A": "Negligent, indirect, and harmful contact",
+        "B": "Intentional, direct, and unlawful contact",
+        "C": "Hostile, direct, and harmful contact",
+        "D": "Intentional, indirect, and hostile contact"
+      },
+      "correct_answer": "B",
+      "explanation": "The script identifies the three essential requirements for battery as: intentional contact (accident is not sufficient), direct contact (flowing directly from the defendant's act), and unlawful contact (not consented to and not otherwise justified). Neither hostility nor harm is required."
+    }
+  ]
+}

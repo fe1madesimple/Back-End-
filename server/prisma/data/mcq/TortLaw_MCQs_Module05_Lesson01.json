@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module05_Lesson01.txt",
+  "module_number": 5,
+  "module_title": "Remoteness of Damage",
+  "lesson_number": 1,
+  "lesson_title": "The Reasonable Foreseeability Test, Kind vs Manner, and the Egg-Shell Skull Rule",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M05_L01_Q01",
+      "question": "How does remoteness of damage differ from factual causation in negligence?",
+      "options": {
+        "A": "Causation asks whether the act brought about the harm; remoteness asks whether that type of harm should be attributed to the defendant",
+        "B": "Causation concerns the defendant's duty; remoteness concerns the standard of care",
+        "C": "Remoteness and causation are the same inquiry approached from different angles",
+        "D": "Causation concerns the plaintiff's loss; remoteness concerns the defendant's intent"
+      },
+      "correct_answer": "A",
+      "explanation": "These are separate inquiries: causation (factual) asks whether the defendant's act brought about the harm; remoteness asks whether that harm is of a type that should, in fairness, be attributed to the defendant. Conflating them is a common FE-1 exam error."
+    },
+    {
+      "id": "TL_M05_L01_Q02",
+      "question": "Which case established the directness test for remoteness of damage?",
+      "options": {
+        "A": "Wagon Mound No 1 [1961]",
+        "B": "Re Polemis and Furness, Withy and Company [1921]",
+        "C": "Hughes v Lord Advocate [1963]",
+        "D": "Smith v Leech Brain [1962]"
+      },
+      "correct_answer": "B",
+      "explanation": "Re Polemis and Furness, Withy and Company [1921] established the directness test: the defendant is liable for all harm that is a direct consequence of their negligent act, regardless of whether it was foreseeable. This test was later rejected by Wagon Mound No 1."
+    },
+    {
+      "id": "TL_M05_L01_Q03",
+      "question": "Under the directness test from Re Polemis, a defendant is liable for harm that is:",
+      "options": {
+        "A": "Both foreseeable in type and direct in causation",
+        "B": "Foreseeable as a reasonable consequence of the negligent act",
+        "C": "A direct consequence of their negligence, regardless of whether it was foreseeable",
+        "D": "Of the same kind as the foreseeable harm, even if the manner differs"
+      },
+      "correct_answer": "C",
+      "explanation": "Under the Re Polemis directness test, foreseeability of the specific harm was irrelevant — what mattered was directness. If the harm was a direct consequence of the negligent act, the defendant was fully liable, however unforeseeable the extent or type of harm."
+    },
+    {
+      "id": "TL_M05_L01_Q04",
+      "question": "In Re Polemis, the harm that led to the ship's destruction was:",
+      "options": {
+        "A": "Oil ignited by welding, causing fire to spread across water",
+        "B": "A paraffin lamp knocked into a hold triggering a gas explosion",
+        "C": "An unexpected chemical reaction between dropped cargo and the ship's fuel",
+        "D": "A spark from a negligently dropped plank, which ignited petrol vapour in the ship's hold"
+      },
+      "correct_answer": "D",
+      "explanation": "In Re Polemis, a plank was negligently dropped into the ship's hold. The plank caused a spark, which ignited petrol vapour, destroying the entire ship. The Court of Appeal held the defendants liable for the total destruction as it was a direct consequence of dropping the plank."
+    },
+    {
+      "id": "TL_M05_L01_Q05",
+      "question": "Which court and case rejected the directness test and replaced it with the reasonable foreseeability test?",
+      "options": {
+        "A": "The Privy Council in Overseas Tankship (UK) Ltd v Morts Dock and Engineering Co [1961]",
+        "B": "The House of Lords in Hughes v Lord Advocate [1963]",
+        "C": "The Irish Supreme Court in Glencar Exploration plc v Mayo County Council [2002]",
+        "D": "The Court of Appeal in Doughty v Turner Manufacturing Co [1964]"
+      },
+      "correct_answer": "A",
+      "explanation": "The Privy Council in Overseas Tankship (UK) Ltd v Morts Dock and Engineering Co [1961] — universally known as Wagon Mound No 1 — outright rejected the Re Polemis directness test. Lord Simonds held that defendants should only be liable for foreseeable types of damage."
+    },
+    {
+      "id": "TL_M05_L01_Q06",
+      "question": "The case Overseas Tankship (UK) Ltd v Morts Dock and Engineering Co [1961] is universally known as:",
+      "options": {
+        "A": "Re Polemis",
+        "B": "Wagon Mound No 1",
+        "C": "Hughes v Lord Advocate",
+        "D": "Doughty v Turner"
+      },
+      "correct_answer": "B",
+      "explanation": "Overseas Tankship (UK) Ltd v Morts Dock and Engineering Co [1961] is universally referred to as Wagon Mound No 1, named after the ship involved. It is the leading authority on remoteness of damage in negligence in both English and Irish law."
+    },
+    {
+      "id": "TL_M05_L01_Q07",
+      "question": "Under the Wagon Mound No 1 test, a defendant is liable for damage that:",
+      "options": {
+        "A": "Was a direct consequence of their negligent act",
+        "B": "Was foreseeable both in type and in precise manner",
+        "C": "Was of a type or kind reasonably foreseeable as a consequence of the negligent act",
+        "D": "Arose from the same mechanism as the foreseeable harm"
+      },
+      "correct_answer": "C",
+      "explanation": "The Wagon Mound No 1 test asks whether the damage was of a type or kind that a reasonable person would have foreseen as a consequence of the negligence. The precise manner or mechanism need not be foreseeable — only the type or kind of damage matters."
+    },
+    {
+      "id": "TL_M05_L01_Q08",
+      "question": "In Wagon Mound No 1, why did the Privy Council find no liability for the fire damage to the wharf?",
+      "options": {
+        "A": "The defendants had not been negligent in spilling the oil",
+        "B": "The oil spill had not factually caused the fire at the wharf",
+        "C": "The plaintiff had assumed the risk of fire damage",
+        "D": "Destruction of the wharf by fire was not a reasonably foreseeable consequence of spilling furnace oil on water in those circumstances"
+      },
+      "correct_answer": "D",
+      "explanation": "In Wagon Mound No 1, the defendants' employees had been advised the oil would not ignite on water, and welding continued. The Privy Council held that destruction of the wharf by fire was not a reasonably foreseeable consequence of spilling furnace oil on water in those circumstances — therefore no liability for the fire damage."
+    },
+    {
+      "id": "TL_M05_L01_Q09",
+      "question": "In Wagon Mound No 1, what advice did the defendants' employees receive about the spilled oil?",
+      "options": {
+        "A": "The oil would not ignite on water",
+        "B": "The oil posed a foreseeable fire risk and welding operations should cease",
+        "C": "The oil would disperse harmlessly within 24 hours",
+        "D": "The oil could ignite if exposed to high heat from welding"
+      },
+      "correct_answer": "A",
+      "explanation": "In Wagon Mound No 1, the defendants sought expert advice and were told the oil would not ignite on water. On that basis, welding continued. Two days later, a piece of molten metal ignited cotton waste floating in the oil, setting the oil alight and destroying the wharf."
+    },
+    {
+      "id": "TL_M05_L01_Q10",
+      "question": "The 'Wagon Mound No 1 test' and the 'reasonable foreseeability test' for remoteness are:",
+      "options": {
+        "A": "Different tests applying to different types of harm",
+        "B": "Two names for the same governing test for remoteness in Irish and English tort law",
+        "C": "Distinct in that Wagon Mound applies in England while reasonable foreseeability applies in Ireland",
+        "D": "Related but distinct: Wagon Mound deals with property damage; reasonable foreseeability with personal injury"
+      },
+      "correct_answer": "B",
+      "explanation": "The Wagon Mound No 1 test is the reasonable foreseeability test — they are two names for the same thing. The case established that defendants are only liable for damage of a type or kind a reasonable person would have foreseen. Both names may be used in FE-1 answers."
+    }
+  ]
+}

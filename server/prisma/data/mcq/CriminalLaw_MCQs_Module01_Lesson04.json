@@ -1,0 +1,131 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module01_Lesson04.txt",
+  "module_number": 1,
+  "module_title": "Foundations of Criminal Law",
+  "lesson_number": 4,
+  "lesson_title": "Mens Rea",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M01_L04_Q01",
+      "question": "Which of the following is the most accurate definition of mens rea in Irish criminal law?",
+      "options": {
+        "A": "The defendant's motive for committing the offence",
+        "B": "The fault element required by the definition of the specific offence",
+        "C": "The defendant's awareness that their conduct was unlawful",
+        "D": "Any mental state present in the defendant at the time of the act"
+      },
+      "correct_answer": "B",
+      "explanation": "Mens rea refers to the specific fault element required by the definition of the particular offence charged. Different offences require different mental states — intention, recklessness, negligence, or knowledge. Motive is generally irrelevant to criminal liability, and awareness of unlawfulness is not required (ignorance of the law is no defence). The mens rea is the precise fault element the prosecution must prove."
+    },
+    {
+      "id": "CL_M01_L04_Q02",
+      "question": "Under section 4(2) of the Criminal Justice Act 1964, which of the following correctly states the presumption applicable to intention in murder cases?",
+      "options": {
+        "A": "The accused is conclusively presumed to have intended all consequences of their conduct",
+        "B": "The accused is presumed to have intended the natural and probable consequences of their conduct, but this presumption is rebuttable",
+        "C": "The accused must prove they did not intend the natural consequences of their conduct",
+        "D": "There is no presumption — the prosecution must prove intention entirely without assistance from any statutory provision"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 4(2) of the Criminal Justice Act 1964 provides that a person is presumed to have intended the natural and probable consequences of their conduct. However, this is a rebuttable presumption — the accused may adduce evidence to displace it. It does not amount to conclusive or irrebuttable proof of intention, and the jury must ultimately be satisfied of actual intention to kill or cause serious injury."
+    },
+    {
+      "id": "CL_M01_L04_Q03",
+      "question": "Which of the following best describes oblique (indirect) intention as established by R v Woollin [1998]?",
+      "options": {
+        "A": "The defendant acted recklessly without caring about the consequences",
+        "B": "The defendant did not aim at the prohibited consequence but it was a virtual certainty resulting from their act and they appreciated this",
+        "C": "The defendant was negligent in not foreseeing an obvious risk",
+        "D": "The defendant intended a different offence but brought about the charged offence by mistake"
+      },
+      "correct_answer": "B",
+      "explanation": "In R v Woollin [1998], the House of Lords held that a jury is entitled to find intention where the prohibited consequence was a virtual certainty resulting from the defendant's act and the defendant appreciated that this was so. This is oblique or indirect intention — the result was not the defendant's primary aim, but its virtual certainty and the defendant's awareness of that justify treating it as intended."
+    },
+    {
+      "id": "CL_M01_L04_Q04",
+      "question": "The People (DPP) v Murray [1977] is significant in Irish criminal law because it:",
+      "options": {
+        "A": "Introduced an objective test for recklessness in Ireland",
+        "B": "Confirmed that recklessness in serious offences requires subjective awareness of the risk by the defendant",
+        "C": "Established that negligence is sufficient mens rea for all offences",
+        "D": "Held that strict liability offences are unconstitutional"
+      },
+      "correct_answer": "B",
+      "explanation": "In The People (DPP) v Murray [1977], the Supreme Court confirmed that recklessness in the context of serious criminal offences in Ireland requires proof that the defendant was subjectively aware of the risk. This distinguishes the Irish approach from the discredited objective Caldwell test, and ensures that a defendant who genuinely did not foresee the risk cannot be convicted on the basis of recklessness alone."
+    },
+    {
+      "id": "CL_M01_L04_Q05",
+      "question": "R v Caldwell [1982] introduced which test for recklessness, and what is the current status of that test?",
+      "options": {
+        "A": "A subjective test, still applied in England and Wales today",
+        "B": "An objective test, which was overruled in R v G and Another [2003] and was never followed in Ireland",
+        "C": "An objective test, which remains good law in England and Wales but not in Ireland",
+        "D": "A hybrid test, still partially applied in England and Wales for specific offences"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Caldwell [1982] introduced an objective test for recklessness, asking what a reasonable person would have foreseen rather than what this defendant actually foresaw. It was widely criticised and overruled by the House of Lords in R v G and Another [2003], which restored the subjective approach. Ireland never adopted the Caldwell test, consistently maintaining the subjective standard confirmed in The People (DPP) v Murray [1977]."
+    },
+    {
+      "id": "CL_M01_L04_Q06",
+      "question": "Sinead deliberately throws a brick from an overpass onto a busy motorway, not caring whether anyone is hit. A driver is injured. Applying the subjective test for recklessness, which of the following is correct?",
+      "options": {
+        "A": "Sinead lacks mens rea because she did not intend to injure anyone",
+        "B": "Sinead has the requisite mens rea if she was actually aware that throwing the brick created a risk of injuring someone and chose to take that risk",
+        "C": "Sinead can only be convicted if the prosecution proves she intended grievous bodily harm",
+        "D": "Sinead lacks mens rea because a reasonable person in her position would not have thrown the brick"
+      },
+      "correct_answer": "B",
+      "explanation": "Applying the subjective test for recklessness confirmed in The People (DPP) v Murray [1977], the prosecution must show that Sinead was actually aware that her conduct created a risk of harm to another person and chose to take that risk. On these facts, throwing a brick onto a busy motorway would make it essentially impossible to argue she did not foresee the risk, but the test remains subjective — her actual awareness, not a reasonable person's awareness, is what matters."
+    },
+    {
+      "id": "CL_M01_L04_Q07",
+      "question": "Criminal negligence differs from recklessness primarily in that:",
+      "options": {
+        "A": "Criminal negligence requires proof that the defendant intended the harm",
+        "B": "Criminal negligence does not require the defendant to have been subjectively aware of the risk — it asks whether their conduct fell below the standard of the reasonable person",
+        "C": "Criminal negligence is not a recognised form of mens rea in Irish law",
+        "D": "Criminal negligence requires a higher degree of fault than recklessness"
+      },
+      "correct_answer": "B",
+      "explanation": "Criminal negligence is an objective standard — it asks whether the defendant's conduct fell below that of a reasonable person in the circumstances, without requiring proof that the defendant was actually aware of the risk. This distinguishes it from subjective recklessness, which requires actual awareness of the risk. Criminal negligence is the fault element for offences such as dangerous driving causing death and gross negligence manslaughter."
+    },
+    {
+      "id": "CL_M01_L04_Q08",
+      "question": "CC v Ireland [2006] is relevant to the constitutional dimension of strict liability because it:",
+      "options": {
+        "A": "Held that all strict liability offences are unconstitutional under Article 38.1",
+        "B": "Confirmed that while the Oireachtas may impose strict liability, an offence imposing absolute liability without any defence of honest and reasonable mistake may raise constitutional concerns",
+        "C": "Established that strict liability is only permissible for regulatory offences",
+        "D": "Held that strict liability offences are valid provided the maximum penalty does not exceed a fine"
+      },
+      "correct_answer": "B",
+      "explanation": "In CC v Ireland [2006], the Supreme Court acknowledged that the Oireachtas has the power to create strict liability offences, but indicated that an offence which imposes absolute liability — with no defence of honest and reasonable mistake available — may conflict with Article 38.1 of the Constitution, which guarantees the right to a fair trial. The case raised important questions about the limits of strict liability in Irish constitutional law."
+    },
+    {
+      "id": "CL_M01_L04_Q09",
+      "question": "Knowledge as a form of mens rea is best described as:",
+      "options": {
+        "A": "Awareness that the defendant's conduct creates a risk of harm",
+        "B": "Actual awareness of a specific fact or circumstance that forms part of the actus reus",
+        "C": "Constructive awareness of facts the defendant ought to have known",
+        "D": "Certainty that the prohibited consequence will occur"
+      },
+      "correct_answer": "B",
+      "explanation": "Knowledge as a mens rea element requires actual awareness of the relevant fact or circumstance. For example, an offence of handling stolen goods requires that the defendant knew or believed the goods to be stolen. This is distinct from constructive knowledge (what a person ought to have known) and from recklessness (awareness of a risk). Knowledge concerns a specific fact, not a probability or risk."
+    },
+    {
+      "id": "CL_M01_L04_Q10",
+      "question": "Declan plants a bomb in a building with the primary aim of causing structural damage. Ten people are killed in the explosion. Declan argues he did not intend to kill anyone. Which analysis best applies?",
+      "options": {
+        "A": "Declan lacks mens rea for murder because his purpose was property damage, not killing",
+        "B": "Declan may be found to have oblique intention to kill if death was a virtual certainty resulting from his act and he appreciated this, applying R v Woollin [1998]",
+        "C": "Declan can only be convicted of manslaughter because he did not have direct intention to kill",
+        "D": "Section 4(2) of the Criminal Justice Act 1964 conclusively proves Declan intended the deaths"
+      },
+      "correct_answer": "B",
+      "explanation": "This is a classic oblique intention scenario. Declan's primary aim was not to kill, but a jury would be entitled to find that he had the intention to kill if death was a virtual certainty from placing a bomb in an occupied building and he appreciated that to be so. This is the Woollin test for oblique intention. Section 4(2) of the 1964 Act raises a rebuttable presumption, but it does not conclusively establish intention — and in any event the Woollin analysis would be applied."
+    }
+  ]
+}

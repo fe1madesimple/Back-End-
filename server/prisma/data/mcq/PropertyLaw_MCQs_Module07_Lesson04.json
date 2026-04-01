@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_07_Lesson_04_Consumer_Mortgage_Protections.txt",
+  "module_number": 7,
+  "module_title": "Mortgages",
+  "lesson_number": 4,
+  "lesson_title": "Consumer Mortgage Protections",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M07_L04_Q01",
+      "question": "What is the primary regulatory framework for consumer mortgage protection in Ireland, commonly known by its acronym?",
+      "options": {
+        "A": "The Mortgage Repayment Guidelines — MRG",
+        "B": "The Central Bank's Code of Conduct on Mortgage Arrears — CCMA",
+        "C": "The Residential Mortgage Arrears Protocol — RMAP",
+        "D": "The Financial Services Consumer Code — FSCC"
+      },
+      "correct_answer": "B",
+      "explanation": "The primary regulatory framework for consumer mortgage protection in Ireland is the Central Bank's Code of Conduct on Mortgage Arrears, commonly known as the CCMA. First introduced in 2009 and revised in 2013, the CCMA establishes the Mortgage Arrears Resolution Process (MARP), which lenders must follow before commencing repossession proceedings."
+    },
+    {
+      "id": "PRL_M07_L04_Q02",
+      "question": "Under the Mortgage Arrears Resolution Process (MARP), which of the following is NOT one of the steps a lender must take before commencing possession proceedings?",
+      "options": {
+        "A": "Communicate with the borrower in arrears within a set timeframe",
+        "B": "Offer an alternative repayment arrangement where appropriate",
+        "C": "Obtain the consent of the borrower's solicitor",
+        "D": "Assess the borrower's financial position using a Standard Financial Statement"
+      },
+      "correct_answer": "C",
+      "explanation": "Under the MARP, a lender must: communicate with a borrower in arrears within a set timeframe; offer an alternative repayment arrangement where appropriate; and assess the borrower's financial position using a Standard Financial Statement. There is no requirement to obtain the consent of the borrower's solicitor. Failure to comply with MARP may lead to regulatory sanction and the court may adjourn or refuse possession proceedings."
+    },
+    {
+      "id": "PRL_M07_L04_Q03",
+      "question": "In Stepstone Mortgage Funding v Fitzell [2012], what did the High Court confirm about MARP compliance in residential mortgage possession cases?",
+      "options": {
+        "A": "MARP compliance is not relevant to the court's determination of possession proceedings",
+        "B": "MARP compliance is a precondition to possession proceedings, and the court may adjourn or refuse possession where compliance has not been demonstrated",
+        "C": "MARP compliance is required only if the borrower specifically requests it",
+        "D": "MARP compliance is required only after the court has made a possession order"
+      },
+      "correct_answer": "B",
+      "explanation": "In Stepstone Mortgage Funding v Fitzell [2012], the High Court confirmed the importance of compliance with MARP as a precondition to possession proceedings in residential mortgage cases. The court may adjourn or refuse possession where MARP compliance has not been demonstrated. This was subsequently given a full statutory basis by the Land and Conveyancing Law Reform Act 2013."
+    },
+    {
+      "id": "PRL_M07_L04_Q04",
+      "question": "What important amendment did the Land and Conveyancing Law Reform Act 2013 make to section 97 of the LCLRA 2009 regarding possession proceedings?",
+      "options": {
+        "A": "It removed the court's jurisdiction to adjourn possession proceedings in residential cases",
+        "B": "It provided that the court shall have jurisdiction to adjourn possession proceedings to allow time for an alternative repayment arrangement to be explored and may adjourn where the mortgagee has not complied with the CCMA",
+        "C": "It required all possession proceedings to be transferred to the Circuit Court",
+        "D": "It imposed a mandatory twelve-month moratorium on all possession proceedings from the date of default"
+      },
+      "correct_answer": "B",
+      "explanation": "The Land and Conveyancing Law Reform Act 2013 amended section 97 of the LCLRA 2009 to provide that the court shall have jurisdiction to adjourn possession proceedings for a dwelling to allow time for an alternative repayment arrangement to be explored, and may adjourn where the mortgagee has not complied with the CCMA or MARP. This was a direct legislative response to the controversy arising from Start Mortgages v Gunn [2011]."
+    },
+    {
+      "id": "PRL_M07_L04_Q05",
+      "question": "What is a Personal Insolvency Arrangement (PIA) under the Personal Insolvency Act 2012?",
+      "options": {
+        "A": "A court order imposing a repayment plan on creditors without their consent",
+        "B": "A voluntary arrangement under which a debtor and creditors agree to a restructured repayment plan supervised by a Personal Insolvency Practitioner, aimed at retaining the family home",
+        "C": "A government scheme providing grants to homeowners in mortgage arrears",
+        "D": "A Central Bank directive requiring banks to write off mortgage arrears exceeding three years"
+      },
+      "correct_answer": "B",
+      "explanation": "A Personal Insolvency Arrangement (PIA) is a voluntary arrangement under the Personal Insolvency Act 2012 under which a debtor and their creditors agree to a restructured repayment plan supervised by an Insolvency Service-approved Personal Insolvency Practitioner. The aim of a PIA is to allow a debtor to retain the family home where the repayment of the mortgage is restructured on a sustainable basis."
+    },
+    {
+      "id": "PRL_M07_L04_Q06",
+      "question": "Under section 115A of the Personal Insolvency Act 2015, what can a debtor do if creditors reject a proposed Personal Insolvency Arrangement?",
+      "options": {
+        "A": "The debtor must immediately proceed to bankruptcy",
+        "B": "The debtor may apply to the Circuit Court for a court review — a 'court cramdown' — which may confirm the PIA over the creditor's objection",
+        "C": "The debtor may appeal directly to the European Court of Human Rights",
+        "D": "The debtor must resubmit a revised proposal and wait a further two years before applying to court"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 115A of the Personal Insolvency Act 2015, if creditors reject a proposed PIA, the debtor may apply to the Circuit Court for a court review — colloquially known as the court cramdown. The court may confirm the PIA over the objection of a creditor if it is satisfied that the proposed arrangement is more beneficial to the creditor than bankruptcy. This mechanism was introduced specifically to address situations where a secured creditor was blocking a sustainable restructuring."
+    },
+    {
+      "id": "PRL_M07_L04_Q07",
+      "question": "In Re JD, decided in the context of section 115A proceedings, what did the Irish High Court confirm about secured creditors?",
+      "options": {
+        "A": "Secured creditors have an absolute right to refuse a PIA and cannot be bound by a court-confirmed arrangement",
+        "B": "Even secured creditors can be bound by a court-confirmed PIA, and the court must weigh the debtor's right to housing against the creditor's contractual rights having regard to Article 8 ECHR",
+        "C": "Secured creditors must be paid in full before any PIA can be confirmed by the court",
+        "D": "Secured creditors who object to a PIA are automatically entitled to full possession of the property"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re JD, the Irish High Court confirmed that even secured creditors can be bound by a court-confirmed PIA under section 115A, and that the court must weigh the debtor's right to housing against the creditor's contractual rights, having regard to Article 8 of the European Convention on Human Rights (the right to respect for the home). This is an important authority for the constitutional and Convention dimensions of the consumer mortgage protection framework."
+    },
+    {
+      "id": "PRL_M07_L04_Q08",
+      "question": "What did the Consumer Protection (Regulation of Retail Credit and Credit Servicing Firms) Act 2022 achieve?",
+      "options": {
+        "A": "It banned the sale of residential mortgages to credit servicing firms entirely",
+        "B": "It extended consumer mortgage protections to borrowers whose mortgages have been purchased by credit servicing firms and vulture funds, ensuring continued access to the MARP and CCMA",
+        "C": "It created a new Central Bank enforcement mechanism for mortgage arrears disputes",
+        "D": "It provided a statutory right for borrowers to redeem their mortgage at any time without penalty"
+      },
+      "correct_answer": "B",
+      "explanation": "The Consumer Protection (Regulation of Retail Credit and Credit Servicing Firms) Act 2022 extended consumer mortgage protections to borrowers whose mortgages have been purchased from banks by credit servicing firms and vulture funds. This Act ensures that borrowers continue to have access to the MARP and are protected by the CCMA even where their loan has been sold into a securitisation vehicle."
+    },
+    {
+      "id": "PRL_M07_L04_Q09",
+      "question": "To which type of mortgage do the consumer mortgage protections under the CCMA and the LCLRA 2013 primarily apply?",
+      "options": {
+        "A": "Commercial mortgages over business premises",
+        "B": "All forms of mortgage without distinction",
+        "C": "Residential mortgages — primarily the borrower's principal private residence",
+        "D": "Only government-backed mortgages such as Help to Buy scheme loans"
+      },
+      "correct_answer": "C",
+      "explanation": "The consumer mortgage protections under the CCMA and the Land and Conveyancing Law Reform Act 2013 apply primarily to residential mortgages — the borrower's principal private residence. Commercial mortgage borrowers receive significantly less protection. This distinction is important for the FE-1 examination: always check whether the property in question is a residential dwelling before applying these consumer protection rules."
+    },
+    {
+      "id": "PRL_M07_L04_Q10",
+      "question": "What three debt resolution mechanisms were introduced by the Personal Insolvency Act 2012?",
+      "options": {
+        "A": "Debt Relief Notice, Debt Settlement Arrangement, and Personal Insolvency Arrangement",
+        "B": "Bankruptcy Order, Voluntary Arrangement, and Debt Moratorium",
+        "C": "Receiver Appointment, Charging Order, and Judgment Mortgage",
+        "D": "Mortgage Write-Down, Equity Transfer, and Deferred Repayment Order"
+      },
+      "correct_answer": "A",
+      "explanation": "The Personal Insolvency Act 2012 introduced three debt resolution mechanisms: the Debt Relief Notice (for very low levels of unsecured debt), the Debt Settlement Arrangement (for unsecured debt above DRN thresholds), and the Personal Insolvency Arrangement (PIA). The PIA is the most relevant mechanism in the mortgage and family home context as it is designed to allow a debtor to retain the family home."
+    }
+  ]
+}

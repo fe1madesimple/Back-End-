@@ -1,0 +1,131 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module01_Lesson03.txt",
+  "module_number": 1,
+  "module_title": "Introduction to Company Law and Incorporation",
+  "lesson_number": 3,
+  "lesson_title": "The Section 31 Statutory Contract",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Under section 31 CA 2014, the constitution of a company binds:",
+      "options": {
+        "A": "The company and its creditors",
+        "B": "The company and its members to the same extent as a signed contract",
+        "C": "The directors and the company only",
+        "D": "The members inter se but not the company"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 31 CA 2014 provides that the constitution binds the company and each member to the same extent as if they had each signed and sealed the constitution. This creates a statutory contract between the company and each member, and between members inter se."
+    },
+    {
+      "id": 2,
+      "question": "In Hickman v Kent or Romney Marsh Sheepbreeders Association [1915], the court held that:",
+      "options": {
+        "A": "A member can enforce any provision of the articles against the company",
+        "B": "A member can only enforce the articles against the company in their capacity as a member",
+        "C": "The articles bind the company but not outsiders",
+        "D": "An outsider named in the articles can enforce them as a third-party beneficiary"
+      },
+      "correct_answer": "B",
+      "explanation": "Hickman v Kent [1915] 1 Ch 881 established the rule that a member may only enforce the articles in their capacity as a member — not to enforce a right given to them in some other capacity (such as an outsider right or a right as a solicitor or director)."
+    },
+    {
+      "id": 3,
+      "question": "In Eley v Positive Government Security Life Assurance Co [1876], the plaintiff sought to enforce a provision in the articles that appointed him as the company's solicitor. The court held:",
+      "options": {
+        "A": "He could enforce the clause as a member of the company",
+        "B": "He could not enforce the clause as it was an outsider right and the articles do not give rights to outsiders in their non-member capacity",
+        "C": "He was entitled to damages from the company for breach of contract",
+        "D": "The clause was void as it was a restraint of trade"
+      },
+      "correct_answer": "B",
+      "explanation": "In Eley v Positive Government Security Life Assurance Co [1876] 1 ExD 88, the Court of Appeal held that the plaintiff, although a shareholder, could not enforce the articles as a contract for his employment as solicitor — the provision conferred a right on him in his capacity as an outsider, not as a member."
+    },
+    {
+      "id": 4,
+      "question": "In Rayfield v Hands [1960], the court enforced a provision in the articles requiring directors to purchase the shares of any member wishing to sell. This was enforced as:",
+      "options": {
+        "A": "An outsider right granted by the articles to the director",
+        "B": "A member-to-member obligation, enforceable because the directors were also members",
+        "C": "A court-ordered specific performance of a directors' duty",
+        "D": "A statutory obligation under the Companies Act 1948"
+      },
+      "correct_answer": "B",
+      "explanation": "In Rayfield v Hands [1960] Ch 1, Vaisey J held that the obligation was enforceable because the directors were also members and the articles created a contractual obligation between the member qua member and the directors qua members."
+    },
+    {
+      "id": 5,
+      "question": "An ‘outsider right’ in the context of section 31 CA 2014 refers to:",
+      "options": {
+        "A": "A right conferred by the constitution on a third party who is not a member",
+        "B": "A right conferred on a person in a capacity other than as a member (e.g., as solicitor, auditor, or director)",
+        "C": "A right that cannot be enforced by either the company or the members",
+        "D": "A foreign shareholder's right to vote"
+      },
+      "correct_answer": "B",
+      "explanation": "An outsider right is a right conferred by the constitution on a person in a capacity other than as a member — for example, as solicitor, director, or officer. Such rights are not enforceable through the S31 statutory contract; only rights in the capacity of member are enforceable."
+    },
+    {
+      "id": 6,
+      "question": "In Bamford v Bamford [1970], the court held that:",
+      "options": {
+        "A": "A director who breaches fiduciary duty cannot be ratified by shareholders",
+        "B": "A breach of duty by directors in allotting shares can be ratified by the members in general meeting by ordinary resolution",
+        "C": "A special resolution is required to ratify a breach of director duty",
+        "D": "The company is automatically wound up where a director breaches duty"
+      },
+      "correct_answer": "B",
+      "explanation": "In Bamford v Bamford [1970] Ch 212, the Court of Appeal confirmed that shareholders can ratify a voidable act of the directors by ordinary resolution passed at a general meeting — the ratification relates back and validates the act from the outset."
+    },
+    {
+      "id": 7,
+      "question": "The S31 statutory contract differs from an ordinary contract in that:",
+      "options": {
+        "A": "It can only be enforced by the company against members, not by members against the company",
+        "B": "It does not require offer and acceptance to bind the parties",
+        "C": "It is enforced by statute and arises automatically on registration — no separate signed document is required",
+        "D": "Consideration is not required for it to be binding"
+      },
+      "correct_answer": "C",
+      "explanation": "Unlike an ordinary contract, the S31 statutory contract arises by operation of statute on registration of the constitution. No separate signatures or consideration are required — all members are bound automatically and simultaneously from the moment of registration."
+    },
+    {
+      "id": 8,
+      "question": "A member can enforce a provision of the constitution against the company if the provision:",
+      "options": {
+        "A": "Relates to their employment within the company",
+        "B": "Confers a right on them in their capacity as a member (e.g., right to receive a dividend, right to attend meetings)",
+        "C": "Names them specifically as an officer or agent",
+        "D": "Confers a contractual benefit on any natural person"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the S31 statutory contract and the rule in Hickman v Kent, a member may enforce a constitutional provision against the company only where the right in question is a right conferred on them in their capacity as a member — such as the right to vote, attend meetings, or receive dividends."
+    },
+    {
+      "id": 9,
+      "question": "Can the company enforce the constitution against a member who refuses to comply with a valid call on shares?",
+      "options": {
+        "A": "No — the company has no contractual rights against members under S31",
+        "B": "Yes — the constitution also binds members to the company, so the company may enforce constitutional obligations against them",
+        "C": "Only if the court grants leave",
+        "D": "No — the company must sue under the general law of contract"
+      },
+      "correct_answer": "B",
+      "explanation": "The S31 statutory contract is mutual: it binds both members to the company and the company to members. This means the company may enforce constitutional obligations against members, such as the obligation to pay calls on shares."
+    },
+    {
+      "id": 10,
+      "question": "The constitution of a company can be altered by:",
+      "options": {
+        "A": "An ordinary resolution of members",
+        "B": "A special resolution of members (75% majority) under section 32 CA 2014",
+        "C": "The board of directors alone",
+        "D": "A court order only"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 32 CA 2014 provides that a company may alter its constitution by special resolution — requiring a 75% majority of those voting. Subject to any limitations in the constitution itself, this power is wide and can cover most provisions."
+    }
+  ]
+}

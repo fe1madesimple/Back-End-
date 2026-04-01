@@ -1,0 +1,131 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "Module_08_Lesson_01_Breach_of_Trust___Personal_Liability_and_Defences.txt",
+  "module_number": 8,
+  "module_title": "Breach of Trust and Equitable Remedies",
+  "lesson_number": 1,
+  "lesson_title": "Breach of Trust: Personal Liability and Defences",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EQL_M08_L01_Q01",
+      "question": "What is the primary remedy available to beneficiaries where a trustee commits a breach of trust that causes loss to the trust fund?",
+      "options": {
+        "A": "An order requiring the trustee to resign and be replaced.",
+        "B": "An order that the trustee reconstitute the trust fund — restoring the trust property to the position it would have been in had the breach not occurred.",
+        "C": "A money judgment equal to the trustee's personal profit from the breach.",
+        "D": "A declaration that the breach was wrongful, with no financial remedy."
+      },
+      "correct_answer": "B",
+      "explanation": "The primary remedy for breach of trust is an order that the trustee reconstitute the trust fund — that is, restore the trust property to the position it would have been in had the breach not occurred. The trustee is personally liable to make good the loss. This personal liability to restore the fund is the core remedy and is distinct from — though it may overlap with — an account of profits where the trustee has made an unauthorised gain."
+    },
+    {
+      "id": "EQL_M08_L01_Q02",
+      "question": "Where two or more trustees jointly commit a breach of trust, how is their liability to the beneficiaries apportioned?",
+      "options": {
+        "A": "Each trustee is liable only for their proportionate share of the loss based on their degree of fault.",
+        "B": "Only the trustee who directed the breach is liable; passive co-trustees are exempt.",
+        "C": "The trustees are jointly and severally liable for the full amount of the loss.",
+        "D": "The liability is shared equally regardless of the relative fault of each trustee."
+      },
+      "correct_answer": "C",
+      "explanation": "Where two or more trustees join in committing a breach of trust, they are jointly and severally liable for the full amount of the loss. A trustee who is passive — who allows a breach by a co-trustee without objecting — may be equally liable. A trustee must be active in managing the trust and cannot shelter behind the actions of a dominant co-trustee. Joint and several liability ensures the beneficiaries can recover the full loss from any one trustee."
+    },
+    {
+      "id": "EQL_M08_L01_Q03",
+      "question": "Under section 62 of the Trustee Act 1893, the court has a discretion to relieve a trustee from personal liability for breach of trust. What three conditions must be satisfied?",
+      "options": {
+        "A": "The trustee must have made a profit; the trustee must have disclosed the breach to the beneficiaries; and the breach must have been inadvertent.",
+        "B": "The trustee must have acted honestly; the trustee must have acted reasonably; and the trustee ought fairly to be excused.",
+        "C": "The breach must have caused no actual loss; the trustee must offer to resign; and all beneficiaries must consent to the relief.",
+        "D": "The trustee must have sought legal advice before acting; the breach must have been minor; and the trustee must compensate the beneficiaries."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 62 of the Trustee Act 1893 allows the court to relieve a trustee from personal liability for a breach of trust where three conditions are satisfied: (1) the trustee acted honestly; (2) the trustee acted reasonably; and (3) the trustee ought fairly to be excused. All three elements must be present. The section provides a safety valve for trustees who acted in good faith and with reasonable care but technically committed a breach."
+    },
+    {
+      "id": "EQL_M08_L01_Q04",
+      "question": "A beneficiary participated in and consented to a breach of trust carried out by the trustees. Can the beneficiary subsequently sue the trustees for that breach?",
+      "options": {
+        "A": "Yes — the trustees remain fully liable regardless of the beneficiary's consent.",
+        "B": "No — a beneficiary who participated in or consented to a breach of trust cannot subsequently sue the trustee for that breach, provided the consent was fully informed and given by a beneficiary of full capacity.",
+        "C": "Yes — only the court can excuse a trustee from liability, not a beneficiary.",
+        "D": "No — but the beneficiary may still recover from the other trustees who did not receive consent."
+      },
+      "correct_answer": "B",
+      "explanation": "Consent and concurrence of the beneficiaries is a recognised defence to a breach of trust claim. A beneficiary who participated in or consented to a breach of trust cannot subsequently sue the trustee for that breach. The consent must be fully informed — the beneficiary must have known the nature and effect of what was proposed — and must be given by a beneficiary of full legal capacity. A minor or a person who did not fully understand the breach cannot give effective consent."
+    },
+    {
+      "id": "EQL_M08_L01_Q05",
+      "question": "What is the rule in Saunders v Vautier, and what does it permit beneficiaries to do?",
+      "options": {
+        "A": "Beneficiaries may remove trustees from office without court order.",
+        "B": "Where all beneficiaries are of full age, of sound mind, and together entitled to the entire beneficial interest, they may collectively bring the trust to an end and require the trustees to distribute the trust property.",
+        "C": "A sole beneficiary of full age may unilaterally vary the terms of the trust without the consent of the trustees.",
+        "D": "Beneficiaries may collectively direct the trustees on how to exercise any discretionary power."
+      },
+      "correct_answer": "B",
+      "explanation": "The rule in Saunders v Vautier provides that where all beneficiaries are of full age, of sound mind, and together entitled to the entire beneficial interest in the trust, they may collectively bring the trust to an end and require the trustees to distribute the trust property to them. A trustee who distributes property in accordance with a valid direction from all beneficiaries under this rule cannot be in breach of trust. This rule reflects the cardinal principle that beneficiaries are the true owners of the equitable interest."
+    },
+    {
+      "id": "EQL_M08_L01_Q06",
+      "question": "Under section 43 of the Statute of Limitations 1957, what is the limitation period for a beneficiary's claim in respect of a breach of trust?",
+      "options": {
+        "A": "Two years from the date of the breach.",
+        "B": "Twelve years from the date the beneficiary's interest falls into possession.",
+        "C": "Six years from the date the breach occurred or, in the case of a future interest, from when the interest falls into possession.",
+        "D": "There is no limitation period for breach of trust claims — they are imprescriptible."
+      },
+      "correct_answer": "C",
+      "explanation": "Under section 43 of the Statute of Limitations 1957, a claim by a beneficiary to recover trust property or in respect of a breach of trust is barred after six years. However, time does not run against a beneficiary who has a future or remainder interest — time begins to run from when the interest falls into possession. Where the trustee has been fraudulent, time does not run at all against the defrauded beneficiary under the fraud exception."
+    },
+    {
+      "id": "EQL_M08_L01_Q07",
+      "question": "Where a trustee commits a fraudulent breach of trust, does the six-year limitation period under section 43 of the Statute of Limitations 1957 apply?",
+      "options": {
+        "A": "Yes — the limitation period applies equally to fraudulent and non-fraudulent breaches.",
+        "B": "No — where the trustee is fraudulent, time does not run at all against the defrauded beneficiary under the fraud exception.",
+        "C": "No — the limitation period for fraudulent breach is twelve years.",
+        "D": "Yes — but the period begins to run from when the beneficiary discovered the fraud rather than when the breach occurred."
+      },
+      "correct_answer": "B",
+      "explanation": "Where the trustee is fraudulent, time does not run at all against the defrauded beneficiary under the fraud exception to the Statute of Limitations 1957, section 43. The fraud exception prevents a trustee from benefiting from the limitation period as a result of their own dishonest concealment of the breach. This is a fundamental principle of equity — a trustee cannot use the passage of time to extinguish liability where that time was allowed to pass because of the trustee's own fraudulent conduct."
+    },
+    {
+      "id": "EQL_M08_L01_Q08",
+      "question": "A passive trustee is aware that a co-trustee is making unauthorised investments but does nothing to intervene or protest. Can the passive trustee be held liable for the resulting loss?",
+      "options": {
+        "A": "No — only the trustee who actively made the investments is liable.",
+        "B": "Yes — a trustee who allows a breach by a co-trustee without protesting may be equally liable; trustees must be active in managing the trust and cannot shelter behind the actions of a dominant co-trustee.",
+        "C": "Yes — but the passive trustee's liability is limited to half the loss.",
+        "D": "No — the passive trustee is only liable if they personally benefited from the breach."
+      },
+      "correct_answer": "B",
+      "explanation": "A trustee who is passive — who allows a breach by a co-trustee without objecting or taking steps to prevent it — may be equally liable for the resulting loss. Trustees must be active in managing the trust. The principle of joint and several liability means that each trustee bears full responsibility for the losses caused by any breach committed during their tenure. Sheltering behind the actions of a dominant or more active co-trustee is not an available defence."
+    },
+    {
+      "id": "EQL_M08_L01_Q09",
+      "question": "A trustee makes an authorised investment. However, the investment subsequently falls in value due to general market conditions. Is the trustee liable for the loss?",
+      "options": {
+        "A": "Yes — a trustee is strictly liable for all falls in trust fund value, whether the investment was authorised or not.",
+        "B": "No — a trustee who makes an authorised investment that falls in value due to general market conditions has not breached their duty; liability requires a breach of the trustee's duty of care.",
+        "C": "Yes — but only if the trustee failed to monitor the investment adequately after making it.",
+        "D": "No — but the trustee must sell the investment immediately upon any fall in value to avoid further liability."
+      },
+      "correct_answer": "B",
+      "explanation": "A trustee is not liable simply because an investment falls in value. Liability for breach of the investment duty requires a breach of the trustee's duty of care — for example, making an imprudent investment, failing to diversify, or retaining an unsuitable investment beyond a reasonable period. Where the trustee makes an authorised investment and exercises the care of a prudent investor, any loss resulting from general market movements does not constitute a breach of trust. The standard is objective prudence, not foresight of market conditions."
+    },
+    {
+      "id": "EQL_M08_L01_Q10",
+      "question": "For FE-1 examination purposes, which of the following correctly identifies the defences available to a trustee facing a breach of trust claim?",
+      "options": {
+        "A": "Good faith; professional indemnity insurance; and the trust instrument excluding liability.",
+        "B": "Section 62 relief under the Trustee Act 1893 (honest and reasonable conduct); consent and concurrence of the beneficiaries; the rule in Saunders v Vautier; and the six-year limitation period under section 43 of the Statute of Limitations 1957 (subject to the fraud exception).",
+        "C": "The equitable maxim that equity will not assist a volunteer; laches; and clean hands.",
+        "D": "The no-delegation rule; the self-dealing rule; and the duty of impartiality."
+      },
+      "correct_answer": "B",
+      "explanation": "The recognised defences to a breach of trust claim for FE-1 purposes are: (1) section 62 of the Trustee Act 1893 — the court may relieve a trustee who acted honestly and reasonably and ought fairly to be excused; (2) consent and concurrence of the beneficiaries — fully informed consent by beneficiaries of full capacity bars a subsequent claim; (3) Saunders v Vautier — distribution in accordance with a valid direction from all beneficiaries is not a breach; and (4) the six-year limitation period under section 43 of the Statute of Limitations 1957, subject to the fraud exception."
+    }
+  ]
+}

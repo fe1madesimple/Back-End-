@@ -1,0 +1,131 @@
+{
+  "subject": "Constitutional Law",
+  "el_script_ref": "ConstitutionalLaw_ElevenLabs_Module04_Lesson05.txt",
+  "module_number": 4,
+  "module_title": "Fundamental Rights I: Personal Rights",
+  "lesson_number": 5,
+  "lesson_title": "Freedom of Expression (Art. 40.6.1°(i))",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CON_M04_L05_Q01",
+      "question": "Article 40.6.1°(i) protects the right of citizens to express freely their convictions and opinions. What limitations does the Constitution expressly impose on this right within the text of Art. 40.6?",
+      "options": {
+        "A": "Freedom of expression may be restricted only by an Act of the Oireachtas approved by referendum",
+        "B": "The right is subject to the requirements of public order, morality, and the authority of the State; education, blasphemy, sedition and indecency may be made criminal by law",
+        "C": "Freedom of expression is an absolute right — no constitutional restriction is permissible",
+        "D": "The right may only be restricted where national security is directly threatened, subject to judicial approval"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 40.6.1°(i) itself contains express limitations: the education of public opinion is a matter of grave import to the common good, and the State shall endeavour to ensure that organs of public opinion shall not be used to undermine public order or morality or the authority of the State. Publication or utterance of blasphemous, seditious or indecent matter is a criminal offence under the Constitution. These limitations are built into the constitutional text, making freedom of expression in Ireland more explicitly limited than the equivalent provision in some other constitutional systems."
+    },
+    {
+      "id": "CON_M04_L05_Q02",
+      "question": "Article 40.6.1°(i) specifically references that the State shall endeavour to ensure that organs of public opinion (including the press, radio and cinema) shall not be used to undermine the authority of the State. Does this mean the State may censor the press?",
+      "options": {
+        "A": "Yes — the Constitution expressly authorises State censorship of organs of public opinion",
+        "B": "No — the provision is an aspiration, not an authorisation for prior restraint; any restriction on the press must pass constitutional scrutiny including proportionality",
+        "C": "Yes, but only in respect of political commentary that is critical of Government policy",
+        "D": "No, because the ECHR Act 2003 overrides any such censorship power with Art. 10 ECHR freedom of expression"
+      },
+      "correct_answer": "B",
+      "explanation": "While Art. 40.6.1°(i) references the State's duty regarding organs of public opinion, this is not a blank authority for prior restraint or censorship. The Supreme Court has consistently held that restrictions on freedom of expression must be proportionate and constitutionally justified. Prior restraints (injunctions against publication) are viewed with particular scepticism: see Mahon v Post Publications Ltd [2007] IESC 15 where the court affirmed that freedom of expression is a fundamental right that can only be restricted by sufficiently compelling reasons."
+    },
+    {
+      "id": "CON_M04_L05_Q03",
+      "question": "In Murphy v IRTC [1999] 1 IR 12, the Supreme Court upheld a statutory ban on religious advertising on radio and television under s.10(3) of the Radio and Television Act 1988. The court balanced freedom of expression against what competing constitutional value?",
+      "options": {
+        "A": "The right to property of broadcasters who would be commercially harmed by religious advertising",
+        "B": "The risk that paid religious broadcasting could undermine the constitutional guarantee of freedom of religion and the constitutional prohibition on State endowment of religion under Art. 44",
+        "C": "National security concerns about foreign religious organisations broadcasting in Ireland",
+        "D": "The right to education of children who could be exposed to religious messages without parental consent"
+      },
+      "correct_answer": "B",
+      "explanation": "In Murphy v IRTC [1999] 1 IR 12, the Supreme Court upheld the statutory ban on paid religious advertising on broadcast media on the basis that the restriction was a proportionate means of protecting the constitutionally guaranteed freedom of conscience and freedom of religion under Art. 44, and of preserving neutrality in religious matters on public media. The potential for wealthy religious groups to dominate airtime justified the legislative restriction on this form of expression."
+    },
+    {
+      "id": "CON_M04_L05_Q04",
+      "question": "The tort of defamation under the Defamation Act 2009 restricts freedom of expression by protecting reputation. How has the Supreme Court balanced freedom of expression against reputation in Irish law?",
+      "options": {
+        "A": "Reputation always prevails over freedom of expression; defamation law cannot be challenged on constitutional grounds",
+        "B": "Freedom of expression takes absolute precedence over reputation; defamation actions are constitutionally prohibited",
+        "C": "Both are constitutional values; courts apply a proportionality approach, giving greater weight to freedom of expression on matters of public interest while protecting individual reputation from unjustified attack",
+        "D": "The Defamation Act 2009 is an EU law measure and is immune from constitutional challenge under Art. 29.4.6°"
+      },
+      "correct_answer": "C",
+      "explanation": "Irish law recognises both freedom of expression (Art. 40.6.1°(i)) and the right to one's good name (Art. 40.3.2°) as constitutional values. The Defamation Act 2009 seeks to balance these: it introduces a 'fair and reasonable publication' defence (s.26) for matters of public interest, reflecting the constitutional importance of freedom of expression on public affairs. Courts apply a proportionality analysis when these values conflict, giving greater latitude for expression on matters of genuine public concern."
+    },
+    {
+      "id": "CON_M04_L05_Q05",
+      "question": "Article 40.3.2° protects the good name of every citizen. A journalist publishes an article making false allegations about a politician's personal life. The politician sues for defamation. The journalist pleads that the article concerned a matter of public interest. Under the Defamation Act 2009, which defence is most relevant?",
+      "options": {
+        "A": "Absolute privilege — all political commentary is absolutely privileged",
+        "B": "Justification (truth) — but this fails if the allegations are false",
+        "C": "The defence of fair and reasonable publication on a matter of public interest under s.26 of the Defamation Act 2009",
+        "D": "Qualified privilege under s.18 — available to all journalists regardless of the truth of the publication"
+      },
+      "correct_answer": "C",
+      "explanation": "The s.26 Defamation Act 2009 defence of fair and reasonable publication on a matter of public interest is the most relevant. Even where specific allegations are false, the journalist may rely on this defence if the subject matter is of genuine public interest, the journalist acted reasonably in all the circumstances, and publication was fair in the circumstances. The politician's personal life may be relevant to their public role depending on the context. This defence reflects the constitutional balance between Art. 40.6 and Art. 40.3.2°."
+    },
+    {
+      "id": "CON_M04_L05_Q06",
+      "question": "The Constitution originally provided for criminal punishment for 'blasphemous' publication. The 37th Amendment 2018 removed this provision. What was the previous constitutional position regarding blasphemy?",
+      "options": {
+        "A": "Blasphemy was not mentioned in the Constitution prior to 2018 and was only a common law offence",
+        "B": "Article 40.6.1°(i) expressly stated that the publication or utterance of blasphemous matter was an offence punishable by law, and the Defamation Act 2009 had created a blasphemy offence under s.36",
+        "C": "Blasphemy was a constitutional offence only if committed in a public place",
+        "D": "The Constitution required all blasphemy cases to be tried before a Special Criminal Court"
+      },
+      "correct_answer": "B",
+      "explanation": "Prior to the 37th Amendment 2018, Art. 40.6.1°(i) expressly stated that the publication or utterance of 'blasphemous, seditious, or indecent matter' was an offence punishable by law. The Defamation Act 2009 s.36 created a specific blasphemy offence (a criminal offence to publish or utter matter grossly abusive or insulting in relation to matters held sacred by any religion). The 37th Amendment (passed by referendum on 26 October 2018) deleted the blasphemy reference from the Constitution; the Defamation (Amendment) Act 2019 then removed the s.36 offence."
+    },
+    {
+      "id": "CON_M04_L05_Q07",
+      "question": "In McKenna v An Taoiseach (No.2) [1995] 2 IR 10, the Supreme Court imposed constitutional limits on Government use of public funds in referendum campaigns. The constitutional basis was:",
+      "options": {
+        "A": "Article 46 which prohibits Government expenditure on referendum campaigns",
+        "B": "The constitutional right to free expression and the right of the people to make an informed decision on a referendum, which the Government violated by spending public funds to advocate a particular outcome",
+        "C": "Article 17.2 which prohibits Government expenditure not authorised by Dáil resolution",
+        "D": "Article 15.2 which vests legislative power in the Oireachtas, not the Government, in respect of referendum campaigns"
+      },
+      "correct_answer": "B",
+      "explanation": "McKenna v An Taoiseach (No.2) [1995] 2 IR 10 held that the Government's use of public funds (approximately IR£500,000) to advocate a 'Yes' vote in the divorce referendum was unconstitutional. The Supreme Court held that spending public money to influence voters' free choice in a referendum violated the equality of citizenship (Art. 40.1) and the democratic right to a free, fair and equal vote by improperly distorting the debate through the use of State resources to promote one side."
+    },
+    {
+      "id": "CON_M04_L05_Q08",
+      "question": "The Broadcasting Act 2009 imposes obligations on broadcasters including requirements for impartiality and balance in news. Does this engage Article 40.6.1°(i)?",
+      "options": {
+        "A": "No — broadcasters are not citizens and so have no freedom of expression rights under Art. 40.6.1°(i)",
+        "B": "Yes — statutory obligations of impartiality limit broadcasters’ editorial freedom and engage Art. 40.6.1°(i), but may be justified as proportionate regulations in the public interest given the particular impact of broadcast media on public opinion",
+        "C": "No — broadcast regulation is exclusively an EU competence under the Audiovisual Media Services Directive",
+        "D": "Yes, but only where the statutory obligations relate to political broadcasting immediately before an election"
+      },
+      "correct_answer": "B",
+      "explanation": "The Broadcasting Act 2009's impartiality obligations engage Art. 40.6.1°(i) because they constrain broadcasters' expression. However, the Supreme Court in Murphy v IRTC [1999] and in the broader context recognised that broadcast media occupies a special position: it has particular penetration and influence on public opinion, justifying regulatory obligations that would be disproportionate for print media. The constitutionality of impartiality requirements rests on their proportionality — a legitimate aim pursued by appropriate means."
+    },
+    {
+      "id": "CON_M04_L05_Q09",
+      "question": "Contempt of court can restrict the freedom of the press by prohibiting publication of material relating to ongoing proceedings (sub judice rule). How is this justified under Art. 40.6.1°(i)?",
+      "options": {
+        "A": "Contempt of court is absolutely privileged and immune from constitutional challenge",
+        "B": "The sub judice rule is a proportionate restriction justified by the need to protect the constitutional right to a fair trial (Art. 38.1) and the authority of the courts — a limitation expressly contemplated in Art. 40.6",
+        "C": "Contempt restrictions are justified solely on the basis of the common law and need no constitutional analysis",
+        "D": "The sub judice rule applies only to criminal proceedings; civil proceedings enjoy no protection against media comment"
+      },
+      "correct_answer": "B",
+      "explanation": "The sub judice rule restricting publication of prejudicial material about ongoing legal proceedings engages Art. 40.6.1°(i) but is constitutionally justified on two grounds: (i) protecting the constitutional right to a fair trial (Art. 38.1) for the accused; and (ii) the 'authority of the State' limitation in Art. 40.6 includes protecting the due administration of justice by the courts. The restriction must be proportionate — overly broad or prolonged restrictions on media reporting could themselves become unconstitutional."
+    },
+    {
+      "id": "CON_M04_L05_Q10",
+      "question": "A documentary filmmaker seeks to publish a film containing interviews with individuals who were convicted of serious crimes. The victims seek an injunction to prevent broadcast on the basis that it will further damage their dignity. What constitutional analysis applies?",
+      "options": {
+        "A": "The documentary is absolutely protected by Art. 40.6.1°(i) and cannot be restrained by any court order",
+        "B": "The court must balance Art. 40.6.1°(i) (freedom of expression) against the Art. 40.3.2° right to good name and Art. 40.3.1° dignity rights of the victims, applying a proportionality test to determine whether prior restraint is justified",
+        "C": "The injunction must be granted automatically as victims’ rights always override media freedom",
+        "D": "The Broadcasting Authority of Ireland must determine the issue first before any court can intervene"
+      },
+      "correct_answer": "B",
+      "explanation": "This scenario requires balancing competing constitutional values: Art. 40.6.1°(i) (freedom of expression/documentary filmmaking) against Art. 40.3.2° (right to one’s good name) and Art. 40.3.1° personal rights of the victims. Irish courts apply a proportionality test, recognising that prior restraint is a particularly serious interference with freedom of expression and is only appropriate where the plaintiff shows a clear right to the relief and that damages would be inadequate. The public interest in the documentary's subject matter is a significant factor."
+    }
+  ]
+}

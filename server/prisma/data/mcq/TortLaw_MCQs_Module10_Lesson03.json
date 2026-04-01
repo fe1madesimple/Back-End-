@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module10_Lesson03.txt",
+  "module_number": 10,
+  "module_title": "Trespass to the Person",
+  "lesson_number": 3,
+  "lesson_title": "Intentional Infliction of Emotional Distress",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M10_L03_Q01",
+      "question": "In Wilkinson v Downton [1897], what did the defendant do and what principle did the court establish?",
+      "options": {
+        "A": "The defendant published a false newspaper story about the plaintiff; Wright J held that published falsehoods causing psychiatric harm give rise to liability",
+        "B": "The defendant, as a practical joke, told the plaintiff her husband had been seriously injured; Wright J held that a defendant who wilfully commits an act calculated to cause physical harm is liable where that act causes such harm",
+        "C": "The defendant repeatedly followed the plaintiff; the court held that stalking constitutes the tort of harassment",
+        "D": "The defendant made threats by telephone; the court held that telephone threats constitute assault"
+      },
+      "correct_answer": "B",
+      "explanation": "In Wilkinson v Downton [1897] 2 QB 57, the defendant maliciously told the plaintiff, as a practical joke, that her husband had been seriously injured in an accident. The plaintiff suffered a severe nervous shock and physical consequences. Wright J held that the defendant had wilfully committed an act calculated to cause physical harm to the plaintiff and had thereby caused the harm. The ratio is that where a defendant wilfully does an act calculated to cause physical harm and it causes such harm, the defendant is liable — even where the harm is caused through non-physical means."
+    },
+    {
+      "id": "TL_M10_L03_Q02",
+      "question": "What are the key elements of the ratio in Wilkinson v Downton [1897]?",
+      "options": {
+        "A": "Negligence, foreseeability, breach, and damage",
+        "B": "Wilful act; the act was calculated to cause physical harm to the plaintiff; the act caused such harm",
+        "C": "Intention to deceive, actual deception, reliance, and financial loss",
+        "D": "Threatening conduct, apprehension of force, proximity, and unlawful purpose"
+      },
+      "correct_answer": "B",
+      "explanation": "The ratio of Wilkinson v Downton consists of three elements: (1) the defendant wilfully committed an act — it was deliberate, not merely negligent; (2) the act was calculated to cause physical harm to the plaintiff — this means the act was of a kind likely to produce the harmful consequence, whether or not the defendant subjectively intended the specific harm; and (3) the act did cause such harm. This is a tort of intentional infliction of harm through non-physical means and is distinct from both battery and the tort of negligence."
+    },
+    {
+      "id": "TL_M10_L03_Q03",
+      "question": "How have Irish courts generally approached the question of whether to recognise an independent tort of intentional infliction of emotional distress?",
+      "options": {
+        "A": "Irish courts have fully adopted and developed an independent tort of intentional infliction of emotional distress based on Wilkinson v Downton",
+        "B": "Irish courts have been cautious, preferring to work through established torts such as negligence or existing trespass torts, though the Wilkinson v Downton principle has not been repudiated",
+        "C": "Irish courts have rejected the Wilkinson v Downton principle as incompatible with the general structure of Irish tort law",
+        "D": "Irish courts have replaced Wilkinson v Downton with a statutory tort under the Non-Fatal Offences Against the Person Act 1997"
+      },
+      "correct_answer": "B",
+      "explanation": "Irish courts have been cautious about formally recognising an independent tort of intentional infliction of emotional distress. The preference has been to expand negligence to cover psychiatric injury cases or to rely on existing trespass torts where applicable. However, the principle in Wilkinson v Downton has not been repudiated, and in cases of deliberate psychological attacks — a false statement designed to cause shock and harm — Irish courts may draw on the Wilkinson v Downton line of authority."
+    },
+    {
+      "id": "TL_M10_L03_Q04",
+      "question": "Which Irish statute introduced the criminal offence of harassment, and under which section?",
+      "options": {
+        "A": "The Defamation Act 2009, section 5",
+        "B": "The Civil Liability Act 1961, section 34",
+        "C": "The Non-Fatal Offences Against the Person Act 1997, section 10",
+        "D": "The Criminal Justice Act 2006, section 8"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 10 of the Non-Fatal Offences Against the Person Act 1997 introduced the criminal offence of harassment in Ireland. A person harasses another by persistently following, watching, pestering, besetting, or communicating with them in a way that causes fear, distress, or alarm to that person. While this is a criminal provision, its existence reflects the legal system's recognition that persistent harassment causes serious harm — and a civil plaintiff suffering such conduct may be able to ground a claim in nuisance, negligence, or the Wilkinson v Downton principle."
+    },
+    {
+      "id": "TL_M10_L03_Q05",
+      "question": "Section 10 of the Non-Fatal Offences Against the Person Act 1997 defines harassment in terms of certain conduct. Which of the following correctly describes that conduct?",
+      "options": {
+        "A": "Making a single seriously threatening communication to the victim",
+        "B": "Persistently following, watching, pestering, besetting, or communicating with another in a way that causes fear, distress, or alarm",
+        "C": "Any intentional act causing psychiatric harm to the plaintiff",
+        "D": "Publishing false statements about a person with the intention of causing them distress"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 10 of the Non-Fatal Offences Against the Person Act 1997 provides that a person harasses another where they, by any means including by use of a telephone, persistently follow, watch, pester, beset, or communicate with the victim in a manner that causes fear, distress, or alarm. The emphasis is on persistence — a course of conduct rather than a single act — and on the effect on the victim: the conduct must cause fear, distress, or alarm."
+    },
+    {
+      "id": "TL_M10_L03_Q06",
+      "question": "What civil law remedies might be available to a victim of persistent harassment in Ireland, drawing on existing torts?",
+      "options": {
+        "A": "Only the victim can bring a private prosecution under the 1997 Act — there is no civil remedy",
+        "B": "Civil claims in private nuisance, negligence causing psychiatric injury, or under the Wilkinson v Downton principle, as well as a possible injunction to restrain the conduct",
+        "C": "Only a claim under the Defamation Act 2009 if the harassment involved false statements",
+        "D": "Only a claim for false imprisonment if the defendant prevented the victim from leaving a place"
+      },
+      "correct_answer": "B",
+      "explanation": "A victim of persistent harassment may have civil law remedies through: private nuisance — where the harassment interferes unreasonably with the enjoyment of their property; negligence — where the defendant's course of conduct causes foreseeable psychiatric injury; or the Wilkinson v Downton principle — where the defendant deliberately engaged in conduct calculated to cause psychological harm. In addition, an injunction to restrain the continuing conduct would be a powerful and appropriate remedy to seek alongside any damages claim."
+    },
+    {
+      "id": "TL_M10_L03_Q07",
+      "question": "In what type of FE-1 problem question is the Wilkinson v Downton principle most likely to arise?",
+      "options": {
+        "A": "As the central claim in a standalone question about intentional torts",
+        "B": "As an incidental issue in a broader problem question where the facts involve a deliberate psychological attack — a false statement designed to cause shock and harm — or a campaign of deliberate intimidation",
+        "C": "In questions specifically about product liability or occupiers' liability",
+        "D": "In questions about negligent misstatement and professional advice"
+      },
+      "correct_answer": "B",
+      "explanation": "As noted in the lesson, the Wilkinson v Downton principle is unlikely to be the central issue in a standalone FE-1 question but is likely to arise as an incidental issue in a broader problem question. The key factual indicators are: a deliberate false statement designed to cause shock (as in Wilkinson v Downton itself); a campaign of psychological intimidation or abuse; or conduct that falls outside the established trespass torts of battery, assault, and false imprisonment but which is intentionally harmful."
+    },
+    {
+      "id": "TL_M10_L03_Q08",
+      "question": "What distinguishes the Wilkinson v Downton principle from the tort of negligence?",
+      "options": {
+        "A": "In negligence, the defendant's conduct must be an omission; in Wilkinson v Downton it must be a positive act",
+        "B": "Wilkinson v Downton requires a wilful act calculated to cause harm — it is a tort of intentional wrongdoing, not merely of carelessly failing to take precautions",
+        "C": "In negligence, causation is required; in Wilkinson v Downton, causation need not be proved",
+        "D": "Wilkinson v Downton is a statutory tort; negligence is a common law tort"
+      },
+      "correct_answer": "B",
+      "explanation": "The critical distinction is that Wilkinson v Downton requires a wilful act — the conduct must be deliberate and calculated to cause harm, not merely careless. Negligence, by contrast, imposes liability for failing to exercise reasonable care — the defendant need not have intended any harm. This means Wilkinson v Downton is more difficult to satisfy in terms of the mental element required, but it does not require the plaintiff to establish a duty of care under the Glencar test, making it relevant where the duty analysis might be uncertain."
+    },
+    {
+      "id": "TL_M10_L03_Q09",
+      "question": "What type of harm must be caused for the Wilkinson v Downton principle to apply?",
+      "options": {
+        "A": "Pure financial loss caused by the defendant's deliberate misrepresentation",
+        "B": "Physical harm — including recognised psychiatric illness constituting a physical harm — caused by the defendant's wilful act",
+        "C": "Reputational harm caused by the defendant's deliberate false statement",
+        "D": "Property damage caused by the defendant's deliberately harmful conduct"
+      },
+      "correct_answer": "B",
+      "explanation": "The Wilkinson v Downton principle applies where the defendant's wilful act causes physical harm to the plaintiff — including recognised psychiatric illness, which the courts treat as a form of physical harm. In Wilkinson v Downton itself, the plaintiff suffered a severe nervous shock with physical consequences. Pure financial loss, reputational harm, or property damage do not engage the Wilkinson v Downton principle, which is concerned with harm to the person."
+    },
+    {
+      "id": "TL_M10_L03_Q10",
+      "question": "Why do Irish courts prefer to work through established torts rather than recognising a freestanding tort of intentional infliction of emotional distress?",
+      "options": {
+        "A": "Because intentional conduct is always better addressed through criminal law rather than civil law",
+        "B": "Because the established torts of battery, assault, negligence, and nuisance already provide adequate remedies in most cases, and creating a new independent tort risks expanding liability in unpredictable ways",
+        "C": "Because the Irish Constitution prohibits civil liability for intentional conduct not specifically provided for by statute",
+        "D": "Because the FE-1 examiners only test the established torts and a new tort would not appear on the paper"
+      },
+      "correct_answer": "B",
+      "explanation": "Irish courts prefer to work through the established torts — battery, assault, false imprisonment, negligence, and private nuisance — rather than recognising a freestanding independent tort of intentional infliction of emotional distress, because the established framework generally provides adequate remedies. Creating a new tort risks expanding liability in unpredictable ways and raises definitional problems about what conduct would be 'calculated to cause harm.' The Wilkinson v Downton principle remains available as a safety net but is not developed as an independent primary cause of action."
+    }
+  ]
+}

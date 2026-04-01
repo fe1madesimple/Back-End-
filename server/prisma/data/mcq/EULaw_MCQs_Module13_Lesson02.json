@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module13_Lesson02.txt",
+  "module_number": 13,
+  "module_title": "Freedom of Establishment and Freedom to Provide Services",
+  "lesson_number": 2,
+  "lesson_title": "Freedom to Provide Services: Article 56 TFEU, Säger, Alpine Investments, and Laval",
+  "questions": [
+    {
+      "id": "EUL_M13_L02_Q01",
+      "question": "Article 56 TFEU (ex Article 49 EC) prohibits restrictions on the freedom to provide services in respect of nationals of member states who are established in a member state other than that of the person for whom the services are intended. A 'service' under Article 57 TFEU is normally provided:",
+      "options": {
+        "A": "Only where the service provider physically crosses a border to provide the service in the recipient's state",
+        "B": "For remuneration — the characteristic feature of services is that they are provided for remuneration; Article 56 covers provider mobility, recipient mobility, service crossing the border (correspondence services), and provider temporarily established in recipient's state",
+        "C": "Only in the field of professional services — commercial and financial services are governed by specific Treaty provisions",
+        "D": "Only where the service takes more than three months to complete"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 57 TFEU defines services as those normally provided for remuneration insofar as they are not governed by the provisions relating to free movement of goods, capital, and persons. Crucially, remuneration distinguishes services from non-commercial activities (free services and state-funded public services). Article 56 covers four modes of service provision: (1) the provider moves to the recipient's state (active provision); (2) the recipient moves to the provider's state (passive provision — Luisi and Carbone [1984]); (3) the service crosses the border without either party moving (correspondence, broadcasting, internet services — TV10 SA [1994]); and (4) both parties move to a third state. All four modes fall within Article 56. The temporary nature of the activity distinguishes services from establishment."
+    },
+    {
+      "id": "EUL_M13_L02_Q02",
+      "question": "In Säger v Dennemeyer [1991] (C-76/90), the CJEU established the key principle for assessing whether national measures violate Article 56 TFEU on services. The Säger principle provides that Article 56:",
+      "options": {
+        "A": "Prohibits only directly discriminatory measures — national rules applying equally to all providers cannot violate Article 56",
+        "B": "Requires the elimination not only of discrimination on grounds of nationality, but also of any restrictions — even if applicable without distinction to national providers and those of other member states — where those restrictions are liable to prohibit, impede, or render less attractive the activities of a provider established in another member state",
+        "C": "Applies only to professional services regulated by specific directives",
+        "D": "Prohibits only measures that completely prevent cross-border service provision — partial restrictions are permissible"
+      },
+      "correct_answer": "B",
+      "explanation": "Säger v Dennemeyer is the foundational case for the modern interpretation of Article 56. UK rules required patent renewal agents to be licensed in the UK. Dennemeyer, established in Ireland, provided renewal services in the UK without a UK licence. The CJEU held that Article 56 prohibits not only discriminatory measures but also indistinctly applicable measures (applying equally to domestic and foreign providers) that restrict or make less attractive the provision of services across borders. This mirrors the Cassis de Dijon approach in goods: the focus is on market access and cross-border restriction, not merely discrimination. Once a restriction is established, it can be justified by overriding requirements of general interest — but only if proportionate and the activity is not already regulated in the provider's home state."
+    },
+    {
+      "id": "EUL_M13_L02_Q03",
+      "question": "In Alpine Investments BV v Minister van Financiën [1995] (C-384/93), the Netherlands prohibited Dutch financial services companies from cold-calling (making unsolicited telephone calls to) potential clients in other member states. Alpine Investments, established in the Netherlands, challenged this restriction under Article 56. The CJEU held:",
+      "options": {
+        "A": "The Dutch prohibition only affected domestic service provision and was outside the scope of Article 56",
+        "B": "Article 56 can be invoked against the member state of establishment of the service provider — a restriction imposed by the home state on the export of services falls within Article 56; the Dutch prohibition restricted Alpine Investments' ability to contact potential clients abroad and constituted a restriction on freedom to provide services, though it was justified by consumer protection and financial market integrity",
+        "C": "Cold-calling is a selling arrangement equivalent to those in Keck — it cannot constitute a restriction on free movement",
+        "D": "The prohibition was unlawful as consumer protection can only be pursued by the member state of the recipient"
+      },
+      "correct_answer": "B",
+      "explanation": "Alpine Investments established that Article 56 can be invoked against the member state of the service provider's establishment (the home state), not only against host state restrictions. The Dutch prohibition on cold-calling affected Alpine Investments' ability to offer services to clients in other member states — restricting the 'export' of services from the Netherlands. The CJEU rejected the analogy with Keck (selling arrangements — excluded from Article 34): unlike Keck, the Dutch rule directly affected access to the market of services in other member states (by preventing the provider from reaching foreign clients). The Court held the restriction was justified by the legitimate aims of consumer protection and ensuring the integrity of financial markets, and was proportionate. Alpine Investments thus confirmed the wide scope of Article 56 — applying to both home and host state measures."
+    },
+    {
+      "id": "EUL_M13_L02_Q04",
+      "question": "The host state may impose requirements on incoming service providers under Article 56 TFEU. However, the CJEU applies a principle that host state requirements must not duplicate controls already carried out in the provider's home state. This principle derives from:",
+      "options": {
+        "A": "The establishment provisions of Article 49 TFEU",
+        "B": "The mutual recognition principle developed in Cassis de Dijon and applied to services — if a provider is already subject to legitimate regulation in their home member state ensuring equivalent protection, requiring duplicate compliance with host state rules is disproportionate",
+        "C": "Directive 2006/123 (the Services Directive) — this principle has no foundation in primary law",
+        "D": "The principle of equal treatment — host state requirements must simply be applied equally"
+      },
+      "correct_answer": "B",
+      "explanation": "The principle that host state requirements must not duplicate home state controls is a development of the mutual recognition principle from Cassis de Dijon applied to services. In Webb [1981] (C-279/80), the CJEU held that host states cannot impose requirements on service providers — such as licensing — where the provider is already subject to equivalent requirements in their home state. The home state regulation provides equivalent protection, and requiring duplicate compliance amounts to an unjustified restriction. This principle is fundamental to the internal market in services: service providers should not face the double compliance burden of their home state rules plus every host state's rules. Directive 2006/123 (the Services Directive) codifies this in Article 16 for services within its scope — host state requirements may only be imposed if non-discriminatory, justified, and proportionate, and not duplicating home state controls."
+    },
+    {
+      "id": "EUL_M13_L02_Q05",
+      "question": "In Laval un Partneri Ltd v Svenska Byggnadsarbetareförbundet [2007] (C-341/05), a Latvian construction company posted Latvian workers to Sweden to provide services. Swedish trade unions blockaded the Laval construction site demanding wages aligned to Swedish collective agreements. The CJEU held:",
+      "options": {
+        "A": "Collective industrial action is outside the scope of EU law — trade unions cannot violate Article 56 as they are private bodies",
+        "B": "The right to take collective action is recognised as a fundamental right but must be exercised in conformity with EU law — collective action that forces a service provider to comply with conditions of employment beyond the mandatory minimum rules of the Posted Workers Directive 96/71 constitutes a restriction on Article 56 that is disproportionate and unjustifiable",
+        "C": "Sweden was entitled to require Laval to comply with Swedish wage standards as a condition of accessing the Swedish market",
+        "D": "The Posted Workers Directive permits host states to require compliance with any collective agreement, including those beyond statutory minima"
+      },
+      "correct_answer": "B",
+      "explanation": "Laval is one of the most significant and controversial CJEU judgments on the tension between free movement and social rights. The Court held: (1) the right to take collective action is a fundamental right recognised in EU law but it must be exercised consistently with Article 56; (2) collective action by trade unions is capable of constituting a restriction on the freedom to provide services (trade unions are not state bodies but are covered by Article 56 because they regulate service provision collectively); (3) the Swedish trade union action went beyond the 'hard core' of minimum protections mandated by Directive 96/71 (the Posted Workers Directive) — the PWD sets a ceiling for host state requirements in the construction sector; (4) requiring Laval to comply with wage rates set by collective agreements beyond the statutory minimum was disproportionate. Laval and its companion case Viking Line caused intense political controversy about the balance between economic freedoms and fundamental social rights."
+    },
+    {
+      "id": "EUL_M13_L02_Q06",
+      "question": "Article 62 TFEU applies to freedom of services the provisions of Article 52 TFEU (public policy, public security, public health derogations) that apply to establishment. Additionally, the CJEU has recognised overriding reasons of general interest (mandatory requirements) as justifications for restricting services. Which of the following has NOT been recognised by the CJEU as a valid overriding requirement capable of justifying a restriction on Article 56?",
+      "options": {
+        "A": "Consumer protection",
+        "B": "Protection of intellectual property rights",
+        "C": "The economic interest in protecting national service providers from foreign competition",
+        "D": "Prevention of social dumping (ensuring minimum employment standards for posted workers)"
+      },
+      "correct_answer": "C",
+      "explanation": "The CJEU has consistently held that economic interests — protecting national businesses from competition, maintaining market share for domestic providers, generating tax revenue from domestic providers — cannot justify restrictions on Article 56. Economic protectionism is not a legitimate overriding requirement of general interest. By contrast, the Court has recognised numerous non-economic overriding requirements: consumer protection (Säger); social protection of workers (Laval, Rush Portuguesa); public health; cohesion of the tax system; prevention of social dumping; cultural objectives; road safety; prevention of fraud and abuse; legal certainty; and protection of intellectual property (despite the specific IP exhaustion rules). The fundamental principle is that restrictions on fundamental freedoms must serve non-economic public interest objectives — pure commercial protectionism is never justifiable."
+    },
+    {
+      "id": "EUL_M13_L02_Q07",
+      "question": "Luisi and Carbone v Ministero del Tesoro [1984] (C-286/82 and C-26/83) established that Article 56 TFEU protects the freedom of recipients of services, not only providers. The practical significance of this ruling was:",
+      "options": {
+        "A": "Recipients of services have the right to travel to other member states to receive services — including tourists, persons receiving medical treatment, and students — without restriction on grounds of nationality",
+        "B": "Recipients may only receive services in the state where the provider is established",
+        "C": "The ruling applied only to financial services — other service categories were not covered",
+        "D": "Recipients have equal rights only where they pay in the currency of the service provider's member state"
+      },
+      "correct_answer": "A",
+      "explanation": "Luisi and Carbone established what is called the 'passive freedom of services' — the freedom of recipients to go to another member state to receive services there. The cases arose from Italian restrictions on taking currency abroad (limiting tourism, medical tourism, business travel). The CJEU held that the freedom to receive services — as the necessary correlative of the freedom to provide them — is guaranteed by Article 56 TFEU. Recipients include tourists, persons receiving medical treatment, and persons travelling for education or business. This right has been extended in the healthcare context: Kohll [1998] and Decker [1998] established that patients have the right to receive medical services in another member state and obtain reimbursement from their home state health system, subject to certain conditions. Directive 2011/24 (Patients' Rights Directive) now codifies many of these rights."
+    },
+    {
+      "id": "EUL_M13_L02_Q08",
+      "question": "In Viking Line ABP v The International Transport Workers' Federation [2007] (C-438/05), a Finnish ferry operator (Viking Line) sought to reflag a ship to Estonia to benefit from lower Estonian labour costs. Finnish and international trade unions threatened industrial action. The CJEU held:",
+      "options": {
+        "A": "Reflagging a ship to benefit from lower-cost labour is an abuse of freedom of establishment and is not protected by EU law",
+        "B": "Article 49 TFEU applies to collective action by trade unions — collective action is a restriction on freedom of establishment when it deters a company from exercising treaty rights; the right to strike must be balanced against Article 49; collective action pursuing purely protectionist aims (maintaining employment regardless of location) is disproportionate, but action pursuing genuine social objectives (protecting employment terms) may be justified",
+        "C": "Freedom of establishment applies only to legal persons — trade unions acting as private bodies are not bound by Article 49",
+        "D": "Collective action is absolutely protected by the right to strike and can never constitute a restriction on free movement"
+      },
+      "correct_answer": "B",
+      "explanation": "Viking Line, decided the same day as Laval, confirmed that Article 49 TFEU applies to collective action by trade unions. The CJEU held that trade unions, while private bodies, can constitute restrictions on fundamental freedoms when they act collectively to regulate and hinder the exercise of those freedoms. The right to take collective action is a fundamental right (recognised in the EU Charter and ECHR) but must be exercised consistently with EU law. The collective action in Viking would prevent or deter Viking Line from exercising its establishment rights — reflagging to Estonia is a legitimate exercise of Article 49. However, collective action can be justified by overriding reasons: protecting workers (preventing genuine social dumping, protecting terms and conditions) can justify collective action, but the action must be appropriate and not go beyond what is necessary. Purely protectionist aims (job preservation regardless of legitimate restructuring) cannot justify restrictions on establishment."
+    },
+    {
+      "id": "EUL_M13_L02_Q09",
+      "question": "In Omega Spielhallen [2004] (C-36/02), Germany (Bonn) banned a 'laserdrome' entertainment service (laser games simulating human killing) on grounds that it violated human dignity. The CJEU held this ban on a service lawful in the UK:",
+      "options": {
+        "A": "Unlawful — member states cannot ban services lawfully offered in other member states under the mutual recognition principle",
+        "B": "Lawful — protection of fundamental rights (here, human dignity as recognised in the German Basic Law) constitutes an overriding requirement capable of justifying a restriction on the freedom to provide services, provided the measure is proportionate; not all member states need to share the same conception of the right's scope",
+        "C": "Unlawful — human dignity is a philosophical concept that cannot serve as a legal basis for restricting free movement",
+        "D": "Lawful only if the German government had enacted specific legislation banning all forms of violent entertainment"
+      },
+      "correct_answer": "B",
+      "explanation": "Omega is a significant case demonstrating that fundamental rights can justify restrictions on free movement, and that member states may have different cultural and constitutional approaches to fundamental values. The CJEU accepted human dignity (Menschenwürde — a fundamental constitutional value in Germany under Article 1 of the Basic Law) as an overriding requirement capable of justifying a restriction on services. Importantly, the Court held that the specific conception of human dignity (and its application to laser games) did not need to be shared across all member states — a member state can restrict services that violate its particular constitutional understanding of fundamental rights, provided the restriction is proportionate. Omega is the companion to Schmidberger [2003] (freedom of assembly justified restriction on free movement of goods) — both cases show that fundamental rights can trump economic freedoms when proportionate."
+    },
+    {
+      "id": "EUL_M13_L02_Q10",
+      "question": "What is the relevance of the 'country of origin principle' in the context of Article 56 TFEU and the Services Directive 2006/123?",
+      "options": {
+        "A": "The country of origin principle requires service recipients to pay taxes only in their home state",
+        "B": "In its pure form, the country of origin principle means service providers are only subject to the law of their home (origin) member state — the host state cannot impose additional requirements; the Services Directive 2006/123 partially implements this through the 'freedom to provide services' provisions but with significant exceptions",
+        "C": "The country of origin principle has been fully implemented — service providers face no host state regulation whatsoever",
+        "D": "The country of origin principle applies only to financial services regulated by the passport regime under MiFID II"
+      },
+      "correct_answer": "B",
+      "explanation": "The country of origin principle (also called the home country control principle) holds that a service provider is subject only to the law of its home member state — the state where it is established — and the host state may not impose its requirements. In its pure form, this would eliminate double regulation entirely. The Services Directive 2006/123 adopted a modified version — the 'freedom to provide services' in Article 16 — under which the host state may impose requirements only if they are non-discriminatory, justified by overriding reasons of public interest, and proportionate, and are not already equivalent to what the provider faces in their home state. However, the Directive contains significant exclusions (healthcare, audiovisual services, gambling, transport, some social services) and the country of origin principle was substantially diluted during negotiations. Article 16 of the Services Directive thus represents a partial codification of Article 56 principles, not full home country control."
+    }
+  ],
+  "total_questions": 10
+}

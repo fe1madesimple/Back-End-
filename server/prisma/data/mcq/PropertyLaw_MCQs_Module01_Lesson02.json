@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_01_Lesson_02_The_Law_of_Finding.txt",
+  "module_number": 1,
+  "module_title": "Finding and Relativity of Title",
+  "lesson_number": 2,
+  "lesson_title": "The Law of Finding",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M01_L02_Q01",
+      "question": "What is the basic rule governing a finder of a lost object under the relativity of title principle?",
+      "options": {
+        "A": "A finder of a lost object acquires no title whatsoever and must return the object to the State",
+        "B": "A finder of a lost object acquires title good against the whole world, including the true owner",
+        "C": "A finder of a lost object acquires title good against all the world except the true owner",
+        "D": "A finder of a lost object acquires title only if the object remains unclaimed for twelve years"
+      },
+      "correct_answer": "C",
+      "explanation": "The basic rule is that a finder of a lost object acquires a title to that object that is good against all the world except the true owner. This flows directly from the principle of relativity of title: the finder is in possession, possession is title, and therefore the finder has a possessory title superior to all other claims except that of the person who can prove prior possession as the true owner."
+    },
+    {
+      "id": "PRL_M01_L02_Q02",
+      "question": "In Parker v British Airways Board [1982], what key question did the English Court of Appeal have to resolve?",
+      "options": {
+        "A": "Whether the State had a superior claim to valuables found in a public place",
+        "B": "Whether a finder's claim to a lost object prevailed over the claim of the occupier of the land on which it was found",
+        "C": "Whether a finder who sold a lost object without enquiry was liable in conversion",
+        "D": "Whether an honest finder was required to hand found property to the police"
+      },
+      "correct_answer": "B",
+      "explanation": "The central question in Parker v British Airways Board [1982] was whether Mr Parker's claim as finder of a gold bracelet on the floor of an airport executive lounge prevailed over the claim of British Airways as occupier of the premises. The Court of Appeal held in Parker's favour, finding that the finder prevailed because British Airways had not sufficiently manifested an intention to control lost property in that space."
+    },
+    {
+      "id": "PRL_M01_L02_Q03",
+      "question": "Under the framework established in Parker v British Airways Board [1982], when does an occupier of premises have superior rights to a finder over objects found there?",
+      "options": {
+        "A": "Whenever the object is found inside a commercial building",
+        "B": "Only where the object is embedded in or beneath the soil of the premises",
+        "C": "Where the occupier has manifested an intention to exercise control over the building and the things found in it",
+        "D": "Whenever the finder is an employee of the occupier"
+      },
+      "correct_answer": "C",
+      "explanation": "The Parker v British Airways Board [1982] framework establishes that an occupier has superior rights to a finder over objects on or attached to the premises only where the occupier has manifested an intention to exercise control over the building and the things in it. This is the 'manifest intention to control' test. In Parker itself, British Airways had not done enough — there were no notices, no policies, no clear assertion of possession over lost property — and so the finder prevailed."
+    },
+    {
+      "id": "PRL_M01_L02_Q04",
+      "question": "In South Staffordshire Water Company v Sharman [1896], why did the landowner succeed in their claim against the workmen who found gold rings at the bottom of a pool?",
+      "options": {
+        "A": "Because the rings were of historical significance and belonged to the Crown",
+        "B": "Because the workmen were employees acting in the course of their employment",
+        "C": "Because the pool was entirely enclosed within the landowner's property, clearly demonstrating manifest intention to control",
+        "D": "Because the rings were physically attached to the fabric of the pool"
+      },
+      "correct_answer": "C",
+      "explanation": "In South Staffordshire Water Company v Sharman [1896], the landowner succeeded because the pool was entirely enclosed within the landowner's private property. This was treated as clear evidence of manifest intention to control — the landowner had asserted full dominion over that enclosed space. The rings were, in effect, already in the constructive possession of the landowner before the workmen found them. The degree of control over an enclosed private pool is far greater than over an open-access commercial floor, which is why the outcome differed from Parker."
+    },
+    {
+      "id": "PRL_M01_L02_Q05",
+      "question": "What is the rule concerning objects that are embedded in or beneath the soil, as established in Elwes v Brigg Gas Company [1886]?",
+      "options": {
+        "A": "Objects embedded in the soil belong to the finder, as they would not have been found without the finder's effort",
+        "B": "Objects embedded in the soil belong to the landowner, as they are treated as part of the land itself",
+        "C": "Objects embedded in the soil belong to the State under the doctrine of treasure trove",
+        "D": "Ownership of objects embedded in the soil depends on whether the landowner knew of their existence"
+      },
+      "correct_answer": "B",
+      "explanation": "In Elwes v Brigg Gas Company [1886], a prehistoric boat was found buried in the soil during excavation works carried out by a gas company. The court held that the boat belonged to the landowner, not the excavating company that discovered it. Objects embedded in or beneath the soil are treated as part of the land itself and therefore belong to the landowner. This is a clearer and stronger rule than the Parker manifest intention test, which applies only to objects found lying on the surface."
+    },
+    {
+      "id": "PRL_M01_L02_Q06",
+      "question": "In Hannah v Peel [1945], why did the soldier finder prevail over the landowner in respect of a brooch found in a wall crevice?",
+      "options": {
+        "A": "Because soldiers serving in wartime are granted special statutory rights over found property",
+        "B": "Because the brooch was hidden rather than merely lost, and hidden objects belong to the finder",
+        "C": "Because the landowner had never personally occupied the property and could not therefore claim to have manifested an intention to control things found within it",
+        "D": "Because the brooch was found in a crevice of the wall, making it part of the fabric of the building"
+      },
+      "correct_answer": "C",
+      "explanation": "In Hannah v Peel [1945], the court held that the soldier finder prevailed over the landowner because the landowner had never personally taken possession of the requisitioned house — it had been taken over by military authorities. The rationale was that a landowner who has never occupied the property cannot claim to have manifested an intention to control objects found within it. You cannot assert superior rights over things in premises you have never occupied. This is an important qualification on the general rule that landowners prevail over finders."
+    },
+    {
+      "id": "PRL_M01_L02_Q07",
+      "question": "What is the significance of a finder's honesty under the Parker v British Airways Board [1982] framework?",
+      "options": {
+        "A": "Honesty is irrelevant — a finder acquires the same title regardless of their state of mind",
+        "B": "A dishonest finder — one who takes an object knowing who owns it — does not acquire the same protected legal position as an honest finder",
+        "C": "An honest finder acquires title only if they report the find to the police within 24 hours",
+        "D": "Honesty only matters if the object is worth more than a prescribed monetary threshold"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the Parker v British Airways Board [1982] framework, the first principle is that a finder who takes possession honestly — not intending to deprive the true owner — acquires rights good against all except the true owner. A dishonest finder, that is, someone who takes an object knowing who the true owner is, does not acquire the same protected position. The honesty requirement reflects the equitable underpinning of possessory title — the law protects the finder who acts in good faith."
+    },
+    {
+      "id": "PRL_M01_L02_Q08",
+      "question": "Under Article 10 of the Irish Constitution, who holds title to Ireland's natural resources, including the territorial seas and the land beneath them?",
+      "options": {
+        "A": "Private landowners by virtue of the doctrine of cuius est solum",
+        "B": "The finder of any natural resource under the relativity of title principle",
+        "C": "The State",
+        "D": "The relevant local authority in whose administrative area the resource is located"
+      },
+      "correct_answer": "C",
+      "explanation": "Article 10 of the Irish Constitution vests all natural resources, including the territorial seas and the land beneath the seas, in the State. The courts have interpreted this broadly. It represents a fundamental constitutional overlay on the common law rules of finding and relativity of title, and means that the State may have a superior claim to found objects — particularly those of historical, archaeological, or natural significance — irrespective of the competing claims of the finder or landowner."
+    },
+    {
+      "id": "PRL_M01_L02_Q09",
+      "question": "In Webb v Ireland [1988], what was the Supreme Court's decision regarding the Derrynaflan Hoard discovered by members of the public on private farmland?",
+      "options": {
+        "A": "The finders were entitled to keep the hoard as they had discovered it using their own equipment",
+        "B": "The private landowner was entitled to the hoard as owner of the land on which it was found",
+        "C": "The State had a superior claim to the hoard under Article 10 of the Constitution and the National Monuments Acts",
+        "D": "The hoard was to be divided equally between the finders, the landowner, and the State"
+      },
+      "correct_answer": "C",
+      "explanation": "In Webb v Ireland [1988], the Supreme Court held that the State had a superior claim to the Derrynaflan Hoard — an extraordinary collection of early Christian metalwork including a chalice and paten — under Article 10 of the Irish Constitution and the National Monuments Acts. The finders received an ex gratia payment but the hoard itself belonged to the State. This case is the essential Irish authority for any question involving the discovery of ancient artefacts, and it fundamentally departs from the common law position under which the landowner and possibly the finder would have had a much stronger claim."
+    },
+    {
+      "id": "PRL_M01_L02_Q10",
+      "question": "Which legislation vests ownership of objects of archaeological or historical significance in the Irish State?",
+      "options": {
+        "A": "The Land and Conveyancing Law Reform Act 2009",
+        "B": "The National Monuments Acts, including the National Monuments Act 1930 as amended",
+        "C": "The Registration of Title Act 1964",
+        "D": "The Statute of Limitations Act 1957"
+      },
+      "correct_answer": "B",
+      "explanation": "The National Monuments Acts — principally the National Monuments Act 1930 as amended — vest ownership of objects of archaeological or historical significance in the State. This is a fundamental statutory departure from the common law position and operates alongside the constitutional provision in Article 10. It means that even if the common law would have given strong rights to the finder or landowner, objects of national historical importance go to the State. Webb v Ireland [1988] confirmed the combined effect of the Constitution and these statutes."
+    }
+  ]
+}

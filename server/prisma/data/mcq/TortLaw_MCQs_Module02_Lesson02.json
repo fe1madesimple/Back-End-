@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module02_Lesson02.txt",
+  "module_number": 2,
+  "module_title": "The Duty of Care",
+  "lesson_number": 2,
+  "lesson_title": "Special Duty Situations: Omissions, Third Parties, and Public Authorities",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M02_L02_Q01",
+      "question": "What is the general rule in Irish negligence law regarding omissions — that is, failures to act?",
+      "options": {
+        "A": "A defendant always owes a duty to act where doing so would be easy and costless",
+        "B": "There is no general duty to act to prevent harm to another, even where action would be simple and effective",
+        "C": "A duty to act arises automatically where the defendant was physically present and capable of assisting",
+        "D": "Omissions are treated identically to positive acts for the purposes of imposing tortious liability"
+      },
+      "correct_answer": "B",
+      "explanation": "The general rule in Irish and English negligence law is that there is no duty to act — no general duty to rescue a stranger in distress, however easy it would be to do so. The rationale is that imposing a general positive duty to act would create an open-ended and unpredictable burden on the public. Exceptions arise only in defined circumstances involving assumed responsibility, special relationships, or creation of the dangerous situation."
+    },
+    {
+      "id": "TL_M02_L02_Q02",
+      "question": "In Capital and Counties plc v Hampshire County Council [1997], on what basis was the fire brigade held liable?",
+      "options": {
+        "A": "The fire brigade failed to attend the fire scene within the statutory response time",
+        "B": "The fire brigade had a general duty of care to all property owners in its area of operations",
+        "C": "The fire brigade's officer actively switched off the building's sprinkler system, worsening the fire damage",
+        "D": "The fire brigade assumed responsibility for the property by accepting the emergency call"
+      },
+      "correct_answer": "C",
+      "explanation": "In Capital and Counties plc v Hampshire County Council [1997], the English Court of Appeal held that a fire brigade does not generally owe a duty of care to property owners merely by attending a fire. However, in one of the joined cases, the brigade became liable because its officer affirmatively worsened the situation by switching off the sprinkler system. This active intervention — making the situation worse — converted what might have been an omission into a positive act giving rise to liability."
+    },
+    {
+      "id": "TL_M02_L02_Q03",
+      "question": "In Barrett v Ministry of Defence [1995], why was the Ministry of Defence held liable for the death of a sailor who had become dangerously drunk?",
+      "options": {
+        "A": "The Ministry of Defence had a statutory duty to prevent sailors from consuming alcohol on naval bases",
+        "B": "Once officers undertook to care for the incapacitated sailor — placing him in the recovery position — they assumed responsibility and came under a duty of care",
+        "C": "The sailor was in a special relationship with the Ministry by reason of the employment contract, which imposed a general duty to ensure his safety at all times",
+        "D": "The Ministry of Defence was vicariously liable for the sailor's voluntary act of becoming intoxicated"
+      },
+      "correct_answer": "B",
+      "explanation": "Barrett v Ministry of Defence [1995] illustrates the assumption of responsibility exception to the no-duty-to-act rule. Although the defendant was not initially under a duty to prevent the sailor from drinking, once the officers took active steps to care for him — by placing him in the recovery position — they assumed responsibility for his safety. Having assumed that responsibility, they came under a duty to exercise reasonable care in performing that assumed undertaking."
+    },
+    {
+      "id": "TL_M02_L02_Q04",
+      "question": "Which of the following correctly identifies the three established exceptions to the general no-duty-to-act rule in Irish negligence law?",
+      "options": {
+        "A": "Physical proximity, superior knowledge, and financial capacity to prevent the harm",
+        "B": "Contractual relationship, professional status, and statutory power to act",
+        "C": "Assumption of responsibility, special relationship between the parties, and the defendant having created the dangerous situation",
+        "D": "Statutory duty to act, expert knowledge of the risk, and ability to prevent harm without risk to self"
+      },
+      "correct_answer": "C",
+      "explanation": "The three recognised exceptions to the no-duty-to-act rule are: (1) the defendant has assumed responsibility for the plaintiff's safety — a lifeguard who undertakes to supervise swimmers; (2) there is a special relationship between the parties — employer and employee, parent and child, doctor and patient; and (3) the defendant created the dangerous situation and must therefore take steps to remedy it. Physical capability alone does not create a duty."
+    },
+    {
+      "id": "TL_M02_L02_Q05",
+      "question": "In Home Office v Dorset Yacht Company [1970], why was the Home Office held liable for damage caused by escaping borstal boys?",
+      "options": {
+        "A": "The Home Office had a general statutory duty of care to all members of the public who might be harmed by persons in lawful custody",
+        "B": "The Home Office was vicariously liable for the acts of the borstal boys as if they were employees",
+        "C": "The borstal officers had a duty of control and supervision over the boys, and their negligent supervision made the escape and consequent damage foreseeable",
+        "D": "The Home Office had expressly undertaken to the yacht owners that the borstal boys would not leave the island"
+      },
+      "correct_answer": "C",
+      "explanation": "In Home Office v Dorset Yacht Company [1970] AC 1004, the House of Lords held that the borstal officers owed a duty of care because they had a specific duty of control and supervision over the boys. Their negligent supervision created a foreseeable risk that the boys would escape and damage property in the vicinity. The duty arose from the relationship of control, not from any general duty owed to the world at large."
+    },
+    {
+      "id": "TL_M02_L02_Q06",
+      "question": "What is the general rule in Irish negligence law regarding a defendant's liability for the independent wrongful acts of a third party?",
+      "options": {
+        "A": "A defendant is liable for all foreseeable harm caused by third parties in their vicinity",
+        "B": "A defendant is generally not liable for the independent wrongful acts of a third party that cause harm to the plaintiff",
+        "C": "A defendant is jointly liable with any third party who commits a tort where there was a prior relationship between defendant and plaintiff",
+        "D": "A defendant is liable for a third party's acts where they were in a position to prevent them"
+      },
+      "correct_answer": "B",
+      "explanation": "The general rule is that a defendant is not liable for the voluntary and independent acts of a third party. This reflects the principle that each person is responsible for their own actions. Exceptions arise only where the defendant: has assumed control or supervision over the third party; is in a special position of control; or has in some way facilitated or created the conditions for the third party's wrongdoing."
+    },
+    {
+      "id": "TL_M02_L02_Q07",
+      "question": "In Breslin v Corcoran [2003] 2 IR 203, what effect did the voluntary criminal act of a third party have on the defendant's liability?",
+      "options": {
+        "A": "It doubled the defendant's liability as a concurrent wrongdoer under the Civil Liability Act 1961",
+        "B": "It had no effect because the defendant's original negligence remained an operative cause",
+        "C": "It generally broke the causal link between the defendant's negligence and the plaintiff's injury, unless the crime was foreseeable",
+        "D": "It automatically converted the defendant's sole liability into proportionate liability"
+      },
+      "correct_answer": "C",
+      "explanation": "In Breslin v Corcoran [2003] 2 IR 203, the Irish Supreme Court confirmed that the voluntary independent criminal act of a third party will generally break the chain of causation between the defendant's negligence and the plaintiff's injury. However, where the defendant's negligence created the very risk that the third party would act in the harmful way they did — making the criminal intervention foreseeable — the chain will not be broken."
+    },
+    {
+      "id": "TL_M02_L02_Q08",
+      "question": "In Irish law, what distinction do the courts draw when determining whether a public authority owes a duty of care in negligence?",
+      "options": {
+        "A": "The distinction between central government and local government authorities",
+        "B": "The distinction between statutory and common law powers",
+        "C": "The distinction between operational decisions, where a duty may arise, and policy decisions, where no duty arises",
+        "D": "The distinction between acts done in good faith and those done with malice"
+      },
+      "correct_answer": "C",
+      "explanation": "Irish courts follow the operational/policy distinction in public authority cases. Policy decisions — strategic choices about how to exercise statutory discretion, involving resource allocation or the weighing of public interests — do not give rise to a duty of care. Operational decisions — how a policy is implemented on the ground — can attract a duty of care if the Glencar test is otherwise satisfied. This distinction was applied in Ward v McMaster [1988] and reaffirmed in Barlow v Minister for Communications [2025]."
+    },
+    {
+      "id": "TL_M02_L02_Q09",
+      "question": "In Ward v McMaster [1988] IR 337, why was the county council held to owe a duty of care to the house purchaser?",
+      "options": {
+        "A": "The council had a statutory duty to inspect all housing units in its area for structural safety",
+        "B": "The council assumed responsibility by providing a valuation certificate on which the purchaser would foreseeably and reasonably rely",
+        "C": "The council was in a contractual relationship with the purchaser for the supply of housing services",
+        "D": "The operational act of inspecting the property was negligently performed and caused physical damage"
+      },
+      "correct_answer": "B",
+      "explanation": "Ward v McMaster [1988] IR 337 is the leading Irish authority on assumption of responsibility by a public authority. The county council provided a valuation certificate to a housing loan applicant. The Supreme Court held that by making that specific representation in the knowledge that the purchaser would rely on it, the council voluntarily assumed responsibility for the accuracy of the certificate. This operational act — preparing and issuing the valuation — attracted liability when performed carelessly."
+    },
+    {
+      "id": "TL_M02_L02_Q10",
+      "question": "Which 2025 Irish Supreme Court decision reaffirmed the Glencar test in public authority cases, with particular emphasis on the policy limb?",
+      "options": {
+        "A": "Breslin v Corcoran [2025]",
+        "B": "Barlow v Minister for Communications [2025]",
+        "C": "Ward v McMaster [2025]",
+        "D": "Hanrahan v Merck Sharp and Dohme [2025]"
+      },
+      "correct_answer": "B",
+      "explanation": "Barlow v Minister for Communications [2025] is the most recent Irish Supreme Court authority on duty of care in public authority cases. The court reaffirmed the Glencar test as the governing framework and stressed that, in cases involving public authorities, the policy limb of the test must be scrutinised with particular care, given the nature of public decision-making and the need not to unduly fetter the exercise of statutory discretion."
+    }
+  ]
+}

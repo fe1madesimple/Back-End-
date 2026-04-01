@@ -1,0 +1,131 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": "ContractLaw_ElevenLabs_Module01_Lesson01.txt",
+  "module_number": 1,
+  "module_title": "Formation of a Contract",
+  "lesson_number": 2,
+  "lesson_title": "Acceptance",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following correctly states the general rule for when acceptance takes effect?",
+      "options": {
+        "A": "Acceptance takes effect when the offeree forms a mental intention to accept",
+        "B": "Acceptance takes effect when it is communicated to and received by the offeror",
+        "C": "Acceptance takes effect when the offeree posts or dispatches the acceptance",
+        "D": "Acceptance takes effect when the offeror reads the acceptance"
+      },
+      "correct_answer": "B",
+      "explanation": "The general rule is that acceptance must be communicated to the offeror and takes effect upon receipt: Entores Ltd v Miles Far East Corp [1955]. The offeree bears the risk of non-communication. The postal rule is a well-established exception to this general principle."
+    },
+    {
+      "id": 2,
+      "question": "The postal rule, established in Adams v Lindsell [1818], provides that:",
+      "options": {
+        "A": "Acceptance by post is only valid if the offeror specified that post was an acceptable means of communication",
+        "B": "Acceptance is complete and effective from the moment the letter of acceptance is properly posted",
+        "C": "Acceptance takes effect when the posted acceptance is received and read by the offeror",
+        "D": "Acceptance by post is never valid for contracts involving land"
+      },
+      "correct_answer": "B",
+      "explanation": "In Adams v Lindsell [1818], the court established that where post is the contemplated or reasonable means of communication, acceptance takes effect at the moment of posting — even if the letter is delayed, lost, or never received. This places the risk of postal delay on the offeror, who chose (or permitted) that mode of communication."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is NOT a condition for the postal rule to apply?",
+      "options": {
+        "A": "Post must be the contemplated or reasonable means of communication",
+        "B": "The letter of acceptance must be properly addressed and stamped",
+        "C": "The offeror must have already received the offer in writing",
+        "D": "The letter must be placed in the control of the postal system"
+      },
+      "correct_answer": "C",
+      "explanation": "The postal rule requires that post be a contemplated or reasonable mode of communication and that the letter be properly posted (correctly addressed, stamped, and placed in the postal system). There is no requirement that the offeror have previously received anything in writing — the rule applies to the communication of acceptance, not the offer."
+    },
+    {
+      "id": 4,
+      "question": "In Entores Ltd v Miles Far East Corp [1955], Denning LJ held that acceptance sent by telex (an instantaneous communication) took effect:",
+      "options": {
+        "A": "When the message was transmitted from the sender's machine",
+        "B": "When the message was received and printed at the recipient's office",
+        "C": "When the postal rule was applied by analogy to electronic communications",
+        "D": "When the recipient acknowledged receipt of the telex"
+      },
+      "correct_answer": "B",
+      "explanation": "In Entores, the Court of Appeal held that for instantaneous modes of communication (such as telex, telephone, and later fax and email), the postal rule does not apply. Acceptance takes effect when it is received at the offeror's location — not when sent. Denning LJ used the analogy of a person shouting across a river: if the words are drowned out, there is no communication."
+    },
+    {
+      "id": 5,
+      "question": "Silence cannot generally constitute acceptance because:",
+      "options": {
+        "A": "Silence is always ambiguous and impossible to interpret as agreement",
+        "B": "Imposing contractual obligations on the basis of inaction would violate the offeree's freedom not to contract",
+        "C": "The law requires all contracts to be made in writing",
+        "D": "Silence constitutes a counter-offer in all circumstances"
+      },
+      "correct_answer": "B",
+      "explanation": "The rule that silence cannot constitute acceptance was confirmed in Felthouse v Bindley [1862]. An offeror cannot impose a contract on an offeree by stipulating that silence will amount to acceptance. To allow this would undermine the offeree's autonomy and freedom not to contract. Acceptance requires a positive act of communication (verbal, written, or by conduct)."
+    },
+    {
+      "id": 6,
+      "question": "In Felthouse v Bindley [1862], the uncle wrote to his nephew saying 'If I hear no more, I consider the horse mine at £30 15s.' The court held:",
+      "options": {
+        "A": "A contract was formed because the nephew had mentally decided to accept",
+        "B": "No contract was formed because silence did not constitute acceptance",
+        "C": "A contract was formed because the nephew had instructed the auctioneer not to sell the horse",
+        "D": "No contract was formed because the price was uncertain"
+      },
+      "correct_answer": "B",
+      "explanation": "In Felthouse v Bindley, the nephew had mentally accepted the uncle's offer and asked the auctioneer not to sell the horse, but had not communicated acceptance to the uncle. The court held that no contract existed. Acceptance must be communicated to the offeror — a mental decision to accept, unaccompanied by communication, is insufficient. The uncle could not impose a contract through silence."
+    },
+    {
+      "id": 7,
+      "question": "Acceptance must be unequivocal and mirror the terms of the offer. Which of the following statements is correct?",
+      "options": {
+        "A": "A conditional acceptance (subject to further terms) constitutes a valid acceptance",
+        "B": "A purported acceptance which varies the terms of the offer is a counter-offer, not an acceptance",
+        "C": "An acceptance which adds minor administrative terms is always a counter-offer",
+        "D": "Acceptance must use exactly the same words as the offer"
+      },
+      "correct_answer": "B",
+      "explanation": "The mirror image rule requires that acceptance must correspond exactly with the offer. A purported acceptance that introduces new or varied terms is a counter-offer, not an acceptance, and terminates the original offer (Hyde v Wrench [1840]). However, acceptance need not use the same words — any unambiguous assent to all the offer's terms suffices."
+    },
+    {
+      "id": 8,
+      "question": "Where an offeror prescribes a specific method of acceptance, which of the following is correct?",
+      "options": {
+        "A": "The offeree must comply strictly with the prescribed method or no contract is formed",
+        "B": "The offeree may use any equally or more expeditious method, unless the offeror has insisted exclusively on the prescribed method",
+        "C": "Any written method of acceptance will be equally valid regardless of what the offeror prescribed",
+        "D": "A prescribed method of acceptance can only be waived by the offeree, not the offeror"
+      },
+      "correct_answer": "B",
+      "explanation": "Where an offeror prescribes a mode of acceptance, this is generally for the offeror's benefit. An offeree may use an equally expeditious or more reliable method unless the offeror has expressly and exclusively insisted on only that method (Manchester Diocesan Council for Education v Commercial and General Investments [1970]). The test is whether a substantially equivalent method adequately protects the offeror's interests."
+    },
+    {
+      "id": 9,
+      "question": "Acceptance by conduct is possible in contract law. Which case best illustrates this principle?",
+      "options": {
+        "A": "Hyde v Wrench [1840]",
+        "B": "Carlill v Carbolic Smoke Ball Co [1893]",
+        "C": "Felthouse v Bindley [1862]",
+        "D": "Harvey v Facey [1893]"
+      },
+      "correct_answer": "B",
+      "explanation": "Carlill v Carbolic Smoke Ball Co [1893] is the classic illustration of acceptance by conduct. Mrs Carlill accepted the unilateral offer by performing the requested act (using the smoke ball as directed). In unilateral contracts, acceptance is complete upon full performance of the requested act; no separate communication is required."
+    },
+    {
+      "id": 10,
+      "question": "The postal rule applies to:",
+      "options": {
+        "A": "Email communications sent over the internet",
+        "B": "Telephone conversations",
+        "C": "Letters and telegrams sent by post where post is the contemplated means of communication",
+        "D": "Telex and fax transmissions"
+      },
+      "correct_answer": "C",
+      "explanation": "The postal rule, established in Adams v Lindsell [1818] and confirmed in Household Fire Insurance v Grant [1879], applies to postal communications (letters and telegrams sent via post) where post is the contemplated or reasonable means of acceptance. It does not apply to instantaneous communications — Entores v Miles Far East Corp [1955] confirmed telex is outside the rule, and the same principle applies to fax and email."
+    }
+  ]
+}

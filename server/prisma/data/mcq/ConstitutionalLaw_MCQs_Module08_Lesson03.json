@@ -1,0 +1,131 @@
+{
+  "subject": "Constitutional Law",
+  "el_script_ref": "ConstitutionalLaw_ElevenLabs_Module08_Lesson03.txt",
+  "module_number": 8,
+  "module_title": "International Relations and European Union Law",
+  "lesson_number": 3,
+  "lesson_title": "Primacy of EU Law in the Irish Legal Order",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CON_M08_L03_Q01",
+      "question": "The principle of the primacy (supremacy) of EU law was established by the Court of Justice of the European Union (CJEU) in which foundational case?",
+      "options": {
+        "A": "Van Gend en Loos v Nederlandse Administratie der Belastingen (Case 26/62, 1963)",
+        "B": "Costa v ENEL (Case 6/64, 1964)",
+        "C": "Francovich v Italy (Cases C-6/90 and C-9/90, 1991)",
+        "D": "Simmenthal SpA v Commission (Case 92/78, 1979)"
+      },
+      "correct_answer": "B",
+      "explanation": "The principle of EU law primacy was established by the CJEU in Costa v ENEL (Case 6/64, 1964). The Court held that by creating a Community of unlimited duration, with its own institutions, personality, legal capacity, and capacity of representation on the international plane, and real powers stemming from a limitation of sovereignty or a transfer of powers from the states to the Community, member states had limited their sovereign rights and created a body of law binding on both states and individuals. EU law could not be overridden by any domestic legal rule — primacy was presented as an inherent characteristic of the EU legal order."
+    },
+    {
+      "id": "CON_M08_L03_Q02",
+      "question": "The principle of direct effect — that provisions of EU law may confer rights on individuals enforceable in national courts — was established in:",
+      "options": {
+        "A": "Costa v ENEL (Case 6/64, 1964)",
+        "B": "Van Gend en Loos v Nederlandse Administratie der Belastingen (Case 26/62, 1963)",
+        "C": "Factortame Ltd v Secretary of State for Transport [1991] (UK courts)",
+        "D": "Marleasing SA v La Comercial Internacional de Alimentación SA (Case C-106/89, 1990)"
+      },
+      "correct_answer": "B",
+      "explanation": "Van Gend en Loos (Case 26/62, 1963) established the principle of direct effect: EU Treaty provisions (and subsequently regulations, directives, and decisions in various circumstances) may confer rights directly on individuals that national courts must protect. The CJEU held that the EEC Treaty created a new legal order in which member states had limited their sovereign rights, and whose subjects included not only the member states but also their nationals. This created enforceable individual rights — a revolutionary development at the time, making EU law a system accessible to individuals in national courts."
+    },
+    {
+      "id": "CON_M08_L03_Q03",
+      "question": "In Simmenthal SpA (Case 106/77, 1978), the CJEU strengthened the primacy doctrine by holding that a national court must:",
+      "options": {
+        "A": "Refer any conflict between EU law and national law to the national constitutional court for resolution before applying EU law",
+        "B": "Set aside any provision of national law — including a subsequent national law — that conflicts with EU law, without waiting for the national law to be repealed or set aside by legislative or other constitutional means",
+        "C": "Apply national law first and give EU law only interpretive weight, not primacy",
+        "D": "Suspend the case until the legislature can amend the conflicting national legislation"
+      },
+      "correct_answer": "B",
+      "explanation": "Amministrazione delle Finanze dello Stato v Simmenthal SpA (Case 106/77, 1978) clarified the implications of primacy at the level of the national court: when faced with a conflict between an EU rule and a national rule, the national court must immediately apply EU law — it cannot wait for the national legislature to repeal the conflicting rule. The effect is automatic displacement of inconsistent national law; EU law prevails even over subsequently enacted national legislation. This 'immediate' and 'automatic' primacy requires national courts to be the enforcers of EU law supremacy in real-time, without referral to constitutional courts or legislatures."
+    },
+    {
+      "id": "CON_M08_L03_Q04",
+      "question": "In the Irish constitutional framework, the primacy of EU law over inconsistent domestic legislation (enacted by the Oireachtas) is grounded in:",
+      "options": {
+        "A": "The inherent primacy of EU law over all domestic legal systems",
+        "B": "Art. 29.4.6° of the Irish Constitution, which provides that no provision of the Constitution invalidates laws, acts, or measures necessitated by EU membership — this constitutional provision itself authorises EU law primacy within the Irish legal order",
+        "C": "The Oireachtas's decision in the European Communities Act 1972 to accept EU law supremacy",
+        "D": "Art. 29.3 — Ireland's acceptance of international law principles including EU law"
+      },
+      "correct_answer": "B",
+      "explanation": "From a purely Irish constitutional perspective, the primacy of EU law is grounded not in EU law's own self-declared supremacy (as the CJEU would have it) but in Art. 29.4.6° of the Irish Constitution. The Irish constitutional tradition is that the Constitution is supreme — EU law primacy is accepted because the Irish Constitution itself provides for it through Art. 29.4.6°. This is the 'constitutional monism' position: EU law has primacy in Ireland because the Irish Constitution authorises it, not because EU law has inherent supremacy over all national law systems."
+    },
+    {
+      "id": "CON_M08_L03_Q05",
+      "question": "The doctrine of indirect effect (the Marleasing principle) requires that national courts:",
+      "options": {
+        "A": "Apply EU directives directly against private parties even before the implementation deadline has passed",
+        "B": "Interpret national law — so far as possible — in the light of the wording and purpose of an EU directive, whether or not the directive has been properly implemented",
+        "C": "Refuse to apply national law that conflicts with an unimplemented directive in all circumstances",
+        "D": "Refer all questions of national law compatibility with directives to the CJEU by way of preliminary reference"
+      },
+      "correct_answer": "B",
+      "explanation": "The indirect effect doctrine (Marleasing SA v La Comercial Internacional, Case C-106/89, 1990) requires national courts to interpret national legislation — whether enacted before or after the directive — as far as possible in conformity with the directive's wording and purpose. This applies even between private parties (horizontal situations) where direct effect may not be available. Indirect effect is a powerful tool that extends EU law's reach into private disputes: national courts are obligated to construe national statutes conformably with directives, effectively giving directives practical force even in the absence of full direct effect."
+    },
+    {
+      "id": "CON_M08_L03_Q06",
+      "question": "EU Regulations are distinguished from EU Directives in that Regulations:",
+      "options": {
+        "A": "Require Oireachtas implementation to take effect in Irish law",
+        "B": "Are directly applicable — they automatically become part of the domestic law of all member states without the need for national implementing legislation",
+        "C": "Apply only to EU institutions and do not create rights for individuals in member states",
+        "D": "Are inferior in status to EU Directives"
+      },
+      "correct_answer": "B",
+      "explanation": "Under Art. 288 TFEU, an EU Regulation 'shall be binding in its entirety and directly applicable in all Member States.' Regulations do not require domestic implementing legislation — they are automatically part of Irish domestic law from the moment they come into force. Member states cannot 'implement' regulations in the sense of making national law — they simply apply. This contrasts with Directives, which are binding as to the result to be achieved but leave member states a choice of form and method of implementation, typically requiring domestic implementing legislation (or statutory instrument in Ireland under the European Communities Act 1972)."
+    },
+    {
+      "id": "CON_M08_L03_Q07",
+      "question": "In Marshall v Southampton and South West Hampshire Area Health Authority (Case 152/84, 1986), the CJEU held that EU directives can have direct effect only vertically (against the State), not horizontally (between private parties). The rationale was:",
+      "options": {
+        "A": "That the CJEU has no jurisdiction over private disputes",
+        "B": "That a member state that has failed to implement a directive cannot rely on that failure as against an individual; but it would be wrong to hold a private party — who was not responsible for implementation failure — bound by a directive they had no part in shaping",
+        "C": "That directives are intended only to harmonise national laws, not to create individual rights",
+        "D": "That the EU Charter of Fundamental Rights prohibits horizontal direct effect of directives"
+      },
+      "correct_answer": "B",
+      "explanation": "Marshall (Case 152/84, 1986) confirmed the vertical-only direct effect of directives. The CJEU's reasoning was that a member state that fails to implement a directive should not benefit from its own failure to act — so individuals can invoke the directive against the state (vertical direct effect). However, it would be inequitable to impose obligations on private parties (horizontal direct effect) based on a directive they had no role in implementing or failing to implement. This distinction between vertical (against state) and horizontal (against private parties) direct effect remains a fundamental limitation on the reach of directives in EU law."
+    },
+    {
+      "id": "CON_M08_L03_Q08",
+      "question": "State liability in damages for failure to implement EU directives (Francovich liability) arises where:",
+      "options": {
+        "A": "Any EU directive has not been implemented within the implementation period",
+        "B": "Three conditions are met: (1) the rule of EU law breached must be intended to confer rights on individuals; (2) the breach must be sufficiently serious; and (3) there must be a direct causal link between the breach and the damage suffered by the individual",
+        "C": "A member state fails to implement any EU measure, regardless of the individual's actual loss",
+        "D": "The CJEU has first issued a ruling under Art. 258 TFEU finding the member state in breach"
+      },
+      "correct_answer": "B",
+      "explanation": "State liability in EU law was established in Francovich v Italy (Cases C-6/90 and C-9/90, 1991) and refined in Brasserie du Pêcheur / Factortame III (Cases C-46/93 and C-48/93, 1996). The conditions for Francovich liability are: (1) the EU rule infringed must intend to confer rights on individuals; (2) the breach must be sufficiently serious (particularly where the state has no or minimal discretion); and (3) there must be a direct causal link between the breach of obligation and the loss suffered by the individual. This principle has been applied in Ireland to allow individuals to claim damages against the State for failure to implement directives."
+    },
+    {
+      "id": "CON_M08_L03_Q09",
+      "question": "Ireland has failed to implement an EU Directive within the required period. A private individual suffers loss as a result. Which remedy can they pursue in the Irish courts?",
+      "options": {
+        "A": "They may invoke the directive directly against the Irish State (vertical direct effect, where conditions are met) and/or claim damages from the State under Francovich liability",
+        "B": "They must first wait for the European Commission to bring Art. 258 TFEU proceedings against Ireland before they can seek any remedy",
+        "C": "They can only seek a declaration from the Irish High Court that the Directive has been breached — no damages are available in Irish law",
+        "D": "No domestic remedy is available — the individual must bring their claim before the CJEU directly"
+      },
+      "correct_answer": "A",
+      "explanation": "Where Ireland fails to implement an EU Directive within the deadline: (1) the individual may rely on the directive directly against the Irish State in Irish courts (vertical direct effect, provided the directive is sufficiently clear, precise, and unconditional — Marshall conditions); and (2) where direct effect is not available or does not fully compensate, the individual may bring a Francovich state liability claim in damages, provided the three Francovich conditions are met. Both remedies are pursued in Irish courts — the CJEU does not hear individual claims for damages, though it may be consulted on EU law questions by way of preliminary reference under Art. 267 TFEU."
+    },
+    {
+      "id": "CON_M08_L03_Q010",
+      "question": "The preliminary reference procedure (Art. 267 TFEU) allows national courts to refer questions of EU law to the CJEU. An Irish court is OBLIGED (not merely permitted) to make a preliminary reference where:",
+      "options": {
+        "A": "Any question of EU law arises in proceedings before it",
+        "B": "A question of EU law arises in a case before a court or tribunal against whose decisions there is no judicial remedy under national law (i.e., the Irish Supreme Court in most cases) — lower courts may refer but are not obliged to do so",
+        "C": "The DPP makes a formal application for a reference in criminal proceedings",
+        "D": "One of the parties specifically requests a reference to the CJEU"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 267(3) TFEU imposes a mandatory obligation to refer on courts 'against whose decisions there is no judicial remedy under national law' — the Supreme Court of Ireland and, in specific matters, the Court of Appeal. Lower courts (High Court, Circuit Court, District Court) may make a discretionary reference under Art. 267(2) if they consider a CJEU ruling necessary to enable them to give judgment. The mandatory obligation on the Supreme Court can be avoided only in defined circumstances: if the question is irrelevant, if it has already been settled by the CJEU (acte éclairé), or if the correct application of EU law is so obvious as to leave no room for reasonable doubt (acte clair — CILFIT doctrine)."
+    }
+  ]
+}

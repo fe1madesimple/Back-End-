@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_10_Lesson_04_Legal_Right_Share_Section_111.txt",
+  "module_number": 10,
+  "module_title": "Succession Law",
+  "lesson_number": 4,
+  "lesson_title": "The Legal Right Share: Section 111 of the Succession Act 1965",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M10_L04_Q01",
+      "question": "Under section 111 of the Succession Act 1965, what is the surviving spouse's legal right share where the testator leaves a spouse and children?",
+      "options": {
+        "A": "One half of the estate",
+        "B": "One third of the estate",
+        "C": "Two thirds of the estate",
+        "D": "One quarter of the estate"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 111 of the Succession Act 1965, where a testator leaves a spouse and children, the surviving spouse's legal right share is one third of the estate. Where the testator leaves a spouse and no children, the legal right share is one half. These fractions must be memorised for the FE-1 examination as they are the foundation of any legal right share calculation."
+    },
+    {
+      "id": "PRL_M10_L04_Q02",
+      "question": "Under section 111 of the Succession Act 1965, what is the surviving spouse's legal right share where the testator leaves a spouse and NO children?",
+      "options": {
+        "A": "One third of the estate",
+        "B": "One quarter of the estate",
+        "C": "Two thirds of the estate",
+        "D": "One half of the estate"
+      },
+      "correct_answer": "D",
+      "explanation": "Under section 111 of the Succession Act 1965, where a testator leaves a spouse and no children, the surviving spouse's legal right share is one half of the estate. This higher fraction reflects the fact that without children, the spouse has no competing family claims from the testator's direct descendants. The fraction drops to one third where children are also left."
+    },
+    {
+      "id": "PRL_M10_L04_Q03",
+      "question": "The legal right share under section 111 of the Succession Act 1965 is calculated by reference to which part of the estate?",
+      "options": {
+        "A": "The gross estate including debts and liabilities",
+        "B": "The net estate — after debts, liabilities, and the costs of administration have been discharged",
+        "C": "Only the real property in the estate, excluding personal property",
+        "D": "The estate as valued at the date the will was executed, not the date of death"
+      },
+      "correct_answer": "B",
+      "explanation": "The legal right share under section 111 is calculated by reference to the net estate — the estate after debts and liabilities have been paid and the costs of administration have been discharged. It applies to all assets in the estate — both real and personal property. Calculating the net estate before applying the fraction is the first step in any legal right share calculation."
+    },
+    {
+      "id": "PRL_M10_L04_Q04",
+      "question": "In C v C, what did the Supreme Court confirm about the nature of the legal right share under section 111?",
+      "options": {
+        "A": "The legal right share is a discretionary remedy that the court may or may not award depending on the circumstances",
+        "B": "The legal right share is an absolute right — once elected, the spouse is entitled to the specified fraction without qualification",
+        "C": "The legal right share can be reduced by the court if the testator had good reasons for making reduced provision",
+        "D": "The legal right share applies only to the family home and does not extend to other assets"
+      },
+      "correct_answer": "B",
+      "explanation": "In C v C, the Supreme Court confirmed that the legal right share under section 111 of the Succession Act 1965 is an absolute right, not a discretionary one. Once the spouse elects to take the legal right share, they are entitled to the specified fraction without qualification. The testator cannot impose conditions on the legal right share — it is not subject to life interest trusts or contingencies."
+    },
+    {
+      "id": "PRL_M10_L04_Q05",
+      "question": "Under section 115 of the Succession Act 1965, who must notify the surviving spouse of their right to elect, and within what period must this notification be given?",
+      "options": {
+        "A": "The court must notify the spouse within three months of the testator's death",
+        "B": "The personal representative must notify the spouse within six months of the grant of probate or letters of administration with will annexed",
+        "C": "The testator's solicitor must notify the spouse within one year of the testator's death",
+        "D": "The Revenue Commissioners must notify the spouse within twelve months of the grant of probate"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 115 of the Succession Act 1965, the personal representative must notify the surviving spouse of their right to elect within six months of the grant of probate or letters of administration with will annexed. The spouse must then make their election within six months of receiving such notification. If the spouse does not elect within that period, they are presumed to have accepted the provision in the will."
+    },
+    {
+      "id": "PRL_M10_L04_Q06",
+      "question": "What happens if the surviving spouse fails to make an election within the time limit set out in section 115 of the Succession Act 1965?",
+      "options": {
+        "A": "The spouse automatically receives both the gift in the will and the legal right share",
+        "B": "The spouse is presumed to have accepted the provision in the will and cannot later seek the legal right share",
+        "C": "The personal representative may extend the time limit at their discretion",
+        "D": "The legal right share is forfeited and passes to the residuary beneficiaries"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 115 of the Succession Act 1965, if the surviving spouse does not make their election within the period after notification, they are presumed to have accepted the provision in the will. They cannot thereafter seek to claim the legal right share — the limitation period operates strictly. This makes prompt notification by the personal representative and timely election by the spouse critically important."
+    },
+    {
+      "id": "PRL_M10_L04_Q07",
+      "question": "Under section 114 of the Succession Act 1965, where a testator has left property to the spouse in the will, what is the presumption regarding the relationship between the gift and the legal right share?",
+      "options": {
+        "A": "The gift is presumed to be additional to the legal right share unless the will states otherwise",
+        "B": "The gift is presumed to be in satisfaction of the legal right share, not in addition to it",
+        "C": "The gift replaces the legal right share only if the gift is of equal or greater value",
+        "D": "There is no presumption — the court determines in each case whether the gift is additional or in satisfaction"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 114 of the Succession Act 1965 provides that where the testator makes a gift to the spouse in the will, there is a presumption that the gift is in satisfaction of the legal right share, not in addition to it. The surviving spouse must therefore choose — they cannot have both the testamentary gift and the legal right share unless the will expressly provides for both. This election is the practical application of section 115."
+    },
+    {
+      "id": "PRL_M10_L04_Q08",
+      "question": "Under section 113 of the Succession Act 1965, what may a testator do in order to structure the estate so that specific assets satisfy the legal right share?",
+      "options": {
+        "A": "A testator may exclude the legal right share entirely by express provision in the will",
+        "B": "A testator may make provision in the will directing that the spouse's legal right share shall be satisfied out of specific assets",
+        "C": "A testator may transfer assets during their lifetime to reduce the estate and thus reduce the legal right share",
+        "D": "A testator may apply to court during their lifetime to fix a nominal legal right share for the surviving spouse"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 113 of the Succession Act 1965 allows a testator to make provision in their will directing that the spouse's legal right share shall be satisfied out of specific assets — for example, directing that the legal right share is satisfied by the bequest of the family home. This allows the testator to structure the estate so that other assets pass to their children. However, the spouse must consent if the assets earmarked for the legal right share are worth less than the fractional entitlement."
+    },
+    {
+      "id": "PRL_M10_L04_Q09",
+      "question": "The legal right share under section 111 of the Succession Act 1965 has been extended to which other category of persons by subsequent legislation?",
+      "options": {
+        "A": "Unmarried cohabitants who satisfy the qualifying threshold under the Civil Partnership Act 2010",
+        "B": "Civil partners in registered civil partnerships under section 109 of the Civil Partnership and Certain Rights and Obligations of Cohabitants Act 2010",
+        "C": "Children of the deceased automatically receive a legal right share equivalent to the spouse's share",
+        "D": "Dependent relatives who lived with the deceased for five years or more"
+      },
+      "correct_answer": "B",
+      "explanation": "The legal right share under the Succession Act 1965 has been extended to civil partners under section 109 of the Civil Partnership and Certain Rights and Obligations of Cohabitants Act 2010. Civil partners in registered civil partnerships are entitled to an equivalent right to the legal right share as spouses. Cohabitants do not have an equivalent right — their protection under the 2010 Act operates differently, through Part 15 redress provisions."
+    },
+    {
+      "id": "PRL_M10_L04_Q10",
+      "question": "A testator leaves a net estate of €900,000, a surviving spouse, and three children. What is the legal right share of the surviving spouse?",
+      "options": {
+        "A": "€450,000 (one half)",
+        "B": "€300,000 (one third)",
+        "C": "€225,000 (one quarter)",
+        "D": "€600,000 (two thirds)"
+      },
+      "correct_answer": "B",
+      "explanation": "Where the testator leaves a spouse and children, the surviving spouse's legal right share under section 111 of the Succession Act 1965 is one third of the net estate. One third of €900,000 is €300,000. The three children together would share the remaining two thirds (€600,000) if there were no other provisions in the will — though the children have no automatic legal right share equivalent to the spouse's entitlement."
+    }
+  ]
+}

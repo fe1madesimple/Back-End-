@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_07_Lesson_02_Mortgagees_Remedies_on_Default.txt",
+  "module_number": 7,
+  "module_title": "Mortgages",
+  "lesson_number": 2,
+  "lesson_title": "Mortgagee's Remedies on Default",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M07_L02_Q01",
+      "question": "Which of the following correctly lists the four primary remedies available to a mortgagee on default under Irish law?",
+      "options": {
+        "A": "Injunction, specific performance, declaration, and damages",
+        "B": "Action on the personal covenant, power of sale, appointment of a receiver, and application for possession",
+        "C": "Registration of judgment mortgage, charging order, appointment of examiner, and distress",
+        "D": "Foreclosure, possession, nomination of trustee in bankruptcy, and attachment"
+      },
+      "correct_answer": "B",
+      "explanation": "The four primary remedies available to a mortgagee on default are: (1) an action on the personal covenant; (2) the power of sale; (3) the appointment of a receiver; and (4) an application for possession and order for sale. Each has specific trigger conditions and each is subject to distinct equitable and statutory controls under the LCLRA 2009."
+    },
+    {
+      "id": "PRL_M07_L02_Q02",
+      "question": "Under section 100 of the Land and Conveyancing Law Reform Act 2009, which of the following is NOT one of the three trigger conditions for the power of sale to become exercisable?",
+      "options": {
+        "A": "A notice requiring payment has been served and not complied with for three months",
+        "B": "Interest is in arrears for two months",
+        "C": "The mortgagor has failed to maintain buildings insurance on the property",
+        "D": "The mortgagor is in breach of some other obligation under the mortgage deed"
+      },
+      "correct_answer": "C",
+      "explanation": "Under section 100 of the LCLRA 2009, the power of sale becomes exercisable when one of three trigger conditions is met: (1) a notice requiring payment has been served and not complied with for three months; (2) interest is in arrears for two months; or (3) the mortgagor is in breach of some other obligation under the mortgage deed. Failure to maintain insurance may constitute a breach of obligation under the deed but is not itself one of the three statutory triggers."
+    },
+    {
+      "id": "PRL_M07_L02_Q03",
+      "question": "In Holohan v Friends Provident, what duty did the Irish court confirm that a mortgagee owes to the mortgagor when exercising the power of sale?",
+      "options": {
+        "A": "A duty to obtain the highest possible price obtainable on the open market regardless of time",
+        "B": "A duty to take reasonable care to obtain the best price reasonably obtainable",
+        "C": "A duty to offer the property to the mortgagor first at the open market value",
+        "D": "A duty to obtain court approval before proceeding with any sale"
+      },
+      "correct_answer": "B",
+      "explanation": "In Holohan v Friends Provident, the Irish court confirmed that when exercising the power of sale, a mortgagee owes a duty to take reasonable care to obtain the best price reasonably obtainable — often described as the duty to obtain a proper price. The mortgagee is not required to wait indefinitely for the best market conditions, but cannot negligently accept an inadequate price."
+    },
+    {
+      "id": "PRL_M07_L02_Q04",
+      "question": "In Dooney v Bank of Ireland [2016], what did the court confirm about the mortgagee's right to choose the timing of a sale under the power of sale?",
+      "options": {
+        "A": "The mortgagee must wait for peak market conditions before exercising the power of sale",
+        "B": "The mortgagee may choose the timing of sale and need not wait for the best market conditions, but cannot negligently accept an inadequate price",
+        "C": "The mortgagee must sell within six months of the power of sale becoming exercisable",
+        "D": "The mortgagee must obtain a court order specifying the minimum acceptable price before proceeding"
+      },
+      "correct_answer": "B",
+      "explanation": "In Dooney v Bank of Ireland [2016], the court confirmed that while the mortgagee may choose the timing of sale and need not wait for the best market conditions, they cannot negligently accept an inadequate price. This case reinforced the duty to obtain a proper price established in Holohan v Friends Provident and is the leading modern Irish authority on the mortgagee's duty when exercising the power of sale."
+    },
+    {
+      "id": "PRL_M07_L02_Q05",
+      "question": "Under section 108 of the Land and Conveyancing Law Reform Act 2009, when does the right to appoint a receiver arise?",
+      "options": {
+        "A": "Immediately on execution of the mortgage",
+        "B": "Once the mortgage money has become due",
+        "C": "Once the power of sale has arisen",
+        "D": "Only after possession proceedings have been commenced"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 108 of the LCLRA 2009 allows a mortgagee to appoint a receiver once the power of sale has arisen. The power of sale arises (as distinct from becoming exercisable) once the mortgage money has become due. The receiver collects rents and profits and applies them first to their own remuneration, then to mortgage interest, then to principal."
+    },
+    {
+      "id": "PRL_M07_L02_Q06",
+      "question": "Why is the appointment of a receiver particularly useful to a mortgagee in commercial mortgage contexts?",
+      "options": {
+        "A": "A receiver can override planning restrictions on the property",
+        "B": "A receiver is particularly useful where there is income-producing property and the mortgagee wishes to avoid the strict liability that comes with taking possession",
+        "C": "A receiver can sell the property without complying with the power of sale trigger conditions",
+        "D": "A receiver is required by law before a mortgagee can take possession of commercial property"
+      },
+      "correct_answer": "B",
+      "explanation": "The appointment of a receiver is particularly useful in commercial mortgage contexts where there is income-producing property. The receiver collects rents and profits and applies them to the mortgage. Critically, the receiver is deemed to be the agent of the mortgagor, which protects the mortgagee from liability for the receiver's acts and avoids the mortgagee becoming a mortgagee in possession with strict accounting obligations."
+    },
+    {
+      "id": "PRL_M07_L02_Q07",
+      "question": "Why is a receiver deemed to be the agent of the mortgagor, and why is this significant for the mortgagee?",
+      "options": {
+        "A": "It allows the receiver to bind the mortgagor to new mortgage terms without court approval",
+        "B": "It protects the mortgagee from liability for the receiver's acts",
+        "C": "It gives the receiver the right to renegotiate the mortgage on the mortgagor's behalf",
+        "D": "It allows the receiver to sell the property in the mortgagor's name without the mortgagor's knowledge"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 108 of the LCLRA 2009, a receiver appointed by a mortgagee is deemed to be the agent of the mortgagor. This is commercially significant because it protects the mortgagee from liability for the receiver's acts — the mortgagor bears the risk of the receiver's conduct. This makes the appointment of a receiver commercially attractive compared with taking possession directly."
+    },
+    {
+      "id": "PRL_M07_L02_Q08",
+      "question": "What obligation does a mortgagee take on when they go into possession of mortgaged property?",
+      "options": {
+        "A": "The mortgagee in possession may collect all rents and retain them without accounting",
+        "B": "The mortgagee in possession must account strictly for all rents and profits received from the property",
+        "C": "The mortgagee in possession must immediately sell the property within three months",
+        "D": "The mortgagee in possession acquires an absolute right to the property after two years"
+      },
+      "correct_answer": "B",
+      "explanation": "Once a mortgagee takes possession, they become a mortgagee in possession and must account strictly for all rents and profits received from the property — including rents they could have obtained if they had let the property. This strict liability makes possession a commercially unattractive option in many cases, and mortgagees typically prefer to exercise the power of sale or appoint a receiver instead."
+    },
+    {
+      "id": "PRL_M07_L02_Q09",
+      "question": "In Start Mortgages v Gunn [2011], Dunne J identified a lacuna in the LCLRA 2009 relating to possession proceedings. What was the effect of this decision for post-2009 mortgagees?",
+      "options": {
+        "A": "Post-2009 mortgagees lost the right to seek possession of residential dwellings entirely",
+        "B": "Post-2009 chargees were initially left without a clear procedure to apply for an order for possession of a dwelling",
+        "C": "Post-2009 mortgagees were required to obtain the mortgagor's written consent before commencing possession proceedings",
+        "D": "Post-2009 mortgagees were required to sell rather than take possession in all cases"
+      },
+      "correct_answer": "B",
+      "explanation": "In Start Mortgages v Gunn [2011], Dunne J held that while section 97 LCLRA 2009 required a court order before a chargee could take possession of a dwelling, the LCLRA 2009 itself provided no procedure by which a post-2009 chargee could apply for such an order. This lacuna left lenders under post-2009 charges without a clear mechanism to seek possession, and was subsequently addressed by the Land and Conveyancing Law Reform Act 2013."
+    },
+    {
+      "id": "PRL_M07_L02_Q10",
+      "question": "What does the Land and Conveyancing Law Reform Act 2013 require a mortgagee to demonstrate before commencing possession proceedings in relation to a principal private residence?",
+      "options": {
+        "A": "That the property is worth less than the outstanding mortgage balance",
+        "B": "That the mortgagee has engaged with the Mortgage Arrears Resolution Process under the Central Bank's Code of Conduct on Mortgage Arrears",
+        "C": "That the mortgagor has failed to maintain the property in good repair",
+        "D": "That at least twelve months of mortgage arrears have accumulated"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the Land and Conveyancing Law Reform Act 2013, before commencing possession proceedings in relation to a principal private residence, the mortgagee must have engaged with the Mortgage Arrears Resolution Process under the Central Bank's Code of Conduct on Mortgage Arrears (CCMA). As confirmed in Stepstone Mortgage Funding v Fitzell [2012], the court may adjourn or refuse possession where MARP compliance has not been demonstrated."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module03_Lesson01.txt",
+  "module_number": 3,
+  "module_title": "The Standard of Care",
+  "lesson_number": 1,
+  "lesson_title": "The Standard of Care: The Reasonable Person, Calibrating Factors, and Modified Standards",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M03_L01_Q01",
+      "question": "Once a duty of care has been established, what is the standard against which the defendant's conduct is measured in Irish negligence law?",
+      "options": {
+        "A": "The objective reasonable person standard — what a reasonable person would have done in the same circumstances",
+        "B": "The subjective standard — what this particular defendant genuinely believed was reasonable",
+        "C": "The professional standard — what a competent professional in the defendant's field would have done",
+        "D": "The statutory standard — whatever standard of conduct is prescribed by the relevant legislation"
+      },
+      "correct_answer": "A",
+      "explanation": "The standard of care in negligence is the objective reasonable person standard. It does not ask what this particular defendant believed was reasonable (that would be subjective), but rather what a reasonable person in the defendant's position would have done in the same circumstances. This standard is confirmed in McComiskey v McDermott [1974] and Blyth v Birmingham Waterworks Co [1856]."
+    },
+    {
+      "id": "TL_M03_L01_Q02",
+      "question": "In which case did Alderson B provide the classic formulation of negligence as the omission to do something a reasonable man would do, or doing something a prudent and reasonable man would not do?",
+      "options": {
+        "A": "Hall v Brooklands Auto Racing Club [1933]",
+        "B": "Blyth v Birmingham Waterworks Company [1856]",
+        "C": "Vaughan v Menlove [1837]",
+        "D": "Nettleship v Weston [1971]"
+      },
+      "correct_answer": "B",
+      "explanation": "Alderson B's formulation in Blyth v Birmingham Waterworks Company [1856] is the classic statement of the reasonable person standard: negligence is the omission to do something which a reasonable man, guided upon those considerations which ordinarily regulate the conduct of human affairs, would do — or doing something which a prudent and reasonable man would not do. This formulation has endured for nearly 170 years."
+    },
+    {
+      "id": "TL_M03_L01_Q03",
+      "question": "In Hall v Brooklands Auto Racing Club [1933], the reasonable person was described as:",
+      "options": {
+        "A": "A person of exceptional care and vigilance who anticipates all foreseeable risks before acting",
+        "B": "The reasonably experienced professional in the defendant's specific area of activity",
+        "C": "The man on the Clapham omnibus — an ordinary, prudent person of average intelligence and reasonable care",
+        "D": "The defendant themselves, applying their own personal standards of judgment and risk assessment"
+      },
+      "correct_answer": "C",
+      "explanation": "Hall v Brooklands Auto Racing Club [1933] introduced the famous description of the reasonable person as 'the man on the Clapham omnibus' — a fictional ordinary, prudent citizen of average intelligence and reasonable care. This is not a paragon of perfection nor a reckless fool, but an ordinary person exercising the degree of care that ordinary life requires."
+    },
+    {
+      "id": "TL_M03_L01_Q04",
+      "question": "Which Irish Supreme Court case is the leading Irish authority on the standard of care in negligence?",
+      "options": {
+        "A": "Dunne v National Maternity Hospital [1989] — articulating the GAP test for all negligence",
+        "B": "Glencar Explorations plc v Mayo County Council [2002] — deriving the standard from the Glencar test",
+        "C": "Breslin v Corcoran [2003] — establishing the standard of the reasonable careful bystander",
+        "D": "McComiskey v McDermott [1974] — confirming the objective standard of the reasonable and careful person in the same circumstances"
+      },
+      "correct_answer": "D",
+      "explanation": "McComiskey v McDermott [1974] IR 75 is the leading Irish Supreme Court authority on the standard of care. Walsh J confirmed that the standard is what a reasonable and careful person would have done in the same circumstances — an objective, not a subjective, test. FE-1 candidates must cite McComiskey as the primary Irish authority on standard of care."
+    },
+    {
+      "id": "TL_M03_L01_Q05",
+      "question": "Why is the reasonable person standard in negligence described as 'objective'?",
+      "options": {
+        "A": "Because it asks what a reasonable person would have done, without regard to the particular defendant's beliefs, capacity, or personal characteristics",
+        "B": "Because it is determined by reference to objective statutory criteria rather than by the development of case law",
+        "C": "Because it can be measured by expert witnesses who provide objective assessments in each individual case",
+        "D": "Because it applies with equal rigour to all defendants regardless of the specific nature of their activity"
+      },
+      "correct_answer": "A",
+      "explanation": "The reasonable person standard is objective because it ignores the defendant's subjective state of mind, personal capabilities, or individual characteristics. The question is not what this particular defendant thought was reasonable, but what an external, objective reasonable person would have done. This prevents defendants from escaping liability by pointing to personal shortcomings."
+    },
+    {
+      "id": "TL_M03_L01_Q06",
+      "question": "In Nettleship v Weston [1971], to what standard was a learner driver held?",
+      "options": {
+        "A": "The standard of the careful beginner, taking into account the learner's known limitations and inexperience",
+        "B": "The standard of the reasonably competent, experienced driver",
+        "C": "A subjective standard based on the learner's personal capabilities and the instructor's own assessment",
+        "D": "A reduced standard, given that the passenger had knowingly accepted the risk of travelling with a learner"
+      },
+      "correct_answer": "B",
+      "explanation": "In Nettleship v Weston [1971] QB 691, the English Court of Appeal held that a learner driver is held to the same standard as the reasonably competent experienced driver. The policy rationale is that other road users are entitled to expect the standard the activity demands, regardless of the individual experience of the person performing it. Inexperience does not lower the objective standard."
+    },
+    {
+      "id": "TL_M03_L01_Q07",
+      "question": "In Vaughan v Menlove [1837], the defendant had below-average intelligence and argued this should lower the standard against which his conduct was judged. What did the court hold?",
+      "options": {
+        "A": "The court accepted that the standard should be individually adjusted for persons with below-average intelligence",
+        "B": "The court held that subjective incapacity provides a partial defence, reducing damages proportionately",
+        "C": "The court refused to accept limited personal ability as a defence and applied the uniform objective reasonable person standard",
+        "D": "The court appointed an expert to assess what was reasonable for a person of the defendant's known level of ability"
+      },
+      "correct_answer": "C",
+      "explanation": "Vaughan v Menlove [1837] 3 Bing NC 468 is a foundational authority for the objective nature of the standard. The defendant set his haystack on fire through carelessness and argued that he had acted to the best of his own limited ability. The court rejected this argument: the law sets a uniform, objective standard, and personal intellectual limitations are no defence to a negligence claim."
+    },
+    {
+      "id": "TL_M03_L01_Q08",
+      "question": "In Bolton v Stone [1951], the House of Lords refused to find negligence when a cricket ball struck a pedestrian outside the ground. What was the decisive factor?",
+      "options": {
+        "A": "A ball had been hit out of the ground 20 times in the past 30 years, making additional precautions clearly mandatory",
+        "B": "The probability of harm was irrelevant because the pedestrian's injury was severe when it occurred",
+        "C": "Any probability of harm, however small, automatically requires precautions to be taken",
+        "D": "The probability of harm was so low — a ball had only been hit out of the ground six times in thirty years — that no additional precautions were required"
+      },
+      "correct_answer": "D",
+      "explanation": "Bolton v Stone [1951] AC 850 established that probability of harm is a key factor in determining breach. Where the probability is extremely low — in Bolton, the ball had escaped the ground only six times in 30 years — the reasonable person is not required to take further precautions. Negligence is not established merely because harm is theoretically conceivable."
+    },
+    {
+      "id": "TL_M03_L01_Q09",
+      "question": "In Paris v Stepney Borough Council [1951], the House of Lords found the employer negligent for failing to provide protective goggles despite a relatively low probability of injury. Why?",
+      "options": {
+        "A": "Because the plaintiff was a one-eyed worker and the gravity of a potential eye injury — complete blindness — was so severe that a reasonable employer would have supplied goggles",
+        "B": "Because goggles were an inexpensive precaution that all employers were required to provide regardless of the nature of the risk",
+        "C": "Because a statutory duty under the Factories Act required all employers to supply protective equipment to one-eyed workers",
+        "D": "Because the probability of injury was actually higher for this plaintiff than for other workers in the same factory"
+      },
+      "correct_answer": "A",
+      "explanation": "Paris v Stepney Borough Council [1951] AC 367 established the importance of gravity of potential harm as a calibrating factor. The employer knew the plaintiff had only one eye. Even though the probability of an eye injury was not high, the potential consequence — total blindness — was catastrophic. The House of Lords held that the gravity of the potential harm required the precaution of goggles, even at relatively low probability."
+    },
+    {
+      "id": "TL_M03_L01_Q10",
+      "question": "What is the significance of the 'social utility' of the defendant's activity as a calibrating factor in the standard of care?",
+      "options": {
+        "A": "Activities with high social utility attract the highest standard of care and the most stringent liability",
+        "B": "Where an activity has significant social value, courts are slower to find a breach even where some level of risk is involved",
+        "C": "Social utility operates as a complete defence whenever the defendant was performing a public service at the time of the tort",
+        "D": "Social utility is only relevant in cases involving public authority defendants, not private defendants"
+      },
+      "correct_answer": "B",
+      "explanation": "The social utility of the defendant's activity is balanced against the risk created. Where a defendant is engaged in an activity of significant social value — emergency services, medical treatment, construction — the courts take into account that some risk is an inevitable concomitant of socially beneficial activity. This does not provide immunity, but it raises the threshold for finding a breach."
+    }
+  ]
+}

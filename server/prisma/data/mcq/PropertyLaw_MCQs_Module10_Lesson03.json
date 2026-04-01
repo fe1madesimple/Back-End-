@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_10_Lesson_03_Construction_of_Wills.txt",
+  "module_number": 10,
+  "module_title": "Succession Law",
+  "lesson_number": 3,
+  "lesson_title": "Construction of Wills",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M10_L03_Q01",
+      "question": "What is the governing principle in the construction of wills?",
+      "options": {
+        "A": "The literal meaning of the words used in the will, regardless of the testator's intentions",
+        "B": "The testator's intention, ascertained from the four corners of the will read as a whole",
+        "C": "The intention that is most beneficial to the testator's immediate family",
+        "D": "The meaning that gives effect to the greatest number of gifts in the will"
+      },
+      "correct_answer": "B",
+      "explanation": "The governing principle in the construction of wills is the testator's intention — what did the testator mean? The court gives effect to the testator's intention as gathered from the four corners of the will, read as a whole. Courts prefer a construction that gives effect to the will over one that defeats the testator's clear purpose."
+    },
+    {
+      "id": "PRL_M10_L03_Q02",
+      "question": "What is the 'armchair principle' in the construction of wills?",
+      "options": {
+        "A": "The principle that a judge should only sit in chambers (not open court) when construing a will",
+        "B": "The judge places themselves in the armchair of the testator, considers the circumstances known to the testator when the will was made, and asks what the words mean in that context",
+        "C": "The principle that a testator's stated wishes in an armchair interview with a solicitor override the written will",
+        "D": "The principle that wills should be construed in favour of the testator's family in all cases"
+      },
+      "correct_answer": "B",
+      "explanation": "The 'armchair principle' (or armchair rule) means that the judge places themselves in the armchair of the testator, considers the surrounding circumstances known to the testator at the time the will was made, and asks what the words of the will mean in that context. The principle allows the court to consider the testator's known circumstances — their family, their property, their relationships — to give the most sensible meaning to the language used."
+    },
+    {
+      "id": "PRL_M10_L03_Q03",
+      "question": "Under section 90 of the Succession Act 1965, when is extrinsic evidence admissible to assist in the construction of a will?",
+      "options": {
+        "A": "In all cases to supplement the written provisions of the will",
+        "B": "Where the language of the will is equivocal — reasonably capable of more than one meaning",
+        "C": "Only where all named beneficiaries consent to the admission of extrinsic evidence",
+        "D": "Only in cases where the will was made without the benefit of legal advice"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 90 of the Succession Act 1965, extrinsic evidence is admissible to assist in the construction of a will where the language is equivocal — that is, where it is reasonably capable of more than one meaning. Evidence of the testator's surrounding circumstances at the time of making the will is admissible. However, direct evidence of the testator's unexpressed subjective intention is not ordinarily admissible — the court cannot substitute what the testator meant to say for what they actually said."
+    },
+    {
+      "id": "PRL_M10_L03_Q04",
+      "question": "What does the latin rule 'falsa demonstratio non nocet' mean in the context of wills?",
+      "options": {
+        "A": "A false witness statement destroys the validity of the will",
+        "B": "A false or inaccurate description in a will does not destroy a gift where the substance of the gift is sufficiently clear",
+        "C": "A false declaration of testamentary capacity renders the will void",
+        "D": "A falsely dated will is treated as having been made on the date of first signature"
+      },
+      "correct_answer": "B",
+      "explanation": "The rule 'falsa demonstratio non nocet' means that a false description does not vitiate a gift where the substance of the gift is clear. For example, if a testator bequeaths 'my car, a blue Ford Mondeo, registration 08 D 12345' but the correct registration is 08 D 12346, the false description of the registration does not destroy the gift — the identity of the object of the gift (the car) is sufficiently clear from the other identifying details."
+    },
+    {
+      "id": "PRL_M10_L03_Q05",
+      "question": "What is the 'lapse rule' in the law of wills?",
+      "options": {
+        "A": "The rule that a will automatically expires if it is not probated within seven years of the testator's death",
+        "B": "The rule that a gift in a will lapses — fails — if the beneficiary predeceases the testator, and the gift falls back into residue or intestacy",
+        "C": "The rule that a gift lapses if the testator fails to sign the will within thirty days of its preparation",
+        "D": "The rule that a codicil lapses if it is not read together with the will within one year of execution"
+      },
+      "correct_answer": "B",
+      "explanation": "The lapse rule provides that a gift in a will lapses — fails — if the beneficiary predeceases the testator. The lapsed gift falls back into residue, or if there is no residue clause or the residue itself fails, into intestacy. Section 98 of the Succession Act 1965 provides an important exception for children and remoter issue of the testator."
+    },
+    {
+      "id": "PRL_M10_L03_Q06",
+      "question": "Under section 98 of the Succession Act 1965, when does the lapse rule NOT apply?",
+      "options": {
+        "A": "Where the beneficiary leaves a spouse who survives the testator",
+        "B": "Where a child of the testator predeceases the testator leaving issue of their own — in that case the gift does not lapse but passes to the child's issue",
+        "C": "Where the value of the lapsed gift exceeds a specified threshold",
+        "D": "Where the will expressly states that the lapse rule is excluded"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 98 of the Succession Act 1965 provides an exception to the lapse rule for children (and remoter issue) of the testator. If a child of the testator predeceases the testator leaving issue of their own, the gift to that child does not lapse but passes to the deceased child's issue as if that issue had been substituted as beneficiaries. This prevents the grandchildren from losing out on a bequest simply because their parent predeceased the testator."
+    },
+    {
+      "id": "PRL_M10_L03_Q07",
+      "question": "In Re Trotter, how did the Irish court construe a gift to 'my nephews and nieces living at the date of my death'?",
+      "options": {
+        "A": "As including all nephews and nieces who were alive at any time during the testator's lifetime",
+        "B": "As requiring survivorship — only those who survived the testator were entitled",
+        "C": "As excluding nephews and nieces born after the execution of the will",
+        "D": "As including the estates of nephews and nieces who predeceased the testator"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Trotter, the Irish court was asked whether a gift to 'my nephews and nieces living at the date of my death' included those who were alive when the will was made but predeceased the testator. The court construed the will as requiring survivorship — only those who survived the testator were entitled to benefit. The phrase 'living at the date of my death' was held to make survivorship an express condition of the gift."
+    },
+    {
+      "id": "PRL_M10_L03_Q08",
+      "question": "What are the 'class closing rules' in relation to gifts to a class of beneficiaries?",
+      "options": {
+        "A": "Rules that determine which class of heir takes on intestacy under the Succession Act 1965",
+        "B": "Rules that close a class of beneficiaries at a particular point in time so as not to keep estates open indefinitely — typically at the point when any class member becomes entitled to demand payment",
+        "C": "Rules that automatically include all future children of the testator in any class gift",
+        "D": "Rules that restrict class gifts to beneficiaries who are adults at the time the will takes effect"
+      },
+      "correct_answer": "B",
+      "explanation": "The class closing rules apply where a gift is made to a class (for example, 'to my grandchildren'). The rules close the class at the point of distribution — typically when any class member becomes entitled to demand payment — so as not to keep estates open indefinitely while awaiting potential new class members. Class members born after the closing date are excluded from the gift."
+    },
+    {
+      "id": "PRL_M10_L03_Q09",
+      "question": "In Andrews v Partington [1791], when was held to be the point at which a gift to a class closes?",
+      "options": {
+        "A": "When the last potential class member is born",
+        "B": "When any member of the class becomes entitled to demand payment — typically at the death of the testator",
+        "C": "When the personal representative decides to distribute the estate",
+        "D": "When the oldest class member reaches the age of majority"
+      },
+      "correct_answer": "B",
+      "explanation": "In Andrews v Partington [1791], the rule was established that a gift to a class closes when any member of the class becomes entitled to demand payment — typically at the death of the testator. Class members born after that point are excluded from the gift. This prevents estates from being held open indefinitely while awaiting potential future class members."
+    },
+    {
+      "id": "PRL_M10_L03_Q10",
+      "question": "What type of extrinsic evidence is NOT admissible in the construction of wills under Irish law?",
+      "options": {
+        "A": "Evidence of the testator's surrounding circumstances at the time of making the will",
+        "B": "Direct evidence of the testator's unexpressed subjective intention",
+        "C": "Evidence of the relationships between the testator and named beneficiaries",
+        "D": "Evidence of the testator's financial circumstances at the time of executing the will"
+      },
+      "correct_answer": "B",
+      "explanation": "While evidence of the testator's surrounding circumstances is admissible under section 90 of the Succession Act 1965 where the language is equivocal, direct evidence of the testator's unexpressed subjective intention is not ordinarily admissible. The court cannot substitute what the testator meant to say for what they actually said — the starting point is always the language of the will itself, construed against its surrounding circumstances."
+    }
+  ]
+}

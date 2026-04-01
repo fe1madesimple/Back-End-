@@ -1,0 +1,131 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": "ContractLaw_ElevenLabs_Module01_Lesson05.txt",
+  "module_number": 3,
+  "module_title": "Capacity, Formalities and Privity",
+  "lesson_number": 1,
+  "lesson_title": "Capacity to Contract",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the general rule on contractual capacity in Irish law?",
+      "options": {
+        "A": "All persons over the age of 16 have full contractual capacity",
+        "B": "All natural persons of full age (18 years) and sound mind, and incorporated entities within their constitutional objects, have full contractual capacity",
+        "C": "Contractual capacity requires a written declaration of competence signed before a notary",
+        "D": "Capacity is presumed only for commercial parties and must be proved for private individuals"
+      },
+      "correct_answer": "B",
+      "explanation": "The general rule is that all natural persons of the age of majority (18 years in Ireland under the Age of Majority Act 1985) and of sound mind have full contractual capacity. Companies and other incorporated entities have capacity within their constitutional objects (subject to ultra vires principles). Capacity may be limited by minority, mental incapacity, or intoxication."
+    },
+    {
+      "id": 2,
+      "question": "Under Irish law, what is the age of majority for the purposes of contractual capacity?",
+      "options": {
+        "A": "16 years",
+        "B": "17 years",
+        "C": "18 years",
+        "D": "21 years"
+      },
+      "correct_answer": "C",
+      "explanation": "The Age of Majority Act 1985 reduced the age of majority in Ireland from 21 to 18 years. Persons under 18 (minors) have limited contractual capacity. Contracts made with minors are governed by the Minors' Contracts Act 1996 (if enacted) and the common law rules distinguishing between valid, voidable, and void contracts with minors."
+    },
+    {
+      "id": 3,
+      "question": "Under the common law (applicable in Ireland), which of the following contracts made with a minor is VALID and binding?",
+      "options": {
+        "A": "A contract for the purchase of a luxury car",
+        "B": "A contract for necessaries — goods or services suitable to the minor's station in life and actual requirements",
+        "C": "A contract for a commercial loan to fund a business venture",
+        "D": "A contract for the purchase of a house"
+      },
+      "correct_answer": "B",
+      "explanation": "At common law, a minor is bound by contracts for necessaries. Necessaries are goods or services that are suitable to the condition in life of the minor and to their actual requirements at the time of the sale and delivery (Sale of Goods Act 1893, s2). A minor must pay a reasonable price for necessaries but not necessarily the contract price. Classic examples include food, clothing, and housing."
+    },
+    {
+      "id": 4,
+      "question": "In Nash v Inman [1908], a Cambridge undergraduate purchased 11 fancy waistcoats. The Court of Appeal held the waistcoats were NOT necessaries because:",
+      "options": {
+        "A": "Clothing is never a necessary under the common law",
+        "B": "The minor was already sufficiently supplied with adequate clothing",
+        "C": "The minor had not reached the age of 18 when he placed the order",
+        "D": "The seller was aware of the minor's age at the time of contracting"
+      },
+      "correct_answer": "B",
+      "explanation": "In Nash v Inman [1908], the Court of Appeal held that the fancy waistcoats were not necessaries because the minor was already adequately supplied with clothes suitable to his station. The definition of necessaries is two-limbed: the goods must be suitable to the minor's condition of life (objective limb) AND the minor must actually need them at the time (actual requirements limb). Failure on either limb means the item is not a necessary."
+    },
+    {
+      "id": 5,
+      "question": "What is the general effect of a contract made by a minor for goods that are NOT necessaries?",
+      "options": {
+        "A": "The contract is void ab initio — it has no legal effect from the outset",
+        "B": "The contract is voidable at the minor's option — the minor can choose to enforce or repudiate it",
+        "C": "The contract is valid and binding on both parties",
+        "D": "The contract is void and the other party can recover goods supplied but not money paid"
+      },
+      "correct_answer": "B",
+      "explanation": "The general rule at common law is that a contract for non-necessaries made by a minor is voidable at the minor's option. The minor may choose to enforce the contract or repudiate it before or within a reasonable time of reaching majority. The adult party is bound but the minor is not. Upon repudiation, the minor may recover money paid if there has been a total failure of consideration."
+    },
+    {
+      "id": 6,
+      "question": "A minor who makes a contract for non-necessaries repudiates it on reaching majority. Which of the following is the correct position regarding money paid by the minor?",
+      "options": {
+        "A": "The minor can always recover all money paid",
+        "B": "The minor can recover money paid only if there has been a total failure of consideration",
+        "C": "The minor cannot recover any money paid under a voidable contract",
+        "D": "The minor can recover money paid only if they repudiate within 7 days of reaching majority"
+      },
+      "correct_answer": "B",
+      "explanation": "Upon repudiation by the minor, money paid can be recovered only if there has been a total failure of consideration — i.e., the minor received nothing of value under the contract. In Steinberg v Scala (Leeds) Ltd [1923], a minor who purchased shares could not recover the purchase price on repudiation because she had received shares (had the right to attend meetings and receive dividends), even though no dividends were actually paid."
+    },
+    {
+      "id": 7,
+      "question": "Which of the following contracts made during minority are voidable on attaining majority (continuing obligations contracts)?",
+      "options": {
+        "A": "A contract to purchase a single item of clothing",
+        "B": "A partnership agreement, a lease, and an agreement to take shares in a company",
+        "C": "A contract of employment",
+        "D": "A contract for a student loan"
+      },
+      "correct_answer": "B",
+      "explanation": "At common law, certain contracts involving a continuing obligation — such as a partnership agreement, a lease, a share subscription, or a marriage settlement — are voidable by the minor upon (or before) attaining majority. These are sometimes called 'continuing contracts'. If not repudiated promptly after majority, the adult becomes bound by them. They are valid and binding unless and until repudiated."
+    },
+    {
+      "id": 8,
+      "question": "Under the Assisted Decision-Making (Capacity) Act 2015 (Ireland), how is legal capacity assessed?",
+      "options": {
+        "A": "On the basis of a medical diagnosis of mental disorder alone",
+        "B": "On a functional, decision-specific basis — a person may have capacity for some decisions but not others at a given time",
+        "C": "By a court-appointed guardian who has absolute authority over all decisions",
+        "D": "On the basis of age — persons over 65 are presumed to lack capacity"
+      },
+      "correct_answer": "B",
+      "explanation": "The Assisted Decision-Making (Capacity) Act 2015 replaced the traditional status-based approach to capacity with a functional, decision-specific model. Capacity is assessed in relation to a specific decision at a specific time — a person may have capacity for some decisions and not others. There is a presumption of capacity, and all practicable steps must be taken to support the person in making their own decision."
+    },
+    {
+      "id": 9,
+      "question": "At common law, what is the effect of a contract made by a person of unsound mind?",
+      "options": {
+        "A": "All contracts made by a person of unsound mind are void ab initio",
+        "B": "The contract is voidable at the option of the person lacking capacity, provided the other party knew of the incapacity",
+        "C": "The contract is binding on both parties if the other party was unaware of the incapacity",
+        "D": "The contract is void, and neither party can enforce it"
+      },
+      "correct_answer": "B",
+      "explanation": "At common law, a contract made by a person of unsound mind is voidable (not void) at the option of that person, but only if the other party knew of the incapacity at the time of contracting. If the other party contracted in good faith without knowledge of the incapacity, the contract is binding: Imperial Loan Co v Stone [1892]. Additionally, a person of unsound mind must pay a reasonable price for necessaries supplied to them (SGA 1893, s2)."
+    },
+    {
+      "id": 10,
+      "question": "Under the Sale of Goods Act 1893, s2, what is the effect of supplying necessaries to a person who is of unsound mind or a minor?",
+      "options": {
+        "A": "There is no obligation to pay — contracts with persons lacking capacity are unenforceable",
+        "B": "The person of unsound mind or minor must pay a reasonable price for the necessaries",
+        "C": "The seller may recover only the cost price, not any profit element",
+        "D": "The contract price is recoverable if the goods are of adequate quality"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 2 of the Sale of Goods Act 1893 (Ireland) provides that where necessaries are sold and delivered to a minor or to a person of unsound mind who is unable to contract, they must pay a reasonable price for them. This is not necessarily the contract price — the court determines what is reasonable. This prevents unjust enrichment while recognising the contractual incapacity of the person."
+    }
+  ]
+}

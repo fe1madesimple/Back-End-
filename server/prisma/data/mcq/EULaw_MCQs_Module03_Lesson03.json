@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "Module_03_Lesson_03_Delegated_Acts_Implementing_Acts_and_Comitology.txt",
+  "module_number": 3,
+  "module_title": "Sources of EU Law",
+  "lesson_number": 3,
+  "lesson_title": "Delegated Acts, Implementing Acts, and Comitology",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EUL_M03_L03_Q01",
+      "question": "Which Treaty article allows the European Parliament and the Council to delegate power to the Commission to supplement or amend non-essential elements of a legislative act?",
+      "options": {
+        "A": "Article 288 TFEU",
+        "B": "Article 290 TFEU",
+        "C": "Article 291 TFEU",
+        "D": "Article 263 TFEU"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 290 TFEU governs delegated acts. It permits the co-legislators (EP and Council) to delegate to the Commission the power to supplement or amend non-essential elements of a legislative act. Article 291 covers implementing acts; Article 288 lists the types of EU legal acts; Article 263 governs judicial review."
+    },
+    {
+      "id": "EUL_M03_L03_Q02",
+      "question": "Under Article 290 TFEU, which elements of a legislative act may the Commission be delegated power to determine?",
+      "options": {
+        "A": "Essential elements only",
+        "B": "Both essential and non-essential elements",
+        "C": "Non-essential elements only",
+        "D": "Any element, subject to unanimous Council approval"
+      },
+      "correct_answer": "C",
+      "explanation": "Article 290 TFEU expressly restricts the delegation to non-essential elements. The essential elements — objectives, scope, fundamental choices about who is protected and what is prohibited — must be determined by the legislature itself. The Commission cannot be delegated the power to make those core political decisions."
+    },
+    {
+      "id": "EUL_M03_L03_Q03",
+      "question": "Which of the following correctly describes the oversight mechanisms available to the co-legislators under Article 290 TFEU?",
+      "options": {
+        "A": "The Council alone may revoke the delegation; neither institution may object to individual acts",
+        "B": "Either the European Parliament or the Council may revoke the delegation, and either may object to a specific delegated act",
+        "C": "Only the European Parliament may object; the Council may only revoke after consulting the Commission",
+        "D": "Oversight is exercised exclusively through the comitology system under Regulation 182/2011"
+      },
+      "correct_answer": "B",
+      "explanation": "Under Article 290 TFEU the co-legislators retain control through two mechanisms: revocation (either EP or Council may revoke the delegation at any time, without giving reasons) and objection (either EP or Council may object to a specific delegated act within the time period set in the legislative act, preventing it from entering into force)."
+    },
+    {
+      "id": "EUL_M03_L03_Q04",
+      "question": "What is the primary purpose of implementing acts under Article 291 TFEU?",
+      "options": {
+        "A": "To amend the essential elements of EU regulations",
+        "B": "To allow the Commission to exercise quasi-legislative policy discretion",
+        "C": "To ensure uniform conditions for implementing legally binding EU acts across Member States",
+        "D": "To enable the European Parliament to by-pass the Ordinary Legislative Procedure"
+      },
+      "correct_answer": "C",
+      "explanation": "Article 291 TFEU addresses the need for uniform conditions of implementation. Where uniformity is required in applying legally binding EU acts, the Commission (or in specifically justified cases the Council) may adopt implementing acts. Unlike delegated acts, implementing acts are executive in nature — they apply pre-established rules consistently across Member States."
+    },
+    {
+      "id": "EUL_M03_L03_Q05",
+      "question": "What is comitology, and which instrument currently governs it?",
+      "options": {
+        "A": "A system of judicial oversight of Commission acts, governed by the CJEU's Rules of Procedure",
+        "B": "A system of oversight of implementing acts by committees of Member State representatives, governed by Regulation 182/2011",
+        "C": "A parliamentary scrutiny mechanism for delegated acts, governed by the Inter-institutional Agreement of 2016",
+        "D": "A Council-only review process for Commission proposals, governed by Article 16 TEU"
+      },
+      "correct_answer": "B",
+      "explanation": "Comitology is the system by which committees composed of Member State representatives oversee the Commission's adoption of implementing acts under Article 291 TFEU. The current framework is set out in Regulation 182/2011. It reflects the political compromise between the Commission's executive role and Member States' desire to retain oversight of implementation."
+    },
+    {
+      "id": "EUL_M03_L03_Q06",
+      "question": "Under Regulation 182/2011, which comitology procedure applies to implementing acts with significant policy implications — such as those related to agriculture, environment, and public health?",
+      "options": {
+        "A": "The advisory procedure",
+        "B": "The urgency procedure",
+        "C": "The examination procedure",
+        "D": "The legislative procedure"
+      },
+      "correct_answer": "C",
+      "explanation": "The examination procedure under Regulation 182/2011 applies to acts with significant policy implications, including acts related to agriculture, environment, internal market, taxation, public health, and trade. Under the examination procedure, if the committee delivers a negative opinion by qualified majority, the Commission cannot adopt the measure and must refer it to an Appeal Committee."
+    },
+    {
+      "id": "EUL_M03_L03_Q07",
+      "question": "Under the advisory procedure in comitology, how is the committee's opinion treated by the Commission?",
+      "options": {
+        "A": "The Commission is legally bound by the committee's opinion and cannot deviate from it",
+        "B": "The Commission must take the opinion into account but is not bound by it",
+        "C": "The Commission may ignore the opinion entirely and proceed without any constraint",
+        "D": "The committee's opinion is referred to the Council for a final binding decision"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the advisory procedure, the Commission must take the committee's opinion into account but is not bound by it. This procedure applies to measures of limited political sensitivity. It is a lighter form of oversight compared to the examination procedure, where a negative qualified majority opinion blocks the Commission from adopting the measure."
+    },
+    {
+      "id": "EUL_M03_L03_Q08",
+      "question": "In European Parliament v Council (Biocides) [2016], the Court of Justice confirmed the test for distinguishing delegated acts from implementing acts. What is that test?",
+      "options": {
+        "A": "Whether the measure was adopted by the Commission or by the Council",
+        "B": "Whether the Commission exercises real policy discretion to supplement or amend the legislative act, or merely applies pre-established rules uniformly",
+        "C": "Whether the measure is published in the Official Journal as a Regulation or a Decision",
+        "D": "Whether the comitology committee delivered a positive or negative opinion"
+      },
+      "correct_answer": "B",
+      "explanation": "In European Parliament v Council (Biocides) [2016], the CJEU confirmed that the key question is whether the Commission is exercising a power to supplement or amend the legislative act (Article 290 — delegated act involving real policy discretion) or merely applying pre-established rules to ensure uniform implementation (Article 291 — implementing act). The nature of the Commission's role, not formal labelling, determines which provision applies."
+    },
+    {
+      "id": "EUL_M03_L03_Q09",
+      "question": "Why does the classification of a Commission act as a delegated act rather than an implementing act matter for accountability?",
+      "options": {
+        "A": "Delegated acts are published in a separate section of the Official Journal, making them easier to challenge",
+        "B": "The European Parliament has co-equal oversight of delegated acts through revocation and objection rights, whereas oversight of implementing acts lies with Member State comitology committees",
+        "C": "Implementing acts must be approved by the European Parliament before adoption, unlike delegated acts",
+        "D": "Delegated acts cannot be challenged under Article 263 TFEU, whereas implementing acts can"
+      },
+      "correct_answer": "B",
+      "explanation": "The accountability distinction is significant. For delegated acts under Article 290, the European Parliament has co-equal oversight with the Council — it can revoke the delegation or object to specific delegated acts. For implementing acts under Article 291, oversight lies with Member State committees through comitology — not directly with Parliament. The Parliament has argued that institutions sometimes classify measures as implementing acts specifically to avoid parliamentary scrutiny."
+    },
+    {
+      "id": "EUL_M03_L03_Q10",
+      "question": "If the Commission adopts a delegated act that goes beyond the scope of the delegation conferred on it by the legislative act, what is the consequence under EU law?",
+      "options": {
+        "A": "The act is automatically suspended pending a comitology committee review",
+        "B": "The act is valid but must be re-adopted using the Ordinary Legislative Procedure",
+        "C": "The act may be annulled under Article 263 TFEU on the ground of lack of competence",
+        "D": "The act remains valid unless the Council unanimously votes to invalidate it"
+      },
+      "correct_answer": "C",
+      "explanation": "Under Article 263 TFEU, the CJEU may annul an EU act on grounds including lack of competence. If the Commission acts beyond the scope of the delegation granted by the legislative act, this constitutes a lack of competence ground. This is a specific judicial review risk that applies to delegated acts — an applicant challenging such an act should check whether the Commission remained within the bounds of the delegation."
+    }
+  ]
+}

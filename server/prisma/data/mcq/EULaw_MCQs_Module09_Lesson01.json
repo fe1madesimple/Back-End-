@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "Module_09_Lesson_01_Customs_Union_Articles_28_to_30_TFEU.txt",
+  "module_number": 9,
+  "module_title": "Free Movement of Goods",
+  "lesson_number": 1,
+  "lesson_title": "The Customs Union — Articles 28 to 30 TFEU — Charges Having Equivalent Effect to Customs Duties",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EUL_M09_L01_Q01",
+      "question": "The customs union established by the TFEU has two components. Which of the following correctly identifies both?",
+      "options": {
+        "A": "Internal prohibition of customs duties between Member States, and a common competition policy applied to all goods",
+        "B": "Internal prohibition of customs duties and charges having equivalent effect, and a common external tariff applied to goods from third countries",
+        "C": "Internal prohibition of discriminatory taxation under Article 110, and a common external tariff applied to services",
+        "D": "Internal harmonisation of VAT rates, and a common external trade defence regime"
+      },
+      "correct_answer": "B",
+      "explanation": "Articles 28 to 32 TFEU establish the customs union with two components: internally, all customs duties and charges having equivalent effect (CEEs) between Member States are prohibited; externally, the EU applies a common customs tariff to goods imported from third countries. The internal prohibition was achieved by 1968. The common external tariff ensures the EU operates as a single commercial unit in relation to third countries."
+    },
+    {
+      "id": "EUL_M09_L01_Q02",
+      "question": "Article 30 TFEU prohibits customs duties and charges having equivalent effect. Which of the following best describes the scope of that prohibition?",
+      "options": {
+        "A": "It applies only to charges imposed on imports, not on exports",
+        "B": "It applies to any charge whatsoever imposed on goods by reason of crossing a frontier, regardless of its designation, purpose, or rate",
+        "C": "It applies only to charges that discriminate against goods from other Member States",
+        "D": "It applies only to charges above a de minimis threshold set by the Commission"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 30 TFEU applies to any charge whatsoever — regardless of its designation, purpose, or rate — if it is imposed on goods by reason of the fact that they cross a frontier. The irrelevance of purpose or intent is a strict rule developed by the Court of Justice. Even a charge imposed for a legitimate public purpose is prohibited if it meets the definition of a CEE."
+    },
+    {
+      "id": "EUL_M09_L01_Q03",
+      "question": "In Commission v Italy (Statistical Levy) [1969], how did the Court of Justice define a 'charge having equivalent effect' to a customs duty?",
+      "options": {
+        "A": "A charge that directly increases the price of imported goods beyond that of comparable domestic goods",
+        "B": "Any pecuniary charge, however small, imposed unilaterally on goods by reason of the fact that they cross a frontier, which is not a customs duty in the strict sense",
+        "C": "A charge that is applied to both domestic and imported goods but which has a disproportionate effect on imports",
+        "D": "A charge applied exclusively to goods from non-Member States that has been notified to the Commission"
+      },
+      "correct_answer": "B",
+      "explanation": "In Commission v Italy (Statistical Levy) [1969], Italy had levied a small charge on exports to fund trade statistics collection. The Court defined a CEE as any pecuniary charge, however small, imposed unilaterally on domestic or foreign goods by reason of crossing a frontier, which is not a customs duty in the strict sense. The purpose of the charge — including that it funded a public service — was held to be irrelevant."
+    },
+    {
+      "id": "EUL_M09_L01_Q04",
+      "question": "Commission v Italy (Art Treasures) [1968] involved a charge on the export of items of artistic and historic interest. What did the Court hold?",
+      "options": {
+        "A": "The charge was lawful because it applied to Italian goods only and was not a barrier to imports",
+        "B": "The charge was a CEE on exports, prohibited by what is now Article 30 TFEU, despite its cultural justification",
+        "C": "The charge was justified under what is now Article 36 TFEU as protecting national treasures",
+        "D": "The charge was outside the scope of EU law because culture is a matter of exclusive national competence"
+      },
+      "correct_answer": "B",
+      "explanation": "In Commission v Italy (Art Treasures) [1968], the Court held that a charge on the export of items of artistic, historic, archaeological, or ethnographic interest was a CEE on exports, prohibited by what is now Article 30. The fact that the charge was applied to Italian goods leaving Italy (not imports), and that its purpose was to compensate for cultural patrimony loss, was irrelevant — Article 30 applies equally to exports and the prohibition is purpose-neutral."
+    },
+    {
+      "id": "EUL_M09_L01_Q05",
+      "question": "Under what narrow circumstances may a charge for services rendered at the border escape classification as a CEE?",
+      "options": {
+        "A": "Where the charge is authorised by a bilateral international treaty between two Member States",
+        "B": "Where the charge is imposed for a genuine service actually rendered to the individual trader in an amount proportionate to that service",
+        "C": "Where the charge is applied equally to all goods, whether domestic or imported",
+        "D": "Where the Member State notifies the Commission at least six months in advance"
+      },
+      "correct_answer": "B",
+      "explanation": "The Court has developed a narrow service exception: a charge is compatible with Article 30 only where it is imposed for a genuine service actually rendered to the individual trader, in an amount proportionate to the service provided. General border inspections that benefit commerce as a whole do not constitute a service to the individual trader and charges for such inspections remain prohibited CEEs."
+    },
+    {
+      "id": "EUL_M09_L01_Q06",
+      "question": "In Bauhuis v Netherlands [1977], the Court held that charges for veterinary inspections were not CEEs. What was the key reason?",
+      "options": {
+        "A": "The charges were below the de minimis threshold and therefore negligible",
+        "B": "The obligation to conduct the inspections was imposed by EU law itself, so the charge was a contribution to implementing EU law rather than a unilateral fiscal barrier",
+        "C": "The Netherlands had obtained a derogation from Article 30 under the Article 36 TFEU procedure",
+        "D": "Veterinary charges are excluded from Article 30 by a specific TFEU protocol"
+      },
+      "correct_answer": "B",
+      "explanation": "In Bauhuis v Netherlands [1977], the Court held that charges levied for inspections required by EU law itself are not CEEs. The obligation to conduct the veterinary inspections flowed from EU law — making the charge a contribution to the costs of implementing EU law rather than a unilateral fiscal barrier imposed by the Member State. The charge must not exceed the actual cost of the inspection."
+    },
+    {
+      "id": "EUL_M09_L01_Q07",
+      "question": "In Commission v Germany (Animal Inspection Fees) [1988], the Court held that charges for animal health inspections required under a German-French bilateral treaty were CEEs. Why?",
+      "options": {
+        "A": "The charges exceeded the actual cost of the inspections, making them disproportionate",
+        "B": "The obligation to conduct the inspections derived from a bilateral agreement, not from Community law, so the Bauhuis exception did not apply",
+        "C": "Germany had failed to notify the Commission of the charges as required by the TFEU",
+        "D": "The inspections were carried out at the internal frontier rather than at the external border of the EU"
+      },
+      "correct_answer": "B",
+      "explanation": "In Commission v Germany (Animal Inspection Fees) [1988], the Court held that the Bauhuis exception applies only where the inspection obligation flows from EU (Community) law itself. Because the obligation in this case derived from a bilateral German-French animal health treaty — not from Community law — the Bauhuis exception did not apply and the charges remained prohibited CEEs under Article 30."
+    },
+    {
+      "id": "EUL_M09_L01_Q08",
+      "question": "Can a Member State justify a charge that falls within the definition of a CEE under Article 30 TFEU by arguing it serves a legitimate public interest?",
+      "options": {
+        "A": "Yes, under the Article 36 TFEU derogation regime, which applies equally to CEEs and quantitative restrictions",
+        "B": "Yes, provided the Member State demonstrates necessity and proportionality",
+        "C": "No — the prohibition in Article 30 is absolute; there is no equivalent to the Article 36 derogation for CEEs",
+        "D": "Yes, but only where the Commission has issued a specific exemption decision"
+      },
+      "correct_answer": "C",
+      "explanation": "Article 30 and the prohibition on CEEs operate independently of justification. Unlike the position under Articles 34 to 36, where Member States may justify quantitative restrictions on public policy grounds under Article 36, there is no equivalent justification available for charges falling within the definition of a CEE. A CEE is simply prohibited. This is one of the key distinctions between Article 30 and Articles 34 to 36 TFEU."
+    },
+    {
+      "id": "EUL_M09_L01_Q09",
+      "question": "Which of the following is a common FE-1 examination area that contrasts Article 30 TFEU with another set of Treaty provisions?",
+      "options": {
+        "A": "Article 30 TFEU and Article 157 TFEU on equal pay",
+        "B": "Article 30 TFEU and Article 110 TFEU on internal taxation",
+        "C": "Article 30 TFEU and Article 101 TFEU on competition law",
+        "D": "Article 30 TFEU and Article 49 TFEU on freedom of establishment"
+      },
+      "correct_answer": "B",
+      "explanation": "A common FE-1 examination question contrasts Article 30 TFEU — which prohibits CEEs imposed on goods by reason of crossing a frontier — with Article 110 TFEU, which prohibits discriminatory or protective internal taxation on goods from other Member States. The distinction matters because a charge that is not a CEE may still be unlawful discriminatory taxation under Article 110, and the legal tests and consequences differ."
+    },
+    {
+      "id": "EUL_M09_L01_Q10",
+      "question": "Why is understanding the customs union's character as a unified trading bloc relevant to understanding the legal consequences of Brexit?",
+      "options": {
+        "A": "Because leaving the EU automatically transfers all customs powers to individual Member States",
+        "B": "Because leaving the customs union means goods crossing between the UK and EU become subject to customs formalities, tariffs, and checks — a deep legal and practical disentanglement that cannot easily be unpicked",
+        "C": "Because the customs union is governed by bilateral treaties between each Member State and the UK",
+        "D": "Because EU customs duties continue to apply to UK goods under Article 30 TFEU even after Brexit"
+      },
+      "correct_answer": "B",
+      "explanation": "When the UK left the EU in 2020, it left the customs union as well as the internal market. Goods crossing between the EU and UK became subject to customs formalities, tariffs under the common external tariff regime, and regulatory checks. The Northern Ireland Protocol (now the Windsor Framework) was designed specifically to manage the exceptional situation arising from Northern Ireland's land border with Ireland, an EU Member State. Understanding the customs union as a unified bloc explains why EU exit is far more complex than leaving a simple trade agreement."
+    }
+  ]
+}

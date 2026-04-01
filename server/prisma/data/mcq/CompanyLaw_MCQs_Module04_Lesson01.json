@@ -1,0 +1,131 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module04_Lesson01.txt",
+  "module_number": 4,
+  "module_title": "Borrowing by the Company",
+  "lesson_number": 1,
+  "lesson_title": "Fixed and Floating Charges: Registration and Priority",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Section 408 CA 2014 defines a ‘charge’ broadly. A bank takes security over a company’s future book debts as they arise. Under established Irish law, this is most accurately characterised as:",
+      "options": {
+        "A": "A fixed charge — because the book debts are specifically identified",
+        "B": "A floating charge — because the debts fluctuate and the company can continue to collect them without the bank’s consent in the ordinary course of business",
+        "C": "A pledge — because the bank takes possession of the receivable",
+        "D": "A mortgage — because the bank has a proprietary interest in the receivables from the date of the agreement"
+      },
+      "correct_answer": "B",
+      "explanation": "Book debts fluctuate by nature and companies need to collect them in the ordinary course of business. Unless the charge instrument gives the bank control over receipts (e.g., requiring payments into a blocked account), a charge over book debts that allows the company to deal freely with the proceeds is a floating charge, not a fixed charge — see Re Spectrum Plus Ltd [2005] (UK) and Irish equivalents."
+    },
+    {
+      "id": 2,
+      "question": "Section 411 CA 2014 requires that a charge created by a company be registered at the CRO within how many days of creation?",
+      "options": {
+        "A": "7 days",
+        "B": "14 days",
+        "C": "21 days",
+        "D": "30 days"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 411 CA 2014 requires that particulars of a charge be delivered to the CRO for registration within 21 days of the date of the charge’s creation. Failure to register within this period renders the charge void against liquidators, examiners, and other creditors (S414 CA 2014)."
+    },
+    {
+      "id": 3,
+      "question": "A charge is created on 1 January but is not registered until 30 January (outside the 21-day window). On 15 February, the company enters liquidation. The consequence of late registration is that:",
+      "options": {
+        "A": "The charge is void against the liquidator and other creditors — the creditor becomes an unsecured creditor",
+        "B": "The charge is voidable — the company may choose to ratify it by passing a resolution before the liquidation",
+        "C": "The charge is late but remains fully effective once registered — the 21-day limit is merely directory",
+        "D": "The charge is valid but must be re-executed with court approval"
+      },
+      "correct_answer": "A",
+      "explanation": "Section 414 CA 2014 provides that an unregistered (or late-registered) charge is void against the liquidator, examiner, and any creditor of the company. The chargee loses their secured status and becomes an unsecured creditor for the amount owed. However, the debt itself remains owed — only the security interest is lost."
+    },
+    {
+      "id": 4,
+      "question": "Two banks both hold fixed charges over the same property. Bank A registered its charge on Day 1; Bank B registered its charge on Day 10. Under section 412(3) CA 2014, priority is determined by:",
+      "options": {
+        "A": "The date of creation of the charge — whichever was created first takes priority",
+        "B": "The date and time of registration at the CRO — Bank A’s charge takes priority",
+        "C": "The amount secured — the charge securing the larger debt takes priority",
+        "D": "Negotiation between the charge holders — priority is a contractual matter"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 412(3) CA 2014 provides that priority between competing charges is determined by the order of registration at the CRO, not by the order of creation. Bank A, having registered first, has priority over Bank B regardless of when either charge was actually created."
+    },
+    {
+      "id": 5,
+      "question": "A certificate of registration issued under section 415 CA 2014 is stated to be:",
+      "options": {
+        "A": "Conclusive evidence that the charge is valid and enforceable in all respects",
+        "B": "Conclusive evidence that the requirements of registration have been complied with — but not evidence of the validity of the underlying debt or security",
+        "C": "Prima facie evidence that the charge was registered within time",
+        "D": "Void if the company becomes insolvent within 12 months of issue"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 415 CA 2014 provides that the certificate of registration is conclusive evidence that the requirements of Part 7 (registration of charges) have been complied with. Importantly, it is not conclusive as to the validity of the charge itself — the underlying debt or the terms of the security may still be challenged on other grounds."
+    },
+    {
+      "id": 6,
+      "question": "A floating charge holder has a charge over the whole of the company’s undertaking. The company pays outstanding employee wages (4 months’ arrears) on the day before a receiver is appointed. On receivership, the floating charge holder argues the payment was an unfair preference. Which of the following is correct?",
+      "options": {
+        "A": "The payment was valid — employee wages are preferential debts and rank ahead of the floating charge holder in any event",
+        "B": "The payment was an unfair preference — the floating charge holder has priority over all unsecured claims",
+        "C": "The payment was valid only if approved by a shareholder resolution",
+        "D": "The payment creates a trust in favour of the employees which ranks ahead of the charge"
+      },
+      "correct_answer": "A",
+      "explanation": "Under S621 CA 2014, preferential creditors (including employee wage arrears up to 4 months and holiday pay) rank ahead of the floating charge holder. Paying preferential debts is therefore not an unfair preference — the floating charge holder was always subordinate to preferential creditors. This is a fundamental feature of floating charge law."
+    },
+    {
+      "id": 7,
+      "question": "A company creates a fixed charge over its factory and a floating charge over its entire undertaking in favour of the same bank. The bank subsequently discovers that a rival trade creditor has obtained a court judgment against the company and served a garnishee order over the company’s bank account. Which of the following is correct?",
+      "options": {
+        "A": "The garnishee order takes priority over both charges as it was served after registration",
+        "B": "The fixed charge protects the factory but the floating charge may not prevent the garnishee order unless the charge has crystallised",
+        "C": "The fixed charge and the crystallised floating charge both take priority over the garnishee order",
+        "D": "The garnishee order is void against a registered charge holder regardless of type"
+      },
+      "correct_answer": "B",
+      "explanation": "A floating charge, while dormant, does not give the holder a fixed proprietary interest in specific assets — assets can leave and enter the charged pool. A garnishee order attaching a specific asset (the bank account) before crystallisation of the floating charge may succeed. Once the floating charge crystallises (e.g., on appointment of receiver), the charge attaches to all assets then held and takes priority over subsequent claims."
+    },
+    {
+      "id": 8,
+      "question": "What is the consequence of failing to register a charge within the 21-day window under section 411 CA 2014, assuming the company remains solvent?",
+      "options": {
+        "A": "The charge is void against the company itself — the security is completely unenforceable even between the parties",
+        "B": "The charge is void against the liquidator and creditors of the company but remains enforceable between the parties (the company and the charge holder) as a contractual obligation",
+        "C": "The charge automatically converts to an unsecured personal guarantee by the directors",
+        "D": "The 21-day limit does not apply to a charge created by a private company — only PLCs must register within 21 days"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 414 CA 2014 provides that an unregistered charge is void against the liquidator, examiner, and creditors of the company — not void as between the parties themselves. The underlying debt obligation remains valid between the company and the creditor. The practical consequence is that the creditor loses their secured priority and becomes an unsecured creditor in insolvency."
+    },
+    {
+      "id": 9,
+      "question": "A company creates a floating charge in favour of its bank on Day 1. On Day 5, before the charge is registered, the company creates a fixed charge in favour of a different lender over the same assets. The fixed charge is registered on Day 6. The floating charge is registered on Day 8. Which charge has priority?",
+      "options": {
+        "A": "The floating charge — it was created first",
+        "B": "The fixed charge — it was registered first, and being a fixed charge, it generally takes priority over a subsequent floating charge even if created earlier",
+        "C": "Priority is shared equally between both charges",
+        "D": "The later registered charge — priority reverses when one charge is fixed and the other is floating"
+      },
+      "correct_answer": "B",
+      "explanation": "Under S412(3) CA 2014, registration order determines priority. The fixed charge, registered on Day 6, is registered before the floating charge (Day 8). Moreover, a fixed charge generally takes priority over a floating charge over the same assets under the ‘priority of fixed charges’ principle. The floating charge holder may also argue the fixed charge lender had notice of the floating charge, which could affect priority — but as a general rule, registration date and charge type both favour the fixed charge holder here."
+    },
+    {
+      "id": 10,
+      "question": "A retention of title clause (ROT) in a supplier’s contract reserves legal title to goods until the full purchase price is paid. Is such a clause subject to registration as a charge under CA 2014?",
+      "options": {
+        "A": "Yes — all security interests over company assets must be registered within 21 days",
+        "B": "A simple ROT clause (title reservation without requiring proceeds from sub-sales) is NOT registrable as a charge — it operates as a condition of the sale contract, not a security interest created by the company",
+        "C": "Yes — an ROT clause is automatically a floating charge over inventory",
+        "D": "No — ROT clauses are only registrable if the value of goods exceeds €5,000"
+      },
+      "correct_answer": "B",
+      "explanation": "A simple retention of title clause does not amount to a charge created by the company — it is a contractual term reserving the supplier’s existing title rather than the company granting security over assets it already owns. Accordingly, a simple ROT clause does not require registration. However, an extended ROT clause (claiming proceeds of sub-sale or attaching to manufactured products incorporating the goods) may amount to a charge requiring registration."
+    }
+  ]
+}

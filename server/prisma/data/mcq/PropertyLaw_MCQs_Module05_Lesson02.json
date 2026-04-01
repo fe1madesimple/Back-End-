@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_05_Lesson_02_Equity_and_the_LCLRA_2009.txt",
+  "module_number": 5,
+  "module_title": "Freehold Covenants",
+  "lesson_number": 2,
+  "lesson_title": "Freehold Covenants in Equity and under the LCLRA 2009",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M05_L02_Q01",
+      "question": "Tulk v Moxhay [1848] is the foundational authority for the enforcement of restrictive covenants in equity. What were the facts of that case?",
+      "options": {
+        "A": "A vendor sold residential land and covenanted to maintain a road; a subsequent purchaser refused to do so",
+        "B": "A vendor sold Leicester Square in London with a covenant that the land would be kept open as a garden; a subsequent purchaser (Moxhay) sought to build on it despite knowing of the covenant",
+        "C": "A tenant covenanted not to assign a lease; they subsequently assigned it and the landlord sought an injunction",
+        "D": "A landowner in a building estate covenanted to build only residential property; they subsequently sought planning permission for commercial development"
+      },
+      "correct_answer": "B",
+      "explanation": "In Tulk v Moxhay [1848], the vendor had sold Leicester Square in London with a restrictive covenant that the land would be kept open as a garden and not built upon. The land changed hands several times. The ultimate purchaser, Mr Moxhay, sought to build on the land, arguing he was not bound by the covenant because the burden had not passed at common law. The Lord Chancellor held that because Moxhay had purchased with notice of the covenant, his conscience was affected and equity would not allow him to use the land in violation of it. This established equity's jurisdiction over restrictive covenants."
+    },
+    {
+      "id": "PRL_M05_L02_Q02",
+      "question": "What was the equitable principle that the Lord Chancellor applied in Tulk v Moxhay [1848] to bind Moxhay to the covenant?",
+      "options": {
+        "A": "That a covenant runs with the land at common law and binds all successors in title automatically",
+        "B": "That if a person purchases land with notice of a restrictive covenant, their conscience is affected and it would be unconscionable to allow them to use the land in a way that violates the covenant",
+        "C": "That a restrictive covenant is a personal obligation that survives transfer of the burdened land",
+        "D": "That the doctrine of privity of contract binds successors where they have notice of the covenant"
+      },
+      "correct_answer": "B",
+      "explanation": "The Lord Chancellor in Tulk v Moxhay [1848] applied the equitable principle that if a person purchases land with notice of a restrictive covenant, their conscience is affected — they knew what they were buying and they knew the restriction that came with it. It would therefore be unconscionable to allow them to use the land in a way that violates that covenant. This 'notice affecting the conscience' is the fundamental basis of equity's intervention. It is why, even though the burden of a freehold covenant does not run at common law (Austerberry principle), equity will enforce it against those who take with notice."
+    },
+    {
+      "id": "PRL_M05_L02_Q03",
+      "question": "What is the first and most critical of the four Tulk v Moxhay conditions that must be satisfied for the burden of a restrictive covenant to run in equity?",
+      "options": {
+        "A": "The covenant must have been registered as a burden on the folio of the servient land",
+        "B": "The covenant must be restrictive in nature — it must restrain the covenantor from doing something rather than require them to take positive action",
+        "C": "The covenant must have been entered into between parties who were in a direct contractual relationship",
+        "D": "The covenant must touch and concern the dominant land"
+      },
+      "correct_answer": "B",
+      "explanation": "The first and most critical condition under Tulk v Moxhay is that the covenant must be restrictive — it must restrain the covenantor from doing something (a negative covenant), not require them to take positive action (a positive covenant). This is the most important limitation of the equitable rule. The Tulk v Moxhay jurisdiction applies only to negative, restrictive covenants. The burden of positive covenants — obligations to spend money or to carry out works — still does not run with the land in equity. This gap in the law is one of the most significant deficiencies in freehold covenant law prior to the LCLRA 2009 reforms."
+    },
+    {
+      "id": "PRL_M05_L02_Q04",
+      "question": "What are all four conditions that must be satisfied for the burden of a restrictive covenant to run in equity under the Tulk v Moxhay [1848] principle?",
+      "options": {
+        "A": "(1) The covenant must be restrictive; (2) it must have been taken for the benefit of land retained by the covenantee; (3) it must touch and concern the dominant land; and (4) the person seeking to enforce must have notice of the covenant",
+        "B": "(1) The covenant must be in writing; (2) it must be registered; (3) it must benefit the covenantee personally; and (4) the covenantor must have received consideration",
+        "C": "(1) The covenant must be restrictive; (2) the covenantor must have been in occupation; (3) it must have been in force for at least twelve years; and (4) it must not be contrary to planning law",
+        "D": "(1) The covenant must be positive; (2) it must have been taken for the benefit of the covenantee's land; (3) the successor must have paid full value; and (4) the covenant must be registered"
+      },
+      "correct_answer": "A",
+      "explanation": "The four Tulk v Moxhay conditions are: (1) the covenant must be restrictive in nature — a negative restraint, not a positive obligation; (2) the covenant must have been taken for the benefit of land retained by the covenantee — there must be a dominant tenement that the covenant benefits; (3) the covenant must touch and concern the dominant land — it must affect the land itself, not merely personal matters; and (4) the person against whom enforcement is sought must have notice of the covenant — under modern practice, this is achieved by registration as a burden on the folio (registered land) or as a land charge (unregistered land)."
+    },
+    {
+      "id": "PRL_M05_L02_Q05",
+      "question": "Under the Tulk v Moxhay [1848] principle as it operates in modern conveyancing, how is notice of a restrictive covenant most effectively established against a successor in title to the burdened land?",
+      "options": {
+        "A": "By the covenantee sending a formal letter to any prospective purchaser before sale is completed",
+        "B": "By registration of the covenant as a burden on the folio (for registered land) or as a land charge (for unregistered land) — all subsequent purchasers then take subject to the covenant regardless of actual knowledge",
+        "C": "Actual notice at the time of purchase is always required; registration alone is not sufficient",
+        "D": "By the covenant being referred to in the planning register maintained by the local authority"
+      },
+      "correct_answer": "B",
+      "explanation": "Under modern conveyancing practice, restrictive covenants are made binding on successors by registration. For registered land in Ireland, the covenant is registered as a burden on the folio of the servient tenement. For unregistered land, it is registered as a land charge. Once properly registered, all subsequent purchasers take subject to the covenant, regardless of whether they have actual knowledge of it. This provides certainty for both the benefiting and burdened parties. While actual notice was sufficient in the original Tulk v Moxhay case (Moxhay actually knew of the covenant), modern conveyancing relies on registration to ensure enforceability."
+    },
+    {
+      "id": "PRL_M05_L02_Q06",
+      "question": "What is a 'building scheme' (also called a scheme of development) in the context of restrictive covenants?",
+      "options": {
+        "A": "A planning permission granted to a developer to build residential properties on a defined estate",
+        "B": "An arrangement where a developer sells off plots subject to a common set of covenants, with the intention that each purchaser should have the benefit and be subject to the burden of all the covenants — creating mutual enforceability between all plot owners",
+        "C": "A contractual scheme between a developer and a local authority to provide public open spaces in exchange for planning permission",
+        "D": "An agreement between neighbouring landowners to maintain their properties to a specified standard"
+      },
+      "correct_answer": "B",
+      "explanation": "A building scheme (or scheme of development) arises where a developer sells off plots of land subject to a common set of covenants, with the intention that each purchaser should have the benefit of and be subject to the burden of all the covenants. The key feature is mutual enforceability: each plot owner can enforce the restrictive covenants against every other plot owner. This is enormously important in residential estates, where each homeowner has a direct interest in ensuring their neighbours comply with the same restrictions (for example, not subdividing their plot or building commercial premises)."
+    },
+    {
+      "id": "PRL_M05_L02_Q07",
+      "question": "In Elliston v Reacher [1908], what four conditions were established for a valid building scheme?",
+      "options": {
+        "A": "(1) A common solicitor; (2) a defined estate; (3) the same restrictions for all plots; and (4) registration of the scheme",
+        "B": "(1) A common vendor; (2) the estate was laid out in defined plots; (3) the restrictions were intended to benefit all plots in the scheme; and (4) each purchaser knew they were taking subject to restrictions applying equally to all other plots",
+        "C": "(1) The same purchase price for all plots; (2) a common solicitor; (3) identical covenant terms; and (4) a registered plan showing all plots",
+        "D": "(1) Identical restrictions; (2) a written building scheme agreement; (3) registration; and (4) acknowledgement by each purchaser"
+      },
+      "correct_answer": "B",
+      "explanation": "Elliston v Reacher [1908] established four conditions for a valid building scheme: (1) there must be a common vendor — all plots must be sold from a single original owner; (2) the estate must have been laid out in defined plots, with a clear plan identifying each; (3) the restrictions must have been intended to benefit all plots in the scheme — not merely to benefit the vendor personally; and (4) each purchaser must have known that they were taking subject to restrictions that applied to all other plots equally. Where these conditions are satisfied, all plot owners can enforce the covenants against each other, creating a form of local law for the estate."
+    },
+    {
+      "id": "PRL_M05_L02_Q08",
+      "question": "Before the LCLRA 2009, could the burden of a positive freehold covenant (an obligation to spend money or to do something) run with the land in equity?",
+      "options": {
+        "A": "Yes — the Tulk v Moxhay principle applied equally to both positive and negative covenants",
+        "B": "No — the Tulk v Moxhay principle applied only to restrictive covenants; the burden of positive covenants did not run with the land in equity, leaving a significant gap in the law",
+        "C": "Yes — but only where the positive covenant was supported by consideration",
+        "D": "Yes — positive covenants could run with the land in equity where they were registered on the folio"
+      },
+      "correct_answer": "B",
+      "explanation": "Before the LCLRA 2009, the burden of a positive freehold covenant — an obligation to do something or spend money — did not run with the land at common law (Austerberry principle) and also did not run with the land in equity under the Tulk v Moxhay principle. The equitable principle was limited to restrictive covenants only. This was a well-recognised gap in English and Irish property law: there was no effective mechanism to bind successors in title to positive obligations under freehold covenants. This gap was partially addressed by the LCLRA 2009."
+    },
+    {
+      "id": "PRL_M05_L02_Q09",
+      "question": "What is the significance of section 48 of the LCLRA 2009 for freehold covenants?",
+      "options": {
+        "A": "It abolished the Tulk v Moxhay principle for post-2009 covenants",
+        "B": "It provides that positive freehold covenants entered into after 1 December 2009 can be made to run with the land and bind successors in title, provided the conveyance expressly so provides and the covenant is registered — this is a radical change from the pre-2009 position",
+        "C": "It introduced a mandatory twelve-year limitation period for the enforcement of freehold covenants",
+        "D": "It provides that restrictive covenants automatically expire after twenty-five years unless renewed"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 48 of the LCLRA 2009 is a radical reform of freehold covenant law. It provides that positive freehold covenants entered into after 1 December 2009 can be made to run with the land and bind successors in title — provided the conveyance expressly states that the burden is to run and the covenant is registered. This allowed positive covenants to bind successors for the first time. Previously, only equitable restrictive covenants under Tulk v Moxhay could do so. Section 48 therefore closes the significant gap in pre-2009 law where positive obligations on freehold land could not be enforced against successors."
+    },
+    {
+      "id": "PRL_M05_L02_Q10",
+      "question": "What does section 49 of the LCLRA 2009 provide regarding freehold covenants?",
+      "options": {
+        "A": "It requires all freehold covenants to be registered with the Property Registration Authority within six months of creation",
+        "B": "It provides that the court has jurisdiction to modify or discharge a freehold covenant that is obsolete, where it impedes a reasonable use of the land and causes no practical benefit to the person entitled to enforce it",
+        "C": "It abolishes building schemes and replaces them with a statutory estate management regime",
+        "D": "It provides for the automatic extinguishment of freehold covenants after forty years"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 49 of the LCLRA 2009 gives the court jurisdiction to modify or discharge a freehold covenant where: (1) it is obsolete — for example, the purpose for which it was imposed is no longer achievable; and (2) it impedes a reasonable use of the burdened land and causes no practical benefit to the person entitled to enforce it. This is an important provision that allows landowners burdened by old or unnecessary covenants to seek their removal or modification, preventing covenants from becoming an unreasonable drag on the use and development of land long after their original purpose has ceased to be relevant."
+    }
+  ]
+}

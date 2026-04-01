@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_06_Lesson_02_Civil_Partnership_and_Cohabitants.txt",
+  "module_number": 6,
+  "module_title": "Family Property",
+  "lesson_number": 2,
+  "lesson_title": "Civil Partnership and Cohabitants: Property Rights",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M06_L02_Q01",
+      "question": "Which Act created the primary statutory framework governing the property rights of civil partners and cohabitants in Ireland?",
+      "options": {
+        "A": "The Family Home Protection Act 1976",
+        "B": "The Civil Partnership and Certain Rights and Obligations of Cohabitants Act 2010",
+        "C": "The Family Law Act 1995",
+        "D": "The Land and Conveyancing Law Reform Act 2009"
+      },
+      "correct_answer": "B",
+      "explanation": "The Civil Partnership and Certain Rights and Obligations of Cohabitants Act 2010 created two separate regimes: a comprehensive scheme for civil partners analogous to the family home regime under the 1976 Act, and a discretionary redress scheme for qualified cohabitants under Part 15. The 1976 Act applies to married couples, not civil partners or cohabitants."
+    },
+    {
+      "id": "PRL_M06_L02_Q02",
+      "question": "Under which Part of the Civil Partnership and Certain Rights and Obligations of Cohabitants Act 2010 is the shared home protection for civil partners contained?",
+      "options": {
+        "A": "Part 2",
+        "B": "Part 8",
+        "C": "Part 4",
+        "D": "Part 15"
+      },
+      "correct_answer": "C",
+      "explanation": "Part 4 of the 2010 Act creates a regime for the shared home of civil partners that is broadly analogous to the family home regime under the Family Home Protection Act 1976. Part 15 deals with the separate redress scheme for qualified cohabitants."
+    },
+    {
+      "id": "PRL_M06_L02_Q03",
+      "question": "What is the consequence of a conveyance of a civil partner's interest in the shared home made without the prior written consent of the other civil partner under the 2010 Act?",
+      "options": {
+        "A": "The conveyance is voidable at the option of the non-consenting civil partner",
+        "B": "The conveyance is void",
+        "C": "The conveyance is valid but the non-consenting civil partner may claim damages",
+        "D": "The conveyance is valid provided the purchaser had no notice of the civil partnership"
+      },
+      "correct_answer": "B",
+      "explanation": "Under Part 4 of the 2010 Act, a conveyance of an interest in the shared home made without the prior written consent of the other civil partner is void. This mirrors the position under section 3 of the Family Home Protection Act 1976 for married couples. The same principles apply: consent must be informed and freely given."
+    },
+    {
+      "id": "PRL_M06_L02_Q04",
+      "question": "Following the enactment of the Marriage Equality Act 2015, which regime governs same-sex couples who subsequently marry?",
+      "options": {
+        "A": "Part 4 of the Civil Partnership and Certain Rights and Obligations of Cohabitants Act 2010",
+        "B": "Part 15 of the Civil Partnership and Certain Rights and Obligations of Cohabitants Act 2010",
+        "C": "The Family Home Protection Act 1976",
+        "D": "The Family Law Act 1995"
+      },
+      "correct_answer": "C",
+      "explanation": "Following the Marriage Equality Act 2015, same-sex couples may now marry. If they do so, they are governed by the Family Home Protection Act 1976 regime applicable to married couples. The civil partnership regime under the 2010 Act continues to apply to those who registered civil partnerships before 2015 and have not converted their civil partnership to a marriage."
+    },
+    {
+      "id": "PRL_M06_L02_Q05",
+      "question": "Under Part 15 of the Civil Partnership and Certain Rights and Obligations of Cohabitants Act 2010, what is the general qualifying period of cohabitation required before a person can apply as a 'qualified cohabitant'?",
+      "options": {
+        "A": "One year",
+        "B": "Three years, or one year if there is a child of the relationship",
+        "C": "Five years, or two years if there is a child of the relationship",
+        "D": "Seven years in all cases"
+      },
+      "correct_answer": "C",
+      "explanation": "Part 15 of the 2010 Act defines a qualified cohabitant as a person who has lived with another in an intimate and committed relationship, not as a spouse or civil partner, for at least five years, or at least two years if they have a child together. These thresholds are frequently tested in the FE-1 examination."
+    },
+    {
+      "id": "PRL_M06_L02_Q06",
+      "question": "Which of the following orders can a qualified cohabitant apply for under Part 15 of the Civil Partnership and Certain Rights and Obligations of Cohabitants Act 2010?",
+      "options": {
+        "A": "A property adjustment order, a compensatory maintenance order, or provision from the estate of a deceased cohabitant",
+        "B": "An automatic half-share of any jointly occupied property",
+        "C": "A declaration that the shared home is void as against them",
+        "D": "A lien over the property to secure their contribution to the mortgage"
+      },
+      "correct_answer": "A",
+      "explanation": "Under Part 15 of the 2010 Act, a qualified cohabitant may apply for a property adjustment order, a compensatory maintenance order, or provision from the estate of a deceased cohabitant. The court exercises a genuinely discretionary jurisdiction and does not apply automatic entitlements. It must consider factors including financial dependence, duration of the relationship, and contributions made."
+    },
+    {
+      "id": "PRL_M06_L02_Q07",
+      "question": "Which section of the Civil Partnership and Certain Rights and Obligations of Cohabitants Act 2010 sets out the factors the court must consider when determining a cohabitant redress application, as confirmed in MN v ST [2022]?",
+      "options": {
+        "A": "Section 48",
+        "B": "Section 100",
+        "C": "Section 173",
+        "D": "Section 200"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 173 of the 2010 Act lists the factors the court must consider when exercising its discretion on a cohabitant redress application, including financial circumstances, contributions, and the effect of the relationship on earning capacity. In MN v ST [2022], the Supreme Court confirmed that these factors are not exhaustive but indicative, and that the jurisdiction is genuinely discretionary."
+    },
+    {
+      "id": "PRL_M06_L02_Q08",
+      "question": "In MN v ST [2022], what did the Supreme Court confirm about the nature of the court's jurisdiction under Part 15 of the Civil Partnership and Certain Rights and Obligations of Cohabitants Act 2010?",
+      "options": {
+        "A": "The court must award the cohabitant a minimum of one quarter of the shared property",
+        "B": "The jurisdiction is genuinely discretionary and the listed factors are not exhaustive",
+        "C": "The court has no jurisdiction to award a property adjustment order unless the cohabitant is on the title deeds",
+        "D": "The cohabitant automatically acquires a beneficial interest after two years of cohabitation"
+      },
+      "correct_answer": "B",
+      "explanation": "In MN v ST [2022], the Supreme Court confirmed that the court's jurisdiction under Part 15 is genuinely discretionary and that the factors listed in section 173 — financial circumstances, contributions, the effect of the relationship on earning capacity — are not exhaustive but indicative. This case is important authority for the nature of the cohabitant scheme and is regularly cited on FE-1 papers."
+    },
+    {
+      "id": "PRL_M06_L02_Q09",
+      "question": "Which equitable doctrines remained relevant to cohabitants' property disputes before the Civil Partnership and Certain Rights and Obligations of Cohabitants Act 2010 came into force, and continue to be relevant where the statutory thresholds are not met?",
+      "options": {
+        "A": "Mortmain and mortgagee in possession",
+        "B": "Resulting and constructive trusts",
+        "C": "Cy-près and conversion",
+        "D": "Legal charge and equitable mortgage"
+      },
+      "correct_answer": "B",
+      "explanation": "Before the 2010 Act and where its thresholds are not met, the law of resulting and constructive trusts governs cohabitants' property disputes. The leading pre-2010 Irish case O'D v O'D applied these equitable doctrines to resolve property disputes between cohabitants. Trust principles remain relevant where parties have separated before the Act's qualifying periods are satisfied."
+    },
+    {
+      "id": "PRL_M06_L02_Q10",
+      "question": "Does the shared home protection under Part 4 of the Civil Partnership and Certain Rights and Obligations of Cohabitants Act 2010 operate for cohabitants in the same automatic voidness mechanism as it does for civil partners?",
+      "options": {
+        "A": "Yes, a conveyance without a cohabitant's consent is void in the same way as for civil partners",
+        "B": "No, the cohabitant's remedy is a court application for redress under Part 15; there is no automatic voidness mechanism",
+        "C": "Yes, but only if the cohabitant has been on the title deeds for at least two years",
+        "D": "No, cohabitants have no protection whatsoever under the 2010 Act"
+      },
+      "correct_answer": "B",
+      "explanation": "The 2010 Act does not give cohabitants the same automatic voidness mechanism as civil partners. Under Part 4, a conveyance of the civil partner's shared home without consent is void. For cohabitants, Part 15 provides a discretionary redress scheme requiring a court application. There is no real-time consent requirement equivalent to section 3 of the 1976 Act for cohabitants."
+    }
+  ]
+}

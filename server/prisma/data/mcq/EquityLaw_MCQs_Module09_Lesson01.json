@@ -1,0 +1,131 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "Module_09_Lesson_01_Injunctions___Types_and_the_Campus_Oil_Test.txt",
+  "module_number": 9,
+  "module_title": "Injunctions",
+  "lesson_number": 1,
+  "lesson_title": "Injunctions: Types and the Campus Oil Test",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EQL_M09_L01_Q01",
+      "question": "What is the threshold condition that must be satisfied before an injunction may be granted?",
+      "options": {
+        "A": "The applicant must establish a probability of success at trial.",
+        "B": "The court will not grant an injunction where a common law remedy of damages would adequately compensate the plaintiff — inadequacy of damages is a threshold condition for injunctive relief.",
+        "C": "The applicant must show the defendant acted dishonestly.",
+        "D": "The applicant must provide security for the defendant's costs."
+      },
+      "correct_answer": "B",
+      "explanation": "An injunction is an equitable remedy — it is discretionary and not available as of right. The court will not grant an injunction where the common law remedy of damages would adequately compensate the plaintiff. The inadequacy of damages is the threshold condition for injunctive relief. If money can fully repair the harm, equity will not intervene with the extraordinary remedy of an injunction."
+    },
+    {
+      "id": "EQL_M09_L01_Q02",
+      "question": "What is the distinction between a prohibitory injunction and a mandatory injunction?",
+      "options": {
+        "A": "A prohibitory injunction is final; a mandatory injunction is interlocutory.",
+        "B": "A prohibitory injunction orders the defendant not to do something; a mandatory injunction orders the defendant to take positive action.",
+        "C": "A prohibitory injunction is granted by the High Court; a mandatory injunction is granted by the Court of Appeal.",
+        "D": "A prohibitory injunction is available as of right; a mandatory injunction requires the court's discretion."
+      },
+      "correct_answer": "B",
+      "explanation": "A prohibitory injunction orders the defendant not to do something — for example, not to publish defamatory material, not to continue a nuisance. A mandatory injunction orders the defendant to take positive action — for example, to remove a structure, to restore a pipeline, to take a specific step. Mandatory injunctions are harder to obtain than prohibitory injunctions because they impose positive obligations and are more difficult to supervise and potentially more disruptive."
+    },
+    {
+      "id": "EQL_M09_L01_Q03",
+      "question": "In Campus Oil Ltd v Minister for Industry and Energy (1983), the Irish Supreme Court established the test for granting interlocutory injunctions. What is the first stage of that test?",
+      "options": {
+        "A": "The applicant must show a strong prima facie case.",
+        "B": "The applicant must show there is a fair question to be tried — that the claim is not frivolous or vexatious.",
+        "C": "The applicant must show the balance of convenience favours the grant.",
+        "D": "The applicant must show damages would be an inadequate remedy."
+      },
+      "correct_answer": "B",
+      "explanation": "The first stage of the Campus Oil test, established by the Irish Supreme Court in Campus Oil Ltd v Minister for Industry and Energy (1983), asks whether there is a fair question to be tried. The applicant must show their claim is not frivolous or vexatious — a relatively low threshold. The applicant does not need to demonstrate a probability of success at trial. Only clearly hopeless claims are filtered out at this stage."
+    },
+    {
+      "id": "EQL_M09_L01_Q04",
+      "question": "What is the second stage of the Campus Oil test for interlocutory injunctions?",
+      "options": {
+        "A": "The applicant must demonstrate the status quo favours their position.",
+        "B": "The court weighs the balance of convenience — the potential harm to each party from the grant or refusal of the injunction.",
+        "C": "The court must be satisfied that damages would be an inadequate remedy for the applicant.",
+        "D": "The applicant must give an undertaking as to damages."
+      },
+      "correct_answer": "C",
+      "explanation": "The second stage of the Campus Oil test asks whether the court should be satisfied that damages would be an inadequate remedy for the applicant. If money could fully compensate the applicant for the harm suffered pending trial, there is no need for the extraordinary remedy of an injunction. Only where damages would be inadequate does the court proceed to consider the balance of convenience."
+    },
+    {
+      "id": "EQL_M09_L01_Q05",
+      "question": "At the balance of convenience stage of the Campus Oil test, what does the court assess?",
+      "options": {
+        "A": "The relative financial strength of the parties.",
+        "B": "The potential harm to the applicant if the injunction is refused, weighed against the potential harm to the defendant if it is granted.",
+        "C": "The likelihood that the applicant will succeed at trial.",
+        "D": "Whether the applicant has acted promptly in seeking the injunction."
+      },
+      "correct_answer": "B",
+      "explanation": "At the balance of convenience stage, the court weighs the potential harm to the applicant if the injunction is refused against the potential harm to the defendant if it is granted. The court asks which course of action carries the least risk of injustice. Where the balance is equal, the court may consider preserving the status quo pending trial. This is a broad, holistic assessment that gives weight to all relevant circumstances."
+    },
+    {
+      "id": "EQL_M09_L01_Q06",
+      "question": "What is an undertaking as to damages, and why is it required in interlocutory injunction proceedings?",
+      "options": {
+        "A": "A promise by the defendant to pay the applicant's legal costs if the injunction is upheld at trial.",
+        "B": "A promise by the applicant to compensate the defendant for any loss caused by the injunction if it turns out at trial that the injunction should not have been granted.",
+        "C": "A deposit paid into court by the applicant as security for the defendant's potential loss.",
+        "D": "A statutory requirement that the applicant's legal advisers certify the merits of the application."
+      },
+      "correct_answer": "B",
+      "explanation": "An undertaking as to damages is a promise given by the applicant that if it turns out at trial that the injunction should not have been granted, the applicant will compensate the defendant for any loss caused by the interim order. It is a condition of obtaining interlocutory relief and serves as a safeguard for defendants who are restrained pending trial. If the applicant ultimately loses, the defendant may apply to enforce the undertaking and recover their loss."
+    },
+    {
+      "id": "EQL_M09_L01_Q07",
+      "question": "A mandatory interlocutory injunction is subject to a higher threshold than a prohibitory interlocutory injunction. What threshold must an applicant for a mandatory interlocutory injunction satisfy?",
+      "options": {
+        "A": "A fair question to be tried — the same as for a prohibitory interlocutory injunction.",
+        "B": "A strong prima facie case — substantially more than the fair question standard.",
+        "C": "Proof beyond reasonable doubt that the defendant has breached a legal obligation.",
+        "D": "A balance of convenience that clearly and overwhelmingly favours the applicant."
+      },
+      "correct_answer": "B",
+      "explanation": "Mandatory interlocutory injunctions are subject to a higher threshold than prohibitory injunctions. Because they compel positive action rather than mere restraint, the court requires the applicant to establish a strong prima facie case — substantially more than the fair question to be tried standard. This reflects the more drastic nature of compelling positive action and the greater risk of injustice if a mandatory order is wrongly granted."
+    },
+    {
+      "id": "EQL_M09_L01_Q08",
+      "question": "What is a quia timet injunction, and what must the applicant demonstrate to obtain one?",
+      "options": {
+        "A": "An injunction to restrain an existing breach — granted only after the harm has already occurred.",
+        "B": "An injunction to restrain a threatened or apprehended wrong that has not yet occurred — the applicant must demonstrate a high degree of probability that the anticipated wrong will materialise.",
+        "C": "An injunction to preserve assets pending the outcome of litigation — equivalent to a Mareva injunction.",
+        "D": "An injunction granted on an inter partes basis after a full hearing on the merits."
+      },
+      "correct_answer": "B",
+      "explanation": "A quia timet injunction is an injunction to restrain a threatened or apprehended wrong — one that has not yet occurred but which the applicant has strong reasons to believe will occur imminently. The applicant must demonstrate a high degree of probability that the anticipated wrong will materialise. The quia timet injunction differs from a standard interlocutory injunction in that the harm being restrained is prospective rather than ongoing."
+    },
+    {
+      "id": "EQL_M09_L01_Q09",
+      "question": "What are Anton Piller orders, and on what basis are they granted?",
+      "options": {
+        "A": "Orders requiring a defendant to pay money into court pending trial; granted on an inter partes basis.",
+        "B": "Search orders — now known as search orders — that allow the plaintiff to enter the defendant's premises to search for and seize evidence; granted ex parte where there is a strong prima facie case, serious potential damage, and clear evidence that material is likely to be destroyed.",
+        "C": "Orders freezing a defendant's assets to prevent dissipation pending judgment; granted on application with notice.",
+        "D": "Orders requiring the defendant to file a sworn affidavit disclosing their assets to the court."
+      },
+      "correct_answer": "B",
+      "explanation": "Anton Piller orders — now known as search orders — allow the plaintiff to enter the defendant's premises to search for and seize evidence. They are granted on an ex parte basis — without notice to the defendant — in cases of extreme urgency where advance notice would defeat the purpose of the order. The criteria are strict: a strong prima facie case; serious potential damage to the plaintiff; and clear evidence that the defendant possesses relevant material that is likely to be destroyed if notice is given."
+    },
+    {
+      "id": "EQL_M09_L01_Q10",
+      "question": "For FE-1 examination purposes, which of the following correctly sets out the sequence of the Campus Oil test for interlocutory injunctions?",
+      "options": {
+        "A": "Balance of convenience; adequacy of damages; fair question to be tried; undertaking as to damages.",
+        "B": "Fair question to be tried; inadequacy of damages; balance of convenience — with the undertaking as to damages given as a condition of obtaining the order.",
+        "C": "Probability of success; irreparable harm; balance of convenience; undertaking as to damages.",
+        "D": "Strong prima facie case; inadequacy of damages; balance of convenience; undertaking as to damages."
+      },
+      "correct_answer": "B",
+      "explanation": "The correct sequence for the Campus Oil test, as established by the Irish Supreme Court in Campus Oil Ltd v Minister for Industry and Energy (1983), is: (1) fair question to be tried — is the claim not frivolous or vexatious? (2) inadequacy of damages — would damages be an inadequate remedy for the applicant? (3) balance of convenience — does the balance of harm favour granting or refusing the injunction? The undertaking as to damages is given as a condition of obtaining the order. Strong prima facie case is the higher threshold applicable only to mandatory interlocutory injunctions, not ordinary prohibitory ones."
+    }
+  ]
+}

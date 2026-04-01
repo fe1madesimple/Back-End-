@@ -1,0 +1,131 @@
+{
+  "subject": "Constitutional Law",
+  "el_script_ref": "ConstitutionalLaw_ElevenLabs_Module03_Lesson03.txt",
+  "module_number": 3,
+  "module_title": "Judicial Review and Constitutional Remedies",
+  "lesson_number": 3,
+  "lesson_title": "Article 26 Reference Procedure",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CON_M03_L03_Q01",
+      "question": "Under Article 26.2.1°, once the President refers a Bill to the Supreme Court, within what period must the Supreme Court pronounce its decision?",
+      "options": {
+        "A": "Fourteen days",
+        "B": "Twenty-one days",
+        "C": "Sixty days",
+        "D": "No fixed time limit — the court decides at its discretion"
+      },
+      "correct_answer": "C",
+      "explanation": "Article 26.2.1° requires the Supreme Court to consider the Bill and pronounce its decision not later than sixty days after the date of reference. This tight constitutional deadline underscores the urgency of the pre-enactment review process and prevents the Bill from being held up indefinitely pending a decision."
+    },
+    {
+      "id": "CON_M03_L03_Q02",
+      "question": "Under Article 26.3.3°, following a Supreme Court ruling that a referred Bill (or part of it) is repugnant to the Constitution, what action must the President take?",
+      "options": {
+        "A": "The President must decline to sign the Bill and return it to the Oireachtas for amendment",
+        "B": "The President must decline to sign the Bill and promulgate the remainder (if any) as a partial Act",
+        "C": "The President must decline to sign the Bill, which lapses entirely",
+        "D": "The President must seek a referendum on the Bill within ninety days"
+      },
+      "correct_answer": "C",
+      "explanation": "Article 26.3.3° provides that where the Supreme Court finds any provision repugnant to the Constitution, the President shall decline to sign the Bill. This means the entire Bill lapses — there is no mechanism for signing a severred remainder of a referred Bill. The Bill cannot be re-presented to the President in amended form without returning to both Houses of the Oireachtas."
+    },
+    {
+      "id": "CON_M03_L03_Q03",
+      "question": "Which of the following Bills is expressly excluded from the Article 26 reference procedure by the text of Article 26.1.1°?",
+      "options": {
+        "A": "A Bill to amend the Companies Acts",
+        "B": "A Bill to amend the Criminal Justice Acts",
+        "C": "A Bill certified by the Ceann Comhairle as a Money Bill",
+        "D": "A Bill that has been the subject of a Dáil guillotine motion"
+      },
+      "correct_answer": "C",
+      "explanation": "Article 26.1.1° expressly excludes three categories from the reference procedure: (i) Money Bills; (ii) Bills expressed to be urgent under Article 24; and (iii) Bills to amend the Constitution. The exclusion of Money Bills reflects the constitutional primacy of the Dáil in financial matters. A Bill certified as a Money Bill by the Ceann Comhairle therefore cannot be referred."
+    },
+    {
+      "id": "CON_M03_L03_Q04",
+      "question": "In Re Article 26 and the Planning and Development Bill 1999 [2000] 2 IR 321, the Supreme Court upheld the constitutionality of the Bill. A landowner subsequently challenged the enacted Planning and Development Act 2000 in plenary High Court proceedings. What is the outcome?",
+      "options": {
+        "A": "The challenge may proceed on grounds not considered in the Article 26 reference",
+        "B": "The challenge is absolutely barred by Article 34.3.2° — the Act is immune from any further constitutional challenge",
+        "C": "The challenge may only be brought in the Supreme Court, not in the High Court",
+        "D": "The challenge may proceed if the landowner demonstrates a personal constitutional right that was not considered in the reference"
+      },
+      "correct_answer": "B",
+      "explanation": "The irrebuttable bar under Article 34.3.2° is absolute: once the Supreme Court upholds a Bill under Article 26, the resulting Act cannot be challenged on any constitutional ground by any person in any proceedings. The bar operates regardless of whether the particular argument was made in the reference, who brings the challenge, or what personal rights are asserted. See Re Article 26 and the Employment Equality Bill 1996 [1997] 2 IR 321 affirming the absolute nature of this protection."
+    },
+    {
+      "id": "CON_M03_L03_Q05",
+      "question": "The Article 26 reference procedure has been described as a 'one-way shield' for legislation. Why is this characterisation accurate?",
+      "options": {
+        "A": "Because only the President can refer Bills, not private citizens or opposition TDs",
+        "B": "Because an uphold under Art. 26 grants the legislation absolute future immunity, but a finding of repugnancy means the entire Bill lapses with no future reconsideration",
+        "C": "Because the Supreme Court’s decision only applies prospectively, shielding past government acts but not future ones",
+        "D": "Because the procedure can only be used once per legislative term"
+      },
+      "correct_answer": "B",
+      "explanation": "The 'one-way shield' description captures both outcomes of an Art. 26 reference: (i) if upheld — the Act is permanently shielded from future challenge (Art. 34.3.2°); (ii) if found repugnant — the entire Bill lapses with no mechanism for the President to sign a partial version. This asymmetry means the procedure creates either an absolute guarantee of future validity or an outright loss of the Bill. Only the President may make a reference — citizens, opposition, and courts cannot initiate Art. 26 review."
+    },
+    {
+      "id": "CON_M03_L03_Q06",
+      "question": "In Re Article 26 and the Electoral (Amendment) Bill 1983 [1984] IR 268, the Supreme Court upheld the Bill. In deciding the reference, what role did the court perform that differs from its usual adjudicative function?",
+      "options": {
+        "A": "The court acted as a law reform body, recommending improvements to the Bill before upholding it",
+        "B": "The court considered the Bill in the abstract without the assistance of adversarial argument from parties who would actually be affected",
+        "C": "The court could only consider constitutional grounds specified by the President in the reference instrument",
+        "D": "The court relied exclusively on written submissions without oral argument due to the time constraint"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 26 proceedings are unique in that they are non-adversarial and abstract — the court considers the Bill without parties who have a direct interest in the outcome. Counsel are appointed (including counsel for the Attorney General and, in modern practice, amicus counsel) but there is no plaintiff or defendant with a personal stake. This abstractness is one reason the irrebuttable bar of Art. 34.3.2° is sometimes criticised — specific impacts on real persons cannot be fully anticipated."
+    },
+    {
+      "id": "CON_M03_L03_Q07",
+      "question": "The President refers a Bill that contains both constitutional and unconstitutional provisions to the Supreme Court. The court severs the unconstitutional provision but upholds the remainder. Must the President sign the Bill?",
+      "options": {
+        "A": "Yes — the court’s finding that the remainder is constitutional obliges the President to sign",
+        "B": "No — Article 26.3.3° requires the President to decline to sign any Bill in which any provision is found repugnant, and the entire Bill lapses",
+        "C": "The President has a discretion — the President may sign the severed remainder if the Council of State so advises",
+        "D": "The President must sign but may simultaneously refer the question of severability back to the Supreme Court"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 26.3.3° is unambiguous: if any provision of the referred Bill is found repugnant, the President must decline to sign the Bill. There is no mechanism for partial signing of a severed Bill following an Article 26 reference. The entire Bill lapses. This is a critical procedural feature distinguishing Art. 26 from plenary constitutional challenge, where courts can sever invalid provisions."
+    },
+    {
+      "id": "CON_M03_L03_Q08",
+      "question": "Which of the following considerations led to concerns about the use of the Article 26 procedure as a political tool?",
+      "options": {
+        "A": "Opposition parties lobbied the President to refer Bills for tactical reasons, which the President was obliged to do on demand",
+        "B": "If the Bill is upheld, it acquires permanent immunity from challenge, potentially shielding legislation from future constitutional developments",
+        "C": "The Supreme Court’s Art. 26 decisions are published in advance of the sixty-day deadline, enabling political reaction",
+        "D": "The President can refer a Bill multiple times on different constitutional grounds if the first reference results in an uphold"
+      },
+      "correct_answer": "B",
+      "explanation": "The principal concern about the Art. 26 procedure as a 'rubber stamp' or political shield is that an uphold creates permanent Art. 34.3.2° immunity. Governments may strategically encourage Presidential reference of politically sensitive Bills precisely to insulate them from future judicial challenge. Once upheld, the Act cannot be challenged even if constitutional standards evolve significantly. The abstract, non-adversarial nature of the reference compounds this concern."
+    },
+    {
+      "id": "CON_M03_L03_Q09",
+      "question": "How many Article 26 references have resulted in a finding of repugnancy (i.e., the Bill was struck down) to date?",
+      "options": {
+        "A": "None — all Bills referred have been upheld",
+        "B": "Two references resulted in Bills being struck down",
+        "C": "Five references resulted in Bills being struck down",
+        "D": "More than ten references resulted in Bills being struck down"
+      },
+      "correct_answer": "B",
+      "explanation": "Of the approximately seventeen Article 26 references made since 1937, two have resulted in the Bill being found repugnant and therefore lapsing: Re Article 26 and the Offences Against the State (Amendment) Bill 1940 [1940] IR 470 (the court upheld much but found one provision repugnant) and Re Article 26 and the Employment Equality Bill 1996 [1997] 2 IR 321 (a section requiring religious orders to comply with equality legislation was struck down). The overwhelming majority of references have resulted in the Bills being upheld."
+    },
+    {
+      "id": "CON_M03_L03_Q10",
+      "question": "In Re Article 26 and the Employment Equality Bill 1996 [1997] 2 IR 321, the Supreme Court found one provision of the Bill unconstitutional. That provision imposed costs of employing a disabled person on a religious order. What constitutional grounds led to the provision being struck down?",
+      "options": {
+        "A": "It violated the property rights of the religious order under Article 43",
+        "B": "It unjustly attacked the property rights of the institutions (cost obligations) and violated the religious freedom protected by Article 44",
+        "C": "It constituted an unconstitutional delegation of legislative power under Art. 15.2.1°",
+        "D": "It violated the separation of powers by making a quasi-judicial determination as to disability"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Article 26 and the Employment Equality Bill 1996, the offending provision required employers (including religious orders/churches) to bear the cost of reasonable accommodation for disabled employees up to a proportion of their annual turnover. The Supreme Court found this imposed an unjust burden on the property rights of the employing institution (Art. 43) and was an unconstitutional attack on property rights. The religious dimension also engaged Art. 44 concerns."
+    }
+  ]
+}

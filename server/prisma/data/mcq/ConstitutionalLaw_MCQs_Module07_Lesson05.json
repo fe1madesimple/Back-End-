@@ -1,0 +1,131 @@
+{
+  "subject": "Constitutional Law",
+  "el_script_ref": "ConstitutionalLaw_ElevenLabs_Module07_Lesson05.txt",
+  "module_number": 7,
+  "module_title": "Criminal Justice and Fair Procedures",
+  "lesson_number": 5,
+  "lesson_title": "The Duty to Preserve Evidence",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CON_M07_L05_Q01",
+      "question": "The prosecution's constitutional duty to preserve evidence in criminal proceedings derives primarily from:",
+      "options": {
+        "A": "Art. 40.1 — equality before the law",
+        "B": "Art. 38.1 — the guarantee of trial in due course of law, which includes the accused's right to a fair trial and access to potentially exculpatory material",
+        "C": "Art. 34.3.1° — the courts' inherent jurisdiction to regulate their own proceedings",
+        "D": "Art. 40.4.2° — the right to liberty"
+      },
+      "correct_answer": "B",
+      "explanation": "The prosecution's duty to preserve evidence flows from Art. 38.1's guarantee of trial 'in due course of law.' A fair trial requires that the accused have access to material which may assist their defence or undermine the prosecution case. Where the prosecution has destroyed, failed to preserve, or lost potentially relevant evidence, the accused's constitutional right to a fair trial may be compromised. The duty is not absolute — the courts balance the gravity of the loss, the prosecution's fault, and the resulting prejudice to the accused."
+    },
+    {
+      "id": "CON_M07_L05_Q02",
+      "question": "Murphy v DPP [1989] ILRM 71 (High Court, Costello J) is the foundational authority on the duty to preserve evidence. It established that:",
+      "options": {
+        "A": "The prosecution must preserve every piece of material gathered during the investigation, regardless of its relevance",
+        "B": "The prosecution is under a duty to preserve relevant evidence in its possession; where potentially relevant evidence is destroyed or lost through the prosecution's fault or inadvertence, the accused may seek prohibition of the trial",
+        "C": "Only physical forensic evidence must be preserved — witness statements need not be retained",
+        "D": "Evidence preservation duties apply only where the accused specifically requests retention of the material"
+      },
+      "correct_answer": "B",
+      "explanation": "Murphy v DPP [1989] ILRM 71 (Costello J, High Court) established the constitutional duty on the prosecution to preserve evidence that is in its possession and might reasonably be required by the accused in the conduct of their defence. The case concerned the destruction of the accused's car — material evidence in a dangerous driving case. Costello J held that where the prosecution (or Gardaí on its behalf) destroys or loses evidence in circumstances where its preservation was reasonably required, this may constitute a breach of the accused's constitutional right to a fair trial, grounding prohibition of the prosecution."
+    },
+    {
+      "id": "CON_M07_L05_Q03",
+      "question": "In Braddish v DPP [2001] 3 IR 127 (Supreme Court), the Court clarified the scope of the duty to preserve evidence. It held that:",
+      "options": {
+        "A": "The duty to preserve evidence is absolute and any breach automatically requires prohibition of the trial",
+        "B": "The duty to seek out and preserve evidence extends to evidence the prosecution ought reasonably to have foreseen might be relevant and which was within its power to obtain and preserve; the remedy (prohibition) depends on the actual prejudice caused and whether a fair trial remains possible",
+        "C": "The duty applies only to physical evidence and not to CCTV footage or electronic records",
+        "D": "The duty to preserve evidence does not apply once the accused has been charged"
+      },
+      "correct_answer": "B",
+      "explanation": "Braddish v DPP [2001] 3 IR 127 is the leading Supreme Court authority. Hardiman J held that the Gardaí are under a constitutional duty to seek out and preserve evidence reasonably relevant to a prosecution, including material within their reasonable reach. The duty extends to evidence they ought to have known was relevant. However, prohibition is not automatic: the court assesses the degree of prosecutorial fault, the importance of the lost evidence to the defence, and whether the trial can still be conducted fairly. The proportionality of the remedy to the breach is the key consideration."
+    },
+    {
+      "id": "CON_M07_L05_Q04",
+      "question": "CCTV footage from a public area was available at the time of the alleged offence and the Gardaí were aware it existed, but failed to seize it. The footage was subsequently overwritten. In an application to prohibit the trial, which factor is MOST important?",
+      "options": {
+        "A": "The cost of the CCTV system and whether it was publicly or privately owned",
+        "B": "Whether the Gardaí were under a duty to seek out the footage (given its potential relevance), whether the failure to preserve it was deliberate or merely inadvertent, and whether the loss of the footage has caused actual prejudice to the accused's defence",
+        "C": "Whether the accused specifically requested that the footage be preserved before it was overwritten",
+        "D": "Whether the footage would have been admissible in evidence under the Criminal Justice Act 2006"
+      },
+      "correct_answer": "B",
+      "explanation": "Applying Braddish v DPP [2001] 3 IR 127, the court examines: (1) whether the Gardaí ought reasonably to have known that the CCTV footage might be relevant to the prosecution or defence; (2) whether the failure to secure it was intentional or merely negligent; and (3) whether the loss of the footage has actually prejudiced the accused's ability to mount their defence (e.g., would it have established an alibi or undermined a prosecution witness?). Prohibition is more likely where the failure was deliberate or where the lost material was central to the defence."
+    },
+    {
+      "id": "CON_M07_L05_Q05",
+      "question": "The remedy of prohibition of a trial for failure to preserve evidence is described as:",
+      "options": {
+        "A": "The automatic and mandatory response to any prosecutorial failure to preserve material",
+        "B": "A remedy of last resort — granted only where the breach of the duty to preserve evidence is so serious that a fair trial is no longer possible and no lesser remedy can address the prejudice",
+        "C": "Available at the discretion of the trial judge during the proceedings, not by way of judicial review",
+        "D": "A remedy available only to an accused who specifically requested preservation of the material before it was lost"
+      },
+      "correct_answer": "B",
+      "explanation": "Prohibition is not automatic. The courts emphasise that it is a remedy of last resort — granted only where the failure to preserve evidence is so fundamental to the defence case that no other remedy (such as a trial judge's direction to the jury about the missing evidence, or an adverse inference against the prosecution) can adequately remedy the prejudice. Lesser remedies may suffice where the missing evidence, while relevant, is not central to the accused's only line of defence. This proportionate approach was affirmed in Bowes v DPP [2003] 2 IR 25."
+    },
+    {
+      "id": "CON_M07_L05_Q06",
+      "question": "Bowes v DPP [2003] 2 IR 25 (Supreme Court) introduced an important qualification to the evidence preservation duty. It held that:",
+      "options": {
+        "A": "The duty applies only to evidence gathered after the accused has been arrested",
+        "B": "Where the loss of evidence was not deliberate and was caused by routine administrative processes (such as normal CCTV overwriting cycles), and the accused cannot demonstrate concrete prejudice to their defence, prohibition should not follow",
+        "C": "The duty to preserve evidence applies only in jury trials, not summary proceedings",
+        "D": "Any evidence destroyed within 6 months of the offence date automatically grounds prohibition"
+      },
+      "correct_answer": "B",
+      "explanation": "Bowes v DPP [2003] 2 IR 25 emphasised that the destruction of evidence through routine administrative processes — without any awareness by the prosecution that the material might be relevant — is assessed differently from deliberate destruction or culpable failure to preserve known relevant material. The court will consider: whether the prosecution was aware or should have been aware of the material's potential relevance; the circumstances of loss; and whether the accused has actually been prejudiced. Routine overwriting of CCTV in the absence of a specific request from the accused or obvious relevance does not automatically give rise to prohibition."
+    },
+    {
+      "id": "CON_M07_L05_Q07",
+      "question": "The duty to preserve evidence extends beyond An Garda Síochána to encompass:",
+      "options": {
+        "A": "Only the DPP's office — Garda failures are not attributable to the prosecution",
+        "B": "State bodies acting on the prosecution's behalf, and arguably private third parties if the prosecution had the power to compel them to retain material and failed to do so",
+        "C": "The accused's own solicitor — failure to preserve defence evidence is equally a constitutional breach",
+        "D": "Only evidence gathered post-charge — pre-charge investigation evidence is exempt"
+      },
+      "correct_answer": "B",
+      "explanation": "The duty has been interpreted broadly. An Garda Síochána, as the investigating arm of the State, is squarely within its scope. State bodies acting on behalf of the prosecution (e.g., forensic science laboratories) are also subject to the duty. The more difficult question arises with third-party private bodies (e.g., private CCTV operators) — the prosecution is not directly responsible for their failures, but where the Gardaí could have compelled preservation and failed to do so, this omission may itself constitute a breach of the duty. Courts focus on what was within the prosecution's power and control."
+    },
+    {
+      "id": "CON_M07_L05_Q08",
+      "question": "An accused seeks prohibition because the Gardaí failed to retain the accused's own clothing taken during arrest, which has since been disposed of. The prosecution argues the clothing was not relevant to any element of the offence. The court's approach is to:",
+      "options": {
+        "A": "Grant prohibition — any loss of items taken from the accused at arrest is automatically a breach of fair trial rights",
+        "B": "Assess whether the clothing was, or ought reasonably to have been recognised as, potentially relevant to the defence; if not, the failure to preserve it does not ground prohibition",
+        "C": "Grant prohibition — the State bears absolute responsibility for all items seized from an accused",
+        "D": "Refuse prohibition — only documentary evidence attracts the preservation duty, not physical items"
+      },
+      "correct_answer": "B",
+      "explanation": "The preservation duty is not engaged by every piece of material that passes through police hands — only material that is, or ought reasonably to be, relevant to the proceedings. If clothing seized at arrest had no potential relevance to the alleged offence (e.g., the offence was a white-collar crime and the clothing would prove nothing), its disposal does not breach the duty. However, where clothing might have carried forensic traces relevant to alibi, identity, or the nature of an alleged assault, the court would examine whether its significance ought reasonably to have been appreciated at the time of disposal."
+    },
+    {
+      "id": "CON_M07_L05_Q09",
+      "question": "Which of the following scenarios most clearly engages the constitutional duty to preserve evidence?",
+      "options": {
+        "A": "The accused's own solicitor loses documents relevant to the defence",
+        "B": "The Gardaí, aware that CCTV footage from the scene of an alleged assault might show the accused's location, fail to obtain and preserve it before it is automatically overwritten",
+        "C": "A private witness independently loses their diary containing relevant entries",
+        "D": "The prosecution fails to compel a hostile witness to give evidence at trial"
+      },
+      "correct_answer": "B",
+      "explanation": "The constitutional duty to preserve evidence is imposed on the prosecution/Gardaí and relates to material within their control or reasonably obtainable by them. Where the Gardaí are aware (or ought to be aware) that CCTV footage might be relevant — particularly in an alleged assault case where footage could exculpate the accused or corroborate the prosecution — they are under a positive duty to obtain and preserve it before it is overwritten. This scenario precisely mirrors the type of situation addressed in Braddish v DPP [2001] 3 IR 127."
+    },
+    {
+      "id": "CON_M07_L05_Q10",
+      "question": "Where a trial judge finds that the prosecution failed to preserve relevant evidence but concludes that prohibition is not warranted (as a fair trial is still possible), what alternative remedial options are available?",
+      "options": {
+        "A": "The only option is to acquit the accused immediately",
+        "B": "The trial judge may give an appropriate direction or warning to the jury about the missing evidence, including that the jury may draw an adverse inference against the prosecution from the failure to preserve the material",
+        "C": "The trial judge must direct the prosecution to re-gather the lost evidence before proceeding",
+        "D": "No remedy is available — once prohibition is refused, the missing evidence is treated as irrelevant"
+      },
+      "correct_answer": "B",
+      "explanation": "Where prohibition is refused (because the trial can still be conducted fairly despite the loss of evidence), the trial judge has the power to give appropriate remedial directions to the jury. This may include: directing the jury that the missing evidence might have assisted the defence; inviting the jury to consider whether the prosecution's failure to preserve the material should be weighed against it; or (in appropriate cases) directing an acquittal if the missing evidence was so central that no fair verdict can be reached. The proportionate remedy depends on the significance of the lost material and the degree of prosecutorial fault."
+    }
+  ]
+}

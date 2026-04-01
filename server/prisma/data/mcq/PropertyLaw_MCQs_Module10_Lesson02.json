@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_10_Lesson_02_Revocation_Codicils_and_Alteration.txt",
+  "module_number": 10,
+  "module_title": "Succession Law",
+  "lesson_number": 2,
+  "lesson_title": "Revocation, Codicils, and Alteration of Wills",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M10_L02_Q01",
+      "question": "A will is described as 'ambulatory' in nature. What does this mean?",
+      "options": {
+        "A": "A will automatically transfers to the testator's estate in a foreign jurisdiction",
+        "B": "A will speaks from death, not from the date it is made, and can be changed at any time during the testator's lifetime",
+        "C": "A will must be deposited with the Probate Office to take effect",
+        "D": "A will can be amended orally by the testator during their lifetime"
+      },
+      "correct_answer": "B",
+      "explanation": "A will is ambulatory — it speaks from death, not from the date it is made. This means the will takes effect as at the date of death, not the date of execution. The testator can change a will at any time during their lifetime. This is why after-acquired property can pass under a will, and why the testator can revoke or alter a will at any point before death."
+    },
+    {
+      "id": "PRL_M10_L02_Q02",
+      "question": "Under the Succession Act 1965, which of the following is NOT a recognised method of revoking a will?",
+      "options": {
+        "A": "Revocation by a subsequent will or codicil",
+        "B": "Revocation by a written declaration",
+        "C": "Revocation by destruction",
+        "D": "Revocation by oral declaration in the presence of two witnesses"
+      },
+      "correct_answer": "D",
+      "explanation": "Under the Succession Act 1965, the three recognised methods of revoking a will are: (1) revocation by a subsequent will or codicil — whether express or implied; (2) revocation by a written declaration that complies with section 78 formalities; and (3) revocation by destruction under section 85(2). Oral revocation, even in the presence of witnesses, is not effective. The formality requirements that apply to the making of a will are equally required for revocation by written declaration."
+    },
+    {
+      "id": "PRL_M10_L02_Q03",
+      "question": "In Re Fenwick, what level of incompatibility between a later will and an earlier will was held to be required for implied revocation?",
+      "options": {
+        "A": "Any overlap between the provisions of the two wills is sufficient to imply revocation",
+        "B": "A clear and necessary incompatibility — mere overlap is not sufficient for implied revocation",
+        "C": "The later will must expressly state that it impliedly revokes all earlier wills",
+        "D": "The later will must have been executed before a solicitor for implied revocation to operate"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Fenwick, the court held that an implied revocation requires a clear and necessary incompatibility between the provisions of the later will and the earlier will. Mere overlap between the provisions is not sufficient to imply revocation of the earlier will. Express revocation — through a revocation clause — is the safer and more practical approach in will drafting."
+    },
+    {
+      "id": "PRL_M10_L02_Q04",
+      "question": "Under section 85(2) of the Succession Act 1965, what two elements are required for revocation by destruction?",
+      "options": {
+        "A": "Destruction of the physical document and delivery of a replacement will within one year",
+        "B": "The physical act of destruction AND the intention to revoke (animus revocandi)",
+        "C": "Destruction in the presence of two witnesses and a written declaration of revocation",
+        "D": "Destruction by the testator and notification to the personal representative"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 85(2) of the Succession Act 1965, revocation by destruction requires two elements: (1) the physical act of destruction — burning, tearing, or otherwise destroying the will; and (2) the animus revocandi — the intention to revoke. Both elements must be present simultaneously. If a will is accidentally destroyed (for example, in a house fire), there is no revocation because there was no intention to revoke."
+    },
+    {
+      "id": "PRL_M10_L02_Q05",
+      "question": "A testator's will is accidentally destroyed in a house fire. Has the will been revoked?",
+      "options": {
+        "A": "Yes, because the physical document no longer exists",
+        "B": "No, because accidental destruction without the intention to revoke does not constitute revocation",
+        "C": "Yes, because destruction always revokes a will regardless of intention",
+        "D": "No, but only if a copy of the will can be produced as evidence of the original"
+      },
+      "correct_answer": "B",
+      "explanation": "Accidental destruction of a will does not revoke it because the animus revocandi — the intention to revoke — is absent. Under section 85(2) of the Succession Act 1965, both the physical act of destruction and the intention to revoke must be present for revocation by destruction to be effective. Where the will is accidentally destroyed, a copy or reconstruction of the will may be admitted to probate as evidence of the original's contents."
+    },
+    {
+      "id": "PRL_M10_L02_Q06",
+      "question": "Under section 85 of the Succession Act 1965, which event automatically revokes a will?",
+      "options": {
+        "A": "The birth of a child after execution of the will",
+        "B": "The subsequent marriage of the testator, unless the will was made in contemplation of that marriage",
+        "C": "The subsequent divorce of the testator from the spouse named in the will",
+        "D": "The death of a named beneficiary before the testator"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 85 of the Succession Act 1965, a will is automatically revoked by the subsequent marriage of the testator. The exception is where the will was made in contemplation of that specific marriage. A testator who made a will when single and then married without making a new will will have their prior will revoked by the marriage. Divorce does not automatically revoke a will — specific provisions change in effect but the will itself remains operative."
+    },
+    {
+      "id": "PRL_M10_L02_Q07",
+      "question": "What is the exception to the rule that subsequent marriage revokes a prior will under section 85 of the Succession Act 1965?",
+      "options": {
+        "A": "The rule is absolute and there is no exception",
+        "B": "The will is not revoked if it was made in contemplation of the marriage that subsequently takes place",
+        "C": "The will is not revoked if it was made within six months before the marriage",
+        "D": "The will is not revoked if the spouse consents to the will taking effect after the marriage"
+      },
+      "correct_answer": "B",
+      "explanation": "The exception to the rule that subsequent marriage revokes a prior will is where the will was made in contemplation of that specific marriage. If the testator made the will specifically anticipating the marriage that subsequently takes place, the will is not revoked. This exception requires that the will have been made with the particular marriage in mind — a general anticipation of future marriage is not sufficient."
+    },
+    {
+      "id": "PRL_M10_L02_Q08",
+      "question": "What is a codicil, and what formal requirements must it satisfy?",
+      "options": {
+        "A": "A codicil is a typed amendment added to a will by the testator's solicitor, which does not need to be separately executed",
+        "B": "A codicil is a separate document that amends, adds to, or qualifies an earlier will; it must comply with exactly the same formal requirements under section 78 of the Succession Act 1965 as a will itself",
+        "C": "A codicil is a verbal amendment to a will recorded by the solicitor who drafted the original will",
+        "D": "A codicil is an unsigned note attached to a will that supplements its provisions"
+      },
+      "correct_answer": "B",
+      "explanation": "A codicil is a separate document that amends, adds to, or qualifies an earlier will. It must comply with exactly the same formal requirements under section 78 of the Succession Act 1965 as a will itself — namely, it must be in writing, signed by the testator at the foot or end, and the signature must be witnessed by two witnesses present at the same time. A codicil is read together with the will as one testamentary instrument."
+    },
+    {
+      "id": "PRL_M10_L02_Q09",
+      "question": "What is the practical risk of an ineptly worded codicil?",
+      "options": {
+        "A": "An ineptly worded codicil will automatically be ignored by the court",
+        "B": "An ineptly worded codicil can create ambiguities that override clearer provisions in the original will",
+        "C": "An ineptly worded codicil revokes the original will in its entirety",
+        "D": "An ineptly worded codicil is void and the original will takes effect as if the codicil had never been made"
+      },
+      "correct_answer": "B",
+      "explanation": "Practitioners advise caution with codicils because an ineptly worded codicil can create ambiguities that override clearer provisions in the original will. Since the codicil and the will are read together as one instrument, poorly drafted amendments may generate disputes about the testator's intentions and can lead to expensive litigation over the construction of the combined document."
+    },
+    {
+      "id": "PRL_M10_L02_Q10",
+      "question": "Under section 86 of the Succession Act 1965, what is the status of alterations made to a will after execution?",
+      "options": {
+        "A": "Post-execution alterations are valid if they are in the testator's own handwriting",
+        "B": "Post-execution alterations are presumed to have been made after execution and are of no effect unless separately executed and attested in the same manner as the will itself",
+        "C": "Post-execution alterations are valid provided they are initialled by the testator and one witness",
+        "D": "Post-execution alterations are void only if they increase the value of a bequest"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 86 of the Succession Act 1965 provides that alterations — interlineations, obliterations, crossings out — made after execution of the will are presumed to have been made after execution and are therefore of no effect unless they are separately executed and attested in the same manner as the will itself. A testator who wants to amend their will must either make a new will or execute a properly attested codicil; informal handwritten annotations on the will itself are ineffective."
+    }
+  ]
+}

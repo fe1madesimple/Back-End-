@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module03_Lesson02.txt",
+  "module_number": 3,
+  "module_title": "The Standard of Care",
+  "lesson_number": 2,
+  "lesson_title": "Breach of Duty and the Factors Courts Consider",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M03_L02_Q01",
+      "question": "Is the question of breach of duty ultimately a question of law or a question of fact?",
+      "options": {
+        "A": "It is a question of law, determined by the judge by reference to legal precedent",
+        "B": "It is a question of fact, determined by the judge having regard to all the circumstances",
+        "C": "It is a question of mixed law and fact, divided equally between judge and jury",
+        "D": "It is a question exclusively for a jury, not for the judge"
+      },
+      "correct_answer": "B",
+      "explanation": "The question of breach of duty is ultimately a question of fact, not of law. The judge asks whether, having regard to all the circumstances, this defendant fell below what a reasonable person in their position would have done. While legal tests and precedents guide the analysis, the ultimate determination — whether this particular defendant breached in this particular case — is a fact-specific judgment."
+    },
+    {
+      "id": "TL_M03_L02_Q02",
+      "question": "In Bolton v Stone [1951], a cricket ball was hit over the fence of a cricket ground and struck a pedestrian. What did the House of Lords hold?",
+      "options": {
+        "A": "The cricket club was negligent because it had a duty to prevent any cricket ball from leaving the ground",
+        "B": "The cricket club was not negligent because the risk of a ball leaving the ground was so small that a reasonable person would not have guarded against it",
+        "C": "The cricket club was negligent because it failed to erect a sufficiently high fence once any risk of harm was identified",
+        "D": "The cricket club was liable under the rule in Rylands v Fletcher for bringing a dangerous object onto the land"
+      },
+      "correct_answer": "B",
+      "explanation": "In Bolton v Stone [1951] AC 850, the House of Lords held that the cricket club was not negligent. The probability of harm was so small — the ball had only ever left the ground on rare occasions and the risk of striking a pedestrian was remote — that a reasonable person would not have taken precautions to guard against it. The likelihood of harm is a crucial factor in the breach analysis: a very low probability of harm lowers the burden of precaution on the defendant."
+    },
+    {
+      "id": "TL_M03_L02_Q03",
+      "question": "In Paris v Stepney Borough Council [1951], why was the employer held negligent for failing to provide goggles to a one-eyed worker, even though goggles were not standard practice?",
+      "options": {
+        "A": "The employer had expressly promised the worker that protective equipment would be provided",
+        "B": "The gravity of the potential harm to a one-eyed worker — total blindness — was much greater than for a fully sighted worker, increasing the burden of precaution",
+        "C": "A statutory provision required all workers to be provided with goggles for the relevant task",
+        "D": "The risk of harm was higher for the one-eyed worker because his remaining eye was naturally weaker"
+      },
+      "correct_answer": "B",
+      "explanation": "In Paris v Stepney Borough Council [1951] AC 367, the House of Lords held that the employer was negligent. Even though goggles were not standard practice for fully sighted workers, the gravity of the potential harm to a one-eyed man — complete blindness — was vastly greater than the equivalent risk for a two-eyed worker. The greater the magnitude of potential harm, the more precautions a reasonable person is expected to take. This is the gravity or magnitude factor in the breach analysis."
+    },
+    {
+      "id": "TL_M03_L02_Q04",
+      "question": "In Watt v Hertfordshire County Council [1954], a fireman was injured when a heavy jack slipped during an emergency response. The Court of Appeal held the fire brigade was not negligent. What factor justified this conclusion?",
+      "options": {
+        "A": "The fireman had consented to all risks of injury by accepting employment as a firefighter",
+        "B": "The social utility of the fire service's emergency mission outweighed the risk created by the urgency of the response",
+        "C": "The risk of the jack slipping was entirely unforeseeable given normal operating procedures",
+        "D": "The cost of safer transport equipment was so great that no reasonable employer would have incurred it"
+      },
+      "correct_answer": "B",
+      "explanation": "In Watt v Hertfordshire County Council [1954] 1 WLR 835, the Court of Appeal held that the fire brigade was not negligent. The social utility of rescuing a person trapped by a road accident justified the emergency response, even if the urgency of the situation meant that a heavy jack had to be transported in a vehicle not specifically designed for it. Social utility — the value of the defendant's activity to society — is a recognised factor in the breach analysis that can reduce the burden of precaution where the activity serves an important public purpose."
+    },
+    {
+      "id": "TL_M03_L02_Q05",
+      "question": "What is the fourth key factor in assessing breach of duty, beyond probability of harm, gravity of harm, and social utility?",
+      "options": {
+        "A": "The defendant's financial capacity to take precautions",
+        "B": "The cost and practicability of taking the precautions that would have avoided the risk",
+        "C": "Whether the defendant has public liability insurance in place",
+        "D": "The extent to which the plaintiff contributed to the creation of the risk"
+      },
+      "correct_answer": "B",
+      "explanation": "The fourth key factor in the breach analysis is the cost and practicability of precautions. If a cheap and simple precaution would have eliminated the risk, failure to take it is more readily treated as a breach. If the precaution required would be extremely expensive, complex, or impracticable relative to the small risk it would eliminate, a failure to take it may not constitute breach. The court conducts a balancing exercise: the burden of precaution weighed against the probability and gravity of harm."
+    },
+    {
+      "id": "TL_M03_L02_Q06",
+      "question": "In Hanrahan v Merck Sharp and Dohme [1988] ILRM 629, the Irish Supreme Court considered the factors approach to breach in what context?",
+      "options": {
+        "A": "A road traffic accident caused by a negligent driver",
+        "B": "Pollution emissions from a pharmaceutical factory causing damage to a neighbouring farm",
+        "C": "Medical negligence arising from a failed surgical procedure at a public hospital",
+        "D": "A building contractor's defective work causing physical damage to a neighbouring property"
+      },
+      "correct_answer": "B",
+      "explanation": "In Hanrahan v Merck Sharp and Dohme [1988] ILRM 629, the Irish Supreme Court considered whether a pharmaceutical factory had breached its duty of care in respect of emissions that caused damage to a neighbouring farm — including damage to crops, livestock, and the health of the Hanrahan family. The Supreme Court applied a balancing exercise — the probability of harm, its magnitude, and the cost of avoidance — and found breach established on the facts. This is the leading Irish authority on the factors approach to breach."
+    },
+    {
+      "id": "TL_M03_L02_Q07",
+      "question": "What is the doctrine of res ipsa loquitur, and when does it apply?",
+      "options": {
+        "A": "A rule of substantive law that creates an irrebuttable presumption of negligence from the mere occurrence of an accident",
+        "B": "An evidential principle allowing a court to infer negligence from the circumstances of an accident where the thing was under the defendant's control and the accident would not ordinarily occur without negligence",
+        "C": "A rule that transfers the legal burden of proof to the defendant to disprove negligence in all personal injury cases",
+        "D": "A maxim that permits a jury to ignore expert evidence and reach a verdict based on common sense alone"
+      },
+      "correct_answer": "B",
+      "explanation": "Res ipsa loquitur — 'the thing speaks for itself' — is an evidential principle, not a substantive rule of law. It allows a court to infer negligence from the circumstances of the accident where two conditions are met: the thing causing the accident was under the management and control of the defendant; and the accident is of a kind that would not ordinarily happen in the absence of negligence. It raises an inference of negligence that the defendant must rebut — it does not reverse the legal burden of proof permanently."
+    },
+    {
+      "id": "TL_M03_L02_Q08",
+      "question": "In Scott v London and St Katherine Docks [1865], which facts led the court to apply res ipsa loquitur?",
+      "options": {
+        "A": "A negligent employee drove a warehouse forklift into the plaintiff at speed",
+        "B": "Sacks of sugar fell from a warehouse onto a pedestrian walking below",
+        "C": "A crane operator dropped a load on a colleague working in the same area",
+        "D": "A building's wall collapsed onto an adjacent property during renovation works"
+      },
+      "correct_answer": "B",
+      "explanation": "In Scott v London and St Katherine Docks [1865] 3 H&C 596, sacks of sugar fell from a warehouse window onto a pedestrian below. The court held that res ipsa loquitur applied — sacks of sugar do not ordinarily fall from warehouses without negligence, and the warehouse was under the management and control of the defendant. The circumstances of the accident allowed the court to infer negligence without requiring the plaintiff to identify specifically what went wrong."
+    },
+    {
+      "id": "TL_M03_L02_Q09",
+      "question": "In Lindsay v Mid-Western Health Board [1993] 2 IR 147, how was res ipsa loquitur applied?",
+      "options": {
+        "A": "The plaintiff fell from a hospital trolley because nurses failed to raise the side rails",
+        "B": "The plaintiff lost the use of her hand following a routine surgical procedure, and the court inferred negligence in the absence of explanation from the defendant",
+        "C": "The plaintiff was given a wrong medication by a pharmacist and suffered an adverse reaction",
+        "D": "The defendant hospital failed to diagnose a serious condition, leading to permanent disability"
+      },
+      "correct_answer": "B",
+      "explanation": "In Lindsay v Mid-Western Health Board [1993] 2 IR 147, the plaintiff lost the use of her hand following what was described as a routine surgical procedure. In the absence of any explanation from the defendant as to why this could happen without negligence, the court held that res ipsa loquitur applied and the inference of negligence arose. This is the leading Irish authority applying res ipsa loquitur in a medical negligence context."
+    },
+    {
+      "id": "TL_M03_L02_Q10",
+      "question": "Does res ipsa loquitur permanently reverse the burden of proof?",
+      "options": {
+        "A": "Yes — once res ipsa applies, the defendant must prove on the balance of probabilities that they were not negligent",
+        "B": "No — it raises an inference of negligence which the defendant may rebut by providing a satisfactory explanation that is consistent with no negligence",
+        "C": "Yes — it creates an irrebuttable presumption of negligence in personal injury cases",
+        "D": "No — it only affects the evidential burden and the defendant need only raise a doubt"
+      },
+      "correct_answer": "B",
+      "explanation": "Res ipsa loquitur raises an inference of negligence from the circumstances of the accident — it does not permanently reverse the legal burden of proof. The defendant may rebut the inference by providing a satisfactory explanation that is consistent with the accident having occurred without negligence. If the defendant offers such an explanation, the inference is displaced and the court must assess whether negligence is established on all the evidence."
+    }
+  ]
+}

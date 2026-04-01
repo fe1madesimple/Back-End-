@@ -1,0 +1,131 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "Module_05_Lesson_03_Trustees_Powers___Delegation_Advancement_and_Maintenance.txt",
+  "module_number": 5,
+  "module_title": "Express Trusts: Trustee Duties and Powers",
+  "lesson_number": 3,
+  "lesson_title": "Trustees' Powers: Delegation, Advancement, and Maintenance",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EQL_M05_L03_Q01",
+      "question": "What is the general common law rule governing a trustee's ability to delegate their duties?",
+      "options": {
+        "A": "A trustee may delegate any duty to any person they consider competent.",
+        "B": "Delegatus non potest delegare — a delegate cannot delegate; trustees are appointed personally for their judgment and skill and may not delegate their duties.",
+        "C": "A trustee may delegate all administrative duties but not investment decisions.",
+        "D": "Delegation is permitted only where the trust instrument expressly authorises it."
+      },
+      "correct_answer": "B",
+      "explanation": "The general common law rule is delegatus non potest delegare — a delegate cannot delegate. Trustees are appointed personally for their judgment and skill, and the general rule is that they cannot delegate their duties to others. However, this strict rule has been modified by statute and by modern trust instruments. The Trustee Act 1893 permits certain specific acts of delegation, most notably the execution of documents and certain routine administrative acts."
+    },
+    {
+      "id": "EQL_M05_L03_Q02",
+      "question": "Under the Trustee Act 1893, which acts of delegation are specifically permitted?",
+      "options": {
+        "A": "The delegation of all trustee functions to a professional trustee company.",
+        "B": "The delegation of the execution of documents and certain routine administrative acts to agents.",
+        "C": "The delegation of investment decisions to a licensed fund manager.",
+        "D": "The delegation of all decision-making authority during periods of trustee incapacity."
+      },
+      "correct_answer": "B",
+      "explanation": "The Trustee Act 1893 modifies the strict no-delegation rule by permitting certain specific acts of delegation — most notably, trustees may delegate the execution of documents and certain routine administrative acts to agents. This modification recognises that some ministerial and administrative functions do not require the personal exercise of the trustee's judgment. Modern trust instruments typically go further and confer broad powers of delegation beyond the statutory minimum."
+    },
+    {
+      "id": "EQL_M05_L03_Q03",
+      "question": "Where a trust instrument confers broad powers of delegation and the trustees delegate to an agent, what protects the trustees from liability for the acts of that agent?",
+      "options": {
+        "A": "The trustees are never liable for the acts of agents to whom they have properly delegated.",
+        "B": "The trustees are protected from liability provided they exercised reasonable care in the selection and monitoring of the agent.",
+        "C": "The trustees are protected only where the trust instrument expressly excludes liability for agents' defaults.",
+        "D": "The trustees are protected only where the beneficiaries consented to the delegation."
+      },
+      "correct_answer": "B",
+      "explanation": "Where trustees delegate in accordance with powers conferred by the trust instrument, they are protected from liability for the acts of the agent provided they exercised reasonable care in the selection and monitoring of the agent. The delegation does not extinguish the trustees' fiduciary responsibilities — they remain under a duty to supervise the agent appropriately and to take action if the agent acts improperly. Trustees who select an unsuitable agent or fail to monitor the agent's conduct may retain liability."
+    },
+    {
+      "id": "EQL_M05_L03_Q04",
+      "question": "What is the power of advancement of capital, and from which provision of the Trustee Act 1893 does it derive?",
+      "options": {
+        "A": "The power to invest the trust fund in speculative assets; it derives from section 1 of the 1893 Act.",
+        "B": "The power to pay a portion of the trust capital to a beneficiary before their interest falls into possession; it derives from section 32 of the 1893 Act.",
+        "C": "The power to borrow against trust assets; it derives from section 18 of the 1893 Act.",
+        "D": "The power to sell trust property; it derives from section 14 of the 1893 Act."
+      },
+      "correct_answer": "B",
+      "explanation": "The power of advancement is the power of trustees to pay a portion of the trust capital to a beneficiary before their interest falls into possession. Under section 32 of the Trustee Act 1893, trustees may advance up to one-half of the presumptive or vested share of a beneficiary where the advancement will be for their benefit. The advance is treated as an advance on account of the beneficiary's eventual entitlement. Modern trust instruments often enlarge this power to permit advancement of the whole share."
+    },
+    {
+      "id": "EQL_M05_L03_Q05",
+      "question": "In Re Clore's Settlement (1966), the court considered the meaning of 'benefit' for the purpose of the power of advancement. What approach did the court take?",
+      "options": {
+        "A": "The court held that benefit is strictly limited to direct financial benefit to the beneficiary.",
+        "B": "The court held that benefit is not limited to direct financial benefit — it may include advancing the beneficiary's education, career prospects, or settling their debts, and the concept of benefit is interpreted generously.",
+        "C": "The court held that benefit means benefit to the trust as a whole, not to the individual beneficiary.",
+        "D": "The court held that benefit requires the trustees to show that the advance will increase the beneficiary's net worth."
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Clore's Settlement (1966), the court held that benefit for the purpose of the power of advancement is not limited to direct financial benefit. It may include advancing the beneficiary's education or career prospects, or settling the beneficiary's debts. The concept of benefit is interpreted generously to allow trustees to make advances in the best interests of the beneficiary broadly construed, not merely to increase their immediate financial position."
+    },
+    {
+      "id": "EQL_M05_L03_Q06",
+      "question": "Under section 32 of the Trustee Act 1893, what is the default maximum proportion of a beneficiary's share that may be advanced?",
+      "options": {
+        "A": "One-quarter of the presumptive or vested share.",
+        "B": "One-third of the presumptive or vested share.",
+        "C": "One-half of the presumptive or vested share.",
+        "D": "The whole of the presumptive or vested share."
+      },
+      "correct_answer": "C",
+      "explanation": "Under section 32 of the Trustee Act 1893, trustees may advance up to one-half of the presumptive or vested share of a beneficiary. This is the statutory default maximum. However, the trust instrument frequently enlarges this power — often permitting advancement of the whole share rather than being limited to one-half. Any advance made is treated as an advance on account of the beneficiary's eventual entitlement and is brought into account when the interest falls into possession."
+    },
+    {
+      "id": "EQL_M05_L03_Q07",
+      "question": "Where a trust holds assets for a minor beneficiary, what power do the trustees have in relation to the income of the trust?",
+      "options": {
+        "A": "Trustees must accumulate all income during the minority and pay it to the beneficiary on reaching the age of majority.",
+        "B": "Trustees may apply income for the maintenance, education, and benefit of the minor beneficiary and are not required to accumulate all income.",
+        "C": "Trustees have no power to apply income for a minor beneficiary without a court order.",
+        "D": "Trustees must hold all income on resulting trust for the settlor until the minor reaches the age of majority."
+      },
+      "correct_answer": "B",
+      "explanation": "Where a trust holds assets for a minor beneficiary, the trustees have a power — under the Trustee Act 1893 and under the general law — to apply income for the maintenance, education, and benefit of that minor. Trustees are not obliged to accumulate all income; they may use it for the minor's welfare. Income not applied for maintenance may be accumulated during the minority and paid to the beneficiary on reaching majority, subject to the rules against perpetuity and accumulation."
+    },
+    {
+      "id": "EQL_M05_L03_Q08",
+      "question": "Trustees of a discretionary trust are asked by one of the objects why they did not exercise their discretion to distribute to that object in a particular year. Are the trustees required to give reasons?",
+      "options": {
+        "A": "Yes — trustees must always provide written reasons for every exercise or non-exercise of a discretionary power.",
+        "B": "No — trustees of a discretionary trust are not required to disclose their reasons for exercising or not exercising a discretionary power to the objects of that discretion.",
+        "C": "Yes — failure to give reasons amounts to a breach of the duty to act in the best interests of the beneficiaries.",
+        "D": "No — trustees need never communicate with beneficiaries about the exercise of discretion."
+      },
+      "correct_answer": "B",
+      "explanation": "Trustees of a discretionary trust are not required to disclose their reasons for exercising a discretionary power — or for declining to exercise it — to the objects of the discretion. While trustees have duties to keep proper accounts and provide information about the trust, they are not required to explain the rationale behind each exercise of discretion. This protects the integrity of the trustee's decision-making process and preserves the nature of the discretionary power."
+    },
+    {
+      "id": "EQL_M05_L03_Q09",
+      "question": "A trustee proposes to make an advancement to a beneficiary to fund the beneficiary's postgraduate education abroad. The trust instrument is silent on the definition of benefit. Is this a valid exercise of the power of advancement?",
+      "options": {
+        "A": "No — advancement can only be used for direct financial benefit such as paying debts or making business investments.",
+        "B": "Yes — following Re Clore's Settlement (1966), advancement for educational purposes falls within the generous interpretation of benefit under section 32 of the Trustee Act 1893.",
+        "C": "No — the advancement power cannot be used for purposes outside Ireland.",
+        "D": "Yes — but only if the remaining beneficiaries consent to the advancement."
+      },
+      "correct_answer": "B",
+      "explanation": "Following Re Clore's Settlement (1966), the concept of benefit under section 32 of the Trustee Act 1893 is interpreted generously and is not limited to direct financial benefit. Advancing a beneficiary's education — including postgraduate study — falls squarely within the enlarged meaning of benefit. Funding education clearly advances the beneficiary's prospects and welfare in a broad sense, and would be a valid exercise of the power of advancement under the generous approach endorsed in Re Clore's Settlement."
+    },
+    {
+      "id": "EQL_M05_L03_Q10",
+      "question": "Which of the following correctly summarises the key trustees' powers relevant to FE-1 examination questions involving the exercise of trustee discretion?",
+      "options": {
+        "A": "The power to invest; the power to borrow; and the power to sell trust property.",
+        "B": "The no-delegation rule and its statutory modifications under the Trustee Act 1893; the power of advancement under section 32 of the 1893 Act with the generous interpretation of benefit from Re Clore's Settlement (1966); and the power of maintenance for minor beneficiaries.",
+        "C": "The power to appoint new trustees; the power to retire from the trust; and the power to apply for court directions.",
+        "D": "The self-dealing rule; the fair-dealing rule; and the duty not to profit from the trust."
+      },
+      "correct_answer": "B",
+      "explanation": "The trustees' powers most frequently tested in FE-1 questions involving trustee discretion are: (1) the no-delegation rule from the maxim delegatus non potest delegare and its statutory modifications under the Trustee Act 1893; (2) the power of advancement of capital under section 32 of the Trustee Act 1893, with Re Clore's Settlement (1966) establishing the generous interpretation of benefit; and (3) the power of maintenance for minor beneficiaries — the ability to apply trust income for the maintenance, education, and benefit of a minor during their minority."
+    }
+  ]
+}

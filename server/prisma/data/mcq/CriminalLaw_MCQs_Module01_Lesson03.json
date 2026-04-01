@@ -1,0 +1,131 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module01_Lesson03.txt",
+  "module_number": 1,
+  "module_title": "Foundations of Criminal Law",
+  "lesson_number": 3,
+  "lesson_title": "Actus Reus",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M01_L03_Q01",
+      "question": "Which of the following best describes the concept of actus reus in Irish criminal law?",
+      "options": {
+        "A": "The defendant's intention to commit an offence",
+        "B": "The external element of a criminal offence, including any act, state of affairs, or omission where there is a duty to act",
+        "C": "The moral culpability of the defendant",
+        "D": "The consequence of the defendant's conduct only"
+      },
+      "correct_answer": "B",
+      "explanation": "Actus reus refers to the external element of a criminal offence. It is broader than simply a physical act — it encompasses states of affairs and, in defined circumstances, omissions where the defendant owed a legal duty to act. The defendant's intention is a matter of mens rea, not actus reus."
+    },
+    {
+      "id": "CL_M01_L03_Q02",
+      "question": "In the context of actus reus, what is the legal significance of the voluntariness requirement?",
+      "options": {
+        "A": "It requires the defendant to have foreseen the consequences of their act",
+        "B": "It requires that the physical act be the product of the defendant's conscious control",
+        "C": "It requires the defendant to have consented to causing the harm",
+        "D": "It requires the defendant to have acted with a specific motive"
+      },
+      "correct_answer": "B",
+      "explanation": "The voluntariness requirement means that to constitute an actus reus, the act must be willed or controlled by the defendant. Involuntary physical movements — such as those caused by epileptic seizure or reflex action — do not satisfy this requirement and may give rise to the defence of automatism, which negates the actus reus entirely."
+    },
+    {
+      "id": "CL_M01_L03_Q03",
+      "question": "Winzar v Chief Constable of Kent [1983] is authority for which of the following propositions?",
+      "options": {
+        "A": "A defendant can be liable for a criminal omission without owing a prior duty",
+        "B": "The actus reus of some offences is constituted by a state of affairs rather than a positive act",
+        "C": "Involuntary conduct cannot ground criminal liability under any circumstances",
+        "D": "Voluntary intoxication negates the actus reus of an offence"
+      },
+      "correct_answer": "B",
+      "explanation": "In Winzar v Chief Constable of Kent [1983], the defendant was found drunk in a public place. The court held that the offence was constituted by the existence of a specified state of affairs — being drunk on the highway — regardless of how the defendant came to be there. This illustrates that some criminal offences are defined by circumstances rather than positive conduct."
+    },
+    {
+      "id": "CL_M01_L03_Q04",
+      "question": "What is the general rule in Irish criminal law regarding liability for omissions?",
+      "options": {
+        "A": "There is always criminal liability where an omission results in harm to another person",
+        "B": "There is no general criminal liability for omissions, but exceptions arise where a legal duty to act exists",
+        "C": "Omissions can only form the basis of criminal liability where expressly stated in a statute",
+        "D": "Omissions are treated identically to positive acts for all purposes of criminal liability"
+      },
+      "correct_answer": "B",
+      "explanation": "The general rule in Irish criminal law — consistent with the common law tradition — is that there is no general duty to act. However, this rule is subject to recognised exceptions, including statutory duties, voluntary assumption of responsibility, duties arising from a prior dangerous act, and duties arising from special relationships. Without one of these, an omission does not ground criminal liability."
+    },
+    {
+      "id": "CL_M01_L03_Q05",
+      "question": "Which statutory provision most directly imposes a criminal duty to act on a parent or guardian in Ireland?",
+      "options": {
+        "A": "Section 2 of the Non-Fatal Offences Against the Person Act 1997",
+        "B": "Section 4 of the Criminal Justice Act 1964",
+        "C": "Section 246 of the Children Act 2001",
+        "D": "Section 3 of the Criminal Law Act 1997"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 246 of the Children Act 2001 makes it an offence for a person with responsibility for a child to wilfully neglect that child in a manner likely to cause unnecessary suffering or injury to health. This is a clear statutory duty to act, the breach of which can constitute the actus reus of the offence."
+    },
+    {
+      "id": "CL_M01_L03_Q06",
+      "question": "R v Stone and Dobinson [1977] is the leading authority on which category of duty giving rise to criminal liability for an omission?",
+      "options": {
+        "A": "Statutory duty",
+        "B": "Duty arising from a prior dangerous act",
+        "C": "Voluntary assumption of responsibility",
+        "D": "Contractual duty"
+      },
+      "correct_answer": "C",
+      "explanation": "In R v Stone and Dobinson [1977], the defendants had voluntarily taken in a vulnerable relative and assumed responsibility for her care. Their failure to summon medical help when her condition deteriorated, resulting in her death, was held to ground criminal liability. The duty arose not from statute or relationship alone, but from their voluntary assumption of a caring role."
+    },
+    {
+      "id": "CL_M01_L03_Q07",
+      "question": "Under the principle established in R v Miller [1983], a duty to act arises where:",
+      "options": {
+        "A": "The defendant is related by blood to the victim",
+        "B": "The defendant has inadvertently created a dangerous situation and then fails to take reasonable steps to avert it",
+        "C": "The defendant is employed in a role that ordinarily involves protecting others",
+        "D": "The defendant has witnessed but not caused a dangerous situation"
+      },
+      "correct_answer": "B",
+      "explanation": "In R v Miller [1983], the House of Lords held that once a defendant — even inadvertently — creates a dangerous situation, they come under a legal duty to take reasonable steps to address that danger. The defendant had accidentally started a fire and then moved rooms without raising the alarm. His omission thereafter was sufficient for the actus reus of arson."
+    },
+    {
+      "id": "CL_M01_L03_Q08",
+      "question": "Aoife, a lifeguard, is on duty at a public swimming pool. She sees a child in difficulty in the water but is distracted by her phone and does not intervene. The child drowns. Which basis is most appropriate for analysing whether Aoife could face criminal liability?",
+      "options": {
+        "A": "Strict liability — no duty analysis is required",
+        "B": "A duty to act arising from her contractual and professional role, making her omission potentially criminal",
+        "C": "She has no duty because there was no prior dangerous act on her part",
+        "D": "General bystander liability because she was present at the scene"
+      },
+      "correct_answer": "B",
+      "explanation": "Aoife's role as a lifeguard gives rise to a duty to act, both contractually and under the principle that certain professional and special relationships impose a legal obligation to protect those in one's care. Her omission in failing to act when she had the capacity to do so, and when a duty existed, could ground criminal liability if the other elements of the offence are present."
+    },
+    {
+      "id": "CL_M01_L03_Q09",
+      "question": "Which of the following statements about the actus reus of a result crime is correct?",
+      "options": {
+        "A": "The actus reus is complete once the defendant begins to act, regardless of whether any consequence occurs",
+        "B": "The actus reus requires the prosecution to prove the defendant's act, the specified circumstances, and the prohibited consequence",
+        "C": "Result crimes have no actus reus — liability is based on mens rea alone",
+        "D": "The actus reus of a result crime is constituted solely by the defendant's voluntary movement"
+      },
+      "correct_answer": "B",
+      "explanation": "In a result crime — such as murder or assault causing harm — the actus reus comprises the act itself, any relevant circumstances specified in the offence definition, and the prohibited consequence (e.g., death or harm). All elements must be proved by the prosecution beyond reasonable doubt."
+    },
+    {
+      "id": "CL_M01_L03_Q10",
+      "question": "Brian is driving and suffers a sudden and completely unforeseeable diabetic episode. He loses consciousness and his car veers across the road, striking a pedestrian. Which of the following best describes Brian's position with regard to actus reus?",
+      "options": {
+        "A": "Brian has committed the actus reus because his car caused the harm",
+        "B": "Brian has not committed the actus reus because the physical movement of his body was involuntary — automatism negates the act",
+        "C": "Brian has committed the actus reus but can rely on necessity as a defence",
+        "D": "Brian has committed the actus reus because driving is an inherently dangerous activity"
+      },
+      "correct_answer": "B",
+      "explanation": "Where a defendant's physical actions are not the product of conscious control — for example, because they have suffered a sudden medical episode — the voluntariness requirement for actus reus is not satisfied. Automatism (here, non-insane automatism caused by an unforeseeable medical event) negates the actus reus. However, the sudden and unforeseeable nature of the episode is critical — if the medical risk was known, the analysis may differ."
+    }
+  ]
+}

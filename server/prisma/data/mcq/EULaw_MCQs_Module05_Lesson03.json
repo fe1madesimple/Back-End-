@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module05_Lesson03.txt",
+  "module_number": 5,
+  "module_title": "Supremacy and Direct Effect",
+  "lesson_number": 3,
+  "lesson_title": "Directives: Direct Effect, Indirect Effect, and State Liability",
+  "questions": [
+    {
+      "id": "EUL_M05_L03_Q01",
+      "question": "The conditions for a Directive provision to have direct effect were established in Van Duyn v Home Office [1974]. They are:",
+      "options": {
+        "A": "The Directive must have been transposed, the national transposing measure must be clear, and the individual must have exhausted national remedies",
+        "B": "The Directive's implementation deadline must have passed, and the provision must be unconditional and sufficiently precise",
+        "C": "The Directive must have been adopted by unanimity in the Council, with Parliament consent, and addressed specifically to the affected member state",
+        "D": "The individual must show the Directive was intended to benefit them specifically, and the Commission must have issued a reasoned opinion against the member state"
+      },
+      "correct_answer": "B",
+      "explanation": "Vertical direct effect of Directives requires: (1) the implementation deadline has expired; (2) the Directive has not been properly implemented (or has been incorrectly implemented); (3) the relevant provision is unconditional and sufficiently precise. If these conditions are met, an individual may rely on the Directive against the state, even though it has not been transposed (Marshall v Southampton Health Authority [1986])."
+    },
+    {
+      "id": "EUL_M05_L03_Q02",
+      "question": "Marshall v Southampton Health Authority [1986] established:",
+      "options": {
+        "A": "That Directives have horizontal direct effect against private employers",
+        "B": "That a Directive may only be relied upon against the state, not against private parties — no horizontal direct effect for Directives",
+        "C": "That state liability arises for failure to implement a Directive within the deadline",
+        "D": "That the 65-year compulsory retirement age for women was compatible with the Equal Treatment Directive"
+      },
+      "correct_answer": "B",
+      "explanation": "Marshall (Case 152/84): Ms Marshall worked for Southampton Area Health Authority, which required women to retire at 60. The Sex Discrimination Act's exclusion of retirement age was incompatible with the Equal Treatment Directive. The Court held that since the AHA was an emanation of the state (a public authority), Ms Marshall could rely on the Directive against it. However, the Court confirmed that a Directive cannot impose obligations on private individuals — no horizontal direct effect."
+    },
+    {
+      "id": "EUL_M05_L03_Q03",
+      "question": "The concept of a 'state' or 'emanation of the state' for vertical direct effect of Directives was clarified in Foster v British Gas [1990]. The criteria are:",
+      "options": {
+        "A": "Any body that receives public funding and provides a public service",
+        "B": "A body that provides a public service under state control, that has special powers beyond those normally applicable between individuals, and is subject to state authority",
+        "C": "Only central government departments and their direct subsidiaries",
+        "D": "Any company in which the state holds a majority shareholding"
+      },
+      "correct_answer": "B",
+      "explanation": "Foster v British Gas (Case C-188/89): the Court set out criteria for 'an organ of the state' (an 'emanation'): a body making a public service under state authority and control, with special powers, and subject to state authority. British Gas (then nationalised) was held to be an emanation. Subsequent cases (including NUT v St Mary's Church of England Junior School) have refined these criteria."
+    },
+    {
+      "id": "EUL_M05_L03_Q04",
+      "question": "Faccini Dori v Recreb [1994] confirmed that Directives cannot have horizontal direct effect because:",
+      "options": {
+        "A": "Directives are addressed to member states, not private parties — imposing obligations on private parties via Directives would violate the principle that obligations may only be imposed by the legislature",
+        "B": "Private parties cannot be expected to know the contents of Directives",
+        "C": "Directives only take effect once implemented, so until transposition there is no EU obligation on private parties",
+        "D": "The Commission can only enforce Directives against member states, not individuals"
+      },
+      "correct_answer": "A",
+      "explanation": "Faccini Dori (Case C-91/92) confirmed Marshall: allowing Directives to be enforced against private parties would effectively extend the scope of the state's obligation to private parties without any EU legislative act requiring this. A Directive binds the member state to achieve a result — not private parties. The proper remedy for a private party against a private party where a Directive has not been implemented is indirect effect (conforming interpretation) or Francovich state liability."
+    },
+    {
+      "id": "EUL_M05_L03_Q05",
+      "question": "The duty of 'indirect effect' (duty of conforming interpretation) requires national courts to:",
+      "options": {
+        "A": "Apply EU Directives directly in disputes between private parties",
+        "B": "Interpret national law as far as possible in conformity with the wording and purpose of EU Directives, whether the national law predates or postdates the Directive",
+        "C": "Refer all cases involving unimplemented Directives to the Court of Justice",
+        "D": "Award damages equal to the benefit that would have been obtained under the correctly implemented Directive"
+      },
+      "correct_answer": "B",
+      "explanation": "Von Colson [1984] (C-14/83) and Marleasing [1990] (C-106/89): national courts must interpret national law 'as far as possible' in light of the wording and purpose of the Directive — both pre-existing and subsequent national law. This is an alternative to direct effect and applies in horizontal situations where direct effect is unavailable. The limitation is that it cannot go contra legem — it cannot require an interpretation that is impossible under national law."
+    },
+    {
+      "id": "EUL_M05_L03_Q06",
+      "question": "In Marleasing [1990], the Court of Justice held that the duty of conforming interpretation:",
+      "options": {
+        "A": "Only applies to national legislation adopted to implement the Directive in question",
+        "B": "Applies to all provisions of national law, whether adopted before or after the Directive, and national courts must interpret them as far as possible in light of the Directive's wording and purpose",
+        "C": "Allows national courts to disapply national law that cannot be interpreted conformably with the Directive",
+        "D": "Requires national courts to apply the Directive directly where national law cannot be interpreted conformably with it"
+      },
+      "correct_answer": "B",
+      "explanation": "Marleasing extended Von Colson: the duty of conforming interpretation applies to all national law — not just legislation implementing the Directive, and not just legislation enacted after the Directive. It derives from Article 4(3) TEU and the obligation to achieve the Directive's result. The duty extends to interpreting national law 'as far as possible' — but courts cannot engage in interpretation contra legem (against the clear meaning of the text)."
+    },
+    {
+      "id": "EUL_M05_L03_Q07",
+      "question": "The limit of the duty of conforming interpretation was confirmed in Pupino [2005]. In that case, the Court held:",
+      "options": {
+        "A": "That the duty of conforming interpretation requires national courts to apply EU Framework Decisions directly",
+        "B": "That there is a duty of conforming interpretation in relation to EU Framework Decisions (then third pillar measures), but it cannot result in determining or aggravating criminal liability contra legem",
+        "C": "That Framework Decisions have horizontal direct effect in criminal proceedings",
+        "D": "That the duty of conforming interpretation does not apply to criminal law"
+      },
+      "correct_answer": "B",
+      "explanation": "Pupino (C-105/03): the Court applied the duty of conforming interpretation to EU Framework Decisions (JHA third pillar measures). Crucially, the Court imposed a limit: the duty cannot result in determining or aggravating the criminal liability of those who act in breach of national law — interpretation cannot go contra legem or beyond the clear meaning of national law, particularly in criminal matters where legal certainty demands strict interpretation."
+    },
+    {
+      "id": "EUL_M05_L03_Q08",
+      "question": "State liability under Francovich v Italy [1991] arises when:",
+      "options": {
+        "A": "The Commission brings infringement proceedings against a member state and wins",
+        "B": "Three conditions are met: the EU rule breached must intend to confer rights on individuals; the breach must be sufficiently serious; and there must be a direct causal link between the breach and the damage suffered",
+        "C": "An individual proves that a member state's failure to implement a Directive caused them financial loss, in any circumstances",
+        "D": "The Court of Justice has found in a preliminary ruling that a member state has misimplemented a Directive"
+      },
+      "correct_answer": "B",
+      "explanation": "Francovich (Joined Cases C-6/90 and C-9/90) established three conditions for state liability: (1) the EU rule infringed must have been intended to confer rights on individuals; (2) the breach is sufficiently serious (later refined in Brasserie du Pêcheur); (3) there is a direct causal link between the breach and the loss suffered. The remedy is damages in national courts, governed by national procedural law (subject to equivalence and effectiveness)."
+    },
+    {
+      "id": "EUL_M05_L03_Q09",
+      "question": "In Francovich, Italy had failed to implement the Insolvency Directive (Directive 80/987), which required member states to establish guarantee funds to protect workers' wages in employer insolvency. Why was direct effect of the Directive unavailable?",
+      "options": {
+        "A": "The Directive's implementation deadline had not yet passed",
+        "B": "The Directive was not sufficiently precise — it left member states discretion as to how to set up the guarantee fund, so it was not unconditional and precise enough to have direct effect",
+        "C": "Italy had enacted implementing legislation, so the question was one of misimplementation",
+        "D": "Francovich was a private employer, so the vertical direct effect analysis was irrelevant"
+      },
+      "correct_answer": "B",
+      "explanation": "The Insolvency Directive required member states to establish a guarantee institution but left them discretion as to its precise form and operation. This discretion meant the provision did not meet the condition of being unconditional and sufficiently precise — hence no direct effect. State liability was developed precisely as an alternative remedy where direct effect is unavailable but the member state's failure to implement has caused individual loss."
+    },
+    {
+      "id": "EUL_M05_L03_Q10",
+      "question": "What is the key difference between direct effect of a Directive and state liability as remedies for a non-implemented Directive?",
+      "options": {
+        "A": "Direct effect is available immediately on breach; state liability requires the Commission's involvement",
+        "B": "Direct effect gives the individual the EU law right directly (enforceable against the state); state liability gives the individual compensation in damages for the loss caused by non-implementation — they do not produce identical outcomes",
+        "C": "Direct effect can only be used against central government; state liability can be used against any public body",
+        "D": "State liability is available in horizontal (private party) disputes; direct effect is available in vertical disputes only"
+      },
+      "correct_answer": "B",
+      "explanation": "Direct effect of a Directive (where conditions are met) means the individual gets the very right the Directive was intended to confer — the Directive operates as if it were implemented. State liability gives a right to damages for loss caused by the breach — the individual does not get the Directive's right directly, but compensation for the harm flowing from its absence. They address different situations and produce different outcomes."
+    }
+  ],
+  "total_questions": 10
+}

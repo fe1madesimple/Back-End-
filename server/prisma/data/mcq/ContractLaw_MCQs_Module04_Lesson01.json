@@ -1,0 +1,131 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": "ContractLaw_ElevenLabs_Module04_Lesson01.txt",
+  "module_number": 4,
+  "module_title": "Vitiating Factors",
+  "lesson_number": 1,
+  "lesson_title": "Misrepresentation",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is the correct definition of an actionable misrepresentation in contract law?",
+      "options": {
+        "A": "A false statement of law made by one party to induce the other to enter a contract",
+        "B": "A false statement of existing fact made by one party to the other that induces the other to enter the contract",
+        "C": "Any statement made during contractual negotiations that proves to be inaccurate",
+        "D": "A deliberate lie about the future intentions of one of the parties"
+      },
+      "correct_answer": "B",
+      "explanation": "An actionable misrepresentation requires: (1) a false statement; (2) of existing fact (not law, opinion, or future intention); (3) made by one contracting party to the other; (4) that induces the representee to enter the contract. All four elements must be satisfied. Statements of opinion, puff, or law (pre-Kleinwort Benson) did not traditionally qualify, though the law/fact distinction has been softened in modern case law."
+    },
+    {
+      "id": 2,
+      "question": "In Derry v Peek [1889] (HL), the House of Lords established that fraudulent misrepresentation requires proof that the defendant made a false statement:",
+      "options": {
+        "A": "Knowing it was false, or without belief in its truth, or recklessly as to whether it was true or false",
+        "B": "Knowing it was false and with an intention to cause loss to the claimant",
+        "C": "Knowing it was false and in the context of a commercial transaction",
+        "D": "Without belief in its truth, provided the claimant suffered financial damage"
+      },
+      "correct_answer": "A",
+      "explanation": "In Derry v Peek [1889], the House of Lords held that fraud requires proof that a false representation was made: (1) knowingly; (2) without belief in its truth; or (3) recklessly as to whether it was true or false. This tripartite test for fraud remains the foundational authority. A negligent or careless belief in the truth of a statement does not constitute fraud — there must be dishonesty."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following scenarios would constitute a misrepresentation by conduct?",
+      "options": {
+        "A": "A seller who fails to mention a defect in goods that the buyer could have discovered on inspection",
+        "B": "A seller who polishes a car to conceal rust before showing it to a prospective buyer",
+        "C": "A seller who refuses to answer the buyer's questions about the property",
+        "D": "A seller who provides an optimistic but honest opinion about the value of the property"
+      },
+      "correct_answer": "B",
+      "explanation": "Misrepresentation can occur through conduct as well as words. Concealing a defect by physical means — such as painting over structural cracks or polishing a car to hide rust — amounts to a positive misrepresentation by conduct. Mere silence (option A) is generally not actionable because the law does not impose a duty of disclosure in ordinary commercial contracts (caveat emptor). Options C and D do not involve false statements of existing fact."
+    },
+    {
+      "id": 4,
+      "question": "A statement of opinion may amount to an actionable misrepresentation if:",
+      "options": {
+        "A": "The opinion is expressed with great confidence by an expert",
+        "B": "The opinion implies a statement of fact — for example, that the representor holds the opinion they express and has reasonable grounds for it",
+        "C": "The opinion later proves to be incorrect and the other party suffers loss",
+        "D": "The representor is a professional who charges fees for giving opinions"
+      },
+      "correct_answer": "B",
+      "explanation": "The general rule is that statements of opinion are not actionable misrepresentations. However, in Smith v Land and House Property Corp [1884], Bowen LJ held that a statement of opinion may imply a statement of fact — namely, that the representor holds the opinion they express and has an honest, reasonable basis for it. If the representor does not actually hold the opinion or has no grounds for it, the statement of opinion may carry a false statement of fact."
+    },
+    {
+      "id": 5,
+      "question": "The traditional rule that statements of law cannot ground misrepresentation has been significantly affected by:",
+      "options": {
+        "A": "The Supreme Court of Ireland decision in Sheehan v Breccia [2018]",
+        "B": "The House of Lords decision in Kleinwort Benson Ltd v Lincoln City Council [1998], which abolished the mistake of law rule",
+        "C": "The Misrepresentation Act 1967 (UK), which extended misrepresentation to statements of law",
+        "D": "EU Directive 93/13/EEC, which required all consumer misstatements to be actionable"
+      },
+      "correct_answer": "B",
+      "explanation": "The traditional rule that a mistake or misrepresentation of law is not actionable was significantly undermined by Kleinwort Benson Ltd v Lincoln City Council [1998] (HL), which abolished the distinction between mistakes of fact and law for the purposes of unjust enrichment. The same reasoning has influenced misrepresentation law, and the fact/law distinction in misrepresentation is now less absolute, with courts more willing to treat misstatements about the legal effect of documents as actionable."
+    },
+    {
+      "id": 6,
+      "question": "Which of the following is an example of a statement of future intention that could be actionable as a misrepresentation?",
+      "options": {
+        "A": "A seller who says: 'I think the property will increase in value over the next five years'",
+        "B": "A seller who says: 'I intend to use this money to pay off a mortgage' when they have no such intention at the time",
+        "C": "A seller who says: 'I believe this car is in good condition' when they are genuinely uncertain",
+        "D": "A seller who says: 'The property may require some repairs in the future'"
+      },
+      "correct_answer": "B",
+      "explanation": "The general rule is that a statement of future intention is not a statement of existing fact and therefore cannot found a misrepresentation claim. However, in Edgington v Fitzmaurice [1885], it was held that 'the state of a man's mind is as much a fact as the state of his digestion.' If a party makes a statement about their current intention and they do not in fact have that intention, they make a false statement of fact about their present state of mind — this is actionable."
+    },
+    {
+      "id": 7,
+      "question": "The requirement of inducement in misrepresentation means that:",
+      "options": {
+        "A": "The representee must have been the only person to whom the representation was made",
+        "B": "The false statement must have been at least one of the reasons that induced the representee to enter the contract — it need not be the sole cause",
+        "C": "The representee must have relied exclusively and solely on the representation without making any independent enquiries",
+        "D": "The representor must have intended to induce the representee to enter the contract by means of the false statement"
+      },
+      "correct_answer": "B",
+      "explanation": "Inducement requires that the misrepresentation materially contributed to the representee's decision to enter the contract. It need not be the sole cause — it is sufficient that the misrepresentation was 'an inducing cause' alongside other factors. In Edgington v Fitzmaurice [1885], the claimant would have entered the contract even without the misrepresentation, but the court held there was still inducement because the false statement was one of the operating reasons."
+    },
+    {
+      "id": 8,
+      "question": "Where a representee discovers the falsity of a representation before entering the contract, what is the effect on their misrepresentation claim?",
+      "options": {
+        "A": "They may still claim for negligent misrepresentation provided the statement was made carelessly",
+        "B": "The claim is barred because they cannot have been induced by a statement they knew to be false",
+        "C": "They may still claim but damages are reduced proportionately for contributory negligence",
+        "D": "The claim is unaffected — the representor remains liable for making the false statement"
+      },
+      "correct_answer": "B",
+      "explanation": "If the representee knew the statement was false before entering the contract, they cannot have been induced by it. Inducement requires actual reliance on the false statement as true. In Attwood v Small [1838], the claimants conducted independent verification of a seller's statements and could not therefore rely on the misrepresentation claim. Similarly, if a buyer is told the truth before exchange, any prior misrepresentation is neutralised."
+    },
+    {
+      "id": 9,
+      "question": "What is the primary remedy for an actionable misrepresentation?",
+      "options": {
+        "A": "Damages assessed on an expectation basis as if the representation had been true",
+        "B": "Rescission — setting aside the contract ab initio to restore the parties to their pre-contractual positions",
+        "C": "Specific performance of the misrepresented term",
+        "D": "An injunction restraining the representor from repeating the false statement"
+      },
+      "correct_answer": "B",
+      "explanation": "The primary remedy for misrepresentation is rescission — the equitable remedy of setting the contract aside as if it had never been made, restoring the parties to their pre-contractual positions. Rescission is available for all categories of misrepresentation (fraudulent, negligent, and innocent). Damages are also available, but the measure and basis differ depending on the category of misrepresentation. Expectation damages (as if the representation were true) are not available for misrepresentation."
+    },
+    {
+      "id": 10,
+      "question": "Which of the following is a recognised bar to rescission for misrepresentation?",
+      "options": {
+        "A": "The representee has obtained independent legal advice",
+        "B": "The representee has affirmed the contract after learning of the misrepresentation",
+        "C": "The misrepresentation was made orally rather than in writing",
+        "D": "The misrepresentation related to a term that was not a condition of the contract"
+      },
+      "correct_answer": "B",
+      "explanation": "The bars to rescission in misrepresentation include: (1) affirmation — where the representee, with full knowledge of the misrepresentation, elects to continue with the contract; (2) lapse of time — particularly for innocent misrepresentation (Leaf v International Galleries [1950]); (3) restitution impossible — where it is not possible to restore the parties to their original positions; (4) intervention of third party rights — where a bona fide third party acquires rights for value. Affirmation must be unequivocal and with knowledge of the misrepresentation."
+    }
+  ]
+}

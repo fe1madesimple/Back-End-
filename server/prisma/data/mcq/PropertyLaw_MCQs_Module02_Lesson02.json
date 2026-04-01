@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_02_Lesson_02_Creation_of_Co_Ownership_under_LCLRA_2009.txt",
+  "module_number": 2,
+  "module_title": "Co-Ownership",
+  "lesson_number": 2,
+  "lesson_title": "Creation of Co-Ownership under the Land and Conveyancing Law Reform Act 2009",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M02_L02_Q01",
+      "question": "Under section 30 of the Land and Conveyancing Law Reform Act 2009 (LCLRA 2009), what is the default form of co-ownership for conveyances to two or more persons after 1 December 2009 where no type of co-ownership is specified?",
+      "options": {
+        "A": "A tenancy in common, to protect each co-owner's individual share",
+        "B": "A joint tenancy, both at law and in equity",
+        "C": "A beneficial tenancy in common held behind a legal joint tenancy",
+        "D": "The form of co-ownership is unspecified and the courts must determine it"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 30 of the LCLRA 2009 provides that where land is conveyed to two or more persons after 1 December 2009 without specifying the form of co-ownership, a joint tenancy arises by default — both at law and in equity. This reversed the pre-2009 position in equity, which had favoured a tenancy in common in certain circumstances. Under the 2009 Act, the starting point for all post-commencement conveyances is joint tenancy unless rebutted by express words or equitable presumptions."
+    },
+    {
+      "id": "PRL_M02_L02_Q02",
+      "question": "Which of the following is an example of 'words of severance' that would rebut the section 30 LCLRA 2009 default and create a tenancy in common?",
+      "options": {
+        "A": "A conveyance 'to A and B jointly and together'",
+        "B": "A conveyance 'to A and B as co-owners'",
+        "C": "A conveyance 'to A and B in equal shares'",
+        "D": "A conveyance 'to A and B absolutely'"
+      },
+      "correct_answer": "C",
+      "explanation": "Words of severance are words in a conveyance that indicate each co-owner is to have a distinct, separate share rather than a joint interest. The phrase 'in equal shares' clearly contemplates separate distinct shares and therefore creates a tenancy in common by rebutting the section 30 default. Other classic words of severance include 'share and share alike', 'to be divided between', and 'respectively'. The phrases in options A, B, and D are consistent with a joint tenancy and would not rebut the default."
+    },
+    {
+      "id": "PRL_M02_L02_Q03",
+      "question": "In equity, in what three well-established circumstances does equity presume a tenancy in common, even where the legal estate is held as a joint tenancy?",
+      "options": {
+        "A": "Where the co-owners are spouses, where the land is residential, and where one co-owner is a minor",
+        "B": "Where co-owners have contributed unequally to the purchase price, where they are business partners, and where they have made loans on the property jointly",
+        "C": "Where the conveyance is silent as to type, where there is a commercial purpose, and where the property is worth over a prescribed value",
+        "D": "Where the co-owners are related, where one co-owner is insolvent, and where the property is mortgaged"
+      },
+      "correct_answer": "B",
+      "explanation": "Equity presumes a tenancy in common in three recognised circumstances: (1) where co-owners have contributed unequally to the purchase price — equity infers that they intended distinct shares reflecting their contributions; (2) where the co-owners are business partners — the right of survivorship is inappropriate in commercial relationships; and (3) where co-owners have made loans on a property jointly — equity presumes each lender should recover their separate portion independently. These equitable presumptions can apply even where the legal estate is held as a joint tenancy, creating a split title."
+    },
+    {
+      "id": "PRL_M02_L02_Q04",
+      "question": "Bull v Bull [1955] is authority for which equitable principle regarding co-ownership?",
+      "options": {
+        "A": "That a joint tenancy is presumed whenever two parties jointly purchase property without specifying shares",
+        "B": "That where co-owners contribute unequally to the purchase price, equity will recognise a beneficial tenancy in common reflecting their respective contributions",
+        "C": "That the right of survivorship operates automatically in respect of all jointly purchased property",
+        "D": "That a written agreement is required before equity will imply any beneficial interest in co-owned property"
+      },
+      "correct_answer": "B",
+      "explanation": "Bull v Bull [1955] is authority for the equitable principle that where co-owners have contributed unequally to the purchase price, equity will infer that they intended to hold distinct beneficial shares reflecting those contributions — not a joint interest that would ignore the disparity. In that case, a mother and son each contributed to the purchase of a house, with the son holding the legal title alone. Equity recognised the mother's contribution as creating a beneficial tenancy in common. The case illustrates equity's refusal to allow unequal contributions to be swallowed by the joint tenancy's right of survivorship."
+    },
+    {
+      "id": "PRL_M02_L02_Q05",
+      "question": "Why does equity presume a tenancy in common where co-owners are business partners, even if no express words of severance were used?",
+      "options": {
+        "A": "Because business partners are prohibited by statute from holding property as joint tenants",
+        "B": "Because the right of survivorship is inappropriate in commercial relationships where parties deal at arm's length with separate business interests",
+        "C": "Because the four unities cannot be established between business partners",
+        "D": "Because business partnerships automatically dissolve on the death of one partner, destroying the joint tenancy"
+      },
+      "correct_answer": "B",
+      "explanation": "Equity presumes a tenancy in common where co-owners are business partners because the right of survivorship (jus accrescendi) is inappropriate and commercially anomalous in such a context. Partners deal at arm's length, they have separate business interests, and it would be inequitable for one partner to take the entire asset on the death of the other simply by reason of survivorship. Equity therefore treats partners as holding distinct shares even in the absence of express words of severance."
+    },
+    {
+      "id": "PRL_M02_L02_Q06",
+      "question": "What does section 18 of the LCLRA 2009 provide regarding co-ownership and trusts?",
+      "options": {
+        "A": "That co-owners must register a declaration of trust before any co-owned interest is recognised",
+        "B": "That wherever two or more persons are entitled as co-owners to any interest in land, they hold that interest as trustees for themselves as co-owners",
+        "C": "That a trust of land only arises in respect of co-ownership where the co-owners expressly elect to create one",
+        "D": "That trustees of co-owned land must be at least two in number and hold a joint tenancy at all times"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 18 of the LCLRA 2009 provides that wherever two or more persons are entitled as co-owners to any interest in land, they hold that interest as trustees for themselves as co-owners. This imposes the trust structure automatically — it does not require any express declaration or election. The trust arises by operation of statute and gives co-owners the powers and protections of trustees. This is a significant reform of the pre-2009 position and means every co-ownership situation in post-2009 law is also a trust of land."
+    },
+    {
+      "id": "PRL_M02_L02_Q07",
+      "question": "Is it possible to have a legal joint tenancy and an equitable tenancy in common simultaneously? If so, what is the practical significance?",
+      "options": {
+        "A": "No — the legal and equitable form of co-ownership must always be identical",
+        "B": "Yes — trustees hold the legal title as joint tenants (ensuring clean conveyancing via survivorship), while behind that legal joint tenancy the beneficial owners may hold as tenants in common according to their respective shares",
+        "C": "Yes — but only where a court order expressly directs such a split",
+        "D": "No — once equity implies a tenancy in common, the legal estate must also be converted to a tenancy in common"
+      },
+      "correct_answer": "B",
+      "explanation": "It is entirely possible to have a legal joint tenancy alongside an equitable tenancy in common. The trustees hold the legal title as joint tenants — this is practically useful because the right of survivorship means the surviving trustee can convey without the need to obtain a grant of probate, thereby keeping the legal title 'clean' for conveyancing purposes. Behind that legal joint tenancy, however, the beneficial owners may hold as tenants in common in distinct shares, reflecting their respective contributions or intentions. This is achieved through a trust of land under the LCLRA 2009."
+    },
+    {
+      "id": "PRL_M02_L02_Q08",
+      "question": "For an FE-1 question involving co-ownership, what are the three questions a candidate should always ask regarding the type of co-ownership?",
+      "options": {
+        "A": "Was the property registered, was it mortgaged, and was it the family home?",
+        "B": "When was the conveyance (pre- or post-1 December 2009), what did the conveyance say, and are there equitable reasons to treat the co-ownership as a tenancy in common despite a legal joint tenancy?",
+        "C": "Are the co-owners related, do they share the same solicitor, and have they drafted a co-ownership agreement?",
+        "D": "Is the property freehold or leasehold, what are the parties' ages, and is there an outstanding mortgage?"
+      },
+      "correct_answer": "B",
+      "explanation": "The three key questions for any co-ownership problem are: (1) When was the conveyance? The date determines whether the pre-2009 equitable default or the section 30 LCLRA 2009 joint tenancy default applies. (2) What did the conveyance say? Express words of severance create a tenancy in common regardless of the default. (3) Are there equitable reasons to treat this as a tenancy in common despite any legal joint tenancy? Unequal contributions, commercial partnership, and joint lending are the three recognised equitable circumstances. Addressing all three demonstrates the comprehensive analysis the examiner expects."
+    },
+    {
+      "id": "PRL_M02_L02_Q09",
+      "question": "A conveyance executed in March 2015 transfers land 'to A and B' without further words. What form of co-ownership arises?",
+      "options": {
+        "A": "A tenancy in common, because equity's pre-2009 preference for tenancy in common survived the LCLRA 2009 reforms",
+        "B": "A joint tenancy by virtue of the section 30 LCLRA 2009 default, which applies to all conveyances after 1 December 2009",
+        "C": "The type of co-ownership cannot be determined without knowing whether the parties are related",
+        "D": "No valid co-ownership arises because the conveyance does not specify shares"
+      },
+      "correct_answer": "B",
+      "explanation": "The conveyance was executed in March 2015, which is after 1 December 2009 — the date on which the LCLRA 2009 commenced. Section 30 of the LCLRA 2009 applies and creates a joint tenancy by default where land is conveyed to two or more persons without specifying the type of co-ownership. The words 'to A and B' contain no words of severance and no equitable circumstances are stated, so the section 30 default of joint tenancy governs."
+    },
+    {
+      "id": "PRL_M02_L02_Q10",
+      "question": "A conveyance in 2020 transfers land 'to A as to two-thirds and to B as to one-third'. What form of co-ownership arises and why?",
+      "options": {
+        "A": "A joint tenancy, because the section 30 LCLRA 2009 default overrides any specification of shares",
+        "B": "A tenancy in common, because the specification of distinct fractional shares constitutes express words of severance that rebut the section 30 default",
+        "C": "A tenancy in common, but only in equity — the parties remain joint tenants at law",
+        "D": "No valid co-ownership, because unequal shares cannot be held as co-ownership under Irish law"
+      },
+      "correct_answer": "B",
+      "explanation": "The specification of distinct fractional shares — 'as to two-thirds' and 'as to one-third' — constitutes express words of severance. Such language clearly contemplates distinct, separate interests rather than a joint interest, and therefore rebutts the section 30 LCLRA 2009 default of joint tenancy. A tenancy in common arises because the conveyance has expressly indicated separate shares, which is the classic hallmark of a tenancy in common rather than a joint tenancy."
+    }
+  ]
+}

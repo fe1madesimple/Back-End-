@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module09_Lesson04.txt",
+  "module_number": 9,
+  "module_title": "Free Movement of Goods",
+  "lesson_number": 4,
+  "lesson_title": "Article 36 TFEU: Justifications and Proportionality",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EUL_M09_L04_Q01",
+      "question": "Article 36 TFEU provides a list of grounds on which member states may justify restrictions on the free movement of goods. Which of the following correctly describes this list?",
+      "options": {
+        "A": "An indicative list — member states may rely on analogous grounds not mentioned in the article",
+        "B": "An exhaustive list — member states may only justify restrictions on the grounds expressly listed in Article 36",
+        "C": "A minimum list — the Council may add additional grounds by qualified majority voting",
+        "D": "A list that applies only to distinctly applicable measures targeting imported goods"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 36 TFEU provides an exhaustive list of permitted justification grounds — member states cannot invoke grounds not mentioned in the article. The listed grounds are: public morality; public policy; public security; the protection of health and life of humans, animals, or plants; the protection of national treasures possessing artistic, historic, or archaeological value; and the protection of industrial and commercial property. For indistinctly applicable measures (those that apply equally to domestic and imported goods), additional justifications may be available through the Cassis de Dijon mandatory requirements doctrine, but those are not Article 36 grounds."
+    },
+    {
+      "id": "EUL_M09_L04_Q02",
+      "question": "The 'public morality' ground under Article 36 TFEU was considered in R v Henn and Darby [1979] CJEU. What principle did the Court establish?",
+      "options": {
+        "A": "Member states have absolute discretion in defining public morality and the Court will never review such restrictions",
+        "B": "Member states have a genuine sphere of discretion in defining their own public morality standards, but cannot use Article 36 to ban imports of material they permit domestically",
+        "C": "Public morality is not an autonomous EU concept — it must be defined by reference to international standards",
+        "D": "The public morality ground is only available to restrict goods originating outside the EU"
+      },
+      "correct_answer": "B",
+      "explanation": "In R v Henn and Darby [1979] CJEU, the UK sought to justify a ban on the importation of pornographic materials by reference to public morality. The Court accepted that member states have a genuine sphere of discretion in defining their own public morality standards — these may legitimately differ between member states. However, a state that permits the domestic production or distribution of the same material cannot invoke Article 36 to ban imports of equivalent goods. The restriction must genuinely reflect a public morality position, not function as disguised protectionism."
+    },
+    {
+      "id": "EUL_M09_L04_Q03",
+      "question": "The 'public policy' ground under Article 36 TFEU has been interpreted by the Court as:",
+      "options": {
+        "A": "A broad catch-all ground available whenever a member state considers a restriction to be in the national interest",
+        "B": "A narrow ground covering only situations involving a fundamental interest of society — not merely inconvenient or difficult situations",
+        "C": "Equivalent in scope to the 'overriding reasons of general interest' under the Cassis mandatory requirements doctrine",
+        "D": "A ground available only to member states that have ratified the relevant Council of Europe conventions"
+      },
+      "correct_answer": "B",
+      "explanation": "The Court has interpreted the 'public policy' ground under Article 36 TFEU narrowly. In R v Thompson [1978] CJEU, the Court held that public policy covers situations involving a fundamental interest of society — not merely inconvenient, difficult, or politically unpopular situations. The ground has been used in limited contexts such as the protection of national currency and the prevention of the circulation of counterfeit coins. Member states cannot invoke public policy simply because a trade restriction is convenient or serves domestic political purposes."
+    },
+    {
+      "id": "EUL_M09_L04_Q04",
+      "question": "In Campus Oil v Minister for Industry and Energy [1984] CJEU, the Irish government sought to justify a requirement that importers of petroleum products purchase a proportion of their fuel from the Irish state oil refinery at government-set prices. Which Article 36 ground did the Court accept in principle?",
+      "options": {
+        "A": "Protection of health and life of humans",
+        "B": "Public security",
+        "C": "Public morality",
+        "D": "Protection of industrial and commercial property"
+      },
+      "correct_answer": "B",
+      "explanation": "In Campus Oil v Minister for Industry and Energy [1984] CJEU, Ireland sought to justify a requirement that petroleum product importers purchase a proportion of their fuel from the state oil refinery (ESSO/Irish Refining Company) at government-set prices. The Court accepted in principle that ensuring the survival of a domestic oil refinery capable of meeting national needs in a crisis could constitute a 'public security' justification under Article 36 TFEU. The case is significant as it confirms that energy security can engage the public security ground, though the measure must still be proportionate. This is a frequently cited Irish case in FE-1 EU law examinations."
+    },
+    {
+      "id": "EUL_M09_L04_Q05",
+      "question": "The 'protection of health and life of humans, animals, and plants' is the most frequently invoked Article 36 ground. In relation to scientific uncertainty, the Court has held that member states may:",
+      "options": {
+        "A": "Never restrict imports on health grounds unless the harm is scientifically proven beyond reasonable doubt",
+        "B": "Apply the precautionary principle — where there is genuine scientific uncertainty, a state may take precautionary measures without waiting for full scientific proof of harm",
+        "C": "Restrict imports only where the EU institutions have first certified that the health risk is real",
+        "D": "Impose restrictions for an unlimited period pending resolution of the scientific debate"
+      },
+      "correct_answer": "B",
+      "explanation": "The Court has confirmed that member states have a broad margin of appreciation in assessing health risks and may apply the precautionary principle. Where there is genuine scientific uncertainty about whether a product or substance poses a health risk, a member state may take precautionary measures without waiting for full scientific proof of harm. This is particularly relevant for novel food products, pharmaceutical substances, and contaminants. Any such precautionary restriction must still satisfy the proportionality test — it must be suitable to achieve the health protection aim and no more restrictive than necessary."
+    },
+    {
+      "id": "EUL_M09_L04_Q06",
+      "question": "The 'protection of industrial and commercial property' ground under Article 36 TFEU covers intellectual property rights. The Court has drawn a distinction between the 'existence' and the 'exercise' of those rights. What does this distinction mean?",
+      "options": {
+        "A": "The existence of an IP right is protected, but any exercise of that right that partitions the single market may still infringe Article 34",
+        "B": "The exercise of an IP right is always lawful under Article 36, but the creation of new IP rights requires Commission approval",
+        "C": "The distinction applies only to trademarks — patents and copyright are not subject to it",
+        "D": "The existence of IP rights is an exclusively national matter, while the exercise of those rights is governed entirely by EU law"
+      },
+      "correct_answer": "A",
+      "explanation": "The Court has consistently held that Article 36 protects the existence of intellectual property rights — their legal existence as a matter of national law — but not the exercise of those rights where that exercise amounts to using the IP right to partition the single market. A rights holder cannot invoke an IP right to prevent the import of goods that were placed on the market in another member state by the rights holder or with their consent. The leading cases include Centrafarm v Sterling Drug [1974] CJEU on patents and Terrapin v Terranova on trademarks."
+    },
+    {
+      "id": "EUL_M09_L04_Q07",
+      "question": "The doctrine of 'exhaustion of rights' in the context of the protection of industrial and commercial property under Article 36 means:",
+      "options": {
+        "A": "An IP rights holder loses all IP rights once a product has been sold anywhere in the world",
+        "B": "Once a rights holder has placed goods on the market in any EU member state — or consented to their being placed there — the IP right is exhausted and cannot be used to prevent the further movement of those goods within the EU",
+        "C": "IP rights are extinguished after a fixed period of time regardless of whether the goods have been marketed",
+        "D": "The exhaustion doctrine applies only where the goods were first marketed in the same member state as the territory where the restriction is sought"
+      },
+      "correct_answer": "B",
+      "explanation": "The doctrine of exhaustion of rights means that once an IP rights holder (or someone with their consent) has placed goods protected by an IP right on the market in any EU member state, the IP right is 'exhausted' — the holder cannot then use that right to prevent the further movement of those goods within the EU. The right is exhausted by the first marketing within the EU internal market. This prevents the use of IP rights to partition the single market into national territories. Leading cases: Centrafarm v Sterling Drug [1974] CJEU (patents) and Terrapin v Terranova (trademarks)."
+    },
+    {
+      "id": "EUL_M09_L04_Q08",
+      "question": "All Article 36 TFEU justifications are subject to which requirement, reflected in the final sentence of Article 36?",
+      "options": {
+        "A": "The restriction must be notified to the Commission before being imposed",
+        "B": "The restriction must be proportionate — it must not constitute arbitrary discrimination or a disguised restriction on trade, and must not go beyond what is necessary to achieve the legitimate aim",
+        "C": "The restriction must be approved by the Council acting by qualified majority",
+        "D": "The restriction must be accompanied by a domestic measure applying the same standard to domestic goods"
+      },
+      "correct_answer": "B",
+      "explanation": "All Article 36 TFEU justifications are subject to the proportionality requirement, which is reflected in the final sentence of Article 36: prohibitions or restrictions must not constitute 'a means of arbitrary discrimination or a disguised restriction on trade between Member States.' The proportionality assessment involves three questions: Is the measure suitable to achieve the legitimate aim? Is it necessary — could a less restrictive measure achieve the same result? Does it go no further than needed? A measure that is aimed at a legitimate Article 36 objective but is disproportionate will be struck down."
+    },
+    {
+      "id": "EUL_M09_L04_Q09",
+      "question": "What happens to a member state's ability to rely on Article 36 TFEU when the EU has adopted harmonisation legislation covering the relevant product standard or safety requirement?",
+      "options": {
+        "A": "The member state retains full Article 36 rights alongside EU harmonisation measures",
+        "B": "The member state may rely on Article 36 only where the EU harmonisation measure explicitly preserves national flexibility",
+        "C": "Where EU-level harmonisation is complete, member states can no longer rely on Article 36 to impose additional national requirements — harmonisation has occupied the field",
+        "D": "EU harmonisation measures replace Article 36 only for regulations, not for directives"
+      },
+      "correct_answer": "C",
+      "explanation": "Where the EU has adopted harmonisation legislation that comprehensively addresses a product standard or safety requirement, member states can no longer rely on Article 36 TFEU to impose additional or different national requirements. The EU harmonisation measure has 'occupied the field.' As confirmed in Moormann [1988] CJEU, member states cannot invoke Article 36 to justify national measures in areas where EU harmonisation has provided adequate safeguards at Community level. If a member state wishes to maintain higher standards, it must seek approval through the procedure in the harmonisation measure itself."
+    },
+    {
+      "id": "EUL_M09_L04_Q10",
+      "question": "What is the key distinction between Article 36 TFEU justifications and the 'mandatory requirements' doctrine from Cassis de Dijon [1979]?",
+      "options": {
+        "A": "Article 36 applies to services; mandatory requirements apply to goods",
+        "B": "Article 36 provides an exhaustive list of justifications available to both distinctly and indistinctly applicable measures; mandatory requirements are an open-ended list available only for indistinctly applicable measures",
+        "C": "Mandatory requirements are broader than Article 36 and subsume all Article 36 grounds",
+        "D": "Article 36 justifications are subject to proportionality; mandatory requirements are not"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 36 TFEU provides an exhaustive list of justification grounds that is available for both distinctly applicable measures (those that specifically target imported goods) and indistinctly applicable measures (those that apply equally to domestic and imported goods). The Cassis de Dijon [1979] CJEU mandatory requirements doctrine provides an open-ended list of additional justifications — including consumer protection, environmental protection, and press diversity — but this doctrine is available only for indistinctly applicable measures. Distinctly applicable measures (explicit restrictions on imports) can only be justified under the Article 36 list."
+    }
+  ]
+}

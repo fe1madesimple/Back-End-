@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module16_Lesson03.txt",
+  "module_number": 16,
+  "module_title": "Concurrent Wrongdoers, Vicarious Liability, and Medical Negligence",
+  "lesson_number": 3,
+  "lesson_title": "Medical Negligence: The Dunne Principles",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M16_L03_Q01",
+      "question": "Medical negligence is a species of general negligence. Which elements must a plaintiff establish?",
+      "options": {
+        "A": "Duty, breach, causation, and damage — identical to any negligence claim, but with a specialised standard of care",
+        "B": "The doctor owed a contractual duty of care; the contract was breached; and financial loss resulted",
+        "C": "A statutory breach; personal injury; and fault proven beyond a reasonable doubt",
+        "D": "Intentional harm; deliberate concealment; and physical injury"
+      },
+      "correct_answer": "A",
+      "explanation": "Medical negligence is not a separate tort — it is a species of the general tort of negligence. The plaintiff must establish: (1) duty of care — owed by every medical practitioner to their patient; (2) breach of that duty — measured against the specialised Dunne standard; (3) causation — the breach caused the damage; and (4) damage — physical injury, psychiatric injury, or financial loss. The same structure applies as in any negligence claim, but with a distinctive standard of care at the breach stage."
+    },
+    {
+      "id": "TL_M16_L03_Q02",
+      "question": "In which case did Finlay CJ articulate the Dunne principles governing the standard of care in medical negligence?",
+      "options": {
+        "A": "Kelly v Hennessy [1995] 3 IR 253",
+        "B": "Dunne v National Maternity Hospital [1989] IR 91",
+        "C": "Geoghegan v Harris [2000] 3 IR 536",
+        "D": "Fitzpatrick v White [2007] IESC 51"
+      },
+      "correct_answer": "B",
+      "explanation": "The Dunne principles were set out by Finlay CJ in Dunne v National Maternity Hospital [1989] IR 91 in the Irish Supreme Court. This is the foundational Irish authority on the standard of care in medical negligence and represents the Irish departure from the English Bolam test. FE-1 candidates must cite Dunne v National Maternity Hospital [1989] — not Bolam v Friern Hospital Management Committee [1957] — as the governing authority."
+    },
+    {
+      "id": "TL_M16_L03_Q03",
+      "question": "What is the central standard of care in medical negligence under the Dunne principles?",
+      "options": {
+        "A": "The standard of the most senior consultant in the relevant specialty practising in Ireland",
+        "B": "The standard of a reasonably careful and competent medical practitioner of the relevant specialty",
+        "C": "The standard of a reasonable person with no medical training, in accordance with ordinary negligence principles",
+        "D": "The standard set by the Medical Council's codes of professional conduct"
+      },
+      "correct_answer": "B",
+      "explanation": "The central standard under the Dunne principles is that of a reasonably careful and competent medical practitioner of the relevant specialty. A general practitioner is judged against a reasonably competent GP; a consultant cardiologist is judged against a reasonably competent consultant cardiologist. The standard rises with the level of specialism — a defendant holding themselves out as a specialist is held to the standard of a reasonably competent practitioner of that specialty."
+    },
+    {
+      "id": "TL_M16_L03_Q04",
+      "question": "Under the Dunne principles, when is a medical practitioner not negligent despite other practitioners taking a different approach?",
+      "options": {
+        "A": "When they acted in accordance with a decision of the Irish Medical Council",
+        "B": "When they acted in accordance with a general and approved practice, even if other practitioners might have adopted a different practice",
+        "C": "When they acted in good faith and in the honest belief that they were doing the right thing",
+        "D": "When the plaintiff consented to the procedure knowing the risks involved"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the Dunne principles, a medical practitioner is not negligent if they acted in accordance with a general and approved practice accepted by a responsible body of medical opinion, even if other equally responsible practitioners would have adopted a different approach. This reflects the reality that medicine is not an exact science and that there may be more than one acceptable approach to diagnosis or treatment. The key is whether the approach taken was one accepted by a responsible body of medical opinion in the relevant specialty."
+    },
+    {
+      "id": "TL_M16_L03_Q05",
+      "question": "The Dunne principles contain an important qualification to the 'general and approved practice' rule. What is it?",
+      "options": {
+        "A": "The general and approved practice must have been endorsed by the Irish Medical Council within the previous five years",
+        "B": "A defendant who follows general and approved practice may still be negligent if the practice itself is inherently defective",
+        "C": "General and approved practice is only a defence where the defendant is a consultant, not a GP",
+        "D": "The practice must be widespread across at least three major Irish hospitals to be considered general and approved"
+      },
+      "correct_answer": "B",
+      "explanation": "The critical qualification in the Dunne principles is that a defendant who followed general and approved practice may still be negligent if the practice itself is inherently defective. This prevents defendants from hiding behind a negligent practice simply because it was widespread. The standard is responsible practice — not merely common practice. A practice can be generally followed and yet still be inherently defective in a way that a reasonable and responsible body of medical opinion would recognise."
+    },
+    {
+      "id": "TL_M16_L03_Q06",
+      "question": "How does the Dunne standard of care in medical negligence differ from the English Bolam test?",
+      "options": {
+        "A": "They are identical — the Dunne principles are simply the Irish name for the Bolam test",
+        "B": "The Bolam test asks whether the defendant acted in accordance with a responsible body of medical opinion; the Dunne standard is substantively similar but was articulated by the Irish Supreme Court and constitutes the binding Irish authority — candidates must cite Dunne, not Bolam",
+        "C": "The Bolam test is more defendant-friendly than Dunne, because Bolam has no qualification about inherently defective practices",
+        "D": "Dunne applies to all professional negligence in Ireland; Bolam applies only to medical negligence in England"
+      },
+      "correct_answer": "B",
+      "explanation": "The Dunne principles and the English Bolam test are substantively similar in their core formulation — both ask whether the defendant acted in accordance with a responsible body of professional opinion. However, for FE-1 purposes, candidates must cite Dunne v National Maternity Hospital [1989] — not Bolam v Friern Hospital Management Committee [1957] — because Dunne is the binding Irish Supreme Court authority. Using English law where Ireland has its own authoritative test is a significant error on the FE-1 paper."
+    },
+    {
+      "id": "TL_M16_L03_Q07",
+      "question": "What is the duty of informed consent in Irish medical negligence, and which case established the patient-centred standard?",
+      "options": {
+        "A": "The duty to warn a patient of all risks — established in Bolam v Friern Hospital Management Committee [1957]",
+        "B": "The duty to disclose material risks before obtaining consent — governed in Ireland by a patient-centred standard established in Geoghegan v Harris [2000], confirmed in Fitzpatrick v White [2007]",
+        "C": "The duty to obtain written consent — established in Walsh v Family Planning Services [1992]",
+        "D": "The duty to explain procedures — established in Dunne v National Maternity Hospital [1989]"
+      },
+      "correct_answer": "B",
+      "explanation": "In Ireland, the duty to disclose material risks is governed by a patient-centred standard. In Geoghegan v Harris [2000] 3 IR 536, Kearns J held that the appropriate standard for disclosure of risks is not what a body of medical opinion considers adequate, but what a reasonable patient in the plaintiff's position would want to know. This was confirmed by the Irish Supreme Court in Fitzpatrick v White [2007]. The patient-centred standard represents a significant departure from the doctor-centred Dunne approach and aligns Irish law with the Australian Rogers v Whitaker position."
+    },
+    {
+      "id": "TL_M16_L03_Q08",
+      "question": "In Geoghegan v Harris [2000], Kearns J articulated the patient-centred test for informed consent. What does this test require?",
+      "options": {
+        "A": "The doctor must disclose every possible risk associated with the procedure, no matter how remote",
+        "B": "The doctor must disclose risks that a reasonable patient in the plaintiff's specific position would want to know about — the standard is based on the reasonable patient, not on what a body of medical opinion considers sufficient",
+        "C": "The doctor must obtain written consent on a standardised form approved by the Medical Council",
+        "D": "The doctor must only disclose risks that are certain to materialise"
+      },
+      "correct_answer": "B",
+      "explanation": "In Geoghegan v Harris [2000] 3 IR 536, Kearns J held that the appropriate standard for disclosure of risks is what a reasonable patient in the plaintiff's position would want to know — not what a body of medical opinion considers adequate disclosure. This patient-centred standard focuses on the informational needs of the patient rather than on professional medical norms. A risk that a reasonable patient would consider material to their decision whether to undergo a procedure must be disclosed, regardless of how a particular body of medical opinion would approach disclosure."
+    },
+    {
+      "id": "TL_M16_L03_Q09",
+      "question": "In Fitzpatrick v White [2007] IESC 51, what did the Irish Supreme Court confirm in relation to informed consent?",
+      "options": {
+        "A": "The Supreme Court adopted the English Bolam test for informed consent, departing from Geoghegan v Harris",
+        "B": "The Supreme Court confirmed the patient-centred standard for disclosure of material risks, reaffirming Geoghegan v Harris as the governing Irish authority",
+        "C": "The Supreme Court held that informed consent was governed exclusively by the Dunne principles",
+        "D": "The Supreme Court abolished the tort of failure to obtain informed consent"
+      },
+      "correct_answer": "B",
+      "explanation": "In Fitzpatrick v White [2007] IESC 51, the Irish Supreme Court confirmed the patient-centred standard for disclosure of material risks as the governing approach in Irish law, reaffirming Geoghegan v Harris [2000]. The test is whether a reasonable patient in the plaintiff's position, if told of the risk, would have declined the procedure. If yes, the failure to disclose the material risk constitutes a breach of the duty of informed consent, and if the undisclosed risk materialises, causation may be established."
+    },
+    {
+      "id": "TL_M16_L03_Q10",
+      "question": "The causation test in informed consent cases asks whether a reasonable patient would have declined the procedure had the risk been disclosed. In what case did the Irish Supreme Court grapple with causation in medical negligence more broadly?",
+      "options": {
+        "A": "Hanrahan v Merck Sharp and Dohme [1988]",
+        "B": "Lindsay v Mid-Western Health Board [1993]",
+        "C": "Philp v Ryan [2004] 1 IR 269",
+        "D": "Breslin v Corcoran [2003]"
+      },
+      "correct_answer": "C",
+      "explanation": "In Philp v Ryan [2004] 1 IR 269, the Irish Supreme Court grappled with difficult causation issues in a medical negligence context where a delay in diagnosis had deprived the plaintiff of a chance of a better outcome. The case illustrates the complexity of causation analysis in medical negligence — particularly in delayed diagnosis cases where the plaintiff must establish on the balance of probabilities that timely diagnosis and treatment would have led to a materially better outcome."
+    }
+  ]
+}

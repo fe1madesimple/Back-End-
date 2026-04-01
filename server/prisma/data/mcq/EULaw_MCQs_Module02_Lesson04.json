@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module02_Lesson04.txt",
+  "module_number": 2,
+  "module_title": "Institutions of the European Union",
+  "lesson_number": 4,
+  "lesson_title": "The Court of Justice of the EU",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EUL_M02_L04_Q01",
+      "question": "The Court of Justice of the European Union (CJEU) is composed of which two courts?",
+      "options": {
+        "A": "The European Court of Justice and the European Court of Human Rights",
+        "B": "The Court of Justice and the General Court",
+        "C": "The Court of Justice and the Civil Service Tribunal",
+        "D": "The General Court and the Court of First Instance"
+      },
+      "correct_answer": "B",
+      "explanation": "The CJEU comprises two courts: the Court of Justice (the highest court) and the General Court (formerly the Court of First Instance). The Civil Service Tribunal was abolished in 2016 and its work transferred to the General Court. The European Court of Human Rights is a wholly separate institution of the Council of Europe, not an EU body, and sits in Strasbourg."
+    },
+    {
+      "id": "EUL_M02_L04_Q02",
+      "question": "Where are the courts of the CJEU located?",
+      "options": {
+        "A": "Brussels",
+        "B": "Strasbourg",
+        "C": "Luxembourg",
+        "D": "The Hague"
+      },
+      "correct_answer": "C",
+      "explanation": "Both the Court of Justice and the General Court sit in Luxembourg. This is a distinction tested frequently in FE-1 examinations. Strasbourg is the seat of the European Court of Human Rights, which is a Council of Europe institution entirely separate from the EU. Brussels is the main seat of the Commission, Council, and Parliament (though the Parliament also sits in Strasbourg for plenary sessions)."
+    },
+    {
+      "id": "EUL_M02_L04_Q03",
+      "question": "The Court of Justice currently consists of how many judges, and how are they appointed?",
+      "options": {
+        "A": "15 judges, elected by the European Parliament for five-year terms",
+        "B": "27 judges (one per member state), appointed by common accord of member state governments for renewable six-year terms",
+        "C": "27 judges, appointed by the Commission for non-renewable ten-year terms",
+        "D": "One judge per member state plus one additional judge, appointed by the Council by qualified majority"
+      },
+      "correct_answer": "B",
+      "explanation": "The Court of Justice consists of one judge per member state — currently 27 judges — plus 11 Advocates General. Judges and Advocates General are appointed by common accord of the governments of the member states for renewable six-year terms, after consultation with a panel of seven former judges and lawyers established to assess candidates' suitability. Candidates must be qualified for appointment to the highest judicial offices in their home country, or be jurisconsults of recognised competence."
+    },
+    {
+      "id": "EUL_M02_L04_Q04",
+      "question": "What is the role of an Advocate General in Court of Justice proceedings?",
+      "options": {
+        "A": "To represent the EU institutions in contentious proceedings",
+        "B": "To act as an additional judge and participate in the vote on the outcome",
+        "C": "To deliver a detailed, independent, and impartial Opinion recommending how the Court should rule — the Opinion is not binding on the Court",
+        "D": "To pre-screen cases for admissibility before they reach the full Court"
+      },
+      "correct_answer": "C",
+      "explanation": "Advocates General (currently 11) are a distinctive feature of the Court's procedure with no real equivalent in common law systems. An Advocate General is assigned to each significant case, attends the oral hearing, considers all written submissions, and delivers a detailed independent Opinion recommending how the Court should rule. The Opinion is not binding — the Court can and does depart from it — but in the majority of cases the Court follows the AG's reasoning. The Opinions are often more discursive and analytical than the Court's characteristically terse judgments."
+    },
+    {
+      "id": "EUL_M02_L04_Q05",
+      "question": "The Grand Chamber of the Court of Justice consists of how many judges, and when does it sit?",
+      "options": {
+        "A": "All 27 judges; it sits for all infringement proceedings against member states",
+        "B": "15 judges; it sits for cases of particular legal importance or complexity, or where a member state or institution that is a party requests it",
+        "C": "9 judges; it sits for all preliminary reference cases",
+        "D": "15 judges; it sits only for Treaty revision cases"
+      },
+      "correct_answer": "B",
+      "explanation": "The Court of Justice can sit as a full Court (all 27 judges — reserved for the most exceptional circumstances, such as rulings on removing a member of an EU institution), Grand Chamber (15 judges — cases of particular legal importance or complexity, or where a member state or institution that is a party requests this formation), or chambers of five or three judges (routine cases). Grand Chamber is used for the most significant and politically sensitive cases."
+    },
+    {
+      "id": "EUL_M02_L04_Q06",
+      "question": "The General Court has jurisdiction primarily over which category of cases?",
+      "options": {
+        "A": "Preliminary references from national courts on the interpretation of EU law",
+        "B": "Infringement proceedings against member states for breach of EU obligations",
+        "C": "Direct actions by individuals and companies against EU institutions, including competition law and state aid appeals",
+        "D": "Actions for annulment brought by member states against EU legislative acts"
+      },
+      "correct_answer": "C",
+      "explanation": "The General Court exercises jurisdiction in first instance over direct actions brought by natural and legal persons (individuals and companies) against EU institutions — primarily actions for annulment under Article 263 TFEU, actions for failure to act under Article 265 TFEU, and actions for damages under Article 340 TFEU. It also handles most competition law and state aid appeals. Decisions of the General Court may be appealed to the Court of Justice on points of law only."
+    },
+    {
+      "id": "EUL_M02_L04_Q07",
+      "question": "In Van Gend en Loos [1963], the Court of Justice established which fundamental principle?",
+      "options": {
+        "A": "EU law takes precedence over all conflicting national law, including later national legislation",
+        "B": "The EEC Treaty constituted a new legal order, the subjects of which comprise not only member states but also their nationals",
+        "C": "Member states are liable in damages for failure to implement EU directives",
+        "D": "National procedural rules must not make it practically impossible to enforce EU law rights"
+      },
+      "correct_answer": "B",
+      "explanation": "In Van Gend en Loos [1963] CJEU, the Court of Justice held that the EEC Treaty constituted 'a new legal order of international law for the benefit of which states have limited their sovereign rights, albeit within limited fields, and the subjects of which comprise not only member states but also their nationals.' This established the doctrine of direct effect — that individuals could rely on EU law rights in national courts. The principle of supremacy was established in Costa v ENEL [1964], and state liability in Francovich [1991]."
+    },
+    {
+      "id": "EUL_M02_L04_Q08",
+      "question": "The preliminary reference procedure under Article 267 TFEU is described as the most quantitatively significant head of the Court's jurisdiction. Why?",
+      "options": {
+        "A": "It allows the Commission to bring member states before the Court for systematic breaches of EU law",
+        "B": "It is the primary mechanism through which the Court has developed EU law — doctrines of direct effect, supremacy, and state liability were all established through preliminary reference cases",
+        "C": "It allows private parties to challenge EU legislative acts directly before the Court of Justice",
+        "D": "It gives national courts the power to disapply EU law where it conflicts with national constitutional provisions"
+      },
+      "correct_answer": "B",
+      "explanation": "Preliminary references under Article 267 TFEU are quantitatively the most significant head of the Court's jurisdiction. National courts may — and in certain cases must — refer questions of EU law to the Court of Justice for a ruling on correct interpretation or validity. The seminal doctrines of direct effect (Van Gend en Loos [1963]), supremacy (Costa v ENEL [1964]), and state liability (Francovich [1991]) were all established through this mechanism. The CJEU rules on the interpretation; the national court then applies it to the facts."
+    },
+    {
+      "id": "EUL_M02_L04_Q09",
+      "question": "Under Articles 258–259 TFEU, infringement proceedings can be brought against a member state by:",
+      "options": {
+        "A": "The Commission only",
+        "B": "The Commission or another member state",
+        "C": "The European Parliament or the Commission",
+        "D": "Any EU citizen or legal person with a sufficient interest"
+      },
+      "correct_answer": "B",
+      "explanation": "Articles 258–259 TFEU provide two routes for infringement proceedings: Article 258 allows the Commission to bring a member state before the Court for breach of EU law obligations; Article 259 allows another member state to bring proceedings. In practice, Article 258 proceedings by the Commission are far more common. If the Court finds a breach, it issues a declaratory judgment. Financial penalties under Article 260 TFEU are available for non-compliance with judgments."
+    },
+    {
+      "id": "EUL_M02_L04_Q10",
+      "question": "The EU's non-contractual liability — allowing individuals and companies to sue EU institutions for damages caused by unlawful acts — is governed by which Treaty provision?",
+      "options": {
+        "A": "Article 263 TFEU",
+        "B": "Article 267 TFEU",
+        "C": "Article 340 TFEU",
+        "D": "Article 258 TFEU"
+      },
+      "correct_answer": "C",
+      "explanation": "Article 340 TFEU provides that the EU shall make good, in accordance with the general principles common to the laws of the member states, any damage caused by its institutions or servants in the performance of their duties. This is the basis for non-contractual (tortious) liability of EU institutions. It is sometimes referred to as the Schöppenstedt formula for legislative acts — requiring a sufficiently serious breach of a rule of law intended to confer rights on individuals."
+    }
+  ]
+}

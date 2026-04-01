@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module01_Lesson02.txt",
+  "module_number": 1,
+  "module_title": "The Nature and Function of Tort Law",
+  "lesson_number": 2,
+  "lesson_title": "The FE-1 Tort Paper: Structure and Exam Strategy",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M01_L02_Q01",
+      "question": "How many questions must an FE-1 candidate answer on the Tort Law paper, and how many questions are on the paper in total?",
+      "options": {
+        "A": "Answer four from six",
+        "B": "Answer five from eight",
+        "C": "Answer six from ten",
+        "D": "Answer three from five"
+      },
+      "correct_answer": "B",
+      "explanation": "The FE-1 Tort paper consists of eight questions, of which candidates must answer five. This gives candidates the opportunity to select the questions on which they have the strongest knowledge. Selecting carefully is part of good exam strategy."
+    },
+    {
+      "id": "TL_M01_L02_Q02",
+      "question": "How much time is allocated per question on the FE-1 Tort paper, based on the total sitting time of three and a half hours divided across five answers?",
+      "options": {
+        "A": "Approximately thirty minutes per question",
+        "B": "Approximately fifty minutes per question",
+        "C": "Approximately forty-two minutes per question",
+        "D": "Approximately twenty-five minutes per question"
+      },
+      "correct_answer": "C",
+      "explanation": "With three and a half hours (210 minutes) divided across five questions, candidates have approximately forty-two minutes per question. Strict time management is essential — spending more than forty-two minutes on any one question risks leaving insufficient time for the remainder."
+    },
+    {
+      "id": "TL_M01_L02_Q03",
+      "question": "What does the acronym IRAC stand for, and on which type of FE-1 question is it primarily used?",
+      "options": {
+        "A": "Issue, Rule, Application, Conclusion — used in problem questions",
+        "B": "Introduction, Reasoning, Analysis, Comment — used in essay questions",
+        "C": "Issue, Ratio, Argument, Closing — used in both question types equally",
+        "D": "Identify, Recite, Apply, Conclude — used only in essay questions"
+      },
+      "correct_answer": "A",
+      "explanation": "IRAC stands for Issue, Rule, Application, and Conclusion. It is the primary analytical framework for problem questions in the FE-1 examination. The candidate must identify the legal issue, state the applicable rule, apply it carefully to the specific facts, and then advise the fictional party. Applying IRAC without skipping any element is essential for maximising marks."
+    },
+    {
+      "id": "TL_M01_L02_Q04",
+      "question": "What metaphor is used to describe the structured approach to analysing a negligence problem question on the FE-1 paper?",
+      "options": {
+        "A": "The pyramid approach — starting with the widest issue and narrowing to defences",
+        "B": "The cone approach — beginning with duty of care at the top and working down to defences",
+        "C": "The ladder approach — climbing from facts to legal conclusion rung by rung",
+        "D": "The wheel approach — each spoke representing a separate element of the tort"
+      },
+      "correct_answer": "B",
+      "explanation": "The cone approach is the recommended structure for negligence problem questions. At the top sits duty of care; in the middle, standard of care and breach; at the base, causation and remoteness; and below the cone, defences such as contributory negligence, volenti, and limitation. Working through this framework systematically ensures no element is omitted."
+    },
+    {
+      "id": "TL_M01_L02_Q05",
+      "question": "When considering defences to a negligence claim on the FE-1 paper, under which provision of Irish statute should contributory negligence be addressed?",
+      "options": {
+        "A": "Section 11 of the Civil Liability Act 1961",
+        "B": "Section 34 of the Civil Liability Act 1961",
+        "C": "Section 3 of the Statute of Limitations (Amendment) Act 1991",
+        "D": "Section 18 of the Defamation Act 2009"
+      },
+      "correct_answer": "B",
+      "explanation": "Contributory negligence in Irish tort law is governed by section 34 of the Civil Liability Act 1961. Candidates should cite this provision when addressing the defence of contributory negligence in any negligence problem question. Citing Irish statutory authority rather than relying on general principles demonstrates the level of legal precision the examiner expects."
+    },
+    {
+      "id": "TL_M01_L02_Q06",
+      "question": "Which Irish case must be cited for duty of care in negligence on the FE-1 paper, rather than the English Caparo case?",
+      "options": {
+        "A": "Ward v McMaster [1988] IR 337",
+        "B": "Donoghue v Stevenson [1932] AC 562",
+        "C": "Glencar Explorations plc v Mayo County Council [2002] 1 IR 84",
+        "D": "Breslin v Corcoran [2003] 2 IR 203"
+      },
+      "correct_answer": "C",
+      "explanation": "For duty of care, FE-1 candidates must cite Glencar Explorations plc v Mayo County Council [2002] 1 IR 84, not the English Caparo Industries plc v Dickman [1990]. Ireland has adopted its own three-limb test — foreseeability, proximity, and no policy reason to deny the duty — which differs in its formulation and application from the English approach. Using the wrong jurisdiction is a common and costly exam error."
+    },
+    {
+      "id": "TL_M01_L02_Q07",
+      "question": "Which Irish case must be cited for the standard in psychiatric injury claims on the FE-1 paper, as opposed to the English Alcock case?",
+      "options": {
+        "A": "Curran v Cadbury (Ire) Ltd [2000]",
+        "B": "Kelly v Hennessy [1995] 3 IR 253",
+        "C": "Lindsay v Mid-Western Health Board [1993] 2 IR 147",
+        "D": "Hanrahan v Merck Sharp and Dohme [1988] ILRM 629"
+      },
+      "correct_answer": "B",
+      "explanation": "Kelly v Hennessy [1995] 3 IR 253 is the leading Irish authority on psychiatric injury, particularly for secondary victims. It must be cited instead of the English Alcock v Chief Constable of South Yorkshire [1992] case, which the FE-1 examiner will consider incorrect law for an Irish examination. The Irish test differs importantly from Alcock in that it does not strictly require presence at the scene or perception through unaided senses."
+    },
+    {
+      "id": "TL_M01_L02_Q08",
+      "question": "Which Irish case governs the standard of care in medical negligence on the FE-1 paper, and in which year was it decided?",
+      "options": {
+        "A": "Fitzpatrick v White [2007]",
+        "B": "Geoghegan v Harris [2000]",
+        "C": "Dunne v National Maternity Hospital [1989]",
+        "D": "Philp v Ryan [2004]"
+      },
+      "correct_answer": "C",
+      "explanation": "Dunne v National Maternity Hospital [1989], decided by the Irish Supreme Court with Finlay CJ delivering the judgment, sets out the Dunne principles which govern the standard of care in medical negligence. FE-1 candidates must use the Dunne principles — not the English Bolam test — when addressing medical negligence questions. The Dunne principles include the reasonably competent practitioner standard and the general and approved practice rule."
+    },
+    {
+      "id": "TL_M01_L02_Q09",
+      "question": "What format is recommended for citing cases at FE-1 level?",
+      "options": {
+        "A": "Full law report citation including volume and page number — e.g., [1932] AC 562 at 580",
+        "B": "Case name and year only, with jurisdiction noted if non-Irish — e.g., Donoghue v Stevenson [1932] HL",
+        "C": "Case name alone is sufficient — the examiner can verify dates independently",
+        "D": "ECLI number and full party names with all intervening dates"
+      },
+      "correct_answer": "B",
+      "explanation": "At FE-1 level, candidates are expected to know case names and years. Full law report citations are not required. The correct format is case name and year, with jurisdiction noted if non-Irish — for example, Glencar Explorations v Mayo County Council [2002] for an Irish decision, or Donoghue v Stevenson [1932] HL for a House of Lords decision. This is sufficient and is the standard the examiner expects."
+    },
+    {
+      "id": "TL_M01_L02_Q10",
+      "question": "What is the recommended approach to time management when beginning the FE-1 Tort examination?",
+      "options": {
+        "A": "Begin writing immediately to maximise the time available for each answer",
+        "B": "Spend five minutes planning each answer before writing, and aim to finish each question in forty minutes",
+        "C": "Read the first question only, then begin writing while the paper is fresh in mind",
+        "D": "Spend the first thirty minutes reading all questions before attempting to write any answer"
+      },
+      "correct_answer": "B",
+      "explanation": "The recommended approach is to spend five minutes planning each answer — identifying key issues and sketching a structure — before writing. This investment in planning prevents disorganised answers and ensures all issues are addressed. Candidates should aim to complete each answer in forty minutes, leaving two minutes to review, and should not spend the first thirty minutes merely reading questions."
+    }
+  ]
+}

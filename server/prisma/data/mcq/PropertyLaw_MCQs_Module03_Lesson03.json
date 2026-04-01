@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_03_Lesson_03_Special_Cases_and_Advanced_Issues.txt",
+  "module_number": 3,
+  "module_title": "Adverse Possession",
+  "lesson_number": 3,
+  "lesson_title": "Adverse Possession: Special Cases and Advanced Issues",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M03_L03_Q01",
+      "question": "Where a squatter takes adverse possession of leasehold property, against whom does the limitation period first run and when does the freehold owner's right of action arise?",
+      "options": {
+        "A": "The limitation period runs against the freehold owner from the date of dispossession; the leaseholder has no independent right of action",
+        "B": "The limitation period runs against the leaseholder from the date of dispossession; the freehold owner's right of action does not begin to run until the lease expires, because until then the freehold owner has no immediate right to possession",
+        "C": "The limitation period runs simultaneously against both the leaseholder and the freehold owner from the date of dispossession",
+        "D": "The limitation period only begins to run against the freehold owner if the squatter pays the ground rent for twelve consecutive years"
+      },
+      "correct_answer": "B",
+      "explanation": "Where a squatter takes adverse possession of leasehold property, the limitation period runs against the leaseholder (the tenant) from the date of dispossession, because the leaseholder has the immediate right to possession. The freehold owner holds only the reversion — the right to recover possession at the end of the lease term — and so their right of action does not begin to run until the lease expires. A squatter who completes twelve years against the leaseholder will extinguish the leaseholder's title, but the freehold owner's separate twelve-year period only begins when the lease term ends."
+    },
+    {
+      "id": "PRL_M03_L03_Q02",
+      "question": "If a squatter completes twelve years of adverse possession against a leaseholder and extinguishes the leaseholder's title, does the squatter thereby acquire the freehold?",
+      "options": {
+        "A": "Yes — extinguishing the leaseholder's title automatically brings the freehold into possession",
+        "B": "No — the squatter acquires the leaseholder's interest only; the freehold owner retains their superior title and can recover possession after the lease term expires, at which point their own twelve-year period begins",
+        "C": "Yes — if the lease had more than twelve years to run at the time of dispossession",
+        "D": "No — the squatter acquires nothing until they have also completed twelve years against the freehold owner"
+      },
+      "correct_answer": "B",
+      "explanation": "A squatter who extinguishes the leaseholder's title by twelve years of adverse possession steps into the shoes of the leaseholder — they acquire the leasehold interest only. They do not acquire the freehold. The freehold owner retains their superior title and their reversion. The freehold owner's right of action against the squatter arises only when the lease expires and the freehold comes back into possession, at which point the freehold owner's own twelve-year period begins to run. Until then, the squatter holds the leasehold title subject to the freehold reversion."
+    },
+    {
+      "id": "PRL_M03_L03_Q03",
+      "question": "Can one joint tenant acquire title by adverse possession against the other joint tenants?",
+      "options": {
+        "A": "Yes — exclusive occupation by one joint tenant for twelve years automatically extinguishes the other joint tenants' title",
+        "B": "Generally no — joint tenants are all entitled to occupy the whole property, so one joint tenant's occupation is consistent with the joint tenancy and does not exclude the others; adverse possession between co-owners requires actual exclusion",
+        "C": "Yes — but only where the other joint tenants have formally abandoned the property",
+        "D": "Yes — a joint tenant can acquire adverse possession where they have paid all rates and taxes for twelve years"
+      },
+      "correct_answer": "B",
+      "explanation": "Generally, one joint tenant cannot acquire title by adverse possession against the other joint tenants. This is because all joint tenants are entitled to occupy the whole property, so one joint tenant being in exclusive occupation is not inconsistent with the joint tenancy — it is consistent with their right to possess the whole. There can be no adverse possession between co-owners unless one co-owner has been actually excluded — physically prevented from entering — by the other. Mere exclusive occupation by one joint tenant, without active exclusion of the others, does not cause the limitation period to run against them."
+    },
+    {
+      "id": "PRL_M03_L03_Q04",
+      "question": "Under which Convention provision was the adverse possession regime challenged on human rights grounds, and what was the general argument?",
+      "options": {
+        "A": "Article 6 of the ECHR (right to a fair trial) — the argument was that adverse possession proceedings were procedurally unfair to paper owners",
+        "B": "Article 1 of Protocol 1 to the ECHR (right to peaceful enjoyment of possessions) — the argument was that extinguishing the paper owner's title constituted a disproportionate interference with their property rights",
+        "C": "Article 8 of the ECHR (right to private and family life) — the argument was that forced loss of a home violated the paper owner's rights",
+        "D": "Article 14 of the ECHR (prohibition on discrimination) — the argument was that adverse possession rules disproportionately affected certain classes of landowner"
+      },
+      "correct_answer": "B",
+      "explanation": "The adverse possession regime was challenged under Article 1 of Protocol 1 to the European Convention on Human Rights, which protects the right to peaceful enjoyment of possessions. The argument was that extinguishing the paper owner's title after twelve years of adverse possession by a squatter constituted a disproportionate interference with the paper owner's property rights. This challenge was considered by the Grand Chamber of the European Court of Human Rights in J.A. Pye (Oxford) Ltd v United Kingdom [2007]."
+    },
+    {
+      "id": "PRL_M03_L03_Q05",
+      "question": "What was the outcome in J.A. Pye (Oxford) Ltd v United Kingdom [2007] before the Grand Chamber of the European Court of Human Rights?",
+      "options": {
+        "A": "The Grand Chamber held that the English adverse possession regime violated Article 1 Protocol 1 ECHR and ordered compensation to be paid to Pye",
+        "B": "The Grand Chamber held — by a majority — that the adverse possession regime did not violate Article 1 Protocol 1 ECHR; it pursued a legitimate aim (legal certainty and resolution of stale claims) and was not disproportionate, as Pye had ample opportunity to interrupt possession during the limitation period",
+        "C": "The Grand Chamber held that the adverse possession regime was compatible with the ECHR only in the context of registered land",
+        "D": "The Grand Chamber declined to rule on the compatibility of adverse possession with the ECHR, holding it was a matter for domestic courts"
+      },
+      "correct_answer": "B",
+      "explanation": "In J.A. Pye (Oxford) Ltd v United Kingdom [2007], the Grand Chamber of the European Court of Human Rights held by a majority that the adverse possession regime (under the pre-2002 English Land Registration Act) did not violate Article 1 of Protocol 1 to the ECHR. The Grand Chamber found that the regime pursued a legitimate aim — legal certainty and the resolution of stale title claims — and was not disproportionate, particularly because Pye had ample opportunity during the twelve-year limitation period to interrupt the squatters' possession. This decision confirmed the compatibility of adverse possession regimes with the ECHR."
+    },
+    {
+      "id": "PRL_M03_L03_Q06",
+      "question": "What is the significance of J.A. Pye (Oxford) Ltd v United Kingdom [2007] for Irish property law?",
+      "options": {
+        "A": "It has no relevance to Irish law as Ireland is not bound by decisions of the European Court of Human Rights",
+        "B": "It confirms that the Irish adverse possession regime under the Statute of Limitations Act 1957 — which is similar to the pre-2002 English regime found compatible with the ECHR — is unlikely to be found in violation of the ECHR",
+        "C": "It requires Ireland to introduce a new registration-based adverse possession scheme similar to the English Land Registration Act 2002",
+        "D": "It means that Irish squatters must now pay compensation to paper owners before their adverse possession claims can be registered"
+      },
+      "correct_answer": "B",
+      "explanation": "The significance of J.A. Pye (Oxford) Ltd v United Kingdom [2007] for Irish law is that the Irish adverse possession regime under the Statute of Limitations Act 1957 is similar to the pre-2002 English regime that the Grand Chamber found to be compatible with the ECHR. Irish FE-1 candidates should know that the ECHR challenge to adverse possession was considered and rejected by the Grand Chamber, and that the Irish regime remains intact. Raising this ECHR dimension in an FE-1 answer demonstrates awareness of the wider legal framework and can elevate the quality of the response."
+    },
+    {
+      "id": "PRL_M03_L03_Q07",
+      "question": "How does adverse possession operate differently for registered land in Ireland compared to unregistered land?",
+      "options": {
+        "A": "Registered land is immune from adverse possession claims under the Registration of Title Act 1964",
+        "B": "For registered land, even after the limitation period expires, the paper owner's title is not automatically extinguished from the register; the squatter acquires the right to be registered as owner and must apply to the Property Registration Authority to be registered",
+        "C": "For registered land, the limitation period is twenty years rather than twelve",
+        "D": "For registered land, adverse possession only operates where the squatter has lodged a prior caution with the Land Registry"
+      },
+      "correct_answer": "B",
+      "explanation": "For registered land in Ireland, adverse possession operates differently from unregistered land in one key respect: even after the twelve-year limitation period expires, the registered paper owner's title is not automatically extinguished from the register. Instead, the squatter acquires the right to be registered as owner and must apply to the Property Registration Authority (formerly the Land Registry) to be registered. Until they are so registered, the registered paper owner remains on the register. For unregistered land, the paper owner's title is extinguished under section 24 of the Statute of Limitations Act 1957 once the limitation period expires, without any registration step being required."
+    },
+    {
+      "id": "PRL_M03_L03_Q08",
+      "question": "Under what legislation is the system of land registration in Ireland established, and what authority now administers it?",
+      "options": {
+        "A": "The Land Registry Act 1891; administered by the Land Registry Office",
+        "B": "The Registration of Title Act 1964; administered by the Property Registration Authority",
+        "C": "The Land and Conveyancing Law Reform Act 2009; administered by the Land Registry",
+        "D": "The Statute of Limitations Act 1957; administered by the Courts Service"
+      },
+      "correct_answer": "B",
+      "explanation": "The system of land registration in Ireland is established under the Registration of Title Act 1964. The registry is now administered by the Property Registration Authority, which replaced the Land Registry in its administrative function. For adverse possession purposes, a squatter who has completed the limitation period against registered land must apply to the Property Registration Authority to be registered as owner. The Registration of Title Act 1964 is the key legislation governing title registration and the effect of registration and adverse possession in the context of registered land."
+    },
+    {
+      "id": "PRL_M03_L03_Q09",
+      "question": "Where registered land is involved, what practical consequences follow from the fact that the squatter's title is not automatically extinguished from the register after the twelve-year period?",
+      "options": {
+        "A": "The squatter can sell the land to a purchaser immediately without any registration step",
+        "B": "A registered paper owner who has lost possession may still defeat a squatter who has not yet applied for registration if the paper owner can show that the squatter's adverse possession was not in fact continuous",
+        "C": "The paper owner's title automatically revives twelve months after the limitation period if the squatter has not applied for registration",
+        "D": "The squatter automatically becomes a licensee of the registered owner after the limitation period expires"
+      },
+      "correct_answer": "B",
+      "explanation": "Because the registered paper owner's title remains on the register until the squatter applies for registration, there is an important window during which the registered owner may still challenge the squatter's claim. If the squatter has not yet applied for registration, the registered owner can contest the application by demonstrating that the squatter's period of adverse possession was not in fact continuous — perhaps identifying an acknowledgement, permission, or physical interruption that broke the possession. This makes early application for registration important for squatters who have completed the limitation period, as delay creates vulnerability."
+    },
+    {
+      "id": "PRL_M03_L03_Q10",
+      "question": "The Grand Chamber in J.A. Pye v UK [2007] noted that Pye had ample opportunity to interrupt the squatters' possession during the limitation period. What does this observation tell us about the policy rationale for adverse possession?",
+      "options": {
+        "A": "That adverse possession is primarily a punishment for paper owners who do not properly use their land",
+        "B": "That the paper owner bears responsibility for monitoring their land and protecting their title by interrupting adverse possession if they wish to retain the land; the limitation period is not disproportionate given that opportunity",
+        "C": "That adverse possession can only operate where the paper owner was ignorant of the squatter's occupation throughout the limitation period",
+        "D": "That the squatter must notify the paper owner of their adverse possession claim before the limitation period can begin to run"
+      },
+      "correct_answer": "B",
+      "explanation": "The Grand Chamber's observation that Pye had ample opportunity to interrupt possession during the twelve-year period reflects the underlying policy rationale for adverse possession: it is not a disproportionate regime because it provides the paper owner with a reasonable window — twelve years — to protect their title. The paper owner can always interrupt adverse possession by physically re-entering and resuming possession. The regime promotes legal certainty and resolves stale title claims. A paper owner who is aware of a squatter but does nothing for twelve years loses the sympathy of the law — the doctrine incentivises active estate management."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module01_Lesson03.txt",
+  "module_number": 1,
+  "module_title": "History and Development of the EU",
+  "lesson_number": 3,
+  "lesson_title": "Brexit: The First Withdrawal from the European Union",
+  "questions": [
+    {
+      "id": "EUL_M01_L03_Q01",
+      "question": "The UK referendum on EU membership was held on which date, and what was the result?",
+      "options": {
+        "A": "23 June 2016, with 51.9% voting to Leave",
+        "B": "23 June 2016, with 48.1% voting to Leave",
+        "C": "12 December 2019, with 51.9% voting to Leave",
+        "D": "23 June 2015, with 52% voting to Remain"
+      },
+      "correct_answer": "A",
+      "explanation": "The UK referendum on EU membership was held on 23 June 2016. The result was 51.9% in favour of Leave and 48.1% in favour of Remain, on a turnout of approximately 72%."
+    },
+    {
+      "id": "EUL_M01_L03_Q02",
+      "question": "Article 50 TEU, the withdrawal procedure, provides that a member state wishing to withdraw shall notify the European Council of its intention. The default period for withdrawal negotiations is:",
+      "options": {
+        "A": "One year from notification",
+        "B": "Two years from notification, unless extended by unanimous agreement of the European Council with the departing state's agreement",
+        "C": "Three years from notification",
+        "D": "Five years from notification, subject to review"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 50(3) TEU provides a two-year period from notification for negotiating and concluding a withdrawal agreement. This period can be extended by unanimous decision of the European Council, in agreement with the withdrawing member state. The UK's Article 50 period was extended multiple times before the UK finally left on 31 January 2020."
+    },
+    {
+      "id": "EUL_M01_L03_Q03",
+      "question": "The UK formally notified the European Council of its intention to withdraw under Article 50 TEU on:",
+      "options": {
+        "A": "24 June 2016",
+        "B": "29 March 2017",
+        "C": "31 January 2019",
+        "D": "31 October 2019"
+      },
+      "correct_answer": "B",
+      "explanation": "The UK Prime Minister Theresa May triggered Article 50 TEU by formally notifying the European Council of the UK's intention to withdraw on 29 March 2017, starting the two-year withdrawal period."
+    },
+    {
+      "id": "EUL_M01_L03_Q04",
+      "question": "The UK formally ceased to be a member of the European Union on:",
+      "options": {
+        "A": "29 March 2019",
+        "B": "31 October 2019",
+        "C": "31 January 2020",
+        "D": "31 December 2020"
+      },
+      "correct_answer": "C",
+      "explanation": "The UK left the EU on 31 January 2020, following ratification of the Withdrawal Agreement by both the UK Parliament and the EU institutions. A transition period then ran until 31 December 2020, during which EU law continued to apply in the UK."
+    },
+    {
+      "id": "EUL_M01_L03_Q05",
+      "question": "The withdrawal agreement between the UK and EU included a Protocol on Northern Ireland, which was designed primarily to:",
+      "options": {
+        "A": "Allow Northern Ireland to hold a referendum on reunification with Ireland",
+        "B": "Protect the Good Friday/Belfast Agreement and avoid a hard border on the island of Ireland",
+        "C": "Provide Northern Ireland with preferential trade access to both UK and EU markets",
+        "D": "Require Northern Ireland to remain in the EU regardless of the UK's departure"
+      },
+      "correct_answer": "B",
+      "explanation": "The Northern Ireland Protocol (subsequently replaced by the Windsor Framework in 2023) was designed to protect the Good Friday Agreement of 1998 and avoid a hard physical border between Northern Ireland and the Republic of Ireland. It did this by keeping Northern Ireland aligned with EU single market rules for goods, while remaining within the UK's customs territory."
+    },
+    {
+      "id": "EUL_M01_L03_Q06",
+      "question": "During the transition period following the UK's departure on 31 January 2020, which of the following was true?",
+      "options": {
+        "A": "EU law ceased to apply in the UK immediately",
+        "B": "EU law continued to apply in the UK, but the UK had no vote or representation in EU institutions",
+        "C": "The UK remained a member of the single market but left the customs union",
+        "D": "The UK could continue to negotiate new EU legislation as a third country observer"
+      },
+      "correct_answer": "B",
+      "explanation": "During the transition period (1 February to 31 December 2020), EU law continued to apply in full in the UK — the single market, customs union, and all EU rules applied. However, the UK no longer participated in EU institutions, had no MEPs, no Commissioner, and no vote in the Council."
+    },
+    {
+      "id": "EUL_M01_L03_Q07",
+      "question": "The UK-EU Trade and Cooperation Agreement (TCA), governing post-Brexit trading relations, was agreed on:",
+      "options": {
+        "A": "31 January 2020",
+        "B": "31 October 2020",
+        "C": "24 December 2020",
+        "D": "1 January 2021"
+      },
+      "correct_answer": "C",
+      "explanation": "The Trade and Cooperation Agreement was agreed on 24 December 2020 (Christmas Eve), just days before the end of the transition period on 31 December 2020. It was provisionally applied from 1 January 2021 and formally ratified by the European Parliament in April 2021."
+    },
+    {
+      "id": "EUL_M01_L03_Q08",
+      "question": "Article 50 TEU is significant for EU constitutional law because:",
+      "options": {
+        "A": "It was the first time the Treaty expressly provided that member states are sovereign and may leave the Union",
+        "B": "It confirmed that EU law is supreme even over national constitutional provisions",
+        "C": "It established the procedure for expelling a member state that breaches EU values",
+        "D": "It required the European Court of Justice to adjudicate on the validity of withdrawal"
+      },
+      "correct_answer": "A",
+      "explanation": "Prior to Lisbon, the Treaties contained no express right of withdrawal. Article 50 TEU (introduced by Lisbon) confirmed for the first time in treaty text that member states are voluntary participants and retain the sovereign right to leave — a significant constitutional affirmation of the non-federal nature of the EU."
+    },
+    {
+      "id": "EUL_M01_L03_Q09",
+      "question": "The Miller litigation (R (Miller) v Secretary of State for Exiting the European Union [2017]) in the UK Supreme Court concerned:",
+      "options": {
+        "A": "Whether EU citizens in the UK could remain after Brexit",
+        "B": "Whether the Prime Minister could trigger Article 50 TEU using executive prerogative power or required an Act of Parliament",
+        "C": "Whether the Northern Ireland Assembly had to consent to Brexit",
+        "D": "Whether EU law could continue to apply in UK courts post-Brexit"
+      },
+      "correct_answer": "B",
+      "explanation": "The UK Supreme Court in Miller (2017) held that triggering Article 50 TEU was a matter of such constitutional importance — it would inevitably remove rights that Parliament had conferred on UK citizens — that it required authorisation by Act of Parliament rather than executive prerogative alone. The European Union (Notification of Withdrawal) Act 2017 was subsequently enacted."
+    },
+    {
+      "id": "EUL_M01_L03_Q10",
+      "question": "In R (Miller) v Prime Minister [2019] (Miller 2), the UK Supreme Court ruled that:",
+      "options": {
+        "A": "The prorogation of Parliament for five weeks in August-September 2019 was unlawful and void",
+        "B": "Parliament had to approve any withdrawal agreement before the UK could leave the EU",
+        "C": "The Government could extend the Article 50 period without Parliamentary approval",
+        "D": "Northern Ireland had a legal veto over the withdrawal agreement"
+      },
+      "correct_answer": "A",
+      "explanation": "In Miller 2 (September 2019), the UK Supreme Court unanimously held that Prime Minister Johnson's advice to the Queen to prorogue Parliament for five weeks was unlawful, as it had the effect of frustrating Parliament's ability to carry out its constitutional functions without reasonable justification. The prorogation was declared null and void."
+    }
+  ],
+  "total_questions": 10
+}

@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "Module_02_Lesson_01_The_European_Parliament.txt",
+  "module_number": 2,
+  "module_title": "Institutions of the European Union",
+  "lesson_number": 1,
+  "lesson_title": "The European Parliament — Composition, Powers and Democratic Role",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EUL_M02_L01_Q01",
+      "question": "What was the European Parliament originally called under the EEC Treaty of 1957, and how was it composed?",
+      "options": {
+        "A": "The Council of Europe, composed of appointed government ministers",
+        "B": "The Assembly, composed of delegates seconded from national parliaments",
+        "C": "The Assembly, composed of directly elected citizens",
+        "D": "The European Parliament, composed of delegates from member state courts"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the original EEC Treaty of 1957, the institution was called the Assembly. It was not directly elected but composed of delegates seconded from national parliaments, and its functions were purely consultative."
+    },
+    {
+      "id": "EUL_M02_L01_Q02",
+      "question": "When were the first direct elections to the European Parliament held, and why were they constitutionally significant?",
+      "options": {
+        "A": "1973, because they coincided with the UK's accession to the EEC",
+        "B": "1979, because they gave the Parliament a democratic mandate independent of national governments",
+        "C": "1986, following the Single European Act which first provided for direct elections",
+        "D": "1992, following the Maastricht Treaty which established the European Union"
+      },
+      "correct_answer": "B",
+      "explanation": "The first direct elections were held in June 1979. They were a genuine constitutional moment because direct elections gave the Parliament a democratic mandate of its own, independent of national governments, transforming it from a consultative appendage into an institution with a popular base."
+    },
+    {
+      "id": "EUL_M02_L01_Q03",
+      "question": "How many MEPs sit in the European Parliament following the June 2024 elections, and what principle governs the allocation of seats between member states?",
+      "options": {
+        "A": "705 MEPs allocated on the basis of strict proportionality to population",
+        "B": "751 MEPs allocated equally between member states",
+        "C": "720 MEPs allocated on the basis of degressive proportionality",
+        "D": "736 MEPs allocated by unanimity of the European Council"
+      },
+      "correct_answer": "C",
+      "explanation": "Following the June 2024 elections, the Parliament is composed of 720 MEPs. Seats are allocated according to degressive proportionality, meaning smaller states receive proportionally more seats relative to their population than larger states, but still fewer in absolute terms. Germany holds the most seats (96); Malta the fewest (6)."
+    },
+    {
+      "id": "EUL_M02_L01_Q04",
+      "question": "How many seats does Ireland currently hold in the European Parliament, and what accounts for the increase from the pre-Brexit figure?",
+      "options": {
+        "A": "11 seats; Ireland's population grew significantly after 2016",
+        "B": "14 seats; some of the 73 seats previously held by the UK were redistributed",
+        "C": "13 seats; a new allocation formula was agreed at the 2019 European Council",
+        "D": "14 seats; Ireland gained seats because it joined the eurozone"
+      },
+      "correct_answer": "B",
+      "explanation": "Ireland currently holds 14 seats. This number increased after Brexit because the UK had held 73 seats and some of those were redistributed among remaining member states."
+    },
+    {
+      "id": "EUL_M02_L01_Q05",
+      "question": "How do MEPs sit and organise themselves within the European Parliament chamber?",
+      "options": {
+        "A": "In national delegations led by each member state's senior MEP",
+        "B": "In transnational political groups of MEPs sharing broadly similar political positions",
+        "C": "Alphabetically by member state, with no formal grouping permitted",
+        "D": "In rotating blocs reassigned after each plenary session"
+      },
+      "correct_answer": "B",
+      "explanation": "MEPs do not sit in national blocs. They sit in transnational political groups — groupings of MEPs from different member states who share broadly similar political positions. A minimum threshold of MEPs from at least seven member states is required to form a recognised group."
+    },
+    {
+      "id": "EUL_M02_L01_Q06",
+      "question": "Under which Treaty article is the ordinary legislative procedure — formerly known as codecision — set out, and what is its effect on the Parliament's legislative role?",
+      "options": {
+        "A": "Article 289 TFEU; it gives the Parliament a consultative role only",
+        "B": "Article 294 TFEU; it makes the Parliament and the Council co-equal legislators",
+        "C": "Article 17 TEU; it gives the Parliament the right to initiate legislation",
+        "D": "Article 225 TFEU; it requires the Parliament to approve all Commission proposals"
+      },
+      "correct_answer": "B",
+      "explanation": "The ordinary legislative procedure is set out in Article 294 TFEU. It makes the Parliament and the Council co-equal legislators. A Commission proposal moves through up to three readings in both institutions, and no legislation can be adopted under this procedure without the agreement of both."
+    },
+    {
+      "id": "EUL_M02_L01_Q07",
+      "question": "Under Article 234 TFEU, what majority is required for the Parliament to pass a motion of censure against the Commission, and what consequence follows a successful vote?",
+      "options": {
+        "A": "A simple majority; only the Commissioner responsible for the relevant failings must resign",
+        "B": "A two-thirds majority of votes cast representing an absolute majority of MEPs; the entire Commission must resign collectively",
+        "C": "An absolute majority of all MEPs; only the President of the Commission must resign",
+        "D": "A qualified majority; the Commission loses its legislative initiative power for one year"
+      },
+      "correct_answer": "B",
+      "explanation": "Under Article 234 TFEU, a motion of censure requires a two-thirds majority of votes cast representing an absolute majority of MEPs. A successful motion requires the entire Commission — not just the Commissioner responsible for any failings — to resign collectively."
+    },
+    {
+      "id": "EUL_M02_L01_Q08",
+      "question": "What happened to the Santer Commission in 1999, and what does this episode illustrate about the Parliament's powers?",
+      "options": {
+        "A": "It was dissolved by the Council after losing a QMV vote; illustrating the Council's supremacy over the Commission",
+        "B": "It resigned collectively before a widely expected censure vote, following findings of fraud, nepotism and mismanagement; illustrating the potency of the Parliament's scrutiny function",
+        "C": "It was removed by the Court of Justice following a Treaty infringement; illustrating judicial control over institutions",
+        "D": "It resigned after the Parliament withheld budget discharge for three consecutive years; illustrating the Parliament's budgetary powers"
+      },
+      "correct_answer": "B",
+      "explanation": "In 1999, the Santer Commission resigned collectively before a censure vote that was widely expected to pass, following an independent report finding widespread fraud, nepotism, and mismanagement. This demonstrated that the Parliament's scrutiny function carries real political weight, even though no censure motion has ever formally succeeded."
+    },
+    {
+      "id": "EUL_M02_L01_Q09",
+      "question": "Under which Treaty provision must the Parliament give its consent to the accession of new member states to the EU?",
+      "options": {
+        "A": "Article 294 TFEU",
+        "B": "Article 227 TFEU",
+        "C": "Article 49 TEU",
+        "D": "Article 218 TFEU"
+      },
+      "correct_answer": "C",
+      "explanation": "Under Article 49 TEU, the accession of new member states requires the consent of the European Parliament. Under Article 218 TFEU, international agreements (including trade agreements) also require Parliament's consent. For enlargement specifically, the relevant provision is Article 49 TEU."
+    },
+    {
+      "id": "EUL_M02_L01_Q10",
+      "question": "Which of the following most accurately identifies a continuing limitation on the European Parliament's powers that is relevant to the democratic deficit argument?",
+      "options": {
+        "A": "The Parliament cannot reject the EU's annual budget",
+        "B": "The Parliament has no role in approving the College of Commissioners",
+        "C": "The Parliament has no right of legislative initiative — it cannot itself propose legislation",
+        "D": "The Parliament has no power to scrutinise international trade agreements"
+      },
+      "correct_answer": "C",
+      "explanation": "A central limitation on the Parliament's legislative role is that it has no right of legislative initiative. Only the Commission can formally propose legislation under Article 17(2) TEU. The Parliament can request the Commission to bring forward a proposal under Article 225 TFEU, but the Commission is not legally obliged to comply. This contributes to the democratic deficit critique."
+    }
+  ]
+}

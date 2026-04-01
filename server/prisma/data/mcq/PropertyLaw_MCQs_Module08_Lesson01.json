@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "PropertyLaw_ElevenLabs_Module08_Lesson01.txt",
+  "module_number": 8,
+  "module_title": "Licences, Proprietary Estoppel, and Rights of Residence",
+  "lesson_number": 1,
+  "lesson_title": "Licences, Proprietary Estoppel, and Rights of Residence: Categories, Elements, Remedies, and Classification",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M08_L01_Q01",
+      "question": "How many categories of licence over land are recognised in Irish and English property law?",
+      "options": {
+        "A": "Four — bare licence, licence coupled with an interest, contractual licence, and estoppel licence",
+        "B": "Two — contractual licence and bare licence",
+        "C": "Three — bare licence, contractual licence, and proprietary licence",
+        "D": "Five — bare, coupled, contractual, estoppel, and statutory licence"
+      },
+      "correct_answer": "A",
+      "explanation": "Irish property law recognises four categories of licence: the bare licence; the licence coupled with an interest (or grant); the contractual licence; and the estoppel licence. Each category has different legal consequences, particularly as regards revocability and enforceability against third parties."
+    },
+    {
+      "id": "PRL_M08_L01_Q02",
+      "question": "What is a bare licence in the law of licences over land?",
+      "options": {
+        "A": "A licence granted under a formal deed and binding on successors in title",
+        "B": "A gratuitous permission to enter or use land which is revocable at will by the licensor",
+        "C": "A licence supported by contractual consideration and irrevocable for a fixed term",
+        "D": "A licence granted as part of an equitable estoppel claim"
+      },
+      "correct_answer": "B",
+      "explanation": "A bare licence is a gratuitous permission — one given without consideration — allowing the licensee to enter or use land. Because it is not supported by any contractual consideration or equity, it is revocable at will by the licensor. On revocation, the licensee becomes a trespasser."
+    },
+    {
+      "id": "PRL_M08_L01_Q03",
+      "question": "What is a licence coupled with an interest (or coupled with a grant) and what is its key characteristic?",
+      "options": {
+        "A": "A licence that arises automatically on the creation of a lease",
+        "B": "A licence linked to a contractual obligation and revocable on breach of that obligation",
+        "C": "A licence that is ancillary to and inseparable from a proprietary interest in the land, and therefore irrevocable for as long as the interest subsists",
+        "D": "A licence that binds third parties in equity as a constructive trust"
+      },
+      "correct_answer": "C",
+      "explanation": "A licence coupled with an interest is one that is ancillary to a recognised proprietary interest — such as a profit a prendre or a right to enter and take goods. Because it is necessary to give effect to the proprietary interest, it cannot be revoked separately from it. It is irrevocable for as long as the proprietary interest subsists."
+    },
+    {
+      "id": "PRL_M08_L01_Q04",
+      "question": "A contractual licence differs from a bare licence in which of the following ways?",
+      "options": {
+        "A": "A contractual licence always creates an interest in land binding on successors in title",
+        "B": "A contractual licence cannot be revoked under any circumstances",
+        "C": "A contractual licence is registered in the Land Registry and is binding on third parties as a matter of law",
+        "D": "A contractual licence is supported by consideration and may be irrevocable during the contractual period"
+      },
+      "correct_answer": "D",
+      "explanation": "A contractual licence is supported by valuable consideration, which distinguishes it from a bare licence. Because it rests on contract, the licensor may be restrained from revoking it during the contractual period by injunction or damages for breach. However, whether it binds third parties — successors in title — is contested."
+    },
+    {
+      "id": "PRL_M08_L01_Q05",
+      "question": "An estoppel licence arises where:",
+      "options": {
+        "A": "The licensor is estopped from revoking permission because the licensee has relied to their detriment on an assurance given by the licensor",
+        "B": "The licence is granted by a statutory authority and cannot be revoked without compensation",
+        "C": "The licensor fails to register the licence in the Land Registry within a prescribed period",
+        "D": "The licensee has occupied the land for a continuous period sufficient to establish adverse possession"
+      },
+      "correct_answer": "A",
+      "explanation": "An estoppel licence arises where the licensor has given an assurance to the licensee, the licensee has relied on that assurance, and has suffered detriment as a result. Equity will not allow the licensor to revoke the permission in those circumstances. The estoppel licence is closely related to proprietary estoppel."
+    },
+    {
+      "id": "PRL_M08_L01_Q06",
+      "question": "In Errington v Errington and Woods [1952], Denning LJ held that a contractual licence could not be revoked against a licensee in occupation who continued to perform the conditions attached to it. The case involved:",
+      "options": {
+        "A": "A commercial tenant seeking to enforce a renewal option against a new landlord",
+        "B": "A father who had promised his son and daughter-in-law that the house would be theirs when the mortgage was paid off — provided they continued paying the instalments",
+        "C": "A widow seeking to enforce a life estate against the deceased's personal representatives",
+        "D": "A licensee seeking to restrain a trespass by a third party purchaser with notice"
+      },
+      "correct_answer": "B",
+      "explanation": "In Errington v Errington [1952], a father promised his son and daughter-in-law that if they continued paying the mortgage instalments the house would be theirs when the mortgage was paid off. Denning LJ held this contractual licence could not be revoked while the conditions were being performed, and that it bound the father's estate."
+    },
+    {
+      "id": "PRL_M08_L01_Q07",
+      "question": "In Binions v Evans [1972], Denning LJ held that a purchaser who took land expressly subject to an occupier's contractual licence held the land on constructive trust for the occupier. This decision was controversial because:",
+      "options": {
+        "A": "It held that a contractual licence automatically creates a legal estate in land",
+        "B": "It created a new form of registrable interest not recognised by statute",
+        "C": "It effectively treated a contractual licence as capable of binding third parties through the constructive trust device, which was subsequently doubted",
+        "D": "It overruled Errington v Errington on the irrevocability of contractual licences"
+      },
+      "correct_answer": "C",
+      "explanation": "In Binions v Evans [1972], Denning LJ held that the purchasers, who had taken expressly subject to the occupier's licence, held on constructive trust for her. This was controversial because it effectively made the contractual licence capable of binding third parties. The approach was subsequently doubted in Ashburn Anstalt v Arnold [1989]."
+    },
+    {
+      "id": "PRL_M08_L01_Q08",
+      "question": "In Ashburn Anstalt v Arnold [1989], the English Court of Appeal doubted the Binions v Evans approach to contractual licences. What was the Irish courts' response to this debate?",
+      "options": {
+        "A": "Irish courts followed Binions v Evans, holding that all contractual licences bind third parties as constructive trusts",
+        "B": "Irish courts abolished the contractual licence category entirely",
+        "C": "Irish courts adopted a middle position, treating some contractual licences as proprietary interests",
+        "D": "Irish courts have adopted the narrower Ashburn Anstalt approach, rejecting the automatic imposition of a constructive trust"
+      },
+      "correct_answer": "D",
+      "explanation": "Irish courts have followed the narrower Ashburn Anstalt approach, rejecting the proposition that a constructive trust is automatically imposed whenever land is taken subject to a contractual licence. A constructive trust will only arise if the circumstances clearly justify it. This is the accepted Irish position."
+    },
+    {
+      "id": "PRL_M08_L01_Q09",
+      "question": "Which of the following best describes the Irish courts' approach to whether a contractual licence binds a third party purchaser with notice?",
+      "options": {
+        "A": "All contractual licences automatically bind third parties with notice as equitable interests",
+        "B": "Contractual licences can never bind successors in title regardless of notice",
+        "C": "Contractual licences bind third parties only if registered in the Land Registry",
+        "D": "Following the narrower Ashburn Anstalt position, a constructive trust and binding effect on third parties requires something more than merely taking subject to the licence"
+      },
+      "correct_answer": "D",
+      "explanation": "The Irish position following Ashburn Anstalt v Arnold [1989] is that taking land subject to a contractual licence does not automatically impose a constructive trust. Something more is needed — for example, the parties must clearly intend a binding trust, or there must be circumstances that make it unconscionable for the purchaser to deny the licensee's rights."
+    },
+    {
+      "id": "PRL_M08_L01_Q10",
+      "question": "Proprietary estoppel requires the claimant to establish three elements. Which of the following correctly states those three elements?",
+      "options": {
+        "A": "Offer, acceptance, and consideration",
+        "B": "Assurance, reliance, and detriment",
+        "C": "Promise, notice, and occupation",
+        "D": "Representation, registration, and reliance"
+      },
+      "correct_answer": "B",
+      "explanation": "Proprietary estoppel requires: (1) an assurance by the landowner that the claimant has or will acquire rights in the land; (2) reliance on that assurance by the claimant; and (3) detriment suffered by the claimant in reliance on the assurance. Where all three are established, it would be unconscionable to allow the landowner to resile from the assurance."
+    }
+  ]
+}

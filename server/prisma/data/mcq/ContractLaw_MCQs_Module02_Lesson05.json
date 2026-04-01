@@ -1,0 +1,131 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": "ContractLaw_ElevenLabs_Module02_Lesson05.txt",
+  "module_number": 2,
+  "module_title": "Terms of a Contract",
+  "lesson_number": 5,
+  "lesson_title": "Certainty of Terms",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M02_L05_Q01",
+      "question": "The general rule on certainty of contractual terms is:",
+      "options": {
+        "A": "Courts will always supply missing terms to give effect to the parties' intentions",
+        "B": "A contract too vague for the court to give it any definite meaning is void for uncertainty, but courts strain to find certainty where they can",
+        "C": "Only price terms need to be certain — all other terms can be agreed later",
+        "D": "Courts will void any contract that uses commercially imprecise language"
+      },
+      "correct_answer": "B",
+      "explanation": "The core rule is that vagueness voids — a contract too vague to give definite meaning is unenforceable. But courts will not be quick to strike down commercial transactions. They strain to find certainty using commercial context, prior dealings, and trade usage. Courts will not make contracts for parties, but will enforce them where reasonably possible."
+    },
+    {
+      "id": "CL_M02_L05_Q02",
+      "question": "In May and Butcher v The King [1934], the House of Lords held the agreement to purchase tentage 'at a price to be agreed' was:",
+      "options": {
+        "A": "Enforceable — courts can supply a reasonable price",
+        "B": "Void for uncertainty — without a price mechanism, the court had nothing to enforce",
+        "C": "Voidable at the election of either party",
+        "D": "Valid under the Sale of Goods Act as a contract for goods"
+      },
+      "correct_answer": "B",
+      "explanation": "May and Butcher v The King [1934] is the leading authority for the principle that 'price to be agreed' renders a contract void for uncertainty. Without any mechanism to fix the price, there was nothing the court could give effect to. This is contrasted with Hillas v Arcos [1932], where commercial context supplied the content that imprecise words lacked."
+    },
+    {
+      "id": "CL_M02_L05_Q03",
+      "question": "In Hillas v Arcos [1932], the House of Lords upheld an agreement for 'fair specification' of timber despite its imprecision because:",
+      "options": {
+        "A": "The parties had agreed to submit any pricing disputes to arbitration",
+        "B": "Commercial context, prior dealings, and trade usage supplied sufficient content to give the term meaning",
+        "C": "The Sale of Goods Act 1893 implied a reasonable quality term",
+        "D": "Only price — not quality — must be certain for a contract to be enforceable"
+      },
+      "correct_answer": "B",
+      "explanation": "Hillas v Arcos [1932] illustrates that courts look to commercial context, the parties' course of dealing, and trade usage to supply content to imprecise terms. 'Fair specification' had an understood meaning in the timber trade. The contrast with May and Butcher shows that courts ask: can an external standard rescue the vague term?"
+    },
+    {
+      "id": "CL_M02_L05_Q04",
+      "question": "In Foley v Classique Coaches [1934], a petrol supply agreement at 'a price to be agreed from time to time' was upheld because:",
+      "options": {
+        "A": "Petrol supply contracts are exempt from the certainty requirement",
+        "B": "The parties had actually performed under the agreement for three years, with their conduct supplying the certainty the words lacked",
+        "C": "The court implied a statutory reasonable price",
+        "D": "Both parties had signed a formal written contract incorporating all material terms"
+      },
+      "correct_answer": "B",
+      "explanation": "Foley v Classique Coaches [1934] adds an important nuance: parties' conduct over time can supply certainty. Three years of actual performance under the agreement demonstrated that the parties understood what was required of them — even though the words 'price to be agreed' would normally fail the May and Butcher test."
+    },
+    {
+      "id": "CL_M02_L05_Q05",
+      "question": "Boyle v Lee [1992] is the leading Irish Supreme Court authority on certainty. It held that a document marked 'subject to contract' did not constitute a binding agreement because:",
+      "options": {
+        "A": "The property was not sufficiently described",
+        "B": "The 'subject to contract' formula signified the parties were still negotiating — no final terms had been concluded",
+        "C": "One of the parties lacked capacity to contract",
+        "D": "The agreement had not been witnessed by a solicitor"
+      },
+      "correct_answer": "B",
+      "explanation": "In Boyle v Lee [1992], the Irish Supreme Court held that 'subject to contract' meant the parties had not yet concluded a binding agreement — they were still in negotiation. The court will not enforce a contract where the parties themselves have explicitly signalled that terms remain open. This is the leading Irish authority on the subject to contract formula."
+    },
+    {
+      "id": "CL_M02_L05_Q06",
+      "question": "The distinction between a 'best endeavours' obligation and a 'reasonable endeavours' obligation is that:",
+      "options": {
+        "A": "Both impose identical standards — the words are interchangeable",
+        "B": "Best endeavours requires the promisor to exhaust all reasonable courses of action and may require sacrifice of some commercial interests; reasonable endeavours permits weighing of those interests",
+        "C": "Reasonable endeavours is the higher standard — it requires objectively reasonable conduct at all times",
+        "D": "Best endeavours applies only to contracts for land; reasonable endeavours applies to all other contracts"
+      },
+      "correct_answer": "B",
+      "explanation": "Best endeavours is the higher of the two standards — the promisor must exhaust all reasonable courses of action, potentially sacrificing some commercial interests. Reasonable endeavours is lower — the promisor may weigh their own interests before deciding what steps to take. The distinction was confirmed in Jet2 v Blackpool Airport [2012]."
+    },
+    {
+      "id": "CL_M02_L05_Q07",
+      "question": "In Jet2 v Blackpool Airport [2012], the English Court of Appeal enforced a 'best endeavours' obligation to promote low-cost flying. This meant the airport:",
+      "options": {
+        "A": "Was required only to take steps that were commercially convenient",
+        "B": "Was required to take active steps to support low-cost operations even if commercially inconvenient, up to the limit of what was objectively reasonable",
+        "C": "Was permitted to terminate the agreement if it became unprofitable",
+        "D": "Was required to guarantee a specific number of flight slots regardless of demand"
+      },
+      "correct_answer": "B",
+      "explanation": "Jet2 v Blackpool Airport [2012] confirmed that a best endeavours obligation imposes a genuine and demanding standard. The airport was required to take active steps to support low-cost flying even if commercially inconvenient. The obligation was not satisfied by simply doing what was easy or profitable."
+    },
+    {
+      "id": "CL_M02_L05_Q08",
+      "question": "Emo Oil v Sun Alliance [2009] confirmed the Irish approach to best endeavours obligations. The Supreme Court held that Irish courts will:",
+      "options": {
+        "A": "Refuse to enforce best endeavours clauses as too uncertain",
+        "B": "Apply a purely subjective standard based on what the promisor believed was necessary",
+        "C": "Give best endeavours obligations practical content by looking at what the parties objectively intended",
+        "D": "Require expert evidence before enforcing any endeavours obligation"
+      },
+      "correct_answer": "C",
+      "explanation": "In Emo Oil v Sun Alliance [2009], the Irish Supreme Court confirmed that best endeavours obligations are enforceable in Ireland. Courts give them practical content by looking at what the parties objectively intended — not what the promisor subjectively believed was sufficient. The test is objective, not subjective."
+    },
+    {
+      "id": "CL_M02_L05_Q09",
+      "question": "Two parties agree in writing to sell a commercial property. The document is signed by both but states: 'All other terms to be agreed at a later date.' The most likely legal position is:",
+      "options": {
+        "A": "The agreement is binding — parties are free to agree further terms later",
+        "B": "The agreement is void for uncertainty — essential terms beyond the Three Ps remain open, and the parties have flagged this themselves",
+        "C": "The agreement is enforceable as to the price and property, but the court will supply remaining terms",
+        "D": "The agreement is voidable at the election of either party"
+      },
+      "correct_answer": "B",
+      "explanation": "Where the parties themselves signal that terms remain open — 'to be agreed at a later date' — a court will not impose a contract on them. Combined with Boyle v Lee [1992] and the 'subject to contract' line of authority, such an agreement is most likely void for uncertainty. The parties have effectively indicated they have not yet concluded a binding deal."
+    },
+    {
+      "id": "CL_M02_L05_Q10",
+      "question": "A best endeavours clause is most likely to be enforceable where:",
+      "options": {
+        "A": "The obligation is stated in a standard-form consumer contract",
+        "B": "There is a sufficiently certain external standard against which performance of the obligation can be measured",
+        "C": "The promisor has provided written confirmation of their intention to comply",
+        "D": "The clause was inserted at the request of the party now seeking enforcement"
+      },
+      "correct_answer": "B",
+      "explanation": "A best endeavours clause passes the certainty test where the court can identify an objective external standard against which performance can be measured. Without such a standard, the obligation would be too vague to enforce. This is the key variable identified in Philips Electronique v BSB [1995] and applied in Convery v Lagan Valley [2011]."
+    }
+  ]
+}

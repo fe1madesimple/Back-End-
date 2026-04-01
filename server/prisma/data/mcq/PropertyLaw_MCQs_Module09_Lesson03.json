@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_09_Lesson_03_Residential_Tenancies_Act_2004.txt",
+  "module_number": 9,
+  "module_title": "Landlord and Tenant",
+  "lesson_number": 3,
+  "lesson_title": "The Residential Tenancies Act 2004",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M09_L03_Q01",
+      "question": "Which of the following lettings does the Residential Tenancies Act 2004 expressly NOT apply to?",
+      "options": {
+        "A": "A letting by a private landlord of a flat to a student",
+        "B": "A letting where the landlord also resides in the dwelling",
+        "C": "A letting of a newly built apartment",
+        "D": "A letting of a house in a rent pressure zone"
+      },
+      "correct_answer": "B",
+      "explanation": "The Residential Tenancies Act 2004 does not apply to lettings where the landlord also resides in the dwelling — the so-called shared-ownership exemption. Other excluded categories include lettings by local authorities, lettings by the Housing Finance Agency, and holiday lettings. This exemption is significant because it means that a person renting a room in their landlord's home has fewer statutory protections than an ordinary tenant."
+    },
+    {
+      "id": "PRL_M09_L03_Q02",
+      "question": "Under section 28 of the Residential Tenancies Act 2004, after how many months of continuous occupation does a tenant acquire Part 4 rights?",
+      "options": {
+        "A": "Three months",
+        "B": "Six months",
+        "C": "Twelve months",
+        "D": "Twenty-four months"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 28 of the Residential Tenancies Act 2004, a tenant who has been in continuous occupation for more than six months acquires an entitlement to remain in occupation for the remainder of a Part 4 tenancy cycle. The original four-year cycle was extended to six years by the Residential Tenancies (Amendment) Act 2015. The six-month threshold is a frequently tested point on the FE-1 examination."
+    },
+    {
+      "id": "PRL_M09_L03_Q03",
+      "question": "Under the Residential Tenancies Act 2004 (as amended), how long is the Part 4 tenancy cycle?",
+      "options": {
+        "A": "Two years",
+        "B": "Four years",
+        "C": "Six years",
+        "D": "Ten years"
+      },
+      "correct_answer": "C",
+      "explanation": "The Part 4 tenancy cycle is six years under the Residential Tenancies (Amendment) Act 2015, which extended the original four-year cycle. Once a tenant has been in continuous occupation for more than six months, they acquire an entitlement to remain in occupation for the remainder of that six-year cycle — unless the landlord terminates on one of the specified statutory grounds."
+    },
+    {
+      "id": "PRL_M09_L03_Q04",
+      "question": "Which of the following is a valid ground for a landlord to terminate a Part 4 tenancy under the Residential Tenancies Act 2004?",
+      "options": {
+        "A": "The landlord has found a tenant willing to pay a higher rent",
+        "B": "The landlord intends to carry out a major refurbishment of the property requiring vacant possession",
+        "C": "The tenant has lived in the property for more than six years",
+        "D": "The property has been sold to a new owner who wishes to renegotiate the tenancy terms"
+      },
+      "correct_answer": "B",
+      "explanation": "The Residential Tenancies Act 2004 provides that a landlord may only terminate a Part 4 tenancy on one of the specified grounds listed in the Act. These include: the tenant has been in breach; the landlord needs the dwelling for their own occupation or that of a family member; the landlord intends to sell; the landlord intends to refurbish requiring vacant possession; or the property is no longer suitable for the tenant's needs. Finding a higher-paying tenant is not a valid ground."
+    },
+    {
+      "id": "PRL_M09_L03_Q05",
+      "question": "What are 'rent pressure zones' under the Residential Tenancies Act 2004 (as amended), and what is the effect of a dwelling being located in one?",
+      "options": {
+        "A": "Areas where the landlord is entitled to charge a premium above market rent due to high demand",
+        "B": "Designated areas where annual rent increases are capped — landlords cannot increase rents except as permitted by the Act",
+        "C": "Areas where the RTB has exclusive jurisdiction over all tenancy disputes",
+        "D": "Areas where tenants are exempt from all rent obligations for the first year of a new tenancy"
+      },
+      "correct_answer": "B",
+      "explanation": "Rent pressure zones are designated areas under the Residential Tenancies Act 2004 (as amended by the 2021 Act) where the permissible annual rent increase is capped. Landlords in rent pressure zones cannot increase rents except as permitted under the Act. The cap was initially four per cent per annum and was subsequently amended to the lower of the Harmonised Index of Consumer Prices or four per cent."
+    },
+    {
+      "id": "PRL_M09_L03_Q06",
+      "question": "Which of the following is a statutory obligation of a landlord under the Residential Tenancies Act 2004?",
+      "options": {
+        "A": "Registering the tenancy with the Residential Tenancies Board within one month of commencement",
+        "B": "Providing the tenant with six months' advance notice of any rent review",
+        "C": "Obtaining planning permission before letting the property",
+        "D": "Insuring the property for replacement value throughout the tenancy"
+      },
+      "correct_answer": "A",
+      "explanation": "One of the landlord's statutory obligations under the Residential Tenancies Act 2004 is to register the tenancy with the Residential Tenancies Board (RTB) within one month of the commencement of the tenancy. Other landlord obligations include: keeping the dwelling in proper structural repair; ensuring compliance with housing standards; providing rent books; informing the tenant of their rights; and allowing the tenant quiet and exclusive enjoyment."
+    },
+    {
+      "id": "PRL_M09_L03_Q07",
+      "question": "What is one of a tenant's statutory obligations under the Residential Tenancies Act 2004?",
+      "options": {
+        "A": "Carrying out all structural repairs identified by the landlord",
+        "B": "Notifying the landlord of any defects requiring repair",
+        "C": "Obtaining the landlord's consent before inviting any guests to the dwelling",
+        "D": "Paying an additional deposit if requested following any breach of the lease"
+      },
+      "correct_answer": "B",
+      "explanation": "Among a tenant's statutory obligations under the Residential Tenancies Act 2004 are: to pay rent; to notify the landlord of any defects requiring repair; to avoid causing damage to the property; not to alter the dwelling without consent; and to behave in a way that does not cause nuisance to neighbours. The obligation to notify the landlord of defects is important because it conditions the landlord's knowledge of and obligation to carry out repairs."
+    },
+    {
+      "id": "PRL_M09_L03_Q08",
+      "question": "How must disputes between residential landlords and tenants be resolved under the Residential Tenancies Act 2004?",
+      "options": {
+        "A": "Through the ordinary courts — the District Court or Circuit Court depending on the value",
+        "B": "Through the Residential Tenancies Board process, beginning with mediation and escalating to adjudication — the RTB has exclusive jurisdiction",
+        "C": "Through private arbitration before a RICS-accredited arbitrator",
+        "D": "Through the Small Claims Court for disputes under €2,000 and the Circuit Court for higher amounts"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the Residential Tenancies Act 2004, all disputes between residential landlords and tenants for matters within the Act must be resolved through the Residential Tenancies Board process. The RTB has exclusive jurisdiction — parties cannot simply go directly to the courts. The RTB process begins with mediation and escalates to adjudication, with further appeals to the Tenancy Tribunal and then to the High Court on a point of law only."
+    },
+    {
+      "id": "PRL_M09_L03_Q09",
+      "question": "In Canty v Private Residential Tenancies Board, what did the Irish High Court hold about the constitutionality of the RTB adjudication process?",
+      "options": {
+        "A": "The RTB process was held to be unconstitutional as a disproportionate restriction on the right of access to courts",
+        "B": "The RTB adjudication process was held to be a fair procedure consistent with constitutional requirements, and the restriction on direct court access was constitutionally valid as a proportionate limitation",
+        "C": "The court held that the RTB has no jurisdiction over disputes involving registered companies",
+        "D": "The court held that the restriction on court access under the Act was unconstitutional but declined to strike it down on grounds of practicality"
+      },
+      "correct_answer": "B",
+      "explanation": "In Canty v Private Residential Tenancies Board, the Irish High Court confirmed that the RTB adjudication process is a fair procedure consistent with constitutional requirements and that the restriction on direct court access is constitutionally valid as a proportionate limitation in the interest of an efficient dispute resolution mechanism. This case is the leading authority on the RTB's exclusive jurisdiction."
+    },
+    {
+      "id": "PRL_M09_L03_Q10",
+      "question": "Under the Residential Tenancies Act 2004 (as amended by the 2021 Act amendments), approximately what notice period is required to terminate a tenancy of between six months and one year?",
+      "options": {
+        "A": "28 days",
+        "B": "90 days",
+        "C": "152 days",
+        "D": "224 days"
+      },
+      "correct_answer": "C",
+      "explanation": "Under the Residential Tenancies Act 2004 as amended by the 2021 Act, the notice periods have been significantly extended. A tenancy of less than six months requires 90 days' notice. A tenancy of six months to one year requires 152 days' notice. Tenancies of eight years or more require 224 days' notice. These extended notice periods reflect the increased security of tenure given to residential tenants."
+    }
+  ]
+}

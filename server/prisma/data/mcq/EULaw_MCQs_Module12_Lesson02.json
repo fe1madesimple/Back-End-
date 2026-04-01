@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "Module_12_Lesson_02_Equal_Treatment_Directives_and_the_Broadened_Equality_Framework.txt",
+  "module_number": 12,
+  "module_title": "Equality Law",
+  "lesson_number": 2,
+  "lesson_title": "Equal Treatment Directives and the Broadened Equality Framework",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EUL_M12_L02_Q01",
+      "question": "The Recast Directive 2006/54/EC consolidates which EU equality instruments?",
+      "options": {
+        "A": "The Race Equality Directive and the Framework Employment Directive only",
+        "B": "The equal pay provisions and the equal treatment provisions in employment, together with burden of proof and enforcement rules",
+        "C": "All EU anti-discrimination law including disability, age, religion and sexual orientation",
+        "D": "Only the 1976 Equal Treatment Directive 76/207/EEC"
+      },
+      "correct_answer": "B",
+      "explanation": "The Recast Directive 2006/54/EC consolidates the equal pay provisions (previously in Directive 75/117/EEC) and the equal treatment in employment provisions (previously in Directive 76/207/EEC), together with rules on burden of proof, remedies, and enforcement. It is the primary source of EU gender equality law in employment today."
+    },
+    {
+      "id": "EUL_M12_L02_Q02",
+      "question": "Under the Recast Directive 2006/54/EC, 'indirect discrimination' on grounds of sex occurs where:",
+      "options": {
+        "A": "An employer expressly states a preference for employees of one sex",
+        "B": "An apparently neutral provision, criterion or practice puts persons of one sex at a particular disadvantage compared to the other, unless objectively justified by a legitimate aim and proportionate",
+        "C": "A pay difference of more than 5% exists between male and female employees",
+        "D": "An employer fails to advertise a vacancy in gender-neutral terms"
+      },
+      "correct_answer": "B",
+      "explanation": "Indirect discrimination under the Recast Directive is where a neutral provision, criterion or practice places one sex at a particular disadvantage. It can be objectively justified if it pursues a legitimate aim and the means are appropriate and necessary — the proportionality requirement. This mirrors the general EU law concept of indirect discrimination."
+    },
+    {
+      "id": "EUL_M12_L02_Q03",
+      "question": "In Marshall v Southampton and South-West Hampshire AHA (No 1) [1986], the Court of Justice held that:",
+      "options": {
+        "A": "The Equal Treatment Directive had horizontal direct effect and could be relied upon against a private employer",
+        "B": "Compulsory retirement of a woman at 60 when men could continue to 65 breached the Directive, which had vertical direct effect against a state employer",
+        "C": "Pregnancy dismissal constitutes indirect discrimination on grounds of sex",
+        "D": "The Directive applied to all employment conditions including pay"
+      },
+      "correct_answer": "B",
+      "explanation": "Marshall I [1986] confirmed that compulsory retirement of a woman at 60 while men could work to 65 breached the Equal Treatment Directive. The Court confirmed the Directive had vertical direct effect — it could be relied upon against the state as employer — but declined to extend horizontal direct effect to directives, consistent with the direct effect doctrine."
+    },
+    {
+      "id": "EUL_M12_L02_Q04",
+      "question": "In Dekker v Stichting Vormingscentrum voor Jonge Volwassen [1990], the Court held that refusing to appoint a woman because she was pregnant:",
+      "options": {
+        "A": "Required comparison with a male comparator to establish sex discrimination",
+        "B": "Constituted direct discrimination on grounds of sex — no comparison with a hypothetical male is needed because the unfavourable treatment is inherently connected to a condition unique to women",
+        "C": "Was justifiable if the employer had legitimate financial concerns about maternity cover",
+        "D": "Was only prohibited under the Pregnant Workers Directive, not the Equal Treatment Directive"
+      },
+      "correct_answer": "B",
+      "explanation": "In Dekker [1990], the Court held that refusing to appoint a woman because of pregnancy is direct sex discrimination. Because pregnancy is a condition unique to women, treatment linked to pregnancy is inherently linked to sex — no comparison with a hypothetical male employee is necessary. This approach was confirmed in Webb v EMO Air Cargo [1994]."
+    },
+    {
+      "id": "EUL_M12_L02_Q05",
+      "question": "The Race Equality Directive 2000/43/EC is distinctive among the equality Directives because:",
+      "options": {
+        "A": "It applies only in the employment context",
+        "B": "It has the broadest scope — covering employment and also social protection, social advantages, education, and access to goods and services including housing",
+        "C": "It was the first EU instrument to prohibit direct discrimination",
+        "D": "It requires member states to introduce affirmative action programmes for ethnic minorities"
+      },
+      "correct_answer": "B",
+      "explanation": "The Race Equality Directive 2000/43/EC goes further than the Framework Employment Directive — it extends beyond employment to cover social protection, social advantages, education, and access to goods and services including housing. This broader scope makes it the most extensive of the EU equality Directives."
+    },
+    {
+      "id": "EUL_M12_L02_Q06",
+      "question": "The Framework Employment Directive 2000/78/EC prohibits discrimination in employment on grounds of:",
+      "options": {
+        "A": "Sex, racial origin, and nationality",
+        "B": "Religion or belief, disability, age, and sexual orientation",
+        "C": "Political opinion, social origin, and language",
+        "D": "Marital status, family responsibilities, and trade union membership"
+      },
+      "correct_answer": "B",
+      "explanation": "The Framework Employment Directive 2000/78/EC covers four grounds: religion or belief, disability, age, and sexual orientation — in employment and occupation. It does not cover sex (covered by the Recast Directive) or race (covered by the Race Equality Directive 2000/43/EC)."
+    },
+    {
+      "id": "EUL_M12_L02_Q07",
+      "question": "In Mangold v Helm [2005], the Court of Justice held controversially that the prohibition of discrimination on grounds of age:",
+      "options": {
+        "A": "Only applies once the Framework Employment Directive's implementation period has expired",
+        "B": "Constitutes a general principle of EU law that must be applied even before the Directive's implementing period has expired",
+        "C": "Applies only to workers over 60 years of age",
+        "D": "Requires member states to abolish all mandatory retirement ages immediately"
+      },
+      "correct_answer": "B",
+      "explanation": "Mangold v Helm [2005] held that age discrimination is a general principle of EU law — not merely a principle derived from the Framework Directive. National courts must therefore disapply conflicting national legislation even before the Directive's implementation period has expired. This controversial ruling was confirmed in Kücükdeveci [2010]."
+    },
+    {
+      "id": "EUL_M12_L02_Q08",
+      "question": "Under Article 5 of the Framework Employment Directive 2000/78/EC, employers must provide 'reasonable accommodation' for disabled workers, unless:",
+      "options": {
+        "A": "The worker has been employed for less than two years",
+        "B": "The accommodation would impose a disproportionate burden on the employer",
+        "C": "The disability was caused by the worker's own conduct",
+        "D": "The employer has fewer than 50 employees"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 5 requires employers to take appropriate measures to enable disabled persons to access, participate in, or advance in employment, unless such measures would impose a disproportionate burden. In HK Danmark (Ring and Skouboe Werge) [2013], the Court confirmed that reduced working time can constitute a reasonable accommodation measure."
+    },
+    {
+      "id": "EUL_M12_L02_Q09",
+      "question": "In Achbita v G4S [2017], the Court of Justice held that a company-wide policy prohibiting all visible religious or political signs:",
+      "options": {
+        "A": "Constitutes direct discrimination against Muslim women who wear headscarves",
+        "B": "Is not direct discrimination — it applies equally to all employees — but may constitute indirect discrimination if it particularly disadvantages a religion's adherents and is not objectively justified",
+        "C": "Is always prohibited under the Framework Employment Directive",
+        "D": "Is justified automatically where customer preference is the reason for the policy"
+      },
+      "correct_answer": "B",
+      "explanation": "In Achbita [2017], the Court held that a blanket neutrality policy is not direct discrimination — it applies equally to all. But it may constitute indirect discrimination against members of a particular religion unless it pursues a legitimate aim (such as projecting political neutrality) and is proportionate. A customer's preference to be served by someone without a headscarf cannot alone constitute a genuine occupational requirement (Bougnaoui [2017])."
+    },
+    {
+      "id": "EUL_M12_L02_Q10",
+      "question": "The burden of proof framework under the EU equality Directives provides that:",
+      "options": {
+        "A": "The employer always bears the full burden of proof in discrimination cases",
+        "B": "The complainant must prove discrimination to the criminal standard of beyond reasonable doubt",
+        "C": "Once a complainant establishes facts from which discrimination may be presumed, the burden shifts to the respondent to prove no breach occurred",
+        "D": "Discrimination claims require corroboration from a witness before any evidential shift occurs"
+      },
+      "correct_answer": "C",
+      "explanation": "The EU equality Directives (and the Burden of Proof Directive 97/80/EC) establish a shifting burden: once the complainant establishes facts from which discrimination may be presumed, the burden shifts to the respondent (typically the employer) to prove that no breach of the principle of equal treatment occurred. This makes discrimination claims practicable for workers who rarely have access to direct evidence of discriminatory intent."
+    }
+  ]
+}

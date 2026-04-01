@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module02_Lesson03.txt",
+  "module_number": 2,
+  "module_title": "The Duty of Care",
+  "lesson_number": 3,
+  "lesson_title": "Pure Economic Loss and Negligent Misstatement",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M02_L03_Q01",
+      "question": "What is 'pure economic loss' in negligence law?",
+      "options": {
+        "A": "Any financial loss suffered by the plaintiff as a result of the defendant's breach of duty",
+        "B": "Financial loss that is consequential upon physical injury to the plaintiff's person or property",
+        "C": "Financial loss that is not consequential upon any physical injury to the person or property damage",
+        "D": "Loss of profits caused directly by the destruction of the plaintiff's business premises"
+      },
+      "correct_answer": "C",
+      "explanation": "Pure economic loss is financial loss that stands alone — it is not consequential upon any physical injury to the plaintiff's person or upon physical damage to their property. The courts are generally unwilling to impose liability for pure economic loss because of the risk of indeterminate liability to an unforeseeable and potentially vast class of plaintiffs."
+    },
+    {
+      "id": "TL_M02_L03_Q02",
+      "question": "In Spartan Steel and Alloys Ltd v Martin and Co [1973], the defendant negligently cut a power cable, interrupting power to the plaintiff's factory. Which element of the plaintiff's loss was held NOT recoverable?",
+      "options": {
+        "A": "Physical damage to the metal melt that was in the furnace at the time of the power cut",
+        "B": "Lost profit on the specific melt that was physically damaged during the power outage",
+        "C": "Profits lost across the entire factory during the power cut period, not flowing from any physical damage",
+        "D": "The cost of restarting the furnace after power was restored"
+      },
+      "correct_answer": "C",
+      "explanation": "In Spartan Steel [1973] QB 27, the Court of Appeal held that the plaintiff could recover for physical damage to the melt in the furnace (property damage) and for profits lost on that specific melt as consequential economic loss. However, the plaintiff could not recover for profits lost across the entire factory during the outage — this was pure economic loss, not flowing from any physical damage, and was therefore irrecoverable."
+    },
+    {
+      "id": "TL_M02_L03_Q03",
+      "question": "American judge Cardozo J's warning in Ultramares Corporation v Touche [1931] is frequently cited to explain why pure economic loss is generally irrecoverable. What did he warn against?",
+      "options": {
+        "A": "Liability in an indeterminate amount for an indeterminate time to an indeterminate class",
+        "B": "Liability that reaches beyond the boundaries of the defendant's physical activities",
+        "C": "Liability imposed without adequate proof of causation and fault",
+        "D": "Liability extending to government bodies and public authorities"
+      },
+      "correct_answer": "A",
+      "explanation": "Cardozo J in Ultramares Corporation v Touche [1931] famously described the risk inherent in imposing liability for pure economic loss as creating 'liability in an indeterminate amount for an indeterminate time to an indeterminate class.' This formulation captures precisely why the courts draw the line — a negligent report, valuation, or statement could be relied upon by countless persons over a long period, potentially exposing the defendant to crushing and unforeseeable liability."
+    },
+    {
+      "id": "TL_M02_L03_Q04",
+      "question": "What is the major exception to the general rule against recovery for pure economic loss?",
+      "options": {
+        "A": "Where the plaintiff is a consumer and the defendant is a business",
+        "B": "Negligent misstatement — where a special relationship exists, characterised by assumption of responsibility and reasonable reliance",
+        "C": "Where the plaintiff has no other legal remedy available",
+        "D": "Where the economic loss was caused by a statutory breach by the defendant"
+      },
+      "correct_answer": "B",
+      "explanation": "The major exception to the general rule against recovery for pure economic loss is the Hedley Byrne principle of negligent misstatement. Where a defendant makes a negligent statement that causes the plaintiff pure economic loss, and there is a special relationship between the parties characterised by the defendant's assumption of responsibility and the plaintiff's reasonable reliance on that assumption, a duty of care arises and the loss is recoverable."
+    },
+    {
+      "id": "TL_M02_L03_Q05",
+      "question": "In Hedley Byrne and Co Ltd v Heller and Partners Ltd [1964] AC 465, what was the reason the defendant bank ultimately succeeded in avoiding liability?",
+      "options": {
+        "A": "The bank lacked the expertise to provide credit references and therefore owed no duty",
+        "B": "The plaintiff had failed to rely on the reference in a commercially reasonable manner",
+        "C": "The bank had attached an express disclaimer of responsibility to the credit reference",
+        "D": "The relationship between the parties lacked sufficient proximity to establish a duty of care"
+      },
+      "correct_answer": "C",
+      "explanation": "In Hedley Byrne [1964], the House of Lords held that but for the express disclaimer of responsibility attached to the credit reference, a duty of care would have arisen. The disclaimer prevented the assumption of responsibility that is the necessary foundation of the Hedley Byrne duty. Without assumption of responsibility, there was no special relationship and therefore no duty. The case is thus simultaneously the foundation of negligent misstatement liability and an authority on how disclaimers can negate it."
+    },
+    {
+      "id": "TL_M02_L03_Q06",
+      "question": "Which of the following correctly states the four key elements of the Hedley Byrne principle for negligent misstatement?",
+      "options": {
+        "A": "Contract, consideration, breach, damage",
+        "B": "Special skill or expertise; assumption of responsibility; reasonable reliance by the plaintiff; financial loss caused by reliance",
+        "C": "Foreseeability, proximity, policy, and causation",
+        "D": "Physical damage, consequential loss, breach of duty, intention to mislead"
+      },
+      "correct_answer": "B",
+      "explanation": "The four elements of the Hedley Byrne principle are: (1) the defendant possessed special skill or expertise relevant to the advice given; (2) the defendant assumed responsibility for the advice, knowing it would be relied upon; (3) the plaintiff reasonably relied on the advice; and (4) the reliance caused financial loss. All four elements must be established. The absence of any one of them will negate the duty of care."
+    },
+    {
+      "id": "TL_M02_L03_Q07",
+      "question": "In Wildgust v Bank of Ireland and Norwich Union [2006], why did the Irish Supreme Court find that a duty of care arose?",
+      "options": {
+        "A": "The bank had an express contractual obligation to provide correct information about the insurance policy",
+        "B": "The defendant gave incorrect advice about an insurance policy in circumstances where the plaintiff would foreseeably rely on that advice",
+        "C": "The plaintiff had obtained a written warranty of accuracy from the defendant before acting",
+        "D": "The defendant was the sole authorised provider of insurance advice in the relevant area"
+      },
+      "correct_answer": "B",
+      "explanation": "Wildgust v Bank of Ireland and Norwich Union [2006] is the leading Irish Supreme Court authority applying the Hedley Byrne principle. The defendant gave incorrect information about the nature of an insurance policy in a context where the plaintiff's reliance was foreseeable. The Supreme Court held that a duty of care arose under the Hedley Byrne special relationship test — the defendant had assumed responsibility for advice on which the plaintiff would foreseeably and reasonably rely."
+    },
+    {
+      "id": "TL_M02_L03_Q08",
+      "question": "In Caparo Industries plc v Dickman [1990], why did the House of Lords refuse to extend the Hedley Byrne duty to auditors in respect of published company accounts?",
+      "options": {
+        "A": "Auditors are professionals whose liability is governed exclusively by contract and not by tort",
+        "B": "The auditors did not possess sufficient expertise in the area of investment decisions",
+        "C": "The auditors did not know the specific transaction for which the accounts would be relied upon or the specific individual plaintiff",
+        "D": "The accounts had not been relied upon in a commercial context, only in a personal investment context"
+      },
+      "correct_answer": "C",
+      "explanation": "In Caparo Industries plc v Dickman [1990] 2 AC 605, the House of Lords refused to extend Hedley Byrne liability to auditors because the auditors, when preparing the accounts, did not know the specific transaction for which those accounts would be relied upon, nor did they know the identity of the specific investor who would rely on them. The special relationship requires that the defendant knows the purpose for which the advice will be used and knows, or ought to know, the identity of the person relying on it."
+    },
+    {
+      "id": "TL_M02_L03_Q09",
+      "question": "Which of the following types of advice is NOT protected by the Hedley Byrne duty of care?",
+      "options": {
+        "A": "A solicitor's written advice to a client about the terms of a property transaction",
+        "B": "A surveyor's valuation report prepared for a known mortgage lender",
+        "C": "Casual advice given informally at a social gathering without any professional context",
+        "D": "An accountant's report prepared for a known business acquisition"
+      },
+      "correct_answer": "C",
+      "explanation": "The Hedley Byrne duty does not arise in respect of casual advice given informally in a social context. The requirement of assumption of responsibility demands that the advice be given in a business or professional context where the defendant has undertaken — expressly or impliedly — to exercise care and skill. A remark made at a party, without any professional context or indication that the advice will be relied upon, does not give rise to a duty of care in negligent misstatement."
+    },
+    {
+      "id": "TL_M02_L03_Q10",
+      "question": "What is the general rule on the recoverability of economic loss that is consequential upon physical injury or property damage?",
+      "options": {
+        "A": "Consequential economic loss is irrecoverable in Irish negligence law as a form of pure economic loss",
+        "B": "Consequential economic loss is only recoverable where the physical damage was caused intentionally",
+        "C": "Consequential economic loss is recoverable as part of the general damages flowing from the physical damage",
+        "D": "Consequential economic loss is capped at twice the value of the underlying physical damage"
+      },
+      "correct_answer": "C",
+      "explanation": "Economic loss that is consequential upon physical injury or property damage is recoverable in negligence as part of the general damages flowing from the defendant's breach. Loss of earnings caused by a broken leg, for instance, is clearly recoverable. The restrictions on recovery apply only to pure economic loss — loss that is not connected to any physical damage. This distinction was illustrated in Spartan Steel, where profit lost on the damaged melt was recoverable, but factory-wide losses were not."
+    }
+  ]
+}

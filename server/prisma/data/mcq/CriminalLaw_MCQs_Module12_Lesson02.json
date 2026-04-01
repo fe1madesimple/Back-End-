@@ -1,0 +1,139 @@
+{
+  "subject": "Criminal Law",
+  "module": 12,
+  "module_title": "Public Order, Offences Against Justice, and State Offences",
+  "lesson": 2,
+  "lesson_title": "Offences Against Justice and State Offences",
+  "questions": [
+    {
+      "id": "CL_M12_L02_Q01",
+      "question": "Under the Criminal Justice (Perjury and Related Offences) Act 2021, which of the following is the correct statement of the core perjury offence under Section 2(1)?",
+      "options": {
+        "A": "A person is guilty of perjury if they make a false statement in any legal document, whether or not on oath.",
+        "B": "A person is guilty of perjury if, in judicial proceedings, they knowingly make a false statement of material fact on oath.",
+        "C": "A person is guilty of perjury if they make a false statement to a Garda officer in the course of an investigation.",
+        "D": "A person is guilty of perjury if they fail to correct a false statement made by another witness in judicial proceedings."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 2(1) of the Criminal Justice (Perjury and Related Offences) Act 2021 requires four elements: the statement must be made in judicial proceedings, it must be made on oath, it must be false, and the accused must knowingly make it. Statements outside judicial proceedings or not made on oath do not fall within the core offence.",
+      "topic": "Perjury — Criminal Justice (Perjury and Related Offences) Act 2021"
+    },
+    {
+      "id": "CL_M12_L02_Q02",
+      "question": "The Criminal Justice (Perjury and Related Offences) Act 2021 came into force on which date, and what was its historical significance?",
+      "options": {
+        "A": "1 January 2021 — it was the first Irish statute to address dishonesty in court.",
+        "B": "28 July 2021 — it was Ireland's first standalone perjury statute.",
+        "C": "1 March 2020 — it replaced the Criminal Justice Act 1984 provisions on false statements.",
+        "D": "28 July 2021 — it amended the Perjury Act 1979 by adding new penalty provisions."
+      },
+      "correct_answer": "B",
+      "explanation": "The Act came into force on 28 July 2021 and is Ireland's first standalone perjury statute. While the Perjury Act 1979 had created a limited earlier regime, the 2021 Act was the first comprehensive, dedicated statute for perjury in Irish legal history.",
+      "topic": "Perjury — Criminal Justice (Perjury and Related Offences) Act 2021"
+    },
+    {
+      "id": "CL_M12_L02_Q03",
+      "question": "Under the Criminal Justice (Perjury and Related Offences) Act 2021, what is the maximum penalty for the offence of procuring perjury under Section 3?",
+      "options": {
+        "A": "Five years imprisonment",
+        "B": "Seven years imprisonment",
+        "C": "Ten years imprisonment",
+        "D": "Life imprisonment"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 3 of the 2021 Act creates the offence of procuring perjury — inducing another person to commit perjury — and it carries a maximum of ten years imprisonment on indictment, the same as the core perjury offence under Section 2(1). The lower five-year penalty applies to false statutory declarations under Section 5.",
+      "topic": "Perjury — penalties"
+    },
+    {
+      "id": "CL_M12_L02_Q04",
+      "question": "Which of the following best describes the leading Irish authority on the constitutional requirements governing the exercise of the contempt of court jurisdiction?",
+      "options": {
+        "A": "Re Rea [1986] IR — which established that solicitors cannot be held in contempt.",
+        "B": "R v Gray [1900] — which set out the test for scandalising the court.",
+        "C": "In re Haughey [1971] IR — which held that natural justice applies when exercising the contempt power.",
+        "D": "Kelly v O'Neill [2000] IEHC — which applied the sub-judice rule to media publications."
+      },
+      "correct_answer": "C",
+      "explanation": "In re Haughey [1971] IR is the foundational Irish authority on the constitutional requirements governing the contempt jurisdiction. The Supreme Court held that a person facing a contempt allegation has the right to know the charge, hear the evidence, and be given an opportunity to respond — the requirements of natural justice apply.",
+      "topic": "Contempt of court — constitutional requirements"
+    },
+    {
+      "id": "CL_M12_L02_Q05",
+      "question": "The sub-judice rule, as a category of contempt of court, is primarily designed to protect which constitutional right?",
+      "options": {
+        "A": "The right to freedom of expression under Article 40.6.1.",
+        "B": "The right to a fair trial under Article 38.1 of the Constitution.",
+        "C": "The right to personal liberty under Article 40.4.",
+        "D": "The right to equality before the law under Article 40.1."
+      },
+      "correct_answer": "B",
+      "explanation": "The sub-judice rule prevents publication of material about pending proceedings that risks prejudicing a fair trial. It protects the accused's constitutional right to a fair trial under Article 38.1, by ensuring that jurors are not exposed to prejudicial material before or during trial. The sub-judice rule is therefore the bridge between contempt of court and this constitutional guarantee.",
+      "topic": "Contempt of court — sub-judice rule"
+    },
+    {
+      "id": "CL_M12_L02_Q06",
+      "question": "Treason is defined in which provision of the Irish Constitution, and what is the maximum penalty under the Criminal Justice Act 1990?",
+      "options": {
+        "A": "Article 38, maximum penalty life imprisonment.",
+        "B": "Article 39, maximum penalty forty years imprisonment.",
+        "C": "Article 15, maximum penalty twenty years imprisonment.",
+        "D": "Article 34, maximum penalty forty years imprisonment."
+      },
+      "correct_answer": "B",
+      "explanation": "Treason is defined in Article 39 of the Constitution — the only criminal offence defined in the Irish constitution itself. Section 2 of the Criminal Justice Act 1990 fixes the maximum penalty at forty years imprisonment. The constitutional definition is deliberately narrow, confined to levying war, assisting an enemy, or attempting to overthrow the organs of government by force.",
+      "topic": "State offences — treason"
+    },
+    {
+      "id": "CL_M12_L02_Q07",
+      "question": "Under Section 21(1) of the Offences Against the State Act 1939, which of the following correctly describes the reverse onus provision in Section 21(3)?",
+      "options": {
+        "A": "The accused must prove beyond reasonable doubt that they were not a member of an unlawful organisation.",
+        "B": "Once the prosecution establishes sufficient evidence of membership, the accused bears the burden of proving they were not a member.",
+        "C": "The prosecution bears the full burden of proving membership; there is no reverse onus.",
+        "D": "The reverse onus applies only where the accused was convicted of a related offence within five years."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 21(3) of the OATSA 1939 provides that once the prosecution establishes sufficient evidence of membership of an unlawful organisation, the burden shifts to the accused to prove they were not a member. This is a deliberate reversal of the ordinary presumption of innocence, upheld by the courts as constitutionally valid given the security context and the practical difficulty of proving membership of clandestine organisations.",
+      "topic": "State offences — OATSA 1939, reverse onus"
+    },
+    {
+      "id": "CL_M12_L02_Q08",
+      "question": "In AG v Lawless (ECtHR 1961), which provision of the European Convention on Human Rights did the Irish Government invoke to justify the detention of Gerard Lawless without trial?",
+      "options": {
+        "A": "Article 6 — the right to a fair trial.",
+        "B": "Article 5 — the right to liberty and security.",
+        "C": "Article 15 — the derogation provision in times of public emergency.",
+        "D": "Article 7 — no punishment without law."
+      },
+      "correct_answer": "C",
+      "explanation": "In AG v Lawless, the Irish Government invoked Article 15 of the ECHR, which permits states to derogate from Convention rights in times of public emergency threatening the life of the nation. The ECtHR held the derogation was valid on the facts but emphasised that derogation is a measure of last resort and must be strictly proportionate to the exigency of the situation. This was the very first case decided by the ECtHR.",
+      "topic": "State offences — ECHR, AG v Lawless"
+    },
+    {
+      "id": "CL_M12_L02_Q09",
+      "question": "Under Section 6 of the Criminal Law Act 1998, what is the maximum penalty for the offence of directing an unlawful organisation?",
+      "options": {
+        "A": "Seven years imprisonment",
+        "B": "Ten years imprisonment",
+        "C": "Twenty years imprisonment",
+        "D": "Life imprisonment"
+      },
+      "correct_answer": "D",
+      "explanation": "Section 6 of the Criminal Law Act 1998 creates the offence of directing the activities of an unlawful organisation and carries a maximum penalty of life imprisonment. This is the highest penalty in the state security offence hierarchy, reflecting the gravity of holding a leadership role in an organisation dedicated to violence against the state.",
+      "topic": "State offences — directing an unlawful organisation"
+    },
+    {
+      "id": "CL_M12_L02_Q10",
+      "question": "Which of the following correctly states the penalty hierarchy for state security offences from lowest to highest maximum sentence?",
+      "options": {
+        "A": "Membership (7 years) → recruiting (10 years) → usurpation of government (20 years) → treason (40 years) → directing (life).",
+        "B": "Membership (5 years) → recruiting (7 years) → treason (20 years) → usurpation of government (40 years) → directing (life).",
+        "C": "Membership (7 years) → usurpation of government (10 years) → recruiting (20 years) → treason (40 years) → directing (life).",
+        "D": "Recruiting (7 years) → membership (10 years) → usurpation of government (20 years) → directing (40 years) → treason (life)."
+      },
+      "correct_answer": "A",
+      "explanation": "The correct hierarchy is: membership of an unlawful organisation under s.21 OATSA 1939 (7 years); recruiting under s.3 Criminal Law Act 1976 (10 years); usurpation of government functions under s.6 OATSA 1939 (20 years); treason under s.2 Criminal Justice Act 1990 (40 years); and directing an unlawful organisation under s.6 Criminal Law Act 1998 (life). Stating these penalties precisely is an important exam skill.",
+      "topic": "State offences — penalty hierarchy"
+    }
+  ]
+}

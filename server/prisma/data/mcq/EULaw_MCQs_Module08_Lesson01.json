@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module08_Lesson01.txt",
+  "module_number": 8,
+  "module_title": "The Preliminary Reference Procedure",
+  "lesson_number": 1,
+  "lesson_title": "Article 267 TFEU: The Framework and the Referring Court",
+  "questions": [
+    {
+      "id": "EUL_M08_L01_Q01",
+      "question": "Article 267 TFEU grants the Court of Justice jurisdiction to give preliminary rulings on which matters?",
+      "options": {
+        "A": "Only the interpretation of the Treaties",
+        "B": "The interpretation of the Treaties; the validity and interpretation of acts of EU institutions, bodies, offices, and agencies; and the interpretation of EU secondary legislation",
+        "C": "All questions of EU law, including questions of national law that implement EU law",
+        "D": "Only questions of EU law that have been certified by the national supreme court as raising a point of general public importance"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 267 TFEU confers three heads of jurisdiction: (1) interpretation of the Treaties (primary law); (2) validity and interpretation of acts of EU institutions, bodies, offices, and agencies (secondary law); (3) interpretation of the statutes of bodies established by an act of the Council, where those statutes so provide. The CJEU rules on EU law only — it does not interpret national law (though it gives guidance on whether national law is compatible with EU law). Validity rulings (unlike interpretation rulings) can only be given by the CJEU, not national courts."
+    },
+    {
+      "id": "EUL_M08_L01_Q02",
+      "question": "The preliminary reference procedure under Article 267 TFEU is primarily designed to serve which function?",
+      "options": {
+        "A": "To allow individuals to bring their cases directly before the CJEU",
+        "B": "To ensure the uniform interpretation and application of EU law across all member states — preventing divergent national interpretations that would undermine the coherence of the EU legal order",
+        "C": "To provide an appellate route from national courts to the CJEU",
+        "D": "To allow the Commission to obtain advisory opinions on proposed legislation"
+      },
+      "correct_answer": "B",
+      "explanation": "The preliminary reference procedure's primary purpose is ensuring uniform interpretation and application of EU law throughout the EU. Without a centralised interpretive mechanism, each member state's courts would interpret EU law independently, creating fragmentation. The procedure creates a dialogue between national courts and the CJEU — national courts are the judges of fact and national law; the CJEU is the authoritative interpreter of EU law. This cooperative relationship is often called the 'judicial dialogue' at the heart of EU law enforcement."
+    },
+    {
+      "id": "EUL_M08_L01_Q03",
+      "question": "Under Article 267 TFEU, which courts have a discretion to refer (as opposed to an obligation)?",
+      "options": {
+        "A": "Courts of last instance only",
+        "B": "Any court or tribunal against whose decision there is a judicial remedy under national law — i.e., courts below the level of courts of last instance",
+        "C": "Only courts designated by the member state for this purpose",
+        "D": "All courts have a discretion — the obligation to refer applies only if the Commission requests it"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 267(2) TFEU: any court or tribunal of a member state may refer a question of EU law interpretation or validity to the CJEU if it considers a ruling necessary to enable it to give judgment. This is a discretion — courts below the level of courts of last instance may refer but are not obliged to. Courts of last instance (Article 267(3)) have an obligation to refer where a question of EU law is raised, subject to the CILFIT exceptions. The distinction is critical: most courts can choose to refer or decide the EU law point themselves."
+    },
+    {
+      "id": "EUL_M08_L01_Q04",
+      "question": "What is the test for whether a national body qualifies as a 'court or tribunal' for Article 267 TFEU purposes?",
+      "options": {
+        "A": "The body must be named 'court' or 'tribunal' in national law",
+        "B": "The Dorsch Consult criteria: the body must be established by law, be permanent, have compulsory jurisdiction, apply rules of law, be independent, and apply adversarial procedure",
+        "C": "The body must be a public body with the power to impose sanctions",
+        "D": "Only bodies with final appellate jurisdiction qualify as courts for Article 267 purposes"
+      },
+      "correct_answer": "B",
+      "explanation": "The CJEU has developed an autonomous EU law definition of 'court or tribunal' (Dorsch Consult, C-54/96 and subsequent cases). The criteria are: (1) established by law; (2) permanent; (3) compulsory jurisdiction (parties cannot choose to avoid it); (4) applies rules of law (not purely equitable or commercial discretion); (5) independent (from the parties and the executive); and (6) follows adversarial procedure. Professional regulatory bodies, arbitration tribunals, and specialist adjudicatory bodies have been assessed against this test with varying results."
+    },
+    {
+      "id": "EUL_M08_L01_Q05",
+      "question": "Can an arbitral tribunal make a preliminary reference under Article 267 TFEU?",
+      "options": {
+        "A": "Yes — all arbitral tribunals are courts for Article 267 purposes",
+        "B": "Generally no — voluntary arbitration tribunals (where parties chose arbitration by agreement) do not satisfy the 'compulsory jurisdiction' criterion and lack the status of a court; however, compulsory statutory arbitration may qualify",
+        "C": "Yes — but only if the seat of arbitration is in an EU member state",
+        "D": "No — arbitration is a purely private matter and always outside the scope of Article 267"
+      },
+      "correct_answer": "B",
+      "explanation": "The CJEU in Nordsee (Case 102/81) held that a voluntary commercial arbitral tribunal could not make a preliminary reference because parties had freely chosen arbitration — the jurisdiction was not compulsory. The tribunal lacked the necessary institutional link with the national court system. However, where a legal framework makes arbitration compulsory (not by free agreement of the parties), the tribunal may satisfy the criteria. The key is the 'compulsory jurisdiction' element — voluntary selection by the parties defeats this requirement."
+    },
+    {
+      "id": "EUL_M08_L01_Q06",
+      "question": "The CJEU has held that it may refuse to answer a preliminary reference in which circumstances?",
+      "options": {
+        "A": "Whenever the national court's question is difficult or time-consuming to answer",
+        "B": "Where the question is manifestly irrelevant to the main proceedings, where it is hypothetical or artificially constructed, where the factual or legal context has not been adequately explained, or where the question concerns a situation that is purely internal with no EU law connection",
+        "C": "Whenever the Commission objects to the reference as unnecessary",
+        "D": "Where the question was already answered in a previous ruling with identical facts"
+      },
+      "correct_answer": "B",
+      "explanation": "The CJEU has developed grounds for rejecting preliminary references (Foglia v Novello Nos. 1 and 2; Meilicke): (1) the question is manifestly irrelevant to the outcome of the national proceedings; (2) the reference is based on a fictitious dispute constructed to obtain a ruling; (3) the factual or legal context is insufficiently described by the referring court; (4) the situation is purely internal (no cross-border element, no EU law connection). The CJEU's jurisdiction is limited to giving useful answers to questions that genuinely arise in real proceedings."
+    },
+    {
+      "id": "EUL_M08_L01_Q07",
+      "question": "The national court's discretion to refer under Article 267(2) TFEU means that which of the following statements is correct?",
+      "options": {
+        "A": "Parties to national proceedings can compel a national court to make a reference",
+        "B": "The decision whether to refer belongs to the national court alone — parties may request a reference but have no right to insist on one; the national court may decide the EU law question itself if it feels sufficiently confident",
+        "C": "The national court must refer if any party requests it",
+        "D": "The Commission can direct national courts to make a reference in specific cases"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 267(2) gives the national court (below last instance level) a discretion — it 'may' refer. The parties cannot compel a reference. The national court may choose to resolve the EU law question itself without referring, applying existing CJEU case law. The CJEU has encouraged national courts not to refer unnecessarily — where the answer is clear (acte clair or acte éclairé), they may decide for themselves. This respects judicial economy and the primary role of national courts in applying EU law."
+    },
+    {
+      "id": "EUL_M08_L01_Q08",
+      "question": "What happens to national proceedings when a preliminary reference is made to the CJEU?",
+      "options": {
+        "A": "National proceedings continue in parallel with the CJEU proceedings",
+        "B": "National proceedings are stayed (suspended) pending the CJEU's preliminary ruling — the national court awaits the ruling before giving its judgment on the main case",
+        "C": "National proceedings are terminated — the CJEU takes over the case",
+        "D": "National proceedings continue but the national court's judgment is automatically subject to CJEU review"
+      },
+      "correct_answer": "B",
+      "explanation": "When a preliminary reference is made, the national proceedings are stayed (suspended). The national court cannot give its final judgment on the main case until it receives the CJEU's preliminary ruling on the EU law question. This can significantly delay resolution of the case — average referencing times have been around 15-18 months in recent years. The national court then applies the CJEU's ruling to the facts to decide the main case. The preliminary ruling is binding on the referring court."
+    },
+    {
+      "id": "EUL_M08_L01_Q09",
+      "question": "The question referred to the CJEU must concern a point of EU law. Who determines what the relevant EU law question is?",
+      "options": {
+        "A": "The CJEU determines the question it wishes to answer, regardless of how the national court framed it",
+        "B": "The national court — the CJEU is not a court of appeal and cannot re-examine the national court's findings of fact or reframe the entire case; however, the CJEU may reformulate the question to give a useful answer on the relevant EU law issue",
+        "C": "The parties to the national proceedings determine the question by agreement",
+        "D": "The Commission sets the question in its written observations to the CJEU"
+      },
+      "correct_answer": "B",
+      "explanation": "The national court sets the question and determines the factual and legal context. The CJEU answers the EU law question as referred, but it may reformulate the question where necessary to provide a useful answer — taking the substance of what is needed rather than being confined to the exact words used. The CJEU will not, however, answer questions that go beyond what is necessary for the case, and it does not re-examine the national court's factual findings or the national law's requirements."
+    },
+    {
+      "id": "EUL_M08_L01_Q10",
+      "question": "Which parties may submit observations to the CJEU in preliminary reference proceedings?",
+      "options": {
+        "A": "Only the parties to the main national proceedings",
+        "B": "The parties to the national proceedings, the member state whose court made the reference, all other EU member states, the EU institutions (particularly the Commission), and the EEA institutions",
+        "C": "Only the national court and the Commission",
+        "D": "Any EU citizen with an interest in the outcome"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the Statute of the CJEU, the following may submit written observations in preliminary reference proceedings: the parties to the main proceedings; the member state of the referring court; all other member states; the EU institutions (the Commission almost always submits; others less frequently); and the EEA institutions. Third-party NGOs and intervenors generally cannot participate unless they were parties in the national proceedings. This broad participation allows multiple perspectives on important EU law questions."
+    }
+  ],
+  "total_questions": 10
+}

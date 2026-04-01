@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "PropertyLaw_ElevenLabs_Module07_Lesson01.txt",
+  "module_number": 7,
+  "module_title": "Mortgages",
+  "lesson_number": 1,
+  "lesson_title": "Mortgages: Creation, the Equity of Redemption, Clogs, Possession, and the Power of Sale",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M07_L01_Q01",
+      "question": "Under section 89 of the Land and Conveyancing Law Reform Act 2009, what form must all new mortgages of freehold or leasehold land created on or after 1 December 2009 take?",
+      "options": {
+        "A": "A mortgage by demise or sub-demise",
+        "B": "A charge by deed expressed to be by way of legal mortgage",
+        "C": "A registered mortgage by way of assignment",
+        "D": "An equitable mortgage by deposit of title deeds"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 89 LCLRA 2009 abolished the old forms of mortgage — by demise and sub-demise — for new mortgages created from 1 December 2009. All new mortgages must take the form of a charge by deed. The borrower retains legal ownership of the property throughout."
+    },
+    {
+      "id": "PRL_M07_L01_Q02",
+      "question": "What is the key consequence for a borrower of the change introduced by section 89 of the Land and Conveyancing Law Reform Act 2009?",
+      "options": {
+        "A": "The borrower loses legal title to the property on execution of the mortgage",
+        "B": "The borrower must register a caution against their own title",
+        "C": "The borrower retains legal ownership of the property throughout the mortgage",
+        "D": "The borrower becomes a leaseholder of the property during the mortgage term"
+      },
+      "correct_answer": "C",
+      "explanation": "Under section 89 LCLRA 2009, the new mortgage by charge does not transfer ownership to the lender. The borrower retains legal ownership of the property throughout. This is a fundamental change from the old mortgage by demise, under which legal title passed to the mortgagee."
+    },
+    {
+      "id": "PRL_M07_L01_Q03",
+      "question": "What is the equity of redemption in mortgage law?",
+      "options": {
+        "A": "The lender's right to sell the property when the borrower defaults",
+        "B": "A statutory right allowing the borrower to redeem the mortgage at any time before sale",
+        "C": "The borrower's equitable right to redeem the mortgage on paying off the debt, and the totality of their interest in the mortgaged property",
+        "D": "A court order preventing the lender from selling the mortgaged property"
+      },
+      "correct_answer": "C",
+      "explanation": "The equity of redemption is the borrower's equitable right to redeem the mortgage by paying off the debt. Equity developed this right to protect borrowers from unconscionable terms. It represents the totality of the borrower's interest in the mortgaged property and courts will not permit it to be clogs or fettered."
+    },
+    {
+      "id": "PRL_M07_L01_Q04",
+      "question": "In Browne v Ryan [1901], the Irish court held that an option to purchase given to the mortgagee as part of the mortgage transaction was void as a clog on the equity of redemption. What is a clog on the equity of redemption?",
+      "options": {
+        "A": "Any term that increases the interest rate payable on the mortgage",
+        "B": "Any term that prevents or penalises the mortgagor from redeeming the mortgage when entitled to do so",
+        "C": "A restriction on the mortgagor's right to let the property during the mortgage term",
+        "D": "A requirement that the mortgagor obtain the mortgagee's consent before disposing of the property"
+      },
+      "correct_answer": "B",
+      "explanation": "A clog on the equity of redemption is any term that prevents or penalises the mortgagor from freely redeeming when entitled to do so. In Browne v Ryan [1901], the option to purchase granted to the mortgagee was held to be such a clog because it could prevent the mortgagor from recovering their property on repayment."
+    },
+    {
+      "id": "PRL_M07_L01_Q05",
+      "question": "In Kreglinger v New Patagonia Meat and Cold Storage Co [1914], the House of Lords held that a collateral advantage reserved by the mortgagee was valid and did not constitute a clog on the equity of redemption. What was the key distinction?",
+      "options": {
+        "A": "The collateral advantage was part of an entirely independent and contemporaneous commercial agreement",
+        "B": "The collateral advantage was agreed after the mortgage was created",
+        "C": "The mortgagor had received independent legal advice before agreeing to the collateral advantage",
+        "D": "The collateral advantage expired automatically on redemption of the mortgage"
+      },
+      "correct_answer": "A",
+      "explanation": "In Kreglinger [1914], the House of Lords held that a collateral advantage is valid and does not constitute a clog where it forms part of an independent commercial agreement and is not a term of the mortgage itself. The right of first refusal on sheepskins was an independent collateral advantage forming part of a wider commercial arrangement."
+    },
+    {
+      "id": "PRL_M07_L01_Q06",
+      "question": "In Start Mortgages v Gunn [2011], Dunne J identified a lacuna in the Land and Conveyancing Law Reform Act 2009 in relation to mortgagee possession proceedings. What was the lacuna?",
+      "options": {
+        "A": "Section 97 required a court order before a lender could take possession of a dwelling but the LCLRA 2009 contained no procedure for post-2009 charges to apply for such an order",
+        "B": "Section 97 abolished the lender's right to possession entirely for residential dwellings",
+        "C": "Section 97 required the borrower's consent before any possession proceedings could be issued",
+        "D": "Section 97 required mediation before court proceedings for possession could be brought"
+      },
+      "correct_answer": "A",
+      "explanation": "In Start Mortgages v Gunn [2011], Dunne J held that while section 97 LCLRA 2009 required a court order before a chargee could take possession of a dwelling, the LCLRA 2009 provided no procedure by which a post-2009 chargee could apply for such an order. This lacuna left lenders under post-2009 charges without a mechanism to seek possession."
+    },
+    {
+      "id": "PRL_M07_L01_Q07",
+      "question": "How was the lacuna identified in Start Mortgages v Gunn [2011] resolved?",
+      "options": {
+        "A": "The Supreme Court read the LCLRA 2009 as incorporating the old procedure by analogy",
+        "B": "Section 1 of the Land and Conveyancing Law Reform Act 2013 retrospectively applied the court order requirement to all mortgages regardless of date of creation",
+        "C": "The Land Registry introduced a new administrative procedure for possession applications",
+        "D": "The Oireachtas passed an emergency regulation suspending the court order requirement"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 1 of the Land and Conveyancing Law Reform Act 2013 fixed the lacuna retrospectively. It applied the court order requirement to all mortgages — whether created before or after 1 December 2009 — meaning all lenders seeking possession of a dwelling must obtain a court order."
+    },
+    {
+      "id": "PRL_M07_L01_Q08",
+      "question": "Under section 100 of the Land and Conveyancing Law Reform Act 2009, when does a chargee's power of sale arise?",
+      "options": {
+        "A": "When the borrower is twelve months in arrears of repayments",
+        "B": "When the mortgage money has become due",
+        "C": "Only after the chargee obtains a court order",
+        "D": "At any time after the mortgage is executed, regardless of default"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 100 LCLRA 2009, the chargee's power of sale arises when the mortgage money has become due — that is, when the borrower is in default. The power arises automatically at that point, though it must be exercised in accordance with the statutory duty of care."
+    },
+    {
+      "id": "PRL_M07_L01_Q09",
+      "question": "Under section 103 of the Land and Conveyancing Law Reform Act 2009, what is the duty imposed on a mortgagee exercising the power of sale?",
+      "options": {
+        "A": "To maximise the sale price through competitive public auction only",
+        "B": "To consult the borrower before accepting any offer",
+        "C": "To obtain the best price reasonably obtainable at the time of sale",
+        "D": "To wait for market conditions to improve before selling"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 103 LCLRA 2009 imposes a duty on the mortgagee to take reasonable care to obtain the best price reasonably obtainable at the time of sale. This is a statutory codification of the equitable duty confirmed in Cuckmere Brick Co v Mutual Finance [1971]."
+    },
+    {
+      "id": "PRL_M07_L01_Q10",
+      "question": "What principle was established in Cuckmere Brick Co v Mutual Finance [1971] in relation to the mortgagee's duty when exercising the power of sale?",
+      "options": {
+        "A": "A mortgagee has no duty of care to the mortgagor when selling the property",
+        "B": "A mortgagee must obtain the highest possible price irrespective of prevailing market conditions",
+        "C": "A mortgagee owes a duty of care to obtain the true market value of the mortgaged property",
+        "D": "A mortgagee can sell at any price once it has advertised the property"
+      },
+      "correct_answer": "C",
+      "explanation": "In Cuckmere Brick Co v Mutual Finance [1971], the English Court of Appeal held that a mortgagee owes the mortgagor a duty to take reasonable care to obtain the true market value of the property when exercising the power of sale. This duty of care has been adopted in Irish law and is now codified in section 103 LCLRA 2009."
+    }
+  ]
+}

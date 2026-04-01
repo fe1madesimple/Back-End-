@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "PropertyLaw_ElevenLabs_Module01_Lesson01.txt",
+  "module_number": 1,
+  "module_title": "Finding and Relativity of Title",
+  "lesson_number": 1,
+  "lesson_title": "Finding, Relativity of Title, and Rights in Respect of Found Objects",
+  "questions": [
+    {
+      "id": "PRL_M01_L01_Q01",
+      "question": "In Parker v British Airways Board [1982], what item was found in the airline's executive lounge?",
+      "options": {
+        "A": "A diamond ring dropped by a previous passenger",
+        "B": "A wallet containing cash and credit cards",
+        "C": "A gold bracelet",
+        "D": "A set of car keys"
+      },
+      "correct_answer": "C",
+      "explanation": "In Parker v British Airways Board [1982] CA, a passenger found a gold bracelet in the airline's executive lounge. The court held that the passenger/finder had a possessory title to the bracelet, as the airline had not manifested sufficient intention to control objects found on the premises."
+    },
+    {
+      "id": "PRL_M01_L01_Q02",
+      "question": "What is the test established in Parker v British Airways for determining when an occupier has better rights to a found chattel than the finder?",
+      "options": {
+        "A": "The occupier must have physically searched the premises before the object was found",
+        "B": "The occupier must demonstrate manifest intention to exercise control over things that might be found on the premises",
+        "C": "The occupier must have had prior knowledge of the specific object before it was found",
+        "D": "The occupier must prove the finder was a trespasser at the time of finding"
+      },
+      "correct_answer": "B",
+      "explanation": "In Parker v British Airways Board [1982] CA, the Court of Appeal held that for an occupier to prevail over a finder, the occupier must manifest an intention to exercise control over the premises and the things found on them. The mere fact of occupying premises is not sufficient."
+    },
+    {
+      "id": "PRL_M01_L01_Q03",
+      "question": "Under Parker v British Airways, which of the following would most clearly demonstrate sufficient manifest intention by an occupier to control found objects?",
+      "options": {
+        "A": "Maintaining a general policy of cleanliness and tidiness",
+        "B": "Operating CCTV cameras throughout the premises",
+        "C": "Displaying notices requiring finders to hand all found items to staff, backed by a systematic collection procedure",
+        "D": "Employing security guards to patrol the building"
+      },
+      "correct_answer": "C",
+      "explanation": "Manifest intention to control found objects requires a demonstrated intention specifically related to found goods. Notices requiring surrender of found items, combined with a systematic collection procedure, most clearly demonstrate this. General security or cleanliness measures do not show a specific intention to control found objects."
+    },
+    {
+      "id": "PRL_M01_L01_Q04",
+      "question": "A passenger on a train finds a watch on the seat beside her. The transport operator has no notices about found objects and no surrender policy. Applying Parker v British Airways, what is the most likely outcome?",
+      "options": {
+        "A": "The watch belongs to the transport operator as occupier",
+        "B": "The watch belongs to the Crown as ownerless goods",
+        "C": "The watch belongs to the true owner only — the finder has no rights",
+        "D": "The passenger/finder has a possessory title to the watch, good against everyone except the true owner"
+      },
+      "correct_answer": "D",
+      "explanation": "Applying Parker v British Airways, since the transport operator has not manifested sufficient intention to control things found on the train, the finder obtains a possessory title good against all except the true owner. The operator cannot claim the watch without evidence of manifest intention."
+    },
+    {
+      "id": "PRL_M01_L01_Q05",
+      "question": "In which case did the court hold that a chimney sweep's boy who found a jewel had a right to it enforceable against all except the true owner?",
+      "options": {
+        "A": "Armory v Delamirie (1722)",
+        "B": "South Staffordshire Water Co v Sharman [1896]",
+        "C": "Hannah v Peel [1945]",
+        "D": "Parker v British Airways [1982]"
+      },
+      "correct_answer": "A",
+      "explanation": "Armory v Delamirie (1722) is the foundational English case in which a chimney sweep's boy found a jewel and took it to a goldsmith's shop. The court held that the finder's possessory title was good against all except the true owner, establishing the basic principle of finding law."
+    },
+    {
+      "id": "PRL_M01_L01_Q06",
+      "question": "Where goods are found by an employee in the course of their employment duties, who generally has the better right to possession?",
+      "options": {
+        "A": "The finder/employee personally",
+        "B": "The State, as found property is subject to Crown prerogative",
+        "C": "The employer",
+        "D": "The person who most recently owned the goods"
+      },
+      "correct_answer": "C",
+      "explanation": "Where an employee finds goods in the course of their employment, the employer generally has the better claim. The employee acts as agent for the employer, and any possessory rights from finding accrue to the employer. This is consistent with Parker v British Airways and general agency principles."
+    },
+    {
+      "id": "PRL_M01_L01_Q07",
+      "question": "In South Staffordshire Water Co v Sharman [1896], two gold rings were found at the bottom of a pool being cleaned under licence from the landowner. What was the outcome?",
+      "options": {
+        "A": "The rings were awarded to the finders as there was no manifest intention by the landowner to control them",
+        "B": "The rings were classified as treasure trove and vested in the Crown",
+        "C": "The rings were awarded to the landowner because they were embedded in the land and the landowner had control",
+        "D": "The rings were divided equally between the finders and the landowner"
+      },
+      "correct_answer": "C",
+      "explanation": "In South Staffordshire Water Co v Sharman [1896], the court held that the rings, found embedded at the bottom of the pool, belonged to the landowner. Objects found embedded within land generally accrue to the landowner rather than to a finder or licensee operating on the land."
+    },
+    {
+      "id": "PRL_M01_L01_Q08",
+      "question": "What is the Latin maxim that expresses the principle that ownership of land extends to objects found within the subsoil?",
+      "options": {
+        "A": "Nemo dat quod non habet",
+        "B": "Prior tempore potior iure",
+        "C": "Nec vi, nec clam, nec precario",
+        "D": "Cuius est solum, eius est usque ad coelum et ad inferos"
+      },
+      "correct_answer": "D",
+      "explanation": "The maxim 'cuius est solum, eius est usque ad coelum et ad inferos' means 'whoever owns the soil owns everything up to the heavens and down to the depths.' This supports the rule that objects embedded in or beneath the surface generally belong to the landowner."
+    },
+    {
+      "id": "PRL_M01_L01_Q09",
+      "question": "In Elwes v Brigg Gas Co (1886), what object was discovered embedded in land that had been leased to the gas company?",
+      "options": {
+        "A": "A Roman mosaic pavement",
+        "B": "A hoard of medieval coins",
+        "C": "A prehistoric boat",
+        "D": "A buried chest of Victorian jewellery"
+      },
+      "correct_answer": "C",
+      "explanation": "In Elwes v Brigg Gas Co (1886), a prehistoric boat was discovered embedded in the land while the lessee (the gas company) was excavating foundations. The court held that the boat belonged to the freeholder/lessor, not the lessee or the workmen who found it."
+    },
+    {
+      "id": "PRL_M01_L01_Q10",
+      "question": "In Elwes v Brigg Gas Co (1886), the court rejected the gas company's claim to the prehistoric boat because:",
+      "options": {
+        "A": "The lease had already expired by the time the boat was found",
+        "B": "The prehistoric boat was classified as treasure trove and vested in the Crown",
+        "C": "The lease could not grant the lessee rights over objects embedded in the soil that the freeholder did not intend to give up",
+        "D": "The gas company had failed to notify the freeholder of the discovery within a reasonable time"
+      },
+      "correct_answer": "C",
+      "explanation": "The court held that the freeholder owned all objects embedded in the soil at the time the lease was granted. A lease cannot transfer to the lessee rights over objects embedded in the subsoil that the freeholder did not expressly or impliedly intend to give up."
+    }
+  ],
+  "total_questions": 10
+}

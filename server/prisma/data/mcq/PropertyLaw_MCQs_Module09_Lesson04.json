@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_09_Lesson_04_Commercial_Leases_and_Ground_Rents.txt",
+  "module_number": 9,
+  "module_title": "Landlord and Tenant",
+  "lesson_number": 4,
+  "lesson_title": "Commercial Leases and Ground Rents",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M09_L04_Q01",
+      "question": "Under which Act do qualifying commercial tenants have a statutory right to a new tenancy on the expiry of their lease?",
+      "options": {
+        "A": "The Residential Tenancies Act 2004",
+        "B": "Part II of the Landlord and Tenant (Amendment) Act 1980",
+        "C": "The Land and Conveyancing Law Reform Act 2009",
+        "D": "The Landlord and Tenant (Ground Rents) Act 1978"
+      },
+      "correct_answer": "B",
+      "explanation": "Part II of the Landlord and Tenant (Amendment) Act 1980 gives certain qualifying commercial tenants a statutory right to a new tenancy on expiry of their lease. This right is not automatic — it depends on meeting the conditions of five years' continuous occupation in business use and the tenant serving the appropriate notice. The 1980 Act is the primary legislation governing commercial tenants' right of renewal."
+    },
+    {
+      "id": "PRL_M09_L04_Q02",
+      "question": "What is the qualifying period of continuous occupation required before a commercial tenant can exercise the statutory right to a new tenancy under the Landlord and Tenant (Amendment) Act 1980?",
+      "options": {
+        "A": "One year",
+        "B": "Three years",
+        "C": "Five years",
+        "D": "Ten years"
+      },
+      "correct_answer": "C",
+      "explanation": "Under Part II of the Landlord and Tenant (Amendment) Act 1980, the right to a new tenancy arises where a tenant has been in continuous occupation of the premises for five years — whether under one lease or a series of leases — and has used the premises wholly or partly for the purposes of a business or profession. The five-year continuous occupation requirement is frequently tested on the FE-1 examination."
+    },
+    {
+      "id": "PRL_M09_L04_Q03",
+      "question": "On what grounds may a court refuse to grant a new tenancy to a qualifying commercial tenant under the Landlord and Tenant (Amendment) Act 1980?",
+      "options": {
+        "A": "The court has no grounds on which to refuse once the five-year threshold is met",
+        "B": "Where the landlord establishes specified grounds, including that the landlord requires possession for their own occupation or for rebuilding",
+        "C": "Only where the tenant has breached a covenant in the existing lease",
+        "D": "Where the property is subject to a mortgage and the mortgagee objects"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the Landlord and Tenant (Amendment) Act 1980, a court may refuse to grant a new tenancy where the landlord establishes one of the specified grounds. These grounds include that the landlord requires possession for their own occupation or that of a business owned by them, or for rebuilding or renovation works. The court has discretion to grant or refuse based on whether the landlord has established a valid ground."
+    },
+    {
+      "id": "PRL_M09_L04_Q04",
+      "question": "How is the rent under a new commercial tenancy determined under the Landlord and Tenant (Amendment) Act 1980?",
+      "options": {
+        "A": "At the same rate as the expiring lease adjusted by the Consumer Price Index",
+        "B": "At the open market rent at the date of renewal, to be agreed by the parties or determined by the Circuit Court",
+        "C": "At the rate set by the Residential Tenancies Board",
+        "D": "At a rate fixed by the landlord subject to the tenant's right of appeal to the High Court"
+      },
+      "correct_answer": "B",
+      "explanation": "The rent under a new commercial tenancy is the open market rent at the date of renewal. The parties are encouraged to negotiate first. If they cannot agree on the rent, the Circuit Court determines the appropriate rent having regard to comparable rents in the market. This is distinct from the rent pressure zone regime which applies to residential tenancies."
+    },
+    {
+      "id": "PRL_M09_L04_Q05",
+      "question": "What is an 'upward-only rent review clause' in a commercial lease?",
+      "options": {
+        "A": "A clause allowing the rent to be reviewed upward or downward in line with market conditions",
+        "B": "A clause providing that the rent can only increase, never decrease, at each review point regardless of market conditions",
+        "C": "A clause requiring the tenant to pay rent in advance at the beginning of each review period",
+        "D": "A clause allowing the landlord to increase rent at any time without prior notice to the tenant"
+      },
+      "correct_answer": "B",
+      "explanation": "An upward-only rent review clause in a commercial lease is a provision that the rent can only increase, never decrease, at each review point — regardless of market conditions. These clauses attracted significant controversy following the post-2008 property crash, when commercial tenants found themselves paying pre-crash rental rates despite falling market rents."
+    },
+    {
+      "id": "PRL_M09_L04_Q06",
+      "question": "Under section 132 of the Land and Conveyancing Law Reform Act 2009, from what date are upward-only rent review clauses restricted in new commercial leases?",
+      "options": {
+        "A": "1 December 2009",
+        "B": "28 February 2010",
+        "C": "1 January 2011",
+        "D": "31 December 2008"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 132 of the Land and Conveyancing Law Reform Act 2009 restricts the use of upward-only rent review clauses in new commercial leases entered into after 28 February 2010. This reform was a response to the controversy surrounding commercial tenants locked into pre-crash rental rates. Critically, existing leases with upward-only review clauses executed before that date remain enforceable."
+    },
+    {
+      "id": "PRL_M09_L04_Q07",
+      "question": "In The Leopardstown Club v Templeville Developments [2011], what transitional position did the court confirm regarding upward-only rent review clauses?",
+      "options": {
+        "A": "The court held that the LCLRA 2009 applied retrospectively to void all existing upward-only rent review clauses",
+        "B": "The court confirmed that existing leases with upward-only rent review clauses executed before 28 February 2010 remain enforceable",
+        "C": "The court held that upward-only rent review clauses were always void as contrary to public policy",
+        "D": "The court held that section 132 applied to all commercial leases regardless of their date of execution"
+      },
+      "correct_answer": "B",
+      "explanation": "In The Leopardstown Club v Templeville Developments [2011], the court confirmed the transitional position that existing commercial leases with upward-only rent review clauses executed before 28 February 2010 remain enforceable despite the LCLRA 2009 restriction. This is critically important for FE-1 examination purposes: always check the date of the lease and whether it was executed before or after 28 February 2010."
+    },
+    {
+      "id": "PRL_M09_L04_Q08",
+      "question": "What is a 'ground rent' in the context of Irish property law?",
+      "options": {
+        "A": "A rent paid by a tenant of agricultural land for the right to cultivate crops",
+        "B": "An annual payment made by a person who holds a long lease over land rather than owning the freehold, payable to the holder of the freehold reversion",
+        "C": "A payment made to the local authority as a condition of planning permission",
+        "D": "A rent charged for the use of subterranean minerals under a property"
+      },
+      "correct_answer": "B",
+      "explanation": "A ground rent is an annual payment made by a person who holds a long lease over land — often ninety-nine years or more — rather than owning the freehold. The person holding the long lease pays the ground rent to the landlord who retained the freehold reversion. Ground rent leases are a distinctive feature of the Irish property landscape, particularly in Dublin, where many houses were historically conveyed on long leases rather than in fee simple."
+    },
+    {
+      "id": "PRL_M09_L04_Q09",
+      "question": "Under the Landlord and Tenant (Ground Rents) Acts 1967–2005, what right is conferred on qualifying lessees?",
+      "options": {
+        "A": "The right to a rent reduction to a nominal sum of one euro per annum",
+        "B": "The right to purchase the freehold — to acquire the fee simple — for a relatively modest sum",
+        "C": "The right to a perpetual renewal of the lease on the same terms",
+        "D": "The right to convert the long lease into a statutory tenancy under the Residential Tenancies Act 2004"
+      },
+      "correct_answer": "B",
+      "explanation": "The Landlord and Tenant (Ground Rents) Acts 1967–2005 confer on qualifying lessees the right to purchase the freehold — to acquire the fee simple — for a relatively modest consideration. Once the freehold is acquired, the ground rent ceases and the former lessee becomes the absolute freehold owner of the property. This right is available to qualifying lessees of houses and some other properties on residential long leases."
+    },
+    {
+      "id": "PRL_M09_L04_Q10",
+      "question": "What are the main conditions for a lessee to qualify for the right to purchase the freehold under the ground rent legislation?",
+      "options": {
+        "A": "The lease must be for at least twenty-five years and the ground rent must not exceed €100 per annum",
+        "B": "The lessee must hold under a lease for more than fifty years; the lessee or a predecessor must have erected the buildings; the land must be used for residential or business purposes; and the ground rent must not exceed a specified proportion of letting value",
+        "C": "The lessee must have occupied the property for at least ten years and the annual rent must not exceed €500",
+        "D": "The lessee must have paid all ground rent without default and must obtain the landlord's consent"
+      },
+      "correct_answer": "B",
+      "explanation": "The conditions for qualifying for the right to purchase the freehold under the Landlord and Tenant (Ground Rents) Acts are: (1) the lessee holds under a lease for more than fifty years; (2) the lessee or a predecessor in title has erected the buildings on the land; (3) the land is used wholly or principally for residential purposes or as a shop or office; and (4) the ground rent does not exceed a specified proportion of the letting value."
+    }
+  ]
+}

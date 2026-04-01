@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module11_Lesson03.txt",
+  "module_number": 11,
+  "module_title": "Trespass to Land and Nuisance",
+  "lesson_number": 3,
+  "lesson_title": "Public Nuisance and the Rule in Rylands v Fletcher",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M11_L03_Q01",
+      "question": "What is public nuisance and what is its primary legal character?",
+      "options": {
+        "A": "A civil wrong giving any member of the public an action in damages",
+        "B": "Primarily a crime — an act or omission that endangers the life, health, property, or comfort of the public, or obstructs the public in the exercise of rights common to all",
+        "C": "A statutory wrong under the Local Government Act",
+        "D": "An equitable remedy available only where an injunction is sought"
+      },
+      "correct_answer": "B",
+      "explanation": "Public nuisance is primarily a crime, not a civil wrong. It consists of an act or omission that endangers the life, health, property, or comfort of the public, or obstructs the public in the exercise of rights common to all members of society. A private individual may bring a civil action for public nuisance only if they can prove that they suffered special damage — damage that is particular, direct, and substantial — over and above the general inconvenience suffered by the public at large."
+    },
+    {
+      "id": "TL_M11_L03_Q02",
+      "question": "When may a private individual bring a civil action for public nuisance?",
+      "options": {
+        "A": "Any member of the public affected by the nuisance may sue without further qualification",
+        "B": "Only where the individual suffered special damage — damage particular, direct, and substantial over and above the general inconvenience suffered by the public at large",
+        "C": "Only where they have a proprietary interest in land affected by the public nuisance",
+        "D": "Only where the public nuisance also constitutes a private nuisance to the individual plaintiff"
+      },
+      "correct_answer": "B",
+      "explanation": "A private individual can bring a civil action in public nuisance only where they suffered special damage — damage that is particular, direct, and substantial, over and above the general inconvenience or harm suffered by the public at large. This requirement prevents every person inconvenienced by, for example, a blocked road or a dangerous structure from bringing a separate civil action. Only those who suffer a greater, specific harm beyond the general public impact can sue in their own right."
+    },
+    {
+      "id": "TL_M11_L03_Q03",
+      "question": "In Rylands v Fletcher [1868], what were the essential facts and what principle did the House of Lords establish?",
+      "options": {
+        "A": "A railway company negligently allowed sparks from a train to ignite a field; the court established strict liability for railway operations",
+        "B": "A defendant employed contractors to build a reservoir; the contractors negligently left old mine shafts unsealed; water burst through and flooded the plaintiff's mine; the House of Lords held that a person who brings something onto their land likely to do mischief if it escapes must keep it at their peril",
+        "C": "A chemical factory stored toxic gases which leaked and injured a neighbouring farm worker; the court established that dangerous activities attract absolute liability",
+        "D": "A landowner's cattle broke through a fence and damaged a neighbour's crops; the court held the owner strictly liable for the acts of their animals"
+      },
+      "correct_answer": "B",
+      "explanation": "In Rylands v Fletcher [1868] LR 3 HL 330, the defendant had employed independent contractors to construct a reservoir on his land. The contractors negligently failed to block some old mine shafts connecting to the plaintiff's coal mine. When the reservoir was filled, water burst through the shafts and flooded the plaintiff's mine. The defendant himself was not negligent. The House of Lords confirmed the principle stated by Blackburn J: a person who brings onto their land and keeps there, for their own purposes, something likely to do mischief if it escapes, must keep it at their peril, and is answerable for all natural consequences of its escape."
+    },
+    {
+      "id": "TL_M11_L03_Q04",
+      "question": "What are the four essential ingredients of the Rylands v Fletcher tort?",
+      "options": {
+        "A": "Negligence, foreseeability, damage, and causation",
+        "B": "The defendant brought something onto the land (non-natural use); it escaped from the land; the thing was likely to do mischief if it escaped; the escape caused damage to the plaintiff",
+        "C": "Physical entry onto the plaintiff's land, permanent damage, knowledge of risk, and failure to act",
+        "D": "Statutory breach, deliberate act, identifiable victim, and financial loss"
+      },
+      "correct_answer": "B",
+      "explanation": "The four essential ingredients of the Rylands v Fletcher rule are: (1) the defendant brought something onto the land — and this must constitute a non-natural use of the land; (2) the thing escaped from the defendant's land; (3) the thing was of a kind likely to do mischief if it escaped; and (4) the escape caused damage to the plaintiff. All four elements must be established. If the thing does not escape, or if the use of land is natural, the rule does not apply."
+    },
+    {
+      "id": "TL_M11_L03_Q05",
+      "question": "What is the 'non-natural use' requirement in Rylands v Fletcher and why is it significant?",
+      "options": {
+        "A": "The defendant must have constructed the thing in an artificial manner rather than acquired it naturally",
+        "B": "The defendant must have made an unusual or extraordinary use of the land — beyond what an ordinary landowner would do — to bring the rule into operation; ordinary natural use of land will not suffice",
+        "C": "The thing must be a chemical or industrial substance that does not occur naturally in the environment",
+        "D": "Non-natural use means the thing was brought onto the land from outside Ireland or from a foreign jurisdiction"
+      },
+      "correct_answer": "B",
+      "explanation": "The non-natural use requirement is crucial. The Rylands rule only applies where the defendant made an unusual or extraordinary use of their land — beyond what an ordinary landowner would ordinarily do. Storing water in a domestic cistern, for example, is a natural use of residential land. Constructing a large commercial reservoir is not. The requirement prevents the rule from applying to ordinary everyday activities and confines it to genuinely unusual or hazardous accumulations."
+    },
+    {
+      "id": "TL_M11_L03_Q06",
+      "question": "In Cambridge Water Company v Eastern Counties Leather plc [1994], the House of Lords considered the Rylands v Fletcher rule. What did it hold?",
+      "options": {
+        "A": "The House of Lords abolished Rylands v Fletcher and replaced it with a general tort of strict liability for hazardous activities",
+        "B": "The House of Lords confirmed that Rylands v Fletcher remains part of English law as a species of nuisance, and that foreseeability of damage is a requirement of the rule",
+        "C": "The House of Lords held that Rylands v Fletcher only applies to water and not to other substances",
+        "D": "The House of Lords held that Rylands v Fletcher is no longer applicable in light of modern environmental legislation"
+      },
+      "correct_answer": "B",
+      "explanation": "In Cambridge Water Company v Eastern Counties Leather [1994] 2 AC 264, the House of Lords confirmed that Rylands v Fletcher remains part of English law but as a species of nuisance, not as a completely independent tort. The court also held that foreseeability of damage is required — the type of damage caused by the escape must have been foreseeable at the time the accumulation was made. The decision thus preserved the rule while integrating it more closely with the general law of nuisance."
+    },
+    {
+      "id": "TL_M11_L03_Q07",
+      "question": "What is the uncertain status of Rylands v Fletcher in Irish law, and how should FE-1 candidates approach it?",
+      "options": {
+        "A": "Rylands v Fletcher has been expressly abolished by the Irish courts and candidates should not discuss it",
+        "B": "The Irish courts have not conclusively abolished or confirmed the rule; the better view is to treat it as a live doctrine in Irish law, noting that plaintiffs may prefer to rely on negligence, but candidates should demonstrate knowledge of the rule",
+        "C": "Rylands v Fletcher has been incorporated into Irish statute and candidates should cite the relevant legislation",
+        "D": "Rylands v Fletcher was replaced in Irish law by Hanrahan v Merck Sharp and Dohme [1988]"
+      },
+      "correct_answer": "B",
+      "explanation": "The status of Rylands v Fletcher in Irish law is contested and uncertain. The Irish courts have not conclusively abolished the rule — in Superquinn v Bray Urban District Council, the Irish courts treated it as potentially applicable. However, given the extensive development of negligence law in Ireland, plaintiffs with strong negligence claims often prefer to rely on negligence rather than Rylands. For FE-1 purposes, candidates should treat Rylands as a live doctrine, demonstrate knowledge of its elements, flag its uncertain status in Irish law, and note that negligence may be preferable in appropriate cases."
+    },
+    {
+      "id": "TL_M11_L03_Q08",
+      "question": "Which of the following is a recognised defence to a Rylands v Fletcher claim?",
+      "options": {
+        "A": "Contributory negligence of the plaintiff",
+        "B": "Act of God — an extraordinary natural event beyond reasonable human foresight that caused the escape",
+        "C": "The defendant's good faith in accumulating the dangerous thing",
+        "D": "Compliance with all relevant planning and environmental regulations"
+      },
+      "correct_answer": "B",
+      "explanation": "Act of God is a recognised defence to a Rylands v Fletcher claim. If an extraordinary natural event — beyond what could reasonably have been foreseen or guarded against — caused the thing to escape, the defendant is not liable. Other defences include: act of a stranger — where the escape was caused by the deliberate act of a third party over whom the defendant had no control; consent of the plaintiff; and statutory authority. Planning compliance does not provide a defence to the Rylands rule."
+    },
+    {
+      "id": "TL_M11_L03_Q09",
+      "question": "Which of the following defences to Rylands v Fletcher would apply where the escape was caused by a deliberate act of sabotage by a third party over whom the defendant had no control?",
+      "options": {
+        "A": "Act of God",
+        "B": "Statutory authority",
+        "C": "Act of a stranger",
+        "D": "Consent of the plaintiff"
+      },
+      "correct_answer": "C",
+      "explanation": "The act of a stranger defence applies where the escape from the defendant's land was caused by the deliberate act of a third party over whom the defendant had no control and whose act the defendant could not reasonably have anticipated or prevented. Where an unknown third party deliberately interferes with the defendant's installation — for example, sabotaging a reservoir or pipeline — and this causes the escape and resultant damage, the defendant may escape liability under the act of a stranger defence."
+    },
+    {
+      "id": "TL_M11_L03_Q10",
+      "question": "What are the classic examples of public nuisance cited in Irish and English case law?",
+      "options": {
+        "A": "Playing loud music at night; allowing tree branches to overhang a neighbour's garden; emitting factory smells",
+        "B": "Obstruction of a public highway, maintaining a dangerous structure adjacent to a public road, and emissions that affect a wide area of the public",
+        "C": "Erecting an ugly building; blocking a neighbour's view; creating a shadow over adjacent land",
+        "D": "Discharging waste into a river; allowing livestock to stray onto a road; removing support from a neighbouring building"
+      },
+      "correct_answer": "B",
+      "explanation": "Classic examples of public nuisance include: obstruction of a public highway, which prevents members of the public from exercising their common right of passage; maintaining a dangerous structure adjacent to a public road; and industrial emissions that affect a wide area of the public. In Ireland, water pollution and industrial emissions affecting communities have given rise to public nuisance claims. These are distinct from private nuisance because they affect a class of persons rather than a specific neighbouring landowner."
+    }
+  ]
+}

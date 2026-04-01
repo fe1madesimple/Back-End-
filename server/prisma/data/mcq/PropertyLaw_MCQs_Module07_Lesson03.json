@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_07_Lesson_03_Equity_of_Redemption_and_Clogs.txt",
+  "module_number": 7,
+  "module_title": "Mortgages",
+  "lesson_number": 3,
+  "lesson_title": "The Equity of Redemption and Clogs on Redemption",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M07_L03_Q01",
+      "question": "What is the foundational principle of the equity of redemption, as established in Thornborough v Baker [1675]?",
+      "options": {
+        "A": "Once a mortgage, always a mortgage — equity will treat any disposition of property as security for a debt as a mortgage and preserve the mortgagor's right to redeem",
+        "B": "A mortgagor who misses the common law redemption date loses all rights to redeem permanently",
+        "C": "Once equity takes jurisdiction over a mortgage, the mortgagee becomes an absolute owner of the legal estate",
+        "D": "The equity of redemption expires automatically five years after creation of the mortgage"
+      },
+      "correct_answer": "A",
+      "explanation": "The foundational principle established in Thornborough v Baker [1675] is: once a mortgage, always a mortgage. No matter how a transaction is dressed up, if it is in substance a mortgage — a disposition of property as security for a debt — equity will treat it as such and will preserve the mortgagor's right to redeem. This principle remains the bedrock of equity's intervention in mortgage law."
+    },
+    {
+      "id": "PRL_M07_L03_Q02",
+      "question": "What is a 'clog on the equity of redemption'?",
+      "options": {
+        "A": "A requirement that the mortgagor obtain planning permission before redeeming the mortgage",
+        "B": "Any provision in the mortgage deed that imposes conditions or terms that make redemption illusory, oppressive, or effectively impossible",
+        "C": "A requirement that the mortgagor sell the property before redeeming the mortgage",
+        "D": "A court injunction preventing the mortgagor from dealing with the mortgaged property"
+      },
+      "correct_answer": "B",
+      "explanation": "A clog on the equity of redemption is any provision in the mortgage deed that imposes conditions or terms that make redemption illusory, oppressive, or effectively impossible. Equity strikes down clogs because to allow them would be to allow lenders to deprive mortgagors of their equitable right to redeem. The doctrine developed from equity's intervention to protect mortgagors from unconscionable terms."
+    },
+    {
+      "id": "PRL_M07_L03_Q03",
+      "question": "In Noakes v Rice [1902], what provision was held to be a clog on the equity of redemption?",
+      "options": {
+        "A": "A term requiring the mortgagor to pay a higher rate of interest if they defaulted",
+        "B": "A term requiring the mortgagor, even after repayment of the loan, to purchase beer exclusively from the mortgagee brewery",
+        "C": "A term postponing the right to redeem for ten years",
+        "D": "A term requiring the mortgagor to obtain the mortgagee's consent before letting the property"
+      },
+      "correct_answer": "B",
+      "explanation": "In Noakes v Rice [1902], a brewery lent money to a publican on the security of his pub. The mortgage required the mortgagor, even after repayment of the loan, to purchase beer exclusively from the brewery. The House of Lords held this was a clog on the equity of redemption because it continued to fetter the mortgagor after full repayment. The rule is that on redemption the mortgagor should be free of all obligations to the mortgagee."
+    },
+    {
+      "id": "PRL_M07_L03_Q04",
+      "question": "In Kreglinger v New Patagonia Meat and Cold Storage Co [1914], why did the House of Lords hold that the option reserved by the mortgagee was NOT a clog on the equity of redemption?",
+      "options": {
+        "A": "Because the option had been separately agreed after the mortgage was created",
+        "B": "Because the option formed part of an independent commercial agreement, was not oppressive, and did not prevent redemption",
+        "C": "Because the mortgagor had received independent legal advice before agreeing to the option",
+        "D": "Because the option expired automatically on redemption of the mortgage"
+      },
+      "correct_answer": "B",
+      "explanation": "In Kreglinger [1914], the House of Lords distinguished the option to purchase sheepskins from a clog because it was a separate collateral advantage that stood apart from the mortgage, was not oppressive, and did not prevent redemption. The key distinction between a clog (struck down) and a collateral advantage (potentially valid) is whether the provision makes redemption illusory or is a genuine independent commercial agreement between parties."
+    },
+    {
+      "id": "PRL_M07_L03_Q05",
+      "question": "In Knightsbridge Estates Trust v Byrne [1939], the court upheld a term postponing redemption for forty years. What principle did the court apply?",
+      "options": {
+        "A": "A term postponing redemption is always valid regardless of the period and the parties",
+        "B": "A forty-year postponement is always void as an unreasonable restraint on redemption",
+        "C": "What constitutes an unreasonable postponement depends on the circumstances — the same term may be valid between large commercial parties but void if used to trap a vulnerable individual",
+        "D": "Postponement clauses are void in all residential mortgages but valid in commercial mortgages regardless of the period"
+      },
+      "correct_answer": "C",
+      "explanation": "In Knightsbridge Estates Trust v Byrne [1939], the Court of Appeal upheld a forty-year postponement in a commercial mortgage between large commercial parties negotiating at arm's length. The court emphasised that what constitutes an unreasonable postponement depends on the circumstances — the same term may be valid between large commercial parties negotiating freely but void if used to trap a vulnerable individual borrower into an unfair long-term arrangement."
+    },
+    {
+      "id": "PRL_M07_L03_Q06",
+      "question": "Does the Land and Conveyancing Law Reform Act 2009 abolish the equity of redemption?",
+      "options": {
+        "A": "Yes, section 89 abolished the equity of redemption and replaced it with a statutory right to redeem",
+        "B": "No, the LCLRA 2009 changes the formal method of mortgage creation but preserves the equity of redemption; section 105 expressly preserves the court's equitable jurisdiction",
+        "C": "Yes, the equity of redemption only applies to mortgages created before 1 December 2009",
+        "D": "No, but the LCLRA 2009 restricts the equity of redemption to residential mortgages only"
+      },
+      "correct_answer": "B",
+      "explanation": "The LCLRA 2009 does not abolish the equity of redemption. It simply changes the formal method of mortgage creation. A charge by deed under section 89 still creates an equitable right of redemption in the mortgagor. Section 105 of the LCLRA 2009 expressly preserves the court's equitable jurisdiction to relieve against forfeiture, confirming that the doctrine continues to operate fully."
+    },
+    {
+      "id": "PRL_M07_L03_Q07",
+      "question": "What is the key distinction between a 'clog' on the equity of redemption and a 'collateral advantage'?",
+      "options": {
+        "A": "A clog is always agreed before the mortgage; a collateral advantage is always agreed after",
+        "B": "A clog makes redemption illusory or oppressive; a collateral advantage is a genuine independent commercial agreement that does not prevent redemption and may survive",
+        "C": "A clog applies only to residential mortgages; a collateral advantage applies only to commercial mortgages",
+        "D": "A clog is void automatically; a collateral advantage is void unless registered"
+      },
+      "correct_answer": "B",
+      "explanation": "The distinction between a clog (struck down by equity) and a collateral advantage (potentially valid) is one of substance. A clog is a provision that makes redemption illusory, oppressive, or effectively impossible. A collateral advantage is a genuine independent commercial agreement that does not prevent redemption. Kreglinger [1914] illustrates the distinction: the exclusive option was a separate commercial arrangement that did not impede redemption."
+    },
+    {
+      "id": "PRL_M07_L03_Q08",
+      "question": "In Multiservice Bookbinding v Marden [1979], the English court upheld a mortgage linked to the Swiss franc despite a massive increase in the debt. On what basis was the mortgage not set aside?",
+      "options": {
+        "A": "Because the term was expressly approved by the Law Society",
+        "B": "Because although the term was harsh, the parties had bargained freely and the term was not unconscionable",
+        "C": "Because a foreign currency mortgage can never be unconscionable as a matter of law",
+        "D": "Because the mortgagor had obtained the benefit of a reduced interest rate in exchange for the currency indexation"
+      },
+      "correct_answer": "B",
+      "explanation": "In Multiservice Bookbinding v Marden [1979], the English court upheld the Swiss franc linkage on the basis that, although it was a harsh term that produced a massive increase in the debt, the parties had bargained freely and the term was not unconscionable. The doctrine of unconscionable bargain requires that the party have been in a position of vulnerability and that advantage have been taken of them."
+    },
+    {
+      "id": "PRL_M07_L03_Q09",
+      "question": "In Grealish v Murphy [1946], what principle did the Irish courts establish in relation to unconscionable bargains?",
+      "options": {
+        "A": "An unconscionable bargain struck with a vulnerable party can be set aside in equity",
+        "B": "Only fraudulent misrepresentation can justify setting aside a mortgage term in equity",
+        "C": "Unconscionability is irrelevant in commercial mortgage cases",
+        "D": "A party can only rely on unconscionability if they sought independent legal advice before signing"
+      },
+      "correct_answer": "A",
+      "explanation": "In Grealish v Murphy [1946], the Irish courts established that an unconscionable bargain struck with a vulnerable party can be set aside in equity. This principle operates in the mortgage context alongside the doctrine against clogs — where a lender has taken advantage of a vulnerable borrower to secure oppressive terms, the court may intervene even if the terms do not technically constitute a clog on redemption."
+    },
+    {
+      "id": "PRL_M07_L03_Q10",
+      "question": "The rule that the right to redeem must not be deferred for an unreasonable period was described in which leading case as depending on the circumstances of the parties?",
+      "options": {
+        "A": "Noakes v Rice [1902]",
+        "B": "Kreglinger v New Patagonia [1914]",
+        "C": "Knightsbridge Estates Trust v Byrne [1939]",
+        "D": "Thornborough v Baker [1675]"
+      },
+      "correct_answer": "C",
+      "explanation": "Knightsbridge Estates Trust v Byrne [1939] is the key authority for the principle that the reasonableness of a postponement of the right to redeem depends on the circumstances. The Court of Appeal upheld a forty-year postponement in that commercial case while acknowledging that the same term could be unreasonable in the context of a vulnerable individual borrower."
+    }
+  ]
+}

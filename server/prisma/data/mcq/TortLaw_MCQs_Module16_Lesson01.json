@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "Module_16_Lesson_01_Concurrent_Wrongdoers___Civil_Liability_Act_1961.txt",
+  "module_number": 16,
+  "module_title": "Concurrent Wrongdoers and Vicarious Liability",
+  "lesson_number": 1,
+  "lesson_title": "Concurrent Wrongdoers: The Civil Liability Act 1961",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M16_L01_Q01",
+      "question": "How does section 11 of the Civil Liability Act 1961 define concurrent wrongdoers?",
+      "options": {
+        "A": "Two or more persons who commit the same act at the same time.",
+        "B": "Two or more persons who are responsible to the plaintiff for the same damage, whether or not as a result of the same act.",
+        "C": "Two or more persons who are named as co-defendants in the same proceedings.",
+        "D": "Two or more persons who are employed by the same employer."
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 11 of the Civil Liability Act 1961, concurrent wrongdoers are two or more persons who are responsible to the plaintiff for the same damage, whether or not as a result of the same act. It is the same damage — not the same act — that is the defining element."
+    },
+    {
+      "id": "TL_M16_L01_Q02",
+      "question": "Under section 12 of the Civil Liability Act 1961, how are concurrent wrongdoers liable to the plaintiff?",
+      "options": {
+        "A": "Each is liable only for their proportionate share of the damage.",
+        "B": "Each is liable jointly only — the plaintiff must sue all defendants together.",
+        "C": "They are jointly and severally liable — the plaintiff may sue any one for the full amount.",
+        "D": "Liability is limited to the defendant with the greatest degree of fault."
+      },
+      "correct_answer": "C",
+      "explanation": "Under section 12 of the Civil Liability Act 1961, concurrent wrongdoers are jointly and severally liable to the plaintiff. This means the plaintiff may elect to recover the full sum of their damages from whichever defendant is most easily recoverable against, without being required to apportion the loss between defendants."
+    },
+    {
+      "id": "TL_M16_L01_Q03",
+      "question": "Why is the joint and several liability rule under section 12 described as extremely favourable to plaintiffs?",
+      "options": {
+        "A": "It allows the plaintiff to claim damages twice from the same defendant.",
+        "B": "It means the plaintiff can recover the full amount of their damages from any one concurrent wrongdoer, regardless of that defendant's proportionate fault.",
+        "C": "It prevents defendants from cross-claiming against each other.",
+        "D": "It removes the need for the plaintiff to prove causation."
+      },
+      "correct_answer": "B",
+      "explanation": "The joint and several liability rule is extremely favourable to plaintiffs because they may recover the full sum of their damages from any one concurrent wrongdoer, even if that defendant was only partly responsible. The plaintiff is not required to pursue all defendants or to apportion the claim."
+    },
+    {
+      "id": "TL_M16_L01_Q04",
+      "question": "Under section 21 of the Civil Liability Act 1961, when does a right of contribution arise between concurrent wrongdoers?",
+      "options": {
+        "A": "Where two defendants are represented by the same solicitor.",
+        "B": "Once a defendant has paid more than their proportionate share of the plaintiff's damages.",
+        "C": "Where the plaintiff elects to discontinue against one defendant.",
+        "D": "Automatically upon commencement of proceedings."
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 21, once a defendant has paid more than their proportionate share of the plaintiff's damages, they have a right to seek contribution from the other concurrent wrongdoers. The court apportions contribution according to the degree of fault of each wrongdoer — this is the internal settlement mechanism between defendants."
+    },
+    {
+      "id": "TL_M16_L01_Q05",
+      "question": "On what basis does the court apportion contribution between concurrent wrongdoers under section 21 of the Civil Liability Act 1961?",
+      "options": {
+        "A": "Equally between all concurrent wrongdoers as a default.",
+        "B": "According to the financial resources of each wrongdoer.",
+        "C": "According to the degree of fault of each wrongdoer.",
+        "D": "According to the order in which each defendant was joined to the proceedings."
+      },
+      "correct_answer": "C",
+      "explanation": "Under section 21 of the Civil Liability Act 1961, the court apportions contribution between concurrent wrongdoers according to the degree of fault of each wrongdoer. This mirrors the apportionment approach used for contributory negligence under sections 34 and 35."
+    },
+    {
+      "id": "TL_M16_L01_Q06",
+      "question": "What modification to joint and several liability was introduced by section 35 of the Civil Liability and Courts Act 2004 in certain professional negligence cases?",
+      "options": {
+        "A": "Professional defendants are fully exempt from the concurrent wrongdoer rules.",
+        "B": "Where the plaintiff is contributorily negligent, each defendant in a professional negligence case may only be liable for their proportionate share rather than the full amount.",
+        "C": "The 2004 Act abolished joint and several liability entirely.",
+        "D": "Professional defendants are subject to a cap on damages equal to their professional indemnity cover."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 35 of the Civil Liability and Courts Act 2004, as amended, introduced several liability for concurrent wrongdoers in certain professional negligence contexts. Where the plaintiff is contributorily negligent, courts may limit each professional defendant's liability to their proportionate share rather than the full amount. This reform was designed to reduce exposure on professional indemnity insurers."
+    },
+    {
+      "id": "TL_M16_L01_Q07",
+      "question": "Under section 17 of the Civil Liability Act 1961, what is the effect of a plaintiff giving a full release to one concurrent wrongdoer?",
+      "options": {
+        "A": "It discharges that defendant only; all other concurrent wrongdoers remain fully liable.",
+        "B": "It discharges all concurrent wrongdoers unless the plaintiff expressly reserves their rights against others.",
+        "C": "It has no effect on concurrent wrongdoers who were not parties to the settlement.",
+        "D": "It reduces the damages recoverable from remaining defendants by the settled amount only."
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 17 of the Civil Liability Act 1961, a release given to one concurrent wrongdoer discharges all concurrent wrongdoers unless the plaintiff expressly reserves their rights against others. This is the release trap — a plaintiff who executes a full release in settlement with one defendant may inadvertently release all others."
+    },
+    {
+      "id": "TL_M16_L01_Q08",
+      "question": "How can a plaintiff avoid inadvertently releasing all concurrent wrongdoers when settling with one defendant under the Civil Liability Act 1961?",
+      "options": {
+        "A": "By giving written notice to all other defendants before settlement.",
+        "B": "By using a Tomlin Order or by ensuring the settlement agreement expressly reserves rights against other wrongdoers.",
+        "C": "By obtaining court approval for the settlement.",
+        "D": "By discontinuing against the settling defendant before executing the release."
+      },
+      "correct_answer": "B",
+      "explanation": "To avoid the section 17 release trap, a plaintiff should use a Tomlin Order or ensure that the settlement agreement expressly reserves their rights against other concurrent wrongdoers. Careful drafting of settlement agreements is critical in multi-defendant litigation."
+    },
+    {
+      "id": "TL_M16_L01_Q09",
+      "question": "Two defendants, acting independently and by different acts, each contribute to the same loss suffered by the plaintiff. Can they be concurrent wrongdoers under the Civil Liability Act 1961?",
+      "options": {
+        "A": "No — concurrent wrongdoers must have committed the same act.",
+        "B": "No — each is liable only for the damage they individually caused.",
+        "C": "Yes — it is sufficient that both are responsible for the same damage to the plaintiff, even if their acts differ.",
+        "D": "Yes — but only if they were acting in concert or by prior agreement."
+      },
+      "correct_answer": "C",
+      "explanation": "Under section 11 of the Civil Liability Act 1961, concurrent wrongdoers need not have committed the same act. What matters is that each is responsible to the plaintiff for the same damage. The liability may arise from different acts that together cause the same loss."
+    },
+    {
+      "id": "TL_M16_L01_Q10",
+      "question": "For FE-1 exam purposes, which four provisions of the Civil Liability Act 1961 are most important to know in relation to concurrent wrongdoers?",
+      "options": {
+        "A": "Sections 8, 9, 10, and 11.",
+        "B": "Sections 11, 12, 21, and 17.",
+        "C": "Sections 34, 35, 47, and 49.",
+        "D": "Sections 1, 2, 3, and 4."
+      },
+      "correct_answer": "B",
+      "explanation": "The four key provisions for concurrent wrongdoers are: section 11 (definition), section 12 (joint and several liability), section 21 (right of contribution between defendants), and section 17 (the release trap). These are regularly tested in FE-1 problem questions involving multiple defendants."
+    }
+  ]
+}

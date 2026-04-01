@@ -1,0 +1,134 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": [
+    "ContractLaw_ElevenLabs_Module01_Lesson02.txt",
+    "ContractLaw_ElevenLabs_Module01_Lesson03.txt"
+  ],
+  "module_number": 1,
+  "module_title": "Formation of a Contract",
+  "lesson_number": 3,
+  "lesson_title": "Consideration",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following best states the classic definition of consideration in contract law?",
+      "options": {
+        "A": "A benefit conferred on the promisor or a detriment suffered by the promisee at the promisor's request",
+        "B": "Any act or forbearance, past or future, that the parties agree is of value",
+        "C": "A written acknowledgment that a party intends to be bound by a promise",
+        "D": "Money or money's worth passing from the promisee to the promisor"
+      },
+      "correct_answer": "A",
+      "explanation": "The classic definition of consideration from Currie v Misa [1875] states: 'A valuable consideration, in the sense of the law, may consist either in some right, interest, profit, or benefit accruing to the one party, or some forbearance, detriment, loss, or responsibility, given, suffered, or undertaken by the other.' It must move from the promisee at the promisor's request."
+    },
+    {
+      "id": 2,
+      "question": "The rule that 'consideration must not be past' means:",
+      "options": {
+        "A": "Consideration must be of equal or greater value than the promise it supports",
+        "B": "An act or forbearance that occurred before the promise was made cannot constitute consideration for that promise",
+        "C": "Consideration must be provided at the same time the contract is signed",
+        "D": "Consideration cannot consist of a past debt"
+      },
+      "correct_answer": "B",
+      "explanation": "Past consideration is no consideration. If the act or forbearance relied upon as consideration was performed before the promise was made, it cannot support that promise because it was not given in exchange for it. The classic example is Roscorla v Thomas [1842]: a warranty about a horse made after the sale was unsupported by consideration because the purchase money was already paid."
+    },
+    {
+      "id": 3,
+      "question": "The exception to the past consideration rule — where a past act may ground a subsequent promise — requires which of the following conditions (per Lampleigh v Braithwait [1615] and Pao On v Lau Yiu Long [1980] PC)?",
+      "options": {
+        "A": "The past act must have been performed at the promisor's request, with an understanding that payment would follow, and the subsequent promise must be legally enforceable",
+        "B": "The past act must have been performed gratuitously with no expectation of reward",
+        "C": "The past act must have been performed in writing and witnessed by a third party",
+        "D": "The subsequent promise must be made before any benefit has been received by the promisor"
+      },
+      "correct_answer": "A",
+      "explanation": "Under the exception in Lampleigh v Braithwait [1615], confirmed by the Privy Council in Pao On v Lau Yiu Long [1980], past consideration can support a subsequent promise where: (1) the act was done at the promisor's request; (2) it was understood at the time that payment or a reward would follow; and (3) the subsequent promise was legally enforceable. All three conditions must be satisfied."
+    },
+    {
+      "id": 4,
+      "question": "Which of the following correctly states the rule that 'consideration must move from the promisee'?",
+      "options": {
+        "A": "The promisee must provide consideration, but that consideration need not move to the promisor",
+        "B": "Consideration may be provided by a third party on behalf of the promisee",
+        "C": "The promisee who seeks to enforce a promise must themselves have provided consideration for it",
+        "D": "Consideration need only move from one of the contracting parties"
+      },
+      "correct_answer": "C",
+      "explanation": "Consideration must move from the promisee: the party seeking to enforce a promise must themselves have provided consideration for it (Tweddle v Atkinson [1861]). This is closely related to the privity doctrine. A third party who did not provide consideration cannot enforce the promise, even if they would benefit from its performance."
+    },
+    {
+      "id": 5,
+      "question": "The rule that 'consideration need not be adequate but must be sufficient' means:",
+      "options": {
+        "A": "Courts will enquire into whether consideration is commercially fair or proportionate",
+        "B": "Consideration need not be of equal value to the promise, but it must have some legal value recognisable by the law",
+        "C": "Consideration must be at least equivalent to the minimum wage for any service rendered",
+        "D": "Nominal or token consideration is always insufficient to support a commercial contract"
+      },
+      "correct_answer": "B",
+      "explanation": "Courts do not require consideration to be adequate (commercially proportionate or fair) — that is a matter for the parties. However, consideration must be sufficient, meaning it must have some legal value recognised by the law. A peppercorn can be good consideration if genuinely bargained for (Thomas v Thomas [1842]). Courts do not investigate adequacy, but they will refuse to recognise something of no legal value as consideration."
+    },
+    {
+      "id": 6,
+      "question": "In Foakes v Beer [1884], the House of Lords held that:",
+      "options": {
+        "A": "Part payment of a debt, even with additional terms, always discharges the full debt",
+        "B": "An agreement to accept part payment of a debt in full satisfaction is unenforceable for lack of consideration",
+        "C": "Promissory estoppel operated to enforce Beer's promise not to claim the balance",
+        "D": "Payment by a third party on behalf of the debtor fully discharges the debt"
+      },
+      "correct_answer": "B",
+      "explanation": "In Foakes v Beer [1884], the House of Lords applied the rule in Pinnel's Case [1602] and held that Beer's promise to accept instalments in full satisfaction of the judgment debt was unenforceable because Foakes provided no additional consideration for that concession. Part payment of a debt is not consideration for a promise to forgo the balance — the debtor does no more than they are already obliged to do."
+    },
+    {
+      "id": 7,
+      "question": "In Williams v Roffey Bros & Nicholls (Contractors) Ltd [1991], the Court of Appeal held that a promise to pay extra money to a subcontractor who was already bound by an existing contract was enforceable because:",
+      "options": {
+        "A": "The courts relaxed the rule that performance of an existing duty cannot be consideration",
+        "B": "The promise was supported by fresh consideration in the form of a practical benefit obtained by Roffey Bros from Williams' continued performance",
+        "C": "The original contract had been frustrated by unforeseen circumstances",
+        "D": "Promissory estoppel provided an alternative basis for enforcement"
+      },
+      "correct_answer": "B",
+      "explanation": "In Williams v Roffey Bros [1991], the Court of Appeal held that the promise to pay extra to Williams was enforceable because Roffey Bros derived a practical benefit — they avoided the penalty clause in their main contract and the need to find another subcontractor. A practical benefit to the promisor (even without a legal benefit) can constitute fresh consideration. This case qualifies (but does not overrule) Stilk v Myrick [1809]."
+    },
+    {
+      "id": 8,
+      "question": "What is the rule in Stilk v Myrick [1809]?",
+      "options": {
+        "A": "Performance of a pre-existing contractual duty owed to the promisor cannot constitute consideration for a new promise",
+        "B": "A promise to pay a sailor additional wages is always enforceable at sea",
+        "C": "Existing contractual duties can always constitute consideration for a subsequent promise",
+        "D": "Performance of a pre-existing duty is sufficient consideration provided the promisee acts in good faith"
+      },
+      "correct_answer": "A",
+      "explanation": "In Stilk v Myrick [1809], sailors who agreed to sail a ship home short-handed were promised extra pay. The court held that no contract for the extra pay existed because the sailors did no more than they were already contractually obliged to do — there was no fresh consideration. Performing an existing contractual duty owed to the promisor cannot constitute consideration for an additional promise."
+    },
+    {
+      "id": 9,
+      "question": "Which of the following constitutes valid consideration even though it involves performing an existing duty?",
+      "options": {
+        "A": "A public duty, such as a police officer attending an incident they are already obliged to attend",
+        "B": "Performance of a duty owed to a third party (not the promisor)",
+        "C": "Performance of a duty already owed to the same promisor under an existing contract",
+        "D": "A duty imposed by statute on the party claiming consideration"
+      },
+      "correct_answer": "B",
+      "explanation": "Performance of a contractual duty owed to a third party (not the promisor) can constitute valid consideration for the promisor's promise. In The Eurymedon [1975] (PC) and Shadwell v Shadwell [1860], performance of a duty owed to a third party was held to be good consideration. The crucial distinction is that the promisor receives a benefit they were not previously entitled to demand."
+    },
+    {
+      "id": 10,
+      "question": "In the context of part payment of debt, which of the following would constitute sufficient consideration to discharge a greater debt?",
+      "options": {
+        "A": "A smaller amount paid on time by an established customer",
+        "B": "Part payment made at an earlier date, a different place, or accompanied by some additional act at the creditor's request",
+        "C": "Part payment with a personal cheque instead of cash",
+        "D": "Part payment made in the presence of a witness"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the rule in Pinnel's Case [1602], part payment of a debt at a different time (earlier), place, or accompanied by some additional consideration (e.g., a chattel) at the creditor's request can be sufficient to discharge the full debt. The 'new element' — earlier payment, different place, or an added item — provides the consideration needed to support the creditor's promise to forgo the balance."
+    }
+  ]
+}

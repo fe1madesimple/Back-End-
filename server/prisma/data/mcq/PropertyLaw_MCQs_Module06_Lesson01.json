@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "PropertyLaw_ElevenLabs_Module06_Lesson01.txt",
+  "module_number": 6,
+  "module_title": "Family Property",
+  "lesson_number": 1,
+  "lesson_title": "Family Property: The Family Home Protection Act 1976, Spousal Consent, and Property Orders",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M06_L01_Q01",
+      "question": "What is the legal effect under section 3 of the Family Home Protection Act 1976 of a conveyance of the family home without the prior written consent of the non-owning spouse?",
+      "options": {
+        "A": "The conveyance is valid but voidable at the election of the non-owning spouse",
+        "B": "The conveyance is void and has no legal effect whatsoever",
+        "C": "The conveyance binds third parties but not the spouses",
+        "D": "The conveyance is enforceable until set aside by the court"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 3 FHPA 1976 provides that such a conveyance is void — not merely voidable. The transaction has no legal effect whatsoever, as if it never happened. The void/voidable distinction is one of the most tested points in this area."
+    },
+    {
+      "id": "PRL_M06_L01_Q02",
+      "question": "What is the key word in section 2 of the Family Home Protection Act 1976 when defining whether a dwelling qualifies as a family home?",
+      "options": {
+        "A": "Ordinarily",
+        "B": "Primarily",
+        "C": "Exclusively",
+        "D": "Habitually"
+      },
+      "correct_answer": "A",
+      "explanation": "Section 2 defines a family home as a dwelling in which a married couple ordinarily resides. The word ordinarily means primary, habitual residence. A holiday cottage or investment property will not qualify."
+    },
+    {
+      "id": "PRL_M06_L01_Q03",
+      "question": "In Bank of Ireland v Smyth [1995], the Supreme Court held that Mrs Smyth's consent to a mortgage over the family home was invalid. What was the primary reason?",
+      "options": {
+        "A": "She had not signed the consent form personally",
+        "B": "The consent was not given before the mortgage was executed",
+        "C": "She had not been independently advised of the nature and consequences of what she was signing",
+        "D": "The bank had failed to register the mortgage against the title"
+      },
+      "correct_answer": "C",
+      "explanation": "The Supreme Court held that consent must be free and informed. Mrs Smyth had not received independent advice about the nature and consequences of the transaction. The bank was fixed with knowledge of the circumstances and the mortgage was held void."
+    },
+    {
+      "id": "PRL_M06_L01_Q04",
+      "question": "Under the Family Home Protection Act 1976, when must the non-owning spouse's consent to a conveyance of the family home be given?",
+      "options": {
+        "A": "Within one month of the conveyance",
+        "B": "At any time before or after the conveyance provided it is in writing",
+        "C": "Contemporaneously with the conveyance",
+        "D": "Prior to the conveyance"
+      },
+      "correct_answer": "D",
+      "explanation": "Section 3 requires prior written consent. The consent must be given before the conveyance takes place. Retrospective consent will not validate an otherwise void conveyance."
+    },
+    {
+      "id": "PRL_M06_L01_Q05",
+      "question": "What principle was established in Somers v Weir [1979] regarding consent under the Family Home Protection Act 1976?",
+      "options": {
+        "A": "Consent must be genuine, specific, and relate to the actual transaction being entered into",
+        "B": "Consent can be given by any family member with authority to act on behalf of the non-owning spouse",
+        "C": "A general consent given in advance is sufficient provided it covers the type of transaction concerned",
+        "D": "Consent is presumed valid once given in writing, regardless of the circumstances"
+      },
+      "correct_answer": "A",
+      "explanation": "Somers v Weir [1979] confirmed that consent must be genuine, specific, and relate to the actual transaction. A blanket general consent given in advance of any particular transaction will not suffice under section 3."
+    },
+    {
+      "id": "PRL_M06_L01_Q06",
+      "question": "Section 4 of the Family Home Protection Act 1976 permits a court to dispense with spousal consent. Which of the following is NOT a statutory ground for dispensation?",
+      "options": {
+        "A": "Consent is being unreasonably withheld",
+        "B": "The non-owning spouse refuses to negotiate with the titleholder",
+        "C": "The non-owning spouse cannot be found after reasonable enquiries",
+        "D": "The non-owning spouse is incapable of giving consent"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 4 provides three grounds: unreasonable withholding; inability to locate the spouse after reasonable enquiries; and incapacity. A mere refusal to negotiate is not a separate statutory ground — the question is whether the withholding is unreasonable."
+    },
+    {
+      "id": "PRL_M06_L01_Q07",
+      "question": "In Containercare v Wycherley [1982], why did the court hold that the registration of a judgment mortgage against the family home did not require the consent of the non-owning spouse?",
+      "options": {
+        "A": "Judgment mortgages are not registrable against family homes under Irish law",
+        "B": "The non-owning spouse had impliedly consented by failing to object",
+        "C": "A judgment mortgage does not constitute a conveyance within the meaning of the Family Home Protection Act 1976",
+        "D": "The 1976 Act applies only to voluntary transactions between the spouses"
+      },
+      "correct_answer": "C",
+      "explanation": "The court in Containercare v Wycherley held that registering a judgment mortgage is not a conveyance within the meaning of the FHPA 1976. This created the so-called FHPA lacuna — a judgment creditor could obtain security over the family home without spousal consent."
+    },
+    {
+      "id": "PRL_M06_L01_Q08",
+      "question": "The Civil Partnership and Certain Rights and Obligations of Cohabitants Act 2010 extended protections equivalent to the Family Home Protection Act 1976 to which category of persons?",
+      "options": {
+        "A": "Cohabiting couples of any gender equally",
+        "B": "Civil partners only, not cohabitants",
+        "C": "All persons in long-term residential relationships",
+        "D": "Civil partners, with equivalent protections for the shared home"
+      },
+      "correct_answer": "D",
+      "explanation": "The 2010 Act extended equivalent protections to civil partners in respect of the shared home, mirroring the core requirements of the 1976 Act. Cohabitants received separate, different rights under the same Act."
+    },
+    {
+      "id": "PRL_M06_L01_Q09",
+      "question": "Which legislation introduced property adjustment orders allowing a court to transfer property — including the family home — between spouses as part of judicial separation proceedings?",
+      "options": {
+        "A": "The Family Law Act 1995",
+        "B": "The Family Home Protection Act 1976",
+        "C": "The Civil Partnership and Certain Rights and Obligations of Cohabitants Act 2010",
+        "D": "The Succession Act 1965"
+      },
+      "correct_answer": "A",
+      "explanation": "The Family Law Act 1995 introduced property adjustment orders for judicial separation. These orders allow courts to transfer property including the family home between spouses and operate independently of the 1976 Act."
+    },
+    {
+      "id": "PRL_M06_L01_Q10",
+      "question": "Under which legislation can a court make property adjustment orders in the context of divorce proceedings?",
+      "options": {
+        "A": "Family Home Protection Act 1976",
+        "B": "Family Law (Divorce) Act 1996",
+        "C": "Civil Partnership and Certain Rights and Obligations of Cohabitants Act 2010",
+        "D": "Succession Act 1965"
+      },
+      "correct_answer": "B",
+      "explanation": "Property adjustment orders in divorce proceedings are made under the Family Law (Divorce) Act 1996. These orders give courts broad discretion to achieve fairness on relationship breakdown and operate independently of the 1976 Act."
+    }
+  ]
+}

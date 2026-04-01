@@ -1,0 +1,131 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": "ContractLaw_ElevenLabs_Module05_Lesson01.txt",
+  "module_number": 6,
+  "module_title": "Discharge of Contract",
+  "lesson_number": 2,
+  "lesson_title": "Discharge by Agreement",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Discharge by agreement occurs where:",
+      "options": {
+        "A": "One party unilaterally decides to abandon the contract without the other's consent",
+        "B": "The parties mutually agree to release each other from their outstanding contractual obligations",
+        "C": "A court orders the discharge of the contract on grounds of unfairness",
+        "D": "A statutory provision automatically discharges the parties following a change in the law"
+      },
+      "correct_answer": "B",
+      "explanation": "Discharge by agreement arises where both parties consent to the termination or modification of their contractual obligations. This can take several forms: bilateral (mutual) release — where both parties still have outstanding obligations and each releases the other (supported by consideration through the exchange of releases); unilateral waiver — where only one party has outstanding obligations and the other agrees to release them; or accord and satisfaction — where a new agreement is substituted for the original. The requirement of consideration is central to analysing these situations."
+    },
+    {
+      "id": 2,
+      "question": "A bilateral discharge agreement — where both parties still have outstanding obligations — is enforceable without any additional formality because:",
+      "options": {
+        "A": "The courts give effect to any agreement made in writing between commercial parties",
+        "B": "Each party's promise to release the other from their outstanding obligations provides consideration for the other's reciprocal release — there is an exchange of value",
+        "C": "Once a contract is formed, any subsequent agreement between the parties to modify it is automatically binding",
+        "D": "Bilateral discharge agreements are governed by statute and require no consideration"
+      },
+      "correct_answer": "B",
+      "explanation": "A bilateral discharge is straightforwardly enforceable because it is itself a contract — each party's promise to release the other from their outstanding obligations provides consideration for the other's promise to do likewise. The exchange of releases is an exchange of valuable rights — each party surrenders their right to performance by the other. This is distinguished from a unilateral release (waiver) where one party alone has outstanding obligations — the release of that party requires either consideration from them or execution as a deed."
+    },
+    {
+      "id": 3,
+      "question": "Accord and satisfaction refers to the process whereby:",
+      "options": {
+        "A": "A court supervises the parties' agreement to modify their contractual obligations",
+        "B": "The parties agree to substitute a new obligation for an existing one (the accord), which is then performed (the satisfaction) — the original obligation is then discharged",
+        "C": "One party accepts the other's partial performance as full satisfaction of the contractual obligation",
+        "D": "A third party guarantor satisfies the contractual obligation on behalf of a defaulting party"
+      },
+      "correct_answer": "B",
+      "explanation": "Accord and satisfaction is a two-stage process: (1) accord — the parties agree to a new arrangement to discharge the existing obligation (e.g., accept £500 in settlement of a claim for £1,000); and (2) satisfaction — the new arrangement is performed. Only when both stages are complete is the original obligation discharged. If the accord is agreed but not yet satisfied (performed), the creditor can still sue on the original obligation — the accord alone does not discharge the debt. This is the significance of the 'satisfaction' element: the accord is essentially a conditional compromise."
+    },
+    {
+      "id": 4,
+      "question": "In British Russian Gazette & Trade Outlook Ltd v Associated Newspapers Ltd [1933] (CA), the court confirmed that where there is a binding accord but satisfaction has not yet been performed:",
+      "options": {
+        "A": "The original obligation is suspended pending satisfaction",
+        "B": "The original obligation is immediately discharged by the accord itself",
+        "C": "The creditor has the right to sue on the original obligation — the accord is a conditional arrangement that only discharges upon satisfaction",
+        "D": "The creditor must elect between suing on the original obligation and enforcing the accord"
+      },
+      "correct_answer": "C",
+      "explanation": "The position is that a bare accord — the agreement to accept something in substitution — does not by itself discharge the original obligation. Until the substituted performance (the satisfaction) is actually rendered, the creditor retains the right to sue on the original obligation. If the debtor refuses to perform the accord, the creditor may sue on the original claim. If, however, the accord is itself a binding contract supported by consideration (e.g., a promise to pay the lower sum), the creditor may be bound not to sue on the original pending performance of the accord."
+    },
+    {
+      "id": 5,
+      "question": "Waiver in contract law refers to the voluntary relinquishment of a known right. A common law waiver (as distinct from promissory estoppel) requires:",
+      "options": {
+        "A": "A written agreement signed by the party waiving the right",
+        "B": "Consideration — a unilateral promise to forego a right is not binding at common law without something given in return",
+        "C": "Only a clear expression of intent to waive the right, whether or not consideration is provided",
+        "D": "Registration with the relevant court to be legally effective"
+      },
+      "correct_answer": "B",
+      "explanation": "At common law, a waiver — a promise to forego the exercise of a contractual right — requires consideration to be binding. A bare promise to forgive a debt or to overlook a breach is not enforceable at common law without consideration in return. This is why the common law doctrine of waiver and the equitable doctrine of promissory estoppel both developed alongside the consideration requirement. Where one party provides no consideration for the other's promise to waive a right, reliance on the doctrine of promissory estoppel may be necessary."
+    },
+    {
+      "id": 6,
+      "question": "An agreement by which parties agree to discharge their contract and replace it with a new agreement is known as:",
+      "options": {
+        "A": "Rescission",
+        "B": "Novation",
+        "C": "Variation",
+        "D": "Ratification"
+      },
+      "correct_answer": "B",
+      "explanation": "Novation is the process by which an existing contract is replaced by a new one — the original contract is discharged and a new contract comes into being. Novation most commonly occurs where a new party is substituted for one of the original parties (e.g., a company is substituted as debtor for an individual). Unlike assignment (which can transfer benefits without the other party's consent), novation requires the agreement of all parties — including any new party — because the original contract is being extinguished and replaced. Novation requires consideration (usually the promise of the new party)."
+    },
+    {
+      "id": 7,
+      "question": "A contractual variation — where the parties agree to modify the terms of an existing contract — is only binding if:",
+      "options": {
+        "A": "It is in writing and signed by both parties",
+        "B": "It is supported by consideration from the party seeking the variation",
+        "C": "It satisfies the requirements of a binding contract — offer, acceptance, consideration (unless by deed), and intention to create legal relations",
+        "D": "It is approved by a court or regulatory authority"
+      },
+      "correct_answer": "C",
+      "explanation": "A contractual variation is itself a contract and must satisfy all the requirements of a valid contract: offer, acceptance, consideration (unless executed as a deed), and intention to create legal relations. The consideration requirement can cause difficulties — particularly where only one party is seeking the variation and offers no new benefit to the other. The doctrine in Williams v Roffey Bros [1991] (practical benefit as consideration) has made it easier to find consideration for variations, but the core principle remains: a bare agreement to modify an existing contract for no return is not binding at common law."
+    },
+    {
+      "id": 8,
+      "question": "A 'no oral modification' (NOM) clause in a commercial contract provides that any variation must be in writing. What is the current English law position on the effect of such clauses?",
+      "options": {
+        "A": "Such clauses are always overridden by subsequent oral agreements between the parties",
+        "B": "Such clauses are valid and enforceable — a purported oral variation of a contract containing a NOM clause is ineffective at law, though estoppel may operate in exceptional circumstances",
+        "C": "Such clauses are only valid in consumer contracts regulated by the Consumer Rights Act 2022",
+        "D": "Such clauses are void as a matter of public policy because they unduly restrict the parties' freedom to modify their arrangement"
+      },
+      "correct_answer": "B",
+      "explanation": "In Rock Advertising Ltd v MWB Business Exchange Centres Ltd [2018] (UK SC), the Supreme Court upheld the validity and enforceability of NOM clauses. Lord Sumption held that such clauses serve legitimate purposes (certainty, protection against informal variations) and should be given effect. A purported oral variation of a contract subject to a NOM clause is ineffective — the parties have agreed on a formality requirement for variations. However, the Court left open the possibility that estoppel might in exceptional circumstances prevent a party from relying on the NOM clause. Note: the Irish position has not been authoritatively determined at the highest level."
+    },
+    {
+      "id": 9,
+      "question": "Where a creditor agrees to accept a lesser sum in full satisfaction of a debt, this is known as:",
+      "options": {
+        "A": "Promissory estoppel",
+        "B": "Accord and satisfaction (if consideration is provided) or a unilateral release (if by deed)",
+        "C": "Novation of the debt obligation",
+        "D": "Rescission of the original loan contract"
+      },
+      "correct_answer": "B",
+      "explanation": "An agreement to accept a lesser sum in satisfaction of a debt can operate as accord and satisfaction if the debtor provides some fresh consideration alongside payment of the lesser sum (e.g., pays early, pays in different form, or provides some additional benefit). Without consideration, the creditor's promise to accept less is not binding under the rule in Foakes v Beer [1884]. A unilateral release executed as a deed (by deed poll) can discharge the debt without consideration. Promissory estoppel may prevent the creditor from suing for the balance in certain circumstances (High Trees [1947]) but does not itself provide a binding discharge."
+    },
+    {
+      "id": 10,
+      "question": "Rescission by agreement (contrasted with rescission for vitiating factors such as misrepresentation) occurs where:",
+      "options": {
+        "A": "A court declares a contract void for a defect in its formation",
+        "B": "The parties mutually agree to abandon the contract and be released from future obligations, either restoring the original position or leaving matters as they are",
+        "C": "One party elects to terminate for breach and the other party consents",
+        "D": "A party invokes a contractual right to terminate at will"
+      },
+      "correct_answer": "B",
+      "explanation": "Rescission by agreement is a form of discharge by agreement — the parties mutually agree to abandon the contract. It is distinct from rescission for a vitiating factor (which sets the contract aside ab initio). Rescission by agreement may be either: (1) total — the parties abandon the contract and are returned to their pre-contractual positions; or (2) partial — the parties discharge some obligations but retain others. The agreement to rescind is itself a contract requiring consideration (normally the mutual release of outstanding obligations). Where the contract has been fully performed by one party, rescission may not be possible without fresh consideration."
+    }
+  ]
+}

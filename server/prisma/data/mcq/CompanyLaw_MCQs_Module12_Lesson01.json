@@ -1,0 +1,131 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module12_Lesson01.txt",
+  "module_number": 12,
+  "module_title": "Corporate Enforcement Authority",
+  "lesson_number": 1,
+  "lesson_title": "The Corporate Enforcement Authority: Powers, Functions and Enforcement",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M12_L01_Q01",
+      "question": "The Corporate Enforcement Authority (CEA) was established on 7 July 2022. Which legislative instrument established the CEA and what fundamental structural change did it introduce compared to its predecessor?",
+      "options": {
+        "A": "The Companies (Amendment) Act 2019 — the CEA replaced the Companies Registration Office, which previously had enforcement functions",
+        "B": "The Companies (Corporate Enforcement Authority) Act 2021 — the CEA replaced the Office of the Director of Corporate Enforcement (ODCE) as a collegiate, multi-member body rather than a single-person office",
+        "C": "The Companies Act 2014 (as amended) — the CEA was created by statutory instrument and replaced the liquidator's office for insolvent companies",
+        "D": "The Companies (Corporate Governance, Enforcement and Regulatory Provisions) Act 2024 — the CEA was a 2024 innovation that replaced the Registrar of Companies"
+      },
+      "correct_answer": "B",
+      "explanation": "The Corporate Enforcement Authority was established by the Companies (Corporate Enforcement Authority) Act 2021, which came into operation on 7 July 2022. Its principal structural innovation was replacing the ODCE (a single-director model) with a collegiate body — a board of multiple members (the 'Authority') with shared decision-making power. This was a deliberate governance improvement following criticism of the single-person model. The CEA has greater independence, resources, and enforcement capacity than its predecessor. The CRO, liquidators, and the 2024 Act are distinct — none replaced the ODCE."
+    },
+    {
+      "id": "CL_M12_L01_Q02",
+      "question": "Under the Companies Act 2014, the CEA has the power under s.842 to apply directly to the High Court for the restriction of a director under s.819 or the disqualification of a person under s.839. In what circumstances does this direct CEA power arise?",
+      "options": {
+        "A": "Only where the company has been wound up compulsorily — s.842 does not apply to voluntary liquidations",
+        "B": "The CEA may apply for restriction or disqualification on its own initiative in any case where it considers it appropriate in the public interest, independent of any liquidation proceeding and without requiring a liquidator's prior application",
+        "C": "Only where a liquidator has first applied for restriction or disqualification under s.819 or s.839 and the court has adjourned the application to allow the CEA to intervene",
+        "D": "The CEA's s.842 power is limited to PLCs listed on the Irish Stock Exchange; private company directors fall under the liquidator's exclusive jurisdiction"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 842 CA 2014 confers a standalone power on the CEA (and its predecessor, the ODCE) to apply directly to the High Court for restriction (s.819) or disqualification (s.839) of a director, without requiring any prior liquidation proceeding and without depending on a liquidator's application. This is a critical independent enforcement tool — it allows the CEA to pursue directors of companies that have been struck off, where no insolvency proceeds, or where a liquidator has failed to bring an application. The power applies to all company types (option D wrong) and all forms of winding up (option A wrong)."
+    },
+    {
+      "id": "CL_M12_L01_Q03",
+      "question": "The CEA's enforcement role covers a broad range of company law offences under the Companies Act 2014. Offences are categorised into four categories. Which category covers the most serious indictable offences (such as fraudulent trading under s.722) and what is the maximum sentence?",
+      "options": {
+        "A": "Category 1 — maximum fine of €500,000 and/or 10 years imprisonment on indictment",
+        "B": "Category 2 — maximum fine of €50,000 and/or 5 years imprisonment on indictment",
+        "C": "Category 3 — maximum fine of €10,000 and/or 3 years imprisonment on indictment",
+        "D": "Category 4 — summary conviction only, maximum fine of €5,000"
+      },
+      "correct_answer": "A",
+      "explanation": "The Companies Act 2014 introduced a tiered offence categorisation system. Category 1 offences are the most serious — indictable offences attracting a maximum fine of €500,000 and/or 10 years imprisonment on conviction on indictment. These include fraudulent trading (s.722), making false statements to auditors (s.397), fraudulent disposal of assets, and certain insider trading offences. Category 2 offences carry up to 5 years and €50,000. Category 3 offences carry up to 3 years and €10,000. Category 4 offences are summary only with a maximum €5,000 fine. This structure allows proportionate prosecution."
+    },
+    {
+      "id": "CL_M12_L01_Q04",
+      "question": "In DPP v Quirke [2009] IECCA, the Court of Criminal Appeal considered a prosecution for fraudulent trading under the predecessor provision to s.722 CA 2014. What element of the offence was central to the court's analysis?",
+      "options": {
+        "A": "Whether the accused was a director of the company at the time the fraudulent trading occurred — only directors can be criminally liable for fraudulent trading",
+        "B": "Whether the company had been wound up — fraudulent trading as a criminal offence can only be prosecuted after the company enters liquidation",
+        "C": "Whether the accused had knowingly carried on business with intent to defraud creditors — actual fraudulent intent is the essential mental element, and knowledge of the fraudulent purpose is required",
+        "D": "Whether the accused personally profited from the fraudulent trading — profit motive is a required element of the offence"
+      },
+      "correct_answer": "C",
+      "explanation": "DPP v Quirke [2009] IECCA confirmed that the essential elements of criminal fraudulent trading are: (i) carrying on business; (ii) with intent to defraud creditors (or for any fraudulent purpose); and (iii) the accused was knowingly a party to that fraudulent carrying on. The requirement for actual fraudulent intent (not recklessness) and actual knowledge of the fraudulent purpose are the core mental elements. There is no requirement that the accused be a director (option A wrong — any person can be liable), that the company be in liquidation (option B wrong — s.722 applies independently of winding up), or that the accused personally profit (option D wrong)."
+    },
+    {
+      "id": "CL_M12_L01_Q05",
+      "question": "The CEA has investigative powers under Part 13 of the Companies Act 2014. Under s.748 CA 2014, the CEA may appoint inspectors to investigate the affairs of a company. Which of the following most accurately describes the scope of a Part 13 inspection?",
+      "options": {
+        "A": "A Part 13 inspection is limited to examining the company's financial accounts and CRO filings — inspectors cannot compel oral evidence",
+        "B": "Inspectors appointed under Part 13 have broad powers: they may examine persons under oath, require production of books and documents, and their report is admissible as evidence in subsequent civil or criminal proceedings",
+        "C": "Part 13 inspections can only be initiated at the request of a minority shareholder holding at least 10% of the issued share capital — the CEA cannot self-initiate an inspection",
+        "D": "Inspectors appointed under Part 13 have no power to compel directors to answer questions if the directors invoke the privilege against self-incrimination under the Constitution"
+      },
+      "correct_answer": "B",
+      "explanation": "Part 13 CA 2014 confers significant powers on court-appointed inspectors (and CEA investigators): they may examine persons under oath (s.761), require production of documents (s.762), and their report may be used as evidence in subsequent civil or criminal proceedings (s.751). The CEA can self-initiate investigations — no minimum shareholder threshold is required (option C wrong). While constitutional rights apply, the privilege against self-incrimination in company investigations has been significantly modified by Irish law following National Irish Bank v RTE [1998] — compelled answers may be used in subsequent proceedings subject to restrictions (option D overstates the protection)."
+    },
+    {
+      "id": "CL_M12_L01_Q06",
+      "question": "Fyffes plc v DCC plc [2007] IESC was a landmark Irish case concerning market abuse/insider trading, which intersects with the CEA's enforcement remit. What was the key legal question addressed by the Supreme Court?",
+      "options": {
+        "A": "Whether a company director owed a fiduciary duty to the market generally, not merely to shareholders, when trading in the company's shares while in possession of price-sensitive information",
+        "B": "Whether DCC's sale of Fyffes shares, effected while DCC possessed information which had not been made public and which, if known, would materially affect the price of those shares, constituted unlawful insider dealing under the Market Abuse Regulations",
+        "C": "Whether the CEA had standing to bring a civil claim for insider trading on behalf of Fyffes, as the regulatory body responsible for market integrity",
+        "D": "Whether the Companies Act 2014 created a private right of action for a company to sue the insider trader for profits made at the company's expense"
+      },
+      "correct_answer": "B",
+      "explanation": "Fyffes v DCC [2007] IESC was a complex civil case in which Fyffes plc sued DCC plc (and its CEO Jim Flavin) for insider dealing. The Supreme Court examined whether DCC possessed 'inside information' — price-sensitive, non-public information relating to Fyffes — at the time DCC sold its Fyffes shareholding, and whether this constituted unlawful insider dealing. The Supreme Court ultimately held (overturning the High Court) that DCC was not in possession of inside information at the relevant time (finding that certain trading information known to Flavin was not material). The case illustrates the difficulty of proving insider trading and is significant for establishing the Irish civil standard applicable to market abuse claims."
+    },
+    {
+      "id": "CL_M12_L01_Q07",
+      "question": "Under s.395 of the Companies Act 2014, a director who makes a false statement to an auditor in the context of an audit commits a criminal offence. What is the mental element required and how does this interact with the CEA's enforcement function?",
+      "options": {
+        "A": "The offence is one of strict liability — no mental element (mens rea) is required; any false statement, however innocently made, constitutes the offence",
+        "B": "The director must have knowingly or recklessly made the false statement; the CEA may investigate and refer cases to the DPP for prosecution under this Category 1 provision",
+        "C": "The mental element is negligence — a director who ought to have known the statement was false is liable; the offence is a Category 4 summary-only offence",
+        "D": "There is no criminal offence for false statements to auditors under the Companies Act 2014 — liability arises only under general fraud law and is prosecuted by the Revenue Commissioners"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 397 CA 2014 (not s.395) creates a criminal offence where an officer knowingly or recklessly makes a false statement to the auditor, or knowingly or recklessly provides false information or explanations. This is a Category 2 offence (under the revised post-2014 scheme — some sources class it as Category 1 in serious cases). The CEA can investigate such conduct and refer the matter to the DPP. The 'knowingly or recklessly' standard means honest but mistaken statements do not constitute the offence (option A wrong). Negligence is insufficient (option C wrong). The offence is squarely within the Companies Act framework (option D wrong)."
+    },
+    {
+      "id": "CL_M12_L01_Q08",
+      "question": "In Re Mitek Holdings Ltd [2010] IEHC, the High Court applied the La Moselle test for restriction under s.819 in the context of an insolvent company in the media/technology sector. What broader principle did the court emphasise regarding the director's responsibility to monitor the company's financial position?",
+      "options": {
+        "A": "A director of a technology company is held to a lower standard of care than a director in a traditional trading company due to the inherently speculative nature of technology investments",
+        "B": "A director who relies in good faith on the representations of a co-director or CFO cannot be restricted, as honest reliance on professional colleagues negates irresponsibility",
+        "C": "Directors have a proactive duty to keep informed of the company's financial position, and passivity or ignorance of financial difficulty — even where delegated to a finance director — does not excuse irresponsibility for restriction purposes",
+        "D": "The court in Re Mitek rejected the La Moselle test and instead applied a purely subjective standard based on what the individual director actually knew"
+      },
+      "correct_answer": "C",
+      "explanation": "Re Mitek Holdings [2010] IEHC reinforced the principle that the La Moselle objective standard of responsibility applies equally to executive and non-executive directors across all sectors. The court emphasised that directors cannot shelter behind ignorance of financial difficulties or excessive delegation to management — directors have a proactive duty to keep themselves informed and to monitor the company's financial health. A director who allows a company to trade while insolvent, even without actual knowledge, will be assessed against what a responsible director ought to have known. This is consistent with Fennell v Appelbe [2022] IECA. The court did not lower the standard for technology companies (option A wrong) or abandon La Moselle (option D wrong)."
+    },
+    {
+      "id": "CL_M12_L01_Q09",
+      "question": "The Companies (Corporate Governance, Enforcement and Regulatory Provisions) Act 2024 introduced a number of enhancements to the CEA's enforcement toolkit. Which of the following most accurately describes a significant new power introduced by the 2024 Act?",
+      "options": {
+        "A": "The 2024 Act gave the CEA power to impose administrative financial sanctions (fines) directly on companies for minor regulatory breaches without requiring a court prosecution",
+        "B": "The 2024 Act gave the CEA power to wind up companies directly without requiring a court petition",
+        "C": "The 2024 Act abolished the s.842 restriction and disqualification application power and transferred it exclusively to liquidators",
+        "D": "The 2024 Act transferred all CEA enforcement functions to the Revenue Commissioners to create a single regulatory body"
+      },
+      "correct_answer": "A",
+      "explanation": "The Companies (Corporate Governance, Enforcement and Regulatory Provisions) Act 2024 introduced a number of significant enforcement enhancements, including empowering the CEA to impose administrative sanctions (administrative financial penalties/fines) directly — without requiring a full criminal prosecution through the courts — for certain categories of regulatory breach. This mirrors administrative sanction regimes in financial regulation (e.g., the Central Bank's fitness and probity regime) and allows faster, more proportionate enforcement. The CEA retained its s.842 powers (option C wrong), cannot directly wind up companies (option D — court petition remains required), and Revenue remains a separate body."
+    },
+    {
+      "id": "CL_M12_L01_Q10",
+      "question": "A key function of the CEA is the enforcement of company law obligations regarding the keeping of proper books of account. Under s.286 of the Companies Act 2014, what obligation do directors have and what criminal sanction applies where a company fails to keep adequate books?",
+      "options": {
+        "A": "Directors are required to keep books of account sufficient to give a true and fair view of the company's state of affairs and explain its transactions; failure is a Category 2 criminal offence, and in a winding up, directors may be held personally liable for the company's debts under s.610",
+        "B": "Books of account must be kept only for PLCs; private limited companies have no statutory obligation to maintain formal accounting records",
+        "C": "The obligation to maintain books of account falls exclusively on the company secretary; directors have no personal criminal liability for accounting failures",
+        "D": "Failure to keep proper books of account is a Category 4 summary offence only — it cannot give rise to civil liability or personal liability of directors regardless of the circumstances"
+      },
+      "correct_answer": "A",
+      "explanation": "Section 281-285 CA 2014 impose on every company (of all types, including private companies — option B wrong) the obligation to keep proper books of account sufficient to: record all sums received and expended; explain transactions; disclose the company's financial position with reasonable accuracy; and enable preparation of financial statements giving a true and fair view. Failure is a criminal offence (Category 2, carrying up to 5 years imprisonment). Critically, in an insolvent winding up, a director who was in default of the books of account obligation may be held personally liable (without limit) for the company's debts under s.609 CA 2014 (the civil liability provision linked to books of account failure). The obligation rests on directors, not merely the company secretary (option C wrong)."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module10_Lesson01.txt",
+  "module_number": 10,
+  "module_title": "Corporate Decision-Making: Resolutions, Meetings and Board Governance",
+  "lesson_number": 1,
+  "lesson_title": "Types of Resolutions and the Duomatic Principle",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M10_L01_Q01",
+      "question": "Under CA 2014, an ordinary resolution requires what majority threshold, and what minimum notice period applies where the articles are silent?",
+      "options": {
+        "A": "More than 50% of votes cast; 21 days notice",
+        "B": "More than 50% of votes cast; 7 days notice for a private company",
+        "C": "At least 50% of votes cast (simple majority); 14 days notice",
+        "D": "75% of votes cast; 21 days notice"
+      },
+      "correct_answer": "B",
+      "explanation": "An ordinary resolution requires a simple majority — more than 50% of votes cast by entitled members. Under CA 2014, for a private limited company, the minimum statutory notice for a general meeting is generally 7 days (subject to the articles). Special notice (28 days) applies only to specific resolutions such as s.146 removal of directors."
+    },
+    {
+      "id": "CL_M10_L01_Q02",
+      "question": "A special resolution under CA 2014 requires a 75% majority. Under s.198 CA 2014, within what period after passing a special resolution must a company file a copy with the Companies Registration Office (CRO)?",
+      "options": {
+        "A": "7 days",
+        "B": "15 days",
+        "C": "21 days",
+        "D": "30 days"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.198 CA 2014, a company must deliver a copy of every special resolution to the CRO within 15 days of it being passed. Failure to do so is a Category 3 offence for the company and any officer in default."
+    },
+    {
+      "id": "CL_M10_L01_Q03",
+      "question": "The Duomatic principle (from Re Duomatic Ltd [1969] Ch) allows informal shareholder consent to substitute for a formal general meeting resolution. For the principle to operate in Irish law, which conditions must ALL be met?",
+      "options": {
+        "A": "The shareholders must have actual knowledge of the relevant matter and give unanimous informal consent; all shareholders entitled to attend and vote must participate",
+        "B": "A majority of shareholders must give informal consent in writing, provided no shareholder objects within 21 days",
+        "C": "The shareholders must give unanimous consent in a board meeting attended by all shareholders",
+        "D": "The consent of shareholders holding at least 75% of the issued shares is sufficient to trigger the Duomatic principle"
+      },
+      "correct_answer": "A",
+      "explanation": "The Duomatic principle requires: (1) unanimous consent of ALL shareholders entitled to attend and vote; (2) actual knowledge of the relevant matter; and (3) a genuine assent (not merely passive acquiescence). An absent shareholder whose consent is not obtained prevents operation of the principle. Confirmed in Ireland: Kerr v Conduit Enterprises Ltd [2010] IEHC."
+    },
+    {
+      "id": "CL_M10_L01_Q04",
+      "question": "In Kerr v Conduit Enterprises Ltd [2010] IEHC, the Irish High Court applied the Duomatic principle. What was the key factual scenario, and what did the court confirm about the principle's operation in Irish law?",
+      "options": {
+        "A": "The court confirmed that a majority shareholder's informal consent is sufficient; minority shareholders cannot veto informal decision-making",
+        "B": "The court confirmed that where all shareholders with voting rights are informed of and assent to a particular course of action — even without a formal meeting — that assent has the same legal effect as a formal resolution",
+        "C": "The court held that the Duomatic principle applies only in liquidation proceedings and not to decisions taken by a going concern",
+        "D": "The court restricted the Duomatic principle to decisions that would otherwise require only an ordinary resolution — special resolution matters require formal compliance"
+      },
+      "correct_answer": "B",
+      "explanation": "In Kerr v Conduit Enterprises [2010] IEHC, the High Court confirmed that the Duomatic principle operates in Irish company law. Where all shareholders entitled to vote are fully informed and informally assent to a decision, that assent is legally equivalent to a formally passed resolution, provided unanimity is established."
+    },
+    {
+      "id": "CL_M10_L01_Q05",
+      "question": "A company has four shareholders. Three shareholders informally assent to paying a director's bonus outside the authorised remuneration structure. The fourth shareholder was unaware of the decision. Can the Duomatic principle validate this decision?",
+      "options": {
+        "A": "Yes — 75% assent is sufficient to trigger Duomatic where the matter would ordinarily require only an ordinary resolution",
+        "B": "No — the Duomatic principle requires the informed assent of ALL shareholders entitled to vote. The fourth shareholder's unawareness means there was no unanimous consent and the principle cannot operate",
+        "C": "Yes — a shareholder who fails to attend board meetings is deemed to have waived their right to object to informal decisions",
+        "D": "Yes — provided the majority can demonstrate the decision was in the company's best interests, the courts will validate it even without unanimous consent"
+      },
+      "correct_answer": "B",
+      "explanation": "The Duomatic principle requires UNANIMITY — the informed assent of every shareholder entitled to vote. A dissenting or uninformed shareholder prevents its operation absolutely. The court in Buchanan v McVey [1954] IR confirmed this strict unanimity requirement."
+    },
+    {
+      "id": "CL_M10_L01_Q06",
+      "question": "Under s.161 CA 2014, a private limited company may pass a written resolution. Which of the following resolutions CANNOT be passed as a written resolution under s.161?",
+      "options": {
+        "A": "A resolution to increase the company's authorised share capital",
+        "B": "A special resolution to alter the articles of association",
+        "C": "An ordinary resolution to remove a director under s.146 CA 2014",
+        "D": "A resolution to approve a contract under s.238 CA 2014"
+      },
+      "correct_answer": "C",
+      "explanation": "Under s.161 CA 2014, written resolutions may be used for most decisions. However, s.161(2) expressly excepts resolutions under s.146 (removal of a director) from the written resolution procedure — such removal must be effected at a general meeting with 28-day special notice. Similarly, s.397 (removal of auditors) cannot be done by written resolution."
+    },
+    {
+      "id": "CL_M10_L01_Q07",
+      "question": "A private limited company passes a written resolution under s.161 CA 2014. What majority threshold is required, and how is it calculated?",
+      "options": {
+        "A": "The same majority as would be required at a general meeting — ordinary written resolutions require more than 50% of total voting rights; special written resolutions require 75% of total voting rights",
+        "B": "Unanimous consent of all shareholders is required for all written resolutions regardless of type",
+        "C": "Written resolutions require more than 50% of votes actually cast by those who respond within the circulation period",
+        "D": "Written resolutions always require 75% of all issued voting shares regardless of the type of resolution they replace"
+      },
+      "correct_answer": "A",
+      "explanation": "Under s.161(4)-(5) CA 2014, an ordinary written resolution requires the agreement of members holding more than 50% of total voting rights, and a special written resolution requires 75% of total voting rights. Crucially, non-responding shareholders count as votes against — the calculation is of total voting rights, not just those who respond."
+    },
+    {
+      "id": "CL_M10_L01_Q08",
+      "question": "A shareholder of a private company holds 30% of shares and wishes to block a special resolution to alter the articles. The majority (70%) proposes to use a written resolution under s.161 CA 2014. Can the 30% shareholder prevent the special written resolution from passing?",
+      "options": {
+        "A": "No — a written resolution requires only a simple majority among those who respond; if the majority responds and the minority does not, the resolution passes",
+        "B": "Yes — a special written resolution requires 75% of total voting rights. A 30% shareholder, by refusing to sign or not responding, means the resolution cannot achieve the 75% threshold needed",
+        "C": "It depends — if the 70% holder responds within the time limit, the resolution passes regardless of non-response by others",
+        "D": "No — the company can apply to court for an order deeming the resolution passed if the minority is deliberately obstructing the process"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.161(5) CA 2014, a special written resolution requires 75% of total voting rights. A shareholder holding 30% who does not sign (or sign against) means the maximum possible 'yes' vote is 70% — below the 75% threshold. The 30% shareholder can therefore block any special written resolution by withholding their signature."
+    },
+    {
+      "id": "CL_M10_L01_Q09",
+      "question": "A company passes a resolution by the Duomatic principle to pay the sole director a salary significantly above the level approved in the articles. The company subsequently goes into liquidation. The liquidator seeks to recover the excess salary. The director argues the Duomatic principle validates the arrangement. The company had only two shareholders — the director and their spouse. What is the critical factual question?",
+      "options": {
+        "A": "Whether the salary was commercially justifiable having regard to market rates for comparable directors",
+        "B": "Whether the spouse, as a co-shareholder, was fully aware of and genuinely assented to the arrangement — and whether this assent was truly independent, or whether in practice the spouse simply deferred to the director",
+        "C": "Whether the director disclosed their interest in the remuneration arrangement to the board in accordance with s.228(1)(g) CA 2014",
+        "D": "Whether the salary was approved in board minutes signed by both shareholders"
+      },
+      "correct_answer": "B",
+      "explanation": "For the Duomatic principle to operate, all shareholders must give genuine, informed, and independent assent. Where the second shareholder is the director's spouse, courts will scrutinise whether the spouse truly exercised independent judgment or merely deferred to the director. A 'rubber stamp' assent by a dominated shareholder does not satisfy the principle's requirements."
+    },
+    {
+      "id": "CL_M10_L01_Q10",
+      "question": "Under the Duomatic principle as applied in Buchanan v McVey [1954] IR, is it possible for shareholders to ratify a breach of duty informally, even if a formal meeting would be required for such ratification?",
+      "options": {
+        "A": "No — ratification of director breaches can only occur at a properly convened extraordinary general meeting with formal notice",
+        "B": "Yes — provided all shareholders with voting rights are fully informed of the breach and unanimously assent to ratification, the Duomatic principle allows informal ratification with the same effect as a formal resolution",
+        "C": "Yes — but only where the breach was of a fiduciary duty; contractual breaches always require formal shareholder approval",
+        "D": "No — the Duomatic principle cannot operate where a conflict of interest exists between the director and the company"
+      },
+      "correct_answer": "B",
+      "explanation": "In Buchanan v McVey [1954] IR, the Irish Supreme Court affirmed that informal unanimous assent by all shareholders can ratify director conduct with the same effect as a formal general meeting resolution. The principle applies to ratification of breaches of duty, subject to the requirement of full information and genuine unanimous consent."
+    }
+  ]
+}

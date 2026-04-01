@@ -1,0 +1,135 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": [
+    "ContractLaw_ElevenLabs_Module02_Lesson01.txt",
+    "ContractLaw_ElevenLabs_Module02_Lesson02.txt",
+    "ContractLaw_ElevenLabs_Module02_Lesson05.txt"
+  ],
+  "module_number": 2,
+  "module_title": "Contractual Terms",
+  "lesson_number": 1,
+  "lesson_title": "Express Terms and Classification",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "How are express terms incorporated into a contract?",
+      "options": {
+        "A": "Only through written documents signed by both parties",
+        "B": "By oral agreement, writing, or conduct — any means by which the parties communicate the terms they have agreed",
+        "C": "Only through a formal deed executed before a notary",
+        "D": "By statute, regardless of what the parties have agreed"
+      },
+      "correct_answer": "B",
+      "explanation": "Express terms are those specifically agreed and articulated by the parties, whether orally, in writing, or by conduct. They represent the parties' actual bargain. There is no requirement that they be in writing (save where statute requires formality, e.g., contracts for land). However, written terms are easier to prove and less susceptible to dispute."
+    },
+    {
+      "id": 2,
+      "question": "What is the parol evidence rule?",
+      "options": {
+        "A": "A rule requiring all contracts to be in writing to be enforceable",
+        "B": "A rule that extrinsic evidence (oral or documentary) cannot generally be admitted to add to, vary, or contradict the terms of a written contract",
+        "C": "A rule that only written evidence is admissible in contract disputes",
+        "D": "A rule preventing parties from giving evidence about pre-contractual negotiations"
+      },
+      "correct_answer": "B",
+      "explanation": "The parol evidence rule provides that where the parties have reduced their agreement to writing, extrinsic evidence — whether oral statements, prior negotiations, or other documents outside the written contract — cannot be admitted to add to, vary, or contradict the written terms. The written document is treated as the complete and authoritative record of the parties' agreement."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is an established exception to the parol evidence rule?",
+      "options": {
+        "A": "Evidence of the parties' subjective intentions during negotiations",
+        "B": "Evidence that the written contract does not represent the whole agreement — i.e., that additional oral terms were also agreed",
+        "C": "Evidence that one party drove a harder bargain than the other",
+        "D": "Evidence of market practice applicable to both parties"
+      },
+      "correct_answer": "B",
+      "explanation": "The parol evidence rule does not prevent a party from showing that the written document was not intended to contain the whole of the agreement — that additional oral terms were also agreed alongside it (Couchman v Hill [1947]). Other exceptions include evidence of custom and usage, evidence of a condition precedent to the contract becoming operative, and evidence to establish a vitiating factor such as misrepresentation or mistake."
+    },
+    {
+      "id": 4,
+      "question": "What factors do courts consider when determining whether a pre-contractual statement is a term of the contract or merely a representation?",
+      "options": {
+        "A": "Whether the statement was made in writing, the date of the statement, and whether consideration was given",
+        "B": "The importance attached to the statement, the relative knowledge of the parties, and whether the maker asked the other to verify the statement",
+        "C": "Whether the statement was made by a qualified professional and witnessed by a third party",
+        "D": "Whether the parties used the word 'term' when making the statement"
+      },
+      "correct_answer": "B",
+      "explanation": "Courts consider: (1) the importance of the statement — if it induced the contract it is more likely to be a term (Bannerman v White [1861]); (2) the relative expertise/knowledge of the parties — a statement by the party with specialist knowledge is more likely to be a term (Dick Bentley Productions v Harold Smith Motors [1965] vs Oscar Chess v Williams [1957]); (3) the lapse of time between statement and contract; and (4) whether the maker invited verification, suggesting it was not a term (Ecay v Godfrey [1947])."
+    },
+    {
+      "id": 5,
+      "question": "In Oscar Chess Ltd v Williams [1957], the Court of Appeal held that the seller's statement about the car's year of manufacture was a representation, not a term, because:",
+      "options": {
+        "A": "The seller was a car dealer and should have known the true year",
+        "B": "The seller was a private individual who honestly believed the statement and had no greater means of verification than the buyer",
+        "C": "The statement was made orally and not incorporated into the written contract",
+        "D": "The buyer had not relied on the statement when entering the contract"
+      },
+      "correct_answer": "B",
+      "explanation": "In Oscar Chess v Williams [1957], Williams was a private person who sold a car believing (on the basis of the registration document) it was a 1948 model. Oscar Chess was a car dealer with superior means of verification. The Court of Appeal held the statement was a mere representation: Williams had no special knowledge or skill and could not have warranted the information he had no means of checking."
+    },
+    {
+      "id": 6,
+      "question": "In Dick Bentley Productions Ltd v Harold Smith (Motors) Ltd [1965], the Court of Appeal held the statement about mileage was a contractual term because:",
+      "options": {
+        "A": "The statement was made in writing and signed by both parties",
+        "B": "The seller was a motor dealer with access to specialist knowledge and skill in assessing the car",
+        "C": "The buyer had expressly insisted that the mileage was a condition of the contract",
+        "D": "The buyer paid a higher price than market value in reliance on the statement"
+      },
+      "correct_answer": "B",
+      "explanation": "In Dick Bentley Productions v Harold Smith (Motors) [1965], the car dealer (Harold Smith) had specialist knowledge and access to information about the car's history. The Court of Appeal held the statement about mileage was a warranty/term: a person who has, or claims to have, special knowledge or skill and makes a statement inducing the contract is more likely to be found to have given a contractual term, not merely a representation."
+    },
+    {
+      "id": 7,
+      "question": "What is a condition in the classification of contractual terms?",
+      "options": {
+        "A": "A term that is merely subsidiary to the main purpose of the contract",
+        "B": "A term that is so fundamental that its breach entitles the innocent party to terminate the contract and claim damages",
+        "C": "A term that operates as a precedent to the contract coming into existence",
+        "D": "A term imposed by statute rather than agreed between the parties"
+      },
+      "correct_answer": "B",
+      "explanation": "A condition is a term that goes to the root of the contract — it is so essential to the bargain that a breach of it entitles the innocent party to treat themselves as discharged from further performance and to claim damages. The classification as condition is determined by the parties' intentions (expressed or inferred) or by statute (e.g., implied conditions under the Sale of Goods Act 1893 / SGSSA 1980 / CRA 2022)."
+    },
+    {
+      "id": 8,
+      "question": "What is a warranty in the context of contractual terms?",
+      "options": {
+        "A": "A fundamental term whose breach allows the innocent party to terminate",
+        "B": "A term whose breach entitles the innocent party to damages only, but not to treat the contract as terminated",
+        "C": "A written guarantee provided by a manufacturer about product quality",
+        "D": "A term imposed by the Consumer Rights Act 2022"
+      },
+      "correct_answer": "B",
+      "explanation": "A warranty is a term that is subsidiary to the main purpose of the contract. Breach of a warranty gives the innocent party the right to damages, but does NOT entitle them to terminate the contract. The party in breach has failed to perform the warranty, but the innocent party must continue to perform their own obligations and pursue a damages claim."
+    },
+    {
+      "id": 9,
+      "question": "What is an innominate (intermediate) term, as established in Hong Kong Fir Shipping Co v Kawasaki Kisen Kaisha [1962]?",
+      "options": {
+        "A": "A term that is automatically classified as a condition if agreed in writing",
+        "B": "A term that cannot be classified in advance as either a condition or warranty — the consequences of breach depend on the nature and effect of the breach",
+        "C": "A term that is intermediate because it is partly statutory and partly agreed",
+        "D": "A term of implied intent where the parties have not expressly agreed on its classification"
+      },
+      "correct_answer": "B",
+      "explanation": "The innominate (or intermediate) term category was established in Hong Kong Fir Shipping Co v Kawasaki Kisen Kaisha [1962]. Rather than classifying the term in advance as condition or warranty, the court looks at the actual consequence of the breach: if the breach deprives the innocent party of substantially the whole benefit they were intended to receive under the contract, they may terminate; otherwise, they are limited to damages."
+    },
+    {
+      "id": 10,
+      "question": "In Poussard v Spiers and Pond [1876], a singer's failure to appear for the opening nights of an opera was held to be a breach of condition. This meant:",
+      "options": {
+        "A": "The theatre was entitled to damages only",
+        "B": "The theatre was entitled to terminate the contract and engage a replacement singer",
+        "C": "The singer could return and perform on later dates without consequence",
+        "D": "The breach was a breach of warranty that had to be accepted"
+      },
+      "correct_answer": "B",
+      "explanation": "In Poussard v Spiers and Pond [1876], the obligation to perform from the opening night was held to be a condition — it went to the root of the contract. The theatre management was therefore entitled to treat the contract as discharged when she failed to appear for the first few performances and were justified in engaging a permanent replacement."
+    }
+  ]
+}

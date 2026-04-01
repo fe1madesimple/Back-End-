@@ -1,0 +1,131 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module09_Lesson01.txt",
+  "module_number": 9,
+  "module_title": "Inchoate Offences",
+  "lesson_number": 1,
+  "lesson_title": "Conspiracy, Incitement, and Attempt",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M09_L01_Q01",
+      "question": "Conspiracy is defined, following Mulcahy v R [1868], as:",
+      "options": {
+        "A": "An agreement between two or more persons to commit a specific criminal offence, where at least one overt act has been taken in furtherance",
+        "B": "An agreement between two or more persons to do an unlawful act, or to do a lawful act by unlawful means",
+        "C": "A unilateral intention to commit a criminal offence, communicated to at least one other person",
+        "D": "A plan to commit an offence, whether or not agreement has been reached between the parties"
+      },
+      "correct_answer": "B",
+      "explanation": "Mulcahy v R [1868] defined conspiracy as an agreement between two or more persons to do an unlawful act, or to accomplish a lawful act by unlawful means. Conspiracy is a common law offence in Ireland. The actus reus is the agreement itself — no overt act in furtherance is required."
+    },
+    {
+      "id": "CL_M09_L01_Q02",
+      "question": "Following the Criminal Justice (Miscellaneous Provisions) Act 2023, which came into force on 1 November 2023, what is the maximum penalty for conspiracy to murder under Section 4 of the Offences Against the Person Act 1861?",
+      "options": {
+        "A": "Ten years imprisonment",
+        "B": "Fourteen years imprisonment",
+        "C": "Twenty years imprisonment",
+        "D": "Life imprisonment"
+      },
+      "correct_answer": "D",
+      "explanation": "The Criminal Justice (Miscellaneous Provisions) Act 2023, in force from 1 November 2023, increased the maximum penalty for conspiracy to murder from ten years to life imprisonment. Stating the pre-2023 maximum of ten years in an exam answer would be incorrect."
+    },
+    {
+      "id": "CL_M09_L01_Q03",
+      "question": "In a 'wheel conspiracy,' for the arrangement to constitute a single conspiracy rather than multiple bilateral conspiracies, what is required?",
+      "options": {
+        "A": "The hub must have personally committed at least one offence",
+        "B": "Each spoke must have met the hub in person",
+        "C": "The spokes must be aware of each other's existence",
+        "D": "The hub must have recruited all spokes at the same time"
+      },
+      "correct_answer": "C",
+      "explanation": "In a wheel conspiracy, the hub deals separately with multiple spokes who may not know each other. For a single wheel conspiracy to exist, the spokes must be aware of each other's existence. If they are not, there is no wheel — there are simply multiple bilateral conspiracies between the hub and each individual spoke."
+    },
+    {
+      "id": "CL_M09_L01_Q04",
+      "question": "Which of the following best describes the actus reus of incitement?",
+      "options": {
+        "A": "The commission of the offence incited by the person who was incited",
+        "B": "The communication of encouragement or solicitation to another person to commit an offence, which must actually reach that person",
+        "C": "The formation of a specific intent to encourage another person to commit an offence",
+        "D": "Any overt act taken in preparation for encouraging another to commit an offence"
+      },
+      "correct_answer": "B",
+      "explanation": "The actus reus of incitement is the communication itself — words, gestures, writing, or any other means — which must actually reach the person incited. The incited offence does not need to be committed. Incitement is complete at the moment of communication. A message that never reaches its recipient cannot found liability for incitement."
+    },
+    {
+      "id": "CL_M09_L01_Q05",
+      "question": "In AG v Capaldi [1955] IR, what conduct was held to constitute incitement?",
+      "options": {
+        "A": "Expressing a desire that another person would commit an offence",
+        "B": "Providing transport to a person who intended to commit an offence",
+        "C": "Offering money to another person to commit an offence",
+        "D": "Publishing material that others might use to commit an offence"
+      },
+      "correct_answer": "C",
+      "explanation": "In AG v Capaldi [1955] IR, the court held that an offer of money to commit an offence constitutes incitement. Offering a financial inducement is an active act of solicitation — it goes beyond a mere expression of desire. This contrasts with R v Higgins [1801], which established that a mere expression of desire that another commit a crime is insufficient."
+    },
+    {
+      "id": "CL_M09_L01_Q06",
+      "question": "For a charge of attempt, what two elements must both be established?",
+      "options": {
+        "A": "The full mens rea of the complete offence, and an act which is more than merely preparatory toward its commission",
+        "B": "The full actus reus of the complete offence, and evidence of a prior plan",
+        "C": "Recklessness as to whether the offence would be committed, and physical proximity to the victim",
+        "D": "Direct intent to cause harm, and at least one completed step in a plan"
+      },
+      "correct_answer": "A",
+      "explanation": "Attempt requires: (1) the full mens rea of the complete offence, and (2) an act which is more than merely preparatory toward its commission. Both elements must be present. Intent alone without the proximate act is insufficient, and a proximate act without the requisite intent is also insufficient."
+    },
+    {
+      "id": "CL_M09_L01_Q07",
+      "question": "In R v Campbell [1991] CA, the accused was found outside a post office with an imitation firearm and a threatening note. He had not entered. The court held he was:",
+      "options": {
+        "A": "Guilty of attempted robbery, as his intent was clear",
+        "B": "Still in the preparation stage — not yet attempting the robbery",
+        "C": "Guilty of conspiracy to rob",
+        "D": "Guilty of attempted robbery by virtue of his proximity to the post office"
+      },
+      "correct_answer": "B",
+      "explanation": "In R v Campbell [1991] CA, the court held that the accused had not yet crossed from preparation into attempt. Being outside the post office, armed and ready, was still in the preparatory phase. He had not yet crossed the threshold, literally or metaphorically. This illustrates the proximity test and the difficulty of the preparation/attempt distinction."
+    },
+    {
+      "id": "CL_M09_L01_Q08",
+      "question": "In DPP v Douglas and Hayes [1985] ILRM, the Irish Supreme Court held that the mens rea for attempted murder is:",
+      "options": {
+        "A": "Intent to kill or intent to cause serious harm, the same as for the completed offence of murder",
+        "B": "Intent to kill only — intent to cause serious harm is insufficient",
+        "C": "Recklessness as to whether death would result",
+        "D": "Intent to cause some degree of physical harm to the victim"
+      },
+      "correct_answer": "B",
+      "explanation": "In DPP v Douglas and Hayes [1985] ILRM, the Supreme Court held that intent to kill is the only acceptable mens rea for attempted murder. This differs from the completed offence of murder under Section 4(1) CJA 1964, where intent to cause serious harm also suffices. If the accused intended serious harm only and the victim survived, the correct charge is attempted assault causing serious harm, not attempted murder."
+    },
+    {
+      "id": "CL_M09_L01_Q09",
+      "question": "In R v White [1910] CA, the accused put an insufficient dose of poison in his mother's drink. She died of natural causes before the poison took effect. What was the accused convicted of?",
+      "options": {
+        "A": "Nothing — no offence was made out because death could not have resulted from his act alone",
+        "B": "Manslaughter by gross negligence",
+        "C": "Attempted murder — impossibility does not defeat an attempt charge where intent and a proximate act are established",
+        "D": "Conspiracy to murder"
+      },
+      "correct_answer": "C",
+      "explanation": "In R v White [1910] CA, the accused was convicted of attempted murder even though his act alone could not have caused death — the dose was insufficient. The principle is that impossibility does not defeat an attempt charge where the accused had the intent and took a proximate step. This contrasts with the position in DPP v Nock [1978] on impossibility in conspiracy."
+    },
+    {
+      "id": "CL_M09_L01_Q10",
+      "question": "Which of the following statements about the relationship between inchoate offences and completed offences is correct?",
+      "options": {
+        "A": "A person cannot be convicted of both a conspiracy and the substantive offence arising from it",
+        "B": "Inchoate liability is extinguished once the substantive offence is committed",
+        "C": "A person can be convicted of conspiracy and the substantive offence arising from it",
+        "D": "Inchoate offences can only be charged where the substantive offence was not completed"
+      },
+      "correct_answer": "C",
+      "explanation": "Inchoate liability does not disappear because the full offence was also committed. A person can be convicted of conspiracy and the substantive offence. Inchoate and substantive charges may be pursued together, and both may result in conviction on the same facts."
+    }
+  ]
+}

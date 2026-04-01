@@ -1,0 +1,135 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": [
+    "ContractLaw_ElevenLabs_Module03_Lesson01.txt",
+    "ContractLaw_ElevenLabs_Module03_Lesson02.txt",
+    "ContractLaw_ElevenLabs_Module03_Lesson03.txt"
+  ],
+  "module_number": 2,
+  "module_title": "Contractual Terms",
+  "lesson_number": 4,
+  "lesson_title": "Unfair Terms in Consumer Contracts",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary Irish statute governing unfair terms in consumer contracts since 2022?",
+      "options": {
+        "A": "The European Communities (Unfair Terms in Consumer Contracts) Regulations 1995",
+        "B": "The Consumer Rights Act 2022 (Ireland)",
+        "C": "The Sale of Goods Act 1893",
+        "D": "The Unfair Contract Terms Act 1977"
+      },
+      "correct_answer": "B",
+      "explanation": "The Consumer Rights Act 2022 (CRA 2022) is the primary Irish legislation governing unfair terms in consumer contracts. It replaced and consolidated earlier instruments, including the European Communities (Unfair Terms in Consumer Contracts) Regulations 1995, and implements EU consumer law Directives. It covers contracts for goods, digital content, and services between traders and consumers."
+    },
+    {
+      "id": 2,
+      "question": "Under the Consumer Rights Act 2022 (Ireland), a term is unfair if it causes:",
+      "options": {
+        "A": "Any inconvenience to the consumer",
+        "B": "A significant imbalance in the parties' rights and obligations under the contract to the detriment of the consumer, contrary to the requirement of good faith",
+        "C": "A price increase of more than 10% above the market rate",
+        "D": "A reduction in the consumer's statutory rights under the Sale of Goods Act 1893"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the CRA 2022 (implementing the EU Unfair Terms Directive 93/13/EEC as amended), a term is unfair if it causes a significant imbalance in the parties' rights and obligations to the detriment of the consumer, contrary to the requirement of good faith. Both elements must be established. The assessment considers the nature of the goods or services, all circumstances attending the contract, and all other terms of the contract."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following terms is generally exempt from the unfairness assessment under the CRA 2022 and the EU Unfair Terms Directive?",
+      "options": {
+        "A": "Terms relating to the after-sale service obligations of the trader",
+        "B": "Terms that define the main subject matter of the contract and price terms, provided they are in plain and intelligible language",
+        "C": "Terms that impose financial penalties on the consumer for late payment",
+        "D": "Terms that allow the trader to unilaterally vary the contract price"
+      },
+      "correct_answer": "B",
+      "explanation": "The EU Unfair Terms Directive (as implemented by the CRA 2022) exempts from the fairness assessment terms that define the main subject matter of the contract and adequacy of price, provided they are in plain and intelligible language. The rationale is that consumers can factor price and core subject matter into their decision to contract. If such terms are not in plain language, they remain subject to the fairness test."
+    },
+    {
+      "id": 4,
+      "question": "What is the effect of an unfair term in a consumer contract under the CRA 2022?",
+      "options": {
+        "A": "The entire contract is void",
+        "B": "The unfair term is not binding on the consumer, but the rest of the contract continues in force if capable of subsisting without the unfair term",
+        "C": "The trader is liable to a criminal fine but the contract remains binding",
+        "D": "The consumer may seek a court order varying the term to make it fair"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the CRA 2022 (and the underlying EU Directive), an unfair term is not binding on the consumer. However, the contract continues to bind the parties if it can subsist without the unfair term — the court severs the offending term and enforces the rest of the contract. This 'blue pencil' approach prevents traders from arguing the whole contract must fall."
+    },
+    {
+      "id": 5,
+      "question": "Which of the following factors is relevant to assessing whether a term is unfair under the CRA 2022?",
+      "options": {
+        "A": "Whether the trader made a profit on the contract",
+        "B": "The nature of the goods or services, all circumstances attending conclusion of the contract, and all other terms of the contract",
+        "C": "Whether the consumer had the opportunity to negotiate the disputed term",
+        "D": "Whether the term was recommended by a trade association"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the CRA 2022 and Article 4(1) of the EU Directive, the unfairness of a term is assessed by reference to: (1) the nature of the goods or services; (2) all circumstances attending conclusion of the contract, including other terms of the contract; and (3) any other terms in connected contracts. The assessment is contextual — a term that appears unfair in one context may not be in another."
+    },
+    {
+      "id": 6,
+      "question": "The indicative (grey) list in Schedule 3 of the CRA 2022 (derived from the EU Directive) contains examples of potentially unfair terms. Which of the following appears on that list?",
+      "options": {
+        "A": "A term requiring the consumer to pay a fixed delivery charge",
+        "B": "A term allowing the trader to unilaterally alter the characteristics of the goods or services to be provided",
+        "C": "A term setting out the consumer's right to a 14-day cooling-off period",
+        "D": "A term requiring the trader to provide a guarantee of repair for 12 months"
+      },
+      "correct_answer": "B",
+      "explanation": "The indicative grey list includes terms such as those allowing the trader to unilaterally alter the contract (including price, characteristics of goods/services, or duration), to terminate at will while the consumer is bound, to limit the trader's obligations, to exclude statutory rights, and to require consumers to resolve disputes exclusively by arbitration. These are presumptively unfair but may be rebutted in appropriate circumstances."
+    },
+    {
+      "id": 7,
+      "question": "What does the 'plain and intelligible language' requirement under the CRA 2022 mean in practice?",
+      "options": {
+        "A": "Contracts must be typed in a font no smaller than 12 points",
+        "B": "Contractual terms must be expressed clearly and comprehensibly so the average consumer can understand their legal effect",
+        "C": "Traders must provide a glossary of legal terms with every consumer contract",
+        "D": "Contracts must be available in all official EU languages"
+      },
+      "correct_answer": "B",
+      "explanation": "The plain and intelligible language requirement (Article 5 of the Directive, implemented in CRA 2022) requires that written terms be expressed clearly and comprehensibly. The test is whether the term, read in its context, is comprehensible to the typical consumer. Where there is doubt about the meaning of a written term, the interpretation most favourable to the consumer prevails (the contra proferentem principle applied by statute)."
+    },
+    {
+      "id": 8,
+      "question": "In Director of Consumer Affairs v Sugar Distributors Ltd [2001] (HC Ireland), the court considered the Regulations preceding the CRA 2022 (SI 27 of 1995). The case confirmed that:",
+      "options": {
+        "A": "The Director had no standing to seek an injunction against unfair terms without an individual complaint",
+        "B": "The Director of Consumer Affairs had standing to seek an injunction to prevent continued use of unfair terms, not merely a declaration in an individual case",
+        "C": "The unfair terms regulations only applied to standard-form contracts, not individually negotiated agreements",
+        "D": "Only courts could declare a term unfair — the Director had no enforcement power"
+      },
+      "correct_answer": "B",
+      "explanation": "In Director of Consumer Affairs v Sugar Distributors [2001], the Irish High Court confirmed the Director's standing to seek injunctive relief preventing the continued use of unfair terms in consumer contracts. This represented an important enforcement mechanism — the regulator could act in the public interest without waiting for an individual consumer complaint, reflecting the public law dimension of consumer contract regulation."
+    },
+    {
+      "id": 9,
+      "question": "Which of the following scenarios would fall OUTSIDE the scope of the CRA 2022 unfair terms provisions?",
+      "options": {
+        "A": "A standard-form service contract between a gym and an individual member",
+        "B": "A lease agreed by two private individuals (neither acting in the course of a trade)",
+        "C": "A standard-form contract between a bank and a retail borrower",
+        "D": "An online purchase contract between a consumer and an e-commerce retailer"
+      },
+      "correct_answer": "B",
+      "explanation": "The CRA 2022 applies to contracts between a 'trader' (a person acting for purposes of trade, business, craft or profession) and a 'consumer' (a natural person acting outside their trade or profession). A contract between two private individuals, neither acting in a commercial capacity, falls outside the scope of the legislation. The unfair terms provisions are designed to redress the imbalance of bargaining power between traders and consumers."
+    },
+    {
+      "id": 10,
+      "question": "Under the CRA 2022, a term that was individually negotiated is:",
+      "options": {
+        "A": "Always binding regardless of its content",
+        "B": "Still subject to the unfairness test, but the fact of negotiation is relevant to the assessment",
+        "C": "Exempt from the unfairness assessment only if in plain and intelligible language",
+        "D": "Subject to a higher standard of fairness than non-negotiated terms"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the CRA 2022 framework, the unfair terms provisions apply primarily to terms that have not been individually negotiated. However, even where a term was negotiated, an overall assessment of the contract may be conducted. The fact that a specific term was negotiated does not automatically render it immune — if other terms in the contract create significant imbalance, those may still be unfair."
+    }
+  ]
+}

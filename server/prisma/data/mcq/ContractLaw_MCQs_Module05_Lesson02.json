@@ -1,0 +1,131 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": "ContractLaw_ElevenLabs_Module07_Lesson02.txt",
+  "module_number": 5,
+  "module_title": "Illegality and Public Policy",
+  "lesson_number": 2,
+  "lesson_title": "Restraint of Trade",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "The doctrine of restraint of trade renders certain contractual restrictions on a party's freedom to trade void unless they can be justified. What is the starting presumption under the doctrine?",
+      "options": {
+        "A": "All restraints of trade are valid unless shown to be unreasonable",
+        "B": "All restraints of trade are prima facie void — they will only be enforceable if justified by the covenantee",
+        "C": "Only post-employment restraints are subject to the doctrine; covenants in commercial agreements are presumptively valid",
+        "D": "The doctrine applies only where the restrained party is in a weaker bargaining position"
+      },
+      "correct_answer": "B",
+      "explanation": "The starting point of the restraint of trade doctrine is that all restraints of trade are prima facie void and contrary to public policy. The covenantee (the party seeking to enforce the restraint) must justify the restraint by demonstrating: (1) a legitimate proprietary interest worthy of protection; (2) that the restraint is reasonable as between the parties (not wider than necessary to protect that interest); and (3) that the restraint is not contrary to the public interest. This was confirmed by the House of Lords in Nordenfelt v Maxim Nordenfelt Guns and Ammunition Co [1894]."
+    },
+    {
+      "id": 2,
+      "question": "In Nordenfelt v Maxim Nordenfelt Guns and Ammunition Co [1894] (HL), the House of Lords established the foundational test for restraint of trade. The test requires the restraint to be:",
+      "options": {
+        "A": "Reasonable in its scope, area, and duration, and not contrary to the public interest",
+        "B": "Necessary to prevent direct competition in the specific geographic area covered",
+        "C": "Proportionate to the financial consideration paid to the covenantor",
+        "D": "Confined to a period of no more than two years from the date the restriction begins"
+      },
+      "correct_answer": "A",
+      "explanation": "In Nordenfelt [1894], the House of Lords held that a restraint of trade is enforceable if it is reasonable — reasonableness is assessed from two perspectives: (1) as between the parties — is the restraint no wider than is reasonably necessary to protect the covenantee's legitimate interest?; and (2) in terms of the public interest — does the restraint not harm the public by unduly restricting competition? Both limbs must be satisfied. In Nordenfelt itself, a worldwide restraint lasting 25 years was upheld because the business was genuinely global and the consideration (a large sum) was adequate."
+    },
+    {
+      "id": 3,
+      "question": "In the context of post-employment restraints, which of the following is recognised as a legitimate proprietary interest that an employer may protect?",
+      "options": {
+        "A": "The employer's general interest in preventing competition from a former employee",
+        "B": "Trade secrets and confidential information, and customer connections (goodwill)",
+        "C": "The employer's investment in training the employee",
+        "D": "The employer's workforce stability and morale"
+      },
+      "correct_answer": "B",
+      "explanation": "The courts recognise only limited categories of legitimate proprietary interest in post-employment restraints: (1) trade secrets and genuinely confidential information; and (2) customer connections or goodwill (where the employee had close personal contact with clients and could exploit those relationships). The employer's general desire to prevent competition or to protect investment in training is not, by itself, a sufficient proprietary interest to justify a post-employment restraint: Herbert Morris Ltd v Saxelby [1916] (HL). A bare non-competition clause protecting only the employer's general business interest will not be upheld."
+    },
+    {
+      "id": 4,
+      "question": "In Esso Petroleum Co Ltd v Harper's Garage (Stourport) Ltd [1968] (HL), the House of Lords considered solus (exclusive dealing) agreements. The Court applied the restraint of trade doctrine and held that:",
+      "options": {
+        "A": "Exclusive dealing agreements are automatically void as they restrain a party's freedom to trade with others",
+        "B": "A five-year exclusive dealing arrangement was valid but a 21-year arrangement was unreasonably long and void as a restraint of trade",
+        "C": "The restraint of trade doctrine does not apply to commercial agreements between companies of equal bargaining power",
+        "D": "Exclusive supply agreements in the fuel industry are exempt from the restraint of trade doctrine by statute"
+      },
+      "correct_answer": "B",
+      "explanation": "In Esso Petroleum v Harper's Garage [1968], the House of Lords applied the restraint of trade doctrine to solus (exclusive dealing) petrol supply agreements. A five-year exclusive agreement (where the garage tied its sales exclusively to Esso) was held reasonable and enforceable. A second agreement of 21 years tied to a mortgage was held unreasonably long in its duration and therefore void as an unjustifiable restraint of trade. The case confirmed that the doctrine applies to commercial agreements, not just employment contracts."
+    },
+    {
+      "id": 5,
+      "question": "A covenant in restraint of trade must be reasonable 'as between the parties.' This means:",
+      "options": {
+        "A": "Both parties must agree in writing that the restraint is reasonable",
+        "B": "The restraint must be no wider — in terms of activity restricted, geographic area, and duration — than is reasonably necessary to protect the covenantee's legitimate interest",
+        "C": "Both parties must receive legal advice before the covenant is valid",
+        "D": "The court must balance the financial consideration paid against the scope of the restraint"
+      },
+      "correct_answer": "B",
+      "explanation": "Reasonableness as between the parties requires that the restraint is drafted no more widely than is necessary to protect the covenantee's identified legitimate interest. The three dimensions of reasonableness are: (1) scope of activity restricted — does it go beyond what threatens the legitimate interest?; (2) geographic area — does it extend beyond the area where the protected interest is at risk?; and (3) duration — is the time period longer than needed? A covenant that is over-broad in any of these dimensions will fail as an unreasonable restraint unless the courts can sever the excess."
+    },
+    {
+      "id": 6,
+      "question": "In the sale of a business context, a vendor sells their business together with its goodwill and provides a covenant not to compete for five years within a 50-mile radius. Such a covenant is:",
+      "options": {
+        "A": "Always void as it prevents the vendor from working",
+        "B": "More readily enforceable than equivalent post-employment covenants, because the purchaser has paid for the goodwill and the vendor has agreed not to undermine it",
+        "C": "Enforceable only if the purchaser can prove actual financial loss resulting from competition",
+        "D": "Enforceable only for the period during which the purchase price has not been fully repaid"
+      },
+      "correct_answer": "B",
+      "explanation": "Courts are more willing to uphold restraints in the sale of a business context than in employment contracts. Where a vendor sells a business including its goodwill, there is a clear legitimate interest (the goodwill purchased) and the parties are typically in equal bargaining positions. The vendor has received financial consideration specifically referable to the restriction and has agreed not to undermine the value they have sold. Accordingly, the courts will enforce wider restraints in business sale contexts than they would in employment: Nordenfelt [1894], Allied Dunbar v Weisinger [1988]."
+    },
+    {
+      "id": 7,
+      "question": "The Irish case of Mulligan v Corr [1925] (SC Ireland) concerned a covenant in a partnership dissolution agreement. The Irish courts held that:",
+      "options": {
+        "A": "Partnership restraints are void as contrary to the principle of freedom of trade",
+        "B": "A restraint in a partnership dissolution agreement is subject to the same test as commercial restraints generally — it will be enforced if it is reasonable in the interests of the parties and the public",
+        "C": "Only restraints of less than three years are enforceable in partnership dissolution agreements under Irish law",
+        "D": "The restraint of trade doctrine does not apply to partnerships — they are governed exclusively by the Partnership Act 1890"
+      },
+      "correct_answer": "B",
+      "explanation": "In Mulligan v Corr [1925], the Irish Supreme Court confirmed that the restraint of trade doctrine applies to covenants in partnership dissolution agreements and assessed the covenant by reference to the reasonableness standard — whether it was reasonable in the interests of the parties and not contrary to the public interest. This confirms that Irish law applies the same principles as English law in this area, following the approach established in Nordenfelt [1894] and the English authorities on restraint of trade in commercial and professional contexts."
+    },
+    {
+      "id": 8,
+      "question": "The 'blue pencil' rule in the context of restraint of trade covenants allows the court to:",
+      "options": {
+        "A": "Rewrite an overly broad covenant to make it enforceable by substituting reasonable limits",
+        "B": "Strike through and delete words from the covenant to remove the offending excess, provided the remainder is sensible and the deletion does not require adding or substituting words",
+        "C": "Reduce the financial consideration paid if the covenant is found to be unreasonably broad",
+        "D": "Divide the covenant into separate geographic zones and enforce it in some areas but not others"
+      },
+      "correct_answer": "B",
+      "explanation": "The blue pencil rule allows courts to sever the excessive part of a restraint of trade covenant by literally striking through the offending words, provided the remainder makes grammatical and legal sense without requiring any additions or substitutions. In Goldsoll v Goldman [1915] (CA England), a clause prohibiting dealing anywhere in the world was blue-pencilled to remove the geographic excess, leaving a valid restriction in the UK and Ireland. The courts cannot rewrite or substitute words — they can only delete. If deletion would so alter the character of the covenant that it becomes a different obligation, severance will not be ordered."
+    },
+    {
+      "id": 9,
+      "question": "A non-solicitation clause in an employment contract that restricts a departing employee from soliciting former clients for 12 months after leaving:",
+      "options": {
+        "A": "Is automatically valid because 12 months is a reasonable period for any non-solicitation restraint",
+        "B": "Will be assessed for reasonableness — it is more likely to be enforceable than a non-competition clause if it is limited to clients the employee personally dealt with",
+        "C": "Is void because it prevents the employee from making a living in their profession",
+        "D": "Requires statutory approval from the Workplace Relations Commission before it is enforceable"
+      },
+      "correct_answer": "B",
+      "explanation": "Non-solicitation clauses are generally viewed more favourably by courts than outright non-competition clauses, because they are more narrowly targeted at protecting a specific legitimate interest (the employer's customer relationships). A non-solicitation clause limited to clients the employee personally dealt with during their employment, for a reasonable period, is likely to be enforced. The reasonableness of the period depends on the industry, the nature of the relationships, and how quickly goodwill is likely to be eroded without the employee's involvement."
+    },
+    {
+      "id": 10,
+      "question": "What is meant by 'legitimate proprietary interest' in the restraint of trade doctrine?",
+      "options": {
+        "A": "Any interest that is commercially valuable to the covenantee",
+        "B": "A specific, identifiable interest recognised by law as worthy of protection beyond the employer's or covenantee's general interest in avoiding competition",
+        "C": "An interest that is registered as intellectual property under Irish or EU law",
+        "D": "Any interest that the parties have agreed is worth protecting in the contract"
+      },
+      "correct_answer": "B",
+      "explanation": "A 'legitimate proprietary interest' is a specific category of interest that the law recognises as justifying a restriction on freedom to trade. The courts do not protect mere commercial interests in avoiding competition. Recognised categories include: trade secrets and confidential information (a property right); customer connections or goodwill in employment contexts (where the employee has personal relationships with clients); and the goodwill of a business that has been sold. Investment in training, staff stability, and general competitive advantage are not recognised legitimate proprietary interests: Herbert Morris Ltd v Saxelby [1916] (HL)."
+    }
+  ]
+}

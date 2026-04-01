@@ -1,0 +1,131 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module11_Lesson04.txt",
+  "module_number": 11,
+  "module_title": "Corporate Insolvency",
+  "lesson_number": 4,
+  "lesson_title": "Voidable Transactions: Unfair Preferences and Fraudulent Dispositions",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M11_L04_Q01",
+      "question": "Under s.604 of the Companies Act 2014, a liquidator seeks to set aside a payment made by Crestwood Ltd to its supplier Apex Ltd two months before the commencement of winding up. The payment was made in circumstances where Crestwood's directors genuinely believed it was necessary to preserve a key commercial relationship. Under Re MC Bacon Ltd [1990] BCLC 324, what must the liquidator establish to void the transaction as an unfair preference?",
+      "options": {
+        "A": "That the payment was made at a time when the company was insolvent, regardless of the directors' subjective intention",
+        "B": "That the dominant intention of the company in making the payment was to prefer Apex over other creditors — a desire, not merely a foreseen consequence, to improve Apex's position",
+        "C": "That Apex had actual knowledge of the company's insolvency at the time of payment, making it an accessory to the preference",
+        "D": "That the payment was made within 6 months of winding up and the transaction was uncommercial, applying an objective test without any requirement to prove subjective intent"
+      },
+      "correct_answer": "B",
+      "explanation": "Re MC Bacon Ltd [1990] (Millett J) is the leading authority on unfair preferences. Millett J held that the test is subjective: the company must have been influenced by a desire to prefer (i.e., to improve the creditor's position in the event of an insolvent winding up). It is not sufficient that the payment had the effect of preferring — the company must have desired that outcome. Commercial pressure, the wish to preserve a business relationship, or payment made to avoid threatened legal action, does not by itself establish the requisite desire to prefer. The liquidator bears the burden of proving this subjective desire. This principle is reflected in s.604 CA 2014 as applied in Irish law."
+    },
+    {
+      "id": "CL_M11_L04_Q02",
+      "question": "Section 604 of the Companies Act 2014 establishes different look-back periods for unfair preferences depending on whether the recipient is a connected person. Killorglin Ltd is wound up on 1 June 2024. The liquidator identifies a payment of €200,000 made to a connected company (wholly owned by the same holding company) in September 2022. Is this transaction within the look-back period?",
+      "options": {
+        "A": "No — the look-back period for connected persons is 12 months, and September 2022 is more than 12 months before June 2024",
+        "B": "Yes — the look-back period for connected persons is two years before the commencement of winding up, and September 2022 falls within that period",
+        "C": "Yes — there is no time limit for challenging transactions involving connected persons under s.604; they may be challenged at any time",
+        "D": "No — the look-back period applies only to transactions with directors, not with connected companies; a separate provision governs inter-company transactions"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 604 CA 2014 distinguishes between the look-back periods: (i) for unconnected creditors, the relevant period is 6 months before commencement of winding up; (ii) for connected persons (as defined in s.220 CA 2014, which includes related companies, directors, their families, and companies they control), the period is 2 years before commencement of winding up. June 2024 minus 2 years = June 2022; a payment in September 2022 falls within the 2-year window. The liquidator can therefore challenge it — subject to establishing the requisite desire to prefer. Option A confuses the 6-month and 2-year periods."
+    },
+    {
+      "id": "CL_M11_L04_Q03",
+      "question": "Elite Logistics Ltd v McNamara [2022] IEHC considered the application of s.604 in the context of a company repaying a director's loan during the period of financial difficulty. Which of the following most accurately reflects the approach taken by the Irish High Court?",
+      "options": {
+        "A": "The court held that repayment of director loans is automatically an unfair preference and can always be set aside without proof of intent to prefer",
+        "B": "The court applied the subjective desire-to-prefer test and examined whether the particular repayment was influenced by a desire to improve the director's position in the event of winding up, rather than by legitimate commercial pressure",
+        "C": "The court held that repayment of a director's loan within the connected-person period creates an irrebuttable presumption of unfair preference, shifting the burden to the director to disprove insolvency",
+        "D": "The court rejected the subjective test in favour of an objective uncommercial transaction test, finding that any transaction at undervalue during the vulnerability period is automatically voidable"
+      },
+      "correct_answer": "B",
+      "explanation": "Elite Logistics v McNamara [2022] IEHC applied the standard s.604 analysis — the subjective desire-to-prefer test derived from Re MC Bacon Ltd — to a director loan repayment scenario. The court examined whether the specific repayment decision was driven by a genuine desire to improve the director's position in the event of winding up, or by other factors (e.g., the director threatening to withdraw support or withhold further funding). This is a nuanced factual inquiry. The court did not create a presumption of preference for director loan repayments (option C wrong) nor abandon the subjective test (option D wrong)."
+    },
+    {
+      "id": "CL_M11_L04_Q04",
+      "question": "Where a liquidator successfully establishes that a transaction is an unfair preference under s.604 of the Companies Act 2014, what is the primary remedy available?",
+      "options": {
+        "A": "The liquidator may personally pursue the directors who authorised the transaction for damages equal to the amount of the preference",
+        "B": "The court may make such order as it thinks fit to restore the position to what it would have been if the transaction had not been entered into — typically an order to repay the sum or restore the property",
+        "C": "The transaction is automatically void ab initio upon the commencement of winding up and no court order is necessary to recover the sum",
+        "D": "The preferential creditor is demoted in priority and must wait until all other creditors are paid in full before receiving any dividend in the liquidation"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 604(2) CA 2014 provides that where the court is satisfied a transaction constitutes an unfair preference, it may make such order as it thinks fit to restore the position to what it would have been had the transaction not been entered into. This is a discretionary remedy — the court fashions relief appropriate to the circumstances, most commonly requiring the recipient to repay the money (or return the asset). The transaction is not automatically void (option C wrong — court order is required). Directors' personal liability is a separate matter (option A conflates s.604 with misfeasance/restriction provisions). Option D (demotion of priority) is not a remedy under s.604."
+    },
+    {
+      "id": "CL_M11_L04_Q05",
+      "question": "Sandbrook Ltd, in serious financial difficulty, transfers its only significant asset (a portfolio of patents) to a newly incorporated sister company for a payment of €1 — the patents are valued at €2.5 million. The liquidator challenges this under s.604. A co-director argues the transaction was simply the result of a poor business decision and denies any intent to prefer. How does the connected-person rebuttable presumption under s.604(4) affect the analysis?",
+      "options": {
+        "A": "There is no rebuttable presumption; the liquidator must prove the desire to prefer in all cases including those involving connected parties",
+        "B": "For transactions with connected persons, s.604(4) raises a rebuttable presumption that the company was influenced by a desire to prefer — the burden shifts to the connected person to show the transaction was not so influenced",
+        "C": "The rebuttable presumption in s.604(4) operates only where the liquidator first obtains a court declaration that the company was insolvent at the date of the transaction",
+        "D": "The rebuttable presumption applies automatically in all cases irrespective of whether the recipient is a connected person, once the transaction occurred within 2 years of winding up"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 604(4) CA 2014 provides that, in the case of a transaction with a connected person, there is a rebuttable presumption that the company was influenced by a desire to prefer. This reversal of the burden of proof is a crucial feature distinguishing connected-party transactions from arm's-length ones. In the scenario, the sister company (a connected person within s.220) would need to adduce evidence rebutting this presumption — establishing legitimate commercial reasons for the transfer unrelated to the desire to prefer. The near-zero consideration dramatically strengthens the liquidator's case and makes rebuttal extremely difficult in practice. Option A is wrong — s.604(4) does create the presumption. Option D is wrong — it applies only to connected persons."
+    },
+    {
+      "id": "CL_M11_L04_Q06",
+      "question": "Section 601 of the Companies Act 2014 provides a remedy for fraudulent dispositions of company property. How does s.601 differ from s.604 (unfair preferences) in terms of the key elements the liquidator must establish?",
+      "options": {
+        "A": "Section 601 requires proof of an intent to defraud creditors (actual fraudulent intent), while s.604 requires proof of a desire to prefer a particular creditor; s.601 applies to gratuitous disposals whereas s.604 applies to payments in satisfaction of existing debts",
+        "B": "Both provisions require proof of fraudulent intent; they differ only in the look-back period, with s.601 applying to transactions within 6 months and s.604 applying to those within 2 years of winding up",
+        "C": "Section 601 is limited to transactions involving directors, while s.604 applies to all creditors including unconnected third parties",
+        "D": "Section 601 provides a criminal remedy (resulting in fines and imprisonment) while s.604 provides only a civil remedy for the liquidator"
+      },
+      "correct_answer": "A",
+      "explanation": "The key distinction is the mental element and nature of the transaction. Section 601 CA 2014 (fraudulent disposition — the former s.139 Companies Act 1990) targets disposals of property made with actual intent to defraud creditors. This requires proof of genuine fraudulent intent — a higher threshold than s.604. Typically s.601 applies to gratuitous or near-gratuitous disposals made to defeat creditors (e.g., transferring assets to a connected party for nothing). Section 604 (unfair preference) applies where an existing creditor is paid or given security in circumstances that constitute a preference — a lower mental element (desire to prefer, not full fraud). There is no time limit in s.601 (unlike s.604's 6-month/2-year periods), making it a powerful remedy against pre-insolvency asset-stripping."
+    },
+    {
+      "id": "CL_M11_L04_Q07",
+      "question": "A floating charge was created by Clonmel Components Ltd in favour of its bank two months before the commencement of winding up. The company was insolvent at the time the charge was created. Under s.597 of the Companies Act 2014, what is the consequence of this timing?",
+      "options": {
+        "A": "The floating charge is automatically void as a matter of law against the liquidator and creditors, because it was created within 12 months of winding up while the company was insolvent",
+        "B": "The floating charge is invalid against the liquidator to the extent it secures past indebtedness, unless the company received 'new money' (fresh cash or asset value) at the time the charge was created or thereafter",
+        "C": "The floating charge is fully valid as it was duly registered with the CRO; registration cures any defect arising from the company's insolvency at the time of creation",
+        "D": "The floating charge is voidable only at the election of the preferential creditors who must apply to court within 6 months of the commencement of winding up"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 597 CA 2014 (formerly s.288 Companies Act 1963) provides that a floating charge created within 12 months before the commencement of winding up is invalid against the liquidator except to the extent of 'new money' — i.e., cash paid or the value of goods or services supplied to the company at the time of or after the creation of the charge, plus interest at 5%. This prevents a company from preferring a creditor by granting a floating charge over existing unsecured debt. If the company was insolvent at the time of creation, the 12-month period expands. Registration does not validate a charge that falls foul of s.597 — the anti-avoidance rule overrides the registration principle."
+    },
+    {
+      "id": "CL_M11_L04_Q08",
+      "question": "Pemberton Ltd was wound up and the liquidator discovered that its director, Ms. O'Connor, had caused the company to pay her personal credit card bill of €45,000 three months before winding up. The liquidator characterises this as both a fraudulent disposition (s.601) and a misfeasance (s.612). Which of the following most accurately describes the overlap and distinction between these provisions?",
+      "options": {
+        "A": "Section 612 (misfeasance) provides the only remedy against officers — s.601 cannot be used against a director since it is limited to disposals to third parties external to the company",
+        "B": "Both provisions may be invoked; s.601 challenges the disposition itself (requiring proof of fraudulent intent), while s.612 provides a summary remedy against the director for breach of duty (misapplication of company money), for which recklessness suffices",
+        "C": "The provisions are mutually exclusive: a liquidator must elect between s.601 and s.612 and cannot pursue both in the same proceedings",
+        "D": "Section 601 is the appropriate remedy because it provides a higher quantum of damages (three times the amount misappropriated) whereas s.612 is limited to restoration of the sum misapplied"
+      },
+      "correct_answer": "B",
+      "explanation": "Both s.601 and s.612 may be available on the same facts and can be pursued simultaneously — they are not mutually exclusive (option C wrong). Section 601 attacks the disposition: it requires proof that the payment was made with intent to defraud creditors, and, if established, the court can set aside the transaction and order restoration. Section 612 CA 2014 provides a summary remedy against any officer who has misapplied company money or property in breach of duty — the standard is breach of fiduciary duty or duty of care, not necessarily full fraud. Paying personal debts from company funds is clearly misfeasance. In practice, liquidators often plead both in the alternative. Option A is wrong — s.601 can apply to internal disposals to directors. Option D invents a treble damages remedy."
+    },
+    {
+      "id": "CL_M11_L04_Q09",
+      "question": "In assessing whether a company was insolvent at the time of an alleged unfair preference under s.604, which dual test of insolvency is applied under Irish law?",
+      "options": {
+        "A": "Only the cash-flow test: whether the company could pay debts as they fell due at the time of the transaction",
+        "B": "Only the balance-sheet test: whether the company's total assets exceeded total liabilities at the time of the transaction",
+        "C": "Either the cash-flow test (inability to pay debts as they fall due) or the balance-sheet test (liabilities exceeding assets, taking into account contingent and future liabilities), whichever is more appropriate to the circumstances",
+        "D": "The insolvency standard under s.604 is determined exclusively by a court-appointed accountant's retrospective solvency analysis — neither test applies independently"
+      },
+      "correct_answer": "C",
+      "explanation": "Irish insolvency law (consistent with s.570 CA 2014 and the long-standing common law position) applies a dual test for insolvency: (1) commercial/cash-flow insolvency — the company cannot pay its debts as they fall due; and (2) balance-sheet insolvency — total liabilities (including contingent and prospective liabilities) exceed total assets. Either test suffices to establish insolvency for the purposes of s.604. In practice, both tests may be relevant on the same facts, and expert accountancy evidence is often adduced. However, the court (not a court-appointed accountant exclusively) determines insolvency — option D is wrong."
+    },
+    {
+      "id": "CL_M11_L04_Q10",
+      "question": "A liquidator challenges a charge granted by Westpark Ltd over its factory to a bank, on the grounds that it was not registered within the prescribed period. Under s.409 of the Companies Act 2014, what is the effect of failing to register a registrable charge within the 21-day period?",
+      "options": {
+        "A": "The charge is valid between the company and the bank, but void as against the liquidator and other creditors of the company",
+        "B": "The charge is void in its entirety, including as between the company and the bank, requiring a new instrument to be executed",
+        "C": "The charge remains valid but converts to an unsecured loan obligation, with the charge holder retaining a right to sue on the underlying debt",
+        "D": "The charge is voidable only if the company was insolvent at the date of creation; solvency at creation renders the charge valid despite late registration"
+      },
+      "correct_answer": "A",
+      "explanation": "Section 409 CA 2014 provides that where a registrable charge is not delivered for registration within 21 days of its creation, the charge is void as against the liquidator and any creditor of the company. Crucially, it remains valid as between the company and the charge holder — the underlying debt is not affected. Section 409(2) further provides that, on avoidance, the money secured by the charge becomes immediately repayable. The charge holder loses priority over other creditors but retains an unsecured claim. There is no requirement for the company to have been insolvent at the date of creation for the non-registration consequence to apply (option D wrong)."
+    }
+  ]
+}

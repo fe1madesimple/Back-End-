@@ -1,0 +1,131 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module07_Lesson02.txt",
+  "module_number": 7,
+  "module_title": "Shareholder Remedies",
+  "lesson_number": 2,
+  "lesson_title": "Foss v Harbottle and the Derivative Action",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M07_L02_Q01",
+      "question": "The rule in Foss v Harbottle (1843) establishes two interlocking propositions. Which of the following CORRECTLY states both?",
+      "options": {
+        "A": "1) The company is the proper plaintiff in respect of wrongs done to it; 2) The court will not interfere with the internal management of companies acting within their powers",
+        "B": "1) Individual shareholders may sue for losses suffered by the company; 2) The court will appoint a receiver where management is in dispute",
+        "C": "1) Directors must compensate shareholders for company losses; 2) A simple majority resolution can ratify any wrong done to the company",
+        "D": "1) The company's name must appear on all claims; 2) Minority shareholders can always bring representative actions"
+      },
+      "correct_answer": "A",
+      "explanation": "Foss v Harbottle (1843) established: (1) the proper plaintiff rule — the company, as a separate legal entity, is the proper plaintiff for wrongs done to it; and (2) the internal management rule — courts will not interfere in decisions that a simple majority can ratify. These principles underpin the derivative action exceptions."
+    },
+    {
+      "id": "CL_M07_L02_Q02",
+      "question": "A minority shareholder discovers that the three directors (who together own 60% of shares) misappropriated company funds by diverting a lucrative contract to a company they personally own. The minority shareholder seeks to sue the directors in the company's name. Under Foss v Harbottle, why does this present a fundamental procedural problem?",
+      "options": {
+        "A": "The minority shareholder lacks the minimum 10% shareholding required to bring litigation in the company's name",
+        "B": "The proper plaintiff for a wrong done to the company is the company itself, and the company is controlled by the wrongdoers who would prevent it from suing",
+        "C": "The three directors as majority shareholders can pass a resolution authorising the transactions retrospectively",
+        "D": "The minority shareholder must first obtain a court order appointing them as litigation guardian before proceeding"
+      },
+      "correct_answer": "B",
+      "explanation": "This is the classic Foss v Harbottle problem: the wrong is done to the company, so the company is the proper plaintiff; but the wrongdoers control the company and will not cause it to sue. The derivative action exception was developed precisely to address this situation — fraud on the minority."
+    },
+    {
+      "id": "CL_M07_L02_Q03",
+      "question": "The Irish courts established a structured test for derivative actions in Fanning v Murtagh [2009] IEHC. Which of the following CORRECTLY identifies all four elements of that test?",
+      "options": {
+        "A": "1) Prima facie case on the merits; 2) Company is controlled by the wrongdoers; 3) The wrong is a fraud on the minority; 4) The company is insolvent",
+        "B": "1) Prima facie case on the merits; 2) The company is being prevented from suing by those in control; 3) The wrong amounts to a fraud on the minority; 4) It is in the interests of justice to allow the action to proceed",
+        "C": "1) The shareholder owns at least 5% of shares; 2) The wrong is a breach of fiduciary duty; 3) The company has suffered a quantifiable loss; 4) No statutory remedy is available",
+        "D": "1) The action is not time-barred; 2) The wrongdoers are directors; 3) The board has refused to sue; 4) The petitioner will give an undertaking as to costs"
+      },
+      "correct_answer": "B",
+      "explanation": "In Fanning v Murtagh [2009] IEHC, Clarke J set out the four elements: (1) the shareholder must establish a prima facie case; (2) the company is being prevented from suing by those who control it; (3) the wrong amounts to a fraud on the minority; (4) it is in the interests of justice to permit the derivative action. These mirror the Wallersteiner v Moir [1974] UK approach."
+    },
+    {
+      "id": "CL_M07_L02_Q04",
+      "question": "The 'fraud on the minority' exception to Foss v Harbottle requires that the majority be both the wrongdoers AND in control of the company. In Cook v Deeks [1916] PC, what constituted the fraud on the minority?",
+      "options": {
+        "A": "The majority directors voted excessive remuneration for themselves using their combined majority in general meeting",
+        "B": "The majority directors diverted a contract opportunity belonging to the company to themselves and then used their voting power as shareholders to pass a resolution declaring the company had no interest in the contract",
+        "C": "The majority issued new shares to themselves at an undervalue without shareholder approval",
+        "D": "The majority refused to register a share transfer by the minority shareholder for three consecutive years"
+      },
+      "correct_answer": "B",
+      "explanation": "In Cook v Deeks [1916] PC, the director-majority diverted a railway contract from the company and then voted as shareholders to ratify their own misappropriation. The Privy Council held that the ratification was void — the majority cannot use their voting power to steal from the company and then validate the theft. This is the paradigm fraud on the minority."
+    },
+    {
+      "id": "CL_M07_L02_Q05",
+      "question": "Can a procedurally valid ratification by the majority of shareholders validly ratify conduct by directors who have diverted a corporate opportunity to themselves? Apply Cook v Deeks [1916] PC.",
+      "options": {
+        "A": "Yes — a special resolution ratifying director conduct is always effective as it represents the company's highest decision-making authority",
+        "B": "No — where the majority who are ratifying are the same persons who committed the wrong, the ratification is void as a fraud on the minority and the company",
+        "C": "Yes — provided the resolution passes with 75% majority, any breach of fiduciary duty can be retrospectively validated",
+        "D": "It depends — only where the director stands to make a personal profit exceeding €1 million will the courts refuse to give effect to the ratification"
+      },
+      "correct_answer": "B",
+      "explanation": "Cook v Deeks [1916] PC is the leading authority that wrongdoer-majority ratification of their own fraud is void. The majority cannot use their voting power to strip the company of an asset and then vote as shareholders to legitimate the theft. This remains good law in Ireland."
+    },
+    {
+      "id": "CL_M07_L02_Q06",
+      "question": "A minority shareholder seeks to bring a derivative claim. The majority argue that any wrong done is ratifiable by ordinary resolution. If the alleged wrong is that the majority directors approved their own remuneration at twice the market rate — and this was approved by the majority shareholders (who are the same persons) — can the wrong be ratified?",
+      "options": {
+        "A": "Yes — remuneration decisions are always ratifiable as they are commercial decisions within the majority's discretion",
+        "B": "No — where the majority are both the wrongdoers and the voting majority, any 'ratification' is self-serving and void as a fraud on the minority under Cook v Deeks",
+        "C": "Yes — once independent non-executive directors approved the remuneration, the resolution is unchallengeable",
+        "D": "No — remuneration exceeding the market rate automatically constitutes a preference payment and cannot be ratified under s.604 CA 2014"
+      },
+      "correct_answer": "B",
+      "explanation": "Where the majority shareholders who are voting to 'ratify' are the same persons who benefit from the wrong, their votes are infected by the same conflict of interest. Cook v Deeks and the fraud on the minority exception prevent self-interested ratification from blocking a derivative action."
+    },
+    {
+      "id": "CL_M07_L02_Q07",
+      "question": "In Daniels v Daniels [1978] Ch, the English court extended the fraud on the minority exception beyond traditional fraud. What was the nature of the alleged wrong, and what principle did the court apply?",
+      "options": {
+        "A": "Negligence causing company loss — the court held gross negligence by directors who benefit from it can constitute fraud on the minority even without dishonesty",
+        "B": "Breach of contract — the court held any commercial contract breach by directors is actionable as a derivative claim",
+        "C": "Ultra vires transactions — the court held that acting outside the objects clause is always fraud on the minority",
+        "D": "Misapplication of dividends — the court held that undeclared dividends give rise to a derivative action on behalf of all shareholders"
+      },
+      "correct_answer": "A",
+      "explanation": "In Daniels v Daniels [1978] Ch, the directors caused the company to sell property to one director's wife at undervalue. The court held that gross negligence by directors who personally benefit from it can constitute fraud on the minority — the element of self-benefit distinguishes mere negligence from actionable fraud on the minority."
+    },
+    {
+      "id": "CL_M07_L02_Q08",
+      "question": "In a derivative action, on whose behalf does the minority shareholder sue, and to whom do any damages recovered belong?",
+      "options": {
+        "A": "The minority shareholder sues on their own behalf and retains all damages recovered",
+        "B": "The minority shareholder sues on behalf of the company, and any damages recovered belong to the company — not the individual shareholder",
+        "C": "The minority shareholder sues on behalf of all shareholders collectively and damages are distributed pro-rata to all shareholders",
+        "D": "The minority shareholder sues as a class representative and damages are held on trust for future shareholders"
+      },
+      "correct_answer": "B",
+      "explanation": "A derivative action is brought in the company's name by the minority shareholder as a procedural vehicle. Any damages recovered flow to the company, not to the shareholder personally. This is the natural consequence of the proper plaintiff rule in Foss v Harbottle — the company suffered the wrong; the company recovers."
+    },
+    {
+      "id": "CL_M07_L02_Q09",
+      "question": "A minority shareholder brings a derivative action against two directors for misappropriating €500,000 of company funds. The action succeeds and judgment is given for €500,000. The minority shareholder then brings a separate action against the same two directors claiming personal compensation for the fall in the value of their shares caused by the misappropriation. How will this second claim be treated?",
+      "options": {
+        "A": "The second claim will succeed because the shareholder suffered a separate and distinct personal loss",
+        "B": "The second claim will be dismissed under the reflective loss principle — a shareholder cannot recover losses that merely reflect the company's loss already recoverable by the company",
+        "C": "The second claim can proceed but damages will be reduced to avoid double recovery",
+        "D": "The second claim is barred under the doctrine of res judicata as the same facts were litigated in the derivative action"
+      },
+      "correct_answer": "B",
+      "explanation": "The reflective loss principle (Prudential Assurance v Newman Industries [1982]; Johnson v Gore Wood [2002] HL) bars a shareholder from recovering in respect of losses that are merely the mirror image of the company's own loss. Since the company recovered the €500,000, the shareholder's fall in share value is entirely reflective of that corporate loss and is not separately recoverable."
+    },
+    {
+      "id": "CL_M07_L02_Q10",
+      "question": "The statutory derivative action under Part 11 CA 2014 (s.234 et seq.) modified the common law position from Foss v Harbottle. What is a key procedural requirement a shareholder must satisfy before bringing a statutory derivative action under s.234?",
+      "options": {
+        "A": "The shareholder must hold at least 10% of the issued share capital",
+        "B": "The shareholder must apply to court for leave to bring the action, establishing a prima facie case",
+        "C": "The shareholder must first pass a resolution at general meeting authorising the action",
+        "D": "The shareholder must give six months' written notice to all other shareholders before commencing proceedings"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.234 CA 2014, a member wishing to bring a derivative action must first apply to the court for leave. The court will grant leave only if the applicant establishes a prima facie case that the company is entitled to relief and that it is prima facie in the interests of the company that the action be allowed to proceed. There is no minimum shareholding threshold."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module04_Lesson03.txt",
+  "module_number": 4,
+  "module_title": "Borrowing by the Company",
+  "lesson_number": 3,
+  "lesson_title": "Retention of Title Clauses",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "A supplier of raw materials to a manufacturing company includes a simple retention of title (ROT) clause in its supply contract stating that title does not pass until the full purchase price is paid. The company goes into receivership before payment is made. The raw materials are still in their original, unaltered form on the company's premises. What is the supplier's legal position under Irish law?",
+      "options": {
+        "A": "The ROT clause creates an equitable charge over the goods that must be registered under Part 7 CA 2014 or it will be void against the receiver",
+        "B": "The supplier can recover the goods because a simple ROT clause is valid and effective — title never passed to the company so the goods are not company property",
+        "C": "The supplier has no claim because title passes automatically on physical delivery of goods regardless of contractual provisions",
+        "D": "The supplier must prove the ROT clause was separately registered with the CRO within 21 days of delivery"
+      },
+      "correct_answer": "B",
+      "explanation": "A simple ROT clause — one that reserves title until payment of the purchase price and makes no claim over proceeds of sale or manufactured goods — is valid and does NOT require registration as a charge. Under S17 Sale of Goods Act 1893, title passes when the parties intend it to pass. The ROT clause defers that intention. Re Charles Dougherty confirmed that a simple ROT clause does not create a charge: Carroll J rejected the receiver's argument that such a clause was a registerable charge. Since the goods remain identifiable and unaltered, the supplier can recover them from the receiver as they remain the supplier's property."
+    },
+    {
+      "id": 2,
+      "question": "The founding ROT case is Aluminium Industrie Vaassen BV v Romalpa Aluminium Ltd [1976] 1 WLR 676. What did this case establish, and why is it important as the starting point for all ROT analysis?",
+      "options": {
+        "A": "It established that ROT clauses are void against liquidators unless registered — all subsequent cases have modified this",
+        "B": "It established that ROT clauses are valid and enforceable — a clause providing title does not pass until all sums owed are paid is effective, and the supplier stands outside the liquidation",
+        "C": "It held that an ROT clause over manufactured goods is valid without registration — overruled by Re Peachdart",
+        "D": "It established that ROT clauses create floating charges over stock requiring mandatory registration under Part 7 CA 2014"
+      },
+      "correct_answer": "B",
+      "explanation": "Romalpa [1976] is the foundational authority establishing that ROT clauses are legally effective. The clause provided that title would not transfer until all sums owed to the Dutch manufacturer were paid. When the English company (Romalpa) went into receivership, the manufacturer successfully recovered both unmixed aluminium foil and the proceeds of foil already sold. The case demonstrated that an ROT clause allows a supplier to stand OUTSIDE the liquidation or receivership estate rather than proving as an unsecured creditor. However, subsequent cases significantly limited Romalpa's broader scope — particularly regarding proceeds of sale clauses and manufactured goods."
+    },
+    {
+      "id": 3,
+      "question": "A supplier delivers resin to a manufacturer under a simple ROT clause. The manufacturer irreversibly incorporates the resin into chipboard. The manufacturer becomes insolvent. The supplier claims the resin (or its value) back from the liquidator. Applying Borden (UK) v Scottish Timber Products [1981] and the Irish authorities, what is the outcome?",
+      "options": {
+        "A": "The supplier can recover the value of the resin from the chipboard proceeds because the ROT clause extends to the manufactured product",
+        "B": "The supplier's ROT clause fails because the resin has been irreversibly mixed into a different product — the resin ceases to exist as a separate identifiable asset",
+        "C": "The supplier can recover the chipboard itself in full because the ROT clause automatically covers all goods produced using the supplied materials",
+        "D": "The supplier can recover half the value of each chipboard sheet proportionate to the value of the resin in each sheet"
+      },
+      "correct_answer": "B",
+      "explanation": "Borden (UK) v Scottish Timber Products [1981] is the leading authority: when resin was irreversibly incorporated into chipboard, the resin ceased to exist as an identifiable asset. The Court of Appeal held that the ROT clause became meaningless at the moment of irreversible mixing — you cannot retain title in something that no longer exists. This is confirmed by Chaigley Farms v Crawford: 'Where property is consumed or substantially altered to produce some different substance — the ROT is lost.' The contrast is with Hendy Lennox Industries v Grahame Puttick [1984]: if the goods can be identified and removed without damage to the manufactured product, the ROT clause remains effective."
+    },
+    {
+      "id": 4,
+      "question": "Unitherm Heating v Wallace (Court of Criminal Appeal) is described by Courtney as 'marking the death-knell' for proceeds of sale clauses in Ireland. What principle did Irvine J establish, and what is the practical consequence for sellers who include such clauses?",
+      "options": {
+        "A": "Proceeds of sale clauses are valid and effective — they create an equitable assignment of the sale proceeds to the seller that does not require registration",
+        "B": "Proceeds of sale clauses will almost always be treated as creating a registerable charge — if unregistered under Part 7 CA 2014, they will be void against a liquidator or receiver",
+        "C": "Proceeds of sale clauses are only valid if the seller retains physical possession of the goods sold on",
+        "D": "Proceeds of sale clauses are valid provided the buyer holds proceeds on trust and maintains a separate bank account for them"
+      },
+      "correct_answer": "B",
+      "explanation": "In Unitherm Heating v Wallace, Irvine J held: 'In general, most recent authorities have tended to treat proceeds of sale clauses as giving rise to charges which require registration, and courts are reluctant to infer a fiduciary relationship.' This reflects Carroll Group Distributors v G&F Bourke [1990] (HC): when the buyer sold cigarettes 'on their own account' (not as agent), no fiduciary/trust relationship existed — the proceeds clause created a charge on the sale proceeds, which required registration. Since unregistered, it was void against the liquidator. Courtney's 'death-knell' comment reflects that Irish courts will not strain to find a trust in a commercial proceeds clause — sellers should not rely on such clauses being effective."
+    },
+    {
+      "id": 5,
+      "question": "A seller supplies steel to a manufacturing company under a contract containing an 'all sums due' clause — title does not pass until ALL sums owed by the buyer to the seller under any contract are paid, not just the amount due under the specific delivery. The buyer enters receivership with steel on its premises. The buyer owes money under multiple contracts. Applying Armour v Thyssen [1990] 3 All ER 481 (HL) and Re Stokes & McKiernan (HC), what is the legal position in Ireland?",
+      "options": {
+        "A": "The 'all sums due' clause creates a charge over the steel requiring registration — if unregistered it is void",
+        "B": "The 'all sums due' clause is valid and non-registerable — title does not pass until all sums owed are paid, regardless of which contract they arise from, so the seller can recover the steel",
+        "C": "The 'all sums due' clause is void as contrary to public policy — it is unconscionable to prevent title passing for debts under unrelated contracts",
+        "D": "The 'all sums due' clause is only effective if the parties expressly vary it for each delivery"
+      },
+      "correct_answer": "B",
+      "explanation": "Armour v Thyssen [1990] 3 All ER 481 (HL) is the leading authority on all sums due clauses. The House of Lords upheld an 'all sums due' clause: since all sums (across multiple contracts) remained unpaid, title never transferred, and the seller could recover the steel from the receiver. The clause was characterised as a simple ROT — not a charge — and therefore did not require registration. Re Stokes & McKiernan (HC) confirmed this approach is applicable in Ireland. The key distinction from a proceeds of sale clause: the seller is claiming the original goods (not the proceeds from their onward sale), which is why no charge is created — the property simply never left the seller's legal ownership."
+    },
+    {
+      "id": 6,
+      "question": "Re Peachdart [1984] and Re Borden [1981] together establish clear principles on manufactured goods clauses (aggregation clauses). A supplier of leather claims ownership of handbags manufactured from the supplied leather once the buyer becomes insolvent. Applying Re Peachdart, what is the outcome?",
+      "options": {
+        "A": "The supplier can recover the handbags because the leather is physically identifiable within the product",
+        "B": "The supplier's claim to the handbags amounts to claiming a proprietary interest in newly manufactured goods — this is treated as a charge over the handbags which must be registered; if unregistered, it fails",
+        "C": "The supplier can claim a proportionate share of the handbags equal to the value of the leather in each bag",
+        "D": "The claim succeeds because all manufactured goods clauses are treated as simple ROT clauses not requiring registration"
+      },
+      "correct_answer": "B",
+      "explanation": "Re Peachdart [1984] is a critical authority: leather was used to make handbags. The court held that once goods are manufactured into a different item, the supplier is claiming a proprietary interest in the MANUFACTURED GOODS (handbags) — not in the original materials (leather). This proprietary claim over newly created goods is treated as a charge, which requires registration under Part 7 CA 2014 (equivalent S109 Companies Act 1985). Since unregistered, the charge was void. The contrast with Hendy Lennox: if the original goods can be IDENTIFIED and REMOVED without damage to the manufactured product, the ROT clause stands. But where manufacturing transforms the goods into something new, the claim is a charge."
+    },
+    {
+      "id": 7,
+      "question": "Hendy Lennox (Industrial Engines) Ltd v Grahame Puttick Ltd [1984] 2 All ER 152 establishes an important practical limit on when manufactured/aggregated goods clauses fail. What is the key principle from Hendy Lennox?",
+      "options": {
+        "A": "An ROT clause always fails once goods are physically incorporated into a larger structure or product",
+        "B": "If goods sold can be identified and removed from the manufactured item without damaging it, the ROT clause remains effective — the goods retain their identity",
+        "C": "An ROT clause fails once goods are attached to other goods, regardless of whether removal is possible",
+        "D": "An ROT clause is only valid over goods that remain entirely unmodified from their original manufactured state"
+      },
+      "correct_answer": "B",
+      "explanation": "Hendy Lennox [1984] draws the critical distinction: diesel engines were supplied under an ROT clause and incorporated into generating sets. Staughton J held that the ROT clause remained effective because the engines were IDENTIFIABLE (they had serial numbers) and could be REMOVED from the generating sets without damage to either the engine or the set. This contrasts with Re Borden (resin irreversibly mixed into chipboard — impossible to separate) and Re Peachdart (leather transformed into handbags — the original leather no longer exists as such). The practical test is: can the original goods be identified and physically separated without material damage? If yes, the simple ROT clause survives."
+    },
+    {
+      "id": 8,
+      "question": "Carroll Group Distributors v G&F Bourke Ltd [1990] (HC) examined whether a proceeds of sale clause operated as a trust or a charge. The company sold cigarettes on to customers 'on their own account.' What was the critical legal consequence of this characterisation?",
+      "options": {
+        "A": "Because Bourke sold on their own account (not as Carroll's agent), a fiduciary relationship was established — proceeds were held on trust for Carroll",
+        "B": "Because Bourke sold on their own account (not as Carroll's agent), no fiduciary/trust relationship existed — the proceeds clause created a charge over the proceeds of sale, which required registration; unregistered, it was void",
+        "C": "The proceeds clause was a valid equitable assignment of the proceeds without need for registration",
+        "D": "The court held that all proceeds of cigarettes automatically revert to the original supplier regardless of any clause"
+      },
+      "correct_answer": "B",
+      "explanation": "Carroll Group Distributors v G&F Bourke [1990] (HC) is the leading Irish case on proceeds of sale clauses. When Bourke sold cigarettes 'on their own account' (not as agent/trustee for Carroll), the court held there was no fiduciary relationship. The proceeds clause therefore operated as a CHARGE on the sale proceeds — not as a trust. As it was not registered under the Companies Acts, it was void against the liquidator. This represents the Irish approach: courts are deeply reluctant to find a fiduciary/trust relationship in commercial transactions. The distinction between a trust (no registration needed) and a charge (registration required) is the crucial pivot of all proceeds of sale clause analysis."
+    },
+    {
+      "id": 9,
+      "question": "What is the legal basis under Irish law that makes retention of title clauses possible — i.e., what provision permits the parties to determine when title in goods passes?",
+      "options": {
+        "A": "S408 CA 2014 — which defines a 'charge' and thereby implicitly excludes ROT clauses",
+        "B": "S17 Sale of Goods Act 1893 — title in goods passes when the parties intend it to pass; an ROT clause defers that intention",
+        "C": "S121 CA 2014 — which governs distributions from company profits",
+        "D": "The Indoor Management Rule under S40 CA 2014 — which protects third-party sellers"
+      },
+      "correct_answer": "B",
+      "explanation": "The legal foundation for ROT clauses is S17 Sale of Goods Act 1893, which provides that title in goods passes when the parties intend it to pass. This is a fundamental principle of freedom of contract in the sale of goods: if the parties clearly agree that title shall not pass until payment is received, the law respects that intention. An ROT clause is therefore not a creation of property rights over someone else's goods (which would be a charge) — it is simply a deferral of the moment at which title would otherwise pass. This foundation distinguishes a simple ROT clause (valid, no registration) from a proceeds of sale or aggregation clause (may be a charge, registration required)."
+    },
+    {
+      "id": 10,
+      "question": "A supplier of goods to a company includes the following clause: 'Title in these goods shall not pass until the buyer has paid the full price under this contract AND all other sums owing to us under any other contract.' The company's liquidator argues this clause is invalid as a charge. Which authority most directly determines whether this clause is valid in Ireland?",
+      "options": {
+        "A": "Carroll Group Distributors v G&F Bourke [1990] — proceeds clause treated as registerable charge",
+        "B": "Re Stokes & McKiernan (HC) and Armour v Thyssen [1990] HL — 'all sums due' clause is valid and does not require registration",
+        "C": "Re Peachdart [1984] — aggregation clause over manufactured goods requires registration",
+        "D": "Borden v Scottish Timber [1981] — irreversible mixing destroys ROT"
+      },
+      "correct_answer": "B",
+      "explanation": "An 'all sums due' clause is specifically addressed by Re Stokes & McKiernan (HC, Ireland) and Armour v Thyssen [1990] 3 All ER 481 (HL). Both cases confirm that an 'all sums due' clause is a valid simple ROT clause that does NOT require registration — it is not a charge. The rationale: the seller is simply retaining title in goods already delivered by them until all debts between the parties are discharged. The seller is not claiming any proprietary interest in new assets, new goods, or proceeds — they are simply not relinquishing title to their own goods. This distinguishes it from a proceeds clause (Bourke, Unitherm) and an aggregation clause (Peachdart, Borden)."
+    }
+  ]
+}

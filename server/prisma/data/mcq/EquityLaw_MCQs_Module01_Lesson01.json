@@ -1,0 +1,131 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "Module_01_Lesson_01_The_Equitable_Maxims.txt",
+  "module_number": 1,
+  "module_title": "Foundations of Equity",
+  "lesson_number": 1,
+  "lesson_title": "The Equitable Maxims",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EQL_M01_L01_Q01",
+      "question": "Which Latin phrase expresses the maxim 'equity will not suffer a wrong to be without a remedy'?",
+      "options": {
+        "A": "Ubi jus ibi remedium",
+        "B": "Aequitas sequitur legem",
+        "C": "Ex turpi causa non oritur actio",
+        "D": "Nemo dat quod non habet"
+      },
+      "correct_answer": "A",
+      "explanation": "The maxim 'equity will not suffer a wrong to be without a remedy' is expressed in the Latin phrase 'ubi jus ibi remedium', meaning 'where there is a right, there is a remedy'. This is the foundational maxim explaining why equity developed — to fill gaps left by the rigidity of the common law."
+    },
+    {
+      "id": "EQL_M01_L01_Q02",
+      "question": "The maxim 'equity follows the law' was established in which case?",
+      "options": {
+        "A": "Walsh v Lonsdale [1882]",
+        "B": "Earl of Oxford's Case [1615]",
+        "C": "Moody v Cox [1917]",
+        "D": "Feeney v MacManus [1937]"
+      },
+      "correct_answer": "B",
+      "explanation": "The maxim 'equity follows the law' derives from the Earl of Oxford's Case [1615]. It establishes that equity does not exist to overthrow or replace the common law but to supplement it where there is a gap or deficiency. Where the common law provides an adequate remedy, equity will not interfere."
+    },
+    {
+      "id": "EQL_M01_L01_Q03",
+      "question": "The doctrine of laches reflects which equitable maxim?",
+      "options": {
+        "A": "He who seeks equity must do equity",
+        "B": "Equality is equity",
+        "C": "Delay defeats equity",
+        "D": "Equity acts in personam"
+      },
+      "correct_answer": "C",
+      "explanation": "The doctrine of laches reflects the maxim 'delay defeats equity'. It provides that if a party sits on their rights for too long, the court may refuse equitable relief. Laches is an equitable defence distinct from statutory limitation periods and can bar a claim even within the limitation period where delay has been unreasonable and prejudicial."
+    },
+    {
+      "id": "EQL_M01_L01_Q04",
+      "question": "The clean hands doctrine requires that the applicant's misconduct must be:",
+      "options": {
+        "A": "Of a criminal nature before the court will take notice",
+        "B": "Connected to the specific transaction or relief sought",
+        "C": "Disclosed to the respondent before proceedings are issued",
+        "D": "Admitted in the pleadings to be raised as a defence"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the clean hands doctrine, the applicant's misconduct must be connected to the specific transaction or relief sought. General bad behaviour is not sufficient to deny equitable relief — the unclean hands must relate to the matter before the court. This was confirmed in Moody v Cox and applied in the Irish case of Murphy Buckley and Keogh v Pye Ireland."
+    },
+    {
+      "id": "EQL_M01_L01_Q05",
+      "question": "The rule in Walsh v Lonsdale [1882] illustrates which equitable maxim?",
+      "options": {
+        "A": "Equity acts in personam",
+        "B": "Equality is equity",
+        "C": "Equity regards as done that which ought to be done",
+        "D": "He who comes to equity must come with clean hands"
+      },
+      "correct_answer": "C",
+      "explanation": "The rule in Walsh v Lonsdale [1882] illustrates the maxim 'equity regards as done that which ought to be done'. In that case, an agreement for a lease was treated as equivalent to an actual lease in equity. The maxim allows equity to look at substance over form — where a party has an obligation to do something, equity will treat it as already done."
+    },
+    {
+      "id": "EQL_M01_L01_Q06",
+      "question": "In Feeney v MacManus [1937], which equitable maxim was applied to divide surplus funds equally among members?",
+      "options": {
+        "A": "Equity will not perfect an imperfect gift",
+        "B": "Equality is equity",
+        "C": "Delay defeats equity",
+        "D": "He who seeks equity must do equity"
+      },
+      "correct_answer": "B",
+      "explanation": "Feeney v MacManus [1937] illustrates the maxim 'equality is equity'. Where there is no basis for distinguishing between competing claims, equity will divide equally. In this case, surplus funds of a dissolved unincorporated association were divided equally among existing members."
+    },
+    {
+      "id": "EQL_M01_L01_Q07",
+      "question": "The maxim 'equity acts in personam' means that the Court of Chancery historically enforced its orders against:",
+      "options": {
+        "A": "The property of the defendant directly through sequestration",
+        "B": "The defendant personally, through their conscience",
+        "C": "Third parties who held assets on behalf of the defendant",
+        "D": "The Crown as ultimate enforcer of equitable obligations"
+      },
+      "correct_answer": "B",
+      "explanation": "The maxim 'equity acts in personam' means that the Court of Chancery enforced its orders not against property directly but against the person — the defendant's conscience. Disobeying an order of the Chancellor resulted in personal penalties, including imprisonment for contempt. This personal jurisdiction gave equity its unique character."
+    },
+    {
+      "id": "EQL_M01_L01_Q08",
+      "question": "Which maxim underpins the doctrines of satisfaction and ademption?",
+      "options": {
+        "A": "Equity will not suffer a wrong to be without a remedy",
+        "B": "Where the equities are equal, the first in time prevails",
+        "C": "Equity imputes an intention to fulfil an obligation",
+        "D": "Equity looks to the intent rather than the form"
+      },
+      "correct_answer": "C",
+      "explanation": "The maxim 'equity imputes an intention to fulfil an obligation' underpins the doctrines of satisfaction and ademption. It means that where a person is under an obligation and subsequently does an act referable to that obligation, equity will presume they intended to fulfil it."
+    },
+    {
+      "id": "EQL_M01_L01_Q09",
+      "question": "Which statement BEST describes the relationship between equity and the common law?",
+      "options": {
+        "A": "Equity displaces the common law wherever there is a conflict",
+        "B": "Equity supplements the common law by filling gaps and remedying deficiencies",
+        "C": "Equity and common law operate as entirely separate systems with no interaction",
+        "D": "Equity only applies in criminal proceedings where statutory penalties are inadequate"
+      },
+      "correct_answer": "B",
+      "explanation": "Equity supplements the common law by filling gaps and remedying deficiencies — it does not overthrow or replace it. The maxim 'equity follows the law' establishes this relationship. Equity only acts where the common law provides an inadequate remedy."
+    },
+    {
+      "id": "EQL_M01_L01_Q10",
+      "question": "The maxim 'he who seeks equity must do equity' requires the applicant to:",
+      "options": {
+        "A": "Have obtained independent legal advice before applying to the court",
+        "B": "Be prepared to act fairly and deal justly with the opposing party",
+        "C": "Pay costs in advance as a condition of receiving equitable relief",
+        "D": "Waive any right to damages at common law before seeking an injunction"
+      },
+      "correct_answer": "B",
+      "explanation": "'He who seeks equity must do equity' requires that if a party is asking the court for an equitable remedy, they must be prepared to act fairly and deal justly with the other party. It is a condition of equitable relief — the applicant cannot seek the court's assistance while behaving unconscionably towards the respondent."
+    }
+  ]
+}

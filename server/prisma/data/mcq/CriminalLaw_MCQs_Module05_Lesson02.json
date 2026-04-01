@@ -1,0 +1,151 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module05_Lesson02.txt",
+  "module_number": 5,
+  "module_title": "Non-Fatal Offences Against the Person",
+  "lesson_number": 2,
+  "lesson_title": "Harassment and Stalking — Sections 10 and 10A, NFOATP 1997",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M05_L02_Q01",
+      "question": "Under Section 10(1) of the Non-Fatal Offences Against the Person Act 1997, which element is explicitly required to establish harassment?",
+      "options": {
+        "A": "The accused must have made direct physical contact with the complainant.",
+        "B": "The conduct must be persistent — a repeated course of acts over time.",
+        "C": "The complainant must fear that violence will be used against them.",
+        "D": "The conduct must have caused a substantial adverse impact on the complainant's daily activities."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 10(1) NFOATP 1997 explicitly requires that the accused persistently, by their acts, causes the requisite effect. Persistence — a repeated course of conduct — is an essential element of harassment. Options C and D describe elements of the stalking offence under s.10(2), not harassment.",
+      "difficulty": "easy",
+      "topic": "Section 10(1) Harassment"
+    },
+    {
+      "id": "CL_M05_L02_Q02",
+      "question": "What is the maximum penalty on conviction on indictment for harassment under Section 10(1) of the NFOATP 1997?",
+      "options": {
+        "A": "Five years imprisonment.",
+        "B": "Seven years imprisonment.",
+        "C": "Ten years imprisonment.",
+        "D": "Life imprisonment."
+      },
+      "correct_answer": "C",
+      "explanation": "The maximum penalty for harassment under s.10(1) NFOATP 1997 on conviction on indictment is ten years imprisonment. This is the same maximum as for the standalone stalking offence under s.10A.",
+      "difficulty": "easy",
+      "topic": "Section 10(1) — Penalty"
+    },
+    {
+      "id": "CL_M05_L02_Q03",
+      "question": "Section 10(2) NFOATP 1997 requires that the accused's conduct causes the complainant to experience which of the following?",
+      "options": {
+        "A": "Serious interference with peace and privacy on a persistent basis.",
+        "B": "Fear that violence will be used against them or a connected person, OR serious alarm or distress that has a substantial adverse impact on their usual day-to-day activities.",
+        "C": "Physical injury or medically recognised psychiatric harm.",
+        "D": "A pattern of escalating contact over a minimum period of three months."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 10(2) NFOATP 1997 requires that the conduct causes the complainant to fear that violence will be used against them or a connected person, OR to suffer serious alarm or distress that has a substantial adverse impact on their usual day-to-day activities. This is qualitatively different from the s.10(1) harassment effect — it is either fear of violence or a materially life-altering impact.",
+      "difficulty": "medium",
+      "topic": "Section 10(2) Stalking"
+    },
+    {
+      "id": "CL_M05_L02_Q04",
+      "question": "What is the key distinction between the harassment offence under Section 10(1) and the stalking offence under Section 10(2) of the NFOATP 1997?",
+      "options": {
+        "A": "Harassment requires proof of physical contact; stalking does not.",
+        "B": "Stalking requires persistence; harassment does not.",
+        "C": "Harassment requires persistent conduct causing alarm or distress; stalking focuses on the quality of the fear or distress — fear of violence or substantial adverse impact on daily life — without a mandatory persistence requirement.",
+        "D": "They are functionally identical offences and the distinction is of no practical significance."
+      },
+      "correct_answer": "C",
+      "explanation": "The critical distinction is as follows: harassment under s.10(1) requires persistence and the causing of serious interference, alarm, distress, or harm. Stalking under s.10(2) focuses on the quality of the impact — fear of violence or substantial adverse impact on daily life — and does not explicitly require persistence in the same way. A single, acutely threatening incident causing genuine fear of violence could ground a stalking charge. The offences are distinct and must not be conflated.",
+      "difficulty": "medium",
+      "topic": "Distinguishing Harassment from Stalking"
+    },
+    {
+      "id": "CL_M05_L02_Q05",
+      "question": "Section 10A of the NFOATP 1997 was inserted by which Act?",
+      "options": {
+        "A": "The Criminal Law (Rape) (Amendment) Act 1990.",
+        "B": "The Domestic Violence Act 2018.",
+        "C": "The Criminal Law (Harassment, Harmful Communications and Related Offences) Act 2020.",
+        "D": "The Criminal Justice (Miscellaneous Provisions) Act 2023."
+      },
+      "correct_answer": "C",
+      "explanation": "Section 10A was inserted into the NFOATP 1997 by the Criminal Law (Harassment, Harmful Communications and Related Offences) Act 2020. It creates a standalone stalking offence with enhanced provisions and introduced stalking protection orders as a civil protective mechanism. The 2023 Act made further amendments to the harassment and stalking provisions but did not insert s.10A.",
+      "difficulty": "medium",
+      "topic": "Section 10A — Legislation"
+    },
+    {
+      "id": "CL_M05_L02_Q06",
+      "question": "Which of the following is included in the non-exhaustive list of conduct capable of constituting harassment or stalking under Section 10(3) NFOATP 1997?",
+      "options": {
+        "A": "Applying direct physical force to the complainant's person.",
+        "B": "Following, watching, monitoring, tracking, or spying on a person.",
+        "C": "Using abusive language in a public place.",
+        "D": "Damaging property belonging to the complainant's employer."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 10(3) NFOATP 1997 provides a non-exhaustive list of acts that can constitute harassment or stalking. Following, watching, monitoring, tracking, or spying on a person is explicitly included. The list also includes pestering, communicating with or about a person, impersonating, disclosing private information, interfering with property or pets, and loitering near the person.",
+      "difficulty": "easy",
+      "topic": "Section 10(3) — Conduct"
+    },
+    {
+      "id": "CL_M05_L02_Q07",
+      "question": "The People (DPP) v O'Brien confirmed which principle relevant to harassment charges?",
+      "options": {
+        "A": "A single serious incident can ground a harassment conviction without any repeated conduct.",
+        "B": "Individual acts that appear innocuous in isolation can cumulatively constitute harassment where the course of conduct as a whole causes the requisite effect.",
+        "C": "The accused must have directed their conduct specifically at the complainant to ground a harassment charge.",
+        "D": "Harassment requires proof of subjective intent to cause alarm or distress."
+      },
+      "correct_answer": "B",
+      "explanation": "The People (DPP) v O'Brien confirmed that acts which might appear harmless in isolation — individual texts, drive-bys, or contact attempts — can cumulatively constitute harassment when the overall course of conduct causes serious interference with peace and privacy. The cumulative effect of a pattern of conduct is what matters, not whether any single act crosses the threshold on its own.",
+      "difficulty": "medium",
+      "topic": "The People (DPP) v O'Brien"
+    },
+    {
+      "id": "CL_M05_L02_Q08",
+      "question": "Patrick sends his former partner twelve text messages a day, parks outside her workplace each evening, and sends flowers to her office each week. She is deeply distressed and has stopped going out socially out of fear of encountering him. Which charges are most relevant on these facts?",
+      "options": {
+        "A": "Section 10(1) harassment only — no violence has been threatened.",
+        "B": "Section 10(1) harassment and Section 10(2) / 10A stalking — the conduct is persistent, causes distress, and has had a substantial adverse impact on her daily life.",
+        "C": "No criminal offence — the conduct does not involve physical force.",
+        "D": "Section 2 assault — the messages have caused apprehension of force."
+      },
+      "correct_answer": "B",
+      "explanation": "Patrick's persistent course of conduct — repeated texts, surveillance outside work, and deliveries — is capable of grounding both s.10(1) harassment (persistent acts causing serious interference with peace and privacy) and s.10(2) / s.10A stalking (serious alarm or distress with substantial adverse impact on daily activities, as evidenced by her withdrawal from social life). Both charges should be considered and analysed.",
+      "difficulty": "hard",
+      "topic": "Applying Section 10 — Problem Scenario"
+    },
+    {
+      "id": "CL_M05_L02_Q09",
+      "question": "What protective civil mechanism was introduced alongside the standalone stalking offence by the Criminal Law (Harassment, Harmful Communications and Related Offences) Act 2020?",
+      "options": {
+        "A": "Non-molestation orders under the Family Law Act.",
+        "B": "Stalking protection orders — interim and final orders available before criminal conviction.",
+        "C": "Barring orders applicable only in domestic settings.",
+        "D": "Injunctions available only after a criminal conviction for stalking."
+      },
+      "correct_answer": "B",
+      "explanation": "The 2020 Act, which inserted s.10A, introduced stalking protection orders — both interim and final orders — that courts can make to protect victims of stalking before any criminal conviction is secured. This is a preventive civil mechanism that allows courts to impose restrictions on the stalker at an early stage. It is distinct from, and can operate alongside, the criminal prosecution process.",
+      "difficulty": "medium",
+      "topic": "Stalking Protection Orders"
+    },
+    {
+      "id": "CL_M05_L02_Q10",
+      "question": "In an exam scenario involving an accused who has sent threatening messages, followed a person, and damaged their car, what is the most comprehensive approach to charging?",
+      "options": {
+        "A": "Charge only the most serious offence to avoid multiplicity.",
+        "B": "Charge harassment under s.10(1) only, as this is the primary provision.",
+        "C": "Consider all offences raised by the facts — s.10(1) harassment, s.10(2) / s.10A stalking, s.2 assault (if the messages caused apprehension of force), and criminal damage — as a defendant can be charged with and convicted of multiple offences arising from the same factual matrix.",
+        "D": "Charge stalking under s.10A only, as it carries the highest penalty and subsumes the other offences."
+      },
+      "correct_answer": "C",
+      "explanation": "In Irish criminal law, a defendant can be charged with and convicted of multiple distinct offences arising from the same facts. Threatening messages may ground s.2 assault as well as harassment and stalking. Car damage adds criminal damage. A comprehensive exam answer identifies all offences supported by the facts, analyses each, and explains why multiple charges can run concurrently. Selecting only one charge when others are available on the facts is an error.",
+      "difficulty": "hard",
+      "topic": "Multiple Charges — Exam Technique"
+    }
+  ]
+}

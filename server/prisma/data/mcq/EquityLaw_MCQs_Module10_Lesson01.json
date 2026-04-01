@@ -1,0 +1,131 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "Module_10_Lesson_01_Specific_Performance_and_Other_Equitable_Remedies.txt",
+  "module_number": 10,
+  "module_title": "Specific Performance and Other Equitable Remedies",
+  "lesson_number": 1,
+  "lesson_title": "Specific Performance and Other Equitable Remedies",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EQL_M10_L01_Q01",
+      "question": "Specific performance is an equitable remedy that compels a party to perform their contractual obligations. In which type of contract is it most commonly granted?",
+      "options": {
+        "A": "Contracts for the sale of ordinary commercial goods.",
+        "B": "Contracts for personal services such as employment contracts.",
+        "C": "Contracts for the sale of land or a unique interest in property.",
+        "D": "All contracts where the defendant is in breach."
+      },
+      "correct_answer": "C",
+      "explanation": "Specific performance is most commonly sought and granted in contracts for the sale of land or a unique interest in property. Land is considered unique — no two plots are exactly the same — so damages are ordinarily considered inadequate to compensate a purchaser who does not obtain the particular property contracted for. In Walsh v Lonsdale, the principle that a contract for land will in ordinary circumstances be specifically enforceable was confirmed."
+    },
+    {
+      "id": "EQL_M10_L01_Q02",
+      "question": "Specific performance is described as a discretionary remedy. What is the primary threshold requirement before it will be granted?",
+      "options": {
+        "A": "The plaintiff must show the defendant acted fraudulently.",
+        "B": "The plaintiff must show a probability of success at trial.",
+        "C": "Damages at common law would be an inadequate remedy — specific performance is only available where damages cannot adequately compensate the plaintiff.",
+        "D": "The plaintiff must have given consideration in excess of the market value of the subject matter."
+      },
+      "correct_answer": "C",
+      "explanation": "Specific performance is a discretionary equitable remedy available only where damages at common law would be an inadequate remedy. If money could fully compensate the plaintiff for the breach, equity will not intervene with specific performance. The inadequacy of damages is the primary threshold, and the court retains a broad discretion to refuse the remedy even where this threshold is met, if equitable defences apply."
+    },
+    {
+      "id": "EQL_M10_L01_Q03",
+      "question": "Why will equity not grant specific performance of a contract for personal services?",
+      "options": {
+        "A": "Because personal service contracts are void at common law.",
+        "B": "Because compelling a person to work for another interferes with personal liberty, the court cannot supervise performance, and compelling service in an adversarial context would not produce satisfactory results.",
+        "C": "Because personal service contracts always lack consideration.",
+        "D": "Because the Trustee Act 1893 prohibits specific performance of service contracts."
+      },
+      "correct_answer": "B",
+      "explanation": "Equity will not grant specific performance of contracts for personal services for three reasons: (1) it interferes with personal liberty to compel a person to work for another; (2) the court cannot supervise the quality of ongoing personal performance; and (3) compelling service in an adversarial context would not produce satisfactory results. The plaintiff's remedy for breach of a personal service contract is damages, not specific performance."
+    },
+    {
+      "id": "EQL_M10_L01_Q04",
+      "question": "Which of the following is a recognised equitable defence to a claim for specific performance?",
+      "options": {
+        "A": "The defendant's insolvency.",
+        "B": "Laches — unreasonable delay by the plaintiff in seeking the remedy.",
+        "C": "The contract was concluded without legal representation for the defendant.",
+        "D": "The subject matter of the contract has increased in value since the contract was made."
+      },
+      "correct_answer": "B",
+      "explanation": "Laches — unreasonable delay in seeking the remedy — is a recognised equitable defence to specific performance. As an equitable remedy, specific performance is subject to the standard equitable defences: laches (unreasonable delay to the defendant's prejudice); hardship (where granting the remedy would cause unreasonable hardship to the defendant); clean hands (where the plaintiff's own conduct was inequitable in relation to the transaction); and mistake (where the defendant contracted under a serious mistake of which the plaintiff was aware)."
+    },
+    {
+      "id": "EQL_M10_L01_Q05",
+      "question": "Rescission is an equitable remedy. In what circumstances is it available, and what does it seek to achieve?",
+      "options": {
+        "A": "Rescission is available only for contracts for the sale of land and corrects the written document to reflect the parties' true agreement.",
+        "B": "Rescission is available where the contract was entered into on the basis of misrepresentation, undue influence, duress, or unconscionable dealing; it sets the contract aside and restores the parties to their pre-contractual positions.",
+        "C": "Rescission is available where the defendant is in breach of contract and allows the plaintiff to obtain damages equivalent to the contract price.",
+        "D": "Rescission is available only where both parties agree to set the contract aside."
+      },
+      "correct_answer": "B",
+      "explanation": "Rescission is the equitable remedy that sets a contract aside and restores the parties to their pre-contractual positions. It is available where the contract was entered into on the basis of misrepresentation, undue influence, duress, or unconscionable dealing. Rescission is subject to bars — laches, third-party rights, affirmation of the contract, and impossibility of restoring the parties to their original positions (restitutio in integrum)."
+    },
+    {
+      "id": "EQL_M10_L01_Q06",
+      "question": "In Joscelyne v Nissen (1970), the Court of Appeal confirmed the requirements for rectification. What are those requirements?",
+      "options": {
+        "A": "A written agreement; a subsequent mistake by both parties; and notice to the other party.",
+        "B": "A concluded prior agreement; the written document fails to record it accurately; and convincing proof of the discrepancy — while a legally binding prior agreement is not strictly required, there must be a continuing common intention that the document should reflect the prior term.",
+        "C": "A signed contract; fraudulent misrepresentation by one party; and financial loss resulting from the mistake.",
+        "D": "Mutual mistake; the mistake must relate to an essential term; and the document must be corrected within one year of execution."
+      },
+      "correct_answer": "B",
+      "explanation": "In Joscelyne v Nissen (1970), the Court of Appeal confirmed that for rectification: (1) there must be a concluded prior agreement or a continuing common intention as to the term in question; (2) the written document must fail to record that agreement or intention accurately; and (3) there must be convincing proof of the discrepancy. A legally binding prior agreement is not strictly required — a continuing common intention at the time of execution that the document should reflect a prior term is sufficient. Rectification corrects the document to reflect the true agreement."
+    },
+    {
+      "id": "EQL_M10_L01_Q07",
+      "question": "In Lucey v Laurel Construction, the Irish courts applied the remedy of rectification. What does this case establish about the availability of rectification in Irish law?",
+      "options": {
+        "A": "Rectification is not available in Ireland — only rescission may be obtained for a mistake in a written document.",
+        "B": "The Irish courts have applied the standard requirements for rectification and rectified a deed of conveyance to reflect the true intentions of the parties, confirming that rectification is available in Irish law.",
+        "C": "Rectification in Ireland requires a statutory application rather than an equitable claim.",
+        "D": "Rectification is available in Ireland only where both parties agree to the correction."
+      },
+      "correct_answer": "B",
+      "explanation": "In Lucey v Laurel Construction, the Irish courts applied the standard requirements for rectification and rectified a deed of conveyance to reflect the true intentions of the parties. The case confirms that rectification is an available equitable remedy in Irish law, applied on the same basis as the English position in Joscelyne v Nissen (1970). This is the leading Irish authority on the availability and application of rectification."
+    },
+    {
+      "id": "EQL_M10_L01_Q08",
+      "question": "Account of profits is an equitable remedy available against fiduciaries who make unauthorised profits. In Boardman v Phipps (1967), the court ordered an account of profits. What did this remedy require?",
+      "options": {
+        "A": "The fiduciary was required to pay damages equal to the loss suffered by the trust fund.",
+        "B": "The fiduciary was required to hand over to the beneficiaries the profits made from the unauthorised share purchase.",
+        "C": "The fiduciary was required to restore the trust fund to the position it would have been in had the breach not occurred.",
+        "D": "The fiduciary was required to transfer the shares purchased back to the company at the original purchase price."
+      },
+      "correct_answer": "B",
+      "explanation": "In Boardman v Phipps (1967), the court ordered an account of profits — compelling the solicitor to hand over to the beneficiaries the profits made from the unauthorised share purchase. Account of profits requires the defendant to disgorge the profits they made from their wrongdoing, regardless of whether the plaintiff suffered a corresponding loss. It is available as an alternative to compensatory damages and may be more generous where the wrongdoer's profits exceed the plaintiff's measurable loss."
+    },
+    {
+      "id": "EQL_M10_L01_Q09",
+      "question": "In Re Hallett's Estate (1880), the court considered the equitable remedy of tracing. What principle did the court establish in relation to mixed bank accounts?",
+      "options": {
+        "A": "Where a trustee mixes trust money with their own money, the beneficiary cannot trace into the mixed fund.",
+        "B": "Where a trustee mixes trust money with their own money in a bank account, the beneficiary can claim that the trust money survives in the account to the extent of the lowest intermediate balance.",
+        "C": "Where a trustee mixes trust money with their own money, the court divides the fund equally between the trustee and the beneficiary.",
+        "D": "Where a trustee mixes trust money with their own money, all money in the account is held on trust for the beneficiary."
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Hallett's Estate (1880), the court held that where a trustee mixes trust money with their own money in a bank account, the beneficiary can claim that the trust money survives in the account to the extent of the lowest intermediate balance. Equitable tracing is more powerful than common law tracing because it follows the property through a mixed fund. This allows beneficiaries to establish a proprietary claim to the original asset or its substitute, which is enforceable in priority to general creditors."
+    },
+    {
+      "id": "EQL_M10_L01_Q10",
+      "question": "For FE-1 examination purposes, which of the following correctly identifies the equitable remedies covered in Module 10 and the key authority associated with each?",
+      "options": {
+        "A": "Damages (Hadley v Baxendale); injunctions (Campus Oil 1983); and specific performance (all contracts).",
+        "B": "Specific performance — available for contracts for land, inadequacy of damages required, defences include laches, hardship, and clean hands, no personal service contracts; rescission — bars include affirmation and impossibility of restitutio; rectification — Joscelyne v Nissen (1970), Lucey v Laurel Construction; account of profits — Boardman v Phipps (1967); tracing — Re Hallett's Estate (1880).",
+        "C": "Resulting trusts (Westdeutsche 1996); constructive trusts (Lloyds Bank v Rosset 1991); and proprietary estoppel (Grealish v Murphy 1946).",
+        "D": "The three certainties (Knight v Knight 1840); secret trusts (Re Keen 1937); and mutual wills (Re Hagger 1930)."
+      },
+      "correct_answer": "B",
+      "explanation": "The equitable remedies covered in Module 10 are: (1) specific performance — available for contracts for land (Walsh v Lonsdale) where damages are inadequate; equitable defences include laches, hardship, and clean hands; not available for personal service contracts; (2) rescission — sets the contract aside; subject to bars including affirmation, third-party rights, and impossibility of restitutio; (3) rectification — corrects a written document; Joscelyne v Nissen (1970) requirements; Lucey v Laurel Construction (Irish); (4) account of profits — disgorges unauthorised profits from fiduciaries; Boardman v Phipps (1967); (5) tracing — Re Hallett's Estate (1880) — lowest intermediate balance rule in mixed accounts."
+    }
+  ]
+}

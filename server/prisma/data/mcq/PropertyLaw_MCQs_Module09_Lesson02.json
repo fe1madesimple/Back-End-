@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_09_Lesson_02_Covenants_in_Leases.txt",
+  "module_number": 9,
+  "module_title": "Landlord and Tenant",
+  "lesson_number": 2,
+  "lesson_title": "Covenants in Leases",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M09_L02_Q01",
+      "question": "What are the two categories into which covenants in leases are divided?",
+      "options": {
+        "A": "Legal covenants and equitable covenants",
+        "B": "Express covenants and implied covenants",
+        "C": "Positive covenants and restrictive covenants",
+        "D": "Registered covenants and unregistered covenants"
+      },
+      "correct_answer": "B",
+      "explanation": "Covenants in leases fall into two categories: express covenants, which the parties have specifically agreed to in the lease document; and implied covenants, which are implied by law regardless of whether the parties have included them in writing. Understanding which covenants are implied and which must be express, and how both types run to bind successors, is central to the FE-1 property law syllabus."
+    },
+    {
+      "id": "PRL_M09_L02_Q02",
+      "question": "Which covenant is implied into every tenancy as a protection for the tenant?",
+      "options": {
+        "A": "The covenant to repair the structure and exterior",
+        "B": "The covenant for quiet enjoyment",
+        "C": "The covenant to pay service charges",
+        "D": "The covenant to insure the property"
+      },
+      "correct_answer": "B",
+      "explanation": "The covenant for quiet enjoyment is implied into every tenancy. It means that the tenant is entitled to the undisturbed possession and enjoyment of the premises for the duration of the term. Any act by the landlord that substantially interferes with the tenant's use and enjoyment — physical interference, harassment, or cutting off services — amounts to a breach of the covenant for quiet enjoyment."
+    },
+    {
+      "id": "PRL_M09_L02_Q03",
+      "question": "In Kenny v Preen [1963], the English Court of Appeal held that which conduct by a landlord could constitute a breach of the covenant for quiet enjoyment?",
+      "options": {
+        "A": "Failing to carry out structural repairs",
+        "B": "Threatening letters and telephone harassment",
+        "C": "Granting a licence to a third party to use common parts",
+        "D": "Increasing the rent above the agreed rate"
+      },
+      "correct_answer": "B",
+      "explanation": "In Kenny v Preen [1963], the English Court of Appeal held that threatening letters and telephone harassment by a landlord could constitute a breach of the covenant for quiet enjoyment. The covenant is not limited to physical interference with the premises — it extends to any substantial interference with the tenant's use and enjoyment, including psychological harassment."
+    },
+    {
+      "id": "PRL_M09_L02_Q04",
+      "question": "In Warren v Keen [1954], how did Lord Denning MR describe the tenant's implied obligation to use the premises in a tenant-like manner?",
+      "options": {
+        "A": "The tenant must carry out all repairs necessary to maintain the premises in the same condition as at the commencement of the tenancy",
+        "B": "The tenant must do little jobs of repair which a reasonable tenant would do — unblocking drains, replacing broken sash cords, mending minor things — while not causing damage beyond fair wear and tear",
+        "C": "The tenant must obtain landlord consent before carrying out any repair whatsoever",
+        "D": "The tenant has no implied obligation to maintain or repair any part of the premises"
+      },
+      "correct_answer": "B",
+      "explanation": "In Warren v Keen [1954], Lord Denning MR held that the tenant must do the little jobs of repair which a reasonable tenant would do — unblocking drains, replacing broken sash cords, mending minor things. The tenant is not required to carry out major structural repairs but must maintain the property in a tenant-like manner and not cause damage beyond fair wear and tear."
+    },
+    {
+      "id": "PRL_M09_L02_Q05",
+      "question": "What is the distinction between 'permissive waste' and 'voluntary waste' in the context of a tenant's obligations?",
+      "options": {
+        "A": "Permissive waste is waste agreed to by the landlord; voluntary waste is waste committed without consent",
+        "B": "Permissive waste is the failure to maintain leading to deterioration; voluntary waste is an active act causing damage to the premises",
+        "C": "Permissive waste applies only to agricultural tenancies; voluntary waste applies only to residential tenancies",
+        "D": "Permissive waste is a criminal offence; voluntary waste is only a civil breach"
+      },
+      "correct_answer": "B",
+      "explanation": "Permissive waste is the failure to maintain leading to deterioration — for example, allowing the roof to fall into disrepair through neglect. Voluntary waste is an active act that causes damage to the premises — for example, pulling down a wall or opening a window where there was previously solid wall. The implied obligations on a tenant vary depending on the type of tenancy and which form of waste is in issue."
+    },
+    {
+      "id": "PRL_M09_L02_Q06",
+      "question": "What is the general rule for when a covenant in a lease 'runs with the land' to bind assignees and successors in title?",
+      "options": {
+        "A": "All covenants in a lease run with the land automatically by virtue of the lease",
+        "B": "A covenant runs with the land if it 'touches and concerns' the land — it affects the landlord and tenant in their capacity as such and relates to the use and enjoyment of the demised premises",
+        "C": "Only negative (restrictive) covenants run with the land; positive covenants are personal",
+        "D": "A covenant runs with the land only if it is expressly stated to be binding on successors in title"
+      },
+      "correct_answer": "B",
+      "explanation": "The general rule is that covenants run with the land if they touch and concern the land — meaning they affect the landlord and tenant in their capacity as such and relate to the use and enjoyment of the demised premises. This is distinct from freehold covenants: in a lease, both positive and negative covenants can run with the land because the lease creates a continuing legal relationship between landlord and tenant."
+    },
+    {
+      "id": "PRL_M09_L02_Q07",
+      "question": "In P & A Swift Investments v Combined English Stores [1989], the House of Lords identified the criteria for a covenant touching and concerning the land. Which of the following is NOT one of those criteria?",
+      "options": {
+        "A": "The covenant affects the nature, quality, mode of user, or value of the land",
+        "B": "The covenant has direct reference to the land",
+        "C": "The covenant was agreed with the benefit of independent legal advice",
+        "D": "The covenant is not personal to the covenantor"
+      },
+      "correct_answer": "C",
+      "explanation": "In P & A Swift Investments v Combined English Stores [1989], the House of Lords identified three criteria for a covenant touching and concerning the land: (1) it affects the nature, quality, mode of user, or value of the land; (2) it is not personal to the covenantor; and (3) it has direct reference to the land. Whether the covenant was agreed with the benefit of independent legal advice is not one of these criteria — it is irrelevant to the 'touch and concern' test."
+    },
+    {
+      "id": "PRL_M09_L02_Q08",
+      "question": "What did P & A Swift Investments v Combined English Stores [1989] hold about a surety's covenant guaranteeing the tenant's obligations?",
+      "options": {
+        "A": "A surety's covenant does not touch and concern the land and is therefore personal only",
+        "B": "A surety's covenant guaranteeing the tenant's obligations touches and concerns the land and runs with the reversion",
+        "C": "A surety's covenant is always void unless registered on the folio",
+        "D": "A surety's covenant only binds successors in title if it is contained in a deed poll"
+      },
+      "correct_answer": "B",
+      "explanation": "In P & A Swift Investments v Combined English Stores [1989], the House of Lords held that a surety's covenant to guarantee the tenant's obligations touches and concerns the land and runs with the reversion. This case is important because it establishes that surety covenants — which might appear to be personal to the original parties — can in fact run with the lease so as to bind successors in title to the reversion."
+    },
+    {
+      "id": "PRL_M09_L02_Q09",
+      "question": "Under section 12 of the Land and Conveyancing Law Reform Act 2009, what does the Act provide about the running of covenants in a lease?",
+      "options": {
+        "A": "Only covenants expressly stated to run with the land will bind successors",
+        "B": "The burden and benefit of covenants in a lease run with the reversion and with the term respectively, subject to the covenants touching and concerning the land",
+        "C": "All covenants in a lease automatically run with both the reversion and the term regardless of their nature",
+        "D": "Only restrictive covenants run with the term; positive covenants are always personal in leases"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 12 of the Land and Conveyancing Law Reform Act 2009 provides that the burden and benefit of covenants in a lease run with the reversion and with the term respectively, subject to the covenants touching and concerning the land. This is a statutory codification of the common law rule established in cases such as P & A Swift Investments v Combined English Stores [1989]."
+    },
+    {
+      "id": "PRL_M09_L02_Q10",
+      "question": "What is the principal distinction between positive covenants in leases and positive covenants in freehold titles regarding running with the land?",
+      "options": {
+        "A": "Positive covenants cannot run with the land in any context",
+        "B": "Positive covenants in leases CAN run with the land; positive covenants in freehold titles generally CANNOT bind successors",
+        "C": "Positive covenants in freehold titles run with the land; positive covenants in leases are personal",
+        "D": "There is no distinction — the same rules apply to both leases and freehold titles"
+      },
+      "correct_answer": "B",
+      "explanation": "Positive covenants in leases can run with the land — this is the principal distinction from freehold covenants. Because a lease creates a continuing legal relationship between landlord and tenant, and the tenant's obligations run while they hold the term, even positive obligations can bind successive tenants. By contrast, in freehold titles, positive covenants generally cannot run with the land to bind successors."
+    }
+  ]
+}

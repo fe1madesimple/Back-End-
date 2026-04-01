@@ -1,0 +1,131 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module10_Lesson03.txt",
+  "module_number": 10,
+  "module_title": "Corporate Decision-Making: Resolutions, Meetings and Board Governance",
+  "lesson_number": 3,
+  "lesson_title": "Board Authority, Delegation and Shareholder-Director Relations",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M10_L03_Q01",
+      "question": "Section 158 CA 2014 allocates managerial power in a private limited company. Which statement BEST reflects the effect of s.158?",
+      "options": {
+        "A": "The shareholders in general meeting are the supreme governing body and may at any time give binding directions to the board of directors",
+        "B": "The directors manage the business of the company subject to the provisions of the Act and the constitution. Shareholders in general meeting cannot override individual board decisions except by exercising constitutional mechanisms (e.g. altering the articles, removing directors)",
+        "C": "The board of directors derives all its authority from an annual delegation resolution passed at the AGM, which may be revoked at any time by ordinary resolution",
+        "D": "The board and the shareholders in general meeting have co-equal authority over all management decisions, and a deadlock between them is resolved by the chairperson's casting vote"
+      },
+      "correct_answer": "B",
+      "explanation": "s.158 CA 2014 vests management of the company's business in the board of directors, not in the general meeting. Shareholders cannot give binding directions to the board in respect of individual management decisions. The general meeting's power over the board is indirect — through constitutional mechanisms such as altering the articles (s.32), removing directors (s.146), or refusing to re-elect them."
+    },
+    {
+      "id": "CL_M10_L03_Q02",
+      "question": "John Shaw & Sons (Salford) Ltd v Shaw [1935] 2 KB 113 (England, applied in Ireland) is a leading case on the division of power between the board and general meeting. What proposition did Greer LJ establish?",
+      "options": {
+        "A": "A company in general meeting may always override individual board decisions by ordinary resolution",
+        "B": "Where the articles vest management in the board, the general meeting cannot interfere with particular acts of management. A company is not bound by a direction to its directors given by the general meeting if the articles vest management authority in the board",
+        "C": "Where shareholders own 100% of the shares, they may individually direct the board's decisions without formal meeting procedure",
+        "D": "The board of directors derives its authority from the general meeting and is accountable to the general meeting for every individual decision"
+      },
+      "correct_answer": "B",
+      "explanation": "In John Shaw & Sons v Shaw [1935], Greer LJ stated: 'A company is an entity distinct alike from its shareholders and its directors. Some of its powers may, according to its articles, be exercised by directors, certain other powers may be reserved for the shareholders in general meeting. If powers of management are vested in the directors, they and they alone can exercise these powers.' This authority is central to understanding s.158 CA 2014."
+    },
+    {
+      "id": "CL_M10_L03_Q03",
+      "question": "Automatic Self-Cleansing Filter Syndicate Co Ltd v Cuninghame [1906] 2 Ch 34 (CA) is a foundational authority on the distribution of corporate power. What key principle does this case establish?",
+      "options": {
+        "A": "Directors are agents of the shareholders and must follow shareholder instructions given in general meeting by ordinary resolution",
+        "B": "Where the articles vest management in the board, a simple majority resolution in general meeting cannot compel the board to take a specific management action — constitutional power requires alteration of the articles by special resolution",
+        "C": "The board may be directed by the majority of shareholders acting outside general meeting through a shareholders' agreement",
+        "D": "Once appointed, directors are personally liable for any management decision made without the prior approval of the general meeting"
+      },
+      "correct_answer": "B",
+      "explanation": "In Automatic Self-Cleansing Filter v Cuninghame [1906], the Court of Appeal held that where the articles vest management authority in the directors, the majority shareholders in general meeting cannot, by ordinary resolution, compel the board to exercise its powers in a particular way. The only way to override the board (short of removing directors) is to alter the articles by special resolution."
+    },
+    {
+      "id": "CL_M10_L03_Q04",
+      "question": "Bushell v Faith [1970] AC 1099 HL is a landmark case on weighted voting rights in the context of director removal under s.184 CA 1963 (equivalent to s.146 CA 2014). What device was upheld in that case?",
+      "options": {
+        "A": "A pre-emption right that gave the director the right to purchase shares from any shareholder who voted to remove them",
+        "B": "An article giving a director whose removal was proposed three votes per share on the removal resolution — despite the shares otherwise carrying one vote — effectively making removal impossible against the director's wishes",
+        "C": "A shareholders' agreement clause requiring unanimous consent before any director could be removed",
+        "D": "A provision in the articles making directorial appointments irrevocable for a fixed term of 10 years"
+      },
+      "correct_answer": "B",
+      "explanation": "In Bushell v Faith [1970] HL, the House of Lords upheld an article giving a director-shareholder three votes per share when a resolution to remove them as director was proposed at a meeting, despite having one vote per share otherwise. This device made removal practically impossible without the director's consent. The HL held this was a valid exercise of the freedom of contract in constructing articles."
+    },
+    {
+      "id": "CL_M10_L03_Q05",
+      "question": "Under s.146 CA 2014, a director may be removed by ordinary resolution with special notice despite anything in the company's articles or any agreement between the director and the company. What does the phrase 'despite anything in the company's articles' NOT override?",
+      "options": {
+        "A": "Weighted voting rights attached to specific shares (like those in Bushell v Faith) that make removal practically impossible even if s.146 is formally observed",
+        "B": "A contractual service agreement between the director and the company — s.146 gives the company the statutory power to remove but does not remove the director's right to sue for damages for wrongful termination of their service contract",
+        "C": "Both A and B — weighted voting rights and contractual claims both survive s.146",
+        "D": "Neither A nor B — s.146 creates an absolute power of removal that overrides all articles provisions and all contractual arrangements"
+      },
+      "correct_answer": "C",
+      "explanation": "s.146 CA 2014 preserves both: (1) the validity of weighted voting rights (Bushell v Faith [1970]) that may make removal practically impossible while technically not preventing the vote; and (2) any compensation or damages payable under a service agreement (s.146(5) CA 2014 expressly preserves the director's contractual rights). The statutory power to vote is preserved but practical and contractual protections survive."
+    },
+    {
+      "id": "CL_M10_L03_Q06",
+      "question": "A director facing removal under s.146 CA 2014 exercises their right under s.146(4) to have written representations circulated to members before the meeting. The company refuses to circulate them, arguing the representations are defamatory. What recourse does the director have?",
+      "options": {
+        "A": "The director may apply to court to compel circulation of the representations",
+        "B": "The director has no remedy — if the company claims defamation, the statutory obligation to circulate is suspended",
+        "C": "The director may read the representations aloud at the meeting even if written circulation is refused",
+        "D": "The director may apply to court and, if the court is satisfied the claim of defamation is made in bad faith, may order circulation; alternatively, the director may speak to the representations at the meeting itself"
+      },
+      "correct_answer": "D",
+      "explanation": "Under s.146(4) CA 2014, a director facing removal has the right to have their representations circulated and to be heard at the meeting. Where the company refuses on grounds of defamation, the director may apply to court. The court may order circulation if satisfied the claim is abusive. The director always retains the right to speak at the meeting under s.146(4)(b)."
+    },
+    {
+      "id": "CL_M10_L03_Q07",
+      "question": "Clark v Workman [1920] 1 IR 107 (Ireland) is an important authority on directors fettering their discretion. What rule does this case establish?",
+      "options": {
+        "A": "Directors may bind themselves contractually as to how they will vote on board resolutions, provided the contract is in writing and for valuable consideration",
+        "B": "Directors may not fetter their future discretion to vote as they think fit on any board resolution. An agreement by a director to vote in a predetermined way on a specific resolution is invalid as a breach of fiduciary duty",
+        "C": "A director who has contracted to vote in a particular way may be compelled by injunction to vote in accordance with the contract",
+        "D": "Directors may fetter their discretion only in respect of decisions not involving a conflict of interest"
+      },
+      "correct_answer": "B",
+      "explanation": "In Clark v Workman [1920] 1 IR 107, the Irish court held that a director who agreed to vote in favour of a specific resolution at an upcoming board meeting had acted in breach of their fiduciary duty. Directors are obliged to exercise their judgment independently at each board meeting — they cannot pre-commit their discretion. This reflects the director's fundamental duty to act in the company's interests."
+    },
+    {
+      "id": "CL_M10_L03_Q08",
+      "question": "The board wishes to delegate its management authority to a managing director. Under s.158 CA 2014 and standard model articles, what is required for valid delegation?",
+      "options": {
+        "A": "Shareholder approval by ordinary resolution is required before the board can delegate management authority to any individual director",
+        "B": "Valid delegation requires authority in the articles or the constitution; standard model articles typically permit the board to delegate management to a managing director, with such delegation evidenced in board minutes",
+        "C": "Delegation of management authority to a managing director is prohibited — all management decisions must be taken collectively by the board",
+        "D": "Delegation is automatic once a managing director is appointed — no specific authority in the articles is required"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.158 and the model articles, the board may delegate management functions to a managing director or committees, provided the articles authorise such delegation. The delegation should be evidenced in board minutes identifying the scope of authority delegated. The board remains ultimately responsible and retains the power to revoke or modify delegated authority."
+    },
+    {
+      "id": "CL_M10_L03_Q09",
+      "question": "The board of a company has four directors. Two directors resign simultaneously due to a dispute, leaving only two directors. The articles require a quorum of three for board meetings. The remaining two directors wish to co-opt replacement directors to restore the board. Under standard CA 2014 model articles, can they do this?",
+      "options": {
+        "A": "No — if the board falls below quorum, no board action whatsoever is possible, including co-option; a general meeting must be convened by the shareholders",
+        "B": "Yes — standard articles typically permit a board below quorum to act only for the limited purpose of appointing additional directors to restore quorum; the two remaining directors may co-opt replacements",
+        "C": "The two directors may act only with the prior written consent of the shareholders",
+        "D": "The two directors automatically become shadow directors and must comply with the shadow director disclosure requirements before taking any action"
+      },
+      "correct_answer": "B",
+      "explanation": "Standard model articles under CA 2014 typically provide that where the number of directors falls below the quorum required for board meetings, the continuing directors may act only for the purpose of increasing the number of directors to the minimum necessary to form a quorum. This prevents total paralysis while maintaining proper governance."
+    },
+    {
+      "id": "CL_M10_L03_Q10",
+      "question": "Under the Turquand rule (Royal British Bank v Turquand [1856]), a third party dealing with a company in good faith is entitled to assume that internal procedures have been properly followed. Which of the following scenarios would the Turquand rule protect?",
+      "options": {
+        "A": "A third party who entered into a contract with the company knowing that the board had not obtained the required shareholder approval for the transaction",
+        "B": "A third party who entered into a contract with a managing director who had authority under the articles to bind the company in ordinary trading transactions, without knowing that the board had not formally delegated authority in this specific case",
+        "C": "A third party who received a share allotment knowing the director had already been removed from office the day before",
+        "D": "A third party who was an insider (e.g. a director) who relied on an undocumented internal approval"
+      },
+      "correct_answer": "B",
+      "explanation": "The Turquand rule protects outsiders who deal in good faith with an officer having ostensible authority, even if internal company procedures were not followed. It does not protect those with actual knowledge of the irregularity (Option A), those with constructive notice of limitations (Option C), or insiders who cannot invoke it (Option D)."
+    }
+  ]
+}

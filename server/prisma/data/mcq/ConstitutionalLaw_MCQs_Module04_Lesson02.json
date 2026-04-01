@@ -1,0 +1,131 @@
+{
+  "subject": "Constitutional Law",
+  "el_script_ref": "ConstitutionalLaw_ElevenLabs_Module04_Lesson02.txt",
+  "module_number": 4,
+  "module_title": "Fundamental Rights I: Personal Rights",
+  "lesson_number": 2,
+  "lesson_title": "Unenumerated Rights (Art. 40.3)",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CON_M04_L02_Q01",
+      "question": "Article 40.3.1° provides that the State guarantees in its laws to respect, and as far as practicable, to defend and vindicate the personal rights of the citizen. In Ryan v AG [1965] IR 294, Kenny J held that Art. 40.3 protects:",
+      "options": {
+        "A": "Only those rights expressly enumerated in Arts. 40 to 44 of the Constitution",
+        "B": "A broader category of unspecified personal rights not enumerated in the text, derived from the Christian democratic natural law tradition and the dignity of the human person",
+        "C": "Only common law rights that were in existence at the date of enactment of the Constitution in 1937",
+        "D": "Rights recognised by the European Convention on Human Rights and incorporated through the ECHR Act 2003"
+      },
+      "correct_answer": "B",
+      "explanation": "Ryan v AG [1965] IR 294 (Kenny J, confirmed on appeal) established the doctrine of unenumerated rights: Art. 40.3.1° protects rights not expressly mentioned in the Constitution but which are inherent in the concept of the human person and derived from the Christian democratic natural law tradition underpinning the Constitution. The right to bodily integrity was first recognised in Ryan. This was a transformative ruling, enabling the Constitution to protect rights that the framers did not explicitly enumerate."
+    },
+    {
+      "id": "CON_M04_L02_Q02",
+      "question": "Which of the following rights has the Supreme Court recognised as an unenumerated personal right under Art. 40.3.1°?",
+      "options": {
+        "A": "The right to vote in Dáil elections",
+        "B": "The right to earn a livelihood",
+        "C": "The right to receive social welfare payments",
+        "D": "The right to trial by jury in all criminal proceedings"
+      },
+      "correct_answer": "B",
+      "explanation": "The right to earn a livelihood was recognised as an unenumerated right under Art. 40.3 in Murtagh Properties Ltd v Cleary [1972] IR 330 and subsequent cases. Other recognised unenumerated rights include: the right to bodily integrity (Ryan v AG [1965]), the right to marital privacy (McGee v AG [1974]), the right to communicate (AG v Paperlink [1984]), the right to legal representation in criminal proceedings (State (Healy) v Donoghue [1976]), and the right to travel (Kent v Minister for Justice [1967])."
+    },
+    {
+      "id": "CON_M04_L02_Q03",
+      "question": "In McGee v AG [1974] IR 284, the Supreme Court struck down s.17 of the Criminal Law Amendment Act 1935, which made it a criminal offence to import contraceptives. The case is significant for establishing which unenumerated right?",
+      "options": {
+        "A": "The right to procreate",
+        "B": "The right to marital privacy, protecting personal decisions within the marital relationship from State interference",
+        "C": "The right to found a family",
+        "D": "The right to access medical advice and treatment"
+      },
+      "correct_answer": "B",
+      "explanation": "McGee v AG [1974] IR 284 is the leading unenumerated rights case on marital privacy. The Supreme Court (Walsh, Budd, Henchy and Griffin JJ) held that the constitutional guarantee of personal rights includes the right to marital privacy — protecting the intimate decisions of a married couple from State intrusion. The criminal prohibition on importing contraceptives for personal use was held to unconstitutionally invade this right. It also raised issues of natural law methodology in constitutional interpretation."
+    },
+    {
+      "id": "CON_M04_L02_Q04",
+      "question": "After the retreat from natural law as a source of unenumerated rights (most clearly articulated in Roche v Roche [2010] IESC 10), how have Irish courts approached the identification of new unenumerated rights?",
+      "options": {
+        "A": "Courts now refuse to recognise any new unenumerated rights not explicitly mentioned in the Constitution",
+        "B": "Courts now derive unenumerated rights from a broader range of sources including the nature and dignity of the human person, constitutional values, and international human rights standards, rather than exclusively from natural law",
+        "C": "Courts now require the Oireachtas to expressly recognise any new right before it can be protected under Art. 40.3",
+        "D": "All potential unenumerated rights must first be referred to the Supreme Court under Article 26 before being recognised"
+      },
+      "correct_answer": "B",
+      "explanation": "Following the retreat from natural law as the exclusive or primary source of unenumerated rights (signalled in cases such as Norris v AG [1984] and confirmed in Roche v Roche [2010]), Irish courts have adopted a broader, more pluralist methodology. Unenumerated rights may be derived from the dignity of the human person, the overall scheme of the Constitution, comparative jurisprudence, and international human rights norms. The exclusive reliance on Christian natural law has been abandoned as a basis for constitutional adjudication."
+    },
+    {
+      "id": "CON_M04_L02_Q05",
+      "question": "In Norris v AG [1984] IR 36, the Supreme Court (by majority) declined to strike down the criminalisation of male homosexual acts. When the ECHR subsequently found Ireland in breach of Art. 8 ECHR in Norris v Ireland (1988) 13 EHRR 186, what was the constitutional significance?",
+      "options": {
+        "A": "The ECHR ruling automatically amended Irish constitutional law, requiring the Supreme Court to reverse its Norris decision",
+        "B": "The ECHR ruling led to legislative reform (Criminal Law (Sexual Offences) Act 1993) without requiring a constitutional amendment, demonstrating that the constitutional position and ECHR obligations can diverge",
+        "C": "The ECHR ruling required the President to refuse to sign the Criminal Law (Sexual Offences) Bill 1993 under Art. 26",
+        "D": "The ECHR ruling established that Art. 40.3 is identical in scope to Art. 8 ECHR"
+      },
+      "correct_answer": "B",
+      "explanation": "Norris v Ireland (1988) ECHR found Ireland in breach of Art. 8 ECHR. The Irish response was legislative reform (Criminal Law (Sexual Offences) Act 1993) which decriminalised homosexual acts, without a constitutional amendment. This demonstrates that ECHR obligations do not automatically override the constitutional position as determined by the Supreme Court: Norris v AG [1984] remained the Irish constitutional precedent, and legislative rather than constitutional change was used to comply with ECHR obligations."
+    },
+    {
+      "id": "CON_M04_L02_Q06",
+      "question": "The right to bodily integrity, first recognised in Ryan v AG [1965], was applied in which of the following cases to protect a patient from forced medical treatment?",
+      "options": {
+        "A": "In re a Ward of Court (No.2) [1996] 2 IR 79 — the Supreme Court held that the right to refuse treatment (as an aspect of bodily integrity) could be exercised through the mechanism of a ward of court even for an incompetent patient via best interests assessment",
+        "B": "In McGee v AG [1974] IR 284 — the court held that forcing a patient to use particular contraceptives violated bodily integrity",
+        "C": "In State (C) v Frawley [1976] IR 365 — the court refused all forms of psychiatric treatment for prisoners",
+        "D": "In Roche v Roche [2010] IESC 10 — the court recognised an embryo’s right to bodily integrity"
+      },
+      "correct_answer": "A",
+      "explanation": "In re a Ward of Court (No.2) [1996] 2 IR 79, the Supreme Court addressed the right of an incapacitated patient (who had been in a near-persistent vegetative state for many years) to have life-sustaining treatment withdrawn. The court held that the constitutional right to bodily integrity includes the right to refuse medical treatment, and that this right survives incapacity, to be exercised through a 'best interests' assessment by the courts as parens patriae. This was a landmark development of the bodily integrity right."
+    },
+    {
+      "id": "CON_M04_L02_Q07",
+      "question": "Which of the following most accurately states the 'as far as practicable' limitation on the State's obligation to vindicate personal rights under Art. 40.3.1°?",
+      "options": {
+        "A": "The State need only take reasonable legislative steps — it is never required to provide positive resources to vindicate rights",
+        "B": "The obligation to defend and vindicate rights is subject to legitimate limitations including the rights of others, the common good and resource constraints; it does not impose absolute obligations on the State",
+        "C": "The 'as far as practicable' limitation applies only to socio-economic rights, not to civil and political rights",
+        "D": "The limitation means that positive obligations to vindicate rights apply only to married persons"
+      },
+      "correct_answer": "B",
+      "explanation": "The 'as far as practicable' qualification in Art. 40.3.1° means that the State's duty to vindicate rights is not absolute. In O'Brien v Keogh [1972] IR 144 and other cases, the courts have recognised that personal rights can be limited by the rights of others, the common good, and practical considerations including resource allocation. However, this qualification cannot justify wholesale disregard for rights; the State must take reasonable positive steps to vindicate rights even where it cannot achieve perfection."
+    },
+    {
+      "id": "CON_M04_L02_Q08",
+      "question": "The right to communicate, recognised in AG v Paperlink Ltd [1984] ILRM 373 as an unenumerated right, is distinct from the freedom of expression protected by Art. 40.6.1°(i). How are they distinguished?",
+      "options": {
+        "A": "The right to communicate under Art. 40.3 protects all forms of commercial speech; freedom of expression under Art. 40.6 protects only political speech",
+        "B": "The right to communicate is a broader personal right to engage in the act of communication (including basic communication for personal and commercial purposes); freedom of expression specifically protects expression of opinion and ideas, particularly in the public interest",
+        "C": "There is no material distinction — both rights have identical scope and protection",
+        "D": "Freedom of expression is subject to the limitation of the common good; the right to communicate is an absolute right"
+      },
+      "correct_answer": "B",
+      "explanation": "AG v Paperlink [1984] ILRM 373 (Costello J) recognised the right to communicate as an unenumerated right under Art. 40.3 — a broader right to engage in the act of communication for personal or commercial purposes (e.g., using postal services). This is distinct from the Art. 40.6.1°(i) freedom to express freely convictions and opinions — which is specifically directed at expression of ideas, opinions, and especially public interest matters. The unenumerated right to communicate encompasses the basic ability to send and receive communications, beyond opinion."
+    },
+    {
+      "id": "CON_M04_L02_Q09",
+      "question": "In State (Healy) v Donoghue [1976] IR 325, the Supreme Court recognised that an accused person in criminal proceedings facing possible imprisonment has a constitutional right to legal representation. The basis for this right is:",
+      "options": {
+        "A": "Article 38.1 (trial in due course of law) and Art. 40.3 (personal rights), including the right to a fair trial with appropriate legal assistance where liberty is at stake",
+        "B": "Article 34 (judicial power) which imposes a duty on courts to provide legal representation in all criminal trials",
+        "C": "Article 40.4 (personal liberty) which requires legal representation at all police interviews",
+        "D": "Article 29.3 (ECHR obligation) following ratification of the European Convention on Human Rights"
+      },
+      "correct_answer": "A",
+      "explanation": "State (Healy) v Donoghue [1976] IR 325 established the constitutional right to legal representation in serious criminal cases as an aspect of the constitutional right to a fair trial under Art. 38.1 (trial 'in due course of law') and the personal rights protected by Art. 40.3. Where a person faces potential imprisonment, the trial cannot be fair unless they have adequate legal representation. This led to the development of the legal aid scheme for criminal cases."
+    },
+    {
+      "id": "CON_M04_L02_Q10",
+      "question": "Roche v Roche [2010] IESC 10 concerned the constitutional status of frozen embryos. The Supreme Court held that:",
+      "options": {
+        "A": "Frozen embryos enjoy the right to life under Art. 40.3.3° and cannot be destroyed",
+        "B": "Frozen embryos are not 'the unborn' within the meaning of Art. 40.3.3° as it stood, and the courts could not resolve the question through unenumerated rights; the matter required legislative intervention",
+        "C": "Frozen embryos have full constitutional personhood equivalent to that of a child",
+        "D": "Frozen embryos are protected by the right to bodily integrity of the potential mother under Art. 40.3.1°"
+      },
+      "correct_answer": "B",
+      "explanation": "In Roche v Roche [2010] IESC 10, the Supreme Court held (by majority) that frozen embryos in vitro are not 'the unborn' within the meaning of Art. 40.3.3° (as it stood before the 36th Amendment 2018 repeal), and that the Constitution did not provide a clear answer on their status. The court declined to deploy the unenumerated rights doctrine to resolve the issue, expressly retreating from the natural law approach and concluding that the Oireachtas needed to legislate. This demonstrated judicial restraint and the limits of constitutional adjudication on deeply contested moral questions."
+    }
+  ]
+}

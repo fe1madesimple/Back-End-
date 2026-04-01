@@ -1,0 +1,131 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": "ContractLaw_ElevenLabs_Module05_Lesson01.txt",
+  "module_number": 6,
+  "module_title": "Discharge of Contract",
+  "lesson_number": 1,
+  "lesson_title": "Discharge by Performance",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "The general rule in relation to discharge by performance is:",
+      "options": {
+        "A": "Substantial performance of a contract is sufficient to discharge a party's obligations",
+        "B": "A party is only discharged from their contractual obligations once they have completely and precisely performed every obligation under the contract",
+        "C": "Performance is deemed complete once the other party has accepted the goods or services",
+        "D": "A party is discharged once they have performed the most significant obligations under the contract"
+      },
+      "correct_answer": "B",
+      "explanation": "The general rule is that a party must perform their contractual obligations exactly and completely to be discharged from those obligations and to be entitled to payment. This is the principle of precise performance. The rule can operate harshly: in Cutter v Powell [1795], a sailor who died before completing a voyage was not entitled to any wages (nor was his estate) because the contract was an entire one requiring complete performance. The harshness of this rule is mitigated by the doctrines of substantial performance, severable contracts, and prevention of performance."
+    },
+    {
+      "id": 2,
+      "question": "In Cutter v Powell [1795] (KB), the court established the principle of entire obligations. What was the ratio of this case?",
+      "options": {
+        "A": "A sailor was entitled to wages proportionate to the work done before his death",
+        "B": "Where a contract is entire, the full performance is a condition precedent to payment — a party who performs only partially is entitled to nothing",
+        "C": "A party who is prevented from performance by death is discharged from their obligations",
+        "D": "A sailor's estate could recover a quantum meruit for the value of services rendered before death"
+      },
+      "correct_answer": "B",
+      "explanation": "In Cutter v Powell, the sailor's wage was 30 guineas — significantly more than the normal rate — in exchange for his promise to perform the entire voyage from Jamaica to Liverpool. He died before completing the voyage. The court held that the contract was entire: full performance was a condition precedent to payment. The promise to serve throughout the voyage was indivisible. Since full performance was not rendered, no payment was due. The harshness of this outcome is mitigated by modern employment legislation which protects workers' rights to accrued wages, and by the doctrine of quantum meruit in appropriate cases."
+    },
+    {
+      "id": 3,
+      "question": "The doctrine of substantial performance allows a party who has substantially performed to recover the contract price, subject to a deduction. This doctrine applies only where:",
+      "options": {
+        "A": "The defects in performance are so minor that they can be ignored without injustice to either party",
+        "B": "The party has performed the essential obligations under the contract, even if minor deviations exist, and the defects can be compensated by a counterclaim or deduction",
+        "C": "Both parties agree that the performance rendered is acceptable",
+        "D": "The contract is for the sale of goods under the Sale of Goods Act 1893"
+      },
+      "correct_answer": "B",
+      "explanation": "Substantial performance allows recovery where the party has performed the main purpose and essential obligations of the contract, notwithstanding minor defects. In Hoenig v Isaacs [1952] (CA), the claimant was allowed to recover the contract price for decorating a flat (minus the cost of remedying defects) because the defects were minor and the contract's main purpose had been substantially achieved. The doctrine does not apply where performance is fundamentally incomplete — if the very core of the obligation is unperformed, the doctrine cannot be invoked."
+    },
+    {
+      "id": 4,
+      "question": "In Bolton v Mahadeva [1972] (CA England), the court distinguished Hoenig v Isaacs and refused to apply the doctrine of substantial performance. Why?",
+      "options": {
+        "A": "The claimant had been paid in advance and therefore could not claim the balance",
+        "B": "The defects in the central heating system installed were so serious that it could not be said the main purpose of the contract had been substantially performed — the system failed to heat the house adequately",
+        "C": "The parties had expressly excluded the substantial performance doctrine by contract",
+        "D": "The heating system met minimal standards and the defects were a matter of commercial judgment"
+      },
+      "correct_answer": "B",
+      "explanation": "In Bolton v Mahadeva [1972], the Court of Appeal held that the doctrine of substantial performance did not apply because the defects in the central heating and hot water system were fundamental — the system did not heat the house effectively and emitted fumes. The cost of remedying the defects was a substantial proportion of the contract price. Since the main purpose of the contract (a functioning heating system) had not been substantially achieved, the contractor could not recover any payment under the contract. This is the critical distinction from Hoenig v Isaacs — the severity of the defect is determinative."
+    },
+    {
+      "id": 5,
+      "question": "A severable contract is one where:",
+      "options": {
+        "A": "Each party's obligations can be completely separated from the other's obligations",
+        "B": "The contract can be divided into distinct parts, each supported by separate consideration, so that payment may be due for each part independently",
+        "C": "Either party can terminate the contract at will by giving notice",
+        "D": "The contract can be performed in stages, with each stage being a separate contract"
+      },
+      "correct_answer": "B",
+      "explanation": "A severable contract is one in which the parties' obligations can be divided into distinct parts, each attracting independent consideration. If one part is performed, the performer is entitled to payment for that part regardless of whether the rest of the contract is completed. For example, a contract to pay wages weekly is severable — wages are earned week by week. This is distinguished from an entire contract (like Cutter v Powell) where the entire performance must be complete before any payment falls due. Whether a contract is entire or severable depends on the construction of the agreement."
+    },
+    {
+      "id": 6,
+      "question": "The doctrine of 'prevention of performance' provides that:",
+      "options": {
+        "A": "A party who is prevented from performing by a third party is discharged from their obligations",
+        "B": "Where one party prevents the other from performing their obligations, the party who was prevented can recover on a quantum meruit basis or for breach of contract",
+        "C": "A party prevented from performance by a natural disaster is entitled to payment under the frustration doctrine",
+        "D": "Only a court can determine whether a party has been 'prevented' from performing under a contract"
+      },
+      "correct_answer": "B",
+      "explanation": "The doctrine of prevention holds that a party who prevents the other from performing cannot rely on the other's non-performance as a breach or as a failure of a condition. If one party's own conduct makes it impossible for the other to perform, the prevented party may: (1) sue for breach of an implied term not to prevent performance; (2) claim on a quantum meruit for the value of partial performance rendered before prevention; or (3) treat the preventing party's conduct as a repudiatory breach and accept it as such. This principle operates to prevent a party from taking advantage of their own wrong."
+    },
+    {
+      "id": 7,
+      "question": "What is the legal significance of 'tender of performance' where one party attempts to perform but the other party refuses to accept performance?",
+      "options": {
+        "A": "Tender of performance has no legal effect unless performance is actually completed",
+        "B": "A valid tender of performance discharges the tendering party from their obligation and entitles them to sue the other party for breach of contract",
+        "C": "Tender of performance suspends the contract until the other party agrees to accept",
+        "D": "Tender of performance gives the tendering party the right to rescind the contract"
+      },
+      "correct_answer": "B",
+      "explanation": "A valid tender of performance — where a party attempts to perform exactly in accordance with the contract but the other party wrongfully refuses to accept that performance — has the effect of discharging the tendering party from their obligation and entitling them to sue the refusing party for breach of contract. The tender must be conforming (exactly what is required under the contract) and the refusal must be without justification. In the case of a tender of money, a valid tender stops interest running: Re Farrow [1987]."
+    },
+    {
+      "id": 8,
+      "question": "In the context of contracts for the sale of goods under the Sale of Goods Act 1893, which of the following correctly describes the rule on delivery of non-conforming goods?",
+      "options": {
+        "A": "The buyer must accept any tender of delivery and claim compensation separately for defects",
+        "B": "Where goods do not conform to the contract, the buyer may reject the entire delivery (the right to reject) unless the seller has a right to cure, and recovery is in breach of contract",
+        "C": "The buyer may accept part of the delivery and reject only the defective items",
+        "D": "The buyer must accept delivery and can only claim for consequential losses caused by the defects"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the Sale of Goods Act 1893 (as amended by SGSSA 1980), a buyer generally has the right to reject goods that do not conform to the contract (e.g., not of merchantable/satisfactory quality, not as described). The right to reject is an entire rejection right — the buyer need not accept part of a non-conforming delivery. However, the right to reject may be lost by acceptance: under s35 SGA, goods may be deemed accepted after examination or use inconsistent with rejection. Consumer remedies were significantly enhanced by the Consumer Rights Act 2022."
+    },
+    {
+      "id": 9,
+      "question": "Where a party has performed part of an entire contract and has not completed performance, they may sometimes recover on a quantum meruit basis. What is quantum meruit?",
+      "options": {
+        "A": "A contractual right to the agreed price for partial performance",
+        "B": "A restitutionary claim for the reasonable value of services rendered, distinct from the agreed contract price",
+        "C": "A statutory right to payment for partial performance under the Sale of Goods Act",
+        "D": "A court award of damages for breach of contract calculated as a percentage of the full contract price"
+      },
+      "correct_answer": "B",
+      "explanation": "Quantum meruit ('as much as has been earned') is a restitutionary remedy allowing recovery of the reasonable value of services rendered, in circumstances where the contractual entitlement to payment has not accrued (e.g., incomplete performance of an entire contract). It is not a claim on the contract itself but a claim in unjust enrichment — the defendant has been unjustly enriched by the partial performance. Quantum meruit may be available where: the contract is entire and performance is incomplete; the other party has freely accepted the partial performance; or performance was prevented by the other party."
+    },
+    {
+      "id": 10,
+      "question": "The time of performance is a condition of a contract if the parties have made it so expressly or if it is clear from the circumstances that time is of the essence. Where time is of the essence, failure to perform on time:",
+      "options": {
+        "A": "Gives the innocent party a right to claim damages but does not entitle them to terminate the contract",
+        "B": "Entitles the innocent party to treat the contract as discharged by breach — the time stipulation is a condition",
+        "C": "Allows the innocent party to claim a price reduction proportionate to the delay",
+        "D": "Triggers an automatic right of rescission under the Consumer Rights Act 2022"
+      },
+      "correct_answer": "B",
+      "explanation": "Where time is of the essence — either by express provision, by the nature of the contract (e.g., contracts for perishable goods), or by notice making time of the essence after delay — failure to perform on time is a breach of condition, entitling the innocent party to terminate the contract and claim damages. In commercial contracts, time stipulations are not automatically conditions — equity traditionally held that equity would grant relief against time clauses. Section 41 of the Sale of Goods Act 1893 provides that conditions as to time are conditions unless the contrary intention appears."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module09_Lesson03.txt",
+  "module_number": 9,
+  "module_title": "Defamation",
+  "lesson_number": 3,
+  "lesson_title": "Defamation: Remedies and Practical Exam Application",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M09_L03_Q01",
+      "question": "Under section 31 of the Defamation Act 2009, what factors must the court have regard to when assessing damages in a defamation action?",
+      "options": {
+        "A": "Only the financial loss suffered by the plaintiff and the cost of reputation repair",
+        "B": "The nature and gravity of the statement, the extent of publication, whether an apology was made, whether the plaintiff's reputation was already impaired, and the entire conduct of the defendant",
+        "C": "The defendant's net worth, their insurance arrangements, and the plaintiff's professional standing",
+        "D": "The statutory cap applicable in the Circuit Court and the number of times the statement was published"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 31 of the Defamation Act 2009 sets out a detailed list of factors the court must consider when assessing general damages in defamation. These include: the nature and gravity of the defamatory statement; the extent of publication and the audience reached; whether the defendant made an apology; whether the plaintiff's reputation was already impaired before the publication; and the entire conduct of the defendant throughout the proceedings. This ensures damages are proportionate to the actual harm to reputation."
+    },
+    {
+      "id": "TL_M09_L03_Q02",
+      "question": "Under section 32 of the Defamation Act 2009, in what circumstances may aggravated damages be awarded?",
+      "options": {
+        "A": "Where the defamatory statement is published on more than one occasion",
+        "B": "Where the conduct of the defendant throughout the proceedings — including the manner of publication, refusal to apologise, or conduct during litigation — increases the injury to the plaintiff's feelings and reputation",
+        "C": "Where the plaintiff suffered financial loss in addition to reputational damage",
+        "D": "Where the defendant is a media organisation with significant financial resources"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 32 of the Defamation Act 2009 permits the court to award aggravated damages where the conduct of the defendant throughout the proceedings has increased the injury to the plaintiff's feelings and reputation. This includes the manner in which the statement was published, a refusal to apologise, or the defendant's conduct during the litigation itself — for example, aggressive cross-examination of the plaintiff about their private life. Aggravated damages are compensatory in nature, not punitive."
+    },
+    {
+      "id": "TL_M09_L03_Q03",
+      "question": "Under section 32 of the Defamation Act 2009, in what circumstances may punitive damages be awarded?",
+      "options": {
+        "A": "In every defamation case where the defendant is a media organisation",
+        "B": "In appropriate cases requiring deliberate, conscious wrongdoing by the defendant",
+        "C": "Where the plaintiff can prove financial loss in addition to reputational damage",
+        "D": "Where the defendant published the statement without any attempt to verify its accuracy"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 32 of the Defamation Act 2009 also permits punitive damages, but these remain exceptional. They are available only in cases of deliberate, conscious wrongdoing — where the defendant knowingly published a false and defamatory statement, or where their conduct was so egregious as to warrant a punitive response beyond mere compensation. Punitive damages are not available for every defamation case and are reserved for the most serious cases of wilful misconduct."
+    },
+    {
+      "id": "TL_M09_L03_Q04",
+      "question": "What is the limitation period for defamation actions under section 38 of the Defamation Act 2009?",
+      "options": {
+        "A": "Six years from the date of publication, in line with the general contract limitation period",
+        "B": "Three years from the date of publication, the same as personal injury claims",
+        "C": "One year from the date of publication, with a discretionary extension of up to one further year where just and equitable",
+        "D": "Two years from the date of publication, the same as the personal injury limitation period under the 1991 Act"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 38 of the Defamation Act 2009 reduced the limitation period for defamation actions from the former three-year period to one year from the date of publication. The court has a discretionary jurisdiction to extend this by a further year where it is just and equitable to do so. This short limitation period reflects the desirability of resolving defamation disputes promptly and prevents the chilling effect of extended litigation threats. Candidates must know this one-year period as it differs markedly from other tort limitation periods."
+    },
+    {
+      "id": "TL_M09_L03_Q05",
+      "question": "Under section 33 of the Defamation Act 2009, what is the legal effect of an apology made by the defendant?",
+      "options": {
+        "A": "An apology constitutes an admission of liability and may be used against the defendant at trial",
+        "B": "An apology may mitigate damages but does not constitute an admission of liability",
+        "C": "An apology is a complete defence that prevents the plaintiff from recovering any damages",
+        "D": "An apology has no legal relevance and cannot be considered by the court when assessing damages"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 33 of the Defamation Act 2009 provides that an apology may mitigate the plaintiff's damages — by reducing the quantum of the award — but does not constitute an admission of liability. This encourages defendants to apologise and potentially resolve disputes without the fear that an apology will be treated as an admission that can be used against them. The court takes into account under section 31 whether an apology was made when assessing the appropriate level of general damages."
+    },
+    {
+      "id": "TL_M09_L03_Q06",
+      "question": "In Mahon v Post Publications Ltd [2007], the Irish Supreme Court considered the granting of an interlocutory injunction in a defamation case. What threshold applies?",
+      "options": {
+        "A": "The ordinary Campus Oil test — a fair question to be tried and the balance of convenience",
+        "B": "A particularly stringent standard — the court will only restrain publication where the material is clearly defamatory and no defence could possibly succeed at trial",
+        "C": "A lower threshold than Campus Oil — the plaintiff need only show a serious issue to be tried",
+        "D": "No injunction can ever be granted in defamation cases because of the absolute constitutional protection of freedom of expression"
+      },
+      "correct_answer": "B",
+      "explanation": "In Mahon v Post Publications Ltd [2007], the Irish Supreme Court confirmed that a particularly stringent threshold applies when an interlocutory injunction is sought to restrain publication of allegedly defamatory material. Freedom of expression is heavily weighted at the interlocutory stage — the court will only restrain publication where it is clear that the material would be defamatory and that no possible defence could succeed at trial. This is a higher threshold than the ordinary Campus Oil test for interlocutory injunctions."
+    },
+    {
+      "id": "TL_M09_L03_Q07",
+      "question": "What is the recommended step-by-step approach to answering a defamation problem question on the FE-1 paper?",
+      "options": {
+        "A": "Identify the statement; check defences; assess damages; conclude",
+        "B": "Identify the statement and whether it is fact or opinion; consider identification of the plaintiff; consider publication; analyse defences; consider remedies",
+        "C": "Identify the parties; apply the Glencar test for duty of care; assess breach; consider causation and damages",
+        "D": "Apply the IRAC structure only to the primary defamation claim and ignore defences"
+      },
+      "correct_answer": "B",
+      "explanation": "The recommended FE-1 approach to a defamation problem is: Step 1 — identify the statement and determine whether it is a statement of fact or opinion, whether it carries a defamatory meaning on its face or by innuendo; Step 2 — consider whether the statement refers to the plaintiff, including by reasonable identification; Step 3 — consider publication to at least one third party; Step 4 — systematically analyse all applicable defences under the 2009 Act; Step 5 — consider remedies available to the plaintiff, including damages and injunctions."
+    },
+    {
+      "id": "TL_M09_L03_Q08",
+      "question": "In defamation, general damages are said to be 'at large'. What does this mean?",
+      "options": {
+        "A": "The plaintiff can claim damages for any loss, no matter how remote or speculative",
+        "B": "The jury or judge has a wide discretion to award a sum they consider appropriate, without being confined to proved financial losses",
+        "C": "There is no upper limit on the damages that can be awarded in defamation under any circumstances",
+        "D": "Damages in defamation are determined by reference to a statutory scale rather than by judicial discretion"
+      },
+      "correct_answer": "B",
+      "explanation": "General damages in defamation are described as 'at large' because the tribunal of fact — whether jury or judge — has a wide discretion to award what it considers to be fair and reasonable compensation for the harm to the plaintiff's reputation, dignity, and feelings, without being confined to strictly proved financial losses. The court is not required to itemise every specific loss; it makes a global assessment of the harm caused. The Defamation Act 2009 guides the exercise of this discretion through the factors in section 31."
+    },
+    {
+      "id": "TL_M09_L03_Q09",
+      "question": "When can a court make an order that the defendant publish a correction or an apology under the Defamation Act 2009?",
+      "options": {
+        "A": "Only after a full trial and a finding that the statement was defamatory",
+        "B": "As a remedy available at any stage of the proceedings, including before trial if the plaintiff establishes a prima facie case",
+        "C": "The Act provides for a declaratory order and for an order to publish a correction as available remedies in a defamation action",
+        "D": "Never — the defendant cannot be ordered to publish anything, as this would constitute a restriction on freedom of expression"
+      },
+      "correct_answer": "C",
+      "explanation": "The Defamation Act 2009 provides several remedies beyond monetary damages. These include: a declaratory order — a declaration by the court that the statement was defamatory and false; and an order to publish a correction or apology in terms approved by the court. These remedies may be particularly valuable to a plaintiff who is primarily concerned with vindicating their reputation rather than receiving financial compensation. The availability of these non-monetary remedies reflects the Act's broader goal of vindicating reputation."
+    },
+    {
+      "id": "TL_M09_L03_Q10",
+      "question": "If a defamatory article is published both in a newspaper and on the newspaper's website, does each constitute a separate cause of action?",
+      "options": {
+        "A": "No — the principle of single publication applies and only one cause of action arises regardless of the number of formats",
+        "B": "Yes — each publication to a third party is a separate tort, and online and print publications are distinct publications giving rise to potentially separate causes of action",
+        "C": "Only the print publication gives rise to a cause of action; online publication is governed by separate internet regulations",
+        "D": "Yes — but the limitation period starts from the date of the first publication in either format"
+      },
+      "correct_answer": "B",
+      "explanation": "In defamation, each publication to a third party constitutes a separate tort. Historically, the courts have treated online and print publications as separate publications giving rise to potentially separate causes of action. However, the one-year limitation period under section 38 of the 2009 Act means that each separate publication has its own limitation clock. Candidates should note this as a potentially significant issue in problem questions involving multiple media formats."
+    }
+  ]
+}

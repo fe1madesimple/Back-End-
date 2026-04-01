@@ -1,0 +1,139 @@
+{
+  "subject": "Criminal Law",
+  "module": 7,
+  "lesson": 1,
+  "title": "Theft and Deception",
+  "questions": [
+    {
+      "id": "CL_M07_L01_Q01",
+      "question": "Under Section 4(1) of the Criminal Justice (Theft and Fraud Offences) Act 2001, which of the following is NOT an element of theft?",
+      "options": {
+        "A": "Dishonesty.",
+        "B": "Appropriation of property.",
+        "C": "Use of force or deception.",
+        "D": "Intention to permanently deprive."
+      },
+      "correct_answer": "C",
+      "explanation": "Theft under s.4(1) of the 2001 Act requires: dishonest appropriation of property belonging to another, with intention to permanently deprive. Force and deception are not elements of theft — their presence may give rise to additional or alternative charges (robbery, deception), but they are not required for the base theft offence.",
+      "legislation": "Criminal Justice (Theft and Fraud Offences) Act 2001, s.4(1)"
+    },
+    {
+      "id": "CL_M07_L01_Q02",
+      "question": "In R v Morris [1984], the House of Lords held that switching price labels on supermarket goods constituted an appropriation because:",
+      "options": {
+        "A": "The defendant had physically removed the goods from the shelf.",
+        "B": "Any act of interference with goods belonging to another is an appropriation.",
+        "C": "Switching labels assumed the owner's right to set the price, which is one of the rights of ownership.",
+        "D": "The defendant had the intention to permanently deprive the store of the price difference."
+      },
+      "correct_answer": "C",
+      "explanation": "In R v Morris [1984], the House of Lords held that switching price labels assumed one of the rights of the owner — the right to determine the price at which goods are offered for sale. Any assumption of any of the owner's rights constitutes an appropriation; physical removal is not required.",
+      "cases": "R v Morris [1984]"
+    },
+    {
+      "id": "CL_M07_L01_Q03",
+      "question": "The test for dishonesty under the Criminal Justice (Theft and Fraud Offences) Act 2001, as confirmed in DPP v Bowe [2012], is:",
+      "options": {
+        "A": "Subjective — whether the accused believed their conduct was honest.",
+        "B": "Objective — whether reasonable people would regard the conduct as dishonest.",
+        "C": "A hybrid test — whether the accused knew their conduct was dishonest by ordinary standards.",
+        "D": "Whether the conduct involved a deliberate moral wrong."
+      },
+      "correct_answer": "B",
+      "explanation": "In DPP v Bowe [2012], the Irish Court of Appeal confirmed that the test for dishonesty under the 2001 Act is objective — whether reasonable people would regard the conduct as dishonest. The accused cannot rely on their own subjective moral code to escape liability.",
+      "cases": "DPP v Bowe [2012]"
+    },
+    {
+      "id": "CL_M07_L01_Q04",
+      "question": "Section 4(5) of the 2001 Act requires an intention to permanently deprive the owner of the property. Which of the following is theft under s.4?",
+      "options": {
+        "A": "Taking a car intending to return it the following morning.",
+        "B": "Borrowing money from a colleague's desk without permission, intending to replace it.",
+        "C": "Taking a jacket from a coat rack and selling it, never intending to return it.",
+        "D": "Using a neighbour's lawnmower without asking, returning it the same evening."
+      },
+      "correct_answer": "C",
+      "explanation": "Only option C involves an intention to permanently deprive — selling the jacket makes it clear there is no intention to return it. Options A, B, and D all involve borrowing with an intention to return, which negates the permanent deprivation element. As confirmed in DPP v O'Loughlin [2009] IECCA, the permanence of the intended deprivation is essential.",
+      "cases": "DPP v O'Loughlin [2009] IECCA",
+      "legislation": "Criminal Justice (Theft and Fraud Offences) Act 2001, s.4(5)"
+    },
+    {
+      "id": "CL_M07_L01_Q05",
+      "question": "Under Section 4(2) of the 2001 Act, the honest belief defence to theft operates on which standard?",
+      "options": {
+        "A": "Objective — the belief must have been reasonable.",
+        "B": "Subjective — the belief need only have been honest, even if unreasonable.",
+        "C": "The same objective standard as now applies to rape following the 2024 Act.",
+        "D": "The belief must have been both honest and based on advice from a legal professional."
+      },
+      "correct_answer": "B",
+      "explanation": "The honest belief defence under s.4(2) of the 2001 Act is subjective — the accused's belief need only be honest, not reasonable. This is in deliberate contrast to the 2024 change in rape law, where the objective reasonable belief standard now applies. In theft, an honest but unreasonable belief that the accused had a right to the property remains a full defence.",
+      "legislation": "Criminal Justice (Theft and Fraud Offences) Act 2001, s.4(2)"
+    },
+    {
+      "id": "CL_M07_L01_Q06",
+      "question": "The deception offence under Section 6 of the 2001 Act requires which of the following causal elements?",
+      "options": {
+        "A": "The deception must have taken place in the presence of the victim.",
+        "B": "The deception must have been the operative cause of the victim's act or omission resulting in gain or loss.",
+        "C": "The deception must have involved a false written document.",
+        "D": "The gain must have accrued to the accused directly, not to a third party."
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.6, the deception must have induced the victim's act or omission — it must be the operative cause. If the victim would have acted in the same way regardless of the false representation, the causal link is broken and the offence is not made out. The deception need not be in writing, and gain to a third party is sufficient.",
+      "legislation": "Criminal Justice (Theft and Fraud Offences) Act 2001, s.6"
+    },
+    {
+      "id": "CL_M07_L01_Q07",
+      "question": "Which case provides the leading Irish analysis of the deception offence under Section 6 of the 2001 Act?",
+      "options": {
+        "A": "DPP v Bowe [2012]",
+        "B": "DPP v O'Loughlin [2009] IECCA",
+        "C": "People (DPP) v Egan",
+        "D": "R v Morris [1984]"
+      },
+      "correct_answer": "C",
+      "explanation": "People (DPP) v Egan is the leading Irish authority on deception under s.6 of the 2001 Act, confirming the requirements of dishonesty and causal inducement. DPP v Bowe concerns the dishonesty test in theft; DPP v O'Loughlin concerns permanent deprivation; R v Morris is an English appropriation case.",
+      "cases": "People (DPP) v Egan"
+    },
+    {
+      "id": "CL_M07_L01_Q08",
+      "question": "What is the key structural distinction between theft under Section 4 and deception under Section 6 of the 2001 Act?",
+      "options": {
+        "A": "Theft requires a physical taking; deception can be committed through electronic means.",
+        "B": "In theft, property is taken without the owner's consent; in deception, the owner's consent is obtained by fraud.",
+        "C": "Theft requires an intention to permanently deprive; deception does not.",
+        "D": "Deception carries a higher maximum penalty than theft."
+      },
+      "correct_answer": "B",
+      "explanation": "The essential structural difference is that theft involves taking property without the owner's consent, whereas in deception the owner appears to consent — but that apparent consent is obtained by a false representation. Both require dishonesty, but deception involves a tainted consensual transaction. Theft carries a maximum of ten years; deception five years.",
+      "legislation": "Criminal Justice (Theft and Fraud Offences) Act 2001, ss.4 and 6"
+    },
+    {
+      "id": "CL_M07_L01_Q09",
+      "question": "The maximum penalty for theft on indictment under the Criminal Justice (Theft and Fraud Offences) Act 2001 is:",
+      "options": {
+        "A": "Five years imprisonment.",
+        "B": "Seven years imprisonment.",
+        "C": "Ten years imprisonment.",
+        "D": "Fourteen years imprisonment."
+      },
+      "correct_answer": "C",
+      "explanation": "The maximum penalty for theft on indictment under s.4 of the Criminal Justice (Theft and Fraud Offences) Act 2001 is ten years imprisonment and/or an unlimited fine. Deception under s.6 carries a maximum of five years on indictment.",
+      "legislation": "Criminal Justice (Theft and Fraud Offences) Act 2001, s.4"
+    },
+    {
+      "id": "CL_M07_L01_Q10",
+      "question": "Section 2(1) of the Criminal Justice (Theft and Fraud Offences) Act 2001 defines property as including:",
+      "options": {
+        "A": "Only tangible physical objects.",
+        "B": "Money, real and personal property, things in action, and other intangible property.",
+        "C": "Only property capable of being physically moved.",
+        "D": "Real property only — land and buildings."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 2(1) of the 2001 Act defines property broadly to include money, all real or personal property, things in action, and any other intangible property. Digital assets and bank balances can therefore be property for the purposes of the Act. The definition is intentionally wide to encompass modern forms of ownership.",
+      "legislation": "Criminal Justice (Theft and Fraud Offences) Act 2001, s.2(1)"
+    }
+  ]
+}

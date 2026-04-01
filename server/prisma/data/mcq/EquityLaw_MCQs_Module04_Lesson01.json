@@ -1,0 +1,131 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "Module_04_Lesson_01_Secret_Trusts___Fully_Secret_and_Half-Secret_Trusts.txt",
+  "module_number": 4,
+  "module_title": "Secret Trusts and Mutual Wills",
+  "lesson_number": 1,
+  "lesson_title": "Secret Trusts: Fully Secret and Half-Secret Trusts",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EQL_M04_L01_Q01",
+      "question": "What is the primary equitable justification for enforcing a secret trust despite its non-compliance with the formal requirements of the Succession Act 1965?",
+      "options": {
+        "A": "The Succession Act 1965 expressly recognises secret trusts as valid.",
+        "B": "Equity will not permit a statute to be used as an instrument of fraud.",
+        "C": "Secret trusts are recognised as a form of constructive trust by statute.",
+        "D": "The formal requirements of the Succession Act 1965 do not apply to inter vivos dispositions."
+      },
+      "correct_answer": "B",
+      "explanation": "The basis for enforcing a secret trust is the maxim that equity will not permit a statute to be used as an instrument of fraud. A legatee who accepts property on a promise to hold it for a third party and then keeps it for themselves commits a fraud on the testator and the true beneficiary. Equity intervenes to enforce the obligation regardless of the formal requirements of the Succession Act 1965."
+    },
+    {
+      "id": "EQL_M04_L01_Q02",
+      "question": "Which of the following correctly states the three requirements for a valid fully secret trust?",
+      "options": {
+        "A": "Written communication, express acceptance, and communication before the will is executed",
+        "B": "Communication of the trust obligation, acceptance by the legatee, and communication before the testator's death",
+        "C": "Communication before or at the time of the will, express acceptance, and a named beneficiary",
+        "D": "Communication of the obligation, acceptance, and registration of the trust obligation"
+      },
+      "correct_answer": "B",
+      "explanation": "For a fully secret trust to be valid, three requirements must be met: (1) communication of the trust obligation to the legatee; (2) acceptance of that obligation by the legatee, either expressly or by acquiescence; and (3) communication before the testator's death. Unlike half-secret trusts, communication for a fully secret trust may occur before or after the will is made, provided it occurs before the testator dies."
+    },
+    {
+      "id": "EQL_M04_L01_Q03",
+      "question": "In Ottaway v Norman (1972), which of the following facts gave rise to an enforceable fully secret trust?",
+      "options": {
+        "A": "The trust obligation was declared in the body of the will itself.",
+        "B": "A testator communicated to his housekeeper that she was to leave his house to the plaintiffs on her death, and she accepted.",
+        "C": "The testator made a codicil to his will directing the housekeeper to hold the property on trust.",
+        "D": "The housekeeper received a letter from the testator's solicitor setting out the trust terms."
+      },
+      "correct_answer": "B",
+      "explanation": "In Ottaway v Norman (1972), the testator told his housekeeper that he was leaving her his house by will and that she was to leave it to the plaintiffs on her own death. The housekeeper accepted this obligation. The court enforced the fully secret trust on the basis that all three requirements — communication, acceptance, and communication before death — were satisfied."
+    },
+    {
+      "id": "EQL_M04_L01_Q04",
+      "question": "A testator leaves property to his solicitor 'to be held by him on trust for purposes he knows of.' What type of secret trust, if any, does this create?",
+      "options": {
+        "A": "A fully secret trust, because the trust terms are not disclosed in the will",
+        "B": "No trust, because the purpose is not identified in the will",
+        "C": "A half-secret trust, because the will acknowledges a trust exists but does not reveal the terms or identity of the beneficiary",
+        "D": "An express trust, because the word 'trust' is used in the will"
+      },
+      "correct_answer": "C",
+      "explanation": "Where the will indicates that the legatee takes as a trustee but does not reveal the terms of the trust or the identity of the beneficiary, the trust is a half-secret trust. The obligation is partially disclosed on the face of the will — the trust's existence is acknowledged — but the details remain secret. This is distinct from a fully secret trust, where the will shows no indication of any trust at all."
+    },
+    {
+      "id": "EQL_M04_L01_Q05",
+      "question": "In Re Keen (1937), the House of Lords held that for a half-secret trust, when must the terms of the trust be communicated to the legatee?",
+      "options": {
+        "A": "At any time before the testator's death",
+        "B": "Before or at the time of the execution of the will",
+        "C": "Within one month after the will is executed",
+        "D": "At any time before or after the will is made, provided it is in writing"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Keen (1937), the House of Lords held that for a half-secret trust, the communication of the trust terms must occur before or at the time of the execution of the will. This is a stricter requirement than for fully secret trusts, where communication before death suffices. The rationale is that the will itself acknowledges a trust, and evidence of terms communicated after the will's execution would contradict the will's terms."
+    },
+    {
+      "id": "EQL_M04_L01_Q06",
+      "question": "Why does the rule in Re Keen (1937) impose a stricter communication requirement on half-secret trusts than on fully secret trusts?",
+      "options": {
+        "A": "Because half-secret trusts involve larger amounts of property and require greater formality.",
+        "B": "Because the will itself acknowledges that a trust exists, and evidence of terms communicated after execution would contradict the will.",
+        "C": "Because the Succession Act 1965 expressly requires prior communication for half-secret trusts.",
+        "D": "Because half-secret trusts are less favoured by equity than fully secret trusts."
+      },
+      "correct_answer": "B",
+      "explanation": "The stricter rule for half-secret trusts in Re Keen (1937) follows from the fact that the will itself acknowledges a trust exists. Once the will is made, its terms cannot be contradicted or supplemented by oral evidence of obligations communicated after its execution. Communication after the will is made would be inconsistent with the will's express reference to a trust already known to the legatee."
+    },
+    {
+      "id": "EQL_M04_L01_Q07",
+      "question": "In a fully secret trust, what is the legal effect of silence by the legatee when the testator communicates the trust obligation to them?",
+      "options": {
+        "A": "Silence amounts to rejection of the trust obligation.",
+        "B": "Silence has no legal effect; express acceptance is required.",
+        "C": "Silence amounts to acceptance by acquiescence.",
+        "D": "Silence renders the trust unenforceable for lack of certainty of intention."
+      },
+      "correct_answer": "C",
+      "explanation": "For a fully secret trust, the legatee's acceptance may be express or by acquiescence. If the testator communicates the trust obligation and the legatee remains silent — neither accepting nor rejecting — equity treats that silence as acceptance. The legatee is then bound by the obligation communicated to them."
+    },
+    {
+      "id": "EQL_M04_L01_Q08",
+      "question": "What is the primary reason a testator might use a secret trust rather than making an express trust in the body of their will?",
+      "options": {
+        "A": "To avoid paying inheritance tax on the gift to the ultimate beneficiary",
+        "B": "To benefit a person they do not wish to identify publicly, as wills become public documents on probate",
+        "C": "To circumvent the formal requirements of the Succession Act 1965",
+        "D": "To ensure the trust cannot be challenged by the testator's family"
+      },
+      "correct_answer": "B",
+      "explanation": "The practical motivation for using a secret trust is privacy. A will becomes a public document once admitted to probate. A testator who wishes to benefit a person they do not want to identify publicly — such as an illegitimate child or a person outside the family — may use a secret trust so that the beneficiary's identity does not appear in the public record."
+    },
+    {
+      "id": "EQL_M04_L01_Q09",
+      "question": "The Irish courts have followed which approach in relation to secret trusts, given that the Succession Act 1965 does not expressly address them?",
+      "options": {
+        "A": "The Irish courts refuse to enforce secret trusts as they conflict with the formal requirements of the Succession Act 1965.",
+        "B": "The Irish courts have followed the English approach and recognised both fully and half-secret trusts as enforceable in equity on the basis of fraud prevention.",
+        "C": "The Irish courts enforce only half-secret trusts as these are partially disclosed in the will.",
+        "D": "The Irish courts require secret trusts to be registered before they will be enforced."
+      },
+      "correct_answer": "B",
+      "explanation": "Although the Succession Act 1965 does not expressly address secret trusts, the Irish courts have followed the English approach and recognised both fully and half-secret trusts as enforceable in equity. The basis is the same in both jurisdictions: equity will not permit the Succession Act to be used as an instrument of fraud by a legatee who accepted property on the basis of a promise to hold it for another."
+    },
+    {
+      "id": "EQL_M04_L01_Q10",
+      "question": "Which of the following scenarios correctly describes a fully secret trust rather than a half-secret trust?",
+      "options": {
+        "A": "A will states: 'I give my estate to John, to be held on such trusts as I have communicated to him.'",
+        "B": "A will makes an outright gift to John with no reference to any trust, but the testator has privately told John to hold the property for Mary.",
+        "C": "A will states: 'I give my estate to John as trustee,' without specifying the terms.",
+        "D": "A will states: 'I give my estate to John on trust for purposes of which he is aware.'"
+      },
+      "correct_answer": "B",
+      "explanation": "A fully secret trust arises where the will makes what appears to be an outright gift with no indication on the face of the will that any trust is intended. The trust obligation is entirely hidden. Options A, C, and D all involve wills that acknowledge a trust on their face, which would make them half-secret trusts or incomplete express trusts, not fully secret trusts."
+    }
+  ]
+}

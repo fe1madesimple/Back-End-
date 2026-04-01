@@ -1,0 +1,151 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module02_Lesson03.txt",
+  "module_number": 2,
+  "module_title": "Actus Reus",
+  "lesson_number": 3,
+  "lesson_title": "Assault Causing Serious Harm",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M02_L03_Q01",
+      "question": "Under which provision of Irish statute law is assault causing serious harm created as a distinct criminal offence?",
+      "options": {
+        "A": "Section 2 of the Non-Fatal Offences Against the Person Act 1997",
+        "B": "Section 3 of the Non-Fatal Offences Against the Person Act 1997",
+        "C": "Section 4 of the Non-Fatal Offences Against the Person Act 1997",
+        "D": "Section 18 of the Offences Against the Person Act 1861"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 4 of the Non-Fatal Offences Against the Person Act 1997 creates the offence of assault causing serious harm. Section 2 covers basic assault, Section 3 covers assault causing harm, and the 1861 Act was replaced in Ireland by the 1997 Act.",
+      "difficulty": "easy",
+      "topic_tag": "legislation"
+    },
+    {
+      "id": "CL_M02_L03_Q02",
+      "question": "Which of the following correctly states the statutory definition of 'serious harm' under Section 1 of the Non-Fatal Offences Against the Person Act 1997?",
+      "options": {
+        "A": "Any injury causing hospitalisation or significant pain lasting more than 48 hours",
+        "B": "Injury that creates a substantial risk of death, causes serious disfigurement, or causes substantial loss or impairment of the mobility of the body or any member or organ",
+        "C": "Any permanent physical injury to the body of another person",
+        "D": "Injury that requires surgical intervention or causes psychological trauma"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 1 of the 1997 Act defines 'serious harm' precisely as injury that: (i) creates a substantial risk of death; (ii) causes serious disfigurement; or (iii) causes substantial loss or impairment of the mobility of the body as a whole or of any member or organ. This statutory definition must be applied precisely — it does not cover all serious injuries.",
+      "difficulty": "medium",
+      "topic_tag": "definition"
+    },
+    {
+      "id": "CL_M02_L03_Q03",
+      "question": "What is the maximum penalty on conviction on indictment for an offence under Section 4 of the Non-Fatal Offences Against the Person Act 1997?",
+      "options": {
+        "A": "Ten years' imprisonment",
+        "B": "Fourteen years' imprisonment",
+        "C": "Twenty years' imprisonment",
+        "D": "Life imprisonment"
+      },
+      "correct_answer": "D",
+      "explanation": "Section 4 carries a maximum penalty of life imprisonment. This reflects the severity of the offence, which can result in injuries as devastating as death — permanent paralysis, loss of a limb, or serious disfigurement. It is the same maximum as manslaughter.",
+      "difficulty": "easy",
+      "topic_tag": "penalty"
+    },
+    {
+      "id": "CL_M02_L03_Q04",
+      "question": "Gary punches Victor repeatedly, breaking Victor's nose and causing severe bruising to his face. Victor's nose is disfigured but the disfigurement is not serious and will partially resolve. Which offence is most likely made out on these facts?",
+      "options": {
+        "A": "Section 2 — assault only, as no injury was intended",
+        "B": "Section 3 — assault causing harm, as there is injury but it does not meet the Section 1 definition of serious harm",
+        "C": "Section 4 — assault causing serious harm, as a broken nose constitutes serious disfigurement",
+        "D": "No offence is committed as Victor did not suffer permanent injury"
+      },
+      "correct_answer": "B",
+      "explanation": "A broken nose and severe bruising constitute harm under Section 1 of the 1997 Act (pain and physical impairment), satisfying Section 3. However, unless the disfigurement is serious and likely permanent, it does not reach the threshold of 'serious disfigurement' required for Section 4. The threshold for serious harm is high and must be applied strictly per The People (DPP) v McBride.",
+      "difficulty": "medium",
+      "topic_tag": "application"
+    },
+    {
+      "id": "CL_M02_L03_Q05",
+      "question": "What is the mens rea required for the offence of assault causing serious harm under Section 4 of the 1997 Act?",
+      "options": {
+        "A": "Intention to cause serious harm only — recklessness is insufficient",
+        "B": "Intention or recklessness as to the causing of serious harm",
+        "C": "Negligence — a gross departure from the standard of a reasonable person",
+        "D": "The offence is one of strict liability — no mens rea is required"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 4 requires that the accused intentionally or recklessly caused the serious harm. Recklessness in this context is subjective — the accused must have foreseen the risk of causing serious harm and proceeded regardless. The accused need not have specifically intended serious harm; subjective recklessness as to that level of harm suffices.",
+      "difficulty": "medium",
+      "topic_tag": "mens rea"
+    },
+    {
+      "id": "CL_M02_L03_Q06",
+      "question": "Which pre-1997 legislation did the Non-Fatal Offences Against the Person Act 1997 replace in Ireland in relation to non-fatal offences against the person?",
+      "options": {
+        "A": "The Criminal Justice Act 1951",
+        "B": "The Offences Against the Person Act 1861",
+        "C": "The Criminal Law Act 1976",
+        "D": "The Criminal Justice (Public Order) Act 1994"
+      },
+      "correct_answer": "B",
+      "explanation": "The 1997 Act replaced the Offences Against the Person Act 1861, which was a Victorian-era English statute that had continued to apply in Ireland after independence. The 1997 Act modernised the law by creating a graduated hierarchy of non-fatal offences — Sections 2, 3, and 4 — replacing the outdated 1861 framework.",
+      "difficulty": "easy",
+      "topic_tag": "historical context"
+    },
+    {
+      "id": "CL_M02_L03_Q07",
+      "question": "Helen deliberately pours acid over Mark's arm, causing permanent and severe scarring across a large portion of his forearm. Which section of the Non-Fatal Offences Against the Person Act 1997 best applies?",
+      "options": {
+        "A": "Section 2 — assault",
+        "B": "Section 3 — assault causing harm",
+        "C": "Section 4 — assault causing serious harm",
+        "D": "None — acid attacks are charged under the Chemical Weapons Act"
+      },
+      "correct_answer": "C",
+      "explanation": "Permanent and severe scarring across a large portion of the body is likely to constitute 'serious disfigurement' within the Section 1 definition of serious harm. Section 4 is the appropriate charge. Helen also has clear direct intention to cause the harm. The manner of delivery (acid) does not affect which statutory provision applies.",
+      "difficulty": "medium",
+      "topic_tag": "application"
+    },
+    {
+      "id": "CL_M02_L03_Q08",
+      "question": "Under Section 4 of the Non-Fatal Offences Against the Person Act 1997, can a person be convicted where they intended only to cause ordinary harm (Section 3 level) but the victim suffered serious harm as a result?",
+      "options": {
+        "A": "No — the accused must have specifically intended to cause serious harm for a Section 4 conviction",
+        "B": "Yes — where the accused was reckless as to the risk of causing serious harm, Section 4 is made out even if serious harm was not specifically intended",
+        "C": "No — strict liability cannot apply to Section 4 and intent to cause serious harm must be proven",
+        "D": "Yes — Section 4 is a result crime and only the outcome matters, not the state of mind"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 4 requires intention or recklessness as to serious harm. If the accused foresaw the risk that their conduct might cause serious harm and proceeded regardless, the mens rea for Section 4 is satisfied even if they did not specifically desire that outcome. This is an important distinction from a strict intent-only requirement.",
+      "difficulty": "hard",
+      "topic_tag": "mens rea"
+    },
+    {
+      "id": "CL_M02_L03_Q09",
+      "question": "Tom sets a concealed trap on a path, knowing it is likely to cause serious injury to whoever triggers it. The victim activates the trap and suffers an injury that substantially impairs the mobility of her leg. Can Tom be charged under Section 4 of the 1997 Act?",
+      "options": {
+        "A": "No — Section 4 requires a direct physical assault and does not cover indirect acts",
+        "B": "Yes — the 1997 Act contemplates indirect application of force, and Tom's act satisfies the actus reus and mens rea of Section 4",
+        "C": "No — only the Criminal Damage Act 1991 covers the use of traps",
+        "D": "Yes, but only if Tom was present when the trap was triggered"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 2 of the 1997 Act (which underpins assault for Section 4 purposes) explicitly covers both direct and indirect application of force. Setting a trap that causes serious harm when triggered is an indirect act that satisfies the actus reus. Tom's knowledge that serious injury was likely satisfies the subjective recklessness requirement. His physical absence when the trap triggered is irrelevant.",
+      "difficulty": "hard",
+      "topic_tag": "actus reus"
+    },
+    {
+      "id": "CL_M02_L03_Q10",
+      "question": "Which of the following best summarises the significance of The People (DPP) v McBride in the context of Section 4 of the Non-Fatal Offences Against the Person Act 1997?",
+      "options": {
+        "A": "The case established that consent is a complete defence to Section 4 in sporting contexts",
+        "B": "The case confirmed that the statutory definition of serious harm must be applied strictly and that the prosecution must prove the injury meets one of the three specific criteria in Section 1",
+        "C": "The case held that Section 4 can only be charged on indictment and not summarily",
+        "D": "The case established that recklessness is insufficient for Section 4 and only specific intent to cause serious harm will suffice"
+      },
+      "correct_answer": "B",
+      "explanation": "The People (DPP) v McBride confirmed that the statutory definition of serious harm in Section 1 of the 1997 Act must be applied strictly. The prosecution must prove the injury meets one of the three criteria: substantial risk of death, serious disfigurement, or substantial loss of mobility. Visual severity alone is not sufficient — the legal threshold must be satisfied.",
+      "difficulty": "medium",
+      "topic_tag": "case law"
+    }
+  ]
+}

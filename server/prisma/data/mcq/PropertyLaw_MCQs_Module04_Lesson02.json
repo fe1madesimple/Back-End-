@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_04_Lesson_02_Acquisition_of_Easements.txt",
+  "module_number": 4,
+  "module_title": "Easements and Profits a Prendre",
+  "lesson_number": 2,
+  "lesson_title": "Acquisition of Easements",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M04_L02_Q01",
+      "question": "What are the formal requirements for an express grant of an easement?",
+      "options": {
+        "A": "A written agreement signed by both parties, which must then be lodged with the Land Registry",
+        "B": "The express grant must be made by deed and, for registered land, should be noted on the folio to bind third parties",
+        "C": "An oral agreement suffices, provided both the dominant and servient owners are present and consent is clearly given",
+        "D": "A written agreement is sufficient; no deed is required for an easement that does not exceed twenty years"
+      },
+      "correct_answer": "B",
+      "explanation": "An express grant of an easement must be made by deed. For registered land, the easement should also be noted on the folio (registered as a burden) to be fully effective against third parties who subsequently acquire the servient tenement. An express grant is the most certain method of creating an easement because the terms of the right are clearly defined in the deed, leaving no room for dispute about the existence or scope of the easement."
+    },
+    {
+      "id": "PRL_M04_L02_Q02",
+      "question": "Why does the court construe an express reservation of an easement strictly?",
+      "options": {
+        "A": "Because reservations are subject to a statutory restriction on their duration under the LCLRA 2009",
+        "B": "Because the grantor is writing in their own favour — they are retaining rights over land they have transferred — and a grantor should not be permitted to derogate from their grant by ambiguous reservation",
+        "C": "Because an express reservation creates a higher risk of fraud and therefore requires a stricter standard of proof",
+        "D": "Because reservations can only benefit the servient tenement and must therefore be limited in scope"
+      },
+      "correct_answer": "B",
+      "explanation": "The courts construe express reservations strictly because the grantor is writing in their own favour. When a vendor sells land and expressly reserves an easement over the sold land for the benefit of their retained land, they are attempting to limit the rights of the purchaser. Equity applies the principle that a grantor should not be permitted to derogate from their grant: if you have transferred land, you should not be allowed to take back rights over it by implication or by loose language. Therefore, if a reservation is ambiguous, it will be construed against the party seeking to rely on it."
+    },
+    {
+      "id": "PRL_M04_L02_Q03",
+      "question": "When does an easement of necessity arise in the context of an implied easement?",
+      "options": {
+        "A": "Whenever the use of an easement would be more convenient for the dominant owner than an alternative route",
+        "B": "Where, without the easement, the land conveyed would be completely inaccessible — landlocked — and there is no other means of access",
+        "C": "Where a planning permission has been granted that requires access across the servient land",
+        "D": "Where the dominant and servient tenements were previously held under common ownership"
+      },
+      "correct_answer": "B",
+      "explanation": "An easement of necessity arises only where, without the easement, the land conveyed would be completely inaccessible — landlocked. If a vendor sells a plot with no other means of access except across the vendor's retained land, an easement of way will be implied as a matter of necessity. The courts construe necessity strictly: the easement must be truly necessary, not merely convenient. If the dominant tenement can be accessed by another route — even a difficult or inconvenient one — no easement of necessity will be implied. Mere inconvenience does not justify implication."
+    },
+    {
+      "id": "PRL_M04_L02_Q04",
+      "question": "Sweeney v Duggan [1991] is the leading Irish Supreme Court authority on which type of implied easement?",
+      "options": {
+        "A": "Easements implied under the rule in Wheeldon v Burrows [1879]",
+        "B": "Easements of necessity",
+        "C": "Common intention easements — where the parties had a shared understanding about how the land would be used that was impossible without the easement",
+        "D": "Easements implied by section 40 of the LCLRA 2009"
+      },
+      "correct_answer": "C",
+      "explanation": "Sweeney v Duggan [1991] is the leading Irish Supreme Court authority on common intention easements. A common intention easement arises where the parties have a shared understanding that the land will be used in a particular way, and that use is impossible without an easement. In Sweeney v Duggan, the Supreme Court implied an easement on the basis of common intention, giving effect to the parties' shared understanding about how the land would be used. The common intention must be objectively ascertainable from the circumstances of the transaction."
+    },
+    {
+      "id": "PRL_M04_L02_Q05",
+      "question": "What is a 'quasi-easement' in the context of the rule in Wheeldon v Burrows [1879]?",
+      "options": {
+        "A": "An easement granted for a limited period only, which will expire at the end of the specified term",
+        "B": "A right that the vendor was exercising over their own land at the time of sale — a right that would have been an easement if the two parcels had been in different ownership",
+        "C": "An easement implied by the court where no express grant was made but necessity is shown",
+        "D": "An easement that has been informally exercised for a long period but not yet formally registered"
+      },
+      "correct_answer": "B",
+      "explanation": "A quasi-easement is a right that the vendor was exercising over their own land at the time they owned both plots. It is called a 'quasi'-easement because you cannot have a true easement over your own land — an easement requires a dominant and a servient tenement in separate ownership. When the vendor sells part of their land, these quasi-easements can crystallise into true easements in favour of the purchaser under the rule in Wheeldon v Burrows [1879]. The classic example is a path the vendor used to walk from one part of their land to another — on sale of the relevant part, this becomes a right of way easement."
+    },
+    {
+      "id": "PRL_M04_L02_Q06",
+      "question": "Under the rule in Wheeldon v Burrows [1879], what three conditions must be satisfied for a quasi-easement to be impliedly granted to a purchaser on a sale of part?",
+      "options": {
+        "A": "The quasi-easement must be essential to the use of the land sold, it must have been used for at least twelve years, and it must have been registered",
+        "B": "The quasi-easement must be: (a) continuous and apparent; (b) necessary for the reasonable enjoyment of the land sold; and (c) in use at the time of sale for the benefit of the part sold",
+        "C": "The quasi-easement must have been exercised openly, it must be capable of forming the subject matter of a grant, and it must not impose a positive burden on the servient owner",
+        "D": "The quasi-easement must be defined by reference to an existing plan, it must benefit the dominant tenement, and it must not be excluded by the conveyance"
+      },
+      "correct_answer": "B",
+      "explanation": "The three conditions under Wheeldon v Burrows [1879] for a quasi-easement to be impliedly granted on a sale of part are: (1) the quasi-easement must be continuous and apparent — it must be evidenced by some permanent feature on the land (such as a well-worn path or a drain) that would be obvious to an inspection; (2) it must be necessary for the reasonable enjoyment of the land sold — not strictly necessary (as with easements of necessity) but reasonably necessary; and (3) it must have been in use at the time of sale for the benefit of the part sold. All three conditions must be satisfied."
+    },
+    {
+      "id": "PRL_M04_L02_Q07",
+      "question": "What does section 40 of the LCLRA 2009 provide in relation to the implied grant of easements?",
+      "options": {
+        "A": "It abolishes the rule in Wheeldon v Burrows [1879] for all post-2009 conveyances",
+        "B": "It provides that on a conveyance of land, any easement necessary for the reasonable use and enjoyment of the land conveyed, and that was in use at the time of the conveyance, is impliedly granted to the purchaser unless expressly excluded",
+        "C": "It requires all easements to be registered within six months of the conveyance of the dominant tenement",
+        "D": "It codifies the easement of necessity doctrine but makes no change to the Wheeldon v Burrows rule"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 40 of the LCLRA 2009 provides that on a conveyance of land, any easement that is necessary for the reasonable use and enjoyment of the land conveyed, and that was in use at the time of the conveyance, is impliedly granted to the purchaser — unless the conveyance expressly excludes it. This statutory provision largely codifies and extends the rule in Wheeldon v Burrows for post-1 December 2009 conveyances. It is the provision that should be cited for any easement implied on the basis of prior use in respect of a post-2009 transaction, replacing reliance on the common law rule for such cases."
+    },
+    {
+      "id": "PRL_M04_L02_Q08",
+      "question": "Does the rule in Wheeldon v Burrows [1879] apply to implied reservations as well as implied grants?",
+      "options": {
+        "A": "Yes — Wheeldon v Burrows applies equally to both implied grants and implied reservations",
+        "B": "No — Wheeldon v Burrows applies only to implied grants; implied reservations are limited to necessity and common intention, because a grantor cannot derogate from their grant",
+        "C": "Yes — but only where the reservation was noted in the conveyance by reference to an existing plan",
+        "D": "No — Wheeldon v Burrows has been entirely replaced by section 40 LCLRA 2009 for all post-2009 transactions"
+      },
+      "correct_answer": "B",
+      "explanation": "The rule in Wheeldon v Burrows [1879] applies only to implied grants — where a vendor sells part of their land and the purchaser benefits from quasi-easements that were exercised by the vendor. It does not apply to implied reservations. Where a vendor wishes to reserve rights over the land they are selling for the benefit of their retained land, they must do so expressly. The courts will only imply a reservation where it is truly necessary or where there is clear common intention — the generous Wheeldon v Burrows analysis does not apply. This distinction between the generous approach to implied grants and the restrictive approach to implied reservations is a critical point."
+    },
+    {
+      "id": "PRL_M04_L02_Q09",
+      "question": "A vendor sells part of their land to a purchaser in 2021. Before the sale, the vendor used a path across the land being sold to access a rear field on their retained land. The conveyance is silent on rights of way. Can the vendor claim an implied easement over the sold land?",
+      "options": {
+        "A": "Yes — under Wheeldon v Burrows [1879] and section 40 LCLRA 2009, the vendor's prior use gives rise to an implied easement",
+        "B": "No — the vendor is seeking an implied reservation, not an implied grant; Wheeldon v Burrows does not apply to reservations; the vendor would need to show strict necessity or common intention to imply a reservation",
+        "C": "Yes — the vendor's prior use automatically creates a prescriptive easement",
+        "D": "Yes — section 40 LCLRA 2009 applies equally to both implied grants and implied reservations"
+      },
+      "correct_answer": "B",
+      "explanation": "This scenario involves an implied reservation, not an implied grant. The vendor is the one seeking to reserve rights over the land they have sold — retaining rights over land that now belongs to the purchaser. Wheeldon v Burrows [1879] and section 40 LCLRA 2009 apply only to implied grants (where the purchaser takes the benefit of quasi-easements). They do not apply to implied reservations. To imply a reservation, the vendor must demonstrate strict necessity (the retained land would otherwise be entirely inaccessible) or common intention. The mere fact that the vendor previously used the path is insufficient to imply a reservation."
+    },
+    {
+      "id": "PRL_M04_L02_Q10",
+      "question": "Under section 40 LCLRA 2009, is it possible for the parties to a conveyance to exclude the implied grant of easements that would otherwise arise?",
+      "options": {
+        "A": "No — section 40 LCLRA 2009 creates a mandatory minimum set of easements that cannot be excluded by contract",
+        "B": "Yes — section 40 LCLRA 2009 provides that easements are impliedly granted unless the conveyance expressly excludes them; the parties can therefore contract out of the implied grant",
+        "C": "No — exclusion of easements requires a separate deed of easement extinguishment after the conveyance",
+        "D": "Yes — but exclusion is only valid if the excluding clause is prominently highlighted in the conveyance and the purchaser's solicitor confirms they have advised their client of its effect"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 40 of the LCLRA 2009 provides that easements in use at the time of a conveyance are impliedly granted to the purchaser 'unless the conveyance expressly excludes' them. The parties therefore have the freedom to exclude the implied grant by including an appropriate express exclusion clause in the conveyance. In practice, vendors who wish to protect themselves from the implied grant of a wide range of easements will include a 'no implied easements' clause in the conveyance. This is an important conveyancing point and is examined in FE-1 problem questions involving the sale of part."
+    }
+  ]
+}

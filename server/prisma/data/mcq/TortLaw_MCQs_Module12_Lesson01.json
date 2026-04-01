@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "Module_12_Lesson_01_Strict_Liability___Animals_and_the_Animals_Act.txt",
+  "module_number": 12,
+  "module_title": "Strict Liability",
+  "lesson_number": 1,
+  "lesson_title": "Strict Liability: Liability for Animals",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M12_L01_Q01",
+      "question": "What were the two main categories of strict liability for animals recognised at common law?",
+      "options": {
+        "A": "The scienter rule and the rule in Rylands v Fletcher",
+        "B": "Cattle trespass and the scienter rule",
+        "C": "The Animals Act 1985 and the Control of Dogs Act 1986",
+        "D": "Negligence in animal management and strict liability for dangerous species"
+      },
+      "correct_answer": "B",
+      "explanation": "The common law recognised strict liability for animals in two main categories: cattle trespass — strict liability for damage done by straying cattle — and the scienter rule — strict liability for the keeper of an animal known to be dangerous."
+    },
+    {
+      "id": "TL_M12_L01_Q02",
+      "question": "Under the common law scienter rule, what did a plaintiff need to prove where the defendant kept an animal of a normally harmless species, such as a dog or horse?",
+      "options": {
+        "A": "Nothing — strict liability applied automatically regardless of the animal's history",
+        "B": "That the defendant was negligent in controlling the animal",
+        "C": "That the defendant knew the particular animal had a dangerous propensity of the kind that caused the harm",
+        "D": "That the animal had caused injury to at least two other persons on previous occasions"
+      },
+      "correct_answer": "C",
+      "explanation": "Under the scienter rule, for animals of a normally harmless species — such as dogs or horses — the plaintiff had to prove that the defendant knew the particular animal had a dangerous propensity, that is, that the animal had previously shown a tendency toward the kind of harm that occurred."
+    },
+    {
+      "id": "TL_M12_L01_Q03",
+      "question": "Under the common law, a person keeps a lion as a pet. The lion escapes and injures a visitor. Does the plaintiff need to prove that the owner knew the lion had previously shown dangerous tendencies?",
+      "options": {
+        "A": "Yes — scienter must always be proved regardless of the species involved",
+        "B": "Yes — but only if the lion had been kept safely for several years without incident",
+        "C": "No — strict liability arises automatically for animals belonging to a dangerous species",
+        "D": "No — but only if the owner took no precautions whatsoever"
+      },
+      "correct_answer": "C",
+      "explanation": "For animals belonging to a dangerous species — those that are inherently dangerous, such as lions, bears, or venomous snakes — strict liability arose at common law without any need to prove that the particular animal had previously shown dangerous tendencies."
+    },
+    {
+      "id": "TL_M12_L01_Q04",
+      "question": "Which Irish statute modified the common law position on liability for damage done by animals generally?",
+      "options": {
+        "A": "The Control of Dogs Act 1986",
+        "B": "The Animals Act 1985",
+        "C": "The Civil Liability Act 1961",
+        "D": "The Occupiers Liability Act 1995"
+      },
+      "correct_answer": "B",
+      "explanation": "The Animals Act 1985 extended and clarified the law on liability for damage done by animals in Ireland. It provides that the owner of an animal is liable for damage caused in circumstances where the damage is of a kind the animal was likely to cause unless restrained, or which was likely to be severe if caused."
+    },
+    {
+      "id": "TL_M12_L01_Q05",
+      "question": "Under the Animals Act 1985, what is the key question a court must consider when determining an owner's liability?",
+      "options": {
+        "A": "Whether the animal had previously injured any person",
+        "B": "Whether the owner took all reasonable precautions to prevent the animal causing harm",
+        "C": "Whether the owner knew or ought to have known of the animal's propensity to cause damage of that kind",
+        "D": "Whether the animal belonged to a species classified as dangerous under the Act"
+      },
+      "correct_answer": "C",
+      "explanation": "Under the Animals Act 1985, the key question is whether the owner knew or ought to have known of the animal's propensity to cause damage of that kind. This frames the test in terms of actual or constructive knowledge of the dangerous propensity."
+    },
+    {
+      "id": "TL_M12_L01_Q06",
+      "question": "What does section 21 of the Control of Dogs Act 1986 provide?",
+      "options": {
+        "A": "That dog owners are liable only if they were negligent in controlling their dog",
+        "B": "That dog owners are liable for attacks only where scienter is proved",
+        "C": "That the owner of a dog is strictly liable for damage caused by the dog, without proof of knowledge of a previous dangerous tendency and without proof of negligence",
+        "D": "That local authorities bear strict liability for damage caused by stray dogs"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 21 of the Control of Dogs Act 1986 provides that the owner of a dog is liable in damages for damage caused by the dog to any person or to livestock, without proof of knowledge of a previous dangerous tendency and without proof of negligence. This is true strict liability for dog attacks in Ireland."
+    },
+    {
+      "id": "TL_M12_L01_Q07",
+      "question": "A dog with no previous history of aggression attacks and seriously injures a child. Under the Control of Dogs Act 1986, is the owner liable?",
+      "options": {
+        "A": "No — the owner cannot be liable because the dog had never previously shown any aggression",
+        "B": "No — liability requires proof that the owner was negligent in some way",
+        "C": "Yes — the 1986 Act imposes strict liability regardless of any previous dangerous tendency",
+        "D": "Yes — but only if the owner was aware the dog might be dangerous in certain circumstances"
+      },
+      "correct_answer": "C",
+      "explanation": "Under section 21 of the Control of Dogs Act 1986, the owner of a dog is strictly liable for damage caused by the dog, without proof of knowledge of a previous dangerous tendency and without proof of negligence. The absence of any prior aggression is entirely irrelevant."
+    },
+    {
+      "id": "TL_M12_L01_Q08",
+      "question": "The script states that the old saying 'every dog gets one bite' does not apply in Ireland. What does this mean in legal terms?",
+      "options": {
+        "A": "Irish courts refuse to apply the scienter rule in any circumstances at all",
+        "B": "The Control of Dogs Act 1986 imposes strict liability for dog attacks regardless of prior dangerous behaviour, abolishing the need for scienter in dog cases",
+        "C": "Dog owners in Ireland are never liable for the first attack their dog makes",
+        "D": "The Animals Act 1985 requires proof of at least one previous incident before liability arises"
+      },
+      "correct_answer": "B",
+      "explanation": "The saying 'every dog gets one bite' reflects the scienter rule — that the owner was only liable once they had knowledge of the dog's dangerous propensity, typically evidenced by a prior bite or attack. The Control of Dogs Act 1986 displaces this approach for dogs: no prior dangerous tendency need be proved under section 21."
+    },
+    {
+      "id": "TL_M12_L01_Q09",
+      "question": "Which of the following scenarios is governed by the common law scienter rule as modified by the Animals Act 1985, rather than by the Control of Dogs Act 1986?",
+      "options": {
+        "A": "A dog bites a postal worker while they deliver letters",
+        "B": "A dog kills a neighbour's chickens",
+        "C": "A horse escapes from a field and injures a cyclist on the road",
+        "D": "A guide dog knocks over an elderly pedestrian"
+      },
+      "correct_answer": "C",
+      "explanation": "The Control of Dogs Act 1986 applies specifically to dogs. Where damage is caused by other animals — such as a horse — the applicable framework is the common law scienter rule as modified and extended by the Animals Act 1985. Horses are animals of a normally harmless species, so knowledge of the particular animal's dangerous propensity would be relevant."
+    },
+    {
+      "id": "TL_M12_L01_Q10",
+      "question": "For FE-1 exam purposes, which combination correctly identifies the Irish statutory regime for animal liability?",
+      "options": {
+        "A": "Animals Act 1985 — general statutory framework for animals; Control of Dogs Act 1986 s.21 — strict liability for dog attacks specifically",
+        "B": "Control of Dogs Act 1986 — general framework for all animals; Animals Act 1985 — applies only to cattle trespass",
+        "C": "Civil Liability Act 1961 — general framework; Animals Act 1985 — applies only to dogs",
+        "D": "Animals Act 1985 — applies only to dangerous species; Control of Dogs Act 1986 — applies to all domestic animals"
+      },
+      "correct_answer": "A",
+      "explanation": "The Animals Act 1985 is the general statutory framework for liability for damage done by animals in Ireland. The Control of Dogs Act 1986, specifically section 21, imposes strict liability for damage caused by dogs without any need to prove scienter or negligence. Both statutes must be applied to the correct facts in an exam scenario."
+    }
+  ]
+}

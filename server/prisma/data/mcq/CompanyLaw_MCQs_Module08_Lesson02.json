@@ -1,0 +1,131 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module08_Lesson02.txt",
+  "module_number": 8,
+  "module_title": "Director Accountability: Restriction and Disqualification",
+  "lesson_number": 2,
+  "lesson_title": "Disqualification of Directors — s.839 CA 2014",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M08_L02_Q01",
+      "question": "Disqualification under s.839 CA 2014 differs fundamentally from restriction under s.819 in terms of both the grounds available and the consequence. Which of the following BEST captures this distinction?",
+      "options": {
+        "A": "Disqualification is automatic on insolvency; restriction requires proof of dishonesty",
+        "B": "Restriction is a mandatory default regime triggered by insolvent winding up; disqualification is a discretionary court-imposed order available on broader grounds, including conduct in solvent companies, conviction of indictable offences, and persistent default",
+        "C": "Disqualification bans a person from being a shareholder; restriction bans a person from being a director",
+        "D": "Restriction applies for a maximum of three years; disqualification is always permanent"
+      },
+      "correct_answer": "B",
+      "explanation": "Restriction under s.819 is triggered by insolvent winding up and applies unless the director displaces it. Disqualification under s.839 is discretionary, available on broader grounds (persistent default, indictable offence conviction, unfitness), applies to solvent and insolvent companies, and the period is set by the court. Disqualification imposes a complete ban without the capital escape route available in restriction."
+    },
+    {
+      "id": "CL_M08_L02_Q02",
+      "question": "Under s.839(1) CA 2014, the court may make a disqualification order against a person on multiple grounds. Which of the following is a specified ground for disqualification under s.839(1)?",
+      "options": {
+        "A": "The person failed to attend more than 50% of board meetings in a given year",
+        "B": "The person has been convicted on indictment of any indictable offence in relation to a company, or involving fraud, dishonesty, or breach of duty in relation to a company",
+        "C": "The person is a director of a company that has been struck off the CRO register for failure to file an annual return",
+        "D": "The person has been previously subject to a restriction order under s.819 more than once"
+      },
+      "correct_answer": "B",
+      "explanation": "s.839(1)(a) CA 2014 provides that the court may disqualify a person who has been convicted on indictment of an indictable offence in relation to a company, or involving fraud, dishonesty, or breach of duty in connection with a company. This is one of the primary grounds for disqualification and reflects the seriousness of criminal conduct in the company law context."
+    },
+    {
+      "id": "CL_M08_L02_Q03",
+      "question": "In Business Communications Ltd v Baxter [1995] (Ireland), the court made a disqualification order on the ground of 'unfitness'. What type of conduct satisfied the unfitness threshold in that case?",
+      "options": {
+        "A": "The director had failed to comply with a restriction order that had previously been made against them",
+        "B": "The director had engaged in a systematic pattern of corporate governance failures: using companies as personal piggy banks, ignoring creditors, and persistent non-compliance with statutory requirements across multiple companies",
+        "C": "The director had made a single fraudulent misrepresentation in a share prospectus, resulting in substantial investor losses",
+        "D": "The director had acted as director of a foreign company that had been wound up in a foreign jurisdiction"
+      },
+      "correct_answer": "B",
+      "explanation": "In Business Communications Ltd v Baxter [1995], the court disqualified the respondent based on a persistent and systematic pattern of conduct across multiple companies: treating company funds as personal funds, ignoring creditor obligations, and repeated non-compliance. The court looked at the totality of conduct across the respondent's corporate history."
+    },
+    {
+      "id": "CL_M08_L02_Q04",
+      "question": "Under s.839(3) CA 2014, the court may make a disqualification order where a person has been persistently in default in relation to relevant requirements under the Companies Acts. How is 'persistent default' defined or evidenced?",
+      "options": {
+        "A": "Persistent default requires proof of at least ten separate defaults within a two-year period",
+        "B": "Persistent default is established by showing that the person has three or more convictions for a relevant offence, or by showing a pattern of non-compliance with filing obligations even without formal convictions",
+        "C": "Persistent default may be conclusively proved by showing that the person has been convicted of, or a default order has been made against them in respect of, not less than three relevant requirements within five years",
+        "D": "Persistent default is only relevant where the defaults caused direct financial loss to creditors"
+      },
+      "correct_answer": "C",
+      "explanation": "Under s.839(3) CA 2014, persistent default may be conclusively proved by showing that the person has been convicted of, or had a default order made against them in respect of, not less than three relevant obligations within a five-year period. This creates a presumption of disqualification-worthy default without requiring separate proof of a subjective pattern."
+    },
+    {
+      "id": "CL_M08_L02_Q05",
+      "question": "The maximum period for a disqualification order under s.839 CA 2014 is set by the court. What is the maximum period the court may impose under the general disqualification provisions?",
+      "options": {
+        "A": "Five years — the same maximum as restriction orders under s.819",
+        "B": "There is no fixed maximum — the court sets the period it considers appropriate having regard to the gravity of the conduct",
+        "C": "Ten years for dishonesty-related grounds; five years for corporate governance failures",
+        "D": "Fifteen years for indictable offence convictions; ten years for unfitness grounds"
+      },
+      "correct_answer": "B",
+      "explanation": "Unlike restriction (which is fixed at five years under s.820), the court has discretion under s.839 to set the period of disqualification it considers appropriate. There is no statutory cap specified in s.839 itself for the general disqualification provision, allowing the court to impose whatever period justice requires."
+    },
+    {
+      "id": "CL_M08_L02_Q06",
+      "question": "A person subject to a disqualification order under s.839 CA 2014 acts as a director of a company during the disqualification period. What are the legal consequences?",
+      "options": {
+        "A": "Their directorial acts are voidable but automatically valid until challenged by the liquidator",
+        "B": "Acting as director while disqualified is a criminal offence, the person may be personally liable for the company's debts, and the directorial acts may be void",
+        "C": "The only consequence is an administrative fine — the disqualification period is automatically extended by one year per violation",
+        "D": "The disqualified person is personally liable only for debts incurred after they were notified of the disqualification order"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s.844 CA 2014, acting as a director while disqualified is a Category 2 criminal offence. Additionally, s.845 may impose personal liability on the disqualified person for company debts incurred during the period they acted in breach of the order. The consequences are significantly more severe than for breach of a restriction order."
+    },
+    {
+      "id": "CL_M08_L02_Q07",
+      "question": "Section 842 CA 2014 grants the Corporate Enforcement Authority (CEA) a direct power in relation to disqualification. What does this power entail?",
+      "options": {
+        "A": "The CEA may issue disqualification orders administratively, without court involvement, for Category 1 and 2 offences",
+        "B": "The CEA may apply directly to the court for disqualification orders in appropriate cases — it is not dependent on a liquidator making the application",
+        "C": "The CEA may only apply for disqualification where it has first prosecuted the director for a criminal offence",
+        "D": "The CEA may issue a public 'director warning' which, if ignored, automatically converts into a court disqualification order"
+      },
+      "correct_answer": "B",
+      "explanation": "s.842 CA 2014 empowers the CEA to apply directly to court for disqualification orders (and restriction orders under s.819). This is a standalone power independent of liquidator applications. It enables the CEA to pursue disqualification against directors of solvent companies or in cases where no liquidator exists."
+    },
+    {
+      "id": "CL_M08_L02_Q08",
+      "question": "A director of a company is convicted of insider trading under Irish market abuse legislation. The conviction is on indictment. Can the court make a disqualification order under s.839 CA 2014 arising from this conviction?",
+      "options": {
+        "A": "No — disqualification under s.839 is limited to offences under the Companies Acts; market abuse convictions are governed by separate legislation",
+        "B": "Yes — s.839(1) includes conviction on indictment for indictable offences involving fraud or dishonesty in relation to a company, and insider trading clearly involves dishonesty in the context of company affairs",
+        "C": "Only if the conviction results in a custodial sentence exceeding 12 months",
+        "D": "No — a separate application must be made under the Market Abuse Regulation to seek disqualification"
+      },
+      "correct_answer": "B",
+      "explanation": "s.839(1)(a) CA 2014 covers conviction on indictment for offences involving fraud, dishonesty, or breach of duty in relation to a company. Insider trading involves the dishonest exploitation of confidential information in relation to a company's securities — this falls squarely within the dishonesty ground and supports a disqualification application."
+    },
+    {
+      "id": "CL_M08_L02_Q09",
+      "question": "Fyffes plc v DCC plc [2007] IESC was a landmark Irish case involving market abuse (insider dealing). While primarily a market abuse case, what significance does it have in the context of director disqualification?",
+      "options": {
+        "A": "The Supreme Court held that insider dealing by a director constitutes a Category 1 offence requiring automatic disqualification without court application",
+        "B": "The Supreme Court found that share dealing using price-sensitive information constituted dishonest conduct — conduct of this kind would ground a disqualification application under s.839(1)(a) as it involves dishonesty in relation to a company",
+        "C": "The case established that the CEA (then ODCE) had no jurisdiction to investigate market abuse offences as these were exclusively within the Financial Regulator's remit",
+        "D": "The Supreme Court held that directors of publicly listed companies are held to a higher standard of conduct and face automatic disqualification on any conviction"
+      },
+      "correct_answer": "B",
+      "explanation": "Fyffes v DCC plc [2007] IESC is relevant to disqualification because it established that exploiting price-sensitive information constitutes dishonest conduct. While the case was primarily a civil market abuse case, conduct of this quality — using a director's privileged access to company information for personal gain — would form a strong basis for disqualification under s.839(1)(a) CA 2014."
+    },
+    {
+      "id": "CL_M08_L02_Q10",
+      "question": "A director of a company that was subject to examinership and subsequently wound up argues that their conduct during the examinership process should be evaluated separately from the period before examinership. Is this a valid approach under the restriction/disqualification regime?",
+      "options": {
+        "A": "Yes — the court must assess each period in isolation; conduct before examinership cannot aggravate findings for the post-examinership period",
+        "B": "No — the court takes a holistic view of the director's entire conduct in relation to the company, including the period preceding examinership, during examinership, and after",
+        "C": "Yes — examinership creates a 'clean slate' and directors cannot be restricted or disqualified for conduct predating the examiner's appointment",
+        "D": "Only conduct within the 12-month look-back period under s.818 is relevant; earlier conduct is inadmissible"
+      },
+      "correct_answer": "B",
+      "explanation": "Courts apply a holistic assessment of the director's entire conduct in relation to the company's affairs, including the period before examinership and the causes of insolvency. Examinership does not create a 'clean slate'; pre-examinership decisions that contributed to financial collapse remain relevant to the honesty and responsibility assessment."
+    }
+  ]
+}

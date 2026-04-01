@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "Module_11_Lesson_01_Trespass_to_Land.txt",
+  "module_number": 11,
+  "module_title": "Trespass to Land and Nuisance",
+  "lesson_number": 1,
+  "lesson_title": "Trespass to Land",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M11_L01_Q01",
+      "question": "Which of the following best states the definition of trespass to land?",
+      "options": {
+        "A": "The negligent or intentional interference with another's use or enjoyment of their land",
+        "B": "The direct, intentional, and unlawful interference with land in the possession of another",
+        "C": "Any entry onto land belonging to another person, whether or not authorised",
+        "D": "The indirect and unlawful interference with another person's land causing measurable harm"
+      },
+      "correct_answer": "B",
+      "explanation": "Trespass to land is the direct, intentional, and unlawful interference with land in the possession of another. The interference must be direct, intentional, and without consent or legal authority. Indirect interference and mere negligence are not sufficient."
+    },
+    {
+      "id": "TL_M11_L01_Q02",
+      "question": "A defendant deliberately walks across their neighbour's field, genuinely believing it to be a public right of way. Which statement is correct?",
+      "options": {
+        "A": "No trespass occurred because the defendant did not intend to trespass",
+        "B": "No trespass occurred because the defendant acted in good faith",
+        "C": "Trespass occurred because the defendant deliberately entered the land, even if unaware they were trespassing",
+        "D": "Trespass occurred only if the landowner can prove actual damage to the field"
+      },
+      "correct_answer": "C",
+      "explanation": "The intentional element of trespass to land means the defendant deliberately entered or placed something on the land, even if unaware they were trespassing. Belief that entry was lawful does not negate the intentional element. Trespass is also actionable per se, so no damage need be proved."
+    },
+    {
+      "id": "TL_M11_L01_Q03",
+      "question": "Which of the following acts does NOT fall within the scope of trespass to land?",
+      "options": {
+        "A": "Remaining on land after permission to be there has been withdrawn",
+        "B": "Tunnelling through the sub-surface of another person's land",
+        "C": "A commercial aircraft flying at high altitude over a landowner's property",
+        "D": "Placing objects on another person's land without permission"
+      },
+      "correct_answer": "C",
+      "explanation": "Following Bernstein v Skyviews [1978], a landowner's rights in airspace extend only to such height as is necessary for the ordinary use and enjoyment of the land and structures on it. High-altitude flights by aircraft do not constitute trespass to land."
+    },
+    {
+      "id": "TL_M11_L01_Q04",
+      "question": "What was the key principle established in Bernstein v Skyviews [1978]?",
+      "options": {
+        "A": "A landowner owns the airspace above their land to an unlimited height",
+        "B": "Aircraft can never trespass in the airspace above private land under any circumstances",
+        "C": "A landowner's rights in airspace extend only to the height necessary for the ordinary use and enjoyment of the land and structures on it",
+        "D": "The maxim cuius est solum applies without qualification in modern law"
+      },
+      "correct_answer": "C",
+      "explanation": "In Bernstein v Skyviews [1978], the court substantially qualified the maxim cuius est solum eius est usque ad coelum et ad inferos, holding that a landowner's rights in airspace extend only to such height as is necessary for the ordinary use and enjoyment of the land and structures on it."
+    },
+    {
+      "id": "TL_M11_L01_Q05",
+      "question": "Trespass to land is actionable per se. What consequence does this have for a plaintiff?",
+      "options": {
+        "A": "The plaintiff must prove significant financial loss before they can succeed in a claim",
+        "B": "The plaintiff is entitled to at least nominal damages upon proving unauthorised entry, without proving any damage",
+        "C": "The plaintiff can only obtain an injunction, not damages",
+        "D": "The plaintiff must show the trespass was part of a continuing course of conduct"
+      },
+      "correct_answer": "B",
+      "explanation": "Trespass to land is actionable per se — no damage need be proved. The plaintiff who demonstrates that the defendant entered their land without authority is entitled to at least nominal damages. This makes trespass a powerful tool to assert the right to exclusive possession even before measurable harm occurs."
+    },
+    {
+      "id": "TL_M11_L01_Q06",
+      "question": "A homeowner gives a friend permission to use their garden while away on holiday. The homeowner returns early and asks the friend to leave, but the friend remains for a further two days. Which of the following is most accurate?",
+      "options": {
+        "A": "The friend is not a trespasser because they originally had permission to be present",
+        "B": "The friend commits trespass to land by remaining after permission was withdrawn",
+        "C": "The friend can only be liable in nuisance, not trespass, as their initial entry was lawful",
+        "D": "No liability arises unless the homeowner can prove actual damage to the property"
+      },
+      "correct_answer": "B",
+      "explanation": "Trespass to land includes remaining on land after permission has been withdrawn. Once the licence to remain was revoked, the friend's continued presence became unlawful, constituting trespass to land. The original lawful entry does not protect continued presence after revocation."
+    },
+    {
+      "id": "TL_M11_L01_Q07",
+      "question": "Which of the following is NOT identified in the script as a defence to trespass to land?",
+      "options": {
+        "A": "Consent of the landowner",
+        "B": "Lawful authority, such as a search warrant",
+        "C": "Contributory negligence of the plaintiff",
+        "D": "Necessity in exceptional circumstances"
+      },
+      "correct_answer": "C",
+      "explanation": "The defences to trespass to land identified in the script are: consent, lawful authority (such as a search warrant, statutory right of access, or court order), licence, and necessity. Contributory negligence is not a defence to trespass to land."
+    },
+    {
+      "id": "TL_M11_L01_Q08",
+      "question": "What are 'mesne profits' as a remedy for trespass to land?",
+      "options": {
+        "A": "Punitive damages awarded to deter future trespass",
+        "B": "Damages representing the profit the defendant made or the loss the plaintiff suffered as a result of the trespass during the period of occupation",
+        "C": "The cost of restoring land to its condition before the trespass",
+        "D": "Nominal damages awarded where no actual harm resulted from the trespass"
+      },
+      "correct_answer": "B",
+      "explanation": "Mesne profits are damages representing the profit the defendant made or the loss the plaintiff suffered as a result of the trespass during the period of trespassory occupation. They are a distinct remedy available alongside or instead of ordinary compensatory damages."
+    },
+    {
+      "id": "TL_M11_L01_Q09",
+      "question": "Which of the following remedies for trespass to land is aimed at recovering possession of the land itself?",
+      "options": {
+        "A": "Mesne profits",
+        "B": "An injunction",
+        "C": "Ejectment",
+        "D": "Nominal damages"
+      },
+      "correct_answer": "C",
+      "explanation": "Ejectment is an action to recover possession of land. It is the remedy specifically aimed at returning the land to the plaintiff, as distinct from damages (compensatory, nominal, or aggravated) or an injunction to restrain future trespass."
+    },
+    {
+      "id": "TL_M11_L01_Q10",
+      "question": "The Latin maxim cuius est solum eius est usque ad coelum et ad inferos relates to trespass to land. What does it mean?",
+      "options": {
+        "A": "Whoever trespasses on land is liable for all consequences that flow from the trespass",
+        "B": "Whoever owns the land owns it up to the heavens and down to the depths",
+        "C": "Land ownership gives the right to exclude all persons without any exception whatsoever",
+        "D": "The intentional element of trespass extends to all interference with property rights"
+      },
+      "correct_answer": "B",
+      "explanation": "The maxim cuius est solum eius est usque ad coelum et ad inferos means whoever owns the land owns it up to the heavens and down to the depths. In modern law this has been substantially qualified, particularly in relation to high-altitude airspace, as confirmed in Bernstein v Skyviews [1978]."
+    }
+  ]
+}

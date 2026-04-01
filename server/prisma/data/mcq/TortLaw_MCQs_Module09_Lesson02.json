@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module09_Lesson02.txt",
+  "module_number": 9,
+  "module_title": "Defamation",
+  "lesson_number": 2,
+  "lesson_title": "Defamation: Defences Under the Defamation Act 2009",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M09_L02_Q01",
+      "question": "Under which section of the Defamation Act 2009 is the defence of truth contained, and what must the defendant prove?",
+      "options": {
+        "A": "Section 18 — the defendant must prove the statement was made in the public interest",
+        "B": "Section 16 — the defendant must prove the defamatory statement is true in all material respects",
+        "C": "Section 20 — the defendant must prove the statement was an honestly held opinion",
+        "D": "Section 26 — the defendant must prove the statement was made responsibly on a matter of public interest"
+      },
+      "correct_answer": "B",
+      "explanation": "The defence of truth is contained in section 16 of the Defamation Act 2009. It is a complete defence: a defendant who proves that the defamatory statement is true in all material respects succeeds regardless of malice, motive, or the harm caused to the plaintiff's reputation. The burden of proving truth lies with the defendant — this reflects the general presumption of falsity created by section 2 of the Act."
+    },
+    {
+      "id": "TL_M09_L02_Q02",
+      "question": "Is the defence of truth defeated by proof that the defendant acted with malice?",
+      "options": {
+        "A": "Yes — malice always defeats any defence under the Defamation Act 2009",
+        "B": "No — truth is an absolute defence and succeeds regardless of malice, motive, or the harm caused",
+        "C": "Only if the malice led the defendant to exaggerate the truth of the statement",
+        "D": "Yes — malice defeats truth where the defendant had an improper purpose in publishing"
+      },
+      "correct_answer": "B",
+      "explanation": "Truth is an absolute defence under section 16 of the Defamation Act 2009. Unlike qualified privilege, which is defeated by malice, the defence of truth is complete and irrebuttable regardless of the defendant's malice, motive, or the harm the publication caused. If the statement is true in all material respects, the defendant succeeds. The policy rationale is that the law of defamation protects reputation, not the protection of false impressions."
+    },
+    {
+      "id": "TL_M09_L02_Q03",
+      "question": "To what categories of statement does absolute privilege attach under Irish defamation law?",
+      "options": {
+        "A": "All statements made by medical practitioners in the course of their professional duties",
+        "B": "Statements made in the course of Oireachtas proceedings under Articles 15.12 and 15.13 of the Constitution; statements made in judicial proceedings by judges, counsel, parties, and witnesses; and other categories in Schedule 1 of the Act",
+        "C": "Statements made by journalists in the public interest about elected officials",
+        "D": "All statements made by government ministers in the exercise of their official functions"
+      },
+      "correct_answer": "B",
+      "explanation": "Absolute privilege attaches to: (1) statements made in the course of proceedings in the Oireachtas, protected by Articles 15.12 and 15.13 of the Irish Constitution; (2) statements made in the course of judicial proceedings by judges, counsel, parties, and witnesses; and (3) other specified categories in Schedule 1 of the Defamation Act 2009. The rationale is that the free conduct of parliamentary and judicial proceedings must not be chilled by the threat of defamation proceedings — the public interest in open debate in those forums overrides the protection of individual reputation."
+    },
+    {
+      "id": "TL_M09_L02_Q04",
+      "question": "Can a statement made under absolute privilege ever found a defamation action, even if it is false and made with malice?",
+      "options": {
+        "A": "Yes — malice always defeats privilege, whether absolute or qualified",
+        "B": "No — absolutely privileged statements cannot found a defamation action regardless of falsity or malice",
+        "C": "Only if the statement was published outside the protected forum, such as to the press",
+        "D": "Yes — if the statement caused quantifiable damage to the plaintiff's professional reputation"
+      },
+      "correct_answer": "B",
+      "explanation": "Absolute privilege is exactly that — absolute. No defamation action can be founded on a statement that falls within an absolutely privileged category, regardless of the falsity of the statement or the malice of the speaker. A Member of the Dáil who makes a false and malicious statement about a private citizen in the course of parliamentary debate cannot be sued for defamation. This reflects the constitutional importance of parliamentary freedom under Articles 15.12 and 15.13."
+    },
+    {
+      "id": "TL_M09_L02_Q05",
+      "question": "Under section 18 of the Defamation Act 2009, what is the nature of qualified privilege and how can it be defeated?",
+      "options": {
+        "A": "Qualified privilege attaches permanently to all communications between professionals and cannot be defeated",
+        "B": "Qualified privilege protects an occasion of communication where there is a duty or interest to communicate — but it is defeated by proof of malice",
+        "C": "Qualified privilege applies only to reports of court proceedings and cannot be defeated by any means",
+        "D": "Qualified privilege attaches to statements made in the public interest and is defeated by proof of falsity"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 18 of the Defamation Act 2009 provides for qualified privilege. It applies where the defendant made the statement pursuant to a legal, social, or moral duty to communicate it to a person with a corresponding interest in receiving it. Unlike absolute privilege, qualified privilege can be defeated by proof that the defendant was actuated by malice — meaning spite, ill will, or some improper purpose other than the legitimate purpose protected by the occasion. Malice taints the occasion and destroys the privilege."
+    },
+    {
+      "id": "TL_M09_L02_Q06",
+      "question": "What constitutes 'malice' for the purpose of defeating qualified privilege in defamation?",
+      "options": {
+        "A": "Any inaccuracy in the statement, however minor",
+        "B": "Knowledge that the statement was false, or reckless indifference as to its truth or falsity, or making the statement for an improper purpose other than the legitimate purpose of the occasion",
+        "C": "Publication of the statement to a wider audience than strictly necessary",
+        "D": "Any failure to verify the accuracy of the statement before publication"
+      },
+      "correct_answer": "B",
+      "explanation": "Malice sufficient to defeat qualified privilege means the defendant's dominant motive was improper — such as spite, ill will, or a desire to injure the plaintiff beyond what the legitimate purpose of the occasion required. It also includes knowingly making a false statement or acting with reckless indifference to its truth or falsity. A defendant who genuinely believed the truth of what they said, and communicated it for a proper purpose, does not act with malice even if the statement turns out to be false."
+    },
+    {
+      "id": "TL_M09_L02_Q07",
+      "question": "Under section 20 of the Defamation Act 2009, what three elements must be proved for the 'honest opinion' defence?",
+      "options": {
+        "A": "The statement was true; it was made in the public interest; it was published in a recognised media outlet",
+        "B": "The statement was one of opinion rather than fact; the opinion was honestly held; the opinion was in respect of a matter of public interest",
+        "C": "The defendant had expertise in the subject matter; the opinion was reasonable; it was based on verified facts",
+        "D": "The statement referred to a public figure; it was made in good faith; it did not cause serious harm"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 20 of the Defamation Act 2009 — the honest opinion defence — requires proof of three elements: (1) the statement was a statement of opinion rather than a statement of fact; (2) the opinion was honestly held by the defendant; and (3) the opinion was in respect of a matter of public interest. The opinion must also be based on facts that are true or stated in a privileged communication. The defence protects the expression of views and commentary, not assertions of fact."
+    },
+    {
+      "id": "TL_M09_L02_Q08",
+      "question": "What is the key distinction between a statement of fact and a statement of opinion for the purpose of the honest opinion defence?",
+      "options": {
+        "A": "A statement of fact can be verified objectively; a statement of opinion expresses a view or judgment about facts that is not capable of objective verification",
+        "B": "A statement of fact is always defamatory; a statement of opinion never is",
+        "C": "A statement of fact refers to events in the past; a statement of opinion relates to future predictions",
+        "D": "A statement of fact comes from a professional source; a statement of opinion comes from a layperson"
+      },
+      "correct_answer": "A",
+      "explanation": "The distinction between fact and opinion is central to the honest opinion defence. A statement of fact is one capable of objective verification as true or false — 'X stole money from the company.' A statement of opinion expresses a view or judgment — 'In my opinion, based on the reported facts, X has been acting corruptly.' Only statements of opinion attract the defence. If the defendant dresses up a factual assertion as opinion — 'In my opinion X is a thief' — it may be treated as a statement of fact and the defence will not apply."
+    },
+    {
+      "id": "TL_M09_L02_Q09",
+      "question": "Under section 27 of the Defamation Act 2009, who may rely on the defence of innocent publication, and what must they prove?",
+      "options": {
+        "A": "Any defendant who can prove they did not intend the publication to be defamatory",
+        "B": "Secondary publishers — such as internet service providers, booksellers, or libraries — who are not the author, editor, or publisher, provided they took reasonable care, had no reason to believe the statement was defamatory, and acted expeditiously to remove it once notified",
+        "C": "Any defendant who published the statement in an unmodified form as received from a third party",
+        "D": "Only internet service providers, and only where they removed the content within twenty-four hours of notification"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 27 of the Defamation Act 2009 provides the innocent publication defence for secondary publishers — entities such as internet service providers, online platforms, booksellers, and libraries who are not the original author, editor, or publisher. To succeed, the defendant must establish: (1) they took reasonable care in relation to the publication; (2) they did not know and had no reason to believe the statement was defamatory; and (3) they acted expeditiously to remove the material once notified of its defamatory nature."
+    },
+    {
+      "id": "TL_M09_L02_Q10",
+      "question": "The defence of 'fair and reasonable publication' under section 26 of the Defamation Act 2009 reflects the influence of which English law development?",
+      "options": {
+        "A": "The Caparo test from Caparo Industries plc v Dickman [1990]",
+        "B": "The Reynolds privilege developed in Reynolds v Times Newspapers [1999]",
+        "C": "The Bolam test from Bolam v Friern Hospital Management Committee [1957]",
+        "D": "The neighbour principle from Donoghue v Stevenson [1932]"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 26 of the Defamation Act 2009 — the defence of fair and reasonable publication — reflects the influence of the Reynolds privilege from Reynolds v Times Newspapers [1999] in English law. Reynolds established that responsible journalism on a matter of public interest could attract privilege even where full truth could not be established. Section 26 codifies a similar approach: the defendant must prove the statement was on a matter of public interest and that they reasonably believed publication was in the public interest, having regard to responsible journalism standards."
+    }
+  ]
+}

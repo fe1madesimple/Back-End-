@@ -1,0 +1,131 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module07_Lesson01.txt",
+  "module_number": 7,
+  "module_title": "Shareholder Remedies",
+  "lesson_number": 1,
+  "lesson_title": "Oppression and Unfair Prejudice — s.212 CA 2014",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M07_L01_Q01",
+      "question": "Under s.212 CA 2014, a member may petition the court where the company's affairs are being conducted in a manner that is oppressive to them or in disregard of their interests. Which of the following BEST captures the threshold difference between 'oppression' and 'disregard of interests'?",
+      "options": {
+        "A": "Oppression requires proof of bad faith; disregard of interests is a strict liability ground",
+        "B": "Oppression involves conduct burdensome and harsh to the petitioner; disregard encompasses less grave but still unfairly prejudicial conduct",
+        "C": "Disregard of interests requires a statutory breach whereas oppression is a purely equitable concept",
+        "D": "The two grounds are identical and the courts make no practical distinction between them"
+      },
+      "correct_answer": "B",
+      "explanation": "Irish courts treat oppression as requiring conduct that is harsh, burdensome or wrongful, while 'disregard of interests' catches less extreme but still unjustifiable exclusions. This dual threshold was confirmed in Re Westwind Holdings [2005] and Scottish Co-operative Wholesale Society v Meyer [1959]."
+    },
+    {
+      "id": "CL_M07_L01_Q02",
+      "question": "In Scottish Co-operative Wholesale Society v Meyer [1959] HL, the House of Lords held that the conduct of the majority constituted oppression. What was the essential act of oppression?",
+      "options": {
+        "A": "The majority voted to dissolve the company without notice to minority shareholders",
+        "B": "The majority deliberately ran down the subsidiary's business to benefit the parent, leaving minority shareholders stranded",
+        "C": "The majority passed a special resolution altering the articles to dilute the minority's voting rights",
+        "D": "The majority refused to declare dividends for a period exceeding three consecutive years"
+      },
+      "correct_answer": "B",
+      "explanation": "In Scottish Co-op v Meyer, the SCWS controlled nominee directors who deliberately starved the subsidiary of business to benefit the parent, at the expense of the minority shareholders. This deliberate destruction of value was classic oppression."
+    },
+    {
+      "id": "CL_M07_L01_Q03",
+      "question": "Re Murph's Restaurants Ltd [1979] is an important Irish authority on s.205 CA 1963 (now s.212 CA 2014). What conduct was held to constitute oppression in that case?",
+      "options": {
+        "A": "Exclusion of a working director from management and refusal to pay salary in a quasi-partnership company",
+        "B": "Payment of excessive remuneration to the majority shareholders acting as directors",
+        "C": "Failure to hold an AGM for three consecutive years",
+        "D": "Issuing new shares to dilute the petitioner's shareholding below 10%"
+      },
+      "correct_answer": "A",
+      "explanation": "In Re Murph's Restaurants, Kenny J held that excluding a director-shareholder from management and denying them salary in a quasi-partnership company was oppression. The case established that quasi-partnership companies warrant heightened protection for participating shareholders."
+    },
+    {
+      "id": "CL_M07_L01_Q04",
+      "question": "A petitioner under s.212 CA 2014 was a minority shareholder in a company formed by three equal shareholders who had all agreed to participate in management. After a falling out, two shareholders excluded the third from all management decisions and stopped paying his director's salary. Which legal concept is most critical to the petitioner's success?",
+      "options": {
+        "A": "The reflective loss principle, which bars shareholders from recovering losses that mirror company losses",
+        "B": "The quasi-partnership principle, which imports legitimate expectations beyond those in the articles",
+        "C": "The Foss v Harbottle rule, which prevents individual shareholders from suing on behalf of the company",
+        "D": "The indoor management rule, which protects third parties relying on apparent authority"
+      },
+      "correct_answer": "B",
+      "explanation": "Where a company is formed on a quasi-partnership basis — mutual trust, understanding of participation in management — the courts look beyond the strict articles to protect legitimate expectations. Exclusion from management in such circumstances typically constitutes oppression or disregard of interests: Re Murph's Restaurants [1979]."
+    },
+    {
+      "id": "CL_M07_L01_Q05",
+      "question": "Re Clubman's Shirts Ltd [1983] (Ireland) examined what constitutes 'disregard of interests' under Irish company law. What was the key principle established?",
+      "options": {
+        "A": "A pattern of serious mismanagement amounting to gross negligence is sufficient without proof of self-dealing",
+        "B": "Disregard of interests requires intentional exclusion from the benefits of membership, not mere commercial misjudgement",
+        "C": "The petitioner must demonstrate that the company is insolvent before the court will grant relief",
+        "D": "Courts will not interfere with the internal management of companies unless a statutory provision has been breached"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Clubman's Shirts, O'Hanlon J distinguished genuine commercial decisions (even poor ones) from deliberate disregard of a member's interests. Disregard requires something more than mismanagement — it implies awareness of and indifference to the member's interests."
+    },
+    {
+      "id": "CL_M07_L01_Q06",
+      "question": "Under s.212 CA 2014, the court may make any order it thinks fit to bring an end to the oppression. Which of the following orders is expressly contemplated by s.212(3) and would be MOST commonly sought in a closely-held private company dispute?",
+      "options": {
+        "A": "An order winding up the company on just and equitable grounds",
+        "B": "An order that the majority shareholders purchase the petitioner's shares at fair value",
+        "C": "An order appointing an independent auditor to investigate the company's accounts",
+        "D": "An order converting the company from a private limited company to a DAC"
+      },
+      "correct_answer": "B",
+      "explanation": "The most common remedy under s.212 CA 2014 in private company disputes is a buy-out order — requiring the majority to purchase the petitioner's shares at a fair (usually pro-rata, non-discounted) value. This provides an exit without destroying the business."
+    },
+    {
+      "id": "CL_M07_L01_Q07",
+      "question": "The 2024 Companies (Corporate Governance, Enforcement and Regulatory Provisions) Act amended s.212 CA 2014 to expand remedies. What significant new remedy was introduced for oppression petitions?",
+      "options": {
+        "A": "The court may now order criminal prosecution of oppressive directors",
+        "B": "The court may now award compensation directly to the petitioner (not merely order share purchase)",
+        "C": "The court may order the appointment of a receiver over the oppressor's personal assets",
+        "D": "The court may impose a mandatory dividend payment order on the company"
+      },
+      "correct_answer": "B",
+      "explanation": "The 2024 Act extended the court's remedial powers under s.212 to include an award of compensation to the petitioner. Prior to this, the primary remedy was a share purchase order; the 2024 reform expanded access to monetary relief without requiring a shareholding transfer."
+    },
+    {
+      "id": "CL_M07_L01_Q08",
+      "question": "Re Williams Group Tullamore [1985] addressed the valuation methodology for shares ordered to be purchased following an oppression finding. What principle did the court apply?",
+      "options": {
+        "A": "Shares should be valued at a discounted rate reflecting the minority's lack of control",
+        "B": "Shares should be valued on a pro-rata basis without a minority discount, reflecting fair value",
+        "C": "The last publicly traded price should be used as a fixed reference point",
+        "D": "Shares are valued at book value of net assets divided by total shares in issue"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Williams Group Tullamore, the Irish High Court held that where oppression has been established, shares should be purchased at a pro-rata fair value without applying a minority discount. Applying a discount would allow the oppressor to benefit from their own wrong."
+    },
+    {
+      "id": "CL_M07_L01_Q09",
+      "question": "A minority shareholder in a private company seeks to bring an oppression petition under s.212 CA 2014. The majority argue the court should dismiss the petition because the petitioner failed to exhaust internal dispute resolution mechanisms under the articles first. How should a court approach this argument?",
+      "options": {
+        "A": "The court must stay the s.212 proceedings and require exhaustion of internal remedies as a jurisdictional prerequisite",
+        "B": "The court has discretion to consider whether internal remedies are adequate, but s.212 does not require exhaustion as a precondition",
+        "C": "Once internal remedies exist, the court has no jurisdiction to hear the oppression petition",
+        "D": "The court will automatically strike out the petition unless the petitioner filed a formal written complaint with the board first"
+      },
+      "correct_answer": "B",
+      "explanation": "There is no statutory requirement under s.212 to exhaust internal remedies before petitioning. The court retains full discretion. However, a court may factor in whether internal remedies were available and ignored when exercising its discretion on costs or relief."
+    },
+    {
+      "id": "CL_M07_L01_Q10",
+      "question": "Re Irish Visiting Motorists Board Ltd [1981] (Ireland) considered whether simple mismanagement could found an oppression claim. The court's conclusion was that:",
+      "options": {
+        "A": "Negligent mismanagement, if sufficiently gross, automatically constitutes oppression",
+        "B": "Mismanagement alone, absent evidence of unfair discrimination against the petitioner's interests, does not constitute oppression",
+        "C": "The court has jurisdiction to remove directors found guilty of serious mismanagement under s.212",
+        "D": "Mismanagement combined with failure to hold an AGM is always sufficient to constitute oppression"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Irish Visiting Motorists, the court emphasised that oppression requires a quality of unfair conduct directed at the petitioner as a member, not merely mismanagement. Poor business decisions, even damaging ones, do not constitute oppression unless there is an element of discriminatory or unfair treatment."
+    }
+  ]
+}

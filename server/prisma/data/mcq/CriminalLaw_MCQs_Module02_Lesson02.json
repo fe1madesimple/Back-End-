@@ -1,0 +1,131 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module02_Lesson02.txt",
+  "module_number": 2,
+  "module_title": "Actus Reus",
+  "lesson_number": 2,
+  "lesson_title": "Causation",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CRL_M02_L02_Q01",
+      "question": "David strikes Victor on the head with a bottle. Victor is taken to hospital where he receives treatment that, unknown to the medical staff, is the wrong treatment for his condition. Victor dies. The medical treatment was described by the court as 'palpably wrong.' Applying the principles in R v Jordan [1956], which conclusion follows?",
+      "options": {
+        "A": "David is liable for murder because he struck the first blow and but-for that blow Victor would not have been in hospital",
+        "B": "David is not liable for Victor's death because the palpably wrong medical treatment constitutes a novus actus interveniens breaking the chain of causation",
+        "C": "David is liable because the egg-shell skull rule requires him to take his victim as he finds him",
+        "D": "David is not liable because medical negligence always breaks the chain of causation in Irish law"
+      },
+      "correct_answer": "B",
+      "explanation": "In R v Jordan [1956], the accused stabbed the victim who was then admitted to hospital. The wound had substantially healed when medical staff administered a drug to which the victim was intolerant and which was 'palpably wrong' treatment. The Court of Appeal quashed the murder conviction, holding that the wholly independent, palpably wrong medical treatment broke the chain of causation. This is a narrow exception: the original wound must have substantially healed and the treatment must be truly abnormal. Option A applies the but-for test correctly but ignores that the chain of causation was broken by the novus actus. Option C (egg-shell skull rule from R v Blaue [1975]) applies where the victim's pre-existing condition worsens the outcome \u2014 it does not prevent a novus actus from operating. Option D overstates Jordan \u2014 ordinary medical negligence does NOT break the chain (see R v Chesire [1991])."
+    },
+    {
+      "id": "CRL_M02_L02_Q02",
+      "question": "In R v Smith [1959], a soldier was stabbed by another soldier. During transportation and treatment, the victim was dropped twice and received treatment that a doctor later described as 'thoroughly bad.' The victim died. The court-martial convicted Smith of murder. What test did the Court of Appeal apply to uphold the conviction?",
+      "options": {
+        "A": "But-for test \u2014 but for the stabbing, the victim would not have died",
+        "B": "Operating and substantial cause \u2014 the original wound was still the operating and substantial cause of death at the time of death",
+        "C": "De minimis \u2014 the bad treatment was only a minor contribution to death",
+        "D": "Reasonable foreseeability \u2014 a reasonable person would have foreseen that the victim might receive bad treatment"
+      },
+      "correct_answer": "B",
+      "explanation": "In R v Smith [1959], the Court of Appeal (Courts-Martial Appeal Court) confirmed that the relevant test is whether the accused's act was the 'operating and substantial cause' of the victim's death at the time of death. The court distinguished Jordan on the basis that in Smith, the original wound was still operating \u2014 it had not healed and remained the dominant cause. The intervening bad treatment was not sufficiently independent to break the chain. This operating and substantial cause test is the primary causation test in Irish criminal law for homicide. The but-for test (Option A) is the starting point but insufficient on its own. Option C (de minimis) addresses the threshold for the accused's contribution. Option D (foreseeability) is a civil negligence concept that does not directly apply to criminal causation."
+    },
+    {
+      "id": "CRL_M02_L02_Q03",
+      "question": "Patrick shoots at Siobhan and misses. Siobhan, fleeing in terror, runs into oncoming traffic and is fatally struck by a car. The driver was not speeding and reacted normally. Applying causation principles, which statement is most accurate?",
+      "options": {
+        "A": "Patrick is not liable for Siobhan's death because the car driver's act was an independent intervening event",
+        "B": "Patrick is not liable because the but-for test is not satisfied \u2014 Siobhan died from the car, not the gunshot",
+        "C": "Patrick may be liable for Siobhan's death because Siobhan's flight was a foreseeable and reasonable response to the attack, and the car impact was a foreseeable consequence of creating that danger",
+        "D": "Patrick is only liable if he specifically intended Siobhan to run into traffic"
+      },
+      "correct_answer": "C",
+      "explanation": "Where a victim's reaction to a defendant's unlawful act is reasonably foreseeable, that reaction and its consequences do not break the chain of causation. In R v Pagget (1983), the accused used a human shield and the police shot the shield \u2014 the court held the accused caused the death because the police response was a natural and foreseeable response to his unlawful act. Similarly, where a victim flees from a deadly threat and is killed in flight, the chain of causation remains unbroken provided the victim's response was reasonable. Option A incorrectly treats a foreseeable consequence as a novus actus. Option B misapplies but-for \u2014 but-for Patrick's attack, Siobhan would not have fled and would not have been struck. Option D confuses causation (an objective question) with intention (a subjective mens rea question)."
+    },
+    {
+      "id": "CRL_M02_L02_Q04",
+      "question": "In R v Chesire [1991], the accused shot the victim who was treated in hospital. The victim developed respiratory complications arising from the tracheotomy performed by medical staff. The original gunshot wounds were no longer life-threatening when the victim died. The accused argued the medical treatment broke the chain of causation. How did the Court of Appeal rule?",
+      "options": {
+        "A": "The medical treatment broke the chain of causation because the original wounds were no longer life-threatening",
+        "B": "The medical treatment broke the chain only because it was negligent",
+        "C": "The chain of causation was not broken: medical complications arising from treatment of wounds inflicted by the accused remain linked causally unless the treatment was so independent of the accused's acts and so potent that it made the contribution of the accused insignificant",
+        "D": "The chain of causation was automatically broken once the victim entered hospital"
+      },
+      "correct_answer": "C",
+      "explanation": "In R v Chesire [1991], the Court of Appeal clarified the Jordan exception significantly. Beldam LJ held that even though the original wounds were no longer life-threatening, negligent medical treatment does not automatically break the chain of causation. The test is whether the medical treatment was so independent of the accused's acts and so potent in causing death as to make the accused's contribution insignificant. Ordinary medical complications \u2014 even negligent ones \u2014 arising in the treatment of wounds caused by the accused will not break the chain. Chesire effectively narrowed the Jordan exception and established that only truly extraordinary, independent medical interventions (as in Jordan itself) will constitute a novus actus. Options A and B misstate the Chesire test. Option D has no basis in law."
+    },
+    {
+      "id": "CRL_M02_L02_Q05",
+      "question": "Rebecca stabs Brian in the arm. Brian is taken to hospital. Brian is a Jehovah's Witness and refuses a blood transfusion on religious grounds. Brian dies from blood loss. Applying R v Blaue [1975], which statement best reflects the law?",
+      "options": {
+        "A": "Rebecca is not liable because Brian's refusal of treatment broke the chain of causation",
+        "B": "Rebecca is liable because the egg-shell skull rule requires her to take her victim as she finds him \u2014 including his religious beliefs \u2014 and the refusal does not break the chain",
+        "C": "Rebecca is liable only if she knew Brian was a Jehovah's Witness when she stabbed him",
+        "D": "Rebecca is not liable because Brian's death was caused by blood loss, not the stabbing directly"
+      },
+      "correct_answer": "B",
+      "explanation": "In R v Blaue [1975], the Court of Appeal held that the 'thin skull' or egg-shell skull rule extends beyond physical conditions to include the victim's beliefs, values and personal characteristics. An accused must take the victim as they find them \u2014 including a refusal to accept treatment on religious grounds. Brian's refusal of a blood transfusion was a direct and foreseeable consequence of being stabbed: the wound made the transfusion necessary; the refusal was authentic and consistent with Brian's beliefs. The original stabbing remained the operating and substantial cause of death. This prevents defendants from escaping liability because of their victim's particular characteristics. Option A incorrectly treats a foreseeable, principled refusal as a novus actus. Option C introduces a knowledge requirement that does not exist. Option D conflates the immediate mechanism of death with the legal cause."
+    },
+    {
+      "id": "CRL_M02_L02_Q06",
+      "question": "In R v White [1910], the accused put poison in his mother's drink intending to kill her. His mother died of an unrelated heart attack before the poison could take effect. The accused was convicted of attempted murder but acquitted of murder. What causation principle does this case establish?",
+      "options": {
+        "A": "The egg-shell skull rule \u2014 the accused must take his victim as he finds her",
+        "B": "The but-for test \u2014 the accused's act must be a necessary condition of the death; here, but-for the poison, the mother would still have died from the heart attack",
+        "C": "The de minimis principle \u2014 the poison's contribution was too small to found liability for murder",
+        "D": "The coincidence of actus reus and mens rea \u2014 both must occur simultaneously"
+      },
+      "correct_answer": "B",
+      "explanation": "R v White [1910] is the foundational case for the but-for test in criminal causation. The accused poisoned his mother intending to kill her, but she died of an unrelated heart attack before the poison could work. Applying the but-for test: 'But for the accused's act (poisoning), would the victim have died when and as she did?' The answer is yes \u2014 she died of a heart attack regardless. Therefore the accused's act was not causally connected to her death. He was convicted of attempted murder (he had the mens rea and committed the actus reus of the attempt) but could not be convicted of murder because his act did not cause her death. This case establishes both the necessity and the insufficiency of the but-for test (further tests are needed where but-for is satisfied). Options A, C and D describe other principles that are not illustrated by White."
+    },
+    {
+      "id": "CRL_M02_L02_Q07",
+      "question": "A solicitor is advising on a case where the accused's contribution to the victim's death was extremely minor \u2014 the victim had a pre-existing heart condition and would have died within days regardless. The accused's assault (a mild shove) may have hastened death by only a matter of hours. Which principle is most relevant to determining whether the accused caused the death?",
+      "options": {
+        "A": "The de minimis principle \u2014 a contribution that is more than merely minimal will satisfy the causation requirement",
+        "B": "The egg-shell skull rule \u2014 the accused must take the victim as he finds him",
+        "C": "The operating and substantial cause test from R v Smith [1959]",
+        "D": "The novus actus interveniens doctrine"
+      },
+      "correct_answer": "A",
+      "explanation": "The de minimis principle (from the Latin 'de minimis non curat lex' \u2014 the law does not concern itself with trifles) addresses situations where the accused's contribution was so trivial that it ought not to found criminal liability for homicide. The question is whether the accused's contribution was more than merely minimal or negligible. In DPP v Davies and Irish case law, courts have recognised that a de minimis contribution \u2014 one that is truly trifling \u2014 will not satisfy the causation requirement for homicide. However, if the accused's act materially accelerated death, even from a pre-existing condition, this will generally be sufficient. The egg-shell skull rule (Option B) is relevant to a victim's physical frailty but addresses a different causation issue. The operating and substantial cause test (Option C) applies when there is an intervening act, not where the question is whether the accused's contribution meets the minimum threshold. Option D addresses independent intervening events."
+    },
+    {
+      "id": "CRL_M02_L02_Q08",
+      "question": "In R v Holland (1841), the accused cut the victim's finger with an iron instrument. A surgeon advised amputation to prevent lockjaw. The victim refused. The victim subsequently died from lockjaw. Was the accused held to have caused the death?",
+      "options": {
+        "A": "No \u2014 the victim's refusal of surgical advice was a voluntary act breaking the chain of causation",
+        "B": "Yes \u2014 the wound was the operating cause of death; the victim was not obliged to follow medical advice, and the wound created the circumstances requiring surgery",
+        "C": "No \u2014 the accused could not foresee that the wound would lead to lockjaw",
+        "D": "Yes \u2014 but only because the victim was unable to consent to surgery due to the severity of the injury"
+      },
+      "correct_answer": "B",
+      "explanation": "In R v Holland (1841), the court held that the accused caused the victim's death. The wound inflicted by the accused was the operating cause of death \u2014 it created the circumstances requiring surgical intervention, and the victim's refusal of surgery did not break the chain of causation. This early case anticipates the principle later confirmed in R v Blaue [1975]: a victim's refusal of treatment does not sever the causal connection between the accused's act and the death. The accused must take the victim as he finds him, including the victim's decision not to accept medical treatment. Option A treats the refusal as a novus actus \u2014 this is incorrect; it is not a voluntary act that is independent of the wound. Option C introduces a foreseeability requirement that was not applied. Option D introduces a consent analysis that is not part of the causation doctrine."
+    },
+    {
+      "id": "CRL_M02_L02_Q09",
+      "question": "Fiona commits a serious assault on George in Dublin. George is rushed to hospital in an ambulance. The ambulance is involved in a collision with a reckless driver, and George dies from injuries sustained in the collision rather than from Fiona's assault. Which statement most accurately reflects the causation analysis?",
+      "options": {
+        "A": "Fiona caused George's death because but-for her assault, George would not have been in the ambulance",
+        "B": "The reckless driver's act is likely a novus actus interveniens breaking the chain of causation between Fiona's assault and George's death, as the collision was an independent and unforeseeable event",
+        "C": "Fiona is always liable for all consequences of her assault, however remote",
+        "D": "Fiona is liable if the ambulance crash was a foreseeable consequence of assaulting someone in Dublin"
+      },
+      "correct_answer": "B",
+      "explanation": "A novus actus interveniens (new intervening act) breaks the chain of causation when it is sufficiently independent and unforeseeable. A reckless third-party driver colliding with an ambulance is a truly independent intervening act: it is not a foreseeable consequence of assaulting someone (unlike, for example, medical complications from treating a wound). The collision is independent of the original assault and is not a natural or probable consequence of the assault. Accordingly, the reckless driver's act would be treated as a novus actus, and Fiona would not be liable for George's death (though she would be liable for the original assault). Option A applies but-for correctly but does not address the novus actus issue. Option C incorrectly states an absolute liability principle \u2014 remoteness and novus actus remain relevant. Option D: while foreseeability is a useful reference, a reckless third-party collision is not a 'foreseeable' risk created by assault in the relevant legal sense."
+    },
+    {
+      "id": "CL_M02_L02_Q10",
+      "question": "In R v Kennedy [2007] HL, the accused prepared a syringe of heroin and handed it to the victim, who injected himself and died. The House of Lords quashed Kennedy's conviction for manslaughter. What causation principle did this decision turn on?",
+      "options": {
+        "A": "The but-for test failed \u2014 the victim would have obtained heroin from another source regardless",
+        "B": "The victim's free, voluntary, and informed act of self-injection broke the chain of causation between Kennedy's act (preparing and handing over the syringe) and the death; an autonomous adult's deliberate choice to self-inject is a novus actus interveniens",
+        "C": "Kennedy did not cause the death because he did not administer the heroin directly to the victim",
+        "D": "The chain of causation was broken by the purity of the heroin, which was an unforeseeable intervening factor"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Kennedy [2007] HL is the leading authority on free and voluntary acts by a victim as novus actus interveniens. The House of Lords held that where a fully informed, autonomous adult makes a free and voluntary decision to self-inject a dangerous substance, that decision is a new intervening act breaking the chain of causation between the supplier's conduct and the death. The key elements were: (1) the act was free \u2014 not compelled; (2) voluntary \u2014 a deliberate choice; (3) informed \u2014 the victim knew he was injecting heroin. Kennedy was accordingly acquitted of unlawful act manslaughter because his act (preparing the syringe) did not cause the death \u2014 the victim's own autonomous act did. This case is distinguished from situations where the defendant administers the substance directly to the victim. Option A applies but-for incorrectly. Option C states the factual distinction correctly but does not articulate the legal principle. Option D invents an irrelevant purity issue."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module06_Lesson01.txt",
+  "module_number": 6,
+  "module_title": "State Liability",
+  "lesson_number": 1,
+  "lesson_title": "Francovich: The Birth of State Liability",
+  "questions": [
+    {
+      "id": "EUL_M06_L01_Q01",
+      "question": "Francovich v Italy (Joined Cases C-6/90 and C-9/90) was decided in which year, and concerned Italy's failure to implement which Directive?",
+      "options": {
+        "A": "1989; the Equal Treatment Directive (76/207/EEC)",
+        "B": "1991; the Insolvency Directive (80/987/EEC)",
+        "C": "1993; the Working Time Directive (93/104/EC)",
+        "D": "1988; the Product Liability Directive (85/374/EEC)"
+      },
+      "correct_answer": "B",
+      "explanation": "Francovich (1991) concerned Italy's total failure to implement Directive 80/987/EEC, which required member states to establish guarantee institutions to pay workers' wages when their employer became insolvent. Italy had not created the required fund, so workers (including Francovich) were left without wages when their employers went bankrupt. The CJEU used the case to establish the principle of state liability in damages."
+    },
+    {
+      "id": "EUL_M06_L01_Q02",
+      "question": "Why was direct effect of the Insolvency Directive unavailable in Francovich?",
+      "options": {
+        "A": "The implementation deadline had not yet expired",
+        "B": "Italy had partially implemented the Directive, so there was no total failure",
+        "C": "The Directive left member states discretion as to how to set up the guarantee institution, so it lacked the unconditional precision required for direct effect",
+        "D": "The claimants were suing a private employer, so no vertical direct effect was possible"
+      },
+      "correct_answer": "C",
+      "explanation": "The Insolvency Directive required member states to establish guarantee institutions but gave them significant discretion regarding the precise form, funding, and operation. Because key provisions were not unconditional and sufficiently precise (e.g., who would pay was not fully determined), the Directive could not have direct effect. This gap — a Directive that cannot be directly enforced but whose non-implementation harms individuals — made a new remedy necessary."
+    },
+    {
+      "id": "EUL_M06_L01_Q03",
+      "question": "The Court of Justice derived the principle of state liability in Francovich from which legal bases?",
+      "options": {
+        "A": "Article 340 TFEU (non-contractual liability of the EU institutions)",
+        "B": "The nature of the EU legal order, the binding force of Directives under Article 288 TFEU, and the duty of sincere cooperation under Article 4(3) TEU",
+        "C": "The principle of direct effect established in Van Gend en Loos",
+        "D": "The infringement procedure under Article 258 TFEU"
+      },
+      "correct_answer": "B",
+      "explanation": "The Court in Francovich derived state liability from three foundations: (1) the binding nature of EU law and the need to ensure its full effectiveness; (2) Article 5 EEC (now Article 4(3) TEU) — sincere cooperation requires member states to take all appropriate measures to fulfil EU obligations, including providing remedies; (3) the principle that individuals who suffer loss from breach of EU law must be able to obtain reparation. Article 340 TFEU governs EU institutional liability, not member state liability."
+    },
+    {
+      "id": "EUL_M06_L01_Q04",
+      "question": "The three conditions for state liability as first stated in Francovich are:",
+      "options": {
+        "A": "The member state must have committed an intentional breach; the breach must have been found by the CJEU; and the loss must exceed €1,000",
+        "B": "The EU rule breached must have been intended to confer rights on individuals; the breach must be sufficiently serious; and there must be a direct causal link between the breach and damage",
+        "C": "The Directive must have been addressed to the member state; the implementation deadline must have passed; and the individual must have exhausted national remedies",
+        "D": "The EU rule must have direct effect; the member state must have acted in bad faith; and the Commission must have issued a reasoned opinion"
+      },
+      "correct_answer": "B",
+      "explanation": "The Francovich conditions (subsequently confirmed and refined in Brasserie du Pêcheur): (1) the EU rule infringed must have been intended to confer rights on individuals; (2) the breach must be sufficiently serious (this condition was elaborated in Brasserie); (3) there must be a direct causal link between the member state's breach and the loss or damage suffered by the individual. Note: in Francovich itself, the 'sufficiently serious' condition was implicit in the total failure to implement."
+    },
+    {
+      "id": "EUL_M06_L01_Q05",
+      "question": "Which statement correctly describes the relationship between state liability and the infringement procedure under Article 258 TFEU?",
+      "options": {
+        "A": "State liability is only available after the Commission has first brought and won infringement proceedings",
+        "B": "A finding of infringement under Article 258 TFEU is neither a necessary nor a sufficient condition for state liability — the two procedures are independent",
+        "C": "State liability replaces the infringement procedure as the primary enforcement mechanism",
+        "D": "State liability is available only in the same member state court that referred the infringement to the CJEU"
+      },
+      "correct_answer": "B",
+      "explanation": "State liability and Article 258 infringement proceedings are legally independent. A member state may be liable in damages to individuals even without prior infringement proceedings (Francovich itself involved no prior Article 258 judgment). Conversely, a finding of infringement under Article 258 TFEU does not automatically establish state liability (it may constitute evidence of breach but the Francovich conditions must still be met separately). The two remedies serve different functions."
+    },
+    {
+      "id": "EUL_M06_L01_Q06",
+      "question": "State liability claims are brought in which court?",
+      "options": {
+        "A": "Directly before the Court of Justice under Article 263 TFEU",
+        "B": "Before national courts, applying national procedural law subject to EU principles of equivalence and effectiveness",
+        "C": "Before the General Court as a first instance EU liability action",
+        "D": "Before the European Court of Human Rights, as a breach of the right to an effective remedy"
+      },
+      "correct_answer": "B",
+      "explanation": "State liability claims must be brought before national courts — the individual's remedy lies in domestic proceedings, not before the CJEU. The CJEU has no jurisdiction to hear state liability claims directly. National courts apply their own procedural rules (time limits, evidence requirements, etc.), but subject to the EU principles of equivalence (not less favourable than comparable domestic claims) and effectiveness (must not make it practically impossible or excessively difficult to obtain reparation)."
+    },
+    {
+      "id": "EUL_M06_L01_Q07",
+      "question": "In Francovich, the Court held that the principle of state liability is 'inherent in the system of the Treaty'. This means:",
+      "options": {
+        "A": "State liability is expressly stated in the Treaties and needs no further legal basis",
+        "B": "State liability is a fundamental feature of the EU legal order, not dependent on an express treaty provision — it flows necessarily from the principles of effectiveness and the obligation of member states to ensure EU law is given full effect",
+        "C": "State liability is limited to situations where the Treaty expressly creates rights for individuals",
+        "D": "State liability was developed by analogy with Article 340 TFEU's EU institutional liability"
+      },
+      "correct_answer": "B",
+      "explanation": "The Court's declaration that state liability is 'inherent in the Treaty system' reflects the principle that an EU legal order that grants rights to individuals must also provide a remedy when those rights are violated by member state inaction. It is a judge-made remedy, derived from first principles of EU constitutional law — full effectiveness (effet utile), sincere cooperation, and the need for coherent enforcement — not from any express treaty text."
+    },
+    {
+      "id": "EUL_M06_L01_Q08",
+      "question": "The first Francovich condition — that the EU rule must be 'intended to confer rights on individuals' — means that:",
+      "options": {
+        "A": "The provision must have been directly effective",
+        "B": "The provision must identify specific individuals as beneficiaries or a class of persons whose interests it protects — it is not sufficient that the provision serves a general public interest",
+        "C": "The provision must have been expressly stated to create individual rights by the EU legislature in the Directive's preamble",
+        "D": "Only Treaty provisions (not Directives) can satisfy this condition, because Directives are addressed to member states, not individuals"
+      },
+      "correct_answer": "B",
+      "explanation": "The rights-conferral condition requires that the provision be intended to benefit a specific class of persons (not merely the general public interest). The Insolvency Directive was clearly intended to protect workers as identified beneficiaries. The condition does not require direct effect — indeed, Francovich established liability precisely where direct effect was unavailable. What matters is the provision's purpose and the identifiable class of intended beneficiaries."
+    },
+    {
+      "id": "EUL_M06_L01_Q09",
+      "question": "Does state liability under EU law require the member state to have acted in bad faith or with fault?",
+      "options": {
+        "A": "Yes — only deliberate or reckless breach of EU law gives rise to liability",
+        "B": "No — state liability is an objective liability; it does not require proof of fault or intent on the part of the member state",
+        "C": "Yes — negligence must be established, but proof of deliberate breach is not required",
+        "D": "Only for legislative breaches — administrative breaches require proof of bad faith"
+      },
+      "correct_answer": "B",
+      "explanation": "State liability under EU law is objective — there is no requirement of fault (culpa) or bad faith on the part of the member state. The relevant question is the objective seriousness of the breach (particularly after Brasserie du Pêcheur introduced the 'sufficiently serious' test). This contrasts with some national tort systems that require fault. The absence of a fault requirement was confirmed to ensure the full effectiveness of the remedy and prevent states from escaping liability by pleading ignorance."
+    },
+    {
+      "id": "EUL_M06_L01_Q10",
+      "question": "What practical impact did Francovich have on the legal position of individuals who suffered loss from a member state's failure to implement a Directive?",
+      "options": {
+        "A": "They could now invoke the unimplemented Directive directly against private employers",
+        "B": "They acquired a right to damages in national courts against the member state, even where the Directive was not directly effective — creating a new EU law remedy where previously none existed",
+        "C": "They could require the Commission to bring infringement proceedings on their behalf",
+        "D": "They were entitled to automatic compensation from an EU-level guarantee fund"
+      },
+      "correct_answer": "B",
+      "explanation": "Before Francovich, where a Directive was not implemented and could not have direct effect, individuals had no EU law remedy for their resulting loss. Francovich filled this gap: individuals could now sue the member state in national courts for compensation, even where the Directive's provisions were too imprecise for direct effect. This was a transformative development — it created a new private law remedy flowing directly from EU law, regardless of what national law provided."
+    }
+  ],
+  "total_questions": 10
+}

@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "Module_09_Lesson_02_Article_110_TFEU_Internal_Taxation_Discrimination_and_Protection.txt",
+  "module_number": 9,
+  "module_title": "Free Movement of Goods",
+  "lesson_number": 2,
+  "lesson_title": "Article 110 TFEU — Internal Taxation, Discrimination and Protection",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EUL_M09_L02_Q01",
+      "question": "Article 110 TFEU differs from Article 30 TFEU in that:",
+      "options": {
+        "A": "Article 110 governs charges imposed at the border when goods cross into a member state",
+        "B": "Article 110 governs internal taxation applied within a member state as part of a general fiscal system that nonetheless distorts competition between domestic and imported goods",
+        "C": "Article 110 applies only to excise duties, while Article 30 applies to all fiscal measures",
+        "D": "Article 110 requires harmonisation of tax rates across member states"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 30 and Article 110 are mutually exclusive. Article 30 applies to charges levied specifically because goods cross a border. Article 110 applies to internal taxes forming part of a general fiscal system that applies to both domestic and imported goods — but which may still distort competition in favour of domestic production."
+    },
+    {
+      "id": "EUL_M09_L02_Q02",
+      "question": "Article 110(1) TFEU prohibits member states from imposing on imported goods:",
+      "options": {
+        "A": "Any internal tax whatsoever",
+        "B": "Internal taxation in excess of that imposed on similar domestic products",
+        "C": "Internal taxation that exceeds five percent of the product's value",
+        "D": "Any tax that does not also apply to goods from non-EU states"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 110(1) prohibits discriminatory internal taxation — imposing on products from other member states any internal taxation in excess of that imposed on similar domestic products. Similarity is assessed by reference to whether products have the same uses and satisfy the same consumer needs."
+    },
+    {
+      "id": "EUL_M09_L02_Q03",
+      "question": "In Commission v France (Spirits) [1980], the Court of Justice found a breach of Article 110(1) because:",
+      "options": {
+        "A": "France applied a border charge to imported grain spirits",
+        "B": "France taxed grain spirits — largely imported — more heavily than fruit spirits — largely domestically produced — and the two were similar products",
+        "C": "France imposed a quota on grain spirit imports from other member states",
+        "D": "France required certificates of origin for all spirit imports"
+      },
+      "correct_answer": "B",
+      "explanation": "In Commission v France (Spirits) [1980], the Court found that grain spirits and fruit spirits were similar products (same uses, same consumer needs). Taxing grain spirits — predominantly imported — more heavily than fruit spirits — predominantly domestic — was discriminatory internal taxation contrary to Article 110(1)."
+    },
+    {
+      "id": "EUL_M09_L02_Q04",
+      "question": "The test for 'similarity' under Article 110(1) TFEU is:",
+      "options": {
+        "A": "Whether the products are identical in composition and manufacturing process",
+        "B": "Whether the products have the same tariff classification under EU customs nomenclature",
+        "C": "Whether the products have the same or comparable uses, satisfy the same consumer needs, and are in close competition",
+        "D": "Whether a reasonable consumer would consider the products identical"
+      },
+      "correct_answer": "C",
+      "explanation": "Similarity under Article 110(1) is functional, not technical. Products are similar if they have the same or comparable uses, satisfy the same consumer needs, and are in close competition in the market. Identity of composition is not required."
+    },
+    {
+      "id": "EUL_M09_L02_Q05",
+      "question": "Article 110(2) TFEU applies where imported and domestic products are:",
+      "options": {
+        "A": "Similar — the imported product is taxed at a higher rate",
+        "B": "Not similar, but in competition — where higher taxation of the imported product affords indirect protection to the domestic substitute",
+        "C": "Identical — both produced in the same member state",
+        "D": "Subject to different customs classification codes"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 110(2) addresses the situation where products are not 'similar' but are nevertheless in competition with each other. Where the internal tax system affords indirect protection to domestic products at the expense of competing imported goods, Article 110(2) is breached — even without direct similarity."
+    },
+    {
+      "id": "EUL_M09_L02_Q06",
+      "question": "In Commission v UK (Wine and Beer) [1983], the Court of Justice held that:",
+      "options": {
+        "A": "Wine and beer are similar products and must be taxed at identical rates",
+        "B": "The UK tax system, which taxed wine far more heavily than beer, afforded indirect protection to domestic beer production contrary to Article 110(2)",
+        "C": "Alcohol taxation falls entirely outside the scope of Article 110",
+        "D": "The UK was entitled to tax wine more heavily because it was a luxury product"
+      },
+      "correct_answer": "B",
+      "explanation": "In Commission v UK (Wine and Beer) [1983], the Court found that wine (largely imported) and beer (largely domestic) were not similar but were in competition. The disproportionately high tax on wine compared to beer constituted indirect protection of the domestic beer industry contrary to Article 110(2)."
+    },
+    {
+      "id": "EUL_M09_L02_Q07",
+      "question": "In Humblot v Directeur des Services Fiscaux [1985], the French annual road tax was held to breach Article 110 because:",
+      "options": {
+        "A": "It was a charge imposed at the French border on imported vehicles",
+        "B": "It applied higher rates to high-powered cars — virtually all of which were imported — giving discriminatory practical effect against imported goods despite being facially neutral",
+        "C": "It used different rates for diesel and petrol vehicles",
+        "D": "It was a quantitative restriction on car imports under Article 34"
+      },
+      "correct_answer": "B",
+      "explanation": "In Humblot [1985], the French road tax had much higher rates for high-powered vehicles. No French manufacturer produced cars above the relevant threshold, so virtually all cars paying the higher rate were imported. Despite being facially neutral, the tax had a discriminatory practical effect on imported goods, breaching Article 110."
+    },
+    {
+      "id": "EUL_M09_L02_Q08",
+      "question": "The remedy for a breach of Article 110(1) TFEU requires the member state to:",
+      "options": {
+        "A": "Abolish all internal taxation on the category of goods concerned",
+        "B": "Bring the tax on the imported product down to the rate applied to the similar domestic product",
+        "C": "Compensate importers for all taxes paid under the discriminatory system",
+        "D": "Seek Commission approval before implementing any future tax on similar goods"
+      },
+      "correct_answer": "B",
+      "explanation": "The remedy for an Article 110(1) breach is equalisation — the member state must reduce the tax on the imported product to the level charged on the similar domestic product. The state cannot instead raise the tax on the domestic product to the higher level applied to imports."
+    },
+    {
+      "id": "EUL_M09_L02_Q09",
+      "question": "Which of the following cases confirmed the need to assess whether a levy forms part of a general internal dues system (Article 110) rather than a border charge (Article 30)?",
+      "options": {
+        "A": "Dassonville [1974]",
+        "B": "Cassis de Dijon [1979]",
+        "C": "Fink-Frucht v Hauptzollamt München-Landsbergerstrasse [1968]",
+        "D": "Keck and Mithouard [1993]"
+      },
+      "correct_answer": "C",
+      "explanation": "Fink-Frucht v Hauptzollamt München-Landsbergerstrasse [1968] confirmed that the court must assess whether a levy forms part of a general internal tax system (Article 110) or is specifically imposed because goods cross a border (Article 30). The two provisions are mutually exclusive."
+    },
+    {
+      "id": "EUL_M09_L02_Q10",
+      "question": "A member state levies an internal tax on a product that is not produced domestically at all. Article 110 TFEU:",
+      "options": {
+        "A": "Applies fully — any internal tax on imported goods is presumptively discriminatory",
+        "B": "Does not apply — there is no domestic product against which to measure discriminatory or protective treatment",
+        "C": "Applies via Article 110(2) because the tax indirectly protects all domestic industries",
+        "D": "Applies only if the tax rate exceeds the rate applied to the nearest substitute domestic product"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 110 requires a domestic product against which to compare the treatment of the imported product. Where there is no domestic product that is similar to or in competition with the imported good, there is no benchmark for discrimination or protection, and Article 110 has no application."
+    }
+  ]
+}

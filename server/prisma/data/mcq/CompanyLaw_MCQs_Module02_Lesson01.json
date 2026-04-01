@@ -1,0 +1,131 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module02_Lesson01.txt",
+  "module_number": 2,
+  "module_title": "Separate Legal Personality",
+  "lesson_number": 1,
+  "lesson_title": "The Salomon Principle and Its Consequences",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Alan incorporates a company and transfers his sole trading business to it in exchange for 20,000 shares and a secured debenture for €10,000. The company later becomes insolvent. The unsecured trade creditors argue that Alan should be personally liable because he controls the company. Which of the following best reflects the legal position under Irish company law?",
+      "options": {
+        "A": "Alan is personally liable because he is the sole beneficial owner of all shares",
+        "B": "Alan is not personally liable — the Salomon principle insulates him as the company is a separate legal entity",
+        "C": "Alan is personally liable because the debenture is a sham transaction designed to defraud creditors",
+        "D": "Alan is personally liable because a single-person company cannot benefit from separate legal personality"
+      },
+      "correct_answer": "B",
+      "explanation": "In Salomon v Salomon & Co Ltd [1897] AC 22, the House of Lords confirmed that a validly incorporated company is a fully independent legal entity. Alan is not liable for the company's debts merely because he controls it. The debenture is valid security. Only statutory exceptions (S599, S610 CA 2014) or equitable intervention would displace this principle."
+    },
+    {
+      "id": 2,
+      "question": "In Macaura v Northern Assurance Co Ltd [1925], Macaura transferred timber to a company he owned entirely. He insured the timber in his own name. When the timber was destroyed by fire, the insurer refused to pay. The House of Lords upheld the refusal because:",
+      "options": {
+        "A": "Macaura had failed to disclose the transfer of ownership to the insurer",
+        "B": "Macaura had no insurable interest in the timber as it belonged to the company, not to him personally",
+        "C": "The insurance contract was vitiated by misrepresentation",
+        "D": "The company was not a party to the insurance contract and therefore could not claim"
+      },
+      "correct_answer": "B",
+      "explanation": "Macaura v Northern Assurance [1925] AC 619 is a direct application of the Salomon principle: the timber belonged to the company, not Macaura personally. As a mere shareholder and creditor, he had no insurable interest in the company's property. The loss was the company's loss, not his."
+    },
+    {
+      "id": 3,
+      "question": "Lee was the governing director of Lee’s Air Farming Ltd and held virtually all shares. He was killed while piloting a plane for the company. His widow claimed workers’ compensation. The Privy Council in Lee v Lee’s Air Farming Ltd [1961] held:",
+      "options": {
+        "A": "Lee could not be an employee of his own company as he was effectively sole owner",
+        "B": "The company was a sham and Lee and the company were one and the same person",
+        "C": "Lee was a worker employed by the company — separate legal personality permitted the company and Lee to be in a contract of employment",
+        "D": "Lee was an independent contractor, not an employee, because he controlled the company"
+      },
+      "correct_answer": "C",
+      "explanation": "In Lee v Lee's Air Farming Ltd [1961] AC 12, the Privy Council confirmed that a person can contract with and be employed by a company they control. Separate legal personality means the company and Lee are distinct persons — Lee could therefore be a servant of the company notwithstanding his total control."
+    },
+    {
+      "id": 4,
+      "question": "Company A is a wholly owned subsidiary of Company B. Company A commits a tort. The plaintiff seeks to make Company B liable as parent. Under the general principle established in Adams v Cape Industries plc [1990], can Company B be held liable?",
+      "options": {
+        "A": "Yes — a parent company is automatically vicariously liable for torts committed by its subsidiaries",
+        "B": "No — each company in a group is a separate legal entity and a parent is not generally liable for a subsidiary's acts",
+        "C": "Yes — because Company B controls Company A, the corporate veil is automatically pierced",
+        "D": "No — but only if Company A has a valid insurance policy covering the tortious liability"
+      },
+      "correct_answer": "B",
+      "explanation": "Adams v Cape Industries plc [1990] Ch 433 confirmed that the corporate veil does not automatically lift between parent and subsidiary companies. Each company in a group is a separate legal entity. Liability of a parent for a subsidiary's acts requires a specific legal basis such as fraud, agency, or statutory provision."
+    },
+    {
+      "id": 5,
+      "question": "A director forms a new company immediately after being restrained by injunction from soliciting customers of his former employer. He then solicits those customers through the new company. The court in Gilford Motor Co Ltd v Horne [1933] pierced the veil because:",
+      "options": {
+        "A": "The director was a shadow director of the new company",
+        "B": "The company was a mere sham or facade used to evade a legal obligation owed personally by the director",
+        "C": "The director held more than 50% of shares in the new company",
+        "D": "The injunction automatically bound the new company as an associate of the defendant"
+      },
+      "correct_answer": "B",
+      "explanation": "In Gilford Motor Co Ltd v Horne [1933] Ch 935, the Court of Appeal pierced the corporate veil because the company was a mere facade — a device deliberately set up to allow Horne to evade a personal legal obligation. The company had no independent existence or purpose beyond enabling evasion of the injunction."
+    },
+    {
+      "id": 6,
+      "question": "In Jones v Lipman [1962], Lipman transferred land to a company to evade a specific performance order requiring him to convey the land to Jones. Russell J pierced the veil and ordered specific performance against both Lipman and the company. This decision rests on the principle that:",
+      "options": {
+        "A": "A company must register land transactions with the CRO within 21 days",
+        "B": "Equity will pierce the corporate veil where the company is a mask on the face of Lipman to avoid recognition by the court",
+        "C": "A company created for any commercial purpose can be ordered to transfer property",
+        "D": "The ultra vires doctrine prevents companies from receiving land transfers from sole shareholders"
+      },
+      "correct_answer": "B",
+      "explanation": "Russell J in Jones v Lipman [1962] 1 WLR 832 described the company as ‘a mask on the face of Lipman, the creature of his direction and wishes.’ The court will pierce the corporate veil where a company is used as a mechanism to evade a pre-existing personal legal obligation to a third party."
+    },
+    {
+      "id": 7,
+      "question": "Under section 599 CA 2014 (fraudulent trading), for a court to make a declaration of personal liability against a director, the liquidator must establish:",
+      "options": {
+        "A": "Mere negligence in managing the company",
+        "B": "That the director knowingly carried on business with intent to defraud creditors or for any fraudulent purpose",
+        "C": "That the director received a personal benefit from the company in the six months before liquidation",
+        "D": "That the director failed to keep proper books of account"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 599 CA 2014 requires proof of actual dishonest intent: the director must have knowingly carried on business with intent to defraud creditors. This is a high threshold — negligence or recklessness alone is insufficient for fraudulent trading (compare with the lower threshold for S610 reckless trading)."
+    },
+    {
+      "id": 8,
+      "question": "The 2024 Companies Act amended section 610 CA 2014 on reckless trading. What was the most significant change?",
+      "options": {
+        "A": "The liability threshold was raised to require actual fraud",
+        "B": "The defence of ‘honest and responsible’ conduct was strengthened",
+        "C": "The word ‘knowingly’ was removed — making it easier to establish liability for reckless trading",
+        "D": "S610 was abolished and replaced entirely by S599"
+      },
+      "correct_answer": "C",
+      "explanation": "The Companies (Corporate Governance, Enforcement and Regulatory Provisions) Act 2024 removed the word ‘knowingly’ from S610 and removed the ‘honest and responsibly’ defence. This lowers the threshold for reckless trading liability, making it easier for liquidators to pursue directors of insolvent companies."
+    },
+    {
+      "id": 9,
+      "question": "In Coen v Doyle [2023], the Irish Court of Appeal considered the corporate veil in a family law context. Which approach did the court take?",
+      "options": {
+        "A": "It pierced the veil automatically where company assets were matrimonial property",
+        "B": "It refused to pierce the veil as Irish law does not recognise a general equitable jurisdiction to lift the veil outside statute",
+        "C": "It confirmed that family courts have a statutory power to treat company assets as personal assets of a director-spouse",
+        "D": "It held that all assets of a company controlled by a spouse are deemed matrimonial assets by operation of law"
+      },
+      "correct_answer": "B",
+      "explanation": "Coen v Doyle [2023] is a significant Irish Court of Appeal decision confirming a restrictive approach to veil-piercing in Ireland. The court affirmed that there is no general equitable jurisdiction to lift the corporate veil — it can only be done on established legal grounds (fraud, agency, statute), not simply because justice might seem to require it."
+    },
+    {
+      "id": 10,
+      "question": "In Re Greymountain Management Ltd [2022], the Irish High Court addressed corporate veil issues in the context of a Ponzi scheme operated through a series of companies. The court pierced the veil because:",
+      "options": {
+        "A": "The companies were subsidiaries of a foreign holding company",
+        "B": "The companies were used as instruments of fraud — the SLP was invoked to perpetrate fraud, not to conduct genuine business",
+        "C": "The companies had failed to file annual returns for more than three consecutive years",
+        "D": "The companies had no separate bank accounts from their directors"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Greymountain Management Ltd [2022], the High Court pierced the corporate veil across multiple entities because the companies were instruments of a deliberate fraud. Where the SLP is invoked for fraudulent purposes, the court will look through the corporate form to impose liability on those who actually controlled and benefited from the fraud."
+    }
+  ]
+}

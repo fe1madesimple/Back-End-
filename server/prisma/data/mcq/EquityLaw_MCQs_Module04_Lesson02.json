@@ -1,0 +1,131 @@
+{
+  "subject": "Equity Law",
+  "el_script_ref": "Module_04_Lesson_02_Mutual_Wills.txt",
+  "module_number": 4,
+  "module_title": "Secret Trusts and Mutual Wills",
+  "lesson_number": 2,
+  "lesson_title": "Mutual Wills",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EQL_M04_L02_Q01",
+      "question": "What are mutual wills?",
+      "options": {
+        "A": "Wills made by two people in identical terms, whether or not they have agreed not to revoke them.",
+        "B": "Wills made by two people pursuant to an agreement that both will make wills in agreed terms and that neither will revoke without the other's consent.",
+        "C": "Wills made by spouses that take effect simultaneously on the death of both.",
+        "D": "Wills made by two people that are deposited jointly with a solicitor for safekeeping."
+      },
+      "correct_answer": "B",
+      "explanation": "Mutual wills are wills made by two persons — typically spouses — pursuant to a binding agreement that both will make wills in agreed terms and that neither will revoke their will without the consent of the other. It is the existence of this agreement not to revoke that distinguishes mutual wills from wills that are merely similar in content."
+    },
+    {
+      "id": "EQL_M04_L02_Q02",
+      "question": "In Re Hagger (1930), what type of trust did the court hold was imposed on the surviving testator who sought to depart from the mutual wills agreement?",
+      "options": {
+        "A": "An express trust",
+        "B": "A resulting trust",
+        "C": "A constructive trust",
+        "D": "A statutory trust"
+      },
+      "correct_answer": "C",
+      "explanation": "In Re Hagger (1930), the court held that where mutual wills are made pursuant to an agreement not to revoke, and the first testator dies without revoking their will, equity imposes a constructive trust on the surviving testator. This constructive trust prevents the survivor from departing from the agreed terms and ultimately distributing the estate in a different way."
+    },
+    {
+      "id": "EQL_M04_L02_Q03",
+      "question": "Which of the following is NOT a required element for the mutual wills doctrine to apply?",
+      "options": {
+        "A": "A binding agreement between the testators not to revoke their wills",
+        "B": "The first testator must have died without revoking their will",
+        "C": "The survivor must have accepted a benefit under the first testator's will",
+        "D": "The mutual wills must have been made in a solicitor's office in the presence of witnesses"
+      },
+      "correct_answer": "D",
+      "explanation": "The mutual wills doctrine does not require that the wills be made in any particular setting or with any particular formality beyond what the Succession Act 1965 requires for a valid will. The three requirements are: a binding agreement not to revoke; the first testator dying without revoking their will; and the survivor accepting a benefit under the first testator's will."
+    },
+    {
+      "id": "EQL_M04_L02_Q04",
+      "question": "Why is it significant that the surviving testator accepted a benefit under the first testator's will?",
+      "options": {
+        "A": "Acceptance of the benefit ensures the will is admitted to probate.",
+        "B": "Acceptance of the benefit makes it unconscionable for the survivor to depart from the mutual agreement.",
+        "C": "Acceptance of the benefit transfers legal title in the estate to the survivor.",
+        "D": "Acceptance of the benefit is required to satisfy the formalities of the Succession Act 1965."
+      },
+      "correct_answer": "B",
+      "explanation": "The acceptance of a benefit under the first testator's will is the trigger for the constructive trust in the mutual wills doctrine. It is this acceptance that makes it unconscionable for the survivor to depart from the agreement — having benefited from the first testator's compliance with the mutual arrangement, the survivor cannot resile from their own obligation."
+    },
+    {
+      "id": "EQL_M04_L02_Q05",
+      "question": "When does the constructive trust imposed under the mutual wills doctrine crystallise?",
+      "options": {
+        "A": "At the moment the mutual wills agreement is entered into",
+        "B": "On the death of the first testator",
+        "C": "On the death of the surviving testator",
+        "D": "When the survivor first deals with the inherited property"
+      },
+      "correct_answer": "C",
+      "explanation": "The constructive trust imposed in the mutual wills context is described as 'floating' — it does not crystallise immediately on the first death. The survivor is free to deal with their estate during their lifetime. The trust crystallises at the moment of the survivor's death, at which point the estate must be distributed in accordance with the terms of the mutual wills agreement."
+    },
+    {
+      "id": "EQL_M04_L02_Q06",
+      "question": "A and B make mutual wills agreeing to leave their estates to each other and then to C. A dies first without revoking their will. B inherits under A's will and then makes a new will leaving everything to D. What is the legal position?",
+      "options": {
+        "A": "B's new will is valid and D will receive everything because B has an absolute power to revoke.",
+        "B": "Equity imposes a constructive trust on B's estate, and C will be entitled to the property on B's death in accordance with the mutual agreement.",
+        "C": "A's estate reverts to A's family on intestacy because B has broken the agreement.",
+        "D": "C can seek specific performance of the mutual agreement during B's lifetime to prevent disposal."
+      },
+      "correct_answer": "B",
+      "explanation": "This scenario illustrates the classic mutual wills problem. Following Re Hagger (1930) and Re Cleaver (1981), once A has died without revoking their will and B has accepted a benefit under A's will, equity imposes a constructive trust on B's estate. On B's death, the property must pass to C in accordance with the mutual agreement, regardless of B's subsequent attempt to revoke and redirect the estate."
+    },
+    {
+      "id": "EQL_M04_L02_Q07",
+      "question": "Which Irish decision confirmed the requirements for the mutual wills doctrine and applied the constructive trust analysis?",
+      "options": {
+        "A": "Re Hamilton (1984)",
+        "B": "Re Cleaver (1981)",
+        "C": "Grealish v Murphy (1946)",
+        "D": "Re W (2006)"
+      },
+      "correct_answer": "B",
+      "explanation": "Re Cleaver (1981) is the Irish authority on mutual wills. The court confirmed the requirements for the doctrine — binding agreement, first death without revocation, and acceptance of benefit — and applied the constructive trust analysis consistent with the English position in Re Hagger (1930)."
+    },
+    {
+      "id": "EQL_M04_L02_Q08",
+      "question": "What is the consequence if the two testators had a mere arrangement or hope of agreement rather than a binding agreement not to revoke?",
+      "options": {
+        "A": "A half-secret trust arises to protect the intended beneficiaries.",
+        "B": "The mutual wills doctrine does not apply; a mere arrangement is insufficient to trigger the constructive trust.",
+        "C": "The court will imply a binding agreement from the circumstances.",
+        "D": "Equity will impose a resulting trust in favour of the intended beneficiaries."
+      },
+      "correct_answer": "B",
+      "explanation": "The mutual wills doctrine requires a binding agreement between the testators not to revoke their wills. A mere arrangement, moral understanding, or hope of agreement is not sufficient. The agreement must be sufficiently certain to found the equitable obligation. Without a binding agreement, no constructive trust arises on the first death."
+    },
+    {
+      "id": "EQL_M04_L02_Q09",
+      "question": "If B revokes their mutual will while A is still alive and notifies A of the revocation, what is the effect on the mutual wills agreement?",
+      "options": {
+        "A": "The revocation is ineffective because B was bound by the agreement not to revoke.",
+        "B": "The mutual agreement is dissolved and A is free to make a new will; no constructive trust can arise because A has not yet died.",
+        "C": "A constructive trust immediately arises to protect C's anticipated interest.",
+        "D": "B is liable in damages to C for breach of the mutual agreement."
+      },
+      "correct_answer": "B",
+      "explanation": "If B revokes their will while A is still alive and notifies A of this, the mutual agreement may be dissolved. Because A has not yet died — the first-death trigger for the constructive trust has not occurred — no constructive trust has crystallised. A is freed from the agreement and may make a new will. The constructive trust only arises upon the first testator's death without revocation."
+    },
+    {
+      "id": "EQL_M04_L02_Q10",
+      "question": "Which of the following best describes the nature of the constructive trust in the mutual wills context before the surviving testator's death?",
+      "options": {
+        "A": "Fixed and immediately enforceable by the ultimate beneficiaries from the first death",
+        "B": "Floating — the survivor may deal with the estate during their lifetime but on death the estate must be distributed in accordance with the agreement",
+        "C": "Void for uncertainty because the trust terms depend on a future event",
+        "D": "A bare trust under which the survivor is merely a nominee for the ultimate beneficiaries"
+      },
+      "correct_answer": "B",
+      "explanation": "The constructive trust imposed under the mutual wills doctrine is described as floating. It arises on the first death but does not crystallise into an immediately enforceable obligation until the survivor's death. The survivor is free to manage and even consume the estate during their lifetime. At death, the estate must pass in accordance with the mutual agreement."
+    }
+  ]
+}

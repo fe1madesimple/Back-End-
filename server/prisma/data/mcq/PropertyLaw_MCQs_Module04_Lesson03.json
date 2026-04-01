@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_04_Lesson_03_Prescription.txt",
+  "module_number": 4,
+  "module_title": "Easements and Profits a Prendre",
+  "lesson_number": 3,
+  "lesson_title": "Acquisition by Prescription",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M04_L03_Q01",
+      "question": "What is the theoretical basis for the acquisition of an easement by prescription?",
+      "options": {
+        "A": "That long use of land automatically transfers ownership by adverse possession principles",
+        "B": "That the law presumes that if a right has been openly exercised across a neighbour's land for many years without objection, there must have been a formal grant of that right at some point in the past, even if no record of the grant survives",
+        "C": "That the servient owner is deemed to have abandoned any right to object to the use after a specified period of time",
+        "D": "That the dominant owner acquires a possessory title to the easement by virtue of their continuous use"
+      },
+      "correct_answer": "B",
+      "explanation": "The theoretical basis for prescription is the legal presumption of a past grant. The law presumes that if a right has been openly, peaceably, and continuously exercised across a neighbour's land for many years without objection, there must have been a formal grant of that right at some point in the past — even if no document recording that grant has survived. This fictional grant is the legal justification for treating the long use as creating a binding easement. The fiction is ancient but remains the conceptual foundation for all methods of prescriptive acquisition."
+    },
+    {
+      "id": "PRL_M04_L03_Q02",
+      "question": "Before the LCLRA 2021, what were the three historical methods of prescription in Irish law?",
+      "options": {
+        "A": "Common law prescription, implied grant, and registration",
+        "B": "Common law prescription (use from time immemorial), the fiction of lost modern grant, and statutory prescription under the Prescription Act 1832",
+        "C": "Long user, acquiescence, and estoppel",
+        "D": "Statutory prescription under the LCLRA 2009, common law prescription, and express grant"
+      },
+      "correct_answer": "B",
+      "explanation": "Before the LCLRA 2021, there were three historical methods of prescription: (1) common law prescription, requiring proof of use from time immemorial (1189 AD in legal theory) — practically impossible and rarely used; (2) the fiction of lost modern grant, which presumed that at some point in living memory a formal grant had been made and the document lost — an obvious fiction but a useful device; and (3) statutory prescription under the Prescription Act 1832 (which applied in Ireland), providing defined periods of twenty years for ordinary easements and forty years for easements of light."
+    },
+    {
+      "id": "PRL_M04_L03_Q03",
+      "question": "What key reform did the Land and Conveyancing Law Reform Act 2021 (LCLRA 2021) make to the law of prescription in Ireland?",
+      "options": {
+        "A": "It extended the Prescription Act 1832 periods and applied them to profits à prendre",
+        "B": "It abolished all three historical methods of prescription for easements arising after commencement and replaced them with a single, unified prescription regime under section 35, requiring twelve years of open, peaceable, and uninterrupted use",
+        "C": "It codified the fiction of lost modern grant and reduced the relevant period to five years",
+        "D": "It abolished prescription entirely and requires all easements to be expressly granted or implied at the time of conveyance"
+      },
+      "correct_answer": "B",
+      "explanation": "The LCLRA 2021 swept away all three historical methods of prescription for easements arising after its commencement. In their place it established a single, unified prescription regime. The key provision is section 35 of the LCLRA 2021, which provides that an easement may be acquired by prescription where the use has been open, peaceable, and without interruption for a continuous period of twelve years. This simplified and modernised the law considerably, replacing the three inconsistent and often fictional historical methods with a single clear statutory test."
+    },
+    {
+      "id": "PRL_M04_L03_Q04",
+      "question": "Under section 35 of the LCLRA 2021, what three characteristics must the use have for a prescriptive easement to be acquired?",
+      "options": {
+        "A": "Continuous, notorious, and hostile to the servient owner's rights",
+        "B": "Open, peaceable, and without interruption for a continuous period of twelve years",
+        "C": "Exclusive, visible, and consistent with the character of the dominant tenement",
+        "D": "Uninterrupted, without consent, and for a period of at least twenty years"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 35 of the LCLRA 2021 provides that an easement may be acquired by prescription where the use has been: (1) open — not secret; the use must be visible and the landowner must have the opportunity to object; (2) peaceable — not by force or under protest; if the landowner puts up signs or tries to physically prevent the use and the claimant continues anyway, the use is contentious, not peaceable; and (3) without interruption — continuous, exercised whenever needed without a significant break of more than a year — for a continuous period of twelve years."
+    },
+    {
+      "id": "PRL_M04_L03_Q05",
+      "question": "What does the Latin phrase 'nec vi, nec clam, nec precario' mean and why is it still relevant under the LCLRA 2021?",
+      "options": {
+        "A": "'Without writing, without witnesses, without registration' — a formality requirement for easements under the 2021 Act",
+        "B": "'Not by force, not in secret, not with permission' — the classic statement of the requirements for prescriptive use, which corresponds to the LCLRA 2021 requirements of peaceable, open, and without permission",
+        "C": "'Not by deed, not by implied grant, not by long use' — the three methods of acquiring an easement that were abolished by the 2021 Act",
+        "D": "'Without notice, without registration, without consent' — the conditions under which a third-party purchaser takes free of a prescriptive easement"
+      },
+      "correct_answer": "B",
+      "explanation": "Nec vi, nec clam, nec precario means 'not by force, not in secret, not with permission'. This Latin formulation remains the classic statement of the requirements for prescriptive use, and it corresponds directly to the conditions in the LCLRA 2021: 'open' maps onto 'nec clam' (not in secret); 'peaceable' maps onto 'nec vi' (not by force); and the requirement that use must not be permissive maps onto 'nec precario' (not with permission). The most significant qualifier in practice is nec precario — use with the permission of the landowner cannot give rise to prescription."
+    },
+    {
+      "id": "PRL_M04_L03_Q06",
+      "question": "What is the effect of permissive use on a prescriptive claim for an easement?",
+      "options": {
+        "A": "Permissive use strengthens a prescriptive claim because it shows the servient owner was aware of the use",
+        "B": "If the servient owner has given permission for the use — even informally or orally — the use is permissive and cannot give rise to prescription; permission defeats the prescriptive period",
+        "C": "Permissive use is only relevant if the permission was granted in writing and for consideration",
+        "D": "Permissive use converts a prescriptive claim into an express easement by implied grant"
+      },
+      "correct_answer": "B",
+      "explanation": "Permissive use (nec precario) is fatal to a prescriptive claim. If the servient owner has given permission for the use — even informally or orally — the use is permissive rather than prescriptive. You cannot acquire an easement by prescription where you have been using the land with the servient owner's permission, because permissive use is entirely consistent with the servient owner's title rather than adverse to it. The prescriptive period stops running as soon as permission is granted. This is the most practically significant of the three requirements and is a favourite examination point."
+    },
+    {
+      "id": "PRL_M04_L03_Q07",
+      "question": "Coppinger v Waterford County Council [1996] is the leading Irish authority on which aspect of prescription?",
+      "options": {
+        "A": "That adverse possession and prescription require the same twelve-year period",
+        "B": "That permissive use cannot give rise to prescription — the Supreme Court confirmed that a servient owner who makes clear that use is permitted prevents the prescriptive period from running",
+        "C": "That the fiction of lost modern grant applies to all easements claimed under the Prescription Act 1832",
+        "D": "That the LCLRA 2021 prescription regime operates retrospectively"
+      },
+      "correct_answer": "B",
+      "explanation": "Coppinger v Waterford County Council [1996] is the leading Irish Supreme Court authority confirming that permissive use cannot give rise to prescription. The Supreme Court held that a landowner who makes clear that the use is permitted — and does not object — thereby prevents the prescriptive period from running. The nec precario requirement means that permissive occupation is incompatible with prescriptive acquisition. Landowners who wish to avoid prescriptive claims can do so by: (1) granting formal licences periodically to reset the clock; or (2) physically interrupting the use."
+    },
+    {
+      "id": "PRL_M04_L03_Q08",
+      "question": "What practical steps can a servient landowner take to prevent a prescriptive easement from being acquired over their land?",
+      "options": {
+        "A": "Write a letter to the dominant owner objecting to the use — written objection alone defeats any prescriptive claim",
+        "B": "Grant formal licences periodically to reset the prescriptive period, or physically interrupt the use",
+        "C": "Register a caution with the Land Registry against the dominant owner's title",
+        "D": "Erect 'private property' signs — this alone is sufficient to prevent any prescriptive claim from accruing"
+      },
+      "correct_answer": "B",
+      "explanation": "Landowners who wish to avoid a prescriptive easement being acquired over their land have two effective options: (1) grant formal licences periodically to the person using the land — this makes the use permissive (nec precario) and resets the clock, preventing the twelve-year period from completing; or (2) physically interrupt the use by blocking the path, locking the gate, or otherwise physically preventing the exercise of the claimed right. Written objections alone, without physical interruption, may demonstrate that the use is not peaceable (nec vi) but are less reliable than physical interruption or licensing."
+    },
+    {
+      "id": "PRL_M04_L03_Q09",
+      "question": "Why does the twelve-year prescription period under section 35 LCLRA 2021 mirror the adverse possession period under the Statute of Limitations Act 1957?",
+      "options": {
+        "A": "It is a coincidence arising from the same parliamentary session in which both statutes were enacted",
+        "B": "The policy rationale is similar in both areas — if a right has been openly exercised for twelve years without objection, the law will recognise it, just as adverse possession extinguishes stale title claims after twelve years",
+        "C": "The twelve-year period in both statutes is required by Article 1 Protocol 1 of the ECHR",
+        "D": "Both periods were set by the LCLRA 2009, which harmonised all limitation and prescription periods"
+      },
+      "correct_answer": "B",
+      "explanation": "The twelve-year prescription period under section 35 LCLRA 2021 deliberately mirrors the adverse possession period under the Statute of Limitations Act 1957 because the underlying policy rationale is the same in both areas. In adverse possession, if someone has openly possessed land for twelve years without interference, the law extinguishes the paper owner's stale title. Similarly, in prescription, if someone has openly exercised a right for twelve years without the landowner objecting or interrupting, the law will recognise that right as an easement. Both doctrines reflect the law's desire for legal certainty and the resolution of stale claims."
+    },
+    {
+      "id": "PRL_M04_L03_Q10",
+      "question": "What does 'without interruption' mean in the context of section 35 LCLRA 2021?",
+      "options": {
+        "A": "The right must be used every single day without any break at all",
+        "B": "The use must be continuous — not necessarily constant, but exercised whenever needed without a significant break of more than a year",
+        "C": "There must be no physical barrier on the servient land at any point during the twelve-year period",
+        "D": "The dominant owner must have exercised the right personally throughout, without delegating it to employees or licensees"
+      },
+      "correct_answer": "B",
+      "explanation": "The requirement of 'without interruption' under section 35 LCLRA 2021 does not mean the right must be exercised every day without fail. It means the use must be continuous in the sense of being exercised whenever needed, without a significant break of more than a year. For example, a right of way need not be walked daily — it may be walked seasonally or on an occasional basis. What matters is that the use is maintained consistently over the twelve-year period and that there is no significant gap that would suggest the use has been abandoned or interrupted by the servient owner."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": "ContractLaw_ElevenLabs_Module06_Lesson02.txt",
+  "module_number": 7,
+  "module_title": "Remedies for Breach of Contract",
+  "lesson_number": 2,
+  "lesson_title": "Equitable Remedies",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Specific performance is an equitable remedy. Which of the following statements best describes when it will be granted?",
+      "options": {
+        "A": "Specific performance is available as of right whenever a party is in breach of contract",
+        "B": "Specific performance is granted at the court's discretion where damages would be an inadequate remedy",
+        "C": "Specific performance is only available in contracts for the sale of real property",
+        "D": "Specific performance is only available where the contract has been signed by both parties"
+      },
+      "correct_answer": "B",
+      "explanation": "Specific performance is a discretionary equitable remedy, granted where the court considers that damages at common law would be an inadequate remedy. The adequacy of damages is the threshold test. Specific performance is most commonly awarded in contracts for the sale of land (where each parcel is considered unique) but may also be granted for unique chattels and, in limited circumstances, for other contracts. As an equitable remedy, it is subject to discretionary bars."
+    },
+    {
+      "id": 2,
+      "question": "Specific performance will not generally be ordered for a contract of personal services because:",
+      "options": {
+        "A": "Personal service contracts are automatically void as being contrary to public policy",
+        "B": "Courts are reluctant to compel individuals to work for one another and cannot practically supervise such performance",
+        "C": "Personal service contracts are only enforceable by way of injunction, not specific performance",
+        "D": "The Sale of Goods Act 1893 excludes personal service contracts from equitable relief"
+      },
+      "correct_answer": "B",
+      "explanation": "Courts consistently refuse to order specific performance of personal service contracts on two grounds: (1) the reluctance to compel individuals to work for one another in a relationship that has broken down (which may amount to a form of forced labour), and (2) the practical difficulty of supervising compliance with such an order. This principle was affirmed in De Francesco v Barnum [1890] and remains settled law. The refusal to compel personal service is a well-established bar to specific performance."
+    },
+    {
+      "id": 3,
+      "question": "The equitable maxim most directly relevant to the availability of specific performance is:",
+      "options": {
+        "A": "He who comes to equity must come with clean hands",
+        "B": "Equity will not act in vain",
+        "C": "Equity follows the law",
+        "D": "Equity looks to the intent rather than the form"
+      },
+      "correct_answer": "A",
+      "explanation": "The 'clean hands' maxim — that a claimant seeking equitable relief must not themselves have acted inequitably in relation to the subject matter of the action — is directly applicable to specific performance. If the claimant has engaged in fraud, misrepresentation, sharp practice, or breach of their own obligations under the contract, the court may decline to exercise its discretion to grant specific performance. Other equitable maxims (such as delay defeats equity/laches) also apply."
+    },
+    {
+      "id": 4,
+      "question": "An injunction restraining a breach of contract is an equitable remedy that operates by:",
+      "options": {
+        "A": "Ordering the defendant to perform their contractual obligations",
+        "B": "Restraining the defendant from doing something that would constitute a breach of contract",
+        "C": "Awarding a sum of money equivalent to the cost of performance",
+        "D": "Nullifying the contract and restoring the parties to their pre-contractual positions"
+      },
+      "correct_answer": "B",
+      "explanation": "A prohibitory injunction restrains a party from doing something — in the contractual context, it prevents a party from acting in breach of a negative stipulation in the contract. It does not order performance (that is specific performance) but prevents the breach of a promise not to do something. In some cases, as in Lumley v Wagner [1852], an injunction restraining breach of a negative covenant can effectively (though not directly) compel performance of the positive obligation."
+    },
+    {
+      "id": 5,
+      "question": "In Lumley v Wagner [1852], the court granted an injunction preventing an opera singer from performing for a rival theatre. This was controversial because:",
+      "options": {
+        "A": "It directly ordered specific performance of a personal service contract",
+        "B": "It effectively compelled performance of a personal service contract indirectly, by leaving the defendant with no practical alternative",
+        "C": "It was granted without any consideration of the balance of convenience",
+        "D": "It was granted on the basis of a unilateral contract without mutual obligations"
+      },
+      "correct_answer": "B",
+      "explanation": "In Lumley v Wagner [1852], the opera singer Johanna Wagner had agreed to perform exclusively for Lumley and not to sing elsewhere during the contract period. The court refused to specifically enforce the positive obligation to perform but granted an injunction restraining her from performing for a rival. Although technically consistent with the principle against compelled personal service, the injunction effectively pressured her to perform for Lumley, since her alternative was not to perform at all. This indirect coercion remains controversial."
+    },
+    {
+      "id": 6,
+      "question": "Rescission as an equitable remedy operates to:",
+      "options": {
+        "A": "Vary the terms of the contract to make them fair",
+        "B": "Discharge the contract for the future while preserving accrued rights",
+        "C": "Set the contract aside ab initio and restore the parties to their pre-contractual positions",
+        "D": "Award damages calculated to place the claimant in their pre-contractual position"
+      },
+      "correct_answer": "C",
+      "explanation": "Rescission operates retrospectively — it sets aside the contract as if it had never existed and seeks to restore the parties to their pre-contractual position through mutual restitution. It is available for misrepresentation, mistake, undue influence, duress, and breach of fiduciary duty. Rescission is to be distinguished from termination for breach, which only operates prospectively. The right to rescind may be lost through bars such as affirmation, lapse of time, third party rights, and impossibility of restitution."
+    },
+    {
+      "id": 7,
+      "question": "Rectification is an equitable remedy that enables the court to:",
+      "options": {
+        "A": "Rewrite the contract to reflect terms that would be fairer to the weaker party",
+        "B": "Correct a written document that, due to a common mistake, fails to accurately reflect the true agreement of the parties",
+        "C": "Set aside the contract where there has been a fundamental mistake as to its subject matter",
+        "D": "Fill in gaps in a contract by implying the terms the parties would have agreed"
+      },
+      "correct_answer": "B",
+      "explanation": "Rectification corrects a written document where it fails, through common (or in some cases unilateral) mistake, to reflect the parties' actual prior agreement. The court aligns the document with what was truly agreed. The standard of proof is high — the court must be satisfied by convincing evidence that the document does not reflect the agreed terms. Joscelyne v Nissen [1970] is the leading English authority, confirming that there must be a clear prior accord that the document failed to record. Rectification does not create new obligations — it corrects the record of existing ones."
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is a bar to the remedy of rescission?",
+      "options": {
+        "A": "The parties have equal bargaining power",
+        "B": "The representee knew the representation was false at the time it was made",
+        "C": "Affirmation — the innocent party has, with knowledge of the right to rescind, elected to continue with the contract",
+        "D": "The breach of contract was committed negligently rather than fraudulently"
+      },
+      "correct_answer": "C",
+      "explanation": "Affirmation is a well-established bar to rescission. Where the representee, with knowledge of the facts giving rise to the right to rescind and of the right itself, elects to treat the contract as valid and subsisting, they lose the right to rescind. Affirmation may be express or implied by conduct (such as continuing to accept benefits under the contract). Other bars include: lapse of time, intervention of third party rights, and impossibility of restitutio in integrum."
+    },
+    {
+      "id": 9,
+      "question": "An injunction is classified as mandatory where it:",
+      "options": {
+        "A": "Requires the court's leave before it can be sought",
+        "B": "Orders the defendant to perform a positive act to undo a breach",
+        "C": "Is granted without notice to the defendant",
+        "D": "Is granted only after a full trial on the merits"
+      },
+      "correct_answer": "B",
+      "explanation": "A mandatory injunction orders the defendant to take positive steps — typically to undo the effects of a past or ongoing breach. This is to be contrasted with a prohibitory injunction, which simply restrains further conduct. Courts are more reluctant to grant mandatory injunctions and apply a higher threshold — they must be satisfied that the injunction is clearly right and that withholding it would cause greater injustice than granting it. Mandatory injunctions are frequently sought in construction disputes and breach of restrictive covenant cases."
+    },
+    {
+      "id": 10,
+      "question": "The test for granting an interlocutory injunction in Ireland derives from:",
+      "options": {
+        "A": "American Cyanamid Co v Ethicon Ltd [1975], adopted in Campus Oil v Minister for Industry [1983]",
+        "B": "The Chancery Division's inherent jurisdiction without any formal test",
+        "C": "Section 22 of the Courts Act 1971, which codified the American Cyanamid principles",
+        "D": "The Civil Liability and Courts Act 2004"
+      },
+      "correct_answer": "A",
+      "explanation": "In Ireland, the test for an interlocutory injunction derives from American Cyanamid Co v Ethicon Ltd [1975] (HL), as adopted and adapted by the Irish Supreme Court in Campus Oil v Minister for Industry and Energy [1983]. The Irish test asks: (1) Is there a fair bona fide question to be tried? (2) Would damages be an inadequate remedy for the applicant? (3) Does the balance of convenience favour granting or refusing the injunction? Campus Oil also recognises that in cases involving serious issues affecting the public interest, the balance of convenience may be assessed differently."
+    }
+  ]
+}

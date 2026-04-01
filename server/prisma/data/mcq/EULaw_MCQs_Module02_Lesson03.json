@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "Module_02_Lesson_03_The_European_Commission.txt",
+  "module_number": 2,
+  "module_title": "Institutions of the European Union",
+  "lesson_number": 3,
+  "lesson_title": "The European Commission — Guardian of the Treaties and Motor of Integration",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EUL_M02_L03_Q01",
+      "question": "How many Commissioners currently sit in the European Commission, and what oath do they take on appointment?",
+      "options": {
+        "A": "One Commissioner per member state — 27 in total; they take an oath of independence to act in the general interest of the Union, not as national representatives",
+        "B": "Two Commissioners per large member state and one per small member state; they take an oath of loyalty to their nominating government",
+        "C": "A fixed College of 20 Commissioners regardless of member state numbers; they take an oath to implement Council decisions",
+        "D": "One Commissioner per member state — 27 in total; they take an oath to represent their member state's national interest in the College"
+      },
+      "correct_answer": "A",
+      "explanation": "The Commission currently consists of one Commissioner per member state — 27 Commissioners in total. Each Commissioner takes an oath of independence, binding them to act in the general interest of the Union and not as a national representative. A Commissioner who acts as a national representative acts contrary to their oath."
+    },
+    {
+      "id": "EUL_M02_L03_Q02",
+      "question": "Under Article 17(7) TEU, how is the President of the Commission nominated and approved?",
+      "options": {
+        "A": "Nominated by the Council of the EU by unanimity and approved by the European Parliament by simple majority",
+        "B": "Nominated by the European Council by QMV taking into account European Parliament election results, then approved by the Parliament by a majority of its members",
+        "C": "Directly elected by EU citizens every five years at the same time as European Parliament elections",
+        "D": "Nominated by the outgoing Commission President and ratified by the European Council by unanimity"
+      },
+      "correct_answer": "B",
+      "explanation": "Under Article 17(7) TEU, the Commission President is nominated by the European Council acting by qualified majority, taking into account the results of European Parliament elections. The Parliament must then approve the nominated President by a majority of its members. If the Parliament refuses, the European Council must nominate a different candidate within a month."
+    },
+    {
+      "id": "EUL_M02_L03_Q03",
+      "question": "What significant power did the Lisbon Treaty explicitly confer on the Commission President regarding individual Commissioners?",
+      "options": {
+        "A": "The power to nominate replacement Commissioners without reference to member state governments",
+        "B": "The power to require an individual Commissioner to resign",
+        "C": "The power to increase a Commissioner's portfolio without Council approval",
+        "D": "The power to appoint the High Representative for Foreign Affairs independently"
+      },
+      "correct_answer": "B",
+      "explanation": "Since Lisbon, the Commission President has the explicit power to require an individual Commissioner to resign. This is a significant constitutional development that underlines the President's position as the head of a genuinely collegiate executive, giving the President real authority over the composition of the College."
+    },
+    {
+      "id": "EUL_M02_L03_Q04",
+      "question": "Under Article 17(2) TEU, what is the Commission's exclusive right of legislative initiative, and what is the constitutional rationale for it?",
+      "options": {
+        "A": "Only the Commission may adopt final legislative texts; the rationale is efficiency in the law-making process",
+        "B": "EU legislative acts may only be adopted on the basis of a Commission proposal; the rationale is that the Commission, as an independent supranational institution, is best placed to identify the Union's general interest",
+        "C": "The Commission has the first right to propose legislation, but the Parliament may override this with a two-thirds majority; the rationale is democratic accountability",
+        "D": "The Commission proposes legislation but only with the prior approval of the European Council; the rationale is to ensure member state control"
+      },
+      "correct_answer": "B",
+      "explanation": "Under Article 17(2) TEU, Union legislative acts may only be adopted on the basis of a Commission proposal (except where the treaties provide otherwise). The rationale is that the Commission, as an independent supranational institution not representing any particular member state, is best placed to identify what is in the Union's general interest rather than any individual state's interest."
+    },
+    {
+      "id": "EUL_M02_L03_Q05",
+      "question": "Under Articles 225 and 241 TFEU, may the Parliament and Council request the Commission to bring forward a legislative proposal, and is the Commission legally obliged to comply?",
+      "options": {
+        "A": "Neither institution has any right to request a proposal; only the Commission can decide to act",
+        "B": "Both institutions may request a proposal, and the Commission is legally obliged to comply within three months",
+        "C": "Both institutions may request a proposal, but the Commission is not legally obliged to comply, though it must give reasons if it declines",
+        "D": "Only the Council may request a proposal; the Parliament has no such power under the TFEU"
+      },
+      "correct_answer": "C",
+      "explanation": "Under Article 225 TFEU, the Parliament may request the Commission to bring forward a proposal. Under Article 241 TFEU, the Council has the same power. However, the Commission is not legally obliged to comply. It must give reasons if it declines to act. This limitation contributes to the democratic deficit critique."
+    },
+    {
+      "id": "EUL_M02_L03_Q06",
+      "question": "What are the three stages of infringement proceedings under Article 258 TFEU?",
+      "options": {
+        "A": "A written warning from the Council; a formal complaint to the Court of Justice; and a penalty payment order",
+        "B": "A formal letter of notice to the member state; a reasoned opinion; and if no compliance, an action before the Court of Justice",
+        "C": "A political resolution of the European Parliament; referral to COREPER; and a Council decision imposing sanctions",
+        "D": "An administrative warning from the Commission; a period of supervised compliance; and automatic suspension of voting rights in the Council"
+      },
+      "correct_answer": "B",
+      "explanation": "Under Article 258 TFEU, infringement proceedings follow three stages: (1) a formal letter of notice giving the member state the opportunity to submit observations; (2) a reasoned opinion if the matter is not resolved; and (3) if the state still fails to comply, an action before the Court of Justice. A further action under Article 260(2) TFEU can result in financial penalties for continued non-compliance."
+    },
+    {
+      "id": "EUL_M02_L03_Q07",
+      "question": "Under Article 260(2) TFEU, what financial sanctions may the Court of Justice impose on a member state that fails to comply with a judgment finding it in breach of EU law?",
+      "options": {
+        "A": "The Court may suspend the member state's voting rights in the Council for up to two years",
+        "B": "The Court may impose a lump sum for the historical breach, periodic penalty payments for continuing non-compliance, or both",
+        "C": "The Court may order the member state to pay compensation directly to affected citizens",
+        "D": "The Court may require the member state to transpose the relevant directive within 30 days or face expulsion"
+      },
+      "correct_answer": "B",
+      "explanation": "Under Article 260(2) TFEU, if a member state fails to comply with a Court judgment finding a breach of EU law, the Commission may bring a further action and request the Court to impose financial penalties — either a lump sum for the historical breach or periodic penalty payments for continuing non-compliance, or both."
+    },
+    {
+      "id": "EUL_M02_L03_Q08",
+      "question": "What direct executive power does the Commission possess in the area of competition law, and what are the limits on the fines it may impose?",
+      "options": {
+        "A": "The Commission may recommend fines to national competition authorities, subject to a cap of 5% of annual EU turnover",
+        "B": "The Commission may investigate alleged cartels or abuses of dominant position under Articles 101 and 102 TFEU, adopt infringement decisions, and impose fines of up to 10% of worldwide turnover; decisions are subject to appeal to the General Court",
+        "C": "The Commission has no direct fining power; it must refer all competition matters to the Court of Justice",
+        "D": "The Commission may impose fines of up to 10% of EU turnover and these decisions are final with no right of appeal"
+      },
+      "correct_answer": "B",
+      "explanation": "In competition law, the Commission has direct executive power. It can investigate alleged cartels or abuses of dominant position, adopt decisions finding infringements of Articles 101 and 102 TFEU, and impose fines of up to 10% of worldwide turnover. These decisions are subject to appeal to the General Court."
+    },
+    {
+      "id": "EUL_M02_L03_Q09",
+      "question": "What is the ERTA doctrine, and in which case was it first established?",
+      "options": {
+        "A": "The doctrine that EU regulations have direct effect in member states; established in Van Gend en Loos [1963]",
+        "B": "The doctrine that wherever the EU has internal competence, it generally has corresponding external competence; established in ERTA [1971]",
+        "C": "The doctrine that the Commission may negotiate trade agreements without a Council mandate; established in Opinion 1/75 [1975]",
+        "D": "The doctrine requiring the Court of Justice to give primacy to EU law over national law; established in Costa v ENEL [1964]"
+      },
+      "correct_answer": "B",
+      "explanation": "The ERTA doctrine, established in the ERTA case [1971], holds that wherever the EU has internal competence, it generally has corresponding external competence. This principle is confirmed in the Lisbon Treaty framework and underpins the Commission's role as the EU's chief negotiator in international trade and other agreements."
+    },
+    {
+      "id": "EUL_M02_L03_Q10",
+      "question": "A classical FE-1 examination question asks you to evaluate the Commission's dual role as both initiator of legislation and enforcer of law. Which of the following best captures the key tension and the standard justification offered for it?",
+      "options": {
+        "A": "The tension is that the Commission can both propose and veto legislation; the justification is that this prevents legislative deadlock between the Parliament and Council",
+        "B": "The tension is that the same institution drafts legislation and enforces compliance with it, which is unusual by comparison with most national systems where these functions are separated; the justification is the Commission's independence and the Union interest rationale, though critics question its democratic accountability",
+        "C": "The tension is that the Commission is both a political and judicial body; the justification is that the Court of Justice provides sufficient oversight to prevent abuse",
+        "D": "The tension is that the Commission acts for both the EU and individual member states simultaneously; the justification is the principle of subsidiarity"
+      },
+      "correct_answer": "B",
+      "explanation": "The key tension is that the Commission simultaneously initiates legislation and enforces compliance with it — a combination unusual in national constitutional systems where legislative drafting and enforcement are typically separated. The justification offered is the Commission's independence and the Union interest rationale. Critics question the democratic accountability of these combined functions, pointing to the fact that the institution exercising both roles is not directly elected."
+    }
+  ]
+}

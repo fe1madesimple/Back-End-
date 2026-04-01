@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module10_Lesson01.txt",
+  "module_number": 10,
+  "module_title": "Free Movement of Workers",
+  "lesson_number": 1,
+  "lesson_title": "Article 45 TFEU and the Concept of Worker",
+  "questions": [
+    {
+      "id": "EUL_M10_L01_Q01",
+      "question": "Article 45 TFEU confers rights on 'workers' of EU member states. Which of the following correctly describes the scope of Article 45?",
+      "options": {
+        "A": "It applies only to economically active persons employed on full-time contracts",
+        "B": "It prohibits discrimination based on nationality as regards employment, remuneration, and conditions of work and employment; it guarantees the right to accept offers of employment, move freely for this purpose, stay in a member state to pursue employment, and remain after employment ceases",
+        "C": "It applies only to workers who have been employed for at least 12 months in another member state",
+        "D": "It covers only the initial right of entry — subsequent rights are governed by secondary legislation only"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 45 TFEU grants four core rights: (1) the right to accept offers of employment actually made; (2) the right to move freely within the EU for this purpose; (3) the right to stay in a member state for the purpose of employment; and (4) the right to remain after employment has ended (subject to Regulation 492/2011 conditions). It prohibits discrimination based on nationality in employment, remuneration, and other conditions of work. Article 45 is directly effective — it can be relied upon by individuals in national courts. It applies both to state action and, in some contexts, to rules adopted by private bodies regulating employment (Walrave; Bosman)."
+    },
+    {
+      "id": "EUL_M10_L01_Q02",
+      "question": "The definition of 'worker' for Article 45 TFEU purposes was established in Lawrie-Blum [1986] (C-66/85). What are the elements of the Lawrie-Blum definition?",
+      "options": {
+        "A": "A person must be a national of an EU member state who has a formal employment contract of more than three months",
+        "B": "A 'worker' is a person who: (1) pursues genuine and effective economic activities (not marginal or ancillary); (2) under the direction of another person (the employer); (3) in return for remuneration",
+        "C": "A person must work for more than 15 hours per week to qualify as a worker",
+        "D": "Worker status requires that the person's income from employment exceeds national minimum wage levels"
+      },
+      "correct_answer": "B",
+      "explanation": "Lawrie-Blum (Ms Lawrie-Blum was a British teacher trainee in Germany) established the autonomous EU law definition of 'worker': a person who (1) performs genuine and effective work (not marginal or ancillary); (2) under the direction of another (the essential of subordination — distinguishing employment from self-employment/services); (3) in return for remuneration (which need not be substantial). The definition is interpreted broadly and applies regardless of: the nature of the employment relationship under national law; the level of pay; whether part-time or full-time; whether work is temporary or permanent. The key is that activities are genuine and effective economic activities."
+    },
+    {
+      "id": "EUL_M10_L01_Q03",
+      "question": "In Levin [1982] (C-53/81), the CJEU held that a part-time worker earning below the minimum subsistence level could still be a 'worker' under Article 45 TFEU. What principle was established?",
+      "options": {
+        "A": "Worker status requires that income from work is the person's primary income source",
+        "B": "Part-time and low-paid work constitutes 'genuine and effective' economic activity — the fact that earnings are low or that a person supplements income from other sources does not affect worker status, provided the work is not purely marginal or ancillary",
+        "C": "Workers must earn at least the national minimum wage to qualify under Article 45",
+        "D": "Part-time workers have reduced rights compared to full-time workers under Article 45"
+      },
+      "correct_answer": "B",
+      "explanation": "Levin established the crucial principle that the threshold for worker status is low — the work must be genuine and effective but need not be economically significant to the host state. Mrs Levin was a British national in the Netherlands working part-time as a waitress, earning below the minimum subsistence level. The CJEU held she was a worker — the amount of remuneration and hours worked are irrelevant to worker status provided the activities are not purely marginal or ancillary. She could rely on Article 45 even if her motive for working was primarily to establish residence rights rather than economic necessity. This broad approach to 'worker' maximises the scope of free movement rights."
+    },
+    {
+      "id": "EUL_M10_L01_Q04",
+      "question": "Steymann v Staatssecretaris van Justitie [1988] (C-196/87) involved a member of a Bhagwan religious community in the Netherlands who performed work for the community (plumbing, cleaning) and received accommodation and pocket money in return. The CJEU held:",
+      "options": {
+        "A": "That religious motivations exclude worker status — work performed for religious purposes cannot constitute genuine economic activity",
+        "B": "That Steymann was a worker — the essential services and pocket money constituted indirect remuneration; the fact that the relationship was within a religious community and partly non-economic did not prevent Article 45 applying where genuine economic activities were performed",
+        "C": "That community members cannot be workers as they have no formal employment contract",
+        "D": "That the work was marginal and ancillary because it was performed within a closed religious community"
+      },
+      "correct_answer": "B",
+      "explanation": "Steymann extended the concept of remuneration: indirect remuneration (provision of accommodation, meals, and pocket money) satisfies the economic element of the worker definition, provided the relationship involves genuine economic activities. The religious motivation of the community did not disqualify the economic activities performed (plumbing, cleaning — activities of clear economic value). This case illustrates the CJEU's purposive approach — it looks at the substance of the relationship (genuine work in return for genuine benefit) rather than its form (absence of formal contract, non-monetary remuneration, mixed economic/non-economic setting)."
+    },
+    {
+      "id": "EUL_M10_L01_Q05",
+      "question": "Bettray v Staatssecretaris van Justitie [1989] (C-344/87) concerned a German national in the Netherlands participating in a social rehabilitation scheme for drug addicts, performing simple work under supervised conditions. The CJEU held:",
+      "options": {
+        "A": "That Bettray was a worker — any paid activity constitutes genuine work",
+        "B": "That Bettray was NOT a worker — the activities were not genuine and effective economic activities; the scheme was a social rehabilitation measure designed for the person's own benefit, not productive work in the economic sense; the work was tailored to the individual's condition, not to economic needs",
+        "C": "That social rehabilitation work is always genuine economic activity",
+        "D": "That the Netherlands was entitled to exclude social rehabilitation participants from worker status under Article 45(3)"
+      },
+      "correct_answer": "B",
+      "explanation": "Bettray is the clearest example of work that is 'marginal and ancillary' — outside the worker definition. The work was not genuine and effective economic activity because: it was created solely to rehabilitate drug addicts; the activities were adapted entirely to the participants' therapeutic needs (not economic requirements); it was not aimed at producing economic output; and the work had no labour market function. The CJEU emphasised the 'genuine and effective economic activity' test — the work must serve real economic purposes, not merely provide therapeutic structure. Social rehabilitation schemes, even when they involve remunerated activities, do not satisfy the worker definition."
+    },
+    {
+      "id": "EUL_M10_L01_Q06",
+      "question": "Article 45(4) TFEU provides that Article 45 shall not apply to employment in the 'public service'. How has the CJEU interpreted this exception?",
+      "options": {
+        "A": "Broadly — all employment in the public sector is excluded from Article 45",
+        "B": "Narrowly — only posts involving the exercise of powers conferred by public law and responsibility for safeguarding the general interests of the state, which require particular loyalty to the state, are excluded; it does not extend to all public sector employment",
+        "C": "Broadly — it covers all employment funded by public money",
+        "D": "Narrowly — it applies only to military and police employment"
+      },
+      "correct_answer": "B",
+      "explanation": "The CJEU has interpreted the 'public service' exception narrowly and autonomously (not deferring to national definitions). In Commission v Belgium [1980], the Court held that Article 45(4) covers only posts which involve direct or indirect participation in the exercise of powers conferred by public law and the discharge of functions whose purpose is to safeguard the general interests of the state. Posts must require special loyalty to the state — security services, foreign policy, police (core executive functions). The exception does not extend to all public sector employment — nurses, teachers, and other public employees generally enjoy Article 45 rights. Member states cannot define 'public service' to exclude entire sectors from free movement."
+    },
+    {
+      "id": "EUL_M10_L01_Q07",
+      "question": "Article 45 TFEU has been held in Walrave and Koch [1974] (C-36/74) and Bosman [1995] (C-415/93) to apply not only to state action but also to:",
+      "options": {
+        "A": "Only EU institutions — private bodies are outside the scope of Article 45",
+        "B": "Rules adopted by private bodies that collectively regulate employment — including sports associations and governing bodies (such as FIFA/UEFA) when they regulate the conditions of employment of professional athletes",
+        "C": "Individual employment contracts between private employers and workers",
+        "D": "Only quasi-public bodies with statutory powers"
+      },
+      "correct_answer": "B",
+      "explanation": "Walrave and Koch established that Article 45 (like Article 56 on services) applies not only to state action but also to rules adopted by private bodies that collectively regulate employment and the provision of services. Bosman confirmed this in the context of football transfer rules — UEFA's rules restricting the transfer of players and limiting the number of foreign EU players per team were contrary to Article 45, even though they were adopted by a private sports governing body. The rationale is that if Article 45 applied only to state measures, private bodies could circumvent it through collective regulation. Any rules that collectively regulate employment must comply with EU free movement law."
+    },
+    {
+      "id": "EUL_M10_L01_Q08",
+      "question": "What is the requirement of a 'cross-border element' for Article 45 TFEU to apply?",
+      "options": {
+        "A": "Article 45 applies to all employment situations in the EU, including purely internal situations",
+        "B": "Article 45 requires a cross-border element — it applies where an EU citizen moves (or has moved) from one member state to another for work, or where a national measure restricts the freedom of nationals to take up employment in another member state; purely internal situations (no cross-border element) may be outside Article 45",
+        "C": "The cross-border element is satisfied whenever the employer operates in multiple member states",
+        "D": "Article 45 applies only if the worker remains employed by an employer established in their home member state"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 45 requires a cross-border element — it is a free movement right. It does not apply to purely internal situations (where a national of a member state seeks to challenge their own member state's rules solely in respect of domestic employment). However, the cross-border element is broadly interpreted: it covers workers who have migrated to another member state; frontier workers; workers who regularly commute across borders; and nationals of member states who have exercised free movement rights in the past and now face obstacles on return. 'Reverse discrimination' — where a member state treats its own returning nationals worse than foreign EU workers — remains a contested area."
+    },
+    {
+      "id": "EUL_M10_L01_Q09",
+      "question": "Regulation 492/2011 (replacing the original Regulation 1612/68) implements Article 45 TFEU. Which of the following is a key right guaranteed by Regulation 492/2011?",
+      "options": {
+        "A": "The right of workers to claim social assistance benefits from day one of entry into the host member state",
+        "B": "The right of EU workers to the same social and tax advantages as national workers of the host member state (Article 7(2) of the Regulation)",
+        "C": "The right of workers to bring their employers to EU courts for discrimination",
+        "D": "The right of workers to require their home state to contribute to their host state social security"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 7(2) of Regulation 492/2011 (formerly Article 7(2) of Regulation 1612/68) is one of the most litigated provisions — it guarantees migrant EU workers the same 'social and tax advantages' as national workers. The CJEU has interpreted 'social advantages' broadly to include not only advantages linked to the employment contract but also benefits available to nationals generally that are linked to the fact of residence — including reduced rail fares for large families, housing benefits, child-rearing allowances, and access to language courses. This broad interpretation significantly extends the practical scope of worker rights beyond the employment relationship itself."
+    },
+    {
+      "id": "EUL_M10_L01_Q10",
+      "question": "In Lair v Universität Hannover [1988] (C-39/86), the CJEU addressed whether a migrant worker who had ceased employment could retain worker status and claim a university maintenance grant under Regulation 1612/68. The Court held:",
+      "options": {
+        "A": "That cessation of employment always ends worker status under Article 45",
+        "B": "That a worker who ceases employment retains worker status if: they become involuntarily unemployed and are registered as a job seeker; or they undergo vocational training — particularly where there is a link between the training and the previous employment; in such cases, the worker can claim social advantages including study maintenance grants",
+        "C": "That educational benefits are excluded from the scope of social advantages under Regulation 1612/68",
+        "D": "That worker status is retained only for six months after cessation of employment"
+      },
+      "correct_answer": "B",
+      "explanation": "Lair established that worker status is not automatically lost on cessation of employment — it can be retained in defined circumstances. Key categories: (1) involuntary unemployment registered as a jobseeker; (2) undertaking vocational training — particularly where there is continuity between the training and the previous employment activity. Where a link exists between training and previous work (or where unemployment is involuntary), the person retains worker status and can claim the associated social advantages including university grants. This was an important early step in the CJEU's development of social rights for mobile EU workers — later substantially developed through EU citizenship law."
+    }
+  ],
+  "total_questions": 10
+}

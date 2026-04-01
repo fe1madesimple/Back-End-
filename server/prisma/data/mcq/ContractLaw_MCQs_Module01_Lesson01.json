@@ -1,0 +1,131 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": "ContractLaw_ElevenLabs_Module01_Lesson01.txt",
+  "module_number": 1,
+  "module_title": "Formation of a Contract",
+  "lesson_number": 1,
+  "lesson_title": "Offer",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following best describes the legal test for determining whether a valid offer has been made?",
+      "options": {
+        "A": "The subjective intention of the offeror at the time of making the statement",
+        "B": "The objective test — how a reasonable person in the position of the offeree would understand the statement",
+        "C": "Whether both parties subjectively intended to be bound by the statement",
+        "D": "The oral or written form in which the statement was communicated"
+      },
+      "correct_answer": "B",
+      "explanation": "The objective test applies to offer formation: Smith v Hughes [1871] established that the courts look to the outward conduct and words of the parties, not their subjective intentions. A reasonable person standard governs whether a statement amounts to an offer."
+    },
+    {
+      "id": 2,
+      "question": "In Carlill v Carbolic Smoke Ball Co [1893], the Court of Appeal held that the advertisement was a valid offer because:",
+      "options": {
+        "A": "It was communicated in writing to identified individuals",
+        "B": "It contained sufficiently certain terms and was intended to be legally binding, as evidenced by the deposit of £1,000",
+        "C": "The company had previously supplied smoke balls to members of the public",
+        "D": "The offeree had expressly notified the company of her intention to accept"
+      },
+      "correct_answer": "B",
+      "explanation": "In Carlill, the advertisement was treated as an offer to the world at large (a unilateral offer) because its terms were sufficiently certain, a £1,000 deposit demonstrated serious intent, and performance of the condition (using the smoke ball) constituted acceptance. The court rejected the argument that it was mere puff."
+    },
+    {
+      "id": 3,
+      "question": "What is an 'invitation to treat' in contract law?",
+      "options": {
+        "A": "A binding offer which, once accepted, creates a contract",
+        "B": "A preliminary statement inviting others to make offers, which does not itself constitute an offer",
+        "C": "An offer made under duress and therefore voidable",
+        "D": "A counter-offer that terminates the original offer"
+      },
+      "correct_answer": "B",
+      "explanation": "An invitation to treat is a pre-contractual statement that invites others to make offers. It does not constitute an offer and cannot be accepted so as to form a contract. Examples include advertisements (Partridge v Crittenden [1968]), goods displayed in shops (Pharmaceutical Society of GB v Boots [1953]), and catalogues."
+    },
+    {
+      "id": 4,
+      "question": "In Pharmaceutical Society of Great Britain v Boots Cash Chemists [1953], the Court of Appeal held that the display of goods on shelves in a self-service pharmacy was:",
+      "options": {
+        "A": "An offer which customers accepted by placing goods in their basket",
+        "B": "An invitation to treat, with the offer being made by the customer at the cash register",
+        "C": "A binding contract formed at the moment of selection",
+        "D": "An offer only in respect of prescription medicines"
+      },
+      "correct_answer": "B",
+      "explanation": "The Court of Appeal in Boots held that displaying goods on shelves constitutes an invitation to treat, not an offer. The customer makes the offer when presenting goods at the till, and the contract is formed when the cashier accepts. This ensures the retailer can refuse to sell where necessary (e.g., for legal compliance)."
+    },
+    {
+      "id": 5,
+      "question": "Which of the following statements about advertisements is generally correct under Irish and English contract law?",
+      "options": {
+        "A": "All advertisements constitute binding offers capable of acceptance",
+        "B": "Advertisements are always invitations to treat and can never be offers",
+        "C": "Advertisements are generally invitations to treat, but can be offers if sufficiently certain and intended to be binding",
+        "D": "Advertisements become offers only once the offeror has received at least one response"
+      },
+      "correct_answer": "C",
+      "explanation": "The general rule is that advertisements are invitations to treat (Partridge v Crittenden [1968]). However, an advertisement may constitute an offer where its terms are sufficiently certain and the advertiser intends to be bound — as in Carlill v Carbolic Smoke Ball Co [1893], where the court found a valid unilateral offer to the world."
+    },
+    {
+      "id": 6,
+      "question": "In Harvey v Facey [1893] (PC), the Privy Council held that the telegram 'Lowest price for Bumper Hall Pen £900' was:",
+      "options": {
+        "A": "A valid offer which was accepted by Harvey's reply",
+        "B": "An invitation to treat which led to a counter-offer",
+        "C": "Merely a statement of the minimum price, not an offer capable of acceptance",
+        "D": "A conditional offer contingent on Facey receiving a higher bid"
+      },
+      "correct_answer": "C",
+      "explanation": "The Privy Council in Harvey v Facey held that 'Lowest price £900' was simply a response to a request for information about price — it was not an offer to sell at that price. Harvey's purported acceptance of that 'price' did not form a contract because Facey had not made any offer to sell."
+    },
+    {
+      "id": 7,
+      "question": "Under the Sale of Goods Act 1893 (Ireland), s58, an auctioneer's call for bids is:",
+      "options": {
+        "A": "An offer by the auctioneer which is accepted when a bid is made",
+        "B": "An invitation to treat; each bid is an offer which the auctioneer accepts by the fall of the hammer",
+        "C": "A binding obligation to sell to the highest bidder",
+        "D": "An offer that cannot be revoked once the auction commences"
+      },
+      "correct_answer": "B",
+      "explanation": "Under s58 of the Sale of Goods Act 1893, an auction sale is complete on the fall of the auctioneer's hammer. The auctioneer's call for bids is an invitation to treat; each bid constitutes an offer; and the contract is formed when the hammer falls. A bidder may retract a bid before that moment."
+    },
+    {
+      "id": 8,
+      "question": "In Gibson v Manchester City Council [1979] (HL), the House of Lords held that the letter stating the Council 'may be prepared to sell' the house to the plaintiff was:",
+      "options": {
+        "A": "A binding offer accepted by Gibson's reply",
+        "B": "An invitation to treat inviting Gibson to make a formal application",
+        "C": "A conditional offer subject to the Council's approval",
+        "D": "An offer which lapsed due to Gibson's failure to respond promptly"
+      },
+      "correct_answer": "B",
+      "explanation": "In Gibson v Manchester City Council, the House of Lords rejected the Court of Appeal's finding that a contract existed. The letter using 'may be prepared to sell' was an invitation to treat, not an offer. The council had not committed itself to sell; it was merely inviting Gibson to apply, and no binding offer or acceptance had occurred."
+    },
+    {
+      "id": 9,
+      "question": "What is the general rule regarding the communication of revocation of an offer?",
+      "options": {
+        "A": "Revocation is effective from the moment the offeror decides to revoke, regardless of communication",
+        "B": "Revocation must be communicated to the offeree before acceptance, but need not come from the offeror personally",
+        "C": "Revocation is only valid if communicated in writing",
+        "D": "An offer cannot be revoked once communicated to the offeree"
+      },
+      "correct_answer": "B",
+      "explanation": "Revocation is effective only when communicated to the offeree before acceptance (Payne v Cave [1789]). Crucially, communication need not come from the offeror personally — in Dickinson v Dodds [1876], reliable third-party communication of revocation was held sufficient, as the offeree had actual knowledge the offer was no longer available."
+    },
+    {
+      "id": 10,
+      "question": "In Dickinson v Dodds [1876], Dodds agreed to keep an offer to sell property open until Friday morning. Before that time, Dickinson heard from a third party that Dodds had sold to another. The Court of Appeal held:",
+      "options": {
+        "A": "Dodds was bound to keep the offer open until Friday morning as promised",
+        "B": "Dickinson's attempted acceptance on Thursday was valid because the period had not expired",
+        "C": "The offer was effectively revoked because Dickinson had reliable knowledge from a third party that Dodds had sold to another",
+        "D": "Dodds' promise to keep the offer open created a binding option contract"
+      },
+      "correct_answer": "C",
+      "explanation": "In Dickinson v Dodds [1876], the Court of Appeal held that the promise to keep the offer open until Friday was unsupported by consideration and therefore not binding. Once Dickinson had reliable knowledge that the property had been sold to another, the offer was effectively revoked — even though that information came via a third party rather than Dodds himself."
+    }
+  ]
+}

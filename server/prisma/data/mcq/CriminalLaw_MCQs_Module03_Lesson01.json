@@ -1,0 +1,151 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module03_Lesson01.txt",
+  "module_number": 3,
+  "module_title": "Mens Rea",
+  "lesson_number": 1,
+  "lesson_title": "Mens Rea: Intention, Recklessness, and Negligence",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M03_L01_Q01",
+      "question": "Which of the following best describes 'oblique intent' (also known as indirect intent) in criminal law?",
+      "options": {
+        "A": "The accused desired the consequence as their primary aim and acted specifically to bring it about",
+        "B": "The accused did not desire the consequence as an end in itself, but foresaw it as a virtually certain result of their conduct and proceeded anyway",
+        "C": "The accused was aware of a risk that the consequence might occur but did not consider it likely",
+        "D": "The accused caused the consequence through gross carelessness rather than deliberate conduct"
+      },
+      "correct_answer": "B",
+      "explanation": "Oblique intent arises where the accused did not desire the consequence as their goal, but foresaw it as a virtually certain result of their conduct. The standard is 'virtual certainty' — not merely probability or likelihood. The jury may infer intent in such circumstances per R v Woollin [1999] and the Irish authority The People (DPP) v Douglas and Hayes [1985].",
+      "difficulty": "medium",
+      "topic_tag": "intention"
+    },
+    {
+      "id": "CL_M03_L01_Q02",
+      "question": "What standard of foresight is required before a jury may infer oblique intent under the approach established in R v Woollin [1999]?",
+      "options": {
+        "A": "The accused foresaw the consequence as probable",
+        "B": "The accused foresaw the consequence as more likely than not",
+        "C": "The accused foresaw the consequence as virtually certain",
+        "D": "The accused foresaw the consequence as a real possibility"
+      },
+      "correct_answer": "C",
+      "explanation": "R v Woollin [1999] established that a jury is entitled (not required) to infer intention where the accused foresaw death or grievous bodily harm as a virtually certain consequence of their act. 'Probable' or 'likely' is not enough — the foresight must reach the threshold of virtual certainty.",
+      "difficulty": "easy",
+      "topic_tag": "intention"
+    },
+    {
+      "id": "CL_M03_L01_Q03",
+      "question": "What is the Irish leading authority confirming that the standard for recklessness in serious criminal offences is subjective rather than objective?",
+      "options": {
+        "A": "R v Cunningham [1957]",
+        "B": "R v Caldwell [1982]",
+        "C": "The People (DPP) v Murray [1977]",
+        "D": "Sweet v Parsley [1970]"
+      },
+      "correct_answer": "C",
+      "explanation": "The People (DPP) v Murray [1977] is the leading Irish Supreme Court authority confirming that recklessness in Irish criminal law is assessed subjectively — the prosecution must prove the accused actually foresaw the relevant risk. Cunningham is the leading English authority, and Caldwell (which introduced an objective test) was never adopted in Ireland and has since been overruled in England by R v G and Another [2003].",
+      "difficulty": "medium",
+      "topic_tag": "recklessness"
+    },
+    {
+      "id": "CL_M03_L01_Q04",
+      "question": "R v Caldwell [1982] is significant in the development of the law on recklessness because it:",
+      "options": {
+        "A": "Confirmed the subjective Cunningham test as the definitive standard for all criminal offences",
+        "B": "Introduced an objective test for recklessness in criminal damage which included defendants who had not actually thought about the risk at all",
+        "C": "Established that recklessness is a higher form of mens rea than intention",
+        "D": "Held that strict liability cannot apply to truly criminal offences"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Caldwell [1982] controversially introduced an objective test for recklessness in criminal damage, which meant a defendant could be convicted even if they had never turned their mind to the risk, provided a reasonable person would have recognised it. This 'lacuna' in the Caldwell test was heavily criticised and the case was overruled by R v G and Another [2003], which restored the subjective approach.",
+      "difficulty": "medium",
+      "topic_tag": "recklessness"
+    },
+    {
+      "id": "CL_M03_L01_Q05",
+      "question": "David aims a punch at Edward but misses and strikes Frank, causing him injury. David had no intention or awareness that Frank was nearby. Under the doctrine of transferred malice, can David be convicted of assault on Frank?",
+      "options": {
+        "A": "No — transferred malice only applies to homicide offences",
+        "B": "Yes — David's intention to assault Edward transfers to Frank, as the actus reus and mens rea are of the same type",
+        "C": "No — transferred malice requires the accused to have been reckless as to harming the actual victim",
+        "D": "Yes — but only if David could have reasonably foreseen that Frank might be in the vicinity"
+      },
+      "correct_answer": "B",
+      "explanation": "The doctrine of transferred malice, illustrated by R v Latimer, provides that where the accused intends to commit a crime against one person but commits the same type of crime against another, the mens rea transfers. David's intention to assault Edward is of the same type as the actus reus committed against Frank (assault). The transfer operates and David can be convicted.",
+      "difficulty": "medium",
+      "topic_tag": "transferred malice"
+    },
+    {
+      "id": "CL_M03_L01_Q06",
+      "question": "Paul throws a stone at a group of people, intending to hit one of them. The stone misses and shatters a nearby shop window. Under the doctrine of transferred malice, can Paul's mens rea for assault transfer to make him liable for criminal damage to the window?",
+      "options": {
+        "A": "Yes — transferred malice applies whenever the accused causes any harm in the course of a criminal act",
+        "B": "Yes — because Paul created the dangerous situation by throwing the stone",
+        "C": "No — transferred malice only operates where the actus reus and mens rea are of the same type; Paul's intention to assault persons cannot transfer to an offence of damaging property",
+        "D": "No — Paul cannot be liable for criminal damage without recklessness specifically as to property"
+      },
+      "correct_answer": "C",
+      "explanation": "This is based on the principle in R v Pembliton. Transferred malice has a critical limitation: it only operates where the actus reus and mens rea are of the same type. Paul's mens rea was for an offence against the person; criminal damage is an offence against property. The malice cannot transfer across different categories of offence. Paul may still be liable for criminal damage if he was reckless as to damaging the window, but not via transferred malice.",
+      "difficulty": "hard",
+      "topic_tag": "transferred malice"
+    },
+    {
+      "id": "CL_M03_L01_Q07",
+      "question": "Which of the following statements about strict liability in criminal law is correct?",
+      "options": {
+        "A": "Strict liability is the default position — all criminal offences are strict liability unless Parliament expressly provides for mens rea",
+        "B": "Strict liability offences require the prosecution to prove at least recklessness on the part of the accused",
+        "C": "The presumption is that mens rea is required, and courts are slow to read an offence as imposing strict liability without clear statutory language, particularly for serious offences",
+        "D": "Strict liability only applies to offences triable on indictment"
+      },
+      "correct_answer": "C",
+      "explanation": "Per Sweet v Parsley [1970], the presumption is that mens rea is required for criminal offences. Courts will not read a statute as imposing strict liability without clear Parliamentary intent, particularly where the offence is serious in character. Strict liability is typically confined to regulatory offences where enforcement would otherwise be impractical.",
+      "difficulty": "medium",
+      "topic_tag": "strict liability"
+    },
+    {
+      "id": "CL_M03_L01_Q08",
+      "question": "What distinguishes criminal negligence from civil negligence for the purposes of attracting criminal liability?",
+      "options": {
+        "A": "Criminal negligence requires proof that the accused foresaw the risk, whereas civil negligence does not",
+        "B": "Criminal negligence must be gross — a serious departure from the standard of a reasonable person — whereas civil negligence may be any breach of the duty of care",
+        "C": "Criminal negligence only arises in cases involving death; civil negligence covers all personal injury",
+        "D": "There is no distinction — negligence in criminal and civil law is assessed on the same standard"
+      },
+      "correct_answer": "B",
+      "explanation": "In criminal law, negligence must be gross — the departure from the reasonable standard must be so serious that it justifies criminal rather than merely civil sanction. Ordinary carelessness that gives rise to civil liability in tort is not sufficient for criminal liability. The leading context is gross negligence manslaughter, addressed in R v Adomako [1995].",
+      "difficulty": "medium",
+      "topic_tag": "negligence"
+    },
+    {
+      "id": "CL_M03_L01_Q09",
+      "question": "The People (DPP) v Douglas and Hayes [1985] is authority for which proposition in Irish criminal law?",
+      "options": {
+        "A": "That recklessness in Irish law is assessed objectively, in line with the Caldwell standard",
+        "B": "That for attempted murder, intention to kill is required — intention to cause serious harm alone is insufficient — and that a virtually certain consequence may ground an inference of intent",
+        "C": "That negligence can substitute for intention in murder where the risk of death was foreseeable",
+        "D": "That transferred malice cannot operate in cases of attempted murder"
+      },
+      "correct_answer": "B",
+      "explanation": "The People (DPP) v Douglas and Hayes [1985] established that attempted murder requires intention to kill — intention to cause serious harm is insufficient. The case also supports the principle that where a consequence is a virtually certain result of the accused's actions, the jury may infer that the accused intended that consequence, in line with the oblique intent doctrine.",
+      "difficulty": "hard",
+      "topic_tag": "intention"
+    },
+    {
+      "id": "CL_M03_L01_Q10",
+      "question": "In an FE-1 problem question, an accused is charged with an offence that the statute describes as requiring the accused to 'intentionally or recklessly' cause a specified result. Which approach should a candidate take to analyse the recklessness limb under Irish law?",
+      "options": {
+        "A": "Apply the objective Caldwell test — would a reasonable person have foreseen the risk?",
+        "B": "Apply the subjective Cunningham / Murray test — did the accused actually foresee the risk and proceed regardless?",
+        "C": "Apply gross negligence — was the accused's conduct a serious departure from a reasonable standard?",
+        "D": "Treat the offence as strict liability because the statute uses the word 'recklessly'"
+      },
+      "correct_answer": "B",
+      "explanation": "Under Irish law, following The People (DPP) v Murray [1977] and consistent with R v Cunningham [1957], recklessness is assessed subjectively. The prosecution must prove the accused personally foresaw the relevant risk and proceeded regardless. The Caldwell objective test was never adopted in Ireland and was overruled in England. Candidates must apply the subjective standard in FE-1 answers unless the statute expressly mandates otherwise.",
+      "difficulty": "medium",
+      "topic_tag": "recklessness"
+    }
+  ]
+}

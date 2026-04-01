@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module10_Lesson03.txt",
+  "module_number": 10,
+  "module_title": "Free Movement of Workers",
+  "lesson_number": 3,
+  "lesson_title": "Derogations: Public Service, Public Policy, and Antonissen",
+  "questions": [
+    {
+      "id": "EUL_M10_L03_Q01",
+      "question": "Article 45(3) TFEU permits member states to restrict free movement of workers on grounds of public policy, public security, and public health. Directive 2004/38 codifies these grounds. What is the key principle from Bouchereau [1977] (C-30/77) on public policy grounds?",
+      "options": {
+        "A": "Any criminal conviction automatically justifies deportation on public policy grounds",
+        "B": "A criminal conviction can only constitute a ground for deportation if the personal conduct of the individual represents a genuine, present, and sufficiently serious threat affecting one of the fundamental interests of society — previous convictions as such do not justify deportation",
+        "C": "Public policy allows member states to deport any EU worker who has not worked for more than three months",
+        "D": "Public policy derogations are only available against non-EU nationals, not against EU citizens"
+      },
+      "correct_answer": "B",
+      "explanation": "Bouchereau established (and Directive 2004/38 codifies) the key principle on criminal convictions and public policy: past criminal convictions do not per se constitute grounds for public policy measures. The conviction can only be taken into account insofar as the circumstances giving rise to the conviction evidence a present propensity to act in a manner contrary to public policy. The assessment must be prospective (current risk) not retrospective (past conduct). The threat must be: genuine (real, not speculative); present (current, not historical); and sufficiently serious (affecting a fundamental interest of society). Proportionality requires that less restrictive measures be considered before deportation."
+    },
+    {
+      "id": "EUL_M10_L03_Q02",
+      "question": "Directive 2004/38 Article 28 provides enhanced protection against expulsion for EU citizens with a right of permanent residence (five years). What is this enhanced protection?",
+      "options": {
+        "A": "EU citizens with permanent residence cannot be expelled under any circumstances",
+        "B": "EU citizens who have a right of permanent residence may only be expelled on serious grounds of public policy or public security; those with ten years of residence may only be expelled on imperative grounds of public security (the highest protection); expulsion decisions must consider integration links and family circumstances",
+        "C": "EU citizens with permanent residence have the same protection as nationals — they cannot be expelled to another EU member state",
+        "D": "The enhanced protection applies only to EU citizens who are economically active at the time of the expulsion decision"
+      },
+      "correct_answer": "B",
+      "explanation": "Directive 2004/38 Article 28 creates a tiered protection system: (1) All EU citizens — expulsion measures must comply with proportionality and the personal conduct requirement; (2) EU citizens with permanent residence (five years) — may only be expelled on 'serious' grounds of public policy or public security; (3) EU citizens with ten years of residence in the host state or minors — may only be expelled on 'imperative' grounds of public security (the highest threshold). In PI [2012], the CJEU confirmed that 'imperative grounds of public security' is a very high bar requiring a fundamental threat to the basic interests of society. Factors to consider include: age, health, family and economic situation, social and cultural integration, and ties to the home state."
+    },
+    {
+      "id": "EUL_M10_L03_Q03",
+      "question": "Van Duyn v Home Office [1974] (C-41/74) addressed whether the UK could refuse entry to Ms Van Duyn, a Dutch national, on public policy grounds because she was a member of the Church of Scientology. What did the CJEU hold about membership of an organisation as 'personal conduct'?",
+      "options": {
+        "A": "Membership of any organisation can never constitute personal conduct for Article 45(3) purposes",
+        "B": "Current membership of a body, by reason of the activities of that body, can constitute personal conduct for the purposes of Article 45(3) — but only if the state treats the activities of that body as socially harmful in respect of its own nationals; the UK could rely on Scientology membership even without having banned the organisation",
+        "C": "Only criminal membership of illegal organisations can constitute personal conduct",
+        "D": "Membership can only constitute personal conduct where the individual has taken active part in harmful activities of the organisation"
+      },
+      "correct_answer": "B",
+      "explanation": "Van Duyn held that present membership of an organisation (as opposed to past membership) constitutes personal conduct because it is a voluntary act presently engaged in. However, the CJEU also noted that member states cannot apply a standard to foreign nationals that they do not apply to their own nationals — if UK nationals were free to join Scientology without any restriction, it would be discriminatory to expel EU nationals for doing so. This limits the use of organisational membership as a public policy ground: the state must genuinely regard the organisation as socially harmful (reflected in restrictions on domestic conduct), not use it selectively against foreign nationals. Later cases (Adoui) clarified this consistency requirement."
+    },
+    {
+      "id": "EUL_M10_L03_Q04",
+      "question": "Adoui and Cornuaille v Belgian State [1982] (Joined Cases 115 and 116/81) involved Belgian authorities seeking to expel two French women working as prostitutes in Belgium on public policy grounds. Prostitution was not illegal in Belgium. The CJEU held:",
+      "options": {
+        "A": "That member states can always rely on public policy grounds to expel EU workers from morally objectionable professions",
+        "B": "That a member state cannot rely on public policy to expel EU nationals for conduct that, when engaged in by its own nationals, it does not subject to repressive measures — the consistency principle means Belgium could not rely on prostitution as a public policy ground while tolerating domestic prostitution",
+        "C": "That sex work can never constitute a genuine and effective economic activity for Article 45 purposes",
+        "D": "That the EU prohibits member states from restricting prostitution in any way"
+      },
+      "correct_answer": "B",
+      "explanation": "Adoui and Cornuaille is the critical case on the consistency requirement for public policy derogations. The CJEU held that where a member state does not adopt repressive measures or other genuine and effective measures to combat conduct engaged in by its own nationals, it cannot validly rely on public policy to expel EU nationals for the same conduct. Belgium tolerated domestic prostitution — it could not therefore claim that prostitution by French nationals was contrary to Belgian public policy. This prevents member states from using 'public policy' as a pretext to selectively exclude EU nationals from activities permitted to nationals — a form of disguised discrimination on grounds of nationality."
+    },
+    {
+      "id": "EUL_M10_L03_Q05",
+      "question": "In R v Immigration Appeal Tribunal, ex parte Antonissen [1991] (C-292/89), the CJEU addressed how long an EU national seeking work can remain in a host member state. The Court held:",
+      "options": {
+        "A": "That job-seekers have an absolute and unlimited right of residence until they find employment",
+        "B": "That EU nationals have a right to move to another member state to seek employment and to remain for a reasonable period (the CJEU approved six months as a starting point) to seek work; after that period, they may be required to leave unless they can show they are genuinely seeking employment and have a real chance of being engaged",
+        "C": "That job-seekers have no right to remain in a host member state — only those who have a confirmed job offer can enter",
+        "D": "That job-seekers must have sufficient resources to support themselves before they can claim any right of residence"
+      },
+      "correct_answer": "B",
+      "explanation": "Antonissen established the free movement right of job-seekers — a category not expressly mentioned in the original Treaty or secondary legislation. The CJEU held that Article 45 TFEU necessarily implies a right to move to another member state to look for work (otherwise the right to accept offers of employment would be illusory if one could only enter after having a job). A reasonable period — the Court approved six months as reasonable — must be allowed. After that period, departure may be required unless the person can demonstrate genuine job-seeking and a real prospect of employment. This right is now codified in Article 14(4)(b) of Directive 2004/38."
+    },
+    {
+      "id": "EUL_M10_L03_Q06",
+      "question": "Do job-seekers (persons seeking employment in another member state under Antonissen) have the right to claim social assistance benefits from the host member state?",
+      "options": {
+        "A": "Yes — job-seekers have the same social assistance rights as workers",
+        "B": "Generally no — Directive 2004/38 Article 24(2) expressly permits member states to exclude job-seekers from entitlement to social assistance benefits; job-seekers must have sufficient resources of their own to avoid becoming an 'unreasonable burden' on the host state's social assistance system",
+        "C": "Yes — as long as the job-seeker can demonstrate they are genuinely seeking work",
+        "D": "Yes for the first three months, then no thereafter"
+      },
+      "correct_answer": "B",
+      "explanation": "Directive 2004/38 Article 24(2) expressly provides an exception to the equal treatment principle for social assistance: the host member state is not obliged to confer social assistance entitlement on persons who are not workers, self-employed, students, or self-sufficient — including job-seekers. This was confirmed by the CJEU in Vatsouras and Koupatantze [2009] and subsequently in Dano [2014] and Alimanovic [2015]. The Alimanovic case specifically held that Germany could refuse social assistance to Swedish nationals who had been workers but had been unemployed for more than six months without finding new employment — after that period, their worker status for social assistance purposes ended."
+    },
+    {
+      "id": "EUL_M10_L03_Q07",
+      "question": "The 'public service' exception in Article 45(4) TFEU was extensively litigated in Commission v Belgium [1980] (Case 149/79). Belgium sought to reserve numerous public sector posts exclusively for Belgian nationals. The CJEU held:",
+      "options": {
+        "A": "That Belgium was entitled to reserve all public sector employment for Belgian nationals",
+        "B": "That the public service exception applies only to posts involving exercise of public law powers and responsibility for safeguarding the general interests of the state — Belgium could not rely on Article 45(4) to reserve posts such as nurses, plumbers, and train drivers in public undertakings; those posts must be open to EU nationals",
+        "C": "That any post funded by the Belgian state falls within the public service exception",
+        "D": "That the public service exception applies to all administrative posts within government ministries"
+      },
+      "correct_answer": "B",
+      "explanation": "Commission v Belgium (1980) is the leading case on the Article 45(4) public service exception. The CJEU rejected Belgium's broad interpretation — the exception covers only posts which involve direct or indirect participation in the exercise of powers conferred by public law and duties designed to safeguard the general interests of the state or public authorities, requiring special loyalty to the state. Nurses in public hospitals, plumbers in municipal utilities, train drivers for state railways, and teachers in public schools do not meet this test — they must be open to EU nationals. Only posts at the core of state authority (police, armed forces, judiciary, diplomacy, tax authorities in enforcement roles) can be reserved."
+    },
+    {
+      "id": "EUL_M10_L03_Q08",
+      "question": "The procedural safeguards that must be provided to EU citizens facing deportation on public policy, public security, or public health grounds are set out in Directive 2004/38. Which of the following is a key procedural guarantee?",
+      "options": {
+        "A": "Deportation decisions must be made by an independent judicial body, not by administrative authorities",
+        "B": "The person must be notified in writing of any decision and given the reasons — unless national security prevents this; they must have access to judicial or administrative redress; a right of appeal with suspensory effect in urgent cases; and they must be able to submit a defence in person before the decision is executed (except in cases of urgency)",
+        "C": "Deportation orders must be approved by the European Commission before they can be enforced",
+        "D": "EU nationals can only be deported to their home member state, never to third countries"
+      },
+      "correct_answer": "B",
+      "explanation": "Directive 2004/38 Articles 30–31 provide procedural safeguards: (1) written notification of the decision with full reasons — unless national security prevents disclosure; (2) identification of the courts or administrative authorities to which redress can be made and the time limit for appeal; (3) access to judicial redress procedures; (4) the person must be able to submit their defence in person (except where urgent departure is required); (5) the appeal court or body must be able to review the facts and law, not just legality. These procedural guarantees implement the principle of effective judicial protection (Article 47 Charter) in the deportation context. Violations of these procedural requirements make deportation decisions unlawful."
+    },
+    {
+      "id": "EUL_M10_L03_Q09",
+      "question": "The public health derogation in Article 45(3) TFEU and Directive 2004/38 permits exclusion of EU workers on health grounds. Under Directive 2004/38, which diseases justify restriction of entry?",
+      "options": {
+        "A": "Any serious or communicable disease",
+        "B": "Only diseases with epidemic potential as defined by the WHO, and other infectious diseases or contagious parasitic diseases subject to protection provisions applicable to nationals of the host member state — diseases occurring after a three-month period following first admission cannot justify expulsion",
+        "C": "Only diseases listed by EU secondary legislation — member states cannot add additional diseases",
+        "D": "Any disease that poses a significant risk to others in the host state, as determined by national health authorities"
+      },
+      "correct_answer": "B",
+      "explanation": "Directive 2004/38 Article 29 strictly limits the public health derogation: only diseases with epidemic potential as defined by the WHO, and other infectious or contagious diseases subject to protection provisions applicable to nationals can justify measures restricting free movement. Crucially, diseases occurring after three months following admission to the host state cannot justify expulsion — this three-month rule prevents member states from using health grounds to remove EU citizens who become ill after arrival. This reflects the principle that EU workers should be treated equivalently to nationals — nationals are not expelled when they become ill. The public health ground is rarely used in practice."
+    },
+    {
+      "id": "EUL_M10_L03_Q10",
+      "question": "Which of the following is an example of an obstacle to free movement that may breach Article 45 even in the absence of discrimination?",
+      "options": {
+        "A": "A host state requiring EU workers to register their address — applying equally to all residents",
+        "B": "A home state rule that imposes tax penalties or professional qualification non-recognition on its own nationals who return after working in another member state — deterring nationals from exercising free movement rights even without discriminating against them compared to others",
+        "C": "A requirement for all employers to contribute to national social security",
+        "D": "A national rule setting a national minimum wage applicable to all workers"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 45 is not confined to discrimination — it can prohibit non-discriminatory restrictions that deter the exercise of free movement rights. In Gebhard [1995] and Graf [2000], the CJEU discussed obstacles to free movement that apply without distinction but nonetheless make it less attractive to exercise movement rights. For workers, home state rules that penalise returning nationals (e.g., loss of pension entitlements, refusal to recognise qualifications obtained abroad, tax disadvantages upon return) can breach Article 45 as 'obstacles' even where no discrimination against the worker compared with non-mobile nationals is apparent. The key test is whether the rule is 'liable to hamper or to render less attractive the exercise' of free movement rights."
+    }
+  ],
+  "total_questions": 10
+}

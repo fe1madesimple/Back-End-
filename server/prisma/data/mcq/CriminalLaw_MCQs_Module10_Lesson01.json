@@ -1,0 +1,131 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module10_Lesson01.txt",
+  "module_number": 10,
+  "module_title": "Defences",
+  "lesson_number": 1,
+  "lesson_title": "Duress and Self-Defence",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M10_L01_Q01",
+      "question": "Which Irish case established that duress is not available as a defence to murder?",
+      "options": {
+        "A": "DPP v Gleeson [2019] IESC",
+        "B": "AG v Whelan [1934] IR",
+        "C": "R v Hasan [2005] HOL",
+        "D": "R v Fitzpatrick [1977] CA"
+      },
+      "correct_answer": "B",
+      "explanation": "AG v Whelan [1934] IR is the foundational Irish authority holding that, while duress is a valid defence in principle, it cannot excuse a charge of murder. This remains the law in Ireland."
+    },
+    {
+      "id": "CL_M10_L01_Q02",
+      "question": "The Supreme Court in DPP v Gleeson [2019] IESC adopted which approach to the test for duress?",
+      "options": {
+        "A": "A purely subjective approach based solely on the accused's belief",
+        "B": "A purely objective approach based on the reasonable person standard",
+        "C": "A mixed subjective and objective approach requiring four limbs to be satisfied",
+        "D": "A statutory test under the Criminal Justice Act 1964"
+      },
+      "correct_answer": "C",
+      "explanation": "In DPP v Gleeson [2019] IESC, the Supreme Court adopted a mixed subjective and objective approach. The accused must: (1) genuinely believe there was a threat of immediate death or serious harm; (2) satisfy the reasonable firmness standard; (3) have had no safe avenue of escape; and (4) not have self-induced the threat."
+    },
+    {
+      "id": "CL_M10_L01_Q03",
+      "question": "In DPP v Paul Carew, the Court of Appeal rejected the duress defence primarily because:",
+      "options": {
+        "A": "The accused had committed murder, and duress cannot excuse murder",
+        "B": "The accused had voluntarily joined a criminal gang",
+        "C": "Over two years, the accused had ample opportunity to seek Garda protection but failed to do so",
+        "D": "The threat was not of immediate death but of property damage"
+      },
+      "correct_answer": "C",
+      "explanation": "In Carew, the Court of Appeal held the defence was unavailable because safe avenues of escape had existed over the two-year period of threats — the accused could have reported the matter to the Gardaí. The existence of a safe avenue, even if unused, defeats the third limb of the Gleeson test."
+    },
+    {
+      "id": "CL_M10_L01_Q04",
+      "question": "R v Hasan [2005] HOL curtailed the earlier decision in R v Hudson and Taylor [1971] CA by holding that the threat must be:",
+      "options": {
+        "A": "Directed at a member of the accused's family rather than the accused personally",
+        "B": "Immediate or almost immediate at the time the offence is committed",
+        "C": "From a recognised criminal organisation",
+        "D": "In writing to be admissible as evidence of duress"
+      },
+      "correct_answer": "B",
+      "explanation": "Lord Bingham in R v Hasan [2005] HOL stressed that the threat must be immediate or almost immediate. A remote or theoretical threat is insufficient. This curtailed Hudson and Taylor, where the court had accepted duress even though the threat was not literally operative at the moment of the offence."
+    },
+    {
+      "id": "CL_M10_L01_Q05",
+      "question": "Under the rule in R v Fitzpatrick [1977] CA (confirmed by R v Hasan), duress is unavailable where:",
+      "options": {
+        "A": "The accused committed a strict liability offence",
+        "B": "The accused voluntarily associated with criminals in circumstances where coercion into crime was foreseeable",
+        "C": "The accused is a repeat offender with a prior criminal record",
+        "D": "The accused failed to raise duress at the earliest opportunity at trial"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Fitzpatrick held that voluntary membership of a criminal organisation that might require offending precludes the duress defence. R v Hasan extended this: where an accused voluntarily associates with criminals in circumstances where they could reasonably foresee being coerced into crime, duress is unavailable. The threat is considered self-induced."
+    },
+    {
+      "id": "CL_M10_L01_Q06",
+      "question": "Following Crawford v DPP [2024] IESC 44, which provision now governs all self-defence claims in Ireland — both fatal and non-fatal?",
+      "options": {
+        "A": "The common law self-defence rules as established in AG v Keatley [1954] IR",
+        "B": "Section 39 of the Domestic Violence Act 2018",
+        "C": "Section 18 of the Non-Fatal Offences Against the Person Act 1997",
+        "D": "Section 4 of the Criminal Justice Act 1964"
+      },
+      "correct_answer": "C",
+      "explanation": "In Crawford v DPP [2024] IESC 44, the Supreme Court abolished common law self-defence entirely and held that Section 18 of the Non-Fatal Offences Against the Person Act 1997 now governs all self-defence cases — both fatal and non-fatal. The prior dual regime is gone."
+    },
+    {
+      "id": "CL_M10_L01_Q07",
+      "question": "Under Section 18 NFOATP 1997, self-defence requires that the force used was:",
+      "options": {
+        "A": "Absolutely necessary and proportionate on a purely objective assessment",
+        "B": "Believed by the accused to be immediately necessary, and reasonable in the circumstances as the accused believed them to be",
+        "C": "The minimum force available regardless of the accused's belief",
+        "D": "Pre-authorised by a court order or statutory provision"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 18 requires both a subjective element — the accused believed force was immediately necessary — and an objective element — the amount of force was reasonable in the circumstances as the accused believed them to be. Both elements must be satisfied."
+    },
+    {
+      "id": "CL_M10_L01_Q08",
+      "question": "Where an accused used more force than was objectively reasonable but honestly believed it was necessary for self-defence, the correct verdict under the Dwyer doctrine is:",
+      "options": {
+        "A": "Acquittal — the subjective belief suffices for a complete defence",
+        "B": "Murder — any disproportionate force leads to a murder conviction",
+        "C": "Voluntary manslaughter — the Dwyer doctrine reduces murder to manslaughter in this situation",
+        "D": "Involuntary manslaughter — the accused lacked full intent"
+      },
+      "correct_answer": "C",
+      "explanation": "AG v Dwyer [1972] IR established that where an accused honestly believed force was necessary but used more than was objectively required, the verdict is voluntary manslaughter rather than murder. Crawford v DPP [2024] IESC 44 confirmed that the Dwyer doctrine survived the abolition of common law self-defence."
+    },
+    {
+      "id": "CL_M10_L01_Q09",
+      "question": "In AG v Commane [1975], self-defence was unavailable for the second phase of an attack because:",
+      "options": {
+        "A": "The accused had provoked the initial confrontation",
+        "B": "The victim was already unconscious and no longer capable of attacking, so the threat had ceased",
+        "C": "The accused was a trespasser in the victim's property",
+        "D": "The force used was a firearm, which carries an absolute prohibition"
+      },
+      "correct_answer": "B",
+      "explanation": "In AG v Commane [1975], the accused strangled the victim into unconsciousness and then continued the strangulation. Self-defence was unavailable for the second phase because once the victim was incapable of attacking, the threat had ceased. Force used after the threat ends cannot be defended as self-defence."
+    },
+    {
+      "id": "CL_M10_L01_Q10",
+      "question": "Which case confirmed that there is no duty to retreat in Irish self-defence law?",
+      "options": {
+        "A": "AG v Dwyer [1972] IR",
+        "B": "DPP v Barnes [2007] IECCA",
+        "C": "R v McInnes [1971] CA",
+        "D": "AG v Whelan [1934] IR"
+      },
+      "correct_answer": "C",
+      "explanation": "R v McInnes [1971] CA confirmed that there is no duty to retreat in Irish law. The accused is not required to flee or back down before using force in self-defence. Crawford v DPP [2024] IESC 44 preserved this principle."
+    }
+  ]
+}

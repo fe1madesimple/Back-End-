@@ -1,0 +1,131 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module04_Lesson02.txt",
+  "module_number": 4,
+  "module_title": "Borrowing by the Company",
+  "lesson_number": 2,
+  "lesson_title": "Fixed v Floating Charges and Crystallisation",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "A bank holds a debenture over a company that includes a clause charging all present and future book debts. The clause requires proceeds to be paid into a specified bank account but does NOT prohibit the company from withdrawing from that account in the ordinary course of business. The company enters receivership. Applying Re Keenan Brothers [1985] and Re Holidair [1994], how should the charge over book debts be characterised?",
+      "options": {
+        "A": "Fixed charge — the proceeds are ring-fenced once paid into the specified account",
+        "B": "Floating charge — the absence of a restriction on withdrawal is fundamentally incompatible with a fixed charge over book debts",
+        "C": "Fixed charge — the use of a specified bank account is sufficient to create a fixed charge regardless of withdrawal rights",
+        "D": "The charge type is indeterminate until crystallisation occurs"
+      },
+      "correct_answer": "B",
+      "explanation": "Re Holidair [1994] IR 416 (SC) is directly on point: a charge over book debts where proceeds must be paid into a specified account but withdrawals are NOT restricted is a floating charge. The key distinction from Re Keenan Brothers (fixed charge) is that in Keenan the account was blocked — withdrawals required prior written consent of the bank. National Westminster Bank v Spectrum Plus [2005] 2 AC 680 (HL) confirmed: a fixed charge over book debts requires a segregated account that the company CANNOT draw upon. If the company retains dominion over the proceeds, the charge floats."
+    },
+    {
+      "id": 2,
+      "question": "In Re JD Brian Ltd [2015] IESC, the Supreme Court addressed automatic crystallisation clauses. A floating charge contained a clause triggered 'upon the commencement of winding up.' The company entered creditors' voluntary liquidation. Revenue (preferential creditor) claimed priority. What did the Supreme Court hold?",
+      "options": {
+        "A": "The automatic crystallisation clause was effective — the charge crystallised into a fixed charge simultaneously with winding up, ranking ahead of preferential creditors",
+        "B": "The floating charge was invalid because the automatic crystallisation clause was contrary to public policy",
+        "C": "Because crystallisation occurred at the same instant as winding up commenced, it was treated as still floating at wind-up — preferential creditors ranked ahead under S621",
+        "D": "Preferential creditors always rank ahead of floating charges regardless of crystallisation — S621 is absolute"
+      },
+      "correct_answer": "C",
+      "explanation": "Re JD Brian Ltd [2015] IESC (Laffoy J) held that where an automatic crystallisation clause triggers 'upon' commencement of winding up, crystallisation and winding up occur at the same instant — the charge is treated as still floating at the moment the winding-up regime takes effect. Consequently, preferential creditors (Revenue, employees) rank ahead under S621(7) CA 2014. However — critically — if the charge crystallised BEFORE winding up (on a separate prior event), it becomes fixed and ranks ahead of preferential creditors. The timing of crystallisation relative to the commencement of winding up is everything."
+    },
+    {
+      "id": 3,
+      "question": "Latzur Ltd v Companies Act 2014 [2023] IECA 60 (Collins J) is the leading Irish Court of Appeal authority on crystallisation in a failed examinership. Which sequence of crystallisation events did the court address?",
+      "options": {
+        "A": "Floating charge crystallised on presentation of petition; de-crystallised on court protection; re-crystallised when examiner was discharged after scheme rejected",
+        "B": "Floating charge crystallised on appointment of receiver; de-crystallised for duration of examinership court protection; re-crystallised on termination of failed examinership when receiver was re-appointed",
+        "C": "Floating charge crystallised on commencement of winding up; de-crystallised when examiner was appointed; re-crystallised when examiner was removed by court",
+        "D": "Floating charge could not de-crystallise once crystallised — no authority for re-crystallisation in Irish law"
+      },
+      "correct_answer": "B",
+      "explanation": "In Latzur Ltd [2023] IECA 60, Collins J considered a debenture where the floating charge crystallised on appointment of a receiver. Following Re Holidair [1994], the charge de-crystallised when examinership commenced (court protection prevents the charge remaining fixed during the protection period). When the examinership failed and the receiver was re-appointed, the charge re-crystallised. The significance was that Revenue's preferential debts had accrued during the period when the charge was floating — giving Revenue priority from those assets under S621(7) CA 2014."
+    },
+    {
+      "id": 4,
+      "question": "A lender holds a fixed charge over a company's land and buildings, and a floating charge over the remainder of the company's assets. The company is wound up insolvent. Revenue has substantial PAYE and VAT arrears. Which correctly states the order of priority?",
+      "options": {
+        "A": "Fixed charge holder → Floating charge holder → Preferential creditors → Unsecured creditors",
+        "B": "Fixed charge holder (from fixed charge assets) → Preferential creditors → Floating charge holder → Unsecured creditors",
+        "C": "Preferential creditors → Fixed charge holder → Floating charge holder → Unsecured creditors",
+        "D": "Fixed charge holder ranks pari passu with preferential creditors over all assets"
+      },
+      "correct_answer": "B",
+      "explanation": "Under S621(7) CA 2014, preferential creditors (Revenue for PAYE/VAT, employees for wages/holiday pay) rank AHEAD of floating charge holders in a winding up. Fixed charge holders, however, rank ahead of preferential creditors from fixed charge assets (as their security attaches to specific assets). The correct order: from fixed charge assets — fixed charge holder first; from floating charge assets — preferential creditors first, then floating charge holder, then unsecured creditors. This is precisely why lenders fight so hard to characterise charges as fixed (Re Keenan Brothers; Spectrum Plus) — the difference in priority can be the difference between recovery and loss."
+    },
+    {
+      "id": 5,
+      "question": "Under S597 CA 2014, a floating charge created within what period before commencement of winding up is automatically void — and what is the principal exception to this invalidity?",
+      "options": {
+        "A": "Void if created within 6 months; exception where new money was advanced contemporaneously with creation",
+        "B": "Void if created within 12 months; exception where the company was solvent immediately after creation, or where fresh money/money's worth was advanced at the time of creation",
+        "C": "Void if created within 2 years for connected persons, 12 months otherwise; no exceptions apply",
+        "D": "Void if created within 6 months regardless of solvency or consideration — no exceptions"
+      },
+      "correct_answer": "B",
+      "explanation": "S597 CA 2014 provides that a floating charge created within 12 months before commencement of winding up is void UNLESS: (a) the company was solvent immediately after the charge was created; or (b) the charge was created in consideration of money paid, goods/services supplied to the company at the time of or after creation (i.e., fresh consideration was given — the 'fresh money' exception). The purpose of S597 is to prevent directors of failing companies from granting floating charges to friendly creditors at the expense of unsecured creditors by converting pre-existing unsecured debt into secured debt."
+    },
+    {
+      "id": 6,
+      "question": "Re Spectrum Plus [2005] 2 AC 680 (HL) overruled key reasoning from Siebe Gorman & Co v Barclays Bank [1979]. What aspect of Siebe Gorman did the House of Lords overrule, and what is the significance for fixed charges over book debts?",
+      "options": {
+        "A": "Spectrum Plus overruled Siebe Gorman entirely, holding that no fixed charge can exist over book debts as a matter of law",
+        "B": "Spectrum Plus overruled the reasoning that a charge over book debts could be fixed even where the company could freely use the collected proceeds — the HL held that freedom to use proceeds is fundamentally inconsistent with a fixed charge",
+        "C": "Spectrum Plus reversed Siebe Gorman on whether book debt charges require registration under the Companies Acts",
+        "D": "Spectrum Plus reversed Siebe Gorman on whether proceeds of sale clauses require registration as floating charges"
+      },
+      "correct_answer": "B",
+      "explanation": "In Siebe Gorman [1979], Slade J had held that a charge over book debts where collected sums were paid into a bank account (but withdrawals were not blocked) could still be a fixed charge. The House of Lords in Spectrum Plus [2005] expressly overruled this reasoning: Lord Hope confirmed that if a company can draw on the account in the ordinary course of business, there is no fixed charge — the company retains dominion over the asset, which is the hallmark of a floating charge. A fixed charge requires the chargee to have genuine control over the asset — the collected proceeds must be blocked from use by the chargor. This is consistent with Re Holidair [1994] in Ireland."
+    },
+    {
+      "id": 7,
+      "question": "A debenture creates a floating charge over a company's undertaking. It contains a negative pledge clause prohibiting creation of any subsequent charge ranking in priority. The company subsequently creates a fixed charge over its machinery in favour of a new lender who discovered the negative pledge clause through CRO due diligence. What is the priority position between the two charge holders?",
+      "options": {
+        "A": "The fixed charge takes priority because it is a fixed charge and always outranks floating charges regardless of knowledge",
+        "B": "The floating charge holder has priority because the new lender had actual or constructive notice of the negative pledge and is bound by it",
+        "C": "The fixed charge takes priority because priority under S412 is determined by date of registration, not notice",
+        "D": "The negative pledge clause is automatically void — it cannot restrict the company's power to grant security"
+      },
+      "correct_answer": "B",
+      "explanation": "A negative pledge clause in a floating charge debenture is effective against subsequent chargees who have NOTICE (actual or constructive) of the clause. Since the negative pledge was registered at the CRO, the new fixed charge holder is deemed to have constructive notice. Because the new lender created a charge in breach of the negative pledge knowing of its existence, the floating charge holder retains priority: Re Old Bushmills Distillery is authority that registered negative pledge clauses bind subsequent chargees with notice. Without notice, the subsequent fixed charge would take priority (as a fixed charge outranks a floating charge for its specific asset), but knowledge of the negative pledge prevents this."
+    },
+    {
+      "id": 8,
+      "question": "The three characteristics of a floating charge were classically identified in Illingworth v Houldsworth [1904]. A creditor examines a debenture over a company's fleet of delivery vehicles — which changes constantly as vehicles are bought and sold in the ordinary course. Applying Illingworth, which characterisation is most accurate?",
+      "options": {
+        "A": "Fixed charge — vehicles are identifiable chattels that can be individually specified in a schedule",
+        "B": "Floating charge — the class constantly changes in the ordinary course of business and the company deals freely with the vehicles, satisfying all three Illingworth characteristics",
+        "C": "Fixed charge — if each vehicle is individually listed in a schedule attached to the debenture at creation",
+        "D": "The distinction is irrelevant because both charge types rank identically against preferential creditors in a liquidation"
+      },
+      "correct_answer": "B",
+      "explanation": "Illingworth v Houldsworth [1904] identifies three characteristics: (1) charge on a class of assets, present and future; (2) the class changes from time to time in the ordinary course of business; (3) the company can deal with the assets in the ordinary course until crystallisation. The delivery vehicle fleet satisfies all three — it is a class, it constantly changes, and the company buys and sells vehicles without consent. Even if vehicles are individually scheduled, if the company can freely deal with them, courts look to substance over form: Smith v Bridgend County Council [2001] — the essence of a floating charge is the chargor's right to withdraw assets from the security in the ordinary course of business."
+    },
+    {
+      "id": 9,
+      "question": "Which of the following events does NOT automatically cause crystallisation of a floating charge under Irish law?",
+      "options": {
+        "A": "Commencement of a members' voluntary liquidation",
+        "B": "Appointment of a receiver by the floating charge holder",
+        "C": "Presentation of a petition for examinership where no receiver has been appointed",
+        "D": "Commencement of a creditors' voluntary liquidation"
+      },
+      "correct_answer": "C",
+      "explanation": "Crystallisation occurs automatically on: (1) appointment of a receiver; (2) commencement of winding up (voluntary or compulsory); (3) permanent cessation of business; and (4) on triggering of express/automatic crystallisation clauses. The mere PRESENTATION of a petition for examinership does NOT automatically crystallise a floating charge. However, once a receiver is appointed (which does crystallise), the company has 3 days under S512 CA 2014 to petition for examinership, and if court protection is granted, the charge de-crystallises during the protection period (Re Holidair). Court protection prevents crystallisation from remaining effective, but the petition alone is not a crystallisation trigger."
+    },
+    {
+      "id": 10,
+      "question": "Which statement most accurately captures the combined principle from Illingworth v Houldsworth [1904] and Smith v Bridgend County Borough Council [2001] 2 AC 336 (HL) regarding the essential character of a floating charge?",
+      "options": {
+        "A": "A floating charge is defined solely by its creation date — if not attached to a specific asset at creation, it must be floating",
+        "B": "The essence of a floating charge is that the chargor retains the right to withdraw assets from the security in the ordinary course of business, notwithstanding the existence of the charge",
+        "C": "A charge is floating only if the chargor is insolvent at the date of creation",
+        "D": "A floating charge becomes fixed automatically after 12 months under S597 CA 2014"
+      },
+      "correct_answer": "B",
+      "explanation": "Smith v Bridgend County Council [2001] per Lord Millett: 'The essence of a floating charge is that it is a charge on a fluctuating body of assets which the chargor has a right to withdraw from the security despite the existence of a charge.' This is the fundamental distinction from a fixed charge, where the chargor CANNOT deal with the asset without the chargee's consent. The right of the chargor to use, deal with, and withdraw assets from the charged pool is what makes a charge float — irrespective of how the parties label it in the document. Courts look to substance over form, as confirmed in Spectrum Plus [2005]."
+    }
+  ]
+}

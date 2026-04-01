@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "EULaw_ElevenLabs_Module04_Lesson02.txt",
+  "module_number": 4,
+  "module_title": "General Principles of EU Law",
+  "lesson_number": 2,
+  "lesson_title": "Fundamental Rights and Non-Discrimination",
+  "questions": [
+    {
+      "id": "EUL_M04_L02_Q01",
+      "question": "Before the Charter of Fundamental Rights became legally binding, how did the Court of Justice protect fundamental rights in EU law?",
+      "options": {
+        "A": "By applying the ECHR directly as part of EU law",
+        "B": "By developing fundamental rights as general principles of EU law drawn from the ECHR and national constitutional traditions",
+        "C": "By deferring to national constitutional courts on all fundamental rights questions",
+        "D": "By refusing jurisdiction in cases raising fundamental rights arguments"
+      },
+      "correct_answer": "B",
+      "explanation": "The Court of Justice developed fundamental rights protection from the 1960s-70s as unwritten general principles of EU law (Stauder v Ulm [1969]; Internationale Handelsgesellschaft [1970]; Nold [1974]). The sources were the ECHR (as a source of inspiration) and national constitutional traditions common to member states. This case-law basis preceded and supplemented the Charter."
+    },
+    {
+      "id": "EUL_M04_L02_Q02",
+      "question": "In Internationale Handelsgesellschaft [1970], the Court of Justice held that:",
+      "options": {
+        "A": "National constitutional rights take precedence over EU law where the two conflict",
+        "B": "The validity of EU law can be assessed only in light of EU law itself — including fundamental rights as general principles — not in the light of national constitutional provisions",
+        "C": "The ECHR directly overrides inconsistent EU secondary legislation",
+        "D": "Member states may refuse to apply EU law that violates their national fundamental rights protections"
+      },
+      "correct_answer": "B",
+      "explanation": "In Internationale Handelsgesellschaft (C-11/70), the Court held that fundamental rights form an integral part of the general principles of EU law — protecting them is the responsibility of the Court of Justice. Crucially, the validity of EU measures is assessed by reference to EU law alone, not national constitutional law. This preserved EU law's supremacy and autonomy while incorporating rights protection."
+    },
+    {
+      "id": "EUL_M04_L02_Q03",
+      "question": "The Solange jurisprudence of the German Federal Constitutional Court (Bundesverfassungsgericht) established that:",
+      "options": {
+        "A": "EU law is always supreme over the German Basic Law",
+        "B": "The BVerfG would review EU law for compatibility with fundamental rights 'so long as' EU law did not provide equivalent protection — softened in Solange II when the Court recognised EU fundamental rights protection had developed sufficiently",
+        "C": "The BVerfG has final jurisdiction over all EU law questions in Germany",
+        "D": "The ECHR automatically prevails over conflicting EU secondary legislation in Germany"
+      },
+      "correct_answer": "B",
+      "explanation": "Solange I (1974): the BVerfG held it would review EU law against the Basic Law 'as long as' (solange) EU law lacked equivalent fundamental rights protection. Solange II (1986): having recognised the development of CJEU fundamental rights jurisprudence, the BVerfG suspended constitutional review of EU acts 'as long as' the CJEU continues to provide adequate protection. This is the constitutional dialogue between national and EU courts."
+    },
+    {
+      "id": "EUL_M04_L02_Q04",
+      "question": "The Charter of Fundamental Rights is structured into titles covering:",
+      "options": {
+        "A": "Civil rights, political rights, and economic rights only",
+        "B": "Dignity, Freedoms, Equality, Solidarity, Citizens' Rights, and Justice",
+        "C": "Rights of EU citizens, rights of residents, and rights of third-country nationals",
+        "D": "Fundamental rights, procedural guarantees, and emergency derogations"
+      },
+      "correct_answer": "B",
+      "explanation": "The Charter is organised into six substantive Titles: Title I (Dignity), Title II (Freedoms), Title III (Equality), Title IV (Solidarity), Title V (Citizens' Rights), and Title VI (Justice). These are followed by Title VII on General Provisions. This structure reflects the comprehensive nature of the rights catalogue, extending from personal dignity to social and economic rights."
+    },
+    {
+      "id": "EUL_M04_L02_Q05",
+      "question": "Article 52(3) of the Charter provides a relationship rule with the ECHR. It states:",
+      "options": {
+        "A": "The Charter automatically incorporates all ECHR rights with identical scope",
+        "B": "In so far as the Charter contains rights corresponding to rights guaranteed by the ECHR, the meaning and scope of those rights shall be the same as laid down by the ECHR — but EU law may provide more extensive protection",
+        "C": "The ECHR takes precedence over the Charter whenever the two apply to the same situation",
+        "D": "National courts must refer rights questions to the ECtHR before applying the Charter"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 52(3) Charter: where Charter rights correspond to ECHR rights, their meaning and scope shall be the same as those guaranteed under the ECHR. However, the Charter may provide higher protection (a 'floor' from ECHR, with EU law free to go further). This creates coherence between the two systems while permitting EU law to exceed ECHR standards."
+    },
+    {
+      "id": "EUL_M04_L02_Q06",
+      "question": "The general principle of non-discrimination on grounds of nationality in EU law is found in:",
+      "options": {
+        "A": "Article 19 TFEU only",
+        "B": "Article 18 TFEU, and as a general principle underlying specific free movement provisions",
+        "C": "The Charter of Fundamental Rights exclusively",
+        "D": "A standalone EU equality Directive with uniform application across all fields"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 18 TFEU prohibits discrimination on grounds of nationality within the scope of application of the Treaties. As a general principle, it is the foundation of the specific free movement provisions (Articles 45, 49, 56 TFEU). The Court has developed its application across many contexts, including equal access to education, social benefits, and cross-border services."
+    },
+    {
+      "id": "EUL_M04_L02_Q07",
+      "question": "In Mangold v Helm [2005] (C-144/04), the Court of Justice held that the principle of non-discrimination on grounds of age:",
+      "options": {
+        "A": "Is established solely by Directive 2000/78 and applies only from its implementation date",
+        "B": "Is a general principle of EU law, meaning it could be applied by national courts before Directive 2000/78's implementation deadline had expired",
+        "C": "Does not apply to employment contracts of limited duration for older workers",
+        "D": "Requires strict quotas for older workers in all EU workplaces"
+      },
+      "correct_answer": "B",
+      "explanation": "Mangold was highly controversial: the Court held that the non-discrimination principle on grounds of age was a general principle of EU law (not solely a creation of Directive 2000/78), enabling a national court to disapply conflicting national law even before the Directive's transposition deadline had expired. This 'general principle' approach was criticised as judicial legislation."
+    },
+    {
+      "id": "EUL_M04_L02_Q08",
+      "question": "The principle of effective judicial protection (now in Article 47 Charter) requires member states to:",
+      "options": {
+        "A": "Provide identical procedural rules for EU law claims and national law claims in all circumstances",
+        "B": "Ensure that national procedural rules do not make the enforcement of EU law rights practically impossible or excessively difficult (effectiveness principle)",
+        "C": "Establish specialist courts for the adjudication of EU law claims",
+        "D": "Allow individuals to bring claims directly before the Court of Justice for breaches of EU law by their government"
+      },
+      "correct_answer": "B",
+      "explanation": "The principle of effective judicial protection (developed from cases such as Johnston v Chief Constable [1986]) requires that national procedural autonomy is subject to the principle of effectiveness — procedures must not make exercise of EU rights virtually impossible or excessively difficult. Article 47 Charter now expressly guarantees the right to an effective remedy before a tribunal."
+    },
+    {
+      "id": "EUL_M04_L02_Q09",
+      "question": "The right to be heard as a general principle of EU law means:",
+      "options": {
+        "A": "Any EU citizen has the right to address the European Parliament before any legislative act is adopted",
+        "B": "Before any adverse decision is taken affecting an individual, that individual must be given an opportunity to make known their views — applied particularly in Commission competition decisions and immigration cases",
+        "C": "The Commission must hold public consultations before all legislative proposals",
+        "D": "National courts must hold oral hearings in all cases involving EU law"
+      },
+      "correct_answer": "B",
+      "explanation": "The right to be heard (audi alteram partem — hear the other side) is a fundamental procedural right, part of the right to good administration under Article 41 of the Charter. The Court of Justice has applied it across many areas: competition investigations, customs proceedings, immigration cases, and anti-dumping procedures. Failure to observe it may invalidate the resulting decision."
+    },
+    {
+      "id": "EUL_M04_L02_Q10",
+      "question": "The principle of ne bis in idem (double jeopardy) in EU law, as recognised in Article 50 of the Charter:",
+      "options": {
+        "A": "Prevents member states from prosecuting EU citizens who have already been acquitted in another member state for the same acts",
+        "B": "Prevents the Commission from imposing a second competition fine on an undertaking that has already been fined by a national authority for the same conduct",
+        "C": "Both A and B — the principle applies in criminal law (Schengen Convention context) and competition enforcement",
+        "D": "Prevents national courts from reopening cases that have been finally decided in the same member state"
+      },
+      "correct_answer": "C",
+      "explanation": "Article 50 Charter and Article 54 Schengen Convention establish ne bis in idem across EU/Schengen member states: no one may be tried or punished twice for the same acts after final acquittal or conviction. In competition law, the parallel principle prevents the Commission from punishing conduct for which an undertaking has already been penalised by a national authority for the same anti-competitive effects (Aalborg Portland)."
+    }
+  ],
+  "total_questions": 10
+}

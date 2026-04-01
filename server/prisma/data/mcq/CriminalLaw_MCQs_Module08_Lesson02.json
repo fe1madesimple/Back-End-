@@ -1,0 +1,131 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module08_Lesson02.txt",
+  "module_number": 8,
+  "module_title": "Secondary Participation and Common Enterprise",
+  "lesson_number": 2,
+  "lesson_title": "Common Design, Joint Enterprise, and Withdrawal",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M08_L02_Q01",
+      "question": "The core principle of common design is that where two or more persons agree to commit a crime, each is liable for:",
+      "options": {
+        "A": "Only the specific acts they personally performed",
+        "B": "All acts done in furtherance of the common design",
+        "C": "Acts done in furtherance of the common design, but only if they were present at the scene",
+        "D": "The acts of the principal offender, but only where murder results"
+      },
+      "correct_answer": "B",
+      "explanation": "The core principle of common design is that each party is liable for all acts done in furtherance of the common design. You do not need to be the person who actually committed the act. Confirmed in People (DPP) v Cumberton [2018] IECA."
+    },
+    {
+      "id": "CL_M08_L02_Q02",
+      "question": "In DPP v Murray [2012] IESC, the accused participated in an armed robbery during which his co-accused murdered a Garda. The Supreme Court held that the accused was guilty of:",
+      "options": {
+        "A": "Murder, because he participated in the armed robbery",
+        "B": "Nothing, because the murder was committed by another person",
+        "C": "Manslaughter, because the murder was outside the scope of the common design but his participation in the robbery contributed to the death",
+        "D": "Conspiracy to murder, because he should have foreseen the risk of death"
+      },
+      "correct_answer": "C",
+      "explanation": "In DPP v Murray [2012] IESC, the Supreme Court held that the murder was outside the scope of the common design — there was no agreement to kill. The accused was convicted of manslaughter, not murder, because his unlawful participation in the robbery contributed to the death even though he did not foresee or agree to the killing."
+    },
+    {
+      "id": "CL_M08_L02_Q03",
+      "question": "In DPP v Eccles [2013] IECCA, the accused was found guilty of murder arising from a common design, distinguishing it from Murray. The key distinguishing factor was:",
+      "options": {
+        "A": "The accused was physically present when the murder occurred",
+        "B": "The common design expressly included an agreement to use violent action against any Garda who arrived",
+        "C": "The accused had a prior conviction for violence",
+        "D": "The accused had provided the weapon used in the killing"
+      },
+      "correct_answer": "B",
+      "explanation": "In DPP v Eccles [2013] IECCA, the common design included an agreement that any Garda who arrived on the scene would be 'taken care of.' This broader agreement extended the scope of the common design to include potentially fatal action against a Garda. The murder was therefore within the scope of the common design, unlike in Murray where no such agreement existed."
+    },
+    {
+      "id": "CL_M08_L02_Q04",
+      "question": "In AG v Ryan [1965] IR, knowledge that a co-accused had a weapon gave rise to what principle in the context of common design?",
+      "options": {
+        "A": "The accused was automatically guilty of murder if the weapon was used",
+        "B": "A tacit agreement — an implied extension of the common design — to include use of that weapon",
+        "C": "The accused had a duty to disarm the co-accused or withdraw from the common design",
+        "D": "The accused's liability was limited to the lesser offence of possession of a weapon"
+      },
+      "correct_answer": "B",
+      "explanation": "In AG v Ryan [1965] IR, the court held that where one party to a common design is aware that another member has a weapon, this can give rise to a tacit agreement — a silent, implied extension of the common design — to include use of that weapon. Knowledge of the weapon can therefore extend the scope of the common design."
+    },
+    {
+      "id": "CL_M08_L02_Q05",
+      "question": "R v Jogee [2016] UKSC changed the law on joint enterprise in England and Wales by holding that liability requires intention, not mere foresight. What is the position in Irish law?",
+      "options": {
+        "A": "Jogee is binding on Irish courts and foresight alone is no longer sufficient",
+        "B": "Jogee is persuasive authority only — Irish law retains a foreseeability standard as confirmed in Murray, Eccles, and Cumberton",
+        "C": "Jogee has been expressly rejected by the Irish Supreme Court",
+        "D": "Jogee only applies in murder cases in Ireland"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Jogee [2016] UKSC is not binding in Ireland. Irish law retains the foreseeability standard, as confirmed in DPP v Murray [2012] IESC, DPP v Eccles [2013] IECCA, and People (DPP) v Cumberton [2018] IECA. Jogee should be flagged in an exam as an influential UK development, but candidates must be clear that Irish law applies the foreseeability test."
+    },
+    {
+      "id": "CL_M08_L02_Q06",
+      "question": "The leading Irish authority on withdrawal from a common design is People (DPP) v Cleary [2005] IECCA. What does this case require for effective withdrawal?",
+      "options": {
+        "A": "Physically leaving the scene before the offence is committed",
+        "B": "Privately forming the intention to withdraw and ceasing all active participation",
+        "C": "Communicating withdrawal to the other participants clearly, unequivocally, and in time to allow them to abandon the plan",
+        "D": "Notifying the Gardaí of the planned offence"
+      },
+      "correct_answer": "C",
+      "explanation": "People (DPP) v Cleary [2005] IECCA established the Irish test: to effect a valid withdrawal, the accused must communicate their withdrawal to the other participants clearly and unequivocally, and in time to allow them to abandon the plan. Internal change of heart or walking away without communication is insufficient."
+    },
+    {
+      "id": "CL_M08_L02_Q07",
+      "question": "The four-part withdrawal framework from R v Gauthier [2013] (Canadian Supreme Court), applied in Irish courts by analogy, requires which of the following?",
+      "options": {
+        "A": "Written notice of withdrawal; return of any money received; surrender to authorities; physical departure from the scene",
+        "B": "Unequivocal communication; timely neutralisation of prior assistance; cancellation of the effects of prior participation; in some circumstances, notification of authorities",
+        "C": "Communication of withdrawal; apology to co-conspirators; payment of compensation; notification of the victim",
+        "D": "Verbal withdrawal; physical departure from the scene; written confirmation; co-conspirator agreement to withdrawal"
+      },
+      "correct_answer": "B",
+      "explanation": "R v Gauthier [2013] sets out four elements: (1) communicate intention to withdraw clearly and unequivocally; (2) take timely steps to neutralise prior assistance; (3) do everything possible to cancel out the effects of prior participation (e.g. attempt to reclaim a weapon provided); (4) in some circumstances, notify police or other authorities. Irish courts apply this framework alongside People (DPP) v Cleary."
+    },
+    {
+      "id": "CL_M08_L02_Q08",
+      "question": "Which of the following statements about the timing of withdrawal is correct?",
+      "options": {
+        "A": "The timing of withdrawal is irrelevant — only the fact of withdrawal matters",
+        "B": "Withdrawal is easier to establish the closer it occurs to the commission of the offence",
+        "C": "The closer to the commission of the offence, the more active steps are required for effective withdrawal",
+        "D": "Withdrawal is only effective if it occurs more than 24 hours before the offence"
+      },
+      "correct_answer": "C",
+      "explanation": "The closer to the commission of the offence, the more is required to effect a valid withdrawal. Withdrawal attempted at the last moment — when a plan is in motion — requires much more active steps than withdrawal hours or days before. Passive withdrawal — simply absenting oneself — is almost never sufficient, particularly where the offence is imminent."
+    },
+    {
+      "id": "CL_M08_L02_Q09",
+      "question": "In DPP v Doohan [2014] IECA, the accused's murder conviction was reduced to manslaughter because:",
+      "options": {
+        "A": "The accused had successfully withdrawn from the common design before the killing",
+        "B": "The common design was only to cause serious injury, not to kill, so the mens rea for murder was not established within the scope of what was agreed",
+        "C": "The accused was not present when the killing occurred",
+        "D": "The accused had no knowledge that any weapon was present"
+      },
+      "correct_answer": "B",
+      "explanation": "In DPP v Doohan [2014] IECA, the common design was to cause serious injury only — there was no agreement to kill. The court held that because the mens rea for murder was not established within the scope of what was agreed, the conviction was reduced to manslaughter. The scope of the common design determines the outer limits of each participant's liability."
+    },
+    {
+      "id": "CL_M08_L02_Q10",
+      "question": "A member of a common design who was not present at the scene when the substantive offence was committed can still be liable for that offence. What is the basis for this liability?",
+      "options": {
+        "A": "They are automatically liable as a matter of strict liability once they entered the common design",
+        "B": "They are liable because the offence was an act done in furtherance of the common design, which they agreed to and which was within the scope of what was foreseen",
+        "C": "They are liable only if they provided a weapon or transport to the principal",
+        "D": "They are liable only if the court determines that their absence was deliberate"
+      },
+      "correct_answer": "B",
+      "explanation": "Liability in common design does not require physical presence at the scene. Each party to a common design is liable for all acts done in furtherance of the agreed purpose, provided those acts fall within the scope of what was agreed or was reasonably foreseeable. Absence from the scene does not break the chain of liability if the offence was within the scope of the common design."
+    }
+  ]
+}

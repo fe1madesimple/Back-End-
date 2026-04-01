@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module16_Lesson02.txt",
+  "module_number": 16,
+  "module_title": "Concurrent Wrongdoers, Vicarious Liability, and Medical Negligence",
+  "lesson_number": 2,
+  "lesson_title": "Vicarious Liability: Employers and Independent Contractors",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M16_L02_Q01",
+      "question": "What is vicarious liability and what is its underlying policy rationale?",
+      "options": {
+        "A": "Strict liability imposed on manufacturers for defective products sold to consumers",
+        "B": "The principle by which one person is held liable for the torts of another on the basis of their relationship — typically employer and employee — reflecting that the employer creates the enterprise, benefits from the employee's work, and is better placed financially to bear the loss",
+        "C": "Liability imposed on public authorities for the negligent exercise of statutory powers",
+        "D": "Liability arising from a non-delegable duty where the employer cannot escape by using an independent contractor"
+      },
+      "correct_answer": "B",
+      "explanation": "Vicarious liability is the principle by which one person — typically an employer — is held liable for the torts of another — typically an employee — on the basis of their relationship. The policy rationale encompasses: the employer creates the enterprise and the risks that come with it; the employer benefits financially from the employee's work; the employer is typically better placed to bear the loss through insurance; and placing liability on the employer encourages careful management and supervision of employees."
+    },
+    {
+      "id": "TL_M16_L02_Q02",
+      "question": "What are the two essential elements that must be established for vicarious liability to arise?",
+      "options": {
+        "A": "The defendant is a corporate body; and the tortfeasor was acting in good faith",
+        "B": "The relationship between the defendant and the tortfeasor — typically employer and employee; and the tort was committed in the course of that employment",
+        "C": "The defendant was insured; and the tortfeasor had authority to commit the act",
+        "D": "The defendant benefited financially; and the tortfeasor acted deliberately"
+      },
+      "correct_answer": "B",
+      "explanation": "Two essential elements must be established: (1) the appropriate relationship between the defendant and the tortfeasor — typically the relationship of employer and employee; and (2) the tort must have been committed in the course of the employment. If either element is absent — for example, the tortfeasor is an independent contractor, or the tort was committed wholly outside the course of employment — vicarious liability cannot be imposed."
+    },
+    {
+      "id": "TL_M16_L02_Q03",
+      "question": "Why does vicarious liability generally NOT apply to independent contractors?",
+      "options": {
+        "A": "Because independent contractors are never negligent in the performance of their work",
+        "B": "Because an independent contractor is not an employee — they are their own business, not integrated into the employer's enterprise in the manner that justifies imposing liability on the engaging party",
+        "C": "Because Irish statute expressly exempts all independent contractors from vicarious liability",
+        "D": "Because independent contractors always carry their own public liability insurance"
+      },
+      "correct_answer": "B",
+      "explanation": "Vicarious liability generally does not extend to independent contractors because they are distinct legal and commercial entities — not employees. The policy reasons that justify imposing vicarious liability on an employer (enterprise creation, financial benefit, better-placed to bear loss) do not apply in the same way to a person who simply engages a contractor for a specific task. The contractor runs their own business, takes their own financial risks, and controls how they perform their work."
+    },
+    {
+      "id": "TL_M16_L02_Q04",
+      "question": "What is the classic formulation of the test for distinguishing an employee from an independent contractor?",
+      "options": {
+        "A": "The 'economic reality' test — asking whether the worker was economically dependent on the engaging party",
+        "B": "The 'control test' — an employee is one subject to the employer's control not only as to what they do but how they do it",
+        "C": "The 'integration test' — asking whether the worker was fully integrated into the organisation's structure",
+        "D": "The 'enterprise test' — asking whether the employer created the enterprise in which the worker was engaged"
+      },
+      "correct_answer": "B",
+      "explanation": "The classic formulation is the control test: an employee is one who is subject to the control of the employer, not only as to what they do, but as to how they do it. This test reflects the traditional position that an employer has authority over the manner of work of their employee. However, the control test alone has been recognised as insufficient in the modern workplace — many professional employees exercise considerable independent judgment — and the courts now apply a broader multi-factor analysis."
+    },
+    {
+      "id": "TL_M16_L02_Q05",
+      "question": "What factors beyond control does the multi-factor test consider when determining employee versus independent contractor status?",
+      "options": {
+        "A": "The duration of the working relationship, the geographic location of work, and the industry sector",
+        "B": "The degree of control; whether the worker provides their own tools and equipment; whether the worker takes financial risk; whether the worker can work for others simultaneously; how the parties describe their relationship; and the level of integration into the organisation",
+        "C": "Whether the worker has a registered business; whether they pay their own tax; and whether they have a business card",
+        "D": "The hourly rate of pay; the worker's professional qualifications; and the length of the engagement"
+      },
+      "correct_answer": "B",
+      "explanation": "Beyond control, the multi-factor test considers: whether the worker provides their own equipment and tools; whether the worker bears their own financial risk; whether they can work for multiple clients simultaneously; how the parties describe the relationship in their contract; and the degree of integration of the worker into the employing organisation. No single factor is determinative — the court takes a holistic view of the economic reality of the relationship."
+    },
+    {
+      "id": "TL_M16_L02_Q06",
+      "question": "In Tierney v An Post (Irish High Court), what approach did the court apply to determine the worker's status?",
+      "options": {
+        "A": "The court applied the control test alone, as the parties' contract expressly described the worker as an independent contractor",
+        "B": "The court applied the multi-factor economic reality test to determine whether a delivery worker was an employee or independent contractor, looking at the substance of the relationship rather than the contractual label",
+        "C": "The court applied the integration test and held the worker was an employee because they were fully integrated into An Post's operational structure",
+        "D": "The court held that the contractual description of the relationship was conclusive and the worker was therefore an independent contractor"
+      },
+      "correct_answer": "B",
+      "explanation": "In Tierney v An Post, the Irish High Court applied the multi-factor economic reality test to determine whether the delivery worker was an employee or an independent contractor. The court looked at the substance of the working relationship — applying the various factors including control, financial risk, integration, and the ability to work for others — rather than simply accepting the contractual label given by the parties. This reflects the principle that the courts will look behind the formal description to the economic reality."
+    },
+    {
+      "id": "TL_M16_L02_Q07",
+      "question": "In Lister v Hesley Hall Ltd [2001] UKHL 22, the House of Lords reformulated the test for whether a tort was committed 'in the course of employment'. What is that test?",
+      "options": {
+        "A": "Whether the employee's act was expressly authorised by the employer",
+        "B": "Whether there was a sufficiently close connection between the employment and the wrongful act that it would be fair and just to hold the employer vicariously liable",
+        "C": "Whether the employee was acting in the geographical area of their employment at the time of the tort",
+        "D": "Whether the employer had expressly prohibited the conduct in question — if so, it was outside the course of employment"
+      },
+      "correct_answer": "B",
+      "explanation": "In Lister v Hesley Hall [2001], the House of Lords reformulated the course of employment test. The question is whether there was a sufficiently close connection between the nature of the employment and the wrongful act that it would be fair and just to hold the employer vicariously liable. This replaced the older approach of asking whether the act was authorised or was an unauthorised way of doing an authorised act — a test that struggled with cases of deliberate wrongdoing."
+    },
+    {
+      "id": "TL_M16_L02_Q08",
+      "question": "Why was Lister v Hesley Hall [2001] significant in relation to deliberate wrongdoing by employees?",
+      "options": {
+        "A": "It held that deliberate wrongdoing can never fall within the course of employment, confirming the pre-existing rule",
+        "B": "It held that where the nature of the employment placed the employee in a position of authority and trust that created the close connection enabling the wrongdoing, the employer could be vicariously liable even for deliberately tortious acts",
+        "C": "It held that only criminal acts by employees fall within vicarious liability — civil wrongs do not",
+        "D": "It imposed strict liability on schools and residential care institutions for all acts of their employees"
+      },
+      "correct_answer": "B",
+      "explanation": "Lister v Hesley Hall was significant because it extended vicarious liability to cases of deliberate wrongdoing — specifically, sexual abuse of children in care by a residential warden. The House of Lords held that although the abuse was clearly not authorised, the warden's employment had placed him in a position of authority and trust over the children, and the abuse was closely connected with this employment role. The close connection test allowed liability even for deliberate wrongdoing where the employment created the opportunity for it."
+    },
+    {
+      "id": "TL_M16_L02_Q09",
+      "question": "How did the Irish Supreme Court approach the Lister close connection test?",
+      "options": {
+        "A": "The Irish Supreme Court rejected the Lister approach and maintained the traditional authorised act test",
+        "B": "The Irish Supreme Court adopted the Lister close connection test in Minister for Justice v Fitzgerald, applying it in the Irish context",
+        "C": "The Irish Supreme Court has not yet considered the Lister approach and English law applies directly in Ireland",
+        "D": "The Irish Supreme Court held that Lister v Hesley Hall was inconsistent with the Civil Liability Act 1961 and refused to follow it"
+      },
+      "correct_answer": "B",
+      "explanation": "The Irish Supreme Court considered and adopted the Lister close connection test in Minister for Justice v Fitzgerald. This confirms that the Lister reformulation of the course of employment test forms part of Irish law. FE-1 candidates should therefore apply the close connection test — whether the employment placed the tortfeasor in a position that was closely connected with the wrongdoing such that it is fair and just to hold the employer liable — rather than the older unauthorised act formulation."
+    },
+    {
+      "id": "TL_M16_L02_Q10",
+      "question": "What is a 'non-delegable duty' and how does it differ from vicarious liability?",
+      "options": {
+        "A": "A non-delegable duty is a duty owed only by public authorities; vicarious liability applies only to private employers",
+        "B": "A non-delegable duty is one that cannot be discharged by delegating it to an independent contractor — the employer remains personally liable for the failure to fulfil the duty even if they used a contractor; vicarious liability arises from the relationship of employment and does not require a pre-existing duty",
+        "C": "Non-delegable duties are imposed by statute; vicarious liability is a common law doctrine",
+        "D": "Non-delegable duties apply only in medical negligence; vicarious liability applies across all employment sectors"
+      },
+      "correct_answer": "B",
+      "explanation": "A non-delegable duty is one that the employer cannot discharge by delegating it to an independent contractor. In certain recognised categories — such as the employer's duty to provide a safe system of work, or the hospital's duty to provide proper medical care — the duty is personal to the employer. If the task is delegated to a contractor who performs it negligently, the employer remains personally liable, not vicariously but because the duty itself is non-delegable. This differs from vicarious liability, which arises from the employment relationship and requires the tortfeasor to be an employee acting in the course of employment."
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "subject": "Criminal Law",
+  "module": 13,
+  "module_title": "Criminal Procedure, Courts, and Bail",
+  "lesson": 1,
+  "lesson_title": "Courts, Classification, and Arrest",
+  "questions": [
+    {
+      "id": "CL_M13_L01_Q01",
+      "question": "Under Section 29 of the Criminal Procedure Act 1967, which court has exclusive jurisdiction to try the offence of murder in Ireland?",
+      "options": {
+        "A": "The Circuit Court, sitting with a judge and jury of twelve.",
+        "B": "The Special Criminal Court, sitting with three judges and no jury.",
+        "C": "The Central Criminal Court (the High Court in its criminal jurisdiction).",
+        "D": "The District Court, where the accused elects summary trial."
+      },
+      "correct_answer": "C",
+      "explanation": "Section 29 of the Criminal Procedure Act 1967 confers exclusive jurisdiction over murder, rape, treason, piracy, and aggravated sexual assault on the Central Criminal Court — the High Court exercising its criminal jurisdiction. No other court has jurisdiction to try these offences. The constitutional foundation is Article 34.3.1 of the Constitution.",
+      "topic": "Court structure — Central Criminal Court, exclusive jurisdiction"
+    },
+    {
+      "id": "CL_M13_L01_Q02",
+      "question": "Under Section 2 of the Criminal Justice Act 1951, what two conditions must be met for a hybrid offence to be tried summarily in the District Court?",
+      "options": {
+        "A": "The accused must consent to summary trial, and the Circuit Court must be satisfied the offence is minor.",
+        "B": "The DPP must consent to summary trial, and the District Court must be satisfied the offence is minor in nature.",
+        "C": "The victim must consent to summary proceedings, and the Director of Public Prosecutions must certify the offence as minor.",
+        "D": "The Gardaí must recommend summary trial, and the District Court judge must agree."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 2 of the Criminal Justice Act 1951 requires two conditions for summary trial of a hybrid offence: the DPP must consent to summary trial, and the District Court must be satisfied that the offence is minor in nature and appropriate to be dealt with summarily. Both conditions must be met — DPP consent alone is insufficient.",
+      "topic": "Classification of offences — hybrid offences, s.2 CJA 1951"
+    },
+    {
+      "id": "CL_M13_L01_Q03",
+      "question": "The constitutional authority for the establishment of the Special Criminal Court is found in which provision?",
+      "options": {
+        "A": "Article 34 of the Constitution — courts of first instance.",
+        "B": "Article 38.3.1 of the Constitution — special courts where ordinary courts are inadequate.",
+        "C": "Article 40.4 of the Constitution — habeas corpus.",
+        "D": "Article 38.2 of the Constitution — summary jurisdiction for minor offences."
+      },
+      "correct_answer": "B",
+      "explanation": "Article 38.3.1 of the Constitution authorises the establishment of special courts with power to try offences without a jury where the ordinary courts are inadequate to secure the effective administration of justice. The statutory framework implementing this is Part V of the Offences Against the State Act 1939.",
+      "topic": "Court structure — Special Criminal Court, Art 38.3.1"
+    },
+    {
+      "id": "CL_M13_L01_Q04",
+      "question": "In Kavanagh v Ireland [1996] IESC, what principle did the Supreme Court establish regarding the DPP's power to direct cases to the Special Criminal Court?",
+      "options": {
+        "A": "The DPP must provide detailed written reasons for every certification directing a case to the Special Criminal Court.",
+        "B": "The Special Criminal Court is unconstitutional and its jurisdiction must be limited to subversive offences.",
+        "C": "The constitutionality of the Special Criminal Court was upheld and the DPP is not required to give reasons for directing a case there.",
+        "D": "The DPP's power to certify cases was held to be incompatible with Article 6 of the ECHR."
+      },
+      "correct_answer": "C",
+      "explanation": "In Kavanagh v Ireland [1996] IESC, the Supreme Court upheld the constitutionality of the Special Criminal Court and confirmed that the DPP is not required to give reasons for directing a case there. This is a landmark decision on the Special Criminal Court and should be cited in any exam question involving that court.",
+      "topic": "Court structure — Special Criminal Court, Kavanagh v Ireland"
+    },
+    {
+      "id": "CL_M13_L01_Q05",
+      "question": "Which provision of the Constitution provides the basis for the constitutional abolition of the felony/misdemeanour distinction, and which statute formally abolished it?",
+      "options": {
+        "A": "Article 38.5 of the Constitution; abolished by Section 3 of the Criminal Law Act 1997.",
+        "B": "There is no constitutional basis; abolished by Section 3 of the Criminal Law Act 1997.",
+        "C": "Article 34 of the Constitution; abolished by Section 5 of the Courts Act 1961.",
+        "D": "Article 15 of the Constitution; abolished by Section 1 of the Criminal Justice Act 1984."
+      },
+      "correct_answer": "B",
+      "explanation": "The felony/misdemeanour/treason classification derived from common law, not from the Constitution. It was formally abolished by Section 3 of the Criminal Law Act 1997. Today, this distinction has no practical significance in Irish criminal law, though it appears in older cases. The modern classification is summary, indictable, and hybrid offences.",
+      "topic": "Classification of offences — abolition of felony/misdemeanour, CLA 1997"
+    },
+    {
+      "id": "CL_M13_L01_Q06",
+      "question": "Under Section 4 of the Criminal Justice Act 1984, what is the maximum period for which a person suspected of an arrestable offence may be detained for questioning?",
+      "options": {
+        "A": "Six hours, not extendable.",
+        "B": "Twelve hours, extendable to twenty-four hours by a Chief Superintendent.",
+        "C": "Twenty-four hours, with an initial six-hour period extendable by a Superintendent.",
+        "D": "Seventy-two hours, extendable only by order of the High Court."
+      },
+      "correct_answer": "C",
+      "explanation": "Under Section 4 of the Criminal Justice Act 1984, a person may be detained initially for six hours. A Superintendent may authorise an extension to twelve hours, and a further extension to a maximum of twenty-four hours may then be authorised. The maximum is twenty-four hours. For scheduled OATSA offences, the longer s.30 OATSA 1939 period of up to seventy-two hours applies.",
+      "topic": "Arrest and detention — s.4 CJA 1984"
+    },
+    {
+      "id": "CL_M13_L01_Q07",
+      "question": "Under Section 30 of the Offences Against the State Act 1939, what is the maximum period for which a person may be detained in connection with a scheduled offence?",
+      "options": {
+        "A": "Twenty-four hours, with no power of extension.",
+        "B": "Forty-eight hours, extendable to seventy-two hours by a District Court judge.",
+        "C": "Seventy-two hours, with extensions requiring authorisation by a Chief Superintendent and then a District Court judge.",
+        "D": "Seven days, extendable by a High Court order."
+      },
+      "correct_answer": "C",
+      "explanation": "Under Section 30 of the OATSA 1939, the initial detention period is twenty-four hours, extendable by a Chief Superintendent to forty-eight hours, and then by a District Court judge to a maximum of seventy-two hours. This extended power applies to scheduled offences under the OATSA 1939 framework, reflecting the serious nature of subversive offending.",
+      "topic": "Arrest and detention — s.30 OATSA 1939"
+    },
+    {
+      "id": "CL_M13_L01_Q08",
+      "question": "Under the Citizens' arrest power in Section 4(1) of the Criminal Law Act 1997, which of the following is correct?",
+      "options": {
+        "A": "Any person may arrest another person who has committed or is in the act of committing an arrestable offence, or whom they reasonably suspect of having committed one.",
+        "B": "Only a Garda officer may make an arrest without warrant — citizens have no such power under Irish law.",
+        "C": "A citizen may arrest any person they suspect of any offence, whether summary or indictable.",
+        "D": "A citizen may arrest without warrant only where the offence carries a maximum of five years or more."
+      },
+      "correct_answer": "A",
+      "explanation": "Section 4(1) of the Criminal Law Act 1997 preserves and gives statutory form to the citizen's arrest power. Any person — not just a Garda — may arrest without warrant a person who is committing an arrestable offence, or whom they reasonably suspect of having committed one. The power is narrow: there must be an actual offence or a reasonable and genuine belief that one has been committed.",
+      "topic": "Arrest — citizen's arrest, s.4 CLA 1997"
+    },
+    {
+      "id": "CL_M13_L01_Q09",
+      "question": "Article 40.4 of the Constitution — the habeas corpus provision — operates as a constraint on Garda detention powers. Which of the following best describes its effect?",
+      "options": {
+        "A": "It prevents the Gardaí from detaining any person for more than six hours without a court order.",
+        "B": "It requires the High Court to order the release of any person who is unlawfully detained.",
+        "C": "It permits the Government to suspend detention rights in times of national emergency.",
+        "D": "It guarantees that all persons detained have an automatic right of appeal to the Court of Appeal."
+      },
+      "correct_answer": "B",
+      "explanation": "Article 40.4 of the Constitution provides that where a person is unlawfully detained, the High Court shall order their release on a habeas corpus application. Where Gardaí detain a person without lawful authority, or in breach of the statutory requirements, the detention is unlawful and evidence obtained during it may be inadmissible. Article 40.4 is the constitutional backstop against unlawful detention.",
+      "topic": "Arrest and detention — Art 40.4, habeas corpus"
+    },
+    {
+      "id": "CL_M13_L01_Q10",
+      "question": "Which of the following correctly states the constitutional provisions that, read together, underpin the classification regime for criminal offences in Ireland?",
+      "options": {
+        "A": "Article 38.1 (fair trial) and Article 40.3.1 (personal rights) — together they require jury trial for all offences.",
+        "B": "Article 38.2 (minor offences triable summarily) and Article 38.5 (jury trial for non-minor offences) — subject to Article 38.3 for special courts.",
+        "C": "Article 34 (courts of first instance) and Article 40.4 (habeas corpus) — together they define the jurisdiction of the District Court.",
+        "D": "Article 38.5 (jury trial) and Article 39 (treason) — together they define the limits of summary jurisdiction."
+      },
+      "correct_answer": "B",
+      "explanation": "The classification regime is underpinned by the interplay of three constitutional provisions. Article 38.2 permits minor offences to be tried by courts of summary jurisdiction without a jury. Article 38.5 requires jury trial for all non-minor offences. Article 38.3 then carves out an exception for special courts (the Special Criminal Court) where the ordinary courts are inadequate. These three provisions work together to define when a jury is required.",
+      "topic": "Classification of offences — constitutional framework, Art 38.2, 38.3, 38.5"
+    }
+  ]
+}

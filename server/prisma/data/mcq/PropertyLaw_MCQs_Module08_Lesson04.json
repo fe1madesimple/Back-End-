@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "Module_08_Lesson_04_Rights_of_Residence.txt",
+  "module_number": 8,
+  "module_title": "Licences, Proprietary Estoppel, and Rights of Residence",
+  "lesson_number": 4,
+  "lesson_title": "Rights of Residence",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M08_L04_Q01",
+      "question": "What is a right of residence in the context of Irish property law?",
+      "options": {
+        "A": "A statutory right given to all persons who have lived in a dwelling for twelve years or more",
+        "B": "A right granted to a person — typically by deed or will — to live in a property, usually as part of a family or inheritance arrangement",
+        "C": "A right granted by the Local Authority to a tenant in social housing to remain in occupation indefinitely",
+        "D": "A right created by occupation alone, analogous to adverse possession"
+      },
+      "correct_answer": "B",
+      "explanation": "A right of residence is a right granted to a person to live in a property, usually as part of a family or inheritance arrangement. It is typically created by a deed of transfer or a will in favour of a family member — most commonly an elderly parent who transfers the family farm or home to a child on the condition that the child provides the parent with accommodation and support during their lifetime."
+    },
+    {
+      "id": "PRL_M08_L04_Q02",
+      "question": "In Re Shanahan [1919], how did the Irish High Court characterise a right of exclusive residence in a dwelling?",
+      "options": {
+        "A": "As a bare licence revocable at will by the landowner",
+        "B": "As the equivalent of a life estate",
+        "C": "As a leasehold interest determinable on death",
+        "D": "As a contractual licence enforceable only between the original parties"
+      },
+      "correct_answer": "B",
+      "explanation": "In Re Shanahan [1919], the Irish High Court classified a right of exclusive residence in a dwelling as the equivalent of a life estate. This characterisation supports the view that a right of exclusive residence has proprietary character. However, the courts have not always been entirely consistent in characterising rights of residence, and the nature of any particular right depends on how it was created and its precise terms."
+    },
+    {
+      "id": "PRL_M08_L04_Q03",
+      "question": "A right of residence that is intended to be proprietary — capable of binding successors in title — can be registered under which provision of the Registration of Title Act 1964?",
+      "options": {
+        "A": "Section 72(1)(j) — as an overriding interest",
+        "B": "Section 69(1)(k) — as a registrable burden",
+        "C": "Section 49 — as a caution",
+        "D": "Section 96 — as a restriction on the folio"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 69(1)(k) of the Registration of Title Act 1964 specifically includes rights of residence as registrable burdens on the folio. Where a right of residence is properly registered as a burden under section 69(1)(k), it will bind all subsequent purchasers and mortgagees of the land, regardless of notice. Registration is therefore the primary means of protecting a proprietary right of residence against third parties."
+    },
+    {
+      "id": "PRL_M08_L04_Q04",
+      "question": "If a right of residence has NOT been registered as a burden, what alternative mechanism may protect the holder against a purchaser or mortgagee?",
+      "options": {
+        "A": "The holder must obtain a court injunction before the sale completes",
+        "B": "The right may be protected as an overriding interest under section 72(1)(j) of the Registration of Title Act 1964 if the holder is in actual occupation at the date of the disposition",
+        "C": "The holder may serve notice of the right on the purchaser, converting it into a registered burden automatically",
+        "D": "An unregistered right of residence can never bind a purchaser or mortgagee under any circumstances"
+      },
+      "correct_answer": "B",
+      "explanation": "Under section 72(1)(j) of the Registration of Title Act 1964, the rights of persons in actual occupation are overriding interests — they bind a purchaser without registration if the person is in actual occupation at the date of the disposition. If the holder of an unregistered right of residence is in actual occupation at the relevant date, the right may bind purchasers and mortgagees as an overriding interest, regardless of the absence of registration."
+    },
+    {
+      "id": "PRL_M08_L04_Q05",
+      "question": "In Williams and Glyn's Bank v Boland [1981], the House of Lords held that a wife's beneficial interest bound a mortgagee. Why is this case relevant to Irish rights of residence?",
+      "options": {
+        "A": "The case established that mortgagees are never bound by the interests of third-party occupiers",
+        "B": "The case established that the rights of a person in actual occupation can bind a mortgagee, even where not registered — a principle applied by analogy to Irish rights of residence",
+        "C": "The case established that a wife's interest in the matrimonial home is always half the value of the property",
+        "D": "The case is irrelevant because it is an English decision and has no persuasive authority in Ireland"
+      },
+      "correct_answer": "B",
+      "explanation": "In Williams and Glyn's Bank v Boland [1981], the House of Lords held that a wife's beneficial interest, arising from her contribution to the purchase price, bound the mortgagee because she was in actual occupation of the matrimonial home. The principle — that actual occupation can protect an unregistered interest against a mortgagee — is applied by analogy to Irish rights of residence under section 72(1)(j) of the Registration of Title Act 1964."
+    },
+    {
+      "id": "PRL_M08_L04_Q06",
+      "question": "In Ulster Bank v Shanks, what did the Irish High Court confirm about the practical implication for lenders taking a mortgage over residential property?",
+      "options": {
+        "A": "Lenders need not make any enquiries about occupants if the mortgage is properly documented",
+        "B": "A person in actual occupation has an overriding interest binding the mortgagee, and lenders should conduct an inspection and make enquiries of all occupants before taking a mortgage",
+        "C": "Lenders are bound only by registered burdens and not by the interests of actual occupants",
+        "D": "Lenders are protected against unregistered rights of residence as long as they obtained a solicitor's certificate"
+      },
+      "correct_answer": "B",
+      "explanation": "In Ulster Bank v Shanks, the Irish High Court confirmed that a person in actual occupation of a family home has an overriding interest which will bind a mortgagee even if the interest is not registered, provided the mortgagee had constructive or actual notice. The practical lesson for lenders is: before taking a mortgage over residential property, conduct a physical inspection of the property and make enquiries of all occupants to discover any unregistered interests."
+    },
+    {
+      "id": "PRL_M08_L04_Q07",
+      "question": "Which of the following possible characterisations of a right of residence is NOT one recognised in Irish law?",
+      "options": {
+        "A": "A personal licence revocable at will",
+        "B": "A life estate in the dwelling",
+        "C": "An easement of habitation",
+        "D": "A fee simple absolute determinable on the holder's departure from the property"
+      },
+      "correct_answer": "D",
+      "explanation": "A right of residence in Irish law may be characterised as: a personal licence revocable at will; a contractual licence enforceable between the parties; a life estate in the dwelling (as in Re Shanahan [1919]); or an easement of habitation giving a proprietary right to use the property as a dwelling. A fee simple absolute determinable on departure is not a recognised characterisation of a right of residence — a right of residence is personal in nature and does not confer a fee simple ownership interest."
+    },
+    {
+      "id": "PRL_M08_L04_Q08",
+      "question": "What is the typical duration of a right of residence, and can it be sold or transferred?",
+      "options": {
+        "A": "The right lasts for a fixed term, usually ninety-nine years, and can be transferred by the holder",
+        "B": "The right is typically for the lifetime of the beneficiary, is personal in nature, does not pass on death, and cannot be sold or transferred",
+        "C": "The right lasts until the property is sold, and passes to the beneficiary's children on death",
+        "D": "The right is indefinite in duration and passes to the beneficiary's estate on death"
+      },
+      "correct_answer": "B",
+      "explanation": "A right of residence is typically for the lifetime of the beneficiary — it is a personal right and does not pass on death. It cannot be sold or transferred. On the death of the holder, the right ceases and does not form part of the estate. This personal nature distinguishes a right of residence from a true fee simple or leasehold interest in the property."
+    },
+    {
+      "id": "PRL_M08_L04_Q09",
+      "question": "If a property over which a right of residence exists is sold and the proceeds are insufficient to provide an alternative residence for the holder, what remedy may be available?",
+      "options": {
+        "A": "The holder has no remedy because a right of residence cannot prevent a sale",
+        "B": "The holder may have a claim in trust or in damages against the transferor",
+        "C": "The holder may demand that the sale be set aside under the Family Home Protection Act 1976",
+        "D": "The holder may invoke section 31 of the LCLRA 2009 to block the sale"
+      },
+      "correct_answer": "B",
+      "explanation": "If a property is sold and the proceeds are insufficient to provide an alternative residence for the holder of a right of residence, the beneficiary may have a claim in trust or in damages against the transferor. The transferor who created the right of residence owes an obligation to the holder that cannot simply be extinguished by a sale that leaves the holder without alternative accommodation."
+    },
+    {
+      "id": "PRL_M08_L04_Q10",
+      "question": "In Carna v McGrath, what did the court find about the enforceability of a right of residence in a farmhouse against a purchaser?",
+      "options": {
+        "A": "The court found that a right of residence in a farmhouse is always purely personal and can never bind a purchaser",
+        "B": "The court found that a right of residence in a farmhouse could be enforced against a purchaser of the farm as a burden, suggesting it had proprietary character",
+        "C": "The court found that a right of residence in a farmhouse automatically converts to a leasehold on any sale",
+        "D": "The court found that a right of residence in a farmhouse is extinguished on any sale of the farm"
+      },
+      "correct_answer": "B",
+      "explanation": "In Carna v McGrath, the court found that a right of residence in a farmhouse could be enforced against a purchaser of the farm as a burden, suggesting it had proprietary character. This decision, together with Re Shanahan [1919], supports the view that a right of exclusive residence can have proprietary effect capable of binding third parties, particularly where it has been registered or the holder is in actual occupation."
+    }
+  ]
+}

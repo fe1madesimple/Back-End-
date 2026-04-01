@@ -1,0 +1,131 @@
+{
+  "subject": "Tort Law",
+  "el_script_ref": "TortLaw_ElevenLabs_Module04_Lesson03.txt",
+  "module_number": 4,
+  "module_title": "Causation",
+  "lesson_number": 3,
+  "lesson_title": "Material Contribution and Complex Causation",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "TL_M04_L03_Q01",
+      "question": "In Bonnington Castings Ltd v Wardlaw [1956], the plaintiff suffered pneumoconiosis from cumulative exposure to dust from two sources — one tortious and one non-tortious. Why did the material contribution test apply rather than the but for test?",
+      "options": {
+        "A": "Because the but for test was abolished by statute for industrial disease claims",
+        "B": "Because the but for test could not be strictly satisfied — it was impossible to isolate whether the tortious dust alone caused the disease given that it was a cumulative condition",
+        "C": "Because the plaintiff had more than one employer and joint liability applied automatically",
+        "D": "Because the defendant conceded negligence and the only issue was quantum of damages"
+      },
+      "correct_answer": "B",
+      "explanation": "In Bonnington Castings Ltd v Wardlaw [1956] AC 613, the plaintiff's pneumoconiosis was caused by the cumulative inhalation of silica dust from two sources — pneumatic hammers (tortious) and swing grinders (non-tortious). Because the disease was caused by the accumulation of all the dust together, it was impossible to say that but for the tortious dust alone the plaintiff would not have suffered the disease. The House of Lords held that it was sufficient that the tortious dust materially contributed to the actual disease."
+    },
+    {
+      "id": "TL_M04_L03_Q02",
+      "question": "What is the key distinction between material contribution to harm and material contribution to risk?",
+      "options": {
+        "A": "Material contribution to harm applies where there are multiple defendants; material contribution to risk applies where there is only one defendant",
+        "B": "Material contribution to harm means the tortious conduct actually contributed to causing the disease; material contribution to risk means the tortious conduct only increased the statistical probability of the disease occurring",
+        "C": "Material contribution to harm is a statutory test under the Civil Liability Act 1961; material contribution to risk is a common law test",
+        "D": "There is no practical distinction — they are interchangeable concepts in Irish tort law"
+      },
+      "correct_answer": "B",
+      "explanation": "The distinction is important. Material contribution to harm — the Bonnington principle — requires that the tortious conduct actually contributed causally to the disease that the plaintiff suffered. Material contribution to risk — developed in McGhee — means the tortious conduct increased the risk that the disease would occur, even though medical science cannot say whether it was that increased risk that actually caused the disease. The courts have treated them differently, and the Fairchild exception builds on the material increase in risk approach."
+    },
+    {
+      "id": "TL_M04_L03_Q03",
+      "question": "In McGhee v National Coal Board [1973] 1 WLR 1, the plaintiff contracted dermatitis. The defendant was not responsible for the dust itself but failed to provide showers. The House of Lords held the defendant liable. What principle did this establish?",
+      "options": {
+        "A": "Where there are multiple defendants, the but for test applies to each individually",
+        "B": "Where a defendant materially increased the risk of harm which then occurred, this was treated as equivalent to material contribution to the harm",
+        "C": "An employer is strictly liable for all occupational diseases contracted by employees",
+        "D": "Once negligence is proved, the plaintiff need not prove causation in occupational disease cases"
+      },
+      "correct_answer": "B",
+      "explanation": "In McGhee v National Coal Board [1973], the House of Lords held that where a defendant materially increased the risk of the harm which subsequently occurred, this could be treated as equivalent to materially contributing to the harm itself. The failure to provide showers meant the plaintiff remained covered in brick dust for longer, materially increasing the risk of dermatitis. This principle — that materially increasing the risk of harm is equivalent to contributing to it — represented a significant extension beyond Bonnington Castings."
+    },
+    {
+      "id": "TL_M04_L03_Q04",
+      "question": "In Fairchild v Glenhaven Funeral Services Ltd [2002] UKHL 22, each of several employers had negligently exposed the plaintiff to asbestos. Medical science could not identify which employer's exposure caused the mesothelioma. What did the House of Lords hold?",
+      "options": {
+        "A": "All employers were exonerated because the but for test could not be satisfied against any of them",
+        "B": "Each employer who materially contributed to the risk of mesothelioma was liable, even though the but for test failed",
+        "C": "Only the employer whose exposure was greatest bore liability, proportionate to their share of total exposure",
+        "D": "Liability was shared equally between all employers who had ever employed the plaintiff, regardless of duration of exposure"
+      },
+      "correct_answer": "B",
+      "explanation": "In Fairchild v Glenhaven Funeral Services [2002], the House of Lords created what is now known as the Fairchild exception. Where there is a single causative agent (asbestos), multiple defendants each tortiously exposed the plaintiff to that agent, and medical science cannot identify which exposure caused the mesothelioma, each employer who materially contributed to the risk of mesothelioma is held liable. Strict application of the but for test would have exonerated all defendants — the Fairchild exception prevents this unjust outcome."
+    },
+    {
+      "id": "TL_M04_L03_Q05",
+      "question": "What are the essential conditions for the Fairchild exception to apply?",
+      "options": {
+        "A": "Multiple defendants, multiple causative agents, and at least one non-tortious exposure",
+        "B": "A single causative agent, multiple defendants each tortiously exposing the plaintiff to that agent, and an indivisible injury where science cannot isolate which exposure caused it",
+        "C": "An employer-employee relationship, statutory breach, and physical injury to the plaintiff",
+        "D": "Joint enterprise between defendants, contributory negligence by the plaintiff, and economic loss"
+      },
+      "correct_answer": "B",
+      "explanation": "The Fairchild exception requires: (1) a single causative agent — asbestos fibres causing mesothelioma is the paradigm case; (2) multiple defendants who each tortiously exposed the plaintiff to that agent; (3) an indivisible injury where medical science cannot identify which defendant's exposure caused the disease. If there are multiple causative agents, or if the injury is divisible, the Fairchild exception does not apply and the ordinary material contribution analysis governs."
+    },
+    {
+      "id": "TL_M04_L03_Q06",
+      "question": "In Barker v Corus UK Ltd [2006] UKHL 20, the House of Lords modified the Fairchild exception. How?",
+      "options": {
+        "A": "The court abolished the Fairchild exception and reinstated the but for test for all mesothelioma cases",
+        "B": "The court held that under Fairchild, each defendant was only severally liable for their proportionate contribution to the risk, not jointly and severally liable for the full damage",
+        "C": "The court held that mesothelioma claims could only be brought as a class action by groups of affected workers",
+        "D": "The court held that the Fairchild exception applied to all occupational diseases, not just mesothelioma"
+      },
+      "correct_answer": "B",
+      "explanation": "In Barker v Corus [2006], the House of Lords modified Fairchild by holding that under the exception, each defendant was only severally liable for their proportionate contribution to the risk of mesothelioma — not jointly and severally liable for the full loss. This was controversial in England because it potentially left plaintiffs undercompensated where former employers had gone insolvent. In England, Barker was reversed by the Compensation Act 2006. In Ireland, the matter is governed by the Civil Liability Act 1961 framework."
+    },
+    {
+      "id": "TL_M04_L03_Q07",
+      "question": "What is the difference between a divisible and an indivisible injury in the context of multiple causation?",
+      "options": {
+        "A": "A divisible injury can be attributed to specific causes and apportioned between them; an indivisible injury cannot be so apportioned because it either occurs as a whole or it does not",
+        "B": "A divisible injury is always physical; an indivisible injury is always psychiatric",
+        "C": "A divisible injury involves multiple defendants; an indivisible injury involves a single defendant and a single act",
+        "D": "A divisible injury is capped under the Civil Liability Act 1961; an indivisible injury is not"
+      },
+      "correct_answer": "A",
+      "explanation": "A divisible injury is one where different contributions to the harm can be identified and attributed — for example, hearing loss proportionally attributable to noise at different workplaces. The court can apportion the damage between tortious and non-tortious causes. An indivisible injury — such as mesothelioma, which either occurs or it does not — cannot be apportioned: the full harm exists regardless of the volume of causative exposure. Where the injury is indivisible, joint and several liability under the Fairchild exception may apply."
+    },
+    {
+      "id": "TL_M04_L03_Q08",
+      "question": "Under which Irish statute are concurrent wrongdoers and apportionment of liability between them governed?",
+      "options": {
+        "A": "The Statute of Limitations 1957 and the Statute of Limitations (Amendment) Act 1991",
+        "B": "The Civil Liability Act 1961, particularly sections 11 and 35",
+        "C": "The Non-Fatal Offences Against the Person Act 1997",
+        "D": "The Occupiers' Liability Act 1995"
+      },
+      "correct_answer": "B",
+      "explanation": "In Ireland, the liability of concurrent wrongdoers and the apportionment of liability between them is governed by the Civil Liability Act 1961. Section 11 defines concurrent wrongdoers as persons responsible for the same damage. Section 35 empowers the court to apportion liability between concurrent wrongdoers in such proportions as the court considers just and equitable having regard to the degree of fault of each. This is the statutory framework that applies in multi-defendant cases in Ireland."
+    },
+    {
+      "id": "TL_M04_L03_Q09",
+      "question": "On the FE-1 paper, if the but for test cannot be satisfied in a multi-defendant case, which three alternatives should a candidate consider in order?",
+      "options": {
+        "A": "Joint enterprise, vicarious liability, and non-delegable duty",
+        "B": "Material contribution to actual harm (Bonnington), material increase in risk (McGhee), and the Fairchild exception for mesothelioma-type cases",
+        "C": "Contributory negligence, volenti non fit injuria, and limitation of actions",
+        "D": "The neighbour principle, the Glencar test, and the Caparo test"
+      },
+      "correct_answer": "B",
+      "explanation": "When the but for test cannot be strictly satisfied in a multi-defendant causation case, the FE-1 candidate should consider: (1) material contribution to actual harm — Bonnington Castings v Wardlaw [1956] — where the tortious conduct directly contributed to the disease; (2) material increase in risk — McGhee v National Coal Board [1973] — where the conduct materially increased the statistical risk; and (3) the Fairchild exception — Fairchild v Glenhaven [2002] — applicable to mesothelioma-type cases with a single causative agent and multiple tortious exposures."
+    },
+    {
+      "id": "TL_M04_L03_Q10",
+      "question": "Two employers each negligently exposed a worker to silica dust. The worker developed pneumoconiosis. Medical science can determine what proportion of the total dust came from each employer. Is the injury divisible or indivisible?",
+      "options": {
+        "A": "Indivisible — pneumoconiosis is caused by cumulative dust and cannot be attributed to any single source",
+        "B": "Divisible — because the proportionate contribution of each employer's dust can be identified and apportioned",
+        "C": "Neither — the Civil Liability Act 1961 requires joint and several liability regardless of divisibility",
+        "D": "Divisible only if both employers are sued simultaneously in the same proceedings"
+      },
+      "correct_answer": "B",
+      "explanation": "Where medical or scientific evidence allows the court to attribute the harm proportionately to identified sources — including the proportionate contribution of each defendant's dust — the injury is divisible. The court can apportion liability accordingly. This is in contrast to an indivisible injury like mesothelioma, which either occurs or it does not and cannot be meaningfully apportioned by source. A divisible injury is dealt with through apportionment rather than joint and several liability under the Fairchild exception."
+    }
+  ]
+}

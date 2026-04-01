@@ -1,0 +1,131 @@
+{
+  "subject": "Company Law",
+  "el_script_ref": "CompanyLaw_ElevenLabs_Module03_Lesson01.txt",
+  "module_number": 3,
+  "module_title": "Corporate Authority",
+  "lesson_number": 1,
+  "lesson_title": "Section 158 and the Division of Powers",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Omega Ltd’s shareholders pass an ordinary resolution at a general meeting instructing the board of directors to sell the company’s main factory to a buyer the shareholders have identified. The board refuses. Under section 158 CA 2014 and established case law, who prevails?",
+      "options": {
+        "A": "The shareholders prevail — a majority of members can direct the board by ordinary resolution on any business matter",
+        "B": "The board prevails — under S158, management of the business is vested in the directors; members cannot direct the board by ordinary resolution on matters within the board’s remit",
+        "C": "The shareholders prevail, but only if they hold at least 75% of the shares",
+        "D": "The board must comply if the shareholders represent a majority in value of share capital"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 158 CA 2014 vests management of the company’s business in the directors. Per John Shaw & Sons (Salford) Ltd v Shaw [1935] and Automatic Self-Cleansing Filter Syndicate v Cuninghame [1906], the board exercises its powers in its own right — members cannot direct the board by ordinary resolution on matters within the board’s constitutional remit. Members’ only recourse is to amend the constitution (special resolution) or remove directors (S146)."
+    },
+    {
+      "id": 2,
+      "question": "The board of Ryanair attempted to veto the proposed takeover of Aer Lingus without holding a shareholder vote. In Ryanair DAC v Aer Lingus Group DAC [2012], the court held that:",
+      "options": {
+        "A": "The board had absolute discretion to block any merger or acquisition without member consultation",
+        "B": "The board’s authority under S158 is not unlimited — certain fundamental decisions (including mergers) must be referred to the general meeting as a matter of law or constitution",
+        "C": "The board’s decision was an internal management matter and the court had no jurisdiction to intervene",
+        "D": "The takeover was automatically void as no special resolution had been passed"
+      },
+      "correct_answer": "B",
+      "explanation": "Ryanair DAC v Aer Lingus Group DAC [2012] illustrates that while S158 vests broad management authority in the board, certain strategic decisions can require shareholder approval — either by the constitution or by statute (e.g., fundamental changes). The case is an important qualification to the board’s S158 authority."
+    },
+    {
+      "id": 3,
+      "question": "A director purports to enter a contract on behalf of the company, but exceeds the authority given to him by the board. A third party who acted in good faith seeks to enforce the contract. Under section 40 CA 2014, which of the following best describes the third party’s position?",
+      "options": {
+        "A": "The contract is void — a director cannot bind the company beyond actual authority",
+        "B": "The contract is enforceable against the company — S40 protects third parties dealing in good faith from limitations on directors’ authority arising from the company’s constitution or internal procedures",
+        "C": "The contract is enforceable but only if the director had at least ostensible authority",
+        "D": "The third party must first exhaust remedies against the director personally before suing the company"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 40 CA 2014 (implementing the EU First Directive) provides that a company cannot rely on restrictions in its constitution to deny a contract entered into by a director with a third party acting in good faith. S40 removes the doctrine of constructive notice of the constitution insofar as it limits authority. The company is bound even if the director exceeded internal limits."
+    },
+    {
+      "id": 4,
+      "question": "In John Shaw & Sons (Salford) Ltd v Shaw [1935], the Court of Appeal confirmed that the board exercises its management powers:",
+      "options": {
+        "A": "As delegates of the general meeting — the board derives authority from the shareholders",
+        "B": "In its own right, not as agents or delegates of the shareholders — the board’s authority flows from the constitution, not from the general meeting",
+        "C": "Subject to the right of majority shareholders to override board decisions at any time by ordinary resolution",
+        "D": "Only within the objects of the company as set out in the constitution"
+      },
+      "correct_answer": "B",
+      "explanation": "In John Shaw & Sons (Salford) Ltd v Shaw [1935] 2 KB 113, the Court of Appeal confirmed that the directors exercise their powers in their own right — they are not agents of the company acting on behalf of shareholders. The authority of the board flows from the constitution (and S158 CA 2014), not from any delegation by the general meeting."
+    },
+    {
+      "id": 5,
+      "question": "Apex Ltd’s constitution provides that any contract over €100,000 requires the prior approval of the audit committee. The managing director enters a €250,000 contract with a supplier without the audit committee’s approval. The supplier did not know about the committee requirement. Can the company deny liability on the contract?",
+      "options": {
+        "A": "Yes — the audit committee requirement is in the constitution, which is a public document and the supplier is deemed to have notice of it",
+        "B": "No — section 40 CA 2014 removes constructive notice of constitutional restrictions on directors’ authority; the company is bound if the supplier acted in good faith",
+        "C": "Yes — a contract exceeding the value approved by the board is automatically void under S228 CA 2014",
+        "D": "No — but only if the managing director had apparent authority, which requires actual knowledge by the company of the managing director’s authority"
+      },
+      "correct_answer": "B",
+      "explanation": "Section 40 CA 2014 removes constructive notice of constitutional restrictions on directors’ powers. The supplier is not required to have read the constitution to find the audit committee requirement. As long as the supplier acted in good faith (and there is no evidence they knew the director was exceeding their authority), the contract is enforceable against the company."
+    },
+    {
+      "id": 6,
+      "question": "Under the CA 2014, can the general meeting effectively reassert control over the board’s management powers without removing the directors?",
+      "options": {
+        "A": "Yes — by passing an ordinary resolution directing the board on any specific matter",
+        "B": "No — the only mechanisms are: (i) amend the constitution by special resolution to restrict board powers, or (ii) remove directors under S146 and appoint more compliant directors",
+        "C": "Yes — by passing a special resolution directing the board on any specific matter",
+        "D": "Yes — a unanimous written resolution of all shareholders overrides any board decision"
+      },
+      "correct_answer": "B",
+      "explanation": "Following John Shaw, Automatic Self-Cleansing Filter, and S158 CA 2014, the general meeting cannot interfere with the board’s management powers by ordinary resolution. The members’ remedies are: (i) amend the constitution by special resolution (75%) to change the scope of board authority; or (ii) remove directors under S146 and appoint new ones. A directing ordinary resolution is ineffective."
+    },
+    {
+      "id": 7,
+      "question": "What is the legal effect of the board being deadlocked (e.g., two directors with equal votes who cannot agree) on an important business matter?",
+      "options": {
+        "A": "The company is automatically put into examinership if the deadlock persists for more than 30 days",
+        "B": "In extreme cases, the general meeting may be entitled to act in place of a deadlocked board under the principle in Marshall’s Valve Gear Co v Manning Wardle [1909]",
+        "C": "The company secretary has a casting vote in the event of board deadlock",
+        "D": "The board deadlock is automatically resolved in favour of the chairperson’s preferred option"
+      },
+      "correct_answer": "B",
+      "explanation": "Marshall’s Valve Gear Co v Manning Wardle [1909] 1 Ch 267 recognised that in exceptional circumstances — where the board is deadlocked and the company cannot function — the general meeting may be able to act in place of the board. This is a narrow exception to the S158 principle and requires a genuine deadlock preventing the company from operating."
+    },
+    {
+      "id": 8,
+      "question": "A director acts outside the board’s authority but the act is subsequently ratified by the board. However, a minority shareholder argues the ratification itself was invalid because the same director who acted without authority voted in the ratification resolution. Under general company law, the correct position is:",
+      "options": {
+        "A": "The ratification is automatically invalid — a director cannot vote on their own ratification",
+        "B": "The ratification is valid if the director who acted had no personal financial interest in the ratification; a director interested in a matter must disclose but may still vote unless the constitution prohibits it",
+        "C": "The ratification requires a special resolution to be effective",
+        "D": "The ratification requires court approval where a director votes on their own actions"
+      },
+      "correct_answer": "B",
+      "explanation": "A director with a conflict of interest must disclose it under S231 CA 2014. Whether an interested director can vote on the ratification depends on the constitution — many constitutions restrict interested directors from voting. Without such a restriction, the interested director may vote (subject to conflict disclosure obligations). However, where the ratification itself amounts to a breach of duty, shareholder (not board) ratification may be required."
+    },
+    {
+      "id": 9,
+      "question": "Section 158 CA 2014 provides that unless the constitution otherwise provides, the management of the company’s business is vested in the directors. What is the most significant practical implication of the phrase ‘unless the constitution otherwise provides’?",
+      "options": {
+        "A": "The court can always override the constitution if justice requires",
+        "B": "Shareholders can, by special resolution, amend the constitution to reserve specific decisions for the general meeting, thereby limiting the board’s authority in those areas",
+        "C": "The CEA can issue directions to the board overriding the constitution",
+        "D": "The constitution can grant the board unlimited authority to trade beyond the company’s legal capacity"
+      },
+      "correct_answer": "B",
+      "explanation": "The phrase ‘unless the constitution otherwise provides’ is critical: it means that shareholder control over board authority is not entirely excluded. By amending the constitution via special resolution (75%), members can reserve specific categories of decision (e.g., disposal of major assets, borrowing over a threshold) for member approval, thereby limiting the board’s S158 authority in defined areas."
+    },
+    {
+      "id": 10,
+      "question": "In Automatic Self-Cleansing Filter Syndicate v Cuninghame [1906], the Court of Appeal held that the board of directors:",
+      "options": {
+        "A": "Must comply with shareholder directions on all matters given by ordinary resolution",
+        "B": "Acts under the authority of the articles and is not a mere agent of the shareholders — a majority resolution cannot compel the board to sell company property contrary to the board’s decision",
+        "C": "Has authority derived solely from the shareholders and must carry out whatever the majority decides",
+        "D": "Must refer all decisions involving assets worth over £500 to the general meeting"
+      },
+      "correct_answer": "B",
+      "explanation": "Automatic Self-Cleansing Filter Syndicate v Cuninghame [1906] 2 Ch 34 established the cornerstone of board authority: the directors act under the authority of the articles and are not mere agents of the shareholders. The court refused to order the board to execute a contract for the sale of the company’s property that the majority of shareholders wanted but the board opposed."
+    }
+  ]
+}

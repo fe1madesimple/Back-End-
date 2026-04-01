@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "PropertyLaw_ElevenLabs_Module10_Lesson01.txt",
+  "module_number": 10,
+  "module_title": "Succession Law",
+  "lesson_number": 1,
+  "lesson_title": "Succession Law: Testamentary Capacity, Formalities, Construction, Legal Right Share, Section 117, and Intestacy",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "PRL_M10_L01_Q01",
+      "question": "Under Banks v Goodfellow [1870], which of the following correctly states the FIRST element of testamentary capacity?",
+      "options": {
+        "A": "The testator must understand the nature of making a will and its effects",
+        "B": "The testator must understand the extent of the property they are disposing of",
+        "C": "The testator must understand the claims of those who might reasonably expect to benefit",
+        "D": "The testator must not be suffering from a disorder of the mind that poisons their affections"
+      },
+      "correct_answer": "A",
+      "explanation": "The first element of Banks v Goodfellow [1870] requires the testator to understand the nature of making a will and its effects — they must appreciate what a will is and what executing it means for the disposition of their property on death."
+    },
+    {
+      "id": "PRL_M10_L01_Q02",
+      "question": "Under Banks v Goodfellow [1870], which of the following correctly states the SECOND element of testamentary capacity?",
+      "options": {
+        "A": "The testator must understand the nature of making a will and its effects",
+        "B": "The testator must understand the extent of the property they are disposing of",
+        "C": "The testator must understand the claims of those who might reasonably expect to benefit",
+        "D": "The testator must not be suffering from a disorder of the mind that poisons their affections"
+      },
+      "correct_answer": "B",
+      "explanation": "The second element of Banks v Goodfellow [1870] requires the testator to understand the extent of the property they are disposing of. They need not know the precise value of every asset, but must have a general appreciation of what they own and what is being disposed of."
+    },
+    {
+      "id": "PRL_M10_L01_Q03",
+      "question": "Under Banks v Goodfellow [1870], which of the following correctly states the THIRD element of testamentary capacity?",
+      "options": {
+        "A": "The testator must understand the nature of making a will and its effects",
+        "B": "The testator must understand the extent of the property they are disposing of",
+        "C": "The testator must understand the claims of those who might reasonably expect to benefit, even if they choose to exclude them",
+        "D": "The testator must not be suffering from a disorder of the mind that poisons their affections"
+      },
+      "correct_answer": "C",
+      "explanation": "The third element requires the testator to understand the claims of those who might reasonably expect to benefit from the estate — such as close family members — even if the testator ultimately chooses to exclude them. This ensures the testator is making an informed and deliberate choice in departing from expected distributions."
+    },
+    {
+      "id": "PRL_M10_L01_Q04",
+      "question": "Under Banks v Goodfellow [1870], which of the following correctly states the FOURTH element of testamentary capacity?",
+      "options": {
+        "A": "The testator must not be suffering from a disorder of the mind that poisons their affections or perverts their sense of right",
+        "B": "The testator must understand the nature of making a will and its effects",
+        "C": "The testator must understand the extent of the property they are disposing of",
+        "D": "The testator must understand the claims of those who might reasonably expect to benefit"
+      },
+      "correct_answer": "A",
+      "explanation": "The fourth element of Banks v Goodfellow [1870] requires that the testator not be suffering from a disorder of the mind that poisons their affections, perverts their sense of right, or prevents the exercise of their natural faculties. This addresses conditions such as insane delusions that could distort the testamentary act even where the other three elements are met."
+    },
+    {
+      "id": "PRL_M10_L01_Q05",
+      "question": "How many elements does the Banks v Goodfellow [1870] test for testamentary capacity comprise?",
+      "options": {
+        "A": "Two",
+        "B": "Four",
+        "C": "Five",
+        "D": "Three"
+      },
+      "correct_answer": "B",
+      "explanation": "The Banks v Goodfellow [1870] test comprises four elements: (1) understanding the nature of a will and its effects; (2) understanding the extent of the property being disposed of; (3) understanding the claims of those who might reasonably expect to benefit; and (4) not suffering from a disorder of the mind that poisons affections or perverts the sense of right."
+    },
+    {
+      "id": "PRL_M10_L01_Q06",
+      "question": "Under section 77 of the Succession Act 1965, what is the statutory requirement for testamentary capacity?",
+      "options": {
+        "A": "The testator must be of full age and of sound body",
+        "B": "The testator must not be subject to undue influence at the time of execution",
+        "C": "The testator must be of 'sound disposing mind' at the time of execution",
+        "D": "The testator must have read and understood the full contents of the will before signing"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 77 of the Succession Act 1965 requires the testator to be of 'sound disposing mind' at the time of execution. This statutory formulation incorporates the common law testamentary capacity test from Banks v Goodfellow [1870] and confirms that capacity must be present at the moment the will is formally executed."
+    },
+    {
+      "id": "PRL_M10_L01_Q07",
+      "question": "Re Coughlan's Estate [2022] confirmed that testamentary capacity is assessed at which point in time?",
+      "options": {
+        "A": "The date of execution of the will",
+        "B": "The date the will is lodged for probate",
+        "C": "The date instructions are given to the solicitor drafting the will",
+        "D": "The date of the testator's death"
+      },
+      "correct_answer": "A",
+      "explanation": "Re Coughlan's Estate [2022] confirmed that testamentary capacity is assessed at the date of execution of the will. A testator may have lost capacity between giving instructions and executing the will, or may have regained capacity during a lucid interval. The critical date is the moment of formal execution under section 77 of the Succession Act 1965."
+    },
+    {
+      "id": "PRL_M10_L01_Q08",
+      "question": "Which statement best reflects the position in Re Coughlan's Estate [2022] regarding persons with cognitive decline?",
+      "options": {
+        "A": "A person with dementia can never make a valid will, regardless of their apparent condition on the day of execution",
+        "B": "A person with significant cognitive decline may have lucid intervals during which a valid will can be made",
+        "C": "Evidence of cognitive decline raises a conclusive presumption of incapacity",
+        "D": "The court must appoint a medical examiner before any will by an older testator can be admitted to probate"
+      },
+      "correct_answer": "B",
+      "explanation": "Re Coughlan's Estate [2022] confirmed that a person with significant cognitive decline may have lucid intervals — periods of sufficient clarity — during which they possess testamentary capacity and can execute a valid will. A diagnosis of dementia does not automatically invalidate a will; capacity must be assessed on the actual facts as they stood at the date of execution."
+    },
+    {
+      "id": "PRL_M10_L01_Q09",
+      "question": "Where a will is challenged on grounds of lack of testamentary capacity, who bears the burden of proving incapacity?",
+      "options": {
+        "A": "The personal representatives of the deceased",
+        "B": "The testator's solicitor who supervised execution of the will",
+        "C": "The party challenging the will",
+        "D": "The beneficiaries named in the will"
+      },
+      "correct_answer": "C",
+      "explanation": "As confirmed in Re Coughlan's Estate [2022], the burden of proving incapacity lies with the party challenging the will. There is a presumption in favour of capacity — particularly where the will was executed in a formally regular manner — and the challenger must adduce sufficient evidence to displace that presumption on the balance of probabilities."
+    },
+    {
+      "id": "PRL_M10_L01_Q10",
+      "question": "Which of the following is a requirement under section 78 of the Succession Act 1965 for a valid will?",
+      "options": {
+        "A": "The will must be in writing",
+        "B": "The will must be typed and printed — a handwritten will is not valid",
+        "C": "The will must be witnessed by a solicitor or notary public",
+        "D": "The will must include a declaration by the testator of their mental capacity"
+      },
+      "correct_answer": "A",
+      "explanation": "Section 78(1) of the Succession Act 1965 requires that a will be in writing. This is the first formal requirement. The section imposes no requirement as to a particular form of writing — a handwritten will is valid. Witnesses are not required to be legal professionals, and no capacity declaration is required on the face of the document."
+    }
+  ]
+}

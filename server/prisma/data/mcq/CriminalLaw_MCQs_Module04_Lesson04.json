@@ -1,0 +1,151 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module04_Lesson04.txt",
+  "module_number": 4,
+  "module_title": "Homicide",
+  "lesson_number": 4,
+  "lesson_title": "Assisted Suicide and the Right to Die",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M04_L04_Q01",
+      "question": "Under which Act was suicide decriminalised in Ireland, and in what year did it come into force?",
+      "options": {
+        "A": "The Health Act 1970, in 1970.",
+        "B": "The Criminal Law (Suicide) Act 1993, in 1993.",
+        "C": "The Criminal Justice Act 1984, in 1985.",
+        "D": "The Mental Health Act 2001, in 2001."
+      },
+      "correct_answer": "B",
+      "explanation": "Suicide was decriminalised in Ireland by Section 1 of the Criminal Law (Suicide) Act 1993, which abolished the common law offence of suicide and the misdemeanour of attempted suicide. Since 1993, neither suicide nor attempted suicide is a criminal offence.",
+      "difficulty": "easy",
+      "topic": "Criminal Law (Suicide) Act 1993"
+    },
+    {
+      "id": "CL_M04_L04_Q02",
+      "question": "What criminal offence is created by Section 2 of the Criminal Law (Suicide) Act 1993, and what is the maximum penalty?",
+      "options": {
+        "A": "Aiding, abetting, counselling, or procuring the suicide of another — maximum five years imprisonment.",
+        "B": "Aiding, abetting, counselling, or procuring the suicide of another — maximum fourteen years imprisonment.",
+        "C": "Encouraging a person to attempt suicide — maximum seven years imprisonment.",
+        "D": "Providing information about methods of suicide — maximum ten years imprisonment."
+      },
+      "correct_answer": "B",
+      "explanation": "Section 2 of the Criminal Law (Suicide) Act 1993 makes it a criminal offence to aid, abet, counsel, or procure the suicide of another person, or an attempt by another to commit suicide. The maximum penalty on conviction on indictment is fourteen years imprisonment — a serious offence that must not be confused with the decriminalisation under s.1.",
+      "difficulty": "easy",
+      "topic": "Criminal Law (Suicide) Act 1993"
+    },
+    {
+      "id": "CL_M04_L04_Q03",
+      "question": "A doctor, following a patient's persistent and fully informed request, withdraws the patient's artificial nutrition and hydration. The patient subsequently dies. Which of the following best describes the legal position?",
+      "options": {
+        "A": "The doctor has committed the offence of assisted suicide under s.2 of the Criminal Law (Suicide) Act 1993.",
+        "B": "The doctor may have acted lawfully as withdrawal of treatment is characterised as an omission, not a positive act to cause death.",
+        "C": "The doctor has committed murder as death was the foreseeable and intended consequence.",
+        "D": "The doctor requires a specific statutory exemption before withdrawing treatment."
+      },
+      "correct_answer": "B",
+      "explanation": "Irish law draws a fundamental distinction between assisted suicide (a positive act to cause death, which is criminal) and withdrawal of life-sustaining treatment (characterised as an omission — ceasing extraordinary medical intervention). The latter was addressed by the Supreme Court in In re a Ward of Court [1996] 1 IR 79, which held that withdrawal could be authorised in appropriate circumstances grounded in constitutional rights.",
+      "difficulty": "medium",
+      "topic": "Withdrawal of Treatment vs Assisted Suicide"
+    },
+    {
+      "id": "CL_M04_L04_Q04",
+      "question": "In In re a Ward of Court [1996] 1 IR 79, on what constitutional basis did the Supreme Court authorise the withdrawal of artificial nutrition and hydration?",
+      "options": {
+        "A": "The right to life under Article 40.3.2, interpreted as including a right to choose death.",
+        "B": "The constitutional rights to privacy and bodily integrity under Article 40.3.1.",
+        "C": "Article 8 of the European Convention on Human Rights.",
+        "D": "The inherent jurisdiction of the High Court to make decisions in the best interests of the State."
+      },
+      "correct_answer": "B",
+      "explanation": "The Supreme Court in In re a Ward of Court grounded its decision in the constitutional rights to privacy and bodily integrity under Article 40.3.1. The court held that a patient in a sufficiently grave condition was not required to have extraordinary life-sustaining treatment continued against her best interests. The court was emphatic that this was not assisted suicide — it was the cessation of extraordinary intervention.",
+      "difficulty": "medium",
+      "topic": "In re a Ward of Court"
+    },
+    {
+      "id": "CL_M04_L04_Q05",
+      "question": "In Fleming v Ireland [2013] IESC, what was the outcome of Marie Fleming's constitutional challenge to the prohibition on assisted suicide?",
+      "options": {
+        "A": "The Supreme Court upheld her claim and declared the prohibition on assisted suicide unconstitutional.",
+        "B": "The Supreme Court rejected her claim, holding there is no constitutional right to die and that reform is a matter for the Oireachtas.",
+        "C": "The Supreme Court referred the matter to the European Court of Human Rights.",
+        "D": "The High Court upheld her claim but it was overturned on appeal."
+      },
+      "correct_answer": "B",
+      "explanation": "The Supreme Court unanimously rejected Marie Fleming's challenge in Fleming v Ireland [2013] IESC. The court held that the right to life in Article 40.3.2 imposes an obligation on the State to protect life — it does not confer a right to have assistance in ending it. There is no constitutional right to die. The court also held that any reform of the law was a matter for the Oireachtas, not the judiciary.",
+      "difficulty": "medium",
+      "topic": "Fleming v Ireland"
+    },
+    {
+      "id": "CL_M04_L04_Q06",
+      "question": "Which of the following propositions from Fleming v Ireland [2013] IESC is most important for FE-1 exam purposes?",
+      "options": {
+        "A": "The Oireachtas has a constitutional obligation to legislate for assisted dying within a reasonable period.",
+        "B": "Article 40.3.2 protects life but does not confer a right to have assistance in ending one's life.",
+        "C": "Courts may grant individual exemptions to the criminal prohibition where compassionate circumstances are proven.",
+        "D": "The criminal prohibition on assisted suicide is incompatible with the European Convention on Human Rights."
+      },
+      "correct_answer": "B",
+      "explanation": "The core constitutional proposition from Fleming is that Article 40.3.2 — the right to life — imposes a positive obligation on the State to protect life, not an obligation to facilitate its end. The right to life does not encompass a right to die. This must be stated clearly and cited to Fleming v Ireland [2013] IESC in any exam answer.",
+      "difficulty": "medium",
+      "topic": "Fleming v Ireland"
+    },
+    {
+      "id": "CL_M04_L04_Q07",
+      "question": "In Pretty v United Kingdom [2002] 35 EHRR 1, Diane Pretty argued violations of multiple ECHR articles. What was the outcome before the European Court of Human Rights?",
+      "options": {
+        "A": "The court found a violation of Article 8 (right to private life) and required the UK to permit assisted dying.",
+        "B": "The court found no violation of Articles 2, 3, 8, or 14.",
+        "C": "The court found a violation of Article 3 (inhuman and degrading treatment).",
+        "D": "The court found a violation of Article 14 (non-discrimination) as the prohibition disproportionately affected disabled persons."
+      },
+      "correct_answer": "B",
+      "explanation": "The ECtHR found no violation of Articles 2, 3, 8, or 14 in Pretty v United Kingdom. On Article 2, the court held that the right to life does not confer a right to choose death. On Article 3, the prohibition did not itself constitute inhuman or degrading treatment. On Article 8, the margin of appreciation permitted the UK to maintain a blanket prohibition to protect vulnerable persons. On Article 14, no discrimination was established.",
+      "difficulty": "medium",
+      "topic": "Pretty v United Kingdom"
+    },
+    {
+      "id": "CL_M04_L04_Q08",
+      "question": "Kieran has a terminal diagnosis and full mental capacity. He asks his sister to administer a lethal injection to end his suffering. She does so. Which of the following accurately states the criminal position?",
+      "options": {
+        "A": "The sister has committed no offence because Kieran consented and had full mental capacity.",
+        "B": "The sister has committed the offence of aiding and abetting suicide under s.2 of the Criminal Law (Suicide) Act 1993, carrying a maximum of fourteen years imprisonment.",
+        "C": "The sister has committed manslaughter only, as she did not intend to kill but to relieve suffering.",
+        "D": "This would constitute murder but the sister would have a complete defence of necessity."
+      },
+      "correct_answer": "B",
+      "explanation": "The sister has committed an offence under s.2 of the Criminal Law (Suicide) Act 1993 — aiding or procuring the suicide of another. Consent of the person wishing to die is not a defence. The prohibition remains absolute in Irish law. The maximum penalty on indictment is fourteen years imprisonment. Fleming v Ireland confirms the constitutional validity of this prohibition.",
+      "difficulty": "medium",
+      "topic": "Criminal Law (Suicide) Act 1993 — Application"
+    },
+    {
+      "id": "CL_M04_L04_Q09",
+      "question": "What was the significance of Conway v Ireland [2017] IEHC in the context of assisted suicide law?",
+      "options": {
+        "A": "The High Court departed from Fleming and found a constitutional right to assisted dying for terminally ill persons.",
+        "B": "The High Court followed the Fleming framework, dismissing the challenge and affirming that constitutional reform is a legislative function.",
+        "C": "The case introduced a new balancing test between the right to life and the right to dignity.",
+        "D": "The High Court referred the matter to a constitutional convention for determination."
+      },
+      "correct_answer": "B",
+      "explanation": "Conway v Ireland [2017] IEHC was a further constitutional challenge to the assisted suicide prohibition brought after Fleming. The High Court followed and applied the reasoning in Fleming, dismissing the challenge. It affirmed that the courts would not move beyond the Fleming framework and that reform remained a legislative matter. It demonstrates the consistency of judicial restraint in this area.",
+      "difficulty": "hard",
+      "topic": "Conway v Ireland"
+    },
+    {
+      "id": "CL_M04_L04_Q10",
+      "question": "As of March 2026, what is the current legislative position on assisted dying in Ireland following the Oireachtas Joint Committee's 2024 report?",
+      "options": {
+        "A": "Legislation has been enacted permitting assisted dying for terminally ill persons with full mental capacity, subject to safeguards.",
+        "B": "The criminal prohibition under s.2 of the Criminal Law (Suicide) Act 1993 remains in full force; no legislation has been enacted despite the Joint Committee's recommendations.",
+        "C": "Assisted dying has been decriminalised by regulation pending primary legislation.",
+        "D": "The Criminal Law (Suicide) Act 1993 has been repealed in its entirety."
+      },
+      "correct_answer": "B",
+      "explanation": "As of March 2026, no assisted dying legislation has been enacted in Ireland. The Oireachtas Joint Committee on Assisted Dying published a report in early 2024 recommending legislation for terminally ill persons with full capacity and strict safeguards, but no Act followed. The prohibition under s.2 of the Criminal Law (Suicide) Act 1993 remains in full force and Fleming v Ireland remains the controlling constitutional authority.",
+      "difficulty": "hard",
+      "topic": "Current Legislative Position"
+    }
+  ]
+}

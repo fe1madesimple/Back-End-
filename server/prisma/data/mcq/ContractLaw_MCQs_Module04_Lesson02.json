@@ -1,0 +1,131 @@
+{
+  "subject": "Contract Law",
+  "el_script_ref": "ContractLaw_ElevenLabs_Module04_Lesson02.txt",
+  "module_number": 4,
+  "module_title": "Vitiating Factors",
+  "lesson_number": 2,
+  "lesson_title": "Mistake",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "At common law, the doctrine of operative mistake is generally:",
+      "options": {
+        "A": "Broadly construed to protect any party who enters a contract under a misapprehension",
+        "B": "Narrowly construed — the categories of operative mistake are limited and the courts are reluctant to allow mistake to undermine certainty of contract",
+        "C": "Available whenever a party makes an error of judgment about the value of the subject matter",
+        "D": "Confined to mistakes about the identity of the other contracting party"
+      },
+      "correct_answer": "B",
+      "explanation": "The law of mistake is one of the most restrictive areas of contract law. The courts approach the doctrine narrowly because allowing mistake to operate too readily would undermine contractual certainty. As a general rule, a party is bound by their apparent agreement even if they subjectively intended something different. Only certain, well-defined categories of mistake — common mistake as to fundamental matters, mutual mistake, or operative unilateral mistake — can render a contract void or subject to equitable relief."
+    },
+    {
+      "id": 2,
+      "question": "A common mistake occurs where:",
+      "options": {
+        "A": "The two parties share the same false assumption about a fundamental matter that goes to the root of the contract",
+        "B": "One party is mistaken about the terms of the contract and the other is not",
+        "C": "Both parties make different mistakes about different matters that together render the contract unworkable",
+        "D": "A party mistakenly believes the other party is creditworthy when they are not"
+      },
+      "correct_answer": "A",
+      "explanation": "Common mistake arises where both parties to the contract share the same mistaken assumption about a fundamental matter that exists at the time of contracting. Because both parties are equally mistaken, there is no false statement by one party to the other — the mistake is 'common' to them. The most established category of common mistake at common law is res extincta — where both parties are mistaken as to the existence of the subject matter of the contract."
+    },
+    {
+      "id": 3,
+      "question": "In Couturier v Hastie [1856] (HL), a contract was made for the sale of a cargo of corn that had, unknown to either party, already been sold and disposed of before the contract was formed. The House of Lords held:",
+      "options": {
+        "A": "The seller was liable in breach of contract for failure to deliver",
+        "B": "The buyer was bound to pay the price because the risk of the cargo's loss had passed to them",
+        "C": "The contract was void as there was no subject matter in existence at the time of contracting",
+        "D": "The contract was voidable and could be rescinded by either party"
+      },
+      "correct_answer": "C",
+      "explanation": "In Couturier v Hastie [1856], the House of Lords held that the contract was void because the corn did not exist at the time the contract was made. This is the foundational res extincta authority: a contract for the sale of something that does not exist at the time of contracting is void for common mistake. The principle is codified in the Sale of Goods Act 1893, s6 (and its Irish equivalent under SGSSA 1980), which provides that where goods have perished before a contract is made, the contract is void."
+    },
+    {
+      "id": 4,
+      "question": "In Bell v Lever Brothers Ltd [1932] (HL), the House of Lords held that a common mistake would only render a contract void at common law if:",
+      "options": {
+        "A": "The mistake was about the quality of the subject matter and significantly reduced its value",
+        "B": "The mistake was so fundamental as to make the contract essentially and radically different from what the parties had contemplated",
+        "C": "Both parties would have refused to enter the contract had they known the true state of affairs",
+        "D": "The mistake related to the existence of the subject matter, not its quality or characteristics"
+      },
+      "correct_answer": "B",
+      "explanation": "Bell v Lever Bros [1932] is the leading authority on common mistake at common law. The House of Lords held, by majority, that common mistake will only void a contract if the mistake is so fundamental that it makes the subject matter of the contract essentially and radically different from what the parties contemplated. A mere mistake as to quality (even a significant one) will not suffice. The high threshold reflects the law's commitment to contractual certainty — the directors' service agreements in Bell were not void even though both parties were unaware of the directors' prior breach."
+    },
+    {
+      "id": 5,
+      "question": "In Great Peace Shipping Ltd v Tsavliris Salvage (International) Ltd [2002] (CA England), the Court of Appeal considered whether equity could provide relief for common mistake where the contract was not void at common law. The Court held:",
+      "options": {
+        "A": "Equity has a broad discretion to grant relief for common mistake even where the contract is not void at common law",
+        "B": "There is no separate equitable doctrine of common mistake — if a mistake is not sufficiently fundamental to void the contract at law, equity cannot set it aside either",
+        "C": "Equity can rescind a contract for common mistake where the mistake is about quality rather than existence",
+        "D": "Equity can grant relief for common mistake only where rescission is sought within 12 months of contracting"
+      },
+      "correct_answer": "B",
+      "explanation": "In Great Peace Shipping [2002], the Court of Appeal overruled Solle v Butcher [1950] and held that there is no separate equitable jurisdiction to rescind a contract for common mistake where the mistake falls short of the Bell v Lever Bros threshold for voidness at common law. The two-tier system of legal and equitable mistake was rejected: if the mistake is not sufficiently fundamental to void the contract at law, equity cannot be used to achieve the same result through rescission. This position clarifies and restricts the doctrine significantly."
+    },
+    {
+      "id": 6,
+      "question": "Mutual mistake arises where:",
+      "options": {
+        "A": "Both parties make the same mistake about a fundamental fact",
+        "B": "The parties are at cross-purposes — each is mistaken but about different things, and they are talking past each other",
+        "C": "One party is mistaken and the other is aware of, but does not correct, the mistake",
+        "D": "A party makes a mistake about the effect of a written term they have signed"
+      },
+      "correct_answer": "B",
+      "explanation": "Mutual mistake (sometimes called 'cross-purposes' mistake) occurs where the parties are at cross-purposes — each has a different understanding of what the contract is about, but each is mistaken in a different way. For example, the seller believes they are selling one item, the buyer believes they are buying another. In Raffles v Wichelhaus [1864], both parties referred to a ship 'Peerless' but meant different ships of that name. If the objective test cannot determine which party's understanding should prevail, the contract may be void for mutual mistake."
+    },
+    {
+      "id": 7,
+      "question": "Unilateral mistake occurs where only one party is mistaken. At common law, a contract will be void for unilateral mistake only where:",
+      "options": {
+        "A": "The mistaken party was induced into the mistake by their own negligence",
+        "B": "The non-mistaken party knew of the mistake (or was deemed to know), particularly a mistake as to the terms of the contract",
+        "C": "The mistake relates to the price of the subject matter and is significant",
+        "D": "The mistaken party communicated their mistake to the other party before signing"
+      },
+      "correct_answer": "B",
+      "explanation": "Unilateral mistake will only operate to void a contract at common law in very limited circumstances. The key category is where the non-mistaken party knew of the other's mistake — particularly a mistake about the fundamental terms of the contract (e.g., the price). In such cases, the non-mistaken party cannot 'snatch at a bargain' they know the other party never intended to offer. The court will not allow the non-mistaken party to enforce a contract based on an agreement they knew the other party did not intend to make."
+    },
+    {
+      "id": 8,
+      "question": "Mistake as to identity — where one party is mistaken about the identity of the person they are contracting with — is most likely to void a contract where:",
+      "options": {
+        "A": "The contract is made in writing and the rogue uses a false name on the document",
+        "B": "The contract is made inter absentes (not face to face), and identity is fundamental to the decision to contract",
+        "C": "The goods are of high value and the identity of the buyer affects their creditworthiness",
+        "D": "The rogue has committed a criminal offence in obtaining the contract"
+      },
+      "correct_answer": "B",
+      "explanation": "The law distinguishes between identity mistakes made face-to-face and those made inter absentes. Where parties deal face to face, the courts presume that the seller intends to deal with the person physically present — the contract is merely voidable for fraud, not void for mistake, meaning a bona fide purchaser for value without notice can obtain good title (Phillips v Brooks [1919], Shogun Finance v Hudson [2003]). Where the contract is made at a distance (e.g., by letter), identity is more likely to be treated as fundamental, making the contract void ab initio: Cundy v Lindsay [1878]."
+    },
+    {
+      "id": 9,
+      "question": "In Shogun Finance Ltd v Hudson [2003] (HL), the House of Lords addressed mistake as to identity in the context of a hire-purchase transaction. The majority held:",
+      "options": {
+        "A": "The contract between the finance company and the rogue was voidable, not void, for mistake as to identity",
+        "B": "The contract was void ab initio because the finance company intended to deal with the named individual (whose identity had been stolen) not the rogue who was physically present",
+        "C": "Mistake as to identity can never void a consumer transaction",
+        "D": "The rogue's victim had no remedy against the finance company because the transaction was conducted at arm's length"
+      },
+      "correct_answer": "B",
+      "explanation": "In Shogun Finance v Hudson [2003], the House of Lords (by majority) held that where the contract was made in writing using a stolen identity document, the finance company contracted with the person named in the document, not the rogue. Since the named person was not a party, the contract was void for mistake as to identity. Title could not pass to the rogue and therefore could not pass to Hudson (the innocent third party purchaser). The dissent argued that the transaction was merely voidable and that the innocent purchaser should be protected."
+    },
+    {
+      "id": 10,
+      "question": "The non est factum doctrine ('it is not my deed') allows a party to avoid a signed contract where:",
+      "options": {
+        "A": "The party signed the contract without reading it and the terms are unexpectedly onerous",
+        "B": "The document signed is fundamentally different in character from what the party believed they were signing, and the party was not negligent in signing",
+        "C": "The party signed under duress and the signature was therefore not voluntary",
+        "D": "The party misunderstood the legal effect of a clause in the contract"
+      },
+      "correct_answer": "B",
+      "explanation": "Non est factum is a narrow doctrine allowing a party to escape a signed document where: (1) the document is fundamentally or radically different in character from what they believed they were signing (not merely different in detail); and (2) they were not negligent in signing. In Saunders v Anglia Building Society [1971] (HL), the House of Lords restricted the doctrine — the document must differ fundamentally in character (e.g., signing a gift when you believe it is a mortgage) not merely in terms. Careless failure to read the document defeats the plea."
+    }
+  ]
+}

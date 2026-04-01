@@ -1,0 +1,131 @@
+{
+  "subject": "Constitutional Law",
+  "el_script_ref": "ConstitutionalLaw_ElevenLabs_Module06_Lesson01.txt",
+  "module_number": 6,
+  "module_title": "Fundamental Rights III: Property, Religion and Directive Principles",
+  "lesson_number": 1,
+  "lesson_title": "Private Property (Art. 43)",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CON_M06_L01_Q01",
+      "question": "Article 43.1.1° states that the State acknowledges that man, in virtue of his rational being, has the natural right, antecedent to positive law, to the private ownership of external goods. What is the constitutional significance of this formulation?",
+      "options": {
+        "A": "It means that any acquisition of private property by the State for any purpose is constitutionally prohibited",
+        "B": "It recognises the right to private property as a natural right pre-existing the State, grounded in personhood — not a State-granted right; however, Art. 43.2 qualifies this by permitting the exercise of property rights to be regulated in the interests of the common good",
+        "C": "It provides an absolute and unrestricted constitutional right to own any amount of property",
+        "D": "It limits the right to private property to real property only; personal property is not constitutionally protected"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 43.1.1° grounds the property right in natural law — it is a pre-political right derived from human rationality. However, Art. 43.2.1° immediately qualifies this: the State may 'delimit' the exercise of property rights to reconcile with the exigencies of the common good. This creates a two-stage analysis: (i) does the person have a constitutionally protected property right? (ii) Is the regulation of that right justified by the common good? Outright confiscation without compensation will generally violate Art. 43, but proportionate regulation of how property may be used is permissible."
+    },
+    {
+      "id": "CON_M06_L01_Q02",
+      "question": "What is the distinction between 'delimitation' of property rights (permitted by Art. 43.2) and 'abolition' of property rights (prohibited by Art. 43.1.2°)?",
+      "options": {
+        "A": "There is no meaningful constitutional distinction; any State limitation on property is constitutionally equal",
+        "B": "Delimitation means proportionate regulation of how property rights are exercised in the common good (permissible); abolition means the total extinction of private property rights as a class (prohibited); any individual deprivation may amount to abolition if it wholly strips an owner of all incidents of ownership",
+        "C": "Delimitation applies to commercial property only; abolition applies to residential property only",
+        "D": "Abolition is prohibited only for religious institutions; all other property owners can have their rights abolished"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 43.1.2° provides that the State shall not enact any law attempting to abolish the right of private ownership or the general right to transfer, bequeath and inherit property. Art. 43.2.1° permits the State to delimit, by law, the exercise of those rights in the interests of the common good. The distinction between delimitation (regulation of exercise — permissible) and abolition (extinction of the right itself — prohibited) is fundamental. In practice, if a law strips an owner of all incidents of ownership (right to use, rent, sell, develop) it may cross into unconstitutional abolition even if technically called 'regulation'."
+    },
+    {
+      "id": "CON_M06_L01_Q03",
+      "question": "In Blake v Attorney General [1982] IR 117, the Supreme Court upheld the Rent Restrictions Acts which controlled the rents landlords could charge. On what constitutional basis was this upheld?",
+      "options": {
+        "A": "The court held that rent restrictions are not subject to Art. 43 as they concern commercial law only",
+        "B": "The court held that rent restriction legislation was a permissible delimitation of property rights in the exercise of the common good — the social need for affordable housing justified the limitation; however, the level of restriction in that case was found to amount to an unjust attack on property rights",
+        "C": "The court held that landlords have no Art. 43 rights as property income is not constitutionally protected",
+        "D": "The court upheld the Rent Restrictions Acts in full without any constitutional reservation"
+      },
+      "correct_answer": "B",
+      "explanation": "Blake v AG [1982] IR 117 is the key case on the Art. 43/Art. 40.3.2° property rights analysis. The Supreme Court held that rent restriction legislation can be a legitimate delimitation of property rights in the interest of the common good (affordable housing). However, the Rent Restrictions Acts then in force were found to impose such a severe restriction — fixing rents at 1940s levels and denying landlords any reasonable return — that they crossed from permissible delimitation into an unjust attack on property rights under Art. 40.3.2°. This led to significant legislative reform of rent control. The case illustrates that delimitation must be proportionate."
+    },
+    {
+      "id": "CON_M06_L01_Q04",
+      "question": "What is the relationship between Article 43 (private property) and Article 40.3.2° (the State's obligation to protect property rights from unjust attack)?",
+      "options": {
+        "A": "They are identical provisions with identical scope",
+        "B": "Art. 43 is the general constitutional recognition of property as a natural right and permits delimitation in the common good; Art. 40.3.2° imposes a specific obligation on the State to protect the property rights of every citizen from unjust attack, providing an individual constitutional cause of action against disproportionate State interference",
+        "C": "Art. 40.3.2° applies to personal property only; Art. 43 applies to real property only",
+        "D": "Art. 43 is a directive principle only; Art. 40.3.2° is the only justiciable property rights provision"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 43 and Art. 40.3.2° work together in property rights challenges. Art. 43 provides the constitutional framework: acknowledgment of the natural right to property, the right not to be abolished (Art. 43.1.2°), and the State's power to delimit exercise in the common good (Art. 43.2). Art. 40.3.2° provides the individual right: the State shall, in particular, by its laws protect as best it may from unjust attack the property rights of every citizen. A challenge to property interference typically invokes both: Art. 43 to establish the constitutional status of the right, and Art. 40.3.2° as the basis for the individual claim that the interference amounts to an unjust attack."
+    },
+    {
+      "id": "CON_M06_L01_Q05",
+      "question": "The Planning and Development Act 2000 requires landowners to seek planning permission before developing land. Is this a constitutionally permissible limitation on property rights under Art. 43?",
+      "options": {
+        "A": "No — requiring permission to develop one's own land is an unconstitutional restriction on property rights",
+        "B": "Yes — planning permission requirements are a classic example of constitutionally permissible delimitation of property rights in the interests of the common good (orderly development, environmental protection, neighbour rights); proportionate planning regulation does not amount to abolition or unjust attack",
+        "C": "Planning law is exclusively an EU law matter and is not subject to Art. 43",
+        "D": "Yes, but only if the landowner is compensated for every planning refusal as if the development had been permitted"
+      },
+      "correct_answer": "B",
+      "explanation": "The requirement to obtain planning permission before developing land is the quintessential example of Art. 43.2 delimitation — the State regulates how property rights are exercised in the interests of orderly and sustainable development, protection of the environment, and protection of neighbours' amenity. This does not amount to abolition of the right to own and use property; it regulates the manner of use. Compensation is not automatically required for planning refusals, though compulsory acquisition of land must be accompanied by just compensation under the Lands Clauses Acts and relevant planning legislation."
+    },
+    {
+      "id": "CON_M06_L01_Q06",
+      "question": "In Dreher v Irish Land Commission [1984] ILRM 94, the Supreme Court considered the constitutional validity of the Irish Land Commission's power to compulsorily acquire and divide agricultural land. What was the constitutional analysis?",
+      "options": {
+        "A": "Compulsory acquisition of agricultural land is always unconstitutional under Art. 43",
+        "B": "The compulsory acquisition powers were upheld as a permissible Art. 43.2 delimitation in the common good — the redistribution of land to promote viable agricultural holdings and rural communities was a legitimate constitutional aim; adequate compensation was required under Art. 40.3.2°",
+        "C": "The court held that the Land Commission's powers violated Art. 43 because redistribution of land is not a recognised common good objective",
+        "D": "The court held that compensation for compulsory acquisition is constitutionally prohibited as it would be State subsidy of private land ownership"
+      },
+      "correct_answer": "B",
+      "explanation": "Dreher v Irish Land Commission [1984] illustrates that compulsory acquisition of property — even where the owner objects — can be constitutionally permissible if: (i) it is authorised by statute; (ii) it serves a legitimate common good objective (in Dreher, land redistribution for viable farming); and (iii) adequate compensation is paid. The requirement of compensation is derived from Art. 40.3.2° — the State must not unjustly attack property rights, and deprivation without compensation would be an unjust attack. 'Just compensation' does not necessarily mean market value in every case, but must be fair and proportionate."
+    },
+    {
+      "id": "CON_M06_L01_Q07",
+      "question": "In Hempenstall v Minister for the Environment [1994] 2 IR 20, the High Court considered whether the restriction on taxi licence transfers interfered with property rights. What did the court hold?",
+      "options": {
+        "A": "A taxi licence is not property for constitutional purposes and Art. 43 does not apply",
+        "B": "A taxi licence, while not land, is a form of property with commercial value; restrictions on its transfer could engage Art. 43 and Art. 40.3.2°, but the regulatory scheme was a proportionate common good limitation",
+        "C": "All licences are State property and cannot give rise to constitutional property rights in the licence holder",
+        "D": "The court held that property rights under Art. 43 extend only to physical, tangible goods"
+      },
+      "correct_answer": "B",
+      "explanation": "Hempenstall v Minister for the Environment [1994] 2 IR 20 recognised that property rights under Art. 43 and Art. 40.3.2° can extend beyond physical real property to include intangible commercial rights with economic value — such as taxi licences. Restrictions on transfer engaged the constitutional property rights framework. However, the court upheld the regulatory scheme as a proportionate delimitation in the common good. This expansive approach to 'property' has been confirmed in later cases: the key is whether there is a recognised economic right with identifiable value, not whether it takes a physical form."
+    },
+    {
+      "id": "CON_M06_L01_Q08",
+      "question": "The Government enacted emergency legislation during the financial crisis (2011) providing for the compulsory transfer of pension fund assets to cover social insurance costs. Would such legislation be constitutionally permissible under Art. 43?",
+      "options": {
+        "A": "Yes — emergency economic conditions automatically suspend Art. 43 property rights",
+        "B": "No — pension fund assets are protected property rights under Art. 43; compulsory transfer without compensation would be an unjust attack under Art. 40.3.2° and would likely cross from delimitation into abolition of those rights",
+        "C": "Yes — the common good provision of Art. 43.2 permits the State to take property without compensation in genuine emergencies",
+        "D": "Yes — Art. 45 directive principles allow the State to redistribute wealth freely without engaging Art. 43"
+      },
+      "correct_answer": "B",
+      "explanation": "Pension fund assets represent constitutionally protected property rights under Art. 43 and Art. 40.3.2°. Compulsory transfer of pension assets without adequate compensation would constitute an unjust attack on property rights — not a mere delimitation of how rights are exercised. Economic emergency does not suspend Art. 43, though it may inform the proportionality analysis (as upheld in the Pension Levy cases before the Supreme Court, where certain levies were upheld as proportionate). Complete confiscation without compensation would cross into unconstitutional territory. The State must demonstrate a proportionate, legally grounded basis for any interference."
+    },
+    {
+      "id": "CON_M06_L01_Q09",
+      "question": "Does Article 43 protect the right of succession — the right to inherit or bequeath property?",
+      "options": {
+        "A": "No — the right of succession is not mentioned in Art. 43 and is protected only by statute",
+        "B": "Yes — Art. 43.1.2° explicitly protects 'the general right to transfer, bequeath and inherit property'; the State cannot abolish succession rights, though it may regulate succession through inheritance tax and succession law",
+        "C": "Art. 43 protects succession rights only for spouses and children; third-party beneficiaries have no constitutional protection",
+        "D": "Succession rights are exclusively governed by EU Succession Regulation No. 650/2012 and are beyond domestic constitutional protection"
+      },
+      "correct_answer": "B",
+      "explanation": "Art. 43.1.2° expressly protects 'the general right to transfer, bequeath and inherit property' as part of the constitutional guarantee. The State cannot abolish succession — legislation that entirely eliminated the right to leave or inherit property would be unconstitutional. However, the State may regulate succession: inheritance tax (Capital Acquisitions Tax), the Succession Act 1965's legal right share for spouses and children, and rules on intestacy are all permissible delimitations. 'General right' in Art. 43.1.2° means the right as a concept — not that any specific bequest is constitutionally guaranteed."
+    },
+    {
+      "id": "CON_M06_L01_Q10",
+      "question": "In the context of the housing crisis, does the constitutional property right under Art. 43 prevent the State from enacting stronger rent control or tenant protection measures?",
+      "options": {
+        "A": "Yes — any rent control that limits landlord income is unconstitutional under Blake v AG",
+        "B": "No — Art. 43.2 expressly permits the State to delimit property rights in the interests of the common good; proportionate rent regulation that still allows landlords a reasonable return does not amount to an unjust attack; Blake v AG established that extreme restrictions violating proportionality are unconstitutional, not all rent regulation",
+        "C": "Yes — the Supreme Court held in 2023 that all rent pressure zones are unconstitutional",
+        "D": "Art. 43 does not apply to residential tenancies; it applies only to commercial property"
+      },
+      "correct_answer": "B",
+      "explanation": "Blake v AG [1982] did not hold all rent control unconstitutional — it held that the particular, extreme rent restrictions (freezing rents at 1940s levels, denying any reasonable return) went beyond permissible delimitation. Post-Blake, proportionate rent regulation that allows landlords a reasonable market return while addressing tenant protection in the common good remains constitutionally permissible. Ireland's Rent Pressure Zone regime (Residential Tenancies Acts) has been challenged but courts have upheld it as proportionate delimitation. The constitutional test is whether the regulation constitutes an unjust attack — proportionality, not any restriction, is the test."
+    }
+  ]
+}

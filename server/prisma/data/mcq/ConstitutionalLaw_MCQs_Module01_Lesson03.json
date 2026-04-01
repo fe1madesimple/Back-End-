@@ -1,0 +1,131 @@
+{
+  "subject": "Constitutional Law",
+  "el_script_ref": "ConstitutionalLaw_ElevenLabs_Module01_Lesson03.txt",
+  "module_number": 1,
+  "module_title": "Foundations of the Irish Constitution",
+  "lesson_number": 3,
+  "lesson_title": "Amendment of the Constitution",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CON_M01_L03_Q01",
+      "question": "Article 46 of the Constitution prescribes the procedure for constitutional amendment. Which of the following accurately describes the two-stage process required under Article 46.1 and 46.2?",
+      "options": {
+        "A": "Stage 1: The Bill must be passed by both Houses of the Oireachtas; Stage 2: It must be submitted to a referendum and approved by a two-thirds majority of votes cast",
+        "B": "Stage 1: The Bill must be initiated in and passed by Dail Eireann; Stage 2: It must be passed by Seanad Eireann and then submitted to the people in a referendum",
+        "C": "Stage 1: The Bill must be initiated in Dail Eireann only and passed by both Houses; Stage 2: It must be submitted to a referendum and approved by a simple majority of votes cast",
+        "D": "Stage 1: The Bill must be approved by three-fifths of Dail Eireann; Stage 2: It must be submitted to a referendum for ratification by the people"
+      },
+      "correct_answer": "C",
+      "explanation": "Article 46.1 requires any Bill to amend the Constitution to be initiated in Dail Eireann only — not the Seanad (contrast with ordinary Bills which may be initiated in either House). Article 46.2 requires the Bill, once passed by both Houses, to be submitted to the people in a referendum. The required threshold under Article 47.1 is a simple majority of votes cast (not a supermajority, and not a majority of the entire electorate). This is a significant feature: turnout in referendums can be low, meaning amendments can pass with a relatively small number of absolute votes. Option A is wrong on the majority threshold. Option B is wrong as to initiation."
+    },
+    {
+      "id": "CON_M01_L03_Q02",
+      "question": "Article 47.1 of the Constitution specifies how the result of a constitutional referendum is determined. Which of the following correctly states the required threshold for approval of a constitutional amendment?",
+      "options": {
+        "A": "A majority of all registered voters on the electoral register must vote in favour of the proposed amendment",
+        "B": "A two-thirds majority of all valid votes cast at the referendum must be in favour of the amendment",
+        "C": "A majority of the valid votes cast at the referendum must be in favour of the proposed amendment",
+        "D": "A majority of votes cast, provided the total votes cast represent at least 50% of the registered electorate, must be in favour"
+      },
+      "correct_answer": "C",
+      "explanation": "Article 47.1 provides that the proposed amendment shall be deemed to have been approved by the people if a majority of the votes cast at the referendum are cast in favour. There is no minimum turnout requirement and no supermajority threshold. This means that where turnout is low, an amendment can be constitutionally approved by a minority of the total electorate — a feature criticised in debates over referendums with low participation rates. This contrasts with some other jurisdictions which require either a minimum turnout or a supermajority. The simplicity of the Irish threshold (majority of votes cast) makes it one of the more accessible constitutional amendment procedures in comparative terms."
+    },
+    {
+      "id": "CON_M01_L03_Q03",
+      "question": "Crotty v An Taoiseach [1987] IR 713 (Supreme Court) is the leading case on the constitutional limitations on the State's treaty-making power. Which of the following most accurately states the principle established?",
+      "options": {
+        "A": "The State may ratify any international treaty without a referendum, provided the Government is satisfied the treaty is consistent with the Constitution",
+        "B": "Any treaty that involves a transfer of powers previously held by organs of the State requires an amendment to the Constitution by referendum before it can be ratified",
+        "C": "The Oireachtas may ratify treaties that affect constitutional provisions by a two-thirds majority of both Houses, without a referendum",
+        "D": "The State may ratify treaties that affect the Constitution by executive order under Article 29.6, which gives the executive plenary power over foreign affairs"
+      },
+      "correct_answer": "B",
+      "explanation": "Crotty v An Taoiseach [1987] IR 713 arose from a challenge to Ireland's ratification of the Single European Act. The Supreme Court (majority: Walsh, Henchy, Hederman JJ) held that certain provisions of the SEA involved a transfer of Ireland's sovereign powers and therefore required a constitutional amendment by referendum before ratification. This established the principle that the Government cannot bind the State in ways that would alter the essential scope of the Constitution's allocation of powers without a referendum. The practical consequence is that each successive major EU treaty — Maastricht, Amsterdam, Nice, Lisbon — required a constitutional amendment referendum in Ireland. Crotty is thus the direct cause of Ireland's multiple EU referendums."
+    },
+    {
+      "id": "CON_M01_L03_Q04",
+      "question": "The Sixth Amendment to the Constitution (1979) proposed changes to the composition of the Seanad university panels. This amendment is constitutionally significant because it was the first amendment to fail a referendum. Which feature of this failure is most constitutionally noteworthy?",
+      "options": {
+        "A": "It was the first time the Supreme Court invalidated a proposed constitutional amendment on procedural grounds before the referendum took place",
+        "B": "It demonstrated that under Article 47.1, the people retain a veto over constitutional amendments even where both Houses of the Oireachtas have passed the Bill",
+        "C": "It triggered a constitutional crisis because the government refused to accept the referendum result, leading to a Supreme Court ruling on the binding nature of referendums",
+        "D": "It established that university seats in the Seanad are constitutionally entrenched and can never be altered by referendum"
+      },
+      "correct_answer": "B",
+      "explanation": "The Sixth Amendment (1979), which proposed changes to Seanad university representation, was passed by both Houses of the Oireachtas but rejected by the people at referendum. This illustrates the fundamental constitutional principle that the referendum requirement is not merely procedural — it is a substantive check on Oireachtas power. Even if both Houses unanimously agree on a constitutional amendment, it takes effect only if the people approve it by majority vote. Article 46 thus embodies popular sovereignty (Art. 6): the people are the ultimate constitutional authority, superior to the Oireachtas, for the purposes of constitutional change. No amendment takes effect until presidential proclamation following a positive referendum result."
+    },
+    {
+      "id": "CON_M01_L03_Q05",
+      "question": "The Nineteenth Amendment of the Constitution Act 1998 gave effect to the Belfast/Good Friday Agreement. Which of the following correctly identifies the two most significant constitutional changes effected by this amendment?",
+      "options": {
+        "A": "The deletion of the special position of the Roman Catholic Church (Article 44.1.2 degrees) and the removal of the constitutional prohibition on divorce (Article 41.3.2 degrees)",
+        "B": "The substitution of new Articles 2 and 3 (replacing territorial claim to Northern Ireland with aspiration to unity) and the insertion of Article 29.4.6 degrees (recognising North-South and British-Irish bodies)",
+        "C": "The insertion of Article 40.3.3 degrees protecting the right to life of the unborn and the amendment of Article 41.3 to prohibit divorce",
+        "D": "The amendment of Article 29.4 to permit EU membership and the deletion of the ban on the dissolution of marriage in Article 41.3.2 degrees"
+      },
+      "correct_answer": "B",
+      "explanation": "The Nineteenth Amendment (1998), approved by the people in the simultaneous North/South referendum on 22 May 1998, effected two landmark changes: (1) the substitution of a new Article 2 (affirming the birthright of every person born on the island of Ireland to be part of the Irish nation) and a new Article 3 (replacing the territorial claim to Northern Ireland with a constitutional aspiration to unity by consent, pending which Northern Ireland is recognised as a separate jurisdiction); and (2) the insertion of Article 29.4.6 degrees authorising the State to be a member of bodies established under the Belfast Agreement (including the North-South Ministerial Council and the British-Irish Intergovernmental Conference). The original Arts. 2 and 3 claiming sovereignty over Northern Ireland were the constitutional and political basis for the territorial dispute."
+    },
+    {
+      "id": "CON_M01_L03_Q06",
+      "question": "The Thirty-Fourth Amendment of the Constitution (Marriage Equality) Act 2015 inserted Article 41.4 into the Constitution. What precisely does this Article provide, and what constitutional consequence followed for existing statutory definitions of marriage?",
+      "options": {
+        "A": "Article 41.4 provides that marriage may be contracted by two persons without distinction as to their sex; this rendered the Civil Registration Act 2004's opposite-sex definition constitutionally ineffective and required legislative amendment",
+        "B": "Article 41.4 provides that civil partnership has the same constitutional status as marriage; this required the Oireachtas to extend all marriage rights to civil partners by statute within six months",
+        "C": "Article 41.4 provides that the State shall not discriminate between married and unmarried couples; this rendered Articles 41.1 and 41.3 inapplicable to same-sex couples",
+        "D": "Article 41.4 provides that equality legislation shall apply to marriage ceremonies; this required the removal of religious exemptions from the Equal Status Acts"
+      },
+      "correct_answer": "A",
+      "explanation": "The Thirty-Fourth Amendment inserted Article 41.4: 'Marriage may be contracted in accordance with law by two persons without distinction as to their sex.' This constitutional change was self-executing in that it invalidated any statutory provision inconsistent with it — specifically the Civil Registration Act 2004's definitional framework confining marriage to opposite-sex couples. The Marriage Act 2015 was enacted to give statutory effect to the constitutional amendment by amending the Civil Registration Act. Ireland was the first country in the world to introduce same-sex marriage by popular referendum, having rejected proposals to establish marriage equality through the Oireachtas alone (on the basis that such a fundamental social change required direct popular endorsement)."
+    },
+    {
+      "id": "CON_M01_L03_Q07",
+      "question": "The Thirty-Sixth Amendment of the Constitution Act 2018 repealed Article 40.3.3 degrees (the Eighth Amendment), which had protected the right to life of the unborn with due regard to the equal right to life of the mother. The amendment substituted a new provision. Which of the following correctly describes the effect of the new provision?",
+      "options": {
+        "A": "It inserted a new constitutional right to abortion, subject to such conditions as the Oireachtas may specify by law",
+        "B": "It gave the Oireachtas express constitutional power to provide for the termination of pregnancy by law, removing the constitutional barrier to legislation in this area",
+        "C": "It deleted Article 40.3.3 degrees entirely and replaced it with a prohibition on discrimination on grounds of pregnancy, leaving regulation to the Oireachtas",
+        "D": "It inserted a right to healthcare during pregnancy and provided that the State shall by law ensure access to termination of pregnancy services without restriction as to reason"
+      },
+      "correct_answer": "B",
+      "explanation": "The Thirty-Sixth Amendment substituted a new Article 40.3.3 degrees reading: 'Provision may be made by law for the regulation of termination of pregnancy.' This is a facilitating rather than a rights-granting provision: it does not constitutionally guarantee a right to abortion but removes the constitutional prohibition that previously precluded the Oireachtas from legislating for termination of pregnancy in most circumstances. The Health (Regulation of Termination of Pregnancy) Act 2018 was then enacted to regulate the matter. The 2018 referendum result (66.4% in favour) reflected a significant shift in public opinion from the 67% who had voted to insert Art. 40.3.3 degrees in 1983."
+    },
+    {
+      "id": "CON_M01_L03_Q08",
+      "question": "The Referendum Commission was established to provide information to the public during referendums. Under which legislation was it established, and which of the following correctly describes its statutory mandate?",
+      "options": {
+        "A": "The Electoral Act 1997; the Commission promotes a YES vote on behalf of the government and regulates campaign spending by private individuals and organisations",
+        "B": "The Referendum Act 1998 (as amended); the Commission prepares a statement of the text of the proposed amendment, a statement of arguments for and against the proposed amendment in equal measure, and fosters public understanding",
+        "C": "The Electoral Commission Act 2022; the Commission replaced the Referendum Commission and took over the function of providing balanced information, with additional powers to regulate online political advertising",
+        "D": "The Referendum (Amendment) Act 2001; the Commission promotes the NO vote to counterbalance the government's usual advocacy for constitutional amendments it has proposed"
+      },
+      "correct_answer": "B",
+      "explanation": "The Referendum Commission was established under the Referendum Act 1998 (as amended by the Electoral (Amendment) (Political Funding) Act 2012) in response to the McKenna (No.2) [1995] ruling that the government could not spend public funds on one side of a referendum. The Commission prepares and distributes a statement of the text of the proposed amendment, a statement of arguments for and against, and promotes public understanding of the referendum process. Crucially, the Commission is constitutionally obliged to be impartial — it presents both sides equally. Note: The Electoral Reform Act 2022 established the Electoral Commission (An Coimisiun Toghchain) which has broader functions but the Referendum Commission still operates for specific referendums under the 1998 Act framework."
+    },
+    {
+      "id": "CON_M01_L03_Q09",
+      "question": "In March 2024, Ireland held two simultaneous referendums proposing amendments to Articles 41 and 42A of the Constitution. Both proposals were defeated by significant margins. Which of the following accurately describes the proposals and the primary ground on which legal commentators identified the cause of the defeat?",
+      "options": {
+        "A": "The proposals sought to delete Article 41 (the family article) entirely and replace it with a general equality provision; they failed because the wording was perceived as anti-religion",
+        "B": "The proposals sought to broaden the definition of family beyond marriage and to remove the express reference to women's roles in the home, but vague drafting of the replacement provisions — particularly the word 'durable' — caused voter confusion and rejection",
+        "C": "The proposals sought to insert a constitutional right to housing and a right to a healthy environment; they failed because the Supreme Court advised they exceeded the permissible scope of constitutional amendment",
+        "D": "The proposals sought to lower the referendum threshold from a simple majority to 45% of votes cast; they failed because the Oireachtas had not followed the correct procedure under Article 46"
+      },
+      "correct_answer": "B",
+      "explanation": "The two March 2024 referendums proposed: (1) to amend Article 41 to recognise 'durable relationships' as families alongside marriage-based families, and to delete the reference to women's life within the home (replacing it with a gender-neutral reference to care); and (2) to amend Article 42A to strengthen the provision relating to children. Both proposals were defeated decisively — the family amendment by approximately 67% to 33% against, and the care amendment by approximately 74% to 26% against. Post-referendum analysis identified key problems including: the vagueness of the term 'durable relationship' (uncertain constitutional meaning), concerns that deleting the women/home provision might undermine full-time carers, and a general distrust of the wording among diverse voter groups for contradictory reasons."
+    },
+    {
+      "id": "CON_M01_L03_Q10",
+      "question": "Heneghan v Minister for Housing, Local Government and Heritage [2023] IESC 18 resulted in the second suspended declaration of unconstitutionality in Irish constitutional history. What specific constitutional provision did the Supreme Court find to be unconstitutional, and why was the declaration suspended rather than immediately effective?",
+      "options": {
+        "A": "Article 18.4.2 degrees (the provision governing the election of Seanad university members) was found unconstitutional because it excluded graduates of post-1937 universities; suspension allowed the Oireachtas time to enact remedial legislation before a disruptive Seanad election was required",
+        "B": "Article 16.2 (Dail constituency provisions) was found unconstitutional because population shifts had rendered constituencies unequal; suspension allowed a new Electoral Commission to conduct a boundary review",
+        "C": "Article 28 (government accountability provisions) was found unconstitutional because the Taoiseach had exceeded executive power; suspension allowed the Oireachtas to pass primary legislation restoring the constitutional position",
+        "D": "Article 40.6.1 degrees(i) (freedom of expression) was found unconstitutional in its current form because it permitted excessive restrictions on political speech; suspension allowed for consultation with the Law Reform Commission"
+      },
+      "correct_answer": "A",
+      "explanation": "In Heneghan [2023] IESC 18, the Supreme Court found that the Seanad electoral system for university seats under Article 18.4.2 degrees was unconstitutional because it limited the right to vote for these seats to graduates of TCD and NUI only, excluding graduates of all post-1937 universities (UL, DCU, NUIG as independent entity, etc.) in breach of Article 40.1 (equality). The court made a suspended declaration — effective only after a specified date — to allow the Oireachtas time to legislate to remedy the unconstitutionality before any Seanad election using the invalid system would be required. This was only the second suspended declaration in Irish history (after Doherty v Government of Ireland [2010], concerning mental health). The Seanad Electoral (University Members) (Amendment) Act 2024 was subsequently enacted."
+    }
+  ]
+}

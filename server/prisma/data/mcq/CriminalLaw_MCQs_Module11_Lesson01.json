@@ -1,0 +1,131 @@
+{
+  "subject": "Criminal Law",
+  "el_script_ref": "CriminalLaw_ElevenLabs_Module11_Lesson01.txt",
+  "module_number": 11,
+  "module_title": "Domestic Violence and Related Offences",
+  "lesson_number": 1,
+  "lesson_title": "DVA 2018, Coercive Control, and the Coco Act",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "CL_M11_L01_Q01",
+      "question": "The Domestic Violence Act 2018 commenced on:",
+      "options": {
+        "A": "1 January 2018",
+        "B": "2 January 2019",
+        "C": "9 February 2021",
+        "D": "1 March 2020"
+      },
+      "correct_answer": "B",
+      "explanation": "The Domestic Violence Act 2018 commenced on 2 January 2019. It repealed and replaced the Domestic Violence Acts 1996 to 2011 and introduced a modern comprehensive framework with a civil orders regime and criminal sentencing aggravation."
+    },
+    {
+      "id": "CL_M11_L01_Q02",
+      "question": "Which of the following is NOT one of the four civil orders available under the Domestic Violence Act 2018?",
+      "options": {
+        "A": "Safety order",
+        "B": "Barring order",
+        "C": "Emergency barring order",
+        "D": "Exclusion order"
+      },
+      "correct_answer": "D",
+      "explanation": "The four civil orders under the DVA 2018 are: safety order, barring order, emergency barring order, and protection order. An 'exclusion order' is not a term used in the 2018 Act — this is a common distractor. The protection order is a temporary measure pending a full hearing."
+    },
+    {
+      "id": "CL_M11_L01_Q03",
+      "question": "Under the Domestic Violence Act 2018, a safety order can be granted for a maximum period of:",
+      "options": {
+        "A": "One year",
+        "B": "Two years",
+        "C": "Three years",
+        "D": "Five years"
+      },
+      "correct_answer": "D",
+      "explanation": "A safety order under the DVA 2018 can be granted for up to five years. It prohibits the respondent from engaging in violent or threatening behaviour but does not exclude them from the home — unlike a barring order."
+    },
+    {
+      "id": "CL_M11_L01_Q04",
+      "question": "The offence of coercive control in Ireland is created by:",
+      "options": {
+        "A": "Section 10 of the Non-Fatal Offences Against the Person Act 1997",
+        "B": "Section 2 of the Harassment, Harmful Communications and Related Offences Act 2020",
+        "C": "Section 39 of the Domestic Violence Act 2018",
+        "D": "Section 4 of the Criminal Justice Act 1964"
+      },
+      "correct_answer": "C",
+      "explanation": "The offence of coercive control is created by Section 39 of the Domestic Violence Act 2018. It was the first time psychological and emotional abuse in intimate relationships was made a criminal offence in Ireland. The maximum penalty is five years imprisonment on indictment."
+    },
+    {
+      "id": "CL_M11_L01_Q05",
+      "question": "For a conviction under Section 39 DVA 2018, the behaviour of the accused must satisfy four requirements. Which of the following is NOT one of them?",
+      "options": {
+        "A": "The behaviour must be controlling or coercive in nature",
+        "B": "The behaviour must be persistent",
+        "C": "The accused and victim must be in or have been in an intimate relationship",
+        "D": "The accused must have previously been convicted of a domestic violence offence"
+      },
+      "correct_answer": "D",
+      "explanation": "A prior conviction is not a requirement for Section 39. The four requirements are: (1) the behaviour is controlling or coercive; (2) it is persistent — a pattern rather than a single act; (3) the parties are or were in an intimate relationship; and (4) the behaviour has a serious effect on the victim's day-to-day activities or causes serious alarm or distress."
+    },
+    {
+      "id": "CL_M11_L01_Q06",
+      "question": "In DPP v Dunleavy [2020] Circuit Court, the accused was convicted of coercive control for:",
+      "options": {
+        "A": "Physically assaulting his partner on repeated occasions over a six-month period",
+        "B": "Making over six thousand phone calls to his partner over a three-month period",
+        "C": "Distributing intimate images of his partner without consent",
+        "D": "Threatening to kill his partner unless she withdrew a barring order application"
+      },
+      "correct_answer": "B",
+      "explanation": "In DPP v Dunleavy [2020] Circuit Court — one of the first prosecutions under Section 39 — the accused made over six thousand phone calls to his partner over three months. The court held this relentless contact as a tool of domination constituted coercive control. He received a three-year sentence, partially suspended."
+    },
+    {
+      "id": "CL_M11_L01_Q07",
+      "question": "DPP v Jake Boles [2023] IECA is significant in the context of coercive control sentencing because:",
+      "options": {
+        "A": "It was the first case in which coercive control was charged alongside murder",
+        "B": "The court applied the Mahoney principle to set a sentencing benchmark where few precedents existed",
+        "C": "It held that coercive control is a lesser offence than assault and should carry a suspended sentence",
+        "D": "It introduced the concept of a 'control diary' as evidence of coercive conduct"
+      },
+      "correct_answer": "B",
+      "explanation": "In DPP v Jake Boles [2023] IECA, Edwards J applied the Mahoney principle — where there are no prior comparable cases, the court must set a benchmark itself. The court noted the five-year maximum and stressed coercive control warrants real custodial sentences. Boles is a norm-setting sentencing judgment under Section 39."
+    },
+    {
+      "id": "CL_M11_L01_Q08",
+      "question": "The Harassment, Harmful Communications and Related Offences Act 2020 — the Coco Act — commenced on:",
+      "options": {
+        "A": "2 January 2019",
+        "B": "1 January 2020",
+        "C": "9 February 2021",
+        "D": "1 March 2022"
+      },
+      "correct_answer": "C",
+      "explanation": "The Harassment, Harmful Communications and Related Offences Act 2020 — the Coco Act — commenced on 9 February 2021. It modernised Ireland's legal response to technology-facilitated abuse, including non-consensual distribution of intimate images."
+    },
+    {
+      "id": "CL_M11_L01_Q09",
+      "question": "Under Section 2 of the Coco Act 2020, the maximum penalty for non-consensual distribution of intimate images is:",
+      "options": {
+        "A": "Two years imprisonment on indictment",
+        "B": "Five years imprisonment on indictment",
+        "C": "Seven years imprisonment on indictment",
+        "D": "Ten years imprisonment on indictment"
+      },
+      "correct_answer": "C",
+      "explanation": "Section 2 of the Coco Act carries a maximum of seven years imprisonment on indictment for non-consensual distribution of intimate images. Section 4 (grossly offensive communications) carries a lower maximum of two years. Candidates must know the correct penalties for both provisions."
+    },
+    {
+      "id": "CL_M11_L01_Q10",
+      "question": "The Coco Act 2020 amended Section 10 of the Non-Fatal Offences Against the Person Act 1997 specifically to address which gap in the harassment offence?",
+      "options": {
+        "A": "It extended the offence to cover workplace harassment",
+        "B": "It extended the offence to cover indirect harassment conducted through third parties",
+        "C": "It reduced the maximum penalty for online harassment to two years",
+        "D": "It created a new civil remedy for harassment victims"
+      },
+      "correct_answer": "B",
+      "explanation": "The Coco Act amended Section 10 NFOATP 1997 to extend the harassment offence to indirect harassment — harassment conducted through third parties rather than directly to the victim. Before this amendment, a harasser who communicated with the victim through intermediaries could argue they had not harassed the victim directly. That gap is now closed."
+    }
+  ]
+}

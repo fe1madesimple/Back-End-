@@ -1,0 +1,131 @@
+{
+  "subject": "Property Law",
+  "el_script_ref": "PropertyLaw_ElevenLabs_Module03_Lesson01.txt",
+  "module_number": 3,
+  "module_title": "Adverse Possession",
+  "lesson_number": 1,
+  "lesson_title": "Adverse Possession: Limitation Periods, Factual Possession, Animus Possidendi, and the Irish Position",
+  "questions": [
+    {
+      "id": "PRL_M03_L01_Q01",
+      "question": "Under the Statute of Limitations 1957, what is the limitation period for an action to recover unregistered private land?",
+      "options": {
+        "A": "Six years",
+        "B": "Twelve years",
+        "C": "Twenty years",
+        "D": "Thirty years"
+      },
+      "correct_answer": "B",
+      "explanation": "Under the Statute of Limitations 1957, the limitation period for an action to recover unregistered private land is twelve years. Once a squatter has been in adverse possession for twelve years, the paper owner's right of action to recover the land is extinguished."
+    },
+    {
+      "id": "PRL_M03_L01_Q02",
+      "question": "Under the Statute of Limitations 1957, what is the limitation period for an action by the State to recover land?",
+      "options": {
+        "A": "Twelve years",
+        "B": "Twenty years",
+        "C": "Thirty years",
+        "D": "Forty years"
+      },
+      "correct_answer": "C",
+      "explanation": "The Statute of Limitations 1957 provides a limitation period of thirty years for actions by the State to recover land. The extended period reflects the State's special position as landowner and its need for additional time to protect the public interest in State land."
+    },
+    {
+      "id": "PRL_M03_L01_Q03",
+      "question": "The two essential elements required to establish adverse possession are:",
+      "options": {
+        "A": "Registered title and continuous occupation",
+        "B": "Factual possession and animus possidendi (intention to possess)",
+        "C": "Physical enclosure and payment of rates",
+        "D": "Nec vi and nec clam only"
+      },
+      "correct_answer": "B",
+      "explanation": "Adverse possession requires two essential elements: (1) factual possession — the squatter must be in factual control of the land, exercising the type of possession that an owner would; and (2) animus possidendi — the intention to possess the land as if one were its owner. Both elements must be established."
+    },
+    {
+      "id": "PRL_M03_L01_Q04",
+      "question": "In Powell v McFarlane (1977), Slade J identified the key elements of factual possession in adverse possession. Which of the following is NOT part of that formulation?",
+      "options": {
+        "A": "The squatter must be dealing with the land as an occupying owner might be expected to deal with it",
+        "B": "The acts of possession must be open and not secret",
+        "C": "The squatter must have the permission of the paper title owner",
+        "D": "The squatter must have exclusive possession of the land"
+      },
+      "correct_answer": "C",
+      "explanation": "In Powell v McFarlane (1977), Slade J formulated the requirements for factual possession: dealing with the land as an occupying owner; open, not secret possession; and exclusive possession. Permission from the paper owner is antithetical to adverse possession — if the squatter possesses with the owner's permission, the possession is not adverse."
+    },
+    {
+      "id": "PRL_M03_L01_Q05",
+      "question": "The Latin phrase 'animus possidendi' means:",
+      "options": {
+        "A": "The physical act of possessing land",
+        "B": "The intention to possess land as an owner — the mental element of adverse possession",
+        "C": "The acquisition of title through long use",
+        "D": "The obligation to register adverse possession within twelve years"
+      },
+      "correct_answer": "B",
+      "explanation": "Animus possidendi literally means 'intention to possess.' In adverse possession, it refers to the squatter's intention to possess the land as an owner would — not merely to use or occupy it temporarily. This mental element must accompany the physical acts of possession to establish adverse possession."
+    },
+    {
+      "id": "PRL_M03_L01_Q06",
+      "question": "In JA Pye (Oxford) Ltd v Graham [2003] (House of Lords), what was the outcome in relation to the adverse possession claim?",
+      "options": {
+        "A": "The squatter's claim failed because Pye's paper title was protected by registration",
+        "B": "The squatter's (Graham's) adverse possession claim succeeded — the Grahams had been in factual possession with the necessary animus possidendi for the required period",
+        "C": "The House of Lords held that grazing of land was insufficient to constitute factual possession",
+        "D": "The claim failed because the Grahams had previously paid rent and so had been in licensed occupation"
+      },
+      "correct_answer": "B",
+      "explanation": "In JA Pye (Oxford) Ltd v Graham [2003] HL, the House of Lords upheld the Grahams' adverse possession claim. They had been in factual possession of the disputed field (grazing cattle, farming it) and had the necessary animus possidendi, for the required twelve-year period. Pye's right of action had been extinguished."
+    },
+    {
+      "id": "PRL_M03_L01_Q07",
+      "question": "In Buckinghamshire County Council v Moran [1990] (Court of Appeal), which act was held to be sufficiently strong evidence of animus possidendi?",
+      "options": {
+        "A": "Depositing rubbish on the disputed plot",
+        "B": "Walking across the land regularly",
+        "C": "Incorporating the disputed plot into the squatter's own garden by locking the gate to it",
+        "D": "Erecting a temporary fence along one side of the disputed land"
+      },
+      "correct_answer": "C",
+      "explanation": "In Buckinghamshire County Council v Moran [1990] CA, Mr Moran's act of incorporating the disputed plot into his own garden — cultivating it and locking the gate so that he had exclusive access — was held to be sufficiently strong evidence of animus possidendi. The court found that he intended to possess the land as owner, regardless of any intention to yield to the true owner if required."
+    },
+    {
+      "id": "PRL_M03_L01_Q08",
+      "question": "The three requirements often associated with establishing adverse possession are that possession must be 'nec vi, nec clam, nec precario.' What do these Latin phrases mean?",
+      "options": {
+        "A": "Not by fraud, not by registration, not by contract",
+        "B": "Not by force, not secretly, not by permission",
+        "C": "Not on State land, not on registered land, not on agricultural land",
+        "D": "Not by a tenant, not by a licensee, not by a mortgagee"
+      },
+      "correct_answer": "B",
+      "explanation": "Nec vi, nec clam, nec precario means: 'not by force, not secretly, not by permission.' For adverse possession to run, the squatter's possession must not have been taken by force (vi), must not be hidden or clandestine (clam), and must not be with the permission (precario) of the owner. If possession is permitted by the owner, it is not adverse."
+    },
+    {
+      "id": "PRL_M03_L01_Q09",
+      "question": "If the paper owner of land gives the squatter written permission to use the land, what is the effect on any adverse possession claim?",
+      "options": {
+        "A": "The permission is irrelevant — adverse possession can run even with the owner's consent",
+        "B": "The permission confirms the squatter's possessory title and accelerates the twelve-year period",
+        "C": "The permission interrupts the running of time — the squatter's possession becomes precario and cannot be adverse while permission subsists",
+        "D": "The permission transfers the paper title to the squatter immediately"
+      },
+      "correct_answer": "C",
+      "explanation": "If the paper owner gives the squatter permission to occupy or use the land, the squatter's possession becomes precario (permissive). Permissive possession is not adverse possession — the limitation period does not run. Time only begins to run again if the permission is revoked and the squatter continues in factual possession with animus possidendi."
+    },
+    {
+      "id": "PRL_M03_L01_Q10",
+      "question": "A squatter adversely possesses unregistered private land for ten years, then vacates the land for two years before returning. What is the effect on the limitation period?",
+      "options": {
+        "A": "The ten years of previous possession is lost — time starts again from scratch on return",
+        "B": "The previous ten years is preserved — time resumes from where it left off",
+        "C": "The abandonment defeats any adverse possession claim permanently",
+        "D": "The limitation period is reduced to six years after a break in possession"
+      },
+      "correct_answer": "A",
+      "explanation": "Adverse possession must be continuous. If the squatter vacates the land, the clock stops and the accrued period is generally lost. When the squatter returns, time starts again from the beginning. The squatter would need a fresh twelve-year period of continuous adverse possession. (Note: different rules may apply if the paper owner retakes possession and then loses it again.)"
+    }
+  ],
+  "total_questions": 10
+}

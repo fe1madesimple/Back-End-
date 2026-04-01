@@ -1,0 +1,131 @@
+{
+  "subject": "EU Law",
+  "el_script_ref": "Module_09_Lesson_03_Articles_34_and_35_MEQRs_Dassonville_Cassis_and_Keck.txt",
+  "module_number": 9,
+  "module_title": "Free Movement of Goods",
+  "lesson_number": 3,
+  "lesson_title": "Articles 34 and 35 — MEQRs, Dassonville, Cassis and Keck",
+  "total_questions": 10,
+  "questions": [
+    {
+      "id": "EUL_M09_L03_Q01",
+      "question": "Article 34 TFEU prohibits:",
+      "options": {
+        "A": "Customs duties and charges having equivalent effect on imports",
+        "B": "Quantitative restrictions on imports and all measures having equivalent effect between member states",
+        "C": "Internal taxation that discriminates against imported goods",
+        "D": "State aids that distort competition in the single market"
+      },
+      "correct_answer": "B",
+      "explanation": "Article 34 TFEU prohibits quantitative restrictions on imports — quotas and import bans — and all measures having equivalent effect (MEQRs). Article 30 covers customs duties; Article 110 covers discriminatory internal taxation. These are distinct and separate prohibitions."
+    },
+    {
+      "id": "EUL_M09_L03_Q02",
+      "question": "The Dassonville formula, established in Procureur du Roi v Dassonville [1974], defines MEQRs as:",
+      "options": {
+        "A": "Measures that actually reduce the volume of imports into a member state",
+        "B": "All trading rules enacted by member states which are capable of hindering, directly or indirectly, actually or potentially, intra-Community trade",
+        "C": "National rules that discriminate on their face against imported goods",
+        "D": "Measures that impose additional cost burdens on importers above those borne by domestic producers"
+      },
+      "correct_answer": "B",
+      "explanation": "The Dassonville formula is intentionally broad — any national trading rule capable of hindering intra-EU trade, even indirectly or potentially, is an MEQR. It encompasses directly discriminatory rules (applying only to imports), indistinctly applicable rules (applying to all goods but burdening imports more), and potentially even measures with uncertain effects."
+    },
+    {
+      "id": "EUL_M09_L03_Q03",
+      "question": "In Cassis de Dijon [1979], the German rule requiring fruit liqueurs to have a minimum alcohol content of 25% was held to be an MEQR because:",
+      "options": {
+        "A": "It discriminated on its face against French products",
+        "B": "Although applicable to all fruit liqueurs, it prevented Cassis de Dijon (with 15–20% alcohol) lawfully produced in France from being marketed in Germany",
+        "C": "It was an internal tax equivalent to a customs duty",
+        "D": "It was a quantitative restriction limiting the volume of imports from France"
+      },
+      "correct_answer": "B",
+      "explanation": "The German minimum alcohol rule was indistinctly applicable — it applied to domestic and imported goods alike — but it prevented Cassis de Dijon, lawfully produced and marketed in France, from being sold in Germany. The Court found it was an MEQR, and used the case to establish both the mutual recognition principle and the mandatory requirements doctrine."
+    },
+    {
+      "id": "EUL_M09_L03_Q04",
+      "question": "The principle of mutual recognition established in Cassis de Dijon means:",
+      "options": {
+        "A": "All EU member states must apply identical product standards",
+        "B": "Goods lawfully produced and marketed in one member state must in principle be free to be sold in any other member state",
+        "C": "Member states must recognise each other's court judgments in civil matters",
+        "D": "National regulatory bodies must accept EU Commission certifications without review"
+      },
+      "correct_answer": "B",
+      "explanation": "Mutual recognition means that if a product lawfully meets the standards of its member state of origin, the host member state cannot in principle refuse it market access simply because its own domestic standards are different. The host state cannot impose additional requirements beyond those satisfied in the state of origin."
+    },
+    {
+      "id": "EUL_M09_L03_Q05",
+      "question": "The 'mandatory requirements' doctrine from Cassis de Dijon allows member states to justify indistinctly applicable MEQRs on which of the following grounds?",
+      "options": {
+        "A": "Public morality, public policy, and public security only",
+        "B": "Any reason of overriding public interest recognised by the Court of Justice",
+        "C": "Effectiveness of fiscal supervision, protection of public health, fairness of commercial transactions, and defence of the consumer (as stated in Cassis)",
+        "D": "Environmental protection and cultural heritage only"
+      },
+      "correct_answer": "C",
+      "explanation": "In Cassis de Dijon, the Court recognised four mandatory requirements that can justify indistinctly applicable MEQRs: effectiveness of fiscal supervision; protection of public health; fairness of commercial transactions; and defence of the consumer. The Court has subsequently expanded this list, but these four are the ones specified in Cassis."
+    },
+    {
+      "id": "EUL_M09_L03_Q06",
+      "question": "In Keck and Mithouard [1993], the Court of Justice held that national provisions restricting or prohibiting certain selling arrangements are NOT caught by Article 34, provided:",
+      "options": {
+        "A": "The measure has been approved in advance by the European Commission",
+        "B": "The measure applies to all relevant traders and affects domestic and imported goods in the same manner in law and in fact",
+        "C": "The selling arrangement has been in place for more than ten years",
+        "D": "The member state has notified the measure under the technical standards notification procedure"
+      },
+      "correct_answer": "B",
+      "explanation": "Keck established that non-discriminatory selling arrangements — rules about how or when products are sold — fall outside Article 34, as long as they apply to all relevant traders operating in the national territory and affect domestic and imported products equally in law and in fact. This carve-out was designed to reduce excessive Article 34 litigation."
+    },
+    {
+      "id": "EUL_M09_L03_Q07",
+      "question": "Which of the following is a 'product requirement' within the Keck framework — and therefore always subject to Article 34 scrutiny?",
+      "options": {
+        "A": "A national rule restricting shop opening hours on Sundays",
+        "B": "A national ban on loss-leader pricing",
+        "C": "A national rule requiring product labels to be in the national language",
+        "D": "A national rule prohibiting doorstep selling of all goods"
+      },
+      "correct_answer": "C",
+      "explanation": "Product requirements — rules about the product itself, such as its composition, shape, size, labelling, or packaging — are always MEQRs if they make it harder for imported goods to access the market. A language labelling requirement is a product requirement affecting the product's presentation. Selling arrangements (shop hours, loss-leader bans, sales restrictions) may fall within the Keck exception."
+    },
+    {
+      "id": "EUL_M09_L03_Q08",
+      "question": "In Gourmet International Products [2001], the Court found that a Swedish ban on alcohol advertising — normally a selling arrangement — was still caught by Article 34 because:",
+      "options": {
+        "A": "The ban was directly discriminatory against imported spirits",
+        "B": "In the specific market for spirits, the restriction had a greater practical impact on imported products that were not yet established in the Swedish market than on well-established domestic brands",
+        "C": "Sweden had failed to notify the measure to the Commission",
+        "D": "Advertising bans are always product requirements rather than selling arrangements"
+      },
+      "correct_answer": "B",
+      "explanation": "Gourmet International Products [2001] shows that even selling arrangements can be caught by Article 34 if they have a differential impact in fact. The advertising ban disadvantaged imported spirits more than domestic ones, because domestic brands were already well established without requiring advertising. The Keck exception requires equality in law AND in fact."
+    },
+    {
+      "id": "EUL_M09_L03_Q09",
+      "question": "In Commission v Italy (Motorcycles) [2009], the Court confirmed that the unifying principle of Article 34 is:",
+      "options": {
+        "A": "That MEQRs must be directly discriminatory to fall within the prohibition",
+        "B": "The market access test — Article 34 prohibits national measures that prevent or hinder access of products from other member states to the market on the same terms as domestic products",
+        "C": "That all national product regulations are presumptively MEQRs",
+        "D": "The Dassonville formula as the sole and definitive test for MEQRs"
+      },
+      "correct_answer": "B",
+      "explanation": "In Commission v Italy (Motorcycles) [2009], the Court confirmed market access as the unifying principle of Article 34. The question is whether a national measure prevents or hinders access of imported goods to the host market on the same terms as domestic goods. This is a useful umbrella concept that encompasses both the Dassonville formula and the Cassis mutual recognition principle."
+    },
+    {
+      "id": "EUL_M09_L03_Q10",
+      "question": "The key distinction introduced by Keck is between:",
+      "options": {
+        "A": "Directly discriminatory measures and indistinctly applicable measures",
+        "B": "Product requirements (always subject to Article 34) and selling arrangements (outside Article 34 if non-discriminatory in law and in fact)",
+        "C": "Quantitative restrictions and measures having equivalent effect",
+        "D": "Article 34 (imports) and Article 35 (exports)"
+      },
+      "correct_answer": "B",
+      "explanation": "Keck's central contribution is the distinction between product requirements — rules about the characteristics of the product itself (composition, labelling, packaging) — which are always MEQRs, and selling arrangements — rules about how products are sold (opening hours, advertising bans, loss-leader restrictions) — which fall outside Article 34 if they apply equally in law and in fact to domestic and imported goods."
+    }
+  ]
+}
