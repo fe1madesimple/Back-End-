@@ -1148,10 +1148,7 @@ class ProgressService {
       !user?.hasCompletedOnboarding ||
       (hasAnyLessonProgress === 0 && hasAnyQuizAttempt === 0 && hasAnyPodcastProgress === 0);
 
-    // ── FIXED: examCountdown now uses buildExamCountdown ──────
-    // Never goes negative. Missed state + reschedule options returned.
     const examCountdown = buildExamCountdown(user?.targetExamDate);
-    // ─────────────────────────────────────────────────────────
 
     const today = new Date().toISOString().split('T')[0]!;
 
@@ -1197,10 +1194,6 @@ class ProgressService {
           select: { todayTotalSeconds: true },
         });
 
-        console.log(
-          `📅 Date: ${dateStr}, Day: ${['S', 'M', 'T', 'W', 'T', 'F', 'S'][date.getDay()]}, Seconds: ${daySession?.todayTotalSeconds || 0}`
-        );
-
         return {
           day: ['S', 'M', 'T', 'W', 'T', 'F', 'S'][date.getDay()]!,
           hasActivity: (daySession?.todayTotalSeconds || 0) > 0,
@@ -1208,44 +1201,41 @@ class ProgressService {
       })
     );
 
-    console.log('\n🔥 CURRENT STREAK CALCULATION (last 7 days only):');
-    console.log('weekCalendar:', JSON.stringify(weekCalendar, null, 2));
+    // ── STREAK: current week only (Sunday → Saturday) ─────────────────────────
+    const weekStart = new Date(mostRecentSunday);
+    const weekEnd = new Date(weekStart);
+    weekEnd.setDate(weekEnd.getDate() + 6);
+    weekEnd.setHours(23, 59, 59, 999);
 
-    const allSessions = await prisma.dailyStudySession.findMany({
-      where: { userId, todayTotalSeconds: { gt: 0 } },
+    const thisWeekSessions = await prisma.dailyStudySession.findMany({
+      where: {
+        userId,
+        todayTotalSeconds: { gt: 0 },
+        date: {
+          gte: weekStart.toISOString().split('T')[0]!,
+          lte: weekEnd.toISOString().split('T')[0]!,
+        },
+      },
       select: { date: true },
       orderBy: { date: 'desc' },
     });
-
-    console.log('\n🔥 ALL SESSIONS WITH ACTIVITY:');
-    allSessions.forEach((s) => console.log(`  ${s.date}`));
 
     let currentStreak = 0;
     let expectedDate = new Date();
     expectedDate.setHours(0, 0, 0, 0);
 
-    console.log(
-      `\n📍 CURRENT STREAK - Starting from today: ${expectedDate.toISOString().split('T')[0]}`
-    );
-
-    for (const session of allSessions) {
+    for (const session of thisWeekSessions) {
       const sessionDate = new Date(session.date);
       sessionDate.setHours(0, 0, 0, 0);
-
-      console.log(
-        `  Checking: ${session.date} vs Expected: ${expectedDate.toISOString().split('T')[0]}`
-      );
-
       if (sessionDate.getTime() === expectedDate.getTime()) {
         currentStreak++;
-        console.log(`    ✅ Match! Streak = ${currentStreak}`);
         expectedDate.setDate(expectedDate.getDate() - 1);
       } else {
-        console.log(`    ❌ Gap detected, breaking at streak = ${currentStreak}`);
         break;
       }
     }
 
+    // ── LONGEST STREAK: all time ───────────────────────────────────────────────
     const allSessionsAsc = await prisma.dailyStudySession.findMany({
       where: { userId, todayTotalSeconds: { gt: 0 } },
       select: { date: true },
@@ -1255,34 +1245,22 @@ class ProgressService {
     let longestStreak = 0;
     let tempStreak = 0;
 
-    console.log(`\n📊 LONGEST STREAK - Scanning all ${allSessionsAsc.length} sessions`);
-
     for (let i = 0; i < allSessionsAsc.length; i++) {
       const currentSession = allSessionsAsc[i];
       const nextSession = allSessionsAsc[i + 1];
-
       if (!currentSession) continue;
-
       tempStreak++;
-
       if (nextSession) {
-        const current = new Date(currentSession.date);
+        const curr = new Date(currentSession.date);
         const next = new Date(nextSession.date);
-        const dayDiff = Math.floor((next.getTime() - current.getTime()) / (1000 * 60 * 60 * 24));
-
+        const dayDiff = Math.floor((next.getTime() - curr.getTime()) / (1000 * 60 * 60 * 24));
         if (dayDiff > 1) {
-          console.log(
-            `  Gap found between ${currentSession.date} and ${nextSession.date} (${dayDiff} days apart)`
-          );
           longestStreak = Math.max(longestStreak, tempStreak);
           tempStreak = 0;
         }
       }
     }
     longestStreak = Math.max(longestStreak, tempStreak);
-
-    console.log(`\n🎯 Final Current Streak: ${currentStreak}`);
-    console.log(`🏆 Final Longest Streak: ${longestStreak}\n`);
 
     const quizPerformance = {
       averageScore: user?.averageQuizScore || 0,
@@ -1327,8 +1305,6 @@ class ProgressService {
       : null;
 
     let recommendedPodcasts;
-    console.log(user?.podcastRecommendations, 'podcast recommendations');
-    console.log(user?.focusSubjects, 'focus subjects');
 
     if (user?.podcastRecommendations && user.focusSubjects.length > 0) {
       const relevantPodcasts = await prisma.podcast.findMany({
@@ -1346,8 +1322,6 @@ class ProgressService {
         },
         take: 3,
       });
-
-      console.log(relevantPodcasts, 'relevant podcasts based on user focus subjects');
 
       recommendedPodcasts = relevantPodcasts.map((p) => ({
         id: p.id,
@@ -1370,8 +1344,6 @@ class ProgressService {
         },
       });
 
-      console.log(allPodcasts, 'all published podcasts for random selection');
-
       const shuffled = allPodcasts.sort(() => Math.random() - 0.5);
       const randomPodcasts = shuffled.slice(0, 3);
 
@@ -1383,8 +1355,6 @@ class ProgressService {
         duration: p.duration || 0,
         thumbnail: p.thumbnail || '',
       }));
-
-      console.log(recommendedPodcasts, 'randomly recommended podcasts');
     }
 
     return {
