@@ -802,8 +802,6 @@ class LessonService {
     const wordCount = answerText.trim().split(/\s+/).length;
     const aiScore20 = Math.round((grading.score / 100) * 20);
 
-    // Save EssayAttempt — source = LESSON_PRACTICE, simulationId links to session
-
     const attempt = await prisma.essayAttempt.create({
       data: {
         userId,
@@ -833,6 +831,56 @@ class LessonService {
       where: { id: practiceSessionId },
       data: { isCompleted: true, submittedAt: new Date(), totalTimeSeconds: timeTakenSeconds },
     });
+
+    // ── UPDATE DAILY STUDY SESSION (for streak tracking) ──────────────────────
+    const today = new Date().toISOString().split('T')[0]!;
+    await prisma.dailyStudySession.upsert({
+      where: { userId_date: { userId, date: today } },
+      create: {
+        userId,
+        date: today,
+        todayTotalSeconds: timeTakenSeconds,
+        lifetimeTotalSeconds: timeTakenSeconds,
+      },
+      update: {
+        todayTotalSeconds: { increment: timeTakenSeconds },
+        lifetimeTotalSeconds: { increment: timeTakenSeconds },
+      },
+    });
+
+    // ── UPDATE USER QUIZ SCORES from lesson essay performance ─────────────────
+    const essayUser = await prisma.user.findUnique({
+      where: { id: userId },
+      select: {
+        averageQuizScore: true,
+        highestQuizScore: true,
+        lowestQuizScore: true,
+      },
+    });
+
+    if (essayUser) {
+      const completedCount = await prisma.essayAttempt.count({
+        where: { userId, source: 'LESSON_PRACTICE' },
+      });
+
+      const score100 = grading.score;
+      const prevAvg = essayUser.averageQuizScore || 0;
+      const newAvg = Math.round((prevAvg * (completedCount - 1) + score100) / completedCount);
+      const newHighest = Math.max(essayUser.highestQuizScore || 0, score100);
+      const newLowest =
+        essayUser.lowestQuizScore === 0 && completedCount === 1
+          ? score100
+          : Math.min(essayUser.lowestQuizScore || score100, score100);
+
+      await prisma.user.update({
+        where: { id: userId },
+        data: {
+          averageQuizScore: newAvg,
+          highestQuizScore: newHighest,
+          lowestQuizScore: newLowest,
+        },
+      });
+    }
 
     achievementsService
       .checkAllAchievements(userId)
