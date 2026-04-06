@@ -399,8 +399,6 @@ export async function submitPracticeService(
   const timePerQuestion = Math.floor(totalTimeSeconds / answers.length);
 
   // Save one EssayAttempt per answer
-  // practiceSessionId groups attempts under this session for history
-  // simulationId is null — it only accepts Simulation table IDs
   await Promise.all(
     resolvedAnswers.map((a, index) => {
       const grading = gradingResults[index]!;
@@ -424,8 +422,8 @@ export async function submitPracticeService(
           model: 'claude-sonnet-4-20250514',
           tokensUsed: grading.tokensUsed,
           source: 'PRACTICE',
-          simulationId: null, // ← always null, wrong table
-          practiceSessionId: practiceSessionId, // ← correct field (requires migration)
+          simulationId: null,
+          practiceSessionId: practiceSessionId,
         } as any,
       });
     })
@@ -442,6 +440,55 @@ export async function submitPracticeService(
     where: { id: practiceSessionId },
     data: { isCompleted: true, submittedAt, totalTimeSeconds },
   });
+
+  // ── UPDATE DAILY STUDY SESSION (for streak tracking) ──────────────────────
+  const today = new Date().toISOString().split('T')[0]!;
+  await prisma.dailyStudySession.upsert({
+    where: { userId_date: { userId, date: today } },
+    create: {
+      userId,
+      date: today,
+      todayTotalSeconds: totalTimeSeconds,
+      lifetimeTotalSeconds: totalTimeSeconds,
+    },
+    update: {
+      todayTotalSeconds: { increment: totalTimeSeconds },
+      lifetimeTotalSeconds: { increment: totalTimeSeconds },
+    },
+  });
+
+  // ── UPDATE USER QUIZ SCORES from essay performance ────────────────────────
+  const user = await prisma.user.findUnique({
+    where: { id: userId },
+    select: {
+      averageQuizScore: true,
+      highestQuizScore: true,
+      lowestQuizScore: true,
+    },
+  });
+
+  if (user) {
+    const completedCount = await prisma.essayAttempt.count({
+      where: { userId, source: 'PRACTICE' },
+    });
+
+    const prevAvg = user.averageQuizScore || 0;
+    const newAvg = Math.round((prevAvg * (completedCount - 1) + overallScore) / completedCount);
+    const newHighest = Math.max(user.highestQuizScore || 0, overallScore);
+    const newLowest =
+      user.lowestQuizScore === 0 && completedCount === 1
+        ? overallScore
+        : Math.min(user.lowestQuizScore || overallScore, overallScore);
+
+    await prisma.user.update({
+      where: { id: userId },
+      data: {
+        averageQuizScore: newAvg,
+        highestQuizScore: newHighest,
+        lowestQuizScore: newLowest,
+      },
+    });
+  }
 
   achievementsService
     .checkAllAchievements(userId)
@@ -489,7 +536,7 @@ export async function getPracticeResultsService(
   if (!session || session.userId !== userId) throw new NotFoundError('Session not found');
 
   const attempts = await prisma.essayAttempt.findMany({
-    where: { userId, source: 'PRACTICE', practiceSessionId: sessionId }, // ← fixed
+    where: { userId, source: 'PRACTICE', practiceSessionId: sessionId },
     select: { questionId: true, aiScore: true, band: true, appPass: true },
     orderBy: { createdAt: 'asc' },
   });
