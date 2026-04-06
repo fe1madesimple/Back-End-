@@ -17,74 +17,91 @@ import achievementsService from '@/modules/achievement/service/achievements.serv
 import { gradeEssayWithClaude } from '@/modules/practise/service/practise.service';
 
 class LessonService {
-  // ─── Video & Time Tracking ────────────────────────────────────────────────
-
   async trackVideoProgress(
-  userId: string,
-  lessonId: string,
-  currentTime: number,
-  videoDuration?: number
-) {
-  const lesson = await prisma.lesson.findUnique({
-    where: { id: lessonId },
-    select: { id: true, videoDuration: true, moduleId: true },
-  });
-
-  if (!lesson) throw new AppError('Lesson not found');
-  if (videoDuration && videoDuration <= 0) throw new AppError('Invalid video duration');
-
-  const duration = videoDuration || lesson.videoDuration;
-  if (!duration) throw new AppError('Video duration not available');
-
-  if (videoDuration && !lesson.videoDuration) {
-    await prisma.lesson.update({
+    userId: string,
+    lessonId: string,
+    currentTime: number,
+    videoDuration?: number
+  ) {
+    const lesson = await prisma.lesson.findUnique({
       where: { id: lessonId },
-      data: { videoDuration },
+      select: { id: true, videoDuration: true, moduleId: true },
     });
+
+    if (!lesson) throw new AppError('Lesson not found');
+    if (videoDuration && videoDuration <= 0) throw new AppError('Invalid video duration');
+
+    const duration = videoDuration || lesson.videoDuration;
+    if (!duration) throw new AppError('Video duration not available');
+
+    if (videoDuration && !lesson.videoDuration) {
+      await prisma.lesson.update({
+        where: { id: lessonId },
+        data: { videoDuration },
+      });
+    }
+
+    const existingProgress = await prisma.userLessonProgress.findUnique({
+      where: { userId_lessonId: { userId, lessonId } },
+      select: { videoWatchedSeconds: true, timeSpentSeconds: true },
+    });
+
+    const previousWatchedSeconds = existingProgress?.videoWatchedSeconds || 0;
+
+    // ── If the user rewound or sent a lower timestamp, ignore the update entirely.
+    // We never let a lower currentTime overwrite a higher previously recorded value.
+    if (existingProgress && currentTime <= previousWatchedSeconds) {
+      return existingProgress;
+    }
+
+    const timeDelta = Math.max(0, currentTime - previousWatchedSeconds);
+    const newTimeSpent = (existingProgress?.timeSpentSeconds || 0) + timeDelta;
+
+    const lessonProgressPercent = Math.min(100, (currentTime / duration) * 100);
+    const isCompleted = lessonProgressPercent >= 90;
+
+    const updatedProgress = await prisma.userLessonProgress.upsert({
+      where: { userId_lessonId: { userId, lessonId } },
+      create: {
+        userId,
+        lessonId,
+        videoWatchedSeconds: currentTime,
+        timeSpentSeconds: currentTime,
+        isCompleted,
+        completedAt: isCompleted ? new Date() : null,
+        lastAccessedAt: new Date(),
+      },
+      update: {
+        videoWatchedSeconds: currentTime,
+        timeSpentSeconds: newTimeSpent,
+        isCompleted,
+        completedAt: isCompleted ? new Date() : null,
+        lastAccessedAt: new Date(),
+      },
+    });
+
+    // ── UPDATE DAILY STUDY SESSION (for streak tracking) ──────────────────────
+    // Only update when actual new watch time occurred (timeDelta > 0)
+    if (timeDelta > 0) {
+      const today = new Date().toISOString().split('T')[0]!;
+      await prisma.dailyStudySession.upsert({
+        where: { userId_date: { userId, date: today } },
+        create: {
+          userId,
+          date: today,
+          todayTotalSeconds: timeDelta,
+          lifetimeTotalSeconds: timeDelta,
+        },
+        update: {
+          todayTotalSeconds: { increment: timeDelta },
+          lifetimeTotalSeconds: { increment: timeDelta },
+        },
+      });
+    }
+
+    await this.recalculateModuleProgress(userId, lesson.moduleId);
+    return updatedProgress;
   }
-
-  const existingProgress = await prisma.userLessonProgress.findUnique({
-    where: { userId_lessonId: { userId, lessonId } },
-    select: { videoWatchedSeconds: true, timeSpentSeconds: true },
-  });
-
-  const previousWatchedSeconds = existingProgress?.videoWatchedSeconds || 0;
-
-  // ── If the user rewound or sent a lower timestamp, ignore the update entirely.
-  // We never let a lower currentTime overwrite a higher previously recorded value.
-  if (existingProgress && currentTime <= previousWatchedSeconds) {
-    return existingProgress
-  }
-
-  const timeDelta = Math.max(0, currentTime - previousWatchedSeconds)
-  const newTimeSpent = (existingProgress?.timeSpentSeconds || 0) + timeDelta
-
-  const lessonProgressPercent = Math.min(100, (currentTime / duration) * 100);
-  const isCompleted = lessonProgressPercent >= 90;
-
-  const updatedProgress = await prisma.userLessonProgress.upsert({
-    where: { userId_lessonId: { userId, lessonId } },
-    create: {
-      userId,
-      lessonId,
-      videoWatchedSeconds: currentTime,
-      timeSpentSeconds: currentTime,
-      isCompleted,
-      completedAt: isCompleted ? new Date() : null,
-      lastAccessedAt: new Date(),
-    },
-    update: {
-      videoWatchedSeconds: currentTime,
-      timeSpentSeconds: newTimeSpent,
-      isCompleted,
-      completedAt: isCompleted ? new Date() : null,
-      lastAccessedAt: new Date(),
-    },
-  });
-
-  await this.recalculateModuleProgress(userId, lesson.moduleId);
-  return updatedProgress;
-}
 
   private async recalculateModuleProgress(userId: string, moduleId: string) {
     const lessons = await prisma.lesson.findMany({
@@ -232,9 +249,24 @@ class LessonService {
         create: { userId, subjectId: lesson.module.subjectId, totalTimeSeconds: seconds },
         update: { totalTimeSeconds: { increment: seconds } },
       });
+
+      // ── UPDATE DAILY STUDY SESSION (for streak tracking) ────────────────────
+      const today = new Date().toISOString().split('T')[0]!;
+      await prisma.dailyStudySession.upsert({
+        where: { userId_date: { userId, date: today } },
+        create: {
+          userId,
+          date: today,
+          todayTotalSeconds: seconds,
+          lifetimeTotalSeconds: seconds,
+        },
+        update: {
+          todayTotalSeconds: { increment: seconds },
+          lifetimeTotalSeconds: { increment: seconds },
+        },
+      });
     }
   }
-
   // ─── getLessonById ────────────────────────────────────────────────────────
 
   async getLessonById(userId: string, lessonId: string): Promise<LessonDetailResponse> {
@@ -544,6 +576,67 @@ class LessonService {
           questionsAnswered: true,
         },
       });
+
+      // ── UPDATE USER QUIZ SCORES (only when first completing, not on re-fetch) ──
+      const total = session.totalQuestions;
+      const score = session.correctAnswers;
+      const accuracyPercent = total > 0 ? Math.round((score / total) * 100) : 0;
+
+      // Fetch current user scores
+      const user = await prisma.user.findUnique({
+        where: { id: userId },
+        select: {
+          averageQuizScore: true,
+          highestQuizScore: true,
+          lowestQuizScore: true,
+        },
+      });
+
+      if (user) {
+        // Count completed quiz sessions to compute running average
+        const completedCount = await prisma.quizSession.count({
+          where: { userId, isCompleted: true },
+        });
+
+        const prevAvg = user.averageQuizScore || 0;
+        // Running average: ((prevAvg * (n-1)) + newScore) / n
+        const newAvg = Math.round(
+          (prevAvg * (completedCount - 1) + accuracyPercent) / completedCount
+        );
+
+        const newHighest = Math.max(user.highestQuizScore || 0, accuracyPercent);
+        // lowestQuizScore: if it's 0 and no previous attempts, use current score
+        const newLowest =
+          user.lowestQuizScore === 0 && completedCount === 1
+            ? accuracyPercent
+            : Math.min(user.lowestQuizScore || accuracyPercent, accuracyPercent);
+
+        await prisma.user.update({
+          where: { id: userId },
+          data: {
+            averageQuizScore: newAvg,
+            highestQuizScore: newHighest,
+            lowestQuizScore: newLowest,
+          },
+        });
+      }
+
+      // ── UPDATE DAILY STUDY SESSION (for streak tracking) ──────────────────────
+      const today = new Date().toISOString().split('T')[0]!;
+
+      await prisma.dailyStudySession.upsert({
+        where: { userId_date: { userId, date: today } },
+        create: {
+          userId,
+          date: today,
+          todayTotalSeconds: session.totalTimeSeconds || 0,
+          lifetimeTotalSeconds: session.totalTimeSeconds || 0,
+        },
+        update: {
+          todayTotalSeconds: { increment: session.totalTimeSeconds || 0 },
+          lifetimeTotalSeconds: { increment: session.totalTimeSeconds || 0 },
+        },
+      });
     }
 
     const total = session.totalQuestions;
@@ -551,7 +644,7 @@ class LessonService {
     const accuracyPercent = total > 0 ? Math.round((score / total) * 100) : 0;
     const avgTimePerQuestionSeconds = total > 0 ? Math.round(session.totalTimeSeconds / total) : 0;
 
-    // ── Streak: consecutive calendar days with ≥1 completed QuizSession
+    // ── Streak: consecutive calendar days with ≥1 completed QuizSession ────────
     const completedSessions = await prisma.quizSession.findMany({
       where: { userId, isCompleted: true, completedAt: { not: null } },
       select: { completedAt: true },
